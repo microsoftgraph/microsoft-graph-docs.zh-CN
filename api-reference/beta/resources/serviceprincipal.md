@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6cf324d438225c5cff7c23dd8931e49b58c65ccc
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 319fab77358b35c82c3767fcff7dff1f40915315
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939145"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123716"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "60939145"
 |[更新 servicePrincipal](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |更新 servicePrincipal 对象。 |
 |[删除 servicePrincipal](../api/serviceprincipal-delete.md) | 无 |删除 servicePrincipal 对象。|
 |[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 createdObject 对象集合。|
-|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 ownedObject 对象集合。|
+|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| 获取 ownedObject 对象集合。|
 |[delta](../api/serviceprincipal-delta.md)|servicePrincipal 集合| 获取服务主体的增量更改。 |
 |**应用角色分配**| | |
 |[列出 appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) 集合| 获取已分配到此服务主体的应用角色。|
@@ -56,9 +56,9 @@ ms.locfileid: "60939145"
 |**Membership**| | |
 |[List memberOf](../api/serviceprincipal-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 从 memberOf 导航属性中获取此服务主体是其直接成员的组。|
 |[列出 transitive memberOf](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出此服务主体所属的组。 此操作是可传递的，并包括此服务主体以嵌套方式所属的组。 |
-|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String 集合|检查指定组列表中的成员身份。|
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String 集合|检查指定组列表中的成员身份。|
 |[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|String 集合|检查组、目录角色或管理单元对象指定列表中的成员身份。|
-|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String 集合|获取此服务主体所属的组列表。|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String 集合|获取此服务主体所属的组列表。|
 |[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String 集合|获取此服务主体所属的组和目录角色列表。|
 |**Owners**| | |
 |[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) 集合| 获取所有者对象集合。|
@@ -91,15 +91,16 @@ ms.locfileid: "60939145"
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
 | accountEnabled |Boolean| 如果已启用服务主体帐户，则为 `true`；否则，为 `false`。 支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。 |
-| addIns | [addIn](addin.md) 集合 | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers/?view=odsp-graph-online)。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
+| addIns | [addIn](addin.md) 集合 | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers/)。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
 |alternativeNames|字符串集合| 用于按订阅、标识资源组和[托管标识](https://aka.ms/azuremanagedidentity)的完整资源 ID 检索服务主体。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。|
 |应用说明|String|相关应用程序公开的说明。|
 |appDisplayName|String|关联应用程序公开的显示名称。|
-|appId|String|关联应用程序的唯一标识符（其 **appId** 属性）。|
+|appId|String|关联应用程序的唯一标识符（其 **appId** 属性）。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`、 `startsWith`）。|
 |applicationTemplateId|String|创建 servicePrincipal 的 applicationTemplate 的唯一标识符。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `startsWith`）。|
 |appOwnerOrganizationId|String|包含注册应用程序的租户 ID。 这仅适用于应用程序支持的服务主体。支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`）。|
 |appRoleAssignmentRequired|布尔|指定在用户登录或应用可以获取令牌前，是否需要先向用户或其他服务主体授予此服务主体的应用角色分配。 默认值为 `false`。 不可为空。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`）。 |
-|appRoles|[appRole](approle.md) 集合|该服务主体代表的应用程序公开的角色。 有关详细信息，请参阅 [应用程序](application.md)实体上的 **appRoles** 属性定义。 不可为 null。 |
+|appRoles|[appRole](approle.md) 集合|该服务主体代表的应用程序公开的角色。 有关详细信息，请参阅 [应用程序](application.md)实体上的 **appRoles** 属性定义。 不可为空。 |
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|保留分配给目录对象的自定义安全属性的值的开放式复杂类型。 可为 NULL。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `startsWith`）。|
 | deletedDateTime | DateTimeOffset | 删除服务主体的日期和时间。只读。 |
 | 说明 | 字符串 | 免费文本字段，提供面向内部最终用户的服务主体说明。 "MyApps ["](/azure/active-directory/user-help/my-apps-portal-end-user-access) 等最终用户门户将在此字段中显示应用程序说明。 最大允许大小为 1024 个字符。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）和 `$search`。|
 | disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册的应用程序。可能的值为：`null`（默认值）、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement`（原因可能包括可疑、滥用或恶意活动或违反 Microsoft 服务协议）。 <br><br> 支持 `$filter`（`eq`、`ne`、`NOT`）。  |
@@ -143,7 +144,7 @@ ms.locfileid: "60939145"
 |homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合|为此服务主体分配的 homeRealmDiscoveryPolicies。 支持 `$expand`。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为空。 支持 `$expand`。|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|委派权限授予设置此服务主体以代表已登录用户访问 API 的权限。只读。可为空。|
-|ownedObjects|[directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为 NULL。 支持 `$expand`。|
+|ownedObjects|[directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为空。 支持 `$expand`。|
 |owners|[directoryObject](directoryobject.md) 集合|servicePrincipal 所述的目录对象。 所有者是一组允许修改此对象的非管理员用户或 servicePrincipal。 只读。 可为 NULL。 支持 `$expand`。|
 |tokenIssuancePolicies|[tokenIssuancePolicy](tokenissuancepolicy.md) 集合|为此服务主体分配的 tokenIssuancePolicies。 支持 `$expand`。|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenlifetimepolicy.md) 集合|为此服务主体分配的 tokenLifetimePolicies。 支持 `$expand`。|
@@ -178,6 +179,9 @@ ms.locfileid: "60939145"
   "applicationTemplateId": "string",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "customSecurityAttributes": {
+    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
+  },
   "disabledByMicrosoftStatus": "string",
   "displayName": "string",
   "errorUrl": "string",

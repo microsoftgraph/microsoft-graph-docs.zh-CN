@@ -119,6 +119,8 @@ items:
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
           - name: 迁移常见问题解答
             href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
+          - name: 配置 Azure AD Graph 权限
+            href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
   - name: 使用 SDK
     items:
       - name: 概述
@@ -331,15 +333,15 @@ items:
               - name: 分配许可证
                 href: api/user-assignlicense.md
               - name: 检查成员组
-                href: api/user-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: 检查成员对象
                 href: api/user-checkmemberobjects.md
               - name: 导出个人数据
                 href: api/user-exportpersonaldata.md
               - name: 获取成员对象
-                href: api/user-getmemberobjects.md
+                href: api/directoryobject-getmemberobjects.md
               - name: 获取成员组
-                href: api/user-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: 按 ID 获取对象
                 href: api/directoryobject-getbyids.md
               - name: 列出创建的对象
@@ -416,7 +418,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: Notes
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -477,7 +479,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -543,13 +545,13 @@ items:
               - name: 分配许可证
                 href: api/group-assignlicense.md
               - name: 检查成员组
-                href: api/group-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: 检查成员对象
                 href: api/group-checkmemberobjects.md
               - name: 获取 Delta
                 href: api/group-delta.md
               - name: 获取成员组
-                href: api/group-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: 获取成员对象
                 href: api/group-getmemberobjects.md
               - name: 组设置
@@ -922,11 +924,11 @@ items:
                   - name: 列出其可传递成员
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: 检查成员组
-                    href: api/serviceprincipal-checkmembergroups.md
+                    href: api/directoryobject-checkmembergroups.md
                   - name: 检查成员对象
                     href: api/serviceprincipal-checkmemberobjects.md
                   - name: 获取成员组
-                    href: api/serviceprincipal-getmembergroups.md
+                    href: api/directoryobject-getmembergroups.md
                   - name: 获取成员对象
                     href: api/serviceprincipal-getmemberobjects.md
               - name: 所有者
@@ -1528,7 +1530,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -4656,9 +4658,9 @@ items:
                       - name: 列出 memberOf
                         href: api/orgcontact-list-memberof.md
                       - name: 获取成员组
-                        href: api/orgcontact-getmembergroups.md
+                        href: api/directoryobject-getmembergroups.md
                       - name: 检查成员组
-                        href: api/orgcontact-checkmembergroups.md
+                        href: api/directoryobject-checkmembergroups.md
                   - name: 组织层次结构
                     href: resources/directoryobject.md
                     items:
@@ -6307,11 +6309,11 @@ items:
               - name: 删除所有者
                 href: api/group-delete-owners.md
               - name: 获取成员组
-                href: api/group-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: 获取成员对象
                 href: api/group-getmemberobjects.md
               - name: 检查成员组
-                href: api/group-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: 列出隶属于
                 href: api/group-list-memberof.md
               - name: 获取已删除的组

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 8ecb66bc8c18dafdfb58745c0614d625dfc93f24
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: b5acbd22596c335a1b067f27773f3f2e28d4f9a1
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044734"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123759"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -20,7 +20,7 @@ ms.locfileid: "61044734"
 
 按用户获取有关 Microsoft Teams 设备使用情况的详细信息。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 |
-| date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。 |
+| date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 由于此报告仅适用于过去 28 天，{date_value} 应为该范围内的日期。 |
 
 > **注意：** 需要在 URL 中设置 period 或 date。
 

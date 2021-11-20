@@ -1,24 +1,24 @@
 ---
-title: 添加组所有者
-description: 将用户添加到组所有者。
+title: 添加所有者
+description: 将用户或服务主体添加到Microsoft 365或安全组的所有者。
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 27eb44ffb2b3fe8a6ee047b49978ec0506dbd8f1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a47720e97a729aa061382938e6b4a88bf246a1d9
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018618"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124110"
 ---
-# <a name="add-group-owner"></a>添加组所有者
+# <a name="add-owners"></a>添加所有者
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向组所有者添加用户或服务主题。所有者是一组具有组对象修改权限的用户或服务主体。
+将用户或服务主体添加到Microsoft 365或安全组的所有者。 所有者是一组可修改组对象的用户或服务主体。
 
 >**重要提示：** 如果更新组所有者并为该组创建团队，则所有者与 Microsoft Team 同步需要最多花费 2 小时。 此外，如果希望所有者能够在团队中进行更改，例如创建 Planner 计划，则还需要将所有者添加为组/团队成员。 
 

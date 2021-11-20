@@ -347,15 +347,15 @@ items:
               - name: 分配许可证
                 href: api/user-assignlicense.md
               - name: 检查成员组
-                href: api/user-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: 检查成员对象
                 href: api/user-checkmemberobjects.md
               - name: 导出个人数据
                 href: api/user-exportpersonaldata.md
               - name: 获取成员组
-                href: api/user-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: 获取成员对象
-                href: api/user-getmemberobjects.md
+                href: api/directoryobject-getmemberobjects.md
               - name: 按 ID 获取对象
                 href: api/directoryobject-getbyids.md
               - name: 列出创建的对象
@@ -521,7 +521,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言和区域 () '
+          - name: '预览版的首选语言 (区域) '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -603,7 +603,7 @@ items:
               - name: 分配许可证
                 href: api/group-assignlicense.md
               - name: 检查成员组
-                href: api/group-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: 评估动态成员身份
                 href: api/group-evaluatedynamicmembership.md
               - name: 获取已删除的组
@@ -613,7 +613,7 @@ items:
               - name: Get endpoint
                 href: api/endpoint-get.md
               - name: 获取成员组
-                href: api/group-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: 获取成员对象
                 href: api/group-getmemberobjects.md
               - name: 列出已删除的组
@@ -1079,13 +1079,13 @@ items:
                     href: api/serviceprincipal-list-memberof.md
                   - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
-                  - name: checkMemberGroups
-                    href: api/serviceprincipal-checkmembergroups.md
-                  - name: checkMemberObjects
+                  - name: 检查成员组
+                    href: api/directoryobject-checkmembergroups.md
+                  - name: 检查成员对象
                     href: api/serviceprincipal-checkmemberobjects.md
-                  - name: getMemberGroups
-                    href: api/serviceprincipal-getmembergroups.md
-                  - name: getMemberObjects
+                  - name: 获取成员组
+                    href: api/directoryobject-getmembergroups.md
+                  - name: 获取成员对象
                     href: api/serviceprincipal-getmemberobjects.md
               - name: 所有者
                 items:
@@ -2005,7 +2005,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -11072,9 +11072,9 @@ items:
                       - name: 列出 memberOf
                         href: api/orgcontact-list-memberof.md
                       - name: 获取成员组
-                        href: api/orgcontact-getmembergroups.md
+                        href: api/directoryobject-getmembergroups.md
                       - name: 检查成员组
-                        href: api/orgcontact-checkmembergroups.md
+                        href: api/directoryobject-checkmembergroups.md
                   - name: 组织层次结构
                     href: resources/directoryobject.md
                     items:
@@ -11912,7 +11912,7 @@ items:
                     href: api/trustframeworkpolicy-delete.md
               - name: 用户流
                 items:
-                  - name: '用户流 (弃用) '
+                  - name: '用户流 (弃) '
                     items:
                       - name: 用户流
                         href: resources/identityuserflow.md
@@ -12056,7 +12056,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -12085,7 +12085,7 @@ items:
                         href: api/accessreviewinstance-get.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstance-filterbycurrentuser.md
-                      - name: '列出已弃 (审批) '
+                      - name: '列出已 (审批) '
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
                       - name: 发送提醒
                         href: api/accessreviewinstance-sendreminder.md
@@ -12110,7 +12110,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-get.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                      - name: '列出已弃 (审批) '
+                      - name: '列出已 (审批) '
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
@@ -12132,7 +12132,7 @@ items:
                         href: api/accessreviewhistorydefinition-post.md
                       - name: 生成下载 URI
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
-              - name: '已弃 (的访问) '
+              - name: '已弃 (访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -13114,7 +13114,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '预览版 (项) '
+                  - name: '项目见解 (预览) '
                     href: resources/iteminsights.md
                   - name: 共享的内容
                     href: resources/insights-shared.md
@@ -13690,7 +13690,7 @@ items:
                     href: api/usersimulationdetails-list.md
                   - name: 获取模拟概述
                     href: api/simulationreportoverview-get.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -14179,11 +14179,11 @@ items:
               - name: 删除所有者
                 href: api/group-delete-owners.md
               - name: 获取成员组
-                href: api/group-getmembergroups.md
+                href: api/directoryobject-getmembergroups.md
               - name: 获取成员对象
                 href: api/group-getmemberobjects.md
               - name: 检查成员组
-                href: api/group-checkmembergroups.md
+                href: api/directoryobject-checkmembergroups.md
               - name: 列出隶属于
                 href: api/group-list-memberof.md
               - name: 获取已删除的组
@@ -14708,7 +14708,7 @@ items:
                 href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
-              - name: 'Outlook (任务) '
+              - name: 'Outlook任务 (已弃) '
                 items:
                   - name: Outlook 任务
                     href: resources/outlooktask.md

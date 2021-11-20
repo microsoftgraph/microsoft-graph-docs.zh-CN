@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 5a1c8828d983587c655b7c5a459b7dc978743105
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: b3bf52c3e61a3fd8cacccd05b1475ec7d4d92ac5
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58694736"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123907"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -139,7 +139,7 @@ Yammer 中的 Microsoft 365 组用于通过 Yammer 帖子促进用户协作。 �
 | 创建新组、获取现有组、更新组的属性和删除组。 目前，只有 Outlook 中的安全组和组才能通过 API 创建。 | [group](group.md) | [新建组](../api/group-post-groups.md) <br/> [列出组](../api/group-list.md) <br/> [更新组](../api/group-update.md) <br/> [删除组](../api/group-delete.md) |
 | **组成员资格方法** | | |
 | 列出组中的成员，并添加或删除成员。 | [user](user.md) <br/> [group](group.md)| [列出成员](../api/group-list-members.md) <br/> [添加成员](../api/group-post-members.md) <br/> [删除成员](../api/group-delete-members.md)|
-| 确定用户是否是组成员，并获取用户所属的全部组。 | [user](user.md) <br/> [group](group.md)| [检查成员组](../api/group-checkmembergroups.md) <br/> [获取成员组](../api/group-getmembergroups.md)|
+| 确定用户是否是组成员，并获取用户所属的全部组。 | [user](user.md) <br/> [组](group.md) <br/> [servicePrincipal](serviceprincipal.md) <br/> [orgContact](orgcontact.md)| [检查成员组](../api/directoryobject-checkmembergroups.md) <br/> [获取成员组](../api/directoryobject-getmembergroups.md)|
 | 列出组的所有者，并添加或删除所有者。 | [user](user.md) <br/> [group](group.md)| [列出所有者](../api/group-list-members.md) <br/> [添加成员](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md)|
 
 ## <a name="whats-new"></a>最近更新

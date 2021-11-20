@@ -2,15 +2,15 @@
 author: chackman
 description: 取消关注用户正在关注的项目。
 title: 取消关注驱动器项
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fcaa9f39163daa42e12fbea324f4ecbc93ae0977
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 741f4c16e44e37ae1d08902df1040aa2c921268d
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50776793"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123745"
 ---
 # <a name="unfollow-drive-item"></a>取消关注驱动器项
 
@@ -61,7 +61,7 @@ POST /users/{user-id}/drive/items/{item-id}/unfollow
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
-DELETE /me/drive/items/{item-id}/unfollow
+POST /me/drive/items/{item-id}/unfollow
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-item-csharp-snippets.md)]

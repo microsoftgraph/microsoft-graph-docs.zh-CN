@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b9ad772511da5910f66a2d4d6c22725aa92ae037
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e3d2c62644adc05e61eb11ac6ef896f8d7ec64b9
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60978918"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123451"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -131,7 +131,6 @@ Content-type: application/json
     "time": "datetime-value"
   },
   "recurrence": null,
-  "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
@@ -186,7 +185,6 @@ Content-type: application/json
     "time": "datetime-value"
   },
   "recurrence": null,
-  "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",

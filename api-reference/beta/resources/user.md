@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: f588cb5a28568f59d031f7b147547d3dd91d894b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 09d8c3ea633cdcf0489c3215d3b26903b67d2388
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941874"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123717"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -68,11 +68,11 @@ ms.locfileid: "60941874"
 | **目录对象**|||
 | [activateServicePlan](../api/user-activateserviceplan.md) | 无 | 为给定给定用户或`servicePlanId``skuId`许可证和[服务](user.md)。 |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
-| [checkMemberGroups](../api/user-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
 | [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
-| [getMemberGroups](../api/user-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/user-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。 |
 | [Get transitiveReports](../api/user-get-transitivereports.md) | 整数 | 从 transitiveReports 导航属性获取用户的可传递报表计数。 |
 | [List createdObjects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | 从 createdObjects 导航属性中获取此用户创建的目录对象。 |
@@ -180,6 +180,7 @@ ms.locfileid: "60941874"
 | country | String | 用户所在的国家/地区，例如 `US` 或 `UK`。最大长度为 128 个字符。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
 | createdDateTime | DateTimeOffset | 创建用户的日期和时间。 值无法修改，并在实体创建时自动填充。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 属性可为 Null。 Null 值表示无法为用户确定准确的创建时间。 只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`）。 |
 | creationType | 字符串 | 指示是否通过以下方法之一创建用户帐户： <br/> <ul><li>作为常规学校或工作帐户（`null`）。 <li>作为外部帐户（`Invitation`）。 <li>作为 Azure Active Directory B2C 租户的本地帐户（`LocalAccount`）。 <li>通过使用电子邮件验证由内部用户（`EmailVerified`）进行自助注册。 <li>通过由外部用户通过属于用户流的链接注册的自助注册（`SelfServiceSignUp`）。 </ul> <br>只读。<br>支持 `$filter` （`eq`、 `ne`、 `NOT`和 `in`）。 |
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|保留分配给目录对象的自定义安全属性的值的开放式复杂类型。 可为 NULL。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `startsWith`）。|
 | deletedDateTime | DateTimeOffset | 删除用户的日期和时间。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le` 和 `in`）。 |
 | 部门 | String | 用户工作部门的名称。 最大长度为 64 个字符。<br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in` 和 `null` 值上的 `eq`）。 |
 | displayName | String | 用户通讯簿中显示的名称。通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。最大长度为 256 个字符。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）、`$orderBy` 和 `$search`。|
@@ -387,6 +388,9 @@ Hence the type of the corresponding 3 properties remain as String type in the Pr
   "country": "String",
   "createdDateTime": "2019-02-07T21:53:13.067Z",
   "creationType": "String",
+  "customSecurityAttributes": {
+    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
+  },
   "deletedDateTime": "String (timestamp)",
   "department": "String",
   "displayName": "String",

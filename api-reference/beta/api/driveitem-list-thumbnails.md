@@ -3,25 +3,26 @@ author: JeremyKelley
 description: 检索 DriveItem 资源的 ThumbnailSet 资源集合。
 ms.date: 09/10/2017
 title: 检索文件或文件夹的缩略图
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e7ffece9e7d113424560d9aeacde07578fd4bd8a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3d42771a222d0201fc95d0a7a1913d85118a6588
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955799"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123942"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 检索 [DriveItem](../resources/driveitem.md) 资源的 [ThumbnailSet](../resources/thumbnailset.md) 资源集合。
 
-DriveItem 可以由零个或多个 [ThumbnailSet](../resources/thumbnailset.md) 资源表示。每个 **thumbnailSet** 都可以有一个或多个 [**thumbnail**](../resources/thumbnail.md) 对象，此类对象是表示项目的图像。例如， **thumbnailSet** 可包括 **thumbnail** 对象，例如包括 `small`、`medium` 或 `large` 等常见对象。
+DriveItem 可以由零个或多个 [ThumbnailSet](../resources/thumbnailset.md) 资源表示。每个 **thumbnailSet** 都可以有一个或多个 [**thumbnail**](../resources/thumbnail.md) 对象，此类对象是表示项目的图像。例如，**thumbnailSet** 可包括 **thumbnail** 对象，例如包括 `small`、`medium` 或 `large` 等常见对象。
 
 可以通过多种方式在 OneDrive 上对缩略图进行操作。以下是一些最常见的操作：
 
@@ -58,9 +59,9 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$select`[OData 查询参数](/graph/query-parameters)自定义响应。
+此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。
 
-此外，此方法支持检索具有原始方向 EXIF 值的缩略图，并且不通过追加查询参数来使用应用旋转 `originalOrientation=true` 。
+此外，此方法还支持通过追加查询参数来检索包含原始方向 EXIF 值且没有应用旋转的 `originalOrientation=true` 缩略图。
 目前仅 OneDrive 个人版支持此操作。
 
 ## <a name="response"></a>响应
@@ -160,7 +161,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | 引用的项目的唯一标识符。                                           |
 | **thumb-id** | number | 缩略图的索引，通常介于 0 到 4 之间。 如果没有自定义缩略图，索引为 0。 |
-| **size**     | string | 请求获取的缩略图的尺寸。 可取值为下面列出的标准大小之一或自定义大小。 |
+| **size**     | string | 请求获取的缩略图尺寸。可取值为下面列出的标准尺寸之一或自定义尺寸。 |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -218,7 +219,7 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-缩略图 URL 具有缓存安全性。 如果在项发生更改后需要生成新的缩略图，URL 将会更改。
+缩略图的 URL 是安全缓存的。如果项目发生更改而需要生成新的缩略图，则 URL 将会更改。
 
 
 ## <a name="getting-thumbnails-while-listing-driveitems"></a>获取缩略图的同时列出 DriveItem
@@ -318,7 +319,7 @@ Content-type: application/json
 <!-- { "blockType": "request","name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
 
 ```msgraph-interactive
-GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
+GET /me/drive/items/{item-id}/thumbnails?select=c300x400_crop
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-custom-size-csharp-snippets.md)]
@@ -351,7 +352,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "0",
-      "c300x400_Crop": { "height": 300, "width": 400, "url": "https://sn3302files.onedrive.com/123"},
+      "c300x400_crop": { "height": 300, "width": 400, "url": "https://sn3302files.onedrive.com/123"},
     }
   ]
 }
@@ -364,7 +365,7 @@ Content-Type: application/json
 | 缩略图标识符 | 分辨率             | 纵横比 | 说明                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | c300x400             | 300x400 像素框 | 原始大小     | 生成适应在 300x400 像素框中显示的缩略图，纵横比不变                                                                 |
-| c300x400_Crop        | 300x400                | 已裁剪      | 生成 300x400 像素缩略图。 具体方式为，重设图像大小以填充 300x400 框，并裁剪超出框外的内容。 |
+| c300x400_crop        | 300x400                | 已裁剪      | 生成 300x400 像素缩略图。 具体方式为，重设图像大小以填充 300x400 框，并裁剪超出框外的内容。 |
 
 **注意：** 返回的缩略图可能与请求的像素尺寸不完全匹配，但与纵横比匹配。
 在某些情况下，如果缩略图已经存在并且可以轻松缩放来匹配请求的分辨率，则可能会返回比请求的大小更大的缩略图。

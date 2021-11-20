@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: 21a48e87dd4582024294503165e092cd7fa76751
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+ms.openlocfilehash: 0e26a038b61bb565b5592a70687fd4bd9667cce6
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60355552"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124044"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -182,7 +182,7 @@ Content-type: application/json
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/jpeg",
     "@odata.mediaEtag": "\"BA09D118\"",
-    "id": "240X240",
+    "id": "240x240",
     "width": 240,
     "height": 240
 }
@@ -205,7 +205,7 @@ Content-type: application/json
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/gif",
     "@odata.mediaEtag": "",
-    "id": "1X1",
+    "id": "1x1",
     "width": 1,
     "height": 1
 }

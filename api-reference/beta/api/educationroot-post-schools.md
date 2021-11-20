@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3fa0db9fccead9dfea5fcbf37814a83325a396bc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c76b66b76ca56ae0de95448f018ad62973b5acb5
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034516"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124117"
 ---
 # <a name="create-educationschool"></a>创建 educationSchool
 
@@ -71,7 +71,6 @@ Content-type: application/json
 {
   "displayName": "Fabrikam High School",
   "description": "Magnate school for the arts. Los Angeles School District",
-  "status": "String",
   "externalSource": "String",
   "principalEmail": "AmyR@fabrikam.com",
   "principalName": "Amy Roebuck",
@@ -128,7 +127,6 @@ Content-type: application/json
   "id": "10002",
   "displayName": "Fabrikam High School",
   "description": "Magnate school for the arts. Los Angeles School District",
-  "status": "String",
   "externalSource": "String",
   "principalEmail": "AmyR@fabrikam.com",
   "principalName": "Amy Roebuck",

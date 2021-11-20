@@ -217,6 +217,8 @@ items:
           - name: 公司管理
             href: intune-concept-overview.md
             displayName: Intune
+          - name: 云电脑（预览版）
+            href: cloudpc-concept-overview.md
           - name: 设备更新（预览）
             displayName: Windows updates
             items:

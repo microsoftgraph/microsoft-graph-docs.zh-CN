@@ -3,12 +3,12 @@ title: Microsoft 服务中的人员Graph Toolkit
 description: 可以使用 Web 组件通过用户的照片或缩写显示一组 `mgt-people` 人员或联系人。
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: c93de8e60260d654624ae84896953dffe8f2e0b4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44c97680d85d06f5f65703f68f33845f41514278
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083815"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123403"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
 
@@ -32,7 +32,7 @@ ms.locfileid: "59083815"
 | --- | --- | --- |
 | show-max | showMax | 指示要显示的最大人数。 默认值为 3。 |
 | people | people | 用于获取或设置组件呈现的联系人列表的一组人员。 使用此属性访问组件加载的人。 设置此值以加载您自己的人员。 |
-| group-id | groupId | 从特定 Microsoft Graph检索相应 ID 中的人员。 |
+| group-id | groupId | 从特定 Microsoft Graph检索相应 ID 中的用户。 |
 | user-ids | userIds | 给定一组 Microsoft `ids` Graph，组件将呈现这些用户。  |
 | 人员查询 | peopleQueries | 给定一组人员查询 (、upns、电子邮件) ，组件将呈现这些用户。 |
 | person-card | personCard | 一个枚举，用于确定激活飞出面板或 所需的用户 `hover` 操作 `click` 。 默认值为 `none`。 |
@@ -40,6 +40,7 @@ ms.locfileid: "59083815"
 | resource | resource | 从 Microsoft 获取的资源Graph (例如 `/me/people` ，) 。 |
 | scopes | scopes | 字符串的可选数组（如果使用 属性）或逗号分隔的范围（如果使用 属性）。 组件将使用这些作用域 (支持) ，以确保用户已同意适当的权限。 |
 | version | version | 进行 GET 请求时使用的可选 API 版本。 默认值为 `v1.0`。  |
+| fallback-details| fallbackDetails| 在图中找不到用户/人员/联系人时，表示一个用户或多人的 IDynamicPerson 对象数组。
 
 以下示例设置要显示的最大人数。
 
@@ -109,7 +110,7 @@ mgt-people {
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存数据|备注|
+|对象存储|缓存数据|注解|
 |---------|-----------|-------|
 |`people`|有关与查询匹配的人的信息|指定时 `resource` 使用|
 |`users`|有关与查询匹配的用户的信息|在 `groupId` 、 `userIds` 或 `peopleQueries` 未指定任何属性时使用|
@@ -118,7 +119,7 @@ mgt-people {
 > [!NOTE]
 > 默认情况下， `mgt-people` 组件使用该 [`mgt-person`](./person.md) 组件来显示有关人员的信息。 `mgt-person`组件自动下载并缓存每个人的照片。
 
-请参阅[Caching，](../customize-components/cache.md)了解有关如何配置缓存的更多详细信息。
+请参阅[Caching，](../customize-components/cache.md)详细了解如何配置缓存。
 ## <a name="extend-for-more-control"></a>扩展以了解更多控件
 
 对于更复杂的方案或真正自定义的 UX，此组件公开了多个在组件扩展 `protected render*` 中替代的方法。

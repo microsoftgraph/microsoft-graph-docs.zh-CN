@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: b7f7128f7e24319782d4748e61494a3b626dd5cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0589d8f4c398814605bacb6eafde26d7df34587f
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050073"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123410"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -46,7 +46,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 |
-| date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。 |
+| date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 由于此报告仅适用于过去 28 天，{date_value} 应为该范围内的日期。 |
 
 > **注意：** 需要在 URL 中设置 period 或 date。
 

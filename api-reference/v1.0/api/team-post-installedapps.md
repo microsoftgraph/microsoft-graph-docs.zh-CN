@@ -5,18 +5,20 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4ad7fa79d3fd247e372ebd89baacc4fb903c2623
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ff74796b88fe682f9b3dd28f6b57106ac84d9112
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988446"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124103"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 
 命名空间：microsoft.graph
 
 将 [应用安装到](../resources/teamsapp.md) 指定的 [团队](../resources/team.md)。
+
+> **注意：** 目前，此操作不支持安装需要特定于资源的同意权限的应用。 有关详细信息，请参阅[已知问题](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported)。
 
 ## <a name="permissions"></a>权限
 
@@ -29,6 +31,7 @@ ms.locfileid: "60988446"
 |应用程序 | TeamsAppInstallation.ReadWriteForTeam.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 
 > **注意**：标记为 ** 的权限已弃用，不应使用。
+  
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

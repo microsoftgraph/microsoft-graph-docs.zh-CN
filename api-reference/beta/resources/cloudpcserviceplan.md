@@ -1,16 +1,16 @@
 ---
 title: cloudPcServicePlan 资源类型
-description: 表示云电脑支持租户的服务计划配置的定义集合。
+description: 表示Windows云电脑配置的所有 365 服务计划。
 author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d2950e65ec3f90f2c7a3e55123e46c435dc805f4
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 281bfdbaefde3b58b8bb9c0367d92d7dfc0bebb3
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697240"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123949"
 ---
 # <a name="cloudpcserviceplan-resource-type"></a>cloudPcServicePlan 资源类型
 
@@ -18,13 +18,15 @@ ms.locfileid: "60697240"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示云电脑支持租户的服务计划配置的定义集合。
+表示Windows云电脑配置的所有 365 服务计划。
+
+有关当前可用的服务计划的示例，请参阅[Windows 365 比较计划和定价](https://www.microsoft.com/windows-365/business/compare-plans-pricing)。 目前，microsoft Graph API 可用于 Windows 365 Enterprise。
 
 ## <a name="methods"></a>Methods
 
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List servicePlans](../api/virtualendpoint-list-serviceplans.md)|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) 集合|列出云电脑为此租户支持的服务计划。|
+|[List servicePlans](../api/virtualendpoint-list-serviceplans.md)|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) 集合|列出组织可购买云电脑当前可用的服务计划。|
 
 ## <a name="properties"></a>属性
 
@@ -43,7 +45,7 @@ ms.locfileid: "60697240"
 |成员|说明|
 |:---|:---|
 |enterprise|Enterprise客户的服务计划类型。|
-|business|针对非常小型企业或 VSB (的业务服务) 类型。|
+|business|针对小型企业或 VSB 客户的业务服务 () 类型。|
 |unknownFutureValue|可发展枚举 sentinel 值。 请勿使用。|
 
 ## <a name="relationships"></a>关系

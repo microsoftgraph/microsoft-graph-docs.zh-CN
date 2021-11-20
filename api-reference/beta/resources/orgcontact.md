@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d0450f1a58b9bf2d5169b80f14d695055462ffd1
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: da80a014bf5d1ee5f3151ae68f994f211dce7a00
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946585"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123963"
 ---
 # <a name="orgcontact-resource-type"></a>orgContact 资源类型
 
@@ -26,16 +26,16 @@ ms.locfileid: "60946585"
 
 ## <a name="methods"></a>方法
 
-| 方法 | 返回类型 | Description |
+| 方法 | 返回类型 | 说明 |
 | ------ | ----------- | ----------- |
 | [列出组织联系人](../api/orgcontact-list.md) | [orgContact](orgcontact.md) 集合 | 列出组织联系人的属性。 |
 | [获取组织联系人](../api/orgcontact-get.md) | [orgContact](orgcontact.md) | 读取 orgContact 对象的属性和关系。 |
-| [获取经理](../api/orgcontact-get-manager.md) | [directoryObject](directoryobject.md) | 获取联系人的经理。 |
+| [获取管理器](../api/orgcontact-get-manager.md) | [directoryObject](directoryobject.md) | 获取联系人的经理。 |
 | [Get transitiveReports](../api/orgcontact-get-transitivereports.md) | 整数 | 从 transitiveReports 导航属性获取组织联系人的可传递报告数。 |
 | [List directReports](../api/orgcontact-list-directreports.md) | [directoryObject](directoryobject.md) collection | 列出联系人的直接下属。 |
-| [List memberOf](../api/orgcontact-list-memberof.md) | [directoryObject](directoryobject.md) 集合 | 获取 memberOf 对象集合。 |
-| [checkMemberGroups](../api/orgcontact-checkmembergroups.md) | String 集合 | 检查组成员身份。 |
-| [getMemberGroups](../api/orgcontact-getmembergroups.md) | String 集合 | 返回指定联系人是其中成员的所有组。 |
+| [List memberOf](../api/orgcontact-list-memberof.md) | [directoryObject](directoryobject.md) collection | 获取 memberOf 对象集合。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 检查组成员身份。 |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回指定联系人是其中成员的所有组。 |
 | [getMemberObjects](../api/orgcontact-getmemberobjects.md) | String 集合 | 返回联系人是其中一个成员的 directoryObjects 列表。 |
 
 ## <a name="properties"></a>属性
@@ -43,31 +43,31 @@ ms.locfileid: "60946585"
 > [!IMPORTANT]
 > 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 | -------- | ---- | ----------- |
 | addresses | [physicalOfficeAddress](physicalofficeaddress.md) 集合 | 此组织联系人的邮寄地址。 目前，联系人只能有一个物理地址。 |
-| companyName | String | 此组织联系人所属的公司的名称。 支持 `$filter` `eq` `ne` (、、、、、 和 `NOT` `ge` `le` `in` `startsWith` `eq` 值 `null`) 。 |
-| department | String | 联系人工作部门的名称。 支持 `$filter` `eq` `ne` (、、、、、 和 `NOT` `ge` `le` `in` `startsWith` `eq` 值 `null`) 。 |
-| displayName | String | 此组织联系人的显示名称。 支持 `$filter` `eq` `ne` `NOT` (、、、、、) `ge` `le` `in` `startsWith` `eq` `null` 值 `$search` `$orderBy` 。  |
-| givenName | String | 此组织联系人的名字。 支持 `$filter` `eq` `ne` (、、、、、 和 `NOT` `ge` `le` `in` `startsWith` `eq` 值 `null`) 。  |
-| id | String | 此组织联系人的唯一标识符。 支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。 |
-| jobTitle | String | 此组织联系人的工作职务。 支持 `$filter` `eq` `ne` (、、、、、 和 `NOT` `ge` `le` `in` `startsWith` `eq` 值 `null`) 。 |
-| mail | String | 联系人的 SMTP 地址，例如"jeff@contoso.onmicrosoft.com"。 支持 `$filter` `eq` `ne` (、、、、、 和 `NOT` `ge` `le` `in` `startsWith` `eq` 值 `null`) 。 |
-| mailNickname | String | 电子邮件别名 (电子邮件地址的一部分，在此组织联系人的 @ 符号) 等待@ 符号。 支持 `$filter` `eq` `ne` (、、、、、 和 `NOT` `ge` `le` `in` `startsWith` `eq` 值 `null`) 。 |
+| companyName | String | 此组织联系人所属的公司的名称。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
+| department | String | 联系人工作部门的名称。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
+| displayName | String | 此组织联系人的显示名称。 支持 `$filter` (`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。  |
+| givenName | String | 此组织联系人的名字。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。  |
+| id | String | 此组织联系人的唯一标识符。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
+| jobTitle | String | 此组织联系人的工作职务。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
+| mail | String | 联系人的 SMTP 地址，例如"jeff@contoso.onmicrosoft.com"。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
+| mailNickname | String | 电子邮件别名 (电子邮件地址的一部分，在此组织联系人的 @ 符号) 等待@ 符号。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
 | onPremisesLastSyncDateTime | DateTimeOffset | 上次从本地 AD 同步此组织联系人的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`）。 |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合 | 此组织联系人的任何同步设置错误的列表。 支持 `$filter`（`eq`、`NOT`）。 |
-| onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则其为 **true;****假** 如果此对象最初从本地目录同步，但不再同步，现在在Exchange;**如果** 从未从本地目录同步此对象，则 (为 null) 。 <br/> <br/>支持 `$filter` `eq` `ne` `NOT` (、、、和 `in` `eq` 值 `null`) 。 |
-| phones | [phone](phone.md) collection | 此组织联系人的电话列表。 电话类型可以是移动、商业和 businessFax。 集合中只能存在每种类型中的一种。 支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。 |
-| proxyAddresses | String 集合 | 例如："SMTP： bob@contoso.com"、"smtp： bob@sales.contoso.com"。 需要多值属性筛选器表达式的 **any** 运算符。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。 |
-| surname | String | 此组织联系人的姓氏。 支持 `$filter` `eq` `ne` `NOT` (、、、、、和 `ge` `le` `in` `startsWith` `eq` 值 `null`)  |
+| onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则其为 **true;****假** 如果此对象最初从本地目录同步，但不再同步，现在在Exchange;**如果** 从未从本地目录同步此对象， (默认值) 。 <br/> <br/>支持 `$filter`（`eq`、`ne`、`NOT`、`in` 和 `null` 值上的 `eq`）。 |
+| phones | [phone](phone.md) collection | 此组织联系人的电话列表。 电话类型可以是移动、商业和 businessFax。 集合中只能存在每种类型中的一种。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
+| proxyAddresses | String collection | 例如："SMTP： bob@contoso.com"、"smtp： bob@sales.contoso.com"。 需要多值属性筛选器表达式的 **any** 运算符。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `startsWith`）。 |
+| surname | String | 此组织联系人的姓氏。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`） |
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型 | Description |
+| 关系 | 类型 | 说明 |
 | ------------ | ---- | ----------- |
-| directReports | [directoryObject](directoryobject.md) collection | 联系人的直接下属。  (其 manager 属性设置为此联系人的用户和联系人。) 只读。 可为 NULL。 支持 `$expand`。 |
+| directReports | [directoryObject](directoryobject.md) collection | 联系人的直接下属。  (其 manager 属性设置为此联系人的用户和联系人。) 只读。 可为空。 支持 `$expand`。 |
 | manager | [directoryObject](directoryobject.md) | 作为此联系人的经理的用户或联系人。 只读。 支持 `$expand`。 |
-| memberOf | [directoryObject](directoryobject.md) 集合 | 此联系人是其中一个成员的组。 只读。 可为 NULL。 支持 `$expand`。 |
+| memberOf | [directoryObject](directoryobject.md) collection | 此联系人是其中一个成员的组。 只读。 可为空。 支持 `$expand`。 |
 | transitiveReports | [directoryObject](directoryobject.md) 集合 | 联系人的可传递报告。 只读。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

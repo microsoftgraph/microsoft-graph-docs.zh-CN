@@ -1,27 +1,27 @@
 ---
-title: 使用 microsoft Windows API 使用 Graph 365 云电脑
-description: 借助 Microsoft Graph，可以在组织中预配和管理云电脑，如果与 Intune API 结合使用，还可以在物理终结点旁边管理云电脑。
+title: 通过 Microsoft Graph API 使用 Windows 365 云电脑
+description: Microsoft Graph API 支持以编程方式访问组织的云电脑信息和管理操作。
 author: cohanley
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: e4e205631424ed2f93b748371c8f32c31b4398ee
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 566c2e37c2b6ca6f36b6ef41d3f2911fc0539a6f
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695424"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123714"
 ---
-# <a name="working-with-windows-365-cloud-pcs-using-the-microsoft-graph-api"></a>使用 microsoft Windows API 使用 Graph 365 云电脑
+# <a name="working-with-windows-365-cloud-pcs-using-the-microsoft-graph-api"></a>通过 Microsoft Graph API 使用 Windows 365 云电脑
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Windows 365 是一项基于云的服务，它以虚拟机为最终用户设置和托管云电脑。 管理员可以轻松设置、管理和扩展 365 Windows 365 云电脑，以满足组织的需求。 各个最终用户可以使用其 Windows 365 云电脑随时将丰富的个性化 Windows 体验（包括他们的应用、数据、内容和设置）从 Microsoft 云安全流式传输到任何设备。
+Windows 365 是一项基于云的服务，可自动为最终用户创建新型 Windows 虚拟机（云电脑）。 每台云电脑都分配有单个用户作为专用Windows设备。 Windows 365 可提供 Microsoft 365 的工作效率、安全性和协作优势。
 
 Microsoft Graph API 支持以编程方式访问组织的云电脑信息和管理操作。 API 执行的操作与通过 Microsoft Endpoint Manager。 
 
 > [!IMPORTANT]
-> 使用适用于Graph的 Microsoft Graph API 需要组织有效的[Windows 365](https://www.microsoft.com/windows-365)许可证。 目前，Microsoft Graph API 适用于 Windows 365 Enterprise，Windows 365 商业版。 
+> 使用适用于Graph电脑的 Microsoft Graph API 需要组织有效的[Windows 365](https://www.microsoft.com/windows-365)许可证。 目前，Microsoft Graph API 适用于 Windows 365 Enterprise，Windows 365 商业版。 
 
 ## <a name="using-the-microsoft-graph-api-for-cloud-pcs"></a>使用 Microsoft Graph API 云电脑
 
@@ -45,3 +45,7 @@ Microsoft Graph 通过权限控制对资源的访问。 作为开发人员，您
 ## <a name="whats-new"></a>最近更新
 
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
+
+## <a name="next-steps"></a>后续步骤
+- 请查看 Microsoft Graph 上的[Windows 365 云电脑Graph。](/graph/cloudpc-concept-overview)
+- 使用 Microsoft Windows 资源管理器试用 Graph 365[云电脑 API。](https://developer.microsoft.com/graph/graph-explorer)

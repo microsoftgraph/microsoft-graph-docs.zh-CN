@@ -5,12 +5,12 @@ description: 更新 **[listItem][]** 上的属性。
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 111753a400d817d5802e2349b3f3be42b5832e89
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fdb64eda4753970b4526c09266ad0745d0ed20b4
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029511"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123661"
 ---
 # <a name="update-listitem"></a>更新 listItem
 
@@ -53,7 +53,7 @@ PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{it
 
 ## <a name="response"></a>响应 
 
-如果成功，此方法在已更新列表项的响应正文中返回`201 Created`响应代码和 [fieldValueSet][]。
+如果成功，此方法在已更新列表项的响应正文中返回`200 Ok`响应代码和 [fieldValueSet][]。
 
 ## <a name="example"></a>示例
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 Ok
 Content-type: application/json
 
 {

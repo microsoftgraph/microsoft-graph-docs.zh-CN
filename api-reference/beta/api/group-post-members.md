@@ -1,24 +1,24 @@
 ---
 title: 添加成员
-description: 通过 members 导航属性Microsoft 365成员添加到安全组 **或** 安全组。
+description: 通过 members 导航属性Microsoft 365成员添加到安全组或安全组。
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 91c84ee1616e037988db268029b28fa386c2817b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fc0ff71e481165ff4da795c0b60713c044b9e38c
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022223"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124005"
 ---
-# <a name="add-member"></a>添加成员
+# <a name="add-members"></a>添加成员
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过 **成员** 导航属性将成员添加到组。
+通过 members 导航属性将成员Microsoft 365安全 **组或** 安全组。
 
 可以添加用户、服务主体或其他组。 
 
@@ -26,8 +26,9 @@ ms.locfileid: "61022223"
 > + 只能向通过云管理的组添加用户。
 > + 不能将安全组添加到 Microsoft 365 组。
 > + 不能将 Microsoft 365 组添加到安全组或其他 Microsoft 365 组。
+> + 不能使用此 API 向邮件安全安全组添加成员。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

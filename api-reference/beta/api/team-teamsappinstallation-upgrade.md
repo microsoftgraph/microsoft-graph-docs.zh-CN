@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 38dcbd64d4ce2a00b5e1ff7ab324ab6cebc52a70
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: c421df726279f0e4c92626e77583ff5ad493670d
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289978"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123872"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation：升级
 
@@ -19,6 +19,8 @@ ms.locfileid: "60289978"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将 [团队中的](../resources/teamsappinstallation.md) 应用 [安装升级到](../resources/team.md) 应用的最新版本。
+
+> **注意：** 目前，此操作不支持升级需要特定于资源的同意权限的应用。 有关详细信息，请参阅[已知问题](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported)。
 
 ## <a name="permissions"></a>权限
 
@@ -82,6 +84,10 @@ POST https://graph.microsoft.com/beta/teams/db5e04be-daa2-4a35-beb1-5e73cc381599
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/upgrade-teamsapp-in-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/upgrade-teamsapp-in-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
