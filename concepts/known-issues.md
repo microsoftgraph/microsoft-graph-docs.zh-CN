@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: c971998ef191295bfcda25251b016d3b51dbb64f
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: e0e6ac6237d9d6dce6d5ec786b69d6faaba8b814
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044818"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123577"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -338,7 +338,12 @@ Microsoft Graph 当前不支持单个请求的事务处理。将忽略单个请�
 
 ### <a name="batch-size-is-limited"></a>批处理大小受限
 
-JSON 批处理请求目前限定为 20 个单独请求。
+JSON 批处理请求目前限定为 20 个单独请求。 
+
+* 根据批处理请求的 API 部分，基础服务会施加自己的限制，从而影响使用 Microsoft Graph 访问它们的应用程序。
+* 批处理中的请求将根据限制单独进行评估，如果任何请求超过限制，则请求会失败，状态为 429。
+
+有关更多详细信息，请访问 [限制和批处理](/graph/concepts/throttling.md#throttling-and-batching)。
 
 ### <a name="request-dependencies-are-limited"></a>请求依赖项受限
 
@@ -405,6 +410,13 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ### <a name="properties-are-missing-in-the-list-of-teams-that-a-user-has-joined"></a>用户已加入的团队列表中缺少属性
 目前，[我/joinedTeams](/graph/api/user-list-joinedteams) API 调用仅返回 [团队](/graph/api/resources/team)的 **id**、**displayName** 和 **说明** 属性。 若要获取所有属性，请使用[获取团队](/graph/api/team-get)操作。
+
+### <a name="installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported"></a>不支持安装需要特定于资源的同意权限的应用
+以下 API 调用不支持安装需要 [资源特定的同意](https://aka.ms/teams-rsc) 权限的应用。
+- [将应用添加到团队](/graph/api/team-post-installedapps.md)
+- [升级团队中安装的应用](/graph/api/team-teamsappinstallation-upgrade.md)
+- [将应用添加到聊天](/graph/api/chat-post-installedapps.md)
+- [升级聊天中安装的应用](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ## <a name="users"></a>用户
 

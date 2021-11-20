@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6c270c5bd5c988c460060a2ca4fa930e789522ba
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 98681b5dc0fd59a246bdd1f545a9189f1cb6ee2a
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934714"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131936"
 ---
 # <a name="chats-getallmessages"></a>聊天： getAllMessages
 
@@ -43,6 +43,13 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
+可以使用 `model` 查询支持基于首选许可和付款要求的 `A` 和 `B` 值的参数。 如果未指定 `model`，将使用 [评估模式](/graph/teams-licenses#evaluation-mode-default-requirements)。 下面是示例。
+
+```http
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
+```
 
 此操作支持 [日期范围参数](/graph/query-parameters) 来自定义响应，如下例所示。
 

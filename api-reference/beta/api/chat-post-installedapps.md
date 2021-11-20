@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7ba4809234ebd3cc59ba746fd27eb6f184a645a7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0ae9f7bb0170cf9b0101f734fb873ba10ba11ad5
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034669"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123749"
 ---
 # <a name="add-app-to-chat"></a>将应用添加到聊天
 
@@ -20,7 +20,9 @@ ms.locfileid: "61034669"
 
 将 [teamsApp](../resources/teamsapp.md) 安装到指定的[聊天](../resources/chat.md)中。
 
-> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例相关联，然后 **teamsApp** 将迅速安装到会议。
+> **注意**：
+> - 如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例相关联，则 **teamsApp** 将迅速安装到会议。
+> - 目前，此操作不支持安装需要特定于资源的同意权限的应用。 有关详细信息，请参阅[已知问题](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported)。
 
 ## <a name="permissions"></a>权限
 

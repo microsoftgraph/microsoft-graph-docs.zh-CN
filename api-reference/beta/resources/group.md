@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 23007c76559337feab4c995fba839a150e232c6b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 8f573fe42950d11517a826832db45f49f30f4c53
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946592"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123715"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -41,8 +41,8 @@ ms.locfileid: "60946592"
 | [删除组](../api/group-delete.md) | 无 | 删除组对象。 |
 | [List groups](../api/group-list.md) | [group](group.md) | 读取所有 group 对象的属性和关系。 |
 | [delta](../api/group-delta.md) | 组集合 | 获取组的增量更改。 |
-| [添加成员](../api/group-post-members.md) | [directoryObject](directoryobject.md) | 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组新）。 |
-| [添加所有者](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | 通过发布到 **owners** 导航属性，为此组添加新所有者（仅支持为安全组和启用邮件的安全组添加）。 |
+| [添加成员](../api/group-post-members.md) | [directoryObject](directoryobject.md) | 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和 Microsoft 365 组）。 |
+| [添加所有者](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | 通过发布到 **owners** 导航属性为组添加新所有者（仅支持安全组和 Microsoft 365 组）。 |
 | [Create setting](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) | 基于 directorySettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。 |
 | [删除设置](../api/directorysetting-delete.md) | 无 | 删除 setting 对象。 |
 | [Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | 读取 endpoint 对象的属性和关系。 |
@@ -59,10 +59,10 @@ ms.locfileid: "60946592"
 | [删除成员](../api/group-delete-members.md) | 无 | 通过 **members** 导航属性删除 Microsoft 365 组、安全组，或这启用邮的安全组中的成员。您可以删除用户或其他组。 |
 | [Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | 更新 setting 对象。 |
 | [assignLicense](../api/group-assignlicense.md) | [组](group.md) | 为群组添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
-| [checkMemberGroups](../api/group-checkmembergroups.md) | String 集合 | 在一列组中检查成员身份。此函数是可传递的。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String 集合 | 在一列组中检查成员身份。此函数是可传递的。 |
 | [checkMemberObjects](../api/group-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。该函数可传递。 |
 | [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | 评估用户或设备是否为动态组的成员。 |
-| [getMemberGroups](../api/group-getmembergroups.md) | String collection | 返回此组是其成员的所有组。此函数是可传递的。 |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回此组是其成员的所有组。此函数是可传递的。 |
 | [getMemberObjects](../api/group-getmemberobjects.md) | String 集合 | 返回组所属的所有组和管理单元。此函数是可传递的。 |
 | [validateProperties](../api/group-validateproperties.md) | JSON | 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。 |
 | **应用角色分配** |||
@@ -126,13 +126,13 @@ ms.locfileid: "60946592"
 |createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`）。 只读。 |
 |deletedDateTime|DateTimeOffset| 对于某些Azure Active Directory对象（用户、组、应用程序），如果删除对象，则首先在逻辑上删除该对象，并且此属性将更新为删除对象的日期和时间。否则，此属性为 null。如果还原对象，则此属性将更新为 null。 |
 |说明|String|可选的组说明。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）和 `$search`。|
-|displayName|String|组的显示名称。 必填。<br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）、`$search` 和 `$orderBy`。|
+|displayName|String|组的显示名称。 必填。<br><br>默认情况下返回。 支持 `$filter` (`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。|
 |expirationDateTime|DateTimeOffset| 设置的组的过期时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`）。 只读。 |
 |groupTypes|String collection| 指定组类型及其成员身份。  <br><br>如果集合包含 `Unified`，则该组为Microsoft 365组；否则，它是安全组或通讯组。有关详细信息，请参阅 [组概述](groups-overview.md)。<br><br>如果该集合包含 `DynamicMembership`，则该组具有动态成员身份；否则，成员身份是静态的。  <br><br>默认返回。支持 `$filter`（`eq`、`NOT`）。|
 |hasMembersWithLicenseErrors|Boolean| 指示此组中是否有该基于组的许可证分配中存在许可证错误的成员。 <br><br>在 GET 操作中从不返回此属性。可以将其用作 $filter 参数，以获取具有许可证错误成员的组（即筛选此属性为 `true`）<br><br>支持 `$filter`（`eq`）。|
 |hideFromAddressLists |Boolean |如果 Outlook 用户界面的某些部分中未显示该组，则为 `true`：在 **通讯簿** 中、在选择邮件收件人的地址列表中，以及用于搜索组的 **浏览组** 对话框中；否则为 false。默认值为 `false`。 <br><br>仅在 `$select`返回。仅在 Get 组 API （`GET /groups/{ID}`） 上受支持。|
 |hideFromOutlookClients |Boolean |如果在 Outlook 客户端（如 Outlook for Windows 和 Outlook 网页版）中未显示改组，则为 `true`，否则为 false。默认值为 `false`。 <br><br>仅在 `$select` 上返回。仅在 Get 组 API（`GET /groups/{ID}`）上受支持。|
-|id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
+|id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
 |isAssignableToRole|Boolean|指示是否可以将此组分配给 Azure Active Directory 角色。 可选。<br><br>此属性只能在创建组时设置，并且不可变。 如果设置为 `true`，则 **securityEnabled** 属性也必须设置为 `true`，并且该组不能是动态组（即，**groupTypes** 不能包含 `DynamicMembership`）。 只有全局管理员和特权角色管理员角色中的调用方可以设置此属性。 必须向调用方分配 *RoleManagement.ReadWrite.Directory* 权限，才能设置此属性或更新此类组成员的身份。 有关更多信息，请参阅[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>默认返回。支持 `$filter`（`eq`、`ne`、`NOT`）。|
 |infoCatalogs|字符串集合|标识分配给组的信息段。默认返回。支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）|
 |isSubscribedByMail|Boolean|指示是否订阅已登录用户以接收电子邮件对话。默认值为 `true`。 <br><br>仅在 `$select` 上返回。仅在 Get 组 API（`GET /groups/{ID}`）上受支持。 |
@@ -174,7 +174,7 @@ ms.locfileid: "60946592"
 
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|表示已为应用程序授予组的应用角色。支持 `$expand`。 |
