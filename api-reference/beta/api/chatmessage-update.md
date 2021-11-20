@@ -5,12 +5,12 @@ author: RamjotSingh
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6a97e183c672de5de8fa72c712abaa363a980c73
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 068886c61ba0cb47a680739a0368a3075d90a242
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975844"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131887"
 ---
 # <a name="update-chatmessage"></a>更新 chatMessage
 
@@ -39,6 +39,17 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{repl
 PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+可以使用查询 `model` 参数，它仅支持值 `A` ，如以下示例所示。
+
+```http
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
+PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
+```
+如果 `model` 未指定， [则使用](/graph/teams-licenses#evaluation-mode-default-requirements) 评估模式。 
+
 ## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
@@ -58,7 +69,7 @@ PATCH /chats/{chatThread-id}/messages/{message-id}
 
 ### <a name="request"></a>请求
 
-下面是请求更新频道消息的 **policyViolation** 属性Microsoft Teams示例。
+下面是请求更新频道消息上 **policyViolation** 属性Microsoft Teams示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

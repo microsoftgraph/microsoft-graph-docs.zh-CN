@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c171eb64c240f60d2070a64bf8ab90dca1d4539b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c8ca0c7d00e60d16abfc73530560bc4cb0900642
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002546"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61076960"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
@@ -58,7 +58,11 @@ GET /servicePrincipals/{id}
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
 ## <a name="examples"></a>示例
-### <a name="request"></a>请求
+
+### <a name="example-1-get-the-properties-of-the-specified-service-principal"></a>示例 1：获取指定服务主体的属性
+
+#### <a name="request"></a>请求
+
 下面是一个请求示例。
 
 
@@ -94,7 +98,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 下面是一个响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -169,3 +173,96 @@ Content-type: application/json
 }
 -->
 
+### <a name="example-2-get-the-custom-security-attribute-assignments-of-the-specified-service-principal"></a>示例 2：获取指定服务主体的自定义安全属性分配
+
+以下示例获取指定服务主体的自定义安全属性。
+
+属性 #1
+
++ 属性集：`Engineering`
++ 属性：`Project`
++ 属性数据类型：字符串集合
++ 属性值：`["Baker","Cascade"]`
+
+属性 #2
+
++ 属性集：`Engineering`
++ 属性：`CostCenter`
++ 属性数据类型：整数集合
++ 属性值：`[1001]`
+
+属性 #3
+
++ 属性集：`Engineering`
++ 属性：`Certification`
++ 属性数据类型：布尔
++ 属性值：`true`
+
+属性 #4
+
++ 属性集：`Marketing`
++ 属性：`Level`
++ 属性数据类型：字符串
++ 属性值：`"Public"`
+
+若要获取自定义安全属性分配，必须为调用主体分配"属性分配读取器或属性分配管理员"角色，并且必须授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。
+
+#### <a name="request"></a>请求
+
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_serviceprincipal_customsecurityattributes"
+}-->
+```http
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecurityAttributes
+```
+
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": {
+        "Engineering": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Project@odata.type": "#Collection(String)",
+            "Project": [
+                "Baker",
+                "Cascade"
+            ],
+            "CostCenter@odata.type": "#Collection(Int32)",
+            "CostCenter": [
+                1001
+            ],
+            "Certification": true
+        },
+        "Marketing": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Level": "Public"
+        }
+    }
+}
+```
+
+如果没有为服务主体分配自定义安全属性，或者调用主体没有访问权限，响应将如下所示：
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": null
+}
+```

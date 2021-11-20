@@ -5,12 +5,12 @@ author: RamjotSingh
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8e5e6151c8036b00f25019006d96383cd1df2fd7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1e49d7f2745faaff7ad732c91ba54a95679fcb0e
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006647"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131825"
 ---
 # <a name="update-chatmessage"></a>更新 chatMessage
 
@@ -35,6 +35,17 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
 PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+可以使用查询 `model` 参数，它仅支持值 `A` ，如以下示例所示。 
+
+```http
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
+PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
+```
+如果 `model` 未指定， [则使用](/graph/teams-licenses#evaluation-mode-default-requirements) 评估模式。
 
 ## <a name="request-headers"></a>请求标头
 

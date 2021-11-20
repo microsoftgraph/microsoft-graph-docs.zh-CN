@@ -2,15 +2,15 @@
 title: chatViewpoint 资源类型
 description: 表示聊天的用户特定属性。
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ca6a542903aae7b203c6183a25dd99889b97f275
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 9d9efb70dec447bf2f3c504a05245f67944783f6
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236295"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131922"
 ---
 # <a name="chatviewpoint-resource-type"></a>chatViewpoint 资源类型
 
@@ -20,12 +20,13 @@ ms.locfileid: "53236295"
 
 表示聊天的特定于用户 [的属性](../resources/chat.md)。 这些属性可能会根据 API 调用方的身份而更改。
 
-> **注意：** 目前，仅 [列表聊天](../api/chat-list.md) 操作支持 **chatViewpoint**。
+> **注意：** 目前，仅 ["列表"聊天](../api/chat-list.md) 操作支持 **chatViewpoint**。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|lastMessageReadDateTime|DateTimeOffset|表示直到呼叫用户已读取特定聊天中的 [chatMessages](../resources/chatmessage.md) 的日期/时间。|
+|IsHidden|布尔值|指示当前用户是否隐藏聊天。|
+|lastMessageReadDateTime|DateTimeOffset|表示直到当前用户已读取特定聊天中的 [chatMessages](../resources/chatmessage.md) 的日期/时间。|
 
 ## <a name="relationships"></a>关系
 无。
@@ -40,6 +41,7 @@ ms.locfileid: "53236295"
 ``` json
 {
   "@odata.type": "#microsoft.graph.chatViewpoint",
+  "isHidden": "Boolean",
   "lastMessageReadDateTime": "String (timestamp)"
 }
 ```

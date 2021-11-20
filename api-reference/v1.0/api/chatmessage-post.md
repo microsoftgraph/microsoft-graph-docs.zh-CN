@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8cc9a6992d988473827e2253e992e9a85e59fa3b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5c21b44e676335491f612816711b33b47988412b
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006782"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131826"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -20,7 +20,7 @@ ms.locfileid: "61006782"
 
 > **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：使用 Microsoft Teams 是违反 [](/legal/microsoft-apis/terms-of-use)使用条款日志文件。 仅发送用户将阅读的邮件。
+> **注意**：使用产品作为Microsoft Teams违反日志文件。 [](/legal/microsoft-apis/terms-of-use) 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -31,7 +31,9 @@ ms.locfileid: "61006782"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | ChannelMessage.Send |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| 应用程序                            | Teamwork.Migrate.All |
+
+> **注意**：仅迁移 *支持应用程序*[权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。
 
 ### <a name="permissions-for-chat"></a>聊天权限
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -60,7 +62,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 POST /chats/{chat-id}/messages
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明   |
 |:--------------|:--------------|
@@ -647,7 +649,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (内容) 相同。  (请注意 **，temporaryId 设置为** **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
+> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (中的内容) 相同。  (请注意 **，temporaryId 设置为** **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码字节。  可以使用 在 C# 中执行此操作 `Convert.ToBase64String(File.ReadAllBytes("image.png"));` 。 .NET SDK 用户无需执行到 Base64 编码字节的转换，因为 SDK 会处理它。
 
@@ -774,7 +776,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。 若要了解如何获取团队中的频道列表，请参阅 [列出频道](../api/channel-list.md)。
 
-> 注意 **：conversationIdentityType** 必须设置为 `channel` @mention通道。
+> 注意 **：conversationIdentityType** 必须设置为 `channel` @mention频道。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

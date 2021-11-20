@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 090b35860f98e6b74401b9132a7b9eac1bf5cb9c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3fb668046b8cb3686a32b14e0feb0f1844b0065f
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000333"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131880"
 ---
 # <a name="list-schools"></a>列出学校
 
@@ -25,7 +25,7 @@ ms.locfileid: "61000333"
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | EduRoster.ReadBasic                         |
-| 委派（个人 Microsoft 帐户） | 不支持                               |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -55,7 +55,7 @@ GET /education/classes/{id}/schools
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。
 

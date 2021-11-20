@@ -396,7 +396,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '项目见解 (预览) '
+                  - name: '预览版 (项) '
                     href: resources/iteminsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -13571,7 +13571,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: 获取活动计数
                     href: api/reportroot-getyammergroupsactivitycounts.md
-          - name: Microsoft Defender for Office 365 安全报告
+          - name: Microsoft Defender for Office 365安全报告
             items:
               - name: 攻击模拟报告
                 displayname: Attack simulation and training
@@ -14296,6 +14296,10 @@ items:
                 href: api/chat-markchatreadforuser.md
               - name: 将聊天标记为未读
                 href: api/chat-markchatunreadforuser.md
+              - name: 隐藏聊天
+                href: api/chat-hideforuser.md
+              - name: 取消隐藏聊天
+                href: api/chat-unhideforuser.md
           - name: 聊天消息
             href: resources/chatmessage.md
             items:

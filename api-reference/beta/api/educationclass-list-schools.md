@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e6261ec39716b42fb8203d671f23513e8036105c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3c5b77951660c03fad0803d4fd6a4424032b8c30
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028698"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131951"
 ---
 # <a name="list-schools"></a>列出学校
 
@@ -20,14 +20,14 @@ ms.locfileid: "61028698"
 
 检索教授该课程的学校列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | EduRoster.ReadBasic                         |
-| 委派（个人 Microsoft 帐户） | 不支持                               |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -57,7 +57,7 @@ GET /education/classes/{id}/schools
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/education/classes/11014/schools
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。
 

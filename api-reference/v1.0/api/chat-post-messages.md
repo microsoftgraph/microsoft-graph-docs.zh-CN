@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c2d3ffbecb58d01ab1fa5a8e18465f397773c9c2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8639f86ae3d791f082c027abe101576994611606
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996440"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131944"
 ---
 # <a name="send-message-in-a-chat"></a>在聊天中发送消息
 
 命名空间：microsoft.graph
 
-在指定的聊天 中发送新的[chatMessage](../resources/chatmessage.md) [。](../resources/chat.md) 此 API 无法创建新聊天;在创建聊天消息之前，必须使用 [列表聊天](chat-list-messages.md) 方法检索现有聊天的 ID。
+在指定的聊天 中发送新的[chatMessage](../resources/chatmessage.md) [。](../resources/chat.md) 此 API 无法创建新聊天;必须先使用 [列表聊天](chat-list.md) 方法检索现有聊天的 ID，然后才能创建聊天消息。
 
 > **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
