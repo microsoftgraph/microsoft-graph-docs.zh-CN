@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c8c48019fa084d94eae1465d5384e5114c5bf349
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 998be54216d3e961b89527f39bd657ac63dd2c3e
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025946"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131906"
 ---
 # <a name="chats-getallmessages"></a>聊天： getAllMessages
 
@@ -42,7 +42,15 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此操作支持 [日期范围参数](/graph/query-parameters) 来自定义响应，如下例所示。
+可以使用 `model` 查询支持基于首选许可和付款要求的 `A` 和 `B` 值的参数，如以下示例所示。  
+
+```http
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
+```
+如果未指定 `model`，将使用 [评估模式](/graph/teams-licenses#evaluation-mode-default-requirements)。
+
+此操作还支持 [日期范围参数](/graph/query-parameters)来自定义响应，如下例所示。
 
 ``` http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 38b93c9ca3faf0eae666eb4695813f54c4108199
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 243771069666410fc997aff1cbc70ef9ae290526
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988615"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131915"
 ---
 # <a name="channel-getallmessages"></a>频道：getAllMessages
 
@@ -43,6 +43,15 @@ GET /teams/{team-id}/channels/getAllMessages
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
+可以使用 `model` 查询支持基于首选许可和付款要求的 `A` 和 `B` 值的参数，如以下示例所示。 
+
+```http
+GET /teams/{team-id}/channels/getAllMessages?model=A
+GET /teams/{team-id}/channels/getAllMessages?model=B
+```
+
+如果未指定 `model`，将使用 [评估模式](/graph/teams-licenses#evaluation-mode-default-requirements)。 
 
 可以使用 [$top](/graph/query-parameters#top-parameter) 查询参数控制每个响应中的项目数。
 此外，**lastModifiedDateTime** 上的 **dateTime** 范围查询还支持 [$filter](/graph/query-parameters#filter-parameter)。 目前不支持其他 [OData 查询参数](/graph/query-parameters)。

@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 89a17a85ca4a7cc36bfb28292a92f4caef602cb0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 83485838cd34651d3cc224772b750fe001fa842e
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018841"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124040"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation：升级
 
@@ -20,7 +20,9 @@ ms.locfileid: "61018841"
 
 升级[聊天](../resources/chat.md)中的[应用安装](../resources/teamsappinstallation.md)。
 
-> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例相关联，然后，会议中安装的 **teamsApp** 将会迅速得到升级。
+> **注意**：
+> - 如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例相关联，然后，会议中安装的 **teamsApp** 将会迅速得到升级。
+> - 目前，此操作不支持升级需要特定于资源的同意权限的应用。 有关详细信息，请参阅[已知问题](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported)。
 
 ## <a name="permissions"></a>权限
 
