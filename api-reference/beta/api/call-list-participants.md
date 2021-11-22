@@ -1,16 +1,16 @@
 ---
 title: 列出参与者
-description: 在呼叫中检索参与者对象的列表。
+description: 检索调用中的参与者对象列表。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c108934020d3eddf2af8f5af1fcf7dd7873d61b8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: aaca0d98f5e0a4d22abf1faa05601ec1db0d7c61
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959675"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019976"
 ---
 # <a name="list-participants"></a>列出参与者
 
@@ -18,7 +18,7 @@ ms.locfileid: "48959675"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在呼叫中检索参与者对象的列表。
+检索调用中的参与者对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ GET /communications/calls/{id}/participants
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明               |
 |:--------------|:--------------------------|
@@ -54,7 +54,7 @@ GET /communications/calls/{id}/participants
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [参与者](../resources/participant.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/participant.md) 代码和 participant 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-participants-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-participants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

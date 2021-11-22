@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: d19ad9da300066b333204ac0ab6aea48966ef410
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: fc69cb7ec9c04d995889d2b9643027d74ae2c45b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289922"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976719"
 ---
 # <a name="delete-approleassignment"></a>删除 appRoleAssignment
 
@@ -39,7 +39,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 > [!NOTE]
 > 最佳做法是，我们建议你使用 Delete [appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md)方法删除应用角色分配，该方法通过资源服务主体的 **appRoleAssignedTo** 关系删除，而不是使用此方法。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:---------------|:--------|
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/appRoleAssignments/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-delete-approleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-delete-approleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

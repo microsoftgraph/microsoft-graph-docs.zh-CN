@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 83cb72ff092181a110ec80f350bc86a702cdad46
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 83ef3cb4ac08a9351d63625ec643ff3ed2ce9565
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60935464"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997043"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
@@ -45,12 +45,12 @@ POST /privilegedRoleAssignmentRequests
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象的 JSON 表示形式。 
 
-| 属性     | 类型    |  Description|
+| 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
 |roleId|String|角色的 ID。 此为必需属性。|
 |type|String|表示对项目执行的操作角色分配。 值可以是 `AdminAdd` ：管理员将用户添加到角色 `UserAdd` ;：用户添加角色分配。 必需。|
 |assignmentState|String|工作分配的状态。 该值可用于符合条件的分配 - 如果直接由管理员分配，或由用户对符合条件的分配 `Eligible` `Active` `Active` 进行激活。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
-|reason|String|需要为审核和审核角色分配请求提供原因。|
+|reason|String|需要为请求审核和审核角色分配提供原因。|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|请求角色分配计划。|
 
 ## <a name="response"></a>响应
@@ -117,6 +117,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-privilegedroleassignmentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-privilegedroleassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

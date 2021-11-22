@@ -1,16 +1,16 @@
 ---
 title: 删除 accessReviewScheduleDefinition
 description: 删除 accessReviewScheduleDefinition 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 53ef0c8f98c240ad0544b7d816c12ec1cac8c507
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1d15acb9af6a3abe36098ad344ae62239c9eba16
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048363"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991799"
 ---
 # <a name="delete-accessreviewscheduledefinition"></a>删除 accessReviewScheduleDefinition
 
@@ -69,6 +69,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

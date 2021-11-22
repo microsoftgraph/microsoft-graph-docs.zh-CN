@@ -5,12 +5,12 @@ author: Harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fe98657de5e0b96db4b38b3a26ffed1521736d4e
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: ece2ef520c94dc4b18bb77cfb36a888e12373c5d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766171"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018883"
 ---
 # <a name="update-calendarpermission"></a>更新 calendarPermission
 
@@ -49,7 +49,7 @@ PATCH /groups/{id}/calendar/calendarPermissions/{id}
 PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:-----------|:-----------|
@@ -104,6 +104,10 @@ Content-type: application/json
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-calendarpermission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>响应

@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c74dfce74fae4cff6f4a44ac112d3ef309f44737
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 952c6996d60058b94ff93fe352a047a52370a07a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508078"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019830"
 ---
 # <a name="manageddevice-resizecloudpc"></a>managedDevice：resizeCloudPc
 
@@ -20,7 +20,7 @@ ms.locfileid: "59508078"
 
 将现有云电脑升级或降级到具有新的虚拟 CPU 和 vCPU (和存储) 配置。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/manageddevice-resizecloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/manageddevice-resizecloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

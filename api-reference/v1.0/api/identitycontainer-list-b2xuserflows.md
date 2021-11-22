@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0f5ff011d39caa48eac422ec6684335d3c277ea1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ffa0bd2b6f9826ca8f78d849959fccba2d60382c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045789"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976546"
 ---
 # <a name="list-b2xidentityuserflows"></a>列出 b2xIdentityUserFlows
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 [!INCLUDE [sample-code](../includes/snippets/java/list-b2xuserflows-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-b2xuserflows-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -162,6 +166,10 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows?$expand=identityProvi
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-b2xuserflows-expand-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-b2xuserflows-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

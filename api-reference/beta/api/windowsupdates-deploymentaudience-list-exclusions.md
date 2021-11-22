@@ -2,15 +2,15 @@
 title: 列出部署访问群体排除项
 description: 列出从 deploymentAudience 中排除的 updatableAsset 资源。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 2fbe216e4f37df197934611e60478df9dda71387
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 60244a741943015eb847f8dff241710041847f33
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351137"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009313"
 ---
 # <a name="list-deployment-audience-exclusions"></a>列出部署访问群体排除项
 
@@ -30,7 +30,7 @@ ms.locfileid: "53351137"
 |:---|:---|
 |委派（工作或学校帐户）|WindowsUpdates.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|WindowsUpdates.ReadWrite.All|
+|应用程序|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ GET /admin/windows/updates/deployments/{deploymentId}/audience/exclusions
 若要对不是从 [updatableAsset](../resources/windowsupdates-updatableasset.md)继承的属性使用查询参数，请包含属性的完整资源类型。 例如，若要选择 [azureADDevice，](../resources/windowsupdates-azureaddevice.md) `errors` 请使用 `$select=microsoft.graph.windowsUpdates.azureADDevice/errors` 。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deployme
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 44e28f5ef8327ed02e5f223684733494341e4752
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 41e8ea251511ed1bb8a33225ec65451c9e529793
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771181"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987404"
 ---
 ```csharp
 
@@ -24,7 +24,7 @@ var agreement = new Agreement
             IsDefault = true,
             FileData = new AgreementFileData
             {
-                Data = Encoding.ASCII.GetBytes("SGVsbG8gd29ybGQ=")
+                Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=")
             }
         }
     }

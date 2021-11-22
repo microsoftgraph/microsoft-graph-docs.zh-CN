@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8914f18d74ee3a5c281dfd21410cc46174bbbaf2
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a1e46749ce3a4435c7fb286dec658aa2d831dd59
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939866"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61000018"
 ---
 # <a name="update-authenticationmethodspolicy"></a>更新 authenticationMethodsPolicy
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "60939866"
 
 更新 [authenticationMethodsPolicy 对象](../resources/authenticationmethodspolicy.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -52,7 +52,7 @@ PATCH /policies/authenticationMethodsPolicy
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [registrationEnforcement](../resources/registrationenforcement.md) 对象的 JSON 表示形式，以提示用户设置目标身份验证方法。 
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|在登录时强制注册。 此属性可用于提示用户设置目标身份验证方法。|
 
@@ -104,6 +104,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authenticationmethodspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authenticationmethodspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

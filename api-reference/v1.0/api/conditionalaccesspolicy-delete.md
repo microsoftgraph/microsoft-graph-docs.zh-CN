@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 543de09b3a275fafbead420bbd09e3447fed4751
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 34012ddb2c16072b4ba5557fa5c65ea1dd3f2c06
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016685"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979366"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>删除 conditionalAccessPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "59016685"
 
 删除 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-conditionalaccesspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-conditionalaccesspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

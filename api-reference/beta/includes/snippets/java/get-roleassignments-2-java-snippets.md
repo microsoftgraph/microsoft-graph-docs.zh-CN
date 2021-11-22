@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e29011cae6c610b16cf87926bfc2e4dad4e1d019b7590c8b4a9e04fa8e228715
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4e7660609fa8512735c5443148bfa37ac09a484
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57333724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "61007239"
 ---
 ```java
 
@@ -13,6 +13,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 UnifiedRoleAssignmentCollectionPage roleAssignments = graphClient.roleManagement().directory().roleAssignments()
     .buildRequest()
+    .filter(" principalId eq 'f1847572-48aa-47aa-96a3-2ec61904f41f'")
     .get();
 
 ```

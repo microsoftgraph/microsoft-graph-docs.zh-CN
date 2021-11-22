@@ -2,15 +2,15 @@
 title: 删除 fido2AuthenticationMethod
 description: 删除 fido2AuthenticationMethod 对象。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3d92da843b6e18a07cf98e42dee685a1d692d6ef
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fe7cdfee01e523c0f7616f34824894e418c5d9a3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436076"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990217"
 ---
 # <a name="delete-fido2authenticationmethod"></a>删除 fido2AuthenticationMethod
 命名空间：microsoft.graph
@@ -19,16 +19,16 @@ ms.locfileid: "50436076"
 
 删除用户的 [FIDO2 安全密钥身份验证方法](../resources/fido2authenticationmethod.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|自操作权限 (权限从最低到最特权) |对他人 (权限从最低到最特权) |
+|权限类型|自行操作的权限 (权限从最低权限权限) |对他人的操作权限 (权限从最低权限权限) |
 |:---|:---|:--|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| Application                            | 不适用。 | UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | 不适用。 | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/fid
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-fido2authenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-fido2authenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

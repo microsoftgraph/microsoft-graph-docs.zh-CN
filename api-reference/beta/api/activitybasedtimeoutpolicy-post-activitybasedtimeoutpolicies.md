@@ -1,16 +1,16 @@
 ---
 title: 创建 activityBasedTimeoutPolicy
 description: 创建新的 activityBasedTimeoutPolicy。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 18f883410957e73bab9c8c74ddb411776de9c435
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8c81f5bca38beda4062c67541c83ee36fd44949a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048321"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987649"
 ---
 # <a name="create-activitybasedtimeoutpolicy"></a>创建 activityBasedTimeoutPolicy
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

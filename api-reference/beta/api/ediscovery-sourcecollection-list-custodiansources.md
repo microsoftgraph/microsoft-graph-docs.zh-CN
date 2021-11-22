@@ -2,15 +2,15 @@
 title: 列出 custodianSources
 description: 获取与源集合关联的 dataSource 对象的列表。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4b03b5bc02e16b901066b3561317d7afb8777bd2
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: fca642472070d36df478a65a0ec58294d1b058f4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080297"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994312"
 ---
 # <a name="list-custodiansources"></a>列出 custodianSources
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-datasource-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-datasource-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

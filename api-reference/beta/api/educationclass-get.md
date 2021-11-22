@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 38d02c0730ad047d8f8c37a56ddb6a979a4ecfba
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 8af518527c101bb6f00f13a8f2d7579f8c53ab4b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942357"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975298"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -20,7 +20,7 @@ ms.locfileid: "60942357"
 
 从系统检索课程。 课程是带特殊属性的通用组，向系统表明该组是课程。 组成员表示学生；组管理员代表课程教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/education/classes/11023
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

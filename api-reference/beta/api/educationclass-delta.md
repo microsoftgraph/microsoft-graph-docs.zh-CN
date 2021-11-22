@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2fcf15553cbf9b8c632b0ea5739f39b93cada60d
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b060b46e30569f9ab95f4badbfbd11f01a3707f1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937865"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020927"
 ---
 # <a name="educationclass-delta"></a>educationClass： delta
 
@@ -20,7 +20,7 @@ ms.locfileid: "60937865"
 
 获取新创建或更新的类（包括成员身份更改）而无需执行整个类集合的完全读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/education/classes/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationclass-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationclass-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

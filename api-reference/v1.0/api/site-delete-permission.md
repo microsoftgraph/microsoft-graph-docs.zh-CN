@@ -5,12 +5,12 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 17ce3a9b19c9455090471243693925c1853a9a22
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e5216a88a10e17fde0964a22d39bc0a85652458a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085070"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976215"
 ---
 # <a name="delete-permission"></a>删除权限
 命名空间：microsoft.graph
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions/{permissionI
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-permission-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-permission-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

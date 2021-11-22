@@ -1,16 +1,16 @@
 ---
 title: 更新程序
-description: 在 Azure AD 访问评审功能中，更新现有程序对象。
-localization_priority: Normal
+description: 在Azure AD访问评审功能中，更新现有程序对象。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 420d64bbef69aac415380905500054313790513d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d106c7c78fb996d2f94b1fae1d23952f75e23ee4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053536"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007355"
 ---
 # <a name="update-program"></a>更新程序
 
@@ -18,7 +18,7 @@ ms.locfileid: "52053536"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，更新现有 [程序](../resources/program.md) 对象。
+在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，更新现有[程序](../resources/program.md)对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-program-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-program-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

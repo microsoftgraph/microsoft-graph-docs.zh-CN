@@ -1,16 +1,16 @@
 ---
 title: 删除配置文件
 description: 删除配置文件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b38059b052592ed82191973dfbaf598b35f0ed29
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1854fe80720a483aabda9cda0da7a720009a0b3a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976014"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019576"
 ---
 # <a name="delete-profile"></a>删除配置文件
 
@@ -18,7 +18,7 @@ ms.locfileid: "48976014"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户帐户中删除 [配置文件](../resources/profile.md) 对象。
+从 [用户帐户](../resources/profile.md) 中删除配置文件对象。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48976014"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/me/profile
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a9f98ad9c047815a1207c76caaf9f35ec0130a94
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a03ac30fff70fb8c29bc4fba9bb8c7794617eda9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943456"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020872"
 ---
 # <a name="list-submission-resources"></a>列出提交资源
 
@@ -22,7 +22,7 @@ ms.locfileid: "60943456"
 
 **submissionResource** 对象是学生正在处理的实际资源对象的包装。 如果资源是在分配过程中从分配复制的，包装器还包括指向分配上的资源的指针。 这些资源是工作分配的工作副本。 **submittedResources** 是已正式提交进行评分的资源。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-resources-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-resources-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

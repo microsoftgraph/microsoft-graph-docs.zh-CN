@@ -5,12 +5,12 @@ description: 从网站、列表或内容类型中删除列。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: b021502d670147b9e1a413cfe8af2efbc2743e1a
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 9193f653e600359a0e0128cfefefe2b6da48b0ac
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730464"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61000578"
 ---
 # <a name="delete-columndefinition"></a>删除 columnDefinition
 命名空间：microsoft.graph
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentTyp
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-columns-from-contenttype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-columns-from-contenttype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

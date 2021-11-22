@@ -1,16 +1,16 @@
 ---
 title: 获取 accessReviewInstance
 description: 检索 accessReviewInstance 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bd333a0620b8825400f89338112060c48611f302
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 44f8d08757b93836c58a2dbf73dbac88e9ff7909
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030738"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987851"
 ---
 # <a name="get-accessreviewinstance"></a>获取 accessReviewInstance
 
@@ -31,7 +31,7 @@ ms.locfileid: "53030738"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
-为了调用此 API，已登录用户还必须位于允许他们阅读访问评审的目录角色中，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-root.md)。
+为了调用此 API，已登录用户还必须位于允许其阅读访问评审的目录角色中，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-root.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewInstance](../resources/accessreviewinstance.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstance](../resources/accessreviewinstance.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 更新 accessReviewPolicy
 description: 更新 accessReviewPolicy 对象的属性。
 author: kafen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cd774e18586218182379a0523df304a20a8e7e7c
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 2709f5fe505b539cb57d7f46b821481245ca7829
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240628"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987733"
 ---
 # <a name="update-accessreviewpolicy"></a>更新 accessReviewPolicy
 命名空间：microsoft.graph
@@ -52,7 +52,7 @@ PATCH /identityGovernance/accessReviews/policy
 
 |属性|类型|说明|
 |:---|:---|:---|
-|isGroupOwnerManagementEnabled|Boolean|如果 `true` 为 ，组所有者可以在他们拥有的组上创建和管理访问评审。|
+|isGroupOwnerManagementEnabled|布尔|如果 `true` 为 ，组所有者可以在他们拥有的组上创建和管理访问评审。|
 
 
 
@@ -92,6 +92,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -137,6 +141,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewpolicy-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewpolicy-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

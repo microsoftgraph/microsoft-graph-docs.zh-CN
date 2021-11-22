@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a75d7c7cf0e243d54f3986bfd18cb485bd7b54ca
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 9ce048434df2e62fa77792ad9252742396e9d890
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289626"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994418"
 ---
 # <a name="list-device-transitive-groups"></a>List device transitive groups
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-devices-transitivememberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -162,7 +166,7 @@ Content-type: text/plain
 
 294
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData cast 和 $search 获取包含字母"Video"的显示名称（包括返回的对象计数）的成员资格
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取包含字母"Video"的显示名称（包括返回的对象计数）的成员资格
 
 #### <a name="request"></a>请求
 

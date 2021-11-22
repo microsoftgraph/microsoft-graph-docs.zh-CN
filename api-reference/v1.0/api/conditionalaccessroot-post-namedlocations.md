@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a1f64d68a05516dab32b20dc2bf25bc3562971ef
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c296034a0c3a61918bb6c4269686139d0f69db75
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147813"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993662"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 
@@ -45,7 +45,7 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。 必须指定派生@odata的 **@odata.type，** 即 `#microsoft.graph.ipNamedLocation` [ipNamedLocation](../resources/ipnamedlocation.md) 对象或 `#microsoft.graph.countryNamedLocation` [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
+在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。 必须指定派生@odata类型的 **@odata.type，** 即 `#microsoft.graph.ipNamedLocation` [ipNamedLocation](../resources/ipnamedlocation.md) 对象或 `#microsoft.graph.countryNamedLocation` [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
 
 下表列出了创建 [ipNamedLocation](../resources/ipnamedlocation.md) 对象所需的属性。
 
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -195,6 +199,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

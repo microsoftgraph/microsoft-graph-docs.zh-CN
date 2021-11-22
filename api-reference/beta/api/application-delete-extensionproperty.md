@@ -1,16 +1,16 @@
 ---
 title: 删除 extensionProperty
 description: 删除 extensionProperty。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ce1b58d22d58a261f1725bd304be01e5e27478ae
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a0a497c54a39934a95a2e7ca57bbd96632422dfc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129287"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995524"
 ---
 # <a name="delete-extensionproperty"></a>删除 extensionProperty
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/extensionProperties/{i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-extensionproperty-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-extensionproperty-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

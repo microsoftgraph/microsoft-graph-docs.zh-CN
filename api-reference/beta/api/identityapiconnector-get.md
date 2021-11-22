@@ -2,15 +2,15 @@
 title: 获取 identityApiConnector
 description: 读取 API 连接器的属性。
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3dbf991dc10d1f7d13c25b7b4e7b4c9d26505045
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f09fd3e876802fbe35e5a0c78113b769d96b37de
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435598"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986199"
 ---
 # <a name="get-identityapiconnector"></a>获取 identityApiConnector
 
@@ -20,7 +20,7 @@ ms.locfileid: "50435598"
 
 读取 [identityApiConnector 对象](../resources/identityapiconnector.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,12 +28,12 @@ ms.locfileid: "50435598"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | APIConnectors.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。  |
-| Application                            | APIConnectors.ReadWrite.All |
+| 应用程序                            | APIConnectors.ReadWrite.All |
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,7 +59,7 @@ GET /identity/apiConnectors/{identityApiConnectorId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [identityApiConnector](../resources/identityapiconnector.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [identityApiConnector](../resources/identityapiconnector.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/identity/apiConnectors/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityapiconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityapiconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

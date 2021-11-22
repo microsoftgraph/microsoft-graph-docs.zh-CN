@@ -2,15 +2,15 @@
 title: 删除应用程序
 description: 删除应用程序。
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 75858e0266c687df254f6c52f9d55b6cd10aa681
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: bc707feee90df19d930fba0f6cd86e2b026cfb72
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262373"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990967"
 ---
 # <a name="delete-application"></a>删除应用程序
 
@@ -73,6 +73,10 @@ DELETE https://graph.microsoft.com/beta/applications/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

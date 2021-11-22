@@ -1,16 +1,16 @@
 ---
 title: 删除 accessPackageCatalog
 description: 删除 accessPackageCatalog。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ad2dd60c9e2f104987edeef0bac46dcf940a14cd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6977c8ade22b8cf9fb127788a98ac75688c1d669
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439602"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983392"
 ---
 # <a name="delete-accesspackagecatalog"></a>删除 accessPackageCatalog
 
@@ -20,7 +20,7 @@ ms.locfileid: "50439602"
 
 删除 [accessPackageCatalog](../resources/accesspackagecatalog.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439602"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -50,7 +50,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 200 系列响应代码。 它不在响应正文中返回任何内容。
+如果成功，此方法返回 200 系列响应代码。 它不会在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackagecatalog-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackagecatalog-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

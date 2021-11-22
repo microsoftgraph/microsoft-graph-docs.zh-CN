@@ -1,16 +1,16 @@
 ---
 title: '列出 b2cIdentityUserFlow 中已弃 (identityProviders) '
-description: '列出 b2cIdentityUserFlow 中所有 identityProviders。  (已弃) '
-localization_priority: Normal
+description: '列出 b2cIdentityUserFlow 中所有 identityProviders。  (弃用) '
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 56ed128f253df192b2fdabb38930883c4b2c8c6b
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 45aa33ed64e2dea2a07d35b402b378a398ca1e0f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439775"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994914"
 ---
 # <a name="list-all-identityproviders-in-a-b2cidentityuserflow-deprecated"></a>列出 b2cIdentityUserFlow 中已弃 (identityProviders) 
 
@@ -21,7 +21,7 @@ ms.locfileid: "53439775"
 
 获取 [b2cIdentityUserFlow 对象中的标识](../resources/b2cidentityuserflow.md) 提供程序。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProvider
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-b2cuserflow-list-identityproviders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-b2cuserflow-list-identityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

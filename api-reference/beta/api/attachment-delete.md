@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: 8dbb8fe04455a9432b8548333ebc9615fa3fbb97
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: aef3f278c4e05ac5ec89fa407a7f6b60b0fb822a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255983"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982511"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -20,11 +20,11 @@ ms.locfileid: "60255983"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-从用户日历事件、邮件、[](../resources/event.md)任务或[](../resources/message.md)帖子[Outlook附件](../resources/outlooktask.md)[。](../resources/post.md)
+从用户日历事件、邮件、任务[或](../resources/event.md)帖子[Outlook附件](../resources/outlooktask.md)[。](../resources/post.md) [](../resources/message.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-根据附件附加到的资源 (**事件**、邮件 **、outlookTask** 或 post **)** 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据附件附加到的资源 (**事件**、邮件 **、outlookTask** 或 post **)** 以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -156,6 +156,10 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-attachment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-attachment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

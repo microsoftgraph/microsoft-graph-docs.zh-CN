@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 1a34627d95b2e65798c93fae1bf45beb3772b93f
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: b298eca836045075f0d6e0c1061d30c15dd9d643
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560009"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976789"
 ---
 # <a name="delete-externalconnection"></a>删除 externalConnection
 命名空间：microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "60560009"
 |:---|:---|
 |委派（工作或学校帐户）|不适用|
 |委派（个人 Microsoft 帐户）|不适用|
-|Application| ExternalConnection.ReadWrite.OwnedBy|
+|应用程序| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,6 +55,8 @@ DELETE /external/connections/{connectionsId}
 ### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_externalconnection"
@@ -63,6 +65,28 @@ DELETE /external/connections/{connectionsId}
 ``` http
 DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-externalconnection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-externalconnection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-externalconnection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-externalconnection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-externalconnection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 
