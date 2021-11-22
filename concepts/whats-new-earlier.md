@@ -3,14 +3,84 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: e9c62070be3dd1d646768fd207c5c1304bcf727b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 7c8a3e646f311d5c8c26d6375a29fe8c1119ba90
+ms.sourcegitcommit: c6bbba6cb9aaa7ad35374d1b5d4466c49878ab43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695021"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61135177"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="september-2021-new-and-generally-available"></a>2021 年 9 月: 新增功能和正式发布
+
+### <a name="cloud-communications--calls"></a>云通信 | 呼叫
+- 使用 [startHoldMusic](/graph/api/participant-startHoldMusic) 操作让 [参与者](/graph/api/resources/participant) 保持呼叫并在后台播放音乐。
+- 使用 [stopHoldMusic](/graph/api/participant-stopHoldMusic) 操作重新合并之前呼叫保持的参与者。
+
+### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
+- 获取 [Teams 直播](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告的内容流。
+- 获取或设置自动录制[联机会议](/graph/api/resources/onlineMeeting)的选项。
+- 将 `OnlineMeetingArtifact.Read.All` 用为委派权限或应用程序权限，以读取联机会议的项目。 有关详细信息，请参阅 [联机会议权限](permissions-reference.md#online-meetings-permissions)。
+
+### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
+云打印机状态包括 [Internet 打印协议 (IPP)](https://www.iana.org/assignments/ipp-registrations/ipp-registrations.xhtml) 中的所有标准值。
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
+Intune v 1.0 版的每月更新。 在 [更改日志](https://developer.microsoft.com/graph/changelog)中，设置 2021 年 9 月的 **日期** 筛选器，并查找具有此相同标题的部分。
+
+### <a name="files"></a>文件
+- 通过 **恶意软件** 属性获取 [driveItem](/graph/api/resources/driveItem) 中检测到的病毒的详细信息。
+- 使用 [delta](/graph/api/driveitem-delta) 函数不仅可以跟踪根文件夹的更改，还可以跟踪驱动器中其他文件夹的更改。
+
+### <a name="identity-and-access--directory-management"></a>标识和访问权限 | 目录管理
+基于角色的访问控制 (RBAC) 提供商可以在 Azure Active Director 中[管理角色](/graph/api/resources/rolemanagement)，方法是[定义可以在特定资源上执行的角色操作](/graph/api/resources/unifiedroledefinition)，基于这些角色定义为用户[分配角色](/graph/api/resources/unifiedroleassignment)，为他们授权相应的资源访问权限。
+
+### <a name="search--query"></a>搜索 | 查询
+- 聚合数值或字符串类型搜索结果，这些结果由 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview) 导入，并在 [架构](/graph/api/resources/schema) 中设置为可精简。请参阅有关 [使用聚合优化搜索结果](search-concept-aggregation.md) 的详细信息。
+- 对任何可排序属性上的 OneDrive 和 SharePoint 搜索结果进行 [排序](/graph/api/resources/search-api-overview#sort-search-results)。 有关详细信息，请参阅 [使用 Microsoft 搜索 API 对搜索结果进行排序](search-concept-sort.md)。
+
+### <a name="teamwork"></a>团队合作
+使用一个操作 [provisionEmail](/graph/api/channel-provisionemail) 获取 [频道的电子邮件地址](/graph/api/resources/channel) (如果存在)，或者另创建一个。使用 [removeEmail](/graph/api/channel-removeemail) 操作删除电子邮件地址。
+
+### <a name="workbooks-and-charts"></a>工作簿和图表
+异步创建表行。 为了提高性能，创建多个表行的好做法是在 [create tableRow](/graph/api/table-post-rows) 操作中对其进行批处理并异步执行该操作。 遵循 [GET workbookOperation](/graph/api/workbookoperation-get) 操作和 [tableRowOperationResult](/graph/api/workbook-tableRowOperationResult) 函数，以获取新的 [workbookTableRow](/graph/api/resources/workbooktablerow) 资源。
+
+
+## <a name="september-2021-new-in-preview-only"></a>2021 年 9 月: 仅预览版新增功能
+
+### <a name="applications"></a>应用程序
+使用安全断言标记语言 (SAML) 单点登录流可指定默认重定向 URI（[应用程序](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)的 **defaultRedirectUri** 属性），或确定将用户发送到的登录的具体重定向 URI（[webApplication](/graph/api/resources/webapplication?view=graph-rest-beta&preserve-view=true) 的 **redirectUriSettings** 属性）。 
+
+### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
+获取 [联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) 的 [会议出席报告](/graph/api/resources/meetingattendancereport?view=graph-rest-beta&preserve-view=true) 中的参与者总数。
+
+### <a name="compliance--ediscovery"></a>合规性 | 电子数据展示
+[创建用例](/graph/api/ediscovery-case-post?view=graph-rest-beta&preserve-view=true) 操作始终以大格式创建用例。 这扩大了用例大小限制，以容纳更高的数据总量和项目总数。 有关详细信息，请参阅 [大用例优势](/microsoft-365/compliance/advanced-ediscovery-large-cases?view=o365-worldwide&preserve-view=true#benefits-of-large-cases)。
+
+### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
+- [将云电脑重新设置](/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta&preserve-view=true) 为已注册到 Intune 的云托管虚拟桌面。
+- 使用新的虚拟 CPU (vCPU)和存储大小将云电脑升级或降级到其他配置，从而 [调整云电脑大小](/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta&preserve-view=true)。
+- [设置](/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta&preserve-view=true)、[列出](/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta&preserve-view=true)并对[本地网络连接](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true)[运行状况检查](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true)，以预配云电脑。
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
+Intune beta 版每月更新。 在 [更改日志](https://developer.microsoft.com/graph/changelog)中，设置 2021 年 9 月的 **日期** 筛选器，并查找具有此相同标题的部分。
+
+### <a name="education"></a>教育
+- 允许教师为学生[重新分配](/graph/api/educationsubmission-reassign?view=graph-rest-beta&preserve-view=true)带有审阅反馈的作业[提交](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true)。
+- 如果将 `Prefer: include-unknown-enum-members` 请求头应用于对 [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) 或 [educationAssignmentDefaults](/graph/api/resources/educationassignmentdefaults?view=graph-rest-beta&preserve-view=true) 资源执行操作，则支持仅向学生日历添加作业。
+
+### <a name="identity-and-access--governance"></a>标识和访问权限 | 治理
+[删除](/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta&preserve-view=true)[accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) 以删除已拒绝或已完成的请求。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>标识和访问权限 | 标识和登录
+- 允许用户使用 [软件 OATH 令牌](/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-beta&preserve-view=true) 执行多重身份验证。 软件 OATH 令牌为基于软件的数字生成器，其使用 OATH 基于时间的一次性密码(TOTP)标准。
+- 通过使用 [microsoftAuthenticatorAuthenticationMethodTarget](/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta&preserve-view=true) 的 **numberMatchingRequiredState** 属性，确定根据 Azure AD 中策略的多重身份验证，是已启用还是已禁用数字匹配。
+- 通过使用 [microsoftAuthenticatorAuthenticationMethodTarget](/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta&preserve-view=true) 的 **displayAppInformationRequiredState** 属性，确定是否在其身份验证应用通知中显示用户其他上下文。
+- 使用 [B2C](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) 用户流程和[自助服务](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true)注册用户流程，以支持之前已弃用的[用户流程](/graph/api/resources/identityuserflow?view=graph-rest-beta&preserve-view=true) API。
+
+### <a name="security--attack-simulation-and-training"></a>安全 | 攻击模拟和训练
+首次推出[攻击模拟和训练](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true) API，作为 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true) 中的可用服务。 该 API 使租户管理员能够列出启动的[模拟](/graph/api/attacksimulationroot-list-simulations?view=graph-rest-beta&preserve-view=true)练习和培训，并获取有关网络钓鱼模拟中用户在线行为的派生见解的[报告](/graph/api/resources/report-m365defender-reports-overview?view=graph-rest-beta&preserve-view=true)。
 
 ## <a name="august-2021-new-and-generally-available"></a>2021 年 8 月: 新增功能和正式发布
 
@@ -1444,7 +1514,7 @@ Intune [10 月](changelog.md#october-2019)更新
 
 - [附件](/graph/api/resources/attachment?view=graph-rest-1.0&preserve-view=true)
 - [联系人](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)
-- [事件](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
+- [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
 - [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0&preserve-view=true)
 - [邮件](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true)
 - [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0&preserve-view=true)
