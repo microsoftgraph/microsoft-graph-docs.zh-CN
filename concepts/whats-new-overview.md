@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: a1934b1cc52ba26f6500ca585c76df3d9f85fb94
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 37f80e951ea71d5847e0c793053c3a1bc9cd42dc
+ms.sourcegitcommit: c6bbba6cb9aaa7ad35374d1b5d4466c49878ab43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890407"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61135170"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -17,6 +17,40 @@ ms.locfileid: "60890407"
 > [!IMPORTANT]
 > 处于 _预览_ 状态的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。不要在生产应用中使用预览功能。
 
+
+## <a name="november-2021-new-and-generally-available"></a>2021 年 11 月：新增和正式发布
+
+### <a name="files"></a>文件
+通过指定相应的 URL 编码时间戳，获取特定时间的驱动器状态。 请参阅[示例](/graph/api/driveitem-delta#example-4-retrieving-delta-results-using-a-timestamp)。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>标识和访问权限 | 标识和登录
+- 运行[活动](/graph/api/resources/authenticationMethodsRegistrationCampaign)，[强制用户在登录时注册](/graph/api/resources/registrationEnforcement)以设置目标身份验证方法。
+-  在 Azure AD B2C 租户中配置 [Apple 标识提供者](/graph/api/resources/applemanagedidentityprovider)。
+
+## <a name="november-2021-new-in-preview-only"></a>2021 年 11 月：仅预览版新增功能
+
+### <a name="cloud-communications--online-meeting"></a>云通信 | 联机会议
+在联机会议中自动允许新类型的参与者，并绕过会议大厅：
+- 仅组织者邀请的人员。
+- 仅来自同一公司的参与者。
+
+### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
+- 定义一个[配置](/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta&preserve-view=true)预配的云电脑设备如何联接Azure Active Directory（Azure AD）：仅限云并仅加入Azure AD，或者混合和加入本地 Active Directory和Azure AD。
+- 获取可用于预配云电脑的当前组织的 [库映像资源](/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="devices-and-apps--device-updates"></a>设备和应用|设备更新
+- 使用 [保护设置](/graph/api/resources/windowsupdates-safeguardSettings?view=graph-rest-beta&preserve-view=true) 选择退出针对部署中可能出现的问题的保护措施。
+- 支持 [部署状态](/graph/api/resources/windowsupdates-deploymentState?view=graph-rest-beta&preserve-view=true) 由于内容不再可部署而导致部署出错，例如服务结束时。
+
+### <a name="identity-and-access--directory-management"></a>标识和访问权限 | 目录管理
+- 定义[自定义安全属性](/graph/api/resources/custom-security-attributes-overview?view=graph-rest-beta&preserve-view=true)并将其分配给Azure AD对象。 使用这些属性存储信息、对对象进行分类，或对特定 Azure 资源强制实施精细的访问控制。 将这些属性与[Azure 基于属性的访问控制](/azure/role-based-access-control/conditions-overview) （Azure ABAC） 配合使用。
+- [在管理单元中创建组](/graph/api/administrativeunit-post-members?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
+[Microsoft 365 JSON 输出类型中](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true) 的使用情况报告不再强类型化，并且属于类型 `Edm.Stream`。 有关详细信息，请参阅 [Microsoft Graph中Microsoft 365使用情况报告 API 的OData 属性更改](https://devblogs.microsoft.com/microsoft365dev/odata-property-changes-to-microsoft-365-usage-reports-api-in-microsoft-graph/)。
+
+### <a name="teamwork"></a>Teamwork
+将聊天标记为 [阅读](/graph/api/chat-markChatReadForUser?view=graph-rest-beta&preserve-view=true)，或 [用户的未读](/graph/api/chat-markchatunreadforuser?view=graph-rest-beta&preserve-view=true)。
 
 ## <a name="october-2021-new-and-generally-available"></a>2021 年 10 月：新增和正式版本
 
@@ -32,7 +66,7 @@ As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanag
 -->
 
 ### <a name="education"></a>教育
-支持[媒体](/graph/api/resources/educationMediaResource)文件或其他[外部常规资源](/graph/api/resources/educationExternalResource)作为[分配资源](/graph/api/resources/educationassignmentresource)。
+支持将 [介质](/graph/api/resources/educationMediaResource) 文件或其他 [外部泛型资源](/graph/api/resources/educationExternalResource) 为 [分配资源](/graph/api/resources/educationassignmentresource)。
 
 ### <a name="identity-and-access--applications"></a>标识和访问权限 | 应用程序
 - 若要改进[应用程序](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)的许可体验，请指定[应用程序需要访问的资源](/graph/api/resources/requiredresourceaccess?view=graph-rest-beta&preserve-view=true)，包括应用程序所需的 OAuth 2.0 委派权限和应用程序角色集。
@@ -106,75 +140,6 @@ As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanag
 当用户键入密码时，根据组织的密码验证策略实时 [验证密码](/graph/api/user-validatePassword?view=graph-rest-beta&preserve-view=true)。 根据策略中的规则，[从验证获取详细信息](/graph/api/resources/passwordValidationInformation?view=graph-rest-beta&preserve-view=true)。
 
 
-## <a name="september-2021-new-and-generally-available"></a>2021 年 9 月: 新增功能和正式发布
-
-### <a name="cloud-communications--calls"></a>云通信 | 呼叫
-- 使用 [startHoldMusic](/graph/api/participant-startHoldMusic) 操作让 [参与者](/graph/api/resources/participant) 保持呼叫并在后台播放音乐。
-- 使用 [stopHoldMusic](/graph/api/participant-stopHoldMusic) 操作重新合并之前呼叫保持的参与者。
-
-### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
-- 获取 [Teams 直播](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告的内容流。
-- 获取或设置自动录制[联机会议](/graph/api/resources/onlineMeeting)的选项。
-- 将 `OnlineMeetingArtifact.Read.All` 用为委派权限或应用程序权限，以读取联机会议的项目。 有关详细信息，请参阅 [联机会议权限](permissions-reference.md#online-meetings-permissions)。
-
-### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
-云打印机状态包括 [Internet 打印协议 (IPP)](https://www.iana.org/assignments/ipp-registrations/ipp-registrations.xhtml) 中的所有标准值。
-
-### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
-Intune v 1.0 版的每月更新。 在 [更改日志](https://developer.microsoft.com/graph/changelog)中，设置 2021 年 9 月的 **日期** 筛选器，并查找具有此相同标题的部分。
-
-### <a name="files"></a>文件
-- 通过 **恶意软件** 属性获取 [driveItem](/graph/api/resources/driveItem) 中检测到的病毒的详细信息。
-- 使用 [delta](/graph/api/driveitem-delta) 函数不仅可以跟踪根文件夹的更改，还可以跟踪驱动器中其他文件夹的更改。
-
-### <a name="identity-and-access--directory-management"></a>标识和访问权限 | 目录管理
-基于角色的访问控制 (RBAC) 提供商可以在 Azure Active Director 中[管理角色](/graph/api/resources/rolemanagement)，方法是[定义可以在特定资源上执行的角色操作](/graph/api/resources/unifiedroledefinition)，基于这些角色定义为用户[分配角色](/graph/api/resources/unifiedroleassignment)，为他们授权相应的资源访问权限。
-
-### <a name="search--query"></a>搜索 | 查询
-- 聚合数值或字符串类型搜索结果，这些结果由 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview) 导入，并在 [架构](/graph/api/resources/schema) 中设置为可精简。请参阅有关 [使用聚合优化搜索结果](search-concept-aggregation.md) 的详细信息。
-- 对任何可排序属性上的 OneDrive 和 SharePoint 搜索结果进行 [排序](/graph/api/resources/search-api-overview#sort-search-results)。 有关详细信息，请参阅 [使用 Microsoft 搜索 API 对搜索结果进行排序](search-concept-sort.md)。
-
-### <a name="teamwork"></a>团队合作
-使用一个操作 [provisionEmail](/graph/api/channel-provisionemail) 获取 [频道的电子邮件地址](/graph/api/resources/channel) (如果存在)，或者另创建一个。使用 [removeEmail](/graph/api/channel-removeemail) 操作删除电子邮件地址。
-
-### <a name="workbooks-and-charts"></a>工作簿和图表
-异步创建表行。 为了提高性能，创建多个表行的好做法是在 [create tableRow](/graph/api/table-post-rows) 操作中对其进行批处理并异步执行该操作。 遵循 [GET workbookOperation](/graph/api/workbookoperation-get) 操作和 [tableRowOperationResult](/graph/api/workbook-tableRowOperationResult) 函数，以获取新的 [workbookTableRow](/graph/api/resources/workbooktablerow) 资源。
-
-
-## <a name="september-2021-new-in-preview-only"></a>2021 年 9 月: 仅预览版新增功能
-
-### <a name="applications"></a>应用程序
-使用安全断言标记语言 (SAML) 单点登录流可指定默认重定向 URI（[应用程序](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)的 **defaultRedirectUri** 属性），或确定将用户发送到的登录的具体重定向 URI（[webApplication](/graph/api/resources/webapplication?view=graph-rest-beta&preserve-view=true) 的 **redirectUriSettings** 属性）。 
-
-### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
-获取 [联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) 的 [会议出席报告](/graph/api/resources/meetingattendancereport?view=graph-rest-beta&preserve-view=true) 中的参与者总数。
-
-### <a name="compliance--ediscovery"></a>合规性 | 电子数据展示
-[创建用例](/graph/api/ediscovery-case-post?view=graph-rest-beta&preserve-view=true) 操作始终以大格式创建用例。 这扩大了用例大小限制，以容纳更高的数据总量和项目总数。 有关详细信息，请参阅 [大用例优势](/microsoft-365/compliance/advanced-ediscovery-large-cases?view=o365-worldwide&preserve-view=true#benefits-of-large-cases)。
-
-### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
-- [将云电脑重新设置](/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta&preserve-view=true) 为已注册到 Intune 的云托管虚拟桌面。
-- 使用新的虚拟 CPU (vCPU)和存储大小将云电脑升级或降级到其他配置，从而 [调整云电脑大小](/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta&preserve-view=true)。
-- [设置](/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta&preserve-view=true)、[列出](/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta&preserve-view=true)并对[本地网络连接](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true)[运行状况检查](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true)，以预配云电脑。
-
-### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
-Intune beta 版每月更新。 在 [更改日志](https://developer.microsoft.com/graph/changelog)中，设置 2021 年 9 月的 **日期** 筛选器，并查找具有此相同标题的部分。
-
-### <a name="education"></a>教育
-- 允许教师为学生[重新分配](/graph/api/educationsubmission-reassign?view=graph-rest-beta&preserve-view=true)带有审阅反馈的作业[提交](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true)。
-- 如果将 `Prefer: include-unknown-enum-members` 请求头应用于对 [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) 或 [educationAssignmentDefaults](/graph/api/resources/educationassignmentdefaults?view=graph-rest-beta&preserve-view=true) 资源执行操作，则支持仅向学生日历添加作业。
-
-### <a name="identity-and-access--governance"></a>标识和访问权限 | 治理
-[删除](/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta&preserve-view=true)[accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) 以删除已拒绝或已完成的请求。
-
-### <a name="identity-and-access--identity-and-sign-in"></a>标识和访问权限 | 标识和登录
-- 允许用户使用 [软件 OATH 令牌](/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-beta&preserve-view=true) 执行多重身份验证。 软件 OATH 令牌为基于软件的数字生成器，其使用 OATH 基于时间的一次性密码(TOTP)标准。
-- 通过使用 [microsoftAuthenticatorAuthenticationMethodTarget](/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta&preserve-view=true) 的 **numberMatchingRequiredState** 属性，确定根据 Azure AD 中策略的多重身份验证，是已启用还是已禁用数字匹配。
-- 通过使用 [microsoftAuthenticatorAuthenticationMethodTarget](/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta&preserve-view=true) 的 **displayAppInformationRequiredState** 属性，确定是否在其身份验证应用通知中显示用户其他上下文。
-- 使用 [B2C](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) 用户流程和[自助服务](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true)注册用户流程，以支持之前已弃用的[用户流程](/graph/api/resources/identityuserflow?view=graph-rest-beta&preserve-view=true) API。
-
-### <a name="security--attack-simulation-and-training"></a>安全 | 攻击模拟和训练
-首次推出[攻击模拟和训练](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true) API，作为 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true) 中的可用服务。 该 API 使租户管理员能够列出启动的[模拟](/graph/api/attacksimulationroot-list-simulations?view=graph-rest-beta&preserve-view=true)练习和培训，并获取有关网络钓鱼模拟中用户在线行为的派生见解的[报告](/graph/api/resources/report-m365defender-reports-overview?view=graph-rest-beta&preserve-view=true)。
 
 ## <a name="want-to-stay-in-the-loop"></a>保持循环
 
