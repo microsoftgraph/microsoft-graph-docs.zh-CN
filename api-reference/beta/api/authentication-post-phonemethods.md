@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bccec3710dbdc378f15415a17a4744c1e80c1860
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: cd3b1f64b1e7fdc43fd87e0faa37fdea6058ec29
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982364"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223256"
 ---
 # <a name="create-phoneauthenticationmethod"></a>创建 phoneAuthenticationMethod
 
@@ -20,7 +20,7 @@ ms.locfileid: "60982364"
 
 添加新的电话 [身份验证方法](../resources/phoneauthenticationmethod.md)。 用户只能有一部每种电话，在 **phoneType** 属性中捕获。 这意味着，向具有预先不存在的电话的用户添加电话 `mobile` `mobile` 将失败。 此外，在添加电话之前， `mobile` 用户必须始终拥有 `alternateMobile` 电话。
 
-通过添加电话号码，可以在 Azure 多重身份验证 (MFA) 和自助服务密码重置 (SSPR) （如果已启用）使用。
+通过添加电话号码，可以同时在 Azure 多重身份验证 (MFA) 和自助服务密码重置 (SSPR) （如果已启用）。
 
 此外，如果策略允许用户使用短信登录并添加号码，系统将尝试注册号码以 `mobile` 在该系统中使用该号码。
 
@@ -28,13 +28,23 @@ ms.locfileid: "60982364"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 自行操作的权限 (权限从最低权限权限)  | 对他人操作的权限 (权限从最低到最多特权) |
-|:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不适用。 | UserAuthenticationMethod.ReadWrite.All |
+### <a name="permissions-acting-on-self"></a>自行操作的权限
 
-对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| Application                            | 不支持。 |
+
+### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
+
+对于管理员在另一用户上操作的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -62,7 +72,7 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|phoneNumber|String|要发送文本或呼叫进行身份验证的电话号码。 电话数字使用格式"+ \<country code\> \<number\>x \<extension\> "，扩展是可选的。 例如，+1 5555551234 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
+|phoneNumber|String|要发送文本或呼叫进行身份验证的电话号码。 电话数字使用格式"+ \<country code\> \<number\>x \<extension\> "，扩展是可选的。 例如，+1 5555551234 +1 555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
 |phoneType|String|可能的值是 `mobile` ：、 `alternateMobile` 和 `office` 。|
 
 ## <a name="response"></a>响应

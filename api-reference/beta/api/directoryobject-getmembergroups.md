@@ -1,16 +1,16 @@
 ---
 title: directoryObject： getMemberGroups
-description: 返回指定的用户、组、服务主体、组织联系人或目录对象是其中成员的所有组。 此函数是可传递的。
+description: 返回指定的用户、组、服务主体、组织联系人、设备或目录对象是其中成员的所有组。 此函数是可传递的。
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d3a55410ac5227ea823740699648ddc53140d812
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 30b62be5d6c7d4de755733459ceb8cf8335fe22d
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123921"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226692"
 ---
 # <a name="directoryobject-getmembergroups"></a>directoryObject： getMemberGroups
 
@@ -18,9 +18,9 @@ ms.locfileid: "61123921"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回指定的用户、组、服务[](../resources/user.md)[主体](../resources/serviceprincipal.md)、[](../resources/group.md)组织联系人或[目录](../resources/directoryobject.md)对象[](../resources/orgcontact.md)是其中成员的所有组。 此函数是可传递的。
+返回指定的用户、[组、服务](../resources/user.md)[主体](../resources/serviceprincipal.md)、[](../resources/group.md)[组织](../resources/orgcontact.md)联系人、[设备或](../resources/device.md)[目录](../resources/directoryobject.md)对象是其中成员的所有组。 此函数是可传递的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="group-memberships-for-a-directory-object"></a>目录对象的组成员身份
@@ -29,7 +29,7 @@ ms.locfileid: "61123921"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All |
+|Application | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All |
 
 ### <a name="group-memberships-for-a-user"></a>用户的组成员身份
 
@@ -37,7 +37,7 @@ ms.locfileid: "61123921"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All |
+|Application | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All |
 
 ### <a name="group-memberships-for-a-group"></a>组的组成员身份
 
@@ -62,6 +62,15 @@ ms.locfileid: "61123921"
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+### <a name="group-memberships-for-a-device"></a>设备的组成员身份
+
+| 权限类型                        | 权限（从最低特权到最高特权） |
+|:---------------------------------------|:--------------------------------------------|
+| 委派（工作或学校帐户）     | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| Application                            | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+
 
 <!--
 The following table lists the permission types to use for different scenarios.
@@ -108,6 +117,12 @@ POST /servicePrincipals/{id}/getMemberGroups
 POST /contacts/{id}/getMemberGroups
 ```
 
+设备的组成员身份。
+<!-- { "blockType": "ignored" } -->
+```http
+POST /devices/{id}/getMemberGroups
+```
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:--------|
@@ -130,6 +145,8 @@ POST /contacts/{id}/getMemberGroups
 ### <a name="example-1-check-group-memberships-for-a-directory-object"></a>示例 1：检查目录对象的组成员身份
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getmembergroups"
@@ -142,6 +159,28 @@ Content-type: application/json
     "securityEnabledOnly": false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getmembergroups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getmembergroups-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmembergroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmembergroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -170,6 +209,8 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getmembergroups_me"
@@ -182,6 +223,28 @@ Content-type: application/json
   "securityEnabledOnly": true
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getmembergroups-me-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getmembergroups-me-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getmembergroups-me-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmembergroups-me-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmembergroups-me-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

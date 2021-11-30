@@ -1,16 +1,16 @@
 ---
 title: 删除学生
-description: 从 educationClass 删除 educationUser
+description: 从 educationClass 中删除 educationUser。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0c34227cd6b3ce72c6aebe0ab6952d8167b9b89a
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7e2d0701acd3fafa57228fe101c165ae7a058751
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786777"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225922"
 ---
 # <a name="remove-a-student"></a>删除学生
 
@@ -18,18 +18,18 @@ ms.locfileid: "52786777"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [educationClass](../resources/educationclass.md) 删除 [educationUser](../resources/educationuser.md)
+从[educationClass](../resources/educationclass.md)中删除[educationUser。](../resources/educationuser.md)
 
->**注意：** 教师 _和_ 学生包含在课程 **members** 集合中。 在调用此 API 之前，确定要删除的 **educationUser** 不是教师。  要获取教师列表，可调用 [educationclass_list_teachers](educationclass-list-teachers.md) 并验证要删除的用户的用户 ID 不在返回的教师列表中。
+>**注意：** 教师 _和_ 学生包含在课程 **members** 集合中。 调用此 API 之前，请确保要删除的 **educationUser** 不是教师。  通过调用教师educationclass_list_teachers并验证要[](educationclass-list-teachers.md)删除的用户的用户 ID 不在返回的教师列表中，获取教师列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ DELETE /education/classes/{id}/members/{userId}/$ref
 如果成功，此方法将返回 `204 No Content` 响应代码和空响应正文。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 <!-- {
   "blockType": "response"

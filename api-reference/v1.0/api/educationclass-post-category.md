@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1e7d37c1eb3e32330db36295ab2ac1e9f8d1b7fb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 45e7bfd5affd70574ade93daba94caedc75735a6
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024665"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223745"
 ---
 # <a name="create-educationcategory"></a>创建 educationCategory
 
@@ -25,7 +25,7 @@ ms.locfileid: "61024665"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -69,7 +69,6 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [educationCategory](../resources/educationcategory.md) 对象的 JSON 表示形式。
 
 ### <a name="response"></a>响应
 下面展示了示例响应。 

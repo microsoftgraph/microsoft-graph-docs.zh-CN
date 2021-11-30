@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ed08dded4dfbf7dd659d9315c5a22a86f3435b3b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f016c68765b6c54de69c35c04081902f765b88e1
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022272"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226491"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -20,7 +20,7 @@ ms.locfileid: "61022272"
 
 检索组的所有者列表。 所有者是一组允许用户修改组对象的用户。 对于已在 Exchange 中创建的组，或者已从本地环境中同步的组，Microsoft Graph 目前未提供所有者角色。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -100,11 +100,30 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
+            "accountEnabled": true,
+            "displayName": "MOD Administrator",
+            "userPrincipalName": "admin@contoso.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "f0206b06-7c5d-461c-ae24-08f68b7ef463",
+            "accountEnabled": true,
+            "displayName": "Megan Bowen",
+            "userPrincipalName": "MeganB@contoso.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "5c70937c-d9ea-4a47-8852-ab77630f803d",
+            "accountEnabled": true,
+            "displayName": "Diego Siciliani",
+            "userPrincipalName": "DiegoS@contoso.com"
+        }
+    ]
 }
 ```
 

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 4e232cb87bdd0424e735cbcb52b9b4615d567e96
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 0535f9eeb8de3ed3ecfc653fd2f6365bbd9abebe
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077306"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226208"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 
@@ -150,7 +150,7 @@ HTTP/1.1 204 No Content
 下面的示例演示如何将具有字符串值的自定义安全属性分配给服务主体。
 
 + 属性集： `Engineering`
-+ 属性： `ProjectDate`
++ 属性：`ProjectDate`
 + 属性数据类型：字符串
 + 属性值： `"2022-10-01"`
 
@@ -161,6 +161,8 @@ HTTP/1.1 204 No Content
 #### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "assign_serviceprincipal_customsecurityattribute_string"
@@ -180,6 +182,20 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/assign-serviceprincipal-customsecurityattribute-string-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assign-serviceprincipal-customsecurityattribute-string-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/assign-serviceprincipal-customsecurityattribute-string-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 <!-- {

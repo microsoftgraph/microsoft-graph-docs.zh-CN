@@ -1,19 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 022366e9036da93a6bca9d637e735c70162e0b04d496ea3393f4f7841df7542a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4956430abc3ec33fb7f499a3b497cf1a2d845fe9
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57278710"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224107"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Boolean securityEnabledOnly = true;
+Boolean securityEnabledOnly = false;
 
-graphClient.directoryObjects("{object-id}")
+graphClient.directoryObjects("0049d944-a805-4680-9f54-3ab292090309")
     .getMemberGroups(DirectoryObjectGetMemberGroupsParameterSet
         .newBuilder()
         .withSecurityEnabledOnly(securityEnabledOnly)

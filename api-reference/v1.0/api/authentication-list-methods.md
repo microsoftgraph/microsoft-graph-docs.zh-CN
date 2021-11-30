@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 762a0fe0bd68778120e0057c72b33e5c8c94e1de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ca231fb1c794660171aeed59a67b39152318767d
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100454"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224937"
 ---
 # <a name="list-methods"></a>List 方法
 
 命名空间：microsoft.graph
 
-检索身份验证 [方法对象](../resources/authenticationmethod.md) 的列表。 此 API 仅返回此 API 版本支持的身份验证方法。 有关 [当前支持的方法的列表，请参阅 Azure AD 身份验证](../resources/authenticationmethods-overview.md) 方法 API 概述。
+检索身份验证 [方法对象](../resources/authenticationmethod.md) 的列表。 此 API 仅返回此 API 版本支持的身份验证方法。 请参阅[Azure AD方法 API 概述](../resources/authenticationmethods-overview.md)，了解当前支持的方法列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "59100454"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -36,13 +36,13 @@ ms.locfileid: "59100454"
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员在另一用户上操作的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽的电话号码) 
+* 身份验证管理员 (只能看到已屏蔽) 
 
 ## <a name="http-request"></a>HTTP 请求
 

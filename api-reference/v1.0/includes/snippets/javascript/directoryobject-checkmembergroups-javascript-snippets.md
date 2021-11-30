@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d0fa222cf1dc039aef5fc7491e3f25f3ae778e57c7edb9b52642787416dfdd37
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4cca43975fb417aebdcce29eca1ff599669cbc3e
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903358"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224026"
 ---
 ```javascript
 
@@ -16,13 +16,16 @@ const options = {
 const client = Client.init(options);
 
 const string = {
-  groupIds: [
-        'fee2c45b-915a-4a64b130f4eb9e75525e',
-        '4fe90ae065a-478b9400e0a0e1cbd540'
-  ]
+    groupIds: [
+        'f448435d-3ca7-4073-8152-a1fd73c0fd09',
+        'bd7c6263-4dd5-4ae8-8c96-556e1c0bece6',
+        '93670da6-d731-4366-94b5-abed40b6016b',
+        'f5484ab1-4d4d-41ec-a9b8-754b3957bfc7',
+        'c9103f26-f3cf-4004-a611-2a14e81b8f79'
+    ]
 };
 
-await client.api('/directoryObjects/{id}/checkMemberGroups')
+await client.api('/directoryObjects/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e/checkMemberGroups')
     .post(string);
 
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 344ac7c54a9b341f9fa425e4a36794fcf78d5ab7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 49de08a8e1dd062f944f3f6c27e02d914c6c3956
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018031"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226083"
 ---
 # <a name="get-teamsappicon"></a>获取 teamsAppIcon
 
@@ -20,7 +20,7 @@ ms.locfileid: "61018031"
 
 检索[Teams](../resources/teamsappicon.md)特定定义的[应用图标。](../resources/teamsapp.md) [](../resources/teamsappdefinition.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "61018031"
 | :------------------------------------- | :--------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | AppCatalog.Read.All、AppCatalog.ReadWrite.All、AppCatalog.Submit |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                   |
-| 应用程序                            | 不支持。                                                   |
+| Application                            | AppCatalog.Read.All、AppCatalog.ReadWrite.All                    |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 此操作支持 `$select` 使用 `$expand` [和 OData 查询参数](/graph/query-parameters) 自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头           | 值                      |
 | :--------------- | :------------------------- |
@@ -245,7 +245,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-outline-icon-of-a-store-teams-app"></a>示例 4：获取应用商店 *应用Teams图标*
+### <a name="example-4-get-outline-icon-of-a-store-teams-app"></a>示例 4：获取应用商店 *或应用的Teams* 图标
 
 #### <a name="request"></a>请求
 

@@ -1,18 +1,18 @@
 ---
-title: 使用 Microsoft Microsoft Teams生成一个Graph Toolkit
+title: 使用 Microsoft Microsoft Teams生成一个"Graph Toolkit
 description: 开始使用 Microsoft Microsoft Teams生成 Graph Toolkit。
 ms.localizationpriority: medium
 author: simonagren
-ms.openlocfilehash: ac3309a0954cd7426b4399aca2043ff811f00c6a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 76e8957ae515c784dcbbebbeb72bc04e5ab5c588
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129556"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224872"
 ---
-# <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>使用 Microsoft Microsoft Teams生成一个Graph Toolkit
+# <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>使用 Microsoft Microsoft Teams生成一个"Graph Toolkit
 
-本主题介绍如何开始使用 Microsoft Graph Toolkit解决方案中的 Microsoft Teams。 本指南适用于单页应用，无需单一登录 (SSO) 不需要后端。 如果要使用自定义后端实现 SSO，请参阅使用 SSO Microsoft Teams生成 ([选项卡) 。 ](./build-a-microsoft-teams-sso-tab.md)
+本主题介绍如何开始在解决方案Graph Toolkit Microsoft Microsoft Teams。 本指南适用于单页应用，无需单一登录 (SSO) 不需要后端。 如果要使用自定义后端实现 SSO，请参阅使用 SSO Microsoft Teams生成 ([选项卡) 。 ](./build-a-microsoft-teams-sso-tab.md)
 
 生成选项卡涉及以下步骤：
 
@@ -25,7 +25,7 @@ ms.locfileid: "59129556"
 
 ## <a name="add-the-microsoft-graph-toolkit"></a>添加 Microsoft Graph Toolkit
 
-可以在应用程序中使用 Microsoft Graph Toolkit，方法为通过 unpkg (直接引用加载程序) 安装 npm 包。 若要使用Toolkit，你还需要使用[Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk)。
+可以在应用程序中使用 Microsoft Graph Toolkit，方法为直接通过 unpkg (加载程序) 安装 npm 包。 若要使用Toolkit，你还需要使用[Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk)。
 
 # <a name="unpkg"></a>[unpkg](#tab/unpkg)
 若要通过Toolkit使用 Teams SDK，请向代码添加脚本中的引用：
@@ -37,7 +37,7 @@ ms.locfileid: "59129556"
 ```
 
 # <a name="npm"></a>[npm](#tab/npm)
-通过 ES6 模块使用 Toolkit 可完全控制捆绑过程，并允许您仅捆绑应用程序所需的代码。 若要使用 ES6 模块，请为项目添加 Toolkit 和 Microsoft Teams SDK 的 npm 包：
+通过 ES6 模块使用工具包可以完全控制捆绑过程，并允许仅捆绑应用程序所需的代码。 若要使用 ES6 模块，请为项目添加 Toolkit 和 Microsoft Teams SDK 的 npm 包：
 
 ```cmd
 npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal2-provider @microsoft/mgt-components
@@ -47,7 +47,7 @@ npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal
 
 ## <a name="create-the-auth-popup-page"></a>创建身份验证弹出页
 
-为了允许用户登录，你需要在应用中有一个页面，Teams弹出窗口中打开该页面以遵循身份验证流。 页面的路径可以是任何内容，只要它位于你的应用所访问的同一域中 (例如， https://yourdomain.com/tabauth) 。 此页面的唯一要求是调用 方法，但您可以添加 `TeamsMsal2Provider.handleAuth()` 任何内容或加载您想要的进度。
+为了允许用户登录，你需要在应用中创建一个页面，Teams弹出窗口中打开该页面以遵循身份验证流程。 页面路径可以是任何内容，只要它位于你的应用所访问的同一域中 (例如， https://yourdomain.com/tabauth) 。 此页面的唯一要求是调用 方法，但您可以添加 `TeamsMsal2Provider.handleAuth()` 任何内容或加载您想要的进度。
 
 下面是处理弹出窗口中的身份验证流的基本页面示例。
 
@@ -81,11 +81,11 @@ TeamsMsal2Provider.handleAuth();
 
 请确保在应用注册中将 设置为指向你在上一 `redirect URI` 步中创建的身份验证页面。 例如，https://localhost:3000/tabauth。
 
-> **注意：** 请确保将 设置为 `redirect URI` `Single Page Application (SPA)` 。 TeamsMSAL2 提供程序在后台使用 MSAL2 提供程序。
+> **注意：** 请确保将 设置为 `redirect URI` `Single Page Application (SPA)` 。 Teams MSAL2 提供程序在后台使用 MSAL2 提供程序。
 
 ## <a name="initialize-the-teams-msal2-provider"></a>初始化 MSAL2 Teams
 
-Microsoft Graph 工具包提供程序为组件启用身份验证和对 Microsoft Graph 的访问。 若要了解详细信息，请参阅[使用提供程序](../providers/providers.md)。 [MSAL2](../providers/teams-msal2.md) Teams处理需要通过 Teams SDK 实现以对用户进行身份验证的所有逻辑和交互。
+Microsoft Graph 工具包提供程序为组件启用身份验证和对 Microsoft Graph 的访问。 若要了解详细信息，请参阅[使用提供程序](../providers/providers.md)。 MSAL2 提供程序Teams [MSAL2](../providers/teams-msal2.md)提供程序处理需要通过 Teams SDK 实现以对用户进行身份验证的所有逻辑和交互。
 
 可以选择在 HTML 或 JavaScript 代码中初始化提供程序。 
 
@@ -141,3 +141,4 @@ Providers.globalProvider = new TeamsMsal2Provider({
 - 在[样本](https://mgt.dev)中试用组件。
 - 在 Microsoft [问答中&问题](/answers/topics/microsoft-graph-toolkit.html)。
 - 在 [GitHub](https://aka.ms/mgt) 上报告 bug 或提出功能请求。
+- 请查看Microsoft Teams[示例](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-graph-toolkit)。

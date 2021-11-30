@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b8ea294a7498a793f10d48ea0aa70e06e9800934
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 7e2b3dbb03683e3be00cbcf550073c97c925ea75
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083967"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226679"
 ---
 ```go
 
@@ -13,12 +13,13 @@ ms.locfileid: "61083967"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.New()
-securityEnabledOnly := true
+securityEnabledOnly := false
 requestBody.SetSecurityEnabledOnly(&securityEnabledOnly)
 options := &msgraphsdk.GetMemberGroupsRequestBuilderPostOptions{
     Body: requestBody,
 }
-result, err := graphClient.Me().GetMemberGroups().Post(options)
+directoryObjectId := "directoryObject-id"
+result, err := graphClient.DirectoryObjectsById(&directoryObjectId).GetMemberGroups().Post(options)
 
 
 ```

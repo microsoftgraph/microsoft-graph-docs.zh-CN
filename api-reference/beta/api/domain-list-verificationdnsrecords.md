@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 92759fd9844a44bfac857ef06e6ac82376b5aa73
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7d7e34dedf2925aaacd731dd0178928f7d8c5aa3
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022391"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226440"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
@@ -20,9 +20,9 @@ ms.locfileid: "61022391"
 
 检索 [domainDnsRecord 对象](../resources/domaindnsrecord.md) 的列表。
 
-在验证所有权之前，Azure AD租户使用关联域。 若要验证域的所有权，请检索域验证记录，将详细信息添加到域的区域文件。 这可以通过域注册机构或 DNS 服务器配置完成。
+在所有权得到验证之前，Azure AD租户使用关联域。 若要验证域的所有权，请检索域验证记录，将详细信息添加到域的区域文件。 这可以通过域注册机构或 DNS 服务器配置完成。
 
-根域需要验证。 例如，contoso.com 需要验证。 如果验证根域，将自动验证根域的子域。 例如，subdomain.contoso.com 验证是否自动 contoso.com 验证。
+根域需要验证。 例如，contoso.com 需要验证。 如果验证根域，将自动验证根域的子域。 例如，subdomain.contoso.com 验证是否 contoso.com 验证。
 
 ## <a name="permissions"></a>Permissions
 
@@ -31,9 +31,9 @@ ms.locfileid: "61022391"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All    |
+|委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
+|Application | Domain.Read.All、Domain.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

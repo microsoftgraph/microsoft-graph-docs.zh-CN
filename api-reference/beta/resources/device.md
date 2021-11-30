@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sandeo-MSFT
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 035c63a161f62d08a16f4a2f0511020c46f59ccb
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 468aadee4343b4e4c7ae76bba8b877de0f76e250
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130176"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226930"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "61130176"
 
 表示在目录中注册的设备。 可以在云中使用设备注册服务或 Intune 创建设备。 条件访问策略使用它们进行多重身份验证。 这些设备范围很广，从台式机、笔记本电脑到手机和平板电脑均包括在内。 继承自 [directoryObject](directoryobject.md)。
 
-使用此资源，可以使用[扩展](/graph/extensibility-overview)将自己的数据添加到自定义属性。
+使用此资源，可以使用[扩展](/graph/extensibility-overview)将自己的数据添加到自定义属性。 此资源是允许传入其他属性的开放类型。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -35,7 +35,10 @@ ms.locfileid: "61130176"
 |[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) 集合| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
 |[列表 usageRights](../api/device-list-usagerights.md) | [usageRight](usageright.md) 集合 | 获取授予设备的使用权限的集合。|
-|[checkMemberObjects](../api/device-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回设备是成员的所有组。 检查是可传递的。 |
+|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 |
+|[getMemberObjects](../api/directoryobject-checkmemberobjects.md) | String collection | 返回设备是成员的所有组、管理单元和目录角色。 检查是可传递的。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
@@ -51,7 +54,7 @@ ms.locfileid: "61130176"
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。 默认值为 `true`。 <br/><br/> 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。 只有全局管理员和云设备管理员角色中的呼叫者才能设置此属性。|
 |alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) 集合| 仅供内部使用。 不可为 null。 支持 `$filter`（`eq`、`not`、`ge`、`le`）。 |
-|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 支持 `$filter` (`eq` `ne` `not` 、、、、 `ge` `le` `eq` `null` 和 值上的) `$orderBy` 和 。 |
+|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 支持 `$filter` `eq` `ne` (、、、、和 值上的 `not`) 和 `ge` `le` `eq` `null` `$orderBy` 。 |
 |complianceExpirationDateTime|DateTimeOffset| 不再认为设备合规的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 |deviceCategory|String|由 Intune 设置的用户定义属性，用于将设备自动添加到组并简化设备的管理。|
 |deviceId|String| 由 Azure 设备注册服务在注册时设置的标识符。 支持 `$filter` （`eq`、 `ne`、 `not`、 `startsWith`）。 |
@@ -71,32 +74,32 @@ ms.locfileid: "61130176"
 |manufacturer|String| 设备的制造商。 只读。 |
 |mdmAppId|String|用于向 MDM 中注册设备的应用程序标识符。 只读。 支持 `$filter` （`eq`、 `ne`、 `not`、 `startsWith`）。|
 |model|String| 设备型号。 只读。 |
-|onPremisesLastSyncDateTime|DateTimeOffset|最后一次将对象与本地目录同步的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z` 为只读。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`）。 |
+|onPremisesLastSyncDateTime|DateTimeOffset|最后一次将对象与本地目录同步的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z` 为只读。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`）。 |
 |onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 只读。 支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。 |
-|operatingSystem|String| 设备上操作系统的类型。 必需。 支持 `$filter` `eq` `ne` `not` (、、、、、、 和 `ge` `le` `startsWith` `eq` 值 `null`) 。 |
-|operatingSystemVersion|String| 设备的操作系统版本。 必需。 支持 `$filter` `eq` `ne` `not` (、、、、、、 和 `ge` `le` `startsWith` `eq` 值 `null`) 。 |
-|physicalIds|String collection| 仅供内部使用。 不可为空。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。 |
+|operatingSystem|String| 设备上操作系统的类型。 必需。 支持 `$filter` `eq` `ne` (、、、、 和 `not` `ge` `le` `startsWith` `eq` 值 `null`) 。 |
+|operatingSystemVersion|String| 设备的操作系统版本。 必需。 支持 `$filter` `eq` `ne` (、、、、 和 `not` `ge` `le` `startsWith` `eq` 值 `null`) 。 |
+|physicalIds|String collection| 仅供内部使用。 不可为 null。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。 |
 |profileType|String|设备的配置文件类型。 可能的值 `RegisteredDevice` ： (默认值 `SecureVM`) 、、、、。 `Printer` `Shared` `IoT`|
 |registrationDateTime|DateTimeOffset|注册设备的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |systemLabels|String collection| 系统应用于设备的标签列表。 |
 |hostnames|字符串集合| 设备的 hostNames 列表。|
-|trustType|String| 加入设备的信任类型。 只读。 可能的值： (表示将你自己的个人设备) 、 (仅加入云的设备) 、 (加入 Azure AD) 本地域 `Workplace`  `AzureAd` `ServerAd` 的设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](/azure/active-directory/device-management-introduction) |
-|name| String | 设备的友好名称。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 |
-|status | String| 设备是 `online` `offline` 或 。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 |
-|平台 |String|设备平台。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。|
-|kind| String| 设备的外形要求。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 |
-|model| String| 设备型号。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 |
-|manufacturer| String| 设备制造商。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 |
+|trustType|String| 加入设备的信任类型。 只读。 可能的值： (表示自带的个人设备) 、 (仅加入云的设备) 、 (加入 Azure AD) 本地域 `Workplace`  `AzureAd` `ServerAd` 的设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](/azure/active-directory/device-management-introduction) |
+|name| String | 设备的友好名称。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 |
+|status | String| 设备是 `online` `offline` 或 。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 |
+|平台 |String|设备平台。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。|
+|kind| String| 设备的外形要求。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 |
+|model| String| 设备型号。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 |
+|manufacturer| String| 设备制造商。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-| 命令 | [命令](command.md) 集合 | 发送到此设备的命令集。|
+|命令 | [命令](command.md) 集合 | 发送到此设备的命令集。|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。 |
-|memberOf|[directoryObject](directoryobject.md) collection|此设备是其中一个成员的组。 只读。 可为空。 支持 `$expand`。 |
+|memberOf|[directoryObject](directoryobject.md) collection|此设备是其中一个成员的组。 只读。 可为 NULL。 支持 `$expand`。 |
 |registeredOwners|[directoryObject](directoryobject.md) 集合| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 NULL。 支持 `$expand`。 |
-|registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为空。 支持 `$expand`。 |
-|transitiveMemberOf |[directoryObject](directoryobject.md) 集合| 此设备是其中一个成员的组。 此操作是可传递的。 支持 `$expand`。  |
+|registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为 NULL。 支持 `$expand`。 |
+|transitiveMemberOf |[directoryObject](directoryobject.md) collection| 此设备是其中一个成员的组。 此操作是可传递的。 支持 `$expand`。  |
 |usageRights|[usageRight](usageright.md) 集合|表示已授予设备的使用权限。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

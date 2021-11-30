@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 06594d0c5f584330b16d523e4f7dc2e8de4be080
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d5a445877d8c814ef223ed89a540f9606afa1863
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103975"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223038"
 ---
 # <a name="update-onenote-page-content"></a>更新 OneNote 页面内容
 
@@ -45,7 +45,7 @@ ms.locfileid: "59103975"
 完整的请求 URI 将如下所示：<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
 
-了解有关[服务根 URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url) 的详细信息。
+了解有关[服务根 URL](/graph/api/resources/onenote-api-overview#root-url) 的详细信息。
 
 
 <a name="message-body"></a>
@@ -59,7 +59,7 @@ OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容
 以下数组定义了两个更改。第一个更改在段落上方插入一张图像作为同级对象，第二个更改向列表中附加一个项目作为最后一个子元素。
 
 > [!NOTE]
-> 当更新页面上的图像OneNote，你无法使用 www 链接。 该服务不会尝试下载随机资源。 相反，图像必须是请求的一部分，无论是通过 image-data-url 还是多部分请求的部件名称。
+> 在更新页面图像OneNote，你无法使用 www 链接。 该服务不会尝试下载随机资源。 相反，图像必须是请求的一部分，无论是通过 image-data-url 还是多部分请求的部件名称。
 
 ```json
 [
@@ -464,7 +464,7 @@ OneNote 服务根 URL 为 OneNote API 的所有调用使用以下格式：
 
 URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0` 用于稳定的生产代码。 `beta` 用于试用正在开发的功能。 Beta 版中的特性和功能可能会有所更改，因此，不应将其用于生产代码。
 
-`me` 用于为当前用户可以访问的 OneNote 内容（拥有和共享）。 `users/{id}` 用于指定用户已与当前用户共享的 OneNote 内容（此 URL 中）。 使用 [Azure AD 图形 API](/previous-versions/azure/ad/graph/api/api-catalog)。
+`me` 用于为当前用户可以访问的 OneNote 内容（拥有和共享）。 `users/{id}` 用于指定用户已与当前用户共享的 OneNote 内容（此 URL 中）。 使用 [users](/graph/v1.0/resources/user.md) API。
 
 
 > **注意：** 可以通过在 `https://graph.microsoft.com/v1.0/users` 上发出 GET 请求来获取用户 ID。

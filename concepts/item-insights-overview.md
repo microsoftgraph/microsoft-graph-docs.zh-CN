@@ -5,15 +5,17 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e65df53dc8ef6e9eec0f70ce7dbe4fe55e7b1466
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: c4d458c74b8197fe07f178ea9f725c8094228a2e
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780910"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223052"
 ---
 # <a name="overview-of-item-insights"></a>项见解概述
 项见解是基于你在 Microsoft 365 中的协作工作，向你和与你协作的人员提供的以用户为中心的建议。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGbr] 
 
 ## <a name="computation-of-item-insights"></a>项见解的计算
 Microsoft 365 是面向全球的生产力云，其中许多功能都是围绕你即用户而设计的。 通过与资源（如 Microsoft 365 中的文件）进行交互，可以生成 Microsoft 聚合并汇集到组织图形中的信号。 在图中，信号数据表示为你和其他资源之间的关系。 从图中信号派生的是支持一些 Microsoft 365 体验的见解。 体验示例包括建议下一次团队会议的最佳时间、帮助你整理手机上的个人和工作信息，以及许多其他智能方案。 
@@ -77,4 +79,4 @@ Microsoft 不会使用你在专用空间中工作的活动来为其他人计算�
 ## <a name="next-steps"></a>后续步骤
 
 - 使用 [Graph 管理器](https://developer.microsoft.com/graph/graph-explorer) 来通过自己的文件试用见解 API。 登录，在左侧列中展开 **见解**，然后尝试其示例查询。
-- 详细了解 [为用户自定义项见解隐私（预览版）](insights-customize-item-insights-privacy.md) 和支持自定义的 [见解设置 API（预览版）](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true)。
+- 详细了解 [为用户自定义项见解隐私（预览版）](insights-customize-item-insights-privacy.md) 和支持自定义的 [项见解设置 API（预览版）](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true)。

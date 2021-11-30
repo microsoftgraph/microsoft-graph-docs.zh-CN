@@ -3,12 +3,12 @@ title: 设置 Microsoft 365 组行为与预配选项
 description: 在 Microsoft Graph 使用组资源，你可以设置创建 Microsoft 365 组时要预配的特定组行为和资源。
 author: Jordanndahl
 ms.localizationpriority: high
-ms.openlocfilehash: 3d4675425b258484d7e9bcbc17f0814817e11e2d
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: d8e902c0b2cd43c870d29fcf00b4e28e1e17fca8
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256457"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225929"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>设置 Microsoft 365 组行为与预配选项（预览）
 
@@ -31,7 +31,7 @@ ms.locfileid: "60256457"
 
 | resourceProvisioningOptions 支持的值   |说明| 如果未设置，则为默认值 |
 |:---------------|:--------|:------------|
-| Teams|在 Microsoft Teams 中将此组预配为团队。此外，还可以通过 `PATCH` 操作将此值添加在 [组更新](/graph/api/group-update) 上，以便从现有 Microsoft 365 组中预配团队。| 此组是没有 Teams 功能的常规 Microsoft 365 组。|
+| 团队|在 Microsoft Teams 中将此组预配为团队。此外，还可以通过 `PATCH` 操作将此值添加在 [组更新](/graph/api/group-update) 上，以便从现有 Microsoft 365 组中预配团队。| 此组是没有 Teams 功能的常规 Microsoft 365 组。|
 
 
 ## <a name="see-also"></a>另请参阅

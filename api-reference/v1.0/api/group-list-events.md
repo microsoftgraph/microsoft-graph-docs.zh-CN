@@ -1,16 +1,16 @@
 ---
 title: 列出事件
 description: 检索事件对象列表。
-author: Jordanndahl
+author: Harini84
 ms.localizationpriority: high
-ms.prod: groups
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d615c0f1f6b5bba68822458ef42982887cb91bba
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a7a4962891713428e31621ab9db58b299bf567b9
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993151"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224704"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -25,7 +25,7 @@ ms.locfileid: "60993151"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

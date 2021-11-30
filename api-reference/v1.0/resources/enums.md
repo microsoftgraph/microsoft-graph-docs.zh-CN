@@ -5,16 +5,23 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: a7691215089789fcc9eb911ca8cb9a6d14e953e1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d91f7b7847d9c20465bbd507e59c882a337822b6
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60973470"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225859"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>accessReviewInstanceDecisionItemFilterByCurrentUserOptions 值 
+
+|成员|
+|:---|
+|reviewer|
+|unknownFutureValue|
 
 ### <a name="volumetype-values"></a>volumeType 值
 
@@ -936,7 +943,7 @@ ms.locfileid: "60973470"
 
 ### <a name="connectiondirection-values"></a>connectionDirection 值
 
-入站/出站 (网络连接方向的枚举) 。
+用于入站/出站 (网络连接方向的枚举) 。
 
 |成员|值|说明|
 |:---|:---|:---|

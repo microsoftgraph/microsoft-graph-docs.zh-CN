@@ -1,16 +1,16 @@
 ---
 title: directoryAudit 资源类型
-description: 介绍 Microsoft Graph API (REST) 的 directoryAudit (实体) ，这有助于审核 () beta () 的目录。
+description: 介绍 Microsoft Graph (API (REST) 的 directoryAudit (实体) ，这有助于审核 (beta)  (租户) 活动的目录。
 author: SarahBar
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: f7d7031033a791bb6cf02e2bad527d4decf2b3ea
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 48aeaaf8db3cff792e1d1edf38040a1de09acb9c
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962614"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224949"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 
@@ -39,9 +39,10 @@ ms.locfileid: "50962614"
 | id                  | String                                              | 指示活动的唯一 ID。                                                                                                                                                                                                            |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | 指示有关启动活动的用户或应用的信息。                                                                                                                                                                                                    |
 | loggedByService     | String                                              | 指示启动活动的服务的信息（例如：自助服务密码管理、核心目录、B2C、受邀用户、Microsoft Identity Manager、Privileged Identity Management）。                                                          |
-| result              | operationResult                                              | 指示活动的结果。 可取值为：`success`、`failure`、`timeout`、`unknownFutureValue`。                                                                                                                                                       |
+| result              | operationResult                                              | 指示活动的结果。 可能的值是：`success`、`failure`、`timeout`、`unknownFutureValue`。                                                                                                                                                       |
 | resultReason        | String                                              | 指示结果为 或 **时失败** `failure` 的原因 `timeout` 。                                                                                                                                                                                              |
-| targetResources     | [targetResource](targetresource.md) 集合      | 指示由于活动而更改的资源的信息。 目标资源类型可以是 `User` `Device` `Directory` `App` 、、、、、 `Role` 或 `Group` `Policy` `Other` 。                                                                                                       |
+| targetResources     | [targetResource](targetresource.md) 集合      | 有关由于活动而更改的资源的信息。  | 
+| userAgent | String | 活动中使用的用户代理的类型。 |                                                                                                      
 
 ## <a name="relationships"></a>关系
 无
@@ -71,7 +72,8 @@ ms.locfileid: "50962614"
   "loggedByService": "String",
   "result": "string",
   "resultReason": "String",
-  "targetResources": [{"@odata.type": "microsoft.graph.targetResource"}]
+  "targetResources": [{"@odata.type": "microsoft.graph.targetResource"}],
+  "userAgent": "String"
 }
 ```
 

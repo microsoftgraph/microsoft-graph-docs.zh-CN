@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b02e1c9d6a0de046771e4a437cb1762eea73c6db
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: 5028cc130f08c8070b426e49085a3a4367e64e8d
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127900"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226531"
 ---
 # <a name="get-deviceregistrationpolicy"></a>获取 deviceRegistrationPolicy
 
@@ -20,16 +20,16 @@ ms.locfileid: "60127900"
 
 读取 [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) 对象的属性和关系。 表示 deviceRegistrationPolicy 配额限制、其他身份验证和授权策略，以向组织注册设备标识。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| Policy.ReadWrite.DeviceConfiguration|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|不支持|
+|Application|不支持|
 
-代表用户进行呼叫时，用户需要属于以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)：
+代表用户进行呼叫时，用户需要属于以下Azure AD[角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 云设备管理员
 + 全局读取者
@@ -67,7 +67,7 @@ GET /policies/deviceRegistrationPolicy
 }
 -->
 ``` http
-GET https://graph.microsoft.com/policies/deviceRegistrationPolicy
+GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 ```
 
 

@@ -1,16 +1,16 @@
 ---
 title: directoryObject：checkMemberGroups
-description: 检查指定组列表中的成员身份，然后从该列表返回指定的用户、组、服务主体、组织联系人或目录对象是其成员的组。
+description: 检查指定组列表中的成员身份，然后从该列表返回指定的用户、组、服务主体、组织联系人、设备或目录对象是其成员的组。
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 04696e05b0c3c64bbc8a6fe49437bdbbf7db3ccd
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 7175adaa7eaf60b4e23c5cf3ccc8407ee513b4eb
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124124"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225013"
 ---
 # <a name="directoryobject-checkmembergroups"></a>directoryObject：checkMemberGroups
 
@@ -18,11 +18,11 @@ ms.locfileid: "61124124"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查指定组列表中的成员身份，然后从该列表返回指定的[用户](../resources/user.md)、组、服务主体、组织联系人或[目录](../resources/directoryobject.md)对象[](../resources/group.md)是其成员[](../resources/serviceprincipal.md)的组。 [](../resources/orgcontact.md) 此函数是可传递的。
+检查指定组列表中的成员身份，然后从该列表返回指定的[用户](../resources/user.md)、组、服务主体、组织联系人、设备或[目录](../resources/directoryobject.md)对象是[](../resources/serviceprincipal.md)其成员的组[](../resources/orgcontact.md)。 [](../resources/group.md) [](../resources/device.md) 此函数是可传递的。
 
 每个请求最多可检查 20 个组。 此函数支持在 Azure AD 中设置的所有组。 由于Microsoft 365组不能包含其他组，因此Microsoft 365组的成员始终是直接的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -111,6 +111,12 @@ POST /servicePrincipals/{id}/checkMemberGroups
 POST /contacts/{id}/checkMemberGroups
 ```
 
+设备的组成员身份。
+<!-- { "blockType": "ignored" } -->
+```http
+POST /devices/{id}/checkMemberGroups
+```
+
 ## <a name="request-headers"></a>请求标头
 
 | 名称       |说明|
@@ -136,6 +142,8 @@ POST /contacts/{id}/checkMemberGroups
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_checkmembergroups"
@@ -154,6 +162,28 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-checkmembergroups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-checkmembergroups-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-checkmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -185,6 +215,8 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_checkmembergroups_me"
@@ -200,6 +232,28 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-checkmembergroups-me-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-checkmembergroups-me-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-checkmembergroups-me-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-me-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-me-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 267e4ddba3bb378c07c7e3054695b81b8029cc3e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3071e92cc17aa15e111c1483d9a1092a3ddc91dd
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974109"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226249"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "60974109"
 
 目前，仅应用程序、组和用户资源支持[已删除项目功能](../resources/user.md)。 [](../resources/group.md) [](../resources/application.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -48,7 +48,7 @@ ms.locfileid: "60974109"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
+|Application | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +59,7 @@ GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.device
 ```
 
-此 API 当前支持检索应用程序的对象类型 () 、 () 用户 () `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` 删除的项目。 OData 转换类型是 URI 的必需部分，不支持在没有类型 `GET /directory/deleteditems` 的情况下 **调用** 。
+此 API 当前支持检索应用程序的对象类型 () 、组 () 用户 () `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` 已删除项目。 OData 转换类型是 URI 的必需部分，不支持在没有类型 `GET /directory/deleteditems` 的情况下 **调用** 。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -74,7 +74,7 @@ ConsistencyLevel: eventual
 
 ### <a name="examples-using-the-orderby-odata-query-parameter"></a>使用 OData $orderBy参数的示例
 
-`$orderBy`在已删除的对象类型的 **deletedDateTime** **、displayName** 和 **userPrincipalName** 属性上支持 OData 查询参数。 在 **deletedDateTime** 属性上，查询需要将 [](/graph/aad-advanced-queries)高级查询参数 (**ConsistencyLevel** 标头设置为 ，并添加 `true` `$count=true` 查询字符串) 。
+`$orderBy`在已删除的对象类型的 **deletedDateTime** **、displayName** 和 **userPrincipalName** 属性上支持 OData 查询参数。 在 **deletedDateTime** 属性上，查询需要将 [](/graph/aad-advanced-queries)高级查询参数 (**的 ConsistencyLevel** 标头和 `true` `$count=true` 查询字符串) 。
 
 | OData 转换 | 支持属性$orderBy | 示例 |
 | :--- | :--- | :--- |
@@ -83,7 +83,7 @@ ConsistencyLevel: eventual
 | microsoft.graph.application | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.application？$orderBy=displayName |
 | microsoft.graph.device | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.device？$orderBy=deletedDateTime&$count=true |
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
@@ -191,25 +191,17 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName,deletedDateTime)",
-    "@odata.count": 3,
+    "@odata.count": 2,
     "value": [
         {
-            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/deletedItems/54c8f8fa-7217-4846-baf9-94af2381864f/Microsoft.DirectoryServices.Group",
-            "id": "54c8f8fa-7217-4846-baf9-94af2381864f",
-            "displayName": "Digital Initiative Public Relations",
-            "deletedDateTime": "2021-09-07T15:41:06Z"
+            "id": "c31799b8-0683-4d70-9e91-e032c89d3035",
+            "displayName": "Role assignable group",
+            "deletedDateTime": "2021-10-26T16:56:36Z"
         },
         {
-            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/deletedItems/a7acbd5f-07ec-4b97-9fbf-8fe94d44b044/Microsoft.DirectoryServices.Group",
-            "id": "a7acbd5f-07ec-4b97-9fbf-8fe94d44b044",
-            "displayName": "GitHub issue #13843",
-            "deletedDateTime": "2021-09-07T15:41:57Z"
-        },
-        {
-            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/deletedItems/1a5999a0-3b42-498e-b408-0c2f9951db1d/Microsoft.DirectoryServices.Group",
-            "id": "1a5999a0-3b42-498e-b408-0c2f9951db1d",
-            "displayName": "GitHub issue #13843",
-            "deletedDateTime": "2021-09-07T15:42:03Z"
+            "id": "74e45ce0-a52a-4766-976c-7201b0f99370",
+            "displayName": "Role assignable group",
+            "deletedDateTime": "2021-10-26T16:58:37Z"
         }
     ]
 }

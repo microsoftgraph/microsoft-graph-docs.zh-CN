@@ -1,16 +1,16 @@
 ---
 title: passwordAuthenticationMethod：resetPassword
 description: 重置用户密码
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 392629ed4cc686855b1ec31aba09f1b70a62c5a9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fad8afd1fd3d4507ad7cf9447b855e3d70bc65cc
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049168"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224460"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod：resetPassword
 
@@ -24,17 +24,31 @@ ms.locfileid: "52049168"
 
 此重置是一项长时间运行的操作，它将在标头中返回一个链接，调用方可在其中定期检查 `Location` 重置的状态。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 自行操作的权限 (权限从最低权限级别)  | 对他人操作的权限 (权限从最低到最多特权) |
-|:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+### <a name="permissions-acting-on-self"></a>自行操作的权限
 
-对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+不能在用户自己的帐户上执行该操作。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|
+| 委派（工作或学校帐户）     | 不支持。 |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| Application                            | 不支持。 |
+
+### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
+
+只有具有适当权限的管理员才能执行此操作。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| Application                            | 不支持。 |
+
+对于管理员在另一用户上操作的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员

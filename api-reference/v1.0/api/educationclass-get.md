@@ -1,16 +1,16 @@
 ---
 title: 获取 educationClass
-description: 从系统检索类
+description: 从系统检索课程。
 ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 678048d58225396b7ce41d5d5316a3edfb03e89f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 18f314061e37dcbeebce0756a83db077b3e77029
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025652"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224830"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -25,7 +25,7 @@ ms.locfileid: "61025652"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduRoster.ReadBasic  |
 |委派（个人 Microsoft 帐户） |  不支持  |
-|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+|Application | EduRoster.Read.All、EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,16 +46,10 @@ GET /education/classes/{id}
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
 如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [educationClass](../resources/educationclass.md) 对象。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
-
-如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [educationClass](../resources/educationclass.md) 对象。
-
-## <a name="examples"></a>示例
-
 ### <a name="request"></a>请求
-
+下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

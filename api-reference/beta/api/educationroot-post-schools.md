@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c76b66b76ca56ae0de95448f018ad62973b5acb5
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: e066f1700cb093824b5b326d76e4610ac95e35a6
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124117"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226892"
 ---
 # <a name="create-educationschool"></a>创建 educationSchool
 
@@ -20,7 +20,7 @@ ms.locfileid: "61124117"
 
 创建学校。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "61124117"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持。                              |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | EduRoster.ReadWrite.All                     |
+| Application                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-educationschool-from-educationroot-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationschool-from-educationroot-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

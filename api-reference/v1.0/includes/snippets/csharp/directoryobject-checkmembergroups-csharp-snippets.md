@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 42049d1d901b41d90221486a21a2f5a79255ff3b896880ff841dceffb2a598bb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed4d8090979a4ed065f55ec528973665b4f12706
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903359"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224023"
 ---
 ```csharp
 
@@ -13,8 +13,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var groupIds = new List<String>()
 {
-    "fee2c45b-915a-4a64b130f4eb9e75525e",
-    "4fe90ae065a-478b9400e0a0e1cbd540"
+    "f448435d-3ca7-4073-8152-a1fd73c0fd09",
+    "bd7c6263-4dd5-4ae8-8c96-556e1c0bece6",
+    "93670da6-d731-4366-94b5-abed40b6016b",
+    "f5484ab1-4d4d-41ec-a9b8-754b3957bfc7",
+    "c9103f26-f3cf-4004-a611-2a14e81b8f79"
 };
 
 await graphClient.DirectoryObjects["{directoryObject-id}"]

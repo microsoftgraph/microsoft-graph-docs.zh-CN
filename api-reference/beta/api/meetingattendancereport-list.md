@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b01521dbd247fcf540169558feff2042f6e81319
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: b4585cd36fbbe3efed087b9538dacef18f9c9d2e
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130249"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225324"
 ---
 # <a name="list-meetingattendancereports"></a>列出 meetingAttendanceReports
 
@@ -20,7 +20,7 @@ ms.locfileid: "61130249"
 
 获取 [onlineMeeting 的 meetingAttendanceReport](../resources/meetingAttendanceReport.md) [对象列表](../resources/onlinemeeting.md)。 每次联机会议结束时，会生成该会话的与会者报告。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "61130249"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | OnlineMeetingArtifact.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | OnlineMeetingArtifact.Read.All |
+| Application | OnlineMeetingArtifact.Read.All |
 
 若要对此 API 使用应用程序权限，租户管理员必须创建应用程序访问 [策略，并](/graph/cloud-communication-online-meeting-application-access-policy) 授予用户权限。 这将授权策略中配置的应用代表该用户获取联机会议和/或联机会议项目 (请求路径中指定的用户 ID) 。
 
@@ -71,6 +71,8 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-attendanceReports"
@@ -79,6 +81,24 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/attendanceReports
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendancereports-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendancereports-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-attendancereports-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-attendancereports-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

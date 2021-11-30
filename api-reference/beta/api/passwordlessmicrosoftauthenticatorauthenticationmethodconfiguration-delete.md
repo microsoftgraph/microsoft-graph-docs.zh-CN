@@ -5,24 +5,24 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 32af656fd04eff17dec7a32bac1113e29068b42d
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 53aec74bc4f24e7c95c1d1f306ce180126800598
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60219805"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226125"
 ---
 # <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>删除 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (弃) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过将策略[Microsoft Authenticator 电话](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)其默认配置，删除对登录身份验证方法策略所做的更改。
+通过将策略Microsoft Authenticator 电话其[](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)默认配置，删除对登录身份验证方法策略所做的更改。
 
 > [!CAUTION]
 > The Microsoft Authenticator Passwordless 电话 Sign-in authentication method policy API is deprecated and stopped returning results on December 31， 2020. 请使用新的身份验证Microsoft Authenticator[策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -31,7 +31,7 @@ ms.locfileid: "60219805"
 |委派（个人 Microsoft 帐户）|不支持。|
 |Application|不支持。|
 
-对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 身份验证策略管理员
 * 全局管理员

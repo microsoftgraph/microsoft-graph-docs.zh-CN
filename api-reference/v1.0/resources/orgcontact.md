@@ -5,24 +5,24 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a49a7d66b0410cf09bf675b585930c24496e3ec4
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: e68d6811574387713f69b5750268c30750f7446c
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130008"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226909"
 ---
 # <a name="orgcontact-resource-type"></a>orgContact 资源类型
 
 命名空间：microsoft.graph
 
-代表组织联系人。 组织联系人由组织的管理员管理，不同于个人 [联系人](contact.md)。 此外，组织联系人从本地目录或本地Exchange Online同步，并且为只读。
+代表组织联系人。 组织联系人由组织的管理员管理，不同于个人 [联系人](contact.md)。 此外，组织联系人从本地目录或本地目录Exchange Online同步，并且为只读。
 
 继承自 [directoryObject](directoryobject.md)。
 
-该资源支持通过提供 [delta](../api/orgcontact-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
+该资源支持通过提供 [delta](../api/orgcontact-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。 此资源是允许传入其他属性的开放类型。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                                  | 返回类型                                      | 说明                                                                                                                 |
 |:------------------------------------------------------------------------|:-------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
@@ -31,10 +31,10 @@ ms.locfileid: "61130008"
 | [获取管理器](../api/orgcontact-get-manager.md)                         | [directoryObject](directoryobject.md)            | 获取组织联系人的经理。                                                                                   |
 | [List directReports](../api/orgcontact-list-directreports.md)           | [directoryObject](directoryobject.md) collection | 列出组织联系人的直接下属。                                                                           |
 | [List memberOf](../api/orgcontact-list-memberof.md)                     | [directoryObject](directoryobject.md) collection | 列出组织联系人是其中一个成员的组。                                                                   |
-| [列出 transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) | [directoryObject](directoryobject.md) 集合 | 列出组织联系人是其中一个成员的组，包括组织联系人嵌套在的组。 |
+| [列出 transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | 列出组织联系人是其中一个成员的组，包括组织联系人嵌套在的组。 |
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md)             | String collection                                | 检查组成员身份。                                                                                                 |
-| [getMemberGroups](../api/directoryobject-getmembergroups.md)                 | String 集合                                | 返回指定的组织联系人是成员的所有组。                                             |
-| [getMemberObjects](../api/orgcontact-getmemberobjects.md)               | String collection                                | 返回组织联系人是其中一个成员的 directoryObjects 列表。                                               |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md)                 | String collection                                | 返回指定的组织联系人是成员的所有组。                                             |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md)               | String collection                                | 返回组织联系人是其中一个成员的 directoryObjects 列表。                                               |
 
 ## <a name="properties"></a>属性
 
@@ -51,12 +51,12 @@ ms.locfileid: "61130008"
 | id                           | String                                                                   | 此组织联系人的唯一标识符。  支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。                                                                                                                                                                                                                                  |
 | jobTitle                     | String                                                                   | 此组织联系人的工作职务。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。                                                                                                                                                                                                                 |
 | mail                         | String                                                                   | 联系人的 SMTP 地址，例如"jeff@contoso.onmicrosoft.com"。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。                                                                                                                                                                             |
-| mailNickname                 | String                                                                   | 电子邮件别名 (此组织联系人的电子邮件地址的 @ 符号) 部分。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。                                                                                                                                                           |
+| mailNickname                 | String                                                                   | 电子邮件别名 (电子邮件地址的一部分，在此组织联系人的 @ 符号) 等待@ 符号。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。                                                                                                                                                           |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                                           | 上次从本地 AD 同步此组织联系人的日期和时间。 此日期和时间信息使用 ISO 8601 格式，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`）。                             |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合 | 此组织联系人的任何同步设置错误的列表。 支持 `$filter`（`eq`、`not`）。                                                                                                                                                                                                                 |
-| onPremisesSyncEnabled        | Boolean                                                                  | `true`如果此对象从本地目录同步;如果此对象最初从本地目录同步，但不再同步，现在在 Exchange 中主控;如果此对象从未从本地目录同步 (`false` `null` 默认) 。 <br/> <br/> 支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。 |
+| onPremisesSyncEnabled        | Boolean                                                                  | `true`如果此对象从本地目录同步;如果此对象最初从本地目录同步，但不再同步，现在在 Exchange 中主控;如果此对象从未从本地目录同步， (`false` `null` 默认) 。 <br/> <br/> 支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。 |
 | phones                       | [phone](phone.md) collection                                             | 此组织联系人的电话列表。 电话类型可以是移动、商业和 businessFax。 集合中只能存在每种类型中的一种。                                                                                                                                                                 |
-| proxyAddresses               | String collection                                                        | 例如："SMTP： bob@contoso.com"、"smtp： bob@sales.contoso.com"。 需要多值属性筛选器表达式的 **any** 运算符。 支持 `$filter` （`eq`、 `not`、 `ge`、 `le`、 `startsWith`）。                                                                                                               |
+| proxyAddresses               | String collection                                                        | 例如："SMTP： bob@contoso.com"、"smtp： bob@sales.contoso.com"。 需要多值属性筛选器表达式的 **any** 运算符。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。                                                                                                               |
 | surname                      | String                                                                   | 此组织联系人的姓氏。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>关系
@@ -65,7 +65,7 @@ ms.locfileid: "61130008"
 |:-------------------|:-------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | directReports      | [directoryObject](directoryobject.md) collection | 联系人的直接下属。  (其 manager 属性设置为此联系人的用户和联系人。) 只读。 可为 NULL。 支持 `$expand`。 |
 | manager            | [directoryObject](directoryobject.md)            | 作为此联系人的经理的用户或联系人。 只读。 支持 `$expand`。                                                                     |
-| memberOf           | [directoryObject](directoryobject.md) 集合 | 此联系人是其中一个成员的组。 只读。 可为空。 支持 `$expand`。                                                                      |
+| memberOf           | [directoryObject](directoryobject.md) collection | 此联系人是其中一个成员的组。 只读。 可为 NULL。 支持 `$expand`。                                                                      |
 | transitiveMemberOf | [directoryObject](directoryobject.md) collection | 此联系人是其中一个成员的组，包括该联系人嵌套在的组。 只读。 可为 Null。                                       |
 
 ## <a name="json-representation"></a>JSON 表示形式

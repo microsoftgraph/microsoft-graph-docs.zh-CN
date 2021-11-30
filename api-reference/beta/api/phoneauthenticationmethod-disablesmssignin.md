@@ -1,16 +1,16 @@
 ---
 title: phoneAuthenticationMethod：disableSmsSignIn
-description: 禁用短信手机登录
-localization_priority: Normal
+description: 禁用移动电话的短信登录
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 00141db043825d96611eaae156adb2bbf2e48503
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: cb7034d709c7c290f2c4a87d30648cb288921c34
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786467"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226076"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod：disableSmsSignIn
 
@@ -18,13 +18,13 @@ ms.locfileid: "52786467"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-禁用短信电话号码的 `mobile` 登录。 
+禁用现有电话号码的短信 `mobile` 登录。 
 
 >**注意：** 此号码将不再可用于短信登录，从而可能阻止用户登录。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="permissions-acting-on-self"></a>自行操作的权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "52786467"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -40,9 +40,9 @@ ms.locfileid: "52786467"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员在另一用户上操作的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员

@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ea336912435d2f8cef827ed2009294b9b22596a6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 59b60d282e2581850cb5959f91c3b075f5064d59
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985800"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226151"
 ---
 # <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>删除 passwordlessMicrosoftAuthenticatorAuthenticationMethod (弃) 
 命名空间：microsoft.graph
@@ -20,9 +20,9 @@ ms.locfileid: "60985800"
 删除用户的登录Microsoft Authenticator[密码电话登录方法](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)对象。
 
 > [!CAUTION]
-> The Microsoft Authenticator Passwordless 电话 Sign-in method API is deprecated and will stop returning results on December 31， 2020. 请使用新的身份验证[Microsoft Authenticator方法](../resources/microsoftAuthenticatorAuthenticationMethod.md)。
+> the Microsoft Authenticator Passwordless 电话 Sign-in method API is deprecated and will stop returning results on December 31， 2020. 请使用新的身份验证[Microsoft Authenticator方法](../resources/microsoftAuthenticatorAuthenticationMethod.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "60985800"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -40,9 +40,9 @@ ms.locfileid: "60985800"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员在另一用户上操作的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员

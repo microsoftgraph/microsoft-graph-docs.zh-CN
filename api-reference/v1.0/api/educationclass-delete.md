@@ -5,18 +5,18 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 25a9d4ad10e346e758a51574b2e75042b8d08aa0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a0ff83af594bbf163cecf64434060ac2bfa55966
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025702"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224382"
 ---
 # <a name="delete-educationclass"></a>删除 educationClass
 
 命名空间：microsoft.graph
 
-删除 [educationClass](../resources/educationclass.md)。
+删除 [educationClass](../resources/educationclass.md)。 课程也是通用组，因此删除课程时也会删除组。
 
 > [!IMPORTANT]
 > 课程也是通用组，因此删除课程时也会删除组。
@@ -28,13 +28,12 @@ ms.locfileid: "61025702"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/classes/{id}
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -49,7 +48,7 @@ DELETE /education/classes/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -82,7 +81,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
 <!-- {

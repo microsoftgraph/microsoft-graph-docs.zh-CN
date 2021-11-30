@@ -1,0 +1,30 @@
+---
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 58e3e1ff60275aec2786788d2517d4db96877539
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225819"
+---
+```go
+
+//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+requestBody := msgraphsdk.New()
+user := msgraphsdk.NewTeamworkUserIdentity()
+requestBody.SetUser(user)
+user.SetAdditionalData(map[string]interface{}{
+    "id": "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
+}
+tenantId := "2a690434-97d9-4eed-83a6-f5f13600199a"
+requestBody.SetTenantId(&tenantId)
+options := &msgraphsdk.UnhideForUserRequestBuilderPostOptions{
+    Body: requestBody,
+}
+chatId := "chat-id"
+graphClient.ChatsById(&chatId).UnhideForUser().Post(options)
+
+
+```

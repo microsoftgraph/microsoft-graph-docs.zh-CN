@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ddcbc62e5cd0d164c282ffda1e9d9a7d92bae86b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 061139bb6672b9d1f1327122df5c2d86e85f0a88
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022404"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224816"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
@@ -27,9 +27,9 @@ ms.locfileid: "61022404"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
+|委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
+|Application | Domain.Read.All、Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

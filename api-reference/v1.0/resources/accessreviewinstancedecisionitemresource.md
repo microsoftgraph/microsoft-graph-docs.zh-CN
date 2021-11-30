@@ -5,18 +5,18 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3c51c0a4edf32bd090f78a6a921d0a246c0d33ed
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b9b411d1b101d1f2fdc746d2bfb70d0dae8ede9b
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025627"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226552"
 ---
 # <a name="accessreviewinstancedecisionitemresource-resource-type"></a>accessReviewInstanceDecisionItemResource 资源类型
 
 命名空间：microsoft.graph
 
-访问评审中的每个决策项表示主体对资源的访问权限。 accessReviewInstanceDecisionItemResource 对象表示与决策项关联的资源。
+访问评审中的每个决策项表示主体对由 accessReviewInstanceDecisionItemResource 对象标识的资源的访问权限。 accessReviewInstanceDecisionItemResource 是允许传入其他属性的开放类型。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

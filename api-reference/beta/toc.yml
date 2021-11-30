@@ -346,16 +346,16 @@ items:
                 href: api/user-activateserviceplan.md
               - name: 分配许可证
                 href: api/user-assignlicense.md
-              - name: 检查成员组
-                href: api/directoryobject-checkmembergroups.md
-              - name: 检查成员对象
-                href: api/user-checkmemberobjects.md
               - name: 导出个人数据
                 href: api/user-exportpersonaldata.md
               - name: 获取成员组
                 href: api/directoryobject-getmembergroups.md
+              - name: 检查成员组
+                href: api/directoryobject-checkmembergroups.md
               - name: 获取成员对象
                 href: api/directoryobject-getmemberobjects.md
+              - name: 检查成员对象
+                href: api/directoryobject-checkmemberobjects.md
               - name: 按 ID 获取对象
                 href: api/directoryobject-getbyids.md
               - name: 列出创建的对象
@@ -396,7 +396,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '预览版 (项) '
+                  - name: '项目见解 (预览) '
                     href: resources/iteminsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -444,7 +444,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: Notes
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -453,7 +453,7 @@ items:
               - name: 列出笔记本
                 href: api/onenote-list-notebooks.md
           - name: 组织层次结构
-            href: resources/organization.md
+            href: resources/user.md
             items:
               - name: 分配管理器
                 href: api/user-post-manager.md
@@ -521,7 +521,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言 (区域) '
+          - name: '预览版的首选语言和区域 () '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -602,8 +602,6 @@ items:
                 href: api/group-post-owners.md
               - name: 分配许可证
                 href: api/group-assignlicense.md
-              - name: 检查成员组
-                href: api/directoryobject-checkmembergroups.md
               - name: 评估动态成员身份
                 href: api/group-evaluatedynamicmembership.md
               - name: 获取已删除的组
@@ -612,10 +610,14 @@ items:
                 href: api/group-delta.md
               - name: Get endpoint
                 href: api/endpoint-get.md
+              - name: 检查成员组
+                href: api/directoryobject-checkmembergroups.md
               - name: 获取成员组
                 href: api/directoryobject-getmembergroups.md
+              - name: 检查成员对象
+                href: api/directoryobject-checkmemberobjects.md
               - name: 获取成员对象
-                href: api/group-getmemberobjects.md
+                href: api/directoryobject-getmemberobjects.md
               - name: 列出已删除的组
                 href: api/directory-deleteditems-list.md
               - name: List endpoints
@@ -1082,11 +1084,11 @@ items:
                   - name: 检查成员组
                     href: api/directoryobject-checkmembergroups.md
                   - name: 检查成员对象
-                    href: api/serviceprincipal-checkmemberobjects.md
+                    href: api/directoryobject-checkmemberobjects.md
                   - name: 获取成员组
                     href: api/directoryobject-getmembergroups.md
                   - name: 获取成员对象
-                    href: api/serviceprincipal-getmemberobjects.md
+                    href: api/directoryobject-getmemberobjects.md
               - name: 所有者
                 items:
                   - name: 列出所有者
@@ -6663,7 +6665,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows防篡改保护选项
+                  - name: Windows Defender 防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -10142,7 +10144,7 @@ items:
                     href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
                   - name: 获取租户详细信息
                     href: api/managedtenants-tenantdetailedinformation-get.md
-              - name: 租户
+              - name: Tenant
                 href: resources/managedtenants-tenant.md
                 items:
                   - name: 列出租户
@@ -10938,6 +10940,10 @@ items:
                     href: api/device-update.md
                   - name: 删除设备
                     href: api/device-delete.md
+                  - name: 检查成员对象
+                    href: api/directoryobject-checkmemberobjects.md
+                  - name: 获取成员对象
+                    href: api/directoryobject-getmemberobjects.md
                   - name: 列出注册的所有者
                     href: api/device-list-registeredowners.md
                   - name: 列出注册的用户
@@ -10956,8 +10962,6 @@ items:
                     href: api/device-list-transitivememberof.md
                   - name: 列出设备使用权限
                     href: api/device-list-usagerights.md
-                  - name: 检查成员对象
-                    href: api/device-checkmemberobjects.md
               - name: 目录对象
                 href: resources/directoryobject.md
                 items:
@@ -10965,6 +10969,8 @@ items:
                     href: api/directoryobject-get.md
                   - name: 删除目录对象
                     href: api/directoryobject-delete.md
+                  - name: 检查成员对象
+                    href: api/directoryobject-checkmemberobjects.md
                   - name: 获取成员对象
                     href: api/directoryobject-getmemberobjects.md
                   - name: 获取成员组
@@ -11078,11 +11084,24 @@ items:
                     href: api/orgcontact-get.md
                   - name: 获取组织联系人 delta
                     href: api/orgcontact-delta.md
+                  - name: 目录对象
+                    href: resources/directoryobject.md
+                    items:
+                      - name: 获取成员组
+                        href: api/directoryobject-getmembergroups.md
+                      - name: 检查成员组
+                        href: api/directoryobject-checkmembergroups.md
+                      - name: 获取成员对象
+                        href: api/directoryobject-getmemberobjects.md
+                      - name: 检查成员对象
+                        href: api/directoryobject-checkmemberobjects.md
                   - name: 组
                     href: resources/group.md
                     items:
                       - name: 列出 memberOf
                         href: api/orgcontact-list-memberof.md
+                      - name: 获取成员组
+                        href: api/directoryobject-getmembergroups.md
                       - name: 获取成员组
                         href: api/directoryobject-getmembergroups.md
                       - name: 检查成员组
@@ -11096,8 +11115,6 @@ items:
                         href: api/orgcontact-list-memberof.md
                       - name: 获取管理器
                         href: api/orgcontact-get-manager.md
-                      - name: 获取成员对象
-                        href: api/orgcontact-getmemberobjects.md
                   - name: 订阅的 SKU
                     href: resources/subscribedsku.md
                     items:
@@ -12097,7 +12114,7 @@ items:
                         href: api/accessreviewinstance-get.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstance-filterbycurrentuser.md
-                      - name: '列出已弃 (审批) '
+                      - name: '列出已 (审批) '
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
                       - name: 发送提醒
                         href: api/accessreviewinstance-sendreminder.md
@@ -12122,7 +12139,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-get.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                      - name: '列出已弃 (审批) '
+                      - name: '列出已 (审批) '
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
@@ -12144,7 +12161,7 @@ items:
                         href: api/accessreviewhistorydefinition-post.md
                       - name: 生成下载 URI
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
-              - name: '已弃 (的访问) '
+              - name: '已弃 (访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -12968,7 +12985,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: Notes
+              - name: 注释
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -13836,7 +13853,7 @@ items:
                 href: api/site-list-subsites.md
               - name: 搜索网站
                 href: api/site-search.md
-              - name: 权限
+              - name: Permissions
                 items:
                   - name: 权限
                     href: resources/permission.md
@@ -14193,7 +14210,7 @@ items:
               - name: 获取成员组
                 href: api/directoryobject-getmembergroups.md
               - name: 获取成员对象
-                href: api/group-getmemberobjects.md
+                href: api/directoryobject-getmemberobjects.md
               - name: 检查成员组
                 href: api/directoryobject-checkmembergroups.md
               - name: 列出隶属于

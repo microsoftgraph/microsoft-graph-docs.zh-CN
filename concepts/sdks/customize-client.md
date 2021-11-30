@@ -3,12 +3,12 @@ title: 自定义 Microsoft Graph SDK 服务客户端
 description: 提供有关如何更改 Microsoft Graph SDK 服务客户端的默认行为的说明。
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 12d6321fd9821653939b5533e8ce4ee5b57c788b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1413511e04e508d76a5e7e7366c99699d17cf718
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019988"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225866"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>自定义 Microsoft Graph SDK 服务客户端
 
@@ -122,11 +122,46 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
                 .buildClient();
 ```
 
+## <a name="go"></a>[转到](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    a "github.com/microsoft/kiota/authentication/go/azure"
+    khttp "github.com/microsoft/kiota/http/go/nethttp"
+    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+    core "github.com/microsoftgraph/msgraph-sdk-go-core"
+)
+
+// Auth provider
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
+
+// Get default middleware from SDK
+defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefaultClientOptions())
+
+// Get instance of custom middleware
+// Implement a custom middleware by implementing the Middleware interface
+// https://github.com/microsoft/kiota/blob/main/http/go/nethttp/middleware.go
+allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
+
+// Create an HTTP client with the middleware
+httpClient := khttp.GetDefaultClient(allMiddleware...)
+
+// Create the adapter
+// Passing nil values causes the adapter to use default implementations
+adapter, err :=
+    msgraphsdk.NewGraphRequestAdapterWithParseNodeFactoryAndSerializationWriterFactoryAndHttpClient(
+        auth, nil, nil, httpClient)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
+```
+
 ---
 
 ## <a name="configuring-the-http-proxy-for-the-client"></a>为客户端配置 HTTP 代理
 
-某些环境要求客户端应用程序在可以访问公共 Internet 之前使用 HTTP 代理。 本部分演示如何为 Microsoft sdk 配置Graph代理。
+某些环境要求客户端应用程序在可以访问公共 Internet 之前使用 HTTP 代理。 本部分演示如何为 Microsoft SDK 配置Graph代理。
 
 <!-- markdownlint-disable MD024 -->
 ## <a name="c"></a>[C#](#tab/csharp)
@@ -259,5 +294,11 @@ final GraphServiceClient graphServiceClient =
 
 > [!NOTE]
 > 有关 Azure Identity 代理配置详细信息，请参阅 [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions)。
+
+## <a name="go"></a>[转到](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+Microsoft Graph SDK for Go 当前不支持 HTTP 代理。 有关详细信息[，GitHub](https://github.com/microsoftgraph/msgraph-sdk-go-core/issues/15)此问题。
 
 ---

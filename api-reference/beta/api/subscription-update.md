@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 4611d34d578d6e8445f84e01624cf01e75628b4d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b7ffe336ce38f036cd630345452a7156a66e4d68
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010672"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226587"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -107,7 +107,7 @@ PATCH /subscriptions/{id}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 
@@ -148,7 +148,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面是一个响应示例。
 <!-- {

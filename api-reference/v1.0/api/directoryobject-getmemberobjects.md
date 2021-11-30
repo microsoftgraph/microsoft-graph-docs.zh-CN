@@ -1,43 +1,116 @@
 ---
 title: 获取成员对象
-description: " 返回 user、group 或 directory 对象所属的所有组和目录角色。此函数是可传递的。 "
+description: 返回用户、组、服务主体、组织联系人、设备或目录对象是其中成员的所有组、管理单元和目录角色。 此函数是可传递的。
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d6683b83a0d26d53f592641f04120618b9e29fb8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3cf34fcf3c3fb613a2fd1337f6e272bf71d920bc
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979260"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226573"
 ---
 # <a name="get-member-objects"></a>获取成员对象
 
 命名空间：microsoft.graph
 
-返回 user、group 或 directory 对象所属的所有组和目录角色。此函数是可传递的。 
+返回用户、组、服务主体、组织联系人、[设备或](../resources/device.md)目录对象是成员[](../resources/group.md)的所有组[](../resources/serviceprincipal.md)、管理单元[](../resources/orgcontact.md)和目录角色。 [](../resources/user.md) [](../resources/directoryobject.md) 此函数是可传递的。
 
-**注意：** 只有用户才能是目录角色的成员。
+**注意：** 只有用户和启用角色的组才能是目录角色的成员。
 
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+### <a name="memberships-for-a-directory-object"></a>目录对象的成员身份
+
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read.All 和 Group.Read.All、Directory.Read.All    |
+|委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All 和 Group.Read.All、Directory.Read.All |
+|应用程序 | Directory.Read.All |
+
+### <a name="memberships-for-a-user"></a>用户的成员身份
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | User.Read、User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All |
+
+### <a name="memberships-for-a-group"></a>组的成员身份
+
+| 权限类型                        | 权限（从最低特权到最高特权）                                                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| 委派（工作或学校帐户）     | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
+| 应用程序                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
+
+### <a name="memberships-for-a-service-principal"></a>服务主体的成员身份
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All |
+
+### <a name="memberships-for-an-organizational-contact"></a>组织联系人的成员身份
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+### <a name="memberships-for-a-device"></a>设备的成员身份
+
+| 权限类型                        | 权限（从最低特权到最高特权） |
+|:---------------------------------------|:--------------------------------------------|
+| 委派（工作或学校帐户）     | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| Application                            | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
+
+目录对象的成员身份
+<!-- { "blockType": "ignored" } -->
+```http
+POST /directoryObjects/{id}/getMemberObjects
+```
+
+用户的成员身份
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMemberObjects
 POST /users/{id | userPrincipalName}/getMemberObjects
-POST /groups/{id}/getMemberGroups
-POST /directoryObjects/{id}/getMemberObjects
-
 ```
+
+组的成员身份
+<!-- { "blockType": "ignored" } -->
+```http
+POST /groups/{id}/getMemberObjects
+```
+
+服务主体的成员身份
+<!-- { "blockType": "ignored" } -->
+```http
+POST /servicePrincipals/{id}/getMemberObjects
+```
+
+组织联系人的成员身份
+<!-- { "blockType": "ignored" } -->
+```http
+POST /contacts/{id}/getMemberObjects
+```
+
+设备的成员身份
+<!-- { "blockType": "ignored" } -->
+```http
+POST /devices/{id}/getMemberObjects
+```
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:--------|
@@ -49,7 +122,7 @@ POST /directoryObjects/{id}/getMemberObjects
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| `true` 指定仅返回实体是成员的安全组; `false` 指定应返回实体是成员的所有组和目录角色。 **注意**：如果参数为 ，则只能在用户上调用 函数 `true` 。 |
+|securityEnabledOnly|Boolean| `true` 指定仅返回实体是成员的安全组;指定应返回实体是成员的所有组、管理单元和 `false` 目录角色。 |
 
 ## <a name="response"></a>响应
 
