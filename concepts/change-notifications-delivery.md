@@ -4,12 +4,12 @@ description: 更改通知可以通过不同的技术来传送，包括 Webhook �
 author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 59caceb3b56853b9bc4d20fa97cfc035b1a3ea0c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9e61d8352c2566b902fea045bc69eff5a91d0a8e
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134064"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225978"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways"></a>以不同方式接收更改通知
 
@@ -127,7 +127,7 @@ echo "Notification Url:\n${notificationUrl}"
 
 #### <a name="creating-the-subcription"></a>创建订阅
 
-使用事件中心订阅更改通知与使用 Webhook 订阅更改通知几乎相同。 主要区别在于前者依赖事件中心来传送通知。 所有其他操作都类似，包括[创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-beta)。  
+使用事件中心订阅更改通知与使用 Webhook 订阅更改通知几乎相同。 主要区别在于前者依赖事件中心来传送通知。 所有其他操作都类似，包括[创建订阅](/graph/api/subscription-post-subscriptions)。  
 
 创建订阅期间的主要区别是 **notificationUrl**。 必须将其设置为 `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`，并使用以下值：
 
@@ -164,14 +164,15 @@ echo "Notification Url:\n${notificationUrl}"
 }
 ```
 
-### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>如果缺少 Microsoft Graph 更改跟踪应用程序会怎样？
+### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>如果缺少Microsoft Graph 更改跟踪应用程序，会发生什么情况？
 
 租户中可能缺少 **Microsoft Graph 更改跟踪** 服务主体，这取决于租户的创建时间和管理操作。 要解决此问题，请在 [Microsoft Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer) 中运行 [以下查询](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9)。
 
-查询详细信息：
+查询详细信息： `0bf30f3b-4a52-48df-9a82-234910c4a086` 是Microsoft Graph 更改跟踪应用程序的全局 appId。
 
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals
+
 {
     "appId": "0bf30f3b-4a52-48df-9a82-234910c4a086"
 }
@@ -181,12 +182,11 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 > **注意：** 此 API 仅适用于学校或工作帐户，而不适用于个人帐户。 请确保使用域中的帐户登录。
 
-或者，你也可以使用此 [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) 脚本添加缺少的服务主体。
+或者，可以在 Microsoft Graph PowerShell 中使用 [New-MgServicePrincipal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true) cmdlet 添加缺少的服务主体。 下面是一个示例脚本。
 
 ```PowerShell
-Connect-AzureAD -TenantId <tenant-id>
-# replace tenant-id by the id of your tenant.
-New-AzureADServicePrincipal -AppId 0bf30f3b-4a52-48df-9a82-234910c4a086
+Connect-Graph -Scopes "Application.ReadWrite.All"
+New-MgServicePrincipal -AppId "0bf30f3b-4a52-48df-9a82-234910c4a086"
 ```
 
 ## <a name="next-steps"></a>后续步骤

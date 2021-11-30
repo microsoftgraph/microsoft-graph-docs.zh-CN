@@ -4,16 +4,16 @@ description: Microsoft Graph 提供单一 API 终结点，以便用户能够通�
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: e042ca2ea4a0b8f01eeb56621dfb77af970d00e0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2cc63ae714b09060976b984aff576dd5a7c0bf05
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127911"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224396"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
 
-Microsoft Graph 提供单一 API 终结点，以便用户能够通过大量资源（如 [user](/graph/api/resources/user?view=graph-rest-1.0) 和 [message](/graph/api/resources/message?view=graph-rest-1.0)）访问以人为中心的丰富数据和见解。 你还可以使用自己的应用程序数据扩展 Microsoft Graph。 无需使用外部数据存储，即可向 Microsoft Graph 资源添加自定义属性。
+Microsoft Graph 提供单一 API 终结点，以便用户能够通过大量资源（如 [user](/graph/api/resources/user) 和 [message](/graph/api/resources/message)）访问以人为中心的丰富数据和见解。 你还可以使用自己的应用程序数据扩展 Microsoft Graph。 无需使用外部数据存储，即可向 Microsoft Graph 资源添加自定义属性。
 
 例如，可能会决定扩展 **user** 资源，让应用处于轻量级水平，并将应用专属的用户配置文件数据存储在 Microsoft Graph 中。 或者，不妨保留应用的现有用户配置文件存储，并仅将应用专属的存储标识符添加到 **user** 资源。
 
@@ -30,24 +30,24 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 |资源 |开放扩展 |架构扩展 |
 |:------- |:------ |:------ |
-| [管理单元](/graph/api/resources/administrativeunit?view=graph-rest-beta) | 仅供预览 | 仅供预览 |
-| [日历事件](/graph/api/resources/event?view=graph-rest-1.0) | GA | GA |
-| [设备](/graph/api/resources/device?view=graph-rest-1.0) | GA | GA |
-| [组](/graph/api/resources/group?view=graph-rest-1.0) | GA | GA |
-| [组日历事件](/graph/api/resources/event?view=graph-rest-1.0) | GA | GA |
-| [组对话帖子](/graph/api/resources/post?view=graph-rest-1.0) | GA | GA |
-| [邮件](/graph/api/resources/message?view=graph-rest-1.0) | GA | GA |
-| [组织](/graph/api/resources/organization?view=graph-rest-1.0) | GA | GA |
-| [个人联系人](/graph/api/resources/contact?view=graph-rest-1.0)| GA | GA |
-| [用户](/graph/api/resources/user?view=graph-rest-1.0) | GA | GA |
-| [任务](/graph/api/resources/todotask?view=graph-rest-beta) | GA | GA |
-| [任务列表](/graph/api/resources/todotasklist?view=graph-rest-beta) | GA | GA |
+| [管理单元](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) | 仅供预览 | 仅供预览 |
+| [日历事件](/graph/api/resources/event) | GA | GA |
+| [设备](/graph/api/resources/device) | GA | GA |
+| [组](/graph/api/resources/group) | GA | GA |
+| [组日历事件](/graph/api/resources/event) | GA | GA |
+| [组对话帖子](/graph/api/resources/post) | GA | GA |
+| [邮件](/graph/api/resources/message) | GA | GA |
+| [组织](/graph/api/resources/organization) | GA | GA |
+| [个人联系人](/graph/api/resources/contact)| GA | GA |
+| [用户](/graph/api/resources/user) | GA | GA |
+| [任务](/graph/api/resources/todotask) | GA | GA |
+| [任务列表](/graph/api/resources/todotasklist) | GA | GA |
 
 使用工作或学校帐户登录时，可以对所有这些资源使用扩展。 此外，使用个人帐户登录时，可以对“**事件**”、“**帖子**”、“**组**”、“**邮件**”、“**联系人**”和“**用户**”资源使用扩展。
 
 ## <a name="open-extensions"></a>开放扩展
 
-[开放扩展](/graph/api/resources/opentypeextension?view=graph-rest-1.0)（以前称为 Office 365 数据扩展）是提供灵活方法将非类型化应用数据直接添加到资源实例的[开放类型](https://www.odata.org/getting-started/advanced-tutorial/#openType)。
+[开放扩展](/graph/api/resources/opentypeextension)（以前称为 Office 365 数据扩展）是提供灵活方法将非类型化应用数据直接添加到资源实例的[开放类型](https://www.odata.org/getting-started/advanced-tutorial/#openType)。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
 
@@ -58,16 +58,16 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
 
-可以在资源实例中[创建开放扩展](/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)，并将自定义数据存储到其中，全都通过同一操作完成（请注意受支持的部分资源的[已知限制](known-issues.md#extensions)）。
+可以在资源实例中[创建开放扩展](/graph/api/opentypeextension-post-opentypeextension)，并将自定义数据存储到其中，全都通过同一操作完成（请注意受支持的部分资源的[已知限制](known-issues.md#extensions)）。
 
-随后，可以[读取](/graph/api/opentypeextension-get?view=graph-rest-1.0)、[更新](/graph/api/opentypeextension-update?view=graph-rest-1.0)或[删除](/graph/api/opentypeextension-delete?view=graph-rest-1.0)扩展及其数据。
+随后可以[读取]（/graph/api/opentypeextension-get， [更新](/graph/api/opentypeextension-update)，或 [删除](/graph/api/opentypeextension-delete) 扩展及其数据。
 
 开放扩展示例：[使用开放扩展向用户添加自定义数据](extensibility-open-users.md)
 
 ## <a name="schema-extensions"></a>架构扩展
 
 
-通过[架构扩展](/graph/api/resources/schemaextension?view=graph-rest-1.0)，可以定义一个架构，用来扩展资源类型。 首先，创建架构扩展定义。 然后，利用它通过强类型自定义数据扩展资源实例。 此外，还可以控制架构扩展的[状态](#schema-extensions-lifecycle)，让它可被其他应用发现。 相应地，这些应用可以对自己的数据使用此扩展，并在它的基础之上生成进一步的体验。
+通过[架构扩展](/graph/api/resources/schemaextension)，可以定义一个架构，用来扩展资源类型。 首先，创建架构扩展定义。 然后，利用它通过强类型自定义数据扩展资源实例。 此外，还可以控制架构扩展的[状态](#schema-extensions-lifecycle)，让它可被其他应用发现。 相应地，这些应用可以对自己的数据使用此扩展，并在它的基础之上生成进一步的体验。
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
@@ -79,11 +79,11 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 可以看到，在 **id** 中此唯一名称用作复杂类型名称，复杂类型将在扩展的资源实例上存储自定义数据。
 
-与开放类型不同，管理架构扩展定义（[列出](/graph/api/schemaextension-list?view=graph-rest-1.0)、[创建](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)、[获取](/graph/api/schemaextension-get?view=graph-rest-1.0)、[更新](/graph/api/schemaextension-update?view=graph-rest-1.0)及[删除](/graph/api/schemaextension-delete?view=graph-rest-1.0)）和管理其数据（添加、获取、更新及删除数据）是独立的 API 操作集。
+与开放类型不同，管理架构扩展定义（[列出](/graph/api/schemaextension-list)、[创建](/graph/api/schemaextension-post-schemaextensions)、[获取](/graph/api/schemaextension-get)、[更新](/graph/api/schemaextension-update)及[删除](/graph/api/schemaextension-delete)）和管理其数据（添加、获取、更新及删除数据）是独立的 API 操作集。
 
 由于架构扩展可以在目标资源实例中作为复杂类型进行访问，因此可以使用下列方法，对架构扩展中的自定义数据执行 CRUD 操作：
 
-- 资源 `POST` 方法可用于在新建资源实例时指定自定义数据。 请注意，**contact**、**event**、**message** 和 **post** 资源存在一个 [已知问题](known-issues.md#creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time)，即需要使用 `PATCH` 操作创建架构扩展。
+- 资源 `POST` 方法可用于在新建资源实例时指定自定义数据。 请注意，**contact**、**event**、**message** 和 **post** 资源存在一个 [已知问题](known-issues.md#unable-to-create-a-resource-instance-and-add-schema-extension-data-at-the-same-time)，即需要使用 `PATCH` 操作创建架构扩展。
 - 资源 `GET` 方法可用于读取自定义数据。
 - 使用资源 `PATCH` 方法添加或更新现有资源实例中的自定义数据。
 - 使用资源 `PATCH` 方法将复杂类型设置为 NULL，以删除资源实例中的自定义数据。
@@ -120,7 +120,7 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Azure AD 目录架构扩展
 
-Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 资源中称其为 [目录架构扩展](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)。你可以使用 Microsoft Graph API 来管理 [扩展属性定义](/graph/api/resources/extensionproperty?view=graph-rest-1.0)以及添加、获取、更新和删除这些扩展的属性中的 _数据_。
+Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/resources/directoryobject) 资源中称其为 [目录架构扩展](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)。你可以使用 Microsoft Graph API 来管理 [扩展属性定义](/graph/api/resources/extensionproperty)以及添加、获取、更新和删除这些扩展的属性中的 _数据_。
 
 ## <a name="permissions"></a>Permissions
 
@@ -132,14 +132,14 @@ Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/re
 
 ### <a name="open-extension-limits"></a>开放扩展限制
 
-以下限制适用于目录资源（如 **user**、**group**、**device**）：
+以下限制适用于目录资源（**用户**、 **组**、 **设备**、 **administrativeUnit**、 **组织**）：
 
 - 每个开放扩展最多可以包含 2KB 数据（包括扩展定义本身）。
 - 应用最多可以为每个资源实例添加两个开放扩展。
 
 以下限制将应用于 Outlook 资源（如“**邮件**”、“**事件**”和“**联系人**”）：
 
-- 每个开放扩展存储在 [MAPI 命名的属性](/office/client-developer/outlook/mapi/mapi-named-properties)中，这是用户邮箱中的有限资源。 如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/opentypeextension?view=graph-rest-1.0)。
+- 每个开放扩展存储在 [MAPI 命名的属性](/office/client-developer/outlook/mapi/mapi-named-properties)中，这是用户邮箱中的有限资源。 如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/opentypeextension)。
 
 ### <a name="schema-extension-limits"></a>架构扩展限制
 

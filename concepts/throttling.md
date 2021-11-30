@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: davidmu1
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 38afc3388825b0b258bb51e6bcd6881600e1736f
-ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
+ms.openlocfilehash: 082586ea7518df90b16bc2b2b2e0bafdfcc2779d
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60270360"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226468"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -86,7 +86,7 @@ Retry-After: 2.128
 如持续轮询资源以检查更新以及定期扫描资源集合以检查新资源或已删除资源之类的编程模式，更有可能导致应用程序受到限制并降低整体性能。 如果可用，改为使用[更改跟踪](delta-query-overview.md)并[更改通知](webhooks.md)。
 
 >[!NOTE]
->[大规模发现文件和检测更改的最佳做法](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online)详细介绍最佳做法。
+>[大规模发现文件和检测更改的最佳做法](/onedrive/developer/rest-api/concepts/scan-guidance)详细介绍最佳做法。
 
 ## <a name="throttling-and-batching"></a>限制和批处理
 
@@ -222,13 +222,13 @@ Retry-After: 2.128
 | GET | `applications/{id}/extensionProperties` | 2 | 0 |
 | GET | `contracts` | 3 | 0 |
 | POST | `directoryObjects/getByIds` |  3 | 0 |
-| GET | `domains/{id}/domainNameReferences` | 4  | 0 |
+| GET | `domains/{id}/domainNameReferences` | 4 | 0 |
 | POST | `getObjectsById` | 3 | 0 |
 | GET | `groups/{id}/members` | 3 | 0 |
 | GET | `groups/{id}/transitiveMembers` | 5 | 0 |
-| POST | `isMemberOf` | 4  | 0 |
-| POST | `me/checkMemberGroups` | 4  | 0 |
-| POST | `me/checkMemberObjects` | 4  | 0 |
+| POST | `isMemberOf` | 4 | 0 |
+| POST | `me/checkMemberGroups` | 4 | 0 |
+| POST | `me/checkMemberObjects` | 4 | 0 |
 | POST | `me/getMemberGroups` | 2 | 0 |
 | POST | `me/getMemberObjects` | 2 | 0 |
 | GET | `me/licenseDetails` | 2 | 0 |
@@ -293,7 +293,7 @@ Retry-After: 2.128
 
 | 请求类型 |  每个租户每个应用限制 |
 | ------------ | ------------------------ |
-| 任何 | 每 60 秒 60 个请求 |
+| 任何 | 每 10 秒 5 个请求 |
 
 上述限制适用于下列资源:
 

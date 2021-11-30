@@ -4,12 +4,12 @@ description: Microsoft Graph 支持 $search OData 查询参数，以便限制请
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: f6cb8f9d8fe1a1c8b14872f5979dabed2eff4717
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6cd0d25d1ba9ef95c37d8e79eb8f5ea516926259
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093972"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226097"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>使用搜索查询参数匹配搜索条件
 
@@ -22,7 +22,7 @@ ms.locfileid: "59093972"
 
 ## <a name="using-search-on-message-collections"></a>对 message 集合使用 $search
 
-可根据特定邮件属性值搜索邮件。 搜索结果按邮件发送日期和时间进行排序。 `$search` 请求最多可返回 250 个结果。
+可根据特定邮件属性值搜索邮件。 搜索结果按邮件发送日期和时间进行排序。 `$search`请求最多返回 1000 个结果。
 
 如果确实要搜索邮件，且仅指定值，而未指定特定邮件属性，搜索依据为默认搜索属性 **from**、**subject** 和 **body**。
 

@@ -3,12 +3,12 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 398ba544748b3bf60728eda051059fc6f7e1d517
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: 0c2faca238d1127462de5f70aadffd1ef3edd2d0
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115165"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61132219"
 ---
 <!-- markdownlint-disable MD041-->
 
@@ -29,3 +29,21 @@ ms.locfileid: "60115165"
 >`/teams/getAllMembers``/chats/getAllMembers`和[具有许可和付款要求](/graph/teams-licenses)。
 > `/teams/getAllMembers` 支持 `/chats/getAllMembers` 和 `model=A` `model=B` 查询参数。
 > 如果未指定模型，将使用[评估模式](/graph/teams-licenses#evaluation-mode-default-requirements)。
+
+### <a name="request-example"></a>请求示例
+
+在 `model` 请求正文的 **resource** 属性中指定 query 参数。
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-type: application/json
+
+{
+   "changeType": "created",
+   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+   "resource": "chats/getAllMessages?model=A",
+   "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
+   "clientState": "secretClientValue",
+   "latestSupportedTlsVersion": "v1_2"
+}
+```

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 26b8314c1a00873856d6e456e03796a5344e70d1
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: f39d32ac8531103c3ff5b984590951807e905185
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130218"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226321"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "61130218"
 > [!Note]
 > 对应用程序资源类型的更改目前正在开发中。 有关详细信息，请参阅 [Microsoft Graph 的已知问题](/graph/known-issues#application-and-serviceprincipal-api-changes)。
 
-该资源支持通过提供 [delta](../api/application-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
+该资源支持通过提供 [delta](../api/application-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。 此资源是允许传入其他属性的开放类型。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法 | 返回类型 | Description |
 |:---------------|:--------|:----------|
