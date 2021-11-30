@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1c2c9091ddacc7d3ea543615fc629723fd0959498360d0038a0eeaae38506d44
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 95f3d317bea1d24b34e5d00c911d3413f5515ec7
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57277890"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61228325"
 ---
 ```java
 
@@ -19,7 +19,6 @@ responseStatus.response = ResponseType.NONE;
 responseStatus.time = OffsetDateTimeSerializer.deserialize("datetime-value");
 event.responseStatus = responseStatus;
 event.recurrence = null;
-event.iCalUId = "iCalUId-value";
 event.reminderMinutesBeforeStart = 99;
 event.isOnlineMeeting = true;
 event.onlineMeetingProvider = OnlineMeetingProviderType.TEAMS_FOR_BUSINESS;

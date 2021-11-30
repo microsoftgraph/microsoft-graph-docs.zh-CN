@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7cfc7e72dc9c3dcb2b16f469f1b26908347de0f7f84c4bf7df4a8ae4e78bc2a2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 76c709ed315077f7474a1cf9ef491e582013329f
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163158"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61228321"
 ---
 ```csharp
 
@@ -14,6 +14,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 await graphClient.Me.Drive.Items["{driveItem-id}"]
     .Unfollow()
     .Request()
-    .DeleteAsync();
+    .PostAsync();
 
 ```

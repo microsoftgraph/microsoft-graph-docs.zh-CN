@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 49ff221b209033a89f58a47a449892df9bad98526bf4db91c9537408118adadd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 568047a4d12ad15e821847c885c9440aa9b68668
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57332339"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61228323"
 ---
 ```csharp
 
@@ -21,7 +21,6 @@ var @event = new Event
         Time = DateTimeOffset.Parse("datetime-value")
     },
     Recurrence = null,
-    ICalUId = "iCalUId-value",
     ReminderMinutesBeforeStart = 99,
     IsOnlineMeeting = true,
     OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
