@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 17ad5c711798aa4877b44fee4b2c3d190d8774b8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a93d043977a56018e8d709e2081e1358499e44a9
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033426"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241637"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -54,15 +54,15 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 
 >**注意：** 
 > + 值 `n` 为 `$levels` （以 `max` 返回所有经理）或 1 到 1000 之间的数字。  
-> + 如果未指定 `$levels` 参数，将仅返回直属经理。  
-> + 您可以指定 `$select` 内部 `$expand` 单个经理的属性。 参数 `$levels` 必需： `$expand=manager($levels=max;$select=id,displayName)`
+> + 如果未指定 `$levels` 参数，将仅返回直属经理。
+> + 您可以指定 `$select` 内部 `$expand` 单个经理的属性。 `$levels`参数是必需的 `$expand=manager($levels=max;$select=id,displayName)` ：。
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |
-| ConsistencyLevel | 最终。 请求包括 `$expand=manager($levels=max)` 参数时必需。 |
+| ConsistencyLevel | 最终。 当请求包含查询字符串时 `$count=true` 是必需的。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -135,12 +135,11 @@ Content-type: application/json
 
 ### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>示例 2：获取直至根级别的经理链
 
-以下示例显示获取直至根级别的经理链的请求。
+以下示例显示获取直至根级别的经理链的请求。 此请求需要 **将 ConsistencyLevel** 标头设置为 `eventual` ，因为 `$count=true` 查询字符串位于请求中。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 #### <a name="request"></a>请求
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_transitive_managers"
@@ -149,11 +148,6 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
 ConsistencyLevel: eventual
 ```
-# <a name="go"></a>[转到](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-transitive-managers-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response"></a>响应

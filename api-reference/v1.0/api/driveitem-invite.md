@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 发送 driveItem 的共享邀请。
 doc_type: apiPageType
-ms.openlocfilehash: 05a1502363244b0ee438a4a1afb05e967ad7890d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0ce6f6751d206571a2d55f31e6e90fcb635df4c2
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026645"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241273"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
@@ -73,8 +73,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 
 ## <a name="example"></a>示例
 
-本示例向电子邮件地址为“ryan@contoso.com”的用户发送共享邀请，其中包含关于协作文件的讯息。
-此邀请授予 Ryan 对该文件的读写访问权限。
+此示例向电子邮件地址为 "ryan@contoso.com> 的用户发送共享邀请包含有关要协作处理的文件的消息。该邀请授予Ryan对文件的读写访问权限。
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -134,16 +133,28 @@ Content-type: application/json
 {
   "value": [
     {
+      "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "grantedTo": {
         "user": {
-          "displayName": "Ryan Gregg",
+          "displayName": "Robin Danielsen",
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
+        }
+      },
+      "grantedToV2": {
+        "user": {
+          "id": "42F177F1-22C0-4BE3-900D-4507125C5C20",
+          "displayName": "Robin Danielsen"
+        },
+        "siteUser": {
+          "id": "1",
+          "displayName": "Robin Danielsen",
+          "loginName": "Robin Danielsen"
         }
       },
       "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "ryan@contoso.com",
+        "email": "robin@contoso.com",
         "signInRequired": true
       },
       "roles": [ "write" ],
@@ -160,7 +171,7 @@ Content-type: application/json
 
 ## <a name="error-responses"></a>错误响应
 
-请阅读 [错误响应][error-response] 主题，以了解有关如何返回错误的详细信息。
+请阅读 [错误响应][error-response] 主题，了解有关如何返回错误的详细信息。
 
 
 [driveRecipient]: ../resources/driverecipient.md

@@ -5,12 +5,12 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8755537e6da80480f6f9a1b06a5c53d638597221
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6dd6df95e57ffcda80fe816d7cda1303706a4cd1
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002118"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241406"
 ---
 # <a name="get-permission"></a>获取权限
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "61002118"
 
 检索网站上 [permission](../resources/permission.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）
@@ -103,10 +103,19 @@ Content-Type: application/json
 
 {
    "id":"1",
+   "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
    "roles":[
       "read"
    ],
    "grantedToIdentities":[
+      {
+         "application":{
+            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+            "displayName":"Contoso Time Manager App"
+         }
+      }
+   ],
+   "grantedToIdentitiesV2":[
       {
          "application":{
             "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",

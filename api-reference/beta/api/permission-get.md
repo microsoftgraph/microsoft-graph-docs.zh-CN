@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 返回特定 permission 资源的有效共享权限。
 ms.date: 09/10/2017
 title: 获取权限
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 2613eb4e260d3ead63d2619f15ca43521744aec5
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.prod: sharepoint
+ms.openlocfilehash: 62262d1d50a82d5a2cffa1d0350ddcec587e7213
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151648"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241630"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 
@@ -25,7 +25,7 @@ ms.locfileid: "53151648"
 
 调用方可以检查 `inheritedFrom` 属性来区分是否为继承权限。此属性是引用继承其权限的上级的 [ItemReference](../resources/itemreference.md) 资源。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -97,10 +97,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "grantedTo": {
     "user": {
-      "displayName": "Ryan Gregg",
+      "displayName": "Robin Danielsen",
       "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName": "Robin Danielsen"
     }
   },
   "id": "1",

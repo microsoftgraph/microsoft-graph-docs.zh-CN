@@ -5245,6 +5245,91 @@ items:
                         href: api/userconsentrequest-get.md
                       - name: 按当前用户筛选
                         href: api/userconsentrequest-filterByCurrentUser.md
+              - name: 权利管理
+                href: resources/entitlementmanagement-root.md
+                items:
+                  - name: 访问包
+                    href: resources/accesspackage.md
+                    items:
+                      - name: 列出
+                        href: api/entitlementmanagement-list-accesspackages.md
+                      - name: 创建
+                        href: api/entitlementmanagement-post-accesspackages.md
+                      - name: 获取
+                        href: api/accesspackage-get.md
+                      - name: 更新
+                        href: api/accesspackage-update.md
+                      - name: 删除
+                        href: api/accesspackage-delete.md
+                      - name: 按当前用户筛选
+                        href: api/accesspackage-filterbycurrentuser.md
+                      - name: 获取适用的策略要求
+                        href: api/accesspackage-getapplicablepolicyrequirements.md
+                  - name: 访问包分配
+                    href: resources/accesspackageassignment.md
+                    items:
+                      - name: 列表
+                        href: api/entitlementmanagement-list-assignments.md
+                      - name: 按当前用户筛选
+                        href: api/accesspackageassignment-filterbycurrentuser.md
+                  - name: 访问包分配请求
+                    href: resources/accesspackageassignmentrequest.md
+                    items:
+                      - name: 列表
+                        href: api/entitlementmanagement-list-assignmentrequests.md
+                      - name: 获取
+                        href: api/accesspackageassignmentrequest-get.md
+                      - name: 删除
+                        href: api/accesspackageassignmentrequest-delete.md
+                      - name: 按当前用户筛选
+                        href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+                      - name: 取消
+                        href: api/accesspackageassignmentrequest-cancel.md
+                  - name: 访问包目录
+                    href: resources/accesspackagecatalog.md
+                    items:
+                      - name: 列出
+                        href: api/entitlementmanagement-list-catalogs.md
+                      - name: 创建
+                        href: api/entitlementmanagement-post-catalogs.md
+                      - name: 获取
+                        href: api/accesspackagecatalog-get.md
+                      - name: 更新
+                        href: api/accesspackagecatalog-update.md
+                      - name: 删除
+                        href: api/accesspackagecatalog-delete.md
+                  - name: 连接的组织
+                    href: resources/connectedorganization.md
+                    items:
+                      - name: 列出
+                        href: api/entitlementmanagement-list-connectedorganizations.md
+                      - name: 创建
+                        href: api/entitlementmanagement-post-connectedorganizations.md
+                      - name: 获取
+                        href: api/connectedorganization-get.md
+                      - name: 更新
+                        href: api/connectedorganization-update.md
+                      - name: 删除
+                        href: api/connectedorganization-delete.md
+                      - name: 列出外部发起人
+                        href: api/connectedorganization-list-externalsponsors.md
+                      - name: 列出内部发起人
+                        href: api/connectedorganization-list-internalsponsors.md
+                      - name: 添加外部发起人
+                        href: api/connectedorganization-post-externalsponsors.md
+                      - name: 添加内部发起人
+                        href: api/connectedorganization-post-internalsponsors.md
+                      - name: 删除外部发起人
+                        href: api/connectedorganization-delete-externalsponsors.md
+                      - name: 删除内部发起人
+                        href: api/connectedorganization-delete-internalsponsors.md
+                  - name: 权利管理设置
+                    href: resources/entitlementmanagementsettings.md
+                    items:
+                      - name: 获取
+                        href: api/entitlementmanagementsettings-get.md
+                      - name: 更新
+                        href: api/entitlementmanagementsettings-update.md
               - name: 使用条款
                 items:
                   - name: 协议
@@ -6167,7 +6252,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 创建计划

@@ -4,14 +4,14 @@ ms.date: 09/10/2017
 title: 更改共享权限
 ms.localizationpriority: medium
 description: 通过修补 permission 资源更新共享权限的属性。
-ms.prod: ''
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 60d59547d77d30c9be267cf2d880a8c4f3917e78
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e695fe12875447c8ee0130aabfe556a84d6e1813
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072825"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241413"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -21,7 +21,7 @@ ms.locfileid: "59072825"
 
 只有 **roles** 属性可以通过这种方式修改。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -60,10 +60,10 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | 权限类型        | 属性 | 类型              | 说明                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
-| User                   | 角色    | String 集合 | 权限类型的数组。 |
+| 用户                   | 角色    | String 集合 | 权限类型的数组。 |
 | 匿名共享链接 | expirationDateTime | DateTimeOffset | DateTimeOffset 的 yyyy-MM-ddTHH：mm：ssZ 格式，表示权限的过期时间。 |
 
-### <a name="remarks"></a>备注
+### <a name="remarks"></a>说明
 不受支持的权限修改包括：
 - 组织共享链接
 - 人员共享链接
@@ -118,10 +118,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "grantedTo": {
     "user": {
-      "displayName": "Ryan Gregg",
+      "displayName": "Robin Danielsen",
       "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName": "Robin Danielsen"
     }
   },
   "id": "1",

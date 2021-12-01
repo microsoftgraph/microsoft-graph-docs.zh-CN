@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 6f28f6e682ebba03740e5cd07d17de838d2aea18
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2836a8c4832d38c0e8c2e974d9eda7163c0f2313
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097837"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241651"
 ---
 # <a name="rolemanagement-resource-type"></a>roleManagement 资源类型
 
 命名空间：microsoft.graph
 
-表示基于Microsoft 365角色的访问控制 (RBAC) 角色管理实体。 此资源提供对 RBAC 提供程序中提供的角色定义和角色分配的访问权限。 **directory** (Azure Active Directory) 和 **deviceManagement** (Intune) 提供程序当前受支持。
+表示基于Microsoft 365角色的访问控制 (RBAC) 角色管理实体。 此资源提供对 RBAC 提供程序中提供的角色定义和角色分配的访问权限。 **directory** (Azure Active Directory) **和 deviceManagement** (Intune) 提供程序当前受支持。
 
-有关详细信息，请参阅： 
+有关更多信息，请参阅： 
 * [Azure Active Directory 中的管理员角色权限](/azure/active-directory/roles/custom-overview)。
 * [Microsoft Intune 中的基于角色的访问控制 (RBAC)](/mem/intune/fundamentals/role-based-access-control)。
 
@@ -34,7 +34,8 @@ ms.locfileid: "59097837"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|directory|[rbacApplication](rbacapplication.md)| 只读。可为空。|
+|directory|[rbacApplication](rbacapplication.md)| 只读。可为 NULL。|
+|entitlementManagement|[entitlementManagement](entitlementmanagement.md)| 标识管理中所有权利Azure AD容器。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

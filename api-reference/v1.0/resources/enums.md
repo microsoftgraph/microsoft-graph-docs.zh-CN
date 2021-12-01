@@ -5,16 +5,125 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: d91f7b7847d9c20465bbd507e59c882a337822b6
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 08d5cc4fca905c2b8ef442839e13752186417e5d
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225859"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241679"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="accesspackageassignmentfilterbycurrentuseroptions-values"></a>accessPackageAssignmentFilterByCurrentUserOptions 值
+
+|成员|
+|:---|
+|target|
+|createdBy|
+|unknownFutureValue|
+
+### <a name="accesspackageassignmentrequestfilterbycurrentuseroptions-values"></a>accessPackageAssignmentRequestFilterByCurrentUserOptions 值
+
+|成员|
+|:---|
+|target|
+|createdBy|
+|审批者|
+|unknownFutureValue|
+
+### <a name="accesspackageassignmentstate-values"></a>accessPackageAssignmentState 值
+
+|成员|
+|:---|
+|delivering|
+|partiallyDelivered|
+|delivered|
+|已过期|
+|deliveryFailed|
+|unknownFutureValue|
+
+### <a name="accesspackagecatalogstate-values"></a>accessPackageCatalogState 值
+
+|成员|
+|:---|
+|unpublished|
+|published|
+|unknownFutureValue|
+
+### <a name="accesspackagecatalogtype-values"></a>accessPackageCatalogType 值
+
+|成员|
+|:---|
+|userManaged|
+|serviceDefault|
+|serviceManaged|
+|unknownFutureValue|
+
+### <a name="accesspackageexternaluserlifecycleaction-values"></a>accessPackageExternalUserLifecycleAction 值
+
+|成员|
+|:---|
+|无|
+|blockSignIn|
+|blockSignInAndDelete|
+|unknownFutureValue|
+
+### <a name="accesspackagefilterbycurrentuseroptions-values"></a>accessPackageFilterByCurrentUserOptions 值
+
+|成员|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
+
+### <a name="accesspackagerequeststate-values"></a>accessPackageRequestState 值
+
+|成员|
+|:---|
+|submitted|
+|pendingApproval|
+|delivering|
+|delivered|
+|deliveryFailed|
+|denied|
+|scheduled|
+|canceled|
+|partiallyDelivered|
+|unknownFutureValue|
+
+### <a name="accesspackagerequesttype-values"></a>accessPackageRequestType 值
+
+|成员|
+|:---|
+|notSpecified|
+|userAdd|
+|userUpdate|
+|userRemove|
+|adminAdd|
+|adminUpdate|
+|adminRemove|
+|systemAdd|
+|systemUpdate|
+|systemRemove|
+|onBehalfAdd|
+|unknownFutureValue|
+
+### <a name="accesspackagesubjecttype-values"></a>accessPackageSubjectType 值
+
+|成员|
+|:---|
+|notSpecified|
+|用户|
+|servicePrincipal|
+|unknownFutureValue|
+
+### <a name="connectedorganizationstate-values"></a>connectedOrganizationState 值
+
+|成员|
+|:---|
+|已配置|
+|已建议|
 
 ### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>accessReviewInstanceDecisionItemFilterByCurrentUserOptions 值 
 
@@ -782,7 +891,7 @@ ms.locfileid: "61225859"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | 参考
 
 

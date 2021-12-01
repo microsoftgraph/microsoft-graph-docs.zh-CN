@@ -5,12 +5,12 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1d78936b82ca1382c13f6414ce4c07b453548d5e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fc0404641a01cc3f435abf2975a204e6f133ec5f
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026155"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241581"
 ---
 # <a name="list-permissions"></a>列出权限
 命名空间：microsoft.graph
@@ -106,6 +106,7 @@ Content-Type: application/json
    "value":[
       {
          "id":"1",
+         "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
          "roles":[
             "read"
          ],
@@ -116,14 +117,31 @@ Content-Type: application/json
                   "displayName":"Contoso Time Manager App"
                }
             }
+         ],
+         "grantedToIdentitiesV2":[
+            {
+               "application":{
+                  "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+                  "displayName":"Contoso Time Manager App"
+               }
+            }
          ]
       },
       {
          "id":"2",
+         "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
          "roles":[
             "write"
          ],
          "grantedToIdentities":[
+            {
+               "application":{
+                  "id":"22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
+                  "displayName":"Fabrikam Dashboard App"
+               }
+            }
+         ],
+         "grantedToIdentitiesV2":[
             {
                "application":{
                   "id":"22f09bb7-dd29-403e-bec2-ab5cde52c2b3",

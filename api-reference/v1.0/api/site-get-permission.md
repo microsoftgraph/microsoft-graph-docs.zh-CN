@@ -5,12 +5,12 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e0d472a6476619c287b2dad6590afe34c69c91b7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 61b4707ea1d39b3654447964a0d22d855dcc68bd
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024105"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241322"
 ---
 # <a name="get-permission"></a>获取权限
 命名空间：microsoft.graph
@@ -101,8 +101,15 @@ Content-Type: application/json
 
 {
   "id": "1",
+  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
   "roles": ["read"],
   "grantedToIdentities": [{
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
+    }
+  }],
+  "grantedToIdentitiesV2": [{
     "application": {
       "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
       "displayName": "Contoso Time Manager App"
