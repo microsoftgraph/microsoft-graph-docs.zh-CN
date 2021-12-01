@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2dea299fa794877e2e180cb2fadcb3cd8480adb5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 4e82f30418a49dcc8becc2780da11b18249c24bc
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448034"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224284"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -24,11 +24,11 @@ ms.locfileid: "60448034"
 |:---------------|:--------|:----------|
 |[获取 directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |读取 directory 对象的属性。|
 |[删除 directoryObject](../api/directoryobject-delete.md) | 无 |删除 directory 对象。 |
-|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
-|[checkMemberObjects](../api/user-checkmemberobjects.md)|String 集合|检查指定用户对象的组或目录角色列表中的成员身份。 此方法是可传递的。|
 |[获取可用扩展属性](../api/directoryobject-getavailableextensionproperties.md)|[extensionProperty](../resources/extensionproperty.md) 集合|获取已在目录中注册的目录扩展属性的所有或筛选列表。|
-|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|返回 user、group 或 directory 对象所属的所有组。检查是可传递的。|
-|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| 返回 user、group 或 directory 对象所属的所有组和目录角色。检查是可传递的。 |
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|检查指定组列表中的成员身份，并从该列表返回指定用户、组、服务主体、组织联系人、设备或目录对象所属的组。 检查是可传递的。|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|返回用户、组、服务主体、组织联系人、设备或目录对象所属的所有组。 检查是可传递的。|
+|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|String 集合|检查指定用户、组、设备、组织联系人或目录对象的组、管理单元或目录角色列表中的成员身份。 此方法是可传递的。|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| 返回用户、组、设备、组织联系人或目录对象所属的所有组、管理单元和目录角色。 检查是可传递的。 |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) 集合 | 基于提供的 ID 集获取目录对象集。 |
 |[validateProperties](../api/directoryobject-validateproperties.md)|Json| 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。 |
 |delta|[directoryObject](directoryObject.md) 集合| 获取目录对象的增量更改，例如，[用户](../api/user-delta.md)、[组](../api/group-delta.md)、[应用程序](../api/application-delta.md)和[服务主体](../api/serviceprincipal-delta.md)。 每个派生类型都支持按 **id** 进行筛选。有关 delta 查询的详细信息，请参阅 [使用 delta 查询跟踪 Microsoft Graph 数据中的更改](/graph/delta-query-overview)。|
