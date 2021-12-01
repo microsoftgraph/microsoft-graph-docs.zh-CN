@@ -4,12 +4,12 @@ description: Microsoft Graph 中用于访问敏感数据的 Microsoft Teams API 
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 03ad082f9bed728222f09c88de5d42b517f1fd2c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c67f626b14f048c89b056db43278905b8916db4d
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687450"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241336"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>Microsoft Teams 中的受保护 API
 
@@ -33,4 +33,5 @@ Microsoft Graph 中用于访问敏感数据的 Microsoft Teams API 被视为受�
 >[!NOTE]
 >[发送消息](/graph/api/channel-post-messages) API 不受保护。
 
-要请求访问这些受保护的 API，请填写下述[请求表单](https://aka.ms/teamsgraph/requestaccess)。 我们在每周三审查访问请求，并在每周五部署批准，但美国的主要节假日周除外。在这些周中的提交将在下一个非节假日周进行处理。
+要请求访问这些受保护的 API，请填写下述[请求表单](https://aka.ms/teamsgraph/requestaccess)。 我们在每周三审查访问请求，并在每周五部署批准，但美国的主要节假日周除外。在这些周中的提交将在下一个非节假日周进行处理。 若要验证请求是否已获得批准，请于下一个适用的星期一测试应用程序访问权限。 如果我们对请求有其他问题，我们将与表单中指定的电子邮件联系。 
+

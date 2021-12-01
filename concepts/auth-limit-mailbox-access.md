@@ -4,12 +4,12 @@ description: 若要将应用程序权限界定为特定 Exchange Online 邮箱�
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: 8649f5736d24327c242f82228c9f9daae6fdc997
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 22a0c5e2bcd257346746c2b4fc72eae9d28ba573
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028742"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241588"
 ---
 # <a name="limiting-application-permissions-to-specific-exchange-online-mailboxes"></a>将应用程序权限限制为特定 Exchange Online 邮箱 
 
@@ -46,7 +46,7 @@ ms.locfileid: "59028742"
     ```
     此命令的输出将会指示该应用是否有权访问 User1 的邮箱。
 
->**注意：在 Microsoft Graph REST API 调用中，应用程序访问策略变更需要 30 分钟才能生效。**
+>**注意：** 对应用程序访问策略的更改可能需要超过 1 小时才能在 Microsoft Graph REST API 调用中生效，即使 `Test-ApplicationAccessPolicy` 显示正面结果。
 
 ## <a name="supported-permissions-and-additional-resources"></a>受支持的权限和其他资源
 

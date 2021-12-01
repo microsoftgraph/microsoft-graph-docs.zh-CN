@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 472e6e6d3a68354e97c3714205ac7f1e1b558261
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 0577680b7cf2bb1a0a98a167aafe49bafdd0b94f
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224984"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241616"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -263,7 +263,10 @@ _AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_ 仅对工�
 | _AppRoleAssignment.ReadWrite.All_ | 管理应用权限授予和应用角色分配 | 允许应用在没有登录用户的情况下管理任何 API（包括 Microsoft Graph）的应用程序权限授予和任何应用的应用程序分配。 | 是 |
 | _DelegatedPermissionGrant.ReadWrite.All_ | 管理所有委托的权限授予 | 允许应用在没有已登录用户的情况下，授予或吊销任何 API（包括 Microsoft Graph）委托的权限。 | 是 |
 
-### <a name="remarks"></a>备注
+### <a name="remarks"></a>说明
+
+> [!CAUTION]
+> 允许授予授权的权限（如 _AppRoleAssignment.ReadWrite.All_）允许应用程序向自身、其他应用程序或任何用户授予其他权限。 同样，允许管理凭据的权限（如 _Application.ReadWrite.All_）允许应用程序充当其他实体，并使用已授予的权限。 授予此类权限时要谨慎。
 
 _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相同的操作，只不过前者只允许对调用应用充当所有者的应用程序和服务主体执行这些操作。所有权由目标 [应用](/graph/api/application-list-owners?view=graph-rest-beta&preserve-view=true)或 [服务主体](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta&preserve-view=true)资源上的`owners`导航属性指示。
 > 注意：使用 _Application.Read Write.Owned by_ 权限调用 `GET /applications` 以列出应用程序将失败，并显示 403。  请改为使用 `GET servicePrincipals/{id}/ownedObjects` 列出调用应用程序充当所有者的应用程序。
@@ -1187,7 +1190,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1343,7 +1346,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1743,6 +1746,10 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 
 ### <a name="remarks"></a>说明
+
+> [!CAUTION]
+> 允许授予授权的权限（如 _RoleManagement.ReadWrite.All_）允许应用程序向自身、其他应用程序或任何用户授予其他权限。 授予此类权限时要谨慎。
+
 使用 _RoleManagement.Read.Directory_ 权限，应用程序可以读取 directoryRoles 和 directoryRoleTemplates。 这包括读取目录角色的成员身份信息。
 
 使用 _RoleManagement.ReadWrite.Directory_ 权限，应用程序可以读取和写入 directoryRoles（directoryRoleTemplates 是只读资源）。 这包括向目录角色添加成员和从目录角色中删除成员。

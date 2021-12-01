@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8f6d10cdcd7dee464b6f8f46af72ff036a193eb4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c240fdbd83c0ab45e74ffdd8779e07555b892894
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009726"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241686"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -626,7 +626,7 @@ Content-type: application/json
 
 ```
 
-### <a name="example-10-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a>示例 10：使用 $search 获取显示名称中包含字母“wa”或“to”（包括返回的对象数）的用户。
+### <a name="example-10-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-ad-including-a-count-of-returned-objects"></a>示例 10：使用 $search 获取显示名称中包含字母"wa"或字母"ad"（包括返回对象计数）的用户
 
 #### <a name="request"></a>请求
 
@@ -637,7 +637,7 @@ Content-type: application/json
   "name": "get_to_count"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$search="displayName:wa" OR "displayName:to"&$orderby=displayName&$count=true
+GET https://graph.microsoft.com/beta/users?$search="displayName:wa" OR "displayName:ad"&$orderby=displayName&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -668,11 +668,11 @@ Content-type: application/json
       "userPrincipalName":"oscarward@contoso.com"
     },
     {
-      "displayName":"contoso1",
-      "mail":"'contoso1@gmail.com",
-      "mailNickname":"contoso1_gmail.com#EXT#",
-      "proxyAddresses":["SMTP:contoso1@gmail.com"],
-      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+      "displayName":"contosoAdmin1",
+      "mail":"'contosoadmin1@gmail.com",
+      "mailNickname":"contosoadmin1_gmail.com#EXT#",
+      "proxyAddresses":["SMTP:contosoadmin1@gmail.com"],
+      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
 }

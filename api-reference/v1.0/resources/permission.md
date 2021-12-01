@@ -4,14 +4,14 @@ ms.date: 09/10/2017
 title: 权限
 ms.localizationpriority: high
 description: Permission 资源提供有关授予 DriveItem 资源共享权限的相关信息。
-ms.prod: ''
+ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 34391b6d4c7cd23d92d2644e3417e90121c7f614
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef2d30f7c239bdca21a3b9d643a91c83c7999b30
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117912"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241420"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 
@@ -19,7 +19,11 @@ ms.locfileid: "59117912"
 
 **Permission** 资源提供为 [DriveItem](driveitem.md) 资源授予的共享权限的相关信息。
 
-共享权限具有许多不同的形式。**权限** 资源通过资源上的 facet 表示这些不同的形式。
+共享权限具有许多不同的形式。
+**权限** 资源通过资源上的不同方面表示这些不同的形式。
+
+OneDrive for Business 和 SharePoint 文档库不返回 **inheritedFrom** 属性。
+**grantedTo** 和 **grantedToIdentities** 将在未来弃用，响应将在相应的属性名称下分别迁移到 **grantedToV2** 和 **grantedToIdentitiesV2**。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -31,6 +35,8 @@ ms.locfileid: "59117912"
     "link",
     "grantedTo",
     "grantedToIdentities",
+    "grantedToV2",
+    "grantedToIdentitiesV2",
     "invitation",
     "inheritedFrom",
     "shareId",
@@ -42,34 +48,39 @@ ms.locfileid: "59117912"
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
+
 {
   "id": "string (identifier)",
   "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
   "grantedToIdentities": [{"@odata.type": "microsoft.graph.identitySet"}],
+  "grantedToV2": {"@odata.type": "microsoft.graph.sharePointIdentitySet"},
+  "grantedToIdentitiesV2": [{"@odata.type": "microsoft.graph.sharePointIdentitySet"}],
   "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
   "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
   "link": {"@odata.type": "microsoft.graph.sharingLink"},
   "roles": ["string"],
   "shareId": "string",
   "expirationDateTime": "string (timestamp)",
-  "hasPassword": "boolean"
+  "hasPassword": "boolean"  
 }
 ```
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型                                      | 说明
-|:--------------|:------------------------------------------|:-----------------
-| id            | String                                    | 在项目的所有权限中，某个权限的唯一标识符。只读。
-| grantedTo     | [IdentitySet](identityset.md)             | 对于用户类型权限，此权限的用户和应用程序的详细信息。只读。
-| grantedToIdentities | Collection([IdentitySet](identityset.md)) | 对于链接类型权限，被授予权限的用户的详细信息。只读。
-| 邀请    | [SharingInvitation][]                     | 此权限的全部关联共享邀请的详细信息。只读。
-| inheritedFrom | [ItemReference](itemreference.md)         | 如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。
-| link          | [SharingLink][]                           | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。
-| roles         | Collection of String                      | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
-| shareId       | String                                    | 可通过 [**shares** API](../api/shares-get.md) 访问此共享项目的唯一令牌。只读。
-| expirationDateTime  | DateTimeOffset              | DateTimeOffset 的格式 yyyy-MM-ddTHH:mm:ssZ 表示权限的过期时间。 DateTime.MinValue 表示此权限没有设置过期时间。 可选。
-| HasPassword         | 布尔值                     | 这表示是否为该权限设置了密码，它只在响应中显示。 可选、只读和仅限 OneDrive 个人版。
+| 属性                         | 类型                                      | 说明 |
+|:---------------------------------|:------------------------------------------|:-----------------
+| id                               | String                                    | 在项目的所有权限中，某个权限的唯一标识符。只读。 |
+| grantedToV2                      | [SharePointIdentitySet][]                 | 对于用户类型权限，此权限的用户和应用程序的详细信息。 只读。 |
+| grantedToIdentitiesV2            | 集合（[SharePointIdentitySet][]） | 对于链接类型权限，被授予权限的用户的详细信息。只读。 |
+| 邀请                       | [SharingInvitation][]                     | 此权限的全部关联共享邀请的详细信息。只读。 |
+| inheritedFrom                    | [ItemReference](itemreference.md)         | 如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。 |
+| link                             | [SharingLink][]                           | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。 |
+| roles                            | Collection of String                      | 权限的类型，例如，`read`。 有关角色的完整列表，请参阅如下内容。 只读。 |
+| shareId                          | String                                    | 可通过 [**shares** API](../api/shares-get.md) 访问此共享项目的唯一令牌。只读。 |
+| expirationDateTime               | DateTimeOffset                            | DateTimeOffset 的格式 yyyy-MM-ddTHH:mm:ssZ 表示权限的过期时间。 DateTime.MinValue 表示此权限没有设置过期时间。 可选。 |
+| HasPassword                      | 布尔值                                   | 指示是否为此权限设置了密码。 此属性只出现在响应中。 可选。 只读。 仅适用于 OneDrive 个人版。 |
+| grantedTo（已弃用）           | [IdentitySet](identityset.md)             | 对于用户类型权限，此权限的用户和应用程序的详细信息。 只读。 |
+| grantedToIdentities（已弃用） | Collection([IdentitySet](identityset.md)) | 对于类型权限，被授予权限的用户的详细信息。 只读。 |
 
 permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
@@ -79,11 +90,12 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
+[SharePointIdentitySet]: sharePointIdentitySet.md
 
 ### <a name="roles-property-values"></a>角色属性值
 
-| 值              | 说明                                                                        |
-|:------------------|:-------------------------------------------------------------------------------|
+| 值           | 说明                                                                        |
+|:----------------|:-------------------------------------------------------------------------------|
 | 阅读            | 提供读取项的元数据和内容的功能。            |
 | 写入           | 提供读取并修改项的元数据和内容的功能。 |
 | 所有者           | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
@@ -149,6 +161,30 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
       }
     }
   ],
+  "grantedToIdentitiesV2": [
+    {
+       "user": {
+        "id": "35fij1974gb8832",
+        "displayName&quot;: &quot;Misty Suarez"
+      },
+      "siteUser": {
+        "id": "1",
+        "displayName": "Misty Suarez",
+        "loginName&quot;: &quot;Misty Suarez"
+      }
+    },
+    {
+       "user": {
+        "id": "9397721fh4hgh73",
+        "displayName&quot;: &quot;Judith Clemons"
+      },
+      "siteUser": {
+        "id": "2",
+        "displayName": "Judith Clemons",
+        "loginName&quot;: &quot;Judith Clemons"
+      }
+    }
+  ],
   "roles": ["write"],
   "link": {
     "webUrl": "https://contoso.sharepoint.com/:w:/t/design/a577ghg9hgh737613bmbjf839026561fmzhsr85ng9f3hjck2t5s",
@@ -190,7 +226,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
   "id": "1",
   "roles": ["write"],
   "invitation": {
-    "email": "jd@gmail.com",
+    "email": "jd@contoso.com",
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
@@ -208,11 +244,22 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
   "grantedTo": {
     "user": {
       "id": "5D33DD65C6932946",
-      "displayName&quot;: &quot;John Doe"
+      "displayName&quot;: &quot;Robin Danielsen"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "5D33DD65C6932946",
+      "displayName&quot;: &quot;Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName&quot;: &quot;Robin Danielsen"
     }
   },
   "invitation": {
-    "email": "jd@outlook.com",
+    "email": "rd@contoso.com",
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
@@ -231,11 +278,6 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 | [删除](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 | [添加用户至共享链接](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
-
-## <a name="remarks"></a>说明
-
-OneDrive for Business 和 SharePoint 文档库不返回 **inheritedFrom** 属性。
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -245,4 +287,3 @@ OneDrive for Business 和 SharePoint 文档库不返回 **inheritedFrom** 属性
   "section": "documentation",
   "tocPath": "Resources/Permission"
 } -->
-
