@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9ce048434df2e62fa77792ad9252742396e9d890
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0d4031852a0656509c392caaf79f2be6c5e27424
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994418"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266304"
 ---
 # <a name="list-device-transitive-groups"></a>List device transitive groups
 
@@ -20,7 +20,7 @@ ms.locfileid: "60994418"
 
 获取设备是其中一个成员的组。 此 API 请求是可传递的，并且还将返回设备是嵌套成员的所有组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -155,18 +155,17 @@ ConsistencyLevel: eventual
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 294
+```
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取包含字母"Video"的显示名称（包括返回的对象计数）的成员资格
+
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取包含字母"Video"（包括返回对象计数）的显示名称的成员资格
 
 #### <a name="request"></a>请求
 

@@ -2,15 +2,15 @@
 title: 获取用户的 transitiveReports
 description: 获取用户的可传递报告数。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5d04b1240c54b186a2e5f5cfb77f651e032f1eda
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 477adec71ced518708a6b976972a93b480447783
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316606"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266185"
 ---
 # <a name="get-transitivereports-for-a-user"></a>获取用户的 transitiveReports
 
@@ -20,7 +20,7 @@ ms.locfileid: "53316606"
 
 检索用户的可传递报告计数。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,12 +40,12 @@ GET /users/{id}/transitiveReports/$count
 
 此方法仅支持 `$filter` **accountEnabled 属性的查询** 参数。 有关使用查询参数的信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| ConsistencyLevel | 最终。 必填。 |
+| ConsistencyLevel | 最终。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -98,10 +98,10 @@ GET https://graph.microsoft.com/beta/users/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
 ```
 
-5 
-
+`5`
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

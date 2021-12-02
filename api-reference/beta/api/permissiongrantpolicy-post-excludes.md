@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: ddf5676980d18cc939a421bcf34a57b52b2941ba
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 53dfd4da50f178adf5f897aa27aa00d49c5caff8
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020591"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266381"
 ---
 # <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>在 permissionGrantPolicy 的 excludes 集合中创建 permissionGrantConditionSet
 
@@ -20,7 +20,7 @@ ms.locfileid: "61020591"
 
 添加权限授予策略中排除 *权限* 授予事件的条件。 为此，将 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md)添加到 [permissionGrantPolicy](../resources/permissionGrantPolicy.md)的 **excludes** 集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -124,6 +124,7 @@ Content-type: application/json
   "clientApplicationIds": ["all"],
   "clientApplicationTenantIds": ["all"],
   "clientApplicationPublisherIds": ["all"],
-  "clientApplicationsFromVerifiedPublisherOnly": false
+  "clientApplicationsFromVerifiedPublisherOnly": false,
+  "certifiedClientApplicationsOnly": false
 }
 ```

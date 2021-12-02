@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 10aaad31c10df747b1571ed05dba6539cf0c1ce9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c3a50916ae47dfdad2df5cf8d5282e605941ff70
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014180"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266129"
 ---
 # <a name="list-serviceprincipals"></a>List servicePrincipals
 
@@ -134,6 +134,8 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$count`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
+
 <!-- {
   "blockType": "ignored",
   "name": "get_count_only"
@@ -149,9 +151,7 @@ ConsistencyLevel: eventual
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -165,6 +165,8 @@ Content-type: text/plain
 #### <a name="request"></a>请求
 
 下面展示了示例请求。 此请求需要将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串，因为请求同时具有 `$orderBy` 和 `$filter` 查询参数。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -234,6 +236,8 @@ Content-type: application/json
 #### <a name="request"></a>请求
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$search` 和 `$count=true` 查询字符串。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

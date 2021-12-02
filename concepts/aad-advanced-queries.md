@@ -4,12 +4,12 @@ description: Azure AD 目录对象支持高级查询功能以高效访问数据�
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 2b9c95961be57152c6d3bd885351b52c48b7f7a8
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 95e7b4650bdca66f824849033c7583ff9eaa9d48
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130024"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266291"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Azure AD 目录对象的高级查询功能
 
@@ -22,10 +22,9 @@ Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了添
 + 将 `$filter` 查询参数与 `eq` 运算符一起使用。 默认情况下，此请求将起作用，即请求不需要高级查询参数。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_users_enabled"
 } -->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 ```
@@ -33,10 +32,9 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 + 将 `$filter` 查询参数与 `ne` 运算符一起使用。 默认情况下不支持此请求，因为仅在高级查询中支持 `ne` 运算符。 因此，必须将 **ConsistencyLevel** 标头设置为 `eventual` *并* 使用 `$count=true` 查询字符串。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_users_not_enabled"
 } -->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
@@ -44,15 +42,15 @@ ConsistencyLevel: eventual
 
 仅以下Azure AD目录对象子集及其关系支持这些高级查询功能：
 
-| API/对象                                                                    | 关系                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [管理单元](/graph/api/resources/administrativeunit)           | <li>[members](/graph/api/administrativeunit-list-members)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [应用](/graph/api/resources/application)                          | <li>[所有者](/graph/api/application-list-owners)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [联系人](/graph/api/resources/orgContact)                                  | <li>[memberOf](/graph/api/orgcontact-list-memberof)<li> [transitiveMemberOf](/graph/api/orgcontact-list-transitiveMemberOf)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [Devices](/graph/api/resources/device)                                    | <li>[memberOf](/graph/api/device-list-memberof) <li> [transitiveMemberOf](/graph/api/device-list-transitivememberof) <li> [registeredUsers](/graph/api/device-list-registeredusers) <li> [registeredOwners](/graph/api/device-list-registeredowners)                                                                                                                                                                                                                                                                                                                                                             |
-| [组](/graph/api/resources/group)                                      | <li>[members](/graph/api/group-list-members) <li> [transitiveMembers](/graph/api/group-list-transitivemembers) <li> [memberOf](/graph/api/group-list-memberof) <li> [transitiveMemberOf](/graph/api/group-list-transitivememberof) <li> [所有者](/graph/api/group-list-owners) <li> [appRoleAssignments](/graph/api/group-list-approleassignments)                                                                                                                                                                                                                                                                       |
-| [服务主体](/graph/api/resources/serviceprincipal)               | <li>[memberOf](/graph/api/serviceprincipal-list-memberof), <li>[transitiveMemberOf](/graph/api/serviceprincipal-list-transitivememberof) <li> [appRoleAssignments](/graph/api/serviceprincipal-list-approleassignments) <li> [appRoleAssignmentsTo](/graph/api/serviceprincipal-list-approleassignedto) <li> [oAuth2PermissionGrant](/graph/api/serviceprincipal-list-oauth2permissiongrants)                                                                                                                                                                                                                 |
-| [用户](/graph/api/resources/user)                                         | <li>[memberOf](/graph/api/user-list-memberof) <li> [transitiveMemberOf](/graph/api/user-list-transitivememberof)<li> [ownedObjects](/graph/api/user-list-ownedobjects) <li> [registeredDevices](/graph/api/user-list-registereddevices) <li> [ownedDevices](/graph/api/user-list-owneddevices) <li> [transitiveManagers](/graph/api/user-list-manager) <li> [directReports](/graph/api/user-list-directreports) <li> [transitiveReports](/graph/api/user-get-transitivereports) <li> [appRoleAssignments](/graph/api/user-list-approleassignments) <li> [oAuth2PermissionGrant](/graph/api/user-list-oauth2permissiongrants) |
+| Object                                                         | 关系                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [管理单元](/graph/api/resources/administrativeunit) | <li>[members](/graph/api/administrativeunit-list-members)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [应用程序](/graph/api/resources/application)                | <li>[所有者](/graph/api/application-list-owners)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [设备](/graph/api/resources/device)                          | <li>[memberOf](/graph/api/device-list-memberof) <li>[transitiveMemberOf](/graph/api/device-list-transitivememberof) <li>[registeredUsers](/graph/api/device-list-registeredusers) <li>[registeredOwners](/graph/api/device-list-registeredowners)                                                                                                                                                                                                                                                                                                                                                                   |
+| [组](/graph/api/resources/group)                            | <li>[members](/graph/api/group-list-members) <li>[transitiveMembers](/graph/api/group-list-transitivemembers) <li>[memberOf](/graph/api/group-list-memberof) <li>[transitiveMemberOf](/graph/api/group-list-transitivememberof) <li>[所有者](/graph/api/group-list-owners) <li>[appRoleAssignments](/graph/api/group-list-approleassignments)                                                                                                                                                                                                                                                                       |
+| [组织联系人](/graph/api/resources/orgContact)                     | <li>[memberOf](/graph/api/orgcontact-list-memberof) <li>[transitiveMemberOf](/graph/api/orgcontact-list-transitiveMemberOf)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [服务主体](/graph/api/resources/serviceprincipal)     | <li>[memberOf](/graph/api/serviceprincipal-list-memberof) <li>[transitiveMemberOf](/graph/api/serviceprincipal-list-transitivememberof) <li>[appRoleAssignments](/graph/api/serviceprincipal-list-approleassignments) <li>[appRoleAssignmentsTo](/graph/api/serviceprincipal-list-approleassignedto) <li>[oAuth2PermissionGrant](/graph/api/serviceprincipal-list-oauth2permissiongrants)                                                                                                                                                                                                                           |
+| [用户](/graph/api/resources/user)                              | <li>[memberOf](/graph/api/user-list-memberof) <li>[transitiveMemberOf](/graph/api/user-list-transitivememberof)<li>[ownedObjects](/graph/api/user-list-ownedobjects) <li>[registeredDevices](/graph/api/user-list-registereddevices) <li>[ownedDevices](/graph/api/user-list-owneddevices) <li>[transitiveManagers](/graph/api/user-list-manager) <li>[directReports](/graph/api/user-list-directreports) <li>[transitiveReports](/graph/api/user-get-transitivereports) <li>[appRoleAssignments](/graph/api/user-list-approleassignments) <li>[oAuth2PermissionGrant](/graph/api/user-list-oauth2permissiongrants) |
 
 下表列出了仅在高级查询中支持的目录对象的查询方案：
 
@@ -107,10 +105,19 @@ ConsistencyLevel: eventual
 
 仅支持使用高级查询参数对目录对象进行计数。 如果未指定 `ConsistencyLevel=eventual` 标头，则在使用 `$count` URL 段时，请求将返回错误或以无提示方式忽略 `$count` 查询参数(`?$count=true`)。
 
+<!-- {
+  "blockType": "request",
+  "name": "get_users_count_bad"
+} -->
 ```http
 https://graph.microsoft.com/v1.0/users/$count
 ```
 
+<!-- {
+  "blockType": "response",
+  "@odata.type": "odata.error",
+  "expectError": true
+} -->
 ```json
 {
     "error": {
@@ -127,6 +134,10 @@ https://graph.microsoft.com/v1.0/users/$count
 
 对于目录对象， `$search` 仅适用于高级查询。 如果未指定 **ConsistencyLevel** 标头，则请求将返回错误。
 
+<!-- {
+  "blockType": "request",
+  "name": "get_applications_search_displayName"
+} -->
 ```http
 https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 ```
@@ -147,6 +158,10 @@ https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 
 如果 URL 中的属性或查询参数仅在高级查询中受支持，但缺少 **ConsistencyLevel** 标头或 `$count=true` 查询字符串，则请求将返回错误。
 
+<!-- {
+  "blockType": "request",
+  "name": "get_users_filer_endsWith"
+} -->
 ```http
 https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 ```
@@ -167,8 +182,12 @@ https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 
 如果尚未为某个属性编制索引以支持查询参数，即使指定了高级查询参数，请求也将返回错误。
 
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_unindexed_bad"
+} -->
 ```http
-https://graph.microsoft.com/v1.0/users?$filter=id ge '398164b1-5196-49dd-ada2-364b49f99b27'&$count=true
+https://graph.microsoft.com/beta/groups?$filter=createdDateTime ge 2021-11-01&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -186,7 +205,9 @@ ConsistencyLevel: eventual
 }
 ```
 
-但是，值得注意的是请求中指定的查询参数可能会自行失败。 不支持的查询参数以及不支持的查询参数组合的情况就是如此。 在这些情况下，应检查请求返回的数据，以确定指定的查询参数是否具有所需的效果。 例如，在下面的示例中，即使查询成功， `@odata.count` 参数也缺失。
+但是，值得注意的是请求中指定的查询参数可能会自行失败。
+不支持的查询参数以及不支持的查询参数组合的情况就是如此。
+在这些情况下，应检查请求返回的数据，以确定指定的查询参数是否具有所需的效果。 例如，在下面的示例中，即使查询成功， `@odata.count` 参数也缺失。
 
 ```http
 https://graph.microsoft.com/v1.0/users?$count=true
@@ -212,5 +233,5 @@ Content-type: application/json
 
 + [使用查询参数自定义响应](/graph/query-parameters)
 + [查询参数限制](known-issues.md#some-limitations-apply-to-query-parameters)
-+ [使用$search查询参数匹配搜索条件](/graph/search-query-parameter)
++ [使用$search查询参数匹配搜索条件](/graph/search-query-parameter#using-search-on-directory-object-collections)
 + [使用 .NET SDK 探索 Azure AD Directory 对象的高级查询功能](https://github.com/microsoftgraph/dotnet-aad-query-sample/)

@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2b1e1f596295a7dba1668c07ee05ee5b111f7fd3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6de7e5f77e7798d21de9ec4e2ed56503c39bbfc3
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016413"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266360"
 ---
 # <a name="list-device-groups"></a>列出设备组
 
@@ -152,11 +152,11 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+394
 ```
 
-`394`
-
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取包含字母"Video"的显示名称（包括返回的对象计数）的成员资格
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取包含字母"Video"（包括返回对象计数）的显示名称的成员资格
 
 #### <a name="request"></a>请求
 
@@ -200,7 +200,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 强制转换$filter获取以字母"A"开头的 显示名称 的成员资格，其中包括返回的对象数
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 强制转换$filter获取以字母"A"开头显示名称（包括返回的对象计数）的组成员身份
 
 #### <a name="request"></a>请求
 

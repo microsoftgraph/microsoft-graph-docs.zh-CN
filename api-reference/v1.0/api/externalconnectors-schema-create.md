@@ -5,21 +5,19 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3417dfbf59db0d2488c365af5b880b4956d1240a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6e32cf8ac7e11d6cefea269c4e85ef95ca1b2db4
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046125"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266255"
 ---
 # <a name="create-schema"></a>创建架构
 命名空间：microsoft.graph.externalConnectors
 
-
-
 创建新的 [架构](../resources/externalconnectors-schema.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -39,7 +37,7 @@ POST /external/connections/{id}/schema
 ```
 在请求正文中，提供架构对象的 JSON [表示](../resources/externalconnectors-schema.md) 形式。
 
-注册自定义项架构时， `schema` 对象必须将 `baseType` 属性设置为 `microsoft.graph.externalItem` ，并且必须包含 `properties` 属性。 `properties`对象必须至少包含一个属性，最多包含 64 个属性。
+注册自定义项架构时，**架构** 对象必须将 **baseType** 属性设置为 ， `microsoft.graph.externalItem` **并且必须** 包含 **properties** 属性。 **properties** 对象 **必须至少** 包含一个属性，最多包含 128 个属性。
 
 ## <a name="response"></a>响应
 

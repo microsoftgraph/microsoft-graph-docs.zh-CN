@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 90bbf50e78d1b0a6f27d0224da4309795b70ec5e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d641f76fc94f72d6b673bd265a919089486dfe2d
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985758"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266073"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>List excludes collection of permissionGrantPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "60985758"
 
 检索在[permissionGrantPolicy](../resources/permissiongrantpolicy.md)中排除的条件集。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -59,7 +59,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 ### <a name="request"></a>请求
 
-下面是请求检索内置权限授予策略的排除条件集的示例 `microsoft-application-admin` 。 此权限授予策略包括所有委派权限，以及除 Microsoft 应用程序权限之外的所有应用程序权限Graph应用程序权限和 Azure AD Graph。
+下面是请求检索内置权限授予策略的排除条件集的示例 `microsoft-application-admin` 。 此权限授予策略包括所有委派权限，以及除 Microsoft 应用程序权限之外的所有应用程序权限Graph应用程序权限以及 Azure Active Directory Graph。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -122,7 +122,8 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false,
+      "certifiedClientApplicationsOnly": false
     },
     {
       "id": "2a1fbb36-9d9a-42d8-8804-de2aa45aca80",
@@ -133,7 +134,8 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false,
+      "certifiedClientApplicationsOnly": false
     }
   ]
 }

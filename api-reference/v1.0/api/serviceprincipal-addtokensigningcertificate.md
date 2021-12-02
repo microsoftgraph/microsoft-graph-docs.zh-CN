@@ -1,0 +1,122 @@
+---
+title: servicePrincipal：addTokenSigningCertificate
+description: 将签名证书添加到 servicePrincipal。
+ms.localizationpriority: medium
+author: alamaral
+ms.prod: applications
+doc_type: apiPageType
+ms.openlocfilehash: e8e7faffc0580391a27dabe8e76c98841e3fa7cb
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266396"
+---
+# <a name="serviceprincipal-addtokensigningcertificate"></a>servicePrincipal：addTokenSigningCertificate
+
+命名空间：microsoft.graph
+
+创建自签名签名证书并返回 [selfSignedCertificate](../resources/selfsignedcertificate.md) 对象，该对象是生成的证书的公共部分。 
+
+自签名签名证书由添加到 [servicePrincipal](../resources/serviceprincipal.md)中的以下对象组成： 
++ [具有下列对象的 keyCredentials](../resources/keycredential.md)对象：
+    + 用法设置为 的私钥对象 `Sign` 。
+    + 用法设置为 **的公钥对象** `Verify` 。
++ [passwordCredentials](../resources/passwordcredential.md)对象。 
+
+
+所有对象具有相同的 **customKeyIdentifier 值**。
+
+**passwordCredential** 用于打开 PFX 文件 (私钥) 。 它和关联的私钥对象具有相同的 **keyId 值**。 创建期间通过 **displayName** 属性设置时，无法更新证书的主题。 **startDateTime** 设置为使用 操作创建证书的同一时间。 **endDateTime** 可在证书创建后最多三年。
+
+## <a name="permissions"></a>权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All |
+|委派（个人 Microsoft 帐户） | 无。    |
+|应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
+
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /servicePrincipals/{id}/addTokenSigningCertificate
+```
+
+## <a name="request-body"></a>请求正文
+
+在请求正文中，提供以下必需属性。
+
+| 属性     | 类型   |说明|
+|:---------------|:--------|:----------|
+| displayName | string | 密钥的友好名称。  它必须以 `CN=` 开始。|
+| endDateTime | DateTimeOffset |凭据过期的日期和时间。 从证书创建之日起，最多 3 年。 如果未提供，则默认值为自创建时起三年。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应正文中返回 响应代码和新 `200 OK` [selfSignedCertificate](../resources/selfsignedcertificate.md) 对象。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+
+<!-- {
+  "blockType": "request",
+  "name": "serviceprincipal_addtokensigningcertificate"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/servicePrincipals/004375c5-6e2e-4dec-95e3-626838cb9f80/addTokenSigningCertificate
+Content-type: application/json
+
+{
+    "displayName":"CN=customDisplayName",
+    "endDateTime":"2024-01-25T00:00:00Z"
+}
+```
+
+
+### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.selfSignedCertificate"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.selfSignedCertificate",
+  "customKeyIdentifier": "2iD8ppbE+D6Kmu1ZvjM2jtQh88E=",
+  "displayName": "CN=customDisplayName",
+  "endDateTime": "2024-01-25T00:00:00Z",
+  "key": "MIICuDCCAaCgAwIBAgIIYXJsNtL4oUMwDQYJKoZIhvcNAQEL...StP8s/w==",
+  "keyId": "93bc223f-7235-4b9c-beea-d66847531c49",
+  "startDateTime": "2021-05-05T18:38:51.8100763Z",
+  "thumbprint": "DA20FCA696C4F83E8A9AED59BE33368ED421F3C1",
+  "type": "AsymmetricX509Cert",
+  "usage": "Verify"
+}
+```
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2021-01-15 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "servicePrincipal: selfSignedCertificate",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+} -->
+

@@ -904,6 +904,8 @@ items:
                     href: api/serviceprincipal-addkey.md
                   - name: 删除键
                     href: api/serviceprincipal-removekey.md
+                  - name: 添加令牌签名证书
+                    href: api/serviceprincipal-addtokensigningcertificate.md
               - name: 委派权限授予
                 items:
                   - name: 列表
@@ -6252,7 +6254,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 创建计划

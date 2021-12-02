@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b855cca20777236d5bf8aeaf2d94e4d9a20ce48b
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 71b8cf07e38f9c6cfd7598d760617081c63f23ab
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241644"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266234"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -203,6 +203,8 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$count`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
+
 <!-- {
   "blockType": "ignored",
   "name": "get_count_only"
@@ -231,6 +233,8 @@ Content-type: text/plain
 #### <a name="request"></a>请求
 
 下面展示了示例请求。 此请求需要将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串，因为请求同时具有 `$orderBy` 和 `$filter` 查询参数。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 
 <!-- {
   "blockType": "ignored",
@@ -279,6 +283,7 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求需要将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串，因为请求同时具有 `$orderBy` 和 `$filter` 查询参数，并且还使用 `endsWith` 运算符。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -350,6 +355,7 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$search`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -419,6 +425,8 @@ Content-type: application/json
 #### <a name="request"></a>请求
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$search`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 
 <!-- {
   "blockType": "request",

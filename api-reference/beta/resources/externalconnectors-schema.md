@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 8dbf6a4df47f9afb3e24effbf9d90759dc87d677
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: cb3d89c9ab3903519376e4fdf0dd55dec8eba746
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729204"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266005"
 ---
 # <a name="schema-resource-type"></a>架构资源类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "60729204"
 |:----------------------------------------------------------|:------------------------------|:--|
 | [创建架构](../api/externalconnectors-externalconnection-post-schema.md) | 无 *或*[架构](externalconnectors-schema.md) | 注册连接架构。 |
 | [获取架构](../api/externalconnectors-schema-get.md)                        | [schema](externalconnectors-schema.md)           | 读取架构对象的属性。 |
+| [更新架构](../api/externalconnectors-schema-update.md) | 无 *或*[架构](externalconnectors-schema.md) | 更新架构对象的属性。 |
 
 ## <a name="properties"></a>属性
 
@@ -62,6 +63,7 @@ ms.locfileid: "60729204"
   ]
 }
 ```
+ 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

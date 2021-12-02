@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 372e91d2f1f94a937ab9f9bff6433add772d9706
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 95a9b171fc77b3af657cb8a256c9e9f0683cc66a
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985737"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266206"
 ---
 # <a name="list-includes-collection-of-permissiongrantpolicy"></a>列表包括 permissionGrantPolicy 集合
 
@@ -20,7 +20,7 @@ ms.locfileid: "60985737"
 
 检索包含在[permissionGrantPolicy 中的条件集](../resources/permissiongrantpolicy.md)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -122,7 +122,8 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false,
+      "certifiedClientApplicationsOnly": false
     },
     {
       "id": "60461179-740e-4d8b-9e00-1456a338c44b",
@@ -133,7 +134,8 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false,
+      "certifiedClientApplicationsOnly": false
     }
   ]
 }

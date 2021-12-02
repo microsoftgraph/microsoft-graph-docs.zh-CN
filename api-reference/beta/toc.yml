@@ -521,7 +521,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言和区域 () '
+          - name: '预览版的首选语言 (区域) '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -11172,7 +11172,7 @@ items:
                   - name: 角色分配
                     href: resources/unifiedroleassignment.md
                     items:
-                      - name: 列表角色分配
+                      - name: 列出角色分配
                         href: api/rbacapplication-list-roleassignments.md
                       - name: 创建角色分配
                         href: api/rbacapplication-post-roleassignments.md
@@ -12161,7 +12161,7 @@ items:
                         href: api/accessreviewhistorydefinition-post.md
                       - name: 生成下载 URI
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
-              - name: '已弃 (访问) '
+              - name: '已弃 (的访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -13652,6 +13652,8 @@ items:
                     href: api/externalconnectors-externalconnection-post-schema.md
                   - name: 获取架构
                     href: api/externalconnectors-schema-get.md
+                  - name: 更新架构
+                    href: api/externalconnectors-schema-update.md
               - name: 外部项
                 items:
                   - name: 外部项

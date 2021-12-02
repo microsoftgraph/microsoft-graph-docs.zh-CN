@@ -1,24 +1,24 @@
 ---
-title: 创建架构
-description: 为连接创建Microsoft 搜索架构。
+title: 更新架构
+description: 更新 externalConnection 架构的属性。
 ms.localizationpriority: medium
-author: snlraju-msft
+author: mecampos
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 09709899718d2823026b43dc67bc61065819aff5
+ms.openlocfilehash: bd0aa8d8d37c9cf7652853b530f91627f2286974
 ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266150"
+ms.locfileid: "61266433"
 ---
-# <a name="create-schema"></a>创建架构
+# <a name="update-schema"></a>更新架构
 
 命名空间：microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为连接创建Microsoft 搜索[架构](../resources/externalconnectors-externalconnection.md)。
+更新[externalConnection](../resources/externalconnectors-externalconnection.md)[架构](../resources/externalconnectors-schema.md)的属性。
 
 ## <a name="permissions"></a>Permissions
 
@@ -35,7 +35,7 @@ ms.locfileid: "61266150"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /external/connections/{id}/schema
+PATCH /external/connections/{connectionId}/schema
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -58,21 +58,17 @@ POST /external/connections/{id}/schema
 
 ## <a name="examples"></a>示例
 
-### <a name="example-register-custom-schema-asynchronously"></a>示例：异步注册自定义架构
-
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_schema_from_connection_async",
-  "@odata.type": "microsoft.graph.externalConnectors.schema"
+  "name": "update_schema"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/external/connections/contosohr/schema
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr/schema
 Content-type: application/json
 
 {
@@ -103,45 +99,28 @@ Content-type: application/json
 }
 ```
 
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-async-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-schema-from-connection-async-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-async-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-schema-from-connection-async-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 <!-- markdownlint-disable MD024 -->
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 <!-- markdownlint-enable MD024 -->
 
 下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
 } -->
 
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/external/connections/contosohr/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
+
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create externalItem",
+  "description": "Get schema",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

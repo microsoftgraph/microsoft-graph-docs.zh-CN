@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 35640354ea46689544f872c567791216301dca3f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6486954d5f44453c687d02d75256f48d57c7c3bc
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990953"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266157"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -110,13 +110,25 @@ Content-type: application/json
     "identifierUris": [],
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "disabledByMicrosoftStatus": null,
-    "displayName": "Display name",
+    "displayName": "contoso",
     "isDeviceOnlyAuthSupported": null,
     "groupMembershipClaims": null,
     "optionalClaims": null,
     "addIns": [],
-    "publisherDomain": "contoso.onmicrosoft.com",
+    "publisherDomain": "contoso.com",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+    },
+    "certification": {
+           "isPublisherAttested": true,
+           "isCertifiedByMicrosoft": true,
+           "lastCertificationDateTime": "2021-05-11T23:26:20Z",
+           "certificationExpirationDateTime": "2022-05-11T23:26:20Z",
+           "certificationDetailsUrl": "https://docs.microsoft.com/microsoft-365-app-certification/forward/azure/631a96bc-a705-4eda-9f99-fdaf9f54f6a2"
+    },
     "tags": [],
     "tokenEncryptionKeyId": null,
     "api": {
@@ -170,6 +182,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
-

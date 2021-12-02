@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 223329260132ff72e66ad99b76aeb8d4b5a57ddf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 64ff4c1bab7d0e86e6e518698e312e1be489072b
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005391"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266026"
 ---
 # <a name="list-devices"></a>列出设备
 
@@ -20,7 +20,7 @@ ms.locfileid: "61005391"
 
 检索目录中的注册设备列表。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -131,6 +131,8 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$count`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+>**注意：** 和 `$count` `$search` 查询参数当前在 B2C Azure AD不可用。
+
 <!-- {
   "blockType": "ignored",
   "name": "get_count_only"
@@ -146,16 +148,16 @@ ConsistencyLevel: eventual
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 294
+```
+
+
 
 ### <a name="example-3-list-all-devices-and-return-only-their-id-and-extensionattributes-properties"></a>示例 3：列出所有设备并仅返回其 id 和 extensionAttributes 属性
 
@@ -228,12 +230,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 $filter 和 $top 获取一个设备，显示名称以"a"开头（包括返回的对象计数）
+### <a name="example-4-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 $filter 和 $top，获取一显示名称以"a"开头的设备，其中包括返回的对象计数
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。 此请求需要将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串，因为请求同时具有 `$orderBy` 和 `$filter` 查询参数。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+>**注意：** 和 `$count` `$search` 查询参数当前在 B2C Azure AD不可用。
 <!-- {
   "blockType": "ignored",
   "name": "get_a_count"
@@ -292,6 +295,7 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$search` 和 `$count=true` 查询字符串。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+>**注意：** 和 `$count` `$search` 查询参数当前在 B2C Azure AD不可用。
 
 <!-- {
   "blockType": "ignored",
@@ -341,6 +345,7 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求需要 **将 ConsistencyLevel** 标头设置为 且查询字符串，因为 `eventual` `$count=true` extensionAttributes 属性 `$filter` 仅支持高级查询参数。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+>**注意：** 和 `$count` `$search` 查询参数当前在 B2C Azure AD不可用。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

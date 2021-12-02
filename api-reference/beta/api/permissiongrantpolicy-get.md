@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9d8209bfc002f74749ee688eca69f0f701bed39e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: dc26fecfb85adb7801f55665794f47f9643d8a57
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985772"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266122"
 ---
 # <a name="get-permissiongrantpolicy"></a>获取 permissionGrantPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "60985772"
 
 检索单个 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。 策略有两个条件集，一个条件集与为此租户中注册的客户端应用分类的委派权限匹配，另一个条件集与为来自已验证发布者 (的应用分类的委派权限匹配，而不管该应用程序在 `includes` `low`) 中注册 `low` 哪个租户。
+下面展示了示例响应。 该策略有两个条件集，一个条件集与为此租户中注册的客户端应用分类的委派权限匹配，另一个条件集与为来自已验证发布者 (的应用分类的委派权限相匹配) 无论应用程序在) 中注册哪个 `includes` `low` `low` 租户。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -126,7 +126,8 @@ Content-type: application/json
             "clientApplicationIds": [ "all" ],
             "clientApplicationTenantIds": [ "11e37ee2-48fe-42e0-aab9-07d0bb165353" ],
             "clientApplicationPublisherIds": [ "all" ],
-            "clientApplicationsFromVerifiedPublisherOnly": false
+            "clientApplicationsFromVerifiedPublisherOnly": false,
+            "certifiedClientApplicationsOnly": false
         },
         {
             "id": "8ce99f96-730c-4ebd-8397-07ee65942b97",
@@ -137,7 +138,8 @@ Content-type: application/json
             "clientApplicationIds": [ "all" ],
             "clientApplicationTenantIds": [ "all" ],
             "clientApplicationPublisherIds": [ "all" ],
-            "clientApplicationsFromVerifiedPublisherOnly": true
+            "clientApplicationsFromVerifiedPublisherOnly": true,
+            "certifiedClientApplicationsOnly": false
         }
     ],
     "excludes": []

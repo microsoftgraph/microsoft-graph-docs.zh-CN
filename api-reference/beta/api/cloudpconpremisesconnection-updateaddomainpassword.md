@@ -1,23 +1,23 @@
 ---
 title: cloudPcOnPremisesConnection：updateAdDomainPassword
-description: 更新 AD 域密码，以成功使用 onPremisesConnection。
+description: 更新 Active Directory 域密码，成功进行本地连接。 当 onPremisesConnection 的类型为 hybridAzureADJoin 时，支持此 API。
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 1f18f47e4e69810b62941e0d2cd6f8d8a9a26b6e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3a2f518821eb7825146450dc6aaf2da00e39dd36
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032667"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266311"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection：updateAdDomainPassword
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [onPremisesConnection](../resources/cloudpconpremisesconnection.md)的 Active Directory 域密码。
+更新 [onPremisesConnection](../resources/cloudpconpremisesconnection.md)的 Active Directory 域密码。 当 **onPremisesConnection** 的类型为 时，支持此 `hybridAzureADJoin` API。
 
 
 ## <a name="permissions"></a>Permissions
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true

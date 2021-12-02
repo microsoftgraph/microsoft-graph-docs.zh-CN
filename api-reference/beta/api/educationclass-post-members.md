@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f0dfe0599a2df4d2f387d2b0d97beae29c4954ec
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ede658dcd9e2ddc80c4550e88e4d16a7eaab89d4
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028657"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266024"
 ---
 # <a name="add-a-student"></a>添加学生
 
@@ -18,7 +18,7 @@ ms.locfileid: "61028657"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向课程添加成员。
+将 [educationUser](../resources/educationuser.md) 成员添加到 [educationClass](../resources/educationclass.md)。
 
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +48,7 @@ POST /education/classes/{id}/members/$ref
 如果成功，此方法会在响应正文中返回 `204 No Content` 响应代码和 [educationClass](../resources/educationclass.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -87,7 +87,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
 

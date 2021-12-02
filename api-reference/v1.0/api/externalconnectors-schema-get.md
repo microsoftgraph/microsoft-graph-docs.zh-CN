@@ -5,21 +5,19 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d01c2ad63df7a2e3f30b3b8724bf5bd19565a0a1
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4d6b334dbe9911a12ef92e52e7a18b68be6dabff
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694378"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266220"
 ---
 # <a name="get-schema"></a>获取架构
 命名空间：microsoft.graph.externalConnectors
 
-
-
 读取架构对象的属性 [和](../resources/externalconnectors-schema.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -39,9 +37,10 @@ GET /external/connections/{connectionsId}/schema
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+此方法不支持 [使用 OData 查询参数](/graph/query-parameters) 自定义响应。
+
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 7a4483c4146eb92c970ef149b9743dab763300e2
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: eafe2ebbccdeef90e127871d7da4377f771c099d
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224911"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61265639"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -69,7 +69,7 @@ ms.locfileid: "61224911"
 | addIns | [addIn](addin.md) 集合| 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers)。 这将使 Office 365 之类的服务在用户正在处理的文档上下文中调用应用程序。 |
 | api | [apiApplication](apiapplication.md) | 指定实现 Web API 的应用程序的设置。 |
 | appId | String | Azure AD 分配给应用程序的唯一标识符。不可为 Null。只读。 |
-| applicationTemplateId | String | 应用程序模板的唯一标识符。 |
+| applicationTemplateId | String | 应用程序模板的唯一标识符。 支持 `$filter`（`eq`、`not`、`ne`）。|
 | appRoles | [appRole](approle.md) 集合 | 分配给应用程序的角色的集合。 使用[应用角色分配](approleassignment.md)，可将这些角色分配给与其他应用程序关联的用户、组或服务主体。 不可为空。 |
 | createdDateTime | DateTimeOffset | 注册应用程序的日期和时间。DateTimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 <br><br> 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in` 和 `null` 值上的 `eq`) 和 `$orderBy`。 |
 | deletedDateTime | DateTimeOffset | 删除应用程序的日期和时间。DateTimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 |

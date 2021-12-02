@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f9ed276fde02c49fc3efec9d6215a56a8a391ec2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 098a726986b5d85a2531f545addb841c8f6730a8
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976622"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266332"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -146,9 +146,9 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`394`
+394
+```
 
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>示例 3：使用 OData 强制转换以仅获取组成员身份的计数
 
@@ -175,9 +175,9 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`394`
+394
+```
 
 ### <a name="example-4-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 4：使用 OData 强制转换和 $search 来获取显示名称中包含字母“Video”（包括返回的对象数）的成员资格
 

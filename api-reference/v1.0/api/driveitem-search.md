@@ -6,21 +6,20 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: 在项目层次结构中搜索与查询匹配的项目。
 doc_type: apiPageType
-ms.openlocfilehash: 88b75446b0d88e05db6c4ba9d586067d164207c5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e09ee38a2e8cd56195d03bac01db5f87a5eba3ae
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053649"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266269"
 ---
-# <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
+# <a name="search-for-driveitems-within-a-drive"></a>在驱动器内搜索 DriveItems
 
 命名空间：microsoft.graph
 
-在项目层次结构中搜索与查询匹配的项目。
-可以在文件夹层次结构、整个驱动器或与当前用户共享的文件内执行搜索。
+在项层次结构中搜索与查询匹配的项。可以在文件夹层次结构、整个驱动器或与当前用户共享的文件中进行搜索。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

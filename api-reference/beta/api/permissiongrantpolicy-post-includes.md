@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 7ef1e6531f458270a29d6cf96f61c6f89113678d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9010f08b8fb1c9c8b3e4639f0f473890717a5acf
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026471"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266283"
 ---
 # <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Create permissionGrantConditionSet in includes collection of permissionGrantPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "61026471"
 
 添加权限授予策略中包含权限授予事件的条件。 为此，将[permissionGrantConditionSet](../resources/permissiongrantconditionset.md)添加到[permissionGrantPolicy 的 includes 集合](../resources/permissionGrantPolicy.md)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -55,7 +55,9 @@ POST /policies/permissionGrantPolicies/{id}/includes
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-create-a-permission-grant-policy-for-client-apps-that-are-from-verified-publishers"></a>示例 1：为来自已验证发布者的客户端应用创建权限授予策略 
+
+#### <a name="request"></a>请求
 
 本示例中 *，来自* 已验证发布者的客户端应用的所有委派权限都包含在权限授予策略中。 由于 [省略了 permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 中的所有其他条件，因此它们都将使用其默认值，这在每种情况下都是最包含的。
 
@@ -99,7 +101,7 @@ Content-Type: application/json
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。
 
@@ -124,6 +126,59 @@ Content-type: application/json
   "clientApplicationIds": ["all"],
   "clientApplicationTenantIds": ["all"],
   "clientApplicationPublisherIds": ["all"],
-  "clientApplicationsFromVerifiedPublisherOnly": false
+  "clientApplicationsFromVerifiedPublisherOnly": true,
+  "certifiedClientApplicationsOnly": false
+}
+```
+### <a name="example-2-create-a-permission-grant-policy-for-client-apps-that-are-microsoft-365-certified"></a>示例 2：为经过认证客户端应用创建Microsoft 365策略  
+
+#### <a name="request"></a>请求
+
+本示例中，*所有* 经过认证Microsoft 365的客户端应用的所有委派权限都包含在权限授予策略中。 由于拥有经过验证的发布者是应用被视为经过认证Microsoft 365的先决条件，因此无需显式要求验证发布者。 由于 [省略了 permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 中的所有其他条件，因此它们都将使用其默认值，这在每种情况下都是最包含的。
+
+
+<!-- {
+  "blockType": "request",
+  "truncated": true,
+  "name": "permissiongrantpolicy_create_includes"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/policies/permissionGrantPolicies/{id}/includes
+Content-Type: application/json
+
+{
+  "permissionType": "delegated",
+  "certifiedClientApplicationsOnly": true
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.permissionGrantConditionSet"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "75ffda85-9314-43bc-bf19-554a7d079e96",
+  "permissionClassification": "all",
+  "permissionType": "delegated",
+  "resourceApplication": "any",
+  "permissions": ["all"],
+  "clientApplicationIds": ["all"],
+  "clientApplicationTenantIds": ["all"],
+  "clientApplicationPublisherIds": ["all"],
+  "clientApplicationsFromVerifiedPublisherOnly": true,
+  "certifiedClientApplicationsOnly": true
 }
 ```

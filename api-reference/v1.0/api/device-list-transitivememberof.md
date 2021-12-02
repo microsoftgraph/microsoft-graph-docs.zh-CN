@@ -5,12 +5,12 @@ author: spunukol
 ms.prod: directory-management
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: e54c47cbec0669d2a934e3db15e13caf74e45959
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4e599becb2663be487bbb6c82f07641d873411fd
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025849"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266087"
 ---
 # <a name="list-device-transitive-groups"></a>List device transitive groups
 
@@ -152,11 +152,11 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+294
 ```
 
-`294`
-
-### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData cast 和 $search 获取显示名称中包含字母"Video"（包括返回对象计数）的组成员身份
+### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData cast 和 $search 获取显示名称包含字母"Video"（包括返回对象计数）的组成员身份
 
 #### <a name="request"></a>请求
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2835d20fd6597a45e3f80cc6db064c9d77e2ffaa
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 38bdd106b9bfb4610841a5c5c9bd64db6212b6a1
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988811"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266106"
 ---
 # <a name="list-user-memberof"></a>List user memberOf
 
@@ -139,8 +139,6 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/memberOf/$count
 ConsistencyLevel: eventual
-
-17
 ```
 
 #### <a name="response"></a>响应
@@ -150,13 +148,13 @@ ConsistencyLevel: eventual
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+17
 ```
 
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>示例 3：使用 OData 强制转换以仅获取组成员身份的计数
@@ -180,9 +178,7 @@ ConsistencyLevel: eventual
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

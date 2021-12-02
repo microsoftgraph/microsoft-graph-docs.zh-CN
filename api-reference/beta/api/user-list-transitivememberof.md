@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6d35ba7e833633b1eb67a8710413e6b34494751b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d82c6b702958edbc62e41c23c7598950979c38e6
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023567"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266353"
 ---
 # <a name="list-user-transitive-memberof"></a>List user transitive memberOf
 
@@ -187,9 +187,7 @@ ConsistencyLevel: eventual
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -198,7 +196,7 @@ Content-type: text/plain
 588
 ```
 
-### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 转换获取包含字母"tier"的显示名称（包括返回的对象计数）的组的可传递成员身份
+### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 转换获取显示名称包含字母"tier"（包括返回对象计数）的组的可传递成员身份
 
 #### <a name="request"></a>请求
 
@@ -240,7 +238,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 和 OData 转换获取组中以"a"开头的可传递成员身份显示名称包括返回对象计数的组
+### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 和 OData 转换获取组中可传递的成员身份，显示名称以"a"开头（包括返回的对象计数）
 
 #### <a name="request"></a>请求
 

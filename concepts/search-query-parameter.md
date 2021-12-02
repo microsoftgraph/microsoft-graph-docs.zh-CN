@@ -4,12 +4,12 @@ description: Microsoft Graph 支持 $search OData 查询参数，以便限制请
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6cd0d25d1ba9ef95c37d8e79eb8f5ea516926259
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 3456985a8d8af1971cdda67a06c24e77e61efd4b
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226097"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266080"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>使用搜索查询参数匹配搜索条件
 
@@ -125,7 +125,7 @@ Content-type: application/json
 
 ## <a name="using-search-on-directory-object-collections"></a>在目录对象集合上使用 $search
 
-派生自 [directoryObject](/graph/api/resources/directoryobject) 的 Azure AD 资源及其关系仅在高级查询中支持 `$search` 查询参数。 使用标记化方法的搜索的工作原理是提取输入和输出字符串中的单词，并使用空格、数字、不同的大小写和符号分隔这些词，如下所示:
+派生自 [directoryObject](/graph/api/resources/directoryobject) 的 Azure AD 资源及其关系仅在高级查询中支持 `$search` 查询参数。 搜索执行 **不** 支持`contains` 。 相反，它使用词汇点化方法，该方法的工作方式是使用空格、数字、不同的大小写和符号从属性值和搜索字符串中提取单词，如以下示例所示：
 
 * **空格**：`hello world` => `hello`、 `world`
 * **不同的大小写**⁽¹⁾：`HelloWorld` 或 `helloWORLD` => `hello`、`world`
@@ -134,7 +134,7 @@ Content-type: application/json
 
 ⁽¹⁾ 目前，标记化仅在大小写从小写转换为大写时才有效，因此 `HELLOworld` 被视为一个标记：`helloworld`，`HelloWORld` 是两个标记：`hello`、`world`。 ⁽²⁾ 标记化逻辑还会合并仅由符号分隔的单词；例如，搜索 `helloworld` 将找到 `hello-world` 和 `hello.world`。
 
-> **注意**：标记化后，标记将独立于原始大小写进行匹配，并且将以任何顺序匹配。
+> **注意**：标记化后，标记将独立于原始大小写进行匹配，并且将以任何顺序匹配。 例如，displayName `李四(David Li)` 将匹配搜索字符串，例如 `李四(David Li)`、`李四`、`David`、`Li`、`David)`、`(李四`、 `Li 李`。
 
 标记化搜索仅适用于 **displayName** 和 **description** 字段。 字符串类型的任何字段都可以放入 `$search`; **displayName** 和 **说明之外的字段** 默认为 `$filter` `startswith` 行为。 例如：
 
