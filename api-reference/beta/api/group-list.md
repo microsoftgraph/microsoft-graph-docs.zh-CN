@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0dfacbccd2e7d1ad07d7db339a85ba94f11717ca
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 15c6ab9683f77ff8be531f3fa42aa41e8407bd42
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130134"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266388"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -207,6 +207,8 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$count`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
+
 <!-- {
   "blockType": "request",
   "name": "get_groups_withlicenseerrors_count"
@@ -252,6 +254,8 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$count`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
+
 <!-- {
   "blockType": "ignored",
   "name": "get_count_only"
@@ -284,6 +288,8 @@ Content-type: text/plain
 #### <a name="request"></a>请求
 
 下面展示了示例请求。 此请求需要将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串，因为请求同时具有 `$orderBy` 和 `$filter` 查询参数。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 
 <!-- {
   "blockType": "request",
@@ -327,6 +333,8 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$search`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
+
 <!-- {
   "blockType": "request",
   "name": "get_video_count"
@@ -369,6 +377,8 @@ Content-type: application/json
 #### <a name="request"></a>请求
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$search`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 
 <!-- {
   "blockType": "request",
@@ -418,6 +428,8 @@ Content-type: application/json
 #### <a name="request"></a>请求
 
 下面是按 **membershipRuleProcessingState** 进行筛选以检索动态组的请求示例。 也可以按 **groupTypes** 属性 (即 `$filter=groupTypes/any(s:s eq 'DynamicMembership')`) 进行筛选。 此请求需要将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串，因为此请求使用了 `$filter` 查询参数的 `not` 运算符。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+
+>**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
