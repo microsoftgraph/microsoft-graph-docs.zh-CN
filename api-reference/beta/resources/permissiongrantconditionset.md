@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8e13beea466e1a6d4d950fcfc81c0546d0a62e57
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: fae77434aef5d4b6ea4f5c5884b20040db4f63b9
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58694645"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266094"
 ---
 # <a name="permissiongrantconditionset-resource-type"></a>permissionGrantConditionSet 资源类型
 
@@ -34,7 +34,8 @@ ms.locfileid: "58694645"
 | clientApplicationIds | 字符串集合 | 要匹配的客户端 **appId** 值的列表，或者包含要匹配任何客户端应用程序的 `all` 值的列表。 默认值为返回的 `all`。 |
 | clientApplicationTenantIds | 字符串集合 | 注册了客户端应用程序的 Azure Active Directory 租户 ID 的列表，或者具有单值 `all` 与在任意租户中注册的客户端应用匹配的列表。 默认值为返回的 `all`。 |
 | clientApplicationPublisherIds | 字符串集合 | 用于客户端应用程序的经过验证的发布者的 Microsoft 合作伙伴网络 （MPN） ID 的列表，或具有单值 `all` 以匹配任何发布者的客户端应用的列表。 默认值为返回的 `all`。 |
-| clientApplicationsFromVerifiedPublisherOnly | 布尔值 | 设置为“`true`”将仅在具有已验证发布者的客户端应用程序上进行匹配。 设置为 `false` 将在任何客户端应用上进行匹配，即使未验证发布者。 默认值为“`false`”。 |
+| clientApplicationsFromVerifiedPublisherOnly | 布尔值 | 设置为 `true`，仅在具有 [已验证发布者](/azure/active-directory/develop/publisher-verification-overview) 的客户端应用程序上进行匹配。 设置为 `false` 将在任何客户端应用上进行匹配，即使未验证发布者。 默认值为“`false`”。 |
+| certifiedClientApplicationsOnly | 布尔值 | 设置为 `true`，仅在经过 [Microsoft 365 认证](/microsoft-365-app-certification/docs/enterprise-app-certification-guide) 的客户端应用程序上进行匹配。 设置为 `false`，仅在任何其他客户端应用程序上进行匹配。 默认值为“`false`”。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -54,6 +55,7 @@ ms.locfileid: "58694645"
     "clientApplicationIds": [ "string" ],
     "clientApplicationTenantIds": [ "string" ],
     "clientApplicationPublisherIds": [ "string" ],
-    "clientApplicationsFromVerifiedPublisherOnly": false
+    "clientApplicationsFromVerifiedPublisherOnly": false,
+    "certifiedClientApplicationsOnly": false
 }
 ```
