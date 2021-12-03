@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 36cad837b8ba2471b2416b19261ae56bd45e53a7
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 29a303ac735a9bc2e3c06ee184e273f29d45abcc
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101747"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61288581"
 ---
 ```go
 
@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
 userFlowLanguageConfigurationId := "userFlowLanguageConfiguration-id"
 userFlowLanguagePageId := "userFlowLanguagePage-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).DefaultPagesById(&userFlowLanguagePageId).$value().Get(options)
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).DefaultPagesById(&userFlowLanguagePageId).$value().Get(nil)
 
 
 ```

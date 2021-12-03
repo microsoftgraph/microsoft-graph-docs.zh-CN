@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fffd7534b604c604bc12aa7c788c53d04535abd6
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ff218ccefaf24607fa5552d1f26a4888e702d092
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094646"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61287943"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61094646"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).AudioRoutingGroups().Get(options)
+result, err := graphClient.Communications().CallsById(&callId).AudioRoutingGroups().Get(nil)
 
 
 ```

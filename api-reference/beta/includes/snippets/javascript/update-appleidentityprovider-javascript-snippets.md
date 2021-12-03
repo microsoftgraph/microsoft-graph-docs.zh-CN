@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c3c6c4fb7fa59b5b57f0d7cb8a84e66a60b1a9e74583b9ee6db40c6b54415785
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dcb72bad0be802857bcf53ac3e69a758b8dde0df
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903777"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61288110"
 ---
 ```javascript
 
@@ -16,6 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const identityProviderBase = {
+  '@odata.type': '#microsoft.graph.socialIdentityProvider',
   displayName: 'Apple'
 };
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a98596adfe1b34565f1ed2729ec97318171a536d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 3a914cc8ac007acd749afb660180019cdcc2c0a5
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61081722"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61289037"
 ---
 ```go
 
@@ -14,7 +14,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 plannerRosterId := "plannerRoster-id"
 plannerRosterMemberId := "plannerRosterMember-id"
-graphClient.Planner().RostersById(&plannerRosterId).MembersById(&plannerRosterMemberId).Delete(options)
+graphClient.Planner().RostersById(&plannerRosterId).MembersById(&plannerRosterMemberId).Delete(nil)
 
 
 ```

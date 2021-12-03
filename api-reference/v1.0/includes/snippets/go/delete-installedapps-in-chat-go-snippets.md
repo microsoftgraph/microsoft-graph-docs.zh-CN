@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b6c9bdb2bc26c11d204826fc7d07ce78126eae5e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 319a0c6894fb517407e5a89fe5284d1b61fc4c88
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087083"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61289165"
 ---
 ```go
 
@@ -14,7 +14,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 chatId := "chat-id"
 teamsAppInstallationId := "teamsAppInstallation-id"
-graphClient.ChatsById(&chatId).InstalledAppsById(&teamsAppInstallationId).Delete(options)
+graphClient.ChatsById(&chatId).InstalledAppsById(&teamsAppInstallationId).Delete(nil)
 
 
 ```
