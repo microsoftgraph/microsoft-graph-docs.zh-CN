@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1d729a49e94a747214b366de6fe64b56ac3e7912
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c347da117ff9ebd6e46cf3954a5324d7c7facdbe
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095594"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61288444"
 ---
 ```go
 
@@ -16,7 +16,7 @@ groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
 extensionId := "extension-id"
-result, err := graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).ExtensionsById(&extensionId).Get(options)
+result, err := graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).ExtensionsById(&extensionId).Get(nil)
 
 
 ```

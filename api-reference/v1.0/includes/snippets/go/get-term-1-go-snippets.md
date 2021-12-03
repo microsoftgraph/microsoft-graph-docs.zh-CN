@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2f5bbfe5feb893a8ee2e04c75653ed728419086f
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 953f3f244a0cddedc0fe8d5923fe993965ffd164
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61086481"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61288196"
 ---
 ```go
 
@@ -16,7 +16,7 @@ siteId := "site-id"
 groupId := "group-id"
 setId := "set-id"
 termId := "term-id"
-result, err := graphClient.SitesById(&siteId).TermStore().GroupsById(&groupId).SetsById(&setId).TermsById(&termId).Get(options)
+result, err := graphClient.SitesById(&siteId).TermStore().GroupsById(&groupId).SetsById(&setId).TermsById(&termId).Get(nil)
 
 
 ```

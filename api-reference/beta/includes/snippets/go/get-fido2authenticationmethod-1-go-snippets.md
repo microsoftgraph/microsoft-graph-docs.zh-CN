@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f5106a273408f222789cd64b925bfc228a4b4571
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a6ca80dfdf37b5e2693435c7b1adb79686bfbffc
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101959"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61287682"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61101959"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 fido2AuthenticationMethodId := "fido2AuthenticationMethod-id"
-result, err := graphClient.Me().Authentication().Fido2MethodsById(&fido2AuthenticationMethodId).Get(options)
+result, err := graphClient.Me().Authentication().Fido2MethodsById(&fido2AuthenticationMethodId).Get(nil)
 
 
 ```

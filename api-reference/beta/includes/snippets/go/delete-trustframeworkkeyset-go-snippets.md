@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c26b996f7fc4b9f3b0e57dfea32d0fd75dcad190
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b084bce2ceef1572608f14bfa4f9136c491b8151
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61085144"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61288525"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61085144"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).Delete(options)
+graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).Delete(nil)
 
 
 ```

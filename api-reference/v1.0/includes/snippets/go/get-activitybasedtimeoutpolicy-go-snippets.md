@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 172137566e95ba535651bd7ea112e36123964aba
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 131d1cef03ac21054f59149932da5c3ddf5186b7
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61082395"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61288980"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61082395"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 activityBasedTimeoutPolicyId := "activityBasedTimeoutPolicy-id"
-result, err := graphClient.Policies().ActivityBasedTimeoutPoliciesById(&activityBasedTimeoutPolicyId).Get(options)
+result, err := graphClient.Policies().ActivityBasedTimeoutPoliciesById(&activityBasedTimeoutPolicyId).Get(nil)
 
 
 ```
