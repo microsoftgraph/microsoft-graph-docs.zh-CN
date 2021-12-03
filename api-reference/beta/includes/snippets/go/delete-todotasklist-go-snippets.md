@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6c0b2fd75714f7ad8ddcab5293354fffa875b434
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 514ce6d7f1b8bfd45f461bc044d6b765b94e600b
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61085965"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61288945"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61085965"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 todoTaskListId := "todoTaskList-id"
-graphClient.Me().Todo().ListsById(&todoTaskListId).Delete(options)
+graphClient.Me().Todo().ListsById(&todoTaskListId).Delete(nil)
 
 
 ```
