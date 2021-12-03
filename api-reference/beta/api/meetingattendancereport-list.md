@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b4585cd36fbbe3efed087b9538dacef18f9c9d2e
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 4d575e06d0a672142264473a3a2fa9e2d79ff78e
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225324"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285167"
 ---
 # <a name="list-meetingattendancereports"></a>列出 meetingAttendanceReports
 
@@ -20,7 +20,7 @@ ms.locfileid: "61225324"
 
 获取 [onlineMeeting 的 meetingAttendanceReport](../resources/meetingAttendanceReport.md) [对象列表](../resources/onlinemeeting.md)。 每次联机会议结束时，会生成该会话的与会者报告。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,13 +28,13 @@ ms.locfileid: "61225324"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | OnlineMeetingArtifact.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | OnlineMeetingArtifact.Read.All |
+| 应用程序 | OnlineMeetingArtifact.Read.All |
 
 若要对此 API 使用应用程序权限，租户管理员必须创建应用程序访问 [策略，并](/graph/cloud-communication-online-meeting-application-access-policy) 授予用户权限。 这将授权策略中配置的应用代表该用户获取联机会议和/或联机会议项目 (请求路径中指定的用户 ID) 。
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取具有委派权限的在线会议的所有与会者报告 () `/me` 应用 () `/users/{userId}` 权限：
+若要获取具有委派访问权限的在线会议的所有与会者报告， () `/me` 应用 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendancereports-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-attendancereports-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

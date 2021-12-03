@@ -4,24 +4,24 @@ description: 包含与应用程序或服务主体关联的密钥凭据。 applic
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: 5da7db493e17261004a4913211825d1d62b8196a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: madansr7
+ms.openlocfilehash: e08803389b9e24ab8a4214a4696f672e8167b71a
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078740"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285110"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 
 命名空间：microsoft.graph
 
-包含与应用程序关联的密钥凭据 <!--or a service principal-->. **应用程序的 keyCredentials** [属性](application.md) <!--and [servicePrincipal](serviceprincipal.md)--> entity 是 **keyCredential 的集合**。
+包含与应用程序或服务主体关联的密钥凭据。 application 和 [servicePrincipal](serviceprincipal.md)实体的 **keyCredentials** 属性是 **keyCredential 的集合**。 [](application.md)
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|二进制| 自定义密钥标识符 |
+|customKeyIdentifier|Binary| 自定义密钥标识符 |
 | displayName | String | 密钥的友好名称。 可选。 |
 |endDateTime|DateTimeOffset|凭据过期的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |key|二进制| 转换为 Base64 字符串的字节数组中的证书原始数据;例如， `[System.Convert]::ToBase64String($Cert.GetRawCertData())` 。 |

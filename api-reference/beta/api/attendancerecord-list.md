@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 39510711506b27f98e1757ef0f2747a11eb1204e
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 86147e58d6e4e174858d5a9d4516f95198b894ae
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223574"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285026"
 ---
 # <a name="list-attendancerecords"></a>列出 attendanceRecords
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "61223574"
 > [!TIP]
 > 检索考勤记录的一种更方便的方式是，使用查询选项使记录符合考勤 `expand` 报告。 有关示例和更多详细信息，请参阅获取 [考勤报告](meetingattendancereport-get.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "61223574"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | OnlineMeetingArtifact.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | OnlineMeetingArtifact.Read.All |
+| 应用程序 | OnlineMeetingArtifact.Read.All |
 
 若要对此 API 使用应用程序权限，租户管理员必须创建应用程序访问 [策略，并](/graph/cloud-communication-online-meeting-application-access-policy) 授予用户权限。 这将授权策略中配置的应用代表该用户获取联机会议和/或联机会议项目 (请求路径中指定的用户 ID) 。
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceRep
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-attendancerecord-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-attendancerecord-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

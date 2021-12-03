@@ -1,29 +1,32 @@
 ---
-title: 使用 Microsoft Microsoft 搜索 API，Graph聚合优化查询
+title: 使用 Microsoft Microsoft 搜索 API Graph聚合优化查询
 description: 可以使用 Microsoft 搜索 API 检索 aggreations
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 83f7b347739719a4100afb0cbecfb3009c454fbc
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 49e3739985f2a715449ff28c1183d0427543b2c5
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763979"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285082"
 ---
-# <a name="refine-search-results-using-aggregations"></a>使用聚合优化搜索结果
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-refine-queries-with-aggregations"></a>使用 Microsoft Microsoft 搜索 API Graph聚合优化查询
 
-优化搜索结果，在索引中显示其分布。
+可以使用 Microsoft Microsoft 搜索 API 来Graph搜索结果，在索引中显示搜索结果的分布。 
+
+若要优化结果，在搜索请求 [中，](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true)指定 [aggregationOption](/graph/api/resources/aggregationOption?view=graph-rest-beta&preserve-view=true)。 每个 **aggregationOption** 指定应计算聚合的属性，以及响应中返回的 [searchBucket](/graph/api/resources/searchBucket?view=graph-rest-beta&preserve-view=true) 项目数。
 
 ## <a name="example-1-request-aggregations-by-string-fields"></a>示例 1：按字符串字段请求聚合
 
-以下示例搜索 **listItem** 资源，并按其文件类型和内容类聚合结果，两者都是字符串值。
+以下示例搜索 **listItem** 资源，并按文件类型、内容类和上次修改时间聚合结果，所有这些都是字符串值。
 
 该响应包含两个聚合的 [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) 对象：
-- **key** 属性指定实际值 (值) 同一存储桶中 `FileType` 聚合的 `contentclass` **listItem** 对象的项数。
+- **key** 属性 实际值 (指定由、) 值聚合在同一存储桶中的 `fileType` `contentclass` `lastModifiedTime` **那些匹配的 listItem** 对象的) 、 或 值的值。
 - **count** 属性指定聚合在同一存储桶中的此类对象的数量。 请注意，此数字是匹配数的近似值，不会提供匹配项的准确数量。
 - 按文件类型聚合的结果存储桶按计数降序排序。 本示例中，有 3 个存储桶用于 3 种文件类型 `docx` ：、 `xlsx` 和 `pptx` 。
-- 由内容类聚合的结果存储桶按内容类的字符串值按降序排序。 本示例中，只有一个存储桶，所有匹配对象共享同一个内容类 `STS_ListItem_DocumentLibrary` 。
+- 内容类聚合的结果存储桶按内容类的字符串值按降序排序。 本示例中，只有一个存储桶，所有匹配对象共享同一个内容类 `STS_ListItem_DocumentLibrary` 。
+- lastModifiedTime 聚合的结果存储桶按 lastModifiedTime 的字符串值按降序排序。 此示例包括三个存储桶 `Before 2021-09-01T09:08:19.6224752Z` ：、 `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z` 和 `2021-11-09T09:08:19.6224752Z or later` 。
 
 ### <a name="request"></a>请求
 
@@ -44,7 +47,7 @@ Content-Type: application/json
       "size": 25,
       "aggregations": [
           {
-              "field": "FileType",
+              "field": "fileType",
               "size": 20,
               "bucketDefinition": {
                   "sortBy": "count",
@@ -59,6 +62,27 @@ Content-Type: application/json
                   "sortBy": "keyAsString",
                   "isDescending": "true",
                   "minimumCount": 0
+              }
+          },
+          {
+              "field": "lastModifiedTime",
+              "size": 2,
+              "bucketDefinition": {
+                  "sortBy": "KeyAsString",
+                  "isDescending": "true",
+                  "minimumCount": 0,
+                  "ranges": [
+                      {
+                          "to": "2021-09-01T09:08:19.6224752Z"
+                      },
+                      {
+                          "from": "2021-09-01T09:08:19.6224752Z",
+                          "to": "2021-11-09T09:08:19.6224752Z"
+                      },
+                      {
+                          "from": "2021-11-09T09:08:19.6224752Z"
+                      }
+                ]
               }
           }
       ]
@@ -86,7 +110,7 @@ Content-type: application/json
             "aggregations": [
                 {
                     "@odata.type": "#microsoft.substrateSearch.searchAggregation",
-                    "field": "FileType",
+                    "field": "fileType",
                     "buckets": [
                         {
                             "@odata.type": "#microsoft.substrateSearch.searchBucket",
@@ -119,6 +143,27 @@ Content-type: application/json
                             "aggregationFilterToken": "\"ǂǂ5354535f4c6973744974656d5f446f63756d656e744c696272617279\""
                         }
                     ]
+                },
+                {
+                    "@odata.type": "#microsoft.substrateSearch.searchAggregation",
+                    "field": "lastModifiedTime",
+                    "buckets": [
+                        {
+                            "key": "Before 2021-09-01T09:08:19.6224752Z",
+                            "count": 5,
+                            "aggregationFilterToken": "range(min, 2021-09-01T09:08:19.6224752Z)"
+                        },
+                        {
+                            "key": "From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z",
+                            "count": 3,
+                            "aggregationFilterToken": "range(2021-09-01T09:08:19.6224752Z, 2021-11-09T09:08:19.6224752Z)"
+                        },
+                        {
+                            "key": "2021-11-09T09:08:19.6224752Z or later",
+                            "count": 1,
+                            "aggregationFilterToken": "range(2021-11-09T09:08:19.6224752Z, max, to=\"le\")"
+                        }
+                    ]
                 }
             ]
         }
@@ -128,9 +173,12 @@ Content-type: application/json
 
 ## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a>示例 2：基于上一个请求应用聚合筛选器
 
-本示例中，我们应用聚合筛选器，该筛选器基于作为示例 1 中的字段返回的 **aggregationFilterToken。** `docx` `FileType`
+此示例应用聚合筛选器，该筛选器基于作为字段和示例 1 中的字段返回的 **aggregationFilterToken。** `docx` `fileType` `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z` `lastModifiedTime`
 
 分配给 **aggregationFilters** 属性的字符串值采用格式 **"{field}：" \\ "{aggregationFilterToken} \\ ""**。 如果同一筛选器需要多个值，则分配给 **aggregationFilters** 属性的字符串值应遵循以下格式 **："{field}：或 (\\ "{aggregationFilterToken1} \\ "， \\ "{aggregationFilterToken2} \\ ") "。**
+
+分配给 **aggregationFilters** 属性的日期时间格式字符串值遵循格式 **"{field}：{aggregationFilterToken}"。**
+
 
 ### <a name="request"></a>请求
 
@@ -151,7 +199,7 @@ Content-Type: application/json
       "size": 20,
       "aggregations": [
           {
-              "field": "FileType",
+              "field": "fileType",
               "size": 10,
               "bucketDefinition": {
                   "sortBy": "count",
@@ -161,7 +209,8 @@ Content-Type: application/json
           }
       ],
       "aggregationFilters": [
-        "FileType:\"ǂǂ68746d6c\""
+        "fileType:\"ǂǂ68746d6c\"",
+        "lastModifiedTime:range(2021-09-01T09:08:19.6224752Z, 2021-11-09T09:08:19.6224752Z)"
       ]
     }
   ]
@@ -185,19 +234,40 @@ Content-type: application/json
             "total": 69960,
             "moreResultsAvailable": true,
             "aggregations": [
-            {
-                "@odata.type": "#microsoft.substrateSearch.searchAggregation",
-                "field": "FileType",
-                "buckets": [
-                    {
-                        "@odata.type": "#microsoft.substrateSearch.searchBucket",
-                        "key": "html",
-                        "count": 69960,
-                        "aggregationFilterToken": "\"ǂǂ68746d6c\""
-                    }
-                ]
-            }
-        ]
+                {
+                    "@odata.type": "#microsoft.substrateSearch.searchAggregation",
+                    "field": "fileType",
+                    "buckets": [
+                        {
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
+                            "key": "html",
+                            "count": 69960,
+                            "aggregationFilterToken": "\"ǂǂ68746d6c\""
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.substrateSearch.searchAggregation",
+                    "field": "lastModifiedTime",
+                    "buckets": [
+                        {
+                            "key": "Before 2021-09-01T09:08:19.6224752Z",
+                            "count": 0,
+                            "aggregationFilterToken": "range(min, 2021-09-01T09:08:19.6224752Z)"
+                        },
+                        {
+                            "key": "From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z",
+                            "count": 69960,
+                            "aggregationFilterToken": "range(2021-09-01T09:08:19.6224752Z, 2021-11-09T09:08:19.6224752Z)"
+                        },
+                        {
+                            "key": "2021-11-09T09:08:19.6224752Z or later",
+                            "count": 0,
+                            "aggregationFilterToken": "range(2021-11-09T09:08:19.6224752Z, max, to=\"le\")"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

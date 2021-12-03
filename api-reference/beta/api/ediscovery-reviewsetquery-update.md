@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 6b911940864d3cf4a6e50072ed5bfa28215a79cf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c11dbfa9d869186d7cee2a5f9c32d014702d536a
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022355"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285124"
 ---
 # <a name="update-reviewsetquery"></a>更新 reviewSetQuery
 
@@ -20,7 +20,7 @@ ms.locfileid: "61022355"
 
 更新电子数据展示 [reviewSetQuery 的属性](../resources/ediscovery-reviewsetquery.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -103,8 +103,6 @@ Content-type: application/json
 ### <a name="response"></a>响应
 
 下面展示了示例响应。
-
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response"

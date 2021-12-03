@@ -1,16 +1,16 @@
 ---
 title: keyCredential 资源类型
 description: 包含与应用程序或服务主体关联的密钥凭据。 application 和 servicePrincipal 实体的 **keyCredentials** 属性是 **keyCredential 的集合**。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: 8095ea20d6c7dcef94e9f9cf2e42fca6087c58d8
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+author: madansr7
+ms.openlocfilehash: 0c4e8ff5ce5f97498043e42305b05cadb7815412
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265972"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285096"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 
@@ -23,13 +23,13 @@ ms.locfileid: "58265972"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|二进制| 自定义密钥标识符 |
+|customKeyIdentifier|Binary| 自定义密钥标识符 |
 | displayName | String | 密钥的友好名称。 可选。 |
 |endDateTime|DateTimeOffset|凭据过期的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |key|二进制| 密钥凭据的值。 应为 Base 64 编码值。 |
 |keyId|Guid|密钥的唯一标识符。|
 |startDateTime|DateTimeOffset|凭据生效的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|type|字符串|密钥凭据的类型;例如， `Symmetric` 。|
+|type|String|密钥凭据的类型;例如， `Symmetric` 。|
 |usage|String|一个描述密钥的用途的字符串;例如， `Verify` 。|
 
 
