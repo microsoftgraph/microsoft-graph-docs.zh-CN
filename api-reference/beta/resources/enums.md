@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 76b4c08fd3329d04613ea1bd0fd2c6c6d7a1d104
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 3190e107ed5b443f6a6d5944a124f3327353770e
+ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225985"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61307599"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -194,7 +194,7 @@ ms.locfileid: "61225985"
 |String|
 |整数|
 |参考|
-|二进制|
+|Binary|
 |Boolean|
 |日期时间|
 
@@ -654,37 +654,6 @@ ms.locfileid: "61225985"
 |maliciousIPAddressValidCredentialsBlockedIP|
 |unknownFutureValue|
 
-### <a name="risklevel-values"></a>riskLevel 值
-
-|成员|
-|:---|
-|low|
-|中等|
-|high|
-|hidden|
-|无|
-|unknownFutureValue|
-
-### <a name="riskstate-values"></a>riskState 值
-
-|成员|
-|:---|
-|无|
-|confirmedSafe|
-|修正|
-|dismissed|
-|atRisk|
-|confirmedComprom一|
-|unknownFutureValue|
-
-### <a name="tokenissuertype-values"></a>tokenIssuerType 值
-
-|成员|
-|:---|
-|AzureAD|
-|ADFederationServices|
-|UnknownFutureValue|
-
 ### <a name="usageauthmethod-values"></a>usageAuthMethod 值
 
 |成员|
@@ -947,7 +916,7 @@ ms.locfileid: "61225985"
 |网站|
 |list|
 |listItem|
-|drive|
+|驱动器|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType 值
@@ -1630,7 +1599,7 @@ ms.locfileid: "61225985"
 | dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN注册表值类型。 |
 | dwordBigEndian    | 4     | REG_DWORD_BIG_ENDIAN注册表值类型。    |
 | expandSz          | 5     | REG_EXPAND_SZ注册表值类型。           |
-| 链接              | 6      | REG_LINK注册表值类型。                |
+| link              | 6      | REG_LINK注册表值类型。                |
 | multiSz           | 7      | REG_MULTI_SZ注册表值类型。            |
 | 无              | 8      | REG_NONE注册表值类型。                |
 | qword             | 9      | REG_QWORD注册表值类型。               |
@@ -1733,23 +1702,6 @@ ms.locfileid: "61225985"
 |confirmedComprom一|
 |unknownFutureValue|
 
-### <a name="riskdetail-values"></a>riskDetail 值
-
-|成员|
-|:---|
-|无|
-|adminGeneratedTemporaryPassword|
-|userPerformedSecuredPasswordChange|
-|userPerformedSecuredPasswordReset|
-|adminConfirmedSigninSafe|
-|aiConfirmedSigninSafe|
-|userPassedMFADrivenByRiskBasedPolicy|
-|adminDismissedAllRiskForUser|
-|adminConfirmedSigninComprom一|
-|adminConfirmedUserComprom一|
-|hidden|
-|unknownFutureValue|
-
 ### <a name="advancedconfigstate-values"></a>advancedConfigState 值
 
 |成员|
@@ -1779,26 +1731,6 @@ ms.locfileid: "61225985"
 |oneDriveBusiness|
 |oneDriveConsumer|
 |收存箱|
-
-### <a name="riskeventtype-values"></a>riskEventType 值
-
-|成员|
-|:---|
-|unlikelyTravel|
-|匿名IPAddress|
-|maliciousIPAddress|
-|unfamiliarFeatures|
-|malwareInfectedIPAddress|
-|suspiciousIPAddress|
-|leakedCredentials|
-|investigationsThreatIntelligence|
-|generic|
-|adminConfirmedUserComprom一|
-|mcasImpossibleTravel|
-|mcasSuspiciousInboxManipulationRules|
-|investigationsThreatIntelligenceSigninLinked|
-|maliciousIPAddressValidCredentialsBlockedIP|
-|unknownFutureValue|
 
 ### <a name="networktype-values"></a>networkType 值
 
@@ -2286,7 +2218,7 @@ ms.locfileid: "61225985"
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的，无法删除/添加成员。                  |
-|组               | 1     | 指示聊天是群聊。 对于此 (，可以更新至少 2) 个用户的名单大小。 稍后可以删除/添加成员。   |
+|组               | 1     | 指示聊天是群聊。 可以针对 (聊天至少 2 人) 名单大小。 稍后可以删除/添加成员。   |
 |meeting             | 2     | 指示聊天是会议聊天，创建为创建 OnlineMeeting 的副作用。  |
 |unknownFutureValue  | 3     | Sentinel 值，用于指示未来值。 |
 
@@ -2581,7 +2513,7 @@ ms.locfileid: "61225985"
 
 |成员|
 |:---|
-|或者|
+|或|
 |和|
 
 

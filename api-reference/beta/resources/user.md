@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 3fbac5bccee4ef18f4d6de87d4371f98ac3807d4
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 25e947c5f244f2ba68f6353cdc44c304c742660c
+ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226300"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61307613"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -70,7 +70,7 @@ ms.locfileid: "61226300"
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
 | [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。 |
@@ -173,7 +173,7 @@ ms.locfileid: "61226300"
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | 已分配给用户的许可证，包括继承的（基于组的）许可证。 <br><br>不可为 null。 支持 `$filter`（`eq` 和 `not`）。 |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | 分配给该用户的计划。只读。不可为 null。<br><br>支持 `$filter`（`eq` 和 `not`）。 |
 | birthday | DateTimeOffset | 用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` <br><br>仅在 `$select` 上返回。 |
-| businessPhones | String collection | 用户的电话号码。仅可以为此属性设置一个数字。<br><br>对于从本地目录同步的用户而言为只读。 支持 `$filter`（`eq` 和 `not`）。|
+| businessPhones | String collection | 用户的电话号码。仅可以为此属性设置一个数字。<br><br>对于从本地目录同步的用户而言为只读。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 | 城市 | String | 用户所在的城市。最大长度为 128 个字符。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
 | companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。<br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | 设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>支持 `$filter` （`eq`、 `ne`、 `not`和 `in`）。|

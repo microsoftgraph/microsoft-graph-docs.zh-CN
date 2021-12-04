@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: eafe2ebbccdeef90e127871d7da4377f771c099d
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 65ec19b2463e9da6deff42c36a067620f57b0bed
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61265639"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285138"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -73,7 +73,7 @@ ms.locfileid: "61265639"
 | appRoles | [appRole](approle.md) 集合 | 分配给应用程序的角色的集合。 使用[应用角色分配](approleassignment.md)，可将这些角色分配给与其他应用程序关联的用户、组或服务主体。 不可为空。 |
 | createdDateTime | DateTimeOffset | 注册应用程序的日期和时间。DateTimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 <br><br> 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in` 和 `null` 值上的 `eq`) 和 `$orderBy`。 |
 | deletedDateTime | DateTimeOffset | 删除应用程序的日期和时间。DateTimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 |
-| 说明 | String | 应用程序的可选说明。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`startsWith`）和 `$search`。 |
+| 说明 | String | 用于向最终用户提供应用程序对象说明的空闲文本字段。 最大允许大小为 1024 个字符。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`startsWith`）和 `$search`。 |
 | disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册的应用程序。可能的值为：`null`（默认值）、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement`（原因可能包括可疑、滥用或恶意活动或违反 Microsoft 服务协议）。 <br><br> 支持 `$filter`（`eq`、`ne`、`not`）。 |
 | displayName | String | 应用程序的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。 |
 | groupMembershipClaims | String | 配置应用程序预期的用户或 OAuth 2.0 访问令牌中发出的 `groups` 声明。要设置此属性，请使用以下有效字符串值之一：`None`、`SecurityGroup`（对于安全组和 Azure AD 角色）和 `All`（这将获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色）。 |

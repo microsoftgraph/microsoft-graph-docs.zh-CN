@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: eaab61771feca5c5e1f900295509da5460c1e52d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 578e512509ecd202f30ab32bef6102b1b3253be0
+ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002070"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61307634"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -18,19 +18,50 @@ ms.locfileid: "61002070"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 webhook 订阅列表。 响应的内容取决于应用调用的上下文;有关详细信息，请参阅下面的方案。
+检索 webhook 订阅列表。 
+
+响应的内容取决于应用调用的上下文;有关详细信息，请参阅权限 [部分中](#permissions) 的方案。
 
 ## <a name="permissions"></a>权限
 
 此 API 支持以下权限范围；要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型  | 权限（从最低特权到最高特权）  |
-|:---------------- |:-------------------------------------------- |
-| [委派 (](/graph/auth-v2-user) 工作或学校帐户)  | 创建订阅 [或](subscription-post-subscriptions.md) Subscription.Read.All (请参阅下面的) 。 |
-| [委派 (](/graph/auth-v2-user) 个人 Microsoft 帐户)  | 创建订阅 [或](subscription-post-subscriptions.md) Subscription.Read.All (请参阅下面的) 。 |
-| [应用程序](/graph/auth-v2-service) | 创建订阅 [所需的权限](subscription-post-subscriptions.md)。 |
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | 不支持 | 不支持 | CallRecords.Read.All  |
+|[channels](../resources/channel.md) (/teams/getAllChannels – 组织中所有频道)  | 不支持  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All |
+|[频道 (](../resources/channel.md) /teams/{id}/channels)  | Channel.ReadBasic.All、ChannelSettings.Read.All、Subscription.Read.All  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All  |
+|[chat](../resources/chat.md) (/chats – 组织内部的所有)  | 不支持 | 不支持 | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[chat](../resources/chat.md) (/chats/{id})  | Chat.ReadBasic、Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | ChatSettings.Read.Chat *、ChatSettings.ReadWrite.Chat*、Chat.Manage.Chat*、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All、Subscription.Read.All | 不支持 | ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持 | 不支持 | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/users/{id}/chats/getAllMessages - 特定用户参与的所有聊天的聊天)  | Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | Chat.Read.All、Chat.ReadWrite.All |
+|[联系人](../resources/contact.md) | Contacts.Read、Subscription.Read.All | Contacts.Read、Subscription.Read.All | Contacts.Read |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers)  | 不支持 | 不支持 | ChannelMember.Read.All |
+|[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers)  | 不支持 | 不支持 | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
+|[conversationMember](../resources/conversationmember.md) (/chats/{id}/members)  | ChatMember.Read、ChatMember.ReadWrite、Chat.ReadBasic、Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | ChatMember.Read.Chat *、Chat.Manage.Chat*、ChatMember.Read.All、ChatMember.ReadWrite.All、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members)  | TeamMember.Read.All、Subscription.Read.All | 不支持 | TeamMember.Read.All |
+|[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite、Subscription.Read.All | 不支持 |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All、Subscription.Read.All | 不支持 | Files.ReadWrite.All |
+|[事件](../resources/event.md) | Calendars.Read、Subscription.Read.All | Calendars.Read、Subscription.Read.All | Calendars.Read |
+|[组](../resources/group.md) | Group.Read.All、Subscription.Read.All | 不支持 | Group.Read.All |
+|[组对话](../resources/conversation.md) | Group.Read.All、Subscription.Read.All | 不支持 | 不支持 |
+|[列表](../resources/list.md) | Sites.ReadWrite.All、Subscription.Read.All | 不支持 | Sites.ReadWrite.All |
+|[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read、Subscription.Read.All | Mail.ReadBasic、Mail.Read、Subscription.Read.All | Mail.ReadBasic、Mail.Read |
+|[状态](../resources/presence.md) | Presence.Read.All、Subscription.Read.All | 不支持 | 不支持 |
+|[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
+|安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All、Subscription.Read.All | 不支持 | SecurityEvents.ReadWrite.All |
+|[teams](../resources/team.md) (/teams – 组织内部的所有)  | 不支持 | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams/{id})  | Team.ReadBasic.All、TeamSettings.Read.All、Subscription.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite、Subscription.Read.All | Tasks.ReadWrite、Subscription.Read.All | 不支持 |
+|[user](../resources/user.md) | User.Read.All、Subscription.Read.All | User.Read.All | User.Read.All |
 
-响应结果基于调用应用的上下文。 以下是常见方案的摘要：
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+
+响应结果基于调用应用的上下文。 以下各节介绍常见方案。
 
 ### <a name="basic-scenarios"></a>基本方案
 
@@ -38,7 +69,7 @@ ms.locfileid: "61002070"
 
 | 调用应用程序的上下文 | 响应包含 |
 |:-----|:---------------- |
-| 应用程序代表已登录用户（委派权限）进行调用。 <br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **此应用** 仅为登录用户创建的订阅。 |
+| 应用程序代表已登录用户（委派权限）进行调用。 <br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>**注意：** 这适用于个人 Microsoft 帐户和工作/学校帐户。 | **此应用** 仅为登录用户创建的订阅。 |
 | 应用程序代表本身（应用程序权限）进行调用。<br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这仅适用于工作/学校帐户。| **此应用** 仅为自己或者目录中的任何用户创建的订阅。|
 
 ### <a name="advanced-scenarios"></a>高级方案
@@ -79,7 +110,7 @@ GET /subscriptions
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -114,9 +145,11 @@ GET https://graph.microsoft.com/beta/subscriptions
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应。 所有属性都将通过实际调用返回。
+下面展示了示例响应。 
+
+>**注意：** 为了可读性，可能会缩短此处显示的响应。
 
 <!-- {
   "blockType": "response",
@@ -166,6 +199,6 @@ Content-type: application/json
 }
 -->
 
-> **注意：** 出于安全目的，不会返回 `clientState` 属性值。  
+> **注意：** 出于安全目的，不会返回 `clientState` 属性值。
 
-当请求返回多页数据时，响应中包含一个 `@odata.nextLink` 属性，可帮助你管理结果。  若要了解详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+当请求返回多页数据时，响应中包含一个 `@odata.nextLink` 属性，可帮助你管理结果。 若要了解详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。

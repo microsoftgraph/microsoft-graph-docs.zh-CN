@@ -5,12 +5,12 @@ author: jsandoval-msft
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 3a811034419c0e9be0eca8ab123fce3a124178dd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 218dee5db32fbbe24bb59c61dfe31b785141ecd0
+ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60992618"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61307592"
 ---
 # <a name="presence-setpresence"></a>presence： setPresence
 
@@ -19,13 +19,13 @@ ms.locfileid: "60992618"
 将用户的状态设置为应用程序状态。
 
 ### <a name="presence-sessions"></a>状态会话
-一个用户可以具有多个状态会话，因为用户可以在桌面、Teams和 web (多个) 。 每个Teams客户端都有一个独立的状态会话，并且用户的状态是来自所有隐藏会话的聚合状态。
+用户可以具有多个状态会话，因为用户可以在桌面、移动和 web Teams多个 (客户端) 。 每个Teams客户端都有一个独立的状态会话，并且用户的状态是来自所有隐藏会话的聚合状态。
 
 同样，应用程序可以具有其自己的用户状态会话，并能够更新状态。
 
 以下是会话状态聚合方式的优先级：
 * 用户配置>应用配置 (状态会覆盖其他用户) 
-* 在已配置应用之间： (状态设置状态") >忙碌>">离开"
+* 在应用配置中：当前不支持 (状态设置状态") >"忙碌>">离开"
 
 ### <a name="timeout-expiration-and-keep-alive"></a>超时、到期并保持活动状态
 状态会话 **可能会超时并** 过期，因此应用程序需要在超时之前调用此 API，以维护会话的状态;或过期 **之前，** 使会话保持活动状态。
@@ -63,7 +63,7 @@ POST /users/{userId}/presence/setPresence
 | sessionId          | string   | 应用程序状态会话的 ID。                                                          |
 | availability       | string   | 基本状态信息。                                                                         |
 | 活动           | string   | 可用性的补充信息。                                                          |
-| expirationDuration | duration | 应用状态会话的过期时间。 该值以 ISO 8601 格式表示，持续时间为。</p>如果未提供，将应用 5 分钟的默认过期时间。 |
+| expirationDuration | duration | 应用状态会话的过期时间。 该值以 ISO 8601 格式表示，持续时间为。</p>如果未提供，将应用 5 分钟的默认过期时间。 有效持续时间范围为 5-240 分钟 (PT5M 至 PT4H) |
 
 > [!IMPORTANT]
 >
