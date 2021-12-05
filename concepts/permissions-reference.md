@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0577680b7cf2bb1a0a98a167aafe49bafdd0b94f
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: e2dcdaaa608ff0d75845e826424ad0482efafd7f
+ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241616"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61307606"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1027,70 +1027,42 @@ _IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或
 
 ---
 
-## <a name="identity-risk-event-permissions"></a>标识风险事件权限
+## <a name="identity-risk-permissions"></a>标识风险权限
 
 #### <a name="delegated-permissions"></a>委派权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _IdentityRiskEvent.Read.All_ |   读取标识风险事件信息  | 允许应用代表登录用户为组织中所有用户读取标识风险事件信息。 | 是 | 否 |
+| _IdentityRiskyUser.Read.All_ |   读取标识用户风险信息  | 允许应用代表登录用户读取组织中所有用户的标识用户风险信息。 | 是 | 否 |
+| _IdentityRiskyUser.ReadWrite.All_ |   读取和更新标识用户风险信息  | 允许应用代表登录用户读取和更新组织中所有用户的标识用户风险信息。 | 是 | 否 |
+
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _IdentityRiskEvent.Read.All_ |   读取标识风险事件信息 | 允许应用无需具有已登录用户即可为组织中所有用户读取标识风险事件信息。 | 是 |
-
-
-### <a name="remarks"></a>注解
-
-_IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委派权限读取标识风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。有关管理员角色的详细信息，请参阅 [在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)
-
-### <a name="example-usage"></a>用法示例
-
-#### <a name="delegated-and-application"></a>委派和应用程序
-
-以下用法对委派权限和应用程序权限均有效：
-
-* 读取为租户中的所有用户所生成的全部风险事件 (`GET /beta/identityRiskEvents`)
-* 读取由 Dorknet 僵尸网络所生成的恶意软件风险事件 (`GET /beta/malwareRiskEvents?$filter=malwareName eq 'Dorkbot'`)
-* 阅读最新的 50 个风险事件 (`GET /beta/identityRiskEvents?$orderBy=riskEventDateTime desc&top=50`)
-
-有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
-
----
-
-
-## <a name="identity-risky-user-permissions"></a>标识风险用户权限
-
-#### <a name="delegated-permissions"></a>委派权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _IdentityRiskyUser.Read.All_ |   读取标识用户风险信息  | 允许应用代表登录用户读取组织中所有用户的标识用户风险信息。 | 是 | 否 |
-| _IdentityRiskyUser.ReadWrite.All_ |   读取和更新标识用户风险信息  | 允许应用代表登录用户读取和更新组织中所有用户的标识用户风险信息。 | 是 | 否 |
-
-#### <a name="application-permissions"></a>应用程序权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _IdentityRiskyUser.Read.All_ |   读取标识用户风险信息 | 允许应用在没有登录用户的情况下读取组织中所有用户的标识用户风险信息。 | 是 |
 | _IdentityRiskyUser.ReadWrite.All_ |   读取和更新标识用户风险信息 | 允许应用在没有登录用户的情况下读取和更新组织中所有用户的标识用户风险信息。 | 是 |
 
 
-### <a name="remarks"></a>备注
-
-_IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅对工作或学校帐户有效。对于具有读取标识用户风险信息的委派权限的应用，已登录用户必须是以下管理员角色之一的成员: 全局管理员、安全管理员或安全信息读取者。有关管理员角色的详细信息，请参阅 [在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
+所有标识风险权限仅对工作或学校帐户有效。 对于通过委派权限读取标识用户风险信息的应用，登录用户必须是以下 [Azure AD 管理员角色](/azure/active-directory/roles/permissions-reference) 之一的成员：全局管理员、安全管理员或安全读者。
 
 ### <a name="example-usage"></a>用法示例
 
-#### <a name="delegated-and-application"></a>委派和应用程序
-
 以下用法对委派权限和应用程序权限均有效：
 
-* 读取租户中的所有风险用户和属性 (`GET /beta/riskyUsers`)
-* 读取所有聚合风险级别为中等的风险用户 (`GET /beta/riskyUsers?$filter=risk/riskLevelAggregated eq microsoft.graph.riskLevel'medium'`)
-* 阅读特定用户的风险信息 (`GET /beta/riskyUsers/$filter=id eq ‘{userObjectId}’`)
+#### <a name="read-risk-events"></a>读取风险事件
+
+* 读取为租户中的所有用户所生成的全部风险事件 (`GET /identityProtection/riskDetections`)
+* 阅读最新的 50 个风险事件 (`GET /identityProtection/riskDetections?$orderBy=detectedDateTime desc&top=50`)
+
+#### <a name="read-risky-users"></a>读取有风险的用户
+
+* 读取租户中的所有风险用户和属性 (`GET /identityProtection/riskyUsers`)
+* 读取所有聚合风险级别为中等的风险用户 (`GET /identityProtection/riskyUsers?$filter=riskLevel eq 'medium'`)
+* 阅读特定用户的风险信息 (`GET /identityProtection/riskyUsers?$filter=id eq 'userId'`)
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
@@ -1190,7 +1162,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1346,7 +1318,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
