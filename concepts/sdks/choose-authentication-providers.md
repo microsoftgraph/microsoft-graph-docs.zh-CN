@@ -166,7 +166,7 @@ final User me = graphClient.me().buildRequest().get();
 
 尚不可用。 请投票支持或打开[Microsoft Graph功能](https://aka.ms/graphrequests)请求（如果这对你很重要）。
 
-# <a name="go"></a>[转到](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -323,7 +323,7 @@ final User me = graphClient.me().buildRequest().get();
 
 尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://aka.ms/graphrequests) Graph功能请求。
 
-# <a name="go"></a>[转到](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -445,7 +445,7 @@ final User me = graphClient.me().buildRequest().get();
 
 尚不可用。 请投票支持或打开[Microsoft Graph功能](https://aka.ms/graphrequests)请求（如果这对你很重要）。
 
-# <a name="go"></a>[转到](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -556,7 +556,7 @@ final User me = graphClient.me().buildRequest().get();
 
 尚不可用。 请投票支持或打开[Microsoft Graph功能](https://aka.ms/graphrequests)请求（如果这对你很重要）。
 
-# <a name="go"></a>[转到](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -650,7 +650,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 不适用。
 
-# <a name="go"></a>[转到](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 不适用。
 
@@ -750,7 +750,7 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
 
 不适用。
 
-# <a name="go"></a>[转到](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -852,7 +852,7 @@ final User me = graphClient.me().buildRequest().get();
 
 尚不可用。 请投票支持或打开[Microsoft Graph功能](https://aka.ms/graphrequests)请求（如果这对你很重要）。
 
-# <a name="go"></a>[转到](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 

@@ -87,7 +87,7 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea241
 [!INCLUDE [sample-code](../includes/snippets/java/custodian-release-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/custodian-release-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

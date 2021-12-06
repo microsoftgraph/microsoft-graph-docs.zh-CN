@@ -164,7 +164,7 @@ $user = $graph->createRequest("GET", "/me")
               ->execute();
 ```
 
-# <a name="go"></a>[转到](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 

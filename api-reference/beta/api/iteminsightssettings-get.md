@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/item
 [!INCLUDE [sample-code](../includes/snippets/java/get-iteminsightssettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-iteminsightssettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

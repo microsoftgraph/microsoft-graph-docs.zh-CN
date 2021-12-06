@@ -87,7 +87,7 @@ DELETE https://graph.microsoft.com/beta/users/16664f75-11dc-4870-bec6-38c1aaa814
 [!INCLUDE [sample-code](../includes/snippets/java/delete-registratrant-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-registratrant-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
