@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aa7e1079333ad5025ec902c0a049c122f17e1f84
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: dd7e3dc8c31676c5d97d76dfb5d563c72795abe0
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996510"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321776"
 ---
 # <a name="list-messages-in-a-chat"></a>列出聊天中的消息
 
@@ -61,9 +61,11 @@ GET /chats/{chat-id}/messages
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatMessage](../resources/chatmessage.md) 对象集合。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-request-without-optional-prefer-header"></a>示例 1：没有可选首选标头的请求
+
+#### <a name="request"></a>请求
 
 下面展示了示例请求。 传递 `$top=2` 来检索两条消息。
 
@@ -92,14 +94,14 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 [!INCLUDE [sample-code](../includes/snippets/java/get-allchatmessages-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-allchatmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 以下示例显示了相应的响应。
 
 <!-- {
@@ -114,7 +116,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3A2da4c29f6d7041eca70b638b43d45437%40thread.v2')/messages",
-    "@odata.count": 2,
+    "@odata.count": 3,
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
     "value": [
         {
@@ -134,6 +136,7 @@ Content-type: application/json
             "webUrl": null,
             "channelIdentity": null,
             "policyViolation": null,
+            "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,
@@ -168,6 +171,7 @@ Content-type: application/json
             "webUrl": null,
             "channelIdentity": null,
             "policyViolation": null,
+            "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,
@@ -184,6 +188,195 @@ Content-type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": []
+        },
+        {
+            "id": "1615943825123",
+            "replyToId": null,
+            "etag": "1615943825123",
+            "messageType": "unknownFutureValue",
+            "createdDateTime": "2021-03-1706:47:05.123Z",
+            "lastModifiedDateTime": "2021-03-1706:47:05.123Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": null,
+            "body": {
+                "contentType": "html",
+                "content": "<systemEventMessage/>"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": [],
+            "eventDetail": {
+                "@odata.type": "#microsoft.graph.chatRenamedEventMessageDetail",
+                "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+                "chatDisplayName": "Graph Members",
+                "initiator": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
+                        "displayName": null,
+                        "userIdentityType": "aadUser"
+                    }
+                }
+            }
+        }
+    ]
+}
+```
+
+### <a name="example-2-request-with-optional-prefer-header"></a>示例 2：具有可选首选标头的请求
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。 传递 `$top=2` 来检索两条消息。
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_allchatmessages_w"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2
+
+Prefer: include-unknown-enum-members
+```
+
+#### <a name="response"></a>响应
+下面是请求标头中提供 `Prefer: include-unknown-enum-members` 时的响应示例。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3A2da4c29f6d7041eca70b638b43d45437%40thread.v2')/messages",
+    "@odata.count": 3,
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+    "value": [
+        {
+            "id": "1616964509832",
+            "replyToId": null,
+            "etag": "1616964509832",
+            "messageType": "message",
+            "createdDateTime": "2021-03-28T20:48:29.832Z",
+            "lastModifiedDateTime": "2021-03-28T20:48:29.832Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "eventDetail": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Robin Kline",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "text",
+                "content": "Hello world"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
+        },
+        {
+            "id": "1615971548136",
+            "replyToId": null,
+            "etag": "1615971548136",
+            "messageType": "message",
+            "createdDateTime": "2021-03-17T08:59:08.136Z",
+            "lastModifiedDateTime": "2021-03-17T08:59:08.136Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "eventDetail": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Robin Kline",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div><div><div><span><img height=\"63\" src=\"https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv/$value\" width=\"67\" style=\"vertical-align:bottom; width:67px; height:63px\"></span></div></div></div>"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
+        },
+        {
+            "id": "1615943825123",
+            "replyToId": null,
+            "etag": "1615943825123",
+            "messageType": "systemEventMessage",
+            "createdDateTime": "2021-03-1706:47:05.123Z",
+            "lastModifiedDateTime": "2021-03-1706:47:05.123Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": null,
+            "body": {
+                "contentType": "html",
+                "content": "<systemEventMessage/>"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": [],
+            "eventDetail": {
+                "@odata.type": "#microsoft.graph.chatRenamedEventMessageDetail",
+                "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+                "chatDisplayName": "Graph Members",
+                "initiator": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
+                        "displayName": null,
+                        "userIdentityType": "aadUser"
+                    }
+                }
+            }
         }
     ]
 }

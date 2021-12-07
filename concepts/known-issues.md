@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: e0e6ac6237d9d6dce6d5ec786b69d6faaba8b814
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 09efbe4e6d4ff5cefa986e12fa730dc2ec418505
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123577"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321818"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -370,7 +370,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ## <a name="reports"></a>报告
 
-### <a name="azure-ad-activity-reports-can-return-an-error"></a>Azure AD 活动报告可能返回错误
+### <a name="license-check-errors-for-azure-ad-activity-reports"></a>Azure AD 活动报告的许可证检查错误
 
 当你拥有有效的 Azure AD Premium 许可证并调用 [directoryAudit](/graph/api/resources/directoryaudit)、[signIn](/graph/api/resources/signin) 或[预配 ](/graph/api/resources/provisioningobjectsummary)Azure AD 活动报告 API 时，你可能仍会遇到类似于以下内容的错误消息：
 
