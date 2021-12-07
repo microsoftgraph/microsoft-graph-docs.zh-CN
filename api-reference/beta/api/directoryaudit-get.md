@@ -1,16 +1,16 @@
 ---
 title: 获取 directoryAudit
-description: 介绍从 Microsoft Graph API (beta 版本) directoryAudit (实体的 get) 。
+description: 介绍从 Microsoft Graph API (beta)  () 获取 directoryAudit 资源实体) 。
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 4e8574d6988c1e593f30ad3721e98ab6ecdb5e12
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: c7b7adaad001d69ee154d0b368468b54f6e2b2e9
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225474"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321769"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
@@ -20,7 +20,7 @@ ms.locfileid: "61225474"
 
 获取特定的Azure Active Directory 审核日志项。 这包括 Azure Active Directory 中的各种服务生成的 审核日志 项，如用户、应用程序、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 、自助服务组管理等。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,10 +28,10 @@ ms.locfileid: "61225474"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|Application | AuditLog.Read.All 和 Directory.Read.All | 
+|应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph/known-issues#azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 有 [一个已知](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 此外，应用还必须向 Azure AD [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudit-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

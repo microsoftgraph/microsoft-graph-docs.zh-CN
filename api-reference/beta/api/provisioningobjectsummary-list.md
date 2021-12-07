@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 3f9d3d360cba62623125fddbf9d82d30f3c1b4b4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b2852c24b6f29a98a3b5dd6125711169efe574d5
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019299"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321972"
 ---
 # <a name="list-provisioningobjectsummary"></a>列出 provisioningObjectSummary
 
@@ -31,7 +31,7 @@ ms.locfileid: "61019299"
 |应用程序 | AuditLog.Read.All 和 Directory.Read.All |
 
  > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph/known-issues#azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 有 [一个已知](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,7 +59,7 @@ GET /auditLogs/provisioning
 |:----------------|:------|
 |id| eq， contains|
 |activityDateTime| eq|
-|tenantid|eq， contains|
+|tenantId|eq， contains|
 |jobid|eq， contains|
 |changeid|eq， contains|
 |cycleid|eq， contains|
@@ -80,7 +80,7 @@ GET /auditLogs/provisioning
 |targetIdentity/displayName|eq， contains|
 |initiatedBy/displayName|eq， contains|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头        | 值                      |
 |:--------------|:---------------------------|
@@ -127,7 +127,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 [!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-provisioningobjectsummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -288,7 +288,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 [!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-error-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-provisioningobjectsummary-error-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

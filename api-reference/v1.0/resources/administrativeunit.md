@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fee9c6254dd06611a01378c88b516f4e58575ade
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 4228c2f4cb4f7dfcd9087a6c6fcf8e28f6dcdf34
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226538"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321615"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -43,19 +43,23 @@ ms.locfileid: "61226538"
 |[删除作用域角色成员](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 删除作用域角色成员。|
 
 ## <a name="properties"></a>属性
+
+> [!IMPORTANT]
+> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries#administrative-unit-properties)。
+
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|string|管理单元的可选说明。|
-|displayName|string|管理单元的显示名称。|
-|id|string|管理单元的唯一标识符。 只读。|
+|说明|string|管理单元的可选说明。 支持 `$filter`（`eq`、`ne`、`in`、`startsWith`）。|
+|displayName|string|管理单元的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。|
+|id|string|管理单元的唯一标识符。 只读。 支持 `$filter`（`eq`）。|
 |visibility|string|控制管理单元及其成员是隐藏的还是公开的。 可以设置为 `HiddenMembership` 或 `Public` 。 如果未设置，默认行为为 `Public` 。 设置为 `HiddenMembership` 时，只有管理单元的成员可以列出该管理单元的其他成员。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为此管理单元定义的开放扩展集合。 可为 Null。|
-|members|[directoryObject](directoryobject.md) collection|是此管理单元的成员的用户和组。 HTTP 方法：GET (list members) 、POST (add members) 、DELETE (remove members) 。|
-|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此管理单元的作用域角色成员。  HTTP 方法：GET (list scopedRoleMemberships) ，POST (add scopedRoleMembership) ， DELETE (remove scopedRoleMembership) 。 |
+|members|[directoryObject](directoryobject.md) 集合|是此管理单元的成员的用户和组。 HTTP 方法：GET (list members) 、POST (add members) 、DELETE (remove members) 。|
+|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此管理单元的 Scoped-role 成员。  HTTP 方法：GET (list scopedRoleMemberships) ，POST (add scopedRoleMembership) ， DELETE (remove scopedRoleMembership) . |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 0ebae0a1b791bacccff43539f2a19f8e13452f2f
-ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
+ms.openlocfilehash: 64a793151e685e008999b87eeea32dc5e79a7d0a
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60805491"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322208"
 ---
 # <a name="cloudpcprovisioningpolicy-resource-type"></a>cloudPcProvisioningPolicy 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "60805491"
 
 表示云电脑预配策略。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -42,11 +42,12 @@ ms.locfileid: "60805491"
 |imageId|String|你想要在云电脑中预配的操作系统映像的 ID。 库类型图像的格式为：{publisher_offer_sku}。 每个参数支持的值如下所示：<ul><li>发布者：Microsoftwindowsdesktop。</li> <li>offer：windows-ent-cpc。</li> <li>sku：21h1-ent-cpc-m365， 21h1-ent-cpc-os、20h2-ent-cpc-m365、20h2-ent-cpc-os、20h1-ent-cpc-m365、20h1-ent-cpc-os、19h2-ent-cpc-m365 和 19h2-ent-cpc-os。</li></ul>|
 |imageDisplayName|String|显示名称预配的操作系统映像的映像。|
 |imageType|cloudPcProvisioningPolicyImageType|你想要在云 (预配的操作系统映像) 库类型。 可取值为：`gallery`、`custom`。|
+|microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftManagedDesktop.md)|云解决方案的特定Microsoft 托管桌面，使客户能够获取云电脑的托管设备体验。 管理员必须先配置Microsoft 托管桌面，然后才能启用此配置。|
 |domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|指定云电脑如何加入Azure Active Directory。|
 
 ## <a name="relationships"></a>关系
 
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) 集合|已定义的设置策略分配集合。 表示已分配Microsoft 365策略的Azure AD组和安全组集。 仅在 `$expand` 上返回。 请参阅 [获取](../api/cloudpcprovisioningpolicy-get.md) 分配关系的示例。 |
 
@@ -72,6 +73,10 @@ ms.locfileid: "60805491"
   "imageId": "String",
   "imageDisplayName": "String",
   "imageType": "String",
+  "microsoftManagedDesktop": {
+    "type": "String",
+    "profile": "String"
+  },
   "domainJoinConfiguration": {
     "@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"
   }

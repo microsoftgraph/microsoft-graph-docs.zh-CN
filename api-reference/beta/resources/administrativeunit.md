@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1cd7d8192d701e76f64ff7f7dfbc6a2c39e1ff1b
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 1dc8844506a7610f6f52b84cfc8abaf4f00d7182
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224214"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322119"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "61224214"
 |[获取](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |读取特定 administrativeUnit 对象的属性和关系。|
 |[更新](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |更新 administrativeUnit 对象。 |
 |[删除](../api/administrativeunit-delete.md) | 无 |删除 administrativeUnit 对象。 |
-|[获取增量](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|获取新创建、更新或删除 **的管理单元** ，而无需执行整个资源集合的完全读取。|
+|[Get delta](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|获取新创建、更新或删除 **的管理单元** ，而无需执行整个资源集合的完全读取。|
 |[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 向用户 (组添加成员) 。|
 |[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取用户和 (组) 列表。|
 |[获取成员](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 获取特定成员。|
@@ -54,19 +54,23 @@ ms.locfileid: "61224214"
 |[添加架构扩展值](/graph/extensibility-schema-groups) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 
 ## <a name="properties"></a>属性
+
+> [!IMPORTANT]
+> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries#administrative-unit-properties)。
+
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|string|管理单元的可选说明。|
-|displayName|string|管理单元的显示名称。|
-|id|string|管理单元的唯一标识符。 只读。|
+|说明|string|管理单元的可选说明。 支持 `$filter`（`eq`、`ne`、`in`、`startsWith`）。|
+|displayName|string|管理单元的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。|
+|id|string|管理单元的唯一标识符。 只读。 支持 `$filter`（`eq`）。|
 |visibility|string|控制管理单元及其成员是隐藏的还是公开的。 可以设置为 `HiddenMembership` 或 `Public` 。 如果未设置，默认行为为 `Public` 。 设置为 `HiddenMembership` 时，只有管理单元的成员可以列出该管理单元的其他成员。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为此管理单元定义的开放扩展集合。 可为 Null。|
-|members|[directoryObject](directoryobject.md) collection|是此管理单元的成员的用户和组。 HTTP 方法：GET (list members) 、POST (add members) 、DELETE (remove members) 。|
-|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此管理单元的作用域角色成员。  HTTP 方法：GET (list scopedRoleMemberships) ，POST (add scopedRoleMembership) ， DELETE (remove scopedRoleMembership) 。 |
+|members|[directoryObject](directoryobject.md) 集合|是此管理单元的成员的用户和组。 HTTP 方法：GET (list members) 、POST (add members) 、DELETE (remove members) 。|
+|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此管理单元的 Scoped-role 成员。  HTTP 方法：GET (list scopedRoleMemberships) ，POST (add scopedRoleMembership) ， DELETE (remove scopedRoleMembership) . |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 10e47da1f75bb405d37384cdd7c87664150dbff9
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: 34f4a662e0825698e36c11eb67488da37c9c5f6b
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307641"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322252"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -133,7 +133,7 @@ ms.locfileid: "61307641"
 ## <a name="properties"></a>属性
 
 > [!IMPORTANT]
-> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries#user-properties)。
 
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|

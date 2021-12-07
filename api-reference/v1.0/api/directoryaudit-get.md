@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: e5e7ee0e48c6a1c60c003dda684e67912f6fff6d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: aa1b53b8aa1b16b3aa637a078b74d65e3a2cb15e
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974095"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321881"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
@@ -29,7 +29,7 @@ ms.locfileid: "60974095"
 |应用程序 | AuditLog.Read.All 和 Directory.Read.All |
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph/known-issues#azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 有 [一个已知](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudit-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

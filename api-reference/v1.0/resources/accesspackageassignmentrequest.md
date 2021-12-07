@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2581172e02eede572de589b4122bec646306baed
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 06fbb94ff6cdd363f2c8c1449db4267a0695b63c
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242318"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322112"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>accessPackageAssignmentRequest 资源类型
 
@@ -19,10 +19,11 @@ ms.locfileid: "61242318"
 
 在[Azure AD中](entitlementmanagement-root.md)，访问包分配请求由希望获取访问包分配的用户或代表该用户创建。 如果请求成功，并且经过任何必要的审批，用户将收到访问包分配，并且是生成的访问包分配的主题。  Azure AD还自动创建访问包分配请求，以跟踪访问删除。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md) 集合|检索 **accesspackageassignmentrequest 对象** 的列表。 |
+| [创建 accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | 创建新的 **accessPackageAssignmentRequest** 对象。 |
 |[获取 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|读取 **accessPackageAssignmentRequest** 对象的属性和关系。 |
 |[删除 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md)|无|删除 **accessPackageAssignmentRequest**。 |
 |[filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 集合|检索已登录 **用户筛选的 accessPackageAssignmentRequest** 对象列表。|
@@ -37,7 +38,7 @@ ms.locfileid: "61242318"
 |requestType|accessPackageRequestType|请求的类型。 可能的值是 `notSpecified` `userAdd` `userUpdate` `userRemove` `adminAdd` `adminUpdate` ：、、、、、、、。 `adminRemove` `systemAdd` `systemUpdate` `systemRemove` `onBehalfAdd` `unknownFutureValue` 来自用户本身的请求的 requestType 为 `UserAdd` 或 `UserRemove` 。 一旦设置此属性，就无法更改。|
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|要分配给请求者的日期范围。 一旦设置此属性，就无法更改。|
 |state|accessPackageRequestState|请求的状态。 可取值包括：`submitted`、`pendingApproval`、`delivering`、`delivered`、`deliveryFailed`、`denied`、`scheduled`、`canceled`、`partiallyDelivered`、`unknownFutureValue`。 只读。|
-|status|String|有关请求处理状态详细信息。 只读。|
+|状态|String|有关请求处理状态详细信息。 只读。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

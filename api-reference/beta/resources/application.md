@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: d0b36ecc2951744684c6ae24dbb9d19111c00ff8
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: fd7c366a86e07214a4971326916c1eeb70e5a607
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61285187"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321825"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -74,7 +74,7 @@ ms.locfileid: "61285187"
 ## <a name="properties"></a>属性
 
 > [!IMPORTANT]
-> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries#application-properties)。
 
 | 属性 | 类型 | Description |
 |:---------------|:--------|:----------|

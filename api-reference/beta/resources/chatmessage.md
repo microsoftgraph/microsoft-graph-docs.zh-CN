@@ -5,12 +5,12 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6475d46bfba12ec297b28295243f39da40f54f4a
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 391a882876772930479c0b01079a138fe33ac81e
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60083893"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321797"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -20,16 +20,16 @@ ms.locfileid: "60083893"
 
 表示 [渠道](channel.md)或[聊天](chat.md)中的单个聊天信息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
 
-> **注意**：此资源支持使用更改通知 (、更新和删除) 订阅 [更改](../resources/webhooks.md)。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatMessage)。
+> **注意**：此资源支持订阅更改 (使用更改通知) 、更新和 [删除更改](../resources/webhooks.md)。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatMessage)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |**频道消息**| | |
 |[列出频道中的消息](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) 集合 | 频道中所有根消息的列表。|
 |[获取频道中消息的增量](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的增量消息。 |
-|[创建新频道消息的订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新邮件、已编辑邮件和已删除邮件，以及响应消息。 |
+|[创建新频道消息的订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新邮件、已编辑邮件和已删除邮件以及响应消息。 |
 |[获取频道中的消息](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | 获取频道中的单个根消息。|
 |[在频道中发送消息](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| 在频道中创建新的根消息。|
 |[更新频道中的消息](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| 更新 **聊天消息的 policyViolation** 属性。|
@@ -41,7 +41,7 @@ ms.locfileid: "60083893"
 |**聊天消息**| | |
 |[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 列出聊天中的聊天消息。 |
 |[获取聊天中的消息](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个聊天消息。 |
-|[获取用户的所有聊天消息](../api/chats-getallmessages.md)| [chat](chat.md) 集合| 从用户是参与者的所有聊天获取消息，包括一对一聊天、群聊和会议聊天。 |
+|[为用户在所有聊天中获取消息](../api/chats-getallmessages.md)| [chat](chat.md) 集合| 从用户是参与者的所有聊天获取消息，包括一对一聊天、群聊和会议聊天。 |
 |[获取所有频道消息](../api/channel-getallmessages.md)|[channel](channel.md) 集合 | 获取用户参与的所有频道中的所有消息。 |
 |[创建新聊天消息的订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新的、编辑的和删除的聊天消息，并响应这些消息。 |
 |[在聊天中发送消息](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| 在现有的一对一或群组聊天对话中发送聊天消息。|
@@ -63,7 +63,7 @@ ms.locfileid: "60083893"
 |createdDateTime|dateTimeOffset|创建聊天消息的时间戳。|
 |lastModifiedDateTime|dateTimeOffset|只读。 创建聊天消息的时间戳 (设置) 修改，包括添加或删除回应时。 |
 |lastEditedDateTime|dateTimeOffset|只读。 编辑聊天消息的时间戳。 在用户界面中触发"已编辑Teams标记。 如果未进行编辑，则值为 `null` 。|
-|deletedDateTime|dateTimeOffset|只读。 删除聊天消息的时间戳，如果未删除，则返回 null。 |
+|deletedDateTime|dateTimeOffset|只读。 删除聊天消息的时间戳;如果未删除，则返回 null。 |
 |subject|string| 纯文本形式的聊天消息的主题。|
 |body|[itemBody](itembody.md)|聊天消息内容的纯文本/HTML 表示形式。 表示形式由正文中的 contentType 进行指定。 如果聊天消息包含 [chatMessageMention](chatmessagemention.md)，则内容始终为 HTML 格式。 |
 |摘要|string| 可用于推送通知和摘要视图或回退视图的聊天消息的摘要文本。 仅适用于频道聊天消息，不应用于聊天中的聊天消息。 |
@@ -73,10 +73,10 @@ ms.locfileid: "60083893"
 |反应| [chatMessageReaction](chatmessagereaction.md) 集合 | 此聊天消息的反应 (例如，Like) 。|
 |区域设置|string|客户端设置的聊天消息区域设置。 始终设置为 `en-us`。|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |定义 DLP 应用程序中数据丢失防护设置的策略违反 () 属性。|
-|chatId|string|如果消息是在聊天中发送的，则代表聊天的标识。|
+|chatId|string|如果消息是在聊天中 **发送的**，则表示聊天 **的标识**。|
 |channelIdentity|[channelIdentity](channelidentity.md)|如果消息是在频道中发送的，则代表频道的标识。|
-|webUrl|string|只读。 指向邮件中Microsoft Teams。|
-|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|只读。  如果存在，表示聊天、频道或团队中发生的事件的详细信息，例如，已添加成员等。 对于事件消息 **，messageType** 属性将设置为 `systemEventMessage` 。|
+|WebUrl|string|只读。 指向邮件中Microsoft Teams。|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|只读。  如果存在，表示聊天、频道或团队中发生的事件的详细信息，例如添加新成员。  对于事件消息 **，messageType** 属性将设置为 `systemEventMessage` 。|
 
 ## <a name="relationships"></a>关系
 

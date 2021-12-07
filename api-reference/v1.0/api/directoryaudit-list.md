@@ -1,16 +1,16 @@
 ---
 title: 列出 directoryAudits
-description: 介绍 microsoft Graph API (directoryAudit) 列表方法。
+description: 介绍 microsoft (API) directoryAudit 资源Graph方法。
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: ce44ffc58239d5d3649027c4e723920f7fe12f1a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ca9550b54061ed93c6dabe859cde5f58e0025b7a
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000438"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322014"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -29,7 +29,7 @@ ms.locfileid: "61000438"
 | 应用程序                            | AuditLog.Read.All 和 Directory.Read.All    |
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph/known-issues#azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 有 [一个已知](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -65,7 +65,7 @@ GET /auditLogs/directoryaudits
 | targetResources/any (t：t/displayName eq '{value}')             | eq                  |
 | targetResources/any (x： startswith (x/displayName， '{value}') )  | startswith          |
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明   |
 | :------------ | :------------ |
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudit-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

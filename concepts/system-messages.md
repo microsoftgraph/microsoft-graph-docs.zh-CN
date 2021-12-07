@@ -5,22 +5,22 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 306c45ecf79454e01353101fbf1196304935932f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 26e021f6e9cc68cab2b44df32c41fe1225b59215
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138986"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321804"
 ---
 # <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>使用 Microsoft Graph API 获取 Microsoft Teams 的系统消息
 
 Microsoft Teams 为添加到聊天中的成员、已更新团队名称和已更新频道说明等事件生成系统消息。 通过系统消息，调用方可以深入了解团队、频道或聊天中发生的事件。
 
 
-Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) GET 操作和 [聊天和频道消息的更改通知](teams-changenotifications-chatmessage.md)的一部分公开。
+Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) GET 操作和 [聊天和频道消息的更改通知](teams-changenotifications-chatmessage.md)的一部分公开。
 
 
-系统消息显示为 [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) 对象。
+系统消息显示为 [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) 对象。
 在这种情况下，**messageType** 属性设置为 `systemEventMessage`，并且 **eventDetail** 属性提供事件详细信息。
 
 
@@ -33,7 +33,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
 - GET /chats/{chat-id}/messages
 - GET /chats/{chat-id}/messages/{message-id}
 
-有关详细信息，请参阅 [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true)。
+有关详细信息，请参阅 [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true)。
 
 ## <a name="supported-change-notifications"></a>支持的更改通知
 

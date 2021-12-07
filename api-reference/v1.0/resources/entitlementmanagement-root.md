@@ -1,16 +1,16 @@
 ---
 title: 使用 Azure AD权限管理 API
-description: 通过权利管理来管理对资源（包括组、应用和Azure AD的访问权限
+description: 通过权利管理管理对资源（包括组、应用和Azure AD的访问）
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: f296c4c29f150100b585e8c86651e42d841a8820
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 38d30da6d55ebdff4abb55d584b4c0cb7d59a9fa
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242368"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322007"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD权限管理 API
 
@@ -35,7 +35,7 @@ Azure Active Directory (Azure AD) 权限管理可帮助您管理对内部用户�
 
 下表列出了可用于与权利管理相关资源进行交互的方法。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法   | 返回类型 |说明|
 |:---------------|:--------|:----------|
@@ -48,6 +48,7 @@ Azure Active Directory (Azure AD) 权限管理可帮助您管理对内部用户�
 | [删除 accessPackage](../api/accesspackage-delete.md) | | 删除 **accessPackage**。 |
 | [FilterByCurrentUser](../api/accesspackage-filterbycurrentuser.md) | [accessPackage](accesspackage.md) 集合 | 检索在已登录用户上筛选的 **accessPackage** 对象列表。 |
 | [列出 accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) 集合 | 检索 **accessPackageAssignmentRequest 对象** 的列表。 |
+| [创建 accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | 创建新的 **accessPackageAssignmentRequest** 对象。 |
 | [获取 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | 读取 **accessPackageAssignmentRequest** 对象的属性和关系。 |
 | [删除 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md) |无 | 删除 **accessPackageAssignmentRequest**。 |
 |[FilterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 集合|检索已登录 **用户筛选的 accessPackageAssignmentRequest** 对象列表。|

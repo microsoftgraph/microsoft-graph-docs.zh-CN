@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 8e2a61858e1f01ee1070f7d7b1c7d1aaeb68b9e2
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 22b825a04b1679385aa0cf14c6421a820b312941
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765937"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321790"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>cloudPcDeviceImage 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "59765937"
 
 表示云电脑上的图像资源。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -42,8 +42,8 @@ ms.locfileid: "59765937"
 |osBuildNumber|String|映像的操作系统生成版本。 例如：1909。|
 |operatingSystem|String|映像的操作系统。 例如：Windows 10 企业版。|
 |lastModifiedDateTime|DateTimeOffset|上次修改图像的数据和时间。 时间以 ISO 8601 格式显示，协调世界时 (UTC) 时间。 例如，2014 年 1 月 1 日午夜 UTC 显示为"2014-01-01T00：00：00Z"。|
-|status|cloudPcDeviceImageStatus|云电脑上映像的状态。 可取值为：`pending`、`ready`、`failed`。|
-|statusDetails|cloudPcDeviceImageStatusDetails|图像状态的详细信息，指示上传失败的原因（如果适用）。 可能的值为： `internalServerError`、 `sourceImageNotFound`、 `osVersionNotSupported`和 `sourceImageInvalid`。|
+|状态|cloudPcDeviceImageStatus|云电脑上映像的状态。 可取值为：`pending`、`ready`、`failed`。|
+|statusDetails|cloudPcDeviceImageStatusDetails|图像状态的详细信息，指示上传失败的原因（如果适用）。 可能的值是 `internalServerError` `sourceImageNotFound` `osVersionNotSupported` ：、、、 `sourceImageInvalid` 和 `sourceImageNotGeneralized` 。|
 
 ### <a name="cloudpcdeviceimagestatus-values"></a>cloudPcDeviceImageStatus 值
 
@@ -61,6 +61,8 @@ ms.locfileid: "59765937"
 |sourceImageNotFound|无法访问或找不到源图像。|
 |osVersionNotSupported| 不支持操作系统版本。|
 |sourceImageInvalid|源映像用于无效虚拟机Windows虚拟机。|
+|sourceImageNotGeneralized|上载的图像尚未通用化。 运行 sysprep/generalize 命令后重新加载映像。 若要了解详细信息，请参阅在创建映像之前通过通用 [化 VM 删除计算机特定信息](/azure/virtual-machines/generalize)。|
+|unknownFutureValue|可发展枚举 sentinel 值。 请勿使用。|
 
 ## <a name="relationships"></a>关系
 

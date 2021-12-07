@@ -1,16 +1,16 @@
 ---
 title: 列出人员
 description: 检索 person 对象列表，这些对象按与 user 的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。
-author: dkershaw10
+author: anthona
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 9366cb32b701f25984f0bfa106edba759e15a10e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8780939bb1074925f14dca1cd4d80f9e2ae2fe96
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016805"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322266"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -26,9 +26,9 @@ ms.locfileid: "61016805"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | People.Read    |
+|委派（工作或学校帐户） | People.Read、People.Read.All    |
 |委派（个人 Microsoft 帐户） | People.Read    |
-|应用程序 | 不支持。 |
+|应用程序 | People.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/people
 
 ### <a name="browse"></a>浏览
 
-本节中的请求根据通信、协作和业务关系，获取与登录 () `/me` 相关最多的人员。
+本节中的请求根据通信、协作和业务关系，获取与登录 () `/me` 关系最相关的人员。
 
 默认情况下，每个响应都会返回10条记录，但您可以 改变这点 使用 *$顶部* 参数。 这些请求需要 People.Read 权限。
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/me/people
 [!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-person-collection-beta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -231,7 +231,7 @@ GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
 
 #### <a name="selecting-the-fields-to-return"></a>选择要返回的字段
 
-可以使用 $select 参数选择一个或多个字段 *，* 以限制从服务器返回的数据量。 该 *@ odata.id* 字段总会返回。
+可以使用 $select 参数选择一个或多个字段，以限制从服务器返回的数据量。 该 *@ odata.id* 字段总会返回。
 
 以下示例将响应限制为 10 个最相关的人的 *DisplayName* 和 *EmailAddress。*
 

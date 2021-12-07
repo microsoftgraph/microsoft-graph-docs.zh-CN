@@ -1,16 +1,16 @@
 ---
 title: 多租户管理枚举值
 description: Microsoft Graph多租户管理枚举值
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: enumTypes
-ms.openlocfilehash: 1814e7c846b9a3c2394497d0221d2bb8a7dc5a86
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7218824959465cb7740953f837da0e3e630ec449
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040573"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321622"
 ---
 # <a name="multi-tenant-management-enumeration-values"></a>多租户管理枚举值
 
@@ -50,7 +50,7 @@ ms.locfileid: "59040573"
 
 |成员|
 |:---|
-|字符串|
+|string|
 |integer|
 |boolean|
 |guid|
@@ -68,6 +68,17 @@ ms.locfileid: "59040573"
 |inProcess|
 |active|
 |inactive|
+|unknownFutureValue|
+
+### <a name="tenantonboardingeligibilityreason-values"></a>tenantOnboardingEligibilityReason 值
+
+|成员|
+|:---|
+|无|
+|contractType|
+|delegatedAdminPrivileges|
+|usersCount|
+|license|
 |unknownFutureValue|
 
 ### <a name="workloadactioncategory-values"></a>workloadActionCategory 值

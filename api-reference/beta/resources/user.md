@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 25e947c5f244f2ba68f6353cdc44c304c742660c
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: bfeb44e19d355b945b14dd83cb6ac5126ffcbe34
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307613"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321902"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -163,7 +163,7 @@ ms.locfileid: "61307613"
 ## <a name="properties"></a>属性
 
 > [!IMPORTANT]
-> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries#user-properties)。
 
 | 属性       | 类型    | 说明 |
 |:---------------|:--------|:------------|
@@ -235,7 +235,7 @@ ms.locfileid: "61307613"
 | showInAddressList | Boolean | 如果 Outlook 全局地址列表应包含此用户，则值为 `true`，否则为 `false`。 如果未设置，则将其视为 `true`。 对于通过邀请管理器邀请的用户，此属性将设置为 `false`。 <br><br>支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。 |
 | signInSessionsValidFromDateTime | DateTimeOffset | 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
 | skills | String collection | 供用户枚举其技能的列表。 <br><br>仅在 `$select` 上返回。 |
-| signInActivity | [signInActivity](signinactivity.md) | 获取指定用户登录的最后一个登录日期和请求 ID。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`） *但是*，不支持任何其他的可筛选属性。 **注意：** 此属性的详细信息需要 Azure AD Premium P1/P2 许可证和 **AuditLog.Read.All** 权限。<br><br>**注意：** 检索此属性时存在一个 [已知问题](/graph/known-issues#azure-ad-activity-reports)。|
+| signInActivity | [signInActivity](signinactivity.md) | 获取指定用户登录的最后一个登录日期和请求 ID。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`） *但是*，不支持任何其他的可筛选属性。 **注意：** 此属性的详细信息需要 Azure AD Premium P1/P2 许可证和 **AuditLog.Read.All** 权限。<br><br>**注意：** 检索此属性时存在一个 [已知问题](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports)。|
 | state | String | 用户地址中的省/市/自治区或省。 最大长度为 128 个字符。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
 | streetAddress | String | 用户公司地点的街道地址。 最大长度为 1024 个字符。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 | surname | String | 用户的姓氏。 最大长度为 64 个字符。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |

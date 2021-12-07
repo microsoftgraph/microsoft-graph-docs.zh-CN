@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d1ef20e1c8d3a148718abaf0b5ca4af881547c3f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: aaf102888087c6fecbd62276a48aaba6b49fe7c5
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026618"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322231"
 ---
 # <a name="get-organizationsettings"></a>获取 organizationSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "61026618"
 
 检索 [organizationSettings](../resources/organizationsettings.md) 对象的属性和关系，包括 **profileCardProperties**。
 
-此操作不会通过 [itemInsights](../resources/iteminsightssettings.md)导航属性返回 **itemInsightsSettings。** 请[改为使用 get itemInsightsSettings。](iteminsightssettings-get.md)
+此操作不会返回 [insightsSettings](../resources/insightssettings.md)。 根据见解的类型，可以使用列表 [itemInsights](organizationsettings-list-iteminsights.md) 或 [list peopleInsights 获取其设置](organizationsettings-list-peopleinsights.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/organization/a9f3c90b-04fd-4504-a302-47672b
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

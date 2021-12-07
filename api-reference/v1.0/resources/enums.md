@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 08d5cc4fca905c2b8ef442839e13752186417e5d
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 5e037aea9f5582760731fdc351b5b94bdd15a0d0
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241679"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322000"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -891,7 +891,7 @@ ms.locfileid: "61241679"
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | 参考
 
 
@@ -1122,7 +1122,7 @@ ms.locfileid: "61241679"
 |dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN注册表值类型。|
 |dwordBigEndian|4| REG_DWORD_BIG_ENDIAN注册表值类型。|
 |expandSz|5| REG_EXPAND_SZ注册表值类型。|
-|链接|6 | REG_LINK注册表值类型。|
+|link|6 | REG_LINK注册表值类型。|
 |multiSz|7 | REG_MULTI_SZ注册表值类型。|
 |无|8 | REG_NONE注册表值类型。|
 |qword|9 | REG_QWORD注册表值类型。|
@@ -1376,6 +1376,7 @@ ms.locfileid: "61241679"
 | chatEvent |
 | 键入 |
 | unknownFutureValue |
+| systemEventMessage |
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>chatMessagePolicyViolationDlpActionType 值
 
@@ -1825,4 +1826,23 @@ ms.locfileid: "61241679"
 |default|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### <a name="callrecordingstatus-values"></a>callRecordingStatus 值 
+
+|成员|
+|:---|
+|success|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### <a name="teamworkcalleventtype-values"></a>teamworkCallEventType 值 
+
+|成员|
+|:---|
+|通话|
+|meeting|
+|screenShare|
 |unknownFutureValue|

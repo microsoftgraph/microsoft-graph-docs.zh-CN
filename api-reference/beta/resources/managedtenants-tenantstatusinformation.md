@@ -1,16 +1,16 @@
 ---
 title: tenantStatusInformation 资源类型
 description: 表示托管租户的载入状态信息。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 3e01ac003cda223788e0fc8e6dae01f18667da11
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 4d5cf90ebcb1567a84c4d7e0f00547f0e946598d
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402268"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321965"
 ---
 # <a name="tenantstatusinformation-resource-type"></a>tenantStatusInformation 资源类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "53402268"
 |onboardedByUserId|String|已载入托管租户的帐户的标识符。 可选。 只读。|
 |onboardedDateTime|DateTimeOffset|托管租户载入的日期和时间。 可选。 只读。|
 |onboardingStatus|tenantOnboardingStatus|托管租户的载入状态。 可取值为：`ineligible`、`inProcess`、`active`、`inactive`、`unknownFutureValue`。 可选。 只读。|
+|tenantOnboardingEligibilityReason|tenantOnboardingEligibilityReason|组织中加入资格Microsoft 365 Lighthouse。 可能的值是 `none` `contractType` `delegatedAdminPrivileges` ：、、、 `usersCount` `license` 和 `unknownFutureValue` 。 可选。 只读。|
 |workloadStatuses|[microsoft.graph.managedTenants.workloadStatus](../resources/managedtenants-workloadstatus.md) 集合|托管租户的工作负荷集合。 可选。 只读。|
 
 ## <a name="relationships"></a>关系
