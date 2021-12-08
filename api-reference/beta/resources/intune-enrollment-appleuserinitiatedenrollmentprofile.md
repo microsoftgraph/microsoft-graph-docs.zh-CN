@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ded729deaa453f9a3b80f77714b5a3738e6cf3f
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: c686043371e656a2ebff973b019dd0381be62a2d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494666"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342249"
 ---
 # <a name="appleuserinitiatedenrollmentprofile-resource-type"></a>appleUserInitiatedEnrollmentProfile 资源类型
 
@@ -39,7 +39,7 @@ enrollmentProfile 资源表示配置集合，必须预先提供这些配置才�
 |availableEnrollmentTypeOptions|[appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md) 集合|可用注册类型选项列表|
 |id|String|对象的 GUID|
 |displayName|String|配置文件的名称|
-|说明|String|配置文件的说明|
+|description|String|配置文件的说明|
 |priority|Int32|优先级，0 为最高|
 |平台|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|设备平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`、`androidAOSP`。|
 |createdDateTime|DateTimeOffset|配置文件创建时间|
@@ -78,6 +78,7 @@ enrollmentProfile 资源表示配置集合，必须预先提供这些配置才�
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: onboardingStatus 枚举类型
 description: 租户的载入状态。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 117dbc9cfaf3dd473b00d8a59d052670ebb6ad20
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cd9063fc2e78e8142d19f4eb66a0fac057feb73b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59120428"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345735"
 ---
 # <a name="onboardingstatus-enum-type"></a>onboardingStatus 枚举类型
 
@@ -29,6 +29,9 @@ ms.locfileid: "59120428"
 |inprogress|1|进行中|
 |已载入|2|已载入|
 |failed|3|已失败|
+|offboarding|4|载出|
+|unknownFutureValue|99|UnknownFutureValue|
+
 
 
 

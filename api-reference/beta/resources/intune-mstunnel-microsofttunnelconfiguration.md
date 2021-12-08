@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c76889a97288eb9723d4e965f0bb0971c581002
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d560899a8f47448fd9377d7810125d10a6777960
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60685623"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344839"
 ---
 # <a name="microsofttunnelconfiguration-resource-type"></a>microsoftTunnelConfiguration 资源类型
 
@@ -22,32 +22,32 @@ ms.locfileid: "60685623"
 
 表示设置集合Microsoft Tunnel实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 microsoftTunnelConfigurations](../api/intune-mstunnel-microsofttunnelconfiguration-list.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 集合|列出 [microsoftTunnelConfiguration 对象的属性和](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 关系。|
 |[获取 microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-get.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|读取 [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 对象的属性和关系。|
 |[创建 microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-create.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|创建新的 [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 对象。|
-|[删除 microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-delete.md)|无|删除 [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)。|
+|[删除 microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-delete.md)|None|删除 [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)。|
 |[更新 microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-update.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|更新 [microsoftTunnelConfiguration 对象](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|MicrosoftTunnelConfiguration 的 ID|
-|displayName|字符串|MicrosoftTunnelConfiguration 的显示名称|
-|说明|String|MicrosoftTunnelConfiguration 的说明|
-|network|字符串|将用于为客户端分配虚拟地址的子网|
+|displayName|String|MicrosoftTunnelConfiguration 的 显示名称|
+|description|String|MicrosoftTunnelConfiguration 的说明|
+|network|String|将用于为客户端分配虚拟地址的子网|
 |dnsServers|String collection|客户端将使用的 DNS 服务器|
-|defaultDomainSuffix|字符串|客户端将使用的默认域附录|
+|defaultDomainSuffix|String|客户端将使用的默认域附录|
 |routesInclude|String collection|服务器将路由的路由|
 |routesExclude|String collection|服务器不会路由的路由子集|
-|splitDNS|String 集合|使用提供的 dns 服务器解析的域|
+|splitDNS|字符串集合|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
-|advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) 集合|可应用于服务器的其他设置|
+|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
-|disableUDPConnections|布尔值|设置 DisableUDPConnections 时，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|disableUDPConnections|布尔|设置 DisableUDPConnections 时，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
 
 ## <a name="relationships"></a>关系
 无
@@ -95,6 +95,7 @@ ms.locfileid: "60685623"
   "disableUDPConnections": true
 }
 ```
+
 
 
 

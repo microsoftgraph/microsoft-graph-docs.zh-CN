@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3332c2856968aa5ddcc7841a555f37ae9638496
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: db914be4405385199dc792120d9392fd79713ef1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494947"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342221"
 ---
 # <a name="bulkdriveractionresult-resource-type"></a>bulkDriverActionResult 资源类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "60494947"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|successfulDriverIds|String 集合|操作成功的驱动程序 ID 列表。|
-|failedDriverIds|String 集合|操作失败位置的驱动程序 ID 列表。|
-|notFoundDriverIds|String collection|未找到的驱动程序 ID 列表。|
+|successfulDriverIds|字符串集合|操作成功的驱动程序 ID 列表。|
+|failedDriverIds|字符串集合|操作失败位置的驱动程序 ID 列表。|
+|notFoundDriverIds|字符串集合|未找到的驱动程序 ID 列表。|
 
 ## <a name="relationships"></a>关系
 无
@@ -53,6 +53,7 @@ ms.locfileid: "60494947"
   ]
 }
 ```
+
 
 
 

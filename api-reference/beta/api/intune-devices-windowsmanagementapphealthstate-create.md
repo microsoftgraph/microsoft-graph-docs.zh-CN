@@ -2,15 +2,15 @@
 title: 创建 windowsManagementAppHealthState
 description: 创建新的 windowsManagementAppHealthState 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8fbcf8377c5f0e77fdd1644efd9f390d335ef129
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0a1dd0880258dd0220e1338e004d03ae094ab747
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009775"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343460"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>创建 windowsManagementAppHealthState
 
@@ -27,9 +27,9 @@ ms.locfileid: "59009775"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,12 +53,12 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|管理应用Windows状态的唯一标识符。 此属性是只读的。|
-|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows管理应用运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
+|id|String|管理应用运行状况Windows的唯一标识符。 此属性是只读的。|
+|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows管理应用运行状况。 可取值为：`unknown`、`healthy`、`unhealthy`。|
 |installedVersion|String|Windows管理应用安装的版本。|
 |lastCheckInDateTime|DateTimeOffset|Windows管理应用上次签入时间。|
 |deviceName|String|安装了管理应用Windows的名称。|
-|deviceOSVersion|String|Windows 10安装了管理应用Windows操作系统版本。|
+|deviceOSVersion|String|Windows 10安装管理应用的设备Windows操作系统版本。|
 
 
 
@@ -101,6 +101,7 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
+
 
 
 

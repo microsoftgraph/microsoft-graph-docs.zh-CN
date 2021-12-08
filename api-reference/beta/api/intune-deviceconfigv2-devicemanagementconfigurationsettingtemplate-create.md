@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3a98515b32c3b775631416355168f71e10a7fe2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 38b9a34107c5262ea5dab7b2dd350904e9c8d992
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488127"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346883"
 ---
 # <a name="create-devicemanagementconfigurationsettingtemplate"></a>创建 deviceManagementConfigurationSettingTemplate
 
@@ -116,6 +116,7 @@ Content-Length: 833
   }
 }
 ```
+
 
 
 

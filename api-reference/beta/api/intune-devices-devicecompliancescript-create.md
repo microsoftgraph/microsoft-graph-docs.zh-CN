@@ -2,15 +2,15 @@
 title: 创建 deviceComplianceScript
 description: 创建新的 deviceComplianceScript 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ca9b2dd3e94853d85dd70cabcbf55542618d496
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8790d1ec9962ba9c5cd009695730ba25a830b4d0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018325"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348311"
 ---
 # <a name="create-devicecompliancescript"></a>创建 deviceComplianceScript
 
@@ -27,9 +27,9 @@ ms.locfileid: "59018325"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -57,13 +57,13 @@ POST /deviceManagement/deviceComplianceScripts
 |发布者|String|设备合规性脚本发布者的名称|
 |version|String|设备合规性脚本的版本|
 |displayName|String|设备合规性脚本的名称|
-|说明|String|设备合规性脚本的说明|
-|detectionScriptContent|二进制|检测 powershell 脚本的全部内容|
+|description|String|设备合规性脚本的说明|
+|detectionScriptContent|Binary|检测 powershell 脚本的全部内容|
 |createdDateTime|DateTimeOffset|创建设备合规性脚本的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备合规性脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
-|runAs32Bit|Boolean|指示 PowerShell 脚本 (脚本) 32 位运行|
+|runAs32Bit|布尔|指示 PowerShell 脚本 (32) 32 位运行|
 |roleScopeTagIds|String collection|设备合规性脚本的范围标记标识列表|
 
 
@@ -121,6 +121,7 @@ Content-Length: 592
   ]
 }
 ```
+
 
 
 

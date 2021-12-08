@@ -2,15 +2,15 @@
 title: 更新 remoteAssistanceSettings
 description: 更新 remoteAssistanceSettings 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 056ba18203dad1ff0e59297959e18459a5b879d9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e3d81fbdbab253866de523d6d0c4083b29dc204d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59096429"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343684"
 ---
 # <a name="update-remoteassistancesettings"></a>更新 remoteAssistanceSettings
 
@@ -27,9 +27,9 @@ ms.locfileid: "59096429"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,8 +54,8 @@ PATCH /deviceManagement/remoteAssistanceSettings
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|远程协助设置标识符|
-|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|帐户的远程协助的当前状态。 可能的值包括：notConfigured、disabled、enabled。 管理员可以配置此设置。管理员尚未配置的远程协助设置具有 notConfigured 状态。 默认情况下返回。 可取值为：`notConfigured`、`disabled`、`enabled`。|
-|allowSessionsToUnenrolledDevices|Boolean| 指示是否允许帐户使用到注销设备的会话。 管理员可以配置此设置。默认值为 false。|
+|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|帐户的远程协助的当前状态。 可能的值是：disabled、enabled。 管理员可以配置此设置。管理员尚未配置的远程协助设置处于禁用状态。 默认返回。 可取值为：`disabled`、`enabled`。|
+|allowSessionsToUnenrolledDevices|布尔| 指示是否允许帐户使用到注销设备的会话。 管理员可以配置此设置。默认值为 false。|
 
 
 
@@ -69,11 +69,11 @@ PATCH /deviceManagement/remoteAssistanceSettings
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteAssistanceSettings
 Content-type: application/json
-Content-length: 151
+Content-length: 150
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
-  "remoteAssistanceState": "disabled",
+  "remoteAssistanceState": "enabled",
   "allowSessionsToUnenrolledDevices": true
 }
 ```
@@ -83,15 +83,16 @@ Content-length: 151
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 200
+Content-Length: 199
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
   "id": "cfef360e-360e-cfef-0e36-efcf0e36efcf",
-  "remoteAssistanceState": "disabled",
+  "remoteAssistanceState": "enabled",
   "allowSessionsToUnenrolledDevices": true
 }
 ```
+
 
 
 

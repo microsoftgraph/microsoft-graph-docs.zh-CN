@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9948cd0c0d0b9a052ff8ba911656e8052799d23
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: c572d8b2469deb73d29314afd7454f001ce460e8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488302"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345280"
 ---
 # <a name="list-iosdevicefeaturesconfigurations"></a>列出 iosDeviceFeaturesConfigurations
 
@@ -288,6 +288,7 @@ Content-Length: 8140
   ]
 }
 ```
+
 
 
 

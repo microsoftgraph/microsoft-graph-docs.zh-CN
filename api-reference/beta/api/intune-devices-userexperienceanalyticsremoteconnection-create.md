@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsRemoteConnection
 description: 创建新的 userExperienceAnalyticsRemoteConnection 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b918a4e540230d7fd6a6f6cd7cfab6cd985d1be6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2ff06e498cd2f0d1757ae2e9f4c387c6f98efe90
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59059012"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342102"
 ---
 # <a name="create-userexperienceanalyticsremoteconnection"></a>创建 userExperienceAnalyticsRemoteConnection
 
@@ -27,9 +27,9 @@ ms.locfileid: "59059012"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -125,6 +125,7 @@ Content-Length: 622
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

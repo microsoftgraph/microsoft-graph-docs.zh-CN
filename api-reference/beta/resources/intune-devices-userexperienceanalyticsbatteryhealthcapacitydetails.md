@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b03710f31470a7b1c43b15933b24e6cd90a14731
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: db0c5268b3f40ac726ca98336cb2a1ddf2e8cf9d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689242"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343152"
 ---
 # <a name="userexperienceanalyticsbatteryhealthcapacitydetails-resource-type"></a>userExperienceAnalyticsBatteryHealthCapacityDetails 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "60689242"
 
 用户体验分析电池运行状况容量实体包含分为 3 个类别的设备计数 - 容量为 > 80% 的设备、容量为 50-80% 的设备以及容量为 < 50% 的设备。此 API 提供这 3 个类别中的设备计数。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 userExperienceAnalyticsBatteryHealthCapacityDetails](../api/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails-get.md)|[userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md)|读取 [userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) 对象的属性和关系。|
@@ -58,6 +58,7 @@ ms.locfileid: "60689242"
   "batteryCapacityPoor": 1024
 }
 ```
+
 
 
 

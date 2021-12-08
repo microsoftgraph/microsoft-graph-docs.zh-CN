@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cef153334cdd30044a75ed1cc0e322f6e94ecb64
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 7449a0fd644e23bd7cba49398ecb3c84ac6e739d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487887"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343586"
 ---
 # <a name="operationapprovalrequestentitystatus-resource-type"></a>operationApprovalRequestEntityStatus 资源类型
 
@@ -49,6 +49,7 @@ OperationApprovalRequestEntityStatus 对象
   "entityLocked": true
 }
 ```
+
 
 
 

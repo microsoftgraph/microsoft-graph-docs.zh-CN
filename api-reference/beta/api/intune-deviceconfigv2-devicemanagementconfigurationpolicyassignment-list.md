@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3add4bf83416d65010e3023210450b253eec178c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 9a8e429301af35bf7318d7e8cc93da4bab1404fa
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695865"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347806"
 ---
 # <a name="list-devicemanagementconfigurationpolicyassignments"></a>列出 deviceManagementConfigurationPolicyAssignments
 
@@ -85,6 +85,7 @@ Content-Length: 587
   ]
 }
 ```
+
 
 
 

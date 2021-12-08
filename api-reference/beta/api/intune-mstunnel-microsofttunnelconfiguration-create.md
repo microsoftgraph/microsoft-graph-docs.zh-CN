@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6da18e706ed377e6730eb414c575da9f7bd12206
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b984348c7f296b2f3c48e8960d3c1e22f6fde1f5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696124"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343250"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>创建 microsoftTunnelConfiguration
 
@@ -54,19 +54,19 @@ POST /deviceManagement/microsoftTunnelConfigurations
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|MicrosoftTunnelConfiguration 的 ID|
-|displayName|String|MicrosoftTunnelConfiguration 的显示名称|
-|说明|String|MicrosoftTunnelConfiguration 的说明|
+|displayName|String|MicrosoftTunnelConfiguration 的 显示名称|
+|description|String|MicrosoftTunnelConfiguration 的说明|
 |network|String|将用于为客户端分配虚拟地址的子网|
-|dnsServers|String 集合|客户端将使用的 DNS 服务器|
-|defaultDomainSuffix|字符串|客户端将使用的默认域附录|
-|routesInclude|String 集合|服务器将路由的路由|
-|routesExclude|String collection|服务器不会路由的路由子集|
-|splitDNS|String 集合|使用提供的 dns 服务器解析的域|
+|dnsServers|字符串集合|客户端将使用的 DNS 服务器|
+|defaultDomainSuffix|String|客户端将使用的默认域附录|
+|routesInclude|String collection|服务器将路由的路由|
+|routesExclude|字符串集合|服务器不会路由的路由子集|
+|splitDNS|字符串集合|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
-|advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) 集合|可应用于服务器的其他设置|
+|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
-|disableUDPConnections|布尔值|设置 DisableUDPConnections 时，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|disableUDPConnections|布尔|设置 DisableUDPConnections 时，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
 
 
 
@@ -157,6 +157,7 @@ Content-Length: 831
   "disableUDPConnections": true
 }
 ```
+
 
 
 

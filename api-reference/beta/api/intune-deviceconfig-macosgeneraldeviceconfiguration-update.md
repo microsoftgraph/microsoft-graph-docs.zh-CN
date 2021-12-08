@@ -2,15 +2,15 @@
 title: 更新 macOSGeneralDeviceConfiguration
 description: 更新 macOSGeneralDeviceConfiguration 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e149261793190d93334d2a66c64b091cc25355c7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b9fff6b640304215b195e4efbc303248bab25671
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116953"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347555"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>更新 macOSGeneralDeviceConfiguration
 
@@ -58,12 +58,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
@@ -87,17 +87,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |spotlightBlockInternetResults|Boolean|指示是否阻止聚焦从 Internet 搜索返回任何结果。|
 |keyboardBlockDictation|Boolean|指示是否阻止用户使用听写输入。|
 |definitionLookupBlocked|Boolean|指示是否阻止定义查找。|
-|appleWatchBlockAutoUnlock|Boolean|指示是否阻止用户使用 Apple Watch 解锁其 Mac。|
+|appleWatchBlockAutoUnlock|布尔|指示是否阻止用户使用 Apple Watch 解锁其 Mac。|
 |iTunesBlockFileSharing|Boolean|指示是否阻止使用 iTunes 传输文件。|
 |iCloudBlockDocumentSync|Boolean|指示是否阻止 iCloud 文档同步。|
 |iCloudBlockMail|Boolean|指示是否阻止 iCloud 同步邮件。|
-|iCloudBlockAddressBook|Boolean|指示是否阻止 iCloud 同步联系人。|
-|iCloudBlockCalendar|Boolean|指示是否阻止 iCloud 同步日历。|
-|iCloudBlockReminders|Boolean|指示是否阻止 iCloud 同步提醒。|
-|iCloudBlockBookmarks|Boolean|指示是否阻止 iCloud 同步书签。|
-|iCloudBlockNotes|Boolean|指示是否阻止 iCloud 同步笔记。|
+|iCloudBlockAddressBook|布尔|指示是否阻止 iCloud 同步联系人。|
+|iCloudBlockCalendar|布尔|指示是否阻止 iCloud 同步日历。|
+|iCloudBlockReminders|布尔|指示是否阻止 iCloud 同步提醒。|
+|iCloudBlockBookmarks|布尔|指示是否阻止 iCloud 同步书签。|
+|iCloudBlockNotes|布尔|指示是否阻止 iCloud 同步笔记。|
 |airDropBlocked|Boolean|指示是否允许 AirDrop。|
-|passwordBlockModification|Boolean|指示是否允许修改密码。|
+|passwordBlockModification|布尔|指示是否允许修改密码。|
 |passwordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁。|
 |passwordBlockAutoFill|Boolean|指示是否阻止"自动填充密码"功能。|
 |passwordBlockProximityRequests|Boolean|指示是否阻止从附近设备请求密码。|
@@ -117,11 +117,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |addingGameCenterFriendsBlocked|Boolean|是，禁止用户将好友添加到游戏中心。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
 |gameCenterBlocked|Boolean|是 禁用游戏中心，游戏中心图标从主屏幕中删除。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
 |multiplayerGamingBlocked|Boolean|如果为 TRUE，则使用游戏中心时阻止多人游戏。 如果为 FALSE，则使用游戏中心时允许多人游戏。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
-|wallpaperModificationBlocked|Boolean|如果为 TRUE，可防止更改墙纸。 FALSE 允许更改墙纸。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
-|eraseContentAndSettingsBlocked|Boolean|如果为 TRUE，则禁用受监督设备的重置选项。 如果为 FALSE，则启用受监督设备的重置选项。 适用于运行 macOS 版本 12.0 和更高版本的设备。|
-|softwareUpdateMajorOSDeferredInstallDelayInDays|Int32|指定 1 (1-90) 延迟主要操作系统软件更新的可见性的天数。 适用于运行 macOS 版本 11.3 和更高版本的设备。 有效值为 0 至 90|
+|wallpaperModificationBlocked|布尔|如果为 TRUE，可防止更改墙纸。 FALSE 允许更改墙纸。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
+|eraseContentAndSettingsBlocked|布尔|如果为 TRUE，则禁用受监督设备的重置选项。 如果为 FALSE，则启用受监督设备的重置选项。 适用于运行 macOS 版本 12.0 和更高版本的设备。|
+|softwareUpdateMajorOSDeferredInstallDelayInDays|Int32|指定在 1 (90 天) 延迟主要操作系统软件更新的可见性的天数。 适用于运行 macOS 版本 11.3 和更高版本的设备。 有效值为 0 至 90|
 |softwareUpdateMinorOSDeferredInstallDelayInDays|Int32|指定 1 (1-90) 延迟次要操作系统软件更新的可见性的天数。 适用于运行 macOS 版本 11.3 和更高版本的设备。 有效值为 0 至 90|
 |softwareUpdateNonOSDeferredInstallDelayInDays|Int32|指定 1 (1-90) 延迟非操作系统软件更新的可见性的天数。 适用于运行 macOS 版本 11.3 和更高版本的设备。 有效值为 0 至 90|
+|touchIdTimeoutInHours|Int32|用户必须输入密码才能解锁设备（而不是使用触摸 ID）的最长小时数。 适用于运行 macOS 12 及更高版本的设备。 有效值为 0 到 2147483647|
+|iCloudPrivateRelayBlocked|布尔|iCloud 专用中继是一项 iCloud+ 服务，可防止网络和服务器通过 Internet 监视用户的活动。 通过阻止 iCloud 专用中继，Apple 不会加密离开设备的流量。 适用于运行 macOS 12 及更高版本的设备。|
 
 
 
@@ -135,7 +137,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 4900
+Content-length: 4969
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -270,7 +272,9 @@ Content-length: 4900
   "eraseContentAndSettingsBlocked": true,
   "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
   "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
-  "softwareUpdateNonOSDeferredInstallDelayInDays": 13
+  "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
+  "touchIdTimeoutInHours": 5,
+  "iCloudPrivateRelayBlocked": true
 }
 ```
 
@@ -279,7 +283,7 @@ Content-length: 4900
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5072
+Content-Length: 5141
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -417,9 +421,12 @@ Content-Length: 5072
   "eraseContentAndSettingsBlocked": true,
   "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
   "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
-  "softwareUpdateNonOSDeferredInstallDelayInDays": 13
+  "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
+  "touchIdTimeoutInHours": 5,
+  "iCloudPrivateRelayBlocked": true
 }
 ```
+
 
 
 

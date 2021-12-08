@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bb1f3527eb3e42e15f2a604808902420a25b3c50
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 85321f9d25069fc1f87395e09ada67a7bbe9f51a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494956"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348052"
 ---
 # <a name="personalprofilepersonalplaystoremode-enum-type"></a>personalProfilePersonalPlayStoreMode 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "60494956"
 |notConfigured|0|未配置。|
 |blockedApps|1|阻止的应用。|
 |allowedApps|2|允许的应用。|
+
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 windowsDriverUpdateProfileAssignment
 description: 更新 windowsDriverUpdateProfileAssignment 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffb0a4f4ceb055a2de3c33a3066c4a096febc858
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e96c79cee21f440d5d89b6e170019c5776358305
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054889"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342984"
 ---
 # <a name="update-windowsdriverupdateprofileassignment"></a>更新 windowsDriverUpdateProfileAssignment
 
@@ -97,6 +97,7 @@ Content-Length: 392
   }
 }
 ```
+
 
 
 

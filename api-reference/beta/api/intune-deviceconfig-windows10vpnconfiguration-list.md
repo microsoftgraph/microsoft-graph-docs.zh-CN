@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2664e5b99ced6b7af12011d73b5bf5e8e243d56a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 818d0c1a69709c99ff09e575779f3878f1bb28ce
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687408"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344804"
 ---
 # <a name="list-windows10vpnconfigurations"></a>列出 windows10VpnConfigurations
 
@@ -224,6 +224,7 @@ Content-Length: 5326
   ]
 }
 ```
+
 
 
 

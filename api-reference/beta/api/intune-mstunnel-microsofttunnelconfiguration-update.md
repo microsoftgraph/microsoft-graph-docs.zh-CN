@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 26c52bfdc399bb71b962c9fe40e49d60e07a0cc1
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 286147139eb81f9d2e9d8ec0b8e4f463d433586f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688799"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343411"
 ---
 # <a name="update-microsofttunnelconfiguration"></a>更新 microsoftTunnelConfiguration
 
@@ -56,18 +56,18 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 |:---|:---|:---|
 |id|String|MicrosoftTunnelConfiguration 的 ID|
 |displayName|String|MicrosoftTunnelConfiguration 的 显示名称|
-|说明|String|MicrosoftTunnelConfiguration 的说明|
+|description|String|MicrosoftTunnelConfiguration 的说明|
 |network|String|将用于为客户端分配虚拟地址的子网|
-|dnsServers|String 集合|客户端将使用的 DNS 服务器|
-|defaultDomainSuffix|字符串|客户端将使用的默认域附录|
-|routesInclude|String 集合|服务器将路由的路由|
-|routesExclude|String collection|服务器不会路由的路由子集|
-|splitDNS|String 集合|使用提供的 dns 服务器解析的域|
+|dnsServers|字符串集合|客户端将使用的 DNS 服务器|
+|defaultDomainSuffix|String|客户端将使用的默认域附录|
+|routesInclude|String collection|服务器将路由的路由|
+|routesExclude|字符串集合|服务器不会路由的路由子集|
+|splitDNS|字符串集合|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
-|advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) 集合|可应用于服务器的其他设置|
+|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
-|disableUDPConnections|布尔值|设置 DisableUDPConnections 时，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|disableUDPConnections|布尔|设置 DisableUDPConnections 时，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
 
 
 
@@ -158,6 +158,7 @@ Content-Length: 831
   "disableUDPConnections": true
 }
 ```
+
 
 
 

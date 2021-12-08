@@ -2,15 +2,15 @@
 title: mobileAppRelationshipState 资源类型
 description: 描述 UPN 和设备 ID 上下文中子应用的安装状态详细信息。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5b6576e7d1e32f53784568d3eaa51328be1b57b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7148a2f541ec9b37b6c61937134c904676b4e14e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124138"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343166"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>mobileAppRelationshipState 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "59124138"
 描述 UPN 和设备 ID 上下文中子应用的安装状态详细信息。
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |sourceIds|字符串集合|源移动应用 ID 的集合。|
 |targetId|String|相关目标应用的 ID。|
@@ -59,6 +59,7 @@ ms.locfileid: "59124138"
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

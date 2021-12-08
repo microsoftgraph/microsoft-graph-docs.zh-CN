@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d2da950900e621d4f0a50b03c86c144d36dea412
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: a2e15d15b56c0ff6e73747a58ebdd07c83bf72aa
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487377"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346778"
 ---
 # <a name="operationapprovalpolicy-resource-type"></a>operationApprovalPolicy 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "60487377"
 |[List operationApprovalPolicies](../api/intune-rbac-operationapprovalpolicy-list.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) 集合|列出 [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) 对象的属性和关系。|
 |[获取 operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-get.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|读取 [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) 对象的属性和关系。|
 |[创建 operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-create.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|创建新的 [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) 对象。|
-|[删除 operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-delete.md)|无|删除 [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)。|
+|[删除 operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-delete.md)|None|删除 [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)。|
 |[Update operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-update.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|更新 [operationApprovalPolicy 对象](../resources/intune-rbac-operationapprovalpolicy.md) 的属性。|
 |[getOperationsAllowedApproval 函数](../api/intune-rbac-operationapprovalpolicy-getoperationsallowedapproval.md)|[operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md) 集合|尚未记录|
 |[getOperationsRequiringApproval 函数](../api/intune-rbac-operationapprovalpolicy-getoperationsrequiringapproval.md)|[operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md) 集合|尚未记录|
@@ -38,11 +38,11 @@ ms.locfileid: "60487377"
 |:---|:---|:---|
 |id|String|OperationApprovalPolicy 的 ID。 此属性是只读的。|
 |displayName|String|此操作显示名称ApprovalPolicy|
-|说明|String|此 OperationApprovalPolicy 的说明|
+|description|String|此 OperationApprovalPolicy 的说明|
 |lastModifiedDateTime|DateTimeOffset|此 OperationApprovalPolicy 的上次修改日期和时间。 此属性是只读的。|
-|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|此 OperationApprovalPolicy 的策略类型。 可能的值是 `deviceActions` `deviceWipe` `deviceRetire` ：、、、、、、、、 `deviceRetireNonCompliant` `deviceDelete` `deviceLock` `deviceErase` `deviceDisableActivationLock` `windowsEnrollment` `compliancePolicies` `configurationPolicies` `appProtectionPolicies` `policySets` `filters` `endpointSecurity` `apps` `scripts` `roles` `unknownFutureValue` 。|
-|policyPlatform|[operationApprovalPolicyPlatform](../resources/intune-rbac-operationapprovalpolicyplatform.md)|适用的平台 (OperationApprovalPolicy) 的一部分。 可取值为：`notApplicable`、`androidDeviceAdministrator`、`androidEnterprise`、`iOSiPadOS`、`macOS`、`windows10AndLater`、`windows81AndLater`、`windows10X`。|
-|approverGroupIds|String 集合|此 OperationApprovalPolicy 的审批者组 ID|
+|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|此 OperationApprovalPolicy 的策略类型。 可能的值是 `deviceActions` `deviceWipe` `deviceRetire` ：、、、、、、、、。 `deviceRetireNonCompliant` `deviceDelete` `deviceLock` `deviceErase` `deviceDisableActivationLock` `windowsEnrollment` `compliancePolicies` `configurationPolicies` `appProtectionPolicies` `policySets` `filters` `endpointSecurity` `apps` `scripts` `roles` `deviceResetPasscode` `unknownFutureValue`|
+|policyPlatform|[operationApprovalPolicyPlatform](../resources/intune-rbac-operationapprovalpolicyplatform.md)|适用于此 OperationApprovalPolicy () 一个应用平台。 可取值为：`notApplicable`、`androidDeviceAdministrator`、`androidEnterprise`、`iOSiPadOS`、`macOS`、`windows10AndLater`、`windows81AndLater`、`windows10X`。|
+|approverGroupIds|String collection|此 OperationApprovalPolicy 的审批者组 ID|
 
 ## <a name="relationships"></a>关系
 无
@@ -69,6 +69,7 @@ ms.locfileid: "60487377"
   ]
 }
 ```
+
 
 
 

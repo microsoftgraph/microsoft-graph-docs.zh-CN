@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsAppHealthOSVersionPerformance
 description: 更新 userExperienceAnalyticsAppHealthOSVersionPerformance 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 015c1863dfd50044460702adb512020b278ad9ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 601f9082e53e8a55c9de721755610e5f2e832444
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034566"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346071"
 ---
 # <a name="update-userexperienceanalyticsapphealthosversionperformance"></a>更新 userExperienceAnalyticsAppHealthOSVersionPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "59034566"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -104,6 +104,7 @@ Content-Length: 406
   "osVersionAppHealthStatus": "Os Version App Health Status value"
 }
 ```
+
 
 
 

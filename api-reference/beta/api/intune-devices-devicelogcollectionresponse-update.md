@@ -2,15 +2,15 @@
 title: 更新 deviceLogCollectionResponse
 description: 更新 deviceLogCollectionResponse 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09002a9c3fc05fa9ca727d0a681999b30c661641
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7f0142a666e11cc76183c7e9bf1a5d58cc1e280d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59042401"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345245"
 ---
 # <a name="update-devicelogcollectionresponse"></a>更新 deviceLogCollectionResponse
 
@@ -27,9 +27,9 @@ ms.locfileid: "59042401"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|表单的唯一标识符tenantId_deviceId_requestId|
-|status|String|日志集合请求的状态|
+|状态|String|日志集合请求的状态|
 |managedDeviceId|Guid|设备 ID|
 |errorCode|Int64|错误代码（如果有）。 有效值 -9.22337203685478E+18 到 9.22337203685478E+18|
 |requestedDateTimeUTC|DateTimeOffset|请求的 DateTime|
@@ -110,6 +110,7 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
+
 
 
 

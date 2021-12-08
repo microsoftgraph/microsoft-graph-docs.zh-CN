@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a06ea1c99f3a0b87c1b323f85278ace41b593d2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 45c2b30a39c9930ee8a8d7def27a06e7617fddbf
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488921"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346743"
 ---
 # <a name="operationapprovalrequest-resource-type"></a>operationApprovalRequest 资源类型
 
@@ -47,7 +47,7 @@ OperationApprovalRequest 实体
 |lastModifiedDateTime|DateTimeOffset|上次修改日期时间。 此属性是只读的。|
 |requestor|[identitySet](../resources/intune-rbac-identityset.md)|请求者的身份。 此属性是只读的。|
 |审批者|[identitySet](../resources/intune-rbac-identityset.md)|审批者的身份。 此属性是只读的。|
-|status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|当前审批请求状态。 此属性是只读的。 可取值为：`unknown`、`needsApproval`、`approved`、`rejected`、`cancelled`、`completed` 或 `expired`。|
+|状态|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|当前审批请求状态。 此属性是只读的。 可取值为：`unknown`、`needsApproval`、`approved`、`rejected`、`cancelled`、`completed` 或 `expired`。|
 |requestJustification|String|请求理由。 此属性是只读的。|
 |approvalJustification|String|批准请求的理由。 此属性是只读的。|
 
@@ -110,6 +110,7 @@ OperationApprovalRequest 实体
   "approvalJustification": "String"
 }
 ```
+
 
 
 

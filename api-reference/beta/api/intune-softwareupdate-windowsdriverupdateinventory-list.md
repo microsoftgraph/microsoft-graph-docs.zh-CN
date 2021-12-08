@@ -2,15 +2,15 @@
 title: 列出 windowsDriverUpdateInventories
 description: 列出 windowsDriverUpdateInventory 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f7913dd7af9cf8d01ed6aa0caadbe6b63518575
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7a6d863ec480ae60beb9bf02687552ca5573766c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138517"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344272"
 ---
 # <a name="list-windowsdriverupdateinventories"></a>列出 windowsDriverUpdateInventories
 
@@ -85,6 +85,7 @@ Content-Length: 551
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b957c2448b404f95c8afbcb12a8d00785c08959
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: c1dbf45a2d1b003696b6c2dffd18eb17cdbf9947
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488162"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342270"
 ---
 # <a name="get-remoteassistancesettings"></a>获取 remoteAssistanceSettings
 
@@ -27,9 +27,9 @@ ms.locfileid: "60488162"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,17 +68,18 @@ GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistanceSettings
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 227
+Content-Length: 226
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
     "id": "cfef360e-360e-cfef-0e36-efcf0e36efcf",
-    "remoteAssistanceState": "disabled",
+    "remoteAssistanceState": "enabled",
     "allowSessionsToUnenrolledDevices": true
   }
 }
 ```
+
 
 
 

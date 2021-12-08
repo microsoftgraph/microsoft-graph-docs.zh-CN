@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsResourcePerformance
 description: 更新 userExperienceAnalyticsResourcePerformance 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 105f3f77d18cbc2ed292b5d641d5185211f4ca47
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 298da771a124b16df575b4a6206ce58fa1618b43
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077018"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348094"
 ---
 # <a name="update-userexperienceanalyticsresourceperformance"></a>更新 userExperienceAnalyticsResourcePerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "59077018"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -59,7 +59,7 @@ PATCH /deviceManagement/userExperienceAnalyticsResourcePerformance/{userExperien
 |model|String|用户体验分析设备模型。|
 |deviceCount|Int64|用户体验分析汇总了设备计数。|
 |manufacturer|String|用户体验分析设备制造商。|
-|cpuSpikeTimePercentage|双精度|CPU 峰值时间（以百分比表示）。 有效值为 0 至 100|
+|cpuSpikeTimePercentage|双精度|CPU 峰值时间百分比。 有效值为 0 至 100|
 |ramSpikeTimePercentage|双精度|以百分比表示的 RAM 峰值时间。 有效值为 0 至 100|
 |cpuSpikeTimeScore|Int32|用户体验分析设备 CPU 峰值时间分数。 有效值为 0 至 100|
 |cpuSpikeTimePercentageThreshold|双精度|cpuSpikeTimeScore 的阈值。 有效值为 0 至 100|
@@ -125,6 +125,7 @@ Content-Length: 633
   "averageSpikeTimeScore": 5
 }
 ```
+
 
 
 

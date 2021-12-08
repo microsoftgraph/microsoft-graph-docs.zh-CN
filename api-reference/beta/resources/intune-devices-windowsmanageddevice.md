@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 763a5921509558bc5deb87e7cef001a63d23029b
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 8b9783bcc6e81d48ce0f2813f04f7f0a921160fd
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486971"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348192"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>windowsManagedDevice 资源类型
 
@@ -31,7 +31,7 @@ Windows Intune 管理或预注册的设备
 |[列出 windowsManagedDevices](../api/intune-devices-windowsmanageddevice-list.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) 集合|列出 [windowsManagedDevice 对象的属性和](../resources/intune-devices-windowsmanageddevice.md) 关系。|
 |[获取 windowsManagedDevice](../api/intune-devices-windowsmanageddevice-get.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|读取 [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) 对象的属性和关系。|
 |[创建 windowsManagedDevice](../api/intune-devices-windowsmanageddevice-create.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|创建新的 [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) 对象。|
-|[删除 windowsManagedDevice](../api/intune-devices-windowsmanageddevice-delete.md)|无|删除 [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)。|
+|[删除 windowsManagedDevice](../api/intune-devices-windowsmanageddevice-delete.md)|None|删除 [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)。|
 |[更新 windowsManagedDevice](../api/intune-devices-windowsmanageddevice-update.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|更新 [windowsManagedDevice 对象](../resources/intune-devices-windowsmanageddevice.md) 的属性。|
 
 ## <a name="properties"></a>属性
@@ -96,7 +96,7 @@ Windows Intune 管理或预注册的设备
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) 集合|指示设备上最后一次登录的用户。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告 DateTime 设置了 preferMdmOverGroupPolicy 设置。  设置后，如果存在冲突，Intune MDM 设置将覆盖组策略设置。 只读。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |autopilotEnrolled|Boolean|报告托管设备是否通过自动试点注册。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|Boolean|报告托管 iOS 设备是否注册用户审批。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|布尔|报告托管 iOS 设备是否注册用户审批。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -122,7 +122,7 @@ Windows Intune 管理或预注册的设备
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|设备上当前安装的所有应用程序 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|设备类别 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
-|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|设备保护状态。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
+|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|设备保护状态。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |users|[user](../resources/intune-shared-user.md) 集合|与托管设备关联的主要用户。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 集合|日志集合请求列表 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 
@@ -338,6 +338,7 @@ Windows Intune 管理或预注册的设备
   "enrollmentProfileName": "String"
 }
 ```
+
 
 
 

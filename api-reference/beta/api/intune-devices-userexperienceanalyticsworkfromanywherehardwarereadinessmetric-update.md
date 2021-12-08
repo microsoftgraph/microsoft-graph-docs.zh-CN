@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 description: 更新 userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c45ef2f94886aa02c1b931775014c43ce26bd856
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dc9b89745c708c413da145ba5c8bd8da97f452ce
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034559"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345133"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywherehardwarereadinessmetric"></a>更新 userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 
@@ -27,9 +27,9 @@ ms.locfileid: "59034559"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,15 +54,15 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereHardwareReadiness
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析硬件准备情况指标对象的唯一标识符。|
-|totalDeviceCount|Int32|组织中设备总数。 有效值 -2147483648 2147483647|
-|upgradeEligibleDeviceCount|Int32|组织中符合 Windows 升级条件的设备计数。 有效值 -2147483648 2147483647|
+|totalDeviceCount|Int32|组织中设备总数。 有效值 -2147483648 to 2147483647|
+|upgradeEligibleDeviceCount|Int32|组织中符合 Windows 升级条件的设备计数。 有效值 -2147483648 to 2147483647|
 |ramCheckFailedPercentage|双精度|RAM 硬件检查失败的设备的百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |storageCheckFailedPercentage|双精度|存储硬件检查失败的设备百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |processorCoreCountCheckFailedPercentage|双精度|处理器硬件核心计数检查失败的设备的百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |processorSpeedCheckFailedPercentage|双精度|处理器硬件速度检查失败的设备的百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|tpmCheckFailedPercentage|双精度|受信任的平台模块用于 TPM (硬件检查) 的设备的百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|tpmCheckFailedPercentage|双精度|受信任的平台模块与 TPM (检查) 的设备的百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |secureBootCheckFailedPercentage|双精度|安全启动硬件检查失败的设备百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|processorFamilyCheckFailedPercentage|双精度|处理器硬件系列检查失败的设备百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|processorFamilyCheckFailedPercentage|双精度|处理器硬件系列检查失败的设备的百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |processor64BitCheckFailedPercentage|双精度|处理器硬件 64 位体系结构检查失败的设备百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |osCheckFailedPercentage|双精度|操作系统检查失败的设备的百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 
@@ -119,6 +119,7 @@ Content-Length: 675
   "osCheckFailedPercentage": 7.666666666666667
 }
 ```
+
 
 
 

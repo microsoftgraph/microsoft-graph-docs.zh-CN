@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d51c64274fe608c61e99ff6b21a27f90564348b
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: ee5e337513af41a1428dea72ba120b6d421364e7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490559"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343012"
 ---
 # <a name="list-microsofttunnelhealththresholds"></a>列出 microsoftTunnelHealthThresholds
 
@@ -80,6 +80,7 @@ Content-Length: 300
   ]
 }
 ```
+
 
 
 

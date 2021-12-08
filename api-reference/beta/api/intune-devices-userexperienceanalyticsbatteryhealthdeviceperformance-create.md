@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1e0718a751380553438389fbfebd8b02f9bfdbb
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2ae7ad86c4beb0dc221daef729cb6314944d56f0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696432"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343257"
 ---
 # <a name="create-userexperienceanalyticsbatteryhealthdeviceperformance"></a>创建 userExperienceAnalyticsBatteryHealthDevicePerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "60696432"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,15 +53,15 @@ POST /deviceManagement/userExperienceAnalyticsBatteryHealthDevicePerformance
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析电池运行状况设备性能对象的唯一标识符。|
+|id|String|用户体验分析电池运行状况设备性能对象的唯一标识符。|
 |deviceId|String|设备的唯一标识符 Intune DeviceID。|
 |deviceName|String|设备友好名称。|
 |model|String|设备的型号名称。|
-|maxCapacityPercentage|Int32|具有最低容量的电池的当前容量和设计容量的比率。 百分比单位，值范围为 0-100。 有效值 -2147483648 2147483647|
-|estimatedRuntimeInMinutes|Int32|电池完全充电时设备的预计运行时。 单位（以分钟表示）。 有效值 -2147483648 2147483647|
-|batteryAgeInDays|Int32|估计电池使用时间。 单位（以天表示）。 有效值 -2147483648 2147483647|
-|deviceBatteryHealthScore|Int32|设备最大容量分数和运行时估计分数的加权平均值。 值范围为 0-100。 有效值 -2147483648 2147483647|
-|healthStatus|字符串|设备的整体电池运行状况状态。|
+|maxCapacityPercentage|Int32|具有最低容量的电池的当前容量和设计容量的比率。 百分比单位，值范围为 0-100。 有效值 -2147483648 to 2147483647|
+|estimatedRuntimeInMinutes|Int32|电池完全充电时设备的预计运行时。 单位（以分钟表示）。 有效值 -2147483648 to 2147483647|
+|batteryAgeInDays|Int32|估计电池使用时间。 单位（以天表示）。 有效值 -2147483648 to 2147483647|
+|deviceBatteryHealthScore|Int32|设备最大容量分数和运行时估计分数的加权平均值。 值范围为 0-100。 有效值 -2147483648 to 2147483647|
+|healthStatus|String|设备的整体电池运行状况状态。|
 
 
 
@@ -110,6 +110,7 @@ Content-Length: 411
   "healthStatus": "Health Status value"
 }
 ```
+
 
 
 

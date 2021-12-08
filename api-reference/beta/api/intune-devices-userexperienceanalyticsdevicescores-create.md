@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsDeviceScores
 description: 创建新的 userExperienceAnalyticsDeviceScores 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f91e733bddc89c8122593e4ea461523db4da9873
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6e597dc9ec4598492f2f381c4ff2f2ff15551e23
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116659"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344111"
 ---
 # <a name="create-userexperienceanalyticsdevicescores"></a>创建 userExperienceAnalyticsDeviceScores
 
@@ -27,9 +27,9 @@ ms.locfileid: "59116659"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -110,6 +110,7 @@ Content-Length: 446
   "healthStatus": "insufficientData"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 76aa40f0307ba9fb44ff1829a9ccfe677ab6f798
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: e953f6ac2552ced6ca2421a4d2d94eb7cf2290d9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697232"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345238"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthcapacitydetails"></a>更新 userExperienceAnalyticsBatteryHealthCapacityDetails
 
@@ -27,9 +27,9 @@ ms.locfileid: "60697232"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,10 +54,10 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthCapacityDetails
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析电池运行状况容量对象的唯一标识符。|
-|activeDevices|Int32|租户中的活动设备数。 有效值 -2147483648 2147483647|
-|batteryCapacityGood|Int32|电池最大容量大于 80% 的设备数量。 有效值 -2147483648 2147483647|
-|batteryCapacityFair|Int32|电池最大容量大于 50%但小于 80% 的设备数量。 有效值 -2147483648 2147483647|
-|batteryCapacityPoor|Int32|电池最大容量小于 50% 的设备数量。 有效值 -2147483648 2147483647|
+|activeDevices|Int32|租户中的活动设备数。 有效值 -2147483648 to 2147483647|
+|batteryCapacityGood|Int32|电池最大容量大于 80% 的设备数量。 有效值 -2147483648 to 2147483647|
+|batteryCapacityFair|Int32|电池最大容量大于 50%但小于 80% 的设备数量。 有效值 -2147483648 to 2147483647|
+|batteryCapacityPoor|Int32|电池最大容量小于 50% 的设备数量。 有效值 -2147483648 to 2147483647|
 
 
 
@@ -98,6 +98,7 @@ Content-Length: 253
   "batteryCapacityPoor": 3
 }
 ```
+
 
 
 

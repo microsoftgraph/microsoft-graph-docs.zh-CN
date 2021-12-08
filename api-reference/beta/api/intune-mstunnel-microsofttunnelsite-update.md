@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4c85a2be954cba036df34d726c1c2cd30483f60
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 840ca65d6cd612e2744569ca4ca3d99cc34b8b45
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493231"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342991"
 ---
 # <a name="update-microsofttunnelsite"></a>更新 microsoftTunnelSite
 
@@ -55,13 +55,13 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 |:---|:---|:---|
 |id|String|MicrosoftTunnelSite 的 ID|
 |displayName|String|MicrosoftTunnelSite 的显示名称|
-|说明|String|MicrosoftTunnelSite 的说明|
+|description|String|MicrosoftTunnelSite 的说明|
 |publicAddress|String|MicrosoftTunnelSite 的公共域名或 IP 地址|
 |upgradeWindowUtcOffsetInMinutes|Int32|网站时区表示为与 UTC 的分钟偏移量|
 |upgradeWindowStartTime|TimeOfDay|网站的升级窗口一天中的开始时间|
 |upgradeWindowEndTime|TimeOfDay|网站的升级窗口结束时间|
-|upgradeAutomatically|Boolean|网站的自动升级设置。 True 表示自动升级，false 表示手动控制|
-|upgradeAvailable|Boolean|如果升级可用，则其为 True|
+|upgradeAutomatically|布尔|网站的自动升级设置。 True 表示自动升级，false 表示手动控制|
+|upgradeAvailable|布尔|如果升级可用，则其为 True|
 |internalNetworkProbeUrl|String|MicrosoftTunnelSite 的内部网络访问探测器 URL|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
@@ -120,6 +120,7 @@ Content-Length: 573
   ]
 }
 ```
+
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备配置 - Microsoft Gaaph API
-description: 列出定义Graph组织的设备的 Microsoft (API (REST) REST 终结点。
+description: 列出定义Graph配置设备的适用于 Intune 终结点的 Microsoft (API) REST 应用程序。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 106aed065f0480fcec01a8f680e8ee33001d5e45
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2688a9499565d7c93f23cac331040d74987ec9cc
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696068"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342998"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -35,6 +35,7 @@ ms.locfileid: "60696068"
 - [Android 设备所有者电池充电模式](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
 - [Android 设备所有者证书配置文件基础](intune-deviceconfig-androiddeviceownercertificateprofilebase.md)
 - [Android 设备所有者合规性策略](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
+- [Android 设备所有者跨配置文件数据共享](intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md)
 - [Android 设备所有者默认应用权限策略类型](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Android 设备所有者派生的凭据身份验证配置](intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)
 - [Android 设备所有者注册配置文件类型](intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)
@@ -306,6 +307,14 @@ ms.locfileid: "60696068"
 - [组策略上载的定义文件状态](intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)
 - [组策略上载的语言文件](intune-grouppolicy-grouppolicyuploadedlanguagefile.md)
 - [组策略上载的演示文稿](intune-grouppolicy-grouppolicyuploadedpresentation.md)
+- [硬件配置](intune-deviceconfig-hardwareconfiguration.md)
+- [硬件配置分配](intune-deviceconfig-hardwareconfigurationassignment.md)
+- [硬件配置设备状态](intune-deviceconfig-hardwareconfigurationdevicestate.md)
+- [硬件配置格式](intune-deviceconfig-hardwareconfigurationformat.md)
+- [硬件配置运行摘要](intune-deviceconfig-hardwareconfigurationrunsummary.md)
+- [硬件配置用户状态](intune-deviceconfig-hardwareconfigurationuserstate.md)
+- [硬件密码信息](intune-deviceconfig-hardwarepasswordinfo.md)
+- [Ingestion 源](intune-grouppolicy-ingestionsource.md)
 - [墨迹访问设置](intune-deviceconfig-inkaccesssetting.md)
 - [预期用途](intune-deviceconfig-intendedpurpose.md)
 - [Internet Explorer 消息设置](intune-deviceconfig-internetexplorermessagesetting.md)
@@ -363,8 +372,6 @@ ms.locfileid: "60696068"
 - [键字符串值对](intune-deviceconfig-keystringvaluepair.md)
 - [键类型值对](intune-deviceconfig-keytypedvaluepair.md)
 - [密钥值](intune-deviceconfig-keyvalue.md)
-- [键/值对](intune-deviceconfig-keyvaluepair.md)
-- [键/值对](intune-deviceconfig-keyvaluepair.md)
 - [展台模式托管主屏幕 PIN 复杂性](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
 - [LAN Manager 身份验证级别](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [本地安全选项管理员提升提示行为类型](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
@@ -581,7 +588,7 @@ ms.locfileid: "60696068"
 - [Windows 应用启动布局磁贴大小](intune-deviceconfig-windowsappstartlayouttilesize.md)
 - [Windows 证书配置文件基础](intune-deviceconfig-windowscertificateprofilebase.md)
 - [Windows Defender 高级威胁防护配置](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
-- [Windows防篡改保护选项](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
+- [Windows Defender 防篡改保护选项](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Windows 传递优化配置](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows 传递优化模式](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Windows边缘展台类型](intune-deviceconfig-windowsedgekiosktype.md)

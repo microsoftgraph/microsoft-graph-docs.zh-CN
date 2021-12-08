@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 925335dee12d72a0f9a6c63f4d73cda909001a82
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b550aa89735123efee1e52a4c444f5300e27b219
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695935"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346526"
 ---
 # <a name="list-chromeosonboardingsettingses"></a>列出 chromeOSOnboardingSettingses
 
@@ -80,6 +80,7 @@ Content-Length: 408
   ]
 }
 ```
+
 
 
 

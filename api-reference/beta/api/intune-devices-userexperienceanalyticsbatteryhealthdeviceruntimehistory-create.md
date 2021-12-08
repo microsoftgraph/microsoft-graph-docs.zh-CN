@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 908a95223edf46681976c9d0224ee34c7713aa3a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ae0285ee8b6ea77429acc148e2adc0f987ef96b1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695552"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345770"
 ---
 # <a name="create-userexperienceanalyticsbatteryhealthdeviceruntimehistory"></a>创建 userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
 
@@ -27,9 +27,9 @@ ms.locfileid: "60695552"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,7 +56,7 @@ POST /deviceManagement/userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
 |id|String|用户体验分析电池运行状况运行时对象的唯一标识符。|
 |deviceId|String|设备的唯一标识符，Intune DeviceID 或 SCCM 设备 ID。|
 |runtimeDateTime|String|运行时历史记录实例的日期时间。|
-|estimatedRuntimeInMinutes|Int32|电池完全充电时设备的预计运行时。 单位（以分钟表示）。 有效值 -2147483648 2147483647|
+|estimatedRuntimeInMinutes|Int32|电池完全充电时设备的预计运行时。 单位（以分钟表示）。 有效值 -2147483648 to 2147483647|
 
 
 
@@ -95,6 +95,7 @@ Content-Length: 265
   "estimatedRuntimeInMinutes": 9
 }
 ```
+
 
 
 

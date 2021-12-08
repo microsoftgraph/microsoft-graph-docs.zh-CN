@@ -2,15 +2,15 @@
 title: 创建 appLogCollectionRequest
 description: 创建新的 appLogCollectionRequest 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5439a9109f413c142d2a6e78aa7451dc90f694e5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 81fb2dac67e0e2eef14f051bfd10a5dd8e96f617
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59042471"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346890"
 ---
 # <a name="create-applogcollectionrequest"></a>创建 appLogCollectionRequest
 
@@ -27,9 +27,9 @@ ms.locfileid: "59042471"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,7 +54,7 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|唯一标识符。 这是userId_DeviceId_AppId ID。|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|记录上载状态。 可取值为：`pending`、`completed`、`failed`。|
+|状态|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|记录上载状态。 可取值为：`pending`、`completed`、`failed`。|
 |errorMessage|String|上传过程中出现错误消息（如果有）|
 |customLogFolders|String collection|日志文件夹列表。 |
 |completedDateTime|DateTimeOffset|上载日志请求达到终端状态的时间|
@@ -102,6 +102,7 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fbfa675cf205cc2851134b27de262db739d9a7dc
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ede9b53303d610a6de54bd216747a81e8d90eba4
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696425"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344538"
 ---
 # <a name="get-managedappprotection"></a>获取 managedAppProtection
 
@@ -136,6 +136,7 @@ Content-Length: 2781
   }
 }
 ```
+
 
 
 

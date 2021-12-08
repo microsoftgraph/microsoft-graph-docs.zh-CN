@@ -2,15 +2,15 @@
 title: 创建 windowsQualityUpdateProfileAssignment
 description: 创建新的 windowsQualityUpdateProfileAssignment 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 70e7c0e797d793079961aced9f1ddc8b79838852
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ec601b2eacd27153bd066f2ef5b73674f63f1b61
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116197"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344874"
 ---
 # <a name="create-windowsqualityupdateprofileassignment"></a>创建 windowsQualityUpdateProfileAssignment
 
@@ -97,6 +97,7 @@ Content-Length: 393
   }
 }
 ```
+
 
 
 

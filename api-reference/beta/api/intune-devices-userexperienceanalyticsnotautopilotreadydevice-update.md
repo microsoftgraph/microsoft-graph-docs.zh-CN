@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsNotAutopilotReadyDevice
 description: 更新 userExperienceAnalyticsNotAutopilotReadyDevice 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e0eb200c25fa2d1bdf025e91b037a4fea6c8e4d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b0d0f5bcf93cc2817c4390119efee696b1809c2d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142185"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348283"
 ---
 # <a name="update-userexperienceanalyticsnotautopilotreadydevice"></a>更新 userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "59142185"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -113,6 +113,7 @@ Content-Length: 470
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
+
 
 
 

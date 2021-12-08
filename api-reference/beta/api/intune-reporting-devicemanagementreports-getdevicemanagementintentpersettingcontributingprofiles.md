@@ -2,15 +2,15 @@
 title: getDeviceManagementIntentPerSettingContributingProfiles 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f394c62b476dabdad914f887885ba185f7688b6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cd3fe62d7c5f7ccbd27bcfe511ba71d0840c367f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034111"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347723"
 ---
 # <a name="getdevicemanagementintentpersettingcontributingprofiles-action"></a>getDeviceManagementIntentPerSettingContributingProfiles 操作
 
@@ -51,7 +51,7 @@ POST /deviceManagement/reports/getDeviceManagementIntentPerSettingContributingPr
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |name|String|尚未记录|
 |select|String collection|尚未记录|
@@ -108,6 +108,7 @@ Content-Length: 131
   "value": "Z2V0RGV2aWNlTWFuYWdlbWVudEludGVudFBlclNldHRpbmdDb250cmlidXRpbmdQcm9maWxlcyBJbnR1bmUgRG9jIFNhbXBsZSA4OTc0NTYyMg=="
 }
 ```
+
 
 
 

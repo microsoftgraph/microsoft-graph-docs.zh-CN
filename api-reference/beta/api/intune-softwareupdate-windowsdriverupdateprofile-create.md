@@ -2,15 +2,15 @@
 title: 创建 windowsDriverUpdateProfile
 description: 创建新的 windowsDriverUpdateProfile 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d50d9d5ce7be2e1932a2a603f0b5d388073374b0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 456928b16a18ff3bedb4d743bd39e95e07e30c43
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138496"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346351"
 ---
 # <a name="create-windowsdriverupdateprofile"></a>创建 windowsDriverUpdateProfile
 
@@ -55,7 +55,7 @@ POST /deviceManagement/windowsDriverUpdateProfiles
 |:---|:---|:---|
 |id|String|Intune 策略 ID。|
 |displayName|String|配置文件显示名称的配置文件。|
-|说明|String|由用户指定的配置文件的说明。|
+|description|String|由用户指定的配置文件的说明。|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|驱动程序更新配置文件审批类型。 例如，手动或自动审批。 可取值为：`manual`、`automatic`。|
 |deviceReporting|Int32|此配置文件的报告设备数|
 |newUpdates|Int32|可用于此配置文件的新驱动程序更新数。|
@@ -115,6 +115,7 @@ Content-Length: 494
   ]
 }
 ```
+
 
 
 

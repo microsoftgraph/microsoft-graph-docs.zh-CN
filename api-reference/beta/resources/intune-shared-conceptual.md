@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的共享资源 - Microsoft Graph API
-description: 列出支持Graph多个工作流的适用于 Intune 终结点的 Microsoft (API) REST 应用程序。
+description: 列出支持租户Graph多个工作流的适用于 Intune 终结点 (REST) 的 Microsoft 应用程序 API。
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 03a663f540ab51ea6f76274968b0ec52593dc597
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 66d40ecd47b8ba1ab66bd6f596aa2bf6e47ba96a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687548"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348178"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>共享资源Microsoft Intune
 
@@ -68,6 +68,7 @@ Intune Graph之间共享以下资源：
 - [密钥大小](intune-shared-keysize.md)
 - [密钥存储提供程序选项](intune-shared-keystorageprovideroption.md)
 - [密钥使用情况](intune-shared-keyusages.md)
+- [键/值对](intune-shared-keyvaluepair.md)
 - [macOS LOB 应用分配设置](intune-shared-macoslobappassignmentsettings.md)
 - [macOS VPP 应用分配设置](intune-shared-macosvppappassignmentsettings.md)
 - [托管的设备所有者类型](intune-shared-manageddeviceownertype.md)
@@ -80,10 +81,11 @@ Intune Graph之间共享以下资源：
 - [移动应用疑难解答事件](intune-shared-mobileapptroubleshootingevent.md)
 - [所有者类型](intune-shared-ownertype.md)
 - [代理域](intune-shared-proxieddomain.md)
-- [Report](intune-shared-report.md)
+- [报告](intune-shared-report.md)
 - [报表根目录](intune-shared-reportroot.md)
 - [RGB 颜色](intune-shared-rgbcolor.md)
 - [按帐户类型运行](intune-shared-runasaccounttype.md)
+- [运行状态](intune-shared-runstate.md)
 - [保存的 UI 状态生成选项](intune-shared-saveduistategenerationoptions.md)
 - [设置源类型](intune-shared-settingsourcetype.md)
 - [使用者可选名称类型](intune-shared-subjectalternativenametype.md)

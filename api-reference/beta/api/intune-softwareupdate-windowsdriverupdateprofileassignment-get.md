@@ -2,15 +2,15 @@
 title: 获取 windowsDriverUpdateProfileAssignment
 description: 读取 windowsDriverUpdateProfileAssignment 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3fa64eda30dea251ffc2b3c9c7e5af710a3d93c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ee0df9f4de9184aea9ad3a09c9296b7d19a52d7d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138433"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347072"
 ---
 # <a name="get-windowsdriverupdateprofileassignment"></a>获取 windowsDriverUpdateProfileAssignment
 
@@ -82,6 +82,7 @@ Content-Length: 425
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47a9cd45973f99ce6b7408bd761b181829374ffa
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 0b8c27f103828d14bfc252e4ac7d257f7743f664
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488316"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345901"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>获取 androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9192
+Content-Length: 9313
 
 {
   "value": {
@@ -125,6 +125,9 @@ Content-Length: 9192
     "cameraBlocked": true,
     "cellularBlockWiFiTethering": true,
     "certificateCredentialConfigurationDisabled": true,
+    "crossProfilePoliciesAllowCopyPaste": true,
+    "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+    "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
     "microsoftLauncherConfigurationEnabled": true,
     "microsoftLauncherCustomWallpaperEnabled": true,
     "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -242,9 +245,7 @@ Content-Length: 9192
     "passwordRequiredType": "required",
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "playStoreMode": "allowList",
-    "safeBootBlocked": true,
     "screenCaptureBlocked": true,
-    "securityAllowDebuggingFeatures": true,
     "securityDeveloperSettingsEnabled": true,
     "securityRequireVerifyApps": true,
     "statusBarBlocked": true,
@@ -292,6 +293,7 @@ Content-Length: 9192
   }
 }
 ```
+
 
 
 

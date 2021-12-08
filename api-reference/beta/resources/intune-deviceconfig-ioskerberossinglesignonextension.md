@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 888075038454471756b5e2831ed5fd67fafc0636
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 90cca5e1488ce4fff9742099209b3e3e03bf5716
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493987"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347394"
 ---
 # <a name="ioskerberossinglesignonextension-resource-type"></a>iosKerberosSingleSignOnExtension 资源类型
 
@@ -29,13 +29,13 @@ ms.locfileid: "60493987"
 |属性|类型|说明|
 |:---|:---|:---|
 |realm|String|获取或设置此配置文件的区分大小写的领域名称。|
-|domains|String 集合|获取或设置应用扩展执行 SSO 的主机或域名的列表。|
-|blockAutomaticLogin|Boolean|启用或禁用钥匙链用法。|
+|domains|String collection|获取或设置应用扩展执行 SSO 的主机或域名的列表。|
+|blockAutomaticLogin|布尔|启用或禁用钥匙链用法。|
 |cacheName|String|获取或设置要用于此配置文件的 Kerberos 缓存的通用安全服务名称。|
-|credentialBundleIdAccessControlList|String 集合|获取或设置允许访问 Kerberos 票证授予票证的应用程序包 ID 的列表。|
-|domainRealms|String collection|获取或设置自定义域领域映射的领域列表。 领域区分大小写。|
+|credentialBundleIdAccessControlList|String collection|获取或设置允许访问 Kerberos 票证授予票证的应用程序包 ID 的列表。|
+|domainRealms|字符串集合|获取或设置自定义域领域映射的领域列表。 领域区分大小写。|
 |isDefaultRealm|Boolean|如果为 true，则此配置文件的领域将选择为默认值。 如果配置了多个 Kerberos 类型的配置文件，则是必需的。|
-|passwordBlockModification|Boolean|启用或禁用密码更改。|
+|passwordBlockModification|布尔|启用或禁用密码更改。|
 |passwordExpirationDays|Int32|替代默认密码过期天数。 对于大多数域，此值将自动计算。|
 |passwordExpirationNotificationDays|Int32|获取或设置在用户收到密码过期通知之前 (默认值为 15) 。|
 |userPrincipalName|String|获取或设置要用于此配置文件的原则用户名。 无需包括领域名称。|
@@ -96,6 +96,7 @@ ms.locfileid: "60493987"
   "managedAppsInBundleIdACLIncluded": true
 }
 ```
+
 
 
 

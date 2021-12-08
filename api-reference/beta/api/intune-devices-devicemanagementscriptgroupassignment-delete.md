@@ -2,15 +2,15 @@
 title: 删除 deviceManagementScriptGroupAssignment
 description: 删除 deviceManagementScriptGroupAssignment。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dff869d73ebe9d7bd7b5aaca557c769533a9b883
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a94dcdd8c5d2ef47f8dc0f41b0b10e04a40137af
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59121933"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346435"
 ---
 # <a name="delete-devicemanagementscriptgroupassignment"></a>删除 deviceManagementScriptGroupAssignment
 
@@ -27,9 +27,9 @@ ms.locfileid: "59121933"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -67,6 +67,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

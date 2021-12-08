@@ -2,15 +2,15 @@
 title: 获取 macOSGeneralDeviceConfiguration
 description: 读取 macOSGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72fda129976902cf8afa90891ad42a7f65293abf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 82bbe8efc135a116cb36b6afabadf08a401b1b0f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138783"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343327"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>获取 macOSGeneralDeviceConfiguration
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5363
+Content-Length: 5436
 
 {
   "value": {
@@ -209,10 +209,13 @@ Content-Length: 5363
     "eraseContentAndSettingsBlocked": true,
     "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
     "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
-    "softwareUpdateNonOSDeferredInstallDelayInDays": 13
+    "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
+    "touchIdTimeoutInHours": 5,
+    "iCloudPrivateRelayBlocked": true
   }
 }
 ```
+
 
 
 

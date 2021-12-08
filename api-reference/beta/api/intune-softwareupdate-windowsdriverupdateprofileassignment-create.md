@@ -2,15 +2,15 @@
 title: 创建 windowsDriverUpdateProfileAssignment
 description: 创建新的 windowsDriverUpdateProfileAssignment 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b58bffd45e80afe9dd2c789bf7331843ec24533
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0cf4db30418222f4c85eab02d24501ba449553a0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138468"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344601"
 ---
 # <a name="create-windowsdriverupdateprofileassignment"></a>创建 windowsDriverUpdateProfileAssignment
 
@@ -97,6 +97,7 @@ Content-Length: 392
   }
 }
 ```
+
 
 
 

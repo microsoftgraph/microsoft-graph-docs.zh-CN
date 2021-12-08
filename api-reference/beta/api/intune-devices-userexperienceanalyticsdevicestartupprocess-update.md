@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsDeviceStartupProcess
 description: 更新 userExperienceAnalyticsDeviceStartupProcess 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 566110a6441273c6027ca1f7853ccb968fb16396
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e892f9443b823b0c5ae92ad858c651a0e48ca2e9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097192"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348297"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocess"></a>更新 userExperienceAnalyticsDeviceStartupProcess
 
@@ -27,9 +27,9 @@ ms.locfileid: "59097192"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -101,6 +101,7 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: driverApprovalStatus 枚举类型
 description: 表示驱动程序的审批状态的枚举类型。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: be598135a452a63a5f0a658e709064278d2939d9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cead8ffefba68fc0de20027f17161036cd757497
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030023"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347247"
 ---
 # <a name="driverapprovalstatus-enum-type"></a>driverApprovalStatus 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "59030023"
 |declined|1|这表示 IT 管理员已拒绝驱动程序。|
 |已批准|2|这表示 IT 管理员已批准驱动程序。|
 |已挂起|3|这表示 IT 管理员已暂停驱动程序。|
+
 
 
 

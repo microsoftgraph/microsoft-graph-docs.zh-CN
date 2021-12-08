@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cac61a828f7d602bfd0bb0775e35f323ba0d491e
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: b689afec67cae4b0c228d1a3ee96498a87a2548e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486824"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346771"
 ---
 # <a name="identity-resource-type"></a>标识资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "60486824"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|标识的标识符。 此属性是只读的。|
-|displayName|String|标识显示名称的标识。 此属性是只读的。|
+|displayName|String|标识显示名称。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,6 +45,7 @@ ms.locfileid: "60486824"
   "displayName": "String"
 }
 ```
+
 
 
 

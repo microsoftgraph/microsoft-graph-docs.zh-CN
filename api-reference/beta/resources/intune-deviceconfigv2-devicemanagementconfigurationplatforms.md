@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3ce51f061b3711dee56bd848978bf054f3b58c7c
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 1b86c0dc528e1a9e3d9d3fda9e3a84238067cdb1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490213"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346197"
 ---
 # <a name="devicemanagementconfigurationplatforms-enum-type"></a>deviceManagementConfigurationPlatforms 枚举类型
 
@@ -27,10 +27,11 @@ ms.locfileid: "60490213"
 |:---|:---|:---|
 |无|0|无。|
 |android|1|Android。|
-|iOS|4 |iOS。|
+|iOS|4|iOS。|
 |macOS|8 |MacOS。|
-|windows10X|16|Windows 10X.|
+|windows10X|16|Windows 10 X。|
 |windows10|32|Windows 10。|
+
 
 
 
