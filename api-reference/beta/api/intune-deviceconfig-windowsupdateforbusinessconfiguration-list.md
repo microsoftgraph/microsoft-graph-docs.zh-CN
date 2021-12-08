@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 879402714d80b99342810dd618ceb4e1bcbe8a6b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: fd7f586c90d01ba14cb497c070f0291a821251d4
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694314"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341157"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>列出 windowsUpdateForBusinessConfigurations
 
@@ -147,6 +147,7 @@ Content-Length: 3321
   ]
 }
 ```
+
 
 
 

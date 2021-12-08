@@ -2,15 +2,15 @@
 title: 更新 windowsProtectionState
 description: 更新 windowsProtectionState 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92174fd5788a424ceaab08815d143ae229ef7e5e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db2a4ff79635563d383ef4ffcbf797499a13adcb
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59024542"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341990"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
@@ -27,9 +27,9 @@ ms.locfileid: "59024542"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |:---|:---|:---|
 |id|String|设备保护状态对象的唯一标识符。 这是设备的设备 ID|
 |malwareProtectionEnabled|Boolean|反恶意软件是否已启用|
-|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (干净或挂起完全扫描或挂起重启等) 。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
+|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (如干净或挂起的完全扫描或挂起的重启等) 。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
 |realTimeProtectionEnabled|Boolean|实时保护是否已启用？|
 |networkInspectionSystemEnabled|Boolean|网络检查系统是否已启用？|
 |quickScanOverdue|Boolean|快速扫描是否过期？|
@@ -71,8 +71,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |lastQuickScanSignatureVersion|String|上次快速扫描签名版本|
 |lastFullScanSignatureVersion|String|上次完全扫描签名版本|
 |lastReportedDateTime|DateTimeOffset|上次设备运行状况报告时间|
-|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|产品状态Windows Defender 防病毒。 可能的值是 `noStatus` `serviceNotRunning` `serviceStartedWithoutMalwareProtection` ：、、、、、、、、、、 `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall` 、|
-|isVirtualMachine|Boolean|指示设备是否是虚拟机。|
+|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|产品状态Windows Defender 防病毒。 可能的值是 `noStatus` `serviceNotRunning` `serviceStartedWithoutMalwareProtection` ：、、、、、、、、、、。 `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall`|
+|isVirtualMachine|布尔值|指示设备是否是虚拟机。|
 |tamperProtectionEnabled|Boolean|指示是否Windows Defender篡改保护功能。|
 
 
@@ -146,6 +146,7 @@ Content-Length: 1020
   "tamperProtectionEnabled": true
 }
 ```
+
 
 
 

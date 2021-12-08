@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: 039b0f825c17269bb6318ed45bc3cb5bb5317e19
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b69b28e2aa7fa6d1b5f67aa4cf9620a59a7ee51d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040636"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339680"
 ---
 # <a name="call-records-enum-values"></a>呼叫记录枚举值
 
@@ -89,6 +89,7 @@ ms.locfileid: "59040636"
 | skypeForBusiness
 | lync
 | unknownFutureValue
+| azureCommunicationServices
 
 ### <a name="servicerole-values"></a>serviceRole 值
 

@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsMetric
 description: 更新 userExperienceAnalyticsMetric 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a72523528dabd899d37637cfc81ddaa6eb0a52d6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b39028a407b7cabaceb9b9b14fdbf9fda65f6c4c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070444"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341710"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>更新 userExperienceAnalyticsMetric
 
@@ -27,9 +27,9 @@ ms.locfileid: "59070444"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -96,6 +96,7 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
+
 
 
 

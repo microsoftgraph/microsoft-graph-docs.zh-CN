@@ -2,15 +2,15 @@
 title: driverCategory 枚举类型
 description: 表示驱动程序属于哪个类别的枚举类型。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 72cedb3d907ab2d868f3fa5f03b711df0edc8055
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9ec858c9f56896ee07fe17ecbbb6890c0d4a8185
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029958"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334541"
 ---
 # <a name="drivercategory-enum-type"></a>driverCategory 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "59029958"
 |建议|0|这表示 Microsoft 建议使用驱动程序。|
 |previouslyApproved|1|这表示驱动程序已由 Microsoft 推荐，并且 IT 管理员已对它采取一些审批操作。|
 |other|2|这表示 Microsoft 从不推荐驱动程序。|
+
 
 
 

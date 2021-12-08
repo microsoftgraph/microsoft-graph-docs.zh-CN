@@ -2,15 +2,15 @@
 title: 创建 certificateConnectorDetails
 description: 创建新的 certificateConnectorDetails 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec640219d77c991804f3ab5680c956a203df755f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc35cfc346fd4e8ee60f51090cbc57f6137b5174
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111997"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339092"
 ---
 # <a name="create-certificateconnectordetails"></a>创建 certificateConnectorDetails
 
@@ -54,7 +54,7 @@ POST /deviceManagement/certificateConnectorDetails
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|此 ConnectorDetails 集的唯一标识符。|
-|connectorName|String|连接器名称 (注册期间设置的) 。|
+|connectorName|String|连接器名称 (注册期间设置) 。|
 |machineName|String|承载此连接器服务的机器的名称。|
 |enrollmentDateTime|DateTimeOffset|注册此连接器的日期/时间。|
 |lastCheckinDateTime|DateTimeOffset|此连接器上次连接到服务的日期/时间。|
@@ -98,6 +98,7 @@ Content-Length: 327
   "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
 }
 ```
+
 
 
 

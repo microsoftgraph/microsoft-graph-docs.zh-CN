@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 097ab8a552e4675570fc85139924615f32b8fd0d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 5d5bee49096634e52658c59a1e1e77df8c2fffed
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697249"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334212"
 ---
 # <a name="devicemanagementcomplianceactionitem-resource-type"></a>deviceManagementComplianceActionItem 资源类型
 
@@ -63,6 +63,7 @@ ms.locfileid: "60697249"
   ]
 }
 ```
+
 
 
 

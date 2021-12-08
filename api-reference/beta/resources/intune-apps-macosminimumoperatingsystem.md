@@ -2,15 +2,15 @@
 title: macOSMinimumOperatingSystem 资源类型
 description: MacOS 应用所需的最低操作系统。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46d6e02674af9683682e26d1a0af1839e3e5ff1a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 564b96f1fd6fdfbc4c5bd915c4a8a444d6fbe86e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064509"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334644"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>macOSMinimumOperatingSystem 资源类型
 
@@ -23,15 +23,15 @@ ms.locfileid: "59064509"
 MacOS 应用所需的最低操作系统。
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |v10_7|Boolean|Mac OS 10.7 或更高版本。|
 |v10_8|Boolean|Mac OS 10.8 或更高版本。|
-|v10_9|Boolean|Mac OS 10.9 或更高版本。|
-|v10_10|Boolean|Mac OS 10.10 或更高版本。|
+|v10_9|布尔值|Mac OS 10.9 或更高版本。|
+|v10_10|布尔值|Mac OS 10.10 或更高版本。|
 |v10_11|Boolean|Mac OS 10.11 或更高版本。|
 |v10_12|Boolean|Mac OS 10.12 或更高版本。|
-|v10_13|Boolean|Mac OS 10.13 或更高版本。|
+|v10_13|布尔值|Mac OS 10.13 或更高版本。|
 |v10_14|Boolean|Mac OS 10.14 或更高版本。|
 |v10_15|Boolean|Mac OS 10.15 或更高版本。|
 |v11_0|布尔值|Mac OS 11.0 或更高版本。|
@@ -63,6 +63,7 @@ MacOS 应用所需的最低操作系统。
   "v12_0": true
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: adc5117b8fb5430efdef73e75fde2424f869459a
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 7dbf1e17fe3a01024e81d25d7dd83ee5acbe8837
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489750"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340268"
 ---
 # <a name="getremoteassistancemonitortotalsessionsreport-action"></a>getRemoteAssistanceMonitorTotalSessionsReport 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "60489750"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -108,6 +108,7 @@ Content-Length: 119
   "value": "Z2V0UmVtb3RlQXNzaXN0YW5jZU1vbml0b3JUb3RhbFNlc3Npb25zUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDIwNDgyNjQ4ODE="
 }
 ```
+
 
 
 

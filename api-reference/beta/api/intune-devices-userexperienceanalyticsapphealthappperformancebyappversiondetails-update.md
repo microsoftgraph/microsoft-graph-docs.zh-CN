@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 description: 更新 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7476b37753b0d6afa2bfaa19aac05e7f1202c18
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4971b3a5d70daf702768f287ddacd81b8fa3ee65
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020719"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341325"
 ---
 # <a name="update-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>更新 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -27,9 +27,9 @@ ms.locfileid: "59020719"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,14 +54,14 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceBy
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析应用性能对象的唯一标识符。|
-|deviceCountWithCrashes|Int32|已报告此应用程序和版本的一个或多个应用程序崩溃的设备总数。 有效值 -2147483648 2147483647|
+|deviceCountWithCrashes|Int32|已报告此应用程序和版本的一个或多个应用程序崩溃的设备总数。 有效值 -2147483648 to 2147483647|
 |isMostUsedVersion|Boolean|应用程序版本是该应用程序最常用的版本。|
-|isLatestUsedVersion|Boolean|应用程序的版本是该应用使用的最新版本。|
+|isLatestUsedVersion|布尔值|应用程序的版本是该应用使用的最新版本。|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
 |appPublisher|String|应用程序的发布者。|
 |appVersion|String|应用程序的版本。|
-|appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 2147483647|
+|appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 to 2147483647|
 
 
 
@@ -110,6 +110,7 @@ Content-Length: 433
   "appCrashCount": 13
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f43820e7c3956ee85ca48820445b9326f339b0f
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 1e5c5f1c3d9cbf7f6bc8c08b7baeba2c14d4c6bb
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489274"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338727"
 ---
 # <a name="create-chromeosonboardingsettings"></a>创建 chromeOSOnboardingSettings
 
@@ -55,7 +55,7 @@ POST /deviceManagement/chromeOSOnboardingSettings
 |:---|:---|:---|
 |id|String|ChromebookTenant 的 ID|
 |ownerUserPrincipalName|String|ChromebookTenant 的 OwnerUserPrincipalName|
-|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|ChromebookTenant 的 OnboardingStatus。 可取值为：`unknown`、`inprogress`、`onboarded`、`failed`。|
+|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|ChromebookTenant 的 OnboardingStatus。 可取值为：`unknown`、`inprogress`、`onboarded`、`failed`、`offboarding`、`unknownFutureValue`。|
 |lastModifiedDateTime|DateTimeOffset|ChromebookTenant 的 LastModifiedDateTime|
 |lastDirectorySyncDateTime|DateTimeOffset|ChromebookTenant 的 LastDirectorySyncDateTime|
 
@@ -97,6 +97,7 @@ Content-Length: 351
   "lastDirectorySyncDateTime": "2016-12-31T23:57:56.1183185-08:00"
 }
 ```
+
 
 
 

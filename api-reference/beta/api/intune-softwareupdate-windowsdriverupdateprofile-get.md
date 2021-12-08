@@ -2,15 +2,15 @@
 title: 获取 windowsDriverUpdateProfile
 description: 读取 windowsDriverUpdateProfile 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a54318f9ed226bd118adeb0bbe536257810af745
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3e5146251417cabcb2bc5c11ccbe4e07e6f009da
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138489"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334289"
 ---
 # <a name="get-windowsdriverupdateprofile"></a>获取 windowsDriverUpdateProfile
 
@@ -88,6 +88,7 @@ Content-Length: 539
   }
 }
 ```
+
 
 
 

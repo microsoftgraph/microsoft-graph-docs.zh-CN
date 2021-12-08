@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a2afa3243cc19b016430e2b9960f6aecc349cdf
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c9f2ca823aff535ff0bcdb7323f61c08f81cc4e3
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60691538"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338475"
 ---
 # <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>androidManagedStoreAppAssignmentSettings 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "60691538"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|androidManagedStoreAppTrackIds|String collection|为此应用分配启用的轨 ID。|
+|androidManagedStoreAppTrackIds|字符串集合|为此应用分配启用的轨 ID。|
 |autoUpdateMode|[androidManagedStoreAutoUpdateMode](../resources/intune-shared-androidmanagedstoreautoupdatemode.md)|此应用程序分配的自动更新优先顺序。 可取值为：`default`、`postponed`、`priority`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系
@@ -50,6 +50,7 @@ ms.locfileid: "60691538"
   "autoUpdateMode": "String"
 }
 ```
+
 
 
 

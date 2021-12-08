@@ -2,15 +2,15 @@
 title: windowsDefenderScan 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67d5aa6deb177ffb886fdda660e3913b4c679ecf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f5d903790efad8a1554377a225f6053264b9a50b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59133000"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337782"
 ---
 # <a name="windowsdefenderscan-action"></a>windowsDefenderScan 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "59133000"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.PriviligedOperation.All|
+|应用程序|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,6 +86,7 @@ Content-length: 25
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

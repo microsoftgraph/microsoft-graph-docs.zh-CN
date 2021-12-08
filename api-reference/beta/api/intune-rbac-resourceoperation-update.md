@@ -2,15 +2,15 @@
 title: 更新 resourceOperation
 description: 更新 resourceOperation 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0df13a5a08c451678799ddf2711274200f73c1f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2a7c0af2ed00313cfaa75dad3e65ec4bce343fad
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064985"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337341"
 ---
 # <a name="update-resourceoperation"></a>更新 resourceOperation
 
@@ -27,9 +27,9 @@ ms.locfileid: "59064985"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,7 +58,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|Boolean|确定是否针对每个角色分配定义的作用域验证权限。 此属性是只读的。|
+|enabledForScopeValidation|布尔值|确定是否针对每个角色分配定义的作用域验证权限。 此属性是只读的。|
 
 
 
@@ -101,6 +101,7 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
+
 
 
 

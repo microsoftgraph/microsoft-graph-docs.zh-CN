@@ -2,15 +2,15 @@
 title: roleScopeTagAutoAssignment 资源类型
 description: 包含用于将角色作用域标记自动分配给要应用于设备的组的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f56bba9d1ea1c18a9774575998be8854d9a39102
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 819691d3e8d9fbcc035836049f2afe4f60d3b6c6
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063676"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337208"
 ---
 # <a name="rolescopetagautoassignment-resource-type"></a>roleScopeTagAutoAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59063676"
 
 包含用于将角色作用域标记自动分配给要应用于设备的组的属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 roleScopeTagAutoAssignments](../api/intune-rbac-rolescopetagautoassignment-list.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) 集合|列出 [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) 对象的属性和关系。|
@@ -60,6 +60,7 @@ ms.locfileid: "59063676"
   }
 }
 ```
+
 
 
 

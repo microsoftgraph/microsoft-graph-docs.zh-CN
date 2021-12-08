@@ -2,15 +2,15 @@
 title: 创建 groupPolicyUploadedDefinition
 description: 创建新的 groupPolicyUploadedDefinition 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e532cd55cf0271ddea3b8244fddd31fa1066be3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4374fb6c8aa351dbda13170949d29254fa22f37c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041960"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338846"
 ---
 # <a name="create-grouppolicyuploadeddefinition"></a>创建 groupPolicyUploadedDefinition
 
@@ -123,6 +123,7 @@ Content-Length: 651
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

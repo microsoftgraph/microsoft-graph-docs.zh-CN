@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85c37942568292bc7dff9c2701a0dd37f26723f8
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d1b83f715aa65b601b77e88ec2c670f10e58ac54
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491758"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341766"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>创建 androidDeviceOwnerEnrollmentProfile
 
@@ -68,11 +68,11 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 |enrollmentTokenUsageCount|Int32|已使用当前令牌注册的 AOSP 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 |wifiSsid|String|包含 WLAN 登录 ssid 的字符串|
 |wifiPassword|String|包含 WLAN 登录密码的字符串|
 |wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|包含 WLAN 安全类型的字符串。 可取值为：`none`、`wpa`、`wep`。|
-|wifiHidden|Boolean|指示是否已启用隐藏的 wifi 网络的布尔值|
+|wifiHidden|布尔值|指示是否已启用隐藏的 wifi 网络的布尔值|
 
 
 
@@ -153,6 +153,7 @@ Content-Length: 1094
   "wifiHidden": true
 }
 ```
+
 
 
 

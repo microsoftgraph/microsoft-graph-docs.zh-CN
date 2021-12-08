@@ -2,15 +2,15 @@
 title: assign 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 841ec444f99480dc09cabb6fd64db5dad721ade5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 88f50244d99166f8e38be75311ceb49ea5ac38b0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018339"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334800"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "59018339"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -51,7 +51,7 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assign
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |deviceHealthScriptAssignments|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) 集合|尚未记录|
 
@@ -98,6 +98,7 @@ Content-length: 756
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

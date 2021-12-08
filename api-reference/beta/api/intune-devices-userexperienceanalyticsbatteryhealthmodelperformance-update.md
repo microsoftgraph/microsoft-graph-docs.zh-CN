@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d5daf586af1f04c27a66b0bdd12abca85291b04d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2d00636e9ef2f79202a87647d46b4ff64f10bd78
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696292"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339345"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthmodelperformance"></a>更新 userExperienceAnalyticsBatteryHealthModelPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "60696292"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,12 +54,12 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthModelPerformance/{us
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析电池运行状况模型性能对象的唯一标识符。|
-|activeDevices|Int32|该型号的活动设备数。 有效值 -2147483648 2147483647|
+|activeDevices|Int32|该型号的活动设备数。 有效值 -2147483648 to 2147483647|
 |model|String|设备的型号名称。|
 |manufacturer|String|设备制造商的名称。|
-|averageMaxCapacityPercentage|Int32|给定型号的所有设备的最大容量的平均值。 最大容量用于测量设备电池的完全充电容量与设计容量。 有效值 -2147483648 2147483647|
-|averageEstimatedRuntimeInMinutes|Int32|给定型号的所有设备的完全付费预计运行时的平均值。 单位（以分钟表示）。 有效值 -2147483648 2147483647|
-|averageBatteryAgeInDays|Int32|租户中给定型号的所有设备的电池使用时间平均值。 单位（以天表示）。 有效值 -2147483648 2147483647|
+|averageMaxCapacityPercentage|Int32|给定型号的所有设备的最大容量的平均值。 最大容量用于测量设备电池的完全充电容量与设计容量。 有效值 -2147483648 to 2147483647|
+|averageEstimatedRuntimeInMinutes|Int32|给定型号的所有设备的完全付费预计运行时的平均值。 单位（以分钟表示）。 有效值 -2147483648 to 2147483647|
+|averageBatteryAgeInDays|Int32|租户中给定型号的所有设备的电池使用时间平均值。 单位（以天表示）。 有效值 -2147483648 to 2147483647|
 
 
 
@@ -104,6 +104,7 @@ Content-Length: 349
   "averageBatteryAgeInDays": 7
 }
 ```
+
 
 
 

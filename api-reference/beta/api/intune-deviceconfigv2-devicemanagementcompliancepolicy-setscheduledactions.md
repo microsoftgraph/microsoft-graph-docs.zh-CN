@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e0e0817c5eaf443e1972d5a7cab608c11205f8a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 1972121b3ed7f8a143aa79e96cbebad45ffb3a91
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695544"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338426"
 ---
 # <a name="setscheduledactions-action"></a>setScheduledActions 操作
 
@@ -98,6 +98,7 @@ Content-Length: 218
   ]
 }
 ```
+
 
 
 

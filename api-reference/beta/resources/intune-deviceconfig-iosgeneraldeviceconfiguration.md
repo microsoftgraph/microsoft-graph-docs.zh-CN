@@ -2,15 +2,15 @@
 title: iosGeneralDeviceConfiguration 资源类型
 description: 本主题提供由 iosGeneralDeviceConfiguration 资源公开的已声明方法、属性和关系的说明。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 849824bbb12cdcfe32bd6a58dfaa8befc70df912
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 491cc8b4be13be4d2b5b7da25f60a7942495a2fe
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111192"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342536"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "59111192"
 
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List iosGeneralDeviceConfigurations](../api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md)|[iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) 集合|列出 [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) 对象的属性和关系。|
@@ -40,7 +40,7 @@ ms.locfileid: "59111192"
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -64,19 +64,19 @@ ms.locfileid: "59111192"
 |appStoreBlockInAppPurchases|Boolean|指示是否阻止用户进行应用内购买。|
 |appStoreBlockUIAppInstallation|Boolean|指示是否阻止 App Store 应用，而不通过主机应用限制安装。 仅适用于监督模式（iOS 9.0 及更高版本）。|
 |appStoreRequirePassword|Boolean|指示使用 App Store 时是否需要密码。|
-|autoFillForceAuthentication|Boolean|指示在 Safari 和其他受监督设备上应用自动填充密码和信用卡信息之前是否强制用户身份验证。|
+|autoFillForceAuthentication|布尔值|指示在 Safari 和其他受监督设备上应用自动填充密码和信用卡信息之前是否强制用户身份验证。|
 |bluetoothBlockModification|Boolean|指示设备处于监督模式时是否允许修改蓝牙设置（iOS 10.0 及更高版本）。|
 |cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。 需要适用于 iOS 13 及更高版本的受监督设备。|
 |cellularBlockDataRoaming|Boolean|指示是否阻止数据漫游。|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|指示漫游时是否阻止全局背景提取。|
 |cellularBlockPerAppDataModification|Boolean|指示设备处于监督模式时是否允许更改手机应用数据使用设置。|
 |cellularBlockPersonalHotspot|Boolean|指示是否阻止个人热点。|
-|cellularBlockPlanModification|Boolean|指示是否允许用户在受监督的设备上更改手机网络计划的设置。|
+|cellularBlockPlanModification|布尔值|指示是否允许用户在受监督的设备上更改手机网络计划的设置。|
 |cellularBlockVoiceRoaming|Boolean|指示是否阻止语音漫游。|
 |certificatesBlockUntrustedTlsCertificates|Boolean|指示是否阻止不受信任的 TLS 证书。|
 |classroomAppBlockRemoteScreenObservation|Boolean|指示设备处于监督模式时是否允许 Classroom 应用进行远程屏幕观察（iOS 9.3 及更高版本）。|
 |classroomAppForceUnpromptedScreenObservation|Boolean|指示是否自动授予 Classroom 应用上托管课程的教师权限，以便在设备处于监督模式时查看学生的屏幕且不会出现提示。|
-|classroomForceAutomaticallyJoinClasses|Boolean|指示设备在监督模式下时是否自动授予对教师请求的权限，而不提示学生。|
+|classroomForceAutomaticallyJoinClasses|布尔值|指示设备在监督模式下时是否自动授予对教师请求的权限，而不提示学生。|
 |classroomForceUnpromptedAppAndDeviceLock|Boolean|指示是否允许教师在不提示学生的情况下锁定应用或设备。 仅限监督模式。|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|位于 AppComplianceList 中的列表。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
@@ -120,18 +120,18 @@ ms.locfileid: "59111192"
 |kioskModeAllowAssistiveSpeak|Boolean|指示在展台模式下是否允许辅助朗读。|
 |kioskModeAllowAssistiveTouchSettings|Boolean|指示在展台模式下是否允许访问辅助触摸设置。|
 |kioskModeAllowAutoLock|Boolean|指示在展台模式下是否允许设备自动锁定。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockAutoLock。|
-|kioskModeBlockAutoLock|Boolean|指示在展台模式下是否阻止设备自动锁定。|
+|kioskModeBlockAutoLock|布尔值|指示在展台模式下是否阻止设备自动锁定。|
 |kioskModeAllowColorInversionSettings|Boolean|指示在展台模式下是否允许访问颜色反转设置。|
 |kioskModeAllowRingerSwitch|Boolean|指示在展台模式下是否允许使用响铃开关。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockRingerSwitch。|
-|kioskModeBlockRingerSwitch|Boolean|指示在展台模式下是否阻止使用响铃开关。|
+|kioskModeBlockRingerSwitch|布尔值|指示在展台模式下是否阻止使用响铃开关。|
 |kioskModeAllowScreenRotation|Boolean|指示在展台模式下是否允许屏幕旋转。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockScreenRotation。|
-|kioskModeBlockScreenRotation|Boolean|指示在展台模式下是否阻止屏幕旋转。|
+|kioskModeBlockScreenRotation|布尔值|指示在展台模式下是否阻止屏幕旋转。|
 |kioskModeAllowSleepButton|Boolean|指示在展台模式下是否允许使用睡眠按钮。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockSleepButton。|
 |kioskModeBlockSleepButton|Boolean|指示在展台模式下是否阻止使用睡眠按钮。|
 |kioskModeAllowTouchscreen|Boolean|指示在展台模式下是否允许使用触摸屏。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockTouchscreen。|
-|kioskModeBlockTouchscreen|Boolean|指示在展台模式下是否阻止使用触摸屏。|
+|kioskModeBlockTouchscreen|布尔值|指示在展台模式下是否阻止使用触摸屏。|
 |kioskModeEnableVoiceControl|Boolean|指示是否在展台模式下启用语音控制。|
-|kioskModeAllowVoiceControlModification|Boolean|指示是否允许用户在展台模式下切换语音控制。|
+|kioskModeAllowVoiceControlModification|布尔值|指示是否允许用户在展台模式下切换语音控制。|
 |kioskModeAllowVoiceOverSettings|Boolean|指示在展台模式下是否允许访问语音插入设置。|
 |kioskModeAllowVolumeButtons|Boolean|指示在展台模式下是否允许使用音量按钮。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockVolumeButtons。|
 |kioskModeBlockVolumeButtons|Boolean|指示在展台模式下是否阻止音量按钮。|
@@ -190,49 +190,50 @@ ms.locfileid: "59111192"
 |siriBlockUserGeneratedContent|Boolean|指示在受监督的设备上使用时是否阻止 Siri 查询用户生成的内容。|
 |siriRequireProfanityFilter|Boolean|指示是否阻止 Siri 在受监督的设备上口述或说出亵渎语言。|
 |softwareUpdatesEnforcedDelayInDays|Int32|设置对受监督设备取消软件更新的天数。 有效值为 0 至 90|
-|softwareUpdatesForceDelayed|Boolean|指示设备在监督模式下时是否延迟软件更新的用户可见性。|
+|softwareUpdatesForceDelayed|布尔值|指示设备在监督模式下时是否延迟软件更新的用户可见性。|
 |spotlightBlockInternetResults|Boolean|指示是否阻止 Spotlight 搜索在受监督的设备上返回 Internet 搜索结果。|
 |voiceDialingBlocked|Boolean|指示是否阻止语音拨号。|
 |wallpaperBlockModification|Boolean|指示是否允许在受监督的设备上修改墙纸（iOS 9.0 及更高版本）。|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|指示设备处于监督模式时是否强制设备仅使用配置文件中的 Wi-Fi 网络。 适用于运行 iOS 和 iPadOS 版本 14.4 及更早版本的设备。 运行 14.5+ 的设备应该使用设置"WiFiConnectToAllowedNetworksOnlyForced"。|
-|classroomForceRequestPermissionToLeaveClasses|Boolean|指示通过 Classroom 注册非托管课程的学生在尝试离开 iOS 11.3 及更高版本的 (课程时是否将请求教师) 。|
-|keychainBlockCloudSync|Boolean|指示是否阻止 iCloud 密钥链同步。 需要适用于 iOS 13 及更高版本的受监督设备。|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|指示在尝试从 iOS 11.3 及更高版本的 iOS 11.3 (课程时，通过 Classroom 注册非托管课程的学生是否将请求教师) 。|
+|keychainBlockCloudSync|布尔值|指示是否阻止 iCloud 密钥链同步。 需要适用于 iOS 13 及更高版本的受监督设备。|
 |pkiBlockOTAUpdates|Boolean|指示是否阻止非空 PKI 更新。 如果此限制设置为 false，将不会在 iOS 7.0 (禁用 CRL 和 OCSP 检查) 。|
 |privacyForceLimitAdTracking|Boolean|指示广告跟踪是否受限。 (iOS 7.0 及更高版本) 。|
 |enterpriseBookBlockBackup|Boolean|指示是否阻止Enterprise备份书籍。|
 |enterpriseBookBlockMetadataSync|Boolean|指示是否阻止Enterprise备注和突出显示同步。|
-|airPrintBlocked|Boolean|指示在 iOS 11.0 (是否阻止 AirPrint) 。|
-|airPrintBlockCredentialsStorage|Boolean|指示 iOS 11.0 及更高版本中是否阻止用于 Airprint 的用户名和密码 (密钥链) 。|
+|airPrintBlocked|布尔值|指示在 iOS 11.0 (是否阻止 AirPrint) 。|
+|airPrintBlockCredentialsStorage|布尔值|指示 iOS 11.0 及更高版本中是否阻止用于 Airprint 的用户名和密码 (密钥链) 。|
 |airPrintForceTrustedTLS|Boolean|指示 iOS 11.0 及更高版本的 TLS 打印通信 (是否需要受信任的证书) 。|
 |airPrintBlockiBeaconDiscovery|Boolean|指示是否阻止 iBeacon 发现 AirPrint 打印机。 这可以防止恶意的 AirPrint 蓝牙信号对 iOS 11.0 (及更高版本的网络通信进行网络钓鱼) 。|
 |filesNetworkDriveAccessBlocked|Boolean|指示设备是否可以使用 SMB 协议中的服务器消息块访问网络 (或其他) 资源。 适用于运行 iOS 和 iPadOS 版本 13.0 及更高版本的设备。|
 |filesUsbDriveAccessBlocked|Boolean|指示具有访问权限的设备能否连接到 USB 驱动器上并打开文件。 适用于运行 iOS 和 iPadOS 版本 13.0 及更高版本的设备。|
 |wifiPowerOnForced|Boolean|指示设备Wi-Fi保持打开状态，即使设备处于飞行模式。 适用于运行 iOS 和 iPadOS 版本 13.0 及更高版本的设备。|
-|blockSystemAppRemoval|Boolean|指示在受监督的设备 (iOS 11.0 及更高版本上是否阻止从设备删除系统) 。|
+|blockSystemAppRemoval|Boolean|指示在 iOS 11.0 及更高版本的受监督设备上是否 (从设备删除系统) 。|
 |vpnBlockCreation|Boolean|指示在 iOS 11.0 (或更高版本中是否阻止创建 VPN) 。|
-|appRemovalBlocked|Boolean|指示是否允许删除应用。|
+|appRemovalBlocked|布尔值|指示是否允许删除应用。|
 |usbRestrictedModeBlocked|Boolean|指示是否允许在 iOS 11.4.1 (设备锁定时连接到 USB) 。|
-|passwordBlockAutoFill|Boolean|指示是否允许在 iOS 12.0 (自动填充密码功能) 。|
-|passwordBlockProximityRequests|Boolean|指示是否阻止从 iOS 12.0 (及更高版本的附近设备请求) 。|
+|passwordBlockAutoFill|布尔值|指示是否允许在 iOS 12.0 (自动填充密码) 。|
+|passwordBlockProximityRequests|布尔值|指示是否阻止从 iOS 12.0 (及更高版本的附近设备请求) 。|
 |passwordBlockAirDropSharing|Boolean|指示是否阻止使用 iOS 12.0 及更高版本的 AirDrop 密码功能共享) 。|
-|dateAndTimeForceSetAutomatically|Boolean|指示日期和时间"自动设置"功能是否已启用，并且用户 (iOS 12.0 及更高版本) 。|
+|dateAndTimeForceSetAutomatically|布尔值|指示日期和时间"自动设置"功能是否已启用，并且用户 (iOS 12.0 及更高版本) 。|
 |contactsAllowManagedToUnmanagedWrite|Boolean|指示托管应用是否可以将联系人写入 iOS 12.0 及更高版本 (非托管联系人) 。|
-|contactsAllowUnmanagedToManagedRead|Boolean|指示非托管应用是否可以从 iOS 12.0 (或更高版本的托管联系人帐户) 。|
-|cellularBlockPersonalHotspotModification|Boolean|指示是否阻止用户修改 iOS 12.2 (或更高版本的个人热点) 。|
-|continuousPathKeyboardBlocked|Boolean|指示在 iOS 13 或更高版本中监督设备时是否 (连续路径) 。|
-|findMyDeviceInFindMyAppBlocked|Boolean|指示在 iOS 13 或更高版本中监督设备时是否 (查找我的) 。|
-|findMyFriendsInFindMyAppBlocked|Boolean|指示在 iOS 13 或更高版本中监督设备时是否 (查找我的好友) 。|
-|iTunesBlocked|Boolean|指示是否阻止 iTunes 应用。 需要适用于 iOS 13 及更高版本的受监督设备。|
+|contactsAllowUnmanagedToManagedRead|布尔值|指示非托管应用是否可以从 iOS 12.0 (或更高版本的托管联系人帐户) 。|
+|cellularBlockPersonalHotspotModification|布尔值|指示是否阻止用户在 iOS 12.2 或更高版本 (个人热点设置) 。|
+|continuousPathKeyboardBlocked|布尔值|指示在 iOS 13 或更高版本的设备受监督时是否 (连续路径) 。|
+|findMyDeviceInFindMyAppBlocked|布尔值|指示在 iOS 13 或更高版本中监督设备时 (查找我的) 。|
+|findMyFriendsInFindMyAppBlocked|布尔值|指示在 iOS 13 或更高版本中监督设备时是否 (查找我的好友) 。|
+|iTunesBlocked|布尔值|指示是否阻止 iTunes 应用。 需要适用于 iOS 13 及更高版本的受监督设备。|
 |sharedDeviceBlockTemporarySessions|Boolean|指示是否阻止 iOS 13.4 或更高版本上的共享 iPad (临时) 。|
-|appClipsBlocked|Boolean|阻止用户添加任何应用剪辑并删除设备上的任何现有应用剪辑。|
+|appClipsBlocked|布尔值|阻止用户添加任何应用剪辑并删除设备上的任何现有应用剪辑。|
 |applePersonalizedAdsBlocked|Boolean|如果为 true，限制 Apple 个性化广告。 在 iOS 14 及更高版本中可用。|
 |nfcBlocked|Boolean|禁用 NFC 以防止设备与其他支持 NFC 的设备配对。 适用于运行 14.2 及更高版本的 iOS/iPadOS 设备。|
 |autoUnlockBlocked|Boolean|阻止用户使用 Apple Watch 解锁其设备。 适用于运行 iOS 和 iPadOS 版本 14.5 及更高版本的设备。|
 |unpairedExternalBootToRecoveryAllowed|Boolean|允许用户使用未配对的设备将设备启动到恢复模式。 适用于运行 iOS 和 iPadOS 版本 14.5 及更高版本的设备。|
-|onDeviceOnlyDictationForced|Boolean|禁用与 Siri 服务器的连接，以便用户不能使用 Siri 听写文本。 适用于运行 iOS 和 iPadOS 版本 14.5 及更高版本的设备。|
-|wiFiConnectToAllowedNetworksOnlyForced|Boolean|要求设备使用Wi-Fi配置文件设置的网络。 适用于运行 iOS 和 iPadOS 版本 14.5 及更高版本的设备。|
-|onDeviceOnlyTranslationForced|Boolean|设置为 TRUE 时，该设置将禁用与 Siri 服务器的连接，以便用户不能使用 Siri 翻译文本。 设置为 FALSE 时，该设置允许与 Siri 服务器的连接，用户可以使用 Siri 翻译文本。 适用于运行 iOS 和 iPadOS 版本 15.0 及更高版本的设备。|
-|managedPasteboardRequired|Boolean|开放式管理控制用户如何在非托管应用和托管应用之间共享数据。 将此设置设置为 true 将基于配置"阻止在非托管应用中查看公司<b></b>文档"和"阻止在公司应用中查看非公司文档"来强制执行复制/<b>粘贴限制。</b>|
+|onDeviceOnlyDictationForced|布尔值|禁用与 Siri 服务器的连接，以便用户不能使用 Siri 听写文本。 适用于运行 iOS 和 iPadOS 版本 14.5 及更高版本的设备。|
+|wiFiConnectToAllowedNetworksOnlyForced|Boolean|要求设备使用通过Wi-Fi配置文件设置的网络。 适用于运行 iOS 和 iPadOS 版本 14.5 及更高版本的设备。|
+|onDeviceOnlyTranslationForced|布尔值|设置为 TRUE 时，该设置将禁用与 Siri 服务器的连接，以便用户不能使用 Siri 翻译文本。 设置为 FALSE 时，该设置允许与 Siri 服务器的连接，用户可以使用 Siri 翻译文本。 适用于运行 iOS 和 iPadOS 版本 15.0 及更高版本的设备。|
+|managedPasteboardRequired|布尔值|开放式管理控制用户如何在非托管应用和托管应用之间共享数据。 将此设置设置为 true 将基于配置"阻止在非托管应用中查看公司<b></b>文档"和"阻止在公司应用中查看非公司文档"来强制执行复制/<b>粘贴限制。</b>|
+|iCloudPrivateRelayBlocked|Boolean|iCloud 专用中继是一项 iCloud+ 服务，可防止网络和服务器通过 Internet 监视用户的活动。 通过阻止 iCloud 专用中继，Apple 不会加密离开设备的流量。 适用于运行 iOS 15 及更高版本的设备。|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|在展台模式下运行的应用类型。 可取值为：`notConfigured`、`appStoreApp`、`managedApp`、`builtInApp`。|
 
 ## <a name="relationships"></a>关系
@@ -554,9 +555,11 @@ ms.locfileid: "59111192"
   "wiFiConnectToAllowedNetworksOnlyForced": true,
   "onDeviceOnlyTranslationForced": true,
   "managedPasteboardRequired": true,
+  "iCloudPrivateRelayBlocked": true,
   "kioskModeAppType": "String"
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 description: 创建新的 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 042e373eb43049ad36d73443a9779f25fbc2195e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 981b72c3bc0f59a3cfce9349f40afa67515b4736
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077130"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342354"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversiondeviceid"></a>创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 
@@ -27,9 +27,9 @@ ms.locfileid: "59077130"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -61,7 +61,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByA
 |appDisplayName|String|应用程序的友好名称。|
 |appPublisher|String|应用程序的发布者。|
 |appVersion|String|应用程序的版本。|
-|appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 2147483647|
+|appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 to 2147483647|
 
 
 
@@ -110,6 +110,7 @@ Content-Length: 488
   "appCrashCount": 13
 }
 ```
+
 
 
 

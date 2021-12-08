@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsImpactingProcess
 description: 更新 userExperienceAnalyticsImpactingProcess 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d1643c7d15962fc7b108f7a49592d1483f9b5bf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d2c002126c7fac9cbf155fc800e20e927b79e874
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070529"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337621"
 ---
 # <a name="update-userexperienceanalyticsimpactingprocess"></a>更新 userExperienceAnalyticsImpactingProcess
 
@@ -27,9 +27,9 @@ ms.locfileid: "59070529"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -104,6 +104,7 @@ Content-Length: 349
   "impactValue": 3.6666666666666665
 }
 ```
+
 
 
 

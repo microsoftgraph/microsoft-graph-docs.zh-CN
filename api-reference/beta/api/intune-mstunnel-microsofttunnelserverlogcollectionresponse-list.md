@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3527c5189382ec6cab7791798f3ad195dd06c434
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d33e5b49f95cd763fc1d91fefe5aabffd3e1a050
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491379"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336235"
 ---
 # <a name="list-microsofttunnelserverlogcollectionresponses"></a>列出 microsoftTunnelServerLogCollectionResponses
 
@@ -83,6 +83,7 @@ Content-Length: 513
   ]
 }
 ```
+
 
 
 

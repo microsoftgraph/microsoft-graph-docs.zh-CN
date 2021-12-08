@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2017cae903805514ae1523a7255217a92063011
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 1e6cbabab6b471a6c7aa0b139657d2f393982e0f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694615"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342389"
 ---
 # <a name="get-devicemanagementconfigurationpolicyassignment"></a>获取 deviceManagementConfigurationPolicyAssignment
 
@@ -86,6 +86,7 @@ Content-Length: 553
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 239c94c309e01b4a18c724e101b313f3d6606c18
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: cf7f6e4fb63b506aa4fbf3f6372c10960838f82b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489891"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334527"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>创建 androidManagedStoreAppConfiguration
 
@@ -55,7 +55,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String 集合|关联的应用。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|roleScopeTagIds|String collection|此应用配置实体的范围标记列表。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|roleScopeTagIds|字符串集合|此应用配置实体的范围标记列表。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |说明|String|管理员提供的设备配置说明。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
@@ -65,8 +65,8 @@ POST /deviceAppManagement/mobileAppConfigurations
 |payloadJson|String|Android Enterprise应用配置 JSON 有效负载。|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) 集合|Android 应用权限和相应权限操作的列表。|
 |appSupportsOemConfig|Boolean|此 AppConfig 是否是 OEMConfig 策略。|
-|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise AndroidWorkProfile (DeviceOwner 或默认 (适用于) ) 的配置文件适用性。 可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。|
-|connectedAppsEnabled|Boolean|用于指定是否允许此应用的 ConnectedApps 体验的设置。|
+|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise AndroidWorkProfile (DeviceOwner 或默认配置文件 (适用于这两者）。 可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。|
+|connectedAppsEnabled|布尔值|用于指定是否允许此应用的 ConnectedApps 体验的设置。|
 
 
 
@@ -143,6 +143,7 @@ Content-Length: 846
   "connectedAppsEnabled": true
 }
 ```
+
 
 
 

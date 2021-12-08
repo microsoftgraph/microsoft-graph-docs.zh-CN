@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51e0ee79bcdb6858ede8a794ed3d82bd546195d3
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: e5487ccb199d8deda3e597c3a04954fcb5e20ed5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694286"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336417"
 ---
 # <a name="list-defaultmanagedappprotections"></a>列出 defaultManagedAppProtections
 
@@ -198,6 +198,7 @@ Content-Length: 6108
   ]
 }
 ```
+
 
 
 

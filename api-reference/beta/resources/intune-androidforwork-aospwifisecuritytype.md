@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 025bd8c57d33a5521c3e910c10548bd05a2597c2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 020b04d11af3a17a8ca883c1514e991fb8305e12
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493795"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335696"
 ---
 # <a name="aospwifisecuritytype-enum-type"></a>aospWifiSecurityType 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "60493795"
 |无|0|无安全类型。|
 |wpa|1|WPA-Pre-shared-key|
 |wep|2|WEP-Pre-shared-key|
+
 
 
 

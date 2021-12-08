@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 54ba00c62c6618d10dbc81cfc9587a4204f0f368
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d314a9ca5d8f842b7e898ba0ff358241bf996e2f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493792"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340170"
 ---
 # <a name="operationapprovalpolicyset-resource-type"></a>operationApprovalPolicySet 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "60493792"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|此 OperationApprovalPolicy 的策略类型。 此属性是只读的。 可能的值是 `deviceActions` `deviceWipe` `deviceRetire` ：、、、、、、、、 `deviceRetireNonCompliant` `deviceDelete` `deviceLock` `deviceErase` `deviceDisableActivationLock` `windowsEnrollment` `compliancePolicies` `configurationPolicies` `appProtectionPolicies` `policySets` `filters` `endpointSecurity` `apps` `scripts` `roles` `unknownFutureValue` 。|
-|policyPlatform|[operationApprovalPolicyPlatform](../resources/intune-rbac-operationapprovalpolicyplatform.md)|适用的平台 (OperationApprovalPolicy) 的一部分。 此属性是只读的。 可取值为：`notApplicable`、`androidDeviceAdministrator`、`androidEnterprise`、`iOSiPadOS`、`macOS`、`windows10AndLater`、`windows81AndLater`、`windows10X`。|
+|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|此 OperationApprovalPolicy 的策略类型。 此属性是只读的。 可能的值是 `deviceActions` `deviceWipe` `deviceRetire` ：、、、、、、、、。 `deviceRetireNonCompliant` `deviceDelete` `deviceLock` `deviceErase` `deviceDisableActivationLock` `windowsEnrollment` `compliancePolicies` `configurationPolicies` `appProtectionPolicies` `policySets` `filters` `endpointSecurity` `apps` `scripts` `roles` `deviceResetPasscode` `unknownFutureValue`|
+|policyPlatform|[operationApprovalPolicyPlatform](../resources/intune-rbac-operationapprovalpolicyplatform.md)|适用于此 OperationApprovalPolicy () 一个应用平台。 此属性是只读的。 可取值为：`notApplicable`、`androidDeviceAdministrator`、`androidEnterprise`、`iOSiPadOS`、`macOS`、`windows10AndLater`、`windows81AndLater`、`windows10X`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,6 +45,7 @@ ms.locfileid: "60493792"
   "policyPlatform": "String"
 }
 ```
+
 
 
 

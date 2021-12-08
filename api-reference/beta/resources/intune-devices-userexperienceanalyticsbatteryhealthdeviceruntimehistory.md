@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db4d43edf29e295a2fcae26b03f2dcfad83fde70
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 46c88e9bccacade261ca1dbe8f10e43a3e9b4d68
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695533"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338769"
 ---
 # <a name="userexperienceanalyticsbatteryhealthdeviceruntimehistory-resource-type"></a>userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "60695533"
 |id|String|用户体验分析电池运行状况运行时对象的唯一标识符。|
 |deviceId|String|设备的唯一标识符，Intune DeviceID 或 SCCM 设备 ID。|
 |runtimeDateTime|String|运行时历史记录实例的日期时间。|
-|estimatedRuntimeInMinutes|Int32|电池完全充电时设备的预计运行时。 单位（以分钟表示）。 有效值 -2147483648 2147483647|
+|estimatedRuntimeInMinutes|Int32|电池完全充电时设备的预计运行时。 单位（以分钟表示）。 有效值 -2147483648 to 2147483647|
 
 ## <a name="relationships"></a>关系
 无
@@ -59,6 +59,7 @@ ms.locfileid: "60695533"
   "estimatedRuntimeInMinutes": 1024
 }
 ```
+
 
 
 

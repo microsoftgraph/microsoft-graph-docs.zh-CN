@@ -1,15 +1,15 @@
 ---
 title: 如何使用 Microsoft Microsoft Intune API 保护公司Graph数据
-description: 列出管理Graph应用及其策略的适用于 Intune 终结点 (的 Microsoft) REST API。
+description: 列出 Microsoft Graph Intune 终结点的 API (REST) 管理租户组织的应用及其策略。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 9cbb23c56a73ecaca01a1600681da208f67ed741
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 5cc9d43fb9f4bb7f4729bfecf5e8825a7c043caf
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60481088"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338230"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -21,7 +21,7 @@ ms.locfileid: "60481088"
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 
-你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可以独立于任何移动设备管理 (MDM) 解决方案使用，因此可以使用它保护公司的数据，而无需在设备管理解决方案中注册设备。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
+你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可以独立于任何移动设备管理 (MDM) 解决方案使用，因此，你可以使用它在设备管理解决方案中注册设备或不注册设备，以保护公司数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
 
 以下 Graph 资源可用于在 Intune 中管理应用保护策略：
 
@@ -78,7 +78,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [iOS VPP 应用撤销许可证操作结果](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS VPP 电子书](intune-books-iosvppebook.md)
 - [iOS VPP 电子书分配](intune-books-iosvppebookassignment.md)
-- [键/值对](intune-androidforwork-keyvaluepair.md)
 - [macOS LOB 应用](intune-apps-macoslobapp.md)
 - [macOS LOB 子应用](intune-apps-macoslobchildapp.md)
 - [macOS mdatp 应用](intune-apps-macosmdatpapp.md)

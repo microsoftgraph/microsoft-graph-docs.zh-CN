@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b1030ed45e4ac30de34535a5361dc1e1d425f18
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 10267b72faa1ead73bc9952b4f4e1af7a05fef24
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493238"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339288"
 ---
 # <a name="create-microsofttunnelserver"></a>创建 microsoftTunnelServer
 
@@ -101,6 +101,7 @@ Content-Length: 361
   "serverImageDigest": "Server Image Digest value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1cf5fb48e676057cfcdf35dbe939ac7759460072
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 6ecb7dc37f81804c04851c54eb9e7d3d07add883
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689232"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339932"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthappimpact"></a>更新 userExperienceAnalyticsBatteryHealthAppImpact
 
@@ -27,9 +27,9 @@ ms.locfileid: "60689232"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,7 +58,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthAppImpact/{userExper
 |appName|String|应用名称。 例如：oltk.exe|
 |appDisplayName|String|适用于显示名称用户友好应用程序。 例如：Outlook|
 |appPublisher|String|应用发布者。 例如：Microsoft Corporation|
-|isForegroundApp|布尔值|如果用户与应用有活动交互，则其为 true。|
+|isForegroundApp|Boolean|如果用户与应用有活动交互，则其为 true。|
 |batteryUsagePercentage|双精度|当设备未接通交流电源时，此应用程序在 14 天内在租户中所有设备上计算出的总电池电源百分比。 百分比单位。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 
 
@@ -104,6 +104,7 @@ Content-Length: 357
   "batteryUsagePercentage": 7.333333333333333
 }
 ```
+
 
 
 

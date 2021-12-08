@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 39ee5148e39e4c8a6e934959ae0800a1540a2d3a
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: c793ff853806d937612324240b616b184a0deae4
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995476"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336075"
 ---
 # <a name="list-localizations"></a>列出本地化
 命名空间：microsoft.graph
@@ -65,7 +65,7 @@ GET /organization/{organizationId}/branding/localizations
   "name": "list_organizationalbrandinglocalization"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/localizations/
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -2,15 +2,15 @@
 title: 更新 detectedApp
 description: 更新 detectedApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7bcd2f62dc2ab0758ccbcd5f14944acfc7b5ead2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e932b088c61cd4ec2844d4491f6e49ad41fb25e1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59024549"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334807"
 ---
 # <a name="update-detectedapp"></a>更新 detectedApp
 
@@ -27,9 +27,9 @@ ms.locfileid: "59024549"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -99,6 +99,7 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
 
 
 

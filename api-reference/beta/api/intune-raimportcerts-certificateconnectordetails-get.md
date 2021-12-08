@@ -2,15 +2,15 @@
 title: 获取 certificateConnectorDetails
 description: 读取 certificateConnectorDetails 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f978efb7c19f0db00e1c8e2ec86d8b2a83a548b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 327168b15727fcb87ca304d988f2b9fea33144c4
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111948"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341073"
 ---
 # <a name="get-certificateconnectordetails"></a>获取 certificateConnectorDetails
 
@@ -81,6 +81,7 @@ Content-Length: 358
   }
 }
 ```
+
 
 
 

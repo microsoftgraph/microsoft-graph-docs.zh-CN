@@ -2,15 +2,15 @@
 title: 创建 aospDeviceOwnerDeviceConfiguration
 description: 创建新的 aospDeviceOwnerDeviceConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc0be703cf2cfac9e17ed78efa1eed7615a3013a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5f5726fe45cbbe9376bae9169de203630520bb34
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077543"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341171"
 ---
 # <a name="create-aospdeviceownerdeviceconfiguration"></a>创建 aospDeviceOwnerDeviceConfiguration
 
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -65,7 +65,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|appsAllowInstallFromUnknownSources|Boolean|指示是否允许用户启用未知源设置。|
+|appsBlockInstallFromUnknownSources|布尔值|指示是否允许用户启用未知源设置。 设置为 true 时，不允许用户启用未知源设置。|
 |bluetoothBlocked|Boolean|指示是否禁用蓝牙的使用。 设置为 true 时，无法在设备上启用蓝牙。|
 |bluetoothBlockConfiguration|Boolean|指示是否阻止用户配置蓝牙。|
 |bluetoothBlockContactSharing|Boolean|指示是否阻止用户通过蓝牙共享联系人。|
@@ -78,11 +78,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |passwordSignInFailureCountBeforeFactoryReset|Int32|指示擦除设备之前用户可以输入错误密码次数。 有效值为 4 至 11|
 |screenCaptureBlocked|Boolean|指示是否禁用屏幕截图功能。|
 |securityAllowDebuggingFeatures|Boolean|指示是否阻止用户在设备上启用调试功能。|
-|storageAllowUsb|Boolean|指示是否阻止 USB 存储。|
 |storageBlockExternalMedia|Boolean|指示是否阻止外部媒体。|
 |storageBlockUsbFileTransfer|Boolean|指示是否阻止 USB 文件传输。|
-|backupBlocked|Boolean|指示是否阻止备份服务。|
-|wifiBlockEditConfigurations|Boolean|指示是否阻止用户编辑 wifi 连接设置。|
+|backupBlocked|布尔值|指示是否阻止备份服务。|
+|wifiBlockEditConfigurations|布尔值|指示是否阻止用户编辑 wifi 连接设置。|
 
 
 
@@ -96,7 +95,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1721
+Content-length: 1693
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerDeviceConfiguration",
@@ -128,7 +127,7 @@ Content-length: 1721
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "appsAllowInstallFromUnknownSources": true,
+  "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
   "bluetoothBlockContactSharing": true,
@@ -141,7 +140,6 @@ Content-length: 1721
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "screenCaptureBlocked": true,
   "securityAllowDebuggingFeatures": true,
-  "storageAllowUsb": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
   "backupBlocked": true,
@@ -154,7 +152,7 @@ Content-length: 1721
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1893
+Content-Length: 1865
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerDeviceConfiguration",
@@ -189,7 +187,7 @@ Content-Length: 1893
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "appsAllowInstallFromUnknownSources": true,
+  "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
   "bluetoothBlockContactSharing": true,
@@ -202,13 +200,13 @@ Content-Length: 1893
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "screenCaptureBlocked": true,
   "securityAllowDebuggingFeatures": true,
-  "storageAllowUsb": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
   "backupBlocked": true,
   "wifiBlockEditConfigurations": true
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: shutDown 操作
 description: 关闭设备
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8870524e8285f2ea0f8638d0062490da316842f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 893ab0dcebf20e5430164395690809d9387bc0d4
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108021"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341339"
 ---
 # <a name="shutdown-action"></a>shutDown 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "59108021"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.PriviligedOperation.All|
+|应用程序|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -71,6 +71,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

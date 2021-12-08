@@ -2,15 +2,15 @@
 title: 列出 aospDeviceOwnerDeviceConfigurations
 description: 列出 aospDeviceOwnerDeviceConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3852b2dd9e1b91adca2982aea20494e8f308d26
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 85ae9a4f9485e4937d4222111cc708a7e17a6736
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59031276"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334485"
 ---
 # <a name="list-aospdeviceownerdeviceconfigurations"></a>列出 aospDeviceOwnerDeviceConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2126
+Content-Length: 2094
 
 {
   "value": [
@@ -103,7 +103,7 @@ Content-Length: 2126
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "appsAllowInstallFromUnknownSources": true,
+      "appsBlockInstallFromUnknownSources": true,
       "bluetoothBlocked": true,
       "bluetoothBlockConfiguration": true,
       "bluetoothBlockContactSharing": true,
@@ -116,7 +116,6 @@ Content-Length: 2126
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "screenCaptureBlocked": true,
       "securityAllowDebuggingFeatures": true,
-      "storageAllowUsb": true,
       "storageBlockExternalMedia": true,
       "storageBlockUsbFileTransfer": true,
       "backupBlocked": true,
@@ -125,6 +124,7 @@ Content-Length: 2126
   ]
 }
 ```
+
 
 
 

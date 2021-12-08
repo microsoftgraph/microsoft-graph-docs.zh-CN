@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9b236736f268277a08059d44074b31b1f434367d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1c53f5a08d167a90eaf64335556d5529c7ac08a9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025268"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342242"
 ---
 # <a name="create-grouplifecyclepolicy"></a>创建 groupLifecyclePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "61025268"
 
 新建 [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,6 @@ ms.locfileid: "61025268"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies
-
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -51,7 +50,7 @@ POST /groupLifecyclePolicies
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -85,14 +84,13 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-grouplifecyclepolicy-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-grouplifecyclepolicy-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-在请求正文中，提供 [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

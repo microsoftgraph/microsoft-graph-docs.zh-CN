@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 151e496474e616d3aae0cd8d7ebc4da87138629a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 92dfaeb9cc05abfb4f0659d23a7ec7422deccb53
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695452"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340261"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>创建 windowsFeatureUpdateProfile
 
@@ -54,13 +54,13 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的标识符。|
-|displayName|String|配置文件显示名称。|
-|说明|字符串|由用户指定的配置文件的说明。|
-|featureUpdateVersion|字符串|将部署到此配置文件所面向的设备的功能更新版本。 版本可以是任何受支持的版本，例如 1709、1803 或 1809 等。|
+|displayName|String|配置文件显示名称的配置文件。|
+|说明|String|由用户指定的配置文件的说明。|
+|featureUpdateVersion|String|将部署到此配置文件所面向的设备的功能更新版本。 版本可以是任何受支持的版本，例如 1709、1803 或 1809 等。|
 |rolloutSettings|[windowsUpdateRolloutSettings](../resources/intune-softwareupdate-windowsupdaterolloutsettings.md)|Windows 更新推出设置，包括优惠开始日期时间、优惠结束日期时间和每组产品/服务之间的天数。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
+|roleScopeTagIds|字符串集合|此功能更新实体的范围标记列表。|
 |deployableContentDisplayName|String|质量显示名称配置文件可部署内容的友好解决方案|
 |endOfSupportDate|DateTimeOffset|功能更新的上次支持日期|
 
@@ -125,6 +125,7 @@ Content-Length: 841
   "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
 }
 ```
+
 
 
 

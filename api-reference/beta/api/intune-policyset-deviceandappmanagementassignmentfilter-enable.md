@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1330779bd4f980c11aef283a85155c7dc661f048
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 75208e41028c86be057b78ad14191b59544e2d96
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694916"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334023"
 ---
 # <a name="enable-action"></a>启用操作
 
@@ -80,6 +80,7 @@ Content-length: 22
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

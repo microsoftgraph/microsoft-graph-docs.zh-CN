@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsDeviceScores 资源类型
 description: 用户体验分析设备分数实体合并了各种终结点分析分数。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 331ba306d8f9b5ec8a98c66692b9c333a7933166
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7b692508d8ff4e7b7f5e99e566b1293e24f8be30
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125797"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337537"
 ---
 # <a name="userexperienceanalyticsdevicescores-resource-type"></a>userExperienceAnalyticsDeviceScores 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59125797"
 
 用户体验分析设备分数实体合并了各种终结点分析分数。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsDeviceScoreses](../api/intune-devices-userexperienceanalyticsdevicescores-list.md)|[userExperienceAnalyticsDeviceScores](../resources/intune-devices-userexperienceanalyticsdevicescores.md) 集合|列出 [userExperienceAnalyticsDeviceScores 对象的属性和](../resources/intune-devices-userexperienceanalyticsdevicescores.md) 关系。|
@@ -69,6 +69,7 @@ ms.locfileid: "59125797"
   "healthStatus": "String"
 }
 ```
+
 
 
 

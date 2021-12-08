@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc0572336d723659221038f9570317e06c07e54d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 1116f49de0a75edf13c7f73a2186e1ec4988c77f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695549"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335290"
 ---
 # <a name="evaluateassignmentfilter-action"></a>evaluateAssignmentFilter 操作
 
@@ -92,6 +92,7 @@ Content-Length: 91
   "value": "ZXZhbHVhdGVBc3NpZ25tZW50RmlsdGVyIEludHVuZSBEb2MgU2FtcGxlIC0yNTU4NTk4OTA="
 }
 ```
+
 
 
 

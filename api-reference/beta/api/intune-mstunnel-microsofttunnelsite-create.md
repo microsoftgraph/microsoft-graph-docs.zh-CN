@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c59f9d75ad1b751e52dd1c4a5b1369a336f41be
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 8db705b90d16bf46d03d94c0ba3d405b792ee87b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486479"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341962"
 ---
 # <a name="create-microsofttunnelsite"></a>创建 microsoftTunnelSite
 
@@ -60,10 +60,10 @@ POST /deviceManagement/microsoftTunnelSites
 |upgradeWindowUtcOffsetInMinutes|Int32|网站时区表示为与 UTC 的分钟偏移量|
 |upgradeWindowStartTime|TimeOfDay|网站的升级窗口一天中的开始时间|
 |upgradeWindowEndTime|TimeOfDay|网站的升级窗口结束时间|
-|upgradeAutomatically|Boolean|网站的自动升级设置。 True 表示自动升级，false 表示手动控制|
-|upgradeAvailable|Boolean|如果升级可用，则其为 True|
+|upgradeAutomatically|布尔值|网站的自动升级设置。 True 表示自动升级，false 表示手动控制|
+|upgradeAvailable|布尔值|如果升级可用，则其为 True|
 |internalNetworkProbeUrl|String|MicrosoftTunnelSite 的内部网络访问探测器 URL|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 
 
 
@@ -120,6 +120,7 @@ Content-Length: 573
   ]
 }
 ```
+
 
 
 

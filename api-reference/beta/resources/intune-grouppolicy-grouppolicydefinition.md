@@ -2,15 +2,15 @@
 title: groupPolicyDefinition 资源类型
 description: 实体描述有关单个组策略的所有信息。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 465ac4aa679ea0be5c5bc4576e5bcac673480b95
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d1d4dc7c9e09e01c93805834bd6f087666662957
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009012"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338487"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>groupPolicyDefinition 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59009012"
 
 实体描述有关单个组策略的所有信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 groupPolicyDefinition](../api/intune-grouppolicy-grouppolicydefinition-get.md)|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|读取 [groupPolicyDefinition 对象的属性和](../resources/intune-grouppolicy-grouppolicydefinition.md) 关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "59009012"
 |categoryPath|String|策略的本地化完整类别路径。|
 |supportedOn|String|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
-|hasRelatedDefinitions|布尔值|表示此定义是否有相关定义|
+|hasRelatedDefinitions|Boolean|表示此定义是否有相关定义|
 |groupPolicyCategoryId|Guid|父类别的类别 ID|
 |minDeviceCspVersion|String|此定义中设备配置所需的最低 CSP 版本|
 |minUserCspVersion|String|此定义中的用户配置所需的最低云解决方案提供商版本|
@@ -80,6 +80,7 @@ ms.locfileid: "59009012"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

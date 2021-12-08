@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99bcdada22a5dd35c99076fe1e76624adae49d89
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 3c9e49ab2c107c6534afc68e5f334ad0e513457e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696593"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336270"
 ---
 # <a name="get-microsofttunnelconfiguration"></a>获取 microsoftTunnelConfiguration
 
@@ -107,6 +107,7 @@ Content-Length: 912
   }
 }
 ```
+
 
 
 

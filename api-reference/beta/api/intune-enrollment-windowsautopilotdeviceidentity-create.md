@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8adac3020fc3e8fd455c476db36c300c701c91cd
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b6b7a86701c95bfdfbec6046c7985a5519a735ca
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695907"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340338"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>创建 windowsAutopilotDeviceIdentity
 
@@ -58,7 +58,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|autopilot 设备的Windows分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 autopilot Windows状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`、`surfaceHub2SProfileNotSupported` 或 `unknownFutureValue`。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|autopilot 设备的配置文件Windows时间。|
-|groupTag|String|autopilot Windows组标记。|
+|groupTag|String|autopilot 设备的组Windows标记。|
 |purchaseOrderIdentifier|String|Purchase Order Autopilot Windows标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
@@ -66,14 +66,14 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |model|String|autopilot Windows型号名称。|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Autopilot 设备的 intune Windows状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |lastContactedDateTime|DateTimeOffset|Intune Autopilot 设备的上次Windows日期时间。|
-|addressableUserName|字符串|可地址用户名。|
+|addressableUserName|String|可地址用户名。|
 |userPrincipalName|String|用户主体名称。|
 |resourceName|String|资源名称。|
-|skuNumber|字符串|SKU 号|
+|skuNumber|String|SKU 号|
 |systemFamily|String|系统系列|
-|azureActiveDirectoryDeviceId|字符串|AAD设备 ID - 要弃用|
-|azureAdDeviceId|字符串|AAD设备 ID|
-|managedDeviceId|字符串|托管设备 ID|
+|azureActiveDirectoryDeviceId|String|AAD设备 ID - 要弃用|
+|azureAdDeviceId|String|AAD设备 ID|
+|managedDeviceId|String|托管设备 ID|
 |displayName|String|显示名称|
 
 
@@ -147,6 +147,7 @@ Content-Length: 1126
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

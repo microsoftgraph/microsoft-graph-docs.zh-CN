@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8042302c8e79ed0b117a4b6ddf201e7255915dbc
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d7c67a96e9ac1a3dec16410a163797beda1409af
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697253"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340359"
 ---
 # <a name="create-userexperienceanalyticsbatteryhealthosperformance"></a>创建 userExperienceAnalyticsBatteryHealthOsPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "60697253"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,10 +53,10 @@ POST /deviceManagement/userExperienceAnalyticsBatteryHealthOsPerformance
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析电池运行状况操作系统性能对象的唯一标识符。|
+|id|String|用户体验分析电池运行状况操作系统性能对象的唯一标识符。|
 |activeDevices|Int32|该操作系统版本的活动设备数。 有效值 -2147483648 to 2147483647|
 |osVersion|String|操作系统的版本。|
-|osBuildNumber|字符串|操作系统的生成号。|
+|osBuildNumber|String|操作系统的生成号。|
 |averageMaxCapacityPercentage|Int32|运行特定操作系统版本的所有设备的最大容量的平均值。 最大容量用于测量设备电池的完全充电容量与设计容量。 有效值 -2147483648 to 2147483647|
 |averageEstimatedRuntimeInMinutes|Int32|对于运行特定操作系统版本的所有设备，估计运行时的全费平均值。 单位（以分钟表示）。 有效值 -2147483648 to 2147483647|
 |averageBatteryAgeInDays|Int32|在租户中运行特定操作系统版本的所有设备的电池使用时间平均值。 单位（以天表示）。 有效值 -2147483648 to 2147483647|
@@ -104,6 +104,7 @@ Content-Length: 359
   "averageBatteryAgeInDays": 7
 }
 ```
+
 
 
 

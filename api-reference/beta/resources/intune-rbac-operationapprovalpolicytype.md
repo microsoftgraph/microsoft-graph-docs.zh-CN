@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a7bf4c90ea38235ab674307a580382c50676ec5f
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 5019e8e3785fcdf543420e318ef0162710777b0c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490260"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338167"
 ---
 # <a name="operationapprovalpolicytype-enum-type"></a>operationApprovalPolicyType 枚举类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "60490260"
 |deviceActions|1|设备操作|
 |deviceWipe|2|设备擦除操作|
 |deviceRetire|3|设备停用操作|
-|deviceRetireNonCompliant|4 |停用不兼容的设备操作|
+|deviceRetireNonCompliant|4|停用不兼容的设备操作|
 |deviceDelete|5|设备删除操作|
 |deviceLock|6 |设备锁定操作|
 |deviceErase|7 |设备擦除操作|
@@ -40,10 +40,12 @@ ms.locfileid: "60490260"
 |policySets|13|策略集|
 |filters|14 |筛选器|
 |endpointSecurity|15 |终结点安全性|
-|apps|16|应用程序|
+|apps|16|应用|
 |脚本|17 |脚本|
-|角色|18 |角色|
+|roles|18 |角色|
+|deviceResetPasscode|19|设备重置密码操作|
 |unknownFutureValue|99|将来操作审批策略类型的占位符|
+
 
 
 

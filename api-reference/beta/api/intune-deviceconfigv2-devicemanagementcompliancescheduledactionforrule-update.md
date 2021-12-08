@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 994eb01c19990722b08c5cc8cdb17035dd840307
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c6c51435fe2323c53111a8ed8f102187da9f07e6
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695531"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341353"
 ---
 # <a name="update-devicemanagementcompliancescheduledactionforrule"></a>更新 deviceManagementComplianceScheduledActionForRule
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|包含此设置的策略中的此设置的键。 自动生成。|
+|id|String|包含此设置的策略中的此设置的键。 自动生成。|
 |ruleName|String|此计划操作适用的规则名称。|
 
 
@@ -89,6 +89,7 @@ Content-Length: 173
   "ruleName": "Rule Name value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4955330fe99df4613cc4d24fb5175db84146cf90
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: c4173a60c8d3d4f0a4f11af1c8880b57d6fcfcd0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242373"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340091"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>获取 accessPackageAssignmentRequest
 
@@ -19,7 +19,7 @@ ms.locfileid: "61242373"
 
 在[Azure AD中](../resources/entitlementmanagement-root.md)，检索[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ GET /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageA
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$expand` OData 查询参数扩展关系，以检索 和 `accessPackage` `requestor` `acccessPackageAssignment` 。  例如，若要检索访问包分配的目标，请包括在 `$expand=accessPackageAssignment($expand=target)` 查询中。  若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$expand` OData 查询参数扩展关系，以检索 和 `accessPackage` `requestor` `assignment` 。  例如，若要检索访问包分配的目标，请包括在 `$expand=assignment($expand=target)` 查询中。  若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,6 +59,8 @@ GET /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageA
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackageassignmentrequest"
@@ -67,6 +69,28 @@ GET /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageA
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests/{accessPackageAssignmentRequestId}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignmentrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageassignmentrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageassignmentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageassignmentrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -2,15 +2,15 @@
 title: 删除 deviceAndAppManagementRoleAssignment
 description: 删除 deviceAndAppManagementRoleAssignment。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6d0731a621eb9dcded1d4eff5e8f8c09691d676
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cf7458216534d8448500c8ec314cc8b61d7f9084
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116274"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336998"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>删除 deviceAndAppManagementRoleAssignment
 
@@ -27,9 +27,9 @@ ms.locfileid: "59116274"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{device
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 cloudPCConnectivityIssue
 description: 更新 cloudPCConnectivityIssue 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bb557c94ae51cb015a80c0fea10b07997321c7f5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a50748c9a83a1d2349ee8118236a9aa7798c2f50
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122157"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339820"
 ---
 # <a name="update-cloudpcconnectivityissue"></a>更新 cloudPCConnectivityIssue
 
@@ -27,9 +27,9 @@ ms.locfileid: "59122157"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -104,6 +104,7 @@ Content-Length: 374
   "recommendedAction": "Recommended Action value"
 }
 ```
+
 
 
 

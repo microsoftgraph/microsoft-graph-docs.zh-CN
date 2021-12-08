@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 115faf5de18b113120540d96e954df2d7a0f04b2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 781c2a7849e27a5facac6e8de107da27c88e32e6
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486556"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341612"
 ---
 # <a name="update-microsofttunnelserver"></a>更新 microsoftTunnelServer
 
@@ -101,6 +101,7 @@ Content-Length: 361
   "serverImageDigest": "Server Image Digest value"
 }
 ```
+
 
 
 

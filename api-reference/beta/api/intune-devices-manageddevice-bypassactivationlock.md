@@ -2,15 +2,15 @@
 title: bypassActivationLock 操作
 description: 跳过激活锁
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d52fd0c8a9b71f900862ba7b4312bbbee8bebf85
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 792af51feb98184a0e83991813b9c2224538ae72
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070669"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340814"
 ---
 # <a name="bypassactivationlock-action"></a>bypassActivationLock 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "59070669"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.PriviligedOperation.All|
+|应用程序|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -71,6 +71,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

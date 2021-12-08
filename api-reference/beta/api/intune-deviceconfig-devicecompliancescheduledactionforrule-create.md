@@ -2,15 +2,15 @@
 title: 创建 deviceComplianceScheduledActionForRule
 description: 创建新的 deviceComplianceScheduledActionForRule 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9dcaec883ba2a7b951c3ce09961b5810b4b865f5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef992311add8fcf207ee65474c0470046b677d0b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59048715"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335220"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>创建 deviceComplianceScheduledActionForRule
 
@@ -89,6 +89,7 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
+
 
 
 

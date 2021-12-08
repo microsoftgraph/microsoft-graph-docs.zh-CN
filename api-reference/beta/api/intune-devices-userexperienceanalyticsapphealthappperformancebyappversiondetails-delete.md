@@ -2,15 +2,15 @@
 title: 删除 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 description: 删除 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dd51995da4fdc167f7f6db767f596f003ff46a6b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5388fa6c2cfecce60d5e76e5cf15e631d62cf3bb
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027755"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340366"
 ---
 # <a name="delete-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>删除 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -27,9 +27,9 @@ ms.locfileid: "59027755"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 windowsManagementApp
 description: 更新 windowsManagementApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88f7655a9819da4afb9b7a64665ecf912b208c26
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 69cdb248653b44479f804121921e8cd694309405
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59087889"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336315"
 ---
 # <a name="update-windowsmanagementapp"></a>更新 windowsManagementApp
 
@@ -27,9 +27,9 @@ ms.locfileid: "59087889"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -95,6 +95,7 @@ Content-Length: 284
   "managedInstallerConfiguredDateTime": "Managed Installer Configured Date Time value"
 }
 ```
+
 
 
 

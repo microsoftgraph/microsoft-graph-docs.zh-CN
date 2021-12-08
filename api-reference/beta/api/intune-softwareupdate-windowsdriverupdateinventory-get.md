@@ -2,15 +2,15 @@
 title: 获取 windowsDriverUpdateInventory
 description: 读取 windowsDriverUpdateInventory 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45f44d15284e71aac7e9df9b790505de8ff67a83
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8a14bf5fc03bcfc10044f36430b611e4ac316c91
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138524"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337264"
 ---
 # <a name="get-windowsdriverupdateinventory"></a>获取 windowsDriverUpdateInventory
 
@@ -86,6 +86,7 @@ Content-Length: 515
   }
 }
 ```
+
 
 
 

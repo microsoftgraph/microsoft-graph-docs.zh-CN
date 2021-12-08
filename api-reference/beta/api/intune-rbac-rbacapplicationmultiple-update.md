@@ -2,15 +2,15 @@
 title: 更新 rbacApplicationMultiple
 description: 更新 rbacApplicationMultiple 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a549a5261fb88e7e48aee1617174ddd1d80c3bd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 88515005f7415cdd480f960ada0c8d1ad08cc3f3
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59048098"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335444"
 ---
 # <a name="update-rbacapplicationmultiple"></a>更新 rbacApplicationMultiple
 
@@ -27,9 +27,9 @@ ms.locfileid: "59048098"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,6 +86,7 @@ Content-Length: 114
   "id": "ee4797e5-97e5-ee47-e597-47eee59747ee"
 }
 ```
+
 
 
 

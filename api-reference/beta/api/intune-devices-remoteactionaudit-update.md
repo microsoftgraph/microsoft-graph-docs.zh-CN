@@ -2,15 +2,15 @@
 title: 更新 remoteActionAudit
 description: 更新 remoteActionAudit 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 645a42455bee74be486b43bd700c32fd48fd4bee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0dbc7367cfd89aae55e379a9008a5ff66cd73ff1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027930"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337747"
 ---
 # <a name="update-remoteactionaudit"></a>更新 remoteActionAudit
 
@@ -27,9 +27,9 @@ ms.locfileid: "59027930"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -113,6 +113,7 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
+
 
 
 

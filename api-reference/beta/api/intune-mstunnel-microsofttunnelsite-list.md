@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a5fe748d7a699c5d925b46e9bd0a09ebb0789c5
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 22174e450d9324ff69b317fde3169097b5a4b684
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492431"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337607"
 ---
 # <a name="list-microsofttunnelsites"></a>列出 microsoftTunnelSites
 
@@ -88,6 +88,7 @@ Content-Length: 662
   ]
 }
 ```
+
 
 
 

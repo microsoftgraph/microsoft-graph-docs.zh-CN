@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 376334679269bcfe34bf79af9925a886071023bb
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 7ed03526f01e73b30a8a199a6edc6bb5e5f8ef10
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487973"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341080"
 ---
 # <a name="create-microsofttunnelserverlogcollectionresponse"></a>创建 microsoftTunnelServerLogCollectionResponse
 
@@ -54,7 +54,7 @@ POST /deviceManagement/microsoftTunnelServerLogCollectionResponses
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一 ID|
-|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
+|状态|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
 |startDateTime|DateTimeOffset|收集的日志的开始时间 |
 |endDateTime|DateTimeOffset|收集的日志的结束时间|
 |sizeInBytes|Int64|日志的大小（以字节为单位）|
@@ -107,6 +107,7 @@ Content-Length: 444
   "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
 }
 ```
+
 
 
 

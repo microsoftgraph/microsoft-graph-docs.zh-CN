@@ -2,15 +2,15 @@
 title: chromeOSOnboardingSettings 资源类型
 description: 表示 Chromebook 租户设置的实体
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e551a751ea5498d65d21974de6e7712e6a56ea11
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 76310cd79a16302c94e9bd2d0c407e82b197683c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081484"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336963"
 ---
 # <a name="chromeosonboardingsettings-resource-type"></a>chromeOSOnboardingSettings 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59081484"
 
 表示 Chromebook 租户设置的实体
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 chromeOSOnboardingSettingses](../api/intune-chromebooksync-chromeosonboardingsettings-list.md)|[chromeOSOnboardingSettings](../resources/intune-chromebooksync-chromeosonboardingsettings.md) 集合|列出 [chromeOSOnboardingSettings 对象的属性和](../resources/intune-chromebooksync-chromeosonboardingsettings.md) 关系。|
@@ -31,13 +31,14 @@ ms.locfileid: "59081484"
 |[删除 chromeOSOnboardingSettings](../api/intune-chromebooksync-chromeosonboardingsettings-delete.md)|无|删除 [chromeOSOnboardingSettings](../resources/intune-chromebooksync-chromeosonboardingsettings.md)。|
 |[更新 chromeOSOnboardingSettings](../api/intune-chromebooksync-chromeosonboardingsettings-update.md)|[chromeOSOnboardingSettings](../resources/intune-chromebooksync-chromeosonboardingsettings.md)|更新 [chromeOSOnboardingSettings 对象](../resources/intune-chromebooksync-chromeosonboardingsettings.md) 的属性。|
 |[connect 操作](../api/intune-chromebooksync-chromeosonboardingsettings-connect.md)|[chromeOSOnboardingStatus](../resources/intune-chromebooksync-chromeosonboardingstatus.md)|尚未记录|
+|[断开连接操作](../api/intune-chromebooksync-chromeosonboardingsettings-disconnect.md)|[chromeOSOnboardingStatus](../resources/intune-chromebooksync-chromeosonboardingstatus.md)|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|ChromebookTenant 的 ID|
 |ownerUserPrincipalName|String|ChromebookTenant 的 OwnerUserPrincipalName|
-|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|ChromebookTenant 的 OnboardingStatus。 可取值为：`unknown`、`inprogress`、`onboarded`、`failed`。|
+|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|ChromebookTenant 的 OnboardingStatus。 可取值为：`unknown`、`inprogress`、`onboarded`、`failed`、`offboarding`、`unknownFutureValue`。|
 |lastModifiedDateTime|DateTimeOffset|ChromebookTenant 的 LastModifiedDateTime|
 |lastDirectorySyncDateTime|DateTimeOffset|ChromebookTenant 的 LastDirectorySyncDateTime|
 
@@ -62,6 +63,7 @@ ms.locfileid: "59081484"
   "lastDirectorySyncDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

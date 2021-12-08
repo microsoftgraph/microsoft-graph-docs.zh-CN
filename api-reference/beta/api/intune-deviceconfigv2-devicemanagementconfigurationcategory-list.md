@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da8da88c04febc60e3292c231bb08b5df1434a99
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 58dbda79a0b00925778275729b9d5bf63cdfe751
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688715"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335563"
 ---
 # <a name="list-devicemanagementconfigurationcategories"></a>列出 deviceManagementConfigurationCategories
 
@@ -90,6 +90,7 @@ Content-Length: 665
   ]
 }
 ```
+
 
 
 

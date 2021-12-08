@@ -2,15 +2,15 @@
 title: 更新 mobileAppInstallStatus
 description: 更新 mobileAppInstallStatus 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c450447ecf733494bd7dad31d4ad81090a2a8cc8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8b8350aac18a8728b0be4ecc355f5819b3407a0c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028476"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339449"
 ---
 # <a name="update-mobileappinstallstatus"></a>更新 mobileAppInstallStatus
 
@@ -123,6 +123,7 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
+
 
 
 

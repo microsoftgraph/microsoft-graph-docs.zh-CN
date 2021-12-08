@@ -2,15 +2,15 @@
 title: windowsPhone81CompliancePolicy 资源类型
 description: 此类包含 Windows 8.1 Mobile 的合规性设置。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac38562e2fd23ec8a772fad83a70b9578de434a8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f821acbfe08316dac5e3bbe31b6e7905f3bdeab2
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59091592"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335038"
 ---
 # <a name="windowsphone81compliancepolicy-resource-type"></a>windowsPhone81CompliancePolicy 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "59091592"
 
 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List windowsPhone81CompliancePolicies](../api/intune-deviceconfig-windowsphone81compliancepolicy-list.md)|[windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md) 集合|列出 [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md) 对象的属性和关系。|
@@ -100,6 +100,7 @@ ms.locfileid: "59091592"
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 65103b951d41328d4e1b414a06ef99b8a99001bd
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: a2fb437a3b6b2cb44f32cc1e12a601b3ed4673ac
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60485161"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338139"
 ---
 # <a name="remoteassistancereporting-resource-type"></a>remoteAssistanceReporting 资源类型
 
@@ -81,6 +81,7 @@ RemoteAssistanceReporting 资源表示给定远程协助报告有效负载的元
   "sharerEnrollmentState": "String"
 }
 ```
+
 
 
 

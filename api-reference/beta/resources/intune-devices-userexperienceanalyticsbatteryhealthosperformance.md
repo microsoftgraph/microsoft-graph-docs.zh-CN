@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2f0cbc451fb10d12672b60555a08a56803f010a5
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 33807a4b7c1d624f086317795479b344368bcf5a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697244"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337201"
 ---
 # <a name="userexperienceanalyticsbatteryhealthosperformance-resource-type"></a>userExperienceAnalyticsBatteryHealthOsPerformance 资源类型
 
@@ -35,12 +35,12 @@ ms.locfileid: "60697244"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析电池运行状况操作系统性能对象的唯一标识符。|
-|activeDevices|Int32|该操作系统版本的活动设备数。 有效值 -2147483648 2147483647|
+|activeDevices|Int32|该操作系统版本的活动设备数。 有效值 -2147483648 to 2147483647|
 |osVersion|String|操作系统的版本。|
 |osBuildNumber|String|操作系统的生成号。|
-|averageMaxCapacityPercentage|Int32|运行特定操作系统版本的所有设备的最大容量的平均值。 最大容量用于测量设备电池的完全充电容量与设计容量。 有效值 -2147483648 2147483647|
-|averageEstimatedRuntimeInMinutes|Int32|对于运行特定操作系统版本的所有设备，估计运行时的全费平均值。 单位（以分钟表示）。 有效值 -2147483648 2147483647|
-|averageBatteryAgeInDays|Int32|在租户中运行特定操作系统版本的所有设备的电池使用时间平均值。 单位（以天表示）。 有效值 -2147483648 2147483647|
+|averageMaxCapacityPercentage|Int32|运行特定操作系统版本的所有设备的最大容量的平均值。 最大容量用于测量设备电池的完全充电容量与设计容量。 有效值 -2147483648 to 2147483647|
+|averageEstimatedRuntimeInMinutes|Int32|对于运行特定操作系统版本的所有设备，估计运行时的全费平均值。 单位（以分钟表示）。 有效值 -2147483648 to 2147483647|
+|averageBatteryAgeInDays|Int32|在租户中运行特定操作系统版本的所有设备的电池使用时间平均值。 单位（以天表示）。 有效值 -2147483648 to 2147483647|
 
 ## <a name="relationships"></a>关系
 无
@@ -65,6 +65,7 @@ ms.locfileid: "60697244"
   "averageBatteryAgeInDays": 1024
 }
 ```
+
 
 
 

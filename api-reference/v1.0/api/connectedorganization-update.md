@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2759d154b5a926bcd759286618cba944761eb0be
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 31b713e754996d4ddfdade8e40f330576c4eefb4
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242217"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346705"
 ---
 # <a name="update-connectedorganization"></a>更新 connectedOrganization
 
@@ -19,7 +19,7 @@ ms.locfileid: "61242217"
 
 更新 [connectedOrganization](../resources/connectedorganization.md) 对象以更改其一个或多个属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -51,7 +51,7 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{connecte
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|连接的组织名称。  |
-|description|String|已连接的组织说明。 |
+|说明|String|已连接的组织说明。 |
 |identitySources|[identitySource](../resources/identitysource.md) 集合|此已连接组织中的身份源[，azureActiveDirectoryTenant、domainIdentitySource](../resources/azureactivedirectorytenant.md)或[externalDomainFederation 之一](../resources/externaldomainfederation.md)。 [](../resources/domainidentitysource.md) 可为 NULL。|
 |state|connectedOrganizationState|已连接组织的状态定义具有请求者作用域类型的分配策略 `AllConfiguredConnectedOrganizationSubjects` 是否适用。 可取值为：`configured`、`proposed`。|
 
@@ -65,6 +65,8 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{connecte
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_connectedorganization"
@@ -80,6 +82,28 @@ Content-Type: application/json
   "state":"configured"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-connectedorganization-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-connectedorganization-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-connectedorganization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-connectedorganization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

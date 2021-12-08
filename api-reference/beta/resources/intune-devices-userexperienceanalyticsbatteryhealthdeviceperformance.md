@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85197afe4fe9ba994c74d593ba6081af0c28a313
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c30e0a20e0e37d45932733b7416ba83c288f4fbc
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694965"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336879"
 ---
 # <a name="userexperienceanalyticsbatteryhealthdeviceperformance-resource-type"></a>userExperienceAnalyticsBatteryHealthDevicePerformance 资源类型
 
@@ -38,10 +38,10 @@ ms.locfileid: "60694965"
 |deviceId|String|设备的唯一标识符 Intune DeviceID。|
 |deviceName|String|设备友好名称。|
 |model|String|设备的型号名称。|
-|maxCapacityPercentage|Int32|具有最低容量的电池的当前容量和设计容量的比率。 百分比单位，值范围为 0-100。 有效值 -2147483648 2147483647|
-|estimatedRuntimeInMinutes|Int32|电池完全充电时设备的预计运行时。 单位（以分钟表示）。 有效值 -2147483648 2147483647|
-|batteryAgeInDays|Int32|估计电池使用时间。 单位（以天表示）。 有效值 -2147483648 2147483647|
-|deviceBatteryHealthScore|Int32|设备最大容量分数和运行时估计分数的加权平均值。 值范围为 0-100。 有效值 -2147483648 2147483647|
+|maxCapacityPercentage|Int32|具有最低容量的电池的当前容量和设计容量的比率。 百分比单位，值范围为 0-100。 有效值 -2147483648 to 2147483647|
+|estimatedRuntimeInMinutes|Int32|电池完全充电时设备的预计运行时。 单位（以分钟表示）。 有效值 -2147483648 to 2147483647|
+|batteryAgeInDays|Int32|估计电池使用时间。 单位（以天表示）。 有效值 -2147483648 to 2147483647|
+|deviceBatteryHealthScore|Int32|设备最大容量分数和运行时估计分数的加权平均值。 值范围为 0-100。 有效值 -2147483648 to 2147483647|
 |healthStatus|String|设备的整体电池运行状况状态。|
 
 ## <a name="relationships"></a>关系
@@ -69,6 +69,7 @@ ms.locfileid: "60694965"
   "healthStatus": "String"
 }
 ```
+
 
 
 

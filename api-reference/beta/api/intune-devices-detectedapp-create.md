@@ -2,15 +2,15 @@
 title: 创建 detectedApp
 description: 创建新的 detectedApp 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9b5b00b160c940053b3e3b4637acccf18682e7f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 78ca0a86b4d9ee6cff0cc7b9f2b931bf4c82de2a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59121989"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334828"
 ---
 # <a name="create-detectedapp"></a>创建 detectedApp
 
@@ -27,9 +27,9 @@ ms.locfileid: "59121989"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -99,6 +99,7 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
 
 
 

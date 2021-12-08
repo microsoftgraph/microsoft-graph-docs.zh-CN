@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 60f205e1c6412e145f0a949320decbf59a712d8e
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 2304102961ce44f1bab74796394b8887803a985f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242359"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346607"
 ---
 # <a name="list-assignments"></a>列出作业
 
@@ -21,7 +21,7 @@ ms.locfileid: "61242359"
 对于目录范围的管理员，结果列表包括调用方有权访问的所有目录和访问包的所有分配（当前分配和过期分配）。  如果调用方代表仅分配给特定于目录的委派管理角色的委派用户，则请求必须提供筛选器来指示特定访问包，例如 `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` ：。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +52,6 @@ GET /identityGovernance/entitlementManagement/assignments
 - 若要仅检索已传递的工作分配，可以包括查询 `$filter=assignmentState eq 'Delivered'` 。
 - 若要仅检索特定用户的工作分配，可以包含一个包含针对该用户的对象 ID 的工作分配的查询 `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` ：。
 - 若要仅检索特定用户和特定访问包的工作分配，可以包含包含针对该访问包的工作分配和该用户的对象 ID 的查询 `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` ：。
-- 若要仅检索特定访问包分配策略生成的分配，可以包括该策略的查询 `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'` ：。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -71,6 +70,8 @@ GET /identityGovernance/entitlementManagement/assignments
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accesspackageassignment"
@@ -79,6 +80,28 @@ GET /identityGovernance/entitlementManagement/assignments
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignments
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accesspackageassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accesspackageassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-accesspackageassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accesspackageassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accesspackageassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

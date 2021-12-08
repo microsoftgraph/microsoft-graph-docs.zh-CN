@@ -1,16 +1,16 @@
 ---
 title: windowsAutopilotDeviceIdentity 资源类型
-description: windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
+description: windowsAutopilotDeviceIdentity 资源表示Windows Autopilot 设备。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 19f2d6f341ea91676f722224fea3e08ae29a95e4
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 556de32586fc07d7fae38170b430990605451b56
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688154"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339841"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "60688154"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
+windowsAutopilotDeviceIdentity 资源表示Windows Autopilot 设备。
 
 ## <a name="methods"></a>Methods
 |方法|返回类型|说明|
@@ -42,7 +42,7 @@ windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|autopilot 设备的Windows分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 autopilot Windows状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`、`surfaceHub2SProfileNotSupported` 或 `unknownFutureValue`。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|autopilot 设备的配置文件Windows时间。|
-|groupTag|String|autopilot Windows组标记。|
+|groupTag|String|autopilot 设备的组Windows标记。|
 |purchaseOrderIdentifier|String|Purchase Order Autopilot Windows标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
@@ -53,9 +53,9 @@ windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
 |addressableUserName|String|可地址用户名。|
 |userPrincipalName|String|用户主体名称。|
 |resourceName|String|资源名称。|
-|skuNumber|字符串|SKU 号|
+|skuNumber|String|SKU 号|
 |systemFamily|String|系统系列|
-|azureActiveDirectoryDeviceId|字符串|AAD设备 ID - 要弃用|
+|azureActiveDirectoryDeviceId|String|AAD设备 ID - 已弃用|
 |azureAdDeviceId|String|AAD设备 ID|
 |managedDeviceId|String|托管设备 ID|
 |displayName|String|显示名称|
@@ -100,6 +100,7 @@ windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
   "displayName": "String"
 }
 ```
+
 
 
 

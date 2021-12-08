@@ -2,15 +2,15 @@
 title: microsoftTunnelServer 资源类型
 description: 表示单个服务器Microsoft Tunnel的实体
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7869ad1f32e791180d8e671422580d406b13615
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 507c3d7af22614b96235853e0f5e0351adaf1198
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59068660"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336130"
 ---
 # <a name="microsofttunnelserver-resource-type"></a>microsoftTunnelServer 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59068660"
 
 表示单个服务器Microsoft Tunnel的实体
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 microsoftTunnelServers](../api/intune-mstunnel-microsofttunnelserver-list.md)|[microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) 集合|列出 [microsoftTunnelServer 对象的属性和](../resources/intune-mstunnel-microsofttunnelserver.md) 关系。|
@@ -66,6 +66,7 @@ ms.locfileid: "59068660"
   "serverImageDigest": "String"
 }
 ```
+
 
 
 

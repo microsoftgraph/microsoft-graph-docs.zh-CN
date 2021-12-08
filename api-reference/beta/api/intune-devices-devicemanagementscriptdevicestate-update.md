@@ -2,15 +2,15 @@
 title: 更新 deviceManagementScriptDeviceState
 description: 更新 deviceManagementScriptDeviceState 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 249424bf97a812a7b7c15b392640e9078856cfa6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f1ca494d2c8b53fc224a16e5667d4ebb89a65759
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030870"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341752"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>更新 deviceManagementScriptDeviceState
 
@@ -27,9 +27,9 @@ ms.locfileid: "59030870"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -57,7 +57,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备管理脚本设备状态实体的键。 此属性是只读的。|
-|runState|[runState](../resources/intune-devices-runstate.md)|设备管理脚本的最新运行状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本的最新运行状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |resultMessage|String|执行输出的详细信息。|
 |lastStateUpdateDateTime|DateTimeOffset|设备管理脚本执行的最新时间。|
 |errorCode|Int32|与设备管理脚本的错误执行相对应的错误代码。|
@@ -104,6 +104,7 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 certificateConnectorDetails
 description: 更新 certificateConnectorDetails 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ccceda414923535abb13517f973226d6cf96192
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 784a66d8595c7fc7a8d5d71ac362d64cd5220416
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027545"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341967"
 ---
 # <a name="update-certificateconnectordetails"></a>更新 certificateConnectorDetails
 
@@ -98,6 +98,7 @@ Content-Length: 327
   "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
 }
 ```
+
 
 
 

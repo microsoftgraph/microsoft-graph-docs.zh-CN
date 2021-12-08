@@ -2,15 +2,15 @@
 title: 更新 roleScopeTag
 description: 更新 roleScopeTag 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 681c80c4c94aa7e8a47ed67a56368473a3e6a68a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2592bf38066f946bb75d293e4a8e835c1a2521f7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064943"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337334"
 ---
 # <a name="update-rolescopetag"></a>更新 roleScopeTag
 
@@ -27,9 +27,9 @@ ms.locfileid: "59064943"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -96,6 +96,7 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
+
 
 
 

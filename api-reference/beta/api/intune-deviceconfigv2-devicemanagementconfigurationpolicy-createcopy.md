@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6feec284599b3ccafe656a6896bce9ccbc0d320
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 062d04c341e31d05bc1e8c7af323468b5fce0d8f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493759"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341512"
 ---
 # <a name="createcopy-action"></a>createCopy 操作
 
@@ -111,6 +111,7 @@ Content-Length: 920
   }
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: 删除 windowsDriverUpdateInventory
 description: 删除 windowsDriverUpdateInventory。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0072e437084bca63b571dd64aef622baf7508250
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a2b6b1670f04c43e8842d33d2db5e8a007572418
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138566"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337285"
 ---
 # <a name="delete-windowsdriverupdateinventory"></a>删除 windowsDriverUpdateInventory
 
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProf
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

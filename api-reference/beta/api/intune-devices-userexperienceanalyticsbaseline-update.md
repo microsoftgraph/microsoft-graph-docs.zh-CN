@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsBaseline
 description: 更新 userExperienceAnalyticsBaseline 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de7031fad1a6e5698dc52c857be8562f243a5cfe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7cd2309c4b4cb7cc3cec714922de66c6c88ec600
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59102743"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337404"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>更新 userExperienceAnalyticsBaseline
 
@@ -27,9 +27,9 @@ ms.locfileid: "59102743"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -97,6 +97,7 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 groupPolicyUploadedDefinition
 description: 更新 groupPolicyUploadedDefinition 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e3898758281dc1fcba522868e05dc82d23b4a90
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7dd060649f24179c317dcb40d5f5792244e361ae
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041946"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338839"
 ---
 # <a name="update-grouppolicyuploadeddefinition"></a>更新 groupPolicyUploadedDefinition
 
@@ -127,6 +127,7 @@ Content-Length: 651
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

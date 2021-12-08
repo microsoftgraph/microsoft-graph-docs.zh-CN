@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 155d5f46d95b5e906acc9f10053023c7eb3c38f6
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ae61e817343f63aa9e5a753d86c87d2fa537f533
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687731"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337495"
 ---
 # <a name="connect-action"></a>connect 操作
 
@@ -54,7 +54,7 @@ POST /deviceManagement/chromeOSOnboardingSettings/connect
 |属性|类型|说明|
 |:---|:---|:---|
 |ownerUserPrincipalName|String|尚未记录|
-|serviceAccountCredentials|String|尚未记录|
+|ownerAccessToken|String|尚未记录|
 
 
 
@@ -69,11 +69,11 @@ POST /deviceManagement/chromeOSOnboardingSettings/connect
 POST https://graph.microsoft.com/beta/deviceManagement/chromeOSOnboardingSettings/connect
 
 Content-type: application/json
-Content-length: 136
+Content-length: 118
 
 {
   "ownerUserPrincipalName": "Owner User Principal Name value",
-  "serviceAccountCredentials": "Service Account Credentials value"
+  "ownerAccessToken": "Owner Access Token value"
 }
 ```
 
@@ -88,6 +88,7 @@ Content-Length: 29
   "value": "inprogress"
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: microsoftTunnelServerLogCollectionResponse 资源类型
 description: 存储服务器日志集合状态的实体。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99c788005d51c68e35684e62c906d60122a3625c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8b61d6fbec3dedbc61de8908dafc70ea7fea3497
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039730"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341927"
 ---
 # <a name="microsofttunnelserverlogcollectionresponse-resource-type"></a>microsoftTunnelServerLogCollectionResponse 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59039730"
 
 存储服务器日志集合状态的实体。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 microsoftTunnelServerLogCollectionResponses](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-list.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) 集合|列出 [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) 对象的属性和关系。|
@@ -36,7 +36,7 @@ ms.locfileid: "59039730"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一 ID|
-|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
+|状态|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
 |startDateTime|DateTimeOffset|收集的日志的开始时间 |
 |endDateTime|DateTimeOffset|收集的日志的结束时间|
 |sizeInBytes|Int64|日志的大小（以字节为单位）|
@@ -68,6 +68,7 @@ ms.locfileid: "59039730"
   "expiryDateTime": "String (timestamp)"
 }
 ```
+
 
 
 
