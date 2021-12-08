@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b50a7ee8b5383d3223c0ae772e559faf280ca47705d8c11aaf247f45dde2d41b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c32bbbcabf099c2d74150313ff2f99a9b642b30b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57215798"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348787"
 ---
 ```javascript
 
@@ -17,7 +17,7 @@ const client = Client.init(options);
 
 const permissionGrantConditionSet = {
   permissionType: 'delegated',
-  clientApplicationsFromVerifiedPublisherOnly: true
+  certifiedClientApplicationsOnly: true
 };
 
 await client.api('/policies/permissionGrantPolicies/{id}/includes')

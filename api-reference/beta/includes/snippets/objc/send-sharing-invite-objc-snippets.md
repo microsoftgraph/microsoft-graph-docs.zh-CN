@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1b0d9ac584ba6950fb4bf232c354cbec7d7b0f95b58d763a4524568cf821c947
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: efeeb29d5a5cd7a3a0289b4bb2ddf667d4e17aff
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57328713"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348793"
 ---
 ```objc
 
@@ -20,7 +20,7 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 NSMutableArray *recipientsList = [[NSMutableArray alloc] init];
 MSGraphDriveRecipient *recipients = [[MSGraphDriveRecipient alloc] init];
-[recipients setEmail:@"ryan@contoso.org"];
+[recipients setEmail:@"robin@contoso.org"];
 [recipientsList addObject: recipients];
 payloadDictionary[@"recipients"] = recipientsList;
 
