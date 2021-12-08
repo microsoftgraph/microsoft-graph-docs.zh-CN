@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ba453f07d375fd95202446d66647d762ee4e5896
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aec85e917c8029d80da64eea9d9dc45f0c5070e5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104269"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345896"
 ---
 # <a name="clientuseragent-resource-type"></a>clientUserAgent 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "59104269"
 |applicationVersion|String|标识此终结点使用的应用程序软件的版本。|
 |headerValue|String|此终结点报告的用户代理标头值。|
 |平台|microsoft.graph.callRecords.clientPlatform|标识此终结点使用的平台。 可取值为：`unknown`、`windows`、`macOS`、`iOS`、`android`、`web`、`ipPhone`、`roomSystem`、`surfaceHub`、`holoLens`、`unknownFutureValue`。|
-|productFamily|microsoft.graph.callRecords.productFamily|标识此终结点使用的应用程序软件系列。 可取值为：`unknown`、`teams`、`skypeForBusiness`、`lync`、`unknownFutureValue`。|
+|productFamily|microsoft.graph.callRecords.productFamily|标识此终结点使用的应用程序软件系列。 可取值为：`unknown`、`teams`、`skypeForBusiness`、`lync`、`unknownFutureValue`、`azureCommunicationServices`。 请注意，必须使用此可变化枚举 (请求) 获取以下 `Prefer: include-unknown-enum-members` [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `azureCommunicationServices` ： 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

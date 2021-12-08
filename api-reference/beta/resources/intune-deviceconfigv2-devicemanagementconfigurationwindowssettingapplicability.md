@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a01c2e9721f1748a2e8edcc4b0f008512ec9f8af
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 21e2b436f17bff9bf539d6cc1e37c8c394abc1ad
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60481081"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340646"
 ---
 # <a name="devicemanagementconfigurationwindowssettingapplicability-resource-type"></a>deviceManagementConfigurationWindowsSettingApplicability 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "60481081"
 |configurationServiceProviderVersion|String|云解决方案提供商设置的版本是其中一部分|
 |maximumSupportedVersion|String|支持的最大版本Windows|
 |minimumSupportedVersion|String|支持的最低版本Windows|
-|windowsSkus|[deviceManagementConfigurationWindowsSkus](../resources/intune-deviceconfigv2-devicemanagementconfigurationwindowsskus.md) 集合|设置Windows的 SKUS 列表|
+|windowsSkus|[deviceManagementConfigurationWindowsSkus](../resources/intune-deviceconfigv2-devicemanagementconfigurationwindowsskus.md) 集合|设置Windows适用的 SKUS 列表|
 |requiresAzureAd|Boolean|AzureAD 设置要求|
 |requiredAzureAdTrustType|[deviceManagementConfigurationAzureAdTrustType](../resources/intune-deviceconfigv2-devicemanagementconfigurationazureadtrusttype.md)|必需属性，类型为 AzureAD 信任。 可取值为：`none`、`azureAdJoined`、`addWorkAccount`、`mdmOnly`。|
 
@@ -66,6 +66,7 @@ ms.locfileid: "60481081"
   "requiredAzureAdTrustType": "String"
 }
 ```
+
 
 
 

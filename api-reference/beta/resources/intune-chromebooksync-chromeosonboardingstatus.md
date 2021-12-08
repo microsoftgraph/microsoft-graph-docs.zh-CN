@@ -2,15 +2,15 @@
 title: chromeOSOnboardingStatus 枚举类型
 description: 租户的载入状态。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e174905ea1b04bbd0950f99045f8a0b3ba52692b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7b84c8138c24623bdac9565fe0c36925ada5a84
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081456"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340240"
 ---
 # <a name="chromeosonboardingstatus-enum-type"></a>chromeOSOnboardingStatus 枚举类型
 
@@ -29,6 +29,9 @@ ms.locfileid: "59081456"
 |inprogress|1|进行中|
 |已载入|2|已载入|
 |failed|3|已失败|
+|offboarding|4|载出|
+|unknownFutureValue|99|UnknownFutureValue|
+
 
 
 

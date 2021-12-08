@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f55084365502d4c21b9c1c28177b7b8737a32150
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bd5d35db8d1417d4afd6927ba0b5a425fca1d44a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60684027"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341094"
 ---
 # <a name="get-devicemanagementconfigurationredirectsettingdefinition"></a>获取 deviceManagementConfigurationRedirectSettingDefinition
 
@@ -121,6 +121,7 @@ Content-Length: 1548
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d0d6849fcb41be6493f11a6d1b3d01c8409e9d6
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 76ca74fc580886463edada3bd63a056ca6d3aef4
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688247"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339477"
 ---
 # <a name="windowsupdaterolloutsettings-resource-type"></a>windowsUpdateRolloutSettings 资源类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "60688247"
 |属性|类型|说明|
 |:---|:---|:---|
 |offerStartDateTimeInUTC|DateTimeOffset|功能更新的开始日期和时间设置、更新和显示功能更新配置文件，例如：2020-06-09T10：00：00Z。|
-|offerEndDateTimeInUTC|DateTimeOffset|功能更新结束于要设置、更新和显示的功能更新配置文件的发布日期和时间，例如：2020-06-09T10：00：00Z。|
-|offerIntervalInDays|Int32|要针对功能更新配置文件设置、更新和显示的一组产品/服务之间的 () 天数，例如：如果 OfferStartDateTimeInUTC 为 2020-06-09T10：00：00Z，且 OfferIntervalInDays 为 1， 接下来两组优惠将在 2020-06-10T10：00：00Z (下一天与指定时间) 和 2020-06-11T10：00：00Z (下一天在同一指定时间) 中第二天（介于 1 天之间）连续进行每组产品/服务。|
+|offerEndDateTimeInUTC|DateTimeOffset|功能更新针对功能更新配置文件设置的、更新和显示的发布日期和时间结束，例如：2020-06-09T10：00：00Z。|
+|offerIntervalInDays|Int32|要针对功能更新配置文件设置、更新和显示的每组产品/服务之间的 () 天数，例如：如果 OfferStartDateTimeInUTC 为 2020-06-09T10：00：00Z，且 OfferIntervalInDays 为 1， 接下来两组优惠将在 2020-06-10T10：00：00Z (下一天与指定时间) 和 2020-06-11T10：00：00Z (下一天在同一指定时间) 中第二天（介于 1 天之间）连续进行每组产品/服务。|
 
 ## <a name="relationships"></a>关系
 无
@@ -47,6 +47,7 @@ ms.locfileid: "60688247"
   "offerIntervalInDays": 1024
 }
 ```
+
 
 
 

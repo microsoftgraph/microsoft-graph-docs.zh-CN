@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb7655aea442d23116ee45c94c3becc92676240f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 9ed0a58a145cfc6a5a011b4a222def3c41a060a0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60676777"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339260"
 ---
 # <a name="devicemanagementcompliancepolicy-resource-type"></a>deviceManagementCompliancePolicy 资源类型
 
@@ -44,14 +44,14 @@ ms.locfileid: "60676777"
 |createdDateTime|DateTimeOffset|策略创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|策略上次修改日期和时间。 此属性是只读的。|
 |settingCount|Int32|设置数。 此属性是只读的。|
-|creationSource|字符串|策略创建源|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|creationSource|String|策略创建源|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 |isAssigned|Boolean|策略分配状态。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|settings|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 集合|策略设置|
+|设置|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 集合|策略设置|
 |assignments|[deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) 集合|策略分配|
 |scheduledActionsForRule|[deviceManagementComplianceScheduledActionForRule](../resources/intune-deviceconfigv2-devicemanagementcompliancescheduledactionforrule.md) 集合|此规则的计划操作列表|
 
@@ -81,6 +81,7 @@ ms.locfileid: "60676777"
   "isAssigned": true
 }
 ```
+
 
 
 

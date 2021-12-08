@@ -2,15 +2,15 @@
 title: logoutSharedAppleDeviceActiveUser 操作
 description: 注销共享 Apple 设备活动用户
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84b5a1a887c9e637f6e1da5c50794c77eaecd1fe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8ed49914af28d35b71d4fa37dfe19034a3d2dfbc
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59121821"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341087"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>logoutSharedAppleDeviceActiveUser 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "59121821"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.PriviligedOperation.All|
+|应用程序|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -71,6 +71,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

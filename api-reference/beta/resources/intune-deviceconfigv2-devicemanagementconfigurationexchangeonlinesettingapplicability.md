@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ad4a50d15780c1507303aad8548c6e513f05b50
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 39ba7e48c7947202ebadfce00660e5cd1fe57b47
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492256"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341031"
 ---
 # <a name="devicemanagementconfigurationexchangeonlinesettingapplicability-resource-type"></a>deviceManagementConfigurationExchangeOnlineSettingApplicability 资源类型
 
@@ -52,6 +52,7 @@ ms.locfileid: "60492256"
   "technologies": "String"
 }
 ```
+
 
 
 

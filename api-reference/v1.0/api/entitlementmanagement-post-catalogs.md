@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 043df8315a4f91953555fb36fbd2458ec363af82
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: f8b95255a8927e27e5a1ff0d23decfd4472adea3
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242332"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335476"
 ---
 # <a name="create-accesspackagecatalog"></a>创建 accessPackageCatalog
 
@@ -19,7 +19,7 @@ ms.locfileid: "61242332"
 
 创建新的 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,9 +54,9 @@ POST /identityGovernance/entitlementManagement/catalogs
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|访问显示名称目录的索引。|
-|description|String|访问包目录的说明。|
+|说明|String|访问包目录的说明。|
 |state|accessPackageCatalogState|如果访问 `published` 包可用于管理，则具有 值。 可能的值是： `unpublished` 和 `published` 。|
-|isExternallyVisible|布尔值|租户外部的用户是否可以请求此目录中的访问包。|
+|isExternallyVisible|Boolean|租户外部的用户是否可以请求此目录中的访问包。|
 
 ## <a name="response"></a>响应
 
@@ -65,6 +65,8 @@ POST /identityGovernance/entitlementManagement/catalogs
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackagecatalog"
@@ -81,6 +83,28 @@ Content-Type: application/json
   "isExternallyVisible": true
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackagecatalog-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackagecatalog-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackagecatalog-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackagecatalog-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackagecatalog-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

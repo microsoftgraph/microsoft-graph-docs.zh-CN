@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 29b5e0e15aaa7679bad6027126aa9b2088507e7f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 9aef7e442d0873e4bc40911c213d5992c2b079f0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694258"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334072"
 ---
 # <a name="list-devicemanagementconfigurationsimplesettingdefinitions"></a>列出 deviceManagementConfigurationSimpleSettingDefinitions
 
@@ -348,6 +348,7 @@ Content-Length: 19075
   ]
 }
 ```
+
 
 
 

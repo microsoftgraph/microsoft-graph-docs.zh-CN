@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cce43f7e27db40e528edf2ed3c8353344300606
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ea09abd3d1e24c9c3e9c35f221465dcfb0223432
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694279"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336676"
 ---
 # <a name="approve-action"></a>审批操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "60694279"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementRBAC.Read.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementRBAC.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.Read.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,6 +86,7 @@ Content-Length: 32
   "value": "Approve value"
 }
 ```
+
 
 
 

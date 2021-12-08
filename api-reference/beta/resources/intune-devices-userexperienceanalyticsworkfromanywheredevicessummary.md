@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8be606cb2cc291adf878b5194c4b9063d993464e
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: f63c579739744f897dd0eaa20e4b53cc75aa966a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60481053"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335612"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevicessummary-resource-type"></a>userExperienceAnalyticsWorkFromAnywhereDevicesSummary 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "60481053"
 |tenantAttachDevices|Int32|租户附加设备总数。 有效值 -2147483648 to 2147483647|
 |windows10Devices|Int32|Windows 10 设备计数。 有效值 -2147483648 to 2147483647|
 |windows10DevicesWithoutTenantAttach|Int32|Intune 和 Comanaged 的 Windows 10 设备计数。 有效值 -2147483648 to 2147483647|
-|unsupportedOSversionDevices|Int32|操作系统Windows 10不支持的设备数量。 有效值 -2147483648 to 2147483647|
+|unsupportedOSversionDevices|Int32|操作系统Windows 10不支持的设备数。 有效值 -2147483648 to 2147483647|
 |devicesWithoutCloudIdentity|Int32|非云标识的设备计数。 有效值 -2147483648 to 2147483647|
 |devicesNotAutopilotRegistered|Int32|未注册 autopilot 的 intune 设备计数。 有效值 -2147483648 to 2147483647|
 |devicesWithoutAutopilotProfileAssigned|Int32|未分配 autopilot 配置文件的 intune 设备计数。 有效值 -2147483648 to 2147483647|
@@ -85,6 +85,7 @@ ms.locfileid: "60481053"
   "devicesWithoutAutopilotProfileAssigned": 1024
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a44f2d0c4f4148619a4290b066ce04edd7179e87
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d99482ee00b95c8a4cef4d0d9bd019031cd336e8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494099"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341332"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "60494099"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -122,7 +122,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。|
 |iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
-|roleScopeTagIds|String collection|此设备实例的范围标记标识列表。|
+|roleScopeTagIds|字符串集合|此设备实例的范围标记标识列表。|
 |windowsActiveMalwareCount|Int32|此 Windows 设备的活动恶意软件计数。 此属性是只读的。|
 |windowsRemediatedMalwareCount|Int32|此 Windows 设备的已修复恶意软件计数。 此属性是只读的。|
 |notes|String|IT 管理员在设备上创建的备注|
@@ -566,6 +566,7 @@ Content-Length: 8667
   "enrollmentProfileName": "Enrollment Profile Name value"
 }
 ```
+
 
 
 

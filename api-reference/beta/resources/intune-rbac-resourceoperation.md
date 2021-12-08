@@ -1,16 +1,16 @@
 ---
 title: resourceOperation 资源类型
-description: 介绍 Microsoft Graph (API (REST) 的 resourceOperation (实体) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
+description: 介绍 Microsoft Graph API (REST) 的 resourceOperation (实体) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 437c97f6af9ef68233054e547ca95ac08e062039
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2b70ccf88ab0563620c66b289ed0bcbfdef2b3d2
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017154"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340163"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "59017154"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-介绍 Microsoft Graph (API (REST) 的 resourceOperation (实体) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
+介绍 Microsoft Graph API (REST) 的 resourceOperation (实体) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List resourceOperations](../api/intune-rbac-resourceoperation-list.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md) 集合|列出 [resourceOperation](../resources/intune-rbac-resourceoperation.md) 对象的属性和关系。|
@@ -40,7 +40,7 @@ ms.locfileid: "59017154"
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|布尔值|确定是否针对每个角色分配定义的作用域验证权限。 此属性是只读的。|
+|enabledForScopeValidation|Boolean|确定是否针对每个角色分配定义的作用域验证权限。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 无
@@ -64,6 +64,7 @@ ms.locfileid: "59017154"
   "enabledForScopeValidation": true
 }
 ```
+
 
 
 

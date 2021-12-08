@@ -2,15 +2,15 @@
 title: androidCompliancePolicy 资源类型
 description: 此类包含 Android 的合规性设置。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e72c89a86140cb97e98d60ccda7b26d0276e061c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dc104723d9f4853c470ef576dd7653655ea6e5b9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111304"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340779"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "59111304"
 
 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List androidCompliancePolicies](../api/intune-deviceconfig-androidcompliancepolicy-list.md)|[androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md) 集合|列出 [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md) 对象的属性和关系。|
@@ -59,7 +59,7 @@ ms.locfileid: "59111304"
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP 要求移动威胁防护最低风险级别来报告不相容情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
-|securityBlockDeviceAdministratorManagedDevices|Boolean|阻止设备管理员管理的设备。|
+|securityBlockDeviceAdministratorManagedDevices|布尔值|阻止设备管理员管理的设备。|
 |osMinimumVersion|String|最低 Android 版本。|
 |osMaximumVersion|String|最高 Android 版本。|
 |minAndroidSecurityPatchLevel|String|最低 Android 安全修补程序级别。|
@@ -140,6 +140,7 @@ ms.locfileid: "59111304"
   ]
 }
 ```
+
 
 
 

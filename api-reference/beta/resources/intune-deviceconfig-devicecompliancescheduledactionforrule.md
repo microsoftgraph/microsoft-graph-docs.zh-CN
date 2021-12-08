@@ -2,15 +2,15 @@
 title: deviceComplianceScheduledActionForRule 资源类型
 description: 计划的规则操作
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1d6a293647ff3c704f07fcee2e2d0d755c291d6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41aea331430c5962dab2bf2c80e1a170127e44c1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023554"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342641"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>deviceComplianceScheduledActionForRule 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59023554"
 
 计划的规则操作
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceComplianceScheduledActionForRules](../api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md)|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 集合|列出 [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 对象的属性和关系。|
@@ -38,7 +38,7 @@ ms.locfileid: "59023554"
 |ruleName|String|此计划操作适用的规则名称。 当前计划的操作是按策略而不是按规则创建的，因此 RuleName 始终设置为默认值 PasswordRequired。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |scheduledActionConfigurations|[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) 集合|此合规性策略的计划操作配置列表。 合规性策略必须具有一个且只有一个阻止计划操作。|
 
@@ -57,6 +57,7 @@ ms.locfileid: "59023554"
   "ruleName": "String"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ce96e13b791db9667cc1ea07fb3ee1d21182410
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 68dd7303e9b444d35b4d3183043b498236d39393
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60485040"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339673"
 ---
 # <a name="update-operationapprovalrequest"></a>Update operationApprovalRequest
 
@@ -27,9 +27,9 @@ ms.locfileid: "60485040"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -59,7 +59,7 @@ PATCH /deviceManagement/operationApprovalRequests/{operationApprovalRequestId}
 |lastModifiedDateTime|DateTimeOffset|上次修改日期时间。 此属性是只读的。|
 |requestor|[identitySet](../resources/intune-rbac-identityset.md)|请求者的身份。 此属性是只读的。|
 |审批者|[identitySet](../resources/intune-rbac-identityset.md)|审批者的身份。 此属性是只读的。|
-|status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|当前审批请求状态。 此属性是只读的。 可取值为：`unknown`、`needsApproval`、`approved`、`rejected`、`cancelled`、`completed` 或 `expired`。|
+|状态|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|当前审批请求状态。 此属性是只读的。 可取值为：`unknown`、`needsApproval`、`approved`、`rejected`、`cancelled`、`completed` 或 `expired`。|
 |requestJustification|String|请求理由。 此属性是只读的。|
 |approvalJustification|String|批准请求的理由。 此属性是只读的。|
 
@@ -177,6 +177,7 @@ Content-Length: 1459
   "approvalJustification": "Approval Justification value"
 }
 ```
+
 
 
 

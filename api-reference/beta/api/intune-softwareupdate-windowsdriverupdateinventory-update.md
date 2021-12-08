@@ -2,15 +2,15 @@
 title: 更新 windowsDriverUpdateInventory
 description: 更新 windowsDriverUpdateInventory 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90abc5dec10bed9998cf988783f4cdb9c67fef89
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d183f2574150b30b26a508d588bef72e756e50b0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138510"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341605"
 ---
 # <a name="update-windowsdriverupdateinventory"></a>更新 windowsDriverUpdateInventory
 
@@ -60,7 +60,7 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 |releaseDateTime|DateTimeOffset|驱动程序的发布日期时间。|
 |driverClass|String|驱动程序的类。|
 |applicableDeviceCount|Int32|此驱动程序适用的设备数量。|
-|approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|此驱动程序的审批状态。 可取值为：`needsReview`、`declined`、`approved`、`suspended`。|
+|approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|此驱动程序的审批状态。 可能的值是：`needsReview`、`declined`、`approved`、`suspended`。|
 |“类别”|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|此驱动程序的类别。 可取值为：`recommended`、`previouslyApproved`、`other`。|
 |deployDateTime|DateTimeOffset|如果 approvalStatus 获得批准，应部署驱动程序的日期时间。|
 
@@ -113,6 +113,7 @@ Content-Length: 474
   "deployDateTime": "2017-01-01T00:01:14.7822152-08:00"
 }
 ```
+
 
 
 

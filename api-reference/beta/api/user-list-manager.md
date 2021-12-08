@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a93d043977a56018e8d709e2081e1358499e44a9
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 83dfa08c0bbdc3d553340203b794845973261188
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241637"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341241"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -55,14 +55,14 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 >**注意：** 
 > + 值 `n` 为 `$levels` （以 `max` 返回所有经理）或 1 到 1000 之间的数字。  
 > + 如果未指定 `$levels` 参数，将仅返回直属经理。
-> + 您可以指定 `$select` 内部 `$expand` 单个经理的属性。 `$levels`参数是必需的 `$expand=manager($levels=max;$select=id,displayName)` ：。
+> + 您可以指定 `$select` 内部 `$expand` 单个经理的属性。 `$levels`参数是必需的：`$expand=manager($levels=max;$select=id,displayName)`。
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |
-| ConsistencyLevel | 最终。 当请求包含查询字符串时 `$count=true` 是必需的。 |
+| ConsistencyLevel | 最终。 请求包含 `$count=true` 查询字符串时必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 [!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-manager-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -135,11 +135,13 @@ Content-type: application/json
 
 ### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>示例 2：获取直至根级别的经理链
 
-以下示例显示获取直至根级别的经理链的请求。 此请求需要 **将 ConsistencyLevel** 标头设置为 `eventual` ，因为 `$count=true` 查询字符串位于请求中。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+以下示例显示获取直至根级别的经理链的请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$count=true` 查询字符串。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 #### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_transitive_managers"
@@ -148,6 +150,12 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
 ConsistencyLevel: eventual
 ```
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitive-managers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc61de10ca88101e71359f772179ff13539155bc
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: caee63562ac7166e3f73357ce59d9bc1c3657e28
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696922"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334835"
 ---
 # <a name="delete-devicemanagementconfigurationsimplesettingdefinition"></a>删除 deviceManagementConfigurationSimpleSettingDefinition
 
@@ -69,6 +69,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{devic
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

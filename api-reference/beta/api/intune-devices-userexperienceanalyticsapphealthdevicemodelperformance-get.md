@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a4d0893243aa809949a6c3f481d485339e06d1f
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 284d30fb1ca0a8c962558231ea14c96c73e8c071
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489077"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339741"
 ---
 # <a name="get-userexperienceanalyticsapphealthdevicemodelperformance"></a>获取 userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "60489077"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsApp
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 443
+Content-Length: 484
 
 {
   "value": {
@@ -79,10 +79,12 @@ Content-Length: 443
     "activeDeviceCount": 1,
     "meanTimeToFailureInMinutes": 10,
     "modelAppHealthScore": 6.333333333333333,
-    "modelAppHealthStatus": "Model App Health Status value"
+    "modelAppHealthStatus": "Model App Health Status value",
+    "healthStatus": "insufficientData"
   }
 }
 ```
+
 
 
 

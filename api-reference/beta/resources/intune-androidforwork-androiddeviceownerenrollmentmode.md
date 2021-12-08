@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e369682fda379ce8d4b4905839be42ca4ff523c5
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: fce6de49edecfcdada7fbfa0af953bc3013e00bd
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487210"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339659"
 ---
 # <a name="androiddeviceownerenrollmentmode-enum-type"></a>androidDeviceOwnerEnrollmentMode 枚举类型
 
@@ -28,8 +28,9 @@ ms.locfileid: "60487210"
 |corporateOwnedDedicatedDevice|0|尚未记录|
 |corporateOwnedFullyManaged|1|尚未记录|
 |corporateOwnedWorkProfile|2|尚未记录|
-|corporateOwnedAOSPUserlessDevice|3|企业拥有、无用户 Android 开放Project (AOSP) 设备，无需 Google 移动服务。|
-|corporateOwnedAOSPUserAssociatedDevice|4 |企业拥有的、与用户关联的 Android 开放源代码Project (AOSP) 设备，无需 Google 移动服务。|
+|corporateOwnedAOSPUserlessDevice|3|企业拥有、无用户 Android 开源Project (AOSP) 设备，无需 Google 移动服务。|
+|corporateOwnedAOSPUserAssociatedDevice|4|企业拥有的、与用户关联的 Android 开放源代码Project (AOSP) 设备，无需 Google 移动服务。|
+
 
 
 

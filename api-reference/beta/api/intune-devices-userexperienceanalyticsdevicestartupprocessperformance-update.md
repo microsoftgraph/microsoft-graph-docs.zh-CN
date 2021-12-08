@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a45f2f57017d2dafa86dd46519f31e222a0119e3
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 280520cc3631606fa75a34158b01997acea3d25a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488963"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341724"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocessperformance"></a>更新 userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "60488963"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -110,6 +110,7 @@ Content-Length: 387
   "totalImpactInMs2": 0
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: 删除 deviceShellScript
 description: 删除 deviceShellScript。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 286ebb6f5ae4e7ef7b9770e0863536a6edb75a1b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 83d8dc5f91fb79ad0c672bb7b055402a63b10ed9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59112494"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338356"
 ---
 # <a name="delete-deviceshellscript"></a>删除 deviceShellScript
 
@@ -27,9 +27,9 @@ ms.locfileid: "59112494"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,15 +4,15 @@ description: 获取 Dynamics 365 Business Central 中的一个 dimension 对象�
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 656bbd820a3dace3da989f7ae3d4a5115a45289a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 936c759f68a798ea9983228515cca6163556e3e1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52045431"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341017"
 ---
 # <a name="get-dimensions"></a>获取维度
 
@@ -33,7 +33,7 @@ ms.locfileid: "52045431"
 
 ## <a name="http-request"></a>HTTP 请求
 
-```
+```http
 GET /financials/companies/{id}/dimensions/{id}
 ```
 
@@ -53,16 +53,16 @@ GET /financials/companies/{id}/dimensions/{id}
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
-下面是一个请求示例。
+下面展示了示例请求。
 ```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}
 ```
 
-**响应**
+### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面展示了示例响应。 
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 699c483a825c91fd5a4eb6c5416adf044ef714de
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 1539f442363465f3e49df23678c8b2ce6ef9797b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486978"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334191"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "60486978"
 
 通过 Intune 托管或预注册的设备
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[Get managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|读取 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。|
@@ -124,16 +124,16 @@ ms.locfileid: "60486978"
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) 集合|指示设备上最后一次登录的用户。 此属性是只读的。|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告 DateTime 设置了 preferMdmOverGroupPolicy 设置。  设置后，如果存在冲突，Intune MDM 设置将覆盖组策略设置。 只读。 此属性是只读的。|
 |autopilotEnrolled|Boolean|报告托管设备是否通过自动试点注册。 此属性是只读的。|
-|requireUserEnrollmentApproval|Boolean|报告托管 iOS 设备是否注册用户审批。 此属性是只读的。|
+|requireUserEnrollmentApproval|布尔值|报告托管 iOS 设备是否注册用户审批。 此属性是只读的。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。|
 |iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
-|roleScopeTagIds|String 集合|此设备实例的范围标记标识列表。|
+|roleScopeTagIds|字符串集合|此设备实例的范围标记标识列表。|
 |windowsActiveMalwareCount|Int32|此 Windows 设备的活动恶意软件计数。 此属性是只读的。|
 |windowsRemediatedMalwareCount|Int32|此 Windows 设备的已修复恶意软件计数。 此属性是只读的。|
 |notes|String|IT 管理员在设备上创建的备注|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|配置管理器客户端运行状况状态，仅对 MDM/ConfigMgr 代理管理的设备有效|
-|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|配置管理器客户端信息，仅对 ConfigMgr 代理托管、duel 托管或三管理的设备有效|
+|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|配置管理器客户端信息，仅对由 ConfigMgr 代理托管、duel 托管或三管理的设备有效|
 |ethernetMacAddress|String|以太网 MAC。 此属性是只读的。|
 |physicalMemoryInBytes|Int64|内存总量（以字节为单位）。 此属性是只读的。|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|处理器体系结构。 此属性是只读的。 可取值为：`unknown`、`x86`、`x64`、`arm`、`arM64`。|
@@ -150,7 +150,7 @@ ms.locfileid: "60486978"
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|设备上当前安装的所有应用程序|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|设备类别|
-|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|设备保护状态。|
+|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|设备保护状态。 此属性是只读的。|
 |users|[user](../resources/intune-shared-user.md) 集合|与托管设备关联的主要用户。|
 |logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 集合|日志集合请求列表|
 
@@ -366,6 +366,7 @@ ms.locfileid: "60486978"
   "enrollmentProfileName": "String"
 }
 ```
+
 
 
 

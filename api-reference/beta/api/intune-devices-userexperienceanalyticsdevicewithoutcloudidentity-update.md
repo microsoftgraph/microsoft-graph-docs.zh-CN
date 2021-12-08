@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsDeviceWithoutCloudIdentity
 description: 更新 userExperienceAnalyticsDeviceWithoutCloudIdentity 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2868c769e7d358d674920b9c09acdb674470b993
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 471000d29bc011f00420b5c7f1b6943742386776
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59132930"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341458"
 ---
 # <a name="update-userexperienceanalyticsdevicewithoutcloudidentity"></a>更新 userExperienceAnalyticsDeviceWithoutCloudIdentity
 
@@ -27,9 +27,9 @@ ms.locfileid: "59132930"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -92,6 +92,7 @@ Content-Length: 228
   "azureAdDeviceId": "Azure Ad Device Id value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e47174fdd1dc53465e8cbc803d2459531f08710e
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: e7888ae7f720263c34cdf2901085bcf4f0ca882f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60479149"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336207"
 ---
 # <a name="list-roledefinitions"></a>列出 roleDefinitions
 
@@ -27,9 +27,9 @@ ms.locfileid: "60479149"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -121,6 +121,7 @@ Content-Length: 1477
   ]
 }
 ```
+
 
 
 

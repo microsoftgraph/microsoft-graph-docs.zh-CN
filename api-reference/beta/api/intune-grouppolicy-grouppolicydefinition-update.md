@@ -2,15 +2,15 @@
 title: 更新 groupPolicyDefinition
 description: 更新 groupPolicyDefinition 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 958e6a03b5f2e3e8c6700d7228782ba08f4a4dbf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f2c6f23ba1799c6f3fa81c37779787c61dcc950f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124747"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334037"
 ---
 # <a name="update-grouppolicydefinition"></a>更新 groupPolicyDefinition
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 下表显示创建 [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)时所需的属性。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|标识策略可应用于的组类型。 可取值为：`user`、`machine`。|
 |displayName|String|本地化的策略名称。|
@@ -65,7 +65,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |categoryPath|String|策略的本地化完整类别路径。|
 |supportedOn|String|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
-|hasRelatedDefinitions|Boolean|表示此定义是否有相关定义|
+|hasRelatedDefinitions|布尔值|表示此定义是否有相关定义|
 |groupPolicyCategoryId|Guid|父类别的类别 ID|
 |minDeviceCspVersion|String|此定义中设备配置所需的最低 CSP 版本|
 |minUserCspVersion|String|此定义中的用户配置所需的最低云解决方案提供商版本|
@@ -127,6 +127,7 @@ Content-Length: 643
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

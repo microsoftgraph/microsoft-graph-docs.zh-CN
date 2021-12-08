@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e457332c5005e28b45b4318e294e6d6c0b09f55b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ab3ad90e77528a2de5489b9fd08eb8cf9a939c70
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687337"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342627"
 ---
 # <a name="deviceconfigassignmentintent-enum-type"></a>deviceConfigAssignmentIntent 枚举类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "60687337"
 |:---|:---|:---|
 |apply|0|确保将配置文件应用于工作分配中的设备。|
 |remove|1|确保从之前安装了配置文件的设备中删除配置文件。|
+
 
 
 

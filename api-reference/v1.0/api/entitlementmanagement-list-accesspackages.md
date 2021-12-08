@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 11e21b61322507e7791837fc52557d4854c645e9
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 005aa08df00a053a4250cd1a28ed72c59b321b99
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242388"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346649"
 ---
 # <a name="list-accesspackages"></a>列出 accessPackages
 
@@ -19,7 +19,7 @@ ms.locfileid: "61242388"
 
 检索 [accessPackage 对象](../resources/accesspackage.md) 的列表。  生成的列表包括调用方有权访问的所有目录内的所有访问包。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ GET /identityGovernance/entitlementManagement/accessPackages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 和 `$filter` OData 查询参数来帮助自定义响应。 例如，若要检索每个访问包的访问包策略，请添加 `$expand=accessPackageAssignmentPolicies` 。 若要搜索具有特定名称的访问包，请包含筛选器（ `$filter=contains(tolower(displayName),'team')` 如 在查询中）。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` 和 `$filter` OData 查询参数来帮助自定义响应。 例如，若要搜索具有特定名称的访问包，请包含筛选器（ `$filter=contains(tolower(displayName),'team')` 如 在查询中）。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,6 +59,8 @@ GET /identityGovernance/entitlementManagement/accessPackages
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accesspackage"
@@ -67,6 +69,28 @@ GET /identityGovernance/entitlementManagement/accessPackages
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accesspackage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accesspackage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-accesspackage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accesspackage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

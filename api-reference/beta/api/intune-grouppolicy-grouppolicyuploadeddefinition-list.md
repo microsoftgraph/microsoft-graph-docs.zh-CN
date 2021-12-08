@@ -2,15 +2,15 @@
 title: 列出 groupPolicyUploadedDefinitions
 description: 列出 groupPolicyUploadedDefinition 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01591ecbe8802b291772c817af75c044c1b2de73
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 51330531669cbac75830ffa905f7285b4ffd931e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030737"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337369"
 ---
 # <a name="list-grouppolicyuploadeddefinitions"></a>列出 groupPolicyUploadedDefinitions
 
@@ -90,6 +90,7 @@ Content-Length: 740
   ]
 }
 ```
+
 
 
 

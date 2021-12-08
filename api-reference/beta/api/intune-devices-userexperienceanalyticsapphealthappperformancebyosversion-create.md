@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 description: 创建新的 userExperienceAnalyticsAppHealthAppPerformanceByOSVersion 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffa624a3d0300c8efa823118edd07eb9de9f096a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9224955e74e4540ea4d42e88f0a836c6bb3ecca3
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070578"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341248"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyosversion"></a>创建 userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
@@ -27,9 +27,9 @@ ms.locfileid: "59070578"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,13 +56,13 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByO
 |id|String|用户体验分析应用版本性能对象的唯一标识符。|
 |osVersion|String|应用程序的 os 版本。|
 |osBuildNumber|String|应用程序的操作系统内部版本号。|
-|activeDeviceCount|Int32|应用处于活动状态的设备数。 有效值 -2147483648 2147483647|
+|activeDeviceCount|Int32|应用处于活动状态的设备数。 有效值 -2147483648 to 2147483647|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
 |appPublisher|String|应用程序的发布者。|
-|appUsageDuration|Int32|应用程序的总使用时间（分钟）。 有效值 -2147483648 2147483647|
-|appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 2147483647|
-|meanTimeToFailureInMinutes|Int32|应用失败平均时间（分钟）。 有效值 -2147483648 2147483647|
+|appUsageDuration|Int32|应用程序的总使用时间（分钟）。 有效值 -2147483648 to 2147483647|
+|appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 to 2147483647|
+|meanTimeToFailureInMinutes|Int32|应用失败平均时间（分钟）。 有效值 -2147483648 to 2147483647|
 
 
 
@@ -113,6 +113,7 @@ Content-Length: 464
   "meanTimeToFailureInMinutes": 10
 }
 ```
+
 
 
 

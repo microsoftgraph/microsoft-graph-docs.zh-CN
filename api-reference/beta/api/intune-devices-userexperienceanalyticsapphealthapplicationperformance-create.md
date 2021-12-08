@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsAppHealthApplicationPerformance
 description: 创建新的 userExperienceAnalyticsAppHealthApplicationPerformance 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f61a0e5126e29c3328becd6fd95590680e9f5bca
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 17a18e6eada9e4b2803dbe51120276c38237efd2
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027916"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337740"
 ---
 # <a name="create-userexperienceanalyticsapphealthapplicationperformance"></a>创建 userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "59027916"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,17 +54,17 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析应用性能对象的唯一标识符。|
-|appHangCount|Int32|应用的挂起数。 有效值 -2147483648 2147483647|
+|appHangCount|Int32|应用的挂起数。 有效值 -2147483648 to 2147483647|
 |appHealthScore|双精度|应用的运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |appHealthStatus|String|应用的整体运行状况状态。|
 |allOrgsHealthScore|双精度|所有组织的应用程序的中值运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|activeDeviceCount|Int32|应用处于活动状态的设备数。 有效值 -2147483648 2147483647|
+|activeDeviceCount|Int32|应用处于活动状态的设备数。 有效值 -2147483648 to 2147483647|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
 |appPublisher|String|应用程序的发布者。|
-|appUsageDuration|Int32|应用程序的总使用时间（分钟）。 有效值 -2147483648 2147483647|
-|appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 2147483647|
-|meanTimeToFailureInMinutes|Int32|应用失败平均时间（分钟）。 有效值 -2147483648 2147483647|
+|appUsageDuration|Int32|应用程序的总使用时间（分钟）。 有效值 -2147483648 to 2147483647|
+|appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 to 2147483647|
+|meanTimeToFailureInMinutes|Int32|应用失败平均时间（分钟）。 有效值 -2147483648 to 2147483647|
 
 
 
@@ -119,6 +119,7 @@ Content-Length: 522
   "meanTimeToFailureInMinutes": 10
 }
 ```
+
 
 
 

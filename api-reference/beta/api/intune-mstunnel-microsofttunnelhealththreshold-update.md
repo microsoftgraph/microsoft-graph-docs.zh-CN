@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 318ec9d93d995d29c357da02dc756ed34bc04e36
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 58f26bc2659341f57b6149418c841cf714d62810
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494050"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339295"
 ---
 # <a name="update-microsofttunnelhealththreshold"></a>更新 microsoftTunnelHealthThreshold
 
@@ -98,6 +98,7 @@ Content-Length: 243
   "defaultUnhealthyThreshold": 9
 }
 ```
+
 
 
 

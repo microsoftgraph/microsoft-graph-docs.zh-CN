@@ -2,15 +2,15 @@
 title: 删除 certificateConnectorDetails
 description: 删除 certificateConnectorDetails。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3114ccb345cf87235f2b82c90cb8fb9a1c4f08c7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3c44e92311334afa395856e152214cb95d845bf2
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111969"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335514"
 ---
 # <a name="delete-certificateconnectordetails"></a>删除 certificateConnectorDetails
 
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDet
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

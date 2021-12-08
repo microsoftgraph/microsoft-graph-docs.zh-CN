@@ -2,15 +2,15 @@
 title: windows81CompliancePolicy 资源类型
 description: 此类包含 Windows 8.1 的合规性设置。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5df716d87f393888da4636b780a11c210bebd7b9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9f6b365faa591284b47f16b14adfe4c562c7e039
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146000"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337215"
 ---
 # <a name="windows81compliancepolicy-resource-type"></a>windows81CompliancePolicy 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "59146000"
 
 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List windows81CompliancePolicies](../api/intune-deviceconfig-windows81compliancepolicy-list.md)|[windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md) 集合|列出 [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md) 对象的属性和关系。|
@@ -100,6 +100,7 @@ ms.locfileid: "59146000"
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

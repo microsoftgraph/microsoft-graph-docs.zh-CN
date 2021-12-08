@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 886eedbf31663a34e615c639a66aa5b777f2fde7
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 56ea1c6e071f260a8436a9344e40542be9ea8c10
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694328"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341598"
 ---
 # <a name="get-deviceconfigurationassignment"></a>获取 deviceConfigurationAssignment
 
@@ -95,6 +95,7 @@ Content-Length: 562
   }
 }
 ```
+
 
 
 

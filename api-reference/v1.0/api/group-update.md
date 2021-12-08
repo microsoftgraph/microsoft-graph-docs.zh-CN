@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 72e6d2a2999ffffc800c923c5b20f0fc75220657
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 644470934cd334245375bdd8b76e3b11a4bd2099
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019093"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340730"
 ---
 # <a name="update-group"></a>更新组
 
@@ -54,7 +54,7 @@ PATCH /groups/{id}
 |autoSubscribeNewMembers|Boolean|默认值为“`false`”。 指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 当组上的 **subscriptionEnabled** 设置为 `false` 时，**autoSubscribeNewMembers** 不能为 `true`。|
 |说明|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
-|mailNickname|String|组的邮件别名，在组织中是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 |
+|mailNickname|String|组的邮件别名，它对于组织中的 Microsoft 365 组是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 |
 |preferredDataLocation|String|Microsoft 365 组的首选数据位置。 若要更新此属性，必须为调用用户分配以下 Azure AD 角色之一： <br><ul><li> 全局管理员 <li> 用户帐户管理员 <li> 合作伙伴层级 1 或层级 2 支持 <li>目录写入程序 <li> Exchange 管理员 <li> SharePoint 管理员 </ul> <br/>有关此属性详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。|
 |securityEnabled|布尔|指定是否为安全组。 |
 |visibility|String|指定 Microsoft 365 组的可见性。可能的值是：**专用**、**公用** 或空（解释为 **公用**）。|
@@ -115,7 +115,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

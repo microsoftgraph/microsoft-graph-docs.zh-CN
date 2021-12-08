@@ -2,15 +2,15 @@
 title: 更新 windowsManagementAppHealthState
 description: 更新 windowsManagementAppHealthState 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af254521e32ab284d4c3f1406ee1c0368d52cf96
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 09ad1b23c328e755b77cbf3b7ba8656818613ce7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097087"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334030"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>更新 windowsManagementAppHealthState
 
@@ -27,9 +27,9 @@ ms.locfileid: "59097087"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,7 +58,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 |installedVersion|String|Windows管理应用安装的版本。|
 |lastCheckInDateTime|DateTimeOffset|Windows管理应用上次签入时间。|
 |deviceName|String|安装了管理应用Windows的名称。|
-|deviceOSVersion|String|Windows 10安装了管理应用Windows操作系统版本。|
+|deviceOSVersion|String|Windows 10安装管理应用的设备Windows操作系统版本。|
 
 
 
@@ -101,6 +101,7 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
+
 
 
 

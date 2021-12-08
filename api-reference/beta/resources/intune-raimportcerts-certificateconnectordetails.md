@@ -2,15 +2,15 @@
 title: certificateConnectorDetails 资源类型
 description: 用于检索有关 Intune 证书连接器的信息的实体。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5dbbb8029f4734e0ea02c1c940e2edba05d84727
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2dd74a003add77fffd029153fc9295b603ce3eef
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020299"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338951"
 ---
 # <a name="certificateconnectordetails-resource-type"></a>certificateConnectorDetails 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59020299"
 
 用于检索有关 Intune 证书连接器的信息的实体。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 certificateConnectorDetailses](../api/intune-raimportcerts-certificateconnectordetails-list.md)|[certificateConnectorDetails](../resources/intune-raimportcerts-certificateconnectordetails.md) 集合|列出 [certificateConnectorDetails 对象的属性和](../resources/intune-raimportcerts-certificateconnectordetails.md) 关系。|
@@ -63,6 +63,7 @@ ms.locfileid: "59020299"
   "lastCheckinDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

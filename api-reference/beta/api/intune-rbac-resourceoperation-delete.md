@@ -2,15 +2,15 @@
 title: 删除 resourceOperation
 description: 删除 resourceOperation。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93b68ab1d657f8f79539181942b607e345e325c4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5fe23bf2395cfcf1e9ba11c448b931607837da85
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141506"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335073"
 ---
 # <a name="delete-resourceoperation"></a>删除 resourceOperation
 
@@ -27,9 +27,9 @@ ms.locfileid: "59141506"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/resourceOperations/{res
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

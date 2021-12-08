@@ -2,15 +2,15 @@
 title: resultantAppStateDetail 枚举类型
 description: 指示有关应用程序为何具有特定安装状态的其他详细信息的枚举。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 58653891763433a6edc89986d6c076fa088142b9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b99d8cc0951692026809196ebd2f4f3613bac679
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047203"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336179"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 枚举类型
 
@@ -29,8 +29,8 @@ ms.locfileid: "59047203"
 |dependencyFailedToInstall|1|无法安装应用程序的一个或多个依赖项。|
 |dependencyWithRequirementsNotMet|2|应用程序的一个或多个依赖项具有不满足的要求。|
 |dependencyPendingReboot|3|应用程序的一个或多个依赖项需要重新启动设备才能完成安装。|
-|dependencyWithAutoInstallDisabled|4 |应用程序的一个或多个依赖项配置为不自动安装。|
-|supersededAppUninstallFailed|5 |已取代的应用无法卸载。|
+|dependencyWithAutoInstallDisabled|4|应用程序的一个或多个依赖项配置为不自动安装。|
+|supersededAppUninstallFailed|5|已取代的应用无法卸载。|
 |supersededAppUninstallPendingReboot|6 |取代的应用需要重新启动才能完成卸载。|
 |removingSupersedApps|7 |将删除取代的应用。|
 |iosAppStoreUpdateFailedToInstall|1000|应用的最新版本无法从早期版本更新。|
@@ -60,7 +60,8 @@ ms.locfileid: "59047203"
 |minimumPhysicalMemoryNotMet|-1003|目标设备上 RAM 量小于配置的最小 RAM 量。|
 |minimumOsVersionNotMet|-1002|目标设备上的操作系统版本小于配置的最低版本。|
 |minimumDiskSpaceNotMet|-1001|目标设备的可用磁盘空间小于配置的最小磁盘空间。|
-|processorArchitectureNotApplicable|-1000|设备体系结构 (例如 x86/amd64) 不适用于应用程序。|
+|processorArchitectureNotApplicable|-1000|设备 (例如 x86/amd64) 不适用于应用程序。|
+
 
 
 

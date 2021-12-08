@@ -2,15 +2,15 @@
 title: 创建 cloudPCConnectivityIssue
 description: 创建新的 cloudPCConnectivityIssue 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 559b7746003009a7095944128d4560f169ca0ae4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7620de97b63b81a47e2577fd71f8c5cd8da8c0ca
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59059138"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339827"
 ---
 # <a name="create-cloudpcconnectivityissue"></a>创建 cloudPCConnectivityIssue
 
@@ -27,9 +27,9 @@ ms.locfileid: "59059138"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -104,6 +104,7 @@ Content-Length: 374
   "recommendedAction": "Recommended Action value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 41db800f2e14e5806b2354e9b59d95f9249da545
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: c8be1f18327a7573022c02b31d1699848f71f111
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489743"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339666"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "60489743"
 
 注册配置文件，用于Enterprise Google 的云管理注册 Android 设备。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 androidDeviceOwnerEnrollmentProfiles](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-list.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) 集合|列出 [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) 对象的属性和关系。|
@@ -51,11 +51,11 @@ ms.locfileid: "60489743"
 |enrollmentTokenUsageCount|Int32|已使用当前令牌注册的 AOSP 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 |wifiSsid|String|包含 WLAN 登录 ssid 的字符串|
 |wifiPassword|String|包含 WLAN 登录密码的字符串|
 |wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|包含 WLAN 安全类型的字符串。 可取值为：`none`、`wpa`、`wep`。|
-|wifiHidden|Boolean|指示是否已启用隐藏的 wifi 网络的布尔值|
+|wifiHidden|布尔值|指示是否已启用隐藏的 wifi 网络的布尔值|
 
 ## <a name="relationships"></a>关系
 无
@@ -99,6 +99,7 @@ ms.locfileid: "60489743"
   "wifiHidden": true
 }
 ```
+
 
 
 

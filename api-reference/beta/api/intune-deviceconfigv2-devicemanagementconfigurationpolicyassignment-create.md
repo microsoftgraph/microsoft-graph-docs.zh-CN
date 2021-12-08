@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e257675508bc1d92e9a7ee966da06f2245d5e121
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a1215f16120794a1ae6ea1a3c563bd4d5760a9ad
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689093"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340954"
 ---
 # <a name="create-devicemanagementconfigurationpolicyassignment"></a>创建 deviceManagementConfigurationPolicyAssignment
 
@@ -54,7 +54,7 @@ POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|分配的键。|
+|id|String|分配的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|DeviceManagementConfigurationPolicy 的分配目标。|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|设备合规性策略的分配源，即 direct 或更新/policySet。 可取值为：`direct`、`policySets`。|
 |sourceId|String|工作分配的源的标识符。|
@@ -106,6 +106,7 @@ Content-Length: 514
   "sourceId": "Source Id value"
 }
 ```
+
 
 
 

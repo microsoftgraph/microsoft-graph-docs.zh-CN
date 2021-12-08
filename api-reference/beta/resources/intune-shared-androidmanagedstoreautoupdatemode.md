@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: adaca71257f5ee18cec8af62bfaf1e12d201ba3f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b571d8f1667d3a2eb7ccbde5bf0cefe176716a9c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695527"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337474"
 ---
 # <a name="androidmanagedstoreautoupdatemode-enum-type"></a>androidManagedStoreAutoUpdateMode 枚举类型
 
@@ -25,10 +25,11 @@ ms.locfileid: "60695527"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|default|0|设备的默认 (行为必须连接到 Wifi、充电且未主动) 。|
+|default|0|设备的默认 (行为必须连接到 Wifi、充电且未在设备) 。|
 |延迟|1|更新在应用过期后最多延迟 90 天。|
 |priority|2|应用由开发人员尽快更新。 如果设备联机，它将在数分钟内更新。|
-|unknownFutureValue|3|未知未来模式 (保留，当前未) 。|
+|unknownFutureValue|3|未知未来模式 (保留，现在不) 。|
+
 
 
 

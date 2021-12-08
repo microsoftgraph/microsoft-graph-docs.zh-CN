@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd5a191d5795552304e8685c4b38e9df4fa38b73
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d52a990485ded3fa669aff95fd38ae7b17d1a9ad
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695781"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340800"
 ---
 # <a name="deprovision-action"></a>deprovision 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "60695781"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.Read.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,6 +86,7 @@ Content-length: 55
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: groupPolicyUploadedDefinition 资源类型
 description: 实体描述有关单个组策略的所有信息。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e8440504e0ccd2931ab6ca8bc8ab6b7debdd573
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c50b65d4d73b08cd68bac10631f427ff0a854fd9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030233"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340184"
 ---
 # <a name="grouppolicyuploadeddefinition-resource-type"></a>groupPolicyUploadedDefinition 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "59030233"
 
 继承自 [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyUploadedDefinitions](../api/intune-grouppolicy-grouppolicyuploadeddefinition-list.md)|[groupPolicyUploadedDefinition](../resources/intune-grouppolicy-grouppolicyuploadeddefinition.md) 集合|列出 [groupPolicyUploadedDefinition](../resources/intune-grouppolicy-grouppolicyuploadeddefinition.md) 对象的属性和关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "59030233"
 |[更新 groupPolicyUploadedDefinition](../api/intune-grouppolicy-grouppolicyuploadeddefinition-update.md)|[groupPolicyUploadedDefinition](../resources/intune-grouppolicy-grouppolicyuploadeddefinition.md)|更新 [groupPolicyUploadedDefinition 对象](../resources/intune-grouppolicy-grouppolicyuploadeddefinition.md) 的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|标识策略可应用于的组类型。 继承自 [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)。 可取值为：`user`、`machine`。|
 |displayName|String|本地化的策略名称。 继承自 [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
@@ -52,7 +52,7 @@ ms.locfileid: "59030233"
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |definitionFile|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|与定义关联的组策略文件。 继承自 [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |“类别”|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|与定义关联的组策略类别。 继承自 [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
@@ -86,6 +86,7 @@ ms.locfileid: "59030233"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

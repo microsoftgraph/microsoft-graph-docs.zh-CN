@@ -2,15 +2,15 @@
 title: 删除 remoteAssistancePartner
 description: 删除 remoteAssistancePartner。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f401103f7a7b71799b4f19993279b62dd2548a3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6023731680031d3b50b549da7d7583de5834291d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064873"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342669"
 ---
 # <a name="delete-remoteassistancepartner"></a>删除 remoteAssistancePartner
 
@@ -27,9 +27,9 @@ ms.locfileid: "59064873"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartner
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: dd6efd84cbb3b42f250b74ce3b2c8af7f95abe74
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: e7b8479e4307f77d87a8b8b6d66cd68fda48bf1d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321993"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347240"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -138,7 +138,7 @@ ms.locfileid: "61321993"
 |licenseProcessingState|String|指示组的所有成员的组许可证分配状态。默认值为 `false`。只读。可能的值：`QueuedForProcessing`、`ProcessingInProgress`、`ProcessingComplete`。<br><br>仅在 `$select` 返回。只读。|
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)。|
 |mailEnabled|Boolean|指定组是否启用邮件。必需。<br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`）。|
-|mailNickname|String|组的邮件别名，在组织中是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 <br><br>必需。 默认情况下返回。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)。|
+|mailNickname|String|组的邮件别名，它对于组织中的 Microsoft 365 组是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 <br><br>必需。 默认情况下返回。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)。|
 |membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 <br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`startsWith`）。 |
 |membershipRuleProcessingState|String|指示动态成员身份处理是打开还是暂停。可能的值为 `On` 或 `Paused`。 <br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`、`in`）。  |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示上次将组与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 只读。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`）。|
@@ -339,34 +339,34 @@ ms.locfileid: "61321993"
   "allowExternalSenders": false,
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "autoSubscribeNewMembers": true,
-  "classification": "string",
+  "classification": "String",
   "createdDateTime": "String (timestamp)",
-  "description": "string",
-  "displayName": "string",
-  "groupTypes": ["string"],
+  "description": "String",
+  "displayName": "String",
+  "groupTypes": ["String"],
   "hasMembersWithLicenseErrors": "Boolean",
   "hideFromAddressLists": false,
   "hideFromOutlookClients": false,
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "isSubscribedByMail": true,
   "isAssignableRole": false,
-  "licenseProcessingState": "string",
-  "mail": "string",
+  "licenseProcessingState": "String",
+  "mail": "String",
   "mailEnabled": true,
-  "mailNickname": "string",
+  "mailNickname": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSecurityIdentifier": "string",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": "string",
-  "proxyAddresses": ["string"],
+  "preferredDataLocation": "String",
+  "proxyAddresses": ["String"],
   "renewedDateTime": "String (timestamp)",
   "resourceBehaviorOptions": ["String"],
   "resourceProvisioningOptions": ["String"],
   "securityEnabled": true,
   "securityIdentifier": "String",
   "unseenCount": 1024,
-  "visibility": "string",
+  "visibility": "String",
   "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "calendarView": [{ "@odata.type": "microsoft.graph.event" }],

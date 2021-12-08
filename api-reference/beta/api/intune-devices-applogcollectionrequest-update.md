@@ -2,15 +2,15 @@
 title: 更新 appLogCollectionRequest
 description: 更新 appLogCollectionRequest 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 945e6b2cbdaa79db3a426fb9e63d61ef62113e64
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3db80065ff2e12351fd4bb2d8ef1c04a32c24ccd
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020726"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340947"
 ---
 # <a name="update-applogcollectionrequest"></a>更新 appLogCollectionRequest
 
@@ -27,9 +27,9 @@ ms.locfileid: "59020726"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,9 +54,9 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|唯一标识符。 这是userId_DeviceId_AppId ID。|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|记录上载状态。 可取值为：`pending`、`completed`、`failed`。|
+|状态|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|记录上载状态。 可取值为：`pending`、`completed`、`failed`。|
 |errorMessage|String|上传过程中出现错误消息（如果有）|
-|customLogFolders|String collection|日志文件夹列表。 |
+|customLogFolders|字符串集合|日志文件夹列表。 |
 |completedDateTime|DateTimeOffset|上载日志请求达到终端状态的时间|
 
 
@@ -102,6 +102,7 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
 
 
 

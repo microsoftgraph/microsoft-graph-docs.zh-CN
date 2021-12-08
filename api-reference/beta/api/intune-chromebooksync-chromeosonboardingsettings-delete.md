@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39272eea76b15e4bc5ce2c43095dfb589119c7a1
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 2a9a0acc1251a362e2ef7b833beca4570fd1556f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491716"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338930"
 ---
 # <a name="delete-chromeosonboardingsettings"></a>删除 chromeOSOnboardingSettings
 
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/chromeOSOnboardingSetti
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

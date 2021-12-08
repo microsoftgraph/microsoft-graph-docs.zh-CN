@@ -2,15 +2,15 @@
 title: timeSeriesParameter 资源类型
 description: 请求快照时间系列时传递给 GetHealthMetricTimeSeries 的参数。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3110404b04bbea136bc242ab52fd87cdb9f502a7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 25af04afe10ffb6ee7acfdb036871f029c7e1539
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080665"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336858"
 ---
 # <a name="timeseriesparameter-resource-type"></a>timeSeriesParameter 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "59080665"
 请求快照时间系列时传递给 GetHealthMetricTimeSeries 的参数。
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |metricName|String|请求时间序列的指标的名称。|
 |startDateTime|DateTimeOffset|所请求的系列的开始时间。|
@@ -47,6 +47,7 @@ ms.locfileid: "59080665"
   "endDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

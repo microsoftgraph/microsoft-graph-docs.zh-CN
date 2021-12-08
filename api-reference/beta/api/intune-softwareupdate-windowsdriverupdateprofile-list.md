@@ -2,15 +2,15 @@
 title: 列出 windowsDriverUpdateProfiles
 description: 列出 windowsDriverUpdateProfile 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe6bd5010d8539b1df163155dbe4b7e0fb8d4bb9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5da27ecfaa05676533ac0c1734f5b7b51e9f9531
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59092544"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334268"
 ---
 # <a name="list-windowsdriverupdateprofiles"></a>列出 windowsDriverUpdateProfiles
 
@@ -87,6 +87,7 @@ Content-Length: 579
   ]
 }
 ```
+
 
 
 

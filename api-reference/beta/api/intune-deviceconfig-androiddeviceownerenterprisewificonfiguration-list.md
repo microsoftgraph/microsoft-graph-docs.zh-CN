@@ -2,15 +2,15 @@
 title: 列出 androidDeviceOwnerEnterpriseWiFiConfigurations
 description: 列出 androidDeviceOwnerEnterpriseWiFiConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3dbac28e51b5b8d304e6be0f3f4d6b23b773dd30
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6933d0a4d4492b1b7ce29227df53c09e35d11c5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035084"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339463"
 ---
 # <a name="list-androiddeviceownerenterprisewificonfigurations"></a>列出 androidDeviceOwnerEnterpriseWiFiConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1993
+Content-Length: 2095
 
 {
   "value": [
@@ -111,6 +111,9 @@ Content-Length: 1993
       "preSharedKey": "Pre Shared Key value",
       "preSharedKeyIsSet": true,
       "eapType": "eapTtls",
+      "trustedServerCertificateNames": [
+        "Trusted Server Certificate Names value"
+      ],
       "authenticationMethod": "usernameAndPassword",
       "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
       "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
@@ -119,6 +122,7 @@ Content-Length: 1993
   ]
 }
 ```
+
 
 
 

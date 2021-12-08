@@ -5,20 +5,20 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 16e5d54057553e3b990d3594686d4aedc3b2abd9
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: d72578fec62c4a7cc0b51818a2706cff5a42a678
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242302"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337142"
 ---
 # <a name="accesspackageassignmentrequest-filterbycurrentuser"></a>accessPackageAssignmentRequest： filterByCurrentUser
 命名空间：microsoft.graph
 
 
-在[Azure AD管理](../resources/entitlementmanagement-root.md)中，检索在已登录用户上筛选的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象列表。
+在[Azure AD管理](../resources/entitlementmanagement-root.md)"中，检索在登录用户上筛选的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -48,7 +48,7 @@ GET /identityGovernance/entitlementManagement/assignmentRequests/filterByCurrent
 
 - `createdBy` 用于获取 `accessPackageAssignmentRequest` 已登录用户创建的对象。 结果列表包括所有目录和访问包中调用方自己或代表其他人创建的所有分配请求，例如管理员直接分配。
 
-- `approver` 用于获取已登录用户是任何包含的用户或用户中的允许审批 `accessPackageAssignmentRequest` `accessPackageAssignment/accessPackageAssignmentPolicy/requestApprovalSettings/approvalStages` 者 `primaryApprovers` `escalationApprovers` () 。 生成的列表包括所有目录和访问包中挂起且需要调用方做出决策的分配请求。 生成的列表包括状态中跨所有目录和访问包的分配请求，并且需要 `pending` 调用方做出决策。
+- `approver` 用于获取已登录用户是请求的允许 `accessPackageAssignmentRequest` 审批者的对象。 生成的列表包括状态中需要调用方做出决策的所有目录和访问包 `pending` 中的分配请求。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -65,6 +65,8 @@ GET /identityGovernance/entitlementManagement/assignmentRequests/filterByCurrent
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackageassignmentrequest_filterbycurrentuser"
@@ -73,6 +75,28 @@ GET /identityGovernance/entitlementManagement/assignmentRequests/filterByCurrent
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests/filterByCurrentUser(on='target')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accesspackageassignmentrequest-filterbycurrentuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackageassignmentrequest-filterbycurrentuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accesspackageassignmentrequest-filterbycurrentuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignmentrequest-filterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignmentrequest-filterbycurrentuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

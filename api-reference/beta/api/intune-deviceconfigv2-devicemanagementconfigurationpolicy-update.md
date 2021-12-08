@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b40bc63c0f7eefa740e5104436532c53e91391bc
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: fdb321f46e3582b7094d5e750647fe69d0f1092c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60481963"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339183"
 ---
 # <a name="update-devicemanagementconfigurationpolicy"></a>更新 deviceManagementConfigurationPolicy
 
@@ -63,7 +63,7 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 |lastModifiedDateTime|DateTimeOffset|策略上次修改日期和时间。 此属性是只读的。|
 |settingCount|Int32|设置数。 此属性是只读的。|
 |creationSource|String|策略创建源|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 |isAssigned|Boolean|策略分配状态。 此属性是只读的。|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|模板参考信息|
 
@@ -134,6 +134,7 @@ Content-Length: 859
   }
 }
 ```
+
 
 
 

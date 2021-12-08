@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0ecc24b6cb9069091fe9cbb51694c12f5a12b95
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ef986108396bd1dbdb013be810aea01ebd1e6627
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697169"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342410"
 ---
 # <a name="userexperienceanalyticsbatteryhealthappimpact-resource-type"></a>userExperienceAnalyticsBatteryHealthAppImpact 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "60697169"
 |appName|String|应用名称。 例如：oltk.exe|
 |appDisplayName|String|适用于显示名称用户友好应用程序。 例如：Outlook|
 |appPublisher|String|应用发布者。 例如：Microsoft Corporation|
-|isForegroundApp|布尔值|如果用户与应用有活动交互，则其为 true。|
+|isForegroundApp|Boolean|如果用户与应用有活动交互，则其为 true。|
 |batteryUsagePercentage|双精度|当设备未接通交流电源时，此应用程序在 14 天内在租户中所有设备上计算出的总电池电源百分比。 百分比单位。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 
 ## <a name="relationships"></a>关系
@@ -65,6 +65,7 @@ ms.locfileid: "60697169"
   "batteryUsagePercentage": "4.2"
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: 创建 deviceManagementScriptGroupAssignment
 description: 创建新的 deviceManagementScriptGroupAssignment 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4f21e8bf4e318324389ccb19f0a8d978cd1df7d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3c0bdb47d748099f89a11dec4893559063fb7a5c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59121947"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338678"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>创建 deviceManagementScriptGroupAssignment
 
@@ -27,9 +27,9 @@ ms.locfileid: "59121947"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -91,6 +91,7 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50ec850986b907acf91c2c9f0518e9f76d1aa7be
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 727bbfc8b0137331e3af42512c4e46ab6e6ed89a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696061"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339043"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "60696061"
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|设备配置的分配目标。|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|设备配置的分配源，直接或直接/策略集。 此属性是只读的。 可取值为：`direct`、`policySets`。|
 |sourceId|String|工作分配的源的标识符。 此属性是只读的。|
-|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|管理员应用或删除配置文件的意图。 此属性是只读的。 可取值为：`apply`、`remove`。|
+|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|管理员应用或删除配置文件的意图。 可取值为：`apply`、`remove`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -66,6 +66,7 @@ ms.locfileid: "60696061"
   "intent": "String"
 }
 ```
+
 
 
 

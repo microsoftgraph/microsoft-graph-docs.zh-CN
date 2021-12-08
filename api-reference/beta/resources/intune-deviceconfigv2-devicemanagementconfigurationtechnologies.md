@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a87452e3f00887895e8a89a2b845e077a25f7bf7
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: fc7e240c4e48dfcab9974ff7c6ab4d1c30a629a8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60485168"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335017"
 ---
 # <a name="devicemanagementconfigurationtechnologies-enum-type"></a>deviceManagementConfigurationTechnologies 枚举类型
 
@@ -28,11 +28,12 @@ ms.locfileid: "60485168"
 |无|0|无法通过任何通道部署设置|
 |mdm|1|可通过 MDM 通道部署设置|
 |windows10XManagement|2|可通过 Windows10XManagement 通道部署设置|
-|configManager|4 |可通过 ConfigManager 通道部署设置|
+|configManager|4|可通过 ConfigManager 通道部署设置|
 |microsoftSense|128|可以通过 SENSE 代理通道部署设置|
-|exchangeOnline|256|可以通过代理通道部署Exchange Online设置|
+|exchangeOnline|256|可以通过管理代理通道Exchange Online设置|
 |linuxMdm|1024|可通过 Linux Mdm 通道部署设置|
 |unknownFutureValue|1073741824|Sentinel 成员，适用于客户端无法处理新枚举值的情况。|
+
 
 
 

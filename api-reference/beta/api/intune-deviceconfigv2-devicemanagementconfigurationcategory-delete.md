@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 660877e46ba6df736713f834e7f32d0cbcec2559
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: f95a7517e3117c1e670c9b4430133d8c0eab9c1c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688477"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337047"
 ---
 # <a name="delete-devicemanagementconfigurationcategory"></a>删除 deviceManagementConfigurationCategory
 
@@ -66,6 +66,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/complianceCategories/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

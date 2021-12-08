@@ -2,15 +2,15 @@
 title: roleScopeTag 资源类型
 description: 角色作用域标记
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d504565cbc5f37a70fc813386024b1c32c4654e6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 31f0bcb6abc187379f559f71fcaa1b7d96ce8a94
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063683"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337530"
 ---
 # <a name="rolescopetag-resource-type"></a>roleScopeTag 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59063683"
 
 角色作用域标记
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 roleScopeTags](../api/intune-rbac-rolescopetag-list.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) 集合|列出 [roleScopeTag 对象的属性和](../resources/intune-rbac-rolescopetag.md) 关系。|
@@ -43,7 +43,7 @@ ms.locfileid: "59063683"
 |isBuiltIn|Boolean|角色作用域标记的说明。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |assignments|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) 集合|此角色作用域标记的分配列表。|
 
@@ -64,6 +64,7 @@ ms.locfileid: "59063683"
   "isBuiltIn": true
 }
 ```
+
 
 
 

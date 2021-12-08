@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 34f4a662e0825698e36c11eb67488da37c9c5f6b
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: a5f03a8e951117c85aa7795b6a38994e95217b6a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322252"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335451"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -145,7 +145,7 @@ ms.locfileid: "61322252"
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>仅在 `$select` 上返回。|
 |businessPhones|字符串集合|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。本地目录同步的用户为只读。<br><br>默认情况下返回。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 |城市|String|用户所在的城市。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
-|companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
+|CompanyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`和 `in`）。|
 |country|String|用户所在的国家/地区，例如 `US` 或 `UK`。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |createdDateTime | DateTimeOffset |用户对象的创建日期。只读<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not` 、 `ge`、 `le`、 `in`）。|
@@ -179,7 +179,7 @@ ms.locfileid: "61322252"
 |officeLocation|String|用户公司地点的办公室位置。 <br><br>默认返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |onPremisesDistinguishedName|String| 包含本地 Active Directory `distinguished name` 或 `DN`。仅针对通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>仅在 `$select` 上返回。 |
 |onPremisesDomainName|String| 包含本地 `domainFQDN`，也称为 dnsDomainName。仅为正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>仅在 `$select` 上返回。|
-|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，这组属性集的授权来源是本地，并且为只读。 对于只使用云的用户（其中 `onPremisesSyncEnabled` 为假），可以在创建或更新期间设置这些属性。 这些扩展属性也称 Exchange 自定义属性 1-15。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`in` 和 `null` 值上的 `eq`）。 |
+|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes1-15。 单个扩展属性既不可选择，也不可筛选。 <br><li>对于 **onPremisesSyncEnabled** 用户，这组属性集的授权来源是本地，并且为只读。 </li><li>对于仅限云用户（其中 **onPremisesSyncEnabled** 为 `false`），可以在创建或更新用户对象期间设置这些属性。  </li><li>对于以前从本地 Active Directory 同步的仅限云用户，这些属性在 Microsoft Graph 中为只读，但可以通过 Exchange 管理中心或 PowerShell 中的 Exchange Online V2 模块进行完全托管。</li><br> 这些扩展属性也称 Exchange 自定义属性 1-15。 |
 |onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，在 Graph 中创建新用户帐户时必须指定此属性。**注意：** 指定该属性时不能使用 **$** 和 **\_** 字符。<br><br>仅在 `$select` 上返回。 支持 `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`)..                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示对象最后一次与本地目录同步的时间。例如：`2013-02-16T03:04:54Z`。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`）。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `not`、 `ge`、 `le`）。|

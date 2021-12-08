@@ -2,15 +2,15 @@
 title: deviceManagementTemplateType 枚举类型
 description: 模板类型
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 337ea607bbc14822d5efe470c3347fe5033a5175
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f930e8dded6bbe8bc405e11a9c7c233c319d4138
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59086377"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341010"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>deviceManagementTemplateType 枚举类型
 
@@ -29,14 +29,15 @@ ms.locfileid: "59086377"
 |specializedDevices|1|专用设备模板|
 |advancedThreatProtectionSecurityBaseline|2|高级威胁防护安全基线模板|
 |deviceConfiguration|3|设备配置模板|
-|custom|4 |自定义管理员定义的模板|
-|securityTemplate|5 |包含以安全性为中心的特定设置的模板|
+|custom|4|自定义管理员定义的模板|
+|securityTemplate|5|包含以安全性为中心的特定设置的模板|
 |microsoftEdgeSecurityBaseline|6 |Microsoft Edge安全基线模板|
 |microsoftOffice365ProPlusSecurityBaseline|7 |Microsoft Office 365 专业增强版安全基线模板|
 |deviceCompliance|8 |设备合规性模板|
 |deviceConfigurationForOffice365|9 |设备配置Microsoft Office 365设置|
 |cloudPC|10 |Windows 365 安全基线模板|
 |firewallSharedSettings|11|用于引用设置的防火墙共享对象模板|
+
 
 
 

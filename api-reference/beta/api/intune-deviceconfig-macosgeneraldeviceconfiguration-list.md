@@ -2,15 +2,15 @@
 title: 列出 macOSGeneralDeviceConfigurations
 description: 列出 macOSGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5c774f3fc00f00a74552578c4c5e5a3422dd702
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e0b0ec6440f56b624d9c7f4b5bfd0d55a97c2be1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097647"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336543"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>列出 macOSGeneralDeviceConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5649
+Content-Length: 5726
 
 {
   "value": [
@@ -206,11 +206,14 @@ Content-Length: 5649
       "eraseContentAndSettingsBlocked": true,
       "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
       "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
-      "softwareUpdateNonOSDeferredInstallDelayInDays": 13
+      "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
+      "touchIdTimeoutInHours": 5,
+      "iCloudPrivateRelayBlocked": true
     }
   ]
 }
 ```
+
 
 
 

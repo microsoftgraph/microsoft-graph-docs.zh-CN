@@ -2,15 +2,15 @@
 title: windowsDriverUpdateProfileAssignment 资源类型
 description: 此实体包含用于将 Windows 驱动程序更新配置文件分配给组的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6be1fe99e023e75c35cd6926afd23730684fa825
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f52b955dabdf87230afb939c96da806024aa25e9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029883"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338937"
 ---
 # <a name="windowsdriverupdateprofileassignment-resource-type"></a>windowsDriverUpdateProfileAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59029883"
 
 此实体包含用于将 Windows 驱动程序更新配置文件分配给组的属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsDriverUpdateProfileAssignments](../api/intune-softwareupdate-windowsdriverupdateprofileassignment-list.md)|[windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md) 集合|列出 [windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md) 对象的属性和关系。|
@@ -59,6 +59,7 @@ ms.locfileid: "59029883"
   }
 }
 ```
+
 
 
 

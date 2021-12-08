@@ -2,15 +2,15 @@
 title: 更新 deviceComplianceScriptRunSummary
 description: 更新 deviceComplianceScriptRunSummary 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99770521bf349732fbf8fe3b6b35333fa6abb53e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 196d9e4ad502daf5c17fdb9bb993b06edfe57d43
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108147"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335731"
 ---
 # <a name="update-devicecompliancescriptrunsummary"></a>更新 deviceComplianceScriptRunSummary
 
@@ -27,9 +27,9 @@ ms.locfileid: "59108147"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,10 +54,10 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSu
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备合规性脚本运行摘要实体的密钥。 此属性是只读的。|
-|noIssueDetectedDeviceCount|Int32|检测脚本未发现问题且设备正常运行的设备数量。 有效值 -2147483648 2147483647|
-|issueDetectedDeviceCount|Int32|检测脚本发现问题的设备数量。 有效值 -2147483648 2147483647|
-|detectionScriptErrorDeviceCount|Int32|检测脚本执行遇到错误且未完成的设备数量。 有效值 -2147483648 2147483647|
-|detectionScriptPendingDeviceCount|Int32|尚未运行最新版本的设备合规性脚本的设备数量。 有效值 -2147483648 2147483647|
+|noIssueDetectedDeviceCount|Int32|检测脚本未发现问题且设备正常运行的设备数量。 有效值 -2147483648 to 2147483647|
+|issueDetectedDeviceCount|Int32|检测脚本发现问题的设备数量。 有效值 -2147483648 to 2147483647|
+|detectionScriptErrorDeviceCount|Int32|检测脚本执行遇到错误且未完成的设备数量。 有效值 -2147483648 to 2147483647|
+|detectionScriptPendingDeviceCount|Int32|尚未运行最新版本的设备合规性脚本的设备数量。 有效值 -2147483648 to 2147483647|
 |lastScriptRunDateTime|DateTimeOffset|脚本跨所有设备的上次运行时间|
 
 
@@ -101,6 +101,7 @@ Content-Length: 344
   "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
 }
 ```
+
 
 
 

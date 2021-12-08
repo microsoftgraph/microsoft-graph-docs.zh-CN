@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 7af541c033cebb9409ac1bf61a8470b1c67726a0
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: d4ff6298e6266d24a8b490bcbefc4ea30eea1d3c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322758"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339495"
 ---
 # <a name="update-insightssettings"></a>更新 insightsSettings
 
@@ -65,8 +65,8 @@ PATCH /organization/{organizationId}/settings/peopleInsights
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|布尔值| `true` 如果为组织启用了指定类型的见解;如果为所有用户禁用了指定类型的见解，则 `false` 无例外。 默认值为“`true`”。 可选。|
-|disabledForGroup|String| 组 id，Azure AD组的成员禁用其指定类型的见解。 默认值为“`empty`”。 可选。|
+|isEnabledInOrganization|Boolean| `true` 如果为组织启用了指定类型的见解;如果为所有用户禁用了指定类型的见解，则 `false` 无例外。 默认值为“`true`”。 可选。|
+|disabledForGroup|String| 已禁用Azure AD组（其指定类型的见解）的 ID。 默认值为“`empty`”。 可选。|
 
 >**注意：** 如果将 **disabledForGroup** 属性值包括在请求正文中，则此操作不会验证该值。 如果将 **disabledForGroup** 属性设置为字符串，则此操作不会检查是否存在相应的Azure AD组。 这意味着，如果将 **disabledForGroup** 设置为不存在或随后被删除的 Azure AD 组，则此操作将无法识别任何组成员身份，并禁用对特定用户的项或人员见解。 如果 **isEnabledInOrganization** 设置为 ，则操作将为组织中所有用户启用指定 `true` 类型的见解。  
 ## <a name="response"></a>响应
@@ -81,6 +81,8 @@ PATCH /organization/{organizationId}/settings/peopleInsights
 下面是一个示例请求，显示管理员如何更新 **"disabledForGroup"** 隐私设置，以禁止显示特定用户组中用户Azure AD见解。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_insightssettings_iteminsightrequest"
@@ -94,6 +96,28 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-insightssettings-iteminsightrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-insightssettings-iteminsightrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-insightssettings-iteminsightrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-insightssettings-iteminsightrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-iteminsightrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应
@@ -123,6 +147,8 @@ Content-type: application/json
 下面是一个请求示例，显示管理员如何更新 **"disabledForGroup"** 隐私设置，以禁止显示特定用户组中用户Azure AD见解。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_insightssettings_peopleinsightsrequest"
@@ -136,6 +162,28 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-insightssettings-peopleinsightsrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-insightssettings-peopleinsightsrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-insightssettings-peopleinsightsrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-insightssettings-peopleinsightsrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-peopleinsightsrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

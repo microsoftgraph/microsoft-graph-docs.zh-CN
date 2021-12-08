@@ -2,15 +2,15 @@
 title: deviceManagementReports 资源类型
 description: 用于报告 V2 的 DeviceManagementReports 类
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e3d743244ffd4d54703ff74426008835e62e0e0d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d0cb4dd0c8d2f24aafc597c9f54c50a135a33f9d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039488"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338153"
 ---
 # <a name="devicemanagementreports-resource-type"></a>deviceManagementReports 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59039488"
 
 用于报告 V2 的 DeviceManagementReports 类
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagementReports](../api/intune-remoteassistance-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-remoteassistance-devicemanagementreports.md)|读取 [deviceManagementReports 对象的属性和](../resources/intune-remoteassistance-devicemanagementreports.md) 关系。|
@@ -54,6 +54,7 @@ ms.locfileid: "59039488"
   "id": "String (identifier)"
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: 创建 deviceCustomAttributeShellScript
 description: 创建新的 deviceCustomAttributeShellScript 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ef0df071d08314a018289651cac903936c3bb62
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e0cbcfbb009f6eea2e6830e171f7ec17eef3173a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116680"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338895"
 ---
 # <a name="create-devicecustomattributeshellscript"></a>创建 deviceCustomAttributeShellScript
 
@@ -27,9 +27,9 @@ ms.locfileid: "59116680"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,7 +58,7 @@ POST /deviceManagement/deviceCustomAttributeShellScripts
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|自定义属性的值的预期类型。 可取值为：`integer`、`string`、`dateTime`。|
 |displayName|String|设备管理脚本的名称。|
 |说明|String|设备管理脚本的可选说明。|
-|scriptContent|二进制|脚本内容。|
+|scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
@@ -118,6 +118,7 @@ Content-Length: 585
   ]
 }
 ```
+
 
 
 
