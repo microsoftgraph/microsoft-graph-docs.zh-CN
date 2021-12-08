@@ -1,12 +1,20 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 6c7ed4f818f7ce2e7780dfc37fac66549c53c5f5
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 91a5d7042cbb336be47fd11a0846980bb49a0a0a
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266292"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61323843"
 ---
+### <a name="administrative-unit-properties"></a>管理单元属性
+
+| 属性名 | eq | startsWith | ge | le | Null 值 |
+|--|--|--|--|--|--|
+| 说明 | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |  |  | ![不支持][NS] |
+| displayName | ![默认支持][RDS] | ![默认支持][RDS] |  |  | ![需要高级查询参数。][AQP] |
+
+
 ### <a name="application-properties"></a>应用程序属性
 
 | 属性名                                 | eq                                         | startsWith                                 | ge                                         | le                                         | Null 值                                 |
