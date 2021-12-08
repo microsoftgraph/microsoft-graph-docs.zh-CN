@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsAppHealthDevicePerformance 资源类型
 description: 用户体验分析设备性能实体包含设备性能详细信息。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b57c6ca01d897b19d4bff06d2f6e92a13b47e7ff
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 97cf26e0c9885745be63a3221bb7b9fd9508c6db
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59086272"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347331"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformance-resource-type"></a>userExperienceAnalyticsAppHealthDevicePerformance 资源类型
 
@@ -37,13 +37,14 @@ ms.locfileid: "59086272"
 |id|String|用户体验分析设备性能对象的唯一标识符。|
 |deviceModel|String|设备的型号名称。|
 |deviceManufacturer|String|设备的制造商名称。|
-|appCrashCount|Int32|设备的应用崩溃数。 有效值 -2147483648 2147483647|
-|crashedAppCount|Int32|设备不同应用崩溃的数量。 有效值 -2147483648 2147483647|
-|appHangCount|Int32|设备的应用挂起数。 有效值 -2147483648 2147483647|
+|appCrashCount|Int32|设备的应用崩溃数。 有效值 -2147483648 to 2147483647|
+|crashedAppCount|Int32|设备不同应用崩溃的数量。 有效值 -2147483648 to 2147483647|
+|appHangCount|Int32|设备的应用挂起数。 有效值 -2147483648 to 2147483647|
 |processedDateTime|DateTimeOffset|上次计算统计信息的日期和时间。|
-|meanTimeToFailureInMinutes|Int32|设备失败平均时间（分钟）。 有效值 -2147483648 2147483647|
+|meanTimeToFailureInMinutes|Int32|设备失败平均时间（分钟）。 有效值 -2147483648 to 2147483647|
 |deviceAppHealthScore|双精度|设备的应用运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |deviceAppHealthStatus|String|设备的整体应用运行状况状态。|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析设备的运行状况。 可能的值是：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 |deviceId|String|设备的 ID。|
 |deviceDisplayName|String|设备的名称。|
 
@@ -71,10 +72,12 @@ ms.locfileid: "59086272"
   "meanTimeToFailureInMinutes": 1024,
   "deviceAppHealthScore": "4.2",
   "deviceAppHealthStatus": "String",
+  "healthStatus": "String",
   "deviceId": "String",
   "deviceDisplayName": "String"
 }
 ```
+
 
 
 

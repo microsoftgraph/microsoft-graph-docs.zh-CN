@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe61d375d87cf24ed21e0a2024b66d6bc1271acb
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 76d91966bc9511f837d8c72f127ea682030d5681
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489414"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345105"
 ---
 # <a name="get-androidforworkmobileappconfiguration"></a>获取 androidForWorkMobileAppConfiguration
 
@@ -99,6 +99,7 @@ Content-Length: 881
   }
 }
 ```
+
 
 
 

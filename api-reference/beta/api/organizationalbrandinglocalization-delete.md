@@ -5,19 +5,19 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 429e05a064a71e68823e3f0ede2c641ef5e2c6c7
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 3e5a66e820022c57980656ca418463b529fa2d9c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995551"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343768"
 ---
 # <a name="delete-organizationalbrandinglocalization"></a>删除 organizationalBrandingLocalization
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除本地化的品牌对象。 若要删除 [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象， (Stream 类型) 必须先从该对象中删除。
+删除本地化的品牌对象。 若要删除 [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象，必须先从 (类型) Stream 类型的所有图像。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -63,7 +63,7 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
   "name": "delete_organizationalbrandinglocalization"
 }-->
 
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
 # <a name="c"></a>[C#](#tab/csharp)

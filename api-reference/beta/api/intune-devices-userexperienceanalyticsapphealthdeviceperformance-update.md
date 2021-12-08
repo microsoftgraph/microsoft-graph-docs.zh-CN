@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsAppHealthDevicePerformance
 description: 更新 userExperienceAnalyticsAppHealthDevicePerformance 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efbbcfd93d77b8facd76f1238e8255f3839ebc2f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9b502d1432225b670613aa9b9d2d86dcd36f0a26
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034573"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347653"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformance"></a>更新 userExperienceAnalyticsAppHealthDevicePerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "59034573"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,13 +56,14 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance/{userE
 |id|String|用户体验分析设备性能对象的唯一标识符。|
 |deviceModel|String|设备的型号名称。|
 |deviceManufacturer|String|设备的制造商名称。|
-|appCrashCount|Int32|设备的应用崩溃数。 有效值 -2147483648 2147483647|
-|crashedAppCount|Int32|设备不同应用崩溃的数量。 有效值 -2147483648 2147483647|
-|appHangCount|Int32|设备的应用挂起数。 有效值 -2147483648 2147483647|
+|appCrashCount|Int32|设备的应用崩溃数。 有效值 -2147483648 to 2147483647|
+|crashedAppCount|Int32|设备不同应用崩溃的数量。 有效值 -2147483648 to 2147483647|
+|appHangCount|Int32|设备的应用挂起数。 有效值 -2147483648 to 2147483647|
 |processedDateTime|DateTimeOffset|上次计算统计信息的日期和时间。|
-|meanTimeToFailureInMinutes|Int32|设备失败平均时间（分钟）。 有效值 -2147483648 2147483647|
+|meanTimeToFailureInMinutes|Int32|设备失败平均时间（分钟）。 有效值 -2147483648 to 2147483647|
 |deviceAppHealthScore|双精度|设备的应用运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |deviceAppHealthStatus|String|设备的整体应用运行状况状态。|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析设备的运行状况。 可能的值是：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 |deviceId|String|设备的 ID。|
 |deviceDisplayName|String|设备的名称。|
 
@@ -78,7 +79,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance/{userE
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance/{userExperienceAnalyticsAppHealthDevicePerformanceId}
 Content-type: application/json
-Content-length: 551
+Content-length: 590
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformance",
@@ -91,6 +92,7 @@ Content-length: 551
   "meanTimeToFailureInMinutes": 10,
   "deviceAppHealthScore": 6.666666666666667,
   "deviceAppHealthStatus": "Device App Health Status value",
+  "healthStatus": "insufficientData",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
@@ -101,7 +103,7 @@ Content-length: 551
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 600
+Content-Length: 639
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformance",
@@ -115,10 +117,12 @@ Content-Length: 600
   "meanTimeToFailureInMinutes": 10,
   "deviceAppHealthScore": 6.666666666666667,
   "deviceAppHealthStatus": "Device App Health Status value",
+  "healthStatus": "insufficientData",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
 ```
+
 
 
 

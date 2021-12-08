@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 115d937d52e377d88236523395219ed321b7f5f6
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 264571051538317ad8cc32862ad87488401616a7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688918"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344944"
 ---
 # <a name="requestupgrade-action"></a>requestUpgrade 操作
 
@@ -65,6 +65,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{mic
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

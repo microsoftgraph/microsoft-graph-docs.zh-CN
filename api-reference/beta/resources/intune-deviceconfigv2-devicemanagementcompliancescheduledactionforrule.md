@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed7521f62566cb25a74ba3d4bacd46573edc8d79
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 8b5f5d652119f7a47e7543c82840d259174c3e59
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697248"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342802"
 ---
 # <a name="devicemanagementcompliancescheduledactionforrule-resource-type"></a>deviceManagementComplianceScheduledActionForRule 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "60697248"
 
 计划的规则操作
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementComplianceScheduledActionForRules](../api/intune-deviceconfigv2-devicemanagementcompliancescheduledactionforrule-list.md)|[deviceManagementComplianceScheduledActionForRule](../resources/intune-deviceconfigv2-devicemanagementcompliancescheduledactionforrule.md) 集合|列出 [deviceManagementComplianceScheduledActionForRule](../resources/intune-deviceconfigv2-devicemanagementcompliancescheduledactionforrule.md) 对象的属性和关系。|
@@ -57,6 +57,7 @@ ms.locfileid: "60697248"
   "ruleName": "String"
 }
 ```
+
 
 
 

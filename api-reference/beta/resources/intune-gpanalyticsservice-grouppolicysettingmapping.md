@@ -2,15 +2,15 @@
 title: groupPolicySettingMapping 资源类型
 description: 到 MDM/Intune 映射的组策略设置。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90cacd1f89b75f1c6cf60fe64e9c9c141664423f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4288968bd096a14d8bdbdfea3f25dcaa1409a9e1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063900"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346792"
 ---
 # <a name="grouppolicysettingmapping-resource-type"></a>groupPolicySettingMapping 资源类型
 
@@ -48,9 +48,9 @@ ms.locfileid: "59063900"
 |mdmCspName|String|此组策略设置映射到的云解决方案提供商名称。|
 |mdmSettingUri|String|此组策略设置映射到的 MDM CSP URI。|
 |mdmMinimumOSVersion|Int32|此 mdm 设置支持的最低操作系统版本。|
-|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|设置类型 (安全或 admx) 组策略的一部分。 可取值为：`unknown`、`policy`、`account`、`securityOptions`、`userRightsAssignment`、`auditSetting` 或 `windowsFirewallSettings`。|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|设置类型 (策略的安全性) admx。 可能的值是 `unknown` `policy` `account` ：、、、、、、、、 `securityOptions` `userRightsAssignment` `auditSetting` `windowsFirewallSettings` `appLockerRuleCollection` `dataSourcesSettings` `devicesSettings` `driveMapSettings` `environmentVariables` `filesSettings` `folderOptions` `folders` `iniFiles` `internetOptions` `localUsersAndGroups` `networkOptions` `networkShares` `ntServices` `powerOptions` `printers` `regionalOptionsSettings` `registrySettings` `scheduledTasks` `shortcutSettings` `startMenuSettings` 。|
 |isMdmSupported|Boolean|指示 Intune 是否支持该设置|
-|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|指示设置在 Mdm 中是否受支持。 可取值为：`unknown`、`supported`、`unsupported`、`deprecated`。|
+|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|指示设置在 Mdm 中是否受支持。 可能的值是：`unknown`、`supported`、`unsupported`、`deprecated`。|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置的范围。 可取值为：`unknown`、`device`、`user`。|
 |intuneSettingUriList|String collection|此组策略设置映射到的 Intune 设置 URI 列表|
 |intuneSettingDefinitionId|String|Intune 设置定义 ID|
@@ -97,6 +97,7 @@ ms.locfileid: "59063900"
   "admxSettingDefinitionId": "String"
 }
 ```
+
 
 
 

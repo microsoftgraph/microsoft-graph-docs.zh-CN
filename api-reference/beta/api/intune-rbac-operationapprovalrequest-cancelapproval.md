@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b17c6c41a960db8ae93eb76b799269f790947fb
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 1f5df21235330ffb32789312abbfb6e8fbb4d8ea
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688694"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347415"
 ---
 # <a name="cancelapproval-action"></a>cancelApproval 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "60688694"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementRBAC.Read.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementRBAC.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.Read.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,6 +86,7 @@ Content-Length: 40
   "value": "Cancel Approval value"
 }
 ```
+
 
 
 

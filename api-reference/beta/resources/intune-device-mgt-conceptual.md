@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune中的设备管理 - Microsoft Graph API
-description: 列出定义Graph组织的设备的适用于 Intune (的 Microsoft) REST 终结点 API。
+description: 列出定义Graph组织的设备的 Microsoft (REST) Intune 终结点 API。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 33592ed42a2147cb2b8ba861bf96cae88a334f05
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 314e4fd73b9495946aa2c056f307463c741f8bb0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696782"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342942"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -192,7 +192,6 @@ ms.locfileid: "60696782"
 - [撤销 Apple VPP 许可证操作结果](intune-devices-revokeapplevpplicensesactionresult.md)
 - [角色范围标记信息](intune-auditing-rolescopetaginfo.md)
 - [旋转 BitLocker 密钥设备操作结果](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
-- [运行状态](intune-devices-runstate.md)
 - [安全基线类别状态摘要](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [安全基线合规性状态](intune-deviceintent-securitybaselinecompliancestate.md)
 - [安全基线参与策略](intune-deviceintent-securitybaselinecontributingpolicy.md)

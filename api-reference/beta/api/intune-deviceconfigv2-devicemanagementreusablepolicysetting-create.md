@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 795b300d5443cbd82e9c71c25af622e3af236f04
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 39ec64938f3a74c0e1b98bc63c84bcb8997a3357
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489203"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343551"
 ---
 # <a name="create-devicemanagementreusablepolicysetting"></a>创建 deviceManagementReusablePolicySetting
 
@@ -55,7 +55,7 @@ POST /deviceManagement/reusablePolicySettings
 |:---|:---|:---|
 |id|String|系统生成的可重用设置 ID。|
 |displayName|String|由显示名称的可重用设置。|
-|说明|String|由用户提供的可重用设置说明。|
+|description|String|由用户提供的可重用设置说明。|
 |settingDefinitionId|String|与此可重用设置关联的设置定义 ID。|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|可重用的设置配置实例|
 |createdDateTime|DateTimeOffset|可重用设置创建日期和时间。 此属性是只读的。|
@@ -536,6 +536,7 @@ Content-Length: 16500
   "referencingConfigurationPolicyCount": 3
 }
 ```
+
 
 
 

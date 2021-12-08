@@ -2,15 +2,15 @@
 title: triggerConfigurationManagerAction 操作
 description: 在 ConfigurationManager 客户端上触发操作
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 41a608e02a27ebb731a3572f7f9e4adf6eb62048
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fe60d627173ff223f339bb2a2507e5d5b495d5c0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054938"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344573"
 ---
 # <a name="triggerconfigurationmanageraction-action"></a>triggerConfigurationManagerAction 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "59054938"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.PriviligedOperation.All|
+|应用程序|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -89,6 +89,7 @@ Content-length: 145
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

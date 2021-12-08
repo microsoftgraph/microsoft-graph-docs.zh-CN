@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f64149c214716a6cc1a984dcb5c764cd6d7de782
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d45f13e36bf5316ad8f0d22a4cfe027873246fb8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489140"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344685"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>获取 mobileThreatDefenseConnector
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnect
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 884
+Content-Length: 950
 
 {
   "value": {
@@ -89,10 +89,12 @@ Content-Length: 884
     "partnerUnsupportedOsVersionBlocked": true,
     "partnerUnresponsivenessThresholdInDays": 6,
     "allowPartnerToCollectIOSApplicationMetadata": true,
+    "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
     "microsoftDefenderForEndpointAttachEnabled": true
   }
 }
 ```
+
 
 
 

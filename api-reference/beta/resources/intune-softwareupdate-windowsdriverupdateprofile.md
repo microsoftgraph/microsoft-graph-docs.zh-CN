@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8c50188b941c7196e3f2771c64dbffb51efe7de
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 9f8e29d336a0b04af4e4e5f045c6541e592e6981
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488603"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346974"
 ---
 # <a name="windowsdriverupdateprofile-resource-type"></a>windowsDriverUpdateProfile 资源类型
 
@@ -28,7 +28,7 @@ Windows驱动程序更新配置文件
 |[列出 windowsDriverUpdateProfiles](../api/intune-softwareupdate-windowsdriverupdateprofile-list.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 集合|列出 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 对象的属性和关系。|
 |[获取 windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-get.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|读取 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 对象的属性和关系。|
 |[创建 windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-create.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|创建新的 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 对象。|
-|[删除 windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-delete.md)|无|删除 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)。|
+|[删除 windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-delete.md)|None|删除 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)。|
 |[更新 windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-update.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|更新 [windowsDriverUpdateProfile 对象](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 的属性。|
 |[分配操作](../api/intune-softwareupdate-windowsdriverupdateprofile-assign.md)|无|尚未记录|
 |[executeAction 操作](../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md)|[bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md)|尚未记录|
@@ -38,14 +38,14 @@ Windows驱动程序更新配置文件
 |:---|:---|:---|
 |id|String|Intune 策略 ID。|
 |displayName|String|配置文件显示名称的配置文件。|
-|说明|String|由用户指定的配置文件的说明。|
+|description|String|由用户指定的配置文件的说明。|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|驱动程序更新配置文件审批类型。 例如，手动或自动审批。 可取值为：`manual`、`automatic`。|
 |deviceReporting|Int32|此配置文件的报告设备数|
 |newUpdates|Int32|可用于此配置文件的新驱动程序更新数。|
 |deploymentDeferralInDays|Int32|部署延迟设置（以天表示）仅在 ApprovalType 设置为自动审批时适用。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String 集合|此驱动程序更新实体的范围标记列表。|
+|roleScopeTagIds|字符串集合|此驱动程序更新实体的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -78,6 +78,7 @@ Windows驱动程序更新配置文件
   ]
 }
 ```
+
 
 
 

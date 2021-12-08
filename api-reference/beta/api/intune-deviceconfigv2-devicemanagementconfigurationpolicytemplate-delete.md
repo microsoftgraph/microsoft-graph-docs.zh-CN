@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2e9e1ed750c8d699e0d84f2a3bbdd7636d811b8
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 7072ed0817916fe1d3427767b6ccdcbb1217e72b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492875"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342788"
 ---
 # <a name="delete-devicemanagementconfigurationpolicytemplate"></a>删除 deviceManagementConfigurationPolicyTemplate
 
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/configurationPolicyTemp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

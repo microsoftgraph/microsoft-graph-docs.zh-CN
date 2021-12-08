@@ -2,15 +2,15 @@
 title: 列出 iosGeneralDeviceConfigurations
 description: 列出 iosGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4aeedb28098ea4cc6ed31b48a8ca8bb14b62dc6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5105b6329f1d5878de9b4114afeabd27390653f1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028371"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343054"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>列出 iosGeneralDeviceConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 12308
+Content-Length: 12350
 
 {
   "value": [
@@ -369,11 +369,13 @@ Content-Length: 12308
       "wiFiConnectToAllowedNetworksOnlyForced": true,
       "onDeviceOnlyTranslationForced": true,
       "managedPasteboardRequired": true,
+      "iCloudPrivateRelayBlocked": true,
       "kioskModeAppType": "appStoreApp"
     }
   ]
 }
 ```
+
 
 
 

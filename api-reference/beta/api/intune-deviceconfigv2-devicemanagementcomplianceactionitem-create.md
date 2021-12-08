@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82a362cb22f3d4b23cf78d0e748f49510b4df25f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c658d65185ee6e7916f5b12f7c3f82b71901be5a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688255"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346498"
 ---
 # <a name="create-devicemanagementcomplianceactionitem"></a>创建 deviceManagementComplianceActionItem
 
@@ -102,6 +102,7 @@ Content-Length: 330
   ]
 }
 ```
+
 
 
 
