@@ -2,15 +2,15 @@
 title: educationCategory 资源类型
 description: 可应用于工作分配的类别。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 18ddcd32a2ab4a8d44505adbc92445a0feeae8b6
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 15c6427062f09493168f0f94cca3060bc3f631de
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911317"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390883"
 ---
 # <a name="educationcategory-resource-type"></a>educationCategory 资源类型
 
@@ -28,12 +28,13 @@ ms.locfileid: "52911317"
 |[Create category](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | 创建新的 **educationCategory**。|
 |[获取 educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | 获取现有的 **educationCategory**。|
 |[删除类别](../api/educationcategory-delete.md) | 无 | 删除 **educationCategory**。|
+|[获取增量](../api/educationcategory-delta.md)|[educationCategory](../resources/educationcategory.md) 集合|使用 delta 查询支持获取 **属于此类的 educationCategory** 对象列表。|
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String|类别的唯一标识符。|
+|id|字符串|类别的唯一标识符。|
 |displayName|String|类别的唯一标识符。|
 
 ## <a name="json-representation"></a>JSON 表示形式

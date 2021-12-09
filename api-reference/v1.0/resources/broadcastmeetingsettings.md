@@ -1,41 +1,41 @@
 ---
 title: broadcastMeetingSettings 资源类型
-description: 设置实时事件相关的事件
+description: 表示与活动实时事件相关的Microsoft Teams。
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0a78c4665c42bf11c983bbf24aa72a93cdff323a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 12176ab16bc842dc98a738e6b949ec06b661974d
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59031711"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391002"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>broadcastMeetingSettings 资源类型
 
 命名空间：microsoft.graph
 
-设置实时事件相关。
+表示与活动实时[事件相关的](/microsoftteams/teams-live-events/what-are-teams-live-events)Microsoft Teams。
 
 ## <a name="properties"></a>属性
 
 | 属性                   | 类型                                                         | 说明                                                                                 |
 |----------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | 定义可加入实时事件的人。 下表列出了可能的值。     |
-| isRecordingEnabled         | Boolean                                                      | 指示是否为此实时事件启用录制。 默认值为 `false`。       |
-| isAttendeeReportEnabled    | 布尔值                                                      | 指示是否为此实时事件启用与会者报告。 默认值为 `false`。 |
-| isQuestionAndAnswerEnabled | 布尔值                                                      | 指示是否为此&事件启用了问答。 默认值为 `false`。             |
-| isVideoOnDemandEnabled     | Boolean                                                      | 指示是否为此实时事件启用视频按需。 默认值为 `false`。 |
+| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | 定义谁可以加入Teams活动。 下表列出了可能的值。     |
+| isRecordingEnabled         | Boolean                                                      | 指示是否为此实时事件Teams录制。 默认值为 `false`。       |
+| isAttendeeReportEnabled    | Boolean                                                      | 指示是否为此活动启用了参与者Teams活动。 默认值为 `false`。 |
+| isQuestionAndAnswerEnabled | Boolean                                                      | 指示是否为此&事件启用了 Q Teams A。 默认值为 `false`。             |
+| isVideoOnDemandEnabled     | Boolean                                                      | 指示是否为此实时事件启用Teams视频。 默认值为 `false`。 |
 
 ### <a name="broadcastmeetingaudience-values"></a>broadcastMeetingAudience 值
 
 | 值              | 说明                                                       |
-|--------------------|-------------------------------------------------------------------|
-| everyone           | 实时事件将向任何人开放。 此值为默认值。 |
-| 组织       | 组织中的每个人都可以加入实时事件。                     |
-| roleIsAttendee     | 只有指定的人员才能加入实时事件。                |
-| unknownFutureValue | 可发展枚举 sentinel 值。 请勿使用。                 |
+| ------------------ | ----------------------------------------------------------------- |
+| everyone           | 此Teams事件将向任何人开放。 此值为默认值。 |
+| 组织       | 组织中的每个人都可以加入此Teams活动。                     |
+| roleIsAttendee     | 只有指定的人员才能加入此Teams活动。                |
+| unknownFutureValue | 可发展枚举 sentinel 值。 请勿使用。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

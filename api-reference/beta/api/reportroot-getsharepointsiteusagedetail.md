@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getSharePointSiteUsageDetail'
 description: 获取 SharePoint 网站使用情况的详细信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 7274d0b8425115afcfa7a7a18fd2ea2044e01e48
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e1cefa554ce07a403d2cecc3a1a59387d4ddfe54
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804587"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390995"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -56,7 +56,7 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 
 此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
@@ -98,7 +98,7 @@ CSV 文件包含下面的列标题：
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` **[sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md)** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
 
 此请求的默认页面大小为 200 个项目。
 
@@ -178,7 +178,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sharePointSiteUsageDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -187,7 +187,6 @@ Content-Type: application/json
 Content-Length: 484
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.sharePointSiteUsageDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

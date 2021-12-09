@@ -1,16 +1,16 @@
 ---
 title: presence： clearPresence
 description: 清除用户的应用程序状态会话状态信息。
-author: jsandoval-msft
+author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: af98bf701603acac022a0944c01937c2f0979641
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: af78f3718c45861b82428c6733c1dc8e7468bfc0
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60997357"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390876"
 ---
 # <a name="presence-clearpresence"></a>presence： clearPresence
 
@@ -18,16 +18,16 @@ ms.locfileid: "60997357"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-清除用户的应用程序状态会话。 如果它是用户的唯一状态会话，则用户状态将更改为 `Offline/Offline` 。
+清除 [用户的应用程序](presence-setpresence.md#presence-sessions) 状态会话。 如果它是用户的唯一状态会话，则成功的 **clearPresence** 将用户状态更改为 `Offline/Offline` 。
 
-有关状态会话的详细信息，请参阅 [状态：setPresence](presence-setpresence.md#presence-sessions)。
+阅读有关 [状态会话](presence-setpresence.md#presence-sessions) 及其 [过期和过期状态会话的更多信息](presence-setpresence.md#timeout-expiration-and-keep-alive)。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 调用 API 需要以下权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | 不支持。                              |
+| 委派（工作或学校帐户）     | Presence.ReadWrite                          |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | Presence.ReadWrite.All                      |
 
@@ -97,7 +97,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/clear--presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/clear--presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

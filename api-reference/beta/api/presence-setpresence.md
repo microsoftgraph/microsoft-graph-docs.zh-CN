@@ -1,16 +1,16 @@
 ---
 title: presence： setPresence
 description: 设置用户的应用程序状态会话状态信息。
-author: jsandoval-msft
+author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f70207e151a1ffeff48dacf4c06d854a5f6ffc0f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f3a62e802d8ade524669aa68a0d6fb13ea717cc7
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989678"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391072"
 ---
 # <a name="presence-setpresence"></a>presence： setPresence
 
@@ -18,16 +18,16 @@ ms.locfileid: "60989678"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将用户的状态设置为应用程序状态。
+为用户设置应用程序状态会话中的可用性和活动状态。
 
 ### <a name="presence-sessions"></a>状态会话
 用户可以具有多个状态会话，因为用户可以在桌面、移动和 web Teams多个 (客户端) 。 每个Teams客户端都有一个独立的状态会话，并且用户的状态是来自所有隐藏会话的聚合状态。
 
 同样，应用程序可以具有其自己的用户状态会话，并能够更新状态。
 
-以下是会话状态聚合方式的优先级：
-* 用户配置>应用配置 (用户配置的状态会覆盖其他) 
-* 在应用配置中：当前不支持 (状态设置状态") >忙碌>">离开"
+以下是会话状态聚合方式的优先级，"A > B"表示 A 优先于 B：
+* 用户首选状态>会话级别状态 (用户首选状态覆盖会话级别状态) 
+* 在会话级别状态中：当前不支持 **setPresence** (Busy) > Available > DoNotDisturb >离开
 
 ### <a name="timeout-expiration-and-keep-alive"></a>超时、到期并保持活动状态
 状态会话 **可能会超时并** 过期，因此应用程序需要在超时之前调用此 API，以维护会话的状态;或过期 **之前，** 使会话保持活动状态。
@@ -41,7 +41,7 @@ ms.locfileid: "60989678"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | 不支持。                              |
+| 委派（工作或学校帐户）     | Presence.ReadWrite                          |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | Presence.ReadWrite.All                      |
 
@@ -122,7 +122,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/set-presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/set-presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

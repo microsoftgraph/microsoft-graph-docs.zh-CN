@@ -3,12 +3,12 @@ title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
-ms.openlocfilehash: a6c3ecbcb5cbb48d76c678c2496349e562721b8d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 9ee8d310017162035b8af5ea40c21f35e80d03a5
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226902"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390709"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -58,7 +58,7 @@ ms.locfileid: "61226902"
 >
 >
 > * 如果你正在一个Microsoft 365 GCC环境中工作，请继续使用全球终结点： `https://graph.microsoft.com` 和 `https://portal.azure.com` 。
-> * 如果你在高Microsoft 365 GCC工作，请使用： `https://portal.azure.us` 和 `https://graph.microsoft.us` 。
+> * 如果你正在高Microsoft 365 GCC，请使用： `https://portal.azure.us` 和 `https://graph.microsoft.us` 。
 > * 如果你在 DoD 环境中Microsoft 365，请使用 `https://portal.azure.us` `https://dod-graph.microsoft.us` 和 。
 >
 >
@@ -86,7 +86,7 @@ ms.locfileid: "61226902"
 | Outlook 邮件 | ✔ | ✔ | ✔ |
 | 个人联系人 | ✔ | ✔ | ✔ |
 | Planner | ✔ | ✔ | ✔ |
-| 报表 | ➖ | ✔ | ➖ |
+| 报告 | ➖ | ➖ | ➖ |
 | 搜索 (Microsoft 搜索)  | ➖ | ➖ | ➖ |
 | 安全性 | ✔ | ✔ | ✔ |
 | 服务运行状况和通信 | ✔ | ✔ | ✔ |
@@ -95,13 +95,13 @@ ms.locfileid: "61226902"
 | Teams | ✔ | ✔ | ✔ |
 | 用户 | ✔ | ✔ | ✔ |
 
-以下 Microsoft Graph 功能在 Microsoft Cloud China 和 `/beta` Microsoft Cloud Germany (V1.0 终结点上的) 终结点上的预览版 (中提供，这些功能仅在 Microsoft Cloud for US Government) ：
+以下 Microsoft Graph 功能在 Microsoft 云中国终结点)  (和 Microsoft 云德国 (V1.0 终结点上的预览版 (中提供，这些功能仅在 `/beta` Microsoft Cloud for US Government) ：
 
 * 组织联系人
 * 应用程序
 * 服务主体
 
-\* () 仅对 Exchange 和 OneDrive 服务提供有限支持。 Azure AD服务不受支持。
+\* () 仅对 Exchange 和 OneDrive 服务提供有限支持。 Azure AD不支持其他服务。
 
 > [!IMPORTANT]
 > 全局服务的特定区域的某些服务和功能可能无法在所有区域云中提供。 若要了解哪些服务可用，请参阅按 [地区提供的产品](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)。
@@ -116,8 +116,8 @@ ms.locfileid: "61226902"
 * [Azure China 21Vianet](/azure/china/)
 * [Azure Germany](/azure/germany/)
 
-探索用于国家云部署中的 Azure 和 Microsoft 365进行身份验证和运行的示例：
+探索国家云部署中的 Azure 和 Microsoft 365身份验证和操作示例：
 
 * [通过美国政府 Microsoft Graph Azure 合作](https://github.com/SteveWinward/Azure-Samples/blob/master/AAD/SampleAadToken_AzureForGovernment.ps1)
-* [连接 Microsoft Graph PowerShell (GCC、GCC High 和 GCC DoD) 美国政府 O365 环境](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
+* [连接 Microsoft (GCC PowerShell (GCC、GCC High GCC DoD) 美国政府 O365 Graph环境](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
 

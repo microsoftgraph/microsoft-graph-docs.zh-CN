@@ -396,7 +396,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '预览版 (项) '
+                  - name: '项目见解 (预览) '
                     href: resources/iteminsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -414,7 +414,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置见解
+                  - name: 设置人员见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -537,7 +537,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言和区域 () '
+          - name: '预览版的首选语言 (区域) '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -597,7 +597,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -1095,7 +1095,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: 列出 transitive memberOf
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: 检查成员组
                     href: api/directoryobject-checkmembergroups.md
@@ -1611,6 +1611,10 @@ items:
                 href: api/presence-setpresence.md
               - name: 清除状态
                 href: api/presence-clearpresence.md
+              - name: 设置用户首选状态
+                href: api/presence-setuserpreferredpresence.md
+              - name: 清除用户首选状态
+                href: api/presence-clearuserpreferredpresence.md
       - name: 合规性
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
@@ -2035,7 +2039,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -6755,7 +6759,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows防篡改保护选项
+                  - name: Windows Defender 防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -8144,7 +8148,7 @@ items:
                         href: api/intune-deviceintent-securitybaselinetemplate-update.md
                   - name: 共享 Apple 设备用户
                     href: resources/intune-devices-sharedappledeviceuser.md
-                  - name: Tuple_2操作type_collection_1执行顺序
+                  - name: Tuple_2操作type_collection_1的执行顺序
                     href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                   - name: 更新 Windows 设备帐户操作参数
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
@@ -9934,6 +9938,12 @@ items:
                     href: api/cloudpc-reprovision.md
                   - name: 结束宽限期
                     href: api/cloudpc-endgraceperiod.md
+                  - name: 重新启动
+                    href: api/cloudpc-reboot.md
+                  - name: 重命名
+                    href: api/cloudpc-rename.md
+                  - name: 排除故障
+                    href: api/cloudpc-troubleshoot.md
                   - name: 重新设置远程操作
                     href: api/manageddevice-reprovisioncloudpc.md
                   - name: 批量重新设置远程操作
@@ -10456,6 +10466,8 @@ items:
                 href: api/educationassignment-put-rubric.md
               - name: 删除工作分配中的分项
                 href: api/educationassignment-delete-rubric.md
+              - name: 获取 Delta
+                href: api/educationassignment-delta.md
           - name: 工作分配设置
             href: resources/educationassignmentsettings.md
             items:
@@ -10479,6 +10491,8 @@ items:
                 href: api/educationcategory-get.md
               - name: 删除类别
                 href: api/educationcategory-delete.md
+              - name: 获取 Delta
+                href: api/educationcategory-delta.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
@@ -11409,7 +11423,7 @@ items:
                         href: api/softwareOathAuthenticationMethod-get.md
                       - name: 删除
                         href: api/softwareOathAuthenticationMethod-delete.md
-                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃用) '
+                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃) '
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: 列表
@@ -12033,7 +12047,7 @@ items:
                     href: api/trustframeworkpolicy-delete.md
               - name: 用户流
                 items:
-                  - name: '用户流 (弃) '
+                  - name: '用户流 (弃用) '
                     items:
                       - name: 用户流
                         href: resources/identityuserflow.md
@@ -12206,7 +12220,7 @@ items:
                         href: api/accessreviewinstance-get.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstance-filterbycurrentuser.md
-                      - name: '列出已弃 (审批) '
+                      - name: '列出已 (审批) '
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
                       - name: 发送提醒
                         href: api/accessreviewinstance-sendreminder.md
@@ -12231,7 +12245,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-get.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                      - name: '列出已弃 (审批) '
+                      - name: '列出已 (审批) '
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
@@ -12253,7 +12267,7 @@ items:
                         href: api/accessreviewhistorydefinition-post.md
                       - name: 生成下载 URI
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
-              - name: '已弃 (的访问) '
+              - name: '已弃 (访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -13466,7 +13480,7 @@ items:
                     items:
                       - name: 获取通过身份验证方法注册的用户
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
-          - name: Microsoft 365使用率报告
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -13820,7 +13834,7 @@ items:
                     href: api/usersimulationdetails-list.md
                   - name: 获取模拟概述
                     href: api/simulationreportoverview-get.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -14070,7 +14084,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -14535,7 +14549,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
@@ -14842,7 +14856,7 @@ items:
                 href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
-              - name: 'Outlook (任务) '
+              - name: 'Outlook任务 (已弃) '
                 items:
                   - name: Outlook 任务
                     href: resources/outlooktask.md

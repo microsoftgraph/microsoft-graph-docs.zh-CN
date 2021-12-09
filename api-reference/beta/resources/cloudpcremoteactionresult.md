@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: ffbbae3fb66d396706391638e65acef1e8d7960f
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 377d2499857764d82c73620c16ee77f33ea33c26
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763672"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391009"
 ---
 # <a name="cloudpcremoteactionresult-resource-type"></a>cloudPcRemoteActionResult 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "59763672"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|actionName|String|指定的操作。 支持的值 `Reprovision` `Resize` ：、。|
+|actionName|String|指定的操作。 网站门户中Microsoft Endpoint Manager的值是 `Reprovision` `Resize` ：、。 企业云电脑设备中支持的值包括 `Rename` `Reboot` `Reprovision` ：、、、。 `Troubleshoot`|
 |actionState|[actionState](#actionstate-values)|操作的状态。 可能的值是：`None`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。 只读。|
 |cloudPcId|String|执行远程操作云电脑设备的 ID。 只读。|
 |managedDeviceId|String|执行远程操作 Intune 托管设备的 ID。 只读。|
