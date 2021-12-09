@@ -4,12 +4,12 @@ description: 介绍可与 Microsoft Graph 数据连接结合使用的受支持�
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 8e0aeffc6529737dbd89f759e8a9261d9989cad7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ac242bf99707916e23f2cccfaba8a05cd62749d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139175"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336599"
 ---
 # <a name="datasets-regions-and-sinks-supported-by-microsoft-graph-data-connect"></a>Microsoft Graph Data Connect 支持的数据集、区域和接收器
 
@@ -27,6 +27,7 @@ Microsoft Graph 数据连接支持 Microsoft Azure 中的各种数据集、数�
 | BasicDataSet_v0.DirectReport_v0    | 包含直接向每个用户报告的员工的相关用户信息。   | [DirectReport_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.DirectReport_v0.json)      | [架构](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/DirectReport_v0.md) |
 | BasicDataSet_v0.Event_v0           | 包含用户的日历事件中的信息。                            | [Event_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v0.json)                    | [架构](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Event_v0.md) |
 | BasicDataSet_v0.Event_v1           | 包含每个用户的日历中的事件。                                       | [Event_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v1.json)                    | [架构](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Event_v1.md) |
+| BasicDataSet_v0.Inbox_v1      | 包含每个用户的收件箱中的邮件文件夹。                                | [Inbox_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Inbox_v1.json)          | [架构](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Inbox_v1.md) |
 | BasicDataSet_v0.MailboxSettings_v0 | 包含每个用户的邮箱设置。                                        | [MailboxSetting_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailboxSettings_v0.json) | [架构](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/MailboxSettings_v0.md) |
 | BasicDataSet_v0.MailFolder_v0      | 包含每个用户的邮箱中的邮件文件夹。                                | [MailFolder_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailFolder_v0.json)          | [架构](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/MailFolder_v0.md) |
 | BasicDataSet_v0.Manager_v0         | 包含每个用户的经理的用户信息。                            | [Manager_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Manager_v0.json)                | [架构](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Manager_v0.md) |
@@ -37,6 +38,7 @@ Microsoft Graph 数据连接支持 Microsoft Azure 中的各种数据集、数�
 | BasicDataSet_v0.TeamChat_v1        | 包含一对一和群组聊天消息的 [Teams 聊天消息](https://support.microsoft.com/office/first-things-to-know-about-chat-in-microsoft-teams-88ed0a06-6b59-43a3-8cf7-40c01f2f92f2)。 此数据集不包括用户显式删除的聊天消息。     | [TeamChat_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamChat_v1.json)              | [架构](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/TeamChat_v1.md) |
 | BasicDataSet_v0.User_v0            | 包含用户信息（显示名称、用户主体名称以及其他信息）。 | [User_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v0.json)                      | [架构](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/User_v0.md) |
 | BasicDataSet_v0.User_v1            | 包含用户信息。                                                         | [User_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v1.json)                      | [架构](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/User_v1.md) |
+| DocumentSharingDataset_v0_Preview            | 包含有关文档权限共享的信息。                                                         | [DocumentSharingDataset_v0_Preview](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/DocumentSharingDataset_v0_Preview.json)                      | [架构](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/DocumentSharingDataset_v0_Preview.md) |
 
 ## <a name="regions"></a>地区
 

@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 09efbe4e6d4ff5cefa986e12fa730dc2ec418505
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 57419763ca3a35d41ecd871c83cc396f81936671
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321818"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335794"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -420,13 +420,17 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ## <a name="users"></a>用户
 
-### <a name="use-the-dollar--symbol-in-the-userprincipalname"></a>在 userPrincipalName 中使用美元 ($) 符号
+### <a name="get-user-by-userprincipalname-that-starts-with-a-dollar--symbol"></a>按 userPrincipalName 获取以美元符号 ($) 开头的用户
 
 Microsoft Graph 允许 **userPrincipalName** 以美元 (`$`) 字符开头。 但是，当通过 userPrincipalName 查询用户时，请求 URL `/users/$x@y.com` 失败。 这是因为此请求 URL 违反了 OData URL 约定，该约定要求只有系统查询选项才能以 `$` 字符作为前缀。 一种解决方法是，删除 `/users` 后面的斜杠 (/)，并将 **userPrincipalName** 括在圆括号和单引号中，如下所示：`/users('$x@y.com')`。
 
+### <a name="encode-number--symbols-in-userprincipalname"></a>对 userPrincipalName 中的数字符号 (#) 进行编码
+
+通过 Azure AD B2B 添加的来宾用户的 **userPrincipalName** 通常包含数字字符 (#)。 如果对包含 # 符号的 **userPrincipalName** 使用 `$filter`，例如 `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com#EXT#@fabrikam.com'`，将会返回 `400 Bad request` HTTP 错误响应。 若要按 **userPrincipalName** 进行筛选，请用其 UTF-8 等效字符 (`%23`) 对 # 字符进行编码，例如 `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com%23EXT%23@fabrikam.com'`。
+
 ### <a name="access-to-user-resources-is-delayed-after-creation"></a>用户资源访问权限将在创建后延迟
 
-可通过在用户实体上使用 POST 来即时创建用户。必须先向用户分配 Microsoft 365 许可证，然后用户才能访问 Microsoft 365 服务。尽管如此，由于服务具有分散特性，因此用户可能需要先等待 15 分钟，然后才能通过 Microsoft Graph API 使用文件、邮件和事件实体。在此期间，应用会收到一个 `404` HTTP 错误响应。
+可通过在用户实体上使用 POST 来即时创建用户。必须先向用户分配 Microsoft 365 许可证，然后用户才能访问 Microsoft 365 服务。尽管如此，由于服务具有分散特性，因此用户可能需要先等待 15 分钟，然后才能通过 Microsoft Graph API 使用文件、邮件和事件实体。在此期间，应用会收到一个 `404 Not Found` HTTP 错误响应。
 
 ### <a name="access-to-a-users-profile-photo-is-limited"></a>对用户的个人资料照片的访问受限
 
