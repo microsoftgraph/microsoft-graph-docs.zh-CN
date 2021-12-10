@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: 4086189e31dcbe64f9d12aca1204320a3aff4428
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 3a8d812aa344ae2a6fe43129c41f6786fad58ad8
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979234"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390967"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>设置包含资源数据的更改通知
 
@@ -32,7 +32,7 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 
 ## <a name="supported-resources"></a>支持的资源
 
-目前，Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) 以及 Microsoft Teams [presence](/graph/api/resources/presence)（预览）资源支持包括资源数据的更改通知。 具体而言，可设置应用以下内容之一的订阅：
+目前，Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) 以及 Microsoft Teams [presence](/graph/api/resources/presence) 资源支持包括资源数据的更改通知。 具体而言，可设置应用以下内容之一的订阅：
 
 - 特定 Teams 频道中新增或已更改的消息：`/teams/{id}/channels/{id}/messages`
 - 整个组织（租户）中所有团队频道中的新消息或已更改消息： `/teams/getAllMessages`
@@ -40,7 +40,7 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 - 整个组织（租户）中所有聊天的新消息或已更改消息： `/chats/getAllMessages`
 - 用户的状态信息更新：`/communications/presences/{id}`
 
-含有更改通知中所有已更改实例属性的 **chatMessage** 和 **presence** （预览）支持。 它们不支持仅返回实例的选择性属性。 
+含有更改通知中所有已更改实例属性的 **chatMessage** 和 **presence** 支持。 它们不支持仅返回实例的选择性属性。 
 
 本文介绍订阅 Teams 通道中的消息更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。 有关基于 **chatMessage** 的订阅的更多详细信息，请参阅 [获取聊天和频道消息的更改通知](teams-changenotifications-chatmessage.md)。
 
@@ -385,7 +385,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 
 1. 使用 **encryptionCertificateId** 属性标识要使用的证书。
 
-2. 使用私钥初始化 RSA 加密组件（如 .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)）。
+2. 使用私钥初始化 RSA 加密组件（如 .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8&preserve-view=true)）。
 
 3. 解密更改通知中各项的 **dataKey** 属性中提供的对称密钥。
 
@@ -395,7 +395,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
   
     将其与 **dataSignature** 中的值进行比较。 如果不匹配，则假定有效负载已被篡改，并且不对其进行解密。
 
-5. 将对称密钥与高级加密标准（AES）（例如 .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)）结合使用，解密 **数据** 中的内容。
+5. 将对称密钥与高级加密标准（AES）（例如 .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8&preserve-view=true)）结合使用，解密 **数据** 中的内容。
 
     - 将以下解密参数用于 AES 算法：
 

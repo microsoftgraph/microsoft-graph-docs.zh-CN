@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 35b9e3f515ec371216c785bd342de8d8285ceb88
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c3726459f31976bf687dd0a80f3cd3a8b4062116
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032850"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390808"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -41,6 +41,7 @@ ms.locfileid: "61032850"
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
+|[状态](../resources/presence.md) | Presence.Read.All | 不支持 | 不支持 |
 |[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
@@ -67,6 +68,10 @@ OneDrive for Business 和 SharePoint 支持向应用程序发送有关在 **driv
 
   - 使用相应的应用程序权限订阅租户内 _任何_ 用户的文件夹或邮箱中项目的更改。
   - 切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们 **不** 支持订阅对共享或委托文件夹中的项的更改通知。
+
+### <a name="presence"></a>状态
+
+**状态** 上的订阅要求对更改通知中包含的任何资源数据进行加密。 在 [创建订阅](/graph/webhooks-with-resource-data#creating-a-subscription) 时始终指定 **encryptionCertificate** 参数以避免失败。 请参阅有关 [设置更改通知以包含资源数据](/graph/webhooks-with-resource-data) 的详细信息。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -128,7 +133,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -152,6 +157,7 @@ Content-type: application/json
 |[组](../resources/group.md)|`groups`|
 |[列表](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[状态](../resources/presence.md)| `/communications/presences/{id}`（单个用户），`/communications/presences?$filter=id in ({id},{id}…)`（多个用户）|
 |[打印机](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[安全警报](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|

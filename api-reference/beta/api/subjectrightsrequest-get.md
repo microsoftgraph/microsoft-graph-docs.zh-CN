@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 1adff3fcb24e0cb31f728467ecffd0489ca622a4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 905bc47f41271bcaff38ab16431bcfbf6c555272
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014004"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61402907"
 ---
 # <a name="get-subjectrightsrequest"></a>获取 subjectRightsRequest
 命名空间：microsoft.graph
@@ -24,12 +24,9 @@ ms.locfileid: "61014004"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|SubjectRightsRequest.Read.All *、SubjectRightsRequest.ReadWrite.All*|
+|委派（工作或学校帐户）|SubjectRightsRequest.Read.All、SubjectRightsRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持|
-
->[!IMPORTANT]
->标有星号* (*) 当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
+|Application|不支持|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,7 +42,7 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 
 此方法不支持 [OData 查询参数来帮助](/graph/query-parameters) 自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -86,7 +83,7 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 [!INCLUDE [sample-code](../includes/snippets/java/get-subjectrightsrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

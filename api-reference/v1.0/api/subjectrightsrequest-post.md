@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 3bd4335d3ce5161353e479cd6184e992b0d51c27
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1751778525d4ddcb4807bfeadfc5820841bc2eee
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976201"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403118"
 ---
 # <a name="create-subjectrightsrequest"></a>创建 subjectRightsRequest
 命名空间：microsoft.graph
@@ -22,12 +22,9 @@ ms.locfileid: "60976201"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|SubjectRightsRequest.ReadWrite.All*|
+|委派（工作或学校帐户）|SubjectRightsRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持|
-
->[!IMPORTANT]
->标有星号* (*) 当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
+|Application|不支持|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,7 +54,7 @@ POST /privacy/subjectRightsRequests
 |说明|String|请求的说明。|
 |displayName|String|请求的名称。|
 |internalDueDateTime|DateTimeOffset|用于跟踪请求完成的内部截止日期。|
-|法规|String collection|请求的一个或多个法规。|
+|法规|字符串集合|请求的一个或多个法规。|
 |type|subjectRightsRequestType|请求的类型。 可取值为：`export`、`delete`、`access`、`tagForAction`、`unknownFutureValue`。|
 
 
@@ -108,7 +105,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subjectrightsrequest-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subjectrightsrequest-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

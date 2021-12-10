@@ -4,12 +4,12 @@ description: 了解适用于 Microsoft Graph 中的 Microsoft Teams API 的许�
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4f0f8c41d52ec54711e002253f691a3c298686f0
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c59b13a68d16661212df21d9f710d0493e15c295
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688687"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390450"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Microsoft Graph 中 Microsoft Teams API 的许可和付款要求
 
@@ -37,6 +37,8 @@ ms.locfileid: "60688687"
 | [正在更新 chatMessage 的 policyViolation](/graph/api/chatmessage-update) |  邮件发件人 |  每个应用每个月每个用户 800 条消息 | 每条消息 0.00075 美元 |
 
 ## <a name="modelb-requirements"></a>`model=B` 要求
+
+>**注意：** [ `model=B`](#modelb-requirements) 现在可以免费使用，但将来应用将根据其使用的消息数收费。 
 
 |API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | 其他用途的价格 | 备注 |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|

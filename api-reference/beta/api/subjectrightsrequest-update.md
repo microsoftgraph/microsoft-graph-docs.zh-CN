@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 0500eb00ccaddb6233621164d72c903b83b0d255
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 007df34dfddc56344627f21419b37c3a9ea6937e
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020325"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403080"
 ---
 # <a name="update-subjectrightsrequest"></a>更新 subjectRightsRequest
 命名空间：microsoft.graph
@@ -24,12 +24,9 @@ ms.locfileid: "61020325"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|SubjectRightsRequest.ReadWrite.All*|
+|委派（工作或学校帐户）|SubjectRightsRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持|
-
->[!IMPORTANT]
->标有星号* (*) 当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
+|Application|不支持|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -98,7 +95,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-subjectrightsrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

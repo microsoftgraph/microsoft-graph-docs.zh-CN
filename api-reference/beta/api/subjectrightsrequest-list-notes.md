@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 00befb69c7509273317e1123dade4cdc1b375074
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b9290ad1c10f2b8ec3e3fe36afcce619f2630d01
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031736"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403094"
 ---
 # <a name="list-notes"></a>列出注释
 命名空间：microsoft.graph
@@ -19,17 +19,14 @@ ms.locfileid: "61031736"
 
 获取与主题权限请求相关联的创作笔记列表。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|SubjectRightsRequest.Read.All *、SubjectRightsRequest.ReadWrite.All*|
+|委派（工作或学校帐户）|SubjectRightsRequest.Read.All、SubjectRightsRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持|
-
->[!IMPORTANT]
->标有星号* (*) 当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
+|Application|不支持|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +39,7 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法不支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法不支持帮助自定义响应的 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -85,7 +82,7 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 [!INCLUDE [sample-code](../includes/snippets/java/list-authorednote-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-authorednote-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

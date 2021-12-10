@@ -1,16 +1,16 @@
 ---
 title: 列出提交
 description: 列出与工作分配关联的所有提交。
-author: dipakboyed
+author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b686e2ee89015491bab0ed1a0be7f80425211ae8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8ec7f25ef6c42c5a8b1d14c79e6d3c06adfcbba2
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993964"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403111"
 ---
 # <a name="list-submissions"></a>列出提交
 
@@ -18,23 +18,25 @@ ms.locfileid: "60993964"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出与作业关联的所有 [提交](../resources/educationassignment.md)。
+列出 [与作业](../resources/educationsubmission.md) 关联的所有 [提交](../resources/educationassignment.md)。
 
-教师或具有应用程序权限的应用程序可以获取所有提交，而学生只能获取与其关联的提交。
+教师或具有应用程序权限的应用程序可以获取所有提交，学生只能获取与其关联的提交。 
 
-## <a name="permissions"></a>Permissions
+提供标头 `Prefer: include-unknown-enum-members` 以正确 **列出状态** 为 `reassigned` 提交的提交。 有关详细信息，请参阅示例部分。
+
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All | 
+|Application | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/{id}/assignments/{id}/submissions
+GET /education/classes/{class-id}/assignments/{assignment-id}/submissions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -46,6 +48,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
+| Prefer  | `include-unknown-enum-members`. 可选。  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -84,10 +87,6 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 [!INCLUDE [sample-code](../includes/snippets/java/get-submissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-submissions-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### <a name="response"></a>响应
@@ -104,6 +103,7 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 873
 
 {
     "value": [
@@ -175,10 +175,6 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-submissions-expand-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-submissions-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -303,6 +299,134 @@ Content-length: 4492
                     ]
                 }
             ]
+        }
+    ]
+}
+```
+
+### <a name="example-3-get-submissions---request-with-optional-prefer-header"></a>示例 3：获取提交 - 具有可选 Prefer 标头的请求
+#### <a name="request"></a>请求
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_submissions_prefer"
+}-->
+```http
+GET https://graph.microsoft.com/beta/education/classes/59069eb2-2a09-4d90-bb19-2089cc69d613/assignments/80da1069-a635-4913-813f-d775a5470a8f/submissions
+Prefer: include-unknown-enum-members
+```
+---
+
+
+#### <a name="response"></a>响应
+下面展示了示例响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 4492
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions",
+    "value": [
+        {
+            "status": "working",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "reassignedDateTime": null,
+            "resourcesFolderUrl": null,
+            "id": "f51a6687-a4a3-a8d9-ac4a-6ff81c5a8da7",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "0ca0dd79-57eb-4903-97dc-88c769dd2a3d"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "0ca0dd79-57eb-4903-97dc-88c769dd2a3d",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "status": "reassigned",
+            "submittedDateTime": "2021-11-10T00:57:17.0495233Z",
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "reassignedDateTime": "2021-11-10T01:03:25.7812455Z",
+            "resourcesFolderUrl": null,
+            "id": "869369de-3e5a-89eb-6f2d-83cd88f860b5",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "723e2402-f503-4825-a4d5-5143fbe6f53d"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "723e2402-f503-4825-a4d5-5143fbe6f53d",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "afc58f1f-7c9e-4770-a448-e53ba43463a5",
+                    "displayName": null
+                }
+            }
         }
     ]
 }

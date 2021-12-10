@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e2dcdaaa608ff0d75845e826424ad0482efafd7f
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: f4e2929350b00fc2ba7180cd55652a161d6348bc
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307606"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390457"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1162,7 +1162,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1628,12 +1628,24 @@ People.Read.All 权限仅适用于工作和学校帐户。
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Presence.Read_ | 读取用户的状态信息 | 允许应用代表已登录的用户读取状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 否 |
 | _Presence.Read.All_ |   读取组织中所有用户的状态信息 | 允许应用代表已登录的用户读取目录中所有用户的状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 否 |
+| _Presence.ReadWrite_ | 读取和写入用户的状态信息 | 允许应用代表已登录用户读取状态信息以及写入活动和可用性。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 是 |
+
+#### <a name="application-permissions"></a>应用程序权限
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Presence.ReadWrite.All_ | 读取和写入所有用户的状态信息 | 允许应用在没有登录用户的情况下读取目录中所有用户的所有状态信息以及写入活动和可用性。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 是 |
 
 ### <a name="example-usage"></a>用法示例
 
 * _Presence.Read_：如果你已登录，则检索你自己的状态信息 (`GET /me/presence`)
 * _Presence.Read.All_：检索其他用户的状态信息 (`GET /users/{id}/presence`)
 * _Presence.Read.All_：检索多个用户的状态信息 (`POST /communications/getPresencesByUserId`)
+* _Presence.ReadWrite_：
+  * 如果已登录，请设置状态会话的状态（`POST /me/presence/setPresence`）
+  * 如果已登录，请设置自己的首选状态（`POST /me/presence/setUserPreferredPresence`）
+* _Presence.ReadWrite.All_：
+  * 将用户的状态会话的状态设置为应用程序（`POST /users/{id}/presence/setPresence`）
+  * 将用户的首选状态设置为应用程序（`POST /users/{id}/presence/setUserPreferredPresence`）
 
 ---
 

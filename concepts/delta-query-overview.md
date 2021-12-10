@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: davidmu1
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8f0ba6ba59f1a9c538f8a467c35ca9bfcd4baeee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9aead9c7a41acd7fc7f68bdd7575e8f9a318aeaa
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142382"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390939"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -63,9 +63,9 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 
     每页中的对象数量可能因资源类型和资源更改类型而异。
 
-对于[消息](/graph/api/resources/message?view=graph-rest-1.0)资源，请参阅[增量查询中的查询参数支持](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages)的详细信息。
+对于[消息](/graph/api/resources/message)资源，请参阅[增量查询中的查询参数支持](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages)的详细信息。
 
-对于[用户](/graph/api/resources/user?view=graph-rest-1.0)和[组](/graph/api/resources/group?view=graph-rest-1.0)资源，在使用某些查询参数时受到限制：
+对于[用户](/graph/api/resources/user)和[组](/graph/api/resources/group)资源，在使用某些查询参数时受到限制：
 
 - 不支持 `$expand`。
 - 不支持 `$top`。
@@ -111,29 +111,31 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 应用程序                                                   | [application](/graph/api/resources/application) 资源的 [delta](/graph/api/application-delta) 函数                                               |
 | 管理单元（预览版）                                 | [administrativeUnit](/graph/api/resources/administrativeunit) 资源的 [delta](/graph/api/administrativeunit-delta) 函数（预览版）                |
+| 作业类别                                          | [educationCategory](/graph/api/resources/educationcategory) 资源的 [delta](/graph/api/educationcategory-delta) 函数                                    |
 | 频道中的聊天消息                                     | [chatMessage](/graph/api/resources/chatmessage) 的 [delta](/graph/api/chatmessage-delta) 函数（预览版）                                              |
 | 目录对象                                              | [directoryObject](/graph/api/resources/directoryobject) 资源的 [delta](/graph/api/directoryobject-delta) 函数（预览版）                         |
-| 目录角色                                                | [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) 资源的 [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) 函数 |
-| 驱动器项目\*                                                  | [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 资源的 [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) 函数             |
-| 教育课堂                                              | [educationClass](/graph/api/resources/educationclass) 资源的 [delta](/graph/api/educationclass-delta) 函数                                      |
+| 目录角色                                                | [directoryRole](/graph/api/resources/directoryrole) 资源的 [delta](/graph/api/directoryrole-delta) 函数 |
+| 驱动器项目\*                                                  | [driveItem](/graph/api/resources/driveitem) 资源的 [delta](/graph/api/driveitem-delta) 函数             |
+| 教育作业                                          | [educationAssignment](/graph/api/resources/educationassignment) 资源的 [delta](/graph/api/educationassignment-delta) 函数                                    |
+| 教育案例                                              | [educationClass](/graph/api/resources/educationclass) 资源的 [delta](/graph/api/educationclass-delta) 函数                                      |
 | 教育用户                                                | [educationUser](/graph/api/resources/educationuser) 资源的 [delta](/graph/api/educationuser-delta) 函数                                         |
 | 教育学校                                              | [educationSchool](/graph/api/resources/educationschool) 资源的 [delta](/graph/api/educationschool-delta) 函数                                   |
-| 主日历的日历视图（日期范围）中的事件 | [事件](/graph/api/resources/event?view=graph-rest-1.0)资源的 [delta](/graph/api/event-delta?view=graph-rest-1.0) 函数                         |
-| 组                                                         | [组](/graph/api/resources/group?view=graph-rest-1.0)资源的 [delta](/graph/api/group-delta?view=graph-rest-1.0) 函数                         |
-| 邮件文件夹                                                   | [邮件文件夹](/graph/api/resources/mailfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) 函数          |
-| 文件夹中的邮件                                           | [邮件](/graph/api/resources/message?view=graph-rest-1.0)资源的 [delta](/graph/api/message-delta?view=graph-rest-1.0) 函数                   |
-| 组织联系人                                        | [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源的 [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) 函数          |
+| 主日历的日历视图（日期范围）中的事件 | [事件](/graph/api/resources/event)资源的 [delta](/graph/api/event-delta) 函数                         |
+| 组                                                         | [组](/graph/api/resources/group)资源的 [delta](/graph/api/group-delta) 函数                         |
+| 邮件文件夹                                                   | [邮件文件夹](/graph/api/resources/mailfolder)资源的 [delta](/graph/api/mailfolder-delta) 函数          |
+| 文件夹中的邮件                                           | [邮件](/graph/api/resources/message)资源的 [delta](/graph/api/message-delta) 函数                   |
+| 组织联系人                                        | [orgContact](/graph/api/resources/orgcontact) 资源的 [delta](/graph/api/orgcontact-delta) 函数          |
 | OAuth2PermissionGrants                                         | [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) 资源的 [delta](/graph/api/oauth2permissiongrant-delta) 函数                 |
-| 私人联系人文件夹                                       | [联系人文件夹](/graph/api/resources/contactfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) 函数 |
-| 文件夹中的私人联系人                                  | [contact](/graph/api/resources/contact?view=graph-rest-1.0) 资源的 [delta](/graph/api/contact-delta?view=graph-rest-1.0) 函数                   |
+| 私人联系人文件夹                                       | [联系人文件夹](/graph/api/resources/contactfolder)资源的 [delta](/graph/api/contactfolder-delta) 函数 |
+| 文件夹中的私人联系人                                  | [contact](/graph/api/resources/contact) 资源的 [delta](/graph/api/contact-delta) 函数                   |
 | Planner 项目\*\*（预览版）                                    | [plannerUser](/graph/api/resources/planneruser) 资源所有段的 [delta](/graph/api/planneruser-list-delta) 函数（预览版）                 |
 | 服务主体                                             | [servicePrincipal](/graph/api/resources/serviceprincipal) 资源的 [delta](/graph/api/serviceprincipal-delta) 函数                                |
 | 任务列表中的任务                                           | [todoTask](/graph/api/resources/todotask) 资源的 [delta](/graph/api/todotask-delta) 函数                                                        |
 | 任务列表                                                     | [todoTaskList](/graph/api/resources/todotasklist) 资源的 [delta](/graph/api/todotasklist-delta) 函数                                            |
-| 用户                                                          | [用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 [delta](/graph/api/user-delta?view=graph-rest-1.0) 函数                            |
+| 用户                                                          | [用户](/graph/api/resources/user)资源的 [delta](/graph/api/user-delta) 函数                            |
 
 
-> \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。若要详细了解现行语法，请参阅[跟踪驱动器更改](/graph/api/driveitem-delta?view=graph-rest-1.0)。
+> \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。若要详细了解现行语法，请参阅[跟踪驱动器更改](/graph/api/driveitem-delta)。
 
 > \*\* Planner 资源的使用模式与其他支持资源类似，仅存在些许差异。  有关详细信息，请参阅[跟踪 Planner 更改](/graph/api/planneruser-list-delta)。
 

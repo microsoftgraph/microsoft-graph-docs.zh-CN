@@ -1,16 +1,16 @@
 ---
 title: 获取 educationAssignment
 description: 获取工作分配的属性和关系。
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 18f597eb9d04448a07caf95a94ce131d647193a2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8d1efd497581d8e65c5e8d17cfdbc783cbd49630
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025743"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403161"
 ---
 # <a name="get-educationassignment"></a>获取 educationAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "61025743"
 
 学生只能看到分配给他们的作业;教师和具有应用程序权限的应用程序可以看到课程的所有作业。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -28,7 +28,7 @@ ms.locfileid: "61025743"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All | 
+|Application | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -37,6 +37,8 @@ GET /education/classes/{id}/assignments/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+
+此方法 `$expand` 的可用选项包括：、、 `categories` `resources` `rubric` `submissions` 和 `*` ，其中包括之前的所有选项。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -78,10 +80,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-educationassignment-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### <a name="response"></a>响应
@@ -97,6 +95,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments/$entity",

@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 57419763ca3a35d41ecd871c83cc396f81936671
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 148a9d6d54ead703f32e4a3f27810fec11ebb711
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335794"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403125"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -156,12 +156,6 @@ Beta 版本提供了一种解决方法，可以使用 [事件](/graph/api/resour
 ### <a name="view-meeting-details-menu-is-not-available-on-microsoft-teams-client"></a>Microsoft Teams 客户端上不提供“查看会议详细信息”菜单
 
 对于通过云通信 API 创建的频道会议，Microsoft Teams 客户端不会显示“**查看会议详细信息**”菜单。
-
-## <a name="compliance"></a>合规性
-
-### <a name="subject-rights-request-api-permissions-are-not-currently-available"></a>主体权利请求 API 权限当前不可用
-
-Microsoft Graph 隐私 API 中的主体权利请求 API 当前没有可用的权限。 此问题可能会阻止用户查看权限并同意在其环境中使用 API。 
 
 ## <a name="contacts"></a>联系人
 

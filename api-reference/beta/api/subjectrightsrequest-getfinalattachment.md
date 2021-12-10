@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 0e537a31cad80a35d79e3cd4d2cf95aac4b67349
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 1299184c2c501550aabb8b8d1666a2ba168a7cc0
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559640"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61402898"
 ---
 # <a name="subjectrightsrequest-getfinalattachment"></a>subjectRightsRequest： getFinalAttachment
 命名空间：microsoft.graph
@@ -24,12 +24,9 @@ ms.locfileid: "60559640"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|SubjectRightsRequest.Read.All *、SubjectRightsRequest.ReadWrite.All*|
+|委派（工作或学校帐户）|SubjectRightsRequest.Read.All、SubjectRightsRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |Application|不支持|
-
->[!IMPORTANT]
->标有星号* (*) 当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
 
 ## <a name="http-request"></a>HTTP 请求
 
