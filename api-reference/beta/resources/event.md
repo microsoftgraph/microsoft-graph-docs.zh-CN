@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 74bf1c7e3a28280a0aca86aefb9e056befc29dff
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 8f4b7b53ef18e5e777b0b154b00e4473ba0cce49
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240922"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424726"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -80,7 +80,7 @@ ms.locfileid: "60240922"
 |changeKey|String|标识 event 对象的版本。每次事件更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。 默认情况下，结束时间为 UTC 时间。|
-|exceptionOccurrences|字符串集合|包含定期系列中的例外事件实例的 **id** 属性值。<br>异常可能不同于定期系列中的其他事件，例如主题、开始或结束时间或与会者。异常不包括已取消的事件。<br><br>仅在 [Get](../api/event-get.md) 操作的 $select 和 $expand 中返回，该操作指定系列母版事件（即 seriesMasterId 属性值）的 ID。|
+|exceptionOccurrences|[事件](event.md) 集合|包含定期系列中的例外事件实例的 **id** 属性值。<br>异常可能不同于定期系列中的其他事件，例如主题、开始或结束时间或与会者。异常不包括已取消的事件。<br><br>仅在 [Get](../api/event-get.md) 操作的 $select 和 $expand 中返回，该操作指定系列母版事件（即 seriesMasterId 属性值）的 ID。|
 |hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |hideAttendees|布尔值|如果设置为 `true`，则每个与会者仅会在会议请求和会议 **跟踪** 列表中看到自己。默认值为 False。|
 |id|String| 事件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] 区分大小写和只读。|
@@ -136,7 +136,7 @@ ms.locfileid: "60240922"
 |attachments|[Attachment](attachment.md) 集合|[FileAttachment](fileattachment.md)、[ItemAttachment](itemattachment.md)和 [referenceAttachment](referenceattachment.md)事件附件的集合。导航属性。只读。空。|
 |日历|[Calendar](calendar.md)|包含 event. Navigation 属性的日历。只读。|
 |extensions|[Extension](extension.md) 集合|为事件定义的开放扩展集合。可为空。|
-|实例|[Event](event.md) 集合|定期系列的出现次数（如果该事件是系列母版事件）。 此属性包括定期模式的组成事件和已修改的例外，但不包括已从系列中取消的事件。 导航属性。 只读。 可为 Null。|
+|实例|[Event](event.md) 集合|定期系列的出现次数（如果该事件是系列母版事件）。 此属性包括定期模式的组成事件和已修改的例外，但不包括已从系列中取消的事件。 导航属性。 只读。 可为空。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为事件定义的多值扩展属性的集合。只读。可为 Null。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为事件定义的单值扩展属性的集合。只读。可为 Null。|
 
@@ -169,7 +169,7 @@ ms.locfileid: "60240922"
   "changeKey": "string",
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "exceptionOccurrences":["string"],
+  "exceptionOccurrences":["microsoft.graph.event"],
   "hasAttachments": true,
   "hideAttendees": false,
   "uid": "string",
