@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 9f38f0b8539652e2eaf68d1ef285c325e9501c51
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 33742bc9970f8e0758fe4ef5269974629c1ccd73
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763420"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424434"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -42,7 +42,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | Teams [conversationMember][] | 对特定团队中的成员身份的更改：<br>`/teams/{id}/members` <br> 对特定聊天中的成员身份的更改：<br>`/chats/{id}/members` <br> 更改所有聊天中的成员身份：<br>`/chats/getAllMembers` <br> 对特定团队下所有频道中的成员身份的更改：<br>`teams/{id}/channels/getAllMembers` | 是 |
 | Teams[状态][] | 对单个用户状态所做的更改： `/communications/presences/{id}` <br> 对多个用户状态所做的更改：<br> `/communications/presences?$filter=id in ({id},{id}...)` | 是 |
 | Teams [团队][] | 对租户中任何团队的更改：<br>`/teams` <br>对特定团队的更改：<br>`/teams/{id}` | 是 |
-| [todoTask][] | 对特定任务列表中所有任务的更改：<br>`/me/todo/lists/{todoTaskListId}/tasks` | 否 |
+| [baseTask][] | 对特定任务列表中所有任务的更改：<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>更改所有任务：<br>`/me/tasks/lists/alltasks` | 否 |
 | [用户][] | 对所有用户更改：<br>`/users` <br>对特定用户更改：<br>`/users/{id}`| 否 |
 
 
@@ -54,9 +54,9 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 
 | 权限类型                        | 支持的资源类型                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| 委派 - 工作或学校帐户     | [][]alert、channel、chat、contact、conversation、conversationMember、driveItem、list、event、group、message、user、presence、chatMessage (preview) ， [team][]， [todoTask][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] |
-| 委派 - 个人 Microsoft 帐户 | [contact][]、 [driveItem][]、 [list][]、 [event][]、 [message][]、[todoTask][]                                     |
-| 应用程序                            | [][]alert、channel、chat、contact、driveItem、list、event、group、message、user、callRecord、chatMessage、conversationMember、printer、printTaskDefinition、team [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] |
+| 委派 - 工作或学校帐户     | [警报][]、[频道][]、[聊天][]、[联系人][]、[对话][]、conversationMember、driveItem、list、event、group、message、user、presence、chatMessage (preview [][] [][] [][] [][] [][] [][] [][] [][] [][]) 、team、baseTask [][] [][] |
+| 委派 - 个人 Microsoft 帐户 | [contact][]、 [driveItem][]、 [list][]、 [event][]、 [message][]、 [baseTask][]                                     |
+| Application                            | [][]alert、channel、chat、contact、driveItem、list、event、group、message、user、callRecord、chatMessage、conversationMember、printer、printTaskDefinition、team [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] |
 
 ## <a name="see-also"></a>另请参阅
 
@@ -72,7 +72,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [contact]: ./contact.md
 [对话]: ./conversation.md
 [conversationMember]: ./conversationmember.md
-[channel]: ./channel.md
+[频道]: ./channel.md
 [driveItem]: ./driveitem.md
 [list]: ./list.md
 [site]: ./site.md
@@ -82,9 +82,9 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [用户]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [警报]: ./alert.md
-[presence]: ./presence.md
+[状态]: ./presence.md
 [打印机]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
-[team]: ./team.md
-[todoTask]: ./todoTask.md
+[团队]: ./team.md
+[baseTask]: ./baseTask.md
 

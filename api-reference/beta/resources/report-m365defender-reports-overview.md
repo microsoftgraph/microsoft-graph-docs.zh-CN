@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Gopal-MSFT
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 6b2fbce1924da4f15762e93df7e16fe670fbd328
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 76d41d429145da44d7d094d3a0d310a7e6a0c142
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979568"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424754"
 ---
 # <a name="reports-api-overview-for-attack-simulation-training-as-part-of-microsoft-defender-for-office-365"></a>报告属于 Microsoft Defender for Office 365 的攻击模拟培训的 API 概述
 
@@ -26,8 +26,8 @@ Microsoft Defender for Office 365 属于 [Microsoft 365 Defender](/microsoft-365
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/overview)
-- [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
-- [Microsoft Cloud App Security](/cloud-app-security/)
+- [Microsoft Defender for Identity](/defender-for-identity/)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/)
 
 Microsoft 365 Defender 是一种统一的企业防御套件，有助于检测安全风险、调查对组织的攻击以及自动防止有害活动。 其提供了中心管理员门户([https://security.microsoft.com/](https://security.microsoft.com))，该门户将保护、检测、调查以及响应 _电子邮件_、_协作_、_标识_ 和 _设备_ 威胁相结合。
 

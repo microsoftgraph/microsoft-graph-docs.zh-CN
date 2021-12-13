@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序，以在 Microsoft 应用程序上的数据发生更改时Graph更改通知。
+description: 订阅侦听器应用程序，以在 Microsoft 数据或资源发生更改时Graph更改通知。
 ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 089b6831af5dd948d0738fd12302edba9a44bebd
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 88629f81300284bebe3276b437b406ece1b10360
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390895"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424656"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -59,7 +59,8 @@ ms.locfileid: "61390895"
 |[teams](../resources/team.md) (/teams - 组织中的所有团队) | 不支持 | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All，TeamSettings.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
+|[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
@@ -85,7 +86,7 @@ OneDrive for Business 和 SharePoint 支持向应用程序发送有关在 **driv
 
 ### <a name="presence"></a>状态
 
-状态订阅 **要求** 对更改通知中包含的任何资源数据进行加密。 创建订阅 **时始终指定 encryptionCertificate** [参数以避免失败](/graph/webhooks-with-resource-data#creating-a-subscription) 。 请参阅有关设置 [更改通知以包含资源数据的信息](/graph/webhooks-with-resource-data)。
+**状态** 上的订阅要求对更改通知中包含的任何资源数据进行加密。 在 [创建订阅](/graph/webhooks-with-resource-data#creating-a-subscription) 时始终指定 **encryptionCertificate** 参数以避免失败。 请参阅有关 [设置更改通知以包含资源数据](/graph/webhooks-with-resource-data) 的详细信息。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -176,12 +177,13 @@ Content-type: application/json
 |[组](../resources/group.md)|`groups`|
 |[列表](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[状态](../resources/presence.md)| `/communications/presences/{id}` (单个用户) ， (`/communications/presences?$filter=id in ({id},{id}…)` 多个用户) |
+|[状态](../resources/presence.md)| `/communications/presences/{id}`（单个用户），`/communications/presences?$filter=id in ({id},{id}…)`（多个用户）|
 |[打印机](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
 |[用户](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
+|[baseTask](../resources/basetask.md) | `/me/tasks/lists/{baseTaskListId}/tasks`, `/me/tasks/alltasks`
 |[安全警报](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **注意：** 以 `me` 开头的任何路径也可与 `users/{id}`（而不是 `me`）一起使用，从而以特定用户为目标，而不是以当前用户为目标。
@@ -218,7 +220,7 @@ Content-type: application/json
 
 ### <a name="notification-endpoint-validation"></a>通知终结点验证
 
-notificationUrl (中指定的订阅通知终结点) 必须能够响应验证请求，如设置用户数据更改[的通知中所述](/graph/webhooks#notification-endpoint-validation)。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
+notificationUrl (中指定的订阅通知终结点) 必须能够响应验证请求，如设置用户数据更改的通知[中所述](/graph/webhooks#notification-endpoint-validation)。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
 
 [error-response]: /graph/errors
 

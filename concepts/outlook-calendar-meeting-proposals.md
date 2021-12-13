@@ -4,12 +4,12 @@ description: 在 Outlook 中，会议组织者可以允许被邀请者建议备�
 author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: eb75a950f627dde2cf54f373e17435b501a082df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 75eb225da1cc1ea337b20e07a8429e9acdd32748
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103948"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424614"
 ---
 # <a name="propose-new-meeting-times-in-outlook"></a>在 Outlook 中建议新的会议时间
 
@@ -18,7 +18,7 @@ ms.locfileid: "59103948"
 ## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a>示例：与会者做出暂定响应并建议不同的日期/时间
 下面是一个示例，其中 Alex 邀请 Adele 共进午餐，Adele 暂定接受并建议备选日期和时间，然后 Alex 通过相应地调整会议来接受建议：
 
-1. 作为组织者，Alex 向 Adele 发送了一个会议请求。 他将 [event](/graph/api/resources/event?view=graph-rest-1.0) 的 **allowNewTimeProposals** 属性设置为 `true`，以便让 Adele 在需要时建议另一个时间。
+1. 作为组织者，Alex 向 Adele 发送了一个会议请求。 他将 [event](/graph/api/resources/event) 的 **allowNewTimeProposals** 属性设置为 `true`，以便让 Adele 在需要时建议另一个时间。
 
     <!-- {
       "blockType": "request",
@@ -80,7 +80,6 @@ ms.locfileid: "59103948"
       "categories": [],
       "originalStartTimeZone": "Pacific Standard Time",
       "originalEndTimeZone": "Pacific Standard Time",
-      "uid": "0400000082008A9979A0BD16",
       "reminderMinutesBeforeStart": 15,
       "isReminderOn": true,
       "hasAttachments": false,
@@ -151,7 +150,7 @@ ms.locfileid: "59103948"
     }
     ```
 
-2. Adele 在她的收件箱中以 [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0) 的形式接收邀请。 她注意到 **allowNewTimeProposals** 属性已设置。 [使用与此 **eventMessageRequest** 相关联的 **event**](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2)，她做了一个暂定性答复，并在 **proposedNewTime** 正文参数中将日期建议为次日的同一时间。 她还将 **sendResponse** 参数设置为 true。
+2. Adele 在她的收件箱中以 [eventMessageRequest](/graph/api/resources/eventmessagerequest) 的形式接收邀请。 她注意到 **allowNewTimeProposals** 属性已设置。 [使用与此 **eventMessageRequest** 相关联的 **event**](/graph/api/eventmessage-get#example-2)，她做了一个暂定性答复，并在 **proposedNewTime** 正文参数中将日期建议为次日的同一时间。 她还将 **sendResponse** 参数设置为 true。
 
     <!-- {
       "blockType": "request",
@@ -188,7 +187,7 @@ ms.locfileid: "59103948"
     HTTP/1.1 202 Accepted
     ```
 
-3. Alex 收到一封 [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) 类型的电子邮件。 他注意到了以下内容：
+3. Alex 收到一封 [eventMessageResponse](/graph/api/resources/eventmessageresponse) 类型的电子邮件。 他注意到了以下内容：
 
    - 主题包含一个前缀，上面写着“已建议新时间：让我们共进午餐吧”
    - 发送者是 Adele Vance
@@ -313,7 +312,7 @@ ms.locfileid: "59103948"
     }
     ```
 
-4. Alex 还注意到，午餐的 **event** 现在包括一个指示 Adele 建议的 **proposedNewTime** 属性。 如果相应的与会者建议了备选会议时间，则此属性仅在 [attendee ](/graph/api/resources/attendee?view=graph-rest-1.0) 实例中出现。 
+4. Alex 还注意到，午餐的 **event** 现在包括一个指示 Adele 建议的 **proposedNewTime** 属性。 如果相应的与会者建议了备选会议时间，则此属性仅在 [attendee ](/graph/api/resources/attendee) 实例中出现。 
 
     <!-- {
       "blockType": "request",
@@ -424,7 +423,6 @@ ms.locfileid: "59103948"
       "categories": [],
       "originalStartTimeZone": "Pacific Standard Time",
       "originalEndTimeZone": "Pacific Standard Time",
-      "uid": "0400000082008A9979A0BD16",
       "reminderMinutesBeforeStart": 15,
       "isReminderOn": true,
       "hasAttachments": false,

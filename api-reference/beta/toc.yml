@@ -414,7 +414,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置人员见解
+                  - name: 设置见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -452,7 +452,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -537,7 +537,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言 (区域) '
+          - name: '预览版的首选语言和区域 () '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -553,7 +553,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -6759,7 +6759,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows Defender 防篡改保护选项
+                  - name: Windows防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -8148,7 +8148,7 @@ items:
                         href: api/intune-deviceintent-securitybaselinetemplate-update.md
                   - name: 共享 Apple 设备用户
                     href: resources/intune-devices-sharedappledeviceuser.md
-                  - name: Tuple_2操作type_collection_1的执行顺序
+                  - name: Tuple_2操作type_collection_1执行顺序
                     href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                   - name: 更新 Windows 设备帐户操作参数
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
@@ -9639,7 +9639,7 @@ items:
                       - name: 列出
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: 创建
-                        href: api/intune-shared-devicemanagementderivedcredentialsettings.md
+                        href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
                       - name: 删除
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理脚本
@@ -9942,7 +9942,7 @@ items:
                     href: api/cloudpc-reboot.md
                   - name: 重命名
                     href: api/cloudpc-rename.md
-                  - name: 排除故障
+                  - name: 疑难解答
                     href: api/cloudpc-troubleshoot.md
                   - name: 重新设置远程操作
                     href: api/manageddevice-reprovisioncloudpc.md
@@ -12047,7 +12047,7 @@ items:
                     href: api/trustframeworkpolicy-delete.md
               - name: 用户流
                 items:
-                  - name: '用户流 (弃用) '
+                  - name: '用户流 (弃) '
                     items:
                       - name: 用户流
                         href: resources/identityuserflow.md
@@ -12267,7 +12267,7 @@ items:
                         href: api/accessreviewhistorydefinition-post.md
                       - name: 生成下载 URI
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
-              - name: '已弃 (访问) '
+              - name: '已弃 (的访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -13099,7 +13099,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 注释
+              - name: 备注
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -13275,7 +13275,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置人员见解
+                  - name: 设置见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -13545,7 +13545,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: 获取存储
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Microsoft 365激活
+              - name: Microsoft 365 激活
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: 获取用户详细信息
@@ -13554,7 +13554,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: 获取用户计数
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Microsoft 365活动用户
+              - name: Microsoft 365 活动用户
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: 获取用户详细信息
@@ -13563,7 +13563,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: 获取服务用户计数
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Microsoft 365 应用使用情况
+              - name: Microsoft 365 应用版使用情况
                 href: resources/microsoft-365-apps-usage-report.md
                 items:
                   - name: 获取用户详细信息
@@ -13572,7 +13572,7 @@ items:
                     href: api/reportroot-getm365appusercounts.md
                   - name: 获取平台用户计数
                     href: api/reportroot-getm365appplatformusercounts.md
-              - name: Microsoft 365组活动
+              - name: Microsoft 365 组活动
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: 获取组详细信息
@@ -14549,7 +14549,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
@@ -14802,58 +14802,136 @@ items:
         displayName: Microsoft To Do
         items:
           - name: 概述
-            href: resources/todo-overview.md
+            href: resources/tasks-overview.md
           - name: 任务列表
-            href: resources/todotasklist.md
             items:
+              - name: 基本任务列表
+                href: resources/basetasklist.md
+              - name: 任务列表
+                href: resources/tasklist.md
+              - name: 已知任务列表
+                href: resources/wellknowntasklist.md
               - name: 列出任务列表
-                href: api/todo-list-lists.md
+                href: api/tasks-list-lists.md
               - name: 创建任务列表
-                href: api/todo-post-lists.md
+                href: api/tasks-post-lists.md
               - name: 获取任务列表
-                href: api/todotasklist-get.md
+                href: api/basetasklist-get.md
               - name: 更新任务列表
-                href: api/todotasklist-update.md
+                href: api/tasklist-update.md
               - name: 删除任务列表
-                href: api/todotasklist-delete.md
+                href: api/tasklist-delete.md
               - name: 获取任务列表增量
-                href: api/todotasklist-delta.md
+                href: api/basetasklist-delta.md
               - name: 创建开放扩展
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
                 href: api/opentypeextension-get.md
           - name: 任务
-            href: resources/todotask.md
             items:
+              - name: 基本任务
+                href: resources/basetask.md
+              - name: 任务
+                href: resources/task.md
               - name: 列出任务
-                href: api/todotasklist-list-tasks.md
+                href: api/basetasklist-list-tasks.md
               - name: 创建任务
-                href: api/todotasklist-post-tasks.md
+                href: api/basetasklist-post-tasks.md
               - name: 获取任务
-                href: api/todotask-get.md
+                href: api/basetask-get.md
               - name: 更新任务
-                href: api/todotask-update.md
+                href: api/basetask-update.md
+              - name: 移动任务
+                href: api/basetask-move.md
               - name: 删除任务
-                href: api/todotask-delete.md
+                href: api/basetask-delete.md
               - name: 获取任务增量
-                href: api/todotask-delta.md
+                href: api/basetask-delta.md
               - name: 创建开放扩展
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
                 href: api/opentypeextension-get.md
-          - name: 链接的资源
-            href: resources/linkedresource.md
+          - name: 清单
+            href: resources/checklistitem.md
             items:
               - name: 列出
-                href: api/todotask-list-linkedresources.md
+                href: api/basetask-list-checklistitems.md
               - name: 创建
-                href: api/todotask-post-linkedresources.md
+                href: api/basetask-post-checklistitems.md
               - name: 获取
-                href: api/linkedresource-get.md
+                href: api/checklistitem-get.md
               - name: 更新
-                href: api/linkedresource-update.md
+                href: api/checklistitem-update.md
               - name: 删除
-                href: api/linkedresource-delete.md
+                href: api/checklistitem-delete.md
+          - name: 链接的资源
+            href: resources/linkedresource_v2.md
+            items:
+              - name: 列出
+                href: api/basetask-list-linkedresources.md
+              - name: 创建
+                href: api/basetask-post-linkedresources.md
+              - name: 获取
+                href: api/linkedresource_v2-get.md
+              - name: 更新
+                href: api/linkedresource_v2-update.md
+              - name: 删除
+                href: api/linkedresource_v2-delete.md
+          - name: '旧任务 (任务) '
+            items:
+              - name: 概述
+                href: resources/todo-overview.md
+              - name: 任务列表
+                href: resources/todotasklist.md
+                items:
+                  - name: 列出任务列表
+                    href: api/todo-list-lists.md
+                  - name: 创建任务列表
+                    href: api/todo-post-lists.md
+                  - name: 获取任务列表
+                    href: api/todotasklist-get.md
+                  - name: 更新任务列表
+                    href: api/todotasklist-update.md
+                  - name: 删除任务列表
+                    href: api/todotasklist-delete.md
+                  - name: 获取任务列表增量
+                    href: api/todotasklist-delta.md
+                  - name: 创建开放扩展
+                    href: api/opentypeextension-post-opentypeextension.md
+                  - name: 获取开放扩展
+                    href: api/opentypeextension-get.md
+              - name: 任务
+                href: resources/todotask.md
+                items:
+                  - name: 列出任务
+                    href: api/todotasklist-list-tasks.md
+                  - name: 创建任务
+                    href: api/todotasklist-post-tasks.md
+                  - name: 获取任务
+                    href: api/todotask-get.md
+                  - name: 更新任务
+                    href: api/todotask-update.md
+                  - name: 删除任务
+                    href: api/todotask-delete.md
+                  - name: 获取任务增量
+                    href: api/todotask-delta.md
+                  - name: 创建开放扩展
+                    href: api/opentypeextension-post-opentypeextension.md
+                  - name: 获取开放扩展
+                    href: api/opentypeextension-get.md
+              - name: 链接的资源
+                href: resources/linkedresource.md
+                items:
+                  - name: 列出
+                    href: api/todotask-list-linkedresources.md
+                  - name: 创建
+                    href: api/todotask-post-linkedresources.md
+                  - name: 获取
+                    href: api/linkedresource-get.md
+                  - name: 更新
+                    href: api/linkedresource-update.md
+                  - name: 删除
+                    href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
               - name: 'Outlook任务 (已弃) '

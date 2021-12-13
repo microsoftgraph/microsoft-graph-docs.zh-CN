@@ -1,0 +1,120 @@
+---
+title: baseTask：delta
+description: 获取一组已添加、删除或更新到特定 baseTaskList 中的 baseTask 资源。
+author: devindrajit
+ms.localizationpriority: medium
+ms.prod: outlook
+doc_type: apiPageType
+ms.openlocfilehash: 58f0514362776b064d3c47e3cd6dd1a50e5d19ae
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424853"
+---
+# <a name="basetask-delta"></a>baseTask：delta
+命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+获取一组 [已](../resources/basetask.md) 添加、删除或更新到特定 [baseTaskList 中的 baseTask 资源](../resources/basetasklist.md)。
+
+**baseTaskList** **中对 baseTask** 资源的 **delta** 函数调用类似于 GET 请求，只不过通过在这些调用的 [](/graph/delta-query-overview)一个或多个调用中正确应用状态令牌，可以在 **该 baseTaskList** 中查询 **baseTask** 中的增量更改。 这允许您维护和同步用户 **baseTask** 资源的本地存储，而无需每次从服务器提取整个集合。
+
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型|权限（从最低特权到最高特权）|
+|:---|:---|
+|委派（工作或学校帐户）|Tasks.Read、Tasks.ReadWrite|
+|委派（个人 Microsoft 帐户）|Tasks.Read、Tasks.ReadWrite|
+|应用|不支持|
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/tasks/lists/{baseTaskListId}/tasks/delta
+GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/delta
+```
+
+## <a name="query-parameters"></a>查询参数
+
+跟踪 **baseTask 集合中的** 更改会导致一次或多组 **delta** 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，只需复制并应用上一响应中的 或 URL，因为此 URL 已包含所需的编码 `nextLink` `deltaLink` 参数。
+
+| 查询参数    | 类型 |说明|
+|:---------------|:--------|:----------|
+| $deltatoken | string | 对[同一](/graph/delta-query-overview)baseTask 集合之前的 delta 函数调用的 URL 中返回的状态令牌，指示完成这一轮 `deltaLink` 更改跟踪。  将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 上[一个](/graph/delta-query-overview)delta 函数调用的 URL 中返回的状态令牌，指示同一 baseTask 集合中还有进一步 `nextLink` 的更改需要跟踪。  |
+
+### <a name="odata-query-parameters"></a>OData 查询参数
+
+- Delta 查询支持 `$filter` `$top` ， 和 `$expand` **baseTask 的查询参数**。 
+- 不支持 `$search`。
+
+## <a name="request-headers"></a>请求标头
+| 名称       | 类型 | 说明 |
+|:---------------|:----------|:----------|
+| Authorization  | string  | Bearer {token}。必需。 |
+| Prefer | string  | odata.maxpagesize={x}。可选。 |
+
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [baseTask](../resources/basetask.md) 集合。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "basetask_delta"
+}
+-->
+``` http
+GET /me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA=/tasks/delta
+```
+
+
+### <a name="response"></a>响应
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.baseTask)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(baseTask)",
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA=/tasks/delta?$deltatoken=AVCnFFj2r7PtnjtkD-g_6dgDSPbEboZhaMYEytpd57pcJMrR9oGkCIjK_dyVkhNB1EQn1zcQt7YZTwCS0V5MNQo6Iy0-T0csAkLZTMlbiII.lVEHqD5xdDrH30csYKP6tEvoYa3WtFhmYLtKBSxCPpQ",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.task",
+            "@odata.etag": "W/\"kOO4xOT//0qFRAqk3TNe0QAAAymRBQ==\"",
+            "importance": "normal",
+            "status": "notStarted",
+            "displayName": "Read documentation",
+            "createdDateTime": "2021-11-15T13:16:53.0831814Z",
+            "lastModifiedDateTime": "2021-11-15T13:17:08.8273666Z",
+            "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT--0qFRAqk3TNe0QAAAy35RwAA",
+            "body": {
+                "content": "",
+                "contentType": "text"
+            },
+            "parentList": {
+                "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA="
+            }
+        }
+    ]
+}
+```
+

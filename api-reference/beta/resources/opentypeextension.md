@@ -1,16 +1,16 @@
 ---
 title: openTypeExtension 资源类型（开放扩展）
 description: 借助开放扩展（旧称为“Office 365 数据扩展”），可以直接将泛型属性轻松添加到 Microsoft Graph 中的资源。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: 08d33297d77354090ab62f4816a43388c32972e2
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: d0f2e474488cc0c264483f69b11e3cc95ed4f767
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547244"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424621"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -37,8 +37,8 @@ ms.locfileid: "52547244"
 | [组织](organization.md) | GA |
 | [个人联系人](contact.md) | GA |
 | [用户](user.md) | GA |
-| [任务](todotask.md)  | GA |
-| [任务列表](todotasklist.md)  | GA |
+| [任务](basetask.md)  | GA |
+| [任务列表](basetasklist.md)  | GA |
 
 ## <a name="outlook-specific-considerations"></a>Outlook 特定注意事项
 
@@ -87,7 +87,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[创建](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (现有资源实例) ，或包含 openTypeExtension[](contact.md)对象的新联系人、[事件](event.md)、[邮件](message.md)、post、todoTask 或[todoTaskList。](todotasklist.md) [](post.md) [](todotask.md) | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
+|[创建](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (在现有资源实例) 中，或者包含 openTypeExtension[](event.md)对象[](message.md)的新联系人、事件、邮件、[帖子](post.md)、[任务](basetask.md)或[TaskList](basetasklist.md)中。 [](contact.md) | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
 |[获取](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
 |[更新](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |更新 openTypeExtension 对象。 |
 |[删除](../api/opentypeextension-delete.md) | 无 |删除 openTypeExtension 对象。 |
