@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 889c2e7de64069529ebf528dcd2a5aeb893854c1
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: c98bb05b700ddabfda9544350e4be580ee818df6
+ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979241"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61432631"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -264,7 +264,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
     如果处理预计需要 3 秒以上，则应保留通知，在响应Microsoft Graph时返回 `202 - Accepted` 状态代码，然后处理通知。 如果通知未保留，则返回 5xx 类代码以指示错误，以便重试通知。
 
-    如果处理预计花费不到 3 秒，则应处理通知，并在响应Microsoft Graph时返回 `200 - Accepted` 状态代码。 如果通知未正确处理，则返回 5xx 类代码以指示错误，以便重试通知。
+    如果处理预计花费不到 3 秒，则应处理通知，并在响应Microsoft Graph时返回 `200 - OK` 状态代码。 如果通知未正确处理，则返回 5xx 类代码以指示错误，以便重试通知。
 
 1. 验证 `clientState` 属性。 它必须与最初使用订阅创建请求提交的值匹配。
 

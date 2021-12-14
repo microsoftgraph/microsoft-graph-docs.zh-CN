@@ -1,16 +1,16 @@
 ---
 title: 团队资源类型
-description: 'Microsoft Teams 中的团队是频道的集合。 '
+description: Microsoft Teams 中的团队是频道的集合。
 author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7769fd62e04010b0ba36a325f64a62363570aa78
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: fa0289079f274f206dd630079084eef683a882d7
+ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695299"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61432659"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -41,6 +41,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[解档团队](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队还原到读写状态。 |
 |[克隆团队](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |复制团队及其关联的组。 |
 |[列出你的团队](../api/user-list-joinedteams.md) | [team](team.md) 集合 | 列出你属于的团队。 |
+|[列出组织中的所有团队](../api/teams-list.md) | [团队](team.md) 集合 | 列出组织中的所有团队。 |
 |[获取团队照片](../api/team-get-photo.md) | 二进制数据 | 获取团队的照片（图片）。 |
 |[完成迁移](../api/team-completemigration.md)|[团队](team.md)| 从团队中删除迁移模式并使团队可供用户发布和阅读消息。|
 |[列出团队中安装的应用](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出团队中安装的应用。|
@@ -79,7 +80,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |:-----------------------|:-------|:-------------------------|
 |@microsoft. graph teamCreationMode|string|指示团队处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。 **注意**：将来，Microsoft 可能会要求你或你的客户根据导入的数据量支付其他费用。|
 
-有关 POST 请求示例，请参阅[请求（创建处于迁移状态的团队）](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+有关 POST 请求示例，请参阅[请求（创建处于迁移状态的团队）](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 
 ## <a name="relationships"></a>关系
 

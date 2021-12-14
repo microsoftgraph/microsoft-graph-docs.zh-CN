@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5b3a6306ca565485bfc1eed775a8a4153fcecbb9
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 94ea95d30e3dddfe6cc4f050d05348de2c9498ee
+ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424858"
+ms.locfileid: "61432640"
 ---
 # <a name="list-lists"></a>列出列表
 命名空间：microsoft.graph
@@ -40,7 +40,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$expand` 使用 `$filter` `top` [和 OData 查询参数](/graph/query-parameters)自定义响应。  
+此方法支持 `$expand` 使用 `$filter` `$top` [和 OData 查询参数](/graph/query-parameters)自定义响应。  
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
