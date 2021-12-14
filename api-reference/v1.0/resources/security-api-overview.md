@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 09630986ac095d10145332a26d7588362aa0e133
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: ca0526b7eb1a044b3ba8ecf95d66a09b30b7d17d
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224487"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424691"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -35,7 +35,7 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表显�
 |:------------------|:---------|:-----------|:------------------|
 |[Microsoft Defender for Cloud](/azure/defender-for-cloud/alerts-overview)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
-| [Microsoft Cloud App Security](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
+| [Microsoft Defender for Cloud Apps](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Microsoft Defender for Identity](/defender-for-identity/understanding-security-alerts#security-alert-categories) ***| <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |Microsoft 365 <ul><li> [默认](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>自定义警报</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
@@ -47,7 +47,7 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表显�
 
 \*\*与 Microsoft Graph 安全性 API 相比，Microsoft Defender for Endpoint 所需的[用户角色](/windows/security/threat-protection/microsoft-defender-atp/user-roles)更多。 只有同时具备 Microsoft Defender for Endpoint 和 Microsoft Graph 安全性 API 角色的用户才可访问 Microsoft Defender for Endpoint 数据。 由于仅限应用程序的身份验证不受此约束限制，我们建议使用仅限应用程序的身份验证令牌。
 
-\*\*\* Microsoft Defender for Identity 警报通过 Microsoft Cloud App Security 集成提供。 这意味着只有当你加入了 Unified SecOps 并将 Microsoft Defender for Identity 连接到 Microsoft Cloud App Security 时，你才会收到 Microsoft Defender for Identity 警报。 了解有关[如何集成 Microsoft Defender for Identity 和 Microsoft Cloud App Security](/defender-for-identity/mcas-integration) 的详细信息。
+\*\*\* Microsoft Defender for Identity 警报通过 Microsoft Defender for Cloud Apps 集成提供。 这意味着只有在加入了 Unified SecOps 并将 Microsoft Defender for Identity 连接到 Microsoft Defender for Cloud Apps 时，才会收到 Microsoft Defender for Identity 警报。 了解有关[如何集成 Microsoft Defender for Identity 和 Microsoft Defender for Cloud Apps](/defender-for-identity/mcas-integration) 的详细信息。
 
 ## <a name="information-protection"></a>信息保护
 

@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e02bce5335561363788481f8bd205607eea48bf1
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 7d2a3df6af87d9e3b9802e112bc429682a42d989
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123584"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424600"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -97,7 +97,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
-| 安全集成 | Azure AD Identity Protection、Azure 信息保护、Azure 安全中心、Microsoft 云应用安全性、Windows Defender 高级威胁防护[等](/graph/api/resources/security-api-overview) | 跨整个 Microsoft 和生态系统合作伙伴提供安全见解和操作的统一网关。 | [Microsoft Graph 中的安全性](security-concept-overview.md) |
+| 安全集成 | Azure AD 标识保护、Azure 信息保护、Azure 安全中心、Microsoft Defender for Cloud Apps、Windows Defender 高级威胁防护[等](/graph/api/resources/security-api-overview) | 跨整个 Microsoft 和生态系统合作伙伴提供安全见解和操作的统一网关。 | [Microsoft Graph 中的安全性](security-concept-overview.md) |
 
 
 

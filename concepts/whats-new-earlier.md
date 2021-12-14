@@ -3,14 +3,102 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 7c8a3e646f311d5c8c26d6375a29fe8c1119ba90
-ms.sourcegitcommit: c6bbba6cb9aaa7ad35374d1b5d4466c49878ab43
+ms.openlocfilehash: 5c3fb965808cc899d40f39cab3082c66a14d5b72
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61135177"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424586"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="october-2021-new-and-generally-available"></a>2021 年 10 月：新增和正式版本
+
+### <a name="cloud-communications--calls"></a>云通信 | 呼叫
+- [传输](/graph/api/call-transfer)活动对等呼叫。
+- 将组呼叫传输给指定与会者（传输接收方）。
+
+### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
+支持拨入电话访问和[联机会议](/graph/api/resources/onlinemeeting)（[音频会议](/graph/api/resources/audioConferencing)）使用多个收费和免费号码。
+
+<!-- Hold off until permissions are deployed
+As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanagement/privacy-management?view=o365-worldwide&preserve-view=true), subject rights request now debuts in both v1 and beta endpoints of Microsoft Graph. The [subject rights request API](/graph/api/resources/subjectrightsrequest) lets users make requests to review or manage their personal data in their organizations. It also lets organizations automate and scale managing these requests, helping them to meet industry regulations more efficiently.
+-->
+
+### <a name="education"></a>教育
+支持将 [介质](/graph/api/resources/educationMediaResource) 文件或其他 [外部泛型资源](/graph/api/resources/educationExternalResource) 为 [分配资源](/graph/api/resources/educationassignmentresource)。
+
+### <a name="identity-and-access--applications"></a>标识和访问权限 | 应用程序
+- 若要改进[应用程序](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)的许可体验，请指定[应用程序需要访问的资源](/graph/api/resources/requiredresourceaccess?view=graph-rest-beta&preserve-view=true)，包括应用程序所需的 OAuth 2.0 委派权限和应用程序角色集。
+- 将所需 API 的数量限制为 50 个，将每个应用程序所需的权限限制为 400 个。
+
+### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
+- 设置[设备](/graph/api/resources/device)的[扩展属性](/graph/api/resources/onpremisesextensionattributes)，并在[创建](/graph/api/device-post-devices)或[更新](/graph/api/device-update)设备时，在 Azure Active Directory 中管理这些属性。
+- [代表登录的用户（设备所有者或相应的角色）获取 BitLocker 恢复密钥](/graph/api/bitlockerrecoverykey-get)。 获取恢复密钥会生成与最终用户体验存在奇偶校验的[审核日志](/azure/active-directory/reports-monitoring/concept-audit-logs)。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+通过 [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) 的 **additionalNotificationRecipients** 属性，将清单中其他用户或组成员指定为接收访问评审进度的通知。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+将[条件访问策略](/graph/api/resources/conditionalaccesspolicy)中的设备指定为应用该策略时，负责管理的一部分[条件](/graph/api/resources/conditionalAccessConditionSet)。
+
+### <a name="personal-contacts"></a>个人联系人
+在个人 Microsoft 帐户中，对 [profilePhoto](/graph/api/resources/profilephoto?view=graph-rest-beta&preserve-view=true) 资源启用支持委派的权限（`Contacts.Read` 或 `Contacts.ReadWrite`）。
+
+### <a name="teamwork"></a>Teamwork
+- [通过[团队](/graph/api/resources/team)中的所有频道获取所有消息](/graph/api/channel-getallmessages)。
+- 从用户参与的[所有聊天中获取所有消息](/graph/api/chats-getallmessages)，包括一对一聊天、群组聊天和会议聊天。
+- 了解适用于 Microsoft Graph 中的 Microsoft Teams API 的[许可和付款模式](teams-licenses.md)。
+
+### <a name="users"></a>用户
+现在，Azure Active Directory (Azure AD) 服务的用户许可证支持使用时间戳来显示最后一次更新 [许可证分配状态](/graph/api/resources/licenseassignmentstate) 的时间。 
+
+## <a name="october-2021-new-in-preview-only"></a>2021 年 10 月：仅限预览版中的新增功能
+
+### <a name="applications"></a>应用程序
+使用[联合标识凭据](/graph/api/resources/federatedidentitycredential?view=graph-rest-beta&preserve-view=true)管理应用程序的凭据，并允许组织的云应用程序在不使用机密和证书的情况下访问 Azure AD。
+
+### <a name="cloud-communications--calls"></a>云通信 | 呼叫
+使用 [participantInfo](/graph/api/resources/participantInfo?view=graph-rest-beta&preserve-view=true) 资源类型的 **participantId** 属性，确定呼叫 [参与者](/graph/api/resources/participantInfo?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
+启用[会议注册](/graph/api/resources/meetingregistration?view=graph-rest-beta&preserve-view=true)，并组织联机会议作为[网络研讨会](/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3)。 将会议与注册页关联，并选择将每个人或仅组织成员注册为[会议注册者](/graph/api/resources/meetingregistrant?view=graph-rest-beta&preserve-view=true)。 
+
+### <a name="customer-booking"></a>客户预订
+- 支持[预订服务](/graph/api/resources/bookingService?view=graph-rest-beta&preserve-view=true)的以下属性：
+  - 启用向客户发送短信预约通知（**smsNotificationsEnabled** 属性）。
+  - 客户可用于访问服务（**webUrl** 属性）的 URL。
+- 通过以下其中一个或多个属性进行[预约](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true)：
+  - 指定客户的时区（**customerTimeZone** 属性）。
+  - 指定在线预约的 URL（**joinWebUrl** 属性）。
+  - 启用向客户发送短信预约通知（**smsNotificationsEnabled** 属性）。
+- 为[客户](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true)指定一个或多个地址和电话号码。
+- 指定[员工成员](/graph/api/resources/bookingStaffMember?view=graph-rest-beta&preserve-view=true)所在的时区。
+
+### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
+[列出](/graph/api/virtualendpoint-list-serviceplans?view=graph-rest-beta&preserve-view=true)组织的云电脑订阅的 [Windows 365 服务计划](/graph/api/resources/cloudPcServicePlan?view=graph-rest-beta&preserve-view=true)。 在每个[服务计划类型](/graph/api/resources/cloudPcServicePlan?view=graph-rest-beta&preserve-view=true#cloudpcserviceplantype-values)（商业版或企业版）下，组织可以选择从按 vCPU、内存和存储等属性划分的多种计划配置中选择要订阅的计划。
+
+### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
+指定可[配置为对应用程序或服务主体的限制](/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta&preserve-view=true)的[密钥凭据配置设置](/graph/api/resources/keycredentialconfiguration?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+启用以下其他[设置](/graph/api/resources/assignmentReviewSettings?view=graph-rest-beta&preserve-view=true)，查看[访问包分配策略](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)：
+- 未在指定的有效时间内评审请求时的默认行为（**accessReviewTimeoutBehavior** 属性）。
+- 向审阅者显示推荐（**isAccessRecommendationEnabled** 属性）。
+- 要求审阅者提供审批理由（**isApprovalJustificationRequired** 属性）。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+- 指定[连续访问评估策略](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta&preserve-view=true)设置是应该迁移还是已迁移到[条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true)。
+- 作为 Azure Active Directory [条件访问](/azure/active-directory/conditional-access/overview)的一部分，使用新的会议控制 [continuousAccessEvaluationSessionControl](/graph/api/resources/continuousAccessEvaluationSessionControl?view=graph-rest-beta&preserve-view=true) 来持续评估访问权限并制定访问权限决策。
+
+### <a name="search--index"></a>搜索 | 索引
+- 指定[外部连接](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true)中内容的搜索体验的[设置](/graph/api/resources/externalconnectors-searchsettings?view=graph-rest-beta&preserve-view=true)。 例如，搜索结果的[显示模板](/graph/api/resources/externalconnectors-displaytemplate?view=graph-rest-beta&preserve-view=true)和用于选择显示模板的[规则](/graph/api/resources/externalconnectors-propertyRule?view=graph-rest-beta&preserve-view=true)。
+- 将一个或多个[外部组](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-beta&preserve-view=true)关联到[外部连接](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true)。 例如，外部组（如业务部门或工作组）可以确定对外部连接表示的数据源中内容的权限。
+- 还可以在 **connectorId** 属性的 [外部连接](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true)中指定 Teams 应用的 ID。
+
+### <a name="users"></a>用户
+当用户键入密码时，根据组织的密码验证策略实时 [验证密码](/graph/api/user-validatePassword?view=graph-rest-beta&preserve-view=true)。 根据策略中的规则，[从验证获取详细信息](/graph/api/resources/passwordValidationInformation?view=graph-rest-beta&preserve-view=true)。
+
 
 ## <a name="september-2021-new-and-generally-available"></a>2021 年 9 月: 新增功能和正式发布
 
@@ -1491,7 +1579,7 @@ Intune [10 月](changelog.md#october-2019)更新
 ### <a name="microsoft-graph-security-api"></a>Microsoft Graph 安全性 API
 - 预览版与 RSA NetWitness、ServiceNow 和 Splunk 集成，以关联和同步[警报](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#alerts)，并改善威胁防护和响应。
 - 已将新触发器添加到适用于逻辑应用和流的 [Microsoft Graph 安全连接器](/connectors/microsoftgraphsecurity/) 和 [行动手册](/azure/security-center/security-center-playbooks) 中。请参阅 [行动手册示例](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks)。
-- 支持向 Microsoft Defender ATP 发送[威胁指示器](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#threat-indicators-preview)，以使用其自己的智能源阻止威胁或发出威胁警报。 通过与 ThreatConnect 等合作伙伴集成，客户能够直接从威胁智能和自动化解决方案发送指示器。 
+- 支持向 Microsoft Defender for Endpoint 发送[威胁指示器](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#threat-indicators-preview)，以使用其自己的情报来源阻止威胁或发出威胁警报。 通过与 ThreatConnect 等合作伙伴集成，客户能够直接从威胁智能和自动化解决方案发送指示器。 
 
 ### <a name="notifications"></a>通知
 - [创建通知并将其发送给用户登录的所有设备终结点上的所有应用程序客户端](/graph/api/user-post-notifications?view=graph-rest-beta&preserve-view=true)，而无需管理用户委派的权限。
@@ -1514,7 +1602,7 @@ Intune [10 月](changelog.md#october-2019)更新
 
 - [附件](/graph/api/resources/attachment?view=graph-rest-1.0&preserve-view=true)
 - [联系人](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)
-- [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
+- [事件](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
 - [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0&preserve-view=true)
 - [邮件](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true)
 - [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0&preserve-view=true)
