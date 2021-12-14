@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 898b0524b33a14072e25b7f5c919206f847cee09
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c5d8c65424aa92a316c32a8285cb7d757e098c45
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988685"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424661"
 ---
 # <a name="list-alerts"></a>列出警报
 
@@ -51,16 +51,16 @@ GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq 
 - `$top` - 返回每个安全 API 提供商的汇总后顶部结果。  
 - `$filter`
 
-下表通过各个供应商的名称列出了 `$filter` 关键词。
+下表通过各个供应商的名称列出了 `$filter` 关键词。 尽管其中某些产品已重命名，但尚未更新该 API。 筛选器关键字将继续使用旧名称，直到另行通知为止。 更新内容请参阅 [changelog](https://developer.microsoft.com/en-us/graph/changelog)。
 
 | 提供商名称      |$filter 关键字|
 |:----------|:----------|
-| Azure 高级威胁防护 | Azure 高级威胁防护 | 
+| Microsoft Defender for Identity | Azure 高级威胁防护 | 
 | Azure 安全中心 | ASC |
-| Microsoft Cloud App Security | MCAS |
+| Microsoft Defender for Cloud Apps | MCAS |
 | Azure Active Directory 标识保护 | IPC |
 | Azure Sentinel | Azure Sentinel |
-| Microsoft Defender 高级威胁防护 | Microsoft Defender ATP |
+| Microsoft Defender for Endpoint | Microsoft Defender ATP |
 | Office 365 | 目前尚不支持。 |
 
 若要返回其他属性，使用 OData `$select` 查询参数指定你想要的一组 **alert** 属性。  例如，若要返回 **assignedTo**、**category** 和 **severity** 属性，向查询添加以下项：`$select=assignedTo,category,severity`。
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 [!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-alerts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
