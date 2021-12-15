@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 0c71564588531094f7741f1bdf9ab22435816277
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: c4e9835e140daa63e5b0c6fac4886e0b58a59880
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424642"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525734"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -191,11 +191,11 @@ ms.locfileid: "61424642"
 
 |Member|
 |:---|
-|字符串|
+|String|
 |整数|
 |参考|
 |Binary|
-|Boolean|
+|布尔值|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变值
@@ -1376,7 +1376,7 @@ ms.locfileid: "61424642"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | 参考
 
 
@@ -1910,7 +1910,7 @@ ms.locfileid: "61424642"
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于其余;例如，共享中的文件。                                 |
 | 动作 | 1     | 数据在运动中。 在传输过程中被网络设备截获的文件。         |
-| use    | 2     | 数据在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
+| use    | 2     | 数据在使用中。 文件在客户端应用程序（如 Microsoft Office）中打开。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
@@ -2159,7 +2159,7 @@ ms.locfileid: "61424642"
 | 成员                | 值 | 说明                         |
 |:----------------------|:------|:------------------------------------|
 | string                | 1     | String 数据类型                    |
-| 布尔               | 2     | Boolean 数据类型                   |
+| boolean               | 2     | Boolean 数据类型                   |
 | int64                 | 3     | Int 数据类型                       |
 | stringCollection      | 4     | 字符串集合数据类型         |
 |dateTime|5||
@@ -2218,7 +2218,7 @@ ms.locfileid: "61424642"
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的，无法删除/添加成员。                  |
-|组               | 1     | 指示聊天是群聊。 对于此 (，可以更新至少 2 人) 名单大小。 稍后可以删除/添加成员。   |
+|组               | 1     | 指示聊天是群聊。 可以针对 (聊天至少 2 人) 名单大小。 稍后可以删除/添加成员。   |
 |meeting             | 2     | 指示聊天是会议聊天，创建为创建 OnlineMeeting 的副作用。  |
 |unknownFutureValue  | 3     | Sentinel 值，用于指示未来值。 |
 
@@ -2261,7 +2261,7 @@ ms.locfileid: "61424642"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|团队      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
+|团队      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
@@ -2434,7 +2434,7 @@ ms.locfileid: "61424642"
 
 |Member|
 |:---|
-|团队|
+|team|
 |channel|
 |聊天|
 |unknownFutureValue|
@@ -2570,6 +2570,14 @@ ms.locfileid: "61424642"
 |other|
 |unknownFutureValue|
 
+### <a name="answerinputtype-values"></a>answerInputType 值
+
+|成员|值|说明|
+|:---|:---|:---|
+|text|0|文本。|
+|radioButton|1|RadioButton。|
+|unknownFutureValue|2|UnknownFutureValue。|
+
 ### <a name="taskstatus_v2-values"></a>taskStatus_v2值
 
 |Member|
@@ -2587,4 +2595,37 @@ ms.locfileid: "61424642"
 |无|
 |defaultList|
 |flaggedEmail|
+|unknownFutureValue|
+
+### <a name="bookingpricetype-values"></a>bookingPriceType 值
+
+|Member|
+|:---|
+|undefined|
+|fixedPrice|
+|startingAt|
+|hourly|
+|free|
+|priceVaries|
+|callUs|
+|notSet|
+|unknownFutureValue|
+
+### <a name="bookingstaffrole-values"></a>bookingStaffRole 值 
+
+|Member|
+|:---|
+|来宾|
+|administrator|
+|viewer|
+|externalGuest|
+|unknownFutureValue|
+
+### <a name="bookingreminderrecipients-values"></a>bookingReminderRecipients 值 
+
+|Member|
+|:---|
+|allAttendees|
+|staff|
+|customer|
 |unknownFutureValue|

@@ -1,16 +1,16 @@
 ---
 title: bookingCustomer 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: 表示 bookingBusiness 的客户。
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 3d5eff9d0add4a0840e864b9f4caf1730be98e5a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 6c8dae5ce7f541f45bc3856e1c3b4de83d5a5307
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696229"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526147"
 ---
 # <a name="bookingcustomer-resource-type"></a>bookingCustomer 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "60696229"
 表示 [bookingBusiness 的客户](bookingbusiness.md)。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -34,10 +34,10 @@ ms.locfileid: "60696229"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|字符串|客户的名称。|
+|地址|[physicalAddress](../resources/physicaladdress.md) 集合|与客户关联的地址，包括住宅、企业和其他地址。|
+|displayName|String|客户的名称。|
 |emailAddress|String|客户的 SMTP 地址。|
 |id|String| 客户的 ID。 只读。|
-|地址|[physicalAddress](../resources/physicaladdress.md) 集合|与客户关联的地址，包括住宅、企业和其他地址。|
 |phones|[phone](../resources/phone.md) collection|电话客户关联的电话号码，包括家庭号码、商务号码和移动电话号码。|
 
 ## <a name="relationships"></a>关系

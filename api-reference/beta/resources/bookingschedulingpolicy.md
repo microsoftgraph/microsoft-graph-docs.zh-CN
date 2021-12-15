@@ -1,16 +1,16 @@
 ---
 title: bookingSchedulingPolicy 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-localization_priority: Normal
+description: 代表一组策略，用于确定如何在 Microsoft Bookings 日历中创建约会。
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 5839ad12b746f83e2e41648ded6ce35346e97f28
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c6244c573fb60e13a5419ad89cee407dfd3a497b
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071760"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526140"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>bookingSchedulingPolicy 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "48071760"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-表示一组策略，这些策略确定应如何在 Microsoft 预定日历中创建约会。
+代表一组策略，用于确定如何在 Microsoft Bookings 日历中创建约会。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowStaffSelection|Boolean|如此如果允许客户选择预订的特定人员。|
-|maximumAdvance|持续时间|可以提前进行预订的最大天数。 它遵循 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式。|
-|minimumLeadTime|持续时间|在必须进行预订和取消的前的最小时间量。 它遵循 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式。|
-|sendConfirmationsToOwner|Boolean| 真要在创建或更改预订时通过电子邮件通知商业。 使用在企业的**bookingBusiness**实体的**email**属性中指定的电子邮件地址。 |
-|timeSlotInterval|持续时间|每个时间段的持续时间，以 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。|
+|allowStaffSelection|Boolean|如此 如果允许客户为预订选择特定人员。|
+|maximumAdvance|期限|可以提前进行预订的最大天数。 它遵循 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式。|
+|minimumLeadTime|期限|必须完成预定和取消的最小时间。 它遵循 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式。|
+|sendConfirmationsToOwner|Boolean| 如果为 True，则创建或更改预订时通过电子邮件通知企业。 使用在 business 的 **bookingBusiness****实体的电子邮件** 属性中指定的电子邮件地址。 |
+|timeSlotInterval|期限|每个时间段的持续时间，以 ISO [8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

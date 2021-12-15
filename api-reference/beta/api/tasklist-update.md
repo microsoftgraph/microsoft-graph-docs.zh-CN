@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1784fdf4d97a14c998ad46a6128cced1974f2de9
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 0b8dcff5796ecedfd313c7e09654e66cde6e81e8
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424872"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525574"
 ---
 # <a name="update-basetasklist"></a>更新 baseTaskList
 命名空间：microsoft.graph
@@ -50,7 +50,7 @@ PATCH /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|指示任务列表的更新标题的字段。|
+|displayName|String|指示任务列表的更新标题的字段。|
 
 
 
@@ -61,6 +61,8 @@ PATCH /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tasklist"
@@ -75,6 +77,12 @@ Content-length: 82
     "displayName": "Travel Plan"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-tasklist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2403bf72748a202bf474487f144967a0f1590a7d
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: d78b5a1a6b38eb5ca0a16ff24c49528785c92794
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424823"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524594"
 ---
 # <a name="create-basetasklist"></a>创建 baseTaskList
 命名空间：microsoft.graph
@@ -52,7 +52,7 @@ POST /users/{userId|userPrincipalName}/tasks/lists
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|指示任务列表标题的字段。|
+|displayName|String|指示任务列表标题的字段。|
 
 
 
@@ -63,6 +63,8 @@ POST /users/{userId|userPrincipalName}/tasks/lists
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_tasklist_from_"
@@ -76,6 +78,12 @@ Content-Type: application/json
     "displayName": "Shopping list"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-tasklist-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

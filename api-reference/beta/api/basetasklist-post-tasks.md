@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 03d3ab9a0a16f1f2b16cf3aed5321fed8c535c76
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: b450ed9e87af65fede3f8e850a55dcd41ac68897
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424845"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525231"
 ---
 # <a name="create-basetask"></a>创建 baseTask
 命名空间：microsoft.graph
@@ -61,8 +61,8 @@ POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内开始执行任务的日期。|
 |importance|importance|任务的重要性。 可能的值包括 `low`、`normal`、`high`。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
-|displayName|字符串|任务的简要说明。|
-|状态|taskStatus_v2|指示任务的状态或进度。 可能的值包括 `notStarted`、`inProgress`、`completed`、`unknownFutureValue`。 必需。|
+|displayName|String|任务的简要说明。|
+|状态|taskStatus_v2|指示任务的状态或进度。 可能的值包括 `notStarted`、`inProgress`、`completed`、`unknownFutureValue`。 必填。|
 |personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|用户个人的属性，如 reminderDateTime。|
 
 
@@ -74,6 +74,8 @@ POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_basetask_from_"
@@ -108,6 +110,12 @@ Content-length: 634
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-basetask-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

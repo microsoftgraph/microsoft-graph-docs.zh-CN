@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: afe7c198e47f9b5c9af7a6c5728c5b129e6b334b
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 32688f08f4ceb61da42c18be5228d4115859526d
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424839"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61523651"
 ---
 # <a name="update-checklistitem"></a>更新 checklistItem
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61424839"
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
-|Application|Tasks.ReadWrite|
+|应用程序|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,8 +53,8 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 |:---|:---|:---|
 |checkedDateTime|DateTimeOffset|完成 **checklistItem 的** 日期和时间。|
 |createdDateTime|DateTimeOffset|创建 **checklistItem 的** 日期和时间。|
-|displayName|字符串|指示 **checklistItem 的标题的字段**。|
-|isChecked|Boolean|指示项目是否已签出的状态。|
+|displayName|String|指示 **checklistItem 的标题的字段**。|
+|isChecked|布尔值|指示项目是否已签出的状态。|
 
 
 
@@ -65,6 +65,8 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_checklistitem"
@@ -78,6 +80,12 @@ Content-Type: application/json
     "displayName": "buy cake"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-checklistitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

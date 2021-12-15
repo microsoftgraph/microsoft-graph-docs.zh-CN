@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 686925bca89dcbb7dafcb701d716b9671864b833
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d08e5497ed1a32772d7975d963d16c460c7cf97c
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990549"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524866"
 ---
 # <a name="list-bookingbusinesses"></a>列出 bookingBusinesses
 
@@ -45,7 +45,7 @@ GET /bookingBusinesses
 此方法还支持 `query` 接受字符串值的参数。 此参数将 GET 结果限定为匹配指定字符串的企业。 可以看到下面的示例。 [](#request-2)
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusinesses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,11 +104,11 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses",
     "value":[
         {
-            "id":"Contosolunchdelivery@M365B489948.onmicrosoft.com",
+            "id":"Contosolunchdelivery@contoso.onmicrosoft.com",
             "displayName":"Contoso lunch delivery",
         },
         {
-            "id":"Fabrikam@M365B489948.onmicrosoft.com",
+            "id":"Fabrikam@contoso.onmicrosoft.com",
             "displayName":"Fabrikam",
         }
     ]
@@ -143,7 +143,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 [!INCLUDE [sample-code](../includes/snippets/java/query-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/query-bookingbusinesses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

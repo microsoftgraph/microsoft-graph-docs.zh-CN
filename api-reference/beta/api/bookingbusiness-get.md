@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 59e7381245730e1dbe65b6d11b5e23147a6a399f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 48918f5971cc6218e9545e1c66e25319d8996cc3
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990659"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525524"
 ---
 # <a name="get-bookingbusiness"></a>获取 bookingBusiness
 
@@ -55,7 +55,7 @@ GET /bookingBusinesses/{id}
   "name": "get_bookingbusiness"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@M365B489948.onmicrosoft.com
+GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@contoso.onmicrosoft.com
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingbusiness-csharp-snippets.md)]
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@M365B489948.onmi
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusiness-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,7 +92,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses/$entity",
-    "id":"Fabrikam@M365B489948.onmicrosoft.com",
+    "id":"Fabrikam@contoso.onmicrosoft.com",
     "displayName":"Fabrikam",
     "businessType":"",
     "phone":"206-555-0100",

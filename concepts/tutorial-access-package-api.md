@@ -1,19 +1,19 @@
 ---
-title: 教程：使用 Microsoft Graph API 管理对 Active Directory 授权管理中资源的访问
+title: 教程：使用 Microsoft Graph API 管理对 Active Directory 授权管理中的资源的访问权限
 description: 了解如何使用 Microsoft (Azure AD) API 管理对 Active Directory Graph的访问权限。
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: ef171601ca5d0b91ddfd7ff58ca7ace1bc47ac1f
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 461d3ed9bdbc7fa09f84514abe222cabf8519bcd
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289117"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526007"
 ---
-# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph API 管理对 Active Directory 授权管理中资源的访问
+# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph API 管理对 Active Directory 授权管理中的资源的访问权限
 
-管理对员工需要的所有资源（如组、应用程序和网站）的访问权限是组织的一项重要功能。 您希望为员工授予高效工作所需的正确级别访问权限，并删除不再需要的访问权限。 [Azure Active Directory (Azure AD) ](/azure/active-directory/governance/entitlement-management-overview) Microsoft Graph API 进行权利管理，可管理这种类型的访问。
+管理对员工需要的所有资源（如组、应用程序和网站）的访问权限是组织的一项重要功能。 您希望向员工授予高效工作所需的正确级别的访问权限，并删除不再需要的访问权限。 [Azure Active Directory (Azure AD) Microsoft](/azure/active-directory/governance/entitlement-management-overview) Graph API 进行权利管理，可管理这种类型的访问。
 
 本教程要求你开发代码，为内部用户可以自助请求的营销活动创建一个资源包。 请求不需要审批，用户的访问权限将在 30 天后过期。 对于本教程，市场营销活动资源只是单个组的成员身份，但它可能是组、应用程序或 SharePoint Online 网站的集合。
 
@@ -32,12 +32,12 @@ ms.locfileid: "60289117"
 
         ![选择 Microsoft Graph 权限](./images/tutorial-access-package-api/set-permissions.png)
         
-    4. 滚动浏览权限列表，展开"组" (`Group` **2**) ，选择 **"Group.ReadWrite.All"** 权限。 进一步向下滚动权限列表，展开"用户 (8) "，然后选择 `User` **User.ReadWrite.All** 权限。 ****
+    4. 滚动浏览权限列表，展开组 (`Group` **2) ，** 选择 **Group.ReadWrite.All** 权限。 进一步向下滚动权限列表，展开"用户 (8) "，然后选择 `User` **User.ReadWrite.All** 权限。 ****
 
         ![搜索用户、组和权利管理权限](./images/tutorial-access-package-api/set-user-permission.png)
     
     5. 选择“**同意**”，然后选择“**接受**”，以接受同意权限。 你不需要代表组织同意这些权限。
-    6. 搜索权限，展开 `EntitlementManagement` **"EntitlementManagement (2) "，** 选择 **Entitlement.ReadWrite.All** 权限，然后选择"**同意"。** 由于此权限需要管理员同意，并且你需要在本教程创建的用户帐户使用，因此你必须选择"代表 **你的组织同意"。**
+    6. 搜索权限，展开 `EntitlementManagement` **EntitlementManagement (2) ，** 选择 **Entitlement.ReadWrite.All** 权限，然后选择同意 。  由于此权限需要管理员同意，并且你需要在本教程创建的用户帐户使用，因此你必须选择"代表 **你的组织同意"。**
 
         ![组织同意](./images/tutorial-access-package-api/consent-for-organization.png)
 
@@ -226,7 +226,7 @@ Content-type: application/json
 
 ### <a name="get-catalog-resources"></a>获取目录资源
 
-在本教程的稍后步骤中，你需要分配给目录中的组资源的 ID。 此标识符（表示作为目录中的资源的组）与 Microsoft Graph 中的组本身标识符不同。 这是因为目录具有的资源不会在 Microsoft Graph。
+在本教程的稍后步骤中，你需要分配给目录中的组资源的 ID。 此标识符（表示作为目录中的资源的组）与 Microsoft Graph 中的组本身Graph。 这是因为目录具有的资源不会在 Microsoft Graph。
 
 在请求中， **提供** 你使用的目录的 ID。 记录组目录资源的 **id** 属性的值。
 
@@ -306,7 +306,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### <a name="create-the-access-package"></a>创建访问包
 
-此时，您具有一个包含组资源的目录，并且知道您将使用访问包中组的成员的资源角色。 下一步是创建访问包。 获取访问包后，你可以向它添加资源角色，并创建一个策略来说明用户如何请求访问该资源角色。 使用之前记录的目录的 **ID** 创建访问包。 记录访问包的 **ID，** 以在本教程的稍后部分使用。
+此时，您具有一个包含组资源的目录，并且知道您将使用访问包中组的成员的资源角色。 下一步是创建访问包。 获取访问包后，你可以向它添加资源角色，并创建一个策略，用于说明用户如何请求访问该资源角色。 使用之前记录的目录的 **ID** 创建访问包。 记录访问包的 **ID，** 以在本教程的稍后部分使用。
 
 #### <a name="request"></a>请求
 
@@ -383,7 +383,7 @@ Content-type: application/json
 ### <a name="create-an-access-package-policy"></a>创建访问包策略
 
 现在，你已创建访问包并添加了资源和角色，你可以决定谁可以通过创建访问包策略来访问它。 在本教程中，你将启用你创建的 **Requestor1** 帐户，以请求访问访问包中的资源。 对于此任务，需要以下值：
--  **accessPackageId** 属性值的访问包 ID
+- **accessPackageId** 属性值的访问包的 **id**
 - **allowedRequestors** 中 **id** 属性值的 **Requestor1** **用户帐户的** id
  
 **durationInDays** 属性的值使 **Requestor1** 帐户能够在最多 30 天内访问访问包中的资源。 记录返回的 **id** 属性的值，以在本教程的稍后部分使用。 
@@ -743,5 +743,5 @@ No Content - 204
 - [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta&preserve-view=true)
 - [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
 - [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
-- [group](/graph/api/resources/group)
+- [组](/graph/api/resources/group)
 - [用户](/graph/api/resources/user?)

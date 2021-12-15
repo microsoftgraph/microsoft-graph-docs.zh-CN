@@ -1,16 +1,16 @@
 ---
 title: bookingAppointment 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: 表示由 Microsoft Bookings 业务提供的一组员工执行的 bookingService 的客户约会。
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 7ecd369607f260c8ebfd456ab7accaa0394e0af0
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: efb4616d2ecca386bccbdf4f83cab97e9417fda1
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696964"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524586"
 ---
 # <a name="bookingappointment-resource-type"></a>bookingAppointment 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "60696964"
 表示由 Microsoft Bookings 业务提供的一组员工执行的 [bookingService](bookingservice.md)的客户约会。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -35,15 +35,18 @@ ms.locfileid: "60696964"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
+|additionalInformation|String|确认约会时发送给客户的其他信息。|
 |customerEmailAddress|String|预订约会 [的 bookingCustomer](bookingcustomer.md) 的 SMTP 地址。|
 |customerId|String|此约会的 [bookingCustomer](bookingcustomer.md) 的 ID。 如果在创建约会时未指定任何 ID，则创建一个新的 **bookingCustomer** 对象。 设置后，你应考虑 **customerId** 不可变。|
 |customerLocation|[location](location.md)|表示预订约会的 [bookingCustomer](bookingcustomer.md) 的位置信息。|
 |customerName|String|客户的名称。|
 |customerNotes|String|与此约会关联的客户的备注。 只有在通过 ID 读取 **此 bookingAppointment 时，才能** 获取该值。 <br> 只有在最初创建新客户的约会时，才能设置此属性。 此后，该值从 **customerId** 表示的客户计算。|
-|customerPhone|字符串|客户的电话号码。|
+|customerPhone|String|客户的电话号码。|
+|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) 集合|它向下列出了约会的客户属性。 约会将包含客户信息列表，每个单元将指示属于该约会的客户的属性。 可选。|
 |customerTimeZone|String|客户的时区。 有关可能值的列表，请参阅 [dateTimeTimeZone](datetimetimezone.md)。|
 |duration|期限|约会的长度，以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。 |
 |end|[dateTimeTimeZone](datetimetimezone.md)|约会结束的日期、时间和时区。|
+|filledAttendeesCount|Int32|约会中的当前客户数。 |
 |id|String| **bookingAppointment** 的 ID。 只读。|
 |invoiceAmount|双精度|发票上的计费金额。|
 |invoiceDate|[dateTimeTimeZone](datetimetimezone.md)|此约会的发票的日期、时间和时区。|
@@ -52,24 +55,24 @@ ms.locfileid: "60696964"
 |invoiceUrl|String|Microsoft Bookings 中发票的 URL。|
 |isLocationOnline|布尔值|如果为 True，则表明该约会将在线进行。 默认值为 false。|
 |joinWebUrl|String|约会的在线会议 URL。|
-|optOutOfCustomerEmail|布尔值|True 表示此约会的 [bookingCustomer](bookingcustomer.md) 不希望收到有关此约会的确认。|
+|maximumAttendeesCount|Int32|约会中允许的最大客户数。|
+|optOutOfCustomerEmail|Boolean|True 表示此约会的 [bookingCustomer](bookingcustomer.md) 不希望收到有关此约会的确认。|
 |postBuffer|期限|例如，约会结束后要保留的清理时间量。 该值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。 |
 |preBuffer|期限|例如，在约会开始前保留准备的时间量。 该值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。|
 |price|双精度|指定 [bookingService](bookingservice.md)的约会的常规价格。|
-|priceType|string| 为服务的定价结构提供灵活性的设置。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
+|priceType|bookingPriceType| 为服务的定价结构提供灵活性的设置。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`、`unknownFutureValue`。|
 |reminders|[bookingReminder](bookingreminder.md) 集合|为此约会发送的客户提醒集合。 此属性的值仅在按其 ID 读取此 **bookingAppointment** 时可用。|
 |selfServiceAppointmentId|String|约会的附加跟踪 ID（如果约会是由客户直接在日程安排页面上创建的，而不是由员工代表客户创建的）。|
 |服务 Id|String|与此约会关联的 [bookingService](bookingservice.md) 的 ID。|
 |serviceLocation|[location](location.md)|服务交付位置。|
 |serviceName|String|与此约会关联的 **bookingService** 的名称。<br>创建新约会时，此属性是可选的。 如果未指定，则通过 **serviceId** 属性从与约会关联的服务计算该约会。|
 |serviceNotes|String|[bookingStaffMember 中的注释](bookingstaffmember.md)。 此属性的值仅在按其 ID 读取此 **bookingAppointment** 时可用。|
-|smsNotificationsEnabled|布尔值|如果为 True，则表明将发送给客户进行约会的短信通知。 默认值为 false。|
+|smsNotificationsEnabled|Boolean|如果为 True，则表明将发送给客户进行约会的短信通知。 默认值为 false。|
 |staffMemberIds|String collection|在此约会中 [安排的每个 bookingStaffMember](bookingstaffmember.md) 的 ID。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|约会开始的日期、时间和时区。|
 
 ## <a name="relationships"></a>关系
-无
-
+无。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -92,6 +95,11 @@ ms.locfileid: "60696964"
   "customerNotes": "String",
   "customerPhone": "String",
   "customerTimeZone": "String",
+  "customers": [
+    {
+      "@odata.type": "microsoft.graph.bookingCustomerInformation"
+    }
+  ],
   "duration": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
@@ -106,7 +114,7 @@ ms.locfileid: "60696964"
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
   "price": 1024,
-  "priceType": "string",
+  "priceType": {"@odata.type": "microsoft.graph.bookingPriceType"},
   "reminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
   "selfServiceAppointmentId": "String",
   "serviceId": "String",
@@ -115,7 +123,9 @@ ms.locfileid: "60696964"
   "serviceNotes": "String",
   "smsNotificationsEnabled": "Boolean",
   "staffMemberIds": ["String"],
-  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"}
+  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "maximumAttendeesCount": "Integer",
+  "filledAttendeesCount": "Integer"
 }
 
 ```

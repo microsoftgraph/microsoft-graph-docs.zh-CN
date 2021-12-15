@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c16eb6927367b13cc8d0cdad5d5e815f3e758139
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 6d93e29b6808197be3a6937518107d5e49a9ce9c
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424833"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524762"
 ---
 # <a name="create-linkedresource_v2"></a>创建linkedResource_v2
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61424833"
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
-|Application|Tasks.ReadWrite|
+|应用程序|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,9 +52,9 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 |属性|类型|说明|
 |:---|:---|:---|
 |applicationName|String|指示发送 **linkedResource** 的源的应用名称的字段。|
-|displayName|字符串|指示 **linkedResource 的标题的字段**。|
+|displayName|String|指示 **linkedResource 的标题的字段**。|
 |externalId|String|第三方/合作伙伴系统上与此任务关联的对象的 ID。|
-|WebUrl|String|指向 **linkedResource 的深层链接**。|
+|webUrl|String|指向 **linkedResource 的深层链接**。|
 
 ## <a name="response"></a>响应
 
@@ -63,6 +63,8 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_linkedresource_v2_from_"
@@ -79,6 +81,12 @@ Content-Type: application/json
     "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-linkedresource-v2-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

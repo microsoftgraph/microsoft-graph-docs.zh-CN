@@ -1,20 +1,22 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e835d5d1ebd7f29329d83af6abd108250f9a4c34
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fb1992c70142f7ef5e231c3bc2566b8f22a0e432
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59508064"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525886"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
+String targetServicePlanId = "30d0e128-de93-41dc-89ec-33d84bb662a0";
+
 graphClient.deviceManagement().managedDevices("{managedDeviceId}")
     .resizeCloudPc(ManagedDeviceResizeCloudPcParameterSet
         .newBuilder()
-        .withTargetServicePlanId(null)
+        .withTargetServicePlanId(targetServicePlanId)
         .build())
     .buildRequest()
     .post();

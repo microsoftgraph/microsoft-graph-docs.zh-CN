@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4a84a19f9af0ac8ad6144ccdf9091b94d3d4c9a7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e226e77717c048cc0e8001506a4b5b3a497aeccf
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005878"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525678"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
@@ -54,20 +54,21 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |defaultDuration|期限|服务的默认长度，以天数、小时数、分钟数和秒数表示。 例如，P11D23H59M59.9999999999S。 |
 |defaultLocation|[location](../resources/location.md)|服务的默认物理位置。|
 |defaultPrice|双精度|服务的默认货币价格。|
-|defaultPriceType|string|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
+|defaultPriceType|bookingPriceType|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`、`unknownFutureValue`。|
 |defaultReminders|[bookingReminder](../resources/bookingreminder.md) 集合|此服务约会的默认提醒集。 此属性的值仅在按其 ID 读取此 **bookingService** 时可用。|
-|说明|String|服务的文本说明。|
+|description|String|服务的文本说明。|
 |displayName|String|服务名称。|
-|emailAddress|String|电子邮件地址|
-|id|String| 只读。|
-|isHiddenFromCustomers|布尔|True 表示客户无法预订此服务。|
-|isLocationOnline|布尔|如果为 True，则表明该服务的约会将联机进行。 默认值为 false。|
+|id|字符串| 只读。|
+|isHiddenFromCustomers|布尔值|True 表示客户无法预订此服务。|
+|isLocationOnline|布尔值|如果为 True，则表明该服务的约会将联机进行。 默认值为 false。|
 |notes|String|有关此服务的其他信息。|
 |postBuffer|期限|此服务的约会结束后以及下一个客户约会可以预订之前进行缓冲的时间。|
 |preBuffer|期限|在此服务的约会可以启动之前缓冲的时间。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|用于确定如何创建和管理这种类型的服务的约会的策略集。|
-|smsNotificationsEnabled|布尔|如果为 True，则表明可以针对服务约会将短信通知发送给客户。 默认值为 false。|
+|smsNotificationsEnabled|Boolean|如果为 True，则表明可以针对服务约会将短信通知发送给客户。 默认值为 false。|
 |staffMemberIds|String collection|表示 [提供此服务](../resources/bookingstaffmember.md) 的员工。 |
+|customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) 集合|这包括与特定服务关联的一组自定义问题。 可选。|
+|maximumAttendeesCount|Int32|服务中允许的最大客户数。  |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
@@ -81,7 +82,7 @@ PATCH /bookingBusinesses/{id}/services/{id}
   "name": "update_bookingservice"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 Content-type: application/json
 
 {
@@ -105,7 +106,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingservice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-bookingservice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,16 +1,16 @@
 ---
 title: bookingWorkHours 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-localization_priority: Normal
+description: 表示对于 bookingBusiness 或 bookingStaffMember，一周中一天的工作时间集合。
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 0c6eec989e4c5474115810dfefe6578d7fc5deec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d503d23cd8f6652e4e25c4f03e73a348baecd310
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071673"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526175"
 ---
 # <a name="bookingworkhours-resource-type"></a>bookingWorkHours 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "48071673"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-代表 [bookingBusiness](bookingbusiness.md) 或 [bookingStaffMember](bookingstaffmember.md)的一周中一天的工作时间集。
+表示对于 [bookingBusiness](bookingbusiness.md) 或 [bookingStaffMember，](bookingstaffmember.md)一周中一天的工作时间集合。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|为期|String| 此实例所代表的星期中的一天。 可取值为：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday` 或 `saturday`。|
-|因此|[bookingWorkTimeSlot](bookingworktimeslot.md) 集合|一天中的开始/结束时间的列表。|
+|day|String| 此实例表示的一周中的一天。 可取值为：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday` 或 `saturday`。|
+|timeSlots|[bookingWorkTimeSlot](bookingworktimeslot.md) 集合|一天中的开始时间/结束时间列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

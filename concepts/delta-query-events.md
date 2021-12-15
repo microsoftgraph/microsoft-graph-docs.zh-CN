@@ -1,15 +1,15 @@
 ---
 title: '获取日历视图中事件的增量更改 '
 description: '日历视图是默认日历中特定日期/时间范围内的事件集合 (../me/calendarview)。 '
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 37d7231962fbf025064bba96594b019506b69794
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2734559d7c43b39cd3e144b1c78d2ebd5111fd27
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142430"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525496"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>获取日历视图中事件的增量更改 
 

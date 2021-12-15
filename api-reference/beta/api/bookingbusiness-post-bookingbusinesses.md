@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0e10fa80b926ac22bf794ec3d4f5f37a6da39cee
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7fac7b04bfe83d9c8374e604ad0affd33286a4f7
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990533"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525300"
 ---
 # <a name="create-bookingbusiness"></a>创建 bookingBusiness
 
@@ -94,7 +94,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-bookingbusiness-from-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-bookingbusiness-from-bookingbusinesses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -114,7 +114,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses/$entity",
-    "id":"fourthcoffee@M365B489948.onmicrosoft.com",
+    "id":"fourthcoffee@contoso.onmicrosoft.com",
     "displayName":"Fourth Coffee",
     "businessType":"",
     "phone":"206-555-0100",

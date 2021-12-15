@@ -1,18 +1,20 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cfc914da1bf86673ae729d111f9df3e677f8fc34
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 76050f9274218ce9add79a36273f50b6692bc2c9
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59508063"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525888"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var targetServicePlanId = "30d0e128-de93-41dc-89ec-33d84bb662a0";
+
 await graphClient.DeviceManagement.ManagedDevices["{managedDevice-id}"]
-    .ResizeCloudPc(null)
+    .ResizeCloudPc(targetServicePlanId)
     .Request()
     .PostAsync();
 

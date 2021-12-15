@@ -1,16 +1,16 @@
 ---
 title: 应用程序 API 概述
 description: 向 Azure AD 注册应用程序，以为其创建标识配置，允许其与 Azure AD 集成。
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 6aef637d7e24e1d023012d81a365766cd7b6625e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c0e264cb0b0b9b638741aeb0db774efd121c83e9
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028749"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526168"
 ---
 # <a name="applications-api-overview"></a>应用程序 API 概述
 

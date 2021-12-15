@@ -4,12 +4,12 @@ description: 提供有关从 Microsoft Azure Active Directory (Azure AD) Graph �
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 19f1691126317861d84e89fab44f9cdbaaaa7ea2
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 2c3f64045cc7bf0f03b661f20bd5eb7a1e3fcd97
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424327"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526063"
 ---
 # <a name="azure-ad-graph-to-microsoft-graph-migration-faq"></a>Azure AD Graph Microsoft Graph迁移常见问题解答
 
@@ -17,7 +17,7 @@ ms.locfileid: "61424327"
 
 ## <a name="how-is-microsoft-graph-different-from-azure-ad-graph-and-why-should-i-migrate-my-apps"></a>Microsoft Graph与Azure AD Graph，为什么应该迁移我的应用？
 
-该Azure AD Graph API 仅提供对 Azure AD 服务的访问权限。 Microsoft Graph API 提供了一个统一终结点，用于访问 Azure AD 服务和其他 Microsoft 服务 Microsoft Teams、Microsoft Exchange 和 Microsoft Intune。
+该Azure AD Graph API 仅提供对 Azure AD 服务的访问权限。 Microsoft Graph API 提供了一个统一终结点，用于访问 Azure AD 服务Microsoft 服务如 Microsoft Teams、Microsoft Exchange 和 Microsoft Intune。
 
 [Microsoft Graph](/graph/overview)还比 Microsoft Azure AD Graph。 因此，Azure AD Graph自 2020 年 6 月 30 日开始弃用，将于 2022 年 6 月 30 日停用。 2022 年 6 月 30 日之后，你的应用将不再收到来自 Azure AD Graph 的响应。 迁移到 Microsoft Graph以避免功能丢失。
 
@@ -34,7 +34,7 @@ ms.locfileid: "61424327"
 1. 以全局 [管理员角色](https://portal.azure.com) 登录到 Azure 门户。
 1. 搜索并选择 **"Azure Active Directory"。**
 1. 在“**管理**”之下，选择“**应用注册**”。
-1. 在应用 **注册窗口中** ，启用 **应用注册搜索预览**。 选择" **所有应用程序"** 选项卡，然后选择" **添加筛选器"** 选项。 从可用 **(** 列表中选择) 客户端客户端 ID"选项，然后选择"应用 **"。**  将弹出筛选器。
+1. 在应用 **注册窗口中** ，启用 **应用注册搜索预览**。 选择" **所有应用程序"** 选项卡，然后选择" **添加筛选器"** 选项。 从可用 **筛选器 (选择**") 客户端的 ID"选项，然后选择"应用 **"。**  将弹出筛选器。
 1. 在文本框中，输入你在步骤 1 中检索到的应用 ID， **然后选择应用**。 该列表已缩小到指定的应用。
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="按应用 ID 按应用进行筛选。" border="true":::
@@ -77,7 +77,7 @@ ms.locfileid: "61424327"
 1. 以全局 [管理员角色](https://portal.azure.com) 登录到 Azure 门户。
 1. 搜索并选择 **"Azure Active Directory"。**
 1. 在“**管理**”之下，选择“**应用注册**”。
-1. 在应用 **注册窗口中** ，启用 **应用注册搜索预览**。 选择" **所有应用程序"** 选项卡，然后选择" **添加筛选器"** 选项。 从可用 **(** 列表中选择) 客户端客户端 ID"选项，然后选择"应用 **"。**  将弹出筛选器。
+1. 在应用 **注册窗口中** ，启用 **应用注册搜索预览**。 选择" **所有应用程序"** 选项卡，然后选择" **添加筛选器"** 选项。 从可用 **筛选器 (选择**") 客户端的 ID"选项，然后选择"应用 **"。**  将弹出筛选器。
 1. 在文本框中输入应用 ID， **然后选择应用**。 该列表已缩小到指定的应用。
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="按应用 ID 按应用进行筛选。" border="true":::
@@ -134,16 +134,16 @@ ms.locfileid: "61424327"
 
 首先，我们建议你遵循应用迁移[规划](migrate-azure-ad-graph-planning-checklist.md)清单来帮助你将应用转换为 Microsoft Graph API。
 
-如果你发现了 Microsoft Graph 不支持 Azure AD Graph 中提供的功能的空白，请通过 Microsoft Q&A（使用[标记 azure-ad-graph-弃用](/answers/topics/azure-ad-graph-deprecation.html)）告诉我们。
+如果你发现了 Microsoft Graph 不支持 Azure AD Graph 中提供的功能的空白，请通过 Microsoft Q&A（使用[标记 azure-ad-graph-deprecation）](/answers/topics/azure-ad-graph-deprecation.html)告诉我们。
 
 如果仍然需要为应用程序Azure AD Graph权限，请使用以下解决方法之一。
 
 + 使用 Azure 门户查找组织使用的 API
 + 更新 Azure 门户上的应用程序清单
 + 使用 Microsoft[应用程序中](/graph/api/resources/application)的应用程序 API Graph [requiredResourceAccess](/graph/api/resources/requiredresourceaccess)对象
-+ 使用 Microsoft powerShell 中的[Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)   cmdlet Graph Cmdlet
++ 使用 Microsoft Graph PowerShell SDK 中的[Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)   cmdlet
 
-有关使用列出的解决方法的示例，请参阅使用[Microsoft Graph配置](migrate-azure-ad-graph-configure-permissions.md)应用注册Azure AD Graph所需的应用程序权限
+有关使用列出的解决方法的示例，请参阅使用[Microsoft Graph配置应用注册Azure AD Graph所需的应用程序权限](migrate-azure-ad-graph-configure-permissions.md)
 
 >**注意：** 在Azure AD Graph 2022 年 6 月 30 日之后，将不支持使用这些解决方法添加权限。 任何使用 Azure AD Graph的应用在 2022 年 6 月 30 日之后仍将停止运行。
 

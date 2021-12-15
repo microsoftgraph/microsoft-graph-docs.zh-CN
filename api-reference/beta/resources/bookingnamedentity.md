@@ -1,16 +1,16 @@
 ---
 title: bookingNamedEntity 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-localization_priority: Normal
+description: 这是 Microsoft Bookings 实体的基本类型，可提供显示名称，例如 bookingBusiness、bookingPerson、bookingService。
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 3302f364b3f16dc6327b9a1e9ab74161e122ebfb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d0700f6ac86d16ad00684d429a0f88fdb7a16a7
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071778"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525286"
 ---
 # <a name="bookingnamedentity-resource-type"></a>bookingNamedEntity 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48071778"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-这是 Microsoft 预订实体的基本类型，可提供显示名称，例如， [bookingBusiness](bookingbusiness.md)、 [bookingPerson](bookingperson.md)、 [bookingService](bookingservice.md)。
+这是 Microsoft Bookings 实体的基本类型，可提供显示名称，例如 bookingBusiness、bookingPerson、bookingService[](bookingperson.md)和[bookingCustomQuestion。](bookingcustomquestion.md) [](bookingbusiness.md) [](bookingservice.md)
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|String|派生实体的名称，与客户进行交互。|
+|displayName|String|派生实体的名称，该实体与客户交互。|
 |id|String| 派生实体的 ID。 只读。|
 
 ## <a name="relationships"></a>关系

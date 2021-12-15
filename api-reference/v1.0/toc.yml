@@ -481,7 +481,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -1405,6 +1405,104 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
+      - name: 客户预订
+        displayName: 'Bookings, Microsoft Bookings'
+        items:
+          - name: 概述
+            href: resources/booking-api-overview.md
+          - name: 预订业务
+            href: resources/bookingbusiness.md
+            items:
+              - name: 列出
+                href: api/bookingbusiness-list.md
+              - name: 创建
+                href: api/bookingbusiness-post-bookingbusinesses.md
+              - name: 获取
+                href: api/bookingbusiness-get.md
+              - name: 更新
+                href: api/bookingbusiness-update.md
+              - name: 删除
+                href: api/bookingbusiness-delete.md
+              - name: 发布
+                href: api/bookingbusiness-publish.md
+              - name: 取消发布
+                href: api/bookingbusiness-unpublish.md
+          - name: 预订约会
+            href: resources/bookingappointment.md
+            items:
+              - name: 列出日历视图
+                href: api/bookingbusiness-list-calendarview.md
+              - name: 列出约会
+                href: api/bookingbusiness-list-appointments.md
+              - name: 创建约会
+                href: api/bookingbusiness-post-appointments.md
+              - name: 获取约会
+                href: api/bookingappointment-get.md
+              - name: 更新约会
+                href: api/bookingappointment-update.md
+              - name: 删除约会
+                href: api/bookingappointment-delete.md
+              - name: 取消约会
+                href: api/bookingappointment-cancel.md
+          - name: 预订货币
+            href: resources/bookingcurrency.md
+            items:
+              - name: 列出
+                href: api/bookingcurrency-list.md
+              - name: 获取
+                href: api/bookingcurrency-get.md
+          - name: 预订自定义问题
+            href: resources/bookingcustomquestion.md
+            items:
+              - name: 列出
+                href: api/bookingbusiness-list-customquestions.md
+              - name: 创建
+                href: api/bookingbusiness-post-customquestions.md
+              - name: 获取
+                href: api/bookingcustomquestion-get.md
+              - name: 更新
+                href: api/bookingcustomquestion-update.md
+              - name: 删除
+                href: api/bookingcustomquestion-delete.md
+          - name: 预订客户
+            href: resources/bookingcustomer.md
+            items:
+              - name: 列出
+                href: api/bookingbusiness-list-customers.md
+              - name: 创建
+                href: api/bookingbusiness-post-customers.md
+              - name: 获取
+                href: api/bookingcustomer-get.md
+              - name: 更新
+                href: api/bookingcustomer-update.md
+              - name: 删除
+                href: api/bookingcustomer-delete.md
+          - name: 预订服务
+            href: resources/bookingservice.md
+            items:
+              - name: 列出
+                href: api/bookingbusiness-list-services.md
+              - name: 创建
+                href: api/bookingbusiness-post-services.md
+              - name: 获取
+                href: api/bookingservice-get.md
+              - name: 更新
+                href: api/bookingservice-update.md
+              - name: 删除
+                href: api/bookingservice-delete.md
+          - name: 预订职员
+            href: resources/bookingstaffmember.md
+            items:
+              - name: 列出
+                href: api/bookingbusiness-list-staffmembers.md
+              - name: 创建
+                href: api/bookingbusiness-post-staffmembers.md
+              - name: 获取
+                href: api/bookingstaffmember-get.md
+              - name: 更新
+                href: api/bookingstaffmember-update.md
+              - name: 删除
+                href: api/bookingstaffmember-delete.md
       - name: 设备和应用
         expanded: true
         items:
@@ -1534,7 +1632,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -4484,7 +4582,7 @@ items:
                 href: api/permission-update.md
               - name: 删除权限
                 href: api/permission-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -5801,7 +5899,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: 获取存储
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Microsoft 365激活
+              - name: Microsoft 365 激活
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: 获取用户详细信息
@@ -5810,7 +5908,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: 获取用户计数
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Microsoft 365活动用户
+              - name: Microsoft 365 活动用户
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: 获取用户详细信息
@@ -5819,7 +5917,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: 获取服务用户计数
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Microsoft 365组活动
+              - name: Microsoft 365 组活动
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: 获取组详细信息

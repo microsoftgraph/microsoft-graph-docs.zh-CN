@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 313f4c330f8d239dc84e36917073124e146a3304
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 5d869b921fc00c683cb1d26ff30761480d665a30
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424834"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524776"
 ---
 # <a name="basetask-move"></a>baseTask： move
 命名空间：microsoft.graph
@@ -57,7 +57,7 @@ POST /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}/move
 
 |参数|类型|说明|
 |:---|:---|:---|
-|destinationTaskListId|字符串|必须将[baseTask](../resources/basetask.md)对象移动到的[baseTaskList。](../resources/basetasklist.md)|
+|destinationTaskListId|String|必须将[baseTask](../resources/basetask.md)对象移动到的[baseTaskList。](../resources/basetasklist.md)|
 
 
 
@@ -68,6 +68,8 @@ POST /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}/move
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "basetask_move"
@@ -82,6 +84,12 @@ Content-length: 41
   "destinationTaskListId": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQqFxG"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/basetask-move-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -1,15 +1,15 @@
 ---
 title: 减少缺失订阅和更改通知
 description: 订阅更改通知的应用可能会删除其订阅并错过一些更改通知。 应用程序应实现逻辑以进行检测并恢复丢失的内容，以及恢复连续更改通知流程。
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 519178ee7609d615c32c628721b3154853273422
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fed0c61d8cdf933d126c3ae880494afef51530a5
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108749"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61523242"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications"></a>减少缺失订阅和更改通知
 

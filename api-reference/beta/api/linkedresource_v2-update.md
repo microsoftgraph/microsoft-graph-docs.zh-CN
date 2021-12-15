@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 91a7b521f1fbc836e591b3021a233a1c17d578a0
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 70554d1d64be0d3c497225ee25a124b3d52681d5
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424835"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526127"
 ---
 # <a name="update-linkedresource_v2"></a>更新linkedResource_v2
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61424835"
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
-|Application|Tasks.ReadWrite|
+|应用程序|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,18 +52,20 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 |属性|类型|说明|
 |:---|:---|:---|
 |applicationName|String|指示发送 **linkedResource** 的源的应用名称的字段。|
-|displayName|字符串|指示 **linkedResource 的标题的字段**。|
+|displayName|String|指示 **linkedResource 的标题的字段**。|
 |externalId|String|第三方/合作伙伴系统上与此任务关联的对象的 ID。|
-|WebUrl|String|指向 **linkedResource 的深层链接**。|
+|webUrl|String|指向 **linkedResource 的深层链接**。|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和更新](../resources/linkedresource_v2.md) linkedResource_v2对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [linkedResource_v2](../resources/linkedresource_v2.md) 更新的 linkedResource_v2 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_linkedresource_v2"
@@ -80,6 +82,12 @@ Content-Type: application/json
     "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-linkedresource-v2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 322e6b0dee9f2a66465096bd5e0f38a20a482483
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 40f2ede20d401f40e206bb17ef773e08820e849f
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452037"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61523179"
 ---
 # <a name="accessreviewschedulesettings-resource-type"></a>accessReviewScheduleSettings 资源类型
 
@@ -26,10 +26,10 @@ ms.locfileid: "60452037"
 | justificationRequiredOnApproval|Boolean | 指示是否要求审阅者提供其决策的理由。 默认值为 `false`。 |
 | defaultDecisionEnabled|Boolean | 指示在审阅者未响应时是启用还是禁用默认决策。 默认值为 `false`。 |
 | defaultDecision|String | 如果 **defaultDecisionEnabled** 为 ，则选择决策 `true` 。 可以是 、 `Approve` `Deny` 或 `Recommendation` 之一。 |
-| instanceDurationInDays|Int32 | 每次定期审阅的持续时间 (**accessReviewInstance**) 天数表示。 |
-| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | 使用标准定期对象定期Outlook设置。 仅 `weekly` 支持 `absoluteMonthly` **recurrencePattern 和 recurrencePattern。** 使用 **recurrenceRange 上的 属性 startDate** 确定审阅开始的哪一天。  |
+| instanceDurationInDays|Int32 | 每次定期审阅的持续时间 (**accessReviewInstance)** 天数表示。 |
+| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | 使用标准定期对象定期Outlook设置。  <br/><br/>**注意：** 仅 `weekly` 支持 `absoluteMonthly` **recurrencePattern 和 recurrencePattern。** 使用 **recurrenceRange 上的 属性 startDate** 确定审阅开始的哪一天。  |
 | autoApplyDecisionsEnabled|Boolean | 指示是否自动应用决策。 设置为 时，管理员必须在审阅者完成访问评审后手动 `false` 应用决策。 设置为 时，会在访问评审实例持续时间结束后自动应用决策，无论审阅 `true` 者是否已回复。 默认值为 `false`。 |
-| applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) 集合 | 可选字段。 介绍审阅完成后要采取的操作。 目前支持两种类型：默认 (`removeAccessApplyAction` 和) `disableAndDeleteUserApplyAction` 。 只需在 的情况下指定字段 `disableAndDeleteUserApplyAction` 。 |
+| applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) 集合 | 可选字段。 介绍审阅完成后要采取的操作。 目前支持两种类型：默认 (和 `removeAccessApplyAction` `disableAndDeleteUserApplyAction`) 。 只需在 的情况下指定字段 `disableAndDeleteUserApplyAction` 。 |
 | recommendationsEnabled|Boolean | 指示是启用还是禁用决策建议。 |
 
 ## <a name="relationships"></a>关系

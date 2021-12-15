@@ -1,16 +1,16 @@
 ---
 title: baseTaskList： delta
-description: 获取一组 baseTaskList 资源，这些资源已添加、删除或删除微软待办。
+description: 获取一组 baseTaskList 资源，这些资源已在 微软待办 中添加、删除或删除。
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9138ec9639bdfe2d1d372b008e6f83c12be9b03c
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 2448a287cd3b36edad9c338899d366e69c1685d6
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424829"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525248"
 ---
 # <a name="basetasklist-delta"></a>baseTaskList： delta
 命名空间：microsoft.graph
@@ -71,6 +71,8 @@ GET /users/{userId|userPrincipalName}/tasks/lists/delta
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "basetasklist_delta"
@@ -79,6 +81,24 @@ GET /users/{userId|userPrincipalName}/tasks/lists/delta
 ``` http
 GET https://graph.microsoft.com/beta/me/tasks/lists/delta
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/basetasklist-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/basetasklist-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/basetasklist-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/basetasklist-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

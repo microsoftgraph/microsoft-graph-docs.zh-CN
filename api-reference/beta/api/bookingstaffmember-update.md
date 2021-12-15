@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 423ad3b5d414249093c737b03a005d669379b753
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 3edc44a7de42cfde1e685bbe0479d578ad079f0d
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688610"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524656"
 ---
 # <a name="update-bookingstaffmember"></a>更新 bookingstaffmember
 
@@ -43,13 +43,13 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|布尔值|True 表示如果员工是 Microsoft 365用户，Bookings API 将使用 Microsoft 365 中的员工个人日历以及 **workingHours** 属性来确定可用性。 |
+|availabilityIsAffectedByPersonalCalendar|Boolean|True 表示如果员工是 Microsoft 365用户，Bookings API 将使用 Microsoft 365 中的员工个人日历以及 **workingHours** 属性来确定可用性。 |
 |colorIndex|Int32|标识表示员工成员的颜色。 颜色对应于 Bookings 应用中"员工 **详细信息** "页中的调色板。|
-|displayName|字符串|显示给客户的员工的姓名。|
-|emailAddress|String|员工成员的电子邮件地址。 这可以在企业Microsoft 365租户中，也可以在不同的电子邮件域中。 如果在业务的计划策略中将 **sendConfirmationsToOwner** 属性设置为 true，则使用此电子邮件地址。|
+|displayName|String|显示给客户的员工的姓名。|
+|emailAddress|String|员工成员的电子邮件地址。 它可以与企业Microsoft 365租户中，也可以在不同的电子邮件域中。 如果在业务的计划策略中将 **sendConfirmationsToOwner** 属性设置为 true，则使用此电子邮件地址。|
 |role|string| 员工在业务中的角色。 可能的值是：`guest`、`administrator`、`viewer`、`externalGuest`。|
-|timeZone|String|员工员工的时区。 有关可能值的列表，请参阅 [dateTimeTimeZone](../resources/datetimetimezone.md)。|
-|useBusinessHours|布尔值|True 表示员工的可用性由业务的业务 **Hours** 属性确定。 False 表示可用性由员工的工作 **室属性设置** 确定。|
+|timeZone|字符串|员工员工的时区。 有关可能值的列表，请参阅 [dateTimeTimeZone](../resources/datetimetimezone.md)。|
+|useBusinessHours|Boolean|True 表示员工的可用性由业务的业务 **Hours** 属性确定。 False 表示可用性由员工的 **workingHouse** 属性设置确定。|
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md) 集合|一周中每个员工可以预订的小时数范围。|
 
 ## <a name="response"></a>响应
@@ -64,7 +64,7 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
   "name": "update_bookingstaffmember"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148
 Content-type: application/json
 
 {

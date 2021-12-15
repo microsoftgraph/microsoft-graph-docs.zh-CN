@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cfa8c1e1749735d535f4950075fd8667020db616
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e3505c94f9ef16e7e19846ceaae9a8cdc3fc10dc
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990673"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525741"
 ---
 # <a name="update-bookingappointment"></a>更新 bookingappointment
 
@@ -49,6 +49,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |customerName|String|客户的名称。|
 |customerNotes|String|与此约会关联的客户的备注。 只有在通过 ID 读取 **此 bookingAppointment 时，才能** 获取该值。 <br> 只有在最初创建新客户的约会时，才能设置此属性。 此后，该值从 **customerId** 表示的客户计算。|
 |customerPhone|String|客户的电话号码。|
+|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) 集合|它向下列出了约会的客户属性。 约会将包含客户信息列表，每个单元将指示属于该约会的客户的属性。 可选。|
 |customerTimeZone|String|客户的时区。 有关可能值的列表，请参阅 [dateTimeTimeZone](../resources/datetimetimezone.md)。|
 |duration|期限|约会的长度，以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。 |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|约会结束的日期、时间和时区。|
@@ -57,19 +58,21 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |invoiceId|String|发票的 ID。|
 |invoiceStatus|string| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
 |invoiceUrl|String|Microsoft Bookings 中发票的 URL。|
-|isLocationOnline|布尔|如果为 True，则表明该约会将在线进行。 默认值为 false。|
-|optOutOfCustomerEmail|布尔|True 表示此约会的 [bookingCustomer](../resources/bookingcustomer.md) 不希望收到有关此约会的确认。|
+|filledAttendeesCount|Int32|约会中的当前客户数。 必填。|
+|isLocationOnline|Boolean|如果为 True，则表明该约会将在线进行。 默认值为 false。|
+|maximumAttendeesCount|Int32|约会中允许的最大客户数。 必填。|
+|optOutOfCustomerEmail|Boolean|True 表示此约会的 [bookingCustomer](../resources/bookingcustomer.md) 不希望收到有关此约会的确认。|
 |postBuffer|期限|例如，约会结束后要保留的清理时间量。 该值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。 |
 |preBuffer|期限|例如，在约会开始前保留准备的时间量。 该值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。|
 |price|双精度|指定 [bookingService](../resources/bookingservice.md)的约会的常规价格。|
-|priceType|string| 为服务的定价结构提供灵活性的设置。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
+|priceType|bookingPriceType| 为服务的定价结构提供灵活性的设置。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`、`unknownFutureValue`。|
 |reminders|[bookingReminder](../resources/bookingreminder.md) 集合|为此约会发送的客户提醒集合。 此属性的值仅在按其 ID 读取此 **bookingAppointment** 时可用。|
 |selfServiceAppointmentId|String|约会的附加跟踪 ID（如果约会是由客户直接在日程安排页面上创建的，而不是由员工代表客户创建的）。|
 |服务 Id|String|与此约会关联的 [bookingService](../resources/bookingservice.md) 的 ID。|
 |serviceLocation|[location](../resources/location.md)|服务交付位置。|
 |serviceName|String|与此约会关联的 **bookingService** 的名称。<br>创建新约会时，此属性是可选的。 如果未指定，则通过 **serviceId** 属性从与约会关联的服务计算该约会。|
 |serviceNotes|String|[bookingStaffMember 中的注释](../resources/bookingstaffmember.md)。 此属性的值仅在按其 ID 读取此 **bookingAppointment** 时可用。|
-|smsNotificationsEnabled|布尔|如果为 True，则表明将发送给客户进行约会的短信通知。 默认值为 false。|
+|smsNotificationsEnabled|Boolean|如果为 True，则表明将发送给客户进行约会的短信通知。 默认值为 false。|
 |staffMemberIds|String collection|在此约会中 [安排的每个 bookingStaffMember](../resources/bookingstaffmember.md) 的 ID。|
 |start|[dateTimeTimeZone](../resources/datetimetimezone.md)|约会开始的日期、时间和时区。|
 
@@ -78,7 +81,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-以下示例按天更改服务日期，并更新发票日期。
+以下示例将服务日期更改一天并更新发票日期。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -86,7 +89,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
   "name": "update_bookingappointment"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
 Content-type: application/json
 
 {
@@ -124,7 +127,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingappointment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-bookingappointment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

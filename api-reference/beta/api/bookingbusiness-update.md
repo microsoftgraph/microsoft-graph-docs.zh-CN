@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a6659791c201ad7c90f409bf87e15df6a8161d2f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b375d9c4788c6f129b177d8ddbe47e3675f5fcce
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003477"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525748"
 ---
 # <a name="update-bookingbusiness"></a>更新 bookingbusiness
 
@@ -48,7 +48,7 @@ PATCH /bookingBusinesses/{id}
 |businessType|String|业务类型。|
 |defaultCurrencyIso|String|在 Microsoft Bookings 上运营业务的货币代码。|
 |displayName|String|与客户交互的企业的名称。|
-|email|String|企业的电子邮件地址。|
+|email|字符串|企业的电子邮件地址。|
 |phone|String|企业的电话号码。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|指定如何为此业务创建预订。|
 |webSiteUrl|String|业务网站的 URL。|
@@ -65,7 +65,7 @@ PATCH /bookingBusinesses/{id}
   "name": "update_bookingbusiness"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
 Content-type: application/json
 
 {
@@ -95,7 +95,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-bookingbusiness-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

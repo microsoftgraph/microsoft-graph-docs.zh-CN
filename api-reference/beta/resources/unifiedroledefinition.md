@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 19b9c84e9ecb30e57e1c6b870bb369a3821a1621
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: c1d9f11a71aa9b6a611cab259801f34cd889deb5
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766773"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524628"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>unifiedRoleDefinition 资源类型
 
@@ -23,11 +23,9 @@ ms.locfileid: "59766773"
 目前支持以下 RBAC 提供程序：
 - 云电脑 
 - Intune (设备) 
-- Azure AD (目录)  
-- Azure AD (授权) 
+- 目录 (Azure AD)  
+- 权利管理 (Azure AD) 
 
-> [!NOTE]
-> 云电脑和权利管理 RBAC 提供程序当前仅支持[列表和](../api/rbacapplication-list-roledefinitions.md)[获取](../api/unifiedroledefinition-get.md)操作。
 
 ## <a name="methods"></a>方法
 
@@ -44,12 +42,12 @@ ms.locfileid: "59766773"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|String| unifiedRoleDefinition 的说明。 **isBuiltIn** 为 true 时为只读。 |
-|displayName|String| unifiedRoleDefinition 的 显示名称。 **isBuiltIn** 为 true 时为只读。 必需。  仅 `$filter` (`eq` `startsWith` 和运算符) 。|
+|displayName|String| unifiedRoleDefinition 的 显示名称。 **isBuiltIn** 为 true 时为只读。 必填。  仅 `$filter` (`eq` `startsWith` 和运算符) 。|
 |id|String| unifiedRoleDefinition 的唯一标识符。 键，不可为 null，只读。  仅 `$filter` (`eq` 运算符) 。 |
 |isBuiltIn|Boolean| 指示 unifiedRoleDefinition 是否属于产品或自定义中包含的默认集的标志。 只读。  仅 `$filter` (`eq` 运算符) 。|
 |isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false，则角色不能用于分配。 **isBuiltIn** 为 true 时为只读。 |
 |resourceScopes|String collection| 角色定义授予的作用域权限列表适用。 当前仅 `/` 受支持。 isBuiltIn 为 true 时为只读。 **请勿使用。这将很快被弃用。将作用域附加到角色分配** | 
-|rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) 集合| 角色中包含的权限列表。 **isBuiltIn** 为 true 时为只读。 必需。 |
+|rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) 集合| 角色中包含的权限列表。 **isBuiltIn** 为 true 时为只读。 必填。 |
 |templateId|String| 可以在 isBuiltIn 为 false 时设置的自定义模板标识符。 如果一个标识符在不同目录之间需要相同，则通常使用此标识符。 **isBuiltIn** 为 true 时为只读。 |
 |version|String| 指示 unifiedRoleDefinition 的版本。 **isBuiltIn** 为 true 时为只读。|
 
@@ -57,7 +55,7 @@ ms.locfileid: "59766773"
 
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|inheritsPermissionsFrom| [unifiedRoleDefinition](unifiedroledefinition.md) 集合| 给定角色定义从其继承的角色定义的只读集合。 仅 Azure AD 内置角色支持此属性。 |
+|inheritsPermissionsFrom| [unifiedRoleDefinition](unifiedroledefinition.md) 集合| 给定角色定义从其继承的角色定义的只读集合。 只有Azure AD角色才支持此属性。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

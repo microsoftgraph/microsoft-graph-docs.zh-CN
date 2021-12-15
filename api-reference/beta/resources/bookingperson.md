@@ -1,16 +1,16 @@
 ---
 title: bookingPerson 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-localization_priority: Normal
+description: 这是 Microsoft Bookings 业务中人员的基本类型，可以是 bookingCustomer 或 bookingStaffMember。
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 04fabd62ee89c275d25075de7b489e512ebe3167
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ad4cd1d587fb2ccd88727f24944bc4226e43b7f
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071771"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526182"
 ---
 # <a name="bookingperson-resource-type"></a>bookingPerson 资源类型
 
@@ -18,12 +18,14 @@ ms.locfileid: "48071771"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-这是 Microsoft 记帐企业中的人员的基本类型，可以是 [bookingCustomer](bookingcustomer.md) 或 [bookingStaffMember](bookingstaffmember.md)。
+这是 Microsoft Bookings 业务中人员的基本类型，可以是 [bookingCustomer](bookingcustomer.md) 或 [bookingStaffMember](bookingstaffmember.md)。
+
+继承自 [bookingNamedEntity](bookingnamedentity.md)
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|String|派生实体的名称，与客户进行交互。|
+|displayName|String|派生实体的名称，该实体与客户交互。 继承自 **bookingNamedEntity**。|
 |emailAddress|String|人员的电子邮件地址。|
 |id|String| 派生实体的 ID。 只读。|
 
