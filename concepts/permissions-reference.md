@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: f4e2929350b00fc2ba7180cd55652a161d6348bc
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 6b042408d89c265f4689d3c32ed33046ba15baf6
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390457"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545110"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -32,11 +32,22 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 * **AppFolder** 授予应用在 OneDrive 专用文件夹中读取和写入文件的权限。此约束仅在 [文件权限](#files-permissions)上公开，并且仅适用于 Microsoft 帐户。
 * 如果未指定 **任何约束**，则应用程序仅限于对已登录用户拥有的资源执行操作。例如，_User.Read_ 仅授予读取已登录用户的配置文件的特权，_Mail.Read_ 仅授予读取已登录用户邮箱中的邮件的权限。
 
-> **注意**：在委托场景中，授予应用的有效权限可能受到组织中已登录用户的特权的限制。
+> **注意**：在委托场景中，授予应用的有效权限会受到组织中已登录用户的特权的限制。
 
 ## <a name="microsoft-accounts-and-work-or-school-accounts"></a>Microsoft 帐户和工作或学校帐户
 
 并非所有权限都适用于 Microsoft 帐户和工作或学校帐户。 你可以检查每个权限组的 **支持的 Microsoft 帐户** 列，以确定特定权限是否对 Microsoft 帐户和/或工作或学校帐户有效。
+
+## <a name="limits-on-requested-permissions-per-app"></a>每个应用请求的权限限制
+
+Azure AD 限制客户端应用可以请求和同意的权限数。 这些限制取决于 `signInAudience` 应用的值，如应用清单中所示。 
+
+| signInAudience                     | 允许的用户                                            | 应用可以请求的最大权限   | 应用可以请求的最大 Microsoft Graph 权限   | 单个请求中可同意的最大权限         |
+| ---------------------------------- | -------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------- |
+| AzureADMyOrg                       | 注册应用的组织中的用户  | 400                                       | 400                                                       | 大约 155 个委派权限和大约 300 个应用程序权限 |
+| AzureADMultleOrgs                | 来自任何 Azure AD 组织的用户                     | 400                                       | 400                                                       | 大约 155 个委派权限和大约 300 个应用程序权限 |
+| PersonalMicrosoftAccount           | 消费者用户（如 Outlook.com 或 Live.com 帐户）  | 30                                        | 30                                                        | 30                                                                    |
+| AzureADandPersonalMicrosoftAccount | 消费者用户和来自任何 Azure AD 组织的用户  | 30                                        | 30                                                        | 30                                                                    |
 
 ## <a name="permissions-availability-status"></a>权限可用性状态
 
@@ -1162,7 +1173,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1920,11 +1931,8 @@ _Sites.Selected_ 应用程序权限仅在 Microsoft Graph API 中可用。
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-SubjectRightsRequest.Read.All* | 读取主体权利请求 | 允许应用代表已登录用户读取主体权利请求。 | 是 | 否 |
-SubjectRightsRequest.ReadWrite.All* | 读取和写入主体权利请求 | 允许应用代表已登录用户读取和写入主体权利请求。 | 是 | 否 |
-
-> **重要** 标有星号 (*) 的权限当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
-
+SubjectRightsRequest.Read.All | 读取主体权利请求 | 允许应用代表已登录用户读取主体权利请求。 | 是 | 否 |
+SubjectRightsRequest.ReadWrite.All | 读取和写入主体权利请求 | 允许应用代表已登录用户读取和写入主体权利请求。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 无。
@@ -1935,7 +1943,6 @@ SubjectRightsRequest.ReadWrite.All* | 读取和写入主体权利请求 | 允许
 - _SubjectRightsRequest.ReadWrite.All_：创建主体权利请求 (`POST /privacy/subjectrightsrequests`)。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
-
 
 ## <a name="tasks-permissions"></a>任务权限
 

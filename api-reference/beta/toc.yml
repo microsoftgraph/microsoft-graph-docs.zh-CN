@@ -509,7 +509,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置人员见解
+              - name: 设置见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -11436,7 +11436,7 @@ items:
                         href: api/softwareOathAuthenticationMethod-get.md
                       - name: 删除
                         href: api/softwareOathAuthenticationMethod-delete.md
-                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃) '
+                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃用) '
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: 列表
@@ -12231,6 +12231,8 @@ items:
                         href: api/accessreviewinstance-list.md
                       - name: 获取
                         href: api/accessreviewinstance-get.md
+                      - name: 更新
+                        href: api/accessreviewinstance-update.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstance-filterbycurrentuser.md
                       - name: '列出已弃 (审批) '
@@ -14949,7 +14951,7 @@ items:
                     href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
-              - name: 'Outlook任务 (已弃) '
+              - name: 'Outlook (任务) '
                 items:
                   - name: Outlook 任务
                     href: resources/outlooktask.md
@@ -14969,7 +14971,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: 添加附件
                     href: api/outlooktask-post-attachments.md
-              - name: 'Outlook已 (任务文件夹) '
+              - name: 'Outlook任务文件夹 (已弃) '
                 items:
                   - name: Outlook 任务文件夹
                     href: resources/outlooktaskfolder.md

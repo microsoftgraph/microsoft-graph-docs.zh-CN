@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 88b8dfa0da8e64272f4e03c8896d545bffcd1d58
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 89d94ea92be942ab35bf3a7e0bb4f85b4e7b9756
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226246"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545131"
 ---
 # <a name="get-meetingattendancereport"></a>获取 meetingAttendanceReport
 
@@ -20,7 +20,7 @@ ms.locfileid: "61226246"
 
 获取[onlineMeeting 的 meetingAttendanceReport。](../resources/meetingAttendanceReport.md) [](../resources/onlinemeeting.md) 每次联机会议结束时，都会为该会话生成一份与会者报告。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,20 +28,20 @@ ms.locfileid: "61226246"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | OnlineMeetingArtifact.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | OnlineMeetingArtifact.Read.All |
+| 应用程序 | OnlineMeetingArtifact.Read.All |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建应用程序访问 [策略，并](/graph/cloud-communication-online-meeting-application-access-policy) 授予用户权限。 这将授权策略中配置的应用代表该用户获取联机会议和/或联机会议项目 (请求路径中指定的用户 ID) 。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序访问策略，并授予用户权限。 这将授权策略中配置的应用代表该用户获取联机会议和/或联机会议项目 (请求路径中指定的用户 ID) 。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要按 ID 获取具有委派 () 和 `/me` () `/users/{userId}` 报告：
+若要按 ID 获取具有委派 () 和应用 `/me` () `/users/{userId}` 报告：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 ```
 
-若要获取具有委派的联机会议的最新会话的与会者报告， () `/me` 应用 () `/users/{userId}` 权限：
+若要获取具有委派访问权限的在线会议的最新会话的与会者报告， () `/me` 应用 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" }-->
 ```http
 GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
@@ -50,7 +50,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 
 > [!TIP]
 >
->- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+>- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
 >- `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 >- `reportId`是 [meetingAttendanceReport 对象的](../resources/meetingAttendanceReport.md) **ID。**
 
@@ -181,7 +181,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendance-report-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-attendance-report-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

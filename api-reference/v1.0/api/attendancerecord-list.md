@@ -5,22 +5,20 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6249fcc8fd3bcc76d2d47328b5a0613e389c7aa5
+ms.openlocfilehash: 8907d39fcc579d0cf8859e5729d5255c50a5aa4f
 ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545285"
+ms.locfileid: "61547516"
 ---
 # <a name="list-attendancerecords"></a>列出 attendanceRecords
 命名空间：microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 获取 [attendanceRecord 对象](../resources/attendancerecord.md) 及其属性的列表。
 
 > [!TIP]
-> 检索考勤记录的一种更方便的方式是，使用查询选项使记录符合考勤 `expand` 报告。 有关示例和更多详细信息，请参阅获取 [考勤报告](meetingattendancereport-get.md)。
+> 检索考勤记录的一种更方便的方式是，使用查询选项使记录符合考勤 `expand` 报告。 有关示例和更多详细信息，请参阅 [Get meetingAttendanceReport](meetingattendancereport-get.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -43,6 +41,8 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecord
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
+> [!TIP]
+>
 >- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
 >- `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 >- `reportId`是 [meetingAttendanceReport 对象的](../resources/meetingAttendanceReport.md) **ID。**
@@ -69,8 +69,6 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/atte
 
 ### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_attendancerecord"
@@ -78,30 +76,8 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/atte
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/attendanceReports/c9b6db1c-d5eb-427d-a5c0-20088d9b22d7/attendanceRecords
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-attendancerecord-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-attendancerecord-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-attendancerecord-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-attendancerecord-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[转到](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-attendancerecord-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>响应
 
@@ -109,7 +85,8 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceRep
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.attendanceRecord)"
+  "@odata.type": "microsoft.graph.attendanceRecord",
+  "isCollection": true
 }
 -->
 

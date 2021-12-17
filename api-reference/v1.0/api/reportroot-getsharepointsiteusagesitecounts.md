@@ -1,22 +1,22 @@
 ---
 title: 'reportRoot: getSharePointSiteUsageSiteCounts'
-description: 获取跨所有网站的文件总数和活跃文件数。 如果文件（用户或系统）在指定时间段内被保存、同步、修改或共享，则视为活跃文件（用户或系统）。
+description: 获取报告期间的总网站数和活跃网站数趋势。
 ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 994fe0d8153578d8aad91e452bc2b0da40b94034
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6dcab687a554088db167d7965a161e456807d8b3
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119147"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545096"
 ---
 # <a name="reportroot-getsharepointsiteusagesitecounts"></a>reportRoot: getSharePointSiteUsageSiteCounts
 
 命名空间：microsoft.graph
 
-获取跨所有网站的文件总数和活跃文件数。 如果文件（用户或系统）在指定时间段内被保存、同步、修改或共享，则视为活跃文件（用户或系统）。
+获取报告期间的总网站数和活跃网站数趋势。
 
 > **注意：** 有关不同报告视图和名称的详细信息，请参阅Microsoft 365 [报告 -](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)SharePoint使用率。
 

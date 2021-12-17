@@ -1,16 +1,16 @@
 ---
 title: patternedRecurrence 资源类型
 description: 定期模式和区域。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: harini84
-ms.openlocfilehash: baff2147ee0a9e03e4e55a143341171707dee2d7
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 9be505b1c9de704f1113e6cac3daa0396ca0949e
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579301"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545117"
 ---
 # <a name="patternedrecurrence-resource-type"></a>patternedRecurrence 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "52579301"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定期模式和区域。
+定期模式和区域。 此共享对象用于定义访问评审、日历[事件](event.md)和访问包分配在Azure AD。 [](accessreviewscheduledefinition.md) [](accesspackageassignment.md)
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|模式|[recurrencePattern](recurrencepattern.md)|事件发生的频率。 不要指定一次访问评审。|
+|模式|[recurrencePattern](recurrencepattern.md)|事件发生的频率。 不指定一次访问评审。 <br/><br/> 对于访问评审： <li>不要为一次访问评审指定此属性。 <li>  仅 **支持 interval** **、dayOfMonth** 和 **type** (`weekly` `absoluteMonthly` ，) [recurrencePattern 的属性](recurrencepattern.md) 。|
 |range|[recurrenceRange](recurrencerange.md)|事件的持续时间。|
 
 ## <a name="json-representation"></a>JSON 表示形式

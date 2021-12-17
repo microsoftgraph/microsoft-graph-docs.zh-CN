@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 82d7cfa6a4e966c7264be12fe23893c9cce2a8ef
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: c37ada5b19f915996e889e1f7dc91afec597c279
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560105"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545103"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -40,8 +40,8 @@ ms.locfileid: "60560105"
 | **应用** |||
 |[列出聊天中的应用](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) 集合 | 列出聊天网站中安装 (关联的会议) 。|
 |[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取安装在聊天会话和关联会议 (中的特定) 。|
-|[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联的会议 (应用中安装) 。|
-|[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天会话和关联会议 (安装的应用的) 。|
+|[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联的会议 (应用安装) 。|
+|[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天会话和相关会议 (中安装的应用的) 。|
 |[从聊天中卸载应用](../api/chat-delete-installedapps.md) | 无 | 从 (和) 会议记录中删除 (卸载) 。|
 | **选项卡** |||
 |[列出聊天中的选项卡](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到聊天 (关联的会议选项卡) 。|
@@ -50,7 +50,7 @@ ms.locfileid: "60560105"
 |[聊天中的"更新"选项卡](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | 更新聊天记录和相关会议 (选项卡) 。|
 |[从聊天中删除选项卡](../api/chat-delete-tabs.md) | 无 | 从 (和) 会议记录中删除 (取消固定选项卡) 。|
 
->**注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 ID，以及获取具有应用程序权限的 [/chats/getAllMessages](../api/subscription-post-subscriptions.md) 更改通知。
+>**注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 ID，以及从具有应用程序权限的 [/chats/getAllMessages](../api/subscription-post-subscriptions.md) 更改通知获取。
 
 ## <a name="properties"></a>属性
 
@@ -60,15 +60,15 @@ ms.locfileid: "60560105"
 | createdDateTime| dateTimeOffset|  创建聊天的日期和时间。 只读。|
 | id| String| 聊天的唯一标识符。 只读。|
 | lastUpdatedDateTime| dateTimeOffset|  上次更改聊天的日期和时间或成员列表。 只读。|
-| topic| String|   (可选) 聊天的主题或主题。 仅适用于群聊。|
-
+| topic| String|   (聊天) 主题或主题。 仅适用于群聊。|
+| webUrl | String| 聊天中聊天的 URL Microsoft Teams。 URL 应视为不透明的 blob，而不是解析的。 只读。 |
 
 ### <a name="chattype-values"></a>chatType 值 
 
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的;无法删除/添加成员。|
-|组               | 1     | 指示聊天是群聊。 可以针对 (聊天类型更新至少两) 名单大小。 稍后可以删除/添加成员。|
+|组               | 1     | 指示聊天是群聊。 至少 (两个人的名单) 可以针对此类型的聊天进行更新。 稍后可以删除/添加成员。|
 |meeting             | 2     | 指示聊天与联机会议相关联。 此类聊天仅在创建联机会议时创建。|
 |unknownFutureValue  | 3     | 可发展枚举 sentinel 值。 请勿使用。 |
 
@@ -96,7 +96,8 @@ ms.locfileid: "60560105"
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String"
+  "chatType": "string",
+  "webUrl": "string"
 }
 ```
 

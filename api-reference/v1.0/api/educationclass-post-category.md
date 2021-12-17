@@ -2,15 +2,15 @@
 title: 创建 educationCategory
 description: 创建新类别。
 ms.localizationpriority: medium
-author: mmast-msft
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 45e7bfd5affd70574ade93daba94caedc75735a6
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: fff998830261d8bc64dec12f87e9490679c322ad
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223745"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545138"
 ---
 # <a name="create-educationcategory"></a>创建 educationCategory
 
@@ -18,19 +18,20 @@ ms.locfileid: "61223745"
 
 在[educationClass 上创建新的 educationCategory。](../resources/educationcategory.md) [](../resources/educationclass.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | 不支持。 | 
+|应用程序 | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignmentCategories/$entity
+POST /education/classes/{id}/assignmentCategories
+
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -56,14 +57,14 @@ POST /education/classes/{id}/assignmentCategories/$entity
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/60eaa744-aa87-4276-b985-1633683119f8/assignmentCategories/$entity
+POST https://graph.microsoft.com/v1.0/education/classes/60eaa744-aa87-4276-b985-1633683119f8/assignmentCategories
 Content-type: application/json
 
 { 
   "displayName": "Quizzes"
 }
 ```
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-educationcategory-from-educationclass-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

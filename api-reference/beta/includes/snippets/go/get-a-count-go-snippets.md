@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ac71f981de7b05359f891d1fa6b0a1b1b01ed833
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 688bcd731b96274d194c10bf55490118f852bd2e
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348779"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61544907"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.GroupsRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.ApplicationsRequestBuilderGetQueryParameters{
     Filter: "startswith(displayName,%20'a')",
     Count: true,
     Top: 1,
@@ -21,11 +21,11 @@ requestParameters := &msgraphsdk.GroupsRequestBuilderGetQueryParameters{
 headers := map[string]string{
     "ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.GroupsRequestBuilderGetOptions{
+options := &msgraphsdk.ApplicationsRequestBuilderGetOptions{
     Q: requestParameters,
     H: headers,
 }
-result, err := graphClient.Groups().Get(options)
+result, err := graphClient.Applications().Get(options)
 
 
 ```

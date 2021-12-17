@@ -5,24 +5,24 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 24917d3052e0cf9ec5a54a9b81edb0955925e425
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f87ffd54073a4e7f414cbcb6c48bf92755cc33cc
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117919"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545250"
 ---
 # <a name="patternedrecurrence-resource-type"></a>patternedRecurrence 资源类型
 
 命名空间：microsoft.graph
 
-定期模式和区域。
+定期模式和区域。 此共享对象用于定义访问评审、日历[事件](event.md)和访问包分配在Azure AD。 [](accessreviewscheduledefinition.md) [](accesspackageassignment.md)
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|模式|[RecurrencePattern](recurrencepattern.md)|事件发生的频率。 不指定一次访问评审。|
-|区域|[RecurrenceRange](recurrencerange.md)|事件的持续时间。|
+|模式|[recurrencePattern](recurrencepattern.md)|事件发生的频率。 <br/><br/> 对于访问评审： <li>不要为一次访问评审指定此属性。 <li> 仅 **支持 interval** **、dayOfMonth** 和 **type** (`weekly` `absoluteMonthly` ，) [recurrencePattern 的属性](recurrencepattern.md) 。|
+|range|[recurrenceRange](recurrencerange.md)|事件的持续时间。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

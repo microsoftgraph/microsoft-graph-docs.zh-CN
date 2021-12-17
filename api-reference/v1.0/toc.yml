@@ -1330,16 +1330,29 @@ items:
             items:
               - name: 在线会议
                 href: resources/onlinemeeting.md
-              - name: 创建
-                href: api/application-post-onlinemeetings.md
-              - name: 获取
-                href: api/onlinemeeting-get.md
-              - name: 更新
-                href: api/onlinemeeting-update.md
-              - name: 删除
-                href: api/onlinemeeting-delete.md
-              - name: 创建或获取
-                href: api/onlinemeeting-createorget.md
+                items:
+                  - name: 创建
+                    href: api/application-post-onlinemeetings.md
+                  - name: 获取
+                    href: api/onlinemeeting-get.md
+                  - name: 更新
+                    href: api/onlinemeeting-update.md
+                  - name: 删除
+                    href: api/onlinemeeting-delete.md
+                  - name: 创建或获取
+                    href: api/onlinemeeting-createorget.md
+              - name: 考勤报告
+                href: resources/meetingAttendanceReport.md
+                items:
+                  - name: 列表
+                    href: api/meetingattendancereport-list.md
+                  - name: 获取
+                    href: api/meetingattendancereport-get.md
+                  - name: 考勤记录
+                    href: resources/attendancerecord.md
+                    items:
+                      - name: 列表
+                        href: api/attendancerecord-list.md
           - name: 状态
             href: resources/presence.md
             items:
@@ -5290,24 +5303,26 @@ items:
                     items:
                       - name: 列表
                         href: api/accessreviewinstance-list.md
-                      - name: 列出决策
-                        href: api/accessreviewinstance-list-decisions.md
                       - name: 获取
                         href: api/accessreviewinstance-get.md
+                      - name: 更新
+                        href: api/accessreviewinstance-update.md
+                      - name: 按当前用户筛选
+                        href: api/accessreviewinstance-filterbycurrentuser.md
+                      - name: 发送提醒
+                        href: api/accessreviewinstance-sendreminder.md
+                      - name: 停止
+                        href: api/accessreviewinstance-stop.md
                       - name: 接受建议
                         href: api/accessreviewinstance-acceptrecommendations.md
                       - name: 应用决策
                         href: api/accessreviewinstance-applydecisions.md
                       - name: 批处理记录决策
                         href: api/accessreviewinstance-batchrecorddecisions.md
-                      - name: 按当前用户筛选
-                        href: api/accessreviewinstance-filterbycurrentuser.md
                       - name: 重置决策
                         href: api/accessreviewinstance-resetdecisions.md
-                      - name: 发送提醒
-                        href: api/accessreviewinstance-sendreminder.md
-                      - name: 停止
-                        href: api/accessreviewinstance-stop.md
+                      - name: 列出决策
+                        href: api/accessreviewinstance-list-decisions.md
                   - name: 访问评审实例决策项
                     href: resources/accessreviewinstancedecisionitem.md
                     items:

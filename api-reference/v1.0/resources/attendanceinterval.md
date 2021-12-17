@@ -5,18 +5,16 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a0d6c609a97f0837d3cb0e80a86fb8a178e7a1c2
+ms.openlocfilehash: 643dcfa2e7c032fba93af164271150c41b6693b2
 ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/16/2021
-ms.locfileid: "61547679"
+ms.locfileid: "61547518"
 ---
 # <a name="attendanceinterval-resource-type"></a>attendanceInterval 资源类型
 
 命名空间：microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含与 [attendanceRecord](attendancerecord.md)中的出席间隔相关联的信息。
 
@@ -29,7 +27,7 @@ ms.locfileid: "61547679"
 | leaveDateTime | 日期时间 | 与会者以 UTC 离开的时间。 |
 
 > [!TIP]
-> 当缺少数据时 **，joinDateTime** 或 **leaveDateTime** 的值将设置为 `null` **，durationInSeconds** 的值将在 `0` Get [meetingAttendanceReport](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) 方法的响应正文中设置为 。
+> 当缺少数据时 **，joinDateTime** 或 **leaveDateTime** 的值将设置为 `null` **，durationInSeconds** 的值将在 `0` Get [meetingAttendanceReport](/graph/api/meetingattendancereport-get?view=graph-rest-v1.0&preserve-view=true) 方法的响应正文中设置为 。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -48,5 +46,5 @@ ms.locfileid: "61547679"
     "joinDateTime": "String (timestamp)",
     "leaveDateTime": "String (timestamp)",
     "durationInSeconds": "Int32"
-}  
+}
 ```

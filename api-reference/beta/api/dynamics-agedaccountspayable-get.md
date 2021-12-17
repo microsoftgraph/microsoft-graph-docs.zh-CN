@@ -4,15 +4,15 @@ description: 获取 Dynamics 365 Business Central 中应付款的已付款帐户
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 717b2df6664ae712f2d9e4c273eac13abf88a930
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b5a7aaa79522322c7bb21244aada3aaf8e98a49b
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046179"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545278"
 ---
 # <a name="get-agedaccountspayable"></a>获取 agedAccountsPayable
 
@@ -51,16 +51,16 @@ GET /financials/companies/{id}/agedAccountsPayable
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
-下面是一个请求示例。
+下面展示了示例请求。
 ```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
 ```
 
-**响应**
+### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面展示了示例响应。 
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

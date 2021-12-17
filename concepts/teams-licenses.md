@@ -4,12 +4,12 @@ description: 了解适用于 Microsoft Graph 中的 Microsoft Teams API 的许�
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: c59b13a68d16661212df21d9f710d0493e15c295
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: ca09c2fbfe2256f7858e12ed3ac3566025bfca2a
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390450"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545313"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Microsoft Graph 中 Microsoft Teams API 的许可和付款要求
 
@@ -17,7 +17,7 @@ ms.locfileid: "61390450"
 
 某些 API 提供通过 `model` 查询参数选择许可和付款模型的选项；其他 API 仅支持某一个模型或不支持许可和付款模型。以下许可模型可用：
 
-- [`model=A`](#modela-requirements) 限于执行[安全或合规性功能](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms)或需要[受支持的许可证](#required-licenses-for-modela)的应用程序。
+- [`model=A`](#modela-requirements) 限于执行[安全或合规性功能](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms)或需要[受支持的许可证](#required-licenses-for-modela)的应用程序。
 将来，应用还需要为其在[种子设定容量](#seeded-capacity)之外使用的消息付费。
 
 - [`model=B`](#modelb-requirements) 现在可以免费使用，但是，在将来，应用将根据它们使用的消息数向你收费。 `model=B` 没有许可要求，并且不限于执行安全性或合规性功能的应用程序。

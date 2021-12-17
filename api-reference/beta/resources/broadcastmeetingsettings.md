@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ca268c18f97db7609522a3bc6578acfd94d3ef0e
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: c91dda07a2a339bdee40e5ea2f953c2eab65ad98
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390834"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545355"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>broadcastMeetingSettings 资源类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "61390834"
 | 属性                   | 类型                     | 说明                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
 | allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | 定义谁可以加入Teams活动。 下表列出了可能的值。 |
+| captions | [broadcastMeetingCaptionSettings](../resources/broadcastmeetingcaptionsettings.md) | 实时事件的标题Teams设置。 |
 | isRecordingEnabled         | Boolean                  | 指示是否为此实时事件Teams录制。 默认值为 `false`。          |
 | isAttendeeReportEnabled    | Boolean                  | 指示是否为此实时事件启用Teams报告。 默认值为 `false`。    |
 | isQuestionAndAnswerEnabled | Boolean                  | 指示是否为此&事件启用了 Q Teams A。 默认值为 `false`。                |
@@ -45,16 +46,19 @@ ms.locfileid: "61390834"
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [],
   "@odata.type": "microsoft.graph.broadcastMeetingSettings"
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.broadcastMeetingSettings",
   "allowedAudience": "String",
   "isRecordingEnabled": "Boolean",
   "isAttendeeReportEnabled": "Boolean",
   "isQuestionAndAnswerEnabled": "Boolean",
-  "isVideoOnDemandEnabled": "Boolean"
+  "isVideoOnDemandEnabled": "Boolean",
+  "captions": {
+    "@odata.type": "microsoft.graph.broadcastMeetingCaptionSettings"
+  }
 }
 ```
 

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: d6f11bea8afcbb9a53f90789c32ea014bbee8f46
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2f1984c26f0a79b493b11cd17accd20b304e4ec1
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696047"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545341"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "60696047"
 
 包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                             | 返回类型                       | 说明                                                                                                  |
 | :----------------------------------------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------- |
@@ -33,10 +33,10 @@ ms.locfileid: "60696047"
 | 属性              | 类型                                          | 说明                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | 指定可在会议中成为演示者的人。 下表列出了可能的值。                          |
-| allowAttendeeToEnableCamera     | 布尔值                       | 指示与会者是否可以打开其相机。                          |
-| allowAttendeeToEnableMic     | 布尔值                       | 指示与会者是否可以打开其麦克风。                          |
+| allowAttendeeToEnableCamera     | Boolean                       | 指示与会者是否可以打开其相机。                          |
+| allowAttendeeToEnableMic     | Boolean                       | 指示与会者是否可以打开其麦克风。                          |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | 指定会议聊天的模式。 |
-| allowTeamworkReactions | 布尔值 | 指示是否Teams会议的反应。 |
+| allowTeamworkReactions | Boolean | 指示是否Teams会议的反应。 |
 | attendeeReport | Stream | 活动参与者报告的内容流Microsoft Teams[事件](/microsoftteams/teams-live-events/what-are-teams-live-events)。 只读。 |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (拨入) 联机会议的信息。 只读。                                                   |
 | broadcastSettings              | [broadcastMeetingSettings](broadcastMeetingSettings.md)                      | 设置实时事件相关。                                                                  |
@@ -44,13 +44,13 @@ ms.locfileid: "60696047"
 | creationDateTime      | 日期时间                                      | 会议创建时间（UTC）。 只读。                                                                               |
 | endDateTime           | 日期时间                                      | 会议结束时间（UTC）。                                                                                               |
 | id                    | String                                        | 与联机会议关联的默认 ID。 只读。                                                              |
-| isBroadcast  | 布尔值                                       | 指示这是否Teams[实时事件](/microsoftteams/teams-live-events/what-are-teams-live-events)。                  |
-| isEntryExitAnnounced  | 布尔值                                       | 指示呼叫者加入或离开时是否宣布。                                                                     |
+| isBroadcast  | Boolean                                       | 指示这是否Teams[事件](/microsoftteams/teams-live-events/what-are-teams-live-events)。                  |
+| isEntryExitAnnounced  | Boolean                                       | 指示呼叫者加入或离开时是否宣布。                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | 请求 HTTP 标头中指定的语言和区域设置变量中的 `Accept-Language` 联接信息。 只读。 |
 | joinWebUrl            | String                                        | 联机会议加入 URL。 只读。                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | 与联机会议关联的参与者。  这包括组织者和与会者。                       |
-| recordAutomatically | 布尔值 | 指示是否自动录制会议。 |
+| recordAutomatically | Boolean | 指示是否自动录制会议。 |
 | startDateTime         | 日期时间                                      | 会议开始时间（UTC）。                                                                                             |
 | subject               | String                                        | 联机会议的主题。                                                                                         |
 | videoTeleconferenceId | String                                        | 视频电话会议 ID。 只读。                                                                                  |
@@ -78,6 +78,12 @@ ms.locfileid: "60696047"
 | disabled           | 会议聊天被禁用。                                              |
 | limited            | 会议聊天已启用，但仅在会议呼叫期间启用。 |
 | unknownFutureValue | 未知未来值。                                                  |
+
+## <a name="relationships"></a>关系
+
+| 关系 | 类型 | 说明 |
+| ------------ | ---- | ----------- |
+| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  集合 | 联机会议与会者报告。 只读。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

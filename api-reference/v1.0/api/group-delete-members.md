@@ -5,18 +5,18 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9b4989b81dbd1f0ba1abcba6c63cf7238bed3eef
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 7cf15af53ba9322489b694a507741065881d3e8a
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290216"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524873"
 ---
 # <a name="remove-member"></a>删除成员
 
 命名空间：microsoft.graph
 
-使用此 API 通过 **成员** 导航属性从组中删除成员。
+使用此 API 通过 **成员** 导航属性从组中删除成员。 你不能从具有动态成员身份的组中删除成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

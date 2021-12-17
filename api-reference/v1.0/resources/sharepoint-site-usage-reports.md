@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 4a9d62c750cb234649c3e9b45d643f2845df41ae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 82ed0294ded68727fb373378871c07d08be74629
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035533"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545348"
 ---
 # <a name="sharepoint-site-usage-reports"></a>SharePoint 网站使用情况报表
 
@@ -22,11 +22,11 @@ SharePoint 网站使用情况报表可用于大致了解 SharePoint 带来的价
 
 ## <a name="reports"></a>报表
 
-| 函数                                 | 返回类型 | 说明                              |
-| :--------------------------------------- | :---------- | :--------------------------------------- |
-| [获取网站详细信息](../api/reportroot-getsharepointsiteusagedetail.md) | Stream      | 获取 SharePoint 网站使用情况的详细信息。 |
+| 函数                                                     | 返回类型 | 说明                                                  |
+| :----------------------------------------------------------- | :---------- | :----------------------------------------------------------- |
+| [获取网站详细信息](../api/reportroot-getsharepointsiteusagedetail.md) | Stream      | 获取 SharePoint 网站使用情况的详细信息。                     |
 | [获取文件数](../api/reportroot-getsharepointsiteusagefilecounts.md) | Stream      | 获取跨所有网站的文件总数和活跃文件数。 如果文件（用户或系统）在指定时间段内被保存、同步、修改或共享，则视为活跃文件（用户或系统）。 |
-| [获取网站数](../api/reportroot-getsharepointsiteusagesitecounts.md) | Stream      | 获取跨所有网站的文件总数和活跃文件数。 如果文件（用户或系统）在指定时间段内被保存、同步、修改或共享，则视为活跃文件（用户或系统）。 |
+| [获取网站数](../api/reportroot-getsharepointsiteusagesitecounts.md) | Stream      | 获取报告期间的总网站数和活跃网站数趋势。 |
 | [获取存储](../api/reportroot-getsharepointsiteusagestorage.md) | Stream      | 获取报表周期内分配和使用的存储趋势。 |
-| [获取页面数](../api/reportroot-getsharepointsiteusagepages.md) | Stream      | 获取跨所有网站浏览的页面数。 |
+| [获取页面数](../api/reportroot-getsharepointsiteusagepages.md) | Stream      | 获取跨所有网站浏览的页面数。             |
 
