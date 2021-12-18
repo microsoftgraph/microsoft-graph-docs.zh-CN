@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fe0fe8452e3a18ca2910a78276c79895e77e2f3d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 020b68061ed32ddcdaab801eef07e2422176440f
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024721"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567312"
 ---
 # <a name="update-educationassignmentdefaults"></a>更新 educationAssignmentDefaults
 命名空间：microsoft.graph
@@ -52,6 +52,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 |属性|类型|说明|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction| 在作业发布日期之后添加的学生的课堂级别默认操作。 可取值为：`none`、`assignIfOpen`。 默认值为 `none`。|
+|addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制 **发布** 作业时将作业添加到学生和教师日历 **的作业** 行为。 可能的值包括 `none`、`studentsAndPublisher`、`studentsAndTeamOwners`、`unknownFutureValue`、`studentsOnly`。 请注意，必须使用此可变化枚举 (请求) 获取以下 `Prefer: include - unknown -enum-members` [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` ： 。 可选。|
 |dueTime|TimeOfDay| "到期时间"字段的类级别默认值。 默认值为 `23:59:00`|
 |notificationChannelUrl|String| 默认Teams发送与分配相关的通知的通道。 默认值为 `null`。|
 
@@ -97,7 +98,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentdefaults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignmentdefaults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

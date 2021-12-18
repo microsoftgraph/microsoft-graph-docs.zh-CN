@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e5b7115a936264cf1380cd7b515454099eddbdba
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 786d364847297edea5538251c5701502c3ced7f2
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031099"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567305"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -50,8 +50,9 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| 描述是否应当将作业分发给在作业发布日期之后添加的学生。|
-|allowLateSubmissions|布尔| 学生是否可以在截止日期后发送提交。|
-|allowStudentsToAddResourcesToSubmission|布尔| 学生是否可以向提交中添加资源。 此外，指示提交中所有资源是否对应于工作分配资源列表。 |
+|addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制 **发布** 作业时将作业添加到学生和教师日历 **的作业** 行为。 可能的值包括 `none`、`studentsAndPublisher`、`studentsAndTeamOwners`、`unknownFutureValue`、`studentsOnly`。 请注意，必须使用此可变化枚举 (请求) 获取以下 `Prefer: include - unknown -enum-members` [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` ： 。 可选。|
+|allowLateSubmissions|布尔值| 学生是否可以在截止日期后发送提交。|
+|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以向提交中添加资源。 此外，指示提交中所有资源是否对应于工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 指示向学生发布作业的日期。 |
 |assignTo|educationAssignmentRecipient| 获得作业的学生。|
 |closeDateTime|DateTimeOffset| 工作分配关闭提交的日期。 如果分配不允许LateSubmissions或 closeDateTime 与 dueDateTime 相同，则该字段可以是 null 的可选字段，但如果指定，它必须大于或等于 dueDateTime。|
@@ -106,7 +107,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

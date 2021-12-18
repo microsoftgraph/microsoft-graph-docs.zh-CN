@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 1288bddd70c1ee82ed3f8056a295ecf3dfbc183c
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 2b0bf8890f4929d499b7a58f81d107f3b7c293d5
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525384"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567375"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -440,6 +440,25 @@ ms.locfileid: "61525384"
 |groupCall|
 |peerToPeer|
 |unknownFutureValue|
+
+### <a name="educationaddtocalendaroptions-values"></a>educationAddToCalendarOptions 值
+|Member|
+|:---|
+|无|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
+|unknownFutureValue|
+|studentsOnly|
+
+### <a name="educationsubmissionstatus-values"></a>educationSubmissionStatus 值
+|Member|
+|:---|
+|working|
+|submitted|
+|released|
+|已返回|
+|unknownFutureValue|
+|已重新分配|
 
 ### <a name="onlinemeetingrole-values"></a>onlineMeetingRole 值
 
@@ -1176,7 +1195,7 @@ ms.locfileid: "61525384"
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
-根据组定义， (用户帐户) 类型的Windows值。
+根据组定义， (用户帐户) 类型的) 值Windows值。
 
 |Member|成员|说明|
 |:---|:---|:---|
@@ -1681,7 +1700,7 @@ ms.locfileid: "61525384"
 
 |Member|
 |:---|
-|团队|
+|team|
 |channel|
 |聊天|
 |unknownFutureValue|
