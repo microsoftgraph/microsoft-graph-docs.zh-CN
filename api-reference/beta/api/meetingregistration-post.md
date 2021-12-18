@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c2133afc019878f0e0b461780486a1435acd9a51
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: edabeb0cee6148d55b1cf52052ababda367d9064
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011722"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561324"
 ---
 # <a name="create-meetingregistration"></a>创建 meetingRegistration
 
@@ -20,7 +20,7 @@ ms.locfileid: "61011722"
 
 代表组织者创建 [并启用 onlineMeeting](../resources/onlinemeeting.md) 注册。 联机会议只能启用一个注册。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,6 +46,9 @@ POST /me/onlineMeetings/{id}/registration
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供 [meetingRegistration](../resources/meetingregistration.md) 对象的 JSON 表示形式。
+
+> [!IMPORTANT]
+> 必须提供 **@odata.type** 属性以指定注册类型。 有关详细信息，[请参阅以下示例。](#example)
 
 ## <a name="response"></a>响应
 
@@ -73,6 +76,7 @@ POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRh
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.meetingRegistration",
   "subject":"Microsoft Ignite",
   "description": "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.",
   "startDateTime":"2021-11-02T08:00:00-08:00",
@@ -115,7 +119,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-registration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-registration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -139,6 +143,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/$entity",
+  "@odata.type": "#microsoft.graph.meetingRegistration",
   "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,2Hui7cZ3e0m1BblvyhKFaw,Bcn5itxWh0ui5zRxG26Akw,XCvoVSOmK0e9fivLeKuR_w",
   "registrationPageWebUrl": "https://teams.microsoft.com/registration/gWWckDBR6UOI8_yzWCzeNw,6pABiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,luiTigKrcUGE6Cm33MyQgA,29OIGSH4skyQNu6mNxJr3w,m2bnpmqE_EqwV1Q8dr280E?mode=read&tenantId=eefc0b3a-a334-4fb7-ac60-2f1cf13ec00d",
   "allowedRegistrant": "everyone",

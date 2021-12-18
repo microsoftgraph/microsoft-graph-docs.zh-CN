@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 87a9f71d44df2610021c0cc93aa42fc080d3f8d4
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: 72bf9ad32591dff339e090cd55e79a0d71b1164a
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60370335"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561515"
 ---
 # <a name="meetingregistration-resource-type"></a>meetingRegistration 资源类型
 
@@ -18,14 +18,16 @@ ms.locfileid: "60370335"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示联机会议（如网络研讨会）的[Microsoft Teams详细信息](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3)。
+包含联机会议（如网络研讨会）的[Microsoft Teams详细信息](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3)。 
 
-## <a name="methods"></a>方法
+继承自 [meetingRegistrationBase](meetingregistrationbase.md)。
+
+## <a name="methods"></a>Methods
 
 | 方法 | 返回类型 | 说明 |
 | :----- | :---------- | :---------- |
-|[Create](../api/meetingregistration-post.md) | [meetingRegistration](meetingregistration.md) | 创建并启用联机会议注册。 |
-|[Get](../api/meetingregistration-get.md) | [meetingRegistration](meetingregistration.md) | 检索会议注册的详细信息。 |
+|[创建](../api/meetingregistration-post.md) | [meetingRegistration](meetingregistration.md) | 创建并启用联机会议注册。 |
+|[获取](../api/meetingregistration-get.md) | [meetingRegistration](meetingregistration.md) | 检索会议注册的详细信息。 |
 |[更新](../api/meetingregistration-update.md) | [meetingRegistration](meetingregistration.md) | 更新会议注册的详细信息。 |
 |[删除](../api/meetingregistration-delete.md) | [meetingRegistration](meetingregistration.md) | 禁用和删除联机会议注册。 |
 
@@ -34,7 +36,7 @@ ms.locfileid: "60370335"
 | 属性 | 类型 | 说明 |
 | :------- | :--- | :---------- |
 | allowedRegistrant | [meetingAudience](#meetingaudience-values) | 指定可注册会议的人。 |
-| 说明 | String | 会议说明。 |
+| description | String | 会议说明。 |
 | endDateTime | 日期时间 | 会议结束时间（UTC）。 |
 | registrationPageViewCount | Int32 | 已访问注册页次数。 只读。 |
 | registrationPageWebUrl | String | 注册页的 URL。 只读。 |

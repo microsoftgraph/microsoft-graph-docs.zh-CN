@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: dbc90ecc79258ad150077d474fcdd8d4b29f6db6
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: 9d3a55ddd14cb33b02a69fb09c0721f3c9986fdb
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60369456"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561346"
 ---
 # <a name="meetingregistrant-resource-type"></a>meetingRegistrant 资源类型
 
@@ -18,14 +18,16 @@ ms.locfileid: "60369456"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示已注册联机会议的会议 [注册人](onlinemeeting.md)。
+表示已注册联机会议的会议 [注册人](onlinemeeting.md)。 
 
-## <a name="methods"></a>方法
+继承自 [meetingRegistrantBase](meetingregistrantbase.md)。
+
+## <a name="methods"></a>Methods
 
 | 方法 | 返回类型 | Description |
 | :----- | :---------- | :---------- |
 |[List](../api/meetingregistration-list-registrants.md) | [meetingRegistrant](meetingregistrant.md) | 列出已注册会议的所有注册人。 |
-|[Create](../api/meetingregistration-post-registrants.md) | [meetingRegistrant](meetingregistrant.md) | 在联机会议中注册注册人。 |
+|[创建](../api/meetingregistration-post-registrants.md) | [meetingRegistrant](meetingregistrant.md) | 在联机会议中注册注册人。 |
 |[删除](../api/meetingregistrant-delete.md) | [meetingRegistrant](meetingregistrant.md) | 从联机会议取消注册注册。 |
 
 ## <a name="properties"></a>属性
@@ -33,13 +35,13 @@ ms.locfileid: "60369456"
 | 属性 | 类型 | 说明 |
 | :------- | :--- | :---------- |
 | customQuestionAnswers | [customQuestionAnswer](customQuestionAnswer.md) 集合 | 注册人对自定义问题的答案。 |
-| email | String | 注册人的电子邮件地址。 |
+| email | 字符串 | 注册人的电子邮件地址。 |
 | firstName | String | 注册人的名字。 |
-| id | String | 注册人 ID。 只读。 |
+| id | String | 注册表的唯一标识符。 只读。 |
 | joinWebUrl | String | 注册人加入会议的唯一 Web URL。 只读。 |
 | lastName | String | 注册表项的姓氏。 |
 | registrationDateTime | String | 注册人注册会议的时间（UTC）。 只读。 |
-| status | [meetingRegistrantStatus](#meetingregistrantstatus-values) | 注册人注册状态。 只读。 |
+| 状态 | [meetingRegistrantStatus](#meetingregistrantstatus-values) | 注册人注册状态。 只读。 |
 
 ### <a name="meetingregistrantstatus-values"></a>meetingRegistrantStatus 值
 
