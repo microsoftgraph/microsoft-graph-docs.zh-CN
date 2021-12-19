@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6b042408d89c265f4689d3c32ed33046ba15baf6
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 02a37f6a80c6bfa373583c7ceeaa06c026b11ce8
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545110"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567347"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -961,6 +961,7 @@ Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问
 | _Group.ReadWrite.All_ |    读取和写入所有组| 允许应用代表登录用户创建组并读取所有组属性和成员身份。  此外，还允许应用读取和写入登录用户可以访问的所有组的日历、对话、文件和其他组内容。 此外，还允许组所有者管理他们的组并允许组成员更新组内容。 | 是 | 否 |
 | _GroupMember.Read.All_ |    读取组成员身份 | 允许应用列出组、读取基本组属性以及读取登录的用户有权访问的所有组的成员身份。 | 是 | 否 |
 | _GroupMember.ReadWrite.All_ |    读取和写入组成员身份 | 允许应用列出组、读取基本属性、读取和更新登录的用户有权访问的组的成员身份。 无法更新组属性和所有者，并且无法删除组。 | 是 | 否 |
+| _UnifiedGroupMember.Read.AsGuest_ |    以来宾用户身份读取统一 (Microsoft 365) 组成员身份 | 允许应用读取登录来宾所属组的基本统一组属性、成员身份和组所有者。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1173,7 +1174,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1329,7 +1330,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。

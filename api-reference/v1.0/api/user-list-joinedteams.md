@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7fefd7017e217df49414a09ed81c33365a07e697
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b3e50e2f95665d27d1d5bcad137ea15696cea3c0
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015972"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561494"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -54,13 +54,13 @@ GET /users/{id | user-principal-name}/joinedTeams
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回`200 OK`响应代码和[team](../resources/team.md)对象集合。
+如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [team](../resources/team.md) 对象的集合。
 
 > [!Note]
 > 目前，此 API 调用仅返回 [团队](../resources/team.md)的 **id**、**displayName** 和 **说明** 属性。 若要获取所有属性，请使用[获取团队](../api/team-get.md)操作。 有关详细信息，请参阅[已知问题](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams)。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 以下示例显示了一个请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -87,13 +87,13 @@ GET https://graph.microsoft.com/v1.0/me/joinedTeams
 [!INCLUDE [sample-code](../includes/snippets/java/get-joinedteams-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-joinedteams-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 以下示例显示了相应的响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
