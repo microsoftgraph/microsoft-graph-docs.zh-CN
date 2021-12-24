@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bc0b8e74c3b14f32ef5bfca0c875019a26376ea7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0327de074e102354e8e2ae9cb3e8e23f9e26fb8c
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033445"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604201"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
 
@@ -48,9 +48,9 @@ GET /users/{id}/licenseDetails
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [licenseDetails](../resources/licensedetails.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [licenseDetails](../resources/licensedetails.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -77,13 +77,13 @@ GET https://graph.microsoft.com/beta/me/licenseDetails
 [!INCLUDE [sample-code](../includes/snippets/java/get-licensedetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-licensedetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

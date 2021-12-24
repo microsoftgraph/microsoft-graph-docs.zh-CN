@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: c3726459f31976bf687dd0a80f3cd3a8b4062116
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 5ab0d5fcec2156f4b5f69e38594bc25a29b6b400
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390808"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604404"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -87,6 +87,10 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
+## <a name="request-body"></a>请求正文
+
+在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。
+
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [subscription](../resources/subscription.md) 对象。
@@ -94,7 +98,7 @@ POST /subscriptions
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面是在用户收到新邮件时请求发送更改通知的示例。
 
@@ -133,7 +137,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -142,7 +146,7 @@ Content-type: application/json
 
 在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。`clientState` 和 `latestSupportedTlsVersion` 字段是可选的。
 
-##### <a name="resources-examples"></a>资源示例
+#### <a name="resources-examples"></a>资源示例
 
 订阅资源属性的有效值如下：
 
@@ -165,9 +169,10 @@ Content-type: application/json
 
 > **注意：** 以 `me` 开头的任何路径也可与 `users/{id}`（而不是 `me`）一起使用，从而以特定用户为目标，而不是以当前用户为目标。
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -193,7 +198,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="notification-endpoint-validation"></a>通知终结点验证
+#### <a name="notification-endpoint-validation"></a>通知终结点验证
 
 通知终结点（于 `notificationUrl` 属性中指定）必须能够响应验证请求，如[设置用户数据更改的通知](/graph/webhooks#notification-endpoint-validation)中所述。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
 

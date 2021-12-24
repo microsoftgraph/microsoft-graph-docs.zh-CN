@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0098c54c04272ac453249e388847c16c11b49d44
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4faed46734550b9291baa0663c5f20e792d79bc6
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032478"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604229"
 ---
 # <a name="delete-educationuser"></a>删除 educationUser
 
@@ -20,7 +20,7 @@ ms.locfileid: "61032478"
 
 删除用户。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,9 +52,9 @@ DELETE /education/users/{id}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-下面是一个请求示例。
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -80,13 +80,13 @@ DELETE https://graph.microsoft.com/beta/education/users/13019
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-educationuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。 
 <!-- {

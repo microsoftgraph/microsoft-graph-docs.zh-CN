@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: fd7c366a86e07214a4971326916c1eeb70e5a607
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 8675aafcba991ebff4d62f221daa1af599eb2303
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321825"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604313"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -35,6 +35,7 @@ ms.locfileid: "61321825"
 |[更新应用程序](../api/application-update.md) | [application](application.md) |更新 application 对象。 |
 |[删除应用程序](../api/application-delete.md) | 无 |删除 application 对象。 |
 |[列出已删除的应用程序](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索最近删除的应用程序的列表。 |
+| [列出用户拥有的已删除应用程序](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 检索租户中最近 30 天内删除的应用程序以及用户拥有的应用程序。 |
 |[获取已删除的应用程序](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | 检索最近删除的应用程序的属性。 |
 |[永久删除应用程序](../api/directory-deleteditems-delete.md) | 无 | 永久删除应用程序。 |
 |[还原已删除的应用程序](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | 还原最近删除的应用程序。 |

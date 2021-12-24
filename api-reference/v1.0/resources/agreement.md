@@ -1,24 +1,24 @@
 ---
 title: 协议资源类型
-description: 表示通过 Azure AD Azure Active Directory (创建和管理的租户可自定义) 。
+description: 表示租户的可自定义使用条款协议，该协议是使用 Azure Active Directory (Azure AD) 。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: f77172c3ddae5799ce1c46dec09fe468b67606ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 21563f8a0c884c1b290a4dad8c807e7b2e9d3e81
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089982"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604397"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
 命名空间：microsoft.graph
 
-表示通过 Azure AD Azure Active Directory (创建和管理的租户可自定义) 。 您可以使用以下方法根据你的方案创建和管理Azure Active Directory[使用条款](/azure/active-directory/active-directory-tou)"功能。
+表示租户的可自定义使用条款协议，该协议是使用 Azure Active Directory (Azure AD) 。 您可以使用以下方法根据你的方案创建和管理Azure Active Directory[使用条款](/azure/active-directory/conditional-access/terms-of-use)"功能。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -33,8 +33,8 @@ ms.locfileid: "59089982"
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。 The 显示名称 is used for internal tracking of the agreement but is not shown to end users who view the agreement.|
 |id|String| 协议的标识符。 只读。|
-|isPerDeviceAcceptanceRequired|Boolean|指示最终用户是否需要在从其访问它的每个设备上接受此协议。 如果最终用户尚未在 Azure AD 中注册其设备，则要求他们这样做。|
-|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须扩展协议才能接受。|
+|isPerDeviceAcceptanceRequired|布尔值|指示最终用户是否需要在从其访问它的每个设备上接受此协议。 如果最终用户尚未注册设备，Azure AD注册设备。|
+|isViewingBeforeAcceptanceRequired|布尔值|指示用户是否必须扩展协议才能接受。|
 |termsExpiration|[termsExpiration](termsexpiration.md)| 所有用户的过期日程安排和协议频率。 |
 |userReacceptRequiredFrequency|期限|用户必须重新接受使用条款的持续时间。 该值以 ISO 8601 格式表示，持续时间为。|
 

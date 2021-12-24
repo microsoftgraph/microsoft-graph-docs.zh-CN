@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b628000d2f38471f6c286ac5771425dc48a53682
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fdbd13b2f3c4e300c5996533e2f0dd500e80fadb
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006395"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604299"
 ---
 # <a name="get-deleted-item"></a>获取已删除项目
 
@@ -19,6 +19,8 @@ ms.locfileid: "61006395"
 检索[已删除的项目](../resources/directory.md)中最近删除项目的属性。
 
 目前，仅应用程序、组和用户资源支持已删除的项目[](../resources/application.md)功能。 [](../resources/group.md) [](../resources/user.md)
+
+>**注意：** 已删除的安全组和通讯组列表将永久删除，无法通过此 API 进行检索。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -96,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

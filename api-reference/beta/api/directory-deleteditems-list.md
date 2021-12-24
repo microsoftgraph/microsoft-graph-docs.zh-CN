@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fb0ce82629ae39c07f8f5d404e7d43dfa83f014c
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 4e8f7415ca2db77620e3b83a8f2aacc017b4cb00
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226545"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604264"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -22,7 +22,9 @@ ms.locfileid: "61226545"
 
 目前，仅应用程序、组和用户资源支持[已删除项目功能](../resources/user.md)。 [](../resources/group.md) [](../resources/application.md)
 
-## <a name="permissions"></a>Permissions
+>**注意：** 已删除的安全组和通讯组列表将永久删除，无法通过此 API 进行检索。
+
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +50,7 @@ ms.locfileid: "61226545"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
+|应用程序 | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +60,7 @@ GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-此 API 当前支持检索应用程序的对象类型 () 、组 () 用户 () `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` 已删除项目。 OData 转换类型是 URI 的必需部分，不支持在没有类型 `GET /directory/deleteditems` 的情况下 **调用** 。
+此 API 当前支持检索应用程序的对象类型 () 、组 () 用户 () `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` 删除的项目。 OData 转换类型是 URI 的必需部分，不支持在没有类型 `GET /directory/deleteditems` 的情况下 **调用** 。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -73,7 +75,7 @@ ConsistencyLevel: eventual
 
 ### <a name="examples-using-the-orderby-odata-query-parameter"></a>使用 OData $orderBy参数的示例
 
-`$orderBy`在已删除的对象类型的 **deletedDateTime** **、displayName** 和 **userPrincipalName** 属性上支持 OData 查询参数。 在 **deletedDateTime** 属性上，查询需要将 [](/graph/aad-advanced-queries)高级查询参数 (**ConsistencyLevel** 标头设置为 ，并指定 `true` `$count=true` 查询字符串) 。
+`$orderBy`在已删除的对象类型的 **deletedDateTime** **、displayName** 和 **userPrincipalName** 属性上支持 OData 查询参数。 在 **deletedDateTime** 属性上，查询需要将 [](/graph/aad-advanced-queries)高级查询参数 (**ConsistencyLevel** 标头设置为 ，并 `true` 添加 `$count=true` 查询字符串) 。
 
 | OData 转换 | 支持属性$orderBy | 示例 |
 | :--- | :--- | :--- |
@@ -82,7 +84,7 @@ ConsistencyLevel: eventual
 | microsoft.graph.application | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.application？$orderBy=displayName |
 | microsoft.graph.device | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.device？$orderBy=deletedDateTime&$count=true |
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
@@ -124,7 +126,7 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.grou
 [!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-deleteditems-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -189,7 +191,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-deleteditems-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

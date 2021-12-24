@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序，以在 Microsoft 数据或资源发生更改时Graph更改通知。
+description: 订阅侦听器应用程序，以在 Microsoft 资源发生更改时Graph更改通知。
 ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 88629f81300284bebe3276b437b406ece1b10360
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 0513533031b7f8bc5bd35dd2cf080dfd7ff2d577
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424656"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604419"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -60,7 +60,7 @@ ms.locfileid: "61424656"
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All，TeamSettings.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-|[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
@@ -101,6 +101,10 @@ POST /subscriptions
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
+
+## <a name="request-body"></a>请求正文
+
+在请求正文中，提供 subscription 对象的 JSON [表示](../resources/subscription.md) 形式。
 
 ## <a name="response"></a>响应
 
@@ -151,7 +155,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -218,9 +222,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="notification-endpoint-validation"></a>通知终结点验证
+#### <a name="notification-endpoint-validation"></a>通知终结点验证
 
-notificationUrl (中指定的订阅通知终结点) 必须能够响应验证请求，如设置用户数据更改的通知[中所述](/graph/webhooks#notification-endpoint-validation)。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
+notificationUrl (中指定的订阅通知终结点) 必须能够响应验证请求，如设置用户数据更改[的通知中所述](/graph/webhooks#notification-endpoint-validation)。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
 
 [error-response]: /graph/errors
 

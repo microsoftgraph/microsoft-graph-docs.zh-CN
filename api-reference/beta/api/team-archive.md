@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b4c710a0fd78a07de14c48b576084c3d12121525
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 99d1dda8a367b3f356a77a619ef6f73d8fb45ff8
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026066"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604411"
 ---
 # <a name="archive-team"></a>存档团队
 
@@ -22,7 +22,7 @@ ms.locfileid: "61026066"
 
 存档是异步操作。该异步操作成功完成后，团队即已存档，此 API 作出响应后就可能出现此情况。
 
-要对团队存档，团队和[组](../resources/group.md)都必须有一个所有者。
+若要存档团队，团队和 [组必须具有](../resources/group.md) 所有者。
 
 要从存档状态还原团队，请使用 API [取消存档](team-unarchive.md)。
 
@@ -63,7 +63,7 @@ POST /teams/{id}/archive
 如果成功开始存档，此方法将返回一个 `202 Accepted` 响应代码。 响应还将包含一个 `Location` 标头，后者包含创建用于处理团队存档操作的 [teamsAsyncOperation](../resources/teamsasyncoperation.md) 的位置。 可通过向此位置发出 GET 请求，查看存档操作的状态。
 
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -90,13 +90,13 @@ POST https://graph.microsoft.com/beta/teams/{id}/archive
 [!INCLUDE [sample-code](../includes/snippets/java/archive-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/archive-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 响应示例如下所示。
 <!-- {
   "blockType": "response",

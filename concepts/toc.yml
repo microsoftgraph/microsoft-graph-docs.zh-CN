@@ -536,7 +536,7 @@ items:
           - name: 限制
             href: throttling.md
           - name: 更改通知
-            displayName: 'Webhooks, cloud printing, Unviersal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            displayName: 'Webhooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             items:
               - name: 概述
                 href: webhooks.md

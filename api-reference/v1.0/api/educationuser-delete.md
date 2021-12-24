@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 60bce4bf6d4570728ba71bc645398331f36278d4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a60c1621ab1355aef86fdb8110da3dce0a91fd2a
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016237"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604362"
 ---
 # <a name="delete-educationuser"></a>删除 educationUser
 
@@ -29,6 +29,7 @@ ms.locfileid: "61016237"
 |应用程序 | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/users/{id}
@@ -46,8 +47,8 @@ DELETE /education/users/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -73,13 +74,13 @@ DELETE https://graph.microsoft.com/v1.0/education/users/{user-id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-educationuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 <!-- {
   "blockType": "response",

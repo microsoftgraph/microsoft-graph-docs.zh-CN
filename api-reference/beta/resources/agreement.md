@@ -1,16 +1,16 @@
 ---
 title: 协议资源类型
-description: 表示租户的可自定义使用条款协议，该协议是使用 Azure AD (Azure Active Directory) 。
-localization_priority: Normal
+description: 表示租户的可自定义使用条款协议，该协议是使用 Azure Active Directory (Azure AD) 。
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: bb1de9d03de4d891ef91d076ccbd41e6b569e3f8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c3d4fae159ef6c4187d042b97c02d8332b0af0d9
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433199"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604320"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50433199"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示租户的可自定义使用条款协议，该协议是使用 Azure AD (Azure Active Directory) 。 可以使用以下方法根据你的方案创建和管理 Azure [Active Directory](/azure/active-directory/active-directory-tou) 使用条款功能。
+表示租户的可自定义使用条款协议，该协议是使用 Azure Active Directory (Azure AD) 。 您可以使用以下方法根据你的方案创建和管理Azure Active Directory[使用条款](/azure/active-directory/conditional-access/terms-of-use)"功能。
 
 ## <a name="methods"></a>Methods
 
@@ -37,22 +37,22 @@ ms.locfileid: "50433199"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|协议的显示名称。 此显示名称用于协议的内部跟踪，但不向查看协议的最终用户显示。|
-|id|String| 只读。|
-|isPerDeviceAcceptanceRequired|布尔|此设置使你能够要求最终用户在从其访问它的每个设备上接受此协议。 如果最终用户尚未在 Azure AD 中注册其设备，则要求他们这样做。|
-|isViewingBeforeAcceptanceRequired|布尔|指示用户是否必须扩大协议才能接受。|
+|displayName|String|协议的显示名称。 The 显示名称 is used for internal tracking of the agreement but is not shown to end users who view the agreement.|
+|id|字符串| 只读。|
+|isPerDeviceAcceptanceRequired|布尔值|此设置使你能够要求最终用户在从其访问它的每个设备上接受此协议。 如果最终用户尚未注册设备，Azure AD注册设备。|
+|isViewingBeforeAcceptanceRequired|布尔值|指示用户是否必须扩展协议才能接受。|
 |termsExpiration|[termsExpiration](termsexpiration.md)| 所有用户的过期日程安排和协议频率。 |
-|userReacceptRequiredFrequency|持续时间|用户必须重新接受使用条款的持续时间。 该值以 ISO 8601 格式表示，持续时间。|
+|userReacceptRequiredFrequency|期限|用户必须重新接受使用条款的持续时间。 该值以 ISO 8601 格式表示，持续时间为。|
 
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |接受|[agreementAcceptance](agreementacceptance.md) 集合|只读。 有关接受本协议的信息。|
-|files|[agreementFileLocalization](agreementfilelocalization.md) 集合| 链接到本协议的 PDF。 **注意：** 此属性正在被弃用。 请  **改为使用文件** 属性。|
+|files|[agreementFileLocalization](agreementfilelocalization.md) 集合| 链接到本协议的 PDF。 **注意：** 此属性正在被弃用。 请  **改为使用 file** 属性。|
 |file|[agreementFile](agreementfile.md) | 链接到本协议的默认 PDF。|
-|文件/本地化|[agreementFileLocalization](agreementfilelocalization.md) 集合|附加到协议的协议文件的本地化版本。|
-|file/localizations/{localizationId}/versions|[agreementFileVersion](agreementfileversion.md) 集合|本地化协议文件的版本历史记录。|
+|文件/本地化|[agreementFileLocalization](agreementfilelocalization.md) 集合|附加到该协议的协议文件的本地化版本。|
+|文件/本地化/{localizationId}/versions|[agreementFileVersion](agreementfileversion.md) 集合|本地化协议文件的版本历史记录。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

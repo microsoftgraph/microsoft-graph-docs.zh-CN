@@ -42,7 +42,7 @@ items:
         displayname: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
         items:
           - name: 概述
-            href: /graph/webhooks?context=graph/api/1.0
+            href: /graph/api/resources/webhooks?context=graph/api/1.0
           - name: 教程
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: 缺失更改通知
@@ -360,6 +360,14 @@ items:
                 href: api/user-reprocesslicenseassignment.md
               - name: 撤销登录会话
                 href: api/user-revokesigninsessions.md
+              - name: 列出已删除的用户
+                href: api/directory-deleteditems-list.md
+              - name: 获取已删除的用户
+                href: api/directory-deleteditems-get.md
+              - name: 永久删除用户
+                href: api/directory-deleteditems-delete.md
+              - name: 还原已删除的用户
+                href: api/directory-deleteditems-restore.md
           - name: 驱动器
             href: resources/drive.md
             items:
@@ -420,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -538,24 +546,34 @@ items:
                 href: api/group-update.md
               - name: 删除组
                 href: api/group-delete.md
+              - name: 续订组
+                href: api/group-renew.md
               - name: 添加收藏夹
                 href: api/group-addfavorite.md
+              - name: 删除收藏夹
+                href: api/group-removefavorite.md
+              - name: 列出成员
+                href: api/group-list-members.md
               - name: 添加成员
                 href: api/group-post-members.md
+              - name: 删除成员
+                href: api/group-delete-members.md
+              - name: 列出隶属于
+                href: api/group-list-memberof.md
+              - name: 列出其可传递成员
+                href: api/group-list-transitivememberof.md
+              - name: List transitive members
+                href: api/group-list-transitivemembers.md
+              - name: 列出所有者
+                href: api/group-list-owners.md
               - name: 添加所有者
                 href: api/group-post-owners.md
-              - name: 分配许可证
-                href: api/group-assignlicense.md
-              - name: 获取成员组
-                href: api/directoryobject-getmembergroups.md
-              - name: 检查成员组
-                href: api/directoryobject-checkmembergroups.md
-              - name: 获取成员对象
-                href: api/directoryobject-getmemberobjects.md
-              - name: 检查成员对象
-                href: api/directoryobject-checkmemberobjects.md
+              - name: 删除所有者
+                href: api/group-delete-owners.md
               - name: 获取 Delta
                 href: api/group-delta.md
+              - name: 分配许可证
+                href: api/group-assignlicense.md
               - name: 组设置
                 href: resources/groupsetting.md
                 items:
@@ -578,28 +596,10 @@ items:
                     href: api/groupsettingtemplate-get.md
               - name: 列出生命周期策略
                 href: api/group-list-grouplifecyclepolicies.md
-              - name: 列出隶属于
-                href: api/group-list-memberof.md
-              - name: 列出其可传递成员
-                href: api/group-list-transitivememberof.md
-              - name: 列出成员
-                href: api/group-list-members.md
-              - name: List transitive members
-                href: api/group-list-transitivemembers.md
-              - name: 列出所有者
-                href: api/group-list-owners.md
               - name: List photos
                 href: api/group-list-photos.md
               - name: List permission grants
                 href: api/group-list-permissiongrants.md
-              - name: 删除收藏夹
-                href: api/group-removefavorite.md
-              - name: 删除成员
-                href: api/group-delete-members.md
-              - name: 删除所有者
-                href: api/group-delete-owners.md
-              - name: 续订组
-                href: api/group-renew.md
               - name: 重置未看计数
                 href: api/group-resetunseencount.md
               - name: 通过邮件订阅
@@ -714,6 +714,27 @@ items:
                 href: api/group-delete-thread.md
               - name: 回复对话线程
                 href: api/conversationthread-reply.md
+          - name: 目录对象
+            href: resources/directoryobject.md
+            items:
+              - name: 检查成员组
+                href: api/directoryobject-checkmembergroups.md
+              - name: 获取成员组
+                href: api/directoryobject-getmembergroups.md
+              - name: 检查成员对象
+                href: api/directoryobject-checkmemberobjects.md
+              - name: 获取成员对象
+                href: api/directoryobject-getmemberobjects.md
+              - name: 列出已删除的组
+                href: api/directory-deleteditems-list.md
+              - name: 列出用户拥有的已删除组
+                href: api/directory-deleteditems-user-owned.md
+              - name: 获取已删除的组
+                href: api/directory-deleteditems-get.md
+              - name: 永久删除组
+                href: api/directory-deleteditems-delete.md
+              - name: 恢复已删除的组
+                href: api/directory-deleteditems-restore.md
           - name: 驱动器
             href: resources/drive.md
             items:
@@ -798,6 +819,8 @@ items:
                 href: api/application-delta.md
               - name: 列出已删除的应用程序
                 href: api/directory-deleteditems-list.md
+              - name: 列出用户拥有的已删除应用程序
+                href: api/directory-deleteditems-user-owned.md
               - name: 获取已删除的应用程序
                 href: api/directory-deleteditems-get.md
               - name: 永久删除应用程序
@@ -1645,7 +1668,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -6230,7 +6253,7 @@ items:
                 href: api/site-list-subsites.md
               - name: 搜索网站
                 href: api/site-search.md
-              - name: Permissions
+              - name: 权限
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -6530,10 +6553,12 @@ items:
                 href: api/directoryobject-checkmembergroups.md
               - name: 列出隶属于
                 href: api/group-list-memberof.md
-              - name: 获取已删除的组
-                href: api/directory-deleteditems-get.md
               - name: 列出已删除的组
                 href: api/directory-deleteditems-list.md
+              - name: 列出用户拥有的已删除组
+                href: api/directory-deleteditems-user-owned.md
+              - name: 获取已删除的组
+                href: api/directory-deleteditems-get.md
               - name: 永久删除组
                 href: api/directory-deleteditems-delete.md
               - name: 恢复已删除的组

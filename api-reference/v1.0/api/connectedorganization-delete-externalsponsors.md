@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ba93d4d111494b35599046d0e24bd662a7e86778
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: b4ec9d98114ed9f87498c0432ac36de899174157
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347954"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604167"
 ---
 # <a name="remove-externalsponsors"></a>删除 externalSponsors
 
@@ -55,7 +55,7 @@ DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{connect
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_internalsponsor_from_connectedorganization"
+  "name": "delete_externalsponsor_from_connectedorganization"
 }
 -->
 ``` http
