@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: e7b8479e4307f77d87a8b8b6d66cd68fda48bf1d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: c7e0664929bad371c0a3c2e1306d613b43d5d586
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347240"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604005"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -55,10 +55,6 @@ ms.locfileid: "61347240"
 | [删除所有者](../api/group-delete-owners.md) | 无 | 通过 **owners** 导航属性，删除 Microsoft 365 组、安全组或启用邮件安全组的所有者。 |
 | [Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | 更新 setting 对象。 |
 | [assignLicense](../api/group-assignlicense.md) | [组](group.md) | 为群组添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 在一列组中检查此组的成员身份。此函数是可传递的。 |
-| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。该函数可传递。 |
-| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回此组是其成员的所有组。此函数是可传递的。 |
-| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | 返回组所属的所有组、管理单元或目录角色。 此函数可传递。 |
 | [续订](../api/group-renew.md) | 布尔值 | 续订组以更新到期时间。续订后，组的有效期就会延长策略中定义的天数。 |
 | [validateProperties](../api/group-validateproperties.md) | JSON | 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。 |
 | **应用角色分配** |||
@@ -82,14 +78,25 @@ ms.locfileid: "61347240"
 | [列出线程](../api/group-list-threads.md) | [conversationThread](conversationthread.md) 集合 | 获取组的所有线程。 |
 | [更新线程](../api/group-update-thread.md) | 无 | 更新 thread 对象的属性。 |
 | [删除线程](../api/group-delete-thread.md) | 无 | 删除 thread 对象。 |
-| [列出 acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) 集合 | 获取此组的“接受的发件人”列表中的用户或组列表。 |
+| [列出 acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“接受的发件人”列表中的用户或组列表。 |
 | [添加 acceptedSender](../api/group-post-acceptedsenders.md) | [directoryObject](directoryobject.md) | 将用户或组添加到 acceptSenders 集合。 |
 | [删除 acceptedSender](../api/group-delete-acceptedsenders.md) | [directoryObject](directoryobject.md) | 从 acceptedSenders 集合中删除用户或组。 |
 | [List rejectedSenders](../api/group-list-rejectedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“遭拒的发件人”列表中的用户或组列表。 |
 | [Add rejectedSender](../api/group-post-rejectedsenders.md)  | [directoryObject](directoryobject.md) | 将新用户或组添加到 rejectedSenders 集合中。 |
 | [Remove rejectedSender](../api/group-delete-rejectedsenders.md) | [directoryObject](directoryobject.md) | 从 rejectedSenders 集合中删除新用户或组。 |
 | [Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | 基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。 |
-| [获取设置](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
+| **目录对象** |||
+| [列出已删除的组](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索租户中最近 30 天内删除的组。 |
+| [列出用户拥有的已删除组](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 检索租户中最近 30 天内删除的用户所有的组。 |
+| [获取已删除的组](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) 集合 | 按 ID 检索已删除的组。 |
+| [还原已删除的组](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) 集合 | 还原最近 30 天内在租户中删除的组。 |
+| [永久删除组](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) 集合 | 从租户中永久删除已删除的组。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String 集合 | 在一列组中检查成员身份。此函数是可传递的。 |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回此组是其成员的所有组。此函数是可传递的。 |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。该函数可传递。 |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String 集合 | 返回组所属的所有组和管理单元。此函数是可传递的。 |
+| **组设置** |||
+| [Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
 | [List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
 | [更新设置](../api/groupsetting-update.md) | 无 | 更新 setting 对象。 |
 | [删除设置](../api/groupsetting-delete.md) | 无 | 删除 setting 对象。 |
@@ -136,7 +143,7 @@ ms.locfileid: "61347240"
 |isAssignableToRole|Boolean|指示是否可以将此组分配给 Azure Active Directory 角色。可选。<br><br>此属性只能在创建组时设置，并且不可变。 如果设置为 `true`，则 **securityEnabled** 属性也必须设置为 `true`，并且该组不能是动态组（即，**groupTypes** 不能包含 `DynamicMembership`）。 只有全局管理员和特权角色管理员角色中的调用方可以设置此属性。 必须向调用方分配 *RoleManagement.ReadWrite.Directory* 权限，才能设置此属性或更新此类组成员的身份。 有关更多信息，请参阅[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`）。|
 |isSubscribedByMail|Boolean|指示是否订阅已登录用户以接收电子邮件对话。默认值为 `true`。 <br><br>仅在 `$select`返回。仅在 Get 组 API （`GET /groups/{ID}`） 上受支持。 |
 |licenseProcessingState|String|指示组的所有成员的组许可证分配状态。默认值为 `false`。只读。可能的值：`QueuedForProcessing`、`ProcessingInProgress`、`ProcessingComplete`。<br><br>仅在 `$select` 返回。只读。|
-|mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)。|
+|mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |mailEnabled|Boolean|指定组是否启用邮件。必需。<br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`）。|
 |mailNickname|String|组的邮件别名，它对于组织中的 Microsoft 365 组是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 <br><br>必需。 默认情况下返回。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)。|
 |membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 <br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`startsWith`）。 |
@@ -147,7 +154,7 @@ ms.locfileid: "61347240"
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。 <br><br>默认情况下返回。 支持 `null` 值上的 `$filter`。 只读。 |
 |onPremisesSyncEnabled|Boolean|如果此组从本地目录同步，则为 `true`；如果此组最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 **null**（默认值）。 <br><br>默认情况下返回。 只读。 支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。|
 |preferredDataLocation|String|Microsoft 365 组的首选数据位置。 默认情况下，组继承组创建者的首选数据位置。 若要设置此属性，必须为调用用户分配以下 [Azure AD 角色之一](/azure/active-directory/roles/permissions-reference)： <br><ul><li> 全局管理员 <li> 用户帐户管理员 <li>目录写入程序 <li> Exchange 管理员 <li> SharePoint 管理员 </ul><br/> 有关此属性的详细信息，请参阅  [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>默认返回。可为空。|
-|preferredLanguage|String|Microsoft 365 组的首选语言。应遵循 ISO 639-1 代码；例如，`en-US`。 <br><br>默认情况下返回。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)。 |
+|preferredLanguage|String|Microsoft 365 组的首选语言。应遵循 ISO 639-1 代码；例如，`en-US`。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
 |proxyAddresses|String 集合| 指向同一组邮箱的组的电子邮件地址。 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 需要 **any** 运算符筛选多值属性上的表达式。 <br><br>默认情况下返回。 只读。 不可为 null。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/group-renew.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`）。 只读。|
 |resourceBehaviorOptions|字符串集合|指定在创建期间可为 Microsoft 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。 有关详细信息，请参阅 [ 设置 Microsoft 365 组行为和预配选项 ](/graph/group-set-options)。|

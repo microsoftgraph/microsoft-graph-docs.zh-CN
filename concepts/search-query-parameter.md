@@ -4,12 +4,12 @@ description: Microsoft Graph 支持 $search OData 查询参数，以便限制请
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3456985a8d8af1971cdda67a06c24e77e61efd4b
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: b4b5f1999dd324ad335d54fafd0f9e0c19a1053a
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266080"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604194"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>使用搜索查询参数匹配搜索条件
 
@@ -151,10 +151,9 @@ Content-type: application/json
 * 通用格式：$search="clause1" \[AND \| OR\] "\[clauseX\]"\.
 * 支持任何子句。 支持适用于优先级的括号。
 * 每个子句的语法是："\<property>:\<text to search>"。
-* 必须在子句中指定属性名称。 可以在中使用的任何属性`$filter`也可以在内使用 `$search`。 根据属性的不同，如果属性不支持搜索，那么搜索行为要么是“search”，要么是“start with”。
-* 必须将完整子句部分置于双引号内。
-* 必须将逻辑运算符 "AND" 和 "OR" 置于双引号之外。 它们必须处于大写形式。
-* 考虑到整个子句部分需要放在双引号内，如果包含双引号和反斜杠，则需要使用反斜杠对其进行转义。其他字符不需要进行转义。
+* 必须在子句中指定属性名称。 可以在中使用的任何属性`$filter`也可以在内使用 `$search`。 根据属性的不同，如果属性不支持搜索，则搜索行为是“search”或“startWith”。
+* 必须在双引号内声明整个子句。 如果它包含双引号或反斜杠，则应使用反斜杠进行转义。 无需转义其他字符。
+* 逻辑 `AND` 和 `OR` 运算符必须放在双引号之外，并且必须为大写。
 
 下表显示了一些示例。
 
@@ -195,4 +194,4 @@ Content-type: application/json
 
 - [使用查询参数自定义响应](/graph/query-parameters)
 - [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)
-- [查询参数限制](known-issues.md#query-parameter-limitations)
+- [查询参数限制](known-issues.md#query-parameters)
