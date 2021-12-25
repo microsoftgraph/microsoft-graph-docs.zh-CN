@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: fac57ae27845799f1d9e25b3ec0c437ed7de147c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d98f91b33cc13e874d8b3dce42ad9bb871349e9d
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348213"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604348"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -61,11 +61,8 @@ ms.locfileid: "61348213"
 | [删除成员](../api/group-delete-members.md) | 无 | 通过 **members** 导航属性删除 Microsoft 365 组、安全组，或这启用邮的安全组中的成员。您可以删除用户或其他组。 |
 | [Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | 更新 setting 对象。 |
 | [assignLicense](../api/group-assignlicense.md) | [组](group.md) | 为群组添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String 集合 | 在一列组中检查成员身份。此函数是可传递的。 |
-| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。该函数可传递。 |
 | [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | 评估用户或设备是否为动态组的成员。 |
-| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回此组是其成员的所有组。此函数是可传递的。 |
-| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String 集合 | 返回组所属的所有组和管理单元。此函数是可传递的。 |
+| [续订](../api/group-renew.md) | 布尔值 | 续订组以更新到期时间。续订后，组的有效期就会延长策略中定义的天数。 |
 | [validateProperties](../api/group-validateproperties.md) | JSON | 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。 |
 | **应用角色分配** |||
 | [列出 appRoleAssignments](../api/group-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) 集合 | 获取已分配到此组的应用和应用角色。 |
@@ -88,12 +85,22 @@ ms.locfileid: "61348213"
 | [列出线程](../api/group-list-threads.md) | [conversationThread](conversationthread.md) 集合 | 获取组的所有线程。 |
 | [更新线程](../api/group-update-thread.md) | 无 | 更新 thread 对象的属性。 |
 | [删除线程](../api/group-delete-thread.md) | 无 | 删除 thread 对象 |
-| [List acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) 集合 | 获取此组的“接受的发件人”列表中的用户或组列表。 |
+| [List acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“接受的发件人”列表中的用户或组列表。 |
 | [添加 acceptedSender](../api/group-post-acceptedsenders.md) | [directoryObject](directoryobject.md) | 将用户或组添加到 acceptSenders 集合。 |
 | [删除 acceptedSender](../api/group-delete-acceptedsenders.md) | [directoryObject](directoryobject.md) | 从 acceptedSenders 集合中删除用户或组。 |
 | [List rejectedSenders](../api/group-list-rejectedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“遭拒的发件人”列表中的用户或组列表。 |
 | [Add rejectedSender](../api/group-post-rejectedsenders.md) | [directoryObject](directoryobject.md) | 将新用户或组添加到 rejectedSenders 集合中。 |
 | [Remove rejectedSender](../api/group-delete-rejectedsenders.md) | [directoryObject](directoryobject.md) | 从 rejectedSenders 集合中删除新用户或组。 |
+| **目录对象** |||
+| [列出已删除的组](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | 检索租户中过去 30 天内被删除的组。 |
+| [列出用户拥有的已删除组](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 检索租户中最近 30 天内删除的用户所有的组。 |
+| [获取已删除的组](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) 集合 | 按 ID 检索已删除的组。 |
+| [恢复已删除的组](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | 还原最近 30 天内在租户中删除的组。 |
+| [永久删除组](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | 从租户中永久删除已删除的组。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String 集合 | 在一列组中检查成员身份。此函数是可传递的。 |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回此组是其成员的所有组。此函数是可传递的。 |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。该函数可传递。 |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String 集合 | 返回组所属的所有组和管理单元。此函数是可传递的。 |
 | **开放扩展** |||
 | [创建开放扩展](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | 创建开放扩展，并将自定义属性添加到新资源或现有资源。 |
 | [获取开放扩展](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) 集合 | 获取扩展名称标识的开放扩展。 |
