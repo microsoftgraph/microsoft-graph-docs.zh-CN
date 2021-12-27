@@ -2,15 +2,15 @@
 title: 更新 educationassignment
 description: 更新 educationAssigment 对象。
 ms.localizationpriority: medium
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 786d364847297edea5538251c5701502c3ced7f2
-ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
+ms.openlocfilehash: fe9cf434a5f26d6593cee8e8b39afe2150949e24
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61567305"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608717"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -22,7 +22,7 @@ ms.locfileid: "61567305"
 
 或者，通过发布操作 **请求更改** 工作 [分配](../api/educationassignment-publish.md) 的状态。 请勿将 PATCH 操作用于此目的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -51,16 +51,16 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 |:---------------|:--------|:----------|
 |addedStudentAction|String| 描述是否应当将作业分发给在作业发布日期之后添加的学生。|
 |addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制 **发布** 作业时将作业添加到学生和教师日历 **的作业** 行为。 可能的值包括 `none`、`studentsAndPublisher`、`studentsAndTeamOwners`、`unknownFutureValue`、`studentsOnly`。 请注意，必须使用此可变化枚举 (请求) 获取以下 `Prefer: include - unknown -enum-members` [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` ： 。 可选。|
-|allowLateSubmissions|布尔值| 学生是否可以在截止日期后发送提交。|
+|allowLateSubmissions|Boolean| 学生是否可以在截止日期后发送提交。|
 |allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以向提交中添加资源。 此外，指示提交中所有资源是否对应于工作分配资源列表。 |
-|assignDateTime|DateTimeOffset| 指示向学生发布作业的日期。 |
-|assignTo|educationAssignmentRecipient| 获得作业的学生。|
+|assignDateTime|DateTimeOffset| 指示向学生发布作业的日期。 工作分配发布后无法编辑。|
+|assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| 获得作业的学生。|
 |closeDateTime|DateTimeOffset| 工作分配关闭提交的日期。 如果分配不允许LateSubmissions或 closeDateTime 与 dueDateTime 相同，则该字段可以是 null 的可选字段，但如果指定，它必须大于或等于 dueDateTime。|
-|displayName|String| 工作分配的名称。 |
+|displayName|字符串| 工作分配的名称。 |
 |dueDateTime|DateTimeOffset| 日期分配到期。 |
-|一个|educationAssignmentGradeType| 如何对作业进行评分。|
+|一个|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| 如何对作业进行评分。|
 |instructions|itemBody| 要与作业一起向学生提供的说明。 |
-|notificationChannelUrl|String| 与分配相关的通知通信的通道。 若要更改 URL，将值设置为 `assignTo` [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md)。 频道 URL 在工作分配发布后不能更改。|
+|notificationChannelUrl|字符串| 与分配相关的通知通信的通道。 若要更改 URL，将值设置为 `assignTo` [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md)。 频道 URL 在工作分配发布后不能更改。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationAssignment](../resources/educationassignment.md) 对象。
@@ -107,7 +107,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

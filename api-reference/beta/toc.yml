@@ -378,7 +378,7 @@ items:
                 href: api/user-revokesigninsessions.md
               - name: 列出已删除的用户
                 href: api/directory-deleteditems-list.md
-              - name: 获取已删除的用户
+              - name: 获取已删除用户
                 href: api/directory-deleteditems-get.md
               - name: 永久删除用户
                 href: api/directory-deleteditems-delete.md
@@ -605,7 +605,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -6805,7 +6805,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows防篡改保护选项
+                  - name: Windows Defender 防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -11469,7 +11469,7 @@ items:
                         href: api/softwareOathAuthenticationMethod-get.md
                       - name: 删除
                         href: api/softwareOathAuthenticationMethod-delete.md
-                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃) '
+                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃用) '
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: 列表
@@ -12972,14 +12972,14 @@ items:
             items:
               - name: 获取资源
                 href: api/resource-get.md
-      - name: 通知（预览版）
+      - name: '通知 (已弃) '
         items:
           - name: 概述
             href: resources/notifications-api-overview.md
-          - name: 通知
+          - name: '已 (的通知) '
             href: resources/projectrome-notification.md
             items:
-              - name: 创建和发送通知
+              - name: '创建并发送已 (的通知) '
                 href: api/user-post-notifications.md
       - name: 人员和工作场所智能
         items:
@@ -13323,7 +13323,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置见解
+                  - name: 设置人员见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -14132,7 +14132,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 创建

@@ -2,15 +2,15 @@
 title: 更新 educationRubric
 description: 更新 educationRubric 对象的属性。
 ms.localizationpriority: medium
-author: dipakboyed
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 18542960b1af086a388b06ae6a6dfe04f96009c8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 932e42786084e1de0a6dcab3c5eec3f2618e0bd0
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975242"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608799"
 ---
 # <a name="update-educationrubric"></a>更新 educationRubric
 
@@ -20,7 +20,7 @@ ms.locfileid: "60975242"
 
 更新 [educationRubric 对象](../resources/educationrubric.md) 的属性。
 
-只有在发布工作分配 () 工作分配附加的一个分值，更新内容实际上是位于 下 `PATCH /education/classes/{id}/assignments/{id}/rubric` 的原始工作分配 `/education/users/{id}/rubrics` 。 工作分配发布后，将创建附加到该特定工作分配的不可变重复副本。 可以使用 [GET /education/classes/{id}/assignments/{id}/rubric](educationrubric-get.md)检索该标准，但无法更新。
+只有在发布工作分配 () 工作分配附加的一个分值才能更新，而更新的实际上是 位于 下 `PATCH /education/classes/{id}/assignments/{id}/rubric` 的原始工作分配 `/education/users/{id}/rubrics` 。 工作分配发布后，将创建附加到该特定工作分配的不可变重复副本。 可以使用 [GET /education/classes/{id}/assignments/{id}/rubric](educationrubric-get.md)检索该标准，但无法更新。
 
 ## <a name="permissions"></a>权限
 
@@ -55,7 +55,7 @@ PATCH /education/classes/{id}/assignments/{id}/rubric
 |:-------------|:------------|:------------|
 |说明|itemBody|此分卡的说明。|
 |displayName|String|此分号的名称。|
-|一个|educationAssignmentGradeType|此分值是否具有点。|
+|一个|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|评分标准评分类型。 `null`对于无点数的分级，对于带分数的分级，为[educationAssignmentPointsGradeType。](../resources/educationassignmentpointsgradetype.md)|
 |levels|rubricLevel 集合|此标准中的级别集合。|
 |一些|rubricQuality 集合|此分项由质量集合决定。|
 
@@ -99,7 +99,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationrubric-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationrubric-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

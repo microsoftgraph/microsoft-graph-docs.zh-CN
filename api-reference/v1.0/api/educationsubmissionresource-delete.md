@@ -5,18 +5,18 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c1be38511befcf2621c9374a4eb418f8977f7986
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 92e4e55486259b0fe3950eb5455c14f022f6d4b0
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000256"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609023"
 ---
 # <a name="delete-educationsubmissionresource"></a>删除 educationSubmissionResource
 
 命名空间：microsoft.graph
 
-从提交中删除资源。 此操作仅能由学生完成。 如果从工作分配复制了资源，将在删除当前副本后创建资源的新副本。 这允许您将资源"重置"到其原始状态。 如果资源不是从作业中复制的，而是从学生添加的，则只会删除该资源。
+从提交[中删除 educationSubmissionResource。](../resources/educationsubmissionresource.md) 此操作仅能由学生完成。 如果从工作分配复制了资源，将在删除当前副本后创建资源的新副本。 这允许您将资源"重置"到其原始状态。 如果资源不是从作业中复制的，而是从学生添加的，则只会删除该资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -74,7 +74,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a85
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationsubmissionresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-educationsubmissionresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,22 +5,22 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fa2734cdb241588c0d73a21c4710450a59f68bda
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b23bc5e05f1b6bf39ad41022bfd01fb542addc48
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025554"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609009"
 ---
 # <a name="list-submittedresources"></a>列出 submittedResources
 
 命名空间：microsoft.graph
 
-列出已正式提交进行评分的资源。 
+列出 [已正式提交评分的 educationSubmissionResource](../resources/educationsubmissionresource.md) 对象。 
 
 拥有提交的学生如果不重新提交作业，则无法更改提交的列表。 这是实际资源的包装器，如果此资源是从工作分配复制的，则可以包含一个返回实际工作分配资源的指针。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 [!INCLUDE [sample-code](../includes/snippets/java/get-submittedresources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-submittedresources-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

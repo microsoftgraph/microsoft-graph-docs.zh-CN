@@ -1,28 +1,31 @@
 ---
-title: 创建和发送通知
-description: 创建并发送针对用户通过 Microsoft Graph 的通知。
-localization_priority: Normal
+title: '创建并发送已 (的通知) '
+description: 通过 Microsoft Graph 创建并发送面向用户Graph。
+ms.localizationpriority: medium
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: 7296a136a4d2bab38eaf8ef25790019abc05bf6b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 33346ef8a625b08652c3b11d8ac9e4e3b17e6060
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064519"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608911"
 ---
-# <a name="create-and-send-a-notification"></a>创建和发送通知
+# <a name="create-and-send-a-notification-deprecated"></a>创建并发送已 (的通知) 
 
-命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-创建并发送针对用户通过 Microsoft Graph 的通知。 通知存储在 Microsoft Graph 通知源存储中，并发送到用户登录到的所有设备终结点上的所有应用程序客户端。  
-
-## <a name="permissions"></a>权限
-您的应用程序服务不需要任何额外的权限即可向目标用户发布通知。  
+命名空间：microsoft.graph
 
 > [!IMPORTANT]
-> 如果选择通过委派权限代表用户发布通知，则需要以下权限之一才能调用此 API。 建议您不要选择此选项来创建通知。 如果想要了解详细信息，包括如何选择权限，请参阅 [权限](/graph/permissions-reference)。
+> Microsoft Graph通知 API 已弃用，将在 2022 年 1 月底停止返回数据。 有关其他通知体验，请参阅Microsoft Azure[中心"，](/azure/notification-hubs)[并查看此博客](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)文章了解详细信息。
+
+通过 Microsoft Graph 创建并发送面向用户Graph。 通知存储在 Microsoft Graph源存储中，并发送到用户登录的所有设备终结点上的所有应用客户端。  
+
+## <a name="permissions"></a>权限
+您的应用程序服务不需要任何其他权限来向目标用户发布通知。  
+
+> [!IMPORTANT]
+> 如果选择改为通过委派权限代表用户发布通知，则调用此 API 需要以下权限之一。 建议不要使用此选项来创建通知。 若要了解更多信息，包括如何选择权限，请参阅 [权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,31 +45,31 @@ POST /me/notifications/
 ## <a name="request-headers"></a>请求标头
 |名称 | 说明|
 |:----|:-----------|
-|Authorization | 授权标头用于传递呼叫方的凭据。 持有者 {令牌}。 必需。 |
-|X-UNS-ID | Microsoft Graph 通知服务在创建订阅后返回的 UserNotificationSubscriptionId，并用于面向特定用户。 必需。 |
+|Authorization | 授权标头用于传递调用方凭据。 Bearer {token}。 必需。 |
+|X-UNS-ID | 创建订阅后由 Microsoft Graph UserNotificationSubscriptionId，用于定位特定用户。 必需。 |
 |Content-type | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [通知](../resources/projectrome-notification.md) 对象的 JSON 表示形式。
+在请求正文中，提供通知对象的 JSON [表示](../resources/projectrome-notification.md) 形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回 `201 Created` 响应代码，指示已成功创建和存储通知。 随后，通知将通过有效订阅扇到所有指定的终结点。 
+如果成功，此方法返回 `201 Created` 响应代码，指示已成功创建和存储通知。 通知随后会扇出到具有有效订阅的所有指定终结点。 
 
-下表列出了可能返回的错误和响应代码。
+下表列出了可能的错误和可返回的响应代码。
 
-|错误代码             | Descrition                             |
+|错误代码             | Descrition                              |
 |:-----------------------------------|:----------------------------------------------------------|
-|HttpStatusCode。 BadRequest           | Body 是一个数组， (不支持多个通知) 。|
-|HttpStatusCode。 BadRequest           | 正文与 API 的协定不匹配。               |
-|HttpStatusCode            | 呼叫者位于阻止列表中。                          |
-|HttpStatusCode。 MethodNotAllowed     | 不支持使用的 HTTP 方法。                     |
-|HttpStatusCode。 BadRequest           | 请求中存在不受支持的标头。 不支持两个标头：<br/><br/>修改时间-自<br/>If-Range |                    
-|HttpStatusCode。 UnsupportedMediaType | 标头内容编码存在，并且具有除或之外的压缩算法 `Deflate` 值 `Gzip` 。  |
-|HttpStatusCode。 BadRequest           | 有效负载无效。                                           |
-|HttpStatusCode            | 呼叫者无权代表用户执行操作或向用户发送通知。                         |
-|HttpStatusCode 未经授权         |  请求正文包含无效的活动数据类型。        |
-|HttpStatusCode                   |  已成功创建活动。                            |
-|HttpStatusCode。 NotAcceptable        |  请求已被阻止或服务器正忙。    |
+|HttpStatusCode.BadRequest           | 正文是一个 (，不支持多个) 。|
+|HttpStatusCode.BadRequest           | 正文与 API 的协定不匹配。               |
+|HttpStatusCode.Forbidden            | 呼叫者位于阻止列表中。                          |
+|HttpStatusCode.MethodNotAllowed     | 使用的 HTTP 方法不受支持。                     |
+|HttpStatusCode.BadRequest           | 请求中出现不受支持的标题。 不支持两个标头：<br/><br/>If-Modified-Since<br/>If-Range |                    
+|HttpStatusCode.UnsupportedMediaType | 标头 Content-Encoding 存在，并且具有除 或 外的其他 `Deflate` 压缩算法值 `Gzip` 。  |
+|HttpStatusCode.BadRequest           | 有效负载无效。                                           |
+|HttpStatusCode.Forbidden            | 呼叫者无权代表用户或向用户发送通知。                         |
+|HttpStatusCode.Unauthorized         |    请求正文包含无效的活动数据类型。        |
+|HttpStatusCode.OK                   |     已成功创建活动。                            |
+|HttpStatusCode.NotAcceptable        |    请求已受到限制或服务器繁忙。    |
 
 
 ## <a name="example"></a>示例
@@ -101,7 +104,7 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>响应
-下面是对应响应的一个示例。
+下面是相应响应的示例。
 
 ```http
 HTTP/1.1 201

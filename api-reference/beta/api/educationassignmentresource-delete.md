@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e3b6c70ec61be792b0c0cd403be72cb791d981a2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 53f496d4680b3c2cefcf4b1ca5c3fff837c0b081
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030176"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608967"
 ---
 # <a name="delete-educationassignmentresource"></a>删除 educationAssignmentResource
 
@@ -18,9 +18,9 @@ ms.locfileid: "61030176"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除附加到工作分配的特定资源。 只有班级中的教师可以删除资源。 向学生发布作业后，教师无法删除标记为"distributeToStudents"的资源。
+删除附加到[作业的特定 educationAssignmentResource。](../resources/educationassignmentresource.md) 只有班级中的教师可以删除资源。 向学生发布作业后，教师无法删除标记为"distributeToStudents"的资源。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -76,7 +76,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a85
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignmentresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-educationassignmentresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

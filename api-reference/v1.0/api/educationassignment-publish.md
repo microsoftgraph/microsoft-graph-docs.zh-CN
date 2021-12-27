@@ -2,15 +2,15 @@
 title: educationAssignment： publish
 description: 将 educationAssignment 的状态从原始草稿状态更改为已发布状态。
 ms.localizationpriority: medium
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bc5c105157e671e25f36e75219a6e13af8a9f631
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5fab26d510efe5bc9b331b0a5c4d127026bc73a6
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000354"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608708"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment： publish
 
@@ -25,6 +25,8 @@ ms.locfileid: "61000354"
 只有课堂中的教师才能进行此呼叫。 当作业在草稿状态时，学生将看不到作业，也不会看到任何提交对象。 调用此 API 将 [创建 educationSubmission](../resources/educationsubmission.md) 对象，并在每个学生列表中显示作业。
 
 如果发布过程中出现任何后端故障，则分配 `draft` 的状态将返回。
+
+若要更新已发布的工作分配 **的属性，** 请参阅 [更新工作分配](../api/educationassignment-update.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -85,7 +87,7 @@ POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationassignment-publish-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

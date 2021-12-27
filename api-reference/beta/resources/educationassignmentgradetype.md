@@ -1,16 +1,16 @@
 ---
 title: educationAssignmentGradeType 资源类型
-description: 表示将对工作分配进行评分的方式。 这在 **工作分配. 评分** 属性中使用。
-localization_priority: Normal
-author: dipakboyed
+description: 表示如何对工作分配进行评分。 This is used within the **assignments.assignments** property.
+ms.localizationpriority: medium
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: bf658fe2fa2b729a7e07d59613f86fe1f324798b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d0aa68b27c311c297b81e6007c01b2fa35c09e79
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013739"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608960"
 ---
 # <a name="educationassignmentgradetype-resource-type"></a>educationAssignmentGradeType 资源类型
 
@@ -18,9 +18,11 @@ ms.locfileid: "48013739"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示将对工作分配进行评分的方式。 这在 **工作分配. 评分** 属性中使用。
+表示如何对工作分配进行评分。 This is used within the **assignments.assignments** property.
 
-此超类不能直接在工作分配属性中使用。 它的用途是允许多种不同的工作分配评分。
+此超级类不能直接在工作分配属性中使用。 它的存在是允许使用多种不同方法对作业进行评分。
+
+[educationAssignmentPointsGradeType 的基类](../resources/educationassignmentpointsgradetype.md)。
 
 
 ## <a name="properties"></a>属性

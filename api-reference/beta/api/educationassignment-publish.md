@@ -2,15 +2,15 @@
 title: educationAssignment： publish
 description: 将 educationAssignment 的状态从原始草稿状态更改为已发布状态。
 ms.localizationpriority: medium
-author: dipakboyed
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c466759baa053b4c205dfcebfc75bee1124e8d4d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fd3daac7d17b4b88c5f17d3d2a1dca676cfa602b
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015503"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608981"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment： publish
 
@@ -22,9 +22,13 @@ ms.locfileid: "61015503"
 
 如果工作分配计划在将来的日期 `draft` ，您可以将状态 `scheduled` 从 更改为 。  
 
-只有课堂中的教师才能进行此呼叫。 当作业在草稿状态时，学生将看不到作业，也不会看到任何提交对象。 调用此 API 时， [将创建 educationSubmission](../resources/educationsubmission.md) 对象，作业将显示在学生列表中。
+只有课堂中的教师才能进行此呼叫。 当 **作业** 为草稿状态时，学生将看不到作业，也不会看到任何提交对象。 调用此 API 时， [将创建 educationSubmission](../resources/educationsubmission.md) 对象，作业将显示在学生列表中。
 
-如果发布过程中出现任何后端故障，则分配 `draft` 的状态将返回。
+如果发布 **过程中出现** 任何后端故障，则分配 `draft` 的状态将返回。
+
+若要更新已发布的工作分配 **的属性，** 请参阅 [更新工作分配](../api/educationassignment-update.md)。
+
+若要更新已发布的工作分配的属性，请参阅 [更新工作分配](../api/educationassignment-update.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -84,7 +88,7 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationassignment-publish-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1f5a0320c4a42dd0e8731e84a13ae6b2355be0ac
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: de303da80f2f883fdb69dc7cb28246f357027e9d
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943421"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608932"
 ---
 # <a name="list-submittedresources"></a>列出 submittedResources
 
@@ -18,9 +18,9 @@ ms.locfileid: "60943421"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出已正式提交进行评分的资源。 拥有提交的学生如果不重新提交作业，则无法更改提交的列表。 这是实际资源的包装器，如果此资源是从工作分配复制的，则可以包含一个返回实际工作分配资源的指针。
+列出 [已正式提交评分的 educationSubmissionResource](../resources/educationsubmissionresource.md) 对象。 拥有提交的学生如果不重新提交作业，则无法更改提交的列表。 这是实际资源的包装器，如果此资源是从工作分配复制的，则可以包含一个返回实际工作分配资源的指针。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

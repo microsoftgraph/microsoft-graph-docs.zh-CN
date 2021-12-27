@@ -2,15 +2,15 @@
 title: 更新 educationRubric
 description: 更新 educationRubric 对象的属性。
 ms.localizationpriority: medium
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b35a9e40f24fd52e7a16cffa3e60b1491e2e120f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 32a2d1f8a43282f69f1d6fb6ab0df2e936c8d299
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006213"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608792"
 ---
 # <a name="update-educationrubric"></a>更新 educationRubric
 
@@ -18,7 +18,7 @@ ms.locfileid: "61006213"
 
 更新 [educationRubric 对象](../resources/educationrubric.md) 的属性。
 
-仅在发布工作分配 () 工作分配附加的一个分值，更新内容实际上是位于 下 `PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric` 的原始工作分配 `/education/users/{id}/rubrics` 。 工作分配发布后，将创建附加到该特定工作分配的不可变重复副本。 可以使用 [GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric](educationrubric-get.md)检索该标准，但无法更新。
+只有在发布工作分配 () 工作分配附加的一个分值才能更新，而更新的实际上是 位于 下 `PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric` 的原始工作分配 `/education/users/{id}/rubrics` 。 工作分配发布后，将创建附加到该特定工作分配的不可变重复副本。 可以使用 [GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric](educationrubric-get.md)检索该标准，但无法更新。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 |:-------------|:------------|:------------|
 |说明|itemBody|此分卡的说明。|
 |displayName|String|此分号的名称。|
-|一个|educationAssignmentGradeType|此分值是否具有点。|
+|一个|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|评分标准评分类型。 `null` 如果这是无点数的标点和 [educationAssignmentPointsGradeType，](../resources/educationassignmentpointsgradetype.md) 则其为带分数的标点。|
 |levels|rubricLevel 集合|此标准中的级别集合。|
 |一些|rubricQuality 集合|此分项由质量集合决定。|
 
@@ -98,7 +98,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationrubric-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationrubric-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

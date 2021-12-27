@@ -5,18 +5,18 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 59ee9acde10e92f86ad6ef37fc9c2b613a44d63e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5ed8af83e6f0f7847f41dafd9d1978b3ce2d59f8
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013185"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608904"
 ---
 # <a name="list-assignment-resources"></a>列出作业资源
 
 命名空间：microsoft.graph
 
-获取与工作分配 关联的所有 [资源](../resources/educationassignment.md)。
+获取与 [作业关联的所有 educationAssignmentResource](../resources/educationassignmentresource.md) [对象](../resources/educationassignment.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 [!INCLUDE [sample-code](../includes/snippets/java/get-resources-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-resources-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
