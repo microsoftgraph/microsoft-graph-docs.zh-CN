@@ -1,22 +1,22 @@
 ---
 title: 列出 calendarView
-description: 获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例，
+description: 获取由时间范围定义的日历视图中的事件发生次数、异常和单一实例，
 ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d7451ebea614ecc6e744bc588d8a6edb6aea537b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b76d5c5067ffe1f74c7d56c768fb42029be8ef76
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001020"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608925"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
 命名空间：microsoft.graph
 
-从用户的默认日历 `(../me/calendarview)` 或其他一些日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。
+从用户的默认日历 `(../me/calendarview)` 或其他一些日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单一实例。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -64,6 +64,8 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 此方法还支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
+具有 `$top` 的 **CalendarView** 的最小值为 1，最大值为 1000。 
+
 > [!NOTE]
 > [事件](../resources/event.md)的 **createdDateTime** 和 **lastModifiedDateTime** 属性不支持 `$select`。 若要获取它们的值，只需在 **calendarView** 上进行查询，而不应用 `$select`。
 
@@ -79,8 +81,11 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象集合。
+
+如果结果集跨多个页面，**calendarView** 将在响应中返回 **@odata.nextLink** 属性，其中包含指向下一页结果的 URL。 有关详细信息，请参阅[分页](/graph/concepts/paging.md)。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -107,13 +112,13 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-calendarview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

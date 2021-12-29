@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7d2a3df6af87d9e3b9802e112bc429682a42d989
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: c6c8ecf7ecc7e53a71b84ba77417e08adfd46561
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424600"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609002"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -107,7 +107,10 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |:-----------|:--------------------|:-----------|:----------------|
 | 跨设备体验 | 活动源、设备中继 | 支持超越单一设备的应用体验，同用户在不同设备之间移动，而不考虑设备类型和平台。 | [跨设备体验概述](cross-device-concept-overview.md) |
 
-## <a name="user-notifications"></a>用户通知
+## <a name="user-notifications-deprecated"></a>用户通知（已弃用）
+
+> [!IMPORTANT]
+> Microsoft Graph 通知 API 已弃用，将在 2022 年 1 月底停止返回数据。 有关其他通知体验，请参阅 [Microsoft Azure 通知中心](/azure/notification-hubs)，并[查看此博客文章](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)了解详细信息。
 
 |功能     |支持服务  |说明 |详细信息 |
 |:-----------|:--------------------|:-----------|:----------------|

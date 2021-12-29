@@ -346,7 +346,7 @@ items:
                 href: onenote-branding.md
               - name: 错误代码
                 href: onenote-error-codes.md
-      - name: 通知（预览版）
+      - name: 通知（已弃用）
         displayName: Notifications
         items:
           - name: 概述

@@ -1,18 +1,21 @@
 ---
-title: '利用 Microsoft Graph 通知实现以人为中心的通知体验 '
+title: 利用 Microsoft Graph 通知实现以人为中心的通知体验（已弃用）
 description: Microsoft Graph 通知平台提供了一种以人为中心的方法，让你能够应对所有设备终结点中的应用。
 ms.localizationpriority: high
 ms.prod: notifications
 ms.custom: scenarios:getting-started
 author: merzink
-ms.openlocfilehash: d63b5367b481ce6826929034f46c5f530c40f32d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0979e2c780d0d589ec24575385113057e6a44066
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062339"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609016"
 ---
-# <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>利用 Microsoft Graph 通知实现以人为中心的通知体验
+# <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications-deprecated"></a>利用 Microsoft Graph 通知实现以人为中心的通知体验（已弃用）
+
+> [!IMPORTANT]
+> Microsoft Graph 通知 API 已弃用，将在 2022 年 1 月底停止返回数据。 有关其他通知体验，请参阅 [Microsoft Azure 通知中心](/azure/notification-hubs)，并[查看此博客文章](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)了解详细信息。
 
 通知是与应用程序用户再次交互的最有效的方式之一。 绝佳的通知体验有助于在你和你的用户之间开启一个近乎实时的沟通渠道，这转而可在适当的时间提高应用参与度、帮助用户提升工作效率，并就重要事件或必需操作提醒他们。
 
@@ -34,7 +37,7 @@ Microsoft Graph 通知平台提供了一个以用户为中心的通知产品，�
 
 ### <a name="easily-manage-notifications-across-endpoints"></a>跨终结点轻松管理通知
 
-借助客户端应用程序中新的和改进的[通知客户端 SDK](https://aka.ms/GNSDK)，可更新通知的状态并跨所有终结点同步该状态。 例如，当用户对一个设备上的通知执行操作时，你可以更新此通知的状态（例如将其设置为已读或已消除），并向所有其他终结点分发同一状态更改。 Microsoft Graph 通知 API 可集中性地跟踪用户通知的状态，让你能够确保你的通知被处理过一次并在所有位置关闭，从而减少冗余，同时确保客户体验极佳。
+借助客户端应用程序中新的和改进的[通知客户端 SDK](https://aka.ms/GNSDK)，可更新通知的状态并跨所有终结点同步该状态。 例如，当用户对一个设备上的通知执行操作时，你可以更新此通知的状态（例如将其设置为已读或已消除），并向所有其他终结点分发同一状态更改。 Microsoft Graph 通知 API 可集中性地跟踪用户通知的状态，让你能够确保你的通知在被处理过一次后在所有位置关闭，从而减少冗余，同时确保极佳的客户体验。
 
 ### <a name="retrieve-notification-state-and-history"></a>检索通知状态和历史记录
 
@@ -55,4 +58,4 @@ Microsoft Graph 通知平台提供了一个以用户为中心的通知产品，�
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
 
-- [使用 Microsoft Graph 的通知 REST API](/graph/api/resources/notifications-api-overview?view=graph-rest-beta)
+- [使用 Microsoft Graph 的通知 REST API](/graph/api/resources/notifications-api-overview?view=graph-rest-beta&preserve-view=true)
