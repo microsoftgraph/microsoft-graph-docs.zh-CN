@@ -1,16 +1,16 @@
 ---
 title: accessPackageAssignmentRequest：重新处理
 description: 重新处理 accessPackageAssignmentRequest 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 36dd0d9d3e004d916e508b4f710728b214ac5a79
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 39104bb29ba7b1f8a9e672775781a5303ab0fa81
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257940"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650739"
 ---
 # <a name="accesspackageassignmentrequest-reprocess"></a>accessPackageAssignmentRequest：重新处理
 
@@ -18,7 +18,7 @@ ms.locfileid: "58257940"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，调用方可以自动重试用户对访问包的访问请求。 在 **requestState** 处于 或 状态的 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象 `DeliveryFailed` 上 `PartiallyDelivered` 执行。 
+在[Azure AD中](../resources/entitlementmanagement-overview.md)，调用方可以自动重试用户访问访问包的请求。 在 **requestState** 处于 或 状态的 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象 `DeliveryFailed` 上 `PartiallyDelivered` 执行。 
 
 ## <a name="permissions"></a>权限
 

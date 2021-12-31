@@ -1,16 +1,16 @@
 ---
 title: accessPackageCatalog 资源类型
 description: 访问包目录是访问包的容器。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 051657b5c8c7edb51a4c2c5c3a15bf3740052b86
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 5d6eb82a55e21469ea1f0169f0a589fd4f449d15
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351095"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650508"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>accessPackageCatalog 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "53351095"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包目录是零个或多个访问包的容器。 访问包目录还可能包含链接的资源，这些资源用于这些访问包中以提供访问权限。 若要查看或更改目录作用域角色的成员身份，请使用角色分配 [API](unifiedroleassignment.md) 和权利管理 RBAC 提供程序。
+在[Azure AD中](entitlementmanagement-overview.md)，访问包目录是零个或多个访问包的容器。 访问包目录还可能包含链接的资源，这些资源用于这些访问包中以提供访问权限。 若要查看或更改目录作用域角色的成员身份，请使用角色分配 [API](unifiedroleassignment.md) 和权利管理 RBAC 提供程序。
 
 
 
@@ -26,8 +26,8 @@ ms.locfileid: "53351095"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [accessPackageCatalog](accesspackagecatalog.md) 集合 | 检索 accesspackagecatalog 对象的列表。 |
-| [创建 accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | 创建新的 accessPackageCatalog 对象。 |
+| [列出 accessPackageCatalogs](../api/entitlementmanagement-list-accesspackagecatalogs.md) | [accessPackageCatalog](accesspackagecatalog.md) 集合 | 检索 accesspackagecatalog 对象的列表。 |
+| [创建 accessPackageCatalog](../api/entitlementmanagement-post-accesspackagecatalogs.md) | [accessPackageCatalog](accesspackagecatalog.md) | 创建新的 accessPackageCatalog 对象。 |
 | [获取 accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | 读取 accessPackageCatalog 对象的属性和关系。 |
 | [更新 accessPackageCatalog](../api/accesspackagecatalog-update.md)|无 | 更新 accessPackageCatalog 对象的属性。 |
 | [删除 accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | 删除 accessPackageCatalog。 |
@@ -38,15 +38,15 @@ ms.locfileid: "53351095"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|catalogStatus|字符串|如果访问 `Published` 包可用于管理，则具有 值。|
-|catalogType|字符串|或 `UserManaged` `ServiceDefault` 之一。 |
+|catalogStatus|String|如果访问 `Published` 包可用于管理，则具有 值。|
+|catalogType|String|或 `UserManaged` `ServiceDefault` 之一。 |
 |createdBy|String|创建此资源的用户的 UPN。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|说明|字符串|访问包目录的说明。|
-|displayName|字符串|访问显示名称目录的索引。|
-|id|字符串| 只读。|
+|说明|String|访问包目录的说明。|
+|displayName|String|访问显示名称目录的索引。 支持 `$filter`（`eq`、`contains`）。|
+|id|String| 只读。|
 |isExternallyVisible|Boolean|租户外部的用户是否可以请求此目录中的访问包。|
-|modifiedBy|字符串|上次修改此资源的用户的 UPN。 只读。|
+|modifiedBy|String|上次修改此资源的用户的 UPN。 只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 
 
@@ -54,7 +54,7 @@ ms.locfileid: "53351095"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackages|[accessPackage](accesspackage.md) 集合| 此目录中的访问包。 只读。 可为 NULL。|
+|accessPackages|[accessPackage](accesspackage.md) 集合| 此目录中的访问包。 只读。 可为 NULL。 支持 `$expand`。|
 |accessPackageResources|[accessPackageResource](accesspackageresource.md) 集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式

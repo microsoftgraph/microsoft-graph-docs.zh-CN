@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 5c3fb965808cc899d40f39cab3082c66a14d5b72
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: e46c1be767915769fde330b1bf58a359d3ed1a69
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424586"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650557"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -301,7 +301,7 @@ Beta 版本的 Intune 月度更新。将 **日期** 筛选器设置为 2021 年 
 教育版[分配服务](/graph/api/resources/educationassignment)的 API 现已正式发布。 
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-[访问评审](/graph/api/resources/accessreviewsv2-root) API 的 GA。 查看[概述](accessreviews-overview.md)和教程，以[评审对安全组的访问权限](tutorial-accessreviews-securitygroup.md)，以及[对 Microsoft 365 组的访问权限](tutorial-accessreviews-m365group.md)。 请注意，[旧访问评审 API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) 已被弃用，并将在 2023 年 5 月停止返回数据。
+[访问评审](/graph/api/resources/accessreviewsv2-overview) API 的 GA。 查看[概述](accessreviews-overview.md)和教程，以[评审对安全组的访问权限](tutorial-accessreviews-securitygroup.md)，以及[对 Microsoft 365 组的访问权限](tutorial-accessreviews-m365group.md)。 请注意，[旧访问评审 API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) 已被弃用，并将在 2023 年 5 月停止返回数据。
 
 
 ## <a name="june-2021-new-in-preview-only"></a>2021 年 6 月：预览版新增功能
@@ -322,7 +322,7 @@ Beta 版本的 Intune 月度更新。将 **日期** 筛选器设置为 2021 年 
 允许通过设置 **isAssignableToRole** 属性在创建时向 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) 分配 Azure AD 角色。如果设置此属性，则可以方便地管理个人的角色 - 合格人员可以加入组，而不必为每个人分配角色，默认情况下，为组分配角色将为加入组的每个新成员分配角色。 
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-通过使用 [ 计划定义](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) 的 **additionalNotificationRecipients** 属性，将用户或组成员设置为接收 [访问评审](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 进度的通知。
+通过使用 [ 计划定义](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) 的 **additionalNotificationRecipients** 属性，将用户或组成员设置为接收 [访问评审](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true) 进度的通知。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 使用 [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta&preserve-view=true) 的 **deviceFilter** 属性定义筛选器，动态包含或排除设备。
@@ -517,7 +517,7 @@ Windows Update for Business 部署服务的 API 的系列。 该服务支持在�
 Intune [3](https://developer.microsoft.com/graph/changelog/?from=2021-03-01&to=2021-03-31&filterBy=Corporate%20management) beta 版更新。
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-将新模型 [访问权限审阅](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 组成员身份和所有其他支持的资源类型。弃用[旧访问审阅模式](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true)。
+将新模型 [访问权限审阅](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true) 组成员身份和所有其他支持的资源类型。弃用[旧访问审阅模式](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="sites-and-lists"></a>网站和列表
 - 通过 [contentType](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true) 实体上的一组新属性和方法，支持特定站点集合中文档或文档集的特定内容类型或模板。方法包括下列几种：
@@ -685,7 +685,7 @@ Microsoft Graph 工具包 2.0 的 GA 版本 - 此版本包含新 [Microsoft Grap
 获取或设置 Azure AD [使用条款](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true)[协议](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true)、[协议文件](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true)和 [agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true) 的版本和创建元数据。
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-作为 Azure Active Directory [权利管理](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)的一部分，当希望访问组、应用程序或 SharePoint Online 网站的用户请求分配[访问包](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)时，他们现在可以响应[访问包分配请求](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)中[本地化内容](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true)中表示的[问题](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true)。
+作为 Azure Active Directory [权利管理](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)的一部分，当希望访问组、应用程序或 SharePoint Online 网站的用户请求分配[访问包](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)时，他们现在可以响应[访问包分配请求](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)中[本地化内容](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true)中表示的[问题](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 - 管理员可以将用户流与与外部用户共享的应用程序相关联，并在这些应用程序上启用[自助注册](/azure/active-directory/external-identities/self-service-sign-up-overview)。 他们可以定制义自助注册用户流，并创建个性化的注册体验。 具体地说，它们建立[用于调用自定义用户流的注册启动事件的侦听器](/graph/api/resources/invokeuserflowlistener?view=graph-rest-beta&preserve-view=true)。 应用程序与用户流相关联后，进入该应用程序的用户将能够启动一个提供来宾帐户的注册流。
@@ -754,7 +754,7 @@ Intune beta 版[11 月](changelog.md#november-2020)更新。
 - 通过 [组织品牌属性](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) 自定义 Azure Active Directory 登录屏幕的界面外观。 组织可根据工作地点自定义特定用户。
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-[组成员资格访问审查 API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 首次上线，可以定期审查用户访问，确保只有适当人员用户持续访问权，并有效管理组成员资格。
+[组成员资格访问审查 API](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true) 首次上线，可以定期审查用户访问，确保只有适当人员用户持续访问权，并有效管理组成员资格。
 
 ### <a name="search"></a>搜索
 可以聚合数值或字符串类型的搜索结果，[Microsoft Graph 连接器](/microsoftsearch/connectors-overview)导入这些结果，并将其在[架构](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true)中设置为可精简。查看有关[使用聚合优化搜索结果](search-concept-aggregation.md)的更多信息。
@@ -947,7 +947,7 @@ beta 版本中的 Intune [8 月](changelog.md#august-2020)更新。
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 - 自定义[使用条款协议](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true)，以支持协议的到期日和频率，要求用户按设备接受协议，或者按设定的频率重新接受协议。 
 - 使用 **file** 属性导航到某个 [自定义协议](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true)以了解使用条款。请勿使用 **files** 属性。
-- 添加、删除和列出内部或外部发起人，他们可以批准[互联组织](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true)关于访问组、应用程序或 SharePoint Online 网站的请求。有关更多信息，请参见[权利管理](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)。
+- 添加、删除和列出内部或外部发起人，他们可以批准[互联组织](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true)关于访问组、应用程序或 SharePoint Online 网站的请求。有关更多信息，请参见[权利管理](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 - 为租户启用进一步自定义[授权策略](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true)，例如允许[默认的用户角色](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true)创建应用程序或安全组或读取其他用户，允许用户注册电子邮件订阅或通过电子邮件验证加入租户，或允许用户自行重置密码。
@@ -1444,7 +1444,7 @@ Intune [12 月](changelog.md#december-2019)更新
 
 ### <a name="identity-and-access"></a>标识和访问 
 - 修复了 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) 上 **appRoleAssignments** 和 **appRoleAssignedTo** 关系的行为。
-- 使用 [Azure AD 权利管理](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)中的 [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true) 来请求将资源添加到 [目录](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)中，以便可在[访问包](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)中使用该资源的角色。
+- 使用 [Azure AD 权利管理](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)中的 [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true) 来请求将资源添加到 [目录](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)中，以便可在[访问包](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)中使用该资源的角色。
 - 使用[威胁评估 API](/graph/api/resources/threatassessment-api-overview?view=graph-rest-beta&preserve-view=true) 帮助管理员报告可疑电子邮件、网络钓鱼 URL、电子邮件附件或其他文件。 然后，线程扫描判定会通知他们相应地调整组织策略。
 
 ### <a name="teamwork"></a>团队合作
@@ -1565,7 +1565,7 @@ Intune [10 月](changelog.md#october-2019)更新
 
 ### <a name="identity-and-access"></a>标识和访问
 - 使用 [条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true) 来自定义组织的访问规则。这些规则考虑有关用户或设备标识的信号，例如用户或组成员身份、IP 位置以及例如尝试访问特定应用程序的行为，以及有风险的登录行为。
-- 使用[权利管理](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)来管理组织内外的用户对组、应用程序和 SharePoint Online 网站的访问。
+- 使用[权利管理](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)来管理组织内外的用户对组、应用程序和 SharePoint Online 网站的访问。
 - 为[应用程序](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)和[服务主体](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)添加和删除[密码凭据](/graph/api/resources/passwordcredential?view=graph-rest-beta&preserve-view=true)。
 - 管理 Azure AD B2C [信任框架策略密钥](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta&preserve-view=true)。
 - 定义 Azure AD B2C [用户流](/graph/api/resources/identityuserflow?view=graph-rest-beta&preserve-view=true)策略，用于登录、注册、合并注册和登录、密码重置和配置文件更新。
@@ -1602,7 +1602,7 @@ Intune [10 月](changelog.md#october-2019)更新
 
 - [附件](/graph/api/resources/attachment?view=graph-rest-1.0&preserve-view=true)
 - [联系人](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)
-- [事件](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
+- [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
 - [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0&preserve-view=true)
 - [邮件](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true)
 - [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0&preserve-view=true)

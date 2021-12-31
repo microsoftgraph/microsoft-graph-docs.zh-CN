@@ -1,22 +1,22 @@
 ---
 title: agreementAcceptance 资源类型
-description: 表示由 Azure AD Azure Active Directory (支持的公司可自定义使用条款范围内的用户) 。
+description: 表示用户在受组织支持的公司可自定义使用条款范围内Azure Active Directory (Azure AD) 。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 2df1803b8601635eba163aa3abd46d70ee0a5723
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 57165e25102b55bad73f43bcdee56baa8e2dd92e
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089968"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651307"
 ---
 # <a name="agreementacceptance-resource-type"></a>agreementAcceptance 资源类型
 
 命名空间：microsoft.graph
 
-表示由 Azure AD Azure Active Directory (支持的公司可自定义使用条款范围内的用户) 。
+表示用户对受组织支持的公司可自定义使用条款协议Azure Active Directory (Azure AD) 。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |

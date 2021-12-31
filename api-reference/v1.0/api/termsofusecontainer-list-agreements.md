@@ -1,0 +1,117 @@
+---
+title: 列出协议
+description: 检索协议对象的列表。
+ms.localizationpriority: medium
+doc_type: apiPageType
+ms.prod: governance
+author: raprakasMSFT
+ms.openlocfilehash: bc6cc601b99d132e46d5b4983c738be8973a1e6a
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650772"
+---
+# <a name="list-agreements"></a>列出协议
+
+命名空间：microsoft.graph
+
+检索协议 [对象](../resources/agreement.md) 的列表。
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型                        | 权限（从最低特权到最高特权）              |
+|:--------------------------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）     | Agreement.Read.All |
+|委派（个人 Microsoft 帐户） | 不支持。 |
+|应用程序                            | 不支持。 |
+
+## <a name="http-request"></a>HTTP 请求
+<!-- { "blockType": "ignored" } -->
+```http
+GET /identityGovernance/termsOfUse/agreements
+```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+
+## <a name="request-headers"></a>请求标头
+| 名称         | 类型        | 说明 |
+|:-------------|:------------|:------------|
+| Authorization | string | 持有者 \{token\}。必需。 |
+
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
+## <a name="response"></a>响应
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和 agreement](../resources/agreement.md) 对象集合。
+## <a name="examples"></a>示例
+### <a name="request"></a>请求
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_agreements"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-agreements-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-agreements-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-agreements-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-agreements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-agreements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.agreement",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "displayName": "Sample ToU",
+      "isViewingBeforeAcceptanceRequired": true,
+      "id": "093b947f-8363-4979-a47d-4c52b33ee1be"
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List agreements",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

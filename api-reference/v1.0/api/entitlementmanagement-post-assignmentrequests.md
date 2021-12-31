@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0d0b3cd342f5eaf7d017a3beb5bc34a9a634834e
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d11fbd276e0995177ec6d56f795ff9fc5921bc66
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61337912"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651208"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>创建 accessPackageAssignmentRequest
 
 命名空间：microsoft.graph
 
 
-在[Azure AD管理](../resources/entitlementmanagement-root.md)"中，创建新的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象。
+在[Azure AD管理](../resources/entitlementmanagement-overview.md)中，创建新的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象。
 
 
 ## <a name="permissions"></a>权限
@@ -104,7 +104,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

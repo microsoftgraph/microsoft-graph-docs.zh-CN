@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 168174e1d7358b107d7fba82c1d49609d4f0fb6e
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 327f553a237f9fc202065225f4ceeda40fb09acf
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558943"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650529"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>accessReviewScheduleDefinition 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "60558943"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-表示访问评审Azure AD[计划](accessreviewsv2-root.md)。 
+表示对访问评审Azure AD[计划](accessreviewsv2-overview.md)。 
 
 accessReviewScheduleDefinition 包含 [accessReviewInstance 对象](accessreviewinstance.md) 的列表。 每次重复执行计划定义时，将创建一个实例。 实例还表示要审阅的每个唯一资源。 如果计划定义检查多个资源 (包括多个组) ，则每个资源在每个重复周期中都有一个唯一实例。 对于一次评审，每个资源只创建一个实例。
 
@@ -28,9 +28,9 @@ accessReviewScheduleDefinition 包含 [accessReviewInstance 对象](accessreview
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出 accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 集合 | 列出每个 accessReviewScheduleDefinition。 结果中不包括关联的 accessReviewInstance 对象。 |
+|[列出 accessReviewScheduleDefinitions](../api/accessreviewset-list-definitions.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 集合 | 列出每个 accessReviewScheduleDefinition。 结果中不包括关联的 accessReviewInstance 对象。 |
 |[获取 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | 获取具有指定 id 的 accessReviewScheduleDefinition。 结果中不包括关联的 accessReviewInstance 对象。 |
-|[创建 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-post.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | 创建新的 accessReviewScheduleDefinition。 |
+|[创建 accessReviewScheduleDefinition](../api/accessreviewset-post-definitions.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | 创建新的 accessReviewScheduleDefinition。 |
 |[删除 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | 无。 | 删除具有指定 id 的 accessReviewScheduleDefinition。  |
 |[更新 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | 无。 | 使用指定的 id 更新 accessReviewScheduleDefinition **的属性**。 |
 |[filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 集合|检索调用用户作为一个或多个实例的审阅者的所有定义。|
@@ -44,16 +44,16 @@ accessReviewScheduleDefinition 包含 [accessReviewInstance 对象](accessreview
 | descriptionForAdmins  |String  |  评价创建者提供的说明，用于向管理员提供评论的更多上下文。 支持 `$select`。 |
 | descriptionForReviewers |String | 审阅创建者提供的说明，用于向审阅者提供审阅的更多上下文。 审阅者将在发送给他们请求审阅的电子邮件中看到此说明。 电子邮件通知最多支持 256 个字符。 支持 `$select`。 |
 | displayName | String   | 访问评审系列的名称。 支持 `$select` 和 `$orderBy`。 创建时为必需项。 |
-| fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此审阅者范围集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 当组所有者指定为审阅者但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。 请参阅 [accessReviewReviewerScope](accessreviewreviewerscope.md)。 替换 **backupReviewers**。 支持 `$select`。 |
+| fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此审阅者范围集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 当组所有者指定为审阅者，但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。 请参阅 [accessReviewReviewerScope](accessreviewreviewerscope.md)。 替换 **backupReviewers**。 支持 `$select`。 |
 | id | String | 访问评审的功能分配的唯一标识符。 支持 `$select`。 只读。|
-| instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | 在将审阅范围确定为来宾用户跨所有 Microsoft 365 组的访问权限范围并确定Microsoft 365组时，此属性是必需的。 每个组将成为访问评审系列 **的唯一 accessReviewInstance。**  有关支持的范围，请参阅 [accessReviewScope](accessreviewscope.md)。 支持 `$select`。 有关配置 instanceEnumerationScope 的选项示例，请参阅使用 Microsoft Graph [API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 |
+| instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | 将审阅范围确定为来宾用户跨所有组访问Microsoft 365时，此属性是必需的，并确定Microsoft 365哪些组。 每个组将成为访问评审系列 **的唯一 accessReviewInstance。**  有关支持的范围，请参阅 [accessReviewScope](accessreviewscope.md)。 支持 `$select`。 有关配置 instanceEnumerationScope 的选项示例，请参阅使用 Microsoft Graph [API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 |
 | 实例 |[accessReviewInstance](../resources/accessreviewinstance.md) 集合|  此访问评审系列的访问评审实例集。 不重复的访问评审将只有一个实例;否则，每个重复周期都有一个实例。 |
 | lastModifiedDateTime | DateTimeOffset   | 上次修改访问评审系列的时间戳。 支持 `$select`。 只读。|
-| reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此访问评审范围集合用于定义审阅者。 只有在将单个用户分配为审阅者时，审阅者属性才可更新。 创建时为必需项。 支持 `$select`。 有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者[分配给你的访问Graph定义](/graph/accessreviews-reviewers-concept)。 |
+| reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此访问评审范围集合用于定义审阅者。 只有在将单个用户分配为审阅者时，审阅者属性才可更新。 创建时为必需项。 支持 `$select`。 有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者分配给你的访问[Graph定义](/graph/accessreviews-reviewers-concept)。 |
 | 范围  |[accessReviewScope](../resources/accessreviewscope.md)  | 定义将检查其访问权限的实体。 有关支持的范围，请参阅 [accessReviewScope](accessreviewscope.md)。 创建时为必需项。 仅 `$select` 支持 `$filter` (`contains` 和) 。 有关配置作用域的选项示例，请参阅使用 Microsoft Graph [API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 |
 | settings  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置，请参阅下面的类型定义。 支持 `$select`。 创建时为必需项。 |
-| status  |String   | 此只读字段指定访问评审的状态。 典型状态包括 `Initializing` `NotStarted` `Starting` `InProgress` 、、、、、、 `Completing` `Completed` `AutoReviewing` 和 `AutoReviewed` 。  <br>仅 `$select` `$orderby` 支持 、 (`$filter` 和 `eq`) 。 只读。 |
-| backupReviewers (已弃)  |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此审阅者范围集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 当组所有者指定为审阅者但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。  支持 `$select`。 <br>**注意：** 此属性已被 **fallbackReviewers 取代**。 但是，指定 **backupReviewers** 或 **fallbackReviewers** 会自动向另一个属性填充相同的值。 |
+| 状态  |String   | 此只读字段指定访问评审的状态。 典型状态包括 `Initializing` `NotStarted` `Starting` `InProgress` 、、、、、、 `Completing` `Completed` `AutoReviewing` 和 `AutoReviewed` 。  <br>仅 `$select` `$orderby` 支持 `$filter` `eq` (、 和) 。 只读。 |
+| backupReviewers (弃用)  |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此审阅者范围集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 当组所有者指定为审阅者，但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。  支持 `$select`。 <br>**注意：** 此属性已被 **fallbackReviewers 取代**。 但是，指定 **backupReviewers** 或 **fallbackReviewers** 会自动向另一个属性填充相同的值。 |
 
 
 ## <a name="relationships"></a>关系

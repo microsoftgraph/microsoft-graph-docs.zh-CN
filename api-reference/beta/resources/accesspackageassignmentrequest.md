@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 765c5259a4295160f7b776a883ef9cc29bb7dc52
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: b899199163541134bbae47749307348211464c24
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767130"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651384"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>accessPackageAssignmentRequest 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "59767130"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 授权管理](entitlementmanagement-root.md)中，访问包分配请求由希望获取访问包分配的用户创建或代表用户创建。 如果请求成功，并且经过任何必要的审批，用户将收到访问包分配，并且是生成的访问包分配的主题。  Azure AD 还自动创建访问包分配请求，以跟踪访问删除。
+在[Azure AD中](entitlementmanagement-overview.md)，访问包分配请求由希望获取访问包分配的用户或代表该用户创建。 如果请求成功，并且经过任何必要的审批，用户将收到访问包分配，并且是生成的访问包分配的主题。  Azure AD还自动创建访问包分配请求，以跟踪访问删除。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) 集合 | 检索 **accesspackageassignmentrequest 对象** 的列表。 |
-| [创建 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | 创建新的 **accessPackageAssignmentRequest**。 |
+| [列出 accessPackageAssignmentRequests](../api/entitlementmanagement-list-accesspackageassignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) 集合 | 检索 **accesspackageassignmentrequest 对象** 的列表。 |
+| [创建 accessPackageAssignmentRequest](../api/entitlementmanagement-post-accesspackageassignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | 创建新的 **accessPackageAssignmentRequest**。 |
 | [获取 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | 读取 **accessPackageAssignmentRequest** 对象的属性和关系。 |
 | [删除 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md) |无 | 删除 **accessPackageAssignmentRequest**。 |
 |[filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 集合|检索已登录 **用户筛选的 accessPackageAssignmentRequest** 对象列表。|
@@ -51,8 +51,8 @@ ms.locfileid: "59767130"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](../resources/accesspackage.md)|与 accessPackageAssignmentRequest 关联的访问包。 访问包定义资源角色的集合以及一个或多个用户如何获取对这些资源的访问权限的策略。 只读。 可为 NULL。 <br/><br/> 支持 `$expand`。|
-|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| 对于 **或** 的 `UserAdd` `AdminAdd` requestType，这是请求创建的访问包分配。  对于 、 或 的 **requestType，** 此属性具有要删除的现有 `UserRemove` `AdminRemove` `SystemRemove` `id` 工作分配的 属性。  <br/><br/> 支持 `$expand`。|
+|accessPackage|[accessPackage](../resources/accesspackage.md)|与 accessPackageAssignmentRequest 关联的访问包。 访问包定义资源角色的集合以及一个或多个用户如何获取对这些资源的访问权限的策略。 只读。 可为 NULL。 支持 `$expand`。|
+|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| 对于 **或** 的 `UserAdd` `AdminAdd` requestType，这是请求创建的访问包分配。  对于 、 或 的 **requestType，** 此属性具有要删除的现有 `UserRemove` `AdminRemove` `SystemRemove` `id` 工作分配的 属性。  支持 `$expand`。|
 |requestor|[accessPackageSubject](accesspackagesubject.md)| 请求或分配了直接分配（如果为直接分配）的主题。 只读。 可为 NULL。 支持 `$expand`。|
 
 

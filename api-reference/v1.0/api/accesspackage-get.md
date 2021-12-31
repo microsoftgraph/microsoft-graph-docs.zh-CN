@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fe6b12617b1d36dd7f7dc1baec0aa4d804b18175
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 804ce875da9e2baffa5d8941d990b2a3beac8fc4
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341796"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651342"
 ---
 # <a name="get-accesspackage"></a>获取 accessPackage
 
@@ -42,8 +42,6 @@ GET /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持 `$select` [OData 查询参数检索](/graph/query-parameters) 特定属性。
-
-
 
 ## <a name="request-headers"></a>请求标头
 
@@ -87,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

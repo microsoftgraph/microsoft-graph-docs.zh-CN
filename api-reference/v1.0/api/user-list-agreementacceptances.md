@@ -2,22 +2,22 @@
 title: List agreementAcceptances
 description: 检索用户 agreementAcceptance 对象的列表。
 ms.localizationpriority: medium
-author: jpettere
+author: raprakasMSFT
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b475a185bdda9a06d96688f8181cd31865970e17
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e1b507c29b71a5591fa4bbae02ccc8fe033e613a
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946914"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651531"
 ---
 # <a name="list-agreementacceptances"></a>List agreementAcceptances
 
 命名空间：microsoft.graph
 
 检索用户 [agreementAcceptance 对象](../resources/agreementacceptance.md) 的列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -36,7 +36,7 @@ GET /users/{id | userPrincipalName}/agreementAcceptances
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |

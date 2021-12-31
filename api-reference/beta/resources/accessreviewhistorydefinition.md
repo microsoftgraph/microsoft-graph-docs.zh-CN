@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 00b8881e14c30337e2513e2cb96fefa687e3115a
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 8175241c8760986cc821e167e75495cc7f843893
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226111"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650613"
 ---
 # <a name="accessreviewhistorydefinition-resource-type"></a>accessReviewHistoryDefinition 资源类型
 
@@ -20,11 +20,11 @@ ms.locfileid: "61226111"
 
 表示访问评审历史记录数据和用于收集数据的范围的集合。 **reviewHistoryPeriodStartDateTime**、 **reviewHistoryPeriodEndDateTime**、 **decisions** 和 **scopes** 属性的 **accessReviewHistoryDefinition** are used when selecting review history data， and can be modified. 每个 **accessReviewHistoryDefinition** 对象只能使用 30 天。 一旦历史记录定义的状态移动到链接，就可以通过调用 `done` [generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)来检索定义的数据。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 accessReviewHistoryDefinitions](../api/accessreviewhistorydefinition-list.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 集合|获取 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象及其属性的列表。|
-|[创建 accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-post.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|创建新的 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象。|
+|[列出 accessReviewHistoryDefinitions](../api/accessreviewset-list-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 集合|获取 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象及其属性的列表。|
+|[创建 accessReviewHistoryDefinition](../api/accessreviewset-post-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|创建新的 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象。|
 |[获取 accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|读取 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象的属性和关系。|
 |[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|生成可用于检索审阅历史记录数据的 URI。|
 
@@ -41,7 +41,7 @@ ms.locfileid: "61226111"
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|时间戳、在此日期或之后开始审阅将包含在提取的历史记录数据中。 必需。|
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|时间戳、在此日期或之前开始审阅将包含在提取的历史记录数据中。 必需。|
 |scopes|[accessReviewQueryScope](accessreviewqueryscope.md) 集合|用于确定提取的历史记录数据中包含的审阅的范围。 获取其范围与提供的范围匹配的审阅。 必需。|
-|status|字符串集合|表示审阅历史记录数据收集的状态。 可能的值是：`done`、`inprogress`、`error`、`requested`。|
+|状态|字符串集合|表示审阅历史记录数据收集的状态。 可能的值是：`done`、`inprogress`、`error`、`requested`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

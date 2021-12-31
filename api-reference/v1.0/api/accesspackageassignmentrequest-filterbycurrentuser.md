@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d72578fec62c4a7cc0b51818a2706cff5a42a678
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 6709dabac21f026c0cfd47a01fa28f9f8358b1e1
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61337142"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650585"
 ---
 # <a name="accesspackageassignmentrequest-filterbycurrentuser"></a>accessPackageAssignmentRequest： filterByCurrentUser
 命名空间：microsoft.graph
 
 
-在[Azure AD管理](../resources/entitlementmanagement-root.md)"中，检索在登录用户上筛选的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象列表。
+在[Azure AD管理](../resources/entitlementmanagement-overview.md)"中，检索在登录用户上筛选的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,7 +42,7 @@ GET /identityGovernance/entitlementManagement/assignmentRequests/filterByCurrent
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|accessPackageAssignmentRequestFilterByCurrentUserOptions|可用于筛选访问包分配请求列表的用户选项列表。|
+|on|accessPackageAssignmentRequestFilterByCurrentUserOptions|可用于筛选访问包分配请求列表的用户选项列表。 可能的值为 `target` `createdBy` `approver` 、、。|
 
 - `target` 用于获取 `accessPackageAssignmentRequest` 已登录用户作为目标的对象。 结果列表包括所有目录和访问包中调用方或调用方请求的所有分配请求（当前和已过期）。
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 [!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignmentrequest-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignmentrequest-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

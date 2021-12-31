@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f86533c7d0d40e1ec99d8150b7df18a240547a65
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3e5380a15446e0d5454623444b47162e557939d5
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983511"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650753"
 ---
 # <a name="accesspackageassignmentrequest-filterbycurrentuser"></a>accessPackageAssignmentRequest： filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD中](../resources/entitlementmanagement-root.md)，检索在登录用户上筛选的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象列表。
+在[Azure AD管理](../resources/entitlementmanagement-overview.md)"中，检索在登录用户上筛选的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,7 +35,7 @@ ms.locfileid: "60983511"
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/filterByCurrentUser
+GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/filterByCurrentUser(on='parameterValue')
 ```
 
 ## <a name="function-parameters"></a>函数参数
@@ -43,15 +43,15 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/fi
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|[accessPackageAssignmentRequestFilterByCurrentUserOptions](../resources/accesspackageassignmentrequest-accesspackageassignmentrequestfilterbycurrentuseroptions.md)|可用于对访问包分配请求列表进行筛选的当前用户选项的列表。|
+|on|[accessPackageAssignmentRequestFilterByCurrentUserOptions](../resources/accesspackageassignmentrequest-accesspackageassignmentrequestfilterbycurrentuseroptions.md)|可用于对访问包分配请求列表进行筛选的当前用户选项的列表。 可能的值为 `target` `createdBy` `approver` 、、。|
 
 - `target` 用于获取 `accessPackageAssignmentRequest` 已登录用户作为目标的对象。 结果列表包括所有目录和访问包中调用方或调用方请求的所有分配请求（当前和已过期）。
 
 - `createdBy` 用于获取 `accessPackageAssignmentRequest` 已登录用户创建的对象。 结果列表包括所有目录和访问包中调用方自己或代表其他人创建的所有分配请求，例如管理员直接分配。
 
-- `approver` 用于获取已登录用户是任何包含的用户或用户集合中允许的 `accessPackageAssignmentRequest` `accessPackageAssignment/accessPackageAssignmentPolicy/requestApprovalSettings/approvalStages` 审批 `primaryApprovers` `escalationApprovers` () 。 生成的列表包括所有目录和访问包中挂起且需要调用方做出决策的分配请求。 生成的列表包括状态中跨所有目录和访问包的分配请求，并且需要 `pending` 调用方做出决策。
+- `approver` 用于获取已登录用户是任何包含的或 (中允许的审批 `accessPackageAssignmentRequest` `accessPackageAssignment/accessPackageAssignmentPolicy/requestApprovalSettings/approvalStages` `primaryApprovers` `escalationApprovers` 者) 。 生成的列表包括所有目录和访问包中挂起且需要调用方做出决策的分配请求。 生成的列表包括状态中跨所有目录和访问包的分配请求，并且需要 `pending` 调用方做出决策。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignmentrequest-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignmentrequest-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

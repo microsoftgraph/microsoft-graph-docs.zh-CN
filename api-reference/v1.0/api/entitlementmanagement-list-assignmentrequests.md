@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a4c4496fc3d9c5dfa2274c0e47222e77faa2556d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 66d1ff97950847c6c421500f1f3ebc1b91d2a8a1
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61342834"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651510"
 ---
 # <a name="list-assignmentrequests"></a>列出 assignmentRequests
 
 命名空间：microsoft.graph
 
-在[Azure AD中](../resources/entitlementmanagement-root.md)，检索[accessPackageAssignmentRequest 对象](../resources/accesspackageassignmentrequest.md)的列表。  生成的列表包括调用方有权访问的所有目录和访问包中当前和过期的所有分配请求。
+在[Azure AD中](../resources/entitlementmanagement-overview.md)，检索[accessPackageAssignmentRequest 对象](../resources/accesspackageassignmentrequest.md)的列表。  生成的列表包括调用方有权访问的所有目录和访问包中当前和过期的所有分配请求。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/assignmentRequests
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$expand` 和 `$filter` OData 查询参数来帮助自定义响应。
+此方法支持 `$select` 、 `$expand` 和 `$filter` OData 查询参数来帮助自定义响应。
 
 ### <a name="example-scenarios-for-using-query-parameters"></a>使用查询参数的示例方案
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 [!INCLUDE [sample-code](../includes/snippets/java/list-accesspackageassignmentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accesspackageassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

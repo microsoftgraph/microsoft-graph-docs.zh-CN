@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d22ab7f69213625468b1cb5857a47147fbdd7889
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: d8c8a7bb8943f88657392f06ea78ec2ec502d436
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242356"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651440"
 ---
 # <a name="accesspackagesubject-resource-type"></a>accessPackageSubject 资源类型
 
 命名空间：microsoft.graph
 
 
-在[Azure AD中](entitlementmanagement-root.md)，访问包主题是可配置为请求或分配访问包的用户、服务主体或其他实体。  它可以表示来自尚未在租户中的已连接组织的请求者。
+在[Azure AD中](entitlementmanagement-overview.md)，访问包主题是可配置为请求或分配访问包的用户、服务主体或其他实体。  它可以表示来自尚未在租户中的已连接组织的请求者。
 
 ## <a name="methods"></a>方法
 

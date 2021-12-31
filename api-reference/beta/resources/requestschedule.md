@@ -1,16 +1,16 @@
 ---
 title: requestSchedule 资源类型
 description: 请求计划可包含在访问包分配请求中，并且存在于访问包分配中。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8336366a1e6c63b6f76b293b6445f5583a7fd32f
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 7abb130d39a63041386b1d36bded838a7d994f30
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454029"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650683"
 ---
 # <a name="requestschedule-resource-type"></a>requestSchedule 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "58454029"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包分配请求由想要获取访问包分配的用户创建。 此请求可包括用户希望何时进行工作分配的计划。  由此类请求导致的访问包分配也具有计划。
+在[Azure AD中](entitlementmanagement-overview.md)，访问包分配请求由想要获取访问包分配的用户创建。 此请求可包括用户希望何时进行工作分配的计划。  由此类请求导致的访问包分配也具有计划。
 
 ## <a name="properties"></a>属性
 

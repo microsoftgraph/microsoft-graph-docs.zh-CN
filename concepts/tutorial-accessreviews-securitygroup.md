@@ -4,12 +4,12 @@ description: 使用访问评审 API 查看对安全组的访问权限
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 6ac5bdc6432c372120ddc3725bfe2143fb435104
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f0929b42d8a8b9e65b3fe7abb7754fb6dd61ee2c
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143487"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651496"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>教程：使用访问评审 API 查看对安全组的访问权限
 
@@ -24,7 +24,7 @@ ms.locfileid: "59143487"
 
 若要完成本教程，需要以下资源和权限：
 
-+ Azure AD 租户（已启用Azure AD Premium P2 EMS E5 许可证）。
++ 启用Azure AD EMS E5 Azure AD Premium P2工作租户。
 + 以用户[Graph](https://developer.microsoft.com/graph/graph-explorer)登录资源管理器全局管理员角色。
   + [可选]启动新的 **隐身** 或 **InPrivate** 浏览器会话或在匿名浏览器中启动会话。 你将在本教程的稍后部分登录。
 + 以下委派权限 `AccessReview.ReadWrite.All` `Group.ReadWrite.All` ：、。
@@ -160,7 +160,7 @@ Content-type: application/json
 
 在此调用中，替换以下内容：
 + `825f1b5e-6fb2-4d9a-b393-d491101acc0c`具有 **"生成****安全组"的 ID。**
-+ 作用域指定将审阅应用于"生成安全"组 **的所有组的成员**。 有关配置范围的更多选项，请参阅另 [请参阅部分](#see-also) 。
++ 范围指定将审阅应用于"生成安全"组 **的所有组的成员**。 有关配置范围的更多选项，请参阅另 [请参阅部分](#see-also) 。
 + **startDate** 的值（具有今天的日期）和 **endDate** 值（开始日期为一年）。
 
 如果未能指定 **reviewers** 属性的值，此访问评审将配置为具有审阅者的成员进行自我审阅。
@@ -426,7 +426,7 @@ Content-type: application/json
 
 ### <a name="list-your-pending-access-review-instances"></a>列出待处理的访问评审实例
 
-在隐身浏览器会话和浏览器Graph资源管理器中，运行以下查询以列出待定访问评审实例：
+在隐身浏览器会话和Graph资源管理器中，运行以下查询以列出待定访问评审实例：
 
 #### <a name="request"></a>请求
 
@@ -473,7 +473,7 @@ Content-type: application/json
 
 返回到你仍以全局管理员用户身份登录的主浏览器会话中，重复步骤 4 以查看已完成步骤 5 的成员的决策属性现在为 `Approve` 。
 
-恭喜！ 你已创建访问评审并自行证明访问权限需求。 只需执行一次此操作，并保持访问权限，直到访问评审定义过期。
+祝贺你！ 你已创建访问评审并自行证明访问权限需求。 只需执行一次此操作，并保持访问权限，直到访问评审定义过期。
 
 ## <a name="step-7-clean-up-resources"></a>第 7 步：清理资源
 
@@ -553,11 +553,11 @@ Content-type: text/plain
 
 ## <a name="see-also"></a>另请参阅
 
-+ [访问评审 API 参考](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [访问评审 API 参考](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
 + [使用 Microsoft Graph API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)
 + [访问评审概述和许可证要求](/azure/active-directory/governance/access-reviews-overview)
-+ [创建对应用程序组&评审](/azure/active-directory/governance/create-access-review)
-+ [访问评审 API 参考](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [创建对应用程序应用程序的组&评审](/azure/active-directory/governance/create-access-review)
++ [访问评审 API 参考](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
 + [创建 accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
 + [列出 accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
 + [列出 accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)

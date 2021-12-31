@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 61db7e5baf0c639a3adae55c11ffe7f429263a06
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b6d3a30ca36cd31bc8134ab31f31b93d57e10e9a
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983897"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650564"
 ---
 # <a name="delete-accesspackage"></a>删除 accessPackage
 
@@ -20,7 +20,7 @@ ms.locfileid: "60983897"
 
 删除 [accessPackage](../resources/accesspackage.md) 对象。
 
-如果访问包有任何 **accessPackageAssignment**，则不能删除该访问包。 若要删除访问包 [，请首先](accesspackageassignment-list.md) 查询是否有带筛选器的分配，以指示特定访问包，例如 `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` ：。 若要详细了解如何删除仍处于已传递状态的工作分配，请参阅删除 [工作分配](accesspackageassignmentrequest-post.md#example-4-remove-an-assignment)。
+如果访问包有任何 **accessPackageAssignment**，则不能删除该访问包。 若要删除访问包 [，请首先](entitlementmanagement-list-accesspackageassignments.md) 查询是否有带筛选器的分配，以指示特定访问包，例如 `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` ：。 若要详细了解如何删除仍处于已传递状态的工作分配，请参阅删除 [工作分配](entitlementmanagement-post-accesspackageassignmentrequests.md#example-4-remove-an-assignment)。
 
 
 ## <a name="permissions"></a>权限
@@ -86,7 +86,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

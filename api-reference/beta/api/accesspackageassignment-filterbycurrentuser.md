@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ffe74b64b41c6bf9aeea014d2aff83277aaa086d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1e3d5aa134eee073e9e5654f034f7609f3352929
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983609"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650872"
 ---
 # <a name="accesspackageassignment-filterbycurrentuser"></a>accessPackageAssignment：filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)， retrieve a list of [accessPackageAssignment](../resources/accesspackageassignment.md) objects filtered on the signed-in user.
+在[Azure AD管理](../resources/entitlementmanagement-overview.md)"中，检索在已登录用户上筛选的[accessPackageAssignment](../resources/accesspackageassignment.md)对象列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,7 +35,7 @@ In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByCurrentUser
+GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByCurrentUser(on='parameterValue')
 ```
 
 ## <a name="function-parameters"></a>函数参数
@@ -43,13 +43,13 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByC
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|[accessPackageAssignmentFilterByCurrentUserOptions](../resources/accesspackageassignment-accesspackageassignmentfilterbycurrentuseroptions.md)|可用于在访问包分配列表上进行筛选的当前用户选项的列表。|
+|on|[accessPackageAssignmentFilterByCurrentUserOptions](../resources/accesspackageassignment-accesspackageassignmentfilterbycurrentuseroptions.md)|可用于在访问包分配列表上进行筛选的当前用户选项的列表。 可能的值是 `target` `createdBy` ：、。 |
 
 - `target` 用于获取 `accessPackageAssignment` 已登录用户作为目标的对象。 生成的列表包括所有目录和访问包中调用方的所有分配（当前分配和过期分配）。
 
 - `createdBy` 用于获取 `accessPackageAssignment` 已登录用户创建的对象。 结果列表包括所有目录和访问包中调用方为自己或代表其他人创建的所有分配，例如管理员直接分配。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignment-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignment-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

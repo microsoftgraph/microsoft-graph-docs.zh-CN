@@ -2,15 +2,15 @@
 title: accessReviewNotificationRecipientItem 资源类型
 description: 定义将接收通知的用户或组访问审阅通知。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3d6ed767f1350f3e4a43a1b31363920ffb58a9b5
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 00904cf1ac474d418629a0bba19d925698d72cf8
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896731"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650487"
 ---
 # <a name="accessreviewnotificationrecipientitem-resource-type"></a>accessReviewNotificationRecipientItem 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52896731"
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 
-表示评价实例 [上的](accessreviewsv2-root.md) Azure AD 访问评审通知事件。 此项目包含电子邮件模板类型和收件人属性，以允许发送给定访问评审实例的某些类型的 [通知](accessreviewinstance.md)。
+表示Azure AD[实例](accessreviewsv2-overview.md)上的访问评审通知事件。 此项目包含电子邮件模板类型和收件人属性，以允许发送给定访问评审实例的某些类型的 [通知](accessreviewinstance.md)。
 
 ## <a name="properties"></a>属性
 

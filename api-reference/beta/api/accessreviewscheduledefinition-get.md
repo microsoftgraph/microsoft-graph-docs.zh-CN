@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: adcbcc9434c9cfdff42123f0253cffd6bde4f664
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b28c6c8e9cf65e9ed220734bf930e31e051e92ca
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987683"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650697"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>获取 accessReviewScheduleDefinition
 
@@ -18,9 +18,9 @@ ms.locfileid: "60987683"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按 ID [检索 accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 这将返回计划的访问评审系列的所有属性，关联的 accessReviewInstances 除外。 每个 accessReviewScheduleDefinition 至少具有一个实例。 实例表示在出现一次 (（例如，2021 年 3 月) 定期审阅）期间对特定资源组（如特定组的成员 () ）的审阅。
+按 ID [检索 accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 这将返回计划的访问评审系列的所有属性，关联的 accessReviewInstances 除外。 每个 accessReviewScheduleDefinition 至少具有一个实例。 实例表示在出现一次 (（例如，2021 年 3 月) 定期审阅）期间对特定资源组（如特定组的成员)  (）的审阅。
 
-若要检索访问评审系列的实例，请使用 [列表 accessReviewInstance](accessreviewinstance-list.md) API。
+若要检索访问评审系列的实例，请使用 [列表 accessReviewInstance](accessreviewscheduledefinition-list-instances.md) API。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,7 +31,7 @@ ms.locfileid: "60987683"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
-若要调用此 API，登录用户还必须位于允许其阅读访问评审的目录角色中，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-root.md)。
+若要调用此 API，登录用户还必须位于允许其阅读访问评审的目录角色中，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-overview.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -144,9 +144,9 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-- [创建 accessReviewScheduleDefinition](accessreviewscheduledefinition-post.md)
-- [列出 accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
-- [列出 accessReviewInstance](accessreviewinstance-list.md)
+- [创建 accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
+- [列出 accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
+- [列出 accessReviewInstance](accessreviewscheduledefinition-list-instances.md)
 
 
 <!--

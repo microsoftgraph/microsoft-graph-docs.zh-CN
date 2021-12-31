@@ -1,24 +1,24 @@
 ---
 title: 访问评审 API 概述
-description: 访问评审 API 允许你以编程方式查看对 Azure AD 资源的访问权限。
+description: 访问评审 API 允许你以编程方式查看对访问Azure AD的访问权限。
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 53e7d075323297b6e152cc9458266d571f26477b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 128732f237a6a639152d9739e05b1cdbe389f00a
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766955"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651405"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Access 审阅 API 概述
 
-Microsoft[访问评审 API](/graph/api/resources/accessreviewsv2-root) Graph允许你以编程方式查看对 Azure AD 资源的访问权限。 此审查有助于确保合适的人员对组织中适当的资源具有适当的访问权限。
+Microsoft Graph 中的访问评审[API](/graph/api/resources/accessreviewsv2-overview)允许你以编程方式查看对Azure AD的访问权限。 此审查有助于确保合适的人员对组织中适当的资源具有适当的访问权限。
 
 使用访问评审 API，可以执行以下操作：
 + 创建、读取、更新和删除访问评审、访问评审设置和计划。
-+ 调查过去的访问评审以及审阅者做出的决策，包括 Azure AD 自动执行的步骤。
++ 调查过去的访问评审以及审阅者做出的决策，包括Azure AD执行的步骤。
 
 ## <a name="scope-of-use"></a>使用范围
 
@@ -27,7 +27,7 @@ Microsoft[访问评审 API](/graph/api/resources/accessreviewsv2-root) Graph允�
 + 使用应用或脚本为自己拥有的资源创建访问评审的资源所有者。
 + 管理员会自动收集一个或多个访问评审的所有决策。
   
-若要在用户环境中授权应用 (委派) ，请参阅代表 [用户获取访问权限](/graph/auth-v2-user)。
+若要在用户环境中授权 (委派) ，请参阅代表 [用户获取访问权限](/graph/auth-v2-user)。
 
 在应用程序上下文中，应用程序在没有登录用户的情况下调用访问评审 API。 典型方案是安排的后台脚本定期收集所有访问评审的决策。 若要在此上下文中授权你的应用，请参阅 [在没有用户的情况下获取访问权限](/graph/auth-v2-service)。
 

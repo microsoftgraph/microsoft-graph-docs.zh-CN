@@ -5,21 +5,21 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 344553abae352f962187068e3b680750762d2579
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 72e6ed93a56e39daeb74a9236314ccfe5b2fbfa6
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979751"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650571"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>获取 accessReviewScheduleDefinition
 命名空间：microsoft.graph
 
 读取 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的属性和关系。
 
-若要检索访问评审系列的实例，请使用 [列表 accessReviewInstance](accessreviewinstance-list.md) API。   
+若要检索访问评审系列的实例，请使用 [列表 accessReviewInstance](accessreviewscheduledefinition-list-instances.md) API。   
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -28,7 +28,7 @@ ms.locfileid: "60979751"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|AccessReview.Read.All、AccessReview.ReadWrite.All|
 
-若要调用此 API，登录用户还必须位于允许其阅读访问评审的目录角色中，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-root.md)。
+若要调用此 API，登录用户还必须位于允许其阅读访问评审的目录角色中，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-overview.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -160,6 +160,6 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-- [创建 accessReviewScheduleDefinition](accessreviewscheduledefinition-post.md)
-- [列出 accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
-- [列出 accessReviewInstance](accessreviewinstance-list.md)
+- [创建 accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
+- [列出 accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
+- [列出 accessReviewInstance](accessreviewscheduledefinition-list-instances.md)

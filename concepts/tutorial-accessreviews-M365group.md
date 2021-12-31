@@ -4,16 +4,16 @@ description: 使用访问评审 API 查看来宾对组Microsoft 365访问
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 7aab1a64f4bcd3d5f58a3a14e872098047cb3c00
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4273c4d80d80c002265833fe14ba4492e9013fb4
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126511"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651426"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>教程：使用访问评审 API 查看来宾对组Microsoft 365访问
 
-在本教程中，你将使用 Graph 资源管理器创建和阅读访问评审，这些评论面向租户Microsoft 365来宾用户的所有组。 若要实现此目的，你将首先使用 Azure AD B2B 在租户中邀请和创建来宾用户（也称为外部标识）。 然后，在创建和阅读访问评审之前，Microsoft 365此来宾用户添加到你的组。
+在本教程中，你将使用 Graph 资源管理器创建和阅读访问评审，这些评论面向Microsoft 365租户中具有来宾用户的所有组。 若要实现此目的，首先使用 Azure AD B2B 邀请和创建租户中的来宾用户（也称为外部标识）。 然后，在创建和阅读访问评审之前，Microsoft 365此来宾用户添加到你的组。
 
 >[!NOTE]
 >为了可读性，本教程中显示的响应对象可能会缩短。
@@ -22,13 +22,13 @@ ms.locfileid: "59126511"
 
 若要完成本教程，需要以下资源和权限：
 
-+ 启用许可证或 EMS E5 Azure AD Premium P2正常工作的 Azure AD 租户。 
-+ 其他 Azure AD 租户中的帐户或作为来宾用户邀请的社交标识 (B2B) 。
++ 启用Azure AD EMS E5 Azure AD Premium P2工作租户。 
++ 不同租户Azure AD中的帐户或作为来宾用户邀请的社交标识 (B2B) 。
 + 以用户[Graph](https://developer.microsoft.com/graph/graph-explorer)登录资源管理器全局管理员角色。 
 + 以下委派权限 `User.Invite.All` `AccessReview.ReadWrite.All` ：、、、。 `Group.ReadWrite.All` `User.ReadWrite.All`
 
 若要同意在浏览器浏览器中Graph权限：
-1. 选择用户帐户详细信息右边的设置图标，然后选择"**选择权限"。**
+1. 选择用户帐户详细信息右侧设置图标，然后选择"**选择权限"。**
    
    ![选择 Microsoft Graph 权限](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
@@ -133,13 +133,13 @@ Content-type: application/json
 在此步骤中：
 1. 创建一个名为"Microsoft 365 **市场营销活动"的新组**。
 2. 将自己分配为组所有者。
-3. 添加 john@tailspintoys.com 作为组的成员。 他们访问组是由你（组所有者）审查的主题。
+3. 将 john@tailspintoys.com 添加为组的成员。 他们访问组是由你（组所有者）审查的主题。
 
 ### <a name="request"></a>请求
 
 在此调用中，替换：
 + `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` 与 **id 一起**。若要检索 **id，** 请运行 `GET` `https://graph.microsoft.com/beta/me` 。
-+ `baf1b0a0-1f9a-4a56-9884-6a30824f8d20`john@tailspintoys.com 步骤 2 **中响应** 的 id。
++ `baf1b0a0-1f9a-4a56-9884-6a30824f8d20`与 **john@tailspintoys.com** 2中响应的 id 一起显示。
 
 <!-- {
   "blockType": "request",
@@ -193,12 +193,12 @@ Content-type: application/json
 
 ## <a name="step-4-create-an-access-review-for-all-microsoft-365-groups-with-guest-users"></a>步骤 4：为具有来宾用户的所有Microsoft 365组创建访问评审
 
-为具有来宾用户的所有 Microsoft 365 组创建定期访问评审系列时，计划定期查看来宾对 Microsoft 365 组的访问权限。 为 **"Feelgood 市场营销活动"组** 进行此操作。
+为具有来宾用户的所有 Microsoft 365 组创建定期访问评审系列时，安排定期查看来宾对 Microsoft 365 组的访问权限。 为 **"Feelgood 市场营销活动"组** 进行此操作。
 
 访问评审系列使用下列设置：
 + 这是定期访问评审，每季度查看一次。
 + 组所有者查看来宾用户的持续访问权限。
-+ 审阅范围限制为仅限Microsoft 365 **来宾用户的组**。 有关配置范围的更多选项，请参阅另 [请参阅部分](#see-also) 。 
++ 审查范围仅限于仅限Microsoft 365 **来宾用户的组**。 有关配置范围的更多选项，请参阅另 [请参阅部分](#see-also) 。 
 + 备份审阅者。 这可以是回退用户或可在组未分配任何所有者的情况下查看访问权限的组。 有关配置审阅者的更多选项，请参阅另 [请参阅部分](#see-also) 。
 + **autoApplyDecisionsEnabled** 设置为 `true` 。 在这种情况下，一旦审阅者完成访问评审或访问评审持续时间结束，将自动应用决策。 如果未启用，则用户必须在审阅完成后手动应用决策。
 + 将 **removeAccessApplyAction** 操作应用于拒绝的来宾用户。 这将删除被拒绝来宾组的成员身份。 来宾用户仍可登录到你的租户。
@@ -357,7 +357,7 @@ Content-type: application/json
 
 ## <a name="step-5-list-instances-of-the-access-review"></a>步骤 5：列出访问评审的实例
 
-以下查询列出了访问评审定义的所有实例。 如果测试租户包含具有来宾Microsoft 365的其他组，此请求将为租户中具有来宾Microsoft 365组返回一个实例。
+以下查询列出了访问评审定义的所有实例。 如果你的测试租户包含具有来宾Microsoft 365组，此请求将为租户中具有来宾Microsoft 365组返回一个实例。
 
 ### <a name="request"></a>请求
 
@@ -373,7 +373,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ### <a name="response"></a>响应
 
-在此响应中，范围包括一个 **id** 为 (在步骤 3 中创建的 Feelgood 市场营销活动组) `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` 因为它有来宾用户。 
+在此响应中，范围包括一个 **id** 为 (步骤 3 中创建的 Feelgood 市场营销活动组) `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` 因为它有来宾用户。 
 
 <!-- {
   "blockType": "response",
@@ -475,7 +475,7 @@ Content-type: application/json
 }
 ```
 
-因为这是季度评审，并且只要定义仍处于活动状态（即重复的 **endDate** 不是过去日期，每 3 个月创建一次新审阅实例，您作为审阅者就可以应用新决策。
+因为这是季度评审，并且只要定义仍处于活动状态（即重复的 **endDate** 不是过去日期，每 3 个月创建一次新的审阅实例，您作为审阅者就可以应用新决策。
 
 ## <a name="step-7-clean-up-resources"></a>第 7 步：清理资源
 
@@ -575,17 +575,17 @@ HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-恭喜！ 你已针对租户中 Microsoft 365 组的所有来宾用户创建了访问评审，并计划每季度评估并证明来宾用户的访问权限。 组所有者将在这些周期内查看访问权限，选择批准或拒绝访问。
+祝贺你！ 你已针对租户中 Microsoft 365 组的所有来宾用户创建了访问评审，并计划每季度评估并证明来宾用户的访问权限。 组所有者将在这些周期内查看访问权限，选择批准或拒绝访问。
 
 ## <a name="see-also"></a>另请参阅
 
-+ [访问评审 API 参考](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [访问评审 API 参考](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
 + [使用 Microsoft Graph API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)
 + [使用 Microsoft Graph API 将审阅者分配给你的访问Graph定义](/graph/accessreviews-reviewers-concept)
 + [访问评审概述和许可证要求](/azure/active-directory/governance/access-reviews-overview)
 + [创建对应用程序应用程序的组&评审](/azure/active-directory/governance/create-access-review)
 + [邀请/添加来宾用户到组织](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
-+ [访问评审 API 参考](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [访问评审 API 参考](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
 + [创建 accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
 + [列出 accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
 + [列出 accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)

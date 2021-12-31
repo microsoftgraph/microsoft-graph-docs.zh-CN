@@ -1,16 +1,16 @@
 ---
 title: expirationPattern 资源类型
 description: 请求计划中的过期模式可包含在访问包分配请求中，并且存在于访问包分配中。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 027cf5616588593244c011c7dba5a0c3efb4514d
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 10be33677d61c5cfe00d64922845c7fa167fd9b7
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513718"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649764"
 ---
 # <a name="expirationpattern-resource-type"></a>expirationPattern 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "58513718"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包分配请求由想要获取访问包分配的用户创建。 此请求可包括用户希望何时进行工作分配的计划。  由此类请求导致的访问包分配也具有计划。  [requestSchedule 的过期字段](requestschedule.md)指示访问包分配应过期的时间。
+在[Azure AD中](entitlementmanagement-overview.md)，访问包分配请求由想要获取访问包分配的用户创建。 此请求可包括用户希望何时进行工作分配的计划。  由此类请求导致的访问包分配也具有计划。  [requestSchedule 的过期字段](requestschedule.md)指示访问包分配应过期的时间。
 
 ## <a name="properties"></a>属性
 
@@ -33,9 +33,9 @@ ms.locfileid: "58513718"
 | 成员 | 值| 说明 |
 |:---------------|:--------|:----------|
 |notSpecified|0|未指定过期计划。|
-|noExpiration|1 |请求者不希望访问过期。|
-|afterDateTime|2 |访问将在指定的日期和时间后过期。|
-|afterDuration|3 |访问将在相对于授予访问权限的指定持续时间后过期。 指定 **duration 属性** 时是必需的。|
+|noExpiration|1|请求者不希望访问过期。|
+|afterDateTime|2|访问将在指定的日期和时间后过期。|
+|afterDuration|3|访问将在相对于授予访问权限的指定持续时间后过期。 指定 **duration 属性** 时是必需的。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

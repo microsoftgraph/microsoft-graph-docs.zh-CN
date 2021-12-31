@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f37a9f58cf6d2ede1393811901c64754d64fd467
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 18c814c0426deaa89709505816f21282c75b1757
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242345"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650900"
 ---
 # <a name="entitlementmanagementschedule-complex-type"></a>entitlementManagementSchedule 复杂类型
 
 命名空间：microsoft.graph
 
-在[Azure AD中](entitlementmanagement-root.md)，访问包分配请求由想要获取访问包分配的用户创建。 此请求可包括用户希望何时进行工作分配的计划。  由此类请求导致的访问包分配也具有计划。
+在[Azure AD中](entitlementmanagement-overview.md)，访问包分配请求由想要获取访问包分配的用户创建。 此请求可包括用户希望何时进行工作分配的计划。  由此类请求导致的访问包分配也具有计划。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

@@ -5,18 +5,18 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: aab29de91f37d04282b357e47d2fefdedf566a9f
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 7f63f9cfe3e1233407d0aaf966d9e2c0d933da26
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60562114"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649688"
 ---
 # <a name="accessreviewnotificationrecipientitem-resource-type"></a>accessReviewNotificationRecipientItem 资源类型
 
 命名空间：microsoft.graph
 
-表示[Azure AD实例上的](accessreviewsv2-root.md)访问评审通知事件。 此项目包含电子邮件模板类型和收件人属性，以允许发送给定访问评审实例的某些类型的 [通知](accessreviewinstance.md)。
+表示[Azure AD实例上的](accessreviewsv2-overview.md)访问评审通知事件。 此项目包含电子邮件模板类型和收件人属性，以允许发送给定访问评审实例的某些类型的 [通知](accessreviewinstance.md)。
 
 ## <a name="properties"></a>属性
 

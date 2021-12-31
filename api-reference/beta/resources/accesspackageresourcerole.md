@@ -1,16 +1,16 @@
 ---
 title: accessPackageResourceRole 资源类型
 description: 对资源中定义的角色的引用。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1194c27e929a14f738384441ab57f5090d8b1149
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 5652e9c867b235bc87cf67584056ce4425f1da80
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401597"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651187"
 ---
 # <a name="accesspackageresourcerole-resource-type"></a>accessPackageResourceRole 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "53401597"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包资源角色是资源中定义的角色的引用。 该引用可在创建访问包后使用，以通过创建访问包资源角色作用域来指定访问包应交付到其中 [的每个目录资源的角色](../api/accesspackage-post-accesspackageresourcerolescopes.md)。
+在[Azure AD中](entitlementmanagement-overview.md)，访问包资源角色是资源中定义的角色的引用。 该引用可在创建访问包后使用，以通过创建访问包资源角色作用域来指定访问包应交付到其中 [的每个目录资源的角色](../api/accesspackage-post-accesspackageresourcerolescopes.md)。
 
 ## <a name="methods"></a>方法
 

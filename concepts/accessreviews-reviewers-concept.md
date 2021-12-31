@@ -5,16 +5,16 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 78a8ce78337c2c2e00c96cea7dbb59a6df0e7a11
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 59acd960b0c3234262db05e05066bcef7ce98709
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507751"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651293"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 将审阅者分配给你的访问评审
 
-Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你以编程方式查看用户、服务主体或组对 Azure AD 资源的访问权限。
+访问Azure AD [API](/graph/api/resources/accessreviewsv2-overview)允许你以编程方式查看用户、服务主体或组对资源的访问权限Azure AD访问。
 
 主要审阅者在访问评审 [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition)资源的 **reviewers** 属性中配置。  此外，可以使用 **fallbackReviewers** 属性指定回退审阅者。 创建自审阅网站时，不需要 (查看自己的访问权限) 。
 
@@ -92,4 +92,4 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
 ## <a name="next-steps"></a>后续步骤
 
 + [配置访问评审定义的范围](/graph/accessreviews-scope-concept)
-+ [试用教程，](/graph/accessreviews-overview) 了解如何使用访问评审 API 查看对 Azure AD 资源的访问权限
++ [试用教程，](/graph/accessreviews-overview)了解如何使用访问评审 API 查看对Azure AD的访问权限

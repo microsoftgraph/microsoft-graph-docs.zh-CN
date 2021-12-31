@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 729f25ac6d084259541dc47db1c597b0c8b6b467
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 226715a4678b593e68a8364e326950c7af019212
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242319"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651454"
 ---
 # <a name="accesspackage-resource-type"></a>accessPackage 资源类型
 
 命名空间：microsoft.graph
 
-在[Azure AD管理](entitlementmanagement-root.md)中，访问包定义资源角色的集合以及一个或多个用户可以如何访问这些资源的策略。  
+在[Azure AD管理](entitlementmanagement-overview.md)中，访问包定义资源角色的集合以及一个或多个用户可以如何访问这些资源的策略。  
 
 每个访问包都由一个访问包目录引用，并且具有指向该目录中的资源的链接，这些资源通过定义包提供的访问的资源特定角色作用域。  访问包还链接到访问包分配策略，其中每个策略定义可以请求或分配访问包分配的人。
 
@@ -38,7 +38,7 @@ ms.locfileid: "61242319"
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |说明|String|访问包的说明。|
-|displayName|String|访问显示名称的组。|
+|displayName|String|访问显示名称的组。 支持$filter (`eq` `contains` 、) 。|
 |id|String|只读。|
 |IsHidden|布尔值|访问包是否对请求程序隐藏。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |

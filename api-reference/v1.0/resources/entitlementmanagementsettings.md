@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d3b2e92db3119b302e280dd0f209af2e93a693c1
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 3f8ce8cdbc275ab32a5a84164716226fb6d2dddf
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242306"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649695"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>entitlementManagementSettings 资源类型
 
 命名空间：microsoft.graph
 
 
-表示控制授权Azure AD[行为的设置](entitlementmanagement-root.md)。  此资源不包括目录创建者设置;若要查看或更改目录创建者角色成员身份，请使用角色 [分配](unifiedroleassignment.md) API 和权利管理 RBAC 提供程序。
+表示控制授权管理[Azure AD的设置](entitlementmanagement-overview.md)。 此资源不包括目录创建者设置;若要查看或更改目录创建者角色成员身份，请使用角色 [分配](unifiedroleassignment.md) API 和权利管理 RBAC 提供程序。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|

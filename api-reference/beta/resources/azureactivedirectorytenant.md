@@ -1,16 +1,16 @@
 ---
 title: azureActiveDirectoryTenant 资源类型
 description: azureActiveDirectoryTenant 类型将另一Azure Active Directory租户标识为已连接组织的标识源。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d7a36c8c737866b20585518e1dc34e6944c97885
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 9aeb699065a1e4bdf37dfd5f5a90985c47db24f7
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896583"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650599"
 ---
 # <a name="azureactivedirectorytenant-resource-type"></a>azureActiveDirectoryTenant 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "52896583"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [connectedOrganization 的标识源中使用](connectedOrganization.md)。 该值 `@odata.type` `#microsoft.graph.azureActiveDirectoryTenant` 指示此类型将另一Azure Active Directory租户标识为已连接组织的标识源。
+在 [connectedOrganization 的标识源中使用](connectedOrganization.md)。 `@odata.type`该值 `#microsoft.graph.azureActiveDirectoryTenant` 指示此类型将另一Azure Active Directory租户标识为已连接组织的标识源。
 
-创建新的[connectedOrganization](../api/connectedorganization-post.md)时，如果调用方在 identitySources 集合中提供 domainIdentitySource，并且域对应于 Azure Active Directory 租户的注册域，则创建的生成的 connectedOrganization 将具有包含[azureActiveDirectoryTenant](azureactivedirectorytenant.md)类型的单个成员的 identitySources 集合。
+创建新的[connectedOrganization](../api/entitlementmanagement-post-connectedorganizations.md)时，如果调用方在 identitySources 集合中提供 domainIdentitySource，并且域对应于 Azure Active Directory 租户的注册域，则创建的生成的 connectedOrganization 将具有包含[azureActiveDirectoryTenant](azureactivedirectorytenant.md)类型的单个成员的 identitySources 集合。
 
 ## <a name="properties"></a>属性
 

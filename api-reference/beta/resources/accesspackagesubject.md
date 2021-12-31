@@ -1,16 +1,16 @@
 ---
 title: accessPackageSubject 资源类型
-description: 在 Azure AD 权利管理中，访问包分配的主题。
-localization_priority: Normal
+description: 在Azure AD权限管理中，访问包分配的主题。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0adfca021ec463029a4b35c047ac85f8ce52921b
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 5092494b1c5f496a1ee3abf76800dbb8a05f49ff
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467055"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651180"
 ---
 # <a name="accesspackagesubject-resource-type"></a>accessPackageSubject 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "53467055"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利](entitlementmanagement-root.md)管理中，访问包主题是可配置为请求或分配访问包的用户、服务主体或其他实体。  它可以表示来自尚未在租户中的已连接组织的请求者。
+在[Azure AD中](entitlementmanagement-overview.md)，访问包主题是可配置为请求或分配访问包的用户、服务主体或其他实体。  它可以表示来自尚未在租户中的已连接组织的请求者。
 
 ## <a name="properties"></a>属性
 

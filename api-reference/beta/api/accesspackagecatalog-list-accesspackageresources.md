@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9c247e450d5265083d54476852a07512543e11dd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 658343132d16c2ad75a07c14e321953eb5372f5c
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983316"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650718"
 ---
 # <a name="list-accesspackageresources"></a>列出 accessPackageResources
 
@@ -18,7 +18,7 @@ ms.locfileid: "60983316"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[accessPackageCatalog](../resources/accesspackagecatalog.md)中检索[accessPackageResource](../resources/accesspackageresource.md)对象的列表。  若要请求添加或删除 [accessPackageResource](../resources/accesspackageresource.md)，请使用 [create accessPackageResourceRequest](accesspackageresourcerequest-post.md)。
+在[accessPackageCatalog](../resources/accesspackagecatalog.md)中检索[accessPackageResource](../resources/accesspackageresource.md)对象的列表。  若要请求添加或删除 [accessPackageResource](../resources/accesspackageresource.md)，请使用 [create accessPackageResourceRequest](entitlementmanagement-post-accesspackageresourcerequests.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageresources-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

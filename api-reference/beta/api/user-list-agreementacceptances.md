@@ -2,15 +2,15 @@
 title: List agreementAcceptances
 description: 检索用户 agreementAcceptance 对象的列表。
 ms.localizationpriority: medium
-author: jpettere
+author: raprakasMSFT
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f925fc332a3a524b601e6ffc3f533176e35e03ca
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 709bc5b05f3caa0aa3f7c09d649ca5d37bc666ff
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009798"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650634"
 ---
 # <a name="list-agreementacceptances"></a>List agreementAcceptances
 
@@ -31,6 +31,7 @@ ms.locfileid: "61009798"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/agreementAcceptances
 GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
 <!--
@@ -48,7 +49,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [agreementAcceptance](../resources/agreementacceptance.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -74,13 +75,13 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 [!INCLUDE [sample-code](../includes/snippets/java/get-agreementacceptances-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-agreementacceptances-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {

@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3b8e653c05e428bf0f1dc4efa8e1efb8cb4e2815
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 3e1e1f12ab503d796ddea4b7e3f078d36bddf950
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224235"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650494"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>accessReviewInstanceDecisionItem 资源类型
 
@@ -20,20 +20,20 @@ ms.locfileid: "61224235"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
+表示[Azure AD实例的访问](accessreviewsv2-overview.md)评审决定。 此决定是确定用户或服务主体对给定访问评审实例 [的访问权限](accessreviewinstance.md)。 accessReviewInstanceDecisionItem 是一个开放类型，允许传入其他属性。
+
 >[!NOTE]
 >属性 `target` 将在 v1.0 中弃用，并替换为 和 `principal` `resource` 属性。
 
-表示[Azure AD实例的访问](accessreviewsv2-root.md)评审决定。 此决定是确定用户或服务主体对给定访问评审实例 [的访问权限](accessreviewinstance.md)。 accessReviewInstanceDecisionItem 是一个开放类型，允许传入其他属性。
-
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[列出 accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合 | 获取 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象及其属性的列表。|
+|[列出 accessReviewInstanceDecisionItems](../api/accessreviewinstance-list-decisions.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合 | 获取 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象及其属性的列表。|
 |[获取 accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-get.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|读取 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象的属性和关系。|
 |[更新 accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | 无。 | 对于为调用用户分配审阅者的任何 accessReviewInstanceDecisionItems，调用用户可以通过修补决策对象来记录决策。 |
 |[filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 集合|检索所有 [accessReviewInstanceDecisionItems](accessreviewinstancedecisionitem.md) 对象，其中调用的 use 是给定 [accessReviewInstance 的审阅者](accessreviewinstance.md)。|
-|[列出 accessReviewInstanceDecisionItems 待审批 (已弃) ](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合。 | 获取分配给特定 accessReviewInstance 的调用用户的所有 accessReviewInstanceDecisionItems。 此方法已被弃用，并替换为 [filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md)。 |
+|[列出 accessReviewInstanceDecisionItems 待审批 (弃) ](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合。 | 获取分配给特定 accessReviewInstance 的调用用户的所有 accessReviewInstanceDecisionItems。 此方法已被弃用，并替换为 [filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md)。 |
 
 ## <a name="properties"></a>属性
 | 属性 | 类型 |  说明 |

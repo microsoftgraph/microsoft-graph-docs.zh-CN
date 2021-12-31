@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c1a3b77bb9d6ac48281c0e58c448b1182c6c1930
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 510903f27dd751ac57b7df7dab0084f8ce89e35c
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730380"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651363"
 ---
 # <a name="approvalstep-resource-type"></a>approvalStep 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "60730380"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD管理中](entitlementmanagement-root.md)，与 关联的决策的 approvalStep 对象 `accessPackageAssignmentRequest` 。 它用于区分审批者可以处理审批工作流的不同步骤的决策。
+在[Azure AD管理中](entitlementmanagement-overview.md)，与 关联的决策的 approvalStep 对象 `accessPackageAssignmentRequest` 。 它用于区分审批者可以处理审批工作流的不同步骤的决策。
 
 在 [userConsentRequests](../resources/userconsentrequest.md)中，与请求关联的审批决策。
 
@@ -33,14 +33,14 @@ ms.locfileid: "60730380"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|assignedToMe|布尔值|指示是否将步骤分配给呼叫用户进行审阅。 只读。|
+|assignedToMe|Boolean|指示是否将步骤分配给呼叫用户进行审阅。 只读。|
 |displayName|String|策略创建者提供的标签，用于标识审批步骤。 只读。|
 |id|String|与审批对象关联的步骤的标识符。 只读。|
 |justification|String|与审批步骤决策相关联的理由。|
-|reviewResult|字符串|此审批记录的结果。 可能的值包括 `NotReviewed` `Approved` `Denied` ：、、。|
+|reviewResult|String|此审批记录的结果。 可能的值包括 `NotReviewed` `Approved` `Denied` ：、、。|
 |reviewedBy|[userIdentity](useridentity.md) 集合 | 审阅者的标识符。 只读。|
 |reviewedDateTime|DateTimeOffset|记录决策的日期和时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|status|String|步骤状态。 可能的值 `InProgress` `Initializing` `Completed` ：、、、。 `Expired` 只读。|
+|状态|String|步骤状态。 可能的值 `InProgress` `Initializing` `Completed` ：、、、。 `Expired` 只读。|
 
 
 ## <a name="relationships"></a>关系

@@ -1,19 +1,19 @@
 ---
-title: 教程：使用 Microsoft Graph API 管理对 Active Directory 授权管理中的资源的访问权限
+title: 教程：使用 Microsoft Graph API 管理 Active Directory 权利管理中的资源访问权限
 description: 了解如何使用 Microsoft (Azure AD) API 管理对 Active Directory Graph的访问权限。
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 461d3ed9bdbc7fa09f84514abe222cabf8519bcd
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 48b2661bdbd02eca6270616399d93d8318f61608
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526007"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651461"
 ---
-# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph API 管理对 Active Directory 授权管理中的资源的访问权限
+# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph API 管理 Active Directory 权利管理中的资源访问权限
 
-管理对员工需要的所有资源（如组、应用程序和网站）的访问权限是组织的一项重要功能。 您希望向员工授予高效工作所需的正确级别的访问权限，并删除不再需要的访问权限。 [Azure Active Directory (Azure AD) Microsoft](/azure/active-directory/governance/entitlement-management-overview) Graph API 进行权利管理，可管理这种类型的访问。
+管理对员工需要的所有资源（如组、应用程序和网站）的访问权限是组织的一项重要功能。 您希望向员工授予高效工作所需的正确级别的访问权限，并删除不再需要的访问权限。 [Azure Active Directory (Azure AD) ](/azure/active-directory/governance/entitlement-management-overview) Microsoft Graph API 进行权利管理，可管理这种类型的访问。
 
 本教程要求你开发代码，为内部用户可以自助请求的营销活动创建一个资源包。 请求不需要审批，用户的访问权限将在 30 天后过期。 对于本教程，市场营销活动资源只是单个组的成员身份，但它可能是组、应用程序或 SharePoint Online 网站的集合。
 
@@ -32,7 +32,7 @@ ms.locfileid: "61526007"
 
         ![选择 Microsoft Graph 权限](./images/tutorial-access-package-api/set-permissions.png)
         
-    4. 滚动浏览权限列表，展开组 (`Group` **2) ，** 选择 **Group.ReadWrite.All** 权限。 进一步向下滚动权限列表，展开"用户 (8) "，然后选择 `User` **User.ReadWrite.All** 权限。 ****
+    4. 滚动浏览权限列表，展开"组" (`Group` **2**) ，选择 **"Group.ReadWrite.All"** 权限。 进一步向下滚动权限列表，展开用户 (`User` **8**) ，然后选择 **User.ReadWrite.All** 权限。
 
         ![搜索用户、组和权利管理权限](./images/tutorial-access-package-api/set-user-permission.png)
     
@@ -226,7 +226,7 @@ Content-type: application/json
 
 ### <a name="get-catalog-resources"></a>获取目录资源
 
-在本教程的稍后步骤中，你需要分配给目录中的组资源的 ID。 此标识符（表示作为目录中的资源的组）与 Microsoft Graph 中的组本身Graph。 这是因为目录具有的资源不会在 Microsoft Graph。
+在本教程的稍后步骤中，你需要分配给目录中的组资源的 ID。 此标识符（表示作为目录中的资源的组）与 Microsoft Graph 中的组本身标识符不同。 这是因为目录具有的资源不会在 Microsoft Graph。
 
 在请求中， **提供** 你使用的目录的 ID。 记录组目录资源的 **id** 属性的值。
 
@@ -472,7 +472,7 @@ Content-type: application/json
 
 在响应中，你可以看到"已接受 **"** 状态和"已提交 **"状态**。 记录返回的 **id** 属性的值，以稍后获取请求的状态。
 
-如果尚未这样做，请注销在 Microsoft Graph 资源管理器中使用的管理员帐户。 登录到您创建的 **Requestor1** 用户帐户。 如果密码是首次登录，将要求您更改密码。
+如果尚未这样做，请注销在 Microsoft Graph资源管理器中使用的管理员帐户。 登录到您创建的 **Requestor1** 用户帐户。 如果密码是首次登录，将要求您更改密码。
 
 #### <a name="request"></a>请求
 
@@ -736,12 +736,12 @@ No Content - 204
 在本教程中，你使用了许多 API 来完成任务。 浏览这些 API 的 API 参考，详细了解 API 可以执行哪些操作。
 
 
-- [使用 Azure AD权限管理 API](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)
+- [使用 Azure AD权限管理 API](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)
 - [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
 - [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
 - [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
 - [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta&preserve-view=true)
 - [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
 - [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
-- [组](/graph/api/resources/group)
+- [group](/graph/api/resources/group)
 - [用户](/graph/api/resources/user?)

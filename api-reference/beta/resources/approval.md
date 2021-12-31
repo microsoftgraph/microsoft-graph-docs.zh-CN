@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e9c459563fa776427dfebcc6c6063b9bda1da846
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: ccc04245cb3637290d75d842be88b55d84e832a3
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730387"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651517"
 ---
 # <a name="approval-resource-type"></a>审批资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "60730387"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD中](entitlementmanagement-root.md)，与 关联的决策的审批对象 `accessPackageAssignmentRequest` 。 单个步骤请求可以有一个与它关联的步骤，审批者可以处理该步骤。 同样，多步骤请求可以有多个与之关联的步骤，审批者可以执行这些步骤。 但是，在多步骤审批中，将显示挂起的步骤和之前完成的步骤。
+在[Azure AD中](entitlementmanagement-overview.md)，与 关联的决策的审批对象 `accessPackageAssignmentRequest` 。 单个步骤请求可以有一个与它关联的步骤，审批者可以处理该步骤。 同样，多步骤请求可以有多个与之关联的步骤，审批者可以执行这些步骤。 但是，在多步骤审批中，将显示挂起的步骤和之前完成的步骤。
 
 在 [userConsentRequests](../resources/userconsentrequest.md)中，与请求关联的决策的审批对象。
 

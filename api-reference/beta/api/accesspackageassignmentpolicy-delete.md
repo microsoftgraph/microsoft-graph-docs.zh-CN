@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0407b37c21c5e2e8067c8f535f1d4427f6ead6c0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f463a4105de050a177f1737289f0b5a35c1c748e
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983546"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650858"
 ---
 # <a name="delete-accesspackageassignmentpolicy"></a>删除 accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "60983546"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD中](../resources/entitlementmanagement-root.md)，删除[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。
+在[Azure AD中，](../resources/entitlementmanagement-overview.md)删除[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackageassignmentpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

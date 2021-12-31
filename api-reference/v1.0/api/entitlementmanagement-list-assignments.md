@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2304102961ce44f1bab74796394b8887803a985f
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 9d6b8aaeaf274f53354db77ca06988c19d928bdb
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346607"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651503"
 ---
 # <a name="list-assignments"></a>列出作业
 
 命名空间：microsoft.graph
 
-在[Azure AD中](../resources/entitlementmanagement-root.md)，检索[accessPackageAssignment 对象](../resources/accesspackageassignment.md)的列表。
+在[Azure AD中](../resources/entitlementmanagement-overview.md)，检索[accessPackageAssignment 对象](../resources/accesspackageassignment.md)的列表。
 
 对于目录范围的管理员，结果列表包括调用方有权访问的所有目录和访问包的所有分配（当前分配和过期分配）。  如果调用方代表仅分配给特定于目录的委派管理角色的委派用户，则请求必须提供筛选器来指示特定访问包，例如 `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` ：。
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 [!INCLUDE [sample-code](../includes/snippets/java/list-accesspackageassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accesspackageassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

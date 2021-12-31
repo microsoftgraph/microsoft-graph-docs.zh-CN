@@ -362,7 +362,7 @@ items:
                 href: api/user-revokesigninsessions.md
               - name: 列出已删除的用户
                 href: api/directory-deleteditems-list.md
-              - name: 获取已删除的用户
+              - name: 获取已删除用户
                 href: api/directory-deleteditems-get.md
               - name: 永久删除用户
                 href: api/directory-deleteditems-delete.md
@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 笔记
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -489,7 +489,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: 团队合作
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -533,7 +533,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -1668,7 +1668,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -4622,7 +4622,7 @@ items:
                 href: api/permission-update.md
               - name: 删除权限
                 href: api/permission-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -5308,17 +5308,17 @@ items:
           - name: 管控
             items:
               - name: 访问审查
-                href: resources/accessreviewsv2-root.md
+                href: resources/accessreviewsv2-overview.md
                 items:
                   - name: 访问评审计划定义
                     href: resources/accessreviewscheduledefinition.md
                     items:
                       - name: 列表
-                        href: api/accessreviewscheduledefinition-list.md
+                        href: api/accessreviewset-list-definitions.md
                       - name: 获取
                         href: api/accessreviewscheduledefinition-get.md
                       - name: 创建
-                        href: api/accessreviewscheduledefinition-post.md
+                        href: api/accessreviewset-post-definitions.md
                       - name: 删除
                         href: api/accessreviewscheduledefinition-delete.md
                       - name: 更新
@@ -5329,7 +5329,7 @@ items:
                     href: resources/accessreviewinstance.md
                     items:
                       - name: 列表
-                        href: api/accessreviewinstance-list.md
+                        href: api/accessreviewscheduledefinition-list-instances.md
                       - name: 获取
                         href: api/accessreviewinstance-get.md
                       - name: 更新
@@ -5356,13 +5356,13 @@ items:
                       - name: 获取
                         href: api/accessreviewinstancedecisionitem-get.md
                       - name: 列出
-                        href: api/accessreviewinstancedecisionitem-list.md
+                        href: api/accessreviewinstance-list-decisions.md
                       - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
               - name: 许可请求
-                href: resources/consentrequests-root.md
+                href: resources/consentrequests-overview.md
                 items:
                   - name: 管理员同意请求策略
                     href: resources/adminconsentrequestpolicy.md
@@ -5375,7 +5375,7 @@ items:
                     href: resources/appconsentrequest.md
                     items:
                       - name: 列表
-                        href: api/appconsentrequest-list.md
+                        href: api/appconsentapprovalroute-list-appconsentrequests.md
                       - name: 获取
                         href: api/appconsentrequest-get.md
                       - name: 按当前用户筛选
@@ -5384,13 +5384,13 @@ items:
                     href: resources/userconsentrequest.md
                     items:
                       - name: 列表
-                        href: api/userconsentrequest-list.md
+                        href: api/appconsentrequest-list-userconsentrequests.md
                       - name: 获取
                         href: api/userconsentrequest-get.md
                       - name: 按当前用户筛选
                         href: api/userconsentrequest-filterByCurrentUser.md
               - name: 权利管理
-                href: resources/entitlementmanagement-root.md
+                href: resources/entitlementmanagement-overview.md
                 items:
                   - name: 访问包
                     href: resources/accesspackage.md
@@ -5481,9 +5481,9 @@ items:
                   - name: 协议
                     href: resources/agreement.md
                   - name: 列出
-                    href: api/agreement-list.md
+                    href: api/termsofusecontainer-list-agreements.md
                   - name: 创建
-                    href: api/agreement-post-agreements.md
+                    href: api/termsofusecontainer-post-agreements.md
                   - name: 获取
                     href: api/agreement-get.md
                   - name: 更新
@@ -6347,7 +6347,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 列出

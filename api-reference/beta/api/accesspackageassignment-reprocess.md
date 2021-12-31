@@ -1,16 +1,16 @@
 ---
 title: accessPackageAssignment：重新处理
 description: 重新处理 accesspackageassignment 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4ba699950b7c4ab54eca1a75a1a85f1e63c9c774
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 66356cd856906ba73b107c06cfd36cc52bf85acb
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257358"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650865"
 ---
 # <a name="accesspackageassignment-reprocess"></a>accessPackageAssignment：重新处理
 
@@ -18,7 +18,7 @@ ms.locfileid: "58257358"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利](../resources/entitlementmanagement-root.md)管理中，调用方可以自动重新计算和实施特定访问包的用户分配的 [accessPackageAssignment](../resources/accesspackageassignment.md) 对象。 访问 **包的 assignmentState** 必须供管理员重新处理 `Delivered` 用户的分配。 只有 Azure AD 权利管理中具有访问包分配管理器角色或更高角色的管理员可以执行此操作。
+在[Azure AD中](../resources/entitlementmanagement-overview.md)，调用方可以自动重新计算和强制执行特定访问包的用户分配的[accessPackageAssignment](../resources/accesspackageassignment.md)对象。 访问 **包的 assignmentState** 必须供管理员重新处理 `Delivered` 用户的分配。 只有具有访问包分配管理器角色或更高权限的管理员Azure AD才能执行此操作。
 
 ## <a name="permissions"></a>权限
 

@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.prod: governance
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: 9e9d4a877bce930446f0d1f118787472063ce937
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4de9cf6f20eed98b3fe49a6fa5358d27cac4d532
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005723"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650641"
 ---
 # <a name="get-connectedorganization"></a>获取 connectedOrganization
 
@@ -42,7 +42,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要仅检索标识源，请添加 `$select=identitySources` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数来帮助自定义响应。 例如，若要仅检索标识源，请添加 `$select=identitySources` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 [!INCLUDE [sample-code](../includes/snippets/java/get-connectedorganization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-connectedorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

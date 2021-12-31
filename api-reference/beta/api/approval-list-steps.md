@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b4c2dba33572c58866e0839248631c6f19e2234b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7500bc7f1bd0d9b8b2850b31c751b04b873f3165
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982587"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650536"
 ---
 # <a name="list-approvalsteps"></a>列出 approvalSteps
 
@@ -18,9 +18,9 @@ ms.locfileid: "60982587"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD中](../resources/entitlementmanagement-root.md)，列出与审批对象关联的[approvalStep](../resources/approvalstep.md)[对象。](../resources/approval.md)  此调用由审批者进行，提供访问包分配请求 [的标识符](../resources/accesspackageassignmentrequest.md)。
+在[Azure AD中](../resources/entitlementmanagement-overview.md)，列出与审批对象关联的[approvalStep](../resources/approvalstep.md)[对象。](../resources/approval.md)  此调用由审批者进行，提供访问包分配请求 [的标识符](../resources/accesspackageassignmentrequest.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/get-approvalstep-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-approvalstep-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
