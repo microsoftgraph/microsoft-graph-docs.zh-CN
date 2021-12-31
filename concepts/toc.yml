@@ -257,8 +257,12 @@ items:
           - name: 分配和提交状态转换
             href: assignments-submissions-states-transition.md
       - name: 文件
-        href: onedrive-concept-overview.md
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
+        items:
+          - name: 概述
+            href: onedrive-concept-overview.md
+          - name: 寻址驱动器项
+            href: onedrive-addressing-driveitems.md
       - name: Financials（预览版）
         href: dynamics-business-central-concept-overview.md
         displayName: 'Dynamics, Dynamics 365 Business Central'
