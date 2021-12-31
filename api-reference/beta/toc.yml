@@ -404,7 +404,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '项目见解 (预览) '
+                  - name: '预览版 (项) '
                     href: resources/iteminsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -460,7 +460,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 笔记
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -561,7 +561,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: 团队合作
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -2085,7 +2085,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -6805,7 +6805,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows Defender 防篡改保护选项
+                  - name: Windows防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -10976,7 +10976,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -11469,7 +11469,7 @@ items:
                         href: api/softwareOathAuthenticationMethod-get.md
                       - name: 删除
                         href: api/softwareOathAuthenticationMethod-delete.md
-                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃用) '
+                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃) '
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: 列表
@@ -12268,7 +12268,7 @@ items:
                         href: api/accessreviewinstance-update.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstance-filterbycurrentuser.md
-                      - name: '列出已 (审批) '
+                      - name: '列出已弃 (审批) '
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
                       - name: 发送提醒
                         href: api/accessreviewinstance-sendreminder.md
@@ -12293,7 +12293,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-get.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                      - name: '列出已 (审批) '
+                      - name: '列出已弃 (审批) '
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
@@ -12972,7 +12972,7 @@ items:
             items:
               - name: 获取资源
                 href: api/resource-get.md
-      - name: '通知 (已弃) '
+      - name: 通知（已弃用）
         items:
           - name: 概述
             href: resources/notifications-api-overview.md
@@ -12991,7 +12991,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置人员见解
+              - name: 设置见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -13147,7 +13147,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 备注
+              - name: 笔记
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -13305,7 +13305,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '项目见解 (预览) '
+                  - name: '预览版 (项) '
                     href: resources/iteminsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -13488,10 +13488,12 @@ items:
                     href: resources/applicationsigninsummary.md
                     items:
                       - name: 获取登录摘要
-                        href: api/applicationsigninsummary-get.md
+                        href: api/reportroot-getazureadapplicationsigninsummary.md
                   - name: 登录详细信息
                     href: resources/applicationsignindetailedsummary.md
                     items:
+                      - name: 列出登录详细信息
+                        href: api/reportroot-list-applicationsignindetailedsummary.md
                       - name: 获取登录详细信息
                         href: api/applicationsignindetailedsummary-get.md
               - name: 注册和使用情况
@@ -13882,7 +13884,7 @@ items:
                     href: api/usersimulationdetails-list.md
                   - name: 获取模拟概述
                     href: api/simulationreportoverview-get.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training

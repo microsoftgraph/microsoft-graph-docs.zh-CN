@@ -1,20 +1,20 @@
 ---
 title: Microsoft Graph 中作业和提交状态、转换和Graph
-description: 本文介绍了在流程流期间作业和提交状态的变化，以及涉及的 Microsoft Graph API。
+description: 本文介绍了在流程流期间作业和提交状态的变化，以及涉及 Microsoft Graph API。
 ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 1cedb6c2ab34511134716efe5c205a4738d10f0c
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 97e75c7ef87d47c0359d6b8d6a5e5db2bb21a518
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767335"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647005"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Microsoft Graph 中作业和提交状态、转换和Graph
 
-作业和提交是教师和学生操作之间交互的重要部分。 本文介绍了在流程流期间作业和提交状态的变化，以及涉及的 Microsoft Graph API。
+作业和提交是教师和学生操作之间交互的重要部分。 本文介绍了在流程流期间作业和提交状态的变化，以及涉及 Microsoft Graph API。
 
 ## <a name="assignment-states-and-transitions"></a>工作分配状态和转换
 
@@ -23,10 +23,10 @@ ms.locfileid: "59767335"
 | 状态 | 说明 | REST API 调用 |
 |:--|:--|:--|
 | Draft | 从现有工作分配创建或复制新工作分配时的初始状态。 | `POST /education/classes/{id}/assignments` |
-| 已发布 | 将作业分发给每个分配的学生时的背景处理状态。 | `POST /education/classes/{id}/assignments/{id}/publish` |
+| Published | 将作业分发给每个分配的学生时的背景处理状态。 | `POST /education/classes/{id}/assignments/{id}/publish` |
 | Scheduled | 教师计划将来发布作业时的状态。 | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` |
 | 已分配 | 完成发布后，作业将移动到"已分配"状态，并且可供学生使用。 | `POST /education/classes/{id}/assignments/{id}/publish` |
-| 挂起 | 从现有工作分配复制新工作分配时的背景处理状态。 | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
+| Pending | 从现有工作分配复制新工作分配时的背景处理状态。 | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
 
 下图显示了工作分配可发生的状态转换。
 
@@ -36,20 +36,20 @@ ms.locfileid: "59767335"
 调用方必须使用 GET [分配](/graph/api/educationassignment-get.md) 操作检查当前分配状态并验证发布过程是否成功。
 
 ### <a name="assignments-states-transitions-based-on-the-allowed-actions"></a>工作分配根据允许的操作状态转换
-| 当前工作分配状态 | Action | 新状态 |
+| 当前工作分配状态 | 操作 | 新状态 |
 |:--|:--|:--|
 | Draft | 教师安排作业 | Scheduled |
-| Draft | 发布 | 已发布 |
+| Draft | 发布 | Published |
 | Draft | 已编辑 | Draft |
 | Draft | 已放弃 | | 
-| 已发布 | 发布完成 | 已分配 |
-| 已发布 | 已放弃 | |
-| Scheduled | 到达截止日期 | 已发布 |
+| Published | 发布完成 | 已分配 |
+| Published | 已放弃 | |
+| Scheduled | 到达截止日期 | Published |
 | Scheduled | 取消计划 | Draft |
 | Scheduled | 重新计划 | Scheduled |
 | 已分配 | 已放弃 | |
-| 挂起 | 复制已完成 | Draft |
-| 挂起 | 已放弃 | |   
+| Pending | 复制已完成 | Draft |
+| Pending | 已放弃 | |   
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
@@ -67,7 +67,7 @@ ms.locfileid: "59767335"
 
 ## <a name="submission-states-and-transitions"></a>提交状态和转换
 
-提交表示单个用户或 (组) 为分配启用的资源。 提交归工作分配所有，在发布工作分配时自动创建。
+提交表示单个用户或组 (为) 启用的资源。 提交归工作分配所有，在发布工作分配时自动创建。
 
 状态是提交中的只读属性，并且根据学生和教师的操作进行更改。
  
@@ -75,7 +75,7 @@ ms.locfileid: "59767335"
 | 状态 | 说明 | REST API 调用 |
 |:--|:--|:--|
 | Working | 创建提交后的初始状态。 | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
-| Submitted | 在学生打开作业后，会发生此情况。 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
+| Submitted | 在学生打开作业后会发生此情况。 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
 | 已返回 | 教师将作业返回给学生后。 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
 | 已重新分配 | 教师将作业返回给学生进行修订后。 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 
@@ -84,7 +84,7 @@ ms.locfileid: "59767335"
 ![提交状态转换图](images/states-transitions/diagram-submissions.PNG)
 
 ### <a name="submissions-states-transitions-based-on-allowed-actions"></a>提交状态基于允许的操作进行转换
-| 当前提交状态 | Action | 新状态 |
+| 当前提交状态 | 操作 | 新状态 |
 |:--|:--|:--|
 | Working | 启用 | Submitted |
 | Working | 返回修订 | 已重新分配 |

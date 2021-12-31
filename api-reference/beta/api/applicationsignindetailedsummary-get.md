@@ -2,15 +2,15 @@
 title: 获取 applicationSignInDetailedSummary
 description: 检索 applicationSignInDetailSummary 对象的属性和关系。
 ms.localizationpriority: medium
-author: dhanyahk
+author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 57412f296e7f2aa5e7c5300263c6bccabf111c76
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2fed7046b82892df96f5e47e6aff2d2278615050
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982776"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61646956"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>获取 applicationSignInDetailedSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "60982776"
 
 检索 [applicationSignInDetailSummary 对象的属性和](../resources/applicationsignindetailedsummary.md) 关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{i
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationsignindetailedsummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-applicationsignindetailedsummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

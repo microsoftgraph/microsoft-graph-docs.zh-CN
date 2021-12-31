@@ -1,16 +1,16 @@
 ---
 title: applicationSignInDetailedSummary 资源类型 - Microsoft Graph API
 description: 表示应用程序登录的详细摘要。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 8f53d1ebce8a7a578c067354ba7f89c6c27ea947
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b929e35904af0ddec506a8b1b47e502456adb3c6
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720828"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647167"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>applicationSignInDetailedSummary 资源类型
 
@@ -24,7 +24,8 @@ ms.locfileid: "50720828"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取 applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | 读取 **applicationSignInDetailedSummary** 对象的属性和关系。 |
+| [列出 applicationSignInDetailedSummary](../api/reportroot-list-applicationsignindetailedsummary.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) 集合 | 检索 **applicationSignInDetailedSummary** 对象。 |
+| [获取 applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | 读取 **applicationSignInDetailedSummary 对象的属性和** 关系。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |

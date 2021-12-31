@@ -4,13 +4,13 @@ description: '标识启动活动的资源对象。 发起者可以是用户、�
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
-author: SarahBar
-ms.openlocfilehash: a018a6e74f9ee89b879577bec6f64a94ab15cdca
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: besiler
+ms.openlocfilehash: e681f56f3caf0792241a92ce5137ac8468b623d8
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047483"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647160"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>auditActivityInitiator 资源类型
 
@@ -21,8 +21,8 @@ ms.locfileid: "59047483"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|应用|[appIdentity](appidentity.md)|如果启动活动的资源是应用，则此属性指示所有应用相关信息，如 appId、Name、servicePrincipalId、Name。|
-|用户|[userIdentity](useridentity.md)|如果启动活动的资源是用户，则此属性指示用户 Id、名称、UserPrinicpalName 等用户相关信息。|
+|应用|[appIdentity](appidentity.md)|如果启动活动的人是应用，则此属性指示其所有标识信息，包括 appId、displayName、servicePrincipalId 和 servicePrincipalName。|
+|用户|[auditUserIdentity](auditUserIdentity.md)|如果发起活动的人是用户，则此属性指示其标识信息，包括其 id、displayName 和 userPrincipalName。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

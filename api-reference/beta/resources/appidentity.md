@@ -5,16 +5,18 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
 author: sureshja
-ms.openlocfilehash: 1a2314d76b1b51e0c1a1845f306b5d9a7e78caea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7b1005b058508bdb128788836667c05dcc936dd6
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59057885"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61646977"
 ---
 # <a name="appidentity-resource-type"></a>appIdentity 资源类型
 
-命名空间：microsoft.graph 指示执行该操作或已更改的应用程序的标识。 包括应用程序 ID、名称、服务主体 ID 和名称。 此资源由 [directoryAudit](../api/directoryaudit-get.md) API 调用
+命名空间：microsoft.graph
+
+指示执行该操作或已更改的应用程序的标识。 此资源由 [directoryAudit](../api/directoryaudit-get.md) API 调用。
 
 
 ## <a name="properties"></a>属性

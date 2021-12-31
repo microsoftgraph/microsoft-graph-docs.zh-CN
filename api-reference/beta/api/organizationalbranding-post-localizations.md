@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 54b515c113d768528357b46661c24538e9acc8ab
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: bcc093ed5487a2e2aeabcb230452b80a072411bd
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343710"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647033"
 ---
 # <a name="create-organizationalbrandinglocalization"></a>创建 organizationalBrandingLocalization
 命名空间：microsoft.graph
@@ -52,7 +52,7 @@ POST /organization/{organizationId}/branding/localizations
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| id | String | 表示 ISO 639-1 标准中指定的区域设置（例如，英语）的标识符 `en-US` 。 无法将 **id** 的值设置为 String 类型或 来创建默认 `0` 品牌 `default` 。  <br/><br/>**注意：** 目前不支持单个区域设置的多个品牌。 |
+| id | String | 表示使用区域性名称指定的区域设置的标识符。 区域性名称遵循 RFC 1766 标准，格式为"languagecode2-country/regioncode2"，其中"languagecode2"是派生自 ISO 639-1 的大写两字母代码，而"country/regioncode2"是派生自 ISO 3166 的大写两字母代码。 例如，美国英语为 `en-US` 。 无法将 **id** 的值设置为 String 类型或 来创建默认 `0` 品牌 `default` 。  <br/><br/>**注意：** 目前不支持单个区域设置的多个品牌。 |
 
 ## <a name="response"></a>响应
 

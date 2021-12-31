@@ -2,15 +2,15 @@
 title: riskDetection 资源类型
 description: 表示 AzureAD 租户中的所有风险检测。
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: af77e46c688d514f3a7b49aff3c785712706f3e2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9d0acaeb29f80e38cb9a1ce88d2e15878a294a65
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960346"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647110"
 ---
 # <a name="riskdetection-resource-type"></a>riskDetection 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "50960346"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关 Azure AD 租户中检测到的风险的信息。 
+表示有关租户中检测到的风险Azure AD的信息。 
 
-Azure AD 根据[](riskyuser.md)各种信号和机器学习持续评估[](signin.md)用户风险以及应用或用户登录风险。 此 API 提供对 Azure AD 环境中的所有风险检测的编程访问权限。
+Azure AD根据各种信号和机器学习持续[](riskyuser.md)评估用户风险以及应用或[](signin.md)用户登录风险。 此 API 提供对环境中的所有风险检测的Azure AD访问权限。
 
-有关风险事件详细信息，请参阅 Azure [Active Directory Identity Protection。](/azure/active-directory/identity-protection/overview-identity-protection)
+有关风险事件详细信息，请参阅Azure Active Directory [Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 >[!NOTE]
->必须具有 Azure AD Premium P1 或 P2 许可证才能使用风险检测 API。
+>必须具有一个Azure AD Premium P1 P2 许可证才能使用风险检测 API。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法   | 返回类型|说明|
 |:---------------|:--------|:----------|
@@ -42,10 +42,9 @@ Azure AD 根据[](riskyuser.md)各种信号和机器学习持续评估[](signin.
 |requestId|string|与风险检测相关联的登录请求 ID。 如果风险检测未与登录相关联，则此属性为 null。|
 |correlationId|string|与风险检测关联的登录的相关 ID。 如果风险检测未与登录相关联，则此属性为 null。 |
 |riskEventType|string|检测到的风险事件的类型。 可能的值为 `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` 、、、、、、、、 `leakedCredentials` `investigationsThreatIntelligence` 和 `generic` `adminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue` 。 |
-|riskType|riskEventType|风险事件类型列表。<br />**注意：** 此属性已弃用。 请 **改为使用 riskEventType。** |
 |riskState|riskState|检测到有风险的用户或登录的状态。 可能的值为 `none` `confirmedSafe` `remediated` `dismissed` `atRisk` 、、、 和 `confirmedCompromised` `unknownFutureValue` 。 |
 |riskLevel|riskLevel|检测到的风险级别。 可能的值为 `low` `medium` `high` `hidden` `none` `unknownFutureValue` 、、、。 <br />**注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 将返回 P1 客户 `hidden` 。|
-|riskDetail|riskDetail|检测到的风险的详细信息。 可能的值为 `none` `adminGeneratedTemporaryPassword` `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` 、、、、、、、、、 `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden` `adminConfirmedUserCompromised` `unknownFutureValue` 。 <br />**注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 将返回 P1 客户 `hidden` 。|
+|riskDetail|riskDetail|检测到的风险的详细信息。 可能的值为 `none` `adminGeneratedTemporaryPassword` `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` 、、、、、、、 `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden` `adminConfirmedUserCompromised` `unknownFutureValue` 。 <br />**注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 将返回 P1 客户 `hidden` 。|
 |source|string|风险检测的来源。 例如，`activeDirectory`。 |
 |detectionTimingType|riskDetectionTimingType|实时/脱机 (检测到的风险) 。 可能的值为 `notDefined` `realtime` `nearRealtime` `offline` `unknownFutureValue` 、、。 |
 |活动|activityType|指示检测到的风险链接到的活动类型。 可能的值为 `signin` `user` `unknownFutureValue` 、、。 |
@@ -59,6 +58,7 @@ Azure AD 根据[](riskyuser.md)各种信号和机器学习持续评估[](signin.
 |userDisplayName|string|用户名。 |
 |userPrincipalName|string|用户的用户主体名称 (UPN)。 |
 |additionalInfo|string|与 JSON 格式的风险检测相关的其他信息。 |
+|riskType (已弃) |riskEventType|风险事件类型列表。<br />**注意：** 此属性已弃用。 请 **改为使用 riskEventType。** |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,31 +1,53 @@
 ---
 title: 枚举值
-description: Microsoft Graph 枚举值
+description: Microsoft Graph枚举值
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: c4e9835e140daa63e5b0c6fac4886e0b58a59880
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 507088d2c71137ab416ba39629c8607bf7554e83
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525734"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61646753"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
 
+### <a name="incomingtokentype-values"></a>incomingTokenType 值 
+
+|成员|
+|:---|
+|无|
+|primaryRefreshToken|
+|saml11|
+|saml20|
+|unknownFutureValue|
+
+### <a name="protocoltype-values"></a>protocolType 值 
+
+|成员|
+|:---|
+|无|
+|oAuth2|
+|ropc|
+|wsFederation|
+|saml20|
+|deviceCode|
+|unknownFutureValue|
+
 ### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>accessReviewInstanceDecisionItemFilterByCurrentUserOptions 值 
 
-|Member|
+|成员|
 |:---|
 |reviewer|
 |unknownFutureValue|
 
 ### <a name="continuousaccessevaluationmode-values"></a>continuousAccessEvaluationMode 值 
 
-|Member|
+|成员|
 |:---|
 |strictEnforcement|
 |disabled|
@@ -50,7 +72,7 @@ ms.locfileid: "61525734"
 
 ### <a name="appcredentialrestrictiontype-values"></a>appCredentialRestrictionType 值
 
-|Member|
+|成员|
 |:-----|
 |passwordAddition|
 |passwordLifetime|
@@ -60,14 +82,14 @@ ms.locfileid: "61525734"
 
 ### <a name="appkeycredentialrestrictiontype-values"></a>appKeyCredentialRestrictionType 值
 
-|Member|
+|成员|
 |:-----|
 |asymmetricKeyLifetime|
 |unknownFutureValue|
 
 ### <a name="synchronizationsecret-values"></a>synchronizationSecret 值
 
-|Member|
+|成员|
 |:----|
 |无|
 |UserName|
@@ -113,14 +135,14 @@ ms.locfileid: "61525734"
 
 ### <a name="filtermode-values"></a>filterMode 值
 
-|Member|
+|成员|
 |:---|
 |include|
 |exclude|
 
 ### <a name="lifecycleeventtype-values"></a>lifecycleEventType 值
 
-|Member|
+|成员|
 |:---|
 |错过|
 |subscriptionRemoved|
@@ -128,7 +150,7 @@ ms.locfileid: "61525734"
 
 ### <a name="changetype-values"></a>changeType 值
 
-|Member|
+|成员|
 |:---|
 |已创建|
 |updated|
@@ -137,14 +159,14 @@ ms.locfileid: "61525734"
 
 ### <a name="countrylookupmethodtype-values"></a>countryLookupMethodType 值
 
-|Member|
+|成员|
 |:---|
 |clientIpAddress|
 |authenticatorApp提供|
 
 ### <a name="approvalstate-values"></a>approvalState 值
 
-|Member|
+|成员|
 |:---|
 |pending|
 |已批准|
@@ -154,14 +176,14 @@ ms.locfileid: "61525734"
 
 ### <a name="rolesummarystatus-values"></a>roleSummaryStatus 值
 
-|Member|
+|成员|
 |:---|
 |还行|
 |bad|
 
 ### <a name="datapolicyoperationstatus-values"></a>dataPolicyOperationStatus 值
 
-|Member|
+|成员|
 |:---|
 |notStarted|
 |running|
@@ -171,7 +193,7 @@ ms.locfileid: "61525734"
 
 ### <a name="conditionalaccessclientapp-values"></a>conditionalAccessClientApp 值
 
-|Member|
+|成员|
 |:---|
 |all|
 |浏览器|
@@ -182,25 +204,25 @@ ms.locfileid: "61525734"
 
 ### <a name="consentrequestfilterbycurrentuseroptions-values"></a>consentRequestFilterByCurrentUserOptions 值
 
-|Member|
+|成员|
 |:---|
 |reviewer|
 |unknownFutureValue|
 
 ### <a name="attributetype-values"></a>attributeType 值
 
-|Member|
+|成员|
 |:---|
 |String|
 |整数|
 |参考|
 |Binary|
-|布尔值|
+|Boolean|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变值
 
-|Member|
+|成员|
 |:---|
 |读写|
 |ReadOnly|
@@ -209,7 +231,7 @@ ms.locfileid: "61525734"
 
 ### <a name="directorydefinitiondiscoverabilities-values"></a>directoryDefinitionDiscoverabilities 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |AttributeNames|
@@ -220,7 +242,7 @@ ms.locfileid: "61525734"
 
 ### <a name="connectorgroupregion-values"></a>connectorGroupRegion 值
 
-|Member|
+|成员|
 |:---|
 |nam|
 |eur|
@@ -231,13 +253,13 @@ ms.locfileid: "61525734"
 
 ### <a name="connectorgrouptype-values"></a>connectorGroupType 值
 
-|Member|
+|成员|
 |:---|
 |applicationProxy|
 
 ### <a name="onpremisespublishingtype-values"></a>onPremisesPublishingType 值
 
-|Member|
+|成员|
 |:---|
 |applicationProxy|
 |exchangeOnline|
@@ -249,21 +271,21 @@ ms.locfileid: "61525734"
 
 ### <a name="agentstatus-values"></a>agentStatus 值
 
-|Member|
+|成员|
 |:---|
 |active|
 |inactive|
 
 ### <a name="connectorstatus-values"></a>connectorStatus 值
 
-|Member|
+|成员|
 |:---|
 |active|
 |inactive|
 
 ### <a name="calltype-values"></a>callType 值
 
-|Member|
+|成员|
 |:---|
 |unknown|
 |groupCall|
@@ -272,7 +294,7 @@ ms.locfileid: "61525734"
 
 ### <a name="tone-values"></a>音调值
 
-|Member|
+|成员|
 |:---|
 |tone0|
 |tone1|
@@ -294,7 +316,7 @@ ms.locfileid: "61525734"
 
 ### <a name="callstate-values"></a>callState 值
 
-|Member|
+|成员|
 |:---|
 |incoming|
 |建立|
@@ -309,7 +331,7 @@ ms.locfileid: "61525734"
 
 ### <a name="routingpolicy-values"></a>routingPolicy 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |noMissedCall|
@@ -320,14 +342,14 @@ ms.locfileid: "61525734"
 
 ### <a name="meetingcapabilities-values"></a>meetingCapabilities 值
 
-|Member|
+|成员|
 |:---|
 |questionAndAnswer|
 |unknownFutureValue|
 
 ### <a name="onlinemeetingrole-values"></a>onlineMeetingRole 值
 
-|Member|
+|成员|
 |:---|
 |attendee|
 |演示者|
@@ -336,14 +358,14 @@ ms.locfileid: "61525734"
 
 ### <a name="autoadmitteduserstype-values"></a>autoAdmittedUsersType 值
 
-|Member|
+|成员|
 |:---|
 |everyoneInCompany|
 |everyone|
 
 ### <a name="mediastate-values"></a>mediaState 值
 
-|Member|
+|成员|
 |:---|
 |active|
 |inactive|
@@ -351,14 +373,14 @@ ms.locfileid: "61525734"
 
 ### <a name="calldirection-values"></a>callDirection 值
 
-|Member|
+|成员|
 |:---|
 |incoming|
 |传出|
 
 ### <a name="modality-values"></a>形式值
 
-|Member|
+|成员|
 |:---|
 |audio|
 |video|
@@ -369,7 +391,7 @@ ms.locfileid: "61525734"
 
 ### <a name="kerberossignonmappingattributetype-values"></a>kerberosSignOnMappingAttributeType 值
 
-|Member|
+|成员|
 |:---|
 |userPrincipalName|
 |onPremisesUserPrincipalName|
@@ -379,13 +401,13 @@ ms.locfileid: "61525734"
 
 ### <a name="externalauthenticationtype-values"></a>externalAuthenticationType 值
 
-|Member|
+|成员|
 |:---|
 |passthru|
 |aadPreAuthentication|
 
 ### <a name="recipientscopetype-values"></a>recipientScopeType 值
-|Member|
+|成员|
 |:---|
 |无|
 |internal|
@@ -395,7 +417,7 @@ ms.locfileid: "61525734"
 
 ### <a name="appliedconditionalaccesspolicyresult-values"></a>appliedConditionalAccessPolicyResult 值
 
-|Member|
+|成员|
 |:---|
 |success|
 |failure|
@@ -413,7 +435,7 @@ ms.locfileid: "61525734"
 
 
 
-|Member|
+|成员|
 |:---|
 |任意|
 |push|
@@ -422,7 +444,7 @@ ms.locfileid: "61525734"
 
 ### <a name="authenticationmethodfeature-values"></a>authenticationMethodFeature 值
 
-|Member|
+|成员|
 |:---|
 |ssprRegistered|
 |ssprEnabled|
@@ -433,7 +455,7 @@ ms.locfileid: "61525734"
 
 ### <a name="authmethodstype-values"></a>authMethodsType 值
 
-|Member|
+|成员|
 |:---|
 |email|
 |mobileSMS|
@@ -451,7 +473,7 @@ ms.locfileid: "61525734"
 
 ### <a name="azureadlicensetype-values"></a>azureADLicenseType 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |free|
@@ -462,7 +484,7 @@ ms.locfileid: "61525734"
 
 ### <a name="conditionalaccessconditions-values"></a>conditionalAccessConditions 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |应用程序|
@@ -475,10 +497,15 @@ ms.locfileid: "61525734"
 |time|
 |deviceState|
 |client|
+|ipAddressSeenByAzureAD|
+|ipAddressSeenByResourceProvider|
+|unknownFutureValue|
+|servicePrincipals|
+|servicePrincipalRisk|
 
 ### <a name="conditionalaccessstatus-values"></a>conditionalAccessStatus 值
 
-|Member|
+|成员|
 |:---|
 |success|
 |failure|
@@ -487,7 +514,7 @@ ms.locfileid: "61525734"
 
 ### <a name="featuretype-values"></a>featureType 值
 
-|Member|
+|成员|
 |:---|
 |注册|
 |重置|
@@ -495,7 +522,7 @@ ms.locfileid: "61525734"
 
 ### <a name="grouptype-values"></a>groupType 值
 
-|Member|
+|成员|
 |:---|
 |unifiedGroups|
 |azureAD|
@@ -503,7 +530,7 @@ ms.locfileid: "61525734"
 
 ### <a name="includeduserroles-values"></a>includedUserRoles 值
 
-|Member|
+|成员|
 |:---|
 |all|
 |privilegedAdmin|
@@ -513,7 +540,7 @@ ms.locfileid: "61525734"
 
 ### <a name="includedusertypes-values"></a>includedUserTypes 值
 
-|Member|
+|成员|
 |:---|
 |all|
 |成员|
@@ -522,7 +549,7 @@ ms.locfileid: "61525734"
 
 ### <a name="initiatortype-values"></a>initiatorType 值
 
-|Member|
+|成员|
 |:---|
 |用户|
 |应用|
@@ -531,7 +558,7 @@ ms.locfileid: "61525734"
 
 ### <a name="migrationstatus-values"></a>migrationStatus 值
 
-|Member|
+|成员|
 |:---|
 |ready|
 |needsReview|
@@ -540,7 +567,7 @@ ms.locfileid: "61525734"
 
 ### <a name="networktype-values"></a>networkType 值
 
-|Member|
+|成员|
 |:---|
 |Intranet|
 |Extranet|
@@ -550,7 +577,7 @@ ms.locfileid: "61525734"
 
 ### <a name="operationresult-values"></a>operationResult 值
 
-|Member|
+|成员|
 |:---|
 |success|
 |failure|
@@ -559,7 +586,7 @@ ms.locfileid: "61525734"
 
 ### <a name="provisioningresult-values"></a>provisioningResult 值
 
-|Member|
+|成员|
 |:---|
 |success|
 |failure|
@@ -569,7 +596,7 @@ ms.locfileid: "61525734"
 
 ### <a name="provisioningsteptype-values"></a>provisioningStepType 值
 
-|Member|
+|成员|
 |:---|
 |import|
 |范围|
@@ -581,7 +608,7 @@ ms.locfileid: "61525734"
 
 ### <a name="registrationauthmethod-values"></a>registrationAuthMethod 值
 
-|Member|
+|成员|
 |:---|
 |email|
 |mobilePhone|
@@ -596,7 +623,7 @@ ms.locfileid: "61525734"
 
 ### <a name="registrationstatustype-values"></a>registrationStatusType 值
 
-|Member|
+|成员|
 |:---|
 |registered|
 |enabled|
@@ -604,18 +631,58 @@ ms.locfileid: "61525734"
 |mfaRegistered|
 |unknownFutureValue|
 
-### <a name="requirementprovider-values"></a>requirementProvider 值
 
-|Member|
+### <a name="signinidentifiertype-values"></a>signInIdentifierType 值 
+
+|成员|
 |:---|
-|MFA|
-|CA|
+|userPrincipalName|
+|phoneNumber|
+|proxyAddress|
+|qrCode|
+|onPremisesUserPrincipalName|
+|unknownFutureValue|
+
+
+### <a name="signinusertype-values"></a>signInUserType 值 
+
+|成员|
+|:---|
+|成员|
+|来宾|
+|unknownFutureValue|
+
+### <a name="requirementprovider-values"></a>requirementProvider 值 
+
+
+|成员|
+|:---|
+|用户|
+|request|
+|servicePrincipal|
+|v1ConditionalAccess|
+|multiConditionalAccess|
+|tenantSessionRiskPolicy|
+|accountCompromisePolicies|
+|v1ConditionalAccessDependency|
+|v1ConditionalAccessPolicyIdRequested|
+|mfaRegistrationRequiredByIdentityProtectionPolicy|
+|baselineProtection|
+|mfaRegistrationRequiredByBaselineProtection|
+|mfaRegistrationRequiredByMultiConditionalAccess|
+|enforcedForCspAdmins|
+|securityDefaults|
+|mfaRegistrationRequiredBySecurityDefaults|
+|proofUpCodeRequest|
+|crossTenantOutboundRule|
+|gpsLocationCondition|
+|riskBasedPolicy|
 |unknownFutureValue|
 
 
 ### <a name="riskdetail-values"></a>riskDetail 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |internal|
@@ -634,9 +701,11 @@ ms.locfileid: "61525734"
 |adminConfirmedUserComprom一|
 |unknownFutureValue|
 
+
+<!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
 ### <a name="riskeventtype-values"></a>riskEventType 值
 
-|Member|
+|成员|
 |:---|
 |unlikelyTravel|
 |匿名IPAddress|
@@ -656,7 +725,7 @@ ms.locfileid: "61525734"
 
 ### <a name="usageauthmethod-values"></a>usageAuthMethod 值
 
-|Member|
+|成员|
 |:---|
 |email|
 |mobileSMS|
@@ -672,7 +741,7 @@ ms.locfileid: "61525734"
 
 ### <a name="authenticationmethodkeystrength-values"></a>authenticationMethodKeyStrength 值
 
-|Member|
+|成员|
 |:---|
 |normal|
 |weak|
@@ -680,14 +749,14 @@ ms.locfileid: "61525734"
 
 ### <a name="educationaddedstudentaction-values"></a>educationAddedStudentAction 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |assignIfOpen|
 |unknownFutureValue|
 
 ### <a name="educationaddtocalendaroptions-values"></a>educationAddToCalendarOptions 值
-|Member|
+|成员|
 |:---|
 |无|
 |studentsAndPublisher|
@@ -696,7 +765,7 @@ ms.locfileid: "61525734"
 |studentsOnly|
 
 ### <a name="educationassignmentstatus-values"></a>educationAssignmentStatus 值
-|Member|
+|成员|
 |:---|
 |draft|
 |published|
@@ -704,7 +773,7 @@ ms.locfileid: "61525734"
 |unknownFutureValue|
 
 ### <a name="educationsubmissionstatus-values"></a>educationSubmissionStatus 值
-|Member|
+|成员|
 |:---|
 |working|
 |submitted|
@@ -715,7 +784,7 @@ ms.locfileid: "61525734"
 
 ### <a name="externalemailotpstate-values"></a>externalEmailOtpState 值
 
-|Member|
+|成员|
 |:---|
 |default|
 |enabled|
@@ -724,7 +793,7 @@ ms.locfileid: "61525734"
 
 ### <a name="replyrestriction-values"></a>replyRestriction 值
 
-| Member
+| 成员
 |:--------------
 | everyone
 | authorAndModerators
@@ -732,7 +801,7 @@ ms.locfileid: "61525734"
 
 ### <a name="usernewmessagerestriction-values"></a>userNewMessageRestriction 值
 
-| Member
+| 成员
 |:--------------
 |everyone
 |everyoneExceptGuests
@@ -741,7 +810,7 @@ ms.locfileid: "61525734"
 
 ### <a name="volumetype-values"></a>volumeType 值
 
-|Member|
+|成员|
 |:---|
 |operatingSystemVolume|
 |fixedDataVolume|
@@ -750,7 +819,7 @@ ms.locfileid: "61525734"
 
 ### <a name="allowedaudiences-values"></a>allowedAudiences 值
 
-|Member|
+|成员|
 |:---|
 |me|
 |family|
@@ -763,7 +832,7 @@ ms.locfileid: "61525734"
 
 ### <a name="attestationlevel-values"></a>attestationLevel 值
 
-|Member|
+|成员|
 |:---|
 |已证明|
 |notAttested|
@@ -771,7 +840,7 @@ ms.locfileid: "61525734"
 
 ### <a name="emailtype-values"></a>emailType 值
 
-|Member|
+|成员|
 |:---|
 |unknown|
 |工时|
@@ -781,7 +850,7 @@ ms.locfileid: "61525734"
 
 ### <a name="authenticationmethodsigninstate-values"></a>authenticationMethodSignInState 值
 
-|Member|
+|成员|
 |:---|
 |notSupported|
 |notAllowedByPolicy|
@@ -793,7 +862,7 @@ ms.locfileid: "61525734"
 
 ### <a name="authenticationphonetype-values"></a>authenticationPhoneType 值
 
-|Member|
+|成员|
 |:---|
 |mobile|
 |alternateMobile|
@@ -803,21 +872,21 @@ ms.locfileid: "61525734"
 
 ### <a name="authenticationmethodtargettype-values"></a>authenticationMethodTargetType 值
 
-|Member|
+|成员|
 |:---|
 |用户|
 |组|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState 值
 
-|Member|
+|成员|
 |:---|
 |enabled|
 |disabled|
 
 ### <a name="fido2restrictionenforcementtype-values"></a>fido2RestrictionEnforcementType 值
 
-|Member|
+|成员|
 |:---|
 |allow|
 |block|
@@ -825,7 +894,7 @@ ms.locfileid: "61525734"
 
 ### <a name="anniversarytype-values"></a>anniversaryType 值
 
-|Member|
+|成员|
 |:---|
 |birthday|
 |的|
@@ -833,7 +902,7 @@ ms.locfileid: "61525734"
 
 ### <a name="skillproficiencylevel-values"></a>skillProficiencyLevel 值
 
-|Member|
+|成员|
 |:---|
 |一些|
 |limitedWorking|
@@ -844,7 +913,7 @@ ms.locfileid: "61525734"
 
 ### <a name="languageproficiencylevel-values"></a>languageProficiencyLevel 值
 
-|Member|
+|成员|
 |:---|
 |一些|
 |conversational|
@@ -856,7 +925,7 @@ ms.locfileid: "61525734"
 
 ### <a name="personrelationship-values"></a>personRelationship 值
 
-|Member|
+|成员|
 |:---|
 |manager|
 |同事|
@@ -877,7 +946,7 @@ ms.locfileid: "61525734"
 
 ### <a name="attachmenttype-values"></a>attachmentType 值
 
-| Member
+| 成员
 |:--------------
 | file
 | 项
@@ -885,7 +954,7 @@ ms.locfileid: "61525734"
 
 ### <a name="analyticsactivitytype-values"></a>analyticsActivityType 值
 
-| Member
+| 成员
 |:--------------
 | 通话
 | 聊天
@@ -895,7 +964,7 @@ ms.locfileid: "61525734"
 
 ### <a name="registrationauthmethod-values"></a>registrationAuthMethod 值
 
-|Member|
+|成员|
 |:---|
 |email|
 |mobilePhone|
@@ -907,7 +976,7 @@ ms.locfileid: "61525734"
 
 ### <a name="entitytypes-values"></a>entityTypes 值
 
-|Member|
+|成员|
 |:---|
 |event|
 |message|
@@ -928,7 +997,7 @@ ms.locfileid: "61525734"
 
 ### <a name="bucketaggregationsortproperty-values"></a>bucketAggregationSortProperty 值
 
-|Member|
+|成员|
 |:---|
 |count|
 |keyAsString|
@@ -949,7 +1018,7 @@ ms.locfileid: "61525734"
 
 ### <a name="scheduleentitytheme-values"></a>scheduleEntityTheme 值
 
-| Member
+| 成员
 |:-------------------------
 | white
 | 蓝色
@@ -968,7 +1037,7 @@ ms.locfileid: "61525734"
 
 ### <a name="timeoffreasonicontype-values"></a>timeOffReasonIconType 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |car|
@@ -995,7 +1064,7 @@ ms.locfileid: "61525734"
 
 ### <a name="timecardstate-values"></a>timeCardState 值
 
-|Member|
+|成员|
 |:---|
 |clockedIn|
 |onBreak|
@@ -1004,7 +1073,7 @@ ms.locfileid: "61525734"
 
 ### <a name="schedulechangestate-values"></a>scheduleChangeState 值
 
-| Member
+| 成员
 |:----------------------------
 |pending
 |已批准
@@ -1013,7 +1082,7 @@ ms.locfileid: "61525734"
 
 ### <a name="schedulechangerequestactor-values"></a>scheduleChangeRequestActor 值
 
-| Member
+| 成员
 |:----------------------------
 |sender
 |recipient
@@ -1023,14 +1092,14 @@ ms.locfileid: "61525734"
 
 ### <a name="workforceintegrationencryptionprotocol-values"></a>workforceIntegrationEncryptionProtocol 值
 
-| Member
+| 成员
 |:----------------------------
 |sharedSecret
 |unknownFutureValue
 
 ### <a name="workforceintegrationsupportedentities-values"></a>workforceIntegrationSupportedEntities 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |Shift|
@@ -1047,7 +1116,7 @@ ms.locfileid: "61525734"
 
 ### <a name="confirmedby-values"></a>confirmedBy 值
 
-| Member
+| 成员
 |:-----------------
 | 无|
 | 用户|
@@ -1056,7 +1125,7 @@ ms.locfileid: "61525734"
 
 ### <a name="timezonestandard-values"></a>timeZoneStandard 值
 
-| Member
+| 成员
 |:-----------------
 | windows
 | iana
@@ -1076,7 +1145,7 @@ ms.locfileid: "61525734"
 
 ### <a name="physicaladdresstype-values"></a>physicalAddressType 值
 
-| Member
+| 成员
 |:-------------------------
 | unknown
 | home
@@ -1086,7 +1155,7 @@ ms.locfileid: "61525734"
 
 ### <a name="attendeetype-values"></a>attendeeType 值
 
-| Member
+| 成员
 |:-------------------------
 | 必需
 | 可选
@@ -1095,7 +1164,7 @@ ms.locfileid: "61525734"
 
 ### <a name="externalaudiencescope-values"></a>externalAudienceScope 值
 
-| Member
+| 成员
 |:-------------------------
 | 无
 | contactsOnly
@@ -1104,7 +1173,7 @@ ms.locfileid: "61525734"
 
 ### <a name="automaticrepliesstatus-values"></a>automaticRepliesStatus 值
 
-| Member
+| 成员
 |:-------------------------
 | disabled
 | alwaysEnabled
@@ -1142,7 +1211,7 @@ ms.locfileid: "61525734"
 
 ### <a name="educationsynchronizationstatus-values"></a>educationSynchronizationStatus 值
 
-| Member             |
+| 成员             |
 | :----------------- |
 | paused             |
 | inProgress         |
@@ -1156,7 +1225,7 @@ ms.locfileid: "61525734"
 
 ### <a name="educationexternalsource-values"></a>educationExternalSource 值
 
-| Member
+| 成员
 |:-------------------------
 | sis
 | lms
@@ -1165,7 +1234,7 @@ ms.locfileid: "61525734"
 
 ### <a name="educationgender-values"></a>educationGender 值
 
-| Member
+| 成员
 |:-------------------------
 | female
 | male
@@ -1175,7 +1244,7 @@ ms.locfileid: "61525734"
 
 ### <a name="eventtype-values"></a>eventType 值
 
-| Member
+| 成员
 |:-------------------------
 | singleInstance
 | occurrence
@@ -1185,7 +1254,7 @@ ms.locfileid: "61525734"
 
 ### <a name="sensitivity-values"></a>敏感度值
 
-| Member
+| 成员
 |:-------------------------
 | normal
 | personal
@@ -1195,7 +1264,7 @@ ms.locfileid: "61525734"
 
 ### <a name="importance-values"></a>重要性值
 
-| Member
+| 成员
 |:-------------------------
 | low
 | normal
@@ -1203,7 +1272,7 @@ ms.locfileid: "61525734"
 
 
 ### <a name="educationuserrole-values"></a>educationUserRole 值
-| Member
+| 成员
 |:---------------------
 | student
 | teacher
@@ -1212,7 +1281,7 @@ ms.locfileid: "61525734"
 
 ### <a name="meetingmessagetype-values"></a>meetingMessageType 值
 
-| Member
+| 成员
 |:-----------------
 | 无
 | meetingRequest
@@ -1224,7 +1293,7 @@ ms.locfileid: "61525734"
 
 ### <a name="followupflagstatus-values"></a>followupFlagStatus 值
 
-| Member
+| 成员
 |:-------------------------
 | notFlagged
 | complete
@@ -1233,7 +1302,7 @@ ms.locfileid: "61525734"
 
 ### <a name="inferenceclassificationtype-values"></a>inferenceClassificationType 值
 
-| Member
+| 成员
 |:-----------------
 | 聚焦
 | other
@@ -1241,7 +1310,7 @@ ms.locfileid: "61525734"
 
 ### <a name="iosnotificationalerttype-values"></a>iosNotificationAlertType 值
 
-| Member
+| 成员
 |:-------------------------
 | deviceDefault
 | 横幅
@@ -1250,7 +1319,7 @@ ms.locfileid: "61525734"
 
 ### <a name="deviceenrollmentfailurereason-values"></a>deviceEnrollmentFailureReason 值
 
-| Member
+| 成员
 |:-------------
 | unknown
 | 身份验证
@@ -1266,7 +1335,7 @@ ms.locfileid: "61525734"
 
 
 ### <a name="bodytype-values"></a>bodyType 值
-| Member
+| 成员
 |:---------
 | text
 | html
@@ -1274,7 +1343,7 @@ ms.locfileid: "61525734"
 
 ### <a name="locationtype-values"></a>locationType 值
 
-| Member
+| 成员
 |:-------------------------
 | default
 | conferenceRoom
@@ -1289,7 +1358,7 @@ ms.locfileid: "61525734"
 
 ### <a name="locationuniqueidtype-values"></a>locationUniqueIdType 值
 
-| Member
+| 成员
 |:-------------------------
 | unknown
 | locationStore
@@ -1300,7 +1369,7 @@ ms.locfileid: "61525734"
 
 ### <a name="messageactionflag-values"></a>messageActionFlag 值
 
-| Member
+| 成员
 |:-------------------------
 | 任意
 | 通话
@@ -1327,7 +1396,7 @@ ms.locfileid: "61525734"
 
 ### <a name="operationstatus-values"></a>operationStatus 值
 
-| Member
+| 成员
 |:-----------------
 |NotStarted
 |正在运行
@@ -1337,7 +1406,7 @@ ms.locfileid: "61525734"
 
 ### <a name="onenotepatchactiontype-values"></a>onenotePatchActionType 值
 
-| Member
+| 成员
 |:-------------------------
 | 替换
 | Append
@@ -1347,7 +1416,7 @@ ms.locfileid: "61525734"
 
 ### <a name="onenotepatchinsertposition-values"></a>onenotePatchInsertPosition 值
 
-| Member
+| 成员
 |:-------------------------
 | 活动后
 | 活动前
@@ -1355,7 +1424,7 @@ ms.locfileid: "61525734"
 
 ### <a name="phonetype-values"></a>phoneType 值
 
-| Member
+| 成员
 |:-------------------------
 | home
 | business
@@ -1371,18 +1440,18 @@ ms.locfileid: "61525734"
 
 ### <a name="plannerpreviewtype-values"></a>plannerPreviewType 值
 
-| Member
+| 成员
 |:-------------------------
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | 参考
 
 
 ### <a name="status-values"></a>状态值
 
-| Member
+| 成员
 |:-----------------
 | active
 | updated
@@ -1393,7 +1462,7 @@ ms.locfileid: "61525734"
 
 ### <a name="weekindex-values"></a>weekIndex 值
 
-| Member
+| 成员
 |:-------------------------
 | first
 | second
@@ -1404,7 +1473,7 @@ ms.locfileid: "61525734"
 
 ### <a name="dayofweek-values"></a>dayOfWeek 值
 
-| Member
+| 成员
 |:-------------------------
 | sunday
 | monday
@@ -1416,7 +1485,7 @@ ms.locfileid: "61525734"
 
 ### <a name="recurrencepatterntype-values"></a>recurrencePatternType 值
 
-| Member
+| 成员
 |:-------------------------
 | daily
 | weekly
@@ -1428,7 +1497,7 @@ ms.locfileid: "61525734"
 
 ### <a name="recurrencerangetype-values"></a>recurrenceRangeType 值
 
-| Member
+| 成员
 |:-------------------------
 | endDate
 | noEnd
@@ -1436,7 +1505,7 @@ ms.locfileid: "61525734"
 
 
 ### <a name="onenotesourceservice-values"></a>onenoteSourceService 值
-| Member
+| 成员
 |:---------------------
 | 未知
 | OneDrive
@@ -1446,7 +1515,7 @@ ms.locfileid: "61525734"
 
 ### <a name="responsetype-values"></a>responseType 值
 
-| Member
+| 成员
 |:-------------------------
 | 无
 | 组织者
@@ -1458,7 +1527,7 @@ ms.locfileid: "61525734"
 
 ### <a name="activitydomain-values"></a>activityDomain 值
 
-| Member
+| 成员
 |:-------------------------
 | unknown
 | 工时
@@ -1468,7 +1537,7 @@ ms.locfileid: "61525734"
 
 ### <a name="websitetype-values"></a>websiteType 值
 
-| Member
+| 成员
 |:-------------------------
 | other
 | home
@@ -1654,7 +1723,7 @@ ms.locfileid: "61525734"
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
-根据组定义， (用户帐户) 类型的Windows值。
+根据组定义 (用户帐户) 类型的Windows值。
 
 | 成员        | 值 | 说明                     |
 | :------------ | :---- | :------------------------------ |
@@ -1674,14 +1743,14 @@ ms.locfileid: "61525734"
 
 ### <a name="scopeoperatormultivaluedcomparisontype-values"></a>scopeOperatorMultiValuedComparisonType 值
 
-|Member|
+|成员|
 |:---|
 |all|
 |任意|
 
 ### <a name="risklevel-values"></a>riskLevel 值
 
-|Member|
+|成员|
 |:---|
 |low|
 |中等|
@@ -1692,7 +1761,7 @@ ms.locfileid: "61525734"
 
 ### <a name="riskstate-values"></a>riskState 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |confirmedSafe|
@@ -1704,7 +1773,7 @@ ms.locfileid: "61525734"
 
 ### <a name="advancedconfigstate-values"></a>advancedConfigState 值
 
-|Member|
+|成员|
 |:---|
 |default|
 |enabled|
@@ -1713,7 +1782,7 @@ ms.locfileid: "61525734"
 
 ### <a name="referenceattachmentpermission-values"></a>referenceAttachmentPermission 值
 
-|Member|
+|成员|
 |:---|
 |other|
 |view|
@@ -1725,7 +1794,7 @@ ms.locfileid: "61525734"
 
 ### <a name="referenceattachmentprovider-values"></a>referenceAttachmentProvider 值
 
-|Member|
+|成员|
 |:---|
 |other|
 |oneDriveBusiness|
@@ -1734,7 +1803,7 @@ ms.locfileid: "61525734"
 
 ### <a name="networktype-values"></a>networkType 值
 
-|Member|
+|成员|
 |:---|
 |Intranet|
 |Extranet|
@@ -1744,7 +1813,7 @@ ms.locfileid: "61525734"
 
 ### <a name="exchangeidformat-values"></a>exchangeIdFormat 值
 
-|Member|
+|成员|
 |:---|
 |entryId|
 |ewsId|
@@ -1754,14 +1823,14 @@ ms.locfileid: "61525734"
 
 ### <a name="attributeflowbehavior-values"></a>attributeFlowBehavior 值
 
-|Member|
+|成员|
 |:---|
 |flowWhenChanged|
 |flowAlways|
 
 ### <a name="attributeflowtype-values"></a>attributeFlowType 值
 
-|Member|
+|成员|
 |:---|
 |始终|
 |objectAddOnly|
@@ -1779,7 +1848,7 @@ ms.locfileid: "61525734"
 
 ### <a name="chatmessagetype-values"></a>chatMessageType 值
 
-|Member|
+|成员|
 |:---|
 |message|
 |chatEvent |
@@ -1789,7 +1858,7 @@ ms.locfileid: "61525734"
 
 ### <a name="chatmessageimportance-values"></a>chatMessageImportance 值
 
-|Member|
+|成员|
 |:---|
 |normal|
 |high|
@@ -1797,7 +1866,7 @@ ms.locfileid: "61525734"
 
 ### <a name="channelmembershiptype-values"></a>channelMembershipType 值
 
-| Member             |
+| 成员             |
 | :----------------- |
 | standard           |
 | private            |
@@ -1816,15 +1885,16 @@ ms.locfileid: "61525734"
 
 ### <a name="tokenissuertype-values"></a>tokenIssuerType 值
 
-|Member|
+|成员|
 |:---|
 |AzureAD|
 |ADFederationServices|
 |unknownFutureValue|
+|AzureADBackupAuth|
 
 ### <a name="riskdetectiontimingtype-values"></a>riskDetectionTimingType 值
 
-|Member|
+|成员|
 |:---|
 |notDefined|
 |realtime|
@@ -1834,7 +1904,7 @@ ms.locfileid: "61525734"
 
 ### <a name="activitytype-values"></a>activityType 值
 
-|Member|
+|成员|
 |:---|
 |signin|
 |用户|
@@ -1842,7 +1912,7 @@ ms.locfileid: "61525734"
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>chatMessagePolicyViolationUserActionType 值
 
-| Member   | Int 值 |  说明 |
+| 成员   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
 | 无 | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
 | Override | 1 | 发件人已覆盖邮件裁定并发送了该邮件。|
@@ -1850,7 +1920,7 @@ ms.locfileid: "61525734"
 
 ### <a name="chatmessagepolicyviolationverdictdetailstype-values"></a>chatMessagePolicyViolationVerdictDetailsType 值
 
-| Member   | Int 值 |  说明 |
+| 成员   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
 | 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
 | AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 替代 `AllowOverrideWithJustification` 块。 报告违反误报会自动覆盖阻止并发送邮件。 |
@@ -1859,7 +1929,7 @@ ms.locfileid: "61525734"
 
 ### <a name="entitytype-values"></a>entityType 值
 
-| Member       |
+| 成员       |
 |:--------------|
 |event|
 |message|
@@ -1869,7 +1939,7 @@ ms.locfileid: "61525734"
 
 ### <a name="onlinemeetingprovidertype-values"></a>onlineMeetingProviderType 值
 
-|Member|
+|成员|
 |:---|
 |unknown|
 |skypeForBusiness|
@@ -1878,7 +1948,7 @@ ms.locfileid: "61525734"
 
 ### <a name="delegatemeetingmessagedeliveryoptions-values"></a>delegateMeetingMessageDeliveryOptions 值
 
-|Member|
+|成员|
 |:---|
 |sendToDelegateAndInformationToPrincipal|
 |sendToDelegateAndPrincipal|
@@ -1886,7 +1956,7 @@ ms.locfileid: "61525734"
 
 ### <a name="calendarroletype-values"></a>calendarRoleType 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |freeBusyRead|
@@ -1910,7 +1980,7 @@ ms.locfileid: "61525734"
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于其余;例如，共享中的文件。                                 |
 | 动作 | 1     | 数据在运动中。 在传输过程中被网络设备截获的文件。         |
-| use    | 2     | 数据在使用中。 文件在客户端应用程序（如 Microsoft Office）中打开。 |
+| use    | 2     | 数据在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
@@ -1947,7 +2017,7 @@ ms.locfileid: "61525734"
 
 ### <a name="conditionalaccesspolicystate-values"></a>conditionalAccessPolicyState 值
 
-|Member|
+|成员|
 |:---|
 |enabled|
 |disabled|
@@ -1955,7 +2025,7 @@ ms.locfileid: "61525734"
 
 ### <a name="conditionalaccessgrantcontrol-values"></a>conditionalAccessGrantControl 值
 
-| Member       |
+| 成员       |
 |:--------------|
 |block|
 |mfa|
@@ -1966,23 +2036,62 @@ ms.locfileid: "61525734"
 |passwordChange|
 |unknownFutureValue|
 
+### <a name="conditionalaccessrule-values"></a>conditionalAccessRule 值 
+
+|成员|
+|:---|
+|allApps|
+|firstPartyApps|
+|office365|
+|appId|
+|acr|
+|appFilter|
+|allUsers|
+|来宾|
+|groupId|
+|roleId|
+|userId|
+|allDevicePlatforms|
+|devicePlatform|
+|allLocations|
+|insideCorpnet|
+|allTrustedLocations|
+|locationId|
+|allDevices|
+|deviceFilter|
+|deviceState|
+|unknownFutureValue|
+|deviceFilterIncludeRuleNotMatched|
+|allDeviceStates|
+
+### <a name="signinaccesstype-values"></a>signInAccessType 值 
+
+|成员|
+|:---|
+|无|
+|b2bCollaboration|
+|b2bDirectConnect|
+|microsoftSupport|
+|serviceProvider|
+|unknownFutureValue|
+
 ### <a name="signinfrequencytype-values"></a>signinFrequencyType 值
 
-| Member       |
+| 成员       |
 |:--------------|
 |days|
 |hours|
 
 ### <a name="persistentbrowsersessionmode-values"></a>persistentBrowserSessionMode 值
 
-| Member       |
+| 成员       |
 |:--------------|
 |始终|
 |从不|
 
 ### <a name="cloudappsecuritysessioncontroltype-values"></a>cloudAppSecuritySessionControlType 值
 
-| Member       |
+| 成员       |
 |:--------------|
 |mcasConfigured|
 |monitorOnly|
@@ -1990,7 +2099,7 @@ ms.locfileid: "61525734"
 
 ### <a name="conditionalaccessdeviceplatform-values"></a>conditionalAccessDevicePlatform 值
 
-| Member       |
+| 成员       |
 |:--------------|
 |android|
 |iOS|
@@ -2085,7 +2194,7 @@ ms.locfileid: "61525734"
 
 ### <a name="userflowtype-values"></a>userFlowType 值
 
-|Member
+|成员
 |:----------------------
 | signUp
 | signIn
@@ -2097,7 +2206,7 @@ ms.locfileid: "61525734"
 
 ### <a name="openidconnectresponsemode-values"></a>openIdConnectResponseMode 值
 
-| Member
+| 成员
 |:----------------------
 | form_post
 | 查询
@@ -2105,7 +2214,7 @@ ms.locfileid: "61525734"
 
 ### <a name="wellknownlistname-values"></a>wellknownListName 值
 
-| Member
+| 成员
 |:----------------------
 | 无
 | defaultList
@@ -2114,7 +2223,7 @@ ms.locfileid: "61525734"
 
 ### <a name="taskstatus-values"></a>taskStatus 值
 
-| Member
+| 成员
 |:----------------------
 | notStarted
 | inProgress
@@ -2176,13 +2285,13 @@ ms.locfileid: "61525734"
 
 ### <a name="permissionclassificationtype-values"></a>permissionClassificationType 值
 
-| Member
+| 成员
 |:-------
 | low
 
 ### <a name="permissiontype-values"></a>permissionType 值
 
-| Member
+| 成员
 |:-------------------------
 | 应用程序
 | delegated
@@ -2190,7 +2299,7 @@ ms.locfileid: "61525734"
 
 ### <a name="identityuserflowattributeinputtype-values"></a>identityUserFlowAttributeInputType 值
 
-| Member                |
+| 成员                |
 |:----------------------|
 | textBox               |
 | dateTimeDropDown      |
@@ -2201,14 +2310,14 @@ ms.locfileid: "61525734"
 
 ### <a name="teamworkactivitytopicsource-values"></a>teamworkActivityTopicSource 值
 
-| Member
+| 成员
 |:---
 | entityUrl
 | text
 
 ### <a name="cloudpcprovisioningpolicyimagetype-values"></a>cloudPcProvisioningPolicyImageType 值
 
-|Member|
+|成员|
 |:---|
 |custom|
 |库|
@@ -2218,13 +2327,13 @@ ms.locfileid: "61525734"
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的，无法删除/添加成员。                  |
-|组               | 1     | 指示聊天是群聊。 可以针对 (聊天至少 2 人) 名单大小。 稍后可以删除/添加成员。   |
+|组               | 1     | 指示聊天是群聊。 对于此 (，可以更新至少 2) 个用户的名单大小。 稍后可以删除/添加成员。   |
 |meeting             | 2     | 指示聊天是会议聊天，创建为创建 OnlineMeeting 的副作用。  |
 |unknownFutureValue  | 3     | Sentinel 值，用于指示未来值。 |
 
 ### <a name="singlesignonmode-values"></a>singleSignOnMode 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |onPremisesKerberos|
@@ -2233,7 +2342,7 @@ ms.locfileid: "61525734"
 
 ### <a name="plannercontainertype-values"></a>plannerContainerType 值
 
-|Member|
+|成员|
 |:---|
 |组|
 |unknownFutureValue|
@@ -2241,7 +2350,7 @@ ms.locfileid: "61525734"
 
 ### <a name="plannerplancontexttype-values"></a>plannerPlanContextType 值
 
-|Member|
+|成员|
 |:---|
 |teamsTab|
 |sharePointPage|
@@ -2251,7 +2360,7 @@ ms.locfileid: "61525734"
 
 ### <a name="policyscope-values"></a>policyScope 值
 
-|Member|
+|成员|
 |:---|
 |无|
 |all|
@@ -2262,12 +2371,12 @@ ms.locfileid: "61525734"
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
 |团队      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
-|groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
+|groupChat |1        |指示Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
 ### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>roleAssignmentScheduleRequestFilterByCurrentUserOptions 值
 
-|Member|
+|成员|
 |:---|
 |principal|
 |createdBy|
@@ -2276,21 +2385,21 @@ ms.locfileid: "61525734"
 
 ### <a name="roleassignmentschedulefilterbycurrentuseroptions-values"></a>roleAssignmentScheduleFilterByCurrentUserOptions 值
 
-|Member|
+|成员|
 |:---|
 |principal|
 |unknownFutureValue|
 
 ### <a name="roleassignmentscheduleinstancefilterbycurrentuseroptions-values"></a>roleAssignmentScheduleInstanceFilterByCurrentUserOptions 值
 
-|Member|
+|成员|
 |:---|
 |principal|
 |unknownFutureValue|
 
 ### <a name="roleeligibilityschedulerequestfilterbycurrentuseroptions-values"></a>roleEligibilityScheduleRequestFilterByCurrentUserOptions 值
 
-|Member|
+|成员|
 |:---|
 |principal|
 |createdBy|
@@ -2299,21 +2408,21 @@ ms.locfileid: "61525734"
 
 ### <a name="roleeligibilityschedulefilterbycurrentuseroptions-values"></a>roleEligibilityScheduleFilterByCurrentUserOptions 值
 
-|Member|
+|成员|
 |:---|
 |principal|
 |unknownFutureValue|
 
 ### <a name="roleeligibilityscheduleinstancefilterbycurrentuseroptions-values"></a>roleEligibilityScheduleInstanceFilterByCurrentUserOptions 值
 
-|Member|
+|成员|
 |:---|
 |principal|
 |unknownFutureValue|
 
 ### <a name="cloudpcauditactivityoperationtype-values"></a>cloudPcAuditActivityOperationType 值
 
-|Member|
+|成员|
 |:---|
 |create|
 |delete|
@@ -2322,7 +2431,7 @@ ms.locfileid: "61525734"
 
 ### <a name="cloudpcauditactivityresult-values"></a>cloudPcAuditActivityResult 值
 
-|Member|
+|成员|
 |:---|
 |success|
 |clientError|
@@ -2332,7 +2441,7 @@ ms.locfileid: "61525734"
 
 ### <a name="cloudpcauditactortype-values"></a>cloudPcAuditActorType 值
 
-|Member|
+|成员|
 |:---|
 |itPro|
 |应用程序|
@@ -2341,14 +2450,14 @@ ms.locfileid: "61525734"
 
 ### <a name="cloudpcauditcategory-values"></a>cloudPcAuditCategory 值
 
-|Member|
+|成员|
 |:---|
 |cloudPC|
 |other|
 
 ### <a name="posttype-values"></a>postType 值
 
-|Member|
+|成员|
 |:---|
 |regular|
 |quick|
@@ -2357,7 +2466,7 @@ ms.locfileid: "61525734"
 
 ### <a name="servicehealthclassificationtype-values"></a>serviceHealthClassificationType 值
 
-|Member|
+|成员|
 |:---|
 |advisory|
 |incident|
@@ -2365,7 +2474,7 @@ ms.locfileid: "61525734"
 
 ### <a name="servicehealthorigin-values"></a>serviceHealthOrigin 值
 
-|Member|
+|成员|
 |:---|
 |microsoft|
 |thirdParty|
@@ -2374,7 +2483,7 @@ ms.locfileid: "61525734"
 
 ### <a name="servicehealthstatus-values"></a>serviceHealthStatus 值
 
-|Member|
+|成员|
 |:---|
 |serviceOperational|
 |正在调查|
@@ -2397,7 +2506,7 @@ ms.locfileid: "61525734"
 
 ### <a name="serviceupdatecategory-values"></a>serviceUpdateCategory 值
 
-|Member|
+|成员|
 |:---|
 |preventOrFixIssue|
 |planForChange|
@@ -2406,7 +2515,7 @@ ms.locfileid: "61525734"
 
 ### <a name="serviceupdateseverity-values"></a>serviceUpdateSeverity 值
 
-|Member|
+|成员|
 |:---|
 |normal|
 |high|
@@ -2421,7 +2530,7 @@ ms.locfileid: "61525734"
 
 ### <a name="teamworkapplicationidentitytype-values"></a>teamworkApplicationIdentityType 值
 
-|Member|
+|成员|
 |:---|
 |aadApplication|
 |bot|
@@ -2432,16 +2541,16 @@ ms.locfileid: "61525734"
 
 ### <a name="teamworkconversationidentitytype-values"></a>teamworkConversationIdentityType 值
 
-|Member|
+|成员|
 |:---|
-|team|
-|channel|
+|团队|
+|频道|
 |聊天|
 |unknownFutureValue|
 
 ### <a name="teamworkuseridentitytype-values"></a>teamworkUserIdentityType 值
 
-|Member|
+|成员|
 |:---|
 |aadUser|
 |onPremiseAadUser|
@@ -2454,7 +2563,7 @@ ms.locfileid: "61525734"
 
 ### <a name="callrecordingstatus-values"></a>callRecordingStatus 值
 
-|Member|
+|成员|
 |:---|
 |success|
 |failure|
@@ -2464,7 +2573,7 @@ ms.locfileid: "61525734"
 
 ### <a name="simulationstatus-values"></a>simulationStatus 值
 
-|Member|
+|成员|
 |:---|
 |unknown|
 |draft|
@@ -2481,7 +2590,7 @@ ms.locfileid: "61525734"
 
 ### <a name="payloaddeliveryplatform-values"></a>payloadDeliveryPlatform 值
 
-|Member|
+|成员|
 |:---|
 |unknown|
 |sms|
@@ -2491,7 +2600,7 @@ ms.locfileid: "61525734"
 
 ### <a name="trainingstatus-values"></a>trainingStatus 值
 
-|Member|
+|成员|
 |:---|
 |unknown|
 |已分配|
@@ -2502,7 +2611,7 @@ ms.locfileid: "61525734"
 
 ### <a name="teamworkcalleventtype-values"></a>teamworkCallEventType 值
 
-|Member|
+|成员|
 |:---|
 |通话|
 |meeting|
@@ -2511,7 +2620,7 @@ ms.locfileid: "61525734"
 
 ### <a name="binaryoperator-values"></a>binaryOperator 值 
 
-|Member|
+|成员|
 |:---|
 |或|
 |和|
@@ -2519,7 +2628,7 @@ ms.locfileid: "61525734"
 
 ### <a name="subjectrightsrequeststage-values"></a>subjectRightsRequestStage 值 
 
-|Member|
+|成员|
 |:---|
 |contentRetrieval|
 |contentReview| 
@@ -2530,7 +2639,7 @@ ms.locfileid: "61525734"
 
 ### <a name="subjectrightsrequeststagestatus-values"></a>subjectRightsRequestStageStatus 值 
 
-|Member|
+|成员|
 |:---|
 |notStarted|
 |current|
@@ -2540,7 +2649,7 @@ ms.locfileid: "61525734"
 
 ### <a name="subjectrightsrequeststatus-values"></a>subjectRightsRequestStatus 值 
 
-|Member|
+|成员|
 |:---|
 |active|
 |closed|
@@ -2548,7 +2657,7 @@ ms.locfileid: "61525734"
 
 ### <a name="subjectrightsrequesttype-values"></a>subjectRightsRequestType 值 
 
-|Member|
+|成员|
 |:---|
 |export|
 |delete|
@@ -2558,7 +2667,7 @@ ms.locfileid: "61525734"
 
 ### <a name="datasubjecttype-values"></a>dataSubjectType 值 
 
-|Member|
+|成员|
 |:---|
 |customer|
 |currentEmployee|
@@ -2580,7 +2689,7 @@ ms.locfileid: "61525734"
 
 ### <a name="taskstatus_v2-values"></a>taskStatus_v2值
 
-|Member|
+|成员|
 |:---|
 |notStarted|
 |inProgress|
@@ -2590,7 +2699,7 @@ ms.locfileid: "61525734"
 
 ### <a name="wellknownlistname_v2-values"></a>wellKnownListName_v2值
 
-|Member|
+|成员|
 |:---|
 |无|
 |defaultList|
@@ -2599,7 +2708,7 @@ ms.locfileid: "61525734"
 
 ### <a name="bookingpricetype-values"></a>bookingPriceType 值
 
-|Member|
+|成员|
 |:---|
 |undefined|
 |fixedPrice|
@@ -2613,7 +2722,7 @@ ms.locfileid: "61525734"
 
 ### <a name="bookingstaffrole-values"></a>bookingStaffRole 值 
 
-|Member|
+|成员|
 |:---|
 |来宾|
 |administrator|
@@ -2623,7 +2732,7 @@ ms.locfileid: "61525734"
 
 ### <a name="bookingreminderrecipients-values"></a>bookingReminderRecipients 值 
 
-|Member|
+|成员|
 |:---|
 |allAttendees|
 |staff|
