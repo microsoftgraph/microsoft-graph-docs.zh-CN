@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 499fb9829c0f5b5eddc6f8b124fbf3d6375b5c12
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: fb160f96c2145c22f3f0da866b1a40410d116508
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424573"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61646998"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -36,7 +36,7 @@ ms.locfileid: "61424573"
 - 通过 [permissionGrantConditionSet](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta&preserve-view=true) 的 **certifiedClientApplicationsOnly** 属性，将认证 [包含](/graph/api/permissiongrantpolicy-post-includes?view=graph-rest-beta&preserve-view=true)或 [排除](/graph/api/permissiongrantpolicy-post-excludes?view=graph-rest-beta&preserve-view=true)为 [权限授予策略](/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta&preserve-view=true)中的一个 [条件](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="search--index"></a>搜索 | 索引
-使用[更新](/graph/api/externalconnectors-schema-update?view=graph-rest-beta&preserve-view=true)操作更新[连接](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true)架构中项目的属性，包含其别名和标签。
+使用[更新](/graph/api/externalconnectors-schema-update?view=graph-rest-beta&preserve-view=true)操作更新[连接](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true)架构中项目的属性，包括其别名和标签。
 
 
 ## <a name="november-2021-new-and-generally-available"></a>2021 年 11 月：新增和正式发布

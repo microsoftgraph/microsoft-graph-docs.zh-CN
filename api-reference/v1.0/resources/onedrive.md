@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 author: jewan-microsoft
 doc_type: conceptualPageType
-ms.openlocfilehash: bc3b425a25cb55bdbebbf354a296ac4e9235f047
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc7c4554ebc877d87590547f14d2cfd0d52a01bb
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062430"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647096"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>在 Microsoft Graph 中使用文件
 
@@ -83,6 +83,8 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 | `/me/drive/root:/path/to/folder:/children` | 通过相对于用户的 OneDrive 根文件夹的路径列出 **DriveItem** 的子项。 |
 | `/me/drive/items/{item-id}:/path/to/folder:/children` | 按照相对于另一项的路径列出 **DriveItem** 的子项。 |
 
+有关详细信息，请参阅 [寻址 driveItems](/graph/concepts/onedrive-addressing-driveitems.md)。
+
 ## <a name="drive-resource"></a>驱动器资源
 
 [驱动器资源](drive.md) 是用户的 OneDrive 或[ SharePoint][] 文档库内的顶级对象。几乎所有的文件操作都从查找特定驱动器资源开始。
@@ -114,4 +116,3 @@ Microsoft Graph 还为应用提供了一种直接从共享链接 [访问共享�
 
 [SharePoint]: sharepoint.md
 [网站]: site.md
-
