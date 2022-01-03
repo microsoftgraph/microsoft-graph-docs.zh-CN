@@ -134,7 +134,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -299,7 +299,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-inactiveguests-m365-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-inactiveguests-m365-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

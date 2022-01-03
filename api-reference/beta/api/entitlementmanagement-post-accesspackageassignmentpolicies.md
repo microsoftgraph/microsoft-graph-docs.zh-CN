@@ -108,7 +108,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -255,7 +255,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-multistage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-multistage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -408,7 +408,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
