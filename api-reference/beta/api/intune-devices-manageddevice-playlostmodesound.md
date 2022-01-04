@@ -1,16 +1,16 @@
 ---
 title: playLostModeSound 操作
-description: 远程锁定
+description: 播放丢失模式声音
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd08fb249ac2a03c30cdc91b521bd7664735c450
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 4c204f01f6baf33329d6a7a5c33770d1bcce9dfd
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338279"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711604"
 ---
 # <a name="playlostmodesound-action"></a>playLostModeSound 操作
 
@@ -20,7 +20,7 @@ ms.locfileid: "61338279"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-远程锁定
+播放丢失模式声音
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,15 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求正文中，提供参数的 JSON 表示形式。
+
+下表显示了可用于此操作的参数。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|durationInMinutes|String|尚未记录|
+
+
 
 ## <a name="response"></a>响应
 如果成功，此操作返回 `204 No Content` 响应代码。
@@ -64,6 +72,13 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 下面是一个请求示例。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/playLostModeSound
+
+Content-type: application/json
+Content-length: 56
+
+{
+  "durationInMinutes": "Duration In Minutes value"
+}
 ```
 
 ### <a name="response"></a>响应

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4e82f30418a49dcc8becc2780da11b18249c24bc
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 545ab52782c8bec83f711faf3928d10d4c3105c1
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224284"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711589"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "61224284"
 |[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|String 集合|检查指定用户、组、设备、组织联系人或目录对象的组、管理单元或目录角色列表中的成员身份。 此方法是可传递的。|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| 返回用户、组、设备、组织联系人或目录对象所属的所有组、管理单元和目录角色。 检查是可传递的。 |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) 集合 | 基于提供的 ID 集获取目录对象集。 |
-|[validateProperties](../api/directoryobject-validateproperties.md)|Json| 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。 |
+|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。 |
 |delta|[directoryObject](directoryObject.md) 集合| 获取目录对象的增量更改，例如，[用户](../api/user-delta.md)、[组](../api/group-delta.md)、[应用程序](../api/application-delta.md)和[服务主体](../api/serviceprincipal-delta.md)。 每个派生类型都支持按 **id** 进行筛选。有关 delta 查询的详细信息，请参阅 [使用 delta 查询跟踪 Microsoft Graph 数据中的更改](/graph/delta-query-overview)。|
 
 ## <a name="properties"></a>属性
@@ -41,7 +41,7 @@ ms.locfileid: "61224284"
 
 ## <a name="relationships"></a>关系
 
-无
+无。
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -73,7 +73,6 @@ ms.locfileid: "61224284"
 {
   "id": "string (identifier)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

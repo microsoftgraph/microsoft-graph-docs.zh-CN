@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备配置 - Microsoft Gaaph API
-description: 列出定义Graph配置设备的适用于 Intune 终结点的 Microsoft (API) REST 应用程序。
+description: 列出定义Graph组织的设备的适用于 Intune 终结点 (的 Microsoft) REST API。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 2688a9499565d7c93f23cac331040d74987ec9cc
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: f59329e22a916582d13ee4da01179f31440d7f2d
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61342998"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712024"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -61,6 +61,7 @@ ms.locfileid: "61342998"
 - [Android 设备所有者播放存储模式](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android 设备所有者必填密码类型](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Android 设备所有者 SCEP 证书配置文件](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
+- [Android 设备所有者系统更新冻结期](intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md)
 - [Android 设备所有者系统更新安装类型](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
 - [Android 设备所有者信任的根证书](intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)
 - [Android 设备所有者虚拟主页按钮类型](intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)

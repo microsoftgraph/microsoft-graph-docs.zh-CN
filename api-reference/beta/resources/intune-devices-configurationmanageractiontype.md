@@ -2,15 +2,15 @@
 title: configurationManagerActionType 枚举类型
 description: Configuration Manager 客户端上的操作类型
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 104bc95a7fdd7c9ad77786f0358a21054a972b5b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6884ebcbe4e8c4c4b6f7b6cd6fc23246875ca7bf
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040258"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711905"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>configurationManagerActionType 枚举类型
 
@@ -29,6 +29,10 @@ Configuration Manager 客户端上的操作类型
 |refreshUserPolicy|1|在 Configuration Manager 客户端上刷新用户策略|
 |wakeUpClient|2|唤醒 Configuration Manager 客户端|
 |appEvaluation|3|Configuration Manager 客户端上的评估应用程序策略|
+|quickScan|5|Configuration Manager 客户端上的评估应用程序策略|
+|fullScan|6 |Configuration Manager 客户端上的评估应用程序策略|
+|windowsDefenderUpdateSignatures|7 |Configuration Manager 客户端上的评估应用程序策略|
+
 
 
 

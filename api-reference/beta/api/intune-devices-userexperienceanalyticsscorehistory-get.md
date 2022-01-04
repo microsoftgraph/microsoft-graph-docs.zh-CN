@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 148f5e0634830896e5de1e1d01a7b1808b97a07c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d3b75b6f2c81d3703e54999a8a950dc4ec588139
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345749"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712101"
 ---
 # <a name="get-userexperienceanalyticsscorehistory"></a>获取 userExperienceAnalyticsScoreHistory
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsSco
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 583
+Content-Length: 657
 
 {
   "value": {
@@ -81,10 +81,12 @@ Content-Length: 583
     "coreSigninScore": 15,
     "recommendedSoftwareScore": 8,
     "appHealthOverallScore": 5,
+    "workFromAnywhereScore": 5,
     "batteryHealthScore": 2,
     "startupTotalDevices": 3,
     "recommendedSoftwareTotalDevices": 15,
     "appHealthTotalDevices": 5,
+    "workFromAnywhereTotalDevices": 12,
     "batteryHealthTotalDevices": 9,
     "restartScore": 12
   }

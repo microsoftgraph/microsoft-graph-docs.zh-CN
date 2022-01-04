@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85ae9a4f9485e4937d4222111cc708a7e17a6736
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: f6ac5b96b2e00e9c682fde9b8504af5aadce4b71
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61334485"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711982"
 ---
 # <a name="list-aospdeviceownerdeviceconfigurations"></a>列出 aospDeviceOwnerDeviceConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2094
+Content-Length: 1976
 
 {
   "value": [
@@ -106,9 +106,7 @@ Content-Length: 2094
       "appsBlockInstallFromUnknownSources": true,
       "bluetoothBlocked": true,
       "bluetoothBlockConfiguration": true,
-      "bluetoothBlockContactSharing": true,
       "cameraBlocked": true,
-      "cellularBlockWiFiTethering": true,
       "factoryResetBlocked": true,
       "passwordMinimumLength": 5,
       "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -118,7 +116,6 @@ Content-Length: 2094
       "securityAllowDebuggingFeatures": true,
       "storageBlockExternalMedia": true,
       "storageBlockUsbFileTransfer": true,
-      "backupBlocked": true,
       "wifiBlockEditConfigurations": true
     }
   ]

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 98697566e6a4a49c46a4b6a7887bbb2f16c7d2bc
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 721e015d5baf0c44cbeeb35a1f51998cd08174a4
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346967"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712066"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>列出 androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9759
+Content-Length: 10021
 
 {
   "value": [
@@ -252,6 +252,15 @@ Content-Length: 9759
       "storageAllowUsb": true,
       "storageBlockExternalMedia": true,
       "storageBlockUsbFileTransfer": true,
+      "systemUpdateFreezePeriods": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+          "startMonth": 10,
+          "startDay": 8,
+          "endMonth": 8,
+          "endDay": 6
+        }
+      ],
       "systemUpdateWindowStartMinutesAfterMidnight": 11,
       "systemUpdateWindowEndMinutesAfterMidnight": 9,
       "systemUpdateInstallType": "postpone",

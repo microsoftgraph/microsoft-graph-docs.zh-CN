@@ -2,15 +2,15 @@
 title: configurationManagerAction 资源类型
 description: 操作 triggerConfigurationManagerAction 的参数
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f39a52588896f4d90cd3c07b34c2bddd68ca393b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 07cf57cf159b9a30dc653a0cbe26451b97b903fe
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111010"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711912"
 ---
 # <a name="configurationmanageraction-resource-type"></a>configurationManagerAction 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "59111010"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|action|[configurationManagerActionType](../resources/intune-devices-configurationmanageractiontype.md)|在 Configuration Manager 客户端上触发的操作类型。 可取值为：`refreshMachinePolicy`、`refreshUserPolicy`、`wakeUpClient`、`appEvaluation`。|
+|action|[configurationManagerActionType](../resources/intune-devices-configurationmanageractiontype.md)|在 Configuration Manager 客户端上触发的操作类型。 可取值为：`refreshMachinePolicy`、`refreshUserPolicy`、`wakeUpClient`、`appEvaluation`、`quickScan`、`fullScan`、`windowsDefenderUpdateSignatures`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -43,6 +43,7 @@ ms.locfileid: "59111010"
   "action": "String"
 }
 ```
+
 
 
 

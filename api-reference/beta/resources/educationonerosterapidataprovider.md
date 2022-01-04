@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 538f3740fafc3c0debe6dacd8b0a76c81c14a228
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bf6149a35e5622b1cc06be84d2566d14508d6b0f
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695704"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712052"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>educationOneRosterApiDataProvider 资源
 
@@ -63,7 +63,6 @@ ms.locfileid: "60695704"
   "schoolsIds": ["String"],
   "termIds": ["String"],
   "connectionSettings": {
-    "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings",
     "clientId": "String",
     "clientSecret&quot;: &quot;String"
   },

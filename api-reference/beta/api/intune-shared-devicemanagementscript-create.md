@@ -2,15 +2,15 @@
 title: 创建 deviceManagementScript
 description: 创建新的 deviceManagementScript 对象。
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75a859b273b87a2b409377a7e8ca245b354b8134
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0c457bc23e2bcd6aa1ea8b44731189f96e539dc2
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064748"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712031"
 ---
 # <a name="create-devicemanagementscript"></a>创建 deviceManagementScript
 
@@ -59,16 +59,15 @@ POST /deviceManagement/deviceManagementScripts
 |:---|:---|:---|
 |id|String|设备管理脚本的唯一标识符。|
 |displayName|String|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|脚本运行的间隔。 如果未定义，脚本将运行一次|
-|scriptContent|二进制|脚本内容。|
+|description|String|设备管理脚本的可选说明。|
+|scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
+|enforceSignatureCheck|布尔|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
 |roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记标识列表。|
-|runAs32Bit|Boolean|指示 PowerShell 脚本是否应该作为 32 位运行的值|
+|runAs32Bit|布尔|指示 PowerShell 脚本是否应该作为 32 位运行的值|
 
 
 
@@ -111,6 +110,9 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

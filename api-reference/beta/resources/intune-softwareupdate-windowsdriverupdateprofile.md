@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f8e29d336a0b04af4e4e5f045c6541e592e6981
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ee9304666ac2bc71485e25f8de16decc5c4d10fc
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346974"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712094"
 ---
 # <a name="windowsdriverupdateprofile-resource-type"></a>windowsDriverUpdateProfile 资源类型
 
@@ -32,6 +32,7 @@ Windows驱动程序更新配置文件
 |[更新 windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-update.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|更新 [windowsDriverUpdateProfile 对象](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 的属性。|
 |[分配操作](../api/intune-softwareupdate-windowsdriverupdateprofile-assign.md)|无|尚未记录|
 |[executeAction 操作](../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md)|[bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md)|尚未记录|
+|[syncInventory 操作](../api/intune-softwareupdate-windowsdriverupdateprofile-syncinventory.md)|None|同步 WindowsDriverUpdateProfile 的驱动程序清单。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -45,7 +46,7 @@ Windows驱动程序更新配置文件
 |deploymentDeferralInDays|Int32|部署延迟设置（以天表示）仅在 ApprovalType 设置为自动审批时适用。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|字符串集合|此驱动程序更新实体的范围标记列表。|
+|roleScopeTagIds|String collection|此驱动程序更新实体的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

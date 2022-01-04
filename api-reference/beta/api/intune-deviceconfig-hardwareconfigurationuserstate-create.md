@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 194aafefc7325c65ef16fbc810a4eda03c2e8cb1
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 997436233394cb8fa36f172acb89cd726129b785
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345450"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712059"
 ---
 # <a name="create-hardwareconfigurationuserstate"></a>创建 hardwareConfigurationUserState
 
@@ -54,12 +54,12 @@ POST /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/userRunS
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|硬件配置脚本用户状态实体的键。 此属性是只读的。|
-|upn|String|用户主体名称 (UPN)|
-|userEmail|String|用户电子邮件地址|
+|upn|String|用户主体名称 (UPN)。|
+|userEmail|String|用户电子邮件地址。|
 |userName|String|用户名|
 |lastStateUpdateDateTime|DateTimeOffset|上次执行硬件配置的时间戳|
-|successfulDeviceCount|Int32|特定用户的成功设备计数|
-|failedDeviceCount|Int32|特定用户的失败设备计数|
+|successfulDeviceCount|Int32|特定用户的成功设备计数。|
+|failedDeviceCount|Int32|特定用户的设备计数失败。|
 |pendingDeviceCount|Int32|特定用户的挂起设备计数。|
 |errorDeviceCount|Int32|特定用户的错误设备计数。|
 |notApplicableDeviceCount|Int32|不适用于特定用户的设备计数。|

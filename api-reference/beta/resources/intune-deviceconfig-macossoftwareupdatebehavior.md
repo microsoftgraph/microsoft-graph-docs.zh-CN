@@ -2,15 +2,15 @@
 title: macOSSoftwareUpdateBehavior 枚举类型
 description: macOS 软件更新的更新行为选项。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5bfde3d153be43bbaa79f8ab059852ecce98be90
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a0fa894d17e126287ccb1e1c63e36160cf2dcd3e
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030436"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712080"
 ---
 # <a name="macossoftwareupdatebehavior-enum-type"></a>macOSSoftwareUpdateBehavior 枚举类型
 
@@ -27,6 +27,11 @@ macOS 软件更新的更新行为选项。
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |default|1|下载和/或安装软件更新，具体取决于当前设备状态。|
+|downloadOnly|2|在不安装的情况下下载软件更新。|
+|installASAP|3|安装已下载的软件更新。|
+|notifyOnly|4|下载软件更新，然后通过应用商店通知用户。|
+|installLater|5|下载软件更新，并稍后安装它。|
+
 
 
 

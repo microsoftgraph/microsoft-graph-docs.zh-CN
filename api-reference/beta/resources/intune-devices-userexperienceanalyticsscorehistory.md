@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 49e5390181c61c9817fa79f90073a7b355758e72
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 0f82ebe1a22f42829049cc4e855e96249f6ec7ae
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348017"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711898"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>userExperienceAnalyticsScoreHistory 资源类型
 
@@ -42,10 +42,12 @@ ms.locfileid: "61348017"
 |coreSigninScore|Int32|用户体验分析设备核心登录分数。 分数范围为 0-100，100 是理想分数。|
 |recommendedSoftwareScore|Int32|用户体验分析设备核心登录分数。 分数范围为 0-100，100 是理想分数。|
 |appHealthOverallScore|Int32|用户体验分析应用运行状况总体分数。|
+|workFromAnywhereScore|Int32|用户体验分析可以随时随地进行评分。|
 |batteryHealthScore|Int32|用户体验分析电池运行状况分数。|
 |startupTotalDevices|Int32|用户体验分析类别启动性能的总设备计数。|
 |recommendedSoftwareTotalDevices|Int32|用户体验分析类别推荐软件的总设备计数。|
 |appHealthTotalDevices|Int32|用户体验分析类别应用运行状况的总设备计数。|
+|workFromAnywhereTotalDevices|Int32|用户体验分析类别从任何位置工作的总设备计数。|
 |batteryHealthTotalDevices|Int32|用户体验分析类别电池运行状况的总设备计数。|
 |restartScore|Int32|重启分数。 分数将在 0-100 之间，100 是理想分数，0 表示重启过多。 有效值为 0 到 9999999|
 
@@ -71,10 +73,12 @@ ms.locfileid: "61348017"
   "coreSigninScore": 1024,
   "recommendedSoftwareScore": 1024,
   "appHealthOverallScore": 1024,
+  "workFromAnywhereScore": 1024,
   "batteryHealthScore": 1024,
   "startupTotalDevices": 1024,
   "recommendedSoftwareTotalDevices": 1024,
   "appHealthTotalDevices": 1024,
+  "workFromAnywhereTotalDevices": 1024,
   "batteryHealthTotalDevices": 1024,
   "restartScore": 1024
 }

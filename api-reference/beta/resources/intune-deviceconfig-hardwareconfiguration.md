@@ -1,16 +1,16 @@
 ---
 title: hardwareConfiguration 资源类型
-description: Intune 将为客户提供在已注册的 windows 10 和已加入Azure Active Directory配置硬件/bios 设置。
+description: Intune 将为客户提供在已注册的 windows 10 和已加入Azure Active Directory配置硬件/bios 设置的能力。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d19f8f3b8efc3d60fb60bce18851a072a50d8895
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 12d6eda9d2372d07c2f54bc19583d169657822ba
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345422"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711583"
 ---
 # <a name="hardwareconfiguration-resource-type"></a>hardwareConfiguration 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "61345422"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Intune 将为客户提供在已注册的 windows 10 和已加入Azure Active Directory配置硬件/bios 设置。
+Intune 将为客户提供在已注册的 windows 10 和已加入Azure Active Directory配置硬件/bios 设置的能力。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -30,6 +30,7 @@ Intune 将为客户提供在已注册的 windows 10 和已加入Azure Active Dir
 |[创建 hardwareConfiguration](../api/intune-deviceconfig-hardwareconfiguration-create.md)|[hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md)|创建新的 [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) 对象。|
 |[删除 hardwareConfiguration](../api/intune-deviceconfig-hardwareconfiguration-delete.md)|None|删除 [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md)。|
 |[更新 hardwareConfiguration](../api/intune-deviceconfig-hardwareconfiguration-update.md)|[hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md)|更新 [hardwareConfiguration 对象](../resources/intune-deviceconfig-hardwareconfiguration.md) 的属性。|
+|[assignHardwareConfiguration 操作](../api/intune-deviceconfig-hardwareconfiguration-assignhardwareconfiguration.md)|[hardwareConfigurationAssignment](../resources/intune-deviceconfig-hardwareconfigurationassignment.md) 集合|尚未记录|
 |[分配操作](../api/intune-deviceconfig-hardwareconfiguration-assign.md)|[hardwareConfigurationAssignment](../resources/intune-deviceconfig-hardwareconfigurationassignment.md) 集合|尚未记录|
 
 ## <a name="properties"></a>属性
@@ -44,7 +45,7 @@ Intune 将为客户提供在已注册的 windows 10 和已加入Azure Active Dir
 |fileName|String|硬件配置的文件名|
 |configurationFileContent|Binary|硬件配置的文件内容|
 |hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|硬件配置的 Oem 类型。 可取值为：`dell`、`surface`、`surfaceDock`。|
-|roleScopeTagIds|字符串集合|硬件配置的范围标记标识列表|
+|roleScopeTagIds|String collection|硬件配置的范围标记标识列表|
 |perDevicePasswordDisabled|布尔|一个值，指示是否禁用每个开发密码|
 
 ## <a name="relationships"></a>关系

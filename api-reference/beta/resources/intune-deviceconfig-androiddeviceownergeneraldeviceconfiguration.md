@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d35ce8623390b1a6312f8807e7610fc3a9353ff
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 966c0f27c60c955d0ddab517e9685c9ddaa6837a
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347709"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712038"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>androidDeviceOwnerGeneralDeviceConfiguration 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "61347709"
 |[列出 androidDeviceOwnerGeneralDeviceConfigurations](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-list.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) 集合|列出 [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) 对象的属性和关系。|
 |[获取 androidDeviceOwnerGeneralDeviceConfiguration](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-get.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)|读取 [androidDeviceOwnerGeneralDeviceConfiguration 对象的属性和](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) 关系。|
 |[创建 androidDeviceOwnerGeneralDeviceConfiguration](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-create.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)|创建新的 [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) 对象。|
-|[删除 androidDeviceOwnerGeneralDeviceConfiguration](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-delete.md)|无|删除 [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)。|
+|[删除 androidDeviceOwnerGeneralDeviceConfiguration](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-delete.md)|None|删除 [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)。|
 |[更新 androidDeviceOwnerGeneralDeviceConfiguration](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-update.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)|更新 [androidDeviceOwnerGeneralDeviceConfiguration 对象](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) 的属性。|
 
 ## <a name="properties"></a>属性
@@ -49,32 +49,32 @@ ms.locfileid: "61347709"
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |azureAdSharedDeviceDataClearApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|将在共享设备模式下全局注销期间清除其数据的托管AAD列表。 该集合最多可包含 500 个元素。|
-|accountsBlockModification|Boolean|指示是否禁用添加或删除帐户。|
-|appsAllowInstallFromUnknownSources|Boolean|指示是否允许用户启用未知源设置。|
+|accountsBlockModification|布尔|指示是否禁用添加或删除帐户。|
+|appsAllowInstallFromUnknownSources|布尔|指示是否允许用户启用未知源设置。|
 |appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|指示应用自动更新策略的值。 可取值为：`notConfigured`、`userChoice`、`never`、`wiFiOnly`、`always`。|
 |appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|指示运行时权限请求的权限策略（如果没有为应用专门定义权限）。 可能的值是：`deviceDefault`、`prompt`、`autoGrant`、`autoDeny`。|
 |appsRecommendSkippingFirstUseHints|布尔|是否推荐所有应用跳过他们可能会添加的任何首次使用提示。|
-|bluetoothBlockConfiguration|布尔|指示是否阻止用户配置蓝牙。|
-|bluetoothBlockContactSharing|布尔|指示是否阻止用户通过蓝牙共享联系人。|
+|bluetoothBlockConfiguration|Boolean|指示是否阻止用户配置蓝牙。|
+|bluetoothBlockContactSharing|Boolean|指示是否阻止用户通过蓝牙共享联系人。|
 |cameraBlocked|Boolean|指示是否禁用相机的使用。|
 |cellularBlockWiFiTethering|Boolean|指示是否阻止 Wi-Fi 网络共享。|
 |certificateCredentialConfigurationDisabled|Boolean|指示是否阻止用户进行任何证书凭据配置。|
-|crossProfilePoliciesAllowCopyPaste|Boolean|指示从一个配置文件复制的文本是否可以 (个人) 另一个配置文件复制的文本。|
+|crossProfilePoliciesAllowCopyPaste|布尔|指示从一个配置文件复制的文本是否 (个人) 复制的文本可以粘贴到另一个配置文件中。|
 |crossProfilePoliciesAllowDataSharing|[androidDeviceOwnerCrossProfileDataSharing](../resources/intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md)|指示一个配置文件的数据 (配置文件或工作) 配置文件中的应用共享。 可取值为：`notConfigured`、`crossProfileDataSharingBlocked`、`dataSharingFromWorkToPersonalBlocked`、`crossProfileDataSharingAllowed`、`unkownFutureValue`。|
 |crossProfilePoliciesShowWorkContactsInPersonalProfile|Boolean|指示存储在工作配置文件中的联系人是否显示在个人配置文件联系人搜索/传入呼叫中。|
-|microsoftLauncherConfigurationEnabled|Boolean|指示是否要配置微软桌面。|
-|microsoftLauncherCustomWallpaperEnabled|Boolean|指示是否在目标设备上配置墙纸。|
+|microsoftLauncherConfigurationEnabled|布尔|指示是否要配置微软桌面。|
+|microsoftLauncherCustomWallpaperEnabled|布尔|指示是否在目标设备上配置墙纸。|
 |microsoftLauncherCustomWallpaperImageUrl|String|指示要用作目标设备上墙纸的图像文件的 URL。|
 |microsoftLauncherCustomWallpaperAllowUserModification|Boolean|指示用户是否可以修改墙纸以个性化设置其设备。|
 |microsoftLauncherFeedEnabled|布尔|指示是否要在设备上启用启动器源。|
-|microsoftLauncherFeedAllowUserModification|Boolean|指示用户是否可以在设备上修改启动器源。|
+|microsoftLauncherFeedAllowUserModification|布尔|指示用户是否可以在设备上修改启动器源。|
 |microsoftLauncherDockPresenceConfiguration|[microsoftLauncherDockPresence](../resources/intune-deviceconfig-microsoftlauncherdockpresence.md)|指示是否要配置设备扩展坞。 可能的值是：`notConfigured`、`show`、`hide`、`disabled`。|
 |microsoftLauncherDockPresenceAllowUserModification|Boolean|指示用户是否可以在设备上修改设备扩展坞配置。|
 |microsoftLauncherSearchBarPlacementConfiguration|[microsoftLauncherSearchBarPlacement](../resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md)|指示设备上搜索栏放置的配置。 可取值为：`notConfigured`、`top`、`bottom`、`hide`。|
 |enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|指示要配置的注册配置文件。 可取值为：`notConfigured`、`dedicatedDevice`、`fullyManaged`。|
 |dataRoamingBlocked|Boolean|指示是否阻止用户进行数据漫游。|
 |dateTimeConfigurationBlocked|布尔|指示是否阻止用户手动更改设备上的日期或时间|
-|factoryResetDeviceAdministratorEmails|字符串集合|在设备恢复出厂设置后进行身份验证所需的 Google 帐户电子邮件列表，才能进行设置。|
+|factoryResetDeviceAdministratorEmails|String collection|在设备恢复出厂设置后进行身份验证所需的 Google 帐户电子邮件列表，才能进行设置。|
 |factoryResetBlocked|Boolean|指示设置中的恢复出厂设置选项是否已禁用。|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|直接使用主机、端口和排除的主机设置代理。|
 |googleAccountsBlocked|Boolean|指示是否将阻止 Google 帐户。|
@@ -91,40 +91,40 @@ ms.locfileid: "61347709"
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|设备在展台模式下时将显示的托管应用列表。 该集合最多可包含 500 个元素。|
 |kioskModeWallpaperUrl|String|设备在展台模式下时用于墙纸的可公开访问图像的 URL。|
 |kioskModeExitCode|String|退出代码，以允许用户在设备进入展台模式时从展台模式下进行转义。|
-|kioskModeVirtualHomeButtonEnabled|布尔|设备在展台模式下时是否显示虚拟主页按钮。|
+|kioskModeVirtualHomeButtonEnabled|Boolean|设备在展台模式下时是否显示虚拟主页按钮。|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|指示虚拟主页按钮是向上轻扫"开始"按钮还是浮动"主页"按钮。 可取值为：`notConfigured`、`swipeUp`、`floating`。|
-|kioskModeBluetoothConfigurationEnabled|Boolean|是否允许用户在展台模式下蓝牙自定义设置。|
-|kioskModeWiFiConfigurationEnabled|布尔|是否允许用户在展台模式下Wi-Fi自定义设置。|
+|kioskModeBluetoothConfigurationEnabled|布尔|是否允许用户在展台模式下配置蓝牙设置。|
+|kioskModeWiFiConfigurationEnabled|布尔|是否允许用户在展台模式下配置Wi-Fi设置。|
 |kioskModeFlashlightConfigurationEnabled|布尔|是否允许用户在展台模式下使用网亭。|
-|kioskModeMediaVolumeConfigurationEnabled|Boolean|是否允许用户在展台模式下更改媒体卷。|
+|kioskModeMediaVolumeConfigurationEnabled|布尔|是否允许用户在展台模式下更改媒体卷。|
 |kioskModeShowDeviceInfo|Boolean|是否允许用户访问基本设备信息。|
 |kioskModeManagedSettingsEntryDisabled|Boolean|是否以展台模式设置托管主屏幕上显示托管应用入口点。|
 |kioskModeDebugMenuEasyAccessEnabled|Boolean|是否允许用户在展台模式下轻松访问调试菜单。|
-|kioskModeShowAppNotificationBadge|布尔|是否在展台模式下显示应用程序通知锁屏提醒。|
+|kioskModeShowAppNotificationBadge|Boolean|是否在展台模式下显示应用程序通知锁屏提醒。|
 |kioskModeScreenOrientation|[androidDeviceOwnerKioskModeScreenOrientation](../resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)|展台模式下托管主屏幕的屏幕方向配置。 可能的值是：`notConfigured`、`portrait`、`landscape`、`autoRotate`。|
 |kioskModeIconSize|[androidDeviceOwnerKioskModeIconSize](../resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)|展台模式下托管主屏幕的图标大小配置。 可取值为：`notConfigured`、`smallest`、`small`、`regular`、`large`、`largest`。|
 |kioskModeFolderIcon|[androidDeviceOwnerKioskModeFolderIcon](../resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)|展台模式下托管主屏幕的文件夹图标配置。 可取值为：`notConfigured`、`darkSquare`、`darkCircle`、`lightSquare`、`lightCircle`。|
 |kioskModeWifiAllowedSsids|String collection|用户可以在展台模式下配置的受限 WIFI SS ID 集。 该集合最多可包含 500 个元素。|
-|kioskModeAppOrderEnabled|布尔|是否在展台模式下启用应用排序。|
-|kioskModeAppsInFolderOrderedByName|布尔|是否在展台模式下对文件夹中的应用程序进行字母顺序排序。|
+|kioskModeAppOrderEnabled|Boolean|是否在展台模式下启用应用排序。|
+|kioskModeAppsInFolderOrderedByName|Boolean|是否在展台模式下对文件夹中的应用程序进行字母顺序排序。|
 |kioskModeGridHeight|Int32|在展台模式下启用应用排序的托管主屏幕网格的行数。 有效值为 1 到 9999999|
 |kioskModeGridWidth|Int32|在展台模式下启用应用排序的托管主屏幕网格的列数。 有效值为 1 到 9999999|
-|kioskModeLockHomeScreen|布尔|是否在展台模式下向最终用户锁定主屏幕。|
+|kioskModeLockHomeScreen|Boolean|是否在展台模式下向最终用户锁定主屏幕。|
 |kioskModeManagedFolders|[androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md) 集合|展台模式下设备的托管文件夹列表。 该集合最多可包含 500 个元素。|
 |kioskModeAppPositions|[androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md) 集合|展台模式托管主屏幕上的项目排序。 该集合最多可包含 500 个元素。|
-|kioskModeManagedHomeScreenAutoSignout|布尔|托管主屏幕处于非活动状态后是否自动注销 M分屏和共享设备模式应用程序。|
+|kioskModeManagedHomeScreenAutoSignout|Boolean|托管主屏幕处于非活动状态后是否自动注销 M分屏和共享设备模式应用程序。|
 |kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds|Int32|在用户自动将其从托管主屏幕中退出之前向用户发出通知的秒数。 有效值为 0 到 9999999|
 |kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds|Int32|在自动将用户从托管主屏幕中退出之前，设备处于非活动状态的秒数。 有效值为 0 到 9999999|
 |kioskModeManagedHomeScreenPinComplexity|[kioskModeManagedHomeScreenPinComplexity](../resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)|托管主屏幕登录会话的 PIN 的复杂性。 可取值为：`notConfigured`、`simple`、`complex`。|
-|kioskModeManagedHomeScreenPinRequired|Boolean|是否要求用户为托管主屏幕的登录会话设置 PIN。|
+|kioskModeManagedHomeScreenPinRequired|布尔|是否要求用户为托管主屏幕的登录会话设置 PIN。|
 |kioskModeManagedHomeScreenPinRequiredToResume|布尔|如果屏幕保护程序已出现托管主屏幕，是否要求用户输入会话 PIN。|
 |kioskModeManagedHomeScreenSignInBackground|String|托管主屏幕的登录屏幕的自定义 URL 背景。|
 |kioskModeManagedHomeScreenSignInBrandingLogo|String|托管主屏幕的登录屏幕和会话固定页的自定义 URL 品牌徽标。|
 |kioskModeManagedHomeScreenSignInEnabled|Boolean|是否显示托管主屏幕的登录屏幕。|
-|microphoneForceMute|Boolean|指示是否阻止取消设备上麦克风的静音。|
-|networkEscapeHatchAllowed|Boolean|指示设备是否允许在启动时连接到临时网络连接。|
+|microphoneForceMute|布尔|指示是否阻止取消设备上麦克风的静音。|
+|networkEscapeHatchAllowed|布尔|指示设备是否允许在启动时连接到临时网络连接。|
 |nfcBlockOutgoingBeam|布尔|指示是否阻止 NFC 传出光线。|
-|passwordBlockKeyguard|布尔|指示是否禁用了键保护。|
+|passwordBlockKeyguard|Boolean|指示是否禁用了键保护。|
 |passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) 集合|要阻止的设备键保护功能列表。 该集合最多可包含 7 个元素。|
 |passwordExpirationDays|Int32|指示密码过期前可以设置密码的时间，并且需要新密码。 有效值为 1 至 365。|
 |passwordMinimumLength|Int32|指示设备上所需的密码的最小长度。 有效值为 4 至 16|
@@ -142,25 +142,26 @@ ms.locfileid: "61347709"
 |screenCaptureBlocked|Boolean|指示是否禁用屏幕截图功能。|
 |securityDeveloperSettingsEnabled|Boolean|指示是否允许用户访问开发人员设置，如开发人员选项和设备上的安全启动。|
 |securityRequireVerifyApps|Boolean|指示是否需要验证应用。|
-|statusBarBlocked|布尔|指示是否禁用状态栏，包括通知、快速设置和其他屏幕覆盖。|
+|statusBarBlocked|Boolean|指示是否禁用状态栏，包括通知、快速设置和其他屏幕覆盖。|
 |stayOnModes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md) 集合|设备屏幕将保持打开状态的模式列表。 此集合最多可包含 4 个元素。|
 |storageAllowUsb|Boolean|指示是否允许 USB 大容量存储。|
-|storageBlockExternalMedia|布尔|指示是否阻止外部媒体。|
-|storageBlockUsbFileTransfer|布尔|指示是否阻止 USB 文件传输。|
+|storageBlockExternalMedia|Boolean|指示是否阻止外部媒体。|
+|storageBlockUsbFileTransfer|Boolean|指示是否阻止 USB 文件传输。|
+|systemUpdateFreezePeriods|[androidDeviceOwnerSystemUpdateFreezePeriod](../resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md) 集合|指示延迟系统更新的每年重复时间段。 该集合最多可包含 500 个元素。|
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|指示系统更新窗口在午夜后启动的分钟数。 有效值为 0 到 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|指示系统更新窗口在午夜后结束的分钟数。 有效值为 0 到 1440|
-|systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|系统更新配置的类型。 可取值为：`deviceDefault`、`postpone`、`windowed`、`automatic`。|
-|systemWindowsBlocked|布尔|是否阻止 Android 系统提示窗口，如 Toast、手机活动和系统警报。|
-|usersBlockAdd|Boolean|指示是否禁用添加用户和配置文件。|
-|usersBlockRemove|Boolean|指示是否禁用从设备中删除其他用户。|
+|systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|系统更新配置的类型。 可能的值是：`deviceDefault`、`postpone`、`windowed`、`automatic`。|
+|systemWindowsBlocked|Boolean|是否阻止 Android 系统提示窗口，如 Toast、手机活动和系统警报。|
+|usersBlockAdd|布尔|指示是否禁用添加用户和配置文件。|
+|usersBlockRemove|布尔|指示是否禁用从设备中删除其他用户。|
 |volumeBlockAdjustment|Boolean|指示是否禁用调整主卷。|
-|vpnAlwaysOnLockdownMode|布尔|如果指定了始终启用 VPN 包的名称，是否在断开 VPN 连接时锁定网络流量。|
+|vpnAlwaysOnLockdownMode|Boolean|如果指定了始终启用 VPN 包的名称，是否在断开 VPN 连接时锁定网络流量。|
 |vpnAlwaysOnPackageIdentifier|String|将处理始终打开 VPN 连接的应用的 Android 应用包名称。|
-|wifiBlockEditConfigurations|Boolean|指示是否阻止用户编辑 wifi 连接设置。|
+|wifiBlockEditConfigurations|布尔|指示是否阻止用户编辑 wifi 连接设置。|
 |wifiBlockEditPolicyDefinedConfigurations|布尔|指示是否阻止用户仅编辑策略定义的网络。|
 |personalProfileAppsAllowInstallFromUnknownSources|布尔|指示用户是否可以在个人配置文件上安装来自未知源的应用。|
-|personalProfileCameraBlocked|布尔|指示是否禁止在个人配置文件上使用相机。|
-|personalProfileScreenCaptureBlocked|布尔|指示是否禁用在个人配置文件上拍摄屏幕截图的功能。|
+|personalProfileCameraBlocked|Boolean|指示是否禁止在个人配置文件上使用相机。|
+|personalProfileScreenCaptureBlocked|Boolean|指示是否禁用在个人配置文件上拍摄屏幕截图的功能。|
 |personalProfilePlayStoreMode|[personalProfilePersonalPlayStoreMode](../resources/intune-deviceconfig-personalprofilepersonalplaystoremode.md)|与 PersonalProfilePersonalApplications 一起用于控制如何允许或阻止个人配置文件中的应用程序。 可取值为：`notConfigured`、`blockedApps`、`allowedApps`。|
 |personalProfilePersonalApplications|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|应用于个人配置文件中的应用程序的策略。 该集合最多可包含 500 个元素。|
 |workProfilePasswordExpirationDays|Int32|指示工作配置文件密码在过期之前可以设置的天数，并且需要新密码。 有效值为 1 至 365。|
@@ -377,6 +378,15 @@ ms.locfileid: "61347709"
   "storageAllowUsb": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
+  "systemUpdateFreezePeriods": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+      "startMonth": 1024,
+      "startDay": 1024,
+      "endMonth": 1024,
+      "endDay": 1024
+    }
+  ],
   "systemUpdateWindowStartMinutesAfterMidnight": 1024,
   "systemUpdateWindowEndMinutesAfterMidnight": 1024,
   "systemUpdateInstallType": "String",

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82bbe8efc135a116cb36b6afabadf08a401b1b0f
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 401bd4cf9f32cf1eadffb236c963777868462e32
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343327"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711786"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>获取 macOSGeneralDeviceConfiguration
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5436
+Content-Length: 5483
 
 {
   "value": {
@@ -211,7 +211,8 @@ Content-Length: 5436
     "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
     "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
     "touchIdTimeoutInHours": 5,
-    "iCloudPrivateRelayBlocked": true
+    "iCloudPrivateRelayBlocked": true,
+    "iCloudDesktopAndDocumentsBlocked": true
   }
 }
 ```
