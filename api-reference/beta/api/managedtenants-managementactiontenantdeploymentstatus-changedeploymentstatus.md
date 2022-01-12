@@ -1,16 +1,16 @@
 ---
 title: managementActionTenantDeploymentStatus： changeDeploymentStatus
 description: 更改管理操作租户级别的部署状态。 此信息用于提供对特定状态中的管理操作的见解。 例如，可能有一个计划对管理员应用需要多重身份验证，因此最好将状态更改为计划状态以反映相应的状态。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 9be7954a2f1446477470fdf7a89f1e30dfa1e7c5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3236033f099d02adb0a59dbd9d0ba565ee74eb74
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022051"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61790879"
 ---
 # <a name="managementactiontenantdeploymentstatus-changedeploymentstatus"></a>managementActionTenantDeploymentStatus： changeDeploymentStatus
 命名空间：microsoft.graph.managedTenants
@@ -55,7 +55,7 @@ POST /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuse
 |tenantId|String|托管Azure Active Directory租户的租户[标识符](../resources/managedtenants-tenant.md)。|
 |managementActionId|String|管理操作 [的标识符](../resources/managedtenants-managementaction.md)。|
 |managementTemplateId|String|管理模板 [的标识符](../resources/managedtenants-managementtemplate.md)。|
-|status|String|管理操作租户 [部署的新](../resources/managedtenants-managementaction.md) 状态。|
+|状态|String|管理操作租户 [部署的新](../resources/managedtenants-managementaction.md) 状态。|
 
 ## <a name="response"></a>响应
 
@@ -99,7 +99,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/managementactiontenantdeploymentstatus-changedeploymentstatus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/managementactiontenantdeploymentstatus-changedeploymentstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

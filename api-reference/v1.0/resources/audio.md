@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.prod: microsoft-teams
 description: Audio 资源将与音频相关的属性分组到一个单一结构。
 doc_type: resourcePageType
-ms.openlocfilehash: 4bdf565bbb0ec3aba9b7a6571fc13844cb77d439
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 54423143955f8e9626ec7097a3ea4c0c7e5867c8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067533"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61789969"
 ---
 # <a name="audio-facet"></a>Audio Facet
 
@@ -20,6 +20,8 @@ ms.locfileid: "59067533"
 **Audio** 资源将与音频相关的属性分组到一个单一结构。
 
 如果 [**DriveItem**](driveitem.md) 具有一个非 null **音频** facet，则该项表示一个音频文件。通过从文件中提取元数据来填充 **音频** 资源的属性。 
+
+**音频** 资源仅在个人OneDrive受支持。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
