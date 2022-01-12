@@ -1,16 +1,16 @@
 ---
 title: 获取 conditionalAccessPolicyCoverage
 description: 读取 conditionalAccessPolicyCoverage 对象的属性和关系。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: cd06e544fd4439569a8e04a508b5dc123664df27
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 11aefb89cdc4b9ad38462a2462cde7abc813b1b7
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002930"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862208"
 ---
 # <a name="get-conditionalaccesspolicycoverage"></a>获取 conditionalAccessPolicyCoverage
 命名空间：microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ GET /tenantRelationships/managedTenants/conditionalAccessPolicyCoverages/{condit
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应，包括 `$apply` `$count` `$filter` `$orderBy` `$select` 、、 `$skip` 和 `$top` 。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/conditio
 [!INCLUDE [sample-code](../includes/snippets/java/get-conditionalaccesspolicycoverage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-conditionalaccesspolicycoverage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,16 +1,16 @@
 ---
 title: cloudPcOverview 资源类型
 description: 表示给定托管租户的云电脑概述。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: a527dea18db31c8d7598a5b04ba538fa9a5af1ab
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 1eb4349c16a529c1ae3a8a9f57c221dd129ba5cc
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402070"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61795555"
 ---
 # <a name="cloudpcoverview-resource-type"></a>cloudPcOverview 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "53402070"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|云电脑概述的唯一标识符。 必填。 只读。|
+|id|String|云电脑概述的唯一标识符。 必需。 只读。|
 |lastRefreshedDateTime|DateTimeOffset|实体上次在多租户管理平台中更新的日期和时间。 可选。 只读。|
 |numberOfCloudPcConnectionStatusFailed|Int32|状态为 的云电脑连接数 `failed` 。 可选。 只读。|
 |numberOfCloudPcConnectionStatusPassed|Int32|状态为 的云电脑连接数 `passed` 。 可选。 只读。|

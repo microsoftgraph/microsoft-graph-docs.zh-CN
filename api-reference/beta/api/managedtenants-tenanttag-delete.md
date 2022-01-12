@@ -1,16 +1,16 @@
 ---
 title: 删除 tenantTag
 description: 删除 tenantTag 对象。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 347d994e902fbe20a7e8f5595c3de3e1eb642f64
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8da414f46b8116c3f7f5daef30ddb66dbc1993c8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019786"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792211"
 ---
 # <a name="delete-tenanttag"></a>删除 tenantTag
 命名空间：microsoft.graph.managedTenants
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenan
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tenanttag-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-tenanttag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

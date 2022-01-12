@@ -1,16 +1,16 @@
 ---
 title: deploymentState 资源类型
 description: 描述和控制部署的当前状态。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 80b691c6404bac3e98c4c5c6acb9596b5d4c8821
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: e900e3ec23e50a33fabb2d9bb55cf5bfab91a3f3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890827"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61798492"
 ---
 # <a name="deploymentstate-resource-type"></a>deploymentState 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "60890827"
 描述和控制部署的当前状态。
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |原因|[microsoft.graph.windowsUpdates.deploymentStateReason](../resources/windowsupdates-deploymentstatereason.md) 集合|指定部署具有其状态值的原因。 只读。|
 |requestedValue|microsoft.graph.windowsUpdates.requestedDeploymentStateValue|指定部署的请求状态。 支持 **requestedDeploymentStateValue 值的子集**。 可取值为：`none`、`paused`、`unknownFutureValue`。|

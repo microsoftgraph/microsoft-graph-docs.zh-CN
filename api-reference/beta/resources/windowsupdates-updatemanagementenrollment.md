@@ -1,16 +1,16 @@
 ---
 title: updateManagementEnrollment 资源类型
 description: 表示通过特定更新类别的服务注册到管理中。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 8d780894e90a1f6eec748a9f62f486b39d3c6cfb
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 992cfc8ebf53db3b1f3aad7c3c997d02344a503b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890183"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861581"
 ---
 # <a name="updatemanagementenrollment-resource-type"></a>updateManagementEnrollment 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "60890183"
 继承自 [updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md)。
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|服务管理的更新类别。 支持 **updateCategory** 值的子集。 可取值为：`feature`、`unknownFutureValue`。|
 

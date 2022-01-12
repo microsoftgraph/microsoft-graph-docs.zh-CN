@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 笔记
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -489,7 +489,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -827,6 +827,15 @@ items:
                 href: api/directory-deleteditems-delete.md
               - name: 还原已删除的应用程序
                 href: api/directory-deleteditems-restore.md
+              - name: 应用程序模板
+                href: resources/applicationtemplate.md
+                items:
+                  - name: 列表
+                    href: api/applicationtemplate-list.md
+                  - name: 获取
+                    href: api/applicationtemplate-get.md
+                  - name: 实例化
+                    href: api/applicationtemplate-instantiate.md
               - name: 证书和密码
                 items:
                   - name: 添加密码
@@ -876,15 +885,12 @@ items:
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenlifetimepolicies.md
-              - name: 应用程序模板
-                href: resources/applicationtemplate.md
+              - name: 已验证发布者
                 items:
-                  - name: 列表
-                    href: api/applicationtemplate-list.md
-                  - name: 获取
-                    href: api/applicationtemplate-get.md
-                  - name: 实例化
-                    href: api/applicationtemplate-instantiate.md
+                  - name: Set
+                    href: api/application-setverifiedpublisher.md
+                  - name: Unset
+                    href: api/application-unsetverifiedpublisher.md
           - name: 服务主体
             href: resources/serviceprincipal.md
             items:
@@ -5888,7 +5894,7 @@ items:
                 items:
                   - name: 列表预配
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365使用情况报告
+          - name: Microsoft 365使用率报告
             items:
               - name: 概述
                 href: resources/report.md

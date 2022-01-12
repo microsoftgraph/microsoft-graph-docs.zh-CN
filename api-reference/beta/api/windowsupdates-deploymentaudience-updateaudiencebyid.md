@@ -1,16 +1,16 @@
 ---
 title: deploymentAudience：updateAudienceById
 description: 使用相同类型的 updatableAsset 资源更新 deploymentAudience 的成员和排除集合。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: b2aaa550769a96d5f21cabe5f57b28578ff13736
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 523e2d0585a3f3716cc5daf182a728340214f307
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029945"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862401"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience：updateAudienceById
 
@@ -29,7 +29,7 @@ ms.locfileid: "61029945"
 > [!NOTE]
 > 此 API 具有 [与](/Graph/known-issues#accessing-and-updating-deployment-audiences) 通过 Intune 创建的部署相关的已知问题。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -120,7 +120,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/deploymentaudience-updateaudiencebyid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/deploymentaudience-updateaudiencebyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessPolicyCoverage 资源类型
 description: 表示有关定义Azure Active Directory托管租户的资源访问规则的任何策略的信息。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: a4bc4f336692166ff032727a6fb13222edd9d7d9
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 686e587378b0dd921dedac4aac80cacfeafb885f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402069"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61798751"
 ---
 # <a name="conditionalaccesspolicycoverage-resource-type"></a>conditionalAccessPolicyCoverage 资源类型
 
@@ -30,10 +30,10 @@ ms.locfileid: "53402069"
 |属性|类型|说明|
 |:---|:---|:---|
 |conditionalAccessPolicyState|String|条件访问策略的状态。 可取值为：`enabled`、`disabled`、`enabledForReportingButNotEnforced`。 此为必需属性。 只读。|
-|id|String|此实体的唯一标识符。 必填。 只读。|
-|latestPolicyModifiedDateTime|DateTimeOffset|上次修改条件访问策略的日期和时间。 必填。 只读。|
-|requiresDeviceCompliance|布尔|指示条件访问策略是否需要设备符合性的标志。 必填。 只读。|
-|tenantDisplayName|String|托管显示名称租户的租户。 必填。 只读。|
+|id|String|此实体的唯一标识符。 必需。 只读。|
+|latestPolicyModifiedDateTime|DateTimeOffset|上次修改条件访问策略的日期和时间。 必需。 只读。|
+|requiresDeviceCompliance|布尔|指示条件访问策略是否需要设备符合性的标志。 必需。 只读。|
+|tenantDisplayName|String|托管显示名称租户的租户。 必需。 只读。|
 
 ## <a name="relationships"></a>关系
 无。

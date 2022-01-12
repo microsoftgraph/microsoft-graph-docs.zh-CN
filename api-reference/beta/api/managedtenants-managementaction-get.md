@@ -1,16 +1,16 @@
 ---
 title: 获取 managementAction
 description: 读取 managementAction 对象的属性和关系。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 2fad5be2f4953c1fd5dfc40c3517cb917ef02812
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 75a1ffdb90bdc3e6eede540aa30e84813d5bf6ac
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019814"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61817295"
 ---
 # <a name="get-managementaction"></a>获取 managementAction
 命名空间：microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ GET /tenantRelationships/managedTenants/managementActions/{managementActionId}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应，包括 `$apply` `$count` `$filter` `$orderBy` `$select` 、、 `$skip` 和 `$top` 。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 [!INCLUDE [sample-code](../includes/snippets/java/get-managementaction-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-managementaction-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

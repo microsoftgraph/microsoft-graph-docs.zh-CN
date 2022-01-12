@@ -1,16 +1,16 @@
 ---
 title: 使用 Windows Update for Business 部署服务部署功能更新
 description: 使用 Windows Update for Business 部署服务，可以将 Windows 功能更新部署到 Azure AD 租户中的设备。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 11dbc40cb405b7b673fa02ba4845ced6e57c9986
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 872b0e0a4b8acc0d31821be7a21283c7dc2e70ca
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696040"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61859901"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务部署功能更新
 
@@ -21,7 +21,7 @@ ms.locfileid: "60696040"
 只要设备仍在功能更新管理中注册，设备就不会从 Windows Update 接收任何其他功能更新，除非使用部署服务显式部署。
 
 > [!IMPORTANT]
-> 通过使用适用于 Business 的 Windows Windows 11 (更新部署服务，将部署的版本参数设置为"Windows 11，版本 21H2") ，即表示你同意在将此操作系统应用于设备 (1) 通过批量许可购买适用的 Windows 许可证，或者你为 (2) uthorized to bind your organization and arehalf on itshalf accepting the relevant Microsoft Software License Terms to be found here： [Microsoft Software License Terms](https://www.microsoft.com/Useterms).
+> 通过使用 Windows Update for Business 部署服务将设备升级到 Windows 11 (，将部署的版本参数设置为"Windows 11，版本 21H2") ，即表示你同意在将此操作系统应用于设备 (1) 适用 Windows 许可证通过批量许可购买，或 (2) 你有权绑定组织并代表其接受相关 Microsoft 软件许可条款，可在此处找到[：Microsoft 软件许可条款](https://www.microsoft.com/Useterms)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -32,7 +32,7 @@ ms.locfileid: "60696040"
 
 你可以查询部署服务目录，获取可以部署中的内容部署到设备的更新列表。
 
-下面是一个查询部署服务Windows 10部署功能更新的示例。
+下面是查询部署服务可部署的所有Windows 10功能更新的示例。
 
 ### <a name="request"></a>请求
 
@@ -160,7 +160,7 @@ Content-Type: application/json
 
 创建部署后，你可以将设备分配给部署 [访问群体](/graph/api/resources/windowsupdates-deploymentaudience)。 成功更新部署访问群体后，Windows更新开始根据部署设置向相关设备提供更新。
 
-在将设备添加到部署访问群体的成员或排除集合时 (会自动向服务注册设备 (也就是说，如果 [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) 对象) 。
+将设备添加到部署访问群体 (的成员或排除集合时，会自动向服务注册设备，即 [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) 对象在) 。
 
 以下示例演示如何将Azure AD添加为部署访问群体的成员。
 
@@ -200,5 +200,5 @@ HTTP/1.1 202 Accepted
 
 ## <a name="after-a-deployment"></a>部署后
 
-在最初向部署访问群体分配的所有设备都提供更新后，由于设备连接等因素，并非所有设备都启动或完成了更新。 只要部署仍然存在，Windows只要重新连接，Update 就会继续为分配的设备提供更新。
+最初向部署访问群体分配的所有设备都提供更新后，由于设备连接等因素，并非所有设备都启动或完成了更新。 只要部署仍然存在，Windows只要重新连接，更新就会继续为分配的设备提供更新。
 

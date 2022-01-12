@@ -1,16 +1,16 @@
 ---
 title: 列出 managementIntents
 description: 获取 managementIntent 对象及其属性的列表。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: eb613d0adc172cfbf0c748d7ababb356d0e6c943
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d99ebd0c137a8825098f295cdc25319dfde769e3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034221"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61824062"
 ---
 # <a name="list-managementintents"></a>列出 managementIntents
 命名空间：microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ GET /tenantRelationships/managedTenants/managementIntents
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应，包括 `$apply` `$count` `$filter` `$orderBy` `$select` 、、 `$skip` 和 `$top` 。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 [!INCLUDE [sample-code](../includes/snippets/java/list-managementintent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-managementintent-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

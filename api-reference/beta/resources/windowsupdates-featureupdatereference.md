@@ -1,16 +1,16 @@
 ---
 title: featureUpdateReference 资源类型
 description: 表示Windows 10更新内容。
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 69eda05a94982429035999bd914c6f0c9847fa67
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 21fcec33dd0072aed12205f44a24eac7c4ba7569
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067331"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61836662"
 ---
 # <a name="featureupdatereference-resource-type"></a>featureUpdateReference 资源类型
 

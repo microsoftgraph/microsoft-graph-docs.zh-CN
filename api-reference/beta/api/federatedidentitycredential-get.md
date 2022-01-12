@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 15eab45b2b06d527a40c5b2eaf4bb17f9ec9d9f2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eff901289ba87b1f064458e5314b666e97130c8e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60978301"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61803063"
 ---
 # <a name="get-federatedidentitycredential"></a>Get federatedIdentityCredential
 命名空间：microsoft.graph
@@ -36,13 +36,15 @@ ms.locfileid: "60978301"
 }
 -->
 ``` http
-GET /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
+GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -83,7 +85,7 @@ GET https://graph.microsoft.com/beta/applications/acd7c908-1c4d-4d48-93ee-ff3834
 [!INCLUDE [sample-code](../includes/snippets/java/get-federatedidentitycredential-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-federatedidentitycredential-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

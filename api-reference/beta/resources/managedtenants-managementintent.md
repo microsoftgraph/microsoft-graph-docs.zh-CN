@@ -1,16 +1,16 @@
 ---
 title: managementIntent 资源类型
 description: 表示基线的元数据以及包含哪些管理模板。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 7648da23e5d49a9bd2910c2ccbde7e676a1d7cd0
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: c3e4954e34768b711f621efe98b00eda5baae1d9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402281"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791929"
 ---
 # <a name="managementintent-resource-type"></a>managementIntent 资源类型
 
@@ -29,9 +29,9 @@ ms.locfileid: "53402281"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|管理显示名称定义。 可选。 只读。|
-|id|String|管理意图的唯一标识符。 必填。 只读。|
-|isGlobal|布尔|指示管理意图是否全局的标志。 必填。 只读。|
+|displayName|String|管理显示名称目的的一个方法。 可选。 只读。|
+|id|String|管理意图的唯一标识符。 必需。 只读。|
+|isGlobal|布尔|指示管理意图是否全局的标志。 必需。 只读。|
 |managementTemplates|[microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md) 集合|与管理意图关联的管理模板的集合。 可选。 只读。|
 
 ## <a name="relationships"></a>关系

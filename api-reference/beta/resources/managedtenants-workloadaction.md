@@ -1,16 +1,16 @@
 ---
 title: workloadAction 资源类型
 description: 表示将为特定工作负荷执行的操作。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: e6dbbe1458aa6dba37a26af70ee0e64b92a52cf4
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: fe63c772abfffb85c12d7f753c03bb6a1f168ad4
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402088"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792013"
 ---
 # <a name="workloadaction-resource-type"></a>workloadAction 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "53402088"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|actionId|String|工作负荷操作的唯一标识符。 必填。 只读。|
+|actionId|String|工作负荷操作的唯一标识符。 必需。 只读。|
 |“类别”|workloadActionCategory|工作负荷操作类别。 可取值为：`automated`、`manual`、`unknownFutureValue`。 可选。 只读。|
 |说明|String|工作负荷操作的说明。 可选。 只读。|
 |displayName|String|工作负荷显示名称的项。 可选。 只读。|

@@ -1,16 +1,16 @@
 ---
 title: deploymentAudience 资源类型
 description: 部署可应用到的 updatableAsset 资源集。
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 98d295183f69012da6ea9fc5803bc440465854c8
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: ab436c0fa9f726528b190fa6fe2f638890447ce4
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067312"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863362"
 ---
 # <a name="deploymentaudience-resource-type"></a>deploymentAudience 资源类型
 
@@ -27,8 +27,8 @@ ms.locfileid: "52067312"
 |:---|:---|:---|
 |[列出成员](../api/windowsupdates-deploymentaudience-list-members.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|列出 [deploymentAudience 的成员](../resources/windowsupdates-deploymentaudience.md)。|
 |[列表排除项](../api/windowsupdates-deploymentaudience-list-exclusions.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|列出 [deploymentAudience 的排除项](../resources/windowsupdates-deploymentaudience.md)。|
-|[更新成员和排除项](../api/windowsupdates-deploymentaudience-updateaudience.md)|无|添加或删除成员和排除项。|
-|[按 ID 更新 (排除项) ](../api/windowsupdates-deploymentaudience-updateaudiencebyid.md)|无|添加或删除相同类型的成员和排除项。|
+|[更新成员和排除项](../api/windowsupdates-deploymentaudience-updateaudience.md)|None|添加或删除成员和排除项。|
+|[按 ID 更新 (排除) ](../api/windowsupdates-deploymentaudience-updateaudiencebyid.md)|None|添加或删除相同类型的成员和排除项。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

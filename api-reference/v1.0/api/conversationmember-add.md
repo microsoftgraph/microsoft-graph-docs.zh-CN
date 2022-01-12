@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: adda61aabc9e903bb2883ef393bbe1f02dc362be
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2d85a4370f039d84124a00629dbed2d413639842
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031176"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792111"
 ---
 # <a name="add-conversationmember"></a>添加 conversationMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "61031176"
 
 将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -57,7 +57,7 @@ POST /teams/{id}/channels/{id}/members
 
 ### <a name="request"></a>请求
 
-下面是一个请求示例。
+请求示例如下所示。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -92,7 +92,7 @@ content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversation-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-conversation-member-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -101,7 +101,7 @@ content-length: 26
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

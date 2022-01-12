@@ -1,16 +1,16 @@
 ---
 title: 获取部署
 description: 读取部署对象的属性和关系。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: a76de7d1855c611e3333e17c742271693b73ffd9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b826bda91d350282c78b306007b5d6d3f0e9a5a1
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016594"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61845345"
 ---
 # <a name="get-deployment"></a>获取部署
 命名空间：microsoft.graph.windowsUpdates
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-
 [!INCLUDE [sample-code](../includes/snippets/java/get-deployment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-deployment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

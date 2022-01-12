@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e7d82ac5ab0710b7b77a149a01b164a76d5f64bd
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 01c37923f3ca63b7dd7ccf6803bb2bc696ef4546
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651335"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792139"
 ---
 # <a name="accesspackageresource-resource-type"></a>accessPackageResource 资源类型
 
@@ -31,15 +31,16 @@ ms.locfileid: "61651335"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|包含资源的环境信息。 这可以使用批注或环境的 `@odata.bind` *originId 进行设置*。|
+|attributes|[accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md) 集合| 包含资源的属性信息。
 |addedBy|String|只读。|
 |addedOn|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
-|说明|String|资源的说明。|
+|description|String|资源的说明。|
 |displayName|String|资源的显示名称，如应用程序名称、组名称或网站名称。|
 |id|String| 只读。|
-|isPendingOnboarding|Boolean|如此 如果资源尚不可用于工作分配。|
+|isPendingOnboarding|布尔|如此 如果资源尚不可用于工作分配。|
 |originId|String|源系统中资源的唯一标识符。 对于组Azure AD，这是组的标识符。 |
 |originSystem|String|源系统中资源的类型，如 `SharePointOnline` 或 `AadApplication` `AadGroup` 。|
-|resourceType|String|资源的类型，例如，它是已Azure AD的应用程序，还是 `Application` `SharePoint Online Site` SharePoint Online 网站。|
+|resourceType|String|资源的类型，例如，它是已连接Azure AD应用程序，还是 SharePoint `Application` `SharePoint Online Site` Online 网站。|
 |url|String|资源的唯一资源定位器，例如用于将用户登录应用程序的 URL。|
 
 ## <a name="relationships"></a>关系
@@ -67,6 +68,11 @@ ms.locfileid: "61651335"
 {
   "addedBy": "String",
   "addedOn": "String (timestamp)",
+  "attributes": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageResourceAttribute"
+    }
+   ],
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",

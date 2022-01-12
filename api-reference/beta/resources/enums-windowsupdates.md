@@ -1,16 +1,16 @@
 ---
 title: Microsoft Graph Windows Updates 枚举值
 description: Microsoft Graph Windows Updates 枚举值
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: enumTypes
-ms.openlocfilehash: bd94ad9389160df59f59c24a70b4c1c3eea368e1
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 28a167a17436e30e07b6592329f1c56771bfcba2
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890575"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860437"
 ---
 # <a name="microsoft-graph-windows-updates-enumeration-values"></a>Microsoft Graph Windows Updates 枚举值
 
@@ -18,7 +18,7 @@ ms.locfileid: "60890575"
 
 ### <a name="azureaddeviceregistrationerrorreason-values"></a>azureADDeviceRegistrationErrorReason 值 
 
-|Member|
+|成员|
 |:---|
 |invalidGlobalDeviceId|
 |invalidAzureADDeviceId|
@@ -28,7 +28,7 @@ ms.locfileid: "60890575"
 
 ### <a name="deploymentstatereasonvalue-values"></a>deploymentStateReasonValue 值 
 
-|Member|
+|成员|
 |:---|
 |scheduledByOfferWindow|
 |offeringByRequest|
@@ -39,7 +39,7 @@ ms.locfileid: "60890575"
 
 ### <a name="deploymentstatevalue-values"></a>deploymentStateValue 值 
 
-|Member|
+|成员|
 |:---|
 |scheduled|
 |offering|
@@ -50,7 +50,7 @@ ms.locfileid: "60890575"
 
 ### <a name="equivalentcontentoption-values"></a>equivalentContentOption 值 
 
-|Member|
+|成员|
 |:---|
 |无|
 |latestSecurity|
@@ -58,7 +58,7 @@ ms.locfileid: "60890575"
 
 ### <a name="monitoringaction-values"></a>monitoringAction 值 
 
-|Member|
+|成员|
 |:---|
 |alertError|
 |pauseDeployment|
@@ -66,14 +66,14 @@ ms.locfileid: "60890575"
 
 ### <a name="monitoringsignal-values"></a>monitoringSignal 值 
 
-|Member|
+|成员|
 |:---|
 |rollback|
 |unknownFutureValue|
 
 ### <a name="qualityupdateclassification-values"></a>qualityUpdateClassification 值 
 
-|Member|
+|成员|
 |:---|
 |all|
 |security|
@@ -82,7 +82,7 @@ ms.locfileid: "60890575"
 
 ### <a name="requesteddeploymentstatevalue-values"></a>requestedDeploymentStateValue 值 
 
-|Member|
+|成员|
 |:---|
 |无|
 |paused|
@@ -91,14 +91,14 @@ ms.locfileid: "60890575"
 
 ### <a name="safeguardcategory-values"></a>safeguardCategory 值 
 
-|Member|
+|成员|
 |:---|
 |likelyIssues|
 |unknownFutureValue|
 
 ### <a name="updatecategory-values"></a>updateCategory 值 
 
-|Member|
+|成员|
 |:---|
 |功能|
 |quality|

@@ -1,16 +1,16 @@
 ---
 title: tenantDetailedInformation 资源类型
 description: 表示托管租户的详细信息。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 40aa157b12ccef64b6eb7ab6c92349a3e74745f8
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: d896492c05223fdf4711842340df5032589913d9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402273"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61828843"
 ---
 # <a name="tenantdetailedinformation-resource-type"></a>tenantDetailedInformation 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "53402273"
 |countryName|String|托管租户所在的国家/地区的名称。 可选。 只读。|
 |defaultDomainName|String|托管租户的默认域名。 可选。 只读。|
 |displayName|String|托管显示名称租户的租户。|
-|id|String|此实体的唯一标识符。 必填。 只读。|
+|id|String|此实体的唯一标识符。 必需。 只读。|
 |industryName|String|与托管租户关联的业务行业。 可选。 只读。|
 |region|String|托管租户所在的区域。 可选。 只读。|
 |segmentName|String|与托管租户关联的业务部门。 可选。 只读。|

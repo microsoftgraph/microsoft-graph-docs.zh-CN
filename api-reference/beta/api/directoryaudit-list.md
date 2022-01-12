@@ -1,16 +1,16 @@
 ---
 title: 列出 directoryAudits
-description: 介绍 microsoft Graph API (beta ()  (directoryAudit 资源实体) 。
+description: 介绍 microsoft (API) beta Graph 版本中 directoryAudit (实体) 。
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 4b393275af10eb30bf8090b682451a7da99bf7cb
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: ca443a480875ce269f60ef24f5332ecb86f3442c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322140"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61851392"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -31,7 +31,7 @@ ms.locfileid: "61322140"
 |应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 有 [一个已知](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 此外，应用还必须向 Azure AD [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudits-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudits-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

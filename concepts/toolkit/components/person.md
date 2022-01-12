@@ -3,12 +3,12 @@ title: Microsoft 服务中的人员Graph Toolkit
 description: 人员组件用于通过使用联系人的照片、姓名和/或电子邮件地址来显示此人或联系人。
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 0cb5c1306a9cec54df6ab6a9d3cbd1aa0995a64a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab941533b816d80c490c74e157f3d6aa09760928
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103842"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61859951"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
 
@@ -28,9 +28,9 @@ ms.locfileid: "59103842"
 
 可以使用三个属性来设置人员详细信息。 每个实例仅使用以下属性之一：
 
-* 设置 `user-id` 属性或 `userId` 属性以使用用户的 ID 从 Microsoft Graph获取用户。
+* 设置 `user-id` 属性或 `userId` 属性，以通过使用用户的 ID 从 Microsoft Graph获取用户。
 
-* 设置 `person-query` 属性或 `personQuery` 属性以搜索 microsoft Graph给定人员。 它将选择第一个可用的人员并提取该人员的详细信息。 电子邮件最适用于确保查询正确的人员，但名称也有效。
+* 设置 `person-query` 属性或 `personQuery` 属性以搜索 Microsoft Graph给定人员。 它将选择第一个可用的人员并提取该人员的详细信息。 电子邮件最适用于确保查询正确的人员，但名称也有效。
 
 * 设置 `person-presence` 属性或 `personPresence` 属性以手动向个人头像添加状态锁屏提醒。
 
@@ -48,9 +48,9 @@ ms.locfileid: "59103842"
     }
     ```
 
-  如果未提供图像，将提取一个图像 (（如果) ）。
+  如果未提供图像，将提取一个 (（如果) ）。
 
-* 默认情况下，人员组件将仅请求标准 Microsoft Graph用户属性[集](/graph/api/user-get?&tabs=http#optional-query-parameters)。 为了请求其他属性，请将其声明为 的任何部分 `line(x)Property` 。 
+* 默认情况下，人员组件将仅请求标准 Microsoft Graph属性[集。](/graph/api/user-get?&tabs=http#optional-query-parameters) 为了请求其他属性，请将其声明为 的任何部分 `line(x)Property` 。 
 
 
 ## <a name="properties"></a>属性
@@ -65,12 +65,12 @@ ms.locfileid: "59103842"
 | fallback-details| fallbackDetails| 设置为一个对象，该对象表示在图中找不到用户/人员/联系人时的用户。
 | person-image    | personImage    | 设置要向人员显示的图像。 |
 | person-presence | personPresence | 为人员设置状态。 |
-| fetch-image     | fetchImage     | 将标志设置为根据Graph自动从 Microsoft `personImage` `personDetails` 网站提取。 |
+| fetch-image     | fetchImage     | 将标志设置为 `personImage` 根据Graph自动从 Microsoft 网站 `personDetails` 提取。 |
 | 头像类型     | 头像类型     | 设置为 或 `initials` `photo` 呈现任一显示状态 - 默认为照片。 |
-| view            | view           | 设置为控制呈现人员的方式。 默认值为 `avatar` <br /> `avatar` - 仅显示头像 <br /> `oneline` - 默认情况下显示头像 (`displayName` 一线)  <br /> `twolines` - 显示头像和两行文本 (`displayName` `mail` 默认显示) |
-| line1-property  | line1Property  | 设置要用于第一行文本的 personDetails 的属性。 默认值为 `displayName`。|
-| line2-property  | line2Property  | 设置要用于第二行文本的 personDetails 的属性。 默认值为 `mail`。|
-| line3-property  | line3Property  | 设置要用于第三行文本的 personDetails 的属性。 默认值为 `jobTitle`。|
+| view            | view           | 设置为控制呈现人员的方式。 默认值为 `avatar` <br /> `avatar` - 仅显示头像 <br /> `oneline` - 默认显示头像 (`displayName` 第一)  <br /> `twolines` - 显示头像和两行文本 (`displayName` `mail` 默认显示)  <br /> `threelines` - 显示头像和三行文本 `displayName` `mail` (， `jobTitle` 默认为)  |
+| line1-property  | line1Property  | 设置要用于第一行文本的 personDetails 的属性。 默认值为“`displayName`”。|
+| line2-property  | line2Property  | 设置要用于第二行文本的 personDetails 的属性。 默认值为“`mail`”。|
+| line3-property  | line3Property  | 设置要用于第三行文本的 personDetails 的属性。 默认值为“`jobTitle`”。|
 | show-presence   | showPresence   | 设置用于显示人员状态的标志 - 默认为 `false` 。|
 
 ## <a name="css-custom-properties"></a>CSS 自定义属性
@@ -116,11 +116,11 @@ mgt-person {
 
 从组件中触发以下事件。
 
-Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`line1clicked` | 单击第 1 行时触发 | `person`对象，可以是包含[](/graph/api/resources/user)[](/graph/api/resources/person)Graph URL 的其他属性的用户、人员[](/graph/api/resources/contact) `personImage` 或联系人 | 否 | 否 | 是，除非您覆盖默认模板
-`line2clicked` | 单击第 2 行时触发 | `person`对象，可以是包含[](/graph/api/resources/user)[](/graph/api/resources/person)Graph URL 的其他属性的用户、人员[](/graph/api/resources/contact) `personImage` 或联系人 | 否 | 否 | 是，除非您覆盖默认模板
-`line3clicked` | 单击第 3 行时触发 | `person`对象，可以是包含[](/graph/api/resources/user)[](/graph/api/resources/person)Graph URL 的其他属性的用户、人员[](/graph/api/resources/contact) `personImage` 或联系人 | 否 | 否 | 是，除非您覆盖默认模板
+`line1clicked` | 单击第 1 行时触发 | `person`可以是用户、[](/graph/api/resources/user)[](/graph/api/resources/person)用户Graph具有包含用户照片 URL 的其他[](/graph/api/resources/contact)属性的联系人 `personImage` 的对象 | 否 | 否 | 是，除非您覆盖默认模板
+`line2clicked` | 单击第 2 行时触发 | `person`可以是用户、[](/graph/api/resources/user)[](/graph/api/resources/person)用户Graph具有包含用户照片 URL 的其他[](/graph/api/resources/contact)属性的联系人 `personImage` 的对象 | 否 | 否 | 是，除非您覆盖默认模板
+`line3clicked` | 单击第 3 行时触发 | `person`可以是用户、[](/graph/api/resources/user)[](/graph/api/resources/person)用户Graph具有包含用户照片 URL 的其他[](/graph/api/resources/contact)属性的联系人 `personImage` 的对象 | 否 | 否 | 是，除非您覆盖默认模板
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 

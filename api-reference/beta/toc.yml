@@ -422,7 +422,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置人员见解
+                  - name: 设置见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -517,7 +517,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置人员见解
+              - name: 设置见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -545,7 +545,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言和区域 () '
+          - name: '预览版的首选语言 (区域) '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -889,6 +889,15 @@ items:
                 href: api/directory-deleteditems-delete.md
               - name: 还原已删除的应用程序
                 href: api/directory-deleteditems-restore.md
+              - name: 应用程序模板
+                href: resources/applicationtemplate.md
+                items:
+                  - name: 列表
+                    href: api/applicationtemplate-list.md
+                  - name: 获取
+                    href: api/applicationtemplate-get.md
+                  - name: 实例化
+                    href: api/applicationtemplate-instantiate.md
               - name: 证书和密码
                 items:
                   - name: 添加密码
@@ -955,15 +964,12 @@ items:
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenlifetimepolicies.md
-              - name: 应用程序模板
-                href: resources/applicationtemplate.md
+              - name: 已验证发布者
                 items:
-                  - name: 列出应用程序模板
-                    href: api/applicationtemplate-list.md
-                  - name: 获取应用程序模板
-                    href: api/applicationtemplate-get.md
-                  - name: 实例化应用程序模板
-                    href: api/applicationtemplate-instantiate.md
+                  - name: Set
+                    href: api/application-setverifiedpublisher.md
+                  - name: Unset
+                    href: api/application-unsetverifiedpublisher.md
           - name: 本地发布
             href: resources/onpremisespublishingprofile-root.md
             items:
@@ -11896,7 +11902,7 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                      - name: 'Microsoft Authenticator密码电话已弃 (登录策略) '
+                      - name: 'Microsoft Authenticator已电话密码登录策略 (密码) '
                         href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -12502,7 +12508,7 @@ items:
                       - name: 列出
                         href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
                       - name: 创建
-                        href: api/entitlementmanagement-post-accesspackageassignmentrequests
+                        href: api/entitlementmanagement-post-accesspackageassignmentrequests.md
                       - name: 获取
                         href: api/accesspackageassignmentrequest-get.md
                       - name: 删除

@@ -1,16 +1,16 @@
 ---
 title: 列出 deviceCompliancePolicySettingStateSummary
 description: 获取 deviceCompliancePolicySettingStateSummary 对象及其属性的列表。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: ec117e3f93732e3134f6451c83477eb342a98d39
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 9a1d612e7398e77fde6fd698647a56950c5f6dbf
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441997"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61825221"
 ---
 # <a name="list-devicecompliancepolicysettingstatesummary"></a>列出 deviceCompliancePolicySettingStateSummary
 命名空间：microsoft.graph.managedTenants
@@ -35,7 +35,7 @@ ms.locfileid: "53441997"
 }
 -->
 ``` http
-GET /tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummary
+GET /tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummaries
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -64,7 +64,7 @@ GET /tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummar
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummary
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummaries
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-devicecompliancepolicysettingstatesummary-csharp-snippets.md)]

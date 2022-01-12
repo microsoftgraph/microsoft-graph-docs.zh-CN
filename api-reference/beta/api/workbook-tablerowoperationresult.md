@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageTypes
-ms.openlocfilehash: 5d6fdccb42673e1668a6674389ed9a60cc5895eb
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: ff8cc865dd08653aed45479dd558fd4c7ad61b41
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777376"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61838565"
 ---
 # <a name="workbook-tablerowoperationresult"></a>workbook： tableRowOperationResult
 命名空间：microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "59777376"
 1. 发出异步创建 [tableRow](./table-post-rows.md) 请求并获取响应标头中返回的 `Location` 查询 URL。
 2. 使用步骤 1 返回的查询 URL 发出 [Get workbookOperation](./workbookoperation-get.md) 请求并获取步骤 3 的操作 ID。 
    或者，为方便起见，在获取 operationStatus 结果后，可以从响应中返回的 `succeeded` [workbookOperation](../resources/workbookoperation.md)的 **resourceLocation** 属性获取查询 URL，将查询 URL 应用到步骤 3。 
-3. 使用从步骤 2 返回的查询 URL 作为此函数 **tableRowOperationResult** 的 GET 请求 URL。 成功的函数调用将返回 [workbookTableRow](../resources/workbooktablerow.md) 资源中的新表行。
+3. 使用步骤 2 返回的查询 URL 作为此函数 **tableRowOperationResult** 的 GET 请求 URL。 成功的函数调用将返回 [workbookTableRow](../resources/workbooktablerow.md) 资源中的新表行。
 
 如果单独调用此函数，则此函数不执行任何工作。
 ## <a name="permissions"></a>权限
@@ -44,7 +44,8 @@ ms.locfileid: "59777376"
 }
 -->
 ``` http
-GET /driveItem/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/items/{id}/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/root:/{item-path}:/workbook/tableRowOperationResult(key={operation-id})
 ```
 
 ## <a name="function-parameters"></a>函数参数
@@ -79,7 +80,7 @@ GET /driveItem/workbook/tableRowOperationResult(key={operation-id})
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/driveItem/workbook/tableRowOperationResult(key='0195cfac-bd22-4f91-b276-dece0aa2378b')
+GET https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tableRowOperationResult(key='0195cfac-bd22-4f91-b276-dece0aa2378b')
 ```
 
 

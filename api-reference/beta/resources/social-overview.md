@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 17b0c03659e53685ff0644100f31dc7bd20df4d4
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1ae0e4bd967238aa5566177b89c808231999f688
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695250"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861249"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用中集成人员和工作区智能
 
@@ -51,7 +51,7 @@ Microsoft Graph 允许访问相关人员的有用数据、其个人资料、与�
 - 列出用户[常用的](../api/insights-list-trending.md)文档
 - 列出用户[使用的](../api/insights-list-used.md)文档
 - 列出[与用户共享或由用户共享的](../api/insights-list-shared.md)文档
-- 探索在组织内[为项目见解自定义隐私设置](/graph/insights-customize-item-insights-privacy.md)的方式。
+- 探索在组织内[为项目见解自定义隐私设置](/graph/insights-customize-item-insights-privacy)的方式。
 
 ## <a name="manage--mentions"></a>管理 @提及
 

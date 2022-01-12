@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ba2883da35118720d636cfd65f06c34aef77709b
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: 9699a08517a2b4be495671abb76de00b0204f2e5
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61565142"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860015"
 ---
 # <a name="delete-externalmeetingregistrant"></a>删除 externalMeetingRegistrant
 
@@ -20,7 +20,7 @@ ms.locfileid: "61565142"
 
 会议组织者从启用了[externalMeetingRegistration](../resources/externalmeetingregistrant.md)的联机会议中删除[externalMeetingRegistrant。](../resources/externalmeetingregistration.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "61565142"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onlineMeetings/{meetingId}/registration/registrants/{registrantId}
-DELETE /users/{userId}/onlineMeetings{meetingId}/registration/registrants/{registrantId}
+DELETE /users/{userId}/onlineMeetings/{meetingId}/registration/registrants/{registrantId}
 ```
 
 > [!TIP]

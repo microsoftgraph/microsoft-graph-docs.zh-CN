@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序，以在 Microsoft 资源发生更改时Graph更改通知。
+description: 订阅侦听器应用程序，以在 Microsoft 数据或资源发生更改时Graph更改通知。
 ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 0513533031b7f8bc5bd35dd2cf080dfd7ff2d577
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 5c4e8fa74d19341a6d7c2c61eb3c3f17d9cc6e33
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604419"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61814005"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -41,10 +41,11 @@ ms.locfileid: "61604419"
 |[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/users/{id}/chats/getAllMessages - 特定用户所属所有聊天的聊天消息） | Chat.Read、Chat.ReadWrite | 不支持 | Chat.Read.All、Chat.ReadWrite.All |
 |[联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | 不支持 | 不支持 | ChannelMember.Read.All |
 |[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | 不支持 | 不支持 | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
 |[conversationMember](../resources/conversationmember.md) (/chats/{id}/members) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | 不支持 | ChatMember.Read.Chat *、Chat.Manage.Chat*、ChatMember.Read.All、ChatMember.ReadWrite.All、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/getAllMembers)  | 不支持 | 不支持 | TeamMember.Read.All, TeamMember.ReadWrite.All |
 |[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All | 不支持 | TeamMember.Read.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | 不支持 | 不支持 | ChannelMember.Read.All |
 |[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
@@ -104,7 +105,7 @@ POST /subscriptions
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 subscription 对象的 JSON [表示](../resources/subscription.md) 形式。
+在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
@@ -155,7 +156,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -174,7 +175,7 @@ Content-type: application/json
 |[聊天](../resources/chat.md)|`/chats`, `/chats/{id}`|
 |[聊天消息](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[联系人](../resources/contact.md)|`me/contacts`|
-|[ConversationMember](../resources/conversationmember.md)|`/chats/{id}/members`, `/chats/getAllMembers`, `/teams/{id}/members`|
+|[ConversationMember](../resources/conversationmember.md)|`/chats/{id}/members`, `/chats/getAllMembers`, `/teams/{id}/members`, `/teams/getAllMembers`, `/teams/{id}/channels/getAllMembers`|
 |[对话](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[驱动器](../resources/driveitem.md)|`me/drive/root`|
 |[事件](../resources/event.md)|`me/events`|

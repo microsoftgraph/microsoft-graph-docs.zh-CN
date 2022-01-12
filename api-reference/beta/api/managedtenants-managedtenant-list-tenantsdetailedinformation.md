@@ -1,16 +1,16 @@
 ---
 title: 列出 tenantDetailedInformation
 description: 获取 tenantDetailedInformation 对象及其属性的列表。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 77a0d5e5f064a8ab5ed47a21318bae11c5cc599a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1d77f2c96e56a49e263a5e8a19e8525157ac6b9c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028425"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61824048"
 ---
 # <a name="list-tenantdetailedinformation"></a>列出 tenantDetailedInformation
 命名空间：microsoft.graph.managedTenants
@@ -19,7 +19,7 @@ ms.locfileid: "61028425"
 
 获取 [tenantDetailedInformation 对象](../resources/managedtenants-tenantdetailedinformation.md) 及其属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsD
 [!INCLUDE [sample-code](../includes/snippets/java/list-tenantdetailedinformation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-tenantdetailedinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

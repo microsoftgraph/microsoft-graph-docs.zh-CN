@@ -1,16 +1,16 @@
 ---
 title: tenantTag：unassignTag
 description: 从指定的托管租户取消分配租户标记。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: bf712ca7119a24d40ed0674e1ddf371d2fe7daf1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9f6743d561095dd5cdf5d4d24cc99d0d734c125d
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022019"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861725"
 ---
 # <a name="tenanttag-unassigntag"></a>tenantTag：unassignTag
 命名空间：microsoft.graph.managedTenants
@@ -93,7 +93,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/tenanttag-unassigntag-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tenanttag-unassigntag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

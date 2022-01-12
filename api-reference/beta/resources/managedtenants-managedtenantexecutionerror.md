@@ -1,16 +1,16 @@
 ---
 title: managedTenantExecutionError 资源类型
 description: 表示托管租户操作异常。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 5a1fd2d1524cad663ee6acef93ab20cc8e40fd24
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 92917d60cc3bd22da02a8d447c305e275bab51a3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402031"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791894"
 ---
 # <a name="managedtenantexecutionerror-resource-type"></a>managedTenantExecutionError 资源类型
 
@@ -25,12 +25,12 @@ ms.locfileid: "53402031"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|error|String|异常的错误消息。 继承自 [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md)。 必填。 只读。|
+|error|String|异常的错误消息。 继承自 [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md)。 必需。 只读。|
 |errorDetails|String|异常的其他错误信息。 可选。 只读。|
-|nodeId|Int32|发生异常的节点标识符。 必填。 只读。|
+|nodeId|Int32|发生异常的节点标识符。 必需。 只读。|
 |rawToken|String|异常的标记。 可选。 只读。|
-|statementIndex|Int32|异常的语句索引。 必填。 只读。|
-|tenantId|String|托管Azure Active Directory租户的租户标识符。 继承自 [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md)。 必填。 只读。|
+|statementIndex|Int32|异常的语句索引。 必需。 只读。|
+|tenantId|String|托管Azure Active Directory租户的租户标识符。 继承自 [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md)。 必需。 只读。|
 
 ## <a name="relationships"></a>关系
 无。

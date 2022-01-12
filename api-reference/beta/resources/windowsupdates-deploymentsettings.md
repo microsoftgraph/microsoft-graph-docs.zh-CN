@@ -1,16 +1,16 @@
 ---
 title: deploymentSettings 资源类型
 description: 确定服务何时以及如何部署更新。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 0906f401ac414928549602d602317ddc3f5305c5
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d1cad7bd51b8d94078c1264f2dadc352af4056c7
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695711"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861199"
 ---
 # <a name="deploymentsettings-resource-type"></a>deploymentSettings 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "60695711"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|monitoring|[microsoft.graph.windowsUpdates.monitoringSettings](../resources/windowsupdates-monitoringsettings.md)|设置管理条件以监视要采取的自动操作。|
-|推出|[microsoft.graph.windowsUpdates.rolloutSettings](../resources/windowsupdates-rolloutsettings.md)|设置如何推出内容。|
+|monitoring|[microsoft.graph.windowsUpdates.monitoringSettings](../resources/windowsupdates-monitoringsettings.md)|设置管理条件，以监视要采取的自动操作。|
+|推出|[microsoft.graph.windowsUpdates.rolloutSettings](../resources/windowsupdates-rolloutsettings.md)|设置如何推出内容。。|
 |safeguard|[microsoft.graph.windowsUpdates.safeguardSettings](../resources/windowsupdates-safeguardsettings.md)|设置内容管理安全措施的保留。|
 
 ## <a name="relationships"></a>关系

@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 23c3ec8776e621e9fda508ac75eed72fed6f5830
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 6f71b07dafba46cf99ee89c19e445dd315aa92f9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764190"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860920"
 ---
 # <a name="workbook-tablerowoperationresult"></a>workbook： tableRowOperationResult
 命名空间：microsoft.graph
@@ -43,7 +43,8 @@ ms.locfileid: "59764190"
 }
 -->
 ``` http
-GET /driveItem/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/items/{id}/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/root:/{item-path}:/workbook/tableRowOperationResult(key={operation-id})
 ```
 
 ## <a name="function-parameters"></a>函数参数
@@ -79,7 +80,7 @@ GET /driveItem/workbook/tableRowOperationResult(key={operation-id})
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/driveItem/workbook/tableRowOperationResult(key='0195cfac-bd22-4f91-b276-dece0aa2378b')
+GET https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tableRowOperationResult(key='0195cfac-bd22-4f91-b276-dece0aa2378b')
 ```
 
 

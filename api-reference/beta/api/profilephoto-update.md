@@ -1,16 +1,16 @@
 ---
 title: 更新 profilephoto
-description: 更新租户中任意用户的照片，其中包括已登录用户或指定的组或联系人。 自此处起
-localization_priority: Normal
+description: 更新租户中任意用户的照片，其中包括已登录用户或指定的组或联系人。
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: e6ccd0fe70f2e48c890df074c6a7865cbf502f83
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 31d3ace676a00af96a21cf0d666012dfba4df6ae
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787588"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861363"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -22,20 +22,39 @@ ms.locfileid: "52787588"
 
 仅对此操作使用 PUT。
 
-> **注意**：更新用户 **照片时**，此操作首先尝试更新用户Microsoft 365。 如果由于用户 (邮箱而失败，) API 将尝试更新 Azure Active Directory。
+> **注意**：更新用户 **照片时**，此操作首先尝试更新用户Microsoft 365。 如果由于 (邮箱而失败，) API 将尝试更新Azure Active Directory。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+### <a name="to-update-the-profile-photo-of-the-signed-in-user"></a>要更新已登录用户的个人资料照片
+
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | 已登录用户的个人资料 **照片**：<br/>User.ReadWrite、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
-|委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 对于 **user** 资源：<br/>User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
+|委派（工作或学校帐户）      |   User.ReadWrite、User.ReadWrite.All           |
+|委派（个人 Microsoft 帐户）      |   不支持。            |
+|应用程序      |    User.ReadWrite.All           |
 
-> **注意** 若要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。 更新已登录用户的照片仅需要 User.ReadWrite 权限。
+### <a name="to-update-the-profile-photo-of-a-group"></a>要更新组的个人资料照片
 
-> **注意：** 当前有一个 [已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）      |   Group.ReadWrite.All           |
+|委派（个人 Microsoft 帐户）      |   不支持。            |
+|应用程序      |    Group.ReadWrite.All           |
+
+### <a name="to-update-the-profile-photo-of-a-contact"></a>要更新联系人的个人资料照片
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）      |   Contacts.ReadWrite           |
+|委派（个人 Microsoft 帐户）      |   不支持。            |
+|应用程序      |    Contacts.ReadWrite           |
+
+> [!NOTE]
+> 1. 若要更新组织中任何用户的照片，你的应用必须具有 *User.ReadWrite.All* 应用程序权限，并且以其自己的身份（而不是代表用户）调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。 更新已登录用户的照片仅需要 *User.ReadWrite* 权限。
+> 2. 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
+> 3. 目前，B2C 租户不支持使用 Microsoft Graph API 更新Azure AD的照片。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

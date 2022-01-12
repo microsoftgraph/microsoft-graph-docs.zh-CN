@@ -1,16 +1,16 @@
 ---
 title: templateParameter 资源类型
 description: 表示在管理模板中利用的参数。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 4f533bc375e2d7e4a1e4ef2f7f801f248c1801c4
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: a2fe8cc543f60e2e862af65b9e47f6a84389e453
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402395"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791867"
 ---
 # <a name="templateparameter-resource-type"></a>templateParameter 资源类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "53402395"
 |属性|类型|说明|
 |:---|:---|:---|
 |说明|String|模板参数的说明。 可选。 只读。|
-|displayName|String|template 显示名称参数的值。 必填。 只读。|
-|jsonAllowedValues|String|模板参数的允许值，由 JSON 的序列化字符串表示。 可选。 只读。|
-|jsonDefaultValue|String|模板参数的默认值，由 JSON 的序列化字符串表示。 必填。 只读。|
-|valueType|managementParameterValueType|模板数据类型参数的值。 可取值为：`string`、`integer`、`boolean`、`guid`、`stringCollection`、`integerCollection`、`booleanCollection`、`guidCollection`、`unknownFutureValue`。 必填。 只读。|
+|displayName|String|template 显示名称参数的值。 必需。 只读。|
+|jsonAllowedValues|String|模板参数的允许值由 JSON 的序列化字符串表示。 可选。 只读。|
+|jsonDefaultValue|String|模板参数的默认值，由 JSON 的序列化字符串表示。 必需。 只读。|
+|valueType|managementParameterValueType|模板数据类型的值。 可取值为：`string`、`integer`、`boolean`、`guid`、`stringCollection`、`integerCollection`、`booleanCollection`、`guidCollection`、`unknownFutureValue`。 必需。 只读。|
 
 ## <a name="relationships"></a>关系
 无。

@@ -1,18 +1,18 @@
 ---
-title: 使用 Windows Update for Business 部署服务管理部署的监视规则
+title: 使用 Windows Update for Business 部署服务管理监视规则
 description: 对于部署服务启动的部署，可以使用监视规则根据部署信号配置警报和自动操作。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: eaef1105d5163bd0c0ab1e4859ef9d4979eb7bee
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 0d0b76b2c5e29e164cce6a69bcdccbefd13033ad
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255946"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61856748"
 ---
-# <a name="manage-monitoring-rules-for-a-feature-update-deployment-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务管理功能更新部署的监视规则
+# <a name="manage-monitoring-rules-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务管理监视规则
 
 对于部署服务启动的部署，可以使用监视规则根据部署信号配置警报和自动操作。
 
@@ -46,7 +46,6 @@ Content-type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 5,
                     "action": "pauseDeployment"
@@ -95,7 +94,8 @@ Content-Type: application/json
             ]
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -158,7 +158,8 @@ Content-Type: application/json
             "monitoringRules": []
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -166,7 +167,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-resume-deployment-by-updating-a-monitoring-rule-threshold"></a>示例：通过更新监视规则阈值恢复部署
-恢复部署的另一种方式是更改相关监视规则的阈值。 当达到新阈值时，操作 (，) `pauseDeployment` 将再次触发。 
+恢复部署的另一种方式是更改相关监视规则的阈值。 当达到新阈值时，将 (，) `pauseDeployment` 将再次触发操作。 
 
 下面是通过更改监视规则阈值恢复部署的示例。 此示例还说明如何编辑任何现有的监视规则（即使尚未达到其阈值）以及如何在没有监控规则的部署上创建监视规则。
 
@@ -183,7 +184,6 @@ Content-Type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 10,
                     "action": "pauseDeployment"
@@ -232,7 +232,8 @@ Content-Type: application/json
             ]
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

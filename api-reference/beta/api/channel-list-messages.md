@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 339b91c2828dfec7134cfc178353165f176f6b49
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e8ac0824febb26baa90d69c518c89d5042f04362
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975886"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792027"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/java/get-listchannelmessages-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-listchannelmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -157,6 +157,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [
                 {
@@ -210,6 +211,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -241,6 +243,15 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
+            "onBehalfOf": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "6703568a-3b0e-4a3b-9d33-0e1bc5ff1521",
+                    "displayName": "Test User",
+                    "userIdentityType": "aadUser"
+                }
+            },
             "reactions": [],
             "eventDetail": {
                 "@odata.type": "#microsoft.graph.teamDescriptionUpdatedEventMessageDetail",

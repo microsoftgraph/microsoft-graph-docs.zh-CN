@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 21dc72a90dc863344380da4ece717bddba375cac
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d5224481604e9fcdbe2ee0071c3cc8fea9d3f8d8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688117"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792104"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -34,7 +34,7 @@ ms.locfileid: "60688117"
 }
 -->
 ``` http
-POST /external/connections/{connectionsId}/items
+PUT /external/connections/{connection-id}/items/{item-id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -75,7 +75,7 @@ POST /external/connections/{connectionsId}/items
     ```
 
     > [!IMPORTANT]
-    > 当包含 类型的 属性 `Collection(DateTime)` 时，必须使用类型说明器 `Collection(DateTimeOffset)` 。
+    > 当包含类型的 属性 `Collection(DateTime)` 时，必须使用类型说明器 `Collection(DateTimeOffset)` 。
 
 ## <a name="response"></a>响应 
 

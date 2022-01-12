@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c232d26a57481f0cab4542f8f769522bc75e9bc1
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: 81810e47432aaa0d64032ef481522620c02314a8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61565143"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792020"
 ---
 # <a name="list-externalmeetingregistrants"></a>列出 externalMeetingRegistrants
 
@@ -20,7 +20,7 @@ ms.locfileid: "61565143"
 
 获取 [onlineMeeting 的 externalMeetingRegistrants](../resources/externalmeetingregistrant.md) [列表](../resources/onlinemeeting.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "61565143"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | OnlineMeetings.ReadWrite.All |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用，以代表该用户 (代表该用户获取联机会议和/或联机会议项目，请求路径) 中指定了用户 ID。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用代表该用户 (获取联机会议和/或联机会议项目，请求路径) 中指定了用户 ID。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ ms.locfileid: "61565143"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/registration/registrants
-GET /users/{userId}/onlineMeetings{meetingId}/registration/registrants
+GET /users/{userId}/onlineMeetings/{meetingId}/registration/registrants
 ```
 
 > [!TIP]

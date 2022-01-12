@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: ac6bbe6ad5b23924024e6b7ee9f19445d8006292
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f3616dd99149cee0826e2804583927da9c8d5c60
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026925"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860791"
 ---
 # <a name="chatmessage-delta"></a>chatMessage：delta
 
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -195,6 +195,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -235,6 +236,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -272,7 +274,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -332,6 +334,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -371,6 +374,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -408,7 +412,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -468,6 +472,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -507,6 +512,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -546,7 +552,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -605,6 +611,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []

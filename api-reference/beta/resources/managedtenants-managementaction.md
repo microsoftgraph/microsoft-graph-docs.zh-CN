@@ -1,16 +1,16 @@
 ---
 title: managementAction 资源类型
 description: 表示给定托管租户的基线管理操作。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 156d4ff0d7ffb9574793ccdd5d56bc2a89cd3b22
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: f45bcabe1ab488bc5c19e83d7d34e52b92742a43
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402400"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61832602"
 ---
 # <a name="managementaction-resource-type"></a>managementAction 资源类型
 
@@ -33,9 +33,9 @@ ms.locfileid: "53402400"
 |category|managementCategory|管理操作类别。 可取值为：`custom`、`devices`、`identity`、`unknownFutureValue`。 可选。 只读。|
 |说明|String|管理操作的说明。 可选。 只读。|
 |displayName|String|管理显示名称的项。 可选。 只读。|
-|id|String|管理操作的唯一标识符。 必填。 只读。|
-|referenceTemplateId|String|用于生成管理操作的管理模板的引用。 必填。 只读。|
-|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) 集合|与管理操作关联的工作负荷操作的集合。 必填。 只读。|
+|id|String|管理操作的唯一标识符。 必需。 只读。|
+|referenceTemplateId|String|用于生成管理操作的管理模板的引用。 必需。 只读。|
+|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) 集合|与管理操作关联的工作负荷操作的集合。 必需。 只读。|
 
 ## <a name="relationships"></a>关系
 无。

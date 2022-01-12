@@ -1,16 +1,16 @@
 ---
 title: updatableAsset： enrollAssetsById
 description: 在部署服务更新管理中注册相同类型的 updatableAsset 资源。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 251a4d3d9dcb03a50693c5177deb332e50786161
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 73548492a90dae28a9749ba4b19edd0ee2a333f8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009363"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860941"
 ---
 # <a name="updatableasset-enrollassetsbyid"></a>updatableAsset： enrollAssetsById
 命名空间：microsoft.graph.windowsUpdates
@@ -101,7 +101,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/updatableasset-enrollassetsbyid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableasset-enrollassetsbyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

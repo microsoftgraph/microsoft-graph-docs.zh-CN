@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: eafd956cdbd973da74e8f07de54570fef15508c8
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
+ms.openlocfilehash: 8a27259e9d855a7e8166ae4416762d2bc12d89ee
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131901"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792223"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -22,7 +22,7 @@ ms.locfileid: "61131901"
 
 > **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：使用 Microsoft Teams 违反使用条款 [](/legal/microsoft-apis/terms-of-use)日志文件。 仅发送用户将阅读的邮件。
+> **注意**：使用安全工具 [作为](/legal/microsoft-apis/terms-of-use)Microsoft Teams违反日志文件。 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -123,7 +123,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -178,13 +178,14 @@ Content-type: application/json
         "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
         "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
+    "onBehalfOf": null,
     "attachments": [],
     "mentions": [],
     "reactions": []
 }
 ```
 
-### <a name="example-2-mentions-a-user-in-a-channel-message"></a>示例 2：@mentions频道消息中通知用户
+### <a name="example-2-mentions-a-user-in-a-channel-message"></a>示例 2：@mentions消息中通知用户
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -235,7 +236,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -361,7 +362,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -425,6 +426,7 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
+    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }
@@ -478,7 +480,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -542,6 +544,7 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
+    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }
@@ -596,7 +599,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -632,6 +635,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": null,
     "channelIdentity": null,
+    "onBehalfOf": null,
     "policyViolation": null,
     "eventDetail": null,
     "from": {
@@ -658,7 +662,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (内容) 相同。  (请注意 **，temporaryId 设置为** **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
+> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (中的内容) 相同。  (注意 **temporaryId** 设置为 **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -713,7 +717,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-6-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -776,6 +780,7 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
+    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }
@@ -786,7 +791,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。 若要了解如何获取团队中的频道列表，请参阅 [列出频道](../api/channel-list.md)。
 
-> 注意 **：conversationIdentityType** 必须设置为 `channel` @mention通道。
+> 注意 **：conversationIdentityType** 必须设置为 `channel` @mention频道。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -834,7 +839,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentionchannel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionchannel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -916,7 +921,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> 注意 **：conversationIdentityType** 必须设置为@mention `team` 团队。
+> 注意 **：conversationIdentityType** 必须设置为，@mention `team` 团队。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -965,7 +970,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentionteam-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionteam-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -1042,7 +1047,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-9--mention-a-tag-in-a-channel-message"></a>示例 9：@mention消息中的标记
+### <a name="example-9--mention-a-tag-in-a-channel-message"></a>示例 9：@mention频道消息中的标记
 
 #### <a name="request"></a>请求
 下面展示了示例请求。 若要了解如何获取团队中的标记列表，请参阅 [List teamworkTags](../api/teamworktag-list.md)。
@@ -1092,7 +1097,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentiontag-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentiontag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

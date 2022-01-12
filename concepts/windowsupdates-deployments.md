@@ -1,26 +1,26 @@
 ---
-title: Windows Update for Business 部署服务中的部署
+title: 适用于企业的 Windows 更新部署服务中的部署
 description: 部署是 Windows Update for Business 部署服务的基础。 通过部署，你可以面向一组设备，以接收来自 Windows 更新（如软件更新）的特定内容。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 5b875a62b3fe8fe35b7d7f0b69acc3395e8ab67f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bd733513e9fe8f44b39c861281351ff18f419795
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688617"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61858418"
 ---
-# <a name="deployments-in-the-windows-update-for-business-deployment-service"></a>Windows Update for Business 部署服务中的部署
+# <a name="deployments-in-the-windows-update-for-business-deployment-service"></a>适用于企业的 Windows 更新部署服务中的部署
 
-部署是 Windows Update for Business 部署服务的基础。 通过部署，你可以将一组设备作为目标，以接收来自 Windows Update 的特定内容，例如[软件更新](windowsupdates-software-updates.md)。
+部署是 Windows Update for Business 部署服务的基础。 通过部署，你可以将一组设备作为目标，以接收来自 Windows 更新的特定内容，例如[软件更新](windowsupdates-software-updates.md)。
 
 部署具有以下主要方面：
 
 1. 内容：可从目录部署的更新。 这由 [deployableContent](/graph/api/resources/windowsupdates-deployablecontent)**类型的** content 属性表示。
 2. 访问群体：用于接收内容的设备。 这是[deploymentAudience 类型的访问群体](/graph/api/resources/windowsupdates-deploymentaudience)关系。 
-3. 设置：用于管理内容传递到设备的方式和时间的设置。 这由 [deploymentSettings](/graph/api/resources/windowsupdates-deploymentsettings)类型的 **settings** 属性表示。
+3. 设置：管理内容应传递到设备的方式和时间的设置。 这由 [deploymentSettings](/graph/api/resources/windowsupdates-deploymentsettings)类型的 **settings** 属性表示。
 4. 状态：部署在其生命周期中的当前状态。 这由 [deploymentState](/graph/api/resources/windowsupdates-deploymentstate)类型的 **state** 属性表示。
 
 ## <a name="create-a-deployment-with-content-and-an-audience"></a>创建包含内容和访问群体部署的部署
@@ -83,8 +83,8 @@ ms.locfileid: "60688617"
 
 ## <a name="multiple-deployments"></a>多个部署
 
-你可以一次将设备分配给多个部署。 这些部署可用于相同更新类别的内容 (例如，所有部署都是功能更新) 或不同更新类别的内容。
+你可以一次将设备分配给多个部署。 这些部署适用于相同更新类别的内容 (例如，所有部署都是功能更新) ，或用于不同更新类别的内容。
 
 为不同更新类别的内容分配设备 (例如功能更新和快速质量更新) 时，部署服务根据 Microsoft 的建议按顺序提供内容。
 
-当您为同一更新类别 (的内容分配设备（例如，功能更新版本 20H1 和 20H2）或 2021 年 3 月和 2021 年 4 月质量更新（从) 年 3 月到 2021 年 4 月）时，部署服务会提供 Microsoft 排名更高的内容。 对于功能更新和质量更新，最新更新的排名更高。 如果其中一个部署仍为设备计划，并且尚未准备好提供内容，则此行为不适用。 在这种情况下，其他部署将内容交付到设备。
+当您为同一更新类别 (的内容分配设备（例如，功能更新版本 20H1 和 20H2）或 2021 年 3 月和 2021 年 4 月的质量更新（从) 年 3 月到 2021 年 4 月）时，部署服务会提供 Microsoft 排名更高的内容。 对于功能更新和质量更新，最新更新的排名更高。 如果其中一个部署仍为设备计划，并且尚未准备好提供内容，则此行为不适用。 在这种情况下，其他部署将内容交付到设备。

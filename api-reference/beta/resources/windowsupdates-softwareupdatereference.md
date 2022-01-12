@@ -1,16 +1,16 @@
 ---
 title: softwareUpdateReference 资源类型
 description: 表示特定更新内容。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 13e71a5b08100a74884ae0f4f69b69b86bec9b2c
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: 9278900d85bc1ec6fc626200f0bf814dd3097b34
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115310"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860423"
 ---
 # <a name="softwareupdatereference-resource-type"></a>softwareUpdateReference 资源类型
 

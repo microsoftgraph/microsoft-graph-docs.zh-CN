@@ -5,12 +5,12 @@ title: driveItem
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: d4b26853f08745003d9f44ee7a237e0e293a9981
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 9b1da27ce64f07c386efd146847da417faeefa60
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646970"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792195"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -27,7 +27,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 * 通过 **driveItem** 唯一标识符使用 `drive/items/{item-id}` 的方式
 * 通过使用文件系统路径 `/drive/root:/path/to/file` 的方式
 
-有关详细信息，请参阅寻址 [driveItems](/graph/concepts/onedrive-addressing-driveitems.md)。
+有关详细信息，请参阅 [寻址 driveItems](/graph/concepts/onedrive-addressing-driveitems.md)。
 
 **DriveItem** 资源拥有作为属性进行模块化的多个 Facet，用于提供 driveItem 的标识和功能相关数据。例如：
 
@@ -78,13 +78,13 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。只读。
+| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。 只读。 仅在个人OneDrive上。
 | content              | 流             | 内容流（如果此项表示一个文件）。
 | createdBy            | [identitySet][]    | 识别创建项目的用户、设备和应用程序。只读。
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
 | cTag                 | String             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。
 | deleted              | [deleted][]        | 有关项目删除状态的信息。只读。
-| description          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
+| description          | String             | 提供项的用户可见的说明。 读写。 仅在个人OneDrive上。
 | eTag                 | String             | 整个项目（元数据和内容）的 eTag。只读。
 | file                 | [file][]           | 文件元数据（如果此项是一个文件）。只读。
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 26e021f6e9cc68cab2b44df32c41fe1225b59215
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 5c3aa7cb7d922805e94099db302de1f361783474
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321804"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860906"
 ---
 # <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>使用 Microsoft Graph API 获取 Microsoft Teams 的系统消息
 
@@ -114,6 +114,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -174,6 +175,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -225,6 +227,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
   "locale": "en-us",
   "webUrl": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "from": null,
   "body": {
@@ -270,6 +273,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
   "locale": "en-us",
   "webUrl": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "from": null,
   "body": {
@@ -324,6 +328,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -372,6 +377,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -420,6 +426,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -468,6 +475,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -516,6 +524,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -563,6 +572,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -601,6 +611,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
   "locale": "en-us",
   "webUrl": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "from": null,
   "body": {
@@ -655,6 +666,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -701,6 +713,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
   "webUrl": null,
   "from": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "body": {
     "contentType": "html",
@@ -754,6 +767,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -812,6 +826,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -855,6 +870,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
   "webUrl": null,
   "from": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "body": {
     "contentType": "html",
@@ -903,6 +919,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
   "webUrl": null,
   "from": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "body": {
     "contentType": "html",
@@ -959,6 +976,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1006,6 +1024,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "5e91c375-f755-4882-880e-f1b9322faa87",
     "channelId": "19:318c8c65f0794971a1a9b5e3413d77de@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1053,6 +1072,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "5e91c375-f755-4882-880e-f1b9322faa87",
     "channelId": "19:318c8c65f0794971a1a9b5e3413d77de@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1102,6 +1122,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1150,6 +1171,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1197,6 +1219,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1244,6 +1267,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1292,6 +1316,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1340,6 +1365,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1388,6 +1414,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1436,6 +1463,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
     "teamId": "5e91c375-f755-4882-880e-f1b9322faa87",
     "channelId": "19:318c8c65f0794971a1a9b5e3413d77de@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],

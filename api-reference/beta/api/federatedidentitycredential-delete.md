@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 869fd8646061843ee1455a0ee5d7fb46078c191f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9f0f61c12dcaa208e983584aef328f6d74ac73db
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990231"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791978"
 ---
 # <a name="delete-federatedidentitycredential"></a>Delete federatedIdentityCredential
 命名空间：microsoft.graph
@@ -36,8 +36,9 @@ ms.locfileid: "60990231"
 }
 -->
 ``` http
-DELETE /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+DELETE /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
+DELETE /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -81,7 +82,7 @@ DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff3
 [!INCLUDE [sample-code](../includes/snippets/java/delete-federatedidentitycredential-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-federatedidentitycredential-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

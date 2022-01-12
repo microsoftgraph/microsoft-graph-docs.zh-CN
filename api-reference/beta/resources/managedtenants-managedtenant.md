@@ -1,16 +1,16 @@
 ---
 title: managedTenant 资源类型
 description: 表示与多租户管理平台交互的可用操作。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 7689344ee2e42df57a30f95c33628d607895610d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 9047977dd701e9844ae7158b6a6c1845a189de4e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077131"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791901"
 ---
 # <a name="managedtenant-resource-type"></a>managedTenant 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "61077131"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-作为 Microsoft 365 Lighthouse API 的根资源 **，managedTenant** 表示可供托管服务提供商 (MSP) 使用的功能，以扩展其客户租户的远程管理，以帮助其进入正常和安全状态。
+作为 Microsoft 365 Lighthouse API 的根资源 **，managedTenant** 表示 Managed Service Provider (MSP) 可用的功能，以扩展其客户租户的远程管理，以帮助其进入正常和安全状态。
 
 该Microsoft 365 Lighthouse API 在 OData 子名称空间中定义 `microsoft.graph.managedTenants` 。
 
@@ -26,7 +26,7 @@ ms.locfileid: "61077131"
 无。
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |aggregatedPolicyCompliances|[microsoft.graph.managedTenants.aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md) 集合|跨托管租户的设备合规性策略聚合视图。|
 |cloudPcConnections|[microsoft.graph.managedTenants.cloudPcConnection](../resources/managedtenants-cloudpcconnection.md) 集合|跨托管租户的云电脑连接的集合。|

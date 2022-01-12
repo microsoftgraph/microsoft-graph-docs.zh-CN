@@ -5,12 +5,12 @@ description: 获取租户租户中的用户登录Azure Active Directory列表。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 4220efb471876ae8e2c9ace54bca688c3564e063
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 8e024d3e0b1af52b5dcb63f8937cfc9495c22c59
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647026"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791971"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -18,9 +18,9 @@ ms.locfileid: "61647026"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [signIn 对象](../resources/signin.md) 的列表。 该列表包含你的租户的用户登录Azure Active Directory登录。 用户名和密码作为授权令牌的一部分传递的登录，并且成功的联合登录当前包含在登录日志中。
+获取 [signIn 对象](../resources/signin.md) 的列表。 该列表包含你的租户的用户Azure Active Directory登录。 用户名和密码作为授权令牌的一部分传递的登录，并且成功的联合登录当前包含在登录日志中。
 
-最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有默认保留期Azure Active Directory (Azure AD) [登录事件](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)可用。
+最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有默认保留期内发生的登录Azure Active Directory (Azure AD) [可用](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)。
 
 ## <a name="permissions"></a>权限
 
@@ -33,7 +33,7 @@ ms.locfileid: "61647026"
 | 应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 有 [一个已知](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 应用必须[正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)Azure AD。
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 [!INCLUDE [sample-code](../includes/snippets/java/get-signins-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signins-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

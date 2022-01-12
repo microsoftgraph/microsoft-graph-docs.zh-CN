@@ -1,16 +1,16 @@
 ---
 title: 获取 updatableAssetGroup
 description: 读取 updatableAssetGroup 对象的属性和关系。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 485603a0701ea186c202d71bee460221671abafd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 77ecc1d0ee310b7816a4c731b7e1bf1f4286ad68
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016482"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792251"
 ---
 # <a name="get-updatableassetgroup"></a>获取 updatableAssetGroup
 命名空间：microsoft.graph.windowsUpdates
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/5c557
 [!INCLUDE [sample-code](../includes/snippets/java/get-updatableassetgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-updatableassetgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

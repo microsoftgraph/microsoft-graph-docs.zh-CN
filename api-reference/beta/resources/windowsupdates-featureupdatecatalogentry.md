@@ -1,16 +1,16 @@
 ---
 title: featureUpdateCatalogEntry 资源类型
-description: 可以批准Windows 10部署的功能更新的元数据。
-author: Alice-at-Microsoft
-localization_priority: Normal
+description: 您可以批准Windows 10部署的功能更新的元数据。
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 64ad4c2506a2d8f90276e50e7fe5288e1af1d8db
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 94403127fdbc8c263df546c2dfd1359c87894a06
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067317"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861639"
 ---
 # <a name="featureupdatecatalogentry-resource-type"></a>featureUpdateCatalogEntry 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "52067317"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可以批准Windows 10部署的功能更新的元数据。
+您可以批准Windows 10部署的功能更新的元数据。
 
-Windows 10功能更新每两年发布一次，其中包含适用于Windows 10。 安装这些更新会增加Windows 10内部版本数，并且通常会导致新的服务生命周期和服务结束日期。 Microsoft 建议组织定期部署新功能更新，作为采用Windows服务的一部分。
+Windows 10功能更新每两年发布一次，其中包含适用于Windows 10。 安装这些更新会增加Windows 10内部版本数，并且通常会导致新的服务生命周期和服务结束日期。 Microsoft 建议组织定期部署新功能更新，作为采用新Windows 即服务。
 
 继承自 [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md)。
 

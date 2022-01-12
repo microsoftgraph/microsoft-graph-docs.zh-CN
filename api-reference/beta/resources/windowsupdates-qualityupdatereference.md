@@ -1,16 +1,16 @@
 ---
 title: qualityUpdateReference 资源类型
 description: 表示Windows 10更新内容。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: bae1315caf6efd2096f9039ca774db18f0b6b764
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: ecfddf24b8e2550f55c28ef60e218b5caae985da
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890757"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861596"
 ---
 # <a name="qualityupdatereference-resource-type"></a>qualityUpdateReference 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "60890757"
 继承自 [windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md)。 [expeditedQualityUpdateReference 的基本类型](../resources/windowsupdates-expeditedqualityupdatereference.md)。
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|指定所引用内容的分类。 支持 **qualityUpdateClassification 值的子集**。 可取值为：`security`、`unknownFutureValue`。|
 |releaseDateTime|DateTimeOffset|指定给定 servicingChannel 中的质量更新，按日期 (给定分类，即指定日期发布) 。 默认值为 `security`。|

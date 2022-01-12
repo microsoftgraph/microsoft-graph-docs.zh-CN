@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2b9935aa878845311f40892d7979a0fa7c5b434b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 84d51a2e0e24da6c68cddc136ec96abfb859deb9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994530"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860444"
 ---
 # <a name="send-message-in-a-chat"></a>在聊天中发送消息
 
@@ -96,7 +96,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessages-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -134,6 +134,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": null,
     "channelIdentity": null,
+    "onBehalfOf": null,
     "policyViolation": null,
     "eventDetail": null,
     "from": {

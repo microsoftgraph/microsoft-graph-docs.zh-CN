@@ -1,16 +1,16 @@
 ---
 title: 操作资源类型
 description: 长时间运行的操作的状态。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: billbliss
-ms.openlocfilehash: f57b9f14603fdeae539e872d87b5af2645cedef0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 781dcf64cae103cd65f460edead13ca6995d2a51
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998509"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792258"
 ---
 # <a name="operation-resource-type"></a>操作资源类型
 
@@ -22,20 +22,20 @@ ms.locfileid: "47998509"
 
 ## <a name="methods"></a>方法
 
-无
+无。
 
 ## <a name="properties"></a>属性
 
 | 属性           | 类型            | 说明                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
-| createdDateTime    | DateTimeOffset  | 操作的开始时间。                                                |
-| id                 | String          | 操作 id。只读。 由服务器生成。                                  |
-| lastActionDateTime | DateTimeOffset  | 操作的上一操作的时间。                                   |
+| createdDateTime    | DateTimeOffset  | 操作开始时间。                                                |
+| id                 | String          | 操作 ID。 只读。 由服务器生成。                                  |
+| lastActionDateTime | DateTimeOffset  | 操作的最后一个操作的时间。                                   |
 | 状态             | String          | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
 
 ## <a name="relationships"></a>关系
 
-无
+无。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,16 +1,16 @@
 ---
 title: windowsDeploymentSettings 资源类型
 description: 设置控制服务何时以及如何部署Windows 10更新。
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: bc55f0643e789c802254064797bf8a5c2047cb64
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 16aa8592dc03dda799ffbddf838520ca0f159192
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067300"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861370"
 ---
 # <a name="windowsdeploymentsettings-resource-type"></a>windowsDeploymentSettings 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "52067300"
 |属性|类型|说明|
 |:---|:---|:---|
 |monitoring|[microsoft.graph.windowsUpdates.monitoringSettings](../resources/windowsupdates-monitoringsettings.md)|设置管理条件，以监视要采取的自动操作。 继承自 [deploymentSettings](../resources/windowsupdates-deploymentsettings.md)。|
-|推出|[microsoft.graph.windowsUpdates.rolloutSettings](../resources/windowsupdates-rolloutsettings.md)|设置如何推出内容。继承自[deploymentSettings](../resources/windowsupdates-deploymentsettings.md)。|
+|推出|[microsoft.graph.windowsUpdates.rolloutSettings](../resources/windowsupdates-rolloutsettings.md)|设置如何推出内容。。继承自[deploymentSettings](../resources/windowsupdates-deploymentsettings.md)。|
 |userExperience|[microsoft.graph.windowsUpdates.userExperienceSettings](../resources/windowsupdates-userexperiencesettings.md)|设置在设备上管理用户的更新体验。|
 
 ## <a name="relationships"></a>关系

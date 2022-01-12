@@ -1,22 +1,22 @@
 ---
 title: 获取 directoryAudit
-description: 介绍从 Microsoft Graph API (directoryAudit) get 方法。
+description: 介绍从 Microsoft) API 获取 directoryAudit (实体Graph方法。
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: aa1b53b8aa1b16b3aa637a078b74d65e3a2cb15e
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: ca8ca4cbf298538033f085d93299aef6db85c896
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321881"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860451"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
 命名空间：microsoft.graph
 
-获取特定的Azure Active Directory 审核日志项。 这包括 Azure Active Directory 中的各种服务生成的 审核日志 项，如用户、应用程序、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 、自助服务组管理等。
+获取特定的Azure Active Directory 审核日志项。 这包括 Azure Active Directory 中各种服务生成的 审核日志 项，如用户、应用程序、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 、自助服务组管理等。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "61321881"
 |应用程序 | AuditLog.Read.All 和 Directory.Read.All |
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 有 [一个已知](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudit-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

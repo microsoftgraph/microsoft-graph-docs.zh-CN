@@ -1,16 +1,16 @@
 ---
 title: 列出 directoryAudits
-description: 介绍 microsoft (API) directoryAudit 资源Graph方法。
+description: 介绍 microsoft Graph API 中 directoryAudit (实体) 的列表方法。
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: ca9550b54061ed93c6dabe859cde5f58e0025b7a
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 784c32e2ed9da7570122243e368e9d52f5be2e09
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322014"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860201"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -29,7 +29,7 @@ ms.locfileid: "61322014"
 | 应用程序                            | AuditLog.Read.All 和 Directory.Read.All    |
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 有 [一个已知](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudit-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

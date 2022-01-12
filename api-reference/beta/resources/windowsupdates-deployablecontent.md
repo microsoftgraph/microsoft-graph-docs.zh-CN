@@ -1,16 +1,16 @@
 ---
 title: deployableContent 资源类型
 description: 表示服务可部署的内容。
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 430d51785853ab185b76158c3755ce0f98d51274
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: b8870f72c2e28f72916189cf5fd074a2360761fd
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067313"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792125"
 ---
 # <a name="deployablecontent-resource-type"></a>deployableContent 资源类型
 

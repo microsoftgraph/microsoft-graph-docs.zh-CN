@@ -1,16 +1,16 @@
 ---
 title: workloadStatus 资源类型
 description: 表示工作负荷的状态。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 50cbd9cdc59426f413333835c4418112401d8038
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: d85d7fd60a269c360185d8d4ffb5952a71bdd628
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402381"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792265"
 ---
 # <a name="workloadstatus-resource-type"></a>workloadStatus 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "53402381"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|工作负荷显示名称的负载。 必填。 只读。|
+|displayName|String|工作负荷显示名称的负载。 必需。 只读。|
 |offboardedDateTime|DateTimeOffset|工作负荷从载出的日期和时间。 可选。 只读。|
 |onboardedDateTime|DateTimeOffset|载入工作负荷的日期和时间。 可选。 只读。|
 |onboardingStatus|workloadOnboardingStatus|工作负荷的载入状态。 可取值为：`notOnboarded`、`onboarded`、`unknownFutureValue`。 可选。 只读。|

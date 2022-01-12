@@ -1,16 +1,16 @@
 ---
 title: managementAction： apply
 description: 对特定托管租户应用管理操作。 通过执行此操作，将进行适当的配置并创建策略。 例如，当对管理员管理操作应用需要多重身份验证时，将创建一个 Azure Active Directory 条件访问策略，该策略要求对分配了管理目录角色的所有用户进行多重身份验证。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 25b60d217a312a28210106b62f609c07384de904
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 72ec7a55adf9566166307567a483497959a01750
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980944"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61790963"
 ---
 # <a name="managementaction-apply"></a>managementAction： apply
 命名空间：microsoft.graph.managedTenants
@@ -95,7 +95,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/managementaction-apply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/managementaction-apply-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

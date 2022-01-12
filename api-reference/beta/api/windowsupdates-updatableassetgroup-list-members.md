@@ -1,16 +1,16 @@
 ---
 title: 列出可更新资源组的成员
 description: 列出 updatableAssetGroup 资源的成员。 成员为 azureADDevice 类型。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 54c6cdad0f4da6e36df2e24be16c02bb3c1252bc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e98ba54f0dcfb5591ce3b3d51c67b53481c8923b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009257"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863670"
 ---
 # <a name="list-updatable-asset-group-members"></a>列出可更新资源组的成员
 命名空间：microsoft.graph.windowsUpdates
@@ -45,7 +45,7 @@ GET /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/microsoft.gra
 
 若要对不是从 [updatableAsset](../resources/windowsupdates-updatableasset.md)继承的属性使用查询参数，请包含属性的完整资源类型。 例如，若要应用于 `$select` [azureADDevice](../resources/windowsupdates-azureaddevice.md)的 **errors** 属性，请使用 `$select=microsoft.graph.windowsUpdates.azureADDevice/errors` 。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{upda
 [!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

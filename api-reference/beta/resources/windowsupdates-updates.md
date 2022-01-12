@@ -1,16 +1,16 @@
 ---
 title: 更新资源类型
 description: 充当所有 Windows Update for Business 部署服务功能的容器的实体。
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 0306dbadd815bdd8ff0ffde5719a950bcdff4683
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 748ef5c6e8e334b2e1c311c07617c181490f4f39
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067291"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861538"
 ---
 # <a name="updates-resource-type"></a>更新资源类型
 

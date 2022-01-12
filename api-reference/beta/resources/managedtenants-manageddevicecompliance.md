@@ -1,16 +1,16 @@
 ---
 title: managedDeviceCompliance 资源类型
 description: 表示属于给定托管租户的每个托管设备的设备合规性状态。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 237bea472df044f36fb7fbfb740fdef43260e3b2
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: ce9f8ea1ed4e2a083daa053d17714569b4b2abfe
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402066"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61811162"
 ---
 # <a name="manageddevicecompliance-resource-type"></a>managedDeviceCompliance 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "53402066"
 |:---|:---|:---|
 |complianceStatus|String|设备的符合性状态。 此属性是只读的。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod` 或 `configManager`。 可选。 只读。|
 |deviceType|String|设备平台。 此属性是只读的。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` `unknown` `cloudPC` 、  可选。 只读。|
-|id|String|此实体的唯一标识。 必填。 只读。|
+|id|String|此实体的唯一标识。 必需。 只读。|
 |inGracePeriodUntilDateTime|DateTimeOffset|宽限期到期的日期和时间。 可选。 只读。|
 |lastRefreshedDateTime|DateTimeOffset|实体上次在多租户管理平台中更新的日期和时间。 可选。 只读。|
 |lastSyncDateTime|DateTimeOffset|设备上次成功完成与用户同步的Microsoft Endpoint Manager。 可选。 只读。|

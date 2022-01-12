@@ -1,16 +1,16 @@
 ---
 title: updatableAssetEnrollment 资源类型
 description: 表示注册到服务区域。
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: ae64646a539a1d20cf3bbc721e353f445d5a2c1f
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 29da365e3f3eaaec6cbca144df362379ff62c046
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067330"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61859958"
 ---
 # <a name="updatableassetenrollment-resource-type"></a>updatableAssetEnrollment 资源类型
 

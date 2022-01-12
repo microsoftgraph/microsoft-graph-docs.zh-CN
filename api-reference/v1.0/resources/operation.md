@@ -5,18 +5,25 @@ ms.localizationpriority: medium
 author: billbliss
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 58473fcdfdd98a269299aba495cd1bd397423a6d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fddecc3226904acd5b871212acf7df6583b844e3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098522"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860402"
 ---
 # <a name="operation-resource-type"></a>操作资源类型
 
 命名空间：microsoft.graph
 
 长时间运行的操作的状态。
+
+## <a name="properties"></a>属性
+| 属性     | 类型   |说明|
+|:---------------|:--------|:----------|
+|createdDateTime| DateTimeOffset |操作开始时间。|
+|lastActionDateTime| DateTimeOffset |操作的最后一个操作的时间。|
+|状态|operationStatus|操作的当前状态 `notStarted` ：、 `running` `completed``failed` |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -35,14 +42,7 @@ ms.locfileid: "59098522"
   "lastActionDateTime": "String (timestamp)",
   "status": "notStarted | running | completed | failed"
 }
-
 ```
-## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|createdDateTime| DateTimeOffset |操作开始时间。|
-|lastActionDateTime| DateTimeOffset |操作的最后一个操作的时间。|
-|status|operationStatus|操作的当前状态 `notStarted` ：、 `running` `completed``failed` |
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->

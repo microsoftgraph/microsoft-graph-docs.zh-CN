@@ -1,16 +1,16 @@
 ---
 title: 部署资源类型
 description: 表示内容部署到一组设备。
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: e34bca8fc1776c749e42e97caa1dd0d91fa51433
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: d4d34481b6a1d99d7c2a48b3becd7b8def764924
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067859"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61841940"
 ---
 # <a name="deployment-resource-type"></a>部署资源类型
 
@@ -27,10 +27,10 @@ ms.locfileid: "52067859"
 |[创建部署](../api/windowsupdates-updates-post-deployments.md)|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md)|创建新的 [部署](../resources/windowsupdates-deployment.md) 对象。|
 |[获取部署](../api/windowsupdates-deployment-get.md)|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md)|读取部署 [对象的属性和](../resources/windowsupdates-deployment.md) 关系。|
 |[更新部署](../api/windowsupdates-deployment-update.md)|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md)|更新 [部署对象的属性](../resources/windowsupdates-deployment.md) 。|
-|[删除部署](../api/windowsupdates-deployment-delete.md)|无|删除 [部署对象](../resources/windowsupdates-deployment.md) 。|
+|[删除部署](../api/windowsupdates-deployment-delete.md)|None|删除 [部署对象](../resources/windowsupdates-deployment.md) 。|
 |[列出访问群体成员](../api/windowsupdates-deploymentaudience-list-members.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|列出部署访问群体的成员。|
 |[列出访问群体排除项](../api/windowsupdates-deploymentaudience-list-exclusions.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|列出部署访问群体中的排除项。|
-|[更新访问群体成员和排除项](../api/windowsupdates-deploymentaudience-updateaudience.md)|无|添加或删除部署访问群体的成员和排除项。|
+|[更新访问群体成员和排除项](../api/windowsupdates-deploymentaudience-updateaudience.md)|None|添加或删除部署访问群体的成员和排除项。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -39,8 +39,8 @@ ms.locfileid: "52067859"
 |createdDateTime|DateTimeOffset|创建部署的日期和时间。 默认情况下返回。 只读。|
 |id|String|部署的唯一标识符。 默认情况下返回。 键。 不可为 null。 只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改部署的日期和时间。 默认情况下返回。 只读。|
-|settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|设置管理如何部署内容的特定部署上指定 **的内容**。 默认情况下返回。|
-|state|[microsoft.graph.windowsUpdates.deploymentState](../resources/windowsupdates-deploymentstate.md)|部署的执行状态。 默认情况下返回。|
+|settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|设置在管理如何部署内容的特定部署上 **指定。** 默认返回。|
+|state|[microsoft.graph.windowsUpdates.deploymentState](../resources/windowsupdates-deploymentstate.md)|部署的执行状态。 默认返回。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

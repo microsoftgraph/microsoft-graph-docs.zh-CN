@@ -1,16 +1,16 @@
 ---
 title: 列出 managedDeviceComplianceTrends
 description: 获取 managedDeviceComplianceTrend 对象及其属性的列表。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: ace0b14145df253d2d8f5c6cab62f3c23f0458c3
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: e72c20192c67456c368714a0fbe68f69995f11a3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402027"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861955"
 ---
 # <a name="list-manageddevicecompliancetrends"></a>列出 managedDeviceComplianceTrends
 命名空间：microsoft.graph.managedTenants

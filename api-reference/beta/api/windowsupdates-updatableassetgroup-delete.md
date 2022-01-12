@@ -1,16 +1,16 @@
 ---
 title: 删除 updatableAssetGroup
 description: 删除 updatableAssetGroup 对象。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: c4891d548400c8add0d65de06b85304245d88ea7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 88a0e4207f5f0c843e3e4cb4d02eece9e13f25ed
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004253"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863570"
 ---
 # <a name="delete-updatableassetgroup"></a>删除 updatableAssetGroup
 命名空间：microsoft.graph.windowsUpdates
@@ -81,7 +81,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{u
 [!INCLUDE [sample-code](../includes/snippets/java/delete-updatableassetgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-updatableassetgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

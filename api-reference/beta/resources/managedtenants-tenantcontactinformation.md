@@ -1,16 +1,16 @@
 ---
 title: tenantContactInformation 资源类型
 description: 表示托管租户的联系人。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: b60005cf60a9ac1b96a3b650a853f8b198d27e48
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: f852bbae5a08c00d101e122443b9e5b50382eb62
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402394"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860458"
 ---
 # <a name="tenantcontactinformation-resource-type"></a>tenantContactInformation 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "53402394"
 |属性|类型|说明|
 |:---|:---|:---|
 |email|String|联系人的电子邮件地址。 可选|
-|name|String|联系人的名称。 必填。|
+|name|String|联系人的名称。 必需。|
 |notes|String|与联系人关联的注释。 可选|
 |phone|String|联系人的电话号码。 可选。|
 |title|String|联系人的标题。 必填。|

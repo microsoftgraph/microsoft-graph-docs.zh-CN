@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: f64f87c18bd6e5752671a6dbb28b8464f07cfa3a
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+ms.openlocfilehash: 7f88fc5f2d8f3ebedce9301124e266ef84adff13
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60355545"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792006"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto 资源类型
 
@@ -28,6 +28,10 @@ Exchange Online 支持的 HD 照片大小如下所示：'48x48'、'64x64'、'96x
 |:---------------|:--------|:----------|
 |[获取 profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |获取指定的 **profilePhoto** 或其元数据（**profilePhoto** 属性）。 |
 |[更新](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |将照片分配给指定的用户、组或联系人。照片应为二进制格式。它将替换现有的照片（如有）。 |
+
+> [!NOTE]
+> 
+> 目前，B2C 租户Graph使用 Microsoft Azure AD API 管理用户的照片。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

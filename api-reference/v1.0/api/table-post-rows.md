@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 32db28c90c4c3bed97daef72d05562edcdb01e89
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 546ef8a795683fbd53a850debc1fdc6349538524
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947491"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860927"
 ---
 # <a name="create-tablerow"></a>创建 TableRow
 
@@ -22,7 +22,7 @@ ms.locfileid: "60947491"
 
 此请求有时可能会导致 `504 HTTP` 错误。 此错误的适当响应做法是重复发出请求。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -38,7 +38,7 @@ ms.locfileid: "60947491"
 POST /me/drive/items/{id}/workbook/tables/{id|name}/rows
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows
 POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows
-POST /me/drive/root:/{item-path}:/workbookworksheets/{id|name}/tables/{id|name}/rows
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -54,7 +54,7 @@ POST /me/drive/root:/{item-path}:/workbookworksheets/{id|name}/tables/{id|name}/
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---------------|:--------|:----------|
 | index| Int32| 可选。指定新行的相对位置。如果为空，将在末尾进行添加。插入的行下方的任何行将向下移动。从零开始编制索引。|
 | 值| [Json](../resources/json.md)| 表格行的无格式值的二维数组。|

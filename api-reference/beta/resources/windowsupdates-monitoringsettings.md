@@ -1,16 +1,16 @@
 ---
 title: monitoringSettings 资源类型
-description: 设置控制部署中的自动监视和响应。
-author: Alice-at-Microsoft
-localization_priority: Normal
+description: 设置在部署中控制自动监视和响应。
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: aff5fa9571628783521dcc5ae0113e767915c2c7
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: c00f7e714b68595ce1debbf155ec802f0f579f23
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067854"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61810435"
 ---
 # <a name="monitoringsettings-resource-type"></a>monitoringSettings 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "52067854"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-设置控制部署中的自动监视和响应。
+设置在部署中控制自动监视和响应。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

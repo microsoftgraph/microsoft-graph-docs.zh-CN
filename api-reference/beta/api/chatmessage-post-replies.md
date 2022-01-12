@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8fabfe102e75638f5628f9ae591ff6c1f6073b19
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9698311046113818a693584db37b372296caef2e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026795"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61835863"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>在频道中发送对消息的答复
 
@@ -20,7 +20,7 @@ ms.locfileid: "61026795"
 
 将新回复发送到指定频道中的[chatMessage。](../resources/chatmessage.md) [](../resources/channel.md)
 
-> **注意**：使用 Microsoft Teams 是违反 [](/legal/microsoft-apis/terms-of-use)使用条款日志文件。 仅发送用户将阅读的邮件。
+> **注意**：使用安全工具 [作为](/legal/microsoft-apis/terms-of-use)Microsoft Teams违反日志文件。 仅发送用户将阅读的邮件。
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -100,7 +100,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessagereply-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessagereply-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -154,6 +154,7 @@ Content-type: application/json
         "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
         "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
+    "onBehalfOf": null,
     "attachments": [],
     "mentions": [],
     "reactions": []
@@ -207,7 +208,7 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessagereply-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessagereply-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

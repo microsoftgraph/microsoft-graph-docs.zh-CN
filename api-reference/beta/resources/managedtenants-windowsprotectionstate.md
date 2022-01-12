@@ -1,16 +1,16 @@
 ---
 title: windowsProtectionState 资源类型
-description: 表示Windows托管设备的 Windows。
-author: isaiahwilliams
-localization_priority: Normal
+description: 表示Windows托管设备的保护Windows。
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: dc89db998f8fa75e46b3346f2517e5ee950e0ab5
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: d93cc321180ec948865da9a3ef93431f2ac7cb50
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402228"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863161"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "53402228"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示Windows托管设备的 Windows。
+表示Windows托管设备的保护Windows。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -36,7 +36,7 @@ ms.locfileid: "53402228"
 |engineVersion|String|托管设备的防病毒引擎版本。 可选。 只读。|
 |fullScanOverdue|布尔|指示托管设备快速扫描是否过期的标志。 可选。 只读。|
 |fullScanRequired|布尔|指示托管设备是否过期的完整扫描的标志。 可选。 只读。|
-|id|String|保护状态Windows标识符。 必填。 只读。|
+|id|String|保护状态Windows标识符。 必需。 只读。|
 |lastFullScanDateTime|DateTimeOffset|完成完全扫描的日期和时间。 可选。 只读。|
 |lastFullScanSignatureVersion|String|用于执行上一次完全扫描的反恶意软件版本。 可选。 只读。|
 |lastQuickScanDateTime|DateTimeOffset|完成快速扫描的日期和时间。 可选。 只读。|
@@ -48,10 +48,10 @@ ms.locfileid: "53402228"
 |managedDeviceId|String|托管设备的唯一标识符。 可选。 只读。|
 |managedDeviceName|String|托管显示名称的设备配置。 可选。 只读。|
 |networkInspectionSystemEnabled|布尔|指示是否已启用网络检查系统的标志。 可选。 只读。|
-|quickScanOverdue|布尔|指示快速扫描过期的天气标志。 可选。 只读。|
+|quickScanOverdue|Boolean|指示快速扫描过期的天气标志。 可选。 只读。|
 |realTimeProtectionEnabled|布尔|指示是否已启用实时保护的标志。 可选。 只读。|
-|rebootRequired|布尔|指示是否需要重新启动的标志。 可选。 只读。|
-|signatureUpdateOverdue|布尔|指示签名更新是否过期的标志。 可选。 只读。|
+|rebootRequired|Boolean|指示是否需要重新启动的标志。 可选。 只读。|
+|signatureUpdateOverdue|Boolean|指示签名更新是否过期的标志。 可选。 只读。|
 |signatureVersion|String|托管设备的签名版本。 可选。 只读。|
 |tenantDisplayName|String|托管显示名称租户的租户。 可选。 只读。|
 |tenantId|String|托管Azure Active Directory租户的租户[标识符](../resources/managedtenants-tenant.md)。 可选。 只读。|

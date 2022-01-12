@@ -1,16 +1,16 @@
 ---
 title: 创建 tenantTag
 description: 创建新的 tenantTag 对象。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 30cda4618023fc4258c439d1e3321346182a2421
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2fb711f789434c9f66fbc4cfb895e78166f1628f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034207"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61818742"
 ---
 # <a name="create-tenanttag"></a>创建 tenantTag
 命名空间：microsoft.graph.managedTenants
@@ -52,7 +52,7 @@ POST /tenantRelationships/managedTenants/tenantTags
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|租户显示名称的变量。|
-|说明|String|租户标记的说明。|
+|description|String|租户标记的说明。|
 
 ## <a name="response"></a>响应
 
@@ -93,7 +93,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-tenanttag-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-tenanttag-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

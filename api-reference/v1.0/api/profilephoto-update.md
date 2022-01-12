@@ -1,18 +1,18 @@
 ---
-title: 更新 profilephoto
-description: 更新已登录的用户照片 **用户**、 **组** 或 **联系人**。因为有
-ms.localizationpriority: high
+title: 更新 profilePhoto
+description: 更新已登录用户、指定组或联系人的照片。
+ms.localizationpriority: medium
 author: kevinbellinger
-ms.prod: ''
+ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fb813fbd135959f225d418fa94e7abe913612c15
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
-ms.translationtype: HT
+ms.openlocfilehash: 7f580dbce3bf83bc09403bd25a60cd00a01ab5d5
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104808"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791838"
 ---
-# <a name="update-profilephoto"></a>更新 profilephoto
+# <a name="update-profilephoto"></a>更新 profilePhoto
 
 命名空间：microsoft.graph
 
@@ -49,9 +49,10 @@ ms.locfileid: "59104808"
 |委派（个人 Microsoft 帐户）      |   不支持。            |
 |应用程序      |    Contacts.ReadWrite           |
 
-> **注意：** 要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。要了解详细信息，请参阅 [在没有已登录用户的情况下获取访问权限](/graph/auth-v2-service)。
->
-> 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
+> [!NOTE]
+> 1. 若要更新组织中任何用户的照片，你的应用必须具有 *User.ReadWrite.All* 应用程序权限，并且以其自己的身份（而不是代表用户）调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。 更新已登录用户的照片仅需要 *User.ReadWrite* 权限。
+> 2. 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
+> 3. 目前，B2C 租户不支持使用 Microsoft Graph API 更新Azure AD的照片。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -85,7 +86,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 如果成功，此方法返回 `200 OK` 响应代码。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -114,8 +115,9 @@ Binary data for the image
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response"
 } -->

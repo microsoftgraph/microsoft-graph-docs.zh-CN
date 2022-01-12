@@ -1,16 +1,16 @@
 ---
 title: managementActionTenantDeploymentStatus 资源类型
 description: 表示管理操作租户级别的部署状态。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 1967c3ad96cc9c4e76a718cafab7ba14207753a9
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: c06857bcdf492dc9779768df6fe09d08a6ec87b7
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402284"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860573"
 ---
 # <a name="managementactiontenantdeploymentstatus-resource-type"></a>managementActionTenantDeploymentStatus 资源类型
 
@@ -30,10 +30,10 @@ ms.locfileid: "53402284"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|租户级别部署状态的唯一标识符。 必填。 只读。|
+|id|String|租户级别部署状态的唯一标识符。 必需。 只读。|
 |statuses|[microsoft.graph.managedTenants.managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md) 集合|管理操作的每个实例的部署状态集合。 可选。|
-|tenantGroupId|String|与管理操作关联的租户组的标识符。 必填。 只读。|
-|tenantId|String|托管Azure Active Directory租户的租户[标识符](../resources/managedtenants-tenant.md)。 必填。 只读。|
+|tenantGroupId|String|与管理操作关联的租户组的标识符。 必需。 只读。|
+|tenantId|String|托管Azure Active Directory租户的租户[标识符](../resources/managedtenants-tenant.md)。 必需。 只读。|
 
 ## <a name="relationships"></a>关系
 无。

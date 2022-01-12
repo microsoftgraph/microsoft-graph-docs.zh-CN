@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 578e512509ecd202f30ab32bef6102b1b3253be0
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: 9e118eaf941aa6e8da5345999cd40df81131cdc6
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307634"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862924"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -20,7 +20,7 @@ ms.locfileid: "61307634"
 
 检索 webhook 订阅列表。 
 
-响应的内容取决于应用调用的上下文;有关详细信息，请参阅权限 [部分中](#permissions) 的方案。
+响应的内容取决于应用调用的上下文；有关详细信息，请参阅 [权限](#permissions) 部分中的方案。
 
 ## <a name="permissions"></a>权限
 
@@ -29,20 +29,21 @@ ms.locfileid: "61307634"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | 不支持 | 不支持 | CallRecords.Read.All  |
-|[channels](../resources/channel.md) (/teams/getAllChannels – 组织中所有频道)  | 不支持  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All |
-|[频道 (](../resources/channel.md) /teams/{id}/channels)  | Channel.ReadBasic.All、ChannelSettings.Read.All、Subscription.Read.All  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All  |
-|[chat](../resources/chat.md) (/chats – 组织内部的所有)  | 不支持 | 不支持 | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-|[chat](../resources/chat.md) (/chats/{id})  | Chat.ReadBasic、Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | ChatSettings.Read.Chat *、ChatSettings.ReadWrite.Chat*、Chat.Manage.Chat*、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
+|[频道](../resources/channel.md)（/teams/getAllChannels - 组织中的所有频道） | 不支持  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All |
+|[频道](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All, Subscription.Read.All  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All  |
+|[聊天](../resources/chat.md)（/chats - 组织中的所有聊天） | 不支持 | 不支持 | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[聊天](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic、Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | ChatSettings.Read.Chat *、ChatSettings.ReadWrite.Chat*、Chat.Manage.Chat*、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All、Subscription.Read.All | 不支持 | ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持 | 不支持 | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/users/{id}/chats/getAllMessages - 特定用户参与的所有聊天的聊天)  | Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | Chat.Read.All、Chat.ReadWrite.All |
+|[chatMessage](../resources/chatmessage.md)（/users/{id}/chats/getAllMessages - 特定用户所属所有聊天的聊天消息） | Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | Chat.Read.All、Chat.ReadWrite.All |
 |[联系人](../resources/contact.md) | Contacts.Read、Subscription.Read.All | Contacts.Read、Subscription.Read.All | Contacts.Read |
-|[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers)  | 不支持 | 不支持 | ChannelMember.Read.All |
-|[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers)  | 不支持 | 不支持 | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
-|[conversationMember](../resources/conversationmember.md) (/chats/{id}/members)  | ChatMember.Read、ChatMember.ReadWrite、Chat.ReadBasic、Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | ChatMember.Read.Chat *、Chat.Manage.Chat*、ChatMember.Read.All、ChatMember.ReadWrite.All、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
-|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members)  | TeamMember.Read.All、Subscription.Read.All | 不支持 | TeamMember.Read.All |
+|[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | 不支持 | 不支持 | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
+|[conversationMember](../resources/conversationmember.md) (/chats/{id}/members) | ChatMember.Read、ChatMember.ReadWrite、Chat.ReadBasic, Chat.Read、Chat.ReadWrite | 不支持 | ChatMember.Read.Chat *、Chat.Manage.Chat*、ChatMember.Read.All、ChatMember.ReadWrite.All、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/getAllMembers)  | 不支持 | 不支持 | TeamMember.Read.All, TeamMember.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All、Subscription.Read.All | 不支持 | TeamMember.Read.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | 不支持 | 不支持 | ChannelMember.Read.All |
 |[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite、Subscription.Read.All | 不支持 |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All、Subscription.Read.All | 不支持 | Files.ReadWrite.All |
 |[事件](../resources/event.md) | Calendars.Read、Subscription.Read.All | Calendars.Read、Subscription.Read.All | Calendars.Read |
@@ -54,14 +55,14 @@ ms.locfileid: "61307634"
 |[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All、Subscription.Read.All | 不支持 | SecurityEvents.ReadWrite.All |
-|[teams](../resources/team.md) (/teams – 组织内部的所有)  | 不支持 | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
-|[teams](../resources/team.md) (/teams/{id})  | Team.ReadBasic.All、TeamSettings.Read.All、Subscription.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams - 组织中的所有团队) | 不支持 | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All、TeamSettings.Read.All、Subscription.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite、Subscription.Read.All | Tasks.ReadWrite、Subscription.Read.All | 不支持 |
 |[user](../resources/user.md) | User.Read.All、Subscription.Read.All | User.Read.All | User.Read.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-响应结果基于调用应用的上下文。 以下各节介绍常见方案。
+响应结果基于调用应用的上下文。 以下部分介绍常见方案。
 
 ### <a name="basic-scenarios"></a>基本方案
 
@@ -92,7 +93,7 @@ GET /subscriptions
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法不支持帮助自定义响应的 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -138,7 +139,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 [!INCLUDE [sample-code](../includes/snippets/java/get-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -149,7 +150,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 下面展示了示例响应。 
 
->**注意：** 为了可读性，可能会缩短此处显示的响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应。
 
 <!-- {
   "blockType": "response",

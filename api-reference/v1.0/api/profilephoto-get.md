@@ -1,18 +1,18 @@
 ---
-title: 获取照片
+title: 获取 profilePhoto
 description: 获取指定的 profilePhoto 或其元数据（profilePhoto 属性）。
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5200ad013ea64a5cc0dfaa71c2edfc7ae3007ab7
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
-ms.translationtype: HT
+ms.openlocfilehash: aaac8d496bb2a958ecc0b70f206d8690f2846324
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123570"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61807476"
 ---
-# <a name="get-photo"></a>获取照片
+# <a name="get-profilephoto"></a>获取 profilePhoto
 
 命名空间：microsoft.graph
 
@@ -50,9 +50,11 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 |委派（个人 Microsoft 帐户）      |   Contacts.Read、Contacts.ReadWrite            |
 |应用程序      |    Contacts.Read、Contacts.ReadWrite           |
 
-> **注意：**  
-> - 个人 Microsoft 帐户不支持元数据操作。 
-> - 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
+> [!NOTE]
+> 
+> 1. 个人 Microsoft 帐户不支持元数据操作。
+> 2. 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
+> 3. 当前不支持在 B2C 租户Graph Microsoft Azure AD检索用户的照片。
 
 ## <a name="http-request"></a>HTTP 请求
 

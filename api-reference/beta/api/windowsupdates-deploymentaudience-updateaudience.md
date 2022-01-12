@@ -1,16 +1,16 @@
 ---
 title: deploymentAudience：updateAudience
 description: 更新 deploymentAudience 的成员和排除集合。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: d8d4d238f2d03359a95f6498890fdd4c34321d22
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c1c8f1a837810af8bc8dd5c9787e3a16532a5dad
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009391"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61800277"
 ---
 # <a name="deploymentaudience-updateaudience"></a>deploymentAudience：updateAudience
 
@@ -20,7 +20,7 @@ ms.locfileid: "61009391"
 
 更新 [deploymentAudience](../resources/windowsupdates-deploymentaudience.md)的成员和排除集合。
 
-将[azureADDevice](../resources/windowsupdates-azureaddevice.md)添加到部署访问群体的成员或排除集合会自动创建Azure AD对象（如果不存在）。
+向部署访问群体的成员或排除集合添加[azureADDevice](../resources/windowsupdates-azureaddevice.md)会自动创建Azure AD对象（如果不存在）。
 
 如果 **deploymentAudience** 的排除和 **成员** 集合中包含相同的 [updatableAsset，](../resources/windowsupdates-updatableasset.md)则部署不会应用于该资产。 
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/deploymentaudience-updateaudience-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/deploymentaudience-updateaudience-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

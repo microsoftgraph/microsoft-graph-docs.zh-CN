@@ -1,16 +1,16 @@
 ---
 title: userExperienceSettings 资源类型
 description: 设置控制用户对设备的更新体验。
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: a5d920d1618cb6d212baf0487a39960638859cef
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 889e771f34cc88244f79785cb29c388a88fcd61b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067257"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792167"
 ---
 # <a name="userexperiencesettings-resource-type"></a>userExperienceSettings 资源类型
 

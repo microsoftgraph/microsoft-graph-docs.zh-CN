@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8224dbe78fd41201f66eab21bc45623a84304ac1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: de656d95776d41e9075c9c00ab6d19328e634bab
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021067"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792160"
 ---
 # <a name="list-messages-in-a-chat"></a>列出聊天中的消息
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 [!INCLUDE [sample-code](../includes/snippets/java/get-allchatmessages-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-allchatmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -137,6 +137,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": null,
             "channelIdentity": null,
+            "onBehalfOf": null,
             "policyViolation": null,
             "eventDetail": null,
             "from": {
@@ -172,6 +173,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": null,
             "channelIdentity": null,
+            "onBehalfOf": null,
             "policyViolation": null,
             "eventDetail": null,
             "from": {
@@ -215,6 +217,15 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
+            "onBehalfOf": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "6703568a-3b0e-4a3b-9d33-0e1bc5ff1521",
+                    "displayName": "Test User",
+                    "userIdentityType": "aadUser"
+                }
+            },
             "reactions": [],
             "eventDetail": {
                 "@odata.type": "#microsoft.graph.chatRenamedEventMessageDetail",

@@ -1,16 +1,16 @@
 ---
 title: expeditedQualityUpdateReference 资源类型
 description: 表示Windows 10质量更新内容以加快更新。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: c3313483305613cf684b066f2ba9569676974b23
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: fa89e4c7cb8a20431b07b88e4d2eb92193d7148c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890820"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861120"
 ---
 # <a name="expeditedqualityupdatereference-resource-type"></a>expeditedQualityUpdateReference 资源类型
 
@@ -20,12 +20,12 @@ ms.locfileid: "60890820"
 
 表示Windows 10质量更新内容以加快更新。
 
-在部署中，相同的快速质量更新参考可能会导致设备接收不同的更新修订，但内容被视为与部署中所有设备的上下文等效。
+在部署中，相同的快速质量更新参考可能导致设备接收不同的更新修订，但内容被视为与部署中所有设备的上下文等效。
 
 继承自 [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md)。
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|指定所引用内容的分类。 支持 **qualityUpdateClassification 值的子集**。 默认值为 `security`。 可取值为：`security`、`unknownFutureValue`。 继承自 [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md)。|
 |equivalentContent|microsoft.graph.windowsUpdates.equivalentContentOption|指定要视为等效内容的其他内容。 支持 **equivalentContentOption 值的子集**。 默认值为 `latestSecurity`。 可取值为：`latestSecurity`、`unknownFutureValue`。|

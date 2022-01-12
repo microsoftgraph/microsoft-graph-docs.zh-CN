@@ -1,16 +1,16 @@
 ---
 title: 创建 updatableAssetGroup
 description: 创建新的 updatableAssetGroup 对象。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: db391f9e9fa755e309a834170f1834bc6adbf03e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 76bc738f36e4000152d4c5869995008df888b2e0
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029916"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863663"
 ---
 # <a name="create-updatableassetgroup"></a>创建 updatableAssetGroup
 命名空间：microsoft.graph.windowsUpdates
@@ -21,7 +21,7 @@ ms.locfileid: "61029916"
 
 **updatableAssetGroup** 资源继承自 [updatableAsset](../resources/windowsupdates-updatableasset.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -90,7 +90,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-updatableassetgroup-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-updatableassetgroup-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

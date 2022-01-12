@@ -1,16 +1,16 @@
 ---
 title: tenantContract 资源类型
 description: 表示租户和管理实体之间的关系信息。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 104b475428efe82a2e56f823845b933149aeab18
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: d2531120eda65f90cd541e9f536f74733d423ec8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402276"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791860"
 ---
 # <a name="tenantcontract-resource-type"></a>tenantContract 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "53402276"
 |属性|类型|说明|
 |:---|:---|:---|
 |contractType|Int32|管理实体和租户之间存在的关系类型。 可选。 只读。|
-|defaultDomainName|String|租户的默认域名。 必填。 只读。|
+|defaultDomainName|String|租户的默认域名。 必需。 只读。|
 |displayName|String|租户的显示名称。 可选。 只读。|
 
 ## <a name="relationships"></a>关系

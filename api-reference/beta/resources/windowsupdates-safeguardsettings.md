@@ -1,16 +1,16 @@
 ---
 title: safeguardSettings 资源类型
 description: 管理服务应用于部署中的设备的安全措施。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: af40a9aaa8001bda15f442dd7f79baac014168a2
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d3c276a07483b42e513266077ef1ada3bc516d47
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695529"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792118"
 ---
 # <a name="safeguardsettings-resource-type"></a>safeguardSettings 资源类型
 

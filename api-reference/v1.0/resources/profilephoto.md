@@ -1,16 +1,16 @@
 ---
 title: profilePhoto 资源类型
 description: 从 Exchange Online 访问的用户、组或 Outlook 联系人的个人资料照片。它是不以 base-64 编码的二进制数据。
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: kevinbellinger
-ms.prod: ''
+ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 1b5934eaca94c68e5e11e4131b2f684bb8cdd100
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
-ms.translationtype: HT
+ms.openlocfilehash: d384416efe6dd26999972954433964d6f2b8e77d
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143823"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792097"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto 资源类型
 
@@ -26,6 +26,10 @@ Exchange Online 支持的 HD 照片大小如下所示：'48x48'、'64x64'、'96x
 |:---------------|:--------|:----------|
 |[获取 profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |获取指定的 **profilePhoto** 或其元数据（profilePhoto 属性）。|
 |[更新](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |将照片分配给指定的用户、组或联系人。照片应为二进制格式。它将替换现有的照片（如有）。|
+
+> [!NOTE]
+>
+> 目前，B2C 租户不支持Graph Microsoft Azure AD API 管理用户的照片。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

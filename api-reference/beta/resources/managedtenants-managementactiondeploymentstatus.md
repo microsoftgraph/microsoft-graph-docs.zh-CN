@@ -1,16 +1,16 @@
 ---
 title: managementActionDeploymentStatus 资源类型
 description: 表示给定托管租户的部署状态。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: efd789a7b4b48098e8d679273da1152f6611a28c
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 2f9b8ce493239e4c33bc2f20c615897afab41d9b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402308"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791880"
 ---
 # <a name="managementactiondeploymentstatus-resource-type"></a>managementActionDeploymentStatus 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "53402308"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|managementActionId|String|管理操作标识符。 必填。 只读。|
-|managementTemplateId|String|用于生成管理操作的管理模板标识符。 必填。 只读。|
-|状态|managementActionStatus|管理操作的状态。 可取值为：`toAddress`、`completed`、`error`、`timeOut`、`inProgress`、`planned`、`resolvedBy3rdParty`、`resolvedThroughAlternateMitigation`、`riskAccepted`、`unknownFutureValue`。 必填。|
+|managementActionId|String|管理操作标识符。 必需。 只读。|
+|managementTemplateId|String|用于生成管理操作的管理模板标识符。 必需。 只读。|
+|状态|managementActionStatus|管理操作的状态。 可取值为：`toAddress`、`completed`、`error`、`timeOut`、`inProgress`、`planned`、`resolvedBy3rdParty`、`resolvedThroughAlternateMitigation`、`riskAccepted`、`unknownFutureValue`。 必需。|
 |workloadActionDeploymentStatuses|[microsoft.graph.managedTenants.workloadActionDeploymentStatus](../resources/managedtenants-workloadactiondeploymentstatus.md) 集合|给定管理操作工作负荷操作部署方案的集合。 可选。|
 
 ## <a name="relationships"></a>关系

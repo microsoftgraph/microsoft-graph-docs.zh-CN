@@ -1,16 +1,16 @@
 ---
 title: managementTemplate 资源类型
 description: 表示一组可以针对托管租户执行的操作和设置。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 2055db2d291dce3da0b4ad144c07b09bbb2fea6f
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 6dacd5d94c921ca4afd59219be24509f6879c5b8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402277"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792048"
 ---
 # <a name="managementtemplate-resource-type"></a>managementTemplate 资源类型
 
@@ -29,10 +29,10 @@ ms.locfileid: "53402277"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|category|managementCategory|管理模板的管理类别。 可取值为：`custom`、`devices`、`identity`、`unknownFutureValue`。 必填。 只读。|
+|category|managementCategory|管理模板的管理类别。 可取值为：`custom`、`devices`、`identity`、`unknownFutureValue`。 必需。 只读。|
 |说明|String|管理模板的说明。 可选。 只读。|
-|displayName|String|管理显示名称的表单。 必填。 只读。|
-|id|String|管理模板的唯一标识符。 必填。 只读。|
+|displayName|String|管理显示名称的表单。 必需。 只读。|
+|id|String|管理模板的唯一标识符。 必需。 只读。|
 |parameters|[microsoft.graph.managedTenants.templateParameter](../resources/managedtenants-templateparameter.md) 集合|管理模板使用的参数集合。 可选。 只读。|
 |workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) 集合|与管理模板关联的工作负荷操作的集合。 可选。 只读。|
 

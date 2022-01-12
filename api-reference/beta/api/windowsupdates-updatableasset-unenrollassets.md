@@ -1,16 +1,16 @@
 ---
 title: updatableAsset：unenrollAssets
 description: 从部署服务的更新管理中注销 updatableAsset 资源。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 8a272e59829342d1cc18540686619e0028daf275
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 40f0a0f766a18e5640a0f6326c522d488382d8d8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009279"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862795"
 ---
 # <a name="updatableasset-unenrollassets"></a>updatableAsset：unenrollAssets
 命名空间：microsoft.graph.windowsUpdates
@@ -102,7 +102,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/updatableasset-unenrollassets-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableasset-unenrollassets-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

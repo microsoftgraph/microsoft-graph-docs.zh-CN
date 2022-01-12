@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 226cb77bcc68612982769168945d1d1d556d4027
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: b5c3bb05638325778188fcb265cb33198988d0a8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61565144"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61832451"
 ---
 # <a name="create-externalmeetingregistrant"></a>创建 externalMeetingRegistrant
 
@@ -20,7 +20,7 @@ ms.locfileid: "61565144"
 
 在启用了[externalMeetingRegistration](../resources/externalmeetingregistrant.md)的联机会议中注册[externalMeetingRegistrant。](../resources/externalmeetingregistration.md) 会议组织者通过提供外部注册系统中的唯一 **ID** 来注册某人，并获取此注册表的唯一 **joinWebUrl。**
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "61565144"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/{meetingId}/registration/registrants
-POST /users/{userId}/onlineMeetings{meetingId}/registration/registrants
+POST /users/{userId}/onlineMeetings/{meetingId}/registration/registrants
 ```
 
 > [!TIP]
@@ -55,7 +55,7 @@ POST /users/{userId}/onlineMeetings{meetingId}/registration/registrants
 
 ## <a name="request-body"></a>请求正文
 
-- 如果 [externalMeetingRegistration](../resources/externalmeetingregistration.md)对象的 **allowedRegistrant** 属性的值为 ，则提供外部注册系统的 `organization` **id、** 注册表用户的 **tenantId** 和 **Azure Active Directory。**
+- 如果 [externalMeetingRegistration](../resources/externalmeetingregistration.md)对象的 **allowedRegistrant** 属性的值为 ，则提供外部注册系统的 `organization` **ID、** 注册表用户的 **tenantId** 和 **Azure Active Directory。**
 - 如果 [externalMeetingRegistration](../resources/externalmeetingregistration.md)对象的 **allowedRegistrant** 属性的值为 ，则 `everyone` 仅提供外部注册系统的 ID。
 
 > [!IMPORTANT]

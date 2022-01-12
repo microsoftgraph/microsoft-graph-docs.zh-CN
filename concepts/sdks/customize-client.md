@@ -3,20 +3,27 @@ title: 自定义 Microsoft Graph SDK 服务客户端
 description: 提供有关如何更改 Microsoft Graph SDK 服务客户端的默认行为的说明。
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 1413511e04e508d76a5e7e7366c99699d17cf718
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: e5bf4dc288d401fd86b8fed578a108433c833678
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225866"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862881"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>自定义 Microsoft Graph SDK 服务客户端
 
-Microsoft Graph SDK 客户端配置了一组默认的中间件，允许 SDK 与 Microsoft Graph终结点通信。 此默认集是可自定义的，允许您更改客户端的行为。 例如，可以插入自定义日志记录，或添加测试处理程序以模拟特定方案。 可以添加和删除中间件组件。 需要注意的是，中间件组件的运行顺序非常重要。
+Microsoft Graph SDK 客户端配置一组默认的中间件，允许 SDK 与 Microsoft Graph终结点通信。 此默认集是可自定义的，允许您更改客户端的行为。 例如，可以插入自定义日志记录，或添加测试处理程序以模拟特定方案。 可以添加和删除中间件组件。 需要注意的是，中间件组件的运行顺序非常重要。
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
 ```csharp
+// using Azure.Identity;
+// https://docs.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
+var interactiveCredential = new InteractiveBrowserCredential(...);
+
+var authProvider = new TokenCredentialAuthProvider(
+    interactiveCredential, scopes);
+
 var handlers = GraphClientFactory.CreateDefaultHandlers(authProvider);
 
 // Remove a default handler
@@ -41,16 +48,32 @@ var messages = await customGraphClient.Me.Messages.Request()
 ## <a name="typescript"></a>[TypeScript](#tab/typeScript)
 
 ```typescript
-// Create a custom auth provider
-let authProvider = new SimpleAuthProvider(accessToken);
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    AuthorizationCodeCredential
+} = require("@azure/identity");
+
+const credential = new AuthorizationCodeCredential(
+    "<YOUR_TENANT_ID>",
+    "<YOUR_CLIENT_ID>",
+    "<AUTH_CODE_FROM_QUERY_PARAMETERS>",
+    "<REDIRECT_URL>"
+);
+
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
 // Create an authentication handler that uses custom auth provider
-let authHandler = new MicrosoftGraph.AuthenticationHandler(authProvider);
+const authHandler = new MicrosoftGraph.AuthenticationHandler(authProvider);
 
 // Create a custom logging handler
-let loggingHandler = new CustomLoggingHandler();
+const loggingHandler = new CustomLoggingHandler();
 
 // Create a standard HTTP message handler
-let httpHandler = new MicrosoftGraph.HTTPMessageHandler();
+const httpHandler = new MicrosoftGraph.HTTPMessageHandler();
 
 // Use setNext to chain handlers together
 // auth -> logging -> http
@@ -64,27 +87,9 @@ const client = MicrosoftGraph.Client.initWithMiddleware({
   middleware: authHandler,
 });
 
-let response: PageCollection = await client
+const response: PageCollection = await client
   .api('/me/messages?$top=10&$select=sender,subject')
   .get();
-```
-
-### <a name="simpleauthproviderts"></a>SimpleAuthProvider.ts
-
-```typescript
-import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
-
-export default class SimpleAuthProvider implements AuthenticationProvider {
-  private accessToken: string;
-
-  constructor(accessToken: string) {
-    this.accessToken = accessToken;
-  }
-
-  getAccessToken = async (): Promise<string> => {
-    return this.accessToken;
-  }
-}
 ```
 
 ### <a name="customlogginghandlerts"></a>CustomLoggingHandler.ts
@@ -108,21 +113,38 @@ export default class CustomLoggingHandler implements Middleware {
 ## <a name="java"></a>[Java](#tab/java)
 
 ```java
+import com.azure.identity.InteractiveBrowserCredential;
+import com.azure.identity.InteractiveBrowserCredentialBuilder;
+import com.microsoft.graph.authentication.TokenCredentialAuthProvider;
+import com.microsoft.graph.httpcore.HttpClients;
+
+import okhttp3.OkHttpClient;
+
+final List<String> scopes = Arrays.asList("User.Read");
+
+final InteractiveBrowserCredential credential =
+    new InteractiveBrowserCredentialBuilder()
+        .clientId("clientId")
+        .redirectUrl("redirectUrl")
+        .build();
+
+final TokenCredentialAuthProvider authProvider =
+    new TokenCredentialAuthProvider(scopes, credential);
 // you can configure any OkHttpClient option and add interceptors
 // Note: com.microsoft.graph:microsoft-graph:3.0 or above is required
 // for a complete description of available configuration options https://square.github.io/okhttp/4.x/okhttp/okhttp3/-ok-http-client/-builder/
-final OkHttpClient httpClient = HttpClients.createDefault(authenticationProvider)
-                                .newBuilder()
-                                .followSslRedirects(false) // sample configuration to apply to client
-                                .build();
+final OkHttpClient httpClient = HttpClients.createDefault(authProvider)
+    .newBuilder()
+    .followSslRedirects(false) // sample configuration to apply to client
+    .build();
 
 final GraphServiceClient graphServiceClient = GraphServiceClient
-                .builder()
-                .httpClient(httpClient)
-                .buildClient();
+    .builder()
+    .httpClient(httpClient)
+    .buildClient();
 ```
 
-## <a name="go"></a>[Go](#tab/go)
+## <a name="go"></a>[转到](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -247,6 +269,7 @@ final InetSocketAddress proxyInetAddress = new InetSocketAddress("proxy.ip.or.ho
 // The section below configures the proxy for the Azure Identity client
 // and is only needed if you rely on Azure Identity for authentication
 final ProxyOptions pOptions = new ProxyOptions(ProxyOptions.Type.HTTP, proxyInetAddress);
+pOptions.setCredentials("username", "password");
 final HttpClientOptions clientOptions = new HttpClientOptions();
 clientOptions.setProxyOptions(pOptions);
 final HttpClient azHttpClient = HttpClient.createDefault(clientOptions);
@@ -295,7 +318,7 @@ final GraphServiceClient graphServiceClient =
 > [!NOTE]
 > 有关 Azure Identity 代理配置详细信息，请参阅 [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions)。
 
-## <a name="go"></a>[Go](#tab/go)
+## <a name="go"></a>[转到](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 

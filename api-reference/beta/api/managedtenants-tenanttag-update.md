@@ -1,16 +1,16 @@
 ---
 title: 更新 tenantTag
 description: 更新 tenantTag 对象的属性。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 9b08396a4e7fc569f3e9868367b80822bf036d03
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 19db255f70f0e0b9db8f18c2ffae9a5412608d7a
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020689"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862688"
 ---
 # <a name="update-tenanttag"></a>更新 tenantTag
 命名空间：microsoft.graph.managedTenants
@@ -52,7 +52,7 @@ PATCH /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|租户显示名称的变量。|
-|说明|String|租户标记的说明。|
+|description|String|租户标记的说明。|
 |tenants|[microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md) 集合|与租户标记关联的托管租户的集合。|
 
 ## <a name="response"></a>响应
@@ -94,7 +94,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenanttag-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tenanttag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

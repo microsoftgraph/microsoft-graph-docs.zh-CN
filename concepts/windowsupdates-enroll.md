@@ -1,22 +1,22 @@
 ---
 title: 通过 Windows Update for Business 部署服务注册更新管理
 description: 当设备通过 Windows Update for Business 部署服务注册更新管理时，可以使用部署服务管理从 Windows Update 传递到该设备的内容。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: cfa1d9fe41acc0b8a872c8f0e8a9b64bb6750c90
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d52bdc3c52fb4989f4c869491257ebf2fb857d61
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117534"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61857223"
 ---
 # <a name="enroll-in-update-management-by-the-windows-update-for-business-deployment-service"></a>通过 Windows Update for Business 部署服务注册更新管理
 
-当你通过 Windows Update for Business 部署服务在更新管理中注册设备时，可以使用部署服务管理从 Windows Update 传递到该设备的内容。 你可以按更新类别在更新管理中注册设备。
+当你通过 Windows Update for Business 部署服务在更新管理中注册设备时，可以使用部署服务来管理从 Windows Update 传递到该设备的内容。 你可以按更新类别在更新管理中注册设备。
 
-如今，部署服务支持注册管理Windows 10更新。 目前，部署服务不需要注册管理质量Windows 10，以部署快速的质量更新。
+如今，部署服务支持注册管理Windows 10更新。 目前，部署服务不需要注册管理质量Windows 10以部署快速的质量更新。
 
 ## <a name="enroll-the-device-in-update-management"></a>在更新管理中注册设备
 
@@ -87,7 +87,7 @@ Content-Type: application/json
 
 ## <a name="unenroll-from-management-by-the-service-or-unregister-from-the-service"></a>注销服务管理或注销服务 
 
-当注销设备以从服务的管理中注销给定更新类别时，设备将不再由部署服务管理，并且可能会开始根据设备策略配置从 Windows Update 接收其他更新。 如果将设备分配给给定更新类别的任何部署，则它不会接收该内容。 设备仍注册到服务中，并且仍在注册和接收其他更新类别 (（如果适用) ）。
+为给定更新类别注销服务管理的设备时，设备不再由部署服务管理，并且可能会开始根据设备策略配置从 Windows Update 接收其他更新。 如果将设备分配给给定更新类别的任何部署，则它不会接收该内容。 设备仍注册到服务中，并且仍在注册并接收其他更新类别 (（如果适用) ）。
 
 ### <a name="request"></a>请求
 

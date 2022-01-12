@@ -1,16 +1,16 @@
 ---
 title: 删除 updatableAsset
 description: 删除 updatableAsset 对象。
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 069d3806dc94bde3ddc1e89a00093e9ba1adda8d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 665953a75322bd8d949610ed80630349f59c650d
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031260"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860022"
 ---
 # <a name="delete-updatableasset"></a>删除 updatableAsset
 命名空间：microsoft.graph.windowsUpdates
@@ -19,7 +19,7 @@ ms.locfileid: "61031260"
 
 删除 [updatableAsset](../resources/windowsupdates-updatableasset.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{u
 [!INCLUDE [sample-code](../includes/snippets/java/delete-updatableasset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-updatableasset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

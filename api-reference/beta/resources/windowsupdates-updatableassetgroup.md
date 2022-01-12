@@ -1,16 +1,16 @@
 ---
 title: updatableAssetGroup 资源类型
 description: 一组可接收更新的 azureADDevice 资源。
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: a3aca42b69a906f167393cfd284d6756b3c4bb52
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 91e230fe3c158da0b02ce5af9df6f660855d253a
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067299"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861588"
 ---
 # <a name="updatableassetgroup-resource-type"></a>updatableAssetGroup 资源类型
 
@@ -30,11 +30,11 @@ ms.locfileid: "52067299"
 |[列出 updatableAssetGroup 资源](../api/windowsupdates-updates-list-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) 集合|获取 [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) 对象及其属性的列表。|
 |[创建 updatableAssetGroup](../api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|创建新的 [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) 对象。|
 |[获取 updatableAssetGroup](../api/windowsupdates-updatableassetgroup-get.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|读取 [updatableAssetGroup 对象的属性和](../resources/windowsupdates-updatableassetgroup.md) 关系。|
-|[删除 updatableAssetGroup](../api/windowsupdates-updatableassetgroup-delete.md)|无|删除 [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) 对象。|
-|[添加成员](../api/windowsupdates-updatableassetgroup-addmembers.md)|无|将成员添加到 [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)。|
-|[按 ID (添加) ](../api/windowsupdates-updatableassetgroup-addmembers.md)|无|将成员添加到 [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)。|
+|[删除 updatableAssetGroup](../api/windowsupdates-updatableassetgroup-delete.md)|None|删除 [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) 对象。|
+|[添加成员](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|将成员添加到 [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)。|
+|[按 ID (添加) ](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|将成员添加到 [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)。|
 |[删除成员](../api/windowsupdates-updatableassetgroup-removemembers.md)|无|从 [updatableAssetGroup 中删除成员](../resources/windowsupdates-updatableassetgroup.md)。|
-|[按 ID (删除) ](../api/windowsupdates-updatableassetgroup-removemembers.md)|无|从 [updatableAssetGroup 中删除成员](../resources/windowsupdates-updatableassetgroup.md)。|
+|[按 ID (删除) ](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|从 [updatableAssetGroup 中删除成员](../resources/windowsupdates-updatableassetgroup.md)。|
 |[List members](../api/windowsupdates-updatableassetgroup-list-members.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|从 [members 导航属性获取 updatableAsset](../resources/windowsupdates-updatableasset.md) 资源。|
 
 ## <a name="properties"></a>属性

@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: c3e59da92b2970ef264959cc411d6265a4dce177
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: f44f7ce9b68217275d6c3238c9d2a02cb771c3e3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60932074"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863225"
 ---
 # <a name="reports-getprinterarchivedprintjobs"></a>reports： getPrinterArchivedPrintJobs
 
@@ -20,7 +20,7 @@ ms.locfileid: "60932074"
 
 获取已排队等待特定打印机的存档打印作业 [的列表](../resources/printer.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -44,11 +44,15 @@ GET /reports/getPrinterArchivedPrintJobs(printerId=printerId-value,startDateTime
 
 ## <a name="function-parameters"></a>函数参数
 
+在请求 URL 中，提供以下带值的函数参数：
+
 | 参数     | 类型                 | 是否必需？ | 说明                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `printerId`   | `Edm.String`         | 是       | 要返回其数据的打印机的 ID。                            |
-| `startDateTime` | `Edm.DateTimeOffset` | 否        | 开始日期包含 (数据) 时间段的包含时间（含这两者）。 |
-| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期 (包含) 的数据时间段的结束日期（含这两者）。   |
+| `startDateTime` | `Edm.DateTimeOffset` | 否        | 开始日期包含 (数据) 时间段的开始日期（含这两者）。 |
+| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期包括 (数据) 时间段的结束日期（含这两者）。 |
+
+>**注意：** 如果不需要值，则使用 null 值传递参数。
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。

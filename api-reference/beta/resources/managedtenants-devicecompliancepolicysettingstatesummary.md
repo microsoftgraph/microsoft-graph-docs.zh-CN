@@ -1,16 +1,16 @@
 ---
 title: deviceCompliancePolicySettingStateSummary 资源类型
 description: 表示给定托管租户的设备合规性策略设置状态摘要。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 02b69b5df1c6ae482c653960a0081bc078be815d
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 409e72591a75ee84159fb59d27e061ebbf8ae3a9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402067"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61843394"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary 资源类型
 
@@ -29,11 +29,11 @@ ms.locfileid: "53402067"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|此实体的唯一标识符。 必填。 只读。|
+|id|String|此实体的唯一标识符。 必需。 只读。|
 |conflictDeviceCount|Int32|冲突状态中的设备数。 可选。 只读。|
 |errorDeviceCount|Int32|出现错误状态的设备数。 可选。 只读。|
 |failedDeviceCount|Int32|故障状态中的设备数。 可选。 只读。|
-|intuneAccountId|String|帐户标识Microsoft Intune标识。 必填。 只读。|
+|intuneAccountId|String|帐户标识Microsoft Intune标识。 必需。 只读。|
 |intuneSettingId|String|Intune 设置的标识符。 可选。 只读。|
 |lastRefreshedDateTime|DateTimeOffset|实体上次在多租户管理平台中更新的日期和时间。 可选。 只读。|
 |notApplicableDeviceCount|Int32|状态不适用的设备数量。 可选。 只读。|
@@ -41,8 +41,8 @@ ms.locfileid: "53402067"
 |policyType|String|设备合规性策略的类型。 可选。 只读。|
 |settingName|String|设备合规性策略中设置的名称。 可选。 只读。|
 |succeededDeviceCount|Int32|状态成功的设备数。 可选。 只读。|
-|tenantDisplayName|String|托管显示名称租户的租户。 必填。 只读。|
-|tenantId|String|托管Azure Active Directory租户的租户[标识符](../resources/managedtenants-tenant.md)。 必填。 只读。|
+|tenantDisplayName|String|托管显示名称租户的租户。 必需。 只读。|
+|tenantId|String|托管Azure Active Directory租户的租户[标识符](../resources/managedtenants-tenant.md)。 必需。 只读。|
 
 ## <a name="relationships"></a>关系
 无。

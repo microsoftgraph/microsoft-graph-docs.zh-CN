@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4ba8c5ab78d18d773c5eda4702665e7b8ad9be83
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: af9fa6e85082c7dbc16808e5852205cab6227af6
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61547524"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860998"
 ---
 # <a name="get-meetingattendancereport"></a>获取 meetingAttendanceReport
 
@@ -80,7 +80,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/attendanceReports/c9b6db1c-d5eb-427d-a5c0-20088d9b22d7?$expand=attendanceRecords
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/attendanceReports/c9b6db1c-d5eb-427d-a5c0-20088d9b22d7?$expand=attendanceRecords
 ```
 
 ### <a name="response"></a>响应

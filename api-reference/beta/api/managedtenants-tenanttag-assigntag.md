@@ -1,16 +1,16 @@
 ---
 title: tenantTag：assignTag
 description: 将租户标记分配给指定的托管租户。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: f1c2ae61e2df3265d4b8383fb428478f382d4bfb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 05c5f16e905842acf2bee7e92fc7fb294754f850
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014606"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861732"
 ---
 # <a name="tenanttag-assigntag"></a>tenantTag：assignTag
 命名空间：microsoft.graph.managedTenants
@@ -93,7 +93,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/tenanttag-assigntag-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tenanttag-assigntag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

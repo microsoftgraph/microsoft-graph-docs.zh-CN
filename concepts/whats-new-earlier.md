@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: e46c1be767915769fde330b1bf58a359d3ed1a69
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 9b31312e4592dcd9c09a50d4418a0dff64581075
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650557"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791817"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -20,10 +20,6 @@ ms.locfileid: "61650557"
 
 ### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
 支持拨入电话访问和[联机会议](/graph/api/resources/onlinemeeting)（[音频会议](/graph/api/resources/audioConferencing)）使用多个收费和免费号码。
-
-<!-- Hold off until permissions are deployed
-As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanagement/privacy-management?view=o365-worldwide&preserve-view=true), subject rights request now debuts in both v1 and beta endpoints of Microsoft Graph. The [subject rights request API](/graph/api/resources/subjectrightsrequest) lets users make requests to review or manage their personal data in their organizations. It also lets organizations automate and scale managing these requests, helping them to meet industry regulations more efficiently.
--->
 
 ### <a name="education"></a>教育
 支持将 [介质](/graph/api/resources/educationMediaResource) 文件或其他 [外部泛型资源](/graph/api/resources/educationExternalResource) 为 [分配资源](/graph/api/resources/educationassignmentresource)。

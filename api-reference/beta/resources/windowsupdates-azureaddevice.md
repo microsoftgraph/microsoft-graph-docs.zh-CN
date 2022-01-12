@@ -1,16 +1,16 @@
 ---
 title: azureADDevice 资源类型
-description: 表示 Azure AD Azure Active Directory (注册) Azure AD 服务中的设备。
-author: Alice-at-Microsoft
-localization_priority: Normal
+description: 表示在部署Azure Active Directory (Azure AD) 注册的设备。
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: a9d7b68257895674530acfbafcd0fb6b6c9c7b02
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: a055c944c1b7a5f2bd4bbd23a9edc8d9c3b3ff88
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067871"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792188"
 ---
 # <a name="azureaddevice-resource-type"></a>azureADDevice 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "52067871"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure AD Azure Active Directory (注册) Azure AD 服务中的设备。
+表示在部署Azure Active Directory (Azure AD) 注册的设备。
 
-Azure AD 设备通过以下方法之一自动创建：
+系统Azure AD以下方法之一自动创建设备：
 * [updatableAsset： enrollAssets](../api/windowsupdates-updatableasset-enrollassets.md)
 * [updatableAsset： enrollAssetsById](../api/windowsupdates-updatableasset-enrollassetsbyid.md)
 * [deploymentAudience：updateAudience](../api/windowsupdates-deploymentaudience-updateaudience.md)
@@ -35,11 +35,11 @@ Azure AD 设备通过以下方法之一自动创建：
 |:---|:---|:---|
 |[列出 azureADDevice 资源](../api/windowsupdates-updates-list-updatableassets-azureaddevice.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md) 集合|获取 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 对象及其属性的列表。|
 |[获取 azureADDevice](../api/windowsupdates-azureaddevice-get.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md)|读取 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 对象的属性和关系。|
-|[删除 azureADDevice](../api/windowsupdates-azureaddevice-delete.md)|无|删除 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 对象。|
-|[在管理中注册 azureADDevice 资源](../api/windowsupdates-updatableasset-enrollassets.md)|无|在 [部署服务更新管理中注册 azureADDevice](../resources/windowsupdates-azureaddevice.md) 资源。|
-|[按 ID 管理中心注册 azureADDevice (azureADDevice) ](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|无|在 [部署服务更新管理中注册 azureADDevice](../resources/windowsupdates-azureaddevice.md) 资源。|
-|[从管理中注销 azureADDevice 资源](../api/windowsupdates-updatableasset-unenrollassets.md)|无|从部署服务的更新管理中注销 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 资源。|
-|[取消注册按 ID 管理 (azureADDevice) ](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|无|从部署服务的更新管理中注销 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 资源。|
+|[删除 azureADDevice](../api/windowsupdates-azureaddevice-delete.md)|None|删除 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 对象。|
+|[在管理中注册 azureADDevice 资源](../api/windowsupdates-updatableasset-enrollassets.md)|None|在 [部署服务更新管理中注册 azureADDevice](../resources/windowsupdates-azureaddevice.md) 资源。|
+|[按 ID 管理策略注册 azureADDevice (管理) ](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|在 [部署服务更新管理中注册 azureADDevice](../resources/windowsupdates-azureaddevice.md) 资源。|
+|[从管理中注销 azureADDevice 资源](../api/windowsupdates-updatableasset-unenrollassets.md)|None|从部署服务的更新管理中注销 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 资源。|
+|[取消注册按 ID 管理 (azureADDevice) ](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|从部署服务的更新管理中注销 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 资源。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

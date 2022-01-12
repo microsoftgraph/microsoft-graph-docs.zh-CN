@@ -1,16 +1,16 @@
 ---
 title: workingHours 资源类型
 description: 表示特定时区用户一周的工作天数和小时数。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: 5e86df6eae7d1ae399cb764321e8fc2af1815409
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1f5d2ee2b0a04e4e67d79220b1914580235becb8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472396"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863282"
 ---
 # <a name="workinghours-resource-type"></a>workingHours 资源类型
 
@@ -54,7 +54,6 @@ ms.locfileid: "50472396"
   "endTime": "string (TimeOfDay)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

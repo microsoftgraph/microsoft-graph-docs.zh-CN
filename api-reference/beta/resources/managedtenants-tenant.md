@@ -1,16 +1,16 @@
 ---
 title: 租户资源类型
 description: 表示与管理实体关联的租户。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: ee4bd57aa4e7fa2ea15c86376389d3b6e12198ea
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 7094915b850161a14b8c5ba93bcebbfd15eedafb
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402396"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61842415"
 ---
 # <a name="tenant-resource-type"></a>租户资源类型
 
@@ -33,8 +33,8 @@ ms.locfileid: "53402396"
 |:---|:---|:---|
 |contract|[microsoft.graph.managedTenants.tenantContract](../resources/managedtenants-tenantcontract.md)|租户与管理实体的关系详细信息。|
 |createdDateTime|DateTimeOffset|在多租户管理平台中创建租户的日期和时间。 可选。 只读。|
-|displayName|String|租户的显示名称。 必填。 只读。|
-|id|String|租户Azure Active Directory租户标识符。 必填。 只读。|
+|displayName|String|租户的显示名称。 必需。 只读。|
+|id|String|租户Azure Active Directory租户标识符。 必需。 只读。|
 |lastUpdatedDateTime|DateTimeOffset|在多租户管理平台中上次更新租户的日期和时间。 可选。 只读。|
 |tenantId|String|托管Azure Active Directory租户的租户[标识符](../resources/managedtenants-tenant.md)。 可选。 只读。|
 |tenantStatusInformation|[microsoft.graph.managedTenants.tenantStatusInformation](../resources/managedtenants-tenantstatusinformation.md)|租户的载入状态信息。 可选。 只读。|

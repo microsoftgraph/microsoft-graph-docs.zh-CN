@@ -1,16 +1,16 @@
 ---
 title: windowsUpdateReference 资源类型
 description: 表示特定Windows 10内容。
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: a75f1afe1c2689760848283bf078b957bb8739ba
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: a25cc6995979922ed2e7a8fb8e7f74350dec71c5
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067256"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791992"
 ---
 # <a name="windowsupdatereference-resource-type"></a>windowsUpdateReference 资源类型
 

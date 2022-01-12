@@ -1,16 +1,16 @@
 ---
 title: tenant： offboardTenant
 description: 执行适当的过程以从多租户管理平台中删除托管租户。 商业和委派管理权限等关系不会受到影响。 通过调用此操作进行的唯一更改是租户从多租户管理平台取消设置。
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 2e99740631880108a115612d59b5f50a8e3d4c82
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c42f04df0dae01db204169973fb71f128b648031
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014648"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861861"
 ---
 # <a name="tenant-offboardtenant"></a>tenant： offboardTenant
 命名空间：microsoft.graph.managedTenants
@@ -79,7 +79,7 @@ POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants
 [!INCLUDE [sample-code](../includes/snippets/java/tenant-offboardtenant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tenant-offboardtenant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

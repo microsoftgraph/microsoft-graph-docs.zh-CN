@@ -1,16 +1,16 @@
 ---
 title: cloudPcConnection 资源类型
 description: 表示给定托管租户的云电脑连接。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 75af7be7633e43bc594f7185f196f40abca39883
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 4f7f306a54354d0c6d4860abd0866001f5e8626f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402072"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860430"
 ---
 # <a name="cloudpcconnection-resource-type"></a>cloudPcConnection 资源类型
 
@@ -29,12 +29,12 @@ ms.locfileid: "53402072"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|云显示名称连接数。 必填。 只读。|
+|displayName|String|云显示名称连接类型。 必需。 只读。|
 |healthCheckStatus|String|云电脑连接的运行状况。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。  必需。 只读。|
-|id|String|云电脑连接的唯一标识符。 必填。 只读。|
-|lastRefreshedDateTime|DateTimeOffset|实体上次在多租户管理平台中更新的日期和时间。 必填。 只读。|
-|tenantDisplayName|String|托管显示名称租户的租户。 必填。 只读。|
-|tenantId|String|托管Azure Active Directory租户的租户[标识符](../resources/managedtenants-tenant.md)。 必填。 只读。|
+|id|String|云电脑连接的唯一标识符。 必需。 只读。|
+|lastRefreshedDateTime|DateTimeOffset|实体上次在多租户管理平台中更新的日期和时间。 必需。 只读。|
+|tenantDisplayName|String|托管显示名称租户的租户。 必需。 只读。|
+|tenantId|String|托管Azure Active Directory租户的租户[标识符](../resources/managedtenants-tenant.md)。 必需。 只读。|
 
 ## <a name="relationships"></a>关系
 无。

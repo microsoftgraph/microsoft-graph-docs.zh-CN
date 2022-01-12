@@ -1,16 +1,16 @@
 ---
 title: 获取 deviceCompliancePolicySettingStateSummary
 description: 读取 deviceCompliancePolicySettingStateSummary 对象的属性和关系。
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 6e94a2f241f78112b08146e5bb639a4966c5a24f
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 83613de2c4a4155ec5830b3436fa66639b02b4d1
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439966"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862129"
 ---
 # <a name="get-devicecompliancepolicysettingstatesummary"></a>获取 deviceCompliancePolicySettingStateSummary
 命名空间：microsoft.graph.managedTenants
@@ -35,7 +35,7 @@ ms.locfileid: "53439966"
 }
 -->
 ``` http
-GET /tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummarys/{deviceCompliancePolicySettingStateSummaryId}
+GET /tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -64,7 +64,7 @@ GET /tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummar
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummarys/{deviceCompliancePolicySettingStateSummaryId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-devicecompliancepolicysettingstatesummary-csharp-snippets.md)]
@@ -99,7 +99,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.deviceCompliancePolicySettingStateSummary",
+    "@odata.type": "#microsoft.graph.managedTenants.deviceCompliancePolicySettingStateSummary",
     "id": "34298981-4fc8-4974-9486-c8909ed1521b_277f9230-81f7-ffc3-af78-4662ec3dca09",
     "intuneAccountId": "6f3e6534-b466-4fac-9a31-4c305cc40833",
     "intuneSettingId": "277f9230-81f7-ffc3-af78-4662ec3dca09",

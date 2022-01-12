@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 658343132d16c2ad75a07c14e321953eb5372f5c
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 03592aeb434ba077efb88d83fcc768eb28f7ed05
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650718"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791908"
 ---
 # <a name="list-accesspackageresources"></a>列出 accessPackageResources
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageresources-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -121,21 +121,84 @@ Content-type: application/json
       "resourceType": "Application",
       "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
       "accessPackageResourceScopes": [
-         {
-            "id": "452d78a7-69a5-482d-a82f-859a5169c55e",
-            "displayName": "Root",
-            "description": "Root Scope",
-            "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
-            "originSystem": "AadApplication",
-            "isRootScope": true
-         }
+          {
+              "id": "452d78a7-69a5-482d-a82f-859a5169c55e",
+              "displayName": "Root",
+              "description": "Root Scope",
+              "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+              "originSystem": "AadApplication",
+              "isRootScope": true
+          }
+      ],
+      "attributes": [
+          {
+              "id": "4f28e638-93de-4152-b631-2135da14c94a",
+              "attributeName": "country",
+              "attributeDefaultValue": null,
+              "isEditable": true,
+              "isPersistedOnAssignmentRemoval": false,
+              "attributeSource": {
+                  "@odata.type": "#microsoft.graph.resourceAttributeQuestion",
+                  "question": {
+                      "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+                      "id": "6c797e12-e608-4ac9-90da-a8f18df37a94",
+                      "isRequired": false,
+                      "isAnswerEditable": null,
+                      "sequence": 0,
+                      "allowsMultipleSelection": false,
+                      "text": {
+                          "defaultText": "Enter your country",
+                          "localizedTexts": []
+                      },
+                      "choices": [
+                          {
+                              "actualValue": "USA",
+                              "displayValue": {
+                                  "defaultText": "USA",
+                                  "localizedTexts": [
+                                      {
+                                          "text": "USA",
+                                          "languageCode": "en-US"
+                                      }
+                                  ]
+                              }
+                          },
+                          {
+                              "actualValue": "Canada",
+                              "displayValue": {
+                                  "defaultText": "Canada",
+                                  "localizedTexts": [
+                                      {
+                                          "text": "Canada",
+                                          "languageCode": "en-US"
+                                      }
+                                  ]
+                              }
+                          },
+                          {
+                              "actualValue": "India",
+                              "displayValue": {
+                                  "defaultText": "India",
+                                  "localizedTexts": [
+                                      {
+                                          "text": "English",
+                                          "languageCode": "en-US"
+                                      }
+                                  ]
+                              }
+                          }
+                      ]
+                  }
+              },
+              "attributeDestination": {
+                  "@odata.type": "#microsoft.graph.userDirectoryAttributeStore"
+              }
+          }
       ]
     }
   ]
 }
 ```
-
-https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/e71fafe7-9ccb-4c5a-a7b3-77ec35e83e3c/accessPackageResources
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -146,5 +209,3 @@ https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/access
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
