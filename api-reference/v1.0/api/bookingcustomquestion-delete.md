@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0c466c5c0dc4bab85e7ee4848b4d4bedbf1249f5
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 97391e771293fc4ee9b020d0dddf25f44bb7aa6e
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526490"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014122"
 ---
 # <a name="delete-bookingcustomquestion"></a>删除 bookingCustomQuestion
 
@@ -18,7 +18,7 @@ ms.locfileid: "61526490"
 
 删除 [bookingCustomQuestion](../resources/bookingcustomquestion.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -33,7 +33,7 @@ ms.locfileid: "61526490"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
+DELETE /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
 ```
 
 ## <a name="request-headers"></a>请求标头

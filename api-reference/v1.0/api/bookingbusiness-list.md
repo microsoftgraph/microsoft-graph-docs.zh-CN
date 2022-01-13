@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 585de83b3e5a6ba981d4f65013e0e25149149b5e
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 936a34a17657ee7cfc97851772d4c9e8b1e85208
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526660"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014227"
 ---
 # <a name="list-bookingbusinesses"></a>列出 bookingBusinesses
 
@@ -21,7 +21,7 @@ ms.locfileid: "61526660"
 此操作仅返回集合中每个 Microsoft Bookings 公司的 **id** 和 **displayName。** 出于性能方面的考虑，它不会返回其他属性。 可以通过在 [GET](bookingbusiness-get.md)操作中指定 Microsoft Bookings 业务 **ID，获取** 其其他属性。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -33,7 +33,7 @@ ms.locfileid: "61526660"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses
+GET /solutions/bookingBusinesses
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 $count 和 $expand [OData](/graph/query-parameters) 查询参数来帮助自定义响应。

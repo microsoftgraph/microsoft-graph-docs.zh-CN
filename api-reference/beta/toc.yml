@@ -324,7 +324,7 @@ items:
                 href: api/user-list-events.md
               - name: 提醒视图
                 href: api/user-reminderview.md
-          - name: 联系人
+          - name: Contacts
             href: resources/contact.md
             items:
               - name: 创建联系人
@@ -422,7 +422,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置见解
+                  - name: 设置人员见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -469,7 +469,6 @@ items:
               - name: 列出笔记本
                 href: api/onenote-list-notebooks.md
           - name: 组织层次结构
-            href: resources/user.md
             items:
               - name: 分配管理器
                 href: api/user-post-manager.md
@@ -511,13 +510,13 @@ items:
                 href: api/outlookuser-post-tasks.md
               - name: 列出任务
                 href: api/outlookuser-list-tasks.md
-          - name: 人员
+          - name: People
             items:
               - name: 人员
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置见解
+              - name: 设置人员见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -545,7 +544,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言 (区域) '
+          - name: '预览版的首选语言和区域 () '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -936,7 +935,7 @@ items:
                         href: api/federatedidentitycredential-update.md
                       - name: 删除
                         href: api/federatedidentitycredential-delete.md
-              - name: 所有者
+              - name: Owners
                 items:
                   - name: 列出所有者
                     href: api/application-list-owners.md
@@ -1126,7 +1125,7 @@ items:
                     href: api/directoryobject-getmembergroups.md
                   - name: 获取成员对象
                     href: api/directoryobject-getmemberobjects.md
-              - name: 所有者
+              - name: Owners
                 items:
                   - name: 列出所有者
                     href: api/serviceprincipal-list-owners.md
@@ -2005,7 +2004,7 @@ items:
                     href: api/printershare-post-jobs.md
                   - name: 获取
                     href: api/printjob-get.md
-                  - name: 开始
+                  - name: Start
                     href: api/printjob-start.md
                   - name: 更新
                     href: api/printjob-update.md
@@ -9427,7 +9426,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: 更新
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: 标识
+                  - name: Identity
                     href: resources/intune-rbac-identity.md
                   - name: 标识集
                     href: resources/intune-rbac-identityset.md
@@ -11270,7 +11269,7 @@ items:
                         href: api/directoryobject-getmemberobjects.md
                       - name: 检查成员对象
                         href: api/directoryobject-checkmemberobjects.md
-                  - name: 组
+                  - name: Groups
                     href: resources/group.md
                     items:
                       - name: 列出 memberOf
@@ -11282,7 +11281,6 @@ items:
                       - name: 检查成员组
                         href: api/directoryobject-checkmembergroups.md
                   - name: 组织层次结构
-                    href: resources/directoryobject.md
                     items:
                       - name: 列出直接下属
                         href: api/orgcontact-list-directreports.md
@@ -11521,7 +11519,7 @@ items:
                         href: api/temporaryaccesspassauthenticationmethod-get.md
                       - name: 删除
                         href: api/temporaryaccesspassauthenticationmethod-delete.md
-                  - name: 电话版
+                  - name: Phone
                     href: resources/phoneauthenticationmethod.md
                     items:
                       - name: 列表
@@ -11737,7 +11735,7 @@ items:
                         href: api/samlorwsfedexternaldomainfederation-delete.md
                       - name: 列出域
                         href: api/samlorwsfedexternaldomainfederation-list-domains.md
-                      - name: 创建 externalDomainName
+                      - name: 创建域
                         href: api/samlorwsfedexternaldomainfederation-post-domains.md
               - name: '已 (标识提供程序) '
                 items:
@@ -11782,22 +11780,7 @@ items:
                         href: api/organizationalbrandinglocalization-update.md
                       - name: 删除
                         href: api/organizationalbrandinglocalization-delete.md
-              - name: 组织联系人
-                href: resources/orgcontact.md
-                items:
-                  - name: 列出组织联系人
-                    href: api/orgcontact-list.md
-                  - name: 获取组织联系人
-                    href: api/orgcontact-get.md
-                  - name: 更新组织联系人
-                    href: api/orgcontact-update.md
-                  - name: 删除组织联系人
-                    href: api/orgcontact-delete.md
-                  - name: 获取组织联系人 delta
-                    href: api/orgcontact-delta.md
-                  - name: 组
-                    href: resources/group.md
-              - name: 策略
+              - name: Policy
                 href: resources/policy-overview.md
                 items:
                   - name: 基于活动的超时策略
@@ -12116,7 +12099,7 @@ items:
                     href: api/trustframeworkpolicy-delete.md
               - name: 用户流
                 items:
-                  - name: '用户流 (弃) '
+                  - name: '用户流 (弃用) '
                     items:
                       - name: 用户流
                         href: resources/identityuserflow.md
@@ -12258,7 +12241,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: 删除
+                      - name: Delete
                         href: api/identityapiconnector-delete.md
           - name: 管控
             items:
@@ -13011,13 +12994,13 @@ items:
         items:
           - name: 概述
             href: resources/social-overview.md
-          - name: 人员
+          - name: People
             items:
               - name: 人员
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置人员见解
+              - name: 设置见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -13803,7 +13786,7 @@ items:
       - name: 搜索
         displayname: Microsoft Search API
         items:
-          - name: 查询
+          - name: Query
             items:
               - name: 概述
                 href: resources/search-api-overview.md
@@ -14044,9 +14027,9 @@ items:
                 href: api/site-list-subsites.md
               - name: 搜索网站
                 href: api/site-search.md
-              - name: 权限
+              - name: Permissions
                 items:
-                  - name: 权限
+                  - name: Permission
                     href: resources/permission.md
                   - name: 列出网站权限
                     href: api/site-list-permissions.md
@@ -14560,7 +14543,7 @@ items:
                 href: api/teamworktagmember-get.md
               - name: 删除成员
                 href: api/teamworktagmember-delete.md
-          - name: 应用
+          - name: App
             items:
               - name: 目录中的应用程序
                 href: resources/teamsapp.md
@@ -14907,11 +14890,11 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
                 href: api/opentypeextension-get.md
-          - name: 任务
+          - name: Task
             items:
               - name: 基本任务
                 href: resources/basetask.md
-              - name: 任务
+              - name: Task
                 href: resources/task.md
               - name: 列出任务
                 href: api/basetasklist-list-tasks.md
@@ -14980,7 +14963,7 @@ items:
                     href: api/opentypeextension-post-opentypeextension.md
                   - name: 获取开放扩展
                     href: api/opentypeextension-get.md
-              - name: 任务
+              - name: Task
                 href: resources/todotask.md
                 items:
                   - name: 列出任务

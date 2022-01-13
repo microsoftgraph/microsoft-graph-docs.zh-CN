@@ -314,7 +314,7 @@ items:
                 href: api/user-list-events.md
               - name: 提醒视图
                 href: api/user-reminderview.md
-          - name: 联系人
+          - name: Contacts
             href: resources/contact.md
             items:
               - name: 创建联系人
@@ -437,7 +437,6 @@ items:
               - name: 列出笔记本
                 href: api/onenote-list-notebooks.md
           - name: 组织层次结构
-            href: resources/user.md
             items:
               - name: 列出直接下属
                 href: api/user-list-directreports.md
@@ -471,7 +470,7 @@ items:
                     href: api/outlookuser-list-mastercategories.md
               - name: 翻译 ID
                 href: api/user-translateexchangeids.md
-          - name: 人员
+          - name: People
             items:
               - name: 人员
                 href: resources/person.md
@@ -857,7 +856,7 @@ items:
                         href: api/application-post-extensionproperty.md
                       - name: 删除
                         href: api/application-delete-extensionproperty.md
-              - name: 所有者
+              - name: Owners
                 items:
                   - name: 列表
                     href: api/application-list-owners.md
@@ -964,7 +963,7 @@ items:
                     href: api/directoryobject-checkmemberobjects.md
                   - name: 获取成员对象
                     href: api/directoryobject-getmemberobjects.md
-              - name: 所有者
+              - name: Owners
                 items:
                   - name: 列表
                     href: api/serviceprincipal-list-owners.md
@@ -1198,7 +1197,7 @@ items:
                 href: api/calendarpermission-update.md
               - name: 删除
                 href: api/calendarpermission-delete.md
-          - name: 类别
+          - name: Categories
             items:
               - name: 类别
                 href: resources/outlookcategory.md
@@ -1584,7 +1583,7 @@ items:
                     href: api/printershare-list-jobs.md
                   - name: 获取
                     href: api/printjob-get.md
-                  - name: 开始
+                  - name: Start
                     href: api/printjob-start.md
                   - name: 更新
                     href: api/printjob-update.md
@@ -4800,13 +4799,13 @@ items:
               - name: 组织联系人
                 href: resources/orgcontact.md
                 items:
-                  - name: 列出组织联系人
+                  - name: 列表
                     href: api/orgcontact-list.md
-                  - name: 获取组织联系人
+                  - name: 获取
                     href: api/orgcontact-get.md
-                  - name: 获取组织联系人 delta
+                  - name: 获取 Delta
                     href: api/orgcontact-delta.md
-                  - name: 组
+                  - name: Groups
                     href: resources/group.md
                     items:
                       - name: 列出 memberOf
@@ -4816,7 +4815,6 @@ items:
                       - name: 检查成员组
                         href: api/directoryobject-checkmembergroups.md
                   - name: 组织层次结构
-                    href: resources/directoryobject.md
                     items:
                       - name: 列出直接下属
                         href: api/orgcontact-list-directreports.md
@@ -5309,7 +5307,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: 删除
+                      - name: Delete
                         href: api/identityapiconnector-delete.md
           - name: 管控
             items:
@@ -5762,7 +5760,7 @@ items:
         items:
           - name: 概述
             href: resources/social-overview.md
-          - name: 人员
+          - name: People
             items:
               - name: 人员
                 href: resources/person.md
@@ -5894,7 +5892,7 @@ items:
                 items:
                   - name: 列表预配
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365使用率报告
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -6097,7 +6095,7 @@ items:
       - name: 搜索
         displayname: Microsoft Search API
         items:
-          - name: 查询
+          - name: Query
             items:
               - name: 概述
                 href: resources/search-api-overview.md
@@ -6161,7 +6159,7 @@ items:
                     href: api/externalconnectors-externalgroup-delete.md
               - name: 外部组的成员
                 items:
-                  - name: 标识
+                  - name: Identity
                     href: resources/externalconnectors-identity.md
                   - name: 为成员创建标识
                     href: api/externalconnectors-externalgroup-post-members.md
@@ -6259,7 +6257,7 @@ items:
                 href: api/site-list-subsites.md
               - name: 搜索网站
                 href: api/site-search.md
-              - name: 权限
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -6674,7 +6672,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: 获取托管内容
                 href: api/chatmessagehostedcontent-get.md
-          - name: 应用
+          - name: App
             items:
               - name: 目录中的应用程序
                 href: resources/teamsapp.md
@@ -6980,7 +6978,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
                 href: api/opentypeextension-get.md
-          - name: 任务
+          - name: Task
             href: resources/todotask.md
             items:
               - name: 列出任务

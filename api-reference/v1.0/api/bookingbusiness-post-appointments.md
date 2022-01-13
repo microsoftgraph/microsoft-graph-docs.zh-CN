@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c119fddb298b8d5debecdb7c2df336505c23ae48
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 0262ab76e127f2104bdf2edc2e896b8f4a2873b8
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525044"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014220"
 ---
 # <a name="create-bookingappointment"></a>创建 bookingAppointment
 
 命名空间：microsoft.graph
 
 为指定的[bookingBusiness](../resources/bookingbusiness.md)创建新的[bookingAppointment。](../resources/bookingappointment.md)
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -29,7 +29,7 @@ ms.locfileid: "61525044"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/appointments
+POST /solutions/bookingBusinesses/{id}/appointments
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -147,8 +147,6 @@ Content-type: application/json
                 "uniqueIdType": null,
                 "address": {
                     "@odata.type": "#microsoft.graph.physicalAddress",
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",
@@ -228,8 +226,6 @@ Content-type: application/json
         "uniqueId": null,
         "uniqueIdType": null,
         "address": {
-            "type": "home",
-            "postOfficeBox": "",
             "street": "",
             "city": "",
             "state": "",
@@ -281,8 +277,6 @@ Content-type: application/json
                 "uniqueIdType": null,
                 "address": {
                     "@odata.type": "#microsoft.graph.physicalAddress",
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",

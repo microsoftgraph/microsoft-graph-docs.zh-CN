@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: faad03d09d0e38d06c2f96b33866da953351e092
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 54f3bf6e57baad1f12cdeeeb8945dda50bdf5783
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526515"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014213"
 ---
 # <a name="create-bookingbusiness"></a>创建 bookingBusiness
 
@@ -19,7 +19,7 @@ ms.locfileid: "61526515"
 在租户中 [创建新的 Microsoft Bookings](../resources/bookingbusiness.md) 业务。
 
 这是设置 Bookings 业务的第一步，你必须指定业务显示名称。 可以包括其他信息（如公司地址、网站地址和日程安排策略）或稍后通过更新 **bookingBusiness** 来 [](bookingbusiness-update.md)设置该信息。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,7 +31,7 @@ ms.locfileid: "61526515"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses
+POST /solutions/bookingBusinesses
 
 ```
 ## <a name="request-headers"></a>请求标头

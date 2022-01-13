@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2e3d80061f5438120fcb98429ab0e0e12f1b5fd8
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 4b65abe23d0f43f3d8d11249f6108c87ca62a0c7
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525043"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014171"
 ---
 # <a name="bookingbusiness-unpublish"></a>bookingBusiness：取消发布
 
@@ -20,7 +20,7 @@ ms.locfileid: "61525043"
 
 将 **isPublished** 属性设置为 `false` ，将 **publicUrl** 属性设置为 `null` 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -32,7 +32,7 @@ ms.locfileid: "61525043"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/unpublish
+POST /solutions/bookingBusinesses/{id}/unpublish
 
 ```
 ## <a name="request-headers"></a>请求标头

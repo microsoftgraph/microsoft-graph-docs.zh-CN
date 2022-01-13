@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c0831b8079eb1f95b0f7cb3b8265d6fa6afbbc27
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 0c998814154cd2e3e284cbec4a37cf019ef18e45
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525035"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014157"
 ---
 # <a name="get-bookingcurrency"></a>获取 bookingCurrency
 
@@ -18,7 +18,7 @@ ms.locfileid: "61525035"
 
 获取可用于 Microsoft Bookings 业务的 [bookingCurrency](../resources/bookingcurrency.md) 对象的属性。 使用 **id** 属性（即货币代码）指定货币。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -30,7 +30,7 @@ ms.locfileid: "61525035"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingCurrencies/{id}
+GET /solutions/bookingCurrencies/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 $count 和 $expand [OData](/graph/query-parameters) 查询参数来帮助自定义响应。

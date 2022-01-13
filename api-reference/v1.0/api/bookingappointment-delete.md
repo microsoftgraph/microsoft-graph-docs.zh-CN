@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 3d4838a78b3a49f555abca2104c03e1e6250ba85
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 345d3eeb58890ad7d7ecec035ac3d02348014d38
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526663"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014276"
 ---
 # <a name="delete-bookingappointment"></a>删除 bookingAppointment
 
 命名空间：microsoft.graph
 
 删除指定的 bookingBusiness 中的[bookingAppointment。](../resources/bookingbusiness.md) [](../resources/bookingappointment.md)
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -29,7 +29,7 @@ ms.locfileid: "61526663"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/{id}/appointments/{id}
+DELETE /solutions/bookingBusinesses/{id}/appointments/{id}
 
 ```
 ## <a name="request-headers"></a>请求标头

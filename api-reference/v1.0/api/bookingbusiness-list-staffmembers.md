@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 49e1358de576d27c6e961f71c35c8948cfe19c22
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: c7756e775e53256ff51c9a980618f82ba4d4f29f
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526487"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014234"
 ---
 # <a name="list-staffmembers"></a>列出 staffMembers
 
 命名空间：microsoft.graph
 
 获取指定的[bookingBusiness](../resources/bookingbusiness.md)中的[bookingStaffMember](../resources/bookingstaffmember.md)对象列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -29,7 +29,7 @@ ms.locfileid: "61526487"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/staffMembers
+GET /solutions/bookingBusinesses/{id}/staffMembers
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 $count 和 $expand [OData](/graph/query-parameters) 查询参数来帮助自定义响应。

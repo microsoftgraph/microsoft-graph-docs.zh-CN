@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 148a9d6d54ead703f32e4a3f27810fec11ebb711
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: bbca6eaa30d28a20d17b2b502357e9eb55abc59a
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61403125"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791824"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -428,17 +428,18 @@ Microsoft Graph 允许 **userPrincipalName** 以美元 (`$`) 字符开头。 但
 
 ### <a name="access-to-a-users-profile-photo-is-limited"></a>对用户的个人资料照片的访问受限
 
-只有当用户有邮箱时，才能读取和更新用户的个人资料照片。 另外，之前 *可能* 使用 **thumbnailPhoto** 属性（使用 Azure AD Graph API（已弃用），或通过 AD Connect 同步）存储的所有照片无法再通过 [用户](/graph/api/resources/user)资源的 Microsoft Graph **照片** 属性进行访问。
-在这种情况下，无法读取或更新照片会导致以下错误：
+1. 只有当用户有邮箱时，才能读取和更新用户的个人资料照片。 在这种情况下，无法读取或更新照片会导致以下错误：
 
-```javascript
-{
-  "error": {
-    "code": "ErrorNonExistentMailbox",
-    "message": "The SMTP address has no mailbox associated with it."
-  }
-}
-```
+    ```html
+    {
+      "error": {
+        "code": "ErrorNonExistentMailbox",
+        "message": "The SMTP address has no mailbox associated with it."
+      }
+    }
+    ``` 
+2. 之前 *可能* 使用 **thumbnailPhoto** 属性（使用 Azure AD Graph API（已弃用），或通过 AD Connect 同步）存储的所有照片无法再通过 [用户](/graph/api/resources/user)资源的 Microsoft Graph **照片** 属性进行访问。
+3. 目前，Azure AD B2C 租户不支持通过 Microsoft Graph API 的[profilePhoto 资源](/graph/api/resources/profilephoto)管理用户的照片。
 
 ### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>调用登录会话返回了错误的 HTTP 代码
 
@@ -471,7 +472,7 @@ Microsoft Graph 允许 **userPrincipalName** 以美元 (`$`) 字符开头。 但
   * 不支持跨工作负载搜索。
   * Azure AD B2C 租户不支持搜索。
 * `$count`:
-  * 不支持 Azure AD B2C 租户。
+  * Azure AD B2C 租户不支持。
   * 在针对目录资源进行查询时使用 `$count=true` 查询字符串时， `@odata.count` 属性将仅出现在分页数据的第一页中。
 * 请求中指定的查询参数可能会自行失败。 不支持的查询参数以及不支持的查询参数组合的情况就是如此。
 

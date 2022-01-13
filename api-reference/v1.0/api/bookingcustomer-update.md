@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d1576887ff634aa955246e63c3f57b560fc263d3
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 23af89229a3280a725deb3c756e9e790dbccd5e5
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525038"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014129"
 ---
 # <a name="update-bookingcustomer"></a>更新 bookingCustomer
 
 命名空间：microsoft.graph
 
 更新 [bookingCustomer 对象](../resources/bookingcustomer.md) 的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -29,7 +29,7 @@ ms.locfileid: "61525038"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}/customers/{id}
+PATCH /solutions/bookingBusinesses/{id}/customers/{id}
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -39,7 +39,7 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 ## <a name="request-body"></a>请求正文
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |地址|[physicalAddress](../resources/physicaladdress.md) 集合|与客户关联的地址。 physicalAddress 的属性类型在 v1.0 中不受支持。  在内部，我们将地址映射到类型 `others` 。|
 |displayName|String|客户的名称。|

@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 34f2b0f0c166e6dfeb4981ffcf0ad1cc780305b8
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: dca80f86162ac9ac60105b5b8452d63bc84ebefa
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526486"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014150"
 ---
 # <a name="list-bookingcurrencies"></a>列出 bookingCurrencies
 
 命名空间：microsoft.graph
 
 获取可用于 Microsoft [Bookings 业务的 bookingCurrency](../resources/bookingcurrency.md) 对象列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -29,7 +29,7 @@ ms.locfileid: "61526486"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingCurrencies
+GET /solutions/bookingCurrencies
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 $count 和 $expand [OData](/graph/query-parameters) 查询参数来帮助自定义响应，包括 $count、$filter、$select、$skip 和 $top。

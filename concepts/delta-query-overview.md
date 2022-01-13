@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 83f49d98145c4d795fac3c8df5eac0a7667bf06d
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: d18d429d611c05512196651644525ce4866d7831
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526161"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792230"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -117,7 +117,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | 目录角色                                                | [directoryRole](/graph/api/resources/directoryrole) 资源的 [delta](/graph/api/directoryrole-delta) 函数 |
 | 驱动器项目\*                                                  | [driveItem](/graph/api/resources/driveitem) 资源的 [delta](/graph/api/driveitem-delta) 函数             |
 | 教育作业                                          | [educationAssignment](/graph/api/resources/educationassignment) 资源的 [delta](/graph/api/educationassignment-delta) 函数                                    |
-| 教育案例                                              | [educationClass](/graph/api/resources/educationclass) 资源的 [delta](/graph/api/educationclass-delta) 函数                                      |
+| 教育课堂                                              | [educationClass](/graph/api/resources/educationclass) 资源的 [delta](/graph/api/educationclass-delta) 函数                                      |
 | 教育用户                                                | [educationUser](/graph/api/resources/educationuser) 资源的 [delta](/graph/api/educationuser-delta) 函数                                         |
 | 教育学校                                              | [educationSchool](/graph/api/resources/educationschool) 资源的 [delta](/graph/api/educationschool-delta) 函数                                   |
 | 主日历的日历视图（日期范围）中的事件 | [事件](/graph/api/resources/event)资源的 [delta](/graph/api/event-delta) 函数                         |

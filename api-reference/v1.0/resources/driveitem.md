@@ -5,12 +5,12 @@ description: 项目是 OneDrive API 中的主数据模型。每一个都是一�
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9bf51634a9e3923b281fee2d35e9a920eb70f22a
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 3be0a329d891bbaccac012b8753a5c374b49a8a7
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647132"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61847224"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -73,13 +73,13 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。只读。
+| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。 只读。 仅在 OneDrive 个人版上。
 | content              | 流             | 内容流（如果此项表示一个文件）。
 | createdBy            | [identitySet][]    | 识别创建项目的用户、设备和应用程序。只读。
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
 | cTag                 | String             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。
 | deleted              | [deleted][]        | 有关项目删除状态的信息。只读。
-| description          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
+| description          | String             | 提供该项的对用户可见的说明。读写。仅在 OneDrive 个人版上。
 | eTag                 | String             | 整个项目（元数据和内容）的 eTag。只读。
 | file                 | [file][]           | 文件元数据（如果此项是一个文件）。只读。
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。

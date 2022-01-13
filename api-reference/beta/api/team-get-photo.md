@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2d8420cfa898986c0fdd92e7088475c99b9b8224
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 3e05c5ab8ab5bcf9650285dd7e9c24fffad06b4a
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289425"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862781"
 ---
 # <a name="get-team-photo"></a>获取团队照片
 
@@ -18,16 +18,9 @@ ms.locfileid: "60289425"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取团队的照片（图片），或者获取照片的元数据。 通常情况下，最佳做法是先尝试在元数据中检索想要获取的照片的尺寸，以确保该尺寸可用。 检索到元数据后，使用 `/$value` 路径获取照片的二进制数据。
+获取团队的照片（图片），或者获取照片的元数据。
 
 此方法会先尝试从 Microsoft 365 中检索指定的照片。 如果 Microsoft 365 中没有此照片，则它会改为尝试在 Active Directory 中检索照片。
-
-Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648 像素。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
-
-可以获取最大可用照片的元数据，或者也可以指定一个大小来获取该照片大小的元数据。如果请求的大小不可用，仍可获取较小的大小。例如，如果上载的最大照片像素为 504x504 的照片，则除大小为 648x648 的照片之外的所有照片都可供下载。如果在 Microsoft 365 或 Azure Active Directory 中没有可用的指定大小，则会返回 1x1 的大小和剩余的元数据。
-
-> [!Note]
-> REST 请求的总大小不得超过 4 MB。 这将照片尺寸限制为小于 4 MB。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +40,7 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 
 ### <a name="get-the-metadata-of-the-photo"></a>获取照片的元数据
 
-此终结点将返回照片的元数据。 如果未指定尺寸，则将返回可供使用的最大照片尺寸的元数据。
+此终结点将返回照片的元数据。
 
 <!-- {
   "blockType": "ignored"
@@ -55,12 +48,11 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 
 ```http
 GET /teams/{id}/photo
-GET /teams/{id}/photo/{size}
 ```
 
 ### <a name="get-the-photo"></a>获取照片
 
-此终结点将在二进制数据中检索照片。 如果未指定尺寸，则将返回可供使用的最大尺寸。
+此终结点将在二进制数据中检索照片。
 
 <!-- {
   "blockType": "ignored"
@@ -68,16 +60,7 @@ GET /teams/{id}/photo/{size}
 
 ```http
 GET /beta/teams/{id}/photo/$value
-GET /beta/teams/{id}/photo/{size}/$value
 ```
-
-## <a name="path-parameters"></a>路径参数
-
-此方法支持用可选路径参数来指定要检索的照片尺寸。 指定的尺寸不得超过最大可用尺寸。 获取照片元数据以确定最大可用尺寸。
-
-|**参数**|**类型**|**说明**|
-|:-----|:-----|:-----|
-|size  |String  | 照片尺寸。 Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。 可选。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -140,9 +123,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-specific-size-of-the-team-photo"></a>示例 2：获取团队照片的特定尺寸
+### <a name="example-2-get-the-team-photos-binary-data"></a>示例 2：获取团队照片的二进制数据
 
-下述示例展示了要获取特定尺寸的团队照片的请求。
+以下示例展示了要获取团队照片二进制数据的请求。
 
 #### <a name="request"></a>请求
 
@@ -151,12 +134,12 @@ Content-type: application/json
   "name": "get_team_photo"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/photo/240x240/$value
+GET https://graph.microsoft.com/beta/teams/{id}/photo/$value
 ```
 
 #### <a name="response"></a>响应
 
-包含所请求的 240x240 照片的二进制数据。HTTP 响应代码为 200。
+包含所请求照片的二进制数据。HTTP 响应代码为 200。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

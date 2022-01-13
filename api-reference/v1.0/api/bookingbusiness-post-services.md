@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 23b2a8c8826db6d3359e7bf596f9359c61435cff
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 670e2015ab547915e16523f0aa019aab5e2b00e5
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525110"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014192"
 ---
 # <a name="create-bookingservice"></a>创建 bookingService
 
 命名空间：microsoft.graph
 
 为指定的[bookingBusiness](../resources/bookingservice.md)创建新的[bookingService。](../resources/bookingbusiness.md)
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -29,7 +29,7 @@ ms.locfileid: "61525110"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/services
+POST /solutions/bookingBusinesses/{id}/services
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -155,8 +155,6 @@ Content-type: application/json
         "uniqueId": null,
         "uniqueIdType": null,
         "address": {
-            "type": "home",
-            "postOfficeBox": "",
             "street": "4567 First Street",
             "city": "Buffalo",
             "state": "NY",

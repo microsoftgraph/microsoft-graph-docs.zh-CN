@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 29b3d33b140f40f61f6e9a1d31eec6ddeeb88bec
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 51362d1ab8b987445f9dba30b0fde3b0f6768ab5
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651538"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791845"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -69,8 +69,8 @@ ms.locfileid: "61651538"
 | [activateServicePlan](../api/user-activateserviceplan.md) | 无 | 为给定给定用户或`servicePlanId``skuId`许可证和[服务](user.md)。 |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
-| [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
+| [getByIds](../api/directoryobject-getbyids.md) | String collection | 返回 ID 列表中指定的目录对象。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。 |
@@ -208,7 +208,7 @@ ms.locfileid: "61651538"
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) 集合 | 此用户的许可证分配状态。只读。<br><br>仅在 `$select` 上返回。 |
 | mail | String | 用户的 SMTP 地址，例如， `admin@contoso.com`。 对此属性进行更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 对于 Azure AD B2C 帐户，此属性最多可以使用唯一的 SMTP 地址更新 10 次。 此属性不能包含突出字符。 <br><br> 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith`、`endsWith` 和 `null` 值上的 `eq`）。 |
-| mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 `$select` 上返回。 |
+| mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。 可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 有关详细信息，请参阅 [语言和区域格式的用户首选项](#user-preferences-for-languages-and-regional-formats)。 <br><br>仅在 `$select` 上返回。 |
 | mailNickname | String | 用户的邮件别名。创建用户时必须指定此属性。最大长度为 64 个字符。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
 | mobilePhone | String | 用户的主要移动电话号码。 本地目录同步的用户为只读。 <br><br> 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 | mySite | String | 用户个人网站的 URL。 <br><br>仅在 `$select` 上返回。 |
@@ -232,7 +232,7 @@ ms.locfileid: "61651538"
 | preferredLanguage | String | 用户的首选语言。应遵循 ISO 639-1 代码，例如 `en-US`。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
 | preferredName | String | 用户的首选名称。 <br><br>仅在 `$select` 上返回。 |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) 集合 | 为用户设置的计划。只读。不可为 null。支持 `$filter`（`eq`、`not`、`ge`、`le`）。|
-| proxyAddresses | String collection | 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。对于 Azure AD B2C 帐户，此属性限制为 10 个唯一地址。只读，不可为 null。<br><br>支持 `$filter` （`eq`、 `not`、 `ge`、 `le`、 `startsWith`）。 |
+| proxyAddresses | String collection | 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 以 `SMTP`（大写）为前缀的代理地址是主代理地址，而前缀为 `smtp` 的代理地址则是辅助代理地址。 对于 Azure AD B2C 帐户，此属性有 10 个唯一地址的限制。 Microsoft Graph 中的只读；只能通过 [Microsoft 365 管理中心](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) 来更新此属性。 不可为 null。 <br><br>支持 `$filter` （`eq`、 `not`、 `ge`、 `le`、 `startsWith`）。 |
 | refreshTokensValidFromDateTime | DateTimeOffset | 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) 进行重置。|
 | responsibilities | String collection | 供用户枚举其职责的列表。 <br><br>仅在 `$select` 上返回。 |
 | schools | String collection | 供用户枚举其学习过的学校列表。 <br><br>仅在 `$select` 上返回。 |
@@ -247,6 +247,11 @@ ms.locfileid: "61651538"
 | userPrincipalName | String | 用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](organization.md)的 **verifiedDomains** 属性访问租户的已验证域。<br>注意：此属性不能包含突出字符。 仅支持使用以下字符：`A - Z`、`a - z`、`0 - 9`、` ' . - _ ! # ^ ~`。 有关允许字符的完整列表，请参阅[用户名策略](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts)。 <br><br>支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`） 和 `$orderBy`。
 | userType | String | 可用于对目录中的用户类型进行分类的字符串值，例如 `Member` 和 `Guest`。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。 **注意：** 有关成员和来宾用户权限的详细信息，请参阅 [Azure Active Directory 中的默认用户权限是什么？](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users) |
 
+### <a name="user-preferences-for-languages-and-regional-formats"></a>语言和区域格式的用户首选项
+**用户** 资源包含 [mailboxSettings](../resources/mailboxsettings.md)属性，其中包括用户的首选语言、数据和时间格式、默认时区以及其他专用于主要 Exchange 邮箱的设置。 这些首选项针对邮件客户端，且仅在用户已预配邮箱的情况下可用。 如果你的应用场景专注于 Outlook 邮件、日历、联系人或待办任务，可选择使用 **mailboxSettings**。
+
+除了 **mailboxSettings**，**用户** 还包括通过 [userSettings](../resources/usersettings.md) 到 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 的关系，这是语言和区域格式设置首选项的超集，任何应用程序都可以使用它来向用户提供最佳的语言和区域格式设置体验。 使用 **userSettings** 以获得跨应用的一致体验，这些应用会接入 Azure AD 用户配置文件，以反映相同的用户首选项。
+
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
 
 本部分介绍 Azure AD 管理员和企业应用程序开发人员如何使用三个年龄组属性（**legalAgeGroupClassification**、**ageGroup** 和 **consentProvidedForMinor**）来满足与年龄相关的法规：
@@ -254,10 +259,8 @@ ms.locfileid: "61651538"
 - **ageGroup** 和 **consentProvidedForMinor** 属性是 Azure AD 管理员使用的可选属性，可帮助确保根据用户所在国家或地区与年龄相关的监管规则正确处理帐户的使用。
 
 例如：Cameron 是英国 Holyport 小学的名录管理员。 新学年开始，他根据英国与年龄相关的法规，使用入学文件获得未成年人父母的同意。 征得父母同意后，Holyport 学校和 Microsoft 应用可以使用未成年人的帐户。 Cameron 随后创建所有帐户，将 ageGroup 设置为“minor”，并将 consentProvidedForMinor 设置为“granted”。 然后，他的学生使用的应用程序可以禁止不适合未成年人的功能。
-<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience.
-For some reason they are not defined as enums in the CSDL.
-Hence the type of the corresponding 3 properties remain as String type in the Properties table.
--->
+
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience but they are String types.-->
 
 #### <a name="legalagegroupclassification-values"></a>legalAgeGroupClassification values
 
@@ -331,11 +334,6 @@ Hence the type of the corresponding 3 properties remain as String type in the Pr
 |todo|[todo](todo.md)|表示用户可以使用的微软待办服务。 |
 |transitiveReports|[directoryObject](directoryobject.md) 集合 | 用户的可传递报告。只读。|
 |usageRight|[usageRight](usageright.md) 集合|表示已授予用户的使用权限。 |
-
-### <a name="user-preferences-for-languages-and-regional-formats"></a>语言和区域格式的用户首选项
-**用户** 资源包含 [mailboxSettings](../resources/mailboxsettings.md)属性，其中包括用户的首选语言、数据和时间格式、默认时区以及其他专用于主要 Exchange 邮箱的设置。 这些首选项针对邮件客户端，且仅在用户已预配邮箱的情况下可用。 如果你的应用场景专注于 Outlook 邮件、日历、联系人或待办任务，可选择使用 **mailboxSettings**。
-
-除了 **mailboxSettings**，**用户** 还包括通过 [userSettings](../resources/usersettings.md) 到 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 的关系，这是语言和区域格式设置首选项的超集，任何应用程序都可以使用它来向用户提供最佳的语言和区域格式设置体验。 使用 **userSettings** 以获得跨应用的一致体验，这些应用会接入 Azure AD 用户配置文件，以反映相同的用户首选项。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

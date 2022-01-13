@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 11d5dde373ad0a3c25fdcab3aa2c3a206963b2a6
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: cfc83806f3186e347b62afabcbddf52c8e16e620
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526527"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014115"
 ---
 # <a name="get-bookingcustomquestion"></a>获取 bookingCustomQuestion
 
@@ -18,7 +18,7 @@ ms.locfileid: "61526527"
 
 读取 [bookingCustomQuestion](../resources/bookingcustomquestion.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "61526527"
 -->
 
 ```http
-GET /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
+GET /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

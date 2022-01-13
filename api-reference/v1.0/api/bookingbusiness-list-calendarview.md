@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: ab9aed7128bcf4a6b9af3d05d89a98963e26e889
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 4d5f298052dc086358c195decc4ffb6cb0d58225
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526516"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014262"
 ---
 # <a name="list-business-calendarview"></a>列出业务日历视图
 
@@ -18,7 +18,7 @@ ms.locfileid: "61526516"
 
 获取[bookingBusiness](../resources/bookingbusiness.md)的[bookingAppointment](../resources/bookingappointment.md)对象的集合，该集合发生在指定的日期范围内。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -30,14 +30,14 @@ ms.locfileid: "61526516"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
+GET /solutions/bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 ```
 
 ## <a name="query-parameters"></a>查询参数
 
 在请求 URL 中，提供以下必要查询参数的值。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |end|DateTimeOffset|一个时间范围的结束日期和时间，以 ISO 8601 格式表示为 UTC 或与 UTC 的偏移量。 例如，2018 年 1 月 1 日凌晨 3 点 UTC 如下所示："2018-01-01T03：00：00Z"，PST 中的同一时间如下所示："2017-12-31T19：00：00-08：00"。|
 |start|DateTimeOffset|一个时间范围的开始日期和时间，以 ISO 8601 格式表示，为 UTC 或与 UTC 的时差。 例如，2018 年 1 月 1 日午夜 UTC 如下所示："2018-01-01T00：00：00Z"，PST 中的同一时间如下所示："2017-12-31T16：00：00-08：00"。|
@@ -108,8 +108,6 @@ Content-type: application/json
                         "uniqueId": null,
                         "uniqueIdType": null,
                         "address": {
-                            "type": "home",
-                            "postOfficeBox": "",
                             "street": "",
                             "city": "",
                             "state": "",
@@ -155,8 +153,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",
@@ -194,8 +190,6 @@ Content-type: application/json
                         "uniqueId": null,
                         "uniqueIdType": null,
                         "address": {
-                            "type": "home",
-                            "postOfficeBox": "",
                             "street": "",
                             "city": "",
                             "state": "",
@@ -241,8 +235,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",

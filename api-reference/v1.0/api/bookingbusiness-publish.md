@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4c67fc830bee550c8df802768c0c6a557e99fb85
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: f44039db555ad3c1bf8af6db7ddd063090f5246c
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525036"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014178"
 ---
 # <a name="bookingbusiness-publish"></a>bookingBusiness：发布
 
@@ -20,7 +20,7 @@ ms.locfileid: "61525036"
 
 将 **isPublished** 属性设置为 ，将 `true` **publicUrl** 属性设置为计划页的 URL。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -32,7 +32,7 @@ ms.locfileid: "61525036"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/publish
+POST /solutions/bookingBusinesses/{id}/publish
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|

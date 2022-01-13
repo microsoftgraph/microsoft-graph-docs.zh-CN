@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: e75fc1ab62710e639108cb3412fc92073c5101cc
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: a62290e52b681e6b029d24d87135a80454839a1c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604215"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860029"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -97,7 +97,7 @@ ms.locfileid: "61604215"
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
 | 标记 |字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。<br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 | tokenEncryptionKeyId |String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
-| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定已验证的应用程序发布者。|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定已验证的应用程序发布者。 有关发布者验证如何帮助支持应用程序安全性、可信度和合规性的详细信息，请参阅 [发布者验证](/azure/active-directory/develop/publisher-verification-overview)。|
 | web |[webApplication](webapplication.md)| 指定 Web 应用程序的设置。 |
 
 ### <a name="signinaudience-values"></a>signInAudience 值

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8675aafcba991ebff4d62f221daa1af599eb2303
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 5922b6f38e2c3543d61511a9e98bbd6ea304c74f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604313"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862681"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "61604313"
 |[更新应用程序](../api/application-update.md) | [application](application.md) |更新 application 对象。 |
 |[删除应用程序](../api/application-delete.md) | 无 |删除 application 对象。 |
 |[列出已删除的应用程序](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索最近删除的应用程序的列表。 |
-| [列出用户拥有的已删除应用程序](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 检索租户中最近 30 天内删除的应用程序以及用户拥有的应用程序。 |
+| [列出用户拥有的已删除应用程序](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) 集合 | 检索租户中最近 30 天内删除的应用程序以及用户拥有的应用程序。 |
 |[获取已删除的应用程序](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | 检索最近删除的应用程序的属性。 |
 |[永久删除应用程序](../api/directory-deleteditems-delete.md) | 无 | 永久删除应用程序。 |
 |[还原已删除的应用程序](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | 还原最近删除的应用程序。 |
@@ -112,7 +112,7 @@ ms.locfileid: "61604313"
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
 | 标记 |字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。<br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 | tokenEncryptionKeyId |Guid|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
-| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定已验证的应用程序发布者。|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定已验证的应用程序发布者。 有关发行者验证如何帮助支持应用程序安全性、可信度和合规性的详细信息，请参阅[发行者验证](/azure/active-directory/develop/publisher-verification-overview)。|
 | 唯一名称 | String | 可指定给应用程序作为替代标识符的唯一标识符。不可变。只读。 |
 | web |[webApplication](webapplication.md)| 指定 Web 应用程序的设置。 |
 

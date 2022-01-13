@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5a5dd4f986f30e5565299c9764b2e8ca5b0ea9ff
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 67007b24605b9adbb77b7454ec4f3b75ca016caa
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526659"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014206"
 ---
 # <a name="create-bookingcustomer"></a>创建 bookingCustomer
 
 命名空间：microsoft.graph
 
 创建新的 [bookingCustomer](../resources/bookingcustomer.md) 对象。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -29,7 +29,7 @@ ms.locfileid: "61526659"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/customers
+POST /solutions/bookingBusinesses/{id}/customers
 
 ```
 ## <a name="request-headers"></a>请求标头

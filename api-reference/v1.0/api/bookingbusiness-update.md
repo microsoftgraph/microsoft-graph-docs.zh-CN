@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2ff072b07a3d1812f9fc80954507020d5be4eef1
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 3e86b5815999dc4c7388f00dd8077bed0fb1b906
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526518"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014164"
 ---
 # <a name="update-bookingbusiness"></a>更新 bookingbusiness
 
 命名空间：microsoft.graph
 
 更新 [bookingBusiness 对象](../resources/bookingbusiness.md) 的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -29,7 +29,7 @@ ms.locfileid: "61526518"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}
+PATCH /solutions/bookingBusinesses/{id}
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -46,7 +46,7 @@ PATCH /bookingBusinesses/{id}
 |businessType|String|业务类型。|
 |defaultCurrencyIso|String|在 Microsoft Bookings 上运营业务的货币代码。|
 |displayName|String|与客户交互的企业的名称。|
-|email|字符串|企业的电子邮件地址。|
+|email|String|企业的电子邮件地址。|
 |phone|String|企业的电话号码。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|指定如何为此业务创建预订。|
 |webSiteUrl|String|业务网站的 URL。|

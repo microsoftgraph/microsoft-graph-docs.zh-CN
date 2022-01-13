@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 6c2cf2289770d72bc0d79c0069b89b4418fea413
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 056de1e6db71fea98fea3023fc852843102dd34f
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526492"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014199"
 ---
 # <a name="create-bookingcustomquestion"></a>创建 bookingCustomQuestion
 
@@ -18,7 +18,7 @@ ms.locfileid: "61526492"
 
 创建新的 [bookingCustomQuestion](../resources/bookingcustomquestion.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "61526492"
 }-->
 
 ```http
-POST /bookingBusinesses/{bookingBusinessesId}/customQuestions
+POST /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -51,7 +51,7 @@ POST /bookingBusinesses/{bookingBusinessesId}/customQuestions
 
 您可以在创建 **bookingCustomQuestion** 时指定以下属性。
 
-| 属性        | 类型              | 说明                                                                                                         |
+| 属性        | 类型              | Description                                                                                                         |
 | :-------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------ |
 | answerInputType | answerInputType   | 预期的答案类型。 可能的值包括 `text`、`radioButton`、`unknownFutureValue`。 可选。    |
 | answerOptions   | 字符串集合 | 可能的答案值列表。 可选。                                                                     |

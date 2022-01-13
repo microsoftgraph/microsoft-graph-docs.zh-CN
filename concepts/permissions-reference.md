@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 02a37f6a80c6bfa373583c7ceeaa06c026b11ce8
-ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
+ms.openlocfilehash: c03900468268c903db79e122dc4f02fc1d5b7222
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61567347"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860913"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1330,7 +1330,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1741,10 +1741,10 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 | _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据。 | 允许应用无需登录用户即可读取和管理公司目录基于角色的访问控制 (RBAC) 设置。这包括发送目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>备注
 
 > [!CAUTION]
-> 允许授予授权的权限（如 _RoleManagement.ReadWrite.All_）允许应用程序向自身、其他应用程序或任何用户授予其他权限。 授予此类权限时要谨慎。
+> 允许授予授权的权限（如 _RoleManagement.ReadWrite.Directory_）允许应用程序向自身、其他应用程序或任何用户授予其他权限。 授予此类权限时要谨慎。
 
 使用 _RoleManagement.Read.Directory_ 权限，应用程序可以读取 directoryRoles 和 directoryRoleTemplates。 这包括读取目录角色的成员身份信息。
 

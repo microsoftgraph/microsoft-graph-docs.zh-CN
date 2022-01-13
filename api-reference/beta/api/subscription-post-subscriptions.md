@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序，以在 Microsoft 数据或资源发生更改时Graph更改通知。
+description: 订阅侦听器应用程序，以在 Microsoft 应用程序上的数据发生更改时Graph更改通知。
 ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 5c4e8fa74d19341a6d7c2c61eb3c3f17d9cc6e33
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 29f9b2c49616b97049e1d0ff141192adc58773e8
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61814005"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014080"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -182,7 +182,7 @@ Content-type: application/json
 |[组](../resources/group.md)|`groups`|
 |[列表](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[状态](../resources/presence.md)| `/communications/presences/{id}`（单个用户），`/communications/presences?$filter=id in ({id},{id}…)`（多个用户）|
+|[状态](../resources/presence.md)| `/communications/presences/{id}`（单个用户），`/communications/presences?$filter=id in ('{id}','{id}',…)`（多个用户）|
 |[打印机](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
