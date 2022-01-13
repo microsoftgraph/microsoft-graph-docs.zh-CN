@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 67661f92c323911886289227846a4aa104251d53
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 920be4a7ce84f6f3c1b5ce7ae073f7b3f712cb7f
+ms.sourcegitcommit: 54e19ec90dc5441e1b93f713889ddc831782789e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993872"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61995961"
 ---
 # <a name="list-shifts"></a>列出班次
 
@@ -19,7 +19,7 @@ ms.locfileid: "60993872"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 获取计划 [中的班次](../resources/shift.md) 实例 [列表](../resources/schedule.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -55,7 +55,7 @@ GET /teams/{teamId}/schedule/shifts
 
 ## <a name="example"></a>示例
 
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面是一个请求示例，请求获取在 2019 年 3 月 11 日到 3 月 18 日之间具有共享版本和草稿版本的所有 **Shift** 对象。
 
@@ -83,14 +83,14 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=shar
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-list-shifts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-list-shifts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。 
 
