@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: de656d95776d41e9075c9c00ab6d19328e634bab
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 6a2ce5a2c92a2f2b09191976c5c3e496d1f2e44e
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792160"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014318"
 ---
 # <a name="list-messages-in-a-chat"></a>列出聊天中的消息
 
@@ -48,7 +48,13 @@ GET /chats/{chat-id}/messages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-可以使用 [$top](/graph/query-parameters#top-parameter) 查询参数控制每个响应中的项目数。 允许的最大 `$top` 值为 50。
+此方法支持以下 [OData 查询参数](/graph/query-parameters)。
+
+| 名称      | 说明          |
+|:----------|:---------------------|
+| [$top](/graph/query-parameters#top-parameter)| 控制每个响应的项数。 允许的最大 `$top` 值为 50。 |
+| [$orderBy](/graph/query-parameters#orderBy)  | 当前支持 **LastModifiedDateTime（默认）** 和 **CreatedDateTime**。 |
+
 目前不支持其他 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
@@ -69,7 +75,7 @@ GET /chats/{chat-id}/messages
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。 传递 `$top=2` 来检索两条消息。
+下面展示了示例请求。 传递 `$top=2` 以检索两条消息，并传递 `$orderBy=createdDateTime` 以按 createdDateTime 对消息进行排序。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +84,7 @@ GET /chats/{chat-id}/messages
   "name": "get_allchatmessages_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2
+GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$orderBy=createdDateTime
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-allchatmessages-1-csharp-snippets.md)]

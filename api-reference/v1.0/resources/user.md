@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: d49cc39b02e3d83dc35bf036e3da9cae53ab1798
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 7739e4a47f269f9bc665dc9a07c274348445ecb5
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650893"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014024"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -60,7 +60,7 @@ ms.locfileid: "61650893"
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。该函数可传递。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
-| [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
+| [getByIds](../api/directoryobject-getbyids.md) | String collection | 返回 ID 列表中指定的目录对象。 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | 返回用户所属的所有组、管理单元和目录角色。 检查是可传递的。 |
 | [List createdObjects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | 从 createdObjects 导航属性中获取此用户创建的目录对象。 |
@@ -70,11 +70,11 @@ ms.locfileid: "61650893"
 | [List registeredDevices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) collection | 从 registeredDevices 导航属性中获取为此用户注册的设备。 |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | 重新处理用户的订阅分配。 |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | 无 | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 |
-| [列出已删除的组](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | 检索租户中过去 30 天内被删除的组。 |
+| [列出已删除的组](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索租户中过去 30 天内被删除的组。 |
 | [列出用户拥有的已删除组](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 检索租户中最近 30 天内删除的用户所有的组。 |
-| [获取已删除的组](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | 按 ID 检索已删除的组。 |
-| [恢复已删除的组](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | 还原最近 30 天内在租户中删除的组。 |
-| [永久删除组](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | 从租户中永久删除已删除的组。 |
+| [获取已删除的组](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) 集合 | 按 ID 检索已删除的组。 |
+| [恢复已删除的组](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) 集合 | 还原最近 30 天内在租户中删除的组。 |
+| [永久删除组](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) 集合 | 从租户中永久删除已删除的组。 |
 | **驱动器** |  |  |
 | [获取驱动器](../api/drive-get.md) | [drive](drive.md) | 检索 Drive 资源的属性和关系。 |
 | [列出子项](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | 在 DriveItem 的子项关系中返回 DriveItems 集合。 |
@@ -201,7 +201,7 @@ ms.locfileid: "61650893"
 |preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码，例如 `en-US`。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）|
 |preferredName|String|用户的首选名称。 <br><br>仅在 `$select` 上返回。|
 |provisionedPlans|[provisionedPlan](provisionedplan.md) 集合|为用户设置的计划。只读。不可为 null。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `not`、 `ge`、 `le`）。|
-|proxyAddresses|String collection|例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。对于 Azure AD B2C 帐户，此属性限制为 10 个唯一地址。只读，不可为 null。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `not`、 `ge`、 `le`、 `startsWith`）。|
+|proxyAddresses|String collection|例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 对 **mail** 属性的更改还将更新此集合，以将值作为 SMTP 地址包含在内。 有关详细信息，请参阅 [mail 和 proxyAddresses 属性](#mail-and-proxyaddresses-properties)。 以 `SMTP`（大写）为前缀的代理地址是主代理地址，而前缀为 `smtp` 的代理地址则是辅助代理地址。 对于 Azure AD B2C 帐户，此属性有 10 个唯一地址的限制。 Microsoft Graph 中的只读；只能通过 [Microsoft 365 管理中心](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) 来更新此属性。 不可为 null。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `not`、 `ge`、 `le`、 `startsWith`）。|
 |refreshTokensValidFromDateTime|DateTimeOffset|在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 <br><br>仅在 `$select` 返回。只读。 |
 |responsibilities|String collection|供用户枚举其职责的列表。 <br><br>仅在 `$select` 上返回。|
 |schools|String collection|供用户枚举其学习过的学校列表。 <br><br>仅在 `$select` 上返回。|
@@ -215,6 +215,17 @@ ms.locfileid: "61650893"
 |userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](organization.md)的 **verifiedDomains** 属性访问租户的已验证域。<br>注意：此属性不能包含突出字符。 仅支持使用以下字符：`A - Z`、`a - z`、`0 - 9`、` ' . - _ ! # ^ ~`。 有关允许字符的完整列表，请参阅[用户名策略](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts)。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`） 和 `$orderBy`。
 |userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。 **注意：** 有关成员和来宾用户权限的详细信息，请参阅 [Azure Active Directory 中的默认用户权限是什么？](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)         |
 
+### <a name="mail-and-proxyaddresses-properties"></a>mail 和 proxyAddresses 属性
+**mail** 和 **proxyAddresses** 都是与电子邮件相关的属性。 **proxyAddresses** 是仅与 Microsoft Exchange 服务器相关的地址集合。 它用于存储绑定到单个邮箱的用户的邮件地址列表。 将 **mail** 属性用作用户的电子邮件地址具有包括用户登录在内的各种用途，同时该属性定义了主代理地址。
+ 
+可通过 MS Graph 上的 [GET 用户](add link) API 检索 **mail** 和 **proxyAdress**。 可以通过 [更新用户的 PATCH 方法](add link) API 来更新 **mail**，但 **proxyAddresses** 无法通过 Microsoft Graph 进行更新。 更新用户的 **mail** 属性时，将触发重新计算 **proxyAddresses**，并将新更新的邮件设置为主要代理地址，但在以下方案中除外： 
+ 
+1. 如果用户具有包含 Microsoft Exchange 的许可证，则其所有代理地址必须属于租户上的已验证域。 任何不属于已验证域的域都将以无提示方式删除。
+2. 如果用户是来宾，并且主代理地址包含具有 #EXT# 的来宾用户 UPN 字符串，则不会将用户的邮件设置为主代理地址。
+3. 如果用户是来宾，则即使用户不再具有代理地址，也将不会删除用户的邮件。
+ 
+**proxyAddresses** 在目录对象（用户、组和组织联系人）中是唯一的。 如果用户的 **mail** 属性与另一个对象的 **proxyAddresses** 之一发生冲突，你将成功更新 **mail** 属性；但是，新邮件值将不会添加到 **proxyAddresses** 集合。
+
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
 
 本部分介绍 Azure AD 管理员和企业应用程序开发人员如何使用三个年龄组属性（**legalAgeGroupClassification**、**ageGroup** 和 **consentProvidedForMinor**）来满足与年龄相关的法规：
@@ -223,10 +234,7 @@ ms.locfileid: "61650893"
 
 例如：Cameron 是英国 Holyport 小学的名录管理员。 新学年开始，他根据英国与年龄相关的法规，使用入学文件获得未成年人父母的同意。 征得父母同意后，Holyport 学校和 Microsoft 应用可以使用未成年人的帐户。 Cameron 随后创建所有帐户，将 **ageGroup** 设置为 `minor`，**consentProvidedForMinor** 设置为 `granted`。 然后，他的学生使用的应用程序可以禁止不适合未成年人的功能。
 
-<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience. 
-For some reason they are not defined as enums in the CSDL. 
-Hence the type of the corresponding 3 properties remain as string type in the Properties table.
--->
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience but they are String types.-->
 
 #### <a name="legalagegroupclassification-values"></a>legalAgeGroupClassification values
 

@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c527b9c25a038e7440c4136b339bcc52b43b8958
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2d2622fe78ffedbddf60ab990fb89293845bdd3e
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049654"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014304"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 
@@ -56,7 +56,7 @@ ms.locfileid: "59049654"
 |categories|String collection|与联系人关联的类别。|
 |changeKey|String|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |children|String collection|联系人子女的姓名。|
-|companyName|String|联系人所在公司的名称。|
+|CompanyName|String|联系人所在公司的名称。|
 |createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |department|String|联系人所在的部门。|
 |displayName|String|联系人的显示名称。 可以在[创建](../api/user-post-contacts.md)或[更新](../api/contact-update.md)操作中指定显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在[更新](../api/contact-update.md)操作中将其作为 displayName。|
@@ -66,7 +66,7 @@ ms.locfileid: "59049654"
 |givenName|String|联系人的名。|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|联系人的住宅地址。|
 |homePhones|String collection|联系人的住宅电话号码。|
-|id|String|联系人的唯一标识符。只读。|
+|id|String|联系人的唯一标识符。[!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] 只读。|
 |imAddresses|String collection|联系人的即时消息 (IM) 地址。|
 |initials|String|联系人的姓名缩写。|
 |jobTitle|String|联系人的职务。|
@@ -175,7 +175,6 @@ ms.locfileid: "59049654"
 
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" }
 }
-
 ```
 
 ## <a name="see-also"></a>另请参阅
