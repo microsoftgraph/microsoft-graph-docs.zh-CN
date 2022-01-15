@@ -269,15 +269,15 @@ items:
           - name: 用户
             href: resources/user.md
             items:
-              - name: 列出用户
+              - name: 列出
                 href: api/user-list.md
-              - name: 创建用户
+              - name: 创建
                 href: api/user-post-users.md
-              - name: 获取用户
+              - name: 获取
                 href: api/user-get.md
-              - name: 更新用户
+              - name: 更新
                 href: api/user-update.md
-              - name: 删除用户
+              - name: 删除
                 href: api/user-delete.md
               - name: 更改密码
                 href: api/user-changepassword.md
@@ -422,7 +422,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置人员见解
+                  - name: 设置见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -516,7 +516,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置人员见解
+              - name: 设置见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -544,7 +544,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言和区域 () '
+          - name: '预览版的首选语言 (区域) '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -560,7 +560,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: 团队合作
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -2004,7 +2004,7 @@ items:
                     href: api/printershare-post-jobs.md
                   - name: 获取
                     href: api/printjob-get.md
-                  - name: Start
+                  - name: 开始
                     href: api/printjob-start.md
                   - name: 更新
                     href: api/printjob-update.md
@@ -2090,7 +2090,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -2139,7 +2139,7 @@ items:
             href: resources/intune-graph-overview.md
             displayName: Intune
             items:
-              - name: 应用管理
+              - name: 应用程序管理
                 href: resources/intune-app-conceptual.md
                 items:
                   - name: Android 设备所有者注册模式
@@ -6829,7 +6829,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows Defender 防篡改保护选项
+                  - name: Windows防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -9426,7 +9426,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: 更新
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Identity
+                  - name: 标识
                     href: resources/intune-rbac-identity.md
                   - name: 标识集
                     href: resources/intune-rbac-identityset.md
@@ -10314,7 +10314,7 @@ items:
                     href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
                   - name: 获取租户详细信息
                     href: api/managedtenants-tenantdetailedinformation-get.md
-              - name: Tenant
+              - name: 租户
                 href: resources/managedtenants-tenant.md
                 items:
                   - name: 列出租户
@@ -11269,7 +11269,7 @@ items:
                         href: api/directoryobject-getmemberobjects.md
                       - name: 检查成员对象
                         href: api/directoryobject-checkmemberobjects.md
-                  - name: Groups
+                  - name: 组
                     href: resources/group.md
                     items:
                       - name: 列出 memberOf
@@ -11885,7 +11885,7 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                      - name: 'Microsoft Authenticator已电话密码登录策略 (密码) '
+                      - name: 'Microsoft Authenticator密码电话已弃 (登录策略) '
                         href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -12099,7 +12099,7 @@ items:
                     href: api/trustframeworkpolicy-delete.md
               - name: 用户流
                 items:
-                  - name: '用户流 (弃用) '
+                  - name: '用户流 (弃) '
                     items:
                       - name: 用户流
                         href: resources/identityuserflow.md
@@ -12241,7 +12241,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: Delete
+                      - name: 删除
                         href: api/identityapiconnector-delete.md
           - name: 管控
             items:
@@ -12290,19 +12290,19 @@ items:
                         href: api/accessreviewinstance-list-decisions.md
                       - name: '列出已 (审批) '
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
-                  - name: 访问评审实例决策项
-                    href: resources/accessreviewinstancedecisionitem.md
-                    items:
-                      - name: 列表
-                        href: api/accessreviewinstance-list-decisions.md
-                      - name: 获取
-                        href: api/accessreviewinstancedecisionitem-get.md
-                      - name: 按当前用户筛选
-                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                      - name: 更新
-                        href: api/accessreviewinstancedecisionitem-update.md
-                      - name: '列出已 (审批) '
-                        href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+                      - name: 访问评审实例决策项
+                        href: resources/accessreviewinstancedecisionitem.md
+                        items:
+                          - name: 列表
+                            href: api/accessreviewinstance-list-decisions.md
+                          - name: 获取
+                            href: api/accessreviewinstancedecisionitem-get.md
+                          - name: 按当前用户筛选
+                            href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+                          - name: 更新
+                            href: api/accessreviewinstancedecisionitem-update.md
+                          - name: '列出已 (审批) '
+                            href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                   - name: 访问评审策略
                     href: resources/accessreviewpolicy.md
                     items:
@@ -13332,7 +13332,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置人员见解
+                  - name: 设置见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -13893,7 +13893,7 @@ items:
                     href: api/usersimulationdetails-list.md
                   - name: 获取模拟概述
                     href: api/simulationreportoverview-get.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -14027,9 +14027,9 @@ items:
                 href: api/site-list-subsites.md
               - name: 搜索网站
                 href: api/site-search.md
-              - name: Permissions
+              - name: 权限
                 items:
-                  - name: Permission
+                  - name: 权限
                     href: resources/permission.md
                   - name: 列出网站权限
                     href: api/site-list-permissions.md
@@ -14997,7 +14997,7 @@ items:
                     href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
-              - name: 'Outlook (任务) '
+              - name: 'Outlook任务 (已弃) '
                 items:
                   - name: Outlook 任务
                     href: resources/outlooktask.md

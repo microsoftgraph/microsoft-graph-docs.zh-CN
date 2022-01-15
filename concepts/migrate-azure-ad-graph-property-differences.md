@@ -1,31 +1,33 @@
 ---
 title: Azure AD Graph 和 Microsoft Graph
-description: 描述资源Azure AD Graph实体 (Microsoft) 和 Microsoft Graph 之间的属性差异，以帮助相应地迁移应用。
+description: 介绍 Azure AD Graph 和 Microsoft (实体之间的) 属性Graph，以帮助相应地迁移应用。
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: fece47dfea3afd007ce148c2a13294b6a89e790d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 3f80a54a3dd887293dff22f6ceb976b6d8c9e780
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077654"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056321"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 和 Microsoft Graph
 
 本文是步骤 *1：查看迁移应用的* 过程的 API [差异的一部分](migrate-azure-ad-graph-planning-checklist.md)。
 
-通常，将 Azure Active Directory (Azure AD) Graph API 与 Microsoft Graph最佳方法就是比较每个服务的基础元数据，尤其是资源说明：
+一般来说，将 Azure Active Directory (Azure AD) Graph API 与 Microsoft Graph的最佳方法就是比较每个服务的基础元数据，尤其是资源说明：
 
 - [Azure AD Graph元数据](https://graph.windows.net/microsoft.com/$metadata?api-version=1.6)
 - [Microsoft Graph beta 元数据](https://graph.microsoft.com/beta/$metadata)
 - [Microsoft Graph v1.0 元数据](https://graph.microsoft.com/v1.0/$metadata)
 
-此处突出显示了资源之间的属性差异。 如果属性未在此列表中显示，则它已在[v1.0](/graph/api/overview)版本的 Microsoft Graph 中可用，其名称与 Azure AD Graph 中的名称完全相同。
+本文重点介绍资源之间的属性差异。 如果属性未在此列表中显示，则它已在[v1.0](/graph/api/overview)版本的 Microsoft Graph 中可用，其名称与 Azure AD Graph 中的名称完全相同。
 
-由于用户和组使用得非常频繁，因此这些资源首先出现。  其他资源按字母顺序显示。
+由于 [用户](#user-property-differences) 和 [组](#group-property-differences) 资源使用得非常频繁，因此先列出它们。 其他资源按字母顺序列出。
 
 ## <a name="user-property-differences"></a>用户属性差异
+
+The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has been renamed to **user** in Microsoft Graph and inherits from **directoryObject**. 以下是属性差异：
 
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br>property|备注|
 |---|---|---|
@@ -47,6 +49,8 @@ ms.locfileid: "61077654"
 
 ## <a name="group-property-differences"></a>组属性差异
 
+The Azure AD Graph **Group** resource inherits from **DirectoryObject**; it has been renamed to **group** in Microsoft Graph and inherits from **directoryObject**. 以下是属性差异：
+
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **dirSyncEnabled** | beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
@@ -55,6 +59,9 @@ ms.locfileid: "61077654"
 | **provisioningErrors** | beta &nbsp; - &nbsp; _不可用_ <br> v1.0 &nbsp; - &nbsp; _不可用_ | 此属性及其信息已弃用。  但是，可以在 **onPremisesProvisioningErrors** 连接描述任何 AD 或相关设置错误的新属性 |
 
 ## <a name="application-property-differences"></a>应用程序属性差异
+
+应用程序Azure AD Graph继承自 **DirectoryObject**;它已被重命名为 Microsoft Graph中的应用程序，继承自 **directoryObject**。 以下是属性差异：
+
 
 | Azure AD Graph <br> (v1.6) 属性 | Microsoft Graph<br> property                                                                                                                          | 备注                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -79,6 +86,9 @@ ms.locfileid: "61077654"
 
 ## <a name="approleassignment-differences"></a>AppRoleAssignment 差异
 
+**AppRoleAssignment** Azure AD Graph继承自 **DirectoryObject**;它在 Microsoft Graph 中已重命名为 **appRoleAssignment，** 继承自 **directoryObject**。 以下是属性差异：
+
+
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **creationTimestamp** | beta &nbsp; - &nbsp; **creationTimestamp** <br> v1.0 &nbsp; - &nbsp; **createdDateTime** | |
@@ -86,30 +96,36 @@ ms.locfileid: "61077654"
 
 ## <a name="contact-property-differences"></a>联系人属性差异
 
-The Azure AD Graph Contact resource has been renamed to orgContact in Microsoft Graph.  以下是属性差异：
+联系人Azure AD Graph继承自 **DirectoryObject**;它已重命名为 microsoft Graph 中的 **orgContact** ，继承自 **directoryObject**。 以下是属性差异：
 
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
-| **city** | 城市 &nbsp; - &nbsp; **(beta)** <br> v1.0 &nbsp; - &nbsp; **地址 (城市)**  | city 属性是 addresses 资源集合的一部分。 |
+| **城市** | 城市 &nbsp; - &nbsp; **(beta)** <br> v1.0 &nbsp; - &nbsp; **地址 (城市)**  | city 属性是 addresses 资源集合的一部分。 |
 | **country** | &nbsp; - &nbsp;  &nbsp; **countryOrRegion (beta)**<br> v1.0 &nbsp; - &nbsp; **地址** &nbsp; **(countryOrRegion)**  | countryOrRegion 属性是 addresses 资源集合的一部分。 |
 | **dirSyncEnabled** | beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled**   | |
-| **facsimileTelephoneNumber** | beta &nbsp; - &nbsp; **phones** &nbsp; **(businessFax)** <br> v1.0 &nbsp; - &nbsp; **(** &nbsp; **businessFax)** | 现在是手机集合的一部分，支持移动、业务和 businessFax。 |
+| **facsimileTelephoneNumber** | beta &nbsp; - &nbsp; **phones** &nbsp; **(businessFax)** <br> v1.0 &nbsp; - &nbsp; **电话** &nbsp; **(businessFax)** | 现在是手机集合的一部分，支持移动、业务和 businessFax。 |
 | **physicalDeliveryOfficeName** | beta &nbsp; - &nbsp; **officeLocation** <br> v1.0 &nbsp; - &nbsp; **officeLocation** | |
-| **postalCode** | &nbsp; - &nbsp;  &nbsp; **postalCode (beta)**<br> v1.0 &nbsp; - &nbsp; **addresses** &nbsp; **(postalCode)** | postalCode 属性是 addresses 资源集合的一部分。 |
-| **provisioningErrors** | beta &nbsp; - &nbsp; 不可用 <br> v1.0 &nbsp; - &nbsp; 不可用 | 此属性及其信息已弃用。  但是，可以在 **onPremisesProvisioningErrors** 连接描述任何 AD 或相关设置错误的新属性。 目前，这仅在 beta 版中可用。 |
+| **postalCode** | &nbsp; - &nbsp;  &nbsp; **postalCode (beta 地址)**<br> v1.0 &nbsp; - &nbsp; **addresses** &nbsp; **(postalCode)** | postalCode 属性是 addresses 资源集合的一部分。 |
+| **provisioningErrors** | beta &nbsp; - &nbsp; 不可用 <br> v1.0 &nbsp; - &nbsp; 不可用 | 此属性及其信息已弃用。  但是，可以在 **onPremisesProvisioningErrors** 连接描述任何与 AD 相关的设置错误的新属性。 目前，这仅在 beta 版中可用。 |
 | **sipProxyAddress** |  beta &nbsp; - &nbsp; **imAddresses**<br> v1.0 &nbsp; - &nbsp; **imAddresses**  | |
 | **state** | beta &nbsp; - &nbsp; **addresses** &nbsp; **(state)**<br> v1.0 &nbsp; - &nbsp; **地址** &nbsp; **(状态)**  | state 属性是 addresses 资源集合的一部分。 |
-| **streetAddress** | beta &nbsp; - &nbsp; **addresses** &nbsp; **(street)**<br> v1.0 &nbsp; - &nbsp; **地址** &nbsp; **(街道)**  | street 属性是 addresses 资源集合的一部分。 |
+| **streetAddress** | 街道 &nbsp; - &nbsp; **(** &nbsp; **beta)**<br> v1.0 &nbsp; - &nbsp; **地址** &nbsp; **(街道)**  | street 属性是 addresses 资源集合的一部分。 |
 | **telephoneNumber** | beta &nbsp; - &nbsp; **phones** &nbsp; **(business)** <br> v1.0 &nbsp; - &nbsp; **电话** &nbsp; **(商业)** | 现在是手机集合的一部分，支持移动、业务和 businessFax。 |
 | **thumbnailPhoto** | beta &nbsp; - &nbsp; _&nbsp; 尚 &nbsp; 不可用_&nbsp;<br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
 
 ## <a name="contract-property-differences"></a>合同属性差异
+
+The Azure AD Graph **Contract** resource inherits from **DirectoryObject**; it has been renamed to **contract** in Microsoft Graph and inherits from **directoryObject**. 以下是属性差异：
+
 
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **customerContextId** | beta &nbsp; - &nbsp; **customerId** <br> v1.0 &nbsp; - &nbsp; **customerId**  |  |
 
 ## <a name="device-property-differences"></a>设备属性差异
+
+The Azure AD Graph **Device** resource inherits from **DirectoryObject**; it has been renamed to **device** in Microsoft Graph and inherits from **directoryObject**. 以下是属性差异：
+
 
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
@@ -123,15 +139,27 @@ The Azure AD Graph Contact resource has been renamed to orgContact in Microsoft 
 | **dirSyncEnabled** |  beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** |  |
 | **lastDirSyncTime** |  beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** |  |
 
+## <a name="directoryobject-property-differences"></a>DirectoryObject 属性差异
+
+Azure AD Graph **DirectoryObject** 资源已重命名为 Microsoft Graph 中的 **directoryObject。** 对属性的更改也会在继承自 **DirectoryObject** 的其他资源中显示。 以下是属性差异：
+
+|Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
+|---|---|---|
+| **deletionTimestamp** | beta &nbsp; - &nbsp; **deletedDateTime** <br> v1.0 &nbsp; - &nbsp; **deletedDateTime** | 尽管 **deletionTimestamp** 是 DateTime 类型， **但 deletedDateTime** 是 DateTimeOffset 类型。  |
+| **objectId** | beta &nbsp; - &nbsp; **id** <br> v1.0 &nbsp; - &nbsp; **id** | Microsoft Graph中的 **id** 属性继承自 [实体](/graph/api/resources/entity)资源。 |
+| **objectType** | beta &nbsp; - &nbsp; *不可用* <br> v1.0 &nbsp; - &nbsp; *不可用* | 此属性不用于 Microsoft Graph。 相反，Microsoft Graph返回 **@odata.type** 属性，但仅适用于可能返回不同类型的对象或派生类型的对象的 API。 例如，[列表组的成员](/graph/api/group-list-members)API 可能会返回用户、组[](/graph/api/resources/user)、服务[](/graph/api/resources/group)[主体](/graph/api/resources/serviceprincipal)、[组织](/graph/api/resources/orgcontact)联系人或[设备的成员](/graph/api/resources/device)。 对于用户 **，@odata.type** 为 `#microsoft.graph.user` 。 |
+
 ## <a name="directoryobjectreference-property-differences"></a>DirectoryObjectReference 属性差异
 
-microsoft Azure AD Graph中的 directoryObjectReference 资源已重命名为 directoryObjectPartnerReference Graph。  以下是属性差异：
+the Azure AD Graph **DirectoryObjectReference** resource inherits from **DirectoryObject**; it has been renamed to **directoryObjectPartnerReference** in Microsoft Graph and inherits from **directoryObject**. 以下是属性差异：
 
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **externalContextId** | beta &nbsp; - &nbsp; **externalPartnerTenantId** <br> v1.0 &nbsp; - &nbsp; **externalPartnerTenantId** |  |
 
 ## <a name="domain-property-differences"></a>域属性差异
+
+The Azure AD Graph **Domain** resource has been renamed to **domain** in Microsoft Graph. 以下是属性差异：
 
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
@@ -141,6 +169,8 @@ microsoft Azure AD Graph中的 directoryObjectReference 资源已重命名为 di
 
 ## <a name="oauth2permissionsgrant-property-differences"></a>OAuth2PermissionsGrant 属性差异
 
+Microsoft Azure AD Graph **OAuth2PermissionsGrant** 资源已重命名为 **oAuth2PermissionsGrant** Graph。 以下是属性差异：
+
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **expiryTime** | beta &nbsp; - &nbsp; **expiryTime** <br> v1.0 &nbsp; - &nbsp; _已删除_ | 在 Microsoft v1.0 中，此属性Graph删除。 |
@@ -148,11 +178,11 @@ microsoft Azure AD Graph中的 directoryObjectReference 资源已重命名为 di
 
 ## <a name="policy-property-differences"></a>策略属性差异
 
-在 Microsoft Graph有一些已命名的策略类型 (如 tokenIssuancePolicy 或 tokenLifetimePolicy) ，而不是通用策略资源类型。 有关更多详细信息，请参阅 [策略概述](/graph/api/resources/policy-overview)。
+在 Microsoft Graph中，有一些已命名的策略类型 (如 **tokenIssuancePolicy** 或 **tokenLifetimePolicy**) 而不是通用策略资源类型。 有关更多详细信息，请参阅 [策略概述](/graph/api/resources/policy-overview)。
 
 ## <a name="serviceendpoint-property-differences"></a>ServiceEndpoint 属性差异
 
-The Azure AD Graph ServiceEndpoint resource is renamed to endpoint in Microsoft Graph.
+**ServiceEndpoint** Azure AD Graph继承自 **DirectoryObject**;它已被重命名为 Microsoft Graph中的终结点，并且继承自 **directoryObject**。 以下是属性差异：
 
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
@@ -161,6 +191,8 @@ The Azure AD Graph ServiceEndpoint resource is renamed to endpoint in Microsoft 
 | **resourceId** | beta &nbsp; - &nbsp; **providerResourceId**<br> v1.0 &nbsp; - &nbsp; **providerResourceId** | |
 
 ## <a name="serviceprincipal-property-differences"></a>ServicePrincipal 属性差异
+
+The Azure AD Graph **ServicePrincipal** resource inherits from **DirectoryObject**; it has been renamed to **servicePrincipal** in Microsoft Graph and inherits from **directoryObject**. 以下是属性差异：
 
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
@@ -173,7 +205,7 @@ The Azure AD Graph ServiceEndpoint resource is renamed to endpoint in Microsoft 
 
 ## <a name="tenantdetails-property-differences"></a>TenantDetails 属性差异
 
-TenantDetails Azure AD Graph在 Microsoft Graph 中重命名为组织。  以下是属性差异：
+**TenantDetail** Azure AD Graph继承自 **DirectoryObject**;它已被重命名为 Microsoft Graph中的组织，继承自 **directoryObject**。 以下是属性差异：
 
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
@@ -184,11 +216,11 @@ TenantDetails Azure AD Graph在 Microsoft Graph 中重命名为组织。  以下
 
 ## <a name="trustedcasforpasswordlessauth-property-differences"></a>TrustedCasForPasswordlessAuth 属性差异
 
-TrustedCasforPasswordlessAuth Azure AD Graph TrustedCasForPasswordlessAuth 资源已重命名为[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration)。 没有属性差异;但是 **，certificateAuthorities** 属性使用的 **certificateAuthority** 资源类型存在差异。
+**TrustedCas Azure AD Graph PasswordlessAuth** 资源已重命名为 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration)。 没有属性差异;但是 **，certificateAuthorities** 属性使用的 **certificateAuthority** 资源类型存在差异。
 
-### <a name="certificateauthorityinformation"></a>CertificateAuthorityInformation
+### <a name="certificateauthorityinformation-property-differences"></a>CertificateAuthorityInformation 属性差异
 
-The Azure AD Graph CertificateAuthorityInformation is renamed to **certificateAuthority** in Microsoft Graph. 以下是属性差异。
+Azure AD Graph **CertificateAuthorityInformation** 已重命名为 Microsoft Graph 中的 **certificateAuthority。** 以下是属性差异。
 
 |Azure AD Graph <br> (v1.6) 属性 |Microsoft Graph<br> property|备注|
 |---|---|---|

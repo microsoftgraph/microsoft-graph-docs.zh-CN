@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7b5d8e92f5abe934fadb9003fca8218ba80da830
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 205263bda7a469993ce56a165d7067b45e5da038
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032611"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056342"
 ---
 # <a name="get-usersource"></a>获取 userSource
 
@@ -20,7 +20,7 @@ ms.locfileid: "61032611"
 
 读取 [userSource](../resources/ediscovery-usersource.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4
 [!INCLUDE [sample-code](../includes/snippets/java/get-usersource-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-usersource-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -118,6 +118,7 @@ Content-Type: application/json
     "id": "46384443-4137-3032-3437-363939433735",
     "email": "megan@contoso.com",
     "includedSources": "mailbox,site",
+    "siteWebUrl": "https://contoso.sharepoint.com/personal/megan_contoso_com/",
     "createdBy": {
         "user": {
             "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",

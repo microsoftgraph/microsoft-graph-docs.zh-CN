@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 954a38b88f659c7049dfca162e292fa5f035090a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 8c78950129ccb0c469b505970c696a4b57236e9d
+ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946886"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62047103"
 ---
 # <a name="update-settings"></a>更新设置
 
@@ -20,14 +20,14 @@ ms.locfileid: "60946886"
 
 ### <a name="batch-request"></a>批量请求
 
-此外，还可以选择退出多个用户，Delve请求为整个组织禁用对内容相关性的贡献。
+也可以选择从组织中退出多个Delve并通过批处理请求禁用他们对整个组织的内容相关性的贡献。
 若要了解更多信息，请参阅 [JSON 批处理](/graph/json-batching)。
 
->**重要** 提示：只有组织管理 [角色](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) 组的成员才能更新多个用户。 
+>**重要** 提示：只有组织管理 [角色](/exchange/permissions/permissions?view=exchserver-2019#role-groups) 组的成员才能更新多个用户。 
 
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,7 +49,7 @@ PATCH /me/settings
 PATCH /users/{id | userPrincipalName}/settings/
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值|
 |:-----------|:------|
@@ -62,13 +62,13 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|布尔值|设置为 true 将禁用委派访问[Trending](/graph/api/resources/insights-trending?view=graph-rest-1.0) API，并禁用用户对 Office Delve 中的文档的访问。 设置为 true 还会影响 Microsoft 365 中显示的内容的相关性-例如，SharePoint 主页中的建议网站和 OneDrive for Business 中的发现视图显示不太相关的结果。 此设置反映控件在[控件Office Delve。](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)|
+|contributionToContentDiscoveryDisabled|布尔值|设置为 true 将禁用委派访问[Trending](/graph/api/resources/insights-trending?view=graph-rest-1.0) API，并禁用用户对 Office Delve 中的文档的访问。 设置为 true 还会影响 Microsoft 365 中显示的内容的相关性-例如，SharePoint Home 中的建议网站和 OneDrive for Business 中的发现视图显示不太相关的结果。 此设置反映控件在[控件Office Delve。](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)|
 
 ## <a name="example"></a>示例 
 
 ##### <a name="request"></a>请求
 
-下面是一个示例请求，请求如何选择退出用户Delve并禁用他针对整个组织的内容相关性的贡献。
+下面是一个示例请求，请求如何选择退出用户，Delve并禁用他针对整个组织的内容相关性的贡献。
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/settings

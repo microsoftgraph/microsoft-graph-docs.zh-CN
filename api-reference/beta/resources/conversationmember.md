@@ -1,16 +1,16 @@
 ---
 title: conversationMember 资源类型
 description: 表示对话中的用户。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 679ab696c0f5752d8e59a2cb9de560c11bcc4ca9
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: fd0a85bb14d6b205e81a47259dbdc7616fc86a9f
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060034"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056335"
 ---
 # <a name="conversationmember-resource-type"></a>conversationMember 资源类型
 
@@ -19,7 +19,6 @@ ms.locfileid: "53060034"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示团队、 [频道](team.md) 或 [聊天](channel.md) 中的 [用户](chat.md)。
-另请参阅 [aadUserConversationMember](aaduserconversationmember.md)。
 
 ## <a name="methods"></a>方法
 
@@ -45,7 +44,7 @@ ms.locfileid: "53060034"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 用户的唯一 ID。|
+|id|String| 只读。用户的唯一 ID。|
 |displayName| string | 用户的显示名称。 |
 |角色| string 集合 | 该用户的角色。 |
 |visibleHistoryStartDateTime| DateTimeOffset | 表示对话历史久远程度的时间戳与对话成员共享。 此属性只对聊天成员可设置。 |
@@ -73,6 +72,14 @@ ms.locfileid: "53060034"
   "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [aadUserConversationMember](aaduserconversationmember.md)
+- [skypeForBusinessUserConversationMember](skypeForBusinessUserConversationMember.md)
+- [anonymousGuestConversationMember](anonymousGuestConversationMember.md)
+- [skypeUserConversationMember](skypeUserConversationMember.md)
+- [microsoftAccountUserConversationMember](microsoftAccountUserConversationMember.md)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
