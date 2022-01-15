@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7769bbce057dd387bdc7494c98f069f6a4d06c9b
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 10bffe31804048328eac1ab1e8f080a2ef3ed263
+ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780861"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62047145"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 
@@ -62,7 +62,7 @@ GET /me/people/?$search=j
 
 ### <a name="use-intelligence-to-improve-collaboration"></a>使用智能来提升协作
 
-在平时的工作日中，用户通常会与存储在多个文档中的大量信息进行交互，并以多种不同的方式与其他用户协作。 当他们需要任何信息时，即可随时找到所需的信息，这一点很重要。
+在平时的工作日中，用户通常会与存储在多个文档中的大量信息进行交互，并以多种不同的方式与其他用户协作。 当他们需要任何信息时，始终可以随时找到所需的信息，这一点非常重要。
 
 你可以使用见解 API（其中包含[热门](/graph/api/resources/insights-trending)、[共享](/graph/api/resources/insights-shared)和[使用](/graph/api/resources/insights-used) API），根据用户的当前上下文和需求跨 Microsoft 365 处理文件，使用户工作更为高效并提升组织中的协作。 组织可以为这些基于文档的见解[自定义隐私设置](insights-customize-item-insights-privacy.md)，并控制特定 Microsoft 365体验中这些见解的可用性。
 
