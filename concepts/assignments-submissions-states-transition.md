@@ -1,20 +1,20 @@
 ---
 title: Microsoft Graph 中作业和提交状态、转换和Graph
-description: 本文介绍了在流程流期间作业和提交状态的变化，以及涉及 Microsoft Graph API。
+description: 本文介绍了流程流期间作业和提交状态的变化，以及涉及 Microsoft Graph API。
 ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 97e75c7ef87d47c0359d6b8d6a5e5db2bb21a518
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 456c2c8351521146f7160d65b6b0d2dff37d31dc
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647005"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072066"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Microsoft Graph 中作业和提交状态、转换和Graph
 
-作业和提交是教师和学生操作之间交互的重要部分。 本文介绍了在流程流期间作业和提交状态的变化，以及涉及 Microsoft Graph API。
+作业和提交是教师和学生操作之间交互的重要部分。 本文介绍了流程流期间作业和提交状态的变化，以及涉及 Microsoft Graph API。
 
 ## <a name="assignment-states-and-transitions"></a>工作分配状态和转换
 
@@ -23,7 +23,7 @@ ms.locfileid: "61647005"
 | 状态 | 说明 | REST API 调用 |
 |:--|:--|:--|
 | Draft | 从现有工作分配创建或复制新工作分配时的初始状态。 | `POST /education/classes/{id}/assignments` |
-| Published | 将作业分发给每个分配的学生时的背景处理状态。 | `POST /education/classes/{id}/assignments/{id}/publish` |
+| 已发布 | 将作业分发给每个分配的学生时的背景处理状态。 | `POST /education/classes/{id}/assignments/{id}/publish` |
 | Scheduled | 教师计划将来发布作业时的状态。 | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` |
 | 已分配 | 完成发布后，作业将移动到"已分配"状态，并且可供学生使用。 | `POST /education/classes/{id}/assignments/{id}/publish` |
 | Pending | 从现有工作分配复制新工作分配时的背景处理状态。 | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
@@ -39,12 +39,12 @@ ms.locfileid: "61647005"
 | 当前工作分配状态 | 操作 | 新状态 |
 |:--|:--|:--|
 | Draft | 教师安排作业 | Scheduled |
-| Draft | 发布 | Published |
+| Draft | 发布 | 已发布 |
 | Draft | 已编辑 | Draft |
 | Draft | 已放弃 | | 
-| Published | 发布完成 | 已分配 |
-| Published | 已放弃 | |
-| Scheduled | 到达截止日期 | Published |
+| 已发布 | 发布完成 | 已分配 |
+| 已发布 | 已放弃 | |
+| Scheduled | 到达截止日期 | 已发布 |
 | Scheduled | 取消计划 | Draft |
 | Scheduled | 重新计划 | Scheduled |
 | 已分配 | 已放弃 | |
@@ -118,4 +118,4 @@ ms.locfileid: "61647005"
 
 * 教师的最大作业数和提交资源数为 10，学生为 10。
 * 资源允许的最大大小为整体 50 MB 或 10 个资源。
-* 限制适用;有关详细信息，请参阅[Microsoft Graph限制指南](https://docs.microsoft.com/graph/throttling)。
+* 限制适用;有关详细信息，请参阅[Microsoft Graph限制指南](/graph/throttling)。

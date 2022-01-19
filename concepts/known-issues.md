@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: bbca6eaa30d28a20d17b2b502357e9eb55abc59a
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 0321ad71dd1f9604f70eed5c4602610e867ed2fa
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791824"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072563"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -406,7 +406,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 目前，[我/joinedTeams](/graph/api/user-list-joinedteams) API 调用仅返回 [团队](/graph/api/resources/team)的 **id**、**displayName** 和 **说明** 属性。 若要获取所有属性，请使用[获取团队](/graph/api/team-get)操作。
 
 ### <a name="installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported"></a>不支持安装需要特定于资源的同意权限的应用
-以下 API 调用不支持安装需要 [资源特定的同意](https://aka.ms/teams-rsc) 权限的应用。
+以下 API 调用不支持安装需要 [资源特定的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 权限的应用。
 - [将应用添加到团队](/graph/api/team-post-installedapps.md)
 - [升级团队中安装的应用](/graph/api/team-teamsappinstallation-upgrade.md)
 - [将应用添加到聊天](/graph/api/chat-post-installedapps.md)

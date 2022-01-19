@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph 限制指南
 description: 限制可调节并发调用服务的数量，以防止资源的过度使用。Microsoft Graph 旨在用于处理大量的请求。如果出现过多请求，限制将有助于保持 Microsoft Graph 的最佳性能和服务的可靠性。
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 082586ea7518df90b16bc2b2b2e0bafdfcc2779d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: e7431245c63bb9c29ed32a2f07c55394198f1b60
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226468"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072122"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -483,3 +483,11 @@ Planner 的服务限制不可用。
 | <!-- fake header--> |
 |--|
 | <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+
+### <a name="service-communications-service-limits"></a>服务通信服务限制
+以下限制适用于`/admin/serviceAnnouncement/`下任何类型的服务通信请求。
+
+| 请求类型 |  每个租户每个应用限制 |
+| ------------ | ------------------------ |
+| 任何 | 每 60 秒 240 个请求 |
+|任何 | 每小时 800 个请求 |

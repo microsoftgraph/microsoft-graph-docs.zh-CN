@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6050354c833a598a431b7cf09c7cbb48aa8632db
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 699b259d6035cb887b530244781bd8afd31530d4
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60999095"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072276"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -24,7 +24,7 @@ ms.locfileid: "60999095"
 
 使用 Azure 门户分配角色时，角色激活步骤将代表管理员隐式完成。 若要获取可用角色的完整列表，Azure AD列表[directoryRoleTemplates](directoryroletemplate-list.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -39,7 +39,7 @@ ms.locfileid: "60999095"
 GET /directoryRoles
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法 **不** 支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+此方法支持 、 、 、 () 和 OData 查询参数来帮助 `$count` `$select` `$search` `$filter` `eq` `$expand` [](/graph/query-parameters)自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/directoryRoles
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryroles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryroles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

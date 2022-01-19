@@ -1,14 +1,14 @@
 ---
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 9e80db7b1d3995f7116e9e8af81cb9e9e8dfc560
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3b4290283a28f16f4fe859d8772e12490469fd30
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035674"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61528288"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->

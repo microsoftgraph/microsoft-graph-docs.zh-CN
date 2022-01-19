@@ -5,15 +5,15 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0c16ca46a3bb9b9862b49d4dd2ee27546f1f1d6c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 636f4d719dd044d0c02f91dcf6e3a1ffad640103
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054062"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072521"
 ---
 # <a name="working-with-service-communications-api-in-microsoft-graph"></a>在 Microsoft Graph 中处理服务通信 API
-服务通信 API 提供与租户订阅的 Microsoft 云服务相关的服务运行状况和消息中心帖子。 你可以获取 Microsoft 服务实例的当前和历史 (，例如，Exchange Online服务关闭) 。 在致电支持人员或花时间进行故障排除之前，你可以检查服务运行状况以确定问题是否被跟踪且正在解决。 通过消息中心帖子，你可以跟踪即将进行的更改，包括新功能、更新和 (例如，Exchange Online获取新功能) 。
+服务通信 API 提供与租户订阅的 Microsoft 云服务相关的服务运行状况和消息中心帖子。 你可以获取 Microsoft 服务实例的当前和历史 (，例如，Exchange Online服务) 。 在致电支持人员或花时间进行故障排除之前，你可以检查服务运行状况以确定问题是否被跟踪且正在解决。 通过消息中心帖子，你可以跟踪即将进行的更改，包括新功能、更新和 (例如，Exchange Online获取新功能) 。
 
 ## <a name="authorization"></a>Authorization
 Microsoft Graph允许应用程序获得对运行状况的授权访问权限，并更改有关租户订阅的 Microsoft 云服务的通信。 借助相应的委派权限或应用程序权限[](/graph/permissions-reference#service-communications-permissions)，应用可以代表登录用户或者没有租户中任何登录用户的情况下访问通信数据。 这些权限的委派和应用程序类型都仅由管理员授予。
@@ -53,6 +53,11 @@ Microsoft Graph允许应用程序获得对运行状况的授权访问权限，�
 |Microsoft Graph 德国|https://graph.microsoft.de/beta/admin/serviceAnnouncement/|
 |由世纪互联运营的 Microsoft Graph 中国|https://microsoftgraph.chinacloudapi.cn/beta/admin/serviceAnnouncement/|
 
+## <a name="service-communications-limits"></a>服务通信限制
+
+为保证服务性能，服务通信 API 对每个应用程序每个租户的请求具有限制。 有关限制的详细信息，请参阅服务  [通信服务的限制](/graph/throttling#service-communications-service-limits)。
+
+
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
 
@@ -61,6 +66,6 @@ Microsoft Graph允许应用程序获得对运行状况的授权访问权限，�
 服务通信 API 可以开启与用户互动的新方式：
 
 - [在 Microsoft Graph 中访问服务运行状况和通信的概述](/graph/service-communications-concept-overview)
-- 请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
+- 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
 
 需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/partners)。

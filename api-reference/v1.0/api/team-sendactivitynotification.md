@@ -5,12 +5,12 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d7944e3e12e66b98cf8058cdf11d8b94df6f050a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bf872f5609b7af3d0a47bdf4a88022d47438d948
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029181"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072353"
 ---
 # <a name="team-sendactivitynotification"></a>team：sendActivityNotification
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61029181"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|TeamsActivity.Send.Group*，TeamsActivity.Send|
 
->**注意：** 标记为 * 的权限使用 [特定于资源的同意](https://aka.ms/teams-rsc)。
+>**注意：** 标记为 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -65,7 +65,7 @@ POST /teams/{teamId}/sendActivityNotification
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外[，Teams应用](/microsoftteams/platform/overview)必须安装在团队中。
+> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外[，Teams](/microsoftteams/platform/overview)应用必须安装在团队中。
 
 ## <a name="response"></a>响应
 
@@ -127,7 +127,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -256,7 +256,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-upn-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-upn-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

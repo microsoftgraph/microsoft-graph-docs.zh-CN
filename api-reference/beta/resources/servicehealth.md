@@ -2,15 +2,15 @@
 title: serviceHealth 资源类型
 description: 表示服务的运行状况信息。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 31affa96ab07fa5fd15dd19fd7877f0bc10af228
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: fa489ce3251a9b6b3fb344bdbabdb0e8252c4c93
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260850"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072605"
 ---
 # <a name="servicehealth-resource-type"></a>serviceHealth 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "58260850"
 |:---|:---|:---|
 |id|String|服务 ID。|
 |service|String|服务名称。 使用 [列表 healthOverviews](../api/serviceannouncement-list-healthoverviews.md) 操作获取租户订阅的服务的确切字符串名称。|
-|status|serviceHealthStatus|显示一性服务运行状况状态。 可能的值是 `serviceOperational` `investigating` `restoringService` ：、、、、、、、、、 `verifyingService` `serviceRestored` `postIncidentReviewPublished` `serviceDegradation` `serviceInterruption` `extendedRecovery` `falsePositive` `investigationSuspended` `resolved` `mitigatedExternal` `mitigated` `resolvedExternal` `confirmed` `reported` `unknownFutureValue` 。|
+|状态|serviceHealthStatus|显示总体服务运行状况状态。 可能的值是 `serviceOperational` `investigating` `restoringService` ：、、、、、、、、、 `verifyingService` `serviceRestored` `postIncidentReviewPublished` `serviceDegradation` `serviceInterruption` `extendedRecovery` `falsePositive` `investigationSuspended` `resolved` `mitigatedExternal` `mitigated` `resolvedExternal` `confirmed` `reported` `unknownFutureValue` 。 有关详细信息，请参阅 [serviceHealthStatus 值](../resources/servicehealthissue.md#servicehealthstatus-values)。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

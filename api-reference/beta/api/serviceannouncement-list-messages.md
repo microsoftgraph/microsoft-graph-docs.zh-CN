@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3ad6ea2cafa94edf5c5f71f988b760095a17172b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5eed8eb2425bb1930e6918866d8eaffd7570952c
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031918"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072171"
 ---
 # <a name="list-messages"></a>列出邮件
 命名空间：microsoft.graph
@@ -53,7 +53,7 @@ GET /admin/serviceAnnouncement/messages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [serviceUpdateMessage](../resources/serviceupdatemessage.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [serviceUpdateMessage](../resources/serviceupdatemessage.md) 对象集合。 对响应进行分页，每个页面包含 100 个对象。
 
 ## <a name="example"></a>示例
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages
 [!INCLUDE [sample-code](../includes/snippets/java/list-serviceupdatemessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-serviceupdatemessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -106,6 +106,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/messages",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages?$skip=100",
   "value": [
     {
       "startDateTime": "2019-02-01T18:51:00Z",

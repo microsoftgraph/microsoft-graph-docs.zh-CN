@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dc1d410a9b38216707293d818f85c0f0733dbce7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 46977fd36c77dbd0417c54d18716b201cf1a243b
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979695"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072332"
 ---
 # <a name="list-administrativeunits"></a>列出 administrativeUnits
 
@@ -33,7 +33,7 @@ ms.locfileid: "60979695"
 GET /directory/administrativeUnits
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 、 、 、 () 和 OData 查询参数来帮助 `$count` `$select` `$search` `$filter` `eq` `$expand` [](/graph/query-parameters)自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits
 [!INCLUDE [sample-code](../includes/snippets/java/get-administrativeunits-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-administrativeunits-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

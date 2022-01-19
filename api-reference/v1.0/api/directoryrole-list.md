@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a693c879531278ec320309205e95a861fad5fa4c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 616cc3fb85a4fddd364940912f9d65464d498a67
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979233"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072535"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -37,7 +37,7 @@ ms.locfileid: "60979233"
 GET /directoryRoles
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法 **不** 支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+此方法支持 、 、 、 () 和 OData 查询参数来帮助 `$count` `$select` `$search` `$filter` `eq` `$expand` [](/graph/query-parameters)自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoles
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryroles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryroles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -3,12 +3,12 @@ title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
-ms.openlocfilehash: 9ee8d310017162035b8af5ea40c21f35e80d03a5
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 28e8e422d121651787dca2f4adf0a153baed072a
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390709"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072528"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -57,8 +57,8 @@ ms.locfileid: "61390709"
 > 对于美国政府的应用：
 >
 >
-> * 如果你正在一个Microsoft 365 GCC环境中工作，请继续使用全球终结点： `https://graph.microsoft.com` 和 `https://portal.azure.com` 。
-> * 如果你正在高Microsoft 365 GCC，请使用： `https://portal.azure.us` 和 `https://graph.microsoft.us` 。
+> * 如果你在安全环境中工作，Microsoft 365 GCC全球终结点： `https://graph.microsoft.com` 和 `https://portal.azure.com` 。
+> * 如果你在高Microsoft 365 GCC工作，请使用： `https://portal.azure.us` 和 `https://graph.microsoft.us` 。
 > * 如果你在 DoD 环境中Microsoft 365，请使用 `https://portal.azure.us` `https://dod-graph.microsoft.us` 和 。
 >
 >
@@ -71,8 +71,9 @@ ms.locfileid: "61390709"
 
 以下 Microsoft Graph功能通常在终结点上跨所有区域云部署提供 `/v1.0` ，除非已指出。
 
-| Microsoft Graph 功能 | Microsoft Cloud for US Government | 由世纪银行运营的 Microsoft 云中国 | Microsoft 云德国 |
+| Microsoft Graph 功能 | Microsoft Cloud for US Government | 由世纪互联运营的 Microsoft Cloud 中国 | Microsoft 云德国 |
 | ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
+| 访问审查 | ✔ | ✔ | ➖ |
 | 应用程序 | ✔ | ➖ | ➖ |
 | 更改通知（Webhook） | ✔ | ✔ | ✔\* |
 | Delta 查询 | ✔ | ✔ | ➖ |
@@ -86,7 +87,7 @@ ms.locfileid: "61390709"
 | Outlook 邮件 | ✔ | ✔ | ✔ |
 | 个人联系人 | ✔ | ✔ | ✔ |
 | Planner | ✔ | ✔ | ✔ |
-| 报告 | ➖ | ➖ | ➖ |
+| 报表 | ➖ | ➖ | ➖ |
 | 搜索 (Microsoft 搜索)  | ➖ | ➖ | ➖ |
 | 安全性 | ✔ | ✔ | ✔ |
 | 服务运行状况和通信 | ✔ | ✔ | ✔ |
@@ -95,7 +96,7 @@ ms.locfileid: "61390709"
 | Teams | ✔ | ✔ | ✔ |
 | 用户 | ✔ | ✔ | ✔ |
 
-以下 Microsoft Graph 功能在 Microsoft 云中国终结点)  (和 Microsoft 云德国 (V1.0 终结点上的预览版 (中提供，这些功能仅在 `/beta` Microsoft Cloud for US Government) ：
+以下 Microsoft Graph 功能在 Microsoft 云中国终结点)  (和 Microsoft 云德国 (v1.0 终结点上的预览版 (中提供，这些功能仅在 `/beta` Microsoft Cloud for US Government) ：
 
 * 组织联系人
 * 应用程序
@@ -119,5 +120,5 @@ ms.locfileid: "61390709"
 探索国家云部署中的 Azure 和 Microsoft 365身份验证和操作示例：
 
 * [通过美国政府 Microsoft Graph Azure 合作](https://github.com/SteveWinward/Azure-Samples/blob/master/AAD/SampleAadToken_AzureForGovernment.ps1)
-* [连接 Microsoft (GCC PowerShell (GCC、GCC High GCC DoD) 美国政府 O365 Graph环境](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
+* [连接 Microsoft Graph PowerShell (GCC、GCC High GCC DoD) 美国政府 O365 Graph环境](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
 

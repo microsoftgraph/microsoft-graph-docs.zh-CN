@@ -2,15 +2,15 @@
 title: serviceHealthIssue：incidentReport
 description: 提供事件后评审 (PIR) 租户的指定服务问题文档。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1cf516a081108ba6588a93210e7d6c60967d8380
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 122ec4726d3dc89483d76d80e3848526e67a099a
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209225"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072402"
 ---
 # <a name="servicehealthissue-incidentreport"></a>serviceHealthIssue：incidentReport
 命名空间：microsoft.graph
@@ -19,9 +19,9 @@ ms.locfileid: "53209225"
 
 提供事件后评审 (PIR) 租户的指定服务问题文档。
 
-如果租户不存在指定问题，则操作将返回错误。
+仅状态为 的问题 `PostIncidentReviewPublished` 指示存在针对该问题的 PIR 文档。 如果租户不存在指定的问题，或者如果问题不存在 PIR 文档，则操作将返回错误。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

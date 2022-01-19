@@ -4,12 +4,12 @@ description: Azure AD 目录对象支持高级查询功能以高效访问数据�
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 95e7b4650bdca66f824849033c7583ff9eaa9d48
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 3b4dccfc09b0520d787474256493be2a0b698b7a
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266291"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072570"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Azure AD 目录对象的高级查询功能
 
@@ -19,28 +19,28 @@ Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了添
 
 例如，如果只想检索非活动用户帐户，则可以运行使用 `$filter` 查询参数的查询之一。
 
-+ 将 `$filter` 查询参数与 `eq` 运算符一起使用。 默认情况下，此请求将起作用，即请求不需要高级查询参数。
++ 选项 1：将 `$filter` 查询参数与 运算符 `eq` 一同使用。 默认情况下，此请求将起作用，即请求不需要高级查询参数。
 
-<!-- {
-  "blockType": "request",
-  "name": "get_users_enabled"
-} -->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
-```
+    <!-- {
+      "blockType": "request",
+      "name": "get_users_enabled"
+    } -->
+    ```msgraph-interactive
+    GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
+    ```
 
-+ 将 `$filter` 查询参数与 `ne` 运算符一起使用。 默认情况下不支持此请求，因为仅在高级查询中支持 `ne` 运算符。 因此，必须将 **ConsistencyLevel** 标头设置为 `eventual` *并* 使用 `$count=true` 查询字符串。
++ 选项 2：将 `$filter` 查询参数与 运算符 `ne` 一同使用。 默认情况下不支持此请求，因为仅在高级查询中支持 `ne` 运算符。 因此，必须将 **ConsistencyLevel** 标头设置为 `eventual` *并* 使用 `$count=true` 查询字符串。
 
-<!-- {
-  "blockType": "request",
-  "name": "get_users_not_enabled"
-} -->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
-ConsistencyLevel: eventual
-```
+    <!-- {
+      "blockType": "request",
+      "name": "get_users_not_enabled"
+    } -->
+    ```msgraph-interactive
+    GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
+    ConsistencyLevel: eventual
+    ```
 
-仅以下Azure AD目录对象子集及其关系支持这些高级查询功能：
+这些高级查询功能仅在Azure AD目录对象及其关系（包括以下常用对象）上受支持：
 
 | Object                                                         | 关系                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

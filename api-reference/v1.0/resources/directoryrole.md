@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3effb90d2ddeffccd59de35b04295fc83b86e5f8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 051278a83d0d45a87ec397ca3c7fdf2fb80b1a24
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089744"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072661"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole 资源类型
 
@@ -38,15 +38,15 @@ ms.locfileid: "59089744"
 ## <a name="properties"></a>属性
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|说明|String|目录角色说明。只读。 |
-|displayName|String|目录角色的显示名称。只读。 |
-|id|String|目录角色唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥，不可为 NULL，只读。|
-|roleTemplateId|String| 此角色所基于的 [directoryRoleTemplate](directoryroletemplate.md) 的 **id**。使用 POST 操作在租户中激活目录角色时，必须指定其属性。激活目录角色后，其属性为只读。 |
+|说明|String|目录角色说明。 只读。 支持 `$filter`（`eq`）、`$search`、`$select`。 |
+|displayName|String|目录角色的显示名称。 只读。 支持 `$filter`（`eq`）、`$search`、`$select`。 |
+|id|字符串|目录角色唯一标识符。 继承自 [directoryObject](directoryobject.md)。 密钥，不可为 NULL，只读。 支持 `$filter`（`eq`）、`$select`。|
+|roleTemplateId|String| 此角色所基于的 **directoryRoleTemplate** 的 [id](directoryroletemplate.md)。 使用 POST 操作在租户中激活目录角色时，必须指定其属性。 激活目录角色后，其属性为只读。 支持 `$filter`（`eq`）、`$select`。 |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|成员|[directoryObject](directoryobject.md) 集合|是此目录角色成员的用户。HTTP 方法：GET、POST、DELETE。只读。可为 NULL。|
+|成员|[directoryObject](directoryobject.md) collection|是此目录角色成员的用户。 HTTP 方法：GET、POST、DELETE。 只读。 可为 NULL。 支持 `$expand`。|
 |scopedMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此目录角色的成员，其作用域为 [管理单元](administrativeunit.md)。只读。空。|
 
 ## <a name="json-representation"></a>JSON 表示形式

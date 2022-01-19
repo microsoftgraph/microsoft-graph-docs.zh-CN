@@ -1,16 +1,16 @@
 ---
-title: 微软待办 Microsoft Graph Toolkit 中的组件
-description: 利用微软待办组件，用户可以查看、添加、删除、完成或编辑 todo 任务。 它适用于 Microsoft 微软待办。
+title: 微软待办 Microsoft Graph Toolkit
+description: 利用微软待办组件，用户可以查看、添加、删除、完成或编辑任务。 它适用于 Microsoft 微软待办 中微软待办。
 ms.localizationpriority: medium
 author: shweaver-MSFT
-ms.openlocfilehash: 4c2b54d0c6b5307762d38a9cb204a896aaaa4e9d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: de9c49937b3db76c2d93c308b88d03ec577f76ed
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129626"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072689"
 ---
-# <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>微软待办 Microsoft Graph Toolkit 中的组件
+# <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>微软待办 Microsoft Graph Toolkit
 
 微软待办 组件用于使登录用户可以使用 Microsoft Graph 中的 微软待办 API 查看、添加、删除、完成和/或编辑 微软待办 中的任务。
 
@@ -28,9 +28,9 @@ ms.locfileid: "59129626"
 
 | 属性 | 属性 | 说明 |
 | -- | -- | -- |
-| 只读 | readOnly | 一个布尔值，用于将任务界面设置为只读， (添加或删除任务) 。 默认值为 `false`。 |
-| hide-header | hideHeader | 显示或隐藏组件标头的布尔值。 默认值为 `false`。 |
-| hide-options | hideOptions | 用于显示或隐藏任务中的选项的布尔值。 默认值为 `false`。
+| 只读 | readOnly | 一个布尔值，用于将任务界面设置为只读， (添加或删除任务) 。 默认值为“`false`”。 |
+| hide-header | hideHeader | 显示或隐藏组件标头的布尔值。 默认值为“`false`”。 |
+| hide-options | hideOptions | 用于显示或隐藏任务中的选项的布尔值。 默认值为“`false`”。
 | initial-id="folder_id" | initialId | 一个字符串 ID，用于将最初显示的文件夹设置为提供的 ID。 |
 | target-id="folder_id"| targetId | 用于将任务接口锁定为所提供的文件夹 ID 的字符串 ID。 |
 | 不适用 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
@@ -93,13 +93,13 @@ mgt-todo {
 }
 ````
 
-若要了解更多信息，请参阅 [设置组件样式](https://docs.microsoft.com/graph/toolkit/style.md)。
+若要了解更多信息，请参阅 [设置组件样式](/graph/toolkit/style.md)。
 
 ## <a name="events"></a>活动
 
 从组件中触发以下事件。
 
-Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `taskClick` | 当用户单击或点击任务时触发 | 选定的 [任务](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/66a5bbb6591e6260e95dbc00c0d06bcbe8dcef38/packages/mgt-components/src/components/mgt-todo/graph.todo.ts#L41) | 否 | 否 | 否
 

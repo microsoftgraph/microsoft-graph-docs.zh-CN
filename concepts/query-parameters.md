@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4e2c0cc59f47e02b7bc9a1f0496bbbd06f1ffe4a
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 358fa02a09c1ded92fd86596b634d59783b2ee16
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130204"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072059"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -97,7 +97,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-`$count`查询参数支持这些资源集合和派生自[directoryObject](/graph/api/resources/directoryobject)的关系，而且仅在[高级查询](/graph/aad-advanced-queries)中支持:
+`$count`查询参数支持以下常用资源集合和派生自[directoryObject](/graph/api/resources/directoryobject)的关系，而且仅在[高级查询](/graph/aad-advanced-queries)中支持：
+- [administrativeUnit](/graph/api/resources/administrativeunit)
 - [application](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [设备](/graph/api/resources/device)
@@ -143,11 +144,11 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 
 | 运算符类型 | 运算符 |
 | --- | --- |
-| 相等运算符 | <ul><li> 等于 `eq` </li><li> 不等于 `ne`</li><li> 否定式 `not`</li><li> 在 `in` 内</li></ul> |
-| 关系运算符 | <ul><li> 小于 `lt` </li><li> 大于 `gt`</li><li> 小于或等于 `le`</li><li> 大于或等于 `ge`</li></ul> |
-| Lambda 运算符 | <ul><li> 任何 `any` </li><li> 全部 `all`</li></ul>|
-| 条件运算符 | <ul><li> 和 `and` </li><li> 或 `or`</li> |
-| 函数 | <ul><li> 开头为 `startsWith` </li><li> 结尾为 `endsWith`</li><li> 包含`contains`</li></ul>|
+| 相等运算符 | <ul><li> 等于 (`eq`) </li><li> 不等于 (`ne`)</li><li> 逻辑否定（`not`）</li><li> 在 (`in`) 中</li></ul> |
+| 关系运算符 | <ul><li> 小于 (`lt`) </li><li> 大于 (`gt`)</li><li> 小于或等于 (`le`)</li><li> 大于或等于 (`ge`)</li></ul> |
+| Lambda 运算符 | <ul><li> 任何 (`any`)  </li><li> 全部 (`all`)</li></ul>|
+| 条件运算符 | <ul><li> 以及 (`and`) </li><li> 或 (`or`)</li> |
+| 函数 | <ul><li> 开头为 （`startsWith`） </li><li> 结尾为 （`endsWith`）</li><li> 包含 (`contains`)</li></ul>|
 
 
 > **注意:** 对这些运算符的支持因实体而异，某些属性仅在 [高级查询](/graph/aad-advanced-queries)中支持`$filter`。有关详细信息，请参阅特定实体文档。

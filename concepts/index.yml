@@ -24,7 +24,7 @@ highlightedContent:
       url: ./whats-new-overview.md
     - title: Microsoft Graph REST API
       itemType: reference
-      url: 'https://docs.microsoft.com/graph/api/overview?view=graph-rest-1.0'
+      url: /graph/api/overview?view=graph-rest-1.0
 conceptualContent:
   title: 使用 Microsoft Graph
   items:
@@ -65,7 +65,7 @@ conceptualContent:
       links:
         - url: ./azuread-identity-access-management-concept-overview.md
           itemType: overview
-          text: 使用 Azure AD 方法来管理访问和对用户进行身份验证。
+          text: 使用 Azure AD 方法管理访问和对用户进行身份验证。
     - title: Microsoft Graph 数据连接
       links:
         - url: ./data-connect-concept-overview.md
@@ -76,7 +76,7 @@ tools:
   items:
     - title: SDK
       imageSrc: ./images/hub/icon01-sdk.svg
-      url: 'https://docs.microsoft.com/graph/sdks/sdk-installation'
+      url: /graph/sdks/sdk-installation
     - title: 快速入门
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: 'https://developer.microsoft.com/graph/quick-start'
@@ -93,29 +93,29 @@ additionalContent:
         - title: Learning路径
           links:
             - text: Microsoft Graph基础
-              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/'
+              url: /learn/paths/m365-msgraph-fundamentals/
             - text: '使用 Microsoft Graph API 构建应用 – 关联 '
-              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-associate/'
+              url: /learn/paths/m365-msgraph-associate/
             - text: 了解用于 JavaScript 开发 Microsoft Graph 方案
-              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios'
+              url: /learn/paths/m365-msgraph-scenarios
             - text: 了解 ASP.NET Core 开发的 Microsoft Graph 方案
-              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-dotnet-core-scenarios/'
+              url: /learn/paths/m365-msgraph-dotnet-core-scenarios/
             - text: 使用 Microsoft Graph Toolkit
-              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit'
+              url: /learn/paths/m365-msgraph-toolkit
         - title: 使用说明
           links:
             - text: 连接器：生成首个自定义连接器
-              url: 'https://docs.microsoft.com/en-us/graph/connecting-external-content-build-quickstart'
-            - text: Microsoft 搜索：在 OneDrive 和 Sharepoint 中搜索内容
-              url: 'https://docs.microsoft.com/graph/search-concept-files'
+              url: /graph/connecting-external-content-build-quickstart
+            - text: Microsoft 搜索：在 sharepoint 和 OneDrive 中搜索内容
+              url: /graph/search-concept-files
             - text: 标识：管理对资源的访问
-              url: 'https://docs.microsoft.com/en-us/graph/tutorial-access-package-api'
+              url: /graph/tutorial-access-package-api
             - text: Outlook：将大文件附加到邮件或事件
-              url: 'https://docs.microsoft.com/graph/outlook-large-attachments'
+              url: /graph/outlook-large-attachments
             - text: Outlook：获取邮件的 MIME 内容
-              url: 'https://docs.microsoft.com/graph/outlook-get-mime-message'
+              url: /graph/outlook-get-mime-message
             - text: 更多教程...
-              url: 'https://docs.microsoft.com/en-us/graph/tutorials'
+              url: /graph/tutorials
         - title: 资源和社区
           links:
             - text: 更改日志
@@ -125,7 +125,7 @@ additionalContent:
             - text: 支持
               url: 'https://developer.microsoft.com/graph/support'
             - text: Microsoft Graph问答&
-              url: 'https://docs.microsoft.com/en-us/answers/products/graph'
+              url: /answers/products/graph
             - text: Microsoft Graph API
               url: 'https://developer.microsoft.com/graph/blogs/'
             - text: 视频和播客

@@ -294,7 +294,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: 创建日历
+              - name: 创建
                 href: api/user-post-calendars.md
               - name: 创建日历组
                 href: api/user-post-calendargroups.md
@@ -304,7 +304,7 @@ items:
                 href: api/user-findmeetingtimes.md
               - name: 获取忙/闲日程安排
                 href: api/calendar-getschedule.md
-              - name: 列出日历
+              - name: 列表
                 href: api/user-list-calendars.md
               - name: 列出日历组
                 href: api/user-list-calendargroups.md
@@ -317,11 +317,11 @@ items:
           - name: Contacts
             href: resources/contact.md
             items:
-              - name: 创建联系人
+              - name: 创建
                 href: api/user-post-contacts.md
               - name: 创建联系人文件夹
                 href: api/user-post-contactfolders.md
-              - name: 列出联系人
+              - name: 列表
                 href: api/user-list-contacts.md
               - name: 列出联系人文件夹
                 href: api/user-list-contactfolders.md
@@ -488,7 +488,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -1197,7 +1197,7 @@ items:
                 href: api/calendarpermission-update.md
               - name: 删除
                 href: api/calendarpermission-delete.md
-          - name: Categories
+          - name: 类别
             items:
               - name: 类别
                 href: resources/outlookcategory.md
@@ -4304,6 +4304,13 @@ items:
                     href: api/serviceupdatemessage-favorite.md
                   - name: 删除收藏夹状态
                     href: api/serviceupdatemessage-unfavorite.md
+                  - name: 列出邮件附件
+                    href: api/serviceupdatemessage-list-attachments.md
+              - name: 服务通知附件
+                href: resources/serviceannouncementattachment.md
+                items:
+                  - name: 获取
+                    href: api/serviceannouncementattachment-get.md
       - name: 教育
         items:
           - name: 概述
@@ -6095,7 +6102,7 @@ items:
       - name: 搜索
         displayname: Microsoft Search API
         items:
-          - name: Query
+          - name: 查询
             items:
               - name: 概述
                 href: resources/search-api-overview.md
@@ -6257,7 +6264,7 @@ items:
                 href: api/site-list-subsites.md
               - name: 搜索网站
                 href: api/site-search.md
-              - name: 权限
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -6486,15 +6493,15 @@ items:
           - name: 团队
             href: resources/team.md
             items:
-              - name: 创建团队
+              - name: 创建
                 href: api/team-post.md
               - name: 从组创建团队
                 href: api/team-put-teams.md
-              - name: 获取团队
+              - name: 获取
                 href: api/team-get.md
-              - name: 更新团队
+              - name: 更新
                 href: api/team-update.md
-              - name: 删除团队
+              - name: 删除
                 href: api/group-delete.md
               - name: 列出成员
                 href: api/team-list-members.md
@@ -6525,15 +6532,15 @@ items:
           - name: 组（团队）
             href: resources/group.md
             items:
-              - name: 创建组
+              - name: 创建
                 href: api/group-post-groups.md
-              - name: 获取组
+              - name: 获取
                 href: api/group-get.md
-              - name: 列出组
+              - name: 列出
                 href: api/group-list.md
-              - name: 更新组
+              - name: 更新
                 href: api/group-update.md
-              - name: 删除组
+              - name: 删除
                 href: api/group-delete.md
               - name: 列出加入的团队
                 href: api/user-list-joinedteams.md
@@ -6672,7 +6679,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: 获取托管内容
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: 应用
             items:
               - name: 目录中的应用程序
                 href: resources/teamsapp.md
@@ -6978,7 +6985,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
                 href: api/opentypeextension-get.md
-          - name: Task
+          - name: 任务
             href: resources/todotask.md
             items:
               - name: 列出任务

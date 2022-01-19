@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 395919dd0ee9b0a2399f991e58d9d10ec81fee5a
-ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
+ms.openlocfilehash: c616d3894b5c9efaf356e28879edc067d7d3ffcd
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60805393"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072255"
 ---
 # <a name="virtualendpoint-resource-type"></a>virtualEndpoint 资源类型
 
@@ -22,11 +22,11 @@ ms.locfileid: "60805393"
 
 使用云电脑 API 为组织的员工预配和管理虚拟桌面。 将它与 [Intune API](../resources/intune-graph-overview.md) 结合使用，以管理物理和虚拟终结点。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取有效权限](../api/virtualendpoint-geteffectivepermissions.md)|String collection|查看当前经过身份验证的用户的有效权限。|
+|[获取有效权限](../api/virtualendpoint-geteffectivepermissions.md)|字符串集合|查看当前经过身份验证的用户的有效权限。|
 |[列出 cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) 集合|列出 [cloudPC 对象的属性和](../resources/cloudpc.md) 关系。|
 |[列出 deviceImages](../api/virtualendpoint-list-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 集合|列出 [cloudPcDeviceImage 对象的属性和](../resources/cloudpcdeviceimage.md) 关系。|
 |[List galleryImages](../api/virtualendpoint-list-galleryimages.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) 集合|列出 [cloudPcGalleryImage 对象的属性和](../resources/cloudpcgalleryimage.md) 关系。|
@@ -49,7 +49,7 @@ ms.locfileid: "60805393"
 
 ## <a name="relationships"></a>关系
 
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |cloudPCs|[cloudPC](../resources/cloudpc.md) 集合|云托管虚拟桌面。|
 |deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 集合|云电脑上的图像资源。|
@@ -60,6 +60,7 @@ ms.locfileid: "60805393"
 |auditEvents|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) 集合|云电脑审核事件。|
 |supportedRegions|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) 集合|云电脑支持的区域。|
 |servicePlans|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) 集合|云电脑服务计划。|
+|organizationSettings|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) |租户的云电脑组织设置。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
