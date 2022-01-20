@@ -1,16 +1,16 @@
 ---
 title: accessReviewScheduleSettings 资源类型
-description: 在Azure AD评审"功能中，表示与访问评审系列 `accessReviewScheduleSettings` 关联的设置。
+description: 在Azure AD评审"功能中，表示与访问评审 `accessReviewScheduleSettings` 系列关联的设置。
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9c7a0e3ee6fa5c39345e45eca7f364ba95661fde
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 8372dd95c290af52e23b8ba62064b1e1aad8c836
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545120"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126500"
 ---
 # <a name="accessreviewschedulesettings-resource-type"></a>accessReviewScheduleSettings 资源类型
 
@@ -23,19 +23,20 @@ ms.locfileid: "61545120"
 **accessReviewScheduleSettings** 定义 [accessReviewScheduleDefinition 的设置](accessreviewscheduledefinition.md)。 
 
 ## <a name="properties"></a>属性
-| 属性    | 类型   | 说明 |
+| 属性    | 类型   | Description |
 | :---------------| :---------- | :---------- |
-| mailNotificationsEnabled|Boolean | 指示是启用还是禁用电子邮件。 默认值为 `false`。               |
-| reminderNotificationsEnabled|Boolean  | 指示是启用还是禁用提醒。 默认值为 `false`。  |
-| justificationRequiredOnApproval|Boolean | 指示是否要求审阅者提供其决策的理由。 默认值为 `false`。 |
-| defaultDecisionEnabled|Boolean | 指示在审阅者未响应时是启用还是禁用默认决策。 默认值为 `false`。 |
+| mailNotificationsEnabled|布尔 | 指示是启用还是禁用电子邮件。 默认值为 `false`。               |
+| reminderNotificationsEnabled|布尔  | 指示是启用还是禁用提醒。 默认值为 `false`。  |
+| justificationRequiredOnApproval|布尔 | 指示是否要求审阅者提供其决策的理由。 默认值为 `false`。 |
+| defaultDecisionEnabled|布尔 | 指示在审阅者未响应时是启用还是禁用默认决策。 默认值为 `false`。 |
 | defaultDecision|String | 如果已启用， `defaultDecisionEnabled` 则选择决策。 可以是 、 `Approve` `Deny` 或 `Recommendation` 之一。 |
 | instanceDurationInDays|Int32 | 每次重复审阅的持续时间 () `accessReviewInstance` 天数表示。 |
-| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | 使用标准定期对象定期Outlook设置。 <br/><br/>**注意：** 仅 **支持 dayOfMonth** **、interval** 和 **type** (`weekly` `absoluteMonthly` ，) 属性。 使用 **recurrenceRange 上的 属性 startDate** 确定审阅开始的哪一天。  |
-| autoApplyDecisionsEnabled|Boolean | 指示是否自动应用决策。 设置为 时，管理员必须在审阅者完成访问评审后手动 `false` 应用决策。 设置为 时，会在访问评审实例持续时间结束后自动应用决策，无论审阅 `true` 者是否已回复。 默认值为 `false`。 |
+| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | 使用标准定期对象定期Outlook设置。 <br/><br/>**注意：** 只有 **dayOfMonth** **、interval** 和 **type** (`weekly` `absoluteMonthly` ，) 属性才受支持。 使用 **recurrenceRange 上的 属性 startDate** 确定审阅开始的哪一天。  |
+| autoApplyDecisionsEnabled|布尔 | 指示是否自动应用决策。 设置为 时，管理员必须在审阅者完成访问评审后手动 `false` 应用决策。 设置为 时，会在访问评审实例持续时间结束后自动应用决策，无论审阅 `true` 者是否已回复。 默认值为 `false`。 |
 | applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) 集合 | 可选字段。 介绍审阅完成后要采取的操作。 目前支持两种类型：默认 (`removeAccessApplyAction` 和) `disableAndDeleteUserApplyAction` 。 只需在 的情况下指定字段 `disableAndDeleteUserApplyAction` 。 |
-| recommendationsEnabled|Boolean | 指示是启用还是禁用决策建议。 |
+| recommendationsEnabled|布尔 | 指示是启用还是禁用决策建议。 |
 | recommendationLookBackDuration | 期限| 可选字段。 指示与将配置 (审阅实例的开始日期) 不活动时间段。 如果用户在回看期间处于非活动状态 `deny` ，则建议为 。 对于组和角色Azure AD，接受任何持续时间。 对于应用程序审查，最长期限为 30 天。 如果未指定，持续时间为 30 天。 |
+| recommendationInsightSettings|[accessReviewRecommendationInsightSetting](../resources/accessReviewRecommendationInsightSetting.md) 集合 | 可选。 介绍帮助审阅者做出访问评审决策的见解类型。 |
 
 ## <a name="relationships"></a>关系
 无。
@@ -66,7 +67,12 @@ ms.locfileid: "61545120"
     }
   ],
   "recommendationsEnabled": "Boolean",
-  "recommendationLookBackDuration": "Duration"
+  "recommendationLookBackDuration": "Duration",
+  "recommendationInsightSettings": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewRecommendationInsightSetting"
+    }
+  ]
 }
 ```
 

@@ -5,17 +5,17 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e65970401ae9bd3003a685af0c1ce94f17e6b867
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e79db0afdcf223e7619fa45612a5e6971fa1771f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022957"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128251"
 ---
 # <a name="create-linkedresource"></a>创建 linkedResource
 命名空间：microsoft.graph
 
-创建 [linkedResource](../resources/linkedresource.md) 对象以将指定 [任务](../resources/todotask.md) 与合作伙伴应用程序中的项目关联。 例如，可以将任务与任务中Outlook项关联，并可以创建 **linkedResource** 对象来跟踪其关联。
+创建 [linkedResource](../resources/linkedresource.md) 对象以将指定 [任务](../resources/todotask.md) 与合作伙伴应用程序中的项目关联。 例如，可以将任务与任务中Outlook项关联，也可以创建 **linkedResource** 对象来跟踪其关联。
 
 还可以在创建任务 时创建 **linkedResource** [对象](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)。
 
@@ -103,8 +103,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-linkedresource-from-linkedresources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-linkedresource-from-linkedresources-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-linkedresource-from-linkedresources-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

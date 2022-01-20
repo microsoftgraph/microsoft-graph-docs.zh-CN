@@ -5,12 +5,12 @@ description: 更新内容类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 717520b09780d85d53e92f7b7a40ef68f7ac1610
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 78be26b9e0804565bc02f2f95e6964837bc96395
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022524"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134089"
 ---
 # <a name="update-contenttype"></a>更新 contentType
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "61022524"
 更新内容 [类型][contentType]。
   
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
   
 
@@ -126,8 +126,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-contenttype-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

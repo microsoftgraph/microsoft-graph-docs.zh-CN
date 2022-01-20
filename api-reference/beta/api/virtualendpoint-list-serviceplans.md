@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 8dfda99dc45d27624f9d5f349461213b5e06f23e
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 6490cc8fc920894e789caf17776a34c3bb105839
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123844"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62092708"
 ---
 # <a name="list-serviceplans"></a>List servicePlans
 
@@ -20,7 +20,7 @@ ms.locfileid: "61123844"
 
 列出组织可购买其云电脑当前可用的服务计划。
 
-有关当前可用的服务计划的示例，请参阅 Windows [365 比较计划和定价](https://www.microsoft.com/windows-365/business/compare-plans-pricing)。 目前，Microsoft Graph API 可用于 Windows 365 Enterprise。
+有关当前可用的服务计划的示例，请参阅 Windows [365 比较计划和定价](https://www.microsoft.com/windows-365/business/compare-plans-pricing)。 目前，microsoft Graph API 可用于 Windows 365 Enterprise。
 
 ## <a name="permissions"></a>权限
 
@@ -92,8 +92,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/servicePla
 [!INCLUDE [sample-code](../includes/snippets/java/list-serviceplans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-serviceplans-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceplans-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

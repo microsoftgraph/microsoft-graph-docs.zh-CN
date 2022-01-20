@@ -1,19 +1,30 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ea450ef4defe5de763166a135bb9af4746f7583a
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 669b5742c7773ed3490f1243ebe7b5a88b8bf2c5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61287879"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121238"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+requestBody := msgraphsdk.NewConditionalAccessPolicy()
+conditions := msgraphsdk.NewConditionalAccessConditionSet()
+requestBody.SetConditions(conditions)
+conditions.SetSignInRiskLevels( []RiskLevel {
+    "high",
+    "medium",
+    "low",
+}
+options := &msgraphsdk.ConditionalAccessPolicyRequestBuilderPatchOptions{
+    Body: requestBody,
+}
 conditionalAccessPolicyId := "conditionalAccessPolicy-id"
-graphClient.Identity().ConditionalAccess().PoliciesById(&conditionalAccessPolicyId).Patch(nil)
+graphClient.Identity().ConditionalAccess().PoliciesById(&conditionalAccessPolicyId).Patch(options)
 
 
 ```

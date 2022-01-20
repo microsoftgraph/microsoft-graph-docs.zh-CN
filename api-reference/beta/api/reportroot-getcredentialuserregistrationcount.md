@@ -1,16 +1,16 @@
 ---
 title: reportRoot： getCredentialUserRegistrationCount
-description: 报告组织中有多少用户注册了自助服务密码重置和多重身份验证的当前状态， (MFA) 功能。
-localization_priority: Normal
+description: 报告组织中注册自助服务密码重置和多重身份验证的用户数和 MFA (的当前) 状态。
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7224d49e71933716fb36b90dfe5cbb2b0d99223f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d9ba5d31d622dbf282e0ef3b51a7af9d5fd0f6ff
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131346"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62093241"
 ---
 # <a name="reportroot-getcredentialuserregistrationcount"></a>reportRoot： getCredentialUserRegistrationCount
 
@@ -18,7 +18,7 @@ ms.locfileid: "50131346"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-报告组织中有多少用户注册了自助服务密码重置和多重身份验证的当前状态， (MFA) 功能。
+报告组织中注册自助服务密码重置和多重身份验证的用户数和 MFA (的当前) 状态。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ GET /reports/getCredentialUserRegistrationCount
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [credentialUserRegistrationCount](../resources/credentialuserregistrationcount.md) 集合对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `200 OK` [credentialUserRegistrationCount](../resources/credentialuserregistrationcount.md) 集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getcredentialuserregistrationcount-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getcredentialuserregistrationcount-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -93,7 +97,7 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 从实际调用中返回所有属性。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都从实际调用中返回。
 
 <!-- {
   "blockType": "response",

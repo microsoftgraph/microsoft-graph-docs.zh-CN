@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b7f49cbddc27a3681882fa9756ff0b46dd2fdb8f
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 5cb5cb06d50b001514b1c27f3eb68b0024b558cf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226784"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106332"
 ---
 # <a name="create-customsecurityattributedefinition"></a>创建 customSecurityAttributeDefinition
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "61226784"
 
 创建新的 [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|CustomSecAttributeDefinition.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|CustomSecAttributeDefinition.ReadWrite.All|
+|应用程序|CustomSecAttributeDefinition.ReadWrite.All|
 
 还必须为登录用户分配属性定义管理员 [目录角色] (/azure/active-directory/roles/permissions-reference。 默认情况下，全局管理员和其他管理员角色没有读取、定义或分配自定义安全属性的权限。
 
@@ -55,12 +55,12 @@ POST /directory/customSecurityAttributeDefinitions
 |:---|:---|:---|
 |attributeSet|String|属性集的名称。 不区分大小写。 必需。|
 |description|String|自定义安全属性的说明。 可最多为 128 个字符，并且包含 Unicode 字符。 不能包含空格或特殊字符。 稍后可更改。 可选。|
-|isCollection|布尔值|指示是否可以将多个值分配给自定义安全属性。 以后无法更改。 如果 `type` 设置为 Boolean， `isCollection` 则不能设置为 true。 必需。|
-|isSearchable|布尔值|指示是否将为自定义安全属性值编制索引，以在分配了属性值的对象上搜索。 以后无法更改。 必需。|
+|isCollection|布尔|指示是否可以将多个值分配给自定义安全属性。 以后无法更改。 如果 `type` 设置为 Boolean， `isCollection` 则不能设置为 true。 必需。|
+|isSearchable|布尔|指示是否将为自定义安全属性值编制索引，以在分配了属性值的对象上搜索。 以后无法更改。 必需。|
 |name|String|自定义安全属性的名称。 在属性集内必须是唯一的。 可最多为 32 个字符，并且包含 Unicode 字符。 不能包含空格或特殊字符。 以后无法更改。 不区分大小写。 必需。|
-|status|String|指定自定义安全属性是处于活动状态还是已停用。 可接受的值为 和 `Available` `Deprecated` 。 稍后可更改。 此为必需属性。|
+|状态|String|指定自定义安全属性是处于活动状态还是已停用。 可接受的值为 和 `Available` `Deprecated` 。 稍后可更改。 此为必需属性。|
 |type|String|自定义安全属性值的数据类型。 支持的类型包括 `Boolean` 、 `Integer` 和 `String` 。 以后无法更改。 必需。|
-|usePreDefinedValuesOnly|布尔值|指示是否只能将预定义值分配给自定义安全属性。 如果设置为 false，则允许自由格式的值。 稍后可以从 true 更改为 false，但无法从 false 更改为 true。 如果 `type` 设置为 Boolean， `usePreDefinedValuesOnly` 则不能设置为 true。 必需。|
+|usePreDefinedValuesOnly|布尔|指示是否只能将预定义值分配给自定义安全属性。 如果设置为 false，则允许自由格式的值。 稍后可以从 true 更改为 false，但无法从 false 更改为 true。 如果 `type` 设置为 Boolean， `usePreDefinedValuesOnly` 则不能设置为 true。 必需。|
 
 `id`该属性是自动生成的，不能设置。
 
@@ -116,8 +116,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-customsecurityattributedefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-customsecurityattributedefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -196,8 +200,12 @@ Content-length: 310
 [!INCLUDE [sample-code](../includes/snippets/java/create-customsecurityattributedefinition-v2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-v2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-customsecurityattributedefinition-v2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

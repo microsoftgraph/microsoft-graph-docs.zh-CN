@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3e5380a15446e0d5454623444b47162e557939d5
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 928063cd435aa2d0346a7b2935b69b16b8b59c5a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650753"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107208"
 ---
 # <a name="accesspackageassignmentrequest-filterbycurrentuser"></a>accessPackageAssignmentRequest： filterByCurrentUser
 命名空间：microsoft.graph
@@ -41,7 +41,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/fi
 ## <a name="function-parameters"></a>函数参数
 下表显示了可用于此函数的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |on|[accessPackageAssignmentRequestFilterByCurrentUserOptions](../resources/accesspackageassignmentrequest-accesspackageassignmentrequestfilterbycurrentuseroptions.md)|可用于对访问包分配请求列表进行筛选的当前用户选项的列表。 可能的值为 `target` `createdBy` `approver` 、、。|
 
@@ -49,7 +49,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/fi
 
 - `createdBy` 用于获取 `accessPackageAssignmentRequest` 已登录用户创建的对象。 结果列表包括所有目录和访问包中调用方自己或代表其他人创建的所有分配请求，例如管理员直接分配。
 
-- `approver` 用于获取已登录用户是任何包含的或 (中允许的审批 `accessPackageAssignmentRequest` `accessPackageAssignment/accessPackageAssignmentPolicy/requestApprovalSettings/approvalStages` `primaryApprovers` `escalationApprovers` 者) 。 生成的列表包括所有目录和访问包中挂起且需要调用方做出决策的分配请求。 生成的列表包括状态中跨所有目录和访问包的分配请求，并且需要 `pending` 调用方做出决策。
+- `approver` 用于获取已登录用户是任何包含的用户或用户集合中允许的审批 `accessPackageAssignmentRequest` `accessPackageAssignment/accessPackageAssignmentPolicy/requestApprovalSettings/approvalStages` `primaryApprovers` `escalationApprovers` () 。 生成的列表包括所有目录和访问包中挂起且需要调用方做出决策的分配请求。 生成的列表包括状态中跨所有目录和访问包的分配请求，并且需要 `pending` 调用方做出决策。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -94,8 +94,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignmentrequest-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignmentrequest-filterbycurrentuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackageassignmentrequest-filterbycurrentuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 38a56d02e97dae6d813b57d6c6e46e98ace2894a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c6d1e15b764521f1f078c88e1862efed0467dc33
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982791"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126173"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -54,11 +54,11 @@ PATCH /applications/{id}
 | displayName             | String                                                                      | 应用程序的显示名称。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | groupMembershipClaims   | String                                                                      | 配置在 **用户** 或应用程序期望的 OAuth 2.0 访问令牌中颁发的组声明。 要设置此属性，请使用以下有效字符串值之一：<ul><li>`None`</li><li>`SecurityGroup`：对于安全组和Azure Active Directory (Azure AD) 角色</li><li>`All`：该操作可获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色</li></ul>                                                                                                                       |
 | identifierUris          | String collection                                                           | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的 *any* 运算符。 不可为 Null。                                                                                                                                                                           |
-| info                    | [informationalUrl](../resources/informationalurl.md)                        | 应用程序的基本个人资料信息，如应用的营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅为已注册的应用添加服务条款[和Azure AD声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。                                                                                                                                                 |
-| isFallbackPublicClient  | Boolean                                                                     | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值为 `false` ，这意味着回退应用程序类型是机密客户端，如 Web 应用。 在某些情况下，Azure AD无法确定客户端应用程序类型 (例如[ROPC](https://tools.ietf.org/html/rfc6749#section-4.3)流，其中未指定重定向 URI) 。 在这种情况下，Azure AD将基于此属性的值解释应用程序类型。 |
+| info                    | [informationalUrl](../resources/informationalurl.md)                        | 应用程序的基本个人资料信息，如应用的营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅为已注册的应用添加服务条款和[Azure AD声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。                                                                                                                                                 |
+| isFallbackPublicClient  | Boolean                                                                     | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值为 `false` ，这意味着回退应用程序类型是机密客户端，如 Web 应用。 在某些情况下，Azure AD无法确定客户端应用程序类型 (例如[，ROPC](https://tools.ietf.org/html/rfc6749#section-4.3)流（在不指定重定向 URI) 的情况下配置它）。 在这种情况下，Azure AD将基于此属性的值解释应用程序类型。 |
 | keyCredentials          | [keyCredential](../resources/keycredential.md) 集合                   | 与应用程序关联的密钥凭据集合。不可为 Null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | 应用程序的主徽标。不可为 Null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | 表示用于为本地应用程序Azure AD[应用程序代理](https://aka.ms/whyappproxy)的属性集。 此属性只能在创建应用程序后设置。                                                                                                                                                                                                                                                                                                                                                        |
+| onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | 表示用于为本地应用程序Azure AD[应用程序代理](/azure/active-directory/app-proxy/what-is-application-proxy)的属性集。 此属性只能在创建应用程序后设置。                                                                                                                                                                                                                                                                                                                                                        |
 | optionalClaims          | optionalClaims                                                              | 应用程序开发人员可以在其 Azure AD 应用中配置可选声明，以指定 Microsoft 安全令牌服务发送到他们应用程序的令牌中所需的声明。 有关详细信息 [，请参阅](/azure/active-directory/develop/active-directory-optional-claims) 可选声明。                                                                                                                                                                                                                                                               |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | 指定应用程序的家长控制设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | 指定已安装客户端（如台式设备或移动设备）的设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -106,8 +106,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -134,6 +138,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-
-

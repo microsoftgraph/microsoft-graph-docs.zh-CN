@@ -5,12 +5,12 @@ author: inbarckMS
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 33adfcfcd88c32f5f46f35d071bee0c1b56efd5f
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: e96a886a3627bf12b42bcd249bd5b800036c67c5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226580"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126746"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>创建 temporaryAccessPassAuthenticationMethod
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "61226580"
 * 临时访问传递过期后 - 新的临时访问传递将覆盖当前临时访问传递，并且不会撤消用户的会话。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "61226580"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -40,7 +40,7 @@ ms.locfileid: "61226580"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员在另一用户上操作的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
@@ -72,7 +72,7 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 |:---|:---|:---|:---|
 |startDateTime|DateTimeOffset|temporaryAccessPass 可供使用的日期和时间（如果未设置，则创建时可以使用临时访问传递）。| 否|
 |lifetimeInMinutes|Int32|temporaryAccessPass 的生存期，以分钟计，从创建时间开始或 startDateTime（如果已设置）。 最少 10 天，最多 43200 (相当于 30 天) 。| 否|
-|isUsableOnce|布尔值|确定是否将传递限制为一次使用。 如果为 True，则传递可以使用一次，如果为 False，则 pass 可以在 temporaryAccessPass 生命周期内多次使用。 多用途临时访问 (isUsableOnce = false) ，只有在临时访问传递身份验证方法策略允许时，才能创建并用于登录。|  否|
+|isUsableOnce|布尔|确定是否将传递限制为一次使用。 如果为 True，则传递可以使用一次，如果为 False，则 pass 可以在 temporaryAccessPass 生命周期内多次使用。 多用途临时访问 (isUsableOnce = false) ，只有在临时访问传递身份验证方法策略允许时，才能创建并用于登录。|  否|
 
 
 
@@ -117,8 +117,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-temporaryaccesspassauthenticationmethod-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-temporaryaccesspassauthenticationmethod-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-temporaryaccesspassauthenticationmethod-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

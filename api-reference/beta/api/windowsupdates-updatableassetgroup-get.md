@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 77ecc1d0ee310b7816a4c731b7e1bf1f4286ad68
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 1e21be4fa2f11b6749b5f63118ef0ca1cd00b703
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792251"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132640"
 ---
 # <a name="get-updatableassetgroup"></a>获取 updatableAssetGroup
 命名空间：microsoft.graph.windowsUpdates
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/5c557
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-updatableassetgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-updatableassetgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 250e5dddd903287b628e9c3d78e7b8c4f8aca1b4
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: dcce56e6455dd67757d38929e3408f73b024cdab
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61085627"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100539"
 ---
 ```go
 
@@ -14,6 +14,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.MessagesRequestBuilderGetQueryParameters{
     Top: 2,
+    OrderBy: "createdDateTime",
 }
 options := &msgraphsdk.MessagesRequestBuilderGetOptions{
     Q: requestParameters,

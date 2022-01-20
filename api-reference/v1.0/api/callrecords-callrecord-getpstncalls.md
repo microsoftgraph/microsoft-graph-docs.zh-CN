@@ -5,12 +5,12 @@ author: williamlooney
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7164dd6a49f60040d4876ce29c62f143539cc0ce
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7187bb2740bb5eabb21801004ad792c5d198c350
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979464"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107710"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord： getPstnCalls
 
@@ -18,7 +18,7 @@ ms.locfileid: "60979464"
 
 以 [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) 条目集合方式获取 PSTN 呼叫日志。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -97,8 +97,12 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/getPstnCalls(fro
 [!INCLUDE [sample-code](../includes/snippets/java/callrecord-getpstncalls-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/callrecord-getpstncalls-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/callrecord-getpstncalls-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,5 +155,5 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>另请参阅
 
-* [Microsoft Teams PSTN 用法报告](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)。
+* [Microsoft Teams PSTN 使用情况报告](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)。
 * [Microsoft Graph 中的直接路由报告](callrecords-callrecord-getdirectroutingcalls.md)。

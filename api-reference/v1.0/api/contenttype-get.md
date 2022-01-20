@@ -5,12 +5,12 @@ description: 获取站点或列表中的内容类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0d94c8858656a47ec6ebc2ad00e183ed4a01b85d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4f0886b63061a6996dda7559b3c53ce6187d0486
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974157"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101353"
 ---
 # <a name="get-contenttype"></a>获取 contentType
 命名空间：microsoft.graph
@@ -87,8 +87,12 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-i
 [!INCLUDE [sample-code](../includes/snippets/java/get-contenttype-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

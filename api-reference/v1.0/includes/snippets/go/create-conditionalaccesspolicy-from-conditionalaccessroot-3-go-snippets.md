@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d367ba27554640c1f048abac0fadbbfe99b968aa
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f020b8551674802ed0e1ccdc35db0fdbbfe68100
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083854"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101456"
 ---
 ```go
 
@@ -106,17 +106,18 @@ sessionControls.SetApplicationEnforcedRestrictions(nil)
 sessionControls.SetPersistentBrowser(nil)
 cloudAppSecurity := msgraphsdk.NewCloudAppSecuritySessionControl()
 sessionControls.SetCloudAppSecurity(cloudAppSecurity)
-cloudAppSecurity.SetAdditionalData(map[string]interface{}{
-    "cloudAppSecurityType": "blockDownloads",
-    "isEnabled": true,
-}
+cloudAppSecurityType := "blockDownloads"
+cloudAppSecurity.SetCloudAppSecurityType(&cloudAppSecurityType)
+isEnabled := true
+cloudAppSecurity.SetIsEnabled(&isEnabled)
 signInFrequency := msgraphsdk.NewSignInFrequencySessionControl()
 sessionControls.SetSignInFrequency(signInFrequency)
-signInFrequency.SetAdditionalData(map[string]interface{}{
-    "value": ,
-    "type": "hours",
-    "isEnabled": true,
-}
+value := int32(4)
+signInFrequency.SetValue(&value)
+type := "hours"
+signInFrequency.SetType(&type)
+isEnabled := true
+signInFrequency.SetIsEnabled(&isEnabled)
 options := &msgraphsdk.PoliciesRequestBuilderPostOptions{
     Body: requestBody,
 }

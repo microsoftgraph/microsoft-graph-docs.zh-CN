@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 11c4b4b592dc926de0030f8c58c9c315765f3a19
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c423b3d3faa02771d18017dac2707b3010fd3c2c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033921"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133137"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>更新 plannerAssignedToTaskBoardTaskFormat
 
@@ -42,9 +42,9 @@ PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|用于在任务板的 AssignedTo 视图中对任务排序的提示字典。 每个条目的键是任务分配到的用户之一，值是排序提示。 每个值的格式在 [Using order hints in Planner (. 中定义。/resources/planner_order_hint_format.md) 。|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|用于在任务板的 AssignedTo 视图中对任务排序的提示字典。 每个条目的键是任务分配到的用户之一，值是排序提示。 每个值的格式在 [使用 Planner 工具中的排序提示 (。/resources/planner_order_hint_format.md) 。|
 |unassignedOrderHint|字符串|当任务未分配给任何人，或者 orderHintsByAssignee 字典未为任务分配到的用户提供排序提示时，用于在任务板的 AssignedTo 视图中对任务排序的提示值。 格式在使用 Planner 中的 [排序提示中定义](../resources/planner-order-hint-format.md)。|
 
 ## <a name="response"></a>响应
@@ -86,8 +86,12 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 [!INCLUDE [sample-code](../includes/snippets/objc/update-plannerassignedtotaskboardtaskformat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-plannerassignedtotaskboardtaskformat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-plannerassignedtotaskboardtaskformat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

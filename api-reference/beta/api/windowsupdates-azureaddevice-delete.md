@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 39bc0d0dffb2a1ac9bb00115376c4fd03058e958
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 07638ba0f98b518c7c5f47463a381b527e926f89
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791957"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107843"
 ---
 # <a name="delete-azureaddevice"></a>删除 azureADDevice
 命名空间：microsoft.graph.windowsUpdates
@@ -19,7 +19,7 @@ ms.locfileid: "61791957"
 
 删除 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 对象。
 
-删除 Azure AD设备时，该设备将从部署服务注销，并自动从该服务针对所有更新类别的管理注销，以及从每个[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)和[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)中删除。
+删除 Azure AD 设备时，该设备将从部署服务注销，并自动注销该服务管理的所有更新类别，以及从每个[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)和[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)中删除。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{a
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-azureaddevice-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-azureaddevice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -6,12 +6,12 @@ description: 创建网站栏。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5e6ce855c01601a0f2ddc993f2b3babf99967662
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b3787145e2c7b2d6391664507da05f494cf2e705
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027129"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134299"
 ---
 # <a name="create-a-columndefinition-in-a-site"></a>在网站创建 columnDefinition
 命名空间：microsoft.graph
@@ -87,8 +87,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/site-post-columns-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/site-post-columns-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/site-post-columns-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

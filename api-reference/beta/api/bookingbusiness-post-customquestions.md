@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 54d2a57cb5abdb334ba89bdfd36b8d8e5402f41f
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: f1b8ee38c527d8972ee38014a51f6f38cb3bd3b6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525621"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106892"
 ---
 # <a name="create-bookingcustomquestion"></a>创建 bookingCustomQuestion
 
@@ -54,10 +54,10 @@ POST /bookingBusinesses/{bookingBusinessesId}/customQuestions
 
 您可以在创建 **bookingCustomQuestion** 时指定以下属性。
 
-| 属性        | 类型              | 说明                                                                                                         |
+| 属性        | 类型              | Description                                                                                                         |
 | :-------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------ |
 | answerInputType | answerInputType   | 预期的答案类型。 可能的值包括 `text`、`radioButton`、`unknownFutureValue`。 可选。    |
-| answerOptions   | 字符串集合 | 可能的答案值列表。 可选。                                                                     |
+| answerOptions   | String 集合 | 可能的答案值列表。 可选。                                                                     |
 | displayName     | String            | 问题。 继承自 [bookingNamedEntity](../resources/bookingnamedentity.md)。 必需。 |
 
 ## <a name="response"></a>响应
@@ -68,6 +68,8 @@ POST /bookingBusinesses/{bookingBusinessesId}/customQuestions
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_bookingcustomquestion_from_"
@@ -86,6 +88,16 @@ Content-length: 165
   "answerOptions": []
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-bookingcustomquestion-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-bookingcustomquestion-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

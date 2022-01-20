@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b9e8739dc0ae0b8f3eddd11ff395911d01ee2552
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 4ed503883bca7da4a1e141684f373f932d07b2db
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860036"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127866"
 ---
 # <a name="update-federatedidentitycredential"></a>Update federatedIdentityCredential
 命名空间：microsoft.graph
@@ -53,12 +53,12 @@ PATCH /applications/{applicationId}/federatedIdentityCredentials/{federatedIdent
 
 下表指定可更新的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|访问群体|String collection|显示在已颁发令牌中的访问群体列表。 建议值为 `api://AzureADTokenExchange` 。 |
-|description|String|用户提供的有关 federatedIdentityCredential 用于哪些内容的说明。 |
+|访问群体|String 集合|显示在已颁发令牌中的访问群体列表。 建议值为 `api://AzureADTokenExchange` 。 |
+|说明|String|用户提供的有关 federatedIdentityCredential 用于哪些内容的说明。 |
 |issuer|String|安全令牌服务策略中 (受信任颁发) 。 匹配访问令牌的颁发者声明。 例如，对于客户托管密钥方案，Azure AD是颁发者，有效值为 `https://login.microsoftonline.com/{tenantid}/v2.0` 。 颁发者和主题的值组合在应用中必须是唯一的。 |
-|subject|String|<li>对于Azure AD颁发者 `objectId` ，servicePrincipal (可以表示可) 应用的托管标识。 与此 GUID 关联的对象需要存在于租户中。</li><li>对于所有其他颁发者，一个无需额外验证的字符串</ul><br><br>颁发者和主题的值组合在应用中必须是唯一的。|
+|subject|String|<li>对于Azure AD颁发者 `objectId` ，servicePrincipal (表示可) 应用的托管标识。 与此 GUID 关联的对象需要存在于租户中。</li><li>对于所有其他颁发者，一个无需额外验证的字符串</ul><br><br>颁发者和主题的值组合在应用中必须是唯一的。|
 
 
 
@@ -108,6 +108,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-federatedidentitycredential-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-federatedidentitycredential-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

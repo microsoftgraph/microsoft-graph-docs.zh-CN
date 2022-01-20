@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3d7e4e885aed92ac8718bd333c209b0298cb963c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 775bc6e4ce68c13c8190eaeea433ed61b03f1f99
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985829"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133250"
 ---
 # <a name="list-taskfolders-deprecated"></a>列出已 (taskFolders) 
 
@@ -79,8 +79,12 @@ GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 [!INCLUDE [sample-code](../includes/snippets/java/get-taskfolders-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-taskfolders-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-taskfolders-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

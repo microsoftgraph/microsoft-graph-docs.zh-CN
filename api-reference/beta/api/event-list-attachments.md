@@ -5,12 +5,12 @@ author: svpsiva
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 76b4d5bdea18cfae9026f0530475ffa1c2cfdb12
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e371840f785e4837fd1aa9b199b98ee54e4e573f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004905"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62113622"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -53,7 +53,7 @@ GET /groups/{id}/events/{id}/attachments
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -98,8 +98,12 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 [!INCLUDE [sample-code](../includes/snippets/java/event-get-attachments-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/event-get-attachments-beta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/event-get-attachments-beta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
