@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9010f08b8fb1c9c8b3e4639f0f473890717a5acf
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 9025f16061ae08561580b946e96ed7b3935a58a7
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266283"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62093975"
 ---
 # <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Create permissionGrantConditionSet in includes collection of permissionGrantPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "61266283"
 
 添加权限授予策略中包含权限授予事件的条件。 为此，将[permissionGrantConditionSet](../resources/permissiongrantconditionset.md)添加到[permissionGrantPolicy 的 includes 集合](../resources/permissionGrantPolicy.md)。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -94,8 +94,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-create-includes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-create-includes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/permissiongrantpolicy-create-includes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -134,7 +138,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-本示例中，*所有* 经过认证Microsoft 365的客户端应用的所有委派权限都包含在权限授予策略中。 由于拥有经过验证的发布者是应用被视为经过认证Microsoft 365的先决条件，因此无需显式要求验证发布者。 由于 [省略了 permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 中的所有其他条件，因此它们都将使用其默认值，这在每种情况下都是最包含的。
+本示例中，*所有* 经过认证Microsoft 365客户端应用的所有委派权限都包含在权限授予策略中。 由于拥有经过验证的发布者是应用被视为经过认证Microsoft 365的先决条件，因此无需显式要求验证发布者。 由于 [省略了 permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 中的所有其他条件，因此它们都将使用其默认值，这在每种情况下都是最包含的。
 
 
 <!-- {

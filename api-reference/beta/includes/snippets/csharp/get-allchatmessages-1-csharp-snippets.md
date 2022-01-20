@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ab903ce9c58b4192dd62b0f33da8f1b1102a7e4aac368d85377981d8e058b7c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 168e5bbb5f9fd73607e7905e0b6e53579df85f68
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56902844"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100543"
 ---
 ```csharp
 
@@ -13,6 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var messages = await graphClient.Chats["{chat-id}"].Messages
     .Request()
+    .OrderBy("createdDateTime")
     .Top(2)
     .GetAsync();
 

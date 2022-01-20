@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 516a1567921089f1285d639f4e12f8747e92de91
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4c2ac0c265675516f985a36d29d1b0f2ec76bfd2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988153"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100759"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
@@ -76,7 +76,7 @@ POST /accessReviews
 
 ## <a name="example"></a>示例
 
-这是一个创建一次性网站，而不是 (访问) ，明确指定两个用户作为审阅者的示例。
+这是一个创建一次性网站（而不是 (访问) ，并明确指定两个用户作为审阅者的示例。
 
 ### <a name="request"></a>请求
 在请求正文中，提供 [accessReview](../resources/accessreview.md) 对象的 JSON 表示形式。
@@ -147,8 +147,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreview-from-accessreviews-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreview-from-accessreviews-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreview-from-accessreviews-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

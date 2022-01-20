@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 9ce4013d9da017f6384ea6299b5238c65bf88a36
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f49ee7d3aebb7aca29e39ad158dc8f0cceb7a07d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982534"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094993"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -20,7 +20,7 @@ ms.locfileid: "60982534"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-读取附加到用户事件、邮件、任务或组帖子的附件Outlook、关系或原始[内容](../resources/post.md)。 [](../resources/event.md) [](../resources/message.md) [](../resources/outlooktask.md) 
+读取附加到用户事件、邮件、任务或组帖子的附件Outlook关系或原始[内容](../resources/post.md)。 [](../resources/event.md) [](../resources/message.md) [](../resources/outlooktask.md) 
 
 附件可以是下列类型之一：
 
@@ -47,7 +47,7 @@ ms.locfileid: "60982534"
 
 ## <a name="permissions"></a>权限
 
-根据附件附加到的资源 (**事件**、邮件 **、outlookTask** 或 post **)** 以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据附件附加到的资源 (**事件**、邮件 **、outlookTask** 或 post **)** 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -63,9 +63,9 @@ ms.locfileid: "60982534"
 
 ## <a name="http-request"></a>HTTP 请求
 
-本节显示支持附件的每个实体 ([事件](../resources/event.md)、邮件、Outlook任务) HTTP GET 请求[](../resources/message.md)语法： [](../resources/outlooktask.md) [](../resources/post.md)
+本节显示支持附件的每个实体 ([事件](../resources/event.md)、[邮件](../resources/message.md)、Outlook任务) HTTP GET 请求语法： [](../resources/outlooktask.md) [](../resources/post.md)
 
-- 若要获取附件的属性和关系，请指定附件集合中要编制索引的附件ID、附加到指定事件、邮件[](../resources/event.md)、Outlook[](../resources/message.md)[任务](../resources/outlooktask.md)或[post](../resources/post.md)实例。
+- 若要获取附件的属性和关系，请指定要索引到附件集合、附加到指定事件、邮件、Outlook任务或[](../resources/event.md)post[](../resources/message.md)[实例的](../resources/outlooktask.md)[附件](../resources/post.md)ID。
 - 如果附件是文件或 Outlook 项目（联系人、事件或邮件），则可以通过将路径段 `/$value` 附加到请求 URL 来进一步获取附件的原始内容。
 
 事件的[附件：](../resources/event.md)
@@ -194,8 +194,12 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 [!INCLUDE [sample-code](../includes/snippets/java/get-file-attachment-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-file-attachment-beta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-file-attachment-beta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -541,8 +545,12 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachmen
 [!INCLUDE [sample-code](../includes/snippets/java/get-reference-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-reference-attachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-reference-attachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

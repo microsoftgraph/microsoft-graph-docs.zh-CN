@@ -5,12 +5,12 @@ author: jeeshnair
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 769f78239993311d662a3a7439182df6ad9281af
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 212647c7607698e782824380f072c7e519a7db1f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015720"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090700"
 ---
 # <a name="list-device-usagerights"></a>列出设备使用情况Rights
 命名空间：microsoft.graph
@@ -46,9 +46,9 @@ GET /devices/{objectId}/usageRights
 - $filter = state eq 'value' and serviceIdentifier eq 'value'
 - $filter = ( value1、value2") 
 - $filter =serviceIdentifier in ('value1'， 'value2') 
-- $filter ( value1"、value2") 和 serviceIdentifier 中的 state ( value1"、"value2") 
+- $filter = ( value1、value2") 和 serviceIdentifier 中的 state ("value1"，"value2") 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -93,8 +93,12 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights
 [!INCLUDE [sample-code](../includes/snippets/java/list-usageright-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-usageright-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-usageright-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -155,8 +159,12 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights?$filter=stat
 [!INCLUDE [sample-code](../includes/snippets/java/list-usageright-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-usageright-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-usageright-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

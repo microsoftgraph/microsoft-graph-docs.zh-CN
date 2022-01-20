@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2fe4d29a707fdc217d98e701f154e2c4c2c6588d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c634b3f7fac78f6c1e52cbceb994552e67d183d6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61103097"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104941"
 ---
 ```go
 
@@ -17,7 +17,14 @@ createdDateTime, err := time.Parse(time.RFC3339, "2019-02-04T19:58:15.511Z")
 requestBody.SetCreatedDateTime(&createdDateTime)
 from := msgraphsdk.NewChatMessageFromIdentitySet()
 requestBody.SetFrom(from)
-from.SetAdditionalData(map[string]interface{}{
+user := msgraphsdk.NewIdentity()
+from.SetUser(user)
+id := "id-value"
+user.SetId(&id)
+displayName := "Joh Doe"
+user.SetDisplayName(&displayName)
+user.SetAdditionalData(map[string]interface{}{
+    "userIdentityType": "aadUser",
 }
 body := msgraphsdk.NewItemBody()
 requestBody.SetBody(body)

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ea11332463269cbcf9cae9de556f453fce5226f0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 91786e90dd04fb7e35185d5c355dc9a0c3d5c7bf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979590"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115126"
 ---
 # <a name="list-applicationtemplates"></a>列出 applicationTemplates
 
@@ -18,7 +18,7 @@ ms.locfileid: "60979590"
 
 从应用程序库中检索[applicationTemplate](../resources/applicationtemplate.md) Azure AD列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,7 +42,7 @@ GET /applicationTemplates
 
 此方法支持一些 OData 查询参数来帮助自定义响应。
 
-- 可以有限 `$filter` 的方式使用 参数。 只能按 **displayName** 或 categories **进行筛选**。 例如， `$filter=contains(displayName, 'salesf')` `$filter=categories/any(c:contains(c, 'myCategory'))` 或 。
+- 可以有限 `$filter` 的方式使用 参数。 只能按 **displayName** 或 categories **进行筛选**。 例如，`$filter=contains(displayName, 'salesf')` 或 `$filter=categories/any(c:contains(c, 'myCategory'))`。
 - 可以在任何 `$orderby` `$top,` GET 请求 `$skip` 中使用 和 查询参数。
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
@@ -93,8 +93,12 @@ GET https://graph.microsoft.com/v1.0/applicationTemplates
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplates-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationtemplates-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

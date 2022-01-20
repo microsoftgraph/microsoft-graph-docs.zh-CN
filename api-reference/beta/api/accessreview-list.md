@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b03ba3340c74aeb4936e5442256dc5a47965be67
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a29d365a253f5917d3f5f58021dbe639d2a02713
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988069"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62095131"
 ---
 # <a name="list-accessreviews"></a>列出 accessReviews
 
@@ -23,7 +23,7 @@ ms.locfileid: "60988069"
 >[!NOTE]
 > 如果与筛选器匹配的任何访问评审是定期访问评审，则除了任何当前、过去和下一个即将发生的实例之外，还将返回一 **个 accessReview** 对象以表示整个定期系列。 例如，如果每月对组 A 的来宾成员进行定期访问评审，对组 B 的来宾成员进行季度定期访问评审，对组 C 的来宾成员进行一次性访问评审，则每个定期访问评审都刚刚开始，并且调用方使用查看组来宾成员的业务流程模板查询访问评审， 将返回表示三个系列的三个对象，以及当前访问评审实例的三个对象，以及下一个即将推出的实例可能返回的三个对象。 若要检索定期访问评审的实例，或为特定月份或季度安排的访问评审实例，调用方随后可以导航定期 **accessReview** 对象的实例关系。  实例 **关系** 链接到定期访问评审的当前或过去实例的 **accessReview** 对象。
 
-如果许多访问评审与筛选器匹配，为了提高效率并避免超时，请检索页面中的 结果集，方法包括页面大小为 100 的查询参数和请求中的 query 参数。 `$top` `$skip=0` 即使您预计请求将跨越多个页面，也可以包含这些参数。 当结果集跨多个页面时，Microsoft Graph 在响应中返回包含指向下一页结果 `@odata.nextLink` 的 URL 的属性的页面。 如果该属性存在，请继续使用每次响应中的 `@odata.nextLink` URL 来创建额外请求，直至返回所有结果，如[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)一文中所述。
+如果许多访问评审与筛选器匹配，为了提高效率并避免超时，请检索页面中的 结果集，方法包括页面大小为 100 的查询参数和请求中的 query 参数。 `$top` `$skip=0` 即使您预计请求将跨越多个页面，也可以包含这些参数。 当一结果集跨多个页面时，Microsoft Graph 返回该页面，该页面在响应中包含指向下一页结果的 `@odata.nextLink` URL 中的属性。 如果该属性存在，请继续使用每次响应中的 `@odata.nextLink` URL 来创建额外请求，直至返回所有结果，如[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)一文中所述。
 
 此 API 返回的 **accessReview** 对象不包括嵌套结构属性，如 **设置** 或 关系。  若要检索访问评审设置或关系，请使用 [get accessReview](accessreview-get.md) API。
 
@@ -83,8 +83,12 @@ GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateI
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviews-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreviews-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-accessreviews-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

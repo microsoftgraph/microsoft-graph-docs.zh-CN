@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: e226e77717c048cc0e8001506a4b5b3a497aeccf
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 4a31643464159f7578619eb318ea186a988d6023
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525678"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094493"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
@@ -56,17 +56,17 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |defaultPrice|双精度|服务的默认货币价格。|
 |defaultPriceType|bookingPriceType|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`、`unknownFutureValue`。|
 |defaultReminders|[bookingReminder](../resources/bookingreminder.md) 集合|此服务约会的默认提醒集。 此属性的值仅在按其 ID 读取此 **bookingService** 时可用。|
-|description|String|服务的文本说明。|
+|说明|String|服务的文本说明。|
 |displayName|String|服务名称。|
-|id|字符串| 只读。|
-|isHiddenFromCustomers|布尔值|True 表示客户无法预订此服务。|
-|isLocationOnline|布尔值|如果为 True，则表明该服务的约会将联机进行。 默认值为 false。|
+|id|String| 只读。|
+|isHiddenFromCustomers|布尔|True 表示客户无法预订此服务。|
+|isLocationOnline|布尔|如果为 True，则表明该服务的约会将联机进行。 默认值为 false。|
 |notes|String|有关此服务的其他信息。|
 |postBuffer|期限|此服务的约会结束后以及下一个客户约会可以预订之前进行缓冲的时间。|
 |preBuffer|期限|在此服务的约会可以启动之前缓冲的时间。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|用于确定如何创建和管理这种类型的服务的约会的策略集。|
-|smsNotificationsEnabled|Boolean|如果为 True，则表明可以针对服务约会将短信通知发送给客户。 默认值为 false。|
-|staffMemberIds|String collection|表示 [提供此服务](../resources/bookingstaffmember.md) 的员工。 |
+|smsNotificationsEnabled|布尔|如果为 True，则表明可以针对服务约会将短信通知发送给客户。 默认值为 false。|
+|staffMemberIds|String 集合|表示 [提供此服务](../resources/bookingstaffmember.md) 的员工。 |
 |customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) 集合|这包括与特定服务关联的一组自定义问题。 可选。|
 |maximumAttendeesCount|Int32|服务中允许的最大客户数。  |
 
@@ -106,8 +106,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingservice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-bookingservice-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingservice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

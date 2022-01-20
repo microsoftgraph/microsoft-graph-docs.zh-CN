@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1e4f16585de42fb094c404283870c348d0579fe9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 06128a16ee5f720e88a679cf2da0188375de9182
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526940"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094533"
 ---
 # <a name="update-bookingcustomquestion"></a>更新 bookingCustomQuestion
 
@@ -55,7 +55,7 @@ PATCH /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQue
 | 属性        | 类型              | 说明                                                                                                         |
 | :-------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------ |
 | answerInputType | answerInputType   | 预期的答案类型。 可能的值包括 `text`、`radioButton`、`unknownFutureValue`。 可选。    |
-| answerOptions   | 字符串集合 | 可能的答案值列表。 可选。                                                                   |
+| answerOptions   | String 集合 | 可能的答案值列表。 可选。                                                                   |
 | displayName     | String            | 问题。 继承自 [bookingNamedEntity](../resources/bookingnamedentity.md)。 必需。 |
 
 ## <a name="response"></a>响应
@@ -66,6 +66,8 @@ PATCH /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQue
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_bookingcustomquestion"
@@ -83,6 +85,32 @@ Content-Type: application/json
   "answerOptions": []
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingcustomquestion-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingcustomquestion-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-bookingcustomquestion-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-bookingcustomquestion-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingcustomquestion-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingcustomquestion-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

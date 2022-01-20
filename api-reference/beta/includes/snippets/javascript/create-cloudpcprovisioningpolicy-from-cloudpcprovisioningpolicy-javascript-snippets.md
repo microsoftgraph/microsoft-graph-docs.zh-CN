@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2895c7ce220670b1be1785c59357a92c62125603710756dcf570986c66e53dc8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe36e06b13898a9a26d8390e6796149a7e0acc1b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57105477"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62089050"
 ---
 ```javascript
 
@@ -16,13 +16,18 @@ const options = {
 const client = Client.init(options);
 
 const cloudPcProvisioningPolicy = {
-  '@odata.type': '#microsoft.graph.cloudPcProvisioningPolicy',
-  displayName: 'Display Name value',
-  description: 'Description value',
-  onPremisesConnectionId: '6bf90392-5fea-459a-9e9d-a2484abbffff',
-  imageId: 'Image ID value',
-  imageDisplayName: 'Image Display Name value',
-  imageType: 'gallery'
+    '@odata.type': '#microsoft.graph.cloudPcProvisioningPolicy',
+    description: 'Description value',
+    displayName: 'Display Name value',
+    domainJoinConfiguration: {
+        domainJoinType: 'hybridAzureADJoin',
+        onPremisesConnectionId: '16ee6c71-fc10-438b-88ac-daa1ccafffff'
+    },
+    id: '1d164206-bf41-4fd2-8424-a3192d39ffff',
+    imageDisplayName: 'Windows-10 19h1-evd',
+    imageId: 'MicrosoftWindowsDesktop_Windows-10_19h1-evd',
+    imageType: 'gallery',
+    onPremisesConnectionId: '4e47d0f6-6f77-44f0-8893-c0fe1701ffff'
 };
 
 await client.api('/deviceManagement/virtualEndpoint/provisioningPolicies')

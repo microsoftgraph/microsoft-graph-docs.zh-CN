@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f4e9440c29faecc4eabe83badd1f342df0b4b434
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 795d207c353c4ee4ce2e49701bdbf6dae4a0181f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008943"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111492"
 ---
 # <a name="assign-tokenlifetimepolicy"></a>分配 tokenLifetimePolicy
 
@@ -47,7 +47,7 @@ POST /applications/{id}/tokenLifetimePolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，使用应分配给应用程序或服务主体 (属性) [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的标识符 `@odata.id` 。
+在请求正文中，使用应 (或服务主体的属性) 提供 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的 `@odata.id` 标识符。
 
 ## <a name="response"></a>响应
 
@@ -90,8 +90,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-tokenlifetimepolicy-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-tokenlifetimepolicy-from-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-tokenlifetimepolicy-from-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

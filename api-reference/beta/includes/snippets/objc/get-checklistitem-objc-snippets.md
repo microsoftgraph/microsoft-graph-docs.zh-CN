@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2b81c32fc3b16876137e32dfd1d7b1fa6475c92e
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 059d5812496679b56e95cec92cc23266deb7c306
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525782"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090866"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        MSGraph51d8a471-2e9d-4f53-9937-c33a8742d28f *51d8a471-2e9d-4f53-9937-c33a8742d28f = [[MSGraph51d8a471-2e9d-4f53-9937-c33a8742d28f alloc] initWithData:data error:&nserror];
+        MSGraphChecklistItem *checklistItem = [[MSGraphChecklistItem alloc] initWithData:data error:&nserror];
 
 }];
 

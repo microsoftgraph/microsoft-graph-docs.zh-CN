@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: f43cf2b3d681595fd6d53696812eeca92815931e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1c70450a5e7a30948aa5f887d18464c2ac527874
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983868"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62088270"
 ---
 # <a name="update-printtask"></a>更新 printTask
 命名空间：microsoft.graph
@@ -52,7 +52,7 @@ PATCH /print/taskDefinitions/{taskDefinitionId}/tasks/{taskId}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|status|String|包括 `state` `description` 描述任务当前状态的值。|
+|状态|String|包括 `state` `description` 描述任务当前状态的值。|
 
 ## <a name="response"></a>响应
 
@@ -95,8 +95,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-printtask-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-printtask-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-printtask-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

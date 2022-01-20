@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 29a0fbaefdc96aa7d05c0b9726bfdb665896426f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f528f4dbc8ebdf4a34a074b3c9bd3e2411fe36ca
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005892"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62110449"
 ---
 # <a name="delete-approleassignment"></a>删除 appRoleAssignment
 
@@ -39,7 +39,7 @@ DELETE /users/{id}/appRoleAssignments/{id}
 > [!NOTE]
 > 最佳做法是，我们建议你使用 Delete [appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md)方法删除应用角色分配，该方法通过资源服务主体的 **appRoleAssignedTo** 关系删除，而不是使用此方法。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:---------------|:--------|
@@ -57,7 +57,7 @@ DELETE /users/{id}/appRoleAssignments/{id}
 
 ### <a name="request"></a>请求
 
-下面是一个请求删除应用或应用角色分配。
+下面是一个请求删除应用示例角色分配。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -85,8 +85,12 @@ DELETE https://graph.microsoft.com/v1.0/users/{id}/appRoleAssignments/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/user-delete-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-delete-approleassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-delete-approleassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

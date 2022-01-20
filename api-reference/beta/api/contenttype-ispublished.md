@@ -2,15 +2,15 @@
 author: swapnil1993
 title: contentType： isPublished
 description: 检查内容类型中心网站中内容类型的发布状态。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: e61d488dddc9797c3f0623a3e534f54b1bab4708
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: aab304fed276e9794cc1bb2d0536f19e82ef22ac
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439407"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100352"
 ---
 # <a name="contenttype-ispublished"></a>contentType： isPublished
 命名空间：microsoft.graph
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-ispublished-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-ispublished-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

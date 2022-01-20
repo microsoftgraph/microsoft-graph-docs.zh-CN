@@ -5,19 +5,19 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 32c78ddb7525c2331dd16cbb5bc4661f49e260df
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 09c06d30a39755b7b0d04fba29352d4f4a94da64
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983028"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62097272"
 ---
 # <a name="create-federatedidentitycredential"></a>Create federatedIdentityCredential
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为应用程序 [创建新的 federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象。 通过[](/azure/active-directory/develop/workload-identity-federation-create-trust)为计算平台配置 Azure AD 应用程序注册和标识提供程序之间的信任关系，可以使用该平台颁发的令牌向 Microsoft 标识平台 进行身份验证，并调用 Microsoft 生态系统中的 API。 最多可向应用程序添加 20 个对象。
+为应用程序 [创建新的 federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象。 通过[](/azure/active-directory/develop/workload-identity-federation-create-trust)为计算平台配置 Azure AD 应用程序注册和标识提供程序之间的信任关系，可以使用该平台颁发的令牌向 Microsoft 标识平台 进行身份验证并调用 Microsoft 生态系统中的 API。 最多可向应用程序添加 20 个对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ POST /applications/{applicationsId}/federatedIdentityCredentials
 
 |属性|类型|说明|
 |:---|:---|:---|
-|访问群体|String collection|列出可在外部令牌中显示访问群体。 此字段是必需的，默认为"api://AzureADTokenExchange"。 它指出Microsoft 标识平台令牌中的 `aud` 声明应接受哪些信息。 此值表示Azure AD标识提供程序中的令牌，并且未跨标识固定值 - 可能需要在标识提供程序中创建新的应用程序注册，以用作此令牌的受众。 必需。|
+|访问群体|字符串集合|列出可在外部令牌中显示访问群体。 此字段是必需的，默认为"api://AzureADTokenExchange"。 它指出Microsoft 标识平台 `aud` 令牌中的声明应接受哪些信息。 此值表示Azure AD标识提供程序中的名称，并且固定值标识提供程序之间没有任何关系 - 可能需要在标识提供程序中创建新的应用程序注册，以用作此令牌的受众。 必需。|
 |issuer|String|T外部标识提供程序的 URL，并且必须与要交换的外部令牌的颁发者声明相匹配。 颁发者和主题的值组合在应用中必须是唯一的。 必需。|
 |name|String|联合标识凭据的唯一标识符，其字符限制为 120 个字符，并且必须为 URL 友好。 创建后不可变|
 |subject|String|必需。 外部标识提供程序中的外部软件工作负荷的标识符。 与访问群体值一样，它没有固定格式，因为每个标识提供程序都使用其自己的格式，有时是 GUID，有时是冒号分隔的标识符，有时是任意字符串。 此处的值必须与向用户呈现的令牌中的子声明Azure AD。 颁发者和 **主题****的组合在** 应用中必须是唯一的。|
@@ -101,8 +101,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-federatedidentitycredential-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-federatedidentitycredential-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-federatedidentitycredential-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
