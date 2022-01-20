@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 801d330884d310ab6c101ad98215004c62e65d10
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0f971ff2eb662faf5ade72a146e83a00d1057996
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019331"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135202"
 ---
 # <a name="create-itempublication"></a>创建 itemPublication
 命名空间：microsoft.graph
@@ -48,7 +48,7 @@ POST /users/{id | userPrincipalName}/profile/publications
 
 下表显示了在用户配置文件中创建新的 [itemPublication](../resources/itempublication.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
@@ -59,8 +59,8 @@ POST /users/{id | userPrincipalName}/profile/publications
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|publishedDate  |日期        |出版物的发布日期。      |
-|发布者      |String      |出版物或Publisher出版物的出版物。     |
+|publishedDate  |Date        |出版物的发布日期。      |
+|发布者      |String      |出版物Publisher出版物。     |
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |thumbnailUrl   |String      |引用出版物缩略图的 URL。   |
 |WebUrl         |String      |引用出版物的 URL。                  |
@@ -106,8 +106,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-itempublication-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-itempublication-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-itempublication-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

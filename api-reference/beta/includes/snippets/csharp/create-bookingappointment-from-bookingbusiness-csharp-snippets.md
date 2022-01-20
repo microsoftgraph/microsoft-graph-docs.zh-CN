@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6b51cd2794c1bae8aae5421487bf23b54b9acf4d
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 06219571f7e0df9a6e68bca7223c3d31da705e46
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60736648"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131724"
 ---
 ```csharp
 
@@ -137,6 +137,64 @@ var bookingAppointment = new BookingAppointment
     {
         DateTime = "2018-05-01T12:00:00+00:00",
         TimeZone = "UTC"
+    },
+    MaximumAttendeesCount = 5,
+    FilledAttendeesCount = 1,
+    Customers = new List<BookingCustomerInformationBase>()
+    {
+        new BookingCustomerInformation
+        {
+            CustomerId = "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+            Name = "Jordan Miller",
+            EmailAddress = "jordanm@contoso.com",
+            Phone = "213-555-0199",
+            Notes = null,
+            Location = new Location
+            {
+                DisplayName = "Customer",
+                LocationEmailAddress = null,
+                LocationUri = "",
+                LocationType = null,
+                UniqueId = null,
+                UniqueIdType = null,
+                Address = new PhysicalAddress
+                {
+                    Type = PhysicalAddressType.Home,
+                    PostOfficeBox = "",
+                    Street = "",
+                    City = "",
+                    State = "",
+                    CountryOrRegion = "",
+                    PostalCode = ""
+                },
+                Coordinates = new OutlookGeoCoordinates
+                {
+                    Altitude = null,
+                    Latitude = null,
+                    Longitude = null,
+                    Accuracy = null,
+                    AltitudeAccuracy = null
+                }
+            },
+            TimeZone = "America/Chicago",
+            CustomQuestionAnswers = new List<BookingQuestionAnswer>()
+            {
+                new BookingQuestionAnswer
+                {
+                    QuestionId = "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+                    Question = "What is your age",
+                    AnswerInputType = AnswerInputType.Text,
+                    AnswerOptions = new List<String>()
+                    {
+                    },
+                    IsRequired = true,
+                    Answer = "25",
+                    SelectedOptions = new List<String>()
+                    {
+                    }
+                }
+            }
+        }
     },
     AdditionalData = new Dictionary<string, object>()
     {

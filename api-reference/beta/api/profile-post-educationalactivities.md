@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 42de842c3d72d246a76956a175a7c3688f529d78
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 02ce036ef7558927481930eed6dfb1de4d12330d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027920"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135272"
 ---
 # <a name="create-educationalactivity"></a>创建 educationalActivity
 
@@ -20,7 +20,7 @@ ms.locfileid: "61027920"
 
 在用户配置文件中创建新的[educationalActivity。](../resources/educationalactivity.md) [](../resources/profile.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,16 +52,16 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 
 下表显示了在用户配置文件中创建新的 [educationalActivity](../resources/educationalactivity.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|completionMonthYear|日期|用户注册或完成活动的月份和年份。 |
-|endMonthYear|日期|用户完成所引用的教育活动的月份和年份。|
+|completionMonthYear|Date|用户注册或完成活动的月份和年份。 |
+|endMonthYear|Date|用户完成所引用的教育活动的月份和年份。|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |机构|[institutionData](../resources/institutiondata.md)|包含所查看的机构的详细信息。 |
 |程序|[educationalActivityDetail](../resources/educationalactivitydetail.md)|包含有关计划或课程的扩展信息。|
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|startMonthYear|日期|用户对所引用的活动进行跟踪的月份和年份。|
+|startMonthYear|Date|用户对所引用的活动进行跟踪的月份和年份。|
 
 ## <a name="response"></a>响应
 
@@ -130,8 +130,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationalactivity-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-educationalactivity-from-profile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationalactivity-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 36d4c1fe11c865bab3c6ce7f067b3f6353ab6f4e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f370897f6b83ddca7f261894046352d2a51c39aa
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020969"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131352"
 ---
 # <a name="create-legalhold"></a>创建 legalHold
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String| 法定显示名称的保留项。 |
+|displayName|String| 合法显示名称的保留项。 |
 
 ## <a name="response"></a>响应
 
@@ -109,8 +109,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-legalhold-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-legalhold-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-legalhold-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

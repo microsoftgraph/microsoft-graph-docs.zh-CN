@@ -5,12 +5,12 @@ author: bhartono
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 01c63854541085f015969a580a289d6d00f5eee9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6be52649f2015f649046edac8d88bf11f2862c17
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994543"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123946"
 ---
 # <a name="update-chat"></a>更新聊天
 命名空间：microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "60994543"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | ChatSettings.ReadWrite.Chat*、Chat.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ PATCH /chats/{chat-id}
 
 下表显示了可用于此操作的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |topic|String|聊天的标题。 只能为 chatType 值为 的 **聊天设置** 此值 `group` 。|
 
@@ -94,8 +94,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-chat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-chat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -124,4 +128,3 @@ Content-Type: application/json
     "webUrl": "https://teams.microsoft.com/l/chat/19%3A1c5b01696d2e4a179c292bc9cf04e63b@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
-

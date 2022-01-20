@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7378fd2c37bdcf5c1560b3653c258960d3ef4586
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: f805c96fd7e09eb0b50e3a47e3089072ebdf75f8
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321727"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62119649"
 ---
 # <a name="create-contact"></a>创建联系人
 
@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中返回 [响应](../resources/contact.md) 代码和 contact 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [联系人](../resources/contact.md) 对象。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -102,8 +102,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-contact-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-contact-from-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-contact-from-user-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

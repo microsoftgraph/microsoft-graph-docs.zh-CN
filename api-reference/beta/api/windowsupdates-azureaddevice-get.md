@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: adbf8f892868e1821fcb2a744e670360eee39f90
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 5c082d9df425e927e870139ca75da7505f70d66b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61863218"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136763"
 ---
 # <a name="get-azureaddevice"></a>获取 azureADDevice
 命名空间：microsoft.graph.windowsUpdates
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/983f0
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-azureaddevice-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-azureaddevice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 636a09bb7d0836ab7b814f978ecf38ee14416f8e
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 86a26afb9bba3421fa2ceaa8fbad035e2f47b6fa
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424747"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129265"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -148,12 +148,10 @@ Microsoft Graph 安全性 API 示例的[代码和贡献情况](https://github.co
 
 了解可与 Microsoft Graph 安全性 API 连接的其他选项：
 
-- [适用于 Logic Apps、Flow 和 PowerApps 的 Microsoft Graph 安全性连接器](https://aka.ms/graphsecurityconnectors)
+- [适用于 Logic Apps、Flow 和 PowerApps 的 Microsoft Graph 安全性连接器](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)
 - [Jupyter Notebook 示例](https://aka.ms/graphsecurityjupyternotebooks)
 
 与社区互动：
 
 - [加入技术社区](https://techcommunity.microsoft.com/t5/microsoft-graph-security-api/bd-p/SecurityGraphAPI)
 - [在 StackOverflow 上讨论](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
-
-

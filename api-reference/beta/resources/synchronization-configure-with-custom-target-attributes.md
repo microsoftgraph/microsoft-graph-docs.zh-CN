@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 9597ff99e8b5d6f647d7be3771a9bcb52e764061
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2e284d8b404578507be9462f6a0d7b65cc9e8605
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007137"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129253"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>使用自定义目标属性配置同步
 
@@ -18,9 +18,9 @@ ms.locfileid: "61007137"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以自定义同步架构以包括目标目录中定义的自定义属性。 本文介绍如何通过添加名为 的新字段来自定义 Salesforce 订阅 `officeCode` 。 您设置从 Azure Active Directory (Azure AD) 到 Salesforce 的同步，并且对于每个用户，您将使用 Salesforce 中字段的值填充 `officeCode` `extensionAttribute10` salesforce 中的Azure AD。
+您可以自定义同步架构以包括目标目录中定义的自定义属性。 本文介绍如何通过添加名为 的新字段来自定义 Salesforce 订阅 `officeCode` 。 您设置从 Azure Active Directory (Azure AD) 到 Salesforce 的同步，并且对于每个用户，您将使用 Salesforce 中字段的值填充 `officeCode` `extensionAttribute10` Azure AD。
 
-本文假定你已添加支持通过[Azure](https://portal.azure.com)门户与租户同步的应用程序，你知道应用程序显示名称，并且你具有 Microsoft Graph 的授权令牌。 若要了解如何获取授权令牌，请参阅获取访问令牌以[调用 Microsoft Graph。](/graph/auth/)
+本文假定你已添加支持通过[Azure](https://portal.azure.com)门户与租户同步的应用程序，你知道应用程序 显示名称，并且你拥有 Microsoft Graph 的授权令牌。 若要了解如何获取授权令牌，请参阅获取访问令牌以[调用 Microsoft](/graph/auth/)Graph。
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>按以下方法查找服务主体显示名称
 
@@ -108,8 +108,12 @@ Authorization: Bearer {Token}
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationschema-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-synchronizationschema-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -219,7 +223,7 @@ Content-Type: application/json
 
 1. 为 [属性添加属性](synchronization-attributedefinition.md) `officeCode` 定义。 
 
-    - 在目录下，查找名称为 salesforce.com 的目录，在对象的数组中，查找名为 **User 的目录**。
+    - 在目录下，查找名称为 salesforce.com 的目录，在对象的数组中查找名为 **User 的目录**。
     - 将新属性添加到列表中，并指定名称和类型，如以下示例所示。
 
 2. 在 和 [之间添加](synchronization-attributemapping.md) 属性 `officeCode` 映射 `extensionAttribute10` 。

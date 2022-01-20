@@ -1,16 +1,16 @@
 ---
 title: 'outlookUser: supportedTimeZones'
 description: 获取用户支持的时区列表，就像在用户的邮箱服务器上配置的那样。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9a6e536c5eec85057a6c0788e282164a3bf24ee2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6672e605416dfa30704b475f65ab0f74ecbf41a6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128671"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62112605"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -45,7 +45,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ```
 
 ## <a name="function-parameters"></a>函数参数
-| 参数      | 类型    | 说明|
+| 参数      | 类型    | Description|
 |:---------------|:--------|:----------|
 | TimeZoneStandard  | String  | 时区格式。 支持的值：`Windows` 和 `Iana`。 可选。 |
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-supportedtimezones-default-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-supportedtimezones-default-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

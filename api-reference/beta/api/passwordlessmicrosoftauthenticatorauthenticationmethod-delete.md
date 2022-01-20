@@ -5,24 +5,24 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 59b60d282e2581850cb5959f91c3b075f5064d59
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 68741256613cfbc60ab6cc2494aa53405a588308
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226151"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62112563"
 ---
 # <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>删除 passwordlessMicrosoftAuthenticatorAuthenticationMethod (弃) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除用户的登录Microsoft Authenticator[密码电话登录方法](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)对象。
+删除用户的登录Microsoft Authenticator无电话[登录方法](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)对象。
 
 > [!CAUTION]
-> the Microsoft Authenticator Passwordless 电话 Sign-in method API is deprecated and will stop returning results on December 31， 2020. 请使用新的身份验证[Microsoft Authenticator方法](../resources/microsoftAuthenticatorAuthenticationMethod.md)。
+> The Microsoft Authenticator Passwordless 电话 Sign-in method API is deprecated and will stop returning results on December 31， 2020. 请使用新的身份验证[Microsoft Authenticator方法](../resources/microsoftAuthenticatorAuthenticationMethod.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "61226151"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -40,7 +40,7 @@ ms.locfileid: "61226151"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员在另一用户上操作的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
@@ -98,8 +98,12 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/pas
 [!INCLUDE [sample-code](../includes/snippets/java/delete-passwordlessmicrosoftauthenticatorauthenticationmethod-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-passwordlessmicrosoftauthenticatorauthenticationmethod-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-passwordlessmicrosoftauthenticatorauthenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: c11dbfa9d869186d7cee2a5f9c32d014702d536a
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: fb9e01e2b77052f7955d43cda4bfe8d95f2b5f7c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61285124"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090341"
 ---
 # <a name="update-reviewsetquery"></a>更新 reviewSetQuery
 
@@ -93,8 +93,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-reviewsetquery-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-reviewsetquery-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-reviewsetquery-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

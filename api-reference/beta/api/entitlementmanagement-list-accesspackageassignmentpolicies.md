@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 496984d197af003596557c65392e77286eeff46f
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 2045326842c64382f252e02c1acb32e94c10c742
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651700"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090131"
 ---
 # <a name="list-accesspackageassignmentpolicies"></a>列出 accessPackageAssignmentPolicies
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 、 `$filter` 和 `$expand` OData 查询参数来帮助自定义响应。 例如，若要检索具有指定权限的访问包分配显示名称，请包含 `$filter=displayName eq 'Employee sales support'` 到查询中。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` 、 `$filter` 和 `$expand` OData 查询参数来帮助自定义响应。 例如，若要检索具有指定权限的访问包分配显示名称，请包括在 `$filter=displayName eq 'Employee sales support'` 查询中。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -87,8 +87,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageassignmentpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageassignmentpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-accesspackageassignmentpolicies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

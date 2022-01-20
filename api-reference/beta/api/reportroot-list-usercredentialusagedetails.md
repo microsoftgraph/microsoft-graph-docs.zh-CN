@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 3b2efb78529fe0a066ce17f1306574f5ff5f7691
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d0f9ba8fcb566b2125a91cdab156734d385636d5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011065"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135091"
 ---
 # <a name="list-usercredentialusagedetails"></a>列出 userCredentialUsageDetails
 
@@ -40,11 +40,11 @@ GET /reports/userCredentialUsageDetails
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此函数支持可选的 OData 查询参数 **$filter。** 你可以将 **$filter** [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) 资源的以下一个或多个属性。
+此函数支持可选的 OData 查询参数 **$filter**。 你可以将 **$filter** [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) 资源的以下一个或多个属性。
 
 | 属性 | 说明和示例 |
 |:--------- |:----------- |
-| 功能 | 按要注册的使用情况数据类型 (重置) 。 例如：`/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`。 支持的筛选器运算符： `eq` |
+| 功能 | 按要注册和重置 (使用率数据类型) 。 例如：`/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`。 支持的筛选器运算符： `eq` |
 | userDisplayName | 按用户筛选显示名称。 例如：`/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
 | userPrincipalName  | 按用户主体名称进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`。    支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
 | isSuccess | 按活动状态筛选。 例如：`/reports/userCredentialUsageDetails?$filter=isSuccess eq true`。 支持的筛选器运算符： `eq` 和 `orderby` 。 |
@@ -52,7 +52,7 @@ GET /reports/userCredentialUsageDetails
 | failureReason | 如果活动失败， (失败原因筛选) 。 例如：`/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -100,8 +100,12 @@ GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 [!INCLUDE [sample-code](../includes/snippets/java/get-usercredentialusagedetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-usercredentialusagedetails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-usercredentialusagedetails-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

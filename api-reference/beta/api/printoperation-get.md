@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d669d64b6c30ed45dc5412d00a54dc9478e6e680
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e2584581d8ac2b45f3dafefce3f452d6bc95d225
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021606"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115952"
 ---
 # <a name="get-printoperation"></a>获取 printOperation
 
@@ -45,7 +45,7 @@ GET /print/operations/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码 (printOperation 对象或 `200 OK` **printOperation**) 派生对象。 [](../resources/printOperation.md)
+如果成功，此方法在响应正文中返回 响应代码 (printOperation 对象的派生) `200 OK` **printOperation** 对象。 [](../resources/printOperation.md)
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -75,8 +75,12 @@ GET https://graph.microsoft.com/beta/print/operations/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-printoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printoperation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

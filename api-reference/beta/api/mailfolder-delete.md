@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 47f657d0dc138716b81bac135690cbe8d342ddca
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d0d0c7a02d4af420dfd6c5195d547af7e349b617
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022173"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127440"
 ---
 # <a name="delete-mailfolder"></a>删除 mailFolder
 
@@ -22,7 +22,7 @@ ms.locfileid: "61022173"
 
 您可以按文件夹 ID 或已知文件夹名称（如果存在）指定[](../resources/mailfolder.md)邮件文件夹。
 
->**注意** 您可能无法删除"可恢复的项目删除"文件夹中 (由已知文件夹名称表示 `recoverableitemsdeletions`) 。 有关详细信息 [，请参阅已删除邮件](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) 保留 [和清理](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) 已删除项目。
+>**注意** 您可能无法删除"可恢复的项目删除"文件夹中 (由已知文件夹名称 `recoverableitemsdeletions`) 。 有关详细信息 [，请参阅已删除邮件](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) 保留 [和清理](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) 已删除项目。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -78,8 +78,12 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
 [!INCLUDE [sample-code](../includes/snippets/java/delete-mailfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-mailfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-mailfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

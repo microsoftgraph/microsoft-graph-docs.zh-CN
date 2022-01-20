@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 207f713a61fec8dbe7f5d7c9f05ca490ca09ea9f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ca4616fac979522b6eca1dca9a348c2b2b5f548a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991121"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114441"
 ---
 # <a name="list-appliesto"></a>List appliesTo
 
@@ -97,8 +97,12 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 [!INCLUDE [sample-code](../includes/snippets/java/list-appmanagementpolicyappliesto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-appmanagementpolicyappliesto-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-appmanagementpolicyappliesto-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -133,7 +137,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-specific-properties-of-applications-and-service-principal-objects-applied-to-an-app-management-policy-using-select-query-option"></a>示例 2：使用查询选项获取应用程序和服务主体对象的特定属性$select应用管理策略
+### <a name="example-2-get-specific-properties-of-applications-and-service-principal-objects-applied-to-an-app-management-policy-using-select-query-option"></a>示例 2：使用查询选项获取应用于应用管理策略的应用程序$select对象的特定属性
 
 #### <a name="request"></a>请求
 
@@ -164,8 +168,12 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 [!INCLUDE [sample-code](../includes/snippets/java/list-appmanagementpolicyappliesto-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-appmanagementpolicyappliesto-select-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-appmanagementpolicyappliesto-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

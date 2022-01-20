@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 05b5f155eccfd46b1176abd1e6a3104eec4faacc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: be7d91d4df94a66eeb5b5dae0424f277004c9844
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61017295"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105163"
 ---
 # <a name="list-trustframeworkpolicies"></a>列出 trustFrameworkPolicies
 
@@ -87,8 +87,12 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 [!INCLUDE [sample-code](../includes/snippets/java/get-trustframeworks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-trustframeworks-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-trustframeworks-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

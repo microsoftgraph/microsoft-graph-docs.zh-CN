@@ -1,16 +1,16 @@
 ---
 title: 'outlookUser: supportedLanguages'
 description: 获取用户支持的区域设置和语言列表，用户的邮箱服务器上配置了此信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a39e8e3a9116a7dc54241a22fd1832d9eba3a3be
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f23396bf9c1a55af37c53566c1dff5a209558168
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135133"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123317"
 ---
 # <a name="outlookuser-supportedlanguages"></a>outlookUser: supportedLanguages
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedLanguages
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-supportedlanguages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-supportedlanguages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

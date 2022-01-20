@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d8206ba6eaeaaa17b44b86980d9ceeeeabe3e578
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: aaef6c52e025d1ee49fde994763b5195c21e4d20
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009349"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134992"
 ---
 # <a name="get-userinsightssettings"></a>获取 userInsightsSettings
 
@@ -40,7 +40,7 @@ GET /user/{userId}/settings/itemInsights
 
 >**注意：** 具有 或 的请求仅可供用户或具有 `userId` `userPrincipalName` User.ReadWrite.All 权限的用户访问。 若要了解详细信息，请参阅[权限](/graph/permissions-reference)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:-----------|:----------|
@@ -86,8 +86,12 @@ GET https://graph.microsoft.com/beta/me/settings/itemInsights
 [!INCLUDE [sample-code](../includes/snippets/java/get-userinsightssettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-userinsightssettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-userinsightssettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

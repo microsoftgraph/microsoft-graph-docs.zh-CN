@@ -5,12 +5,12 @@ description: 获取网站、列表或内容类型列。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 6c7516f0d40db61b873c9f8a7a91e8ed46dfa18e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c7f9fa5e0002e786f8444b2bbf9d1dbb38e4f53e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020241"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128916"
 ---
 # <a name="get-columndefinition"></a>获取 columnDefinition
 命名空间：microsoft.graph
@@ -94,8 +94,12 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-column-from-contenttype-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-column-from-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-column-from-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 927a9d2b1a4730b4bc136a58a2e2aeca26344bf1
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: a77aae528bbe86a6c45e6e31205c41b49b66155d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424869"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114206"
 ---
 # <a name="create-checklistitem"></a>创建 checklistItem
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61424869"
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
-|Application|Tasks.ReadWrite|
+|应用程序|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,12 +50,12 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 
 您可以在创建 **checklistItem** 时指定以下属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |checkedDateTime|DateTimeOffset|完成 **checklistItem 的** 日期和时间。|
 |createdDateTime|DateTimeOffset|创建 **checklistItem 的** 日期和时间。|
-|displayName|字符串|指示 **checklistItem 的标题的字段**。|
-|isChecked|Boolean|指示项目是否已签出的状态。|
+|displayName|String|指示 **checklistItem 的标题的字段**。|
+|isChecked|布尔|指示项目是否已签出的状态。|
 
 
 ## <a name="response"></a>响应
@@ -65,6 +65,8 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_checklistitem_from_"
@@ -78,6 +80,28 @@ Content-Type: application/json
     "displayName": "Final sign-off from the team"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-checklistitem-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-checklistitem-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-checklistitem-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-checklistitem-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-checklistitem-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

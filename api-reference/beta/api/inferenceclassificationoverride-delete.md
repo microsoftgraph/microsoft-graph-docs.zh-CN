@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: dd072c9eeeb7f9e0c6fb72be90fac466cb6e51a5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2c0f8966cc730fc48a755f4e63636253f5250a91
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023840"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62120482"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>删除 inferenceClassificationOverride
 
@@ -19,7 +19,7 @@ ms.locfileid: "61023840"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除由 [ID 指定的](../resources/manage-focused-inbox.md) 重点收件箱替代。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -74,8 +74,12 @@ DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f
 [!INCLUDE [sample-code](../includes/snippets/java/delete-inferenceclassificationoverride-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-inferenceclassificationoverride-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-inferenceclassificationoverride-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

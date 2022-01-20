@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 8c23a8d87f9f1500e280e5185cd97a70a41fad12
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 4cbad611c7dbcb3e9784b72c5da3f7482843827f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321846"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130553"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "61321846"
 |[更新 servicePrincipal](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |更新 servicePrincipal 对象。 |
 |[删除 servicePrincipal](../api/serviceprincipal-delete.md) | 无 |删除 servicePrincipal 对象。|
 |[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 createdObject 对象集合。|
-|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 ownedObject 对象集合。|
+|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| 获取 ownedObject 对象集合。|
 |[delta](../api/serviceprincipal-delta.md)|servicePrincipal 集合| 获取服务主体的增量更改。 |
 |**应用角色分配**| | |
 |[列出 appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) 集合| 获取已分配到此服务主体的应用角色。|
@@ -92,7 +92,7 @@ ms.locfileid: "61321846"
 |:---------------|:--------|:----------|
 | accountEnabled |Boolean| 如果已启用服务主体帐户，则为 `true`；否则，为 `false`。 支持 `$filter`（`eq`、`ne`、`not`、`in`）。 |
 | addIns | [addIn](addin.md) 集合 | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers/)。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
-|alternativeNames|字符串集合| 用于按订阅、标识资源组和[托管标识](https://aka.ms/azuremanagedidentity)的完整资源 ID 检索服务主体。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
+|alternativeNames|字符串集合| 用于按订阅、标识资源组和[托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的完整资源 ID 检索服务主体。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 |应用说明|String|相关应用程序公开的说明。|
 |appDisplayName|String|关联应用程序公开的显示名称。|
 |appId|String|关联应用程序的唯一标识符（其 **appId** 属性）。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`、 `startsWith`）。|
@@ -144,8 +144,8 @@ ms.locfileid: "61321846"
 |homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合|为此服务主体分配的 homeRealmDiscoveryPolicies。 支持 `$expand`。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为空。 支持 `$expand`。|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|委派权限授予设置此服务主体以代表已登录用户访问 API 的权限。只读。可为空。|
-|ownedObjects|[directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为空。 支持 `$expand`。|
-|owners|[directoryObject](directoryobject.md) 集合|servicePrincipal 所述的目录对象。 所有者是一组允许修改此对象的非管理员用户或 servicePrincipal。 只读。 可为空。 支持 `$expand`。|
+|ownedObjects|[directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为 NULL。 支持 `$expand`。|
+|owners|[directoryObject](directoryobject.md) 集合|servicePrincipal 所述的目录对象。 所有者是一组允许修改此对象的非管理员用户或 servicePrincipal。 只读。 可为 NULL。 支持 `$expand`。|
 |tokenIssuancePolicies|[tokenIssuancePolicy](tokenissuancepolicy.md) 集合|为此服务主体分配的 tokenIssuancePolicies。 支持 `$expand`。|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenlifetimepolicy.md) 集合|为此服务主体分配的 tokenLifetimePolicies。 支持 `$expand`。|
 
@@ -225,5 +225,3 @@ ms.locfileid: "61321846"
   ]
 }
 -->
-
-

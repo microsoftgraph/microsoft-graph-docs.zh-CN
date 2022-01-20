@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8c38e340c8e687b125fdaf342b28db91b7386ffb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: af98c4a9012645eb961ecc8ffdc98a06287531f3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008034"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62120979"
 ---
 # <a name="list-directory-settings"></a>列出目录设置
 
@@ -43,7 +43,7 @@ GET /groups/{id}/settings
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。|
@@ -84,8 +84,12 @@ GET https://graph.microsoft.com/beta/settings
 [!INCLUDE [sample-code](../includes/snippets/java/get-settings-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-settings-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-settings-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

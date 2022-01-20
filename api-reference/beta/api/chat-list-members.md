@@ -5,12 +5,12 @@ author: bhartono
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 31071020f2be44e64fa976b1ac5c7df51404c6f3
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 03be3f9a267e0cdd0f3bda41e3c26fd283175991
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695617"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100589"
 ---
 # <a name="list-members-of-a-chat"></a>列出聊天成员。
 
@@ -35,10 +35,10 @@ ms.locfileid: "58695617"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChatMember.Read.Chat *、Chat.Manage.Chat*、ChatMember.Read.All、ChatMember.ReadWrite.All、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -113,46 +113,46 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
-    "@odata.count": 3,
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "roles": [
-                "owner"
-            ],
-            "displayName": "John Doe",
-            "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "email": null,
-            "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
-            "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
-        },
-        {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
-            "roles": [
-                "owner"
-            ],
-            "displayName": "Bart Hogan",
-            "userId": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
-            "email": null,
-            "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
-            "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z"
-    },
-        {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-            "roles": [
-                "owner"
-            ],
-            "displayName": "Minna Pham",
-            "userId": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-            "email": null,
-            "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
-            "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
-        }
-    ]
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
+   "@odata.count":3,
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "id":"8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+         "roles":[
+            "owner"
+         ],
+         "displayName":"John Doe",
+         "userId":"8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+         "email":null,
+         "tenantId":"6e5147da-6a35-4275-b3f3-fc069456b6eb",
+         "visibleHistoryStartDateTime":"2019-04-18T23:51:43.255Z"
+      },
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "id":"2de87aaf-844d-4def-9dee-2c317f0be1b3",
+         "roles":[
+            "owner"
+         ],
+         "displayName":"Bart Hogan",
+         "userId":"2de87aaf-844d-4def-9dee-2c317f0be1b3",
+         "email":null,
+         "tenantId":"6e5147da-6a35-4275-b3f3-fc069456b6eb",
+         "visibleHistoryStartDateTime":"0001-01-01T00:00:00Z"
+      },
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "id":"07ad17ad-ada5-4f1f-a650-7a963886a8a7",
+         "roles":[
+            "owner"
+         ],
+         "displayName":"Minna Pham",
+         "userId":"07ad17ad-ada5-4f1f-a650-7a963886a8a7",
+         "email":null,
+         "tenantId":"6e5147da-6a35-4275-b3f3-fc069456b6eb",
+         "visibleHistoryStartDateTime":"2019-04-18T23:51:43.255Z"
+      }
+   ]
 }
 ```
 
@@ -169,5 +169,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

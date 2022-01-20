@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ca74c3334f63d100d62e7f935cdc8b3dbf94c60a
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 97dc5332eba2256525d707113e0bbab6da8a6f1b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604292"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101200"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -61,7 +61,7 @@ GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.device
 ```
 
-此 API 当前支持检索应用程序的对象类型 () 、组 () 用户 () `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` 删除的项目。 OData 转换类型是 URI 的必需部分，不支持在没有类型 `GET /directory/deleteditems` 的情况下 **调用** 。
+此 API 当前支持检索应用程序的对象类型 () 、 () 或用户 `microsoft.graph.application` `microsoft.graph.group` () `microsoft.graph.user` 删除的项目。 OData 转换类型是 URI 的必需部分，不支持在没有类型 `GET /directory/deleteditems` 的情况下 **调用** 。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -76,7 +76,7 @@ ConsistencyLevel: eventual
 
 ### <a name="examples-using-the-orderby-odata-query-parameter"></a>使用 OData $orderBy参数的示例
 
-`$orderBy`在已删除的对象类型的 **deletedDateTime** **、displayName** 和 **userPrincipalName** 属性上支持 OData 查询参数。 在 **deletedDateTime** 属性上，查询需要将 [](/graph/aad-advanced-queries)高级查询参数 (**ConsistencyLevel** 标头设置为 ， `true` 并添加 `$count=true` 查询字符串) 。
+`$orderBy`在已删除的对象类型的 **deletedDateTime** **、displayName** 和 **userPrincipalName** 属性上支持 OData 查询参数。 在 **deletedDateTime** 属性上，查询需要将 [](/graph/aad-advanced-queries)高级查询参数 (**ConsistencyLevel** 标头设置为 ，并 `true` 添加 `$count=true` 查询字符串) 。
 
 | OData 转换 | 支持属性$orderBy | 示例 |
 | :--- | :--- | :--- |
@@ -85,7 +85,7 @@ ConsistencyLevel: eventual
 | microsoft.graph.application | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.application？$orderBy=displayName |
 | microsoft.graph.device | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.device？$orderBy=deletedDateTime&$count=true |
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
@@ -171,8 +171,12 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-deleteditems-count-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-deleteditems-count-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

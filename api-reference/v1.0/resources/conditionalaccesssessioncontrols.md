@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a531eb54d7dcb4221cd788a7f615ff006b75a648
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 234e0cda7f379477d5780fd554098e4931417884
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129941"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104069"
 ---
 # <a name="conditionalaccesssessioncontrols-resource-type"></a>conditionalAccessSessionControls 资源类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "59129941"
 |:-------------|:------------|:------------|
 |applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| 强制执行应用程序限制的会话控制。 只有 Exchange Online 和 Sharepoint Online 支持此会话控制。 |
 |cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| 应用云应用安全性的会话控制。|
+|disableResilienceDefaults|布尔| 会话控制，用于确定Azure AD中断之前收集的信息来扩展现有会话是否可接受。|
 |persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| 用于定义是否保留 Cookie 的会话控件。 应选择所有应用，使此会话控件正常工作。 |
 |signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| 强制执行登录频率的会话控制。|
 
@@ -42,7 +43,8 @@ ms.locfileid: "59129941"
     "applicationEnforcedRestrictions",
     "persistentBrowser",
     "cloudAppSecurity",
-    "signInFrequency"
+    "signInFrequency",
+    "disableResilienceDefaults"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessSessionControls",
   "baseType": null
@@ -53,7 +55,8 @@ ms.locfileid: "59129941"
   "applicationEnforcedRestrictions": {"@odata.type": "microsoft.graph.applicationEnforcedRestrictionsSessionControl"},
   "cloudAppSecurity": {"@odata.type": "microsoft.graph.cloudAppSecuritySessionControl"},
   "persistentBrowser": {"@odata.type": "microsoft.graph.persistentBrowserSessionControl"},
-  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"}
+  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"},
+  "disableResilienceDefaults": false
 }
 ```
 

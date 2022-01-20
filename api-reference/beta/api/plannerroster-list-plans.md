@@ -5,12 +5,12 @@ author: tarkansevilmis
 ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: cec4a6aa471eeee83dc1155ef89aca4c401ebad6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6ee734cedf4710f24f59327f5b2264f6eab8c559
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990070"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62093597"
 ---
 # <a name="list-plans"></a>列出计划
 命名空间：microsoft.graph
@@ -86,8 +86,12 @@ GET https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-196
 [!INCLUDE [sample-code](../includes/snippets/java/list-plannerplan-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-plannerplan-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-plannerplan-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

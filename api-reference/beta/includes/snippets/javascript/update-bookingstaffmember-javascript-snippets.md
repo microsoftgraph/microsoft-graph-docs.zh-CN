@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f7365a8d962ccccbc0ea020a596251fd223d47bb2d6de69509faefc9d0763ead
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e4d7a442693798e553eb4d9d1dcd0c85851dc57f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57105824"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62124091"
 ---
 ```javascript
 
@@ -81,7 +81,7 @@ const bookingStaffMember = {
     ]
 };
 
-await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148')
+await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148')
     .version('beta')
     .update(bookingStaffMember);
 

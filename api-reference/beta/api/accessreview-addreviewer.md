@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6772fb415184ab7d7d9fb234c237f0fbaf8b3805
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e710927e5f67d45ceeb60692a05fb449c482e48d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988174"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62091092"
 ---
 # <a name="add-accessreview-reviewer"></a>添加 accessReview 审阅者
 
@@ -55,7 +55,7 @@ POST /accessReviews/{reviewId}/reviewers
 
 ## <a name="example"></a>示例
 
-这是一个更新一次检查， (审阅) 审阅重复的示例。
+这是一个更新一次检查， (审阅者) 访问评审的示例。
 
 ##### <a name="request"></a>请求
 在请求正文中，提供用户对象的 ID 的 JSON 表示形式。
@@ -90,8 +90,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/add-accessreview-reviewer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-accessreview-reviewer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-accessreview-reviewer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

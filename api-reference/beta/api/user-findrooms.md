@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ea94eb6bb0928532b8b32866299ac1fd449e9e8d
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: c0ee0f4498e57ffd527e5b10518289f69eed310e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695355"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115232"
 ---
 # <a name="user-findrooms"></a>用户：findRooms
 
@@ -101,6 +101,10 @@ GET https://graph.microsoft.com/beta/me/findRooms
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-rooms-in-tenant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-rooms-in-tenant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

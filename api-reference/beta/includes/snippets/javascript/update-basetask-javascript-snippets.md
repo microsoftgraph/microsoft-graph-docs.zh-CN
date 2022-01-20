@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 424a538cb3e8fef3d6e888bc5c904c16061c02c7
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 1c56dfa8af7f04458feb68359aa32f451c6e82af
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525393"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106965"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const aAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT = {
+const baseTask = {
   '@odata.type': '#microsoft.graph.baseTask',
   body: {
     '@odata.type': 'microsoft.graph.itemBody'
@@ -41,6 +41,6 @@ const aAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT = {
 
 await client.api('/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT')
     .version('beta')
-    .update(aAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT);
+    .update(baseTask);
 
 ```

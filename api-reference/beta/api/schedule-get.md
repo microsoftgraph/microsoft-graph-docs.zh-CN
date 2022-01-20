@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bcc69f88803f6189948549a4bed38fd7ea253321
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 157b8b5dd451d81dad412e275236ed5081329900
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026387"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105457"
 ---
 # <a name="get-schedule"></a>获取日程安排
 
@@ -20,7 +20,7 @@ ms.locfileid: "61026387"
 
 检索 schedule 对象的属性 [和](../resources/schedule.md) 关系。
 
-计划创建过程符合针对基于资源的长时间运行的操作的 One API 准则 ([RELO) 。 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)
+计划创建过程符合针对 RELO 中基于资源的长时间运行操作 ([一 API) 。 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)
 当客户端使用 [PUT 方法时](team-put-schedule.md)，如果已设置计划，则操作将更新计划;否则，操作将在后台启动计划预配过程。
 
 在计划预配期间，客户端可以使用 GET 方法获取计划并查看 属性，了解 `provisionStatus` 预配的当前状态。 如果设置失败，客户端可以从 属性获取其他 `provisionStatusCode` 信息。
@@ -49,7 +49,7 @@ GET /teams/{teamId}/schedule
 
 此方法不支持使用 OData 查询参数自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -93,8 +93,12 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-get-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-get-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

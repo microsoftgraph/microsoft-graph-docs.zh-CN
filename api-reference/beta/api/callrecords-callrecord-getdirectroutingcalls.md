@@ -5,12 +5,12 @@ author: williamlooney
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f6238d17a0ea8c507c04de2a2a576c1bb3ac4689
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c915855f034dcce6e36bf9cf133f69ba571adb8f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008174"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131611"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>callRecord： getDirectRoutingCalls
 
@@ -52,7 +52,7 @@ GET /communications/callRecords/getDirectRoutingCalls
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|要查询的起始时间范围。 UTC（包含两者）。<br/>时间范围基于呼叫开始时间。|
 |toDateTime|DateTimeOffset|要查询的结束时间范围。 UTC（包含两者）。|
@@ -96,8 +96,12 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRouting
 [!INCLUDE [sample-code](../includes/snippets/java/callrecord-getdirectroutingcalls-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/callrecord-getdirectroutingcalls-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/callrecord-getdirectroutingcalls-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

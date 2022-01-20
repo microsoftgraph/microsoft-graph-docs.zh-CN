@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9698311046113818a693584db37b372296caef2e
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: df2de65747bca99a38cdb7bd283093965ecd28d1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61835863"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134127"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>在频道中发送对消息的答复
 
@@ -20,7 +20,7 @@ ms.locfileid: "61835863"
 
 将新回复发送到指定频道中的[chatMessage。](../resources/chatmessage.md) [](../resources/channel.md)
 
-> **注意**：使用安全工具 [作为](/legal/microsoft-apis/terms-of-use)Microsoft Teams违反日志文件。 仅发送用户将阅读的邮件。
+> **注意**：使用 Microsoft Teams 是违反 [](/legal/microsoft-apis/terms-of-use)使用条款日志文件。 仅发送用户将阅读的邮件。
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessagereply-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessagereply-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

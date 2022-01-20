@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9723727f7405f389fb87f2ffff033a0b20d8f6d4
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 1001553b040df0451f5f89c64226bb08e2f94bba
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226062"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115686"
 ---
 # <a name="get-teamworkbot"></a>获取 teamworkBot
 
@@ -20,14 +20,14 @@ ms.locfileid: "61226062"
 
 获取与[TeamsApp](../resources/teamsapp.md)[的特定定义](../resources/teamsappdefinition.md)相关联的机器人。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| AppCatalog.Read.All、AppCatalog.ReadWrite.All、AppCatalog.Submit |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|Application| AppCatalog.Read.All、AppCatalog.ReadWrite.All |
+|应用程序| AppCatalog.Read.All、AppCatalog.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -83,8 +83,12 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/e4c5c249-bb4b-419e-b7
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamworkbot-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-teamworkbot-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-teamworkbot-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

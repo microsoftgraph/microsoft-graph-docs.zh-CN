@@ -5,12 +5,12 @@ author: anthona
 ms.localizationpriority: high
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 9910a5fe6853f9baf9bd7005fb1b242e68f652aa
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 1dcc0d7769055d43024e107ab4befd17411c4568
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322168"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62091351"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -99,8 +99,12 @@ GET https://graph.microsoft.com/v1.0/me/people
 [!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-person-collection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-person-collection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

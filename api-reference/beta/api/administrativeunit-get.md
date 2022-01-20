@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1eec0c6fa3d1ec13aeafdb2d723d95371cad26a7
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: a1b7fbdf0c9febab3091db56866f9f7525ff2e9d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072164"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62097420"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 
@@ -22,7 +22,7 @@ ms.locfileid: "62072164"
 
 由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)，因此您还可以使用 操作获取 administrativeUnit 实例中的自定义属性 `GET` 和 **扩展** 数据。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-administrativeunit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-administrativeunit-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

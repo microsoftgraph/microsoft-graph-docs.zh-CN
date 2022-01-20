@@ -5,12 +5,12 @@ author: vrod9429
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9a6e339bcc92a225bd376db62621038b11c1f859
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 8c20027a6a76c1ca1bd3f2e5d9fdad185522d331
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695362"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105065"
 ---
 # <a name="user-findroomlists"></a>用户：findRoomLists
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-room-lists-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-room-lists-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: williamlooney
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3f88dff79af73087b26fe75b2c8b249d9066a0c6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b6ad8e67faa3ed3d302f618bb6d30a780d9fbfdf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021159"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131598"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord： getPstnCalls
 
@@ -46,7 +46,7 @@ GET /communications/callRecords/getPstnCalls
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|要查询的起始时间范围。 UTC（包含两者）。<br/>时间范围基于呼叫开始时间。|
 |toDateTime|DateTimeOffset|要查询的结束时间范围。 UTC（包含两者）。|
@@ -54,7 +54,7 @@ GET /communications/callRecords/getPstnCalls
 > [!IMPORTANT]
 > **fromDateTime** 和 **toDateTime** 值不能超过 90 天的日期范围。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 |名称|说明|
 |:---|:---|
@@ -99,8 +99,12 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 [!INCLUDE [sample-code](../includes/snippets/java/callrecord-getpstncalls-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/callrecord-getpstncalls-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/callrecord-getpstncalls-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -153,5 +157,5 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>另请参阅
 
-* [Microsoft Teams PSTN 用法报告](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)。
+* [Microsoft Teams PSTN 使用情况报告](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)。
 * [Microsoft Graph 中的直接路由报告](callrecords-callrecord-getdirectroutingcalls.md)。

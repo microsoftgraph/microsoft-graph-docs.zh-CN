@@ -5,12 +5,12 @@ description: 列出网站中的列。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: a1ef129c44a2094468e4ba30f775cfd7abccb3cb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ab7065c8c9bec7cec1cbd9917ee8634fc0a64d39
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026177"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105400"
 ---
 # <a name="list-columns-in-a-site"></a>列出网站中的列
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "61026177"
 
   
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
   
 
@@ -93,8 +93,12 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/columns
 [!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-columns-from-site-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-columns-from-site-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

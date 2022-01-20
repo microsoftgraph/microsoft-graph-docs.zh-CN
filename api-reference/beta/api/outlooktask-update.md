@@ -5,12 +5,12 @@ author: mashriv
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 44f74ee7c9c46a352c49f9ca79cbe1684013ed41
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ef0a4bcc69a816d175d7ac9b590c1d5e12cff6e6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011569"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123352"
 ---
 # <a name="update-outlooktask-deprecated"></a>更新 outlooktask (已弃) 
 
@@ -57,7 +57,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:---------------|:--------|:----------|
 |body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
 |类别|String 集合|与任务关联的类别。|
@@ -86,7 +86,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ### <a name="request"></a>请求
 
-下面的示例修改 **dueDateTime** 属性，并使用 标头指定以东部标准时间 (EST) 中响应中表示与日期 `Prefer: outlook.timezone` 相关的属性。
+下面的示例修改 **dueDateTime** 属性，并使用 标头指定在东部标准时间 (EST 响应中表示与日期相关的 `Prefer: outlook.timezone`) 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -122,8 +122,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-outlooktask-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-outlooktask-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-outlooktask-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 863a0f1fc715e57e8603d238bbf1275577ffa17b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c7d2113dc2a41f00d8ae94c269b5948b40fb6446
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029455"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134664"
 ---
 # <a name="notebook-getrecentnotebooks"></a>笔记本：getRecentNotebooks
 
@@ -18,7 +18,7 @@ ms.locfileid: "61029455"
 
 获取登录用户访问的 [recentNotebook](../resources/recentnotebook.md) 实例列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -39,7 +39,7 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 
 ## <a name="function-parameters"></a>函数参数
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |includePersonalNotebooks|Boolean|添加用户拥有的笔记本。 若要添加用户拥有的笔记本，请设置为 `true`；否则，设置为 `false`。 如果不添加 `includePersonalNotebooks` 参数，请求会返回 `400` 错误响应。|
 
@@ -81,8 +81,12 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(inc
 [!INCLUDE [sample-code](../includes/snippets/java/recent-notebooks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/recent-notebooks-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/recent-notebooks-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

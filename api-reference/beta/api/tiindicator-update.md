@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 0cec69b3c56702ad99779dc7941da2b6b59bbf4c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d3e4c65971ad240e5b8ede46a7562f102a4c8ece
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989464"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115553"
 ---
 # <a name="update-tiindicator"></a>更新 tiIndicator
 
@@ -51,22 +51,22 @@ PATCH /security/tiIndicators/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|action|string| 当 targetProduct 安全工具中的指示器匹配时要应用的操作。 可能的值是：`unknown`、`allow`、`block`、`alert`。|
-|activityGroupNames|String collection|网络威胁情报 () 威胁指示器涵盖的恶意活动的各方提供相关名称。|
+|action|string| 当 targetProduct 安全工具中的指示器匹配时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。|
+|activityGroupNames|String 集合|网络威胁 (名称) 威胁指示器涵盖的恶意活动的各方提供。|
 |additionalInformation|String|可以放置其他 tiIndicator 属性未覆盖的指示器的额外数据到的捕获区域。 放置在 additionalInformation 的数据通常不会由 targetProduct 安全工具使用。|
 |confidence|Int32|表示指示器内数据准确识别恶意行为的置信度整数。 可接受的值为 0 – 100，100 为最高值。|
-|说明|String|简要说明 (表示的威胁) 少于 100 个字符。|
+|说明|String|简要 (表示的威胁) 少于 100 个字符。|
 |diamondModel|[diamondModel](../resources/tiindicator.md#diamondmodel-values)|存在此指示器的菱形模型区域。 可取值为：`unknown`、`adversary`、`capability`、`infrastructure`、`victim`。|
 |expirationDateTime|DateTimeOffset| 指示指示器何时过期的 DateTime 字符串。 所有指示器都必须具有过期日期，以避免在系统中保留过时的指示器。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|externalId|String|将指示器与指示器提供程序的系统连接在一起 (标识号，例如外键) 。|
+|externalId|String|将指示器与指示器提供程序的系统系统连接在一起 (标识号，例如外键) 。|
 |isActive|布尔|用于在系统内停用指示器。 默认情况下，提交的任何指示器都设置为活动。 但是，提供商可能会提交现有指示器（此设置为"False"）来停用系统指示器。|
 |killChain|[killChain](../resources/tiindicator.md#killchain-values) 集合|一个字符串的 JSON 数组，描述此指示器指向击杀链上的哪个点。 有关确切值，请参阅下面的"killChain 值"。|
 |knownFalsePositives|String|指示符可能导致误报的方案。 这应该是可读文本。|
 |lastReportedDateTime|DateTimeOffset|上一次看到指示器的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|malwareFamilyNames|String collection|与指示器关联的恶意软件系列名称（如果存在）。 如果可以通过安全智能威胁情报中心找到，Microsoft 将尽可能Windows Defender系列[名称](https://www.microsoft.com/wdsi/threats)。|
+|malwareFamilyNames|String 集合|与指示器关联的恶意软件系列名称（如果存在）。 如果可以通过安全智能威胁中心找到，Microsoft 将尽可能Windows Defender Microsoft 恶意软件系列[名称](https://www.microsoft.com/wdsi/threats)。|
 |passiveOnly|布尔|确定指示器是否应触发对最终用户可见的事件。 设置为"true"时，安全工具不会通知最终用户"点击"已发生。 这通常被安全产品视为审核或静默模式，在此模式下，安全产品只会记录发生匹配但不执行该操作。 默认值为 false。|
 |severity|Int32|表示由指示器内的数据标识的恶意行为严重性的整数。 可接受的值为 0 – 5，其中 5 表示最严重，0 表示不严重。 默认值为 3。|
-|tags|String collection|存储任意标记/关键字的字符串的 JSON 数组。|
+|标记|字符串集合|存储任意标记/关键字的字符串的 JSON 数组。|
 |tlpLevel|[tlpLevel](../resources/tiindicator.md#tlplevel-values)| 指示器的流量灯协议值。 可取值为：`unknown`、`white`、`green`、`amber`、`red`。|
 
 
@@ -114,8 +114,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-tiindicator-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tiindicator-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-tiindicator-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -173,8 +177,12 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/java/update-tiindicator-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tiindicator-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-tiindicator-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

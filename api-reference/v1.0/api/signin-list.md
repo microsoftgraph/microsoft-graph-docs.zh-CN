@@ -1,22 +1,22 @@
 ---
 title: 列出 signIn
-description: 介绍 Microsoft Graph API 中的 signIn (实体) 列表方法。
+description: 介绍 Microsoft (API) signIn 资源Graph方法。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d45b252a5937aeadd8a3d1c7b269e0e4f361e283
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 615566490fb902724142a96d4ca0fc7c3622e4e9
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61848131"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128470"
 ---
 # <a name="list-signins"></a>列出 signIn
 
 命名空间：microsoft.graph
 
-检索租户的 Azure AD 用户登录信息。 本质上是交互式登录 (其中用户名/密码作为身份验证令牌) 的一部分传递，并且成功的联合登录当前包含在登录日志中。 
+检索租户的 Azure AD 用户登录信息。 本质上是交互式登录 (其中用户名/密码作为身份验证令牌) 且成功的联合登录当前包含在登录日志中。 
 
 最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有默认保留期Azure Active Directory (Azure AD) [登录事件](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)可用。
 
@@ -41,7 +41,7 @@ ms.locfileid: "61848131"
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全信息读取者
++ 安全读取者
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-signins-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-signins-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,12 +186,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>示例 2：检索 appDisplayName 以"Graph"开头的应用的前 10 个登录
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>示例 2：检索 appDisplayName 以"Graph"开头的应用的前 10 Graph
 
 #### <a name="request"></a>请求
 
 下面是一个请求示例。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_signins_2"
@@ -195,6 +201,32 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDisplayName,'Graph')&top=10
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-signins-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-signins-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-signins-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-signins-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-signins-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-signins-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

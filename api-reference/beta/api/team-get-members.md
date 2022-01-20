@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1396cc5ab507548b5a6d18de3d8be24118668ca5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7501ee371d8d721c8c7834e60b1a426abf7fd25f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026051"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105267"
 ---
 # <a name="get-member-of-team"></a>获取团队成员
 
@@ -30,7 +30,7 @@ ms.locfileid: "61026051"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored"} -->
@@ -86,8 +86,12 @@ GET https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/
 [!INCLUDE [sample-code](../includes/snippets/java/team-get-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/team-get-member-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-get-member-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -136,4 +140,3 @@ Content-type: application/json
 ## <a name="see-also"></a>另请参阅
 
 - [获取频道成员](channel-get-members.md)
-

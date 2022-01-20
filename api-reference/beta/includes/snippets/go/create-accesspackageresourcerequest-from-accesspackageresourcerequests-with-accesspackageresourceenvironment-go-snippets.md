@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0a7aa1467b162e455f4ca9e00bcc63d777e7795f
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 834b42f7bba138fee5a0401590f0350b4b8b60fc
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098547"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62119058"
 ---
 ```go
 
@@ -17,12 +17,17 @@ catalogId := "de9315c1-272b-4905-924b-cc112ca180c7"
 requestBody.SetCatalogId(&catalogId)
 accessPackageResource := msgraphsdk.NewAccessPackageResource()
 requestBody.SetAccessPackageResource(accessPackageResource)
+displayName := "Community Outreach"
+accessPackageResource.SetDisplayName(&displayName)
+description := "https://contoso.sharepoint.com/sites/CSR"
+accessPackageResource.SetDescription(&description)
+resourceType := "SharePoint Online Site"
+accessPackageResource.SetResourceType(&resourceType)
+originId := "https://contoso.sharepoint.com/sites/CSR"
+accessPackageResource.SetOriginId(&originId)
+originSystem := "SharePointOnline"
+accessPackageResource.SetOriginSystem(&originSystem)
 accessPackageResource.SetAdditionalData(map[string]interface{}{
-    "displayName": "Community Outreach",
-    "description": "https://contoso.sharepoint.com/sites/CSR",
-    "resourceType": "SharePoint Online Site",
-    "originId": "https://contoso.sharepoint.com/sites/CSR",
-    "originSystem": "SharePointOnline",
     "accessPackageResourceEnvironment@odata.bind": "accessPackageResourceEnvironments/615f2218-678f-471f-a60a-02c2f4f80c57",
 }
 requestType := "AdminAdd"
