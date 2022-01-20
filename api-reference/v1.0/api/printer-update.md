@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 4d71ae03fba16d2e48314121a3741b80a135dd6e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8f52b320187aade2db0d91fb5c82b2e9a5d42ce4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983959"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62091973"
 ---
 # <a name="update-printer"></a>更新打印机
 命名空间：microsoft.graph
@@ -74,14 +74,14 @@ PATCH /print/printers/{printerId}
 |displayName|String|打印机的名称。|
 |manufacturer|String|打印机的制造商。|
 |model|String|打印机的模型名称。|
-|status|[printerStatus](../resources/printerstatus.md)|打印机的处理状态，包括任何错误。|
+|状态|[printerStatus](../resources/printerstatus.md)|打印机的处理状态，包括任何错误。|
 |isAcceptingJobs|布尔|打印机当前是否接受新的打印作业。|
 
 ### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
 
-使用应用程序权限，还可使用 IPP 负载中的 Internet 打印 (更新) 打印机。 在这种情况下，请求正文包含表示 IPP 编码中的 Printer Attributes 组的二 [进制流](https://tools.ietf.org/html/rfc8010)。
+使用应用程序权限，还可使用 Internet 打印协议和 IPP (更新) 负载。 在这种情况下，请求正文包含表示 IPP 编码中的 Printer Attributes 组的二 [进制流](https://tools.ietf.org/html/rfc8010)。
 
-客户端必须为一组 Printer 属性提供一个或多个值 (包括 [RFC8011 第 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) 节中定义的显式允许的带外值) 作业模板属性 ("xxx-default"、"xxx-supported"和"xxx-ready"属性) 、 [第 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) 节打印机说明属性以及打印机支持的任何属性扩展。 提供的 (每个 Printer) 的值将 (Printer) 的对应 Printer 属性的值。 对于可以在 1setOf (多个值) ，客户端提供的所有值将替换相应的 Printer 对象属性的所有值。
+客户端必须为一组 Printer 属性提供一个或多个值 (包括 [RFC8011 第 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) 节中定义的显式允许的带外值) 作业模板属性 ("xxx-default"、"xxx-supported"和"xxx-ready"属性) 、 [第 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) 节打印机说明属性以及打印机支持的任何属性扩展。 提供的 (每个 Printer) 的值将 (Printer) 的对应 Printer 属性的值。 对于在 1setOf (可以有多个值) ，客户端提供的所有值将替换相应的 Printer 对象属性的所有值。
 
 > **注意：** 不要传递请求正文中的操作属性。 请求正文应仅包含打印机属性。
 
@@ -133,8 +133,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-printer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-printer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

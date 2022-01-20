@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 17cf219533bb1e27777f8385f5f6536c690e92ec
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 2f0f8a20ea4b78bfab332082bca780a61ed0d4bf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223939"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62103916"
 ---
 # <a name="update-allowedvalue"></a>更新 allowedValue
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "61223939"
 
 更新 [allowedValue 对象](../resources/allowedvalue.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|CustomSecAttributeDefinition.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|CustomSecAttributeDefinition.ReadWrite.All|
+|应用程序|CustomSecAttributeDefinition.ReadWrite.All|
 
 还必须为登录用户分配属性定义管理员 [目录角色](/azure/active-directory/roles/permissions-reference)。 默认情况下，全局管理员和其他管理员角色没有读取、定义或分配自定义安全属性的权限。
 
@@ -54,7 +54,7 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|isActive|Boolean|指示预定义值是处于活动状态还是已停用。 如果设置为 `false` ，则此预定义值不能分配给任何其他受支持的目录对象。 可选。|
+|isActive|布尔|指示预定义值是处于活动状态还是已停用。 如果设置为 `false` ，则此预定义值不能分配给任何其他受支持的目录对象。 可选。|
 
 
 
@@ -105,8 +105,12 @@ Content-length: 80
 [!INCLUDE [sample-code](../includes/snippets/java/update-allowedvalue-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-allowedvalue-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-allowedvalue-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

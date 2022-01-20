@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: a5dbc332308233ed6dcc97ed33eaceb4bee548c8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8c03dd3ac57568751837e0607b4a3d62998579e4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027213"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62124513"
 ---
 # <a name="list-shares"></a>列出共享项
 命名空间：microsoft.graph
@@ -43,10 +43,10 @@ GET /print/shares
 
 若要查看每个打印机共享功能的列表，请包含可选的 `$select=capabilities` 查询参数。
 
-### <a name="exceptions"></a>例外
+### <a name="exceptions"></a>Exceptions
 不支持某些运算符 `$count` `$orderby` ：、、。 `$search`
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -89,8 +89,12 @@ GET https://graph.microsoft.com/v1.0/print/shares
 [!INCLUDE [sample-code](../includes/snippets/java/list-printershare-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-printershare-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-printershare-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

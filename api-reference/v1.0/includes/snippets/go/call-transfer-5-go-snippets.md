@@ -1,19 +1,49 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9efc4569cad3ba8b4ff8fd6606566bf3995e0d3c
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 6d1d9721edd32deacc9f5a4375b883006b4b5d64
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61289014"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137735"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+requestBody := msgraphsdk.New()
+transferTarget := msgraphsdk.NewInvitationParticipantInfo()
+requestBody.SetTransferTarget(transferTarget)
+identity := msgraphsdk.NewIdentitySet()
+transferTarget.SetIdentity(identity)
+user := msgraphsdk.NewIdentity()
+identity.SetUser(user)
+id := "550fae72-d251-43ec-868c-373732c2704f"
+user.SetId(&id)
+displayName := "Heidi Steen"
+user.SetDisplayName(&displayName)
+transferTarget.SetAdditionalData(map[string]interface{}{
+    "endpointType": "default",
+}
+transferee := msgraphsdk.NewParticipantInfo()
+requestBody.SetTransferee(transferee)
+identity := msgraphsdk.NewIdentitySet()
+transferee.SetIdentity(identity)
+user := msgraphsdk.NewIdentity()
+identity.SetUser(user)
+id := "751f6800-3180-414d-bd94-333364659951"
+user.SetId(&id)
+user.SetAdditionalData(map[string]interface{}{
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+}
+participantId := "909c6581-5130-43e9-88f3-fcb3582cde37"
+transferee.SetParticipantId(&participantId)
+options := &msgraphsdk.TransferRequestBuilderPostOptions{
+    Body: requestBody,
+}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Transfer().Post(nil)
+graphClient.Communications().CallsById(&callId).Transfer().Post(options)
 
 
 ```

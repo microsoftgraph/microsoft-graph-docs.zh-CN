@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: ce449178da32f31a3d9ffc644eff7d78171559b0
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: d0fb681c1f1d1e6eb1b4eff9eaf293e6c142e8b9
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223689"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114307"
 ---
 # <a name="list-simulations"></a>列出模拟
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "61223689"
 
 列出租户的攻击模拟。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | SecurityEvents.Read.All                     |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| Application                            | SecurityEvents.Read.All                     |
+| 应用程序                            | SecurityEvents.Read.All                     |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -103,8 +103,12 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 [!INCLUDE [sample-code](../includes/snippets/java/list-simulation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

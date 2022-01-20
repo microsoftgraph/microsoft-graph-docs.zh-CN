@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 24a642ecda1f2bd4e4bb9ca935ff44c6a373ffbba4971026ac4ea071709b6334
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe4eae957f2b2a687ef3a888dda232f62ef244bf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57279501"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137683"
 ---
 ```objc
 
@@ -20,6 +20,11 @@ MSGraphManagedTenantsTenantCustomizedInformation *tenantCustomizedInformation = 
 [tenantCustomizedInformation setTenantId:@"String"];
 NSMutableArray *contactsList = [[NSMutableArray alloc] init];
 MSGraphManagedTenantsTenantContactInformation *contacts = [[MSGraphManagedTenantsTenantContactInformation alloc] init];
+[contacts setName:@"String"];
+[contacts setTitle:@"String"];
+[contacts setEmail:@"String"];
+[contacts setPhone:@"String"];
+[contacts setNotes:@"String"];
 [contactsList addObject: contacts];
 [tenantCustomizedInformation setContacts:contactsList];
 [tenantCustomizedInformation setWebsite:@"String"];

@@ -1,16 +1,16 @@
 ---
 title: trustFrameworkKeySet： getActiveKey
-description: 获取键集中的活动键。
-localization_priority: Normal
+description: 获取键集内的活动键。
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: befdd0ba66a7650774a73b5e2b4e3e09c5859bd2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 35caa8ff57ae6f5fdafa12b3c4aa84b60f2b737e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051744"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136903"
 ---
 # <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet： getActiveKey
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-getactivekey-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-getactivekey-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

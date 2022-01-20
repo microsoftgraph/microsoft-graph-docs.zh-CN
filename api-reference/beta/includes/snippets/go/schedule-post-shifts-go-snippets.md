@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5934642a79739926ac3787c5b2e126d50572c299
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 6ddccb9fbb5ae1482d429300df1c840fc50ba4df
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61100687"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62125501"
 ---
 ```go
 
@@ -21,24 +21,46 @@ schedulingGroupId := "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
 requestBody.SetSchedulingGroupId(&schedulingGroupId)
 sharedShift := msgraphsdk.NewShiftItem()
 requestBody.SetSharedShift(sharedShift)
-sharedShift.SetAdditionalData(map[string]interface{}{
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities":  []Object {
+displayName := "Day shift"
+sharedShift.SetDisplayName(&displayName)
+notes := "Please do inventory as part of your shift."
+sharedShift.SetNotes(&notes)
+startDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
+sharedShift.SetStartDateTime(&startDateTime)
+endDateTime, err := time.Parse(time.RFC3339, "2019-03-12T00:00:00Z")
+sharedShift.SetEndDateTime(&endDateTime)
+theme := "blue"
+sharedShift.SetTheme(&theme)
+sharedShift.SetActivities( []ShiftActivity {
+    msgraphsdk.NewShiftActivity(),
+    SetAdditionalData(map[string]interface{}{
+        "isPaid": true,
+        "startDateTime": "2019-03-11T15:00:00Z",
+        "endDateTime": "2019-03-11T15:15:00Z",
+        "code": "",
+        "displayName": "Lunch",
     }
 }
 draftShift := msgraphsdk.NewShiftItem()
 requestBody.SetDraftShift(draftShift)
-draftShift.SetAdditionalData(map[string]interface{}{
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities":  []Object {
+displayName := "Day shift"
+draftShift.SetDisplayName(&displayName)
+notes := "Please do inventory as part of your shift."
+draftShift.SetNotes(&notes)
+startDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
+draftShift.SetStartDateTime(&startDateTime)
+endDateTime, err := time.Parse(time.RFC3339, "2019-03-12T00:00:00Z")
+draftShift.SetEndDateTime(&endDateTime)
+theme := "blue"
+draftShift.SetTheme(&theme)
+draftShift.SetActivities( []ShiftActivity {
+    msgraphsdk.NewShiftActivity(),
+    SetAdditionalData(map[string]interface{}{
+        "isPaid": true,
+        "startDateTime": "2019-03-11T15:00:00Z",
+        "endDateTime": "2019-03-11T15:30:00Z",
+        "code": "",
+        "displayName": "Lunch",
     }
 }
 options := &msgraphsdk.ShiftsRequestBuilderPostOptions{

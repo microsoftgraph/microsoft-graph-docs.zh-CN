@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: df5262b93eaabc95d45a8191a177c7967dac488c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f313a450c1281476265d51e47c1a2b9be626366c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011193"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62118621"
 ---
 # <a name="update-place"></a>更新位置
 
@@ -64,7 +64,7 @@ PATCH /places/{id | emailAddress}
 | 标签                  | String                                            | 指定会议室的描述性标签，例如数字或名称。 |
 | nickname               | String                                            | 为会议室指定昵称，例如"conf room"。 |
 | phone                  | String                                            | 会议室或会议室列表的电话号码。 |
-| tags                   | String collection                                 | 指定会议室的其他功能，例如，视图类型或装饰类型等详细信息。 |
+| 标记                   | 字符串集合                                 | 指定会议室的其他功能，例如，视图类型或装饰类型等详细信息。 |
 | videoDeviceName        | String                                            | 指定会议室中的视频设备的名称。 |
 
 ## <a name="response"></a>响应
@@ -115,8 +115,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-room-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-room-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-room-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -228,8 +232,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-roomlist-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-roomlist-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

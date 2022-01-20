@@ -1,25 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 75786869bb40a92b91517321d452baf270239aee
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 7f4350cc82406d5358a27a1587e69662abc94335
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084372"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137697"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UserRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
     Select: "displayName,jobTitle,mobilePhone",
 }
-options := &msgraphsdk.UserRequestBuilderGetOptions{
+options := &msgraphsdk.DeltaRequestBuilderGetOptions{
     Q: requestParameters,
 }
-userId := "user-id"
-result, err := graphClient.UsersById(&userId).Get(options)
+result, err := graphClient.Users().Delta()().Get(options)
 
 
 ```

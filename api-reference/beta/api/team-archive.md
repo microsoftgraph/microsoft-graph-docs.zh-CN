@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 99d1dda8a367b3f356a77a619ef6f73d8fb45ff8
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 2f06ea5d16e67aaecf6d43717875c01427eccc5b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604411"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105280"
 ---
 # <a name="archive-team"></a>存档团队
 
@@ -22,7 +22,7 @@ ms.locfileid: "61604411"
 
 存档是异步操作。该异步操作成功完成后，团队即已存档，此 API 作出响应后就可能出现此情况。
 
-若要存档团队，团队和 [组必须具有](../resources/group.md) 所有者。
+要存档团队，团队和 [组](../resources/group.md) 必须具有一个所有者。
 
 要从存档状态还原团队，请使用 API [取消存档](team-unarchive.md)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "61604411"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamSettings.ReadWrite.Group *、TeamSettings.ReadWrite.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。 标记为 **的权限已弃用，不应使用。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -90,7 +90,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/archive
 [!INCLUDE [sample-code](../includes/snippets/java/archive-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/archive-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -120,5 +120,3 @@ Content-Length: 0
   "suppressions": []
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 71dadfa45b09ec40e3ffa43720e2e7e42a55f770
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eb8f9fdb1c07ed95da0f49149d590b403d211748
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011680"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105833"
 ---
 # <a name="update-mobileappmanagementpolicy"></a>更新 mobileAppManagementPolicy
 
@@ -54,7 +54,7 @@ PATCH /policies/mobileAppManagementPolicies/{id}
 
 在请求正文中，提供下面列出的应更新的字段的值。 **注意：** 不能将 `PATCH` 操作用于 `appliesTo` 其他属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |appliesTo|policyScope|确定此策略设置应用于的组。 可能的值是 `none` `all` `selected` **：、、重要：** `selected` 指定此属性时不能使用。 使用 [includedGroups](../api/mobileappmanagementpolicies-post-includedgroups.md) 添加特定组。|
 |complianceUrl|String|移动管理应用程序的合规性 URL|
@@ -104,8 +104,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-mobilitymanagementpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-mobilitymanagementpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-mobilitymanagementpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

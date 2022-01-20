@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0e8b357c8abd056549db61c8d37a828248ea15d5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bd70655531e5799e28328cf67bca046bce5e4a6d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033186"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132466"
 ---
 # <a name="delete-message"></a>删除邮件
 
@@ -18,9 +18,9 @@ ms.locfileid: "61033186"
 
 删除指定用户邮箱中的邮件，或删除邮件的关系。
 
->**注意** 您可能无法删除"可恢复的项目删除"文件夹中 (由已知文件夹名称 [](../resources/mailfolder.md) `recoverableitemsdeletions`) 。 有关详细信息 [，请参阅已删除邮件](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) 保留 [和清理](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) 已删除项目。
+>**注意** 您可能无法删除"可恢复的项目删除"文件夹中 (由已知文件夹名称文件表示 [](../resources/mailfolder.md) `recoverableitemsdeletions`) 。 有关详细信息 [，请参阅已删除邮件](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) 保留 [和清理](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) 已删除项目。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -77,8 +77,12 @@ DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-message-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-message-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

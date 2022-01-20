@@ -1,19 +1,27 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 14b2bb70930226b8661ae8d7e170acf98024f329
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 332266bee4db5f819188793f2a65b7c50c1d5955
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61287988"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137708"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+requestBody := msgraphsdk.New()
+requestBody.SetAdditionalData(map[string]interface{}{
+    "phoneNumber": "+1 2065555554",
+    "phoneType": "mobile",
+}
+options := &msgraphsdk.PhoneAuthenticationMethodRequestBuilderPutOptions{
+    Body: requestBody,
+}
 phoneAuthenticationMethodId := "phoneAuthenticationMethod-id"
-graphClient.Me().Authentication().PhoneMethodsById(&phoneAuthenticationMethodId).Put(nil)
+graphClient.Me().Authentication().PhoneMethodsById(&phoneAuthenticationMethodId).Put(options)
 
 
 ```
