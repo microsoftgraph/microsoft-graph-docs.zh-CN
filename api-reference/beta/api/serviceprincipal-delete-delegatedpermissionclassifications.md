@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: b40387a75e954d495546f487c0d1424e8dc11df7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: aa231fb94ae4a4102a5b010b4317eda195613762
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031890"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129455"
 ---
 # <a name="delete-delegatedpermissionclassification"></a>删除 delegatedPermissionClassification
 
@@ -20,7 +20,7 @@ ms.locfileid: "61031890"
 
 删除以前为委派权限设置的[delegatedPermissionClassification。](../resources/delegatedPermissionClassification.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -84,8 +84,12 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissi
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-delegatedpermissionclassifications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delete-delegatedpermissionclassifications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-delete-delegatedpermissionclassifications-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

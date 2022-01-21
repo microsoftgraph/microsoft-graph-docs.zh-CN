@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 90cf84b469550a5bf98f8b620c1fb3d29faab454
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 075ef9588286c2d0c2aca123b63ead2230fcc7ca
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030749"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132080"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>列出为服务主体授予的 appRoleAssignment
 
@@ -89,8 +89,12 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/8e881353-1735-45af-af21-e
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-approleassignedto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-get-approleassignedto-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-get-approleassignedto-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

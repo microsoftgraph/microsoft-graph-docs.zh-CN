@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 4b2e3899452783d6141822189f3ed58bfcfe9d13
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 5af52686d7d36e808899657992c104507b4a9c85
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61863204"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115211"
 ---
 # <a name="create-deployment"></a>创建部署
 命名空间：microsoft.graph.windowsUpdates
@@ -49,7 +49,7 @@ POST /admin/windows/updates/deployments
 
 下表显示创建部署时所需的 [属性](../resources/windowsupdates-deployment.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |内容|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|指定要部署的内容。 应作为以下派生类型之一提供可部署内容[：expeditedQualityUpdateReference、featureUpdateReference](../resources/windowsupdates-expeditedqualityupdatereference.md) [](../resources/windowsupdates-featureupdatereference.md)|
 
@@ -115,6 +115,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-deployment-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-deployment-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

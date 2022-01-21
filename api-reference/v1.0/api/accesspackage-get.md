@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 804ce875da9e2baffa5d8941d990b2a3beac8fc4
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: a0babe007c61c897513ec5b3aa676b63f3dcf408
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651342"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136672"
 ---
 # <a name="get-accesspackage"></a>获取 accessPackage
 
@@ -85,8 +85,12 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-accesspackage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

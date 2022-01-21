@@ -5,12 +5,12 @@ description: 获取站点或列表中的内容类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: a07aadb726c25643f5bbfb2fd611f1313747b41e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c6c4b852f34bb64944df318c276d540bc482365c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028740"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121097"
 ---
 # <a name="get-contenttype"></a>获取 contentType
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "61028740"
 
 检索网站或[列表中][contentType]内容[类型的][][元数据][]。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -87,8 +87,12 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-i
 [!INCLUDE [sample-code](../includes/snippets/java/get-contenttype-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

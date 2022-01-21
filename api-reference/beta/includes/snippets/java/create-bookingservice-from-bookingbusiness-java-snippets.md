@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6d9ba5f5b113da0c4486da1b030c279f6b3d0b44
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: f51d3966dbdbb0d368e0adead8f6f01688291c3e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60736659"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62113997"
 ---
 ```java
 
@@ -67,7 +67,7 @@ staffMemberIdsList.add("d90d1e8c-5cfe-48cf-a2d5-966267375b6a");
 staffMemberIdsList.add("2f5f8794-0b29-45b5-b56a-2eb5ff7aa880");
 bookingService.staffMemberIds = staffMemberIdsList;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@M365B489948.onmicrosoft.com").services()
+graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").services()
     .buildRequest()
     .post(bookingService);
 

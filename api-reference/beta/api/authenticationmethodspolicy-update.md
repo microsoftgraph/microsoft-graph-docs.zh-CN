@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 66e25c6ef32418d52c19cb1ce2bc4bf9f53df6cb
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 1dfe28c6358cd716a50bbc858227b0ee31f74eb4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223257"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62116757"
 ---
 # <a name="update-authenticationmethodspolicy"></a>更新 authenticationMethodsPolicy
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "61223257"
 
 更新 [authenticationMethodsPolicy 对象](../resources/authenticationmethodspolicy.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -52,7 +52,7 @@ PATCH /policies/authenticationMethodsPolicy
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [registrationEnforcement](../resources/registrationenforcement.md) 对象的 JSON 表示形式，以提示用户设置目标身份验证方法。 
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|在登录时强制注册。 此属性可用于提示用户设置目标身份验证方法。|
 
@@ -106,8 +106,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-authenticationmethodspolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-authenticationmethodspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-authenticationmethodspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

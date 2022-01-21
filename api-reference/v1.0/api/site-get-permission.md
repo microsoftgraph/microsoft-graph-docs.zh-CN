@@ -5,19 +5,19 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 61b4707ea1d39b3654447964a0d22d855dcc68bd
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: a1e98f70a257f2234941119fceaea5ee30427288
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241322"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131961"
 ---
 # <a name="get-permission"></a>获取权限
 命名空间：microsoft.graph
 
 检索网站上 [permission](../resources/permission.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）
@@ -80,8 +80,12 @@ GET https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions/{permissionId}
 [!INCLUDE [sample-code](../includes/snippets/java/get-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-permission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-permission-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2faa175fbe921266add8a63a3e2cc32c1a9c50ea9fdcd6f941fff02cd66a13c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6f2dac25d0113aa19e56cddbb35644e6f5f398ae
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57279502"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137684"
 ---
 ```javascript
 
@@ -20,7 +20,12 @@ const tenantCustomizedInformation = {
   tenantId: 'String',
   contacts: [
     {
-      '@odata.type': 'microsoft.graph.managedTenants.tenantContactInformation'
+      '@odata.type': 'microsoft.graph.managedTenants.tenantContactInformation',
+      name: 'String',
+      title: 'String',
+      email: 'String',
+      phone: 'String',
+      notes: 'String'
     }
   ],
   website: 'String'

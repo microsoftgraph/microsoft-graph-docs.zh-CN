@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 765ed2420b3e660353f031e99e5b719e70e2778a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f88361833d025c6c96948628efd5443f0a6a0328
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60998022"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129784"
 ---
 # <a name="get-itememail"></a>获取 itemEmail
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/profile/emails/{id}
 
 此方法支持 `$select` 查询参数。 指定要包括在响应中的属性列表，用逗号分隔它们。 为获得最佳性能，请仅选择所需的属性子集。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -83,8 +83,12 @@ GET https://graph.microsoft.com/beta/users/{userId}/profile/emails/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-itememail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-itememail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-itememail-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

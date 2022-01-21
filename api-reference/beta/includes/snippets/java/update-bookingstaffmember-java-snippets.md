@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7e983607d1205a548198015aaf317596af3c6862c87d0c7f634e042d22d9bbd4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e93fc99341592fe23f66508653222733cc4cd005
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57162102"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62124090"
 ---
 ```java
 
@@ -66,7 +66,7 @@ workingHours4.timeSlots = timeSlotsList4;
 workingHoursList.add(workingHours4);
 bookingStaffMember.workingHours = workingHoursList;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@M365B489948.onmicrosoft.com").staffMembers("8ee1c803-a1fa-406d-8259-7ab53233f148")
+graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").staffMembers("8ee1c803-a1fa-406d-8259-7ab53233f148")
     .buildRequest()
     .patch(bookingStaffMember);
 

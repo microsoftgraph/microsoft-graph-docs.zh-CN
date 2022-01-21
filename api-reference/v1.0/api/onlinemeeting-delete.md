@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6d5fa2f3216dd7037e91590f57b51f39daffe0ab
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 35f2a652c6f341cf5a070c6e2158a20265a92526
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023244"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114672"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 
@@ -40,7 +40,7 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}
 > - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
@@ -82,8 +82,12 @@ DELETE https://graph.microsoft.com/v1.0/me/onlineMeetings/550fae72-d251-43ec-868
 [!INCLUDE [sample-code](../includes/snippets/java/delete-call-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-call-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-call-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

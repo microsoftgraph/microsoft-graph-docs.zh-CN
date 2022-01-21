@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6249fcc8fd3bcc76d2d47328b5a0613e389c7aa5
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 4f7b3c07eac3e870cd59e2a4998e6c22f15f05ef
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545285"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62124296"
 ---
 # <a name="list-attendancerecords"></a>列出 attendanceRecords
 命名空间：microsoft.graph
@@ -96,8 +96,12 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceRep
 [!INCLUDE [sample-code](../includes/snippets/java/list-attendancerecord-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-attendancerecord-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-attendancerecord-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

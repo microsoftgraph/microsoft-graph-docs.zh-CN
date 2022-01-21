@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 22cf7c864f75d9c07d96f22716ae514e20760f5e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 14d9d3045aaf324788641781fc510b66224db820
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023343"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126236"
 ---
 # <a name="create-sectiongroup"></a>创建 sectionGroup
 
@@ -82,8 +82,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-sectiongroup-from-notebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-sectiongroup-from-notebook-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-sectiongroup-from-notebook-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

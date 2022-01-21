@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 0c89d9428b48e3e35d5da0a4e43218ed44de14a8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: cbca2314f794ca1f25794e959a3495d0267a93d8
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986717"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131324"
 ---
 # <a name="create-legalhold-usersource"></a>创建 legalHold userSource
 
@@ -54,7 +54,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 
 下表显示创建 [userSource](../resources/ediscovery-usersource.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |email|String|用户的 SMTP 地址或组邮箱的 SMTP 地址。 若要获取组的电子邮件地址，请使用["列表](../api/group-list.md)组"或"[获取组"。](../api/group-get.md) 使用 get 组，可以使用 按组名称进行查询 `$filter` ;例如， `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` 。 |
 |includedSources|microsoft.graph.ediscovery.sourceType|指定此组中包含的源。 此值必须为 `mailbox` ， `site` 目前不支持 legalHolds。|
@@ -101,8 +101,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-usersource-from--2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-usersource-from--2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

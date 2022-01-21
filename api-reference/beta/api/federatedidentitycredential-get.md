@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: eff901289ba87b1f064458e5314b666e97130c8e
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 4950aeaae15578ae14b5dfbfd67c42b4408c6ad4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61803063"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62113558"
 ---
 # <a name="get-federatedidentitycredential"></a>Get federatedIdentityCredential
 命名空间：microsoft.graph
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/applications/acd7c908-1c4d-4d48-93ee-ff3834
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-federatedidentitycredential-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-federatedidentitycredential-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,22 +1,22 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d00cd8e2d980c3c77cf56b76d56dd0b4d5e0aeb0
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 188ab2cb9ce1326af9c00eca74ee5dce29fbe6c2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090493"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137662"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ExternalGroupMember externalGroupMember = new ExternalGroupMember();
-externalGroupMember.id = "e5477431-1038-484e-bf69-1dfedb97a110";
-externalGroupMember.type = ExternalGroupMemberType.USER;
+Identity identity = new Identity();
+identity.id = "e5477431-1038-484e-bf69-1dfedb97a110";
+identity.type = IdentityType.EXTERNAL_GROUP;
 
 graphClient.external().connections("contosohr").groups("31bea3d537902000").members()
     .buildRequest()
-    .post(externalGroupMember);
+    .post(identity);
 
 ```

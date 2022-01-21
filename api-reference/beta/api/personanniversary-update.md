@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: dd21c6ab3e252b17db51d7188667a6f2d94415fd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e1880d6563a90c3f4ccb510eb4eb9c1c466df2ae
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985695"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137057"
 ---
 # <a name="update-personanniversary"></a>更新 personAnniversary
 
@@ -52,7 +52,7 @@ PATCH /users/{id | userPrincipalName}/profile/anniversaries/{id}
 
 下表显示了在用户配置文件中的现有 [personAnniversary](../resources/personanniversary.md) 对象中可以更新 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |date|Date|包含与周年类型关联的日期。|
@@ -99,8 +99,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-personanniversary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-personanniversary-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-personanniversary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

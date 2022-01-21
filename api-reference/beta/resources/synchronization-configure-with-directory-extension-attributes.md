@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: b3379502f1bf5354d4f53e863f4924c5f251bd4a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4cd94ecfa3230cae4bc8198f601974d9afbd6f4e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976811"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136701"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>配置与目录扩展属性的同步
 
@@ -18,9 +18,9 @@ ms.locfileid: "60976811"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以自定义同步架构以包括Azure Active Directory (Azure AD) 扩展属性。 本文介绍如何使用目录扩展属性 (extension_9d98asdfl15980a_Nickname) Salesforce 中User.CommunityNickname 的值。 在此方案中，你Azure AD 连接设置从本地到本地部署Windows Server Active Directory多个目录扩展Azure AD。 
+您可以自定义同步架构以包括Azure Active Directory (Azure AD) 扩展属性。 本文介绍如何使用目录扩展属性 (extension_9d98asdfl15980a_Nickname) Salesforce 中User.CommunityNickname 的值。 在此方案中，你已Azure AD 连接设置从本地到本地部署Windows Server Active Directory多个目录扩展Azure AD。 
 
-本文假定你已添加支持通过[Azure](https://portal.azure.com)门户与租户同步的应用程序，你知道应用程序 显示名称，并且你具有 Microsoft Graph 的授权令牌。 若要了解如何获取授权令牌，请参阅获取访问令牌以[调用 Microsoft Graph。](/graph/auth/)
+本文假定你已添加支持通过[Azure](https://portal.azure.com)门户与租户同步的应用程序，你知道应用程序 显示名称，并且你具有 Microsoft Graph 的授权令牌。 若要了解如何获取授权令牌，请参阅获取[访问令牌以调用 Microsoft Graph。](/graph/auth/)
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>按以下方法查找服务主体显示名称
 
@@ -118,8 +118,12 @@ Authorization: Bearer {Token}
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationschema-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-synchronizationschema-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -234,7 +238,7 @@ Content-Type: application/json
 
 2. 在 [Extension_9d98asdfl15980a_Nickname](synchronization-attributemapping.md) 和 CommunityNickname 之间添加属性映射。
 
-    - 在[synchronizationRules](synchronization-synchronizationrule.md)下，查找将 Azure AD 指定为源目录的规则，Salesforce.com 指定为目标 `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` () 。
+    - 在[synchronizationRules](synchronization-synchronizationrule.md)下，查找将Azure AD指定为源目录的规则，Salesforce.com 作为目标目录 `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` () 。
     - 在 [规则的 objectMappings](synchronization-objectmapping.md) 中，查找用户与 `"sourceObjectName": "User",   "targetObjectName": "User"` () 。
     - 在 **objectMapping** 的 [attributeMappings](synchronization-attributemapping.md)数组中，添加新条目，如以下示例所示。
 

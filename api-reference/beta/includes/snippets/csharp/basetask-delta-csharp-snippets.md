@@ -1,17 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fe3d5408450ab84889057e0404e52e0169e94e3d
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: b73f2adb4cb1ca09714abc122e4c5b845a6e38fa
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525349"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131792"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var delta = await graphClient.Me.Tasks.Lists.AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA=.Tasks.Delta
+var delta = await graphClient.Me.Tasks.Lists["{baseTaskList-id}"].Tasks
+    .Delta()
     .Request()
     .GetAsync();
 

@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 28982071f75999e595dd48f82f3be2f23605561e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3b905198eee032e422a7882afb4bedfbe3f2be28
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030189"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62113810"
 ---
 # <a name="update-educationassignmentdefaults"></a>更新 educationAssignmentDefaults
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "61030189"
 
 更新 [educationAssignmentDefaults 对象](../resources/educationassignmentdefaults.md) 的属性。 只有教师可以更新这些设置。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -47,7 +47,7 @@ PATCH /education/classes/{id}/assignmentDefaults
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [应更新的 educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象的相关字段的值。 请求正文中未包含的现有属性将保留其以前的值。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|用于处理作业发布后添加的学生的课堂级别默认行为。 可取值为：`none`、`assignIfOpen`。 默认值为 `none`。|
 |dueTime|TimeOfDay|"到期时间"字段的类级别默认值。 默认值为 `23:59:00`|
@@ -95,8 +95,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentdefaults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignmentdefaults-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationassignmentdefaults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

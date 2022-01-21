@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 79a1caa54ea6ab84d605dcb72fd46871fdd5fe19
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8e09cd8fc86d1a2bbf0dbc4d09c5900fad56b6bf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034445"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135517"
 ---
 # <a name="update-connection"></a>更新连接
 
@@ -49,7 +49,7 @@ PATCH /external/connections/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
-| 属性      | 类型                                           | 说明 |
+| 属性      | 类型                                           | Description |
 |:--------------|:-----------------------------------------------|:------------|
 | configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | 指定允许管理连接和索引连接内容的其他应用程序 ID。 |
 | 说明   | String                                         | 网站中显示的连接Microsoft 365 管理中心。 |
@@ -99,8 +99,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-connection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-connection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-connection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d1c77eab002d194f3de3992d68533e2823d45fcd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a63d3d200617d8bf696bf637c9a0dfa2a383662d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007634"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135230"
 ---
 # <a name="create-personname"></a>创建 personName
 
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/profile/names
 
 下表显示创建 [personName](../resources/personname.md) 对象时可以设置的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |displayName|String|根据用户或设备区域设置提供 firstName 和 lastName 的有序呈现。|
@@ -65,7 +65,7 @@ POST /users/{id | userPrincipalName}/profile/names
 |middle|String|用户的中间名。|
 |nickname|String|用户的昵称。|
 |pronunciation|[yomiPersonName](../resources/yomipersonname.md)|有关如何对用户名称进行发音的指南。|
-|后缀|String|用户名名称后使用 (，例如：PhD.)   |
+|后缀|String|在用户命名名称后使用 (，例如：PhD.)   |
 |title|String|用于为用户名称添加前缀的 (例如：Dr、Sir、Sir、Mrs.) |
 
 ## <a name="response"></a>响应
@@ -114,8 +114,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-personname-from-profilev2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-personname-from-profilev2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-personname-from-profilev2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

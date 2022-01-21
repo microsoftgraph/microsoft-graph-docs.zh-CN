@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4b99728810e4fd002a230d1dc21c7725849280bf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 998557a8849a5c5ad68b8382c0e664d008e97bc0
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012334"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131628"
 ---
 # <a name="get-callrecord"></a>获取 callRecord
 
@@ -95,8 +95,12 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecord-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -187,8 +191,12 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-expanded-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-expanded-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecord-expanded-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

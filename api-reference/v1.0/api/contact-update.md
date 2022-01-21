@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1975f70aeef733a107dcbd644a42d6236e03626d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 72c2d407885c5e33461157da386be10446c59030
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996342"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128889"
 ---
 # <a name="update-contact"></a>更新联系人
 
@@ -43,7 +43,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -61,7 +61,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |businessPhones|String|联系人的公司电话号码。|
 |categories|String|与联系人关联的类别。|
 |children|String|联系人子女的姓名。|
-|companyName|String|联系人所在公司的名称。|
+|CompanyName|String|联系人所在公司的名称。|
 |department|String|联系人所在的部门。|
 |displayName|String|联系人的显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在更新操作中将其作为 displayName。|
 |emailAddresses|[EmailAddress](../resources/emailaddress.md) 集合|联系人的电子邮件地址。|
@@ -131,8 +131,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-contact-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-contact-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-contact-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

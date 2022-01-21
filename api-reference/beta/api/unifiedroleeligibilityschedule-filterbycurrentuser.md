@@ -5,12 +5,12 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 79ca655456b294b1bc4c4a1a22f541564ba98802
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a801b050f87b2873d8cbc0bea04707e7940c20f1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016972"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130659"
 ---
 # <a name="unifiedroleeligibilityschedule-filterbycurrentuser"></a>unifiedRoleEligibilitySchedule：filterByCurrentUser
 命名空间：microsoft.graph
@@ -41,7 +41,7 @@ GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='pr
 ## <a name="function-parameters"></a>函数参数
 下表显示了可用于此方法的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |on|roleEligibilityScheduleFilterByCurrentUserOptions|当前登录的用户。 允许的值为 `principal` 。|
 
@@ -89,8 +89,12 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 [!INCLUDE [sample-code](../includes/snippets/java/unifiedroleeligibilityschedule-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unifiedroleeligibilityschedule-filterbycurrentuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unifiedroleeligibilityschedule-filterbycurrentuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

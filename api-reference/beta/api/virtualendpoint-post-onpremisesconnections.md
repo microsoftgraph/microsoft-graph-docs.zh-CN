@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 9afc0f3e332d9d2cdc1e2a3b25e69ab32c96310c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e9eeab06e60cc565826e6e24b46ba0269f3386da
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016609"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62125102"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>创建 cloudPcOnPremisesConnection
 
@@ -56,7 +56,7 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|内部显示名称连接的连接。|
+|displayName|String|本地显示名称的基础结构。|
 |subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
 |adDomainName|String|要加入的 Active Directory (完全限定) FQDN。|
 |adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：admin@contoso.com。|
@@ -114,8 +114,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

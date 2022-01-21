@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cd3b1f64b1e7fdc43fd87e0faa37fdea6058ec29
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 7060a0a889764487ca98fd3a61cff5146021725f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223256"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62116779"
 ---
 # <a name="create-phoneauthenticationmethod"></a>创建 phoneAuthenticationMethod
 
@@ -24,7 +24,7 @@ ms.locfileid: "61223256"
 
 此外，如果策略允许用户使用短信登录并添加号码，系统将尝试注册号码以 `mobile` 在该系统中使用该号码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -34,7 +34,7 @@ ms.locfileid: "61223256"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -42,9 +42,9 @@ ms.locfileid: "61223256"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员在另一用户上操作的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -70,7 +70,7 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods
 
 在请求正文中，提供 [phoneAuthenticationMethod 对象的](../resources/phoneauthenticationmethod.md) JSON 表示形式。 JSON 必须包括 `phoneNumber` `phoneType` 和 `smsSignInState` ， (，这是只读的) 。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |phoneNumber|String|要发送文本或呼叫进行身份验证的电话号码。 电话数字使用格式"+ \<country code\> \<number\>x \<extension\> "，扩展是可选的。 例如，+1 5555551234 +1 555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
 |phoneType|String|可能的值是 `mobile` ：、 `alternateMobile` 和 `office` 。|
@@ -116,8 +116,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-phoneauthenticationmethod-from-authentication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-phoneauthenticationmethod-from-authentication-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-phoneauthenticationmethod-from-authentication-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

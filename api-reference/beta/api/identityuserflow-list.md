@@ -1,16 +1,16 @@
 ---
-title: '列出已 (userFlows) '
+title: '列出已 (的用户流) '
 description: 检索 userFlow 对象的列表。
 ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d0d6e8ceafca829a4d07136f8d815a58d06a7061
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7644886801b2eb18183ebb939cb66870dc153871
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014886"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131163"
 ---
 # <a name="list-userflows"></a>列出 userFlows
 
@@ -85,8 +85,12 @@ GET https://graph.microsoft.com/beta/identity/userFlows
 [!INCLUDE [sample-code](../includes/snippets/java/get-userflows-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-userflows-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-userflows-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

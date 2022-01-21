@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 31c36d097544c69462f49e49cc89707646673299
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 4bc6f737a842cf1300bf5abbb7636b84eff45baf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650957"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129826"
 ---
 # <a name="create-connectedorganization"></a>创建 connectedOrganization
 
@@ -59,7 +59,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 |identitySources|[identitySource](../resources/identitysource.md) 集合|包含一个元素的集合，即此连接组织中的初始标识源。|
 |state|connectedOrganizationState|已连接组织的状态定义具有请求者作用域类型的分配策略 `AllConfiguredConnectedOrganizationSubjects` 是否适用。 可取值为：`configured`、`proposed`。|
 
-identitySources 集合的单个成员应为 [domainIdentitySource](../resources/domainidentitysource.md) 或 [externalDomainFederation](../resources/externaldomainfederation.md) 类型。  如果调用方提供 domainIdentitySource，则调用成功，并且该域对应于 Azure Active Directory 租户的注册域，则创建的生成的 connectedOrganization 将具有包含[azureActiveDirectoryTenant](../resources/azureactivedirectorytenant.md)类型的单个成员的 identitySources 集合。
+identitySources 集合的单个成员应为 [domainIdentitySource](../resources/domainidentitysource.md) 或 [externalDomainFederation](../resources/externaldomainfederation.md) 类型。  如果调用方提供 domainIdentitySource，则调用成功，并且域对应于 Azure Active Directory 租户的注册域，则创建的生成的 connectedOrganization 将具有包含[azureActiveDirectoryTenant](../resources/azureactivedirectorytenant.md)类型的单个成员的 identitySources 集合。
 
 ## <a name="response"></a>响应
 
@@ -108,8 +108,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-connectedorganization-from-connectedorganizations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-connectedorganization-from-connectedorganizations-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-connectedorganization-from-connectedorganizations-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

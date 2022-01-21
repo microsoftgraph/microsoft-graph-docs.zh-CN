@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 132046d8cdc3c61af7801f08a341339d78d9d878
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5ac16dd02fb9a9339ceab51172d3330ba68142fd
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60973941"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117724"
 ---
 # <a name="activate-directoryrole"></a>Activate directoryRole
 
@@ -44,7 +44,7 @@ POST /directoryRoles
 
 下表显示激活目录角色时所需的属性。
 
-|参数 | 类型 | 说明|
+|参数 | 类型 | Description|
 |:---------|:---------|:---------|
 |roleTemplateId | string | 必需。 角色所基于的 [directoryRoleTemplate](../resources/directoryroletemplate.md) 的 ID。 这是唯一可以在请求中指定的属性。|
 
@@ -85,8 +85,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryrole-from-directoryroles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-directoryrole-from-directoryroles-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-directoryrole-from-directoryroles-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

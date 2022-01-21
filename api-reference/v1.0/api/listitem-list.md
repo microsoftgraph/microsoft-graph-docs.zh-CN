@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: 获取列表中项的集合。
 doc_type: apiPageType
-ms.openlocfilehash: 36aa9156f34045772730706a1f6693c80c408e37
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 08ebf4b7aa245dc4b4f3ceeb80d4b48f3a76d0aa
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004058"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126354"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
@@ -67,8 +67,12 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-items-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-list-items-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-list-items-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

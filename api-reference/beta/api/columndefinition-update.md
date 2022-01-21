@@ -5,12 +5,12 @@ description: 更新网站、列表或内容类型列
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0c8e888214007288e9e6ba8df8e9815b127bec02
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1b1880a44831c1761978911405b485e61ae977e5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975613"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131422"
 ---
 # <a name="update-columndefinition"></a>更新 columnDefinition
 命名空间：microsoft.graph
@@ -103,8 +103,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-contenttype-column-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-contenttype-column-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-contenttype-column-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

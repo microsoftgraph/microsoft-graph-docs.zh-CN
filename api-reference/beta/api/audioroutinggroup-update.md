@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c5aafe6f290af213fba6d2bc9f0fac835d75c512
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5dfa772c0f4377af17dbec7e554cce99522f7b74
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60995328"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62116835"
 ---
 # <a name="update-audio-routing-group"></a>更新音频路由组
 
@@ -45,11 +45,11 @@ PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性       | 类型    |说明|
+| 属性       | 类型    |Description|
 |:---------------|:--------|:----------|
-| receivers | String collection | audioRoutingGroup 中的目标参与者。 |
+| receivers | 字符串集合 | audioRoutingGroup 中的目标参与者。 |
 | routingMode | String | 可取值为：`oneToOne`、`multicast`。 |
-| 源 | String collection | audioRoutingGroup 中的源参与者。 |
+| 源 | String 集合 | audioRoutingGroup 中的源参与者。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [audioRoutingGroup](../resources/audioroutinggroup.md) 对象。
@@ -97,8 +97,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-audioroutinggroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-audioroutinggroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-audioroutinggroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

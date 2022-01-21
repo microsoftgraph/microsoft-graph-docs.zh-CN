@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: bf2279a523a398ce30acaa50f85a251a3e84f25a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 40fe71bd2b0c1c9f400efbacae1c45525c804151
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019317"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135175"
 ---
 # <a name="delete-programcontrol"></a>删除 programControl
 
@@ -18,7 +18,7 @@ ms.locfileid: "61019317"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[评审](../resources/accessreviews-root.md)功能中，删除[programControl](../resources/programcontrol.md)对象。  这会将访问评审与计划取消链接。
+在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，删除[programControl](../resources/programcontrol.md)对象。  这会将访问评审与计划取消链接。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -74,8 +74,12 @@ DELETE https://graph.microsoft.com/beta/programControls/7e59d237-2fb0-4e5d-b7bb-
 [!INCLUDE [sample-code](../includes/snippets/java/delete-programcontrol-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-programcontrol-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-programcontrol-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

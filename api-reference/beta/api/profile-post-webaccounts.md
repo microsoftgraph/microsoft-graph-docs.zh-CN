@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3170c2c291b8e2a1f6a357f203f58bd33ca05ef4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 53660ae9a171c0e4395f9386716c581c4d243c07
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023636"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135188"
 ---
 # <a name="create-webaccount"></a>创建 webAccount
 
@@ -20,7 +20,7 @@ ms.locfileid: "61023636"
 
 在用户配置文件中创建新的 [webAccount](../resources/webaccount.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/profile/webAccounts
 
 下表显示了在用户配置文件中创建新的 [webAccount](../resources/webaccount.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |说明|String|包含用户为引用的服务上的帐户提供的说明。|
@@ -108,8 +108,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-webaccount-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-webaccount-from-profile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-webaccount-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

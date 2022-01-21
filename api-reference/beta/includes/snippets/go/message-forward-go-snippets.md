@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4375bf3a12f8184488eb604f149b99c759caadd7
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 05235c9464a3dff53bd4fd1f09c064149a7a03b0
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61086655"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137652"
 ---
 ```go
 
@@ -15,9 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 message := msgraphsdk.NewMessage()
 requestBody.SetMessage(message)
-message.SetAdditionalData(map[string]interface{}{
-    "isDeliveryReceiptRequested": true,
-    "toRecipients":  []Object {
+isDeliveryReceiptRequested := true
+message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested)
+message.SetToRecipients( []Recipient {
+    msgraphsdk.NewRecipient(),
+    SetAdditionalData(map[string]interface{}{
     }
 }
 comment := "Dana, just want to make sure you get this."

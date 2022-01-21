@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 08b7b446f8f455cd5a00a7985b0cae1795cb807c354bf2bff0a6e03cd20a3419
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aec64c84812c5deb3504835a64a3498ead051507
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57278475"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137749"
 ---
 ```java
 
@@ -31,6 +31,7 @@ graphClient.me().drive().items("{itemId}")
         .withPassword(password)
         .withMessage(null)
         .withRecipients(recipientsList)
+        .withRetainInheritedPermissions(null)
         .build())
     .buildRequest()
     .post();

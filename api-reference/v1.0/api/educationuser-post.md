@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 911fc115badaa8e5cbc64dd14b3b8bc845b10335
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 66ae4db36a126484d25d74a78144e83754a4ef64
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025484"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117590"
 ---
 # <a name="create-educationuser"></a>创建 educationUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "61025484"
 
 创建新的 [educationUser](../resources/educationuser.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -69,7 +69,7 @@ POST /education/users
 | mailNickname         | String                                                             | 用户的邮件别名。创建用户时必须指定此属性。支持 $filter。                                                                                                                                                                                                                                                      |
 | middleName           | String                                                             | 用户的中间名。                                                                                                                                                                                                                                                                                                                                    |
 | mobilePhone          | String                                                             | 用户的主要移动电话号码。                                                                                                                                                                                                                                                                                                         |
-| onPremisesInfo       | [educationOnPremisesInfo](../resources/educationonpremisesinfo.md) | 用于将用户与 AAD对应的 Active Directory 关联的其他信息。                                                                                                                                                                                                                                                               |
+| onPremisesInfo       | [educationOnPremisesInfo](../resources/educationonpremisesinfo.md) | 用于将用户与 active Directory AAD关联的其他信息。                                                                                                                                                                                                                                                               |
 | passwordPolicies     | String                                                             | 指定用户的密码策略。 此值是一个枚举，具有一个可能值 “DisableStrongPassword”，允许指定比默认策略弱的密码。 还可以指定 “DisablePasswordExpiration”。 可以同时指定两个值；例如：“DisablePasswordExpiration、DisableStrongPassword”。 |
 | passwordProfile      | [passwordProfile](../resources/passwordprofile.md)                 | 指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。                                                         |
 | preferredLanguage    | String                                                             | 用户的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。                                                                                                                                                                                                                                                                    |
@@ -182,8 +182,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationuser-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-educationuser-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationuser-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

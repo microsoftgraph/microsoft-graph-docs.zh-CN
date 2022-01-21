@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: ed440c4604906753aef133c03248271fcc3f2439
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 632100cee0f45a1493025a6eca64f33595b2b939
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015029"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135485"
 ---
 # <a name="get-identityprovider-deprecated"></a>获取 identityProvider（已弃用）
 
@@ -56,7 +56,7 @@ GET /identityProviders/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回响应代码和 `200 OK` [identityProvider](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md) (仅在响应正文中Azure AD B2C) JSON 表示形式。
+如果成功，此方法返回响应代码和 `200 OK` [identityProvider](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md) (仅在响应正文中Azure AD B2C) 的 JSON 表示形式。
 
 ## <a name="examples"></a>示例
 
@@ -93,8 +93,12 @@ GET https://graph.microsoft.com/beta/identityProviders/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-identityprovider-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -156,8 +160,12 @@ GET https://graph.microsoft.com/beta/identityProviders/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-identityprovider-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

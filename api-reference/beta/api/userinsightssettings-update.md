@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: bbf02fda9d08cd7d72b984a284df281ac33d19a2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 980452e1576b6494de2472e07c9392a3b20c61b0
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023525"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117975"
 ---
 # <a name="update-userinsightssettings"></a>更新 userInsightsSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "61023525"
 
 更新用户 [itemInsights](../resources/iteminsights.md) 和 [会议时间见解](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) 的隐私设置。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,7 +53,7 @@ PATCH /users/{userId}/settings/itemInsights
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|isEnabled|Boolean| `true` 如果用户的 **itemInsights** 和会议时间见解已启用; `false` 如果禁用了 **用户的 itemInsights** 和会议小时数见解。 默认值为 `true`。 可选。|
+|isEnabled|Boolean| `true` 如果用户的 **itemInsights** 和会议时间见解已启用; `false` 如果禁用了 **用户的 itemInsights** 和会议小时数见解。 默认值为“`true`”。 可选。|
 
 ## <a name="response"></a>响应
 
@@ -96,8 +96,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-userinsightssettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-userinsightssettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-userinsightssettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

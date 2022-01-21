@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a60c1621ab1355aef86fdb8110da3dce0a91fd2a
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 7cf80c88a49903664a7ab6728746ebed6780b839
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604362"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136218"
 ---
 # <a name="delete-educationuser"></a>删除 educationUser
 
@@ -74,8 +74,12 @@ DELETE https://graph.microsoft.com/v1.0/education/users/{user-id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-educationuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

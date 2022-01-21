@@ -1,16 +1,16 @@
 ---
 title: 列出附件
-description: 获取附加到任务任务的Outlook列表。
+description: 获取附加到任务任务的附件Outlook列表。
 author: svpsiva
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 491bd15bad85e1e610f1c78aab47dc4194e86e2a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1ee6bc44a7ecc505c893ff98a9fd4b87cf278aab
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026542"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123401"
 ---
 # <a name="list-attachments-deprecated"></a>列出 (的附件) 
 
@@ -91,8 +91,12 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 [!INCLUDE [sample-code](../includes/snippets/java/outlook-task-get-attachments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/outlook-task-get-attachments-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/outlook-task-get-attachments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

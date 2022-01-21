@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5793ba708808b22abdbfc3b2285beded115f6dc6
-ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
+ms.openlocfilehash: efbbfb73c02dbef6555d453fd0d7529a8365f5ce
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62056307"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131338"
 ---
 # <a name="list-custodian-usersources"></a>列出保管人 userSources
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-usersource-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-usersource-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

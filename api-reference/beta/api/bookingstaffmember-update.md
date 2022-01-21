@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 3edc44a7de42cfde1e685bbe0479d578ad079f0d
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: e1bbffa45608254673cac67cffce9c0c1605dd5b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524656"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62124093"
 ---
 # <a name="update-bookingstaffmember"></a>更新 bookingstaffmember
 
@@ -41,15 +41,15 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|True 表示如果员工是 Microsoft 365用户，Bookings API 将使用 Microsoft 365 中的员工个人日历以及 **workingHours** 属性来确定可用性。 |
+|availabilityIsAffectedByPersonalCalendar|布尔|True 表示如果员工是Microsoft 365，Bookings API 将使用员工在 Microsoft 365 中的个人日历以及 **workingHours** 属性来确定可用性。 |
 |colorIndex|Int32|标识表示员工成员的颜色。 颜色对应于 Bookings 应用中"员工 **详细信息** "页中的调色板。|
 |displayName|String|显示给客户的员工的姓名。|
-|emailAddress|String|员工成员的电子邮件地址。 它可以与企业Microsoft 365租户中，也可以在不同的电子邮件域中。 如果在业务的计划策略中将 **sendConfirmationsToOwner** 属性设置为 true，则使用此电子邮件地址。|
-|role|string| 员工在业务中的角色。 可能的值是：`guest`、`administrator`、`viewer`、`externalGuest`。|
-|timeZone|字符串|员工员工的时区。 有关可能值的列表，请参阅 [dateTimeTimeZone](../resources/datetimetimezone.md)。|
-|useBusinessHours|Boolean|True 表示员工的可用性由业务的业务 **Hours** 属性确定。 False 表示可用性由员工的 **workingHouse** 属性设置确定。|
+|emailAddress|String|员工成员的电子邮件地址。 这可以在与企业相同的Microsoft 365租户中，也可以在不同的电子邮件域中。 如果在业务的计划策略中将 **sendConfirmationsToOwner** 属性设置为 true，则使用此电子邮件地址。|
+|role|string| 员工在业务中的角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。|
+|timeZone|String|员工员工的时区。 有关可能值的列表，请参阅 [dateTimeTimeZone](../resources/datetimetimezone.md)。|
+|useBusinessHours|布尔|True 表示员工的可用性由业务的业务 **Hours** 属性确定。 False 表示可用性由员工的 **workingHouse** 属性设置确定。|
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md) 集合|一周中每个员工可以预订的小时数范围。|
 
 ## <a name="response"></a>响应
@@ -147,6 +147,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingstaffmember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingstaffmember-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

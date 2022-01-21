@@ -1,16 +1,16 @@
 ---
 title: synchronizationSchema： functions
 description: 列出 attributeMappingSource 中当前支持的所有函数。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: ff6d231f8f20d96262530230304028368554e41b
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 8f18c10c87a3ed3c2cd2410bcf580f3daf6e217e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625960"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62122967"
 ---
 # <a name="synchronizationschema-functions"></a>synchronizationSchema： functions
 
@@ -27,7 +27,7 @@ ms.locfileid: "50625960"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.Read.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
+|应用程序                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationschema-functions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/synchronizationschema-functions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

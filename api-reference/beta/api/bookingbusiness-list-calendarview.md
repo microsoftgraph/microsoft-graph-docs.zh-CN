@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 37417c6614dcc658c19b9233a1125d70f2fc48f3
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 64d5ddd168064445c26c7e23d8b26e33e97af864
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524481"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114104"
 ---
 # <a name="list-bookings-calendarview"></a>列出 Bookings 日历视图
 
@@ -39,7 +39,7 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 在请求 URL 中，提供以下必要查询参数的值。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |start|DateTimeOffset|一个时间范围的开始日期和时间，以 ISO 8601 格式表示，为 UTC 或与 UTC 的时差。 例如，2018 年 1 月 1 日午夜 UTC 如下所示："2018-01-01T00：00：00Z"，PST 中的同一时间如下所示："2017-12-31T16：00：00-08：00"。|
 |end|DateTimeOffset|一个时间范围的结束日期和时间，以 ISO 8601 格式表示为 UTC 或与 UTC 的偏移量。 例如，2018 年 1 月 1 日凌晨 3 点 UTC 如下所示："2018-01-01T03：00：00Z"，PST 中的同一时间如下所示："2017-12-31T19：00：00-08：00"。|
@@ -88,8 +88,12 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/java/bookingbusiness-getcalendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/bookingbusiness-getcalendarview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusiness-getcalendarview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

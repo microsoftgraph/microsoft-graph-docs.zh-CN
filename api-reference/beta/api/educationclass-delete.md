@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 759120d2094ec9443c127fe43f5b6ceab85b44f7
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: fb4a8370afc1378d484c67d5885f78165a6479a4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225915"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123695"
 ---
 # <a name="delete-educationclass"></a>删除 educationClass
 
@@ -20,14 +20,14 @@ ms.locfileid: "61225915"
 
 删除 [educationClass](../resources/educationclass.md)。 课程也是通用组，因此删除课程时也会删除组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | EduRoster.ReadWrite.All | 
+|应用程序 | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -74,8 +74,12 @@ DELETE https://graph.microsoft.com/beta/education/classes/11022
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationclass-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-educationclass-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationclass-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

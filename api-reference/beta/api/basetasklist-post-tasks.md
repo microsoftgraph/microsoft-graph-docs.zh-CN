@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b450ed9e87af65fede3f8e850a55dcd41ac68897
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 0814b150c20f6651379800eeefad25bd4c4ffe9f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525231"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130103"
 ---
 # <a name="create-basetask"></a>创建 baseTask
 命名空间：microsoft.graph
@@ -50,7 +50,7 @@ POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 
 可以在创建 **baseTask** 时指定以下属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。|
 |createdDateTime|DateTimeOffset|在指定时区内完成任务的日期。|
@@ -62,7 +62,7 @@ POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 |importance|importance|任务的重要性。 可能的值包括 `low`、`normal`、`high`。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |displayName|String|任务的简要说明。|
-|状态|taskStatus_v2|指示任务的状态或进度。 可能的值包括 `notStarted`、`inProgress`、`completed`、`unknownFutureValue`。 必填。|
+|状态|taskStatus_v2|指示任务的状态或进度。 可能的值包括 `notStarted`、`inProgress`、`completed`、`unknownFutureValue`。 必需。|
 |personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|用户个人的属性，如 reminderDateTime。|
 
 
@@ -112,6 +112,22 @@ Content-length: 634
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-basetask-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-basetask-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-basetask-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-basetask-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-basetask-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

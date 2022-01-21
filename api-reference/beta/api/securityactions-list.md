@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 20853e513007038b434f2a6278a3491e69b2963f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4002cdc3ea63c43010baa58c1337e616386b1398
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60978008"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62125459"
 ---
 # <a name="list-securityactions"></a>列出 securityActions
 
@@ -42,7 +42,7 @@ GET /security/securityActions
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅 [OData Query Parameters](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -87,8 +87,12 @@ GET https://graph.microsoft.com/beta/security/securityActions
 [!INCLUDE [sample-code](../includes/snippets/java/get-securityactions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-securityactions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-securityactions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

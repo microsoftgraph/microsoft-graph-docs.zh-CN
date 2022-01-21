@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ee11de035fa941620b661c7e484ae22f12a1dd3d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6bb0025cac67c3cf85f3a75cc63b6c9b950ba410
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023181"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132381"
 ---
 # <a name="list-openshifts"></a>列出 openShifts
 
@@ -88,8 +88,12 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShifts
 [!INCLUDE [sample-code](../includes/snippets/java/get-openshift-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-openshift-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-openshift-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

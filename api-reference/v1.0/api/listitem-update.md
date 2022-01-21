@@ -5,12 +5,12 @@ description: 更新 **[listItem][]** 上的属性。
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fdb64eda4753970b4526c09266ad0745d0ed20b4
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 4e194fc3b9a764fabe25afbfcfe4ad5008a64ba7
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123661"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132494"
 ---
 # <a name="update-listitem"></a>更新 listItem
 
@@ -90,8 +90,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-listitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-listitem-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

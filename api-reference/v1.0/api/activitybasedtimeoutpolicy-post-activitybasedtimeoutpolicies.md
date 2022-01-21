@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 104bde5215ce55c2dfe073f6c97afe216219410e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 600eee4591a727fa1f7c79e5fc6384f55cfa1c3b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029811"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136658"
 ---
 # <a name="create-activitybasedtimeoutpolicy"></a>创建 activityBasedTimeoutPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "61029811"
 
 创建新的 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -94,8 +94,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

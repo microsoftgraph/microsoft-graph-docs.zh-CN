@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 14d7cf3ece9c679657b552fa338a9be2c40c31f6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4c5e4ee2341e3e3f1745443a85aa233919ac7d1f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034047"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133334"
 ---
 # <a name="list-sections"></a>列出分区
 
@@ -43,7 +43,7 @@ GET /sites/{id}/onenote/sections
 
 默认查询将 `parentNotebook` 展开并选择其 、 `id` `displayName` 和 `self` 属性。 分区 `expand` 的有效值为 和 `parentNotebook` `parentSectionGroup` 。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -83,8 +83,12 @@ GET https://graph.microsoft.com/beta/me/onenote/sections
 [!INCLUDE [sample-code](../includes/snippets/java/onenote-get-sections-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/onenote-get-sections-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/onenote-get-sections-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

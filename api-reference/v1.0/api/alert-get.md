@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 60811fb091aa79ada85a183d91ffdcbe06fded94
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2c359ab880db8c8f5e50844b584b132afcf47616
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979647"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62124969"
 ---
 # <a name="get-alert"></a>获取警报
 
@@ -18,7 +18,7 @@ ms.locfileid: "60979647"
 
  检索 alert 对象的属性 [和](../resources/alert.md) 关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -81,8 +81,12 @@ GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-alert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-alert-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-alert-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

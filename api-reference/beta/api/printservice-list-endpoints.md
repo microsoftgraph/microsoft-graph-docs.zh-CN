@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f7c30b5a8dd95917a8ea9f1fb61af4acd050a817
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 97d8037c51be283f5052e99da157f41c9cd635c3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028018"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127082"
 ---
 # <a name="list-printserviceendpoints"></a>列出 printServiceEndpoints
 
@@ -20,7 +20,7 @@ ms.locfileid: "61028018"
 
 检索打印服务公开的终结点列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 调用此 API 不需要任何权限，但若要使用通用打印服务，用户或应用的租户必须拥有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
@@ -75,8 +75,12 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints
 [!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-endpoints-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-endpoints-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

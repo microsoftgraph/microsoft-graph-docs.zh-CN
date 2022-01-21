@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 80e4d77476dc7c1114118d0698e55e687dc60a7d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 87d26eb990cb50eeca05d5b628d3afae20a213c2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61082735"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137643"
 ---
 ```go
 
@@ -25,9 +25,8 @@ requestBody.SetUserAttributeValues( []UserAttributeValuesItem {
 }
 userAttribute := msgraphsdk.NewIdentityUserFlowAttribute()
 requestBody.SetUserAttribute(userAttribute)
-userAttribute.SetAdditionalData(map[string]interface{}{
-    "id": "extension_guid_shoeSize",
-}
+id := "extension_guid_shoeSize"
+userAttribute.SetId(&id)
 options := &msgraphsdk.UserAttributeAssignmentsRequestBuilderPostOptions{
     Body: requestBody,
 }

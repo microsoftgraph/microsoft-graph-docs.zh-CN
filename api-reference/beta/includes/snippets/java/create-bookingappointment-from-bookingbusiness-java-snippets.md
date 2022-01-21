@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e29ae25ff3ab29b30d1f1f9ceb8603af7d60b2dc
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: e57451f9a4d4550413fd6fee263d949ae6909c97
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60736649"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131722"
 ---
 ```java
 
@@ -108,8 +108,57 @@ DateTimeTimeZone start = new DateTimeTimeZone();
 start.dateTime = "2018-05-01T12:00:00+00:00";
 start.timeZone = "UTC";
 bookingAppointment.start = start;
+bookingAppointment.maximumAttendeesCount = 5;
+bookingAppointment.filledAttendeesCount = 1;
+LinkedList<BookingCustomerInformationBase> customersList = new LinkedList<BookingCustomerInformationBase>();
+BookingCustomerInformation customers = new BookingCustomerInformation();
+customers.customerId = "7ed53fa5-9ef2-4f2f-975b-27447440bc09";
+customers.name = "Jordan Miller";
+customers.emailAddress = "jordanm@contoso.com";
+customers.phone = "213-555-0199";
+customers.notes = null;
+Location location = new Location();
+location.displayName = "Customer";
+location.locationEmailAddress = null;
+location.locationUri = "";
+location.locationType = null;
+location.uniqueId = null;
+location.uniqueIdType = null;
+PhysicalAddress address2 = new PhysicalAddress();
+address2.type = PhysicalAddressType.HOME;
+address2.postOfficeBox = "";
+address2.street = "";
+address2.city = "";
+address2.state = "";
+address2.countryOrRegion = "";
+address2.postalCode = "";
+location.address = address2;
+OutlookGeoCoordinates coordinates2 = new OutlookGeoCoordinates();
+coordinates2.altitude = 0d;
+coordinates2.latitude = 0d;
+coordinates2.longitude = 0d;
+coordinates2.accuracy = 0d;
+coordinates2.altitudeAccuracy = 0d;
+location.coordinates = coordinates2;
+customers.location = location;
+customers.timeZone = "America/Chicago";
+LinkedList<BookingQuestionAnswer> customQuestionAnswersList = new LinkedList<BookingQuestionAnswer>();
+BookingQuestionAnswer customQuestionAnswers = new BookingQuestionAnswer();
+customQuestionAnswers.questionId = "3bc6fde0-4ad3-445d-ab17-0fc15dba0774";
+customQuestionAnswers.question = "What is your age";
+customQuestionAnswers.answerInputType = AnswerInputType.TEXT;
+LinkedList<String> answerOptionsList = new LinkedList<String>();
+customQuestionAnswers.answerOptions = answerOptionsList;
+customQuestionAnswers.isRequired = true;
+customQuestionAnswers.answer = "25";
+LinkedList<String> selectedOptionsList = new LinkedList<String>();
+customQuestionAnswers.selectedOptions = selectedOptionsList;
+customQuestionAnswersList.add(customQuestionAnswers);
+customers.customQuestionAnswers = customQuestionAnswersList;
+customersList.add(customers);
+bookingAppointment.customers = customersList;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@M365B489948.onmicrosoft.com").appointments()
+graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").appointments()
     .buildRequest()
     .post(bookingAppointment);
 

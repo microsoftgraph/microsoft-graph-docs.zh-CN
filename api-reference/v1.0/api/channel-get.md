@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 ms.prod: microsoft-teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 8a70f36bd04f8af3e0d4b02dd90ce1c4ce973ff2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 871d6da93bf764af085072152eddb7148f207dcd
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993774"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129064"
 ---
 # <a name="get-channel"></a>获取频道
 
@@ -89,8 +89,12 @@ GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/
 [!INCLUDE [sample-code](../includes/snippets/java/get-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-channel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-channel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

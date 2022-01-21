@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 36ce0c6e94677756f539dd10dad7c6a22d20583969c7f8a3af134e134f020a3a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ccdc8259d7ce109e80b02fe169a4184e36fa1286
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57162123"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137632"
 ---
 ```java
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 String cancellationMessage = "Your appointment has been successfully cancelled. Please call us again.";
 
-graphClient.bookingBusinesses("Contosolunchdelivery@M365B489948.onmicrosoft.com").appointments("AAMkADKoAAA=")
+graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").appointments("AAMkADKoAAA=")
     .cancel(BookingAppointmentCancelParameterSet
         .newBuilder()
         .withCancellationMessage(cancellationMessage)

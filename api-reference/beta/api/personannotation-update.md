@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 27975b75e4a5b664b4275c38f78c04a80b95a9e6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bfe32a6904bd4cf95822cc16d8c477352cb956f7
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985618"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62118661"
 ---
 # <a name="update-personannotation"></a>更新 personAnnotation
 命名空间：microsoft.graph
@@ -50,7 +50,7 @@ PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 
 下表显示了在用户配置文件中的现有 [personAnnotation](../resources/personannotation.md) 对象中可以更新 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |detail|[itemBody](../resources/itembody.md)|包含注释本身的详细信息。|
@@ -94,8 +94,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-personannotation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-personannotation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-personannotation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

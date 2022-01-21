@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 817ff5e61d1c2ee55de233de4fcd1f0a9b9ae4f8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 75384d7d279c6130b78159c658695cb4239b0d1c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984400"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62124611"
 ---
 # <a name="list-includes-collection-of-permissiongrantpolicy"></a>列表包括 permissionGrantPolicy 集合
 
@@ -39,7 +39,7 @@ GET /policies/permissionGrantPolicies/{id}/includes
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -85,8 +85,12 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-includes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-get-includes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/permissiongrantpolicy-get-includes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

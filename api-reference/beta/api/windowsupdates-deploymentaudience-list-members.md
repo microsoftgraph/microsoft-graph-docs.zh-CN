@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 299ba0486488ba19ab4a86923d4d53f6e4758a60
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: ce5f4c00e237a623923ca7c3101561638f1c4f09
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862559"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62122475"
 ---
 # <a name="list-deployment-audience-members"></a>列出部署访问群体成员
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deployme
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-updatableasset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

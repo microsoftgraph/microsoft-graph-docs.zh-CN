@@ -1,16 +1,16 @@
 ---
 title: 创建 outlookTask
-description: 在Outlook邮箱的默认任务 () 和默认任务 () `My Tasks` `Tasks` 创建任务。
+description: 在Outlook邮箱的默认任务组 () 和默认任务 () `My Tasks` `Tasks` 创建任务。
 ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 23e0e9f3ef40acbe9f909304acb64605db1b251f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4bf9089145ed0b44099d1a87f341b13986cfc426
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002770"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123331"
 ---
 # <a name="create-outlooktask-deprecated"></a>创建 outlookTask（已弃用）
 
@@ -21,7 +21,7 @@ ms.locfileid: "61002770"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-在Outlook邮箱的默认任务 () 和默认任务 () `My Tasks` `Tasks` 创建任务。
+在Outlook邮箱的默认任务组 () 和默认任务 () `My Tasks` `Tasks` 创建任务。
 
 POST 方法始终忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定时间始终为指定时区中的午夜。
 
@@ -95,15 +95,19 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-outlooktask-from-outlookuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-outlooktask-from-outlookuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-outlooktask-from-outlookuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 在请求正文中，提供 [outlookTask](../resources/outlooktask.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-POST 方法忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定指定时区 (EST) 。
+POST 方法忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定指定时区 (EST 时间始终为午夜) 。
 
 由于标头指定 PST，因此 POST 方法在 PST 中表示响应中所有与 `Prefer` 日期相关的属性。 特别是，对于 **startDateTime 和 dueDateTime** 属性，POST 方法将在 EST 中的午夜转换为 PST，在响应中以 PST 格式返回它们。 
 

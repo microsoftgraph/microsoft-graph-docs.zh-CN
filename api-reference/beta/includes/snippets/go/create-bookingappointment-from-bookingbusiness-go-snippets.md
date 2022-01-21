@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3882c444c7d489ef8ca92c36d426128ca9f40fa7
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 1fd8fafc0f3407adcd60ebd2a895a63614640851
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101554"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131721"
 ---
 ```go
 
@@ -169,6 +169,24 @@ timeZone := "UTC"
 start.SetTimeZone(&timeZone)
 start.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.dateTimeTimeZone",
+}
+maximumAttendeesCount := int32(5)
+requestBody.SetMaximumAttendeesCount(&maximumAttendeesCount)
+filledAttendeesCount := int32(1)
+requestBody.SetFilledAttendeesCount(&filledAttendeesCount)
+requestBody.SetCustomers( []BookingCustomerInformationBase {
+    msgraphsdk.NewBookingCustomerInformationBase(),
+    SetAdditionalData(map[string]interface{}{
+        "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+        "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+        "name": "Jordan Miller",
+        "emailAddress": "jordanm@contoso.com",
+        "phone": "213-555-0199",
+        "notes": nil,
+        "timeZone": "America/Chicago",
+        "customQuestionAnswers":  []Object {
+        }
+    }
 }
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.bookingAppointment",

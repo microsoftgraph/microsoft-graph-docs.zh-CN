@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 5c9c1f449586807355ffcc82e61629492fbde2b0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f4ceb0baee46e9a7a43c11abacae92d19e0a0740
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030497"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135664"
 ---
 # <a name="delete-cloudpcprovisioningpolicy"></a>删除 cloudPcProvisioningPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "61030497"
 
 删除 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。 无法删除使用中的策略。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -86,8 +86,12 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisi
 [!INCLUDE [sample-code](../includes/snippets/java/delete-provisioningpolicies-from-virtualendpoint-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-provisioningpolicies-from-virtualendpoint-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-provisioningpolicies-from-virtualendpoint-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

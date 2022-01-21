@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9f53b176676529e1dd09d7b9e3ebe0a233659cc7
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b6245b5348ea97adb0f3897d9aa385bef31912d4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61097190"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137669"
 ---
 ```javascript
 
@@ -15,13 +15,13 @@ const options = {
 
 const client = Client.init(options);
 
-const externalGroupMember = {
+const identity = {
   id: 'e5477431-1038-484e-bf69-1dfedb97a110',
   type: 'externalGroup',
 };
 
 await client.api('/external/connections/contosohr/groups/31bea3d537902000/members')
     .version('beta')
-    .post(externalGroupMember);
+    .post(identity);
 
 ```

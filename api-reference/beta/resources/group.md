@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d98f91b33cc13e874d8b3dce42ad9bb871349e9d
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: c33bc52028fb87fe807b282ace7e30ea7c0cec48
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604348"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117953"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -92,10 +92,10 @@ ms.locfileid: "61604348"
 | [Add rejectedSender](../api/group-post-rejectedsenders.md) | [directoryObject](directoryobject.md) | 将新用户或组添加到 rejectedSenders 集合中。 |
 | [Remove rejectedSender](../api/group-delete-rejectedsenders.md) | [directoryObject](directoryobject.md) | 从 rejectedSenders 集合中删除新用户或组。 |
 | **目录对象** |||
-| [列出已删除的组](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | 检索租户中过去 30 天内被删除的组。 |
+| [列出已删除的组](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索租户中过去 30 天内被删除的组。 |
 | [列出用户拥有的已删除组](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 检索租户中最近 30 天内删除的用户所有的组。 |
-| [获取已删除的组](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) 集合 | 按 ID 检索已删除的组。 |
-| [恢复已删除的组](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | 还原最近 30 天内在租户中删除的组。 |
+| [获取已删除的组](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | 按 ID 检索已删除的组。 |
+| [恢复已删除的组](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) 集合 | 还原最近 30 天内在租户中删除的组。 |
 | [永久删除组](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | 从租户中永久删除已删除的组。 |
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String 集合 | 在一列组中检查成员身份。此函数是可传递的。 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回此组是其成员的所有组。此函数是可传递的。 |
@@ -144,19 +144,19 @@ ms.locfileid: "61604348"
 |id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。|
 |isAssignableToRole|Boolean|指示是否可以将此组分配给 Azure Active Directory 角色。 可选。<br><br>此属性只能在创建组时设置，并且不可变。 如果设置为 `true`，则 **securityEnabled** 属性也必须设置为 `true`，并且该组不能是动态组（即，**groupTypes** 不能包含 `DynamicMembership`）。 只有全局管理员和特权角色管理员角色中的调用方可以设置此属性。 必须向调用方分配 *RoleManagement.ReadWrite.Directory* 权限，才能设置此属性或更新此类组成员的身份。 有关更多信息，请参阅[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`）。|
 |infoCatalogs|字符串集合|标识分配给组的信息段。默认返回。支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）|
-|isSubscribedByMail|Boolean|指示是否订阅已登录用户以接收电子邮件对话。默认值为 `true`。 <br><br>仅在 `$select`返回。仅在 Get 组 API （`GET /groups/{ID}`） 上受支持。 |
+|isSubscribedByMail|Boolean|指示是否订阅已登录用户以接收电子邮件对话。默认值为 `true`。 <br><br>仅在 `$select` 上返回。仅在 Get 组 API（`GET /groups/{ID}`）上受支持。 |
 |licenseProcessingState|String|指示对该组所有成员的组许可证分配的状态。可能的值：`QueuedForProcessing`、`ProcessingInProgress` 和 `ProcessingComplete`。 <br><br>仅在 `$select` 返回。只读。 |
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |mailEnabled|Boolean|指定组是否启用邮件。必需。<br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`not` 和 `null` 值上的 `eq`）。|
 |mailNickname|String|组的邮件别名，它对于组织中的 Microsoft 365 组是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 <br><br>默认返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。 <br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`startsWith`）。 |
+|membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](/azure/active-directory/enterprise-users/groups-dynamic-membership)。 <br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`startsWith`）。 |
 |membershipRuleProcessingState|String|指示动态成员身份处理是打开还是暂停。可能的值为 `On` 或 `Paused`。 <br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`、`in`）。 |
 |membershipRuleProcessingStatus|[membershipRuleProcessingStatus](membershipruleprocessingstatus.md) |描述基于规则的动态组的处理状态。 该属性 `null` 针对非基于规则的动态组或如果动态组处理已暂停。 <br><br>仅在 `$select` 上返回。仅在 Get 组 API (`GET /groups/{ID}`) 上受支持。只读。 |
 |onPremisesDomainName|String|包含从本地目录同步的本地 **域 FQDN**，也称为 **dnsDomainName**。仅为正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。<br><br>默认返回。只读。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示上次将组与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 只读。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`）。|
 |onPremisesNetBiosName|String|包含从本地目录同步的本地 **netBios 名称**。仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。<br><br>默认返回。只读。 |
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>默认返回。支持 `$filter`（`eq`、`not`）。 |
-|onPremisesSamAccountName|String|包含从本地目录同步的本地 **SAM 帐户名称**。该属性仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充。<br><br>默认返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。 只读。 |
+|onPremisesSamAccountName|String|包含从本地目录同步的本地 **SAM 帐户名称**。该属性仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充。<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。 只读。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。 <br><br>默认情况下返回。 支持 `null` 值上的 `$filter`。 只读。 |
 |onPremisesSyncEnabled|Boolean|如果此组从本地目录同步，则为 `true`；如果此组最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 **null**（默认值）。 <br><br>默认情况下返回。 只读。 支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。 |
 |preferredDataLocation|String|Microsoft 365 组的首选数据位置。 默认情况下，组继承组创建者的首选数据位置。 若要设置此属性，必须为调用用户分配以下 [Azure AD 角色之一](/azure/active-directory/roles/permissions-reference)： <br><ul><li> 全局管理员 <li> 用户帐户管理员 <li>目录写入程序 <li> Exchange 管理员 <li> SharePoint 管理员 </ul><br/> 有关此属性的详细信息，请参阅  [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>默认返回。可为空。|
@@ -183,7 +183,7 @@ ms.locfileid: "61604348"
 
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|表示已为应用程序授予组的应用角色。支持 `$expand`。 |
@@ -341,4 +341,3 @@ ms.locfileid: "61604348"
   "suppressions": []
 }
 -->
-

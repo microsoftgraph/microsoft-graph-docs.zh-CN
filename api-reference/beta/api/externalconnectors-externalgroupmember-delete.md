@@ -2,15 +2,15 @@
 title: 删除 externalGroupMember
 description: 删除 externalGroupMember 对象。
 author: snlraju-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 2e72739cb637593e2a846536e3b92a40dde693f4
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 01cfa286d6074732bb11fc4db9ae277e34087526
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467574"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "62125906"
 ---
 # <a name="delete-externalgroupmember"></a>删除 externalGroupMember
 
