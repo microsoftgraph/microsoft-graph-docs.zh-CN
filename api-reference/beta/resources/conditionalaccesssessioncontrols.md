@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessSessionControls 资源类型
 description: 表示登录后强制执行的复杂会话控件类型。
-localization_priority: Normal
-author: videor
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: bf50399a26999c35730e2ce0c171c1be8777841d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c60d87cfab617bea22df27e8a289e90fb889b78a
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134887"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161621"
 ---
 # <a name="conditionalaccesssessioncontrols-resource-type"></a>conditionalAccessSessionControls 资源类型
 
@@ -25,10 +25,12 @@ ms.locfileid: "50134887"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| 强制实施应用程序限制的会话控制。 只有 Exchange Online 和 Sharepoint Online 支持此会话控制。 |
+|applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| 强制执行应用程序限制的会话控制。 只有 Exchange Online 和 Sharepoint Online 支持此会话控制。 |
 |cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| 应用云应用安全性的会话控制。|
+|continuousAccessEvaluation|[continuousAccessEvaluationSessionControl](../resources/continuousaccessevaluationsessioncontrol.md)|连续访问评估设置的会话控制。|
+|disableResilienceDefaults|布尔| 会话控制，用于确定用户是否可以Azure AD中断之前收集的信息来扩展现有会话。|
 |persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| 用于定义是否保留 Cookie 的会话控件。 应选择所有应用，使此会话控件正常工作。 |
-|signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| 强制登录频率的会话控制。|
+|signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| 强制执行登录频率的会话控制。|
 
 ## <a name="relationships"></a>关系
 
@@ -44,7 +46,9 @@ ms.locfileid: "50134887"
     "applicationEnforcedRestrictions",
     "persistentBrowser",
     "cloudAppSecurity",
-    "signInFrequency"
+    "signInFrequency",
+    "continuousAccessEvaluation",
+    "disableResilienceDefaults"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessSessionControls",
   "baseType": null
@@ -54,8 +58,10 @@ ms.locfileid: "50134887"
 {
   "applicationEnforcedRestrictions": {"@odata.type": "microsoft.graph.applicationEnforcedRestrictionsSessionControl"},
   "cloudAppSecurity": {"@odata.type": "microsoft.graph.cloudAppSecuritySessionControl"},
+  "continuousAccessEvaluation": {"@odata.type": "microsoft.graph.continuousAccessEvaluationSessionControl"},
   "persistentBrowser": {"@odata.type": "microsoft.graph.persistentBrowserSessionControl"},
-  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"}
+  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"},
+  "disableResilienceDefaults": false
 }
 ```
 

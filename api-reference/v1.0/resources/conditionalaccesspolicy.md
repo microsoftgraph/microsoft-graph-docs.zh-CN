@@ -1,22 +1,22 @@
 ---
 title: conditionalAccessPolicy 资源类型
-description: 表示一Azure Active Directory访问策略。 条件访问策略是定义访问方案的自定义规则。
+description: 表示Azure Active Directory访问策略。 条件访问策略是定义访问方案的自定义规则。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7d5818f4bca8aec154eaafa8288df548b530644d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ad0a8d4c2d1b9325b550a87a8d0f024d58b9d6b6
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109253"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161219"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>conditionalAccessPolicy 资源类型
 
 命名空间：microsoft.graph
 
-表示一Azure Active Directory访问策略。 条件访问策略是定义访问方案的自定义规则。 有关详细信息，请参阅条件 [访问文档](/azure/active-directory/conditional-access/)。
+表示Azure Active Directory访问策略。 条件访问策略是定义访问方案的自定义规则。 有关详细信息，请参阅条件 [访问文档](/azure/active-directory/conditional-access/)。
 
 ## <a name="methods"></a>方法
 
@@ -26,13 +26,13 @@ ms.locfileid: "59109253"
 | [创建 conditionalAccessPolicy](../api/conditionalaccessroot-post-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | 创建新的 conditionalAccessPolicy 对象。 |
 | [获取 conditionalAccessPolicy](../api/conditionalaccesspolicy-get.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | 读取 conditionalAccessPolicy 对象的属性和关系。 |
 | [更新 conditionalAccessPolicy](../api/conditionalaccesspolicy-update.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | 更新 conditionalAccessPolicy 对象。 |
-| [删除 conditionalAccessPolicy](../api/conditionalaccesspolicy-delete.md) | 无 | 删除 conditionalAccessPolicy 对象。 |
+| [删除 conditionalAccessPolicy](../api/conditionalaccesspolicy-delete.md) | None | 删除 conditionalAccessPolicy 对象。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| 指定应用策略时必须满足的规则。 必填。 |
+|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| 指定应用策略时必须满足的规则。 必需。 |
 |createdDateTime|DateTimeOffset| 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 |displayName|String| 为 conditionalAccessPolicy 显示名称指定一个属性。 |
 |grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| 指定必须通过此策略而必须实现的授予控制。 |

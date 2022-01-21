@@ -2,15 +2,15 @@
 title: 创建 namedLocation
 description: 创建新的 namedLocation。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4bedd0b4204984634efc0e88dcfbd9fc9822e7cc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4433d9c754b195c83a15df5fab4c73b17de0c263
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103751"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161807"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 
@@ -47,14 +47,14 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。 必须指定派生@odata类型的 **@odata.type，** 即 `#microsoft.graph.ipNamedLocation` [ipNamedLocation](../resources/ipnamedlocation.md) 对象或 `#microsoft.graph.countryNamedLocation` [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
+在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。 必须指定派生@odata的 **@odata.type，** 即 `#microsoft.graph.ipNamedLocation` [ipNamedLocation](../resources/ipnamedlocation.md) 对象或 `#microsoft.graph.countryNamedLocation` [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
 
 下表列出了创建 [ipNamedLocation](../resources/ipnamedlocation.md) 对象所需的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|位置的可读名称。 必需。|
-|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (例如 1.2.3.4/32) IETF RFC596 中任何允许的 IPv6 格式。 必需。 此外 **@odata** ipRange 的 @odata.type。|
+|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (例如 1.2.3.4/32) IETF RFC596 中任何允许的 IPv6 格式。 必需。 还需要 **@odata** ipRange 的 @odata.type。|
 
 下表列出了创建 [countryNamedLocation](../resources/countrynamedlocation.md) 对象所需的属性。
 

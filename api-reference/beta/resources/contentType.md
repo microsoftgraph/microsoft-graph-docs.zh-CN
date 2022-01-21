@@ -5,12 +5,12 @@ title: contentType
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5a0f8fb70900e4498a17db4bc7ba75337c3e4c4d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b2c4cc3e7fe2b9e516936cf4eb28cdb14193e0fc
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111554"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161646"
 ---
 # <a name="contenttype-resource-type"></a>contentType 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "62111554"
 内容类型允许您定义一组列，这些列必须存在于列表中的每个 [**listItem**][listItem] [**上**][list]。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出网站中的 contentTypes](../api/site-list-contenttypes.md)|[contentType](../resources/contenttype.md) 集合|获取网站 中的 [contentType](../resources/contenttype.md) 对象及其属性 [的列表](../resources/site.md)。|
 |[列出列表中的 contentTypes](../api/list-list-contenttypes.md)|[contentType](../resources/contenttype.md) 集合|在列表中获取 [contentType](../resources/contenttype.md) 对象及其属性 [的列表](../resources/list.md)。|
@@ -38,11 +38,12 @@ ms.locfileid: "62111554"
 |[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| 将文件复制到 contentType 中的默认 [内容位置](../resources/contenttype.md)。|
 |[List columns](../api/contenttype-list-columns.md)|[columnDefinition](../resources/columnDefinition.md) 集合|获取 **contentType** 中的列的集合，这些列表示为 [columnDefinition](../resources/columnDefinition.md)资源。|
 |[创建列](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|向网站或 **列表中的内容** 类型添加列。|
-
+|[getCompatibleHubContentTypes](../api/contenttype-getcompatiblehubcontenttypes.md)|[contentType](../resources/contenttype.md) 集合| 从可添加到网站或列表的内容类型中心检索已发布的内容类型。|
+|[addCopyFromContentTypeHub](../api/contenttype-addcopyfromcontenttypehub.md)|[contentType](../resources/contenttype.md)| 将兼容内容类型从内容类型中心添加或同步到网站或列表。|
 
 ## <a name="properties"></a>属性
 
-| 属性名称     | 类型                 | Description
+| 属性名称     | 类型                 | 说明
 |:------------------|:---------------------|:----------------------------------
 | **说明**   | string               | 项目的描述性文本。
 | **group**         | string               | 此内容类型所属的组的名称。 可以帮助组织相关的内容类型。
@@ -64,7 +65,7 @@ ms.locfileid: "62111554"
 
 ## <a name="relationships"></a>关系
 
-| 属性名称   | 类型                      | Description
+| 属性名称   | 类型                      | 说明
 |:----------------|:--------------------------|:-------------------------------
 | **base**   | [contentType][]  | 派生此内容类型的父 contentType。 
 | **columnLinks** | [columnLink][] 集合 | 此内容类型所需的列集合

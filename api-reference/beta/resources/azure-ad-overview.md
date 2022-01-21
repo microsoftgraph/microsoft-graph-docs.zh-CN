@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access
 author: dkershaw10
-ms.openlocfilehash: 79bb030b852e861fb3437f3ba90181703b0b735e
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 566b748d76b5947d9807d212d15aeb299f2364b1
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61649766"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162081"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 
@@ -44,7 +44,7 @@ ms.locfileid: "61649766"
 | 将 Azure AD 策略应用到应用程序、服务主体、组或整个组织。 支持声明映射、令牌颁发、令牌生存期、主页领域发现等策略。  | [可用策略](../resources/policy-overview.md) | 不适用 |
 | **保护至 Azure AD 的特权访问** | | |
 | 利用 Privileged Identity Management (PIM) 为管理员和 IT 专业人员管理和监控至目录和 Azure 资源的具有时间限定的特权访问。 | [Privileged Identity Management API](../resources/privilegedidentitymanagement-root.md) | [什么是 Azure AD Privileged Identity Management？](/azure/active-directory/active-directory-privileged-identity-management-configure)|
-| 监视身份风险事件，如用户从被恶意感染的设备或从不熟悉的位置登录。 | [Identity Protection 服务 API](../resources/identityprotection-root.md) | [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection)<br/><br/>[Azure Active Directory 风险事件](/azure/active-directory/active-directory-reporting-risk-events) |
+| 监视身份风险事件，如用户从被恶意感染的设备或从不熟悉的位置登录。 | [Identity Protection 服务 API](../resources/identityprotection-overview.md) | [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection)<br/><br/>[Azure Active Directory 风险事件](/azure/active-directory/active-directory-reporting-risk-events) |
 | **管理设备** | | |
 | 管理组织中的注册设备。设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。条件访问策略使用它们进行多重身份验证。 | [设备](../resources/device.md) | [Azure Active Directory 设备注册入门](/azure/active-directory/active-directory-device-registration-overview) |
 | **应用管理** | | |

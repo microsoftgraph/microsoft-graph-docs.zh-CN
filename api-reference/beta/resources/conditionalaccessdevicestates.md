@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessDeviceStates 资源类型
 description: 表示策略作用域中的设备状态。
-localization_priority: Normal
-author: videor
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 152c4edbd641d68f6211111cb29e9794e2a88260
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: baeb5bd02534cd700af50d9f4984ef7e1baf4eb6
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761798"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161997"
 ---
 # <a name="conditionalaccessdevicestates-resource-type"></a>conditionalAccessDeviceStates 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "50761798"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeStates | 字符串集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 |
-| excludeStates | 字符串集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 |
+| includeStates | String 集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 |
+| excludeStates | String 集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 |
 
 ## <a name="relationships"></a>关系
 

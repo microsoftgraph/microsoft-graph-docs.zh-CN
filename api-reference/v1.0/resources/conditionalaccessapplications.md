@@ -2,15 +2,15 @@
 title: conditionalAccessApplications 资源类型
 description: 表示策略作用域中包含和排除的应用程序和用户操作。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: bd1b478b3bb77617d132a38217e43e4b053a2772
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: df2802c605bb4cbc8874e08d1bd9c9a63a47257f
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084613"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161891"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>conditionalAccessApplications 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59084613"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeApplications | String collection | 除非在 excludeApplications 或) 中明确 (应用策略的应用程序) 。 也可以设置为 `All` 。 |
+| includeApplications | String 集合 | 除非在 excludeApplications (明确排除，否则应用策略的应用程序) 。 也可以设置为 `All` 。 |
 | excludeApplications | 字符串集合 | 从策略中显式排除的应用程序 ID 列表。 |
 | includeUserActions | 字符串集合 | 要包含的用户操作。 支持的值 `urn:user:registersecurityinfo` 包括 和 `urn:user:registerdevice` |
 

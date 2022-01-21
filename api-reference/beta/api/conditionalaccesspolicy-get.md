@@ -2,15 +2,15 @@
 title: 获取 conditionalAccessPolicy
 description: 检索 conditionalAccessPolicy 对象的属性和关系。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 39cf1a300e3177a8fb7a2af824620c1236fcfbdb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 33730aaeb13e43cdec8d58913cb1416f4c4e29b5
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131409"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161779"
 ---
 # <a name="get-conditionalaccesspolicy"></a>获取 conditionalAccessPolicy
 

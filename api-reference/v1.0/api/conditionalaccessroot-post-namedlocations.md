@@ -2,15 +2,15 @@
 title: 创建 namedLocation
 description: 创建新的 namedLocation。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: be21066b7f317f6b76ba2f4cd9ce51807320303c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ff123f9a28b349b2f106fb04ccf6d722f8deaf4d
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122267"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161955"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 
@@ -52,7 +52,7 @@ POST /identity/conditionalAccess/namedLocations
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|位置的可读名称。 必需。|
-|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (例如 1.2.3.4/32) IETF RFC596 中任何允许的 IPv6 格式。 必需。 此外 **@odata** ipRange 的 @odata.type。|
+|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (例如 1.2.3.4/32) IETF RFC596 中任何允许的 IPv6 格式。 必需。 还需要 **@odata** ipRange 的 @odata.type。|
 
 下表列出了创建 [countryNamedLocation](../resources/countrynamedlocation.md) 对象所需的属性。
 

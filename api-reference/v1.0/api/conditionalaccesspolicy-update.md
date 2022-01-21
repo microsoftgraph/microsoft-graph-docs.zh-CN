@@ -2,15 +2,15 @@
 title: 更新 conditionalaccesspolicy
 description: 更新 conditionalAccessPolicy 对象的属性。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cf019828c140446cf9af49333cc4740b9512ac9b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1ef081e5e6b9adf8766922c0dc72de6423c55c23
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117900"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161849"
 ---
 # <a name="update-conditionalaccesspolicy"></a>更新 conditionalaccesspolicy
 

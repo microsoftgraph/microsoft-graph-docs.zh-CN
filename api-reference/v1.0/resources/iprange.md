@@ -2,15 +2,15 @@
 title: ipRange 资源类型
 description: 表示 IPV4 和 IPV6 地址范围的 IP 范围基类。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b0bb1aba5e0a8f26e12aa8d8f1e273dd58617f68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a6f963e471e29c17191e8a5710ecef4828c28b60
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089380"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161870"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
 

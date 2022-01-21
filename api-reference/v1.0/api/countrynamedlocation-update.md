@@ -2,15 +2,15 @@
 title: 更新 countryNamedlocation
 description: 更新 countryNamedLocation 对象的属性。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5bdb25a2a429dfbf699e469307ab4282eee72d86
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e21fda7b769c7fb1a0ee05dd178ca87c11e3cdf7
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126382"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161492"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
@@ -49,7 +49,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 必须将 **@odata.type** 指定为 `#microsoft.graph.countryNamedLocation` 。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |countriesAndRegions|字符串集合|ISO 3166-2 指定的两字母格式的国家/地区列表。|
 |displayName|String|位置的可读名称。|

@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessPolicy 资源类型
 description: 表示Azure Active Directory访问策略。 条件访问策略是定义访问方案的自定义规则。
-localization_priority: Normal
-author: videor
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2c64d0dc0c531437f000e9c2e36d1af51ddf204d
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 5aa585b12b75a88452dc3dbde7c24d08b60cbcd4
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547174"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161674"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>conditionalAccessPolicy 资源类型
 
@@ -28,13 +28,13 @@ ms.locfileid: "52547174"
 | [创建 conditionalAccessPolicy](../api/conditionalaccessroot-post-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | 创建新的 conditionalAccessPolicy 对象。 |
 | [获取 conditionalAccessPolicy](../api/conditionalaccesspolicy-get.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | 读取 conditionalAccessPolicy 对象的属性和关系。 |
 | [更新 conditionalAccessPolicy](../api/conditionalaccesspolicy-update.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | 更新 conditionalAccessPolicy 对象。 |
-| [删除 conditionalAccessPolicy](../api/conditionalaccesspolicy-delete.md) | 无 | 删除 conditionalAccessPolicy 对象。 |
+| [删除 conditionalAccessPolicy](../api/conditionalaccesspolicy-delete.md) | None | 删除 conditionalAccessPolicy 对象。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| 指定应用策略时必须满足的规则。 必填。 |
+|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| 指定应用策略时必须满足的规则。 必需。 |
 |createdDateTime|DateTimeOffset| 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 |说明|String| 未使用。 |
 |displayName|String| 为 conditionalAccessPolicy 显示名称指定一个属性。 |

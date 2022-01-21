@@ -2,15 +2,15 @@
 title: 创建 conditionalAccessPolicy
 description: 创建新的 conditionalAccessPolicy。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 54d87f5f295fd6c0b17cdf0add9c1c62e02fa69a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3b717280287a479672f30d6ee813aad7411ebb2d
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135630"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162060"
 ---
 # <a name="create-conditionalaccesspolicy"></a>创建 conditionalAccessPolicy
 
@@ -208,7 +208,7 @@ Content-type: application/json
 ### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>示例 2：阻止Exchange Online来自非受信任区域的访问权限
 
 #### <a name="request"></a>请求
-以下示例显示一个阻止访问来自非Exchange Online/未知区域的请求。
+以下示例显示一个阻止访问来自Exchange Online/未知区域的请求。
 此示例假定 id 为 198ad66e-87b3-4157-85a3-8a7b51794ee9 的命名位置对应于不受信任的/未知区域的列表。
 
 
@@ -616,7 +616,7 @@ Content-type: application/json
 >**注意：** We are deprecating the **deviceStates** condition， and it may be removed in the future. 今后，使用 **设备** 条件。
 
 #### <a name="request"></a>请求
-以下示例显示要求 MFA 从非投诉Exchange Online的请求。
+以下示例显示要求 MFA 从非投诉Exchange Online请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

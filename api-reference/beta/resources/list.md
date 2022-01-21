@@ -3,15 +3,15 @@ author: JeremyKelley
 description: ”列表”资源代表网站中的列表。
 ms.date: 09/11/2017
 title: List
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 30d26dfd3e140f302c6535cd6603a90568dbb567
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 0703f3df00f97391f7f06785bebc880b29bbefbd
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317096"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161863"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -28,7 +28,7 @@ ms.locfileid: "53317096"
 **注意：** 此测试版只允许导航列表，不允许创建或更新列表。
 但是，可以创建或更新[列表项][listItem]。
 
-下面的所有示例都相对于网站，例如， `https://graph.microsoft.com/beta/sites/{site-id}` 。
+下面的所有示例都与网站相关，例如：`https://graph.microsoft.com/beta/sites/{site-id}`。
 
 | 常见任务               | HTTP 方法
 |:--------------------------|:------------------------------
@@ -45,6 +45,7 @@ ms.locfileid: "53317096"
 |[从网站添加内容类型副本][] | POST /lists/{list-id}/contentTypes/addCopy
 |[List columns][]               | GET /lists/{list-id}/columns
 |[创建列][]              | POST /lists/{list-id}/columns
+|[列出操作](../api/list-list-operations.md)|GET /lists/{list-id}/operations
 
 [获取网站中的列表]: ../api/list-list.md
 [获取列表]: ../api/list-get.md
@@ -59,6 +60,7 @@ ms.locfileid: "53317096"
 [从网站添加内容类型副本]: ../api/contenttype-addCopy.md
 [List columns]: ../api/list-list-columns.md
 [创建列]: ../api/list-post-columns.md
+
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是 **list** 资源的 JSON 表示形式。
@@ -107,7 +109,7 @@ ms.locfileid: "53317096"
 | **contentTypes** | Collection([contentType][])      | 此列表中出现的内容类型的集合。
 | **displayName**  | string                           | 列表的可显示标题。
 | **list**         | [listInfo][]                     | 提供关于列表的其他详细信息。
-| **system**       | [systemFacet][]                  | 如果存在，则表示这是系统管理的列表。 只读。
+| **system**       | [systemFacet][]                  | 如果存在，则表示这是系统管理的列表。只读。
 
 以下属性继承自 **[baseItem][]**。
 
@@ -115,10 +117,10 @@ ms.locfileid: "53317096"
 |:-------------------------|:-----------------|:-------------------------------
 | **id**                   | string           | 项的唯一标识符。只读。
 | **名称**                 | string           | 项目名称。
-| **createdBy**            | [identitySet][]  | 此项的创建者的标识。 只读。
+| **createdBy**            | [identitySet][]  | 此项的创建者的标识。只读。
 | **createdDateTime**      | DateTimeOffset   | 创建项目的日期和时间。只读。
 | **说明**          | string           | 项目的描述性文本。
-| **lastModifiedBy**       | [identitySet][]  | 此项的最后一个修饰符的标识。 只读。
+| **lastModifiedBy**       | [identitySet][]  | 此项最后一个修饰符的标识。只读。
 | **lastModifiedDateTime** | DateTimeOffset   | 上次修改项目的日期和时间。只读。
 | **webUrl**               | string (url)     | 在浏览器中显示此项目的 URL。只读。
 
@@ -129,9 +131,10 @@ ms.locfileid: "53317096"
 | 关系名称 | 类型                        | 说明
 |:------------------|:----------------------------|:------------------------------
 | **activities**    | [itemActivity][] 集合 | 最近发生在此列表内的活动。
-| **drive**         | [drive][]                   | 仅存在于文档库中。 允许使用 [driveItems][driveItem] 作为 [drive][] 资源访问列表。
+| **drive**         | [drive][]                   | 仅存在于文档库中。允许使用 [driveItems][driveItem] 作为 [drive][] 资源访问列表。
 | **项目**         | Collection([listItem][])    | 列表中包含的所有项。
 | 订阅      | [订阅][]集合 | 列表上的订阅集。
+|**operations**|[richLongRunningOperation](../resources/richlongrunningoperation.md) 集合| 列表长时间运行的操作的集合。
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md

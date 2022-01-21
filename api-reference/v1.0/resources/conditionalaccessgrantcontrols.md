@@ -2,15 +2,15 @@
 title: conditionalAccessGrantControls 资源类型
 description: 表示必须通过策略而必须实现的授予控制。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d4e1b01338011e41994347beeeaeb2c7d53fbb16
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03b1b717b59e91d115f5974ff691ad2db956b4a3
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104220"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162054"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>conditionalAccessGrantControls 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "59104220"
 |:-------- |:---- |:----------- |
 | operator | String | 定义授予控件的关系。 可能的值 `AND` `OR` ：、。 |
 | builtInControls | conditionalAccessGrantControl 集合 | 策略所需的内置控件的值列表。 可能的值 `block` `mfa` `compliantDevice` ：、、、、、、、。 `domainJoinedDevice` `approvedApplication` `compliantApplication` `passwordChange` `unknownFutureValue` |
-| customAuthenticationFactors | String collection | 策略所需的自定义控件的 ID 列表。 有关详细信息，请参阅自定义 [控件](/azure/active-directory/conditional-access/controls)。 |
-| termsOfUse | String collection | 策略 [所需的使用条款](/graph/api/resources/agreement) ID 列表。 |
+| customAuthenticationFactors | 字符串集合 | 策略所需的自定义控件的 ID 列表。 有关详细信息，请参阅自定义 [控件](/azure/active-directory/conditional-access/controls)。 |
+| termsOfUse | String 集合 | 策略 [所需的使用条款](/graph/api/resources/agreement) ID 列表。 |
 
 ### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>用作控件时 `passwordChange` 的特殊注意事项
 

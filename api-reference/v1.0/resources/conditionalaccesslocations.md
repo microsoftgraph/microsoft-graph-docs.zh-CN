@@ -2,15 +2,15 @@
 title: conditionalAccessLocations 资源类型
 description: 表示包含在策略作用域中和从策略范围中排除的位置。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 68804b5728fd058d2502ac041a24c3a218692b93
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0e5e7de8a751c118a4d1a260a348a04ec1da2fb5
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109245"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161212"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>conditionalAccessLocations 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "59109245"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | includeLocations | 字符串集合 | 除非明确排除 、或 ，否则策略范围内的位置 `All` `AllTrusted` ID。 |
-| excludeLocations | String collection | 从策略作用域中排除的位置 ID。 |
+| excludeLocations | 字符串集合 | 从策略作用域中排除的位置 ID。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

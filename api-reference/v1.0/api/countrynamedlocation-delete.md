@@ -2,15 +2,15 @@
 title: 删除 countryNamedLocation
 description: 删除 countryNamedLocation 对象。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d5b3b72335cd9f628fb89444202a516d473f7b82
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 98094ecbeced4f6591eddcef537b7b8b81ad5880
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134824"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161800"
 ---
 # <a name="delete-countrynamedlocation"></a>删除 countryNamedLocation
 

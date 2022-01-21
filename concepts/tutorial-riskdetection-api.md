@@ -4,18 +4,18 @@ description: 了解如何使用 Microsoft Graph API 识别和修正风险。
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 5c32ea73d83366188954f4736e0a1cbd17064ddb
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 4402c6d2873f1405199a0c32701c5d48526bb4d5
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61523256"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161744"
 ---
 # <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph API 识别和修正风险
 
 Azure AD Identity Protection 使组织能够深入了解基于标识的风险以及调查和自动修正风险的不同方法。 本教程中使用的 Identity Protection API 可以帮助您识别风险，并配置工作流以确认泄露或启用修正。 有关详细信息，请参阅 [什么是风险？](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
-本教程介绍如何生成有风险的登录，以及使用要求多重身份验证和 MFA 身份验证的条件访问策略修正用户 (状态) 。 可选部分展示了如何阻止用户也使用条件访问策略登录，并消除用户风险。
+在本教程中，你将了解如何生成有风险的登录，以及使用要求多重身份验证和 MFA 身份验证的条件访问策略修正用户 (状态) 。 可选部分展示了如何阻止用户也使用条件访问策略登录，并消除用户风险。
 
 >**注意：** 为了可读性，本教程中显示的响应对象可能会缩短。 
 
@@ -23,7 +23,7 @@ Azure AD Identity Protection 使组织能够深入了解基于标识的风险以
 
 若要成功完成本教程，请确保满足以下先决条件：
 
-- 你必须拥有一Azure AD Premium P1 P2 许可证才能使用风险检测 API。
+- 你必须拥有一个Azure AD Premium P1 P2 许可证才能使用风险检测 API。
 - 本教程使用 Tor 浏览器匿名登录 Azure 门户。 可以使用任何匿名浏览器来完成该任务。 若要下载 Tor 浏览器，请参阅 [下载 Tor 浏览器](https://www.torproject.org/download/)。
 - 本教程的前提是使用 Microsoft Graph Explorer，但是可以使用 Postman，也可以创建自己的客户端应用程序来调用 Microsoft Graph。 如果要在本教程中调用 Microsoft Graph API，需要使用具有全局管理员角色和适当权限的帐户。 完成以下步骤以在 Microsoft Graph Explorer 中设置权限：
     1. 启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
@@ -33,9 +33,9 @@ Azure AD Identity Protection 使组织能够深入了解基于标识的风险以
         ![设置权限](./images/tutorial-riskdetection-api/set-permissions.png)
         
     4. 滚动浏览这些权限的权限列表：
-        - **IdentityRiskEvents (2) ，** 展开并选择 `IdentityRiskEvent.Read.All`
+        - **IdentityRiskEvents (2) ，** 展开，然后选择 `IdentityRiskEvent.Read.All`
         - **IdentityRiskyUser (2) ，** 展开并选择 `IdentityRiskyUser.ReadWrite.All`
-        - **策略 (13) ，** 展开并选择 `Policy.Read.All``Policy.ReadWrite.ConditionalAccess`
+        - **策略 (13) ，** 展开，然后选择 `Policy.Read.All``Policy.ReadWrite.ConditionalAccess`
         - **用户 (8) ，** 展开并选择 `User.ReadWrite.All`
         
         ![搜索权限](./images/tutorial-riskdetection-api/permissions-consent.png)
@@ -488,7 +488,8 @@ No Content - 204
 - [什么是标识保护？](/azure/active-directory/identity-protection/overview-identity-protection)
 - [什么是条件访问？](/azure/active-directory/conditional-access/overview)
 - [工作原理：Azure 多重身份验证](/azure/active-directory/authentication/concept-mfa-howitworks)
-- [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-1.0)
-- [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-1.0)
-- [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-- [用户](/graph/api/resources/user?view=graph-rest-1.0)
+- [在 Identity Protection 中模拟风险检测](/azure/active-directory/identity-protection/howto-identity-protection-simulate-risk)
+- [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy)
+- [riskDetection](/graph/api/resources/riskdetection)
+- [riskyUser](/graph/api/resources/riskyuser)
+- [用户](/graph/api/resources/user)

@@ -2,15 +2,15 @@
 title: conditionalAccessConditionSet 资源类型
 description: 表示策略应用时所控制的条件类型。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ece6ab6984cf6d6feaf76955a666297e9f15a935
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d331a2e1995b6c33ab45f1a99f680b772d090dec
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60482873"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161702"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 

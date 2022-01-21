@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessUsers 资源类型
-description: 表示策略作用域中包括和排除的用户、组和角色。
-localization_priority: Normal
-author: videor
+description: 表示包含在策略作用域中和从策略作用域中排除的用户、组和角色。
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6214c3daacf580aaffa01a93be2b2c785c03f4fd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c8bca16d7f2675708965c84591c8a08c1474a377
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128580"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161842"
 ---
 # <a name="conditionalaccessusers-resource-type"></a>conditionalAccessUsers 资源类型
 
@@ -18,17 +18,17 @@ ms.locfileid: "50128580"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示策略作用域中包括和排除的用户、组和角色。
+表示包含在策略作用域中和从策略作用域中排除的用户、组和角色。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeUsers | 字符串集合 | 策略范围内的用户 ID（除非明确排除）或 `None` 或 `All` `GuestsOrExternalUsers` 。 |
-| excludeUsers | 字符串集合 | 策略作用域中排除的用户 ID 和/或 `GuestsOrExternalUsers` 。 |
-| includeGroups | 字符串集合 | 策略作用域中的组 ID（除非明确排除）或 `All` 。 |
-| excludeGroups | 字符串集合 | 从策略作用域中排除的组 ID。 |
-| includeRoles | 字符串集合 | 策略作用域中的角色 ID（除非明确排除）或 `All` 。 |
+| includeUsers | String 集合 | 除非明确排除或 或 ，否则策略范围中的用户 `None` `All` `GuestsOrExternalUsers` ID。 |
+| excludeUsers | String 集合 | 策略作用域中排除的用户 ID 和/或 `GuestsOrExternalUsers` 。 |
+| includeGroups | String 集合 | 除非明确排除 或 ，否则策略作用域中的组 `All` ID。 |
+| excludeGroups | 字符串集合 | 策略作用域中排除的组 ID。 |
+| includeRoles | String 集合 | 除非明确排除 或 ，否则策略作用域中的角色 `All` ID。 |
 | excludeRoles | 字符串集合 | 从策略作用域排除的角色 ID。 |
 
 ## <a name="relationships"></a>关系

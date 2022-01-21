@@ -2,15 +2,15 @@
 title: namedLocation 资源类型
 description: 这是表示命名位置的Azure Active Directory类。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 01825465c415ef3a769812896dbc80105c50ed68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9431c576d43aa521316d74fe1cb4265c408ed8bb
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084270"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162011"
 ---
 # <a name="namedlocation-resource-type"></a>namedLocation 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "59084270"
 |:-------------|:------------|:------------|
 | [列出 namedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [namedLocation](namedLocation.md) 集合 | 获取 **组织的所有 namedLocation** 对象。 |
 | [获取 namedLocation](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | 读取 **namedLocation** 对象的属性和关系。 |
-| [删除 namedLocation](../api/namedlocation-delete.md) | 无 | 删除 **namedLocation** 对象。 |
+| [删除 namedLocation](../api/namedlocation-delete.md) | None | 删除 **namedLocation** 对象。 |
 
 ## <a name="properties"></a>属性
 

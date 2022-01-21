@@ -2,15 +2,15 @@
 title: iPv6CidrRange 资源类型
 description: 表示使用 CIDR 表示法的 IPv6 范围。
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d36d19d3d0d10da58a3223c146be542c9f57878c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 545feee2df04be38c22853b96d19a81ef99d29ec
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062479"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162018"
 ---
 # <a name="ipv6cidrrange-resource-type"></a>iPv6CidrRange 资源类型
 

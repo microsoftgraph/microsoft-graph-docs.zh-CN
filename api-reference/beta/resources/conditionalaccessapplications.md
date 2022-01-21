@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessApplications 资源类型
 description: 表示策略作用域中包含和排除的应用程序和用户操作。
-localization_priority: Normal
-author: videor
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d688b529e32390c2330cf8cb3558994c3e752a25
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: a25b574968fcad4adcbe3e53c0b800eb0ebf4a71
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547681"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161919"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>conditionalAccessApplications 资源类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "52547681"
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
-| includeApplications | String collection | 除非在 excludeApplications (中明确排除策略所适用的应用程序) 。 也可以设置为 `All` 。 |
-| excludeApplications | String collection | 从策略中显式排除的应用程序 ID 列表。 |
-| includeUserActions | String collection | 要包含的用户操作。 支持的值 `urn:user:registersecurityinfo` 包括 和 `urn:user:registerdevice` |
-| includeAuthenticationContextClassReferences | String collection | 身份验证上下文类引用包括。 支持的值 `c1` 通过 `c25` 。 |
+| includeApplications | String 集合 | 除非在 excludeApplications 或) 中明确 (应用策略的应用程序) 。 也可以设置为 `All` 。 |
+| excludeApplications | 字符串集合 | 从策略中显式排除的应用程序 ID 列表。 |
+| includeUserActions | 字符串集合 | 要包含的用户操作。 支持的值 `urn:user:registersecurityinfo` 包括 和 `urn:user:registerdevice` |
+| includeAuthenticationContextClassReferences | 字符串集合 | 身份验证上下文类引用包括。 支持的值 `c1` 通过 `c25` 。 |
 
 ## <a name="relationships"></a>关系
 
