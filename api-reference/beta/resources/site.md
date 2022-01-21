@@ -5,12 +5,12 @@ title: site 资源类型
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 67b482b268c871e6e9b99d2812172551918807ab
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 496796c5d7d2667b41ca97f31f81c3c79fc5de96
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104993"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162067"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -45,6 +45,7 @@ ms.locfileid: "62104993"
 |[创建 contentType][]        | POST/sites/{site-id}/contentTypes
 |[List columns][]               | 获取 /sites/{site-id}/columns
 |[创建列][]              | 发布 /sites/{site-id}/columns
+|[列举操作](../api/site-list-operations.md)|GET /sites/{site-id}/operations
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
@@ -107,6 +108,7 @@ ms.locfileid: "62104993"
 | **驱动器**        | 集合（[drive][]）            | 网站下方的驱动器集合（文档库）。
 | **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
 | **lists**         | Collection([list][])             | 此网站下的列表集合。
+|**operations**|[richLongRunningOperation](../resources/richlongrunningoperation.md) 集合| 站点长时间运行操作的集合。
 | **pages**         | Collection([sitePage][])         | 此网站的 SitePages 列表中的页面集合。
 | **权限**   | 集合([权限][])         | 与网站关联的权限。空。
 | **sites**         | 集合（[网站][]）             | 网站下方的子网站的集合。
