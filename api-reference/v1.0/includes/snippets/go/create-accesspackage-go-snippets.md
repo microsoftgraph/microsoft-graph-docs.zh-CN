@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 99f2250b7c05ebf12abb8cb4c112ce5af8a7f749
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ce25a32e6a6b04db056f5c3a27c59b3832bfd96c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341812"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100948"
 ---
 ```go
 
@@ -21,9 +21,8 @@ isHidden := false
 requestBody.SetIsHidden(&isHidden)
 catalog := msgraphsdk.NewAccessPackageCatalog()
 requestBody.SetCatalog(catalog)
-catalog.SetAdditionalData(map[string]interface{}{
-    "id": "66584aae-98bb-48cc-9458-7bee5d2a6577",
-}
+id := "66584aae-98bb-48cc-9458-7bee5d2a6577"
+catalog.SetId(&id)
 options := &msgraphsdk.AccessPackagesRequestBuilderPostOptions{
     Body: requestBody,
 }

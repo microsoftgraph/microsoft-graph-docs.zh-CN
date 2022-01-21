@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 061139bb6672b9d1f1327122df5c2d86e85f0a88
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: dd71708a6b944e7541b2ffc9bdb4f9e88353c9e3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224816"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090546"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
@@ -20,7 +20,7 @@ ms.locfileid: "61224816"
 
 检索具有对域的引用的 [directoryObject](../resources/directoryobject.md) 列表。 返回的列表将包含所有依赖域的目录对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "61224816"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Domain.Read.All、Domain.ReadWrite.All |
+|应用程序 | Domain.Read.All、Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -85,8 +85,12 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/domainNameReferences
 [!INCLUDE [sample-code](../includes/snippets/java/get-domainnamereferences-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-domainnamereferences-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-domainnamereferences-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

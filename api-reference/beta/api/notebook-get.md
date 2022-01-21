@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 8b55a492dc4a03ecd2ba432df08fbf0f8ab9d7e3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 99b04e32dff365c19eac4f14240a30e5bbb7159c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021879"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62099317"
 ---
 # <a name="get-notebook"></a>获取笔记本
 
@@ -81,8 +81,12 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-notebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-notebook-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-notebook-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

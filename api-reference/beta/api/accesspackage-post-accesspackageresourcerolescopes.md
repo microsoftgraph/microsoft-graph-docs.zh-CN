@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5662ba7b6f1c524a0f6c12684e59ff98a60d9da6
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: f460016563556262d1c0afbf9d85d5bc7c23134b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650879"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62097493"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>创建 accessPackageResourceRoleScope
 
@@ -18,7 +18,7 @@ ms.locfileid: "61650879"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [accessPackageResourceRoleScope，](../resources/accesspackageresourcerolescope.md) 以将资源角色添加到访问包。 访问包资源（对于组、应用或 SharePoint Online 网站）必须已存在于访问包目录中，并且资源角色的 **originId** 从资源角色列表中 [检索。](accesspackagecatalog-list-accesspackageresourceroles.md) 将资源角色作用域添加到访问包后，用户通过任何当前和将来的访问包分配接收此资源角色。
+创建新的 [accessPackageResourceRoleScope，](../resources/accesspackageresourcerolescope.md) 以将资源角色添加到访问包。 访问包资源（对于组、应用或 SharePoint Online 网站）必须已存在于访问包目录中，并且资源角色的 **originId** 从资源角色列表中 [检索](accesspackagecatalog-list-accesspackageresourceroles.md)。 将资源角色作用域添加到访问包后，用户通过任何当前和将来的访问包分配接收此资源角色。
 
 ## <a name="permissions"></a>权限
 
@@ -99,8 +99,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerolescope-from-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-from-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageresourcerolescope-from-accesspackage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,8 +186,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerolescope-from-accesspackage2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-from-accesspackage2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageresourcerolescope-from-accesspackage2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7b1c58ecbb34d699687c5bb030fe04bc5572aaf2
-ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
+ms.openlocfilehash: 9fb706a1cd11037f217b8a09999677a0cee7f4e3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62056314"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090418"
 ---
 # <a name="create-custodian-usersource"></a>创建 custodian userSource
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/userSources
 
 |属性|类型|说明|
 |:---|:---|:---|
-|email|字符串|用户的 SMTP 地址。|
+|email|String|用户的 SMTP 地址。|
 |includedSources|microsoft.graph.ediscovery.sourceType|指定此组中包含的源。 可取值为：`mailbox`、`site`。|
 
 ## <a name="response"></a>响应
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-usersource-from--1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-usersource-from--1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

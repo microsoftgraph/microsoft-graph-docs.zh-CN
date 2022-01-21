@@ -5,12 +5,12 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 12a360d269505554681a57b9a2a87d58c453b40e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ba4edb5ff99c84d9c5a227e40b8df75e43f1fca8
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010231"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107878"
 ---
 # <a name="unifiedroleeligibilityscheduleinstance-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleInstance：filterByCurrentUser
 命名空间：microsoft.graph
@@ -41,7 +41,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUs
 ## <a name="function-parameters"></a>函数参数
 下表显示了可用于此方法的查询参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|筛选以查询当前用户作为主体的对象。 允许的值为 `principal` 。 必需。|
 
@@ -90,8 +90,12 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 [!INCLUDE [sample-code](../includes/snippets/java/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

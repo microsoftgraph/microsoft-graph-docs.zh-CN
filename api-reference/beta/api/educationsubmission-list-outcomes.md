@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3a97ba00049f48a864a56bb163eb10c532ba28d0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 75591171a58f17e7f2d58955e23d03fe2a967984
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986550"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62099929"
 ---
 # <a name="list-outcomes"></a>列出结果
 
@@ -24,7 +24,7 @@ ms.locfileid: "60986550"
 
 分数分配提交 (分配了分数值的) 将同时具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationPointsOutcome](../resources/educationpointsoutcome.md)。
 
-如果作业的分数为信用额度（无分数 (，) ，则提交的作业将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。  (它也可能返回 [educationPointsOutcome，](../resources/educationpointsoutcome.md)但会忽略该结果。) 
+对于附加了分数的作业，如果分数为信用额度， (分数为) ，则其将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。  (它也可能返回 [educationPointsOutcome，](../resources/educationpointsoutcome.md)但会忽略该结果。) 
 
 对于附加了标点的工作分配，如果分数为分值，则提交内容将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)，即 [educationPointsOutcome] (。/resources/educationpointsoutcome.md 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。
 
@@ -93,8 +93,12 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 [!INCLUDE [sample-code](../includes/snippets/java/get-outcomes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-outcomes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-outcomes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

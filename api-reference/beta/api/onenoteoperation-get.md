@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 48e7b4cb1fcf3a40dfb82024bb282b77b047a848
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 51b0c8ea0e4456f57f357edbfd6c4f015cd63bc4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985969"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62112936"
 ---
 # <a name="get-onenoteoperation"></a>获取 onenoteOperation
 
@@ -46,7 +46,7 @@ GET /sites/{id}/onenote/operations/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 无。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -86,8 +86,12 @@ GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-onenoteoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-onenoteoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onenoteoperation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

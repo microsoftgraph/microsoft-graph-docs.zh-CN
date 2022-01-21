@@ -5,14 +5,14 @@ ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 30d7694343853ae5c20c5e44815572a52e17b6bf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c4ebb4b39b437b324c1c5b141346c2242cd6102e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026586"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62089812"
 ---
-# <a name="get-outlooktask-deprecated"></a>获取已 (outlookTask) 
+# <a name="get-outlooktask-deprecated"></a>获取 outlookTask (已弃) 
 
 命名空间：microsoft.graph
 
@@ -96,8 +96,12 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 [!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-outlooktask-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-outlooktask-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -154,7 +158,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>示例 2：Outlook太平洋标准时间中的日期时间属性获取任务
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>示例 2：Outlook太平洋标准时间的日期时间属性获取任务
 
 #### <a name="request"></a>请求
 
@@ -187,8 +191,12 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-outlooktask-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-outlooktask-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

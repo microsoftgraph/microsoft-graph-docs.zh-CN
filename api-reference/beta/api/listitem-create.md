@@ -6,12 +6,12 @@ title: 在 SharePoint 列表中创建新条目
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6aefa98d3db38a4b61145138cc360c251fee1a4d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ac76fb432dfef9f59c482fa68a85ce23885aa30c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034278"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62096293"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 
@@ -75,8 +75,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-listitem-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-listitem-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

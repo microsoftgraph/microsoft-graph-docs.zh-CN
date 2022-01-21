@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f3a5d08fd9a05c06096504df06b0ec3300740a6f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c49159e1c8b15666b3d01a4632167a052954ba87
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60973569"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62091518"
 ---
 # <a name="update-tokenissuancepolicy"></a>更新 tokenIssuancePolicy
 
@@ -51,7 +51,7 @@ PATCH /policies/tokenIssuancePolicies/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|definition|String collection| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。  必需。|
+|definition|字符串集合| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。  必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|布尔|如果设置为 true，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认策略。 可选，默认值为 false。|
@@ -101,8 +101,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-tokenissuancepolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tokenissuancepolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-tokenissuancepolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2379341bc217b50462ddbca303f669bf08e78090
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9667a92d801777cd279bf698c93d3c645c877efd
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008734"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62110569"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsapp
 
@@ -51,7 +51,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 |----|----|----|
 |requiresReview| 布尔 | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头        | 值           |
 |:--------------|:--------------  |
@@ -118,7 +118,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例 2：Upload新应用程序以检查组织的应用程序目录
+### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例 2：Upload应用程序以检查组织的应用程序目录
 
 #### <a name="request"></a>请求
 
@@ -141,8 +141,12 @@ Content-type: application/zip
 [!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-teamsapp-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-teamsapp-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: b6c72951e745c0b36c486155c9caf319f34abe62
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6ee1df20a0047077f459e4512b88c7d6efa1c019
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003210"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090333"
 ---
 # <a name="sourcecollection-estimatestatistics"></a>sourceCollection： estimateStatistics
 
@@ -18,7 +18,7 @@ ms.locfileid: "61003210"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-运行源集合中电子邮件和文档的估计数量。 若要了解有关电子数据展示 (搜索的源集合) ，请参阅在电子数据展示中收集[Advanced eDiscovery。](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery)
+运行源集合中电子邮件和文档的估计数量。 若要了解有关电子数据展示 (搜索的源集合) ，请参阅在 Advanced eDiscovery[中](/microsoft-365/compliance/collecting-data-for-ediscovery)收集数据。
 
 ## <a name="permissions"></a>权限
 
@@ -86,7 +86,7 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourc
 [!INCLUDE [sample-code](../includes/snippets/java/sourcecollection-estimatestatistics-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sourcecollection-estimatestatistics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

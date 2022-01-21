@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 452b505804e1947f10245e3a05acd8b3117e1198
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b2643b8d0102f6783eda2d361a3b4c11ae064f14
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006536"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101270"
 ---
 # <a name="delete-device"></a>删除设备
 
@@ -36,7 +36,7 @@ ms.locfileid: "61006536"
 DELETE /devices/{id}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。 |
@@ -76,8 +76,12 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-device-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-device-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-device-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: vishriv
 ms.prod: taxonomy
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: 6c803376a49171cfccdc6594c55392b81c15b1ef
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fbaede0e9c9233ed536805b3101976054b722470
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022985"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62091616"
 ---
 # <a name="list-children"></a>列出子项
 命名空间：microsoft.graph.termStore
@@ -82,8 +82,12 @@ GET https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc
 [!INCLUDE [sample-code](../includes/snippets/java/get-term-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-term-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-term-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

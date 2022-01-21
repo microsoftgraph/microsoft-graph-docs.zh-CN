@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fb41bb23960895228ffe66206da15311afbad6ca
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: f8befad582926aa3a728c14e19b62e6dcad69755
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60736640"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094654"
 ---
 ```java
 
@@ -45,7 +45,7 @@ phones1.type = PhoneType.BUSINESS;
 phonesList.add(phones1);
 bookingCustomer.phones = phonesList;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@M365B489948.onmicrosoft.com").customers()
+graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").customers()
     .buildRequest()
     .post(bookingCustomer);
 

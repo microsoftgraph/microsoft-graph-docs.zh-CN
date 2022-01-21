@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 504a0dc8768bc44642ae46be19e231d4d131034f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6a70d5b5237178d2ca94852ea2e21bdc6ee2364c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026990"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62097224"
 ---
 # <a name="list-callrecord-sessions"></a>列出 callRecord 会话
 
@@ -90,8 +90,12 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-sessions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecord-sessions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -208,8 +212,12 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$e
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-expanded-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-sessions-expanded-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecord-sessions-expanded-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

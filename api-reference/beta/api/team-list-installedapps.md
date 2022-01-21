@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4b75883fcf0f8f21b85575fef109885fb0d2cfc8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: dc3f5bbaccafc1b8d6bb7af5a781721d686c6b03
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031702"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62108173"
 ---
 # <a name="list-apps-in-team"></a>列出团队中的应用
 
@@ -20,7 +20,7 @@ ms.locfileid: "61031702"
 
 检索指定 [团队中](../resources/teamsappinstallation.md) 安装的应用 [列表](../resources/team.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -91,8 +91,12 @@ GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 [!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -233,7 +237,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 在示例中，应用的清单 ID Teams为 `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee` 。
+下面展示了示例请求。 在示例中，应用清单 ID Teams为 `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee` 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -259,8 +263,12 @@ GET https://graph.microsoft.com/beta/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 [!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-team-expand-filter-externalid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-team-expand-filter-externalid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-team-expand-filter-externalid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0f4de726b7ad5e553e95b202f57930f6c0e3a4b7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9af879a48bd93fbcb3af17c4280ae4f2db3d3be2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034628"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62097105"
 ---
 # <a name="update-connectorgroups"></a>更新 connectorGroups
 
@@ -42,7 +42,7 @@ PATCH /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| 指示混合代理的类型。 此预设置由系统设置。 |
 |id|string| 此 connectorGroup 的唯一标识符。 只读。 |
@@ -87,8 +87,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-connectorgroup-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-connectorgroup-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-connectorgroup-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

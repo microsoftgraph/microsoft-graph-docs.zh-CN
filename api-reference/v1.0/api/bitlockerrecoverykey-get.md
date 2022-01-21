@@ -5,19 +5,19 @@ author: hafowler
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1a7da6ef2b5bf4fbedc75410a228f54460b30d80
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 17ce44820faee212ff4a8656da27684d550b6e7d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001104"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111458"
 ---
 # <a name="get-bitlockerrecoverykey"></a>获取 bitlockerRecoveryKey
 命名空间：microsoft.graph
 
 检索 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象的属性和关系。 
 
-默认情况下，此操作不会返回表示实际恢复密钥的 key 属性。 若要在 **响应中包括 key** 属性，请使用 `$select` OData 查询参数。 包含 `$select` 查询参数将触发Azure AD审核操作并生成一个审核日志。 有关 bitlocker 恢复密钥的审核日志详细信息，请参阅适用于 bitlocker 恢复密钥的 KeyManagement [Azure AD筛选器](/azure/active-directory/reports-monitoring/concept-audit-logs)。
+默认情况下，此操作不会返回表示实际恢复密钥的 key 属性。 若要在 **响应中包括 key** 属性，请使用 `$select` OData 查询参数。 包含 `$select` 查询参数将触发Azure AD审核，并生成一个审核日志。 有关 bitlocker 恢复密钥的审核日志详细信息，请参阅适用于 bitlocker 恢复密钥的 KeyManagement [Azure AD筛选器](/azure/active-directory/reports-monitoring/concept-audit-logs)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -108,8 +108,12 @@ ocp-client-version: "1.2"
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bitlockerrecoverykey-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -173,8 +177,12 @@ GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKey
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-key-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-key-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bitlockerrecoverykey-key-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

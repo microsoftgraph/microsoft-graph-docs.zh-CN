@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d4ff6298e6266d24a8b490bcbefc4ea30eea1d3c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: dcf841ce7b5da1b5796d8a86fb6e6be5e0e58bf5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339495"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62096412"
 ---
 # <a name="update-insightssettings"></a>更新 insightsSettings
 
@@ -65,8 +65,8 @@ PATCH /organization/{organizationId}/settings/peopleInsights
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` 如果为组织启用了指定类型的见解;如果为所有用户禁用了指定类型的见解，则 `false` 无例外。 默认值为“`true`”。 可选。|
-|disabledForGroup|String| 已禁用Azure AD组（其指定类型的见解）的 ID。 默认值为“`empty`”。 可选。|
+|isEnabledInOrganization|布尔| `true` 如果为组织启用了指定类型的见解;如果为所有用户禁用了指定类型的见解，则 `false` 无例外。 默认值为“`true`”。 可选。|
+|disabledForGroup|String| 组 id，Azure AD组的成员禁用其指定类型的见解。 默认值为“`empty`”。 可选。|
 
 >**注意：** 如果将 **disabledForGroup** 属性值包括在请求正文中，则此操作不会验证该值。 如果将 **disabledForGroup** 属性设置为字符串，则此操作不会检查是否存在相应的Azure AD组。 这意味着，如果将 **disabledForGroup** 设置为不存在或随后被删除的 Azure AD 组，则此操作将无法识别任何组成员身份，并禁用对特定用户的项或人员见解。 如果 **isEnabledInOrganization** 设置为 ，则操作将为组织中所有用户启用指定 `true` 类型的见解。  
 ## <a name="response"></a>响应
@@ -112,8 +112,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-insightssettings-iteminsightrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-iteminsightrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-insightssettings-iteminsightrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -178,8 +182,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-insightssettings-peopleinsightsrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-peopleinsightsrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-insightssettings-peopleinsightsrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

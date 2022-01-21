@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 002d8827e2c8523e1ac8183578302aa9de807859
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fd15a44ba0491122d2a2ff3b3a1e9ddf72b0a329
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993934"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62112388"
 ---
 # <a name="update-personname"></a>更新 personname
 
@@ -20,7 +20,7 @@ ms.locfileid: "60993934"
 
 更新用户配置文件 [中的 personName](../resources/personname.md) 对象 [的属性](../resources/profile.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +52,7 @@ PATCH /users/{id | userPrincipalName}/profile/names/{id}
 
 下表显示了在用户配置文件中的现有 [personName](../resources/personname.md) 对象中可以更新 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |displayName|String|根据用户或设备区域设置提供 firstName 和 lastName 的有序呈现。|
@@ -65,7 +65,7 @@ PATCH /users/{id | userPrincipalName}/profile/names/{id}
 |middle|String|用户的中间名。|
 |nickname|String|用户的昵称。|
 |pronunciation|[yomiPersonName](../resources/yomipersonname.md)|有关如何对用户名称进行发音的指南。|
-|后缀|String|用户名名称后使用 (，例如：PhD.)   |
+|后缀|String|在用户命名名称后使用 (，例如：PhD.)   |
 |title|String|用于为用户名称添加前缀的 (例如：Dr、Sir、Sir、Mrs.) |
 
 ## <a name="response"></a>响应
@@ -109,8 +109,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-personname-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-personname-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-personname-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

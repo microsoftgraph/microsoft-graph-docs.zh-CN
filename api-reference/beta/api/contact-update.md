@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bfd80a3b3fb465854f80479614437f8890d4948d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b04d26c2e09cacd2982bab50e8be27033e296980
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990288"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62097084"
 ---
 # <a name="update-contact"></a>更新联系人
 
@@ -45,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -60,7 +60,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |birthday|DateTimeOffset|联系人的生日。|
 |categories|String|与联系人关联的类别。|
 |children|String||
-|companyName|String|联系人所在公司的名称。|
+|CompanyName|String|联系人所在公司的名称。|
 |department|String|联系人所在的部门。|
 |displayName|String|联系人的显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在更新操作中将其作为 displayName。|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md) 集合|联系人的电子邮件地址。|
@@ -77,14 +77,14 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |officeLocation|String|联系人的办公室位置。|
 |parentFolderId|String|联系人的父文件夹 ID。|
 |personalNotes|String|有关联系人的用户备注。|
-|phones |[phone](../resources/phone.md) collection |电话联系人的号码，例如住宅电话、移动电话和业务电话。 |
+|phones |[phone](../resources/phone.md) collection |电话联系人关联的电话号码，例如住宅电话、移动电话和业务电话。 |
 |postalAddresses |[physicalAddress](../resources/physicaladdress.md) 集合 |与联系人关联的地址，例如，住宅地址和公司地址。 |
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
 |title|String|联系人的职位。|
 |websites |[website](../resources/website.md) collection|与联系人关联的网站。 |
-|将anniversary |日期 |联系人的周年日。 |
+|将anniversary |Date |联系人的周年日。 |
 |yomiCompanyName|String|联系人的注音日文公司名称。此属性是可选的。|
 |yomiGivenName|String|联系人的注音日文名字。此属性是可选的。|
 |yomiSurname|String|联系人的注音日文姓氏。此属性是可选的。|
@@ -139,8 +139,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-contact-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-contact-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-contact-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

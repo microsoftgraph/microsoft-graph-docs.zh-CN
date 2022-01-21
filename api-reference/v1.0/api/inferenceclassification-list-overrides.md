@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6a1c518221e930ddbea6784201d82bd83c4480d6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3b44a44163269fa254358ab464efd99898df5380
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024463"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62095278"
 ---
 # <a name="list-overrides"></a>列出替代
 
@@ -19,7 +19,7 @@ ms.locfileid: "61024463"
 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的替代。
 
 每个替代均对应一个发件人的 SMTP 地址。最初，用户没有任何替代。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -74,8 +74,12 @@ GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 [!INCLUDE [sample-code](../includes/snippets/java/get-overrides-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-overrides-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-overrides-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 062cbaf6b10e14112b63f7422821b4c7b2f9fe96
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3d5a6e72c2db347ef97a6aaade0d14c34e4fe1d8
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029482"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100738"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -84,8 +84,12 @@ GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 [!INCLUDE [sample-code](../includes/snippets/java/message-get-attachments-v1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-get-attachments-v1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-get-attachments-v1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

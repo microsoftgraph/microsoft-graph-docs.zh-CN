@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 122ec4726d3dc89483d76d80e3848526e67a099a
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 58d152b83534978334c1a22748319b2401bcfc7e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072402"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098945"
 ---
 # <a name="servicehealthissue-incidentreport"></a>serviceHealthIssue：incidentReport
 命名空间：microsoft.graph
@@ -21,7 +21,7 @@ ms.locfileid: "62072402"
 
 仅状态为 的问题 `PostIncidentReviewPublished` 指示存在针对该问题的 PIR 文档。 如果租户不存在指定的问题，或者如果问题不存在 PIR 文档，则操作将返回错误。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO248163/i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/servicehealthissue-incidentreport-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/servicehealthissue-incidentreport-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

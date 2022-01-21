@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8a27259e9d855a7e8166ae4416762d2bc12d89ee
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: b6731887ec9c9f364c6ce5dbdb910abd995dca06
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792223"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62109456"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -127,6 +127,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -185,7 +189,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-mentions-a-user-in-a-channel-message"></a>示例 2：@mentions消息中通知用户
+### <a name="example-2-mentions-a-user-in-a-channel-message"></a>示例 2：@mentions频道消息中通知用户
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -238,6 +242,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -366,6 +374,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -482,6 +494,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -603,6 +619,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-5-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -662,7 +682,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (中的内容) 相同。  (注意 **temporaryId** 设置为 **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
+> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (中的内容) 相同。  (请注意 **，temporaryId 设置为** **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -719,6 +739,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-6-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-6-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -786,7 +810,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-7--mention-a-channel-in-a-channel-message"></a>示例 7：@mention消息中的频道
+### <a name="example-7--mention-a-channel-in-a-channel-message"></a>示例 7：@mention频道消息中的频道
 
 #### <a name="request"></a>请求
 下面展示了示例请求。 若要了解如何获取团队中的频道列表，请参阅 [列出频道](../api/channel-list.md)。
@@ -841,6 +865,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionchannel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-atmentionchannel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -916,12 +944,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8--mention-a-team-in-a-channel-message"></a>示例 8：@mention频道消息中通知团队
+### <a name="example-8--mention-a-team-in-a-channel-message"></a>示例 8：@mention频道消息中与团队通信
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> 注意 **：conversationIdentityType** 必须设置为，@mention `team` 团队。
+> 注意 **：conversationIdentityType** 必须设置为@mention `team` 团队。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -972,6 +1000,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionteam-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-atmentionteam-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1047,7 +1079,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-9--mention-a-tag-in-a-channel-message"></a>示例 9：@mention频道消息中的标记
+### <a name="example-9--mention-a-tag-in-a-channel-message"></a>示例 9：@mention消息中的标记
 
 #### <a name="request"></a>请求
 下面展示了示例请求。 若要了解如何获取团队中的标记列表，请参阅 [List teamworkTags](../api/teamworktag-list.md)。
@@ -1099,6 +1131,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentiontag-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-atmentiontag-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

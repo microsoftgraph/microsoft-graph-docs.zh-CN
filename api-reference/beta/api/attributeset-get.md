@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d6248faa705289e1d1b55752d08112e8a9d0f041
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 9a6c15dd93e118f8abf97981f81fab2cb5327835
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223617"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62109867"
 ---
 # <a name="get-attributeset"></a>获取 attributeSet
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "61223617"
 
 读取 [attributeSet](../resources/attributeset.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|CustomSecAttributeAssignment.ReadWrite.All、CustomSecAttributeDefinition.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|CustomSecAttributeAssignment.ReadWrite.All、CustomSecAttributeDefinition.ReadWrite.All|
+|应用程序|CustomSecAttributeAssignment.ReadWrite.All、CustomSecAttributeDefinition.ReadWrite.All|
 
 还必须为登录用户分配以下目录角色之 [一](/azure/active-directory/roles/permissions-reference)：
 
@@ -95,8 +95,12 @@ GET https://graph.microsoft.com/beta/directory/attributeSets/Engineering
 [!INCLUDE [sample-code](../includes/snippets/java/get-attributeset-single-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-attributeset-single-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-attributeset-single-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

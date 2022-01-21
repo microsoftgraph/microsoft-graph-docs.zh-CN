@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0d4031852a0656509c392caaf79f2be6c5e27424
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: a35736914c71f64c978518c94ac219b2d07d289a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266304"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090665"
 ---
 # <a name="list-device-transitive-groups"></a>List device transitive groups
 
@@ -20,7 +20,7 @@ ms.locfileid: "61266304"
 
 获取设备是其中一个成员的组。 此 API 请求是可传递的，并且还将返回设备是嵌套成员的所有组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -97,8 +97,12 @@ GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-devices-transitivememberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-devices-transitivememberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -165,7 +169,7 @@ Content-type: text/plain
 ```
 
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取包含字母"Video"（包括返回对象计数）的显示名称的成员资格
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取包含字母"Video"的显示名称（包括返回的对象计数）的成员资格
 
 #### <a name="request"></a>请求
 

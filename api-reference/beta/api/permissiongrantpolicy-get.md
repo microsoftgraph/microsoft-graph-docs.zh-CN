@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: dc26fecfb85adb7801f55665794f47f9643d8a57
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 3f03bca84fa82bd7b9763906696baa23ad2168ca
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266122"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62112535"
 ---
 # <a name="get-permissiongrantpolicy"></a>获取 permissionGrantPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "61266122"
 
 检索单个 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,7 +42,7 @@ GET /policies/permissionGrantPolicies/{id}
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -88,8 +88,12 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/java/get-permissiongrantpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-permissiongrantpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-permissiongrantpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -97,7 +101,7 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。 该策略有两个条件集，一个条件集与为此租户中注册的客户端应用分类的委派权限匹配，另一个条件集与为来自已验证发布者 (的应用分类的委派权限相匹配) 无论应用程序在) 中注册哪个 `includes` `low` `low` 租户。
+下面展示了示例响应。 策略有两个条件集，一个条件集与为此租户中注册的客户端应用分类的委派权限匹配，另一个条件集与为来自已验证发布者 (的应用分类的委派权限匹配，而无论应用程序在) 中注册 `includes` `low` `low` 哪个租户。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

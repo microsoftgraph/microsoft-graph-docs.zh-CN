@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: e3505c94f9ef16e7e19846ceaae9a8cdc3fc10dc
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 82f58ccde66790c09aad80e84ef2aa2bc1b7addb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525741"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094843"
 ---
 # <a name="update-bookingappointment"></a>更新 bookingappointment
 
@@ -58,10 +58,10 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |invoiceId|String|发票的 ID。|
 |invoiceStatus|string| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
 |invoiceUrl|String|Microsoft Bookings 中发票的 URL。|
-|filledAttendeesCount|Int32|约会中的当前客户数。 必填。|
-|isLocationOnline|Boolean|如果为 True，则表明该约会将在线进行。 默认值为 false。|
-|maximumAttendeesCount|Int32|约会中允许的最大客户数。 必填。|
-|optOutOfCustomerEmail|Boolean|True 表示此约会的 [bookingCustomer](../resources/bookingcustomer.md) 不希望收到有关此约会的确认。|
+|filledAttendeesCount|Int32|约会中的当前客户数。 必需。|
+|isLocationOnline|布尔|如果为 True，则表明该约会将在线进行。 默认值为 false。|
+|maximumAttendeesCount|Int32|约会中允许的最大客户数。 必需。|
+|optOutOfCustomerEmail|布尔|True 表示此约会的 [bookingCustomer](../resources/bookingcustomer.md) 不希望收到有关此约会的确认。|
 |postBuffer|期限|例如，约会结束后要保留的清理时间量。 该值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。 |
 |preBuffer|期限|例如，在约会开始前保留准备的时间量。 该值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。|
 |price|双精度|指定 [bookingService](../resources/bookingservice.md)的约会的常规价格。|
@@ -72,8 +72,8 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |serviceLocation|[location](../resources/location.md)|服务交付位置。|
 |serviceName|String|与此约会关联的 **bookingService** 的名称。<br>创建新约会时，此属性是可选的。 如果未指定，则通过 **serviceId** 属性从与约会关联的服务计算该约会。|
 |serviceNotes|String|[bookingStaffMember 中的注释](../resources/bookingstaffmember.md)。 此属性的值仅在按其 ID 读取此 **bookingAppointment** 时可用。|
-|smsNotificationsEnabled|Boolean|如果为 True，则表明将发送给客户进行约会的短信通知。 默认值为 false。|
-|staffMemberIds|String collection|在此约会中 [安排的每个 bookingStaffMember](../resources/bookingstaffmember.md) 的 ID。|
+|smsNotificationsEnabled|布尔|如果为 True，则表明将发送给客户进行约会的短信通知。 默认值为 false。|
+|staffMemberIds|字符串集合|在此约会中 [安排的每个 bookingStaffMember](../resources/bookingstaffmember.md) 的 ID。|
 |start|[dateTimeTimeZone](../resources/datetimetimezone.md)|约会开始的日期、时间和时区。|
 
 
@@ -127,8 +127,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingappointment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-bookingappointment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingappointment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

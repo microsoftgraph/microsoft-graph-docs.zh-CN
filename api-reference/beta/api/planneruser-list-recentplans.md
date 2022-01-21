@@ -5,12 +5,12 @@ author: TarkanSevilmis
 ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e33e7cf634410c2c880b5288d0f31113d89e35a8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e88a9e98c46118e1f91561568f3259b8119ae753
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985374"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62102494"
 ---
 # <a name="list-recentplans"></a>列出 recentPlans
 
@@ -72,8 +72,12 @@ GET https://graph.microsoft.com/beta/me/planner/recentPlans
 [!INCLUDE [sample-code](../includes/snippets/java/get-recentplans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-recentplans-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-recentplans-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

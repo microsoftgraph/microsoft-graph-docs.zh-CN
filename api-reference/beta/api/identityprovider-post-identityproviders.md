@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 73ccec79e3c68ccc35d8d81261de9f80d2d0411f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2d813d6010ddef57afa3aa6ed369cbc805740d11
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60978157"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090029"
 ---
 # <a name="create-identityprovider-deprecated"></a>创建 identityProvider（已弃用）
 
@@ -74,7 +74,7 @@ POST /identityProviders
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|和 `userId` `displayname` 属性在 claimsMapping 对象中是必需的。|
 |metadataUrl|String|开放 ID 和标识提供程序的元数据连接 URL。|
 |responseMode|String|定义用于将数据从自定义标识提供程序发送回 B2C Azure AD的方法。 可以使用以下响应模式： <ul><li/>`form_post` ：建议采用此响应模式，以获得最佳安全性。 响应通过 HTTP POST 方法传输，使用 application/x-www-form-urlencoded 格式在正文中编码代码或令牌。<li/>`query` ：代码或令牌作为查询参数返回。</ul>|
-|responseType|String|描述在初始调用自定义标识提供程序的 authorization_endpoint发送回的信息类型。 可以使用以下响应类型：<ul><li/> `code`：根据授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 继续调用 token_endpoint 以交换令牌代码。<li/> `id_token`：ID 令牌从自定义标识Azure AD返回给 B2C。 <li/>`token`：访问令牌从自定义标识提供程序Azure AD返回给 B2C。  (当前 B2C 不支持Azure AD此值) </ul>|
+|responseType|String|描述在初始调用自定义标识提供程序的 authorization_endpoint发送回的信息类型。 可以使用以下响应类型：<ul><li/> `code`：根据授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 继续调用 token_endpoint 以交换令牌代码。<li/> `id_token`：ID 令牌从自定义标识Azure AD返回给 B2C。 <li/>`token`：访问令牌从自定义标识Azure AD返回到 B2C。  (当前 B2C 不支持Azure AD此值) </ul>|
 |scope|String|范围定义要从自定义标识提供程序收集的信息和权限。|
 
 ## <a name="response"></a>响应
@@ -124,8 +124,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-identityprovider-from-identityproviders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-identityprovider-from-identityproviders-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-identityprovider-from-identityproviders-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -210,8 +214,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-openidconnectprovider-from-identityproviders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-openidconnectprovider-from-identityproviders-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-openidconnectprovider-from-identityproviders-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

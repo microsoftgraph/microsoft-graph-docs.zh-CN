@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 04a64afd5ce1045681ccbd154950b5758ebb2a68
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e90d41ea10ff6a60a812a61ecf5f0ebe5018b70c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989951"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62093507"
 ---
 # <a name="update-plannertask"></a>更新 plannerTask
 
@@ -53,7 +53,7 @@ PATCH /planner/tasks/{id}
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
 |planId|String|此任务所属的计划 id。|
-|priority|Int32|任务的优先级。 值的有效范围介于 和 (之间) ，而值增加时优先级较低 (具有最高优先级，并且具有最低优先级 `0` `10` `0` `10`) 。  目前，Planner 将值 和 解释为"紧急"，将 和 解释为 `0` `1` `2` `3` `4` "重要"、""、" 和 `5` `6` `7` "medium"， 和 ，并 `8` `9` `10` 解释为"低"。  目前，Planner 将设置 `1` `3` "urgent"、"important"、"medium"和 `5` `9` "low"的值。|
+|priority|Int32|任务的优先级。 值的有效范围介于 和 (之间) ，随着值的增大，优先级较低 (具有最高优先级，并且具有最低优先级 `0` `10` `0` `10`) 。  目前，Planner 将值 和 解释为"紧急"，将 和 解释为 `0` `1` `2` `3` `4` "重要"、""、" 和 `5` `6` `7` "medium"， 和 ，并 `8` `9` `10` 解释为"低"。  目前，Planner 将设置 `1` `3` "urgent"、"important"、"medium"和 `5` `9` "low"的值。|
 |startDateTime|DateTimeOffset|任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`2014-01-01T00:00:00Z`|
 |title|String|任务的标题。|
 
@@ -99,8 +99,12 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannertask-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-plannertask-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-plannertask-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

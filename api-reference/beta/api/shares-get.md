@@ -6,12 +6,12 @@ title: 访问共享项目
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: aab2c58a9467a9704d2be1fb812a9fa44cd841af
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 66c9126b0256f44fa3ee5fd04cf120305e9435ec
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010754"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098803"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 
@@ -74,7 +74,7 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 | redeemSharingLink             | 如果 **shareIdOrEncodedSharingUrl** 是共享链接，则向调用方授予对项目的持久访问权限    |
 | redeemSharingLinkIfNecessary  | 与 redeemSharingLink 相同，但仅保证在此请求的持续时间内授予访问权限 |
 
-redeemSharingLink 应视为等效于导航到浏览器 (接受共享手势) 的共享链接的调用方，而 redeemSharingLinkIfNecessary 适用于目的只是速览链接元数据的方案。
+redeemSharingLink 应视为等效于导航到浏览器 (接受共享手势) 的共享链接的调用方，而 redeemSharingLinkIfNecessary 旨在用于目的只是速览链接元数据的方案。
 
 ## <a name="response"></a>响应
 
@@ -109,8 +109,12 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 [!INCLUDE [sample-code](../includes/snippets/java/get-shared-root-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-shared-root-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-shared-root-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -171,8 +175,12 @@ GET /shares/{shareIdOrUrl}/driveItem
 [!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-shared-driveitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-shared-driveitem-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -224,8 +232,12 @@ GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 [!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-expand-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-shared-driveitem-expand-children-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-shared-driveitem-expand-children-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

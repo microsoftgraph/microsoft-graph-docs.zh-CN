@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: aa3d13f750bd558fa2cf9905cc5921041fe95b27
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7883c6d31a930bb6b2228e0b3445d97968cf0b29
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032696"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62110316"
 ---
 # <a name="list-user-transitive-memberof"></a>List user transitive memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "61032696"
 
 获取用户是其中一个成员的组、目录角色。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -91,8 +91,12 @@ GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-transitivememberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-transitivememberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -186,7 +190,7 @@ Content-type: text/plain
 588
 ```
 
-### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 转换获取包含字母"tier"的显示名称（包括返回的对象计数）的组的可传递成员资格
+### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 转换获取显示名称包含字母"tier"（包括返回对象计数）的组的可传递成员资格
 
 #### <a name="request"></a>请求
 
@@ -229,7 +233,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 和 OData 转换获取组中以"a"开头的可传递成员身份显示名称包括返回对象计数的组
+### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 和 OData 转换获取组中的可传递成员身份，显示名称以"a"开头（包括返回的对象计数）
 
 #### <a name="request"></a>请求
 

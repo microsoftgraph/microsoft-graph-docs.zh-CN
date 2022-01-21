@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b3fd1a9214c22c92ab57af4dac3093743f509498
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: df070a34f26dddf17670237f25df5bc1bfff0f29
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130197"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105748"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -23,8 +23,8 @@ ms.locfileid: "61130197"
 例如，你能够：
 
 - 使用[videoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)[会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或[joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取 onlineMeeting 的详细信息。
-- 使用 路径获取下载链接形式的Microsoft Teams活动与会者报告，如示例 `/attendeeReport` [4 所示](#example-4-fetch-attendee-report-of-a-teams-live-event)。 [](/microsoftteams/teams-live-events/what-are-teams-live-events)
-- 使用 和 路径以下载链接的形式Teams实时事件的录制，如示例 `/recording` `/alternativeRecording` [5 所示](#example-5-fetch-recording-of-a-teams-live-event)。 [](/microsoftteams/teams-live-events/what-are-teams-live-events)
+- 使用 路径获取活动Microsoft Teams下载链接的形式，如示例 `/attendeeReport` [4 所示](#example-4-fetch-attendee-report-of-a-teams-live-event)。 [](/microsoftteams/teams-live-events/what-are-teams-live-events)
+- 使用 `/recording` 和 路径，以下载Teams获取实时事件的录制，如示例 `/alternativeRecording` [5 所示](#example-5-fetch-recording-of-a-teams-live-event)。 [](/microsoftteams/teams-live-events/what-are-teams-live-events)
 
 Teams事件参与者报告，Teams实时事件录制是联机会议项目。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
 
@@ -38,7 +38,7 @@ Teams事件参与者报告，Teams实时事件录制是联机会议项目。 有
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                         |
 | 应用程序                            | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All  |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用，以代表该用户 (代表该用户获取联机会议和/或联机会议项目，请求路径) 中指定了用户 ID。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用代表该用户获取联机会议和/或联机会议项目 (请求路径) 中指定了用户 ID。
 
 > [!CAUTION]
 > 如果获取联机会议项目，则仅需要 _OnlineMeetingArtifact.Read.All_ 权限。 在 **2022** 年 1 月 15 日之前，你仍然可以提取没有它们的会议项目。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
@@ -66,7 +66,7 @@ GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-若要通过委派的 Teams[](/microsoftteams/teams-live-events/what-are-teams-live-events)应用和应用 () 获取 `/me` () `/users/{userId}` 报告：
+若要获取具有委派Teams实时事件的[](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告 () `/me` 应用 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -112,7 +112,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 - 如果通过会议 ID 获取联机会议，此方法在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
 - 如果通过 **videoTeleconferenceId** 或 **joinWebUrl** 提取联机会议，此方法将返回响应正文中仅包含 [一个 onlineMeeting](../resources/onlinemeeting.md) 对象的集合。
 - 如果提取联机会议的会议出席报告，此方法在响应正文中返回 [meetingAttendanceReport](../resources/meetingAttendanceReport.md) 对象。
-- 如果获取与会者报告或录制的 Microsoft Teams **Live 事件**，此方法将分别返回一个标头，指示与会者报告或录制 `Location` 的 URI。
+- 如果提取 Live 事件与会者报告或录制 **Microsoft Teams，** 此方法将分别返回一个标头，指示与会者报告或录制 `Location` 的 URI。
 
 ## <a name="examples"></a>示例
 
@@ -145,8 +145,12 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-onlinemeeting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onlinemeeting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -392,8 +396,12 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendee-report-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-attendee-report-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-attendee-report-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -451,8 +459,12 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/get-live-event-recording-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-live-event-recording-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-live-event-recording-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b9d2849ad12de18c86d44bd5e53fceb090319dcc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6fcd5e775b277832590699321831d41fed857714
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029602"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62088508"
 ---
 # <a name="get-identityprovider-deprecated"></a>获取 identityProvider（已弃用）
 命名空间：microsoft.graph
@@ -84,8 +84,12 @@ GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-identityprovider-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

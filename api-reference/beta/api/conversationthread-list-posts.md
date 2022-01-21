@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cac066f97891f1fd6bbf78f5009132301c2fb18a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b1419e99c3cdcf9a72a06491d25a1e7e4b284114
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026702"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106430"
 ---
 # <a name="list-posts"></a>列出帖子
 
@@ -39,7 +39,7 @@ GET /groups/{groupId}/conversations/{conversationId}/threads/{threadId}/posts
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 `$expand` 还支持扩展特定关系，并且一个请求中只能扩展一个关系。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -78,8 +78,12 @@ GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f
 [!INCLUDE [sample-code](../includes/snippets/java/get-posts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-posts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-posts-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

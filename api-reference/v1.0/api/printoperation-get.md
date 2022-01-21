@@ -5,19 +5,19 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 9b8e788da2cab6d7cc881d69e512071ce43e5127
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 18c8b96d066c13e11b027d790eb5fa0aa90098c3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032877"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104567"
 ---
 # <a name="get-printoperation"></a>获取 printOperation
 命名空间：microsoft.graph
 
 检索 [printOperation 对象的属性和](../resources/printoperation.md) 关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -47,7 +47,7 @@ GET /print/operations/{printOperationId}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码 (printOperation 对象或 `200 OK` **printOperation**) 派生对象。 [](../resources/printOperation.md)
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printOperation](../resources/printOperation.md) (**printOperation**) 派生对象。
 
 ## <a name="examples"></a>示例
 
@@ -78,8 +78,12 @@ GET https://graph.microsoft.com/v1.0/print/operations/{printOperationId}
 [!INCLUDE [sample-code](../includes/snippets/java/get-printoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printoperation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
