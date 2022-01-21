@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d7bad35fba6145ffd1e7bb64c1497b978f9f4270
+ms.openlocfilehash: 3fb0d548e5c9207eb3f927f0b2fc256b2c406f26
 ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131016"
+ms.locfileid: "62134355"
 ---
 ```javascript
 
@@ -15,8 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let deviceCompliancePolicySettingStateSummary = await client.api('/tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}')
-    .version('beta')
+let riskyUsers = await client.api('/identityProtection/riskyUsers')
     .get();
 
 ```

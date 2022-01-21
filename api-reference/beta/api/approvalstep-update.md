@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1551007f5acb00b4c955b5734e3097cb3c5f1f93
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 20cfb50b580f34ee820be6099ea6ac350417f906
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60995341"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131843"
 ---
 # <a name="update-approvalstep"></a>更新 approvalStep
 
@@ -48,7 +48,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 
 下表显示了此方法所需的属性。
 
-| 属性       | 类型    |说明|
+| 属性       | 类型    |Description|
 |:---------------|:--------|:----------|
 | reviewResult | String | 审批者的决定。 可取值为：`Approve`、`Deny`。|
 | justification | String | 与审批者决策相关的理由。 |
@@ -78,8 +78,12 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-approvalstep-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/patch-approvalstep-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-approvalstep-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

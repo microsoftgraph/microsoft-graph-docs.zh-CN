@@ -1,16 +1,16 @@
 ---
 title: 创建 outlookTaskFolder
-description: 在用户邮箱的默认任务 () `My Tasks` 任务文件夹。
+description: 在用户邮箱的默认任务 () `My Tasks` 创建任务文件夹。
 ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cd9a84c50c679dfd11389d1b09adeef0feaed98b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b6bb2674a686df3dab0f2cc1211d6fb27e3c1faa
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026556"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123380"
 ---
 # <a name="create-outlooktaskfolder-deprecated"></a>创建已弃 (outlookTaskFolder) 
 
@@ -21,7 +21,7 @@ ms.locfileid: "61026556"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-在用户邮箱的默认任务 () `My Tasks` 任务文件夹。
+在用户邮箱的默认任务 () `My Tasks` 创建任务文件夹。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +52,7 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例在用户邮箱的默认任务 () `My Tasks` 名为"志愿者"的任务文件夹。
+下面的示例在用户邮箱的默认任务 () 名为" `My Tasks` 志愿者"的任务文件夹。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,8 +83,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-outlooktaskfolder-from-outlookuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-outlooktaskfolder-from-outlookuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-outlooktaskfolder-from-outlookuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

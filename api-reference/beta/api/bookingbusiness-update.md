@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b375d9c4788c6f129b177d8ddbe47e3675f5fcce
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 35cfd16d36878f51d34cfc684b9f7cfa86a056f1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525748"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129994"
 ---
 # <a name="update-bookingbusiness"></a>更新 bookingbusiness
 
@@ -48,7 +48,7 @@ PATCH /bookingBusinesses/{id}
 |businessType|String|业务类型。|
 |defaultCurrencyIso|String|在 Microsoft Bookings 上运营业务的货币代码。|
 |displayName|String|与客户交互的企业的名称。|
-|email|字符串|企业的电子邮件地址。|
+|email|String|企业的电子邮件地址。|
 |phone|String|企业的电话号码。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|指定如何为此业务创建预订。|
 |webSiteUrl|String|业务网站的 URL。|
@@ -95,8 +95,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingbusiness-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

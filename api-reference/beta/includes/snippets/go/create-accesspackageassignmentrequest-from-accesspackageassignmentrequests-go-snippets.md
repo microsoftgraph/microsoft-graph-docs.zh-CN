@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3d100978df570f6992690ab5f2345cc53fe9c458
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 7700ad1220af96dd00506ed14e553a983f388084
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089600"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129845"
 ---
 ```go
 
@@ -17,9 +17,8 @@ requestType := "AdminRemove"
 requestBody.SetRequestType(&requestType)
 accessPackageAssignment := msgraphsdk.NewAccessPackageAssignment()
 requestBody.SetAccessPackageAssignment(accessPackageAssignment)
-accessPackageAssignment.SetAdditionalData(map[string]interface{}{
-    "id": "a6bb6942-3ae1-4259-9908-0133aaee9377",
-}
+id := "a6bb6942-3ae1-4259-9908-0133aaee9377"
+accessPackageAssignment.SetId(&id)
 options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderPostOptions{
     Body: requestBody,
 }

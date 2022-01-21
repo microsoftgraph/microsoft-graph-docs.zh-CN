@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3663f25b66f6c65945a1a2d0b0c6b5f564640dad
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 664cc681c35211f6b017012b409d778d510e4a2b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561687"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137658"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var meetingRegistrant = new MeetingRegistrant
+var meetingRegistrantBase = new MeetingRegistrant
 {
     FirstName = "Lisa",
     LastName = "Adkins",
@@ -33,6 +33,6 @@ var meetingRegistrant = new MeetingRegistrant
 
 await graphClient.Users["{user-id}"].OnlineMeetings["{onlineMeeting-id}"].Registration.Registrants
     .Request()
-    .AddAsync(meetingRegistrant);
+    .AddAsync(meetingRegistrantBase);
 
 ```

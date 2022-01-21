@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d34f86f7599d20cdc69b4a2e885043e62f263c0f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5122219dd4c648c00e5078b58578f00238d9adca
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996979"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132787"
 ---
 # <a name="create-projectparticipation"></a>创建 projectParticipation
 
@@ -20,7 +20,7 @@ ms.locfileid: "60996979"
 
 使用此 API 在用户配置文件中创建新的 [projectParticipation](../resources/projectParticipation.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,12 +52,12 @@ POST /users/{id | userPrincipalName}/profile/projects
 
 下表显示了在用户配置文件中创建新的 [projectParticipation](../resources/projectParticipation.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String collection|包含用户与项目计划关联的类别 (例如，数字转换、) 。 |
+|categories|String 集合|包含用户与项目计划关联的类别 (例如，数字转换、国家/) 。 |
 |client|[companyDetail](../resources/companydetail.md)|包含有关项目用于的客户端的详细信息。 |
-|collaborationTags|String collection|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
+|collaborationTags|字符串集合|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
 |同事|[relatedPerson](../resources/relatedperson.md) 集合|列出同样从事项目工作的人。 |
 |detail|[positionDetail](../resources/positiondetail.md)|包含有关用户在项目上的角色的详细信息。|
 |displayName|String|包含项目的友好名称。|
@@ -126,8 +126,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-projectparticipation-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-projectparticipation-from-profile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-projectparticipation-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 58e3e1ff60275aec2786788d2517d4db96877539
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 5dec52dc3aa38bc301194f87739105a112466847
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225819"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137634"
 ---
 ```go
 
@@ -15,9 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 user := msgraphsdk.NewTeamworkUserIdentity()
 requestBody.SetUser(user)
-user.SetAdditionalData(map[string]interface{}{
-    "id": "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
-}
+id := "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
+user.SetId(&id)
 tenantId := "2a690434-97d9-4eed-83a6-f5f13600199a"
 requestBody.SetTenantId(&tenantId)
 options := &msgraphsdk.UnhideForUserRequestBuilderPostOptions{
