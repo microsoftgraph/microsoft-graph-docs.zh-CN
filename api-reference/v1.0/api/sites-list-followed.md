@@ -5,12 +5,12 @@ title: 关注网站列表
 ms.localizationpriority: medium
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: b6a8d540439a6d8ff0f8676dd955c6b298513eeb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 32ff7dab3ad5a2b64a93606502fff80de30ca134
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029223"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121784"
 ---
 # <a name="list-followed-sites"></a>关注网站列表
 
@@ -18,7 +18,7 @@ ms.locfileid: "61029223"
 
 列出 [已](../resources/site.md) 登录用户关注的网站。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -89,8 +89,12 @@ GET /me/followedSites
 [!INCLUDE [sample-code](../includes/snippets/java/sites-list-followed-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sites-list-followed-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sites-list-followed-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

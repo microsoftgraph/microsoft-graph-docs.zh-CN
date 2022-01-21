@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f23c601cd50fcb3c1223d494d9786e2147512869
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b422d69adcbf7d94b8128c13f95a7854963b83ef
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011996"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62116015"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
 
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 在查询 URL 中将父文件夹指定为文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头 | 值 |
 |:-------|:------|
@@ -57,7 +57,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | @odata.type | String | 要创建的文件夹的类型。 设置为"microsoft.graph.mailSearchFolder"。 |
 | displayName | String | 新文件夹的显示名称。|
 | includeNestedFolders | 布尔 | 指示如何在搜索中遍历邮箱文件夹层次结构。 `true` 意味着应该执行深层搜索，以在 **sourceFolderIds** 中显式指定的每个文件夹的层次结构中包括子文件夹。 `false` 表示仅对 **sourceFolderIds** 中显式指定的每个文件夹进行浅表搜索。 |
-| sourceFolderIds | String collection | 应缩小的邮箱文件夹。 |
+| sourceFolderIds | String 集合 | 应缩小的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
@@ -105,8 +105,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-mailsearchfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-mailsearchfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-mailsearchfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
