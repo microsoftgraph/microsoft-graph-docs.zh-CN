@@ -1,16 +1,16 @@
 ---
 title: 获取 accessReview
-description: 在访问Azure AD功能中，检索 accessReview 对象。
+description: 在Azure AD查看功能中，检索 accessReview 对象。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4abb0df4aef41b6b73e40e2a70c7d1f0f499761b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6a5d14aa63b523d5bd0b3fd9846b96eae055d1a3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988139"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104015"
 ---
 # <a name="get-accessreview"></a>获取 accessReview
 
@@ -18,7 +18,7 @@ ms.locfileid: "60988139"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[查看功能](../resources/accessreviews-root.md)中，检索[accessReview](../resources/accessreview.md)对象。  
+在Azure AD[评审](../resources/accessreviews-root.md)功能中，检索[accessReview](../resources/accessreview.md)对象。  
 
 若要检索访问评审的审阅者，请使用 [列表 accessReview reviewers](accessreview-listreviewers.md) API。 若要检索访问评审的决策，请使用 [列表 accessReview 决策](accessreview-listdecisions.md) API 或列表 [my accessReview 决策](accessreview-listmydecisions.md) API。
 
@@ -79,8 +79,12 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-accessreview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

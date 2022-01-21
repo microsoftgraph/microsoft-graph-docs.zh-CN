@@ -5,12 +5,12 @@ author: abshar-teams
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: e33022a593d855c8096e7b74064d58e8ebf26db4
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 5a3c2636858aae60821f9734cc3a5c29b90c33ff
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688407"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117757"
 ---
 # <a name="conversationmember-add"></a>conversationMember: add
 
@@ -45,7 +45,7 @@ POST /teams/{team-id}/members/add
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供需要添加到团队的 `conversationMember` 派生对象列表的 JSON 表示形式。
+在请求正文中，提供需要添加到团队的 `conversationMember` 派生对象列表的 JSON 表示形式。 在一个请求中最多可以添加 200 `conversationMember` 个派生项。
 
 下表显示了可用于此操作的参数。
 

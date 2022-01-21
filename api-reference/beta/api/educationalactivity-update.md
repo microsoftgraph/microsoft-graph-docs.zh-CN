@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1670ec1dc9d459486aff4d7cf9743316566a434d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 078c89626e338263509b11cea015af14cf6f8866
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005212"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123715"
 ---
 # <a name="update-educationalactivity"></a>更新教育活动
 
@@ -50,15 +50,15 @@ PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|completionMonthYear|日期|用户注册或完成活动的月份和年份。 |
-|endMonthYear|日期|用户完成所引用的教育活动的月份和年份。|
+|completionMonthYear|Date|用户注册或完成活动的月份和年份。 |
+|endMonthYear|Date|用户完成所引用的教育活动的月份和年份。|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |机构|[institutionData](../resources/institutiondata.md)|包含所查看的机构的详细信息。 |
 |程序|[educationalActivityDetail](../resources/educationalactivitydetail.md)|包含有关计划或课程的扩展信息。|
-|startMonthYear|日期|用户对所引用的活动进行跟踪的月份和年份。|
+|startMonthYear|Date|用户对所引用的活动进行跟踪的月份和年份。|
 
 ## <a name="response"></a>响应
 
@@ -112,8 +112,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationalactivity-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationalactivity-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationalactivity-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

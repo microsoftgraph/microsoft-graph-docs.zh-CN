@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 84d51a2e0e24da6c68cddc136ec96abfb859deb9
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: b028cc6c659615287acd407fdce1572ba2cd0abc
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860444"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62116338"
 ---
 # <a name="send-message-in-a-chat"></a>在聊天中发送消息
 
@@ -22,7 +22,7 @@ ms.locfileid: "61860444"
 
 > **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：使用产品作为Microsoft Teams违反日志文件。 [](/legal/microsoft-apis/terms-of-use) 仅发送用户将阅读的邮件。
+> **注意**：使用安全工具 [作为](/legal/microsoft-apis/terms-of-use)Microsoft Teams违反日志文件。 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessages-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessages-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1f6f74ae45a9ec7d5fb35728419c5b06504a24b3
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 2c967bb344d1b077db0f0984bd275defa4292d7b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101613"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137626"
 ---
 ```go
 
@@ -27,12 +27,6 @@ previewText := msgraphsdk.NewItemBody()
 requestBody.SetPreviewText(previewText)
 content := "New deployment requires your approval"
 previewText.SetContent(&content)
-recipient := msgraphsdk.NewTeamworkNotificationRecipient()
-requestBody.SetRecipient(recipient)
-recipient.SetAdditionalData(map[string]interface{}{
-    "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
-    "userId": "569363e2-4e49-4661-87f2-16f245c5d66a",
-}
 requestBody.SetTemplateParameters( []KeyValuePair {
     msgraphsdk.NewKeyValuePair(),
     SetAdditionalData(map[string]interface{}{
@@ -43,8 +37,8 @@ requestBody.SetTemplateParameters( []KeyValuePair {
 options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
     Body: requestBody,
 }
-teamId := "team-id"
-graphClient.TeamsById(&teamId).SendActivityNotification().Post(options)
+userId := "user-id"
+graphClient.UsersById(&userId).Teamwork().SendActivityNotification().Post(options)
 
 
 ```

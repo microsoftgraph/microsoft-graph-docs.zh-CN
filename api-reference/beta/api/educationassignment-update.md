@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9bd6260629da8399acc761f4e2df570db45a7c56
-ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
+ms.openlocfilehash: cb1cc349ae7787e5daf95e50b882f2045605129f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61608974"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090237"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -49,8 +49,8 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 |:---------------|:--------|:----------|
 |addedStudentAction|String| 控制在作业发布后添加的学生的行为。|
 |addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制发布作业时将作业添加到学生和教师日历的作业行为。 可能的值是 `none` `studentsAndPublisher` ：、、 `studentsAndTeamOwners` `studentsOnly` 和 `unknownFutureValue` 。 默认值为 `none`。 当工作分配的状态为"已发布"时， **不能** 修改。 |
-|allowLateSubmissions|Boolean| 提交是否可在截止日期后提交。|
-|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以向提交中添加资源。 指示提交中的唯一项目是否来自工作分配资源列表。 |
+|allowLateSubmissions|布尔| 提交是否可在截止日期后提交。|
+|allowStudentsToAddResourcesToSubmission|布尔| 学生是否可以向提交中添加资源。 指示提交中的唯一项目是否来自工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 作业应发布到学生的日期。 工作分配发布后无法编辑。 |
 |assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| 获得作业的学生。|
 |closeDateTime|DateTimeOffset| 工作分配关闭提交的日期。 如果分配不允许LateSubmissions或 closeDateTime 与 dueDateTime 相同，则该字段可以是 null 的可选字段，但如果指定，它必须大于或等于 dueDateTime。|
@@ -58,7 +58,7 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 |dueDateTime|DateTimeOffset| 日期分配到期。 |
 |一个|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| 如何对作业进行评分。|
 |instructions|itemBody| 要与作业一起向学生提供的说明。 |
-|notificationChannelUrl|字符串| 发布分配发布通知的频道。 发布分配后不允许更新通道 URL，并且仅在 **assignTo** 值为 [educationAssignmentClassRecipient 时允许更新](../resources/educationassignmentclassrecipient.md)。|
+|notificationChannelUrl|String| 发布分配发布通知的频道。 发布分配后不允许更新通道 URL，并且仅在 **assignTo** 值为 [educationAssignmentClassRecipient 时允许更新](../resources/educationassignmentclassrecipient.md)。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationAssignment](../resources/educationassignment.md) 对象。
@@ -103,8 +103,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

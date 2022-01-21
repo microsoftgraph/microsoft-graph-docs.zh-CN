@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 44daddda91504432668e1f65e36d1318801cc385
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 03c54fc7762cc66013bf9c465bced2a43e204509
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60924761"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098041"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
@@ -28,7 +28,7 @@ ms.locfileid: "60924761"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| 对于 **用户** 或 **聊天** 资源：不支持。<br/><br/>对于 **频道** 资源：TeamMember.Read.Group*、ChannelMember.Read.All、ChannelMember.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 
 ## <a name="http-request"></a>HTTP 请求

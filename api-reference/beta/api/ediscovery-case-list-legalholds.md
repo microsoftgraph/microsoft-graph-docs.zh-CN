@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 43c91d0d659c31ff8eae0fa6bab36f455487e3ef
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 57635312db6dd76a5e39feb4d76761a59e25e087
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030245"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133851"
 ---
 # <a name="list-legalholds"></a>列出 legalHolds
 
@@ -20,7 +20,7 @@ ms.locfileid: "61030245"
 
 获取[适用于案例的 legalHolds。](../resources/ediscovery-legalhold.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -90,8 +90,12 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalH
 [!INCLUDE [sample-code](../includes/snippets/java/list-legalhold-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-legalhold-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-legalhold-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

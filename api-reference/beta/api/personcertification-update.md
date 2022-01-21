@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bf531f9bc776ee6ffa00e681022a1984620806fa
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 255b549bc3cba2f58ad121440094c0a01c9edf08
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018120"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62093961"
 ---
 # <a name="update-personcertification"></a>更新 personCertification
 命名空间：microsoft.graph
@@ -56,7 +56,7 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 |displayName      |String      |认证的标题。                         |
 |endDate          |日期        |认证到期的日期。            |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|issuedDate       |日期        |颁发证书的日期。         |
+|issuedDate       |Date        |颁发证书的日期。         |
 |issuingAuthority |String      |授予证书的颁发机构。          |
 |issuingCompany   |String      |授予证书的颁发机构。          |
 |startDate        |日期        |认证生效的日期。       |
@@ -101,8 +101,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-personcertification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-personcertification-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-personcertification-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

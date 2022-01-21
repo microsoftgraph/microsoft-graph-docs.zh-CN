@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 83ef3cb4ac08a9351d63625ec643ff3ed2ce9565
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 66ea0c51822159d7a3f85b4525a12481943d54f1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60997043"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136988"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
@@ -22,7 +22,7 @@ ms.locfileid: "60997043"
 
 创建 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -45,7 +45,7 @@ POST /privilegedRoleAssignmentRequests
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象的 JSON 表示形式。 
 
-| 属性     | 类型    |  说明|
+| 属性     | 类型    |  Description|
 |:---------------|:--------|:----------|
 |roleId|String|角色的 ID。 此为必需属性。|
 |type|String|表示对项目执行的操作角色分配。 值可以是 `AdminAdd` ：管理员将用户添加到角色 `UserAdd` ;：用户添加角色分配。 必需。|
@@ -119,8 +119,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-privilegedroleassignmentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-privilegedroleassignmentrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-privilegedroleassignmentrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

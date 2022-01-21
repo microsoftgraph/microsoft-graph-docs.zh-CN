@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 13d98f74ce4ce0c734f4950ec028b038a9819a30
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a67599c4a813e1ac7e354d1fd2b0c26c8eb366bb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687990"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101884"
 ---
 # <a name="sourcecollection-resource-type"></a>sourceCollection 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "60687990"
 
 表示一个电子数据展示集合，通常称为搜索。 有关详细信息，请参阅 [电子数据展示中收集](/microsoft-365/compliance/collecting-data-for-ediscovery)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -31,8 +31,8 @@ ms.locfileid: "60687990"
 |[创建 sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|创建新的 **sourceCollection** 对象。|
 |[获取 sourceCollection](../api/ediscovery-sourcecollection-get.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|读取 **sourceCollection** 对象的属性和关系。|
 |[更新 sourceCollection](../api/ediscovery-sourcecollection-update.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|更新 **sourceCollection 对象** 的属性。|
-|[删除 sourceCollection](../api/ediscovery-sourcecollection-delete.md)|无|删除 **sourceCollection** 对象。|
-|[estimateStatistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|无|运行源集合中电子邮件和文档的估计数量。|
+|[删除 sourceCollection](../api/ediscovery-sourcecollection-delete.md)|None|删除 **sourceCollection** 对象。|
+|[estimateStatistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|None|运行源集合中电子邮件和文档的估计数量。|
 |[列出 additionalSources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 集合|获取与源集合关联的其他 **dataSource** 对象的列表。|
 |[列出 custodianSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 集合|获取与源集合关联的保管人 **dataSource** 对象的列表。|
 |[列出 noncustodialSources](../api/ediscovery-sourcecollection-list-noncustodialsources.md)|[microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md) 集合|获取与源集合关联的非自定义源 **非自定义源** 对象的列表。|
@@ -41,13 +41,13 @@ ms.locfileid: "60687990"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|contentQuery|String|KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅内容 [搜索和电子数据展示的关键字查询和搜索条件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)。 您可以通过使用与值配对的字段来优化搜索;例如 *，subject："Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*。|
+|contentQuery|String|KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅内容 [搜索和电子数据展示的关键字查询和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。 您可以通过使用与值配对的字段来优化搜索;例如 *，subject："Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*。|
 |createdBy|[identitySet](../resources/identityset.md)|创建 **sourceCollection 的用户**。|
 |createdDateTime|DateTimeOffset|创建 **sourceCollection** 的日期和时间。|
 |dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|指定此参数时，集合将跨越整个工作负荷的服务。 可取值为：`none`、`allTenantMailboxes`、`allTenantSites`、`allCaseCustodians`、`allCaseNoncustodialDataSources`。|
 |说明|String|**sourceCollection 的说明**。|
-|displayName|String|**sourceCollection** 的 显示名称 。|
-|id|字符串| **sourceCollection 的** ID。 只读。 |
+|displayName|String|sourceCollection 的 **显示名称。**|
+|id|String| **sourceCollection 的** ID。 只读。 |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|上次修改 **sourceCollection 的用户**。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 **sourceCollection** 的日期和时间。|
 

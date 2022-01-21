@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e2bcabc61e832204fae87646b30d7c7c0bf49e34
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2ccc88f9ea2cb94db1eff8dc00c8729d4f5c5e0e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014537"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133350"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -46,7 +46,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 > - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明                 |
 | :------------ | :-------------------------- |
@@ -63,10 +63,10 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 最后一列指示更新此属性是否将生效进行中的会议。
 
-| 属性                    | 类型                                                       | 说明                                                                         | 是否适用于进行中的会议？    |
+| 属性                    | 类型                                                       | Description                                                                         | 是否适用于进行中的会议？    |
 |-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
-| startDateTime               | 日期时间                                                   | 会议开始时间（UTC）。                                                      | 否                           |
-| endDateTime                 | 日期时间                                                   | 会议结束时间（UTC）。                                                        | 否                           |
+| startDateTime               | DateTime                                                   | 会议开始时间（UTC）。                                                      | 否                           |
+| endDateTime                 | DateTime                                                   | 会议结束时间（UTC）。                                                        | 否                           |
 | subject                     | String                                                     | 联机会议的主题。                                                  | 否                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | 与联机会议关联的参与者。 仅与会者可以更新。 | 否                           |
 | isEntryExitAnnounced        | 布尔                                                    | 呼叫者加入或离开时是否宣布。                              | 是                          |
@@ -127,8 +127,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-start-end-subject-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-start-end-subject-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-start-end-subject-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -221,8 +225,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-lobbybypasssettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-lobbybypasssettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-lobbybypasssettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

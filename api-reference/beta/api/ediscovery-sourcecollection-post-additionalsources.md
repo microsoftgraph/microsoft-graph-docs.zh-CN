@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 25e8636ae12ad982ae7f7b6fe07af241a3dbde3c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7c1be75cb01ab525ea061df653bd4f85ffc204af
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994179"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127936"
 ---
 # <a name="create-datasource"></a>创建 dataSource
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 >**注意：** 电子邮件 **或****网站** 是必需的，而不是同时需要两者。 
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |email|string|邮箱的 SMTP 地址。 若要获取组的电子邮件地址，请使用 [列表组](../api/group-list.md) 或 [获取组](../api/group-get.md)。 可以使用 按组名称进行查询 `$filter` ;例如， `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` 。|
 |网站|string|网站的 URL;例如， `https://contoso.sharepoint.com/sites/HumanResources` 。 |
@@ -104,8 +104,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-datasource-from--1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-datasource-from--1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

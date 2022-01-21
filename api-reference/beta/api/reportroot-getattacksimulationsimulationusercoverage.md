@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: c01c89ead4e21c5e456b78102800e48f63cb99e1
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: fb1af678cb07b9ced378f00b02576919fe637b68
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996376"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135076"
 ---
 # <a name="reportroot-getattacksimulationsimulationusercoverage"></a>reportRoot： getAttackSimulationSimulationUserCoverage
 命名空间：microsoft.graph
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/reports/getAttackSimulationSimulationUserCo
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getattacksimulationsimulationusercoverage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getattacksimulationsimulationusercoverage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

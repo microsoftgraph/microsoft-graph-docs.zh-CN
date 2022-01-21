@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 15d5941eea31762a5295350b19393992f9256566
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 38995c4717d83a4ac74c75b1189fa65dfb0e8908
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008678"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134229"
 ---
 # <a name="get-teamworkbot"></a>获取 teamworkBot
 
@@ -38,9 +38,9 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 `$select` [OData 查询参数](/graph/query-parameter)来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameter) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -82,8 +82,12 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e4c5c249-bb4b-419e-b7
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamworkbot-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-teamworkbot-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-teamworkbot-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

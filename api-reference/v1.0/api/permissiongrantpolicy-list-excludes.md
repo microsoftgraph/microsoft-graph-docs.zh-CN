@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: d55cb512f7553372f1c0f9663b31af7c6d7134a2
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 92439a427ced505417204386a8d23dcbd9732177
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266164"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62088535"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>List excludes collection of permissionGrantPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "61266164"
 
 检索在[permissionGrantPolicy](../resources/permissiongrantpolicy.md)中排除的条件集。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,7 +39,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -57,7 +57,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 ### <a name="request"></a>请求
 
-下面是请求检索内置权限授予策略的排除条件集的示例 `microsoft-application-admin` 。 此权限授予策略包括所有委派权限，以及除 Microsoft 应用程序权限之外的所有应用程序权限Graph应用程序权限Azure Active Directory Graph。
+下面是请求检索内置权限授予策略的排除条件集的示例 `microsoft-application-admin` 。 此权限授予策略包括所有委派权限，以及除 Microsoft 应用程序权限之外的所有应用程序权限Graph应用程序权限以及 Azure Active Directory Graph。
 
 
 
@@ -86,8 +86,12 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-excludes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-get-excludes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/permissiongrantpolicy-get-excludes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

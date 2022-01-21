@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 136b30fde227c3735603e507223dda68fb856e00580c07121e2bc8283c8e95bb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 62c6dd30ea5af74495218dbda5bd1e3213c7b131
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57278417"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131442"
 ---
 ```objc
 
@@ -17,12 +17,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphCloudPcProvisioningPolicy *cloudPcProvisioningPolicy = [[MSGraphCloudPcProvisioningPolicy alloc] init];
-[cloudPcProvisioningPolicy setDisplayName:@"Display Name value"];
-[cloudPcProvisioningPolicy setDescription:@"Description value"];
-[cloudPcProvisioningPolicy setOnPremisesConnectionId:@"4e47d0f6-6f77-44f0-8893-c0fe1701ffff"];
-[cloudPcProvisioningPolicy setImageId:@"Image ID value"];
-[cloudPcProvisioningPolicy setImageDisplayName:@"Image Display Name value"];
-[cloudPcProvisioningPolicy setImageType: [MSGraphCloudPcProvisioningPolicyImageType custom]];
+[cloudPcProvisioningPolicy setDisplayName:@"HR provisioning policy"];
+[cloudPcProvisioningPolicy setDescription:@"Provisioning policy for India HR employees"];
+[cloudPcProvisioningPolicy setOnPremisesConnectionId:@"4e47d0f6-6f77-44f0-8893-c0fe1701b553"];
 
 NSError *error;
 NSData *cloudPcProvisioningPolicyData = [cloudPcProvisioningPolicy getSerializedDataWithError:&error];

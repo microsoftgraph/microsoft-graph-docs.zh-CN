@@ -1,16 +1,16 @@
 ---
 title: 列出 signIn
 doc_type: apiPageType
-description: 获取租户租户中的用户登录Azure Active Directory列表。
+description: 获取租户中用户登录Azure Active Directory列表。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 8e024d3e0b1af52b5dcb63f8937cfc9495c22c59
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 699ca644b3c968953c36eff155440dea198aefd0
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791971"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62095919"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -20,7 +20,7 @@ ms.locfileid: "61791971"
 
 获取 [signIn 对象](../resources/signin.md) 的列表。 该列表包含你的租户的用户Azure Active Directory登录。 用户名和密码作为授权令牌的一部分传递的登录，并且成功的联合登录当前包含在登录日志中。
 
-最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有默认保留期内发生的登录Azure Active Directory (Azure AD) [可用](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)。
+最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有默认保留期Azure Active Directory (Azure AD) [登录事件](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)可用。
 
 ## <a name="permissions"></a>权限
 
@@ -43,7 +43,7 @@ ms.locfileid: "61791971"
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全信息读取者
++ 安全读取者
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -106,6 +106,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 [!INCLUDE [sample-code](../includes/snippets/go/get-signins-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-signins-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -132,6 +136,12 @@ Content-type: application/json
       "userId":"26be570a-1111-5555-b4e2-a37c6808512d",
       "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
       "appDisplayName":"Azure Portal",
+      "authenticationContextClassReferences": [
+        {
+          "id":"C1",
+          "details":"required"
+       }
+      ],
       "ipAddress":"131.107.159.37",
       "clientAppUsed":"Browser",
       "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
@@ -154,14 +164,23 @@ Content-type: application/json
       "riskEventTypes_v2":[],
       "resourceDisplayName":"Windows Azure Service Management API",
       "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "resourceServicePrincipalId": "a6033f22-27f9-45cb-8f63-7dd8a0590e4e",
       "resourceTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
       "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
       "authenticationMethodsUsed":[],
       "authenticationRequirement":"singleFactorAuthentication",
+      "azureResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testRG/providers/Microsoft.Compute/virtualMachines/testVM",
+      "federatedCredentialId": "729ab02a-edd5-4ef5-a285-2d91a3c772ab",
       "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
       "signInIdentifier":"testaccount1@contoso.com",
       "signInEventTypes":["interactiveUser"],
       "servicePrincipalId":"",
+      "sessionLifetimePolicies": [
+        {
+          "expirationRequirement": "tenantTokenLifetimePolicy",
+          "detail": "The user was required to sign in again according to the tenant session lifetime policy"
+        }
+      ],
       "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
       "userType":"member",
       "flaggedForReview":false,
@@ -224,6 +243,8 @@ Content-type: application/json
 此示例中，响应对象显示用户仅使用其主身份验证方法（云密码）登录。 该响应包含 `@odata.nextLink` 一个属性，其中包含可用于检索接下来的 10 个结果的 URL。
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signins_2"
@@ -231,6 +252,32 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDisplayName,'Azure')&top=10
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signins-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signins-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signins-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-signins-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-signins-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 321560a0f6e11d23b0f0644618dcc9e3388bbdcb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 91e74e087f96da1f93e79ef33f08863407be1a5b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976915"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136876"
 ---
 # <a name="delete-unifiedroleassignment"></a>删除 unifiedRoleAssignment
 
@@ -22,7 +22,7 @@ ms.locfileid: "60976915"
 
 ## <a name="permissions"></a>权限
 
-根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据 RBAC 提供程序以及 (或应用程序) 类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 ### <a name="for-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
@@ -50,7 +50,7 @@ ms.locfileid: "60976915"
 DELETE /roleManagement/directory/roleAssignments/{id}
 ```
 
-从角色分配管理提供程序中删除以下权限：
+从角色分配提供程序中删除以下权限：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -59,7 +59,7 @@ DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明   |
 |:--------------|:--------------|
@@ -104,8 +104,12 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
 [!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroleassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroleassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 96135b90283ff7b73296f7e44f03e569ba348514
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 59fb187428c993828ccf2caa3eaaace1152a66ed
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026290"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115840"
 ---
 # <a name="delete-approleassignment"></a>删除 appRoleAssignment
 
@@ -43,7 +43,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 > [!NOTE]
 > 最佳做法是，我们建议你使用 Delete [appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md)方法删除应用角色分配，该方法通过资源服务主体的 **appRoleAssignedTo** 关系删除，而不是使用此方法。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:---------------|:--------|
@@ -89,8 +89,12 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipal-id}/
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delete-approleassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-delete-approleassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e4821e6b84cd93dbbf880d072e672dccdde7cd04
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b4f8d978196b07ba0b6945377e90bbed3bd97245
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023277"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114704"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -61,7 +61,7 @@ GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-若要获取具有委派Teams实时事件的[](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告， () `/me` 应用 () `/users/{userId}` 权限：
+若要获取具有委派Teams实时事件的[](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告 () `/me` 应用 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -79,7 +79,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
@@ -96,7 +96,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 
 - 如果通过会议 ID 获取联机会议，此方法在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
 - 如果通过 **videoTeleconferenceId** 或 **joinWebUrl** 提取联机会议，此方法将返回响应正文中仅包含 [一个 onlineMeeting](../resources/onlinemeeting.md) 对象的集合。
-- 如果获取活动活动Teams[报告](/microsoftteams/teams-live-events/what-are-teams-live-events)，此方法将返回一个标头，指示与会者报告的 `Location` URI。
+- 如果获取活动实时事件的Teams[报告](/microsoftteams/teams-live-events/what-are-teams-live-events)，此方法将返回一个标头，指示与会者报告的 `Location` URI。
 
 ## <a name="examples"></a>示例
 
@@ -133,8 +133,12 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-onlinemeeting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onlinemeeting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -217,7 +221,7 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：按会议 ID 检索联机会议
-可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中会提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
+可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中会提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
 
 #### <a name="request"></a>请求
 
@@ -246,8 +250,12 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-user-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-onlinemeeting-user-token-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onlinemeeting-user-token-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -305,7 +313,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>示例 3：通过 joinWebUrl 检索联机会议
-您可以使用用户令牌或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的用例，例如，当用户在 Microsoft Teams 客户端) 中创建会议 (，并且单独的应用程序需要检索会议详细信息作为后续操作。
+您可以使用用户令牌或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的用例，例如，当用户在 Microsoft Teams 客户端) 中创建会议 (时，单独的应用程序需要检索会议详细信息作为后续操作。
 
 #### <a name="request"></a>请求
 
@@ -404,8 +412,12 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendee-report-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-attendee-report-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-attendee-report-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,22 +1,36 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c434909a827bf4bb7518ef4b54131dc584d331a8
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ee1d71787e7aa5a1538707b53f01b34bdb01026b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61104133"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133061"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+requestBody := msgraphsdk.NewPlannerTaskDetails()
+previewType := "noPreview"
+requestBody.SetPreviewType(&previewType)
+references := msgraphsdk.NewPlannerExternalReferences()
+requestBody.SetReferences(references)
+references.SetAdditionalData(map[string]interface{}{
+    "http%3A//www%2Ebing%2Ecom": nil,
+}
+checklist := msgraphsdk.NewPlannerChecklistItems()
+requestBody.SetChecklist(checklist)
+checklist.SetAdditionalData(map[string]interface{}{
+    "a93c93c5-10a6-4167-9551-8bafa09967a7": nil,
+}
 headers := map[string]string{
     "Prefer": "return=representation"
     "If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
 }
 options := &msgraphsdk.DetailsRequestBuilderPatchOptions{
+    Body: requestBody,
     H: headers,
 }
 plannerTaskId := "plannerTask-id"

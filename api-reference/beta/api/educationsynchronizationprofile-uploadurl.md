@@ -1,16 +1,16 @@
 ---
 title: educationSynchronizationProfile： uploadUrl
-description: 检索共享访问签名 (SAS) ，用于将源文件上载到租户中特定学校数据同步配置文件的 Azure blob 存储。 SAS 令牌的有效期为 1 小时。
+description: 检索共享访问签名 (SAS) ，以将源文件上载到租户中特定学校数据同步配置文件的 Azure blob 存储。 SAS 令牌的有效期为 1 小时。
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5eab6e69edb352a7b750702e9d34cbc2df7bb4ed
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: dafd238642c49572ec776326584b75fd902b149a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946816"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62109062"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile： uploadUrl
 
@@ -18,13 +18,13 @@ ms.locfileid: "60946816"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 SAS (检索) ，以将源文件上传到租户中特定学校数据同步配置文件的 Azure blob 存储。 [](../resources/educationsynchronizationprofile.md) SAS 令牌的有效期为 1 小时。
+检索共享访问签名 (SAS) ，以将源文件上载到租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的 Azure blob 存储。 SAS 令牌的有效期为 1 小时。
 
 上载 URL 仅为 CSV 数据 [提供程序提供](../resources/educationcsvdataprovider.md)。
 
 > **注意：** 若要使用 SAS 令牌访问 blob 存储，请使用 Azure 存储 [SDK](https://github.com/search?q=org%3AAzure+azure-storage) 或 [AzCopy](/azure/storage/storage-use-azcopy)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限 |
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-uploadurl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationsynchronizationprofile-uploadurl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

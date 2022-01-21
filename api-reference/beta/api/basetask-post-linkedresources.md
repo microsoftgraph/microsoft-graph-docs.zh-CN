@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6d93e29b6808197be3a6937518107d5e49a9ce9c
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 96ed1ca949a1485e952d44e4d1113fa5d80fe3f5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524762"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62124147"
 ---
 # <a name="create-linkedresource_v2"></a>创建linkedResource_v2
 命名空间：microsoft.graph
@@ -49,12 +49,12 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 
 在创建一个属性时，**可以指定linkedResource_v2。**
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |applicationName|String|指示发送 **linkedResource** 的源的应用名称的字段。|
 |displayName|String|指示 **linkedResource 的标题的字段**。|
 |externalId|String|第三方/合作伙伴系统上与此任务关联的对象的 ID。|
-|webUrl|String|指向 **linkedResource 的深层链接**。|
+|WebUrl|String|指向 **linkedResource 的深层链接**。|
 
 ## <a name="response"></a>响应
 
@@ -83,6 +83,22 @@ Content-Type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-linkedresource-v2-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-linkedresource-v2-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-linkedresource-v2-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-linkedresource-v2-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-linkedresource-v2-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

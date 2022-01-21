@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ee9b76504fb75ad4b59c2f3716fa5a2258e0bc01
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0bbe887c11f8b7f5e48122c203be723efcab24d9
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022510"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134048"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
@@ -20,7 +20,7 @@ ms.locfileid: "61022510"
 
 更新 [countryNamedLocation 对象](../resources/countryNamedLocation.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,9 +51,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 必须将 **@odata.type** 指定为 `#microsoft.graph.countryNamedLocation` 。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区列表。|
+|countriesAndRegions|字符串集合|ISO 3166-2 指定的两字母格式的国家/地区列表。|
 |displayName|String|位置的可读名称。|
 |includeUnknownCountriesAndRegions|布尔|该值是未映射到国家/地区或地区的 IP 地址应包含在 `true` 命名位置中。|
 
@@ -103,8 +103,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-countrynamedlocation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-countrynamedlocation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-countrynamedlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

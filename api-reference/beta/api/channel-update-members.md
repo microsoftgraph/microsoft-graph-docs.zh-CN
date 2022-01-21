@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: d4cbac056938a8575e9866e53f43518a85a6bf74
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6ac62c78b947354e2a9321f693fb7521ebb16be6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028880"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131534"
 ---
 # <a name="update-member-in-channel"></a>更新频道中的成员
 
@@ -20,7 +20,7 @@ ms.locfileid: "61028880"
 
 更新频道 [中 conversationMember](../resources/conversationmember.md) [的角色](../resources/channel.md)。 此操作仅允许 **membershipType** 值为 的通道 `private` 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 在请求正文中，提供要更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
 |角色|string 集合|用户的角色。 必须为空 `owner` 。 来宾用户将自动标记 `guest` 角色，并且此值无法更新。 |
 
@@ -93,8 +93,12 @@ content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/java/update-member-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-member-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-member-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

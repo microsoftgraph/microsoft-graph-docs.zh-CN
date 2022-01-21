@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ccea3955733ca83fe330bd154a8314229839f751
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 35f53410be42717d4f26e5a2d02e504fad31fb59
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003504"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62091638"
 ---
 # <a name="get-subscribedsku"></a>获取 subscribedSku
 
@@ -76,8 +76,12 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-subscribedsku-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-subscribedsku-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-subscribedsku-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

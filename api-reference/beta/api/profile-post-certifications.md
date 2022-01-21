@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6886aab7793d0e24abb9aaf58518f7a783cb6795
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 41efade5e1d79c2277b5e27f55fae0697e9e600a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027934"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132864"
 ---
 # <a name="create-personcertification"></a>创建 personCertification
 命名空间：microsoft.graph
 
 在用户配置文件中创建新的 [personCertification](../resources/personcertification.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ POST /users/{id | userPrincipalName}/profile/certifications
 
 下表显示了在用户配置文件中创建新的 [personCertification](../resources/personcertification.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |certificationId  |String      |证书的可引用标识符。 |
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/profile/certifications
 |displayName      |String      |认证的标题。                         |
 |endDate          |日期        |认证到期的日期。            |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|issuedDate       |日期        |颁发证书的日期。         |
+|issuedDate       |Date        |颁发证书的日期。         |
 |issuingAuthority |String      |授予证书的颁发机构。          |
 |issuingCompany   |String      |授予证书的颁发机构。          |
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
@@ -104,8 +104,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-personcertification-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-personcertification-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-personcertification-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

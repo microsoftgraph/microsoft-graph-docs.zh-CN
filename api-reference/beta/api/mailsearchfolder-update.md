@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bb69662efdaa4c3327644ade7a12c183f122e1db
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 705e9fb08d5f9df6b7ad067b0d6069f4504c987e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022146"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127418"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
@@ -49,7 +49,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 |:---------------|:--------|:----------|
 | displayName | String | mailFolder 的[显示名称 。](../resources/mailfolder.md)|
 | includeNestedFolders | 布尔 | 如何遍历邮箱文件夹层次结构。 `true` 意味着应该执行深度搜索， `false` 而意味着应改为执行浅表搜索。 |
-| sourceFolderIds | String collection | 应缩小的邮箱文件夹。 |
+| sourceFolderIds | String 集合 | 应缩小的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
@@ -90,8 +90,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-mailsearchfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-mailsearchfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-mailsearchfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: medium
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 9f2b3007944015a5e75f00fa764c4d509dd58b48
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 100922582d5ef9fcea94fde1d164c78fb703f6e0
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996001"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62088083"
 ---
 # <a name="update-securescorecontrolprofile"></a>更新 secureScoreControlProfile
 
@@ -51,7 +51,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 |:---------------|:--------|:----------|
 |assignedTo|String|分配了该控件的分析员的姓名，用于会审、实施或修正。|
 |注释|String|针对客户控制管理的 (分析员意见) 。|
-|state| String|分析员驱动的控件设置。 可能的值是：`Default`、`Ignored`、`ThirdParty`、`Reviewed`。|
+|state| String|分析员驱动的控件设置。 可取值为：`Default`、`Ignored`、`ThirdParty`、`Reviewed`。|
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 复杂类型，包含有关安全产品/服务供应商、提供程序和子 (的详细信息，例如，vendor=Microsoft;provider=SecureScore;) 。 **提供程序和供应商字段是必需的。** |
 
 
@@ -108,8 +108,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/securescorecontrolprofiles-update-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/securescorecontrolprofiles-update-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -167,8 +171,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/securescorecontrolprofiles-update-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/securescorecontrolprofiles-update-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

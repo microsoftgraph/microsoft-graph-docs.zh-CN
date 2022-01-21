@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageTypes
-ms.openlocfilehash: ff8cc865dd08653aed45479dd558fd4c7ad61b41
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 8f9dd564012ce9e873fa5567773f555beb1bc82c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61838565"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136731"
 ---
 # <a name="workbook-tablerowoperationresult"></a>workbook： tableRowOperationResult
 命名空间：microsoft.graph
@@ -51,7 +51,7 @@ GET /me/drive/root:/{item-path}:/workbook/tableRowOperationResult(key={operation
 ## <a name="function-parameters"></a>函数参数
 请求 URL 需要以下查询参数。 
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |Key|String|在之前的 Get **workbookOperation** 请求中返回的 [workbookOperation](./workbookoperation-get.md)响应中提供的 **operationId。**|
 
@@ -73,6 +73,8 @@ GET /me/drive/root:/{item-path}:/workbook/tableRowOperationResult(key={operation
 
 ### <a name="request"></a>请求
 以下示例显示了一个请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["0195cfac-bd22-4f91-b276-dece0aa2378b"],
@@ -82,6 +84,24 @@ GET /me/drive/root:/{item-path}:/workbook/tableRowOperationResult(key={operation
 ``` http
 GET https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tableRowOperationResult(key='0195cfac-bd22-4f91-b276-dece0aa2378b')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/workbook-tablerowoperationresult-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/workbook-tablerowoperationresult-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/workbook-tablerowoperationresult-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workbook-tablerowoperationresult-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应
