@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b4f90f6261524399fa72f2d194e2e530d050636f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f1e99d7246ccdf93f8df54ead3d02400d37bb1ab
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008957"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136476"
 ---
 # <a name="assign-tokenissuancepolicy"></a>分配 tokenIssuancePolicy
 
@@ -45,7 +45,7 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) (的标识符，) `@odata.id` 应分配给应用程序的属性。
+在请求正文中，使用应分配给 (的属性) [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象的 `@odata.id` 标识符。
 
 ## <a name="response"></a>响应
 
@@ -88,8 +88,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-tokenissuancepolicy-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-tokenissuancepolicy-from-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-tokenissuancepolicy-from-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f8b95255a8927e27e5a1ff0d23decfd4472adea3
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3d6d80f048fbaa7765fbf884e28afa5f00796826
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335476"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114979"
 ---
 # <a name="create-accesspackagecatalog"></a>创建 accessPackageCatalog
 
@@ -56,7 +56,7 @@ POST /identityGovernance/entitlementManagement/catalogs
 |displayName|String|访问显示名称目录的索引。|
 |说明|String|访问包目录的说明。|
 |state|accessPackageCatalogState|如果访问 `published` 包可用于管理，则具有 值。 可能的值是： `unpublished` 和 `published` 。|
-|isExternallyVisible|Boolean|租户外部的用户是否可以请求此目录中的访问包。|
+|isExternallyVisible|布尔|租户外部的用户是否可以请求此目录中的访问包。|
 
 ## <a name="response"></a>响应
 
@@ -99,8 +99,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackagecatalog-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackagecatalog-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackagecatalog-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ description: 列出列表中的列。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 7c31497f73ac60029a699c75823c72ca8183a2cd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 62c94a18e1c787b8cb04a53e80d781b209f85ff2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996230"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62124716"
 ---
 # <a name="list-columndefinitions-in-a-list"></a>List columnDefinitions in a list
 命名空间：microsoft.graph
@@ -92,8 +92,12 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/columns
 [!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-columns-from-list-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-columns-from-list-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: RamjotSingh
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1e49d7f2745faaff7ad732c91ba54a95679fcb0e
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
+ms.openlocfilehash: 4351df48c28e6ca5ac8e7a3ae863dc78441211a5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131825"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128944"
 ---
 # <a name="update-chatmessage"></a>更新 chatMessage
 
@@ -45,7 +45,7 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
 PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
 ```
-如果 `model` 未指定， [则使用](/graph/teams-licenses#evaluation-mode-default-requirements) 评估模式。
+如果未指定 `model`，将使用 [评估模式](/graph/teams-licenses#evaluation-mode-default-requirements)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -66,7 +66,7 @@ PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
 
 ### <a name="request"></a>请求
 
-下面是请求更新频道消息的 **policyViolation** 属性Microsoft Teams示例。
+下面是请求更新频道消息上 **policyViolation** 属性Microsoft Teams示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -106,8 +106,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chatmessagepatchpolicyviolationall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chatmessagepatchpolicyviolationall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chatmessagepatchpolicyviolationall-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

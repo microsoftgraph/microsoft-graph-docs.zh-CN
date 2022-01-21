@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: faa92c0340fb44bbbf06961c1220af110ef987ae
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 5795f832839ec59c5f88e9a94752dd5836a8206d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996517"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111989"
 ---
 # <a name="reportroot-getattacksimulationrepeatoffenders"></a>reportRoot： getAttackSimulationRepeatOffenders
 命名空间：microsoft.graph
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/reports/getAttackSimulationRepeatOffenders
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getattacksimulationrepeatoffenders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getattacksimulationrepeatoffenders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

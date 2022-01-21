@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 85cc6e9d5987979a87709808b80bbe6e134da0a4
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: f0119151a83be7c171b4277ada5edd592e19d3bc
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60736651"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131723"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
@@ -101,6 +101,55 @@ MSGraphDateTimeTimeZone *start = [[MSGraphDateTimeTimeZone alloc] init];
 [start setDateTime: "2018-05-01T12:00:00+00:00"];
 [start setTimeZone:@"UTC"];
 [bookingAppointment setStart:start];
+[bookingAppointment setMaximumAttendeesCount: 5];
+[bookingAppointment setFilledAttendeesCount: 1];
+NSMutableArray *customersList = [[NSMutableArray alloc] init];
+MSGraphBookingCustomerInformationBase *customers = [[MSGraphBookingCustomerInformationBase alloc] init];
+[customers setCustomerId:@"7ed53fa5-9ef2-4f2f-975b-27447440bc09"];
+[customers setName:@"Jordan Miller"];
+[customers setEmailAddress:@"jordanm@contoso.com"];
+[customers setPhone:@"213-555-0199"];
+[customers setNotes: null];
+MSGraphLocation *location = [[MSGraphLocation alloc] init];
+[location setDisplayName:@"Customer"];
+[location setLocationEmailAddress: null];
+[location setLocationUri:@""];
+[location setLocationType: null];
+[location setUniqueId: null];
+[location setUniqueIdType: null];
+MSGraphPhysicalAddress *address = [[MSGraphPhysicalAddress alloc] init];
+[address setType: [MSGraphPhysicalAddressType home]];
+[address setPostOfficeBox:@""];
+[address setStreet:@""];
+[address setCity:@""];
+[address setState:@""];
+[address setCountryOrRegion:@""];
+[address setPostalCode:@""];
+[location setAddress:address];
+MSGraphOutlookGeoCoordinates *coordinates = [[MSGraphOutlookGeoCoordinates alloc] init];
+[coordinates setAltitude: null];
+[coordinates setLatitude: null];
+[coordinates setLongitude: null];
+[coordinates setAccuracy: null];
+[coordinates setAltitudeAccuracy: null];
+[location setCoordinates:coordinates];
+[customers setLocation:location];
+[customers setTimeZone:@"America/Chicago"];
+NSMutableArray *customQuestionAnswersList = [[NSMutableArray alloc] init];
+MSGraphBookingQuestionAnswer *customQuestionAnswers = [[MSGraphBookingQuestionAnswer alloc] init];
+[customQuestionAnswers setQuestionId:@"3bc6fde0-4ad3-445d-ab17-0fc15dba0774"];
+[customQuestionAnswers setQuestion:@"What is your age"];
+[customQuestionAnswers setAnswerInputType: [MSGraphAnswerInputType text]];
+NSMutableArray *answerOptionsList = [[NSMutableArray alloc] init];
+[customQuestionAnswers setAnswerOptions:answerOptionsList];
+[customQuestionAnswers setIsRequired: true];
+[customQuestionAnswers setAnswer:@"25"];
+NSMutableArray *selectedOptionsList = [[NSMutableArray alloc] init];
+[customQuestionAnswers setSelectedOptions:selectedOptionsList];
+[customQuestionAnswersList addObject: customQuestionAnswers];
+[customers setCustomQuestionAnswers:customQuestionAnswersList];
+[customersList addObject: customers];
+[bookingAppointment setCustomers:customersList];
 
 NSError *error;
 NSData *bookingAppointmentData = [bookingAppointment getSerializedDataWithError:&error];

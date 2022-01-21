@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: ac495739dbf563ba4395225ef8faaabed25bc4a8
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 026eb386beed8b9dc181d9734425f72e2a9719ce
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424607"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62109973"
 ---
 # <a name="list-alerts"></a>列出警报
 
@@ -53,7 +53,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$top` - 返回每个安全 API 提供商的汇总后顶部结果。
 - `$filter`
 
-下表通过各个供应商的名称列出了 `$filter` 关键词。 虽然其中一些产品已重新品牌，但 API 尚未更新。 筛选关键字将继续使用旧名称，直到进一步通知为止。 有关 [更新，请参阅](https://developer.microsoft.com/en-us/graph/changelog) 更改日志。
+下表通过各个供应商的名称列出了 `$filter` 关键词。 尽管其中某些产品已重命名，但尚未更新该 API。 筛选器关键字将继续使用旧名称，直到另行通知为止。 更新内容请参阅 [changelog](https://developer.microsoft.com/en-us/graph/changelog)。
 
 | 提供商名称      |$filter 关键字|
 |:----------|:----------|
@@ -114,8 +114,12 @@ GET https://graph.microsoft.com/beta/security/alerts
 [!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-alerts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-alerts-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
