@@ -5,12 +5,12 @@ author: anthona
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 8780939bb1074925f14dca1cd4d80f9e2ae2fe96
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 7352db30327154acc38e4c823830ccbf2525a5d0
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322266"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62092849"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/people
 
 ### <a name="browse"></a>浏览
 
-本节中的请求根据通信、协作和业务关系，获取与登录 () `/me` 关系最相关的人员。
+本节中的请求根据通信、协作和业务关系，获取与登录 () 相关 `/me` 最多的人员。
 
 默认情况下，每个响应都会返回10条记录，但您可以 改变这点 使用 *$顶部* 参数。 这些请求需要 People.Read 权限。
 
@@ -104,8 +104,12 @@ GET https://graph.microsoft.com/beta/me/people
 [!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-person-collection-beta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-person-collection-beta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -231,7 +235,7 @@ GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
 
 #### <a name="selecting-the-fields-to-return"></a>选择要返回的字段
 
-可以使用 $select 参数选择一个或多个字段，以限制从服务器返回的数据量。 该 *@ odata.id* 字段总会返回。
+可以使用 $select 参数选择一个或多个字段 *，* 以限制从服务器返回的数据量。 该 *@ odata.id* 字段总会返回。
 
 以下示例将响应限制为 10 个最相关的人的 *DisplayName* 和 *EmailAddress。*
 

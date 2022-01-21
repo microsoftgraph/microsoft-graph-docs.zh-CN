@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fa85b90e658bce6c8b822cc405b118291a0824b4
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 1f57a7d8f9e7f9276660060644d901dfa1572f11
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61102196"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131441"
 ---
 ```go
 
@@ -13,21 +13,12 @@ ms.locfileid: "61102196"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewCloudPcProvisioningPolicy()
-displayName := "Display Name value"
+displayName := "HR provisioning policy"
 requestBody.SetDisplayName(&displayName)
-description := "Description value"
+description := "Provisioning policy for India HR employees"
 requestBody.SetDescription(&description)
-onPremisesConnectionId := "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
+onPremisesConnectionId := "4e47d0f6-6f77-44f0-8893-c0fe1701b553"
 requestBody.SetOnPremisesConnectionId(&onPremisesConnectionId)
-imageId := "Image ID value"
-requestBody.SetImageId(&imageId)
-imageDisplayName := "Image Display Name value"
-requestBody.SetImageDisplayName(&imageDisplayName)
-imageType := "custom"
-requestBody.SetImageType(&imageType)
-requestBody.SetAdditionalData(map[string]interface{}{
-    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-}
 options := &msgraphsdk.CloudPcProvisioningPolicyRequestBuilderPatchOptions{
     Body: requestBody,
 }

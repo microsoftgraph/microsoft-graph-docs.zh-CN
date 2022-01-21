@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 3a9fcb9e44bdca9f3bf5d2a3f1c40e458d53adba
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a5dd68860b6a527155d51b6adeb66856006a87f7
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60992465"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132109"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
 命名空间：microsoft.graph
 
-获取由你在当前租户 (中拥有的任何应用创建的 [schemaExtension](../resources/schemaextension.md)对象列表，这些应用可以是 **InDevelopment、Available** 或 **Deprecated**) ，以及标记为可用的其他应用所拥有的所有其他架构 **扩展。**  
+获取由你在当前租户 (中拥有的任何应用创建的 [schemaExtension](../resources/schemaextension.md)对象列表，这些应用可以是 **InDevelopment、Available** 或 **Deprecated**) ，以及标记为"可用"的其他应用所拥有的所有其他架构 **扩展。**  
 
-> **注意：** 该列表还将包含架构扩展定义 (标记为) 租户中其他开发人员 `Available` 创建的列表。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据特定于租户，并且只有显式授予权限的应用才能访问这些数据。 
+> **注意：** 该列表还将包含架构扩展定义 (标记为) `Available` 租户中其他开发人员创建的列表。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据特定于租户，并且只有显式授予权限的应用才能访问这些数据。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -76,8 +76,12 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphle
 [!INCLUDE [sample-code](../includes/snippets/java/get-schemaextensions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-schemaextensions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-schemaextensions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

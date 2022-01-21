@@ -1,23 +1,23 @@
 ---
 title: 列出 linkedResources
-description: 从 linkedResources 导航属性linkedResource_v2与 baseTask 关联的资源。
+description: 从 linkedResources linkedResource_v2获取与 baseTask 关联的资源。
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14629bb246b0523a31e67f5e521c0ba55f4dc19d
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 4c6ee298f7ed86fa997f127cbbe9b416b00829f1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525311"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62124237"
 ---
 # <a name="list-linkedresources"></a>列出 linkedResources
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [linkedResources](../resources/linkedresource_v2.md) 导航属性linkedResource_v2 [与 baseTask](../resources/basetask.md) 关联的资源。
+从 [linkedResources](../resources/linkedresource_v2.md) linkedResource_v2获取与 [baseTask](../resources/basetask.md) 关联的资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtNGQz
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-linkedresource-v2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-linkedresource-v2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

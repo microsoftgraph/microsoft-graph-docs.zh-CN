@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fe90bea3c008cda3e7041774a20823ada428139d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: cd05a21236b196d9d56784b7d1a74ae3f4512de6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087567"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129847"
 ---
 ```go
 
@@ -17,10 +17,14 @@ requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType)
 accessPackageAssignment := msgraphsdk.NewAccessPackageAssignment()
 requestBody.SetAccessPackageAssignment(accessPackageAssignment)
-accessPackageAssignment.SetAdditionalData(map[string]interface{}{
-    "assignmentPolicyId": "2264bf65-76ba-417b-a27d-54d291f0cbc8",
-    "accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b",
-}
+target := msgraphsdk.NewAccessPackageSubject()
+accessPackageAssignment.SetTarget(target)
+email := "user@contoso.com"
+target.SetEmail(&email)
+assignmentPolicyId := "2264bf65-76ba-417b-a27d-54d291f0cbc8"
+accessPackageAssignment.SetAssignmentPolicyId(&assignmentPolicyId)
+accessPackageId := "a914b616-e04e-476b-aa37-91038f0b165b"
+accessPackageAssignment.SetAccessPackageId(&accessPackageId)
 options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderPostOptions{
     Body: requestBody,
 }

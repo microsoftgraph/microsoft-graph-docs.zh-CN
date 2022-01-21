@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 85644248015ee4a55591ddee23231f04a82d7a52
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9911b925b4f6f93cf50d316bbfc8da6f25e3e96f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980410"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62112312"
 ---
 # <a name="update-printer"></a>更新打印机
 
@@ -54,7 +54,7 @@ PATCH /print/printers/{id}
 
 可以使用委派权限更新以下属性。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|打印机的默认打印设置。|
 |位置|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
@@ -65,21 +65,21 @@ PATCH /print/printers/{id}
 
 可以使用应用程序权限更新以下属性。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|打印机的默认打印设置。|
 |capabilities|[printerCapabilities](../resources/printerCapabilities.md)|与此打印机共享关联的打印机的功能。|
 |displayName|String|打印机的名称。|
 |manufacturer|String|打印机的制造商。|
 |model|String|打印机的模型名称。|
-|status|[printerStatus](../resources/printerstatus.md)|打印机的处理状态，包括任何错误。|
+|状态|[printerStatus](../resources/printerstatus.md)|打印机的处理状态，包括任何错误。|
 |isAcceptingJobs|布尔|打印机当前是否接受新的打印作业。|
 
 ### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
 
 使用应用程序权限，还可使用 Internet 打印协议和 IPP (更新) 负载。 在这种情况下，请求正文包含表示 IPP 编码中的 Printer Attributes 组的二 [进制流](https://tools.ietf.org/html/rfc8010)。
 
-客户端必须为一组 Printer 属性提供一个或多个值 (包括 [RFC8011 第 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) 节中定义的显式允许的带外值) 作业模板属性 ("xxx-default"、"xxx-supported"和"xxx-ready"属性) 、 [第 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) 节打印机说明属性以及打印机支持的任何属性扩展。 提供的 (每个 Printer) 的值将 (Printer) 的对应 Printer 属性的值。 对于可以在 1setOf (多个值) ，客户端提供的所有值将替换相应的 Printer 对象属性的所有值。
+客户端必须为一组 Printer 属性提供一个或多个值 (包括 [RFC8011 第 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) 节中定义的显式允许的带外值) 作业模板属性 ("xxx-default"、"xxx-supported"和"xxx-ready"属性) 、 [第 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) 节打印机说明属性以及打印机支持的任何属性扩展。 提供的 (每个 Printer) 的值将 (Printer) 的对应 Printer 属性的值。 对于在 1setOf (可以有多个值) ，客户端提供的所有值将替换相应的 Printer 对象属性的所有值。
 
 > **注意：** 不要传递请求正文中的操作属性。 请求正文应仅包含打印机属性。
 
@@ -141,8 +141,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-printer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-printer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

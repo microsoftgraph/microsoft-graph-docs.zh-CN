@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e19d75429a342370c8b832ed88e61a5322f57bdd
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 33b73d0e72f789ccd8a6942bb5c10a117fd3ca93
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561715"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137653"
 ---
 ```javascript
 
@@ -15,7 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-const meetingRegistrant = {
+const meetingRegistrantBase = {
+  '@odata.type': '#microsoft.graph.meetingRegistrant',
   firstName: 'Lisa',
   lastName: 'Adkins',
   email: 'lisa.adkins@contoso.com',
@@ -33,6 +34,6 @@ const meetingRegistrant = {
 
 await client.api('/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/registrants')
     .version('beta')
-    .post(meetingRegistrant);
+    .post(meetingRegistrantBase);
 
 ```

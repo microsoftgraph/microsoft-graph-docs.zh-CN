@@ -1,18 +1,28 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 689b58d9adc28e5bdc866e6dc322d372923e8aa7
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: b4d3dc79966e229155b1b6adeb1769a6768a6aff
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61288906"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137727"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-result, err := graphClient.Identity().UserFlowAttributes().Post(nil)
+requestBody := msgraphsdk.NewIdentityUserFlowAttribute()
+displayName := "Hobby"
+requestBody.SetDisplayName(&displayName)
+description := "Your hobby"
+requestBody.SetDescription(&description)
+dataType := "string"
+requestBody.SetDataType(&dataType)
+options := &msgraphsdk.UserFlowAttributesRequestBuilderPostOptions{
+    Body: requestBody,
+}
+result, err := graphClient.Identity().UserFlowAttributes().Post(options)
 
 
 ```

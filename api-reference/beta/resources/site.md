@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: 网站资源提供 SharePoint 网站的元数据和关系。
-ms.date: 09/10/2017
-title: Site
+title: site 资源类型
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 7959908fb0bfe74cb4cbf1ba242988e3ecbf5848
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 67b482b268c871e6e9b99d2812172551918807ab
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696195"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104993"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -131,7 +130,7 @@ ms.locfileid: "58696195"
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是 **site** 资源的 JSON 表示形式。
+下面是资源的 JSON 表示形式。
 
 **site** 资源派生自 [**baseItem**](baseitem.md)，并继承此资源的属性。
 

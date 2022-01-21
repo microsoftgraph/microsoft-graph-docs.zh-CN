@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: daa16fcb00779b02a957dc97c504073ca5584f02
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 196c9d3815140e48565b03636b89e9c5bbde4f97
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099149"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128602"
 ---
 ```go
 
@@ -17,14 +17,26 @@ schedulingGroupId := "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
 requestBody.SetSchedulingGroupId(&schedulingGroupId)
 sharedOpenShift := msgraphsdk.NewOpenShiftItem()
 requestBody.SetSharedOpenShift(sharedOpenShift)
-sharedOpenShift.SetAdditionalData(map[string]interface{}{
-    "notes": "Inventory Management",
-    "openSlotCount": ,
-    "displayName": "Field shift",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T09:50:45.332Z",
-    "theme": "white",
-    "activities":  []Object {
+notes := "Inventory Management"
+sharedOpenShift.SetNotes(&notes)
+openSlotCount := int32(5)
+sharedOpenShift.SetOpenSlotCount(&openSlotCount)
+displayName := "Field shift"
+sharedOpenShift.SetDisplayName(&displayName)
+startDateTime, err := time.Parse(time.RFC3339, "2018-10-04T00:58:45.340Z")
+sharedOpenShift.SetStartDateTime(&startDateTime)
+endDateTime, err := time.Parse(time.RFC3339, "2018-10-04T09:50:45.332Z")
+sharedOpenShift.SetEndDateTime(&endDateTime)
+theme := "white"
+sharedOpenShift.SetTheme(&theme)
+sharedOpenShift.SetActivities( []ShiftActivity {
+    msgraphsdk.NewShiftActivity(),
+    SetAdditionalData(map[string]interface{}{
+        "isPaid": true,
+        "startDateTime": "2018-10-04T00:58:45.340Z",
+        "endDateTime": "2018-10-04T01:58:45.340Z",
+        "code": "",
+        "displayName": "Lunch",
     }
 }
 requestBody.SetDraftOpenShift(nil)
