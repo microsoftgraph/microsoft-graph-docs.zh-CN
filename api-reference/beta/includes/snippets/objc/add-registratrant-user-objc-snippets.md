@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ded84c89a0cbe3b0d78fcca2929a4721a43d77c2
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 7cb5dada0c15fa86a4973bbdbf017fd96dddd404
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561680"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137659"
 ---
 ```objc
 
@@ -16,10 +16,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphMeetingRegistrant *meetingRegistrant = [[MSGraphMeetingRegistrant alloc] init];
-[meetingRegistrant setFirstName:@"Frederick"];
-[meetingRegistrant setLastName:@"Cormier"];
-[meetingRegistrant setEmail:@"frederick.cormier@contoso.com"];
+MSGraphMeetingRegistrantBase *meetingRegistrantBase = [[MSGraphMeetingRegistrantBase alloc] init];
+[meetingRegistrantBase setFirstName:@"Frederick"];
+[meetingRegistrantBase setLastName:@"Cormier"];
+[meetingRegistrantBase setEmail:@"frederick.cormier@contoso.com"];
 NSMutableArray *customQuestionAnswersList = [[NSMutableArray alloc] init];
 MSGraphCustomQuestionAnswer *customQuestionAnswers = [[MSGraphCustomQuestionAnswer alloc] init];
 [customQuestionAnswers setQuestionId:@"MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU="];
@@ -29,11 +29,11 @@ MSGraphCustomQuestionAnswer *customQuestionAnswers = [[MSGraphCustomQuestionAnsw
 [customQuestionAnswers setQuestionId:@"MSM5M2E2OWQ1Ni1jZTc4LTQDAwMjBfZGlkX3gwMDIwX3lvdV94MDAyMF8="];
 [customQuestionAnswers setValue:@"Internet"];
 [customQuestionAnswersList addObject: customQuestionAnswers];
-[meetingRegistrant setCustomQuestionAnswers:customQuestionAnswersList];
+[meetingRegistrantBase setCustomQuestionAnswers:customQuestionAnswersList];
 
 NSError *error;
-NSData *meetingRegistrantData = [meetingRegistrant getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:meetingRegistrantData];
+NSData *meetingRegistrantBaseData = [meetingRegistrantBase getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:meetingRegistrantBaseData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

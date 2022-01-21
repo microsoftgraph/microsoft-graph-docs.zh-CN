@@ -5,12 +5,12 @@ author: Harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6e2c39aba8068973476b95d6eb3f91732cb3e81e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 54fb0ac9bae03416f22ea3dbf51b1034e9cf2b29
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012359"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094472"
 ---
 # <a name="get-calendarpermission"></a>获取 calendarPermission
 
@@ -98,8 +98,12 @@ GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-calendarpermission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-calendarpermission-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

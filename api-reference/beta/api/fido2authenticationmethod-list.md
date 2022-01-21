@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 742d5e3c59da144e073d0e508d0bb54fb0a5b15f
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 45eb44a3cb99e0a5bd22bebc972c8e8e4834bf69
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226650"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127853"
 ---
 # <a name="list-fido2authenticationmethod"></a>列出 fido2AuthenticationMethod
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "61226650"
 
 检索用户的 [FIDO2](../resources/fido2authenticationmethod.md) 安全密钥身份验证方法对象及其属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="permissions-acting-on-self"></a>自行操作的权限
@@ -28,7 +28,7 @@ ms.locfileid: "61226650"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -36,7 +36,7 @@ ms.locfileid: "61226650"
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要下列角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -100,8 +100,12 @@ GET https://graph.microsoft.com/beta/me/authentication/fido2Methods
 [!INCLUDE [sample-code](../includes/snippets/java/get-fido2authenticationmethod-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-fido2authenticationmethod-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-fido2authenticationmethod-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

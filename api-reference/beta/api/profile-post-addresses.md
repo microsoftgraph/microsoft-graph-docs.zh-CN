@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f8d9f30e0bd02ce9130c5cdde64f09966dccc823
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f7cf634b6e2393973fbcfcd3c51fc319cf8f5b36
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021466"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135300"
 ---
 # <a name="create-addresses"></a>创建地址
 命名空间：microsoft.graph
@@ -48,7 +48,7 @@ POST /users/{id | userPrincipalName}/profile/addresses
 
 下表显示了在用户配置文件中创建新的 [itemAddress](../resources/itemaddress.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |detail|[physicalAddress](../resources/physicaladdress.md)|有关地址本身的详细信息。|
@@ -101,8 +101,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-itemaddress-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-itemaddress-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-itemaddress-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

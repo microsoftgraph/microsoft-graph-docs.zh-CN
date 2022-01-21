@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6a914e956a5c02a03ec436e46c98dc4c0caeb00d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 17b8b646fe27a0b62cdf4ff953c5ca4110e7189f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60981825"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62118970"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -71,7 +71,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 
 | 属性       | 类型    | 说明 |
 |:---------------|:--------|:------------|
-| attendees|与会者|事件的与会者集合。 请参阅 [其他有关更新特定属性的注释](#notes-for-updating-specific-properties)。|
+| attendees|Attendee|事件的与会者集合。 请参阅 [其他有关更新特定属性的注释](#notes-for-updating-specific-properties)。|
 | body|ItemBody|与事件相关联的邮件正文。 请参阅 [其他有关更新特定属性的注释](#notes-for-updating-specific-properties)。|
 | categories|String collection|与事件相关联的类别。|
 | end|DateTimeTimeZone|事件结束的日期、时间和时区。 请参阅 [其他有关更新特定属性的注释](#notes-for-updating-specific-properties)。 |
@@ -145,8 +145,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-event-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-event-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

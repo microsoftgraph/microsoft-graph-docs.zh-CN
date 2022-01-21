@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 79a37b6db20c8fbd1b0f2bcd733e2dde3f04bb40
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b51e153cc7251f41ac9848b7f38f8deb32bca34f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985955"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62102699"
 ---
 # <a name="get-onpremisesagent"></a>获取 onPremisesAgent
 
@@ -42,7 +42,7 @@ GET /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/?$expand=agentGr
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -87,8 +87,12 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/a
 [!INCLUDE [sample-code](../includes/snippets/java/get-onpremisesagent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-onpremisesagent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onpremisesagent-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

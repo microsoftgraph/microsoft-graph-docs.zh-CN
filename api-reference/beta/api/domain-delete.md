@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a5f7ef15bd4b682512ae2f3dbd9dd5f8b40d7430
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 05fe95bc6fd34699ff04c5515f60043a92c358f4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982041"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094165"
 ---
 # <a name="delete-domain"></a>删除域
 
@@ -41,7 +41,7 @@ DELETE /domains/{id}
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:---------------|:----------|
@@ -84,8 +84,12 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com
 [!INCLUDE [sample-code](../includes/snippets/java/delete-domain-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-domain-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-domain-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

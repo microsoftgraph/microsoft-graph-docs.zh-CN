@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8d05f01c2c882101d506f578586fee793e2542d3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8e854d4dc907f970face9c8398ed952ffe86c5cd
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001608"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107948"
 ---
 # <a name="get-timeoff"></a>获取 timeOff
 
@@ -47,7 +47,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 此方法不支持使用 OData 查询参数自定义响应。
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -90,8 +90,12 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId
 [!INCLUDE [sample-code](../includes/snippets/java/timeoff-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/timeoff-get-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/timeoff-get-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

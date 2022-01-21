@@ -5,12 +5,12 @@ author: Harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ece2ef520c94dc4b18bb77cfb36a888e12373c5d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d7628011b03cf59f097f19c2f26b42ff8b23bdb4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018883"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129959"
 ---
 # <a name="update-calendarpermission"></a>更新 calendarPermission
 
@@ -49,7 +49,7 @@ PATCH /groups/{id}/calendar/calendarPermissions/{id}
 PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:-----------|:-----------|
@@ -60,7 +60,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |role|[calendarRoleType](../resources/calendarpermission.md#calendarroletype-values)| 要更改为日历共享者或代理人的权限级别。 |
 
@@ -104,8 +104,12 @@ Content-type: application/json
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-calendarpermission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-calendarpermission-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

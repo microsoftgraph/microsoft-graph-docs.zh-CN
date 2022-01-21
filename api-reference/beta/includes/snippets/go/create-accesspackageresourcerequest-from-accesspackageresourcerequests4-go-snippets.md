@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f421df3a6839c663f40ac60e55b84259ab9e8b4a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 4edf2f37be6938a8fc7fda58a7a373cc3b69aff7
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089185"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62119060"
 ---
 ```go
 
@@ -19,10 +19,10 @@ requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType)
 accessPackageResource := msgraphsdk.NewAccessPackageResource()
 requestBody.SetAccessPackageResource(accessPackageResource)
-accessPackageResource.SetAdditionalData(map[string]interface{}{
-    "originId": "c6294667-7348-4f5a-be73-9d2c65f574f3",
-    "originSystem": "AadGroup",
-}
+originId := "c6294667-7348-4f5a-be73-9d2c65f574f3"
+accessPackageResource.SetOriginId(&originId)
+originSystem := "AadGroup"
+accessPackageResource.SetOriginSystem(&originSystem)
 options := &msgraphsdk.AccessPackageResourceRequestsRequestBuilderPostOptions{
     Body: requestBody,
 }

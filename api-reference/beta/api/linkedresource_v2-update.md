@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 70554d1d64be0d3c497225ee25a124b3d52681d5
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 0709b060f69c426c83d35e3c8b9c9d38306f9c19
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526127"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62089919"
 ---
 # <a name="update-linkedresource_v2"></a>更新linkedResource_v2
 命名空间：microsoft.graph
@@ -54,12 +54,12 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 |applicationName|String|指示发送 **linkedResource** 的源的应用名称的字段。|
 |displayName|String|指示 **linkedResource 的标题的字段**。|
 |externalId|String|第三方/合作伙伴系统上与此任务关联的对象的 ID。|
-|webUrl|String|指向 **linkedResource 的深层链接**。|
+|WebUrl|String|指向 **linkedResource 的深层链接**。|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [linkedResource_v2](../resources/linkedresource_v2.md) 更新的 linkedResource_v2 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和更新](../resources/linkedresource_v2.md) linkedResource_v2对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,6 +84,22 @@ Content-Type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-linkedresource-v2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-linkedresource-v2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-linkedresource-v2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-linkedresource-v2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-linkedresource-v2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

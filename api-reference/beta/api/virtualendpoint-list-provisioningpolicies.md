@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: bba406a107d40e6569409239f801a65661192a38
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: be0833fbed80f93e370812891bf44c81c10c350a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033284"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62125144"
 ---
 # <a name="list-provisioningpolicies"></a>列出 provisioningPolicies
 
@@ -20,7 +20,7 @@ ms.locfileid: "61033284"
 
 列出 [cloudPcProvisioningPolicy 对象的属性和](../resources/cloudpcprovisioningpolicy.md) 关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -90,8 +90,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcprovisioningpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcprovisioningpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcprovisioningpolicies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -116,13 +120,17 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-      "id": "1d164206-bf41-4fd2-8424-a3192d392273",
-      "displayName": "Display Name value",
       "description": "Description value",
-      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-      "imageId": "Image ID value",
+      "displayName": "Display Name value",
+      "domainJoinConfiguration": {
+          "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+          "type": "hybridAzureADJoin"
+      },
+      "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
       "imageDisplayName": "Image Display Name value",
-      "imageType":"custom"
+      "imageId": "Image ID value",
+      "imageType":"custom",
+      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
     }
   ]
 }

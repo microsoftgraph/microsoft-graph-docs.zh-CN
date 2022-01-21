@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 03dd31ac978b0c1249e39558550c2ed3d8a8a617d89c73cbf4cc32ff5eeff58e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e9893365be83d682c73b03f0e1891e2c4bc9b2c2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57279503"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137685"
 ---
 ```csharp
 
@@ -18,6 +18,11 @@ var tenantCustomizedInformation = new Microsoft.Graph.ManagedTenants.TenantCusto
     {
         new TenantContactInformation
         {
+            Name = "String",
+            Title = "String",
+            Email = "String",
+            Phone = "String",
+            Notes = "String"
         }
     },
     Website = "String"

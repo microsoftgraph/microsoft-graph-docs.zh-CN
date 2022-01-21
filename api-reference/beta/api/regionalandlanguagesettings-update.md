@@ -5,12 +5,12 @@ author: jasonbro
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: eed6912edd9252f73cec917098111024a634d5e0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5be6239d350e8964583967f9647396f921b2a1e3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996882"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62102417"
 ---
 # <a name="update-regionalandlanguagesettings"></a>更新 regionalAndLanguageSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "60996882"
 
 更新 [regionalAndLanguageSettings 对象的部分或所有](../resources/regionalAndLanguageSettings.md) 属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                   |权限 (权限级别从最低到最多)      |
@@ -132,7 +132,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/put-regionalandlanguagesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/put-regionalandlanguagesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -195,8 +195,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/patch-regionalandlanguagesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/patch-regionalandlanguagesettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-regionalandlanguagesettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
