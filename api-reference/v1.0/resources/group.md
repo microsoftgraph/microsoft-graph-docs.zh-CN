@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: c7e0664929bad371c0a3c2e1306d613b43d5d586
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 0268b5247999cf01f38fbe87879933e228a2c22d
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604005"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62183924"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -86,11 +86,11 @@ ms.locfileid: "61604005"
 | [Remove rejectedSender](../api/group-delete-rejectedsenders.md) | [directoryObject](directoryobject.md) | 从 rejectedSenders 集合中删除新用户或组。 |
 | [Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | 基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。 |
 | **目录对象** |||
-| [列出已删除的组](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索租户中最近 30 天内删除的组。 |
+| [列出已删除的组](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索租户中过去 30 天内被删除的组。 |
 | [列出用户拥有的已删除组](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 检索租户中最近 30 天内删除的用户所有的组。 |
-| [获取已删除的组](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) 集合 | 按 ID 检索已删除的组。 |
-| [还原已删除的组](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) 集合 | 还原最近 30 天内在租户中删除的组。 |
-| [永久删除组](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) 集合 | 从租户中永久删除已删除的组。 |
+| [获取已删除的组](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | 按 ID 检索已删除的组。 |
+| [恢复已删除的组](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) 集合 | 还原最近 30 天内在租户中删除的组。 |
+| [永久删除组](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | 从租户中永久删除已删除的组。 |
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String 集合 | 在一列组中检查成员身份。此函数是可传递的。 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回此组是其成员的所有组。此函数是可传递的。 |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。该函数可传递。 |
@@ -139,9 +139,9 @@ ms.locfileid: "61604005"
 |hasMembersWithLicenseErrors|Boolean|指示此组中是否有该基于组的许可证分配中存在许可证错误的成员。 <br><br>在 GET 操作中从不返回此属性。可以将其用作 $filter 参数，以获取具有许可证错误成员的组（即此属性的筛选为 true）。参阅[示例](../api/group-list.md)。 <br><br>支持 `$filter`（`eq`）。|
 |hideFromAddressLists |Boolean |如果组未显示在 Outlook UI 的某些部分中，则为 true： **通讯簿**、用于选择邮件收件人的地址列表，以及用于搜索组的 **浏览组** 对话框;否则为 false。默认值为 `false`。 <br><br>仅在 `$select`返回。仅在 Get 组 API （`GET /groups/{ID}`） 上受支持。|
 |hideFromOutlookClients |Boolean |如果组未显示在 Outlook 客户端（如 Outlook for Windows 和 Outlook 网页版）中，则为 True;否则为 false。默认值为 `false`。 <br><br>仅在 `$select`返回。仅在 Get 组 API （`GET /groups/{ID}`） 上受支持。|
-|id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。<br><br>支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。|
+|id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。<br><br>支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。|
 |isAssignableToRole|Boolean|指示是否可以将此组分配给 Azure Active Directory 角色。可选。<br><br>此属性只能在创建组时设置，并且不可变。 如果设置为 `true`，则 **securityEnabled** 属性也必须设置为 `true`，并且该组不能是动态组（即，**groupTypes** 不能包含 `DynamicMembership`）。 只有全局管理员和特权角色管理员角色中的调用方可以设置此属性。 必须向调用方分配 *RoleManagement.ReadWrite.Directory* 权限，才能设置此属性或更新此类组成员的身份。 有关更多信息，请参阅[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`）。|
-|isSubscribedByMail|Boolean|指示是否订阅已登录用户以接收电子邮件对话。默认值为 `true`。 <br><br>仅在 `$select`返回。仅在 Get 组 API （`GET /groups/{ID}`） 上受支持。 |
+|isSubscribedByMail|Boolean|指示是否订阅已登录用户以接收电子邮件对话。默认值为 `true`。 <br><br>仅在 `$select` 上返回。仅在 Get 组 API（`GET /groups/{ID}`）上受支持。 |
 |licenseProcessingState|String|指示组的所有成员的组许可证分配状态。默认值为 `false`。只读。可能的值：`QueuedForProcessing`、`ProcessingInProgress`、`ProcessingComplete`。<br><br>仅在 `$select` 返回。只读。|
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |mailEnabled|Boolean|指定组是否启用邮件。必需。<br><br>默认返回。支持 `$filter`（`eq`、`ne`、`not`）。|
@@ -190,10 +190,10 @@ ms.locfileid: "61604005"
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。只读。可为空。|
 |memberOf|[directoryObject](directoryobject.md) collection|此组所属的组。HTTP 方法：GET（支持所有组）。只读。空。支持 `$expand`。|
-|members|[directoryObject](directoryobject.md) collection| 属于此组成员的用户和组。HTTP 方法：GET（支持所有组）、POST（支持Microsoft 365组、安全组和启用邮件的安全组）、DELETE（支持Microsoft 365组和安全组）。空。支持 `$expand`。|
+|members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。HTTP 方法：GET（支持所有组），POST（支持 Microsoft 365 组、安全组和启用邮件的安全组）、DELETE（支持 Microsoft 365 组和安全组），可为空。<br/>支持 `$expand`，包括嵌套 `$select`。 例如，`/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`。|
 |membersWithLicenseErrors|[User](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。只读。|
 |onenote|[Onenote](onenote.md)| 只读。|
-|owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 仅限 100 个所有者。 可为 NULL。 如果在创建 Microsoft 365 组时未指定此属性，则会自动将调用用户分配为组所有者。 支持 `$expand`。|
+|owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 仅限 100 个所有者。 可为 NULL。 如果在创建 Microsoft 365 组时未指定此属性，则会自动将调用用户分配为组所有者。 <br/>支持 `$expand`，包括嵌套 `$select`。 例如，`/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`。|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|已向特定应用程序授予组的权限。支持 `$expand`。|
 |photo|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|

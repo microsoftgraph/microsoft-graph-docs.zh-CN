@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 358fa02a09c1ded92fd86596b634d59783b2ee16
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: d431299c1bb674236ac2e54e9324a438853a3157
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072059"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62183938"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -41,6 +41,7 @@ Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询�
 | [$skip](#skip-parameter)           | 对结果集建立索引。一些 API 也使用它来实现分页，并且可以与 `$top` 一起使用来手动对结果分页。 | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | 设置结果的页面大小。 |[`/users?$top=2`][top-example]
 
+若要了解 API 及其属性支持的 OData 系统查询选项，请参阅资源页中的 **属性** 表，以及 API 的 LIST 和 GET 操作部分 **可选查询参数**。
 
 ## <a name="other-query-parameters"></a>其他查询参数
 
@@ -126,9 +127,11 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 ```
 
 > [!NOTE]
-> 并不是所有关系和资源都支持 `$expand` 查询参数。例如，可以扩展用户的 **directReports**、**manager** 和 **memberOf** 关系，但无法扩展其 **events**、**messages** 或 **photo** 关系。并非所有资源或关系都支持对扩展项使用 `$select`。 
+> + 并不是所有关系和资源都支持 `$expand` 查询参数。例如，可以扩展用户的 **directReports**、**manager** 和 **memberOf** 关系，但无法扩展其 **events**、**messages** 或 **photo** 关系。并非所有资源或关系都支持对扩展项使用 `$select`。 
 > 
-> 对于派生自 [directoryObject](/graph/api/resources/directoryobject) 的 Azure AD 资源，例如，[user](/graph/api/resources/user) 和 [group](/graph/api/resources/group)，`$expand` 通常最多为扩展关系返回 20 个项，并且没有 [@odata.nextLink](./paging.md)。查看更多[已知问题](known-issues.md#query-parameters)。
+> + 对于派生自 [directoryObject](/graph/api/resources/directoryobject) 的 Azure AD 资源，例如，[user](/graph/api/resources/user) 和 [group](/graph/api/resources/group)，`$expand` 通常最多为扩展关系返回 20 个项，并且没有 [@odata.nextLink](./paging.md)。查看更多[已知问题](known-issues.md#query-parameters)。
+>
+> + [高级查询](/graph/aad-advanced-queries)当前不支持`$expand`。
 
 ## <a name="filter-parameter"></a>filter 参数
 

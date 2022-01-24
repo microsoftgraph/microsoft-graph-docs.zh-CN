@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 85d2fe3cdce1517a01fa2905fa7073540f56be24
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9209be5a43b84be9849db48b0ee4ecda67d02440
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134034"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184020"
 ---
 # <a name="get-customsecurityattributedefinition"></a>获取 customSecurityAttributeDefinition
 命名空间：microsoft.graph
@@ -24,12 +24,13 @@ ms.locfileid: "62134034"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CustomSecAttributeAssignment.ReadWrite.All、CustomSecAttributeDefinition.ReadWrite.All|
+|委派（工作或学校帐户）|CustomSecAttributeDefinition.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CustomSecAttributeAssignment.ReadWrite.All、CustomSecAttributeDefinition.ReadWrite.All|
+|应用程序|CustomSecAttributeDefinition.ReadWrite.All|
 
 还必须为登录用户分配以下目录角色之 [一](/azure/active-directory/roles/permissions-reference)：
 
++ 属性分配读取器
 + 属性定义读取器
 + 属性分配管理员
 + 属性定义管理员

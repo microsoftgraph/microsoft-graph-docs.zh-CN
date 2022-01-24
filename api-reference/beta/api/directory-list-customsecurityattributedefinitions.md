@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a802f64914bb5f98e54c0f4d6adbe1590fb9192d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 034214b59f3279534df41b26454e7be27311247a
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090638"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184078"
 ---
 # <a name="list-customsecurityattributedefinitions"></a>列出 customSecurityAttributeDefinitions
 命名空间：microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "62090638"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CustomSecAttributeAssignment.ReadWrite.All、CustomSecAttributeDefinition.ReadWrite.All|
+|委派（工作或学校帐户）|CustomSecAttributeDefinition.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CustomSecAttributeAssignment.ReadWrite.All、CustomSecAttributeDefinition.ReadWrite.All|
+|应用程序|CustomSecAttributeDefinition.ReadWrite.All|
 
 还必须为登录用户分配以下目录角色之 [一](/azure/active-directory/roles/permissions-reference)：
 
@@ -47,7 +47,7 @@ GET /directory/customSecurityAttributeDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 OData () 、、 和 值来帮助 `$select` `$top` `$expand` `$filter` `eq` 自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持使用 OData () 、、 和 ， `$select` `$top` `$expand` `$filter` `eq` 以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 默认情况下 `allowedValues` 不会返回或扩展导航属性，必须在查询中 `$expand` 指定该属性。 例如，`/directory/customSecurityAttributeDefinitions?$expand=allowedValues`。
 

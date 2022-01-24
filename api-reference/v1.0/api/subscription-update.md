@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 12621eb426100f97e746172f64287d95a0742132
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a218ed4905974facab316bbc6c57cd6df0a47255
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128377"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184008"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -79,6 +79,14 @@ PATCH /subscriptions/{id}
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
+
+## <a name="request-body"></a>请求正文
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+| 名称       | 类型 | 说明|
+|:-----------|:------|:----------|
+| expirationDateTime  | DateTimeOffset  | 指定订阅过期的日期和时间（UTC 格式）。 对于支持的最大订阅时长，时间因资源而异。 |
 
 ## <a name="response"></a>响应
 

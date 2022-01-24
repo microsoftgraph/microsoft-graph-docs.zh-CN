@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9a6c15dd93e118f8abf97981f81fab2cb5327835
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ba59e5f931a19973c51fa587f88205f3537a17ec
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109867"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62183994"
 ---
 # <a name="get-attributeset"></a>获取 attributeSet
 命名空间：microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "62109867"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CustomSecAttributeAssignment.ReadWrite.All、CustomSecAttributeDefinition.ReadWrite.All|
+|委派（工作或学校帐户）|CustomSecAttributeDefinition.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CustomSecAttributeAssignment.ReadWrite.All、CustomSecAttributeDefinition.ReadWrite.All|
+|应用程序|CustomSecAttributeDefinition.ReadWrite.All|
 
 还必须为登录用户分配以下目录角色之 [一](/azure/active-directory/roles/permissions-reference)：
 
