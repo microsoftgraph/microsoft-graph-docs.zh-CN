@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 97dc5332eba2256525d707113e0bbab6da8a6f1b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f0e35eab9cc3c0ca87250fc6da0e425aa07f5c86
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101200"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201629"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "62101200"
 
 目前，仅应用程序、组和用户资源支持[已删除项目功能](../resources/user.md)。 [](../resources/group.md) [](../resources/application.md)
 
->**注意：** 已删除的安全组和通讯组列表将永久删除，无法通过此 API 进行检索。
+>**注意：** 已删除的安全组将永久删除，无法通过此 API 进行检索。
 
 ## <a name="permissions"></a>权限
 
@@ -61,7 +61,7 @@ GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.device
 ```
 
-此 API 当前支持检索应用程序的对象类型 () 、 () 或用户 `microsoft.graph.application` `microsoft.graph.group` () `microsoft.graph.user` 删除的项目。 OData 转换类型是 URI 的必需部分，不支持在没有类型 `GET /directory/deleteditems` 的情况下 **调用** 。
+此 API 当前支持检索应用程序的对象类型 () 、 () 或用户 () `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` 删除的项目。 OData 转换类型是 URI 的必需部分，不支持在没有类型 `GET /directory/deleteditems` 的情况下 **调用** 。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 

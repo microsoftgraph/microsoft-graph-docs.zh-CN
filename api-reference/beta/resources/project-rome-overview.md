@@ -1,38 +1,38 @@
 ---
-title: '使用 Microsoft Graph API 处理 Project 罗马 '
-description: '项目罗马是 Microsoft 计划，用于构建一个平台，使应用程序开发人员能够生成强大的跨设备体验。 Project 罗马启用不同的功能，以便在用户使用相同的 Microsoft 帐户或工作或学校帐户登录时连接不同的服务和客户端终结点。 这使您能够实现以用户任务（而不是设备）为中心的跨设备和跨平台体验。 '
-localization_priority: Normal
+title: '使用 Microsoft Graph API 处理 Project Rome '
+description: 'Project Rome 是 Microsoft 的一项计划，旨在构建一个平台，使应用开发人员能够构建出色的跨设备体验。 Project在用户使用同一 Microsoft 帐户或工作或学校帐户登录时，Rome 将启用连接不同服务和客户端终结点的不同功能。 这允许你实现以用户任务而不是设备为中心的跨设备和跨平台体验。 '
+ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: ''
 author: ailae
-ms.openlocfilehash: 3ebff1e816ee04a9bd6ffdbc0188cbb0b8015895
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ac28fb48ef7b954bd51519124e628fbb9029bab
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029056"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201433"
 ---
-# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>使用 Microsoft Graph API 处理 Project 罗马
+# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>使用 Microsoft Graph API 处理 Project Rome
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[项目罗马](https://developer.microsoft.com/en-us/windows/project-rome) 是 Microsoft 计划，用于构建一个平台，使应用程序开发人员能够生成强大的跨设备体验。 Project 罗马启用不同的功能，以便在用户使用相同的 Microsoft 帐户或工作或学校帐户登录时连接不同的服务和客户端终结点。 这使您能够实现以用户任务（而不是设备）为中心的跨设备和跨平台体验。
+[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome)是 Microsoft 的一项计划，旨在构建一个平台，使应用开发人员能够构建出色的跨设备体验。 Project在用户使用同一 Microsoft 帐户或工作或学校帐户登录时，Rome 将启用连接不同服务和客户端终结点的不同功能。 这允许你实现以用户任务而不是设备为中心的跨设备和跨平台体验。
 
-通过 Microsoft Graph 公开三个关键项目罗马功能，可帮助您实现大量的跨设备体验：活动、设备和通知。
+通过 Microsoft Project公开了三个关键的 Rome 功能Graph可帮助你实现出色的跨设备体验：活动、设备和通知。
 
 ## <a name="activities"></a>活动
 
-通过 Microsoft Graph 中的活动，您可以在设备和平台之间推动用户参与应用。 活动是用户接洽的单位，由三个组件组成：
+通过 Microsoft Graph，你可以跨设备和平台推动用户与应用互动。 活动是用户参与度的单位，由三个部分组成：
 
 - 深层链接
-- 可视化表示形式
-- 使用共享词汇描述活动的内容元数据 [https://schema.org/](https://schema.org/)
+- 视觉表示形式
+- 使用共享词汇描述活动 [https://schema.org/](https://schema.org/) 的内容元数据
 
-当应用程序创建会话时，会向活动中添加一个历史记录项目，以反映用户参与的时段。 用户每次 reengages 活动时，都会向活动中添加一个新的历史记录项，以计入用户约定。
+当应用程序创建会话时，会向活动添加历史记录项以反映用户参与的时间段。 每次用户重新参与某个活动时，会向活动添加一个新的历史记录项，以增加用户参与度。
 
-当应用程序发布用户活动对象时，该对象将显示在 Windows 中的一些新 UI 图面上;例如，Cortana 通知和时间线。 您可以指定丰富的元数据 (，以允许在活动对象中使用 [自适应卡片](https://adaptivecards.io/) 标记) 仅在适当的上下文中显示活动) 和丰富的视觉对象 (。
+当应用程序发布用户活动对象时，该对象将在 Windows 中的某些新 UI 图面中显示;例如，Cortana通知和时间线。 你可以指定丰富的元数据 (以允许活动在正确的上下文) 中显示，也可以指定富 (在活动对象) 卡片标记。 [](https://adaptivecards.io/)
 
-您可以使用以下 Microsoft Graph Api 来创建和检索用户活动：
+可以使用以下 Microsoft Graph API 创建和检索用户活动：
 
 - [创建或替换活动](../api/projectrome-put-activity.md)
 - [获取活动](../api/projectrome-get-activities.md)
@@ -41,19 +41,19 @@ ms.locfileid: "48029056"
 - [创建或替换历史记录项](../api/projectrome-put-historyitem.md)
 - [删除历史记录项](../api/projectrome-delete-historyitem.md)
 
-## <a name="devices"></a>设备
+## <a name="devices-deprecated"></a>已 (的设备) 
 
-您可以使用 Microsoft Graph 中的 Project 罗马 Api 执行以下操作：
+可以使用 Microsoft Project Rome API 进行Graph：
 
-- 发现并连接到用户的设备
-- 在这些设备上远程启动应用程序
-- 将邮件发送到这些设备上的应用程序
+- 发现并连接到用户设备
+- 在这些设备上远程启动应用
+- 向这些设备上的应用发送消息
 
-使用这些 Api，您可以生成可在一个设备上创建丰富体验的应用程序。 例如，您可以扩展您的应用程序，使其在更大的屏幕上启动。 或者，您可以为用户设备上的另一个应用创建配套体验。
+借助这些 API，你可以构建能够创建超越单个设备的丰富体验的应用。 例如，你可以扩展应用以在较大的屏幕上启动。 或者，你可以为用户的另一台设备上的应用创建配套体验。
 
-您可以使用以下 Microsoft Graph Api 与其他 Windows 设备进行通信：
+可以使用以下 Microsoft Graph API 与其他设备Windows通信：
 
-- [列出用户的设备](../api/user-list-devices.md)
+- [列出用户设备](../api/user-list-devices.md)
 - [向设备发送命令](../api/send-device-command.md)
 - [获取命令状态](../api/get-device-command-status.md)
 

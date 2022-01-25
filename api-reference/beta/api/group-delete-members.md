@@ -1,16 +1,16 @@
 ---
 title: 删除成员
-description: 使用此 API 可以通过 **members** 导航属性从Microsoft 365组、安全组或启用邮件的安全组中删除成员。 可以删除用户或其他组。
+description: 通过 members 导航Microsoft 365从安全组或安全组中删除成员。
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e20a4b730412129a1b68c5837bad000d7b6ca2b9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 20d51cee2eb4fc0ab9d53b9e178c04f2c851b966
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525503"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201699"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "61525503"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 通过 **成员** 导航属性从组中删除成员。 无法从具有动态成员身份的组中删除成员。
+通过 members 导航属性从 **组中删除** 成员。 你不能从具有动态成员身份的组中删除成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

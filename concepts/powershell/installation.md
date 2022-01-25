@@ -3,17 +3,21 @@ title: 安装 Microsoft Graph PowerShell SDK
 description: 提供有关安装 Microsoft Graph PowerShell SDK 的说明。
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 0e4a7f9269aef1700431921aead6014a15afd8dc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0337b4641f8c84e63c4c5e7eecf1da0f186dad0c
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139042"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201678"
 ---
 # <a name="install-the-microsoft-graph-powershell-sdk"></a>安装 Microsoft Graph PowerShell SDK
 
 > [!NOTE]
-> 安装 SDK 的主模块将安装所有 38 个子模块。 考虑仅安装必要的模块，包括 `Microsoft.Graph.Authentication` 。
+> 安装 SDK 的主模块将安装所有 38 个子模块。 考虑仅安装必要的模块，包括 `Microsoft.Graph.Authentication` 。 有关可用 Microsoft Graph的列表，请使用以下命令。
+>
+> ```powershell
+> Find-Module Microsoft.Graph*
+> ```
 
 Microsoft Graph PowerShell SDK 发布在[PowerShell 库上](https://www.powershellgallery.com/packages/Microsoft.Graph)。 可以使用以下命令在 PowerShell 核心或 Windows PowerShell安装 SDK。
 
@@ -32,7 +36,7 @@ Install-Module Microsoft.Graph -Scope AllUsers
 
 ## <a name="supported-powershell-versions"></a>支持的 PowerShell 版本
 
-PowerShell 7 及更高版本是建议在所有平台上与 Microsoft Graph PowerShell SDK 一Graph PowerShell 版本。 将 SDK 与 PowerShell 7 或更高版本一同使用没有任何其他先决条件。
+PowerShell 7 及更高版本是建议在所有平台上与 Microsoft Graph PowerShell SDK 一同使用的 PowerShell 版本。 将 SDK 与 PowerShell 7 或更高版本一同使用没有任何其他先决条件。
 
 若要将 Microsoft Graph PowerShell SDK 与 Windows PowerShell 一Windows PowerShell。
 

@@ -3,14 +3,14 @@ title: 获取 printServiceEndpoint
 description: 检索打印服务终结点的属性和关系。
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 62934b96640ce1b9b086a1a3bafb8933d68f1cc5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bc0e5c4064e420b2f8368ad850e63c246764ada7
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099050"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201727"
 ---
 # <a name="get-printserviceendpoint"></a>获取 printServiceEndpoint
 
@@ -20,14 +20,18 @@ ms.locfileid: "62099050"
 
 检索打印服务终结点的属性和关系。
 
-## <a name="permissions"></a>权限
-调用此 API 不需要任何权限，但若要使用通用打印服务，用户或应用的租户必须拥有活动的通用打印订阅。
+> [!NOTE]
+> 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅。
 
-|权限类型 | 权限（从最低特权到最高特权） |
-|:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）|无。|
-|委派（个人 Microsoft 帐户）|无。|
-|应用程序|无。|
+## <a name="permissions"></a>权限
+
+调用这些 API 需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+| 权限类型                        | 权限（从最低特权到最高特权） |
+|:---------------------------------------|:------------------------------------|
+| 委派（工作或学校帐户）     | PrintJob.ReadBasic、PrintJob.Read、PrintJob.ReadBasic.All、PrinterShare.ReadBasic.All、PrintJob.Read.All、Printer.Read.All、PrinterShare.Read.All、 PrintConnector.Read.All、PrintSettings.Read.All、PrintJob.ReadWriteBasic、PrintJob.ReadWriteBasic.All、Printer.ReadWrite.All、PrinterShare.ReadWrite.All、PrintJob.ReadWrite.All、PrintConnector.ReadWrite.All、PrintSettings.ReadWrite.All、Printer.Create、PrintJob.Create |
+| 委派（个人 Microsoft 帐户） | 不支持。                      |
+| 应用程序                            | 不支持。                      |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -36,19 +40,25 @@ GET /print/services/{id}/endpoints/{name}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
+
 | 名称      |说明|
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [printServiceEndpoint](../resources/printserviceendpoint.md) 对象。
 ## <a name="example"></a>示例
+
 ##### <a name="request"></a>请求
+
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -86,13 +96,16 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints/{name}
 ---
 
 ##### <a name="response"></a>响应
+
 下面展示了示例响应。
+
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.printServiceEndpoint"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -114,5 +127,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

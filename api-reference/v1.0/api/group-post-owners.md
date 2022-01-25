@@ -1,16 +1,16 @@
 ---
 title: 添加所有者
-description: 将用户或服务主体添加 Microsoft 365 到安全组的所有者。 所有者是一组具有 group 对象修改权限的非管理员用户。
+description: 将用户或服务主体添加 Microsoft 365 到安全组的所有者。 所有者是一组可修改组对象的用户或服务主体。
 ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3affc04192f198a23e0a7bc0b38141228a88dd1a
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: 6d30d60e0bd0e15b4649cbd2ed298fa863a6fc7a
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184050"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201440"
 ---
 # <a name="add-owners"></a>添加所有者
 

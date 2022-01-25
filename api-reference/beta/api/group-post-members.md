@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ad454155b471eee5338c1efffc670a56dc820689
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f3902d3e1dffd6396c57d948dc209d028197a015
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113384"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201360"
 ---
 # <a name="add-members"></a>添加成员
 
@@ -20,14 +20,16 @@ ms.locfileid: "62113384"
 
 通过 **members** 导航属性将成员添加到安全组或 Microsoft 365 组中。
 
-可以添加用户、服务主体或其他组。 
+可以添加用户、设备、服务主体或其他组。 
 
 > [!IMPORTANT]
-> + 只能将成员添加到安全和Microsoft 365组。
+> + 只能向安全组和Microsoft 365成员。 有关详细信息，请参阅仅 microsoft [Azure AD 中的组Graph类型](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph)。
 > + 不能将安全组添加到 Microsoft 365 组。
 > + 不能将 Microsoft 365 组添加到安全组或其他 Microsoft 365 组。
+> + 安全组可以将用户、设备、组或服务主体作为其成员，而安全Microsoft 365组只能将用户作为其成员。
 
-## <a name="permissions"></a>Permissions
+
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

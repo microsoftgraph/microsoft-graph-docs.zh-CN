@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f866f0855b06e7ecba3e554b058a6a84ea4f45dd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5c85618df16d6aea4bd9a82514666bd58b0c6bad
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129400"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201349"
 ---
 # <a name="get-team"></a>获取团队
 
@@ -39,7 +39,7 @@ GET /teams/{team-id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 $select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持`$select` 和 `$expand` [OData 查询参数](/graph/query-parameters)，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -53,8 +53,8 @@ GET /teams/{team-id}
 
 如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [team](../resources/team.md) 对象。
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
-下面展示了示例请求。
+### <a name="request"></a>请求
+请求示例如下所示。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 ---
 
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

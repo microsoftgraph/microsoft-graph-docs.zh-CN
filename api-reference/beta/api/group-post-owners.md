@@ -1,16 +1,16 @@
 ---
 title: 添加所有者
-description: 将用户或服务主体添加 Microsoft 365 到安全组的所有者。
+description: 将用户或服务主体添加 Microsoft 365 到安全组的所有者。 所有者是一组可修改组对象的用户或服务主体。
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bf7ee86fe521d876448dae2a8c92ac99b5e1f558
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: 191ed9f6d5c28e2eef172cf508e1e3924d3237b5
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184029"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201650"
 ---
 # <a name="add-owners"></a>添加所有者
 
@@ -43,7 +43,7 @@ POST /groups/{id}/owners/$ref
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要添加的用户 odata.id [servicePrincipal](../resources/user.md)对象的 [](../resources/user.md) **@odata.id** JSON 表示形式。
+在请求正文中，提供要添加的 [用户](../resources/user.md)**@odata.id**，或 [servicePrincipal](../resources/user.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。 当对象已是组的成员时，此方法将返回 `400 Bad Request` 响应代码。 当添加的对象不存在时，此方法返回 `404 Not Found` 响应代码。
@@ -91,7 +91,7 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供要添加的用户 odata.id [servicePrincipal](../resources/user.md)对象的 [](../resources/user.md) **@odata.id** JSON 表示形式。
+在请求正文中，提供要添加的 [用户](../resources/user.md)**@odata.id**，或 [servicePrincipal](../resources/user.md) 对象的 JSON 表示形式。
 
 ### <a name="response"></a>响应
 下面展示了示例响应。

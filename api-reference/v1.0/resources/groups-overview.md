@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 4fba8ecca0fd82c5e7e45bd5aa0e1c05d4ef84e0
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: bb455ffde8ab93ed0c93fcb35cdb088f2ce6979f
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124026"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201692"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -18,12 +18,26 @@ ms.locfileid: "61124026"
 
 > **注意**：只能通过工作或学校帐户创建组。 个人 Microsoft 帐户不支持组。
 
-| 类型              | 用例 | groupTypes | mailEnabled | securityEnabled | 通过 API 创建和管理 |
+## <a name="group-types-in-azure-ad-and-microsoft-graph"></a>Azure AD 和 Microsoft Graph 中的组类型
+
+Azure AD 支持以下类型的组。
+
++ Microsoft 365 组
++ 安全组
++ 启用邮件功能的安全组
++ 通讯组
+
+有关 Azure AD 组的详细信息，请参阅Azure AD 中的[比较组](/microsoft-365/admin/create-groups/compare-groups)。
+
+在 Microsoft Graph 中，可以通过设置 **groupType**、**mailEnabled** 和 **securityEnabled** 属性来标识组类型，如下表所示。
+
+| 类型              | 用例 | groupType | mailEnabled | securityEnabled | 通过 API 创建和管理 |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
 | [Microsoft 365 组](#microsoft-365-groups) | 促进用户与共享 Microsoft Online 资源的协作。 | `["Unified"]` | `true` | `true` 或 `false` | 可访问 |
 | [安全组](#security-groups-and-mail-enabled-security-groups) | 控制用户对应用中资源的访问。 | `[]` | `false` | `true` | 是 |
 | [启用邮件的安全组](#security-groups-and-mail-enabled-security-groups) | 使用共享的组邮箱，控制用户对应用中资源的访问。 | `[]` | `true` | `true` | 否 |
 | 通讯组 | 将邮件分发给组中的成员。 建议使用 Microsoft 365 组，因为它提供的资源集更丰富。 | `[]` | `true` | `false` | 否 |
+
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365 组
 Microsoft 365 组的强大之处在于它的协作本质，它是项目或团队中相互协作的用户的理想之选。 创建时，它们包含组成员共享的资源，包括：

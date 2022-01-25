@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3c560c7680e1d878b7f34fe73ab2ab88d535017d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 496570247a0f283de134c8c193e1ffc09bc10b16
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096811"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201657"
 ---
 # <a name="get-deleted-item"></a>获取已删除项目
 
@@ -22,7 +22,7 @@ ms.locfileid: "62096811"
 
 目前，仅应用程序、组和用户资源支持已删除的项目[](../resources/application.md)功能。 [](../resources/group.md) [](../resources/user.md)
 
->**注意：** 已删除的安全组和通讯组列表将永久删除，无法通过此 API 进行检索。
+>**注意：** 已删除的安全组将永久删除，无法通过此 API 进行检索。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

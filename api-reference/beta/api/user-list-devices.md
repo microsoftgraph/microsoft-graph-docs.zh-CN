@@ -1,26 +1,29 @@
 ---
-title: 列出用户设备
-description: 获取支持使用罗马功能Project列表。 这包括启动应用、向应用程序发送消息或将数据发送到应用程序的能力。 在"我/设备"上执行 GET 调用后，请传递设备的 ID 以向设备发送命令。
+title: '列出已弃 (的用户) '
+description: 获取支持 Rome 功能的用户Project列表。 这包括启动应用、向应用程序发送消息或将数据发送到应用程序的能力。 在"我/设备"上执行 GET 调用后，请传递设备的 ID 以向设备发送命令。
 ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: dd47f2f9cd3edfb1b45db833857e0a3f2cc0820b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d7c04421c87f6ec4e8c4ccc571790aaf1e3ed786
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940901"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201307"
 ---
-# <a name="list-user-devices"></a>列出用户设备
+# <a name="list-user-devices-deprecated"></a>列出已弃 (的用户) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取支持使用罗马功能Project列表。 这包括启动应用、向应用程序发送消息或将数据发送到应用程序的能力。 在"我/设备"上执行 GET 调用后，请传递设备的 ID 以 [向](send-device-command.md) 设备发送命令。
+> [!CAUTION]
+> 此 API 已弃用，在 2020 年 9 月 30 日停止返回数据。
 
-## <a name="permissions"></a>Permissions
+获取支持 Rome 功能的用户Project列表。 这包括启动应用、向应用程序发送消息或将数据发送到应用程序的能力。 在"我/设备"上执行 GET 调用后，请传递设备的 ID 以 [向](send-device-command.md) 设备发送命令。
+
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

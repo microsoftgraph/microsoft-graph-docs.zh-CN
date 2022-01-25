@@ -1,24 +1,27 @@
 ---
-title: 发送设备命令
-description: '此 API 使 Project 罗马功能能够命令与 Microsoft 帐户关联的设备。 在执行 GET 呼叫后 `me/devices` ，传入设备的 ID 以向设备发出命令。 支持两种类型的命令： LaunchURI 和 AppServices。 如果使用的是 LaunchURI，请指定 *type* 和 *载荷* 参数。 对于 AppService 调用，请指定 '
-localization_priority: Normal
+title: '发送设备命令 (已弃) '
+description: '此 API Project Rome 功能来命令与 Microsoft 帐户关联的设备。 在 上执行 GET 调用后 `me/devices` ，请传递设备的 ID 以向设备发出命令。 支持两种类型的命令：LaunchURI 和 AppServices。 如果使用的是 LaunchURI，请 *指定类型和**有效负载* 参数。 对于 AppService 调用，指定 '
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: ailae
-ms.openlocfilehash: d260891c2a0a178cfaa3d2992385dc260be515fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76b6edf47492d5a04e554e3f70834b3aed24d6a2
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044719"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201602"
 ---
-# <a name="send-device-command"></a>发送设备命令
+# <a name="send-device-command-deprecated"></a>发送设备命令 (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此 API 使 Project 罗马功能能够命令与 Microsoft 帐户关联的设备。 在执行 GET 呼叫后 `me/devices` ，传入设备的 ID 以向设备发出命令。 支持两种类型的命令： LaunchURI 和 AppServices。 如果使用的是 LaunchURI，请指定 *type* 和 *载荷* 参数。 对于 AppService 调用，指定 *type*、 *载荷*、 *packageFamilyName*和 *appServiceName* 参数。
+> [!CAUTION]
+> 此 API 已弃用，在 2020 年 9 月 30 日停止返回数据。
+
+此 API Project Rome 功能来命令与 Microsoft 帐户关联的设备。 在 上执行 GET 调用后 `me/devices` ，请传递设备的 ID 以向设备发出命令。 支持两种类型的命令：LaunchURI 和 AppServices。 如果使用的是 LaunchURI，请 *指定类型和**有效负载* 参数。 对于 AppService 调用，请指定 *类型* *、payload* *、packageFamilyName* 和 *appServiceName* 参数。
 
 ## <a name="permissions"></a>权限
 
@@ -85,21 +88,21 @@ HTTP/1.1 201 OK
 
 |**名称**|**类型**|**说明**|
 |:----|:------|:------|
-|payload | microsoft.graph.js| 要发送到应用程序服务或启动设备上的 URI 的有效负载。 |
-|responsePayload | microsoft.graph.js| 从目标设备返回的有效负载。 |
-|postBackURI | String | 回发 URI 以发送后续的更新通知。 |
-|packageFamilyName | String | Windows 程序包系列应用程序的名称。 |
-|appServiceName | String | 由目标应用程序定义的应用服务的名称。 如果启动应用服务，则为必需。 |
-|type| String | LaunchURI 或 AppService。 |
-|id| String | 已发送到设备的命令的 ID。 |
-|actionStatus | String | 命令的 [状态](get-device-command-status.md) 。 |
-|error| String| 与目标应用程序中的请求关联的任何错误。 |
+|payload | microsoft.graph.json| 发送到应用服务或在设备上启动 URI 的有效负载。 |
+|responsePayload | microsoft.graph.json| 从目标设备返回的有效负载。 |
+|postBackURI | 字符串 | 回发 URI 以发送更新的后续通知。 |
+|packageFamilyName | 字符串 | Windows程序包系列名称的应用程序。 |
+|appServiceName | 字符串 | 由目标应用程序定义的应用服务的名称。 如果启动应用服务，此为必需项。 |
+|type| 字符串 | LaunchURI 或 AppService。 |
+|id| 字符串 | 已发送到设备的命令的 ID。 |
+|actionStatus | 字符串 | [命令](get-device-command-status.md)的状态。 |
+|error| 字符串| 与来自目标应用程序的请求关联的任何错误。 |
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-launch-uri"></a>示例1：启动 URI
+### <a name="example-1-launch-uri"></a>示例 1：启动 URI
 
-以下是 LaunchURI 请求的示例;它会启动一个 URI 或目标设备上的应用程序。 若要启动 URI 或应用，请使用从) 上的 GET 调用获取的设备的 ID 发出 POST (`me/devices` 。 将 *类型* 参数设置为 *LaunchURI* ，并提供 URI 值（如） https://bing.com 。
+下面是 LaunchURI 请求的一个示例;它将在目标设备上启动 URI 或应用程序。 若要启动 URI 或应用，请通过使用设备 ID (GET 调用获取的 POST `me/devices`) 。 将 *Type* 参数设置为 *LaunchURI* 并提供 URI 值，如 https://bing.com 。
 
 #### <a name="request"></a>请求
 
@@ -146,11 +149,11 @@ HTTP/1.1 201 OK
 ```
 
 
-### <a name="example-2-app-service"></a>示例2： App service
+### <a name="example-2-app-service"></a>示例 2：应用服务
 
-下面的示例演示如何在设备上查询应用服务。 若要使用应用服务，您必须使用从) 上的 GET 呼叫获取的设备的 ID 执行 POST 调用 (`me/devices` 。 若要使用以下示例，必须在目标设备上安装 [罗马应用程序](https://aka.ms/romanapp) 。
+以下示例演示如何在设备上查询应用服务。 若要使用应用服务，你必须使用设备 ID 执行 POST (通过对应用服务执行 GET `me/devices`) 。 若要使用以下示例，必须在目标 [设备上安装 Rome](https://aka.ms/romanapp) 应用。
 
-必须在调用中设置多个附加属性。 *Type* 必须设置为 *AppService*， *AppServiceName* 必须设置为应用程序中定义的应用服务的名称， *PackageFamilyName* 必须设置为应用程序清单中定义的程序包系列名称， *有效负载* 将保留您在目标应用程序中调用的服务的键和值。
+必须在调用中设置其他几个属性。  Type 必须设置为 *AppService，AppServiceName* 必须设置为应用程序中定义的应用服务的名称 *，PackageFamilyName* 必须设置为应用清单中定义的程序包系列名称 *，Payload* 将保留目标应用程序中调用的服务的键和值。 
 
 #### <a name="request"></a>请求
 
