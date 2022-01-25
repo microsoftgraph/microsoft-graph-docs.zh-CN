@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: c33bc52028fb87fe807b282ace7e30ea7c0cec48
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: df1ff2cef0083ec35fa4495e17a10befc67b2544
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117953"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184057"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -183,7 +183,7 @@ ms.locfileid: "62117953"
 
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|表示已为应用程序授予组的应用角色。支持 `$expand`。 |
@@ -198,10 +198,10 @@ ms.locfileid: "62117953"
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。只读。可为空。|
 |memberOf|[directoryObject](directoryobject.md) collection|此组所属的组和管理单元。HTTP 方法：GET（支持所有组）。只读。可为 Null。支持 `$expand`。|
-|members|[directoryObject](directoryobject.md) collection| 属于此组成员的用户、联系人和组。HTTP 方法：GET（支持所有组）、POST（支持安全组和已启用邮件的安全组）、DELETE（仅支持安全组）只读，可为 Null。支持 `$expand`。|
+|members|[directoryObject](directoryobject.md) collection| 属于此组成员的用户、联系人和组。HTTP 方法：GET（支持所有组），POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）只读，可为 Null。<br/>支持`$expand`包括嵌套`$select`。 例如，`/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`。|
 |membersWithLicenseErrors|[user](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。只读。|
 |onenote|[onenote](onenote.md)| 只读。|
-|owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 可为 NULL。 如果在创建 Microsoft 365 组时未指定此属性，则会自动将调用用户分配为组所有者。 支持 `$expand`。|
+|owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 可为 NULL。 如果在创建 Microsoft 365 组时未指定此属性，则会自动将调用用户分配为组所有者。 <br/>支持 `$expand`，包括嵌套 `$select`。 例如，`/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`。|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|已授予针对组的特定应用程序的权限。支持 `$expand`。|
 |photo|[profilePhoto](profilephoto.md)| 组的个人资料照片。 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|

@@ -4,12 +4,12 @@ description: 订阅更改通知的应用可能会删除其订阅并错过一些�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: fed0c61d8cdf933d126c3ae880494afef51530a5
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 2bbce70adc5de7b1b1f17cf63d679a6d116680fd
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61523242"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184064"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications"></a>减少缺失订阅和更改通知
 
@@ -162,10 +162,29 @@ Content-Type: application/json
 
 收到`reauthorizationRequired`生命周期通知时，必须重新授权该订阅以保持数据流。
 
-可以创建长期订阅（3 天），更改通知流向 **notificationUrl**。 自订阅创建起访问条件发生变化时，Microsoft Graph 可能要求你重新授权订阅，证明仍能访问资源数据。 下面是影响数据访问的更改示例：
+可以根据 [资源支持的最大订阅生存期](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type)创建长期订阅，这使更改通知能够流向 **notificationUrl**。 如果在订阅创建后更改了访问条件，或者 Microsoft Graph 检测到通知流可能将于近期中断，Microsoft Graph 可能要求你重新授权订阅，以证明仍有权访问资源数据。 下面是可能会影响数据访问的条件示例：
 
 - 租户管理员可能会吊销应用程序读取资源的权限。
 - 在交互方案中，向应用程序提供身份验证令牌的用户，可能会受限于基于多种因素的动态策略，如位置、设备状态或风险评估。 例如，如果用户更改了物理位置，则该用户可能无法再访问该数据，并且应用程序无法重新授权订阅。 有关控制访问的动态策略的详细信息，请参阅 [Azure AD 条件性访问策略](/azure/active-directory/conditional-access/overview)。 
+- 访问令牌过期。 这仅适用于包含资源数据的通知。
+- 订阅在续订之前过期。
+
+在满足上述任一条件之前，Microsoft Graph 将向 **lifecycleNotificationUrl** 发送授权质询。 下面说明了这些通知的间隔：
+
+```csharp
+    //The following code is for illustrative purposes only
+    var TokenTimeToExpirationInMinutes=(TokenExpirationTime-CurrentTime)/4;
+    if((TokenTimeToExpirationInMinutes)<=180 && TokenTimeToExpirationInMinutes>60){
+        //Microsoft Graph will send reauthorizationRequired notification
+        TokenTimeToExpirationInMinutes=TokenTimeToExpirationInMinutes/2;
+    }
+    elseif(TokenTimeToExpirationInMinutes<60 && TokenTimeToExpirationInMinutes>=0){
+            //Microsoft Graph will send reauthorizationRequired notification every 15 mins
+            TokenTimeToExpirationInMinutes=TokenTimeToExpirationInMinutes-15;
+    }else{
+      //Microsoft Graph will stop sending reauthorizationRequired notifications
+    }
+```
 
 以下步骤代表活动的订阅的授权质询流：
 
@@ -178,14 +197,14 @@ Content-Type: application/json
     请注意，更改通知流可能会持续一段时间，为你提供额外的响应时间。 但是更改通知传递将最终暂停，直至执行了所需操作。
 
 3. 采用以下两种方法之一来响应此生命周期通知：
-    - 重新授权订阅。这不会延长订阅的到期日期。
-    - 续订订阅。这会重新授权并延长到期日期。
+    - 重新授权订阅。 这不会延长订阅的到期日期。
+    - 续订订阅。 这将重新授权并延长到期日期。
 
     注意：两项操作都要求提供有效的身份验证令牌，类似于[新建订阅](webhooks.md#creating-a-subscription)或[到期前续订订阅](webhooks.md#renewing-a-subscription)。
 
-4. 如果成功重新授权或续订订阅，更改通知将继续。否则，更改通知将保持暂停。
+4. 如果成功重新授权或续订订阅，更改通知将继续。 否则，更改通知保持暂停。 请注意，Microsoft graph 将在通知暂停四小时后删除。
 
-### <a name="reauthorizationrequired-notification-example"></a>reauthorizationRequired 通知示例
+### <a name="reauthorizationrequired-notification-payload-example"></a>reauthorizationRequired 通知有效负载示例
 
 ```json
 {
@@ -203,9 +222,8 @@ Content-Type: application/json
 
 有关此类型通知的一些注意事项：
 
-- “`"lifecycleEvent": "reauthorizationRequired"`”字段将通知标识为授权质询。 其他类型的生命周期通知也是可能的，将来会引入新的通知。
+- “`"lifecycleEvent": "reauthorizationRequired"`”字段将通知标识为授权质询。 还支持`missed`和`subscriptionRemoved`**lifecycleEvent** 通知。
 - 生命周期通知不包含有关特定资源的任何信息，因为它与资源更改无关，而与订阅状态更改有关。
-- 与更改通知类似，可以共同对生命周期通知进行批处理（**值** 集），各通知可能有不同的 **lifecycleEvent** 值。 相应地批处理每个生命周期通知。
 
 > **注意：** 有关传递更改通知时发送的数据的完整说明，请参阅 [changeNotificationCollection](/graph/api/resources/changenotificationcollection)。
 
@@ -265,14 +283,14 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-- [订阅资源类型](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [获取订阅](/graph/api/subscription-get?view=graph-rest-1.0)
-- [创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [删除订阅](/graph/api/subscription-delete?view=graph-rest-1.0)
-- [更新订阅](/graph/api/subscription-update?view=graph-rest-1.0)
+- [订阅资源类型](/graph/api/resources/subscription)
+- [获取订阅](/graph/api/subscription-get)
+- [创建订阅](/graph/api/subscription-post-subscriptions)
+- [删除订阅](/graph/api/subscription-delete)
+- [更新订阅](/graph/api/subscription-update)
 
 
-[联系人]: /graph/api/resources/contact?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
+[联系人]: /graph/api/resources/contact
+[event]: /graph/api/resources/event
+[message]: /graph/api/resources/message
 [chatMessage]: /graph/api/resources/chatmessage

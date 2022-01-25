@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4da378ccc4c5386764711995b62ad327c28cf664
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3affc04192f198a23e0a7bc0b38141228a88dd1a
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114791"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184050"
 ---
 # <a name="add-owners"></a>添加所有者
 
@@ -41,14 +41,14 @@ POST /groups/{id}/owners/$ref
 | Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。
+在请求正文中，提供要添加的 [用户](../resources/user.md)**@odata.id**，或 [servicePrincipal](../resources/user.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。 当对象已是组的成员时，此方法将返回 `400 Bad Request` 响应代码。 当添加的对象不存在时，此方法返回 `404 Not Found` 响应代码。
 
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
-下面展示了示例请求。
+### <a name="request"></a>请求
+下面是将用户添加为组所有者的请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -89,9 +89,9 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。
+在请求正文中，提供要添加的 [用户](../resources/user.md)**@odata.id**，或 [servicePrincipal](../resources/user.md) 对象的 JSON 表示形式。
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
