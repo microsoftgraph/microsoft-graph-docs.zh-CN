@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 0321ad71dd1f9604f70eed5c4602610e867ed2fa
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: c7cb3143124a3f5f1820b47391c6011a5417ce1a
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072563"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201594"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -291,7 +291,7 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 
 目前，`/v1.0` 和 `/beta` 中均存在一个问题，即会阻止在 POST 或 PATCH 操作中设置组的属性 **allowExternalSenders**。
 
-只能在统一组上访问 **allowExternalSenders** 属性。 访问通讯组列表或安全组上的此属性（包括通过 GET 操作）将导致错误。
+只能在统一组上访问 **allowExternalSenders** 属性。 访问安全组上的此属性（包括通过 GET 操作）将导致错误。
 
 ### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>删除组所有者还将删除作为组成员的用户
 

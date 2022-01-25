@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1bc8d1ffce7c94ce00b710df0a232f7a23792c09
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 445ec62fb5c134f29bb423d98ec7ff76740902cf
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136071"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201339"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -46,8 +46,8 @@ POST /groups/{id}/calendar/events
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [event](../resources/event.md) 对象。
 
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
-下面展示了示例请求。
+### <a name="request"></a>请求
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -113,9 +113,7 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
-
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
