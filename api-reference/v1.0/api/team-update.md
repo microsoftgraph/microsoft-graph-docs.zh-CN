@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0128facc7c0ee69a7c46b44af09da4b9ed8e84f6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8e9df85b9b55088cc9bb0730801216ebcd9f4df6
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128350"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225677"
 ---
 # <a name="update-team"></a>更新团队
 

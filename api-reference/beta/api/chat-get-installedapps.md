@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1d78161c9c420f493b9aa5e4623c123ed93f7d59
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cfe50fa24cd17f34b253b1dbae2ee835a0a191ae
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094416"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225047"
 ---
 # <a name="get-installed-app-in-chat"></a>获取聊天中安装的应用
 

@@ -6,12 +6,12 @@ description: 在 SharePoint 租户中搜索与所提供的关键字匹配的 网
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a65759b3ff08c4cea2812582ee1aa1f7723c32b6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7b200e6c793787a36eff1ae8ef7a42ce03863174
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027088"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62225278"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
@@ -84,8 +84,12 @@ GET https://graph.microsoft.com/v1.0/sites?search={query}
 [!INCLUDE [sample-code](../includes/snippets/java/list-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-permission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-permission-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

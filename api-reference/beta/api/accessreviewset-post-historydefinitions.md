@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b348f889eb9a04d10c186e9ce7364d56e8d8edea
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: d8a6b1d34b21e28ec5ec52bfc83afdc81261d68a
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650967"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225285"
 ---
 # <a name="create-historydefinitions"></a>创建 historyDefinitions
 
@@ -38,6 +38,7 @@ ms.locfileid: "61650967"
   "blockType": "ignored"
 }
 -->
+
 ``` http
 POST /identityGovernance/accessReviews/historyDefinitions
 ```
@@ -58,13 +59,14 @@ POST /identityGovernance/accessReviews/historyDefinitions
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName | String  | 访问评审历史记录数据收集的名称。 必需。 |
-|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | 时间戳、在此日期或之后开始审阅将包含在提取的历史记录数据中。 必需。  |
-|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | 时间戳、在此日期或之前开始审阅将包含在提取的历史记录数据中。 必需。  |
+|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | 时间戳。 在此日期或之后开始审阅将包含在提取的历史记录数据中。 仅在未定义 **scheduleSettings** 时是必需的。  |
+|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | 时间戳。 在此日期或之前开始审阅将包含在提取的历史记录数据中。 仅在未定义 **scheduleSettings** 时是必需的。  |
 |scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) 集合| 用于筛选包含在提取的历史记录数据中的审阅。 获取其范围与提供的范围匹配的审阅。 必需。 <br> 有关详细信息，请参阅 [accessReviewHistoryDefinition 支持的作用域查询](#supported-scope-queries-for-accessreviewhistorydefinition)。 |
+| scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| 定期访问评审历史记录定义系列的设置。 仅在未定义 **reviewHistoryPeriodStartDateTime** 或 **reviewHistoryPeriodEndDateTime** 时是必需的。|
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>accessReviewHistoryDefinition 支持的范围查询
 
-[accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md)的 **scopes** 属性基于 **accessReviewQueryScope，** 这是一种允许你在查询属性中配置不同 **资源** 的资源。 这些资源随后表示历史记录定义的范围，并指示创建历史记录定义时生成的可下载 CSV 文件中包含的查看历史记录数据的类型。
+[accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md)的 **scopes** 属性基于 **accessReviewQueryScope，** 这是一种允许你在查询属性中配置不同 **资源** 的资源。 然后，这些资源表示历史记录定义的作用域，并指示在创建历史记录定义的 [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) 时生成的可下载 CSV 文件中包含的审阅历史记录数据的类型。
 
 对查询 **属性使用以下格式** ：
 
@@ -72,7 +74,7 @@ POST /identityGovernance/accessReviews/historyDefinitions
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
 ```
 
-的值 `{object}` 是可以在 **accessReviewScheduleDefinition 中配置的资源之一**。 例如，以下内容包括单个组上的每个 accessReviewScheduleDefinition 审阅结果 (并排除作用域为具有来宾用户的所有 Microsoft 365 组的定义) 。
+的值 `{object}` 是可以在 **accessReviewScheduleDefinition 中配置的资源之一**。 例如，以下内容包括单个组 (上的每个 accessReviewScheduleDefinition 审阅结果，并排除作用域为具有来宾用户的所有 Microsoft 365 组的定义) 。
 
 ```http
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
@@ -96,6 +98,7 @@ POST /identityGovernance/accessReviews/historyDefinitions
   "name": "create_accessreviewhistorydefinition_from_"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
 Content-Type: application/json
@@ -109,8 +112,20 @@ Content-Type: application/json
     "notReviewed",
     "notNotified"
   ],
-  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
-  "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
+  "scheduleSettings": {
+      "reportRange": "P1M",
+      "recurrence": {
+          "pattern": {
+              "type": "monthly",
+              "interval": 1
+          },
+          "range": {
+              "type": "noEnd",
+              "startDate": "2018-08-03T21:02:30.667Z",
+              "count": 0
+          }
+        }
+  },
   "scopes": [
     {
       "@odata.type": "#microsoft.graph.accessReviewQueryScope",
@@ -127,6 +142,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewhistorydefinition-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -143,15 +159,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewhistorydefinition-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewhistorydefinition-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### <a name="response"></a>响应
+
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -159,45 +174,56 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.accessReviewHistoryDefinition"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-  "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
-  "displayName": "Last quarter's group reviews April 2021",
-  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
-  "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
-  "decisions": [
-    "approve",
-    "deny",
-    "dontKnow",
-    "notReviewed",
-    "notNotified"
-  ],
-  "status": "requested",
-  "createdDateTime": "2021-04-14T00:22:48.9392594Z",
-  "fulfilledDateTime": null,
-  "downloadUri": null,
-  "createdBy": {
-      "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
-      "displayName": "MOD Administrator",
-      "userPrincipalName": "admin@contoso.com"
-  },
-  "scopes": [
-    {
-      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-      "queryType": "MicrosoftGraph",     
-      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
-      "queryRoot": null
-    },  
-    {
-      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-      "queryType": "MicrosoftGraph",     
-      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
-      "queryRoot": null
-    }
-  ]
+    "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
+    "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
+    "displayName": "Last quarter's group reviews April 2021",
+    "scheduleSettings": {
+        "reportRange": "P1M",
+        "recurrence": {
+            "pattern": {
+                "type": "monthly",
+                "interval": 1
+            },
+            "range": {
+                "type": "noEnd",
+                "startDate": "2018-08-03T21:02:30.667Z",
+                "count": 0
+            }
+        }
+    },
+    "decisions": [
+        "approve",
+        "deny",
+        "dontKnow",
+        "notReviewed",
+        "notNotified"
+    ],
+    "status": "requested",
+    "createdDateTime": "2021-04-14T00:22:48.9392594Z",
+    "createdBy": {
+        "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+        "displayName": "MOD Administrator",
+        "userPrincipalName": "admin@contoso.com"
+    },
+    "scopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "queryType": "MicrosoftGraph",
+            "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
+            "queryRoot": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "queryType": "MicrosoftGraph",
+            "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
+            "queryRoot": null
+        }
+    ]
 }
 ```

@@ -5,12 +5,12 @@ author: bhartono
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6be52649f2015f649046edac8d88bf11f2862c17
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 23260bb99b509a2039aec249feb392a757c4b942
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123946"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225446"
 ---
 # <a name="update-chat"></a>更新聊天
 命名空间：microsoft.graph
@@ -51,7 +51,7 @@ PATCH /chats/{chat-id}
 
 下表显示了可用于此操作的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |topic|String|聊天的标题。 只能为 chatType 值为 的 **聊天设置** 此值 `group` 。|
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 20f9a1a831aa260bd33cf1177081020e856d8b3a
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: d019d228c426cc74cecd8471be1aea56b2968b48
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651706"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225558"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
@@ -26,7 +26,7 @@ ms.locfileid: "61651706"
 
 - 客户可以通过组成员身份查看和认证来宾用户对组的访问权限。 审阅者可以使用提供的见解来有效决定是否应让来宾继续访问。
 - 客户可以审阅并认证员工对Azure AD的访问权限。
-- 客户可以审阅和审核分配以Azure AD角色。 这支持组织管理特权访问。
+- 客户可以审阅和审核分配Azure AD特权角色。 这支持组织管理特权访问。
 
 请注意，访问评审功能（包括 API）包含在Azure AD Premium P2。  创建访问评审的租户必须拥有有效的已购买或试用Azure AD Premium P2 EMS E5 订阅。
 
@@ -64,12 +64,13 @@ ms.locfileid: "61651706"
 |[列出 historyDefinitions](../api/accessreviewset-list-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 集合|获取 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象及其属性的列表。|
 |[创建 historyDefinitions](../api/accessreviewset-post-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|创建新的 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象。|
 |[获取 accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|读取 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象的属性和关系。|
-|[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|生成可用于检索审阅历史记录数据的 URI。|
+|[generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md)|为可用于检索审阅历史记录数据的实例生成 URI。|
+|[列出 historyInstances](../api/accessreviewhistorydefinition-list-instances.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md)|检索 [accessReviewHistoryInstance](accessreviewhistoryinstance.md) 对象及其属性的列表。|
 |**策略**| | |
 |[获取 accessReviewPolicy](../api/accessreviewpolicy-get.md)|[accessReviewPolicy](../resources/accessreviewpolicy.md)|读取 [accessReviewPolicy](../resources/accessreviewpolicy.md) 对象的属性和关系。|
 |[更新 accessReviewPolicy](../api/accessreviewpolicy-update.md)|[accessReviewPolicy](../resources/accessreviewpolicy.md)|更新 [accessReviewPolicy 对象](../resources/accessreviewpolicy.md) 的属性。|
-|[列出已弃 (](../api/accessreviewscheduledefinition-filterbycurrentuser.md) 审批) |[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 集合|检索调用用户作为一个或多个实例的审阅者的所有定义。 此方法已被弃用，并替换为 [accessReviewScheduleDefinition： filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)。|
-|[列出已弃 (pendingAccessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md))  | [accessReviewInstance](accessreviewinstance.md) 集合。 | 获取分配给调用用户的所有待定 accessReviewInstance 资源。 此方法已被弃用，并替换为 [accessReviewInstance： filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)。 |
+|[列出等待审批 (](../api/accessreviewscheduledefinition-filterbycurrentuser.md) 已弃用) |[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 集合|检索调用用户作为一个或多个实例的审阅者的所有定义。 此方法已被弃用，并替换为 [accessReviewScheduleDefinition： filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)。|
+|[列出 pendingAccessReviewInstances (](../api/accessreviewinstance-pendingaccessreviewinstances.md) 弃)  | [accessReviewInstance](accessreviewinstance.md) 集合。 | 获取分配给调用用户的所有待定 accessReviewInstance 资源。 此方法已被弃用，并替换为 [accessReviewInstance： filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)。 |
 
 ## <a name="role-and-application-permission-authorization-checks"></a>角色和应用程序权限授权检查
 
@@ -77,7 +78,7 @@ ms.locfileid: "61651706"
 
 | 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
 |:------------------|:------------|:--------------------------------------------|
-| 读取 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读者或用户管理员 |
+| Read | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读者或用户管理员 |
 | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或用户管理员 |
 
 此外，作为访问评审的分配审阅者的用户可以管理其决策，而无需担任目录角色。
@@ -85,7 +86,7 @@ ms.locfileid: "61651706"
 ## <a name="see-also"></a>另请参阅
 
 - [了解如何](/graph/accessreviews-overview)使用访问评审 API 查看对访问资源的访问权限Azure AD教程
-- [管理员如何使用访问评审管理Azure AD访问权限](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
+- [管理员如何使用访问评审Azure AD用户访问](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
 - [管理员如何使用访问评审管理Azure AD访问](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
 
 

@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 94d25224eb97e67d9753ccd2abfd061f00dec95d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3a873efd300231aea8561ca50a725adba9223819
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113837"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224751"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation：升级
 

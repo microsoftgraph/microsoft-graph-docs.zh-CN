@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 8b84d54769f872ff3a0b2e534d9861a360cf045c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8f6ffceae611f532d12f83538ac70ca668aebea2
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031687"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224991"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob： validateCredentials
 
@@ -20,7 +20,7 @@ ms.locfileid: "61031687"
 
 验证凭据在租户中是否有效。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -45,8 +45,8 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|useSavedCredentials|布尔|When `true` ， the parameter will be ignored and the previously saved `credentials` credentials (if any) will be validated instead. |
-|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|要验证的凭据。 当参数为 时 `useSavedCredentials` 忽略 `true` 。|
+|useSavedCredentials|Boolean|When `true` ， the parameter will be ignored and the previously saved `credentials` credentials (if any) will be validated instead. |
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-synchronizationsecretkeystringvaluepair.md) 集合|要验证的凭据。 当参数为 时 `useSavedCredentials` 忽略 `true` 。|
 
 ## <a name="response"></a>响应
 如果验证成功，此方法将返回 响应 `204, No Content` 代码。 它不会在响应正文中返回任何内容。
@@ -88,7 +88,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-validatecredentials-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-validatecredentials-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

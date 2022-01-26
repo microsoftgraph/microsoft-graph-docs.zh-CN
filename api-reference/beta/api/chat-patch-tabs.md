@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 81e86a7a380c924f481caab508de07b0e3e9c18a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dcb3d168668c89a848138cf0f1cdc1c49131681c
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103783"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225873"
 ---
 # <a name="update-tab-in-chat"></a>聊天中的"更新"选项卡
 

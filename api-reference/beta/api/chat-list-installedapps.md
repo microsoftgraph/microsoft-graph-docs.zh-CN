@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fd13fdf1ca1b0b36733d6dcf10a57c0fee54cc78
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 605ffe2618a50ea83b6a8fcf1eafc64a879cbc38
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128035"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224773"
 ---
 # <a name="list-apps-in-chat"></a>列出聊天中的应用
 

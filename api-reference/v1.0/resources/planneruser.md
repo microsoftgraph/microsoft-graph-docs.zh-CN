@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 5a2220ced0459118a6be00ee03a2b9282b6635cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c921b11c54075a8ff844f7ef932cc9c34172b44
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129801"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225208"
 ---
 # <a name="planneruser-resource-type"></a>plannerUser 资源类型
 
@@ -29,13 +29,13 @@ ms.locfileid: "59129801"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 planenrUser 的标识符|
+|id|String| 只读。 plannerUser 的标识符|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为空。 返回[分配给用户的 plannerTasks。](plannertask.md)|
-|tasks|[plannerTask](plannertask.md) collection| 只读。 可为空。 返回[与用户共享的 plannerPlans。](plannerplan.md)|
+|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回[分配给用户的 plannerTasks。](plannertask.md)|
+|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 NULL。 返回[与用户共享的 plannerPlans。](plannerplan.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

@@ -1,0 +1,24 @@
+---
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 2d5b3da9098f3fcf23ab18a4d7907a4b8aefc0e9
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225403"
+---
+```java
+
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+
+CloudPcUserAccountType userAccountType = CloudPcUserAccountType.ADMINISTRATOR;
+
+graphClient.deviceManagement().virtualEndpoint().cloudPCs("4b5ad5e0-6a0b-4ffc-818d-36bb23cf4dbd")
+    .changeUserAccountType(CloudPCChangeUserAccountTypeParameterSet
+        .newBuilder()
+        .withUserAccountType(userAccountType)
+        .build())
+    .buildRequest()
+    .post();
+
+```

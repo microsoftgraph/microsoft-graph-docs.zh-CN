@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4c9daf4b156d4de58703a151f1d692391c071b1d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e88cfc3dd1e11f42feb3ede56594461a5f9d0b59
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987959"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224942"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>获取 accessReviewHistoryDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "60987959"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按其 [标识符检索 accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。 返回访问评审历史记录定义对象的所有属性。 如果下载链接仍然有效，它将与定义一起返回。 如果定义是 30 天或更久，则返回 404 错误。
+按其 [标识符检索 accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。 返回访问评审历史记录定义对象的所有属性。 如果定义是 30 天或更久，则返回 404 错误。
 
 ## <a name="permissions"></a>权限
 
@@ -38,16 +38,22 @@ ms.locfileid: "60987959"
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+此方法支持 `$select` 和 `$expand` OData 查询参数来帮助自定义响应。 包括 `?$expand=instances` 将包括响应对象中与 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象关联的实例。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
+
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
@@ -59,14 +65,17 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_accessreviewhistorydefinition"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/b2cb022f-b7e1-40f3-9854-c65a40861c38
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviewhistorydefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,15 +92,14 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewhistorydefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewhistorydefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### <a name="response"></a>响应
+
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -99,6 +107,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
   "@odata.type": "microsoft.graph.accessReviewHistoryDefinition"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -118,8 +127,6 @@ Content-Type: application/json
   ],
   "status": "done",
   "createdDateTime": "2021-04-14T00:22:48.9392594Z",
-  "fulfilledDateTime": "2021-04-14T00:22:58.5276552Z",
-  "downloadUri": "https://contoso.com/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
   "createdBy": {
     "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
     "displayName": "MOD Administrator",

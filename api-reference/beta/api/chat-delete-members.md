@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 476c2d040aa2a9d14659a7acd10d625798e9bc79
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cc13cc8fd196a8032622a91f5c4442b311296df1
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119222"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225579"
 ---
 # <a name="remove-member-from-chat"></a>从聊天删除成员
 命名空间：microsoft.graph

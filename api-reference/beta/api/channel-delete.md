@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 05f9953e22550fff25f53349a208e08e16a8f9f4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f87b4be2aae0382c045ab0d5e5e1449651f583d2
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113888"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225348"
 ---
 # <a name="delete-channel"></a>删除频道
 

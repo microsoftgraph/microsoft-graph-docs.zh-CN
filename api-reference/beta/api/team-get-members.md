@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7501ee371d8d721c8c7834e60b1a426abf7fd25f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: faad317a2ed96e8741ba3cbbd467063dd2f61e61
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105267"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225530"
 ---
 # <a name="get-member-of-team"></a>获取团队成员
 

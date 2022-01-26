@@ -5,19 +5,19 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bf872f5609b7af3d0a47bdf4a88022d47438d948
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 8e197cfbceeb63a2a132025f570f9baaaec4a9f1
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072353"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225684"
 ---
 # <a name="team-sendactivitynotification"></a>team：sendActivityNotification
 命名空间：microsoft.graph
 
 在团队范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -65,7 +65,7 @@ POST /teams/{teamId}/sendActivityNotification
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外[，Teams](/microsoftteams/platform/overview)应用必须安装在团队中。
+> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外[，Teams应用](/microsoftteams/platform/overview)必须安装在团队中。
 
 ## <a name="response"></a>响应
 

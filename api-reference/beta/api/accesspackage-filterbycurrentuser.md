@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 19ec2e0451b45284c8146b35aff62f046d515754
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cf8ad468a0b496c20c57815fe6c4ed8d9593bec7
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107254"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225056"
 ---
 # <a name="accesspackage-filterbycurrentuser"></a>accessPackage： filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD中](../resources/entitlementmanagement-overview.md)，检索在已登录用户上筛选的[accessPackage](../resources/accesspackage.md)对象列表。
+在[Azure AD管理](../resources/entitlementmanagement-overview.md)"中，检索已登录用户筛选的[accessPackage](../resources/accesspackage.md)对象列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,9 +41,9 @@ GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser
 ## <a name="function-parameters"></a>函数参数
 下表显示了可用于此函数的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
-|on|[accessPackageFilterByCurrentUserOptions](../resources/accesspackage-accesspackagefilterbycurrentuseroptions.md)|可用于在访问包列表上进行筛选的当前用户选项的列表。 允许的值为 `allowedRequestor` 。|
+|on|accessPackageFilterByCurrentUserOptions|可用于在访问包列表上进行筛选的当前用户选项的列表。 允许的值为 `allowedRequestor` 。|
 
 - `allowedRequestor` 用于获取允许登录用户提交访问 `accessPackage` 请求的对象。 生成的列表包括调用方可以跨所有目录请求的所有访问包。
 

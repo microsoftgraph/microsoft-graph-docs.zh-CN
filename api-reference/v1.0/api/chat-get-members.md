@@ -5,12 +5,12 @@ author: bhartono
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 23ea4809b8ba2c03ae3a7e1c480d7a30a6fd3eef
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 64b3b256b14a13023598def4651bb36a86d9f399
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129021"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224462"
 ---
 # <a name="get-conversationmember-in-a-chat"></a>获取聊天中的 conversationMember
 

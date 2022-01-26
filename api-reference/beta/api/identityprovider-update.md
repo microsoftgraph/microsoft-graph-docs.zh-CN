@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 93d7729224afccab088c28d709abe955c11dd5df
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e1f444341aeb84dc3231c2f34308acd6516adb87
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127546"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225763"
 ---
 # <a name="update-identityprovider-deprecated"></a>更新 identityProvider （已弃用）
 
@@ -53,7 +53,7 @@ PATCH /identityProviders/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，为 JSON 对象提供一个或多个属性，这些属性需要针对[identityProvider](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md) (仅针对 Azure AD B2C) 对象更新。
+在请求正文中，为 JSON 对象提供一个或多个属性，这些属性需要针对[identityProvider](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md) (仅针对 Azure AD B2C) 对象进行更新。
 
 ### <a name="identityprovider-object"></a>identityProvider 对象
 
@@ -184,6 +184,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-openidconnectprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-openidconnectprovider-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

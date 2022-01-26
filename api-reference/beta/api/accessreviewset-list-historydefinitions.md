@@ -5,14 +5,15 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7f1ac8f654d5a50284102c3afbd5d5cb61f921e4
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 4971ef6f4a65b4a6c0e1fd9d3f319da3ffb87a4c
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651021"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224724"
 ---
 # <a name="list-historydefinitions"></a>列出 historyDefinitions
+
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -42,19 +43,23 @@ ms.locfileid: "61651021"
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /identityGovernance/accessReviews/historyDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 `$top` 、 `$filter` 和 `$skip` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 
+
+此方法支持 `$top` 、 `$filter` 、 和 `$expand` `$skip` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 Including `?$expand=instances` 将返回 [accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) 对象及其关联实例。
 
 ## <a name="request-headers"></a>请求标头
+
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
@@ -71,9 +76,11 @@ GET /identityGovernance/accessReviews/historyDefinitions
   "name": "list_accessreviewhistorydefinition"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewhistorydefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,15 +97,14 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewhistorydefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewhistorydefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### <a name="response"></a>响应
+
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -107,50 +113,43 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
   "isCollection": "true"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.count": 1,
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-      "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
-      "displayName": "Last quarter's group reviews April 2021",
-      "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
-      "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
-      "decisions": [
-        "approve",
-        "deny",
-        "dontKnow",
-        "notReviewed",
-        "notNotified"
-      ],
-      "status": "done",
-      "createdDateTime": "2021-04-14T00:22:48.9392594Z",
-      "fulfilledDateTime": "2021-04-14T00:22:58.5276552Z",
-      "downloadUri": "https://contoso.com/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
-      "createdBy": {
-        "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
-        "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@contoso.com"
-      },
-      "scopes": [
+    "@odata.count": 1,
+    "value": [
         {
-          "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-          "queryType": "MicrosoftGraph",     
-          "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
-          "queryRoot": null
-        },  
-        {
-          "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-          "queryType": "MicrosoftGraph",     
-          "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
-          "queryRoot": null
+            "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
+            "id": "67e3de15-d263-45a9-8f4f-71271b495db7",
+            "displayName": "Last year's ELM assignment reviews - one time",
+            "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+            "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
+            "decisions": [
+                "approve",
+                "deny",
+                "dontKnow",
+                "notReviewed",
+                "notNotified"
+            ],
+            "status": "done",
+            "createdDateTime": "2021-04-14T00:22:48.9392594Z",
+            "createdBy": {
+                "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+                "displayName": "MOD Administrator",
+                "userPrincipalName": "admin@contoso.com"
+            },
+            "scopes": [
+                {
+                    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                    "queryType": "MicrosoftGraph",
+                    "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
+                    "queryRoot": null
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
 ```

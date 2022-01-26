@@ -1,20 +1,27 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 82381ecae921fc352ac0fefc4a549aac53f0b25f
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 156d76a494b40f487840ae0518063186daf2b7f6
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61287568"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224903"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+requestParameters := &msgraphsdk.DecisionsRequestBuilderGetQueryParameters{
+    Top: 100,
+    Skip: 0,
+}
+options := &msgraphsdk.DecisionsRequestBuilderGetOptions{
+    Q: requestParameters,
+}
 accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
 accessReviewInstanceId := "accessReviewInstance-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).Decisions().Get(nil)
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).Decisions().Get(options)
 
 
 ```

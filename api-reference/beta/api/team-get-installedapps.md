@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 558f71e9fa6cb116b713efb1fa9f3357751b6825
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 893ea20683fe480ba06a91a4564e251fe507915f
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093052"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225215"
 ---
 # <a name="get-installed-app-in-team"></a>在团队中获取已安装的应用
 

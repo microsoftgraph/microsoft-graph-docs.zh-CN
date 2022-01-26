@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 6ee1df20a0047077f459e4512b88c7d6efa1c019
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f7dfc09c1cd67d9f5f62ffdf506424cd4b6cb4cb
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090333"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62226041"
 ---
 # <a name="sourcecollection-estimatestatistics"></a>sourceCollection： estimateStatistics
 
@@ -18,7 +18,7 @@ ms.locfileid: "62090333"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-运行源集合中电子邮件和文档的估计数量。 若要了解有关电子数据展示 (搜索的源集合) ，请参阅在 Advanced eDiscovery[中](/microsoft-365/compliance/collecting-data-for-ediscovery)收集数据。
+运行源集合中电子邮件和文档的估计数量。 若要了解有关电子数据展示 (搜索的源集合) ，请参阅在 Advanced eDiscovery[中收集数据](/microsoft-365/compliance/collecting-data-for-ediscovery)。
 
 ## <a name="permissions"></a>权限
 

@@ -5,19 +5,19 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 87cfd0397615b4d528be0aaa6c1ab9315a9a8a77
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c1cfc61d8701f4ec904e7975369c6197312da64b
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113900"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225866"
 ---
 # <a name="chat-sendactivitynotification"></a>chat： sendActivityNotification
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在聊天范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams通知](/graph/teams-send-activityfeednotifications)。
+在聊天范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ POST /chats/{chatId}/sendActivityNotification
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
 |activityType|String|活动类型。 这必须在应用清单[Teams声明](/microsoftteams/platform/overview)。|
@@ -75,7 +75,7 @@ POST /chats/{chatId}/sendActivityNotification
 
 ### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>示例 1：通知用户在聊天中创建的任务
 
-此示例演示如何发送在聊天中创建的新任务的活动源通知。 有关详细信息，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
+此示例演示如何发送在聊天中创建的新任务的活动源通知。 有关详细信息，请参阅发送[Teams活动通知](/graph/teams-send-activityfeednotifications)。
 
 #### <a name="request"></a>请求
 

@@ -1,16 +1,16 @@
 ---
 title: 向聊天添加选项卡
-description: '将 (将) 选项卡添加到指定聊天。 '
+description: '将 (固定) 选项卡添加到指定的聊天。 '
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4932dd60f739102968c63286a5a707a21a2fc956
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b5a8b3787f8938bd639a7bec0ca17b5e0ff0dfd2
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100478"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225432"
 ---
 # <a name="add-tab-to-chat"></a>向聊天添加选项卡
 
@@ -18,7 +18,7 @@ ms.locfileid: "62100478"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md). 相应的应用必须已安装 [在聊天 中](../api/chat-list-installedapps.md)。
+将 (固定) [选项卡](../resources/teamstab.md) 添加到指定的 [聊天中](../resources/chat.md)。 相应的应用必须已安装 [在聊天 中](../api/chat-list-installedapps.md)。
 
 > **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上选项卡将添加到会议。
 

@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a4f56ea0ca58bbcb9b0bfac8984657d105117cc1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 22b2319e753b93d85f59f89884f7e0829ddc3acb
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119234"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225572"
 ---
 # <a name="delete-tab-from-chat"></a>从聊天中删除选项卡
 

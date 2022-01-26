@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 58247e08bdf11aa094773e815bc37e4385849a15
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2d309c618355728a0fcc9cfeabaf232e4b6cad9e
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100644"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224721"
 ---
 # <a name="get-chat"></a>获取聊天
 

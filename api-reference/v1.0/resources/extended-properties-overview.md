@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 4cc8e9460c21aa2e3a07b1ad9faada50a98df5e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8ebe852d1750ef771d850950b60cd1094198679
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123522"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225593"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
 
@@ -33,7 +33,7 @@ ms.locfileid: "59123522"
 
 ## <a name="use-extended-properties-or-open-extensions"></a>使用扩展属性还是开放扩展？
 
-在大多数的常见情况下，你应该能够使用开放扩展（用 [openTypeExtension](../resources/opentypeextension.md) 表示，以前被称为 Office 365 数据扩展）来存储和访问用户邮箱中资源实例的自定义数据。仅当需要访问尚未通过 [Microsoft Graph API 元数据](../index.md)公开的 Outlook MAPI 属性的自定义数据时使用扩展属性。
+在大多数的常见情况下，你应该能够使用开放扩展（用 [openTypeExtension](../resources/opentypeextension.md) 表示，以前被称为 Office 365 数据扩展）来存储和访问用户邮箱中资源实例的自定义数据。仅当需要访问尚未通过 [Microsoft Graph API 元数据](/graph/call-api#microsoft-graph-api-metadata)公开的 Outlook MAPI 属性的自定义数据时使用扩展属性。
 
 ## <a name="types-of-extended-properties"></a>扩展属性的类型
 
@@ -62,7 +62,7 @@ ms.locfileid: "59123522"
 |:---------|:----------|:--------------|
 | "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 用所属的命名空间 (GUID) 和字符串名称标识属性。         |
 | "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | 用所属的命名空间 (GUID) 和数字标识符标识属性。  |
-| "{_type_} {_proptag_}"                    | ```"String 0x4001001E"```                                           | 用属性标记标识预定义的属性。 |
+| "{_type_} {_proptag_}"                    | ```"String 0x4001"```                                           | 用属性标记标识预定义的属性。 |
 
 **多值扩展属性的有效 id 格式**
 
@@ -70,7 +70,7 @@ ms.locfileid: "59123522"
 |:---------|:----------|:--------------|
 | "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 用命名空间 (GUID) 和字符串名称标识属性。         |
 | "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | 用命名空间 (GUID) 和数字标识符标识属性。   |
-| "{_type_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | 用属性标记标识预定义的属性。 |
+| "{_type_} {_proptag_}"                    | ```"StringArray 0x4002"```                                           | 用属性标记标识预定义的属性。 |
 
 
 使用任一命名属性格式将单值或多值扩展属性定义为自定义属性。 在这两种格式中，第一种采用字符串名称 (**Name**) 的格式是易于参考的首选格式。 命名属性的[属性标识符](/office/client-developer/outlook/mapi/mapi-property-identifier-overview)在 0x8000-0xfffe 范围内。

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a2fe9f45e5d758f8e23b6025d6fddfd9eb62a17f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3c2bee78a5ee4bb6c1999286753db906f827f93d
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132011"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225334"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 

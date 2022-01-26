@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2f06ea5d16e67aaecf6d43717875c01427eccc5b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 54a9c108f2e144f32ecac1f92e6878371ebd45b8
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105280"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225222"
 ---
 # <a name="archive-team"></a>存档团队
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 869f8d25db8677a9488aa93e24f6be08e2092e08
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b30a9eba44c1840de1bab97101df5ebe1b68d2fb
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019631"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225670"
 ---
 # <a name="update-printsettings"></a>更新 printSettings
 
@@ -48,7 +48,7 @@ PATCH /print/settings
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|布尔|指定是否对租户启用文档转换。 如果启用文档转换，则通用打印服务将自动将文档转换为与打印机模式兼容的格式 (例如，XPS 转换为 PDF) 进行打印。|
+|documentConversionEnabled|Boolean|指定是否对租户启用文档转换。 如果启用文档转换，通用打印服务将自动将文档转换为与打印机模式兼容的格式 (例如，XPS 转换为 PDF) 时。|
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回 `204 No Content` 响应代码和空响应正文。
@@ -86,8 +86,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-settings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-settings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-settings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

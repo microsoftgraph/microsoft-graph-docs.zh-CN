@@ -1,20 +1,27 @@
 ---
 title: 枚举值
-description: Microsoft Graph枚举值
+description: Microsoft Graph 枚举值
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3ab14e8814be6145cf19adffde1a37aec0811b6b
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: e300e3ec5d981376b1bc08c3aca3097ecda1ff9a
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161639"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225544"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="accesspackagefilterbycurrentuseroptions-values"></a>accessPackageFilterByCurrentUserOptions 值
+
+|成员|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
 
 ### <a name="usersigninrecommendationscope-values"></a>userSignInRecommendationScope 值 
 
@@ -98,7 +105,7 @@ ms.locfileid: "62161639"
 
 |成员|
 |:----|
-|None|
+|无|
 |UserName|
 |Password|
 |SecretToken|
@@ -224,7 +231,7 @@ ms.locfileid: "62161639"
 |整数|
 |参考|
 |Binary|
-|布尔|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>可变值
@@ -240,7 +247,7 @@ ms.locfileid: "62161639"
 
 |成员|
 |:---|
-|None|
+|无|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -1014,7 +1021,7 @@ ms.locfileid: "62161639"
 |网站|
 |list|
 |listItem|
-|驱动器|
+|drive|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType 值
@@ -1946,7 +1953,7 @@ ms.locfileid: "62161639"
 
 | 成员   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| None | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
+| 无 | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
 | Override | 1 | 发件人已覆盖邮件裁定并发送了该邮件。|
 | ReportFalsePositive | 2 | 发件人将邮件裁定报告给管理员为误报。|
 
@@ -1954,7 +1961,7 @@ ms.locfileid: "62161639"
 
 | 成员   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| None | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
+| 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
 | AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 替代 `AllowOverrideWithJustification` 块。 报告违反误报会自动覆盖阻止并发送邮件。 |
 | AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification` 。 |
 | AllowOverrideWithJustification | 4 |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification` 。|
@@ -2012,7 +2019,7 @@ ms.locfileid: "62161639"
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于其余;例如，共享中的文件。                                 |
 | 动作 | 1     | 数据在运动中。 在传输过程中被网络设备截获的文件。         |
-| use    | 2     | 数据在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
+| use    | 2     | 数据在使用中。 文件在客户端应用程序（如 Microsoft Office）中打开。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 

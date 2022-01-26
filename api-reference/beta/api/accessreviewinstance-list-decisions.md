@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 138d53b3d0c497601b0bdfe50512ca71ddfd68d9
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: a489ffa27cebb0ff2c7f366bafa10429cdaebc01
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161814"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224904"
 ---
 # <a name="list-decisions"></a>列出决策
 命名空间：microsoft.graph
@@ -191,6 +191,8 @@ Content-Type: application/json
 #### <a name="request"></a>请求
 以下示例显示一个请求，请求检索调用用户是审阅者的所有实例和定义的所有决策。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewInstanceDecisionItem_expand"
@@ -198,6 +200,16 @@ Content-Type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')?$expand=instance($expand=definition)
 ```
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-expand-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accessreviewinstancedecisionitem-expand-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
