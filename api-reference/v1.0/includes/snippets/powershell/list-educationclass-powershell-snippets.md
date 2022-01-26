@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b81515b5d00c2adbdf7a2399ea92aca213f8e3d4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 330bdbf72ca687c543e51dcddcbb59fe656e8b83
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117605"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62227521"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClass
+Get-MgEducationUserTaughtClass -EducationUserId $educationUserId
 
 ```

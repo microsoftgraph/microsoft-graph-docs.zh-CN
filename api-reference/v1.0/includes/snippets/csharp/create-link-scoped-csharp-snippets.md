@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 67b49f32999866921afc949d6883d21a05f0d1166161385aa438182805edff63
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fb1b053c3de0a68257ebabac3b2436d84c3e6b92
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163283"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62227517"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var type = "edit";
 var scope = "organization";
 
 await graphClient.Me.Drive.Items["{driveItem-id}"]
-    .CreateLink(type,scope,null,null,null)
+    .CreateLink(type,scope,null,null,null,null)
     .Request()
     .PostAsync();
 
