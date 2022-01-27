@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b5147735cb34a6dc10898257ff76a32ebe0b5b26
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: 3afaf15ced8c5dac79e21aaf92f2b509aae49eb6
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161653"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239160"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 
@@ -25,7 +25,8 @@ ms.locfileid: "62161653"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |应用程序|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必需。 |
-|users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必需。 |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 用户 **或** **clientApplications** 是必需的。 |
+|clientApplications|[conditionalAccessClientApplications](../resources/conditionalaccessclientapplications.md)|客户端应用程序 (服务主体和工作负荷) 包含在策略中以及从策略中排除。 用户 **或** **clientApplications** 是必需的。 |
 |clientAppTypes|conditionalAccessClientApp 集合| 策略中包含的客户端应用程序类型。 可取值为：`all`、`browser`、`mobileAppsAndDesktopClients`、`exchangeActiveSync`、`easSupported`、`other`。 必需。|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| 策略中的设备状态。 |
 |设备|[conditionalAccessDevices](conditionalaccessdevices.md)| 策略中的设备。 |
@@ -65,6 +66,7 @@ ms.locfileid: "62161653"
 {
   "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
+  "clientApplications": {"@odata.type": "microsoft.graph.conditionalAccessClientApplications"},
   "clientAppTypes": ["String"],
   "deviceStates": {"@odata.type": "microsoft.graph.conditionalAccessDeviceStates"},
   "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},

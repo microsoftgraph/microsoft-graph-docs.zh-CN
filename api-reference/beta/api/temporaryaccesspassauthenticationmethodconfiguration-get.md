@@ -5,12 +5,12 @@ author: inbarckms
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4fd5d8274c203ba6be5f063aa41cc295f998628b
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 1058b313eb447d8abe61d5bc25a06b688c58e887
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225894"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239237"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>获取 temporaryAccessPassAuthenticationMethodConfiguration
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "61225894"
 
 读取[temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 租户的临时[](../resources/authenticationmethodspolicies-overview.md)访问传递身份验证方法策略。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -69,11 +69,11 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
     "id": "TemporaryAccessPass",
-    "state": "enabled",
+    "state": "disabled",
     "defaultLifetimeInMinutes": 60,
-    "defaultLength": 12,
+    "defaultLength": 8,
     "minimumLifetimeInMinutes": 60,
-    "maximumLifetimeInMinutes": 1440,
+    "maximumLifetimeInMinutes": 480,
     "isUsableOnce": false,
     "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [

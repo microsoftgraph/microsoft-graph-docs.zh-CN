@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2afb695cf8368484ccbe65d0bcc9d57b016d5786
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 4d691753000e50c397b2dfadbb937c26eb356827
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223258"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239125"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>获取 emailAuthenticationMethodConfiguration
 
@@ -18,9 +18,9 @@ ms.locfileid: "61223258"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 租户的电子邮件[OTP](../resources/authenticationmethodspolicies-overview.md)身份验证方法策略。
+读取[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 的电子邮件[OTP](../resources/authenticationmethodspolicies-overview.md)身份验证方法策略。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "61223258"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 对于委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -109,19 +109,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "value":{
-      "@odata.type":"#microsoft.graph.emailAuthenticationMethodConfiguration",
-      "id":"Email",
-      "state":"enabled",
-      "allowExternalIdToUseEmailOtp":"enabled",
-      "includeTargets":[
-         {
-            "targetType":"group",
-            "id":"all_users",
-            "isRegistrationRequired":false
-         }
-      ]
-   }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
+    "id": "Email",
+    "state": "enabled",
+    "allowExternalIdToUseEmailOtp": "default",
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": []
 }
 ```
 

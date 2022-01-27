@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9c2067a358ea1641b48b81fa4b792654a31072c5
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 70b9bda54de9e1d2f5d0abc4361740198b0a82e2
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696223"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239013"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -110,7 +110,6 @@ ms.locfileid: "58696223"
   "name": "string",
   "owner": {"@odata.type": "microsoft.graph.emailAddress"}
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

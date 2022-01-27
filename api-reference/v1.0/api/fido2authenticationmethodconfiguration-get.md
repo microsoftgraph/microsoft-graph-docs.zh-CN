@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 73129245233a6d9d9e69e04000cc062b3a814ba9
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: d579c3b868640d4f8919c156baffb283fce7223e
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226174"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239335"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>获取 fido2AuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
-检索[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)对象的属性和关系，该对象表示 Azure Active Directory (Azure AD) 租户的 FIDO2 安全密钥身份验证方法策略。 [](../resources/authenticationmethodspolicies-overview.md)
+检索[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 租户的 FIDO2 安全密钥身份验证方法策略。 [](../resources/authenticationmethodspolicies-overview.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -103,28 +103,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "value":{
-      "@odata.type":"#microsoft.graph.fido2AuthenticationMethodConfiguration",
-      "id":"Fido2",
-      "state":"enabled",
-      "isSelfServiceRegistrationAllowed":true,
-      "isAttestationEnforced":true,
-      "keyRestrictions":{
-         "isEnforced":false,
-         "enforcementType":"block",
-         "aaGuids":[
-            
-         ]
-      },
-      "includeTargets":[
-         {
-            "targetType":"group",
-            "id":"all_users",
-            "isRegistrationRequired":false,
-            "useForSignIn":true
-         }
-      ]
-   }
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
+    "id": "Fido2",
+    "state": "disabled",
+    "isSelfServiceRegistrationAllowed": true,
+    "isAttestationEnforced": true,
+    "keyRestrictions": {
+        "isEnforced": false,
+        "enforcementType": "block",
+        "aaGuids": []
+    },
+    "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
 }
 ```
 

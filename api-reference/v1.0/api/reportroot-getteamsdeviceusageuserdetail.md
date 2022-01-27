@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 0589d8f4c398814605bacb6eafde26d7df34587f
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: b3f542369e7f39600aa49ea0d37c13d9f0264c15
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123410"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239307"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -46,7 +46,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 |
-| date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 由于此报告仅适用于过去 28 天，{date_value} 应为该范围内的日期。 |
+| date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 由于此报告仅适用于过去 28 天，{date_value} 应为该范围的日期。 |
 
 > **注意：** 需要在 URL 中设置 period 或 date。
 
@@ -65,6 +65,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 CSV 文件包含下面的列标题：
 
 - 报表刷新日期
+- User Id
 - 用户主体名称
 - 上次活动日期
 - 已删除
@@ -118,7 +119,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
+Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

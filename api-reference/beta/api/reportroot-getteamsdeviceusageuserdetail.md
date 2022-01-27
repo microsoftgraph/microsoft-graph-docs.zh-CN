@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: b5acbd22596c335a1b067f27773f3f2e28d4f9a1
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: cf2fdd968cdfc0d94c7b76e8c089ef6491ea7f3c
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123759"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239146"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -71,6 +71,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
 CSV 文件包含下面的列标题。
 
 - 报表刷新日期
+- User Id
 - 用户主体名称
 - 上次活动日期
 - 已删除
@@ -137,7 +138,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
+Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -180,6 +181,7 @@ Content-Length: 374
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
+      "userId": "userId-value", 
       "userPrincipalName": "userPrincipalName-value", 
       "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 

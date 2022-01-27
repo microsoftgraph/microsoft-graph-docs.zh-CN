@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 036f4dce3d3192005a9b99124965830a5b38194a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: cea7a72bce9a87d199b71d7e5c91d8f91f9c8e51
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015802"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239097"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>authenticationMethodsPolicy 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "61015802"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|authenticationMethodConfigurations|[authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md) 集合|表示每个身份验证方法的设置。|
+|authenticationMethodConfigurations|[authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md) 集合|表示每个身份验证方法的设置。 在 `GET /policies/authenticationMethodsPolicy` 时自动展开。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

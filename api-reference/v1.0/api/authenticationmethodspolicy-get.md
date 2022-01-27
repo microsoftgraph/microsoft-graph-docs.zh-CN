@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a80e94da3f7e5a50aee9e8393a03006c8275116e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5d0b90204ce482cce2ee131a499d0f0d12059e17
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098168"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239020"
 ---
 # <a name="get-authenticationmethodspolicy"></a>获取 authenticationMethodsPolicy
 命名空间：microsoft.graph
@@ -116,16 +116,16 @@ Content-Type: application/json
     "id": "authenticationMethodsPolicy",
     "displayName": "Authentication Methods Policy",
     "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
-    "lastModifiedDateTime": "2021-07-02T13:34:13.1991781Z",
+    "lastModifiedDateTime": "2022-01-26T10:47:26.6044384Z",
     "policyVersion": "1.4",
     "registrationEnforcement": {
         "authenticationMethodsRegistrationCampaign": {
-            "snoozeDurationInDays": 2,
-            "state": "enabled",
+            "snoozeDurationInDays": 1,
+            "state": "default",
             "excludeTargets": [],
             "includeTargets": [
                 {
-                    "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                    "id": "all_users",
                     "targetType": "group",
                     "targetedAuthenticationMethod": "microsoftAuthenticator"
                 }
@@ -137,7 +137,7 @@ Content-Type: application/json
         {
             "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
             "id": "Fido2",
-            "state": "enabled",
+            "state": "disabled",
             "isSelfServiceRegistrationAllowed": true,
             "isAttestationEnforced": true,
             "keyRestrictions": {
@@ -164,8 +164,7 @@ Content-Type: application/json
                     "targetType": "group",
                     "id": "all_users",
                     "isRegistrationRequired": false,
-                    "authenticationMode": "any",
-                    "featureSettings": null
+                    "authenticationMode": "any"
                 }
             ]
         },

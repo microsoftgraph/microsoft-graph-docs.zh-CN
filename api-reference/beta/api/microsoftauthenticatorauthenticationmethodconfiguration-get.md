@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 806392315e63b550fd98ddc935ef885d1a9450a9
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: ded7b48e1e76dd95eae4fbb6e4e7f4b01deb3690
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226461"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239300"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a>获取 microsoftAuthenticatorAuthenticationMethodConfiguration
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "61226461"
 
 检索[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)对象的属性和关系，该对象表示 Microsoft Authenticator 租户的 Azure AD 身份验证方法策略。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -102,23 +102,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
-    "id": "129ae788-e788-129a-88e7-9a1288e79a12",
-    "state": "String",
-    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets", 
-    "includeTargets": [ 
-        { 
-            "targetType": "group", 
-            "id": "5c6226ca-d325-4972-9fa8-1861c91f74c0", 
-            "isRegistrationRequired": false, 
-            "authenticationMode": "any", 
-            "numberMatchingRequiredState": "default",
-            "displayLocationInformationRequiredState": "default",
-            "displayAppInformationRequiredState": "default"
-        } 
-    ] 
-  }
+    "id": "MicrosoftAuthenticator",
+    "state": "disabled",
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "authenticationMode": "any",
+            "outlookMobileAllowedState": "default",
+            "displayAppInformationRequiredState": "default",
+            "numberMatchingRequiredState": "default"
+        }
+    ]
 }
 ```
 

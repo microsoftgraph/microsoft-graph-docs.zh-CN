@@ -5,12 +5,12 @@ author: danielwood95
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8a7ec101618bfb4f0fb7d0cc2f968913731e66a2
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 895d2a6a744fe2233fecaf9252962354bd963771
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224761"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239129"
 ---
 # <a name="get-userregistrationdetails"></a>获取 userRegistrationDetails
 命名空间：microsoft.graph
@@ -108,19 +108,18 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.userRegistrationDetails",
-    "id": "6832a83d-2ef9-c5f5-9a2d-f2761d7ff317",
-    "userDisplayName": "Abbe Smith",
-    "userPrincipalName": "abbe@contoso.com",
-    "isMfaRegistered": "true",
-    "isMfaCapable": "true",
-    "isSsprRegistered": "true",
-    "isSsprEnabled": "false",
-    "isSsprCapable": "false",
-    "isPasswordlessCapable": "false",
+    "id": "86462606-fde0-4fc4-9e0c-a20eb73e54c6",
+    "userPrincipalName": "AlexW@Contoso.com",
+    "userDisplayName": "Alex Wilber",
+    "isSsprRegistered": false,
+    "isSsprEnabled": false,
+    "isSsprCapable": false,
+    "isMfaRegistered": true,
+    "isMfaCapable": true,
+    "isPasswordlessCapable": false,
     "methodsRegistered": [
-      "mobilePhone",
-      "email"
+    "microsoftAuthenticatorPush",
+      "softwareOneTimePasscode"
     ]
   }
 }

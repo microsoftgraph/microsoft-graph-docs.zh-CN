@@ -5,20 +5,20 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e6a453d6993f00b4c39ef72befc6add16071402b
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 596afa411778190bd3f264d3dc37ed6515f142d9
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223913"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239321"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>获取 emailAuthenticationMethodConfiguration
 
 命名空间：microsoft.graph
 
-读取[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 租户的电子邮件[OTP](../resources/authenticationmethodspolicies-overview.md)身份验证方法策略。
+读取[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 的电子邮件[OTP](../resources/authenticationmethodspolicies-overview.md)身份验证方法策略。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -107,11 +107,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
     "id": "Email",
     "state": "enabled",
-    "allowExternalIdToUseEmailOtp": "enabled"
-  }
+    "allowExternalIdToUseEmailOtp": "default",
+    "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": []
 }
 ```

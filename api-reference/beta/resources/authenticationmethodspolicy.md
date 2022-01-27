@@ -2,15 +2,15 @@
 title: authenticationMethodsPolicy 资源类型
 description: 定义身份验证方法以及允许使用这些方法登录并执行 MFA (多重) 。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: fdf86929b4098d9fb62f1426883b55d95c669f32
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 470e9cb94fc6145fde98aaa6e35a3b99aef66f8e
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682880"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239363"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>authenticationMethodsPolicy 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "52682880"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义身份验证方法以及允许使用它们登录和在 Azure AD) 中 (MFA) 执行Azure Active Directory (身份验证) 。
+定义身份验证方法以及允许使用它们登录并执行 MFA 中 MFA (多重) Azure Active Directory (Azure AD) 。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -39,7 +39,7 @@ ms.locfileid: "52682880"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|authenticationMethodConfigurations|[authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md) 集合|表示每个身份验证方法的设置。|
+|authenticationMethodConfigurations|[authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md) 集合|表示每个身份验证方法的设置。 在 `GET /policies/authenticationMethodsPolicy` 时自动展开。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

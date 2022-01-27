@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 38995c4717d83a4ac74c75b1189fa65dfb0e8908
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0c59e08d67eae74cc17a28a98761799602ebda1d
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134229"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239181"
 ---
 # <a name="get-teamworkbot"></a>获取 teamworkBot
 
@@ -25,7 +25,7 @@ ms.locfileid: "62134229"
 |:---|:---|
 |委派（工作或学校帐户）| AppCatalog.Read.All、AppCatalog.ReadWrite.All、AppCatalog.Submit |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|应用程序| 不支持。|
+|应用程序| AppCatalog.Read.All、AppCatalog.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

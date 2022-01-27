@@ -2,22 +2,29 @@
 title: authenticationMethodConfigurations
 description: authenticationMethodConfigurations 对象。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 691184b1dfbf0323204debd70488d232d77b4f7a
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 8ea9d69b724be32eff0f9d6bafc4ef1bff7c33a7
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761133"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239118"
 ---
 # <a name="authenticationmethodconfiguration-resource-type"></a>authenticationMethodConfiguration 资源类型
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示身份验证方法策略。
+这是一个抽象类型，表示每个身份验证方法的设置。 它可配置租户是启用还是禁用特定身份验证方法，以及哪些用户和组可以注册和使用该方法。
+
+以下身份验证方法派生自 **authenticationMethodConfiguration** 资源类型：
++ [emailAuthenticationMethodConfiguration](emailauthenticationmethodconfiguration.md)
++ [fido2AuthenticationMethodConfiguration](fido2authenticationmethodconfiguration.md)
++ [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
++ [smsAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [temporaryAccessPassAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

@@ -422,7 +422,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置人员见解
+                  - name: 设置见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -516,7 +516,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置人员见解
+              - name: 设置见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -604,7 +604,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -1850,7 +1850,7 @@ items:
             href: resources/project-rome-overview.md
           - name: '列出已弃 (的用户) '
             href: api/user-list-devices.md
-          - name: '发送设备命令 (已弃) '
+          - name: '发送设备 (已弃) '
             href: api/send-device-command.md
           - name: '获取设备命令状态 (已弃) '
             href: api/get-device-command-status.md
@@ -6835,7 +6835,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows Defender 防篡改保护选项
+                  - name: Windows防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -11367,7 +11367,7 @@ items:
                   - name: 角色分配
                     href: resources/unifiedroleassignment.md
                     items:
-                      - name: 列表角色分配
+                      - name: 列出角色分配
                         href: api/rbacapplication-list-roleassignments.md
                       - name: 创建角色分配
                         href: api/rbacapplication-post-roleassignments.md
@@ -11512,7 +11512,7 @@ items:
                         href: api/softwareOathAuthenticationMethod-get.md
                       - name: 删除
                         href: api/softwareOathAuthenticationMethod-delete.md
-                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃) '
+                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃用) '
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: 列表
@@ -12221,21 +12221,21 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: 用户流属性分配
                     items:
-                      - name: 用户流属性分配
+                      - name: 用户
                         href: resources/identityuserflowattributeassignment.md
-                      - name: 获取用户流属性分配
+                      - name: 获取
                         href: api/identityuserflowattributeassignment-get.md
-                      - name: 更新用户流属性分配
+                      - name: 更新
                         href: api/identityuserflowattributeassignment-update.md
-                      - name: 删除用户流属性分配
+                      - name: 删除
                         href: api/identityuserflowattributeassignment-delete.md
                   - name: 用户流语言配置
                     items:
                       - name: 用户流语言配置
                         href: resources/userflowlanguageconfiguration.md
-                      - name: 获取 userFlowLanguageConfiguration
+                      - name: 获取用户流语言配置
                         href: api/userflowlanguageconfiguration-get.md
-                      - name: 删除 userFlowLanguageConfiguration
+                      - name: 删除用户流语言配置
                         href: api/userflowlanguageconfiguration-delete.md
                       - name: 列出 defaultPages
                         href: api/userflowlanguageconfiguration-list-defaultpages.md
@@ -12243,11 +12243,11 @@ items:
                         href: api/userflowlanguageconfiguration-list-overridespages.md
                       - name: 用户流语言页面
                         href: resources/userflowlanguagepage.md
-                      - name: 获取 userFlowLanguagePage
+                      - name: 获取用户流语言页面
                         href: api/userflowlanguagepage-get.md
-                      - name: 更新 userFlowLanguagePage
+                      - name: 更新用户流语言页面
                         href: api/userflowlanguagepage-put.md
-                      - name: 删除 userFlowLanguagePage
+                      - name: 删除用户流语言页面
                         href: api/userflowlanguagepage-delete.md
                   - name: API 连接器
                     items:
@@ -13361,7 +13361,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置人员见解
+                  - name: 设置见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -14187,7 +14187,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
