@@ -1,16 +1,16 @@
 ---
 title: List appliesTo
 description: 获取 homeRealmDiscoveryPolicy 对象已应用到的 directoryObject 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 31ea1eb539dc22dce69c3330d641c67188318067
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b94a6501cc7c51947ec61da50afcf2e3b07df5e2
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040971"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262085"
 ---
 # <a name="list-appliesto"></a>List appliesTo
 
@@ -18,7 +18,7 @@ ms.locfileid: "52040971"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象已应用到的[directoryObject](../resources/directoryObject.md)对象的列表。 homeRealmDiscoveryPolicy 只能应用于 [servicePrincipal](../resources/serviceprincipal.md) 资源。
+获取 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象已应用到的 [directoryObject](../resources/directoryObject.md) 对象的列表。 homeRealmDiscoveryPolicy 只能应用于 [servicePrincipal](../resources/serviceprincipal.md) 资源。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 和 `$select` `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 
 ## <a name="response"></a>响应
 
-如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
+如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。 如果策略 `404 Not Found` 尚未应用于任何目录对象，则返回 响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -69,7 +69,7 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/6c6f154f-cb39-4ff9-bf5b-62d5ad585cde/appliesTo
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appliesto-2-csharp-snippets.md)]
@@ -108,12 +108,58 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "deletedDateTime": "datetime-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.servicePrincipal",
+            "id": "19c308f2-e088-464d-8ccb-7137b7bab660",
+            "accountEnabled": true,
+            "alternativeNames": [],
+            "appDisplayName": "LinkedIn",
+            "appId": "c8e5820f-8e41-4b7c-8937-42777eb592a4",
+            "appOwnerOrganizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "displayName": "LinkedIn",
+            "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=linkedin|ISV9.3|primary|z",
+            "servicePrincipalNames": [
+                "c8e5820f-8e41-4b7c-8937-42777eb592a4",
+                "http://LinkedIn/1a2d95c1-3cc7-46ad-82dd-2c768ae1b4ff"
+            ],
+            "servicePrincipalType": "Application",
+            "signInAudience": "AzureADMyOrg",
+            "tags": [
+                "4d57f64e-9941-4df2-bb70-8d9a2a38ab91",
+                "WindowsAzureActiveDirectoryGalleryApplicationPrimaryV1",
+                "WindowsAzureActiveDirectoryIntegratedApp"
+            ],
+            "appRoles": [
+                {
+                    "allowedMemberTypes": [
+                        "User"
+                    ],
+                    "description": "msiam_access",
+                    "displayName": "msiam_access",
+                    "id": "01c2bb8e-0895-42c8-b950-3ec8abc7a012",
+                    "isEnabled": true,
+                    "origin": "Application",
+                    "value": null
+                }
+            ],
+            "keyCredentials": [],
+            "oauth2PermissionScopes": [
+                {
+                    "adminConsentDescription": "Allow the application to access LinkedIn on behalf of the signed-in user.",
+                    "adminConsentDisplayName": "Access LinkedIn",
+                    "id": "6edde65d-3f90-4251-9df2-0329b678b368",
+                    "isEnabled": true,
+                    "type": "User",
+                    "userConsentDescription": "Allow the application to access LinkedIn on your behalf.",
+                    "userConsentDisplayName": "Access LinkedIn",
+                    "value": "user_impersonation"
+                }
+            ],
+            "passwordCredentials": []
+        }
+    ]
 }
 ```
 

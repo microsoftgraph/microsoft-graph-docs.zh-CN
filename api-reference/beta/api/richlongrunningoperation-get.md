@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: df3d59e7f97392e5289e6c823336e93eda77e962
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 38877c302bcb437a5fc551b83bbd37a31249ba2b
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225822"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262216"
 ---
 # <a name="get-richlongrunningoperation"></a>获取 richLongRunningOperation
 命名空间：microsoft.graph
@@ -105,17 +105,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.richLongRunningOperation",
-    "id": "0x0101,contentTypeCopy",
-    "createdDateTime": "String (timestamp)",
-    "resourceLocation": "String",
-    "status": "String",
-    "statusDetail": "String",
-    "percentageComplete": "Integer",
-    "resourceId": "String",
-    "type": "String"
-  }
+  "id": "contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE",
+  "createdDateTime": "2022-01-24T16:28:23Z",
+  "resourceId": "0x010100298A15181454D84EBB62EDD7559FCBFE",
+  "resourceLocation": "https://graph.microsoft.com/beta/sites/5b3ea0e2-5fed-45ab-a8b8-7f7cd97189d6/contentTypes/0x010100298A15181454D84EBB62EDD7559FCBFE",
+  "status": "succeeded",
+  "type": "contentTypeCopy"
 }
 ```
 

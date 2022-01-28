@@ -5,19 +5,19 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: f4540c9479446d2a204e8f1744e3653f80763619
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 81af50f680c9aefeb94920ed9bfb34077ec5e561
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225943"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262146"
 ---
 # <a name="list-operations"></a>列举操作
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取与网站 [关联的 richLongRunningOperations](../resources/richlongrunningoperation.md) [列表](../resources/site.md)。
+获取与网站关联的 [richLongRunningOperations](../resources/richlongrunningoperation.md) [列表](../resources/site.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ GET /sites/{siteId}/operations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [richLongRunningOperation](../resources/richlongrunningoperation.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [richLongRunningOperation](../resources/richlongrunningoperation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -107,14 +107,12 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.richLongRunningOperation",
-      "id": "0x0101,contentTypeCopy",
-      "createdDateTime": "String (timestamp)",
-      "resourceLocation": "String",
-      "status": "String",
-      "percentageComplete": "Integer",
-      "resourceId": "String",
-      "type": "String"
+      "id": "contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE",
+      "createdDateTime": "2022-01-24T16:28:23Z",
+      "resourceId": "0x010100298A15181454D84EBB62EDD7559FCBFE",
+      "resourceLocation": "https://graph.microsoft.com/beta/sites/5b3ea0e2-5fed-45ab-a8b8-7f7cd97189d6/contentTypes/0x010100298A15181454D84EBB62EDD7559FCBFE",
+      "status": "succeeded",
+      "type": "contentTypeCopy"
     }
   ]
 }

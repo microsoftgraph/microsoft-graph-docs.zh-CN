@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a6e78242b75ea676a0e149706130b56ae16eb5ee
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 64406625dfcb8b4472a79a0fba694f4bb7d916d6
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095634"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262139"
 ---
 # <a name="list-cloudpcs"></a>列出 cloudPCs
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 、 `$filter` 和 `$count` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select`、 `$filter` 和 `$count` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,7 +57,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [cloudPC](../resources/cloudpc.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [cloudPC](../resources/cloudpc.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -119,6 +119,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPC",
+      "aadDeviceId": "f5ff445f-7488-40f8-8ab9-ee784a9c1f33",
       "id": "662009bc-7732-4f6f-8726-25883518ffff",
       "displayName": "Demo-1",
       "imageDisplayName": "Windows-10 19h1-evd",
@@ -129,6 +130,7 @@ Content-Type: application/json
       "onPremisesConnectionName": "on-Premises connection for HR",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
+      "servicePlanType": "enterprise",
       "status": "provisioned",
       "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",

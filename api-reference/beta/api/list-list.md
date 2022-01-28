@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: 获取网站列表的集合。
-ms.date: 09/11/2017
 title: 列出网站中的 SharePoint 列表
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 48496f3189dac6bf55fd4449837aec4ce5210cbc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9c3d4f1f29ce44a9a59324885303bc486450b17c
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105947"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262169"
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
 
@@ -21,8 +20,12 @@ ms.locfileid: "62105947"
 
 获取 [site][] 的 [lists][] 的集合。
 
+默认情况下，将隐藏包含 [system][] Facet 的列表。
+若要列出它们，请在 `$select` 语句中添加 `system`。
+
 [lists]: ../resources/list.md
 [site]: ../resources/site.md
+[system]: ../resources/systemfacet.md
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +45,7 @@ GET /sites/{site-id}/lists
 
 ## <a name="example"></a>示例
 
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +81,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -111,13 +114,6 @@ Content-type: application/json
   ]
 }
 ```
-
-## <a name="remarks"></a>注解
-
-默认情况下，将隐藏包含 [system][] Facet 的列表。
-若要列出它们，请在 `$select` 语句中添加 `system`。
-
-[system]: ../resources/systemfacet.md
 
 <!--
 {

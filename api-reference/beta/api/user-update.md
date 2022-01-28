@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e4d98181e8d426249d47f096684334c1e7601647
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1c01c643153e113be0ead9a67ea75e3aaa53ec91
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118030"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262230"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -78,7 +78,7 @@ PATCH /users/{id | userPrincipalName}
 |officeLocation|String|用户公司地点的办公室位置。|
 | onPremisesExtensionAttributes | [onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md) | 包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，这组属性集的授权来源是本地，并且为只读。 这些扩展属性也称 Exchange 自定义属性 1-15。|
 |onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，在 Graph 中创建新用户帐户时必须指定此属性。**重要事项：** 指定该属性时不能使用 **$** 和 **_** 字符。                            |
-|otherMails|String |用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。|
+|otherMails|字符串集合|用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。|
 |passwordPolicies|String|指定用户的密码策略。此值是一个枚举，其中一个可能的值为 `DisableStrongPassword`，这允许指定比默认策略更弱的密码。也可指定 `DisablePasswordExpiration`。两者可以一起指定，例如：`DisablePasswordExpiration, DisableStrongPassword`。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。<br><br>必须为调用用户分配 *Directory.AccessAsUser.All* 委派权限才能更新此属性。 无法仅使用应用程序权限更新此属性。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
@@ -94,10 +94,10 @@ PATCH /users/{id | userPrincipalName}
 |userPrincipalName|String|用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中 domain 必须位于租户的已验证域集合中。 可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。 <br>注意：此属性不能包含突出字符。 仅支持使用以下字符：`A - Z`、`a - z`、`0 - 9`、` ' . - _ ! # ^ ~`。 有关允许字符的完整列表，请参阅[用户名策略](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts)。|
 |userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。          |
 
-由于 **用户** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作在现有用户实例的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
+由于 **用户** 资源 [支持扩展](/graph/extensibility-overview)`PATCH`，因此可以使用 操作在现有用户实例的扩展的自定义属性中添加、更新或删除你自己的特定于 **应用** 的数据。
 
 > [!NOTE] 
-> 仅具有应用程序权限的应用无法更新以下属性：aboutMe、birthday、employeeHireDate、interests、mySite、pastProjects、preferredName、responsibilities、schools和 **skills。**        
+> 仅具有应用程序权限的应用无法更新以下属性： **aboutMe**、 **birthday**、 **employeeHireDate**、 **interests**、 **mySite**、 **pastProjects**、 **preferredName**、 **responsibilities**、 **schools** 和 **skills**。
 
 ## <a name="response"></a>响应
 
@@ -293,7 +293,7 @@ HTTP/1.1 204 No Content
 
 若要分配自定义安全属性，必须为调用主体分配"属性分配管理员"角色，并且必须授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。
 
-有关用户的更多示例，请参阅使用 Microsoft Graph API 分配、更新[或删除自定义安全属性](/graph/custom-security-attributes-examples)。
+有关用户的更多示例，请参阅使用 Microsoft Graph API 分配、更新或删除[自定义安全属性](/graph/custom-security-attributes-examples)。
 
 #### <a name="request"></a>请求
 

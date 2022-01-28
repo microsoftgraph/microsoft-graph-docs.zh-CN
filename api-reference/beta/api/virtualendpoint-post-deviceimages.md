@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 174cb16055f1979ac322b2c2bd667ddcd941038e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e3a0150ee0912f57bf57f356ae18f6370b8ce5b1
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122532"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262132"
 ---
 # <a name="create-cloudpcdeviceimage"></a>创建 cloudPcDeviceImage
 
@@ -64,7 +64,7 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -142,6 +142,8 @@ Content-Type: application/json
   "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage",
   "lastModifiedDateTime": "2020-11-03T07:03:44.97Z",
   "status": "pending",
-  "statusDetails": null
+  "statusDetails": null,
+  "osStatus":"supported",
+  "expirationDate":"2022-11-10"
 }
 ```

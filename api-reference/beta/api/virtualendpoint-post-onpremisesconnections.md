@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e9eeab06e60cc565826e6e24b46ba0269f3386da
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2a820d7def58d956d275e17c0e7cf92e771535ef
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125102"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262069"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>创建 cloudPcOnPremisesConnection
 
@@ -56,23 +56,25 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|本地显示名称的基础结构。|
-|subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
-|adDomainName|String|要加入的 Active Directory (完全限定) FQDN。|
-|adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：admin@contoso.com。|
-|adDomainPassword|String|与 adDomainUsername 关联的密码。|
-|resourceGroupId|String|目标资源组的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
-|virtualNetworkId|String|目标虚拟网络的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
+|displayName|String|内部显示名称连接的连接。|
+|type|cloudPcOnPremisesConnectionType|指定预配的云电脑如何加入 Azure Active Directory。 默认值为 `hybridAzureADJoin`。 可取值为：`azureADJoin`、`hybridAzureADJoin`、`unknownFutureValue`。|
+|subscriptionId|字符串|与租户关联的目标 Azure 订阅的 ID。|
+|adDomainName|String|要加入的 Active Directory (的完全限定域名) FQDN。|
+|adDomainUsername|字符串|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户和服务帐户。 所需格式：admin@contoso.com。|
+|adDomainPassword|字符串|与 adDomainUsername 关联的密码。|
+|resourceGroupId|字符串|目标资源组的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
+|virtualNetworkId|字符串|目标虚拟网络的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
 |subnetId|String|目标子网的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -87,15 +89,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
-  "displayName": "Display Name value",
+  "displayName": "test-canary-02",
+  "type": "hybridAzureADJoin",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-  "subscriptionName": "Subscription Name value",
-  "adDomainName": "Active Directory Domain Name value",
-  "adDomainUsername": "Active Directory Domain User Name value",
-  "organizationalUnit": "Organization Unit value",
-  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
-  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
-  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
+  "subscriptionName": "CPC customer 001 test subscription",
+  "adDomainName": "contoso001.com",
+  "adDomainUsername": "dcadmin",
+  "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
+  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
+  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
+  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -127,7 +130,8 @@ Content-Type: application/json
 
 ### <a name="response"></a>响应
 
-**注意：** 下面是一个响应示例。 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -142,15 +146,16 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "ac2ad805-167e-49ee-9bef-196c4ce7ffff",
-  "displayName": "Display Name value",
+  "displayName": "test-canary-02",
+  "type": "hybridAzureADJoin",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-  "subscriptionName": "Subscription Name value",
-  "adDomainName": "Active Directory Domain Name value",
-  "adDomainUsername": "Active Directory Domain User Name value",
-  "organizationalUnit": "Organization Unit value",
-  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
-  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
-  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
+  "subscriptionName": "CPC customer 001 test subscription",
+  "adDomainName": "contoso001.com",
+  "adDomainUsername": "dcadmin",
+  "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
+  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
+  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
+  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",
   "healthCheckStatus": "pending"
 }
 ```

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6776366567752dd4f72fce596e51bc5eeeea3f1b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 874020c2e3435dbe4239e28c802946570de8df1f
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092800"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262062"
 ---
 # <a name="list-deviceimages"></a>列出 deviceImages
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` `$filter` 和 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` 和 `$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,7 +57,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -122,7 +122,9 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
       "id": "eda7ed64-7705-4079-9d08-c2bd883fffff",
       "displayName": "Display Name value",
+      "expirationDate": "2022-11-10",
       "osBuildNumber": "OS Build Number value",
+      "osStatus": "supported",
       "operatingSystem": "Operating System value",
       "version": "Version value",
       "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Compute/images/ExampleImage",
