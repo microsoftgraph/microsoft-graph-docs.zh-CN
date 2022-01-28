@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 36c7ea1a43c8e55fd4b6cbe92360a7f088f19da9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 22156bd00fcac68d8da38e465a40225b96eec702
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127615"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261950"
 ---
 # <a name="list-homerealmdiscoverypolicies"></a>列出 homeRealmDiscoveryPolicy
 
@@ -35,12 +35,12 @@ ms.locfileid: "62127615"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET policies/homeRealmDiscoveryPolicies
+GET /policies/homeRealmDiscoveryPolicies
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$expand` 、 `$filter` 和 `$select` `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保应用请求读取扩展对象的权限。
+此方法支持使用 `$expand`、 `$filter`和 `$select` `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 `$expand`使用 时，请确保应用请求读取扩展对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET policies/homeRealmDiscoveryPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -116,16 +116,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "definition": [
-        "definition-value"
-      ],
-      "displayName": "displayName-value",
-      "isOrganizationDefault": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/homeRealmDiscoveryPolicies",
+    "value": [
+        {
+            "id": "8f865ec2-2b02-405f-91e7-cb580dfdfa56",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"HomeRealmDiscoveryPolicy\":     {\"AccelerateToFederatedDomain\":true,      \"PreferredDomain\":\"federated.example.edu\",      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+            ],
+            "displayName": "displayName-value",
+            "isOrganizationDefault": true
+        }
+    ]
 }
 ```
 

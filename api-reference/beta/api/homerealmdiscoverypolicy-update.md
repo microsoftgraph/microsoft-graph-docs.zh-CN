@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8c7f41b3b92275d5ddb3cb66600f30aec2814a16
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: af92deb72f515008bce7c229fe644178c2f87388
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127600"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261943"
 ---
 # <a name="update-homerealmdiscoverypolicy"></a>更新 homerealmdiscoverypolicy
 
@@ -49,12 +49,12 @@ PATCH /policies/homeRealmDiscoveryPolicies/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|definition|String 集合| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。  必需。|
-|description|String| 此策略的说明。|
+|definition|字符串集合| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。  必需。|
+|description|字符串| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
-|isOrganizationDefault|布尔|如果设置为 true，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认策略。 可选，默认值为 false。|
+|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认策略。 可选，默认值为 false。|
 
 ## <a name="response"></a>响应
 
@@ -77,11 +77,13 @@ PATCH https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
+    "definition": [
+    "{\"HomeRealmDiscoveryPolicy\":
+     {\"AccelerateToFederatedDomain\":true,
+      \"PreferredDomain\":\"federated.example.edu\",
+      \"AlternateIdLogin\":{\"Enabled\":true}}}"
   ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true
+    "displayName": "Contoso default HRD Policy"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -115,26 +117,13 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
-
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.homeRealmDiscoveryPolicy"
+  "truncated": true
 } -->
 
 ```http
 HTTP/1.1 204 No Content
-Content-type: application/json
-
-{
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
-}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

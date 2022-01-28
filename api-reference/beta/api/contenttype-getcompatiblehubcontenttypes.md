@@ -5,19 +5,21 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 675722b02361a0231a4ba66109fd4e20029f1658
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 0457265d9c6db8cf8207a3a440bf89b3d10bc2d2
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225238"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261992"
 ---
 # <a name="contenttype-getcompatiblehubcontenttypes"></a>contentType： getCompatibleHubContentTypes
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取可添加到目标网站或列表的内容类型集线器[中的兼容](../resources/site.md)[内容类型](../resources/list.md)。
+获取可添加到目标网站或列表的内容类型中心[中的兼容内容](../resources/site.md)[类型](../resources/list.md)。
+
+此方法是内容类型发布更改的一部分，可优化已发布内容类型到网站和列表的同步，从而有效地从"推送无处不在"切换到"根据需要拉取"方法。 此方法允许用户将内容类型直接从内容类型中心拉取到站点或列表。 有关详细信息，请参阅 [addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) 和博客文章 [Syntex Product Updates – August 2021](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -104,11 +106,12 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.contentType",
-      "id": "String (identifier)",
-      "description": "String",
-      "group": "String",
-      "isBuiltIn": "Boolean",
-      "name": "String"
+      "id": "0x0101",
+      "description": "Document content type",
+      "group": "Document Content Types",
+      "hidden": false,
+      "isBuiltIn": true,
+      "name": "Document"
     }
   ]
 }

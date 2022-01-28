@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f55ca58f634e6f5a7b97d8bb6c5f1d2030ea2e5d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 351e3505d1385e5c302f124c68d423b51b2ced0b
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102874"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261789"
 ---
 # <a name="create-homerealmdiscoverypolicy"></a>创建 homeRealmDiscoveryPolicy
 
@@ -35,7 +35,7 @@ ms.locfileid: "62102874"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST policies/homeRealmDiscoveryPolicies
+POST /policies/homeRealmDiscoveryPolicies
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -51,7 +51,7 @@ POST policies/homeRealmDiscoveryPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -70,11 +70,14 @@ POST https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
+    "definition": [
+    "{\"HomeRealmDiscoveryPolicy\":
+     {\"AccelerateToFederatedDomain\":true,
+      \"PreferredDomain\":\"federated.example.edu\",
+      \"AlternateIdLogin\":{\"Enabled\":true}}}"
   ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true
+    "displayName": "displayName-value",
+    "isOrganizationDefault": true
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -121,12 +124,14 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/homeRealmDiscoveryPolicies/$entity",
+    "id": "8f865ec2-2b02-405f-91e7-cb580dfdfa56",
+    "deletedDateTime": null,
+    "definition": [
+        "{\"HomeRealmDiscoveryPolicy\":     {\"AccelerateToFederatedDomain\":true,      \"PreferredDomain\":\"federated.example.edu\",      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+    ],
+    "displayName": "displayName-value",
+    "isOrganizationDefault": true
 }
 ```
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bf5437fb697f7c8a584cea4e3724bd214f394f01
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4a3d1544e168fb59b312c4a318a5a648e49ee91c
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110918"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262188"
 ---
 # <a name="create-homerealmdiscoverypolicy"></a>创建 homeRealmDiscoveryPolicy
 
@@ -35,7 +35,7 @@ ms.locfileid: "62110918"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST policies/homeRealmDiscoveryPolicies
+POST /policies/homeRealmDiscoveryPolicies
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -71,11 +71,14 @@ POST https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
+    "definition": [
+    "{\"HomeRealmDiscoveryPolicy\":
+     {\"AccelerateToFederatedDomain\":true,
+      \"PreferredDomain\":\"federated.example.edu\",
+      \"AlternateIdLogin\":{\"Enabled\":true}}}"
   ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true
+    "displayName": "displayName-value",
+    "isOrganizationDefault": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -122,12 +125,14 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/homeRealmDiscoveryPolicies/$entity",
+    "id": "8f865ec2-2b02-405f-91e7-cb580dfdfa56",
+    "deletedDateTime": null,
+    "definition": [
+        "{\"HomeRealmDiscoveryPolicy\":     {\"AccelerateToFederatedDomain\":true,      \"PreferredDomain\":\"federated.example.edu\",      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+    ],
+    "displayName": "displayName-value",
+    "isOrganizationDefault": true
 }
 ```
 

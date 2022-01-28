@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 78722ab52b729b3708b9fc53509c865083a89694
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4b7fd0a48f1e6b71c74ed8015ebedcb883cfcf9f
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110293"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262195"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -73,7 +73,7 @@ PATCH /users/{id | userPrincipalName}
 |officeLocation|String|用户公司地点的办公室位置。|
 | onPremisesExtensionAttributes | [onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md) | 包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，这组属性集的授权来源是本地，并且为只读。 这些扩展属性也称 Exchange 自定义属性 1-15。|
 |onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，在 Graph 中创建新用户帐户时必须指定此属性。**重要事项：** 指定该属性时不能使用 **$** 和 **_** 字符。                            |
-|otherMails|String |用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。|
+|otherMails|字符串集合 |用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。|
 |passwordPolicies|String|指定用户的密码策略。此值是一个枚举，其中一个可能的值为 `DisableStrongPassword`，这允许指定比默认策略更弱的密码。也可指定 `DisablePasswordExpiration`。两者可以一起指定，例如：`DisablePasswordExpiration, DisableStrongPassword`。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。不能用于联合用户。<br><br> 必须为调用用户分配 *Directory.AccessAsUser.All* 委派权限才能更新此属性。 无法仅使用应用程序权限更新此属性。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。|

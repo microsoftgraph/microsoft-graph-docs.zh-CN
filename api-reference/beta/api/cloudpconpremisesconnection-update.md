@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: fa4ec1dac69c728b5322b875cc3ed32fe52059cb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e94f25e60df83997442c46bb4720cfd0c71a3cdf
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106709"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261964"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>更新 cloudPcOnPremisesConnection
 
@@ -19,7 +19,7 @@ ms.locfileid: "62106709"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 [cloudPcOnPremisesConnection 对象](../resources/cloudpconpremisesconnection.md) 的属性。
-本地连接通过运行状况检查（由 属性指示）后 `healthCheckStatus` ，将无法更新它。
+本地连接通过运行状况检查（由 `healthCheckStatus` 属性指示）后，将无法更新它。
 
 
 ## <a name="permissions"></a>权限
@@ -58,18 +58,19 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|本地显示名称的基础结构。|
-|subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
-|adDomainName|String|要加入的 Active Directory (完全限定) FQDN。|
-|adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：username@contoso.com。|
-|adDomainPassword|String|与 adDomainUsername 关联的密码。|
-|resourceGroupId|String|目标资源组的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
-|virtualNetworkId|String|目标虚拟网络的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
+|displayName|String|内部显示名称连接的连接。|
+|type|cloudPcOnPremisesConnectionType|指定预配的云电脑如何加入 Azure Active Directory。 默认值为 `hybridAzureADJoin`。 可取值为：`azureADJoin`、`hybridAzureADJoin`、`unknownFutureValue`。|
+|subscriptionId|字符串|与租户关联的目标 Azure 订阅的 ID。|
+|adDomainName|String|要加入的 Active Directory (的完全限定域名) FQDN。|
+|adDomainUsername|字符串|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户和服务帐户。 所需格式：username@contoso.com。|
+|adDomainPassword|字符串|与 adDomainUsername 关联的密码。|
+|resourceGroupId|字符串|目标资源组的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
+|virtualNetworkId|字符串|目标虚拟网络的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
 |subnetId|String|目标子网的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -145,6 +146,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdcc4ffff",
+  "type": "hybridAzureADJoin", 
   "displayName": "Display Name value",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
   "subscriptionName": "Subscription Name value",

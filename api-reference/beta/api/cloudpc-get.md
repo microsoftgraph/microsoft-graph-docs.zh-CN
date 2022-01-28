@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: d2cb7ae6c21f42e55855801b6b77957b242b5620
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a1817833600676775a93b2b993a43365b6b81856
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125949"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261901"
 ---
 # <a name="get-cloudpc"></a>获取 cloudPC
 
@@ -61,18 +61,22 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-get-the-default-properties-of-a-cloud-pc"></a>示例 1：获取云电脑的默认属性
+
+#### <a name="request"></a>请求
+
+请求示例如下所示。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpc"
+  "name": "get_cloudpc_default_properties"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9ec90ff8-fd63-4fb9-ab5a-aa4fdcc43ec9
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-csharp-snippets.md)]
@@ -101,13 +105,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_cloudpc",
+  "name": "get_cloudpc_default_properties",
   "@odata.type": "microsoft.graph.cloudPC"
 }
 -->
@@ -118,6 +123,7 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPC",
+    "aadDeviceId": "f5ff445f-7488-40f8-8ab9-ee784a9c1f33",
     "id": "ac74ae8b-85f7-4272-88cc-54192674ffff",
     "displayName": "Demo-0",
     "imageDisplayName": "Windows-10 19h1-evd",
@@ -128,6 +134,7 @@ Content-Type: application/json
     "onPremisesConnectionName": "on-Premises connection for Marketing",
     "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cffff",
     "servicePlanName": "standard",
+    "servicePlanType": "enterprise",
     "status": "failed",
     "statusDetails": {
     "@odata.type": "microsoft.graph.cloudPcStatusDetails",
@@ -144,5 +151,58 @@ Content-Type: application/json
     "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
+}
+```
+
+### <a name="example-2-get-the-selected-properties-of-a-cloud-pc"></a>示例 2：获取云电脑的选定属性
+
+#### <a name="request"></a>请求
+
+请求示例如下所示。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpc_selected_properties"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_cloudpc_selected_properties",
+  "@odata.type": "microsoft.graph.cloudPC"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.cloudPC",
+    "id": "ac74ae8b-85f7-4272-88cc-54192674ffff",
+    "displayName": "Demo-0",
+    "imageDisplayName": "Windows-10 19h1-evd",
+    "lastModifiedDateTime": "2020-11-03T18:14:34Z",
+    "lastLoginResult": {
+        "time": "2021-06-23T09:28:32.8260335Z"
+    },
+    "lastRemoteActionResult": {
+      "actionName": "Reboot",
+      "actionState": "done",
+      "startDateTime": "2021-06-23T09:28:32.8260335Z",
+      "lastUpdatedDateTime": "2021-06-23T09:28:32.8260338Z",
+      "cloudPcId": "662009bc-7732-4f6f-8726-25883518b33e",
+      "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
+      "statusDetails": null
+    }
 }
 ```

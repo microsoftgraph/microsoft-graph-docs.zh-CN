@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d237a4d3368f16947531fa30cd4ba0af601ea3ea
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e9c83c991db949fabe745870ef708f1ca4aa921f
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114727"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262111"
 ---
 # <a name="list-homerealmdiscoverypolicies"></a>列出 homeRealmDiscoveryPolicy
 
@@ -35,7 +35,7 @@ ms.locfileid: "62114727"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET policies/homeRealmDiscoveryPolicies
+GET /policies/homeRealmDiscoveryPolicies
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -117,16 +117,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "definition": [
-        "definition-value"
-      ],
-      "displayName": "displayName-value",
-      "isOrganizationDefault": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/homeRealmDiscoveryPolicies",
+    "value": [
+        {
+            "id": "8f865ec2-2b02-405f-91e7-cb580dfdfa56",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"HomeRealmDiscoveryPolicy\":     {\"AccelerateToFederatedDomain\":true,      \"PreferredDomain\":\"federated.example.edu\",      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+            ],
+            "displayName": "displayName-value",
+            "isOrganizationDefault": true
+        }
+    ]
 }
 ```
 

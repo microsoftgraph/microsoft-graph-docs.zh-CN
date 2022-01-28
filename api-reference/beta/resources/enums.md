@@ -1,16 +1,16 @@
 ---
 title: 枚举值
-description: Microsoft Graph 枚举值
+description: Microsoft Graph枚举值
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: e300e3ec5d981376b1bc08c3aca3097ecda1ff9a
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: f05bbd5eadcbff53cc91eba9a2847aca6c91b765
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225544"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261936"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -1481,7 +1481,7 @@ ms.locfileid: "62225544"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | 参考
 
 
@@ -1669,7 +1669,7 @@ ms.locfileid: "62225544"
 
 ### <a name="registryhive-values"></a>registryHive 值
 
-由 定义的注册表配置单元枚举 [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives) 。
+由 定义的注册表配置单元枚举 [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives)。
 
 | 成员                  | 值 | 说明                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -1679,7 +1679,7 @@ ms.locfileid: "62225544"
 | localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM配置单元。      |
 | localMachineSamSoftware | 4     | HKEY_LOCAL_MACHINE\Software配置单元。 |
 | localMachineSystem      | 5     | HKEY_LOCAL_MACHINE\System配置单元。   |
-| usersDefault            | 6      | HKEY_USERS \\ 。DEFAULT 配置单元。        |
+| usersDefault            | 6      | \\HKEY_USERS。DEFAULT 配置单元。        |
 
 ### <a name="registryoperation-values"></a>registryOperation 值
 
@@ -1694,7 +1694,7 @@ ms.locfileid: "62225544"
 
 ### <a name="registryvaluetype-values"></a>registryValueType 值
 
-由注册表值类型定义的注册表 [值类型的枚举](/windows/desktop/sysinfo/registry-value-types)。
+由注册表值类型定义的 [注册表值类型的枚举](/windows/desktop/sysinfo/registry-value-types)。
 
 | 成员            | 值 | 说明                                  |
 | :---------------- | :---- | :------------------------------------------- |
@@ -1962,9 +1962,9 @@ ms.locfileid: "62225544"
 | 成员   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
 | 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
-| AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 替代 `AllowOverrideWithJustification` 块。 报告违反误报会自动覆盖阻止并发送邮件。 |
-| AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification` 。 |
-| AllowOverrideWithJustification | 4 |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification` 。|
+| AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式替代`AllowOverrideWithoutJustification``AllowOverrideWithJustification`块。 报告违反误报会自动覆盖阻止并发送邮件。 |
+| AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification`。 |
+| AllowOverrideWithJustification | 4 |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification`。|
 
 ### <a name="entitytype-values"></a>entityType 值
 
@@ -2019,7 +2019,7 @@ ms.locfileid: "62225544"
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于其余;例如，共享中的文件。                                 |
 | 动作 | 1     | 数据在运动中。 在传输过程中被网络设备截获的文件。         |
-| use    | 2     | 数据在使用中。 文件在客户端应用程序（如 Microsoft Office）中打开。 |
+| use    | 2     | 数据在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
@@ -2228,8 +2228,8 @@ ms.locfileid: "62225544"
 
 | 成员                       | 值 | 说明                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
-| threatCategory               | 1     | 聚合威胁评估请求 `threatCategory` 。               |
-| mailDestinationRoutingReason | 2     | 聚合威胁评估请求 `mailDestinationRoutingReason` 。 |
+| threatCategory               | 1     | 聚合威胁评估请求。`threatCategory`               |
+| mailDestinationRoutingReason | 2     | 聚合威胁评估请求。`mailDestinationRoutingReason` |
 
 ### <a name="userflowtype-values"></a>userFlowType 值
 
@@ -2298,8 +2298,8 @@ ms.locfileid: "62225544"
 
 | 成员                | 值 | 说明                                                                                                                                                                                                        |
 |:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 已配置            | 0     | 具有此状态值的已连接组织包含在具有请求者作用域类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。                                                          |
-| 已建议              | 1     | 由系统自动创建的已连接组织具有此状态值。 它们不包含在具有请求者作用域类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。   |
+| 已配置            | 0     | 具有此状态值的已连接组织包含在具有请求者作用域类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects`。                                                          |
+| 已建议              | 1     | 由系统自动创建的已连接组织具有此状态值。 它们不包含在具有请求者作用域类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects`。   |
 | unknownFutureValue    | 2     | sentinel 成员。                                                                                                                                                                                                 |
 
 ### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType 值
@@ -2777,6 +2777,70 @@ ms.locfileid: "62225544"
 |staff|
 |customer|
 |unknownFutureValue|
+
+### <a name="teamworkconnectionstatus-values"></a>teamworkConnectionStatus 值
+
+| 成员 |
+|:--------|
+|unknown|
+|connected|
+|已断开连接|
+|unknownFutureValue|
+
+### <a name="teamworkdeviceactivitystate-values"></a>teamworkDeviceActivityState 值
+
+| 成员 | 值| 说明 |
+|:---------------|:--------|:----------|
+|unknown|0|未知状态。|
+|忙碌|1|设备正忙。|
+|idle|2|设备处于空闲状态。|
+|不可用|3|设备不可用。|
+|unknownFutureValue|4|可发展枚举 sentinel 值。 请勿使用。|
+
+### <a name="teamworkdeviceoperationtype-values"></a>teamworkDeviceOperationType 值
+
+| 成员 | 值| 说明 |
+|:---------------|:--------|:----------|
+|deviceRestart|0|重新启动设备。|
+|configUpdate|1|更新设备配置。|
+|deviceDiagnostics|2|获取设备日志。|
+|softwareUpdate|3|更新设备上的软件。|
+|deviceManagementAgentConfigUpdate|4|更新设备代理配置。|
+|remoteLogin|5|设备远程登录。|
+|remoteLogout|6 |设备远程注销。|
+|unknownFutureValue|7 |可发展枚举 sentinel 值。 请勿使用。|
+
+### <a name="teamworksoftwarefreshness-values"></a>teamworkSoftwareFreshness 值
+
+| 成员 | 值| 说明 |
+|:---------------|:--------|:----------|
+|unknown|0|未知值。|
+|latest|1|指示设备组件是否运行最新版本的软件。|
+|updateAvailable|2|指示软件更新可用于设备组件。|
+|unknownFutureValue|3|可发展枚举 sentinel 值。 请勿使用。|
+
+### <a name="teamworksoftwaretype-values"></a>teamworkSoftwareType 值
+
+| 成员 |
+|:---------------|
+|adminAgent|
+|operatingSystem|
+|teamsClient|
+|固件|
+|partnerAgent|
+|companyPortal|
+|unknownFutureValue|
+
+### <a name="teamworksupportedclient-values"></a>teamworkSupportedClient 值
+
+| 成员 | 值| 说明 |
+|:---------------|:--------|:----------|
+|unknown|0|未知值。|
+|skypeDefaultAndTeams|1|支持 和 `Skype` `Teams`。 默认值为“`Skype`”。|
+|teamsDefaultAndSkype|2|支持 和 `Skype` `Teams`。 默认值为“`Teams`”。|
+|skypeOnly|3|仅支持 `Skype`。|
+|teamsOnly|4|仅支持 `Teams`。|
+|unknownFutureValue|5|可发展枚举 sentinel 值。 请勿使用。|
 
 ### <a name="longrunningoperationstatus-values"></a>longRunningOperationStatus 值
 
