@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c03900468268c903db79e122dc4f02fc1d5b7222
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 56a6d97dbaba0a66e2d30d0a9afea481f78063e5
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860913"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261761"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1330,7 +1330,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -2090,6 +2090,22 @@ _任务_ 权限用于控制对待办事项任务和 Outlook 任务（已弃用�
 | _TeamsAppInstallation.ReadForTeam.All_ | 读取为所有团队安装的 Teams 应用| 允许应用读取任何团队中安装的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。| 是 |
 | _TeamsAppInstallation.ReadWriteForTeam.All_ | 管理所有团队的 Teams 应用| 允许应用在没有登录用户的情况下读取、安装、更新和卸载任何团队中的 Teams 应用。不允许读取特定于应用程序的设置。| 是 |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_ | 允许 Teams 应用为所有团队管理其自身| 允许 Teams 应用在没有登陆用户的情况下在任何团队中读取、安装、更新和卸载其自身。| 是 |
+
+## <a name="teams-device-management-permissions"></a>Teams 设备管理权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkDevice.Read.All_ | 读取 Teams 设备。 | 允许应用代表已登录用户读取 Teams 设备的管理数据。   | 是 | 否 |
+| _TeamworkDevice.ReadWrite.All_ | 读取和写入 Teams 设备。 | 允许应用代表已登录用户读取和写入 Teams 设备的管理数据。  | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkDevice.Read.All_ | 读取 Teams 设备。 | 允许应用在没有登录用户的情况下读取 Teams 设备的管理数据。 | 是 | 否 |
+| _TeamworkDevice.ReadWrite.All_ | 读取和写入 Teams 设备。 | 允许应用在没有登录用户的情况下读取和写入 Teams 设备的管理数据。 | 是 | 否 |
 
 ## <a name="team-member-permissions"></a>团队成员权限 
 

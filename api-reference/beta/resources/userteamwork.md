@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 89ad4d479135972c0bbcfa14163a750ba10841a3
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: ff6a364ed21286d2fb01791bc0ccef0997f3ab5f
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695593"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262223"
 ---
 # <a name="userteamwork-resource-type"></a>userTeamwork 资源类型
 
@@ -19,6 +19,11 @@ ms.locfileid: "58695593"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 适用于租户中每个用户可用的 Microsoft Teams 功能范围的容器。
+
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
+|:---|:---|:---|
+|[列出 installedApps](../api/userteamwork-list-installedapps.md)|[teamsAppInstallation](../resources/teamsappinstallation.md) 集合|检索在指定用户的个人范围内安装的应用列表。|
 
 ## <a name="properties"></a>属性
 
@@ -62,4 +67,6 @@ ms.locfileid: "58695593"
 }
 -->
 
+## <a name="see-also"></a>另请参阅
 
+- [teamwork 资源类型](teamwork.md)
