@@ -4,12 +4,12 @@ description: 了解适用于 Microsoft Graph 中的 Microsoft Teams API 的许�
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8edb5bc5e35c5c48d61a8e1d48ca724f023a5d8d
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: e3f8637bc55c6cd1cb9055d6b914063b8980e858
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072654"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262104"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Microsoft Graph 中 Microsoft Teams API 的许可和付款要求
 
@@ -20,7 +20,8 @@ ms.locfileid: "62072654"
 - [`model=A`](#modela-requirements) 限于执行[安全或合规性功能](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms)或需要[受支持的许可证](#required-licenses-for-modela)的应用程序。
 将来，应用还需要为其在[种子设定容量](#seeded-capacity)之外使用的消息付费。
 
-- [`model=B`](#modelb-requirements) 现在可以免费使用，但是，在将来，应用将根据它们使用的消息数向你收费。 `model=B` 没有许可要求，并且不限于执行安全性或合规性功能的应用程序。
+- [`model=B`](#modelb-requirements)仅限于不执行[安全或合规性功能](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms)的应用程序。 
+[`model=B`](#modelb-requirements) 现在可以免费使用，但是，在将来，应用将根据它们使用的消息数向你收费。 `model=B` 没有许可要求。
 
 - [评估模式（默认）](#evaluation-mode-default-requirements)可以访问 API 进行评估，每个请求应用程序的使用量有限。 如果超出限制，则不会发送更改通知。
 
@@ -28,7 +29,7 @@ ms.locfileid: "62072654"
 
 `model=A` 限于执行安全性或符合性功能的应用程序。 有关详细信息，请参阅 [Microsoft Azure Services 产品条款](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms)的安全与合规性应用程序部分的 API 条款。
 
-|API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | 其他用途的价格 | 备注 |
+|API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | [其他用途的价格](#price-for-additional-use) | 备注 |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage 更改通知](/graph/api/subscription-post-subscriptions) | 邮件发件人 | 每个应用每个月每个用户 800 条消息 | 每条消息 0.00075 美元 | 种子设定容量与 conversationMember 更改通知共享 |
 | [conversationMember 更改通知](/graph/api/subscription-post-subscriptions) | 租户中的任何用户 | 每个应用每个月每个用户 800 条通知  | 每条通知 0.00075 美元 | 种子设定容量与 chatMessage 更改通知共享 |
@@ -38,9 +39,11 @@ ms.locfileid: "62072654"
 
 ## <a name="modelb-requirements"></a>`model=B` 要求
 
+`model=B` 仅限于不执行安全或合规性功能的应用程序。 有关详细信息，请参阅 [Microsoft Azure Services 产品条款](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms)的安全与合规性应用程序部分的 API 条款。
+
 >**注意：** [ `model=B`](#modelb-requirements) 现在可以免费使用，但将来应用将根据其使用的消息数收费。 
 
-|API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | 其他用途的价格 | 备注 |
+|API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | [其他用途的价格](#price-for-additional-use) | 备注 |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage 更改通知](/graph/api/subscription-post-subscriptions) | 不适用 | 无 | 每条消息 0.00075 美元 |  |
 | [conversationMember 更改通知](/graph/api/subscription-post-subscriptions) | 不适用 | 无  | 每条通知 0.00075 美元 | |
@@ -49,7 +52,7 @@ ms.locfileid: "62072654"
 
 ## <a name="evaluation-mode-default-requirements"></a>评估模式（默认）要求
 
-|API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | 其他用途的价格 | 备注 |
+|API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | [其他用途的价格](#price-for-additional-use) | 备注 |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage 更改通知](/graph/api/subscription-post-subscriptions) |  不适用 | 每个应用每月 500 条消息 | 不适用 |
 | [conversationMember 更改通知](/graph/api/subscription-post-subscriptions) | 不适用 | 每个应用每月 500 条消息 | 不适用 | 
