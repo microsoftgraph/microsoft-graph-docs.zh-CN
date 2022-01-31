@@ -4,20 +4,20 @@ description: 您可以使用 Microsoft 搜索 API 获取搜索查询的拼写建
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: a16c1e0a69e202ca34c1c52c176a15c0b5da7e88
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c672af903811af716ae7c597bdc748974d24a1e2
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071726"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282182"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>使用 Microsoft Microsoft 搜索 中的 Graph API 请求拼写更正 (预览) 
 
-您可以使用 Microsoft 搜索 API 请求拼写更正，以处理用户查询中的拼写错误与匹配内容中的正确单词之间的不匹配。 若要请求拼写更正，在查询方法的请求正文的 **queryAlterationOptions** 属性中指定 [以下](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 属性：
+您可以使用 Microsoft 搜索 API 请求拼写更正，以处理用户查询中的拼写错误与匹配内容中的正确单词之间的不匹配。 若要请求拼写更正，在 [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) 的 **queryAlterationOptions** 属性中指定以下属性：
 
 - **enableSuggestion** 为用户查询启用/禁用拼写建议。 您可以通过传递 `true` 获取用户查询中拼写错误的建议拼写更正信息。
 
-- **enableModification** 为用户查询启用/禁用拼写修改。 当原始查询没有拼写错误的结果时，可以通过传递 获取更正的查询的搜索结果，并 `true` 获取相应的更正信息。 
+- **enableModification** 为用户查询启用/禁用拼写修改。 当原始`true`查询没有拼写错误的结果时，可以通过传递 获取更正的查询的搜索结果，并获取相应的更正信息。
 
 如果同时启用了拼写修改，则其优先级高于拼写建议。
 
@@ -45,13 +45,13 @@ Content-Type: application/json
                 "queryString": "accountt"
             },
             "from": 0,
-            "size": 25
+            "size": 25,
+            "queryAlterationOptions": {
+                "enableSuggestion": true,
+                "enableModification": false
+            }
         }
-    ],
-    "queryAlterationOptions": {
-        "enableSuggestion": true,
-        "enableModification": false
-    }
+    ]
 }
 ```
 
@@ -73,26 +73,26 @@ Content-type: application/json
                     "total": 0,
                     "moreResultsAvailable": false
                 }
-            ]
+            ],
+            "queryAlterationResponse": {
+                "@odata.type": "#microsoft.substrateSearch.alterationResponse",
+                "originalQueryString": "accountt",
+                "queryAlteration": {
+                    "@odata.type": "#microsoft.substrateSearch.searchAlteration",
+                    "alteredQueryString": "account",
+                    "alteredHighlightedQueryString": "account",
+                    "alteredQueryTokens": [
+                        {
+                            "offset": 0,
+                            "length": 8,
+                            "suggestion": "account"
+                        }
+                    ]
+                },
+                "queryAlterationType": "Suggestion"
+            }
         }
-    ],
-    "queryAlterationResponse": {
-        "@odata.type": "#microsoft.substrateSearch.alterationResponse",
-        "originalQueryString": "accountt",
-        "queryAlteration": {
-            "@odata.type": "#microsoft.substrateSearch.searchAlteration",
-            "alteredQueryString": "account",
-            "alteredHighlightedQueryString": "account",
-            "alteredQueryTokens": [
-                {
-                    "offset": 0,
-                    "length": 8,
-                    "suggestion": "account"
-                }
-            ]
-        },
-        "queryAlterationType": "Suggestion"
-    }
+    ]
 }
 ```
 
@@ -118,13 +118,13 @@ Content-Type: application/json
                 "queryString": "accountt"
             },
             "from": 0,
-            "size": 25
+            "size": 25,
+            "queryAlterationOptions": {
+                "enableSuggestion": true,
+                "enableModification": true
+            }
         }
-    ],
-    "queryAlterationOptions": {
-        "enableSuggestion": true,
-        "enableModification": true
-    }
+    ]
 }
 ```
 
@@ -180,32 +180,32 @@ Content-type: application/json
                         }
                     ]
                 }
-            ]
+            ],
+            "queryAlterationResponse": {
+                "@odata.type": "#microsoft.substrateSearch.alterationResponse",
+                "originalQueryString": "accountt",
+                "queryAlteration": {
+                    "@odata.type": "#microsoft.substrateSearch.searchAlteration",
+                    "alteredQueryString": "account",
+                    "alteredHighlightedQueryString": "account",
+                    "alteredQueryTokens": [
+                        {
+                            "offset": 0,
+                            "length": 8,
+                            "suggestion": "account"
+                        }
+                    ]
+                },
+                "queryAlterationType": "Modification"
+            }
         }
-    ],
-    "queryAlterationResponse": {
-        "@odata.type": "#microsoft.substrateSearch.alterationResponse",
-        "originalQueryString": "accountt",
-        "queryAlteration": {
-            "@odata.type": "#microsoft.substrateSearch.searchAlteration",
-            "alteredQueryString": "account",
-            "alteredHighlightedQueryString": "account",
-            "alteredQueryTokens": [
-                {
-                    "offset": 0,
-                    "length": 8,
-                    "suggestion": "account"
-                }
-            ]
-        },
-        "queryAlterationType": "Modification"
-    }
+    ]
 }
 ```
 
 ## <a name="known-limitations"></a>已知限制
 
-拼写更正仅支持以下资源：message、event、site、drive、driveItem、list、listItem和 **externalItem**。    
+拼写更正仅支持以下资源： **message**、 **event**、 **site**、 **drive**、 **driveItem**、 **list**、 **listItem** 和 **externalItem**。
 
 ## <a name="next-steps"></a>后续步骤
 

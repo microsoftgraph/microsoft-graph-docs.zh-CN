@@ -2,12 +2,13 @@
 author: jasonjoh
 ms.topic: include
 ms.date: 11/15/2019
-ms.openlocfilehash: 1d057059bd913ae42ce97e519edc0f1fe5cf8e97bec9bb02827b33da2435d688
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
-ms.translationtype: HT
+ms.localizationpriority: medium
+ms.openlocfilehash: 5df1fa2799e48e594d23d14fe2d77eb6f6774f69
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163739"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "62282029"
 ---
 <!-- markdownlint-disable MD041-->
 

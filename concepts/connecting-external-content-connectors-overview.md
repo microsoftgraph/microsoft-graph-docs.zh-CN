@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 1b5cf1dd38a6d60e0211663330ebfd8d3f282c9a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: d87e316200f2cc6fc1cc8632151361ede9d16a57
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61076920"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282014"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Microsoft Graph 连接器概述
 
@@ -39,5 +39,3 @@ Microsoft 和合作伙伴当前提供的 100 多个连接器可用于连接到�
 * [使用连接器 API](connecting-external-content-connectors-api-overview.md)
 * [将 Postman 与 Microsoft Graph 连接器 API 一并使用](connecting-external-content-connectors-api-postman.md)
 * [生成你的第一个自定义 Microsoft Graph 连接器](connecting-external-content-build-quickstart.yml)
---->
-

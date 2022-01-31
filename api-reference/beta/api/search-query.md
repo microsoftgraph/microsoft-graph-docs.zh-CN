@@ -1,16 +1,16 @@
 ---
 title: searchEntity： query
-description: 运行请求正文中指定的查询。 响应中提供了搜索结果
+description: 运行指定的搜索查询。 响应中提供了搜索结果。
 ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 29414d21d939e5ac9280df9c6641a293d77eab90
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 398ae83ba928f81a22688b39b9399e08c1f4066b
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031988"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282170"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 
@@ -18,11 +18,11 @@ ms.locfileid: "61031988"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-运行请求正文中指定的查询。 响应中提供了搜索结果。
+运行指定的搜索查询。 响应中提供了搜索结果。
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。 
 
@@ -52,11 +52,10 @@ POST /search/query
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |requests|[searchRequest](../resources/searchrequest.md) 集合|一个或多个搜索请求的集合，每个搜索请求的格式都为 JSON blob。 每个 JSON blob 都包含响应中预期的资源类型、基础源、分页参数、请求的字段和实际搜索查询。 <br> 请注意搜索 [实体](../resources/search-api-overview.md#known-limitations) 类型的特定组合以及排序或聚合搜索结果的已知限制。 |
-|queryAlterationOptions|[searchAlterationOptions](../resources/searchalterationoptions.md)|JSON blob 中格式化的查询更改选项，其中包含用于拼写更正的两个可选标志。 可选。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) 对象。
+如果成功，此方法在响应 `HTTP 200 OK` 正文中返回 响应代码和 [searchResponse](../resources/searchresponse.md) 对象集合。
  
 
 ## <a name="examples"></a>示例
@@ -113,7 +112,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/search-query-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/search-query-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -167,8 +166,8 @@ Content-type: application/json
 - 搜索 [邮件](/graph/search-concept-messages)
 - 搜索 [日历事件](/graph/search-concept-events)
 - 搜索 [人员](/graph/search-concept-person)
-- 搜索网站[SharePoint OneDrive (、列表和网站) ](/graph/search-concept-files)
-- 搜索[连接器 (Graph数据的) ](/graph/search-concept-custom-types)类型
+- 搜索网站SharePoint和OneDrive ([文件、列表和网站) ](/graph/search-concept-files)
+- 搜索[连接器 (Graph自定义) ](/graph/search-concept-custom-types)数据
 - [对](/graph/search-concept-sort) 搜索结果进行排序
 - 使用 [聚合](/graph/search-concept-aggregations) 优化搜索结果
 - 在 [搜索结果中启用](/graph/search-concept-speller) 拼写更正

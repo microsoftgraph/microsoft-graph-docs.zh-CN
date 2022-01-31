@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f99e9a204e3db2703d7e1126a78dba6baae9cb1c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9c5161a610854fcd85ad1d1bce6c6eda843f1f64
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130632"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282169"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -37,7 +37,7 @@ ms.locfileid: "62130632"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取用户邮箱中的所有联系人，请执行以下操作：
+若要获取用户的默认"联系人"文件夹中的所有联系人，请执行以下操作：
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/contact.md) 代码和 contact 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [contact](../resources/contact.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 以下示例获取 **已登录** 用户的联系人的 **displayName 和 emailAddresses** 属性。

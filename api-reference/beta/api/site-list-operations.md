@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 81af50f680c9aefeb94920ed9bfb34077ec5e561
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: f9504ee561c69d51a2e4fb065d99cfaca07a914b
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262146"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282189"
 ---
 # <a name="list-operations"></a>列举操作
 命名空间：microsoft.graph
@@ -22,8 +22,6 @@ ms.locfileid: "62262146"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最低特权到最高特权）|
-|:---|:---|
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|

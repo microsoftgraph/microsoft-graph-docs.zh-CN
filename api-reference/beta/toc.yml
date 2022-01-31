@@ -460,7 +460,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -560,7 +560,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -1850,7 +1850,7 @@ items:
             href: resources/project-rome-overview.md
           - name: '列出已弃 (的用户) '
             href: api/user-list-devices.md
-          - name: '发送设备 (已弃) '
+          - name: '发送已 (的设备命令) '
             href: api/send-device-command.md
           - name: '获取设备命令状态 (已弃) '
             href: api/get-device-command-status.md
@@ -11367,7 +11367,7 @@ items:
                   - name: 角色分配
                     href: resources/unifiedroleassignment.md
                     items:
-                      - name: 列表角色分配
+                      - name: 列出角色分配
                         href: api/rbacapplication-list-roleassignments.md
                       - name: 创建角色分配
                         href: api/rbacapplication-post-roleassignments.md
@@ -11512,7 +11512,7 @@ items:
                         href: api/softwareOathAuthenticationMethod-get.md
                       - name: 删除
                         href: api/softwareOathAuthenticationMethod-delete.md
-                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃) '
+                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃用) '
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: 列表
@@ -12121,7 +12121,7 @@ items:
                     href: api/trustframeworkpolicy-delete.md
               - name: 用户流
                 items:
-                  - name: '用户流 (弃用) '
+                  - name: '用户流 (弃) '
                     items:
                       - name: 用户流
                         href: resources/identityuserflow.md
@@ -12827,6 +12827,26 @@ items:
                 href: api/outlookcategory-update.md
               - name: 删除类别
                 href: api/outlookcategory-delete.md
+          - name: 扩展属性
+            items:
+              - name: 概述
+                href: resources/extended-properties-overview.md
+              - name: 单值扩展属性
+                items:
+                  - name: 单值扩展属性
+                    href: resources/singlevaluelegacyextendedproperty.md
+                  - name: 创建单值属性
+                    href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+                  - name: 获取单值属性
+                    href: api/singlevaluelegacyextendedproperty-get.md
+              - name: 多值扩展属性
+                items:
+                  - name: 多值扩展属性
+                    href: resources/multivaluelegacyextendedproperty.md
+                  - name: 创建多值属性
+                    href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+                  - name: 获取多值属性
+                    href: api/multivaluelegacyextendedproperty-get.md
           - name: 重点收件箱
             href: resources/manage-focused-inbox.md
             items:
@@ -12897,26 +12917,6 @@ items:
                 href: api/messagerule-update.md
               - name: 删除规则
                 href: api/messagerule-delete.md
-          - name: 扩展属性
-            items:
-              - name: 概述
-                href: resources/extended-properties-overview.md
-              - name: 单值扩展属性
-                items:
-                  - name: 单值扩展属性
-                    href: resources/singlevaluelegacyextendedproperty.md
-                  - name: 创建单值属性
-                    href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-                  - name: 获取单值属性
-                    href: api/singlevaluelegacyextendedproperty-get.md
-              - name: 多值扩展属性
-                items:
-                  - name: 多值扩展属性
-                    href: resources/multivaluelegacyextendedproperty.md
-                  - name: 创建多值属性
-                    href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-                  - name: 获取多值属性
-                    href: api/multivaluelegacyextendedproperty-get.md
       - name: 注释
         displayName: OneNote
         items:
@@ -13029,7 +13029,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置见解
+              - name: 设置人员见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -13059,7 +13059,7 @@ items:
                     href: api/useraccountinformation-update.md
                   - name: 删除
                     href: api/useraccountinformation-delete.md
-              - name: 地址
+              - name: Addresses
                 items:
                   - name: 项目地址
                     href: resources/itemaddress.md
@@ -13185,7 +13185,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 注释
+              - name: 备注
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -13361,7 +13361,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置见解
+                  - name: 设置人员见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -13575,7 +13575,7 @@ items:
                         href: api/authenticationmethodsroot-list-userregistrationdetails.md
                       - name: 获取
                         href: api/userregistrationdetails-get.md
-          - name: Microsoft 365使用情况报告
+          - name: Microsoft 365使用率报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -14121,26 +14121,26 @@ items:
                 href: api/contenttype-update.md
               - name: 删除
                 href: api/contenttype-delete.md
+              - name: 将副本添加到列表
+                href: api/contenttype-addcopy.md
+              - name: 从中心添加或同步
+                href: api/contenttype-addcopyfromcontenttypehub.md
+              - name: 与中心网站关联
+                href: api/contenttype-associatewithhubsites.md
               - name: 检查发布状态
                 href: api/contenttype-ispublished.md
+              - name: 复制到默认内容位置
+                href: api/contenttype-copytodefaultcontentlocation.md
+              - name: 创建列
+                href: api/contenttype-post-columns.md
+              - name: 从中心获取兼容性
+                href: api/contenttype-getcompatiblehubcontenttypes.md
+              - name: 列出列
+                href: api/contenttype-list-columns.md
               - name: 发布
                 href: api/contenttype-publish.md
               - name: 取消发布
                 href: api/contenttype-unpublish.md
-              - name: 将副本添加到列表
-                href: api/contenttype-addcopy.md
-              - name: 与中心网站关联
-                href: api/contenttype-associatewithhubsites.md
-              - name: 复制到默认内容位置
-                href: api/contenttype-copytodefaultcontentlocation.md
-              - name: 列出列
-                href: api/contenttype-list-columns.md
-              - name: 创建列
-                href: api/contenttype-post-columns.md
-              - name: 获取兼容的中心
-                href: api/contenttype-getcompatiblehubcontenttypes.md
-              - name: 从中心添加副本
-                href: api/contenttype-addcopyfromcontenttypehub.md
           - name: 列表项目
             items:
               - name: 列表项
@@ -14155,28 +14155,38 @@ items:
                 href: api/listitem-update.md
               - name: 删除项目
                 href: api/listitem-delete.md
-              - name: 列出版本
-                href: api/listitem-list-versions.md
-              - name: 获取项分析
-                href: api/itemanalytics-get.md
-              - name: 按间隔获取活动
-                href: api/itemactivity-getbyinterval.md
               - name: 创建共享链接
                 href: api/listitem-createlink.md
+              - name: 按间隔获取活动
+                href: api/itemactivity-getbyinterval.md
+              - name: 获取项分析
+                href: api/itemanalytics-get.md
+              - name: 列出版本
+                href: api/listitem-list-versions.md
           - name: 页面
             items:
               - name: 网站页面
                 href: resources/sitepage.md
-              - name: 列表
+              - name: 列出
                 href: api/sitepage-list.md
-              - name: 获取
-                href: api/sitepage-get.md
               - name: 创建
                 href: api/sitepage-create.md
+              - name: 获取
+                href: api/sitepage-get.md
               - name: 删除
                 href: api/sitepage-delete.md
               - name: 发布
                 href: api/sitepage-publish.md
+          - name: 丰富的长时间运行操作
+            items:
+              - name: 丰富的长时间运行操作
+                href: resources/richLongRunningOperation.md
+              - name: 列出网站中的操作
+                href: api/site-list-operations.md
+              - name: 列表中的列表操作
+                href: api/list-list-operations.md
+              - name: 获取操作
+                href: api/richlongrunningoperation-get.md
           - name: 分类
             displayname: Taxonomy API
             items:
@@ -14233,12 +14243,6 @@ items:
                     href: api/termStore-term-list-relations.md
                   - name: 创建
                     href: api/termStore-relation-post.md
-          - name: 丰富的长时间运行操作
-            items:
-              - name: 丰富的长时间运行操作
-                href: resources/richLongRunningOperation.md
-              - name: 获取
-                href: api/richlongrunningoperation-get.md
       - name: 任务和计划
         displayName: Planner
         items:
@@ -14654,7 +14658,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: 从聊天中删除应用
                     href: api/chat-delete-installedapps.md
-          - name: 设备
+          - name: Device
             items:
               - name: 预配的设备
                 href: resources/teamworkdevice.md
@@ -15104,7 +15108,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: 添加附件
                     href: api/outlooktask-post-attachments.md
-              - name: 'Outlook已 (任务文件夹) '
+              - name: 'Outlook任务文件夹 (已弃) '
                 items:
                   - name: Outlook 任务文件夹
                     href: resources/outlooktaskfolder.md
