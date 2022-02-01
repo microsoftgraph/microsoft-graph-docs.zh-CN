@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: d020b4babd2b43012cc3f02d7c0e382e2abb0216
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d0461962933e62edd82462ae0fe7e5ccd93e7161
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134103"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290705"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>删除 cloudPcOnPremisesConnection
 
@@ -24,7 +24,7 @@ ms.locfileid: "62134103"
 
 一旦内部部署连接通过运行状况检查（由 属性指示）后，将无法删除该 `healthCheckStatus` 连接。
 
-如果连接在使用中，则不能删除该连接，如 属性 `inUse` 所指示。
+如果连接在使用中，则不能删除该连接， `inUse` 如 属性所指示。
 
 ## <a name="permissions"></a>权限
 
@@ -105,7 +105,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremi
 
 ### <a name="response"></a>响应
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

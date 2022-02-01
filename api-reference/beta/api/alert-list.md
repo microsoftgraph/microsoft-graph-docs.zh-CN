@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 026eb386beed8b9dc181d9734425f72e2a9719ce
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 116f965baa0e64b55c4b748378165b0004c98a15
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109973"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290768"
 ---
 # <a name="list-alerts"></a>列出警报
 
@@ -53,7 +53,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$top` - 返回每个安全 API 提供商的汇总后顶部结果。
 - `$filter`
 
-下表通过各个供应商的名称列出了 `$filter` 关键词。 尽管其中某些产品已重命名，但尚未更新该 API。 筛选器关键字将继续使用旧名称，直到另行通知为止。 更新内容请参阅 [changelog](https://developer.microsoft.com/en-us/graph/changelog)。
+下表通过各个供应商的名称列出了 `$filter` 关键词。 尽管其中某些产品已重命名，但尚未更新该 API。 筛选器关键字将继续使用旧名称，直到另行通知为止。 更新内容请参阅 [changelog](https://developer.microsoft.com/graph/changelog)。
 
 | 提供商名称      |$filter 关键字|
 |:----------|:----------|

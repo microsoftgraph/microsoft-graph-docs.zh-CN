@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51c4158b46f4fb3cc9a3f90fb01817d019ec2105
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 95472de35e9f49f511c1240c9208d0d390c6dc36
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335094"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291230"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthruntimedetails"></a>更新 userExperienceAnalyticsBatteryHealthRuntimeDetails
 
@@ -54,15 +54,16 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthRuntimeDetails
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析电池运行状况运行时对象的唯一标识符。|
-|activeDevices|Int32|租户中的活动设备数。 有效值 -2147483648 to 2147483647|
-|batteryRuntimeGood|Int32|活动运行时大于 5 小时的设备数量。 有效值 -2147483648 to 2147483647|
-|batteryRuntimeFair|Int32|活动运行时大于 3 小时但小于 5 小时的设备数量。 有效值 -2147483648 to 2147483647|
-|batteryRuntimePoor|Int32|活动运行时小于 3 小时的设备数量。 有效值 -2147483648 to 2147483647|
+|activeDevices|Int32|租户中的活动设备数。 有效值 -2147483648 2147483647|
+|batteryRuntimeGood|Int32|活动运行时大于 5 小时的设备数量。 有效值 -2147483648 2147483647|
+|batteryRuntimeFair|Int32|活动运行时大于 3 小时但小于 5 小时的设备数量。 有效值 -2147483648 2147483647|
+|batteryRuntimePoor|Int32|活动运行时小于 3 小时的设备数量。 有效值 -2147483648 2147483647|
+|lastRefreshedDateTime|DateTimeOffset|此运行时详细信息实例的记录日期时间。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [userExperienceAnalyticsBatteryHealthRuntimeDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [userExperienceAnalyticsBatteryHealthRuntimeDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -71,14 +72,15 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthRuntimeDetails
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthRuntimeDetails
 Content-type: application/json
-Content-length: 200
+Content-length: 265
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthRuntimeDetails",
   "activeDevices": 13,
   "batteryRuntimeGood": 2,
   "batteryRuntimeFair": 2,
-  "batteryRuntimePoor": 2
+  "batteryRuntimePoor": 2,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
 
@@ -87,7 +89,7 @@ Content-length: 200
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 249
+Content-Length: 314
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthRuntimeDetails",
@@ -95,7 +97,8 @@ Content-Length: 249
   "activeDevices": 13,
   "batteryRuntimeGood": 2,
   "batteryRuntimeFair": 2,
-  "batteryRuntimePoor": 2
+  "batteryRuntimePoor": 2,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
 

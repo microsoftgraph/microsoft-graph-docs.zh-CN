@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2e38cebcad02371c4ec1b2455ce871a5fd6d4df
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 99f09f2b3fa23b8313e3a81fbe7202a0865926e5
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118087"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289970"
 ---
 # <a name="get-teamworktagmember"></a>获取 teamworkTagMember
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62118087"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不支持。|
+|委派（工作或学校帐户）|TeamworkTag.Read、TeamworkTag.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|TeamworkTag.Read.All、TeamworkTag.ReadWrite.All|
 
@@ -51,7 +51,7 @@ GET /teams/{team-Id}/tags/{teamworkTag-Id}/members/{teamworkTagMember-Id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [teamworkTagMember](../resources/teamworktagmember.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [teamworkTagMember](../resources/teamworktagmember.md) 对象。
 
 ## <a name="examples"></a>示例
 

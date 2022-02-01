@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d87cdcb43c6afc69a88e22453f87b3519e2ee99
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 58587bc9d72da826703e4c9dfcd58f70acc2900a
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336459"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290761"
 ---
 # <a name="summarizedeviceperformancedevices-function"></a>summarizeDevicePerformanceDevices 函数
 
@@ -57,7 +57,7 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance/summarizeDevicePe
 
 
 ## <a name="response"></a>响应
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 集合。
+如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 集合。
 
 ## <a name="example"></a>示例
 
@@ -82,7 +82,7 @@ Content-Length: 909
       "deviceName": "Device Name value",
       "model": "Model value",
       "manufacturer": "Manufacturer value",
-      "diskType": "hdd",
+      "diskType": "ssd",
       "operatingSystemVersion": "Operating System Version value",
       "bootScore": 9,
       "coreBootTimeInMs": 0,

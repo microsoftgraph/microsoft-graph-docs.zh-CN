@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d5d78d8b3d2d20636c5dfaf9c2860ebb72cc9c7
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 150c1d857c090a729671e77edf1ae136c5878152
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335962"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289886"
 ---
 # <a name="create-devicemanagementconfigurationcategory"></a>创建 deviceManagementConfigurationCategory
 
@@ -55,22 +55,22 @@ POST /deviceManagement/configurationCategories
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|项的标识符|
-|说明|String|项目说明|
-|categoryDescription|String|类别标头的说明|
+|description|String|项目说明|
+|categoryDescription|字符串|类别标头的说明|
 |helpText|String|项目的帮助文本|
-|name|String|项目名称|
-|displayName|String|项目的显示名称|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`。|
+|name|字符串|项目名称|
+|displayName|字符串|项目的显示名称|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`、`linux`、`unknownFutureValue`。|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`、`linuxMdm`、`unknownFutureValue`。|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|指示类别包含用于合规性或配置的设置。 可取值为：`none`、`configuration`、`compliance`。|
-|parentCategoryId|String|类别的父 ID。|
+|parentCategoryId|字符串|类别的父 ID。|
 |rootCategoryId|String|类别的根 ID。|
-|childCategoryIds|字符串集合|类别的子 ID 列表。|
+|childCategoryIds|String 集合|类别的子 ID 列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 对象。
 
 ## <a name="example"></a>示例
 

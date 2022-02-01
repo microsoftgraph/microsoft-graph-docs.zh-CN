@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: 622feed07a5387301be148c926088add62946f25
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 0dd5764332c81b8335258a60736e40e7802f6213
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58694858"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290971"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的 Microsoft Bookings API
 
@@ -29,7 +29,7 @@ Microsoft Bookings 可让企业组织和小型企业所有者以最少量的设�
 
 第一次客户预约之前，请完成以下步骤。 确保为相应的操作提供适当的[访问令牌](/graph/auth-overview)。
 
-1. 确保企业具有 [Microsoft 365 商业高级版](https://products.office.com/en-us/business/office-365-business-premium)订阅。
+1. 确保企业具有 [Microsoft 365 商业高级版](https://products.office.com/business/office-365-business-premium)订阅。
 2. 通过向实体集发送 POST 操作来创建新的 **bookingBusiness**。 至少应为新企业指定客户将看到的名称：
 <!-- { "blockType": "ignored" } -->
 ```http

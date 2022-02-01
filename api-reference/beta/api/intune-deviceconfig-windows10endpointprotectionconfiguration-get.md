@@ -2,15 +2,15 @@
 title: 获取 windows10EndpointProtectionConfiguration
 description: 读取 windows10EndpointProtectionConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf5417593b275cc92f8fef61108e35d2066d183a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a94b272fab504092fc486fca2856372fd5898c5a
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59055204"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291988"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>获取 windows10EndpointProtectionConfiguration
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 32943
+Content-Length: 32950
 
 {
   "value": {
@@ -536,7 +536,7 @@ Content-Length: 32943
     "localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts": true,
     "localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares": true,
     "localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange": true,
-    "localSecurityOptionsSmartCardRemovalBehavior": "noAction",
+    "localSecurityOptionsSmartCardRemovalBehavior": "lockWorkstation",
     "defenderSecurityCenterDisableAppBrowserUI": true,
     "defenderSecurityCenterDisableFamilyUI": true,
     "defenderSecurityCenterDisableHealthUI": true,
@@ -819,6 +819,7 @@ Content-Length: 32943
   }
 }
 ```
+
 
 
 

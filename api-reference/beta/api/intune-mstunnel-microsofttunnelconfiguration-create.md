@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b984348c7f296b2f3c48e8960d3c1e22f6fde1f5
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: e9783d23237339bed4b2d84d7d88bb43c178333e
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343250"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289872"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>创建 microsoftTunnelConfiguration
 
@@ -54,24 +54,24 @@ POST /deviceManagement/microsoftTunnelConfigurations
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|MicrosoftTunnelConfiguration 的 ID|
-|displayName|String|MicrosoftTunnelConfiguration 的 显示名称|
-|description|String|MicrosoftTunnelConfiguration 的说明|
+|displayName|String|MicrosoftTunnelConfiguration 的显示名称|
+|description|字符串|MicrosoftTunnelConfiguration 的说明|
 |network|String|将用于为客户端分配虚拟地址的子网|
-|dnsServers|字符串集合|客户端将使用的 DNS 服务器|
+|dnsServers|String 集合|客户端将使用的 DNS 服务器|
 |defaultDomainSuffix|String|客户端将使用的默认域附录|
-|routesInclude|String collection|服务器将路由的路由|
-|routesExclude|字符串集合|服务器不会路由的路由子集|
+|routesInclude|String 集合|服务器将路由的路由|
+|routesExclude|String 集合|服务器不会路由的路由子集|
 |splitDNS|字符串集合|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
 |advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
-|disableUDPConnections|布尔|设置 DisableUDPConnections 时，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|disableUDPConnections|Boolean|设置 DisableUdpConnections 后，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 

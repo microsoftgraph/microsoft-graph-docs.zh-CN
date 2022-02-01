@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7a0bd69d438c4b681eb6836ed17946d34d57e29
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ee5a5c43f353a5642fe2fe42ef179423d6702208
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341633"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291434"
 ---
 # <a name="create-userexperienceanalyticsmodelscores"></a>创建 userExperienceAnalyticsModelScores
 
@@ -60,12 +60,13 @@ POST /deviceManagement/userExperienceAnalyticsModelScores
 |endpointAnalyticsScore|双精度|用户体验分析模型分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |startupPerformanceScore|双精度|用户体验分析模型启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |appReliabilityScore|双精度|用户体验分析模型应用可靠性分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|workFromAnywhereScore|双精度|用户体验分析模型可随时随地进行评分。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析模型的运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -74,7 +75,7 @@ POST /deviceManagement/userExperienceAnalyticsModelScores
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsModelScores
 Content-type: application/json
-Content-length: 351
+Content-length: 384
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsModelScores",
@@ -84,6 +85,7 @@ Content-length: 351
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
+  "workFromAnywhereScore": 7.0,
   "healthStatus": "insufficientData"
 }
 ```
@@ -93,7 +95,7 @@ Content-length: 351
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 400
+Content-Length: 433
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsModelScores",
@@ -104,6 +106,7 @@ Content-Length: 400
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
+  "workFromAnywhereScore": 7.0,
   "healthStatus": "insufficientData"
 }
 ```

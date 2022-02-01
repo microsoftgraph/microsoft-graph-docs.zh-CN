@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 52239562480eed674b5b41000d9d3bedb7abfc54
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: c0f1ef0288627561c17bac5fa4c0a0c9f4af74e7
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61547674"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290957"
 ---
 # <a name="broadcastmeetingcaptionsettings-resource-type"></a>broadcastMeetingCaptionSettings 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "61547674"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示实时事件 Microsoft Teams[标题设置](/microsoftteams/teams-live-events/what-are-teams-live-events)。 有关在客户端中如何使用实时Teams的详细信息，请参阅在实时事件[使用实时字幕](https://support.microsoft.com/en-us/office/use-live-captions-in-a-live-event-1d6778d4-6c65-4189-ab13-e2d77beb9e2a)。
+代表实时事件Microsoft Teams[标题设置](/microsoftteams/teams-live-events/what-are-teams-live-events)。 有关在客户端中如何使用实时Teams的详细信息，请参阅在实时活动中[使用实时字幕](https://support.microsoft.com/office/use-live-captions-in-a-live-event-1d6778d4-6c65-4189-ab13-e2d77beb9e2a)。
 
 ## <a name="properties"></a>属性
 
 | 属性             | 类型              | 说明                                                     |
 |:---------------------|:------------------|:----------------------------------------------------------------|
-| isCaptionEnabled     | Boolean           | 指示是否为此事件启用Teams实时事件。 |
+| isCaptionEnabled     | Boolean           | 指示是否为此事件启用Teams事件。 |
 | spokenLanguage       | String            | 语音语言。                                            |
-| translationLanguages | String collection | 翻译语言 (最多选择 6) 。                     |
+| translationLanguages | 字符串集合 | 翻译语言 (最多选择 6) 。                     |
 
 > [!TIP]
 >
@@ -92,10 +92,10 @@ ms.locfileid: "61547674"
 | 朝鲜语（韩国）                           | ko      |
 | 拉脱维亚语 (拉脱维亚)                          | lv      |
 | 立陶宛语 (立陶宛)                    | lt      |
-| 马耳他语 (省)                     | mg      |
+| 马耳他 ()                     | mg      |
 | 马来语(马来西亚)                         | ms      |
 | 马耳他语（马耳他）                          | mt      |
-| 波斯 (波斯)                            | fa      |
+| 波斯 (叙利亚)                            | fa      |
 | 波兰语（波兰）                          | pl      |
 | 葡萄牙语（巴西）                      | pt      |
 | Querétaro Otomi                          | otq     |
@@ -114,7 +114,7 @@ ms.locfileid: "61547674"
 | 汤加语                                   | 更改为      |
 | 土耳其 (土耳其)                          | tr      |
 | 乌克兰 (乌克兰)                       | uk      |
-| 巴基斯坦 (都语共和国)       | ur      |
+| 巴基斯坦 (乌尔都语)       | ur      |
 | 越南 (越南)                      | vi      |
 | 英国 (的)                    | cy      |
 | Yucatec Maya                             | yua     |

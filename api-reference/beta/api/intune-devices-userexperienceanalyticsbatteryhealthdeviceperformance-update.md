@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5ad9f7243ede91b4b134ee2034ea2a129c09978
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 32a22971366bf0bd977e0cad9800e89b3495361b
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345784"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291925"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthdeviceperformance"></a>更新 userExperienceAnalyticsBatteryHealthDevicePerformance
 
@@ -57,16 +57,17 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthDevicePerformance/{u
 |deviceId|String|设备的唯一标识符 Intune DeviceID。|
 |deviceName|String|设备友好名称。|
 |model|String|设备的型号名称。|
-|maxCapacityPercentage|Int32|具有最低容量的电池的当前容量和设计容量的比率。 百分比单位，值范围为 0-100。 有效值 -2147483648 to 2147483647|
-|estimatedRuntimeInMinutes|Int32|电池完全充电时设备的预计运行时。 单位（以分钟表示）。 有效值 -2147483648 to 2147483647|
-|batteryAgeInDays|Int32|估计电池使用时间。 单位（以天表示）。 有效值 -2147483648 to 2147483647|
-|deviceBatteryHealthScore|Int32|设备最大容量分数和运行时估计分数的加权平均值。 值范围为 0-100。 有效值 -2147483648 to 2147483647|
-|healthStatus|String|设备的整体电池运行状况状态。|
+|manufacturer|String|设备的制造商名称。|
+|maxCapacityPercentage|Int32|具有最低容量的电池的当前容量和设计容量的比率。 百分比单位，值范围为 0-100。 有效值 -2147483648 2147483647|
+|estimatedRuntimeInMinutes|Int32|电池完全充电时设备的预计运行时。 单位（以分钟表示）。 有效值 -2147483648 2147483647|
+|batteryAgeInDays|Int32|估计电池使用时间。 单位（以天表示）。 有效值 -2147483648 2147483647|
+|deviceBatteryHealthScore|Int32|设备最大容量分数和运行时估计分数的加权平均值。 值范围为 0-100。 有效值 -2147483648 2147483647|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|设备的整体电池运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -75,18 +76,19 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthDevicePerformance/{u
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthDevicePerformance/{userExperienceAnalyticsBatteryHealthDevicePerformanceId}
 Content-type: application/json
-Content-length: 362
+Content-length: 400
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthDevicePerformance",
   "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "model": "Model value",
+  "manufacturer": "Manufacturer value",
   "maxCapacityPercentage": 5,
   "estimatedRuntimeInMinutes": 9,
   "batteryAgeInDays": 0,
   "deviceBatteryHealthScore": 8,
-  "healthStatus": "Health Status value"
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -95,7 +97,7 @@ Content-length: 362
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 411
+Content-Length: 449
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthDevicePerformance",
@@ -103,11 +105,12 @@ Content-Length: 411
   "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "model": "Model value",
+  "manufacturer": "Manufacturer value",
   "maxCapacityPercentage": 5,
   "estimatedRuntimeInMinutes": 9,
   "batteryAgeInDays": 0,
   "deviceBatteryHealthScore": 8,
-  "healthStatus": "Health Status value"
+  "healthStatus": "insufficientData"
 }
 ```
 

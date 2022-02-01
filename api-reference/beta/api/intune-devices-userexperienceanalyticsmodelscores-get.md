@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ea5f7691752c5a8776ac003770ccb1d5f1a3669
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ce07d88b0f780dd4673f89ab8c70577acd7d1d68
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344069"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290754"
 ---
 # <a name="get-userexperienceanalyticsmodelscores"></a>获取 userExperienceAnalyticsModelScores
 
@@ -53,7 +53,7 @@ GET /deviceManagement/userExperienceAnalyticsModelScores/{userExperienceAnalytic
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMod
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 437
+Content-Length: 472
 
 {
   "value": {
@@ -80,6 +80,7 @@ Content-Length: 437
     "endpointAnalyticsScore": 7.333333333333333,
     "startupPerformanceScore": 7.666666666666667,
     "appReliabilityScore": 6.333333333333333,
+    "workFromAnywhereScore": 7.0,
     "healthStatus": "insufficientData"
   }
 }

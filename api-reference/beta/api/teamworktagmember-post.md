@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 21aee21f6666cabd60b9d486288f1d0d90bf933f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e967d5acd148da3e597777f07615c1aa87c6ecc5
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118073"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290621"
 ---
 # <a name="create-teamworktagmember"></a>创建 teamworkTagMember
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62118073"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不支持。|
+|委派（工作或学校帐户）|TeamworkTag.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|TeamworkTag.ReadWrite.All|
 
@@ -47,17 +47,17 @@ POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [teamworkTagMember](../resources/teamworktagmember.md) 对象的 JSON 表示形式。
 
-下表显示创建 [团队合作TagMember 时所需的属性](../resources/teamworktagmember.md)。
+下表显示创建 [teamworkTagMember 时所需的属性](../resources/teamworktagmember.md)。
 
 |属性|类型|描述|
 |:---|:---|:---|
-|userId|String|团队成员的用户标识符。|
+|userId|字符串|团队成员的用户标识符。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [teamworkTagMember](../resources/teamworktagmember.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [teamworkTagMember](../resources/teamworktagmember.md) 对象。
 
 ## <a name="examples"></a>示例
 

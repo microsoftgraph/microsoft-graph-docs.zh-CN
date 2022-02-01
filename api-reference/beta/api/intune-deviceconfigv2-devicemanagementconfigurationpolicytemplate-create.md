@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a6ec1080e58953c495f70b58e0544c62185282d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3fb6fb213747e405705677b8790e9a3cd610d4b2
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338692"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290677"
 ---
 # <a name="create-devicemanagementconfigurationpolicytemplate"></a>创建 deviceManagementConfigurationPolicyTemplate
 
@@ -54,13 +54,13 @@ POST /deviceManagement/configurationPolicyTemplates
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|由 BaseId 和 Version 组成的模板文档的键。 自动生成。|
-|baseId|String|模板基本标识符|
+|baseId|字符串|模板基本标识符|
 |version|Int32|模板版本。 有效值为 1 到 2147483647。 此属性是只读的。|
 |displayName|String|模板显示名称|
-|说明|String|模板说明|
+|description|字符串|模板说明|
 |displayVersion|String|模板版本说明|
 |lifecycleState|[deviceManagementTemplateLifecycleState](../resources/intune-deviceconfigv2-devicemanagementtemplatelifecyclestate.md)|指示模板的当前生命周期状态。 可取值为：`invalid`、`draft`、`active`、`superseded`、`deprecated`、`retired`。|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此模板的平台。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`。|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此模板的平台。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`、`linux`、`unknownFutureValue`。|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此模板的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`、`linuxMdm`、`unknownFutureValue`。|
 |templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|TemplateFamily 此模板。 可取值为：`none`、`endpointSecurityAntivirus`、`endpointSecurityDiskEncryption`、`endpointSecurityFirewall`、`endpointSecurityEndpointDetectionAndResponse`、`endpointSecurityAttackSurfaceReduction`、`endpointSecurityAccountProtection`、`endpointSecurityApplicationControl`、`baseline`。|
 |allowUnmanagedSettings|Boolean|允许非托管设置模板|
@@ -69,7 +69,7 @@ POST /deviceManagement/configurationPolicyTemplates
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [deviceManagementConfigurationPolicyTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplate.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [deviceManagementConfigurationPolicyTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplate.md) 对象。
 
 ## <a name="example"></a>示例
 

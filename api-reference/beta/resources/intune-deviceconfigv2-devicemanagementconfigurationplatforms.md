@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1b86c0dc528e1a9e3d9d3fda9e3a84238067cdb1
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 52ba70d5ac0ec2dcb4d7d8d48ae7fb3200109772
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346197"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291146"
 ---
 # <a name="devicemanagementconfigurationplatforms-enum-type"></a>deviceManagementConfigurationPlatforms 枚举类型
 
@@ -31,6 +31,8 @@ ms.locfileid: "61346197"
 |macOS|8 |MacOS。|
 |windows10X|16|Windows 10 X。|
 |windows10|32|Windows 10。|
+|linux|128|Linux。|
+|unknownFutureValue|1073741824|Sentinel 成员，适用于客户端无法处理新枚举值的情况。|
 
 
 

@@ -2,15 +2,15 @@
 title: deviceManagementSettings 资源类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52cfd12bc068926903e37b1a823ac9d58a48f2a2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1009096aa25a504ba02b3c0cc2b8dc9eed6cf2dc
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59069255"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291153"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "59069255"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |deviceComplianceCheckinThresholdDays|Int32|允许设备无需签入即可保持符合性的天数。|
 |isScheduledActionEnabled|Boolean|是否为规则的计划操作启用此功能。|
@@ -35,6 +35,7 @@ ms.locfileid: "59069255"
 |androidDeviceAdministratorEnrollmentEnabled|Boolean|属性，用于确定是否为此帐户启用了 Android 设备管理员注册。|
 |ignoreDevicesForUnsupportedSettingsEnabled|Boolean|属性，用于确定是否忽略某些型号的设备上不受支持的合规性设置。|
 |enableLogCollection|Boolean|确定是否应该可以使用日志收集功能。|
+|enableAutopilotDiagnostics|Boolean|确定是否启用 autopilot 诊断功能。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,9 +59,11 @@ ms.locfileid: "59069255"
   "derivedCredentialUrl": "String",
   "androidDeviceAdministratorEnrollmentEnabled": true,
   "ignoreDevicesForUnsupportedSettingsEnabled": true,
-  "enableLogCollection": true
+  "enableLogCollection": true,
+  "enableAutopilotDiagnostics": true
 }
 ```
+
 
 
 

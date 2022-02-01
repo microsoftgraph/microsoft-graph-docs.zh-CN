@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 72bf9ad32591dff339e090cd55e79a0d71b1164a
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: ab41bebd48947851721e2adc78a07f01fc522117
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561515"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291960"
 ---
 # <a name="meetingregistration-resource-type"></a>meetingRegistration 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "61561515"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含联机会议（如网络研讨会）的[Microsoft Teams详细信息](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3)。 
+包含联机会议（如网络研讨会）的[Microsoft Teams详细信息](https://support.microsoft.com/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3)。 
 
 继承自 [meetingRegistrationBase](meetingregistrationbase.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 | :----- | :---------- | :---------- |
@@ -37,11 +37,11 @@ ms.locfileid: "61561515"
 | :------- | :--- | :---------- |
 | allowedRegistrant | [meetingAudience](#meetingaudience-values) | 指定可注册会议的人。 |
 | description | String | 会议说明。 |
-| endDateTime | 日期时间 | 会议结束时间（UTC）。 |
+| endDateTime | DateTime | 会议结束时间（UTC）。 |
 | registrationPageViewCount | Int32 | 已访问注册页次数。 只读。 |
 | registrationPageWebUrl | String | 注册页的 URL。 只读。 |
 | 扬声器 | [meetingSpeaker](meetingSpeaker.md) 集合 | 会议发言人的信息。 |
-| startDateTime | 日期时间 | 会议开始时间（UTC）。 |
+| startDateTime | DateTime | 会议开始时间（UTC）。 |
 | subject | String | 会议的主题。 |
 
 ### <a name="meetingaudience-values"></a>meetingAudience 值

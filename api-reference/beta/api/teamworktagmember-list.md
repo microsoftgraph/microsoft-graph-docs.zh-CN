@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c1545ccb8ccfcb49f2213750ebd5e469f5ebb91c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 567e0757b800ab0b1686128fd103cdea273a99cf
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098532"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289984"
 ---
 # <a name="list-members-in-a-teamworktag"></a>列出团队合作标记中的成员
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62098532"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不支持。|
+|委派（工作或学校帐户）|TeamworkTag.Read、TeamworkTag.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|TeamworkTag.Read.All、TeamworkTag.ReadWrite.All|
 
@@ -51,7 +51,7 @@ GET /teams/{team-Id}/tags/{teamworkTag-Id}/members
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码 `200 OK` [和 teamworkTagMember](../resources/teamworktagmember.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和 teamworkTagMember](../resources/teamworktagmember.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

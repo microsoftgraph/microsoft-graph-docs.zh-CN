@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b8c1e28b373780221c3cf06d7b36d9e6fd631e9
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: e0d9215d583461073b504897ce82588f7d2420c9
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344496"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292009"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>userExperienceAnalyticsDevicePerformance 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "61344496"
 |[列出 userExperienceAnalyticsDevicePerformances](../api/intune-devices-userexperienceanalyticsdeviceperformance-list.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 集合|列出 [userExperienceAnalyticsDevicePerformance 对象的属性和](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 关系。|
 |[获取 userExperienceAnalyticsDevicePerformance](../api/intune-devices-userexperienceanalyticsdeviceperformance-get.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|读取 [userExperienceAnalyticsDevicePerformance 对象的属性和](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 关系。|
 |[创建 userExperienceAnalyticsDevicePerformance](../api/intune-devices-userexperienceanalyticsdeviceperformance-create.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|创建新的 [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 对象。|
-|[删除 userExperienceAnalyticsDevicePerformance](../api/intune-devices-userexperienceanalyticsdeviceperformance-delete.md)|None|删除 [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)。|
+|[删除 userExperienceAnalyticsDevicePerformance](../api/intune-devices-userexperienceanalyticsdeviceperformance-delete.md)|无|删除 [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)。|
 |[更新 userExperienceAnalyticsDevicePerformance](../api/intune-devices-userexperienceanalyticsdeviceperformance-update.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|更新 [userExperienceAnalyticsDevicePerformance 对象](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 的属性。|
 |[summarizeDevicePerformanceDevices 函数](../api/intune-devices-userexperienceanalyticsdeviceperformance-summarizedeviceperformancedevices.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 集合|尚未记录|
 
@@ -39,7 +39,7 @@ ms.locfileid: "61344496"
 |deviceName|String|用户体验分析设备名称。|
 |model|String|用户体验分析设备模型。|
 |manufacturer|String|用户体验分析设备制造商。|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|用户体验分析设备磁盘类型。 可取值为：`unkown`、`hdd`、`ssd`。|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|用户体验分析设备磁盘类型。 可取值为：`hdd`、`ssd`、`unknown`。|
 |operatingSystemVersion|String|用户体验分析设备操作系统版本。|
 |bootScore|Int32|用户体验分析设备启动分数。|
 |coreBootTimeInMs|Int32|用户体验分析设备核心启动时间（以毫秒为单位）。|
@@ -52,8 +52,8 @@ ms.locfileid: "61344496"
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应式桌面时间（以毫秒为单位）。|
 |blueScreenCount|Int32|最近 14 天内的蓝屏数。 有效值为 0 到 9999999|
 |restartCount|Int32|最近 14 天内的重启次数。 有效值为 0 到 9999999|
-|averageBlueScreens|双精度|平均 (平均) 14 天内每个设备的蓝屏数量。 有效值为 0 到 9999999|
-|averageRestarts|双精度|平均 (表示) 最近 14 天内每个设备重新启动次数的平均值。 有效值为 0 到 9999999|
+|averageBlueScreens|双精度|平均 (表示) 14 天内每个设备的蓝屏数量。 有效值为 0 到 9999999|
+|averageRestarts|双精度|平均 (，) 最近 14 天内每个设备重新启动次数的平均次数。 有效值为 0 到 9999999|
 |startupPerformanceScore|双精度|用户体验分析设备启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |modelStartupPerformanceScore|双精度|用户体验分析模型级别的启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 

@@ -2,15 +2,15 @@
 title: 创建 groupPolicyUploadedDefinitionFile
 description: 创建新的 groupPolicyUploadedDefinitionFile 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aae0b137d590c65005ff1a849ab2d92019bab1ee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ceff4779701398a7f61c5d438765c69391040737
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041918"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290985"
 ---
 # <a name="create-grouppolicyuploadeddefinitionfile"></a>创建 groupPolicyUploadedDefinitionFile
 
@@ -54,17 +54,17 @@ POST /deviceManagement/groupPolicyUploadedDefinitionFiles
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|ADMX 文件的本地化友好名称。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|说明|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|languageCodes|String collection|ADMX 文件支持的语言代码。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|targetPrefix|String|指定引用 ADMX 文件内的命名空间的逻辑名称。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|description|字符串|ADMX 文件中策略设置的本地化说明。 默认值为空白。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|languageCodes|String 集合|ADMX 文件支持的语言代码。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|targetPrefix|字符串|指定引用 ADMX 文件内的命名空间的逻辑名称。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |targetNamespace|String|指定用于标识 ADMX 文件内的命名空间的 URI。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)。 可取值为：`admxBacked`、`admxIngested`。|
-|revision|String|与文件关联的修订版本。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|revision|字符串|与文件关联的修订版本。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|fileName|String|不带路径的 ADMX 文件的文件名。 例如：edge.admx 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |id|String|实体的键。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|fileName|String|已上载的 ADML 文件的文件名。|
-|status|[groupPolicyUploadedDefinitionFileStatus](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)|已上载的 ADMX 文件的上载状态。 可取值为：`none`、`uploadInProgress`、`available`、`assigned`、`removalInProgress`、`uploadFailed` 或 `removalFailed`。|
-|content|二进制|上载的 ADMX 文件的内容。|
+|状态|[groupPolicyUploadedDefinitionFileStatus](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)|已上载的 ADMX 文件的上载状态。 可取值为：`none`、`uploadInProgress`、`available`、`assigned`、`removalInProgress`、`uploadFailed` 或 `removalFailed`。|
+|content|Binary|上载的 ADMX 文件的内容。|
 |uploadDateTime|DateTimeOffset|上传的 ADMX 文件的上传时间。|
 |defaultLanguageCode|String|上载的 ADMX 文件的默认语言。|
 |groupPolicyUploadedLanguageFiles|[groupPolicyUploadedLanguageFile](../resources/intune-grouppolicy-grouppolicyuploadedlanguagefile.md) 集合|与上载的 ADMX 文件关联的 ADML 文件列表。|
@@ -72,7 +72,7 @@ POST /deviceManagement/groupPolicyUploadedDefinitionFiles
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -130,9 +130,9 @@ Content-Length: 1035
   "targetNamespace": "Target Namespace value",
   "policyType": "admxIngested",
   "revision": "Revision value",
+  "fileName": "File Name value",
   "id": "0ce1a8cf-a8cf-0ce1-cfa8-e10ccfa8e10c",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "fileName": "File Name value",
   "status": "uploadInProgress",
   "content": "Y29udGVudA==",
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00",
@@ -149,6 +149,7 @@ Content-Length: 1035
   ]
 }
 ```
+
 
 
 

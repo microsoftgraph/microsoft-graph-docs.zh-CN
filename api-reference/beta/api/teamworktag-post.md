@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b54fecdf51a18354445dd207bbb0c4d6063cb54a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 71d4e6b91a46de223ac4fc1ff7ca5f81f1401a36
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108067"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290901"
 ---
 # <a name="create-teamworktag"></a>创建团队合作标记
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62108067"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不支持。|
+|委派（工作或学校帐户）|TeamworkTag.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|TeamworkTag.ReadWrite.All|
 
@@ -47,12 +47,12 @@ POST /teams/{team-Id}/tags
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [teamworkTag](../resources/teamworktag.md) 对象的 JSON 表示形式。
 
-下表显示创建团队合作标记 时所需的 [属性](../resources/teamworktag.md)。
+下表显示创建团队合作标记时所需的 [属性](../resources/teamworktag.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|标记的名称。 该值不能超过 40 个字符。|
-|成员| [teamworkTagMember](../resources/teamworktagmember.md) 集合 |要添加到标记的团队成员。 设置每个成员的用户标识符属性。 成员计数不应超过 25。|
+|members| [teamworkTagMember](../resources/teamworktagmember.md) 集合 |要添加到标记的团队成员。 设置每个成员的用户标识符属性。 成员计数不应超过 25。|
 
 
 

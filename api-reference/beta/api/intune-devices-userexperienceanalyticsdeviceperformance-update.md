@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bf1eb012543eca23d2276e5939fbaf2f0c8b37d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 426567287e71b0b54a8e87159aabfc6bca606f49
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344160"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291441"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>更新 userExperienceAnalyticsDevicePerformance
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 |deviceName|String|用户体验分析设备名称。|
 |model|String|用户体验分析设备模型。|
 |manufacturer|String|用户体验分析设备制造商。|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|用户体验分析设备磁盘类型。 可取值为：`unkown`、`hdd`、`ssd`。|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|用户体验分析设备磁盘类型。 可取值为：`hdd`、`ssd`、`unknown`。|
 |operatingSystemVersion|String|用户体验分析设备操作系统版本。|
 |bootScore|Int32|用户体验分析设备启动分数。|
 |coreBootTimeInMs|Int32|用户体验分析设备核心启动时间（以毫秒为单位）。|
@@ -70,7 +70,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应式桌面时间（以毫秒为单位）。|
 |blueScreenCount|Int32|最近 14 天内的蓝屏数。 有效值为 0 到 9999999|
 |restartCount|Int32|最近 14 天内的重启次数。 有效值为 0 到 9999999|
-|averageBlueScreens|双精度|平均 (平均) 14 天内每个设备的蓝屏数量。 有效值为 0 到 9999999|
+|averageBlueScreens|双精度|平均 (表示) 14 天内每个设备的蓝屏数量。 有效值为 0 到 9999999|
 |averageRestarts|双精度|平均 (表示) 最近 14 天内每个设备重新启动次数的平均值。 有效值为 0 到 9999999|
 |startupPerformanceScore|双精度|用户体验分析设备启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |modelStartupPerformanceScore|双精度|用户体验分析模型级别的启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
@@ -78,7 +78,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -94,7 +94,7 @@ Content-length: 739
   "deviceName": "Device Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "diskType": "hdd",
+  "diskType": "ssd",
   "operatingSystemVersion": "Operating System Version value",
   "bootScore": 9,
   "coreBootTimeInMs": 0,
@@ -127,7 +127,7 @@ Content-Length: 788
   "deviceName": "Device Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "diskType": "hdd",
+  "diskType": "ssd",
   "operatingSystemVersion": "Operating System Version value",
   "bootScore": 9,
   "coreBootTimeInMs": 0,

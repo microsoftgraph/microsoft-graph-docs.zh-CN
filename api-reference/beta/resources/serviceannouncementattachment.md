@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c761c2b6071939912f59e9d44b6557af1d0c6273
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 2f6dbdecf9a1faa109456284baa31f1be7a9a65b
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072789"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291953"
 ---
 # <a name="serviceannouncementattachment-resource-type"></a>serviceAnnouncementAttachment 资源类型
 
@@ -18,11 +18,9 @@ ms.locfileid: "62072789"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示与 [serviceUpdateMessage](../resources/serviceupdatemessage.md) 对象关联的附件。
+表示与 [serviceUpdateMessage 对象关联的](../resources/serviceupdatemessage.md) 附件。
 
-继承自 [附件](../resources/attachment.md)。
-
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 serviceAnnouncementAttachment](../api/serviceannouncementattachment-get.md)|[serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md)|读取 [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) 对象的属性和关系。|

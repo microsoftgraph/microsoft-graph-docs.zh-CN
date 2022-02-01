@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e7c8141c5b39d8648c0b3f7bbe37c1af046d9f25
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 81d3524855daf6138baa61388b9d853faefec5f6
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072717"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291244"
 ---
 # <a name="serviceupdatemessage-resource-type"></a>serviceUpdateMessage 资源类型
 
@@ -18,20 +18,20 @@ ms.locfileid: "62072717"
 
 表示有关服务中更改的公告。
 
-表示公告，如产品的主要更新、新功能;例如，发布新的Windows功能。
+表示公告，如产品的主要更新、新功能;例如，发布新的SharePoint功能。
 
 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|检索 [serviceUpdateMessage 对象的属性和](../resources/serviceupdatemessage.md) 关系。 |
-|[markRead](../api/serviceupdatemessage-markread.md)|布尔|将 [serviceUpdateMessage](../resources/serviceupdatemessage.md)的列表标记为 **已** 登录用户的已读。|
-|[markUnread](../api/serviceupdatemessage-markunread.md)|布尔|对于登录用户，将[serviceUpdateMessage](../resources/serviceupdatemessage.md)列表标记为未读。 |
-|[archive](../api/serviceupdatemessage-archive.md)|布尔|存档已登录 [用户的 serviceUpdateMessage](../resources/serviceupdatemessage.md)列表。|
-|[unarchive](../api/serviceupdatemessage-unarchive.md)|布尔|取消存档已登录用户的 [serviceUpdateMessage](../resources/serviceupdatemessage.md)列表。|
-|[favorite](../api/serviceupdatemessage-favorite.md)|布尔|更改 [serviceUpdateMessage](../resources/serviceupdatemessage.md)列表的状态，以收藏已登录用户。|
-|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|布尔|删除已登录用户的 [serviceUpdateMessage](../resources/serviceupdatemessage.md)的收藏夹状态。|
+|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|将 [serviceUpdateMessages](../resources/serviceupdatemessage.md) 列表标记为 **已** 登录用户的已读。|
+|[markUnread](../api/serviceupdatemessage-markunread.md)|Boolean|将 [serviceUpdateMessages](../resources/serviceupdatemessage.md) 列表标记为 **登录** 用户未读。|
+|[archive](../api/serviceupdatemessage-archive.md)|Boolean|存档已登录 [用户的 serviceUpdateMessages](../resources/serviceupdatemessage.md) 列表。|
+|[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|取消存档已登录 [用户的 serviceUpdateMessages](../resources/serviceupdatemessage.md) 列表。|
+|[favorite](../api/serviceupdatemessage-favorite.md)|Boolean|将 [serviceUpdateMessages](../resources/serviceupdatemessage.md) 列表的状态更改为为登录用户收藏。|
+|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|删除已登录 [用户的 serviceUpdateMessages](../resources/serviceupdatemessage.md) 的收藏夹状态。|
 |[列出附件](../api/serviceupdatemessage-list-attachments.md)|[serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) 集合|获取与服务邮件关联的附件列表。|
 
 ## <a name="properties"></a>属性
@@ -40,12 +40,12 @@ ms.locfileid: "62072717"
 |actionRequiredByDateTime|DateTimeOffset|邮件操作的预期截止时间。|
 |attachmentsArchive|Stream|包含邮件的所有附件的 zip 文件。|
 |body|[itemBody](../resources/itembody.md)|服务邮件正文的内容类型和内容。|
-|“类别”|serviceUpdateCategory|服务邮件类别。 可取值为：`preventOrFixIssue`、`planForChange`、`stayInformed`、`unknownFutureValue`。|
-|详细信息|集合 ([keyValuePair](../resources/keyvaluepair.md)) |有关服务邮件的其他详细信息。 此属性不支持筛选器。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
+|“类别”|serviceUpdateCategory|服务邮件类别。 可能的值是：`preventOrFixIssue`、`planForChange`、`stayInformed`、`unknownFutureValue`。|
+|详细信息|collection ([keyValuePair](../resources/keyvaluepair.md)) |有关服务邮件的其他详细信息。 此属性不支持筛选器。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
 |endDateTime|DateTimeOffset|服务消息的结束时间。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
 |hasAttachments|Boolean|指示邮件是否包含任何附件。|
 |id|String|服务消息的 ID。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
-|isMajorChange|布尔|指示消息是否描述服务的主要更新。|
+|isMajorChange|Boolean|指示消息是否描述服务的主要更新。|
 |lastModifiedDateTime|DateTimeOffset|服务邮件的上次修改时间。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
 |服务|集合 (字符串) |服务消息影响的服务。|
 |severity|serviceUpdateSeverity|服务邮件的严重性。 可取值为：`normal`、`high`、`critical`、`unknownFutureValue`。|

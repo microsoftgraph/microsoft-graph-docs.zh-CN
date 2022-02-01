@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75891fda7feaa7918d4fa94d5a4b7fd67973c226
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: e9b69cd321a815841e1c6297884a2e436147c513
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338643"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290418"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>获取 userExperienceAnalyticsOverview
 
@@ -53,7 +53,7 @@ GET /deviceManagement/userExperienceAnalyticsOverview
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOve
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1219
+Content-Length: 1213
 
 {
   "value": {
@@ -101,7 +101,7 @@ Content-Length: 1219
     "workFromAnywhereHealthState": "insufficientData",
     "appHealthState": "insufficientData",
     "resourcePerformanceHealthState": "insufficientData",
-    "batteryHealthHealthState": "insufficientData"
+    "batteryHealthState": "insufficientData"
   }
 }
 ```

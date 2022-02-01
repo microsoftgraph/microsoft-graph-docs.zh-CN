@@ -2,15 +2,15 @@
 title: 更新 macOSEnterpriseWiFiConfiguration
 description: 更新 macOSEnterpriseWiFiConfiguration 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d3be164bb0b4f181835eb6a786d5de8f8d645d7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fa427c877e5c4750f9d36cd3fa5301a7868b067b
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59060496"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290796"
 ---
 # <a name="update-macosenterprisewificonfiguration"></a>更新 macOSEnterpriseWiFiConfiguration
 
@@ -57,36 +57,36 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|networkName|String|网络名称 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
+|networkName|字符串|网络名称 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |ssid|String|这是广播到所有Wi-Fi网络的名称。 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |connectAutomatically|Boolean|连接网络在范围内时自动运行。 如果设置为 true，将跳过用户提示，并自动将设备Wi-Fi网络。 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
-|connectWhenNetworkNameIsHidden|Boolean|连接网络不通过 SSID 广播其名称时 (SSID) 。 设置为 true 时，此配置文件会强制设备连接到未将其 SSID 广播到所有设备的网络。 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
+|connectWhenNetworkNameIsHidden|Boolean|连接网络未在 SSID 中广播其 (时) 。 设置为 true 时，此配置文件会强制设备连接到未将其 SSID 广播到所有设备的网络。 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|指示Wi-Fi是否使用基于 EAP 的安全类型。 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)。 可取值为：`open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
 |proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|此连接代理Wi-Fi继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)。 可取值为：`none`、`manual`、`automatic`。|
 |proxyManualAddress|String|选择手动配置时代理服务器的 IP 地址或 DNS 主机名。 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |proxyManualPort|Int32|选择手动配置时代理服务器的端口。 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
-|proxyAutomaticConfigurationUrl|String|选择自动配置时代理服务器自动配置脚本的 URL。 此 URL 通常是 PAC 代理自动配置 (文件) 位置。 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
+|proxyAutomaticConfigurationUrl|String|选择自动配置时代理服务器自动配置脚本的 URL。 此 URL 通常是 PAC 代理 (自动配置) 位置。 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |preSharedKey|String|这是 WPA 个人共享网络的预共享Wi-Fi密钥。 继承自 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
-|eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|可扩展身份验证协议 (EAP) 。 指示在 Wi-Fi (路由器上设置的 EAP (类型) 。 可取值为：`eapTls`、`leap`、`eapSim`、`eapTtls`、`peap`、`eapFast`。|
-|eapFastConfiguration|[eapFastConfiguration](../resources/intune-deviceconfig-eapfastconfiguration.md)|当 EAP-FAST FAST为所选的 EAP 类型时，选择 EAP-FAST配置选项。 可取值为：`noProtectedAccessCredential`、`useProtectedAccessCredential`、`useProtectedAccessCredentialAndProvision`、`useProtectedAccessCredentialAndProvisionAnonymously`。|
-|trustedServerCertificateNames|String collection|将 EAP 类型配置为 EAP-TLS/TTLS/FAST PEAP 时受信任的服务器证书名称。 这是由受信任证书颁发机构颁发给 CA 证书颁发机构颁发的证书 (名) 。 如果提供此信息，则当最终用户连接到此连接网络时，可以绕过在最终用户设备上Wi-Fi对话框。|
+|eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|可扩展身份验证协议 (EAP) 。 指示在 Wi-Fi 路由器 (上设置的 EAP) 。 可取值为：`eapTls`、`leap`、`eapSim`、`eapTtls`、`peap`、`eapFast` 或 `teap`。|
+|eapFastConfiguration|[eapFastConfiguration](../resources/intune-deviceconfig-eapfastconfiguration.md)|当 EAP-FAST为所选的 EAP 类型时，FAST EAP 配置选项。 可能的值是：`noProtectedAccessCredential`、`useProtectedAccessCredential`、`useProtectedAccessCredentialAndProvision`、`useProtectedAccessCredentialAndProvisionAnonymously`。|
+|trustedServerCertificateNames|字符串集合|将 EAP 类型配置为 EAP-TLS/TTLS/FAST PEAP 时受信任的服务器证书名称。 这是由受信任证书颁发机构颁发给 CA 证书颁发机构颁发的 (名) 。 如果提供此信息，则当最终用户连接到此连接网络时，可以绕过在最终用户设备上Wi-Fi对话框。|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|当 EAP 类型配置为 PEAP 或 EAP-TTLS 时身份验证方法。 可取值为：`certificate`、`usernameAndPassword`、`derivedCredential`。|
-|innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|当 EAP 类型为 EAP-TTLS) Authentication 方法为 Username 和 Password 时，用于身份验证的非 EAP (内部标识方法。 可取值为：`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo`。|
+|innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|当 EAP 类型为 EAP-TTLS) Authentication 方法为 Username 和 Password 时，用于身份验证的非 EAP (内部标识方法。 可能的值是：`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo`。|
 |outerIdentityPrivacyTemporaryValue|String|将 EAP (EAP 类型) EAP-TTLS、EAP-FAST PEAP 时，启用标识隐私和外部标识。 此属性会屏蔽输入文本的用户名。 例如，如果使用"匿名"，则使用此连接进行身份验证的Wi-Fi其真实用户名显示为"匿名"。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [macOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [macOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -208,6 +208,7 @@ Content-Length: 2030
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 4189913b9923601a12edb658da3b5dcda3a80fbc
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: c5da340fba21ced799ae9cb40f1d5238ee168f5c
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696895"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290516"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>使用 Microsoft 搜索 API 为数据编制索引
 
@@ -54,7 +54,7 @@ ms.locfileid: "58696895"
 
 - 请参阅 [Microsoft 搜索 API 概述](/graph/search-concept-overview)。
 - 向下钻取 [externalConnection](externalconnectors-externalconnection.md)、[schema](externalconnectors-schema.md) 和[externalItem](externalconnectors-externalitem.md) 资源的方法、属性和关系。
-- 查看 [Microsoft Graph postman 集合](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) （[了解更多](https://developer.microsoft.com/en-us/graph/blogs/postman-collections)）
+- 查看 [Microsoft Graph postman 集合](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) （[了解更多](https://developer.microsoft.com/graph/blogs/postman-collections)）
 - 查看 GitHub 中的[示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)。
 
 

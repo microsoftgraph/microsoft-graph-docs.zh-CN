@@ -2,15 +2,15 @@
 title: localSecurityOptionsSmartCardRemovalBehaviorType 枚举类型
 description: LocalSecurityOptionsSmartCardRemovalBehaviorType 的可能值
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aea13f91cd7c1f22bf82bee5623ecd6922b38e36
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4d19ae9fe5990113cf8e59f50f5fb0ebdd900b7b
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59033670"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290880"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>localSecurityOptionsSmartCardRemovalBehaviorType 枚举类型
 
@@ -25,10 +25,11 @@ LocalSecurityOptionsSmartCardRemovalBehaviorType 的可能值
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|lockWorkstation|0|无操作|
-|noAction|1|锁定工作站|
+|noAction|0|无操作|
+|lockWorkstation|1|锁定工作站|
 |forceLogoff|2|强制注销|
 |disconnectRemoteDesktopSession|3|如果远程远程桌面服务会话断开连接|
+
 
 
 

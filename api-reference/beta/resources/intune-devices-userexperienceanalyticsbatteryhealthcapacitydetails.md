@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db0c5268b3f40ac726ca98336cb2a1ddf2e8cf9d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 1f209ebf889bccaddf8f234a6858debf023ec6b3
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343152"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292016"
 ---
 # <a name="userexperienceanalyticsbatteryhealthcapacitydetails-resource-type"></a>userExperienceAnalyticsBatteryHealthCapacityDetails 资源类型
 
@@ -32,10 +32,11 @@ ms.locfileid: "61343152"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析电池运行状况容量对象的唯一标识符。|
-|activeDevices|Int32|租户中的活动设备数。 有效值 -2147483648 to 2147483647|
-|batteryCapacityGood|Int32|电池最大容量大于 80% 的设备数量。 有效值 -2147483648 to 2147483647|
-|batteryCapacityFair|Int32|电池最大容量大于 50%但小于 80% 的设备数量。 有效值 -2147483648 to 2147483647|
-|batteryCapacityPoor|Int32|电池最大容量小于 50% 的设备数量。 有效值 -2147483648 to 2147483647|
+|activeDevices|Int32|租户中的活动设备数。 有效值 -2147483648 2147483647|
+|batteryCapacityGood|Int32|电池最大容量大于 80% 的设备数量。 有效值 -2147483648 2147483647|
+|batteryCapacityFair|Int32|电池最大容量大于 50%但小于 80% 的设备数量。 有效值 -2147483648 2147483647|
+|batteryCapacityPoor|Int32|电池最大容量小于 50% 的设备数量。 有效值 -2147483648 2147483647|
+|lastRefreshedDateTime|DateTimeOffset|记录此容量详细信息实例的日期时间。|
 
 ## <a name="relationships"></a>关系
 无
@@ -55,7 +56,8 @@ ms.locfileid: "61343152"
   "activeDevices": 1024,
   "batteryCapacityGood": 1024,
   "batteryCapacityFair": 1024,
-  "batteryCapacityPoor": 1024
+  "batteryCapacityPoor": 1024,
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
 

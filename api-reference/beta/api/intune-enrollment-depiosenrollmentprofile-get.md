@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e6e9cc9370dc4d21b879d6a64be6f80e41b97d8
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 30bcfe01e4cb866918a37bba67166ca7a4d8c4a7
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488232"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290537"
 ---
 # <a name="get-depiosenrollmentprofile"></a>获取 depIOSEnrollmentProfile
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2526
+Content-Length: 2569
 
 {
   "value": {
@@ -132,10 +132,12 @@ Content-Length: 2526
     "temporarySessionTimeoutInSeconds": 0,
     "userSessionTimeoutInSeconds": 11,
     "passcodeLockGracePeriodInSeconds": 0,
-    "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
+    "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+    "userlessSharedAadModeEnabled": true
   }
 }
 ```
+
 
 
 

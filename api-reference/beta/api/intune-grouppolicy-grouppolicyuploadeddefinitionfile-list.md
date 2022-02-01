@@ -2,15 +2,15 @@
 title: 列出 groupPolicyUploadedDefinitionFiles
 description: 列出 groupPolicyUploadedDefinitionFile 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc0366e083e9bbc8d1fb327284f403aad225c54a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c79c58ab0014d40ce7411c7389d60ab58b1eafdf
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041848"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289865"
 ---
 # <a name="list-grouppolicyuploadeddefinitionfiles"></a>列出 groupPolicyUploadedDefinitionFiles
 
@@ -50,7 +50,7 @@ GET /deviceManagement/groupPolicyUploadedDefinitionFiles
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -80,9 +80,9 @@ Content-Length: 1176
       "targetNamespace": "Target Namespace value",
       "policyType": "admxIngested",
       "revision": "Revision value",
+      "fileName": "File Name value",
       "id": "0ce1a8cf-a8cf-0ce1-cfa8-e10ccfa8e10c",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "fileName": "File Name value",
       "status": "uploadInProgress",
       "content": "Y29udGVudA==",
       "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00",
@@ -101,6 +101,7 @@ Content-Length: 1176
   ]
 }
 ```
+
 
 
 

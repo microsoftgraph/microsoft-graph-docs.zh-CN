@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: efe14cacb2106a2d781ebc68abde4b7f914fc487
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6cbfe743012b9179fc14d1b847a897dad208c31f
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118122"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289991"
 ---
 # <a name="list-teamworktags"></a>列出团队合作标记
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62118122"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不支持。|
+|委派（工作或学校帐户）|TeamworkTag.Read、TeamworkTag.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|TeamworkTag.Read.All、TeamworkTag.ReadWrite.All|
 
@@ -56,7 +56,7 @@ GET /teams/{team-Id}/tags
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [teamworkTag](../resources/teamworktag.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [teamworkTag](../resources/teamworktag.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

@@ -2,15 +2,15 @@
 title: 更新 depIOSEnrollmentProfile
 description: 更新 depIOSEnrollmentProfile 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8e27c0579fc4e81d65d356ac84759f54fd49c3f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f35f57a218325410a2b0fcec91fb4f900b8a4b80
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59132895"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291209"
 ---
 # <a name="update-depiosenrollmentprofile"></a>更新 depIOSEnrollmentProfile
 
@@ -55,13 +55,13 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 |:---|:---|:---|
 |id|String|对象的 GUID 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |displayName|String|配置文件的名称 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|说明|String|配置文件的说明 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|String|配置文件的说明 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requiresUserAuthentication|Boolean|指示配置文件是否要求用户身份验证 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|configurationEndpointUrl|String|用于注册的配置终结点 URL 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 而不是 公司门户。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在公司门户注册的设备上需要安装文件。继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|字符串|用于注册的配置终结点 URL 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 进行身份验证，而不是公司门户。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在公司门户注册的设备上需要此权限。继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|指示这是否为默认配置文件 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Boolean|监督模式，如果为 True，则启用，否则为 false。 有关 https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune 其他信息，请参阅 。 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|监督模式，如果为 True，则启用，否则为 false。 有关[其他信息，请参阅Microsoft Intune](/mem/intune/enrollment/)注册设备。 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|支持部门信息 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Boolean|指示配置文件是否必需 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |locationDisabled|Boolean|指示位置服务设置窗格是否被禁用 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -85,7 +85,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 |awaitDeviceConfiguredConfirmation|Boolean|指示设备是否需要等待配置的确认|
 |sharedIPadMaximumUserCount|Int32|这指定可以使用共享网站的最大iPad。 仅适用于共享iPad模式。|
 |enableSharedIPad|Boolean|这指示设备是否将在支持多用户方案的模式下注册。 仅适用于共享 iPad。|
-|companyPortalVppTokenId|String|如果设置，则指示应该使用哪个 Vpp 令牌来部署公司门户许可。 必须设置"enableAuthenticationViaCompanyPortal"才能设置此属性。|
+|companyPortalVppTokenId|String|如果设置，则指示应在设备许可公司门户 Vpp 令牌。 必须设置"enableAuthenticationViaCompanyPortal"才能设置此属性。|
 |enableSingleAppEnrollmentMode|Boolean|指示设备在注册期间启用单个应用模式和应用锁。 默认为 false。 必须设置"enableAuthenticationViaCompanyPortal"和"companyPortalVppTokenId"才能设置此属性。|
 |homeButtonScreenDisabled|Boolean|指示是否禁用了"开始"按钮敏感度屏幕|
 |iMessageAndFaceTimeScreenDisabled|Boolean|指示 iMessage 和 FaceTime 屏幕是否被禁用|
@@ -107,11 +107,12 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 |userSessionTimeoutInSeconds|Int32|指示临时会话的超时|
 |passcodeLockGracePeriodInSeconds|Int32|指示锁定屏幕之前超时要求用户输入设备 passocde 以解锁它|
 |carrierActivationUrl|String|用于激活设备 eSIM 的运营商 URL。|
+|userlessSharedAadModeEnabled|Boolean|指示此 apple 设备被指定为支持"共享设备模式"方案。 这不同于"共享iPad"方案。 请参阅 [共享 iOS 和 iPadOS 设备](/mem/intune/enrollment/device-enrollment-shared-ios)。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -120,7 +121,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIosEnrollmentProfile
 Content-type: application/json
-Content-length: 2336
+Content-length: 2377
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -182,7 +183,8 @@ Content-length: 2336
   "temporarySessionTimeoutInSeconds": 0,
   "userSessionTimeoutInSeconds": 11,
   "passcodeLockGracePeriodInSeconds": 0,
-  "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
+  "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+  "userlessSharedAadModeEnabled": true
 }
 ```
 
@@ -191,7 +193,7 @@ Content-length: 2336
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2385
+Content-Length: 2426
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -254,9 +256,11 @@ Content-Length: 2385
   "temporarySessionTimeoutInSeconds": 0,
   "userSessionTimeoutInSeconds": 11,
   "passcodeLockGracePeriodInSeconds": 0,
-  "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
+  "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+  "userlessSharedAadModeEnabled": true
 }
 ```
+
 
 
 

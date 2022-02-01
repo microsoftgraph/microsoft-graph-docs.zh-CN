@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e953f6ac2552ced6ca2421a4d2d94eb7cf2290d9
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 1407c7ce6f4f76ead2c9004bdaa5c474a040897d
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345238"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292051"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthcapacitydetails"></a>更新 userExperienceAnalyticsBatteryHealthCapacityDetails
 
@@ -54,15 +54,16 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthCapacityDetails
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析电池运行状况容量对象的唯一标识符。|
-|activeDevices|Int32|租户中的活动设备数。 有效值 -2147483648 to 2147483647|
-|batteryCapacityGood|Int32|电池最大容量大于 80% 的设备数量。 有效值 -2147483648 to 2147483647|
-|batteryCapacityFair|Int32|电池最大容量大于 50%但小于 80% 的设备数量。 有效值 -2147483648 to 2147483647|
-|batteryCapacityPoor|Int32|电池最大容量小于 50% 的设备数量。 有效值 -2147483648 to 2147483647|
+|activeDevices|Int32|租户中的活动设备数。 有效值 -2147483648 2147483647|
+|batteryCapacityGood|Int32|电池最大容量大于 80% 的设备数量。 有效值 -2147483648 2147483647|
+|batteryCapacityFair|Int32|电池最大容量大于 50%但小于 80% 的设备数量。 有效值 -2147483648 2147483647|
+|batteryCapacityPoor|Int32|电池最大容量小于 50% 的设备数量。 有效值 -2147483648 2147483647|
+|lastRefreshedDateTime|DateTimeOffset|记录此容量详细信息实例的日期时间。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -71,14 +72,15 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthCapacityDetails
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthCapacityDetails
 Content-type: application/json
-Content-length: 204
+Content-length: 269
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthCapacityDetails",
   "activeDevices": 13,
   "batteryCapacityGood": 3,
   "batteryCapacityFair": 3,
-  "batteryCapacityPoor": 3
+  "batteryCapacityPoor": 3,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
 
@@ -87,7 +89,7 @@ Content-length: 204
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 253
+Content-Length: 318
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthCapacityDetails",
@@ -95,7 +97,8 @@ Content-Length: 253
   "activeDevices": 13,
   "batteryCapacityGood": 3,
   "batteryCapacityFair": 3,
-  "batteryCapacityPoor": 3
+  "batteryCapacityPoor": 3,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
 

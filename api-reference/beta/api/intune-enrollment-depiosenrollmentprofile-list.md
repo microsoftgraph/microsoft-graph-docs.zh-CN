@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 627344818ac69ecafe2c0771e6a360f57ed34008
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: f0408664dece0615a13964ac685c105abdd4d091
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491070"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290523"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>列出 depIOSEnrollmentProfiles
 
@@ -50,7 +50,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2662
+Content-Length: 2707
 
 {
   "value": [
@@ -130,11 +130,13 @@ Content-Length: 2662
       "temporarySessionTimeoutInSeconds": 0,
       "userSessionTimeoutInSeconds": 11,
       "passcodeLockGracePeriodInSeconds": 0,
-      "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
+      "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+      "userlessSharedAadModeEnabled": true
     }
   ]
 }
 ```
+
 
 
 

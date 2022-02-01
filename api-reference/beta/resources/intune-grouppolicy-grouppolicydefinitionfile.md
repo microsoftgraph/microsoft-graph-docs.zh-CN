@@ -1,16 +1,16 @@
 ---
 title: groupPolicyDefinitionFile 资源类型
-description: 实体表示管理模板 (XML) ADMX。 ADMX 文件包含按类别路径分组策略定义及其位置的集合。 组策略定义文件还包含受支持的语言，这些语言由与语言相关的 ADML 或管理 (模板) 语言文件。
+description: 实体表示管理模板 (XML) ADMX。 ADMX 文件包含按类别路径分组策略定义及其位置的集合。 组策略定义文件还包含支持的语言，这些语言由与语言相关的 ADML 或管理 (模板) 语言文件。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 884d2239eda3a86ed625fc2f7c1fa82e1bebd11a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 70f502578f7291a3dab89d37b0aa4722ea8ff9a1
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59086125"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292058"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "59086125"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-实体表示管理模板 (XML) ADMX。 ADMX 文件包含按类别路径分组策略定义及其位置的集合。 组策略定义文件还包含受支持的语言，这些语言由与语言相关的 ADML 或管理 (模板) 语言文件。
+实体表示管理模板 (XML) ADMX。 ADMX 文件包含按类别路径分组策略定义及其位置的集合。 组策略定义文件还包含支持的语言，这些语言由与语言相关的 ADML 或管理 (模板) 语言文件。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -32,12 +32,13 @@ ms.locfileid: "59086125"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|ADMX 文件的本地化友好名称。|
-|说明|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
+|description|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
 |languageCodes|字符串集合|ADMX 文件支持的语言代码。|
-|targetPrefix|String|指定引用 ADMX 文件内的命名空间的逻辑名称。|
+|targetPrefix|字符串|指定引用 ADMX 文件内的命名空间的逻辑名称。|
 |targetNamespace|String|指定用于标识 ADMX 文件内的命名空间的 URI。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
 |revision|String|与文件关联的修订版本。|
+|fileName|String|不带路径的 ADMX 文件的文件名。 例如：edge.admx|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
@@ -66,10 +67,12 @@ ms.locfileid: "59086125"
   "targetNamespace": "String",
   "policyType": "String",
   "revision": "String",
+  "fileName": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

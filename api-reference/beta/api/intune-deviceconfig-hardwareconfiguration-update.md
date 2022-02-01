@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89bc2c14aff1d5fff71b8461dccecc8964624670
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: f6fac95e1e99fd4548668fb336f8d2661b399830
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348407"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291013"
 ---
 # <a name="update-hardwareconfiguration"></a>更新 hardwareConfiguration
 
@@ -54,21 +54,21 @@ PATCH /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|硬件配置的唯一标识符|
-|version|Int32|硬件配置的版本|
-|displayName|String|硬件配置的名称|
+|version|Int32|硬件配置版本 (例如 1、2、3 ...) |
+|displayName|字符串|硬件配置的名称|
 |description|String|硬件配置说明|
 |createdDateTime|DateTimeOffset|创建硬件配置的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改硬件配置的时间戳。 此属性是只读的。|
 |fileName|String|硬件配置的文件名|
 |configurationFileContent|Binary|硬件配置的文件内容|
-|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|硬件配置的 Oem 类型。 可取值为：`dell`、`surface`、`surfaceDock`。|
+|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|硬件配置的 Oem (例如 DELL、HP、Surface 和 SurfaceDock) 。 可取值为：`dell`、`surface`、`surfaceDock`。|
 |roleScopeTagIds|字符串集合|硬件配置的范围标记标识列表|
-|perDevicePasswordDisabled|布尔|一个值，指示是否禁用每个开发密码|
+|perDevicePasswordDisabled|Boolean|一个值，指示是否禁用每个开发密码|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 

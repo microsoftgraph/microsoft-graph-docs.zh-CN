@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 0b00934fdc88db7a805b5eaabb60ec4b955c10ba
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 55e149a0d892a680dadf6fc32df61d25cb7070dd
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115581"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291195"
 ---
 # <a name="delete-teamworktag"></a>删除团队合作标记
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62115581"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不支持。|
+|委派（工作或学校帐户）|TeamworkTag.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|TeamworkTag.ReadWrite.All|
 

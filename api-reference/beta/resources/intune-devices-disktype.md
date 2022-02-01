@@ -2,15 +2,15 @@
 title: diskType 枚举类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cdd94ef38e889184e418700ba8e46c0cdd07bb98
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d076e53507268c793611cc4b10bd09272e6c9a30
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110996"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291090"
 ---
 # <a name="disktype-enum-type"></a>diskType 枚举类型
 
@@ -25,9 +25,10 @@ ms.locfileid: "59110996"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|unkown|0|尚未记录|
 |hdd|1|尚未记录|
 |ssd|2|尚未记录|
+|unknown|3|未知或默认 diskType 的枚举成员|
+
 
 
 

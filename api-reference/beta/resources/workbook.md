@@ -1,16 +1,16 @@
 ---
 title: 工作簿资源类型
 description: 包含相关的工作簿对象，如工作表、表、区域等。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 83f570301afe4a20aab6f77375e7a575df016d56
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: ac8454ea02a81151be85267cb70e7909cb47e83d
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870484"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291055"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
@@ -34,17 +34,17 @@ ms.locfileid: "52870484"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|names|[workbookNamedItem](workbooknameditem.md) 集合 |代表工作簿范围内命名项目的集合， (范围和常量) 。 只读。|
+|names|[workbookNamedItem](workbooknameditem.md) 集合 |表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
 |表格|[workbookTable](workbooktable.md) 集合 |表示与工作簿关联的表的集合。只读。|
 |Worksheets|[workbookWorksheet](workbookworksheet.md) 集合 |表示与工作簿关联的工作表的集合。只读。|
-|workbbookApplication|[workbookApplication](workbookapplication.md) |表示Excel工作簿的工作簿应用程序。|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |表示Excel工作簿的 workbookApplication 对象。|
 |operations|[workbookOperation](workbookoperation.md) 集合|工作簿操作的状态。 不支持获取操作集合，但如果响应中返回 `Location` 标头，可以获取长时间运行操作的状态。 只读。 可为 NULL。|
 
 ## <a name="functions"></a>函数
 
 [Excel 函数](#functions)使用 JSON 对象调用使用语法 `POST /me/drive/root/workbook/functions/{function-name}` 并在正文中提供函数自变量的工作簿函数。该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。`null` 的 `error` 值表示该函数执行成功。 
 
-受支持函数的完整列表在 [此处](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。
+受支持函数的完整列表在 [此处](https://support.office.com/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。
 
 _重要说明_： 
 * 使用 range 对象（而不是范围地址字符串）提供范围输入参数。  
@@ -56,7 +56,7 @@ _重要说明_：
 
 1. 要查找的值（亦称为“查阅值”）。
 2. 查阅值所在的区域。 请注意，查阅值应始终位于区域中的第一列，这样 VLOOKUP 才能正常运行。 例如，如果查阅值位于单元格 C2，那么区域应从 C 列开始。
-3. 包含返回值的区域的列号。 例如，如果指定 B2: D11 作为区域，应将 B 计为第一列，将 C 计为第二列，依此类推。
+3. 区域中包含返回值的列号。例如，如果指定 B2: D11 作为区域，那么应该将 B 算作第一列，C 作为第二列，以此类推。
 4. （可选）如果想要近似匹配，可指定 TRUE；如果想要返回值的完全匹配，则可指定 FALSE。
  如果未指定，默认值始终为 TRUE 或近似匹配。
 
@@ -64,7 +64,7 @@ _重要说明_：
 
 =VLOOKUP(查阅值, 包含查阅值的区域, 包含返回值的区域的列号, 视需要为近似匹配指定 TRUE 或为完全匹配指定 FALSE)
 
-（请参阅 [VLOOKUP Excel 函数](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)文档。）
+（请参阅 [VLOOKUP Excel 函数](https://support.office.com/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)文档。）
 
 下面的示例展示了如何使用 Excel REST API 调用 `vlookup`  函数，以及一个或多个输入区域。
 请求： 
@@ -106,7 +106,7 @@ content-type: application/json;odata.metadata
 
 =MEDIAN(A2:A6)
 
-（请参阅 [MEDIAN Excel 函数](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)文档。）
+（请参阅 [MEDIAN Excel 函数](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)文档。）
 
 下面的示例展示了如何调用 `median` 函数，以及如何使用 Excel REST API 传递一个或多个输入区域。 
 

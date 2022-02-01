@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ce5a893cd2c34b012db90833b9c904c9c5e4367
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ff64fc47af3147fc7540609dad0ce978d68e6d12
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336480"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291413"
 ---
 # <a name="get-userexperienceanalyticsdeviceperformance"></a>获取 userExperienceAnalyticsDevicePerformance
 
@@ -53,7 +53,7 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAn
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -77,7 +77,7 @@ Content-Length: 851
     "deviceName": "Device Name value",
     "model": "Model value",
     "manufacturer": "Manufacturer value",
-    "diskType": "hdd",
+    "diskType": "ssd",
     "operatingSystemVersion": "Operating System Version value",
     "bootScore": 9,
     "coreBootTimeInMs": 0,

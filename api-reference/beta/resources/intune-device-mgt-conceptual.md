@@ -4,12 +4,12 @@ description: 列出定义Graph组织的设备的 Microsoft (REST) Intune 终结�
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 314e4fd73b9495946aa2c056f307463c741f8bb0
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3abcb3af4e8f9fd5337be8ea5f08010016b6fe0d
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61342942"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292037"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -174,6 +174,8 @@ ms.locfileid: "61342942"
 - [管理状态](intune-devices-managementstate.md)
 - [通知邮件模板](intune-notification-notificationmessagetemplate.md)
 - [通知模板品牌选项](intune-notification-notificationtemplatebrandingoptions.md)
+- [Oem 担保](intune-devices-oemwarranty.md)
+- [Oem 提供的担保信息](intune-devices-oemwarrantyinformationonboarding.md)
 - [操作系统升级资格](intune-devices-operatingsystemupgradeeligibility.md)
 - [操作系统版本计数](intune-devices-osversioncount.md)
 - [平台类型](intune-esim-platformtype.md)
@@ -252,6 +254,9 @@ ms.locfileid: "61342942"
 - [用户体验分析从任意位置设备运行摘要](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [用户体验分析从任何硬件准备情况指标开始工作](intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md)
 - [用户体验分析从任何位置工作指标](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
+- [用户体验分析从任何模型性能开始工作](intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md)
+- [担保产品/服务](intune-devices-warrantyoffer.md)
+- [担保类型](intune-devices-warrantytype.md)
 - [Windows Defender 产品状态](intune-devices-windowsdefenderproductstatus.md)
 - [Windows Defender 扫描操作结果](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows 设备帐户](intune-devices-windowsdeviceaccount.md)

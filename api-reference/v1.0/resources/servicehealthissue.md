@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7a005605a2994b21e21aa638e554bd8d24327b6a
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 73b7abd734004f70c55947937fee1e0458b4a5cb
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072556"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289858"
 ---
 # <a name="servicehealthissue-resource-type"></a>serviceHealthIssue 资源类型
 
@@ -20,12 +20,12 @@ ms.locfileid: "62072556"
 
 服务运行状况问题可以是服务事件或服务公告。 例如：
 
-* 服务事件："Exchange服务关闭"。
+* 服务事件："Exchange邮箱服务关闭"。
 * 服务公告："用户在接收电子邮件时可能会遇到延迟"。
 
 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 serviceHealthIssue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|检索 [serviceHealthIssue](../resources/servicehealthissue.md) 对象的属性和关系。 |
@@ -35,19 +35,19 @@ ms.locfileid: "62072556"
 |属性|类型|说明|
 |:---|:---|:---|
 |classification|serviceHealthClassificationType|服务运行状况问题的类型。 可取值为：`advisory`、`incident`、`unknownFutureValue`。|
-|详细信息|集合 ([keyValuePair](../resources/keyvaluepair.md)) |有关服务运行状况问题的其他详细信息。 此属性不支持筛选器。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
+|详细信息|collection ([keyValuePair](../resources/keyvaluepair.md)) |有关服务运行状况问题的其他详细信息。 此属性不支持筛选器。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
 |endDateTime|DateTimeOffset|服务问题的结束时间。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
 |功能|字符串|服务问题的功能名称。|
 |featureGroup|String|服务问题的功能组名称。|
 |id|String|服务问题的 ID。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
-|impactDescription|字符串|服务问题影响的说明。|
-|isResolved|布尔|指示该问题是否已解决。|
+|impactDescription|String|服务问题影响的说明。|
+|isResolved|Boolean|指示该问题是否已解决。|
 |lastModifiedDateTime|DateTimeOffset|问题的上次修改时间。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
 |origin|serviceHealthOrigin|指示服务问题的来源。 可能的值是：`microsoft`、`thirdParty`、`customer`、`unknownFutureValue`。|
 |公告|collection ([serviceHealthIssuePost](../resources/servicehealthissuepost.md)) |服务问题的历史文章集合。|
 |service|String|指示受问题影响的服务。|
 |startDateTime|DateTimeOffset|服务问题的开始时间。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
-|状态|serviceHealthStatus|服务问题的状态。 可能的值是 `serviceOperational` `investigating` `restoringService` ：、、、、、、、、、 `verifyingService` `serviceRestored` `postIncidentReviewPublished` `serviceDegradation` `serviceInterruption` `extendedRecovery` `falsePositive` `investigationSuspended` `resolved` `mitigatedExternal` `mitigated` `resolvedExternal` `confirmed` `reported` `unknownFutureValue` 。 请参阅下表中的 [，了解](#servicehealthstatus-values)。|
+|状态|serviceHealthStatus|服务问题的状态。 可能的值是：、`serviceOperational`、`restoringService``investigating`、`verifyingService`、`serviceRestored`、、`postIncidentReviewPublished`、`serviceDegradation`、`serviceInterruption`、 `falsePositive``mitigatedExternal``mitigated``extendedRecovery``confirmed``investigationSuspended``unknownFutureValue``resolved``resolvedExternal``reported`。 请参阅下表中的 [，了解](#servicehealthstatus-values)。|
 |title|String|服务问题的标题。 继承自 [serviceAnnouncementBase](../resources/serviceannouncementbase.md)。|
 
 ### <a name="servicehealthstatus-values"></a>serviceHealthStatus 值
@@ -64,12 +64,12 @@ ms.locfileid: "62072556"
 |extendedRecovery|此状态指示正在采取纠正措施将服务还原到大多数用户，但需要一些时间到达所有受影响的系统。 如果进行了临时修复来减少影响，而永久修复正在等待应用，则你也可能看到此状态。|
 |falsePositive|经过详细调查后，服务将确认正常运行，并正常运行。 未观察到对服务的任何影响，或事件的原因源自服务之外。 具有此状态的事件和建议出现在历史视图中，直到它们过期 (在该事件最后帖子中所述的时间段之后)。|
 |investigationSuspended|如果我们对潜在问题的详细调查导致请求客户提供其他信息，以允许服务团队进一步调查，你将看到此状态。 如果服务团队需要你采取行动，他们将告知你他们需要哪些数据或日志。|
-|已解决|Microsoft Windows还原的服务状态对应的服务状态。|
-|mitigatedExternal|与Windows对应的服务状态。|
-|已缓解|与Windows恢复对应的服务状态。|
-|resolvedExternal|与Windows调查挂起对应的服务状态。|
-|confirmed|与Windows对应的服务状态。|
-|reported|与Windows调查对应的服务状态。|
+|已解决|保留供以后使用。|
+|mitigatedExternal|保留供以后使用。|
+|已缓解|保留供以后使用。|
+|resolvedExternal|保留供以后使用。|
+|confirmed|保留供以后使用。|
+|reported|保留供以后使用。|
 
 ## <a name="relationships"></a>关系
 无。

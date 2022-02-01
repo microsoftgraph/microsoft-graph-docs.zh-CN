@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b443628cf87a84c252e7faf530c1662614cc3a9
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 817a5c74a0fa3679a24c41f04f70f2fb5e6591de
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335710"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290432"
 ---
 # <a name="get-userexperienceanalyticsbatteryhealthdeviceperformance"></a>获取 userExperienceAnalyticsBatteryHealthDevicePerformance
 
@@ -53,7 +53,7 @@ GET /deviceManagement/userExperienceAnalyticsBatteryHealthDevicePerformance/{use
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 450
+Content-Length: 490
 
 {
   "value": {
@@ -77,11 +77,12 @@ Content-Length: 450
     "deviceId": "Device Id value",
     "deviceName": "Device Name value",
     "model": "Model value",
+    "manufacturer": "Manufacturer value",
     "maxCapacityPercentage": 5,
     "estimatedRuntimeInMinutes": 9,
     "batteryAgeInDays": 0,
     "deviceBatteryHealthScore": 8,
-    "healthStatus": "Health Status value"
+    "healthStatus": "insufficientData"
   }
 }
 ```

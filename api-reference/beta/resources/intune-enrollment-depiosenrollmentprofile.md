@@ -1,16 +1,16 @@
 ---
 title: depIOSEnrollmentProfile 资源类型
-description: DepIOSEnrollmentProfile 资源表示 Apple Device Enrollment Program (DEP) 特定于 iOS 配置的注册配置文件。 必须先将此类配置文件分配给 Apple DEP 序列号，然后相应的设备才能通过 DEP 注册。
+description: DepIOSEnrollmentProfile 资源表示 Apple 设备注册计划 (DEP) 特定于 iOS 配置的注册配置文件。 必须先将此类配置文件分配给 Apple DEP 序列号，然后相应的设备才能通过 DEP 注册。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2971f5edd0be24ddb6ff4e8bd6846ea9560b9a0d
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 191e3aba5212cf7907ffe77721d8a70a63fe0f6c
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488582"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290868"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>depIOSEnrollmentProfile 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "60488582"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-DepIOSEnrollmentProfile 资源表示 Apple Device Enrollment Program (DEP) 特定于 iOS 配置的注册配置文件。 必须先将此类配置文件分配给 Apple DEP 序列号，然后相应的设备才能通过 DEP 注册。
+DepIOSEnrollmentProfile 资源表示 Apple 设备注册计划 (DEP) 特定于 iOS 配置的注册配置文件。 必须先将此类配置文件分配给 Apple DEP 序列号，然后相应的设备才能通过 DEP 注册。
 
 
 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)
@@ -38,14 +38,14 @@ DepIOSEnrollmentProfile 资源表示 Apple Device Enrollment Program (DEP) 特�
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|String|配置文件的名称 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|说明|String|配置文件的说明 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|字符串|配置文件的名称 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|字符串|配置文件的说明 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requiresUserAuthentication|Boolean|指示配置文件是否要求用户身份验证 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |configurationEndpointUrl|String|用于注册的配置终结点 URL 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 而不是 公司门户。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在公司门户注册的设备上需要安装文件。继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在公司门户注册的设备上需要此权限。继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|指示这是否为默认配置文件 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Boolean|监督模式，如果为 True，则启用，否则为 false。 有关 https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune 其他信息，请参阅 。 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|监督模式，如果为 True，则启用，否则为 false。 有关[其他信息，请参阅Microsoft Intune](/mem/intune/enrollment/)注册设备。 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|支持部门信息 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Boolean|指示配置文件是否必需 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |locationDisabled|Boolean|指示位置服务设置窗格是否被禁用 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -69,7 +69,7 @@ DepIOSEnrollmentProfile 资源表示 Apple Device Enrollment Program (DEP) 特�
 |awaitDeviceConfiguredConfirmation|Boolean|指示设备是否需要等待配置的确认|
 |sharedIPadMaximumUserCount|Int32|这指定可以使用共享网站的最大iPad。 仅适用于共享iPad模式。|
 |enableSharedIPad|Boolean|这指示设备是否将在支持多用户方案的模式下注册。 仅适用于共享 iPad。|
-|companyPortalVppTokenId|String|如果设置，则指示应在设备许可公司门户 Vpp 令牌。 必须设置"enableAuthenticationViaCompanyPortal"才能设置此属性。|
+|companyPortalVppTokenId|String|如果设置，则指示应该使用哪个 Vpp 令牌来部署公司门户许可。 必须设置"enableAuthenticationViaCompanyPortal"才能设置此属性。|
 |enableSingleAppEnrollmentMode|Boolean|指示设备在注册期间启用单个应用模式和应用锁。 默认为 false。 必须设置"enableAuthenticationViaCompanyPortal"和"companyPortalVppTokenId"才能设置此属性。|
 |homeButtonScreenDisabled|Boolean|指示是否禁用了"开始"按钮敏感度屏幕|
 |iMessageAndFaceTimeScreenDisabled|Boolean|指示 iMessage 和 FaceTime 屏幕是否被禁用|
@@ -91,6 +91,7 @@ DepIOSEnrollmentProfile 资源表示 Apple Device Enrollment Program (DEP) 特�
 |userSessionTimeoutInSeconds|Int32|指示临时会话的超时|
 |passcodeLockGracePeriodInSeconds|Int32|指示锁定屏幕之前超时要求用户输入设备 passocde 以解锁它|
 |carrierActivationUrl|String|用于激活设备 eSIM 的运营商 URL。|
+|userlessSharedAadModeEnabled|Boolean|指示此 apple 设备被指定为支持"共享设备模式"方案。 这不同于"共享iPad"方案。 请参阅 [共享 iOS 和 iPadOS 设备](/mem/intune/enrollment/device-enrollment-shared-ios)。|
 
 ## <a name="relationships"></a>关系
 无
@@ -165,9 +166,11 @@ DepIOSEnrollmentProfile 资源表示 Apple Device Enrollment Program (DEP) 特�
   "temporarySessionTimeoutInSeconds": 1024,
   "userSessionTimeoutInSeconds": 1024,
   "passcodeLockGracePeriodInSeconds": 1024,
-  "carrierActivationUrl": "String"
+  "carrierActivationUrl": "String",
+  "userlessSharedAadModeEnabled": true
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 0c2cba0986213edda69b6668b2cfc6d01ba586b8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ef00a4b1dc602c4ae9f9acad472873345c9c65c
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129364"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290635"
 ---
 # <a name="get-teamworktag"></a>获取团队合作标记
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62129364"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不支持。|
+|委派（工作或学校帐户）|TeamworkTag.Read、TeamworkTag.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|TeamworkTag.Read.All、TeamworkTag.ReadWrite.All|
 

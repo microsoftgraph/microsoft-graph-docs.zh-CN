@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4090d3ea94802d7e8835afc6b792f51d62f148c1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eac4cbc1c60c206edd3490ea206cefd37eb4d3be
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019772"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291111"
 ---
 # <a name="list-registrants"></a>列出注册表项
 
@@ -18,9 +18,9 @@ ms.locfileid: "61019772"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表组织者获取[onlineMeeting 的 meetingRegistrants](../resources/meetingregistrant.md)列表。 [](../resources/onlinemeeting.md)
+代表组织者获取 [onlineMeeting 的 meetingRegistrants](../resources/meetingregistrant.md) 列表。[](../resources/onlinemeeting.md)
 
-可以使用此方法获取网络研讨会的注册[Microsoft Teams报告](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3)。
+可以使用此方法获取网络研讨会的注册[Microsoft Teams报告](https://support.microsoft.com/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3)。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ GET /me/onlineMeetings/{id}/registration/registrants
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称            | 说明               |
 | :-------------- | :------------------------ |
@@ -54,7 +54,7 @@ GET /me/onlineMeetings/{id}/registration/registrants
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [meetingRegistrant](../resources/meetingRegistrant.md) 对象集合。 **joinWebUrl** 和 **questionId** 属性将为 `null` 。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [meetingRegistrant](../resources/meetingRegistrant.md) 对象集合。 **joinWebUrl** 和 **questionId** 属性将为 `null`。
 
 ## <a name="example"></a>示例
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/list-registratrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-registratrants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

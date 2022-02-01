@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4700f48823a54bba155841b492e5ff139f05e235
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3e89e77e416eb5bda0ca2739be82e3b10911b768
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345421"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291897"
 ---
 # <a name="hardwareconfigurationdevicestate-resource-type"></a>hardwareConfigurationDeviceState 资源类型
 
@@ -28,15 +28,15 @@ ms.locfileid: "61345421"
 |[列出 hardwareConfigurationDeviceStates](../api/intune-deviceconfig-hardwareconfigurationdevicestate-list.md)|[hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) 集合|列出 [hardwareConfigurationDeviceState 对象的属性和](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) 关系。|
 |[获取 hardwareConfigurationDeviceState](../api/intune-deviceconfig-hardwareconfigurationdevicestate-get.md)|[hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md)|读取 [hardwareConfigurationDeviceState 对象的属性和](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) 关系。|
 |[创建 hardwareConfigurationDeviceState](../api/intune-deviceconfig-hardwareconfigurationdevicestate-create.md)|[hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md)|创建新的 [hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) 对象。|
-|[删除 hardwareConfigurationDeviceState](../api/intune-deviceconfig-hardwareconfigurationdevicestate-delete.md)|None|删除 [hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md)。|
+|[删除 hardwareConfigurationDeviceState](../api/intune-deviceconfig-hardwareconfigurationdevicestate-delete.md)|无|删除 [hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md)。|
 |[更新 hardwareConfigurationDeviceState](../api/intune-deviceconfig-hardwareconfigurationdevicestate-update.md)|[hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md)|更新 [hardwareConfigurationDeviceState 对象](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) 的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|硬件配置脚本设备状态实体的键。 此属性是只读的。|
+|id|字符串|硬件配置脚本设备状态实体的键。 此属性是只读的。|
 |deviceName|String|设备名称|
-|osVersion|String|设备的操作系统版本。|
+|osVersion|String|设备的操作系统版本 (例如 10.0.19042.1165、10.0.19042.1288 等) |
 |upn|String|用户主体名称 (UPN)。|
 |internalVersion|Int32|策略内部版本|
 |lastStateUpdateDateTime|DateTimeOffset|执行硬件配置的最后时间戳|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a06604a540ebe054d4a9a1c964b568c8210a1f29
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 8a8f9b9ddfa16b05e7e9295e8e71649fddbb59e2
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61711618"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290817"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -146,7 +146,6 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 |userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md) 集合|用户体验分析设备启动历史记录|
 |userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcess.md) 集合|用户体验分析设备启动过程|
 |userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcessPerformance.md) 集合|用户体验分析设备启动过程性能|
-|userExperienceAnalyticsScoreHistory|[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userExperienceAnalyticsScoreHistory.md) 集合|用户体验分析设备启动分数历史记录|
 |**注册**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 集合|每个租户多个 DEP 令牌的集合。|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合|导入的设备标识。|
@@ -201,7 +200,7 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 |**疑难解答**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|租户的故障排除事件列表。|
 |**Windows 信息保护**|
-|intuneBrandingProfiles|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) 集合|面向客户组的 Intune 品牌打造AAD配置文件|
+|intuneBrandingProfiles|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) 集合|面向客户组的 Intune AAD配置文件|
 |windowsInformationProtectionAppLearningSummaries|[windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) 集合|Windows 信息保护应用学习摘要。|
 |windowsInformationProtectionNetworkLearningSummaries|[windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) 集合|Windows 信息保护网络学习摘要。|
 

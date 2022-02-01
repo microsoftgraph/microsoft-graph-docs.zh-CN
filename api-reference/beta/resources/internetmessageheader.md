@@ -1,16 +1,16 @@
 ---
 title: internetMessageHeader 资源类型
-description: '表示 Internet 邮件头（由 RFC5322 定义）的键值对，提供 '
-localization_priority: Normal
+description: '一个键值对，表示由 RFC5322 定义的 Internet 邮件头，它提供 '
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
 author: abheek-das
-ms.openlocfilehash: 687465656844722a04c94549c4d8e6f90156f4f4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.prod: outlook
+ms.openlocfilehash: 5c17023185261b86a53eb87eccc5fce8be8df1d1
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130527"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291167"
 ---
 # <a name="internetmessageheader-resource-type"></a>internetMessageHeader 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "50130527"
 
 一个键值对，它表示 Internet 邮件头，正如 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 所定义的那样，它提供邮件获取的从发件人到收件人的网络路径的详细信息。
 
-有关 Internet 邮件头示例，请参阅[查看电子邮件头](https://support.office.com/en-us/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4)。
+有关 Internet 邮件头示例，请参阅[查看电子邮件头](https://support.office.com/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4)。
 
 
 ## <a name="properties"></a>属性

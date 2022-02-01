@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 16e743648ecca3db186ad7b223d67c57f215c1bd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 69b747f9ceb08ddac13381f983dda8b8fc95f72b
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122847"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291399"
 ---
 # <a name="update-teamworktag"></a>更新团队合作标记
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62122847"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不支持。|
+|委派（工作或学校帐户）|TeamworkTag.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|TeamworkTag.ReadWrite.All|
 
@@ -47,7 +47,7 @@ PATCH /teams/{team-Id}/tags/{teamworkTag-Id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [teamworkTag](../resources/teamworktag.md) 对象的 JSON 表示形式。
 
-下表显示更新团队合作标记 时所需的 [属性](../resources/teamworktag.md)。
+下表显示更新团队合作标记时所需的 [属性](../resources/teamworktag.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -55,7 +55,7 @@ PATCH /teams/{team-Id}/tags/{teamworkTag-Id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新 `200 OK` 的 [teamworkTag](../resources/teamworktag.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [teamworkTag](../resources/teamworktag.md) 对象。
 
 ## <a name="examples"></a>示例
 
