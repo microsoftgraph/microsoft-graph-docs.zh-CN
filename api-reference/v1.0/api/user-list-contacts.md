@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7effbad16582aac43ec55292e6d63289b6b812bb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6e8b9bb0228eb0affa8c4d360291ae50e9958682
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110415"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282070"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -35,7 +35,7 @@ ms.locfileid: "62110415"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取用户邮箱中的所有联系人，请执行以下操作：
+若要获取用户的默认联系人文件夹中的所有联系人，请执行以下操作：
 
 <!-- { "blockType": "ignored" } -->
 ```http
