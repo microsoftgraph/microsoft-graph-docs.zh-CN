@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5f7453dd5c08f282baa7667ad5793c9223e586d0
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 6a30360dddeb06d9f8ac4d1ff5b485229087c3ce
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695446"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282034"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -150,7 +150,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 拼写更正是处理用户查询中的拼写错误和匹配内容中正确单词之间差异的常用方法。 在原始用户查询中检测到拼写错误时，可以获得原始用户查询或更正的备用查询的搜索结果。 还可以在 [searchresponse](searchresponse.md) 的 **queryAlterationResponse** 属性中获取拼写错误的拼写更正信息。
 
-在 [Query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 方法的请求正文中，指定应应用于查询以进行拼写更正的 **queryAlterationOptions**。 在 [searchAlterationOptions](./searchalterationoptions.md) 中定义 **queryAlterationOptions** 的描述。
+在 [searchRequest](./searchrequest.md) 中，指定应应用于查询以进行拼写更正的 **queryAlterationOptions**。 有关 **queryAlterationOptions** 属性的详细信息，请参阅 [searchAlterationOptions](./searchalterationoptions.md)。
 
 有关如何使用拼写更正的示例，请参见[请求拼写更正](/graph/search-concept-speller)。
 
