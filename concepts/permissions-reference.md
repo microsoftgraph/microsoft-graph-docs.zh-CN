@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 56a6d97dbaba0a66e2d30d0a9afea481f78063e5
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: d169638dd2565101bcf5e21fb8becdc88b9d25dd
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62261761"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291462"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1330,7 +1330,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -2189,8 +2189,16 @@ _任务_ 权限用于控制对待办事项任务和 Outlook 任务（已弃用�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamworkTag.ReadWrite_| 读取和写入 Microsoft Teams 中的标记。 | 在没有登录用户的情况下读取和写入 Microsoft Teams 中任何团队内的标记。  | 是 | 否 |
-| _TeamworkTag.Read_ | 读取 Microsoft Teams 中的标记。 | 在没有登录用户的情况下读取 Microsoft Teams 中任何团队内的选项卡。 | 是 | 否 |
+| _TeamworkTag.ReadWrite_| 读取和写入 Microsoft Teams 中的标记。 | 允许应用代表已登录的用户在 Teams 中读取和写入标签。   | 是 | 否 |
+| _TeamworkTag.Read_ | 读取 Microsoft Teams 中的标记。 | 允许应用代表已登录的用户在 Teams 中读取标签。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkTag.ReadWrite.All_| 读取和写入 Microsoft Teams 中的标记。 | 允许应用在没有登录的用户的情况下读取和写入 Teams 中的标记。   | 是 | 否 |
+| _TeamworkTag.Read.All_ | 读取 Microsoft Teams 中的标记。 | 允许应用在没有登录的用户的情况下读 Teams 中的标记 | 是 | 否 |
+
 
 ## <a name="terms-of-use-permissions"></a>使用条款权限
 
