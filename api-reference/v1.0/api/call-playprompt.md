@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 854155a85046c00743d242e89e67002ed6abe275
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9af7512dc14491866da93f4c6632334c4bb85c7a
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006983"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347828"
 ---
 # <a name="call-playprompt"></a>call： playPrompt
 
@@ -50,10 +50,10 @@ POST /communications/calls/{id}/playPrompt
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |prompts|[MediaPrompt](../resources/mediaprompt.md) 集合| 要播放的提示。 支持的最大 MediaPrompt 集合大小为 20。|
-|clientContext|String|唯一的客户端上下文字符串。 最多可包含 256 个字符。|
+|clientContext|字符串|唯一的客户端上下文字符串。 最多可包含 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [playPromptOperation](../resources/playpromptoperation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [playPromptOperation](../resources/playpromptoperation.md) 对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -102,8 +102,12 @@ Content-Length: 166
 [!INCLUDE [sample-code](../includes/snippets/java/call-playprompt-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-playprompt-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-playprompt-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

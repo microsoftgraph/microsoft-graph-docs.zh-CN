@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 911b99b09cd3da0cf53fbbd316c24bd1c1fc69b2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 859bb73c4fc41ea84847995add65ddd69deaaf36
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091315"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349336"
 ---
 ```powershell
 
@@ -15,6 +15,7 @@ $params = @{
     Name = "Personal events"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserCalendarGroup -UserId $userId -BodyParameter $params
 
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 816b1c1f7c340f96514007418ba2be7b7862580a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bc53828d90a1f80b81bf49ae4e988b1b993a3308
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032164"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349118"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>取消 privilegedRoleAssignmentRequest
 
@@ -22,7 +22,7 @@ ms.locfileid: "61032164"
 
 取消 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -47,7 +47,7 @@ POST /privilegedRoleAssignmentRequests/{requestid}/cancel
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 Ok` 响应代码。 它在响应[正文中返回 privilegedRoleAssignmentRequest。](../resources/privilegedroleassignmentrequest.md)
+如果成功，此方法返回 `200 Ok` 响应代码。 它在响应 [正文中返回 privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 。
 
 ### <a name="error-codes"></a>错误代码
 此 API 返回标准 HTTP 错误代码。 此外，它还返回下表中列出的自定义错误代码。
@@ -87,8 +87,12 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/7c53453e-
 [!INCLUDE [sample-code](../includes/snippets/java/cancel-privilegedroleassignmentrequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cancel-privilegedroleassignmentrequests-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cancel-privilegedroleassignmentrequests-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

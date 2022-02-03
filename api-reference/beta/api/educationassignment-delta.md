@@ -5,12 +5,12 @@ author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 075a74b56d3d28c0a40a1f703efe0ee6e0ee9787
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 5be75f26718c2ef5f0b7f7105a006c33d8eae7ca
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524724"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347681"
 ---
 # <a name="educationassignment-delta"></a>educationAssignment： delta
 命名空间：microsoft.graph
@@ -33,7 +33,7 @@ ms.locfileid: "61524724"
 | 应用程序                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法不支持 `$expand` 、 、 `$orderby` 和 `$search` `$filter` OData 查询参数。
+此方法不支持 、 `$expand`、 `$orderby`和 `$search``$filter` OData 查询参数。
 
 此方法仅支持 `$top` OData 查询参数。
 
@@ -68,7 +68,7 @@ GET /education/classes/{educationClassId}/members/{educationUserId}/assignments/
 
 下面展示了示例请求。 
 
-使用 `$top` 参数指定要返回的工作分配数。 参数是可选的，但最好在有很长的分配列表时使用它;否则，将获取课程的所有作业。
+`$top`使用 参数指定要返回的工作分配数。 参数是可选的，但最好在有很长的分配列表时使用它;否则，将获取课程的所有作业。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -96,8 +96,12 @@ GET https://graph.microsoft.com/beta/education/education/classes/72a7baec-c3e9-4
 [!INCLUDE [sample-code](../includes/snippets/java/get-assignments-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -108,7 +112,7 @@ GET https://graph.microsoft.com/beta/education/education/classes/72a7baec-c3e9-4
 
 下面展示了示例响应。 
 
->**注意：** 从 `@odata.nextLink` 响应获取 ，进行另一个呼叫并获取下一组分配。
+>**注意：** 从响应 `@odata.nextLink` 获取 ，进行另一个呼叫并获取下一组分配。
 
 <!-- {
   "blockType": "response",
@@ -224,7 +228,7 @@ Content-length: 344
 
 下面展示了示例请求。
 
-对此 `@odata.nextLink` 请求使用上一调用中的值。
+`@odata.nextLink`对此请求使用上一调用中的值。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -252,8 +256,12 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$s
 [!INCLUDE [sample-code](../includes/snippets/java/get-assignments-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -265,7 +273,7 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$s
 
 下面展示了示例响应。
 
->**注意：** 您必须继续使用结果 `@odata.nextLink` 调用的值，直到在响应 `@odata.deltaLink` 中获取 属性。
+>**注意：** 您必须继续使用结果 `@odata.nextLink` 调用的值，直到在响应中 `@odata.deltaLink` 获取 属性。
 
 <!-- {
   "blockType": "response",
@@ -381,7 +389,7 @@ Content-length: 344
 
 下面展示了示例请求。
 
-对此 `@odata.deltaLink` 请求使用上一调用中的值。
+`@odata.deltaLink`对此请求使用上一调用中的值。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -409,8 +417,12 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$d
 [!INCLUDE [sample-code](../includes/snippets/java/get-assignments-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -421,9 +433,9 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$d
 
 下面展示了示例响应。
 
->**注意：** 必须继续使用 获取自初始 Delta 调用以来新建或修改 `@odata.deltaLink` 的工作分配。
+>**注意：** 必须继续使用 获取自 `@odata.deltaLink` 初始 Delta 调用以来新建或修改的工作分配。
 
->有时增量响应会非常大，在这种情况下，将返回 以继续 `@odata.nextLink` 提取更改，直到再次 `@odata.deltaLink` 命中 。
+>有时增量响应会非常大 `@odata.nextLink` ，在这种情况下，将返回 以继续提取更改，直到再次命中 `@odata.deltaLink` 。
 
 <!-- {
   "blockType": "response",

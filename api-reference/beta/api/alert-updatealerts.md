@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: f6cf291183a4f12c8252b09eec70fa948bba49a1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 56dbbc3e3b2632d154b0347feac1b525fe040247
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991106"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339369"
 ---
 # <a name="alert-updatealerts"></a>警报：updateAlerts
 
@@ -50,11 +50,11 @@ POST /security/alerts/updateAlerts
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|[警报](../resources/alert.md)集合| 要更新的警报集合。 每个实体必须具有 **id** **、vendorInformation** 和其他可编辑属性以进行更新。|
+|值|[警报](../resources/alert.md)集合| 要更新的警报集合。 每个实体必须具有 **id**、 **vendorInformation** 和其他可编辑属性以进行更新。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200, OK` 响应正文中返回 [响应](../resources/alert.md) 代码和 alert 集合对象。
+如果成功，此方法在响应 `200, OK` 正文中返回 [响应](../resources/alert.md) 代码和 alert 集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -110,8 +110,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/alert-updatealerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/alert-updatealerts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/alert-updatealerts-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

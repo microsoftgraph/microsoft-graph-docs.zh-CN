@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 73548492a90dae28a9749ba4b19edd0ee2a333f8
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 97a8744d77777c4cf574a59d443f5bc4c8c3a167
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860941"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342492"
 ---
 # <a name="updatableasset-enrollassetsbyid"></a>updatableAsset： enrollAssetsById
 命名空间：microsoft.graph.windowsUpdates
@@ -53,9 +53,9 @@ POST /admin/windows/updates/updatableAssets/enrollAssetsById
 
 |参数|类型|说明|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可取值为：`feature`、`unknownFutureValue`。|
-|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
-|ids|String collection|与 **updatableAsset** 资源相对应的标识符列表，这些资源由服务注册为给定 **updateCategory** 的更新管理。|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要管理的服务的更新类别。 支持 **updateCategory 值的子集**。 可取值为：`feature`、`unknownFutureValue`。|
+|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是： `#microsoft.graph.windowsUpdates.azureADDevice`。|
+|ids|String collection|与 **updatableAsset** 资源相对应的标识符列表，这些标识符由服务针对给定 **updateCategory 注册更新管理**。|
 
 ## <a name="response"></a>响应
 
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableasset-enrollassetsbyid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableasset-enrollassetsbyid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

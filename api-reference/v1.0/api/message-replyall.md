@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8e0ca4c9ee3df8a597848873dfef50570212df46
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f73a1bd733f157e409582849289b120b432a7940
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984527"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343249"
 ---
 # <a name="message-replyall"></a>消息：replyAll
 
@@ -19,7 +19,7 @@ ms.locfileid: "60984527"
 使用 JSON 或 MIME [格式](../resources/message.md) 答复邮件的所有收件人。
 
 使用 JSON 格式时：
-- 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
+- 指定参数的 comment 或 `message` **body** 属性。 指定这两者将返回 HTTP 400 错误请求错误。
 - 如果原始邮件在 **replyTo** 属性中指定收件人，则根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，将答复发送给 **replyTo** 中的收件人，而不是 **from** 属性中的收件人。
 
 使用 MIME 格式时：
@@ -50,7 +50,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。 必需 |
+| Authorization  | string  | Bearer {token}。 必填 |
 | Content-Type | string  | 实体正文中的数据性质。必需。<br/> 对 JSON 对象使用 `application/json`，对 MIME 内容使用 `text/plain`。 |
 
 ## <a name="request-body"></a>请求正文
@@ -103,8 +103,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/message-replyall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-replyall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-replyall-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

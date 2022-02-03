@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e7d06aabec1a13888309c90d44e2f32a89bb58fb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8c478c8531f4e06d76c9b04afea84a7c14128bd9
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60981853"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342687"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission：未提交
 
@@ -43,7 +43,7 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{subm
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `200 Ok` 响应正文中返回 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象。
+如果成功，此方法在响应 `200 Ok` 正文中返回 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -75,8 +75,12 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 [!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-unsubmit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-unsubmit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-unsubmit-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

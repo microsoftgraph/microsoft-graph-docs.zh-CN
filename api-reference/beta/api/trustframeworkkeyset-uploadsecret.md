@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e325003e6673a06ff8b4bad1484168dc27dc63c0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4a37724f720d8b5ed5b2d18a7b75da2b60bd1eb9
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013661"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346396"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet：uploadSecret
 
@@ -18,7 +18,7 @@ ms.locfileid: "61013661"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upload一个纯文本密码到[trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 密码示例包括 Azure Active Directory、Google、Facebook 或其他任何标识提供者中的应用程序密码。 他的 方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
+Upload一个纯文本密码到 [trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 密码示例包括 Azure Active Directory、Google、Facebook 或其他任何标识提供者中的应用程序密码。 他的方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -51,10 +51,10 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|use|String|类似于 **trustFrameworkKey 的 use 属性**。 |
+|use|字符串|类似于 **trustFrameworkKey 的 use 属性**。|
 |k|String|类似于 **trustFrameworkKey** 的 **k** 属性。 这是用于发送密码的字段。|
 |nbf|Int64|类似于 **trustFrameworkKey** 的 **nbf** 属性。|
-|exp|Int64|类似于 **trustFrameworkKey** 的 **exp** 属性。|
+|exp|Int64|类似于 **trustFrameworkKey 的 exp 属性**。|
 
 ## <a name="response"></a>响应
 
@@ -99,8 +99,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-uploadsecret-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-uploadsecret-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/trustframeworkkeyset-uploadsecret-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

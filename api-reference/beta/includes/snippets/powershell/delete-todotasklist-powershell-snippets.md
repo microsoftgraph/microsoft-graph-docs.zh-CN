@@ -1,16 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 54b3e3a8302cd8f376a008f76094e5eef9f64666
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9584e934ec819311cd0b83c1abb4710a8e5dcac8
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115351"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351065"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Users
 
+# A UPN can also be used as -UserId.
 Remove-MgUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId
 
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: b2a85cac85d2f61974fa15d9931d03a9d254ecb6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f834fc291a2294de095a6e223d3b144e4e3e995a
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130932"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339723"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -18,7 +18,7 @@ ms.locfileid: "62130932"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建 [openTypeExtension (openTypeExtension](../resources/opentypeextension.md)) ，并添加受支持资源的新实例或现有实例中的自定义属性。
+使用 [openTypeExtension](../resources/opentypeextension.md) (创建开放扩展) 受支持的资源的新实例或现有实例中添加自定义属性。
 
 "权限" ["](#permissions) "部分中列出支持打开扩展的资源。
 
@@ -102,7 +102,7 @@ POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
 
 ## <a name="request-body"></a>请求正文
 
-提供 [openTypeExtension](../resources/opentypeextension.md)的 JSON 正文，并具有以下所需的名称值对和任何其他自定义数据。 JSON 负载中的数据可以是基元类型或基元类型数组。
+提供 [openTypeExtension](../resources/opentypeextension.md) 的 JSON 正文，并具有以下所需的名称-值对和任何其他自定义数据。 JSON 负载中的数据可以是基元类型或基元类型数组。
 
 | 名称       | 值 |
 |:---------------|:----------|
@@ -489,6 +489,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

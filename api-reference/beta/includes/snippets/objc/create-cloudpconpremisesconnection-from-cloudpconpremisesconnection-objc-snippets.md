@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fc1eab949d96138e1b4cadcc33c2d640b54c28438d16749ecbdd33e2d62a6b17
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8746a9a2cf6e6466c871f4eae124749cbd6d171
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57219902"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349630"
 ---
 ```objc
 
@@ -17,15 +17,16 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphCloudPcOnPremisesConnection *cloudPcOnPremisesConnection = [[MSGraphCloudPcOnPremisesConnection alloc] init];
-[cloudPcOnPremisesConnection setDisplayName:@"Display Name value"];
+[cloudPcOnPremisesConnection setDisplayName:@"test-canary-02"];
+[cloudPcOnPremisesConnection setType: [MSGraphCloudPcOnPremisesConnectionType hybridAzureADJoin]];
 [cloudPcOnPremisesConnection setSubscriptionId:@"0ac520ee-14c0-480f-b6c9-0a90c585ffff"];
-[cloudPcOnPremisesConnection setSubscriptionName:@"Subscription Name value"];
-[cloudPcOnPremisesConnection setAdDomainName:@"Active Directory Domain Name value"];
-[cloudPcOnPremisesConnection setAdDomainUsername:@"Active Directory Domain User Name value"];
-[cloudPcOnPremisesConnection setOrganizationalUnit:@"Organization Unit value"];
-[cloudPcOnPremisesConnection setResourceGroupId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG"];
-[cloudPcOnPremisesConnection setVirtualNetworkId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet"];
-[cloudPcOnPremisesConnection setSubnetId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"];
+[cloudPcOnPremisesConnection setSubscriptionName:@"CPC customer 001 test subscription"];
+[cloudPcOnPremisesConnection setAdDomainName:@"contoso001.com"];
+[cloudPcOnPremisesConnection setAdDomainUsername:@"dcadmin"];
+[cloudPcOnPremisesConnection setOrganizationalUnit:@"OU=Domain Controllers, DC=contoso001, DC=com"];
+[cloudPcOnPremisesConnection setResourceGroupId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG"];
+[cloudPcOnPremisesConnection setVirtualNetworkId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET"];
+[cloudPcOnPremisesConnection setSubnetId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet"];
 
 NSError *error;
 NSData *cloudPcOnPremisesConnectionData = [cloudPcOnPremisesConnection getSerializedDataWithError:&error];

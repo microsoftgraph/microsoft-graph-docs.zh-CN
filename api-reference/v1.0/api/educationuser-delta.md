@@ -5,18 +5,18 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 49b0c989c06da8b3586bf065610e52261b6729d6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 46146d0f7daf98cdb02987a8deb1c46e150c3e06
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993353"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340859"
 ---
 # <a name="educationuser-delta"></a>educationUser： delta
 
 命名空间：microsoft.graph
 
-获取新创建或更新的 [educationUser，](../resources/educationuser.md) 而无需执行整个集合的完整读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
+获取新创建或更新的 [educationUser](../resources/educationuser.md) ，而无需执行整个集合的完整读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
 
 ## <a name="permissions"></a>权限
 
@@ -84,8 +84,12 @@ GET https://graph.microsoft.com/v1.0/education/users/delta
 [!INCLUDE [sample-code](../includes/snippets/java/educationuser-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationuser-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationuser-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

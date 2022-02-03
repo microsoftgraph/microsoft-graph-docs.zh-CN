@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 2d120ffb3d1628611404db9b50e7099cf00cc808
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d1d0fe73770e6ef5994423ebeee0152975ccd047
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980347"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340139"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole： selfActivate
 
@@ -22,7 +22,7 @@ ms.locfileid: "60980347"
 
 激活分配给请求者的角色。
 
->**注意：** 自 2018 年 12 月起，将不再支持此 API，也不应使用。 请[改为使用 Create PrivilegedRoleAssignmentRequest。](privilegedroleassignmentrequest-post.md)
+>**注意：** 自 2018 年 12 月起，将不再支持此 API，也不应使用。 请 [改为使用 Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) 。
 
 
 ## <a name="permissions"></a>权限
@@ -43,8 +43,8 @@ ms.locfileid: "60980347"
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-请注意 ``{id}`` ，这是目标角色 ID。
-## <a name="request-headers"></a>请求头
+请注意， ``{id}`` 这是目标角色 ID。
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -55,13 +55,13 @@ POST /privilegedRoles/{id}/selfActivate
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |reason|string|可选。 有关此角色激活原因的说明。|
-|duration|string|可选。 有效值可以是 (最短激活) 、 (角色) 的默认激活持续时间或用于指定激活小时数的双 ```min``` ```default``` 精度值。 指定持续时间不能长于角色设置中角色的激活持续时间。 |
+|duration|string|可选。 有效值 ```min``` ```default``` 可以是 (最短激活) 、 (角色) 的默认激活持续时间，或用于指定激活小时数的双精度值。 指定持续时间不能长于角色设置中角色的激活持续时间。 |
 |ticketNumber|string|可选。 用于跟踪此角色激活的票证编号。|
 |ticketSystem|string|可选。 票证系统。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
 
 请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 ## <a name="example"></a>示例
@@ -101,8 +101,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/privilegedrole-selfactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedrole-selfactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedrole-selfactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

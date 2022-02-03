@@ -1,16 +1,16 @@
 ---
 title: tiIndicator：deleteTiIndicatorsByExternalId
-description: 在一个 (（) 个请求）中删除多个威胁情报和 TI 智能指示器，并且请求包含外部 ID 而不是 ID。
+description: 在一个 (（) 个请求）中删除多个威胁情报和 TI) 指示器，该请求包含外部 ID 而不是 ID。
 ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: e1800ead9d1c3d84dca491014ab7073c9bee863e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b83e358e2fe6112937b97dcc123d3447e3f4d6ac
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60977420"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339655"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator：deleteTiIndicatorsByExternalId
 
@@ -50,11 +50,11 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|String collection| 要 `externalIds` 删除的 **tiIndicator** 对象的集合。 |
+|值|字符串集合| `externalIds`要删除 **的 tiIndicator** 对象的集合。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200, OK` 响应正文中返回 响应代码和 [resultInfo](../resources/resultinfo.md) 集合对象。 如果出现错误，此方法将返回 响应 `206 Partial Content` 代码。  有关详细信息 [，](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 请参阅错误。
+如果成功，此方法在响应 `200, OK` 正文中返回 响应代码和 [resultInfo](../resources/resultinfo.md) 集合对象。 如果出现错误，此方法将返回 响应 `206 Partial Content` 代码。  有关详细信息 [，](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 请参阅错误。
 
 ## <a name="examples"></a>示例
 
@@ -98,8 +98,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-deletetiindicatorsbyexternalid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tiindicator-deletetiindicatorsbyexternalid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tiindicator-deletetiindicatorsbyexternalid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

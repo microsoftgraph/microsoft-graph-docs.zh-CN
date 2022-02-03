@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: c1c8f1a837810af8bc8dd5c9787e3a16532a5dad
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: f1d68bab43f630e32426d2f89df5e63f7b41f624
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61800277"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348143"
 ---
 # <a name="deploymentaudience-updateaudience"></a>deploymentAudience：updateAudience
 
@@ -18,13 +18,13 @@ ms.locfileid: "61800277"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [deploymentAudience](../resources/windowsupdates-deploymentaudience.md)的成员和排除集合。
+更新 [deploymentAudience 的成员和排除集合](../resources/windowsupdates-deploymentaudience.md)。
 
-向部署访问群体的成员或排除集合添加[azureADDevice](../resources/windowsupdates-azureaddevice.md)会自动创建Azure AD对象（如果不存在）。
+将 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 添加到部署访问群体的成员或排除集合会自动创建Azure AD对象（如果不存在）。
 
-如果 **deploymentAudience** 的排除和 **成员** 集合中包含相同的 [updatableAsset，](../resources/windowsupdates-updatableasset.md)则部署不会应用于该资产。 
+如果 **deploymentAudience** 的排除项和成员集合中包含相同的 [updatableAsset](../resources/windowsupdates-updatableasset.md)，则部署不会应用于该资产。
 
-如果 **所有 updatableAsset** 对象都是同一类型，则也可使用 [updateAudienceById](windowsupdates-deploymentaudience-updateaudiencebyid.md) 方法更新 **deploymentAudience**。
+如果 **所有 updatableAsset** 对象都是同一类型，则您还可以使用 [updateAudienceById](windowsupdates-deploymentaudience-updateaudiencebyid.md) 方法更新 **deploymentAudience**。
 
 > [!NOTE]
 > 此 API 具有 [与](/Graph/known-issues#accessing-and-updating-deployment-audiences) 通过 Intune 创建的部署相关的已知问题。
@@ -132,6 +132,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/deploymentaudience-updateaudience-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/deploymentaudience-updateaudience-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

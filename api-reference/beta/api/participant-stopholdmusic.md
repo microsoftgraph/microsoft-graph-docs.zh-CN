@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8d4c4295192e730ab935381a110954b305fcfefb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9a7f1d04125f1730ebdfd32d0c41fbae78d2d844
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60997763"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344992"
 ---
 # <a name="participant-stopholdmusic"></a>participant： stopHoldMusic
 
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/participants/{id}/stopHoldMusic
 |clientContext|String|可选。 唯一的客户端上下文字符串。 最多可包含 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `202 Accepted` [stopHoldMusicOperation](../resources/stopHoldmusicoperation.md) 对象。
+如果成功，此方法在响应 `202 Accepted` 正文中返回 响应代码和 [stopHoldMusicOperation](../resources/stopHoldmusicoperation.md) 对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -90,8 +90,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/participant-stopholdmusic-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-stopholdmusic-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-stopholdmusic-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

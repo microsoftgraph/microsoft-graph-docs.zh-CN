@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0f345228c4fbc4267597bd124eeb5db687bb5025b95437cfe9517ab319c6ae87
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4bf1b69f7668d71e6511714f0c548fadbccb9bdf
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163419"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352574"
 ---
 ```java
 
@@ -13,7 +13,10 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 HomeRealmDiscoveryPolicy homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy();
 LinkedList<String> definitionList = new LinkedList<String>();
-definitionList.add("definition-value");
+definitionList.add("{"HomeRealmDiscoveryPolicy":
+     {"AccelerateToFederatedDomain":true,
+      "PreferredDomain":"federated.example.edu",
+      "AlternateIdLogin":{"Enabled":true}}}");
 homeRealmDiscoveryPolicy.definition = definitionList;
 homeRealmDiscoveryPolicy.displayName = "displayName-value";
 homeRealmDiscoveryPolicy.isOrganizationDefault = true;

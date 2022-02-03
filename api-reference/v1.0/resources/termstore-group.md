@@ -5,19 +5,19 @@ doc_type: resourcePageType
 description: 表示术语库中使用的组。
 ms.localizationpriority: medium
 ms.prod: taxonomy
-ms.openlocfilehash: 121f195e8054645be47d7a98c5287c52d754b4e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1fa25c258050f1bf5cf2cea3e95a13e95f9b8125
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129752"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339912"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
 命名空间：microsoft.graph.termStore
 
 
-表示在术语库中使用的 [组](../resources/termstore-store.md)。 组是逻辑层次结构，其中包含其下的集合。 
+表示术语库中使用的 [组](../resources/termstore-store.md)。 组是逻辑层次结构，其中包含其下的集合。 
 
 继承自 [实体](../resources/entity.md)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "59129752"
 | 方法                                                   | 返回类型       |    说明      |
 |:---------------------------------------------------------|:------------------|:---------------------
 | [创建组](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | 在术语库创建 [组]。 |
-| [Get group](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | 检索术语库中的组 [数据]。 |
+| [Get group](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | 检索术语存储中的组 [数据]。 |
 | [删除组](../api/termstore-group-delete.md)                     | 无 |  删除术语库中的 [组]。 |
 
 ## <a name="properties"></a>属性
@@ -38,13 +38,13 @@ ms.locfileid: "59129752"
 | 说明          | string             | 提供有关术语用法的详细信息的说明。 |
 | id                   | string             | 组的唯一标识符。 只读。 |
 | displayName          | string             | 组的名称。 |
-| scope                | string              | 返回组的类型。 可能的值是"global"、"system"和"siteCollection"。 |
+| scope                | string              | 返回组的类型。 可取值为：`global`、`system` 和 `siteCollection`。 |
 | parentSiteId         | string             | 此组的父网站的 ID。 |
 
 ## <a name="relationships"></a>关系
 | 关系       | 类型                        | 说明              |
 |:-------------------|:----------------------------|:--------------------------
-| sets           | [microsoft.graph.termStore.set][] 集合 | 术语库 中的组下的所有 [集]。 |
+| sets           | [microsoft.graph.termStore.set][] 集合 | 术语库的组下的所有 [集]。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

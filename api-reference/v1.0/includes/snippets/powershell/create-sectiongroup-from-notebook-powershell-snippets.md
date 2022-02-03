@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 71b0a390044a50434d3677a7584434ed571dba3d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 710edd4def353b26a4d531990b17a320fdbda35e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126235"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352439"
 ---
 ```powershell
 
@@ -15,6 +15,7 @@ $params = @{
     DisplayName = "Section group name"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserOnenoteNotebookSectionGroup -UserId $userId -NotebookId $notebookId -BodyParameter $params
 
 ```

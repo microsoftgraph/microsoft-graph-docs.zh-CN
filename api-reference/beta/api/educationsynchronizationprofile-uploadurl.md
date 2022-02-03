@@ -1,16 +1,16 @@
 ---
 title: educationSynchronizationProfile： uploadUrl
-description: 检索共享访问签名 (SAS) ，以将源文件上载到租户中特定学校数据同步配置文件的 Azure blob 存储。 SAS 令牌的有效期为 1 小时。
+description: 检索 SAS (共享访问签名) ，以将源文件上载到租户中特定学校数据同步配置文件的 Azure blob 存储。 SAS 令牌的有效期为 1 小时。
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: dafd238642c49572ec776326584b75fd902b149a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ce9fbe4843560c65ad132cc37c543b84605daa7e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109062"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340216"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile： uploadUrl
 
@@ -20,9 +20,9 @@ ms.locfileid: "62109062"
 
 检索共享访问签名 (SAS) ，以将源文件上载到租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的 Azure blob 存储。 SAS 令牌的有效期为 1 小时。
 
-上载 URL 仅为 CSV 数据 [提供程序提供](../resources/educationcsvdataprovider.md)。
+上载 URL 仅为 [CSV 数据提供程序提供](../resources/educationcsvdataprovider.md)。
 
-> **注意：** 若要使用 SAS 令牌访问 blob 存储，请使用 Azure 存储 [SDK](https://github.com/search?q=org%3AAzure+azure-storage) 或 [AzCopy](/azure/storage/storage-use-azcopy)。
+> **注意：** 若要使用 SAS 令牌访问 blob 存储，请使用 [Azure 存储 SDK](https://github.com/search?q=org%3AAzure+azure-storage) 或 [AzCopy](/azure/storage/storage-use-azcopy)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ GET /education/synchronizationProfiles/{id}/uploadUrl
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) 的响应代码和 SAS URL。
 
-如果上一个请求仍在处理中，此方法将返回 指示当前已阻止 `409 Conflict` [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)的上载。
+如果上一个请求仍在 `409 Conflict` 处理中，此方法将返回 指示当前已阻止 [educationSynchronizationProfile 的上载](../resources/educationsynchronizationprofile.md)。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationsynchronizationprofile-uploadurl-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationsynchronizationprofile-uploadurl-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

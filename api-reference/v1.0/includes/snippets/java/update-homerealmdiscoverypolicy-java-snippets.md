@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 44f52a85c039b2f44c60bf69141af09d180def8ce1e71ebbcd7dd1111ad723cb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 88f35d11cfb237022774242c446a3c48a081f783
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57332756"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351293"
 ---
 ```java
 
@@ -13,10 +13,12 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 HomeRealmDiscoveryPolicy homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy();
 LinkedList<String> definitionList = new LinkedList<String>();
-definitionList.add("definition-value");
+definitionList.add("{"HomeRealmDiscoveryPolicy":
+     {"AccelerateToFederatedDomain":true,
+      "PreferredDomain":"federated.example.edu",
+      "AlternateIdLogin":{"Enabled":true}}}");
 homeRealmDiscoveryPolicy.definition = definitionList;
-homeRealmDiscoveryPolicy.displayName = "displayName-value";
-homeRealmDiscoveryPolicy.isOrganizationDefault = true;
+homeRealmDiscoveryPolicy.displayName = "Contoso default HRD Policy";
 
 graphClient.policies().homeRealmDiscoveryPolicies("{id}")
     .buildRequest()

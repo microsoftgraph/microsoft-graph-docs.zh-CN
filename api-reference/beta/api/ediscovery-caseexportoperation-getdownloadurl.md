@@ -2,15 +2,15 @@
 title: caseExportOperation： getDownloadUrl
 description: '返回下载 URL '
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7e7f683d034f6c693cfdd16e96755471629e2a94
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 3a5a175b73bc83354b5315599e53408809cd1728
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773289"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346883"
 ---
 # <a name="caseexportoperation-getdownloadurl"></a>caseExportOperation： getDownloadUrl
 
@@ -28,7 +28,7 @@ ms.locfileid: "50773289"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/99e865fc-e29f-4
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/caseexportoperation-getdownloadurl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/caseexportoperation-getdownloadurl-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

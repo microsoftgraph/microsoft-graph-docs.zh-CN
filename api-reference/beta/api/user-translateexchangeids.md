@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7036a86ccadedbbfa354a5f230fe8525b2a67e9c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 20fac290ea2baf68b2780e75224724616a2814c3
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984961"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341014"
 ---
 # <a name="user-translateexchangeids"></a>user： translateExchangeIds
 
@@ -49,8 +49,8 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| inputIds | String collection | 要转换的标识符的集合。 集合中所有标识符必须具有相同的源 ID 类型，并且必须为同一邮箱中的项目。 此集合的最大大小为 1000 个字符串。 |
-| sourceIdType | exchangeIdFormat | 参数中标识符的 ID `InputIds` 类型。 |
+| inputIds | String 集合 | 要转换的标识符的集合。 集合中所有标识符必须具有相同的源 ID 类型，并且必须为同一邮箱中的项目。 此集合的最大大小为 1000 个字符串。 |
+| sourceIdType | exchangeIdFormat | 参数中标识符的 `InputIds` ID 类型。 |
 | targetIdType | exchangeIdFormat | 要转换为的请求 ID 类型。 |
 
 ### <a name="exchangeidformat-values"></a>exchangeIdFormat 值
@@ -58,25 +58,25 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | 成员 | 说明 |
 |:-------|:------------|
 | entryId | MAPI 客户端使用的二进制条目 ID 格式。 |
-| ewsId | Web 服务客户端Exchange ID 格式。 |
+| ewsId | Web 服务客户端使用的EXCHANGE ID 格式。 |
 | immutableEntryId | 二进制 MAPI 兼容不可变 ID 格式。 |
-| restId | Microsoft 应用使用的默认 ID Graph。 |
+| restId | Microsoft Graph 使用的默认 ID Graph。 |
 | restImmutableEntryId | Microsoft Graph 使用的不可变 ID Graph。 |
 
-二进制格式 `entryId` () `immutableEntryId` URL 安全 base64 编码。 URL 安全通过按以下方式修改二进制数据的 base64 编码实现：
+二进制格式 (`entryId`) `immutableEntryId` URL 安全 base64 编码。 URL 安全通过按以下方式修改二进制数据的 base64 编码实现：
 
 - 将 `+` 替换为 `-`
 - 将 `/` 替换为 `_`
-- 删除任何尾部填充字符 `=` () 
-- 向字符串末尾添加一个整数，指示原始文本、、或 (`0` 填充) `1` `2`
+- 删除任何尾部填充字符 () `=`
+- 在字符串末尾添加一`0`个整数，指示原始文本、、或 (填充 `1``2`) 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回 [响应代码和 convertIdResult](../resources/convertidresult.md) 集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 convertIdResult](../resources/convertidresult.md) 集合。
 
 ## <a name="example"></a>示例
 
-以下示例演示如何将多个标识符从常规 REST API 格式 () REST 不可变格式 `restId` `restImmutableEntryId` () 。
+以下示例演示如何将多个标识符从常规 REST API 格式 (`restId`) REST `restImmutableEntryId` 不可变格式 () 。
 
 ### <a name="request"></a>请求
 
@@ -117,8 +117,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-translateexchangeids-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-translateexchangeids-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-translateexchangeids-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

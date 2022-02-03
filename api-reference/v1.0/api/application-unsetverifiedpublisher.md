@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d4da4cc4e61fdd08a8f6c7e895759b373d1da935
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3c9f8c45cb23da2a3de5fc1481c8d9414ed8613d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996727"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346327"
 ---
 # <a name="application-unsetverifiedpublisher"></a>application：unsetVerifiedPublisher
 
 命名空间：microsoft.graph
 
-取消设置 [之前在应用程序上设置的 verifiedPublisher](../resources/verifiedPublisher.md) [，删除](../resources/application.md)所有已验证的发布者属性。 有关详细信息，请参阅验证[Publisher验证](/azure/active-directory/develop/publisher-verification-overview)。
+取消设置之前在应用程序上设置的 [verifiedPublisher](../resources/verifiedPublisher.md)，删除所有已验证的发布者属性。[](../resources/application.md) 有关详细信息，请参阅Publisher[验证](/azure/active-directory/develop/publisher-verification-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -80,8 +80,12 @@ POST https://graph.microsoft.com/v1.0/applications/{id}/unsetVerifiedPublisher
 [!INCLUDE [sample-code](../includes/snippets/java/application-unsetverifiedpublisher-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-unsetverifiedpublisher-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-unsetverifiedpublisher-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

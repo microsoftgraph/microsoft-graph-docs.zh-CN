@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6edc7e6bffb5d5a13c77616025ab0e93c9b907d8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b5dead68dd5c2c104ce30fc00d9aaace5d3f6403
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010378"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346121"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet：uploadCertificate
 
@@ -18,7 +18,7 @@ ms.locfileid: "61010378"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upload证书到[trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 输入是证书内容的 Base64 编码值。 此方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
+Upload证书到 [trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 输入是证书内容的 Base64 编码值。 此方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -93,8 +93,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-uploadcertificate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-uploadcertificate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/trustframeworkkeyset-uploadcertificate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

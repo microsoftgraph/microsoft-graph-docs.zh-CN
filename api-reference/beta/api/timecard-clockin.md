@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 85c8b917b83bf5285373f0b0684e4295cce4fc7e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 27b5918e8f5b8bd19353ab2dfb31698870d5c1f4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989286"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348206"
 ---
 # <a name="timecard-clockin"></a>timeCard：clockIn
 
@@ -18,7 +18,7 @@ ms.locfileid: "60989286"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clock in to start a [timeCard](../resources/timeCard.md).
+时钟以启动 [timeCard](../resources/timeCard.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ Clock in to start a [timeCard](../resources/timeCard.md).
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Schedule.ReadWrite.All* |
 
->\***重要提示：** 使用应用程序权限时，必须在请求 `MS-APP-ACTS-AS` 中包括 标头。
+>\***重要提示：** 使用应用程序权限时，必须在请求`MS-APP-ACTS-AS`中包括 标头。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -93,8 +93,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/timecard-clockin-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/timecard-clockin-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/timecard-clockin-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

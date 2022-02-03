@@ -5,12 +5,12 @@ author: jsandoval-msft
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 218dee5db32fbbe24bb59c61dfe31b785141ecd0
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: d24966539da1d4fa45686b2340e1a28f96550e3b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307592"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340775"
 ---
 # <a name="presence-setpresence"></a>presence： setPresence
 
@@ -19,20 +19,20 @@ ms.locfileid: "61307592"
 将用户的状态设置为应用程序状态。
 
 ### <a name="presence-sessions"></a>状态会话
-用户可以具有多个状态会话，因为用户可以在桌面、移动和 web Teams多个 (客户端) 。 每个Teams客户端都有一个独立的状态会话，并且用户的状态是来自所有隐藏会话的聚合状态。
+用户可以具有多个状态会话，因为用户可以在桌面、Teams和 web (多个) 。 每个Teams客户端都有一个独立的状态会话，并且用户的状态是来自所有隐藏会话的聚合状态。
 
 同样，应用程序可以具有其自己的用户状态会话，并能够更新状态。
 
 以下是会话状态聚合方式的优先级：
 * 用户配置>应用配置 (状态会覆盖其他用户) 
-* 在应用配置中：当前不支持 (状态设置状态") >"忙碌>">离开"
+* 在已配置应用之间： (状态设置状态设置) >忙碌>状态>离开
 
 ### <a name="timeout-expiration-and-keep-alive"></a>超时、到期并保持活动状态
-状态会话 **可能会超时并** 过期，因此应用程序需要在超时之前调用此 API，以维护会话的状态;或过期 **之前，** 使会话保持活动状态。
+状态会话 **可能会超时和****过期**，因此应用程序需要在超时之前调用此 API，以维护会话的状态;或过期 **之前，** 使会话保持活动状态。
 
-如果状态会话可用且超时为 5 分钟， `Available` 则状态会话可能会超时。 当状态淡出时，状态将逐渐淡出。 例如，如果应用程序将状态会话设置为 ，状态将在 5 分钟内更改为第一个超时，然后在另外 5 分钟（第二个超时） `Available/Available` `Available/AvailableInactive` `Away/Away` 中更改。
+如果状态会话可用且 `Available` 超时为 5 分钟，则状态会话可能会超时。 当状态淡出时，状态将逐渐淡出。 例如，如果 `Available/Available`应用程序将状态会话设置为 ， `Available/AvailableInactive` 状态将在 5 分钟内更改为第一个超时，然后在另外 5 `Away/Away` 分钟（第二个超时）中更改。
 
-状态会话的过期时间可用 参数 `expirationDuration` 进行配置。 当会话过期时，它将变为 `Offline` 。
+状态会话的过期时间可用 参数 `expirationDuration` 进行配置。 当会话过期时，它将变为 `Offline`。
 
 ## <a name="permissions"></a>权限
 调用 API 需要以下权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -67,7 +67,7 @@ POST /users/{userId}/presence/setPresence
 
 > [!IMPORTANT]
 >
-> 提供请求中应用程序 `sessionId` ID。
+> 提供请求中应用程序 ID `sessionId` 。
 
 支持的 和 `availability` `activity` 的组合包括：
 
@@ -82,7 +82,7 @@ POST /users/{userId}/presence/setPresence
 如果成功，此方法返回 `200 OK` 响应代码。
 
 ## <a name="examples"></a>示例
-以下请求显示 ID 为 `22553876-f5ab-4529-bffb-cfe50aa89f87` 用户设置其状态会话的应用程序 `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` 。
+以下请求显示 ID 为 `22553876-f5ab-4529-bffb-cfe50aa89f87` 用户设置其状态会话的应用程序 `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`。
 
 ### <a name="request"></a>请求
 
@@ -121,8 +121,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/set-presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/set-presence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/set-presence-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

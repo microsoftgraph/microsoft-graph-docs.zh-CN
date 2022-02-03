@@ -5,18 +5,18 @@ description: 发布内容类型中心网站中的内容类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 6777206c94e91bc7828281a5fbc7db44d4d010b1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6579e0a3ed013f184cdcaa451a5e1d682d0f5340
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006605"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344242"
 ---
 # <a name="contenttype-publish"></a>contentType： publish
 命名空间：microsoft.graph
 
 
-发布内容类型中心网站中的[contentType。][]
+发布内容类型中心网站中的 [contentType][] 。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 
 >**注意：**_siteId_ 表示内容类型中心网站。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -49,7 +49,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此调用将返回 `204 No Content` 响应。
+如果成功，此调用将返回 响应 `204 No Content` 。
 
 ## <a name="example"></a>示例
 
@@ -81,8 +81,12 @@ POST https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-publish-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-publish-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-publish-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

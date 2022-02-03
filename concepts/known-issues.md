@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 19f4441e04928b53bb5b96f34680d54ba18fcffc
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 4c183efa64f8df151df8ff070dd0df1555b101b5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62290558"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341775"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -409,10 +409,6 @@ JSON 批处理请求目前限定为 20 个单独请求。
 - [升级聊天中安装的应用](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ## <a name="users"></a>用户
-
-### <a name="get-user-by-userprincipalname-that-starts-with-a-dollar--symbol"></a>按 userPrincipalName 获取以美元符号 ($) 开头的用户
-
-Microsoft Graph 允许 **userPrincipalName** 以美元 (`$`) 字符开头。 但是，当通过 userPrincipalName 查询用户时，请求 URL `/users/$x@y.com` 失败。 这是因为此请求 URL 违反了 OData URL 约定，该约定要求只有系统查询选项才能以 `$` 字符作为前缀。 一种解决方法是，删除 `/users` 后面的斜杠 (/)，并将 **userPrincipalName** 括在圆括号和单引号中，如下所示：`/users('$x@y.com')`。
 
 ### <a name="encode-number--symbols-in-userprincipalname"></a>对 userPrincipalName 中的数字符号 (#) 进行编码
 

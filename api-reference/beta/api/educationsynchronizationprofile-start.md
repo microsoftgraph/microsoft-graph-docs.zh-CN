@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 22187c58ca81f0b4c074c98aefc39c3f993ba746
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f2ded92adc2f62d1f562156de2085bccde0081f7
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018702"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342093"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上传到 educationSynchronizationProfile 后开始同步
 
@@ -20,7 +20,7 @@ ms.locfileid: "61018702"
 
 验证上传到租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的文件。 如果验证成功，将在配置文件上启动同步。 否则，响应将包含错误和警告。 如果响应包含错误，将不会启动同步。 如果响应仅包含警告，将启动同步。
 
-> **注意：** 仅在数据提供程序的类型为 [educationcsvdataprovider 时使用此方法](../resources/educationcsvdataprovider.md)。 此外，需要设置配置文件的状态属性，然后才能启动它。 轮询配置文件对象以检查其状态属性。
+> **注意：** 仅在数据提供程序类型为 [educationcsvdataprovider 时使用此方法](../resources/educationcsvdataprovider.md)。 此外，需要设置配置文件的状态属性，然后才能启动它。 轮询配置文件对象以检查其状态属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,7 +45,7 @@ POST /education/synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 OK` 响应代码。 如果失败，则返回 `400 Bad Request` 。 如果发现任何错误或警告，响应包含 [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) 对象的集合作为响应正文的一部分。
+如果成功，此方法返回 `200 OK` 响应代码。 如果失败，则返回 。`400 Bad Request` 如果发现任何错误或警告，响应包含 [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) 对象的集合作为响应正文的一部分。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -75,8 +75,12 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 [!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-start-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-educationsynchronizationprofile-start-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-educationsynchronizationprofile-start-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

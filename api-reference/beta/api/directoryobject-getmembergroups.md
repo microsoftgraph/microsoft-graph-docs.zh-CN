@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 30b62be5d6c7d4de755733459ceb8cf8335fe22d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: bd40e1c922f752b2d77b3d2a86828fe1380f33dd
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226692"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346935"
 ---
 # <a name="directoryobject-getmembergroups"></a>directoryObject： getMemberGroups
 
@@ -18,9 +18,9 @@ ms.locfileid: "61226692"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回指定的用户、[组、服务](../resources/user.md)[主体](../resources/serviceprincipal.md)、[](../resources/group.md)[组织](../resources/orgcontact.md)联系人、[设备或](../resources/device.md)[目录](../resources/directoryobject.md)对象是其中成员的所有组。 此函数是可传递的。
+返回指定的用户、组、服务[](../resources/user.md)[主体](../resources/serviceprincipal.md)、[](../resources/group.md)组织联系人、设备或[目录](../resources/directoryobject.md)对象是其中[](../resources/device.md)成员的所有组。 [](../resources/orgcontact.md) 此函数是可传递的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="group-memberships-for-a-directory-object"></a>目录对象的组成员身份
@@ -29,7 +29,7 @@ ms.locfileid: "61226692"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All |
+|应用程序 | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All |
 
 ### <a name="group-memberships-for-a-user"></a>用户的组成员身份
 
@@ -37,7 +37,7 @@ ms.locfileid: "61226692"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All |
+|应用程序 | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All |
 
 ### <a name="group-memberships-for-a-group"></a>组的组成员身份
 
@@ -69,7 +69,7 @@ ms.locfileid: "61226692"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 
 <!--
@@ -175,8 +175,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmembergroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getmembergroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -239,8 +243,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmembergroups-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmembergroups-me-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getmembergroups-me-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

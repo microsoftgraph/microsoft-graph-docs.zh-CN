@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: c8dcf82dc87eff9dbac9791a6e54fa92a637988a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7e487954eb7d49f5447c812d2549ec43a0f7a939
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020256"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347282"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications：getPresencesByUserId
 
@@ -54,7 +54,7 @@ POST /communications/getPresencesByUserId
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [presence](../resources/presence.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [presence](../resources/presence.md) 对象集合。
 
 
 ## <a name="examples"></a>示例
@@ -93,8 +93,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/get-presence-multiple-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-presence-multiple-users-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-presence-multiple-users-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

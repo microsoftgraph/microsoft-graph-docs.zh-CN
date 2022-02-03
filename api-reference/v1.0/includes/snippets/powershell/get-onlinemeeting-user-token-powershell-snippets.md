@@ -1,16 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7ea739441575eed4b396b9f8fc9ba493e73859b9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5b9cf5c11c50a15806298dc82a87694d20f92532
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114701"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352514"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
+# A UPN can also be used as -UserId.
 Get-MgUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
 
 ```

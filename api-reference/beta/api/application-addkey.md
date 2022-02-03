@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7e8b39733b208a84246dc2ae4f706d86434b1510
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: e74751141ebd5d22173c07b1d2cd3a98b5b1f56d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61285039"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340468"
 ---
 # <a name="application-addkey"></a>application： addKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "61285039"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将密钥凭据添加到 [应用程序](../resources/application.md)。 此方法和 [removeKey](application-removekey.md)可用于应用程序自动滚动其过期密钥。
+向应用程序添加密钥 [凭据](../resources/application.md)。 此方法和 [removeKey](application-removekey.md) 可用于应用程序自动滚动其过期密钥。
 
 > [!NOTE]
 > 您可以继续使用"创建应用程序"[](../api/application-post-applications.md)和"更新[](../api/application-update.md)应用程序应用程序"操作来添加和更新具有或没有用户上下文的任何应用程序的密钥凭据。 
@@ -59,9 +59,9 @@ POST /applications/{id}/addKey
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新应用程序密钥凭据。 __type、usage__ 和 __key__ 是此用法的必需属性。  受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：用法必须为 `Verify` 。</li><li>`X509CertAndPassword`：用法必须为 `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText。__ 此属性仅对类型 为 的键是必需的 `X509CertAndPassword` 。 否则， `null` 设置为 。|
-| proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应为 `nbf` + 10 分钟。</li></ul><br>有关生成此拥有令牌证明的步骤，请参阅生成滚动密钥的 [拥有令牌证明](/graph/application-rollkey-prooftoken)。 有关声明类型详细信息，请参阅 [声明有效负载](/azure/active-directory/develop/active-directory-certificate-credentials)。|
+| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新应用程序密钥凭据。 __类型__、__用法____和密钥__ 是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：用法必须为 `Verify`。</li><li>`X509CertAndPassword`：用法必须为 `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText__ 。 此属性仅对类型 为 的键是必需的 `X509CertAndPassword`。 否则，设置为 `null` 。|
+| proof | 字符串 | 用作现有密钥拥有证明的自签名 JWT 令牌。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应为 `nbf` + 10 分钟。</li></ul><br>有关生成此拥有令牌证明的步骤，请参阅生成滚动密钥的 [拥有令牌证明](/graph/application-rollkey-prooftoken)。 有关声明类型详细信息，请参阅 [声明有效负载](/azure/active-directory/develop/active-directory-certificate-credentials)。|
 
 ## <a name="response"></a>响应
 
@@ -112,8 +112,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/application-addkey-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-addkey-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-addkey-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -183,8 +187,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/application-addkey-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-addkey-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-addkey-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

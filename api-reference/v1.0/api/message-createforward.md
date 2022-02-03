@@ -5,21 +5,21 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2c9fbdf998a26072ba1bb9ee38333cb016b60284
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 367e666748f654ee3363ecbe09e66ca989d846f8
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996196"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340800"
 ---
 # <a name="message-createforward"></a>message: createForward
 
 命名空间：microsoft.graph
 
-创建以 JSON 或[](../resources/message.md)MIME 格式转发现有邮件的草稿。
+创建草稿以转发 JSON 或 [](../resources/message.md)MIME 格式的现有邮件。
 
 使用 JSON 格式时，可以：
-- 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
+- 指定参数的 comment 或 `message` **body** 属性。 指定这两者将返回 HTTP 400 错误请求错误。
 - 指定参数 `toRecipients` 的参数或 **toRecipients** `message` 属性。 指定两者或同时指定两者都将返回 HTTP 400 错误请求错误。
 - 随后 [更新](../api/message-update.md)草稿以将内容添加到 **正文**，或更改其他邮件属性。
 
@@ -103,8 +103,12 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 [!INCLUDE [sample-code](../includes/snippets/java/message-createforward-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-createforward-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-createforward-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

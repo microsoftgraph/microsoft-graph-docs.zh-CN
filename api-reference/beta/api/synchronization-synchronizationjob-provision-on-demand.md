@@ -5,12 +5,12 @@ author: ArvindHarinder1
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1e59106516815c6f591e0822c13a111b339008a8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 25a940c57a8e87ff6572ae67205b05f7f9d448db
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001922"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340027"
 ---
 # <a name="synchronizationjob-provisionondemand"></a>synchronizationJob：provisionOnDemand
 
@@ -56,7 +56,7 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizat
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `200 OK` 响应代码和 stringKeyStringValuePair。
+如果成功，此方法将返回 响应 `200 OK` 代码和 stringKeyStringValuePair。
 
 ## <a name="examples"></a>示例
 
@@ -98,8 +98,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-provisionondemand-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-provisionondemand-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationjob-provisionondemand-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

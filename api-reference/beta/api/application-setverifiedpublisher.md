@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bae85faa7adc5fb2152bb68a0f0e2a7864baf129
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1bf9c6588b1c3e69a180a03b0a1bb07bdcaa8804
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982853"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340405"
 ---
 # <a name="application-setverifiedpublisher"></a>application： setVerifiedPublisher
 
@@ -18,7 +18,7 @@ ms.locfileid: "60982853"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在应用程序[上设置 verifiedPublisher。](../resources/verifiedPublisher.md) [](../resources/application.md) 有关详细信息，包括设置已验证发布者的先决条件，请参阅Publisher[验证](/azure/active-directory/develop/publisher-verification-overview)。
+在应用程序[上设置 verifiedPublisher](../resources/verifiedPublisher.md)[。](../resources/application.md) 有关详细信息，包括设置已验证发布者的先决条件，请参阅Publisher[验证](/azure/active-directory/develop/publisher-verification-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -92,8 +92,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/application-setverifiedpublisher-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-setverifiedpublisher-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-setverifiedpublisher-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

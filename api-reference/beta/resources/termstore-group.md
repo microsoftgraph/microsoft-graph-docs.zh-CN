@@ -2,15 +2,15 @@
 author: mohitpcad
 title: 组资源类型
 doc_type: resourcePageType
-description: 表示在术语库中使用的组。
-localization_priority: Normal
+description: 表示术语库中使用的组。
+ms.localizationpriority: medium
 ms.prod: taxonomy
-ms.openlocfilehash: ec2e9609b2de278d2596d42b18cae2fe450efd86
-ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
+ms.openlocfilehash: c43001533c5d0b81eb0f9064915a33d9d3e93815
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53456357"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347386"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -19,34 +19,34 @@ ms.locfileid: "53456357"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-表示在术语库中使用的 [组](../resources/termstore-store.md)。 组是逻辑层次结构，其中包含其下的集合。 
+表示术语库中使用的 [组](../resources/termstore-store.md)。 组是逻辑层次结构，其中包含其下的集合。 
 
 继承自 [实体](../resources/entity.md)。
 
 
 ## <a name="methods"></a>方法
 
-| 方法                                                   | 返回类型       |    说明
-|:---------------------------------------------------------|:------------------|:---------------------
-| [创建组](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | 在术语库创建 [组]。
-| [Get group](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | 检索术语库中的组 [数据]。
-| [删除组](../api/termstore-group-delete.md)                     | 无 |  删除术语库中的 [组]。
+| 方法                                                   | 返回类型       |    说明|
+|:---------------------------------------------------------|:------------------|:---------------------|
+| [创建组](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | 在术语库创建 [组]。|
+| [Get group](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | 检索术语存储中的组 [数据]。|
+| [删除组](../api/termstore-group-delete.md)                     | 无 |  删除术语库中的 [组]。|
 
 ## <a name="properties"></a>属性
 
-| 属性             | 类型               | 说明
-|:---------------------|:-------------------|:------------------------------------
-| createdDateTime      | DateTimeOffset     | 组创建日期和时间。 只读。
-| 说明          | string             | 提供有关术语用法的详细信息的说明。
-| id                   | string             | 组的唯一标识符。 只读。
-| displayName          | string             | 组的名称。
-| scope                | string              | 返回组的类型。 可能的值是"global"、"system"和"siteCollection"。
-| parentSiteId         | string             | 此组的父网站的 ID。
+| 属性             | 类型               | 说明|
+|:---------------------|:-------------------|:------------------------------------|
+| createdDateTime      | DateTimeOffset     | 组创建日期和时间。 只读。|
+| 说明          | string             | 提供有关术语用法的详细信息的说明。|
+| id                   | string             | 组的唯一标识符。 只读。|
+| displayName          | string             | 组的名称。|
+| scope                | string              | 返回组的类型。 可取值为：`global`、`system` 和 `siteCollection`。|
+| parentSiteId         | string             | 此组的父网站的 ID。|
 
 ## <a name="relationships"></a>关系
-| 关系       | 类型                        | 说明
-|:-------------------|:----------------------------|:--------------------------
-| sets           | [microsoft.graph.termStore.set][] 集合 | 术语库 中的组下的所有 [集]。
+| 关系       | 类型                        | 说明|
+|:-------------------|:----------------------------|:--------------------------|
+| sets           | [microsoft.graph.termStore.set][] 集合 | 术语库的组下的所有 [集]。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

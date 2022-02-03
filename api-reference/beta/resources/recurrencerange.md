@@ -1,16 +1,16 @@
 ---
 title: recurrenceRange 资源类型
 description: '描述了定期事件在哪个日期范围内重复发生。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: harini84
-ms.openlocfilehash: 5f09f430ddb23bbd58ab6f98e5d42c560ca11ef4
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 90b965c659fec6efab1c46de9cb3e108d5124ed6
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292893"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342461"
 ---
 # <a name="recurrencerange-resource-type"></a>recurrenceRange 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50292893"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述了定期[事件](event.md)在哪个日期范围内重复发生。
+描述定期事件的日期范围。 此共享对象用于定义访问评审、日历[事件](event.md)和访问包分配在 Azure AD。[](accessreviewscheduledefinition.md)[](accesspackageassignment.md)
 
 可以使用下面的 3 种方法之一（具体视方案而定），指定定期事件的日期范围。 虽然必须始终指定日期范围的 **startDate** 值，但定期事件的结束日期可以有多种指定方法。可以指定定期事件在特定日期前结束、没有结束日期或在重复发生特定次数后结束。 请注意，在日期范围内，实际发生的定期事件始终遵循为事件指定的定期模式。 定期事件始终由 [recurrencePattern](recurrencepattern.md)（事件的重复发生频率）和 **recurrenceRange**（事件在哪个日期范围内重复发生）进行定义。
 

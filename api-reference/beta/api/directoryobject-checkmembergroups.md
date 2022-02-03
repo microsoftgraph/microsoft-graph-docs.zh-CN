@@ -1,16 +1,16 @@
 ---
 title: directoryObject：checkMemberGroups
-description: 检查指定组列表中的成员身份，然后从该列表返回指定的用户、组、服务主体、组织联系人、设备或目录对象是其成员的组。
+description: 检查指定组列表中的成员身份，并从该列表返回指定用户、组、服务主体、组织联系人、设备或目录对象所属的组。
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7175adaa7eaf60b4e23c5cf3ccc8407ee513b4eb
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: acf57a66d535f39d9ce29d1152b2ec22bc334781
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225013"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345643"
 ---
 # <a name="directoryobject-checkmembergroups"></a>directoryObject：checkMemberGroups
 
@@ -18,11 +18,11 @@ ms.locfileid: "61225013"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查指定组列表中的成员身份，然后从该列表返回指定的[用户](../resources/user.md)、组、服务主体、组织联系人、设备或[目录](../resources/directoryobject.md)对象是[](../resources/serviceprincipal.md)其成员的组[](../resources/orgcontact.md)。 [](../resources/group.md) [](../resources/device.md) 此函数是可传递的。
+检查指定组列表中的成员身份，然后从该列表返回指定的[用户](../resources/user.md)、组、服务主体、组织联系人、设备或[目录](../resources/directoryobject.md)对象是[](../resources/serviceprincipal.md)其成员的组[](../resources/orgcontact.md)。 [](../resources/group.md)[](../resources/device.md) 此函数是可传递的。
 
 每个请求最多可检查 20 个组。 此函数支持在 Azure AD 中设置的所有组。 由于Microsoft 365组不能包含其他组，因此Microsoft 365组的成员始终是直接的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -178,8 +178,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-checkmembergroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -248,8 +252,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-me-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-checkmembergroups-me-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

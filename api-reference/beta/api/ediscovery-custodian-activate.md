@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7da87d8e4a9dd784f336be93dc87c04789a5a1d2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2208614263cc032c961347bddc201e9098b54480
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028726"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340226"
 ---
 # <a name="custodian-activate"></a>custodian： activate
 
@@ -18,9 +18,9 @@ ms.locfileid: "61028726"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-激活从案例释放的保管人，使其再次成为案例的一部分。 有关详细信息，请参阅[管理案例的Advanced eDiscovery保管人](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)。
+激活从案例释放的保管人，使其再次成为案例的一部分。 有关详细信息，请参阅[管理案例的保管Advanced eDiscovery。](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -87,8 +87,12 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea241
 [!INCLUDE [sample-code](../includes/snippets/java/custodian-activate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/custodian-activate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/custodian-activate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

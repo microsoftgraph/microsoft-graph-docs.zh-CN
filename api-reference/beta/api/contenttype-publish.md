@@ -5,20 +5,20 @@ description: 发布内容类型中心网站中的内容类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5c75cbcbd303e1a1f3f25cf8b116fcb95c2937bd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 796929b648730f1de6e77e96a55d4c9bf8e568ab
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022551"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339837"
 ---
 # <a name="contenttype-publish"></a>contentType： publish
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-发布内容类型中心网站中的[contentType。][]
+发布内容类型中心网站中的 [contentType][] 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,7 +49,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此调用将返回 `204 No Content` 响应。
+如果成功，此调用将返回 响应 `204 No Content` 。
 
 ## <a name="example"></a>示例
 
@@ -80,8 +80,12 @@ POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-publish-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-publish-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-publish-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

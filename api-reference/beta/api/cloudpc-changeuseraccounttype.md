@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 661bb1b094ad6bdf3dd026e5b527961b20b24b3b
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 7bddac095f2933e54846bd51b7a606576162c86e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225395"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344637"
 ---
 # <a name="cloudpc-changeuseraccounttype"></a>cloudPC：changeUserAccountType
 命名空间：microsoft.graph
@@ -51,7 +51,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/changeUserAccountTyp
 
 |参数|类型|说明|
 |:---|:---|:---|
-|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|已预配云 PC 上的用户的帐户类型。 可能的值是 `standardUser` ：、 `administrator` 和 `unknownFutureValue` 。|
+|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|已预配云 PC 上的用户的帐户类型。 可能的值是：、`standardUser``administrator`和 `unknownFutureValue`。|
 
 
 ## <a name="response"></a>响应
@@ -95,6 +95,10 @@ Content-length: 35
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpc-changeuseraccounttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpc-changeuseraccounttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

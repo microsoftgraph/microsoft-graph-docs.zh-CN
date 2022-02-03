@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 325bdb7efd98be05192faba712fbc14937196c5e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d3cae1ab57dcacc1cd9742796b99fbc1a2f3aa53
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989525"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348249"
 ---
 # <a name="tiindicator-submittiindicators"></a>tiIndicator：submitTiIndicators
 
@@ -52,11 +52,11 @@ POST /security/tiIndicators/submitTiIndicators
 |:-------------|:------------|:------------|
 |值|tiIndicator 集合| 要创建的 **tiIndicator 的** JSON 集合。 |
 
-对于每个 tiIndicator，提供包含至少一个电子邮件、文件或网络可观测的[tiIndicator](../resources/tiindicator.md)对象的[](../resources/tiindicator.md#indicator-observables---file)JSON[](../resources/tiindicator.md#indicator-observables---network)表示形式，以及以下必填字段[](../resources/tiindicator.md#indicator-observables---email) `action` `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` ：、。
+对于每个 tiIndicator，提供包含至少一个电子邮件、文件或网络可观测的 [tiIndicator](../resources/tiindicator.md) 对象的 JSON 表示[](../resources/tiindicator.md#indicator-observables---file)形式，以及[](../resources/tiindicator.md#indicator-observables---network)以下必填字段：`action`[](../resources/tiindicator.md#indicator-observables---email)`tlpLevel``description``expirationDateTime``targetProduct``threatType`、。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [tiIndicator](../resources/tiindicator.md) 对象集合。  如果出现错误，此方法将返回 响应 `206 Partial Content` 代码。  有关详细信息 [，](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 请参阅错误。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [tiIndicator](../resources/tiindicator.md) 对象集合。  如果出现错误，此方法将返回 响应 `206 Partial Content` 代码。  有关详细信息 [，](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 请参阅错误。
 
 ## <a name="examples"></a>示例
 
@@ -130,8 +130,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-submittiindicators-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tiindicator-submittiindicators-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tiindicator-submittiindicators-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

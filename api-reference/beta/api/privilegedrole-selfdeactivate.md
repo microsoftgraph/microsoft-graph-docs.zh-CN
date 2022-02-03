@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 33dfb26d7108f10b93e6aeab43d006810b66f7a0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 74ace71b13372c00b61b5456bb38a676efb86a7c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032206"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342967"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole： selfDeactivate
 
@@ -21,7 +21,7 @@ ms.locfileid: "61032206"
 [!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 停用分配给请求者的角色。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者只能 ```selfDeactivate``` 调用分配给他的角色。 
@@ -49,7 +49,7 @@ POST /privilegedRoles/{id}/selfDeactivate
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回 [响应代码和 privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
 
 请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 ## <a name="example"></a>示例
@@ -81,8 +81,12 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 [!INCLUDE [sample-code](../includes/snippets/java/privilegedrole-selfdeactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedrole-selfdeactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedrole-selfdeactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

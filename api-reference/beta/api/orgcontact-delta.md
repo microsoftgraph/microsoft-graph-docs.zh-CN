@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9a736ac1320746a2e0e42ead7f546b13324b8bc7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: aeb0d9cc3c4251b68876dc99e6ae56b500d50249
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018437"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343039"
 ---
 # <a name="orgcontact-delta"></a>orgContact： delta
 
@@ -42,22 +42,22 @@ GET /contacts/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪组织联系人的更改将引发一组 delta 函数调用。  如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。
+跟踪组织联系人的更改将引发一组 delta 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。
 
 只需指定任何查询参数一次。
 
-在后续请求中，复制并应用 `nextLink` 上 `deltaLink` 一响应中的 或 URL。 该 URL 已包含编码参数。
+在后续请求中，复制并应用 `nextLink` 上一响应中的 或 `deltaLink` URL。 该 URL 已包含编码参数。
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 对[同](/graph/delta-query-overview)一组织联系人集合之前的 delta 函数调用的 URL 中返回的状态令牌，指示完成这一轮 `deltaLink` 更改跟踪。  在集合的下一轮更改跟踪的第一个请求中保存和应用整个 `deltaLink` URL（包括此令牌）。|
-| $skiptoken | string | 之前的[delta](/graph/delta-query-overview)函数调用的 URL 中返回的状态令牌，指示同一组织联系人集合中还有进一步 `nextLink` 的更改需要跟踪。  |
+| $deltatoken | string | 对 [同](/graph/delta-query-overview) 一组织联系人集合 `deltaLink` 之前的 **delta** 函数调用的 URL 中返回的状态令牌，指示完成这一轮更改跟踪。 在集合的下一 `deltaLink` 轮更改跟踪的第一个请求中保存和应用整个 URL（包括此令牌）。|
+| $skiptoken | string | 之前的 [delta](/graph/delta-query-overview) 函数`nextLink`调用的 URL 中返回的状态令牌，指示同一组织联系人集合中还有进一步的更改需要跟踪。 |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
 此方法支持可选的 OData 查询参数来帮助自定义响应。
 
-- 像在任何 GET 请求中一样，您可以使用查询参数来仅指定 `$select` 获得最佳性能所需的属性。 始终返回 **id** 属性。
+- 像在任何 GET 请求 `$select` 中一样，您可以使用查询参数来仅指定获得最佳性能所需的属性。 始终返回 **id** 属性。
 - 提供对 `$filter` 的有限支持：
   - 唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。 可以筛选多个对象。 例如，`https://graph.microsoft.com/beta/contacts/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`。 筛选对象不能超出 50 个。
 
@@ -72,7 +72,7 @@ GET /contacts/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [orgContact](../resources/orgcontact.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [orgContact](../resources/orgcontact.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
 
 - 如果返回 `nextLink`URL：
   - 这表示绘画中存在要检索的其他数据页面。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
@@ -108,7 +108,7 @@ GET /contacts/delta
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 因为没有参数 `$select` ，因此将跟踪并返回一组默认属性。
+下面展示了示例请求。 因为没有参数， `$select` 因此将跟踪并返回一组默认属性。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -136,8 +136,12 @@ GET https://graph.microsoft.com/beta/contacts/delta
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/orgcontact-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -212,8 +216,12 @@ GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-select-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/orgcontact-delta-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -280,8 +288,12 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-minimal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-minimal-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/orgcontact-delta-minimal-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -289,7 +301,7 @@ Prefer: return=minimal
 
 #### <a name="response"></a>响应
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，不包括属性，这意味着它自上次 delta 查询以来没有更改;和 包含在内， `mail` `displayName` `jobTitle` 这意味着其值已更改。
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意， `mail` 不包括属性，这意味着它自上次 delta `displayName` `jobTitle` 查询以来没有更改;和 包含在内，这意味着其值已更改。
 
 <!-- {
   "blockType": "response",

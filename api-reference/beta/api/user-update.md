@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1c01c643153e113be0ead9a67ea75e3aaa53ec91
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: bf5292248c2352f56705bc279edbe1bc5a2da09b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262230"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342533"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -21,7 +21,7 @@ ms.locfileid: "62262230"
 更新 [user](../resources/user.md) 对象的属性。 并非所有属性都可以在没有管理员角色的情况下由具有其默认权限的成员或来宾用户更新。 [比较成员和来宾默认](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) 权限，查看其可管理的属性。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -58,13 +58,13 @@ PATCH /users/{id | userPrincipalName}
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |businessPhones| String collection | 用户的电话号码。 **注意：** 虽然这是一个字符串集合，但只能为此属性设置一个数字。|
 |城市|String|用户所在的城市。|
-| CompanyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。 |
+| CompanyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 最大长度为 64 个字符。 |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | 设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](../resources/user.md#legal-age-group-property-definitions)以了解详细信息。 |
 |country|String|用户所在的国家/地区;例如， `US` 或 `UK`。|
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|保留分配给目录对象的自定义安全属性的值的开放式复杂类型。<br/><br/>若要更新此属性，必须为调用主体分配"属性分配管理员"角色，并且必须向其授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。|
 |department|String|用户工作部门的名称。|
 |displayName|String|用户通讯簿中显示的名称，通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。|
-|employeeId|String|由组织分配给该用户的员工标识符。|
+|employeeId|String|由组织分配给该用户的员工标识符。 最大长度为 16 个字符。|
 | employeeType | String | 捕获企业员工类型。 例如，`Employee`、`Contractor`、`Consultant` 或 `Vendor`。|
 |givenName|String|用户的名。|
 |employeeHireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
@@ -293,7 +293,7 @@ HTTP/1.1 204 No Content
 
 若要分配自定义安全属性，必须为调用主体分配"属性分配管理员"角色，并且必须授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。
 
-有关用户的更多示例，请参阅使用 Microsoft Graph API 分配、更新或删除[自定义安全属性](/graph/custom-security-attributes-examples)。
+有关用户的更多示例，请参阅使用 Microsoft Graph API 分配、更新[或删除自定义安全属性](/graph/custom-security-attributes-examples)。
 
 #### <a name="request"></a>请求
 

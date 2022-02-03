@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b5f4331c54a3dc29ba1b4f28f2f35ffdcbc27a62
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6911998080874b5594419177ef03665c964db8ac
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990245"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345063"
 ---
 # <a name="educationuser-delta"></a>educationUser： delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "60990245"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建或更新的 [educationUser，](../resources/educationuser.md) 而无需执行整个集合的完整读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
+获取新创建或更新的 [educationUser](../resources/educationuser.md) ，而无需执行整个集合的完整读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +50,7 @@ GET /education/users/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationUser](../resources/educationuser.md) 集合对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationUser](../resources/educationuser.md) 集合对象。
 
 > [!IMPORTANT]
 > educationUser 增量不包括已删除的用户。
@@ -89,8 +89,12 @@ GET https://graph.microsoft.com/beta/education/users/delta
 [!INCLUDE [sample-code](../includes/snippets/java/educationuser-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationuser-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationuser-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

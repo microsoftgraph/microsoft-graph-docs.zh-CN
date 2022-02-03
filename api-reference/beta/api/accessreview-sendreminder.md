@@ -1,16 +1,16 @@
 ---
 title: SendReminder accessReview
-description: '在Azure AD访问评审"功能中，向当前处于活动状态的 accessReview 的审阅者发送提醒。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。 '
+description: '在Azure AD访问评审功能中，向当前处于活动状态的 accessReview 的审阅者发送提醒。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。 '
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 04e3a6c35e58a908bdc085179c1cd46859556f5a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3cfb9b4c439f393585b20b70acea76a299ce4133
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987978"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340692"
 ---
 # <a name="sendreminder-accessreview"></a>SendReminder accessReview
 
@@ -18,7 +18,9 @@ ms.locfileid: "60987978"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，向当前处于活动状态的[accessReview](../resources/accessreview.md)的审阅者发送提醒。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。 
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+在Azure AD[访问评审](../resources/accessreviews-root.md)"功能中，向当前处于活动状态的 [accessReview](../resources/accessreview.md) 的审阅者发送提醒。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -73,8 +75,12 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 [!INCLUDE [sample-code](../includes/snippets/java/sendreminder-accessreview-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sendreminder-accessreview-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sendreminder-accessreview-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

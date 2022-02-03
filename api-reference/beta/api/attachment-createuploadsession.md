@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e199c36ac6abcf95329cbcd87b320f5cfff27b22
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3a36f5e3e41caebdde8f1c8f80356980d1a470e5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107096"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340372"
 ---
 # <a name="attachment-createuploadsession"></a>attachment： createUploadSession
 
@@ -20,14 +20,14 @@ ms.locfileid: "62107096"
 
 创建允许应用迭代上载文件范围的上载会话，以便将文件附加到Outlook项。 项目可以是消息[或](../resources/message.md)[事件](../resources/event.md)。
 
-如果文件大小在 3 MB 到 150 MB 之间，则使用该方法附加文件。 若要附加小于 3 MB 的文件，请对 Outlook 项目的 attachments 导航属性执行一个操作;请参阅如何为邮件或 `POST` [事件执行该操作](event-post-attachments.md)。  [](message-post-attachments.md) 
+如果文件大小在 3 MB 到 150 MB 之间，则使用该方法附加文件。 若要附加小于 3 MB `POST` 的文件，请对 Outlook 项目的 **attachments** 导航属性执行一个操作;请参阅如何为邮件或 [事件执行该操作](event-post-attachments.md)。[](message-post-attachments.md) 
 
 作为响应的一部分，此操作返回可用于后续顺序查询的上载 `PUT` URL。 通过每个操作的请求 `PUT` 标头，可以指定要上载的字节的准确范围。 这允许恢复传输，以防在上载过程中网络连接中断。 
 
-以下是使用上传会话将文件附加到Outlook项的步骤：
+以下是使用上载会话将文件附加到Outlook项的步骤：
 
 1. 创建上载会话。
-2. 在此上载会话中，每次) 以迭代方式上载字节范围 (最多上载 4 MB，直到上载文件的所有字节，并且文件附加到指定项。
+2. 在上载会话内， (上载字节范围，每次) 最多上载 4 MB，直到上载文件的所有字节，并且文件附加到指定项。
 3. 保存附件的 ID，供将来访问。
 4. 可选：删除上载会话。
 
@@ -52,14 +52,14 @@ ms.locfileid: "62107096"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要创建上传会话以将文件附加到 **事件**： 
+若要创建上载会话以将文件附加到 **事件**： 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
 ```
 
-若要创建用于将文件附加到邮件的上载 **会话：** 
+若要创建用于将文件附加到邮件的上载 **会话，** 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -77,9 +77,9 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | Description |
+| 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项目的属性。 至少，指定附件类型 `file` () 、名称和文件大小。|
+|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项目的属性。 至少应指定附件 (`file`) 、名称和文件大小。|
 
 ## <a name="response"></a>响应
 
@@ -87,9 +87,9 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 >**注意**： 
 >
->作为 **uploadSession** 响应对象的一部分返回的 **uploadUrl** 属性是后续查询用于上载文件的字节范围的不透明 `PUT` URL。 它包含过期 `PUT` **expirationDateTime 的后续查询的适当身份验证令牌**。 不自定义此 URL。
+>作为 **uploadSession** 响应`PUT`对象的一部分返回的 **uploadUrl** 属性是后续查询用于上载文件的字节范围的不透明 URL。 它包含 **expirationDateTime** 到期的后续`PUT`查询的适当身份验证令牌。 不自定义此 URL。
 >
->**nextExpectedRanges** 属性指定要上载的下一个文件字节位置，例如， `"NextExpectedRanges":["2097152"]` 。 必须按顺序上传文件中的字节。
+>**nextExpectedRanges** 属性指定要上载的下一个文件字节位置，例如， `"NextExpectedRanges":["2097152"]`。 必须按顺序上传文件中的字节。
 
 <!-- The **nextExpectedRanges** property specifies one or more ranges of bytes that the server is still missing for the file. These ranges are zero-indexed and of the format `{start}-{end}`, unless if the server misses the remainder of the bytes from the start of that range, in which case the format is simply `{start}`.  -->
 
@@ -140,6 +140,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/attachment-createuploadsession-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/attachment-createuploadsession-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -172,7 +176,7 @@ Content-type: application/json
 
 以下示例演示如何创建上载会话，该会话可用于向草稿邮件添加大型内嵌附件。
 
-对于内联附件，将 _isInline_ 属性设置为 并使用 `true` _contentId_ 属性指定附件的 CID，如下所示。 在草稿邮件正文中，使用相同的 CID 值指示要使用 CID HTML 引用标记包含附件的位置，例如 `<img src="cid:my_inline_picture">` 。 成功上载文件后，呈现的邮件将在指定位置包含附件作为邮件正文的一部分。
+对于内联附件，将 _isInline_ 属性 `true` 设置为 并使用 _contentId_ 属性指定附件的 CID，如下所示。 在草稿邮件正文中，使用相同的 CID 值指示要使用 CID HTML 引用标记包含附件的位置，例如 `<img src="cid:my_inline_picture">`。 成功上载文件后，呈现的邮件将在指定位置包含附件作为邮件正文的一部分。
 
 #### <a name="request"></a>请求
 
@@ -216,6 +220,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/attachment-createuploadsession-inline-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/attachment-createuploadsession-inline-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

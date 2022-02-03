@@ -5,21 +5,21 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4d1f4ef3286726efc59da8e19c13ccda130c0b51
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e0cc808fc2c1ca1edab96c101d4aa40dca26253c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023510"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340946"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork： sendActivityNotification
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向用户发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams通知](/graph/teams-send-activityfeednotifications)。
+向用户发送活动源通知。 有关发送通知以及发送通知的要求的更多详细信息，请参阅发送Teams[活动通知](/graph/teams-send-activityfeednotifications)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -53,11 +53,11 @@ POST /users/{userId | user-principal-name}/teamwork/sendActivityNotification
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
 |activityType|String|活动类型。 这必须在应用清单[Teams声明](/microsoftteams/platform/overview)。|
-|chainId|Int64|可选。 用于替代上一个通知。 在后续 `chainId` 请求中使用相同的方法替代上一个通知。|
+|chainId|Int64|可选。 用于替代上一个通知。 在后续请求 `chainId` 中使用相同的方法替代上一个通知。|
 |previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams显示前 150 个字符。|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|活动源条目中定义的模板变量的值与应用程序Teams `activityType` [相对应](/microsoftteams/platform/overview)。|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|活动源条目中定义的模板变量的值与`activityType`应用程序Teams[相对应](/microsoftteams/platform/overview)。|
 
-将 topic 属性的值设置为 时 `source` ，支持 **以下** 资源 `entityUrl` ：
+将 topic 属性的值设置为 时 `source` ，支持 **以下** 资源 `entityUrl`：
 
 - [teamsAppInstallation](../resources/teamsappinstallation.md)
 - [teamsCatalogApp](../resources/teamscatalogapp.md)
@@ -115,8 +115,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/userteamwork-sendactivitynotification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/userteamwork-sendactivitynotification-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/userteamwork-sendactivitynotification-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -134,7 +138,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>示例 2：使用自定义主题通知用户事件
 
-如果要链接未由 Microsoft Graph 表示的方面，或者希望自定义名称，可以将 的源设置为 并传递其自定义 `topic` `text` 值。 `webUrl` 将 source 用作 时 `topic` 是必需的 `text` 。
+如果要链接未由 Microsoft Graph 表示的方面，或者希望自定义名称，可以将 的源设置为 并`topic``text`传递其自定义值。 `webUrl` 将 source 用作 时 `topic` 是必需的 `text`。
 
 #### <a name="request"></a>请求
 
@@ -182,8 +186,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

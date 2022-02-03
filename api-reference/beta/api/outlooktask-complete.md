@@ -1,16 +1,16 @@
 ---
 title: outlookTask：完成
-description: '完成Outlook **completedDateTime** 属性为当前日期的任务， '
+description: '完成Outlook **completedDateTime** 属性为当前日期的一个任务， '
 ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 798349400b17bf63dfb86cbee56d907d223221f5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ef47e73784df3c509a2a8e247ab2618e6c2899b4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018359"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341049"
 ---
 # <a name="outlooktask-complete-deprecated"></a>outlookTask：完成 (弃) 
 
@@ -21,11 +21,11 @@ ms.locfileid: "61018359"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-完成一Outlook任务，将 **completedDateTime** 属性设置为当前日期，**将 status** 属性设置成 `completed` 。
+完成Outlook任务，将 **completedDateTime** 属性设置为当前日期，**将 status** 属性设置成 `completed`。
 
 如果要完成定期系列中的任务，在响应中，任务集合将包含该系列中已完成的任务以及该系列中的下一个任务。
 
-**completedDateTime** 属性表示任务完成的日期。 默认情况下 **，completedDateTime** 的时间部分设置为午夜 UTC。
+**completedDateTime** 属性表示任务完成的日期。 默认情况下， **completedDateTime** 的时间部分设置为午夜 UTC。
 
 默认情况下，此操作 (POST、GET 和 PATCH 任务) UTC 格式返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
@@ -61,11 +61,11 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和 [outlookTask](../resources/outlooktask.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [outlookTask](../resources/outlooktask.md) 对象。
 
 ## <a name="example"></a>示例
 
-以下示例将指定任务标记为已完成。 它在标头中指定太平洋标准 (PST) `Prefer: outlook.timezone` PST 时间。
+以下示例将指定任务标记为已完成。 它在标头中指定太平洋标准 (PST) 。`Prefer: outlook.timezone`
 
 ### <a name="request"></a>请求
 
@@ -97,8 +97,12 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sample-code](../includes/snippets/java/outlooktask-complete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/outlooktask-complete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/outlooktask-complete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 84afeac86a31fba374a3699e61c0e7a5b896de92
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ad38b42038d7ab8cdd0ff0e0e95fd4d9a782ccc0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60977812"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347087"
 ---
 # <a name="synchronizationjob-pause"></a>synchronizationJob：pause
 
@@ -18,7 +18,7 @@ ms.locfileid: "60977812"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-暂时停止同步。 所有进度（包括作业状态）都将保持，当进行 [Start](../api/synchronization-synchronizationjob-start.md) 调用时，作业将继续从它离开的地方开始。
+临时停止正在运行的同步作业。 所有进度（包括作业状态）都将保持，并且作业将在开始调用时从它离开的地方继续。[](../api/synchronization-synchronizationjob-start.md)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,11 +47,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 ## <a name="response"></a>响应
 
-如果成功，则返回 `204 No Content` 响应。 它不会在响应正文中返回任何内容。
+如果成功，则返回 响应 `204 No Content` 。 它不会在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,14 +78,18 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-pause-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-pause-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationjob-pause-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 响应示例如下所示。
 <!-- {
   "blockType": "response"

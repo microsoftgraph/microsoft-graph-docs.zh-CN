@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8ce2694be61de9dbc313d384411259a85b910dcc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 83aecf724d771aa6fcf124aeb719141ab0958ff5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030554"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341167"
 ---
 # <a name="call-unmute"></a>call： unmute
 
@@ -56,7 +56,7 @@ POST /communications/calls/{id}/unmute
 |clientContext|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) 对象。
 
 >**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
 
@@ -94,8 +94,12 @@ Content-Length: 46
 [!INCLUDE [sample-code](../includes/snippets/java/call-unmute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-unmute-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-unmute-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

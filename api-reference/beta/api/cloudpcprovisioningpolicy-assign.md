@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e923be2b4608fcf93d73ca6494c67346b2565db6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6ce0e58f7f1bccda2e51d2df560fe31064acee9b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018813"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347198"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy：assign
 
@@ -55,7 +55,7 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 
 |参数|类型|说明|
 |:---|:---|:---|
-|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) 集合 | 要分配给相应目标组的云电脑预配策略资源的集合。 目前Microsoft 365支持Azure AD组和安全组。 |
+|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) 集合 | 要分配给相应目标组的云电脑预配策略资源的集合。 目前Microsoft 365安全组Azure AD组和安全组。 |
 
 ## <a name="response"></a>响应
 
@@ -99,8 +99,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/assign-cloudpcprovisioningpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/assign-cloudpcprovisioningpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/assign-cloudpcprovisioningpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

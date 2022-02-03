@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 3ab6ba724e2ce64b7fcccefc9c73b7a8e77baadd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a244d7fa5d198eac5a71dc05853d7fed64c18b9f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018303"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341602"
 ---
 # <a name="page-copytosection"></a>page： copyToSection
 
@@ -57,7 +57,7 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 响应 `202 Accepted` 代码和 `Operation-Location` 标头。 轮询Operation-Location [终结点，获取复制操作的状态](onenoteoperation-get.md)。
+如果成功，此方法返回 响应 `202 Accepted` 代码和标头 `Operation-Location` 。 轮询Operation-Location [终结点，获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -94,8 +94,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/page-copytosection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/page-copytosection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/page-copytosection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

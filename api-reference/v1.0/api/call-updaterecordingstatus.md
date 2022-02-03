@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a55ed37be9edb6981dc94be24cd0a88f5316b244
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ca7fc640b1d482a8c8cb0fbbdfd55e0388071d87
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029678"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339040"
 ---
 # <a name="call-updaterecordingstatus"></a>call： updateRecordingStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "61029678"
 
 > 其他限制：如果不首先调用 **updateRecordingStatus** API 以指示录制已开始，并且从该 API 收到成功回复，则不得使用媒体访问 API 记录或以其他方式保留应用程序访问的呼叫或会议中的媒体内容，或者记录派生自该媒体内容 ("record"或"recording") 的数据。 如果应用程序开始录制任何会议，则必须在调用 **updateRecordingStatus** API 之前结束录制，以指示录制已结束。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）      |
@@ -47,7 +47,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 | 参数       | 类型    | 说明                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
 | clientContext   | String  | 唯一的客户端上下文字符串。 最大限制为 256 个字符。                                 |
-| status          | String  | 录制状态。 可能的值为： `notRecording`、 `recording`或 `failed`。  |
+| 状态          | String  | 录制状态。 可能的值为： `notRecording`、 `recording`或 `failed`。  |
 
 ## <a name="response"></a>响应
 此方法向为此 `200 OK` 请求创建的 [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) 对象返回响应代码和具有 URI 的位置标头。
@@ -90,8 +90,12 @@ Content-Length: 79
 [!INCLUDE [sample-code](../includes/snippets/java/call-updaterecordingstatus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-updaterecordingstatus-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-updaterecordingstatus-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

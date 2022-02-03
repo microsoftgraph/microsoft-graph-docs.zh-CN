@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8cdfd836992d884e840e6717e9a0e912b6b29be5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7add5d22a55071a77fe431f675ee992ec3b32f9d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015629"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348733"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 
 命名空间：microsoft.graph
 
-验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  客户端可以使用此 API 确定显示名称或邮件昵称是否有效，然后再尝试创建Microsoft 365组。  若要验证现有组的属性，请对组使用 [validateProperties](group-validateproperties.md) 函数。
+验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  客户端可以使用此 API 确定显示名称或邮件昵称是否有效，然后再尝试创建Microsoft 365组。 若要验证现有组的属性，请对组 [使用 validateProperties](group-validateproperties.md) 函数。
 
 对邮件和邮件昵称显示名称执行以下验证： 
 1. 验证前缀和后缀命名策略
@@ -63,7 +63,7 @@ POST /directoryObjects/validateProperties
 
 如果请求无效，该方法将返回 `400 Bad Request` 响应代码。 响应正文中返回一条错误消息，包含有关无效请求的详细信息。
 
-如果存在验证错误，该方法将返回 `422 Unprocessable Entity` 响应代码。 响应正文中返回错误消息和错误详细信息集合。
+如果存在验证错误，该方法将返回响应 `422 Unprocessable Entity` 代码。 响应正文中返回错误消息和错误详细信息集合。
 
 ## <a name="examples"></a>示例
 
@@ -103,8 +103,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-validateproperties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-validateproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

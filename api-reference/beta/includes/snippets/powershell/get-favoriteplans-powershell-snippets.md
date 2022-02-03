@@ -1,16 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7ac12680533b171cd56ceab8f452cba519460d26
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 62932f9d8fc1dbf94d415a90971583deb0e521e2
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102459"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349823"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Planner
 
+# A UPN can also be used as -UserId.
 Get-MgUserPlannerFavoritePlan -UserId $userId
 
 ```

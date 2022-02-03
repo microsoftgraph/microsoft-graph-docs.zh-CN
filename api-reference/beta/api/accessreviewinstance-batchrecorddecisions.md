@@ -5,21 +5,21 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2d83d77b3fe0698edd0f89b5e90dd5466fd47c73
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 61c4f19f4eda2ae5fc990a3791fa39dd627748b0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991953"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340489"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance：batchRecordDecisions
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-允许审阅者使用 **principalId** **、resourceId** 或两者成批查看所有 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)对象。
+使审阅者能够使用 **principalId**、**resourceId** 或两者成批查看所有 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -52,9 +52,9 @@ POST /me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisi
 |参数|类型|说明|
 |:---|:---|:---|
 | decision  | String | 被审阅实体的访问决策。 可取值为：`Approve`、`Deny`、`NotReviewed`、`DontKnow`。 必需。  |
-|  justification | String | 提供给管理员评价的上下文。 如果 **justificationRequiredOnApproval** `True` 位于 **accessReviewScheduleDefinition 上，则是必需的**。  |
-|principalId|String|如果提供，将在此批处理中检查具有匹配 **principalId** 的所有 **accessReviewInstanceDecisionItems。** 如果未提供，将 **检查所有 principalId。**|
-|resourceId|String|如果提供，将在此批处理中检查具有匹配 **resourceId** 的所有 **accessReviewInstanceDecisionItems。** 如果未提供，将 **检查所有 resourceId。**|
+|  justification | String | 提供给管理员评价的上下文。 如果 **justificationRequiredOnApproval** 位于 `True` **accessReviewScheduleDefinition 上，则是必需的**。  |
+|principalId|String|如果提供，将在此批处理中检查具有匹配 **principalId** 的所有 **accessReviewInstanceDecisionItems**。 如果未提供，将 **检查所有 principalId** 。|
+|resourceId|String|如果提供，将在此批处理中检查具有匹配 **resourceId** 的所有 **accessReviewInstanceDecisionItems**。 如果未提供，将 **检查所有 resourceId** 。|
 
 
 
@@ -98,8 +98,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-batchrecorddecisions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-batchrecorddecisions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewinstance-batchrecorddecisions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

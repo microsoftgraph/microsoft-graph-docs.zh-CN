@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0e4e9b3e29ede80683bc9fc6a6536abf8d600d3c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e6b01f13c0da8cb0c4c67e48d6c8b7b4c896ff96
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007025"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348038"
 ---
 # <a name="call-cancelmediaprocessing"></a>call： cancelMediaProcessing
 
@@ -18,7 +18,7 @@ ms.locfileid: "61007025"
 
 取消处理任何进行中的媒体操作。
 
-媒体操作是指 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse，](./call-record.md)它们默认排队等待处理。 **cancelMediaProcessing** 方法取消进程内的任何操作以及排队的操作。 例如，此方法可用于清理新媒体操作的 IVR 操作队列。 但是，它将不会取消 **subscribeToTone** 操作，因为它独立于任何操作队列运行。
+媒体操作是指 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse](./call-record.md)，它们默认排队等待处理。 **cancelMediaProcessing** 方法取消进程内的任何操作以及排队的操作。 例如，此方法可用于清理新媒体操作的 IVR 操作队列。 但是，它将不会取消 **subscribeToTone** 操作，因为它独立于任何操作队列运行。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/cancelMediaProcessing
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 HTTP 响应代码和具有为此请求创建的 `200 OK` [commsOperation](../resources/commsoperation.md) 的 URI 的位置标头。
+如果成功，此方法将返回 `200 OK` HTTP 响应代码和具有为此请求创建的 [commsOperation](../resources/commsoperation.md) 的 URI 的位置标头。
 
 ## <a name="example"></a>示例
 
@@ -95,8 +95,12 @@ Content-Length: 62
 [!INCLUDE [sample-code](../includes/snippets/java/call-cancelmediaprocessing-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-cancelmediaprocessing-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-cancelmediaprocessing-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

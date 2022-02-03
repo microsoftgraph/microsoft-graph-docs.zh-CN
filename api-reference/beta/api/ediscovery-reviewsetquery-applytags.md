@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8eea4dc8cb0890570ff397e0752f8f7d69b0e5e8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3d75d1366a88a2618949db86f6c9c2090ffb1327
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986668"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344075"
 ---
 # <a name="reviewsetquery-applytags"></a>reviewSetQuery：applyTags
 
@@ -63,7 +63,7 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{rev
 
 如果成功，此操作返回 `202 Accepted` 响应代码。
 
-如果标记操作成功启动，此操作将返回 响应 `202 Accepted` 代码。 响应还将包含标头，其中包含为处理标记而创建的 `Location` [tagOperation](../resources/ediscovery-tagOperation.md) 的位置。 通过向位置提出 GET 请求来检查标记操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded` 。
+如果标记操作成功启动，此操作将返回 响应 `202 Accepted` 代码。 响应还将包含标头 `Location` ，其中包含为处理标记而创建的 [tagOperation](../resources/ediscovery-tagOperation.md) 的位置。 通过向位置提出 GET 请求来检查标记操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded`。
 
 ## <a name="examples"></a>示例
 
@@ -105,8 +105,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/reviewsetquery-applytags-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reviewsetquery-applytags-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reviewsetquery-applytags-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

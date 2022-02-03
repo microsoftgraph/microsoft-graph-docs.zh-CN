@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b68aa3dd8631925497b8ba388ad5cbe407739c88
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 0cdf3db51e1fe7dbc4849ba36826c2b981917b73
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101439"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349943"
 ---
 ```go
 
@@ -22,10 +22,27 @@ requestBody.SetDecisions( []AccessReviewHistoryDecisionFilter {
     "notReviewed",
     "notNotified",
 }
-reviewHistoryPeriodStartDateTime, err := time.Parse(time.RFC3339, "2021-01-01T00:00:00Z")
-requestBody.SetReviewHistoryPeriodStartDateTime(&reviewHistoryPeriodStartDateTime)
-reviewHistoryPeriodEndDateTime, err := time.Parse(time.RFC3339, "2021-04-05T00:00:00Z")
-requestBody.SetReviewHistoryPeriodEndDateTime(&reviewHistoryPeriodEndDateTime)
+scheduleSettings := msgraphsdk.NewAccessReviewHistoryScheduleSettings()
+requestBody.SetScheduleSettings(scheduleSettings)
+reportRange := "P1M"
+scheduleSettings.SetReportRange(&reportRange)
+recurrence := msgraphsdk.NewPatternedRecurrence()
+scheduleSettings.SetRecurrence(recurrence)
+pattern := msgraphsdk.NewRecurrencePattern()
+recurrence.SetPattern(pattern)
+type := "monthly"
+pattern.SetType(&type)
+interval := int32(1)
+pattern.SetInterval(&interval)
+range := msgraphsdk.NewRecurrenceRange()
+recurrence.SetRange(range)
+type := "noEnd"
+range.SetType(&type)
+startDate := "2018-08-03T21:02:30.667Z"
+range.SetStartDate(&startDate)
+range.SetAdditionalData(map[string]interface{}{
+    "count": ,
+}
 requestBody.SetScopes( []AccessReviewScope {
     msgraphsdk.NewAccessReviewScope(),
     SetAdditionalData(map[string]interface{}{

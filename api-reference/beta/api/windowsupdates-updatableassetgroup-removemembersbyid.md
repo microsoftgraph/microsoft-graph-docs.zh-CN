@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 5e187fadab110c3d8570c79736a3032ab7f41f5c
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: e19e435878826f916aec2843669c5a39c12aeef2
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792146"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343777"
 ---
 # <a name="updatableassetgroup-removemembersbyid"></a>updatableAssetGroup：removeMembersById
 命名空间：microsoft.graph.windowsUpdates
@@ -54,7 +54,7 @@ POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/removeMember
 |参数|类型|说明|
 |:---|:---|:---|
 |ids|String collection|与要作为 [updatableAssetGroup](../resources/windowsupdates-updatableasset.md) 成员删除的 **updatableAsset** 资源对应的标识符列表。|
-|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
+|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是： `#microsoft.graph.windowsUpdates.azureADDevice`。|
 
 ## <a name="response"></a>响应
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-removemembersbyid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableassetgroup-removemembersbyid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

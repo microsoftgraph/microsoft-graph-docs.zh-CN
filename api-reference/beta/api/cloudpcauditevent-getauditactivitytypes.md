@@ -5,12 +5,12 @@ author: ecmadao
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 5770a717f350c533070e6079dace8cbe5dd9f158
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8eb9fa4f45641e001aaa3131c2decd73df384f4b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003448"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348788"
 ---
 # <a name="cloudpcauditevent-getauditactivitytypes"></a>cloudPcAuditEvent：getAuditActivityTypes
 
@@ -53,7 +53,7 @@ GET /deviceManagement/virtualEndpoint/auditEvents/getAuditActivityTypes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码 `200 OK` 和 String 集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 String 集合。
 
 ## <a name="examples"></a>示例
 
@@ -86,8 +86,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvent
 [!INCLUDE [sample-code](../includes/snippets/java/cloudpcauditevent-getauditactivitytypes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpcauditevent-getauditactivitytypes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcauditevent-getauditactivitytypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

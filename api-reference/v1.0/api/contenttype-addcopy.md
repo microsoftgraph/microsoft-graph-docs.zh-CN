@@ -5,18 +5,18 @@ description: 将网站内容类型的副本添加到列表中。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 813411f7377c57c58ef4baca51230beab775dc11
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 37c2b8984f15d03c58019b945c525d6b35bcdd26
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974213"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346736"
 ---
 # <a name="contenttype-addcopy"></a>contentType：addCopy
 命名空间：microsoft.graph
 
 
-将内容类型[contentType] [的副本从][网站添加到][site][列表][list]。
+将内容[类型][contentType] 的副本从[网站添加到][site][列表][list]。
  
   
 
@@ -97,8 +97,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-addcopy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-addcopy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-addcopy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

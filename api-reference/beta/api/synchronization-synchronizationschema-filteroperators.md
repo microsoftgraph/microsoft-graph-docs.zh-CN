@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: c92aac323d210973465f34a2c0ed3c28c72eabf9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 71ab3460dcc3a72e1b7e9112b814531922c56200
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098666"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349086"
 ---
 # <a name="synchronizationschema-filteroperators"></a>synchronizationSchema： filterOperators
 
@@ -18,7 +18,7 @@ ms.locfileid: "62098666"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出范围筛选器 中 [支持的所有运算符](../resources/synchronization-filter.md)。
+列出范围筛选器中 [支持的所有运算符](../resources/synchronization-filter.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200, OK` [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) 集合对象。
+如果成功，此方法在响应 `200, OK` 正文中返回 响应代码和 [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) 集合对象。
 
 ## <a name="example"></a>示例
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/synchronizationschema-filteroperators-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationschema-filteroperators-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 35caa8ff57ae6f5fdafa12b3c4aa84b60f2b737e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 45f7e61305af39544595655fc79e5370cc9148c4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136903"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346051"
 ---
 # <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet： getActiveKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "62136903"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[trustFrameworkKeySet](../resources/trustframeworkkey.md)中的当前活动的[trustFrameworkKey。](../resources/trustframeworkkeyset.md) 一次只有一个键在键集内处于活动状态。
+获取 [trustFrameworkKeySet 中的](../resources/trustframeworkkey.md) 当前活动 [trustFrameworkKey](../resources/trustframeworkkeyset.md)。 一次只有一个键在键集内处于活动状态。
 
 
 ## <a name="permissions"></a>权限
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-getactivekey-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/trustframeworkkeyset-getactivekey-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,22 +1,22 @@
 ---
 title: group： validateProperties
-description: 验证用户Microsoft 365或邮件昵显示名称是否符合命名策略。
+description: 验证用户Microsoft 365或邮件显示名称是否符合命名策略。
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4cc1aa6a36a0e270313c1654814149ee3e8d5ce4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0cca89397a96e8ec3859ed0360e98bb4a73cdd4c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015069"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341147"
 ---
 # <a name="group-validateproperties"></a>group： validateProperties
 
 命名空间：microsoft.graph
 
-验证用户Microsoft 365或邮件昵显示名称是否符合命名策略。 客户端可以使用 API 确定显示名称或邮件昵称是否有效，然后再尝试更新Microsoft 365组。  若要在创建组之前验证属性，请对目录 [对象使用 validateProperties](directoryobject-validateproperties.md) 函数。
+验证用户Microsoft 365或邮件显示名称是否符合命名策略。 客户端可以使用 API 在尝试更新显示名称或邮件昵称是否有效Microsoft 365。 若要在创建组之前验证属性，请对目录 [对象使用 validateProperties](directoryobject-validateproperties.md) 函数。
 
 对邮件和邮件昵称显示名称执行以下验证： 
 1. 验证前缀和后缀命名策略
@@ -62,7 +62,7 @@ POST /groups/{id}/validateProperties
 
 如果请求无效，该方法将返回 `400 Bad Request` 响应代码。 响应正文中返回一条错误消息，包含有关无效请求的详细信息。
 
-如果存在验证错误。 方法返回 `422 Unprocessable Entity` 响应代码。 响应正文中返回错误消息和错误详细信息集合。
+如果存在验证错误。 方法返回 响应 `422 Unprocessable Entity` 代码。 响应正文中返回错误消息和错误详细信息集合。
 
 ## <a name="examples"></a>示例
 
@@ -101,8 +101,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-validateproperties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-validateproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: 获取可帮助你利用 Microsoft Graph 数据连接的相关提�
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 08a88e86850e2ca82f5f8eac46f74b7edec72d3f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef06383c4e7447adcad1682d2e2caae9682ab28c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139196"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339353"
 ---
 # <a name="microsoft-graph-data-connect-frequently-asked-questions"></a>Microsoft Graph 数据连接常见问题解答
 
@@ -68,10 +68,6 @@ Privileged Access Management (PAM) 请求必须得到管理员的批准，然后
 ## <a name="can-i-use-puser-field-to-determine-the-relevant-user"></a>能否使用 puser 字段来确定相关用户？
 
 提取的数据包含一些在使用相应的 Microsoft Graph API 时不存在的属性。 具体而言，`puser` 在确定用户数据提取的位置时非常有用。 如果不同邮箱中具有同一电子邮件的两个副本，可使用 `puser` 字段来确定副本来自哪个邮箱。 `puser` 字段还对 `Manager` 数据集之类的数据集很有用。 导出的 JSON 将包含管理器相关信息，但只有当你知道它们是谁的管理器时，这才有用。 `puser` 字段将指出 JSON 对象对应于哪个管理器。
-
-## <a name="is-a-mix-of-users-with-and-without-workplace-analytics-licenses-supported"></a>是否支持混合拥有和不拥有工作区分析许可证的用户？
-
-如今，我们要求用户列表中的所有用户都拥有工作区分析许可证，或者用户列表中的所有用户都没有工作区分析许可证。 遗憾的是，我们不支持混合的用户列表，即有些用户拥有工作区分析许可证，而有些用户没有工作区分析许可证。 这是因为如果用户列表中的用户拥有工作区分析许可证，则数据连接不需要额外收费，而如果客户没有工作区分析许可证，则将使用此处详述的消耗计费向客户收费。 如果当前存在违反你的用例的情况，请告知我们，我们可在此查看是否有机会帮助解决这种情况。
 
 ## <a name="is-hybrid-mode-tenant-setup-supported"></a>是否支持混合模式租户设置？
 

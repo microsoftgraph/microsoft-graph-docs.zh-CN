@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a32b32f8b6e9e81461e4bc56a3f5cef0560bc8d9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6848af1587bfc79573781d20afbf0ca4e3220e2d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974451"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346342"
 ---
 # <a name="call-keepalive"></a>call： keepAlive
 
@@ -22,7 +22,7 @@ ms.locfileid: "60974451"
 
 我们建议您以较短的时间间隔发送请求， (每隔 15 分钟) 。 确保这些请求成功防止呼叫超时和结束。
 
-尝试向已结束的呼叫发送请求将导致 `404 Not-Found` 错误。 与调用相关的资源应在应用程序端清理。
+尝试向已结束的呼叫发送请求将导致错误 `404 Not-Found` 。 与调用相关的资源应在应用程序端清理。
 
 ## <a name="permissions"></a>权限
 调用此 API 可能需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -81,8 +81,12 @@ POST https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-95
 [!INCLUDE [sample-code](../includes/snippets/java/keep-alive-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/keep-alive-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/keep-alive-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

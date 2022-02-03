@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9e77237c4ad4119169d99159c0ef8d4be99de405070397f4dcb5742ffa78ec24
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bf7266f8e8c3d6d158de24f2848ee12a159bc0b4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57278530"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62350477"
 ---
 ```javascript
 
@@ -16,11 +16,13 @@ const options = {
 const client = Client.init(options);
 
 const homeRealmDiscoveryPolicy = {
-  definition: [
-    'definition-value'
+    definition: [
+    '{\"HomeRealmDiscoveryPolicy\':
+     {\'AccelerateToFederatedDomain\':true,
+      \'PreferredDomain\':\"federated.example.edu\",
+      \'AlternateIdLogin\':{\'Enabled\':true}}}"
   ],
-  displayName: 'displayName-value',
-  isOrganizationDefault: true
+    displayName: 'Contoso default HRD Policy'
 };
 
 await client.api('/policies/homeRealmDiscoveryPolicies/{id}')

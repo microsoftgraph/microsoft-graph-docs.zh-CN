@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e3f9fae7d137cd458b99f53e42b54e4d7dc13228
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 06352c0bfa72e65e8ed0bdd46ae7d3d44eb1f537
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097657"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351444"
 ---
 ```powershell
 
@@ -16,6 +16,7 @@ $params = @{
     Color = "preset9"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserOutlookMasterCategory -UserId $userId -BodyParameter $params
 
 ```

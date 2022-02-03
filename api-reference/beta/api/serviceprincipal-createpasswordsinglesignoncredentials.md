@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: da8374fb89de6efc133b4281bf6f3fe5aa92df7c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 968feaa0f7963e9e4582d3e867377ebf8c7a4ea7
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033864"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340991"
 ---
 # <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal：createPasswordSingleSignOnCredentials
 
@@ -59,7 +59,7 @@ POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新 `200 OK` [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -109,8 +109,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-createpasswordsinglesignoncredentials-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-createpasswordsinglesignoncredentials-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-createpasswordsinglesignoncredentials-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ description: 检查内容类型中心网站中内容类型的发布状态。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 4e118e1b95ab8e8e4633a2b3a7cf0d56bde15a2e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c74ae92a0f4107457d065ef29640f69b81f9f80f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098126"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346745"
 ---
 # <a name="contenttype-ispublished"></a>contentType： isPublished
 命名空间：microsoft.graph
@@ -43,7 +43,7 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 |Authorization|Bearer {token}。必需。|
 
 ## <a name="response"></a>响应
-如果成功，此调用将返回 响应和一个布尔值，该值指定 `200 OK` 内容类型的发布状态。
+如果成功，此调用将返回 `200 OK` 响应和一个布尔值，该值指定内容类型的发布状态。
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId}
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-ispublished-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-ispublished-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

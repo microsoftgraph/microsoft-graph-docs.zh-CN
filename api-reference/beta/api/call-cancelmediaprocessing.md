@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cd19b2fb1a0d872e74d4676d6e8c59702e48f024
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3d8e257382f347c7203d071fd017bcde698f01e4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60999493"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339271"
 ---
 # <a name="call-cancelmediaprocessing"></a>call： cancelMediaProcessing
 
@@ -20,7 +20,7 @@ ms.locfileid: "60999493"
 
 取消处理任何进行中的媒体操作。
 
-媒体操作是指 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse，](./call-record.md)它们默认排队等待处理。 **cancelMediaProcessing** 方法取消进程内的任何操作以及排队的操作。 例如，此 API 可用于清理新媒体操作的 IVR 操作队列。 但是，它将不会取消 **ubscribeToTone** 操作，因为它独立于任何操作队列运行。
+媒体操作是指 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse](./call-record.md)，它们默认排队等待处理。 **cancelMediaProcessing** 方法取消进程内的任何操作以及排队的操作。 例如，此 API 可用于清理新媒体操作的 IVR 操作队列。 但是，它将不会取消 **ubscribeToTone** 操作，因为它独立于任何操作队列运行。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/cancelMediaProcessing
 | clientContext  | String  | 客户端上下文。                                            |
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回 HTTP 响应代码和具有为此请求创建的 `200 OK` [commsOperation](../resources/commsoperation.md) 的 URI 的位置标头。
+如果成功，此方法将返回 `200 OK` HTTP 响应代码和具有为此请求创建的 [commsOperation](../resources/commsoperation.md) 的 URI 的位置标头。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -92,8 +92,12 @@ Content-Length: 62
 [!INCLUDE [sample-code](../includes/snippets/java/call-cancelmediaprocessing-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-cancelmediaprocessing-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-cancelmediaprocessing-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

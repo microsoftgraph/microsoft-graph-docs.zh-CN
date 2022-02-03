@@ -5,12 +5,12 @@ author: adsrivastava2
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 9e2435dc52b88e836874ceae1b3e62bd09fdaec5
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 8681a292c2217921a4de04a8292c4636f8afb0a5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262454"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348379"
 ---
 # <a name="teamworkdevice-updatesoftware"></a>teamworkDevice： updateSoftware
 命名空间：microsoft.graph
@@ -54,7 +54,7 @@ POST /teamwork/devices/{teamworkDeviceId}/updateSoftware
 |参数|类型|说明|
 |:---|:---|:---|
 |softwareType|teamworkSoftwareType|要更新的软件类型。 有效类型为：、`adminAgent`、`operatingSystem`、`firmware``teamsClient`、`partnerAgent`、`companyPortal`。|
-|softwareVersion|String|指定可供更新的软件版本。|
+|softwareVersion|字符串|指定可供更新的软件版本。|
 
 
 
@@ -67,6 +67,8 @@ POST /teamwork/devices/{teamworkDeviceId}/updateSoftware
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamworkdevice_updatesoftware"
@@ -82,6 +84,32 @@ Content-length: 64
   "softwareVersion": "1.0.96.22"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/teamworkdevice-updatesoftware-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/teamworkdevice-updatesoftware-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/teamworkdevice-updatesoftware-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/teamworkdevice-updatesoftware-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamworkdevice-updatesoftware-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamworkdevice-updatesoftware-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

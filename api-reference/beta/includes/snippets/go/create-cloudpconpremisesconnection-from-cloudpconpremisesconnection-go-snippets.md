@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c739d211da220396f4513376bcd6d325d84de53c
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 8fcc3dc4cf9462816803529e72bfe14217e18c02
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083910"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351490"
 ---
 ```go
 
@@ -13,23 +13,25 @@ ms.locfileid: "61083910"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewCloudPcOnPremisesConnection()
-displayName := "Display Name value"
+displayName := "test-canary-02"
 requestBody.SetDisplayName(&displayName)
+type := "hybridAzureADJoin"
+requestBody.SetType(&type)
 subscriptionId := "0ac520ee-14c0-480f-b6c9-0a90c585ffff"
 requestBody.SetSubscriptionId(&subscriptionId)
-subscriptionName := "Subscription Name value"
+subscriptionName := "CPC customer 001 test subscription"
 requestBody.SetSubscriptionName(&subscriptionName)
-adDomainName := "Active Directory Domain Name value"
+adDomainName := "contoso001.com"
 requestBody.SetAdDomainName(&adDomainName)
-adDomainUsername := "Active Directory Domain User Name value"
+adDomainUsername := "dcadmin"
 requestBody.SetAdDomainUsername(&adDomainUsername)
-organizationalUnit := "Organization Unit value"
+organizationalUnit := "OU=Domain Controllers, DC=contoso001, DC=com"
 requestBody.SetOrganizationalUnit(&organizationalUnit)
-resourceGroupId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG"
+resourceGroupId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG"
 requestBody.SetResourceGroupId(&resourceGroupId)
-virtualNetworkId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet"
+virtualNetworkId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET"
 requestBody.SetVirtualNetworkId(&virtualNetworkId)
-subnetId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
+subnetId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet"
 requestBody.SetSubnetId(&subnetId)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",

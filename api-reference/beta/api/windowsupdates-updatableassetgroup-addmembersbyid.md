@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: ef0e17df9073c56f249f590544feaff696691925
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 10929a5fe01feb5c265c3ed6af3c5026f5314e01
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862788"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348998"
 ---
 # <a name="updatableassetgroup-addmembersbyid"></a>updatableAssetGroup：addMembersById
 命名空间：microsoft.graph.windowsUpdates
@@ -53,8 +53,8 @@ POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembersBy
 
 |参数|类型|说明|
 |:---|:---|:---|
-|ids|String collection|与要添加为 [updatableAssetGroup](../resources/windowsupdates-updatableasset.md) 成员的 **updatableAsset** 资源相对应的标识符列表。|
-|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
+|ids|String collection|与要添加为 [updatableAssetGroup 成员的 updatableAsset](../resources/windowsupdates-updatableasset.md) 资源对应的标识符 **列表**。|
+|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是： `#microsoft.graph.windowsUpdates.azureADDevice`。|
 
 ## <a name="response"></a>响应
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-addmembersbyid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableassetgroup-addmembersbyid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
