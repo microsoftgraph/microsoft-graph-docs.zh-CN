@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5f44e63d47519bd61f6e57005c7354d39c8afc5f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d5e6d0a3e6334cee35790494e33f76e1dc2c2c43
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022419"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346157"
 ---
 # <a name="domain-forcedelete"></a>域：forceDelete
 
@@ -20,7 +20,7 @@ ms.locfileid: "61022419"
 
 使用异步操作删除域。
 
-在调用 [forceDelete](domain-forcedelete.md)之前，必须更新或删除对 **Exchange设置服务** 的任何引用。
+在调用 [forceDelete](domain-forcedelete.md) 之前，必须更新或删除对 **Exchange设置服务** 的任何引用。
 
 以下操作作为此操作的一部分执行：
 
@@ -34,9 +34,9 @@ ms.locfileid: "61022419"
 
 * 如果要重命名的应用程序之一是多租户应用，则返回错误。
 
-域删除完成后，已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证是否删除域，可以执行获取 [域](domain-get.md)。 如果已成功删除域，响应中将返回 404 HTTP 响应代码。
+域删除完成后，已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证是否删除域，可以执行 [get 域](domain-get.md)。 如果已成功删除域，响应中将返回 404 HTTP 响应代码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -69,7 +69,7 @@ POST /domains/{id}/forceDelete
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|disableUserAccounts|布尔| 用于禁用重命名的用户帐户的选项。 如果禁用用户帐户，将不允许用户登录。<br>*为 (* 默认) - 已禁用作为此操作的一部分重命名的用户帐户。<br>*False* - 不会禁用作为此操作的一部分重命名的用户帐户。 |
+|disableUserAccounts|Boolean| 用于禁用重命名的用户帐户的选项。 如果禁用用户帐户，将不允许用户登录。<br>*为 (* 默认) - 已禁用作为此操作的一部分重命名的用户帐户。<br>*False* - 不会禁用作为此操作的一部分重命名的用户帐户。 |
 
 ## <a name="response"></a>响应
 
@@ -107,8 +107,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/domain-forcedelete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/domain-forcedelete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

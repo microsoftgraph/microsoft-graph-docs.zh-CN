@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4cad079d7b1e364df6a31e1a6c23303af011c1e5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 09952b30a1fbeff90b29679d8b5500cf880c755a
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128888"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352144"
 ---
 ```powershell
 
@@ -21,6 +21,7 @@ $params = @{
     Birthday = [System.DateTime]::Parse("1974-07-22")
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserContact -UserId $userId -ContactId $contactId -BodyParameter $params
 
 ```

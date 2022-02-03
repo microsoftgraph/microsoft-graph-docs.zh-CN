@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 54f57cc549810e3429e88e6d5b9edcbf2851cc32
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ae80594e940b288403f04aa7885fd5c8e8fb20db
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005859"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343214"
 ---
 # <a name="call-answer"></a>call： answer
 
@@ -31,7 +31,7 @@ ms.locfileid: "61005859"
 | 委派（个人 Microsoft 帐户） | 不支持                        |
 | 应用程序     | Calls.JoinGroupCalls.All 或 Calls.JoinGroupCallsasGuest.All |
 
-> **注意：** 对于使用应用程序托管媒体的呼叫，你还需要 Calls.AccessMedia.All 权限。 必须至少具有以下权限之一才能确保对传入呼叫通知中的 解密 `source` ：Calls.AccessMedia.All、Calls.Initiate.All、Calls.InitiateGroupCall.All、Calls.JoinGroupCall.All、Calls.JoinGroupCallAsGuest.All。 `source`是传入呼叫通知中的呼叫者信息。 如果没有其中至少一个权限， `source` 将保持加密状态。
+> **注意：** 对于使用应用程序托管媒体的呼叫，你还需要 Calls.AccessMedia.All 权限。 `source`必须至少具有以下权限之一才能确保对传入呼叫通知中的 解密：Calls.AccessMedia.All、Calls.Initiate.All、Calls.InitiateGroupCall.All、Calls.JoinGroupCall.All、Calls.JoinGroupCallAsGuest.All。 `source`是传入呼叫通知中的呼叫者信息。 如果没有其中至少一个权限， `source` 将保持加密状态。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {"blockType": "ignored" } -->
@@ -52,8 +52,8 @@ POST /communications/calls/{id}/answer
 
 | 参数           | 类型                                                                                                                                 | 说明                                                                                                                                                                                                         |
 | :-----------------  | :-----------------------------------------                                                                                           | :----------------------------------------------------------------------------------------------------------------------------------------------                                                                     |
-| callbackUri         | String                                                                                                                               | 允许机器人为并发呼叫提供特定的回调 URI 以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。 |
-| acceptedModalities  | String collection                                                                                                                    | 接受形式列表。 可能的值是 `audio` `video` `videoBasedScreenSharing` ：、、。 应答呼叫时必需。                                                                                      |
+| callbackUri         | String                                                                                                                               | 允许机器人为并发呼叫提供特定的回调 URI 以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https`。 |
+| acceptedModalities  | 字符串集合                                                                                                                    | 接受形式列表。 可能的值是：、`audio`、`videoBasedScreenSharing``video`。 应答呼叫时必需。                                                                                      |
 | mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | 媒体配置。必需。                                                                                                                                                                                 |
 | participantCapacity | Int                                                                                                                                  | 对于基于策略的录制方案，应用程序可以处理Teams[的数量](/MicrosoftTeams/teams-recording-policy)。                                                     |
 
@@ -106,8 +106,12 @@ Content-Length: 211
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-answer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -386,8 +390,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-app-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-answer-app-hosted-media-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-app-hosted-media-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -467,7 +475,7 @@ Content-Type: application/json
 在基于 [策略的录制](/microsoftteams/teams-recording-policy)方案下，在策略下的参与者加入呼叫之前，传入呼叫通知将发送到与该策略关联的机器人。
 可以在 **botData** 属性下找到加入信息。 然后，机器人可以选择应答呼叫 [并相应地更新录制](call-updaterecordingstatus.md) 状态。
 
-当在基于策略的录制通知的请求中指定时，属于同一策略组的后续参与者加入事件将发送为 `participantCpapacity` `Answer` [participantJoiningNotification，](../resources/participantJoiningNotification.md)而不是新的传入呼叫通知，直到当前呼叫实例处理的参与者数量达到 中指定的号码。 `participantCapacity`
+`participantCpapacity` `Answer`当在基于策略的录制通知的请求中指定时，属于同一策略组的后续参与者加入事件将发送为 [participantJoiningNotification](../resources/participantJoiningNotification.md)`participantCapacity`，而不是新的传入呼叫通知，直到当前呼叫实例处理的参与者数量达到 中指定的号码。
 
 下面是机器人在这种情况下将收到的传入呼叫通知的示例。
 

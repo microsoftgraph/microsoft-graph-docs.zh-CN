@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: ab8c0b7925c65d814843fbdfd392b35b17f240f1
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 955dc53dcefb499fd3fe8e75e30dc1509d396629
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226297"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348762"
 ---
 # <a name="synchronization-secrets"></a>synchronization： secrets
 
@@ -45,7 +45,7 @@ PUT /servicePrincipals/{id}/synchronization/secrets
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-synchronizationsecretkeystringvaluepair.md) 集合|要验证的凭据。 当 **useSavedCredentials 参数为** 时忽略 `true` 。|
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-synchronizationsecretkeystringvaluepair.md) 集合|要验证的凭据。 当 **useSavedCredentials 参数为** 时忽略 `true`。|
 
 ## <a name="response"></a>响应
 如果密钥已成功保存，此方法将返回 响应 `204 No Content` 代码。 它不会在响应正文中返回任何内容。
@@ -55,6 +55,8 @@ PUT /servicePrincipals/{id}/synchronization/secrets
 ### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronization_secrets"
@@ -84,6 +86,20 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/synchronization-secrets-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/synchronization-secrets-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/synchronization-secrets-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 下面展示了示例响应。 

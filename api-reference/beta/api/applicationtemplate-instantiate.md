@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: eae8a2ed4748936e3e8c9a623a61be0c95ee93b5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c55b93249535bc12b26c299a3d4a916f739d0fe4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982763"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339292"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -20,7 +20,7 @@ ms.locfileid: "60982763"
 
 将应用程序实例从应用程序Azure AD添加到目录中。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ POST /applicationTemplates/{id}/instantiate
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新的 `201 OK` [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。
+如果成功，此方法在响应 `201 OK` 正文中返回 响应代码和新的 [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -64,7 +64,7 @@ POST /applicationTemplates/{id}/instantiate
 
 下面展示了示例请求。
  
-> 可以使用此 API 实例化 [非库应用](/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate** 使用以下 `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` ID：。
+> 可以使用此 API 实例化 [非库应用](/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate** 使用以下 ID： `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -96,8 +96,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/applicationtemplate-instantiate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/applicationtemplate-instantiate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/applicationtemplate-instantiate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

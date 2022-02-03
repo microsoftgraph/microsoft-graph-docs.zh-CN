@@ -5,17 +5,17 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 389a34e20b630a4178dcbeb47fba62d3543e4e84
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6139751d315db8dcf995ce69cf18b0b38e4d03c6
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006711"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339574"
 ---
 # <a name="chat-sendactivitynotification"></a>chat： sendActivityNotification
 命名空间：microsoft.graph
 
-在聊天范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
+在聊天范围内发送活动源通知。 有关发送通知以及发送通知的要求的更多详细信息，请参阅发送Teams[活动通知](/graph/teams-send-activityfeednotifications)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,17 +51,17 @@ POST /chats/{chatId}/sendActivityNotification
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
 |activityType|String|活动类型。 这必须在应用清单[Teams声明](/microsoftteams/platform/overview)。|
-|chainId|Int64|可选。 用于替代上一个通知。 在后续 `chainId` 请求中使用相同的方法替代上一个通知。|
+|chainId|Int64|可选。 用于替代上一个通知。 在后续请求 `chainId` 中使用相同的方法替代上一个通知。|
 |previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams显示前 150 个字符。|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|活动源条目中定义的模板变量的值与应用程序Teams `activityType` [相对应](/microsoftteams/platform/overview)。|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|活动源条目中定义的模板变量的值与`activityType`应用程序Teams[相对应](/microsoftteams/platform/overview)。|
 |recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|通知的收件人。 仅Azure AD用户。 另请参阅 [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md)。 |
 
-将 topic 属性的值设置为 时 `source` ，支持 **以下** 资源 `entityURL` ：
+将 topic 属性的值设置为 时 `source` ，支持 **以下** 资源 `entityURL`：
 
 - [聊天](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)
 
-> **注意：** 实体 URL 必须与 URL 中的聊天相同或为聊天的子资源。 此外[，Teams应用](/microsoftteams/platform/overview)必须安装在聊天中。
+> **注意：** 实体 URL 必须与 URL 中的聊天相同或为聊天的子资源。 此外，[Teams](/microsoftteams/platform/overview)应用必须安装在聊天中。
 
 ## <a name="response"></a>响应
 
@@ -123,8 +123,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -142,7 +146,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-an-approval-needed-in-a-chat-message"></a>示例 2：通知用户聊天消息中所需的审批
 
-与上一示例类似，此示例对 `entityUrl` 使用 `topic` 。 但是，在这种情况下，它会链接到聊天中的消息。 邮件可以包含包含审批按钮的卡片。
+与上一示例类似，此示例对 `entityUrl` 使用 `topic`。 但是，在这种情况下，它会链接到聊天中的消息。 邮件可以包含包含审批按钮的卡片。
 
 #### <a name="request"></a>请求
 <!-- {
@@ -188,7 +192,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-approval-needed-in-a-chat-message-using-user-principal-name"></a>示例 3：使用用户主体名称通知用户聊天消息中所需的审批
 
-与上一示例类似，此示例对 `entityUrl` 使用 `topic` 。 但是，在这种情况下，它会链接到聊天中的消息。 邮件可包含一个卡片，其中包含审批按钮。
+与上一示例类似，此示例对 `entityUrl` 使用 `topic`。 但是，在这种情况下，它会链接到聊天中的消息。 邮件可包含一个卡片，其中包含审批按钮。
 
 #### <a name="request"></a>请求
 
@@ -240,8 +244,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-upn-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-upn-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-upn-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -260,7 +268,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-4-notify-a-user-about-an-event-in-relation-to-a-chat"></a>示例 4：向用户通知与聊天相关的事件
 
-如前面的示例所示，您可以链接到聊天的不同方面。 但是，如果要链接到不是聊天的一部分或不是由 Microsoft Graph 表示的方面，可以将 的源设置为 并传递其自定义 `topic` `text` 值。 此外， `webUrl` 将 source 设置为 时 `topic` ，也是必需的 `text` 。
+如前面的示例所示，您可以链接到聊天的不同方面。 但是，如果要链接到不是聊天的一部分或不是由 Microsoft Graph 表示的方面，可以将 的源设置为 并`topic``text`传递其自定义值。 此外， `webUrl` 将 source 设置为 时 `topic` ，也是必需的 `text`。
 
 #### <a name="request"></a>请求
 <!-- {

@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f3b587ed239646531632b98e34581f29aec436e2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 14882251b3c07fa3e8f45dc2a5da9b96dd5442a1
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979478"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342873"
 ---
 # <a name="call-unmute"></a>call： unmute
 
@@ -52,7 +52,7 @@ POST /communications/calls/{id}/unmute
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) 对象。
 
 >**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
 
@@ -90,8 +90,12 @@ Content-Length: 46
 [!INCLUDE [sample-code](../includes/snippets/java/call-unmute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-unmute-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-unmute-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

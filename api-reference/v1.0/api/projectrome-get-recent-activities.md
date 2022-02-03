@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: d4640a54c00caaa8e0ecb10a31429afad613fb05
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bb4fbb27fb59b5f9d533d47b2d2314cbd2f0673c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016196"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348018"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
@@ -41,8 +41,8 @@ GET /me/activities/recent
 此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 支持以下查询参数：
 
 - $expand **historyItems 导航属性** 。
-- $top限制页面的最大项目数。
-- $filter活动或 **historyItems** 的 **lastModifiedDateTime** 属性（如果展开）。 
+- $top限制页面内的最大项目数。
+- $filter **活动或 historyItems 的 lastModifiedDateTime** 属性（如果展开）。
 
 下面是使用 URL 编码的受支持查询的一些示例。
 
@@ -54,7 +54,7 @@ GET /me/activities/recent
 /me/activities/recent?$top=5
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
@@ -66,7 +66,7 @@ GET /me/activities/recent
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回响应代码以及用户 `200 OK` 最近针对您的应用程序的活动。
+如果成功，此方法将返回 `200 OK` 响应代码以及用户最近针对您的应用程序的活动。
 
 ## <a name="example"></a>示例
 
@@ -100,8 +100,12 @@ GET https://graph.microsoft.com/v1.0/me/activities/recent
 [!INCLUDE [sample-code](../includes/snippets/java/get-recent-activities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-recent-activities-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-recent-activities-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

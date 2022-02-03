@@ -5,12 +5,12 @@ author: yyuank
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 687480f3973cc1fc3621cf2355a708815f724998
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 499aa0aebc2df0e27a8469070d66628897b585f8
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984939"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340915"
 ---
 # <a name="user-validatepassword"></a>user： validatePassword
 命名空间：microsoft.graph
@@ -55,7 +55,7 @@ POST /users/validatePassword
 
 ## <a name="response"></a>响应
 
-如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [passwordValidationInformation](../resources/passwordvalidationinformation.md) 对象。
+如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 [passwordValidationInformation](../resources/passwordvalidationinformation.md) 对象。
 
 ## <a name="examples"></a>示例 
 
@@ -91,8 +91,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-validatepassword-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-validatepassword-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-validatepassword-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

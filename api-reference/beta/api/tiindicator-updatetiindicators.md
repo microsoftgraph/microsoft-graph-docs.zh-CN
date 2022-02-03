@@ -1,16 +1,16 @@
 ---
 title: tiIndicator：updateTiIndicators
-description: 在一个请求 (TI) 指示器（而不是多个请求）中更新多个威胁情报。
+description: 在一个 (（) 请求）中更新多个威胁情报和 TI 智能指示器。
 ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: e90fd3b95e302956a250f2acf08ff18daa0298ca
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9bddd0b86054550cd17b9add45af3b327fdfaec3
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989434"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341899"
 ---
 # <a name="tiindicator-updatetiindicators"></a>tiIndicator：updateTiIndicators
 
@@ -18,7 +18,7 @@ ms.locfileid: "60989434"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在一个请求 (TI) 指示器（而不是多个请求）中更新多个威胁情报。
+在一个 (（) 请求）中更新多个威胁情报和 TI 智能指示器。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供具有以下参数的 JSON 对象。 有关可更新的属性的详细信息，请参阅[更新 tiIndicator。](tiindicator-update.md) 每个 tiIndicator 的必填字段为 `id` `expirationDateTime` `targetProduct` ：、、。
+在请求正文中，提供具有以下参数的 JSON 对象。 有关可更新的属性的详细信息，请参阅 [更新 tiIndicator](tiindicator-update.md)。 每个 tiIndicator 的必填字段为：、`id``expirationDateTime`、`targetProduct`。
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -54,7 +54,7 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [tiIndicator](../resources/tiindicator.md) 对象集合。  如果出现错误，此方法将返回 响应 `206 Partial Content` 代码。  有关详细信息 [，](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 请参阅错误。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [tiIndicator](../resources/tiindicator.md) 对象集合。  如果出现错误，此方法将返回 响应 `206 Partial Content` 代码。  有关详细信息 [，](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 请参阅错误。
 
 ## <a name="examples"></a>示例
 
@@ -104,8 +104,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-updatetiindicators-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tiindicator-updatetiindicators-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tiindicator-updatetiindicators-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

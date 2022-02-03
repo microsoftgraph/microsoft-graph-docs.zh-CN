@@ -5,18 +5,18 @@ description: 从内容类型中心网站取消发布内容类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 4262ad9a52a930963802b324ba106292d5d4a0db
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 169cafcc321489a55c5f1bc93adee336496e9d32
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996293"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347268"
 ---
 # <a name="contenttype-unpublish"></a>contentType：取消发布
 命名空间：microsoft.graph
 
 
-从内容类型中心网站取消发布[contentType。][]
+从内容类型 [中心网站取消发布 contentType][] 。
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 
 >**注意：**_siteId_ 表示内容类型中心网站。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -48,7 +48,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `204 No Content` 响应。
+如果成功，此方法将返回 响应 `204 No Content` 。
 
 ## <a name="example"></a>示例
 
@@ -80,8 +80,12 @@ POST https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-unpublish-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-unpublish-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-unpublish-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e19caed1c7ad34908881f412df8e83ed006f9e30
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a73b872ce303a16f5363e5ef77c54773907399a4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029356"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346210"
 ---
 # <a name="participant-startholdmusic"></a>participant： startHoldMusic
 
@@ -20,7 +20,7 @@ ms.locfileid: "61029356"
  
 > **注意：** 在任何给定时间只能将一个参与者置于保留状态。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -52,7 +52,7 @@ POST /communications/calls/{id}/participants/{id}/startHoldMusic
 |clientContext|String|可选。 唯一的客户端上下文字符串。 最多可包含 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `202 Accepted` [startHoldMusicOperation](../resources/startholdmusicoperation.md) 对象。
+如果成功，此方法在响应 `202 Accepted` 正文中返回 响应代码和 [startHoldMusicOperation](../resources/startholdmusicoperation.md) 对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -98,8 +98,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/participant-startholdmusic-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-startholdmusic-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-startholdmusic-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

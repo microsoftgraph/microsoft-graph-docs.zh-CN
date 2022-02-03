@@ -5,12 +5,12 @@ author: TarkanSevilmis
 ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5f12f6218dd6bb16704acc13e434fc7743836b6f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 62d51a9677eadd997336f00fc834f9e825f79299
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989966"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347101"
 ---
 # <a name="planner-delta"></a>Planner： delta
 
@@ -24,7 +24,7 @@ ms.locfileid: "60989966"
 
 此方法的返回值可能包含 Planner 中的对象的异种类型。
 
-有关跟踪 Microsoft 数据更改Graph，请参阅使用 delta 查询跟踪 Microsoft Graph[数据中的更改](/graph/delta-query-overview)。
+若要详细了解如何跟踪 Microsoft Graph数据中的更改，请参阅使用增量查询跟踪 [Microsoft Graph数据中的更改](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -45,9 +45,9 @@ GET /me/planner/all/delta
 GET /users/{id}/planner/all/delta
 ```
 
-Planner 的增量 (上当前不支持任何其他查询参数) 如 、 或 `$select` `$expand` `$filter`) 。
+Planner 的增量 (`$select``$expand``$filter` 上当前不支持任何其他查询参数，) 、 或) 。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称           |说明                |
 |:---------------|:--------------------------|
@@ -59,11 +59,11 @@ Planner 的增量 (上当前不支持任何其他查询参数) 如 、 或 `$sel
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 响应代码和要应用于响应正文中的对象的更改集合，以及要遵循的 `200 OK` Delta Sync 链接。
+如果成功，此方法返回 响应 `200 OK` 代码和要应用于响应正文中的对象的更改集合，以及要遵循的 Delta Sync 链接。
 
-如果 `deltaLink` 调用方使用的 格式不正确，此终结点将返回 HTTP 400。
+`deltaLink`如果调用方使用的 格式不正确，此终结点将返回 HTTP 400。
 
-如果 `deltaLink` 调用方使用的 太旧，此终结点将返回 HTTP 410。
+`deltaLink`如果调用方使用的 太旧，此终结点将返回 HTTP 410。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -99,8 +99,12 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 [!INCLUDE [sample-code](../includes/snippets/java/get-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

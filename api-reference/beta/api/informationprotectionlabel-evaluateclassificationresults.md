@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 26c65411ba7ce83fdae9d6d5ac46038deea84ac3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a832aeedbe8f4d44cb6e33b11daf7c6b0ab2a72b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004786"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346870"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel：evaluateClassificationResults
 
@@ -18,9 +18,9 @@ ms.locfileid: "61004786"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用[分类结果](../resources/classificationresult.md)[，计算应](../resources/informationprotectionlabel.md)应用的信息保护标签，并返回正确标记信息必须采取的一组操作。 当标签应基于文件内容分类自动设置，而不是直接由用户或服务进行标记时，此 API 非常有用。 
+使用 [分类](../resources/classificationresult.md)结果 [，计算应](../resources/informationprotectionlabel.md) 应用的信息保护标签，并返回为正确标记信息而必须采取的一组操作。 当标签应基于文件内容分类自动设置，而不是直接由用户或服务进行标记时，此 API 非常有用。 
 
-若要根据分类结果进行评估，请提供[contentInfo](../resources/contentinfo.md)，其中包括现有内容元数据键[/值对](../resources/keyvaluepair.md)[和分类结果](../resources/classificationresult.md)。 API 返回 [一个 informationProtectionAction，](../resources/informationprotectionaction.md) 其中包含下列内容之一： 
+若要根据分类结果进行评估，请提供 [contentInfo](../resources/contentinfo.md)，其中包括现有内容元数据 [键/](../resources/keyvaluepair.md)值对 [以及分类结果](../resources/classificationresult.md)。 API 返回 [一个 informationProtectionAction](../resources/informationprotectionaction.md) ，其中包含下列内容之一： 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
@@ -71,7 +71,7 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 | 参数             | 类型                                                                    | 说明                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | contentInfo           | [contentInfo](../resources/contentInfo.md)                              | 提供有关内容格式、内容状态和作为键/值对[](../resources/keyvaluepair.md)的现有元数据的详细信息。                                                                                                                                                   |
-| classificationResults | [classificationResult](../resources/classificationresult.md) 集合 | 包含数据分类终结点返回的分类结果集。 分类信息用于根据安全与合规中心中的策略Microsoft 信息保护配置确定Office 365标签。 |
+| classificationResults | [classificationResult](../resources/classificationresult.md) 集合 | 包含数据分类终结点返回的分类结果集。 分类信息用于根据安全与合规中心中的Microsoft 信息保护策略标签Office 365相应的标签。 |
 
 ## <a name="response"></a>响应
 
@@ -130,8 +130,12 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateclassificationresults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateclassificationresults-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-evaluateclassificationresults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

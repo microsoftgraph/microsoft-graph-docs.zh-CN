@@ -1,16 +1,16 @@
 ---
 title: reportRoot： getCredentialUserRegistrationCount
-description: 报告组织中注册自助服务密码重置和多重身份验证的用户数和 MFA (的当前) 状态。
+description: 报告组织中注册自助服务密码重置的用户数和 MFA (多重身份验证) 状态。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d9ba5d31d622dbf282e0ef3b51a7af9d5fd0f6ff
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 97b164aa29701ab8917791f1710439311059f664
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093241"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346828"
 ---
 # <a name="reportroot-getcredentialuserregistrationcount"></a>reportRoot： getCredentialUserRegistrationCount
 
@@ -18,7 +18,7 @@ ms.locfileid: "62093241"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-报告组织中注册自助服务密码重置和多重身份验证的用户数和 MFA (的当前) 状态。
+报告组织中注册自助服务密码重置的用户数和 MFA (多重身份验证) 状态。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ GET /reports/getCredentialUserRegistrationCount
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新 `200 OK` [credentialUserRegistrationCount](../resources/credentialuserregistrationcount.md) 集合对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [credentialUserRegistrationCount](../resources/credentialuserregistrationcount.md) 集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reportroot-getcredentialuserregistrationcount-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getcredentialuserregistrationcount-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

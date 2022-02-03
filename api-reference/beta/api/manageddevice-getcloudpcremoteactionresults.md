@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: de8ac29ba5212702633a1fab9110a5aff0e84b37
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a078f5c3c24765507d6bcf06ce5c359cb553dc07
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127369"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341077"
 ---
 # <a name="manageddevice-getcloudpcremoteactionresults"></a>managedDevice：getCloudPcRemoteActionResults
 
@@ -53,7 +53,7 @@ GET /deviceManagement/managedDevices/{managedDeviceId}/getCloudPcRemoteActionRes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/manageddevice-getcloudpcremoteactionresults-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/manageddevice-getcloudpcremoteactionresults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

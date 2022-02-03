@@ -5,18 +5,18 @@ description: 授予使用指定链接的用户列表访问权限
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6c966424dc1358e8a41a9015d3beaed0154b7468
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 27546f296091c120315283a64920072c5f6ff3e9
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60978875"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347814"
 ---
 # <a name="permission-grant"></a>permission： grant
 
 命名空间：microsoft.graph
 
-向用户授予对由权限 表示的链接 [的访问权限][]。
+授予用户对由权限表示的链接 [的访问权限][]。
 
 ## <a name="permissions"></a>权限
 
@@ -66,9 +66,9 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码 `200 OK` 和权限集合。 [][]
+如果成功，此方法在响应`200 OK`正文中返回 响应代码[][]和权限集合。
 
-成功 [后][] ，将始终在"更新后"结果集返回表示已更新链接的权限。 更新的链接可通过存在包含"scope"属性的"link"Facet 来标识。 在某些情况下，更新的链接可能与原始链接具有不同的 URL，在这种情况下，应该使用新的 URL。
+[成功后][]，将始终在"更新后"结果集返回表示已更新链接的权限。 更新的链接可通过存在包含"scope"属性的"link"Facet 来标识。 在某些情况下，更新的链接可能与原始链接具有不同的 URL，在这种情况下，应该使用新的 URL。
 
 请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 
@@ -115,8 +115,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/permission-grant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/permission-grant-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/permission-grant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -153,8 +157,8 @@ Content-type: application/json
 
 如果链接是现有 [访问](../resources/permission.md) 链接，将返回表示以下内容的其他权限：
 
-- 表示已成功授予访问权限的收件人的用户类型权限。 可通过 **grantedTo** 属性的存在来标识这些属性。
-- 链接类型权限，表示需要发送给无法识别的外部用户才能获得访问权限的邀请。 可以通过存在邀请 Facet [来标识](../resources/sharinginvitation.md) 它们。 这些条目 [将包含包含][sharing-link] 邀请 URL 的链接，grantedToIdentities 集合将指示链接应发送到的用户。
+- 表示已成功授予访问权限的收件人的用户类型权限。 可通过 **grantedTo 属性的存在来标识** 这些属性。
+- 链接类型权限，表示需要发送给无法识别的外部用户才能获得访问权限的邀请。 可以通过存在邀请 [Facet 来标识](../resources/sharinginvitation.md) 它们。 这些条目 [将包含包含][sharing-link] 邀请 URL 的链接，grantedToIdentities 集合将指示链接应发送到的用户。
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
@@ -220,7 +224,7 @@ Content-type: application/json
 
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
-[权限]: ../resources/permission.md
+[permission]: ../resources/permission.md
 [sharing-link]: ../resources/sharinglink.md
 
 <!-- {

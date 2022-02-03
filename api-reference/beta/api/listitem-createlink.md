@@ -5,12 +5,12 @@ author: learafa
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7a3d71a12958d551ba5ccce900cb7195bbcdd589
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a52612c99bea7cba2da86ae26ec03306f29e5544
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60981187"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349173"
 ---
 # <a name="listitem-createlink"></a>listItem： createLink
 
@@ -20,7 +20,7 @@ ms.locfileid: "60981187"
 
 为 [listItem 创建共享链接](../resources/listitem.md)。
 
-如果调用应用程序不存在指定的链接类型 **，createLink** 操作将创建新的共享链接。
+如果调用应用程序不存在指定的链接类型， **createLink** 操作将创建新的共享链接。
 如果应用已存在指定类型的共享链接，此操作将返回现有共享链接。
 
 **listItem** 资源从项目所在的 [列表中](../resources/list.md) 继承共享权限。
@@ -59,7 +59,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 |   属性             |  类型  |           说明                        |
 | :----------------------| :----- | :--------------------------------------------|
 |type|String|要创建的共享链接的类型。 可选。 |
-|scope|String|要创建的链接的范围。 、 `anonymous` `organization` 或 `users` 。 可选。 |
+|scope|String|要创建的链接的范围。 、 `anonymous`或 `organization` `users`。 可选。 |
 |expirationDateTime|DateTimeOffset|DateTime 格式为 yyyy-MM-ddTHH：mm：ssZ 的字符串指示权限的过期时间。 可选。 |
 |密码|String|创建者设置的共享链接的密码。 可选。 |
 |recipients|[driveRecipient](../resources/driverecipient.md) 集合|将接收共享链接访问权限的收件人的集合。 可选。 |
@@ -93,7 +93,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 
 如果成功，此方法在表示请求的[](../resources/permission.md)共享权限的响应正文中返回单个权限资源。
 
-如果为 listItem 创建了新的共享链接，或者 `201 Created` `200 OK` 返回了现有链接，则响应将为 。
+如果为 `201 Created` listItem `200 OK` 创建了新的共享链接，或者返回了现有链接，则响应将为 。
 
 ## <a name="examples"></a>示例
 
@@ -142,8 +142,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/listitem-createlink-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -218,8 +222,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/listitem-createlink-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

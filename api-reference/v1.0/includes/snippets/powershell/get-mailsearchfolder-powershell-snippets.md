@@ -1,16 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 53225b6a4be0a1e8d0429d352c78b1e37cd130cb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b7c68b14db2c8edc8db3c48b1774d6120b62cc85
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130262"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351594"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Mail
 
+# A UPN can also be used as -UserId.
 Get-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
 
 ```

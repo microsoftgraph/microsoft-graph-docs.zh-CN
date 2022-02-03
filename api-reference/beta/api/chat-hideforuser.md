@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.openlocfilehash: f9e82324ab33fafbead3e3590869c9e8a7bf43a1
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 62dc95efbf2df79497125e37c47cd84d36321475
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224247"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339186"
 ---
 # <a name="chat-hideforuser"></a>chat： hideForUser
 命名空间：microsoft.graph
@@ -19,16 +19,16 @@ ms.locfileid: "61224247"
 
 隐藏 [用户的](../resources/chat.md) 聊天。
 
-> **注意：** 如果在聊天级别执行诸如发送消息等操作，则用户会自动取消聊天。 
+> **注意：** 如果在聊天级别执行诸如发送消息等操作，则用户会自动取消聊天。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Chat.ReadWrite|
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -97,8 +97,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chat-hideforuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-hideforuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-hideforuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

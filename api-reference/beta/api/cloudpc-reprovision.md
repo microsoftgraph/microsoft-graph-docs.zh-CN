@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e7241a8a44d96397c8f31fce2c1496ae71668e3e
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 7d774e49173354d10f80cdaae74157c88e9f1a14
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225094"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341256"
 ---
 # <a name="cloudpc-reprovision"></a>cloudPC：重新设置
 
@@ -56,8 +56,8 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 
 |参数|类型|说明|
 |:---|:---|:---|
-|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|操作系统版本 (操作系统) 在云 PC 上预配。 可能的值是 `windows10` ：、 `windows11` 和 `unknownFutureValue` 。|
-|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|已预配云 PC 上的用户的帐户类型。 可能的值是 `standardUser` ：、 `administrator` 和 `unknownFutureValue` 。|
+|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|操作系统版本 (操作系统) 在云 PC 上预配。 可能的值是：、`windows10``windows11`和 `unknownFutureValue`。|
+|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|已预配云 PC 上的用户的帐户类型。 可能的值是：、`standardUser``administrator`和 `unknownFutureValue`。|
 
 ## <a name="response"></a>响应
 
@@ -103,6 +103,10 @@ Content-length: 61
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpc-reprovision-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpc-reprovision-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

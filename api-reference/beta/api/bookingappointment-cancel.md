@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d45135e615c221fb5d9787508e8f8a08adea8cd1
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 5ae148f44e5234f2101b656eb3d4155d9de8512b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524607"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343494"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment： cancel
 
@@ -18,7 +18,7 @@ ms.locfileid: "61524607"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-取消指定 bookingbusiness 中的指定[bookingAppointment，](../resources/bookingbusiness.md)并将消息发送给涉及的客户和员工成员。 [](../resources/bookingappointment.md)
+取消指定 [bookingbusiness 中的指定 bookingAppointment](../resources/bookingappointment.md)，并将消息发送给涉及的客户和员工成员。[](../resources/bookingbusiness.md)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,12 +45,12 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|向客户确认约会已取消的消息。|
+|cancellationMessage|字符串|向客户确认约会已取消的消息。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
 
-如果您尝试取消未取消的约会，此方法将返回 `HTTP 404 Not found` 。
+如果您尝试取消未取消的约会，此方法将返回 `HTTP 404 Not found`。
 
 ## <a name="example"></a>示例
 下面是如何调用此 API 的示例。
@@ -86,8 +86,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/bookingappointment-cancel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/bookingappointment-cancel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingappointment-cancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

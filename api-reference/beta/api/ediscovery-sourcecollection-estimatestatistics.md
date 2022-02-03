@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f7dfc09c1cd67d9f5f62ffdf506424cd4b6cb4cb
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 8935ff163e82f154420ca9acae247c164ea7554c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226041"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340250"
 ---
 # <a name="sourcecollection-estimatestatistics"></a>sourceCollection： estimateStatistics
 
@@ -18,7 +18,7 @@ ms.locfileid: "62226041"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-运行源集合中电子邮件和文档的估计数量。 若要了解有关电子数据展示 (搜索的源集合) ，请参阅在 Advanced eDiscovery[中收集数据](/microsoft-365/compliance/collecting-data-for-ediscovery)。
+运行源集合中电子邮件和文档的估计数量。 若要了解有关电子数据展示 (搜索的源集合) ，请参阅在电子数据展示中收集[Advanced eDiscovery。](/microsoft-365/compliance/collecting-data-for-ediscovery)
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 ## <a name="response"></a>响应
 
-如果估计成功启动，此操作将返回 响应 `202 Accepted` 代码。 响应还将包含标头，其中包含为处理估计而创建的 `Location` [estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md) 的位置。 通过向位置发送 GET 请求来检查估计操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded` 。
+如果估计成功启动，此操作将返回 响应 `202 Accepted` 代码。 响应还将包含标头 `Location` ，其中包含为处理估计而创建的 [estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md) 的位置。 通过向位置发送 GET 请求来检查估计操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded`。
 
 ## <a name="examples"></a>示例
 
@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourc
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sourcecollection-estimatestatistics-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sourcecollection-estimatestatistics-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

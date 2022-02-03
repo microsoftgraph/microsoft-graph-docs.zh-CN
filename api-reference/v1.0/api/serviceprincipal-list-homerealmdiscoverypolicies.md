@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c6564ca7ab329e644d198c169388277fdb1fccd7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 37052ce3b35ea1f110b5a8cb397ba00c8f1fb63e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091707"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344157"
 ---
 # <a name="list-assigned-homerealmdiscoverypolicy"></a>列出分配的 homeRealmDiscoveryPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "62091707"
 
 
 
-列出分配给[servicePrincipal](../resources/serviceprincipal.md)的[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象。
+列出分配给 [servicePrincipal](../resources/serviceprincipal.md) 的 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +50,7 @@ GET /servicePrincipals/{id}/homeRealmDiscoveryPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -113,16 +113,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "definition": [
-        "definition-value"
-      ],
-      "displayName": "displayName-value",
-      "isOrganizationDefault": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.homeRealmDiscoveryPolicy)",
+    "value": [
+        {
+            "id": "6c6f154f-cb39-4ff9-bf5b-62d5ad585cde",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"HomeRealmDiscoveryPolicy\":     {\"AccelerateToFederatedDomain\":true,      \"PreferredDomain\":\"federated.example.edu\",      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+            ],
+            "displayName": "Contoso default HRD Policy",
+            "isOrganizationDefault": false
+        }
+    ]
 }
 ```
 

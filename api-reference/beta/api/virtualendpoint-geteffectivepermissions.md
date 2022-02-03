@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 73bf1a8883e27b3c2b36529706700531320419e8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 93d18e141003bb2ff864744a22b753433a6a0c48
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095648"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343775"
 ---
 # <a name="virtualendpoint-geteffectivepermissions"></a>virtualEndpoint： getEffectivePermissions
 
@@ -53,7 +53,7 @@ GET /deviceManagement/virtualEndpoint/getEffectivePermissions
 
 ## <a name="response"></a>响应
 
-如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 String 集合。 如果用户具有完全权限，则响应为 `["*"]` 。
+如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 String 集合。 如果用户具有完全权限，则响应为 `["*"]`。
 
 ## <a name="examples"></a>示例
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/getEffecti
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/virtualendpoint-geteffectivepermissions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/virtualendpoint-geteffectivepermissions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

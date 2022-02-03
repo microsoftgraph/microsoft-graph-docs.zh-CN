@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c02db8a23a6d9ec5a7c534095968b3d66377ac74
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9f3fe575d2614ea2e9763fd7679e66cf03c928bd
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124196"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341716"
 ---
 # <a name="basetask-move"></a>baseTask： move
 命名空间：microsoft.graph
@@ -55,15 +55,15 @@ POST /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}/move
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
-|destinationTaskListId|String|必须将[baseTask](../resources/basetask.md)对象移动到的[baseTaskList。](../resources/basetasklist.md)|
+|destinationTaskListId|String|必须将 [baseTask](../resources/basetasklist.md) 对象移动到的 [baseTaskList](../resources/basetask.md) 。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此操作在响应正文中返回 响应代码 `200 OK` 和[baseTask。](../resources/basetask.md)
+如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 [baseTask](../resources/basetask.md) 。
 
 ## <a name="examples"></a>示例
 
@@ -102,6 +102,10 @@ Content-length: 41
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/basetask-move-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/basetask-move-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

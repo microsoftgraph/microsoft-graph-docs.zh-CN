@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 577f219e004b790ab144715dbcccaf5c29e94492
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f4e431bf23f73d482d9fd9fa2eae929f125a3dc4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60998646"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347691"
 ---
 # <a name="reviewset-export"></a>reviewSet： export
 
@@ -18,9 +18,9 @@ ms.locfileid: "60998646"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 **reviewSet 中启动导出**。  有关详细信息，请参阅从文档[审阅集导出Advanced eDiscovery。](/microsoft-365/compliance/export-documents-from-review-set)
+从 **reviewSet 启动导出**。  有关详细信息，请参阅从 Advanced eDiscovery [审阅集导出文档](/microsoft-365/compliance/export-documents-from-review-set)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -58,14 +58,14 @@ POST /compliance/ediscovery/cases/{caseId}/reviewsets/{reviewsetId}/export
 |:---|:---|:---|
 |outputName|String| 导出的名称。 必需。 |
 |description|String| 导出说明 |
-|azureBlobContainer|String| 导出到你自己的 Azure 存储帐户时，这是容器 URL。 |
-|azureBlobToken|String| 导出到你自己的 Azure 存储帐户时，容器 URL 的 SAS 令牌。 |
+|azureBlobContainer|字符串| 导出到你自己的 Azure 存储帐户时，这是容器 URL。 |
+|azureBlobToken|字符串| 导出到你自己的 Azure 存储帐户时，容器 URL 的 SAS 令牌。 |
 |exportOptions| [microsoft.graph.ediscovery.exportOptions](../resources/ediscovery-caseexportoperation.md#exportoptions-values) |指定控制导出格式的选项。 可取值为：`originalFiles`、`text`、`pdfReplacement`、`fileInfo`、`tags`。|
 |exportStructure|[microsoft.graph.ediscovery.exportFileStructure](../resources/ediscovery-caseexportoperation.md#exportfilestructure-values)| 控制导出的文件结构和打包的选项。 可取值为：`none`、`directory`、`pst`。|
 
 ## <a name="response"></a>响应
 
-如果导出成功启动，此操作将返回 `202 Accepted` 响应代码。 响应还将包含标头，其中包含为处理导出而创建的 `Location` [caseExportOperation](../resources/ediscovery-caseexportoperation.md) 的位置。 通过向位置发送 GET 请求来检查导出操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded` 。
+如果导出成功启动，此操作将返回 响应 `202 Accepted` 代码。 响应还将包含标头 `Location` ，其中包含为处理导出而创建的 [caseExportOperation](../resources/ediscovery-caseexportoperation.md) 的位置。 通过向位置发送 GET 请求来检查导出操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded`。
 
 ## <a name="examples"></a>示例
 
@@ -106,8 +106,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/reviewset-export-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reviewset-export-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reviewset-export-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

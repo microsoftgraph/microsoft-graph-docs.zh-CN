@@ -314,7 +314,7 @@ items:
                 href: api/user-list-events.md
               - name: 提醒视图
                 href: api/user-reminderview.md
-          - name: Contacts
+          - name: 联系人
             href: resources/contact.md
             items:
               - name: 创建
@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -470,7 +470,7 @@ items:
                     href: api/outlookuser-list-mastercategories.md
               - name: 翻译 ID
                 href: api/user-translateexchangeids.md
-          - name: People
+          - name: 人员
             items:
               - name: 人员
                 href: resources/person.md
@@ -532,7 +532,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -1591,7 +1591,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: 重定向
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -1673,7 +1673,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -4446,36 +4446,36 @@ items:
           - name: 工作分配设置
             href: resources/educationassignmentsettings.md
             items:
-              - name: 获取分配设置
+              - name: 获取
                 href: api/educationassignmentsettings-get.md
-              - name: 更新分配设置
+              - name: 更新
                 href: api/educationassignmentsettings-update.md
           - name: 工作分配默认值
             href: resources/educationassignmentdefaults.md
             items:
-              - name: 获取工作分配默认值
+              - name: 获取
                 href: api/educationassignmentdefaults-get.md
-              - name: 更新工作分配默认值
+              - name: 更新
                 href: api/educationassignmentdefaults-update.md
           - name: 类别
             href: resources/educationcategory.md
             items:
-              - name: 创建类别
+              - name: 创建
                 href: api/educationclass-post-category.md
-              - name: 获取类别
+              - name: 获取
                 href: api/educationcategory-get.md
-              - name: 删除类别
+              - name: 删除
                 href: api/educationcategory-delete.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
-              - name: 创建 rubric
+              - name: 创建
                 href: api/educationuser-post-rubrics.md
-              - name: 获取 rubric
+              - name: 获取
                 href: api/educationrubric-get.md
-              - name: 更新 rubric
+              - name: 更新
                 href: api/educationrubric-update.md
-              - name: 删除 rubric
+              - name: 删除
                 href: api/educationrubric-delete.md
           - name: 提交
             href: resources/educationsubmission.md
@@ -5767,7 +5767,7 @@ items:
         items:
           - name: 概述
             href: resources/social-overview.md
-          - name: People
+          - name: 人员
             items:
               - name: 人员
                 href: resources/person.md
@@ -5899,7 +5899,7 @@ items:
                 items:
                   - name: 列表预配
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365使用情况报告
+          - name: Microsoft 365使用率报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -6358,7 +6358,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 列出

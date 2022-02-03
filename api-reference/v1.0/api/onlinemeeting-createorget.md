@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c7d243034ae506d9312c321c4ff45657ffa1986b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e2c22e9b1427d42812463d50fe511b53a6e78675
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023258"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345784"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting：createOrGet
 
@@ -59,22 +59,22 @@ POST /users/{userId}/onlineMeetings/createOrGet
 
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
-| endDateTime      | 日期时间                                 | 会议结束时间（UTC）。 |
+| endDateTime      | DateTime                                 | 会议结束时间（UTC）。 |
 | externalId       | String                                   | 外部 ID。 自定义 ID。  (必需)  |
 | participants     | [meetingParticipants](../resources/meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
-| startDateTime    | 日期时间                                 | 会议开始时间（UTC）。 |
+| startDateTime    | DateTime                                 | 会议开始时间（UTC）。 |
 | subject          | String                                   | 联机会议的主题。 |
 
 > **注意：**
 >
-> - 如果未 **提供 startDateTime** 和 **endDateTime，startDateTime** 将默认为当前 dateTime 值 **，endDateTime** 值将等于 **startDateTime** + 1 小时。 
+> - 如果未 **提供 startDateTime** 和 **endDateTime** ， **startDateTime** 将默认为当前 dateTime 值， **endDateTime** 值将等于 **startDateTime** + 1 小时。
 >
-> - 如果 **提供了 startDateTime，** 但 **endDateTime** 未提供， **则 endDateTime** 值将等于 **startDateTime** + 1 小时。
+> - 如果 **提供了 startDateTime** ，但 **endDateTime** 未提供， **则 endDateTime** 值将等于 **startDateTime** + 1 小时。
 >
-> - 如果没有 **startDateTime 提供 endDateTime，** 或者 **endDateTime** 早于 **startDateTime**，将引发错误。
+> - 如果在未提供 **startDateTime 的情况下提供 endDateTime**，或者 **endDateTime** 早于 **startDateTime，将引发错误**。
 
 ## <a name="response"></a>响应
-如果成功，此方法在新建会议时返回 响应代码，如果检索到现有会议，则返回 `201 Created` `200 OK` 响应代码。 在这两种情况下，在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+如果成功，此方法在新建 `201 Created` 会议时 `200 OK` 返回 响应代码，如果检索到现有会议，则返回 响应代码。 在这两种情况下，在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -128,8 +128,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-or-get-onlinemeeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-or-get-onlinemeeting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-or-get-onlinemeeting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

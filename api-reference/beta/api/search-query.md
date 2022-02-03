@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 398ae83ba928f81a22688b39b9399e08c1f4066b
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: 4f9fe375897eda945d27a9c718ada1aba8a291af
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282170"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348817"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 
@@ -116,6 +116,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/search-query-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/search-query-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -166,7 +170,7 @@ Content-type: application/json
 - 搜索 [邮件](/graph/search-concept-messages)
 - 搜索 [日历事件](/graph/search-concept-events)
 - 搜索 [人员](/graph/search-concept-person)
-- 搜索网站SharePoint和OneDrive ([文件、列表和网站) ](/graph/search-concept-files)
+- 搜索网站SharePoint OneDrive ([、列表和网站) ](/graph/search-concept-files)
 - 搜索[连接器 (Graph自定义) ](/graph/search-concept-custom-types)数据
 - [对](/graph/search-concept-sort) 搜索结果进行排序
 - 使用 [聚合](/graph/search-concept-aggregations) 优化搜索结果

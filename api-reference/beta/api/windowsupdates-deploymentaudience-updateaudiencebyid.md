@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 523e2d0585a3f3716cc5daf182a728340214f307
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 473716bbe00b5cb054e17b27ea8310d0f2653c8d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862401"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342511"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience：updateAudienceById
 
@@ -18,11 +18,11 @@ ms.locfileid: "61862401"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用相同类型的[updatableAsset](../resources/windowsupdates-updatableasset.md)资源更新[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)的成员和排除集合。
+使用相同类型的 [updatableAsset](../resources/windowsupdates-updatableasset.md) 资源更新 [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) 的成员和排除集合。
 
-将[azureADDevice](../resources/windowsupdates-azureaddevice.md)添加到部署访问群体的成员或排除集合会自动创建Azure AD对象（如果该对象不存在）。
+将 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 添加到部署访问群体的成员或排除集合会自动创建Azure AD对象（如果该对象不存在）。
 
-如果 **deploymentAudience** 的排除和 **成员** 集合中包含相同的 [updatableAsset，](../resources/windowsupdates-updatableasset.md)则部署不会应用于该资产。 
+如果 **deploymentAudience** 的排除项和成员集合中包含相同的 [updatableAsset](../resources/windowsupdates-updatableasset.md)，则部署不会应用于该资产。
 
 您还可以使用 [updateAudience](windowsupdates-deploymentaudience-updateaudience.md) 方法来更新 **deploymentAudience**。
 
@@ -61,11 +61,11 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceBy
 
 |参数|类型|说明|
 |:---|:---|:---|
-|memberEntityType|String|可更新资源的完整类型。 可取值为：`#microsoft.graph.windowsUpdates.azureADDevice`、`#microsoft.graph.windowsUpdates.updatableAssetGroup`。|
-|addMembers|String collection|与要添加为部署访问群体成员的可更新资产相对应的标识符列表。|
-|removeMembers|String collection|与要作为部署访问群体成员删除的可更新资源相对应的标识符列表。|
-|addExclusions|String collection|与要作为部署访问群体排除项添加的可更新资源相对应的标识符列表。|
-|removeExclusions|String collection|与要作为部署访问群体排除项删除的可更新资源相对应的标识符列表。|
+|memberEntityType|字符串|可更新资源的完整类型。 可取值为：`#microsoft.graph.windowsUpdates.azureADDevice`、`#microsoft.graph.windowsUpdates.updatableAssetGroup`。|
+|addMembers|String 集合|与要添加为部署访问群体成员的可更新资产相对应的标识符列表。|
+|removeMembers|字符串集合|与要作为部署访问群体成员删除的可更新资源相对应的标识符列表。|
+|addExclusions|字符串集合|与要作为部署访问群体排除项添加的可更新资源相对应的标识符列表。|
+|removeExclusions|字符串集合|与要作为部署访问群体排除项删除的可更新资源相对应的标识符列表。|
 
 
 
@@ -122,6 +122,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/deploymentaudience-updateaudiencebyid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/deploymentaudience-updateaudiencebyid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

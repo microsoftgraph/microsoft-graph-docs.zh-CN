@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3b96a12d3a31f52b33946b6960dfc905897c66e5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e0b11ac0f196096060dfb3e48d5bf06ed9b16ae6
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006949"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344377"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -20,7 +20,7 @@ ms.locfileid: "61006949"
 
 > **注意：** 这仅在被转移方和转移目标都Microsoft Teams属于同一租户的用户时受支持。 仅应用程序实例支持转接到 PSTN 号码。 若要了解有关转移方、被转移方和转移目标有关详细信息，请参阅 [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2)。
 
-咨询转接意味着在转接之前，转接人可以通知要呼叫 (转接) 转接给被叫方。 这与直接转移呼叫相反。
+咨询转接意味着在转接之前，转接人可以通知要 (转接) 转接给被叫方。 这与直接转移呼叫相反。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -101,8 +101,12 @@ Content-Length: 430
 [!INCLUDE [sample-code](../includes/snippets/java/call-transfer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -214,7 +218,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>通知 - 转移失败
 
-> **注意：** 当呼叫转移失败时，呼叫状态将为 `established` 。
+> **注意：** 当呼叫转移失败时，呼叫状态将为 `established`。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -292,8 +296,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -400,7 +408,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>通知 - 转移失败
 
-> **注意：** 当呼叫转移失败时，呼叫状态将为 `established` 。
+> **注意：** 当呼叫转移失败时，呼叫状态将为 `established`。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -437,8 +445,8 @@ Content-Type: application/json
 
 ### <a name="example-3-call-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>示例 3：从对等呼叫到 PSTN 号码的呼叫转移
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
-> **注意：电话** ID 是 E.164 格式的电话号码。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给机器人](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+> **注意：** 电话 ID 是 E.164 格式的电话号码。
 
 #### <a name="request"></a>请求
 下面为请求示例。
@@ -473,8 +481,12 @@ Content-Length: 430
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -585,7 +597,7 @@ Content-Type: application/json
 ```
 ### <a name="notification---transfer-failed"></a>通知 - 转移失败
 
-> **注意：** 当呼叫转移失败时，呼叫状态将为 `established` 。
+> **注意：** 当呼叫转移失败时，呼叫状态将为 `established`。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -621,8 +633,8 @@ Content-Type: application/json
 
 ### <a name="example-4-consultative-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>示例 4：从对等呼叫到 PSTN 号码的咨询转接
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
-> **注意：电话** ID 是 E.164 格式的电话号码。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给机器人](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+> **注意：** 电话 ID 是 E.164 格式的电话号码。
 
 #### <a name="request"></a>请求
 下面为请求示例。
@@ -660,8 +672,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -768,7 +784,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>通知 - 转移失败
 
-> **注意：** 当呼叫转移失败时，呼叫状态将为 `established` 。
+> **注意：** 当呼叫转移失败时，呼叫状态将为 `established`。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -853,8 +869,12 @@ Content-Length: 430
 [!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-5-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-5-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -964,7 +984,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>通知 - 转移失败
 
-> **注意：** 当呼叫转移失败时，呼叫状态将为 `established` 。
+> **注意：** 当呼叫转移失败时，呼叫状态将为 `established`。
 
 ```http
 POST https://bot.contoso.com/api/calls

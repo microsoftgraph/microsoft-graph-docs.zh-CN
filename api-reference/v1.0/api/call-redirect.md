@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: aad2786e2f0d91d4975a56235d2b3f3606e53139
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 51530e58d72ff2809d53832138bd50ec16d551d5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974395"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347297"
 ---
 # <a name="call-redirect"></a>call： redirect
 
@@ -51,8 +51,8 @@ POST /communications/calls/{id}/redirect
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合|重定向操作的目标参与者。 如果指定了多个目标，则这是一个同时调用。 这意味着所有目标将同时设定范围，并且只有第一个选取的目标将被连接。 我们最多支持 25 个目标用于模拟。
-|timeout|Int32|超时 (重定向) 以秒表示。 超时值的范围介于 15 到 90 秒之间（包括 15 秒和 90 秒）。 对于一个目标，默认超时值为 55 秒，对于多个目标，默认超时值为 60 秒 (可能会) 。 |
-|callbackUri|String|这允许机器人为当前呼叫提供特定的回调 URI，以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。|
+|timeout|Int32|超时 (重定向) 超时值（以秒表示）。 超时值的范围介于 15 到 90 秒之间（包括 15 秒和 90 秒）。 一个目标的默认超时值为 55 秒，对于多个目标，默认超时值为 60 秒 (可能会) 。 |
+|callbackUri|String|这允许机器人为当前呼叫提供特定的回调 URI，以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https`。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。
@@ -158,8 +158,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/call-redirect-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-redirect-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-redirect-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -404,8 +408,8 @@ Content-Type: application/json
 
 ### <a name="example-3-forward-a-call-to-a-pstn-number"></a>示例 3：将呼叫转发到 PSTN 号码
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
-> **注意：电话** ID 是 E.164 格式的电话号码。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给机器人](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+> **注意：** 电话 ID 是 E.164 格式的电话号码。
 
 #### <a name="notification---incoming"></a>通知 - 传入
 <!-- {

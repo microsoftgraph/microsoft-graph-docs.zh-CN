@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 841f0c667646843a1c51dccfd90fe9214e1bb4f5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1616790f9042b0048976a43698ccd7523720735d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976377"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347185"
 ---
 # <a name="section-copytonotebook"></a>section： copyToNotebook
 
@@ -46,11 +46,11 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 |:---------------|:--------|:----------|
 |groupId|String|要复制到的组的 ID。 仅在复制到组时Microsoft 365使用。|
 |id|String|必需。 目标笔记本的 ID。 |
-|renameAs|String|副本的名称。 默认为现有项目的名称。 |
+|renameAs|字符串|副本的名称。 默认为现有项目的名称。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 响应 `202 Accepted` 代码和 `Operation-Location` 标头。 轮询Operation-Location [终结点，获取复制操作的状态](onenoteoperation-get.md)。
+如果成功，此方法返回 响应 `202 Accepted` 代码和标头 `Operation-Location` 。 轮询Operation-Location [终结点，获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -88,8 +88,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/section-copytonotebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/section-copytonotebook-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/section-copytonotebook-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

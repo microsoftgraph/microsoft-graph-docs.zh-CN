@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ba312015aaf9e78e6a821b2dc63b0dc21b06c369
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 5d4d22c28cf4c25014c93d70abfaeeaf506a3e8b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226060"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340546"
 ---
 # <a name="list-instances"></a>列表实例
 
@@ -18,7 +18,7 @@ ms.locfileid: "62226060"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[最近](../resources/accessreviewhistoryinstance.md)30[](../resources/accessreviewhistorydefinition.md)天内创建的访问评审历史记录定义的实例。
+检索[最近](../resources/accessreviewhistoryinstance.md) 30 天内创建[](../resources/accessreviewhistorydefinition.md)的访问评审历史记录定义的实例。
 
 ## <a name="permissions"></a>权限
 
@@ -55,12 +55,14 @@ GET /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDef
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewHistoryInstance](../resources/accessreviewhistoryinstance.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewHistoryInstance](../resources/accessreviewhistoryinstance.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessreviewhistoryinstance"
@@ -70,6 +72,28 @@ GET /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDef
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/90e28cb7-4b9a-48f7-ba4e-a2756fda01b2/instances
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewhistoryinstance-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewhistoryinstance-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-accessreviewhistoryinstance-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewhistoryinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewhistoryinstance-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

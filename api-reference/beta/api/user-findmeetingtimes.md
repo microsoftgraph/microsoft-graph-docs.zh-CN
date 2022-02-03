@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6793243feccc7e6a976e394959dffe03aa8f93a6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 63b92042ffc5657aa0986ac4bc70a387ec3b024e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009826"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339113"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -52,7 +52,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|attendees|[attendeeBase](../resources/attendeebase.md) 集合|一组会议与会者或资源。 在相应的 **type 属性** 中，为用户和会议室等资源 `required` 指定 或 `optional` `resource` 。 如果未指定 **，findMeetingTimes** 将 `required` 假定为 **type** 属性。 若集合为空，**findMeetingTimes** 只会查找组织者的空闲时间段。 可选。|
+|attendees|[attendeeBase](../resources/attendeebase.md) 集合|一组会议与会者或资源。 在相应的 **type 属性** 中， `required` `optional` `resource` 为用户和会议室等资源指定 或 。 如果未指定， **findMeetingTimes** 将假定 `required` 为 **type** 属性。 若集合为空，**findMeetingTimes** 只会查找组织者的空闲时间段。 可选。|
 |isOrganizerOptional|Edm.Boolean|如果组织者不必必须参加，则指定 `True`。默认值为 `false`。可选。|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|组织者对会议地点的要求，如是否必须返回会议地点建议，或是否只能在特定地点举行会议。可选。|
 |maxCandidates|Edm.Int32|要返回的会议时间建议数量上限。可选。|
@@ -190,8 +190,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-findmeetingtimes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-findmeetingtimes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-findmeetingtimes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

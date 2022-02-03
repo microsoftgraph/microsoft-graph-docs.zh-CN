@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a31c56aa3f43c37dfff19d9d885ccfcfb4b94336
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 09632e6f375e41968b239028675623bee9370bfe
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018827"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347212"
 ---
 # <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage：getSourceImages
 
@@ -18,7 +18,7 @@ ms.locfileid: "61018827"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 对象。 查看你的托管映像订阅中所有Azure Active Directory资源。
+获取 [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 对象。 查看你的订阅的所有托管图像资源Azure Active Directory列表。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/getSourceImages
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 集合。
+如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 集合。
 
 ## <a name="examples"></a>示例
 
@@ -86,8 +86,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 [!INCLUDE [sample-code](../includes/snippets/java/cloudpcdeviceimage-getsourceimages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpcdeviceimage-getsourceimages-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcdeviceimage-getsourceimages-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

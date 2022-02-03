@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ab970f02adc1433627cb5bb6371f559a30cc1f92
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eea0c1829273837bf37917298684ea78d1a26bc4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031526"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344516"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet： generateKey
 
@@ -18,9 +18,9 @@ ms.locfileid: "61031526"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [trustFrameworkKeyset](../resources/trustFrameworkKey.md) 中自动生成 [trustFrameworkKey](../resources/trustframeworkkeyset.md)和密码。 呼叫者不必提供密码。
+在 [trustFrameworkKeyset](../resources/trustFrameworkKey.md) 中自动生成 [trustFrameworkKey 和密码](../resources/trustframeworkkeyset.md)。 呼叫者不必提供密码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,7 +51,7 @@ POST /trustFramework/keySets/{id}/generateKey
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| use | string | 类似于 **trustFrameworkKey 的 use 属性**。  |
+| use | string | 类似于 **trustFrameworkKey 的 use 属性**。 |
 | kty | string | 类似于 **trustFrameworkKey** 的 **kty** 属性。 |
 | nbf | int | 类似于 **trustFrameworkKey** 的 **nbf** 属性。 |
 | exp | int | 类似于 **trustFrameworkKey 的 exp 属性**。 |
@@ -99,8 +99,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-generatekey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-generatekey-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/trustframeworkkeyset-generatekey-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

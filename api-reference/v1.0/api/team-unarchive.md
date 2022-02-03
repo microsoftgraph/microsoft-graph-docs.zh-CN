@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6d0f92087f658b5c368fbb4f48bef835dabe4443
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d8fd36a75c74bade692a38b83d6a236ccd5a8423
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018961"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339439"
 ---
 # <a name="unarchive-team"></a>解档团队
 
@@ -18,7 +18,7 @@ ms.locfileid: "61018961"
 
 
 
-还原存档 [的团队](../resources/team.md)。 这将恢复用户根据租户和团队设置发送消息和编辑团队的能力。 Teams存档 API[进行存档](team-archive.md)。
+还原存档 [的团队](../resources/team.md)。 这将恢复用户根据租户和团队设置发送消息和编辑团队的能力。 Teams存档 API [进行存档](team-archive.md)。
 
 取消搜索是异步操作。 异步操作成功完成后，团队将取消存档，此情况可能在来自此 API 的响应之后发生。
 
@@ -51,7 +51,7 @@ POST /teams/{id}/unarchive
 
 ## <a name="response"></a>响应
 
-如果成功启动取消存档，此方法将返回 响应 `202 Accepted` 代码。 响应还将包含标头，其中包含为处理团队取消存档而创建的 `Location` [teamsAsyncOperation](../resources/teamsasyncoperation.md) 的位置。 通过对此位置提出 GET 请求来检查取消存档操作的状态。
+如果成功启动取消存档，此方法将返回 响应 `202 Accepted` 代码。 响应还将包含标头 `Location` ，其中包含为处理团队取消存档而创建的 [teamsAsyncOperation](../resources/teamsasyncoperation.md) 的位置。 通过对此位置提出 GET 请求来检查取消存档操作的状态。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
@@ -81,8 +81,12 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 [!INCLUDE [sample-code](../includes/snippets/java/unarchive-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unarchive-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unarchive-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

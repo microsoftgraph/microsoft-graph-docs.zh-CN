@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9d8290f5ce44702ad0c65434b3ef101639aaf1b041009e625ab40a1eaa147265
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: df93914fc414c0c7df49236f8959f5fb1dc635f6
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57107145"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352034"
 ---
 ```javascript
 
@@ -16,11 +16,14 @@ const options = {
 const client = Client.init(options);
 
 const homeRealmDiscoveryPolicy = {
-  definition: [
-    'definition-value'
+    definition: [
+    '{\"HomeRealmDiscoveryPolicy\':
+     {\'AccelerateToFederatedDomain\':true,
+      \'PreferredDomain\':\"federated.example.edu\",
+      \'AlternateIdLogin\':{\'Enabled\':true}}}"
   ],
-  displayName: 'displayName-value',
-  isOrganizationDefault: true
+    displayName: 'displayName-value',
+    isOrganizationDefault: true
 };
 
 await client.api('/policies/homeRealmDiscoveryPolicies')

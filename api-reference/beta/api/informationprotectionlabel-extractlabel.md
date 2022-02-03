@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 53283d6c90c99fa848bb67d0547a8ad12d285c93
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a4629a32e3f4d91306e36b371744ffe93104f37d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012073"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349188"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel： extractLabel
 
@@ -18,7 +18,7 @@ ms.locfileid: "61012073"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用已有标签的一条信息上的元数据，将元数据解析为特定的敏感度标签。 [contentInfo](../resources/contentinfo.md)输入解析为[informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)。
+使用已有标签的一条信息上的元数据，将元数据解析为特定的敏感度标签。 [contentInfo](../resources/contentinfo.md) 输入解析为 [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)。
 
 >[!NOTE]
 >**[informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)** 资源表示已应用于一条信息的敏感度标签。 [informationProtectionLabel](../resources/informationprotectionlabel.md) 对象是抽象标签，属于组织标签策略的一部分，可应用于信息。
@@ -59,7 +59,7 @@ POST /informationprotection/policy/labels/extractLabel
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新 `200 OK` [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -145,8 +145,12 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-extractlabel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-extractlabel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-extractlabel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

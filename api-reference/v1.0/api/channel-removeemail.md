@@ -5,12 +5,12 @@ author: anandab-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c4b3afee13c8cf77936cc94ba2b473d27f466d26
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a952c0df050526168cbfb9cf09d01408533d3975
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006759"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342854"
 ---
 # <a name="channel-removeemail"></a>channel： removeEmail
 
@@ -18,7 +18,7 @@ ms.locfileid: "61006759"
 
 删除频道 [的电子邮件地址](../resources/channel.md)。
 
-只有当电子邮件地址是使用[provisionEmail](channel-provisionemail.md)方法或通过 Microsoft Teams 客户端预配时，才能删除。
+只有在使用 [provisionEmail](channel-provisionemail.md) 方法或通过 Microsoft Teams 客户端设置电子邮件地址时，才能删除该地址。
 
 ## <a name="permissions"></a>权限
 
@@ -78,8 +78,12 @@ POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 [!INCLUDE [sample-code](../includes/snippets/java/channel-removeemail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/channel-removeemail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/channel-removeemail-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

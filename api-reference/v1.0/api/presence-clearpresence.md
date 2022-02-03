@@ -5,18 +5,18 @@ author: jsandoval-msft
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 300ad978a9332d030184ee83bcfa85e5a9d7d339
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: aeb16ea81e475cbc100099b1a61732cc485d886d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984015"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348620"
 ---
 # <a name="presence-clearpresence"></a>presence： clearPresence
 
 命名空间：microsoft.graph
 
-清除用户的应用程序状态会话。 如果它是用户的唯一状态会话，则用户状态将更改为 `Offline/Offline` 。
+清除用户的应用程序状态会话。 如果它是用户的唯一状态会话，则用户状态将更改为 `Offline/Offline`。
 
 有关状态会话的详细信息，请参阅 [状态：setPresence](presence-setpresence.md#presence-sessions)。
 
@@ -52,7 +52,7 @@ POST /users/{userId}/presence/clearPresence
 
 > [!IMPORTANT]
 > 
-> 提供请求中应用程序 `sessionId` ID。
+> 提供请求中应用程序 ID `sessionId` 。
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `200 OK` 响应代码。
@@ -60,7 +60,7 @@ POST /users/{userId}/presence/clearPresence
 如果状态会话不存在，此方法将返回 响应 `404 NotFound` 代码。
 
 ## <a name="examples"></a>示例
-以下请求显示 ID 为 `22553876-f5ab-4529-bffb-cfe50aa89f87` 用户清除其状态会话的应用程序 `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` 。
+以下请求显示 ID 为 `22553876-f5ab-4529-bffb-cfe50aa89f87` 用户清除其状态会话的应用程序 `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`。
 
 ### <a name="request"></a>请求
 
@@ -95,8 +95,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/clear--presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/clear--presence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/clear--presence-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

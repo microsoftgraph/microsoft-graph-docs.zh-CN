@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b14688102dd7f08cad8ee46f2b62fab7d9995feb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 06622a92c35964957df9e73a7eaebd5c87b3a07d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993858"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345570"
 ---
 # <a name="schedule-share"></a>schedule： share
 
@@ -19,10 +19,10 @@ ms.locfileid: "60993858"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 与 [计划成员](../resources/schedule.md) 共享计划时间范围。
-使指定团队成员[（](../resources/shift.md)包括员工[](../resources/openshift.md)和经理）可查看计划指定时间范围内班次、开放临时和[](../resources/schedule.md) [timeOff](../resources/timeoff.md)项目的集合。
-计划[中的](../resources/shift.md)[每个班次、openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md) [实例都支持](../resources/schedule.md)草稿版本和项目的共享版本。 草稿版本仅由经理查看，而员工和经理可查看共享版本。 对于指定[](../resources/shift.md)时间范围内的每个班次[、openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)实例，共享操作从草稿版本更新共享版本，以便除经理外，员工还可以查看有关项目的最新信息。 **notifyTeam** 参数进一步指定哪些员工可以查看项目。
+使指定团队成员[（](../resources/shift.md)包括员工[](../resources/openshift.md)和经理）可查看计划指定时间范围内班次、开放临时和 [](../resources/schedule.md) [timeOff](../resources/timeoff.md) 项目的集合。
+[计划中的](../resources/shift.md)[每个班次、openshift](../resources/openshift.md) 和 [timeOff](../resources/timeoff.md) [实例都支持](../resources/schedule.md)草稿版本和项目的共享版本。 草稿版本仅由经理查看，而员工和经理可查看共享版本。 对于指定[](../resources/shift.md)时间范围内的每个班次、[openshift](../resources/openshift.md) 和 [timeOff](../resources/timeoff.md) 实例，共享操作从草稿版本更新共享版本，以便除经理外，员工还可以查看有关项目的最新信息。 **notifyTeam** 参数进一步指定哪些员工可以查看项目。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -98,8 +98,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-share-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-share-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-share-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

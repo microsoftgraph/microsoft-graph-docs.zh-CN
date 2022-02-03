@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bc09c0311152bc48cf99b0efe864e3edfe807a97
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1686519878848986631e705daca97fa9492ea966
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112676"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62350680"
 ---
 ```powershell
 
@@ -17,6 +17,7 @@ $params = @{
     ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
 
 ```

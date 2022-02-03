@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 98d8fd3e27608b549ad89257de6071f3dfd2a204
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 06b0c9522b71fd23c18844754a148efb8630daaa
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136504"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62350256"
 ---
 ```powershell
 
@@ -17,6 +17,7 @@ $params = @{
     Subject = "User Token Meeting"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 
 ```

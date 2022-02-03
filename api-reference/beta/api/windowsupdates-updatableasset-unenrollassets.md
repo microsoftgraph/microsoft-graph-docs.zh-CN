@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 40f0a0f766a18e5640a0f6326c522d488382d8d8
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 209ec017511800a605e7ac5f90697e8fa5aa536d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862795"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343779"
 ---
 # <a name="updatableasset-unenrollassets"></a>updatableAsset：unenrollAssets
 命名空间：microsoft.graph.windowsUpdates
@@ -53,8 +53,8 @@ POST /admin/windows/updates/updatableAssets/unenrollAssets
 
 |参数|类型|说明|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要停止管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可取值为：`feature`、`unknownFutureValue`。|
-|assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|要从服务的更新管理中注销的 **updatableAsset** 资源列表，用于给定 **updateCategory**。|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要停止管理的服务的更新类别。 支持 **updateCategory 值的子集**。 可取值为：`feature`、`unknownFutureValue`。|
+|assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|针对 **给定 updateCategory** 的服务从更新管理注销的 **updatableAsset 资源列表**。|
 
 
 
@@ -104,6 +104,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableasset-unenrollassets-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableasset-unenrollassets-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

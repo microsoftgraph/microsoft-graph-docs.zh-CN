@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a4d04bce478c0ab4eb94769a222cf7bee6b272ce
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4805c8aa107d2f056fad0b2c112caef58a629ddb
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019758"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341987"
 ---
 # <a name="participant-muteall"></a>participant： muteAll
 
@@ -20,7 +20,7 @@ ms.locfileid: "61019758"
 
 将呼叫中的所有参与者设为静音。
 
-> **注意：** 此 API 已弃用，将在 2020 年 3 月 15 日之前删除。 若要将单个参与者静音，请参阅 [参与者：静音](participant-mute.md)。
+> **注意：** 此 API 已弃用，将在 2020 年 3 月 15 日之前删除。 若要使单个参与者静音，请参阅 [参与者：静音](participant-mute.md)。
 
 
 ## <a name="permissions"></a>权限
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/participants/muteAll
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participants|String collection|要静音的参与者。|
+|participants|字符串集合|要静音的参与者。|
 |clientContext|String|客户端上下文。|
 
 ## <a name="response"></a>响应
@@ -96,8 +96,12 @@ Content-Length: 81
 [!INCLUDE [sample-code](../includes/snippets/java/participant-muteall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-muteall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-muteall-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

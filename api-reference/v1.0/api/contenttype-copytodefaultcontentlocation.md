@@ -5,12 +5,12 @@ description: 将文件复制到内容类型中的默认内容位置。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 59783f0068b1c1f01c194202fdc72d5bf01543ae
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 832263838b99a5ccb7474b17805a832cee32aab5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974185"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348977"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType：copyToDefaultContentLocation
 命名空间：microsoft.graph
@@ -63,7 +63,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/copyToDefaultContentLocation
 ## <a name="response"></a>响应
 
 
-如果成功，此调用将返回 `204 No Content` 响应。
+如果成功，此调用将返回 响应 `204 No Content` 。
 
 ## <a name="example"></a>示例
 
@@ -106,8 +106,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-copytodefaultcontentlocation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-copytodefaultcontentlocation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-copytodefaultcontentlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

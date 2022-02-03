@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7eb36166c6eaa8c10a20bc45658ed20622239f35e98d99171293e2e079bb10c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 30505b1e920cd2b34e7cec615d7223d44cc20520
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57332754"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349849"
 ---
 ```csharp
 
@@ -15,10 +15,9 @@ var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
 {
     Definition = new List<String>()
     {
-        "definition-value"
+        "{\"HomeRealmDiscoveryPolicy\":\r\n     {\"AccelerateToFederatedDomain\":true,\r\n      \"PreferredDomain\":\"federated.example.edu\",\r\n      \"AlternateIdLogin\":{\"Enabled\":true}}}"
     },
-    DisplayName = "displayName-value",
-    IsOrganizationDefault = true
+    DisplayName = "Contoso default HRD Policy"
 };
 
 await graphClient.Policies.HomeRealmDiscoveryPolicies["{homeRealmDiscoveryPolicy-id}"]

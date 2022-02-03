@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 159d2fdc19a8f47e93dfb7d9f734e6566b57f5d6
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 9b36cef6a8267d8d4733851beb1db95589e6a78d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61811529"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348130"
 ---
 # <a name="updatableasset-enrollassets"></a>updatableAsset： enrollAssets
 命名空间：microsoft.graph.windowsUpdates
@@ -19,9 +19,9 @@ ms.locfileid: "61811529"
 
 在 [部署服务的更新管理中注册 updatableAsset](../resources/windowsupdates-updatableasset.md) 资源。
 
-可以在更新管理中注册[azureADDevice](../resources/windowsupdates-azureaddevice.md)资源，但不能在更新管理中注册[updatableAssetGroup。](../resources/windowsupdates-updatableassetgroup.md)
+可以在更新管理中注册 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 资源，但不能在更新管理中注册 [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) 。
 
-在更新Azure AD注册设备将自动创建 **azureADDevice** 对象（如果该对象不存在）。
+在更新Azure AD注册设备会自动创建 **azureADDevice** 对象（如果该对象不存在）。
 
 您还可以使用 [enrollAssetsById 方法](windowsupdates-updatableasset-enrollassetsbyid.md) 注册资产。
 
@@ -57,8 +57,8 @@ POST /admin/windows/updates/updatableAssets/enrollAssets
 
 |参数|类型|说明|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可取值为：`feature`、`unknownFutureValue`。|
-|assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|要通过服务注册更新管理的 **updatableAsset** 资源列表，用于给定 **updateCategory**。|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要管理的服务的更新类别。 支持 **updateCategory 值的子集**。 可取值为：`feature`、`unknownFutureValue`。|
+|assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|要通过服务为给定 **updateCategory 注册更新管理的 updatableAsset 资源列表**。|
 
 ## <a name="response"></a>响应
 
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableasset-enrollassets-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableasset-enrollassets-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a408b1309392520ba5be6b2d0040ed3e2d5b0a6d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 15e300bfc82a25316325c80c49f3b2299b29e617
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004758"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349146"
 ---
 # <a name="message-reply"></a>消息：答复
 
@@ -21,7 +21,7 @@ ms.locfileid: "61004758"
 使用 JSON 或 MIME [格式](../resources/message.md) 答复邮件的发件人。
 
 使用 JSON 格式时：
-- 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
+- 指定参数的 comment 或 `message` **body** 属性。 指定这两者将返回 HTTP 400 错误请求错误。
 - 如果原始邮件在 **replyTo** 属性中指定收件人，则根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，将答复发送给 **replyTo** 中的收件人，而不是 **from** 属性中的收件人。
 
 使用 MIME 格式时：
@@ -30,7 +30,7 @@ ms.locfileid: "61004758"
 
 此方法将邮件保存在 **“已发送邮件”** 文件夹中。
 
-或者，[创建一个草稿以答复邮件，](../api/message-createreply.md)[并稍后](../api/message-send.md)发送。
+或者， [创建回复邮件的](../api/message-createreply.md)草稿， [稍后](../api/message-send.md) 发送。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,8 +55,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。 必需 |
-| Content-Type | string  | 实体正文中的数据性质。 必需 <br/> 用于 `application/json` JSON 对象和 `text/plain` MIME 内容 |
+| Authorization  | string  | Bearer {token}。 必填 |
+| Content-Type | string  | 实体正文中的数据性质。 必填 <br/> 用于 `application/json` JSON 对象和 `text/plain` MIME 内容 |
 
 ## <a name="request-body"></a>请求正文
 使用 JSON 格式时，请包含具有以下参数的 JSON 对象。
@@ -64,7 +64,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[邮件](../resources/message.md) | 回复邮件中要更新的任何可写属性。|
+|消息|[message](../resources/message.md) | 回复邮件中要更新的任何可写属性。|
 
 当指定 MIME 格式的正文时，向 MIME 内容提供适用的 Internet 邮件头，所有邮件头在请求正文中都以 **base64** 格式进行编码。 此方法使用原始邮件的发件人作为收件人。
 
@@ -130,8 +130,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/message-reply-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-reply-beta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-reply-beta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

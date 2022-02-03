@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a2f2a0fbe7576523584ea56f04a0e608c5d68075
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 869933f62e4378a48454322d8b88b9e3f5cac14c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023825"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342127"
 ---
 # <a name="informationprotectionlabel-evaluateapplication"></a>informationProtectionLabel：evaluateApplication
 
@@ -20,7 +20,7 @@ ms.locfileid: "61023825"
 
 计算 [应应用](../resources/informationprotectionlabel.md) 的信息保护标签，并返回正确标记信息所必须采取的一组操作。 当用户或服务应手动或显式设置标签，而不是基于文件内容自动设置标签时，此 API 非常有用。 
 
-在 [给定 contentInfo](../resources/contentInfo.md)（包括现有内容元数据键 [/](../resources/keyvaluepair.md)值对 ）和 [labelingOptions](../resources/labelingoptions.md) 作为输入时，API 将返回一个 [informationProtectionAction](../resources/informationprotectionaction.md) 对象，该对象包含以下项之一： 
+在 [给定 contentInfo](../resources/contentInfo.md)（包括现有内容元数据键 [/](../resources/keyvaluepair.md)值对）以及将 [Options](../resources/labelingoptions.md) 标记为输入后，API 将返回 [一个 informationProtectionAction](../resources/informationprotectionaction.md) 对象，该对象包含以下项之一： 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
@@ -38,7 +38,7 @@ ms.locfileid: "61023825"
 * [removeProtectionAction](../resources/removeprotectionaction.md)
 * [remove使用markAction](../resources/removewatermarkaction.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -172,8 +172,12 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateapplication-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-evaluateapplication-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

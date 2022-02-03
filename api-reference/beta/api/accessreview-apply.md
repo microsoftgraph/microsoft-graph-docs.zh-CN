@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3faf81557d66b5fe66f5cfcfda16f4ef578d1df6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 04b17b5ae906d3a5465505f6c8be530f89559acc
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983099"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340704"
 ---
 # <a name="apply-accessreview"></a>应用 accessReview
 
@@ -18,7 +18,9 @@ ms.locfileid: "60983099"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[评审](../resources/accessreviews-root.md)功能中，应用已完成[的 accessReview 的决策](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+在Azure AD[评审](../resources/accessreviews-root.md)"功能中，应用已完成[的 accessReview 的决策](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  
 
 
 完成访问评审后，无论是由于到达结束日期还是管理员手动停止访问，且未针对该评审配置自动应用，您可以调用 Apply 以应用更改。 在应用发生之前，删除访问权限的决策不会显示在源资源上，例如，用户保留其组成员身份。 通过调用 apply，审阅结果通过更新组或应用程序实现。 如果在审查中拒绝用户访问，当管理员调用此 API 时，Azure AD删除其成员身份或应用程序分配。 
@@ -81,8 +83,12 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 [!INCLUDE [sample-code](../includes/snippets/java/apply-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/apply-accessreview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/apply-accessreview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

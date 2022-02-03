@@ -1,16 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d7756e21190e3ac89680445df6d174d4a801c60f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 03e34f4935887b4add2ecab51f96930199fc384b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112018"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349955"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Users
 
+# A UPN can also be used as -UserId.
 Get-MgUserSettingRegionalAndLanguageSetting -UserId $userId
 
 ```
