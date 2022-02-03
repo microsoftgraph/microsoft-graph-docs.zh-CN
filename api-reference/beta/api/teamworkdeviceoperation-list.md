@@ -5,12 +5,12 @@ author: adsrivastava2
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 50ef765c313bf1e0508509cbc41f3b2453cbf5b0
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 998eef1ff0e90fa76456a1b3af7b2cb104d0fb21
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262438"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343393"
 ---
 # <a name="list-teamworkdeviceoperations"></a>列出 teamworkDeviceOperations
 命名空间：microsoft.graph
@@ -45,9 +45,9 @@ GET /teamwork/devices/{teamworkDeviceId}/operations
 
 ### <a name="supported-query-patterns"></a>支持的查询模式
 
-| 模式                | 语法                                 | 注释 |
+| 模式                | 语法                                 | 备注 |
 | ---------------------- | -------------------------------------- | ----- |
-| 服务器端分页 | `@odata.nextLink`                      | 当一个文档跨多个页面时，将在响应结果集延续令牌。 |
+| 服务器端分页 | `@odata.nextLink`                      | 当一个事件跨多个页面时，你将在响应结果集延续令牌。 |
 | 页面限制                 | `/devices({deviceId})/operations?$top=10` | 获取页面大小为 10 的设备的操作。 默认页面限制为 20。 最大页面限制为 50。 |
 
 ## <a name="request-headers"></a>请求标头
@@ -65,6 +65,8 @@ GET /teamwork/devices/{teamworkDeviceId}/operations
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamworkdeviceoperation"
@@ -73,6 +75,32 @@ GET /teamwork/devices/{teamworkDeviceId}/operations
 ``` http
 GET https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3c0f32e43c0f/operations
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamworkdeviceoperation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamworkdeviceoperation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamworkdeviceoperation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamworkdeviceoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-teamworkdeviceoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-teamworkdeviceoperation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

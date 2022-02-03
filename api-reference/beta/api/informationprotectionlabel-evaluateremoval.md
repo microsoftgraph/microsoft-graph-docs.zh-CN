@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: c6937aefa936f48fa0054490991c7c85c4625fa1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 09cfa79cf9eb0d4dfb9b1d5935c1bc715daf2e36
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019856"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339853"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel：evaluateRemoval
 
@@ -20,7 +20,7 @@ ms.locfileid: "61019856"
 
 向使用应用程序指示删除标签信息应采取的操作。
 
-在 [将 contentInfo](../resources/contentinfo.md) 作为输入（包括现有内容元数据键 [/](../resources/keyvaluepair.md)值对）时，API 将返回 [一个 informationProtectionAction，](../resources/informationprotectionaction.md) 其中包含以下各项之一的某种组合： 
+将 [contentInfo](../resources/contentinfo.md) 作为输入（包括现有内容元数据键 [/](../resources/keyvaluepair.md)值对）给定后，API 将返回 [一个 informationProtectionAction](../resources/informationprotectionaction.md) ，其中包含以下各项之一的某种组合： 
 
 * [justifyAction](../resources/justifyaction.md)
 * [metadataAction](../resources/metadataaction.md)
@@ -67,7 +67,7 @@ POST /informationProtection/policy/labels/evaluateRemoval
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。 [informationProtectionAction 对象](../resources/informationprotectionaction.md)将包含一个[metadataAction](../resources/metadataaction.md)对象，该对象通知应用程序要删除的元数据。 
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。 [informationProtectionAction 对象](../resources/informationprotectionaction.md)将包含一个 [metadataAction](../resources/metadataaction.md) 对象，该对象通知应用程序要删除的元数据。 
 
 ## <a name="examples"></a>示例
 
@@ -157,8 +157,12 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateremoval-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateremoval-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-evaluateremoval-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

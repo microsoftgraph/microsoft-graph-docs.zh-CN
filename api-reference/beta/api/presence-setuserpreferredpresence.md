@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 005c0c6cd0f35455780c11650a10bab96280bc6d
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 37fd49ea1f45ae8c1bb06e609d6fbc91d465a521
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526089"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344936"
 ---
 # <a name="presence-setuserpreferredpresence"></a>presence： setUserPreferredPresence
 
@@ -22,9 +22,9 @@ ms.locfileid: "61526089"
 
 首选状态仅在用户至少有一个状态 [会话时](presence-setpresence.md#presence-sessions) 生效。 否则，用户状态将保持脱机状态。
 
-状态会话可以是[setPresence](presence-setpresence.md)操作成功的结果，或者如果用户登录到 Teams 客户端。 
+状态会话可以是 [setPresence](presence-setpresence.md) 操作成功的结果，或者如果用户登录到 Teams 客户端。 
 
-阅读有关 [状态会话](presence-setpresence.md#presence-sessions) 及其 [过期和过期状态会话的更多信息](presence-setpresence.md#timeout-expiration-and-keep-alive)。 
+阅读有关[状态会话](presence-setpresence.md#presence-sessions)及其[退出和过期时间等内容。](presence-setpresence.md#timeout-expiration-and-keep-alive) 
 
 ## <a name="permissions"></a>权限
 调用 API 需要以下权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -72,7 +72,7 @@ POST /users/{userId}/presence/setUserPreferredPresence
 
 ## <a name="examples"></a>示例
 
-以下请求将用户首选状态设置为用户的 DoNotDisturb，过期时间为 `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` 8 小时。
+以下请求将用户首选状态设置为用户的 `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`DoNotDisturb，过期时间为 8 小时。
 
 #### <a name="request"></a>请求
 
@@ -108,8 +108,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/setuserpreferredpresence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/setuserpreferredpresence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/setuserpreferredpresence-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

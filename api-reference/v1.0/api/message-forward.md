@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b890894c3f0fb2ab74e9e965d9f026bc9e08ee32
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1e1da051f269e6880afb477e70e6cd7ec41bd631
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984562"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342350"
 ---
 # <a name="message-forward"></a>邮件：转发
 
@@ -19,7 +19,7 @@ ms.locfileid: "60984562"
 使用 JSON 或 MIME 格式转发邮件。
 
 使用 JSON 格式时，可以：
-- 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
+- 指定参数的 comment 或 `message` **body** 属性。 指定这两者将返回 HTTP 400 错误请求错误。
 - 指定参数 `toRecipients` 的参数或 **toRecipients** `message` 属性。 指定两者或同时指定两者都将返回 HTTP 400 错误请求错误。
 
 使用 MIME 格式时：
@@ -28,7 +28,7 @@ ms.locfileid: "60984562"
 
 此方法将邮件保存在 **“已发送邮件”** 文件夹中。
 
-或者，[创建转发邮件的草稿，](../api/message-createforward.md)[并稍后](../api/message-send.md)发送。
+或者， [创建转发邮件的草稿](../api/message-createforward.md)， [稍后](../api/message-send.md) 发送。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明| 
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。 必需 |
+| Authorization  | string  | Bearer {token}。 必填 |
 | Content-Type | string  | 实体正文中的数据性质。  必需。 <br/> 对 JSON 对象使用 `application/json`，对 MIME 内容使用 `text/plain`。 |
 
 ## <a name="request-body"></a>请求正文
@@ -112,8 +112,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/message-forward-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-forward-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-forward-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

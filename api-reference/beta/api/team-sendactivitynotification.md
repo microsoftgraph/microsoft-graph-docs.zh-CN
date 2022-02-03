@@ -5,19 +5,19 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1371383f9888f9503ca37dd711228f609ba0d084
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 96e854b8597d557becfb0b4a50b78e1bb2784c8f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226048"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343892"
 ---
 # <a name="team-sendactivitynotification"></a>team：sendActivityNotification
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在团队范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
+在团队范围内发送活动源通知。 有关发送通知以及发送通知的要求的更多详细信息，请参阅发送Teams[活动通知](/graph/teams-send-activityfeednotifications)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "62226048"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|TeamsActivity.Send.Group*，TeamsActivity.Send|
 
->**注意：** 标记为 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
+>**注意：** 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,19 +55,19 @@ POST /teams/{teamId}/sendActivityNotification
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
 |activityType|String|活动类型。 这必须在应用清单[Teams声明](/microsoftteams/platform/overview)。|
-|chainId|Int64|可选。 用于替代上一个通知。 在后续 `chainId` 请求中使用相同的方法替代上一个通知。|
+|chainId|Int64|可选。 用于替代上一个通知。 在后续请求 `chainId` 中使用相同的方法替代上一个通知。|
 |previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams显示前 150 个字符。|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|活动源条目中定义的模板变量的值与应用程序Teams `activityType` [相对应](/microsoftteams/platform/overview)。|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|通知的收件人。 另请参阅 [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) [、teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md)和 [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md)。 |
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|活动源条目中定义的模板变量的值与应用程序清单Teams `activityType` [相对应](/microsoftteams/platform/overview)。|
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|通知的收件人。 另请参阅 [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md)、 [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md) 和 [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md)。 |
 
-将 topic 属性的值设置为 时 `source` ，支持 **以下** 资源 `entityUrl` ：
+将 topic 属性的值设置为 时 `source` ，支持 **以下** 资源 `entityUrl`：
 
 - [团队](../resources/team.md)
 - [频道](../resources/channel.md)
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外[，Teams应用](/microsoftteams/platform/overview)必须安装在团队中。
+> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外，[Teams应用](/microsoftteams/platform/overview)必须安装在团队中。
 
 ## <a name="response"></a>响应
 
@@ -132,6 +132,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -147,7 +151,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-a-channel-tab"></a>示例 2：通知用户有关频道选项卡的信息
 
-与上一示例类似，此示例对 `entityUrl` 使用 `topic` 。 但是，此示例[链接到频道中的](../resources/teamstab.md)[选项卡](../resources/channel.md)。 选项卡承载一个页面，向用户显示其酒店预订的状态。 选择通知后，用户即可访问选项卡，可在其中查看预订。
+与上一示例类似，此示例对 `entityUrl` 使用 `topic`。 但是，此示例链接到 [频道](../resources/teamstab.md) 中的 [选项卡](../resources/channel.md)。 选项卡承载一个页面，向用户显示其酒店预订的状态。 选择通知后，用户即可访问选项卡，可在其中查看预订。
 
 #### <a name="request"></a>请求
 
@@ -206,6 +210,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -221,7 +229,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-a-channel-tab-using-user-principal-name"></a>示例 3：使用用户主体名称通知用户有关频道选项卡的信息
 
-与上一示例类似，此示例对 `entityUrl` 使用 `topic` 。 但是，此示例[链接到频道中的](../resources/teamstab.md)[选项卡](../resources/channel.md)。 选项卡承载一个页面，向用户显示其酒店预订的状态。 选择通知后，用户即可访问选项卡，可在其中查看预订。
+与上一示例类似，此示例对 `entityUrl` 使用 `topic`。 但是，此示例链接到 [频道](../resources/teamstab.md) 中的 [选项卡](../resources/channel.md)。 选项卡承载一个页面，向用户显示其酒店预订的状态。 选择通知后，用户即可访问选项卡，可在其中查看预订。
 
 #### <a name="request"></a>请求
 
@@ -273,7 +281,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-4-notify-a-user-about-an-event-using-custom-topic"></a>示例 4：使用自定义主题通知用户事件
 
-如前面的示例中所示，你可以链接到团队的不同方面。 但是，如果要链接到不是团队的一部分或不是由 Microsoft Graph 表示的方面，或者希望自定义名称，可以将 的源设置为 并传递其自定义 `topic` `text` 值。 `webUrl` 将 source 设置为 时 `topic` 是必需的 `text` 。
+如前面的示例中所示，你可以链接到团队的不同方面。 但是，如果要链接到不是团队的一部分或不是由 Microsoft Graph `topic` `text` 表示的方面，或者希望自定义名称，可以将 的源设置为 并传递其自定义值。 `webUrl` 将 source 设置为 时 `topic` 是必需的 `text`。
 
 #### <a name="request"></a>请求
 
@@ -329,6 +337,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -344,7 +356,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-5-notify-the-team-members-about-pending-finance-approval-requests"></a>示例 5：通知团队成员有关待处理的财务审批请求
 
-此示例演示如何向所有团队成员发送活动源通知。 此示例与前面的示例类似。 但是，在这种情况下， 是 `recipient` [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md)。 请注意， `teamId` 中指定的 `recipient` 必须与请求 URL `teamId` 中指定的 匹配。
+此示例演示如何向所有团队成员发送活动源通知。 此示例与前面的示例类似。 但是，在这种情况下， 是 `recipient` [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md)。 请注意， `teamId` 中指定的 必须与 `recipient` 请求 `teamId` URL 中指定的 匹配。
 
 > **注意：** 向所有团队成员发送通知的能力仅限于拥有 10，000 个成员或更少成员的团队。 如果团队超过 10，000 个成员，则任何团队成员均不会收到通知。
 
@@ -402,6 +414,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-4-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -417,7 +433,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-6-notify-the-channel-members-about-pending-finance-approval-requests"></a>示例 6：通知频道成员有关待处理的财务审批请求
 
-此示例演示如何向所有频道成员发送活动源通知。 此示例与上一个示例类似。 但是，在这种情况下， 是 `recipient` [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md)。 请注意， `teamId` 中指定的 `recipient` 必须与请求 URL `teamId` 中指定的 匹配。
+此示例演示如何向所有频道成员发送活动源通知。 此示例与上一个示例类似。 但是，在这种情况下， 是 `recipient` [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md)。 请注意， `teamId` 中指定的 必须与 `recipient` 请求 `teamId` URL 中指定的 匹配。
 
 #### <a name="request"></a>请求
 
@@ -472,6 +488,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-5-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

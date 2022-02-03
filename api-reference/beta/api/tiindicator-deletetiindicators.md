@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 14737eb0b4bbe9eb1124ee3d1e36e5428b47f608
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 689dd0338a28abccf317ef1dad75aafb164de11b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001643"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341901"
 ---
 # <a name="tiindicator-deletetiindicators"></a>tiIndicator：deleteTiIndicators
 
@@ -50,11 +50,11 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|String collection| 要删除的 tiIndicator `id` 集合。 |
+|值|字符串集合| 要删除的 tiIndicator `id`集合。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200, OK` 响应正文中返回 响应代码和 [resultInfo](../resources/resultinfo.md) 集合对象。 如果出现错误，此方法将返回 响应 `206 Partial Content` 代码。  有关详细信息 [，](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 请参阅错误。
+如果成功，此方法在响应 `200, OK` 正文中返回 响应代码和 [resultInfo](../resources/resultinfo.md) 集合对象。 如果出现错误，此方法将返回 响应 `206 Partial Content` 代码。  有关详细信息 [，](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 请参阅错误。
 
 ## <a name="examples"></a>示例
 
@@ -97,8 +97,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-deletetiindicators-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tiindicator-deletetiindicators-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tiindicator-deletetiindicators-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

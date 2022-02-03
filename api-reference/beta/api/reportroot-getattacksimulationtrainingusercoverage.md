@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: da87fd3327a81836668e9591124b4603b4bcc4fd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6f15b6ff9c2d85f83b6df333d3ed38fdfe7b972e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093359"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346149"
 ---
 # <a name="reportroot-getattacksimulationtrainingusercoverage"></a>reportRoot： getAttackSimulationTrainingUserCoverage
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "62093359"
 
 列出 [攻击模拟](../resources/attacksimulationtrainingusercoverage.md) 和营销活动中租户每个用户的培训覆盖范围。
 
-此函数 `@odata.nextLink` 支持分页。
+此函数支持 `@odata.nextLink` 分页。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /reports/getAttackSimulationTrainingUserCoverage
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [attackSimulationTrainingUserCoverage](../resources/attacksimulationtrainingusercoverage.md) 集合。
+如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [attackSimulationTrainingUserCoverage](../resources/attacksimulationtrainingusercoverage.md) 集合。
 
 ## <a name="examples"></a>示例
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/reports/getAttackSimulationTrainingUserCove
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reportroot-getattacksimulationtrainingusercoverage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getattacksimulationtrainingusercoverage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

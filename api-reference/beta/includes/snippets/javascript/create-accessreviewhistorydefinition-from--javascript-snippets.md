@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 090b8fe6f0c9beb538771addac3a3caae28170228ea5a6ae9eba5f72abeb8e4b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ecde4d23820a9ccd37be6aa038c82b889d391472
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57104149"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352560"
 ---
 ```javascript
 
@@ -24,8 +24,20 @@ const accessReviewHistoryDefinition = {
     'notReviewed',
     'notNotified'
   ],
-  reviewHistoryPeriodStartDateTime: '2021-01-01T00:00:00Z',
-  reviewHistoryPeriodEndDateTime: '2021-04-05T00:00:00Z',
+  scheduleSettings: {
+      reportRange: 'P1M',
+      recurrence: {
+          pattern: {
+              type: 'monthly',
+              interval: 1
+          },
+          range: {
+              type: 'noEnd',
+              startDate: '2018-08-03T21:02:30.667Z',
+              count: 0
+          }
+        }
+  },
   scopes: [
     {
       '@odata.type': '#microsoft.graph.accessReviewQueryScope',

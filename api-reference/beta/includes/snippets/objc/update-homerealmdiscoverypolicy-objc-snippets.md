@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bd37971adab09e1f89b7561616d6227e7adf2bf94d955ad90e537c06396a5540
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9f74fc24d5c939e4e665b5bc2d6a31b1de1f616e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163414"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352506"
 ---
 ```objc
 
@@ -18,10 +18,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphHomeRealmDiscoveryPolicy *homeRealmDiscoveryPolicy = [[MSGraphHomeRealmDiscoveryPolicy alloc] init];
 NSMutableArray *definitionList = [[NSMutableArray alloc] init];
-[definitionList addObject: @"definition-value"];
+[definitionList addObject: @"{"HomeRealmDiscoveryPolicy":
+     {"AccelerateToFederatedDomain":true,
+      "PreferredDomain":"federated.example.edu",
+      "AlternateIdLogin":{"Enabled":true}}}"];
 [homeRealmDiscoveryPolicy setDefinition:definitionList];
-[homeRealmDiscoveryPolicy setDisplayName:@"displayName-value"];
-[homeRealmDiscoveryPolicy setIsOrganizationDefault: true];
+[homeRealmDiscoveryPolicy setDisplayName:@"Contoso default HRD Policy"];
 
 NSError *error;
 NSData *homeRealmDiscoveryPolicyData = [homeRealmDiscoveryPolicy getSerializedDataWithError:&error];

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ad6a049f04c372cbf95d511130374be2a1b6de91
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5ba11010a2fe0741334c324aaa03a880cc01745e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116778"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349297"
 ---
 ```powershell
 
@@ -16,6 +16,7 @@ $params = @{
     PhoneType = "mobile"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserAuthenticationPhoneMethod -UserId $userId -BodyParameter $params
 
 ```
