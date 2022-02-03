@@ -1,16 +1,16 @@
 ---
 title: trustFrameworkKeySet：uploadPkcs12
-description: Upload将 PKCS 12 格式密钥 (PFX) 到密钥集。
+description: Upload将 PKCS 12 格式密钥 (PFX) 到键集。
 ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b24678d50048fb2e77a075608d537320accec8da
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0afc4a8e336f3a11200ae289bb26bdd02df14359
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976944"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345846"
 ---
 # <a name="trustframeworkkeyset-uploadpkcs12"></a>trustFrameworkKeySet：uploadPkcs12
 
@@ -18,7 +18,7 @@ ms.locfileid: "60976944"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upload将 PKCS12 格式密钥 (PFX) [trustFrameworkKeyset 。](../resources/trustframeworkkeyset.md) 输入是 Pfx 证书内容的 Base64 编码值。 此方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
+Upload将 PKCS12 格式密钥 (PFX) [trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 输入是 Pfx 证书内容的 Base64 编码值。 此方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -95,8 +95,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-uploadpkcs12-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-uploadpkcs12-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/trustframeworkkeyset-uploadpkcs12-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

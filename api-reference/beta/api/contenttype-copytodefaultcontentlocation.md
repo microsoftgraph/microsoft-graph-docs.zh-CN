@@ -5,12 +5,12 @@ description: 将文件复制到内容类型中的默认内容位置。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: c01349a14f6746fb034a539ed4a5ba86a0b4aed6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a74d72c928b1bdb416995a7b6f27cdea05236fd1
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028783"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339138"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType：copyToDefaultContentLocation
 命名空间：microsoft.graph
@@ -18,7 +18,7 @@ ms.locfileid: "61028783"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 将文件复制到内容类型中的默认 [内容位置][contentType]。 然后，可以通过 POST 操作将该文件添加为默认文件或模板。
 
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>权限  
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -63,7 +63,7 @@ POST /sites/id/contentTypes/id/copyToDefaultContentLocation
 ## <a name="response"></a>响应
 
 
-如果成功，此调用将返回 `204 No Content` 响应。
+如果成功，此调用将返回 响应 `204 No Content` 。
 
 ## <a name="example"></a>示例
 
@@ -105,8 +105,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-copytodefaultcontentlocation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-copytodefaultcontentlocation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-copytodefaultcontentlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

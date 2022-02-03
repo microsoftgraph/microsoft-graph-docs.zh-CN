@@ -5,19 +5,19 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fea1d5bbdbfbfedaed2bd905365f665b69de3776
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 922bf16d011ac904150a25dbd0341d0092888924
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027808"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344501"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest：cancel
 命名空间：microsoft.graph
 
-立即取消 [状态为 unifiedRoleEligibilityScheduleRequest，](../resources/unifiedroleeligibilityschedulerequest.md) 并要求系统在 30 天后自动删除已取消 `Granted` 的请求。 调用此操作后， **已** 取消的 unifiedRoleEligibilityScheduleRequest 的状态将改为 `Revoked` 。
+立即取消[状态为 unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)`Granted`，并要求系统在 30 天后自动删除已取消的请求。 调用此操作后， **已** 取消的 unifiedRoleEligibilityScheduleRequest 的状态将改为 `Revoked`。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -46,7 +46,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligi
 
 ## <a name="response"></a>响应
 
-如果成功，此操作返回 `204 No Content` 响应代码。 尝试取消未在可取消状态的请求，例如，状态为 或 的 unifiedRoleEligibilityScheduleRequest 对象将 `Provisioned` `Failed` 返回 `400 Bad Request` 错误代码。
+如果成功，此操作返回 `204 No Content` 响应代码。 尝试取消未在可取消状态的请求，例如，状态为 或  `Failed`的 unifiedRoleEligibilityScheduleRequest `Provisioned` 对象将返回错误`400 Bad Request`代码。
 
 ## <a name="examples"></a>示例
 
@@ -77,8 +77,12 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySc
 [!INCLUDE [sample-code](../includes/snippets/java/unifiedroleeligibilityschedulerequest-cancel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unifiedroleeligibilityschedulerequest-cancel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unifiedroleeligibilityschedulerequest-cancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

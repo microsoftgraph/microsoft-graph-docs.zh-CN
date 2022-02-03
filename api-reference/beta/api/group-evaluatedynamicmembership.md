@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2ca43d71c14cd8468b387444651d79d56f298bd4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f7f57e86a3b6a0ed2eb074de3a44109d30df4ae4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034355"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344049"
 ---
 # <a name="group-evaluatedynamicmembership"></a>group： evaluateDynamicMembership
 
@@ -67,12 +67,12 @@ POST /groups/evaluateDynamicMembership
 
 | 参数 | 类型 | 说明 |
 | :-------- | :--- | :---------- |
-| memberId | String collection | memberId 是要评估的用户或设备的对象 ID。 |
-| membershipRule | String collection | 用于成员评估的规则。 如果未提供此属性，则评估现有组的规则。 如果提供此属性，将评估用户或设备是否具有同一规则组中可能的成员身份。 有关详细信息，请参阅动态[成员资格规则中的组Azure Active Directory。](/azure/active-directory/users-groups-roles/groups-dynamic-membership)|
+| memberId | String 集合 | memberId 是要评估的用户或设备的对象 ID。 |
+| membershipRule | 字符串集合 | 用于成员评估的规则。 如果未提供此属性，则评估现有组的规则。 如果提供此属性，将评估用户或设备是否具有同一规则组中可能的成员身份。 有关详细信息，请参阅 [Dynamic membership rules for groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 响应代码和 [evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md) 对象。
+如果成功，此方法返回 响应 `200 OK` 代码和 [evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -113,8 +113,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-evaluatedynamicmembership-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -188,7 +192,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

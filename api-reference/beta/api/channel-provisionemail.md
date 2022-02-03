@@ -5,12 +5,12 @@ author: anandab-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 396465a3f293d523224538358c5bf73e6d65b928
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e0848b9e722191549bc52593cd0154929ed98eeb
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034697"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343150"
 ---
 # <a name="channel-provisionemail"></a>channel： provisionEmail
 
@@ -18,9 +18,9 @@ ms.locfileid: "61034697"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为频道设置 [电子邮件地址](../resources/channel.md)。
+设置频道 [的电子邮件地址](../resources/channel.md)。
 
-Microsoft Teams默认情况下，系统不会自动为 **频道设置电子邮件地址**。 若要Teams设置电子邮件地址，可以调用 **provisionEmail，** 或者通过 Teams 用户界面，选择"获取电子邮件地址"，这将触发 Teams以生成电子邮件地址（如果尚未设置电子邮件地址）。
+Microsoft Teams默认情况下，系统不会自动为 **频道设置电子邮件地址**。 若要Teams设置电子邮件地址，可以调用 **provisionEmail**，或者通过 Teams 用户界面选择"获取电子邮件地址"，这将触发 Teams 以生成电子邮件地址（如果尚未设置电子邮件地址）。
 
 若要删除频道的电子邮件地址 **，** 请使用 [removeEmail](channel-removeemail.md) 方法。
 
@@ -82,8 +82,12 @@ POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 [!INCLUDE [sample-code](../includes/snippets/java/channel-provisionemail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/channel-provisionemail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/channel-provisionemail-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

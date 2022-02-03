@@ -1,16 +1,16 @@
 ---
 title: user： activateServicePlan
-description: 为给定用户和给定用户 `servicePlanId` `skuId` 激活服务计划。
+description: 为给定用户和给定用户`servicePlanId``skuId`激活服务计划。
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f96efda2deee2b81af127ec494ab7f7ef51587e2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 686a8f1a88781cff9c7469606d5e5cc61a86a4bd
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031456"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341926"
 ---
 # <a name="user-activateserviceplan"></a>user： activateServicePlan
 
@@ -18,9 +18,9 @@ ms.locfileid: "61031456"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为给定用户和给定用户 `servicePlanId` `skuId` 激活服务计划。
+为给定用户和给定用户`servicePlanId``skuId`激活服务计划。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -98,8 +98,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-activateserviceplan-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-activateserviceplan-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-activateserviceplan-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

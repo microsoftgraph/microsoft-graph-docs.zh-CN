@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2b586e5925f34bd74f7dc2351a6b91fa102767fd
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 44079aafaf994546530d5c9474a774a181b2b6b0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226064"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340552"
 ---
 # <a name="accessreviewhistoryinstance-generatedownloaduri"></a>accessReviewHistoryInstance： generateDownloadUri
 
@@ -18,7 +18,7 @@ ms.locfileid: "62226064"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为 [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) 对象生成状态 **为** 的 `done` URI。 每个 URI 可用于检索实例的审阅历史记录数据。 每个 URI 的有效期为 24 小时，并且可以通过从 [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md)对象获取 **downloadUri** 属性来检索。
+为 [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) 对象生成状态 **为** `done`的 URI。 每个 URI 可用于检索实例的审阅历史记录数据。 每个 URI 的有效期为 24 小时，并且可以通过从 [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) 对象获取 **downloadUri** 属性来检索。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "62226064"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|AccessReview.ReadWrite.All|
 
-若要生成链接，登录用户必须是关联的审阅历史记录定义的创建者，或分配有全局管理员或全局读者[目录角色](/azure/active-directory/roles/permissions-reference)。 
+若要生成链接，登录用户必须是关联的审阅历史记录定义的创建者，或者分配有全局管理员或全局读者[目录角色](/azure/active-directory/roles/permissions-reference)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,12 +55,14 @@ POST /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDe
 
 ## <a name="response"></a>响应
 
-如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [accessReviewHistoryInstances。](../resources/accessReviewHistoryInstance.md)
+如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) 。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accessreviewhistoryinstance_generatedownloaduri"
@@ -70,6 +72,28 @@ POST /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDe
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/b2cb022f-b7e1-40f3-9854-c65a40861c38/instances/b2cb022f-b7e1-40f3-9854-c65a40861c38/generateDownloadUri
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewhistoryinstance-generatedownloaduri-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewhistoryinstance-generatedownloaduri-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accessreviewhistoryinstance-generatedownloaduri-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accessreviewhistoryinstance-generatedownloaduri-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewhistoryinstance-generatedownloaduri-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

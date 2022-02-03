@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6672e605416dfa30704b475f65ab0f74ecbf41a6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b66238f6ed00466d6ca535088810bf4b62c021b3
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112605"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343024"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -45,7 +45,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ```
 
 ## <a name="function-parameters"></a>函数参数
-| 参数      | 类型    | Description|
+| 参数      | 类型    | 说明|
 |:---------------|:--------|:----------|
 | TimeZoneStandard  | String  | 时区格式。 支持的值：`Windows` 和 `Iana`。 可选。 |
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-supportedtimezones-default-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-supportedtimezones-default-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

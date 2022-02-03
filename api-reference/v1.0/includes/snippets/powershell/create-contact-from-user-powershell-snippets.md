@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fcff6f068f1b81ab66c4f8ac27e826a0bba8c0a8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 299d896abf1e29a3fc4b3e8bf31361f6b4fb1de4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62087513"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351334"
 ---
 ```powershell
 
@@ -25,6 +25,7 @@ $params = @{
     )
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserContact -UserId $userId -BodyParameter $params
 
 ```

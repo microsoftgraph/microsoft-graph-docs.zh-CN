@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 29828e7b792cb7ae050ec1a8169c5d7177561e3f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8b0dea178658a5f217cc1c50ce40bf740b2a8617
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021495"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344895"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest： my
 
@@ -48,7 +48,7 @@ POST /privilegedRoleAssignmentRequests/my
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `200 OK` 响应正文中返回 [响应代码和 privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 集合对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 集合对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -78,8 +78,12 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 [!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignmentrequest-my-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedroleassignmentrequest-my-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedroleassignmentrequest-my-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

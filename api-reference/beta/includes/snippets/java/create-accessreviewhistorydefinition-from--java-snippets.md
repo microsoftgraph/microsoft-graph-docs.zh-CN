@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 92d6582f4465002a3198850cb985ae8010507776d4d2c0c751a2a14c8414e65a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2803a60eae0b2c3dee2ece2286e7d73674f49447
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56902693"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349941"
 ---
 ```java
 
@@ -20,8 +20,20 @@ decisionsList.add(AccessReviewHistoryDecisionFilter.DONT_KNOW);
 decisionsList.add(AccessReviewHistoryDecisionFilter.NOT_REVIEWED);
 decisionsList.add(AccessReviewHistoryDecisionFilter.NOT_NOTIFIED);
 accessReviewHistoryDefinition.decisions = decisionsList;
-accessReviewHistoryDefinition.reviewHistoryPeriodStartDateTime = OffsetDateTimeSerializer.deserialize("2021-01-01T00:00:00Z");
-accessReviewHistoryDefinition.reviewHistoryPeriodEndDateTime = OffsetDateTimeSerializer.deserialize("2021-04-05T00:00:00Z");
+AccessReviewHistoryScheduleSettings scheduleSettings = new AccessReviewHistoryScheduleSettings();
+scheduleSettings.reportRange = "P1M";
+PatternedRecurrence recurrence = new PatternedRecurrence();
+RecurrencePattern pattern = new RecurrencePattern();
+pattern.type = RecurrencePatternType.DAILY;
+pattern.interval = 1;
+recurrence.pattern = pattern;
+RecurrenceRange range = new RecurrenceRange();
+range.type = RecurrenceRangeType.NO_END;
+range.startDate = new DateOnly(1900,1,1);
+range.count = 0;
+recurrence.range = range;
+scheduleSettings.recurrence = recurrence;
+accessReviewHistoryDefinition.scheduleSettings = scheduleSettings;
 LinkedList<AccessReviewScope> scopesList = new LinkedList<AccessReviewScope>();
 AccessReviewQueryScope scopes = new AccessReviewQueryScope();
 scopes.queryType = "MicrosoftGraph";

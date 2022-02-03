@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a2ffa675291fca51b6b70aad7275fcd4733aa854
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ddb124ffc02787587c1c22023db9a9bd519adc04
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984995"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345832"
 ---
 # <a name="user-reprocesslicenseassignment"></a>user： reprocessLicenseAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "60984995"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-重新处理用户的所有基于组的许可证分配。 若要了解有关基于组的许可，请参阅什么是基于组的许可[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) 另请参阅[确定并解决](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)组中组的许可证分配Azure Active Directory更多详细信息。
+重新处理用户的所有基于组的许可证分配。 若要详细了解基于组的许可，请参阅什么是基于组的许可[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) 另请参阅[确定并解决组中组的](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)许可证分配Azure Active Directory更多详细信息。
 
 
 ## <a name="permissions"></a>权限
@@ -46,7 +46,7 @@ POST /users/{id}/reprocessLicenseAssignment
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回 响应[](../resources/user.md)代码和更新的用户对象。
+如果成功，此方法在响应`200 OK`正文中返回 响应代码[](../resources/user.md)和更新的用户对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何重新处理用户的许可证分配。
@@ -77,8 +77,12 @@ POST https://graph.microsoft.com/beta/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 [!INCLUDE [sample-code](../includes/snippets/java/user-reprocesslicenseassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-reprocesslicenseassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-reprocesslicenseassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

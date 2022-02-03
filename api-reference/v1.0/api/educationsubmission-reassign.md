@@ -5,12 +5,12 @@ author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1e6374ca5136711b4d7a5adf3b7b5d824dc77a1e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b37cf6cc3998723b4c0d39c9e0dcec7da24ded2f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111186"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344285"
 ---
 # <a name="educationsubmission-reassign"></a>educationSubmission：重新分配
 
@@ -20,9 +20,9 @@ ms.locfileid: "62111186"
 
 只有教师才能执行此操作。 
 
-调用此方法时包含 标头;否则，重新分配的提交 `Prefer: include-unknown-enum-members` 将被视为返回的提交。 这意味着状态将映射到状态 `reassigned` `returned` **，reassignedDateTime** 和 **reassignedBy** 属性将分别映射到 **returnedDateTime** 和 **returnedBy。**
+`Prefer: include-unknown-enum-members`调用此方法时包含 标头;否则，重新分配的提交将被视为返回的提交。 这意味着状态将`reassigned``returned`映射到状态，**reassignedDateTime** 和 **reassignedBy** 属性将分别映射到 **returnedDateTime** 和 **returnedBy**。
 
-如果提供了 `Prefer: include-unknown-enum-members` 标头，则重新分配的提交将保留 `reassigned` 状态。 有关详细信息，请参阅示例部分。
+如果提供了标头 `Prefer: include-unknown-enum-members` ，则重新分配的提交将保留状态 `reassigned` 。 有关详细信息，请参阅示例部分。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +48,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-request-without-optional-prefer-header"></a>示例 1：没有可选首选标头的请求
@@ -87,13 +87,17 @@ POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-reassign-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-reassign-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
 
 
 #### <a name="response"></a>响应
-下面是请求标头中未提供且之前未返回提交时 `Prefer: include-unknown-enum-members` 的响应示例。
+下面是请求标头 `Prefer: include-unknown-enum-members` 中未提供且之前未返回提交时的响应示例。
 
 <!-- {
   "blockType": "response",
@@ -189,13 +193,17 @@ Prefer: include-unknown-enum-members
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-prefer-reassign-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-prefer-reassign-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
 
 
 #### <a name="response"></a>响应
-下面是请求标头中提供且之前未返回提交时 `Prefer: include-unknown-enum-members` 的响应示例。
+下面是请求标头中提供 `Prefer: include-unknown-enum-members` 且之前未返回提交时的响应示例。
 
 <!-- {
   "blockType": "response",

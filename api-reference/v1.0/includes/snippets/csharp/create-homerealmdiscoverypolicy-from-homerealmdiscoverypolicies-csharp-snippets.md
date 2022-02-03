@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d9774700c0d69ceb6d9cdc5d3ab801719b141c1194898cac166f5a60d8706cfd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d18c6294df135a2d677ca81da680da923b58ff1
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57278532"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352142"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
 {
     Definition = new List<String>()
     {
-        "definition-value"
+        "{\"HomeRealmDiscoveryPolicy\":\r\n     {\"AccelerateToFederatedDomain\":true,\r\n      \"PreferredDomain\":\"federated.example.edu\",\r\n      \"AlternateIdLogin\":{\"Enabled\":true}}}"
     },
     DisplayName = "displayName-value",
     IsOrganizationDefault = true

@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b158fcfee76d583bd2b44baa1216badf4494f8a9
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 14491683e302c89b41d5b01b3ea627e41999e0c1
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791915"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340698"
 ---
 # <a name="accesspackage-getapplicablepolicyrequirements"></a>accessPackage： getApplicablePolicyRequirements
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD](../resources/entitlementmanagement-overview.md)中，此操作检索当前登录用户可以用于创建[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)的[accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md)对象列表。  每个要求对象对应于允许当前登录用户请求分配的访问包分配策略。
+在[Azure AD](../resources/entitlementmanagement-overview.md)管理中，此操作检索当前登录用户可以用于创建 [accessPackageAssignmentRequest 的 accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) 对象[列表](../resources/accesspackageassignmentrequest.md)。  每个要求对象对应于允许当前登录用户请求分配的访问包分配策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/getApplicable
 如果你想要检索访问包要求列表，请不要提供此方法的请求正文，如示例 1 所示。 如果要获取用户作用域的策略要求（如示例 2 所示，必须提供请求正文）。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) 集合，对于用户是 **allowedRequestor** 的每个策略，返回一个对象。 如果存在没有要求的策略 **，accessPackageAssignmentRequestRequirements** 将具有 `false` 和 `null` 值。 如果没有用户为 **allowedRequestor** 的策略，将改为返回空集合。
+如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和 [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) 集合，对于用户是 **allowedRequestor** 的每个策略，返回一个对象。 如果存在没有要求的策略， **accessPackageAssignmentRequestRequirements** 将具有 `false` 和 `null` 值。 如果没有用户为 **allowedRequestor** 的策略，将改为返回空集合。
 
 ## <a name="examples"></a>示例
 
@@ -86,6 +86,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackage-getapplicablepolicyrequirements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackage-getapplicablepolicyrequirements-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

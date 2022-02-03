@@ -1,16 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5dd342d137656279e30abd072e051f9552f8877c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 590ee4f031ffaa507238eb59d3c4982ff37a3ddd
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134866"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62350999"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.PersonalContacts
 
+# A UPN can also be used as -UserId.
 Get-MgUserContact -UserId $userId -ContactId $contactId
 
 ```

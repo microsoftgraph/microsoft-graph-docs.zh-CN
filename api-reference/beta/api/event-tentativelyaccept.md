@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 49035bad309c5e232577a610b0a83dff0049cbc8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e4c815b6e8780096ae4990607a02074e4bda5e79
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034459"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345584"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -20,7 +20,7 @@ ms.locfileid: "61034459"
 
 暂时接受用户 [日历中的](../resources/event.md) 指定 [事件](../resources/calendar.md)。
 
-如果事件允许针对新时间的建议，则当对事件做出暂定响应时，被邀请者可以选择通过包含 **proposedNewTime** 参数来建议备选时间。 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
+如果事件允许针对新时间的建议，则当对事件做出暂定响应时，被邀请者可以选择通过包含 **proposedNewTime 参数来建议备选** 时间。 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
 |sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|被邀请者为开始和结束会议请求建议的备用日期/时间。 仅对允许新时间建议的事件有效。 设置此参数需要将 **sendResponse 设置为** `true` 。 可选。|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|被邀请者为开始和结束会议请求建议的备用日期/时间。 仅对允许新时间建议的事件有效。 设置此参数需要将 **sendResponse 设置为** `true`。 可选。|
 
 ## <a name="response"></a>响应
 
@@ -67,8 +67,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 如果发生以下一个或两个情况，此操作将返回 HTTP 400：
 
-- **包含 proposedNewTime** 参数，但 **事件的 allowNewTimeProposals** 属性 **为** `false` 。 
-- 包含 **proposedNewTime** 参数，但 **sendResponse** 参数设置为 `false` 。
+- **包含 proposedNewTime** 参数，但 **事件的 allowNewTimeProposals** 属性 **为** `false`。 
+- 包含 **proposedNewTime** 参数，但 **sendResponse** 参数设置为 `false`。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -115,8 +115,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/event-tentativelyaccept-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/event-tentativelyaccept-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/event-tentativelyaccept-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
