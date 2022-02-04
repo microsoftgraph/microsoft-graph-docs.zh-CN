@@ -5,13 +5,8 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 034214b59f3279534df41b26454e7be27311247a
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184078"
 ---
+
 # <a name="list-customsecurityattributedefinitions"></a>列出 customSecurityAttributeDefinitions
 命名空间：microsoft.graph
 
@@ -24,9 +19,9 @@ ms.locfileid: "62184078"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CustomSecAttributeDefinition.ReadWrite.All|
+|委派（工作或学校帐户）|CustomSecAttributeDefinition.Read.All、CustomSecAttributeDefinition.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CustomSecAttributeDefinition.ReadWrite.All|
+|应用程序|CustomSecAttributeDefinition.Read.All、CustomSecAttributeDefinition.ReadWrite.All|
 
 还必须为登录用户分配以下目录角色之 [一](/azure/active-directory/roles/permissions-reference)：
 
@@ -47,9 +42,9 @@ GET /directory/customSecurityAttributeDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 OData () 、、 和 ， `$select` `$top` `$expand` `$filter` `eq` 以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持使用 `$select`OData `$top``$expand``$filter` `eq` () 、、 和 值来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-默认情况下 `allowedValues` 不会返回或扩展导航属性，必须在查询中 `$expand` 指定该属性。 例如，`/directory/customSecurityAttributeDefinitions?$expand=allowedValues`。
+默认情况下 `allowedValues` 不会返回或扩展导航属性，必须在查询中指定 `$expand` 该属性。 例如，`/directory/customSecurityAttributeDefinitions?$expand=allowedValues`。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -61,7 +56,7 @@ GET /directory/customSecurityAttributeDefinitions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -244,7 +239,7 @@ Content-Type: application/json
 
 ### <a name="example-3-filter-custom-security-attributes-based-on-attribute-set"></a>示例 3：根据属性集筛选自定义安全属性
 
-以下示例检索属性集内处于活动状态且类型为 String 的自定义 `Engineering` 安全属性定义。
+以下示例检索属性集内处于活动状态 `Engineering` 且类型为 String 的自定义安全属性定义。
 
 #### <a name="request"></a>请求
 

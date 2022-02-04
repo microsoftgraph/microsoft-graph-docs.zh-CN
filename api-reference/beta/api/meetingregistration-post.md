@@ -5,13 +5,8 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: edabeb0cee6148d55b1cf52052ababda367d9064
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561324"
 ---
+
 # <a name="create-meetingregistration"></a>创建 meetingRegistration
 
 命名空间：microsoft.graph
@@ -20,7 +15,7 @@ ms.locfileid: "61561324"
 
 代表组织者创建 [并启用 onlineMeeting](../resources/onlinemeeting.md) 注册。 联机会议只能启用一个注册。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +43,7 @@ POST /me/onlineMeetings/{id}/registration
 在请求正文中，提供 [meetingRegistration](../resources/meetingregistration.md) 对象的 JSON 表示形式。
 
 > [!IMPORTANT]
-> 必须提供 **@odata.type** 属性以指定注册类型。 有关详细信息，[请参阅以下示例。](#example)
+> 必须提供 **@odata.type** 属性以指定注册类型。 有关详细信息，请参阅 [以下示例](#example)。
 
 ## <a name="response"></a>响应
 
@@ -119,7 +114,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-registration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-registration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

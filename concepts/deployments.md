@@ -3,13 +3,8 @@ title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
-ms.openlocfilehash: 28e8e422d121651787dca2f4adf0a153baed072a
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072528"
 ---
+
 # <a name="national-cloud-deployments"></a>区域云部署
 
 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是 Microsoft 企业云服务的物理和逻辑网络隔离实例，它们限制在特定国家/地区的地理边界内，由本地人员运营。
@@ -20,9 +15,9 @@ ms.locfileid: "62072528"
 * Microsoft 云德国
 * Azure 由世纪互联运营的 Microsoft 365中国
 
-每个国家/地云环境都是唯一的，并且不同于 Microsoft 全球环境。 为国家云环境开发应用程序时，了解其中一些关键差异非常重要;例如，注册应用程序、获取令牌和调用 Microsoft Graph API 可能有所不同。
+每个国家/地云环境都是唯一的，并且不同于 Microsoft 全球环境。 为国家云环境开发应用程序时，了解其中一些关键差异非常重要;例如，注册应用程序、获取令牌和调用 Microsoft Graph API 可能会有所不同。
 
-本文提供有关不同 Microsoft Graph国家云部署的信息，以及每个部署中可供开发人员使用的功能。
+本文提供有关不同 Microsoft Graph国家云部署以及每个部署中开发人员可用的功能的信息。
 
 > **注意**[Microsoft Graph 数据连接](./data-connect-concept-overview.md)不支持任何国家云部署。
 
@@ -30,7 +25,7 @@ ms.locfileid: "62072528"
 
 ## <a name="app-registration-and-token-service-root-endpoints"></a>应用注册和令牌服务根终结点
 
-在调用 Microsoft Graph API 之前，应首先注册应用程序并获取令牌。 下表列出了用于注册应用程序并获取每个区域云Azure Active Directory (Azure AD) 终结点的基本 URL。
+在调用 Microsoft Graph API 之前，应首先注册应用程序并获取令牌。 下表列出了用于注册应用程序并获取每个区域云的令牌Azure Active Directory (Azure AD) 终结点的基本 URL。
 
 | 国家云 | Azure AD门户终结点 | Azure AD 终结点 |
 | -------------- | ------------------------ | ----------------- |
@@ -39,11 +34,11 @@ ms.locfileid: "62072528"
 | Azure AD 德国 | https://portal.microsoftazure.de | `https://login.microsoftonline.de` |
 | 由世纪互联运营的 Azure AD 中国 | https://portal.azure.cn | `https://login.chinacloudapi.cn` |
 
-若要了解有关访问Azure AD和 Microsoft Graph，请参阅身份验证[基础知识](./auth/auth-concepts.md)。 有关Azure AD方案，请参阅Azure AD[基本身份验证。](/azure/active-directory/develop/authentication-scenarios)
+若要了解有关访问Azure AD和 Microsoft Graph，请参阅身份验证[基础知识](./auth/auth-concepts.md)。 有关Azure AD方案，请参阅Azure AD[身份验证基础知识](/azure/active-directory/develop/authentication-scenarios)。
 
 ## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Microsoft Graph 和 Graph Explorer 服务根终结点
 
-下表显示了每个区域云的 Microsoft Graph 和 Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer)的服务根终结点。
+下表显示了每个区域云的 Microsoft Graph 和 Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer) 的服务根终结点。
 
 | 区域云 | Microsoft Graph | Graph 浏览器 |
 | -------------- | --------------- | -------------- |
@@ -56,20 +51,16 @@ ms.locfileid: "62072528"
 > [!IMPORTANT]
 > 对于美国政府的应用：
 >
->
-> * 如果你在安全环境中工作，Microsoft 365 GCC全球终结点： `https://graph.microsoft.com` 和 `https://portal.azure.com` 。
-> * 如果你在高Microsoft 365 GCC工作，请使用： `https://portal.azure.us` 和 `https://graph.microsoft.us` 。
-> * 如果你在 DoD 环境中Microsoft 365，请使用 `https://portal.azure.us` `https://dod-graph.microsoft.us` 和 。
->
->
-> 使用全球终结点访问美国政府数据将将于近期内禁用。
+> * 如果你正在一个Microsoft 365 GCC环境中工作，请继续使用全球终结点： 和 `https://graph.microsoft.com` `https://portal.azure.com`。
+> * 如果你在高Microsoft 365 GCC工作，请使用 和 `https://portal.azure.us` `https://graph.microsoft.us`。
+> * 如果你在 DoD 环境中Microsoft 365，请使用 和 `https://portal.azure.us` `https://dod-graph.microsoft.us`。
 
 > [!NOTE]
-> 应用仅能通过国家云终结点访问组织数据。 这意味着应用只能访问特定区域云中注册的租户数据。 尝试通过 Microsoft 帐户访问与 Microsoft 个人帐户关联的消费者数据Graph应该使用全局服务 `https://graph.microsoft.com` 。 为国家云部署获取的访问令牌不可与为全局服务或其他任何国家云获取的访问令牌互换。
+> 应用仅能通过国家云终结点访问组织数据。 这意味着应用只能访问特定区域云中注册的租户数据。 尝试通过 Microsoft 帐户访问与 Microsoft 个人帐户关联的消费者数据Graph应该使用全局服务`https://graph.microsoft.com`。 为国家云部署获取的访问令牌不可与为全局服务或其他任何国家云获取的访问令牌互换。
 
 ## <a name="supported-features"></a>支持的功能
 
-以下 Microsoft Graph功能通常在终结点上跨所有区域云部署提供 `/v1.0` ，除非已指出。
+以下 Microsoft Graph`/v1.0`功能通常在终结点上跨所有区域云部署提供，除非已指出。
 
 | Microsoft Graph 功能 | Microsoft Cloud for US Government | 由世纪互联运营的 Microsoft Cloud 中国 | Microsoft 云德国 |
 | ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
@@ -96,7 +87,7 @@ ms.locfileid: "62072528"
 | Teams | ✔ | ✔ | ✔ |
 | 用户 | ✔ | ✔ | ✔ |
 
-以下 Microsoft Graph 功能在 Microsoft 云中国终结点)  (和 Microsoft 云德国 (v1.0 终结点上的预览版 (中提供，这些功能仅在 `/beta` Microsoft Cloud for US Government) ：
+以下 Microsoft Graph 功能在 Microsoft 云中国终结点)  (`/beta` 和 Microsoft 云德国 (v1.0 终结点上的预览版 (中提供，这些功能仅在 Microsoft Cloud for US Government) ：
 
 * 组织联系人
 * 应用程序
@@ -120,5 +111,5 @@ ms.locfileid: "62072528"
 探索国家云部署中的 Azure 和 Microsoft 365身份验证和操作示例：
 
 * [通过美国政府 Microsoft Graph Azure 合作](https://github.com/SteveWinward/Azure-Samples/blob/master/AAD/SampleAadToken_AzureForGovernment.ps1)
-* [连接 Microsoft Graph PowerShell (GCC、GCC High GCC DoD) 美国政府 O365 Graph环境](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
+* [连接 Microsoft) PowerShell (GCC、GCC High 和 GCC DoD) O365 Graph环境](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
 

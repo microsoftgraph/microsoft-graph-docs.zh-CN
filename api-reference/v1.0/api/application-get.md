@@ -5,13 +5,8 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9b195b8e0bd12642300669cf8ddbdcdc22f5b4f5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136519"
 ---
+
 # <a name="get-application"></a>获取应用程序
 
 命名空间：microsoft.graph
@@ -126,6 +121,11 @@ Content-type: application/json
     "addIns": [],
     "publisherDomain": "contoso.onmicrosoft.com",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+    },
     "tags": [],
     "tokenEncryptionKeyId": null,
     "api": {

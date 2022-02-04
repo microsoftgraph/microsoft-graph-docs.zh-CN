@@ -1,17 +1,12 @@
 ---
 title: resultTemplate 资源类型
 description: resultTemplateIds 和关联值的字典，其中包括结果模板的名称和 JSON 架构。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: cristianv-ms
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 402b60efc278e72102d9bba4eb89be2dda38916b
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211232"
 ---
+
 # <a name="resulttemplate-resource-type"></a>resultTemplate 资源类型
 
 命名空间：microsoft.graph
@@ -24,7 +19,7 @@ ms.locfileid: "53211232"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|Key|String|结果模板的 ID。 它必须映射到 [searchHit](searchhit.md)中的 **resultTemplateId。**|
+|Key|String|结果模板的 ID。 它必须映射到 [searchHit](searchhit.md) 中的 **resultTemplateId**。|
 |displayName|String|结果模板的名称。|
 |body|Json|结果模板的 JSON 架构。|
 
@@ -44,10 +39,10 @@ ms.locfileid: "53211232"
 
 ```json
 {
-  "resultTemplateId": {
-                    "displayName": "String",
-                    "body": "Json schema"
-                }
+   "resultTemplateId": {
+      "displayName": "String",
+      "body": "Json schema"
+   }
 }
 ```
 

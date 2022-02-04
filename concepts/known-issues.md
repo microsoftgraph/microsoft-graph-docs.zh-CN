@@ -3,13 +3,8 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 4c183efa64f8df151df8ff070dd0df1555b101b5
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341775"
 ---
+
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
 本文介绍了 Microsoft Graph 已知问题。 
@@ -337,7 +332,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 * 根据批处理请求的 API 部分，基础服务会施加自己的限制，从而影响使用 Microsoft Graph 访问它们的应用程序。
 * 批处理中的请求将根据限制单独进行评估，如果任何请求超过限制，则请求会失败，状态为 429。
 
-有关更多详细信息，请访问 [限制和批处理](/graph/concepts/throttling.md#throttling-and-batching)。
+有关更多详细信息，请访问 [限制和批处理](/graph/throttling#throttling-and-batching)。
 
 ### <a name="request-dependencies-are-limited"></a>请求依赖项受限
 

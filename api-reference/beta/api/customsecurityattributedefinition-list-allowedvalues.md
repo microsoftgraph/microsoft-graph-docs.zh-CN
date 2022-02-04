@@ -5,13 +5,8 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9317e824ce91efe2f5afe7158f595e75b1f50893
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184015"
 ---
+
 # <a name="list-allowedvalues"></a>列出 allowedValues
 命名空间：microsoft.graph
 
@@ -24,9 +19,9 @@ ms.locfileid: "62184015"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CustomSecAttributeDefinition.ReadWrite.All|
+|委派（工作或学校帐户）|CustomSecAttributeDefinition.Read.All、CustomSecAttributeDefinition.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CustomSecAttributeDefinition.ReadWrite.All|
+|应用程序|CustomSecAttributeDefinition.Read.All、CustomSecAttributeDefinition.ReadWrite.All|
 
 还必须为登录用户分配以下目录角色之 [一](/azure/active-directory/roles/permissions-reference)：
 
@@ -49,7 +44,7 @@ GET /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefini
 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -61,7 +56,7 @@ GET /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefini
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [allowedValue](../resources/allowedvalue.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [allowedValue](../resources/allowedvalue.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

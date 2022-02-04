@@ -5,13 +5,8 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ba59e5f931a19973c51fa587f88205f3537a17ec
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62183994"
 ---
+
 # <a name="get-attributeset"></a>获取 attributeSet
 命名空间：microsoft.graph
 
@@ -24,9 +19,9 @@ ms.locfileid: "62183994"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CustomSecAttributeDefinition.ReadWrite.All|
+|委派（工作或学校帐户）|CustomSecAttributeDefinition.Read.All、CustomSecAttributeDefinition.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CustomSecAttributeDefinition.ReadWrite.All|
+|应用程序|CustomSecAttributeDefinition.Read.All、CustomSecAttributeDefinition.ReadWrite.All|
 
 还必须为登录用户分配以下目录角色之 [一](/azure/active-directory/roles/permissions-reference)：
 
@@ -48,7 +43,7 @@ GET /directory/attributeSets/{attributeSetId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -66,7 +61,7 @@ GET /directory/attributeSets/{attributeSetId}
 
 ### <a name="example-get-an-attribute-set"></a>示例：获取属性集
 
-以下示例获取名为 的单个属性集 `Engineering` 。
+以下示例获取名为 的单个属性集 `Engineering`。
 
 #### <a name="request"></a>请求
 
