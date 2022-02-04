@@ -4,13 +4,8 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: e7431245c63bb9c29ed32a2f07c55394198f1b60
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072122"
 ---
+
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
 限制可调节并发调用服务的数量，以防止资源的过度使用。Microsoft Graph 旨在用于处理大量的请求。如果出现过多请求，限制将有助于保持 Microsoft Graph 的最佳性能和服务的可靠性。
@@ -208,9 +203,9 @@ Retry-After: 2.128
 
 | 限制类型 | 资源单元配额 | 写入配额 |
 | ---------- | ----------- | -------------- |
-| 应用 + 租户对 | S：3500，M:5000，L:8000 每 10 秒钟 | 每 2 分钟 30 秒 3000 |
-| 应用程序 | 每 20 秒 150,000  | 每 5 分钟 70,000 |
-| 租户 | 不适用 | 每 5 分钟 18000 |
+| 应用 + 租户对 | S：每 10 秒 3,500 个请求 <br/> M：每 10 秒 5,000 个请求 <br/> L：每 10 秒 8,000 个请求 | 每 2 分钟 30 秒 3,000 个请求 |
+| 应用程序 | 每 20 秒 150,000 个请求  | 每 5 分钟 70,000 个请求|
+| 租户 | 不适用 | 每 5 分钟 18,000 个请求 |
 
 > **注意**：应用程序 + 租户对限制因租户请求中运行的用户数而异。 租户规模定义如下：S - 小于 50 个用户，M - 50 至 500 个用户之间，L - 500 个以上用户。
 
@@ -245,6 +240,10 @@ Retry-After: 2.128
 | PATCH | 表中未列出的任何身份路径 | 1 | 1 |
 | PUT | 表中未列出的任何身份路径 | 1 | 1 |
 | DELETE | 表中未列出的任何身份路径 | 1 | 1 |
+
+> [!IMPORTANT]
+> 
+> 请求路径上的 POST、PATCH 和 DELETE `applications` 操作的成本取决于 **signInAudience** 类型。 对于`AzureADMyOrg`或`AzureADMultipleOrgs`**signInAudience** 的应用，每 5 分钟 70,000 个请求；而对于 **signInAudience** 为`AzureADandPersonalMicrosoftAccount`或`PersonalMicrosoftAccount`的应用，成本为每分钟 60 个请求。
 
 影响请求费用的其他因素：
 

@@ -5,13 +5,8 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 561c90f89699638e4c9846074f9160b461ec9032
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014325"
 ---
+
 # <a name="user-resource-type"></a>用户资源类型
 
 命名空间：microsoft.graph
@@ -70,7 +65,7 @@ ms.locfileid: "62014325"
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
 | [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。 |
@@ -179,7 +174,7 @@ ms.locfileid: "62014325"
 | birthday | DateTimeOffset | 用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` <br><br>仅在 `$select` 上返回。 |
 | businessPhones | String collection | 用户的电话号码。仅可以为此属性设置一个数字。<br><br>对于从本地目录同步的用户而言为只读。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 | 城市 | String | 用户所在的城市。最大长度为 128 个字符。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
-| CompanyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。<br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
+| CompanyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 最大长度为 64 个字符。<br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | 设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>支持 `$filter` （`eq`、 `ne`、 `not`和 `in`）。|
 | country | String | 用户所在的国家/地区，例如 `US` 或 `UK`。最大长度为 128 个字符。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
 | createdDateTime | DateTimeOffset | 创建用户的日期和时间。 值无法修改，并在实体创建时自动填充。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 属性可为 Null。 Null 值表示无法为用户确定准确的创建时间。 只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `not` 、 `ge`、 `le`、 `in`）。 |
@@ -189,7 +184,7 @@ ms.locfileid: "62014325"
 | 部门 | String | 用户工作部门的名称。 最大长度为 64 个字符。<br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in` 和 `null` 值上的 `eq`）。 |
 | displayName | String | 用户通讯簿中显示的名称。通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。最大长度为 256 个字符。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）、`$orderBy` 和 `$search`。|
 | employeeHireDate | DateTimeOffset | 聘请用户或用户将开始工作（如是未来招聘）的日期和时间。 <br><br>支持 `$filter` （`eq`、 `ne`、 `not` 、 `ge`、 `le`、 `in`）。|
-| employeeId | String | 由组织分配给该用户的员工标识符。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
+| employeeId | String | 由组织分配给该用户的员工标识符。 最大长度为 16 个字符。<br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |表示与用户相关联的组织数据（例如，分部和 costCenter）。 <br><br>支持 `$filter` （`eq`、 `ne`、 `not` 、 `ge`、 `le`、 `in`）。|
 | employeeType | String | 捕获企业员工类型。 例如，`Employee`、`Contractor`、`Consultant` 或 `Vendor`。 支持 `$filter` （`eq`、 `ne`、 `not` 、 `ge`、 `le`、 `in`、 `startsWith`）。|
 | externalUserState | String | 对于使用[邀请 API](../api/invitation-post.md) 邀请到租户的外部用户，此属性表示受邀用户的邀请状态。 对于受邀用户，状态可以是 `PendingAcceptance` 或 `Accepted`，而对于所有其他用户，状态为 `null`。 <br><br>支持 `$filter` （`eq`、 `ne`、 `not` 、 `in`）。 |
@@ -232,7 +227,7 @@ ms.locfileid: "62014325"
 | preferredLanguage | String | 用户的首选语言。应遵循 ISO 639-1 代码，例如 `en-US`。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
 | preferredName | String | 用户的首选名称。 <br><br>仅在 `$select` 上返回。 |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) 集合 | 为用户设置的计划。只读。不可为 null。支持 `$filter`（`eq`、`not`、`ge`、`le`）。|
-| proxyAddresses | String collection | 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 对 **mail** 属性的更改还将更新此集合，以将值作为 SMTP 地址包含在内。 有关详细信息，请参阅 [mail 和 proxyAddresses 属性](#mail-and-proxyaddresses-properties)。 以 `SMTP`（大写）为前缀的代理地址是主代理地址，而前缀为 `smtp` 的代理地址则是辅助代理地址。 对于 Azure AD B2C 帐户，此属性有 10 个唯一地址的限制。 Microsoft Graph 中的只读；只能通过 [Microsoft 365 管理中心](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) 来更新此属性。 不可为 null。 <br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。 |
+| proxyAddresses | String collection | 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 对 **mail** 属性的更改还将更新此集合，以将值作为 SMTP 地址包含在内。 有关详细信息，请参阅 [mail 和 proxyAddresses 属性](#mail-and-proxyaddresses-properties)。 以 `SMTP`（大写）为前缀的代理地址是主代理地址，而前缀为 `smtp` 的代理地址则是辅助代理地址。 对于 Azure AD B2C 帐户，此属性有 10 个唯一地址的限制。 Microsoft Graph 中的只读；只能通过 [Microsoft 365 管理中心](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) 来更新此属性。 不可为 null。 <br><br>支持 `$filter` （`eq`、 `not`、 `ge`、 `le`、 `startsWith`）。 |
 | refreshTokensValidFromDateTime | DateTimeOffset | 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) 进行重置。|
 | responsibilities | String collection | 供用户枚举其职责的列表。 <br><br>仅在 `$select` 上返回。 |
 | schools | String collection | 供用户枚举其学习过的学校列表。 <br><br>仅在 `$select` 上返回。 |
