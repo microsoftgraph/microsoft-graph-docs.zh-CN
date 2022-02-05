@@ -5,13 +5,8 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4867551b43c25cff563f1e1945b4bef3e325214b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104077"
 ---
+
 # <a name="list-incompatiblegroups"></a>列出 incompatibleGroups
 
 命名空间：microsoft.graph
@@ -20,7 +15,7 @@ ms.locfileid: "62104077"
 
 检索在 accessPackage [上标记为](../resources/group.md) 不兼容的 [组对象的列表](../resources/accesspackage.md)。  
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,7 +30,7 @@ ms.locfileid: "62104077"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleGroups
+GET /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleGroups
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -54,7 +49,7 @@ GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleGro
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [group](../resources/group.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [group](../resources/group.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -88,7 +83,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/get-incompatiblegroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-incompatiblegroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

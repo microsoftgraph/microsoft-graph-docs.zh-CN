@@ -1,26 +1,21 @@
 ---
 title: 列出 incompatibleAccessPackages
 description: 检索其访问权限与特定访问包不兼容的 accesspackages 列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fc30ee9ae6a80b04820b363dea87f376e5db638b
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401064"
 ---
+
 # <a name="list-incompatibleaccesspackages"></a>列出 incompatibleAccessPackages
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [accessPackage](../resources/accesspackage.md) 对象的列表，这些对象已在 [accessPackage](../resources/accesspackage.md)上标记为不兼容。  
+检索 [accessPackage](../resources/accesspackage.md) 对象的列表，这些对象已在 [accessPackage](../resources/accesspackage.md) 上标记为不兼容。  
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,7 +30,7 @@ ms.locfileid: "53401064"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleAccessPackages
+GET /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAccessPackages
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -54,7 +49,7 @@ GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleAcc
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackage](../resources/accesspackage.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessPackage](../resources/accesspackage.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

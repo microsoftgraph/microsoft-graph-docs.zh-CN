@@ -5,12 +5,6 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9e98ef1781168a502d5db95de9c87680fb5fc40d
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242315"
 ---
 # <a name="update-accesspackagecatalog"></a>更新 accessPackageCatalog
 
@@ -54,7 +48,7 @@ PATCH /identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId
 |description|String|访问包目录的说明。|
 |catalogType|accessPackageCatalogType|目录是由用户创建还是由权利管理创建。 可能的值包括 `userManaged`、`serviceDefault`、`serviceManaged`、`unknownFutureValue`。|
 |state|accessPackageCatalogState|如果访问 `published` 包可用于管理，则具有 值。 可能的值包括 `unpublished`、`published`、`unknownFutureValue`。|
-|isExternallyVisible|布尔值|租户外部的用户是否可以请求此目录中的访问包。|
+|isExternallyVisible|布尔|租户外部的用户是否可以请求此目录中的访问包。|
 
 
 
@@ -73,7 +67,7 @@ PATCH /identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId}
 Content-Type: application/json
 
 {

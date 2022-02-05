@@ -5,20 +5,15 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c39385631f55cd2d491584ba6fb0baeb0833b1ac
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339511"
 ---
+
 # <a name="directoryobject-getmembergroups"></a>directoryObject： getMemberGroups
 
 命名空间：microsoft.graph
 
-返回指定的用户、组、服务[](../resources/user.md)[主体](../resources/serviceprincipal.md)、[](../resources/group.md)组织联系人、设备或[目录](../resources/directoryobject.md)对象是其中[](../resources/device.md)成员的所有组。 [](../resources/orgcontact.md) 此函数是可传递的。
+返回指定的用户、组、服务主体、组织联系人、设备或[](../resources/user.md)目录对象是其中一个成员的[](../resources/orgcontact.md)组的所有组 [](../resources/device.md)ID。 [](../resources/group.md)[](../resources/serviceprincipal.md)[](../resources/directoryobject.md) 此函数是可传递的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -177,7 +172,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmembergroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -245,7 +240,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmembergroups-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmembergroups-me-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

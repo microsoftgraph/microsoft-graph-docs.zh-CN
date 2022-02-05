@@ -5,13 +5,8 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5cb5cb06d50b001514b1c27f3eb68b0024b558cf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106332"
 ---
+
 # <a name="create-customsecurityattributedefinition"></a>创建 customSecurityAttributeDefinition
 命名空间：microsoft.graph
 
@@ -19,7 +14,7 @@ ms.locfileid: "62106332"
 
 创建新的 [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -49,24 +44,24 @@ POST /directory/customSecurityAttributeDefinitions
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) 对象的 JSON 表示形式。
 
-下表显示可在创建自定义 [SecurityAttributeDefinition 时配置的属性](../resources/customsecurityattributedefinition.md)。
+下表显示可在创建自定义 [SecurityAttributeDefinition时配置的属性](../resources/customsecurityattributedefinition.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |attributeSet|String|属性集的名称。 不区分大小写。 必需。|
 |description|String|自定义安全属性的说明。 可最多为 128 个字符，并且包含 Unicode 字符。 不能包含空格或特殊字符。 稍后可更改。 可选。|
 |isCollection|布尔|指示是否可以将多个值分配给自定义安全属性。 以后无法更改。 如果 `type` 设置为 Boolean， `isCollection` 则不能设置为 true。 必需。|
 |isSearchable|布尔|指示是否将为自定义安全属性值编制索引，以在分配了属性值的对象上搜索。 以后无法更改。 必需。|
 |name|String|自定义安全属性的名称。 在属性集内必须是唯一的。 可最多为 32 个字符，并且包含 Unicode 字符。 不能包含空格或特殊字符。 以后无法更改。 不区分大小写。 必需。|
-|状态|String|指定自定义安全属性是处于活动状态还是已停用。 可接受的值为 和 `Available` `Deprecated` 。 稍后可更改。 此为必需属性。|
-|type|String|自定义安全属性值的数据类型。 支持的类型包括 `Boolean` 、 `Integer` 和 `String` 。 以后无法更改。 必需。|
+|状态|String|指定自定义安全属性是处于活动状态还是已停用。 可接受的值为 和 `Available` `Deprecated`。 稍后可更改。 此为必需属性。|
+|type|String|自定义安全属性值的数据类型。 支持的类型包括 、 `Boolean``Integer`和 `String`。 以后无法更改。 必需。|
 |usePreDefinedValuesOnly|布尔|指示是否只能将预定义值分配给自定义安全属性。 如果设置为 false，则允许自由格式的值。 稍后可以从 true 更改为 false，但无法从 false 更改为 true。 如果 `type` 设置为 Boolean， `usePreDefinedValuesOnly` 则不能设置为 true。 必需。|
 
-`id`该属性是自动生成的，不能设置。
+该属性 `id` 是自动生成的，不能设置。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应 [代码和 customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -116,7 +111,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-customsecurityattributedefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -200,7 +195,7 @@ Content-length: 310
 [!INCLUDE [sample-code](../includes/snippets/java/create-customsecurityattributedefinition-v2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-v2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -210,6 +205,78 @@ Content-length: 310
 
 ---
 
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions/$entity",
+    "attributeSet": "Engineering",
+    "description": "Active projects for user",
+    "id": "Engineering_Project",
+    "isCollection": true,
+    "isSearchable": true,
+    "name": "Project",
+    "status": "Available",
+    "type": "String",
+    "usePreDefinedValuesOnly": true
+}
+```
+
+### <a name="example-3-add-a-custom-security-attribute-with-a-list-of-predefined-values"></a>示例 3：添加具有预定义值列表的自定义安全属性
+
+以下示例添加一个新的自定义安全属性定义，并将预定义值列表作为字符串集合。
+
++ 属性集：`Engineering`
++ 属性：`Project`
++ 属性数据类型：字符串集合
++ 预定义值：、`Alpine``Baker`、、`Cascade`
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "create_customsecurityattributedefinition_allowedvalues"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions
+Content-Type: application/json
+
+{
+    "attributeSet": "Engineering",
+    "description": "Active projects for user",
+    "isCollection": true,
+    "isSearchable": true,
+    "name": "Project",
+    "status": "Available",
+    "type": "String",
+    "usePreDefinedValuesOnly": true,
+    "allowedValues": [
+        {
+            "id": "Alpine",
+            "isActive": true
+        },
+        {
+            "id": "Baker",
+            "isActive": true
+        },
+        {
+            "id": "Cascade",
+            "isActive": true
+        }
+    ]
+}
+```
 
 #### <a name="response"></a>响应
 <!-- {

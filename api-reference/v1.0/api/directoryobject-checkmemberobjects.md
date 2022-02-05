@@ -5,20 +5,15 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2d4c707862931d44319eda8a7fc7037868775c0b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346708"
 ---
+
 # <a name="directoryobject-checkmemberobjects"></a>directoryObject：checkMemberObjects
 
 命名空间：microsoft.graph
 
-检查指定用户、组、服务主体、组织联系人、设备或目录对象的组、管理单元[](../resources/user.md)或目录[](../resources/group.md)角色列表中的[](../resources/serviceprincipal.md)[成员身份](../resources/directoryobject.md)。 [](../resources/orgcontact.md)[](../resources/device.md) 此方法是可传递的。
+检查组 ID、管理单元 ID 或目录角色 ID 列表中的成员身份，以检查指定的用户、组、服务主体、组织联系人、设备或目录对象的 ID。[](../resources/user.md)[](../resources/group.md)[](../resources/serviceprincipal.md)[](../resources/orgcontact.md)[](../resources/device.md)[](../resources/directoryobject.md) 此方法是可传递的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -173,7 +168,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-checkmemberobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

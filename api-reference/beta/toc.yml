@@ -6835,7 +6835,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows防篡改保护选项
+                  - name: Windows Defender 防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -11403,7 +11403,7 @@ items:
                   - name: 角色分配
                     href: resources/unifiedroleassignment.md
                     items:
-                      - name: 列表角色分配
+                      - name: 列出角色分配
                         href: api/rbacapplication-list-roleassignments.md
                       - name: 创建角色分配
                         href: api/rbacapplication-post-roleassignments.md
@@ -11934,6 +11934,15 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/fido2authenticationmethodconfiguration-delete.md
+                      - name: X509 证书
+                        href: resources/x509Certificateauthenticationmethodconfiguration.md
+                        items:
+                          - name: 获取
+                            href: api/x509certificateauthenticationmethodconfiguration-get.md
+                          - name: 更新
+                            href: api/x509certificateauthenticationmethodconfiguration-update.md
+                          - name: 删除
+                            href: api/x509certificateauthenticationmethodconfiguration-delete.md
                       - name: Microsoft Authenticator策略
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
@@ -13611,7 +13620,7 @@ items:
                         href: api/authenticationmethodsroot-list-userregistrationdetails.md
                       - name: 获取
                         href: api/userregistrationdetails-get.md
-          - name: Microsoft 365使用率报告
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -14101,7 +14110,7 @@ items:
                 href: api/site-search.md
               - name: 列举操作
                 href: api/site-list-operations.md
-              - name: 权限
+              - name: Permissions
                 items:
                   - name: 权限
                     href: resources/permission.md
@@ -15144,7 +15153,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: 添加附件
                     href: api/outlooktask-post-attachments.md
-              - name: 'Outlook任务文件夹 (已弃) '
+              - name: 'Outlook已 (任务文件夹) '
                 items:
                   - name: Outlook 任务文件夹
                     href: resources/outlooktaskfolder.md

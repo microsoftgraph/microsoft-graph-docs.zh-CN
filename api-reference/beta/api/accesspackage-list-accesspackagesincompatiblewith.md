@@ -5,13 +5,8 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 17445a90e134ff3aa8757d79e33155b8eea28277
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091273"
 ---
+
 # <a name="list-accesspackagesincompatiblewith"></a>列出 accessPackagesIncompatibleWith
 
 命名空间：microsoft.graph
@@ -20,7 +15,7 @@ ms.locfileid: "62091273"
 
 检索将 [指定 accessPackage](../resources/accesspackage.md) 标记为不兼容的 [accessPackage 对象](../resources/accesspackage.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,7 +30,7 @@ ms.locfileid: "62091273"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackage/{id}/accessPackagesIncompatibleWith
+GET /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackagesIncompatibleWith
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -54,7 +49,7 @@ GET /identityGovernance/entitlementManagement/accessPackage/{id}/accessPackagesI
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackage](../resources/accesspackage.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessPackage](../resources/accesspackage.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -88,7 +83,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackagesincompatiblewith-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accesspackagesincompatiblewith-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

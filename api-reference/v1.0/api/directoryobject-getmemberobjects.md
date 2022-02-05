@@ -5,22 +5,17 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5ad24b3ed6b98b2338c2605ed47021b7bd27ea6f
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339495"
 ---
+
 # <a name="get-member-objects"></a>获取成员对象
 
 命名空间：microsoft.graph
 
-返回用户、组、服务主体、组织联系人、设备或目录对象[](../resources/user.md)是其中成员的所有组、管理[](../resources/orgcontact.md)单元和目录[](../resources/device.md)角色。 [](../resources/group.md)[](../resources/serviceprincipal.md)[](../resources/directoryobject.md) 此函数是可传递的。
+返回用户、组、服务主体、组织联系人、设备或目录对象是其中一个成员[](../resources/user.md)的组、管理单元和目录[](../resources/orgcontact.md)角色的所有 ID[](../resources/device.md)。 [](../resources/group.md)[](../resources/serviceprincipal.md)[](../resources/directoryobject.md) 此函数是可传递的。
 
 **注意：** 只有用户和启用角色的组才能是目录角色的成员。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="memberships-for-a-directory-object"></a>目录对象的成员身份
@@ -161,7 +156,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmemberobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,13 +5,8 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7340f4d3bd13f42efc6f453e818416a5fd169ba8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096882"
 ---
+
 # <a name="update-customsecurityattributedefinition"></a>更新 customSecurityAttributeDefinition
 命名空间：microsoft.graph
 
@@ -19,7 +14,7 @@ ms.locfileid: "62096882"
 
 更新 [customSecurityAttributeDefinition 对象](../resources/customsecurityattributedefinition.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -45,6 +40,10 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
 |Content-Type|application/json. Required.|
+|OData-Version|4.01. 可选。|
+
+> [!NOTE]
+> 若要更新自定义安全属性的预定义值，必须添加 **OData-Version** 标头，并为其分配值 `4.01`。
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，*仅* 提供应更新的属性的值。未包含在请求正文中的现有属性将保留其以前的值或根据对其他属性值的更改重新计算。
@@ -54,7 +53,7 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 |属性|类型|说明|
 |:---|:---|:---|
 |说明|String|自定义安全属性的说明。 可最多为 128 个字符，并且包含 Unicode 字符。 可选。|
-|状态|String|指定自定义安全属性是处于活动状态还是已停用。 可接受的值为 和 `Available` `Deprecated` 。 可选。|
+|状态|String|指定自定义安全属性是处于活动状态还是已停用。 可接受的值为 和 `Available` `Deprecated`。 可选。|
 |usePreDefinedValuesOnly|布尔|指示是否只能将预定义值分配给自定义安全属性。 如果设置为 false，则允许自由格式的值。 可以从 true 更改为 false，但不能从 false 更改为 true。 如果 `type` 设置为 Boolean， `usePreDefinedValuesOnly` 则不能设置为 true。 可选。|
 
 
@@ -104,7 +103,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-customsecurityattributedefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-customsecurityattributedefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -126,7 +125,56 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-deactivate-a-custom-security-attribute"></a>示例 2：停用自定义安全属性
+### <a name="example-2-update-the-predefined-values-for-a-custom-security-attribute"></a>示例 2：更新自定义安全属性的预定义值
+
+以下示例更新现有预定义值的状态，并添加自定义安全属性定义的新预定义值。
+
++ 属性集：`Engineering`
++ 属性：`Project`
++ 属性数据类型：字符串集合
++ 更新预定义值： `Baker`
++ 新的预定义值： `Skagit`
+
+> [!NOTE]
+> 对于此请求，您必须添加 **OData-Version** 标头，并为其分配值 `4.01`。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "update_customsecurityattributedefinition_allowedvalues"
+}
+-->
+``` msgraph-interactive
+PATCH https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project
+Content-Type: application/json
+OData-Version: 4.01
+
+{
+    "allowedValues@delta": [
+        {
+            "id": "Baker",
+            "isActive": false
+        },
+        {
+            "id": "Skagit",
+            "isActive": true
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-3-deactivate-a-custom-security-attribute"></a>示例 3：停用自定义安全属性
 
 以下示例停用自定义安全属性定义。
 
@@ -165,7 +213,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-customsecurityattributedefinition-deactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-customsecurityattributedefinition-deactivate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,22 +5,17 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 39104bb29ba7b1f8a9e672775781a5303ab0fa81
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650739"
 ---
+
 # <a name="accesspackageassignmentrequest-reprocess"></a>accessPackageAssignmentRequest：重新处理
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD中](../resources/entitlementmanagement-overview.md)，调用方可以自动重试用户访问访问包的请求。 在 **requestState** 处于 或 状态的 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象 `DeliveryFailed` 上 `PartiallyDelivered` 执行。 
+在[Azure AD权限](../resources/entitlementmanagement-overview.md)管理中，调用方可以自动重试用户访问访问包的请求。 在 **requestState** `DeliveryFailed` 处于 或 状态的 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象上执行`PartiallyDelivered`。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,7 +32,7 @@ ms.locfileid: "61650739"
 }
 -->
 ```http
-POST /identityGovernance/entitlementManagement/accessPackageAssignmentsRequests/{id}/reprocess  
+POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}/reprocess
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -52,7 +47,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentsRequests/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回  `202 Accepted` 响应代码并重试请求。 如果[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象不存在，此方法将返回 ，如果 id 无效， `404 Not Found` 此方法将返回 `400 Bad Request` 响应代码。
+如果成功，此方法将返回 响应  `202 Accepted` 代码并重试请求。 如果 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象不存在，此方法将返回 `404 Not Found` ，如果 **id** 无效，此方法将返回 响应 `400 Bad Request` 代码。
 
 ## <a name="examples"></a>示例
 
@@ -62,7 +57,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentsRequests/
 
 <!-- {
   "blockType": "ignored",
-  "name": "reprocess_accesspackageassignmentsrequest"
+  "name": "reprocess_accesspackageassignmentrequest"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess
