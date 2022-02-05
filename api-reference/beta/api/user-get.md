@@ -5,13 +5,8 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ef4ff687c3f4ee73fafefd489743e1a721a020a3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119802"
 ---
+
 # <a name="get-a-user"></a>获取用户
 
 命名空间：microsoft.graph
@@ -41,8 +36,9 @@ ms.locfileid: "62119802"
 GET /users/{id | userPrincipalName}
 ```
 
->**注意：**
-> + 当 **userPrincipalName** 以 `$` 字符开头时，请删除 `/users` 后的斜杠 (/)，并将 **userPrincipalName** 放在圆括号和单引号中。例如 `/users('$AdeleVance@contoso.com')`。有关详细信息，请参阅“[已知问题](/graph/known-issues#users)”列表。
+> [!TIP]
+> 
+> + 当 **userPrincipalName** 以 `$` 字符开头时，GET 请求 URL 语法 `/users/$x@y.com` 失败，并出现 `400 Bad Request` 错误代码。 这是因为此请求 URL 违反了 OData URL 约定，该约定要求只有系统查询选项才能以 `$` 字符作为前缀。 删除 `/users` 后面的斜杠 (/)，并将 **userPrincipalName** 括在圆括号和单引号中，如下所示：`/users('$x@y.com')`。 例如，`/users('$AdeleVance@contoso.com')`。
 > + 要使用 **userPrincipalName** 查询 B2B 用户，请对哈希 (#) 字符进行编码。 也就是说，将 `#` 符号替换为 `%23`。 例如，`/users/AdeleVance_adatum.com%23EXT%23@contoso.com`。
 
 对于登录用户：
@@ -103,7 +99,7 @@ GET https://graph.microsoft.com/beta/me
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -170,7 +166,7 @@ GET https://graph.microsoft.com/beta/users/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-other-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-other-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -239,7 +235,7 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=disp
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -337,7 +333,7 @@ GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-customsecurityattributes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-customsecurityattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
