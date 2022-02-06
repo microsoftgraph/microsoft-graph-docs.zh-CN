@@ -5,13 +5,8 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4009a12b4bfbbf3635a8138fbd7391445c303505
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098927"
 ---
+
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
 命名空间：microsoft.graph
@@ -145,6 +140,11 @@ Content-type: application/json
         ],
         "signInAudience": "AzureADandPersonalMicrosoftAccount",
         "tags": [],
+        "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+        },
         "addIns": [],
         "api": {
             "resourceSpecificApplicationPermissions": []
@@ -209,7 +209,7 @@ Content-type: application/json
 + 属性数据类型：字符串
 + 属性值：`"Public"`
 
-若要获取自定义安全属性分配，必须为调用主体分配"属性分配读取器或属性分配管理员"角色，并且必须授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。
+若要获取自定义安全属性分配，必须为调用主体分配“属性分配读取者”或“属性分配管理员”角色，并且必须被授予 *CustomSecAttributeAssignment.Read.All* 或 *CustomSecAttributeAssignment.ReadWrite.All* 权限。
 
 #### <a name="request"></a>请求
 
