@@ -3,14 +3,9 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 ms.localizationpriority: high
-ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: d169638dd2565101bcf5e21fb8becdc88b9d25dd
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291462"
+ms.custom: 'graphiamtop20, scenarios:getting-started'
 ---
+
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
 若要使你的应用可访问 Microsoft Graph 中的数据，用户或管理员必须通过同意过程向其授予正确的权限。 本主题列出了与每个主要 Microsoft Graph API 集关联的权限。 它还提供有关如何使用权限的指导。
@@ -689,14 +684,18 @@ _CallRecord-PstnCalls.Read.All_ 权限授予应用程序访问 [PSTN（通话套
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _CustomSecAttributeAssignment.Read.All_ | 读取自定义安全属性分配 | 允许应用代表已登录用户读取租户中所有主体的自定义安全属性分配。 | 是 | 否 |
 | _CustomSecAttributeAssignment.ReadWrite.All_ | 读取和写入自定义安全属性分配 | 允许应用代表已登录的用户读取和写入租户中所有主体的自定义安全属性分配。 | 是 | 否 |
+| _CustomSecAttributeDefinition.Read.All_ | 读取自定义安全属性定义 | 允许应用代表已登录用户读取租户的自定义安全属性定义。 | 是 | 否 |
 | _CustomSecAttributeDefinition.ReadWrite.All_ | 读取和写入自定义安全属性定义 | 允许应用代表已登录用户读取和写入租户的自定义安全属性定义。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _CustomSecAttributeAssignment.Read.All_ | 读取自定义安全属性分配 | 允许应用在没有登录用户的情况下读取租户中所有主体的自定义安全属性分配。 | 是 |
 | _CustomSecAttributeAssignment.ReadWrite.All_ | 读取和写入自定义安全属性分配 | 允许应用代表已登录的用户读取和写入租户中所有主体的自定义安全属性分配。 | 是 |
+| _CustomSecAttributeDefinition.Read.All_ | 读取自定义安全属性定义 | 允许应用在没有登录用户的情况下读取租户的自定义安全属性定义。 | 是 |
 | _CustomSecAttributeDefinition.ReadWrite.All_ | 读取和写入自定义安全属性定义 | 允许应用在没有登录用户的情况下读取和写入租户的自定义安全属性定义。 | 是 |
 
 ---
@@ -1174,7 +1173,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 

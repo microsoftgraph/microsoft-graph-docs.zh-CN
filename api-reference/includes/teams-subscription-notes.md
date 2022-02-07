@@ -3,13 +3,8 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: e9b65c0ed6c82e94a38bbeb08b208fbe24d60176
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390807"
 ---
+
 <!-- markdownlint-disable MD041-->
 
 ### <a name="chatmessage"></a>chatMessage
@@ -21,8 +16,8 @@ ms.locfileid: "61390807"
 必须使用 `Prefer: include-unknown-enum-members` 请求标头以 **chatMessage** **messageType** [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) 中获取以下值：适用于 `/teams/{id}/channels/{id}/messages` 和 `/chats/{id}/messages` 的 `systemEventMessage`。
 
 > [!NOTE]
->`/teams/getAllMessages` 和 `/chats/getAllMessages` 具有 [许可和付款要求](/graph/teams-licenses)。
-> `/teams/getAllMessages` 和 `/chats/getAllMessages` 同时支持 `model=A` 和 `model=B` 查询参数。
+>`/teams/getAllMessages`、`/chats/getAllMessages`、`/me/chats/getAllMessages`和`/users/{id}/chats/getAllMessages`具有[许可和付款要求](/graph/teams-licenses)。
+> `/teams/getAllMessages`和`/chats/getAllMessages`支持`model=A`和`model=B`查询参数，`/me/chats/getAllMessages`和`/users/{id}/chats/getAllMessages`仅支持`model=B`。
 > 如果未指定模型，将使用[评估模式](/graph/teams-licenses#evaluation-mode-default-requirements)。
 
 ### <a name="conversationmember"></a>conversationMember
