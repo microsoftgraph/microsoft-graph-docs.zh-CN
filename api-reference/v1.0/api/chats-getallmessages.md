@@ -5,13 +5,8 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4d631639da6864f60258c36d1a70e967f8f3829d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101430"
 ---
+
 # <a name="chats-getallmessages"></a>聊天： getAllMessages
 
 命名空间：microsoft.graph
@@ -42,7 +37,8 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-可以使用 `model` 查询支持基于首选许可和付款要求的 `A` 和 `B` 值的参数，如以下示例所示。  
+可以使用`model`查询参数，该参数支持基于首选[许可和付款模式](/graph/teams-licenses)值`A`和`B`，如以下示例所示。  
+如果未指定 `model`，将使用 [评估模式](/graph/teams-licenses#evaluation-mode-default-requirements)。
 
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
@@ -93,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/users/0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5/
 [!INCLUDE [sample-code](../includes/snippets/java/chat-getallmessages-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-getallmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
