@@ -3,9 +3,14 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 ms.localizationpriority: high
-ms.custom: 'graphiamtop20, scenarios:getting-started'
+ms.custom: graphiamtop20, scenarios:getting-started
+ms.openlocfilehash: 7d34d827bd45a44114ad36a1c2a122d92f7b7083
+ms.sourcegitcommit: 59918804365570a1a6b7f45c29e546e777c74c85
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62436066"
 ---
-
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
 若要使你的应用可访问 Microsoft Graph 中的数据，用户或管理员必须通过同意过程向其授予正确的权限。 本主题列出了与每个主要 Microsoft Graph API 集关联的权限。 它还提供有关如何使用权限的指导。
@@ -1173,7 +1178,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1329,7 +1334,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1589,6 +1594,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 | 否 |
 | _Policy.ReadWrite.ConditionalAccess_ | 读取和写入你组织的条件访问策略 | 允许应用代表已登录用户读取和写入你组织的条件访问策略。 | 是 | 否 |
 | _Policy.ReadWrite.ConsentRequest_ | 读取和写入组织的同意请求策略 | 允许应用代表已登录用户读取和写入你组织的许可请求策略。 | 是 | 否 |
+| _Policy.ReadWrite.CrossTenantAccessPolicy_ | 读取和写入组织的跨租户访问策略 | 允许应用代表已登录用户读取和写入组织的跨租户访问策略。 | 是 | 否 |
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入你组织的功能推出策略 | 允许应用代表已登录用户读取和写入你组织的功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 | 否 |
 | _Policy.ReadWrite.PermissionGrant_ | 管理许可和权限授予策略 | 允许此应用代表已登录的用户管理与适用于应用程序的许可和权限授予相关的策略。 | 是 | 否 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用代表已登录用户读取和写入你组织的信任框架策略。 | 是 | 否 |
@@ -1605,6 +1611,9 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Policy.ReadWrite.AccessReview_ | 读取和写入组织的访问评审策略 | 允许应用无需登录的用户即可读取和写入你所在组织的访问评审策略。 | 是 |
 | _Policy.ReadWrite.ApplicationConfiguration_ | 读取和写入组织的应用程序配置策略 | 允许应用在没有已登录用户的情况下读取和写入组织的所有应用程序配置策略。 | 是 |
 | _Policy.ReadWrite.AuthenticationFlows_ | 读取和写入你组织的身份验证流策略 | 允许应用在没有已登录用户的情况下读取和写入所有租户身份验证流策略。 | 是 |
+| _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 | 
+| _Policy.ReadWrite.ConsentRequest_ | 读取和写入组织的同意请求策略 | 允许应用在没有登录用户的情况下读取和写入你的组织的许可请求策略。 | 是 |
+| _Policy.ReadWrite.CrossTenantAccessPolicy_ | 读取和写入组织的跨租户访问策略 | 允许应用在没有已登录用户的情况下读取和写入组织的跨租户访问策略。 | 是 |
 | _Policy.ReadWrite.AuthenticationMethod_   | 读取和写入所有身份验证方法策略    | 允许应用在没有登录用户的情况下读取和写入所有租户身份验证方法策略。 | 是 |
 | _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 |
 | _Policy.ReadWrite.ConsentRequest_ | 读取和写入组织的同意请求策略 | 允许应用在没有登录用户的情况下读取和写入你的组织的许可请求策略。 | 是 |
@@ -1624,6 +1633,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 * _Policy.ReadWrite.AuthenticationFlows_：读取和写入你组织的身份验证流策略 (`PATCH /beta/policies/authenticationFlowsPolicy`)
 * _Policy.ReadWrite.AuthenticationMethod_: 使用此权限管理身份验证方法策略的设置，包括启用和禁用身份验证方法、允许用户和组使用这些方法，以及配置与用户可在租户中注册和使用的身份验证方法相关的其他设置。
 * _Policy.ReadWrite.ConditionalAccess_：读取和写入你组织的条件访问策略 (`POST /beta/identity/conditionalAccess/policies`)
+* _Policy.ReadWrite.CrossTenantAccessPolicy_：读取和写入组织的跨租户访问策略（`PATCH /beta/policies/crossTenantAccessPolicy`）
 * _Policy.ReadWrite.FeatureRollout_：读取和写入你组织的功能推出策略 (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_：读取和写入你组织的信任框架策略 (`POST /beta/trustFramework/policies`)
 

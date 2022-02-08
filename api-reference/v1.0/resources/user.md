@@ -5,8 +5,13 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
+ms.openlocfilehash: 04fc3b4742793c168ed72de369b51885b4f93672
+ms.sourcegitcommit: 38e16940da74bda465f890d945f9dc4aa412c6f4
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62397883"
 ---
-
 # <a name="user-resource-type"></a>用户资源类型
 
 命名空间：microsoft.graph
@@ -139,14 +144,14 @@ doc_type: resourcePageType
 |:---------------|:--------|:----------|
 |aboutMe|String|任意多边形的文本输入字段，用于介绍用户自身。仅在 `$select` 上返回。|
 |accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。创建用户时此属性是必需的。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`和 `in`）。    |
-|ageGroup|[ageGroup](#agegroup-values)|设置用户的年龄组。 允许的值：`null`、`minor`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`和 `in`）。|
+|ageGroup|[ageGroup](#agegroup-values)|设置用户的年龄组。 允许的值：`null`、`Minor`、`NotAdult` 和 `Adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`和 `in`）。|
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|已分配给用户的许可证，包括继承的（基于组的）许可证。  不可为 null。 仅在 `$select` 上返回。 支持 `$filter`（`eq` 和 `not`）。           |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|分配给该用户的计划。只读。不可为 null。<br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq` 和 `not`）。 |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>仅在 `$select` 上返回。|
 |businessPhones|字符串集合|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。本地目录同步的用户为只读。<br><br>默认情况下返回。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 |城市|String|用户所在的城市。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |CompanyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
-|consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`和 `in`）。|
+|consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|设置是否已获得未成年人的同意。 允许的值：`null`、`Granted`、`Denied` 和 `NotRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`和 `in`）。|
 |country|String|用户所在的国家/地区，例如 `US` 或 `UK`。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |createdDateTime | DateTimeOffset |用户对象的创建日期。只读<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not` 、 `ge`、 `le`、 `in`）。|
 | creationType | 字符串 | 指示是否通过以下方法之一创建用户帐户： <br/> <ul><li>作为常规学校或工作帐户（`null`）。 <li>作为外部帐户（`Invitation`）。 <li>作为 Azure Active Directory B2C 租户的本地帐户（`LocalAccount`）。 <li>通过使用电子邮件验证由内部用户（`EmailVerified`）进行自助注册。 <li>通过由外部用户通过属于用户流的链接注册的自助注册（`SelfServiceSignUp`）。</ul> <br>只读。<br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。 |
@@ -169,7 +174,7 @@ doc_type: resourcePageType
 |isResourceAccount|布尔| 请勿使用 – 保留以备今后使用。|
 |jobTitle|String|用户的职务。 最大长度为 128 个字符。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改密码或创建密码的时间，以最新操作的日期为准。日期和时间信息使用 ISO 8601 格式，并且始终以 UTC 时间标识。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。<br><br>仅在 `$select` 上返回。|
-|legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。|
+|legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`MinorWithOutParentalConsent`、`MinorWithParentalConsent`、`MinorNoParentalConsentRequired`、`NotAdult` 和 `Adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) 集合|此用户的许可证分配状态。只读。<br><br>仅在 `$select` 上返回。|
 |mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。<br>对此属性进行更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 对于 Azure AD B2C 帐户，此属性最多可以使用唯一的 SMTP 地址更新 10 次。 此属性不能包含突出字符。<br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith`、`endsWith` 和 `null` 值上的 `eq`）。|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。<br><br>仅在 `$select` 上返回。|
@@ -236,29 +241,29 @@ doc_type: resourcePageType
 | 成员    | 说明|
 |:---------------|:----------|
 |空|默认值，尚未给用户设置 **ageGroup**。|
-|minorWithoutParentalConsent |（保留以备今后使用）|
-|minorWithParentalConsent| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
-|adult|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
-|notAdult|用户所在国家或地区存在其他与年龄相关的法规（例如美国、英国、欧盟、韩国），用户的年龄介于未成年人和成年人之间（根据所在国家或地区的规定）。一般来说，这意味着在有管控的国家，青少年被认为是 `notAdult`。|
-|minorNoParentalConsentRequired|用户是未成年人，但所在国家或地区没有与年龄相关的法规。|
+|MinorWithoutParentalConsent |（保留以备今后使用）|
+|MinorWithParentalConsent| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
+|Adult|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
+|NotAdult|用户所在国家或地区存在其他与年龄相关的法规（例如美国、英国、欧盟、韩国），用户的年龄介于未成年人和成年人之间（根据所在国家或地区的规定）。一般来说，这意味着在有管控的国家，青少年被认为是 `notAdult`。|
+|MinorNoParentalConsentRequired|用户是未成年人，但所在国家或地区没有与年龄相关的法规。|
 
 #### <a name="agegroup-values"></a>ageGroup 值
 
 | 成员    | 说明|
 |:---------------|:--------|
 |空|默认值，尚未给用户设置 **ageGroup**。|
-|未成年人|该用户被视为未成年人。|
-|notAdult|用户所在国家或地区存在相关法规（例如美国、英国、欧盟或韩国），而且用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。基本上，这就意味着在有管控的国家，青少年被认为是 `notAdult`。|
-|adult|应将用户视为成年人。|
+|次要|该用户被视为未成年人。|
+|NotAdult|用户所在国家或地区存在相关法规（例如美国、英国、欧盟或韩国），而且用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。基本上，这就意味着在有管控的国家，青少年被认为是 `notAdult`。|
+|Adult|应将用户视为成年人。|
 
 #### <a name="consentprovidedforminor-values"></a>consentProvidedForMinor 值
 
 | 成员    | 说明|
 |:---------------|:----------|
 |空|默认值，尚未给用户设置 **consentProvidedForMinor**。|
-|granted|已就用户拥有帐户获得同意。|
-|denied|尚未就用户拥有帐户获得同意。|
-|notRequired|用户所在地不要求获得同意。|
+|Granted|已就用户拥有帐户获得同意。|
+|Denied|尚未就用户拥有帐户获得同意。|
+|NotRequired|用户所在地不要求获得同意。|
 
 ## <a name="relationships"></a>关系
 

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 98681b5dc0fd59a246bdd1f545a9189f1cb6ee2a
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
+ms.openlocfilehash: 34b428e38e36fb1ce8ace217d9daddbc5f898d21
+ms.sourcegitcommit: 38e16940da74bda465f890d945f9dc4aa412c6f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131936"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62396973"
 ---
 # <a name="chats-getallmessages"></a>聊天： getAllMessages
 
@@ -44,7 +44,8 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-可以使用 `model` 查询支持基于首选许可和付款要求的 `A` 和 `B` 值的参数。 如果未指定 `model`，将使用 [评估模式](/graph/teams-licenses#evaluation-mode-default-requirements)。 下面是示例。
+可以使用`model`查询参数，该参数支持基于首选[许可和付款模式](/graph/teams-licenses)值`A`和`B`，如以下示例所示。  
+如果未指定 `model`，将使用 [评估模式](/graph/teams-licenses#evaluation-mode-default-requirements)。
 
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
