@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: faca28843e5e9b6c6f4eadea6f9be265ff56bd9e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bc09b5ce5318616de5ca0f138897453b49da8f91
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092358"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442846"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -50,7 +50,7 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| 描述是否应当将作业分发给在作业发布日期之后添加的学生。|
-|addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制 **发布** 作业时将作业添加到学生和教师日历 **的作业** 行为。 可能的值包括 `none`、`studentsAndPublisher`、`studentsAndTeamOwners`、`unknownFutureValue`、`studentsOnly`。 请注意，必须使用此可变化枚举 (请求) 获取以下 `Prefer: include - unknown -enum-members` [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` ： 。 可选。|
+|addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制 **发布** 作业时将作业添加到学生和教师日历 **的作业** 行为。 可能的值包括 `none`、`studentsAndPublisher`、`studentsAndTeamOwners`、`unknownFutureValue`、`studentsOnly`。 请注意，必须使用此可 `Prefer: include - unknown -enum-members` 变化枚举 (请求) 获取以下 [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)： `studentsOnly`。 可选。|
 |allowLateSubmissions|布尔| 学生是否可以在截止日期后发送提交。|
 |allowStudentsToAddResourcesToSubmission|布尔| 学生是否可以向提交中添加资源。 此外，指示提交中所有资源是否对应于工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 指示向学生发布作业的日期。 工作分配发布后无法编辑。|
@@ -60,10 +60,10 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 |dueDateTime|DateTimeOffset| 日期分配到期。 |
 |一个|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| 如何对作业进行评分。|
 |instructions|itemBody| 要与作业一起向学生提供的说明。 |
-|notificationChannelUrl|String| 与分配相关的通知通信的通道。 若要更改 URL，将值设置为 `assignTo` [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md)。 频道 URL 在工作分配发布后不能更改。|
+|notificationChannelUrl|String| 与分配相关的通知通信的通道。 若要更改 URL，将值 `assignTo` 设置为 [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md)。 频道 URL 在工作分配发布后不能更改。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationAssignment](../resources/educationassignment.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [educationAssignment](../resources/educationassignment.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -183,6 +183,7 @@ Content-type: application/json
 ## <a name="see-also"></a>另请参阅
 
 * [分配和提交状态、转换和限制](/graph/assignments-submissions-states-transition)
+* [指定教育作业通知的默认频道](/graph/education-build-notificationchannelurl)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

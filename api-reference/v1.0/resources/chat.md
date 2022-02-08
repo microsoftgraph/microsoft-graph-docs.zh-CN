@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c37ada5b19f915996e889e1f7dc91afec597c279
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 05f8614ca9f869d23f987e268e48c101bf7462e4
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545103"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443035"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -39,9 +39,9 @@ ms.locfileid: "61545103"
 |[为用户在所有聊天中获取消息](../api/chats-getallmessages.md)| [chat](chat.md) 集合| 从用户参与的所有聊天中获取消息。 |
 | **应用** |||
 |[列出聊天中的应用](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) 集合 | 列出聊天网站中安装 (关联的会议) 。|
-|[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取安装在聊天会话和关联会议 (中的特定) 。|
-|[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联的会议 (应用安装) 。|
-|[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天会话和相关会议 (中安装的应用的) 。|
+|[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取在聊天会话和关联会议 (安装的特定) 。|
+|[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联的会议 (安装应用) 。|
+|[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天会话和关联会议 (安装的应用的) 。|
 |[从聊天中卸载应用](../api/chat-delete-installedapps.md) | 无 | 从 (和) 会议记录中删除 (卸载) 。|
 | **选项卡** |||
 |[列出聊天中的选项卡](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到聊天 (关联的会议选项卡) 。|
@@ -60,15 +60,17 @@ ms.locfileid: "61545103"
 | createdDateTime| dateTimeOffset|  创建聊天的日期和时间。 只读。|
 | id| String| 聊天的唯一标识符。 只读。|
 | lastUpdatedDateTime| dateTimeOffset|  上次更改聊天的日期和时间或成员列表。 只读。|
-| topic| String|   (聊天) 主题或主题。 仅适用于群聊。|
-| webUrl | String| 聊天中聊天的 URL Microsoft Teams。 URL 应视为不透明的 blob，而不是解析的。 只读。 |
+| topic| String|   (可选) 聊天的主题或主题。 仅适用于群聊。|
+| WebUrl | String| 聊天中聊天的 URL Microsoft Teams。 URL 应视为不透明的 blob，而不是解析的。 只读。 |
+| tenantId| String | 创建聊天的租户的标识符。 只读。|
+| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | 表示有关联机会议的详细信息。 如果聊天未与联机会议关联，则属性为空。 只读。|
 
 ### <a name="chattype-values"></a>chatType 值 
 
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的;无法删除/添加成员。|
-|组               | 1     | 指示聊天是群聊。 至少 (两个人的名单) 可以针对此类型的聊天进行更新。 稍后可以删除/添加成员。|
+|组               | 1     | 指示聊天是群聊。 至少两 (两个人) 可以针对此类型的聊天更新名单大小。 稍后可以删除/添加成员。|
 |meeting             | 2     | 指示聊天与联机会议相关联。 此类聊天仅在创建联机会议时创建。|
 |unknownFutureValue  | 3     | 可发展枚举 sentinel 值。 请勿使用。 |
 
@@ -97,7 +99,11 @@ ms.locfileid: "61545103"
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
   "chatType": "string",
-  "webUrl": "string"
+  "webUrl": "string",
+  "tenantId": "string",
+  "onlineMeetingInfo": {
+    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
+  }
 }
 ```
 

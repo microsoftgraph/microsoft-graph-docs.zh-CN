@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ccf900922ef83e7ec9243efd90e5606935fc2ba1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7325587201402f01e6ceec44c468c82d0c92c0e3
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104974"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443070"
 ---
 # <a name="list-tabs-in-channel"></a>列出频道中的选项卡
 
@@ -24,11 +24,11 @@ ms.locfileid: "62104974"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsTab.Read.All、TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | TeamsTab.Read.All、TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.Read.All、**Group.ReadWrite.All**、Directory.Read.All、**Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab.Read.Group、TeamsTab.ReadWrite.Group、TeamsTab.Read.All、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | TeamsTab.Read.Group、*TeamsTab.ReadWrite.Group*、TeamsTab.Read.All、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、**Group.Read.All、Group.ReadWrite.All**、Directory.Read.All、**Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -55,7 +55,7 @@ GET /teams/{id}/channels/{id}/tabs
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>示例 1：列出频道中所有选项卡以及关联的Teams选项卡
+### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>示例 1：列出频道中所有选项卡以及关联的Teams应用程序
 #### <a name="request"></a>请求
 下面展示了示例请求。
 

@@ -3,21 +3,21 @@ title: 创建关系
 description: 创建新的 relation 对象。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 5d76e8e424b9ab1aad1311eb1b9a8b3053bfef31
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 7e2c77a47f89eadf5140da215a0386917520f644
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942595"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443400"
 ---
 # <a name="create-relation"></a>创建关系
 命名空间：microsoft.graph.termStore
 
-创建新的 [relation](../resources/termstore-relation.md) 对象。 它们用于在术语之间或术语和集之间创建固定和重复使用的关系。 如果在术语和 set 之间创建固定/重复使用的术语，则必须在发布正文中将 **fromTerm** 设置为 *null。*
+创建新的 [relation](../resources/termstore-relation.md) 对象。 它们用于在术语之间或术语和集之间创建固定和重复使用的关系。 如果在术语和 set 之间创建固定/重复使用的术语，则必须在发布正文中将 **fromTerm**  设置为 *null* 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -48,7 +48,7 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 
 下表显示创建 relation 对象 [时所需的属性](../resources/termstore-relation.md) 。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |关系|microsoft.graph.termStore.relationType|要创建的关系类型。 可取值为：`pin`、`reuse`。|
 |set| [microsoft.graph.termStore.set](../resources/termstore-set.md)| 需要创建关系的集。|
@@ -58,7 +58,7 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoft.graph.termStore.relation](../resources/termstore-relation.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [microsoft.graph.termStore.relation](../resources/termstore-relation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -71,7 +71,7 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/v1.0/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
+POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
 Content-Type: application/json
 
 {

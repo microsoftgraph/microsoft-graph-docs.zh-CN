@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 34bba2d167028ed717319162d7559101a0ef0ad8
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d169ae0e5a19b0c778be44bccf1652446d29bc4f
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943967"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443084"
 ---
 # <a name="get-tab"></a>获取选项卡
 
@@ -18,18 +18,18 @@ ms.locfileid: "60943967"
 
 
 
-检索团队中频道[中指定选项卡](../resources/teamstab.md)[的属性和](../resources/channel.md)[关系](../resources/team.md)。 
+检索团队中频道[中](../resources/teamstab.md)指定[选项卡的属性和](../resources/channel.md)[关系](../resources/team.md)。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsTab.Read.All、TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | TeamsTab.Read.All、TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.Read.All、**Group.ReadWrite.All**、Directory.Read.All、**Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab.Read.Group、TeamsTab.ReadWrite.Group、TeamsTab.Read.All、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | TeamsTab.Read.Group、*TeamsTab.ReadWrite.Group*、TeamsTab.Read.All、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、**Group.Read.All、Group.ReadWrite.All**、Directory.Read.All、**Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -40,9 +40,9 @@ GET /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 $select 和 $expand [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
+此方法支持 $select 和 $expand [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |

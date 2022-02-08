@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: bdcd8a73334362e7315cdcbb4a892b1dbd8aa27c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 83207601601a6813bc9988813236445719fa4e63
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130793"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442874"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -61,9 +61,9 @@ ms.locfileid: "62130793"
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All，TeamSettings.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-|[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
@@ -109,7 +109,7 @@ POST /subscriptions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应[](../resources/subscription.md)代码和 subscription 对象。
+如果成功，此方法在响应 `201 Created` 正文 [中返回 响应](../resources/subscription.md) 代码和 subscription 对象。
 
 要详细了解错误返回方式，请参阅[错误响应][error-response]。
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b6731887ec9c9f364c6ce5dbdb910abd995dca06
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ccb06fe2585c48935bb670ba2da2a7030c049980
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109456"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443238"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -18,11 +18,11 @@ ms.locfileid: "62109456"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的频道或聊天中[发送新的](../resources/channel.md)[chatMessage。](../resources/chatmessage.md) [](../resources/chat.md)
+在指定的频道或聊天中[发送新的](../resources/channel.md) [chatMessage](../resources/chatmessage.md)[。](../resources/chat.md)
 
 > **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：使用安全工具 [作为](/legal/microsoft-apis/terms-of-use)Microsoft Teams违反日志文件。 仅发送用户将阅读的邮件。
+> **注意**：使用 Microsoft Teams 违反使用条款日志文件。[](/legal/microsoft-apis/terms-of-use) 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -35,9 +35,9 @@ ms.locfileid: "62109456"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Teamwork.Migrate.All |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
 
-> **注意**：仅迁移 *支持应用程序*[权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。
+> **注意**：仅迁移 *支持* 应用程序 [权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。
 
 ### <a name="permissions-for-chat"></a>聊天权限
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -80,11 +80,11 @@ POST /chats/{chat-id}/messages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [chatMessage](../resources/chatmessage.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [chatMessage](../resources/chatmessage.md) 对象。
 
 ## <a name="examples"></a>示例
 
-在下面的示例中，URL 可以使用描述的[HTTP](#http-request)语法向[](chat-post-messages.md)聊天发送消息、向频道发送消息或[](channel-post-messages.md)向频道[发送回复](chatmessage-post-replies.md)。
+在下面的示例中，URL 可以使用[所述的 HTTP](#http-request) 语法向聊天发送消息、向[](chat-post-messages.md)频道发送消息或向频道[发送回复](chatmessage-post-replies.md)。 [](channel-post-messages.md)
 
 ### <a name="example-1-send-a-hello-world-message-in-a-channel"></a>示例 1：在频道中发送 Hello World 消息
 
@@ -449,7 +449,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
->**注意：** 该文件必须已SharePoint。 若要查找文件属性，请获取 **文件的 driveItem。** 例如，/drives/{id}/items/{id}。 附件 ID 是 **driveItem** 的 **eTag** 中的 GUID，附件 contentURL 是 **driveItem** 文件夹的 **webUrl** 加上 **driveItem** 的名称，附件名称是 **driveItem** 的名称。 
+>**注意：** 该文件必须已SharePoint。 若要查找文件属性，请获取 **文件的 driveItem** 。 例如，/drives/{id}/items/{id}。 附件 ID 是 **driveItem** 的 **eTag** 中的 GUID，附件 **contentURL** 是 **driveItem** 文件夹的 **webUrl** 加上 **driveItem** 的名称，附件名称是 **driveItem** 的名称。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -571,7 +571,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：****hostedContents** 集合中的 **temporaryId** 是一个随机 ID，但在整个 **body** 和 **hostedContents** 元素中必须相同。  (注意 **temporaryId** 设置为 **1，** 正文中的引用设置为 `../hostedContents/1/$value` .) 
+> **注意：****hostedContents** 集合中的 **temporaryId** 是一个随机 ID，但在整个 **body** 和 **hostedContents** 元素中必须相同。  (注意 **temporaryId** 设置为 **1** ，正文中的引用设置为 `../hostedContents/1/$value`.) 
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -682,7 +682,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (中的内容) 相同。  (请注意 **，temporaryId 设置为** **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
+> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和  **hostedContents** (中的内容) 相同。  (请注意 **，temporaryId 设置为** **1**`../hostedContents/1/$value`，内容中的引用设置为 .) 
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -810,12 +810,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-7--mention-a-channel-in-a-channel-message"></a>示例 7：@mention频道消息中的频道
+### <a name="example-7--mention-a-channel-in-a-channel-message"></a>示例 7：@mention消息中的频道
 
 #### <a name="request"></a>请求
 下面展示了示例请求。 若要了解如何获取团队中的频道列表，请参阅 [列出频道](../api/channel-list.md)。
 
-> 注意 **：conversationIdentityType** 必须设置为 `channel` @mention频道。
+> 注意： **conversationIdentityType** 必须设置为 `channel` @mention频道。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -944,12 +944,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8--mention-a-team-in-a-channel-message"></a>示例 8：@mention频道消息中与团队通信
+### <a name="example-8--mention-a-team-in-a-channel-message"></a>示例 8：@mention频道消息中通知团队
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> 注意 **：conversationIdentityType** 必须设置为@mention `team` 团队。
+> 注意： **conversationIdentityType** 必须设置为 `team` @mention团队。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

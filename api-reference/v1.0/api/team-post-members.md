@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ed6f2e5dc2064e1277944ddd4c4d350e1d5903ea
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 67752bb1780dcb5c972a5410e85752a28992d7bd
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62087754"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443315"
 ---
 # <a name="add-member-to-team"></a>向团队添加新成员
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "62087754"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序| TeamMember.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: df2de65747bca99a38cdb7bd283093965ecd28d1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 23f58a21464edf4446a45672b963a203d294e0cf
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134127"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443329"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>在频道中发送对消息的答复
 
@@ -18,9 +18,9 @@ ms.locfileid: "62134127"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将新回复发送到指定频道中的[chatMessage。](../resources/chatmessage.md) [](../resources/channel.md)
+将新回复发送到指定频道中的 [chatMessage](../resources/chatmessage.md)[。](../resources/channel.md)
 
-> **注意**：使用 Microsoft Teams 是违反 [](/legal/microsoft-apis/terms-of-use)使用条款日志文件。 仅发送用户将阅读的邮件。
+> **注意**：使用 Microsoft Teams 违反使用条款日志文件。[](/legal/microsoft-apis/terms-of-use) 仅发送用户将阅读的邮件。
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -35,9 +35,9 @@ ms.locfileid: "62134127"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Teamwork.Migrate.All |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
 
-> **注意**：仅迁移 *支持应用程序*[权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+> **注意**：仅迁移 *支持* 应用程序 [权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -62,7 +62,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 
 ### <a name="example-1-send-a-new-reply-to-a-chatmessage"></a>示例 1：向 chatMessage 发送新回复
 
-有关示例的更全面的列表，请参阅在频道或[聊天中创建 chatMessage。](chatmessage-post.md)
+有关示例的更全面的列表，请参阅在频道或 [聊天中创建 chatMessage](chatmessage-post.md)。
 
 #### <a name="request"></a>请求
 请求示例如下所示。
@@ -171,7 +171,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-以下示例显示如何使用 请求正文中的 和 键导入 `createDateTime` `from` 实时邮件。
+以下示例显示如何使用 请求`createDateTime``from`正文中的 和 键导入实时邮件。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

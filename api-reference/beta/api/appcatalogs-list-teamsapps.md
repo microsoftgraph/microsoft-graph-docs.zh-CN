@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e07b7d8f7e81543730724ac566da5fe1adddccde
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 26c133798aa0484922c565e3f8f30929f499842c
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110079"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442916"
 ---
 # <a name="list-teamsapp"></a>列出 teamsApp
 
@@ -19,10 +19,10 @@ ms.locfileid: "62110079"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出[应用程序](../resources/teamsapp.md)目录中Microsoft Teams应用程序。
-这包括来自租户Microsoft Teams的应用程序，以及租户应用程序目录 (组织的应用程序目录中) 。 若要仅从组织的应用程序目录中获取应用程序，请 `organization` 指定为请求中的 **distributionMethod。**
+这包括来自 Microsoft Teams 应用商店的应用程序，以及租户应用程序目录 (组织的应用程序目录中) 。 若要仅从组织的应用程序目录中获取应用程序，请指定 `organization` 为请求 **中的 distributionMethod** 。
 
 > [!NOTE]
-> teamsApp 资源的 由服务器生成，与 Teams `id`  `id` 清单中指定的 不同。 开发人员 `id` 作为应用清单的一Teams提供的 标记在 `externalId` **teamsApp** 资源中。
+> `id` **teamsApp** 资源的 由`id`服务器生成，与在应用清单Teams不同。 开发人员`id`作为应用清单的一Teams提供的 标记在 `externalId` **teamsApp** 资源中。
 
 ## <a name="permissions"></a>权限
 
@@ -30,11 +30,11 @@ ms.locfileid: "62110079"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:------------------------------------|
-| 委派（工作或学校帐户）     | AppCatalog.Submit、AppCatalog.Read.All、AppCatalog.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+| 委派（工作或学校帐户）     | AppCatalog.Submit、AppCatalog.Read.All、AppCatalog.ReadWrite.All、Directory.Read.All **、Directory.ReadWrite.All** |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | AppCatalog.Read.All、AppCatalog.ReadWrite.All |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ GET /appCatalogs/teamsApps
 
 此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-Using 将返回有关应用状态（如 publishingState）的更多信息，这些状态反映应用提交评价状态，并返回应用是否已获得批准、被拒绝或仍在审核 `$expand=AppDefinitions` 中。  
+Using `$expand=AppDefinitions` 将返回有关应用状态（如 **publishingState**）的更多信息，它反映应用提交评价状态，并返回应用是否已获得批准、被拒绝或仍在审核中。 
 
 > **注意：** 可以筛选 [teamsApp](../resources/teamsapp.md) 对象的任何字段以缩短结果列表。 可以使用下列任一筛选操作：等于、不等于、和、或、不。
 
@@ -64,7 +64,7 @@ Using 将返回有关应用状态（如 publishingState）的更多信息，这�
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [teamsApp](../resources/teamsapp.md) 对象列表。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [teamsApp](../resources/teamsapp.md) 对象列表。
 
 ## <a name="examples"></a>示例
 
@@ -282,7 +282,7 @@ Content-Type: application/json
 
 ### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例 4：列出具有给定 ID 的应用程序，并返回提交审阅状态
 
-以下示例列出具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState，** 反映应用的提交审阅状态。 `Submitted` 表示评价挂起，表示应用已由管理员批准，并且表示应用 `published` `rejected` 已遭管理员拒绝。
+以下示例列出具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState**，这反映了应用的提交审阅状态。 `Submitted` 表示评价挂起， `published` 表示应用已由 `rejected` 管理员批准，并且表示应用已遭管理员拒绝。
 
 #### <a name="request"></a>请求
 

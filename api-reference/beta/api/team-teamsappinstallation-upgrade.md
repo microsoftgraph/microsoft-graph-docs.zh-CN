@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c421df726279f0e4c92626e77583ff5ad493670d
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 60790ad504ea0c760d21c3b011baf2b9c34fbecc
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123872"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443021"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation：升级
 
@@ -32,7 +32,7 @@ ms.locfileid: "61123872"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamsAppInstallation.ReadWriteForTeam.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -86,7 +86,7 @@ POST https://graph.microsoft.com/beta/teams/db5e04be-daa2-4a35-beb1-5e73cc381599
 [!INCLUDE [sample-code](../includes/snippets/java/upgrade-teamsapp-in-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/upgrade-teamsapp-in-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

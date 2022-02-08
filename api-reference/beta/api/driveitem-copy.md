@@ -1,6 +1,17 @@
 ---
-author： 一个 Author：一个 Description： "AsynchronousyKelley description： "Asynchronously creates a copy of an [driveItem][item-resource] (including any children) ， under a new parent item or with a new name."
-ms.date： 09/10/2017 title： driveItem： copy ms.localizationpriority： medium ms.prod： "sharepoint" doc_type： apiPageType
+author: JeremyKelley
+description: 以异步方式创建 [driveItem][item-resource] (，包括新父项下的任何子) 或新名称。
+ms.date: 09/10/2017
+title: driveItem：copy
+ms.localizationpriority: medium
+ms.prod: sharepoint
+doc_type: apiPageType
+ms.openlocfilehash: 236d647414b42023a939ef7728e356091f59aa74
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443161"
 ---
 # <a name="driveitem-copy"></a>driveItem：copy
 
@@ -33,7 +44,7 @@ POST /users/{userId}/drive/items/{itemId}/copy
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `@microsoft.graph.conflictBehavior` 查询参数在发生冲突时自定义行为。
+此方法支持查询 `@microsoft.graph.conflictBehavior` 参数在发生冲突时自定义行为。
 
 | 值           | 说明                                    |
 |:----------------|:---------------------------------------------- |

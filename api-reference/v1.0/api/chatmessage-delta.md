@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: b9b04e4d7ceeb914311470bb61eff214475ace52
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2aaa800fd49bc87f6dbe6f107d72a4818e8bc6d6
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344340"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443049"
 ---
 # <a name="chatmessage-delta"></a>chatMessage：delta
 
@@ -43,7 +43,7 @@ Delta 查询既支持可检索指定频道中所有消息的完全同步，也�
 |委派（个人 Microsoft 帐户） | 不支持                                |
 |应用程序                            | ChannelMessage.Read.Group*、ChannelMessage.Read.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

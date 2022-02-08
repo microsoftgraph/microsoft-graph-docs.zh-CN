@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9069a4b2ec82c14c5de0b7bdda91e48b5ae1b53a
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 0b2f2c9cff290ec80a298a43744fa357d9c3bdf0
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084026"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442923"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>使用 Microsoft Graph 获取聊天成员资格的更改通知
 
@@ -60,7 +60,7 @@ Content-Type: application/json
 |委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
 |应用程序 | ChatMember.Read.Chat *、Chat.Manage.Chat*、ChatMember.Read.All、ChatMember.ReadWrite.All、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All  | beta |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ### <a name="example"></a>示例
 

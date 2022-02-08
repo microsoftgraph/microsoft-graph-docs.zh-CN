@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d4eb1ec1ffeeee61f395e4b223a195773a851b41
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6d40ecefd86d92b113e9cd4bf3bf3c2d3997f529
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123977"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443336"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -30,7 +30,7 @@ ms.locfileid: "62123977"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All **、Group.ReadWrite.All** |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
 
 ### <a name="permissions-for-chat"></a>聊天权限
 
@@ -77,7 +77,7 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

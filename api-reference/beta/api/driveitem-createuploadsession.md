@@ -1,6 +1,16 @@
 ---
-author：一位用户，作者：一位用户，她介绍："创建上传会话，以允许应用上传最大文件大小的文件。"
-title： driveItem： createUploadSession ms.localizationpriority： medium ms.prod： "sites-and-lists" doc_type： apiPageType
+author: JeremyKelley
+description: 通过创建上传会话，使应用可以上传最大大小的文件。
+title: driveItem：createUploadSession
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
+doc_type: apiPageType
+ms.openlocfilehash: dfb6b231b0db8664b7c01fd81f2697f4387554b6
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442643"
 ---
 # <a name="driveitem-createuploadsession"></a>driveItem：createUploadSession
 
@@ -92,7 +102,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 对此请求的响应将提供新建 [uploadSession](../resources/uploadsession.md) 的详细信息，其中包括用于上载部分文件的 URL。 
 
->**注意：** {item-path} 必须包含请求正文中指定的项目的名称。
+>**注意：**{item-path} 必须包含请求正文中指定的项的名称。
 
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -210,8 +220,7 @@ Content-Type: application/json
 - 将文件的最终字节范围放入上传 URL 后，以[处理上传错误](#handle-upload-errors)的相同方式发送最终 PUT 请求（目前仅在 OneDrive Personal 中受支持）。
 
 
-上传完成后，服务器将使用 `HTTP 201 Created` 或 `HTTP 200 OK` 响应最终请求。
-响应正文还会包括 **driveItem** 的默认属性集，用来表示已完成的文件。
+当完成上传后，服务器将使用 `HTTP 201 Created` 或 `HTTP 200 OK` 来响应最终请求。响应正文还将包括 **driveItem** 的默认属性集，用来表示已完成的文件。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8b23b63dcccba6945e60f13d87590f6bc81ae9ce
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5a21d5c817eb93314f76b55c1d2c1f0994ff08f9
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101584"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443414"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -24,15 +24,15 @@ ms.locfileid: "62101584"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | **Channel.Create、Group.ReadWrite.All、Directory.ReadWrite.All** |
+|委派（工作或学校帐户） | Channel.Create、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Channel.Create.Group *、Channel.Create、Teamwork.Migrate.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **备注：** 标有 * 的权限使用 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
+> **注意**：仅支持使用 ** 标记的权限，以确保向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 >
 > 此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 >
-> 将来，Microsoft 可能会要求你或你的客户根据使用团队合作导入的数据量支付额外的费用。Migrate.All 和/或[迁移 API。](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+> 将来，Microsoft 可能会要求你或你的客户根据使用团队合作.Migrate.All 和/或迁移 API 导入的数据量支付 [额外的费用](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 55fc6efa586fd9d12ad11ec0a84243b9a7fe03de
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 195382a5ae90f61050a4e65f2164279f3e122dfd
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101564"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443449"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
@@ -28,7 +28,7 @@ ms.locfileid: "62101564"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | ChannelSettings.ReadWrite.Group *、ChannelSettings.ReadWrite.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

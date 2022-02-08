@@ -5,19 +5,19 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9667a92d801777cd279bf698c93d3c645c877efd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 420b983d20038d5449bf48b4192a931b98ac90c9
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110569"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443063"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsapp
 
 命名空间：microsoft.graph
 
 将[应用发布到](../resources/teamsapp.md)Microsoft Teams目录。
-具体而言，此 API 将应用程序发布到组织的目录 (租户应用程序目录) ;创建的资源将 **具有 的 distributionMethod** 属性值 `organization` 。
+具体而言，此 API 将应用程序发布到组织的目录 (租户应用程序目录) ;创建的资源将 **具有 的 distributionMethod** 属性值 `organization`。
 
 **requiresReview** 属性允许任何用户提交应用供管理员审阅。 管理员可以通过此 API 或管理中心批准或拒绝Microsoft Teams应用。
 
@@ -31,7 +31,7 @@ ms.locfileid: "62110569"
 | 委派（个人 Microsoft 帐户） | 不支持|
 | 应用程序                            | 不支持。 |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |属性|类型|说明|
 |----|----|----|
-|requiresReview| 布尔 | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
+|requiresReview| Boolean | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true`。 具有管理员权限的用户可以选择 `requiresReview` 不设置或将 `false`  值设置为 ，应用将被视为已批准，并且将立即发布。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -118,7 +118,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例 2：Upload应用程序以检查组织的应用程序目录
+### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例 2：Upload新应用程序以审阅组织的应用程序目录
 
 #### <a name="request"></a>请求
 

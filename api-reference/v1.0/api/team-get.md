@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0ce3e3b53d85d24bfc86c1ce4392a701ca95f8c5
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 49dc432bb4d3eb59992951f96b9ccd8d7ee0b8a0
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201706"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442671"
 ---
 # <a name="get-team"></a>获取团队
 
@@ -29,7 +29,7 @@ ms.locfileid: "62201706"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamSettings.Read.Group *、TeamSettings.ReadWrite.Group*、Team.ReadBasic.All、TeamSettings.Read.All、TeamSettings.ReadWrite.All、Group.Read.All **、Group.ReadWrite.All**、Directory.Read.All **、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
+> **Note**： 仅支持使用 ** 标记的权限以实现向后兼容。 我们建议你更新解决方案以使用不同的权限，并避免今后使用这些权限。 标记为 * 的权限使用 [特定于资源的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

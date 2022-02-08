@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be57dc59fdc761bee92bcd1b5963bd6a869d945f
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 3a98d4c2e48398139e7093087689c15b9aa86833
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290237"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443421"
 ---
 # <a name="delete-tab-from-channel"></a>从频道中删除选项卡
 
@@ -18,18 +18,18 @@ ms.locfileid: "60290237"
 
 
 
-从 (团队中) 频道中删除[取消](../resources/channel.md)[固定选项卡。](../resources/team.md) 
+从 (频道) 取消固定[选项卡。](../resources/team.md)[](../resources/channel.md) 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） |  TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab.Delete.Group、TeamsTab.ReadWrite.Group、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | TeamsTab.Delete.Group *、TeamsTab.ReadWrite.Group*、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.ReadWrite.All、**Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 ** 的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

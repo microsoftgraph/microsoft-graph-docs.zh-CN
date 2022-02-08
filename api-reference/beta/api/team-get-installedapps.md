@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 893ea20683fe480ba06a91a4564e251fe507915f
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 2309e80c9e32c87a4ff08b457f00f375617908b5
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225215"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442566"
 ---
 # <a name="get-installed-app-in-team"></a>在团队中获取已安装的应用
 
@@ -26,11 +26,11 @@ ms.locfileid: "62225215"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsAppInstallation.ReadWriteSelfForTeam、TeamsAppInstallation.ReadForUser、TeamsAppInstallation.ReadForTeam、TeamsAppInstallation.ReadWriteForTeam、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | TeamsAppInstallation.ReadWriteSelfForTeam、TeamsAppInstallation.ReadForUser、TeamsAppInstallation.ReadForTeam、TeamsAppInstallation.ReadWriteForTeam、Group.Read.All、**Group.ReadWrite.All**、Directory.Read.All、**Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | *TeamsAppInstallation.Read.Group、TeamsAppInstallation.ReadWriteSelfForTeam、TeamsAppInstallation.ReadForTeam.All、TeamsAppInstallation.ReadWriteForTeam.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All**、Directory.ReadWrite.All** |
+|应用程序 | TeamsAppInstallation.Read.Group *、TeamsAppInstallation.ReadWriteSelfForTeam、TeamsAppInstallation.ReadForTeam.All、TeamsAppInstallation.ReadWriteForTeam.All、Group.Read.All、**Group.ReadWrite.All**、Directory.Read.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。 标记为 **的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ GET /teams/{id}/installedApps/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [teamsAppInstallation](../resources/teamsappinstallation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [teamsAppInstallation](../resources/teamsappinstallation.md) 对象。
 
 ## <a name="examples"></a>示例
 

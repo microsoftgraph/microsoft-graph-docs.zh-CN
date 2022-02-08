@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 69e9aa0e814e399918bf4c490c202302960b559c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a7aaf17a86dcbc24aba9f8a65c423118400e92b2
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62087877"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442944"
 ---
 # <a name="remove-app-from-team"></a>从团队中删除应用
 
@@ -18,7 +18,7 @@ ms.locfileid: "62087877"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从指定的 [团队](../resources/teamsappinstallation.md) 卸载 [应用](../resources/team.md)。
+从指定 [团队](../resources/teamsappinstallation.md) 卸载 [应用](../resources/team.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "62087877"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamsAppInstallation.ReadWriteForTeam.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

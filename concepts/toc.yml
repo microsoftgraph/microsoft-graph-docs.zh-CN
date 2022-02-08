@@ -256,6 +256,8 @@ items:
             href: education-upload-resource-overview.md
           - name: 分配和提交状态转换
             href: assignments-submissions-states-transition.md
+          - name: 指定分配通知的默认通道
+            href: education-build-notificationchannelurl.md
       - name: 文件
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:

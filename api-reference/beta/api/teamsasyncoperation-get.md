@@ -5,19 +5,19 @@ author: jecha
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bfbb9f7face458382af90f9899d76461a336871b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 059b68c1f7ffafce9484d83d3642fd078e8a88d1
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118150"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443224"
 ---
 # <a name="get-teamsasyncoperation"></a>获取 teamsAsyncOperation
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取特定[Teams运行或](../resources/teamsasyncoperation.md)运行的指定异步操作。
+获取特定[Teams](../resources/teamsasyncoperation.md)运行或运行的指定异步操作。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,7 +30,7 @@ ms.locfileid: "62118150"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | ChatSettings.Read.Chat *、ChatSettings.ReadWrite.Chat*、Chat.Manage.Chat*、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { 
@@ -43,7 +43,7 @@ GET /chats/{chat-id}/operations/{operation-id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 OData `$select` [查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,7 +57,7 @@ GET /chats/{chat-id}/operations/{operation-id}
 
 ## <a name="response"></a>响应
 
-如果成功，这将在响应 `200 OK` 正文中返回 响应代码和 [teamsAsyncOperation](../resources/teamsasyncoperation.md) 对象。
+如果成功，这将在响应 `200 OK` 正文中返回 响应 [代码和 teamsAsyncOperation](../resources/teamsasyncoperation.md) 对象。
 
 ## <a name="example-get-operation-on-chat"></a>示例：获取聊天操作
 

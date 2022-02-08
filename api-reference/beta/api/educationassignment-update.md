@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cb1cc349ae7787e5daf95e50b882f2045605129f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 351e65433016fe4b9b6ee0e5a69831cfde19eb58
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090237"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443280"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -47,8 +47,8 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|addedStudentAction|String| 控制在作业发布后添加的学生的行为。|
-|addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制发布作业时将作业添加到学生和教师日历的作业行为。 可能的值是 `none` `studentsAndPublisher` ：、、 `studentsAndTeamOwners` `studentsOnly` 和 `unknownFutureValue` 。 默认值为 `none`。 当工作分配的状态为"已发布"时， **不能** 修改。 |
+|addedStudentAction|字符串| 控制在作业发布后添加的学生的行为。|
+|addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制发布作业时将作业添加到学生和教师日历的作业行为。 可能的值是：、`studentsAndPublisher``none`、`studentsAndTeamOwners`和 `studentsOnly` `unknownFutureValue`。 默认值为 `none`。 当工作分配的状态为"已发布"时， **不能** 修改。 |
 |allowLateSubmissions|布尔| 提交是否可在截止日期后提交。|
 |allowStudentsToAddResourcesToSubmission|布尔| 学生是否可以向提交中添加资源。 指示提交中的唯一项目是否来自工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 作业应发布到学生的日期。 工作分配发布后无法编辑。 |
@@ -58,10 +58,10 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 |dueDateTime|DateTimeOffset| 日期分配到期。 |
 |一个|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| 如何对作业进行评分。|
 |instructions|itemBody| 要与作业一起向学生提供的说明。 |
-|notificationChannelUrl|String| 发布分配发布通知的频道。 发布分配后不允许更新通道 URL，并且仅在 **assignTo** 值为 [educationAssignmentClassRecipient 时允许更新](../resources/educationassignmentclassrecipient.md)。|
+|notificationChannelUrl|字符串| 发布分配发布通知的频道。 发布分配后不允许更新通道 URL，并且仅在 **assignTo** 值为 [educationAssignmentClassRecipient 时允许更新](../resources/educationassignmentclassrecipient.md)。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationAssignment](../resources/educationassignment.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [educationAssignment](../resources/educationassignment.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -179,6 +179,7 @@ Content-type: application/json
 ## <a name="see-also"></a>另请参阅
 
 * [分配和提交状态、转换和限制](/graph/assignments-submissions-states-transition)
+* [指定教育作业通知的默认频道](/graph/education-build-notificationchannelurl)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

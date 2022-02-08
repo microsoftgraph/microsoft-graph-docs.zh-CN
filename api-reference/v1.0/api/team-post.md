@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bd4316f9089a195c2dac61d746f7c9ffc6b064b4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 54e5cac8733ad570e5fb6e65b88e639b3bc6a74c
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62087696"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442769"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -31,7 +31,7 @@ ms.locfileid: "62087696"
 > **注意**：Teamwork.Migrate.All 权限 *仅* 支持 [迁移](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **Note**： 仅支持使用 ** 标记的权限以实现向后兼容。 我们建议你更新解决方案以使用不同的权限，并避免今后使用这些权限。
 
 ## <a name="http-request"></a>HTTP 请求
 

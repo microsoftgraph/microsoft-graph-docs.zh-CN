@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f074dbac59189e33f72b18092fe31c2faa6b0b92
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e3343b55800a6842e1ebad41373ba3952fdc7474
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131569"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442860"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -26,15 +26,15 @@ ms.locfileid: "62131569"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | **Channel.Create、Group.ReadWrite.All、Directory.ReadWrite.All** |
+|委派（工作或学校帐户） | Channel.Create、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Channel.Create.Group *、Channel.Create、Teamwork.Migrate.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
-> **注意**：将来，Microsoft 可能会要求你或你的客户根据使用团队合作导入的数据量支付额外的费用。Migrate.All 和/或 [迁移 API。](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+> **注意**：将来，Microsoft 可能会要求你或你的客户根据使用团队合作.Migrate.All 和/或迁移 API 导入的数据量支付额外的 [费用](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +60,7 @@ POST /teams/{team-id}/channels
 如果该请求成功，此方法返回 `400 Bad Request` 响应代码。 下面是出现此响应的常见原因：
 
 * **createdDateTime** 将在未来设置。
-* **已正确指定 createdDateTime，****但 channelCreationMode** 实例属性缺失或设置为无效值。
+* **已正确指定 createdDateTime** ， **但 channelCreationMode** 实例属性缺失或设置为无效值。
 
 ## <a name="examples"></a>示例
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: e5b56c361e7c86c46ebd18f123be4bc784a6a7e6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: efb5e63a5354f595a3e7e697a7089b57441d8dd3
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128420"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443393"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -45,7 +45,7 @@ ms.locfileid: "62128420"
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 

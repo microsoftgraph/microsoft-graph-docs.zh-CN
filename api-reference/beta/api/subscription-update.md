@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 5ecece0947dcd2151bda836ddb11dc56cd6152f6
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: 9820a18f7c3ab014c32df5d9687993e10e77ae12
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184036"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443322"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -61,9 +61,9 @@ ms.locfileid: "62184036"
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All，TeamSettings.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-|[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 

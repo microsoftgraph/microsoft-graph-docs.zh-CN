@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b70d665fc8ba1db19efe7a5c31390f4dd1096164
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 85b39366f657d41f6abe19b34f60ad6b93d113bc
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107676"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443007"
 ---
 # <a name="get-chat"></a>获取聊天
 
@@ -275,6 +275,50 @@ Content-type: application/json
             "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         }
     ]
+}
+```
+
+### <a name="example-4-get-the-meeting-details-of-a-chat-associated-with-a-microsoft-teams-meeting"></a>示例 4：获取与 Microsoft Teams 会议关联的聊天的详细信息
+#### <a name="request"></a>请求
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_meeting_chat"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/chats/19:meeting_ZDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2
+```
+
+#### <a name="response"></a>响应
+以下示例显示了相应的响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "19:meeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2",
+    "topic": "Test Meeting",
+    "createdDateTime": "2021-08-17T12:21:37.322Z",
+    "lastUpdatedDateTime": "2021-08-18T00:31:31.817Z",
+    "chatType": "meeting",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4%40thread.v2/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
+    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d35",
+    "onlineMeetingInfo": {
+        "calendarEventId": "AAMkADAzMjNhY2NiLWVmNDItNDVjYS05MnFjLTExY2U0ZWMyZTNmZQBGAAAAAAARDMODhhR0TZRGWo9nN0NcBwAmvYmLhDvYR6hCFdQLgxR-AAAAAAENAAAmvYmLhDvYR6hCFdQLgxR-AABkrglJAAA=",
+        "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3Ameeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4%40thread.v2/0?context=%7b%22Tid%22%3a%222432b57b-0abd-43db-aa7b-16eadd115d34%22%2c%22Oid%22%3a%22bfb5bb25-3a8d-487d-9828-7875ced51a30%22%7d",
+        "organizer": {
+            "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+        }
+    }
 }
 ```
 

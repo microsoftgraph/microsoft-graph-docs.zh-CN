@@ -1,23 +1,23 @@
 ---
 title: 列出 teamsApp
-description: 列出Teams应用程序目录中发布的应用程序的列表。
+description: 列出Teams应用程序目录中发布的应用程序。
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2ff4843b5f1f1a9a25fee26676b377f4bd489f00
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 830f2aa138db9e4c2dfcd15e8b7d7712612e888e
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62290481"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443154"
 ---
 # <a name="list-teamsapp"></a>列出 teamsApp
 
 命名空间：microsoft.graph
 
 列出[应用程序](../resources/teamsapp.md)目录中Microsoft Teams应用程序。
-这包括来自 Microsoft Teams 应用商店的应用程序，以及租户应用程序目录 (组织的应用程序目录中) 。 若要仅从组织的应用程序目录中获取应用程序，请指定 `organization` 为请求 **中的 distributionMethod** 。
+这包括来自租户Microsoft Teams的应用程序，以及租户应用程序目录 (组织的应用程序目录中) 。 若要仅从组织的应用程序目录中获取应用程序，请指定 `organization` 为请求 **中的 distributionMethod** 。
 
 > [!NOTE]
 > `id` **teamsApp** 资源的 由`id`服务器生成，与 Teams 清单中指定的 不同。 开发人员`id`作为应用清单的一Teams提供的 标记在 `externalId` **teamsApp** 资源中。
@@ -32,7 +32,7 @@ ms.locfileid: "62290481"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | AppCatalog.Read.All、AppCatalog.ReadWrite.All |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
 
 ## <a name="http-request"></a>HTTP 请求
 

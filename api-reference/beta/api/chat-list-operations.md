@@ -5,19 +5,19 @@ author: jecha
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ce3f28a74eaf904331b21810509237b219077c5f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e4310d314ed345c969be17e4d894ce1b36d82da3
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103853"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443133"
 ---
 # <a name="list-operations-on-a-chat"></a>列出聊天操作
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出[Teams](../resources/teamsasyncoperation.md)聊天中运行或运行的异步操作[的所有异步操作](../resources/chat.md)。
+列出[Teams聊天中](../resources/teamsasyncoperation.md)运行或正在运行的所有异步[操作](../resources/chat.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "62103853"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | ChatSettings.Read.Chat *、ChatSettings.ReadWrite.Chat*、Chat.Manage.Chat*、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { 
@@ -41,7 +41,7 @@ GET /chats/{chat-id}/operations
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$filter` 、 `$select` 、 和 `$top` `$skip` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 、 `$filter`、 `$select`和 `$top``$skip` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,7 +55,7 @@ GET /chats/{chat-id}/operations
 
 ## <a name="response"></a>响应
 
-如果成功，这将在响应正文中返回 响应代码和 `200 OK` [teamsAsyncOperation](../resources/teamsasyncoperation.md) 对象集合。
+如果成功，这将在响应 `200 OK` 正文中返回 响应代码和 [teamsAsyncOperation](../resources/teamsasyncoperation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

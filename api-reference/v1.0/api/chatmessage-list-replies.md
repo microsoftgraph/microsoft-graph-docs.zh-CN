@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4c19c719f9343a03b4811bcb5fcef5115d7b654b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 60009cfdc127f26c5e90773f84eb56f96b25949c
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124863"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443000"
 ---
 # <a name="list-replies"></a>列出答复
 
@@ -31,7 +31,7 @@ ms.locfileid: "62124863"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChannelMessage.Read.Group*、ChannelMessage.Read.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

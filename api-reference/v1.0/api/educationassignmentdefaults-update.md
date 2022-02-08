@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ac354e9e373b7c733652fb22fab326dd1a0010be
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e07737d9a5afcd2c97342425b7f47966e5c26350
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111359"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442839"
 ---
 # <a name="update-educationassignmentdefaults"></a>更新 educationAssignmentDefaults
 命名空间：microsoft.graph
@@ -52,15 +52,15 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 |属性|类型|说明|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction| 在作业发布日期之后添加的学生的课堂级别默认操作。 可取值为：`none`、`assignIfOpen`。 默认值为 `none`。|
-|addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制 **发布** 作业时将作业添加到学生和教师日历 **的作业** 行为。 可能的值包括 `none`、`studentsAndPublisher`、`studentsAndTeamOwners`、`unknownFutureValue`、`studentsOnly`。 请注意，必须使用此可变化枚举 (请求) 获取以下 `Prefer: include - unknown -enum-members` [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` ： 。 可选。|
+|addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制 **发布** 作业时将作业添加到学生和教师日历 **的作业** 行为。 可能的值包括 `none`、`studentsAndPublisher`、`studentsAndTeamOwners`、`unknownFutureValue`、`studentsOnly`。 请注意，必须使用此可 `Prefer: include - unknown -enum-members` 变化枚举 (请求) 获取以下 [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)： `studentsOnly`。 可选。|
 |dueTime|TimeOfDay| "到期时间"字段的类级别默认值。 默认值为 `23:59:00`|
-|notificationChannelUrl|String| 默认Teams发送与分配相关的通知的通道。 默认值为 `null`。|
+|notificationChannelUrl|String| 默认Teams发送与工作分配相关的通知的通道。 默认值为 `null`。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -128,3 +128,6 @@ Content-Type: application/json
 }
 ```
 
+## <a name="see-also"></a>另请参阅
+
+* [指定教育作业通知的默认频道](/graph/education-build-notificationchannelurl)

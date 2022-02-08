@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: aaef6c52e025d1ee49fde994763b5195c21e4d20
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cc4f6523b836efcfc0fd57251af74e855ffb54c9
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134992"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443357"
 ---
 # <a name="get-userinsightssettings"></a>获取 userInsightsSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "62134992"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [itemInsights](../resources/iteminsights.md) 和会议时间见解 [的用户可自定义的隐私设置](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)。
+获取 [itemInsights](../resources/iteminsights.md) 和会议时间见解的用户 [可自定义的隐私设置](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)。
 
 ## <a name="permissions"></a>权限
 
@@ -35,10 +35,10 @@ ms.locfileid: "62134992"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/settings/itemInsights
-GET /user/{userId}/settings/itemInsights
+GET /users/{userId}/settings/itemInsights
 ```
 
->**注意：** 具有 或 的请求仅可供用户或具有 `userId` `userPrincipalName` User.ReadWrite.All 权限的用户访问。 若要了解详细信息，请参阅[权限](/graph/permissions-reference)。
+>**注意：** 具有 或 `userId` `userPrincipalName` 的请求仅可供用户或具有 User.ReadWrite.All 权限的用户访问。 若要了解详细信息，请参阅[权限](/graph/permissions-reference)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,7 +52,7 @@ GET /user/{userId}/settings/itemInsights
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userInsightsSettings](../resources/userinsightssettings.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [userInsightsSettings](../resources/userinsightssettings.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 0ee9a4a9d9786b20cbef9af1417e3d2d5126bad2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1fa6de2c7b8f9dea65e63c7473f66924f6449201
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105310"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443091"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -60,7 +60,7 @@ ms.locfileid: "62105310"
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite、Subscription.Read.All | Tasks.ReadWrite、Subscription.Read.All | 不支持 |
 |[user](../resources/user.md) | User.Read.All、Subscription.Read.All | User.Read.All | User.Read.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 响应结果基于调用应用的上下文。 以下部分介绍常见方案。
 

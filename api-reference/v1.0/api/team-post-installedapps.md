@@ -5,18 +5,18 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5613cf158182389489490785fa7534b71991d892
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8931f8e7438a65e3857bce20899e6faab5facd75
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121741"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442930"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 
 命名空间：microsoft.graph
 
-将 [应用安装到](../resources/teamsapp.md) 指定的 [团队](../resources/team.md)。
+将 [应用](../resources/teamsapp.md) 安装到指定的 [团队](../resources/team.md)。
 
 > **注意：** 目前，此操作不支持安装需要特定于资源的同意权限的应用。 有关详细信息，请参阅[已知问题](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "62121741"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamsAppInstallation.ReadWriteForTeam.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
   
 
 ## <a name="http-request"></a>HTTP 请求
@@ -47,7 +47,7 @@ POST /teams/{team-id}/installedApps
 
 ## <a name="request-body"></a>请求正文
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |teamsApp|String|要添加的应用的 ID。|
 

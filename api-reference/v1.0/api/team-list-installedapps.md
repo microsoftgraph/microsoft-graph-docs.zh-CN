@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e2379fe3c78d5a0304b607f5d877903a1c5060ce
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 76e9facf94532b36d70b39c72dba90d0674283e6
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121799"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443098"
 ---
 # <a name="list-apps-in-team"></a>列出团队中的应用
 
@@ -28,11 +28,11 @@ ms.locfileid: "62121799"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsAppInstallation.ReadForTeam、TeamsAppInstallation.ReadWriteForTeam、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | TeamsAppInstallation.ReadForTeam、TeamsAppInstallation.ReadWriteForTeam、Group.Read.All、**Group.ReadWrite.All**、Directory.Read.All、**Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | *TeamsAppInstallation.Read.Group、TeamsAppInstallation.ReadForTeam.All、TeamsAppInstallation.ReadWriteForTeam.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All**、Directory.ReadWrite.All** |
+|应用程序 | TeamsAppInstallation.Read.Group *、TeamsAppInstallation.ReadForTeam.All、TeamsAppInstallation.ReadWriteForTeam.All、Group.Read.All、**Group.ReadWrite.All**、Directory.Read.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,7 +44,7 @@ GET /teams/{team-id}/installedApps
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$filter` 、 `$select` 和 `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 、 `$filter`和 `$select``$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 

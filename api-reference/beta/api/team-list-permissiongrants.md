@@ -5,12 +5,12 @@ author: jecha
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 692144e78bd170baf00ef521b114b21ff77bb8b3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0a31d4696a52f705cfa48ea7f250bcef9f0f6613
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126830"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443112"
 ---
 # <a name="list-permissiongrants-of-a-team"></a>列出团队的权限管理
 
@@ -30,7 +30,7 @@ ms.locfileid: "62126830"
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                                                                                                                                                                           |
 | 应用程序                            | TeamsAppInstallation.Read.Group *、TeamsAppInstallation.ReadForTeam.All、TeamsAppInstallation.ReadWriteSelfForTeam.All、TeamsAppInstallation.ReadWriteForTeam.All、TeamsApp.Read.Group* |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -1,6 +1,16 @@
 ---
-author：一个 Author：一个用户，作者：一个 Author：driveItem：copy ms.localizationpriority： medium ms.prod： "sharepoint" description： "Asynchronously creates a copy of an driveItem (including any children) ， under a new parent item or with a new name."
-doc_type： apiPageType
+author: JeremyKelley
+title: driveItem：copy
+ms.localizationpriority: medium
+ms.prod: sharepoint
+description: 以异步方式在新父项下或使用新名称创建一个 driveItem 副本（包括任何子项）。
+doc_type: apiPageType
+ms.openlocfilehash: f5ec199fee10ca140f0fc9a067244a73660a3dee
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443350"
 ---
 # <a name="driveitem-copy"></a>driveItem：copy
 
@@ -8,7 +18,7 @@ doc_type： apiPageType
 
 以异步方式在新父项下或使用新名称创建一个 [driveItem][item-resource] 副本（包括任何子项）。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +42,7 @@ POST /users/{userId}/drive/items/{itemId}/copy
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `@microsoft.graph.conflictBehavior` 查询参数在发生冲突时自定义行为。
+此方法支持查询 `@microsoft.graph.conflictBehavior` 参数在发生冲突时自定义行为。
 
 | 值           | 说明                                    |
 |:----------------|:---------------------------------------------- |

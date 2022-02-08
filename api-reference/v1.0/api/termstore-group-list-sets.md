@@ -3,14 +3,14 @@ title: 列表集
 description: 获取 set 对象及其属性的列表。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 9532079cf515409ea5b421c5fdabb9ef95adaa68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5b222bde2791d62107176973490f55e8f9fdf8f2
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094707"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442587"
 ---
 # <a name="list-sets"></a>列表集
 命名空间：microsoft.graph.termStore
@@ -50,7 +50,7 @@ GET sites/{site-id}/termStore/groups/{group-id}/sets
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码 `200 OK` [和 set](../resources/termstore-set.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和 set](../resources/termstore-set.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -62,7 +62,7 @@ GET sites/{site-id}/termStore/groups/{group-id}/sets
 }-->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups/03577abb-975e-4fb4-9ee0-4102a9108f94/sets
+GET https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups/03577abb-975e-4fb4-9ee0-4102a9108f94/sets
 ```
 
 ### <a name="response"></a>响应

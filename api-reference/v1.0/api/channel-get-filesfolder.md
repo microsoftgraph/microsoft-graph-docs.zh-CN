@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1be9f434fa9af12298e9ff7353f02ed6a3fddb69
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0019af65ee8e1f991412c8751d9f798610810397
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122364"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443014"
 ---
 # <a name="get-filesfolder"></a>获取 filesFolder
 
@@ -27,7 +27,7 @@ ms.locfileid: "62122364"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Files.Read.All、Files.ReadWrite.All、Group.Read.All **、Group.ReadWrite.All** |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **Note**： 仅支持使用 ** 标记的权限以实现向后兼容。 我们建议你更新解决方案以使用不同的权限，并避免今后使用这些权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

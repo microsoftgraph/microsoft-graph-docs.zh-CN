@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a2ec5526e0a02cda7e23105ea6663b8bb5943577
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: eea0588ea71be345b675adfc206f2eacbaed1f75
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131907"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442993"
 ---
 # <a name="list-members-of-team"></a>列出团队成员
 命名空间：microsoft.graph
@@ -31,7 +31,7 @@ ms.locfileid: "62131907"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ## <a name="http-request"></a>HTTP 请求
 

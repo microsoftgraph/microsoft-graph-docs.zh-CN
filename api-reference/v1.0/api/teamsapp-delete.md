@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1bb24da873ba73ee0f62e57f3fd907735770399c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b7218457dd6c5dee56a1ead5462f7280a7325db3
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131871"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443364"
 ---
 # <a name="delete-teamsapp"></a>删除 teamsApp
 
@@ -19,7 +19,7 @@ ms.locfileid: "62131871"
 <!-- markdownlint-disable MD001 -->
 ### <a name="delete-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用程序
 
-从 [租户应用程序](../resources/teamsapp.md) 目录组织的应用程序目录中 (应用程序) 。 若要删除应用，应用的 **distributionMethod** 属性必须设置为 `organization` 。
+从 [租户应用程序](../resources/teamsapp.md) 目录组织的应用程序目录中 (应用程序) 。 若要删除应用， **应用的 distributionMethod** 属性必须设置为 `organization`。
 
 您还可以使用此 API 从评价过程中删除已提交的应用。
 
@@ -35,7 +35,7 @@ ms.locfileid: "62131871"
 | 委派（个人 Microsoft 帐户） | 不支持|
 | 应用程序                            | 不支持。 |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
 
 ## <a name="http-request"></a>HTTP 请求
 

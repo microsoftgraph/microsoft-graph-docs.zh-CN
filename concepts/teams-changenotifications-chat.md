@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 87e41e104ecc538d8b3a7d21e289d41430ff789b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0846cef129ff103cbf5ba8ca8095fe7bdf26aa4e
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138930"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442818"
 ---
 # <a name="get-change-notifications-for-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取聊天的更改通知
 
@@ -59,7 +59,7 @@ Content-Type: application/json
 |委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
 |应用程序 | ChatSettings.Read.Chat *、ChatSettings.ReadWrite.Chat*、Chat.Manage.Chat*、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All | beta |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ### <a name="example"></a>示例
 
