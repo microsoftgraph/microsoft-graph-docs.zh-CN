@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: df4158f7869407772b0c7a8807366d03e2ef7a62
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 22e2cb56461830156d76c10f9e136a62dca4d440
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791943"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468305"
 ---
 # <a name="accesspackagequestion-resource-type"></a>accessPackageQuestion 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "61791943"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于 `accessPackageQuestion` 访问包分配策略 [的 属性](accesspackageassignmentpolicy.md)。 
+用于访问包分配策略的 **accessPackageQuestion** 属性和 **accessPackageResourceAttributeQuestion 中的 accessPackageResourceAttributeQuestion**。[](accesspackageassignmentpolicy.md) [](accesspackageresourceattribute.md)
 
-子类型包括 [accessPackageTextInputQuestions](accesspackagetextinputquestion.md) 和 [accessPackageMultipleChoiceQuestions](accesspackagemultiplechoicequestion.md)。
+子类型包括 [accessPackageTextInputQuestion](accesspackagetextinputquestion.md) 和 [accessPackageMultipleChoiceQuestion](accesspackagemultiplechoicequestion.md)。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

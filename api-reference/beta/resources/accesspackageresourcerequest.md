@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e3bead9d64b54cc4301d468a3805b09b367f389b
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 9f6557a4256b692005c82ca18bc93041f003b886
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651244"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468290"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>accessPackageResourceRequest 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "61651244"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD](entitlementmanagement-overview.md)权利管理中，访问包资源请求是请求将资源添加到目录，以便资源的角色可在目录的一个或多个访问包中使用，或者从访问包不再需要的目录中删除资源。
+在 [Azure AD](entitlementmanagement-overview.md) 权利管理中，访问包资源请求是请求将资源添加到目录，以便资源[](accesspackageresource.md)的角色可用于目录的一个或多个访问包，或者从访问包不再需要的目录中删除资源。
 
 ## <a name="methods"></a>方法
 
@@ -37,8 +37,8 @@ ms.locfileid: "61651244"
 |isValidationOnly|Boolean|如果设置，则不添加资源。|
 |justification|String|请求者添加或删除资源的理由。|
 |requestState|String| 服务能否将资源添加到目录的结果。  该值是 `Delivered` 资源是已添加还是已删除。 只读。|
-|requestStatus|String|只读。|
-|requestType|String|用于 `AdminAdd` 添加资源（如果调用方是管理员或资源所有者） `AdminRemove` 或删除资源。 |
+|requestStatus|字符串|只读。|
+|requestType|String|用于 `AdminAdd` 添加资源（如果调用方是管理员或资源所有者 `AdminRemove` ）或删除资源。 |
 
 ## <a name="relationships"></a>关系
 

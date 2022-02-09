@@ -1,16 +1,16 @@
 ---
 title: accessPackageMultipleChoiceQuestion 资源类型
-description: 具有多个选项作为问题答案格式的 accessPackageQuestion 的子类
+description: 具有多个选项作为问题的回答格式的 accessPackageQuestion 的子类
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 54054edcda2f41ad3f4e1bd29fb807c18709ee1d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1efcfabbbc345f5820ddaf90bcec9ba9c7076837
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137338"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468319"
 ---
 # <a name="accesspackagemultiplechoicequestion-resource-type"></a>accessPackageMultipleChoiceQuestion 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50137338"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**accessPackageQuestion 的子项**，它提供请求者必须从中选择答案的多个选项。
+**accessPackageQuestion** 的子项，它提供请求者必须从中选择答案的多个选项。 这用于 [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) 的 **questions** 属性和访问包资源的 [accessPackageResourceAttribute](accesspackageresourceattribute.md) 中。
 
 继承自 [accessPackageQuestion](../resources/accesspackagequestion.md)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "50137338"
 |:---|:---|:---|
 |allowsMultipleSelection|Boolean|指示请求者是否可以选择多个选项作为其答案。|
 |choices|[accessPackageAnswerChoice](../resources/accesspackageanswerchoice.md) 集合|答案选择列表。|
-|id|字符串|问题的 ID。 继承自 [accessPackageQuestion](../resources/accesspackagequestion.md)。|
+|id|String|问题的 ID。 继承自 [accessPackageQuestion](../resources/accesspackagequestion.md)。|
 |isRequired|Boolean|指示请求者是否需要提供答案。 继承自 [accessPackageQuestion](../resources/accesspackagequestion.md)。|
 |Sequence|Int32|向请求者显示问题列表时此问题的相对位置。 继承自 [accessPackageQuestion](../resources/accesspackagequestion.md)。|
 |text|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|要显示请求者的问题的文本。 继承自 [accessPackageQuestion](../resources/accesspackagequestion.md)。|

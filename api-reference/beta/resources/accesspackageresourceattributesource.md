@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a44db9ab0613f8813cbd4bc77ae796105216e668
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 1b0a238bb783c166fdacfd812b363ed53db69574
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61865410"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468326"
 ---
 # <a name="accesspackageresourceattributesource-resource-type"></a>accessPackageResourceAttributeSource 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "61865410"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-一个抽象类型，用于公开对象，这些对象定义用户使用传递给最终系统或请求审批者的值配置的属性。 它继承自 [accessPackageResourceAttributeQuestion](../resources/accesspackageresourceattributequestion.md)。 
+一个抽象类型，用于公开对象，这些对象定义用户使用传递给最终系统或请求审批者的值配置的属性。  它在 [accessPackageResourceAttribute](accesspackageresourceattribute.md) 的 **attributeSource** 属性中使用。 此类型由 [accessPackageResourceAttributeQuestion 继承](../resources/accesspackageresourceattributequestion.md)。
 
 ## <a name="properties"></a>属性
 无。

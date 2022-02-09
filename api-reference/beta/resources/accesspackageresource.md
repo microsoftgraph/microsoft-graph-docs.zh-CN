@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 01c37923f3ca63b7dd7ccf6803bb2bc696ef4546
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 867e4e400175cd912b90b79aadfd64591bedfb7b
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792139"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468340"
 ---
 # <a name="accesspackageresource-resource-type"></a>accessPackageResource 资源类型
 
@@ -30,8 +30,8 @@ ms.locfileid: "61792139"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|包含资源的环境信息。 这可以使用批注或环境的 `@odata.bind` *originId 进行设置*。|
-|attributes|[accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md) 集合| 包含资源的属性信息。
+|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|包含资源的环境信息。 这可以使用批注或 `@odata.bind` 环境的 *originId 进行设置*。|
+|attributes|[accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md) 集合| 包含有关从请求程序收集并发送到资源应用程序的属性的信息。 |
 |addedBy|String|只读。|
 |addedOn|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |description|String|资源的说明。|
@@ -39,8 +39,8 @@ ms.locfileid: "61792139"
 |id|String| 只读。|
 |isPendingOnboarding|布尔|如此 如果资源尚不可用于工作分配。|
 |originId|String|源系统中资源的唯一标识符。 对于组Azure AD，这是组的标识符。 |
-|originSystem|String|源系统中资源的类型，如 `SharePointOnline` 或 `AadApplication` `AadGroup` 。|
-|resourceType|String|资源的类型，例如，它是已连接Azure AD应用程序，还是 SharePoint `Application` `SharePoint Online Site` Online 网站。|
+|originSystem|字符串|源系统中资源的类型 `SharePointOnline`，如 或 `AadApplication` `AadGroup`。|
+|resourceType|String|资源的类型`Application`，例如，它是已Azure AD应用程序`SharePoint Online Site`，还是 SharePoint Online 网站。|
 |url|String|资源的唯一资源定位器，例如用于将用户登录应用程序的 URL。|
 
 ## <a name="relationships"></a>关系

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5c146dcaa4827e814ed32743c46068992c780803
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1221cd9af225a9a59009b56861879c93506e059f
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119056"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468312"
 ---
 # <a name="create-accesspackageresourcerequest"></a>创建 accessPackageResourceRequest
 
@@ -47,20 +47,20 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象的 JSON 表示形式。 在 `accessPackageResource` 请求中包括与 [accessPackageResource](../resources/accesspackageresource.md) 对象的关系。
+在请求正文中，提供 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象的 JSON 表示形式。 在请求 `accessPackageResource` 中包括 [与 accessPackageResource](../resources/accesspackageresource.md) 对象的关系。
 
-若要将Azure AD组作为资源添加到目录，请设置 **catalogId** 为目录的 ID，**将 requestType** 设置为 ，将 设置为 ，将 `AdminAdd` 设置为 表示资源的 `accessPackageResource` 。 内的 **originSystem** 属性的值 `accessPackageResource` 应为 `AadGroup` **，originId** 的值是组的标识符。
+若要将Azure AD组作为资源添加到目录，请设置 **catalogId** 为目录 ID，**将 requestType** `AdminAdd`设置为 ，将 设置为 ，将 设置为 表示`accessPackageResource`资源的 。 内的 **originSystem** 属性的值`accessPackageResource`应为 ，`AadGroup`**originId** 的值是组的标识符。
 
-若要从Azure AD应用程序，请设置 **catalogId** 为目录 ID，**将 requestType** 设置为 ，并设置要删除 `AdminRemove` `accessPackageResource` 的资源对象。  资源对象可以使用列表 [accessPackageResources 检索](accesspackagecatalog-list-accesspackageresources.md)。
+若要从Azure AD应用程序，请设置 **catalogId** 为目录 ID，**将 requestType** `AdminRemove`设置为 ，`accessPackageResource`并设置要删除的资源对象。  可以使用 list [accessPackageResources 检索 resource 对象](accesspackagecatalog-list-accesspackageresources.md)。
 
-若要为多地理位置 Sharepoint Online 资源分配地理位置环境，在 对象中包括 **accessPackageResourceEnvironment** `accessPackageResource` 关系。 可通过两种方式完成此操作：
-+ 使用 `@odata.bind` annotation 将 的 `id` `accessPackageResourceEnvironment` 分配给 `accessPackageResourceEnvironment` 对象。
-+ 指定 `originId` 对象中的 `accessPackageResourceEnvironment` 参数 `accessPackageResourceEnvironment` 。
+若要为多地理位置 Sharepoint Online 资源分配地理位置环境，在 **对象中包括 accessPackageResourceEnvironment** `accessPackageResource` 关系。 可通过两种方式完成此操作：
++ 使用 `@odata.bind` annotation 将 `id` 的 `accessPackageResourceEnvironment` 分配给对象 `accessPackageResourceEnvironment` 。
++ `originId`指定 对象中的 `accessPackageResourceEnvironment` 参数`accessPackageResourceEnvironment`。
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -152,7 +152,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 本示例中， `@odata.bind` 批注用于将 分配给 `id` `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` 对象。
+下面展示了示例请求。 本示例中，批注`@odata.bind`用于将 分配给`id``accessPackageResourceEnvironment`对象`accessPackageResourceEnvironment`。
 
 
 
@@ -238,7 +238,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 本示例在对象中 `accessPackageResourceEnvironment` 指定 的参数 `accessPackageResourceEnvironment` 。
+下面展示了示例请求。 本示例在对象 `accessPackageResourceEnvironment` 中指定 的参数 `accessPackageResourceEnvironment` 。
 
 
 
@@ -479,6 +479,82 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-6-create-an-accesspackageresourcerequest-for-adding-an-application"></a>示例 6：创建用于添加应用程序的 accessPackageResourceRequest
+
+#### <a name="request"></a>请求
+
+下面是向目录添加应用程序的请求示例，包括指定该应用程序的必需属性。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests6"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+  "catalogId": "26ac0c0a-08bc-4a7b-a313-839f58044ba5",
+  "requestType": "AdminAdd",
+  "justification": "",
+  "accessPackageResource": {
+      "displayName": "Faculty cafeteria ordering",
+      "description": "Example application",
+      "url": "https://myapps.microsoft.com/example.com/signin/Faculty%20cafeteria%20ordering/f1e3b407-942d-4934-9a3f-cef1975cb988/",
+      "resourceType": "Application",
+      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+      "originSystem": "AadApplication",
+      "attributes": [
+        {
+          "attributeName": "extension_2b676109c7c74ae2b41549205f1947ed_personalTitle",
+          "isEditable": true,
+          "isPersistedOnAssignmentRemoval": true,
+          "attributeSource": {
+              "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
+              "question": {
+                  "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                  "isRequired": false,
+                  "sequence": 0,
+                  "isSingleLineQuestion": true,
+                  "text": {
+                      "defaultText": "Title",
+                      "localizedTexts": []
+                  }
+              }
+          },
+          "attributeDestination": {
+              "@odata.type": "#microsoft.graph.accessPackageUserDirectoryAttributeStore"
+          }
+        }
+      ]
+  }
+}
+
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "f0e632ed-afd2-41d3-8d6e-ccefda457e5e",
+  "requestType": "AdminAdd",
+  "requestState": "Delivered",
+  "requestStatus": "Fulfilled"
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

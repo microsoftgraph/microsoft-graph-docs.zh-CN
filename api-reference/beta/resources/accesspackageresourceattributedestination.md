@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4d45cff09dd246affd4cc125163c8c435608b14b
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: e7254c0910e930cfcb3d96fd1e4f529a6e9551c3
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61865414"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468333"
 ---
 # <a name="accesspackageresourceattributedestination-resource-type"></a>accessPackageResourceAttributeDestination 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "61865414"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于访问包 **的 attributeDestination** 属性的抽象类型。 实际目标将是此复杂类型的子类型。
+用于 [accessPackageResourceAttribute](accesspackageresourceattribute.md) **的 attributeDestination** 属性的抽象类型。 实际目标将是此复杂类型的子类型。
 
 目前，唯一受支持的子类型是 [accessPackageUserDirectoryAttributeStore](../resources/accesspackageuserdirectoryattributestore.md)。  
 

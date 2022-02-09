@@ -6,12 +6,12 @@ title: 获取网站中的页面
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 44ca1a9c5a601f8a2afca85a100c1511643d7f03
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 28eee4100f8ef9fec393ce9fbb3dd37362b58120
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108208"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468256"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>获取网站的网站页面列表中的页面
 
@@ -19,7 +19,7 @@ ms.locfileid: "62108208"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回网站 中网站页面列表中的[sitePage][] [][]的[元数据][]。
+返回网站中网站页面[列表中 sitePage][] 的[元数据][]。[][]
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -43,7 +43,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,7 +79,7 @@ GET /sites/{site-id}/pages/{page-id}
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
