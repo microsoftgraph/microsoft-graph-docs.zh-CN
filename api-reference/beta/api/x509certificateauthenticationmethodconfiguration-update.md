@@ -5,8 +5,13 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
+ms.openlocfilehash: aa70e6e77e65ed4cdb126a21c003335f3a306ef3
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519377"
 ---
-
 # <a name="update-x509certificateauthenticationmethodconfiguration"></a>更新 x509CertificateAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
@@ -14,7 +19,7 @@ doc_type: apiPageType
 
 更新 [X.509 证书身份验证方法的属性](../resources/x509certificateauthenticationmethodconfiguration.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -48,7 +53,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 可更新以下属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |state|authenticationMethodState|可能的值是：、`enabled``disabled`。 继承自 [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)。|
 |certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) 集合|定义 X.509 证书中映射到用户Azure AD属性的字段，以便将证书绑定到用户。 **对象的** 优先级确定绑定执行的顺序。将使用第一个匹配绑定，其余绑定将被忽略。 |
@@ -64,6 +69,8 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_x509certificateauthenticationmethodconfiguration"
@@ -99,6 +106,20 @@ Content-Type: application/json
     }]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-x509certificateauthenticationmethodconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-x509certificateauthenticationmethodconfiguration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-x509certificateauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3afaf15ced8c5dac79e21aaf92f2b509aae49eb6
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 3dbd7a5a1a436709deed0bf342718ea81a282798
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239160"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519445"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 
@@ -32,12 +32,13 @@ ms.locfileid: "62239160"
 |设备|[conditionalAccessDevices](conditionalaccessdevices.md)| 策略中的设备。 |
 |位置|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含的位置和从策略中排除的位置。 |
 |平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含和排除的平台。 |
+|servicePrincipalRiskLevels|riskLevel 集合| 策略中包含的服务主体风险级别。 可取值为：`low`、`medium`、`high`、`none`、`unknownFutureValue`。|
 |signInRiskLevels|riskLevel 集合| 策略中包含的登录风险级别。 可取值为：`low`、`medium`、`high`、`hidden`、`none`、`unknownFutureValue`。 必需。|
 |userRiskLevels|riskLevel 集合| 策略中包含的用户风险级别。 可取值为：`low`、`medium`、`high`、`hidden`、`none`、`unknownFutureValue`。 必需。|
 
 >**注意：**
->* **clientAppType** `modern` 将被弃用，并替换为 `mobileAppsAndDesktopClients` 。 <br>
->* **clientAppType** `easUnsupported` 将弃用，支持包括 `exchangeActiveSync` EAS 支持和不受支持的平台。 <br>
+>* **clientAppType** `modern` 将被弃用，并替换为 `mobileAppsAndDesktopClients`。 <br>
+>* **clientAppType** `easUnsupported` 将弃用， `exchangeActiveSync` 支持包括 EAS 支持和不受支持的平台。 <br>
 >* We are deprecating the **deviceStates** condition， and it may be removed in the future. 今后，使用 **设备** 条件。
 
 ## <a name="relationships"></a>关系
@@ -64,6 +65,7 @@ ms.locfileid: "62239160"
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.conditionalAccessConditionSet",
   "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
   "clientApplications": {"@odata.type": "microsoft.graph.conditionalAccessClientApplications"},
@@ -72,6 +74,7 @@ ms.locfileid: "62239160"
   "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
+  "servicePrincipalRiskLevels": ["String"],
   "signInRiskLevels": ["String"]
 }
 ```

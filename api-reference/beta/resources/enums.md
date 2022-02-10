@@ -5,8 +5,13 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
+ms.openlocfilehash: f28d28301e4eb9268d1d4961574c3d318e38e7e2
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519507"
 ---
-
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
@@ -115,7 +120,7 @@ author: MSGraphDocsvTeam
 
 |成员|
 |:----|
-|None|
+|无|
 |UserName|
 |Password|
 |SecretToken|
@@ -257,7 +262,7 @@ author: MSGraphDocsvTeam
 
 |成员|
 |:---|
-|None|
+|无|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -724,6 +729,8 @@ author: MSGraphDocsvTeam
 |hidden|
 |adminConfirmedUserComprom一|
 |unknownFutureValue|
+|adminConfirmedServicePrincipalComprom一|
+|adminDismissedAllRiskForServicePrincipal|
 
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
@@ -819,7 +826,7 @@ author: MSGraphDocsvTeam
 
 |成员|
 |:---|
-|default|
+| 默认值|
 |enabled|
 |disabled|
 |unknownFutureValue|
@@ -1405,7 +1412,7 @@ author: MSGraphDocsvTeam
 
 | 成员
 |:-------------------------
-| default
+|  默认值
 | conferenceRoom
 | homeAddress
 | businessAddress
@@ -1505,7 +1512,7 @@ author: MSGraphDocsvTeam
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | 参考
 
 
@@ -1783,7 +1790,7 @@ author: MSGraphDocsvTeam
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
-根据组定义， (用户帐户) 类型的Windows值。
+根据组定义 (用户帐户) 类型的Windows值。
 
 | 成员        | 值 | 说明                     |
 | :------------ | :---- | :------------------------------ |
@@ -1835,7 +1842,7 @@ author: MSGraphDocsvTeam
 
 |成员|
 |:---|
-|default|
+| 默认值|
 |enabled|
 |disabled|
 |unknownFutureValue|
@@ -1972,12 +1979,13 @@ author: MSGraphDocsvTeam
 |signin|
 |用户|
 |unknownFutureValue|
+|servicePrincipal|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>chatMessagePolicyViolationUserActionType 值
 
 | 成员   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| None | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
+| 无 | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
 | Override | 1 | 发件人已覆盖邮件裁定并发送了该邮件。|
 | ReportFalsePositive | 2 | 发件人将邮件裁定报告给管理员为误报。|
 
@@ -2034,7 +2042,7 @@ author: MSGraphDocsvTeam
 
 | 成员  | 值 | 说明                          |
 | :------ | :---- | :----------------------------------- |
-| default | 0     | 内容是文件或非电子邮件类型。 |
+|  默认值 | 0     | 内容是文件或非电子邮件类型。 |
 | 电子邮件   | 1     | 内容是电子邮件。                 |
 
 ### <a name="contentstate-values"></a>contentState 值
@@ -2043,7 +2051,7 @@ author: MSGraphDocsvTeam
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于其余;例如，共享中的文件。                                 |
 | 动作 | 1     | 数据在运动中。 在传输过程中被网络设备截获的文件。         |
-| use    | 2     | 数据在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
+| use    | 2     | 数据在使用中。 文件在客户端应用程序（如 Microsoft Office）中打开。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 

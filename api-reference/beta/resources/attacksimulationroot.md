@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 56c0f8f8ce514e21b39e24494132ee6fec123d31
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: e38107d7c6d95706508ea5260fa9e88c87774672
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979557"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519738"
 ---
 # <a name="attacksimulationroot-resource-type"></a>attackSimulationRoot 资源类型
 
@@ -21,14 +21,13 @@ ms.locfileid: "59979557"
 为租户提供启动真实的网络钓鱼攻击并学习的功能。
 这是一个抽象类型。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出模拟](../api/attacksimulationroot-list-simulations.md)|[模拟](../resources/simulation.md) 集合|从模拟导航属性获取模拟资源。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
-|:---|:---|:---|
+无。
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

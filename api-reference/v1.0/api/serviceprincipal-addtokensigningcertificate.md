@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: alamaral
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c78aecfbc956d505ec46ff76e0b9e604335baa6b
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 4cfcb4613df704f106ff46817014b916f95cc369
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335459"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519223"
 ---
 # <a name="serviceprincipal-addtokensigningcertificate"></a>servicePrincipal：addTokenSigningCertificate
 
@@ -18,11 +18,11 @@ ms.locfileid: "61335459"
 
 创建自签名签名证书并返回 [selfSignedCertificate](../resources/selfsignedcertificate.md) 对象，该对象是生成的证书的公共部分。 
 
-自签名签名证书由添加到 [servicePrincipal](../resources/serviceprincipal.md)中的以下对象组成： 
-+ [具有下列对象的 keyCredentials](../resources/keycredential.md)对象：
-    + 用法设置为 的私钥对象 `Sign` 。
-    + 用法设置为 **的公钥对象** `Verify` 。
-+ [passwordCredentials](../resources/passwordcredential.md)对象。 
+自签名签名证书由添加到 [servicePrincipal](../resources/serviceprincipal.md) 中的以下对象组成： 
++ [具有下列对象的 keyCredentials](../resources/keycredential.md) 对象：
+    + 用法设置为 的私钥对象`Sign`。
+    + 用法设置为 **的公钥对象**`Verify`。
++ [passwordCredentials](../resources/passwordcredential.md) 对象。 
 
 
 所有对象具有相同的 **customKeyIdentifier 值**。
@@ -52,12 +52,12 @@ POST /servicePrincipals/{id}/addTokenSigningCertificate
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| displayName | string | 密钥的友好名称。  它必须以 `CN=` 开始。|
+| displayName | string | 密钥的友好名称。  它必须以 开始 `CN=`。|
 | endDateTime | DateTimeOffset |凭据过期的日期和时间。 从证书创建之日起，最多 3 年。 如果未提供，则默认值为自创建时起三年。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新 `200 OK` [selfSignedCertificate](../resources/selfsignedcertificate.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [selfSignedCertificate](../resources/selfsignedcertificate.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,6 +84,22 @@ Content-type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addtokensigningcertificate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-addtokensigningcertificate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-addtokensigningcertificate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addtokensigningcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addtokensigningcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
