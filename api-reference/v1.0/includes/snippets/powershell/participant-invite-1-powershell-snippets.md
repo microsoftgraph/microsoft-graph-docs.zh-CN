@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: af209b71b19cca3fe9a4b88b82420031b0be0b50
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 9b6683bffbf85958acc5f8998020dd4b37c316ff
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62338983"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62530457"
 ---
 ```powershell
 
@@ -21,7 +21,7 @@ $params = @{
                 User = @{
                     "@odata.type" = "#microsoft.graph.identity"
                     Id = "278405a3-f568-4b3e-b684-009193463064"
-                    DisplayName = "string"
+                    IdentityProvider = "AAD"
                 }
             }
         }

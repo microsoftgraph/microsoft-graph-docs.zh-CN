@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 34e262a067f11aae398fa5718cfff38b22c758797c7d7a1eda1a952f82ef3ebb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fbe8d5b42317456b2fe3e83aa5b2b76b85955914
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57409367"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62530534"
 ---
 ```csharp
 
@@ -24,7 +24,7 @@ var mediaConfig = new AppHostedMediaConfig
 };
 
 await graphClient.Communications.Calls["{call-id}"]
-    .Answer(callbackUri,mediaConfig,acceptedModalities,null)
+    .Answer(callbackUri,mediaConfig,acceptedModalities,null,null)
     .Request()
     .PostAsync();
 

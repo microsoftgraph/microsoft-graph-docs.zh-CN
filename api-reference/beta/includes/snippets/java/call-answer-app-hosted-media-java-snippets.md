@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6ab2ccb09b38d1b5604aca00dcbc1eb49bd2db98dd71d382ed763cc80a5f79c0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d6c3100dcaa6f6329273bea1802456293cc1d83
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57218956"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62530516"
 ---
 ```java
 
@@ -26,6 +26,7 @@ graphClient.communications().calls("57DAB8B1894C409AB240BD8BEAE78896")
         .withMediaConfig(mediaConfig)
         .withAcceptedModalities(acceptedModalitiesList)
         .withParticipantCapacity(null)
+        .withCallOptions(null)
         .build())
     .buildRequest()
     .post();
