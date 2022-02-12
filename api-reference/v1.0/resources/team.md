@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9031ec80f735410477021fff3bbfc1aff7ae38d1
-ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
+ms.openlocfilehash: 554e16245616605a86beb797adfca0370e948e49
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59931953"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519675"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
