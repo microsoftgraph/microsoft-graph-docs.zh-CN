@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7325587201402f01e6ceec44c468c82d0c92c0e3
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 7f86f2943f2954b60b924160cc82ad839aac3898
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443070"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804778"
 ---
 # <a name="list-tabs-in-channel"></a>列出频道中的选项卡
 
@@ -28,7 +28,7 @@ ms.locfileid: "62443070"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamsTab.Read.Group、*TeamsTab.ReadWrite.Group*、TeamsTab.Read.All、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、**Group.Read.All、Group.ReadWrite.All**、Directory.Read.All、**Directory.ReadWrite.All** |
 
-> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -55,7 +55,7 @@ GET /teams/{id}/channels/{id}/tabs
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>示例 1：列出频道中所有选项卡以及关联的Teams应用程序
+### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>示例 1：列出频道中所有选项卡以及关联的Teams选项卡
 #### <a name="request"></a>请求
 下面展示了示例请求。
 

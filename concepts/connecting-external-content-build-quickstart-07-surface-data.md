@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: 04ba810183228e3834069d9bfa620fe3c71fdb12
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289514"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805238"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
@@ -13,9 +13,9 @@ ms.locfileid: "59289514"
 
 ## <a name="create-a-vertical"></a>创建垂直
 
-若要在组织级别创建和启用垂直搜索，请Microsoft 365 管理中心全局管理员角色并执行以下操作[](https://admin.microsoft.com/)：
+若要在组织级别创建和启用垂直搜索，请Microsoft 365 管理中心，全局管理员角色执行以下操作[](https://admin.microsoft.com/)：
 
-1. 转到 **"设置**  >  **搜索&**  >  **自定义"。**
+1. 转到"**设置** > **搜索&智能** > **自定义"**。
 2. 转到 **"垂直** "，然后单击" **添加"** 按钮。
 3. 提供以下详细信息：
   * **将垂直名称：** 设备部件。
@@ -38,7 +38,7 @@ ms.locfileid: "59289514"
 
 创建结果类型：
 
-1. 转到 **"设置**  >  **搜索&**  >  **自定义"。**
+1. 转到"**设置** > **搜索&智能** > **自定义"**。
 2. 转到结果 **类型选项卡，** 然后单击"添加 **"** 按钮。
 3. 提供以下详细信息：
 
@@ -54,6 +54,6 @@ ms.locfileid: "59289514"
 
    !["设置规则"部分屏幕截图](images/connectors-images/build17.png)
 
-  * 将 [ 上result-type.js内容](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/result-type.json) 粘贴到布局设计器文本框中。
+  * 将 [result-type.json](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/result-type.json) 的内容粘贴到布局设计器文本框中。
 
    !["设计布局"部分屏幕截图](images/connectors-images/build18.png)

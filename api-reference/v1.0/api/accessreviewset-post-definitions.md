@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1cdb61560e1d04e41171af0b45bbca2c53565070
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: a08aab8150412f3b7124408c65cca0ac7d80b7ba
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651571"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62804442"
 ---
 # <a name="create-definitions"></a>创建定义
 
@@ -49,25 +49,25 @@ POST /identityGovernance/accessReviews/definitions
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
 | additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) 集合| 定义要接收访问评审进度通知的其他用户或组成员的列表。 |
-| descriptionForAdmins | String | 提供给管理员评价的上下文。 必需。 |
-| descriptionForReviewers | String | 电子邮件通知中提供给审阅者评论的上下文。 电子邮件通知最多支持 256 个字符。 必需。 |
-| displayName | String | 访问评审系列的名称。 必需。|
-| fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|如果提供，当主审阅者不存在时，会要求回退审阅者完成审阅。 例如，如果选择了经理作为经理，而审核中的主体没有经理Azure AD，则回退审阅者需要 `reviewers` 审阅该主体。|
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope，](../resources/accessreviewscope.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。|
-| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评论是自 (用户查看自己的访问权限) 。 有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者[分配给你的访问Graph定义](/graph/accessreviews-reviewers-concept)。  |
-| 范围 | [accessReviewScope](../resources/accessreviewscope.md) |  定义将检查其访问权限的实体。 请参阅  [accessReviewScope，](../resources/accessreviewscope.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 必需。| 
+| descriptionForAdmins | 字符串 | 提供给管理员评价的上下文。 必需。 |
+| descriptionForReviewers | 字符串 | 电子邮件通知中提供给审阅者评论的上下文。 电子邮件通知最多支持 256 个字符。 必需。 |
+| displayName | 字符串 | 访问评审系列的名称。 必需。|
+| fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|如果提供，当主审阅者不存在时，会要求回退审阅者完成审阅。 例如，如果选择了经理作为`reviewers`经理，而审核中的主体没有经理Azure AD，则回退审阅者需要审阅该主体。|
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope](../resources/accessreviewscope.md) ，并了解如何配置访问 [评审定义的范围](/graph/accessreviews-scope-concept)。|
+| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评论是自 (用户查看自己的访问权限) 。 有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者分配给你的访问[Graph定义](/graph/accessreviews-reviewers-concept)。  |
+| 范围 | [accessReviewScope](../resources/accessreviewscope.md) |  定义将检查其访问权限的实体。 请参阅  [accessReviewScope](../resources/accessreviewscope.md) ，并了解如何配置访问 [评审定义的范围](/graph/accessreviews-scope-concept)。 必需。| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-create-an-access-review-on-a-group"></a>示例 1：在组上创建访问评审
 
 这是一个创建具有以下设置的访问评审的示例：
-+ 评价将审阅组的所有成员，其组 **ID 为** `02f3bafb-448c-487c-88c2-5fd65ce49a41` 。
-+ 用户 ID 为审阅 **者** `398164b1-5196-49dd-ada2-364b49f99b27` 的特定用户。
++ 评价将审阅组的所有成员，其组 **ID 为** `02f3bafb-448c-487c-88c2-5fd65ce49a41`。
++ 用户 ID 为 **审阅者的特定**`398164b1-5196-49dd-ada2-364b49f99b27`用户。
 + 它每周重复一次，并无限期地继续。
 
 #### <a name="request"></a>请求
@@ -134,7 +134,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -219,7 +219,7 @@ Content-type: application/json
 + 该评论将审核具有非活动来宾用户的所有团队。 非活动期为自访问评审开始日期起 30 天。
 + 组所有者为审阅者，并分配回退审阅者。
 + 它每季度的第三天重复发生，并无限期地继续。
-+ **autoApplyDecisionsEnabled** 设置为 ， `true` **将 defaultDecision 设置为** `Deny` 。
++ **autoApplyDecisionsEnabled** 设置为 `true` ， **将 defaultDecision 设置为** `Deny`。
 
 #### <a name="request"></a>请求
 在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。
@@ -299,7 +299,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-inactiveguests-m365-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-inactiveguests-m365-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -412,6 +412,8 @@ Content-type: application/json
 #### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -483,6 +485,16 @@ Content-type: application/json
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-allusers-m365-aadrole-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

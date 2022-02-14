@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1221cd9af225a9a59009b56861879c93506e059f
-ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
+ms.openlocfilehash: ad210433e5a02282016273fbd0b3e708f2ffac79
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62468312"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804148"
 ---
 # <a name="create-accesspackageresourcerequest"></a>创建 accessPackageResourceRequest
 
@@ -28,7 +28,7 @@ ms.locfileid: "62468312"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| 应用程序                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,9 +49,9 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 在请求正文中，提供 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象的 JSON 表示形式。 在请求 `accessPackageResource` 中包括 [与 accessPackageResource](../resources/accesspackageresource.md) 对象的关系。
 
-若要将Azure AD组作为资源添加到目录，请设置 **catalogId** 为目录 ID，**将 requestType** `AdminAdd`设置为 ，将 设置为 ，将 设置为 表示`accessPackageResource`资源的 。 内的 **originSystem** 属性的值`accessPackageResource`应为 ，`AadGroup`**originId** 的值是组的标识符。
+若要将Azure AD组作为资源添加到目录，请设置 **catalogId** 为目录的 ID，**将 requestType** `AdminAdd`设置为 ，将 设置为 `accessPackageResource` 表示资源的 。 内的 **originSystem** 属性的值`accessPackageResource`应为 ，`AadGroup`**originId** 的值是组的标识符。
 
-若要从Azure AD应用程序，请设置 **catalogId** 为目录 ID，**将 requestType** `AdminRemove`设置为 ，`accessPackageResource`并设置要删除的资源对象。  可以使用 list [accessPackageResources 检索 resource 对象](accesspackagecatalog-list-accesspackageresources.md)。
+若要从Azure AD中删除应用程序，请设置 **catalogId** 为目录 ID，**将 requestType** `AdminRemove`设置为 ，`accessPackageResource`将 资源对象设置为 要删除的资源对象。  可以使用 list [accessPackageResources 检索 resource 对象](accesspackagecatalog-list-accesspackageresources.md)。
 
 若要为多地理位置 Sharepoint Online 资源分配地理位置环境，在 **对象中包括 accessPackageResourceEnvironment** `accessPackageResource` 关系。 可通过两种方式完成此操作：
 + 使用 `@odata.bind` annotation 将 `id` 的 `accessPackageResourceEnvironment` 分配给对象 `accessPackageResourceEnvironment` 。

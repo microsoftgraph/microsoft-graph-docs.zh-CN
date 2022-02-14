@@ -1,24 +1,24 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: 726484cb0f6cd3e91b77dc6f89e800f8546b6f42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289527"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805240"
 ---
 <!-- markdownlint-disable MD002 MD041 -->
 
-在此部分中，我们将生成首个 ASP.NET 项目应用程序，以处理Microsoft Graph 数据连接导出的数据。
+在此部分中，我们将构建你的第一 ASP.NET 项目应用程序，用于处理Microsoft Graph 数据连接导出的数据。
 
 ## <a name="create-a-new-aspnet-project"></a>新建项目 ASP.NET 项目
 
-1. 打开Visual Studio，然后选择"文件 **">"新建> Project"。**
+1. 打开Visual Studio，然后选择"新建>**文件> Project**。
 
-1. 在"**新建Project** 对话框中，执行以下操作。
+1. 在"**新建Project** 对话框中，执行下列操作。
 
-    1. 在 **ASP.NET Web 应用程序中** 搜索"，然后选择"ASP.NET Web **应用程序** (.NET Framework) 选项。
-    1. 单击"下一 **步"。**
+    1. 在 **ASP.NET Web 应用程序中** 搜索"，然后选择"ASP.NET **Web 应用程序** (.NET Framework) 选项。
+    1. 单击"下一 **步"**。
 
         ![显示使用 Visual Studio Web 应用程序创建新项目的选项的 ASP.NET 屏幕截图。](images/data-connect-vs-create-app.png)
 
@@ -27,41 +27,41 @@ ms.locfileid: "59289527"
     1. 选择“**创建**”。
 
     > [!IMPORTANT]
-    > 请确保为此快速启动说明中指定的Visual Studio Project输入完全相同的名称。 Visual Studio 项目名称在代码中成为了命名空间的一部分。 在这些说明里的代码依赖于匹配在这些说明中指定的 Visual Studio 项目名称的命名空间。 如果你使用不同的项目名称，代码不会编译，除非你调整所有的命名空间来匹配你在创建项目时输入的 Visual Studio 项目名称。
+    > 确保为此快速启动说明中指定的Visual Studio Project输入完全相同的名称。 Visual Studio 项目名称在代码中成为了命名空间的一部分。 在这些说明里的代码依赖于匹配在这些说明中指定的 Visual Studio 项目名称的命名空间。 如果你使用不同的项目名称，代码不会编译，除非你调整所有的命名空间来匹配你在创建项目时输入的 Visual Studio 项目名称。
 
     1. 在"新建 web **ASP.NET"** 项目对话框中，选择"MVC"。
     1. 选择“**创建**”。
 
-    ![显示用于选择模型Visual Studio-控制器选项的选项的 (MVC) ASP.NET Web 应用程序。](images/data-connect-vs-create-app-mvc.png)
+    ![显示用于选择模型Visual Studio-控制器选项的屏幕快照 (MVC) ASP.NET Web 应用程序。](images/data-connect-vs-create-app-mvc.png)
 
 ## <a name="add-and-configure-your-azure-storage-as-a-connected-service"></a>添加和配置Azure 存储连接服务
 
-1. 在"**解决方案资源管理器**"工具窗口中，右键单击"连接的 **服务**"节点，然后选择"**添加已连接服务"。**
+1. 在"**解决方案资源管理器**"工具窗口中，右键单击"已连接服务"节点，然后选择"**添加已连接服务"**。
 
     ![Visual-Studio-Add-Connected-Service](images/data-connect-vs-add-connected-service-sa.png)
 
-1. 在" **连接的服务** "对话框中，选择位于对话框右上角 **+** 的绿色符号。
+1. 在" **连接的服务** " **+** 对话框中，选择位于对话框右上角的绿色符号。
 
-1. 在"**添加依赖项"对话框中**，选择 **"Azure 存储"** 下一 **步"。**
+1. 在"**添加依赖关系"** 对话框中，选择"**Azure 存储**"下一 **步"**。
 
     ![显示"Visual Studio"选项的"添加依赖关系"对话框的Azure 存储屏幕截图。](images/data-connect-vs-add-dependency-azsa.png)
 
-1. 在 **"Azure 存储"** 对话框中，选择在上一练习中导出数据的订阅和存储帐户，选择"下一 **步"。**
+1. 在"**Azure 存储**"对话框中，选择在上一练习中导出数据的订阅和存储帐户，选择"下一 **步"**。
 
-    ![屏幕界面屏幕截图Visual Studio配置Azure 存储，选择订阅和存储帐户。](images/data-connect-vs-configure-az-storage.png)
+    ![显示配置Visual Studio的 Azure 存储 界面屏幕截图，选择订阅和存储帐户。](images/data-connect-vs-configure-az-storage.png)
 
-1. 为连接 **Azure 存储** **AzureStorageConnectionString 的名称，然后选择**"下一 **步"。**
-1. 选择“完成”。
+1. 为连接 **Azure 存储** **AzureStorageConnectionString 的名称，然后选择**"下一步 **"**。
+1. 选择 **“完成”**。
 
     ![显示"配置Visual Studio摘要的Azure 存储屏幕截图。](images/data-connect-vs-configure-sa-summary.png)
 
 ## <a name="create-a-new-model-class-that-will-be-used-to-store-the-email-metrics"></a>创建将用于存储电子邮件指标的新模型类
 
-1. 在"**解决方案资源管理器**"工具窗口中，右键单击 **"模型**"文件夹并选择"添加>**类"。**
+1. 在"  **解决方案资源管理器** "工具窗口中，右键单击 **"模型** "文件夹，然后选择" **添加>类"**。
 
-    ![显示如何Visual Studio在 models 文件夹中右键单击来添加新类的屏幕快照。](images/data-connect-vs-add-new-model-class.png)
+    ![显示如何通过右键单击 models 文件夹来添加新类的 Visual Studio 界面屏幕截图。](images/data-connect-vs-add-new-model-class.png)
 
-1. 在"**添加新项"对话框中**，选择 **"类**"，将文件名称设置为 _EmailMetric.cs，_ 然后选择"**添加"。**
+1. 在" **添加新项"对话框中** ，选择 **"类**"，将文件名称设置为 _EmailMetric.cs_ ，然后选择"添加 **"**。
 
 1. 将以下代码添加到刚创建的 EmailMetric 类。
 
@@ -72,11 +72,11 @@ ms.locfileid: "59289527"
 
 ## <a name="create-a-new-controller-that-will-calculate-and-display-the-results"></a>创建一个将计算和显示结果的新控制器
 
-1. 右键单击 **Controllers** 文件夹，然后选择"**添加>控制器"。**
+1. 右键单击 **"控制器"** 文件夹，然后选择" **添加>控制器"**。
 
-1. 在"**添加基** 架"对话框中，选择 **"MVC 5 控制器 - 空"，** 然后选择"**添加"。**
+1. 在" **添加基架** "对话框中，选择 **"MVC 5 控制器 - 空"，** 然后选择"添加 **"**。
 
-1. 当系统提示时，将控制器 **命名 EmailMetricsController，** 然后选择"确定 **"。**
+1. 当系统提示时，命名控制器 **EmailMetricsController** ，然后选择"确定 **"**。
 
 1. 在包含 **EmailMetricsController** 类的文件顶部的现有 using 语句后添加以下 using 语句。
 
@@ -149,7 +149,7 @@ ms.locfileid: "59289527"
     }
     ```
 
-1. 将以下方法添加到 **EmailMetricsController** 类。 这将枚举指定帐户的Azure 存储容器中的所有 blob，并将每个 blob 发送到上一步中添加 `ProcessBlobEmails()` 的方法。
+1. 将以下方法添加到 **EmailMetricsController** 类。 这将枚举指定帐户Azure 存储容器中`ProcessBlobEmails()`的所有 blob，并将每个 blob 发送到上一步中添加的方法。
 
     ```csharp
     private async Task<List<Models.EmailMetric>> ProcessBlobFiles()
@@ -175,7 +175,7 @@ ms.locfileid: "59289527"
     }
     ```
 
-1. 将以下操作添加到 **EmailMetricsController，** 它将使用添加此类的方法处理电子邮件并将结果发送到视图。
+1. 将以下操作添加到 **EmailMetricsController** ，它将使用添加此类的方法处理电子邮件并将结果发送到视图。
 
     ```csharp
     [HttpPost, ActionName("ShowMetrics")]
@@ -190,15 +190,15 @@ ms.locfileid: "59289527"
 
 ## <a name="create-a-new-view-for-the-emailmetrics-index-action"></a>为 EmailMetrics 索引操作创建新视图
 
-1. 在"**解决方案资源管理器**"工具窗口中，右键单击"视图 **">"EmailMetrics"** 文件夹，然后选择"添加>**视图"。**
+1. 在"  **解决方案资源管理器** "工具窗口中，右键单击"视图"> **"EmailMetrics** "文件夹，然后选择"添加 **>视图"**。
 
-1. 在"**添加新基架项目**"对话框中，选择 **"MVC 5** 视图"，然后选择"添加 **"。**
+1. 在" **添加新基架项目** "对话框中，选择 **"MVC 5** 视图"，然后选择"添加 **"**。
 
-1. 在"**添加视图"** 对话框中，将"**视图** 名称"设置为 **"索引**"，将其余输入控件保留为默认值，然后选择"添加 **"。**
+1. 在" **添加视图"** 对话框中，将" **视图** 名称"设置为 **"索引**"，将其余输入控件保留为默认值，然后选择"添加 **"**。
 
-    ![显示如何添加Visual Studio索引的新视图的用户界面屏幕截图。](images/data-connect-vs-add-view-index.png)
+    ![显示如何添加Visual Studio索引的新视图的屏幕快照。](images/data-connect-vs-add-view-index.png)
 
-1. 将 **_Index.cshtml_ 中新的 Views > EmailMetrics >中的** 标记更新为以下内容。 这将添加一个表单，该表单具有一个按钮，该按钮将 HTTP POST 提交到上一步中添加的自定义控制器操作。
+1. 将 **EmailMetrics 中的新 Views > _Index.cshtml >中的_** 标记更新为以下内容。 这将添加一个表单，该表单具有一个按钮，该按钮将 HTTP POST 提交到上一步中添加的自定义控制器操作。
 
     ```html
     @{
@@ -208,7 +208,7 @@ ms.locfileid: "59289527"
     <h2>Email Metrics</h2>
     ```
 
-1. 此应用程序将查看提取到 **Azure Blob** 存储 帐户的电子邮件的电子邮件数据，并显示每个发件人的收件人总数。
+1. 此应用程序将查看提取到 **Azure Blob** 帐户存储电子邮件的电子邮件数据，并显示每个发件人的收件人总数。
 
     ```html
     @using (Html.BeginForm("ShowMetrics", "EmailMetrics", FormMethod.Post))
@@ -226,9 +226,9 @@ ms.locfileid: "59289527"
 
 ## <a name="create-a-new-view-for-the-emailmetrics-showmetrics-action"></a>为 EmailMetrics ShowMetrics 操作创建新视图
 
-1. 在"**解决方案资源管理器**"工具窗口中，右键单击"视图 **">"EmailMetrics"** 文件夹，然后选择"添加>**视图"。**
+1. 在" **解决方案资源管理器** "工具窗口中，右键单击"视图"> **"EmailMetrics** "文件夹，然后选择"添加 **>视图"**。
 
-1. 在"**添加视图"** 对话框中，设置以下值，将其余输入控件保留为默认值，然后选择"添加 **"。**
+1. 在" **添加视图"** 对话框中，设置以下值，将其余输入控件保留为默认值，然后选择"添加 **"**。
 
     - **视图名称**：ShowMetrics
     - **模板**：列表
@@ -269,7 +269,7 @@ ms.locfileid: "59289527"
 
 ## <a name="update-the-navigation-to-have-a-way-to-get-to-the-new-controller"></a>更新导航以具有到达新控制器的方法
 
-1. 在" **解决方案资源管理器** "工具窗口中，找到并打开文件 Views **> Shared > _Layout.cshtml_**。
+1. 在"**解决方案资源管理器**"工具窗口中，找到并打开"共享视图> **_Layout.cshtml >视图"文件_**。
 1. 用以下代码替换内容。
 
     ```html
@@ -279,7 +279,7 @@ ms.locfileid: "59289527"
 
 ## <a name="test-the-application"></a>测试应用程序
 
-1. 在Visual Studio中，选择"调试 **>开始调试"。**
+1. In Visual Studio， select **Debug > Start Debugging**.
 
 1. 构建应用程序并加载到新的浏览器窗口中时，选择顶部导航栏中的"电子邮件指标"项。
 

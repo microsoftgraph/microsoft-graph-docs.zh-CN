@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: f0ba3bbafa065bce8bb29fa760704df691bd5d79
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289522"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805230"
 ---
 <!-- markdownlint-disable MD002 MD041 -->
 
@@ -17,7 +17,7 @@ Microsoft Graph 数据连接使用 Azure 数据工厂以可配置的时间间隔
 
 可以使用数据连接为组织启用机器学习方案。 在这些方案中，你可以创建应用程序来为利益干系人提供宝贵信息、训练机器学习模型，甚至根据采集的大量数据进行预测。
 
-## <a name="get-started"></a>开始行动
+## <a name="get-started"></a>入门
 
 在本教程中，你将创建第一个Microsoft Graph 数据连接应用程序。 很让人兴奋，对不对？ 我们也认为！ 若要开始，你首先需要设置一些内容。
 
@@ -27,7 +27,7 @@ Microsoft Graph 数据连接使用 Azure 数据工厂以可配置的时间间隔
 
 1. **Microsoft 365租赁**
 
-   - 如果没有，则通过注册 (开发人员计划) 一个免费Microsoft 365[应用程序](https://developer.microsoft.com/microsoft-365/dev-program)。
+   - 如果没有，则通过注册 (开发人员) 一个免费Microsoft 365[应用程序](https://developer.microsoft.com/microsoft-365/dev-program)。
    - 多个Microsoft 365接收的电子邮件的用户。
    - 访问至少两个满足以下要求的帐户：
       - 必须分配 **有全局** 管理员角色。
@@ -35,12 +35,12 @@ Microsoft Graph 数据连接使用 Azure 数据工厂以可配置的时间间隔
 
 1. **Microsoft Azure 订阅**
 
-   - 如果没有，可在 Azure 网站中 (一 [) 免费订阅](https://azure.microsoft.com/free/)。
-   - 用于登录的帐户必须被授予全局管理员角色。 
+   - 如果没有，可在 Azure 网站 (一 [) 免费订阅](https://azure.microsoft.com/free/)。
+   - 用于登录的帐户必须被授予全局管理员角色。
    - Azure 订阅必须与 Microsoft 365 租户在同一租户中，因为 Graph Data 连接 将仅将数据导出到同一租户中的 Azure 订阅，而不是跨租户。
    - 你的Microsoft 365和 Azure 租户必须在同一Microsoft Azure Active Directory租户中。
 
 1. 请确保你已安装[Visual Studio](https://visualstudio.microsoft.com/vs/)计算机上。
 
 > [!NOTE]
-> 此实验中使用的屏幕截图和示例来自一个Microsoft 365测试租户，该租户包含来自测试用户的示例电子邮件。 可以使用自己的租户Microsoft 365执行相同的步骤。 不会将数据写入Microsoft 365。 电子邮件数据的副本从 Microsoft 365 租户中的所有用户中提取，并复制到 Azure Blob 存储 帐户，你可以控制谁有权访问 Azure Blob 存储 内的数据。
+> 此实验中使用的屏幕截图和示例来自一个Microsoft 365测试租户，该租户包含来自测试用户的示例电子邮件。 可以使用自己的租户Microsoft 365执行相同的步骤。 不会将数据写入Microsoft 365。 电子邮件数据的副本从 Microsoft 365 租户中的所有用户中提取，并复制到 Azure Blob 存储 帐户，该帐户可控制谁有权访问 Azure Blob 存储 内的数据。

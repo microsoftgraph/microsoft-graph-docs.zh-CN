@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6d40ecefd86d92b113e9cd4bf3bf3c2d3997f529
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: bb9a69e4357ea502ae7e10e737579d59c23f6e8c
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443336"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62803889"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -30,7 +30,7 @@ ms.locfileid: "62443336"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All **、Group.ReadWrite.All** |
 
-> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您更新解决方案以使用上表中列出的备用权限，并避免今后使用这些权限。
 
 ### <a name="permissions-for-chat"></a>聊天权限
 

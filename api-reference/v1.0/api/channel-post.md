@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a21d5c817eb93314f76b55c1d2c1f0994ff08f9
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: fceaca74289ed68c861e23c30ce6dd2b46a6d2b5
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443414"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804715"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -28,7 +28,7 @@ ms.locfileid: "62443414"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Channel.Create.Group *、Channel.Create、Teamwork.Migrate.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：仅支持使用 ** 标记的权限，以确保向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
+> **注意**：仅支持使用 ** 标记的权限，以确保向后兼容。 建议您更新解决方案以使用上表中列出的备用权限，并避免今后使用这些权限。 标记为 * 的权限使用 [特定于资源的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 >
 > 此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 >

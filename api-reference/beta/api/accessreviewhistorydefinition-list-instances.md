@@ -1,18 +1,18 @@
 ---
-title: 列出实例
+title: '列出 accessReviewHistoryDefinition (实例) '
 description: 检索访问评审历史记录定义的实例。
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5d4d22c28cf4c25014c93d70abfaeeaf506a3e8b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5283ae971621745251891afac1b4fbc6ba0de736
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340546"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62803945"
 ---
-# <a name="list-instances"></a>列表实例
+# <a name="list-instances-of-an-accessreviewhistorydefinition"></a>列出 accessReviewHistoryDefinition (实例) 
 
 命名空间：microsoft.graph
 

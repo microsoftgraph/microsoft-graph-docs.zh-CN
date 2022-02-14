@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: cb29a3c2e7a6b9c8f076297abd8851b1f424dfae
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 6eac121c8bc16460e76c6f0909eb154eb0e225ef
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225003"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62803874"
 ---
 # <a name="update-cloudpcorganizationsettings"></a>更新 cloudPcOrganizationSettings
 命名空间：microsoft.graph
@@ -35,7 +35,7 @@ ms.locfileid: "62225003"
 }
 -->
 ``` http
-PATCH /deviceManagement/virtualEndpoint/cloudPcOrganizationSettings
+PATCH /deviceManagement/virtualEndpoint/organizationSettings
 ```
 
 ## <a name="request-headers"></a>请求标头

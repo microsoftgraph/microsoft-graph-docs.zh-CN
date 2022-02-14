@@ -5,12 +5,12 @@ author: hanki-microsoft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b4918acbcb4c373bb4725599de9bf20235a7ec40
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1b8a56a9f5e9c01836b61a4974a44c66f8429ac8
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099757"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805051"
 ---
 # <a name="list-accesspackageresourceenvironments"></a>列出 accessPackageResourceEnvironments
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "62099757"
 |:---|:---|
 |委派（工作或学校帐户）|EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|不支持|
+|应用程序|EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET identityGovernance/entitlementManagement/accessPackageResourceEnvironments?$
 
 ## <a name="query-parameters"></a>查询参数
 
-此方法需要 `$filter` [OData 查询参数](/graph/query-parameters)。 必须应用 `$filter` 来检索分配了值的 **originSystem。** `SharePointOnline`
+此方法需要 `$filter` [OData 查询参数](/graph/query-parameters)。 必须应用 `$filter` 来检索分配了`SharePointOnline`值的 **originSystem**。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +52,7 @@ GET identityGovernance/entitlementManagement/accessPackageResourceEnvironments?$
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

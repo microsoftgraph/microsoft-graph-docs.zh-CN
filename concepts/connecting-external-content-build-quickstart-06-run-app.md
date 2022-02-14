@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: 37aff56957c52c05145546c4df4d5f017e50f5f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289516"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805232"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
@@ -15,8 +15,8 @@ ms.locfileid: "59289516"
 2. 使用 命令： `dotnet build` 生成示例。
 3. 使用 命令： `dotnet run` 运行示例。
 4. 选择"**1"。创建连接**"。 输入该连接的唯一标识符、名称和说明。
-5. 选择 **"2"。为当前连接选项"注册架构**"，然后等待操作完成。
-6. 选择 **"3"。将所有项目推送到当前连接**。
+5. 选择"**2.为当前连接选项注册架构**"然后，等待操作完成。
+6. 选择"**3.将所有项目推送到当前连接**。
 
   > [!NOTE]
   > 如果步骤 5 导致错误，请等待几分钟，然后选择"**3"。将所有项目推送到当前连接**"。

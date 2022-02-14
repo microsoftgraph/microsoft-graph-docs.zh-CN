@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 794eb1b7e9fea8f3279e0d80b9bb9fa2a8e8571e
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: d66f9510a83bc6f7bcc7cfd65b522faa9ad9f448
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443407"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804897"
 ---
 # <a name="get-installed-app-in-team"></a>在团队中获取已安装的应用
 
@@ -28,7 +28,7 @@ ms.locfileid: "62443407"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamsAppInstallation.Read.Group *、TeamsAppInstallation.ReadWriteSelfForTeam.All、TeamsAppInstallation.ReadForTeam.All、TeamsAppInstallation.ReadWriteForTeam.All、Group.Read.All、**Group.ReadWrite.All**、Directory.Read.All**、Directory.ReadWrite.All** |
 
-> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。 标有 * 的权限使用 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 

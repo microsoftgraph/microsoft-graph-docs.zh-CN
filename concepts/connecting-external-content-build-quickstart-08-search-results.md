@@ -1,18 +1,18 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: fc5f42c7b48246e2e1e6c52fdcfdb83657b7fd63
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289518"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805223"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 在此步骤中，您将搜索 SharePoint。
 
 1. 转到租户的根SharePoint网站。
-2. 使用页面顶部的搜索框，搜索"下一 **页"。**
+2. 使用页面顶部的搜索框，搜索 **页面**。
 
   !["设备部件"选项卡上"word"的搜索结果示例。](images/connectors-images/build19.png)
 

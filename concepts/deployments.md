@@ -3,8 +3,13 @@ title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
+ms.openlocfilehash: 5ced4d1032c1b45d62474d0cfe21f7e421e90216
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804435"
 ---
-
 # <a name="national-cloud-deployments"></a>区域云部署
 
 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是 Microsoft 企业云服务的物理和逻辑网络隔离实例，它们限制在特定国家/地区的地理边界内，由本地人员运营。
@@ -17,7 +22,7 @@ ms.localizationpriority: medium
 
 每个国家/地云环境都是唯一的，并且不同于 Microsoft 全球环境。 为国家云环境开发应用程序时，了解其中一些关键差异非常重要;例如，注册应用程序、获取令牌和调用 Microsoft Graph API 可能会有所不同。
 
-本文提供有关不同 Microsoft Graph国家云部署以及每个部署中开发人员可用的功能的信息。
+本文提供有关不同 Microsoft Graph国家云部署的信息，以及开发人员在每个部署中可用的功能。
 
 > **注意**[Microsoft Graph 数据连接](./data-connect-concept-overview.md)不支持任何国家云部署。
 
@@ -51,7 +56,7 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > 对于美国政府的应用：
 >
-> * 如果你正在一个Microsoft 365 GCC环境中工作，请继续使用全球终结点： 和 `https://graph.microsoft.com` `https://portal.azure.com`。
+> * 如果你在安全环境中工作，Microsoft 365 GCC全球终结点： 和 `https://graph.microsoft.com` `https://portal.azure.com`。
 > * 如果你在高Microsoft 365 GCC工作，请使用 和 `https://portal.azure.us` `https://graph.microsoft.us`。
 > * 如果你在 DoD 环境中Microsoft 365，请使用 和 `https://portal.azure.us` `https://dod-graph.microsoft.us`。
 
@@ -79,7 +84,7 @@ ms.localizationpriority: medium
 | 个人联系人 | ✔ | ✔ | ✔ |
 | Planner | ✔ | ✔ | ✔ |
 | 报表 | ➖ | ➖ | ➖ |
-| 搜索 (Microsoft 搜索)  | ➖ | ➖ | ➖ |
+| 搜索 (Microsoft 搜索)  | ✔ | ➖ | ➖ |
 | 安全性 | ✔ | ✔ | ✔ |
 | 服务运行状况和通信 | ✔ | ✔ | ✔ |
 | 服务主体 | ✔ | ➖ | ➖ |
@@ -87,13 +92,13 @@ ms.localizationpriority: medium
 | Teams | ✔ | ✔ | ✔ |
 | 用户 | ✔ | ✔ | ✔ |
 
-以下 Microsoft Graph 功能在 Microsoft 云中国终结点)  (`/beta` 和 Microsoft 云德国 (v1.0 终结点上的预览版 (中提供，这些功能仅在 Microsoft Cloud for US Government) ：
+以下 Microsoft Graph `/beta` 功能在 Microsoft Cloud China 和 Microsoft Cloud Germany (v1.0 终结点上的) 终结点上的预览版 (中提供，这些功能仅在 Microsoft Cloud for US Government) ：
 
 * 组织联系人
 * 应用程序
 * 服务主体
 
-\* () 仅对 Exchange 和 OneDrive 服务提供有限支持。 Azure AD不支持其他服务。
+\* () 仅对 Exchange 和 OneDrive 服务提供有限支持。 Azure AD服务不受支持。
 
 > [!IMPORTANT]
 > 全局服务的特定区域的某些服务和功能可能无法在所有区域云中提供。 若要了解哪些服务可用，请参阅按 [地区提供的产品](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)。
@@ -111,5 +116,5 @@ ms.localizationpriority: medium
 探索国家云部署中的 Azure 和 Microsoft 365身份验证和操作示例：
 
 * [通过美国政府 Microsoft Graph Azure 合作](https://github.com/SteveWinward/Azure-Samples/blob/master/AAD/SampleAadToken_AzureForGovernment.ps1)
-* [连接 Microsoft) PowerShell (GCC、GCC High 和 GCC DoD) O365 Graph环境](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
+* [连接 Microsoft (GCC PowerShell (GCC、GCC High 和 GCC DoD) O365 Graph环境](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
 

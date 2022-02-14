@@ -5,20 +5,20 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6dbaadb3041f01679fb39d837c7f1438fee48458
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 679fc5da717ecca032cae32b61bcf986a7eeb950
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443056"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62803973"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
 命名空间：microsoft.graph
 
-更新[之前发布到](../resources/teamsapp.md)应用程序目录Microsoft Teams应用程序。 若要更新应用， **必须将应用的 distributionMethod** 属性设置为 `organization`。
+更新[之前发布到](../resources/teamsapp.md)应用程序Microsoft Teams的应用程序。 若要更新应用， **必须将应用的 distributionMethod** 属性设置为 `organization`。
 
-此 API 专门更新已发布到组织的应用程序目录的应用程序 (租户应用程序目录) 。
+此 API 专门更新发布到组织的应用程序目录的应用程序 (租户应用程序目录) 。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "62443056"
 | 委派（个人 Microsoft 帐户） | 不支持|
 | 应用程序                            | 不支持。 |
 
-> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您更新解决方案以使用上表中列出的备用权限，并避免今后使用这些权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 |属性|类型|说明|
 |----|----|----|
-|requiresReview| Boolean | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true`。 具有管理员权限的用户可以选择 `requiresReview` 不设置或将 `false`  值设置为 ，应用将被视为已批准，并且将立即发布。|
+|requiresReview| 布尔值 | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true`。 具有管理员权限的用户可以选择 `requiresReview` 不设置或将 `false`  值设置为 ，应用将被视为已批准，并且将立即发布。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -67,7 +67,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>示例 1：更新之前发布到 Microsoft Teams 应用程序目录的应用程序
+### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>示例 1：更新之前发布到应用程序Microsoft Teams的应用程序
 
 #### <a name="request"></a>请求
 

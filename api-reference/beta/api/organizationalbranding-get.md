@@ -5,23 +5,23 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 714a53c2777de89ed5ec1b7d169cbf52d5d84d4a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: abdb21910654b0311312e3a22764337861aa0755
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133307"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804512"
 ---
 # <a name="get-organizationalbranding"></a>Get organizationalBranding
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-如果 **Accept-Language** 标头设置为 或 ，则检索默认组织品牌 `0` 对象 `default` 。 如果不存在默认的组织品牌对象，此方法将返回 `404 Not Found` 错误。
+如果 **Accept-Language** 标头设置为 或 ，则检索默认组织品牌 `0` 对象 `default`。 如果不存在默认的组织品牌对象，此方法将返回错误 `404 Not Found` 。
 
-如果 **Accept-Language** 标头设置为由 **id** 的值标识的现有区域设置，此方法将检索指定区域设置的品牌。
+如果将 **Accept-Language** 标头设置为由 **id** 的值标识的现有区域设置，此方法将检索指定区域设置的品牌。
 
-此方法仅检索非 Stream 属性，例如 **usernameHintText** 和 **signInPageText**。 若要检索默认品牌（例如 **bannerLogo** 和 **backgroundImage）** 的 Stream 类型，请使用 [GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) 方法。
+此方法仅检索非 Stream 属性，例如 **usernameHintText** 和 **signInPageText**。 若要检索默认品牌（例如 **bannerLogo** 和 **backgroundImage**）的 Stream 类型，请使用 [GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) 方法。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,7 +44,7 @@ GET /organization/{organizationId}/branding
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法仅支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法仅支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -125,7 +125,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#branding",
     "@odata.id": "https://graph.microsoft.com/v2/99b24e1b-abec-4598-9d63-a2baf0a3cea1/directoryObjects/$/Microsoft.DirectoryServices.Organization('99b24e1b-abec-4598-9d63-a2baf0a3cea1')/branding/0",
     "id": "0",
-    "backgroundColor": "",
+    "backgroundColor": " ",
     "backgroundImageRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/illustration?ts=637535563816027796",
     "bannerLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/bannerlogo?ts=637535563824629275",
     "cdnList": [
@@ -133,9 +133,27 @@ Content-Type: application/json
         "aadcdn.msftauthimages.net",
         "aadcdn.msauthimages.net"
     ],
+    "customAccountResetCredentialsUrl": null,
+    "customCannotAccessYourAccountText": null,
+    "customCannotAccessYourAccountUrl": null,
+    "customForgotMyPasswordText": null,
+    "customPrivacyAndCookiesText": null,
+    "customPrivacyAndCookiesUrl": null,
+    "customTermsOfUseText": null,
+    "customTermsOfUseUrl": null,
+    "customResetItNowText": null,
+    "faviconRelativeUrl": null,
+    "headerBackgroundColor": null,
     "signInPageText": "Contoso",
     "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
-    "usernameHintText": ""
+    "usernameHintText": " ",
+    "loginPageTextVisibilitySettings": {
+      "hideCannotAccessYourAccount": false,
+      "hideForgotMyPassword": false,
+      "hideResetItNow": false,
+      "hideTermsOfUse": true,
+      "hidePrivacyAndCookies": true
+    }
 }
 ```
 
@@ -197,7 +215,7 @@ HTTP/1.1 404 Not Found
 
 ### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>示例 3：获取法语区域设置的组织品牌
 
-在下面的示例中 **，Accept-Language** 标头用于指定检索 `fr-FR` 本地化品牌。
+在下面的示例中， **Accept-Language** 标头用于指定检索本地化 `fr-FR` 品牌。
 
 #### <a name="request"></a>请求
 
@@ -272,7 +290,7 @@ Content-Type: application/json
 
 ### <a name="example-4-get-the-bannerlogo-for-the-default-locale"></a>示例 4：获取默认区域设置的 bannerLogo
 
-下面的示例返回默认 **区域设置中的 bannerLogo** 对象。 若要检索 Stream 对象类型（例如 **bannerLogo），** 请使用 [Get organizationalBrandingLocalization 方法](organizationalbrandinglocalization-get.md)。 您可以在请求 **URL 中或指定 id** `default` `0` 的值。 如果未设置属性，请求将返回空响应。
+下面的示例返回默认 **区域设置中的 bannerLogo** 对象。 若要检索 Stream 对象类型（例如 **bannerLogo**），请使用 [Get organizationalBrandingLocalization 方法](organizationalbrandinglocalization-get.md)。 您可以在请求 **URL 中或指定 id** `default` `0` 的值。 如果未设置属性，请求将返回空响应。
 
 #### <a name="request"></a>请求
 
@@ -312,8 +330,6 @@ Content-Type: image/*
 
 下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbranding_frlocale_bannerLogo"
@@ -322,23 +338,6 @@ Content-Type: image/*
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/default/bannerLogo
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbranding-frlocale-bannerlogo-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbranding-frlocale-bannerlogo-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbranding-frlocale-bannerlogo-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbranding-frlocale-bannerlogo-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response"></a>响应

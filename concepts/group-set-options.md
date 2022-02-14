@@ -3,14 +3,14 @@ title: 设置 Microsoft 365 组行为与预配选项
 description: 在 Microsoft Graph 使用组资源，你可以设置创建 Microsoft 365 组时要预配的特定组行为和资源。
 author: Jordanndahl
 ms.localizationpriority: high
-ms.openlocfilehash: d8e902c0b2cd43c870d29fcf00b4e28e1e17fca8
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 3844be2abb14909c8af18af4206c0b655fe42612
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225929"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804596"
 ---
-# <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>设置 Microsoft 365 组行为与预配选项（预览）
+# <a name="set-microsoft-365-group-behaviors-and-provisioning-options"></a>设置 Microsoft 365 组行为与预配选项
 
 使用 Microsoft Graph 中的 [组](/graph/api/resources/group) ，可设置创建 Microsoft 365 组时要预配的特定组行为和资源。 根据资源，还可在组更新时预配某些内容。
 

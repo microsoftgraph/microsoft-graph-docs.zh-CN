@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 23f58a21464edf4446a45672b963a203d294e0cf
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: bfe44b47e3e7d4b81ecd5a91c294a31df05b6662
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443329"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804267"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>在频道中发送对消息的答复
 
@@ -20,7 +20,7 @@ ms.locfileid: "62443329"
 
 将新回复发送到指定频道中的 [chatMessage](../resources/chatmessage.md)[。](../resources/channel.md)
 
-> **注意**：使用 Microsoft Teams 违反使用条款日志文件。[](/legal/microsoft-apis/terms-of-use) 仅发送用户将阅读的邮件。
+> **注意**：使用产品作为Microsoft Teams违反日志文件 [](/legal/microsoft-apis/terms-of-use)。 仅发送用户将阅读的邮件。
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -35,7 +35,7 @@ ms.locfileid: "62443329"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Teamwork.Migrate.All |
 
-> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您更新解决方案以使用上表中列出的备用权限，并避免今后使用这些权限。
 
 > **注意**：仅迁移 *支持* 应用程序 [权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。

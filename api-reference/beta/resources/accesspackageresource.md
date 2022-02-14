@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 867e4e400175cd912b90b79aadfd64591bedfb7b
-ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
+ms.openlocfilehash: e4fa9d3e7f2505d210026f7b7b54429539a9cd1a
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62468340"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804764"
 ---
 # <a name="accesspackageresource-resource-type"></a>accessPackageResource 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "62468340"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD中](entitlementmanagement-overview.md)，访问包资源是一个对与访问包目录关联的资源的引用。 访问包资源的角色可在一个或多个访问包中使用。  若要请求将资源与访问包目录关联，或者从目录中删除资源，请创建 [accessPackageResourceRequest](accesspackageresourcerequest.md)。
+在[Azure AD管理](entitlementmanagement-overview.md)中，访问包资源是一个对与访问包目录关联的资源的引用。 访问包资源的角色可在一个或多个访问包中使用。  若要请求将资源与访问包目录关联，或者从目录中删除资源，请创建 [accessPackageResourceRequest](accesspackageresourcerequest.md)。
 
 ## <a name="methods"></a>方法
 
@@ -32,15 +32,15 @@ ms.locfileid: "62468340"
 |:-------------|:------------|:------------|
 |accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|包含资源的环境信息。 这可以使用批注或 `@odata.bind` 环境的 *originId 进行设置*。|
 |attributes|[accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md) 集合| 包含有关从请求程序收集并发送到资源应用程序的属性的信息。 |
-|addedBy|String|只读。|
+|addedBy|字符串|首次添加此资源的用户或应用程序的名称。 只读。|
 |addedOn|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
-|description|String|资源的说明。|
-|displayName|String|资源的显示名称，如应用程序名称、组名称或网站名称。|
-|id|String| 只读。|
-|isPendingOnboarding|布尔|如此 如果资源尚不可用于工作分配。|
-|originId|String|源系统中资源的唯一标识符。 对于组Azure AD，这是组的标识符。 |
+|description|字符串|资源的说明。|
+|displayName|字符串|资源的显示名称，例如应用程序名称、组名称或网站名称。|
+|id|字符串| 只读。|
+|isPendingOnboarding|布尔值|如此 如果资源尚不可用于工作分配。|
+|originId|字符串|源系统中资源的唯一标识符。 对于组Azure AD，这是组的标识符。 |
 |originSystem|字符串|源系统中资源的类型 `SharePointOnline`，如 或 `AadApplication` `AadGroup`。|
-|resourceType|String|资源的类型`Application`，例如，它是已Azure AD应用程序`SharePoint Online Site`，还是 SharePoint Online 网站。|
+|resourceType|字符串|资源的类型`Application`，例如，它是已Azure AD的应用程序`SharePoint Online Site`，还是 SharePoint Online 网站。|
 |url|String|资源的唯一资源定位器，例如用于将用户登录应用程序的 URL。|
 
 ## <a name="relationships"></a>关系

@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e88cfc3dd1e11f42feb3ede56594461a5f9d0b59
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 28028bfe970f5a63f8d877bfebe55a68cced21ec
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224942"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804176"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>获取 accessReviewHistoryDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "62224942"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按其 [标识符检索 accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。 返回访问评审历史记录定义对象的所有属性。 如果定义是 30 天或更久，则返回 404 错误。
+按其 [标识符检索 accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。 返回访问评审历史记录定义对象的所有属性。 如果定义是 30 天或更久，则返回 `404 Not Found` 错误。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +44,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 和 `$expand` OData 查询参数来帮助自定义响应。 包括 `?$expand=instances` 将包括响应对象中与 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象关联的实例。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 和 `$select` `$expand` OData 查询参数来帮助自定义响应。 包括 `?$expand=instances` 将包括响应对象中与 [accessReviewHistoryDefinition 对象关联的](../resources/accessreviewhistorydefinition.md) 实例。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -58,7 +58,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 

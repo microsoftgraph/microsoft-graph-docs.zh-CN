@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c793ff853806d937612324240b616b184a0deae4
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 32a2bcf4ed9436d5e39e902d747925a744c07440
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336075"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804505"
 ---
 # <a name="list-localizations"></a>列出本地化
 命名空间：microsoft.graph
@@ -39,7 +39,7 @@ GET /organization/{organizationId}/branding/localizations
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法仅支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法仅支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -51,7 +51,7 @@ GET /organization/{organizationId}/branding/localizations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -104,7 +104,7 @@ Content-Type: application/json
         {
             "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')//localizations/0",
             "id": "0",
-            "backgroundColor": "",
+            "backgroundColor": " ",
             "backgroundImageRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/illustration?ts=637635061764954395",
             "bannerLogoRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/bannerlogo?ts=637635061773126717",
             "cdnList": [
@@ -112,9 +112,27 @@ Content-Type: application/json
                 "aadcdn.msftauthimages.net",
                 "aadcdn.msauthimages.net"
             ],
+            "customAccountResetCredentialsUrl": null,
+            "customCannotAccessYourAccountText": null,
+            "customCannotAccessYourAccountUrl": null,
+            "customForgotMyPasswordText": null,
+            "customPrivacyAndCookiesText": null,
+            "customPrivacyAndCookiesUrl": null,
+            "customTermsOfUseText": null,
+            "customTermsOfUseUrl": null,
+            "customResetItNowText": null,
+            "faviconRelativeUrl": null,
+            "headerBackgroundColor": null,
             "signInPageText": "Contoso",
-            "squareLogoRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/tilelogo?ts=637635061781098977",
-            "usernameHintText": ""
+            "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
+            "usernameHintText": " ",
+            "loginPageTextVisibilitySettings": {
+              "hideCannotAccessYourAccount": false,
+              "hideForgotMyPassword": false,
+              "hideResetItNow": false,
+              "hideTermsOfUse": true,
+              "hidePrivacyAndCookies": true
+            }
         },
         {
             "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')//localizations/fr",
@@ -123,9 +141,27 @@ Content-Type: application/json
             "backgroundImageRelativeUrl": null,
             "bannerLogoRelativeUrl": null,
             "cdnList": [],
-            "signInPageText": "Welcome",
-            "squareLogoRelativeUrl": null,
-            "usernameHintText": "hint"
+            "customAccountResetCredentialsUrl": null,
+            "customCannotAccessYourAccountText": null,
+            "customCannotAccessYourAccountUrl": null,
+            "customForgotMyPasswordText": null,
+            "customPrivacyAndCookiesText": null,
+            "customPrivacyAndCookiesUrl": null,
+            "customTermsOfUseText": null,
+            "customTermsOfUseUrl": null,
+            "customResetItNowText": null,
+            "faviconRelativeUrl": null,
+            "headerBackgroundColor": null,
+            "signInPageText": "Contoso",
+            "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
+            "usernameHintText": " ",
+            "loginPageTextVisibilitySettings": {
+              "hideCannotAccessYourAccount": false,
+              "hideForgotMyPassword": false,
+              "hideResetItNow": false,
+              "hideTermsOfUse": true,
+              "hidePrivacyAndCookies": true
+            }
         }
     ]
 }

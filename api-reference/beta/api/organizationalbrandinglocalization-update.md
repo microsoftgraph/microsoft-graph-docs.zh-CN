@@ -5,19 +5,19 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6721b8c03d2bbb52e3fa9bd037e3775ea2939a2f
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 515dfc01827dec33ea9c63e8477965c3b62cbb6b
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343724"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804470"
 ---
 # <a name="update-organizationalbrandinglocalization"></a>更新 organizationalBrandingLocalization
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为特定本地化更新 [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象的属性。
+为特定本地化 [更新 organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,7 +30,7 @@ ms.locfileid: "61343724"
 
 ## <a name="http-request"></a>HTTP 请求
 
-使用 PUT 方法仅更新 Stream 数据类型，包括 **backgroundLogo** 和 **backgroundImage。** 若要更新 String 数据类型（包括 **signInPageText** 和 **usernameHintText），** 请使用 PATCH 方法。 不能在同一请求中用其他数据类型更新 Stream 类型。
+使用 PUT 方法仅更新 Stream 数据类型，包括 **backgroundLogo** 和 **backgroundImage**。 若要更新 String 数据类型（包括 **signInPageText** 和 **usernameHintText**），请使用 PATCH 方法。 不能在同一请求中用其他数据类型更新 Stream 类型。
 
 <!-- {
   "blockType": "ignored"
@@ -48,18 +48,27 @@ PUT /organization/{organizationId}/branding/localizations/{organizationalBrandin
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，*仅* 提供应更新的属性的值。未包含在请求正文中的现有属性将保留其以前的值或根据对其他属性值的更改重新计算。
 
-下表指定可更新的属性。 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| backgroundColor | String | 将出现在低带宽连接中的背景图像上的颜色。 我们建议你使用横幅徽标的主要颜色或你的组织颜色。 以十六进制格式指定此参数，例如，white 为 `#FFFFFF` 。 |
+| backgroundColor | 字符串 | 在低带宽连接中显示的颜色，用于表示背景图像。 我们建议你使用横幅徽标的主要颜色或你的组织颜色。 以十六进制格式指定此参数，例如，white 为 `#FFFFFF`。 |
 | backgroundImage | Stream | 显示为登录页背景的图像。 允许的类型是 PNG 或 JPEG，不小于 300 KB 且不超过 1920 × 1080 像素。 较小的图像将降低带宽要求，并加快页面加载速度。 |
-| bannerLogo | Stream | 显示在登录页上的公司徽标的横幅版本。 允许的类型为 PNG 或 JPEG，不超过 36 × 245 像素。 我们建议使用透明图像，徽标周围没有填充。 |
-| signInPageText | String | 显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。 |
-| squareLogo | Stream | 在 OOBE Windows 10中显示公司徽标的正方形 (OOBE) ，Windows Autopilot 进行部署。 允许的类型为 PNG 或 JPEG，不超过 240 x 240 像素，大小不超过 10 KB。 我们建议使用透明图像，徽标周围没有填充。|
-| usernameHintText | String | 在登录屏幕的用户名文本框中显示为提示的字符串。 此文本必须是不带链接或代码的 Unicode，并且不能超过 64 个字符。|
+| bannerLogo | Stream | 显示在登录页上的公司徽标的横幅版本。 允许的类型是 PNG 或 JPEG 不超过 36 × 245 像素。 我们建议使用透明图像，徽标周围没有填充。 |
+| customAccountResetCredentialsUrl | 字符串 | 用于重置帐户凭据的自定义 URL。 此 URL 必须采用 ASCII 格式，或者非 ASCII 字符必须经过 URL 编码，且不得超过 128 个字符。 |
+| customCannotAccessYourAccountText | 字符串 | 一个字符串，用于替换默认字符串"无法访问你的帐户？" 自助密码重置 (SSPR) 登录页面上的超链接文本。 此文本必须采用 Unicode 格式，且不得超过 256 个字符。 |
+| customForgotMyPasswordText | 字符串 | 一个字符串，用于替换登录表单上的默认"忘记密码"超链接文本。 此文本必须采用 Unicode 格式，且不得超过 256 个字符。 |
+| customPrivacyAndCookiesText | 字符串 | 一个字符串，用于替换页脚中的默认"隐私和 Cookie"超链接文本。 此文本必须采用 Unicode 格式，且不得超过 256 个字符。 |
+| customPrivacyAndCookiesUrl | 字符串 | 用于替换页脚中"隐私和 Cookie"超链接的默认 URL 的自定义 URL。 此 URL 必须采用 ASCII 格式，或者非 ASCII 字符必须经过 URL 编码，且不得超过 128 个字符。 |
+| customTermsOfUseText | 字符串 | 一个字符串，用于替换页脚中的默认"使用条款"超链接文本。 此文本必须采用 Unicode 格式，且不得超过 256 个字符。 |
+| customTermsOfUseUrl | 字符串 | 用于替换页脚中"使用条款"超链接的默认 URL 的自定义 URL。 此 URL 必须采用 ASCII 格式，或者非 ASCII 字符必须经过 URL 编码，并且不得超过 128 个字符。 |
+| favicon | Stream | 自定义图标 (替换) 租户上的默认 Microsoft 产品Azure AD图标。 |
+| headerBackgroundColor | 字符串 | 要应用以自定义页眉颜色的 RGB 颜色。 |
+| loginPageTextVisibilitySettings | [loginPageTextVisibilitySettings](../resources/loginPageTextVisibilitySettings.md) | 表示可在租户的登录页上隐藏的各种文本。 所有属性都可以更新。 |
+| signInPageText | 字符串 | 显示在登录框底部的文本。 使用它来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须采用 Unicode 格式，且不得超过 1024 个字符。 |
+| squareLogo | Stream | 显示在 Windows 10 OOBE (OOBE) 和启用 Windows Autopilot 进行部署的现成功能中的公司徽标的正方形版本。 允许的类型是 PNG 或 JPEG，其大小不超过 240 x 240 像素且大小不超过 10 KB。 我们建议使用透明图像，徽标周围没有填充。|
+| usernameHintText | 字符串 | 一个字符串，在登录屏幕的用户名文本框中作为提示显示。 此文本必须是不带链接或代码的 Unicode，并且不能超过 64 个字符。 |
 
 ## <a name="response"></a>响应
 
@@ -95,7 +104,7 @@ Content-Type: image/jpeg
 } -->
 
 ```http
-HTTP/1.1 204 NO CONTENT
+HTTP/1.1 204 No Content
 ```
 
 ### <a name="example-2-update-the-backgroundcolor-and-signinpagetext-for-the-fr-fr-localization-using-patch"></a>示例 2：使用 PATCH 更新 fr-FR 本地化的 backgroundColor 和 signInPageText
@@ -196,6 +205,8 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
+请求后，本地化的 **usernameHintText** `fr-FR` 将为空，而不是从默认品牌对象继承值。
+
 <!-- {
   "blockType": "response"
 } -->
@@ -203,5 +214,3 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-
-在此请求后，本地化的 usernameHintText 将为空，而不是从默认 `fr-FR` 品牌对象继承值。

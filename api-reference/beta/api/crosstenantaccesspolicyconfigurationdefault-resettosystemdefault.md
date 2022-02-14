@@ -5,8 +5,13 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
+ms.openlocfilehash: 22a2b3914d4a526c57146cf395d8255435199f5f
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804421"
 ---
-
 # <a name="crosstenantaccesspolicyconfigurationdefault-resettosystemdefault"></a>crossTenantAccessPolicyConfigurationDefault：resetToSystemDefault
 
 命名空间：microsoft.graph
@@ -48,7 +53,7 @@ POST /policies/crossTenantAccessPolicy/default/resetToSystemDefault
 
 ## <a name="response"></a>响应
 
-如果成功，此操作将返回 响应 `200 OK` 代码和空响应。 若要确认默认配置已还原为系统默认值，请运行 [Get crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-get.md) 并确认 **isSystemDefault** 已设置为 `true`。
+如果成功，此操作返回 `204 No Content` 响应代码。 若要确认默认配置已还原为系统默认值，请运行 [Get crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-get.md) 并确认 **isSystemDefault** 已设置为 `true`。
 
 ## <a name="examples"></a>示例
 
@@ -68,16 +73,10 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationDefault"
+  "truncated": true
 }
 -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-
-}
+HTTP/1.1 204 No Content
 ```

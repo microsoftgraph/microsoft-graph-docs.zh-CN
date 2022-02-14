@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: 93112b4ae67b3fe6352f0569613f8df064bc9de3
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59929126"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805244"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
@@ -13,18 +13,18 @@ ms.locfileid: "59929126"
 
 ## <a name="create-a-net-core-console-app"></a>创建 .NET Core 控制台应用
 
-1. 启动 Visual Studio 2019，然后转到"**文件**  >  **""新建**  >  **Project"。**
-2. 选择控制台 **应用 (.NET 核心)** 模板，然后选择下一 **步**。
-3. Enter the **Project name**： "PartsInventoryConnector"， and select the checkbox for " Place solution and project in the **same directory**"， and select **Create** as shown in the next image.
+1. 启动 Visual Studio 2019，然后转到 **"文件** >  > "**"新建Project"**。
+2. 选择" **控制台应用 A0.NET 核心)** 模板，然后选择"下一 **步"**。
+3. 输入 **Project名称**："PartsInventoryConnector"，然后选中"将解决方案和项目放置到同一 **目录中"的** 复选框，然后选择"创建"**，如下图** 所示。
 
 !["配置新项目"部分屏幕截图](images/connectors-images/build7.png)
 
 > [!IMPORTANT]
-> 在移动到下一步之前，将ApplianceParts.csv文件复制到项目的根文件夹。
+> 在移动到下一步之前，ApplianceParts.csv文件复制到项目的根文件夹。
 
 ## <a name="add-nuget-packages"></a>添加 Nuget 程序包
 
-若要添加NuGet程序包，请右键单击"Project **解决方案"，** 然后选择"**在终端中打开"。**
+若要添加NuGet包，请右键单击"Project **解决方案"**，然后选择"**在终端中打开"**。
 
 ![显示"打开终端"选项的屏幕截图](images/connectors-images/build8.png)
 
@@ -40,10 +40,10 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 ```
 
 > [!TIP]
-> 如果 `add package` 命令失败，请检查 **项目的程序包** 源：
+> 如果命令 `add package` 失败，请检查 **项目的程序包** 源：
 > 1. 在"解决方案资源管理器"中选择项目。
 > 2. 转到工具> Nuget 程序包管理器 > 程序包管理器 设置。
-> 3. 检查程序包源，并确保 nuget.&#65279;组织作为程序包源安装。
+> 3. 检查程序包源，并确保 nuget.&#65279;作为程序包源安装。
 >     * 名称：nuget.&#65279;org
 >     *  源：https&#65279;：//api.nuget.org/v3/index.json
 
@@ -54,7 +54,7 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 需要此身份验证才能获取必要的 OAuth 访问令牌来调用连接器 API。
 
 1. 在 **PartsInventoryConnector** 目录中创建一个名为 **Authentication** 的新目录。
-2. 在 Authentication 目录中新建一个名为 ClientCredentialAuthProvider.cs 的文件，将以下代码放在该文件中：
+2. 在 Authentication 目录中新建一个名为  ClientCredentialAuthProvider.cs 的文件，将以下代码放在该文件中：
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -126,8 +126,8 @@ namespace PartsInventoryConnector.Authentication
 
 ## <a name="add-user-experience"></a>添加用户体验
 
-1. 在 **PartsInventoryConnector** 目录中新建一个名为 Console **的目录**。
-2. 在控制台目录中新建一个名为MenuChoice.cs 的文件，将以下代码放在该文件中：
+1. 在 **PartsInventoryConnector** 目录中新建一个名为 **Console 的目录**。
+2. 在控制台目录中新建一个名为  MenuChoice.cs 的文件，将以下代码放在该文件中：
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -148,8 +148,8 @@ namespace PartsInventoryConnector.Console
 
 ## <a name="set-up-data-model"></a>设置数据模型
 
-1. 在 **PartsInventoryConnector** 目录中新建一个名为 Models **的目录**。
-2. 在 Models 目录中创建一个名为 AppliancePart.cs 的新文件，将以下代码放在该文件中：
+1. 在 **PartsInventoryConnector** 目录中新建一个名为 **Models 的目录**。
+2. 在 Models 目录中创建一个名为  AppliancePart.cs 的新文件，将以下代码放在该文件中：
 
 
 ```c
@@ -198,7 +198,7 @@ namespace PartsInventoryConnector.Models
 
 
 
-3. 在 Models 目录中创建一个名为 ApplianceDbContext.cs 的新文件，将以下代码放在该文件中：
+3. 在 Models 目录中创建一个名为  ApplianceDbContext.cs 的新文件，将以下代码放在该文件中：
 
 ```c
 using Microsoft.Data.Sqlite;
@@ -280,7 +280,7 @@ namespace PartsInventoryConnector.Models
 ```
 
 4. 在 **PartsInventoryConnector** 目录中创建一个名为 **Data** 的新目录。
-5. 在名为 CsvDataLoader.cs 的数据目录中创建一个新文件，将以下代码放在该文件中： 
+5. 在名为 CsvDataLoader.cs 的数据目录中创建一个新文件，将以下代码放在该文件中：
 
 ```c
 using CsvHelper;
@@ -413,7 +413,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
 }
 ```
 
-3. 在 Microsoft Graph目录中创建一个名为 MicrosoftGraphHelper.cs **的新** 文件，将下面的代码放在该文件中。
+3. 在 Microsoft Graph目录中创建一个名为 MicrosoftGraphHelper.cs 的新文件，将下面的代码放在该文件中。
 
     以下代码包含使用 **MicrosoftGraphServiceClient** 生成调用并将其发送到 Microsoft Graph 服务并处理响应的方法。
 
@@ -774,7 +774,7 @@ private static async Task RegisterSchemaAsync()
 
 ## <a name="sync-items"></a>同步项目
 
-1. 在 **"Microsoft Graph"** 下，打开 MicrosoftGraphHelper.cs 文件，在 **构造函数** 方法后添加以下代码。
+1. 在 **"microsoft Graph**"下，打开 MicrosoftGraphHelper.cs 文件，在 **构造函数** 方法后添加以下代码。
 
 ```c
 #region PushData

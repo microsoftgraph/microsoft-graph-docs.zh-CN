@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 17d2125299952a2a89ab3e86d4a66dee4aa9119c
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 28b9a664dea0c3a434d96a7408ff87f6a6fcec47
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62442832"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804106"
 ---
 # <a name="clone-a-team"></a>克隆团队
 
@@ -22,12 +22,12 @@ ms.locfileid: "62442832"
 可以指定要克隆的团队的哪些部分：
 
 - **应用** - Microsoft Teams团队中安装的应用。 
-- **channels** – 将频道结构 (，但不复制频道中的) 。
+- **channels** – 将频道结构 (，但不复制频道中) 。
 - **members** – 复制组的成员和所有者。
 - **settings** - 复制团队内的所有设置以及关键组设置。
 - **tabs** – 在频道内复制选项卡。
 
-克隆选项卡时，这些选项卡将进入未配置状态 -它们显示在 Microsoft Teams 中的选项卡栏上，首次打开它们时，你将通过配置屏幕。  (如果打开选项卡的用户没有配置应用的权限，他们将看到一条消息，说明尚未配置选项卡。) 
+克隆选项卡时，这些选项卡将进入未配置状态 -它们显示在 Microsoft Teams 中的选项卡栏上，首次打开它们时，你将通过配置屏幕。  (如果打开选项卡的用户没有配置应用的权限，他们会看到一条消息，说明尚未配置选项卡。) 
 
 克隆是一项长时间运行的操作。
 POST 克隆返回后，您需要获取 Location： 标头返回[](../resources/teamsasyncoperation.md)的操作，以查看其是否"正在运行"或"成功"或"失败"。 您应该继续 GET，直到状态未"正在运行"。 GET 之间的建议延迟为 5 秒。
@@ -42,7 +42,7 @@ POST 克隆返回后，您需要获取 Location： 标头返回[](../resources/t
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序                            | Team.Create、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 
-> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您更新解决方案以使用上表中列出的备用权限，并避免今后使用这些权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +61,7 @@ POST /teams/{id}/clone
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |classification|可选 (字符串) |介绍组策略分类 (低、中或高业务影响) 。 此属性的有效值通过基于模板定义创建 [ClassificationList 设置](../resources/directorysetting.md) 值 [进行定义](../resources/directorysettingtemplate.md)。 如果未指定分类，则从原始团队/组复制分类。|
-|说明|可选 (字符串) |可选的组说明。 如果未指定此属性，则此属性将留空。|
+|description|可选 (字符串) |可选的组说明。 如果未指定此属性，则此属性将留空。|
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 支持 $filter。 如果未指定此属性，则从 displayName 计算此属性。 已知问题：此属性当前被忽略。|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |要克隆的部件的逗号分隔列表。 法律部分为"应用、选项卡、设置、频道、成员"。|

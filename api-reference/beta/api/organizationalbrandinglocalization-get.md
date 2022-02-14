@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2272ef473ab58a2ae4aac58e150068c1950ed84a
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 416b6dc855648460e58d9a44a6a54ed1e7b7de3a
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996808"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805072"
 ---
 # <a name="get-organizationalbrandinglocalization"></a>Get organizationalBrandingLocalization
 命名空间：microsoft.graph
@@ -108,7 +108,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.organizationalBrandingProperties",
     "@odata.id": "https://graph.microsoft.com/v2/99b24e1b-abec-4598-9d63-a2baf0a3cea1/directoryObjects/$/Microsoft.DirectoryServices.Organization('99b24e1b-abec-4598-9d63-a2baf0a3cea1')//localizations('fr-FR')/fr-FR",
     "id": "fr-FR",
-    "backgroundColor": "",
+    "backgroundColor": " ",
     "backgroundImageRelativeUrl": null,
     "bannerLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/1036/bannerlogo?ts=637673868626068858",
     "cdnList": [
@@ -116,8 +116,27 @@ Content-Type: application/json
         "aadcdn.msftauthimages.net",
         "aadcdn.msauthimages.net"
     ],
-    "signInPageText": "Welcome to Contoso France",
-    "usernameHintText": "Welcome to Contoso France"
+    "customAccountResetCredentialsUrl": null,
+    "customCannotAccessYourAccountText": null,
+    "customCannotAccessYourAccountUrl": null,
+    "customForgotMyPasswordText": null,
+    "customPrivacyAndCookiesText": null,
+    "customPrivacyAndCookiesUrl": null,
+    "customTermsOfUseText": null,
+    "customTermsOfUseUrl": null,
+    "customResetItNowText": null,
+    "faviconRelativeUrl": null,
+    "headerBackgroundColor": null,
+    "signInPageText": "Contoso",
+    "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
+    "usernameHintText": " ",
+    "loginPageTextVisibilitySettings": {
+      "hideCannotAccessYourAccount": false,
+      "hideForgotMyPassword": false,
+      "hideResetItNow": false,
+      "hideTermsOfUse": true,
+      "hidePrivacyAndCookies": true
+    }
 }
 ```
 
@@ -180,7 +199,7 @@ Content-Type: application/json
 
 ### <a name="example-3-get-the-bannerlogo-for-the-default-locale"></a>示例 3：获取默认区域设置的 bannerLogo
 
-下面的示例返回默认 **区域设置中的 bannerLogo** 对象。 您可以在请求 **URL 中** 指定 id 或 `default` `0` 。 如果未设置对象，请求将返回空响应。
+下面的示例返回默认 **区域设置中的 bannerLogo** 对象。 您可以在请求 **URL 中** 指定 `default` `0` id 或 。 如果未设置对象，请求将返回空响应。
 
 #### <a name="request"></a>请求
 
@@ -214,7 +233,7 @@ Content-Type: image/*
 
 ### <a name="example-4-get-the-bannerlogo-for-the-fr-fr-locale"></a>示例 4：获取 fr-FR 区域设置的 bannerLogo
 
-下面的示例返回 **未设置其 bannerLogo** 区域设置的 `fr-FR` bannerLogo 对象。
+下面的示例返回 **未设置其 bannerLogo 区域设置的 bannerLogo** `fr-FR` 对象。
 
 #### <a name="request"></a>请求
 

@@ -5,12 +5,12 @@ author: hanki-microsoft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d015690c83cc3f9d5195e94ea857ed81f95189cc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5d6105291a92f5566f61bd9f52289af691f65c78
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110133"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804078"
 ---
 # <a name="get-accesspackageresourceenvironment"></a>获取 accessPackageResourceEnvironment
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "62110133"
 |:---|:---|
 |委派（工作或学校帐户）|EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) 对象。
 
 ## <a name="examples"></a>示例
 

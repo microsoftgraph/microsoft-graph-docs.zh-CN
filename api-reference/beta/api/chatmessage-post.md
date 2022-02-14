@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ccb06fe2585c48935bb670ba2da2a7030c049980
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: c9fd6c7115d5ab50334b2e63cf394c807d89da7e
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443238"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804253"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -22,7 +22,7 @@ ms.locfileid: "62443238"
 
 > **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：使用 Microsoft Teams 违反使用条款日志文件。[](/legal/microsoft-apis/terms-of-use) 仅发送用户将阅读的邮件。
+> **注意**：使用 Microsoft Teams 是违反使用条款日志文件 [](/legal/microsoft-apis/terms-of-use)。 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +35,7 @@ ms.locfileid: "62443238"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Teamwork.Migrate.All |
 
-> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您将解决方案更新为使用不同的权限，并避免今后使用这些权限。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您更新解决方案以使用上表中列出的备用权限，并避免今后使用这些权限。
 
 > **注意**：仅迁移 *支持* 应用程序 [权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。
 
@@ -682,7 +682,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和  **hostedContents** (中的内容) 相同。  (请注意 **，temporaryId 设置为** **1**`../hostedContents/1/$value`，内容中的引用设置为 .) 
+> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和  **hostedContents** (中的内容) 相同。  (请注意 **，temporaryId 设置为** **1** ，内容中的引用设置为 `../hostedContents/1/$value`.) 
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -815,7 +815,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。 若要了解如何获取团队中的频道列表，请参阅 [列出频道](../api/channel-list.md)。
 
-> 注意： **conversationIdentityType** 必须设置为 `channel` @mention频道。
+> 注意： **conversationIdentityType** 必须设置为 `channel` @mention通道。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

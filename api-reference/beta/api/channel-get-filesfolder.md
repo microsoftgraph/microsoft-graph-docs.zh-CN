@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bdb61ad54e6bedd3487a3f8c17ef47fae1469299
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: f060f9161de0d2e53d1322f28ccce431691c85db
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443343"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804386"
 ---
 # <a name="get-filesfolder"></a>获取 filesFolder
 
@@ -29,7 +29,7 @@ ms.locfileid: "62443343"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | File.Read.Group *、Files.Read.All、Files.ReadWrite.All、Group.Read.All**、Group.ReadWrite.All** |
 
-> **Note**： 仅支持使用 ** 标记的权限以实现向后兼容。 我们建议你更新解决方案以使用不同的权限，并避免今后使用这些权限。 标记为 * 的权限使用 [特定于资源的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

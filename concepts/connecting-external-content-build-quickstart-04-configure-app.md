@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: e04c28e801be69487d83e5b5a3184c4702652aa3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289520"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805236"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 

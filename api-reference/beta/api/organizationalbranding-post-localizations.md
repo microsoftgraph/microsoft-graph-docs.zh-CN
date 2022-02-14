@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bcc093ed5487a2e2aeabcb230452b80a072411bd
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 1557f8253e117ef42ee4245fd41d89aa0f647900
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647033"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804519"
 ---
 # <a name="create-organizationalbrandinglocalization"></a>创建 organizationalBrandingLocalization
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "61647033"
 
 创建新的 [organizationalBrandingLocalization](../resources/organizationalBrandingLocalization.md) 对象。 这将创建本地化品牌，同时创建默认品牌（如果不存在）。
 
-默认品牌仅创建一次。 当未为用户的浏览器语言配置本地化品牌时，将加载它。 若要检索默认品牌，请参阅获取 [品牌](organizationalbranding-get.md)。
+默认品牌仅创建一次。 当未为用户的浏览器语言配置本地化品牌时，将加载它。 若要检索默认品牌，请参阅 [获取品牌](organizationalbranding-get.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +52,7 @@ POST /organization/{organizationId}/branding/localizations
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| id | String | 表示使用区域性名称指定的区域设置的标识符。 区域性名称遵循 RFC 1766 标准，格式为"languagecode2-country/regioncode2"，其中"languagecode2"是派生自 ISO 639-1 的大写两字母代码，而"country/regioncode2"是派生自 ISO 3166 的大写两字母代码。 例如，美国英语为 `en-US` 。 无法将 **id** 的值设置为 String 类型或 来创建默认 `0` 品牌 `default` 。  <br/><br/>**注意：** 目前不支持单个区域设置的多个品牌。 |
+| id | 字符串 | 表示使用区域性名称指定的区域设置的标识符。 区域性名称遵循 RFC 1766 标准，格式为"languagecode2-country/regioncode2"，其中"languagecode2"是派生自 ISO 639-1 的大写两字母代码，而"country/regioncode2"是派生自 ISO 3166 的大写两字母代码。 例如，美国英语为 `en-US`。 无法将 **id** 的值设置为 String 类型或 来创建默认品牌`0``default`。  <br/><br/>**注意：** 目前不支持单个区域设置的多个品牌。 |
 
 ## <a name="response"></a>响应
 
@@ -60,7 +60,7 @@ POST /organization/{organizationId}/branding/localizations
 
 ## <a name="examples"></a>示例
 
-以下示例为法语和本地化创建 () `fr-FR` 本地化。 String 类型的任何未指定属性都继承自默认品牌对象中的值。 例如，如果默认品牌对象中的 signInPageText 为 ，则在此请求中创建的品牌的 `null` signInPageText `fr-FR` 也将为 `null` 。 若要替代 `null` 不带任何文本的值，请使用仅包含空格的字符串。
+以下示例为法语和本地化创建 () `fr-FR` 本地化。 String 类型的任何未指定属性都继承自默认品牌对象中的值。 例如，如果默认品牌对象中的 signInPageText 为 `null`，则在此请求中创建的品牌的 signInPageText `fr-FR` 也将为 `null`。 若要替代不带 `null` 任何文本的值，请使用仅包含空格的字符串。
 
 ### <a name="request"></a>请求
 
@@ -120,12 +120,12 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('d69179bf-f4a4-41a9-a9de-249c0f2efb1d')/branding/localizations/$entity",
     "@odata.id": "https://graph.microsoft.com/v2/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/directoryObjects/$/Microsoft.DirectoryServices.Organization('d69179bf-f4a4-41a9-a9de-249c0f2efb1d')//localizations/fr-FR",
     "id": "fr-FR",
-    "backgroundColor": "",
+    "backgroundColor": " ",
     "backgroundImageRelativeUrl": null,
     "bannerLogoRelativeUrl": null,
     "cdnList": [],
     "signInPageText": " ",
     "squareLogoRelativeUrl": null,
-    "usernameHintText": ""
+    "usernameHintText": " "
 }
 ```

@@ -5,34 +5,34 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: madansr7
-ms.openlocfilehash: e08803389b9e24ab8a4214a4696f672e8167b71a
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: f5c33fe77f2da4ab4d7085fa72935db86cd0d592
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61285110"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804302"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 
 命名空间：microsoft.graph
 
-包含与应用程序或服务主体关联的密钥凭据。 application 和 [servicePrincipal](serviceprincipal.md)实体的 **keyCredentials** 属性是 **keyCredential 的集合**。 [](application.md)
+包含与应用程序或服务主体关联的密钥凭据。 application 和 [servicePrincipal](serviceprincipal.md) 实体的 [](application.md) **keyCredentials** 属性是 **keyCredential 的集合**。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binary| 自定义密钥标识符 |
-| displayName | String | 密钥的友好名称。 可选。 |
-|endDateTime|DateTimeOffset|凭据过期的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|key|二进制| 转换为 Base64 字符串的字节数组中的证书原始数据;例如， `[System.Convert]::ToBase64String($Cert.GetRawCertData())` 。 |
-|keyId|Guid|唯一标识符 (GUID) 的 GUID 值。|
+| displayName | 字符串 | 密钥的友好名称。 可选。 |
+|endDateTime|DateTimeOffset|凭据过期的日期和时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|key|二进制| 转换为 Base64 字符串的字节数组中的证书原始数据。 仅对 `$select` 单个对象（ `GET applications/{applicationId}?$select=keyCredentials` 即 或 `GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials`）返回 ;否则，始终为 `null`。 |
+|keyId|Guid|该密钥 (GUID) 的唯一标识符。|
 |startDateTime|DateTimeOffset|凭据生效的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|type|String|密钥凭据的类型;例如， `Symmetric` 。|
-|usage|String|一个描述密钥的用途的字符串;例如， `Verify` 。|
+|type|字符串|密钥凭据的类型;例如，。 `Symmetric``AsymmetricX509Cert`|
+|usage|字符串|一个描述密钥的用途的字符串;例如， `Verify`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是资源的 JSON 表示形式。
+下面是资源的 JSON 表示形式
 
 <!-- {
   "blockType": "resource",
