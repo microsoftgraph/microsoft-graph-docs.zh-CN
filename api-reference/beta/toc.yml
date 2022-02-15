@@ -422,7 +422,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置见解
+                  - name: 设置人员见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -516,7 +516,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置见解
+              - name: 设置人员见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -1115,7 +1115,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: 列出 transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: 检查成员组
                     href: api/directoryobject-checkmembergroups.md
@@ -1848,7 +1848,7 @@ items:
         items:
           - name: 概述
             href: resources/project-rome-overview.md
-          - name: '列出已弃 (的用户) '
+          - name: '列出已 (的用户) '
             href: api/user-list-devices.md
           - name: '发送设备 (已弃) '
             href: api/send-device-command.md
@@ -2018,7 +2018,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: 重定向
+                  - name: Redirect
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -6835,7 +6835,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows defender 防篡改保护选项
+                  - name: Windows Defender 防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -10365,7 +10365,7 @@ items:
                     href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
                   - name: 获取租户详细信息
                     href: api/managedtenants-tenantdetailedinformation-get.md
-              - name: 租户
+              - name: Tenant
                 href: resources/managedtenants-tenant.md
                 items:
                   - name: 列出租户
@@ -11548,7 +11548,7 @@ items:
                         href: api/softwareOathAuthenticationMethod-get.md
                       - name: 删除
                         href: api/softwareOathAuthenticationMethod-delete.md
-                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃) '
+                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃用) '
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: 列表
@@ -12224,7 +12224,7 @@ items:
                     href: api/trustframeworkpolicy-delete.md
               - name: 用户流
                 items:
-                  - name: '用户流 (弃用) '
+                  - name: '用户流 (弃) '
                     items:
                       - name: 用户流
                         href: resources/identityuserflow.md
@@ -12324,7 +12324,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: 用户流属性分配
                     items:
-                      - name: 用户
+                      - name: User
                         href: resources/identityuserflowattributeassignment.md
                       - name: 获取
                         href: api/identityuserflowattributeassignment-get.md
@@ -12413,23 +12413,38 @@ items:
                         href: api/accessreviewinstance-resetdecisions.md
                       - name: 列出联系的审阅者
                         href: api/accessreviewinstance-list-contactedreviewers.md
-                      - name: '列出已 (审批) '
+                      - name: '列出已弃 (审批) '
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
-                      - name: 访问评审实例决策项
-                        href: resources/accessreviewinstancedecisionitem.md
-                        items:
-                          - name: 列表
-                            href: api/accessreviewinstance-list-decisions.md
-                          - name: 获取
-                            href: api/accessreviewinstancedecisionitem-get.md
-                          - name: 按当前用户筛选
-                            href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                          - name: 更新
-                            href: api/accessreviewinstancedecisionitem-update.md
-                          - name: 记录所有决策
-                            href: api/accessreviewinstancedecisionitem-recordalldecisions.md
-                          - name: '列出已 (审批) '
-                            href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+                  - name: 访问评审阶段
+                    href: resources/accessreviewstage.md
+                    items:
+                      - name: 列表
+                        href: api/accessreviewinstance-list-stages.md
+                      - name: 获取
+                        href: api/accessreviewstage-get.md
+                      - name: 更新
+                        href: api/accessreviewstage-update.md
+                      - name: 按当前用户筛选
+                        href: api/accessreviewstage-filterbycurrentuser.md
+                      - name: 停止
+                        href: api/accessreviewstage-stop.md
+                  - name: 访问评审实例决策项
+                    href: resources/accessreviewinstancedecisionitem.md
+                    items:
+                      - name: 列出实例中的决策
+                        href: api/accessreviewinstance-list-decisions.md
+                      - name: 列出实例阶段的决策
+                        href: api/accessreviewstage-list-decisions.md
+                      - name: 获取
+                        href: api/accessreviewinstancedecisionitem-get.md
+                      - name: 按当前用户筛选
+                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+                      - name: 更新
+                        href: api/accessreviewinstancedecisionitem-update.md
+                      - name: 记录所有决策
+                        href: api/accessreviewinstancedecisionitem-recordalldecisions.md
+                      - name: '列出已弃 (审批) '
+                        href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                   - name: 访问评审策略
                     href: resources/accessreviewpolicy.md
                     items:
@@ -12453,7 +12468,7 @@ items:
                             href: api/accessreviewhistorydefinition-list-instances.md
                           - name: 生成下载 URI
                             href: api/accessreviewhistoryinstance-generatedownloaduri.md
-              - name: '已弃 (的访问) '
+              - name: '已弃 (访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -13132,7 +13147,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置见解
+              - name: 设置人员见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -13464,7 +13479,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置见解
+                  - name: 设置人员见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -14761,7 +14776,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: 从聊天中删除应用
                     href: api/chat-delete-installedapps.md
-          - name: 设备
+          - name: Device
             items:
               - name: 预配的设备
                 href: resources/teamworkdevice.md
@@ -14806,7 +14821,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
@@ -15191,7 +15206,7 @@ items:
                     href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
-              - name: 'Outlook (任务) '
+              - name: 'Outlook任务 (已弃) '
                 items:
                   - name: Outlook 任务
                     href: resources/outlooktask.md

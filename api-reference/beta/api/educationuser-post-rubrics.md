@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 283a739fc6b606d91034542ad5ef1ab4eff073cf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 99c4736855f17d89c466bdcd9353a37fa2567346
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096489"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815845"
 ---
 # <a name="create-educationrubric"></a>创建 educationRubric
 
@@ -50,7 +50,7 @@ POST /education/me/rubrics
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和新 [educationRubric](../resources/educationrubric.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [educationRubric](../resources/educationrubric.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -167,8 +167,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -376,8 +375,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

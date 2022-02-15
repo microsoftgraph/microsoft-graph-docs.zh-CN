@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: f7f0016b8f709001ea1adf8621afdcf435e4a190
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: b7db893231e7c28479b446e081e9501a79b27aa3
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804575"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815963"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -78,6 +78,13 @@ ms.locfileid: "62804575"
 |unknownFutureValue|
 
 ### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>accessReviewInstanceDecisionItemFilterByCurrentUserOptions 值 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
+### <a name="accessreviewstagefilterbycurrentuseroptions-values"></a>accessReviewStageFilterByCurrentUserOptions 值 
 
 |Member|
 |:---|
@@ -252,11 +259,11 @@ ms.locfileid: "62804575"
 
 |Member|
 |:---|
-|字符串|
+|String|
 |整数|
 |参考|
 |Binary|
-|布尔值|
+|布尔|
 |DateTime|
 
 ### <a name="mutability-values"></a>可变值
@@ -1522,7 +1529,7 @@ ms.locfileid: "62804575"
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | 参考
 
 
@@ -2451,7 +2458,7 @@ ms.locfileid: "62804575"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|团队      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
+|team      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
@@ -2624,7 +2631,7 @@ ms.locfileid: "62804575"
 
 |Member|
 |:---|
-|team|
+|团队|
 |频道|
 |聊天|
 |unknownFutureValue|

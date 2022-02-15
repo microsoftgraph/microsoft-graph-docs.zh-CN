@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a3421fc0e98404602982d7307221517e1cb4f850
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: ab5489b0df4a44d256a1ebad709dbecf541071dd
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650968"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815900"
 ---
 # <a name="create-definitions"></a>创建定义
 
@@ -51,31 +51,30 @@ POST /identityGovernance/accessReviews/definitions
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
 | additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) 集合| 定义要接收访问评审进度通知的其他用户或组成员的列表。 |
-| descriptionForAdmins | String | 提供给管理员评价的上下文。 必需。 |
+| descriptionForAdmins | 字符串 | 提供给管理员评价的上下文。 必需项。 |
   descriptionForReviewers | String | 电子邮件通知中提供给审阅者评论的上下文。 电子邮件通知最多支持 256 个字符。 必需。 |
-| displayName | String | 访问评审系列的名称。 必需。|
-| fallbackReviewers |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|如果提供，当主审阅者不存在时，会要求回退审阅者完成审阅。 例如，如果选择了经理作为经理，而审核中的主体没有经理Azure AD，则回退审阅者需要 `reviewers` 审阅该主体。|
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope，](../resources/accessreviewscope.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。| 
-| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评论是自 (用户查看自己的访问权限) 。  有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者[分配给你的访问Graph定义](/graph/accessreviews-reviewers-concept)。 |
-| 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义将检查其访问权限的实体。 请参阅  [accessReviewScope，](../resources/accessreviewscope.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 必需。| 
+| displayName | String | 访问评审系列的名称。 必需项。|
+| fallbackReviewers |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|如果提供，当主审阅者不存在时，会要求回退审阅者完成审阅。 例如，如果选择了经理作为`reviewers`经理，而审核的主体没有经理Azure AD，则回退审阅者需要审阅该主体。 <br/><br/>**注意：** 如果通过 **stageSettings** 属性分配回退审阅者，则忽略此属性的值。|
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope](../resources/accessreviewscope.md) ，并了解如何配置访问 [评审定义的范围](/graph/accessreviews-scope-concept)。| 
+| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评论是自 (用户查看自己的访问权限) 。  有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者分配给你的访问[Graph定义](/graph/accessreviews-reviewers-concept)。 <br/><br/>**注意：** 如果通过 **stageSettings** 属性分配审阅者，则忽略此属性的值。 |
+| 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义将检查其访问权限的实体。 请参阅  [accessReviewScope](../resources/accessreviewscope.md) ，并了解如何配置访问 [评审定义的范围](/graph/accessreviews-scope-concept)。 必需项。| 
+|stageSettings|[accessReviewStageSettings](../resources/accessreviewstagesettings.md) 集合| 定义访问评审系列的每个实例将具有的阶段数。 阶段将基于 dependsOn 属性按顺序创建。 每个阶段可以有一组不同的审阅者、回退审阅者和设置。 <br/><br/>定义此属性时，会使用其值，而不是 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象及其 settings 属性中的 **相应** 值。 可选。 |
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)。 |
-| backupReviewers (弃用)  |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此属性已被 **fallbackReviewers 取代**。 但是，指定 **backupReviewers** 或 **fallbackReviewers** 会自动向另一个属性填充相同的值。 |
+| backupReviewers (已弃)  |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此属性已被 **fallbackReviewers 取代**。 但是，指定 **backupReviewers** 或 **fallbackReviewers** 会自动向另一个属性填充相同的值。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-create-an-access-review-on-a-group"></a>示例 1：在组上创建访问评审
 
-这是一个创建具有以下设置的访问评审的示例：
-+ 评价将审阅组的所有成员，其组 **ID 为** `02f3bafb-448c-487c-88c2-5fd65ce49a41` 。
-+ 用户 ID 为审阅 **者** `398164b1-5196-49dd-ada2-364b49f99b27` 的特定用户。
+以下示例将创建具有以下设置的访问评审：
++ 评价将审阅 ID 为 的组的 **所有成员**`02f3bafb-448c-487c-88c2-5fd65ce49a41`。
++ 具有用户 ID **的特定用户**`398164b1-5196-49dd-ada2-364b49f99b27`是审阅者。
 + 它每周重复一次，并无限期地继续。
 
 #### <a name="request"></a>请求
-在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -138,7 +137,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -217,11 +216,11 @@ Content-type: application/json
 
 ### <a name="example-2-create-an-access-review-on-all-teams-with-inactive-guest-users"></a>示例 2：在具有非活动来宾用户的所有团队上创建访问评审
 
-这是一个创建具有以下设置的访问评审的示例：
+以下示例将创建具有以下设置的访问评审：
 + 该评论将审核具有非活动来宾用户的所有团队。 非活动期为自访问评审开始日期起 30 天。
 + 组所有者为审阅者，并分配回退审阅者。
 + 它每季度的第三天重复发生，并无限期地继续。
-+ **autoApplyDecisionsEnabled** 设置为 ， `true` **将 defaultDecision 设置为** `Deny` 。
++ **autoApplyDecisionsEnabled** 设置为 `true` ， **将 defaultDecision 设置为** `Deny`。
 
 #### <a name="request"></a>请求
 在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。
@@ -301,7 +300,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-inactiveguests-m365-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-inactiveguests-m365-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -395,7 +394,7 @@ Content-type: application/json
 ```
 ### <a name="example-3-create-an-access-review-of-all-users-to-an-application"></a>示例 3：创建对应用程序的所有用户的访问评审
 
-这是一个创建具有以下设置的访问评审的示例：
+以下示例将创建具有以下设置的访问评审：
 + 该评审将审核用户对应用程序的访问权限。
 + 人员经理是审阅者，回退审阅者是组的成员。
 + 它每半年重复一次，自 startDate 起 1 年后结束。
@@ -491,7 +490,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-allusers-m365-aadrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-allusers-m365-aadrole-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -572,6 +571,198 @@ Content-type: application/json
         "endDate": "2022-05-05"
       }
     }
+  },
+  "additionalNotificationRecipients": []
+}
+```
+
+### <a name="example-4-create-an-access-review-on-a-group-with-multiple-stages"></a>示例 4：在具有多个阶段的组上创建访问评审
+
+以下示例将创建具有以下设置的访问评审：
++ 评价将审阅 ID 为 的组的 **所有成员**`02f3bafb-448c-487c-88c2-5fd65ce49a41`。
++ 它分两个阶段：
+  + 具有用户 ID **的特定**`398164b1-5196-49dd-ada2-364b49f99b27`用户是第一阶段的审阅者。
+  + 人员经理是第二阶段的审阅者和回退审阅者。
++ 它每周重复一次，并无限期地继续。
+
+#### <a name="request"></a>请求
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accessReviewScheduleDefinition_group_multiStage"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
+Content-type: application/json
+
+{
+  "displayName": "Group Multi-stage Access Review",
+  "descriptionForAdmins": "New scheduled access review",
+  "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
+    "queryType": "MicrosoftGraph"
+  },
+  "stageSettings": [
+    {
+      "stageId": "1",
+      "durationInDays": 2,
+      "recommendationsEnabled": false,
+      "decisionsThatWillMoveToNextStage": [
+          "NotReviewed",
+          "Approve"
+      ],
+      "reviewers": [
+        {
+          "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    },
+    {
+      "stageId": "2",
+      "dependsOn": [
+          "1"
+      ],
+      "durationInDays": 2,
+      "recommendationsEnabled": true,
+      "reviewers": [
+        {
+          "query": "./manager",
+          "queryType": "MicrosoftGraph",
+          "queryRoot": "decisions"
+        }
+      ],
+      "fallbackReviewers": [
+        {
+          "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": false,
+    "defaultDecision": "None",
+    "instanceDurationInDays": 4,
+    "recurrence": {
+      "pattern": {
+        "type": "weekly",
+        "interval": 1
+      },
+      "range": {
+        "type": "noEnd",
+        "startDate": "2020-09-08T12:02:30.667Z"
+      }
+    },
+    "decisionHistoriesForReviewersEnabled": true
+  }
+}
+
+```
+
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
+  "displayName": "Group Multi-stage Access Review",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+  "status": "NotStarted",
+  "descriptionForAdmins": "New scheduled access review",
+  "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
+  "instanceEnumerationScope": null,
+  "createdBy": {
+    "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+    "displayName": "MOD Administrator",
+    "userPrincipalName": "admin@contoso.com"
+  },
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
+    "queryType": "MicrosoftGraph"
+  },
+  "stageSettings": [
+    {
+      "stageId": "1",
+      "durationInDays": 2,
+      "recommendationsEnabled": false,
+      "decisionsThatWillMoveToNextStage": [
+          "NotReviewed",
+          "Approve"
+      ],
+      "reviewers": [
+        {
+          "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    },
+    {
+      "stageId": "2",
+      "dependsOn": [
+          "1"
+      ],
+      "durationInDays": 2,
+      "recommendationsEnabled": true,
+      "reviewers": [
+        {
+          "query": "./manager",
+          "queryType": "MicrosoftGraph",
+          "queryRoot": "decisions"
+        }
+      ],
+      "fallbackReviewers": [
+        {
+          "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    }
+  ], 
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": false,
+    "defaultDecision": "None",
+    "instanceDurationInDays": 1,
+    "autoApplyDecisionsEnabled": false,
+    "recommendationsEnabled": false,
+    "recurrence": {
+      "pattern": {
+        "type": "weekly",
+        "interval": 1,
+        "month": 0,
+        "dayOfMonth": 0,
+        "daysOfWeek": [],
+        "firstDayOfWeek": "sunday",
+        "index": "first"
+      },
+      "range": {
+        "type": "noEnd",
+        "numberOfOccurrences": 0,
+        "recurrenceTimeZone": null,
+        "startDate": "2020-09-08",
+        "endDate": null
+      }
+    },
+    "decisionHistoriesForReviewersEnabled": true,
+    "applyActions": []
   },
   "additionalNotificationRecipients": []
 }
