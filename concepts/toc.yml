@@ -88,7 +88,13 @@ items:
       - name: 用户
         href: azuread-users-concept-overview.md
       - name: 组
-        href: office365-groups-concept-overview.md
+        items:
+          - name: 概述
+            href: /graph/api/resources/groups-overview
+          - name: Microsoft 365 组
+            href: office365-groups-concept-overview.md
+          - name: 配置组选项
+            href: group-set-options.md
       - name: 应用程序
         items:
           - name: 概述
@@ -297,6 +303,10 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: 审阅对 Microsoft 365 组的访问权限
                     href: tutorial-accessreviews-M365group.md
+                  - name: 配置作用域
+                    href: accessreviews-scope-concept.md
+                  - name: 分配审阅者
+                    href: accessreviews-reviewers-concept.md
               - name: 将 PIM 用于Azure AD分配角色
                 href: tutorial-assign-azureadroles.md
       - name: 邮件

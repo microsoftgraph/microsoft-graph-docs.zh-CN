@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 4cbad611c7dbcb3e9784b72c5da3f7482843827f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cdfb5c6f667c9370ff6eb2732ebf1a1d8b3cbbb4
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130553"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804680"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -119,7 +119,7 @@ ms.locfileid: "62130553"
 |preferredSingleSignOnMode|string|指定为此应用程序配置的单一登录模式。 Azure AD 使用首选单一登录模式从 Microsoft 365 或Azure AD My Apps 启动应用程序。 支持的值是：`password`、`saml`、`notSupported` 和 `oidc`。|
 |preferredTokenSigningKeyEndDateTime|DateTimeOffset|指定用于令牌签名的 keyCredential 的到期日期，由 **preferredTokenSigningKeyThumbprint** 标记。|
 |preferredTokenSigningKeyThumbprint|String|仅供内部使用。 请勿写入属性，否则将依赖该属性。 可能会在未来版本中删除。 |
-|publishedPermissionScopes|[permissionScope](permissionscope.md) 集合|应用程序公开的委派权限。 有关详细信息，请参阅 [应用程序](application.md)实体上的 **api** 属性的 **oauth2PermissionScopes** 属性。 不可为 null。|
+|publishedPermissionScopes|[permissionScope](permissionscope.md) 集合|应用程序公开的委派权限。 有关详细信息，请参阅 [应用程序](application.md)实体上的 **api** 属性的 **oauth2PermissionScopes** 属性。 不可为 null。 <br/>**注意：** 此属性在 v1.0 中命名为 **oauth2PermissionScopes**。|
 |replyUrls|String 集合|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 授权代码和访问令牌的重定向 URI。不可为 null。 |
 |samlMetadataUrl|String|服务用于公开联合身份验证的 SAML 元数据的 URL。|
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|有关 saml 单一登录的设置的集合。|
@@ -127,7 +127,7 @@ ms.locfileid: "62130553"
 |servicePrincipalType|String|标识服务主体是表示应用程序还是托管标识。 这是由 Azure AD 内部设置的。 对于表示 [应用程序](./application.md)的服务主体，此选项设置为“__Application__”。 对于表示 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的服务主体，此选项设置为“__ManagedIdentity__”。 __SocialIdp__ 类型供内部使用。 |
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。只读。 <br><br>支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（多租户）中拥有 Microsoft 工作或学校帐户的用户。</li><li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户。</li><li>`PersonalMicrosoftAccount`：仅限拥有个人 Microsoft 帐户的用户。</li></ul> |
 |tags|String collection| 可用于对服务主体进行分类和识别的自定义字符串。不可为空。<br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
-|tokenEncryptionKeyId|String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+|tokenEncryptionKeyId|字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定该服务主体代表的应用程序的已验证发布者。|
 
 ## <a name="relationships"></a>关系

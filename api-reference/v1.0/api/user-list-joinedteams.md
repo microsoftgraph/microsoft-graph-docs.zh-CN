@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c6f08ff62889bdd4299f8ec8969f3cecccfa3369
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dd52be88a76739a314e6a1636b6173d7add982d8
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091372"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62803840"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -29,7 +29,7 @@ ms.locfileid: "62091372"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Team.ReadBasic.All、TeamSettings.Read.All、TeamSettings.ReadWrite.All、User.Read.All、User.ReadWrite.All、Directory.Read.All **、Directory.ReadWrite.All** |
 
-> **注意**：标记为 ** 的权限已弃用，不应使用。
+> **Note**： 仅支持使用 ** 标记的权限以实现向后兼容。 建议你更新解决方案以使用上表中列出的替代权限，并避免今后使用这些权限。
 
 > **注意：** 目前，使用用户委派的权限时，此操作仅适用于“`me`”用户。 使用应用程序权限时，此操作通过指定特定用户 ID 而适用于所有用户 ID。（使用应用程序权限时，不支持“`me`”别名）。 有关详细信息，请参阅[已知问题](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview)。
 

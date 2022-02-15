@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a914f4b01c457b4daf930bfe83a584001a756430
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 997e5fbcdfbef81bef17d920e909b69d6c91a8c2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443287"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62803882"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>在频道或聊天中获取 chatMessage
 
@@ -32,7 +32,7 @@ ms.locfileid: "62443287"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All **、Group.ReadWrite.All** |
 
-> **Note**： 仅支持使用 ** 标记的权限以实现向后兼容。 我们建议你更新解决方案以使用不同的权限，并避免今后使用这些权限。
+> **注意**：标记为 ** 的权限仅支持向后兼容。 建议你更新解决方案以使用上表中列出的替代权限，并避免今后使用这些权限。
 
 ### <a name="permissions-for-chat"></a>聊天权限
 
