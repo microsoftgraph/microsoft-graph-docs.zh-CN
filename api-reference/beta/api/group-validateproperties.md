@@ -1,22 +1,22 @@
 ---
 title: group： validateProperties
-description: 验证用户Microsoft 365或邮件显示名称是否符合命名策略。
+description: 验证用户Microsoft 365或邮件昵显示名称是否符合命名策略。
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0cca89397a96e8ec3859ed0360e98bb4a73cdd4c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 0658b74d185a7225a96be0545a5e0333b9d30cd7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341147"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854534"
 ---
 # <a name="group-validateproperties"></a>group： validateProperties
 
 命名空间：microsoft.graph
 
-验证用户Microsoft 365或邮件显示名称是否符合命名策略。 客户端可以使用 API 在尝试更新显示名称或邮件昵称是否有效Microsoft 365。 若要在创建组之前验证属性，请对目录 [对象使用 validateProperties](directoryobject-validateproperties.md) 函数。
+验证用户Microsoft 365或邮件昵显示名称是否符合命名策略。 客户端可以使用 API 确定显示名称或邮件昵称是否有效，然后再尝试更新Microsoft 365组。 若要在创建组之前验证属性，请对目录 [对象使用 validateProperties](directoryobject-validateproperties.md) 函数。
 
 对邮件和邮件昵称显示名称执行以下验证： 
 1. 验证前缀和后缀命名策略
@@ -55,7 +55,7 @@ POST /groups/{id}/validateProperties
 |:---------------|:--------|:----------|
 |displayName|String| 要显示名称组的成员。 属性不单独是必需的。 但是，至少需要一 (displayName 或 mailNickname) 属性。 |
 |mailNickname|String| 要验证的组的邮件昵称。 属性不单独是必需的。 但是，至少需要一 (displayName 或 mailNickname) 属性。 |
-|onBehalfOfUserId|Guid| 调用 API 时要模拟的用户的对象 ID。 验证结果适用于 onBehalfOfUserId 的属性和角色。 |
+|onBehalfOfUserId|GUID| 调用 API 时要模拟的用户的对象 ID。 验证结果适用于 onBehalfOfUserId 的属性和角色。 |
 
 ## <a name="response"></a>响应
 如果成功且没有验证错误，该方法将返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。

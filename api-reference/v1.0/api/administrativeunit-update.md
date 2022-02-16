@@ -5,14 +5,14 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: aa8fc7c6dbc3a65af5f1a92361e09f4863762728
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c8629132cbe4c55336b466d07ec384c4ac9acdc7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125003"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62853975"
 ---
-# <a name="update-administrativeunit"></a>更新 administrativeunit
+# <a name="update-administrativeunit"></a>更新 administrativeUnit
 
 命名空间：microsoft.graph
 
@@ -48,9 +48,8 @@ PATCH /directory/administrativeUnits/{id}
 |:---------------|:--------|:----------|
 |说明|string|管理单元的说明。|
 |displayName|string|管理单元的显示名称。|
-|visibility|string|管理单元的可见性。 如果未设置，则默认值为"public"。 可以设置为"HiddenMembership"，这将对非成员隐藏成员身份。|
 
-由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有 `PATCH` **administrativeUnit** 实例中扩展的自定义属性中您自己的特定于应用的数据。
+由于 **administrativeUnit** [资源支持](/graph/extensibility-overview)`PATCH`扩展，因此可以使用 操作添加、更新或删除现有 **administrativeUnit** 实例中扩展的自定义属性中您自己的特定于应用的数据。
 
 ## <a name="response"></a>响应
 
@@ -58,7 +57,7 @@ PATCH /directory/administrativeUnits/{id}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -67,13 +66,11 @@ PATCH /directory/administrativeUnits/{id}
   "name": "update_administrativeunit"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
+PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "visibility": "visibility-value"
+    "displayName": "Greater Seattle District Technical Schools"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -103,10 +100,7 @@ Content-type: application/json
 ---
 
 
----
-
-
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response"

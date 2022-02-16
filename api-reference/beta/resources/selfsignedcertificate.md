@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: luleonpla
-ms.openlocfilehash: 546672e4f2df5908422312ee9df9496eaa5986e8
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: acd5cb004709386caf262a13eb98e9c2ab6d9de9
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780994"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62853990"
 ---
 # <a name="selfsignedcertificate-resource-type"></a>selfSignedCertificate 资源类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "60780994"
 ## <a name="properties"></a>属性
 属性|类型|说明
 ----|--|---
-|customKeyIdentifier|二进制| 自定义密钥标识符。 |
+|customKeyIdentifier|Binary| 自定义密钥标识符。 |
 | displayName | String | 密钥的友好名称。 |
 |endDateTime|DateTimeOffset|凭据过期的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
-|keyId|Guid|唯一标识符 (项) GUID 值。|
+|keyId|GUID|该密钥 (GUID) 的唯一标识符。|
 |startDateTime|DateTimeOffset|凭据生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 |type|字符串|密钥凭据的类型。 "AsymmetricX509Cert"。|
 |usage|String|一个描述密钥的用途的字符串。 例如，"Verify"。|
@@ -52,7 +52,7 @@ ms.locfileid: "60780994"
   "displayName": "String",
   "endDateTime": "String (timestamp)",
   "key": "String (Binary)",
-  "keyId": "Guid",
+  "keyId": "GUID",
   "startDateTime": "String (timestamp)",
   "thumbprint": "String",
   "type": "String",

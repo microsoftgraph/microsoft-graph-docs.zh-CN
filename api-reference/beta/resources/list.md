@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: ”列表”资源代表网站中的列表。
-ms.date: 09/11/2017
-title: List
+title: List 资源
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0703f3df00f97391f7f06785bebc880b29bbefbd
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: c2f0fd3fe48eaebbf7f730d0e52e964aab2e057b
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161863"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854471"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -45,7 +44,7 @@ ms.locfileid: "62161863"
 |[从网站添加内容类型副本][] | POST /lists/{list-id}/contentTypes/addCopy
 |[List columns][]               | GET /lists/{list-id}/columns
 |[创建列][]              | POST /lists/{list-id}/columns
-|[列出操作](../api/list-list-operations.md)|GET /lists/{list-id}/operations
+|[列举操作](../api/list-list-operations.md)|GET /lists/{list-id}/operations
 
 [获取网站中的列表]: ../api/list-list.md
 [获取列表]: ../api/list-get.md
@@ -60,44 +59,6 @@ ms.locfileid: "62161863"
 [从网站添加内容类型副本]: ../api/contenttype-addCopy.md
 [List columns]: ../api/list-list-columns.md
 [创建列]: ../api/list-post-columns.md
-
-## <a name="json-representation"></a>JSON 表示形式
-
-下面是 **list** 资源的 JSON 表示形式。
-
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.list",
-       "keyProperty": "id", 
-       "optionalProperties": [ "items", "drive"] } -->
-
-```json
-{
-  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
-  "displayName": "title of list",
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
-  "list": {
-    "@odata.type": "microsoft.graph.listInfo",
-    "hidden": false,
-    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts ..."
-  },
-  "system": false,
-  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of list",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of list",
-  "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
-  "webUrl&quot;: &quot;url to visit the list in a browser"
-}
-```
 
 ## <a name="properties"></a>属性
 
@@ -148,6 +109,44 @@ ms.locfileid: "62161863"
 [site]: site.md
 [systemFacet]: systemfacet.md
 [订阅]: subscription.md
+
+## <a name="json-representation"></a>JSON 表示形式
+
+下面是资源的 JSON 表示形式。
+
+<!-- { "blockType": "resource", 
+       "@odata.type": "microsoft.graph.list",
+       "keyProperty": "id", 
+       "optionalProperties": [ "items", "drive"] } -->
+
+```json
+{
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+  "displayName": "title of list",
+  "drive": { "@odata.type": "microsoft.graph.drive" },
+  "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
+  "list": {
+    "@odata.type": "microsoft.graph.listInfo",
+    "hidden": false,
+    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts ..."
+  },
+  "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
+
+  /* inherited from baseItem */
+  "id": "string",
+  "name": "name of list",
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "timestamp",
+  "description": "description of list",
+  "eTag": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "timestamp",
+  "webUrl&quot;: &quot;url to visit the list in a browser"
+}
+```
 
 <!--
 {

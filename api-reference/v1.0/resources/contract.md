@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f909b2b861f2b0c6da8f5f3c9a918599922fbac6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4ae85bf630e4207f2647e549fa911cc1da8d769c
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049546"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854676"
 ---
 # <a name="contract-resource-type"></a>合同资源类型
 
 命名空间：microsoft.graph 表示合作伙伴租户与客户租户的现有合作关系。
 
-> **重要提示：** 仅存在于合作伙伴租户中。 合作伙伴租户是属于 Microsoft 合作伙伴的 Azure AD 租户，这些合作伙伴[](https://partnercenter.microsoft.com/en-us/partner/programs)属于 Microsoft 云解决方案提供商、Office 365 联合或 Microsoft Advisor 合作伙伴计划。
+> **重要提示：** 仅存在于合作伙伴租户中。 合作伙伴租户Azure AD属于 Microsoft 合作伙伴的租户，这些合作伙伴属于 Microsoft 云解决方案提供商、Office 365 联合或 Microsoft Advisor 合作伙伴[](https://partnercenter.microsoft.com/en-us/partner/programs)计划。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法   | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -28,8 +28,8 @@ ms.locfileid: "59049546"
 ## <a name="properties"></a>属性
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|contractType|String|合同类型。 可能的值是  `SyndicationPartner` `BreadthPartner` `ResellerPartner` ：、、。 请参阅下表中的 [，了解](#contracttype-values)。|
-|customerId|Guid|此合作关系引用的客户租户的唯一标识符。 对应于客户租户的组织资源的 id 属性。 |
+|contractType|String|合同类型。 可能的值是：、`SyndicationPartner`、`ResellerPartner``BreadthPartner`。 请参阅下表中的 [，了解](#contracttype-values)。|
+|customerId|GUID|此合作关系引用的客户租户的唯一标识符。 对应于客户租户的组织资源的 id 属性。 |
 |defaultDomainName|String|客户租户的默认域名的副本。 建立与客户的合作关系后，即会进行复制。 如果客户租户的默认域名发生更改，将不会自动更新它。|
 |displayName|String|客户租户显示名称。 建立与客户的合作关系后，即会进行复制。 如果客户租户的租户帐户发生更改，显示名称更新。|
 |id|String| 合作关系的唯一标识符。 键，只读 |
@@ -61,7 +61,7 @@ ms.locfileid: "59049546"
 ```json
 {
   "contractType": "String",
-  "customerId": "Guid",
+  "customerId": "GUID",
   "defaultDomainName": "String",
   "displayName": "String",
   "id": "String (identifier)"

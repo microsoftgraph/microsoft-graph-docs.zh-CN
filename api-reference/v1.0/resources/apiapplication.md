@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: ecd0c4991f1f81e1e9623fec7d43038e663f7dbd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9cde2098a4ac7a1c9cd8d143513e0b6294a08cd0
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094483"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854690"
 ---
 # <a name="apiapplication-resource-type"></a>apiApplication 资源类型
 
@@ -22,11 +22,11 @@ ms.locfileid: "59094483"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|acceptMappedClaims| Boolean | 如果 `true` 为 ，则允许应用程序使用声明映射，而无需指定自定义签名密钥。 |
-|knownClientApplications| Guid 集合 |如果你的解决方案包含两个部分：客户端应用和自定义 Web API 应用，用于捆绑许可。 如果将客户端应用的 appID 设置为此值，则用户仅同意客户端应用一次。 Azure AD 知道，同意客户端意味着隐式同意 Web API 并同时自动为两个 API 设置服务主体。 客户端和 Web API 应用都必须在同一租户中注册。|
+|acceptMappedClaims| 布尔 | 如果 `true`为 ，则允许应用程序使用声明映射，而无需指定自定义签名密钥。 |
+|knownClientApplications| GUID 集合 |如果你的解决方案包含两个部分：客户端应用和自定义 Web API 应用，用于捆绑许可。 如果将客户端应用的 appID 设置为此值，则用户仅同意客户端应用一次。 Azure AD同意客户端意味着隐式同意 Web API 并同时自动为两个 API 设置服务主体。 客户端和 Web API 应用都必须在同一租户中注册。|
 |oauth2PermissionScopes| [permissionScope](permissionscope.md) 集合 | 由此应用程序注册表示的 Web API 公开的委派权限的定义。 这些委派权限可能由客户端应用程序请求，并且可能由用户或管理员在同意期间授予。 委派的权限有时称为 OAuth 2.0 范围。 |
-|preAuthorizedApplications| [preAuthorizedApplication](preauthorizedapplication.md) 集合 | 列出使用指定委派权限预授权的客户端应用程序，以访问此应用程序的 API。 对于用户指定的权限，用户无需同意任何 (应用程序) 。 但是，在预先身份验证Applications中未列出的其他任何权限 (增量同意请求获取，例如) 用户同意。 |
-|requestedAccessTokenVersion| Int32 | 指定此资源预期的访问令牌版本。 这将更改独立于用于请求访问令牌的终结点或客户端生成的 JWT 的版本和格式。 <br><br> 使用的终结点 v1.0 或 v2.0 由客户端选择，并且仅影响 id_tokens。 资源需要显式配置 **requestedAccessTokenVersion** 以指示受支持的访问令牌格式。 <br><br> **requestedAccessTokenVersion** 的可能值为 `1` 、 `2` 或 `null` 。 如果值为 `null` ，则默认为 `1` ，它对应于 v1.0 终结点。 <br><br> 如果 **应用程序上的 signInAudience** 配置为 `AzureADandPersonalMicrosoftAccount` ，则此属性的值必须为 `2` |
+|preAuthorizedApplications| [preAuthorizedApplication](preauthorizedapplication.md) 集合 | 列出使用指定委派权限预授权的客户端应用程序，以访问此应用程序的 API。 用户无需同意任何预先授权的应用程序 (指定权限) 。 但是，在预AuthorizedApplications中未列出的其他任何权限 (增量同意请求，例如) 用户同意。 |
+|requestedAccessTokenVersion| Int32 | 指定此资源预期的访问令牌版本。 这将更改独立于用于请求访问令牌的终结点或客户端生成的 JWT 的版本和格式。 <br><br> 使用的终结点 v1.0 或 v2.0 由客户端选择，并且仅影响 id_tokens。 资源需要显式配置 **requestedAccessTokenVersion** 以指示受支持的访问令牌格式。 <br><br> **requestedAccessTokenVersion** 的可能值为 、 `1``2`或 `null`。 如果值为 ， `null`则默认 `1`为 ，它对应于 v1.0 终结点。 <br><br> 如果 **应用程序上的 signInAudience** 配置为 `AzureADandPersonalMicrosoftAccount`，则此属性的值必须为 `2` |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,7 +43,7 @@ ms.locfileid: "59094483"
 ```json
 {
   "acceptMappedClaims": true,
-  "knownClientApplications": ["Guid"],
+  "knownClientApplications": ["GUID"],
   "oauth2PermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "preAuthorizedApplications": [{"@odata.type": "microsoft.graph.preAuthorizedApplication"}],
   "requestedAccessTokenVersion": 2

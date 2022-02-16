@@ -1,16 +1,16 @@
 ---
 title: assignedLicense 资源类型
 description: 表示分配给用户的许可证。**用户** 实体的 AssignedLicenses 属性是一个 **assignedLicense** 集合。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: users
 author: jpettere
-ms.openlocfilehash: 9d957f2bfa5c7c9e4390e5c4df06d084a3e49e6f
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: d97afd5fa500f5a4a845365425e1f48b05e8695d
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547247"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854655"
 ---
 # <a name="assignedlicense-resource-type"></a>assignedLicense 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "52547247"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|disabledPlans|Guid 集合|已禁用的计划的唯一标识符的集合。|
-|skuId|Guid|此 SKU 的唯一标识符。|
+|disabledPlans|GUID 集合|已禁用的计划的唯一标识符的集合。|
+|skuId|GUID|此 SKU 的唯一标识符。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -40,8 +40,8 @@ ms.locfileid: "52547247"
 
 ```json
 {
-  "disabledPlans": ["guid"],
-  "skuId": "guid"
+  "disabledPlans": ["GUID"],
+  "skuId": "GUID"
 }
 
 ```

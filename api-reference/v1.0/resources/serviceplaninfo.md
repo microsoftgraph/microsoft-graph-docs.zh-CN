@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a9b1f3d2aa6fbadd1b15686e5c5126635cba0873
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 4f8020b7e7a9a0d3bf06356436a5800347927c7f
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348941"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854457"
 ---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "62348941"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|servicePlanId|Guid|服务计划的唯一标识符。|
+|servicePlanId|GUID|服务计划的唯一标识符。|
 |servicePlanName|String|服务计划的名称。|
 |provisioningStatus|String|服务计划的预配状态。 可能的值有：<br/>`Success` - 服务已完全预配。<br/>`Disabled` - 服务已禁用。<br/>`ErrorStatus` - 服务计划尚未设置，并且状态为错误。<br/>`PendingInput` - 服务尚未预配;等待服务确认。<br/>`PendingActivation` - 服务已设置，但需要管理员 (，例如，Intune_O365计划) <br/>`PendingProvisioning` - Microsoft 向产品 SKU 添加了新服务，但尚未在租户中激活。|
 |appliesTo|String|可以为其分配服务计划的对象。 可能的值有：<br/>`User` - 服务计划可分配给单个用户。<br/>`Company` - 可以将服务计划分配给整个租户。|
@@ -41,10 +41,10 @@ ms.locfileid: "62348941"
 
 ```json
 {
-  "appliesTo": "string",
-  "provisioningStatus": "string",
-  "servicePlanId": "guid",
-  "servicePlanName": "string"
+  "appliesTo": "String",
+  "provisioningStatus": "String",
+  "servicePlanId": "GUID",
+  "servicePlanName": "String"
 }
 
 ```

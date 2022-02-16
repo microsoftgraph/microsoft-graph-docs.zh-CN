@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7add5d22a55071a77fe431f675ee992ec3b32f9d
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 39bd3f2aeeb87ff82fca521173b78f2be6a9b215
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348733"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854562"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 
@@ -55,7 +55,7 @@ POST /directoryObjects/validateProperties
 |entityType|String| `Group` 是唯一受支持的实体类型。 |
 |displayName|String| 要显示名称组的成员。 属性不单独是必需的。 但是，至少需要一 (displayName 或 mailNickname) 属性。 |
 |mailNickname|String| 要验证的组的邮件昵称。 属性不单独是必需的。 但是，至少需要一 (displayName 或 mailNickname) 属性。 |
-|onBehalfOfUserId|Guid| 调用 API 时要模拟的用户的对象 ID。 验证结果适用于 onBehalfOfUserId 的属性和角色。 |
+|onBehalfOfUserId|GUID| 调用 API 时要模拟的用户的对象 ID。 验证结果适用于 onBehalfOfUserId 的属性和角色。 |
 
 ## <a name="response"></a>响应
 

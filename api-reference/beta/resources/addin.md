@@ -1,16 +1,16 @@
 ---
 title: addIn 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 80c9e3c31a3bcc0d7b74e24373e5d1bb6947840f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 26dae722e9f706c5aa5ea89dfd375775975e7d11
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134055"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854450"
 ---
 # <a name="addin-resource-type"></a>addIn 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50134055"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，可以呈现文件 [流的应用程序可能会](/onedrive/developer/file-handlers/?view=odsp-graph-online) 为文件处理程序功能配置外接程序。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。
+定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，可以呈现文件流的应用程序可能会 [为文件](/onedrive/developer/file-handlers/?view=odsp-graph-online) 处理程序功能配置外接程序。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -41,9 +41,9 @@ ms.locfileid: "50134055"
 
 ```json
 {
-  "id": "guid",
+  "id": "GUID",
   "properties": [{"@odata.type": "microsoft.graph.keyValue"}],
-  "type": "string"
+  "type": "String"
 }
 
 ```

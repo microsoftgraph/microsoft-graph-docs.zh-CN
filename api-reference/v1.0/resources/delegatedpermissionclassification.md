@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 088fd0264abebaec5e4bf4d9af14bbb4031de1e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: faa6afc6c7f72efc73189d373c4f9223b558ecc7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118748"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854349"
 ---
 # <a name="delegatedpermissionclassification-resource-type"></a>delegatedPermissionClassification 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "59118748"
 
 用于指定委派权限的分类。
 
-委派权限分类可以与用户同意设置结合使用，以选择允许用户同意的权限。 [请参阅配置最终用户如何同意应用程序](/azure/active-directory/manage-apps/configure-user-consent)以了解有关权限分类有关详细信息。
+委派权限分类可以与用户同意设置结合使用，以选择允许用户同意的权限。 [请参阅配置最终用户如何同意应用程序以](/azure/active-directory/manage-apps/configure-user-consent)了解有关权限分类有关详细信息。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 | id | String | **delegatedPermissionClassification 项的唯一** 标识符。 不可为 null。 只读。 |
-| classification | permissionClassificationType | 给定的分类值。 可能的值 `low` ：。 不支持 `$filter`。 |
-| permissionId | Guid | [servicePrincipal](servicePrincipal.md) ( **oauth2PermissionScopes** 集合) 委派权限的唯一标识符 id。 创建时为必需项。 不支持 `$filter`。 |
-| permissionName | String | 声明值 ([servicePrincipal](servicePrincipal.md)) **oauth2PermissionScopes** 集合中列出的委派权限。  不支持 `$filter`。 |
+| classification | permissionClassificationType | 给定的分类值。 可能的值： `low`。 不支持 `$filter`。 |
+| permissionId | String | [servicePrincipal](servicePrincipal.md) (**oauth2PermissionScopes** **集合)** 委派权限的唯一标识符 id。 创建时为必需项。 不支持 `$filter`。 |
+| permissionName | String | 声明值 ([servicePrincipal](servicePrincipal.md)) **oauth2PermissionScopes** 集合中列出的委派权限的值。 不支持 `$filter`。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,9 +43,9 @@ ms.locfileid: "59118748"
 
 ```json
 {
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "classification": "low",
-  "permissionId": "string",
-  "permissionName": "string"
+  "permissionId": "String",
+  "permissionName": "String"
 }
 ```

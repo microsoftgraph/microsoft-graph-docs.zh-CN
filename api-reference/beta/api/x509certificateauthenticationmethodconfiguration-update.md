@@ -5,12 +5,12 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aa70e6e77e65ed4cdb126a21c003335f3a306ef3
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: eba66ae651b17e114ef2fa36076719d995ec3644
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519377"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854669"
 ---
 # <a name="update-x509certificateauthenticationmethodconfiguration"></a>更新 x509CertificateAuthenticationMethodConfiguration
 命名空间：microsoft.graph
@@ -70,6 +70,13 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 
 ### <a name="request"></a>请求
 
+下面是具有以下设置的更新请求示例：
+
++ 在租户中启用 x509 证书身份验证方法。
++ 在证书 **PrincipalName** 和 Azure AD **OnPremisesUserPrincipalName** 属性之间仅配置一个用户绑定。
++ 将多重身份验证定义为要求。
++ 针对规则类型配置强身份验证方法的绑定规则。
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -83,27 +90,36 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
     "id": "X509Certificate",
-    "state": "disabled",
-    "certificateUserBindings": [{
+    "state": "enabled",
+    "certificateUserBindings": [
+        {
             "x509CertificateField": "PrincipalName",
             "userProperty": "onPremisesUserPrincipalName",
             "priority": 1
-        },
-        {
-            "x509CertificateField": "RFC822Name",
-            "userProperty": "userPrincipalName",
-            "priority": 2
         }
     ],
     "authenticationModeConfiguration": {
-        "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
-        "rules": []
+        "x509CertificateAuthenticationDefaultMode": "x509CertificateMultiFactor",
+        "rules": [
+            {
+                "x509CertificateRuleType": "issuerSubject",
+                "identifier": "CN=ContosoCA,DC=Contoso,DC=org ",
+                "x509CertificateAuthenticationMode": "x509CertificateMultiFactor"
+            },
+            {
+                "x509CertificateRuleType": "policyOID",
+                "identifier": "1.2.3.4",
+                "x509CertificateAuthenticationMode": "x509CertificateMultiFactor"
+            }
+        ]
     },
-    "includeTargets": [{
-        "targetType": "group",
-        "id": "all_users",
-        "isRegistrationRequired": false
-    }]
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -124,12 +140,10 @@ Content-Type: application/json
 ### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 }
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 ```
 

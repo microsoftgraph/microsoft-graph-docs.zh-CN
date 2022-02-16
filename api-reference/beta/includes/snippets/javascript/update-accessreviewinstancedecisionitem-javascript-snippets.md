@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 66a325051a9fe3564f876be55bd5308c1511b23456f1d31364d03436f7fa54c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2be02131d79be55df7a716d0877f29e7a4051fbe
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56902653"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855755"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const accessReviewInstanceDecisionItem = {
   justification: 'This person is still on my team',
 };
 
-await client.api('/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19')
+await client.api('/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06')
     .version('beta')
     .update(accessReviewInstanceDecisionItem);
 

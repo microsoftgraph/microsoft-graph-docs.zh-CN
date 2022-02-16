@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d4247d2bbf61c6c0d5a22089d16029c9b2b61ed9
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: e872f2f102f9b906e55e917efdc80d50135c3514
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62292086"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854555"
 ---
 # <a name="contract-resource-type"></a>合同资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "62292086"
 
 > **重要提示：** 仅存在于合作伙伴租户中。 合作伙伴租户Azure AD属于 Microsoft 合作伙伴的租户，这些合作伙伴属于 Microsoft 云解决方案提供商、Office 365 联合或 Microsoft Advisor 合作伙伴[](https://partnercenter.microsoft.com/partner/programs)计划。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法   | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -33,9 +33,9 @@ ms.locfileid: "62292086"
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |contractType|String|合同类型。 可能的值是：、`SyndicationPartner`、`ResellerPartner``BreadthPartner`。 请参阅下表中的 [，了解](#contracttype-values)。 |
-|customerId|Guid|此合作关系引用的客户租户的唯一标识符。 对应于客户租户的组织资源的 id 属性。 |
+|customerId|GUID|此合作关系引用的客户租户的唯一标识符。 对应于客户租户的组织资源的 id 属性。 |
 |defaultDomainName|字符串|客户租户的默认域名的副本。 建立与客户的合作关系后，即会进行复制。 如果客户租户的默认域名发生更改，将不会自动更新它。|
-|displayName|String|客户租户显示名称。 建立与客户的合作关系后，即会进行复制。 如果客户租户的订阅发生更改，将不会显示名称更新。|
+|displayName|String|客户租户显示名称。 建立与客户的合作关系后，即会进行复制。 如果客户租户的租户帐户发生更改，显示名称更新。|
 |id|String| 合作关系的唯一标识符。 键，只读 |
 
 ### <a name="contracttype-values"></a>contractType 值
@@ -64,7 +64,7 @@ ms.locfileid: "62292086"
 ```json
 {
   "contractType": "String",
-  "customerId": "Guid",
+  "customerId": "GUID",
   "defaultDomainName": "String",
   "displayName": "String",
   "id": "String (identifier)"

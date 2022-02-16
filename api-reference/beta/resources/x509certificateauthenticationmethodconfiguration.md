@@ -5,8 +5,13 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: 415f17972c6163314cfdb54a5828e4db65dca04a
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854363"
 ---
-
 # <a name="x509certificateauthenticationmethodconfiguration-resource-type"></a>x509CertificateAuthenticationMethodConfiguration 资源类型
 
 命名空间：microsoft.graph
@@ -17,12 +22,12 @@ doc_type: resourcePageType
 
 继承自 [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)。
 
-## <a name="methods"></a>方法
-|方法|返回类型|Description|
+## <a name="methods"></a>Methods
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-get.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|读取 x509CertificateAuthenticationMethodConfiguration 对象的属性和关系。|
 |[更新 x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-update.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|更新 x509CertificateAuthenticationMethodConfiguration 对象的属性。|
-|[删除 x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-delete.md)|无| 将 x509CertificateAuthenticationMethodConfiguration 对象还原到其默认配置。|
+|[删除 x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-delete.md)|无| 删除租户自定义的 x509CertificateAuthenticationMethodConfiguration 对象并还原默认配置。|
 
 
 ## <a name="properties"></a>属性
@@ -35,7 +40,7 @@ doc_type: resourcePageType
 
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) 集合|允许使用身份验证方法的用户或组的集合。|
 

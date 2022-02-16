@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3dc9ac91c7d19e1c45e423c6a8105519b8de8e17
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 376a1634b9ddf1fabad49ff63a7b402aabdd35d8
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348530"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855176"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy：renewGroup
 
@@ -52,7 +52,7 @@ POST /groupLifecyclePolicies/renewGroup
 
 | 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|groupId|Guid| 要续订的组的 ID。 |
+|groupId|GUID| 要续订的组的 ID。 |
 
 ## <a name="response"></a>响应
 

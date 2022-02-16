@@ -1,25 +1,26 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c9edf063fc53a06fc9fe6b1c4c12809141dd3d82
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 6a289341c2c48814c66af4d48041d9aca720279a
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094590"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855758"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewSectionGroup()
-displayName := "Section group name"
-requestBody.SetDisplayName(&displayName)
+requestBody := msgraphsdk.New()
+requestBody.SetAdditionalData(map[string]interface{}{
+    "displayName": "Section group name",
+}
 options := &msgraphsdk.SectionGroupsRequestBuilderPostOptions{
     Body: requestBody,
 }
 sectionGroupId := "sectionGroup-id"
-result, err := graphClient.Me().Onenote().SectionGroupsById(&sectionGroupId).SectionGroups().Post(options)
+graphClient.Me().Onenote().SectionGroupsById(&sectionGroupId).SectionGroups().Post(options)
 
 
 ```

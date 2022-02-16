@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: ae262d8111c036fc4058cf8ace0b1f94fed4f132
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8edde4e0e1e5df6e2fad7bcacca1fb67641d9b7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104108"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62853968"
 ---
 # <a name="licensedetails-resource-type"></a>licenseDetails 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "59104108"
 
 包含有关分配给用户的许可证的信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -31,7 +31,7 @@ ms.locfileid: "59104108"
 |:---------------|:--------|:----------|
 |id|String| 许可证详细信息对象的唯一标识符。 只读、键、不可为 null |
 |servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| 有关随许可证分配的服务计划的信息。 只读，不可为 null |
-|skuId|Guid| 服务 SKU (GUID) 的唯一标识符。 等于相关 [SubscribedSku](subscribedsku.md) 对象的 skuId 属性。 只读 |
+|skuId|GUID| 服务 SKU (GUID) 的唯一标识符。 等于相关 [SubscribedSku](subscribedsku.md) 对象的 skuId 属性。 只读 |
 |skuPartNumber|String| 唯一 SKU 显示名称。 等于相关 [SubscribedSku](subscribedsku.md) 对象上的 skuPartNumber;例如："AAD_Premium"。 只读 |
 
 ## <a name="relationships"></a>关系
@@ -53,7 +53,7 @@ ms.locfileid: "59104108"
 {
   "id": "String (identifier)",
   "servicePlans": [{"@odata.type": "microsoft.graph.servicePlanInfo"}],
-  "skuId": "Guid",
+  "skuId": "GUID",
   "skuPartNumber": "String"
 }
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 0c48842eec48d2f644cc927385d5ecd9924fcdb5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8c635f863eda10ece261a722f3bc5ae31871799b
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123837"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854914"
 ---
 # <a name="assignedlicense-resource-type"></a>assignedLicense 资源类型
 
@@ -21,8 +21,8 @@ ms.locfileid: "59123837"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|disabledPlans|Guid 集合|已禁用的计划的唯一标识符的集合。|
-|skuId|Guid|此 SKU 的唯一标识符。|
+|disabledPlans|GUID 集合|已禁用的计划的唯一标识符的集合。|
+|skuId|GUID|此 SKU 的唯一标识符。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -38,8 +38,8 @@ ms.locfileid: "59123837"
 
 ```json
 {
-  "disabledPlans": ["guid"],
-  "skuId": "guid"
+  "disabledPlans": ["GUID"],
+  "skuId": "GUID"
 }
 
 ```

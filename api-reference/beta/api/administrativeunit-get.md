@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a1b7fbdf0c9febab3091db56866f9f7525ff2e9d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0a6f68be5c3cbcb2daef5baa26230b451a93f70c
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097420"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854018"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 
@@ -20,7 +20,7 @@ ms.locfileid: "62097420"
 
 检索 [administrativeUnit 对象的属性和](../resources/administrativeunit.md) 关系。
 
-由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)，因此您还可以使用 操作获取 administrativeUnit 实例中的自定义属性 `GET` 和 **扩展** 数据。
+由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)`GET`，因此您还可以使用 操作获取 **administrativeUnit** 实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,9 +36,10 @@ ms.locfileid: "62097420"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /administrativeUnits/{id}
+GET /directory/administrativeUnits/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 OData `$select` [查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -52,7 +53,7 @@ GET /administrativeUnits/{id}
 
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -61,7 +62,7 @@ GET /administrativeUnits/{id}
   "name": "get_administrativeunit"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/administrativeUnits/{id}
+GET https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunit-csharp-snippets.md)]
@@ -89,8 +90,9 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面是一个响应示例。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,10 +103,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "visibility": "visibility-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
+    "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
+    "deletedDateTime": null,
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "isMemberManagementRestricted": null,
+    "visibility": "HiddenMembership",
+    "membershipRule": null,
+    "membershipType": null,
+    "membershipRuleProcessingState": null
 }
 ```
 

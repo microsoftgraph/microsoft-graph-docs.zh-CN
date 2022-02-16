@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 686a8f1a88781cff9c7469606d5e5cc61a86a4bd
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 4e39fc0f9c6d27c4c820c5fd10eb7e648ed07bba
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341926"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855159"
 ---
 # <a name="user-activateserviceplan"></a>user： activateServicePlan
 
@@ -54,8 +54,8 @@ POST /users/{id | userPrincipalName}/activateServicePlan
 
 | 参数 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| servicePlanId | Guid | 要激活的 ServicePlan 的 PlanId。 |
-| skuId | Guid | 服务计划已打开的 SKU 的 SkuId。 |
+| servicePlanId | GUID | 要激活的 ServicePlan 的 PlanId。 |
+| skuId | GUID | 服务计划已打开的 SKU 的 SkuId。 |
 
 ## <a name="response"></a>响应
 

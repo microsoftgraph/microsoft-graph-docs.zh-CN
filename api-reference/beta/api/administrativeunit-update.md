@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a3a42ddc989b348194aa5a7395289c13b62c777e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2eef9f57982089c728f4d16b77b711b58b95bf9a
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097385"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854011"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -33,6 +33,7 @@ ms.locfileid: "62097385"
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /administrativeUnits/{id}
+PATCH /directory/administrativeUnits/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,11 +48,10 @@ PATCH /administrativeUnits/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|说明|string|管理单元的说明。|
-|displayName|string|管理单元的显示名称。|
-|visibility|string|管理单元的可见性。 如果未设置，则默认值为"public"。 可以设置为"HiddenMembership"，这将对非成员隐藏成员身份。|
+|说明|String|管理单元的说明。|
+|displayName|String|管理单元的显示名称。|
 
-由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有 `PATCH` **administrativeUnit** 实例中扩展的自定义属性中您自己的特定于应用的数据。
+由于 **administrativeUnit** [资源支持](/graph/extensibility-overview)`PATCH`扩展，因此可以使用 操作添加、更新或删除现有 **administrativeUnit** 实例中扩展的自定义属性中您自己的特定于应用的数据。
 
 ## <a name="response"></a>响应
 
@@ -59,7 +59,7 @@ PATCH /administrativeUnits/{id}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -68,13 +68,11 @@ PATCH /administrativeUnits/{id}
   "name": "update_administrativeunit"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/administrativeUnits/{id}
+PATCH https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "visibility": "visibility-value"
+    "displayName": "Greater Seattle District Technical Schools"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -104,7 +102,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response"

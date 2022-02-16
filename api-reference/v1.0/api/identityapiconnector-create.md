@@ -5,12 +5,12 @@ author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 324753b7a8bf79ccc55d95c0f7f1adb13adcba1d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3ccda91a736e1c8d78ef86d9b001169fad50dcb2
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027703"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854250"
 ---
 # <a name="create-identityapiconnector"></a>创建 identityApiConnector
 
@@ -18,7 +18,7 @@ ms.locfileid: "61027703"
 
 创建新的 [identityApiConnector](../resources/identityapiconnector.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -55,17 +55,17 @@ POST /identity/apiConnectors
 
 在请求正文中，提供 [identityApiConnector](../resources/identityapiconnector.md) 对象的 JSON 表示形式。
 
-下表显示创建 [identityApiConnector](../resources/identityapiconnector.md)时所需的属性。
+下表显示创建 [identityApiConnector](../resources/identityapiconnector.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String| API 连接器的名称。 |
-|targetUrl|String| 要调用的 API 终结点的 URL。 |
+|targetUrl|字符串| 要调用的 API 终结点的 URL。 |
 |authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|描述用于调用 API 的身份验证配置详细信息的对象。 [支持基本](../resources/basicauthentication.md) 身份验证 [和 PKCS 12 客户端](../resources/pkcs12certificate.md) 证书。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [identityApiConnector](../resources/identityapiconnector.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [identityApiConnector](../resources/identityapiconnector.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -113,7 +113,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-identityapiconnector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-identityapiconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -139,7 +139,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/apiConnectors/$entity",
-    "id":"guid",
+    "id":"45715bb8-13f9-4bf6-927f-ef96c102d394",
     "displayName": "Test API",
     "targetUrl": "https://someapi.com/api",
     "authenticationConfiguration": {
@@ -183,7 +183,7 @@ Content-Type: application/json
 
 下面展示了示例响应。
 
-> **注意：** `authenticationConfiguration` 响应中的 类型为 [microsoft.graph.clientCertificateAuthentication，](../resources/clientcertificateauthentication.md) 因为这表示已上载证书的公共信息。
+> **注意：** `authenticationConfiguration` 响应中的 类型为 [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md) ，因为这表示已上载证书的公共信息。
 
 <!-- {
   "blockType": "response",
@@ -198,7 +198,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/apiConnectors/$entity",
-    "id":"guid",
+    "id":"45715bb8-13f9-4bf6-927f-ef96c102d394",
     "displayName": "Test API",
     "targetUrl": "https://someotherapi.com/api",
     "authenticationConfiguration": {

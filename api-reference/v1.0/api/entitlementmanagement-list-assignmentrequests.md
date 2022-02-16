@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 448a35b90f8ee3e8f8ef42d7187fb7064ffadf86
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 37e974d2eca2fb4dbae0731dda34281f858307c7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130421"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854541"
 ---
 # <a name="list-assignmentrequests"></a>列出 assignmentRequests
 
 命名空间：microsoft.graph
 
-在[Azure AD中](../resources/entitlementmanagement-overview.md)，检索[accessPackageAssignmentRequest 对象](../resources/accesspackageassignmentrequest.md)的列表。  生成的列表包括调用方有权访问的所有目录和访问包中当前和过期的所有分配请求。
+在[Azure AD中](../resources/entitlementmanagement-overview.md)，检索 [accessPackageAssignmentRequest 对象](../resources/accesspackageassignmentrequest.md)的列表。  生成的列表包括调用方有权访问的所有目录和访问包中当前和过期的所有分配请求。
 
 ## <a name="permissions"></a>权限
 
@@ -40,12 +40,12 @@ GET /identityGovernance/entitlementManagement/assignmentRequests
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 、 `$expand` 和 `$filter` OData 查询参数来帮助自定义响应。
+此方法支持 、 `$select`和 `$expand` `$filter` OData 查询参数来帮助自定义响应。
 
 ### <a name="example-scenarios-for-using-query-parameters"></a>使用查询参数的示例方案
 
 - 若要检索每个请求的访问包，请包括在 `$expand=accessPackage` 查询中。
-- 若要仅检索特定访问包的请求，在查询中包括筛选器（如 `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` ）。
+- 若要仅检索特定访问包的请求，在查询中包括筛选器（如 `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'`）。
 - 若要检索结果分配，请包括在 `$expand=assignment` 查询中。
 - 若要获取有关请求程序的详细信息，请包含 `$expand=requestor` 到查询中。
 
@@ -62,7 +62,7 @@ GET /identityGovernance/entitlementManagement/assignmentRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -125,7 +125,7 @@ Content-Type: application/json
       "state": "delivered",
       "status": "Delivered",
       "createdDateTime": "2019-10-25T22:55:11.623Z",
-      "completedDate": "2019-10-26T22:55:11.623Z",
+      "completedDateTime": "2019-10-26T22:55:11.623Z",
       "schedule": {
         "@odata.type": "microsoft.graph.entitlementManagementSchedule"
       }

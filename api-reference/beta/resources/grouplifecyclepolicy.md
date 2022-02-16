@@ -1,16 +1,16 @@
 ---
 title: groupLifecyclePolicy 资源类型
-description: 表示组组的生命周期Microsoft 365策略。
-localization_priority: Normal
+description: 表示组策略的Microsoft 365策略。
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4cd6b11989d21fea0095fec9099bdc3cc7dc3a66
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e50277f78cfff92a0329fe7b8198e18bed42fdd5
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256092"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854478"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "58256092"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示组组的生命周期Microsoft 365策略。 使用组生命周期策略，管理员可以为组设置到期期限。 例如，组在 180 天后到期。 如果组到期，组的所有者必须在管理员定义的时间段内续订组。 续订后，组的有效期就会延长策略中定义的天数。 例如，续订后，组的新到期时间是在 180 天后。 如果不续订组，组就会到期并被删除。 可以在删除后的 30 天内还原组。
+表示组策略的Microsoft 365策略。 使用组生命周期策略，管理员可以为组设置到期期限。 例如，组在 180 天后到期。 如果组到期，组的所有者必须在管理员定义的时间段内续订组。 续订后，组的有效期就会延长策略中定义的天数。 例如，续订后，组的新到期时间是在 180 天后。 如果不续订组，组就会到期并被删除。 可以在删除后的 30 天内还原组。
 
 ## <a name="methods"></a>Methods
 
@@ -61,7 +61,7 @@ ms.locfileid: "58256092"
 {
   "alternateNotificationEmails": "String",
   "groupLifetimeInDays": 180,
-  "id": "Guid (identifier)",
+  "id": "GUID (identifier)",
   "managedGroupTypes": "String"
 }
 ```

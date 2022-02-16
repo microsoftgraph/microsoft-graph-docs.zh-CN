@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 144e95cda8c4336d740f8a47ae812dff5841d9e7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 93d40cc6f417c6b09e01af8b01320a643f7db3a5
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100626"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854025"
 ---
 # <a name="delete-administrativeunit"></a>删除 administrativeUnit
 
@@ -34,7 +34,6 @@ ms.locfileid: "62100626"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /administrativeUnits/{id}
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -49,7 +48,7 @@ DELETE /administrativeUnits/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -86,8 +85,9 @@ DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面是一个响应示例。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

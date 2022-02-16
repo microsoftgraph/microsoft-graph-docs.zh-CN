@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 8136ed1dc33cb16759ee00f5bddd80bc54c600ed
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5e3c061ab574386e0c3fc522d5059dbb8d391617
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104367"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854513"
 ---
 # <a name="approleassignment-resource-type"></a>appRoleAssignment 资源类型
 
@@ -32,12 +32,12 @@ ms.locfileid: "59104367"
 |:---------------|:--------|:----------|
 | id | String | **appRoleAssignment** 键的唯一标识符。不可为 null。只读。 |
 | createdDateTime | DateTimeOffset | 创建应用角色分配的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终以 UTC 时间标识。例如，2014 年 1 月 1 日午夜 UTC 表示为：`2014-01-01T00:00:00Z`。只读。  |
-| principalId | Guid | 被授予应用角色的 [用户](user.md)、[组](group.md) 或 [服务主体](serviceprincipal.md) 的唯一标识符（**id**）。创建时需要。  |
+| principalId | GUID | 被授予应用角色的 [用户](user.md)、[组](group.md) 或 [服务主体](serviceprincipal.md) 的唯一标识符（**id**）。创建时需要。  |
 | principalType | 字符串 | 已分配的主体的类型。 这可以是 `User`、 `Group` 或 `ServicePrincipal`。 只读。  |
 | principalDisplayName | String |已被授予应用角色分配的用户、组或服务主体的显示名称。支持 `$filter`（`eq` 和 `startswith`）。 |
-| resourceId | Guid |已为其进行分配的资源 [服务主体](serviceprincipal.md) 的唯一标识符（**id**）。创建时需要。支持`$filter`（仅限 `eq`）。 |
+| resourceId | GUID |已为其进行分配的资源 [服务主体](serviceprincipal.md) 的唯一标识符（**id**）。创建时需要。支持`$filter`（仅限 `eq`）。 |
 | resourceDisplayName | 字符串 | 已为其分配的资源应用的服务主体的显示名称。  |
-| appRoleId | Guid | 分配给主体的 [应用角色](approle.md)的标识符 (**id**)。 必须在资源应用程序的服务主体 (**resourceId**) 上的 **appRoles** 属性中公开此应用角色。 如果资源应用程序尚未声明任何应用角色，则可以指定默认应用角色 ID `00000000-0000-0000-0000-000000000000`，以表示将主体分配给资源应用，但没有任何特定应用角色。 创建时为必需项。  |
+| appRoleId | GUID | 分配给主体的 [应用角色](approle.md)的标识符 (**id**)。 必须在资源应用程序的服务主体 (**resourceId**) 上的 **appRoles** 属性中公开此应用角色。 如果资源应用程序尚未声明任何应用角色，则可以指定默认应用角色 ID `00000000-0000-0000-0000-000000000000`，以表示将主体分配给资源应用，但没有任何特定应用角色。 创建时为必需项。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -53,14 +53,14 @@ ms.locfileid: "59104367"
 
 ```json
 {
-  "id": "string",
+  "id": "String",
   "createdDateTime": "String (timestamp)",
-  "principalDisplayName": "string",
-  "principalId": "guid",
-  "principalType": "string",
-  "resourceDisplayName": "string",
-  "resourceId": "guid",
-  "appRoleId": "guid"
+  "principalDisplayName": "String",
+  "principalId": "GUID",
+  "principalType": "String",
+  "resourceDisplayName": "String",
+  "resourceId": "GUID",
+  "appRoleId": "GUID"
 }
 ```
 

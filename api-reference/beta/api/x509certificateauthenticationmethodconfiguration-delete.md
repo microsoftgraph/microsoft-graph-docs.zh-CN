@@ -1,23 +1,23 @@
 ---
 title: 删除 x509CertificateAuthenticationMethodConfiguration
-description: 删除 x509CertificateAuthenticationMethodConfiguration 对象，将所有其他属性还原到其默认设置
+description: 删除租户自定义的 x509CertificateAuthenticationMethodConfiguration 对象并还原默认配置。
 author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 78f50f37eaa4a1310a0c599eaaf92f66857800db
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 852b63fbfc51401e4f5f2761aad8082c5c261ffd
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519567"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854753"
 ---
 # <a name="delete-x509certificateauthenticationmethodconfiguration"></a>删除 x509CertificateAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) 对象还原到其默认配置。
+删除租户自定义 [的 x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) 对象并还原默认配置。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

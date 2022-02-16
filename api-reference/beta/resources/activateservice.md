@@ -2,15 +2,15 @@
 title: activateService 资源类型
 description: 表示要激活的服务。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a1ab2112406d0049df002327be784c46b7e879e6
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: d007512113ab46b25714942f93002936c97fe083
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109082"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854548"
 ---
 # <a name="activateservice-resource-type"></a>activateService 资源类型
 
@@ -42,9 +42,9 @@ ms.locfileid: "53109082"
 
 ```json
 {
-    "service": "string",
-    "skuId": "guid",
-    "servicePlanId": "guid"
+    "service": "String",
+    "skuId": "GUID",
+    "servicePlanId": "GUID"
 }
 
 ```
