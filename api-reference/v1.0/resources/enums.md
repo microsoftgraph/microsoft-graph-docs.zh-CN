@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 2b0bf8890f4929d499b7a58f81d107f3b7c293d5
-ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
+ms.openlocfilehash: 4fed63c948e03fd94cb89ccf2ac07106dc700e9f
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61567375"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878755"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -501,7 +501,7 @@ ms.locfileid: "61567375"
 |:---|
 |无|
 |SecurityGroup|
-|全部|
+|所有|
 
 ### <a name="recipientscopetype-values"></a>recipientScopeType 值
 
@@ -788,7 +788,7 @@ ms.locfileid: "61567375"
 |:-------------
 | unknown
 | 身份验证
-| authorization
+| 授权
 | accountValidation
 | userValidation
 | deviceNotSupported
@@ -910,7 +910,7 @@ ms.locfileid: "61567375"
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | 参考
 
 
@@ -1106,7 +1106,7 @@ ms.locfileid: "61567375"
 
 ### <a name="registryhive-values"></a>registryHive 值
 
-由 [/windows/desktop/sysinfo/registry-hives 定义的注册表配置单元的枚举](/windows/desktop/sysinfo/registry-hives)。
+/ [windows/desktop/sysinfo/registry-hives 定义的注册表配置单元枚举](/windows/desktop/sysinfo/registry-hives)。
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -1116,7 +1116,7 @@ ms.locfileid: "61567375"
 |localMachineSam|3| HKEY_LOCAL_MACHINE\SAM配置单元。|
 |localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software配置单元。|
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System配置单元。|
-|usersDefault|6 | HKEY_USERS \\ 。DEFAULT 配置单元。|
+|usersDefault|6 | \\HKEY_USERS。DEFAULT 配置单元。|
 
 ### <a name="registryoperation-values"></a>registryOperation 值
 
@@ -1195,7 +1195,7 @@ ms.locfileid: "61567375"
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
-根据组定义， (用户帐户) 类型的) 值Windows值。
+根据组定义， (用户帐户) 类型的Windows值。
 
 |Member|成员|说明|
 |:---|:---|:---|
@@ -1391,7 +1391,7 @@ ms.locfileid: "61567375"
 
 | 值 |
 |:-----------------|
-| message |
+| 消息 |
 | chatEvent |
 | 键入 |
 | unknownFutureValue |
@@ -1419,9 +1419,9 @@ ms.locfileid: "61567375"
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
 | 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
-| AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 替代 `AllowOverrideWithJustification` 块。 报告违反误报会自动覆盖阻止并发送邮件。 |
-| AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification` 。 |
-| AllowOverrideWithJustification | 4 |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification` 。|
+| AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式替代`AllowOverrideWithoutJustification``AllowOverrideWithJustification`块。 报告违反误报会自动覆盖阻止并发送邮件。 |
+| AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification`。 |
+| AllowOverrideWithJustification | 4 |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification`。|
 
 ### <a name="channelmembershiptype-values"></a>channelMembershipType 值
 
@@ -1700,8 +1700,8 @@ ms.locfileid: "61567375"
 
 |Member|
 |:---|
-|team|
-|channel|
+|团队|
+|频道|
 |聊天|
 |unknownFutureValue|
 
@@ -1726,6 +1726,13 @@ ms.locfileid: "61567375"
 |quick|
 |strategic|
 |unknownFutureValue|
+
+### <a name="searchalterationtype-values"></a>searchAlterationType 值
+
+| 成员 | 说明 |
+|:---------------|:----------|
+|modification|
+|suggestion|
 
 ### <a name="servicehealthclassificationtype-values"></a>serviceHealthClassificationType 值 
 

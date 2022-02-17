@@ -5,18 +5,18 @@ description: 获取网站、列表或内容类型列。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: c7f9fa5e0002e786f8444b2bbf9d1dbb38e4f53e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2e148f0c5fe6ea7ed664c7b9840c43134eae3a04
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128916"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878797"
 ---
 # <a name="get-columndefinition"></a>获取 columnDefinition
 命名空间：microsoft.graph
 
 
-检索[网站、列表][][或][] [contentType][]列的[元数据][columnDefinition]。
+检索[网站、列表][][或][] [contentType][] 列的[元数据][columnDefinition]。
 
   
 
@@ -57,18 +57,18 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{colu
 
 ## <a name="request-body"></a>请求正文
 
-  
+请勿提供此方法的请求正文。
 
-请勿为此方法提供请求正文。
+## <a name="response"></a>响应
 
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [columnDefinition][columnDefinition] 对象。
   
 
 ## <a name="example"></a>示例
 
-  
-
 ### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_column_from_contenttype" } -->
@@ -107,7 +107,7 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 
 ### <a name="response"></a>响应
 
-  
+下面展示了示例响应。
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true } -->
 

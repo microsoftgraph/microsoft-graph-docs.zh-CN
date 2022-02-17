@@ -1,16 +1,16 @@
 ---
 title: 枚举值
-description: Microsoft Graph 枚举值
+description: Microsoft Graph枚举值
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: b7db893231e7c28479b446e081e9501a79b27aa3
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: cd3be7143a53b7985fe2a677f685c3f2ed2b4b18
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62815963"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878720"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -1076,8 +1076,8 @@ ms.locfileid: "62815963"
 
 | 成员 | 说明 |
 |:---------------|:----------|
-|suggestion|获取原始用户查询的搜索结果以及查询中拼写错误的建议拼写更正信息。|
 |modification|获取更正的交替查询的搜索结果和拼写错误拼写更正信息。|
+|suggestion|获取原始用户查询的搜索结果以及查询中拼写错误的建议拼写更正信息。|
 
 ### <a name="bucketaggregationsortproperty-values"></a>bucketAggregationSortProperty 值
 
@@ -2068,7 +2068,7 @@ ms.locfileid: "62815963"
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于其余;例如，共享中的文件。                                 |
 | 动作 | 1     | 数据在运动中。 在传输过程中被网络设备截获的文件。         |
-| use    | 2     | 数据在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
+| use    | 2     | 数据在使用中。 文件在客户端应用程序（如 Microsoft Office）中打开。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
@@ -2415,7 +2415,7 @@ ms.locfileid: "62815963"
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的，无法删除/添加成员。                  |
-|组               | 1     | 指示聊天是群聊。 可以针对 (聊天至少 2 人) 名单大小。 稍后可以删除/添加成员。   |
+|组               | 1     | 指示聊天是群聊。 对于此 (，可以更新至少 2) 个用户的名单大小。 稍后可以删除/添加成员。   |
 |meeting             | 2     | 指示聊天是会议聊天，创建为创建 OnlineMeeting 的副作用。  |
 |unknownFutureValue  | 3     | Sentinel 值，用于指示未来值。 |
 
@@ -2459,7 +2459,7 @@ ms.locfileid: "62815963"
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
 |team      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
-|groupChat |1        |指示Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
+|groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
 ### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>roleAssignmentScheduleRequestFilterByCurrentUserOptions 值

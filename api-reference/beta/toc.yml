@@ -422,7 +422,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置人员见解
+                  - name: 设置见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -516,7 +516,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置人员见解
+              - name: 设置见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -544,7 +544,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言和区域 () '
+          - name: '预览版的首选语言 (区域) '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -1852,7 +1852,7 @@ items:
             href: api/user-list-devices.md
           - name: '发送设备 (已弃) '
             href: api/send-device-command.md
-          - name: '获取设备命令状态 (已弃) '
+          - name: '获取已弃 (的设备命令) '
             href: api/get-device-command-status.md
           - name: 活动源
             href: resources/activity-feed-api-overview.md
@@ -10152,6 +10152,13 @@ items:
                 items:
                   - name: 列表
                     href: api/virtualendpoint-list-serviceplans.md
+              - name: 云电脑快照
+                href: resources/cloudpcsnapshot.md
+                items:
+                  - name: 列表
+                    href: api/virtualendpoint-list-snapshots.md
+                  - name: 获取
+                    href: api/cloudpcsnapshot-get.md
               - name: 云电脑组织设置
                 href: resources/cloudpcorganizationsettings.md
                 items:
@@ -11188,7 +11195,7 @@ items:
                     href: api/device-delete-registeredowners.md
                   - name: 删除注册用户
                     href: api/device-delete-registeredusers.md
-                  - name: 列出设备组
+                  - name: 列出其设备成员
                     href: api/device-list-memberof.md
                   - name: List device transitive groups
                     href: api/device-list-transitivememberof.md
@@ -11703,7 +11710,7 @@ items:
                 items:
                   - name: 概述
                     href: resources/crosstenantaccesspolicy-overview.md
-                  - name: Policy
+                  - name: 策略
                     items:
                       - name: 跨租户访问策略
                         href: resources/crosstenantaccesspolicy.md
@@ -11896,7 +11903,7 @@ items:
                         href: api/organizationalbrandinglocalization-update.md
                       - name: 删除
                         href: api/organizationalbrandinglocalization-delete.md
-              - name: Policy
+              - name: 策略
                 href: resources/policy-overview.md
                 items:
                   - name: 基于活动的超时策略
@@ -12324,7 +12331,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: 用户流属性分配
                     items:
-                      - name: User
+                      - name: 用户
                         href: resources/identityuserflowattributeassignment.md
                       - name: 获取
                         href: api/identityuserflowattributeassignment-get.md
@@ -12413,7 +12420,7 @@ items:
                         href: api/accessreviewinstance-resetdecisions.md
                       - name: 列出联系的审阅者
                         href: api/accessreviewinstance-list-contactedreviewers.md
-                      - name: '列出已弃 (审批) '
+                      - name: '列出已 (审批) '
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
                   - name: 访问评审阶段
                     href: resources/accessreviewstage.md
@@ -12443,7 +12450,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-update.md
                       - name: 记录所有决策
                         href: api/accessreviewinstancedecisionitem-recordalldecisions.md
-                      - name: '列出已弃 (审批) '
+                      - name: '列出已 (审批) '
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                   - name: 访问评审策略
                     href: resources/accessreviewpolicy.md
@@ -12468,7 +12475,7 @@ items:
                             href: api/accessreviewhistorydefinition-list-instances.md
                           - name: 生成下载 URI
                             href: api/accessreviewhistoryinstance-generatedownloaduri.md
-              - name: '已弃 (访问) '
+              - name: '已弃 (的访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -13147,7 +13154,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置人员见解
+              - name: 设置见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -13479,7 +13486,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置人员见解
+                  - name: 设置见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -13693,7 +13700,7 @@ items:
                         href: api/authenticationmethodsroot-list-userregistrationdetails.md
                       - name: 获取
                         href: api/userregistrationdetails-get.md
-          - name: Microsoft 365使用情况报告
+          - name: Microsoft 365使用率报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -13914,7 +13921,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: 获取活动计数
                     href: api/reportroot-getyammergroupsactivitycounts.md
-          - name: Microsoft Defender for Office 365安全报告
+          - name: Microsoft Defender for Office 365 安全报告
             items:
               - name: 攻击模拟报告
                 displayname: Attack simulation and training
@@ -15206,7 +15213,7 @@ items:
                     href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
-              - name: 'Outlook任务 (已弃) '
+              - name: 'Outlook (任务) '
                 items:
                   - name: Outlook 任务
                     href: resources/outlooktask.md

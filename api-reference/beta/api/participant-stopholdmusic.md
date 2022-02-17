@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9a7f1d04125f1730ebdfd32d0c41fbae78d2d844
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 31b1b0f98254b04cc1758737ee3e454728c81720
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344992"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878867"
 ---
 # <a name="participant-stopholdmusic"></a>participant： stopHoldMusic
 
@@ -120,38 +120,8 @@ Location: https://graph.microsoft.com/beta/communications/calls/e141b67c-90fd-45
 {
   "@odata.type": "#microsoft.graph.stopHoldMusicOperation",
   "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-### <a name="notification-sent-to-the-application-after-the-stopholdmusicoperation-finishes"></a>stopHoldMusicOperation 完成之后发送到应用程序的通知
-
-```http
-POST https://bot.contoso.com/api/calls
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "@odata.type": "#microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.commsNotification",
-      "changeType": "deleted",
-      "resourceUrl": "communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.stopHoldMusicOperation",
-        "@odata.id": "communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
-      }
-    }
-  ]
+  "status": "completed",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "resultInfo": null
 }
 ```

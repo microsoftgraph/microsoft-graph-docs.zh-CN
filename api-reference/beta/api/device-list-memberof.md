@@ -1,24 +1,24 @@
 ---
-title: 列出设备组
-description: 获取此设备直接成员所参与的组。 此操作不可传递。
+title: 列出 memberOf
+description: 获取此设备是其直接成员组或管理单元。 此操作不可传递。
 author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 476b7c86d2bb6d044d8b46dc2640d4672e29bd66
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bfe7745780c0378c0026a44f8d23661697de5e8a
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134020"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878419"
 ---
-# <a name="list-device-groups"></a>列出设备组
+# <a name="list-memberof"></a>列出 memberOf
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取此设备直接成员所参与的组。 此操作不可传递。
+[获取设备](../resources/group.md)[直接成员](../resources/administrativeunit.md)所参与的组和管理单元。 此操作不可传递。
 
 ## <a name="permissions"></a>Permissions
 
@@ -43,13 +43,11 @@ GET /devices/{id}/memberOf
 
 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
-为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
-
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| ConsistencyLevel | 最终。 使用 `$count` 、OData 转换参数或特定用途时，需要此标头 `$search` 和 `$filter` 。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。 |
+| ConsistencyLevel | 最终。 使用 、`$count`OData 转换`$filter`参数`$search`或特定用途时，需要此标头 和 。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

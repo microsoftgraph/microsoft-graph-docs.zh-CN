@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e64d4d3a2d7599df3ce6674abab352ab474ae18f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 487fbee4e501b6d4154b1ed08102730fd278730c
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137544"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878825"
 ---
 # <a name="searchhit-resource-type"></a>searchHit 资源类型
 
@@ -22,11 +22,12 @@ ms.locfileid: "59137544"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
+|contentSource|String|**externalItem** 是 的内容源的名称。|
 |hitId|String|项的内部标识符。|
 |排名|Int32|结果的排名或顺序。|
-|contentSource|String|**externalItem** 是 的内容源的名称。|
-|摘要|String|结果摘要（如果摘要可用）。|
+|resultTemplateId|String|用于呈现搜索结果的结果模板的 ID。 此 ID 必须映射到 [searchResponse](searchresponse.md) 中也包含的 **resultTemplates** 字典中的显示布局。|
 |resource|[实体](entity.md)|基础 Microsoft Graph搜索结果的表示形式。|
+|摘要|String|结果摘要（如果摘要可用）。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,11 +44,12 @@ ms.locfileid: "59137544"
 
 ```json
 {
-  "hitId": "String",
-  "rank": 1,
-  "summary": "String",
   "contentSource": "String",
-  "resource": { "@odata.type": "microsoft.graph.entity" }
+  "hitId": "String",
+  "rank": "Int32",
+  "resultTemplateId": "String",
+  "resource": { "@odata.type": "microsoft.graph.entity" },
+  "summary": "String"
 }
 ```
 

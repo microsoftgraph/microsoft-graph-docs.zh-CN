@@ -1,16 +1,16 @@
 ---
 title: participant： invite
 description: 邀请参与者加入活动呼叫。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 432961612318a5db4f0b15a5d238dc19a0447bd9
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f59bddee4fe1ca18f6a8e702e0893b6924ce13e4
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62338982"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878881"
 ---
 # <a name="participant-invite"></a>participant： invite
 
@@ -20,7 +20,7 @@ ms.locfileid: "62338982"
 
 若要详细了解如何处理操作，请参阅 [通信操作](../resources/commsoperation.md)。
 
->**注意：** 此 API 仅支持组调用。
+>**注意：** 仅支持组呼叫在一个请求中邀请多个参与者。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +52,7 @@ POST /communications/calls/{id}/participants/invite
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功， `200 OK` 此方法将返回响应代码和具有为此请求创建的 [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 的 URI 的位置标头。 
+如果成功，此方法将返回响应 `200 OK` 代码和位置标头，其 URI 为为此请求创建的 [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 。 
 
 响应正文包含已创建的 [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)。
 
@@ -64,7 +64,7 @@ POST /communications/calls/{id}/participants/invite
 
 > **注意：** 为了可读性，可能会缩短响应对象。 所有属性都将通过实际调用返回。
 
-### <a name="example-1-invite-one-participant-to-an-existing-group-call"></a>示例 1：邀请一个参与者加入现有组呼叫
+### <a name="example-1-invite-one-participant-to-an-existing-call"></a>示例 1：邀请一个参与者加入现有呼叫
 
 ##### <a name="request"></a>请求
 

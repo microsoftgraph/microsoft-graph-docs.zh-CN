@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 5f689a44f614d7eb263d5d24fbaae6b7c7998543
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 2d1083dcca8eb48697d12e6c5bc7a3fa5b1e544a
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854746"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878734"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "62854746"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-管理单元为用户和组目录对象提供概念容器。 通过使用管理单元，公司管理员现在可以将管理责任委派给区域管理员或部门管理员，以管理管理单元中包含的用户和组或范围所包含的用户和组。
+管理单元为用户、组和设备目录对象提供概念容器。 使用管理单元，公司管理员现在可以将管理责任委派给区域管理员或部门管理员，以管理包含在管理单元内或作用域内的用户、组和设备。
 
 该资源支持通过提供 [delta](../api/administrativeunit-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。 此资源是允许传入其他属性的开放类型。
 
-来看一个示例。 Imagine Contoso Corp 由两个部门（一个东海岸分部和一个东海岸部门）所决定。 Contoso 的目录角色的范围为整个租户。 Contoso 公司管理员 Lee 希望委派管理责任，但将其范围划分到东海岸部门或东海岸分部。  Lee 可以创建 *一个"东海岸* "管理单元，并可以将所有"东海岸"用户放入此管理单元中。  同样，Lee 可以创建一 *个"东海岸"管理单元*。  现在，Lee 可以开始将管理职责委派给其他人，但作用域为自己创建的新管理单元。 Lee 将 Jennifer *设置在* 一个范围为"东海岸"管理单元的支持 *人员管理员角色中*。  这允许 Jennifer 重置任何用户的密码，但只有在这些用户位于 *东海岸管理单元时。*  同样，Lee 将 Dave 担任用户帐户 *管理员* 角色，其作用域为 *东海岸管理单元*。  这允许 Dave 更新用户、分配许可证和重置任何用户的密码，但只有在这些用户位于 *东海岸管理单元时。* 有关视频概述，请参阅管理[单元Azure Active Directory简介](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units)。
+来看一个示例。 Imagine Contoso Corp 由两个部门（一个东海岸分部和一个东海岸部门）负责。 Contoso 的目录角色的范围为整个租户。 Contoso 公司管理员 Lee 希望委派管理责任，但将其范围划分到东海岸部门或东海岸分部。  Lee 可以创建 *一个"东海岸* "管理单元，并可以将所有"东海岸"用户放入此管理单元中。  同样，Lee 可以创建一 *个"东海岸"管理单元*。  现在，Lee 可以开始将管理职责委派给其他人，但作用域为自己创建的新管理单元。 Lee 将 Jennifer *设置在* 一个范围为"东海岸"管理单元的支持 *人员管理员角色中*。  这允许 Jennifer 重置任何用户的密码，但只有在这些用户位于 *东海岸管理单元时。*  同样，Lee 将 Dave 担任用户帐户 *管理员* 角色，其作用域为 *东海岸管理单元*。  这允许 Dave 更新用户、分配许可证和重置任何用户的密码，但只有在这些用户位于 *东海岸管理单元时。* 有关视频概述，请参阅管理[单元Azure Active Directory简介](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units)。
 
 使用此资源，可以使用[扩展](/graph/extensibility-overview)将自己的数据添加到自定义属性。
 
@@ -39,8 +39,8 @@ ms.locfileid: "62854746"
 |[更新](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |更新 administrativeUnit 对象。 |
 |[删除](../api/administrativeunit-delete.md) | 无 |删除 administrativeUnit 对象。 |
 |[获取增量](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|获取新创建、更新或删除 **的管理单元** ，而无需执行整个资源集合的完全读取。|
-|[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 向用户 (组添加成员) 。|
-|[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取用户和 (组) 列表。|
+|[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 在用户 (组或设备上添加成员) 。|
+|[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取用户 (组和设备用户) 列表。|
 |[获取成员](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 获取特定成员。|
 |[删除成员](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| 删除成员。|
 |[添加作用域角色成员](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 添加作用域角色成员。|
@@ -90,10 +90,10 @@ ms.locfileid: "62854746"
 
 ```json
 {
-  "description": "string",
-  "displayName": "string",
-  "id": "string (identifier)",
-  "visibility": "string"
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "visibility": "String"
 }
 
 ```
