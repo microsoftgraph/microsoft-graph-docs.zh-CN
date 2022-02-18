@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 04a9f843da8326f257a7a48537353a10ac458a81
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 046fd5a8e3463ab9efcdd63c79eacb82302d70fa
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766934"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894759"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -35,6 +35,8 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 |[在查询条款中使用 KQL](#keyword-query-language-kql-support) | **查询** |
 |[排序搜索结果](#sort-search-results)| **sort** |
 |[使用聚合优化结果](#refine-results-using-aggregations)| **聚合** |
+|[请求拼写更正](#request-spelling-correction)| **queryAlterationOptions** |
+|[搜索显示布局](#search-display-layout)（预览版）| **resultTemplateOptions**|
 
 ## <a name="scope-search-based-on-entity-types"></a>根据实体类型限定搜索范围
 
@@ -135,7 +137,23 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 聚合目前仅支持在以下 SharePoint 和 OneDrive 类型上的任何可细化属性：[driveItem](driveitem.md)、[listItem](listitem.md)、[列表](list.md)、[网站](site.md)以及在Microsoft Graph 连接器上的 [externalItem](externalconnectors-externalitem.md)。
 
-请参阅[优化搜索结果](/graph/search-concept-aggregation) ，显示使用聚合增强和缩小搜索结果的示例。
+请参阅 [优化搜索结果](/graph/search-concept-aggregation)，以了解显示如何使用聚合增强和缩小搜索结果的示例。
+
+## <a name="request-spelling-correction"></a>请求拼写更正
+
+拼写更正是处理用户查询中的拼写错误和匹配内容中正确单词之间差异的常用方法。 在原始用户查询中检测到拼写错误时，可以获得原始用户查询或更正的备用查询的搜索结果。 还可以在 [searchresponse](searchresponse.md) 的 **queryAlterationResponse** 属性中获取拼写错误的拼写更正信息。
+
+在 [Query](/graph/api/search-query) 方法的请求正文中，指定应当应用于查询以进行拼写更正的 **queryAlterationOptions**。 在 [searchRequest](./searchrequest.md)中定义了 **queryAlterationOptions** 的说明。
+
+有关如何使用拼写更正的示例，请参见[请求拼写更正](/graph/search-concept-speller)。
+
+## <a name="search-display-layout"></a>搜索显示布局
+
+借助搜索 API，可以通过使用由 IT 管理员为每个连接器配置的显示布局或结果模板来呈现来自 [连接器](/microsoftsearch/connectors-overview) 的搜索结果。 结果模板为[自适应卡片](https://adaptivecards.io/)，是布局和数据的语义上有意义的组合。
+
+要在 [searchresponse](searchresponse.md) 中获取结果模板，必须将在 [searchRequest](./searchrequest.md) 中 [resultTemplateOptions](./resulttemplateoption.md) 中定义的 **enableResultTemplate** 属性设置为 **true**。 响应包括每个 [searchHit](./searchhit.md) 的 **resultTemplateId**，它映射到包含在作为响应一部分的 **resultTemplates** 字典中的显示布局之一。
+
+有关演示如何呈现搜索结果的示例，请参阅 [使用搜索显示布局](/graph/search-concept-display-layout)。
 
 ## <a name="error-handling"></a>错误处理
 
@@ -168,6 +186,8 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
   - [SharePoint 和 OneDrive 中的搜索内容](/graph/search-concept-files)
   - [排序搜索结果](/graph/search-concept-sort)
   - [改进搜索结果](/graph/search-concept-aggregation)
+  - [请求拼写更正](/graph/search-concept-speller)
+  - [用户搜索显示布局](/graph/search-concept-display-layout)
 
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
 - 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

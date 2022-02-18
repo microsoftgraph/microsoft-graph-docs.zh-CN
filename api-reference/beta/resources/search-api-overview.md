@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6a30360dddeb06d9f8ac4d1ff5b485229087c3ce
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: 3ebab5bc652f6e6b484312420fb779d849eabb20
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282034"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894745"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -24,9 +24,9 @@ ms.locfileid: "62282034"
 
 ## <a name="common-use-cases"></a>常见用例
 
-Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Microsoft Search 中搜索数据，在其请求正文中传递 [searchRequest](searchRequest.md) ，定义搜索的具体内容。
+Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Microsoft Search 中搜索数据，在其请求正文中传递 [searchRequest](searchrequest.md) ，定义搜索的具体内容。
 
-本部分列出了 **查询** 方法的常见用例，具体取决于在 **查询** [searchRequest](searchRequest.md)正文中设置的属性和参数。
+本部分列出了 **查询** 方法的常见用例，具体取决于在 **查询** [searchRequest](searchrequest.md)正文中设置的属性和参数。
 
 代表用户运行搜索请求。 设定搜索结果范围，以强制执行应用到项目的任何访问控制。  例如，在文件的上下文中，将在搜索请求过程中评估对文件的权限。 在搜索中，用户无法访问更多的项目，但可以从具有相同权限和访问控制的相应 GET 操作中获得这些项目。
 
@@ -158,7 +158,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 借助搜索 API，可以使用 IT 管理员为每个连接器配置的显示布局或结果模板，呈现来自[连接器](/microsoftsearch/connectors-overview)的搜索结果。 结果模板为[自适应卡片](https://adaptivecards.io/)，是布局和数据的语义上有意义的组合。
 
-若要在 [searchresponse](searchresponse.md) 中获取结果模板，必须将在 [searchRequest](./searchrequest.md)中，将 [resultTemplateOptions](./resulttemplateoption.md) 中定义的 **enableResultTemplate** 属性设置为 **true**。 响应包括每个 [搜索命中](./searchhit.md)的 **resultTemplateId**，它映射到包含在响应中的 **resultTemplates** 中包含的显示布局之一。
+若要在 [searchResponse](searchresponse.md)中获取结果模板，必须在 [searchRequest](./searchrequest.md) 中 [resultTemplateOptions](./resulttemplateoption.md)定义的 **enableResultTemplate** 属性设置为 **true**。 响应包括每个 [搜索命中](./searchhit.md)的 **resultTemplateId**，它映射到包含在响应中的 **resultTemplates** 中包含的显示布局之一。
 
 相关示例，请参阅[使用搜索显示布局](/graph/search-concept-display-layout)。
 

@@ -5,8 +5,13 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
+ms.openlocfilehash: 933a7cd6f4cee0fdb0abdc78296eaac949824948
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894696"
 ---
-
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
 命名空间：microsoft.graph
@@ -25,6 +30,9 @@ doc_type: apiPageType
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All、 Directory.Read.All、 Application.ReadWrite.OwnedBy、 Application.ReadWrite.All、 Directory.ReadWrite.All |
 
+> [!NOTE]
+> 服务主体可以检索自己的应用程序和服务主体详细信息，而无需授予任何应用程序权限。
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -32,7 +40,7 @@ GET /servicePrincipals/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 此方法支持使用 `$count`、`$expand`、`$filter`、`$orderBy`、`$search`、`$select` 和 `$top` [ OData 查询参数 ](/graph/query-parameters) 以帮助自定义响应。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 

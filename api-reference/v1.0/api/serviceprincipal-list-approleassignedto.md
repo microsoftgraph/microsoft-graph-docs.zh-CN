@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 075ef9588286c2d0c2aca123b63ead2230fcc7ca
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6d26695980c3f7b85519f64855fa7942428b150e
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132080"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878454"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>列出为服务主体授予的 appRoleAssignment
 
@@ -21,6 +21,8 @@ ms.locfileid: "62132080"
 例如，如果资源服务主体是 Microsoft Graph API 的服务主体，则将返回已向 Microsoft Graph 授予任何仅应用权限的所有服务主体。
 
 如果资源服务主体是具有授予用户和组的应用角色的应用程序，则将返回为此应用程序分配应用角色的所有用户和组。
+
+>**注意**，此请求可能具有最近授予或删除的应用角色分配的复制延迟。
 
 ## <a name="permissions"></a>权限
 

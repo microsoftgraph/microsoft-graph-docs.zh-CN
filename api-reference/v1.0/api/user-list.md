@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5de10fa333178b67cb8983bf28ac4324a8bab2d6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 109db1591dd2c7e572dd26468d7207dd93a44c1d
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100790"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878713"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -18,7 +18,9 @@ ms.locfileid: "62100790"
 
 检索 [user](../resources/user.md) 对象列表。
 
-## <a name="permissions"></a>Permissions
+>**注意：** 此请求可能对最近创建、更新或删除的用户具有复制延迟。
+
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

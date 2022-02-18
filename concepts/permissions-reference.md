@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0cf655c04e074e7b8c9fb3c1f65c843fee7e2589
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 85a5991cfe230e6588a2bb2c663914b14b816a17
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519206"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894661"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1186,7 +1186,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1287,6 +1287,21 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_ 和 _Mail.Send.Shared_ 仅适用于
 
 ---
 
+## <a name="managed-tenant-permissions"></a>托管租户权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ManagedTenants.Read.All_ | 读取所有托管租户特定信息 | 允许应用代表登录用户读取所有托管租户信息。 | 是 | 否 |
+| _ManagedTenants.ReadWrite.All_ | 读取和写入所有托管租户特定信息 | 允许应用代表登录用户读取和写入所有托管租户信息。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+无。
+
+---
+
 ## <a name="member-permissions"></a>成员权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -1320,6 +1335,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
+---
 
 ## <a name="notes-permissions"></a>注释权限
 
@@ -1342,7 +1358,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1366,6 +1382,8 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 * _Notes.ReadWrite.All_：更新组织中任意用户的笔记本中的页面 (`PATCH /users/{id}/onenote/pages/{id}/$value`)。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
 
 ## <a name="notifications-permissions"></a>通知权限
 #### <a name="delegated-permissions"></a>委派权限

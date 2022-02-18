@@ -5,15 +5,22 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
+ms.openlocfilehash: d477e0333c94114818a0bd4fa8ec7723c1a06150
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878643"
 ---
-
 # <a name="get-a-user"></a>获取用户
 
 命名空间：microsoft.graph
 
 检索用户对象的属性和关系。
 
-> 注意：获取用户仅返回一组默认属性（*businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName*。使用 `$select` 获取 [user](../resources/user.md) 对象的其他属性和关系。
+> **注意：** 获取用户仅返回一组默认属性(*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*)。使用 `$select` 获取 [用户](../resources/user.md) 对象的其他属性和关系。
+>
+> 此请求可能对最近创建、更新或删除的组具有复制延迟。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: d18d429d611c05512196651644525ce4866d7831
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 8b2a302157a7f3a1309d0f7917d1c16816bfab82
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792230"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878748"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -185,6 +185,8 @@ Content-type: application/json
 ### <a name="processing-delays"></a>处理延迟
 
 对资源实例进行更改（可通过应用界面或 API 进行）的时间与所做的更改反映在增量查询响应中的时间之间可能会出现不同的延迟。
+
+有时，当你选择 `nextLink` 或 `deltaLink` 时，可能无法指示对于对象所做的更改。 这是因为某些请求可能对最近创建、更新或删除的对象具有复制延迟。 请在一段时间后重试 `nextLink` 或 `deltaLink` 以检索最新更改。
 
 ### <a name="national-clouds"></a>国家云
 

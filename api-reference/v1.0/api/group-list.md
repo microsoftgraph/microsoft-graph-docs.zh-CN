@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: da5c3548ec9bd82df93ffec177e9308d4145dc68
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b8abf8d7d2a383e3c20ea75781da5e9439f1bb2f
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62225614"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878804"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -19,6 +19,8 @@ ms.locfileid: "62225614"
 列出组织中的所有组，包括但不限于 Microsoft 365 组。 
 
 此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取 _非_ 默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。
+
+>**注意：** 此请求可能对最近创建、更新或删除的组具有复制延迟。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
