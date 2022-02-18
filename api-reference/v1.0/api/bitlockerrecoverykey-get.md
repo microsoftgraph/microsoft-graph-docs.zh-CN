@@ -5,19 +5,19 @@ author: hafowler
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 17ce44820faee212ff4a8656da27684d550b6e7d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4b2b516c5c1967724d849955dd0e79daaf4605b1
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111458"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894738"
 ---
 # <a name="get-bitlockerrecoverykey"></a>获取 bitlockerRecoveryKey
 命名空间：microsoft.graph
 
 检索 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象的属性和关系。 
 
-默认情况下，此操作不会返回表示实际恢复密钥的 key 属性。 若要在 **响应中包括 key** 属性，请使用 `$select` OData 查询参数。 包含 `$select` 查询参数将触发Azure AD审核，并生成一个审核日志。 有关 bitlocker 恢复密钥的审核日志详细信息，请参阅适用于 bitlocker 恢复密钥的 KeyManagement [Azure AD筛选器](/azure/active-directory/reports-monitoring/concept-audit-logs)。
+默认情况下，此操作不会返回表示实际恢复密钥的 key 属性。 若要在 **响应中包括 key** 属性，请使用 `$select` OData 查询参数。 `$select`包含查询参数将触发Azure AD审核，并生成一个审核日志。 有关 bitlocker 恢复密钥的审核日志详细信息，请参阅安全审核日志的 KeyManagement [Azure AD筛选器](/azure/active-directory/reports-monitoring/concept-audit-logs)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -57,12 +57,13 @@ GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$sel
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数返回 **key** 属性。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 OData `$select` 查询参数返回 **key** 属性。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
+|User-Agent|调用应用程序的标识符。 此值包含有关使用的操作系统和浏览器的信息。 必需项。|
 |ocp-client-name|执行 API 调用的客户端应用程序的名称。 此标头用于调试目的。 可选。|
 |ocp-client-version|执行 API 调用的客户端应用程序的版本。 此标头用于调试目的。 可选。|
 
@@ -71,7 +72,7 @@ GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$sel
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -89,6 +90,7 @@ GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$sel
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -160,6 +162,9 @@ Content-type: application/json
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
+ocp-client-name: "My Friendly Client"
+ocp-client-version: "1.2"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-key-csharp-snippets.md)]

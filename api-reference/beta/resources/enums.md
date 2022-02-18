@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: cd3be7143a53b7985fe2a677f685c3f2ed2b4b18
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 480689881eb5b806cd5e2fa734068da013c86966
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878720"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894794"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -279,7 +279,7 @@ ms.locfileid: "62878720"
 
 |Member|
 |:---|
-|无|
+|None|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -1074,10 +1074,10 @@ ms.locfileid: "62878720"
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType 值
 
-| 成员 | 说明 |
-|:---------------|:----------|
-|modification|获取更正的交替查询的搜索结果和拼写错误拼写更正信息。|
-|suggestion|获取原始用户查询的搜索结果以及查询中拼写错误的建议拼写更正信息。|
+| Member |
+|:---------------|
+|modification|
+|suggestion|
 
 ### <a name="bucketaggregationsortproperty-values"></a>bucketAggregationSortProperty 值
 
@@ -1529,7 +1529,7 @@ ms.locfileid: "62878720"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | 参考
 
 
@@ -2002,7 +2002,7 @@ ms.locfileid: "62878720"
 
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| 无 | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
+| None | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
 | Override | 1 | 发件人已覆盖邮件裁定并发送了该邮件。|
 | ReportFalsePositive | 2 | 发件人将邮件裁定报告给管理员为误报。|
 
@@ -2010,7 +2010,7 @@ ms.locfileid: "62878720"
 
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
+| None | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
 | AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式替代`AllowOverrideWithoutJustification``AllowOverrideWithJustification`块。 报告违反误报会自动覆盖阻止并发送邮件。 |
 | AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification`。 |
 | AllowOverrideWithJustification | 4 |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification`。|
@@ -2068,7 +2068,7 @@ ms.locfileid: "62878720"
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于其余;例如，共享中的文件。                                 |
 | 动作 | 1     | 数据在运动中。 在传输过程中被网络设备截获的文件。         |
-| use    | 2     | 数据在使用中。 文件在客户端应用程序（如 Microsoft Office）中打开。 |
+| use    | 2     | 数据在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
@@ -2458,7 +2458,7 @@ ms.locfileid: "62878720"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|team      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
+|团队      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
@@ -2632,7 +2632,7 @@ ms.locfileid: "62878720"
 |Member|
 |:---|
 |团队|
-|频道|
+|channel|
 |聊天|
 |unknownFutureValue|
 

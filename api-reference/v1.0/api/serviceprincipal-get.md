@@ -1,12 +1,17 @@
 ---
 title: 获取 servicePrincipal
-description: 检索 serviceprincipal 对象的属性和关系。
+description: 检索 servicePrincipal 对象的属性和关系。
 author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
+ms.openlocfilehash: 5630f5888be3a7c84d2075907231c3d73fc29cb5
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894773"
 ---
-
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
 命名空间：microsoft.graph
@@ -22,6 +27,9 @@ doc_type: apiPageType
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
+> [!NOTE]
+> 服务主体可以检索自己的应用程序和服务主体详细信息，而无需被授予任何应用程序权限。
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -29,9 +37,9 @@ GET /servicePrincipals/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-默认情况下，此 API 不会返回 **keyCredentials** 属性中 **密钥** 的公钥值，除非已在 `$select` 查询中指定了 **keyCredentials** 。
+默认情况下，此 API 不会返回 **keyCredentials** 属性中 **密钥** 的公钥值，除非已在 `$select` 查询中指定了 **keyCredentials**。
 例如，`$select=id,appId,keyCredentials`。
 
 对于每个租户，使用 `$select` 获取服务主体的 **keyCredentials** 限制为每分钟 150 个请求。

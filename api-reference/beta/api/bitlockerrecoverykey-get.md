@@ -5,12 +5,12 @@ author: hafowler
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d5e8be6ca6648f7bf7b6555f2984aa6e361edf3e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f25c7f3263e3fd200e4eae768bcd3038d61f95f7
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116690"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894731"
 ---
 # <a name="get-bitlockerrecoverykey"></a>获取 bitlockerRecoveryKey
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "62116690"
 
 检索 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象的属性和关系。 
 
-默认情况下，此操作不会返回表示实际恢复密钥的 key 属性。 若要在 **响应中包括 key** 属性，请使用 `$select` OData 查询参数。 包含 `$select` 查询参数将触发Azure AD审核，并生成一个审核日志。 可以在"KeyManagement"类别[Azure AD审核](/azure/active-directory/reports-monitoring/concept-audit-logs)日志中找到日志。
+默认情况下，此操作不会返回表示实际恢复密钥的 key 属性。 若要在 **响应中包括 key** 属性，请使用 `$select` OData 查询参数。 `$select`包含查询参数将触发Azure AD审核，并生成一个审核日志。 可以在"KeyManagement"[类别Azure AD审核](/azure/active-directory/reports-monitoring/concept-audit-logs)日志中找到日志。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,7 +30,7 @@ ms.locfileid: "62116690"
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序|不支持|
 
->**注意：** 对于允许应用代表登录用户获取 BitLockerRecoveryKey 资源的委派权限，租户管理员必须为用户分配以下角色之一，或者用户必须是最初备份 BitLocker 密钥的设备注册所有者：  
+>**注意：** 对于允许应用代表登录用户获取 BitLockerRecoveryKey 资源的委派权限，租户管理员必须为用户分配以下角色之一，或者用户必须是最初备份 BitLocker 密钥的设备注册所有者： 
 * 全局管理员
 * 云设备管理员
 * 支持人员管理员
@@ -46,7 +46,7 @@ ms.locfileid: "62116690"
 }
 -->
 ``` http
-GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
+GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}
 ```
 
 若要获取指定的 BitLocker 密钥（包括其 **key** 属性）：
@@ -55,25 +55,27 @@ GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 }
 -->
 ``` http
-GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
+GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$select=key
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数返回 **key** 属性。 有关详细信息，请参阅示例[2。](#example-2) 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 OData `$select` 查询参数返回 **key** 属性。 有关详细信息，请参阅示例 [2](#example-2)。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
+|User-Agent|调用应用程序的标识符。 此值包含有关使用的操作系统和浏览器的信息。 必需项。|
 |ocp-client-name|执行 API 调用的客户端应用程序的名称。 此标头用于调试目的。 可选。|
 |ocp-client-version|执行 API 调用的客户端应用程序的版本。 此标头用于调试目的。 可选。|
+
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -92,6 +94,7 @@ GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$s
 -->
 ``` http
 GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -163,6 +166,9 @@ Content-type: application/json
 -->
 ``` http
 GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
+ocp-client-name: "My Friendly Client"
+ocp-client-version: "1.2"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-4-csharp-snippets.md)]

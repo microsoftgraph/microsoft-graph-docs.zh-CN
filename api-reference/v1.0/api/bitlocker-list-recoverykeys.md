@@ -5,12 +5,12 @@ author: hafowler
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c3cce594bb7fd6bec167b7b191c636a6c765a23c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3cf3335abf971b9c55d322e7e18e697a62654a4b
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092541"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894752"
 ---
 # <a name="list-recoverykeys"></a>列出 recoveryKeys
 
@@ -18,7 +18,7 @@ ms.locfileid: "62092541"
 
 获取 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象及其属性的列表。 
 
-此操作不会返回 **key** 属性。 若要了解如何读取 key 属性 **，请参阅** 获取 [bitlockerRecoveryKey](bitlockerrecoverykey-get.md)。
+此操作不会返回 **key** 属性。 若要了解如何读取 key **属性，请参阅**[获取 bitlockerRecoveryKey](bitlockerrecoverykey-get.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -55,15 +55,16 @@ GET /informationProtection/bitlocker/recoveryKeys
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData 查询参数，以按最近备份密钥的设备的 `$filter` **deviceId** 筛选结果。 此方法不支持 `$top` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$filter` OData 查询参数，以按最近备份密钥的设备的 **deviceId** 筛选结果。 此方法不支持 `$top`。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-该响应可能还包含 `odata.nextLink` 一个 ，您可以使用 它分页浏览结果集。 有关详细信息，请参阅[分页 Microsoft Graph数据](/graph/paging)。
+该响应可能还包含 `odata.nextLink`，您可以使用 它分页浏览结果集。 有关详细信息，请参阅[分页 Microsoft Graph数据](/graph/paging)。
 
 ## <a name="request-headers"></a>请求标头
 
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
+|User-Agent|调用应用程序的标识符。 此值包含有关使用的操作系统和浏览器的信息。 必需项。|
 |ocp-client-name|执行 API 调用的客户端应用程序的名称。 此标头用于调试目的。 可选。|
 |ocp-client-version|执行 API 调用的客户端应用程序的版本。 此标头用于调试目的。 可选。|
 
@@ -73,7 +74,7 @@ GET /informationProtection/bitlocker/recoveryKeys
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -92,6 +93,7 @@ GET /informationProtection/bitlocker/recoveryKeys
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -174,6 +176,7 @@ Content-Type: application/json
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```

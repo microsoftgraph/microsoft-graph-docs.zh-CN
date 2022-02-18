@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristianv-ms
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: f6c3583ce13da2bc1c94325ed4a7db7353f329f0
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 3951c86846966d12292bad242ebb1545f80b1b7c
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879269"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894787"
 ---
 # <a name="resulttemplate-resource-type"></a>resultTemplate 资源类型
 
@@ -42,10 +42,12 @@ ms.locfileid: "62879269"
 
 ```json
 {
-  "resultTemplateId": {
-                        "displayName": "String",
-                        "body": {"@odata.type": "microsoft.graph.Json"}
-                      }
+   "resultTemplateId": {
+      "displayName": "String",
+      "body":{
+         "@odata.type":"microsoft.graph.Json"
+      }
+   }
 }
 ```
 

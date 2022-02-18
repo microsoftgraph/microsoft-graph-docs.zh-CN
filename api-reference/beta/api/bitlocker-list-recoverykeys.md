@@ -5,12 +5,12 @@ author: hafowler
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 26aa268f1be5a0b8bcf35041ab7e898a1e97ad9c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f8a6cd7685150e36c4e7bc0cdc4eab50a3ff5539
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130079"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894689"
 ---
 # <a name="list-recoverykeys"></a>列出 recoveryKeys
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "62130079"
 
 获取 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象及其属性的列表。 
 
-此操作不会返回 **key** 属性。 若要了解如何读取 key 属性 **，请参阅** 获取 [bitlockerRecoveryKey](bitlockerrecoverykey-get.md)。
+此操作不会返回 **key** 属性。 若要了解如何读取 key **属性，请参阅**[获取 bitlockerRecoveryKey](bitlockerrecoverykey-get.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -62,14 +62,15 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData 查询参数按最近备份密钥的设备 `$filter` **ID** 筛选结果。 此方法不支持 `$top` 筛选器。 有关详细信息，请参阅示例[2。](#example-2) 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$filter` OData 查询参数按最近备份密钥的设备 **ID** 筛选结果。 此方法不支持筛选器 `$top` 。 有关详细信息，请参阅示例 [2](#example-2)。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-该响应可能还包含 `odata.nextLink` 一个 ，您可以使用 它分页浏览结果集。 有关详细信息，请参阅分页[Microsoft Graph数据](/graph/paging)。
+该响应可能还包含 `odata.nextLink`，您可以使用 它分页浏览结果集。 有关详细信息，请参阅[分页 Microsoft Graph数据](/graph/paging)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
+|User-Agent|调用应用程序的标识符。 此值包含有关使用的操作系统和浏览器的信息。 必需项。|
 |ocp-client-name|执行 API 调用的客户端应用程序的名称。 此标头用于调试目的。 可选。|
 |ocp-client-version|执行 API 调用的客户端应用程序的版本。 此标头用于调试目的。 可选。|
 
@@ -78,7 +79,7 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -96,6 +97,7 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 -->
 ``` http
 GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -175,6 +177,7 @@ Content-Type: application/json
 -->
 ``` http
 GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
