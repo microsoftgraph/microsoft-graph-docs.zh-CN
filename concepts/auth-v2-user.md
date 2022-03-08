@@ -5,16 +5,16 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 21c8bf9fb42dc86a149f03adac1bebef3262a233
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f4e4e9033c7a43ccf61358733a252ab635148223
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122948"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335022"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 
-若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Microsoft 标识平台获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。你将用于获取访问令牌的确切的身份验证流会依赖于你正在开发的应用类型以及你是否要使用 OpenID Connect 让用户登录到应用中。本机和移动应用还有某些 Web 应用使用的常见流程就是 OAuth 2.0 授权代码授予流程。本主题将介绍一个使用此流程的示例。
+若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Microsoft 标识平台获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。你将用于获取访问令牌的确切的身份验证流会依赖于你正在开发的应用类型以及你是否要使用 OpenID Connect 让用户登录到应用中。本机和移动应用还有某些 Web 应用使用的常见流程就是 **OAuth 2.0 授权代码授予流程**。本文将介绍一个使用此流程的示例。
 
 ## <a name="authentication-and-authorization-steps"></a>身份验证和授权步骤
 
@@ -30,23 +30,23 @@ ms.locfileid: "59122948"
 
 要使用 Microsoft 标识平台终结点，必须通过[应用注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)注册应用。可使用 Microsoft 帐户或工作/学校帐户来注册应用。
 
-若要配置应用以使用 OAuth 2.0 授权代码授予流程，将需要在注册应用时保存下列值：
+若要配置应用以使用 OAuth 2.0 授权代码授予流程，请在注册应用时保存下列值：
 
 - 应用注册门户分配的应用程序（客户端）ID。
-- 客户端（应用）密码，可以是密码，也可以是公钥/私钥对（证书）。对于本机应用，这不是必需的。
+- 客户端（应用程序）密码，它是一个密码或是一个公钥/私钥对（证书）。 本机应用不需要客户端密码。
 - 可让应用接收来自 Azure AD 的响应的重定向 URL（或回复 URL）。
 
 要分步了解如何在 Azure 门户中配置应用，请参阅[注册应用](./auth-register-app-v2.md)。
 
 ## <a name="2-get-authorization"></a>2. 获取授权
 
-对于许多 OpenID Connect 和 OAuth 2.0 流，获取访问令牌的第一步是将用户重定向到 Microsoft 标识平台 `/authorize` 端点。Azure AD 将允许用户登录并确保其同意应用请求的权限。在授权代码授予流中，一旦获得同意，Azure AD 就会将 authorization_code 返回到应用，它可以在 Microsoft 标识平台 `/token` 端点上兑换为访问令牌。
+对于许多 OpenID Connect 和 OAuth 2.0 流，获取访问令牌的第一步是将用户重定向到 Microsoft 标识平台 `/authorize` 端点。Azure AD 将允许用户登录并请求其同意应用请求的权限。在授权代码授予流中，一旦获得同意，Azure AD 就会将 authorization_code 返回到应用，它可以在 Microsoft 标识平台 `/token` 端点上兑换为访问令牌。
 
 ### <a name="authorization-request"></a>授权请求
 
 以下示例显示了对 `/authorize` 终结点的请求示例。
 
-通过 Microsoft 标识平台端点，使用 `scope` 参数请求权限。在此示例中，所请求的 Microsoft Graph 权限可用于 _User.Read_ 和 _Mail.Read_，这会允许应用读取已登录用户的个人资料和邮件。已请求 _脱机\_访问_ 权限，因此应用可以获取刷新令牌，此令牌可用于在当前令牌过期后获取新的访问令牌。
+通过 Microsoft 标识平台端点，使用 `scope` 参数请求权限。在此示例中，所请求的 Microsoft Graph 权限可用于 _User.Read_ 和 _Mail.Read_，这会允许应用读取已登录用户的个人资料和邮件。已请求 _脱机\_访问_ 权限，因此应用可以获取刷新令牌，在当前令牌过期后，应用可使用此刷新令牌获取新的访问令牌。
 
 ```
 // Line breaks for legibility only
@@ -63,25 +63,25 @@ client_id=11111111-1111-1111-1111-111111111111
 | 参数     | 必需    | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 租户        | 必需    | 请求路径中的 `{tenant}` 值可用于控制登录应用程序的用户。允许的值为适用于 Microsoft 帐户和工作或学校帐户的 `common`、仅适用于工作或学校帐户的 `organizations`、仅适用于 Microsoft 帐户的 `consumers` 以及租户标识符（如租户 ID 或域名）。有关详细信息，请参阅[协议基础](/azure/active-directory/develop/active-directory-v2-protocols#endpoints)。 |
-| client_id     | 必需    | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                                                                                                                                                                                                                   |
-| response_type | 必需    | 必须包括授权代码流的 `code`。                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| redirect_uri  | 建议 | 你的应用的 redirect_uri，你可以在其中通过应用发送并接收身份验证响应。它必须完全匹配你在应用注册门户中注册的 redirect_uris 之一，除了它必须采用 URL 编码。对于本机和移动应用，应使用默认值 `https://login.microsoftonline.com/common/oauth2/nativeclient`。                                                                                                                                       |
-| 范围         | 必需    | 由空格分隔的希望用户同意的 Microsoft Graph 权限列表。 这可能包括资源权限，如 _User.Read_ 和 _Mail.Read_ 和 OIDC 作用域如 `offline_access`，这表示你的应用需要刷新令牌才能长期访问资源。                                                                                                                                                                                                                                                                                                                                                                  |
-| response_mode | 建议 | 指定用于将结果令牌发送回应用的方法。可以是 `query` 或 `form_post`。                                                                                                                                                                                                                                                                                                                                                                                  |
-| 状态         | 建议 | 请求中包含的值将在令牌响应中返回。它可以是你希望的任何内容的字符串。随机生成的唯一值通常用于[防止跨网站请求伪造攻击](https://tools.ietf.org/html/rfc6749#section-10.12)。此状态还用于在发生身份验证请求前，对应用中的用户状态信息进行编码（如它们所在的页面或视图上）。                                     |
+| client_id     | 必需    | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                                                                                                                                                                                                                |
+| response_type | 必需    | 必须包括授权代码流的 `code`。                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| redirect_uri  | 建议 | 你的应用的 redirect_uri，你可以在其中通过应用发送并接收身份验证响应。它必须完全匹配你在应用注册门户中注册的 redirect_uris 之一，除了它必须采用 URL 编码。对于本机和移动应用，应使用默认值 `https://login.microsoftonline.com/common/oauth2/nativeclient`。                                                                                                                                    |
+| 范围         | 必需    | 由空格分隔的希望用户同意的 Microsoft Graph 权限列表。 这些权限可能包括资源权限，如 _User.Read_、_Mail.Read_ 和 OIDC 作用域（如 `offline_access`），这表示你的应用需要刷新令牌才能长期访问资源。                                                                                                                                                                                                                                                                                                                                                               |
+| response_mode | 建议 | 指定用于将结果令牌发送回应用的方法。可以是 `query` 或 `form_post`。                                                                                                                                                                                                                                                                                                                                                                               |
+| state         | 建议 | 请求中包含的值将在令牌响应中返回。它可以是你希望的任何内容的字符串。随机生成的唯一值通常用于[防止跨网站请求伪造攻击](https://tools.ietf.org/html/rfc6749#section-10.12)。此状态还用于在发生身份验证请求前，对应用中的用户状态信息进行编码（如它们所在的页面或视图上）。                                  |
 
 > [!NOTE]
 > Microsoft Graph 公开两种类型的权限：应用程序和委派。对于使用已登录用户运行的应用，在 `scope` 参数中请求权限。这些权限将已登录用户的权限委派给您的应用程序，从而允许它在调用 Microsoft Graph 时作为已登录的用户。有关通过 Microsoft Graph 提供的权限的更多详细信息，请参阅 [权限引用](./permissions-reference.md)。
 >
-> Microsoft Graph 还会公开以下定义明确的 OIDC 作用域： `openid`、 `email`、 `profile`和 `offline_access`。 不支持`address`和`phone` OIDC 作用域。 有关每个 OIDC 作用域的更多详细信息，请参阅 [许可和同意](/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes)。
+> Microsoft Graph 还会公开以下定义明确的 OIDC 作用域： `openid`、 `email`、 `profile`和 `offline_access`。 不支持`address`和`phone` OIDC 作用域。 有关每个 OIDC 作用域的更多信息，请参阅[许可和同意](/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes)。
 
 ### <a name="consent-experience"></a>同意体验
 
-在这种情况下，将要求用户输入其凭据以使用 Microsoft 进行身份验证。Microsoft 标识平台 v2.0 端点还将确保用户已同意 `scope` 查询参数中指示的权限。如果用户并不同意任何这些权限，且管理员此前未代表组织内的所有用户表示同意，Azure AD 将提示用户同意所需权限。
+发送授权请求后，将要求用户输入其凭据以使用 Microsoft 进行身份验证。Microsoft 标识平台 v2.0 端点还将确保用户已同意 `scope` 查询参数中指示的权限。如果用户并不同意任何这些权限，且管理员此前未代表组织内的所有用户表示同意，Azure AD 将提示用户同意所需权限。
 
-下面是为 Microsoft 帐户用户呈现的同意对话框示例。
+下面是为 Microsoft 帐户用户呈现的同意对话框屏幕截图。
 
-![Microsoft 帐户的同意对话框](./images/v2-consumer-consent.png)
+:::image type="content" source="./images/auth-v2/v2-consumer-consent.png" alt-text="Microsoft 帐户的同意对话框。" border="true":::
 
 > **试一试** 如果你拥有 Microsoft 帐户或 Azure AD 工作或学校帐户，可以通过点击以下链接进行尝试：登录后，浏览器应被重定向到地址栏中有 `code` 的 `https://localhost/myapp/`。
 >
@@ -97,10 +97,11 @@ code=M0ab92efe-b6fd-df08-87dc-2c6500a7f84d
 &state=12345
 ```
 
-| 参数 | 说明                                                                                                                                                                                                                        |
-|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| code      | 应用请求的 authorization_code。应用可以使用授权代码请求目标资源的访问令牌。Authorization_codes 有效期非常短暂，通常它们会在 10 分钟后失效。 |
-| 状态     | 如果请求中包含状态参数，则应在响应中显示相同的值。应用应确认请求和响应中的状态值相同。                                              |
+| 参数     | 说明                                                                                                                                                                                                                                                                                                                   |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| code          | 应用请求的 authorization_code。应用可以使用授权代码请求目标资源的访问令牌。Authorization_codes 有效期非常短暂，通常它们会在 10 分钟后失效。                                                                                              |
+| state         | 如果请求中包含状态参数，则应在响应中显示相同的值。应用应确认请求和响应中的状态值相同。此检查有助于检测针对客户端的[跨网站请求伪造 (CSRF) 攻击](https://tools.ietf.org/html/rfc6749#section-10.12)。 |
+| session_state | 标识当前用户会话的唯一值。 此值是一个 GUID，但应被视为不透明的值，无需检查即可通过该值。                                                                                                                                                                |
 
 ## <a name="3-get-a-token"></a>3.获取令牌
 
@@ -125,13 +126,13 @@ client_id=11111111-1111-1111-1111-111111111111
 
 | 参数     | 必需              | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 租户        | 必需              | 请求路径中的 `{tenant}` 值可用于控制登录应用程序的用户。允许的值为适用于 Microsoft 帐户和工作或学校帐户的 `common`、仅适用于工作或学校帐户的 `organizations`、仅适用于 Microsoft 帐户的 `consumers` 以及租户标识符（如租户 ID 或域名）。有关详细信息，请参阅[协议基础](/azure/active-directory/develop/active-directory-v2-protocols#endpoints)。 |
-| client_id     | 必需              | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                                                                                                                                                                                                                  |
-| grant_type    | 必需              | 对于授权代码流必须为 `authorization_code`。                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| 范围         | 必需              | 用空格分隔的范围列表。在此图例中请求的范围必须等于在首个（授权）图例中请求的范围或其子集。如果此请求中指定的范围跨越多个资源服务器，则 v2.0 将为首个范围中指定的资源返回令牌。                                                                                                                                                                      |
-| code          | 必需              | 你在流程的第一个图例中获得的 authorization_code。                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| redirect_uri  | 必需              | 用于获取 authorization_code 的相同的 redirect_uri 值。                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| client_secret | Web 应用需要 | 你在应用注册门户中为应用创建的应用程序密码。它不可在本机应用中使用，因为设备无法可靠地存储 client_secrets。Web 应用和 Web API 需要此值，它们能够将 client_secret 安全地存储在服务器端上。                                                                                                                                                                                     |
+| 租户        | 必需              | 请求路径中的 `{tenant}` 值可用于控制登录应用程序的用户。 允许的值是： <br><li>Microsoft 帐户和工作或学校帐户的 `common` <li>仅适用于工作或学校帐户的 `organizations` <li>仅适用于 Microsoft 帐户的 `consumers` <li>租户标识符，如租户 ID 或域名。 <br/>有关详细信息，请参阅[协议基础](/azure/active-directory/develop/active-directory-v2-protocols#endpoints)。 |
+| client_id     | 必需              | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                                                                                                                                                                                                               |
+| grant_type    | 必需              | 对于授权代码流必须为 `authorization_code`。                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| 范围         | 必需              | 用空格分隔的范围列表。在此图例中应用请求的范围必须等于在首个（授权）图例中请求的范围或其子集。如果此请求中指定的范围跨越多个资源服务器，则 v2.0 将为首个范围中指定的资源返回令牌。                                                                                                                                                                   |
+| code          | 必需              | 你在流程的第一个图例中获得的 authorization_code。                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| redirect_uri  | 必需              | 用于获取 authorization_code 的相同的 redirect_uri 值。                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| client_secret | Web 应用需要 | 你在应用注册门户中为应用创建的客户端密码。它不可在本机应用中使用，因为设备无法可靠地存储 client_secrets。Web 应用和 Web API 需要此值，它们能够将 client_secret 安全地存储在服务器端上。                                                                                                                                                                                  |
 
 ### <a name="token-response"></a>令牌响应
 
@@ -149,11 +150,11 @@ client_id=11111111-1111-1111-1111-111111111111
 
 | 参数     | 说明                                                                                                                                                                                                                                                                                                                                                                                  |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| token_type    | 表示令牌类型值。Azure AD 唯一支持的类型是 Bearer。                                                                                                                                                                                                                                                                                                              |
-| 范围         | 此 access_token 适用的空格分隔的 Microsoft Graph 权限列表。                                                                                                                                                                                                                                                                                                |
-| expires_in    | 访问令牌的有效期是多久（以秒为单位）。                                                                                                                                                                                                                                                                                                                                             |
-| access_token  | 请求的访问令牌。你的应用可以使用此令牌调用 Microsoft Graph。                                                                                                                                                                                                                                                                                                             |
-| refresh_token | OAuth 2.0 刷新令牌。 在当前访问令牌到期后，应用程序可以使用此令牌获取其他访问令牌。  刷新令牌有效期较长，可用于长时间保留对资源的访问权限。  有关详细信息，请参阅 [v2.0 令牌参考](/azure/active-directory/develop/active-directory-v2-tokens)。 |
+| token_type    | 表示令牌类型值。Azure AD 唯一支持的类型是 Bearer。                                                                                                                                                                                                                                                                                                           |
+| 范围         | 此 access_token 适用的空格分隔的 Microsoft Graph 权限列表。                                                                                                                                                                                                                                                                                             |
+| expires_in    | 访问令牌的有效期是多久（以秒为单位）。                                                                                                                                                                                                                                                                                                                                          |
+| access_token  | 请求的访问令牌。你的应用可以使用此令牌调用 Microsoft Graph。                                                                                                                                                                                                                                                                                                          |
+| refresh_token | OAuth 2.0 刷新令牌。 在当前访问令牌到期后，应用程序可以使用此令牌获取其他访问令牌。 刷新令牌有效期较长，可用于长时间保留对资源的访问权限。 有关详细信息，请参阅 [v2.0 令牌参考](/azure/active-directory/develop/active-directory-v2-tokens)。 |
 
 ## <a name="4-use-the-access-token-to-call-microsoft-graph"></a>4. 使用访问令牌调用 Microsoft Graph
 
@@ -198,7 +199,7 @@ Content-Length: 407
 
 ## <a name="5-use-the-refresh-token-to-get-a-new-access-token"></a>5.使用此刷新令牌获取新的访问令牌。
 
-访问令牌有效期非常短暂，在过期后继续访问资源，必须进行刷新。你可以通过向 `/token` 终结点提交其他 `POST` 请求执行此操作，这时提交的是 `refresh_token` 而非 `code`。
+访问令牌有效期非常短暂，在过期后继续访问资源，必须进行刷新。你可以通过向 `POST` 终结点提交其他 `/token` 请求执行此操作，这时提交的是 `refresh_token` 而非 `code`。
 
 ### <a name="request"></a>请求
 
@@ -219,12 +220,12 @@ client_id=11111111-1111-1111-1111-111111111111
 
 | 参数     | 必需              | 说明                                                                                                                                                                                                                                                                                                         |
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| client_id     | 必需              | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                               |
-| grant_type    | 必需              | 必须是 `refresh_token`。                                                                                                                                                                                                                                                                                            |
-| 范围         | 必需              | 用空格分隔的权限列表（范围）。请求的权限必须等于初始 authorization_code 请求中所请求的权限或其子集。                                                                                                                               |
-| refresh_token | 必需              | 令牌请求期间获得的 refresh_token。                                                                                                                                                                                                                                                       |
-| redirect_uri  | 必需              | 用于获取 authorization_code 的相同的 redirect_uri 值。                                                                                                                                                                                                                                        |
-| client_secret | Web 应用需要 | 你在应用注册门户中为应用创建的应用程序密码。它不可在本机应用中使用，因为设备无法可靠地存储 client_secrets。Web 应用和 Web API 需要此值，它们能够将 client_secret 安全地存储在服务器端上。 |
+| client_id     | 必需              | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                             |
+| grant_type    | 必需              | 必须是 `refresh_token`。                                                                                                                                                                                                                                                                                          |
+| 范围         | 必需              | 用空格分隔的权限列表（范围）。应用请求的权限必须等于初始 authorization_code 请求中所请求的权限或其子集。                                                                                                                             |
+| refresh_token | 必需              | 令牌请求期间获得的 refresh_token。                                                                                                                                                                                                                                                     |
+| redirect_uri  | 必需              | 用于获取 authorization_code 的相同的 redirect_uri 值。                                                                                                                                                                                                                                      |
+| client_secret | Web 应用需要 | 你在应用注册门户中为应用创建的应用程序密码。不要本机应用中使用密码，因为设备无法可靠地存储 client_secrets。Web 应用和 Web API 需要此值，它们能够将 client_secret 安全地存储在服务器端上。 |
 
 ### <a name="response"></a>响应
 
@@ -241,11 +242,11 @@ client_id=11111111-1111-1111-1111-111111111111
 ```
 | 参数     | 说明                                                                                                                                                                        |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| access_token  | 请求的访问令牌。应用可使用此令牌调用 Microsoft Graph。                                                                                                |
+| access_token  | 请求的访问令牌。应用可使用此令牌调用 Microsoft Graph。                                                                                              |
 | token_type    | 表示令牌类型值。Azure AD 唯一支持的类型是 Bearer                                                                                                     |
-| expires_in    | 访问令牌的有效期是多久（以秒为单位）。                                                                                                                                   |
-| 范围         | access_token 适用的权限（范围）。                                                                                                                       |
-| refresh_token | 新的 OAuth 2.0 刷新令牌。应当使用刚获得的刷新令牌替换旧的刷新令牌，尽可能确保你的刷新令牌仍旧有效。 |
+| expires_in    | 访问令牌的有效期是多久（以秒为单位）。                                                                                                                                 |
+| 范围         | access_token 适用的权限（范围）。                                                                                                                     |
+| refresh_token | 新的 OAuth 2.0 刷新令牌。使用刚获得的刷新令牌替换旧的刷新令牌，尽可能确保你的刷新令牌仍旧有效。 |
 
 ## <a name="supported-app-scenarios-and-additional-resources"></a>受支持的应用场景和其他资源
 
@@ -264,7 +265,7 @@ client_id=11111111-1111-1111-1111-111111111111
 
 - 有关指向不同类型应用的协议文档和入门文章的链接，请参阅 [Microsoft 标识平台终结点文档](/azure/active-directory/develop/active-directory-appmodel-v2-overview)。
 - 要详细了解受支持的应用程序类型和身份验证流程，请参阅 [v2.0 应用类型](/azure/active-directory/develop/v2-app-types)。
-- 要详细了解为 Microsoft 标识平台推荐的 Microsoft 和第三方身份验证库及服务器中间件，请参阅 [Azure Active Directory v2.0 身份验证库](/azure/active-directory/develop/active-directory-v2-libraries)。
+- 要详细了解为 Microsoft 标识平台推荐的身份验证库及服务器中间件，请参阅 [Azure Active Directory v2.0 身份验证库](/azure/active-directory/develop/active-directory-v2-libraries)。
 
 ## <a name="endpoint-considerations"></a>终结点注意事项
 
@@ -274,14 +275,14 @@ Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终
 - 如果应用为多租户应用，则必须在 [Azure 门户](https://portal.azure.com)中通过显式方式将其配置为多租户。
 - 应用需要的所有权限必须由开发人员进行配置。Azure AD 终结点不支持动态（增量）同意。
 - Azure AD 终结点使用授权中的 `resource` 参数和令牌请求，指定其需要权限的资源（如 Microsoft Graph）。终结点不支持 `scope` 参数。
-- Azure AD 终结点不会公开管理员同意的特定终结点。反之，应用会使用授权请求中的 `prompt=admin_consent` 参数，为组织获取管理员同意。有关详细信息，请参阅 [将应用程序与 Azure Active Directory 相集成](/azure/active-directory/develop/active-directory-integrating-applications)中的 **在运行时引发 Azure AD 同意框架**。
+- Azure AD 终结点不会公开管理员同意的特定终结点。反之，应用会使用授权请求中的 `prompt=admin_consent` 参数，为组织获取管理员同意。有关详细信息，请参阅 [将应用程序与 Azure Active Directory 相集成中](/azure/active-directory/develop/active-directory-integrating-applications)的 **在运行时引发 Azure AD 同意框架**。
 
-有关代表用户从 Azure AD 终结点获取对 Microsoft Graph 访问的详细信息：
+有关代表用户获取对 Microsoft Graph 访问的详细信息，请参阅以下资源。
 
-- 要了解如何将 Microsoft 标识平台终结点与不同类型的应用结合使用，请参阅 [Microsoft 标识平台开发人员文档](/azure/active-directory/develop/active-directory-developers-guide)中的 **开始使用** 链接。 该文档包含众多链接，可通过它们查看 Microsoft 标识平台终结点支持的不同类型的应用的概述主题、快速入门、教程、代码示例和协议文档。
+- 要了解如何将 Microsoft 标识平台与不同类型的应用结合使用，请参阅 [Microsoft 标识平台文档](/azure/active-directory/develop/active-directory-developers-guide)中的 **开始使用** 链接。
 - 要了解可与 Microsoft 标识平台终结点结合使用的 Microsoft 身份验证库 (MSAL) 和服务器中间件，请参阅 [Microsoft 身份验证库](/azure/active-directory/develop/msal-overview)。
 
 ## <a name="see-also"></a>另请参阅
 
-- 有关 Azure 应用服务上托管的 Web 应用调用 Microsoft Graph 作为用户的示例，请参阅[教程：从安全应用访问作为用户的 Microsoft Graph](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user)。 了解如何向 Web 应用授予委派权限、配置应用服务以获取访问令牌，以及如何从 Web 应用为登录用户调用 Microsoft Graph。
+- [了解如何创建代表用户调用 Microsoft Graph 的 Web 应用](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user)。
 - 有关使用 Microsoft 标识平台保护不同应用程序类型的示例，请查看 [Microsoft 标识平台代码示例（v2.0 终结点）](/azure/active-directory/develop/sample-v2-code)。

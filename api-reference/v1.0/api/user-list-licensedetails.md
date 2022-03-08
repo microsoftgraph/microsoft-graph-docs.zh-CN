@@ -1,22 +1,22 @@
 ---
 title: List licenseDetails
 description: 检索 licenseDetails 对象的列表。
-author: jpettere
+author: cindycrane
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2c0b0d81afd190fc1ceddf4c2cd4be8f46bd40bf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2968fa9baa1602eda0cee776a3428aaa377dd75c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121581"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334420"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
 
 命名空间：microsoft.graph
 
-检索企业用户的 **licenseDetails** 对象列表。
+检索企业 **用户的 licenseDetails** 对象列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,19 +34,19 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` 查询参数。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持查询 `$select` 参数。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer &lt; code&gt;|
+| Authorization  | Bearer &lt;code&gt;|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [licenseDetails](../resources/licensedetails.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [licenseDetails](../resources/licensedetails.md) 对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 

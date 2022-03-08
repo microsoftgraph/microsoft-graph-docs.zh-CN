@@ -325,16 +325,26 @@ items:
               - name: 提醒视图
                 href: api/user-reminderview.md
           - name: 联系人
-            href: resources/contact.md
             items:
-              - name: 创建
-                href: api/user-post-contacts.md
-              - name: 创建联系人文件夹
-                href: api/user-post-contactfolders.md
-              - name: 列表
-                href: api/user-list-contacts.md
-              - name: 列出联系人文件夹
-                href: api/user-list-contactfolders.md
+              - name: 联系人
+                href: resources/contact.md
+                items:
+                  - name: 创建联系人
+                    href: api/user-post-contacts.md
+                  - name: 创建联系人文件夹
+                    href: api/user-post-contactfolders.md
+                  - name: 列出联系人
+                    href: api/user-list-contacts.md
+                  - name: 列出联系人文件夹
+                    href: api/user-list-contactfolders.md
+              - name: '联系人合并建议 (预览) '
+                items:
+                  - name: 联系人合并建议
+                    href: resources/contactmergesuggestions.md
+                  - name: 获取
+                    href: api/contactmergesuggestions-get.md
+                  - name: 更新
+                    href: api/contactmergesuggestions-update.md
           - name: 委派权限授予
             items:
               - name: 列出委派的权限授予
@@ -422,7 +432,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置见解
+                  - name: 设置人员见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -516,7 +526,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置见解
+              - name: 设置人员见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -916,8 +926,10 @@ items:
                         href: api/application-list-extensionproperty.md
                       - name: 创建
                         href: api/application-post-extensionproperty.md
+                      - name: 获取
+                        href: api/extensionproperty-get.md
                       - name: 删除
-                        href: api/application-delete-extensionproperty.md
+                        href: api/extensionproperty-delete.md
               - name: '联合身份凭据 (预览) '
                 items:
                   - name: 概述
@@ -1848,11 +1860,11 @@ items:
         items:
           - name: 概述
             href: resources/project-rome-overview.md
-          - name: '列出已 (的用户) '
+          - name: '列出已弃 (的用户) '
             href: api/user-list-devices.md
-          - name: '发送设备 (已弃) '
+          - name: '发送设备命令 (已弃) '
             href: api/send-device-command.md
-          - name: '获取已弃 (的设备命令) '
+          - name: '获取设备命令状态 (已弃) '
             href: api/get-device-command-status.md
           - name: 活动源
             href: resources/activity-feed-api-overview.md
@@ -2096,7 +2108,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -10060,9 +10072,13 @@ items:
                     href: api/manageddevice-reprovisioncloudpc.md
                   - name: 批量重新设置远程操作
                     href: api/manageddevice-bulkreprovisioncloudpc.md
-                  - name: 调整远程操作大小
+                  - name: 远程调整大小操作
                     href: api/manageddevice-resizecloudpc.md
-                  - name: 疑难解答
+                  - name: 远程还原操作
+                    href: api/manageddevice-restorecloudpc.md
+                  - name: 批量还原远程操作
+                    href: api/manageddevice-bulkrestorecloudpc.md
+                  - name: 排除故障
                     href: api/cloudpc-troubleshoot.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
@@ -10268,6 +10284,13 @@ items:
                 items:
                   - name: 列出聚合的策略合规性
                     href: api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md
+              - name: 审核事件
+                href: resources/managedtenants-auditevent.md
+                items:
+                  - name: 列表
+                    href: api/managedtenants-managedtenant-list-auditevents.md
+                  - name: 获取
+                    href: api/managedtenants-auditevent-get.md
               - name: 云电脑连接
                 href: resources/managedtenants-cloudpcconnection.md
                 items:
@@ -11249,15 +11272,15 @@ items:
               - name: 目录设置
                 href: resources/directorysetting.md
                 items:
-                  - name: 创建设置
-                    href: api/directorysetting-post-settings.md
-                  - name: 获取设置
+                  - name: 创建
+                    href: api/group-post-settings.md
+                  - name: 获取
                     href: api/directorysetting-get.md
-                  - name: 列出设置
-                    href: api/directorysetting-list.md
-                  - name: 更新设置
+                  - name: 列出
+                    href: api/group-list-settings.md
+                  - name: 更新
                     href: api/directorysetting-update.md
-                  - name: 删除设置
+                  - name: 删除
                     href: api/directorysetting-delete.md
               - name: 目录设置模板
                 href: resources/directorysettingtemplate.md
@@ -11412,6 +11435,8 @@ items:
                     items:
                       - name: 列出角色分配
                         href: api/rbacapplication-list-roleassignments.md
+                      - name: 列出可传递的角色分配
+                        href: api/rbacapplication-list-transitiveroleassignments.md
                       - name: 创建角色分配
                         href: api/rbacapplication-post-roleassignments.md
                       - name: 获取角色分配
@@ -11520,6 +11545,20 @@ items:
                         href: api/unifiedRoleManagementPolicyRule-get.md
                       - name: 更新
                         href: api/unifiedRoleManagementPolicyRule-update.md
+                  - name: 资源命名空间
+                    href: resources/unifiedrbacresourcenamespace.md
+                    items:
+                      - name: 列表
+                        href: api/rbacapplicationmultiple-list-resourcenamespaces.md
+                      - name: 获取
+                        href: api/unifiedrbacresourcenamespace-get.md
+                      - name: 资源操作
+                        href: resources/unifiedrbacresourceaction.md
+                        items:
+                          - name: 列表
+                            href: api/unifiedrbacresourcenamespace-list-resourceactions.md
+                          - name: 获取
+                            href: api/unifiedrbacresourceaction-get.md
           - name: 身份和登录
             items:
               - name: 身份验证方法
@@ -11904,8 +11943,9 @@ items:
                       - name: 删除
                         href: api/organizationalbrandinglocalization-delete.md
               - name: 策略
-                href: resources/policy-overview.md
                 items:
+                  - name: 概述
+                    href: resources/policy-overview.md
                   - name: 基于活动的超时策略
                     href: resources/activitybasedtimeoutpolicy.md
                     items:
@@ -12436,6 +12476,7 @@ items:
                       - name: 停止
                         href: api/accessreviewstage-stop.md
                   - name: 访问评审实例决策项
+                    displayName: access review decisions
                     href: resources/accessreviewinstancedecisionitem.md
                     items:
                       - name: 列出实例中的决策
@@ -12474,6 +12515,7 @@ items:
                           - name: 列表
                             href: api/accessreviewhistorydefinition-list-instances.md
                           - name: 生成下载 URI
+                            displayName: Downloadable access review history report
                             href: api/accessreviewhistoryinstance-generatedownloaduri.md
               - name: '已弃 (的访问) '
                 href: resources/accessreviews-root.md
@@ -12726,6 +12768,19 @@ items:
                         href: api/connectedorganization-delete-externalsponsors.md
                       - name: 删除内部发起人
                         href: api/connectedorganization-delete-internalsponsors.md
+                  - name: 自定义访问包工作流扩展
+                    href: resources/customAccessPackageWorkflowExtension.md
+                    items:
+                      - name: 列出
+                        href: api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md
+                      - name: 创建
+                        href: api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md
+                      - name: 获取
+                        href: api/customaccesspackageworkflowextension-get.md
+                      - name: 更新
+                        href: api/customaccesspackageworkflowextension-update.md
+                      - name: 删除
+                        href: api/customaccesspackageworkflowextension-delete.md
                   - name: 权利管理设置
                     href: resources/entitlementmanagementsettings.md
                     items:
@@ -13154,7 +13209,7 @@ items:
                 href: resources/person.md
               - name: 列出人员
                 href: api/user-list-people.md
-              - name: 设置见解
+              - name: 设置人员见解
                 items:
                   - name: Insights设置
                     href: resources/insightssettings.md
@@ -13486,7 +13541,7 @@ items:
                         href: api/organizationsettings-list-iteminsights.md
                       - name: 更新
                         href: api/insightssettings-update.md
-                  - name: 设置见解
+                  - name: 设置人员见解
                     items:
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -13589,6 +13644,14 @@ items:
                 href: api/contactfolder-post-contacts.md
               - name: 获取联系人 Delta
                 href: api/contact-delta.md
+          - name: '联系人合并建议 (预览) '
+            items:
+              - name: 联系人合并建议
+                href: resources/contactmergesuggestions.md
+              - name: 获取
+                href: api/contactmergesuggestions-get.md
+              - name: 更新
+                href: api/contactmergesuggestions-update.md
           - name: 扩展属性
             items:
               - name: 概述
@@ -13921,7 +13984,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: 获取活动计数
                     href: api/reportroot-getyammergroupsactivitycounts.md
-          - name: Microsoft Defender for Office 365 安全报告
+          - name: Microsoft Defender for Office 365安全报告
             items:
               - name: 攻击模拟报告
                 displayname: Attack simulation and training
@@ -13957,6 +14020,49 @@ items:
                 href: resources/searchresponse.md
               - name: 查询数据
                 href: api/search-query.md
+          - name: 答案
+            items:
+              - name: 概述
+                href: resources/search-api-answers-overview.md
+              - name: 首字母缩略词
+                href: resources/search-acronym.md
+                items:
+                  - name: 列出首字母缩略词
+                    href: api/search-searchentity-list-acronyms.md
+                  - name: 创建首字母缩略词
+                    href: api/search-searchentity-post-acronyms.md
+                  - name: 获取首字母缩略词
+                    href: api/search-acronym-get.md
+                  - name: 更新首字母缩略词
+                    href: api/search-acronym-update.md
+                  - name: 删除首字母缩略词
+                    href: api/search-acronym-delete.md
+              - name: Bookmark
+                href: resources/search-bookmark.md
+                items:
+                  - name: 列出书签
+                    href: api/search-searchentity-list-bookmarks.md
+                  - name: 创建书签
+                    href: api/search-searchentity-post-bookmarks.md
+                  - name: 获取书签
+                    href: api/search-bookmark-get.md
+                  - name: 更新书签
+                    href: api/search-bookmark-update.md
+                  - name: 删除书签
+                    href: api/search-bookmark-delete.md
+              - name: QnA
+                href: resources/search-qna.md
+                items:
+                  - name: 列出 qnas
+                    href: api/search-searchentity-list-qnas.md
+                  - name: 创建 qna
+                    href: api/search-searchentity-post-qnas.md
+                  - name: 获取 qna
+                    href: api/search-qna-get.md
+                  - name: 更新 qna
+                    href: api/search-qna-update.md
+                  - name: 删除 qna
+                    href: api/search-qna-delete.md
           - name: 索引
             items:
               - name: 概述
@@ -14054,7 +14160,7 @@ items:
                     href: api/usersimulationdetails-list.md
                   - name: 获取模拟概述
                     href: api/simulationreportoverview-get.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -15213,7 +15319,7 @@ items:
                     href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
-              - name: 'Outlook (任务) '
+              - name: 'Outlook任务 (已弃) '
                 items:
                   - name: Outlook 任务
                     href: resources/outlooktask.md

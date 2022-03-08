@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 554e16245616605a86beb797adfca0370e948e49
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: ad4cb5d1031c3c8f30e014ad99de01255e737937
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519675"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334329"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "62519675"
 Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 频道表示团队内部的某个主题，因此是讨论的逻辑隔离。
 
-每个团队与一个[组](../resources/group.md)相关联。
+每个团队都与 [Microsoft 365组](../resources/group.md)关联。
 该组具有与团队相同的 ID，例如 `/groups/{id}/team` 与 `/teams/{id}` 相同。
 有关使用组和团队内部成员的详细信息，请参阅[使用 Microsoft Graph REST API 来处理 Microsoft Teams](teams-api-overview.md)。
 
@@ -30,7 +30,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[创建团队](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | 从头开始创建团队。 |
-|[从组创建团队](../api/team-put-teams.md) | [team](team.md) | 创建新的团队，或向现有组添加团队。|
+|[从组创建团队](../api/team-put-teams.md) | [team](team.md) | 创建新团队，或将团队添加到现有Microsoft 365组。|
 |[获取团队](../api/team-get.md) | [team](team.md) | 检索指定团队的属性和关系。|
 |[更新团队](../api/team-update.md) | [team](team.md) |更新指定团队的属性。 |
 |[删除团队](../api/group-delete.md) | 无 |删除团队及其关联的组。 |
@@ -89,7 +89,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 | 
 |[primaryChannel](../api/team-get-primarychannel.md)|[频道](channel.md)| 团队的常规频道。 | 
 |schedule|[日程安排](schedule.md)| 此团队的排班安排。|
-|template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 请参阅[可用模板](/MicrosoftTeams/get-started-with-teams-templates)。 |
+|template|[teamsTemplate](teamstemplate.md)| 从中创建此团队的模板。请参阅[可用模板](/MicrosoftTeams/get-started-with-teams-templates)。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
