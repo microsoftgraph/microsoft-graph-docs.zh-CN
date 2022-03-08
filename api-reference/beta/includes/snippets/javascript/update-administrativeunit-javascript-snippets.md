@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 983c7344e4a1b4dc3f5946a512e4fac78a4dcb70baff6cdd12e107bc3043d4fa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8cd9ba8d19f57148ab38f21d569f8ccb92bc3da1
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56902552"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351168"
 ---
 ```javascript
 
@@ -16,12 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const administrativeUnit = {
-  displayName: 'displayName-value',
-  description: 'description-value',
-  visibility: 'visibility-value'
+    displayName: 'Greater Seattle District Technical Schools'
 };
 
-await client.api('/administrativeUnits/{id}')
+await client.api('/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8')
     .version('beta')
     .update(administrativeUnit);
 

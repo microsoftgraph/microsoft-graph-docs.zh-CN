@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 00119ca29af1bd54a9d985c1abea4b22ce16d34db819cae57fedeaf3cec38e52
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 87607b84bb971a09df209f12dfbcff1ea0ae939e
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163766"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63339999"
 ---
 ```csharp
 
@@ -17,17 +17,16 @@ var addLicenses = new List<AssignedLicense>()
     {
         DisabledPlans = new List<Guid>()
         {
-            Guid.Parse("11b0131d-43c8-4bbb-b2c8-e80f9a50834a")
+            Guid.Parse("8a256a2b-b617-496d-b51b-e76466e88db0")
         },
-        SkuId = Guid.Parse("skuId-value-1")
+        SkuId = Guid.Parse("84a661c4-e949-4bd2-a560-ed7766fcaf2b")
     },
     new AssignedLicense
     {
         DisabledPlans = new List<Guid>()
         {
-            Guid.Parse("a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235")
         },
-        SkuId = Guid.Parse("skuId-value-2")
+        SkuId = Guid.Parse("f30db892-07e9-47e9-837c-80727f46fd3d")
     }
 };
 

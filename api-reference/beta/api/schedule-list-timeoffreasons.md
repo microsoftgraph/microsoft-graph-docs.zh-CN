@@ -1,23 +1,23 @@
 ---
 title: 列出 timeOffReasons
 description: 获取计划中的 timeOffReasons 列表。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7e5625a1739eba988e53d9677636bb28876d5485
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5d31936d88855e27501eb3120163778f001bea53
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111941"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337542"
 ---
 # <a name="list-timeoffreasons"></a>列出 timeOffReasons
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-获取计划中的 [timeOffReasons](../resources/timeoffreason.md) [列表](../resources/schedule.md)。
+获取计划 [中的 timeOffReasons](../resources/timeoffreason.md) [列表](../resources/schedule.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ GET /teams/{teamId}/schedule/timeOffReasons
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [timeOffReason](../resources/timeoffreason.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [timeOffReason](../resources/timeoffreason.md) 对象集合。
 
 ## <a name="example"></a>示例
 

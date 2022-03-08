@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4c8c76184f6c1b3cb67ad6413570cf2d4a41ef8e9f7e2e20c3e011bfa6935996
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6fef03e57ae4d8cbb18a495f09961d9603d132ad
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163763"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63339992"
 ---
 ```objc
 
@@ -21,15 +21,14 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 NSMutableArray *addLicensesList = [[NSMutableArray alloc] init];
 MSGraphAssignedLicense *addLicenses = [[MSGraphAssignedLicense alloc] init];
 NSMutableArray *disabledPlansList = [[NSMutableArray alloc] init];
-[disabledPlansList addObject: @"11b0131d-43c8-4bbb-b2c8-e80f9a50834a"];
+[disabledPlansList addObject: @"8a256a2b-b617-496d-b51b-e76466e88db0"];
 [addLicenses setDisabledPlans:disabledPlansList];
-[addLicenses setSkuId:@"skuId-value-1"];
+[addLicenses setSkuId:@"84a661c4-e949-4bd2-a560-ed7766fcaf2b"];
 [addLicensesList addObject: addLicenses];
 MSGraphAssignedLicense *addLicenses = [[MSGraphAssignedLicense alloc] init];
 NSMutableArray *disabledPlansList = [[NSMutableArray alloc] init];
-[disabledPlansList addObject: @"a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235"];
 [addLicenses setDisabledPlans:disabledPlansList];
-[addLicenses setSkuId:@"skuId-value-2"];
+[addLicenses setSkuId:@"f30db892-07e9-47e9-837c-80727f46fd3d"];
 [addLicensesList addObject: addLicenses];
 payloadDictionary[@"addLicenses"] = addLicensesList;
 

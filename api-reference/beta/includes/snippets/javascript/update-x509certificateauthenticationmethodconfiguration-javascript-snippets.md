@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1c36adab131c7bf5c8106408ff5230af823e6cc7
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 5a2e190ccc5bbfce4bcfa42c1d4df81f6b33160b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519380"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351219"
 ---
 ```javascript
 
@@ -18,27 +18,36 @@ const client = Client.init(options);
 const authenticationMethodConfiguration = {
     '@odata.type': '#microsoft.graph.x509CertificateAuthenticationMethodConfiguration',
     id: 'X509Certificate',
-    state: 'disabled',
-    certificateUserBindings: [{
+    state: 'enabled',
+    certificateUserBindings: [
+        {
             x509CertificateField: 'PrincipalName',
             userProperty: 'onPremisesUserPrincipalName',
             priority: 1
-        },
-        {
-            x509CertificateField: 'RFC822Name',
-            userProperty: 'userPrincipalName',
-            priority: 2
         }
     ],
     authenticationModeConfiguration: {
-        x509CertificateAuthenticationDefaultMode: 'x509CertificateSingleFactor',
-        rules: []
+        x509CertificateAuthenticationDefaultMode: 'x509CertificateMultiFactor',
+        rules: [
+            {
+                x509CertificateRuleType: 'issuerSubject',
+                identifier: 'CN=ContosoCA,DC=Contoso,DC=org ',
+                x509CertificateAuthenticationMode: 'x509CertificateMultiFactor'
+            },
+            {
+                x509CertificateRuleType: 'policyOID',
+                identifier: '1.2.3.4',
+                x509CertificateAuthenticationMode: 'x509CertificateMultiFactor'
+            }
+        ]
     },
-    includeTargets: [{
-        targetType: 'group',
-        id: 'all_users',
-        isRegistrationRequired: false
-    }]
+    includeTargets: [
+        {
+            targetType: 'group',
+            id: 'all_users',
+            isRegistrationRequired: false
+        }
+    ]
 };
 
 await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate')

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 37f7b30df22347878941fc24a746d3145fd9def3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6f4d0038039f711bca5a7754fced2c516276b298
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114399"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332635"
 ---
 # <a name="list-extensionproperties"></a>列出 extensionProperties
 
@@ -18,7 +18,7 @@ ms.locfileid: "62114399"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索应用程序上的 [extensionProperty](../resources/extensionproperty.md) 对象列表。
+检索应用程序 [上的 extensionProperty](../resources/extensionproperty.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "62114399"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All|
 |委派（个人 Microsoft 帐户） | Application.Read.All， Application.ReadWrite.All    |
 |应用程序 | Application.Read.All、Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -54,7 +54,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [extensionProperty](../resources/extensionproperty.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [extensionProperty](../resources/extensionproperty.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -69,7 +69,7 @@ GET /applications/{id}/extensionProperties
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/{id}/extensionProperties
+GET https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-extensionproperties-csharp-snippets.md)]
@@ -114,16 +114,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('fd918e4b-c821-4efb-b50a-5eddd23afc6f')/extensionProperties",
     "value": [
         {
-            "id": "a2c459db-f5dc-4328-ae9b-118e88d04d19",
+            "id": "da38c7b1-133e-4a79-abcd-e2fd586ce621",
             "deletedDateTime": null,
-            "appDisplayName": "Display name",
-            "name": "extension_b3efaf8f68a44275abcff28ef86b2ee3_extensionName",
+            "appDisplayName": "",
+            "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
             "dataType": "String",
             "isSyncedFromOnPremises": false,
             "targetObjects": [
-                "Application"
+                "User"
+            ]
+        },
+        {
+            "id": "1f0f15e3-925d-40f0-8fc8-9d3ad135bce0",
+            "deletedDateTime": null,
+            "appDisplayName": "",
+            "name": "extension_25883231668a43a780b25685c3f874bc_cpiminternal_useAccountEnabledForPhone",
+            "dataType": "String",
+            "isSyncedFromOnPremises": false,
+            "targetObjects": [
+                "User"
             ]
         }
     ]

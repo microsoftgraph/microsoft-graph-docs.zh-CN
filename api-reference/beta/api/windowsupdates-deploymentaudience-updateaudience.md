@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: f1d68bab43f630e32426d2f89df5e63f7b41f624
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: c5d1483bf7e30f7b0bee6d2b499234020ee169e7
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348143"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334189"
 ---
 # <a name="deploymentaudience-updateaudience"></a>deploymentAudience：updateAudience
 
@@ -90,25 +90,25 @@ Content-Type: application/json
 {
   "addMembers": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "String (identifier)"
     }
   ],
   "removeMembers": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "String (identifier)"
     }
   ],
   "addExclusions": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "String (identifier)"
     }
   ],
   "removeExclusions": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "String (identifier)"
     }
   ]

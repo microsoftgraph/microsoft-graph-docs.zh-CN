@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 20b05fea6ed20a11ac236f3ad9cbd560c1250d87
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 0be72cacf043727e0a08a6524a0685ec99bce47a
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894668"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336947"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -1071,7 +1071,7 @@ ms.locfileid: "62894668"
 
 ### <a name="connectiondirection-values"></a>connectionDirection 值
 
-入站/出站 (网络连接方向的) 。
+入站/出站 (网络连接方向的枚举) 。
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -1195,7 +1195,7 @@ ms.locfileid: "62894668"
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
-根据组定义， (用户帐户) 类型的Windows值。
+根据组定义， (用户帐户) 类型的) 值Windows值。
 
 |Member|成员|说明|
 |:---|:---|:---|
@@ -1410,7 +1410,7 @@ ms.locfileid: "62894668"
 
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| None | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
+| 无 | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
 | Override | 1 | 发件人已覆盖邮件裁定并发送了该邮件。|
 | ReportFalsePositive | 2 | 发件人将邮件裁定报告给管理员为误报。|
 
@@ -1418,7 +1418,7 @@ ms.locfileid: "62894668"
 
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| None | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
+| 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
 | AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式替代`AllowOverrideWithoutJustification``AllowOverrideWithJustification`块。 报告违反误报会自动覆盖阻止并发送邮件。 |
 | AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification`。 |
 | AllowOverrideWithJustification | 4 |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification`。|
@@ -1700,8 +1700,8 @@ ms.locfileid: "62894668"
 
 |Member|
 |:---|
-|team|
-|channel|
+|团队|
+|频道|
 |聊天|
 |unknownFutureValue|
 
@@ -1912,4 +1912,25 @@ ms.locfileid: "62894668"
 |priceVaries|
 |callUs|
 |notSet|
+|unknownFutureValue|
+
+### <a name="accessreviewhistorystatus-values"></a>accessReviewHistoryStatus 值
+
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
+### <a name="accessreviewhistorydecisionfilter-values"></a>accessReviewHistoryDecisionFilter 值
+
+| Member|
+|:-----------------|
+|approve|
+|deny|
+|notReviewed|
+|dontKnow|
+|notNotified|
 |unknownFutureValue|

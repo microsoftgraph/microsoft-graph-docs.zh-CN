@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c7f426dd1fbf531836552f8c57bf5ed044c6704126d21f89f0d6cdb3ab4158ae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: af220fecb091611a0c2ba800a76ff512839ba6c6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57274156"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351208"
 ---
 ```java
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 OnPremisesPublishingProfile onPremisesPublishingProfile = graphClient.onPremisesPublishingProfiles("provisioning")
     .buildRequest()
-    .expand("agentGroups")
+    .expand("publishedResources,agents,agentGroups")
     .get();
 
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 0060727d3f3070fcc809dd791f042f1d0677d1b5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b380477ab5b84c02062c817ef0684f5bbd217c4c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991331"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332707"
 ---
 # <a name="update-agreement"></a>更新协议
 
@@ -28,9 +28,9 @@ ms.locfileid: "60991331"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
-代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要详细了解目录角色，请参阅Azure AD[角色：](/azure/active-directory/roles/permissions-reference)
+代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色Azure AD，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
-+ 条件访问管理员
++ 条件访问管理
 + 安全管理员
 
 ## <a name="http-request"></a>HTTP 请求
@@ -49,10 +49,10 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|布尔|用户是否必须展开和查看协议才能接受。|
+|isViewingBeforeAcceptanceRequired|Boolean|用户是否必须展开和查看协议才能接受。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码[](../resources/agreement.md)和更新的协议对象。
+如果成功，此方法在响应`200 OK`正文中返回 响应代码和更新[](../resources/agreement.md)的协议对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
@@ -87,8 +87,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-agreement-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-agreement-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-agreement-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

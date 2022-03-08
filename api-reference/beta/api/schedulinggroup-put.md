@@ -1,16 +1,16 @@
 ---
 title: 更换 schedulingGroup
 description: 替换现有的 schedulingGroup。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 68f75c33913aa5cd7a4eb1e9363b7ed614dfb96d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d8f833e2516017b7724481b683265ea91a8bd2b5
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020564"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334511"
 ---
 # <a name="replace-schedulinggroup"></a>更换 schedulingGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "61020564"
 
 替换现有的 [schedulingGroup](../resources/schedulinggroup.md)。
 
-如果指定的 [schedulingGroup](../resources/schedulinggroup.md) 不存在，此方法将返回 `404 Not found` 。
+如果指定的 [schedulingGroup](../resources/schedulinggroup.md) 不存在，此方法将返回 `404 Not found`。
 
 ## <a name="permissions"></a>权限
 
@@ -96,7 +96,7 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-put-schedulinggroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-put-schedulinggroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

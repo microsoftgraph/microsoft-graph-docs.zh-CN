@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal：removePassword
 description: 从 servicePrincipal 中删除密码
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c1f252fba7ce753c0240b47850e79d71177705b6
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7069e9bb6f0d3031884915251fe4fb260c0dd2fe
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786109"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337262"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipal：removePassword
 
@@ -49,7 +49,7 @@ POST /servicePrincipals/{id}/removePassword
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| keyId | GUID | 密码的唯一标识符。 必需。 |
+| keyId | Guid | 密码的唯一标识符。 必需。 |
 
 ## <a name="response"></a>响应
 

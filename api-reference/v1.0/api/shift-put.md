@@ -5,20 +5,20 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8b4d960faec1363a0acc37587af4a0c39514c53e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9a4a2ad025ad039bf869b68ad6ea51462670973b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131991"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336863"
 ---
 # <a name="replace-shift"></a>替换班次
 
 命名空间：microsoft.graph
 
-替换现有的 [班次](../resources/shift.md)。
+替换现有 [班次](../resources/shift.md)。
 
-如果指定的 [班次](../resources/shift.md) 不存在，此方法返回 `404 Not found` 。
+如果指定的 [班次](../resources/shift.md) 不存在，此方法返回 `404 Not found`。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +35,7 @@ ms.locfileid: "62131991"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teams/{teamId}/schedule/shifts/{shiftId}
+PUT /teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -66,7 +66,7 @@ PATCH /teams/{teamId}/schedule/shifts/{shiftId}
   "name": "shift-put"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
+PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 Content-type: application/json
 Prefer: return=representation
 

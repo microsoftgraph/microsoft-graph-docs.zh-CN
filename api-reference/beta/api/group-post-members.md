@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f3902d3e1dffd6396c57d948dc209d028197a015
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: d026b9be994cd5f4cf3b7613ed726c8d9f8a14fd
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201360"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333797"
 ---
 # <a name="add-members"></a>添加成员
 
@@ -37,6 +37,9 @@ ms.locfileid: "62201360"
 |委派（工作或学校帐户） | GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> 若要向角色可分配组添加成员，还必须为调用用户或应用分配 *RoleManagement.ReadWrite.Directory* 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -98,7 +101,7 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供要添加的 `id` [directoryObject、user](../resources/directoryobject.md)或[](../resources/user.md)[group](../resources/group.md)对象的 JSON 表示形式。
+在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md) 或 [group](../resources/group.md) 对象的 JSON `id` 表示形式。
 
 ### <a name="response"></a>响应
 下面展示了示例响应。

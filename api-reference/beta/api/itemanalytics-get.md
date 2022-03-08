@@ -1,17 +1,16 @@
 ---
 author: daspek
 description: 获取有关此资源下发生视图的 itemAnalytics。
-ms.date: 10/06/2017
 title: 获取分析结果
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6366106097b4f6b9b43d8fe0eacddeaeab53826d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c3fc4057142e5a6706d0302328a27b703b0e9b8b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475798"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337003"
 ---
 # <a name="get-analytics"></a>获取分析结果
 
@@ -19,11 +18,11 @@ ms.locfileid: "50475798"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取有关此资源下发生视图的[itemAnalytics。][]
-**itemAnalytics** 资源是获取 和 的活动统计信息的 `allTime` 便捷方式 `lastSevenDays` 。
+获取有关此资源下发生视图的 [itemAnalytics][] 。
+**itemAnalytics** 资源是获取 和 的活动统计信息的`allTime`便捷方式`lastSevenDays`。
 对于自定义的时间间隔，请使用 [getActivitiesByInterval][] API。
 
->**注意：****itemAnalytics** 资源尚未可用于所有 [的国家部署](/graph/deployments)。
+>**注意：****itemAnalytics** 资源尚未可用于所有国家 [部署](/graph/deployments)。
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
@@ -32,11 +31,11 @@ ms.locfileid: "50475798"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型                        | 权限（从最低特权到最高特权）
-|:--------------------------------------|:-------------------------------------
-|委派（工作或学校帐户）     | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All
-|委派（个人 Microsoft 帐户） | 不支持。
-|应用程序                            | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All
+|权限类型                        | 权限（从最低特权到最高特权）|
+|:--------------------------------------|:-------------------------------------|
+|委派（工作或学校帐户）     | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All|
+|委派（个人 Microsoft 帐户） | 不支持。|
+|应用程序                            | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,10 +47,28 @@ GET /sites/{site-id}/analytics
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 ```
 
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+
+## <a name="request-headers"></a>请求标头
+
+| 名称          | 说明               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}。必需。 |
+
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [itemAnalytics][] 对象集合。 
+
 ## <a name="example"></a>示例
 
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
@@ -78,7 +95,9 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 ---
 
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
+
+下面展示了示例响应。
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 

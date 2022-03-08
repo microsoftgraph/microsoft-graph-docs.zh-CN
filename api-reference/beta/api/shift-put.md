@@ -1,16 +1,16 @@
 ---
 title: 替换班次
 description: 替换现有班次。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a829b88600e5f2cfbc21a193c7e8ebf0ca95e6c5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3706b0f2c9df2ae7ed85fae8ad7396937d3d2605
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002343"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337227"
 ---
 # <a name="replace-shift"></a>替换班次
 
@@ -18,9 +18,9 @@ ms.locfileid: "61002343"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-替换现有的 [班次](../resources/shift.md)。
+替换现有 [班次](../resources/shift.md)。
 
-如果指定的 [班次](../resources/shift.md) 不存在，此方法返回 `404 Not found` 。
+如果指定的 [班次](../resources/shift.md) 不存在，此方法返回 `404 Not found`。
 
 ## <a name="permissions"></a>权限
 
@@ -136,7 +136,7 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/java/shift-put-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/shift-put-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

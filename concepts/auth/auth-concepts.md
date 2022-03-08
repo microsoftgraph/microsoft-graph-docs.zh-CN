@@ -1,16 +1,16 @@
 ---
 title: Microsoft Graph 身份验证和授权基础知识
 description: 要调用 Microsoft Graph，应用必须从 Microsoft 标识平台获取一个访问令牌。
-author: matt-steele
+author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 877d3e2c1ce0d80ff625504bc2248d32d595f0ba
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5ecbe4a163ab378ecc6a68aa6283c789be785203
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507961"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335883"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph 身份验证和授权基础知识
 
@@ -20,7 +20,7 @@ ms.locfileid: "59507961"
 
 ## <a name="access-tokens"></a>访问令牌
 
-Microsoft 标识平台发布的访问令牌包含以下信息（声明）：Web API 受到 Microsoft 标识平台（如 Microsoft Graph）的保护，用于验证调用方并确保调用方有相应的权限可执行其正在请求的操作。调用 Microsoft Graph 时，应将访问令牌视为不透明。始终可通过安全通道（例如传输层安全性 (HTTPS)）传输访问令牌。
+Microsoft 标识平台发布的访问令牌包含受 Microsoft 标识平台保护的 Web API （如 Microsoft Graph，用于验证调用方和确保调用方具有适当的权限来执行其请求的操作）的信息（声明）。 调用方应将访问令牌视为不透明字符串，因为令牌的内容仅适用于 API。 调用Microsoft Graph时，始终通过使用传输层安全性 （TLS） 的安全通道传输访问令牌来保护访问令牌。
 
 下面是一个 Microsoft 标识平台访问令牌示例：
 
@@ -41,10 +41,10 @@ Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
 必须在 [Azure 门户](https://portal.azure.com/)中注册应用，然后它才能从 Microsoft 标识平台获取令牌。 注册会将应用与 Microsoft 标识平台相集成，并建立用于获取令牌的信息，其中包括：
 
 - **应用程序 ID**：Microsoft 标识平台分配的唯一标识符。
-- **重定向 URI/URL**: 应用将从 Microsoft 标识平台接收响应的一个或多个终结点。(对于本机和移动应用，此为 Microsoft 标识平台分配的 URI。)
-- **应用程序密码**: 应用用于通过 Microsoft 标识平台进行身份验证的密码或公钥/私钥对。(本机或移动应用不需要。)
+- **重定向 URI/URL**：应用将从 Microsoft 标识平台接收响应的一个或多个终结点。（对于本机和移动应用，URI 由 Microsoft 标识平台分配。）
+- **客户端密码**：应用用于通过 Microsoft 标识平台进行身份验证的密码或公钥/私钥对。（本机或移动应用不需要。）
 
-注册期间配置的属性应用于请求中。例如，在以下令牌请求中: *client_id* 为 *应用程序 ID*，*redirect_uri* 为应用的其中一个注册 *重定向 URI*，*client_secret* 为 *应用程密码*。
+注册期间配置的属性在请求中使用。例如，在以下令牌请求中： *client_id* 是 *应用程序 ID*， *redirect_uri* 是应用的注册 *重定向 URI 之一*， *client_secret* 是 *客户端密码*。
 
 ```http
 // Line breaks for legibility only
@@ -63,40 +63,51 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
-Microsoft Graph 公开可控制应用对资源（如用户、组和邮件）的访问的粒度权限。作为开发人员，你可决定为 Microsoft Grap 请求哪些权限。当用户登录你的应用时，他们（在某些情况下，可能是管理员）有机会同意这些权限。如果用户同意，则你的应用可访问其请求的资源和 API。对于没有已登录用户的应用，安装应用时，管理员可事先同意权限。
+Microsoft Graph公开精细的权限，这些权限控制应用对资源（如用户、组和邮件）的访问权限。作为开发人员，你决定要请求应用的Microsoft Graph权限。当用户登录到你的应用时，或者在某些情况下，管理员有机会同意这些权限。如果用户同意，则向应用授予对其请求的资源和 API 的访问权限。对于在没有登录用户的情况下访问资源和 API 的应用，安装应用时，管理员可以预先同意这些权限。
 
 ### <a name="best-practices-for-requesting-permissions"></a>请求权限的最佳做法
+
 [!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
 
 ### <a name="delegated-and-application-permissions"></a>委派权限和应用程序权限
-Microsoft Graph 具有两种权限类型：
+
+Microsoft Graph具有两种类型的权限。
 
 - **委派权限** 由存在已登录用户的应用使用。对于这些应用，用户或管理员会同意应用请求的权限，且应用在调用 Microsoft Graph 时可以充当已登录用户。一些委派权限可以由非管理用户同意，但一些特权较高的权限需要 [管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)。  
 
-- **应用程序权限** 由无需具有登录用户即可运行的应用使用；例如，作为后台服务或守护程序运行的应用。应用程序权限只能 [由管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
+- **应用程序权限** 由无需具有登录用户即可运行的应用使用；例如，作为后台服务或守护程序运行的应用。应用程序权限只能 [由管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。
 
-_有效权限_ 是应用在向 Microsoft Graph 发出请求时拥有的权限。需要了解授予应用的委派权限和应用程序权限之间的区别，以及调用 Microsoft Graph 时应用的有效权限。
+**有效权限** 是应用在向 Microsoft Graph 发出请求时具有的权限。 有效权限由你向应用授予的Microsoft Graph权限的组合决定，*and* 已登录用户或调用应用的权限。 在组织中，一个或多个角色中的策略或成员身份决定已登录用户或应用的权限。 调用Microsoft Graph时，请务必了解应用具有的委派权限和应用程序权限与其有效权限之间的差异。
 
-- 对于委派权限，应用的有效权限是已授予应用的委派权限(通过同意)和当前已登录用户的特权的交集。应用的特权永远不能超过已登录用户。在组织内，已登录用户的特权由一个或多个管理员角色中的策略或会员资格决定。有关管理员角色的详细信息，请参阅 [在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。<br/><br/>例如，假定已授予应用 *User.ReadWrite.All* 委派权限。此权限名义上授予应用读取和更新组织内每个用户的配置文件的权限。如果已登录用户为全局管理员，则应用可以更新组织内每个用户的配置文件。但如果已登录用户非管理员角色，则应用只能更新已登录用户的配置文件。其将不会更新组织内其他用户的配置文件，因为已登录用户不具有这些特权。
+#### <a name="effective-permissions-in-delegated-vs-application-only-permission-scenarios"></a>委派权限与仅限应用程序权限方案中的有效权限
 
-- 对于应用程序权限，应用的有效权限将是权限默示的完整级别的特权。例如，具有 *User.ReadWrite.All* 应用程序权限的应用可以更新组织中每个用户的配置文件。
+- 对于委派权限，*有效权限* 是应用已授予的委派权限（经同意）和当前登录用户的特权的最小交集。你的应用的权限永远不能超过已登录用户。
+
+  假设已向应用授予 *User.ReadWrite.All* 委派权限，并调用 [Update 用户](/graph/api/user-update) API。 此权限名义上授予应用读取和更新组织中每位用户个人资料的权限。 但是，由于有效权限，以下限制适用于已登录用户的权限：
+  + 如果已登录的用户是全局管理员，则应用可以更新组织中每个用户的配置文件。
+  + 如果已登录用户不是管理员角色，则应用 *只能* 已登录用户的配置文件更新。 而不会更新组织中其他用户的配置文件，因为已登录用户不具有这些特权。
+
+- 对于应用程序权限，应用 *有效权限* 是权限隐含的完整级别权限。例如，具有 *User.ReadWrite.All* 应用程序权限的应用可以更新组织中每个用户的配置文件。
+
+##### <a name="comparison-of-delegated-and-application-permissions"></a>委派权限和应用程序权限的比较
+
+
+| <!-- No header--> | 委派权限 | 应用程序权限 |
+|--|--|--|
+| 应用类型方案 | Web/移动/单页应用 （SPA） | Web/守护程序 |
+| 访问上下文 | [代表用户获取访问权限](../auth-v2-user.md) | [以服务的形式获取访问权限](../auth-v2-service.md) |
+| 谁可以同意 | <li> 用户可以同意其数据 <li> 管理员可以同意所有用户 | 只有管理员才能同意 |
+| 其他名称 | <li> scopes <li>OAuth2 权限 | <li> 应用角色 <li>仅应用权限 <li>直接访问权限  |
+| 同意结果 | [oAuth2PermissionGrants](/graph/api/resources/oauth2permissiongrant) | [appRoleAssignments](/graph/api/resources/approleassignment) |
+
 
 :::image type="content" source="/graph/images/auth-v2/permission-types.png" alt-text="Microsoft Graph 公开了委派权限和应用程序权限，但根据应用程序的有效权限授权请求。" border="true":::
-
->**注意** 默认情况下，已将应用程序权限授予以下数据集的应用可访问组织中的所有邮箱：
-
-- [日历](../permissions-reference.md#calendars-permissions)
-- [联系人](../permissions-reference.md#contacts-permissions)
-- [邮件](../permissions-reference.md#mail-permissions)
-- [邮箱设置](../permissions-reference.md#mail-permissions)
-
->管理员可以配置 [应用程序访问策略](../auth-limit-mailbox-access.md)，以限制对 _特定_ 邮箱的应用访问。
 
 有关 Microsoft Graph 委派权限和应用程序权限的完整列表，以及哪些权限需要管理员同意，请参阅 [权限参考](../permissions-reference.md)。
 
 ## <a name="getting-an-access-token"></a>获取访问令牌
 
-和大多数开发人员一样，你可能使用身份验证库管理你的令牌与 Microsoft 标识平台的交互。身份验证库摘录了许多协议细节，例如验证、Cookie 处理、令牌缓存和保持安全连接、远离开发人员和让你关注应用上的开发情况。Microsoft 发布了开源客户端库和服务器中间件。
+与大多数开发人员一样，你可能会使用身份验证库来管理令牌与 Microsoft 标识平台的交互。身份验证库从开发人员处提取许多协议详细信息，例如验证、Cookie 处理、令牌缓存和维护安全连接，并让你专注于应用功能的开发。Microsoft 发布开源客户端库和服务器中间件。
 
 对于 Microsoft 标识平台终结点：
 
@@ -133,6 +144,7 @@ _有效权限_ 是应用在向 Microsoft Graph 发出请求时拥有的权限。
 
 Microsoft 标识平台文档中有一些文章和示例，它们专门介绍如何向 Microsoft 标识平台进行身份验证以及如何获得它的授权。
 
+- 请访问[Microsoft 标识平台终结点文档](/azure/active-directory/develop/active-directory-appmodel-v2-overview)了解如何向 Microsoft 标识平台注册应用程序。
 - 最简单的起点在 [Microsoft 标识平台终结点文档](/azure/active-directory/develop/active-directory-appmodel-v2-overview) 中。本文包含概述、协议文档以及不同平台入门文章的链接，这些文章全部按你正在开发的应用类型进行整理。
 - 有关使用 Microsoft 标识平台保护不同应用程序类型的示例，请查看 [Microsoft 标识平台代码示例（v2.0 终结点）](/azure/active-directory/develop/sample-v2-code)。
 - 要了解客户端或服务器身份验证库列出的示例，请参阅 [Microsoft 标识平台身份验证库](/azure/active-directory/develop/active-directory-v2-libraries)。
@@ -140,5 +152,6 @@ Microsoft 标识平台文档中有一些文章和示例，它们专门介绍如�
 
 ## <a name="see-also"></a>另请参阅
 
+- [Microsoft 标识平台访问令牌](/azure/active-directory/develop/access-tokens)
 - [根据方案选择 Microsoft Graph 身份验证提供程序](../sdks/choose-authentication-providers.md)
 - [Microsoft 标识平台终结点文档](/azure/active-directory/develop/active-directory-appmodel-v2-overview)

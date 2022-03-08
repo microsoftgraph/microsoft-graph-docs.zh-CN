@@ -5,8 +5,13 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: d427c0cc6e0d4c1de6378556103f4efd3a10f103
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337031"
 ---
-
 # <a name="cross-tenant-access-settings-api-overview"></a>跨租户访问设置 API 概述
 
 命名空间：microsoft.graph
@@ -15,15 +20,15 @@ doc_type: resourcePageType
 
 在传统 Azure AD B2B 协作中，来自组织的任何受邀用户都可使用其身份访问外部组织的资源。 管理员无法控制允许其租户登录到外部组织的用户标识。 这些有限的控制使得难以阻止以未经授权的方式使用您组织的标识。
 
-**跨租户访问设置** 使你可以控制和管理组织中用户与其他组织之间的协作。 该控件可以控制出站访问 (用户与其他组织的协作方式) 、入站访问 (组织如何与您进行协作) ，  或同时位于这两者。
+**跨租户访问设置** 使你可以控制和管理组织中用户与其他组织之间的协作。 该控件可以控制出站访问 (用户与其他组织的协作方式) 、入站访问 (组织如何与您进行协作，)  这两者。
 
-粒度控件使你可以确定组织中和外部组织中可以参与 Azure AD B2B 协作和 Azure AD B2B 直接连接的用户、组和应用。 这些控件通过以下方式实现：
+粒度控件使你可以确定组织中和外部组织中可以参与 Azure AD B2B 协作和 Azure AD B2B 直接连接的用户、组Azure AD应用程序。 这些控件通过以下方式实现：
 
 + **设置基线入站和** 出站访问设置的默认跨租户访问设置。
-    + 在Azure AD B2B 协作中，默认情况下启用这两个访问设置。 这意味着所有用户都可以受邀加入外部组织，并且你的所有用户都可以邀请外部用户。
+    + 在 Azure AD B2B 协作中，默认情况下启用这两个访问设置。 这意味着所有用户都可以受邀加入外部组织，并且你的所有用户都可以邀请外部用户。
     + 在Azure AD B2B 直接连接中，默认情况下禁用这两个访问设置。
     + 可能会更新服务默认设置。
-+ **合作伙伴特定的访问设置** ，可让你为各个组织配置自定义设置。 对于已配置的组织，此配置优先于默认设置。 因此，Azure AD在Azure AD禁用 B2B 协作和 B2B 直接连接时，您可以为特定的外部组织启用这些功能。
++ **合作伙伴特定的访问设置** ，可让你为各个组织配置自定义设置。 对于已配置的组织，此配置优先于默认设置。 因此，Azure AD在Azure AD禁用 B2B 协作和 B2B 直接连接，但您可以为特定的外部组织启用这些功能。
 
 > [!IMPORTANT]
 > 
@@ -31,7 +36,7 @@ doc_type: resourcePageType
 
 ## <a name="default-cross-tenant-access-settings"></a>默认跨租户访问设置
 
-默认跨租户访问设置确定您与所有其他组织进行入站和出站Azure AD。 与未在跨租户访问设置中显式列出的组织的任何外部协作都将继承这些默认设置。 默认设置是使用 [crossTenantAccessPolicyConfigurationDefault 资源](../resources/crosstenantaccesspolicyconfigurationdefault.md) 类型定义的。
+默认的跨租户访问设置确定您与所有其他组织进行入站和出站Azure AD关系。 与未在跨租户访问设置中显式列出的组织的任何外部协作都将继承这些默认设置。 默认设置是使用 [crossTenantAccessPolicyConfigurationDefault 资源](../resources/crosstenantaccesspolicyconfigurationdefault.md) 类型定义的。
 
 默认情况下，Azure AD为Azure AD租户分配跨租户访问设置的服务默认配置。 可以使用自己的配置覆盖这些服务默认值，以适合您的组织。 通过查看查询默认终结点时返回的 **isServiceDefault** 属性，可以确认使用的是服务默认设置还是修改了默认设置。
 
@@ -53,9 +58,11 @@ doc_type: resourcePageType
 
 跨租户访问设置 API 可用于设置多个配置，以允许或阻止对组织的访问。 下表重点介绍了方案，显示了 API 响应的示例，以及该响应的解释内容。 **b2bSetting** 用作任何 B2B 入站 (**b2bCollaborationInbound** 或 **b2bDirectConnectInbound**) 或出站 (**b2bCollaborationOutbound** 或 **b2bDirectConnectOutbound**) 配置的占位符。
 
+<br/>
+
 <table>
 <tr>
-<td> 应用场景 </td> <td> API 输出 </td> <td> 解释 </td>
+<th> 应用场景 </th> <th> API 输出 </th> <th> 解释 </th>
 </tr>
 <tr>
 <td> 阻止所有用户并阻止所有应用程序 </td>
@@ -331,7 +338,7 @@ doc_type: resourcePageType
 
 ## <a name="cross-tenant-access-settings-vs-tenant-restrictions"></a>跨租户访问设置与租户限制
 
-跨租户访问设置出站控制用于控制组织帐户如何用于访问其他组织Azure AD资源。 租户限制用于控制员工在网络或Azure AD时如何使用组织的其他 **帐户**。 关键的一点，出站控件一段时间都运行，因为它们与帐户关联，而租户限制要求将其他信号注入身份验证请求以强制执行，因为租户限制的范围是网络和设备，而不是帐户。 详细了解租户 [限制](/azure/active-directory/manage-apps/tenant-restrictions)。
+跨租户访问设置出站控制用于控制组织帐户如何用于访问其他组织Azure AD资源。 租户限制用于控制员工在网络或设备上Azure AD组织的其他帐户 **的使用。** 关键的一点，出站控件一段时间都运行，因为它们与帐户关联，而租户限制要求将其他信号注入身份验证请求以强制执行，因为租户限制的范围是网络和设备，而不是帐户。 详细了解租户 [限制](/azure/active-directory/manage-apps/tenant-restrictions)。
 
 ## <a name="next-steps"></a>后续步骤
 

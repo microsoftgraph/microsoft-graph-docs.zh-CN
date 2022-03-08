@@ -1,16 +1,16 @@
 ---
 title: schedulingGroup 资源类型
 description: 计划中成员的逻辑分组（通常按角色）。
-author: nkramer
+author: aaku
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b28baf7b75fc19ef2156bf5edd69ea60d0cbd03c
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 890b192ef577f4c38648a5c3e868e8f37142ce0f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695586"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336744"
 ---
 # <a name="schedulinggroup-resource-type"></a>schedulingGroup 资源类型
 

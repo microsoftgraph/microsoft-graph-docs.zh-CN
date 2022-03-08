@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 10817862024dc9027f9011bf3a1c9364ac5a56984d241f30c496bf850bb01857
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5ad6ae78eebb791dc5d13995e78aae9f84948d59
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57332147"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351176"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 let userFlowApiConnectorConfiguration = await client.api('/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration')
-    .expand('postAttributeCollection')
+    .expand('postFederationSignup,postAttributeCollection')
     .get();
 
 ```

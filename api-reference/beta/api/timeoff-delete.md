@@ -1,16 +1,16 @@
 ---
 title: 删除 timeOff
 description: 从计划中删除 timeOff 实例。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 690ee8e989b34166c92c7a6f62d6e70dcf8cf9a8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 350400e059a7cfd3969b7636358e67988c377a15
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130751"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333377"
 ---
 # <a name="delete-timeoff"></a>删除 timeOff
 
@@ -18,7 +18,7 @@ ms.locfileid: "62130751"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从计划 [中删除 timeOff](../resources/timeoff.md) [实例](../resources/schedule.md)。
+从 [计划中删除 timeOff](../resources/timeoff.md) [实例](../resources/schedule.md)。
 
 ## <a name="permissions"></a>权限
 

@@ -1,16 +1,16 @@
 ---
 title: 列出聊天成员。
 description: 检索聊天成员。
-author: bhartono
+author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5f831e3762e61e915f65a49a4f0bdadb71f6062f
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: eaa93d37dee43ef81a31d80d15ea41007bff5f69
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225565"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333531"
 ---
 # <a name="list-members-of-a-chat"></a>列出聊天成员。
 

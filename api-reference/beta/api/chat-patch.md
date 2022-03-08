@@ -1,16 +1,16 @@
 ---
 title: 更新聊天
 description: 更新聊天对象的属性。
-author: bhartono
+author: anandjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 23260bb99b509a2039aec249feb392a757c4b942
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: e06367929d2fcb74e2cb21a1bb1f57cce8c3bcbc
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225446"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333790"
 ---
 # <a name="update-chat"></a>更新聊天
 命名空间：microsoft.graph
@@ -53,12 +53,12 @@ PATCH /chats/{chat-id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|topic|String|聊天的标题。 只能为 chatType 值为 的 **聊天设置** 此值 `group` 。|
+|topic|String|聊天的标题。 只能为 **chatType 值为 的聊天设置** 此值 `group`。|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK response` 正文中返回代码和更新的聊天资源。
+如果成功，此方法在响应`200 OK response`正文中返回代码和更新的聊天资源。
 
 ## <a name="examples"></a>示例
 

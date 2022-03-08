@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 269ded5469caf2ad54d213a74954ce9c7ffc59770996dccd763c5db2d7668104
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4e9345d583a33f26cf49e054ae0c1b03b790a6a0
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161415"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351238"
 ---
 ```csharp
 
@@ -65,7 +65,7 @@ var contentInfo = new ContentInfo
 var labelingOptions = new LabelingOptions
 {
     AssignmentMethod = AssignmentMethod.Standard,
-    LabelId = Guid.Parse("97309856-9c28-4ac6-9382-5f8bc20c457b"),
+    LabelId = "97309856-9c28-4ac6-9382-5f8bc20c457b",
     DowngradeJustification = null,
     ExtendedProperties = new List<KeyValuePair>()
     {

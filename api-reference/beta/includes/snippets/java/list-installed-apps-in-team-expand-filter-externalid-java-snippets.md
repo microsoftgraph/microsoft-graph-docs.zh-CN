@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 32d2b88456797b219cebc2a63e94ad0f45b1f5fe55e405ff9c9578416e164c7e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dd67181aacd9fb00450e7365878131fa29761f3e
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57103940"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337248"
 ---
 ```java
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 TeamsAppInstallationCollectionPage installedApps = graphClient.teams("acda442c-78d2-491b-8204-4ef5019c0193").installedApps()
     .buildRequest()
     .filter("teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'")
-    .expand("teamsAppDefinition")
+    .expand("teamsApp,teamsAppDefinition")
     .get();
 
 ```

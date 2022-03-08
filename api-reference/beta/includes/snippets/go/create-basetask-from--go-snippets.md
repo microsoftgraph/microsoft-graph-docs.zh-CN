@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 54367c0aadc4380a2f277ad5850d01dfeb9b1413
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0e901995c5a52c57eb45e83b94868068e1104dde
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130107"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351161"
 ---
 ```go
 
@@ -13,11 +13,6 @@ ms.locfileid: "62130107"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewBaseTask()
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-body.SetAdditionalData(map[string]interface{}{
-    "@odata.type": "microsoft.graph.itemBody",
-}
 bodyLastModifiedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetBodyLastModifiedDateTime(&bodyLastModifiedDateTime)
 completedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
@@ -43,11 +38,6 @@ displayName := "String"
 requestBody.SetDisplayName(&displayName)
 status := "String"
 requestBody.SetStatus(&status)
-personalProperties := msgraphsdk.NewPersonalTaskProperties()
-requestBody.SetPersonalProperties(personalProperties)
-personalProperties.SetAdditionalData(map[string]interface{}{
-    "@odata.type": "microsoft.graph.personalTaskProperties",
-}
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.baseTask",
 }

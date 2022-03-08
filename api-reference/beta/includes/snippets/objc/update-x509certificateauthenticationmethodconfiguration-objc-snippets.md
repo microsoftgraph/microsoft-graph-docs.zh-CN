@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 26a70c78b5d65a28cfab0ae2db3b009e9bce2d0a
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 9011f0d41db90d0647043f8c60147fc9045250bf
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519379"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351221"
 ---
 ```objc
 
@@ -18,22 +18,27 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphAuthenticationMethodConfiguration *authenticationMethodConfiguration = [[MSGraphAuthenticationMethodConfiguration alloc] init];
 [authenticationMethodConfiguration setId:@"X509Certificate"];
-[authenticationMethodConfiguration setState: [MSGraphAuthenticationMethodState disabled]];
+[authenticationMethodConfiguration setState: [MSGraphAuthenticationMethodState enabled]];
 NSMutableArray *certificateUserBindingsList = [[NSMutableArray alloc] init];
 MSGraphX509CertificateUserBinding *certificateUserBindings = [[MSGraphX509CertificateUserBinding alloc] init];
 [certificateUserBindings setX509CertificateField:@"PrincipalName"];
 [certificateUserBindings setUserProperty:@"onPremisesUserPrincipalName"];
 [certificateUserBindings setPriority: 1];
 [certificateUserBindingsList addObject: certificateUserBindings];
-MSGraphX509CertificateUserBinding *certificateUserBindings = [[MSGraphX509CertificateUserBinding alloc] init];
-[certificateUserBindings setX509CertificateField:@"RFC822Name"];
-[certificateUserBindings setUserProperty:@"userPrincipalName"];
-[certificateUserBindings setPriority: 2];
-[certificateUserBindingsList addObject: certificateUserBindings];
 [authenticationMethodConfiguration setCertificateUserBindings:certificateUserBindingsList];
 MSGraphX509CertificateAuthenticationModeConfiguration *authenticationModeConfiguration = [[MSGraphX509CertificateAuthenticationModeConfiguration alloc] init];
-[authenticationModeConfiguration setX509CertificateAuthenticationDefaultMode: [MSGraphX509CertificateAuthenticationMode x509CertificateSingleFactor]];
+[authenticationModeConfiguration setX509CertificateAuthenticationDefaultMode: [MSGraphX509CertificateAuthenticationMode x509CertificateMultiFactor]];
 NSMutableArray *rulesList = [[NSMutableArray alloc] init];
+MSGraphX509CertificateRule *rules = [[MSGraphX509CertificateRule alloc] init];
+[rules setX509CertificateRuleType: [MSGraphX509CertificateRuleType issuerSubject]];
+[rules setIdentifier:@"CN=ContosoCA,DC=Contoso,DC=org "];
+[rules setX509CertificateAuthenticationMode: [MSGraphX509CertificateAuthenticationMode x509CertificateMultiFactor]];
+[rulesList addObject: rules];
+MSGraphX509CertificateRule *rules = [[MSGraphX509CertificateRule alloc] init];
+[rules setX509CertificateRuleType: [MSGraphX509CertificateRuleType policyOID]];
+[rules setIdentifier:@"1.2.3.4"];
+[rules setX509CertificateAuthenticationMode: [MSGraphX509CertificateAuthenticationMode x509CertificateMultiFactor]];
+[rulesList addObject: rules];
 [authenticationModeConfiguration setRules:rulesList];
 [authenticationMethodConfiguration setAuthenticationModeConfiguration:authenticationModeConfiguration];
 NSMutableArray *includeTargetsList = [[NSMutableArray alloc] init];

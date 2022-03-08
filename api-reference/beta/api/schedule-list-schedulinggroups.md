@@ -1,16 +1,16 @@
 ---
 title: 列出 schedulingGroups
 description: 获取此计划中的 schedulingGroup 列表。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 61663b58f3581cedc7398dbb53120f5ff2b6a98b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8294dc255f7ee4061eadafb260a75c6d1ec3dd10
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115890"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334518"
 ---
 # <a name="list-schedulegroups"></a>列出 scheduleGroups
 
@@ -49,7 +49,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [schedulingGroup](../resources/schedulinggroup.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象集合。
 
 ## <a name="example"></a>示例
 

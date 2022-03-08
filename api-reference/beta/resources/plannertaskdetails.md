@@ -1,16 +1,16 @@
 ---
 title: plannerTaskDetails 资源类型
-description: '**PlannerTaskDetails**资源表示有关任务的其他信息。 每个任务对象都有一个详细信息对象。'
-localization_priority: Normal
+description: 表示有关任务的其他信息。 每个任务对象都有一个 details 对象。
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: df870a8512536b0e29a923a52c62a2b779a180e1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d7bca98598dc4a077a2706ed2de49337f973d6f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064000"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337507"
 ---
 # <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails 资源类型
 
@@ -18,27 +18,27 @@ ms.locfileid: "48064000"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerTaskDetails**资源表示有关任务的其他信息。 每个 [任务](plannertask.md) 对象都有一个详细信息对象。
+表示有关任务的其他信息。 每个 [任务](plannertask.md) 对象都有一个 details 对象。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |读取 **plannerTaskDetails** 对象的属性和关系。|
+|[获取 plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |读取 **plannerTaskDetails 对象的属性和** 关系。|
 |[更新](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)    |更新 **plannerTaskDetails** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|任务上的检查表项目集合。|
-|说明|String|任务描述|
+|说明|String|任务描述。|
 |id|String| 只读。 任务详细信息的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
 |previewType|string|这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。当设为 `automatic` 时，由查看任务的应用选择显示的预览。|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|任务上的引用集合。|
 
 ## <a name="relationships"></a>关系
-无
+无。
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -60,7 +60,6 @@ ms.locfileid: "48064000"
   "previewType": "string",
   "references": {"@odata.type": "microsoft.graph.plannerExternalReferences"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

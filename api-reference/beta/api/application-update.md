@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 10cfb4ee29d9262f9a595799f75d0e78bf3d8724
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 7fac54742cca998d94af7792db820c2c0859983a
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224758"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332488"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -18,7 +18,7 @@ ms.locfileid: "62224758"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 application [对象的属性](../resources/application.md) 。
+更新 [application 对象的属性](../resources/application.md) 。
 
 > [!IMPORTANT]
 > 不支持使用 PATCH 设置 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](./application-addpassword.md) 和 [removePassword](./application-removepassword.md) 方法更新应用程序的密码。
@@ -54,11 +54,11 @@ PATCH /applications/{id}
 | displayName             | String                                                                      | 应用程序的显示名称。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | groupMembershipClaims   | String                                                                      | 配置在 **用户** 或应用程序期望的 OAuth 2.0 访问令牌中颁发的组声明。 要设置此属性，请使用以下有效字符串值之一：<ul><li>`None`</li><li>`SecurityGroup`：对于安全组和Azure Active Directory (Azure AD) 角色</li><li>`All`：该操作可获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色</li></ul>                                                                                                                       |
 | identifierUris          | String collection                                                           | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的 *any* 运算符。 不可为 Null。                                                                                                                                                                           |
-| info                    | [informationalUrl](../resources/informationalurl.md)                        | 应用程序的基本个人资料信息，如应用的营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅为已注册的应用添加服务条款和[Azure AD声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。                                                                                                                                                 |
-| isFallbackPublicClient  | Boolean                                                                     | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值为 `false` ，这意味着回退应用程序类型是机密客户端，如 Web 应用。 在某些情况下，Azure AD无法确定客户端应用程序类型 (例如[，ROPC](https://tools.ietf.org/html/rfc6749#section-4.3)流，其中未指定重定向 URI) 。 在这种情况下，Azure AD将基于此属性的值解释应用程序类型。 |
+| info                    | [informationalUrl](../resources/informationalurl.md)                        | 应用程序的基本个人资料信息，如应用的营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅为注册的应用[添加服务条款和Azure AD声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。                                                                                                                                                 |
+| isFallbackPublicClient  | Boolean                                                                     | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值为 ， `false`这意味着回退应用程序类型是机密客户端，如 Web 应用。 在某些情况下，Azure AD无法确定客户端应用程序类型 (例如[，ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) 流，其中配置客户端应用程序类型时未指定重定向 URI) 。 在这种情况下，Azure AD将基于此属性的值解释应用程序类型。 |
 | keyCredentials          | [keyCredential](../resources/keycredential.md) 集合                   | 与应用程序关联的密钥凭据集合。不可为 Null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | 应用程序的主徽标。不可为 Null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | 表示用于为本地应用程序[Azure AD应用程序代理](/azure/active-directory/app-proxy/what-is-application-proxy)的属性集。 此属性只能在创建应用程序后设置。                                                                                                                                                                                                                                                                                                                                                        |
+| onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | 表示用于为本地应用程序Azure AD[应用程序代理](/azure/active-directory/app-proxy/what-is-application-proxy)的属性集。 此属性只能在创建应用程序后设置。                                                                                                                                                                                                                                                                                                                                                        |
 | optionalClaims          | optionalClaims                                                              | 应用程序开发人员可以在其 Azure AD 应用中配置可选声明，以指定 Microsoft 安全令牌服务发送到他们应用程序的令牌中所需的声明。 有关详细信息 [，请参阅](/azure/active-directory/develop/active-directory-optional-claims) 可选声明。                                                                                                                                                                                                                                                               |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | 指定应用程序的家长控制设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | 指定已安装客户端（如台式设备或移动设备）的设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -69,10 +69,11 @@ PATCH /applications/{id}
 | 唯一名称 | String | 可指定给应用程序作为替代标识符的唯一标识符。不可变。只读。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | web                     | [webApplication](../resources/webapplication.md)                            | 指定 Web 应用程序的设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
+| windows                     | [windowsApplication](../resources/windowsapplication.md)                            | 指定运行 Microsoft 游戏或 Xbox Windows中发布Microsoft Store应用的设置。 包括授权代码和访问令牌的程序包 SID 和重定向 URI。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码，不会在响应正文中返回任何内容。
+如果成功，此方法返回 响应 `204 No Content` 代码，不会在响应正文中返回任何内容。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

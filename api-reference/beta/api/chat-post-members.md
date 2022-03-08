@@ -1,16 +1,16 @@
 ---
 title: 向聊天添加成员
 description: 向聊天中添加 conversationMember。
-author: bhartono
+author: anandjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: b4d8bc91aa3b6632ecb2a67a1d9bfaf2c0ac5f89
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 1042c358d1588bbe4cae1af4998aea1ce8c6e1e3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225439"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334350"
 ---
 # <a name="add-member-to-a-chat"></a>向聊天添加成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "62225439"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [conversationMember](../resources/conversationmember.md) 添加到 [聊天](../resources/chat.md)。
+向[聊天中添加 conversationMember](../resources/conversationmember.md)[。](../resources/chat.md)
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +50,7 @@ POST /chats/{chat-id}/members
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 响应代码和 Location 标头，这些响应代码和位置标头提供指向新创建的成员 `201 Created` 对象的 URL 路径。
+如果成功，此方法返回 响应 `201 Created` 代码和 Location 标头，这些响应代码和位置标头提供指向新创建的成员对象的 URL 路径。
 
 ## <a name="examples"></a>示例
 

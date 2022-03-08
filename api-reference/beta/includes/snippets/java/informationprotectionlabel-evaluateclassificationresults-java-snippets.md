@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6d05e55539ebde1e3e7b53b7afa771223e61d165159fdec5d44ccdd7fb9888f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b339fd6d5a8a9f6889b37b2b57c2a99b4113001f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57220508"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351202"
 ---
 ```java
 
@@ -23,7 +23,7 @@ contentInfo.state = ContentState.REST;
 
 LinkedList<ClassificationResult> classificationResultsList = new LinkedList<ClassificationResult>();
 ClassificationResult classificationResults = new ClassificationResult();
-classificationResults.sensitiveTypeId = UUID.fromString("cb353f78-2b72-4c3c-8827-92ebe4f69fdf");
+classificationResults.sensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf";
 classificationResults.count = 4;
 classificationResults.confidenceLevel = 75;
 

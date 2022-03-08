@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5af86f432bb26495111feff7a33adeca2d54f372
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e85a6b5133026beca38a65a964f29cc5898324bb
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019144"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336240"
 ---
 # <a name="serviceannouncement-resource-type"></a>serviceAnnouncement 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "59019144"
 
 服务通信资源的顶级容器。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 healthOverviews](../api/serviceannouncement-list-healthoverviews.md)|[serviceHealth](../resources/servicehealth.md) 集合|从 healthOverviews 导航属性获取 serviceHealth 资源。|
@@ -29,7 +29,7 @@ ms.locfileid: "59019144"
 无。
 
 ## <a name="relationships"></a>关系
-|属性|类型|说明|
+|关系|类型|说明|
 |-|-|-|
 |messages|collection ([serviceUpdateMessage) ](serviceupdatemessage.md)|租户的服务消息集合。 此属性是包含的导航属性，可为空且可读。|
 |healthOverviews|collection ([serviceHealth](servicehealth.md)) |租户的服务运行状况信息的集合。 此属性是包含的导航属性，可为空且可读。|

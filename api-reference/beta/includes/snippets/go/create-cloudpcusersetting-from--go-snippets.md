@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0c7643b4e74bd39bebacf88ea92abe7389084201
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e00c33182ff0802e6caf1dbb83f662e9f5b9b180
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61102553"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334203"
 ---
 ```go
 
@@ -19,6 +19,12 @@ selfServiceEnabled := false
 requestBody.SetSelfServiceEnabled(&selfServiceEnabled)
 localAdminEnabled := true
 requestBody.SetLocalAdminEnabled(&localAdminEnabled)
+restorePointSetting := msgraphsdk.NewCloudPcRestorePointSetting()
+requestBody.SetRestorePointSetting(restorePointSetting)
+frequencyInHours := int32(16)
+restorePointSetting.SetFrequencyInHours(&frequencyInHours)
+userRestoreEnabled := true
+restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.cloudPcUserSetting",
 }

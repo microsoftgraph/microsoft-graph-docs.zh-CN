@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 248aabf5a846f5ecdd8a2aacb1a01e8e501d0571
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: e6982052065412a3ae79a99784d935ebb63a09b0
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854485"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335029"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -83,24 +83,24 @@ ms.locfileid: "62854485"
 
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
-| accountEnabled |Boolean| 如果已启用服务主体帐户，则为 `true`；否则，为 `false`。 支持 `$filter`（`eq`、`ne`、`not`、`in`）。|
+| accountEnabled |Boolean| 如果启用了服务主体帐户，则`true`;否则，`false`。支持`$filter`（`eq`、`ne`、`not`、`in`）。|
 | addIns | [addIn](addin.md) 集合 | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers/?view=odsp-graph-online&preserve-view=true)。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
-|alternativeNames|字符串集合| 用于按订阅、标识资源组和[托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的完整资源 ID 检索服务主体。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
+|alternativeNames|字符串集合| 用于按订阅检索服务主体，标识的[托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的资源组和完整资源 ID。支持`$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 |应用说明|String|相关应用程序公开的说明。|
 |appDisplayName|String|关联应用程序公开的显示名称。|
-|appId|String|关联应用程序的唯一标识符（其 **appId** 属性）。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`、 `startsWith`）。|
-|applicationTemplateId|String|创建 servicePrincipal 的 applicationTemplate 的唯一标识符。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `startsWith`）。|
-|appOwnerOrganizationId|String|包含注册应用程序的租户 ID。 这仅适用于应用程序支持的服务主体。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`）。|
-|appRoleAssignmentRequired|布尔|指定在用户登录或应用可以获取令牌前，是否需要先向用户或其他服务主体授予此服务主体的应用角色分配。 默认值为 `false`。 不可为空。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`）。 |
+|appId|String|关联应用程序的唯一标识符（其 **appId** 属性）。支持 `$filter` （`eq`、 `ne`、 `not`、 `in`、 `startsWith`）。|
+|applicationTemplateId|String|从中创建 servicePrincipal 的 applicationTemplate 的唯一标识符。只读。支持 `$filter` （`eq`、 `ne`、 `NOT`、 `startsWith`）。|
+|appOwnerOrganizationId|Guid|包含注册应用程序的租户 ID。 这仅适用于应用程序支持的服务主体。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`）。|
+|appRoleAssignmentRequired|Boolean|指定是否需要向用户或其他服务主体授予此服务主体的应用角色分配，然后用户才能登录或应用可以获取令牌。默认值为 `false`。不可为 null。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`）。 |
 |appRoles|[appRole](approle.md) 集合|该服务主体代表的应用程序公开的角色。 有关详细信息，请参阅 [应用程序](application.md)实体上的 **appRoles** 属性定义。 不可为 null。 |
 | deletedDateTime | DateTimeOffset | 删除服务主体的日期和时间。只读。 |
 | 说明 | 字符串 | 免费文本字段，提供面向内部最终用户的服务主体说明。 "MyApps ["](/azure/active-directory/user-help/my-apps-portal-end-user-access) 等最终用户门户将在此字段中显示应用程序说明。 最大允许大小为 1024 个字符。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`startsWith`）和 `$search`。|
 | disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册的应用程序。可能的值为：`null`（默认值）、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement`（原因可能包括可疑、滥用或恶意活动或违反 Microsoft 服务协议）。 <br><br> 支持 `$filter`（`eq`、`ne`、`not`）。  |
 |displayName|String|服务主体的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。 |
 |homepage|String|应用程序的主页或登录页面。|
-|id|String|服务主体的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。|
+|id|String|服务主体的唯一标识符。继承自 [directoryObject](directoryobject.md)。关键。不可为 null。只读。支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。|
 | info | [informationalUrl](informationalurl.md) | 所获取应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le` 和 `null` 值上的 `eq`）。  |
-|keyCredentials|[keyCredential](keycredential.md) 集合|与服务帐户关联的密钥凭据集合。 不可为 null。 支持 `$filter`（`eq`、`not`、`ge`、`le`）。            |
+|keyCredentials|[keyCredential](keycredential.md) 集合|与服务主体关联的密钥凭据的集合。不可为 null。支持 `$filter` （`eq`、 `not`、 `ge`、 `le`）。            |
 |loginUrl|String|指定服务提供商将用户重定向到 Azure AD 进行身份验证的 URL。 Azure AD 使用 URL 从 Microsoft 365 或Azure AD My Apps 启动应用程序。 该选项为空时，Azure AD 将对使用“[基于 SAML 的单一登录](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso)”配置的应用程序执行 IdP 启动的登录。 用户从 Microsoft 365、Azure AD My Apps 或Azure AD SSO URL 启动应用程序。|
 |logoutUrl|String| 指定 Microsoft 授权服务使用 OpenId Connect [正向通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[反向通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户时所使用的 URL。|
 |notes|String|免费文本字段，用于捕获有关服务主体的信息，通常用于操作。最大允许大小为 1024 个字符。|
@@ -114,20 +114,20 @@ ms.locfileid: "62854485"
 |servicePrincipalType|String|标识服务主体代表应用程序、托管标识还是旧版应用程序。 这是由 Azure AD 内部设置的。 **servicePrincipalType** 属性可以设置为三个不同的值： <ul><li>__应用程序__ - 表示应用程序或服务的服务主体。 **appId** 属性标识相关联的应用程序注册，并匹配 [应用程序](application.md)（可能来自不同租户）的 **appId**。 如果缺少关联的应用注册，将不会为服务主体颁发令牌。</li><li>__ManagedIdentity__ - 一个服务主体，代表 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)。 可授予表示托管标识的服务主体的访问权限和权限，但不能直接更新或修改。</li><li>__旧版__ - 表示在应用注册前或通过旧体验创建的应用程序的服务主体。 旧服务主体可以具有凭据、服务主体名称、答复 URL 以及其他由授权用户编辑但没有相关应用注册的属性。 值 **appId** 未将服务主体与应用注册关联。 服务主体只能在创建它的租户中使用。</li><li>__SocialIdp__ - 供内部使用。 </ul>|
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。只读。 <br><br>支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（多租户）中拥有 Microsoft 工作或学校帐户的用户。</li><li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户。</li><li>`PersonalMicrosoftAccount`：仅限拥有个人 Microsoft 帐户的用户。</li></ul> |
 |tags|String collection| 可用于对服务主体进行分类和识别的自定义字符串。不可为空。<br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。 |
-| tokenEncryptionKeyId |String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+| tokenEncryptionKeyId |字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定该服务主体代表的应用程序的已验证发布者。
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|此应用或服务的应用角色分配，已授予用户、组和其他服务主体。 支持 `$expand`。|
-|appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|另一个应用或服务的应用角色分配，已授予此服务主体的。 支持 `$expand`。|
-|claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) 集合|为此服务主体分配的 claimsMappingPolicies。 支持 `$expand`。|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|此应用或服务的应用角色分配，已授予用户、组和其他服务主体。支持 `$expand`。|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|另一个应用或服务的应用角色分配，授予此服务主体。支持 `$expand`。|
+|claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) 集合|分配给此服务主体的 claimsMappingPolicies。支持 `$expand`。|
 |createdObjects|[directoryObject](directoryobject.md) collection|由此服务主体创建的目录对象。只读。可为空。|
-|homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合|为此服务主体分配的 homeRealmDiscoveryPolicies。 支持 `$expand`。|
-|memberOf|[directoryObject](directoryobject.md) 集合|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为空。 支持 `$expand`。|
+|homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合|为此服务主体分配的 homeRealmDiscoveryPolicies。支持 `$expand`。|
+|memberOf|[directoryObject](directoryobject.md) 集合|此服务主体所属的角色。HTTP 方法：GET 只读。空。支持 `$expand`。|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|委派权限授予设置此服务主体以代表已登录用户访问 API 的权限。只读。可为空。|
-|ownedObjects|[directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为 NULL。 支持 `$expand`。|
+|ownedObjects|[directoryObject](directoryobject.md) 集合|属于此服务主体的目录对象。只读。可为空。支持 `$expand`。|
 |owners|[directoryObject](directoryobject.md) 集合|servicePrincipal 所述的目录对象。 所有者是一组允许修改此对象的非管理员用户或 servicePrincipal。 只读。 可为 NULL。 支持 `$expand`。|
 |tokenIssuancePolicies|[tokenIssuancePolicy](tokenissuancepolicy.md) 集合|为此服务主体分配的 tokenIssuancePolicies。|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenlifetimepolicy.md) 集合|为此服务主体分配的 tokenLifetimePolicies。|
@@ -159,7 +159,7 @@ ms.locfileid: "62854485"
   "alternativeNames": ["String"] ,
   "appDisplayName": "String",
   "appId": "String",
-  "appOwnerOrganizationId": "GUID",
+  "appOwnerOrganizationId": "Guid",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "disabledByMicrosoftStatus": "String",

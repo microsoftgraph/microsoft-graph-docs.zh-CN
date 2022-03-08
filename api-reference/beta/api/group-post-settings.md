@@ -1,24 +1,27 @@
 ---
-title: 在组上创建目录设置
+title: 创建设置
 description: 使用此 API 为组创建新的目录设置。
 author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fc706e05df060ac9c5cf850646ac95a2c48e0a4b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 64d9318b1d56094975ad92a5cb43a01269cd5c7b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135504"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332278"
 ---
-# <a name="create-a-directory-setting-on-groups"></a>在组上创建目录设置
+# <a name="create-settings"></a>创建设置
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 为组创建新的目录设置。
+基于 [directorySettingTemplates](../resources/directorysettingtemplate.md) 中可用的模板创建新设置。 这些设置可以在租户级别或组级别。
+
+组设置仅适用于Microsoft 365组。 名为 的`Group.Unified`模板可用于配置租户范围的Microsoft 365组设置`Group.Unified.Guest`，而名为 的模板可用于配置特定于组的设置。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,10 +32,19 @@ ms.locfileid: "62135504"
 |应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
+创建租户范围设置。
+<!-- { "blockType": "ignored" } -->
+```http
+POST /settings
+```
+
+创建特定于组的设置。
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/settings
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
@@ -43,33 +55,33 @@ POST /groups/{id}/settings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
 
-## <a name="example"></a>示例
-### <a name="request"></a>请求
+## <a name="examples"></a>示例
+
+### <a name="example-1-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>示例 1：创建用于阻止特定组来宾Microsoft 365设置
+
+#### <a name="request"></a>请求
 下面展示了示例请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directorysetting_from_group"
+  "name": "create_groupsetting_from_groupsettings_for_guests"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/settings
+POST https://graph.microsoft.com/beta/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings
 Content-type: application/json
 
 {
-  "directorySetting": {
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
+    "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
     "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
     ]
-  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -92,7 +104,7 @@ Content-type: application/json
 
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -105,17 +117,87 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "directorySetting": {
-    "id": "id-value",
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+    "id": "a06fa228-3042-4662-bd09-33e298da1afe",
+    "displayName": null,
+    "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
     "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
     ]
-  }
+}
+```
+
+### <a name="example-2-create-a-directory-or-tenant-level-setting"></a>示例 2：创建目录或租户级别设置
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "create_directorysettings"
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/settings
+Content-type: application/json
+
+{
+    "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+    "values": [
+        {
+            "name": "GuestUsageGuidelinesUrl",
+            "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+            "name": "EnableMSStandardBlockedWords",
+            "value": "true"
+        },
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        },
+        {
+            "name": "PrefixSuffixNamingRequirement",
+            "value": "[Contoso-][GroupName]"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directorySetting"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+    "id": "844d252c-4de2-43eb-a784-96df77231aae",
+    "displayName": null,
+    "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+    "values": [
+        {
+            "name": "GuestUsageGuidelinesUrl",
+            "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+            "name": "EnableMSStandardBlockedWords",
+            "value": "true"
+        },
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        },
+        {
+            "name": "PrefixSuffixNamingRequirement",
+            "value": "[Contoso-][GroupName]"
+        }
+    ]
 }
 ```
 

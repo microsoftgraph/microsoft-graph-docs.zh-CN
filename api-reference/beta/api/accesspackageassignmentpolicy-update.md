@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8fa0f3f1b304c830165c30496ca7e40c1dee2dcd
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: a5c02fc2b0850ec3a58638ce98e0dac45683ee39
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266029"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332971"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>更新 accessPackageAssignmentPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "61266029"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新现有 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象以更改其一个或多个属性，如显示名称或说明。
+更新现有 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象以更改其一个或多个属性，例如显示名称或说明。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -51,23 +51,24 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|策略显示名称。|
-|description|String|策略的说明。|
-|canExtend|布尔值|指示用户是否可以在审批后延长访问包分配持续时间。|
+|说明|String|策略的说明。|
+|canExtend|Boolean|指示用户是否可以在审批后延长访问包分配持续时间。|
 |durationInDays|Int32|此策略中的分配在到期之前持续等待的天数。|
 |expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Who从此策略请求此访问包。|
 |requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Who必须批准此策略中的访问包请求。|
-|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Who必须检查此策略中对访问包的分配以及分配时间。 如果不需要审阅，则此属性为 null。|
+|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Who必须查看此策略中对访问包的分配以及分配时间。 如果不需要审阅，则此属性为 null。|
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
-
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-update-the-details-of-a-policy"></a>示例 1：更新策略的详细信息
+
+#### <a name="request"></a>请求
 在此策略更新中，已删除多选问题的选项之一。 未来请求者将不再可以使用已删除的选项。
 
 
@@ -176,7 +177,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -184,7 +185,7 @@ Content-Type: application/json
 
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -251,6 +252,86 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
         "isSingleLineQuestion": false
     }]
+}
+```
+
+
+
+### <a name="example-2-remove-the-customextensionhandlers-from-a-policy"></a>示例 2：从策略中删除 customExtensionHandlers
+
+若要从策略中删除 **customExtensionHandlers** 及其关联的自定义工作流扩展对象的集合，请为 **customExtensionHandlers** 对象分配一个空集合。
+
+#### <a name="request"></a>请求
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentpolicy_delete_customExtensionHandlers"
+}
+-->
+
+```http
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197
+Content-Type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with custom access package workflow extension",
+    "description": "Run specified custom access package workflow extension at different stages.",
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": []
+    },
+    "accessReviewSettings": null,
+    "customExtensionHandlers": []
+}
+```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-delete-customextensionhandlers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+
+#### <a name="response"></a>响应
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with custom access package workflow extension",
+    "description": "Run specified custom access package workflow extension at different stages.",
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": []
+    },
+    "accessReviewSettings": null
 }
 ```
 

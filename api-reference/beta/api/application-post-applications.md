@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 09d035b30be3470c3fb18f15abcb9c43e21bfb9a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d34b29722ae58a3244bc6629b49ee3c88727bf35
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097287"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332628"
 ---
 # <a name="create-application"></a>创建应用程序
 
@@ -160,7 +160,8 @@ Content-type: application/json
             "enableIdTokenIssuance": false,
             "enableAccessTokenIssuance": false
         }
-    }
+    }, 
+    "windows" : null
 }
 ```
 

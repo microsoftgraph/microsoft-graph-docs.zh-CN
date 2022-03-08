@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 86362d4caa00d20b5a4665da25f8cf29d763c94b46d38204ea956609408f108e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 48609132e50ffa455862fcadb17fc87169d6ad79
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903019"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334224"
 ---
 ```javascript
 
@@ -19,7 +19,11 @@ const cloudPcUserSetting = {
   '@odata.type': '#microsoft.graph.cloudPcUserSetting',
   displayName: 'Example',
   selfServiceEnabled: false,
-  localAdminEnabled: true
+  localAdminEnabled: true,
+  restorePointSetting: {
+    frequencyInHours: 16,
+    userRestoreEnabled: true
+  }
 };
 
 await client.api('/deviceManagement/virtualEndpoint/userSettings')

@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7e52f4850cab45f7cf2ecbcc42f9346e56d27c8e0a01f284d2ef9eda9935c6fb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9b833a0d635745b922b9911c3857d40883a579ce
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57333842"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351222"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AdministrativeUnit administrativeUnit = graphClient.directory().administrativeUnits("{id}")
+AdministrativeUnit administrativeUnit = graphClient.directory().administrativeUnits("4d7ea995-bc0f-45c0-8c3e-132e93bf95f8")
     .buildRequest()
     .get();
 

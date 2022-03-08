@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c1d1e150d0eae6ed820b4ed0963a010b3bcfcea1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 551c5b4ff1a96eb2efd6ad06d4f614f83fe1f87d
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098491"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334469"
 ---
 # <a name="update-tenantappmanagementpolicy"></a>更新 tenantAppManagementPolicy
 
@@ -24,11 +24,11 @@ ms.locfileid: "62098491"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最低特权到最高特权）                                                |
-| :------------------------------------- | :--------------------------------------------------------- |
-| 委派（工作或学校帐户）     | Policy.ReadWrite.ApplicationConfiguration |
-| 委派（个人 Microsoft 帐户） | 不支持。                                             |
-| 应用程序                            | Policy.ReadWrite.ApplicationConfiguration |
+| 权限类型                        | 权限（从最低特权到最高特权） |
+| :------------------------------------- | :------------------------------------------ |
+| 委派（工作或学校帐户）     | Policy.ReadWrite.ApplicationConfiguration   |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
+| 应用程序                            | Policy.ReadWrite.ApplicationConfiguration   |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,13 +49,13 @@ PATCH /policies/defaultAppManagementPolicy
 
 在请求正文中，提供 [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) 中应更新的相关字段的值。 请求正文中未包含的现有属性将保留其以前的值。 为获得最佳性能，请勿在请求有效负载中包括未更改的值。
 
-| 属性                | 类型                                                                        | 说明 |
-|:------------------------|:----------------------------------------------------------------------------|:----------------------------------------------------|
-| displayName                  | String                                                                   | 默认显示名称的默认值。 继承自 [policyBase](../resources/policybase.md)。                                |
-| 说明                  | String                                                                   | 默认策略的说明。 继承自 [policyBase](../resources/policybase.md)。                                |
-| isEnabled                    | Boolean                                                                  | 表示策略是否已启用。 默认值为 false。                                    |
-| applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | 应用于租户中所有应用程序对象的默认限制。               |
-| servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | 应用于租户中所有服务主体对象的默认限制。 |
+| 属性                     | 类型                                                                     | 说明                                                                                      |
+| :--------------------------- | :----------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
+| applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | 应用于租户中所有应用程序对象的默认限制。                     |
+| displayName                  | String                                                                   | 默认显示名称的默认值。 继承自 [policyBase](../resources/policybase.md)。 |
+| 说明                  | String                                                                   | 默认策略的说明。 继承自 [policyBase](../resources/policybase.md)。  |
+| isEnabled                    | Boolean                                                                  | 表示策略是否已启用。 默认值为 false。                                        |
+| servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | 应用于租户中所有服务主体对象的默认限制。               |
 
 ## <a name="response"></a>响应
 
@@ -67,9 +67,8 @@ PATCH /policies/defaultAppManagementPolicy
 
 下面展示了示例请求。
 
-
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_tenantAppManagementPolicy"
@@ -86,22 +85,27 @@ Content-Type: application/json
             {
                 "restrictionType": "passwordAddition",
                 "maxLifetime": null,
-                "restrictForAppsCreatedAfterDateTime": "2021-04-01T10:37:00Z"
+                "restrictForAppsCreatedAfterDateTime": "2021-01-01T10:37:00Z"
             },
             {
                 "restrictionType": "passwordLifetime",
                 "maxLifetime": "P4DT12H30M5S",
-                "restrictForAppsCreatedAfterDateTime": "2019-01-01T10:37:00Z"
+                "restrictForAppsCreatedAfterDateTime": "2017-01-01T10:37:00Z"
             },
             {
                 "restrictionType": "symmetricKeyAddition",
                 "maxLifetime": null,
-                "restrictForAppsCreatedAfterDateTime": "2021-04-01T10:37:00Z"
+                "restrictForAppsCreatedAfterDateTime": "2021-01-01T10:37:00Z"
+            },
+            {
+                "restrictionType": "customPasswordAddition",
+                "maxLifetime": null,
+                "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
             },
             {
                 "restrictionType": "symmetricKeyLifetime",
                 "maxLifetime": "P40D",
-                "restrictForAppsCreatedAfterDateTime": "2015-04-01T10:37:00Z"
+                "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
             }
         ],
         "keyCredentials":[
@@ -114,32 +118,38 @@ Content-Type: application/json
     }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-tenantappmanagementpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-tenantappmanagementpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-tenantappmanagementpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenantappmanagementpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/update-tenantappmanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-tenantappmanagementpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>响应
 

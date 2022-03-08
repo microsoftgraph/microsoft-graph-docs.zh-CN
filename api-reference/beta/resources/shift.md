@@ -1,16 +1,16 @@
 ---
 title: Shift 资源类型
 description: 班次是计划中计划工作的一个单元。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ae5e89d2d483219157d5f2e82b051cee751b02d4
-ms.sourcegitcommit: 54e19ec90dc5441e1b93f713889ddc831782789e
+ms.openlocfilehash: 52b170fef5a283cfaa31199d78bd943212539434
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61995947"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334441"
 ---
 # <a name="shift-resource-type"></a>Shift 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "61995947"
 
 计划中的计划工作 [单位](schedule.md)。 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -28,15 +28,15 @@ ms.locfileid: "61995947"
 |[列出班次](../api/schedule-list-shifts.md) | [shift](shift.md) 集合 | 获取此 `shifts` 计划中的 列表。|
 |[获取班次](../api/shift-get.md) | [shift](shift.md) | 按 ID 获取 `shift`。|
 |[替换班次](../api/shift-put.md) | [shift](shift.md) | 更换 `shift`。|
-|[删除班次](../api/shift-delete.md) | None | 从 `shift` 计划中删除 。|
+|[删除班次](../api/shift-delete.md) | 无 | `shift`从计划中删除 。|
 
 ## <a name="properties"></a>属性
 |名称          |类型           |说明                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |`shift` 的 ID。|
-| userId            |`string`      |分配给 的用户的 `shift` ID。 必需。 |
-| schedulingGroupId         |`string`      |属于的计划组的 `shift` ID。 必需。 |
-| sharedShift   |[shiftItem](shiftitem.md)  |员工和经理都可查看的共享 `shift` 版本。 必需。 |
+| userId            |`string`      |分配给 的用户 `shift`的 ID。 必需项。 |
+| schedulingGroupId         |`string`      |属于的计划组的 `shift` ID。 必需项。 |
+| sharedShift   |[shiftItem](shiftitem.md)  |员工和经理 `shift` 都可查看的共享版本。 必需项。 |
 | draftShift        |[shiftItem](shiftitem.md)        |经理可查看 `shift` 的此草稿版本。 必需。 |
 | createdDateTime       |`DateTimeOffset`        |首次创建此时间戳 `shift` 的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |上次更新时间戳 `shift` 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |

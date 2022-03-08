@@ -1,16 +1,16 @@
 ---
 title: List timesOff
 description: 获取此计划中的 timesOff 列表。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3c979f9b9a0912edfce4566d1724f99ecb344490
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 60b7539bc126b3ef13b8bd03c721e9aea95c3727
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129483"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337325"
 ---
 # <a name="list-timesoff"></a>List timesOff
 
@@ -40,7 +40,7 @@ ms.locfileid: "62129483"
 GET /teams/{teamId}/schedule/timesOff
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 $filter [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 $filter [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /teams/{teamId}/schedule/timesOff
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [timeOff](../resources/timeoff.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [timeOff](../resources/timeoff.md) 对象集合。
 
 ## <a name="example"></a>示例
 

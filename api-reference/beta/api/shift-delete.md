@@ -1,16 +1,16 @@
 ---
 title: 删除班次
 description: 从计划中删除班次。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 13ab5b3e6fd9550ca8647f182221e298df420676
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1a42c895caaabf957e797373d4056ef5b3877347
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123009"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337311"
 ---
 # <a name="delete-shift"></a>删除班次
 

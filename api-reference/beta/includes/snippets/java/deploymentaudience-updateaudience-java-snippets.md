@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1c3ecdd4b50b6dbcdd5b9e9c41cb6b45af9412ad633ce5a3a0672e45a160ab96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c92c1aaf66185f78443da45421eed9f4610c2ed0
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57378373"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334154"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<UpdatableAsset> addMembersList = new LinkedList<UpdatableAsset>();
-UpdatableAsset addMembers = new UpdatableAsset();
+AzureADDevice addMembers = new AzureADDevice();
 addMembers.id = "String (identifier)";
 
 addMembersList.add(addMembers);
@@ -21,7 +21,7 @@ updatableAssetCollectionResponse.value = addMembersList;
 UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
 
 LinkedList<UpdatableAsset> removeMembersList = new LinkedList<UpdatableAsset>();
-UpdatableAsset removeMembers = new UpdatableAsset();
+AzureADDevice removeMembers = new AzureADDevice();
 removeMembers.id = "String (identifier)";
 
 removeMembersList.add(removeMembers);
@@ -30,7 +30,7 @@ updatableAssetCollectionResponse.value = removeMembersList;
 UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
 
 LinkedList<UpdatableAsset> addExclusionsList = new LinkedList<UpdatableAsset>();
-UpdatableAsset addExclusions = new UpdatableAsset();
+AzureADDevice addExclusions = new AzureADDevice();
 addExclusions.id = "String (identifier)";
 
 addExclusionsList.add(addExclusions);
@@ -39,7 +39,7 @@ updatableAssetCollectionResponse.value = addExclusionsList;
 UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
 
 LinkedList<UpdatableAsset> removeExclusionsList = new LinkedList<UpdatableAsset>();
-UpdatableAsset removeExclusions = new UpdatableAsset();
+AzureADDevice removeExclusions = new AzureADDevice();
 removeExclusions.id = "String (identifier)";
 
 removeExclusionsList.add(removeExclusions);

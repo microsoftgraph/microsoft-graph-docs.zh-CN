@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: eaad339bd86221c1dcae66c0b9d2b63772c7f214877765910c2192e7e1b481a3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 76f171ada18215f553c38a533c4e2a4173c09134
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161600"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336814"
 ---
 ```java
 
@@ -16,7 +16,7 @@ AssignedLicense addLicenses = new AssignedLicense();
 LinkedList<UUID> disabledPlansList = new LinkedList<UUID>();
 disabledPlansList.add(UUID.fromString("11b0131d-43c8-4bbb-b2c8-e80f9a50834a"));
 addLicenses.disabledPlans = disabledPlansList;
-addLicenses.skuId = UUID.fromString("guid");
+addLicenses.skuId = UUID.fromString("45715bb8-13f9-4bf6-927f-ef96c102d394");
 
 addLicensesList.add(addLicenses);
 

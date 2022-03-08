@@ -1,16 +1,16 @@
 ---
 title: 替换 timeOffReason
 description: 替换现有的 timeOffReason。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a6b3f24d4b1fe2b52d161f4c02afb1ce6734e585
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d8486f3ca4cf04160d4025ae26778ba76e857f36
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60977364"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333342"
 ---
 # <a name="replace-timeoffreason"></a>替换 timeOffReason
 
@@ -20,7 +20,7 @@ ms.locfileid: "60977364"
 
 替换现有的 [timeOffReason](../resources/timeoffreason.md)。
 
-如果指定的 [timeOffReason](../resources/timeoffreason.md) 不存在，此方法将返回 `404 Not found` 。
+如果指定的 [timeOffReason](../resources/timeoffreason.md) 不存在，此方法将返回 `404 Not found`。
 
 ## <a name="permissions"></a>权限
 
@@ -57,7 +57,7 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [timeOffReason](../resources/timeoffreason.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [timeOffReason](../resources/timeoffreason.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -97,7 +97,7 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/java/timeoffreason-put-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/timeoffreason-put-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

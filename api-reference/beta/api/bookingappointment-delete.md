@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 8a2fddd42aca5a4b8f7af09835f51458d479b605
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b66de4e6e3bed721530bee48eacf690e17ca3bd1
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116561"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334938"
 ---
 # <a name="delete-bookingappointment"></a>删除 bookingAppointment
 
@@ -18,7 +18,7 @@ ms.locfileid: "62116561"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除指定的 bookingbusiness 中的[bookingAppointment。](../resources/bookingbusiness.md) [](../resources/bookingappointment.md)
+删除[指定 bookingbusiness 中的 bookingAppointment](../resources/bookingappointment.md)。[](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,6 @@ ms.locfileid: "62116561"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /bookingBusinesses/{id}/appointments/{id}
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -47,8 +46,8 @@ DELETE /bookingBusinesses/{id}/appointments/{id}
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面展示了示例请求。
+### <a name="request"></a>请求
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -84,8 +83,9 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@c
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

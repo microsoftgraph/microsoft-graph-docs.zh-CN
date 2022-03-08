@@ -1,16 +1,16 @@
 ---
 title: 删除成员
-description: 通过 members 导航Microsoft 365从安全组或安全组中删除成员。
+description: 通过 members 导航属性，删除 Microsoft 365 组或安全组的成员。
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 20d51cee2eb4fc0ab9d53b9e178c04f2c851b966
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 12802ccd5486776dcdaeeb32c10f0971c78b7f39
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201699"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333433"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "62201699"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过 members 导航属性从 **组中删除** 成员。 你不能从具有动态成员身份的组中删除成员。
+通过 **成员** 导航属性从组中删除成员。 你不能从具有动态成员身份的组中删除成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,6 +28,9 @@ ms.locfileid: "62201699"
 |委派（工作或学校帐户） | GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> 若要从可分配角色的组中删除成员，还必须为调用用户或应用分配 *RoleManagement.ReadWrite.Directory* 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

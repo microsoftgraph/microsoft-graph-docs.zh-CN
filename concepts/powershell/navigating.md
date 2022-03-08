@@ -3,12 +3,12 @@ title: 导航 Microsoft Graph PowerShell SDK
 description: Microsoft Graph PowerShell SDK 包含大量命令。 了解如何找到适用于想要实现的目标的命令。
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: c4e127df5f8703df6712cc8a28cf0ace078694d6
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 2c4135691712bcc6cbe8a32a776aa40844ec668e
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894780"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336219"
 ---
 # <a name="navigating-the-microsoft-graph-powershell-sdk"></a>导航 Microsoft Graph PowerShell SDK
 
@@ -36,7 +36,7 @@ PowerShell 命令使用动词-名词对命名，例如 `Get-Command` 或 `Update
 
 对于函数和操作，它有点复杂。 Microsoft 中的 API Graph作为 OData 函数或操作实现的 API 通常使用至少一个动词进行命名。 相应命令的动作基于函数或操作名称中的动词。 但是，PowerShell 中的命令谓词必须符合特定的命名规则，[](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)因此这可能会导致名称到命令的映射不直观。
 
-让我们看一些示例。 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) API 使用 ，且 `get``Get` 是已批准的 PowerShell 谓词，因此其命令为 。`Get-MgUserCalendarSchedule` 另 [一](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) 方面，事件的取消 API 使用未批准的动词 `cancel`。 用于取消或停止使用某些内容的批准动词是 ， `Stop`因此它的命令是 `Stop-MgUserEvent`。 最后， [snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) API 的动词 `snooze`没有经过 PowerShell 批准的等效项。 对于 API，SDK 使用谓词 `Invoke`，因此 API 的命令为 `Invoke-MgSnoozeUserEventReminder`。
+让我们看一些示例。 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) API 使用 ，且 `get``Get` 是已批准的 PowerShell 谓词，因此其命令为 。`Get-MgUserCalendarSchedule` 另 [一](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) 方面，事件的取消 API 使用未批准的动词 `cancel`。 用于取消或停用某些内容的批准动词为 ， `Stop`因此命令为 `Stop-MgUserEvent`。 最后， [snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) API 的动词 `snooze`没有经过 PowerShell 批准的等效项。 对于 API，SDK 使用谓词 `Invoke`，因此 API 的命令为 `Invoke-MgSnoozeUserEventReminder`。
 
 ### <a name="command-nouns"></a>命令名词
 

@@ -1,16 +1,16 @@
 ---
 title: 创建班次
 description: 创建新的班次。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bf7b80efd09f7ddc937f23beddf4d5dc60e2e7c4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2da457fd8c08e83a322fb71174dae4a67fba8122
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125503"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331911"
 ---
 # <a name="create-shift"></a>创建班次
 

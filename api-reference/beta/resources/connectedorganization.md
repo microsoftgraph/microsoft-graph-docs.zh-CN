@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 81719d0c6028461561b50f93ecf96ed5645d3794
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 6e782def17541cbfe48923d788e8cbf774c1a473
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650592"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334098"
 ---
 # <a name="connectedorganization-resource-type"></a>connectedOrganization 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "61650592"
 
 在[Azure AD管理](entitlementmanagement-overview.md)中，连接的组织是一个对用户可以请求访问权限的另一个组织的目录或域的引用。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -30,7 +30,7 @@ ms.locfileid: "61650592"
 |[更新 connectedOrganization](../api/connectedorganization-update.md) | | 更新 connectedOrganization。 |
 |[删除 connectedOrganization](../api/connectedorganization-delete.md) |无 | 删除 connectedOrganization。 |
 |[列出 internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 connectedOrganization 的内部发起人的列表。 |
-|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 connectedOrganization 的外部发起人的列表。 |
+|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) 集合 | 检索 connectedOrganization 的外部发起人的列表。 |
 |[添加 internalSponsors](../api/connectedorganization-post-internalsponsors.md) | 无 | 将用户或组添加到 connectedOrganization 的内部发起人。 |
 |[添加 externalSponsors](../api/connectedorganization-post-externalsponsors.md) | 无 | 将用户或组添加到 connectedOrganization 的外部发起人。 |
 |[删除 internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | 无 | 从 connectedOrganization 的内部发起人中删除用户或组。 |
@@ -47,13 +47,13 @@ ms.locfileid: "61650592"
 |id|String| 只读。|
 |modifiedBy|String|上次修改此资源的用户的 UPN。 只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|state|connectedOrganizationState|已连接组织的状态定义具有请求者作用域类型的分配策略 `AllConfiguredConnectedOrganizationSubjects` 是否适用。 可取值为：`configured`、`proposed`。|
+|state|connectedOrganizationState|已连接组织的状态定义具有请求者 `AllConfiguredConnectedOrganizationSubjects` 作用域类型的分配策略是否适用。 可取值为：`configured`、`proposed`。|
+|identitySources|[identitySource](identitySource.md) 集合| 此已连接组织中标识源， [azureActiveDirectoryTenant](azureactivedirectorytenant.md)、 [domainIdentitySource](domainidentitysource.md) 或 [externalDomainFederation 之一](externaldomainfederation.md)。 只读。 可为 NULL。 支持 `$select` 并 (`$filter` `eq`) 。 若要按派生类型进行筛选，必须使用其完整的 OData 转换声明资源，例如， `$filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f')`。|
 
 ## <a name="relationships"></a>关系
 
 |关系|类型|说明|
 |:---|:---|:---|
-|identitySources|[identitySource](identitySource.md) 集合| 此已连接组织中的身份源[，azureActiveDirectoryTenant、domainIdentitySource](azureactivedirectorytenant.md)或[externalDomainFederation 之一](externaldomainfederation.md)。 [](domainidentitysource.md) 只读。 可为 NULL。 支持 `$select` 并 `$filter` `eq` () 。 若要按派生类型进行筛选，必须使用其完整的 OData 转换声明资源，例如， `microsoft.graph.azureActiveDirectoryTenant.`|
 |internalSponsors| [directoryObject](directoryobject.md) 集合| 可为 NULL。|
 |externalSponsors| [directoryObject](directoryobject.md) collection| 可为 Null。|
 

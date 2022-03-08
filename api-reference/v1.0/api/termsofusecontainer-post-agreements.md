@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 46dbe9c94f95c7a762869456e5d95a7426b1e3ed
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: aa17625e8121726dd371dee7946655249fb64991
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650783"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336254"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -48,11 +48,11 @@ POST /identityGovernance/termsOfUse/agreements
 |isViewingBeforeAcceptanceRequired|Boolean|指示用户在接受之前是否必须展开和查看协议。|
 |fileName|String|协议文件的名称 (例如，TOU.pdf) 。|
 |isDefault|Boolean|指示如果语言与客户端首选项匹配，这是否是默认协议文件。 如果未将任何文件标记为默认文件，则第一个文件将被视为默认文件。|
-|language|String|协议文件的语言，格式为"languagecode2-country/regioncode2"。 "languagecode2"是派生自 ISO 639-1 的两个字母小写代码，而"country/regioncode2"派生自 ISO 3166，通常包含两个小写字母或 BCP-47 语言标记。 例如，美国英语为 `en-US` 。|
+|language|String|协议文件的语言，格式为"languagecode2-country/regioncode2"。 "languagecode2"是派生自 ISO 639-1 的两个字母小写代码，而"country/regioncode2"派生自 ISO 3166，通常包含两个小写字母或 BCP-47 语言标记。 例如，美国英语为 `en-US`。|
 |data|Binary|表示 PDF 文档的使用条款的数据。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201, Created` 正文中返回 响应[](../resources/agreement.md)代码和 agreement 对象。
+如果成功，此方法在响应`201, Created`正文中返回 响应代码[](../resources/agreement.md)和 agreement 对象。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -99,8 +99,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-agreement-from-agreements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-agreement-from-agreements-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

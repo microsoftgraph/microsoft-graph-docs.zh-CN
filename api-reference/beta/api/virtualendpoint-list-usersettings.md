@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b47434b128e801e4bc5fbf2fef9dc59247059a10
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7416c94db0f88a298bfd243ec19e507abeb5aa3f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136791"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337052"
 ---
 # <a name="list-usersettings"></a>列出 userSettings
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/userSettings
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 、 `$filter` 和 `$expand` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 、 `$select``$filter`和 `$expand` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,7 +57,7 @@ GET /deviceManagement/virtualEndpoint/userSettings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [cloudPcUserSetting](../resources/cloudpcusersetting.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -121,6 +121,10 @@ Content-Type: application/json
       "displayName": "Test1",
       "selfServiceEnabled": true,
       "localAdminEnabled": false,
+      "restorePointSetting": {
+        "frequencyInHours": 16,
+        "userRestoreEnabled": true
+      },
       "lastModifiedDateTime": "2021-02-01T10:29:57Z",
       "createdDateTime": "2021-02-01T10:29:57Z"
     }

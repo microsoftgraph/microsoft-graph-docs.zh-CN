@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0a0984bf8ee84111132612677a202db93be70a2c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4c10e9b12bb0073cdc81994e7f03430aad55c1e9
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114385"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332621"
 ---
 # <a name="create-extensionproperty"></a>创建 extensionProperty
 
@@ -49,7 +49,7 @@ POST /applications/{id}/extensionProperties
 在请求正文中，提供具有以下属性的 [extensionProperty](../resources/extensionproperty.md) 对象。
 
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |DataType|String| 指定数据类型属性可以保留的值的值的值。 支持以下值。 不可为 null。 <ul><li>`Binary` - 最多 256 个字节</li><li>`Boolean`</li><li>`DateTime` - 必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` - 32 位值。</li><li>`LargeInteger` - 64 位值。</li><li>`String` - 最多 256 个字符</li></ul>|
 |name|String| 扩展属性的名称。 不可为 null。 |
@@ -58,7 +58,7 @@ POST /applications/{id}/extensionProperties
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201, Created` 响应正文中返回 响应代码和新 [extensionProperty](../resources/extensionproperty.md) 对象。
+如果成功，此方法在响应 `201, Created` 正文中返回 响应代码和新 [extensionProperty](../resources/extensionproperty.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -73,14 +73,14 @@ POST /applications/{id}/extensionProperties
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/extensionProperties
+POST https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties
 Content-type: application/json
 
 {
-    "name": "extensionName",
-    "dataType": "string",
+    "name": "jobGroup",
+    "dataType": "String",
     "targetObjects": [
-        "Application"
+        "User"
     ]
 }
 ```
@@ -126,14 +126,15 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "a2c459db-f5dc-4328-ae9b-118e88d04d19",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('fd918e4b-c821-4efb-b50a-5eddd23afc6f')/extensionProperties/$entity",
+    "id": "da38c7b1-133e-4a79-abcd-e2fd586ce621",
     "deletedDateTime": null,
-    "appDisplayName": "Display name",
-    "name": "extension_b3efaf8f68a44275abcff28ef86b2ee3_extensionName",
+    "appDisplayName": "b2c-extensions-app. Do not modify. Used by AADB2C for storing user data.",
     "dataType": "String",
     "isSyncedFromOnPremises": false,
+    "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
     "targetObjects": [
-        "Application"
+        "User"
     ]
 }
 ```

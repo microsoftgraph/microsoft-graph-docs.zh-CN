@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 04a7511205c654241da53b97404da7deb5e254d5
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 05e2b5deee0381e34c6d03a2cb9f046209ab44bf
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62855190"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336835"
 ---
 # <a name="user-assignlicense"></a>用户：assignLicense
 
@@ -42,7 +42,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。可以通过设置 [assignedLicense](../resources/assignedlicense.md) 对象中的 **disabledPlans** 属性禁用与许可证相关的计划。|
-|removeLicenses|GUID 集合|标识要删除的许可证的 GUID 的集合。|
+|removeLicenses|Guid 集合|标识要删除的许可证的 GUID 的集合。|
 
 ## <a name="response"></a>响应
 

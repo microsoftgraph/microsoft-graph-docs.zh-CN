@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 70fcb44414bae5f22ab42a01be52f45aa6c1b738
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: b7fbc28d9d9f819b3c1308c8a25e6f622c60cbe6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344123"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336282"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal： removeKey
 
@@ -52,7 +52,7 @@ POST /servicePrincipals/{id}/removeKey
 
 | 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
-| keyId     | GUID | 密码的唯一标识符。|
+| keyId     | Guid | 密码的唯一标识符。|
 | proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss`- 颁发者需要是发出调用的 servicePrincipal 的 ID。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
 
 ## <a name="response"></a>响应

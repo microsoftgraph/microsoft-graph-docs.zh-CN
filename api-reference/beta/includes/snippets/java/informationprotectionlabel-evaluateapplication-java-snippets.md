@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9aecdff1dc566f2145689bb43787502f0d365c56b8ba6cfdfb2cb57b99c4eeb5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c12392ce8e165153610705b41dea9bcb7d752d30
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161413"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351237"
 ---
 ```java
 
@@ -56,7 +56,7 @@ LabelingOptions labelingOptions = new LabelingOptions();
 labelingOptions.additionalDataManager().put("assignmentMethod@odata.type", new JsonPrimitive("#microsoft.graph.assignmentMethod"));
 labelingOptions.assignmentMethod = AssignmentMethod.STANDARD;
 labelingOptions.additionalDataManager().put("labelId@odata.type", new JsonPrimitive("#Guid"));
-labelingOptions.labelId = UUID.fromString("97309856-9c28-4ac6-9382-5f8bc20c457b");
+labelingOptions.labelId = "97309856-9c28-4ac6-9382-5f8bc20c457b";
 labelingOptions.downgradeJustification = null;
 labelingOptions.additionalDataManager().put("extendedProperties@odata.type", new JsonPrimitive("#Collection(microsoft.graph.keyValuePair)"));
 LinkedList<KeyValuePair> extendedPropertiesList = new LinkedList<KeyValuePair>();

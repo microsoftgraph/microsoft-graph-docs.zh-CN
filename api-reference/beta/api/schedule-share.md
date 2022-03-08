@@ -1,16 +1,16 @@
 ---
 title: schedule： share
 description: 与计划成员共享计划时间范围。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 06622a92c35964957df9e73a7eaebd5c87b3a07d
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: da31a4a02da016f485002129b5cc3a2675a61cea
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345570"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337318"
 ---
 # <a name="schedule-share"></a>schedule： share
 
@@ -53,8 +53,8 @@ POST /teams/{teamId}/schedule/share
 
 |参数                   |类型           |说明  |
 |-----------------------|-------------------|--------------|
-| notifyTeam            |`Boolean`             |指示整个团队是应该收到此操作的可见通知，还是只收到分配有已共享的班次的员工。 必需。       |
-| startDateTime         |`DateTimeOffset`   |按计划共享班次的开始时间。 必需。   |
+| notifyTeam            |`Boolean`             |指示整个团队是应该收到此操作的可见通知，还是只收到分配有已共享的班次的员工。 必需项。       |
+| startDateTime         |`DateTimeOffset`   |按计划共享班次的开始时间。 必需项。   |
 | endDateTime           |`DateTimeOffset`   | 在计划前共享班次的结束时间。   |
 
 ## <a name="response"></a>响应

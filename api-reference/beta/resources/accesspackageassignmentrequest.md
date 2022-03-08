@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b899199163541134bbae47749307348211464c24
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: b12d512b34c1b42751cae22c6a387ff9c2e69e8d
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651384"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337521"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>accessPackageAssignmentRequest 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "61651384"
 
 在[Azure AD中](entitlementmanagement-overview.md)，访问包分配请求由希望获取访问包分配的用户或代表该用户创建。 如果请求成功，并且经过任何必要的审批，用户将收到访问包分配，并且是生成的访问包分配的主题。  Azure AD还自动创建访问包分配请求，以跟踪访问删除。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -38,12 +38,13 @@ ms.locfileid: "61651384"
 |:-------------|:------------|:------------|
 |completedDate|DateTimeOffset|请求处理终止的日期（成功或失败）。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|id|String| 只读。|
+|customExtensionHandlerInstances|[customExtensionHandlerInstance](../resources/customextensionhandlerinstance.md) 集合| 对分配 [请求运行的](customaccesspackageworkflowextension.md) 自定义工作流扩展实例的集合。 只读。 |
+|id|字符串| 只读。|
 |isValidationOnly|Boolean|如此 如果不处理工作分配的请求。|
 |justification|String|请求者提供的理由。|
-|requestState|String|、 `PendingApproval` `Canceled` 、  `Denied` 、 、 、 `Delivering` 、 或 `Delivered` `PartiallyDelivered` `DeliveryFailed` `Submitted` `Scheduled` 之一。 只读。|
-|requestStatus|String|有关请求处理状态详细信息。 只读。|
-|requestType|String|、 `UserAdd` `UserRemove` 、 `AdminAdd` 或 `AdminRemove` `SystemRemove` 之一。 来自用户本身的请求的 requestType 为 `UserAdd` 或 `UserRemove` 。 只读。|
+|requestState|String|、 、 `Denied`、 `Delivering`、 `Delivered`、 `PartiallyDelivered`、 `DeliveryFailed`或 `Submitted` 之一`Scheduled`。`PendingApproval``Canceled` 只读。|
+|requestStatus|字符串|有关请求处理状态详细信息。 只读。|
+|requestType|String|`UserAdd`、 、 `UserRemove``AdminAdd`或 `AdminRemove` 之一`SystemRemove`。 来自用户本身的请求的 requestType 为 `UserAdd` 或 `UserRemove`。 只读。|
 |schedule|[requestSchedule](requestschedule.md)| 要分配给请求者的日期范围。 只读。|
 |answers|[accessPackageAnswer](accesspackageanswer.md) 集合|请求者提供的 [accessPackageQuestions](accesspackagequestion.md) 在请求时询问他们的答案。|
 
@@ -52,11 +53,12 @@ ms.locfileid: "61651384"
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](../resources/accesspackage.md)|与 accessPackageAssignmentRequest 关联的访问包。 访问包定义资源角色的集合以及一个或多个用户如何获取对这些资源的访问权限的策略。 只读。 可为 NULL。 支持 `$expand`。|
-|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| 对于 **或** 的 `UserAdd` `AdminAdd` requestType，这是请求创建的访问包分配。  对于 、 或 的 **requestType，** 此属性具有要删除的现有 `UserRemove` `AdminRemove` `SystemRemove` `id` 工作分配的 属性。  支持 `$expand`。|
+|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| 对于 **或 的 requestType** `UserAdd` `AdminAdd`，这是请求创建的访问包分配。  对于 、 或 `SystemRemove`的 **requestType**`UserRemove``AdminRemove`，此属性`id`具有要删除的现有工作分配的 属性。  支持 `$expand`。|
 |requestor|[accessPackageSubject](accesspackagesubject.md)| 请求或分配了直接分配（如果为直接分配）的主题。 只读。 可为 NULL。 支持 `$expand`。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式
+
 
 下面是资源的 JSON 表示形式。
 
@@ -71,31 +73,29 @@ ms.locfileid: "61651384"
 
 ```json
 {
-    "createdDateTime": "string",
-    "completedDate": "string",
-    "id": "string",
-    "requestType": "string",
-    "requestState": "string",
-    "requestStatus": "string",
-    "isValidationOnly": false,
-    "justification": "string",
-    "answers": [{
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "string",
-        "answeredQuestion": {
-            "id": "string",
-            "text": {
-                "defaultText": "string",
-                "localizedTexts": [{
-                    "text": "string",
-                    "languageCode": "string"
-                }]
-            },
-            "isRequired": true,
-            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-            "isSingleLineQuestion": true
-        }
-    }]
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentRequest",
+  "id": "String (identifier)",
+  "requestType": "String",
+  "requestState": "String",
+  "requestStatus": "String",
+  "isValidationOnly": "Boolean",
+  "createdDateTime": "String (timestamp)",
+  "completedDate": "String (timestamp)",
+  "expirationDateTime": "String (timestamp)",
+  "justification": "String",
+  "schedule": {
+    "@odata.type": "microsoft.graph.requestSchedule"
+  },
+  "answers": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageAnswerString"
+    }
+  ],
+  "customExtensionHandlerInstances": [
+    {
+      "@odata.type": "microsoft.graph.customExtensionHandlerInstance"
+    }
+  ]
 }
 ```
 

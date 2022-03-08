@@ -1,16 +1,16 @@
 ---
 title: 获取 timeOffReason
 description: 按 ID 获取 timeOffReason。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a140dd05c71f4142c5bdda37c858f8e74db29e66
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 42c0d3397667118ccd7febec13a6c046a6834d88
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130737"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333363"
 ---
 # <a name="get-timeoffreason"></a>获取 timeOffReason
 
@@ -57,7 +57,7 @@ GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [timeOffReason](../resources/timeoffreason.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [timeOffReason](../resources/timeoffreason.md) 对象。
 
 ## <a name="example"></a>示例
 

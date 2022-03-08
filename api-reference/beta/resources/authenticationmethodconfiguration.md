@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8ea9d69b724be32eff0f9d6bafc4ef1bff7c33a7
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: ea0c344b1930303a34d4844a2e484fe22fae7bb9
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239118"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336919"
 ---
 # <a name="authenticationmethodconfiguration-resource-type"></a>authenticationMethodConfiguration 资源类型
 命名空间：microsoft.graph
@@ -25,6 +25,7 @@ ms.locfileid: "62239118"
 + [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
 + [smsAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
 + [temporaryAccessPassAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [x509CertificateAuthenticationMethodConfiguration](x509certificateauthenticationmethodconfiguration.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

@@ -1,22 +1,22 @@
 ---
 title: 向聊天添加成员
 description: 向聊天中添加 conversationMember。
-author: bhartono
+author: anandjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3195d4b2d8da21359f799b0c5f0469f449a5e336
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5648fdb585fe47ac05a7605e0b8cbfaddfe032ce
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62088790"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336905"
 ---
 # <a name="add-member-to-a-chat"></a>向聊天添加成员
 
 命名空间：microsoft.graph
 
-将 [conversationMember](../resources/conversationmember.md) 添加到 [聊天](../resources/chat.md)。
+向[聊天中添加 conversationMember](../resources/conversationmember.md)[。](../resources/chat.md)
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ POST /chats/{chat-id}/members
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 响应代码和 Location 标头，这些响应代码和位置标头提供指向新创建的成员 `201 Created` 对象的 URL 路径。
+如果成功，此方法返回 响应 `201 Created` 代码和 Location 标头，这些响应代码和位置标头提供指向新创建的成员对象的 URL 路径。
 
 ## <a name="examples"></a>示例
 
@@ -118,7 +118,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-2-adding-a-single-member-to-a-microsoft-teams-chat-sharing-no-chat-history"></a>示例 2：将单个成员添加到聊天Microsoft Teams，不共享聊天历史记录
+### <a name="example-2-adding-a-single-member-to-a-microsoft-teams-chat-sharing-no-chat-history"></a>示例 2：向 Microsoft Teams 聊天添加单个成员，不共享聊天历史记录
 
 #### <a name="request"></a>请求
 
@@ -185,7 +185,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>示例 3：将单个成员添加到Microsoft Teams聊天，共享聊天的整个历史记录
+### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>示例 3：将单个成员添加到 Microsoft Teams 聊天，共享聊天的整个历史记录
 
 #### <a name="request"></a>请求
 

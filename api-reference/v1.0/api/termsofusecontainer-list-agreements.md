@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: bc6cc601b99d132e46d5b4983c738be8973a1e6a
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 8f0181a7124d7fca9bd1e1dc7f36c20e2204be6b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650772"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336268"
 ---
 # <a name="list-agreements"></a>列出协议
 
@@ -43,7 +43,7 @@ GET /identityGovernance/termsOfUse/agreements
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和 agreement](../resources/agreement.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 agreement](../resources/agreement.md) 对象集合。
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
 
@@ -72,8 +72,12 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
 [!INCLUDE [sample-code](../includes/snippets/java/get-agreements-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-agreements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-agreements-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

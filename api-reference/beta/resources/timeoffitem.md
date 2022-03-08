@@ -1,16 +1,16 @@
 ---
 title: timeOffItem 资源类型
 description: 表示 timeOff 的版本。
-author: nkramer
-localization_priority: Normal
+author: aaku
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8fbe535fcbc63f94a50e65c62c694ffaac1a9aed
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e6ce7d01cf899bdc958ade3025d222f8fd231be1
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786080"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333965"
 ---
 # <a name="timeoffitem-resource-type"></a>timeOffItem 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "52786080"
 ## <a name="properties"></a>属性
 | 属性                         | 类型                    | 说明                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| timeOffReasonId               | string                  | 此时 `timeOffReason` **OffItem** 的 ID。 必填。     |
-| startDateTime               | DateTimeOffset                  | **timeOffItem** 的开始日期和时间。 必填。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
-| endDateTime               | DateTimeOffset                  | **timeOffItem 的结束日期和时间**。 必填。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
+| timeOffReasonId               | string                  | `timeOffReason`此时 **OffItem** 的 ID。 必需项。     |
+| startDateTime               | DateTimeOffset                  | **timeOffItem** 的开始日期和时间。 必需项。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
+| endDateTime               | DateTimeOffset                  | **timeOffItem 的结束日期和时间**。 必需项。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | theme | scheduleEntityTheme   | 支持的颜色：白色;blue;绿色;紫色;粉色;黄色;灰色;darkBlue;darkGreen;darkPurple;darkPink;darkYellow。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

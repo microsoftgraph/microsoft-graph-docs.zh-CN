@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 685f2eacc6585c701ffe38e68542a397080c409a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 384485bb22f118b334a95883a401b3b71a38b503
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126578"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334238"
 ---
 # <a name="create-cloudpcusersetting"></a>创建 cloudPcUserSetting
 
@@ -52,18 +52,19 @@ POST /deviceManagement/virtualEndpoint/userSettings
 
 在请求正文中，提供 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 对象的 JSON 表示形式。
 
-下表显示创建 [cloudPcUserSetting](../resources/cloudpcusersetting.md)时所需的属性。
+下表显示创建 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示在 UI 中的设置名称。 |
-|localAdminEnabled|布尔|若要启用本地管理员选项，将此设置更改为 `True` 。  |
-|selfServiceEnabled|布尔|若要启用自助服务选项，将此设置更改为 `True` 。 |
+|localAdminEnabled|Boolean|若要启用本地管理员选项，将此设置更改为 `True`。  |
+|selfServiceEnabled|Boolean|若要启用自助服务选项，将此设置更改为 `True`。 |
+|restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|定义创建还原点的频率 (即，为用户预配的云电脑拍摄) 快照 (默认值为 12 小时) ，以及是否允许用户将自己的云电脑还原到特定时间点的备份。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设置的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示："2014-01-01T00：00：00Z"。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [cloudPcUserSetting](../resources/cloudpcusersetting.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -83,7 +84,11 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "displayName": "Example",
   "selfServiceEnabled": false,
-  "localAdminEnabled": true
+  "localAdminEnabled": true,
+  "restorePointSetting": {
+    "frequencyInHours": 16,
+    "userRestoreEnabled": true
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -132,6 +137,10 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
+  "restorePointSetting": {
+    "frequencyInHours": 16,
+    "userRestoreEnabled": true
+  },
   "lastModifiedDateTime": "2021-02-01T10:29:57Z"  
 }
 ```

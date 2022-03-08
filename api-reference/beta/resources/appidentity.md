@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
 author: sureshja
-ms.openlocfilehash: 7b1005b058508bdb128788836667c05dcc936dd6
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 66a830d5a030a6b3247e3265aaeaa66452a7c577
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646977"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336926"
 ---
 # <a name="appidentity-resource-type"></a>appIdentity 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "61646977"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|appId|String|表示唯一 GUID（表示 Azure Active Directory 中的应用程序 ID）。|
+|appId|String|引用表示应用程序中的应用程序 ID 的唯一Azure Active Directory。|
 |displayName|String|引用 Azure 门户中显示的应用程序名称。|
-|servicePrincipalId|String|指相应应用的唯一 GUID，Azure Active Directory服务主体 ID。|
+|servicePrincipalId|String|引用指示相应应用的 Azure Active Directory 中服务主体 ID 的唯一标识符。|
 |servicePrincipalName|String|引用服务主体名称是租户中的应用程序名称。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

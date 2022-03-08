@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 48eb1d18d702b36d31f1b96bcc05e6e66885c05e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 2b9252c1d718934e780c02acf135f5b60656b900
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090109"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351167"
 ---
 ```go
 
@@ -13,12 +13,8 @@ ms.locfileid: "61090109"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewAdministrativeUnit()
-displayName := "displayName-value"
+displayName := "Greater Seattle District Technical Schools"
 requestBody.SetDisplayName(&displayName)
-description := "description-value"
-requestBody.SetDescription(&description)
-visibility := "visibility-value"
-requestBody.SetVisibility(&visibility)
 options := &msgraphsdk.AdministrativeUnitRequestBuilderPatchOptions{
     Body: requestBody,
 }

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6d641e1531efbe6e3d72c69799f64756ebe568bb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 279ee832c072abe460e16a885bfdc69655b5b283
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091197"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332964"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>获取 accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "62091197"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD中](../resources/entitlementmanagement-overview.md)，检索[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象的属性和关系。
+在[Azure AD中](../resources/entitlementmanagement-overview.md)，检索 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$expand` OData 查询参数扩展关系，以检索 和 `accessPackage` `requestor` `acccessPackageAssignment` 。  例如，若要检索访问包分配的目标，请包括在 `$expand=accessPackageAssignment($expand=target)` 查询中。  若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$expand` OData 查询参数扩展关系，以检索 `accessPackage`和 `requestor` `acccessPackageAssignment`。  例如，若要检索访问包分配的目标，请包括在 `$expand=accessPackageAssignment($expand=target)` 查询中。  若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -115,12 +115,29 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "433dafca-5047-4614-95f7-a03510b1ded3",
-  "requestType": "AdminAdd",
-  "requestState": "Delivered",
-  "requestStatus": "Fulfilled",
-  "isValidationOnly": false,
-  "createdDateTime": "2019-10-25T22:55:11.623Z"
+    "id": "c0cfd117-f90e-4f48-8226-e282a2ae752c",
+    "requestType": "UserAdd",
+    "requestState": "delivered",
+    "requestStatus": "Delivered",
+    "createdDateTime": "2022-01-07T00:51:12.817Z",
+    "completedDate": "2022-01-07T00:53:15.127Z",
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": "notSpecified"
+        }
+    },
+    "customExtensionHandlerInstances": [
+        {
+            "status": "requestReceived",
+            "externalCorrelationId": "08585600902100964604743022906CU13",
+            "customExtensionId": "e59ef33d-7bc4-4b15-8d3c-01153de8a498",
+            "stage": "assignmentRequestCreated"
+        }
+    ]
 }
 ```
 

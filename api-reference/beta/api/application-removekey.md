@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e9fbfcc4a506e876655ece20e8c1e69813e7f3fb
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f28c90fa334be1efe19787c2befd4edc955c835b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340407"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332607"
 ---
 # <a name="application-removekey"></a>application： removeKey
 
@@ -57,7 +57,7 @@ POST /applications/{id}/removeKey
 
 | 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
-| keyId     | GUID | 密码的唯一标识符。|
+| keyId     | Guid | 密码的唯一标识符。|
 | proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应为 `nbf` + 10 分钟。</li></ul><br>有关生成此拥有令牌证明的步骤，请参阅生成滚动密钥的 [拥有令牌证明](/graph/application-rollkey-prooftoken)。|
 
 ## <a name="response"></a>响应

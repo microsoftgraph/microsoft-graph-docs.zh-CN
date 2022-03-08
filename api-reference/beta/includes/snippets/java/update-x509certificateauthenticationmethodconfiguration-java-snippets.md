@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 50cd1d7a0dd9e4f86d7b2fc8d5599fe42125567b
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 141d8459fc1882202950abc4cfd84363e3652074
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519378"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351220"
 ---
 ```java
 
@@ -13,22 +13,27 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 X509CertificateAuthenticationMethodConfiguration authenticationMethodConfiguration = new X509CertificateAuthenticationMethodConfiguration();
 authenticationMethodConfiguration.id = "X509Certificate";
-authenticationMethodConfiguration.state = AuthenticationMethodState.DISABLED;
+authenticationMethodConfiguration.state = AuthenticationMethodState.ENABLED;
 LinkedList<X509CertificateUserBinding> certificateUserBindingsList = new LinkedList<X509CertificateUserBinding>();
 X509CertificateUserBinding certificateUserBindings = new X509CertificateUserBinding();
 certificateUserBindings.x509CertificateField = "PrincipalName";
 certificateUserBindings.userProperty = "onPremisesUserPrincipalName";
 certificateUserBindings.priority = 1;
 certificateUserBindingsList.add(certificateUserBindings);
-X509CertificateUserBinding certificateUserBindings1 = new X509CertificateUserBinding();
-certificateUserBindings1.x509CertificateField = "RFC822Name";
-certificateUserBindings1.userProperty = "userPrincipalName";
-certificateUserBindings1.priority = 2;
-certificateUserBindingsList.add(certificateUserBindings1);
 authenticationMethodConfiguration.certificateUserBindings = certificateUserBindingsList;
 X509CertificateAuthenticationModeConfiguration authenticationModeConfiguration = new X509CertificateAuthenticationModeConfiguration();
-authenticationModeConfiguration.x509CertificateAuthenticationDefaultMode = X509CertificateAuthenticationMode.X509_CERTIFICATE_SINGLE_FACTOR;
+authenticationModeConfiguration.x509CertificateAuthenticationDefaultMode = X509CertificateAuthenticationMode.X509_CERTIFICATE_MULTI_FACTOR;
 LinkedList<X509CertificateRule> rulesList = new LinkedList<X509CertificateRule>();
+X509CertificateRule rules = new X509CertificateRule();
+rules.x509CertificateRuleType = X509CertificateRuleType.ISSUER_SUBJECT;
+rules.identifier = "CN=ContosoCA,DC=Contoso,DC=org ";
+rules.x509CertificateAuthenticationMode = X509CertificateAuthenticationMode.X509_CERTIFICATE_MULTI_FACTOR;
+rulesList.add(rules);
+X509CertificateRule rules1 = new X509CertificateRule();
+rules1.x509CertificateRuleType = X509CertificateRuleType.POLICY_O_I_D;
+rules1.identifier = "1.2.3.4";
+rules1.x509CertificateAuthenticationMode = X509CertificateAuthenticationMode.X509_CERTIFICATE_MULTI_FACTOR;
+rulesList.add(rules1);
 authenticationModeConfiguration.rules = rulesList;
 authenticationMethodConfiguration.authenticationModeConfiguration = authenticationModeConfiguration;
 LinkedList<AuthenticationMethodTarget> includeTargetsList = new LinkedList<AuthenticationMethodTarget>();

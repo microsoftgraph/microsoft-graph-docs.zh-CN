@@ -1,16 +1,16 @@
 ---
-title: Microsoft 服务中的人员Graph Toolkit
+title: Microsoft Graph 功能中的人员Toolkit
 description: 人员组件用于通过使用联系人的照片、姓名和/或电子邮件地址来显示此人或联系人。
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: ab941533b816d80c490c74e157f3d6aa09760928
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 59f2c6f286aa176ea2ebdad0044388bcfb25f896
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61859951"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336107"
 ---
-# <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
+# <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 功能中的人员Toolkit
 
 人员组件用于通过使用其照片、姓名、电子邮件地址或其他任何人员详细信息来显示此人或联系人。
 
@@ -28,15 +28,15 @@ ms.locfileid: "61859951"
 
 可以使用三个属性来设置人员详细信息。 每个实例仅使用以下属性之一：
 
-* 设置 `user-id` 属性或 `userId` 属性，以通过使用用户的 ID 从 Microsoft Graph获取用户。
+* 设置属性 `user-id` 或 `userId` 属性，以使用用户的 ID 从 Microsoft Graph 提取用户。
 
-* 设置 `person-query` 属性或 `personQuery` 属性以搜索 Microsoft Graph给定人员。 它将选择第一个可用的人员并提取该人员的详细信息。 电子邮件最适用于确保查询正确的人员，但名称也有效。
+* 设置属性 `person-query` 或属性 `personQuery` 以在 Microsoft Graph 中搜索给定人员。 它将选择第一个可用的人员并提取该人员的详细信息。 电子邮件最适用于确保查询正确的人员，但名称也有效。
 
-* 设置 `person-presence` 属性或 `personPresence` 属性以手动向个人头像添加状态锁屏提醒。
+* 设置属性 `person-presence` 或 `personPresence` 属性以手动向个人头像添加状态锁屏提醒。
 
-* 将 `avatar-size` 属性或 `avatarSize` 属性设置为 `small` 或 `large` 确定头像的大小。 这有助于向头像 [添加正确的状态](https://mgt.dev/?path=/story/components-mgt-person--person-presence-display-all) 锁屏提醒。 你将需要选择正确的相应的 css 自定义属性，如下所示以进一步自定义头像大小。 默认情况下，值设置为 ，该值将自动根据 属性 `auto` 决定如何呈现 `view` 状态。 如果你的头 `small` 像小于 32px x 32px，我们建议使用 。 
+* 将属性 `avatar-size` 或属性 `avatarSize` 设置为 `small` 或 `large` 确定头像的大小。 这有助于向头像 [添加正确的状态](https://mgt.dev/?path=/story/components-mgt-person--person-presence-display-all) 锁屏提醒。 你将需要选择正确的相应的 css 自定义属性，如下所示以进一步自定义头像大小。 默认情况下，值设置为 ， `auto` 该值将自动根据 属性决定如何呈现 `view` 状态。 如果你的头像 `small` 小于 32px x 32px，我们建议使用 。 
 
-* 使用 `person-details` 属性 `personDetails` 或 属性手动设置人员详细信息，如以下示例所示。
+* `person-details`使用 属性或 `personDetails` 属性手动设置人员详细信息，如以下示例所示。
 
 
     ```js
@@ -48,9 +48,9 @@ ms.locfileid: "61859951"
     }
     ```
 
-  如果未提供图像，将提取一个 (（如果) ）。
+  如果未提供图像，将提取一个图像 (（如果) ）。
 
-* 默认情况下，人员组件将仅请求标准 Microsoft Graph属性[集。](/graph/api/user-get?&tabs=http#optional-query-parameters) 为了请求其他属性，请将其声明为 的任何部分 `line(x)Property` 。 
+* 默认情况下，人员组件将仅请求标准 Microsoft Graph 用户属性 [集](/graph/api/user-get?&tabs=http#optional-query-parameters)。 为了请求其他属性，请将其声明为 的任何部分 `line(x)Property`。 
 
 
 ## <a name="properties"></a>属性
@@ -59,19 +59,20 @@ ms.locfileid: "61859951"
 
 | 属性       | 属性       | 说明                                                   |
 | -----------     | ----------     | ------------------------------------------------------------- |
-| user-id         | userId         | 设置为用户 ID 以从 Microsoft Graph 获取该用户的详细信息和Graph。|
-| person-query    | personQuery    | 设置为某人的姓名或电子邮件，以在 Microsoft Graph并提取第一个人的详细信息和图像。|
+| user-id         | userId         | 设置为用户 ID 以从 Microsoft Graph 提取该用户的详细信息和图像。|
+| person-query    | personQuery    | 设置为某人的姓名或电子邮件，以在 Microsoft Graph 中搜索某人并提取第一个人的详细信息和图像。|
 | person-details  | personDetails  | 设置为表示人员的对象。 使用来自人员、用户、联系人或组、资源的对象。 |
 | fallback-details| fallbackDetails| 设置为一个对象，该对象表示在图中找不到用户/人员/联系人时的用户。
 | person-image    | personImage    | 设置要向人员显示的图像。 |
 | person-presence | personPresence | 为人员设置状态。 |
-| fetch-image     | fetchImage     | 将标志设置为 `personImage` 根据Graph自动从 Microsoft 网站 `personDetails` 提取。 |
+| fetch-image     | fetchImage     | 将标志设置为根据 `personImage` 用户提供的对象自动 `personDetails` 从 Microsoft Graph 提取。 |
+| disable-image-fetch | disableImageFetch | 设置标志以禁用提取人员图像。 可用于避免指定属性时从 Microsoft Graph 获取不必要的 `personImage` 数据。
 | 头像类型     | 头像类型     | 设置为 或 `initials` `photo` 呈现任一显示状态 - 默认为照片。 |
-| view            | view           | 设置为控制呈现人员的方式。 默认值为 `avatar` <br /> `avatar` - 仅显示头像 <br /> `oneline` - 默认显示头像 (`displayName` 第一)  <br /> `twolines` - 显示头像和两行文本 (`displayName` `mail` 默认显示)  <br /> `threelines` - 显示头像和三行文本 `displayName` `mail` (， `jobTitle` 默认为)  |
+| view            | view           | 设置为控制呈现人员的方式。 默认值为 `avatar` <br /> `avatar` - 仅显示头像 <br /> `oneline` - 默认显示头像 `displayName` (第一)  <br /> `twolines`- 显示头像和两行`displayName``mail`文本 (默认显示)  <br /> `threelines` - 显示头像和三行 `displayName`文本 (， `mail` `jobTitle` 默认为)  |
 | line1-property  | line1Property  | 设置要用于第一行文本的 personDetails 的属性。 默认值为“`displayName`”。|
 | line2-property  | line2Property  | 设置要用于第二行文本的 personDetails 的属性。 默认值为“`mail`”。|
 | line3-property  | line3Property  | 设置要用于第三行文本的 personDetails 的属性。 默认值为“`jobTitle`”。|
-| show-presence   | showPresence   | 设置用于显示人员状态的标志 - 默认为 `false` 。|
+| show-presence   | showPresence   | 设置用于显示人员状态的标志 - 默认为 `false`。|
 
 ## <a name="css-custom-properties"></a>CSS 自定义属性
 
@@ -118,15 +119,15 @@ mgt-person {
 
 事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`line1clicked` | 单击第 1 行时触发 | `person`可以是用户、[](/graph/api/resources/user)[](/graph/api/resources/person)用户Graph具有包含用户照片 URL 的其他[](/graph/api/resources/contact)属性的联系人 `personImage` 的对象 | 否 | 否 | 是，除非您覆盖默认模板
-`line2clicked` | 单击第 2 行时触发 | `person`可以是用户、[](/graph/api/resources/user)[](/graph/api/resources/person)用户Graph具有包含用户照片 URL 的其他[](/graph/api/resources/contact)属性的联系人 `personImage` 的对象 | 否 | 否 | 是，除非您覆盖默认模板
-`line3clicked` | 单击第 3 行时触发 | `person`可以是用户、[](/graph/api/resources/user)[](/graph/api/resources/person)用户Graph具有包含用户照片 URL 的其他[](/graph/api/resources/contact)属性的联系人 `personImage` 的对象 | 否 | 否 | 是，除非您覆盖默认模板
+`line1clicked` | 单击第 1 行时触发 | 对象`person`，可以是 Graph [用户](/graph/api/resources/user)、[用户](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage`或具有包含用户照片 URL 的其他属性的联系人 | 否 | 否 | 是，除非您覆盖默认模板
+`line2clicked` | 单击第 2 行时触发 | 对象`person`，可以是 Graph [用户](/graph/api/resources/user)、[用户](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage`或具有包含用户照片 URL 的其他属性的联系人 | 否 | 否 | 是，除非您覆盖默认模板
+`line3clicked` | 单击第 3 行时触发 | 对象`person`，可以是 Graph [用户](/graph/api/resources/user)、[用户](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage`或具有包含用户照片 URL 的其他属性的联系人 | 否 | 否 | 是，除非您覆盖默认模板
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="templates"></a>模板
 
-组件 `mgt-person` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含组件 `<template>` 中的元素，将值 `data-type` 设置为下列值之一：
+组件 `mgt-person` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含 `<template>` 组件中的元素，将 `data-type` 值设置为下列值之一：
 
 | 数据类型 | 数据上下文 | 说明 |
 | --------- | ------------ | ----------- |
@@ -184,14 +185,14 @@ mgt-person {
 
 | 属性    |  属性     | 说明                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| person-card | personCardInteraction | 一个枚举，用于确定激活飞出面板或 所需的用户 `hover` 操作 `click` 。 默认值为 `none` |
+| person-card | personCardInteraction | 一个枚举，用于确定激活飞出面板或 所需的用户 `hover` 操作 `click`。 默认值为 `none` |
 
 
-有关模板、样式设置和属性详细信息，请参阅 Person Card [component](./person-card.md)。
+有关模板、样式设置和属性详细信息，请参阅 [Person Card component](./person-card.md)。
 
 ## <a name="global-component-configuration"></a>全局组件配置
 
-类 `MgtPerson` 公开一个 `config` 静态对象，该对象配置应用程序中的每个人组件。
+类 `MgtPerson` 公开一个静态 `config` 对象，该对象配置应用程序中的每个人组件。
 
 以下示例演示如何使用 config 对象。
 
@@ -205,7 +206,7 @@ MgtPerson.config.useContactApis = false;
 
 | 属性 | 说明 |
 | ------------ | ------------- |
-| useContactApis | `boolean`- 指示人员组件是否可以使用 Microsoft Graph联系人 API 搜索联系人详细信息和照片。 默认值为 `true`。  |
+| useContactApis | `boolean` - 指示人员组件是否可以使用 Microsoft Graph 个人联系人 API 搜索联系人详细信息和照片。 默认值为 `true`。  |
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
@@ -213,17 +214,17 @@ MgtPerson.config.useContactApis = false;
 
 | 配置 | 权限 | API |
 | ------------- | ---------- | --- |
-| `personDetails` set without image， `fetchImage` set to ， set to ， `true` `avatarType` `photo` retrieved person is a contact and `useContactApis` set to `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
-| `personDetails` set without image， `fetchImage` set to ， set to and person is not a contact or is set `true` `avatarType` `photo` `useContactApis` to `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
-| `personDetails` set without image， `fetchImage` set to ， set to and user specified via `true` `avatarType` `photo` email | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
-| `personDetails` set without image， `fetchImage` set to ， set to and contact specified via `true` `avatarType` `photo` email | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` set without image， `fetchImage` set to `true`， `avatarType` set to `photo`， retrieved person is a contact and `useContactApis` set to `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` set without image， `fetchImage` set to `true`， `avatarType` set to `photo` and person is not a contact or `useContactApis` is set to `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image， `fetchImage` set to `true`， `avatarType` set to `photo` and user specified via email | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image， `fetchImage` set to `true`， `avatarType` set to `photo` and contact specified via email | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
 | `userId` set | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people) |
-| `personQuery` 设置为 `me` ， `avatarType` 设置为 `photo` | User.Read | [/me/photo/$value](/graph/api/profilephoto-get) |
-| `personQuery` 设置为 `me` ， `avatarType` 并设置为其他内容 `photo` | User.Read | [/me](/graph/api/user-get) |
-| `personQuery` 设置为值，而不是 `me` `useContactApis` 设置为 `true` | People.Read、User.ReadBasic.All、Contacts.Read | [/me/people/？$search=](/graph/api/user-list-people)、 [/users？$search=](/graph/api/user-list-people)、 [/me/contacts/ \* ](/graph/api/user-list-contacts) |
-| `personQuery` 设置为值，而不是 `me` `useContactApis` 设置为 `false` | People.Read、User.ReadBasic.All | [/me/people/？$search=](/graph/api/user-list-people)、 [/users？$search=](/graph/api/user-list-people) |
-| `showPresence` 设置为 `true` ， `personQuery` 设置为 `me` | Presence.Read | [/me/presence](/graph/api/presence-get) |
-| `showPresence` 设置为 `true` 并 `personQuery` 设置为 `me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
+| `personQuery`设置为 ，`me`设置为`avatarType``photo` | User.Read | [/me/photo/$value](/graph/api/profilephoto-get) |
+| `personQuery``me`设置为 ，`avatarType`并设置为其他内容`photo` | User.Read | [/me](/graph/api/user-get) |
+| `personQuery`设置为值，而不是 `me` 设置为`useContactApis``true` | People.Read、User.ReadBasic.All、Contacts.Read | [/me/people/？$search=](/graph/api/user-list-people)， [/users？$search=](/graph/api/user-list-people)， [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personQuery`设置为值，而不是 `me` 设置为`useContactApis``false` | People.Read、User.ReadBasic.All | [/me/people/？$search=](/graph/api/user-list-people)， [/users？$search=](/graph/api/user-list-people) |
+| `showPresence`设置为 ，`true`设置为`personQuery``me` | Presence.Read | [/me/presence](/graph/api/presence-get) |
+| `showPresence``true`设置为 并`personQuery`设置为`me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
 | `personCardInteraction` 设置为除 `PersonCardInteraction.none` | 查看 [个人卡片权限](/graph/toolkit/components/person-card#microsoft-graph-permissions) | 查看 [个人卡片 API 调用](/graph/toolkit/components/person-card#microsoft-graph-permissions) |
 
 ## <a name="authentication"></a>身份验证
@@ -232,17 +233,17 @@ MgtPerson.config.useContactApis = false;
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存数据|备注|
+|对象存储|缓存数据|注解|
 |---------|-----------|-------|
-|`photos`|人员照片|使用 时 `avatarType` ，将 设置为 `photo` `fetchImage` ，将 设置为 `true`|
-|`presence`|人员状态|已使用， `showPresence` 设置为 `true`|
+|`photos`|人员照片|使用 时 `avatarType` ，将 设置为 `photo` ， `fetchImage` 将 设置为 `true`|
+|`presence`|人员状态|已使用，设置为`showPresence``true`|
 |`users`|人员的用户信息|
 
-请参阅[Caching，](../customize-components/cache.md)了解有关如何配置缓存的更多详细信息。
+请参阅 [Caching](../customize-components/cache.md)，了解有关如何配置缓存的更多详细信息。
 
 ## <a name="extend-for-more-control"></a>扩展以了解更多控件
 
-对于更复杂的方案或真正自定义的 UX，此组件公开了多个在组件扩展 `protected render*` 中替代的方法。
+对于更复杂的方案或真正自定义的 UX `protected render*` ，此组件公开了多个在组件扩展中替代的方法。
 
 | 方法 | 说明 |
 | - | - |

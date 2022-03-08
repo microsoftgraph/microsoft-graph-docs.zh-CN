@@ -5,21 +5,22 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 30ecd7e128f96c222997f660d4853a693b00d281
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3b56b90a958d516daec194873319cb266546d067
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108133"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335687"
 ---
 # <a name="add-member-to-team"></a>向团队添加新成员
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向 [team](../resources/team.md) 添加新的 [conversationMember](../resources/conversationmember.md)。
+向[团队](../resources/team.md)添加新的[对话成员](../resources/conversationmember.md)。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -27,6 +28,9 @@ ms.locfileid: "62108133"
 |委派（工作或学校帐户）| TeamMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序| TeamMember.ReadWrite.All |
+
+> [!NOTE]
+> 不支持使用应用程序权限向团队[添加来宾成员](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true)。
 
 ## <a name="http-request"></a>HTTP 请求
 

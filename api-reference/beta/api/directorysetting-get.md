@@ -1,18 +1,18 @@
 ---
-title: 获取目录设置
+title: 获取 directorySetting
 description: 检索特定目录设置对象的属性。
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 79bb4851ea0aec7a84aa7c3e0ce1d4362a4d3bdd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8a71153b7ed99a4eece21bdb766fef5dee915321
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090609"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336394"
 ---
-# <a name="get-a-directory-setting"></a>获取目录设置
+# <a name="get-directorysetting"></a>获取 directorySetting
 
 命名空间：microsoft.graph
 
@@ -20,10 +20,11 @@ ms.locfileid: "62090609"
 
 检索特定目录设置对象的属性。
 
-> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *Get groupSettings*。
-
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+
+### <a name="list-tenant-wide-settings"></a>列出租户范围的设置
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -31,15 +32,33 @@ ms.locfileid: "62090609"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
+### <a name="list-group-specific-settings"></a>列出特定于组的设置
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Group.Read.All、Group.ReadWrite.All  |
+
+
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
-获取特定租户范围或组设置
+
+获取租户范围的设置。
+
 ```http
-GET /settings/{id}
-GET /groups/{id}/settings/{id}
+GET /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+获取特定于组的设置。
+```http
+GET /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -93,7 +112,7 @@ GET https://graph.microsoft.com/beta/settings/f0b2d6f5-097d-4177-91af-a24e530b53
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

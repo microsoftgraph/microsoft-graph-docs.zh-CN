@@ -1,16 +1,16 @@
 ---
 title: 获取 schedulingGroup
 description: 按 ID 检索 [schedulingGroup](../resources/schedulinggroup.md) 的属性和关系。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d60174fd843237c1f43e1a3f3e98c425a38611a0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 938604da3a6934ac4e4f61c941e54437c7924b4d
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118269"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336772"
 ---
 # <a name="get-schedulinggroup"></a>获取 schedulingGroup
 

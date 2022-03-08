@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: be422d4206bc2fdbf22d3b4f8856996a92621827
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 52406c1a646d8cba0da4ad36c13a11da11c600af
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347856"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337192"
 ---
 # <a name="application-removekey"></a>application： removeKey
 
@@ -55,7 +55,7 @@ POST /applications/{id}/removeKey
 
 | 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
-| keyId     | GUID | 密码的唯一标识符。|
+| keyId     | Guid | 密码的唯一标识符。|
 | proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
 
 ## <a name="response"></a>响应

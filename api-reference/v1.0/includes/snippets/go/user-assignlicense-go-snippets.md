@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 71666ec7798d8d9979a1d654d677990aa1808114
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 86e2cbb5c0219c05dc51d3d302b7741d3bcd4758
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61085296"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336800"
 ---
 ```go
 
@@ -19,7 +19,7 @@ requestBody.SetAddLicenses( []AssignedLicense {
         "disabledPlans":  []String {
             "11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
         }
-        "skuId": "guid",
+        "skuId": "45715bb8-13f9-4bf6-927f-ef96c102d394",
     }
 }
 requestBody.SetRemoveLicenses( []String {

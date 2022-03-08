@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d2e417ebf2faa9a0f86eaf4f1c9e684d3f4287ae
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: d99c8c78b42e48a5ff2cd6edbd4560952938723b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339320"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332565"
 ---
 # <a name="application-removepassword"></a>application： removePassword
 
@@ -49,7 +49,7 @@ POST /applications/{id}/removePassword
 
 | 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
-| keyId     | GUID | 密码的唯一标识符。 必需。 |
+| keyId     | Guid | 密码的唯一标识符。 必需。 |
 
 ## <a name="response"></a>响应
 

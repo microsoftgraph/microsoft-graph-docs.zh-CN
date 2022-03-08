@@ -1,16 +1,16 @@
 ---
 title: 删除 schedulingGroup
 description: 通过设置 schedulingGroup 的 isActive 属性将其标记为非活动
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1980b36f2f3d26ae70f7609c9fc2d5384fa9e232
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 414bcf4d355e4c1ef337c2a291f64326041b5845
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102320"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337528"
 ---
 # <a name="delete-schedulinggroup"></a>删除 schedulingGroup
 
@@ -19,7 +19,7 @@ ms.locfileid: "62102320"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过设置 [schedulingGroup](../resources/schedulinggroup.md) 的 isActive 属性，将其 **标记为非** 活动状态。
-此方法不会从计划中删除[schedulingGroup。](../resources/schedulinggroup.md) 分配给 [计划](../resources/shift.md) 组的现有班次实例仍属于该组。
+此方法不会从计划 [中删除 schedulingGroup](../resources/schedulinggroup.md) 。 [分配给计划](../resources/shift.md)组的现有班次实例仍属于该组。
 
 ## <a name="permissions"></a>权限
 

@@ -1,16 +1,16 @@
 ---
 title: 获取日程安排
 description: 检索 schedule 对象的属性 **和** 关系。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 157b8b5dd451d81dad412e275236ed5081329900
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: afa32e2025c55cb513d57ffdef560487af10773a
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105457"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333412"
 ---
 # <a name="get-schedule"></a>获取日程安排
 
@@ -20,10 +20,10 @@ ms.locfileid: "62105457"
 
 检索 schedule 对象的属性 [和](../resources/schedule.md) 关系。
 
-计划创建过程符合针对 RELO 中基于资源的长时间运行操作 ([一 API) 。 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)
+计划创建过程符合针对 RELO 中基于资源的长时间运行操作 ([一 API) ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
 当客户端使用 [PUT 方法时](team-put-schedule.md)，如果已设置计划，则操作将更新计划;否则，操作将在后台启动计划预配过程。
 
-在计划预配期间，客户端可以使用 GET 方法获取计划并查看 属性，了解 `provisionStatus` 预配的当前状态。 如果设置失败，客户端可以从 属性获取其他 `provisionStatusCode` 信息。
+在计划预配期间，客户端可以使用 GET 方法 `provisionStatus` 获取计划并查看 属性，了解预配的当前状态。 如果设置失败，客户端可以从 属性获取其他 `provisionStatusCode` 信息。
 
 客户端还可以检查计划的配置。
 
@@ -61,7 +61,7 @@ GET /teams/{teamId}/schedule
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/schedule.md) 代码和 schedule 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [schedule](../resources/schedule.md) 对象。
 
 ## <a name="example"></a>示例
 

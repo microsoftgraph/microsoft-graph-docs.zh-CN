@@ -1,16 +1,16 @@
 ---
 title: 创建 timeOffReason
 description: 创建新的 timeOffReason。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f07dd222ac10721ff321b75b73383a50fc8b395b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b081babc4f700d9b235eb03a48db45a933d10bec
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096083"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337535"
 ---
 # <a name="create-timeoffreason"></a>创建 timeOffReason
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/timeOffReasons
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [timeOffReason](../resources/timeoffreason.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [timeOffReason](../resources/timeoffreason.md) 对象。
 
 ## <a name="example"></a>示例
 
