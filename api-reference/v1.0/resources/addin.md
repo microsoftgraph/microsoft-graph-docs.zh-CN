@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: f54ffcb7404669e593aeda8727325e6ca855140e
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 138fdd62e448c3a525ed9eaa6afe7c734cdd5404
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854928"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337171"
 ---
 # <a name="addin-resource-type"></a>addIn 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "62854928"
 
 ```json
 {
-  "id": "GUID",
+  "id": "Guid",
   "properties": [{"@odata.type": "microsoft.graph.keyValue"}],
   "type": "String"
 }

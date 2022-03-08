@@ -3,12 +3,12 @@ title: 使用 Microsoft SDK 分页Graph集合
 description: 提供有关使用 Microsoft Graph SDK 创建 Microsoft Graph API 请求的说明。
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: ca82ff4d5b91cead92a641795084c3d0c1928377
-ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
+ms.openlocfilehash: 515b24324309c8121ec231bca73f0878f5c227f7
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60270322"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337409"
 ---
 # <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>使用 Microsoft SDK 分页Graph集合
 
@@ -100,7 +100,7 @@ await pageIterator.iterate();
 ### <a name="java"></a>[Java](#tab/java)
 
 ```java
-final MessageCollectionPage messagesPage = graphClient.me().messages()
+MessageCollectionPage messagesPage = graphClient.me().messages()
     .buildRequest(new HeaderOption("Prefer", "outlook.body-content-type=\"text\""))
     .select("Sender,Subject,Body")
     .top(10)
@@ -110,10 +110,10 @@ final MessageCollectionPage messagesPage = graphClient.me().messages()
 while(messagesPage != null) {
   final List<Message> messages = messagesPage.getCurrentPage();
   final MessageCollectionRequestBuilder nextPage = messagesPage.getNextPage();
-  if(nextPage == null) {
+  if (nextPage == null) {
     break;
   } else {
-    messagePage = nextPage.buildRequest(
+    messagesPage = nextPage.buildRequest(
         // Re-add the header to subsequent requests
         new HeaderOption("Prefer", "outlook.body-content-type=\"text\"")
     ).get();
@@ -121,11 +121,54 @@ while(messagesPage != null) {
 }
 ```
 
+### <a name="go"></a>[转到](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
+    "github.com/microsoftgraph/msgraph-sdk-go/me/messages"
+    "github.com/microsoftgraph/msgraph-sdk-go/models/microsoft/graph"
+)
+
+query := messages.MessagesRequestBuilderGetQueryParameters{
+    Select: []string{"body", "sender", "subject"},
+}
+
+options := messages.MessagesRequestBuilderGetOptions{
+    H: map[string]string{
+        "Prefer": "outlook.body-content-type=\"text\"",
+    },
+    Q: &query,
+}
+
+result, err := client.Me().Messages().Get(&options)
+
+// Initialize iterator
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase,
+    func() serialization.Parsable {
+        return messages.NewMessagesResponse()
+    })
+
+// Any custom headers sent in original request should also be added
+// to the iterator
+pageIterator.SetHeaders(options.H)
+
+// Iterate over all pages
+iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
+    message := pageItem.(graph.Message)
+    fmt.Printf("%s\n", *message.GetSubject())
+    // Return true to continue the iteration
+    return true
+})
+```
+
 ---
 
 ## <a name="stopping-and-resuming-the-iteration"></a>停止和恢复迭代
 
-在某些情况下，为了执行其他操作，需要停止迭代过程。 通过从迭代回调返回可以 `false` 暂停迭代。 可以通过在 `resume` **PageIterator** 上调用 方法来恢复迭代。
+在某些情况下，为了执行其他操作，需要停止迭代过程。 通过从迭代回调返回可以 `false` 暂停迭代。 可以通过在 **PageIterator** 上调用 `resume` 方法来恢复迭代。
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)
@@ -206,6 +249,68 @@ while (!pageIterator.isComplete()) {
 
 ```java
 // not supported in java SDK
+```
+
+### <a name="go"></a>[转到](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
+    "github.com/microsoftgraph/msgraph-sdk-go/me/messages"
+    "github.com/microsoftgraph/msgraph-sdk-go/models/microsoft/graph"
+)
+
+query := messages.MessagesRequestBuilderGetQueryParameters{
+    Select: []string{"body", "sender", "subject"},
+}
+
+options := messages.MessagesRequestBuilderGetOptions{
+    H: map[string]string{
+        "Prefer": "outlook.body-content-type=\"text\"",
+    },
+    Q: &query,
+}
+
+result, err := client.Me().Messages().Get(&options)
+
+// Initialize iterator
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase,
+    func() serialization.Parsable {
+        return messages.NewMessagesResponse()
+    })
+
+// Any custom headers sent in original request should also be added
+// to the iterator
+pageIterator.SetHeaders(options.H)
+
+// Pause iterating after 25
+var count, pauseAfter = 0, 25
+
+// Iterate over all pages
+iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
+    message := pageItem.(graph.Message)
+    count++
+    fmt.Printf("%d: %s\n", count, *message.GetSubject())
+    // Once count = 25, this returns false,
+    // Which pauses the iteration
+    return count < pauseAfter
+})
+
+// Pause 5 seconds
+fmt.Printf("Iterated first %d messages, pausing for 5 seconds...\n", pauseAfter)
+time.Sleep(5 * time.Second)
+fmt.Printf("Resuming iteration...\n")
+
+// Resume iteration
+iterateErr = pageIterator.Iterate(func(pageItem interface{}) bool {
+    message := pageItem.(graph.Message)
+    count++
+    fmt.Printf("%d: %s\n", count, *message.GetSubject())
+    // Return true to continue the iteration
+    return true
+})
 ```
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: a5298eedfd5476e3aa6cb92e959f2f0822e4091e
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 8c9dfccaa9d41b78271f48119f3e23763232d0a6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854683"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337164"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 
@@ -26,10 +26,10 @@ ms.locfileid: "62854683"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String 集合|指定是否可以通过`["User"]`将 设置为) 来将此应用程序角色分配给用户和组 (，或者通过设置为) 将此应用程序角色设置为 或同时将两 (分配给应用程序的 (`["Application"]``["User", "Application"]` 。 支持向其他应用程序的服务主体分配的应用程序角色也称为应用程序 [权限](/graph/auth/auth-concepts#microsoft-graph-permissions)。 "Application"值仅受应用程序实体上定义的 **应用角色** 支持。|
-|description|String|应用角色的说明。 在分配应用角色时显示此状态，如果应用角色在同意体验期间用作应用程序权限。|
+|allowedMemberTypes|String 集合|通过设置为) ，指定此应用角色是否可分配给用户和组 (`["User"]` ，或者通过设置为) 将 (分配给另一应用程序的 (`["Application"]``["User", "Application"]` 。 支持向其他应用程序的服务主体分配的应用程序角色也称为应用程序 [权限](/graph/auth/auth-concepts#microsoft-graph-permissions)。 "Application"值仅受应用程序实体上定义的 **应用角色** 支持。|
+|说明|String|应用角色的说明。 在分配应用角色时显示此状态，如果应用角色在同意体验期间用作应用程序权限。|
 |displayName|String|应用和许可体验中显示的权限角色分配名称。|
-|id|GUID|**appRoles 集合内的唯一角色** 标识符。 创建新的应用角色时，必须提供新的 GUID 标识符。 |
+|id|Guid|**appRoles 集合内的唯一角色** 标识符。 创建新的应用角色时，必须提供新的 GUID 标识符。 |
 |isEnabled|Boolean|在创建或更新应用角色时，必须设置为 **true** (这是默认角色) 。 若要删除角色，必须先将其设置为 **false**。  此时，在后续调用中，可能会删除此角色。|
 |origin|字符串| 指定应用程序角色是在 [application](application.md) 对象上还是 [servicePrincipal](serviceprincipal.md) 实体上定义。 _不得_ 包含在任何 POST 或 PATCH 请求中。 只读。 |
 |value|String|指定要包括在 ID 令牌 `roles` 和访问令牌中的声明中的值，对分配的用户和服务主体进行身份验证。 长度不得超过 120 个字符。 允许的字符`:` `{` `#` `$` `!` `.` `-` `,` `+` `/` `*` `)` `(` `:` `'` `&` `%` `;` <code>&lt;</code> `@` `?` `[` <code>&gt;</code> `]` `^` `_` <code>&#124;</code> `~``=` `}` `+` <code>&#96;</code>包括 、 和 范围`0-9`中的`A-Z`字符。`a-z` 不允许任何其他字符，包括空格字符。 不得以 开头 `.`。 |
@@ -51,7 +51,7 @@ ms.locfileid: "62854683"
   "allowedMemberTypes": ["String"],
   "description": "String",
   "displayName": "String",
-  "id": "GUID",
+  "id": "Guid",
   "isEnabled": true,
   "origin": "String",
   "value": "String"

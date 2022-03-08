@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: a2e83999bcaf9754d7d0f48399453c5659a63227
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 37ec2434d7627fd4762f0e76ef853b4756107152
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129378"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331910"
 ---
 # <a name="update-member-in-team"></a>更新团队中的成员
 
@@ -18,7 +18,10 @@ ms.locfileid: "62129378"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新团队 [中 conversationMember](../resources/conversationmember.md) [的角色](../resources/team.md)。
+更新 [团队中 conversationMember](../resources/conversationmember.md) [的角色](../resources/team.md)。
+
+> [!NOTE]
+> 角色为 的 `guest` 团队成员不能获得 角色 `owner`。
 
 ## <a name="permissions"></a>权限
 
@@ -47,9 +50,9 @@ PATCH /teams/{team-id}/members/{membership-id}
 
 在请求正文中，提供要更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|角色|string 集合|用户的角色。 必须为空 `owner` 。 来宾用户将自动标记 `guest` 角色，并且此值无法更新。 |
+|角色|string 集合|用户的角色。 必须为空 `owner` 。 来宾用户将自动标记角色 `guest` ，并且此值无法更新。 |
 
 ## <a name="response"></a>响应
 
@@ -59,7 +62,7 @@ PATCH /teams/{team-id}/members/{membership-id}
 
 ### <a name="request"></a>请求
 
-下面是一个请求，要求将角色 `owner` 应用于团队的现有成员。
+下面是一个请求，要求 `owner` 将角色应用于团队的现有成员。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

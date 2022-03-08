@@ -1,16 +1,16 @@
 ---
 title: Azure AD 访问审查
-description: 使用Azure AD访问评审来配置一次性或定期访问评审，以证明用户对资源的访问权限Azure AD审查。
+description: 使用Azure AD访问评审来配置一次性或定期访问评审，以证明用户对资源的访问权限Azure AD审核。
 ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 8a2e3d7c9cac5ce94b520eeced3c90dfd4b34f9a
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 1e69482507020fb2902472fcbd7dcfa96639c343
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650788"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337178"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
@@ -22,11 +22,11 @@ ms.locfileid: "61650788"
 
 - 客户可以通过组成员身份查看和认证来宾用户对组的访问权限。 审阅者可以使用提供的见解来有效决定是否应让来宾继续访问。
 - 客户可以审阅并认证员工对Azure AD的访问权限。
-- 客户可以审阅和审核分配以Azure AD角色。 这支持组织管理特权访问。
+- 客户可以审阅和审核分配Azure AD特权角色。 这支持组织管理特权访问。
 
-访问评审功能（包括 API）仅在用户或 EMS E5 订阅的有效购买或试用Azure AD Premium P2可用。
+访问评审功能（包括 API）仅在用户或 EMS E5 订阅的有效购买或试用Azure AD Premium P2可用。 有关许可证要求详细信息，请参阅 [访问评审许可证要求](/azure/active-directory/governance/access-reviews-overview#license-requirements)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 下表列出了可用于与访问评审相关资源进行交互的方法。
 
@@ -54,7 +54,12 @@ ms.locfileid: "61650788"
 |[获取 accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-get.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|读取 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象的属性和关系。|
 |[更新 accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|更新 [accessReviewInstanceDecisionItem 对象](../resources/accessreviewinstancedecisionitem.md) 的属性。|
 |[accessReviewInstanceDecisionItem：filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 集合|返回调用用户是其审阅者的决策项。|
-
+|**历史记录定义**| | |
+|[列出 historyDefinitions](../api/accessreviewset-list-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 集合|获取 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象及其属性的列表。|
+|[创建 historyDefinitions](../api/accessreviewset-post-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|创建新的 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象。|
+|[获取 accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|读取 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象的属性和关系。|
+|[generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md)|为可用于检索审阅历史记录数据的实例生成 URI。|
+|[列出实例](../api/accessreviewhistorydefinition-list-instances.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md)|检索 [accessReviewHistoryInstance](accessreviewhistoryinstance.md) 对象及其属性的列表。|
 
 ## <a name="role-and-application-permission-authorization-checks"></a>角色和应用程序权限授权检查
 
@@ -62,13 +67,13 @@ ms.locfileid: "61650788"
 
 | 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
 |:------------------|:------------|:--------------------------------------------|
-| 读取 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读者或用户管理员 |
+| Read | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读者或用户管理员 |
 | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或用户管理员 |
 
 此外，作为访问评审的分配审阅者的用户可以管理其决策，而无需担任目录角色。
 
 ## <a name="see-also"></a>另请参阅
 
-- [了解如何](/graph/accessreviews-overview)使用访问评审 API 查看对访问资源的访问权限Azure AD教程
+- [了解如何](/graph/accessreviews-overview)使用访问评审 API 查看对访问Azure AD教程
 - [管理员如何使用访问评审Azure AD用户访问](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
 - [管理员如何使用访问评审管理Azure AD访问](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)

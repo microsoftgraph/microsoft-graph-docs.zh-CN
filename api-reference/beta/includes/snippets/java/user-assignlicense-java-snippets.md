@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 46a3e9d7983da7d3c1a11c6dc795b07357eff313c1b147419ec56f0976b03e72
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 934d3e21d9a3ae097250643e3d3cc92b55305399
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163764"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63339957"
 ---
 ```java
 
@@ -14,16 +14,15 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LinkedList<AssignedLicense> addLicensesList = new LinkedList<AssignedLicense>();
 AssignedLicense addLicenses = new AssignedLicense();
 LinkedList<UUID> disabledPlansList = new LinkedList<UUID>();
-disabledPlansList.add(UUID.fromString("11b0131d-43c8-4bbb-b2c8-e80f9a50834a"));
+disabledPlansList.add(UUID.fromString("8a256a2b-b617-496d-b51b-e76466e88db0"));
 addLicenses.disabledPlans = disabledPlansList;
-addLicenses.skuId = UUID.fromString("skuId-value-1");
+addLicenses.skuId = UUID.fromString("84a661c4-e949-4bd2-a560-ed7766fcaf2b");
 
 addLicensesList.add(addLicenses);
 AssignedLicense addLicenses1 = new AssignedLicense();
 LinkedList<UUID> disabledPlansList1 = new LinkedList<UUID>();
-disabledPlansList1.add(UUID.fromString("a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235"));
 addLicenses1.disabledPlans = disabledPlansList1;
-addLicenses1.skuId = UUID.fromString("skuId-value-2");
+addLicenses1.skuId = UUID.fromString("f30db892-07e9-47e9-837c-80727f46fd3d");
 
 addLicensesList.add(addLicenses1);
 

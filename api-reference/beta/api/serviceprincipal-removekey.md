@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal： removeKey
 description: 从 servicePrincipal 中删除密钥凭据
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: fbc1e214a9e11d20fbf10a84728d71e5954127a4
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: e834455f015966e59b2a668461ca6054eb21b03b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490474"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331912"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal： removeKey
 
@@ -54,8 +54,8 @@ POST /serviceprincipals/{id}/removeKey
 
 | 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
-| keyId     | GUID | 密码的唯一标识符。|
-| proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss`- 颁发者需要是发出调用的 servicePrincipal 的 ID。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
+| keyId     | Guid | 密码的唯一标识符。|
+| proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss`- 颁发者需要是发出调用的 servicePrincipal 的 ID。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应为 `nbf` + 10 分钟。</li></ul><br>有关生成此拥有令牌证明的步骤，请参阅生成滚动密钥的 [拥有令牌证明](/graph/application-rollkey-prooftoken)。|
 
 ## <a name="response"></a>响应
 

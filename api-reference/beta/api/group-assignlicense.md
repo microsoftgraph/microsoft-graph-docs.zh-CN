@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c2e82df20a138a105b9868c1b1366e40b8f8677e
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2ce19a9651d920dcf5e9716db7fc76eae254ae7a
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339903"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337416"
 ---
 # <a name="group-assignlicense"></a>group： assignLicense
 
@@ -48,7 +48,7 @@ POST /groups/{id}/assignLicense
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 可以通过在 assignedLicense 对象上设置 **disabledPlans** 属性来禁用 [与许可证关联的 servicePlans](../resources/assignedlicense.md) 。|
-|removeLicenses|GUID 集合|标识要删除的许可证的 skuIds 集合。|
+|removeLicenses|Guid 集合|标识要删除的许可证的 skuIds 集合。|
 
 ## <a name="response"></a>响应
 
