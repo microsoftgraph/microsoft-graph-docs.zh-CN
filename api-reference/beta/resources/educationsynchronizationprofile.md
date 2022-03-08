@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 09ae4b8fc02c1a1f13a91102241b119727e8bed2
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 8e3b687e3856ae8d7805bf4b74724c70380359a9
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62289928"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336002"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>educationSynchronizationProfile 资源类型
 
@@ -40,10 +40,10 @@ ms.locfileid: "62289928"
 
 | 属性                             | 类型                                                   | 说明                                                                                                                       |
 | :----------------------------------- | :----------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| id                                   | 字符串                                                 | 资源的唯一标识符。  (只读)                                                                                |
-| displayName                          | String                                                 | 用于同步标识的配置文件的名称。                                                                         |
+| id                                   | String                                                 | 资源的唯一标识符。  (只读)                                                                                |
+| displayName                          | 字符串                                                 | 用于同步标识的配置文件的名称。                                                                         |
 | dataProvider                         | [educationSynchronizationDataProvider]                 | 用于配置文件的数据提供程序。                                                                                           |
-| expirationDate                       | Date                                                   | 将配置文件视为已过期并停止同步的日期。 When `null`。 配置文件永不过期。 （可选）       |
+| expirationDate                       | Date                                                   | 将配置文件视为已过期并停止同步的日期。 `YYYY-MM-DD`按照 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) 的格式提供日期。 最大值为自配置文件创建起 18 个月。  （可选）       |
 | handleSpecialCharacterConstraint     | Bool                                                   | 确定是否在学校数据同步源同步时自动替换不受支持的特殊字符。             |
 | identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | 确定配置文件应[如何新建或][fullsync][匹配现有AAD][dirsync]用户。                                  |
 | licensesToAssign                     | [educationSynchronizationLicenseAssignment] 集合 | 许可证设置配置。                                                                                                      |

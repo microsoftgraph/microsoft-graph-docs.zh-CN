@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ddce108d42f12fd78f1c2d4b8556de52d437f88547a5b3ad07bca48b76c6bc75
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 35fa4a5ccfd01fce38ab725ae1491252976d6824
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57106925"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335470"
 ---
 ```javascript
 
@@ -19,6 +19,10 @@ const cloudPcUserSetting = {
   '@odata.type': '#microsoft.graph.cloudPcUserSetting',
   displayName: 'Example',
   selfServiceEnabled: true,
+  restorePointSetting: {
+    frequencyInHours: '16',
+    userRestoreEnabled: true
+  },
   localAdminEnabled: false
 };
 

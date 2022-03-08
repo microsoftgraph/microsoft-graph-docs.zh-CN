@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: jpettere
-ms.openlocfilehash: 3996d374d6fadde598c242f5b68ef9a79238e115
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 762e6f6fb955b477d0331872f9a4670ff07b61d6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854648"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335295"
 ---
 # <a name="assignedplan-resource-type"></a>assignedPlan 资源类型
 
@@ -27,8 +27,8 @@ ms.locfileid: "62854648"
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|分配计划的日期和时间；例如：2013-01-02T19:32:30Z。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |capabilityStatus|[capabilityStatus](#capabilitystatus-values)|功能分配的条件。 可能的值为 、`Enabled``Deleted``Warning``Suspended`、。 `LockedOut`|
-|service|String|服务名称；例如，“Exchange”。|
-|servicePlanId|GUID|用于标识服务计划的 GUID。|
+|service|String|服务的名称;例如， `exchange`。|
+|servicePlanId|Guid|用于标识服务计划的 GUID。 有关 GUID 及其等效友好服务名称的完整列表，请参阅许可的产品名称和服务 [计划标识符](/azure/active-directory/enterprise-users/licensing-service-plan-reference)。|
 
 
 ### <a name="capabilitystatus-values"></a>capabilityStatus 值
@@ -58,7 +58,7 @@ ms.locfileid: "62854648"
   "assignedDateTime": "String (timestamp)",
   "capabilityStatus": "String",
   "service": "String",
-  "servicePlanId": "GUID"
+  "servicePlanId": "Guid"
 }
 
 ```

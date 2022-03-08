@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b0da606610bd01e5fd2ec502f28fd5e861c4a550ec19a7829a2b00ad9bf759ba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1642f2c27a9904da8da778c0f70e643e3dad24bf
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57106926"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335477"
 ---
 ```csharp
 
@@ -15,6 +15,11 @@ var cloudPcUserSetting = new CloudPcUserSetting
 {
     DisplayName = "Example",
     SelfServiceEnabled = true,
+    RestorePointSetting = new CloudPcRestorePointSetting
+    {
+        FrequencyInHours = "16",
+        UserRestoreEnabled = true
+    },
     LocalAdminEnabled = false
 };
 

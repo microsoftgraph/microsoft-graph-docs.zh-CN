@@ -1,16 +1,16 @@
 ---
 title: directorySettingTemplate 资源类型
 description: 目录设置模板表示可供租户使用的系统定义的设置。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 71984d472aab9f78197134fae0668fd0a90d7716
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 372abab6126a9e2174638fd59fceb609f6f072c3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440407"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335232"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>directorySettingTemplate 资源类型
 
@@ -18,11 +18,14 @@ ms.locfileid: "50440407"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-目录设置模板表示可供租户使用的系统定义的设置。 [目录设置](directorysetting.md) 可以基于可用的 directorySettingTemplates 创建，并且值会从预设默认值更改。 无法创建、更新或删除目录设置模板。 这些设置可以表示租户范围的设置，也可以表示特定的实体设置。  目前，唯一可用的模板适用于 Office 组，并包括设置，例如用户是否可以创建组或邀请组织外部的来宾成为组的成员。
+目录设置模板表示可供租户使用的系统定义的设置。 [目录设置](directorysetting.md) 可以基于可用的 **directorySettingTemplates** 创建，并且值会从预设默认值更改。 无法创建、更新或删除目录设置模板。 这些设置可以表示租户范围的设置，也可以表示特定实体设置。 目前，唯一可用于组的模板适用于 Microsoft 365 组，并包括诸如用户是否可以创建组或邀请组织外部的来宾成为组成员的设置。
 
-> **注意**：directorySettingTemplate 资源类型的 /beta 版本仅适用于组。 /v1.0 版本已重命名为 groupSettingTemplate。
+有关可用组设置Microsoft 365，请参阅[模板设置](/azure/active-directory/enterprise-users/groups-settings-cmdlets)。
 
-## <a name="methods"></a>Methods
+> [!TIP]
+> 此 `/v1.0` 资源的版本名为 [groupSettingTemplate](/graph/api/resources/groupsettingtemplate?view=graph-rest-1.0&preserve-view=true)。
+
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -35,7 +38,7 @@ ms.locfileid: "50440407"
 |说明|string|模板的说明。 只读。|
 |displayName|string|模板的显示名称。 只读。 |
 |id|string| 模板的唯一标识符。 只读。|
-|values|[settingTemplateValue](settingtemplatevalue.md) 集合| settingTemplateValues 的集合，列出一组可用设置、默认值和类型，这些设置、默认值和类型是此模板的一部分。  只读。 |
+|values|[settingTemplateValue](settingtemplatevalue.md) 集合| settingTemplateValues 的集合，该集合列出了一组可用设置、默认值和类型，这些设置、默认值和类型是此模板的一部分。  只读。 |
 
 ## <a name="relationships"></a>关系
 无

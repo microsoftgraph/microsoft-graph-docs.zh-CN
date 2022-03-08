@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2572861ff28e285a833202f095a4d7e2b11e5275
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 32527bd5388693837edf9cb6a87b8388f4e3cb79
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62120497"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335694"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>创建 accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "62120497"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD中](../resources/entitlementmanagement-overview.md)，创建新的[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)对象。
+在[Azure AD中](../resources/entitlementmanagement-overview.md)，创建新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -503,6 +503,97 @@ Content-type: application/json
 }
 ```
 
+
+
+### <a name="example-4-create-a-policy-and-specify-the-stages-to-trigger-pre-defined-custom-workflow-extensions"></a>示例 4：创建策略并指定触发预定义自定义工作流扩展的阶段
+
+#### <a name="request"></a>请求
+
+在下面的示例中，预定义的 **customAccessPackageWorkflowExtension** 对象是在创建访问包分配的请求时和授予请求时触发的。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentpolicy_customaccesspackageworkflowextension"
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
+Content-type: application/json
+
+{
+  "displayName": "extension-policy",
+  "description": "test",
+  "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+  "expiration": {
+    "type": "afterDuration",
+    "duration": "P365D"
+  },
+  "canExtend": false,
+  "requestApprovalSettings": null,
+  "requestorSettings": {
+    "acceptRequests": true,
+    "scopeType": "AllExistingDirectorySubjects",
+    "allowedRequestors": [],
+    "isOnBehalfAllowed": false
+  },
+  "accessReviewSettings": null,
+  "questions": [],
+  "customExtensionHandlers": [
+    {
+      "stage": "assignmentRequestCreated",
+      "customExtension": {
+        "id": "219f57b6-7983-45a1-be01-2c228b7a43f8" //customAccessPackageWorkflowExtension.id
+      }
+    },
+    {
+      "stage": "assignmentRequestGranted",
+      "customExtension": {
+        "id": "219f57b6-7983-45a1-be01-2c228b7a43f8"
+      }
+    }
+  ]
+}
+```
+
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。 **默认情况下，不返回 customExtensionHandlers** 对象。 若要检索此对象，请使用 **GET** 方法 `$expand`。 有关详细信息，请参阅检索策略 [的自定义扩展处理程序](accesspackageassignmentpolicy-get.md#example-2-retrieve-the-custom-extension-handlers-for-a-policy)
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "d0324cbb-24a2-4edb-acca-fee5384c6a5e",
+  "displayName": "extension-policy",
+  "description": "test",
+  "canExtend": false,
+  "durationInDays": 0,
+  "expirationDateTime": null,
+  "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+  "accessReviewSettings": null,
+  "questions": [],
+  "requestorSettings": {
+    "scopeType": "AllExistingDirectorySubjects",
+    "acceptRequests": true,
+    "allowedRequestors": []
+  },
+  "requestApprovalSettings": {
+    "isApprovalRequired": false,
+    "isApprovalRequiredForExtension": false,
+    "isRequestorJustificationRequired": false,
+    "approvalMode": "NoApproval",
+    "approvalStages": []
+  }
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

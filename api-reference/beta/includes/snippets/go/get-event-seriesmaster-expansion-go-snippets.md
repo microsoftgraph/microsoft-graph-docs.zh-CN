@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5f1f972d11227b60269affdecb293c9e09795536
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e12029d554b528be84b2c80b30a86e1e411786d7
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61082633"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336121"
 ---
 ```go
 
@@ -13,7 +13,8 @@ ms.locfileid: "61082633"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.EventRequestBuilderGetQueryParameters{
-    Select: "subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand",
+    Select: "subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences",
+    Expand: "exceptionOccurrences",
 }
 options := &msgraphsdk.EventRequestBuilderGetOptions{
     Q: requestParameters,

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dec704753c0d83a1a5a642a327f8e2a76c55561430f885f2b03965cc152835ae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 67f0eb5f3b15ec807c7cbd2a55cac6af91f8182f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57220847"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335596"
 ---
 ```objc
 
@@ -32,7 +32,7 @@ NSMutableArray *rolesList = [[NSMutableArray alloc] init];
 [membersList addObject: members];
 MSGraphConversationMember *members = [[MSGraphConversationMember alloc] init];
 NSMutableArray *rolesList = [[NSMutableArray alloc] init];
-[rolesList addObject: @"owner"];
+[rolesList addObject: @"guest"];
 [members setRoles:rolesList];
 [membersList addObject: members];
 [chat setMembers:membersList];

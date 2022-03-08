@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.date: 09/11/2017
 title: 创建 SharePoint 列表
 ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 在 site 中的创建新的 list。
 doc_type: apiPageType
-ms.openlocfilehash: 438465d0243ce28ccd547f209a4a4b0d7841bb43
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8539ce7508d49476edf663eb2fc3cbfdeebca6ea
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132508"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335624"
 ---
 # <a name="create-a-new-list"></a>创建新列表
 
@@ -37,13 +36,31 @@ ms.locfileid: "62132508"
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
+## <a name="request-headers"></a>请求标头
+
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
+|Content-Type|application/json. Required.|
+
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要创建的 [list][] 资源的 JSON 表示形式。
+在请求正文中，提供 list 对象的 JSON [表示][] 形式。
 
-## <a name="example"></a>示例
+## <a name="response"></a>响应
 
-下面的示例展示了如何创建新的泛型列表。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [list][] 对象。 
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+
+下面是如何创建新的泛型列表的示例。
+
+> **注意：** 自定义列都是可选的。
+
+除了此处指定的任何列，还使用引用的 **模板** 中定义的列创建新列表。
+如果未指定 **list** facet 或 **模板**，则列表默认为 `genericList` 模板，其中包括“标题”列。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,14 +114,11 @@ Content-Type: application/json
 ---
 
 
-**注意：** 自定义列都是可选的。
-
-除了此处指定的任何列，还使用引用的 **模板** 中定义的列创建新列表。
-如果未指定 **list** facet 或 **模板**，则列表默认为 `genericList` 模板，其中包括“标题”列。
-
 ## <a name="response"></a>响应
 
-如果成功，此方法在创建列表的响应正文中返回 [list][]。
+下面展示了示例响应。
+
+> **注意：** 为清楚起见，将截断 Response 对象。 实际调用会返回默认属性。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
@@ -131,10 +145,8 @@ Content-type: application/json
 }
 ```
 
-**注意：** 为清楚起见，将截断 Response 对象。
-实际调用会返回默认属性。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 [网站]: ../resources/site.md
 
 <!-- {

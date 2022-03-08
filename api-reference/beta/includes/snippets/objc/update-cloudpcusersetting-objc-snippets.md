@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 069edbbc8502b815e589833f095f0c75f33f9fa58a153a45ee7191cb73681241
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5dd7c4a3a6db809a9501d377b43fcbfaad255105
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56904257"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335498"
 ---
 ```objc
 
@@ -19,6 +19,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphCloudPcUserSetting *cloudPcUserSetting = [[MSGraphCloudPcUserSetting alloc] init];
 [cloudPcUserSetting setDisplayName:@"Example"];
 [cloudPcUserSetting setSelfServiceEnabled: true];
+MSGraphCloudPcRestorePointSetting *restorePointSetting = [[MSGraphCloudPcRestorePointSetting alloc] init];
+[restorePointSetting setFrequencyInHours:@"16"];
+[restorePointSetting setUserRestoreEnabled: true];
+[cloudPcUserSetting setRestorePointSetting:restorePointSetting];
 [cloudPcUserSetting setLocalAdminEnabled: false];
 
 NSError *error;

@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-description: 下载 DriveItem 的主要流（文件）的内容。 只能下载具有 file 属性的 driveItem。
-ms.date: 09/10/2017
+description: 下载 driveItem 的主流 () 文件的内容。 只能下载具有 file 属性的 driveItem。
 title: 下载文件
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a6f466788158d0461ecb796e85be94c420227b2b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8a20bf3cb894cc09dbae58ce4da8f438aef5e2ca
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806535"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335701"
 ---
-# <a name="download-the-contents-of-a-driveitem"></a>下载 DriveItem 的内容
+# <a name="download-the-contents-of-a-driveitem"></a>下载 driveItem 的内容
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
-下载 DriveItem 的主要流（文件）的内容。 只能下载具有 **file** 属性的 driveItem。
+下载 [driveItem](../resources/driveitem.md) 的主流 () 文件的内容。 只能下载 **具有 file** 属性的 **driveItems**。
 
 ## <a name="permissions"></a>权限
 
@@ -55,7 +55,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 下面是下载整个文件的示例。
 
-
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
@@ -88,7 +88,7 @@ GET /me/drive/items/{item-id}/content
 
 若要下载该文件的内容，应用程序将需要遵循响应中的 `Location` 标头。许多 HTTP 客户端库将自动遵循 302 重定向并立即开始下载文件。
 
-预先身份验证的下载 URL 仅在较短的一段时间 （几分钟后）内有效，不需要 `Authorization` 标头即可下载。
+预先验证的下载 URL 仅在较短的一段时间 （几分钟后）内有效，不需要 `Authorization` 标头即可下载。
 
 <!-- { "blockType": "response" } -->
 
@@ -96,6 +96,36 @@ GET /me/drive/items/{item-id}/content
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+
+## <a name="downloading-files-in-javascript-apps"></a>在 JavaScript 应用中下载文件
+若要在 JavaScript `/content` 应用中下载文件，不能使用 API，因为这会响应重定向 `302` 。
+当`302`需要执行预检的 [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  (资源) （如提供授权标头时）显式禁止 **重定向**。
+
+相反，你的应用需要选择 属性 `@microsoft.graph.downloadUrl` ，这将返回指向的 `/content` 相同 URL。
+然后，便可以使用 XMLHttpRequest 直接向此 URL 发出请求。
+由于这些 URL 已经过预身份验证，因此无需 CORS 预检请求即可检索它们。
+
+### <a name="example"></a>示例
+
+若要检索文件的下载 URL，请先发出包含 `@microsoft.graph.downloadUrl` 属性的请求：
+
+```http
+GET /drive/items/{item-ID}?select=id,@microsoft.graph.downloadUrl
+```
+
+这将返回文件的 ID 和下载 URL：
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "12319191!11919",
+  "@microsoft.graph.downloadUrl": "https://..."
+}
+```
+
+然后，可以使用 XMLHttpRequest 向 `@microsoft.graph.downloadUrl` 中提供的 URL 发出请求，从而检索文件。
 
 ## <a name="partial-range-downloads"></a>部分范围下载
 

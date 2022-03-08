@@ -1,16 +1,16 @@
 ---
 title: directorySetting 资源类型
-description: 目录设置可基于可用的 directorySettingTemplates 创建，并更改其预设默认值。
-localization_priority: Normal
+description: 目录设置可以基于可用的 directorySettingTemplates 创建，并更改其预设默认值。
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 50c73e9c68cd3d2fa3f4aed6c7eba84141443d1a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: eb442e80e92b746e864507536b0e0b0992e8cd9a
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440449"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335274"
 ---
 # <a name="directorysetting-resource-type"></a>directorySetting 资源类型
 
@@ -18,27 +18,30 @@ ms.locfileid: "50440449"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-目录设置可以基于可用的 [directorySettingTemplates](directorysettingtemplate.md)创建，并更改其预设默认值。 这些设置可以在租户范围内或特定实体级别管理实体或功能行为。 当在租户范围和特定实体级别定义相同设置时，特定实体级别设置可能会选择从租户范围的设置中退出。  例如，租户范围的设置可能允许现有组成员邀请来宾，但特定组设置可能会选择退出，并且不允许组的成员邀请来宾。 目前，系统定义的设置仅控制 Office 组行为。
+目录设置定义可用于自定义租户范围内和特定于对象的限制和允许的行为的配置。 例如，可以阻止组显示名称的单词列表，或定义是否允许来宾用户成为组所有者。
 
-> **注意**：directorySetting 资源类型的 /beta 版本仅适用于组。 /v1.0 版本已重命名为 groupSetting。
+默认情况下，所有实体继承预设默认值。 若要更改默认设置，必须使用 [directorySettingTemplates](directorysettingtemplate.md) 创建新的设置对象。 当在租户范围和特定组上定义相同设置时，实体级别设置将覆盖租户范围的设置。 例如，租户范围设置可能允许现有组成员邀请来宾，但单个组设置可以覆盖并不允许组的成员邀请来宾。
 
-## <a name="methods"></a>Methods
+> [!TIP]
+> 此 `/v1.0` 资源的版本名为 [groupSetting](/graph/api/resources/groupsetting?view=graph-rest-1.0&preserve-view=true)。
+
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Create setting](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |创建基于 directorySettingTemplate 的设置对象。 POST 请求必须提供模板中定义的所有设置的 settingValues。|
+|[Create setting](../api/group-post-settings.md) | [directorySetting](directorysetting.md) |创建基于 directorySettingTemplate 的设置对象。|
 |[Get setting](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |读取特定设置对象的属性。|
-|[List settings](../api/directorysetting-list.md) | [directorySetting](directorysetting.md) 集合 |列出所有设置对象的属性。|
+|[List settings](../api/group-list-settings.md) | [directorySetting](directorysetting.md) 集合 |列出所有设置对象的属性。|
 |[Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)  |更新 setting 对象。 更新中只能更改 settingValues。|
 |[删除设置](../api/directorysetting-delete.md) | 无 |删除 setting 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|string|来自关联模板的这组设置的显示名称。 只读。|
+|displayName|string|这组设置的显示名称，来自关联的模板。 只读。|
 |id|string| 这些设置的唯一标识符。 只读。|
-|templateId|string| 用于创建此组设置的模板的唯一标识符。 只读。|
-|values|[settingValue](settingvalue.md) 集合| 名称值对的集合。 必须包含和设置模板中定义的所有设置。|
+|templateId|字符串| 用于创建该组设置的模板的唯一标识符。 只读。|
+|values|[settingValue](settingvalue.md) 集合| 与引用的 [directorySettingTemplates](directorysettingtemplate.md) 对象中的 name 和 defaultValue 属性对应的名称-值对的集合。|
 
 ## <a name="relationships"></a>关系
 无

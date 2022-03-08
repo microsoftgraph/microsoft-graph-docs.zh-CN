@@ -5,8 +5,13 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
+ms.openlocfilehash: 0397a4d2d536c9b4fd11c4ba49721ede6ab596df
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335813"
 ---
-
 # <a name="create-crosstenantaccesspolicyconfigurationpartner"></a>创建 crossTenantAccessPolicyConfigurationPartner
 
 命名空间：microsoft.graph
@@ -52,10 +57,10 @@ POST /policies/crossTenantAccessPolicy/partners
 |属性|类型|说明|
 |:---|:---|:---|
 | b2bCollaborationInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为其他组织的用户定义合作伙伴特定的配置，这些用户通过 B2B 协作Azure AD你的资源。 |
-| b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为贵组织中通过 B2B 协作出站访问另一个组织中资源Azure AD配置。 |
+| b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为贵组织的用户定义合作伙伴特定的配置，以便通过 B2B 协作出站访问另一Azure AD中的资源。 |
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为来自其他组织的用户定义合作伙伴特定的配置，这些用户通过 Azure AD B2B 直接连接访问你的资源。 |
-| b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为贵组织中出站以通过 B2B 直接连接访问另一Azure AD合作伙伴特定的配置。 |
-| inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | 确定用于信任来自外部组织的其他条件访问声明的合作伙伴Azure AD配置。 |
+| b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为贵组织的用户定义合作伙伴特定的配置，以便通过 B2B 直接连接出站访问另一Azure AD中的资源。 |
+| inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | 确定用于信任外部访问组织的其他条件访问声明的合作伙伴Azure AD配置。 |
 | tenantId | String | 合作伙伴组织的租户Azure Active Directory (Azure AD) 标识符。 |
 
 ## <a name="response"></a>响应
@@ -66,6 +71,8 @@ POST /policies/crossTenantAccessPolicy/partners
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_crosstenantaccesspolicyconfigurationpartner_from_"
@@ -106,6 +113,32 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-crosstenantaccesspolicyconfigurationpartner-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-crosstenantaccesspolicyconfigurationpartner-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-crosstenantaccesspolicyconfigurationpartner-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-crosstenantaccesspolicyconfigurationpartner-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-crosstenantaccesspolicyconfigurationpartner-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-crosstenantaccesspolicyconfigurationpartner-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 985e512f2737ef322566beb62122d4f18edb239e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bb05950e79888f36a3cacdf03cf3824376982431
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101766"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335106"
 ---
 # <a name="list-extensionproperties"></a>列出 extensionProperties
 
 命名空间：microsoft.graph
 
-检索应用程序上的 [extensionProperty](../resources/extensionproperty.md) 对象列表。
+检索应用程序 [上的 extensionProperty](../resources/extensionproperty.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [extensionProperty](../resources/extensionproperty.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [extensionProperty](../resources/extensionproperty.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -67,7 +67,7 @@ GET /applications/{id}/extensionProperties
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/applications/{id}/extensionProperties
+GET https://graph.microsoft.com/v1.0/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-extensionproperties-csharp-snippets.md)]
@@ -112,16 +112,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications('fd918e4b-c821-4efb-b50a-5eddd23afc6f')/extensionProperties",
     "value": [
         {
-            "id": "a2c459db-f5dc-4328-ae9b-118e88d04d19",
+            "id": "da38c7b1-133e-4a79-abcd-e2fd586ce621",
             "deletedDateTime": null,
-            "appDisplayName": "Display name",
-            "name": "extension_b3efaf8f68a44275abcff28ef86b2ee3_extensionName",
+            "appDisplayName": "",
             "dataType": "String",
             "isSyncedFromOnPremises": false,
+            "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
             "targetObjects": [
-                "Application"
+                "User"
+            ]
+        },
+        {
+            "id": "1f0f15e3-925d-40f0-8fc8-9d3ad135bce0",
+            "deletedDateTime": null,
+            "appDisplayName": "",
+            "dataType": "String",
+            "isSyncedFromOnPremises": false,
+            "name": "extension_25883231668a43a780b25685c3f874bc_cpiminternal_useAccountEnabledForPhone",
+            "targetObjects": [
+                "User"
             ]
         }
     ]

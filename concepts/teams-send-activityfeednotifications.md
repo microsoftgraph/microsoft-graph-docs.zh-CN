@@ -1,19 +1,19 @@
 ---
 title: 向用户发送活动源通知Microsoft Teams
-description: 使用应用和 microsoft graph 向 Microsoft Teams 用户Teams活动源通知。
+description: 使用 microsoft graph 和 Microsoft Teams 向 Teams 中的用户发送活动源通知。
 author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 50b02872a72cea158acdae5cc6e9c9e8b109be16
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e52570646a1866be32f4f6c8e8478143d7def7e4
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035568"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335379"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>向用户发送活动源通知Microsoft Teams
 
-用户Microsoft Teams活动源，通过通知用户更改，对需要关注的项目进行会审。 可以使用 Microsoft 应用中的活动源通知 API Graph将此功能扩展到你的应用。 这样，你的应用可以提供更丰富的体验，并且通过帮助用户了解其使用的工具和工作流中的更改，从而更好地吸引用户。
+通过Microsoft Teams活动源，用户可以通过通知用户更改来对需要关注的项目进行分类。 可以使用 Microsoft 应用中的活动源通知 API Graph将此功能扩展到你的应用。 这样，你的应用可以提供更丰富的体验，并且通过帮助用户了解其使用的工具和工作流中的更改，从而更好地吸引用户。
 
 ## <a name="understanding-the-basics-of-activity-feed-notification"></a>了解活动源通知的基础信息
 
@@ -31,19 +31,19 @@ ms.locfileid: "59035568"
 
 以下示例演示这些组件如何一起提供有关通知的详细信息。 此示例是有关在社区中提及的用户Yammer通知。
 
-![Yammer通知示例](images/teams-activityfeednotifications/examplefeednotification.png)
+![Yammer性通知示例](images/teams-activityfeednotifications/examplefeednotification.png)
 
 ## <a name="requirements-for-using-the-activity-feed-notification-apis"></a>使用活动源通知 API 的要求
 
 活动源 API 用于Teams[应用](/microsoftteams/platform/overview)。 以下是发送活动源通知的要求：
 
-- 应用Teams清单必须将 Azure AD 应用 ID 添加到 `webApplicationInfo` 部分。 有关详细信息，请参阅 [清单架构](/microsoftteams/platform/resources/schema/manifest-schema)。
-- 活动类型必须在 部分中 `activities` 声明。 有关详细信息，请参阅 [清单架构](/microsoftteams/platform/resources/schema/manifest-schema)。
-- 必须为Teams个人、团队或聊天中的收件人安装该应用程序。 [](/graph/api/resources/team?preserve-view=true) [](/graph/api/resources/chat?preserve-view=true) 有关详细信息，请参阅Teams[应用安装](/graph/api/resources/teamsappinstallation?preserve-view=true)。
+- 应用Teams清单必须将Azure AD应用 ID 添加到 部分中`webApplicationInfo`。 有关详细信息，请参阅 [清单架构](/microsoftteams/platform/resources/schema/manifest-schema)。
+- 活动类型必须在 部分中声明 `activities` 。 有关详细信息，请参阅 [清单架构](/microsoftteams/platform/resources/schema/manifest-schema)。
+- 必须为Teams个人、团队或聊天中的收件人安装该应用程序。[](/graph/api/resources/team?preserve-view=true) [](/graph/api/resources/chat?preserve-view=true) 有关详细信息，请参阅Teams[应用安装](/graph/api/resources/teamsappinstallation?preserve-view=true)。
 
 ### <a name="teams-app-manifest-changes"></a>Teams应用清单更改
 
-本部分介绍需要添加到应用清单Teams的更改。 请注意，你必须使用应用Teams[版本](/microsoftteams/platform/resources/schema/manifest-schema) `1.7` 或更高版本。
+本部分介绍需要添加到应用清单Teams的更改。 请注意，必须使用应用清单Teams[版本](/microsoftteams/platform/resources/schema/manifest-schema)`1.7`或更高版本。
 
 ```json
 "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
@@ -62,10 +62,10 @@ ms.locfileid: "59035568"
 
 |参数|类型|说明|
 |:---|:---|:---|
-|id|string|Azure AD 应用 ID (客户端 ID) 。|
-|resource|string|与 Azure AD 应用关联的资源。 也称为 Azure 门户中的回复或重定向 URL。|
+|id|string|Azure AD客户端 ID (应用程序 ID) 。|
+|resource|string|与应用关联的Azure AD资源。 也称为 Azure 门户中的回复或重定向 URL。|
 
-> **注意：** 如果团队、聊天或Teams用户 (同一 Azure AD) 同一范围内多个应用，你可能会收到错误。 确保你使用的是唯一的 Azure AD 应用。
+> **注意：** 如果团队、聊天或用户Teams同一应用 (，你可能会) 应用Azure AD错误。 请确保在应用中使用唯一Azure AD应用。
 
 #### <a name="activities-section-changes"></a>activities 节更改
 
@@ -90,16 +90,16 @@ ms.locfileid: "59035568"
 |参数|类型|说明|
 |:---|:---|:---|
 |类型|string|活动的类型。 这需在特定的清单中是唯一的。|
-|说明|string|可读简短说明。 这将在客户端上Microsoft Teams显示。|
-|templateText|字符串|活动通知的模板文本。 可以通过封装 中的参数来声明参数 `{}` 。|
+|description|string|可读简短说明。 这将在客户端上Microsoft Teams显示。|
+|templateText|字符串|活动通知的模板文本。 可以通过封装 中的参数来声明参数 `{}`。|
 
->**注意：** `actor` 是一个始终采用调用方名称的特殊参数。 在委派呼叫中 `actor` ， 是用户名。 在仅应用程序调用中，它采用应用程序Teams的名称。
+>**注意：** `actor` 是一个始终采用调用方名称的特殊参数。 在委派呼叫中， `actor` 是用户名。 在仅应用程序调用中，它采用应用程序Teams的名称。
 
 ### <a name="installing-the-teams-app"></a>安装 Teams 应用
 
 Teams应用可以安装在团队、聊天或用户个人中，并且可以通过多种方式分发。 有关详细信息，请参阅Teams[分配方法](/microsoftteams/platform/concepts/deploy-and-publish/overview)。 通常， [旁加载](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload) 优先用于开发目的。 开发后，你可以根据是想要分发到一个租户还是所有租户来选择正确的分发方法。
 
-此外，还可[Teams应用安装](/graph/api/resources/teamsappinstallation?preserve-view=true)API 来管理Teams安装。
+此外，还可[Teams应用安装](/graph/api/resources/teamsappinstallation?preserve-view=true) API 来管理Teams安装。
 
 ## <a name="sending-activity-feed-notifications-to-users"></a>向用户发送活动源通知
 
@@ -115,7 +115,7 @@ Teams应用可以安装在团队、聊天或用户个人中，并且可以通过
 
 ### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>示例 1：通知用户在聊天中创建的任务
 
-此示例演示如何发送在聊天中创建的新任务的活动源通知。 在这种情况下，Teams应用必须安装在具有 Id 的聊天中，并且用户也必须是聊天的一 `chatId` `569363e2-4e49-4661-87f2-16f245c5d66a` 部分。
+此示例演示如何发送在聊天中创建的新任务的活动源通知。 在这种情况下，必须在Teams Id `chatId` 的聊天中安装应用，并且用户`569363e2-4e49-4661-87f2-16f245c5d66a`也必须是聊天的一部分。
 
 #### <a name="request"></a>请求
 <!-- {
@@ -207,7 +207,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-event-using-a-custom-topic"></a>示例 3：使用自定义主题通知用户事件
 
-如前面的示例中所示，你可以链接到团队或聊天的不同方面。 但是，如果要链接到不是团队的一部分或不由 Microsoft Graph 表示的方面，或者如果您想要自定义名称，可以将 的源设置为 并传递其自定义 `topic` `text` 值。 此外 `webUrl` ，在将 source 用作 时 `topic` 是必需的 `text` 。
+如前面的示例中所示，你可以链接到团队或聊天的不同方面。 但是，如果要链接到不是团队的一部分或不由 Microsoft Graph `topic` `text` 表示的方面，或者如果你想要自定义名称，可以将 的源设置为 并传递其自定义值。 此外， `webUrl` 在将 source 用作 时 `topic` 是必需的 `text`。
 
 前面Yammer的通知示例使用自定义主题，Yammer Microsoft Graph。
 
@@ -389,11 +389,11 @@ HTTP/1.1 204 No Content
 
 ## <a name="customizing-how-the-notifications-alert-you"></a>自定义通知通知的提醒
 
-Microsoft Teams用户可以自定义在源中作为横幅等显示的通知。 还可以自定义通过活动源 API 生成的通知。 用户可以选择如何通过 Microsoft Teams 中的设置通知他们。 Teams应用将显示在列表中供用户选择，如以下屏幕截图所示。
+Microsoft Teams用户可以自定义在源中看到的通知，以横幅等。 还可以自定义通过活动源 API 生成的通知。 用户可以选择如何通过 Microsoft Teams 中的设置通知他们。 Teams应用将显示在列表中供用户选择，如以下屏幕截图所示。
 
 ![Screenshot of the Notifications settings in Teams， with the Custom option highlighted](images/teams-activityfeednotifications/notificationsettings.png)
 
-用户可以单击 **应用** 旁边的"编辑"并自定义通知，如以下示例所示。 将显示 `description` 应用程序Teams中的字段。
+用户可以单击 **应用** 旁边的"编辑"并自定义通知，如以下示例所示。 将显示`description`应用程序Teams中的字段。
 
 ![Screenshot showing notifications customized to Banner and feed for a Teams app](images/teams-activityfeednotifications/applevelnotificationsettings.png)
 
@@ -407,7 +407,7 @@ Microsoft Teams用户可以自定义在源中作为横幅等显示的通知。 �
 
 否，用户无法向自己发送通知。 对于此方案，请使用应用程序权限。
 
-### <a name="can-a-teams-app-control-how-the-notifications-are-shown-to-the-user"></a>应用Teams控制如何向用户显示通知？
+### <a name="can-a-teams-app-control-how-the-notifications-are-shown-to-the-user"></a>应用Teams如何控制通知如何向用户显示？
 
 否，仅允许用户更改通知设置。
 
@@ -415,10 +415,11 @@ Microsoft Teams用户可以自定义在源中作为横幅等显示的通知。 �
 
 设置将在应用发送第一个通知Teams显示。 这将减少用户看到的设置数。
 
-### <a name="i-started-getting-a-409-conflict-error-how-do-i-resolve-it"></a>我开始收到 409 (冲突) 错误，如何解决此问题？
+### <a name="i-started-getting-a-409-conflict-error-how-do-i-resolve-it"></a>我开始收到 409 (冲突) 错误，如何解决该问题？
 
-`Conflict`错误主要发生在Teams安装在同一作用域中的多个 (团队、聊天、用户等) 清单部分具有相同的 Azure AD appId 时 `webApplicationInfo` 。 发生这种情况时，你将看到一个错误，如 `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.` 。 确保将唯一的 Azure AD 应用用于唯Teams应用。 请注意，可以在多个范围Teams团队 + 用户安装 (应用，例如) 。
+`Conflict`错误主要发生在Teams安装在同一作用域中的多个 (团队、聊天、用户等) 在清单部分Azure AD appId `webApplicationInfo` 相同时。 发生这种情况时，你将看到一个错误，如 `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`。 请确保将唯一的 Azure AD 应用用于唯一Teams应用。 请注意，可以在多个范围Teams团队 + 用户安装 (应用，例如) 。
 
 ## <a name="see-also"></a>另请参阅
 
-[使用活动源Microsoft Teams的最佳实践](teams-activity-feed-notifications-best-practices.md)。
+* [使用活动源Microsoft Teams的最佳实践](teams-activity-feed-notifications-best-practices.md)
+* [设计活动源通知Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)

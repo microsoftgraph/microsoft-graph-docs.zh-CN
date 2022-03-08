@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0c04e2d438d99b800d370242c44f762a9282b3b5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bdbdc32dc6ac646f0f221c2162aa3c7a8c412b17
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090962"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335575"
 ---
 ```powershell
 
@@ -32,9 +32,9 @@ $params = @{
         @{
             "@odata.type" = "#microsoft.graph.aadUserConversationMember"
             Roles = @(
-                "owner"
+                "guest"
             )
-            "User@odata.bind" = "https://graph.microsoft.com/beta/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"
+            "User@odata.bind" = "https://graph.microsoft.com/beta/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"
         }
     )
 }

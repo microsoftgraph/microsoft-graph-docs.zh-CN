@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 21692c439b78b54d998a34254ce26e3a00a88f28a03869dbc7e17c843a0c19a2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 727b79575f9bc532dace91e4246e34fbb1750aa3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57278850"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335134"
 ---
 ```javascript
 
@@ -31,8 +31,8 @@ const chat = {
     },
     {
       '@odata.type': '#microsoft.graph.aadUserConversationMember',
-      roles: ['owner'],
-      'user@odata.bind': 'https://graph.microsoft.com/v1.0/users(\'3626a173-f2bc-4883-bcf7-01514c3bfb82\')'
+      roles: ['guest'],
+      'user@odata.bind': 'https://graph.microsoft.com/v1.0/users(\'8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g\')'
     }
   ]
 };

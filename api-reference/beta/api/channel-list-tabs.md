@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9de612165aaa4ba5b4a53f0bd1f5b8fec193ce80
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: b64efa57a7c3af9cb75c873098cefe9f5536b7d8
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804729"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335262"
 ---
 # <a name="list-tabs-in-channel"></a>列出频道中的选项卡
 
@@ -19,6 +19,8 @@ ms.locfileid: "62804729"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索团队 [中](../resources/teamstab.md) 指定 [频道中的](../resources/channel.md) 选项卡 [列表](../resources/team.md)。 
+
+> **注意**："文件"选项卡是频道或聊天的本机选项卡，此 API 不会返回它。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -56,7 +58,7 @@ GET /teams/{team-id}/channels/{channel-id}/tabs
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>示例 1：列出频道中所有选项卡以及关联的Teams选项卡
+### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>示例 1：列出频道中所有选项卡以及关联的Teams应用程序
 #### <a name="request"></a>请求
 下面展示了示例请求。
 

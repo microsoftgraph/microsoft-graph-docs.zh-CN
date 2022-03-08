@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 961ffc4bcf2e1d5be2280d45e3d48194700b4f29fe13c2dfdfe45e1f231409e5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 49b15ef046e6d570e110860313134c6bbbeb15bb
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57221189"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335141"
 ---
 ```java
 
@@ -29,9 +29,9 @@ members1.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https
 membersList.add(members1);
 AadUserConversationMember members2 = new AadUserConversationMember();
 LinkedList<String> rolesList2 = new LinkedList<String>();
-rolesList2.add("owner");
+rolesList2.add("guest");
 members2.roles = rolesList2;
-members2.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"));
+members2.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"));
 membersList.add(members2);
 ConversationMemberCollectionResponse conversationMemberCollectionResponse = new ConversationMemberCollectionResponse();
 conversationMemberCollectionResponse.value = membersList;

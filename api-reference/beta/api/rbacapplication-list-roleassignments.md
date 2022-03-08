@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3b82cd234cb06271a8a95c82d5b8d2e626cebc8b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c0d2a061f25b6a5f56f0c4b989298b69fc5e0a51
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112055"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335456"
 ---
 # <a name="list-unifiedroleassignments"></a>列出 unifiedRoleAssignments
 
@@ -18,7 +18,7 @@ ms.locfileid: "62112055"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取提供商的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象列表。
+获取提供商 [的 unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象列表。
 
 目前支持以下 RBAC 提供程序：
 - 目录 (Azure AD) 
@@ -27,7 +27,7 @@ ms.locfileid: "62112055"
 ## <a name="permissions"></a>权限
 
 
-根据 RBAC 提供程序以及 (或应用程序) 类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 ### <a name="for-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
@@ -67,12 +67,12 @@ GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq
 
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 
-GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/accessPackageCatalog/{catalog id}'
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'
 ```
 
 ## <a name="query-parameters"></a>查询参数
 
-此操作需要 `$filter` 查询参数。 可以筛选 或 `roleDefinitionId` `principalId` 属性。 属性 `roleDefinitionId` 可以是角色对象 ID 或角色模板对象 ID。 主体 `$expand` 也支持查询 **参数**。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此操作需要查询 `$filter` 参数。 可以筛选 或 `roleDefinitionId``principalId` `appScopeId` 属性。 属性 `roleDefinitionId` 可以是角色对象 ID 或角色模板对象 ID。 主体 `$expand` 上也支持查询 **参数**。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -86,7 +86,7 @@ GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -331,6 +331,55 @@ Content-type: application/json
     ]
 }
 ```
+
+### <a name="example-3-request-using-filter-for-role-assignments-on-an-access-package-catalog-and-expand-principal"></a>示例 3：请求$filter包目录上的角色分配，并展开主体
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roleAssignments_3"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'&$expand=principal
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments",
+    "value": [
+        {
+            "id": "900633fe-2508-4b13-a561-a15e320ad35f",
+            "principalId": "39228473-522e-4533-88cc-a9553180cb99",
+            "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "appScopeId": "/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc",
+            "principal": {
+                "@odata.type": "#microsoft.graph.user",
+                "id": "39228473-522e-4533-88cc-a9553180cb99"
+            }    
+        }
+    ]
+}
+```
+
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

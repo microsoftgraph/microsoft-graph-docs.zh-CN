@@ -1,16 +1,16 @@
 ---
 title: changeNotification 资源类型
 description: 表示发送给订阅者更改通知。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: ff9a854419ab9090d17717c2d9cc9ef7eb640aeb
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: 9099c2599f63a117e4f963143cfb8570ef6aee46
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129479"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335288"
 ---
 # <a name="changenotification-resource-type"></a>changeNotification 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "53129479"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示发送给订阅者的通知。
+表示发送给订阅者的通知。 此资源的所有属性都是只读的。
 
 有关详细信息，请参阅 [Microsoft Graph API 通过更改通知](webhooks.md)。
 
@@ -30,46 +30,45 @@ ms.locfileid: "53129479"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | changeType | 指示将引发更改通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 必填。 |
-| clientState | string | 订阅请求请求中指定的 **clientState** 属性的值 (（如果有) ）。 最大长度为 255 个字符。 客户端可以通过比较 **clientState** 属性的值来检查更改通知是否来自服务。 与订阅一起发送的 **clientState** 属性的值与每次更改通知时收到的 **clientState** 属性的值进行比较。 可选。 |
+| changeType | changeType | 指示将引发更改通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 必需项。 |
+| clientState | 字符串 | 订阅请求请求中指定的 **clientState** 属性的值（如果有 () 。 最大长度为 255 个字符。 客户端可以通过比较 **clientState** 属性的值来检查更改通知是否来自服务。 与订阅一起发送的 **clientState** 属性的值与每次更改通知时收到的 **clientState** 属性的值进行比较。 可选。 |
 | encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) |  (预览) 更改通知附加的加密内容。 仅在订阅 **请求期间定义了 encryptionCertificate** 和 **includeResourceData** 且资源支持它时提供。 可选。 |
 | id | string | 通知的唯一 ID。 可选。 |
-| lifecycleEvent | lifecycleEventType | 如果当前通知是生命周期通知，则生命周期通知的类型。 可选。 支持的值是 `missed` `subscriptionRemoved` `reauthorizationRequired` 、、。 |
-| resource | string | 发出更改通知的资源相对于 的 `https://graph.microsoft.com` URI。 必填。 |
-| resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必填。 |
-| subscriptionExpirationDateTime | DateTimeOffset | 订阅的过期时间。 必填。 |
-| subscriptionId | GUID | 生成通知的订阅的唯一标识符。 |
-| tenantId | GUID | 源自更改通知的租户的唯一标识符。 |
+| lifecycleEvent | lifecycleEventType | 如果当前通知是生命周期通知，则生命周期通知的类型。 可选。 支持的值是 、`missed``subscriptionRemoved`、`reauthorizationRequired`。 可选。 |
+| resource | string | 发出更改通知的资源 `https://graph.microsoft.com`相对于 的 URI。 必需项。 |
+| resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 可选。 |
+| subscriptionExpirationDateTime | DateTimeOffset | 订阅的过期时间。 必需项。 |
+| subscriptionId | Guid | 生成通知的订阅的唯一标识符。 必需项。|
+| tenantId | Guid | 发出更改通知的租户的唯一标识符。 必填。|
 
 ## <a name="relationships"></a>关系
 
 无。
 
+
 ## <a name="json-representation"></a>JSON 表示形式
-
 下面是资源的 JSON 表示形式。
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.changeNotification"
-}-->
-
-```json
+}
+-->
+``` json
 {
-  "subscriptionId": "76222963-cc7b-42d2-882d-8aaa69cb2ba3",
-  "changeType": "created",
-  "clientState": "client state provided when creating subscription",
-  "id": "15ee1d1f-af7b-42d9-885b-9d00db065dd9",
-  "tenantId": "2c937fad-a8a7-496c-b0e4-bf77dcc7eb2a",
-  "subscriptionExpirationDateTime": "2020-04-12T23:20:50.52Z",
-  "resource": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')",
+  "@odata.type": "#microsoft.graph.changeNotification",
+  "id": "String (identifier)",
+  "subscriptionId": "Guid",
+  "subscriptionExpirationDateTime": "String (timestamp)",
+  "clientState": "String",
+  "changeType": "String",
+  "resource": "String",
+  "tenantId": "Guid",
+  "encryptedContent": {
+    "@odata.type": "microsoft.graph.changeNotificationEncryptedContent"
+  },
+  "lifecycleEvent": "String",
   "resourceData": {
-    "id": "1565293727947",
-    "@odata.type": "#Microsoft.Graph.ChatMessage",
-    "@odata.id": "teams('88cbc8fc-164b-44f0-b6a6-b59b4a1559d3')/channels('19:8d9da062ec7647d4bb1976126e788b47@thread.tacv2')/messages('1565293727947')/replies('1565293727947')"
+    "@odata.type": "microsoft.graph.resourceData"
   }
 }
 ```

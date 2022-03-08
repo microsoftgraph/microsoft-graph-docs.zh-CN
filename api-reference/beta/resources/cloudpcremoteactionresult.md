@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 377d2499857764d82c73620c16ee77f33ea33c26
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 9b708df825104cd85175543b7c16850c16d40d0d
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61391009"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336023"
 ---
 # <a name="cloudpcremoteactionresult-resource-type"></a>cloudPcRemoteActionResult 资源类型
 
@@ -30,12 +30,12 @@ ms.locfileid: "61391009"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|actionName|String|指定的操作。 网站门户中Microsoft Endpoint Manager的值是 `Reprovision` `Resize` ：、。 企业云电脑设备中支持的值包括 `Rename` `Reboot` `Reprovision` ：、、、。 `Troubleshoot`|
+|actionName|String|指定的操作。 网站门户中Microsoft Endpoint Manager的值是：、`Reprovision`、`Resize``Restore`。 企业云电脑设备中支持的值包括：、`Reboot`、`Rename`、`Reprovision``Troubleshoot`。|
 |actionState|[actionState](#actionstate-values)|操作的状态。 可能的值是：`None`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。 只读。|
 |cloudPcId|String|执行远程操作云电脑设备的 ID。 只读。|
 |managedDeviceId|String|执行远程操作 Intune 托管设备的 ID。 只读。|
-|startDateTime|DateTimeOffset|启动操作的时间。 时间戳以 ISO 8601 格式显示，协调世界时 (UTC) 。 例如，2014 年 1 月 1 日午夜 UTC 显示为"2014-01-01T00：00：00Z"。|
-|lastUpdatedDateTime|DateTimeOffset|操作的最后更新时间。 时间戳以 ISO 8601 格式显示，协调世界时 (UTC) 。 例如，2014 年 1 月 1 日午夜 UTC 显示为"2014-01-01T00：00：00Z"。|
+|startDateTime|DateTimeOffset|启动操作的时间。 时间戳以 ISO 8601 格式和 UTC 协调世界时 (显示) 。 例如，2014 年 1 月 1 日午夜 UTC 显示为"2014-01-01T00：00：00Z"。|
+|lastUpdatedDateTime|DateTimeOffset|操作的最后更新时间。 时间戳以 ISO 8601 格式和 UTC 协调世界时 (显示) 。 例如，2014 年 1 月 1 日午夜 UTC 显示为"2014-01-01T00：00：00Z"。|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcStatusDetails.md)|云电脑状态的详细信息。 |
 
 ### <a name="actionstate-values"></a>actionState 值

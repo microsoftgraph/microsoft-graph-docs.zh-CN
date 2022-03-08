@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e4fa9d3e7f2505d210026f7b7b54429539a9cd1a
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 06ecfec829481fde26ceb6dbe810f6c567dc66ea
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804764"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336065"
 ---
 # <a name="accesspackageresource-resource-type"></a>accessPackageResource 资源类型
 
@@ -30,24 +30,23 @@ ms.locfileid: "62804764"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|包含资源的环境信息。 这可以使用批注或 `@odata.bind` 环境的 *originId 进行设置*。|
 |attributes|[accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md) 集合| 包含有关从请求程序收集并发送到资源应用程序的属性的信息。 |
-|addedBy|字符串|首次添加此资源的用户或应用程序的名称。 只读。|
+|addedBy|String|首次添加此资源的用户或应用程序的名称。 只读。|
 |addedOn|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
-|description|字符串|资源的说明。|
-|displayName|字符串|资源的显示名称，例如应用程序名称、组名称或网站名称。|
-|id|字符串| 只读。|
-|isPendingOnboarding|布尔值|如此 如果资源尚不可用于工作分配。|
-|originId|字符串|源系统中资源的唯一标识符。 对于组Azure AD，这是组的标识符。 |
+|description|String|资源的说明。|
+|displayName|字符串|资源的显示名称，如应用程序名称、组名称或网站名称。|
+|id|String| 只读。|
+|isPendingOnboarding|Boolean|如此 如果资源尚不可用于工作分配。|
+|originId|String|源系统中资源的唯一标识符。 对于组Azure AD，这是组的标识符。 |
 |originSystem|字符串|源系统中资源的类型 `SharePointOnline`，如 或 `AadApplication` `AadGroup`。|
-|resourceType|字符串|资源的类型`Application`，例如，它是已Azure AD的应用程序`SharePoint Online Site`，还是 SharePoint Online 网站。|
+|resourceType|String|资源的类型`Application`，例如，它是已连接Azure AD应用程序`SharePoint Online Site`，还是 SharePoint Online 网站。|
 |url|String|资源的唯一资源定位器，例如用于将用户登录应用程序的 URL。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](accesspackageresourceenvironment.md)| 可为 NULL。 支持 `$expand`。|
+|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|包含资源的环境信息。 这可以使用批注或 `@odata.bind` 环境的 *originId 进行设置*。支持 `$expand`。|
 |accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) 集合| 只读。 可为 NULL。 支持 `$expand`。|
 |accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) 集合| 只读。 可为 NULL。 支持 `$expand`。|
 

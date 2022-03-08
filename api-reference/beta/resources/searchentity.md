@@ -1,16 +1,16 @@
 ---
 title: searchEntity 资源类型
-description: 表示 Microsoft 搜索 API 终结点的顶级对象。
-localization_priority: Normal
+description: 表示 API 终结点的顶级Microsoft 搜索对象。
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d62292b3a4890589d72214a3544059eaf8af8817
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 39f5213e9be29f9fd87332513c3d0b090e3d3e1f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067129"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335183"
 ---
 # <a name="searchentity-resource-type"></a>searchEntity 资源类型
 
@@ -18,20 +18,27 @@ ms.locfileid: "52067129"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Microsoft 搜索 API 终结点的顶级对象。 它不像其他资源一样Graph，而是作为查询操作[锚](../api/search-query.md)点。 
+表示 API 终结点的顶级Microsoft 搜索对象。
+
+它用作查询操作和搜索应答[](../api/search-query.md)关系（如首字母[缩写](../resources/search-acronym.md)词、书签和 [qnas）的定位点](../resources/search-qna.md)。 [](../resources/search-bookmark.md) 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[查询](../api/search-query.md) |[searchResponse](searchresponse.md) | 运行请求正文中指定的查询。  |
+|[查询](../api/search-query.md) |[searchResponse](searchresponse.md) 集合 | 运行指定的搜索查询。   |
 
 ## <a name="properties"></a>属性
 无。
 
 ## <a name="relationships"></a>关系
-无。
+| 关系 | 类型 |说明|
+|:---------------|:--------|:----------|
+| 首字母缩略词 | [microsoft.graph.search.acronym](../resources/search-acronym.md) 集合 | 用于定义Microsoft 搜索常见首字母缩略词的结果中的管理答案。  |
+| bookmarks | [microsoft.graph.search.bookmark](../resources/search-bookmark.md) 集合 | 管理答案Microsoft 搜索组织中常见搜索查询的结果。 |
+| qnas | [microsoft.graph.search.qna](../resources/search-qna.md) 集合 | 管理答案Microsoft 搜索结果，为组织的特定搜索关键字提供答案。 |
+
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -48,9 +55,9 @@ ms.locfileid: "52067129"
 ```
 
 
-## <a name="next-steps"></a>后续步骤
+## <a name="see-also"></a>另请参阅
 
-浏览 [查询](../api/search-query.md) 操作。
+[查询](../api/search-query.md)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

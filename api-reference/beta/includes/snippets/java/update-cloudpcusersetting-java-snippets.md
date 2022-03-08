@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8e1498b1c5bcc3a8a4b480a0a19e9245758faf3d5c78161942f45cab6498bd5d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9a4b7f8310bda8726995c536f2922cab8aab7f2b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56904256"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335491"
 ---
 ```java
 
@@ -14,6 +14,10 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 CloudPcUserSetting cloudPcUserSetting = new CloudPcUserSetting();
 cloudPcUserSetting.displayName = "Example";
 cloudPcUserSetting.selfServiceEnabled = true;
+CloudPcRestorePointSetting restorePointSetting = new CloudPcRestorePointSetting();
+restorePointSetting.frequencyInHours = "16";
+restorePointSetting.userRestoreEnabled = true;
+cloudPcUserSetting.restorePointSetting = restorePointSetting;
 cloudPcUserSetting.localAdminEnabled = false;
 
 graphClient.deviceManagement().virtualEndpoint().userSettings("b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff")

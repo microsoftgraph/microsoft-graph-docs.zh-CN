@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 39c908982adb576a72c1683bcf176dd566b30ae2
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 580d1299503924486dab1be11c33e8f771592baa
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805107"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336058"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
@@ -28,7 +28,7 @@ ms.locfileid: "62805107"
 - 客户可以审阅并认证员工对Azure AD的访问权限。
 - 客户可以审阅和审核分配Azure AD特权角色。 这支持组织管理特权访问。
 
-请注意，访问评审功能（包括 API）包含在Azure AD Premium P2。  创建访问评审的租户必须拥有有效的已购买或试用Azure AD Premium P2 EMS E5 订阅。
+请注意，访问评审功能（包括 API）包含在Azure AD Premium P2。  创建访问评审的租户必须拥有有效的已购买或试用Azure AD Premium P2 EMS E5 订阅。 有关许可证要求详细信息，请参阅 [访问评审许可证要求](/azure/active-directory/governance/access-reviews-overview#license-requirements)。
 
 
 ## <a name="methods"></a>方法
@@ -69,7 +69,7 @@ ms.locfileid: "62805107"
 |**策略**| | |
 |[获取 accessReviewPolicy](../api/accessreviewpolicy-get.md)|[accessReviewPolicy](../resources/accessreviewpolicy.md)|读取 [accessReviewPolicy](../resources/accessreviewpolicy.md) 对象的属性和关系。|
 |[更新 accessReviewPolicy](../api/accessreviewpolicy-update.md)|[accessReviewPolicy](../resources/accessreviewpolicy.md)|更新 [accessReviewPolicy 对象](../resources/accessreviewpolicy.md) 的属性。|
-|[列出已弃 (](../api/accessreviewscheduledefinition-filterbycurrentuser.md) 审批) |[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 集合|检索调用用户作为一个或多个实例的审阅者的所有定义。 此方法已被弃用，并替换为 [accessReviewScheduleDefinition： filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)。|
+|[列出等待审批 (](../api/accessreviewscheduledefinition-filterbycurrentuser.md) 已弃用) |[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 集合|检索调用用户作为一个或多个实例的审阅者的所有定义。 此方法已被弃用，并替换为 [accessReviewScheduleDefinition： filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)。|
 |[列出已弃 (pendingAccessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md))  | [accessReviewInstance](accessreviewinstance.md) 集合。 | 获取分配给调用用户的所有待定 accessReviewInstance 资源。 此方法已被弃用，并替换为 [accessReviewInstance： filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)。 |
 
 ## <a name="role-and-application-permission-authorization-checks"></a>角色和应用程序权限授权检查
@@ -85,7 +85,7 @@ ms.locfileid: "62805107"
 
 ## <a name="see-also"></a>另请参阅
 
-- [了解如何](/graph/accessreviews-overview)使用访问评审 API 查看对访问资源的访问权限Azure AD教程
+- [了解如何](/graph/accessreviews-overview)使用访问评审 API 查看对访问Azure AD教程
 - [管理员如何使用访问评审Azure AD用户访问](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
 - [管理员如何使用访问评审管理Azure AD访问](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
 

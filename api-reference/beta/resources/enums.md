@@ -1,20 +1,62 @@
 ---
 title: 枚举值
-description: Microsoft Graph枚举值
+description: Microsoft Graph 枚举值
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 480689881eb5b806cd5e2fa734068da013c86966
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 3ddafab129251829d797d8de943b76182a6d5418
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894794"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335414"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="accesspackagecustomextensionhandlerstatus-values"></a>accessPackageCustomExtensionHandlerStatus 值 
+
+|Member|
+|:---|
+|requestSent|
+|requestReceived|
+|unknownFutureValue|
+
+### <a name="accesspackagecustomextensionstage-values"></a>accessPackageCustomExtensionStage 值 
+
+|Member|
+|:---|
+|assignmentRequestCreated|
+|assignmentRequestApproved|
+|assignmentRequestGranted|
+|assignmentRequestRemoved|
+|assignmentFourteenDaysBeforeExpiration|
+|assignmentOneDayBeforeExpiration|
+|unknownFutureValue|
+
+### <a name="accessreviewhistorystatus-values"></a>accessReviewHistoryStatus 值
+
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
+### <a name="accessreviewhistorydecisionfilter-values"></a>accessReviewHistoryDecisionFilter 值
+
+| Member|
+|:-----------------|
+|approve|
+|deny|
+|notReviewed|
+|dontKnow|
+|notNotified|
+|unknownFutureValue|
+
 
 ### <a name="accessreviewhistorystatus-values"></a>accessReviewHistoryStatus 值
 
@@ -118,13 +160,14 @@ ms.locfileid: "62894794"
 
 ### <a name="appcredentialrestrictiontype-values"></a>appCredentialRestrictionType 值
 
-|Member|
-|:-----|
-|passwordAddition|
-|passwordLifetime|
-|symmetricKeyAddition|
-|symmetricKeyLifetime|
-|unknownFutureValue|
+| Member                 |
+| :--------------------- |
+| passwordAddition       |
+| passwordLifetime       |
+| symmetricKeyAddition   |
+| symmetricKeyLifetime   |
+| customPasswordAddition |
+| unknownFutureValue     |
 
 ### <a name="appkeycredentialrestrictiontype-values"></a>appKeyCredentialRestrictionType 值
 
@@ -263,7 +306,7 @@ ms.locfileid: "62894794"
 |整数|
 |参考|
 |Binary|
-|布尔|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>可变值
@@ -279,7 +322,7 @@ ms.locfileid: "62894794"
 
 |Member|
 |:---|
-|None|
+|无|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -1807,7 +1850,7 @@ ms.locfileid: "62894794"
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
-根据组定义， (用户帐户) 类型的Windows值。
+根据组定义， (用户帐户) 类型的) 值Windows值。
 
 | 成员        | 值 | 说明                     |
 | :------------ | :---- | :------------------------------ |
@@ -2002,7 +2045,7 @@ ms.locfileid: "62894794"
 
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| None | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
+| 无 | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
 | Override | 1 | 发件人已覆盖邮件裁定并发送了该邮件。|
 | ReportFalsePositive | 2 | 发件人将邮件裁定报告给管理员为误报。|
 
@@ -2010,7 +2053,7 @@ ms.locfileid: "62894794"
 
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| None | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
+| 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
 | AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式替代`AllowOverrideWithoutJustification``AllowOverrideWithJustification`块。 报告违反误报会自动覆盖阻止并发送邮件。 |
 | AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification`。 |
 | AllowOverrideWithJustification | 4 |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification`。|
@@ -2415,7 +2458,7 @@ ms.locfileid: "62894794"
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的，无法删除/添加成员。                  |
-|组               | 1     | 指示聊天是群聊。 对于此 (，可以更新至少 2) 个用户的名单大小。 稍后可以删除/添加成员。   |
+|组               | 1     | 指示聊天是群聊。 可以针对 (聊天至少 2 人) 名单大小。 稍后可以删除/添加成员。   |
 |meeting             | 2     | 指示聊天是会议聊天，创建为创建 OnlineMeeting 的副作用。  |
 |unknownFutureValue  | 3     | Sentinel 值，用于指示未来值。 |
 
@@ -2458,7 +2501,7 @@ ms.locfileid: "62894794"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|团队      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
+|team      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
@@ -2631,8 +2674,8 @@ ms.locfileid: "62894794"
 
 |Member|
 |:---|
-|团队|
-|channel|
+|team|
+|频道|
 |聊天|
 |unknownFutureValue|
 

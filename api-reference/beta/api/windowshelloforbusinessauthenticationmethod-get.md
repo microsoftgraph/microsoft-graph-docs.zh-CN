@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 557dcb8ca8e57dff6cd8fad22d047d3fc56bee78
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 41be988d1cc62b66b5601fb6df196efc41485ba1
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092722"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335645"
 ---
 # <a name="get-windowshelloforbusinessauthenticationmethod"></a>获取 windowsHelloForBusinessAuthenticationMethod
 命名空间：microsoft.graph
@@ -39,11 +39,11 @@ ms.locfileid: "62092722"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员在另一用户上操作的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽) 
+* 身份验证管理员 (只能看到屏蔽的电话号码) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,6 +55,8 @@ ms.locfileid: "62092722"
 GET /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
+
+>**注意：** 若要读取 **其他用户** 的设备导航属性，在 `$expand` 查询中指定它，如下所示： `/users/{id}/authentication/windowsHelloForBusinessMethods/{id}?$expand=device`。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -70,7 +72,7 @@ GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethod
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回 响应 `200 OK` 代码和 [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

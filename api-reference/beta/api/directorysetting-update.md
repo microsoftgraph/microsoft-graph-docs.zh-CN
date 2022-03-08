@@ -1,18 +1,18 @@
 ---
-title: 更新目录设置
+title: 更新 directorySetting
 description: 更新特定目录设置对象的属性。
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc260ec6493417a6d0786ca8c7f8572b3845e3e4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bd25d5b60fff3211c0db874b7b634171658d8cba
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100290"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335463"
 ---
-# <a name="update-a-directory-setting"></a>更新目录设置
+# <a name="update-directorysetting"></a>更新 directorySetting
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,6 @@ ms.locfileid: "62100290"
 
 更新特定目录设置对象的属性。
 
-> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *Update groupSettings*。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,13 +30,20 @@ ms.locfileid: "62100290"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.ReadWrite.All |
 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-更新租户范围或组特定设置。
+更新租户范围设置。
 ```http
-PATCH /settings/{id}
-PATCH /groups/{id}/settings/{id}
+PATCH /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+更新特定于组的设置。
+```http
+PATCH /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
@@ -55,7 +61,7 @@ PATCH /groups/{id}/settings/{id}
 如果成功，此方法返回 `204 OK` 响应代码。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -63,17 +69,17 @@ PATCH /groups/{id}/settings/{id}
   "blockType": "request",
   "name": "update_directorysetting"
 }-->
-```http
-PATCH https://graph.microsoft.com/beta/settings/{id}
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 Content-type: application/json
 
 {
-  "values": [
-    {
-      "name": "name-value",
-      "value": "value-value"
-    }
-  ]
+    "values": [
+        {
+            "name": "CustomBlockedWordsList",
+            "value": "Contoso"
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -102,7 +108,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 <!-- {
   "blockType": "response"
 } -->

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ad210433e5a02282016273fbd0b3e708f2ffac79
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: c0dd53ebb2c8c76814b44a7423b9ee5e896746cb
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804148"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334896"
 ---
 # <a name="create-accesspackageresourcerequest"></a>创建 accessPackageResourceRequest
 
@@ -49,14 +49,15 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 在请求正文中，提供 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象的 JSON 表示形式。 在请求 `accessPackageResource` 中包括 [与 accessPackageResource](../resources/accesspackageresource.md) 对象的关系。
 
-若要将Azure AD组作为资源添加到目录，请设置 **catalogId** 为目录的 ID，**将 requestType** `AdminAdd`设置为 ，将 设置为 `accessPackageResource` 表示资源的 。 内的 **originSystem** 属性的值`accessPackageResource`应为 ，`AadGroup`**originId** 的值是组的标识符。
+若要将Azure AD组作为资源添加到目录，请设置 **catalogId** 为目录的 ID，**将 requestType** `AdminAdd`设置为 ，将 设置为 ，将 设置为 表示`accessPackageResource`资源的 。 内的 **originSystem** 属性的值`accessPackageResource`应为 ，`AadGroup`**originId** 的值是组的标识符。  如果使用委派权限，请求添加组的用户应是组的所有者或目录角色（允许他们修改组）。 如果使用应用程序权限，还应向请求添加组的应用程序分配 `Group.ReadWrite.All` 权限。
 
-若要从Azure AD中删除应用程序，请设置 **catalogId** 为目录 ID，**将 requestType** `AdminRemove`设置为 ，`accessPackageResource`将 资源对象设置为 要删除的资源对象。  可以使用 list [accessPackageResources 检索 resource 对象](accesspackagecatalog-list-accesspackageresources.md)。
+若要将Azure AD应用程序作为资源添加到目录，请设置 **catalogId** 作为目录的 ID，**将 requestType** `AdminAdd`设置为 ，将 设置为 `accessPackageResource` 表示资源的 。 内的 **originSystem** 属性的值`accessPackageResource`应为 ，`AadApplication`**originId** 的值是 [servicePrincipal 的标识符](../resources/serviceprincipal.md)。  如果使用委派权限，请求添加应用程序的用户应是应用程序的所有者或目录角色（允许他们修改应用程序角色分配）。
 
-若要为多地理位置 Sharepoint Online 资源分配地理位置环境，在 **对象中包括 accessPackageResourceEnvironment** `accessPackageResource` 关系。 可通过两种方式完成此操作：
+若要将 SharePoint Online 网站作为资源添加到目录，请设置 **catalogId** 为目录 ID，**将 requestType** `AdminAdd`设置为 ，将 设置为 ，将 设置为 表示`accessPackageResource`资源。 内的 **originSystem** 属性的值`accessPackageResource`应为 ，`SharePointOnline`**originId** 的值为站点的 [URI。](../resources/site.md)  如果使用委派权限，则用户应担任 SharePoint 管理员角色。 如果使用应用程序权限，还应向请求添加网站的应用程序分配权限 `Sites.FullControl.All` 。 若要为多地理位置 Sharepoint Online 资源分配地理位置环境，在 **对象中包括 accessPackageResourceEnvironment** `accessPackageResource` 关系。 可通过两种方式完成此操作：
 + 使用 `@odata.bind` annotation 将 `id` 的 `accessPackageResourceEnvironment` 分配给对象 `accessPackageResourceEnvironment` 。
 + `originId`指定 对象中的 `accessPackageResourceEnvironment` 参数`accessPackageResourceEnvironment`。
 
+若要从目录中删除资源，请设置 **catalogId** 为目录 ID， **将 requestType** `AdminRemove`设置为 ， `accessPackageResource` 将 资源对象设置为 要删除的资源对象。  可以使用 list [accessPackageResources 检索 resource 对象](accesspackagecatalog-list-accesspackageresources.md)。
 
 ## <a name="response"></a>响应
 
@@ -485,6 +486,8 @@ Content-type: application/json
 
 下面是向目录添加应用程序的请求示例，包括指定该应用程序的必需属性。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests6"
@@ -531,6 +534,32 @@ Content-type: application/json
 }
 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

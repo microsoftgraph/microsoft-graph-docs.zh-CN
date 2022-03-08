@@ -1,16 +1,16 @@
 ---
 title: 替换 timeOff
 description: 替换现有的 timeOff。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5545a8bb2b33f717b56b718faddd288165137083
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 49840649eeafc90b7c9d47b1f14ffafc563e37f6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001594"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336072"
 ---
 # <a name="replace-timeoff"></a>替换 timeOff
 
@@ -20,7 +20,7 @@ ms.locfileid: "61001594"
 
 替换现有的 [timeOff](../resources/timeoff.md)。
 
-如果指定的 [timeOff](../resources/timeoff.md) 不存在，此方法将返回 `404 Not found` 。
+如果指定的 [timeOff](../resources/timeoff.md) 不存在，此方法将返回 `404 Not found`。
 
 ## <a name="permissions"></a>权限
 
@@ -107,7 +107,7 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/java/timeoff-put-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/timeoff-put-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3b9c3d04db7a7d03a0f5d7f3926383e1af429a9b
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 62ceb8079a9e5fb9f59c3d69d1d4148b9178f942
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545320"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335281"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -45,15 +45,15 @@ ms.locfileid: "61545320"
 |[获取聊天中的消息](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 | 
 |[为用户在所有聊天中获取消息](../api/chats-getallmessages.md)| [chat](chat.md) 集合| 从用户参与的所有聊天中获取消息。 |
 | **应用** |||
-|[列出聊天中的应用](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) 集合 | 列出聊天网站中 (关联的会议) 。|
-|[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取在聊天会话和关联会议 (安装的特定) 。|
-|[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联的会议 (应用安装) 。|
+|[列出聊天中的应用](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) 集合 | 列出聊天网站中安装 (关联的会议) 。|
+|[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取安装在聊天会话和关联会议 (中的特定) 。|
+|[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联的会议 (应用中安装) 。|
 |[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天会话和关联会议 (安装的应用的) 。|
 |[从聊天中卸载应用](../api/chat-delete-installedapps.md) | 无 | 从 (和) 会议记录中删除 (卸载) 。|
 |[List permission grants](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合 | 列出已授予此聊天中的应用的权限。|
 | **选项卡** |||
 |[列出聊天中的选项卡](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到聊天 (关联的会议选项卡) 。|
-|[在聊天中获取选项卡](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到聊天组和关联 (的特定选项卡) 。|
+|[在聊天中获取选项卡](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到聊天会话和关联 (的特定选项卡) 。|
 |[向聊天添加选项卡](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | 将 (固定) 选项卡添加到聊天 (关联的会议) 。|
 |[聊天中的"更新"选项卡](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | 更新聊天记录和相关会议 (选项卡) 。|
 |[从聊天中删除选项卡](../api/chat-delete-tabs.md) | 无 | 从 (和) 会议记录中删除 (取消固定选项卡) 。|
@@ -67,7 +67,7 @@ ms.locfileid: "61545320"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-| chatType| [chatType](../resources/chat.md#chattype-values) | 指定聊天类型。 可能的值是：`group`、`oneOnOne`、`meeting`、`unknownFutureValue`。|
+| chatType| [chatType](../resources/chat.md#chattype-values) | 指定聊天类型。 可取值为：`group`、`oneOnOne`、`meeting`、`unknownFutureValue`。|
 | createdDateTime| dateTimeOffset|  创建聊天的日期和时间。 只读。|
 | id| String| 聊天的唯一标识符。 只读。|
 | lastUpdatedDateTime| dateTimeOffset|  上次更改聊天的日期和时间或成员列表。 只读。|
@@ -83,7 +83,7 @@ ms.locfileid: "61545320"
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的;无法删除/添加成员。|
-|组               | 1     | 指示聊天是群聊。 至少 (两个人的名单) 可以针对此类型的聊天进行更新。 稍后可以删除/添加成员。|
+|组               | 1     | 指示聊天是群聊。 对于此 (，可以更新至少两) 人的名单大小。 稍后可以删除/添加成员。|
 |meeting             | 2     | 指示聊天与联机会议相关联。 此类聊天仅在创建联机会议时创建。|
 |unknownFutureValue  | 3     | 可发展枚举 sentinel 值。 请勿使用。 |
 
@@ -95,8 +95,9 @@ ms.locfileid: "61545320"
 | members | [conversationMember](conversationmember.md) 集合 | 聊天中所有成员的集合。 可为 Null。 |
 | messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有消息的集合。 可为 NULL。 |
 | permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合| 授予聊天应用的权限集合。|
-| operations | [teamsAsyncOperation](teamsasyncoperation.md) 集合 | 在聊天中运行Teams运行的所有异步操作的集合。 可为 NULL。 
+| operations | [teamsAsyncOperation](teamsasyncoperation.md) 集合 | 在聊天中Teams运行或运行的异步操作的所有异步操作的集合。 可为空。 
 | lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| 预览聊天中发送的最后一条消息。 如果聊天中未发送任何消息，则其为 Null。 目前，仅 [列表聊天](../api/chat-list.md) 操作支持此属性。|
+| 选项卡 | [teamsTab](teamstab.md) 集合 | 聊天中所有选项卡的集合。 可为 Null。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

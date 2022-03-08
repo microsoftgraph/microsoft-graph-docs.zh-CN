@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: 更新 listItem
-description: 更新 **[listItem][]** 上的属性。
+description: 更新 listItem 上的属性。
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4e194fc3b9a764fabe25afbfcfe4ad5008a64ba7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 518c070ff9d29afeb55ce027b7f66ce8e725aa8d
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132494"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335253"
 ---
 # <a name="update-listitem"></a>更新 listItem
 

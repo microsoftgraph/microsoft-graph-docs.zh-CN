@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8f2dbfb3f5a8e79d8bbb06b9ed56b9d884ddde53
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5f4d86f74bae8fa2e330efabc0c6cd5b5f93b082
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62349549"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336114"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
 # A UPN can also be used as -UserId.
-Get-MgUserEvent -UserId $userId -EventId $eventId -Property "subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences`$expand" 
+Get-MgUserEvent -UserId $userId -EventId $eventId -Property "subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences" -ExpandProperty "exceptionOccurrences" 
 
 ```

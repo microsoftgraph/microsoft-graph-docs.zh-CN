@@ -1,16 +1,16 @@
 ---
 title: 获取 timeOff
 description: 按 ID 获取 timeOff。
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8e854d4dc907f970face9c8398ed952ffe86c5cd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: aecf81e3fb2a529f1e86b08d78e549d4284e3ed3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107948"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336079"
 ---
 # <a name="get-timeoff"></a>获取 timeOff
 

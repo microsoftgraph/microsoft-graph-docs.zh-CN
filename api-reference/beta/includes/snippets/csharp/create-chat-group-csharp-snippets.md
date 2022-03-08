@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 45fd069890c10f1698b02a6e207d1416175f01555f7f1e6b3348b57491bbf607
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b401ac48ab581b4115febc63eba91412c13de4c3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57220840"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335603"
 ---
 ```csharp
 
@@ -43,11 +43,11 @@ var chat = new Chat
         {
             Roles = new List<String>()
             {
-                "owner"
+                "guest"
             },
             AdditionalData = new Dictionary<string, object>()
             {
-                {"user@odata.bind", "https://graph.microsoft.com/beta/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"}
+                {"user@odata.bind", "https://graph.microsoft.com/beta/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"}
             }
         }
     }
