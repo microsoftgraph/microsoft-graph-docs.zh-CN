@@ -5,25 +5,25 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 0f28c771f267324a25198edd66ac64ff7bcdaadd
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 79a186ebc899f54f4915183a0afd6eaab8eca9fe
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780539"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334357"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>preAuthorizedApplication 资源类型
 
 命名空间：microsoft.graph
 
-列出具有访问此应用程序 API 的指定权限的预授权客户端应用程序。 对于用户指定的权限，用户无需同意任何 (应用程序) 。 但是，在预先身份验证应用程序请求 (（例如，) ）请求的其他任何权限都将需要用户同意。
+列出具有访问此应用程序 API 的指定权限的预授权客户端应用程序。 对于用户指定的权限，用户无需同意任何 (应用程序) 。 但是，通过增量同意（例如 (）请求的 preAuthorizedApplications 中未列出的) 将需要用户同意。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |appId|String| 应用程序的唯一标识符。 |
-|permissionIds|字符串集合| 应用程序所需的 [oauth2PermissionScopes 的唯](permissionscope.md) 一标识符。 |
+|delegatedPermissionIds|字符串集合| 应用程序所需的 [oauth2PermissionScopes 的唯](permissionscope.md) 一标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -39,7 +39,7 @@ ms.locfileid: "60780539"
 ```json
 {
   "appId": "String",
-  "permissionIds": ["String"]
+  "delegatedPermissionIds": ["String"]
 }
 
 ```

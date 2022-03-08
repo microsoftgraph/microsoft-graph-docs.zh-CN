@@ -1,22 +1,22 @@
 ---
-title: 更新组设置
+title: 更新 groupSetting
 description: 更新特定组设置对象的属性。
 author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e003606daf271aa0a6da6eeb483f5524bdc555bc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 896762d4478cb02a6cd0d1c0007ba3cb58548398
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993097"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331858"
 ---
-# <a name="update-a-group-setting"></a>更新组设置
+# <a name="update-groupsetting"></a>更新 groupSetting
 
 命名空间：microsoft.graph
 
-为租户范围的组设置或特定组设置更新[groupSetting](../resources/groupsetting.md)对象的属性。 [](../resources/group.md)
+为租户范围的组设置或特定组设置更新 [groupSetting](../resources/groupsetting.md) 对象的属性。[](../resources/group.md)
 
 ## <a name="permissions"></a>权限
 
@@ -30,14 +30,19 @@ ms.locfileid: "60993097"
 |应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
-
-
-
+更新租户范围设置。
 ```http
-PATCH /groupSettings/{id}
-PATCH /groups/{id}/settings/{id}
+PATCH /groupSettings/{groupSettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+更新特定于组的设置。
+```http
+PATCH /groups/{groupId}/settings/{groupSettingId}
+```
+
 ## <a name="request-headers"></a>请求标头
 | 名称 | 说明 |
 |:-----------|:-----------|
@@ -59,7 +64,7 @@ PATCH /groups/{id}/settings/{id}
 
 ### <a name="example-1-update-a-tenant-wide-group-setting"></a>示例 1：更新租户范围的组设置
 
-此示例中， `{id}` 是租户范围内 groupSetting 对象的标识符。
+此示例中， `84af2ca5-c274-41bf-86e4-6e374ec4def6` 是租户范围内 **groupSetting 对象的** 标识符。
 
 #### <a name="request"></a>请求
 
@@ -67,19 +72,19 @@ PATCH /groups/{id}/settings/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_tenant_setting"
+  "name": "update_tenant_groupsetting"
 }-->
-```http
-PATCH https://graph.microsoft.com/v1.0/groupSettings/f0b2d6f5-097d-4177-91af-a24e530b53cc
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/groupSettings/84af2ca5-c274-41bf-86e4-6e374ec4def6
 Content-type: application/json
 
 {
-  "values": [
-    {
-      "name": "AllowToAddGuests",
-      "value": "false"
-    }
-  ]
+    "values": [
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -98,7 +103,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenant-setting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tenant-setting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -117,18 +122,16 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-update-a-specific-group-setting"></a>示例 2：更新特定组设置
 
-本示例中，请求的第一个为组的标识符，第二个为 `{id}` `{id}` groupSetting 对象的标识符。
+在此示例中， `0167b5af-f3d1-4910-82d2-398747fa381c` 是组的标识符， `fa6df613-159b-4f94-add2-7093f961900b` 是 groupSetting 对象的标识符。
 
 #### <a name="request"></a>请求
-
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
 }-->
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groups/0167b5af-f3d1-4910-82d2-398747fa381c/settings/fa6df613-159b-4f94-add2-7093f961900b
 Content-type: application/json
 
@@ -157,7 +160,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-groupsetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 33a4d43ea5a3c764451276dc9378c2815ecdf733
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 964009f05755a94d812f999203db32ef08dedaa8
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346722"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333265"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject： getAvailableExtensionProperties
 命名空间：microsoft.graph
@@ -71,7 +71,7 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProp
 Content-Type: application/json
 
 {
-  "isSyncedFromOnPremises": "Boolean"
+  "isSyncedFromOnPremises": true
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -115,6 +115,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(extensionProperty)",
   "value": [
     {
       "@odata.type": "#microsoft.graph.extensionProperty",

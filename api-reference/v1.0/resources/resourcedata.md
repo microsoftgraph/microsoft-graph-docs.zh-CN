@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 4fef5e2564cbad29a3b998d11b2f4870663e7a7e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8cb63331cdd2252f40eef8be468499832bca9d6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094084"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333643"
 ---
 # <a name="resourcedata-resource-type"></a>resourceData 资源类型
 
 命名空间：microsoft.graph
 
-表示附加到发送给订阅者更改通知的数据源。
+表示附加到发送给订阅者更改通知的资源数据。 此资源是一个开放类型，允许传入其他属性。
 
 有关详细信息，请参阅 [Microsoft Graph API 通过更改通知](webhooks.md)。
 
@@ -26,16 +26,16 @@ ms.locfileid: "59094084"
 
 ## <a name="properties"></a>属性
 
-对于 **Outlook，resourceData** 包含以下字段：
+无，Outlook **resourceData** 包含以下字段的资源除外：
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| @odata.type | string | Microsoft Graph 中描述所表示对象的 OData 实体类型。 |
-| @odata.id | string | 对象的 OData 标识符。 |
-| @odata.etag | string | 表示对象版本的 HTTP 实体标记。 |
-| id | string | 对象的标识符。 |
+| @odata.type | String | Microsoft Graph 中描述所表示对象的 OData 实体类型。 |
+| @odata.id | String | 对象的 OData 标识符。 |
+| @odata.etag | String | 表示对象版本的 HTTP 实体标记。 |
+| id | String | 对象的标识符。 |
 
-> **注意：**`id` **resourceData 中提供的值** 在生成更改通知时有效。 某些操作（如将邮件移动到另一个文件夹）可能会导致处理更改通知时不再 `id` 有效。
+> **注意：****resourceData** 中提供的 id **值** 在生成更改通知时有效。 某些操作（如将邮件 `id` 移动到另一个文件夹）可能会导致处理更改通知时不再有效。
 
 ## <a name="relationships"></a>关系
 
@@ -48,16 +48,17 @@ ms.locfileid: "59094084"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "@odata.type",
+    "@odata.id",
+    "@odata.etag",
+    "id"
   ],
   "@odata.type": "microsoft.graph.resourceData"
 }-->
 
 ```json
 {
-  "id": "1565293727947",
-  "@odata.type": "#Microsoft.Graph.ChatMessage",
-  "@odata.id": "teams('88cbc8fc-164b-44f0-b6a6-b59b4a1559d3')/channels('19:8d9da062ec7647d4bb1976126e788b47@thread.tacv2')/messages('1565293727947')/replies('1565293727947')"
+  "@odata.type": "#microsoft.graph.resourceData"
 }
 ```
 

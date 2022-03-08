@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bfbc5c890d47ab765ac59f40ef89181533d2e1e7
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 09cc43fe73d68ecc51c69218389fbad6c94f3ab9
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344724"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333251"
 ---
 # <a name="list-shifts"></a>列出班次
 
@@ -39,7 +39,11 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法支持 OData `$filter` [查询参数](/graph/query-parameters) 来帮助自定义响应。
+
+> [!NOTE]
+> 参数 `$filter` 不支持在查询中多次使用同一属性。 例如，以下查询将不起作用： `sharedShift/startDateTime ge 2019-05-09T00:00:00Z and sharedShift/startDateTime le 2019-05-09T23:59:59Z`。
 
 ## <a name="request-headers"></a>请求标头
 

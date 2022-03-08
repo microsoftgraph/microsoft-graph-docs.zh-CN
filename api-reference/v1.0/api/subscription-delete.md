@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: efb5e63a5354f595a3e7e697a7089b57441d8dd3
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 8cb0ea6ce1d95a1548cc02de4640ab3a5e3dadac
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443393"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333923"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -57,13 +57,9 @@ ms.locfileid: "62443393"
 
 ### <a name="contact-event-and-message"></a>联系人、事件和消息
 
-其他限制适用于 Outlook 项目的订阅。 这些限制适用于订阅的创建和管理（获取、更新和删除）。
+您可以订阅联系人、Outlook **或邮件** 资源 **中的** 更改。 
 
-- 委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。 例如，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
-- 订阅 _共享或委托_ 文件夹中 Outlook 联系人、事件或邮件的更改通知：
-
-  - 使用相应的应用程序权限订阅租户内 _任何_ 用户的文件夹或邮箱中项目的更改。
-  - 切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们 **不** 支持订阅对共享或委托文件夹中的项的更改通知。
+[!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 
 ## <a name="http-request"></a>HTTP 请求

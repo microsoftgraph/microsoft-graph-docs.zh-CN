@@ -3,12 +3,12 @@ title: 安装 Microsoft Graph SDK
 description: 提供 C#、Java、JavaScript、Objective-C、PHP 和 Ruby Microsoft Graph SDK 的安装说明。
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 3df00fb5989783c6f3b22c9dba72e28692910c49
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a545f0b3783b19fd23c86bd94a6a356d5767eab3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022704"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331774"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>安装 Microsoft Graph SDK
 
@@ -34,12 +34,14 @@ Install-Package Microsoft.Graph
 
 Microsoft Graph Go SDK 包含在以下程序包中：
 
-- [Microsoft Graph SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go) - 包含用于通过 fluent API 访问终结点的模型和 `v1.0` 请求生成器。
-- [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) - 包含用于通过 fluent API 访问终结点的模型和 `beta` 请求生成器。
+- [Microsoft Graph SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go) - 包含`v1.0`用于通过 fluent API 访问终结点的模型和请求生成器。
+- [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) - 包含`beta`用于通过 fluent API 访问终结点的模型和请求生成器。
 - [Microsoft Graph Core SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go-core) - 用于调用 Microsoft Graph 的核心库。
 
 ```Shell
 go get -u github.com/microsoftgraph/msgraph-sdk-go
+go get -u github.com/Azure/azure-sdk-for-go/sdk/azidentity
+go get -u github.com/microsoft/kiota/authentication/go/azure
 ```
 
 ## <a name="install-the-microsoft-graph-java-sdk"></a>安装 Microsoft Graph Java SDK

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 991ee7f2c48e6bec66775fbb41961c188aca88e2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4343c79e9c81b83f91fb341131a8ef9ad8b2f607
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019207"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333860"
 ---
 # <a name="presence-resource-type"></a>状态资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "59019207"
 
 包含有关用户状态的信息，包括其可用性和用户活动。
 
-> **注意：** 此资源当前仅受 Microsoft Teams支持。
+> **注意：** 此资源当前仅受Microsoft Teams支持。
 
 此资源支持订阅 [更改通知](/graph/webhooks)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                                               | 返回类型                                     | 说明                                         |
 | :----------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------------------------------- |
@@ -33,13 +33,13 @@ ms.locfileid: "59019207"
 
 ## <a name="properties"></a>属性
 
-| 关系 | 类型              | 说明                                                                                                                                                                                                                                                                                       |
+| 属性 | 类型              | 说明                                                                                                                                                                                                                                                                                       |
 | :----------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | id           | string            | 用户对象 ID                                                                                                                                                                                                                                                                                |
-| availability | string collection | 用户的基本状态信息。 可能的值为 `Available` `AvailableIdle` `Away` `BeRightBack` 、、、、、、、、、 `Busy` `BusyIdle` `DoNotDisturb` `Offline``PresenceUnknown`                                                                                                              |
-| 活动     | 字符串集合 | 用户可用性的补充信息。 可能的值是 `Available` `Away` `BeRightBack` `Busy` 、、、、、、、、、 `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` 。 |
+| availability | 字符串集合 | 用户的基本状态信息。 可能的值为 、、`Available``AvailableIdle`、`Away`、`BeRightBack`、`Busy`、`BusyIdle`、`DoNotDisturb`、`Offline`、`PresenceUnknown`                                                                                                              |
+| 活动     | 字符串集合 | 用户可用性的补充信息。 可能的值是、`Away`、`Available`、`BeRightBack`、`DoNotDisturb``Busy`、、`InACall`、`InAConferenceCall`、、 `Offline``Inactive``Presenting``OutOfOffice``UrgentInterruptionsOnly``InAMeeting``OffWork``PresenceUnknown`。 |
 
->**注意：** 若要详细了解不同的状态，请参阅用户 [状态Teams。](/microsoftteams/presence-admins) 
+>**注意：** 若要详细了解不同的状态，请参阅用户 [状态Teams](/microsoftteams/presence-admins)。 
 
 ## <a name="relationships"></a>关系
 
