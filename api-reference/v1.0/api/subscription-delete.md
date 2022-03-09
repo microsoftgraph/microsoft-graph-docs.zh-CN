@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 8cb0ea6ce1d95a1548cc02de4640ab3a5e3dadac
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 0703504f98312b39e1c0b2e22d9407e56662e576
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333923"
+ms.locfileid: "63367634"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -18,7 +18,7 @@ ms.locfileid: "63333923"
 
 删除订阅。
 
-请参阅" [权限](#permissions) 部分中的表格，了解支持订阅以更改通知的资源列表。
+有关支持订阅更改通知的资源列表，请参阅权限 [部分中的](#permissions) 表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,22 +26,22 @@ ms.locfileid: "63333923"
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-|[callRecord](../resources/callrecords-callrecord.md) | 不支持 | 不支持 | CallRecords.Read.All |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All | 不支持 |  ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持 | 不支持 | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | 不支持 | 不支持 | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |
+|[callRecord](../resources/callrecords-callrecord.md) | 不支持。 | 不支持。 | CallRecords.Read.All |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All | 不支持。 |  ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持。 | 不支持。 | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | 不支持。 | 不支持。 | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持。 | 不支持。 | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
-|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
+|[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持。 | Files.ReadWrite | 不支持。 |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持。 | Files.ReadWrite.All |
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-|[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
-|[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
-|[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
+|[组](../resources/group.md) | Group.Read.All | 不支持。 | Group.Read.All |
+|[组对话](../resources/conversation.md) | Group.Read.All | 不支持。 | 不支持。 |
+|[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持。 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
-|[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
-|[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
-|安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
+|[打印机](../resources/printer.md) | 不支持。 | 不支持。 | 打印机。阅读.All，Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持。 | 不支持。 | PrintTaskDefinition.ReadWrite.All |
+|安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持。 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 
@@ -83,13 +83,14 @@ DELETE /subscriptions/{subscription-id}
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
+
 要详细了解错误返回方式，请参阅[错误响应][error-response]。
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-下面是一个请求示例。
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -127,9 +128,10 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response"
 } -->

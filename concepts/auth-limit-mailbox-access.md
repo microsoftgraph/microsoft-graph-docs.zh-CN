@@ -4,19 +4,30 @@ description: 若要将应用程序权限界定为特定 Exchange Online 邮箱�
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: 22a0c5e2bcd257346746c2b4fc72eae9d28ba573
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 03a0edde1a3e21455200049bf51bf1867e1a0657
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241588"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335890"
 ---
 # <a name="limiting-application-permissions-to-specific-exchange-online-mailboxes"></a>将应用程序权限限制为特定 Exchange Online 邮箱 
 
 想要限制对特定邮箱的应用访问权限的管理员可以使用 **New-ApplicationAccessPolicy** PowerShell cmdlet 创建应用程序访问策略。 本文介绍配置访问控制的基本步骤。 这些步骤仅适用于 Exchange Online 资源，不适用于其他 Microsoft Graph 工作负载。 
 
 ## <a name="background"></a>背景
-一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。 这些是在服务器上运行的后台服务或守护程序，不存在登录用户。 这些应用使用 [OAuth 2.0 客户端凭据授予流](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)进行身份验证，并使用应用程序权限进行配置，默认情况下，这些应用可以访问 exchange Online 上组织中的 _所有_ 邮箱。 例如， `Mail.Read` 应用程序权限允许应用在没有登录用户的情况下读取所有邮箱中的邮件。 
+一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。 这些是在服务器上运行的后台服务或守护程序，不存在登录用户。 这些应用使用 [OAuth 2.0 客户端凭据授予流](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)进行身份验证，并使用应用程序权限进行配置，默认情况下，这些应用可以访问 exchange Online 上组织中的 _所有_ 邮箱。 例如， `Mail.Read` 应用程序权限允许应用在没有登录用户的情况下读取所有邮箱中的邮件。
+
+> [!IMPORTANT]
+> 
+> 默认情况下，已将应用程序权限授予以下数据集的应用可访问组织中的所有邮箱：
+> 
+> - [日历](permissions-reference.md#calendars-permissions)
+> - [联系人](permissions-reference.md#contacts-permissions)
+> - [邮件](permissions-reference.md#mail-permissions)
+> - [邮箱设置](permissions-reference.md#mail-permissions)
+> 
+>管理员可以配置 [应用程序访问策略](#configure-applicationaccesspolicy)，以限制对 _特定_ 邮箱的应用访问。
 
 在某些情况下，管理员可能希望将应用限制为仅特定邮箱， _并非所有_ 组织中的 Exchange Online 邮箱。 管理员可以通过将邮箱放入启用邮件的安全组来标识允许访问的邮箱集。 然后，管理员可以通过创建用于访问该组的应用程序访问策略，将第三方应用访问权限限制为仅对该组的邮箱。
 

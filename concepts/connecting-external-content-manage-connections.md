@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: e9e0b6c1c1e79ab6af0dc9cd67afec066844b3e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 50248f9a1edbd3fa1ea054a05e7e6b3410180362
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139287"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335876"
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -67,13 +67,13 @@ Microsoft Graph 连接器平台提供了一种简单的方法，可将外部数�
 
 ## <a name="create-a-connection"></a>创建连接
 
-应用程序必须先按照以下步骤创建并配置连接，才能将项目添加到搜索索引。
+应用程序必须先按照以下步骤创建并配置连接，才能将项目添加到搜索索引：
 
 - 使用唯一 ID、显示名称和说明[创建连接](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true)。
 - [注册架构](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true)，以定义索引中将包含的字段。
 
-> [!IMPORTANT]
-> 架构注册后，不能为现有连接更改架构。
+> [!NOTE]
+> 有关更新现有连接的架构的信息，请参阅[架构更新功能](/graph/connecting-external-content-manage-schema#schema-update-capabilities)。
 
 ## <a name="update-a-connection"></a>更新连接
 
@@ -85,7 +85,7 @@ Microsoft Graph 连接器平台提供了一种简单的方法，可将外部数�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [注册连接架构](./connecting-external-content-manage-schema.md)
+- [注册连接架构](/graph/connecting-external-content-manage-schema.md)
 - [查看图形连接器 API 参考](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Microsoft Graph 连接器概述](/microsoftsearch/connectors-overview)
 - 从 GitHub 下载[示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)

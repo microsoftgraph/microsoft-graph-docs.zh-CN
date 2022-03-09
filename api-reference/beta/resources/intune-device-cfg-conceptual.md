@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备配置 - Microsoft Gaaph API
-description: 列出定义Graph组织的设备的适用于 Intune 终结点 (的 Microsoft) REST API。
+description: 列出定义Graph配置设备的 Intune 终结点的 Microsoft (API) REST 应用程序。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: f59329e22a916582d13ee4da01179f31440d7f2d
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 574998aa66144f8b3a6a90c92f69e016891268aa
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61712024"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368215"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -121,8 +121,11 @@ ms.locfileid: "61712024"
 - [Android 工作配置文件 VPN 配置](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Android 工作配置文件 VPN 连接类型](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Android 工作配置文件 Wi-Fi 配置](intune-deviceconfig-androidworkprofilewificonfiguration.md)
+- [Aosp 设备所有者证书配置文件基础](intune-deviceconfig-aospdeviceownercertificateprofilebase.md)
 - [Aosp 设备所有者合规性策略](intune-deviceconfig-aospdeviceownercompliancepolicy.md)
 - [Aosp 设备所有者设备配置](intune-deviceconfig-aospdeviceownerdeviceconfiguration.md)
+- [Aosp 设备所有者 PKCS 证书配置文件](intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md)
+- [Aosp 设备所有者信任的根证书](intune-deviceconfig-aospdeviceownertrustedrootcertificate.md)
 - [应用安装控件类型](intune-deviceconfig-appinstallcontroltype.md)
 - [应用列表项](intune-deviceconfig-applistitem.md)
 - [应用列表类型](intune-deviceconfig-applisttype.md)
@@ -373,6 +376,8 @@ ms.locfileid: "61712024"
 - [键字符串值对](intune-deviceconfig-keystringvaluepair.md)
 - [键类型值对](intune-deviceconfig-keytypedvaluepair.md)
 - [密钥值](intune-deviceconfig-keyvalue.md)
+- [键/值对](intune-deviceconfig-keyvaluepair.md)
+- [键/值对](intune-deviceconfig-keyvaluepair.md)
 - [展台模式托管主屏幕 PIN 复杂性](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
 - [LAN Manager 身份验证级别](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [本地安全选项管理员提升提示行为类型](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
@@ -495,6 +500,7 @@ ms.locfileid: "61712024"
 - [受限的应用状态](intune-deviceconfig-restrictedappsstate.md)
 - [受限的应用冲突](intune-deviceconfig-restrictedappsviolation.md)
 - [停用计划的托管设备](intune-deviceconfig-retirescheduledmanageddevice.md)
+- [运行状态](intune-deviceconfig-runstate.md)
 - [安全搜索筛选器类型](intune-deviceconfig-safesearchfiltertype.md)
 - [计划停用状态](intune-deviceconfig-scheduledretirestate.md)
 - [安全评估帐户类型](intune-deviceconfig-secureassessmentaccounttype.md)

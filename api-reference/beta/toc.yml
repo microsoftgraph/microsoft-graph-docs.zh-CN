@@ -572,7 +572,7 @@ items:
                 href: api/profile-delete.md
           - name: Teamwork
             items:
-              - name: 已安装的应用
+              - name: 已安装应用
                 href: resources/teamsappinstallation.md
               - name: 列出用户应用
                 href: api/userteamwork-list-installedapps.md
@@ -1987,7 +1987,7 @@ items:
                 href: api/bookingstaffmember-update.md
               - name: 删除
                 href: api/bookingstaffmember-delete.md
-      - name: 设备和应用
+      - name: 设备和应用管理
         expanded: true
         items:
           - name: 云打印
@@ -2030,7 +2030,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: 重定向
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -2570,6 +2570,8 @@ items:
                         href: api/intune-books-iosvppebookassignment-delete.md
                       - name: 更新
                         href: api/intune-books-iosvppebookassignment-update.md
+                  - name: 键/值对
+                    href: resources/intune-androidforwork-keyvaluepair.md
                   - name: macOS dmg app
                     href: resources/intune-apps-macosdmgapp.md
                     items:
@@ -3690,6 +3692,8 @@ items:
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
                       - name: unassignResourceAccountFromDevice 操作
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
+                  - name: Windows autopilot 设备修正状态
+                    href: resources/intune-enrollment-windowsautopilotdeviceremediationstate.md
                   - name: Windows Autopilot 设备类型
                     href: resources/intune-enrollment-windowsautopilotdevicetype.md
                   - name: Windows Autopilot 配置文件分配详细状态
@@ -4453,6 +4457,13 @@ items:
                         href: api/intune-deviceconfig-androidworkprofilewificonfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-androidworkprofilewificonfiguration-update.md
+                  - name: Aosp 设备所有者证书配置文件基础
+                    href: resources/intune-deviceconfig-aospdeviceownercertificateprofilebase.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-aospdeviceownercertificateprofilebase-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-aospdeviceownercertificateprofilebase-get.md
                   - name: Aosp 设备所有者合规性策略
                     href: resources/intune-deviceconfig-aospdeviceownercompliancepolicy.md
                     items:
@@ -4479,6 +4490,32 @@ items:
                         href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-update.md
+                  - name: Aosp 设备所有者 PKCS 证书配置文件
+                    href: resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-get.md
+                      - name: 创建
+                        href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-create.md
+                      - name: 删除
+                        href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-delete.md
+                      - name: 更新
+                        href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-update.md
+                  - name: Aosp 设备所有者信任的根证书
+                    href: resources/intune-deviceconfig-aospdeviceownertrustedrootcertificate.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-get.md
+                      - name: 创建
+                        href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-create.md
+                      - name: 删除
+                        href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-delete.md
+                      - name: 更新
+                        href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-update.md
                   - name: 应用安装控件类型
                     href: resources/intune-deviceconfig-appinstallcontroltype.md
                   - name: 应用列表项
@@ -5802,6 +5839,10 @@ items:
                     href: resources/intune-deviceconfig-keytypedvaluepair.md
                   - name: 密钥值
                     href: resources/intune-deviceconfig-keyvalue.md
+                  - name: 键/值对
+                    href: resources/intune-deviceconfig-keyvaluepair.md
+                  - name: 键/值对
+                    href: resources/intune-deviceconfig-keyvaluepair.md
                   - name: 展台模式托管主屏幕 PIN 复杂性
                     href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
                   - name: LAN Manager 身份验证级别
@@ -6348,6 +6389,8 @@ items:
                         href: api/intune-deviceconfig-restrictedappsviolation-update.md
                   - name: 停用计划的托管设备
                     href: resources/intune-deviceconfig-retirescheduledmanageddevice.md
+                  - name: 运行状态
+                    href: resources/intune-deviceconfig-runstate.md
                   - name: 安全搜索筛选器类型
                     href: resources/intune-deviceconfig-safesearchfiltertype.md
                   - name: 计划停用状态
@@ -8201,6 +8244,8 @@ items:
                     href: resources/intune-auditing-rolescopetaginfo.md
                   - name: 旋转 BitLocker 密钥设备操作结果
                     href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
+                  - name: 运行状态
+                    href: resources/intune-devices-runstate.md
                   - name: 安全基线类别状态摘要
                     href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
                     items:
@@ -8946,6 +8991,8 @@ items:
                     href: resources/intune-mam-iosmobileappidentifier.md
                   - name: JSON
                     href: resources/intune-mam-json.md
+                  - name: 键/值对
+                    href: resources/intune-mam-keyvaluepair.md
                   - name: Mac 应用标识符
                     href: resources/intune-mam-macappidentifier.md
                   - name: 受管理的应用剪贴板共享级别
@@ -9225,6 +9272,8 @@ items:
                         href: api/intune-onboarding-devicecomanagementauthorityconfiguration-delete.md
                       - name: 更新
                         href: api/intune-onboarding-devicecomanagementauthorityconfiguration-update.md
+                  - name: 设备注册配置类型
+                    href: resources/intune-onboarding-deviceenrollmentconfigurationtype.md
                   - name: 设备注册限制配置
                     href: resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
                     items:
@@ -9758,10 +9807,8 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: 更新
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: 创建
-                        href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
                       - name: 删除
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理脚本
@@ -9849,8 +9896,6 @@ items:
                     href: resources/intune-shared-keystorageprovideroption.md
                   - name: 密钥使用情况
                     href: resources/intune-shared-keyusages.md
-                  - name: 键/值对
-                    href: resources/intune-shared-keyvaluepair.md
                   - name: macOS LOB 应用分配设置
                     href: resources/intune-shared-macoslobappassignmentsettings.md
                   - name: macOS VPP 应用分配设置
@@ -9925,8 +9970,6 @@ items:
                     href: resources/intune-shared-rgbcolor.md
                   - name: 按帐户类型运行
                     href: resources/intune-shared-runasaccounttype.md
-                  - name: 运行状态
-                    href: resources/intune-shared-runstate.md
                   - name: 保存的 UI 状态生成选项
                     href: resources/intune-shared-saveduistategenerationoptions.md
                   - name: 设置源类型
@@ -14479,7 +14522,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
@@ -14849,7 +14892,7 @@ items:
                     href: api/teamworkhostedcontent-get.md
           - name: 应用安装
             items:
-              - name: 已安装的应用
+              - name: 已安装应用
                 href: resources/teamsappinstallation.md
               - name: 团队中的应用
                 items:
@@ -14889,7 +14932,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: 从聊天中删除应用
                     href: api/chat-delete-installedapps.md
-          - name: Device
+          - name: 设备
             items:
               - name: 预配的设备
                 href: resources/teamworkdevice.md

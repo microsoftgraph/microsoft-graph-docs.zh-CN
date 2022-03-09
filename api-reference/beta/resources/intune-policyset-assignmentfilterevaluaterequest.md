@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7c8c747dea90883c7b5587a9d96ab4d40453ecc
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ee45c31df0eb2bdd8f65eb670af4a3a83b64f0b9
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341773"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368159"
 ---
 # <a name="assignmentfilterevaluaterequest-resource-type"></a>assignmentFilterEvaluateRequest 资源类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "61341773"
 |rule|String|工作分配筛选器的规则定义。|
 |top|Int32|每个请求的记录限制。 如果提供小于 0 或大于 100，则默认值为 100|
 |skip|Int32|要跳过的记录数。 默认值为 0|
+|orderBy|String collection|设备排序顺序。 默认为设备名称上的升序。|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,7 +47,10 @@ ms.locfileid: "61341773"
   "platform": "String",
   "rule": "String",
   "top": 1024,
-  "skip": 1024
+  "skip": 1024,
+  "orderBy": [
+    "String"
+  ]
 }
 ```
 

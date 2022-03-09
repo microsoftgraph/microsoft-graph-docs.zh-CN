@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0262ab76e127f2104bdf2edc2e896b8f4a2873b8
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 8c967b78bb7e3d09aae73268011bc77f34f63d05
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014220"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368250"
 ---
 # <a name="create-bookingappointment"></a>创建 bookingAppointment
 
 命名空间：microsoft.graph
 
-为指定的[bookingBusiness](../resources/bookingbusiness.md)创建新的[bookingAppointment。](../resources/bookingappointment.md)
-## <a name="permissions"></a>Permissions
+为指定的 [bookingBusiness](../resources/bookingbusiness.md) 创建新的 [bookingAppointment](../resources/bookingappointment.md)。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -38,8 +38,14 @@ POST /solutions/bookingBusinesses/{id}/appointments
 | Authorization  | Bearer {code}。 必需。|
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供 [bookingAppointment](../resources/bookingappointment.md) 对象的 JSON 表示形式。
 
+如果服务中允许 (**maximumAttedeesCount**) 数 [大于](../resources/bookingservice.md) 1：
+
+- 确保客户存在于 Booking Calendar 中。 如果没有，则使用 Create [bookingCustomer](bookingbusiness-post-customers.md) 操作创建。
+
+- 创建或更新约会时传递有效的客户 ID。 如果客户 ID 无效，该客户将不会包含在约会对象中。
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象。

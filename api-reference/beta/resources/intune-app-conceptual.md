@@ -1,15 +1,15 @@
 ---
 title: 如何使用 Microsoft Microsoft Intune API 保护公司Graph数据
-description: 列出 Microsoft Graph Intune 终结点的 API (REST) 管理租户组织的应用及其策略。
+description: 列出管理Graph应用及其策略的适用于 Intune 终结点的 Microsoft (API) REST 应用程序。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 8372aa4c125f0b0e56423bb248fabcd0ee604005
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 1ce759c274bf2762eebeb3a4784162a6a9fe364a
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61711947"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367648"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -78,6 +78,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [iOS VPP 应用撤销许可证操作结果](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS VPP 电子书](intune-books-iosvppebook.md)
 - [iOS VPP 电子书分配](intune-books-iosvppebookassignment.md)
+- [键/值对](intune-androidforwork-keyvaluepair.md)
 - [macOS dmg app](intune-apps-macosdmgapp.md)
 - [macOS 包含的应用](intune-apps-macosincludedapp.md)
 - [macOS LOB 应用](intune-apps-macoslobapp.md)

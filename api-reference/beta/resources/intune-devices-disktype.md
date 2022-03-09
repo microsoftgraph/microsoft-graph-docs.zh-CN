@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d076e53507268c793611cc4b10bd09272e6c9a30
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 759b2e2116b860771dc98bdae36ce703f2ba4bed
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291090"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368243"
 ---
 # <a name="disktype-enum-type"></a>diskType 枚举类型
 
@@ -25,9 +25,10 @@ ms.locfileid: "62291090"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|hdd|1|尚未记录|
-|ssd|2|尚未记录|
-|unknown|3|未知或默认 diskType 的枚举成员|
+|unknown|0|未知或默认 diskType 的枚举成员|
+|hdd|1|HDD 设备的枚举成员|
+|ssd|2|SSD 设备的枚举成员|
+|unknownFutureValue|999|可发展枚举成员|
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: plannerPlanContextDetails 资源类型
-description: '**PlannerPlanContextDetails**资源包含有关 plannerPlanContext 的其他信息。'
-localization_priority: Normal
+description: '**plannerPlanContextDetails** 资源包含有关 plannerPlanContext 的其他信息。'
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 0ba8155957b015e5b826253f382281bb7852d5a3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bdb65fab6aecf9c61e066c7e80e9226220c3491c
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064079"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367921"
 ---
 # <a name="plannerplancontextdetails-resource-type"></a>plannerPlanContextDetails 资源类型
 
@@ -18,12 +18,23 @@ ms.locfileid: "48064079"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerPlanContextDetails**资源包含有关[plannerPlanContext](plannerplancontext.md)的其他信息。
+**plannerPlanContextDetails** 资源包含有关 [plannerPlanContext 的其他信息](plannerplancontext.md)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|url|String|由关联的 [plannerPlanContext](plannerplancontext.md)表示的用户体验的 URL。 |
+|customLinkText|String|可为 NULL。 指定在用户体验中用于显示链接的相关 [plannerPlanContext 的文本](plannerplancontext.md)。 如果为 null，应用程序应基于 **displayLinkType** 属性显示包含自定义文本的链接。|
+|displayLinkType|plannerPlanContextType|指定应用程序如何显示指向关联的 **plannerPlanContext 的链接**。 应用程序可以选择根据链接类型提供自定义文本、说明、图标或其他体验。 可取值为：`teamsTab`、`sharePointPage`、`meetingNotes`、`other`、`unknownFutureValue`。|
+|url|String|由关联的 **plannerPlanContext 表示的用户体验的** URL。 |
+|state|plannerContextState| 指示关联的 **plannerPlanContext 的状态**。 |
+
+### <a name="plannercontextstate-values"></a>plannerContextState 值
+
+|值              |说明|
+|:------------------|:----------------------------------------------------------------------|
+|active             | 上下文没有问题。                                          |
+|已取消链接           | 以前链接的 **plannerPlanContext** 不再链接到计划。 |
+|unknownFutureValue | 可发展枚举 sentinel 值。 请勿使用。                     |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -31,15 +42,15 @@ ms.locfileid: "48064079"
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.plannerPlanContextDetails"
 }-->
 
 ```json
 {
-  "url": "String"
+  "url": "string",
+  "customLinkText": "string",
+  "displayLinkType": "string",
+  "state": "string"
 }
 
 ```

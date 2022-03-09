@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0d9215d583461073b504897ce82588f7d2420c9
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 444168c83f34ad8da35f23b0bee27095e495bc4a
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62292009"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367676"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>userExperienceAnalyticsDevicePerformance 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "62292009"
 
 用户体验分析设备性能实体包含设备启动性能详细信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsDevicePerformances](../api/intune-devices-userexperienceanalyticsdeviceperformance-list.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 集合|列出 [userExperienceAnalyticsDevicePerformance 对象的属性和](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 关系。|
@@ -39,7 +39,7 @@ ms.locfileid: "62292009"
 |deviceName|String|用户体验分析设备名称。|
 |model|String|用户体验分析设备模型。|
 |manufacturer|String|用户体验分析设备制造商。|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|用户体验分析设备磁盘类型。 可取值为：`hdd`、`ssd`、`unknown`。|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|用户体验分析设备磁盘类型。 可能的值是：`unknown`、`hdd`、`ssd`、`unknownFutureValue`。|
 |operatingSystemVersion|String|用户体验分析设备操作系统版本。|
 |bootScore|Int32|用户体验分析设备启动分数。|
 |coreBootTimeInMs|Int32|用户体验分析设备核心启动时间（以毫秒为单位）。|
@@ -52,8 +52,8 @@ ms.locfileid: "62292009"
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应式桌面时间（以毫秒为单位）。|
 |blueScreenCount|Int32|最近 14 天内的蓝屏数。 有效值为 0 到 9999999|
 |restartCount|Int32|最近 14 天内的重启次数。 有效值为 0 到 9999999|
-|averageBlueScreens|双精度|平均 (表示) 14 天内每个设备的蓝屏数量。 有效值为 0 到 9999999|
-|averageRestarts|双精度|平均 (，) 最近 14 天内每个设备重新启动次数的平均次数。 有效值为 0 到 9999999|
+|averageBlueScreens|双精度|平均 (14) 设备的平均蓝屏数。 有效值为 0 到 9999999|
+|averageRestarts|双精度|平均 () 最近 14 天内每个设备重新启动次数的平均次数。 有效值为 0 到 9999999|
 |startupPerformanceScore|双精度|用户体验分析设备启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |modelStartupPerformanceScore|双精度|用户体验分析模型级别的启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 

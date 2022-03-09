@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 13d38465c6282e7031bf04f81e4fa31f1310241c
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 85f57afafd5664590fec8b40256bbef6fb8e1c07
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291974"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368145"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>macOSDeviceFeaturesConfiguration 资源类型
 
@@ -25,7 +25,7 @@ MacOS 设备功能配置的配置文件。
 
 继承自 [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 macOSDeviceFeaturesConfigurations](../api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md)|[macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) 集合|列出 [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) 对象的属性和关系。|
@@ -45,8 +45,8 @@ MacOS 设备功能配置的配置文件。
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |airPrintDestinations|[airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md) 集合|应始终显示的 AirPrint 打印机数组。 该集合最多可包含 500 个元素。 继承自 [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|[macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md) 集合|用户登录时要启动的应用程序、文件、文件夹和其他项目的列表。 该集合最多可包含 500 个元素。|
@@ -67,7 +67,7 @@ MacOS 设备功能配置的配置文件。
 |powerOffDisabledWhileLoggedIn|Boolean|登录窗口上的"电源关闭"菜单项在用户登录时是否将被禁用。|
 |logOutDisabledWhileLoggedIn|Boolean|登录窗口上的"注销"菜单项在用户登录时是否将被禁用。|
 |screenLockDisableImmediate|Boolean|是否禁用即时屏幕锁定功能。|
-|associatedDomains|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|已弃用：改为使用 appAssociatedDomains。 获取或设置将应用映射到其关联域的列表。 密钥应匹配应用的 ID，并且值应为"service：domain"形式的字符串，其中 domain 是完全限定的主机名 (例如 webcredentials：example.com) 。 该集合最多可包含 500 个元素。|
+|associatedDomains|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) 集合|已弃用：改为使用 appAssociatedDomains。 获取或设置将应用映射到其关联域的列表。 密钥应匹配应用的 ID，并且值应为"service：domain"形式的字符串，其中 domain 是完全限定的主机名 (例如 webcredentials：example.com) 。 该集合最多可包含 500 个元素。|
 |appAssociatedDomains|[macOSAssociatedDomainsItem](../resources/intune-deviceconfig-macosassociateddomainsitem.md) 集合|获取或设置将应用映射到其关联域的列表。 应用程序标识符必须是唯一的。 该集合最多可包含 500 个元素。|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|获取或设置单一登录扩展配置文件。 已弃用：改为使用 MacOSSingleSignOnExtension。|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|获取或设置单一登录扩展配置文件。|
@@ -79,11 +79,11 @@ MacOS 设备功能配置的配置文件。
 |contentCachingForceConnectionSharing|Boolean|强制进行 Internet 连接共享。 contentCachingDisableConnectionSharing 会覆盖此设置。|
 |contentCachingClientPolicy|[macOSContentCachingClientPolicy](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|确定内容缓存服务器侦听客户端的方法。 可取值为：`notConfigured`、`clientsInLocalNetwork`、`clientsWithSamePublicIpAddress`、`clientsInCustomLocalNetworks`、`clientsInCustomLocalNetworksWithFallback`。|
 |contentCachingClientListenRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|自定义 IP 范围内容缓存将用于侦听客户端的列表。 该集合最多可包含 500 个元素。|
-|contentCachingPeerPolicy|[macOSContentCachingPeerPolicy](../resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md)|确定内容缓存与其他缓存对等的方法。 可能的值是：`notConfigured`、`peersInLocalNetwork`、`peersWithSamePublicIpAddress`、`peersInCustomLocalNetworks`。|
+|contentCachingPeerPolicy|[macOSContentCachingPeerPolicy](../resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md)|确定内容缓存与其他缓存对等的方法。 可取值为：`notConfigured`、`peersInLocalNetwork`、`peersWithSamePublicIpAddress`、`peersInCustomLocalNetworks`。|
 |contentCachingPeerListenRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|内容缓存将用于侦听对等缓存的自定义 IP 范围列表。 该集合最多可包含 500 个元素。|
 |contentCachingPeerFilterRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|自定义 IP 范围内容缓存将用于查询对等缓存中的内容的列表。 该集合最多可包含 500 个元素。|
 |contentCachingParentSelectionPolicy|[macOSContentCachingParentSelectionPolicy](../resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)|确定内容缓存服务器选择父项（如果存在多个父项）的方法。 可取值为：`notConfigured`、`roundRobin`、`firstAvailable`、`urlPathHash`、`random`、`stickyAvailable`。|
-|contentCachingParents|String 集合|表示父内容缓存的 IP 地址列表。|
+|contentCachingParents|字符串集合|表示父内容缓存的 IP 地址列表。|
 |contentCachingLogClientIdentities|Boolean|启用请求缓存内容的客户端的 IP 地址和端口的日志记录。|
 |contentCachingPublicRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|Apple 的内容缓存服务应该用于将客户端与内容缓存相匹配的自定义 IP 范围的列表。 该集合最多可包含 500 个元素。|
 |contentCachingBlockDeletion|Boolean|防止内容缓存清除内容以释放其他应用的磁盘空间。|

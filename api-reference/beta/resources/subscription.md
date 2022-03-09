@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: db0663cc068c382319065db9fd29e08cceca03bc
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 70bc8842ed3ccda835e836c5e4c9337668e54ec8
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335169"
+ms.locfileid: "63368101"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -33,6 +33,7 @@ ms.locfileid: "63335169"
 - Azure Active Directory 中的 [组][]。
 - SharePoint [site][]下的[list][]。
 - Outlook 中的[邮件][]、[事件][]或[联系人][]。
+- [Microsoft Teams 中的][]联机会议。*
 - [用户状态][]Microsoft Teams。*
 - [Microsoft Teams 团队](./team.md)。*
 - [打印机][] (当打印机的打印作业进入”JobFetchable”状态时 - 准备好提取打印) 和通用打印中的 [printTaskDefinition][]。 有关详细信息，请参阅 [订阅云打印 API 中的更改通知](/graph/universal-print-webhook-notifications)。
@@ -82,6 +83,7 @@ ms.locfileid: "63335169"
 | Teams **聊天** | 60 分钟（1 小时） |
 | Teams **chatMessage**    | 60 分钟（1 小时）  |
 | Teams **conversationMember**    | 60 分钟（1 小时）  |
+| Teams **onlineMeeting** | 4320 分钟 (3 天)  |
 | Teams **团队**    | 60 分钟（1 小时）  |
 | 组 **对话** | 4230 分钟（不到 3 天）    |
 | OneDrive **driveItem**    | 42300 分钟（不到 30 天）    |
@@ -163,6 +165,7 @@ ms.locfileid: "63335169"
 [打印机]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
 [baseTask]: ./basetask.md
+[联机会议]: ./onlinemeeting.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

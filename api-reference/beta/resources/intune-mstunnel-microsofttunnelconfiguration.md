@@ -1,16 +1,16 @@
 ---
 title: microsoftTunnelConfiguration 资源类型
-description: 表示自定义设置集合Microsoft Tunnel实体
+description: 表示设置集合Microsoft Tunnel实体
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 48604d5d4a64c722f7150151de8c71bdcc01c738
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 90086f8b01f1991ff7135f5f5b10dc179570d6d0
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62290712"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367774"
 ---
 # <a name="microsofttunnelconfiguration-resource-type"></a>microsoftTunnelConfiguration 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "62290712"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-表示自定义设置集合Microsoft Tunnel实体
+表示设置集合Microsoft Tunnel实体
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 microsoftTunnelConfigurations](../api/intune-mstunnel-microsofttunnelconfiguration-list.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 集合|列出 [microsoftTunnelConfiguration 对象的属性和](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 关系。|
@@ -35,19 +35,19 @@ ms.locfileid: "62290712"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|MicrosoftTunnelConfiguration 的 ID|
-|displayName|字符串|MicrosoftTunnelConfiguration 的显示名称|
-|description|String|MicrosoftTunnelConfiguration 的说明|
-|network|字符串|将用于为客户端分配虚拟地址的子网|
-|dnsServers|String 集合|客户端将使用的 DNS 服务器|
-|defaultDomainSuffix|字符串|客户端将使用的默认域附录|
-|routesInclude|String 集合|服务器将路由的路由|
+|displayName|字符串|MicrosoftTunnelConfiguration 的 显示名称|
+|说明|String|MicrosoftTunnelConfiguration 的说明|
+|network|String|将用于为客户端分配虚拟地址的子网|
+|dnsServers|String collection|客户端将使用的 DNS 服务器|
+|defaultDomainSuffix|String|客户端将使用的默认域附录|
+|routesInclude|String collection|服务器将路由的路由|
 |routesExclude|String 集合|服务器不会路由的路由子集|
-|splitDNS|String 集合|使用提供的 dns 服务器解析的域|
+|splitDNS|字符串集合|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
-|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|可应用于服务器的其他设置|
+|advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
-|disableUDPConnections|Boolean|设置 DisableUdpConnections 后，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|disableUdpConnections|Boolean|设置 DisableUdpConnections 后，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
 
 ## <a name="relationships"></a>关系
 无
@@ -92,7 +92,7 @@ ms.locfileid: "62290712"
   "roleScopeTagIds": [
     "String"
   ],
-  "disableUDPConnections": true
+  "disableUdpConnections": true
 }
 ```
 

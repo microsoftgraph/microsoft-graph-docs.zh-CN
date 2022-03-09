@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph 的最佳做法
 description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1395bca7e84156e1e7eea640387c2167c147fbc3
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 0d80e6c0f2458ab6a7880e2276bf895d8b6ec52e
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688105"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336233"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 
@@ -22,7 +22,7 @@ ms.locfileid: "60688105"
 
 ## <a name="authentication"></a>身份验证
 
-要访问 Microsoft Graph 中的数据，应用程序需要获得一个 OAuth 2.0 访问令牌，并通过以下任一方式将其呈现给 Microsoft Graph：
+若要通过Microsoft Graph访问数据，应用程序需要获取 OAuth 2.0 访问令牌，并在以下任一选项中将其呈现给Microsoft Graph：
 
 - HTTP *授权* 请求头（作为一个 *持有者* 令牌）
 - Graph 客户端构造函数（当使用 Microsoft Graph 客户端库时）
@@ -33,22 +33,23 @@ ms.locfileid: "60688105"
 
 在应用中适用以下面向许可和授权的最佳做法：
 
-- **使用最小特权**。 只请求绝对必要的权限，并且只在需要时请求。 对于应用程序调用的 API，查看方法主题中的权限部分（例如，查看[创建用户](/graph/api/user-post-users)），然后选择最小特权权限。 有关权限的完整列表，请参阅[权限引用](permissions-reference.md)。
+- **应用最低权限**。 仅向用户和应用授予调用 API 所需的最低特权权限。 检查方法主题中的权限部分（例如，请参阅 [创建用户](/graph/api/user-post-users)），然后选择最小特权权限。 例如，如果应用将只读取当前登录用户的配置文件，请授予 *User.Read* 而不是 *User.ReadBasic.All*。 如果应用未读取用户的日历，请勿向其授予 *Calendars.Read* 权限。 有关权限的完整列表，请参阅[权限引用](permissions-reference.md)。
 
-- **根据应用场景使用正确的权限类型**。 如果你正在构建交互式应用程序，其中存在一个已登录用户，那么应用程序应使用 *委派* 权限，在此权限中，应用程序被授权在调用 Microsoft Graph 时充当已登录用户。 但是，如果应用程序在没有已登录用户的情况下运行（如后台服务或守护程序），那么应用程序应使用应用程序权限。
+- **根据应用场景使用正确的权限类型**。 避免在同一应用中同时使用应用程序和委派权限。 如果要生成登录用户所在的交互式应用程序，应用程序应使用 *委派权限*。 但是，如果应用程序在没有登录用户（如后台服务或守护程序）的情况下运行，则应用程序应使用 *应用程序权限*。
 
-    >**注意：** 将应用程序权限用于交互式场景会将你的应用程序置于合规性与安全性风险中。 它可能会不小心提升用户权限来访问数据，绕过管理员配置的策略。
-<!-- LG: Use a more clear lead-in here, like "Consider the end user and admin experience"? -->
+  > [!CAUTION]
+  > 对交互式方案使用应用程序权限可能会使应用程序面临合规性和安全风险。 它可能会无意中提升用户访问数据的权限，从而绕过管理员配置的策略。
+
 - **在配置应用时请考虑周全**。 这会直接影响最终用户和管理体验，以及应用程序的采用和安全性。 例如：
 
-  - 应用程序的隐私声明、使用条款、名称、徽标和域名都将出现在同意和其他体验中，所以一定要仔细配置，以便终端用户可以理解它们。
+  - 应用程序的名称、徽标、域、发布者验证状态、隐私声明和使用条款将显示在许可和其他体验中。 请仔细配置这些设置，以便最终用户了解这些设置。
   - 考虑谁将同意你的应用程序（终端用户或管理员），并适当将应用程序配置为[请求权限](/azure/active-directory/develop/active-directory-v2-scopes)。
-  - 确保理解[静态、动态和增量同意](/azure/active-directory/develop/v2-permissions-and-consent#consent-types)之间的区别。
+  - 确保了解 [静态、动态和增量许可](/azure/active-directory/develop/v2-permissions-and-consent#consent-types)之间的差异。
 
 - **考虑多租户应用程序**。期望客户具有不同状态的各种应用程序和同意控制。例如：
 
   - 租户管理员可以禁用最终用户同意应用程序的功能。 在这种情况下，管理员需要代表他们的用户同意。
-  - 租户管理员可以设置自定义授权策略，如阻止用户读取其他用户的配置文件，或者将自助服务组创建限制为一组有限用户。 在这种情况下，应用程序应在代表用户操作的情况下处理 403 错误响应。
+  - 租户管理员可以设置自定义授权策略，如阻止用户读取其他用户的配置文件，或者将自助服务组创建限制为一组有限用户。 在这种情况下，应用程序应在代表用户执行操作时处理 `403 Forbidden` 错误响应。
 
 ## <a name="handle-responses-effectively"></a>有效处理响应
 
@@ -56,7 +57,7 @@ ms.locfileid: "60688105"
 
 ### <a name="pagination"></a>分页
 
-当查询资源集合时，应料到 Microsoft Graph 会在多个页面中返回结果集，这是由于服务器端页面大小限制所致。 当结果集跨多个页面时，Microsoft Graph 将在响应中返回 `@odata.nextLink` 属性，其中包含指向结果下一页的 URL。
+查询资源集合时，由于服务器端页面大小限制，Microsoft Graph会在多个页面中返回结果集。 当结果集跨多个页面时，Microsoft Graph 将在响应中返回 `@odata.nextLink` 属性，其中包含指向结果下一页的 URL。
 
 例如，列出已登录用户邮件：
 

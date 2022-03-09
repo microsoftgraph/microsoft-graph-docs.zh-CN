@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e89e77e416eb5bda0ca2739be82e3b10911b768
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 70a5fdd114afd1ad4de4e6317282146f481e0288
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291897"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368271"
 ---
 # <a name="hardwareconfigurationdevicestate-resource-type"></a>hardwareConfigurationDeviceState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "62291897"
 
 包含硬件配置的设备运行状态的属性
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 hardwareConfigurationDeviceStates](../api/intune-deviceconfig-hardwareconfigurationdevicestate-list.md)|[hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) 集合|列出 [hardwareConfigurationDeviceState 对象的属性和](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) 关系。|
@@ -34,13 +34,13 @@ ms.locfileid: "62291897"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|硬件配置脚本设备状态实体的键。 此属性是只读的。|
+|id|String|硬件配置脚本设备状态实体的键。 此属性是只读的。|
 |deviceName|String|设备名称|
 |osVersion|String|设备的操作系统版本 (例如 10.0.19042.1165、10.0.19042.1288 等) |
 |upn|String|用户主体名称 (UPN)。|
 |internalVersion|Int32|策略内部版本|
 |lastStateUpdateDateTime|DateTimeOffset|执行硬件配置的最后时间戳|
-|configurationState|[runState](../resources/intune-shared-runstate.md)|上次执行硬件配置后的配置状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|configurationState|[runState](../resources/intune-deviceconfig-runstate.md)|上次执行硬件配置后的配置状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |configurationOutput|String|硬件配置执行的输出|
 |configurationError|String|硬件配置执行中的错误|
 

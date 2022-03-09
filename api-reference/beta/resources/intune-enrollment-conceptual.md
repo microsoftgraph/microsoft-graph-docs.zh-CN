@@ -1,15 +1,15 @@
 ---
 title: 使用 Intune 注册公司设备 - Microsoft Graph API
-description: 列出为Graph组织注册设备的适用于 Intune (REST) 的 Microsoft 应用 API。
+description: 列出注册租户Graph设备的适用于 Intune 终结点 (REST) 。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 46be1dedc9d9b50f92959ef90c0d76a3353ca7f3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5e0e299a5275e55ddf70d604916f163b02da990b
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59091242"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368019"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 
@@ -54,6 +54,7 @@ ms.locfileid: "59091242"
 - [建议的注册限制](intune-enrollment-suggestedenrollmentlimit.md)
 - [Windows Autopilot Deployment 配置文件分配](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Windows Autopilot 设备标识](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Windows autopilot 设备修正状态](intune-enrollment-windowsautopilotdeviceremediationstate.md)
 - [Windows Autopilot 设备类型](intune-enrollment-windowsautopilotdevicetype.md)
 - [Windows Autopilot 配置文件分配详细状态](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Windows Autopilot 配置文件分配状态](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
@@ -62,3 +63,4 @@ ms.locfileid: "59091242"
 - [Windows 设备使用类型](intune-enrollment-windowsdeviceusagetype.md)
 - [Windows 注册状态屏幕设置](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Windows 用户类型](intune-enrollment-windowsusertype.md)
+

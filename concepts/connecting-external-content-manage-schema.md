@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: c9a90807ae45184d6ae86d9ca9a5a6f9161f38b5
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 77a233c41a09af0e5ec305b29ba25f19805c27bc
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266172"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335568"
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -73,11 +73,12 @@ ms.locfileid: "61266172"
 
 ### <a name="refinable"></a>可精简
 
-如果属性是可精简的，则管理员可将其配置为 Microsoft 搜索结果页面中的自定义筛选器。
+如果属性是可精简的，则管理员可将其配置为 Microsoft 搜索结果页面中的自定义筛选器。`refinable` 属性无法为 `searchable`。
 
 ![按标记优化结果，可精简属性](./images/connectors-images/connecting-external-content-manage-schema-5.svg)
 
 *按可精简属性 `tags` 精简结果。*
+
 
 ## <a name="semantic-labels"></a>语义标签
 

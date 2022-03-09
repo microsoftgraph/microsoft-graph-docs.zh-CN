@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 9812aeca1d2a8a057389aaec5183b42032b64674
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: acbb51dcc2bde867003bb5ec3d8fd15133f3f22a
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335960"
+ms.locfileid: "63368047"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -25,7 +25,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | **资源** | **支持的资源路径** | **可包含在通知中的资源数据**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 云打印 [打印机][] | 打印作业准备好下载时的变化（作业可打印事件）：<br>`/print/printers/{id}/jobs` | 不支持 |
-| 云打印 [printTaskDefinition][] | 在队列中具有有效作业时的变化（作业启动事件）：<br>`/print/printtaskdefinition/{id}/tasks` | 否 |
+| 云打印 [printTaskDefinition][] | 在队列中具有有效作业时的变化（作业启动事件）：<br>`/print/printtaskdefinition/{id}/tasks` | 不支持 |
 | OneDrive for Business 上的 [driveItem][] | 对 _根文件夹_ 的层次结构内的内容更改：<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | 否 |
 | OneDrive（个人版）上的 [driveItem][] | 对 _任何文件夹_ 的层次结构内的内容更改：<br>`/users/{id}/drive/root` | 否 |
 | [组][] | 对所有组更改：<br>`/groups` <br>对特定组更改：<br>`/groups/{id}`<br>对特定组的所有者所做的更改：<br>`/groups/{id}/owners`<br>对特定组成员所做的更改：<br>`/groups/{id}/members` | 否 |
@@ -40,6 +40,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | Teams [聊天][] | 对租户中任何聊天的更改：<br>`/chats` <br>对特定聊天的更改：<br>`/chats/{id}` | 是 |
 | Teams [chatmessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages`<br>特定用户参与的所有聊天中聊天消息的更改包括：<br>`/users/{id}/chats/getAllMessages` | 是 |
 | Teams [conversationMember][] | 对特定团队中的成员身份的更改：<br>`/teams/{id}/members` <br> 对特定聊天中的成员身份的更改：<br>`/chats/{id}/members` <br> 更改所有聊天中的成员身份：<br>`/chats/getAllMembers` <br> 对特定团队下所有频道中的成员身份的更改：<br>`teams/{id}/channels/getAllMembers` | 是 |
+| Teams [onlineMeeting][] | 对联机会议所做的更改： <br>`/communications/onlinemeeting/{meeting-id}` | 是 |
 | Teams [状态][] | 对单个用户状态所做的更改： `/communications/presences/{id}` <br> 对多个用户状态所做的更改：<br> `/communications/presences?$filter=id in ({id},{id}...)` | 是 |
 | Teams [团队][] | 对租户中任何团队的更改：<br>`/teams` <br>对特定团队的更改：<br>`/teams/{id}` | 是 |
 | [baseTask][] | 对特定任务列表中所有任务的更改：<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>更改所有任务：<br>`/me/tasks/lists/alltasks` | 否 |
@@ -56,7 +57,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | 委派 - 工作或学校帐户     | [警报][]、[频道][]、[聊天][]、[联系人][]、[对话][]、[conversationMember][]、[driveItem][][、列表][]、[事件][]、[组][]、[消息][]、[用户][]、[状态][]、[chatMessage][] (preview) 、[team][]、[baseTask][] |
 | 委派 - 个人 Microsoft 帐户 | [contact][]， [driveItem][]， [list][]， [event][]， [message][]， [baseTask][]                                     |
-| 应用程序                            | [alert][]、 [channel][]、 [chat][]、 [contact][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [callRecord][]、 [chatMessage][]、 [conversationMember][]、 [printer][]、 [printTaskDefinition][]、 [team][] |
+| 应用程序                            | [alert][]、[channel][]、[chat][]、[contact][]、[driveItem][]、[list][]、[event][]、[group][]、[message][]、[user][]、[callRecord][]、[chatMessage][]、[conversationMember][]、[onlinemeeting、][][printer][]、[printTaskDefinition][]、[team][] |
 
 ## <a name="see-also"></a>另请参阅
 
@@ -85,6 +86,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [状态]: ./presence.md
 [打印机]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
-[team]: ./team.md
+[团队]: ./team.md
 [baseTask]: ./baseTask.md
+[onlineMeeting]: ./onlinemeeting.md
 

@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3ddafab129251829d797d8de943b76182a6d5418
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d3624b1b57ba0883447a41fbc3ef08c910e51fc1
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335414"
+ms.locfileid: "63368131"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -1572,7 +1572,7 @@ ms.locfileid: "63335414"
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | 参考
 
 
@@ -2489,6 +2489,15 @@ ms.locfileid: "63335414"
 |other|
 |unknownFutureValue|
 
+### <a name="plannercontextstate-values"></a>plannerContextState 值
+
+|Member             |
+|:------------------|
+|active             |
+|已取消链接           |
+|unknownFutureValue |  
+
+
 ### <a name="policyscope-values"></a>policyScope 值
 
 |Member|
@@ -2501,7 +2510,7 @@ ms.locfileid: "63335414"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|team      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
+|团队      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
@@ -2674,7 +2683,7 @@ ms.locfileid: "63335414"
 
 |Member|
 |:---|
-|team|
+|团队|
 |频道|
 |聊天|
 |unknownFutureValue|

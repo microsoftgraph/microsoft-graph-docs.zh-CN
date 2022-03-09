@@ -490,7 +490,7 @@ items:
                 href: api/planneruser-list-tasks.md
           - name: Teamwork
             items:
-              - name: 已安装的应用
+              - name: 已安装应用
                 href: resources/teamsappinstallation.md
               - name: 列出用户应用
                 href: api/userteamwork-list-installedapps.md
@@ -1548,7 +1548,7 @@ items:
                 href: api/bookingstaffmember-update.md
               - name: 删除
                 href: api/bookingstaffmember-delete.md
-      - name: 设备和应用
+      - name: 设备和应用管理
         expanded: true
         items:
           - name: 云打印
@@ -1595,7 +1595,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: 重定向
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -6432,7 +6432,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
@@ -6716,7 +6716,7 @@ items:
                 href: api/teamsapp-delete.md
           - name: 应用安装
             items:
-              - name: 已安装的应用
+              - name: 已安装应用
                 href: resources/teamsappinstallation.md
               - name: 团队中的应用
                 items:

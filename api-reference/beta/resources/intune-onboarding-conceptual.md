@@ -4,12 +4,12 @@ description: 列出用于为租户Graph载入 (配置和) 设备的适用于 Int
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 7f0955ad5ddad757dc4b189eafff925670e0590e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 75d06ef328c6af99eaba70df8b0d3fd858921bd1
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039740"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367739"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
@@ -28,6 +28,7 @@ ms.locfileid: "59039740"
 - [合规性管理合作伙伴分配](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [设备和应用管理数据](intune-onboarding-deviceandappmanagementdata.md)
 - [设备共同管理颁发机构配置](intune-onboarding-devicecomanagementauthorityconfiguration.md)
+- [设备注册配置类型](intune-onboarding-deviceenrollmentconfigurationtype.md)
 - [设备注册限制配置](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [设备注册平台限制](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [设备注册平台限制配置](intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1009096aa25a504ba02b3c0cc2b8dc9eed6cf2dc
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 8a8b0632eab2d33e9bc5676a807a0f949b90c528
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291153"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367683"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings 资源类型
 
@@ -36,6 +36,8 @@ ms.locfileid: "62291153"
 |ignoreDevicesForUnsupportedSettingsEnabled|Boolean|属性，用于确定是否忽略某些型号的设备上不受支持的合规性设置。|
 |enableLogCollection|Boolean|确定是否应该可以使用日志收集功能。|
 |enableAutopilotDiagnostics|Boolean|确定是否启用 autopilot 诊断功能。|
+|enableEnhancedTroubleshootingExperience|Boolean|确定是否启用增强的故障排除 UX。|
+|enableDeviceGroupMembershipReport|Boolean|确定是否启用设备组成员身份报告功能。|
 
 ## <a name="relationships"></a>关系
 无
@@ -60,7 +62,9 @@ ms.locfileid: "62291153"
   "androidDeviceAdministratorEnrollmentEnabled": true,
   "ignoreDevicesForUnsupportedSettingsEnabled": true,
   "enableLogCollection": true,
-  "enableAutopilotDiagnostics": true
+  "enableAutopilotDiagnostics": true,
+  "enableEnhancedTroubleshootingExperience": true,
+  "enableDeviceGroupMembershipReport": true
 }
 ```
 

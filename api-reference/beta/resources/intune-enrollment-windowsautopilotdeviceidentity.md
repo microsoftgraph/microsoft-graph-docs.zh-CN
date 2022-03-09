@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 556de32586fc07d7fae38170b430990605451b56
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 531052ac29718493bad6d2ab82d7c1b1eaaeb510
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339841"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368208"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
@@ -42,7 +42,7 @@ windowsAutopilotDeviceIdentity 资源表示Windows Autopilot 设备。
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|autopilot 设备的Windows分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 autopilot Windows状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`、`surfaceHub2SProfileNotSupported` 或 `unknownFutureValue`。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|autopilot 设备的配置文件Windows时间。|
-|groupTag|String|autopilot 设备的组Windows标记。|
+|groupTag|字符串|autopilot 设备的组Windows标记。|
 |purchaseOrderIdentifier|String|Purchase Order Autopilot Windows标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
@@ -51,14 +51,19 @@ windowsAutopilotDeviceIdentity 资源表示Windows Autopilot 设备。
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Autopilot 设备的 intune Windows状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |lastContactedDateTime|DateTimeOffset|Intune Autopilot 设备的上次Windows日期时间。|
 |addressableUserName|String|可地址用户名。|
-|userPrincipalName|String|用户主体名称。|
+|userPrincipalName|字符串|用户主体名称。|
 |resourceName|String|资源名称。|
 |skuNumber|String|SKU 号|
 |systemFamily|String|系统系列|
 |azureActiveDirectoryDeviceId|String|AAD设备 ID - 已弃用|
-|azureAdDeviceId|String|AAD设备 ID|
+|azureAdDeviceId|字符串|AAD设备 ID|
 |managedDeviceId|String|托管设备 ID|
 |displayName|String|显示名称|
+|deviceAccountUpn|String|Surface Hub设备帐户 Upn|
+|deviceAccountPassword|String|Surface Hub设备帐户密码|
+|deviceFriendlyName|String|Surface Hub设备友好名称|
+|remediationState|[windowsAutopilotDeviceRemediationState](../resources/intune-enrollment-windowsautopilotdeviceremediationstate.md)|设备修正状态。 可能的值是：`unknown`、`noRemediationRequired`、`automaticRemediationRequired`、`unknownFutureValue`。|
+|remediationStateLastModifiedDateTime|DateTimeOffset|RemediationState Autopilot 设备的设置时间。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -97,7 +102,12 @@ windowsAutopilotDeviceIdentity 资源表示Windows Autopilot 设备。
   "azureActiveDirectoryDeviceId": "String",
   "azureAdDeviceId": "String",
   "managedDeviceId": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "deviceAccountUpn": "String",
+  "deviceAccountPassword": "String",
+  "deviceFriendlyName": "String",
+  "remediationState": "String",
+  "remediationStateLastModifiedDateTime": "String (timestamp)"
 }
 ```
 

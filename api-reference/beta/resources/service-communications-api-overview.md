@@ -1,28 +1,28 @@
 ---
 title: 在 Microsoft Graph 中处理服务通信 API
-description: 可以使用 Microsoft Graph 中的服务通信 API 来访问有关 Microsoft 服务 的运行状况和消息Microsoft 服务。"
+description: 可以使用 Microsoft 服务通信 API 访问Graph运行状况和消息中心帖子Microsoft 服务"。
 author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 636f4d719dd044d0c02f91dcf6e3a1ffad640103
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 6dd9abc0b3bd8bf71f46739df06a1b8c609fe2be
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072521"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367904"
 ---
 # <a name="working-with-service-communications-api-in-microsoft-graph"></a>在 Microsoft Graph 中处理服务通信 API
-服务通信 API 提供与租户订阅的 Microsoft 云服务相关的服务运行状况和消息中心帖子。 你可以获取 Microsoft 服务实例的当前和历史 (，例如，Exchange Online服务) 。 在致电支持人员或花时间进行故障排除之前，你可以检查服务运行状况以确定问题是否被跟踪且正在解决。 通过消息中心帖子，你可以跟踪即将进行的更改，包括新功能、更新和 (例如，Exchange Online获取新功能) 。
+服务通信 API 提供与租户订阅的 Microsoft 云服务相关的服务运行状况和消息中心帖子。 可以获取 Microsoft 服务实例的当前和历史 (，例如，Exchange Online服务) 。 在致电支持人员或花时间进行故障排除之前，你可以检查服务运行状况以确定问题是否被跟踪且正在解决。 通过消息中心帖子，你可以跟踪即将进行的更改，包括新功能、更新和 (例如，Exchange Online获取新功能) 。
 
 ## <a name="authorization"></a>Authorization
-Microsoft Graph允许应用程序获得对运行状况的授权访问权限，并更改有关租户订阅的 Microsoft 云服务的通信。 借助相应的委派权限或应用程序权限[](/graph/permissions-reference#service-communications-permissions)，应用可以代表登录用户或者没有租户中任何登录用户的情况下访问通信数据。 这些权限的委派和应用程序类型都仅由管理员授予。
+Microsoft Graph允许应用程序获得对运行状况的授权访问权限，并更改有关租户订阅的 Microsoft 云服务的通信。 借助相应的委派权限或应用程序权限[](/graph/permissions-reference#service-communications-permissions)，应用可以代表登录用户访问通信数据，或在租户中没有任何已登录用户的情况下访问通信数据。 这些权限的委派和应用程序类型都仅由管理员授予。
 
-有关访问令牌、应用程序注册以及委派和应用程序权限详细信息，请参阅身份验证 [和授权基础知识](/graph/auth/auth-concepts)。
+有关访问令牌、应用注册以及委派和应用程序权限详细信息，请参阅身份验证 [和授权基础知识](/graph/auth/auth-concepts)。
 
 ### <a name="access-service-communications-api-on-behalf-of-signed-in-user"></a>代表登录用户访问服务通信 API
 
-代表登录用户访问服务通信 API 需要委派权限。 面向客户的画布应用程序（如 [Microsoft 365 管理中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) (仅可供管理员角色) 访问）可以代表登录用户调用服务通信 API，获取登录用户租户的服务运行状况和服务通知 _数据。_ 用户可以查明其订阅的服务是否正常运行或是否有问题。 他们还可以了解影响租户的任何当前服务问题。 
+代表登录用户访问服务通信 API 需要委派权限。 面向客户的画布应用程序（如 [Microsoft 365 管理中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) (仅可供管理员角色) 访问）可以代表登录用户调用服务通信 API，获取登录用户租户的服务运行状况和服务通知数据。  用户可以查明其订阅的服务是否正常运行或是否有问题。 他们还可以了解影响租户的任何当前服务问题。 
 
 ### <a name="access-service-communications-api-without-user"></a>无需用户即可访问服务通信 API
 
@@ -40,7 +40,7 @@ Microsoft Graph允许应用程序获得对运行状况的授权访问权限，�
 | 获取租户的事件后审阅报告 | [获取事件报告](/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta&preserve-view=true)| _ServiceHealth.Read.All_ | 委托和应用程序 |
 | 列出租户的所有服务消息 | [列出邮件](/graph/api/serviceannouncement-list-messages?view=graph-rest-beta&preserve-view=true) | _ServiceMessage.Read.All_ | 委托和应用程序 |
 | 获取租户的特定服务消息 | [获取邮件](/graph/api/serviceupdatemessage-get?view=graph-rest-beta&preserve-view=true) | _ServiceMessage.Read.All_ | 委托和应用程序 |
-| 更新已登录用户的服务消息状态 | 有关状态操作的列表，请参阅 [serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true)。| _ServiceMessageViewpoint.Write_ | Delegated |
+| 更新已登录用户的服务消息状态 | 有关状态操作的列表，请参阅 [serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true)。| _ServiceMessageViewpoint.Write_ | 委派 |
 
 ## <a name="availability-in-national-clouds"></a>国家云中的可用性
 该服务通信 API 可用于所有 Microsoft 国家云部署。 你可以获取 Microsoft 国家云中任何租户的服务运行状况和通信数据。 有关详细信息，请参阅 [国家云部署](/graph/deployments)。
@@ -68,4 +68,4 @@ Microsoft Graph允许应用程序获得对运行状况的授权访问权限，�
 - [在 Microsoft Graph 中访问服务运行状况和通信的概述](/graph/service-communications-concept-overview)
 - 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
 
-需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/partners)。
+需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/partners)。

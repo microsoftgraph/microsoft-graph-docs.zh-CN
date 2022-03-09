@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 47f52819b306fb303ba120923555854d62e56706
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: e9c07307c8276b02c536effaa81a77296a85cf6b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201324"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335967"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -26,6 +26,9 @@ ms.locfileid: "62201324"
 |委派（工作或学校帐户） | GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> 若要从可分配角色的组中删除成员，还必须向调用用户或应用分配 *RoleManagement.ReadWrite.Directory* 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -2,15 +2,15 @@
 title: deviceComanagementAuthorityConfiguration 资源类型
 description: Windows 10 Co-Management颁发机构页面配置
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35e0557b182da7b0f1f4d7621973afcc19299c84
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 92a06e44d9d8bbd3404dc2c2be5a53e1245e8f88
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039747"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367753"
 ---
 # <a name="devicecomanagementauthorityconfiguration-resource-type"></a>deviceComanagementAuthorityConfiguration 资源类型
 
@@ -25,7 +25,7 @@ Windows 10 Co-Management颁发机构页面配置
 
 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceComanagementAuthorityConfigurations](../api/intune-onboarding-devicecomanagementauthorityconfiguration-list.md)|[deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) 集合|列出 [deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) 对象的属性和关系。|
@@ -45,6 +45,7 @@ Windows 10 Co-Management颁发机构页面配置
 |lastModifiedDateTime|DateTimeOffset|设备注册配置的上次修改日期时间（UTC）继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|设备注册配置的版本 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |roleScopeTagIds|String collection|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|deviceEnrollmentConfigurationType|[deviceEnrollmentConfigurationType](../resources/intune-onboarding-deviceenrollmentconfigurationtype.md)|支持注册配置类型 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)。 可取值为：`unknown`、`limit`、`platformRestrictions`、`windowsHelloForBusiness`、`defaultLimit`、`defaultPlatformRestrictions`、`defaultWindowsHelloForBusiness`、`defaultWindows10EnrollmentCompletionPageConfiguration`、`windows10EnrollmentCompletionPageConfiguration`、`deviceComanagementAuthorityConfiguration`、`singlePlatformRestriction`、`unknownFutureValue`。|
 |managedDeviceAuthority|Int32|CoManagement Authority 配置 ManagedDeviceAuthority|
 |installConfigurationManagerAgent|Boolean|CoManagement Authority 配置 InstallConfigurationManagerAgent|
 |configurationManagerAgentCommandLineArgument|String|CoManagement Authority 配置配置ManagerAgentCommandLineArgument|
@@ -75,11 +76,13 @@ Windows 10 Co-Management颁发机构页面配置
   "roleScopeTagIds": [
     "String"
   ],
+  "deviceEnrollmentConfigurationType": "String",
   "managedDeviceAuthority": 1024,
   "installConfigurationManagerAgent": true,
   "configurationManagerAgentCommandLineArgument": "String"
 }
 ```
+
 
 
 

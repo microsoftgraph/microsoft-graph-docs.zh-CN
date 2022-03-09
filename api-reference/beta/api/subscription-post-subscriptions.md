@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: b2335d3419e73f1554395ddece8c9d7351e1dfc7
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a1dad572417a97793dd6b1b25176a18879edb491
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335239"
+ms.locfileid: "63368166"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -22,7 +22,7 @@ ms.locfileid: "63335239"
 
 请参阅" [权限](#permissions) 部分中的表格，了解支持订阅以更改通知的资源列表。
 
-某些资源支持在更改通知中包括加密资源数据的选项。 这些资源包括 [chatMessage、](../resources/chatmessage.md)[contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md) 和 [presence](../resources/presence.md)。 有关详细信息，请参阅设置包含资源[数据的更改](/graph/webhooks-with-resource-data)通知和 [Microsoft Outlook资源更改Graph](/graph/outlook-change-notification-overview)。
+某些资源支持在更改通知中包括加密资源数据的选项。 这些资源包括 [chatMessage、](../resources/chatmessage.md)[contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md)、[onlineMeetings 和](../resources/onlinemeeting.md) [presence](../resources/presence.md)。 有关详细信息，请参阅设置包含资源[数据的更改](/graph/webhooks-with-resource-data)通知和 [Microsoft Outlook资源更改Graph](/graph/outlook-change-notification-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -55,6 +55,7 @@ ms.locfileid: "63335239"
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
+|[联机会议](../resources/onlinemeeting.md) | 不支持 | 不支持 | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All |
 |[状态](../resources/presence.md) | Presence.Read.All | 不支持 | 不支持 |
 |[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
