@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 85a5991cfe230e6588a2bb2c663914b14b816a17
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: badc1ef730ee517aa92a629a320d041236db8664
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894661"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397909"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -32,7 +32,9 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 * **AppFolder** 授予应用在 OneDrive 专用文件夹中读取和写入文件的权限。此约束仅在 [文件权限](#files-permissions)上公开，并且仅适用于 Microsoft 帐户。
 * 如果未指定 **任何约束**，则应用程序仅限于对已登录用户拥有的资源执行操作。例如，_User.Read_ 仅授予读取已登录用户的配置文件的特权，_Mail.Read_ 仅授予读取已登录用户邮箱中的邮件的权限。
 
-> **注意**：在委托场景中，授予应用的有效权限会受到组织中已登录用户的特权的限制。
+> [!NOTE]
+> 在委派方案中，应用的访问权限也受已登录用户的权限限制。 这些权限由用户分配的角色及其与要访问的数据的关系决定。
+> 例如，如果登录用户没有查看文件的适当权限，则客户端应用也无法读取该文件，即使向应用授予了 `File.Read.All` 委派权限。
 
 ## <a name="microsoft-accounts-and-work-or-school-accounts"></a>Microsoft 帐户和工作或学校帐户
 
@@ -65,7 +67,7 @@ Azure AD 限制客户端应用可以请求和同意的权限数。 这些限制�
 
 容器对象（例如组）支持各种类型的成员（例如用户和设备）。 当应用程序查询容器对象的成员身份，但无读取特定类型的权限时，将返回该类型的成员，但信息有限。  应用程序将收到 200 响应和一个对象集合。  对于应用程序有权读取的对象类型，返回完整信息。  对于应用程序没有读取权限的对象类型，仅返回对象类型和 ID。
 
-这适用于 [directoryObject](/graph/api/resources/directoryobject) 类型的所有关系（而不仅仅是成员链接）。 示例包括 `/groups/{id}/members`、`/users/{id}/memberOf` 或 `me/ownedObjects`。
+这适用于 [directoryObject](/graph/api/resources/directoryobject)类型的所有关系（而不仅仅是成员链接）。示例包括 `/groups/{id}/members`、`/users/{id}/memberOf` 或 `me/ownedObjects`。
 
 例如，假设一个应用程序具有 Microsoft Graph 的 [User.Read.All](#user-permissions) 和 [Group.Read.All](#group-permissions) 权限。  当前已创建一个组，且该组包含用户、组和设备。  应用程序调用[列出组成员](/graph/api/group-list-members)。  应用程序可以访问组中的用户和组对象，而不能访问设备对象。  在响应中，将返回用户和组对象的所有选定属性。 但是对于设备对象，仅返回有限的信息。  返回内容包括设备的数据类型和对象 ID，但所有其他属性的值均为 *null*。 没有权限的应用将不能使用 ID 获取实际对象。
 
@@ -107,25 +109,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 }
 ```
 
-## <a name="retrieving-permission-ids"></a>检索权限 ID
-
-如果需要使用Azure CLI、PowerShell 或基础结构作为代码框架来设置权限，则可能需要要使用的权限的标识符，而不是名称。 可以通过运行 来使用Azure CLI检索标识符 `az ad sp list`。 但是，这会生成一个非常长的列表，并且可能很难找到所需的特定权限。 如果已经知道所需权限的名称，则可以使用Azure CLI运行以下命令：
-
-```bash
-az ad sp list --query "[?appDisplayName=='Microsoft Graph'].{permissions:oauth2Permissions}[0].permissions[?value=='<NAME OF PERMISSION>'].{id: id, value: value, adminConsentDisplayName: adminConsentDisplayName, adminConsentDescription: adminConsentDescription}[0]" --all
-```
-
-响应应类似于以下示例，其中包含说明、标识符、显示名称和权限名称：
-
-```json
-{
-  "adminConsentDescription": "Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. ",
-  "adminConsentDisplayName": "Read all groups",
-  "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
-  "value": "Group.Read.All"
-}
-```
-
 ## <a name="access-reviews-permissions"></a>访问评审权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -143,6 +126,7 @@ az ad sp list --query "[?appDisplayName=='Microsoft Graph'].{permissions:oauth2P
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _AccessReview.Read.All_ |   读取所有访问评审 | 允许应用在没有登录的用户的情况下读取访问评审。 | 是 |
+| _AccessReview.ReadWrite.All_ |   管理所有访问评审 | 允许应用在没有登录用户的情况下对组织中的访问审查、审阅者、决策和设置执行读取、更新和删除等操作。 | 是 |
 | _AccessReview.ReadWrite.Membership_ | 管理组和应用成员身份的访问评审 | 允许应用在没有已登录用户的情况下管理组和应用的访问评审。 | 是 |
 
 
@@ -183,6 +167,9 @@ _AccessReview.Read.All_、_AccessReview.ReadWrite.All_、_AccessReview.ReadWrite
 _AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_ 仅对工作或学校帐户有效。
 
 ### <a name="example-usage"></a>用法示例
+
+> [!NOTE]
+> 管理单元 API 的 `v1.0`终结点`/v1.0/directory/administrativeUnits`。
 
 - _AdministrativeUnit.Read.All_：读取管理单元 (`GET /beta/administrativeUnits`)
 - _AdministrativeUnit.Read.All_：读取管理单元成员列表 (`GET /beta/administrativeUnits/<id>/members`)
@@ -322,7 +309,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _BitlockerKey.ReadBasic.All_ | 读取基本 BitLocker 密钥信息 | 允许应用读取租户中所有设备的 BitLocker 密钥的属性。 不返回恢复密钥。 | 是 | 否 |
+| _BitlockerKey.ReadBasic.All_ | 读取基本 BitLocker 密钥信息 | 允许应用读取租户中所有设备的 BitLocker 密钥属性。不返回恢复密钥。 | 是 | 否 |
 | _BitlockerKey.Read.All_ | 读取 BitLocker 密钥 | 允许应用读取租户中所有设备的 BitLocker 密钥。 返回恢复密钥。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -859,7 +846,7 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 | _EduAssignments.ReadWriteBasic_ | 对不含成绩的用户课堂作业执行读取和写入操作           | 允许应用代表用户对不含成绩的作业执行读取和写入操作                                                                                                                                                                                                | 是                    | 否                          |
 | _EduAssignments.Read_           | 读取用户的课堂作业及其成绩视图           | 允许应用代表用户读取作业及其成绩                                                                                                                                                                                                        | 是                    | 否                          |
 | _EduAssignments.ReadWrite_      | 对用户的课堂作业及其成绩视图执行读取和写入操作 | 允许应用代表用户对作业及其成绩执行读取和写入操作                                                                                                                                                                                              | 是                    | 否                          |
-| _EduRoster.ReadBasic_           | 读取用户的名单视图的有限子集               | 允许应用读取组织名单中学校和班级结构属性的有限子集以及代表用户读取的有关用户属性的有限子集。 其中包括姓名、状态、教育角色、电子邮件地址和照片。 | 是                    | 否                          |
+| _EduRoster.ReadBasic_           | 读取用户的名单视图的有限子集               | 允许应用从组织名单中的学校和班级结构中读取属性的有限子集，以及有关要代表用户读取的用户的有限属性子集。包括姓名、状态、教育角色、电子邮件地址和照片。 | 是                    | 否                          |
 | _EduRoster.Read_                | 读取用户名单的视图                                   | 允许应用读取组织名单中的学校和班级结构以及代表用户读取的有关用户的教育专属信息。                                                                                                         | 是                    |
 | _EduRoster.ReadWrite_           | 读取并写入用户名单的视图                         | 允许应用读取和写入组织名单中的学校和班级结构以及代表用户读取和写入的有关用户的教育专属信息。                                                                                   | 是                    |
 
@@ -1053,7 +1040,7 @@ _IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或
 | _IdentityRiskyUser.Read.All_ |   读取标识用户风险信息  | 允许应用代表登录用户读取组织中所有用户的标识用户风险信息。 | 是 | 否 |
 | _IdentityRiskyUser.ReadWrite.All_ |   读取和更新标识用户风险信息  | 允许应用代表登录用户读取和更新组织中所有用户的标识用户风险信息。 | 是 | 否 |
 | _IdentityRiskyServicePrincipal.Read.All_ |   读取所有风险服务主体信息  | 允许应用代表已登录用户读取组织的所有风险服务主体信息。 | 是 | 否 |
-| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   读取和写入所有风险服务主体信息  | 允许应用代表已登录用户读取和更新组织中所有服务主体的风险服务主体信息。 更新操作包括消除有风险的服务主体。| 是 | 否 |
+| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   读取和写入所有风险服务主体信息  | 允许应用代表已登录用户读取和更新组织中所有服务主体的风险服务主体信息。更新操作包括消除有风险的服务主体。| 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1065,7 +1052,7 @@ _IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或
 | _IdentityRiskyServicePrincipal.Read.All_ |   读取所有风险服务主体信息  | 允许应用在没有登录用户的情况下读取组织的所有有风险的服务主体信息。 | 是 |
 | _IdentityRiskyServicePrincipal.ReadWrite.All_ |   读取和写入所有风险服务主体信息  | 允许应用在没有登录用户的情况下读取和更新组织的风险服务主体。| 是 |
 
-所有标识风险权限仅对工作或学校帐户有效。 对于通过委派权限读取标识用户风险信息的应用，登录用户必须是以下 [Azure AD 管理员角色](/azure/active-directory/roles/permissions-reference) 之一的成员：全局管理员、安全管理员或安全读者。
+所有标识风险权限仅对工作或学校帐户有效。对于具有读取标识风险信息的委派权限的应用，登录用户必须是以下 [Azure AD管理员角色之一的成员](/azure/active-directory/roles/permissions-reference)：全局管理员、安全管理员或安全读取者。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1233,7 +1220,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    读取用户邮件 | 允许应用读取用户邮箱中的电子邮件。 | 否 | 是
-| _Mail.ReadBasic_ |    读取用户基本邮件 | 允许应用读取已登录用户的邮箱，但不读取 **body**、**bodyPreview**、**uniqueBody**、**attachments**、**extensions** 和任何扩展属性。 不包含邮件搜索权限。 | 否 | 否
+| _Mail.ReadBasic_ |    读取用户基本邮件 | 允许应用读取已登录用户邮箱中的电子邮件， **正文** 除外， **bodyPreview**、 **uniqueBody**、 **附件**、 **扩展** 以及任何扩展属性。不包括搜索邮件的权限。 | 否 | 否
 | _Mail.ReadWrite_ |    对用户邮件的读写权限 | 允许应用创建、读取、更新和删除用户邮箱中的电子邮件。不包括发送电子邮件的权限。| 否 | 是
 | _Mail.Read.Shared_ |    读取用户邮件和共享邮件 | 允许应用读取用户可以访问的邮件，包括用户个人邮件和共享邮件。 | 否 | 否
 | _Mail.ReadWrite.Shared_ |    读取和写入用户邮件和共享邮件 | 允许应用创建、读取、更新和删除用户有权访问的邮件，包括用户个人邮件和共享邮件。不包括邮件发送权限。 | 否 | 否
@@ -1457,7 +1444,7 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 ---
 
-## <a name="openid-permissions"></a>OpenID 权限
+## <a name="openid-connect-oidc-permissions"></a>OpenID Connect （OIDC） 权限
 
 #### <a name="delegated-permissions"></a>委派权限
 
@@ -1620,7 +1607,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 | 否 |
 | _Policy.ReadWrite.ConditionalAccess_ | 读取和写入你组织的条件访问策略 | 允许应用代表已登录用户读取和写入你组织的条件访问策略。 | 是 | 否 |
 | _Policy.ReadWrite.ConsentRequest_ | 读取和写入组织的同意请求策略 | 允许应用代表已登录用户读取和写入你组织的许可请求策略。 | 是 | 否 |
-| _Policy.ReadWrite.CrossTenantAccessPolicy_ | 读取和写入组织的跨租户访问策略 | 允许应用代表已登录用户读取和写入组织的跨租户访问策略。 | 是 | 否 |
+| _Policy.ReadWrite.CrossTenantAccess_ | 读取和写入组织的跨租户访问策略 | 允许应用代表已登录用户读取和写入组织的跨租户访问策略。 | 是 | 否 |
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入你组织的功能推出策略 | 允许应用代表已登录用户读取和写入你组织的功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 | 否 |
 | _Policy.ReadWrite.PermissionGrant_ | 管理许可和权限授予策略 | 允许此应用代表已登录的用户管理与适用于应用程序的许可和权限授予相关的策略。 | 是 | 否 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用代表已登录用户读取和写入你组织的信任框架策略。 | 是 | 否 |
@@ -1639,10 +1626,8 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Policy.ReadWrite.AuthenticationFlows_ | 读取和写入你组织的身份验证流策略 | 允许应用在没有已登录用户的情况下读取和写入所有租户身份验证流策略。 | 是 |
 | _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 | 
 | _Policy.ReadWrite.ConsentRequest_ | 读取和写入组织的同意请求策略 | 允许应用在没有登录用户的情况下读取和写入你的组织的许可请求策略。 | 是 |
-| _Policy.ReadWrite.CrossTenantAccessPolicy_ | 读取和写入组织的跨租户访问策略 | 允许应用在没有已登录用户的情况下读取和写入组织的跨租户访问策略。 | 是 |
+| _Policy.ReadWrite.CrossTenantAccess_ | 读取和写入组织的跨租户访问策略 | 允许应用在没有已登录用户的情况下读取和写入组织的跨租户访问策略。 | 是 |
 | _Policy.ReadWrite.AuthenticationMethod_   | 读取和写入所有身份验证方法策略    | 允许应用在没有登录用户的情况下读取和写入所有租户身份验证方法策略。 | 是 |
-| _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 |
-| _Policy.ReadWrite.ConsentRequest_ | 读取和写入组织的同意请求策略 | 允许应用在没有登录用户的情况下读取和写入你的组织的许可请求策略。 | 是 |
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入功能推出策略 | 允许用户无需登录的用户即可读取和写入功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 |
 | _Policy.ReadWrite.PermissionGrant_ | 管理许可和权限授予策略 | 允许此应用在没有登录用户的情况下管理与适用于应用程序的许可和权限授予相关的策略。 | 是 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用无需登录的用户即可读取和写入你所在组织的信任框架策略。 | 是 |
@@ -1659,7 +1644,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 * _Policy.ReadWrite.AuthenticationFlows_：读取和写入你组织的身份验证流策略 (`PATCH /beta/policies/authenticationFlowsPolicy`)
 * _Policy.ReadWrite.AuthenticationMethod_: 使用此权限管理身份验证方法策略的设置，包括启用和禁用身份验证方法、允许用户和组使用这些方法，以及配置与用户可在租户中注册和使用的身份验证方法相关的其他设置。
 * _Policy.ReadWrite.ConditionalAccess_：读取和写入你组织的条件访问策略 (`POST /beta/identity/conditionalAccess/policies`)
-* _Policy.ReadWrite.CrossTenantAccessPolicy_：读取和写入组织的跨租户访问策略（`PATCH /beta/policies/crossTenantAccessPolicy`）
+* _Policy.ReadWrite.CrossTenantAccess_： 读取和写入组织的跨租户访问策略 （`PATCH /beta/policies/crossTenantAccessPolicy`）
 * _Policy.ReadWrite.FeatureRollout_：读取和写入你组织的功能推出策略 (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_：读取和写入你组织的信任框架策略 (`POST /beta/trustFramework/policies`)
 
@@ -1776,10 +1761,10 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 | _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据。 | 允许应用无需登录用户即可读取和管理公司目录基于角色的访问控制 (RBAC) 设置。这包括发送目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 |
 
 
-### <a name="remarks"></a>备注
+### <a name="remarks"></a>说明
 
 > [!CAUTION]
-> 允许授予授权的权限（如 _RoleManagement.ReadWrite.Directory_）允许应用程序向自身、其他应用程序或任何用户授予其他权限。 授予此类权限时要谨慎。
+> 允许授予授权的权限（如 _RoleManagement.ReadWrite.Directory_）允许应用程序授予自身、其他应用程序或任何用户的其他权限。在授予这些权限中的任何一项时，请小心。
 
 使用 _RoleManagement.Read.Directory_ 权限，应用程序可以读取 directoryRoles 和 directoryRoleTemplates。 这包括读取目录角色的成员身份信息。
 
@@ -1846,6 +1831,34 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 #### <a name="delegated"></a>委派
 
 * _ExternalItem.Read.All_：通过 [搜索 API](/graph/api/resources/search-api-overview) (`POST /search/query`) 访问外部数据。
+
+---
+
+## <a name="search-configuration-permissions"></a>搜索配置权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
+| _SearchConfiguration.Read.All_ | 读取组织的搜索配置 | 允许应用代表已登录用户读取搜索配置。 | 是 | 否 |
+| _SearchConfiguration.ReadWrite.All_ | 读取和写入组织的搜索配置 | 允许应用代表已登录用户读取和写入搜索配置。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SearchConfiguration.Read.All_ | 读取组织的搜索配置 | 允许应用在没有登录用户的情况下读取搜索配置。 | 是 | 
+| _SearchConfiguration.ReadWrite.All_ | 读取和写入组织的搜索配置 | 允许应用在没有登录用户的情况下读取和写入搜索配置。 | 是 | 
+
+
+### <a name="remarks"></a>说明
+搜索配置权限仅对工作或学校帐户有效。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated-and-application"></a>委派和应用程序
+
+- _SearchConfiguration.Read.All_： 读取为租户创建的所有书签的列表 （`GET /beta/search/bookmarks`）
+- _SearchConfiguration.ReadWrite.All_： 更新或读取为租户创建的所有书签 （`PATCH /beta/search/bookmarks/{id}`）
 
 ---
 
@@ -2418,7 +2431,7 @@ _任务_ 权限用于控制对待办事项任务和 Outlook 任务（已弃用�
 
 通过 _User.ReadWrite.All_ 应用程序权限，应用可更新工作或学校帐户的所有声明属性，但密码除外。
 
-在具有 _User.ReadWrite.All_ 委托或应用程序权限的情况下，如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails**，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 可用角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。
+使用 _User.ReadWrite.All_ 委派或应用程序权限，仅允许非管理员或分配了以下角色之一的用户更新其他用户的 **businessPhones**、 **mobilePhone** 或 **other邮件** ：目录读取者、来宾邀请者、 消息中心读取器和报表读取器。有关更多详细信息，请参阅支持人员（密码）管理员 [Azure AD可用角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
 要读取或写入工作或学校帐户的直接下属 (`directReports`) 或经理 (`manager`)，应用必须具有 _User.Read.All_（只读）或 _User.ReadWrite.All_。
 
@@ -2564,3 +2577,591 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 | 应用想要读取和写入所有 Microsoft 365 组中的全部内容（包括文件、对话）。它还需要显示组成员，能够更新组成员（若是所有者）。  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  读取和写入所有组、编辑或删除所有网站集中的项 |
 | 应用想要发现（找到）Microsoft 365 组。它允许用户搜索特定组，然后从枚举列表中选择一个组，从而允许用户加入组。   | _Group.ReadWrite.All_ | 读取和写入所有组|
 | 应用想要通过 AAD Graph 创建一个组 |   _Group.ReadWrite.All_ | 读取和写入所有组|
+
+
+## <a name="all-permissions-and-ids"></a>所有权限和 ID
+
+| 权限                                              | 类型        | ID                                   |
+|---------------------------------------------------------|-------------|--------------------------------------|
+| AccessReview.Read.All                                   | 应用程序 | d07a8cc0-3d51-4b77-b3b0-32704d1f69fa |
+| AccessReview.Read.All                                   | 委派   | ebfcd32b-babb-40f4-a14b-42706e83bd28 |
+| AccessReview.ReadWrite.All                              | 应用程序 | ef5f7d5c-338f-44b0-86c3-351f46c8bb5f |
+| AccessReview.ReadWrite.All                              | 委派   | e4aa47b9-9a69-4109-82ed-36ec70d85ff1 |
+| AccessReview.ReadWrite.Membership                       | 应用程序 | 18228521-a591-40f1-b215-5fad4488c117 |
+| AccessReview.ReadWrite.Membership                       | 委派   | 5af8c3f5-baca-439a-97b0-ea58a435e269 |
+| AdministrativeUnit.Read.All                             | 应用程序 | 134fd756-38ce-4afd-ba33-e9623dbe66c2 |
+| AdministrativeUnit.Read.All                             | 委派   | 3361d15d-be43-4de6-b441-3c746d05163d |
+| AdministrativeUnit.ReadWrite.All                        | 应用程序 | 5eb59dd3-1da2-4329-8733-9dabdc435916 |
+| AdministrativeUnit.ReadWrite.All                        | 委派   | 7b8a2d34-6b3f-4542-a343-54651608ad81 |
+| Agreement.Read.All                                      | 应用程序 | 2f3e6f8c-093b-4c57-a58b-ba5ce494a169 |
+| Agreement.Read.All                                      | 委派   | af2819c9-df71-4dd3-ade7-4d7c9dc653b7 |
+| Agreement.ReadWrite.All                                 | 应用程序 | c9090d00-6101-42f0-a729-c41074260d47 |
+| Agreement.ReadWrite.All                                 | 委派   | ef4b5d93-3104-4664-9053-a5c49ab44218 |
+| AgreementAcceptance.Read                                | 委派   | 0b7643bb-5336-476f-80b5-18fbfbc91806 |
+| AgreementAcceptance.Read.All                            | 应用程序 | d8e4ec18-f6c0-4620-8122-c8b1f2bf400e |
+| AgreementAcceptance.Read.All                            | 委派   | a66a5341-e66e-4897-9d52-c2df58c2bfb9 |
+| Analytics.Read                                          | 委派   | e03cf23f-8056-446a-8994-7d93dfc8b50e |
+| APIConnectors.Read.All                                  | 应用程序 | b86848a7-d5b1-41eb-a9b4-54a4e6306e97 |
+| APIConnectors.Read.All                                  | 委派   | 1b6ff35f-31df-4332-8571-d31ea5a4893f |
+| APIConnectors.ReadWrite.All                             | 应用程序 | 1dfe531a-24a6-4f1b-80f4-7a0dc5a0a171 |
+| APIConnectors.ReadWrite.All                             | 委派   | c67b52c5-7c69-48b6-9d48-7b3af3ded914 |
+| AppCatalog.Read.All                                     | 应用程序 | e12dae10-5a57-4817-b79d-dfbec5348930 |
+| AppCatalog.Read.All                                     | 委派   | 88e58d74-d3df-44f3-ad47-e89edf4472e4 |
+| AppCatalog.ReadWrite.All                                | 应用程序 | dc149144-f292-421e-b185-5953f2e98d7f |
+| AppCatalog.ReadWrite.All                                | 委派   | 1ca167d5-1655-44a1-8adf-1414072e1ef9 |
+| AppCatalog.Submit                                       | 委派   | 3db89e36-7fa6-4012-b281-85f3d9d9fd2e |
+| Application.Read.All                                    | 应用程序 | 9a5d68dd-52b0-4cc2-bd40-abcf44ac3a30 |
+| Application.Read.All                                    | 委派   | c79f8feb-a9db-4090-85f9-90d820caa0eb |
+| Application.ReadWrite.All                               | 应用程序 | 1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9 |
+| Application.ReadWrite.All                               | 委派   | bdfbf15f-ee85-4955-8675-146e8e5296b5 |
+| Application.ReadWrite.OwnedBy                           | 应用程序 | 18a4783c-866b-4cc7-a460-3d5e5662c884 |
+| AppRoleAssignment.ReadWrite.All                         | 应用程序 | 06b708a9-e830-4db3-a914-8e69da51d44f |
+| AppRoleAssignment.ReadWrite.All                         | 委派   | 84bccea3-f856-4a8a-967b-dbe0a3d53a64 |
+| Approval.Read.All                                       | 委派   | 1196552e-b226-4363-b01e-b8901fe10a11 |
+| Approval.ReadWrite.All                                  | 委派   | 1d3d0bc7-4b3a-427a-ae9f-6de4e1edc95f |
+| AuditLog.Read.All                                       | 应用程序 | b0afded3-3588-46d8-8b3d-9842eff778da |
+| AuditLog.Read.All                                       | 委派   | e4c9e354-4dc5-45b8-9e7c-e1393b0b1a20 |
+| BitlockerKey.Read.All                                   | 应用程序 | 57f1cf28-c0c4-4ec3-9a30-19a2eaaf2f6e |
+| BitlockerKey.Read.All                                   | 委派   | b27a61ec-b99c-4d6a-b126-c4375d08ae30 |
+| BitlockerKey.ReadBasic.All                              | 应用程序 | f690d423-6b29-4d04-98c6-694c42282419 |
+| BitlockerKey.ReadBasic.All                              | 委派   | 5a107bfc-4f00-4e1a-b67e-66451267bc68 |
+| Bookings.Manage.All                                     | 委派   | 7f36b48e-542f-4d3b-9bcb-8406f0ab9fdb |
+| Bookings.Read.All                                       | 委派   | 33b1df99-4b29-4548-9339-7a7b83eaeebc |
+| Bookings.ReadWrite.All                                  | 委派   | 948eb538-f19d-4ec5-9ccc-f059e1ea4c72 |
+| BookingsAppointment.ReadWrite.All                       | 委派   | 02a5a114-36a6-46ff-a102-954d89d9ab02 |
+| Calendars.Read                                          | 应用程序 | 798ee544-9d2d-430c-a058-570e29e34338 |
+| Calendars.Read                                          | 委派   | 465a38f9-76ea-45b9-9f34-9e8b0d4b0b42 |
+| Calendars.Read.Shared                                   | 委派   | 2b9c4092-424d-4249-948d-b43879977640 |
+| Calendars.ReadWrite                                     | 应用程序 | ef54d2bf-783f-4e0f-bca1-3210c0444d99 |
+| Calendars.ReadWrite                                     | 委派   | 1ec239c2-d7c9-4623-a91a-a9775856bb36 |
+| Calendars.ReadWrite.Shared                              | 委派   | 12466101-c9b8-439a-8589-dd09ee67e8e9 |
+| CallRecord-PstnCalls.Read.All                           | 应用程序 | a2611786-80b3-417e-adaa-707d4261a5f0 |
+| CallRecords.Read.All                                    | 应用程序 | 45bbb07e-7321-4fd7-a8f6-3ff27e6a81c8 |
+| Calls.AccessMedia.All                                   | 应用程序 | a7a681dc-756e-4909-b988-f160edc6655f |
+| Calls.Initiate.All                                      | 应用程序 | 284383ee-7f6e-4e40-a2a8-e85dcb029101 |
+| Calls.InitiateGroupCall.All                             | 应用程序 | 4c277553-8a09-487b-8023-29ee378d8324 |
+| Calls.JoinGroupCall.All                                 | 应用程序 | f6b49018-60ab-4f81-83bd-22caeabfed2d |
+| Calls.JoinGroupCallAsGuest.All                          | 应用程序 | fd7ccf6b-3d28-418b-9701-cd10f5cd2fd4 |
+| Channel.Create                                          | 应用程序 | f3a65bd4-b703-46df-8f7e-0174fea562aa |
+| Channel.Create                                          | 委派   | 101147cf-4178-4455-9d58-02b5c164e759 |
+| Channel.Delete.All                                      | 应用程序 | 6a118a39-1227-45d4-af0c-ea7b40d210bc |
+| Channel.Delete.All                                      | 委派   | cc83893a-e232-4723-b5af-bd0b01bcfe65 |
+| Channel.ReadBasic.All                                   | 应用程序 | 59a6b24b-4225-4393-8165-ebaec5f55d7a |
+| Channel.ReadBasic.All                                   | 委派   | 9d8982ae-4365-4f57-95e9-d6032a4c0b87 |
+| ChannelMember.Read.All                                  | 应用程序 | 3b55498e-47ec-484f-8136-9013221c06a9 |
+| ChannelMember.Read.All                                  | 委派   | 2eadaff8-0bce-4198-a6b9-2cfc35a30075 |
+| ChannelMember.ReadWrite.All                             | 应用程序 | 35930dcf-aceb-4bd1-b99a-8ffed403c974 |
+| ChannelMember.ReadWrite.All                             | 委派   | 0c3e411a-ce45-4cd1-8f30-f99a3efa7b11 |
+| ChannelMessage.Delete                                   | 委派   | 32ea53ac-4a89-4cde-bac4-727c6fb9ac29 |
+| ChannelMessage.Edit                                     | 委派   | 2b61aa8a-6d36-4b2f-ac7b-f29867937c53 |
+| ChannelMessage.Read.All                                 | 应用程序 | 7b2449af-6ccd-4f4d-9f78-e550c193f0d1 |
+| ChannelMessage.Read.All                                 | 委派   | 767156cb-16ae-4d10-8f8b-41b657c8c8c8 |
+| ChannelMessage.Send                                     | 委派   | ebf0f66e-9fb1-49e4-a278-222f76911cf4 |
+| ChannelMessage.UpdatePolicyViolation.All                | 应用程序 | 4d02b0cc-d90b-441f-8d82-4fb55c34d6bb |
+| ChannelSettings.Read.All                                | 应用程序 | c97b873f-f59f-49aa-8a0e-52b32d762124 |
+| ChannelSettings.Read.All                                | 委派   | 233e0cf1-dd62-48bc-b65b-b38fe87fcf8e |
+| ChannelSettings.ReadWrite.All                           | 应用程序 | 243cded2-bd16-4fd6-a953-ff8177894c3d |
+| ChannelSettings.ReadWrite.All                           | 委派   | d649fb7c-72b4-4eec-b2b4-b15acf79e378 |
+| Chat.Create                                             | 应用程序 | d9c48af6-9ad9-47ad-82c3-63757137b9af |
+| Chat.Create                                             | 委派   | 38826093-1258-4dea-98f0-00003be2b8d0 |
+| Chat.Read                                               | 委派   | f501c180-9344-439a-bca0-6cbf209fd270 |
+| Chat.Read.All                                           | 应用程序 | 6b7d71aa-70aa-4810-a8d9-5d9fb2830017 |
+| Chat.ReadBasic                                          | 委派   | 9547fcb5-d03f-419d-9948-5928bbf71b0f |
+| Chat.ReadBasic.All                                      | 应用程序 | b2e060da-3baf-4687-9611-f4ebc0f0cbde |
+| Chat.ReadWrite                                          | 委派   | 9ff7295e-131b-4d94-90e1-69fde507ac11 |
+| Chat.ReadWrite.All                                      | 应用程序 | 294ce7c9-31ba-490a-ad7d-97a7d075e4ed |
+| Chat.UpdatePolicyViolation.All                          | 应用程序 | 7e847308-e030-4183-9899-5235d7270f58 |
+| ChatMember.Read                                         | 委派   | c5a9e2b1-faf6-41d4-8875-d381aa549b24 |
+| ChatMember.Read.All                                     | 应用程序 | a3410be2-8e48-4f32-8454-c29a7465209d |
+| ChatMember.ReadWrite                                    | 委派   | dea13482-7ea6-488f-8b98-eb5bbecf033d |
+| ChatMember.ReadWrite.All                                | 应用程序 | 57257249-34ce-4810-a8a2-a03adf0c5693 |
+| ChatMessage.Read                                        | 委派   | cdcdac3a-fd45-410d-83ef-554db620e5c7 |
+| ChatMessage.Read.All                                    | 应用程序 | b9bb2381-47a4-46cd-aafb-00cb12f68504 |
+| ChatMessage.Send                                        | 委派   | 116b7235-7cc6-461e-b163-8e55691d839e |
+| CloudPC.Read.All                                        | 应用程序 | a9e09520-8ed4-4cde-838e-4fdea192c227 |
+| CloudPC.Read.All                                        | 委派   | 5252ec4e-fd40-4d92-8c68-89dd1d3c6110 |
+| CloudPC.ReadWrite.All                                   | 应用程序 | 3b4349e1-8cf5-45a3-95b7-69d1751d3e6a |
+| CloudPC.ReadWrite.All                                   | 委派   | 9d77138f-f0e2-47ba-ab33-cd246c8b79d1 |
+| ConsentRequest.Read.All                                 | 应用程序 | 1260ad83-98fb-4785-abbb-d6cc1806fd41 |
+| ConsentRequest.Read.All                                 | 委派   | f3bfad56-966e-4590-a536-82ecf548ac1e |
+| ConsentRequest.ReadWrite.All                            | 应用程序 | 9f1b81a7-0223-4428-bfa4-0bcb5535f27d |
+| ConsentRequest.ReadWrite.All                            | 委派   | 497d9dfa-3bd1-481a-baab-90895e54568c |
+| Contacts.Read                                           | 应用程序 | 089fe4d0-434a-44c5-8827-41ba8a0b17f5 |
+| Contacts.Read                                           | 委派   | ff74d97f-43af-4b68-9f2a-b77ee6968c5d |
+| Contacts.Read.Shared                                    | 委派   | 242b9d9e-ed24-4d09-9a52-f43769beb9d4 |
+| Contacts.ReadWrite                                      | 应用程序 | 6918b873-d17a-4dc1-b314-35f528134491 |
+| Contacts.ReadWrite                                      | 委派   | d56682ec-c09e-4743-aaf4-1a3aac4caa21 |
+| Contacts.ReadWrite.Shared                               | 委派   | afb6c84b-06be-49af-80bb-8f3f77004eab |
+| CrossTenantInformation.ReadBasic.All                    | 应用程序 | cac88765-0581-4025-9725-5ebc13f729ee |
+| CrossTenantInformation.ReadBasic.All                    | 委派   | 81594d25-e88e-49cf-ac8c-fecbff49f994 |
+| CrossTenantUserProfileSharing.Read                      | 委派   | cb1ba48f-d22b-4325-a07f-74135a62ee41 |
+| CrossTenantUserProfileSharing.Read.All                  | 应用程序 | 8b919d44-6192-4f3d-8a3b-f86f8069ae3c |
+| CrossTenantUserProfileSharing.Read.All                  | 委派   | 759dcd16-3c90-463c-937e-abf89f991c18 |
+| CrossTenantUserProfileSharing.ReadWrite                 | 委派   | eed0129d-dc60-4f30-8641-daf337a39ffd |
+| CrossTenantUserProfileSharing.ReadWrite.All             | 应用程序 | 306785c5-c09b-4ba0-a4ee-023f3da165cb |
+| CrossTenantUserProfileSharing.ReadWrite.All             | 委派   | 64dfa325-cbf8-48e3-938d-51224a0cac01 |
+| CustomSecAttributeAssignment.Read.All                   | 应用程序 | 3b37c5a4-1226-493d-bec3-5d6c6b866f3f |
+| CustomSecAttributeAssignment.Read.All                   | 委派   | b46ffa80-fe3d-4822-9a1a-c200932d54d0 |
+| CustomSecAttributeAssignment.ReadWrite.All              | 应用程序 | de89b5e4-5b8f-48eb-8925-29c2b33bd8bd |
+| CustomSecAttributeAssignment.ReadWrite.All              | 委派   | ca46335e-8453-47cd-a001-8459884efeae |
+| CustomSecAttributeDefinition.Read.All                   | 应用程序 | b185aa14-d8d2-42c1-a685-0f5596613624 |
+| CustomSecAttributeDefinition.Read.All                   | 委派   | ce026878-a0ff-4745-a728-d4fedd086c07 |
+| CustomSecAttributeDefinition.ReadWrite.All              | 应用程序 | 12338004-21f4-4896-bf5e-b75dfaf1016d |
+| CustomSecAttributeDefinition.ReadWrite.All              | 委派   | 8b0160d4-5743-482b-bb27-efc0a485ca4a |
+| DelegatedAdminRelationship.Read.All                     | 应用程序 | f6e9e124-4586-492f-adc0-c6f96e4823fd |
+| DelegatedAdminRelationship.Read.All                     | 委派   | 0c0064ea-477b-4130-82a5-4c2cc4ff68aa |
+| DelegatedAdminRelationship.ReadWrite.All                | 应用程序 | cc13eba4-8cd8-44c6-b4d4-f93237adce58 |
+| DelegatedAdminRelationship.ReadWrite.All                | 委派   | 885f682f-a990-4bad-a642-36736a74b0c7 |
+| DelegatedPermissionGrant.ReadWrite.All                  | 应用程序 | 8e8e4742-1d95-4f68-9d56-6ee75648c72a |
+| DelegatedPermissionGrant.ReadWrite.All                  | 委派   | 41ce6ca6-6826-4807-84f1-1c82854f7ee5 |
+| Device.Command                                          | 委派   | bac3b9c2-b516-4ef4-bd3b-c2ef73d8d804 |
+| Device.Read                                             | 委派   | 11d4cd79-5ba5-460f-803f-e22c8ab85ccd |
+| Device.Read.All                                         | 应用程序 | 7438b122-aefc-4978-80ed-43db9fcc7715 |
+| Device.Read.All                                         | 委派   | 951183d1-1a61-466f-a6d1-1fde911bfd95 |
+| Device.ReadWrite.All                                    | 应用程序 | 1138cb37-bd11-4084-a2b7-9f71582aeddb |
+| DeviceManagementApps.Read.All                           | 应用程序 | 7a6ee1e7-141e-4cec-ae74-d9db155731ff |
+| DeviceManagementApps.Read.All                           | 委派   | 4edf5f54-4666-44af-9de9-0144fb4b6e8c |
+| DeviceManagementApps.ReadWrite.All                      | 应用程序 | 78145de6-330d-4800-a6ce-494ff2d33d07 |
+| DeviceManagementApps.ReadWrite.All                      | 委派   | 7b3f05d5-f68c-4b8d-8c59-a2ecd12f24af |
+| DeviceManagementConfiguration.Read.All                  | 应用程序 | dc377aa6-52d8-4e23-b271-2a7ae04cedf3 |
+| DeviceManagementConfiguration.Read.All                  | 委派   | f1493658-876a-4c87-8fa7-edb559b3476a |
+| DeviceManagementConfiguration.ReadWrite.All             | 应用程序 | 9241abd9-d0e6-425a-bd4f-47ba86e767a4 |
+| DeviceManagementConfiguration.ReadWrite.All             | 委派   | 0883f392-0a7a-443d-8c76-16a6d39c7b63 |
+| DeviceManagementManagedDevices.PrivilegedOperations.All | 应用程序 | 5b07b0dd-2377-4e44-a38d-703f09a0dc3c |
+| DeviceManagementManagedDevices.PrivilegedOperations.All | 委派   | 3404d2bf-2b13-457e-a330-c24615765193 |
+| DeviceManagementManagedDevices.Read.All                 | 应用程序 | 2f51be20-0bb4-4fed-bf7b-db946066c75e |
+| DeviceManagementManagedDevices.Read.All                 | 委派   | 314874da-47d6-4978-88dc-cf0d37f0bb82 |
+| DeviceManagementManagedDevices.ReadWrite.All            | 应用程序 | 243333ab-4d21-40cb-a475-36241daa0842 |
+| DeviceManagementManagedDevices.ReadWrite.All            | 委派   | 44642bfe-8385-4adc-8fc6-fe3cb2c375c3 |
+| DeviceManagementRBAC.Read.All                           | 应用程序 | 58ca0d9a-1575-47e1-a3cb-007ef2e4583b |
+| DeviceManagementRBAC.Read.All                           | 委派   | 49f0cc30-024c-4dfd-ab3e-82e137ee5431 |
+| DeviceManagementRBAC.ReadWrite.All                      | 应用程序 | e330c4f0-4170-414e-a55a-2f022ec2b57b |
+| DeviceManagementRBAC.ReadWrite.All                      | 委派   | 0c5e8a55-87a6-4556-93ab-adc52c4d862d |
+| DeviceManagementServiceConfig.Read.All                  | 应用程序 | 06a5fe6d-c49d-46a7-b082-56b1b14103c7 |
+| DeviceManagementServiceConfig.Read.All                  | 委派   | 8696daa5-bce5-4b2e-83f9-51b6defc4e1e |
+| DeviceManagementServiceConfig.ReadWrite.All             | 应用程序 | 5ac13192-7ace-4fcf-b828-1a26f28068ee |
+| DeviceManagementServiceConfig.ReadWrite.All             | 委派   | 662ed50a-ac44-4eef-ad86-62eed9be2a29 |
+| Directory.AccessAsUser.All                              | 委派   | 0e263e50-5827-48a4-b97c-d940288653c7 |
+| Directory.Read.All                                      | 应用程序 | 7ab1d382-f21e-4acd-a863-ba3e13f7da61 |
+| Directory.Read.All                                      | 委派   | 06da0dbc-49e2-44d2-8312-53f166ab848a |
+| Directory.ReadWrite.All                                 | 应用程序 | 19dbc75e-c2e2-444c-a770-ec69d8559fc7 |
+| Directory.ReadWrite.All                                 | 委派   | c5366453-9fb0-48a5-a156-24f0c49a4b84 |
+| Directory.Write.Restricted                              | 应用程序 | f20584af-9290-4153-9280-ff8bb2c0ea7f |
+| Directory.Write.Restricted                              | 委派   | cba5390f-ed6a-4b7f-b657-0efc2210ed20 |
+| DirectoryRecommendations.Read.All                       | 应用程序 | ae73097b-cb2a-4447-b064-5d80f6093921 |
+| DirectoryRecommendations.Read.All                       | 委派   | 34d3bd24-f6a6-468c-b67c-0c365c1d6410 |
+| DirectoryRecommendations.ReadWrite.All                  | 应用程序 | 0e9eea12-4f01-45f6-9b8d-3ea4c8144158 |
+| DirectoryRecommendations.ReadWrite.All                  | 委派   | f37235e8-90a0-4189-93e2-e55b53867ccd |
+| Domain.Read.All                                         | 应用程序 | dbb9058a-0e50-45d7-ae91-66909b5d4664 |
+| Domain.Read.All                                         | 委派   | 2f9ee017-59c1-4f1d-9472-bd5529a7b311 |
+| Domain.ReadWrite.All                                    | 应用程序 | 7e05723c-0bb0-42da-be95-ae9f08a6e53c |
+| Domain.ReadWrite.All                                    | 委派   | 0b5d694c-a244-4bde-86e6-eb5cd07730fe |
+| EAS.AccessAsUser.All                                    | 委派   | ff91d191-45a0-43fd-b837-bd682c4a0b0f |
+| eDiscovery.Read.All                                     | 应用程序 | 50180013-6191-4d1e-a373-e590ff4e66af |
+| eDiscovery.Read.All                                     | 委派   | 99201db3-7652-4d5a-809a-bdb94f85fe3c |
+| eDiscovery.ReadWrite.All                                | 应用程序 | b2620db1-3bf7-4c5b-9cb9-576d29eac736 |
+| eDiscovery.ReadWrite.All                                | 委派   | acb8f680-0834-4146-b69e-4ab1b39745ad |
+| EduAdministration.Read                                  | 委派   | 8523895c-6081-45bf-8a5d-f062a2f12c9f |
+| EduAdministration.Read.All                              | 应用程序 | 7c9db06a-ec2d-4e7b-a592-5a1e30992566 |
+| EduAdministration.ReadWrite                             | 委派   | 63589852-04e3-46b4-bae9-15d5b1050748 |
+| EduAdministration.ReadWrite.All                         | 应用程序 | 9bc431c3-b8bc-4a8d-a219-40f10f92eff6 |
+| EduAssignments.Read                                     | 委派   | 091460c9-9c4a-49b2-81ef-1f3d852acce2 |
+| EduAssignments.Read.All                                 | 应用程序 | 4c37e1b6-35a1-43bf-926a-6f30f2cdf585 |
+| EduAssignments.ReadBasic                                | 委派   | c0b0103b-c053-4b2e-9973-9f3a544ec9b8 |
+| EduAssignments.ReadBasic.All                            | 应用程序 | 6e0a958b-b7fc-4348-b7c4-a6ab9fd3dd0e |
+| EduAssignments.ReadWrite                                | 委派   | 2f233e90-164b-4501-8bce-31af2559a2d3 |
+| EduAssignments.ReadWrite.All                            | 应用程序 | 0d22204b-6cad-4dd0-8362-3e3f2ae699d9 |
+| EduAssignments.ReadWriteBasic                           | 委派   | 2ef770a1-622a-47c4-93ee-28d6adbed3a0 |
+| EduAssignments.ReadWriteBasic.All                       | 应用程序 | f431cc63-a2de-48c4-8054-a34bc093af84 |
+| EduRoster.Read                                          | 委派   | a4389601-22d9-4096-ac18-36a927199112 |
+| EduRoster.Read.All                                      | 应用程序 | e0ac9e1b-cb65-4fc5-87c5-1a8bc181f648 |
+| EduRoster.ReadBasic                                     | 委派   | 5d186531-d1bf-4f07-8cea-7c42119e1bd9 |
+| EduRoster.ReadBasic.All                                 | 应用程序 | 0d412a8c-a06c-439f-b3ec-8 abcf54d2f96 |
+| EduRoster.ReadWrite                                     | 委派   | 359e19a6-e3fa-4d7f-bcab-d28ec592b51e |
+| EduRoster.ReadWrite.All                                 | 应用程序 | d1808e82-ce13-47af-ae0d-f9b254e6d58a |
+| 电子邮件                                                   | 委派   | 64a6cdd6-aab1-4aaf-94b8-3cc8405e90d0 |
+| EntitlementManagement.Read.All                          | 应用程序 | c74fd47d-ed3c-45c3-9a9e-b8676de685d2 |
+| EntitlementManagement.Read.All                          | 委派   | 5449aa12-1393-4ea2-a7c7-d0e06c1a56b2 |
+| EntitlementManagement.ReadWrite.All                     | 应用程序 | 9acd699f-1e81-4958-b001-93b1d2506e19 |
+| EntitlementManagement.ReadWrite.All                     | 委派   | ae7a573d-81d7-432b-ad44-4ed5c9d89038 |
+| EWS.AccessAsUser.All                                    | 委派   | 9769c687-087d-48ac-9cb3-c37dde652038 |
+| ExternalConnection.Read.All                             | 应用程序 | 1914711b-a1cb-4793-b019-c2ce0ed21b8c |
+| ExternalConnection.Read.All                             | 委派   | a38267a5-26b6-4d76-9493-935b7599116b |
+| ExternalConnection.ReadWrite.All                        | 应用程序 | 34c37bc0-2b40-4d5e-85e1-2365cd256d79 |
+| ExternalConnection.ReadWrite.All                        | 委派   | bbbbd9b3-3566-4931-ac37-2b2180d9e334 |
+| ExternalConnection.ReadWrite.OwnedBy                    | 应用程序 | f431331c-49a6-499f-be1c-62af19c34a9d |
+| ExternalConnection.ReadWrite.OwnedBy                    | 委派   | 4082ad95-c812-4f02-be92-780c4c4f1830 |
+| ExternalItem.Read.All                                   | 应用程序 | 7a7cffad-37d2-4f48-afa4-c6ab129adcc2 |
+| ExternalItem.Read.All                                   | 委派   | 922f9392-b1b7-483c-a4be-0089be7704fb |
+| ExternalItem.ReadWrite.All                              | 应用程序 | 38c3d6ee-69ee-422f-b954-e17819665354 |
+| ExternalItem.ReadWrite.All                              | 委派   | b02c54f8-eb48-4c50-a9f0-a149e5a2012f |
+| ExternalItem.ReadWrite.OwnedBy                          | 应用程序 | 8116ae0f-55c2-452d-9944-d18420f5b2c8 |
+| ExternalItem.ReadWrite.OwnedBy                          | 委派   | 4367b9d7-cee7-4995-853c-a0bdfe95c1f9 |
+| Family.Read                                             | 委派   | 3a1e4806-a744-4c70-80fc-223bf8582c46 |
+| Files.Read                                              | 委派   | 10465720-29dd-4523-a11a-6a75c743c9d9 |
+| Files.Read.All                                          | 应用程序 | 01d4889c-1287-42c6-ac1f-5d1e02578ef6 |
+| Files.Read.All                                          | 委派   | df85f4d6-205c-4ac5-a5ea-6bf408dba283 |
+| Files.Read.Selected                                     | 委派   | 5447fe39-cb82-4c1a-b977-520e67e724eb |
+| Files.ReadWrite                                         | 委派   | 5c28f0bf-8a70-41f1-8ab2-9032436ddb65 |
+| Files.ReadWrite.All                                     | 应用程序 | 75359482-378d-4052-8f01-80520e7db3cd |
+| Files.ReadWrite.All                                     | 委派   | 863451e7-0667-486c-a5d6-d135439485f0 |
+| Files.ReadWrite.AppFolder                               | 委派   | 8019c312-3263-48e6-825e-2b833497195b |
+| Files.ReadWrite.Selected                                | 委派   | 17dde5bd-8c17-420f-a486-969730c1b827 |
+| Financials.ReadWrite.All                                | 委派   | f534bf13-55d4-45a9-8f3c-c92fe64d6131 |
+| Group.Create                                            | 应用程序 | bf7b1a76-6e77-406b-b258-bf5c7720e98f |
+| Group.Read.All                                          | 应用程序 | 5b567255-7703-4780-807c-7be8301ae99b |
+| Group.Read.All                                          | 委派   | 5f8c59db-677d-491f-a6b8-5f174b11ec1d |
+| Group.ReadWrite.All                                     | 应用程序 | 62a82d76-70ea-41e2-9197-370581804d09 |
+| Group.ReadWrite.All                                     | 委派   | 4e46008b-f24c-477d-8fff-7bb4ec7aafe0 |
+| GroupMember.Read.All                                    | 应用程序 | 98830695-27a2-44f7-8c18-0c3ebc9698f6 |
+| GroupMember.Read.All                                    | 委派   | bc024368-1153-4739-b217-4326f2e966d0 |
+| GroupMember.ReadWrite.All                               | 应用程序 | dbaae8cf-10b5-4b86-a4a1-f871c94c6695 |
+| GroupMember.ReadWrite.All                               | 委派   | f81125ac-d3b7-4573-a3b2-7099cc39df9e |
+| IdentityProvider.Read.All                               | 应用程序 | e321f0bb-e7f7-481e-bb28-e3b0b32d4bd0 |
+| IdentityProvider.Read.All                               | 委派   | 43781733-b5a7-4d1b-98f4-e8edff23e1a9 |
+| IdentityProvider.ReadWrite.All                          | 应用程序 | 90db2b9a-d928-4d33-a4dd-8442ae3d41e4 |
+| IdentityProvider.ReadWrite.All                          | 委派   | f13ce604-1677-429f-90bd-8a10b9f01325 |
+| IdentityRiskEvent.Read.All                              | 应用程序 | 6e472fd1-ad78-48da-a0f0-97ab2c6b769e |
+| IdentityRiskEvent.Read.All                              | 委派   | 8f6a01e7-0391-4ee5-aa22-a3af122cef27 |
+| IdentityRiskEvent.ReadWrite.All                         | 应用程序 | db06fb33-1953-4b7b-a2ac-f1e2c854f7ae |
+| IdentityRiskEvent.ReadWrite.All                         | 委派   | 9e4862a5-b68f-479e-848a-4e07e25c9916 |
+| IdentityRiskyServicePrincipal.Read.All                  | 应用程序 | 607c7344-0eed-41e5-823a-9695ebe1b7b0 |
+| IdentityRiskyServicePrincipal.Read.All                  | 委派   | ea5c4ab0-5a73-4f35-8272-5d5337884e5d |
+| IdentityRiskyServicePrincipal.ReadWrite.All             | 应用程序 | cb8d6980-6bcb-4507-afec-ed6de3a2d798 |
+| IdentityRiskyServicePrincipal.ReadWrite.All             | 委派   | bb6f654c-d7fd-4ae3-85c3-fc380934f515 |
+| IdentityRiskyUser.Read.All                              | 应用程序 | dc5007c0-2d7d-4c42-879c-2dab87571379 |
+| IdentityRiskyUser.Read.All                              | 委派   | d04bb851-cb7c-4146-97c7-ca3e71baf56c |
+| IdentityRiskyUser.ReadWrite.All                         | 应用程序 | 656f6061-f9fe-4807-9708-6a2e0934df76 |
+| IdentityRiskyUser.ReadWrite.All                         | 委派   | e0a7cdbb-08b0-4697-8264-0069786e9674 |
+| IdentityUserFlow.Read.All                               | 应用程序 | 1b0c317f-dd31-4305-9932-259a8b6e8099 |
+| IdentityUserFlow.Read.All                               | 委派   | 2903d63d-4611-4d43-99ce-a33f3f52e343 |
+| IdentityUserFlow.ReadWrite.All                          | 应用程序 | 65319a09-a2be-469d-8782-f6b07debf789 |
+| IdentityUserFlow.ReadWrite.All                          | 委派   | 281892cc-4dbf-4e3a-b6cc-b21029bb4e82 |
+| IMAP.AccessAsUser.All                                   | 委派   | 652390e4-393a-48de-9484-05f9b1212954 |
+| InformationProtectionPolicy.Read                        | 委派   | 4ad84827-5578-4e18-ad7a-86530b12f884 |
+| InformationProtectionPolicy.Read.All                    | 应用程序 | 19da66cb-0fb0-4390-b071-ebc76a349482 |
+| Mail.Read                                               | 应用程序 | 810c84a8-4a9e-49e6-bf7d-12d183f40d01 |
+| Mail.Read                                               | 委派   | 570282fd-fa5c-430d-a7fd-fc8dc98a9dca |
+| Mail.Read.Shared                                        | 委派   | 7b9103a5-4610-446b-9670-80643382c1fa |
+| Mail.ReadBasic                                          | 应用程序 | 6be147d2-ea4f-4b5a-a3fa-3eab6f3c140a |
+| Mail.ReadBasic                                          | 委派   | a4b8392a-d8d1-4954-a029-8e668a39a170 |
+| Mail.ReadBasic.All                                      | 应用程序 | 693c5e45-0940-467d-9b8a-1022fb9d42ef |
+| Mail.ReadWrite                                          | 应用程序 | e2a3a72e-5f79-4c64-b1b1-878b674786c9 |
+| Mail.ReadWrite                                          | 委派   | 024d486e-b451-40bb-833d-3e66d98c5c73 |
+| Mail.ReadWrite.Shared                                   | 委派   | 5df07973-7d5d-46ed-9847-1271055cbd51 |
+| Mail.Send                                               | 应用程序 | b633e1c5-b582-4048-a93e-9f11b44c7e96 |
+| Mail.Send                                               | 委派   | e383f46e-2787-4529-855e-0e479a3ffac0 |
+| Mail.Send.Shared                                        | 委派   | a367ab51-6b49-43bf-a716-a1fb06d2a174 |
+| MailboxSettings.Read                                    | 应用程序 | 40f97065-369a-49f4-947c-6a255697ae91 |
+| MailboxSettings.Read                                    | 委派   | 87f447af-9fa4-4c32-9dfa-4a57a73d18ce |
+| MailboxSettings.ReadWrite                               | 应用程序 | 6931bccd-447a-43d1-b442-00a195474933 |
+| MailboxSettings.ReadWrite                               | 委派   | 818c620a-27a9-40bd-a6a5-d96f7d610b4b |
+| ManagedTenants.Read.All                                 | 委派   | dc34164e-6c4a-41a0-be89-3ae2fbad7cd3 |
+| ManagedTenants.ReadWrite.All                            | 委派   | b31fa710-c9b3-4d9e-8f5e-8036eecddab9 |
+| Member.Read.Hidden                                      | 应用程序 | 658aa5d8-239f-45c4-aa12-864f4fc7e490 |
+| Member.Read.Hidden                                      | 委派   | f6a3db3e-f7e8-4ed2-a414-557c8c9830be |
+| Notes.Create                                            | 委派   | 9d822255-d64d-4b7a-afdb-833b9a97ed02 |
+| Notes.Read                                              | 委派   | 371361e4-b9e2-4a3f-8315-2a301a3b0a3d |
+| Notes.Read.All                                          | 应用程序 | 3aeca27b-ee3a-4c2b-8ded-80376e2134a4 |
+| Notes.Read.All                                          | 委派   | dfabfca6-ee36-4db2-8208-7a28381419b3 |
+| Notes.ReadWrite                                         | 委派   | 615e26af-c38a-4150-ae3e-c3b0d4cb1d6a |
+| Notes.ReadWrite.All                                     | 应用程序 | 0c458cef-11f3-48c2-a568-c66751c238c0 |
+| Notes.ReadWrite.All                                     | 委派   | 64ac0503-b4fa-45d9-b544-71a463f05da0 |
+| Notes.ReadWrite.CreatedByApp                            | 委派   | ed68249d-017c-4df5-9113-e684c7f8760b |
+| Notifications.ReadWrite.CreatedByApp                    | 委派   | 89497502-6e42-46a2-8cb2-427fd3df970a |
+| offline_access                                          | 委派   | 7427e0e9-2fba-42fe-b0c0-848c9e6a8182 |
+| OnlineMeetingArtifact.Read.All                          | 应用程序 | df01ed3b-eb61-4eca-9965-6b3d789751b2 |
+| OnlineMeetingArtifact.Read.All                          | 委派   | 110e5abb-a10c-4b59-8b55-9b4daa4ef743 |
+| OnlineMeetings.Read                                     | 委派   | 9be106e1-f4e3-4df5-bdff-e4bc531cbe43 |
+| OnlineMeetings.Read.All                                 | 应用程序 | c1684f21-1984-47fa-9d61-2dc8c296bb70 |
+| OnlineMeetings.ReadWrite                                | 委派   | a65f2972-a4f8-4f5e-afd7-69ccb046d5dc |
+| OnlineMeetings.ReadWrite.All                            | 应用程序 | b8bb2037-6e08-44ac-a4ea-4674e010e2a4 |
+| OnPremisesPublishingProfiles.ReadWrite.All              | 应用程序 | 0b57845e-aa49-4e6f-8109-ce654fffa618 |
+| OnPremisesPublishingProfiles.ReadWrite.All              | 委派   | 8c4d5184-71c2-4bf8-bb9d-bc3378c9ad42 |
+| openid                                                  | 委派   | 37f7f235-527c-4136-accd-4a02d197296e |
+| Organization.Read.All                                   | 应用程序 | 498476ce-e0fe-48b0-b801-37ba7e2685c6 |
+| Organization.Read.All                                   | 委派   | 4908d5b9-3fb2-4b1e-9336-1888b7937185 |
+| Organization.ReadWrite.All                              | 应用程序 | 292d869f-3427-49a8-9dab-8c70152b74e9 |
+| Organization.ReadWrite.All                              | 委派   | 46ca0847-7e6b-426e-9775-ea810a948356 |
+| OrgContact.Read.All                                     | 应用程序 | e1a88a34-94c4-4418-be12-c87b00e26bea |
+| OrgContact.Read.All                                     | 委派   | 08432d1b-5911-483c-86df-7980af5cdee0 |
+| People.Read                                             | 委派   | ba47897c-39ec-4d83-8086-ee8256fa737d |
+| People.Read.All                                         | 应用程序 | b528084d-ad10-4598-8b93-929746b4d7d6 |
+| People.Read.All                                         | 委派   | b89f9189-71a5-4e70-b041-9887f0bc7e4a |
+| Place.Read                                              | 委派   | 40f6bacc-b201-40da-90a5-09775cc4a863 |
+| Place.Read.All                                          | 应用程序 | 913b9306-0ce1-42b8-9137-6a7df690a760 |
+| Place.Read.All                                          | 委派   | cb8f45a0-5c2e-4ea1-b803-84b870a7d7ec |
+| Place.Read.Shared                                       | 委派   | 0b3f56bc-fecd-4036-8930-660fc672e342 |
+| Place.ReadWrite                                         | 委派   | 012ba4a5-ca82-4a76-95ba-6c27f44364c3 |
+| Place.ReadWrite.All                                     | 委派   | 4c06a06a-098a-4063-868e-5dfee3827264 |
+| Policy.Read.All                                         | 应用程序 | 246dd0d5-5bd0-4def-940b-0421030a5b68 |
+| Policy.Read.All                                         | 委派   | 572fea84-0151-49b2-9301-11cb16974376 |
+| Policy.Read.ConditionalAccess                           | 应用程序 | 37730810-e9ba-4e46-b07e-8ca78d182097 |
+| Policy.Read.ConditionalAccess                           | 委派   | 633e0fce-8c58-4cfb-9495-12bbd5a24f7c |
+| Policy.Read.PermissionGrant                             | 应用程序 | 9e640839-a198-48fb-8b9a-013fd6f6cbcd |
+| Policy.Read.PermissionGrant                             | 委派   | 414de6ea-2d92-462f-b120-6e2a809a6d01 |
+| Policy.ReadWrite.ApplicationConfiguration               | 应用程序 | be74164b-cff1-491c-8741-e671cb536e13 |
+| Policy.ReadWrite.ApplicationConfiguration               | 委派   | b27add92-efb2-4f16-84f5-8108ba77985c |
+| Policy.ReadWrite.AuthenticationFlows                    | 应用程序 | 25f85f3c-f66c-4205-8cd5-de92dd7f0cec |
+| Policy.ReadWrite.AuthenticationFlows                    | 委派   | edb72de9-4252-4d03-a925-451deef99db7 |
+| Policy.ReadWrite.AuthenticationMethod                   | 应用程序 | 29c18626-4985-4dcd-85c0-193eef327366 |
+| Policy.ReadWrite.AuthenticationMethod                   | 委派   | 7e823077-d88e-468f-a337-e18f1f0e6c7c |
+| Policy.ReadWrite.Authorization                          | 应用程序 | fb221be6-99f2-473f-bd32-01c6a0e9ca3b |
+| Policy.ReadWrite.Authorization                          | 委派   | edd3c878-b384-41fd-95ad-e7407dd775be |
+| Policy.ReadWrite.ConditionalAccess                      | 应用程序 | 01c0a623-fc9b-48e9-b794-0756f8e8f067 |
+| Policy.ReadWrite.ConditionalAccess                      | 委派   | ad902697-1014-4ef5-81ef-2b4301988e8c |
+| Policy.ReadWrite.ConsentRequest                         | 应用程序 | 999f8c63-0a38-4f1b-91fd-ed1947bdd1a9 |
+| Policy.ReadWrite.ConsentRequest                         | 委派   | 4d135e65-66b8-41a8-9f8b-081452c91774 |
+| Policy.ReadWrite.CrossTenantAccess                      | 应用程序 | 338163d7-f101-4c92-94ba-ca46fe52447c |
+| Policy.ReadWrite.CrossTenantAccess                      | 委派   | 014b43d0-6ed4-4fc6-84dc-4b6f7bae7d85 |
+| Policy.ReadWrite.DeviceConfiguration                    | 委派   | 40b534c3-9552-4550-901b-23879c90bcf9 |
+| Policy.ReadWrite.FeatureRollout                         | 应用程序 | 2044e4f1-e56c-435b-925c-44cd8f6ba89a |
+| Policy.ReadWrite.FeatureRollout                         | 委派   | 92a38652-f13b-4875-bc77-6e1dbb63e1b2 |
+| Policy.ReadWrite.MobilityManagement                     | 委派   | a8ead177-1889-4546-9387-f25e658e2a79 |
+| Policy.ReadWrite.PermissionGrant                        | 应用程序 | a402ca1c-2696-4531-972d-6e5ee4aa11ea |
+| Policy.ReadWrite.PermissionGrant                        | 委派   | 2672f8bb-fd5e-42e0-85e1-ec764dd2614e |
+| Policy.ReadWrite.TrustFramework                         | 应用程序 | 79a677f7-b79d-40d0-a36a-3e6f8688dd7a |
+| Policy.ReadWrite.TrustFramework                         | 委派   | cefba324-1a70-4a6e-9c1d-fd670b7ae392 |
+| POP.AccessAsUser.All                                    | 委派   | d7b7f2d9-0f45-4ea1-9d42-e50810c06991 |
+| Presence.Read                                           | 委派   | 76bc735e-aecd-4a1d-8b4c-2b915deabb79 |
+| Presence.Read.All                                       | 委派   | 9c7a330d-35b3-4aa1-963d-cb2b9f927841 |
+| Presence.ReadWrite                                      | 委派   | 8d3c54a7-cf58-4773-bf81-c0cd6ad522bb |
+| Presence.ReadWrite.All                                  | 应用程序 | 83cded22-8297-4ff6-a7fa-e97e9545a259 |
+| PrintConnector.Read.All                                 | 委派   | d69c2d6d-4f72-4f99-a6b9-663e32f8cf68 |
+| PrintConnector.ReadWrite.All                            | 委派   | 79ef9967-7d59-4213-9c64-4b10687637d8 |
+| Printer.Create                                          | 委派   | 90c30bed-6fd1-4279-bf39-714069619721 |
+| Printer.FullControl.All                                 | 委派   | 93dae4bd-43a1-4a23-9a1a-92957e1d9121 |
+| Printer.Read.All                                        | 应用程序 | 9709bb33-4549-49d4-8ed9-a8f65e45bb0f |
+| Printer.Read.All                                        | 委派   | 3a736c8a-018e-460a-b60c-863b2683e8bf |
+| Printer.ReadWrite.All                                   | 应用程序 | f5b3f73d-6247-44df-a74c-866173fddab0 |
+| Printer.ReadWrite.All                                   | 委派   | 89f66824-725f-4b8f-928e-e1c5258dc565 |
+| PrinterShare.Read.All                                   | 委派   | ed11134d-2f3f-440d-a2e1-411efada2502 |
+| PrinterShare.ReadBasic.All                              | 委派   | 5fa075e9-b951-4165-947b-c63396ff0a37 |
+| PrinterShare.ReadWrite.All                              | 委派   | 06ceea37-85e2-40d7-bec3-91337a46038f |
+| PrintJob.Create                                         | 委派   | 21f0d9c0-9f13-48b3-94e0-b6b231c7d320 |
+| PrintJob.Manage.All                                     | 应用程序 | 58a52f47-9e36-4b17-9ebe-ce4ef7f3e6c8 |
+| PrintJob.Read                                           | 委派   | 248f5528-65c0-4c88-8326-876c7236df5e |
+| PrintJob.Read.All                                       | 应用程序 | ac6f956c-edea-44e4-bd06-64b1b4b9aec9 |
+| PrintJob.Read.All                                       | 委派   | afdd6933-a0d8-40f7-bd1a-b5d778e8624b |
+| PrintJob.ReadBasic                                      | 委派   | 6a71a747-280f-4670-9ca0-a9cbf882b274 |
+| PrintJob.ReadBasic.All                                  | 应用程序 | fbf67eee-e074-4ef7-b965-ab5ce1c1f689 |
+| PrintJob.ReadBasic.All                                  | 委派   | 04ce8d60-72ce-4867-85cf-6d82f36922f3 |
+| PrintJob.ReadWrite                                      | 委派   | b81dd597-8abb-4b3f-a07a-820b0316ed04 |
+| PrintJob.ReadWrite.All                                  | 应用程序 | 5114b07b-2898-4de7-a541-53b0004e2e13 |
+| PrintJob.ReadWrite.All                                  | 委派   | 036b9544-e8c5-46ef-900a-0646cc42b271 |
+| PrintJob.ReadWriteBasic                                 | 委派   | 6f2d22f2-1cb6-412c-a17c-3336817eaa82 |
+| PrintJob.ReadWriteBasic.All                             | 应用程序 | 57878358-37f4-4d3a-8c20-4816e0d457b1 |
+| PrintJob.ReadWriteBasic.All                             | 委派   | 3a0db2f6-0d2a-4c19-971b-49109b19ad3d |
+| PrintSettings.Read.All                                  | 应用程序 | b5991872-94cf-4652-9765-29535087c6d8 |
+| PrintSettings.Read.All                                  | 委派   | 490f32fd-d90f-4dd7-a601-ff6cdc1a3f6c |
+| PrintSettings.ReadWrite.All                             | 委派   | 9ccc526a-c51c-4e5c-a1fd-74726ef50b8f |
+| PrintTaskDefinition.ReadWrite.All                       | 应用程序 | 456b71a7-0ee0-4588-9842-c123fcc8f664 |
+| PrivilegedAccess.Read.AzureAD                           | 应用程序 | 4cdc2547-9148-4295-8d11-be0db1391d6b |
+| PrivilegedAccess.Read.AzureAD                           | 委派   | b3a539c9-59cb-4ad5-825a-041ddbdc2bdb |
+| PrivilegedAccess.Read.AzureADGroup                      | 应用程序 | 01e37dc9-c035-40bd-b438-b2879c4870a6 |
+| PrivilegedAccess.Read.AzureADGroup                      | 委派   | d329c81c-20ad-4772-abf9-3f6fdb7e5988 |
+| PrivilegedAccess.Read.AzureResources                    | 应用程序 | 5df6fe86-1be0-44eb-b916-7bd443a71236 |
+| PrivilegedAccess.Read.AzureResources                    | 委派   | 1d89d70c-dcac-4248-b214-903c457af83a |
+| PrivilegedAccess.ReadWrite.AzureAD                      | 应用程序 | 854d9ab1-6657-4ec8-be45-823027bcd009 |
+| PrivilegedAccess.ReadWrite.AzureAD                      | 委派   | 3c3c74f5-cdaa-4a97-b7e0-4e788bfcfb37 |
+| PrivilegedAccess.ReadWrite.AzureADGroup                 | 应用程序 | 2f6817f8-7b12-4f0f-bc18-eeaf60705a9e |
+| PrivilegedAccess.ReadWrite.AzureADGroup                 | 委派   | 32531c59-1f32-461f-b8df-6f8a3b89f73b |
+| PrivilegedAccess.ReadWrite.AzureResources               | 应用程序 | 6f9d5 abc-2db6-400b-a267-7de22a40fb87 |
+| PrivilegedAccess.ReadWrite.AzureResources               | 委派   | a84a9652-ffd3-496e-a991-22ba5529156a |
+| 个人资料                                                 | 委派   | 14dad69e-099b-42c9-810b-d002981feec1 |
+| ProgramControl.Read.All                                 | 应用程序 | eedb7fdd-7539-4345-a38b-4839e4a84cbd |
+| ProgramControl.Read.All                                 | 委派   | c492a2e1-2f8f-4caa-b076-99bbf6e40fe4 |
+| ProgramControl.ReadWrite.All                            | 应用程序 | 60a901ed-09f7-4aa5-a16e-7dd3d6f9de36 |
+| ProgramControl.ReadWrite.All                            | 委派   | 50fd364f-9d93-4ae1-b170-300e87cccf84 |
+| Reports.Read.All                                        | 应用程序 | 230c1aed-a721-4c5d-9cb4-a90514e508ef |
+| Reports.Read.All                                        | 委派   | 02e97553-ed7b-43d0-ab3c-f8bace0d040c |
+| RoleAssignmentSchedule.Read.Directory                   | 委派   | 344a729c-0285-42c6-9014-f12b9b8d6129 |
+| RoleAssignmentSchedule.ReadWrite.Directory              | 委派   | 8c026be3-8e26-4774-9372-8d5d6f21daff |
+| RoleEligibilitySchedule.Read.Directory                  | 委派   | eb0788c2-6d4e-4658-8c9e-c0fb8053f03d |
+| RoleEligibilitySchedule.ReadWrite.Directory             | 委派   | 62ade113-f8e0-4bf9-a6ba-5acb31db32fd |
+| RoleManagement.Read.All                                 | 应用程序 | c7fbd983-d9aa-4fa7-84b8-17382c103bc4 |
+| RoleManagement.Read.All                                 | 委派   | 48fec646-b2ba-4019-8681-8eb31435aded |
+| RoleManagement.Read.CloudPC                             | 应用程序 | 031a549a-bb80-49b6-8032-2068448c6a3c |
+| RoleManagement.Read.CloudPC                             | 委派   | 9619b88a-8a25-48a7-9571-d23be0337a79 |
+| RoleManagement.Read.Directory                           | 应用程序 | 483bed4a-2ad3-4361-a73b-c83ccdbdc53c |
+| RoleManagement.Read.Directory                           | 委派   | 741c54c3-0c1e-44a1-818b-3f97ab4e8c83 |
+| RoleManagement.ReadWrite.CloudPC                        | 应用程序 | 274d0592-d1b6-44bd-af1d-26d259bcb43a |
+| RoleManagement.ReadWrite.CloudPC                        | 委派   | 501d06f8-07b8-4f18-b5c6-c191a4af7a82 |
+| RoleManagement.ReadWrite.Directory                      | 应用程序 | 9e3f62cf-ca93-4989-b6ce-bf83c28f9fe8 |
+| RoleManagement.ReadWrite.Directory                      | 委派   | d01b97e9-cbc0-49fe-810a-750afd5527a3 |
+| RoleManagementPolicy.Read.Directory                     | 委派   | 3de2cdbe-0ff5-47d5-bdee-7f45b4749ead |
+| RoleManagementPolicy.ReadWrite.Directory                | 委派   | 1ff1be21-34eb-448c-9ac9-ce1f506b2a68 |
+| Schedule.Read.All                                       | 应用程序 | 7b2ebf90-d836-437f-b90d-7b62722c4456 |
+| Schedule.Read.All                                       | 委派   | fccf6dd8-5706-49fa-811f-69e2e1b585d0 |
+| Schedule.ReadWrite.All                                  | 应用程序 | b7760610-0545-4e8a-9ec3-cce9e63db01c |
+| Schedule.ReadWrite.All                                  | 委派   | 63f27281-c9d9-4f29-94dd-6942f7f1feb0 |
+| SearchConfiguration.Read.All                            | 应用程序 | ada977a5-b8b1-493b-9a91-66c206d76ecf |
+| SearchConfiguration.Read.All                            | 委派   | 7d307522-aa38-4cd0-bd60-90c6f0ac50bd |
+| SearchConfiguration.ReadWrite.All                       | 应用程序 | 0e778b85-fefa-466d-9eec-750569d92122 |
+| SearchConfiguration.ReadWrite.All                       | 委派   | b1a7d408-cab0-47d2-a2a5-a74a3733600d |
+| SecurityActions.Read.All                                | 应用程序 | 5e0edab9-c148-49d0-b423-ac253e121825 |
+| SecurityActions.Read.All                                | 委派   | 1638cddf-07a4-4de2-8645-69c96cacad73 |
+| SecurityActions.ReadWrite.All                           | 应用程序 | f2bf083f-0179-402a-bedb-b2784de8a49b |
+| SecurityActions.ReadWrite.All                           | 委派   | dc38509c-b87d-4da0-bd92-6bec988bac4a |
+| SecurityAlert.Read.All                                  | 应用程序 | 472e4a4d-bb4a-4026-98d1-0b0d74cb74a5 |
+| SecurityAlert.Read.All                                  | 委派   | bc257fb8-46b4-4b15-8713-01e91bfbe4ea |
+| SecurityAlert.ReadWrite.All                             | 应用程序 | ed4fca05-be46-441f-9803-1873825f8f8fdb |
+| SecurityAlert.ReadWrite.All                             | 委派   | 471f2a7f-2a42-4d45-a2bf-594d0838070d |
+| SecurityEvents.Read.All                                 | 应用程序 | bf394140-e372-4bf9-a898-299cfc7564e5 |
+| SecurityEvents.Read.All                                 | 委派   | 64733abd-851e-478a-bffb-e47a14b18235 |
+| SecurityEvents.ReadWrite.All                            | 应用程序 | d903a879-88e0-4c09-b0c9-82f6a1333f84 |
+| SecurityEvents.ReadWrite.All                            | 委派   | 6aedf524-7e1c-45a7-bd76-ded8cab8d0fc |
+| SecurityIncident.Read.All                               | 应用程序 | 45cc0394-e837-488b-a098-1918f48d186c |
+| SecurityIncident.Read.All                               | 委派   | b9abcc4f-94fc-4457-9141-d20ce80ec952 |
+| SecurityIncident.ReadWrite.All                          | 应用程序 | 34bf0e97-1971-4929-b999-9e2442d941d7 |
+| SecurityIncident.ReadWrite.All                          | 委派   | 128ca929-1a19-45e6-a3b8-435ec44a36ba |
+| ServiceHealth.Read.All                                  | 应用程序 | 79c261e0-fe76-4144-aad5-bdc68fbe4037 |
+| ServiceHealth.Read.All                                  | 委派   | 55896846-df78-47a7-aa94-8d3d4442ca7f |
+| ServiceMessage.Read.All                                 | 应用程序 | 1b620472-6534-4fe6-9df2-4680e8aa28ec |
+| ServiceMessage.Read.All                                 | 委派   | eda39fa6-f8cf-4c3c-a909-432c683e4c9b |
+| ServiceMessageViewpoint.Write                           | 委派   | 636e1b0b-1cc2-4b1c-9aa9-4eeed9b9761b |
+| ServicePrincipalEndpoint.Read.All                       | 应用程序 | 5256681e-b7f6-40c0-8447-2d9db68797a0 |
+| ServicePrincipalEndpoint.Read.All                       | 委派   | 9f9ce928-e038-4e3b-8faf-7b59049a8ddc |
+| ServicePrincipalEndpoint.ReadWrite.All                  | 应用程序 | 89c8469c-83ad-45f7-8ff2-6e3d4285709e |
+| ServicePrincipalEndpoint.ReadWrite.All                  | 委派   | 7297d82c-9546-4aed-91df-3d4f0a9b3ff0 |
+| SharePointTenantSettings.Read.All                       | 应用程序 | 83d4163d-a2d8-4d3b-9695-4ae3ca98f888 |
+| SharePointTenantSettings.Read.All                       | 委派   | 2ef70e10-5bfd-4ede-a5f6-67720500b258 |
+| SharePointTenantSettings.ReadWrite.All                  | 应用程序 | 19b94e34-907c-4f43-bde9-38b1909ed408 |
+| SharePointTenantSettings.ReadWrite.All                  | 委派   | aa07f155-3612-49b8-a147-6c590df35536 |
+| ShortNotes.Read                                         | 委派   | 50f66e47-eb56-45b7-aaa2-75057d9afe08 |
+| ShortNotes.Read.All                                     | 应用程序 | 0c7d31ec-31ca-4f58-b6ec-9950b6b0de69 |
+| ShortNotes.ReadWrite                                    | 委派   | 328438b7-4c01-4c07-a840-e625a749bb89 |
+| ShortNotes.ReadWrite.All                                | 应用程序 | 842c284c-763d-4a97-838d-79787d129bab |
+| Sites.FullControl.All                                   | 应用程序 | a82116e5-55eb-4c41-a434-62fe8a61c773 |
+| Sites.FullControl.All                                   | 委派   | 5a54b8b3-347c-476d-8f8e-42d5c7424d29 |
+| Sites.Manage.All                                        | 应用程序 | 0c0bf378-bf22-4481-8f81-9e89a9b4960a |
+| Sites.Manage.All                                        | 委派   | 65e50fdc-43b7-4915-933e-e8138f11f40a |
+| Sites.Read.All                                          | 应用程序 | 332a536c-c7ef-4017-ab91-336970924f0d |
+| Sites.Read.All                                          | 委派   | 205e70e5-aba6-4c52-a976-6d2d46c48043 |
+| Sites.ReadWrite.All                                     | 应用程序 | 9492366f-7969-46a4-8d15-ed1a20078fff |
+| Sites.ReadWrite.All                                     | 委派   | 89fe6a52-be36-487e-b7d8-d061c450a026 |
+| Sites.Selected                                          | 应用程序 | 883ea226-0bf2-4a8f-9f9d-92c9162a727d |
+| SMTP.Send                                               | 委派   | 258f6531-6087-4cc4-bb90-092c5fb3ed3f |
+| SubjectRightsRequest.Read.All                           | 委派   | 9c3af74c-fd0f-4db4-b17a-71939e2a9d77 |
+| SubjectRightsRequest.ReadWrite.All                      | 委派   | 2b8fcc74-bce1-4ae3-a0e8-60c53739299d |
+| Subscription.Read.All                                   | 委派   | 5f88184c-80bb-4d52-9ff2-757288b2e9b7 |
+| Tasks.Read                                              | 委派   | f45671fb-e0fe-4b4b-be20-3d3ce43f1bcb |
+| Tasks.Read.Shared                                       | 委派   | 88d21fd4-8e5a-4c32-b5e2-4a1c95f34f72 |
+| Tasks.ReadWrite                                         | 委派   | 2219042f-cab5-40cc-b0d2-16b1540b4c5f |
+| Tasks.ReadWrite.Shared                                  | 委派   | c5ddf11b-c114-4886-8558-8a4e557cd52b |
+| Team.Create                                             | 应用程序 | 23fc2474-f741-46ce-8465-674744c5c361 |
+| Team.Create                                             | 委派   | 7825d5d6-6049-4ce7-bdf6-3b8d53f4bcd0 |
+| Team.ReadBasic.All                                      | 应用程序 | 2280dda6-0bfd-44ee-a2f4-cb867cfc4c1e |
+| Team.ReadBasic.All                                      | 委派   | 485be79e-c497-4b35-9400-0e3fa7f2a5d4 |
+| TeamMember.Read.All                                     | 应用程序 | 660b7406-55f1-41ca-a0ed-0b035e182f3e |
+| TeamMember.Read.All                                     | 委派   | 2497278c-d82d-46a2-b1ce-39d4cdde5570 |
+| TeamMember.ReadWrite.All                                | 应用程序 | 0121dc95-1b9f-4aed-8bac-58c5ac466691 |
+| TeamMember.ReadWrite.All                                | 委派   | 4a06efd2-f825-4e34-813e-82a57b03d1ee |
+| TeamMember.ReadWriteNonOwnerRole.All                    | 应用程序 | 4437522e-9a86-4a41-a7da-e380edd4a97d |
+| TeamMember.ReadWriteNonOwnerRole.All                    | 委派   | 2104a4db-3a2f-4ea0-9dba-143d457dc666 |
+| TeamsActivity.Read                                      | 委派   | 0e755559-83fb-4b44-91d0-4cc721b9323e |
+| TeamsActivity.Read.All                                  | 应用程序 | 70dec828-f620-4914-aa83-a29117306807 |
+| TeamsActivity.Send                                      | 应用程序 | a267235f-af13-44dc-8385-c1dc93023186 |
+| TeamsActivity.Send                                      | 委派   | 7ab1d787-bae7-4d5d-8db6-37ea32df9186 |
+| TeamsApp.Read                                           | 委派   | daef10fc-047a-48b0-b1a5-da4b5e72fabc |
+| TeamsApp.Read.All                                       | 应用程序 | afdb422a-4b2a-4e07-a708-8ceed48196bf |
+| TeamsApp.Read.All                                       | 委派   | 9127ba42-f79f-43b1-be80-f23ecd42377e |
+| TeamsApp.ReadWrite                                      | 委派   | 2a5addc2-4d9e-4d7d-8527-5215aec410f3 |
+| TeamsApp.ReadWrite.All                                  | 应用程序 | eb6b3d76-ed75-4be6-ac36-158d04c0a555 |
+| TeamsApp.ReadWrite.All                                  | 委派   | d3f0af02-b22d-4778-a433-14f7e3f2e1e2 |
+| TeamsAppInstallation.ReadForChat                        | 委派   | bf3fbf03-f35f-4e93-963e-47e4d874c37a |
+| TeamsAppInstallation.ReadForChat.All                    | 应用程序 | cc7e7635-2586-41d6-adaa-a8d3bcad5ee5 |
+| TeamsAppInstallation.ReadForTeam                        | 委派   | 5248dcb1-f83b-4ec3-9f4d-a4428a961a72 |
+| TeamsAppInstallation.ReadForTeam.All                    | 应用程序 | 1f615aea-6bf9-4b05-84bd-46388e138537 |
+| TeamsAppInstallation.ReadForUser                        | 委派   | c395395c-ff9a-4dba-bc1f-8372ba9dca84 |
+| TeamsAppInstallation.ReadForUser.All                    | 应用程序 | 9ce09611-f4f7-4abd-a629-a05450422a97 |
+| TeamsAppInstallation.ReadWriteForChat                   | 委派   | aa85bf13-d771-4d5d-a9e6-bca04ce44edf |
+| TeamsAppInstallation.ReadWriteForChat.All               | 应用程序 | 9e19bae1-2623-4c4f-ab6e-2664615ff9a0 |
+| TeamsAppInstallation.ReadWriteForTeam                   | 委派   | 2e25a044-2580-450d-8859-42eeb6e996c0 |
+| TeamsAppInstallation.ReadWriteForTeam.All               | 应用程序 | 5dad17ba-f6cc-4954-a5a2-a0dcc95154f0 |
+| TeamsAppInstallation.ReadWriteForUser                   | 委派   | 093f8818-d05f-49b8-95bc-9d2a73e9a43c |
+| TeamsAppInstallation.ReadWriteForUser.All               | 应用程序 | 74ef0291-ca83-4d02-8c7e-d2391e6a444f |
+| TeamsAppInstallation.ReadWriteSelfForChat               | 委派   | 0ce33576-30e8-43b7-99e5-62f8569a4002 |
+| TeamsAppInstallation.ReadWriteSelfForChat.All           | 应用程序 | 73a45059-f39c-4baf-9182-4954ac0e55cf |
+| TeamsAppInstallation.ReadWriteSelfForTeam               | 委派   | 0f4595f7-64b1-4e13-81bc-11a249df07a9 |
+| TeamsAppInstallation.ReadWriteSelfForTeam.All           | 应用程序 | 9f67436c-5415-4e7f-8ac1-3014a7132630 |
+| TeamsAppInstallation.ReadWriteSelfForUser               | 委派   | 207e0cb1-3ce7-4922-b991-5a760c346ebc |
+| TeamsAppInstallation.ReadWriteSelfForUser.All           | 应用程序 | 908de74d-f8b2-4d6b-a9ed-2a17b3b78179 |
+| TeamSettings.Read.All                                   | 应用程序 | 242607bd-1d2c-432c-82eb-bdb27baa23ab |
+| TeamSettings.Read.All                                   | 委派   | 48638b3c-ad68-4383-8ac4-e6880ee6ca57 |
+| TeamSettings.ReadWrite.All                              | 应用程序 | bdd80a03-d9bc-451d-b7c4-ce7c63fe3c8f |
+| TeamSettings.ReadWrite.All                              | 委派   | 39d65650-9d3e-4223-80db-a335590d027e |
+| TeamsTab.Create                                         | 应用程序 | 49981c42-fd7b-4530-be03-e77b21aed25e |
+| TeamsTab.Create                                         | 委派   | a9ff19c2-f369-4a95-9a25-ba9d460efc8e |
+| TeamsTab.Read.All                                       | 应用程序 | 46890524-499a-4bb2-ad64-1476b4f3e1cf |
+| TeamsTab.Read.All                                       | 委派   | 59dacb05-e88d-4c13-a684-59f1afc8cc98 |
+| TeamsTab.ReadWrite.All                                  | 应用程序 | a96d855f-016b-47d7-b51c-1218a98d791c |
+| TeamsTab.ReadWrite.All                                  | 委派   | b98bfd41-87c6-45cc-b104-e2de4f0dafb9 |
+| TeamsTab.ReadWriteForChat                               | 委派   | ee928332-e9c2-4747-b4a0-f8c164b68de6 |
+| TeamsTab.ReadWriteForChat.All                           | 应用程序 | fd9ce730-a250-40dc-bd44-8dc8d20f39ea |
+| TeamsTab.ReadWriteForTeam                               | 委派   | c975dd04-a06e-4fbb-9704-62daad77bb49 |
+| TeamsTab.ReadWriteForTeam.All                           | 应用程序 | 6163d4f4-fbf8-43da-a7b4-060fe85ed148 |
+| TeamsTab.ReadWriteForUser                               | 委派   | c37c9b61-7762-4bff-a156-afc0005847a0 |
+| TeamsTab.ReadWriteForUser.All                           | 应用程序 | 425b4b59-d5af-45c8-832f-bb0b7402348a |
+| TeamsTab.ReadWriteSelfForChat                           | 委派   | 0c219d04-3abf-47f7-912d-5pga239e90e6 |
+| TeamsTab.ReadWriteSelfForChat.All                       | 应用程序 | 9f62e4a2-a2d6-4350-b28b-d244728c4f86 |
+| TeamsTab.ReadWriteSelfForTeam                           | 委派   | f266662f-120a-4314-b26a-99b08617c7ef |
+| TeamsTab.ReadWriteSelfForTeam.All                       | 应用程序 | 91c32b81-0ef0-453f-a5c7-4ce2e562f449 |
+| TeamsTab.ReadWriteSelfForUser                           | 委派   | 395dfec1-a0b9-465f-a783-8250a430cb8c |
+| TeamsTab.ReadWriteSelfForUser.All                       | 应用程序 | 3c42dec6-49e8-4a0a-b469-36cff0d9da93 |
+| Teamwork.Migrate.All                                    | 应用程序 | dfb0dd15-61de-45b2-be36-d6a69fba3c79 |
+| TeamworkDevice.Read.All                                 | 应用程序 | 0591bafd-7c1c-4c30-a2a5-2b9aacb1dfe8 |
+| TeamworkDevice.Read.All                                 | 委派   | b659488b-9d28-4208-b2be-1c6652b3c970 |
+| TeamworkDevice.ReadWrite.All                            | 应用程序 | 79c02f5b-bd4f-4713-bc2c-a8a4a66e127b |
+| TeamworkDevice.ReadWrite.All                            | 委派   | ddd97ecb-5c31-43db-a235-0ee20e635c40 |
+| TeamworkTag.Read                                        | 委派   | 57587d0b-8399-45be-b207-8050cec54575 |
+| TeamworkTag.Read.All                                    | 应用程序 | b74fd6c4-4bde-488e-9695-eeb100e4907f |
+| TeamworkTag.ReadWrite                                   | 委派   | 539dabd7-b5b6-4117-b164-d60cd15a8671 |
+| TeamworkTag.ReadWrite.All                               | 应用程序 | a3371ca5-911d-46d6-901c-42c8c7a937d8 |
+| TermStore.Read.All                                      | 应用程序 | ea047cc2-df29-4f3e-83a3-205de61501ca |
+| TermStore.Read.All                                      | 委派   | 297f747b-0005-475b-8fef-c890f5152b38 |
+| TermStore.ReadWrite.All                                 | 应用程序 | f12eb8d6-28e3-46e6-b2c0-b7e4dc69fc95 |
+| TermStore.ReadWrite.All                                 | 委派   | 6c37c71d-f50f-4bff-8fd3-8a41da390140 |
+| ThreatAssessment.Read.All                               | 应用程序 | f8f035bb-2cce-47fb-8bf5-7baf3ecbee48 |
+| ThreatAssessment.ReadWrite.All                          | 委派   | cac97e40-6730-457d-ad8d-4852fddab7ad |
+| ThreatHunting.Read.All                                  | 应用程序 | dd98c7f5-2d42-42d3-a0e4-633161547251 |
+| ThreatHunting.Read.All                                  | 委派   | b152eca8-ea73-4a48-8c98-1a6742673d99 |
+| ThreatIndicators.Read.All                               | 应用程序 | 197ee4e9-b993-4066-898f-d6aecc55125b |
+| ThreatIndicators.Read.All                               | 委派   | 9cc427b4-2004-41c5-aa22-757b755e9796 |
+| ThreatIndicators.ReadWrite.OwnedBy                      | 应用程序 | 21792b6c-c986-4ffc-85de-df9da54b52fa |
+| ThreatIndicators.ReadWrite.OwnedBy                      | 委派   | 91e7d36d-022a-490f-a748-f8e011357b42 |
+| TrustFrameworkKeySet.Read.All                           | 应用程序 | fff194f1-7dce-4428-8301-1badb5518201 |
+| TrustFrameworkKeySet.Read.All                           | 委派   | 7ad34336-f5b1-44ce-8682-31d7dfcd9ab9 |
+| TrustFrameworkKeySet.ReadWrite.All                      | 应用程序 | 4a771c9a-1cf2-4609-b88e-3d3e02d539cd |
+| TrustFrameworkKeySet.ReadWrite.All                      | 委派   | 39244520-1e7d-4b4a-aee0-57c65826e427 |
+| UnifiedGroupMember.Read.AsGuest                         | 委派   | 73e75199-7c3e-41bb-9357-167164dbb415 |
+| User.Export.All                                         | 应用程序 | 405a51b5-8d8d-430b-9842-8be4b0e9f324 |
+| User.Export.All                                         | 委派   | 405a51b5-8d8d-430b-9842-8be4b0e9f324 |
+| User.Invite.All                                         | 应用程序 | 09850681-111b-4a89-9bed-3f2cae46d706 |
+| User.Invite.All                                         | 委派   | 63dd7cd9-b489-4adf-a28c-ac38b9a0f962 |
+| User.ManageIdentities.All                               | 应用程序 | c529cfca-c91b-489c-af2b-d92990b66ce6 |
+| User.ManageIdentities.All                               | 委派   | 637d7bec-b31e-4deb-acc9-24275642a2c9 |
+| User.Read                                               | 委派   | e1fe6dd8-ba31-4d61-89e7-88639da4683d |
+| User.Read.All                                           | 应用程序 | df021288-bdef-4463-88db-98f22de89214 |
+| User.Read.All                                           | 委派   | a154be20-db9c-4678-8ab7-66f6cc099a59 |
+| User.ReadBasic.All                                      | 委派   | b340eb25-3456-403f-be2f-af7a0d370277 |
+| User.ReadWrite                                          | 委派   | b4e74841-8e56-480b-be8b-910348b18b4c |
+| User.ReadWrite.All                                      | 应用程序 | 741f803b-c850-494e-b5df-cde7c675a1ca |
+| User.ReadWrite.All                                      | 委派   | 204e0828-b5ca-4ad8-b9f3-f32a958e7cc4 |
+| UserActivity.ReadWrite.CreatedByApp                     | 委派   | 47607519-5fb1-47d9-99c7-da4b48f369b1 |
+| UserAuthenticationMethod.Read                           | 委派   | 1f6b61c5-2f65-4135-9c9f-31c0f8d32b52 |
+| UserAuthenticationMethod.Read.All                       | 应用程序 | 38d9df27-64da-44fd-b7c5-a6fbac20248f |
+| UserAuthenticationMethod.Read.All                       | 委派   | aec28ec7-4d02-4e8c-b864-50163aea77eb |
+| UserAuthenticationMethod.ReadWrite                      | 委派   | 48971fc1-70d7-4245-af77-0beb29b53ee2 |
+| UserAuthenticationMethod.ReadWrite.All                  | 应用程序 | 50483e42-d915-4231-9639-7fdb7fd190e5 |
+| UserAuthenticationMethod.ReadWrite.All                  | 委派   | b7887744-6746-4312-813d-72daeaee7e2d |
+| UserNotification.ReadWrite.CreatedByApp                 | 应用程序 | 4e774092-a092-48d1-90bd-baad67c7eb47 |
+| UserNotification.ReadWrite.CreatedByApp                 | 委派   | 26e2f3e8-b2a1-47fc-9620-89bb5b042024 |
+| UserShiftPreferences.Read.All                           | 应用程序 | de023814-96df-4f53-9376-1e2891ef5a18 |
+| UserShiftPreferences.ReadWrite.All                      | 应用程序 | d1eec298-80f3-49b0-9efb-d90e224798ac |
+| UserTimelineActivity.Write.CreatedByApp                 | 委派   | 367492fc-594d-4972-a9b5-0d58c622c91c |
+| WindowsUpdates.ReadWrite.All                            | 应用程序 | 7dd1be58-6e76-4401-bf8d-31d1e8180d5b |
+| WindowsUpdates.ReadWrite.All                            | 委派   | 11776c0c-6138-4db3-a668-ee621bea2555 |
+| WorkforceIntegration.Read.All                           | 委派   | f1ccd5a7-6383-466a-8db8-1a656f7d06fa |
+| WorkforceIntegration.ReadWrite.All                      | 应用程序 | 202bf709-e8e6-478e-bcfd-5d63c50b68e3 |
+| WorkforceIntegration.ReadWrite.All                      | 委派   | 08c4b377-0d23-4a8b-be2a-23c1c1d88545 |
