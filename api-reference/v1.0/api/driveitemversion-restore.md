@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 2b1f4a82b990ff8226dc8fd36f0e5d5180388b4c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 90d12a5e9392947d1a9f27d77e1997306afc8114
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037962"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396474"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>还原 DriveItem 的以前版本
 
@@ -69,6 +69,10 @@ POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/restore-item-version-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/restore-item-version-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

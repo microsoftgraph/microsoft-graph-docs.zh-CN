@@ -1,16 +1,16 @@
 ---
 title: 更新 accessReview
-description: 在Azure AD查看功能中，更新现有 accessReview 对象以更改其一个或多个属性。
+description: 在Azure AD评审功能中，更新现有 accessReview 对象以更改其一个或多个属性。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 056212796da53ce71004f41fc8a364590a9f5c64
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 289d2aabaab79f7fb02d5d1f6235dce8294c2660
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107193"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63394185"
 ---
 # <a name="update-accessreview"></a>更新 accessReview
 
@@ -18,7 +18,9 @@ ms.locfileid: "62107193"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[查看](../resources/accessreviews-root.md)功能中，更新现有[accessReview](../resources/accessreview.md)对象以更改其一个或多个属性。
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+在Azure AD[评审](../resources/accessreviews-root.md)功能中，更新现有 [accessReview](../resources/accessreview.md) 对象以更改其一个或多个属性。
 
 此 API 不用于更改审阅者或审阅决策。  若要更改审阅者，请使用 [addReviewer](accessreview-addreviewer.md) 或 [removeReviewer](accessreview-removereviewer.md) API。  若要停止已启动的一次性审阅或已启动的定期审阅实例，请尽早使用 [停止](accessreview-stop.md) API。 若要将决策应用于目标组或应用访问权限，请使用 [应用](accessreview-apply.md) API。 
 

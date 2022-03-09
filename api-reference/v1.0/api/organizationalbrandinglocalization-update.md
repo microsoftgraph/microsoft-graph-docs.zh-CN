@@ -5,17 +5,17 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 09aa9486ace60b4ab96107f2bca3b3284f52613a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4730f0deb6be24b65af91fe2b090f03c253be7d7
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126189"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397944"
 ---
 # <a name="update-organizationalbrandinglocalization"></a>更新 organizationalBrandingLocalization
 命名空间：microsoft.graph
 
-为特定本地化更新 [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象的属性。
+为特定本地化 [更新 organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "62126189"
 
 ## <a name="http-request"></a>HTTP 请求
 
-使用 PUT 方法仅更新 Stream 数据类型，包括 **backgroundLogo** 和 **backgroundImage。** 若要更新 String 数据类型（包括 **signInPageText** 和 **usernameHintText），** 请使用 PATCH 方法。 不能在同一请求中用其他数据类型更新 Stream 类型。
+使用 PUT 方法仅更新 Stream 数据类型，包括 **backgroundLogo** 和 **backgroundImage**。 若要更新 String 数据类型（包括 **signInPageText** 和 **usernameHintText**），请使用 PATCH 方法。 不能在同一请求中用其他数据类型更新 Stream 类型。
 
 <!-- {
   "blockType": "ignored"
@@ -51,13 +51,13 @@ PUT /organization/{organizationId}/branding/localizations/{organizationalBrandin
 
 下表指定可更新的属性。 
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| backgroundColor | String | 将出现在低带宽连接中的背景图像上的颜色。 我们建议你使用横幅徽标的主要颜色或你的组织颜色。 以十六进制格式指定此参数，例如，white 为 `#FFFFFF` 。 |
+| backgroundColor | 字符串 | 将出现在低带宽连接中的背景图像上的颜色。 我们建议你使用横幅徽标的主要颜色或你的组织颜色。 以十六进制格式指定此参数，例如，white 为 `#FFFFFF`。 |
 | backgroundImage | Stream | 显示为登录页背景的图像。 允许的类型是 PNG 或 JPEG，不小于 300 KB 且不超过 1920 × 1080 像素。 较小的图像将降低带宽要求，并加快页面加载速度。 |
 | bannerLogo | Stream | 显示在登录页上的公司徽标的横幅版本。 允许的类型为 PNG 或 JPEG，不超过 36 × 245 像素。 我们建议使用透明图像，徽标周围没有填充。 |
 | signInPageText | String | 显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。 |
-| squareLogo | Stream | 在 OOBE Windows 10 OOBE (中显示公司徽标的方形版本) 当启用 Windows Autopilot 进行部署时。 允许的类型为 PNG 或 JPEG，不超过 240 x 240 像素，大小不超过 10 KB。 我们建议使用透明图像，徽标周围没有填充。|
+| squareLogo | Stream | 在 OOBE Windows 10 OOBE (中显示公司徽标的正方形) ，Windows Autopilot 启用部署。 允许的类型为 PNG 或 JPEG，不超过 240 x 240 像素，大小不超过 10 KB。 我们建议使用透明图像，徽标周围没有填充。|
 | usernameHintText | String | 在登录屏幕的用户名文本框中显示为提示的字符串。 此文本必须是不带链接或代码的 Unicode，并且不能超过 64 个字符。|
 
 ## <a name="response"></a>响应
@@ -153,6 +153,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandinglocalization6-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-organizationalbrandinglocalization6-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -205,6 +209,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandinglocalization7-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-organizationalbrandinglocalization7-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -218,4 +226,4 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-在此请求后，本地化的 usernameHintText 将为空，而不是从默认 `fr-FR` 品牌对象继承值。
+在此请求后，本地化的 usernameHintText `fr-FR` 将为空，而不是从默认品牌对象继承值。

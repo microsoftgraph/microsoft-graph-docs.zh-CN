@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4d46e1cc181866a1a7fc2e7a3d5eaf8047c95e4a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e5bd42bf61f85a20b63462ce902809302d30dfd5
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091078"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63394171"
 ---
 # <a name="remove-accessreview-reviewer"></a>删除 accessReview 审阅者
 
@@ -18,7 +18,9 @@ ms.locfileid: "62091078"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[审阅](../resources/accessreviews-root.md)功能中，更新现有[accessReview](../resources/accessreview.md)对象以删除作为审阅者的用户。  仅允许对尚未完成的访问评审进行此操作，并且仅允许对明确指定审阅者的访问评审执行此操作。 不允许此操作进行访问评审，用户在此审阅自己的访问权限，并且不允许进行访问评审，其中组所有者被分配为审阅者。 
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+在Azure AD[审阅](../resources/accessreviews-root.md)功能中，更新现有 [accessReview](../resources/accessreview.md) 对象以删除作为审阅者的用户。  仅允许对尚未完成的访问评审进行此操作，并且仅允许对明确指定审阅者的访问评审执行此操作。 不允许此操作进行访问评审，用户在此审阅自己的访问权限，并且不允许进行访问评审，其中组所有者被分配为审阅者。 
 
 
 ## <a name="permissions"></a>权限
@@ -49,7 +51,7 @@ DELETE /accessReviews/{reviewId}/reviewers/{userId}
 
 ## <a name="example"></a>示例
 
-这是一个更新一次检查 (访问评审) 不必要的审阅者的示例。
+这是一个更新一次检查， (访问评审) 不必要的审阅者的示例。
 
 
 ##### <a name="request"></a>请求

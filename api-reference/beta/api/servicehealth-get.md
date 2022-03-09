@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 72e0e9e40ac2df64e6deed01e70b8f6d7eb300da
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 63ff13168b7a4822bd90196ad676a67986126926
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002560"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397139"
 ---
 # <a name="get-servicehealth"></a>获取 serviceHealth
 命名空间：microsoft.graph
@@ -44,7 +44,7 @@ GET /admin/serviceAnnouncement/healthOverviews/{ServiceName}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -89,8 +89,12 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/M
 [!INCLUDE [sample-code](../includes/snippets/java/get-servicehealth-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-servicehealth-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-servicehealth-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -147,8 +151,12 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/M
 [!INCLUDE [sample-code](../includes/snippets/java/get-servicehealth-with-issues-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-servicehealth-with-issues-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-servicehealth-with-issues-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

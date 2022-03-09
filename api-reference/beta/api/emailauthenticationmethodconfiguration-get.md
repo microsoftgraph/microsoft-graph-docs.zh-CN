@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4d691753000e50c397b2dfadbb937c26eb356827
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 85d6e91a29706f5352d3144ee5eba6898da5cd3f
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239125"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393905"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>获取 emailAuthenticationMethodConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "62239125"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 的电子邮件[OTP](../resources/authenticationmethodspolicies-overview.md)身份验证方法策略。
+读取 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 租户的电子邮件 [OTP 身份验证](../resources/authenticationmethodspolicies-overview.md)方法策略。
 
 ## <a name="permissions"></a>权限
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -89,6 +89,10 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/ema
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-emailauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-emailauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

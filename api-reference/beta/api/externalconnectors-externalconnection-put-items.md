@@ -1,16 +1,16 @@
 ---
 title: 创建 externalItem
 description: 创建新的 externalItem。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7939689cf113e709853e5da666d1479e600fe4cd
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 9df3496e49fe7017641b98d2d867e67b420ceede
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467581"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396782"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -44,8 +44,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | `id`包含[externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 如果不存在此项目，将 `id` 创建一个新项。 如果项目已存在， `id` 则它将被正文中发送的对象覆盖。 |
+| connection-id | string | 包含 `id` [externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 如果不存在此项目，将 `id`创建一个新项。 如果项目已存在， `id`则它将被正文中发送的对象覆盖。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -60,7 +60,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ### <a name="creating-an-externalitem"></a>创建 externalItem
 
-创建 时 `externalItem` ，以下字段是必需的： `acl` 和 `properties` 。 `properties`对象必须至少包含一个属性。
+创建 时 `externalItem`，以下字段是必需的： `acl`和 `properties`。 对象 `properties` 必须至少包含一个属性。
 
 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。
 
@@ -84,7 +84,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > 当包含 类型的 属性 `Collection(DateTime)` 时，必须使用类型说明器 `Collection(DateTimeOffset)` 。
+    > 当包含类型的 属性时 `Collection(DateTime)`，必须使用类型说明器 `Collection(DateTimeOffset)`。
 
 ## <a name="response"></a>响应
 
@@ -145,6 +145,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-connections-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalitem-from-connections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: a1dad572417a97793dd6b1b25176a18879edb491
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 3746db66d1f79c27d0910de55f9a20b08214b653
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368166"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395655"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -22,7 +22,7 @@ ms.locfileid: "63368166"
 
 请参阅" [权限](#permissions) 部分中的表格，了解支持订阅以更改通知的资源列表。
 
-某些资源支持在更改通知中包括加密资源数据的选项。 这些资源包括 [chatMessage、](../resources/chatmessage.md)[contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md)、[onlineMeetings 和](../resources/onlinemeeting.md) [presence](../resources/presence.md)。 有关详细信息，请参阅设置包含资源[数据的更改](/graph/webhooks-with-resource-data)通知和 [Microsoft Outlook资源更改Graph](/graph/outlook-change-notification-overview)。
+某些资源支持在更改通知中包括加密资源数据的选项。 这些资源包括 [chatMessage、](../resources/chatmessage.md)[contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md)、[onlineMeetings 和](../resources/onlinemeeting.md) [presence](../resources/presence.md)。 有关详细信息，请参阅[设置包含资源数据的更改通知](/graph/webhooks-with-resource-data)和 [Microsoft Graph 中 Outlook 资源的更改通知](/graph/outlook-change-notification-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -64,7 +64,7 @@ ms.locfileid: "63368166"
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All，TeamSettings.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
@@ -185,6 +185,7 @@ Content-type: application/json
 |[组](../resources/group.md)|`groups`|
 |[列表](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[OnlineMeetings](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{WebJoinUrl}'`|
 |[状态](../resources/presence.md)| `/communications/presences/{id}`（单个用户），`/communications/presences?$filter=id in ('{id}','{id}',…)`（多个用户）|
 |[打印机](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|

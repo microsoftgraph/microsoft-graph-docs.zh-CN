@@ -6,12 +6,12 @@ title: 转换为其他格式
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: eaa5dc018d74de4cea4a07ba9ae05f5d26adda0c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1baf1105ae9a0e3777d15456687da667bf83f628
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019887"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393926"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
@@ -24,9 +24,15 @@ ms.locfileid: "61019887"
 
 若要下载原始格式的项目，请参阅[下载项内容](driveitem-get-content.md)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="permissions"></a>权限
 
-应用必须拥有用户授予的对应用要转换的文件的读取权限，才能调用此 API。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+| 权限类型                        | 权限（从最低特权到最高特权） |
+|:---------------------------------------|:------------------------------------|
+| 委派（工作或学校帐户）     | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All |
+| 应用程序                            | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +48,6 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | 参数      | 类型  | 说明                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
 | _format_  | string | 指定应以何种格式下载项内容。 |
-
 
 以下值对于 **format** 参数有效：
 
@@ -60,7 +65,6 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _if-none-match_ | String  | 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。 |
 
 ## <a name="example"></a>示例
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
@@ -84,7 +88,7 @@ GET /drive/items/{item-id}/content?format={format}
 [!INCLUDE [sample-code](../includes/snippets/java/convert-item-content-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/convert-item-content-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

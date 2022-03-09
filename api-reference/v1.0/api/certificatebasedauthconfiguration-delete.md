@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d0c1455660aa985653bd92bfcc80c61e55cf881a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9193cd31d2a06544881f2aaa2ef7174edd5d1fcf
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056888"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394324"
 ---
 # <a name="delete-certificatebasedauthconfiguration"></a>删除 certificateBasedAuthConfiguration
 
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthCo
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-certificatebasedauthconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-certificatebasedauthconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

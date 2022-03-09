@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b739ee5ff818316054d58624721db9c48e54757a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e705ad789c358ca7c0905f51cbd35771840714d3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098492"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394682"
 ---
 ```go
 
@@ -22,25 +22,31 @@ applicationRestrictions.SetPasswordCredentials( []PasswordCredentialConfiguratio
     SetAdditionalData(map[string]interface{}{
         "restrictionType": "passwordAddition",
         "maxLifetime": nil,
-        "restrictForAppsCreatedAfterDateTime": "2021-04-01T10:37:00Z",
+        "restrictForAppsCreatedAfterDateTime": "2021-01-01T10:37:00Z",
     }
     msgraphsdk.NewPasswordCredentialConfiguration(),
     SetAdditionalData(map[string]interface{}{
         "restrictionType": "passwordLifetime",
         "maxLifetime": "P4DT12H30M5S",
-        "restrictForAppsCreatedAfterDateTime": "2019-01-01T10:37:00Z",
+        "restrictForAppsCreatedAfterDateTime": "2017-01-01T10:37:00Z",
     }
     msgraphsdk.NewPasswordCredentialConfiguration(),
     SetAdditionalData(map[string]interface{}{
         "restrictionType": "symmetricKeyAddition",
         "maxLifetime": nil,
-        "restrictForAppsCreatedAfterDateTime": "2021-04-01T10:37:00Z",
+        "restrictForAppsCreatedAfterDateTime": "2021-01-01T10:37:00Z",
+    }
+    msgraphsdk.NewPasswordCredentialConfiguration(),
+    SetAdditionalData(map[string]interface{}{
+        "restrictionType": "customPasswordAddition",
+        "maxLifetime": nil,
+        "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z",
     }
     msgraphsdk.NewPasswordCredentialConfiguration(),
     SetAdditionalData(map[string]interface{}{
         "restrictionType": "symmetricKeyLifetime",
         "maxLifetime": "P40D",
-        "restrictForAppsCreatedAfterDateTime": "2015-04-01T10:37:00Z",
+        "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z",
     }
 }
 applicationRestrictions.SetKeyCredentials( []KeyCredentialConfiguration {
@@ -54,7 +60,7 @@ applicationRestrictions.SetKeyCredentials( []KeyCredentialConfiguration {
 options := &msgraphsdk.DefaultAppManagementPolicyRequestBuilderPatchOptions{
     Body: requestBody,
 }
-graphClient.Policies().DefaultAppManagementPolicy().Patch(options)
+result, err := graphClient.Policies().DefaultAppManagementPolicy().Patch(options)
 
 
 ```

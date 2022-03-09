@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.prod: cloud-printing
 ms.date: 2/4/2020
 doc_type: apiPageType
-ms.openlocfilehash: ac973dce937a5929158e0bc1110556a292c9f915
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 11643a3e5fb4786be1d4942953fc5a4c76771548
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947683"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397174"
 ---
 # <a name="get-printusagebyprinter"></a>获取 printUsageByPrinter
 
@@ -23,7 +23,7 @@ ms.locfileid: "60947683"
 
 有关每个终结点的说明，请参阅 [printUsageByPrinter](../resources/printUsageByPrinter.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。
@@ -54,7 +54,7 @@ GET /print/reports/monthlyPrintUsageByPrinter/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printUsageByPrinter](../resources/printUsageByPrinter.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [printUsageByPrinter](../resources/printUsageByPrinter.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByPrinter/016b
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printusagebyprinter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printusagebyprinter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2894e1fddc6308c3b9fb8022055f183aa8f15836
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: f445407bcfb96f2226aecbbe2e0609383803d8fd
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60676784"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394703"
 ---
 ```csharp
 
@@ -22,25 +22,31 @@ var tenantAppManagementPolicy = new TenantAppManagementPolicy
             {
                 RestrictionType = AppCredentialRestrictionType.PasswordAddition,
                 MaxLifetime = null,
-                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2021-04-01T10:37:00Z")
+                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2021-01-01T10:37:00Z")
             },
             new PasswordCredentialConfiguration
             {
                 RestrictionType = AppCredentialRestrictionType.PasswordLifetime,
                 MaxLifetime = new Duration("P4DT12H30M5S"),
-                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-01-01T10:37:00Z")
+                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2017-01-01T10:37:00Z")
             },
             new PasswordCredentialConfiguration
             {
                 RestrictionType = AppCredentialRestrictionType.SymmetricKeyAddition,
                 MaxLifetime = null,
-                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2021-04-01T10:37:00Z")
+                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2021-01-01T10:37:00Z")
+            },
+            new PasswordCredentialConfiguration
+            {
+                RestrictionType = AppCredentialRestrictionType.CustomPasswordAddition,
+                MaxLifetime = null,
+                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-01-01T10:37:00Z")
             },
             new PasswordCredentialConfiguration
             {
                 RestrictionType = AppCredentialRestrictionType.SymmetricKeyLifetime,
                 MaxLifetime = new Duration("P40D"),
-                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-04-01T10:37:00Z")
+                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-01-01T10:37:00Z")
             }
         },
         KeyCredentials = new List<KeyCredentialConfiguration>()

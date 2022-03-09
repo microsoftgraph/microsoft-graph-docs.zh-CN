@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bb9a69e4357ea502ae7e10e737579d59c23f6e8c
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 1cd3b25f63d48c99728016ffd644ee57a5ed55b9
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62803889"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393464"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -30,7 +30,7 @@ ms.locfileid: "62803889"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All **、Group.ReadWrite.All** |
 
-> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您更新解决方案以使用上表中列出的备用权限，并避免今后使用这些权限。
+> **Note**： 仅支持使用 ** 标记的权限以实现向后兼容。 建议更新解决方案，以使用上表中列出的替代权限，并避免今后使用这些权限。
 
 ### <a name="permissions-for-chat"></a>聊天权限
 
@@ -186,6 +186,10 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-hostedcontentschannelmessage-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-hostedcontentschannelmessage-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: bbd7f98a7ce1a915cab467433d2e85eba4b3ff02
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: acb978a137e8505c22fc5364b613f7a6e79203e4
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560140"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397769"
 ---
 # <a name="get-connectionoperation"></a>获取 connectionOperation
 
@@ -25,7 +25,7 @@ ms.locfileid: "60560140"
 |:---|:---|
 |委派（工作或学校帐户）|不适用|
 |委派（个人 Microsoft 帐户）|不适用|
-|Application| ExternalConnection.ReadWrite.OwnedBy |
+|应用程序| ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,6 +57,8 @@ GET /external/connections/{connectionsId}/operations/{connectionOperationId}
 ### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_connectionoperation"
@@ -65,6 +67,28 @@ GET /external/connections/{connectionsId}/operations/{connectionOperationId}
 ``` http
 GET https://graph.microsoft.com/v1.0/external/connections/contosohr/operations/3ed1595a-4bae-43c2-acda-ef973e581323
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-connectionoperation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-connectionoperation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-connectionoperation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-connectionoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-connectionoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

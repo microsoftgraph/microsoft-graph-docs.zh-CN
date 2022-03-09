@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6cb0fb1b1460e731dcbce545bf16b344aaeea443
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: f2f5cea589544f86a7743b126b7fcea81cc0fec4
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694937"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396355"
 ---
 # <a name="get-connectionoperation"></a>获取 connectionOperation
 
@@ -50,7 +50,7 @@ GET /external/connections/{connection-id}/operations/{operation-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [connectionOperation](../resources/externalconnectors-connectionoperation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的 [connectionOperation](../resources/externalconnectors-connectionoperation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/operations/3
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-connectionoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-connectionoperation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

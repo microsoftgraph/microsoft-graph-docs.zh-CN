@@ -5,17 +5,17 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 767f7e415e559b94898f15f64eea1d44db86232d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 474001b2a6cb6708bdd1ccdf14d434195ea6587d
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012919"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396397"
 ---
 # <a name="serviceupdatemessage-unarchive"></a>serviceUpdateMessage：unarchive
 命名空间：microsoft.graph
 
-取消存档已登录用户的 [serviceUpdateMessages](../resources/serviceupdatemessage.md) 列表。
+取消存档已登录 [用户的 serviceUpdateMessages](../resources/serviceupdatemessage.md) 列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,11 +49,11 @@ POST /admin/serviceAnnouncement/messages/unarchive
 
 |参数|类型|说明|
 |:---|:---|:---|
-|messageIds|String collection|要取消存档的邮件 ID 的列表。|
+|messageIds|String 集合|要取消存档的邮件 ID 的列表。|
 
 ## <a name="response"></a>响应
 
-如果成功，此操作在响应正文中返回 响应代码和 `200 OK` `true` 布尔值。 否则，将在 `false` 响应正文中返回 。
+如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和布尔 `true` 值。 否则，将在响应 `false` 正文中返回 。
 
 ## <a name="example"></a>示例
 
@@ -90,8 +90,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-unarchive-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-unarchive-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceupdatemessage-unarchive-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

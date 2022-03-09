@@ -5,21 +5,21 @@ author: inbarckms
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 314cba3861d92856ed79e38058f13e426b3339b3
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: c2d2281783edb5fd3435401f270f8beee1b013b6
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226027"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394066"
 ---
 # <a name="update-temporaryaccesspassauthenticationmethodconfiguration"></a>更新 temporaryAccessPassAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md)对象的属性，该对象表示 Azure AD 租户的临时访问传递身份验证方法策略。
+更新 [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) 对象的属性，该对象代表 Azure AD 租户的临时访问传递身份验证方法策略。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -55,7 +55,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/T
 
 对象的所有属性都可以更新。 有关属性的列表，请参阅 [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md)。
 
->**注意：**`@odata.type`属性值为 的 属性 `#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration` 必须包含在正文中。
+>**注意：** 属性值 `@odata.type` 为 的 `#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration` 属性必须包含在正文中。
 
 ## <a name="response"></a>响应
 
@@ -105,6 +105,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-temporaryaccesspassauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-temporaryaccesspassauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

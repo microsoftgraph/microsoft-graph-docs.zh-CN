@@ -5,19 +5,19 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5bce770759d9988b6c08a5dab49af897865f8754
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 387bfa83159675f8fc8e144fa3825c13aa964e71
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646991"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396572"
 ---
 # <a name="create-organizationalbrandinglocalization"></a>创建 organizationalBrandingLocalization
 命名空间：microsoft.graph
 
 创建新的 [organizationalBrandingLocalization](../resources/organizationalBrandingLocalization.md) 对象。 这将创建本地化品牌，同时创建默认品牌（如果不存在）。
 
-默认品牌仅创建一次。 当未为用户的浏览器语言配置本地化品牌时，将加载它。 若要检索默认品牌，请参阅获取 [品牌](organizationalbranding-get.md)。
+默认品牌仅创建一次。 当未为用户的浏览器语言配置本地化品牌时，将加载它。 若要检索默认品牌，请参阅 [获取品牌](organizationalbranding-get.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ POST /organization/{organizationId}/branding/localizations
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| id | String | 表示使用区域性名称指定的区域设置的标识符。 区域性名称遵循 RFC 1766 标准，格式为"languagecode2-country/regioncode2"，其中"languagecode2"是派生自 ISO 639-1 的大写两字母代码，而"country/regioncode2"是派生自 ISO 3166 的大写两字母代码。 例如，美国英语为 `en-US` 。 无法将 **id** 的值设置为 String 类型或 来创建默认 `0` 品牌 `default` 。  <br/><br/>**注意：** 目前不支持单个区域设置的多个品牌。 |
+| id | String | 表示使用区域性名称指定的区域设置的标识符。 区域性名称遵循 RFC 1766 标准，格式为"languagecode2-country/regioncode2"，其中"languagecode2"是派生自 ISO 639-1 的大写两字母代码，而"country/regioncode2"是派生自 ISO 3166 的大写两字母代码。 例如，美国英语为 `en-US`。 无法将 **id** 的值设置为 String 类型或 来创建默认品牌`0``default`。  <br/><br/>**注意：** 目前不支持单个区域设置的多个品牌。 |
 
 ## <a name="response"></a>响应
 
@@ -58,7 +58,7 @@ POST /organization/{organizationId}/branding/localizations
 
 ## <a name="examples"></a>示例
 
-以下示例为法语和本地化创建 () `fr-FR` 本地化。 String 类型的任何未指定属性都继承自默认品牌对象中的值。 例如，如果默认品牌对象中的 signInPageText 为 ，则在此请求中创建的品牌的 `null` signInPageText `fr-FR` 也将为 `null` 。 若要替代 `null` 不带任何文本的值，请使用仅包含空格的字符串。
+以下示例为法语和本地化创建 () `fr-FR` 本地化。 String 类型的任何未指定属性都继承自默认品牌对象中的值。 例如，如果默认品牌对象中的 signInPageText 为 `null`，则在此请求中创建的品牌的 signInPageText `fr-FR` 也将为 `null`。 若要替代不带 `null` 任何文本的值，请使用仅包含空格的字符串。
 
 ### <a name="request"></a>请求
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-organizationalbrandinglocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

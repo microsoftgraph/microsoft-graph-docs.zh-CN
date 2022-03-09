@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0d584c5bd95425e705b55409a0651426c479f92c
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 9e160b780cdb771250856d4696fa6bc97c376209
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239244"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395368"
 ---
 # <a name="get-smsauthenticationmethodconfiguration"></a>获取 smsAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取[smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure AD 方法策略。
+读取 [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) 对象的属性和关系，该对象代表 Azure AD 方法策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,7 +54,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-smsauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-smsauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mecampos
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: fd6aabbd403ddc57798e3e8b6c123839a3f0bf5c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 582d4d1c912e13754cc8dd4377228256c307a3cc
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336078"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395459"
 ---
 # <a name="update-schema"></a>更新架构
 
@@ -18,7 +18,7 @@ ms.locfileid: "61336078"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[externalConnection](../resources/externalconnectors-externalconnection.md)[架构](../resources/externalconnectors-schema.md)的属性。
+更新 [externalConnection](../resources/externalconnectors-externalconnection.md) [架构](../resources/externalconnectors-schema.md)的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -50,11 +50,11 @@ PATCH /external/connections/{connectionId}/schema
 
 在请求正文中，提供架构对象的 JSON [表示](../resources/externalconnectors-schema.md) 形式。
 
-注册自定义项架构时，**架构** 对象必须将 **baseType** 属性设置为 ， `microsoft.graph.externalItem` **并且必须** 包含 **properties** 属性。 **properties** 对象 **必须至少** 包含一个属性，最多包含 128 个属性。
+注册自定义项架构时，**架构** 对象必须将 **baseType** 属性设置为 `microsoft.graph.externalItem` ，**并且必须** 包含 **properties** 属性。 **properties** 对象 **必须至少** 包含一个属性，最多包含 128 个属性。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应标头中返回 响应代码和 `202 Accepted` URL，可用于 `Location` [获取操作状态](../api/externalconnectors-connectionoperation-get.md)。
+如果成功，此方法在响应 `202 Accepted` 标头中返回 响应代码和 URL `Location` ，可用于 [获取操作状态](../api/externalconnectors-connectionoperation-get.md)。
 
 ## <a name="examples"></a>示例
 
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-schema-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-schema-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

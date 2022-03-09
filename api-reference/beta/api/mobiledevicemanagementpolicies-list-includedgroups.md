@@ -5,12 +5,12 @@ author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6644d15cf564304bf2cd3a0ba5894caa10f76e35
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7067b131572f8346ba6a8bcf36a448ff732c7858
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59507860"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397881"
 ---
 # <a name="list-includedgroups"></a>列出 includedGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "59507860"
 
 获取包含在移动设备管理策略中的组列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,7 +53,7 @@ GET /policies/mobileDeviceManagementPolicies/{id}/includedGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [group](../resources/group.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [group](../resources/group.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab9
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

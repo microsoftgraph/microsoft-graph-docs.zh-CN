@@ -5,12 +5,12 @@ author: mohitpcad
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 7fd7e3c7361f04ce0b63f86624fc9fc64a3527a5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a5735c704faee4f53f54ec2f0a44f2dd7c8845fc
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61017413"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397125"
 ---
 # <a name="get-set"></a>获取集
 命名空间：microsoft.graph.termStore [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/termStore/sets/8ed8c9ea-7052-4c1d-a4d7-b9c1
 [!INCLUDE [sample-code](../includes/snippets/java/get-set-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-set-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -145,6 +145,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-sitecollection-termstore-set-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-sitecollection-termstore-set-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

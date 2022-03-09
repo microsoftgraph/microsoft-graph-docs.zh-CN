@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b29fe74cae67dab5731ba7098f2fc7cf3591ddda
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8bcd70fc0c6e57b4f069f40428a25a308a50f67b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338352"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396306"
 ---
 # <a name="list-transitiveroleassignment"></a>列出 transitiveRoleAssignment
 
@@ -71,9 +71,9 @@ GET /roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '
 
 | 用户 | 组 | Role | 范围 | 角色分配 ID |
 | :---: | :---: | :---: | :---: | :---: |
-| Alice<br/>`2c7936bc-3517-40f3-8eda-4806637b6516` |  | 用户管理员<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Tenant | RA1<br/>`857708a7-b5e0-44f9-bfd7-53531d72a739` |
-|  | G1<br/>`ae2fc327-4c71-48ed-b6ca-f48632186510`<br/> (Alice 是成员)  | 用户管理员<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Tenant | RA2<br/>`8a021d5f-7351-4713-aab4-b088504d476e` |
-|  | G2<br/>`6ffb34b8-5e6d-4727-a7f9-93245e7f6ea8`<br/> (Alice 是成员)  | 支持管理员<br/>`729827e3-9c14-49f7-bb1b-9608f156bbb8` | AU1 (管理) <br/>`26e79164-0c5c-4281-8c5b-be7bc7809fb2` | RA3<br/>`6cc86637-13c8-473f-afdc-e0e65c9734d2` |
+| Alice<br/>`2c7936bc-3517-40f3-8eda-4806637b6516` |  | 用户管理员<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | 租户 | RA1<br/>`857708a7-b5e0-44f9-bfd7-53531d72a739` |
+|  | G1<br/>`ae2fc327-4c71-48ed-b6ca-f48632186510`<br/> (Alice 是成员)  | 用户管理员<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | 租户 | RA2<br/>`8a021d5f-7351-4713-aab4-b088504d476e` |
+|  | G2<br/>`6ffb34b8-5e6d-4727-a7f9-93245e7f6ea8`<br/> (Alice 是成员)  | 帮助台管理员<br/>`729827e3-9c14-49f7-bb1b-9608f156bbb8` | AU1 (管理) <br/>`26e79164-0c5c-4281-8c5b-be7bc7809fb2` | RA3<br/>`6cc86637-13c8-473f-afdc-e0e65c9734d2` |
 
 + Alice 直接在租户范围内分配有 RA1 的用户角色分配角色。 
 + Alice 是组 G1 的成员，G1 在租户范围内分配了具有 RA2 的用户角色分配角色。
@@ -114,6 +114,10 @@ ConsistencyLevel: eventual
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignment-all-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-all-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -200,6 +204,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignment-transitive-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-transitive-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -275,6 +283,10 @@ ConsistencyLevel: eventual
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignment-tenantscoped-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-tenantscoped-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

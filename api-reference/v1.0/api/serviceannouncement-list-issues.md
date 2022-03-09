@@ -5,21 +5,21 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: fe219af5db0d7cda28a52bb65ffdd3ecc3594361
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 6680ef9154c997e106b6394f07533ca19bfda15e
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072674"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394220"
 ---
 # <a name="list-issues"></a>列出问题
 命名空间：microsoft.graph
 
-从 issues 导航属性中检索[serviceHealthIssue](../resources/servicehealthissue.md)资源。 
+从 [issues 导航属性中检索 serviceHealthIssue](../resources/servicehealthissue.md) 资源。
 
 此操作检索有关租户存在的所有服务运行状况问题的信息。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -51,7 +51,7 @@ GET /admin/serviceAnnouncement/issues
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [serviceHealthIssue](../resources/servicehealthissue.md) 对象集合。 对响应进行分页，每个页面包含 100 个对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [serviceHealthIssue](../resources/servicehealthissue.md) 对象集合。 对响应进行分页，每个页面包含 100 个对象。
 
 ## <a name="example"></a>示例
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-servicehealthissue-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-servicehealthissue-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

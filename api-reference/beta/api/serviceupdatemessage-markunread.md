@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: f9ea57a409949c7f32dbdb189586f76c449bba37
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4604f93e2472fa55ce267ec20cab4bef8b4cd459
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002468"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63398014"
 ---
 # <a name="serviceupdatemessage-markunread"></a>serviceUpdateMessage：markUnread
 命名空间：microsoft.graph
@@ -51,11 +51,11 @@ POST /admin/serviceAnnouncement/messages/markUnread
 
 |参数|类型|说明|
 |:---|:---|:---|
-|messageIds|String collection|要标记为未读的邮件标识号列表。|
+|messageIds|String 集合|要标记为未读的邮件标识号列表。|
 
 ## <a name="response"></a>响应
 
-如果成功，此操作在响应正文中返回 响应代码和 `200 OK` `true` 布尔值。 否则，将在 `false` 响应正文中返回 。
+如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和布尔 `true` 值。 否则，将在响应 `false` 正文中返回 。
 
 ## <a name="example"></a>示例
 
@@ -91,8 +91,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-markunread-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-markunread-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceupdatemessage-markunread-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

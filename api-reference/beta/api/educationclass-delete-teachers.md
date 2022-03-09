@@ -2,15 +2,15 @@
 title: 删除 teacher
 description: 从课程中删除教师。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 905edc2dee2aa1400b72a0da88faca33a7fcf829
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 0d8dc5046ff524c56e645e808f4c453c54f46657
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785989"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395060"
 ---
 # <a name="remove-teacher"></a>删除教师
 
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/teachers/14012
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from-educationschool-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationclass-from-educationschool-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

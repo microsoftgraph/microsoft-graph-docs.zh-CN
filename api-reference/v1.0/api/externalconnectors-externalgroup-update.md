@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e56928947f05a04c844d9839308e35aae5a88870
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 668121e6e459b2702485742a318a6eaf6abd56d9
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687799"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395263"
 ---
 # <a name="update-externalgroup"></a>更新 externalGroup
 命名空间：microsoft.graph.externalConnectors
@@ -52,7 +52,7 @@ PATCH /external/connections/{connectionsId}/groups/{externalGroupId}
 | 属性    | 类型   | 说明                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
 | displayName | String | 外部组的友好名称。 可选。                                                                      |
-| 说明 | 字符串 | 外部组的说明。 可选。                                                                         |
+| 说明 | String | 外部组的说明。 可选。                                                                         |
 
 
 
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-externalgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-externalgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 在 DriveItem 的子项关系中返回 DriveItems 集合。
 ms.date: 09/10/2017
 title: 列出文件夹的内容
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 86bc8629f086cb40b4ab500115c04d2aeb7b36e6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1e829cabb4f7c9f58b4d712e3748fca2a5aa25c3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964279"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394850"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 
@@ -116,6 +116,10 @@ GET /drives/{drive-id}/items/{item-id}/children
 [!INCLUDE [sample-code](../includes/snippets/java/list-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-children-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -129,8 +133,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回目标项的子项集合列表。
-子项集合由 [driveItem][item-resource] 资源组成。
+如果成功，此方法将返回目标项的子项集合列表。 子项集合由 [driveItem][item-resource] 资源组成。
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

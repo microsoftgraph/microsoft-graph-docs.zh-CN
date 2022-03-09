@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 762476a80d1cdfc492d1f9e23259cca5b6a32552
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: f8204252dc6355737d184512c9000161bd4040c3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995248"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395249"
 ---
 # <a name="get-organizationalbrandinglocalization"></a>Get organizationalBrandingLocalization
 命名空间：microsoft.graph
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbrandinglocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -178,7 +182,7 @@ Content-Type: application/json
 
 ### <a name="example-3-get-the-bannerlogo-for-the-default-locale"></a>示例 3：获取默认区域设置的 bannerLogo
 
-下面的示例返回默认 **区域设置中的 bannerLogo** 对象。 您可以在请求 **URL 中** 指定 id 或 `default` `0` 。 如果未设置对象，请求将返回空响应。
+下面的示例返回默认 **区域设置中的 bannerLogo** 对象。 您可以在请求 **URL 中** 指定 `default` `0` id 或 。 如果未设置对象，请求将返回空响应。
 
 #### <a name="request"></a>请求
 
@@ -212,7 +216,7 @@ Content-Type: image/*
 
 ### <a name="example-4-get-the-bannerlogo-for-the-fr-fr-locale"></a>示例 4：获取 fr-FR 区域设置的 bannerLogo
 
-下面的示例返回 **未设置其 bannerLogo** 区域设置的 `fr-FR` bannerLogo 对象。
+下面的示例返回 **未设置其 bannerLogo 区域设置的 bannerLogo** `fr-FR` 对象。
 
 #### <a name="request"></a>请求
 
@@ -242,6 +246,10 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbranding-frlocale-bannerlogo-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 24ec6677a6126e8007b9d9e87fa4f3ea17396623
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d0e0cdbb02eac434365490be730f13ae022ff705
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131248"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397216"
 ---
 # <a name="list-group-members"></a>List group members
 
@@ -196,7 +196,7 @@ Content-type: text/plain
 
 
 
-### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 转换获取显示名称包含字母"Pr"（包括返回的对象计数）的组的用户成员资格
+### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 转换获取显示名称包含字母"Pr"（包括返回对象计数）的组的用户成员资格
 
 #### <a name="request"></a>请求
 
@@ -330,4 +330,45 @@ Content-type: application/json
 }
 -->
 
+### <a name="example-6-use-odata-cast-to-retrieve-service-principals-added-as-group-members"></a>示例 6：使用 OData 转换检索作为组成员添加的服务主体
 
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members_serviceprincipals"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/3802e9bb-0951-4e18-b9eb-f934b4241194/members/microsoft.graph.servicePrincipal
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals",
+  "value": [
+    {
+      "id": "11111111-2222-3333-4444-555555555555",
+      "deletedDateTime": null,
+      "accountEnabled": true,
+      "appDisplayName": "Contoso Azure App",
+      "appId": "11111111-2222-3333-4444-555555555555",
+    }
+  ]
+}
+```

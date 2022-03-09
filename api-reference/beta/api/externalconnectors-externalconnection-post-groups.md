@@ -2,15 +2,15 @@
 title: 创建 externalGroup
 description: 创建新的 externalGroup 对象。
 author: snlraju-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4bd53a81d0efb6e36945cd18d395b7662adb4c74
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: c558a0452984ee67a5adb92269af6e40c80d39e5
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697392"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394829"
 ---
 # <a name="create-externalgroup"></a>创建 externalGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "58697392"
 
 创建新的 [externalGroup](../resources/externalconnectors-externalgroup.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,13 +52,13 @@ POST /external/connections/{connectionId}/groups
 
 在请求正文中，提供 **externalGroup** 对象的 JSON 表示形式。
 
-您可以在创建 externalGroup 时指定 **以下属性**。
+您可以在创建 **externalGroup 时指定以下属性**。
 
 | 属性    | 类型   | 说明                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
 | id          | String | 连接内外部组的唯一 ID。 它必须是字母数字，并且最多为 128 个字符。 |
-| displayName | String | 外部组的友好名称。 可选。                                                                      |
-| description | String | 外部组的说明。 可选。                                                                         |
+| displayName | 字符串 | 外部组的友好名称。 可选。                                                                      |
+| 说明 | String | 外部组的说明。 可选。                                                                         |
 
 ## <a name="response"></a>响应
 
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroup-from-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroup-from-connection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fc0677dd350bf1f308d60a4fc24d9bfddeeb3807
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: cb3817b610557b8c79c9632a0d5a0f287cb2652b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224746"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397468"
 ---
 # <a name="delete-emailauthenticationmethodconfiguration"></a>删除 emailAuthenticationMethodConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "61224746"
 
 将电子邮件身份验证方法策略 [还原](../resources/emailauthenticationmethodconfiguration.md) 为默认配置，以删除对策略所做的更改。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/aut
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-emailauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-emailauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

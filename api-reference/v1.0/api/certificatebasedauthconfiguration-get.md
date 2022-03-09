@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 165f4be79e360a3a9aa87b9ab11dded62093f31f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9677cecab1a74c753adf227a5d58e303567ef6f4
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056884"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394311"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>获取 certificateBasedAuthConfiguration
 
@@ -48,7 +48,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的 [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfi
 [!INCLUDE [sample-code](../includes/snippets/java/get-certificatebasedauthconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-certificatebasedauthconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

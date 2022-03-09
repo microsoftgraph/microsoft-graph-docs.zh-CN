@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 58d152b83534978334c1a22748319b2401bcfc7e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9fa0a4816fa9fc6ce9e99b554eeed3fb8c70460e
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098945"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396712"
 ---
 # <a name="servicehealthissue-incidentreport"></a>serviceHealthIssue：incidentReport
 命名空间：microsoft.graph
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO248163/i
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/servicehealthissue-incidentreport-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/servicehealthissue-incidentreport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 30c330163d61471931866cd4227e052c0fe6fd24
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 704ad177920df8ec34f6964b54752db777516347
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61340744"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396124"
 ---
 # <a name="delete-organizationalbrandinglocalization"></a>删除 organizationalBrandingLocalization
 命名空间：microsoft.graph
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-organizationalbrandinglocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

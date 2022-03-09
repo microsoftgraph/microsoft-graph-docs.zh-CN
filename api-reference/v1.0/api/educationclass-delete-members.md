@@ -5,29 +5,29 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c1901cdacfee980fd195715281b3f48ca98a53e4
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 9d3a4bb2945edafef30bb7eef07ad7ba6a586ef5
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223766"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396684"
 ---
 # <a name="remove-member-from-educationclass"></a>从 educationClass 中删除成员
 
 命名空间：microsoft.graph
 
-从[educationClass](../resources/educationclass.md)中删除[educationUser。](../resources/educationuser.md)
+从 [educationClass 中删除 educationUser](../resources/educationuser.md)。[](../resources/educationclass.md)
 
 > **注意：** 教师 _和_ 学生包含在课程 **members** 集合中。 调用此 API 之前，请确保要删除的 **educationUser** 不是教师。 通过调用教师educationclass_list_teachers并验证要[](educationclass-list-teachers.md)删除的用户的用户 ID 不在返回的教师列表中，获取教师列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | EduRoster.ReadWrite.All | 
+|应用程序 | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/{me
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from-educationschool-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationclass-from-educationschool-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

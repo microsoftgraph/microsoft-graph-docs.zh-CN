@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 536e1007960a8ae58ab2ff462640658941c3d507
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 366ffb4b9ca3bfc7963cb0d861f0b40c004ef3f3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224417"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395879"
 ---
 # <a name="update-fido2authenticationmethodconfiguration"></a>更新 fido2AuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
-更新[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)对象的属性，该对象代表 Azure AD 租户的 FIDO2 安全密钥身份验证方法策略。
+更新 [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象的属性，该对象代表 Azure AD 租户的 FIDO2 安全密钥身份验证方法策略。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -53,7 +53,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/f
 
 有关可更新的属性的列表，请参阅 [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)。
 
->**注意：**`@odata.type`属性值为 的 属性 `#microsoft.graph.fido2AuthenticationMethodConfiguration` 必须包含在正文中。
+>**注意：** 属性值 `@odata.type` 为 的 `#microsoft.graph.fido2AuthenticationMethodConfiguration` 属性必须包含在正文中。
 
 
 ## <a name="response"></a>响应
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-fido2authenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-fido2authenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

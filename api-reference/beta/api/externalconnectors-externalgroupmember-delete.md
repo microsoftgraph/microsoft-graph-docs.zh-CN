@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 01cfa286d6074732bb11fc4db9ae277e34087526
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b9488fb10b638afe81958e4906dcc34accf231bf
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "62125906"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395823"
 ---
 # <a name="delete-externalgroupmember"></a>删除 externalGroupMember
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/groups/31
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-externalgroupmember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-externalgroupmember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

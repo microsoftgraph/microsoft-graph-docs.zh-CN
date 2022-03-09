@@ -5,12 +5,12 @@ author: sacampbe
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: ab13c0cf77a4b6416d574e109dbb579caa40c639
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 508189bc61dcc7eec8f35da1b8733d72e957b0e0
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561267"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394941"
 ---
 # <a name="create-identity"></a>创建标识
 命名空间：microsoft.graph.externalConnectors
@@ -27,7 +27,7 @@ ms.locfileid: "60561267"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| Application                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                  |
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                  |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,8 +54,8 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 | 属性       | 类型                    | 说明                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | 成员 `id` 的唯一性。 对于用户或 **组**，它Azure Active Directory objectId，对于外部组，为 **externalGroupId。** 此为必需属性。                                    |
-| type           | microsoft.graph.externalConnectors.identityType | 添加到外部组的成员的类型。 可能的值是 `user` `group` `externalGroup` ：、、。 必需。 |
+| id             | String                  | 成员 `id` 的唯一性。 对于用户或组，它将是 **objectId** Azure Active Directory，对于外部组，为 **externalGroupId**。 此为必需属性。                                    |
+| type           | microsoft.graph.externalConnectors.identityType | 添加到外部组的成员的类型。 可能的值是：、`user``group`、`externalGroup`。 必需。 |
 
 
 ## <a name="response"></a>响应
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-aad-user-identity-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-aad-user-identity-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -161,6 +165,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-aad-group-identity-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-aad-group-identity-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -218,6 +226,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-external-group-identity-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-external-group-identity-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,13 +4,13 @@ description: 获取有关此资源下发生视图的 itemAnalytics。
 title: 获取分析结果
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: c3fc4057142e5a6706d0302328a27b703b0e9b8b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.prod: sharepoint
+ms.openlocfilehash: ad9520c5605467fd515a1abd59402ed693845fef
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337003"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393330"
 ---
 # <a name="get-analytics"></a>获取分析结果
 
@@ -90,6 +90,10 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-analytics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-analytics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

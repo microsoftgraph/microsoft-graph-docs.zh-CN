@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8c2d1a5f669c3ad9f48a5126513201eb7cbd9072
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d45ab60720a356a6aec44263c66d6e1109a5df77
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696093"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394689"
 ---
 ```javascript
 
@@ -22,22 +22,27 @@ const tenantAppManagementPolicy = {
             {
                 restrictionType: 'passwordAddition',
                 maxLifetime: null,
-                restrictForAppsCreatedAfterDateTime: '2021-04-01T10:37:00Z'
+                restrictForAppsCreatedAfterDateTime: '2021-01-01T10:37:00Z'
             },
             {
                 restrictionType: 'passwordLifetime',
                 maxLifetime: 'P4DT12H30M5S',
-                restrictForAppsCreatedAfterDateTime: '2019-01-01T10:37:00Z'
+                restrictForAppsCreatedAfterDateTime: '2017-01-01T10:37:00Z'
             },
             {
                 restrictionType: 'symmetricKeyAddition',
                 maxLifetime: null,
-                restrictForAppsCreatedAfterDateTime: '2021-04-01T10:37:00Z'
+                restrictForAppsCreatedAfterDateTime: '2021-01-01T10:37:00Z'
+            },
+            {
+                restrictionType: 'customPasswordAddition',
+                maxLifetime: null,
+                restrictForAppsCreatedAfterDateTime: '2015-01-01T10:37:00Z'
             },
             {
                 restrictionType: 'symmetricKeyLifetime',
                 maxLifetime: 'P40D',
-                restrictForAppsCreatedAfterDateTime: '2015-04-01T10:37:00Z'
+                restrictForAppsCreatedAfterDateTime: '2015-01-01T10:37:00Z'
             }
         ],
         keyCredentials: [

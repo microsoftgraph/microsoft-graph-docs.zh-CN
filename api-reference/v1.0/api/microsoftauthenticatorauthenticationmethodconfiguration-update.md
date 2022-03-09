@@ -5,20 +5,20 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4d2195db30353eb3bcd6296cfe3da57cfe382de9
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: aea14768e673bea312afcd062cf11bb186a91a2d
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225994"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396824"
 ---
 # <a name="update-microsoftauthenticatorauthenticationmethodconfiguration"></a>更新 microsoftAuthenticatorAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
-更新[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)对象的属性，该对象表示 Microsoft Authenticator 租户的 Azure AD 方法策略。
+更新 [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 对象的属性，该对象表示 Microsoft Authenticator 租户的 Azure AD 身份验证方法策略。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -51,9 +51,9 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/m
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 对象的 JSON 表示形式以及应更新的字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-有关属性的列表，请参阅 [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)。
+有关属性列表，请参阅 [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)。
 
->**注意：**`@odata.type`属性值为 的 属性 `#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration` 必须包含在正文中。
+>**注意：** 属性值 `@odata.type` 为 的 `#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration` 属性必须包含在正文中。
 
 ## <a name="response"></a>响应
 
@@ -92,6 +92,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-microsoftauthenticatorauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-microsoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

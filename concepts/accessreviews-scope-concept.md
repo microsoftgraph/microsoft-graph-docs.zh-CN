@@ -5,30 +5,30 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 8a8a880882c0a9904484e97d8406bb971c2ff05e
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 8224e78c0597777520de13906c7f3e302703cfd5
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651398"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394500"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 配置访问评审的范围
 
-访问Azure AD [API](/graph/api/resources/accessreviewsv2-overview)允许你以编程方式查看用户、服务主体或组对访问你的Azure AD的访问权限。
+访问Azure AD [API](/graph/api/resources/accessreviewsv2-overview) 允许你以编程方式查看用户、服务主体或组对访问你的Azure AD的访问权限。
 
-要审阅的资源在访问评审 [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition)资源的 **scope** 属性中配置。 此属性的类型为 [accessReviewScope，](/graph/api/resources/accessreviewscope)这是一个抽象类型，继承自以下资源，可用于配置将针对其访问的资源或资源组。
+要审阅的资源在访问评审 [accessReviewScheduleDefinition 资源的 scope 属性中](/graph/api/resources/accessreviewscheduledefinition)配置。 此属性的类型为 [accessReviewScope](/graph/api/resources/accessreviewscope)，这是一个抽象类型，继承自以下资源，可用于配置将针对其访问的资源或资源组。
 
 |资源|说明|示例场景|
 |:---    |:---       |:---             |
-|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|最适用于查看有权访问资源或相关资源组的完整主体集或子集。|<ul><li>分配给组的用户的成员身份。</li><li>来宾用户访问一个组。</li><li>来宾用户访问租户中Microsoft 365组。</li><li>分配给特权角色的服务主体。</li><li>对权利管理访问包的用户和服务主体访问权限。</li></ul>|
+|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|最适用于查看有权访问资源或相关资源组的完整主体集或子集。|<ul><li>分配给组的用户的成员身份。</li><li>来宾用户访问一个组。</li><li>来宾用户对租户中Microsoft 365组的访问权限。</li><li>分配给特权角色的服务主体。</li><li>对权利管理访问包的用户和服务主体访问权限。</li></ul>|
 |[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|继承自 accessReviewQueryScope。 仅在查看非活动用户时使用。 非活动状态由 **inactiveDuration 属性** 指定。 |<ul><li>仅非活动用户的组成员身份。</li><ul>|
-|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|最适用于查看主体对配置唯一主体和资源池的资源的访问权限。|<ul><li>查看跨 1 个组 3 个特定主体Microsoft 365 *1* 个特权Azure AD角色。</li><ul>|
+|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|最适用于查看主体对配置唯一主体和资源池的资源的访问权限。|<ul><li>查看跨 1 个组 3 个特定主体Microsoft 365 *1 个特权* Azure AD角色。</li><ul>|
 
 本文将介绍这些类型的 accessReviewScope，以配置各种Azure AD资源作为访问评审的范围。 这可以帮助您自动执行主动审阅并控制对组织中资源的访问权限。  
 
 ## <a name="use-accessreviewqueryscope-to-configure-scope"></a>使用 accessReviewQueryScope 配置作用域
 
-若要使用 **accessReviewQueryScope** 类型配置范围，请设置其 **query、queryRoot** 和 **queryType** 属性的值。  有关这些属性的说明，请参阅 [accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope) 资源类型。
+若要使用 **accessReviewQueryScope** 类型配置范围，请设置其 **query**、 **queryRoot** 和 **queryType** 属性的值。 有关这些属性的说明，请参阅 [accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope) 资源类型。
 
 ### <a name="example-1-review-all-users-assigned-to-a-group"></a>示例 1：查看分配给组的所有用户
 
@@ -73,7 +73,7 @@ ms.locfileid: "61651398"
     "queryType": "MicrosoftGraph"
 }
 ```
-由于此审阅适用于所有Microsoft 365组，因此请配置 **instanceEnumerationScope** 以指定Microsoft 365组。 请注意，此审阅中不包含动态组和角色可分配组。
+由于此检查适用于所有Microsoft 365组，因此请配置 **instanceEnumerationScope** 以指定Microsoft 365组。 请注意，此审阅中不包含动态组和角色可分配组。
 
 ### <a name="example-4-review-all-guest-users-assigned-to-all-microsoft-365-groups"></a>示例 4：查看分配给所有来宾组的所有Microsoft 365用户
 
@@ -89,9 +89,9 @@ ms.locfileid: "61651398"
 }
 ```
 
-由于此审阅适用于所有Microsoft 365组，因此请配置 **instanceEnumerationScope** 以指定Microsoft 365组。 请注意，此审阅中不包含动态组和角色可分配组。
+由于此检查适用于所有Microsoft 365组，因此请配置 **instanceEnumerationScope** 以指定Microsoft 365组。 请注意，此审阅中不包含动态组和角色可分配组。
     
-### <a name="example-5-review-all-guest-users-assigned-to-all-teams"></a>示例 5：查看分配给所有来宾组的所有来宾Teams
+### <a name="example-5-review-all-guest-users-assigned-to-all-teams"></a>示例 5：查看分配给所有用户的所有来宾Teams
 
 ```http
 "instanceEnumerationScope": {
@@ -122,7 +122,7 @@ ms.locfileid: "61651398"
 }
 ```
 
-由于此审阅适用于非活动用户，因此请使用 **accessReviewInactiveUsersQueryScope** 资源并使用值 **@odata.type** 属性 `#microsoft.graph.accessReviewInactiveUsersQueryScope` 。 请注意，此审阅中不包含动态组和角色可分配组。
+由于此审阅适用于非活动用户，请使用 **accessReviewInactiveUsersQueryScope** 资源并使用值 **指定 @odata.type** 类型属性 `#microsoft.graph.accessReviewInactiveUsersQueryScope`。 请注意，此审阅中不包含动态组和角色可分配组。
 
 ### <a name="example-7-review-all-inactive-guest-users-assigned-to-all-teams"></a>示例 7：查看分配给所有用户的所有非活动来宾Teams
 
@@ -141,7 +141,7 @@ ms.locfileid: "61651398"
 
 由于此审查适用于所有团队，因此请配置 **instanceEnumerationScope** 属性以指定所有团队。 请注意，此审阅中不包含动态组和角色可分配组。
 
-### <a name="example-8-review-all-assignemnt-to-entitlement-management-access-packages"></a>示例 8：查看权利管理访问包的所有分配
+### <a name="example-8-review-all-assignment-to-entitlement-management-access-packages"></a>示例 8：查看对权利管理访问包的所有分配
 
 ```http
 "scope": {

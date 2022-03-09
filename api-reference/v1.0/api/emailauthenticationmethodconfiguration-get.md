@@ -5,18 +5,18 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 596afa411778190bd3f264d3dc37ed6515f142d9
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 94f84e40ff5cc9aa620a60d7b41be3360830e5a9
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239321"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395298"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>获取 emailAuthenticationMethodConfiguration
 
 命名空间：microsoft.graph
 
-读取[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 的电子邮件[OTP](../resources/authenticationmethodspolicies-overview.md)身份验证方法策略。
+读取 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 租户的电子邮件 [OTP 身份验证](../resources/authenticationmethodspolicies-overview.md)方法策略。
 
 ## <a name="permissions"></a>权限
 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -87,6 +87,10 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/ema
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-emailauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-emailauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

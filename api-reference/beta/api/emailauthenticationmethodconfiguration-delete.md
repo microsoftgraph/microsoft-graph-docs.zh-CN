@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: acaab4298889a12b67844fe887653e7c21e60098
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 84ac2268e0d683a709f68c4db83278c12b5bfdcd
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226860"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397426"
 ---
 # <a name="delete-emailauthenticationmethodconfiguration"></a>删除 emailAuthenticationMethodConfiguration
 
@@ -20,14 +20,14 @@ ms.locfileid: "61226860"
 
 将电子邮件身份验证方法策略 [还原](../resources/emailauthenticationmethodconfiguration.md) 为默认配置，以删除对策略所做的更改。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 对于委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-emailauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-emailauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

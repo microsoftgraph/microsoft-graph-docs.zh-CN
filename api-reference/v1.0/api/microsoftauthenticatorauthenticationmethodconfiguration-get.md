@@ -5,17 +5,17 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ad22ffe8e6b044afcc68b18b1873ca250713331b
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 774a1179f3e748b811d075e48a8ad949a575c866
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239324"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396138"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a>获取 microsoftAuthenticatorAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
-检索[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)对象的属性和关系，该对象表示 Microsoft Authenticator 租户的 Azure AD 方法策略。
+检索 [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 对象的属性和关系，该对象表示 Microsoft Authenticator 租户的 Azure AD 方法策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +52,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/mic
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-microsoftauthenticatorauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-microsoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

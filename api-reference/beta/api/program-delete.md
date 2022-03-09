@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: c93ab2112346b082d9a9e6e24a1dc528bdbc549c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2220f7dc45749723e813fdcd85a8313001ff1804
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132746"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63396761"
 ---
 # <a name="delete-program"></a>删除程序
 
@@ -18,9 +18,11 @@ ms.locfileid: "62132746"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，删除[程序](../resources/program.md)对象。
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-不要删除仍链接到该程序的程序，应首先删除这些访问评审，或将其从该程序取消链接，并链接到 `programControl` 其他程序。  此外，请注意，无法删除内置默认程序。
+在Azure AD[评审功能](../resources/accessreviews-root.md)中，删除[程序](../resources/program.md)对象。
+
+不要删除仍链接到 `programControl` 该程序的程序，应首先删除这些访问评审，或将其从该程序取消链接，并链接到其他程序。  此外，请注意，无法删除内置默认程序。
 
 
 ## <a name="permissions"></a>权限

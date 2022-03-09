@@ -5,19 +5,19 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 756c3cf5d3bf8a2b2b70e2a6a7b6807a7ef486da
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 45a8e7a58c2f026d461716162eba73130002a19c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030595"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397664"
 ---
 # <a name="serviceupdatemessage-unfavorite"></a>serviceUpdateMessage：unfavorite
 命名空间：microsoft.graph
 
-删除已登录用户的 [serviceUpdateMessages](../resources/serviceupdatemessage.md) 的收藏夹状态。
+删除已登录 [用户的 serviceUpdateMessages](../resources/serviceupdatemessage.md) 的收藏夹状态。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -49,11 +49,11 @@ POST /admin/serviceAnnouncement/messages/unfavorite
 
 |参数|类型|说明|
 |:---|:---|:---|
-|messageIds|String collection|要从收藏夹中删除的邮件 ID 的列表。|
+|messageIds|String 集合|要从收藏夹中删除的邮件 ID 的列表。|
 
 ## <a name="response"></a>响应
 
-如果成功，此操作在响应正文中返回 响应代码和 `200 OK` `true` 布尔值。 否则，将在 `false` 响应正文中返回 。
+如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和布尔 `true` 值。 否则，将在响应 `false` 正文中返回 。
 
 ## <a name="example"></a>示例
 
@@ -90,8 +90,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-unfavorite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-unfavorite-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceupdatemessage-unfavorite-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

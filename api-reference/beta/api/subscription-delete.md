@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: d6fe30d453ea8ae00daf8b9f0d077963ddadaaa7
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: fd99c3017337177433d2e554fdcd88b53a9ca4cf
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368054"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396236"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -78,9 +78,9 @@ ms.locfileid: "63368054"
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### <a name="presence"></a>状态
+### <a name="onlinemeetings-presence"></a>onlineMeetings， presence
 
-**状态** 订阅需要 [加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md)，则订阅创建将失败。
+**onlineMeetings** 和 **状态** 订阅要求 [对包含](/graph/webhooks-with-resource-data) 资源数据的通知进行加密。 如果通知中需要资源数据，则如果[未指定 encryptionCertificate 和 encryptionCertificateId](../resources/subscription.md)，订阅创建将失败。[](../resources/subscription.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

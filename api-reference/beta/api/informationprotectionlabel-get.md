@@ -1,16 +1,16 @@
 ---
 title: 获取 informationProtectionLabel
 description: 检索指定 informationProtectionLabel 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 02b1d36a2b4639487b9dd88dcf67c9592bce1aa9
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 6564c59608f8f69d0a2fc68dc1639768ff0695bb
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579618"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395690"
 ---
 # <a name="get-informationprotectionlabel"></a>获取 informationProtectionLabel
 
@@ -61,7 +61,7 @@ GET /informationProtection/policy/labels/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的信息 `200 OK` [ProtectionLabel](../resources/informationprotectionlabel.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的信息 [ProtectionLabel](../resources/informationprotectionlabel.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-informationprotectionlabel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-informationprotectionlabel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4a76f2e7033df82849c1523a3b160179bc89fd82
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 64ea881ba54bcf54486892daa4e7a439afeab2e6
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976264"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395893"
 ---
 # <a name="get-serviceupdatemessage"></a>获取 serviceUpdateMessage
 命名空间：microsoft.graph
@@ -41,7 +41,7 @@ GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -51,7 +51,7 @@ GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [serviceUpdateMessage](../resources/serviceupdatemessage.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [serviceUpdateMessage](../resources/serviceupdatemessage.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -85,8 +85,12 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages/MC172851
 [!INCLUDE [sample-code](../includes/snippets/java/get-serviceupdatemessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-serviceupdatemessage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceupdatemessage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

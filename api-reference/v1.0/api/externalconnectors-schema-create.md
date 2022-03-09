@@ -5,19 +5,19 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6e32cf8ac7e11d6cefea269c4e85ef95ca1b2db4
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: eb0488fed1d07be4532061a3143ec00d39c5fa18
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266255"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396649"
 ---
 # <a name="create-schema"></a>创建架构
 命名空间：microsoft.graph.externalConnectors
 
 创建新的 [架构](../resources/externalconnectors-schema.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -37,11 +37,11 @@ POST /external/connections/{id}/schema
 ```
 在请求正文中，提供架构对象的 JSON [表示](../resources/externalconnectors-schema.md) 形式。
 
-注册自定义项架构时，**架构** 对象必须将 **baseType** 属性设置为 ， `microsoft.graph.externalItem` **并且必须** 包含 **properties** 属性。 **properties** 对象 **必须至少** 包含一个属性，最多包含 128 个属性。
+注册自定义项架构时，**架构** 对象必须将 **baseType** 属性设置为 `microsoft.graph.externalItem` ，**并且必须** 包含 **properties** 属性。 **properties** 对象 **必须至少** 包含一个属性，最多包含 128 个属性。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应标头中返回 响应代码和 `202 Accepted` URL，可用于 `Location` [获取操作状态](../api/externalconnectors-connectionoperation-get.md)。
+如果成功，此方法在响应 `202 Accepted` 标头中返回 响应代码和 URL `Location` ，可用于 [获取操作状态](../api/externalconnectors-connectionoperation-get.md)。
 
 ## <a name="examples"></a>示例
 
@@ -103,6 +103,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-schema-from-connection-async-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-schema-from-connection-async-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

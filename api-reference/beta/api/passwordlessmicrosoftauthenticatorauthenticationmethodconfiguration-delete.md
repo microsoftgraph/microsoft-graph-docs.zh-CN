@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 53aec74bc4f24e7c95c1d1f306ce180126800598
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 0f1f2c5cc8933fb9cdc7112fba914200716a1b2f
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226125"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395354"
 ---
 # <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>删除 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (弃) 
 命名空间：microsoft.graph
@@ -20,16 +20,16 @@ ms.locfileid: "61226125"
 通过将策略Microsoft Authenticator 电话其[](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)默认配置，删除对登录身份验证方法策略所做的更改。
 
 > [!CAUTION]
-> The Microsoft Authenticator Passwordless 电话 Sign-in authentication method policy API is deprecated and stopped returning results on December 31， 2020. 请使用新的身份验证Microsoft Authenticator[策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
+> The Microsoft Authenticator Passwordless 电话 Sign-in authentication method policy API is deprecated and stopped returning results on December 31， 2020. 请使用新的身份验证[Microsoft Authenticator策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 对于委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

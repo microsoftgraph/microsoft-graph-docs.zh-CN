@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 477adec71ced518708a6b976972a93b480447783
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: b94c87b0329d75273aa5c15715c8cbe0b3022a78
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266185"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397790"
 ---
 # <a name="get-transitivereports-for-a-user"></a>获取用户的 transitiveReports
 
@@ -20,7 +20,7 @@ ms.locfileid: "61266185"
 
 检索用户的可传递报告计数。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /users/{id}/transitiveReports/$count
 
 此方法仅支持 `$filter` **accountEnabled 属性的查询** 参数。 有关使用查询参数的信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -53,7 +53,7 @@ GET /users/{id}/transitiveReports/$count
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和用户的可 `200 OK` 传递报告计数。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和用户的可传递报告计数。
 
 ## <a name="examples"></a>示例
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/users/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-transitivereports-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitivereports-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

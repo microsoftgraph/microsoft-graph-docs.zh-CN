@@ -5,19 +5,19 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4d6b334dbe9911a12ef92e52e7a18b68be6dabff
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: d473b69481916a07afce30c7d401fc12ab826096
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266220"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394010"
 ---
 # <a name="get-schema"></a>获取架构
 命名空间：microsoft.graph.externalConnectors
 
 读取架构对象的属性 [和](../resources/externalconnectors-schema.md) 关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -40,7 +40,7 @@ GET /external/connections/{connectionsId}/schema
 
 此方法不支持 [使用 OData 查询参数](/graph/query-parameters) 自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-schema-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schema-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

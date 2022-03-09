@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: 在 DriveItem 的子项关系中返回 DriveItems 集合。
 doc_type: apiPageType
-ms.openlocfilehash: d9acc9d0fd087c39aac5a71336c9ee2ccf2b4d21
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 87d500496b33e1b0d1ac081bb073b247eba77bca
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063452"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394976"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 
@@ -112,6 +112,10 @@ GET /drives/{drive-id}/items/{item-id}/children
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-children-files-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-children-files-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

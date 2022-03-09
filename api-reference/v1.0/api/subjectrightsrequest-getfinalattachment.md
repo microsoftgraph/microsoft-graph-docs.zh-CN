@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: f6a05a991223202a0e7098bb60a0230f84103656
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 581868cf3c407f90b4a23b5e52659d41691eec6c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134285"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397650"
 ---
 # <a name="subjectrightsrequest-getfinalattachment"></a>subjectRightsRequest： getFinalAttachment
 命名空间：microsoft.graph
@@ -46,7 +46,7 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 
 ## <a name="response"></a>响应
 
-如果成功，此函数将重定向到包含 SAS Microsoft Azure blob 存储链接并返回 `302` 响应代码。
+如果成功，此函数将重定向到包含 SAS Microsoft Azure blob 存储链接并返回响应`200`代码。
 
 ## <a name="examples"></a>示例
 
@@ -93,6 +93,6 @@ GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRight
 }
 -->
 ``` http
-HTTP/1.1 302 
+HTTP/1.1 200 
 ```
 

@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: bf16dad69d1ca5c11b7a207fe96bdfefeef01e44
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 0442c653bff74b09e4ed4dc1f343cf2f17433d5f
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225962"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393758"
 ---
 # <a name="list-attachments"></a>列出附件
 命名空间：microsoft.graph
@@ -39,7 +39,7 @@ GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}/attachments
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持使用 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -51,7 +51,7 @@ GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}/attachments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-serviceannouncementattachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceannouncementattachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -157,6 +161,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-serviceannouncementattachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceannouncementattachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

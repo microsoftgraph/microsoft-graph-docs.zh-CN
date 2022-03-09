@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 55455343775b1c5ed5f6c7fb65ca31a759abdc4f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d0ad4e493750042472a08344f4c88da827efee09
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939285"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396243"
 ---
 # <a name="list-dailyprintusagebyuser"></a>列出 dailyPrintUsageByUser
 
@@ -20,7 +20,7 @@ ms.locfileid: "60939285"
 
 检索每日打印使用情况摘要的列表，按用户分组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -49,7 +49,7 @@ GET /print/reports/dailyPrintUsageByUser
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printUsageByUser](../resources/printUsageByUser.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [printUsageByUser](../resources/printUsageByUser.md) 对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-endpoints-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

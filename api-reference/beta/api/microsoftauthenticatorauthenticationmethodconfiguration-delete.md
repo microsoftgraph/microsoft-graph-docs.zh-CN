@@ -5,21 +5,21 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1d92b232b49015f89a0c8da51d26c110d02db597
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 101ff35893fe0d33f35cdcd40bf6830599cc1786
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226475"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397356"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethodconfiguration"></a>删除 microsoftAuthenticatorAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过将策略还原[Microsoft Authenticator](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)其默认配置，删除对身份验证方法策略所做的更改。
+通过将策略[还原](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)Microsoft Authenticator其默认配置，删除对身份验证方法策略所做的更改。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-microsoftauthenticatorauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-microsoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

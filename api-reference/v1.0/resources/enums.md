@@ -5,16 +5,25 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 0be72cacf043727e0a08a6524a0685ec99bce47a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: ed4b66b4fbaf281ed8be07d3d8cab7432402819b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336947"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394514"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="approvalfilterbycurrentuseroptions-values"></a>approvalFilterByCurrentUserOptions 值 
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|审批者|
+|unknownFutureValue|
 
 ### <a name="accesspackageassignmentfilterbycurrentuseroptions-values"></a>accessPackageAssignmentFilterByCurrentUserOptions 值
 
@@ -499,9 +508,9 @@ ms.locfileid: "63336947"
 
 |Member|
 |:---|
-|无|
+|None|
 |SecurityGroup|
-|所有|
+|全部|
 
 ### <a name="recipientscopetype-values"></a>recipientScopeType 值
 
@@ -1410,7 +1419,7 @@ ms.locfileid: "63336947"
 
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| 无 | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
+| None | 0 | 默认值。 当用户未对 DLP 阻止的邮件采取操作时，此值为邮件上的值。 |
 | Override | 1 | 发件人已覆盖邮件裁定并发送了该邮件。|
 | ReportFalsePositive | 2 | 发件人将邮件裁定报告给管理员为误报。|
 
@@ -1418,7 +1427,7 @@ ms.locfileid: "63336947"
 
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
+| None | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
 | AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式替代`AllowOverrideWithoutJustification``AllowOverrideWithJustification`块。 报告违反误报会自动覆盖阻止并发送邮件。 |
 | AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification`。 |
 | AllowOverrideWithJustification | 4 |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification`。|

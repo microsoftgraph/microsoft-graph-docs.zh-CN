@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 32527bd5388693837edf9cb6a87b8388f4e3cb79
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 9747b1a403d089021f4b39a7447e19093bbc81f7
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335694"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397713"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>创建 accessPackageAssignmentPolicy
 
@@ -511,6 +511,8 @@ Content-type: application/json
 
 在下面的示例中，预定义的 **customAccessPackageWorkflowExtension** 对象是在创建访问包分配的请求时和授予请求时触发的。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_customaccesspackageworkflowextension"
@@ -553,6 +555,16 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-customaccesspackageworkflowextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentpolicy-customaccesspackageworkflowextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

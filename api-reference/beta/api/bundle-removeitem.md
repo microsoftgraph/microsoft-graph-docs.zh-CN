@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: 从捆绑包中删除项目
 description: 从 driveItems 捆绑包中删除项
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: edd7647be648b5eda1560157d35c6a7b2d4aa130
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1a84ceeee22736c7ac02fa50403523734fe2e65b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50774360"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395186"
 ---
 # <a name="remove-item-from-bundle"></a>从捆绑包中删除项目
 
@@ -18,7 +18,7 @@ ms.locfileid: "50774360"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从捆绑包中删除 [项][]。
+从捆绑包中删除 [项目][]。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -48,7 +48,7 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 ## <a name="response"></a>响应
 
-如果成功，响应为 `204 No Content` 。
+如果成功，响应为 `204 No Content`。
 
 请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item
 [!INCLUDE [sample-code](../includes/snippets/java/remove-from-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/remove-from-bundle-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -98,7 +102,7 @@ HTTP/1.1 204 No Content
   "type": "#page.annotation",
   "description": "Remove an item from a bundle.",
   "keywords": "",
-  "section": "documentation"
+  "section&quot;: &quot;documentation"
 } -->
 
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 78a31b0225154e31456bae43a336bd156385b544
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c2d151babb8704b7fb14b12f28fd5f67fef5b192
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688337"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394395"
 ---
 # <a name="delete-externalitem"></a>删除 externalItem
 
@@ -42,7 +42,7 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | `id`包含[externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
+| connection-id | string | 包含 `id` [externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
 | item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 |
 
 ## <a name="request-headers"></a>请求标头
@@ -90,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-externalitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-externalitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

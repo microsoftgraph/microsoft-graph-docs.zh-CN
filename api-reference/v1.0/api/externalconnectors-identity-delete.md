@@ -5,17 +5,17 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: ba848acc414fbd797bac39662df69c779fe5a220
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 9b032649ba0b078a13311d7dc57449afc70a2d2e
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561477"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397755"
 ---
 # <a name="delete-identity"></a>删除标识
 命名空间：microsoft.graph.externalConnectors
 
-删除 [标识](../resources/externalconnectors-identity.md) 资源以从 [externalGroup 中删除相应的成员](../resources/externalconnectors-externalgroup.md)。
+删除 [标识](../resources/externalconnectors-identity.md) 资源以从 [externalGroup](../resources/externalconnectors-externalgroup.md) 中删除相应的成员。
 
 ## <a name="permissions"></a>权限
 
@@ -25,7 +25,7 @@ ms.locfileid: "60561477"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| Application                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                 |
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-identity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-identity-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

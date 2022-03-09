@@ -1,16 +1,16 @@
 ---
 title: 删除 accessReview
-description: 在Azure AD评审功能中，删除 accessReview 对象。
+description: 在Azure AD检查功能中，删除 accessReview 对象。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 41bfb10ad9985ca6c2a37add49dfd52b00cc68c5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a76ae76a0cb709de16ce94b0e1e1929262eff4ff
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114538"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63393478"
 ---
 # <a name="delete-accessreview"></a>删除 accessReview
 
@@ -18,7 +18,9 @@ ms.locfileid: "62114538"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[评审](../resources/accessreviews-root.md)功能中，删除[accessReview](../resources/accessreview.md)对象。
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+在Azure AD[评审](../resources/accessreviews-root.md)功能中，删除 [accessReview](../resources/accessreview.md) 对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

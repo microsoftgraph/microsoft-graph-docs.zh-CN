@@ -5,31 +5,31 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c5c719b45d78e1b0507f7ca8115c236c23579f63
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 1acc6f6a559aede82a2e0dd74260c51e833e35eb
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226118"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395382"
 ---
 # <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>获取 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (弃) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索无密码[MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)对象的属性和关系，该对象表示 Azure AD 租户的 Microsoft Authenticator 无密码 电话 登录身份验证[](../resources/authenticationmethodspolicies-overview.md)方法策略。
+检索 [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象的属性和关系，该对象表示 Azure AD 租户的 Microsoft Authenticator 无密码 电话 登录身份验证方法策略。[](../resources/authenticationmethodspolicies-overview.md)
 
 > [!CAUTION]
-> The Microsoft Authenticator Passwordless 电话 Sign-in authentication method policy API is deprecated and stopped returning results on December 31， 2020. 请使用新的身份验证Microsoft Authenticator[策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
+> The Microsoft Authenticator Passwordless 电话 Sign-in authentication method policy API is deprecated and stopped returning results on December 31， 2020. 请使用新的身份验证[Microsoft Authenticator策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 对于委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -58,7 +58,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/pas
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和无密码 `200 OK` [MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 响应 `200 OK` 代码和无密码 [MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

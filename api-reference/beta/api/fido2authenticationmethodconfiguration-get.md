@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5182eb1b281eadf314f50e3fe219addd9a3ee3ba
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 532cbf50df2fbfef32f61895a3bc9cbdb5c1eb04
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62238859"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395802"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>获取 fido2AuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 租户的 FIDO2 安全密钥身份验证方法策略。 [](../resources/authenticationmethodspolicies-overview.md)
+检索 [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象的属性和关系，该对象代表 Azure Active Directory (Azure AD) 租户的 FIDO2 安全密钥身份验证[](../resources/authenticationmethodspolicies-overview.md)方法策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,7 +55,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fid
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-fido2authenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-fido2authenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,19 +1,24 @@
 ---
 title: crossTenantAccessPolicyConfigurationPartner 资源类型
-description: 为 B2B 协作和 B2B 直接连接的入站和出站Azure AD定义的特定于合作伙伴的配置。
+description: 为 B2B 协作和 B2B 直接连接的入站和出Azure AD定义的特定于合作伙伴的配置。
 author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: 88a8d3fe3480360be8e05beff535de56ed2be617
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395949"
 ---
-
 # <a name="crosstenantaccesspolicyconfigurationpartner-resource-type"></a>crossTenantAccessPolicyConfigurationPartner 资源类型
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为 B2B 和 B2B 直接连接协作的入站和出站Azure AD合作伙伴特定的配置。
+为 B2B 和 B2B 直接连接协作的入站和出Azure AD定义的特定于合作伙伴的配置。
 
 对于任何特定于合作伙伴的属性，即 `null`，这些设置将继承在默认跨租户访问设置 [中配置的行为](../resources/crosstenantaccesspolicyconfigurationdefault.md)。
 
@@ -34,12 +39,12 @@ doc_type: resourcePageType
 |属性|类型|说明|
 |:---|:---|:---|
 | b2bCollaborationInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为其他组织的用户定义合作伙伴特定的配置，这些用户通过 B2B 协作Azure AD你的资源。 继承自 [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)。 |
-| b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为贵组织中通过 B2B 协作出站访问另一个组织中资源Azure AD配置。 继承自 [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)。 |
+| b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为贵组织的用户定义合作伙伴特定的配置，以便通过 B2B 协作出站访问另一Azure AD中的资源。 继承自 [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)。 |
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为其他组织的用户定义合作伙伴特定的配置，这些用户通过 Azure B2B 直接连接访问你的资源。 继承自 [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)。 |
-| b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为贵组织中出站以通过 B2B 直接连接访问另一Azure AD合作伙伴特定的配置。 继承自 [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)。 |
-| inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | 确定用于信任来自外部组织的其他条件访问声明的合作伙伴Azure AD配置。 继承自 [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)。 |
+| b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | 为贵组织的用户定义合作伙伴特定的配置，以便通过 B2B 直接连接出站访问另一Azure AD中的资源。 继承自 [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)。 |
+| inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | 确定用于信任外部访问组织的其他条件访问声明的合作伙伴Azure AD配置。 继承自 [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)。 |
 | isServiceProvider | Boolean | 标识特定于合作伙伴的配置是否是组织的云服务提供商。 |
-| tenantId | String | 合作伙伴组织的租户Azure AD标识符。 只读。|
+| tenantId | String | 合作伙伴组织的租户标识符Azure AD标识符。 只读。 键。|
 
 ## <a name="relationships"></a>关系
 
@@ -50,7 +55,7 @@ doc_type: resourcePageType
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "keyProperty": "tenantId",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
   "baseType": "microsoft.graph.crossTenantAccessPolicyConfigurationBase",
   "openType": false
@@ -60,7 +65,7 @@ doc_type: resourcePageType
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
-  "tenantId": "String",
+  "tenantId": "String (identifier)",
   "inboundTrust": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
   },

@@ -5,12 +5,12 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 762d62bd0e34daa0ea7be5f9c35fc4cc6477009f
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 6986e51bc8815684841158e0b65f7bfbf429a2df
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62855152"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397965"
 ---
 # <a name="get-x509certificateauthenticationmethodconfiguration"></a>获取 x509CertificateAuthenticationMethodConfiguration
 命名空间：microsoft.graph
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-x509certificateauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-x509certificateauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

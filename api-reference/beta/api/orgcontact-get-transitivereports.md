@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e8568810f5a47de4c62acebccf70cf0726669634
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 3e90d1990421afc19844e422d57aed7d9226175a
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266023"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394122"
 ---
 # <a name="get-transitivereports-for-orgcontact"></a>获取 orgContact 的 transitiveReports
 
@@ -20,7 +20,7 @@ ms.locfileid: "61266023"
 
 检索组织联系人的可传递报告计数。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,7 +42,7 @@ GET /contacts/{id}/transitiveReports/$count
 
 此方法不支持使用查询参数，但需要查询 `$count` 段。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -55,7 +55,7 @@ GET /contacts/{id}/transitiveReports/$count
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回组织联系人的响应代码和 `200 OK` 可传递报告计数。
+如果成功，此方法在响应 `200 OK` 正文中返回组织联系人的响应代码和可传递报告计数。
 
 ## <a name="examples"></a>示例
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/contacts/45b7d2e7-b882-4a80-ba97-10b7a63b8f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-transitivereports-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitivereports-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e24af303d0b9195680a7bb59d68d979b1d24d944
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 3eba8b1d5ee44e5afbc6fb9668c01057665f2654
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560742"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394024"
 ---
 # <a name="get-externalgroup"></a>获取 externalGroup
 命名空间：microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "60560742"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| Application                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All|
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All|
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,7 +50,7 @@ GET /external/connections/{connectionsId}/groups/{externalGroupId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回包含 `200 OK` **externalGroup** 对象的 响应代码。
+如果成功，此方法返回包含 `200 OK` **externalGroup 对象的 响应** 代码。
 
 ## <a name="example"></a>示例
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-externalgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-externalgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d5224481604e9fcdbe2ee0071c3cc8fea9d3f8d8
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 15e8d1de626d0cb64806c3398c880a9b15a4b6b6
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792104"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393590"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -46,12 +46,12 @@ PUT /external/connections/{connection-id}/items/{item-id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [externalItem](../resources/externalconnectors-externalitem.md) 对象的 JSON 表示形式。
 
-您可以在创建 [externalItem](../resources/externalconnectors-externalitem.md)时指定以下属性。
+您可以在创建 [externalItem 时指定以下属性](../resources/externalconnectors-externalitem.md)。
 
 |属性|类型| 说明|
 |:---|:---|:---|
 |id|String|项目 ID。 必需。|
-|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|项目属性。 `properties`对象必须至少包含一个属性。 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。 必需。|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|项目属性。 对象 `properties` 必须至少包含一个属性。 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。 必需。|
 |content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|外部项内容。 可选。|
 |acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合|访问控制列表。 必需。|
 
@@ -75,7 +75,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > 当包含类型的 属性 `Collection(DateTime)` 时，必须使用类型说明器 `Collection(DateTimeOffset)` 。
+    > 当包含类型的 属性时 `Collection(DateTime)`，必须使用类型说明器 `Collection(DateTimeOffset)`。
 
 ## <a name="response"></a>响应 
 
@@ -133,6 +133,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-externalconnections-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalitem-from-externalconnections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

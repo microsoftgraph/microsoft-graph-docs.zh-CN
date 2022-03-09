@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c966263cf7922183f79c966ece655d599c05b2c8
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 258a32017f303302d0bcb045c3b0911d9dd01050
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61340686"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396614"
 ---
 # <a name="list-localizations"></a>列出本地化
 命名空间：microsoft.graph
@@ -37,7 +37,7 @@ GET /organization/{organizationId}/branding/localizations
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法仅支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法仅支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -49,7 +49,7 @@ GET /organization/{organizationId}/branding/localizations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be6
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-organizationalbrandinglocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

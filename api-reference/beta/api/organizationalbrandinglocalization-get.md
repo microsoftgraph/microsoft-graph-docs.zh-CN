@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 416b6dc855648460e58d9a44a6a54ed1e7b7de3a
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 46742b1b73665037c778cafa1ca9b5cbbf86d0a4
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805072"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393302"
 ---
 # <a name="get-organizationalbrandinglocalization"></a>Get organizationalBrandingLocalization
 命名空间：microsoft.graph
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbrandinglocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -263,6 +267,10 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbranding-frlocale-bannerlogo-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

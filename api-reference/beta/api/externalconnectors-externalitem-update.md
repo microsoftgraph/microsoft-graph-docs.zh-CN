@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f8f72e1ad594b31eb4227e9db860462434da833b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: c338aac56111598eaffd8eb10d7419d5730f505b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939628"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396026"
 ---
 # <a name="update-externalitem"></a>更新 externalItem
 
@@ -20,7 +20,7 @@ ms.locfileid: "60939628"
 
 更新 [externalitem 的属性](../resources/externalconnectors-externalitem.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,12 +40,12 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | Description                                         |
+| 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | `id`包含[externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
+| connection-id | string | 包含 `id` [externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
 | item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 |
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明                 |
 |:--------------|:----------------------------|
@@ -54,25 +54,25 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 现有 (不包括请求正文) 对象对象中的属性将保留其以前的值或根据其他属性值的更改 `properties` 重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
+在请求正文中，提供应更新的相关字段的值。 现有 (`properties` 不包括对象) 不包含在请求正文中的属性将保留其以前的值或根据其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
-| 属性   | 类型                                  | Description               |
+| 属性   | 类型                                  | 说明               |
 |:-----------|:--------------------------------------|:--------------------------|
 | acl        | [microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合 | 访问控制项数组。 每个条目指定授予用户或组的访问权限。 |
 | content    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | 项目内容的纯文本表示形式。 此属性中的文本已编制全文索引。 |
-| properties | Object                                | 具有项目属性的属性包。 属性必须符合为[externalConnection](../resources/externalconnectors-externalconnection.md)定义的架构。 [](../resources/externalconnectors-schema.md) |
+| properties | Object                                | 具有项目属性的属性包。 属性必须符合为 [externalConnection 定义的架构](../resources/externalconnectors-externalconnection.md)。[](../resources/externalconnectors-schema.md) |
 
 ### <a name="updating-the-acl-collection"></a>更新 acl 集合
 
-如果属性包含在更新请求中，则现有 ACL 集合将被请求中包含的集合 `acl` 覆盖。
+`acl`如果属性包含在更新请求中，则现有 ACL 集合将被请求中包含的集合覆盖。
 
 ### <a name="updating-the-properties-object"></a>更新 properties 对象
 
-如果属性包含在更新请求中，则现有属性包将被请求 `properties` 中包含的值覆盖。
+`properties`如果属性包含在更新请求中，则现有属性包将被请求中包含的值覆盖。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [externalItem](../resources/externalconnectors-externalitem.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [externalItem](../resources/externalconnectors-externalitem.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -117,6 +117,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-externalitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-externalitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

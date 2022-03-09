@@ -1,16 +1,16 @@
 ---
 title: informationProtectionLabel：listLabels
 description: 检索信息保护标签的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 1be094a546bb34bc72bfc95e651bb502c0000f75
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 95e4bff83464857d5cbe100fa82e143f553e9f63
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579604"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397202"
 ---
 # <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel：listLabels
 
@@ -33,7 +33,7 @@ ms.locfileid: "52579604"
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
-若要获取可供登录用户或指定用户使用的标签，请执行以下操作：
+若要获取可供登录用户或指定用户使用的标签：
 ```http
 GET /me/informationProtection/policy/labels
 GET /users/{id | user-principal-name}/informationProtection/policy/labels
@@ -61,7 +61,7 @@ GET /informationProtection/policy/labels
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [informationProtectionLabel](../resources/informationprotectionlabel.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [informationProtectionLabel](../resources/informationprotectionlabel.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-labels-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-labels-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

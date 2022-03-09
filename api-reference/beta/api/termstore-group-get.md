@@ -5,12 +5,12 @@ author: mohitpcad
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: b8ad84f341e7cf01216361aab71755b0f47b2375
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 913e6b38e3890bb0f6bbd9980daff8b312ab030e
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337066"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395991"
 ---
 # <a name="get-termstore-group"></a>获取 termStore 组
 命名空间：microsoft.graph.termStore
@@ -144,6 +144,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-termstore-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-termstore-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -200,6 +204,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-termstore-sites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-termstore-sites-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

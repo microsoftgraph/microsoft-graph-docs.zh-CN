@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 56ae5e53863e18146ec7eed101bd39d872916f07
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: d9079597be37d3b4c66400eaaadb42f69e01d72b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559286"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393232"
 ---
 # <a name="create-externalgroup"></a>创建 externalGroup
 命名空间：microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "60559286"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| Application                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                  |
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                  |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ POST /external/connections/{connectionsId}/groups
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 **externalGroup** 对象的 JSON 表示形式。
 
-可以在创建 externalGroup 时指定 **以下属性**。
+您可以在创建 **externalGroup 时指定以下属性**。
 
 | 属性    | 类型   | 说明                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroup-from-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroup-from-connection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,18 +5,20 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: a61b606288b7bd184a74fa115b2061d98c12b223
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0aaa99de12963528a5b0dc08c8556c5d632f4d30
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089516"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63398028"
 ---
 # <a name="update-program"></a>更新程序
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，更新现有[程序](../resources/program.md)对象。
 ## <a name="permissions"></a>权限
@@ -52,7 +54,7 @@ PATCH /programs/{programId}
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `204, Accepted` 正文中返回 [响应](../resources/program.md) 代码和 program 对象。
+如果成功，此方法在响应 `204, Accepted` 正文中返回 响应代码和 [program](../resources/program.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

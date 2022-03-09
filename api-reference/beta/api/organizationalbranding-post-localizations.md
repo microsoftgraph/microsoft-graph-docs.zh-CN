@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1557f8253e117ef42ee4245fd41d89aa0f647900
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 71aff21ea87aef9e235e54059e95c9ec000aa573
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804519"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394787"
 ---
 # <a name="create-organizationalbrandinglocalization"></a>创建 organizationalBrandingLocalization
 命名空间：microsoft.graph
@@ -52,7 +52,7 @@ POST /organization/{organizationId}/branding/localizations
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| id | 字符串 | 表示使用区域性名称指定的区域设置的标识符。 区域性名称遵循 RFC 1766 标准，格式为"languagecode2-country/regioncode2"，其中"languagecode2"是派生自 ISO 639-1 的大写两字母代码，而"country/regioncode2"是派生自 ISO 3166 的大写两字母代码。 例如，美国英语为 `en-US`。 无法将 **id** 的值设置为 String 类型或 来创建默认品牌`0``default`。  <br/><br/>**注意：** 目前不支持单个区域设置的多个品牌。 |
+| id | String | 表示使用区域性名称指定的区域设置的标识符。 区域性名称遵循 RFC 1766 标准，格式为"languagecode2-country/regioncode2"，其中"languagecode2"是派生自 ISO 639-1 的大写两字母代码，而"country/regioncode2"是派生自 ISO 3166 的大写两字母代码。 例如，美国英语为 `en-US`。 无法将 **id** 的值设置为 String 类型或 来创建默认品牌`0``default`。  <br/><br/>**注意：** 目前不支持单个区域设置的多个品牌。 |
 
 ## <a name="response"></a>响应
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-organizationalbrandinglocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
