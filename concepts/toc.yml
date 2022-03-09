@@ -24,7 +24,7 @@ items:
             href: users-you-can-reach.md
           - name: 区域云部署
             href: deployments.md
-          - name: 混合部署（预览版）
+          - name: 混合部署（已弃用）
             href: hybrid-rest-support.md
       - name: 教程
         items:
@@ -147,6 +147,8 @@ items:
             href: outlook-large-attachments.md
           - name: 不可变 ID
             href: outlook-immutable-id.md
+          - name: 订阅变更通知
+            href: outlook-change-notifications-overview.md
       - name: 云通信
         items:
           - name: 概述
@@ -206,7 +208,7 @@ items:
       - name: 客户预订（预览版）
         href: booking-concept-overview.md
         displayName: 'Bookings, Microsoft Bookings'
-      - name: 设备和应用
+      - name: 设备和应用管理
         expanded: true
         items:
           - name: 云打印
@@ -217,7 +219,7 @@ items:
               - name: 上传数据以上传会话
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
-              - name: 更改通知
+              - name: 订阅变更通知
                 href: universal-print-webhook-notifications.md
                 displayName: Universal Print Webhook Notifications
           - name: 公司管理
@@ -283,7 +285,7 @@ items:
             items:
               - name: 管理自定义安全属性（预览版）
                 href: custom-security-attributes-examples.md
-              - name: 将 PIM 用于Azure AD分配角色
+              - name: 使用 PIM 分配 Azure AD 角色
                 href: tutorial-assign-azureadroles.md
           - name: 身份和登录
             items:
@@ -301,13 +303,15 @@ items:
                     href: accessreviews-overview.md
                   - name: 查看安全组的访问权限
                     href: tutorial-accessreviews-securitygroup.md
-                  - name: 审阅对 Microsoft 365 组的访问权限
+                  - name: 查看访客用户的访问权限
                     href: tutorial-accessreviews-M365group.md
+                  - name: 查看特权角色的访问权限
+                    href: tutorial-accessreviews-roleassignments.md
                   - name: 配置作用域
                     href: accessreviews-scope-concept.md
                   - name: 分配审阅者
                     href: accessreviews-reviewers-concept.md
-              - name: 将 PIM 用于Azure AD分配角色
+              - name: 使用 PIM 分配 Azure AD 角色
                 href: tutorial-assign-azureadroles.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
@@ -330,6 +334,8 @@ items:
             href: outlook-send-mail-from-other-user.md
           - name: 不可变 ID
             href: outlook-immutable-id.md
+          - name: 订阅变更通知
+            href: outlook-change-notifications-overview.md
       - name: 注释
         displayName: OneNote
         items:
@@ -407,6 +413,8 @@ items:
             href: outlook-get-shared-contacts-folders.md
           - name: 不可变 ID
             href: outlook-immutable-id.md
+          - name: 订阅变更通知
+            href: outlook-change-notifications-overview.md
       - name: 报告
         items:
           - name: 概述
@@ -427,14 +435,16 @@ items:
             href: search-concept-custom-types.md
           - name: 搜索人员（预览版）
             href: search-concept-person.md
-          - name: 排序搜索结果
-            href: search-concept-sort.md
+          - name: 管理管理员搜索答案（预览版）
+            href: search-concept-answers.md
+          - name: 管理搜索结果布局（预览版）
+            href: search-concept-display-layout.md
           - name: 改进搜索结果
             href: search-concept-aggregation.md
           - name: 请求拼写更正（预览）
             href: search-concept-speller.md
-          - name: 搜索显示布局（预览版）
-            href: search-concept-display-layout.md
+          - name: 排序搜索结果
+            href: search-concept-sort.md
       - name: 安全性
         items:
           - name: 概述
@@ -480,6 +490,10 @@ items:
                 href: teams-send-activityfeednotifications.md
               - name: 最佳做法
                 href: teams-activity-feed-notifications-best-practices.md
+          - name: 订阅变更通知
+            href: teams-change-notification-in-microsoft-teams-overview.md
+          - name: 获取联机会议的更改通知
+            href: changenotifications-for-onlinemeeting.md
           - name: 系统邮件
             href: system-messages.md
       - name: 待办任务
@@ -580,6 +594,8 @@ items:
                     href: teams-changenotifications-chat.md
                   - name: 团队成员身份
                     href: teams-changenotifications-chatMembership.md
+              - name: 更改 Outlook 资源的通知
+                href: outlook-change-notifications-overview.md
           - name: 更改跟踪
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:

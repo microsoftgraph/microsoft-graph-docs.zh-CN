@@ -5,12 +5,12 @@ author: FaithOmbongi
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 79042bd6f11b52cd3cd688cf6e778cd430bd6dd3
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: ee62ed00b557155bc31f587412806ff00521ec04
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604328"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367984"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -49,6 +49,7 @@ Microsoft Graph 接受订阅请求之后，它将更改通知推送到订阅中�
 - Teams [chatMessage][]
 - Teams [conversationMember][]
 - Teams [状态][]
+- Teams [onlineMeeting][]
 - Teams [团队][]
 - [todoTask][]（预览版）
 - [用户][]
@@ -57,7 +58,7 @@ Microsoft Graph 接受订阅请求之后，它将更改通知推送到订阅中�
 
 或以下顶级资源的订阅：`/me/messages`、`/me/contacts`、`/me/events`、`users`、`groups`、`/communications/callRecords`
 
-或以下特定资源实例的订阅：`users/{id}`、`groups/{id}`、`groups/{id}/conversations`、`sites/{site-id}/lists/{list-id}`、`/communications/presences/{id}`
+或以下特定资源实例的订阅：`users/{id}`、`groups/{id}`、`groups/{id}/conversations`、`sites/{site-id}/lists/{list-id}`、`/communications/presences/{id}`、`/communications/onlinemeeting/{meeting-id}`
 
 或用户个人 OneDrive 中任何文件夹的订阅：`/drives/{id}/root`
 `/drives/{id}/root/subfolder`
@@ -164,7 +165,7 @@ Content-Type: application/json
 
 #### <a name="notification-endpoint-validation"></a>通知终结点验证
 
-Microsoft Graph 在创建订阅之前验证订阅请求的 `notificationUrl` 属性中提供的通知终结点。 验证流程如下所示：
+Microsoft Graph 在创建订阅之前验证订阅请求的 `notificationUrl` 属性中提供的通知终结点。验证过程如下所示：
 
 1. Microsoft Graph 对验证令牌进行编码，并将其包含在通知 URL 的 POST 请求中：
 
@@ -195,7 +196,7 @@ Microsoft Graph 在创建订阅之前验证订阅请求的 `notificationUrl` 属
 
 ### <a name="renewing-a-subscription"></a>续订订阅
 
-客户端可以续订特定过期日期的订阅，自请求时间起长达三天。 `expirationDateTime` 属性是必需的。
+客户端可以续订特定过期日期的订阅，自请求时间起长达三天。`expirationDateTime` 属性是必需的。
 
 #### <a name="subscription-renewal-example"></a>订阅续订示例
 
@@ -208,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-如果成功，Microsoft Graph 将在正文中返回 `200 OK` 代码和 [subscription](/graph/api/resources/subscription) 对象。 subscription 对象包括新的 `expirationDateTime` 值。
+如果成功，Microsoft Graph 在正文中返回 `200 OK` 代码和 [订阅](/graph/api/resources/subscription) 对象。订阅对象包括新的 `expirationDateTime` 值。
 
 ### <a name="deleting-a-subscription"></a>删除订阅
 
@@ -224,7 +225,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 通过客户端订阅对资源的更改，只要资源发生更改，Microsoft Graph 就会向通知 URL 发送一个 `POST` 请求。 仅对订阅中指定类型的更改（例如 `created`）发送通知。
 
-> **注意：** 如果客户端拥有监视相同资源并使用相同通知 URL 的多个订阅，则 Microsoft Graph 可以发送与不同订阅对应的多个更改通知，每个都显示相应的订阅 ID。 无法保证 `POST` 请求中的所有更改通知都属于单个订阅。
+> **注意：** 如果客户端具有多个监视相同资源并使用相同通知 URL 的订阅，则Microsoft Graph可以发送对应于不同订阅的多个更改通知，每个更改通知显示相应的订阅 ID。无法保证 `POST` 请求中的所有更改通知都属于单个订阅。
 
 ### <a name="change-notification-example"></a>更改通知示例
 
@@ -266,7 +267,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
     如果处理预计花费不到 3 秒，则应处理通知，并在响应Microsoft Graph时返回 `200 - OK` 状态代码。 如果通知未正确处理，则返回 5xx 类代码以指示错误，以便重试通知。
 
-1. 验证 `clientState` 属性。 它必须与最初使用订阅创建请求提交的值匹配。
+1. 验证 `clientState` 属性。它必须与最初使用订阅创建请求提交的值匹配。
 
     > **注意：** 如果不符合这个条件，无需将其视为有效更改通知。 更改通知可能不是来自 Microsoft Graph，并且可能是由未授权操作者发送的。 还应调查更改通知来自何处并采取适当的措施。
 
@@ -322,6 +323,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 |[组][] | 少于 2 分钟 | 15 分钟 |
 |[列表][] | 小于 1 分钟 | 5 分钟 |
 |[邮件][] | 未知 | 未知 |
+|[onlineMeeting][] | 少于 10 秒 | 1 分钟 |
 |[状态][] | 少于 10 秒 | 1 分钟 |
 |[打印机][] | 小于 1 分钟 | 5 分钟 |
 |[printTaskDefinition][] | 小于 1 分钟 | 5 分钟 |
@@ -360,3 +362,4 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [聊天]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [团队]: /graph/api/resources/team
+[onlineMeeting]: /graph/api/resources/onlinemeeting

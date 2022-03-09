@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: 3a8d812aa344ae2a6fe43129c41f6786fad58ad8
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 3cb94fcc4ba55447646e31635a0e9a68a9b8d1a2
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390967"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368180"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>设置包含资源数据的更改通知
 
@@ -17,7 +17,7 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 
 若要将资源数据作为更改通知的一部分，需要实现以下附加逻辑，来满足数据访问和安全要求： 
 
-- [处理](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications)）特殊订阅生命周期通知（预览），以保持数据的不间断流动。 Microsoft Graph 会不时发送生命周期通知，以要求应用重新授权，确保更改通知中所包含的数据不会意外发生访问问题。
+- [处理](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications)特殊订阅生命周期通知以维持不被中断的数据流。Microsoft Graph 会不时发送生命周期通知，以要求应用重新授权，确保更改通知中所包含的数据不会意外发生访问问题。
 - [验证](#validating-the-authenticity-of-notifications)来自 Microsoft Graph 的更改通知的真实性。
 - [提供](#decrypting-resource-data-from-change-notifications)公共加密密钥并使用私钥解密通过更改通知所接收的资源数据。
 
@@ -32,17 +32,28 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 
 ## <a name="supported-resources"></a>支持的资源
 
-目前，Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) 以及 Microsoft Teams [presence](/graph/api/resources/presence) 资源支持包括资源数据的更改通知。 具体而言，可设置应用以下内容之一的订阅：
+Microsoft Teams [chatMessage](/graph/api/resources/chatmessage)、[onlineMeetings](/graph/api/resources/onlinemeeting) 和[状态](/graph/api/resources/presence)资源支持包含资源数据的更改通知。 Outlook [联系人](/graph/api/resources/contact.md)、[事件](/graph/api/resources/event.md)和 [邮件](/graph/api/resources/message.md)资源 _在预览版_ 中拥有类似的支持。 具体来说，你可以为以下用例设置订阅。
 
+在 v1.0 和 Beta 版终结点中可用：
 - 特定 Teams 频道中新增或已更改的消息：`/teams/{id}/channels/{id}/messages`
 - 整个组织（租户）中所有团队频道中的新消息或已更改消息： `/teams/getAllMessages`
 - 指定团队聊天中的新增或已更改消息： `/chats/{id}/messages`
 - 整个组织（租户）中所有聊天的新消息或已更改消息： `/chats/getAllMessages`
 - 用户的状态信息更新：`/communications/presences/{id}`
 
-含有更改通知中所有已更改实例属性的 **chatMessage** 和 **presence** 支持。 它们不支持仅返回实例的选择性属性。 
+仅在 Beta 版终结点中可用：
+- 用户邮箱中的新联系人或已更改的个人联系人：`/users/{id}/contacts`
+- 用户的 contactFolder 中的新联系人或已更改的个人联系人：`/users/{id}/contactFolders/{id}/contacts`
+- 用户邮箱中的新事件或已更改事件：`/users/{id}/events`
+- 用户邮箱中的新邮件或已更改邮件：`/users/{id}/messages`
+- 用户 mailFolder 中的新邮件或已更改邮件：`/users/{id}/mailFolders/{id}/messages`
+- Teams 会议状态信息更新：`/communications/onlineMeetings/{meeting-id}`
 
-本文介绍订阅 Teams 通道中的消息更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。 有关基于 **chatMessage** 的订阅的更多详细信息，请参阅 [获取聊天和频道消息的更改通知](teams-changenotifications-chatmessage.md)。
+包含 **chatMessage**、 **onlineMeeting** 或 **状态** 资源数据的更改通知由已更改实例的所有属性组成。 它们不支持仅返回实例的所选属性。 
+
+**联系人**、**事件** 或 **邮件** 资源的更改通知仅包括资源的一部分属性，必须使用 `$select` 查询参数在对应的订阅请求中指定这些属性。 有关订阅包 **邮件** 资源含资源数据的更改通知，请参阅 [Microsoft Graph 中获取 Outlook 中变更通知](outlook-change-notifications-overview.md)。 
+
+本文其余部分将介绍订阅 Teams 通道中的 **chatMessage** 更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。 有关基于 **chatMessage** 的订阅的更多详细信息，请参阅 [获取聊天和频道消息的更改通知](teams-changenotifications-chatmessage.md)。
 
 ## <a name="creating-a-subscription"></a>创建订阅
 
@@ -52,9 +63,9 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 - **encryptionCertificate**，仅包含 Microsoft Graph 用于加密资源数据的公钥。 保留相应的私钥，以[解密内容](#decrypting-resource-data-from-change-notifications)。
 - **encryptionCertificateId**，是证书的自有标识符。 使用此 ID 在各更改通知中匹配用于解密的证书。
 
-请注意下列事项：
+请注意以下几点：
 
-- 按[通知终结点验证](webhooks.md#notification-endpoint-validation)中所述，验证两个终结点。 如果选择针对两个终结点使用同一 URL，将收到并响应两个验证请求。
+- 如[通知终结点验证](webhooks.md#notification-endpoint-validation)中所述，同时验证两个终结点。如果选择两个终结点使用同一个 URL，将会收到并回复两个验证请求。
 
 ### <a name="subscription-request-example"></a>订阅请求示例
 
@@ -91,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscription-lifecycle-notifications-preview"></a>订阅生命周期通知（预览）
+## <a name="subscription-lifecycle-notifications"></a>订阅生命周期通知
 
 某些事件可能会干扰现有订阅中的更改通知流。 订阅生命周期通知将通知你要采取的操作，以保持流不中断。 不同于资源更改通知（用于通知资源实例更改），生命周期通知涉及订阅自身及其在生命周期中的最新状态。 
 
-有关如何接收和响应生命周期通知（预览）的详细信息，请参阅[减少缺失的订阅和更改通知（预览）](webhooks-lifecycle.md)
+有关如何接收和响应生命周期通知的详细信息，请参阅[减少缺失的订阅和更改通知](webhooks-lifecycle.md)
 
 ## <a name="validating-the-authenticity-of-notifications"></a>验证通知的真实性
 
@@ -115,7 +126,7 @@ Content-Type: application/json
 
 带有资源数据的更改通知包含一个附加属性 **validationTokens**，其包含 Microsoft Graph 生成的 JWT 令牌数组。 Microsoft Graph 将为每个不同的应用和在 **值** 数组中有项的租户对，生成单独的令牌。 请记住，通知可能包含使用同一 **notificationUrl** 订阅的各种应用和租户的混合项。
 
-> **注意：** 如果要设置 [通过 Azure 事件中心传递的更改通知](change-notifications-delivery.md)，Microsoft Graph将不会发送验证令牌。 Microsoft Graph不需要验证 **notificationUrl**。
+> **注意：** 如果要设置 [通过 Azure 事件中心传递的更改通知](change-notifications-delivery.md)，Microsoft Graph 将不会发送验证令牌。Microsoft Graph 不需要验证 **notificationUrl**。
 
 
 在以下示例中，更改通知包含同一应用和两个不同租户的两个项目，因此 **validationTokens** 数组包含两个需要验证的令牌。
@@ -393,7 +404,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 
 4. 使用对称密钥计算 **数据** 中数值的 HMAC-SHA256 签名。
   
-    将其与 **dataSignature** 中的值进行比较。 如果不匹配，则假定有效负载已被篡改，并且不对其进行解密。
+    与 **dataSignature** 中的值进行对比。如果不匹配，则假定有效负载已被篡改，并且不对其进行解密。
 
 5. 将对称密钥与高级加密标准（AES）（例如 .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8&preserve-view=true)）结合使用，解密 **数据** 中的内容。
 
@@ -408,7 +419,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 
 ### <a name="example-decrypting-a-notification-with-encrypted-resource-data"></a>示例：使用加密资源数据解密通知
 
-下面是一个示例更改通知，其中包含频道消息中 **chatMessage** 实例的解密属性值。 实例由 `@odata.id` 值指定。
+下面是一个示例更改通知，其中包含频道消息中 **chatMessage** 实例的解密属性值。实例由 `@odata.id` 值指定。
 
 ```json
 {
@@ -587,3 +598,4 @@ decryptedPayload += decipher.final('utf8');
 - [获取订阅](/graph/api/subscription-get)
 - [创建订阅](/graph/api/subscription-post-subscriptions)
 - [更新订阅](/graph/api/subscription-update)
+- [Microsoft Graph 中 Outlook 资源的更改通知](outlook-change-notifications-overview.md)

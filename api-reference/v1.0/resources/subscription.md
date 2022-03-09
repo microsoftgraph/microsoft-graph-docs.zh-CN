@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 966f44ea3ed9fc6edc4580043bd4f9cdbe9be9c0
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: c5d25b8de538d96784e5001107063355497c073c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61603914"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335904"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "61603914"
 - Azure Active Directory 中的 [组][]。
 - SharePoint [site][]下的[list][]。
 - Outlook 中的[邮件][]、[事件][]或[联系人][]。
-- [打印机][] (当打印机的打印作业进入”JobFetchable”状态时 - 准备好提取打印) 和通用打印中的 [printTaskDefinition][]。 有关详细信息，请参阅 [订阅云打印 API 中的更改通知](/graph/universal-print-webhook-notifications)。
+- 通用打印中的 [打印机][] (当打印机的打印作业进入 JobFetchable 状态 - 准备好提取以打印时)和 [printTaskDefinition][]。有关详细信息，请参阅 [订阅来自云打印 API 的更改通知](/graph/universal-print-webhook-notifications)。
 - 在 Azure Active Directory 中的 [用户][]。
 
 有关每个受支持的资源的可能资源路径值，以及要了解资源如何使用生命周期通知，请参阅 [使用 Microsoft Graph API 获取更改通知](webhooks.md)。
@@ -46,20 +46,20 @@ ms.locfileid: "61603914"
 
 | 属性 | 类型 | 说明 | 支持的资源 |
 |:---------|:-----|:------------|:--------------|
-| applicationId | String | 用于创建订阅的应用程序的标识符。 只读。 | 全部 |
+| applicationId | String | 可选。用于创建订阅的应用程序的标识符。只读。 | 全部 |
 | changeType | 字符串 | 必填。 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 <br><br>**注意：** <li> 驱动器根项和列表变更通知仅支持 `updated` changeType。 <li>[用户](../resources/user.md)和[组](../resources/user.md)的变更通知支持 `updated` 和 `deleted` changeType。 | 全部 |
 | clientState | String | 可选。 指定服务为每个变更通知发送的 `clientState` 属性的值。 最大长度为 128 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个变更通知一起接收的 `clientState` 属性值，客户端可以检查变更通知是否是由服务发送。 | 全部 |
-| creatorId | String | 已创建订阅的用户或服务主体的标识符。 如果此应用使用委派权限来创建订阅，则此字段包含该应用代表其调用的已登录用户的 ID。 如果此应用使用应用程序权限，则此字段包含对应于该应用的服务主体的 ID。 只读。 | 全部 |
-| encryptionCertificate | String | 带有公钥的证书 的base64 编码表示形式，用于对更改通知中的资源数据进行加密。 可选，但在 **includeResourceData** 是 `true` 时是必需的。 | 全部 |
-| encryptionCertificateId | String | 可选。 自定义应用提供的标识符，用于帮助识别解密资源数据所需的证书。 | 全部 |
-| expirationDateTime | DateTimeOffset | 必需。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。 请参阅[下表](#maximum-length-of-subscription-per-resource-type)，了解支持的最长订阅有效期。 | 全部 |
-| id | String | 订阅的唯一标识符。只读。 | 全部 |
-| includeResourceData | 布尔值 | 可选。 设置为 `true` 时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（例如聊天消息的内容）。 | 全部 |
-| latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl** 指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 | 全部 |
+| creatorId | String | 可选。 已创建订阅的用户或服务主体的标识符。 如果此应用使用委派权限来创建订阅，则此字段包含该应用代表其调用的已登录用户的 ID。 如果此应用使用应用程序权限，则此字段包含对应于该应用的服务主体的 ID。 只读。 | 全部 |
+| encryptionCertificate | String | 可选。带有公钥的证书的 base64 编码表示形式(用于在更改通知中加密资源数据)。可选，但当 **includeResourceData** 为 `true` 时，为必需项。 | 全部 |
+| encryptionCertificateId | String | 可选。自定义应用提供的标识符，用于帮助识别解密资源数据所需的证书。 | 全部 |
+| expirationDateTime | DateTimeOffset | 必需项。指定 Webhook 订阅的过期日期和时间。时间为 UTC，且可以是从订阅创建(因订阅资源而异)开始的一段时间。有关受支持的最大订阅时长，请参阅 [下表](#maximum-length-of-subscription-per-resource-type)。 | 全部 |
+| id | String | 可选。订阅的唯一标识符。只读。 | 全部 |
+| includeResourceData | 布尔值 | 可选。当设置为 `true` 时，更改通知 [ 包含资源数据](/graph/webhooks-with-resource-data) (例如聊天消息的内容)。 | 全部 |
+| latestSupportedTlsVersion | 字符串 | 可选。指定由 **notificationUrl** 指定的通知终结点支持的最新版本的传输层安全性(TLS)。可能的值为:`v1_0`、`v1_1`、`v1_2`、`v1_3`。</br></br>对于通知终结点支持的版本低于当前推荐版本(TLS 1.2)的订阅者，通过设置 [时间线](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性可允许他们在完成升级到 TLS 1.2 之前暂时使用他们已弃用的 TLS 版本。对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 | 全部 |
 | lifecycleNotificationUrl | String | 可选。 接收生命周期通知（包括 `subscriptionRemoved` 和 `missed` 通知）的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 | 全部 |
-| notificationContentType | String | Microsoft Graph 所需的 **内容类型** 为更改支持的资源类型变更通知。 默认内容类型为 `application/json`。 | 全部 |
-| notificationQueryOptions | String | 用于指定目标资源值的 OData 查询选项。 当资源达到与此处所提供的查询选项相匹配的状态时，客户端会收到通知。 有了订阅创建有效负载中的新属性以及所有现有属性后，每当资源达到 “notificationQueryOptions” 属性中提到的所需状态时，Webhook 就会发送通知。 例如，打印作业完成时或打印作业资源属性值 `isFetchable` 变为 `true` 等时。 | [通用打印服务](/graph/universal-print-webhook-notifications) |
+| notificationQueryOptions | String | 可选。 用于指定目标资源值的 OData 查询选项。 当资源达到与此处所提供的查询选项相匹配的状态时，客户端会收到通知。 有了订阅创建有效负载中的新属性以及所有现有属性后，每当资源达到 “notificationQueryOptions” 属性中提到的所需状态时，Webhook 就会发送通知。 例如，打印作业完成时或打印作业资源属性值 `isFetchable` 变为 `true` 等时。 | [通用打印服务](/graph/universal-print-webhook-notifications) |
 | notificationUrl | String | 必填。将接收变更通知的终结点 URL。该 URL 必须使用 HTTPS 协议。 | 全部 |
+| notificationUrlAppId| String | 可选。 订阅服务可用于生成验证令牌的应用 ID。 这允许客户端验证收到的通知的真实性。  | 全部 |
 | resource | 字符串 | 必填。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/v1.0/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。| 全部 |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期
@@ -74,6 +74,7 @@ ms.locfileid: "61603914"
 | SharePoint **列表**    | 42300 分钟（不到 30 天）    |
 | Outlook **邮件**、**事件**、**联系人**              | 4230 分钟（不到 3 天）    |
 | **用户**、**组**、其他目录资源   | 4230 分钟（不到 29 天）    |
+| **状态**        | 60 分钟（1 小时） |
 | 打印 **打印机** | 4230 分钟（不到 3 天）    |
 | 打印 **printTaskDefinition** | 4230 分钟（不到 3 天）    |
 
@@ -109,23 +110,24 @@ ms.locfileid: "61603914"
   ]
 }-->
 
-```json
+``` json
 {
-  "changeType": "String",
-  "notificationUrl": "String",
-  "lifecycleNotificationUrl": "String",
-  "resource": "String",
-  "applicationId" : "String",
-  "expirationDateTime": "String (timestamp)",
+  "@odata.type": "#microsoft.graph.subscription",
   "id": "String (identifier)",
+  "resource": "String",
+  "changeType": "String",
   "clientState": "String",
+  "notificationUrl": "String",
+  "expirationDateTime": "String (timestamp)",
+  "applicationId": "String",
   "creatorId": "String",
   "includeResourceData": "Boolean",
+  "lifecycleNotificationUrl": "String",
   "encryptionCertificate": "String",
   "encryptionCertificateId": "String",
   "latestSupportedTlsVersion": "String",
-  "notificationContentType": "String",
-  "notificationQueryOptions": "String"
+  "notificationQueryOptions": "String",
+  "notificationUrlAppId": "String"
 }
 ```
 

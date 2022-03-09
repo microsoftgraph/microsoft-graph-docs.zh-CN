@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: a62290e52b681e6b029d24d87135a80454839a1c
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 04f8f16b6c83c97708a2e56cc77474f24b075274
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860029"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333664"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -41,9 +41,10 @@ ms.locfileid: "61860029"
 |[加号键](../api/application-addkey.md)|[keyCredential](keycredential.md)|向应用程序添加密钥凭据。|
 |[删除键](../api/application-removekey.md)|无|从应用程序中删除密钥凭据。|
 |**Extensions**| | |
-| [列出扩展](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) 集合 | 列出应用程序对象上的扩展属性。 |
-| [创建扩展](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | 在应用程序对象上创建扩展属性。 |
-| [删除扩展](../api/application-delete-extensionproperty.md) | 无 | 从应用程序对象删除扩展属性。 |
+| [列出 extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) 集合 | 列出应用程序对象上的扩展属性。 |
+| [创建 extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | 在应用程序对象上创建扩展属性。 |
+| [获取 extensionProperty](../api/extensionproperty-delete.md) | None | 从应用程序对象获取扩展属性。 |
+| [删除 extensionProperty](../api/extensionproperty-delete.md) | 无 | 从应用程序对象删除扩展属性。 |
 |[获取可用扩展属性](../api/directoryobject-getavailableextensionproperties.md)|[extensionProperty](../resources/extensionproperty.md) 集合|获取已在目录中注册的目录扩展属性的所有或筛选列表。|
 |**Owners**| | |
 |[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) 集合| 获取所有者对象集合。|
@@ -96,8 +97,8 @@ ms.locfileid: "61860029"
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 可能的值是：`AzureADMyOrg`、`AzureADMultipleOrgs`、`AzureADandPersonalMicrosoftAccount`（默认）和 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。 <br><br>支持 `$filter`（`eq`、`ne`、`not`）。|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
 | 标记 |字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。<br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
-| tokenEncryptionKeyId |String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
-| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定已验证的应用程序发布者。 有关发布者验证如何帮助支持应用程序安全性、可信度和合规性的详细信息，请参阅 [发布者验证](/azure/active-directory/develop/publisher-verification-overview)。|
+| tokenEncryptionKeyId |字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定应用程序的已验证发布者。有关发布者验证如何帮助支持应用程序安全性、可信度和合规性的详细信息，请参阅 [发布者验证](/azure/active-directory/develop/publisher-verification-overview)。|
 | web |[webApplication](webapplication.md)| 指定 Web 应用程序的设置。 |
 
 ### <a name="signinaudience-values"></a>signInAudience 值

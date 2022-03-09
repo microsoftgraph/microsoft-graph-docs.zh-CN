@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: c3209c4facf5cf6c200fabdeb73e80e566a8979d
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 95a6ea99386aa69aa7c0f783719ef0731d50dba7
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443371"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336289"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -18,7 +18,9 @@ ms.locfileid: "62443371"
 
 订阅侦听器应用程序，以在 Microsoft Graph 中指定资源发生的更改属于请求的更改类型时接收更改通知。
 
-请参阅" [权限](#permissions) 部分中的表格，了解支持订阅以更改通知的资源列表。
+请参阅" [权限](#permissions) 部分中的表格，了解支持订阅以更改通知的资源列表。 
+
+某些资源支持在更改通知中包括加密资源数据的选项。 这些资源包括 [chatMessage](../resources/chatmessage.md)、[联系人](../resources/contact.md)、[事件](../resources/event.md)、[消息](../resources/message.md)和[状态](../resources/presence.md)。 有关详细信息，请参阅[设置包含资源数据的更改通知](/graph/webhooks-with-resource-data)和 [Microsoft Graph 中 Outlook 资源的更改通知](/graph/outlook-change-notification-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -61,13 +63,9 @@ OneDrive for Business 和 SharePoint 支持向应用程序发送有关在 **driv
 
 ### <a name="contact-event-and-message"></a>联系人、事件和消息
 
-其他限制适用于 Outlook 项目的订阅。 这些限制适用于订阅的创建和管理（获取、更新和删除）。
+你可以订阅 Outlook **联系人**、**事件** 或 **消息** 资源中的更改。
 
-- 委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。 例如，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
-- 订阅 _共享或委托_ 文件夹中 Outlook 联系人、事件或邮件的更改通知：
-
-  - 使用相应的应用程序权限订阅租户内 _任何_ 用户的文件夹或邮箱中项目的更改。
-  - 切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们 **不** 支持订阅对共享或委托文件夹中的项的更改通知。
+[!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="presence"></a>状态
 
