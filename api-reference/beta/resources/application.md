@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: bed40c0a9bf5c5e411ae073de3d7eb9af5a2bf60
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: d72b8a9e823d9f10276cb13b789de089250f67fe
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854732"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335302"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -48,9 +48,10 @@ ms.locfileid: "62854732"
 |[加号键](../api/application-addkey.md)|[keyCredential](keycredential.md)|向应用程序添加密钥凭据。|
 |[删除键](../api/application-removekey.md)|无|从应用程序中删除密钥凭据。|
 |**Extensions**| | |
-| [列出扩展](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) 集合 | 列出应用程序对象上的扩展属性。 |
-| [创建扩展](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | 在应用程序对象上创建扩展属性。 |
-| [删除扩展](../api/application-delete-extensionproperty.md) | 无 | 从应用程序对象删除扩展属性。 |
+| [列出 extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) 集合 | 列出应用程序对象上的扩展属性。 |
+| [创建 extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | 在应用程序对象上创建扩展属性。 |
+| [获取 extensionProperty](../api/extensionproperty-delete.md) | 无 | 从应用程序对象获取扩展属性。 |
+| [删除 extensionProperty](../api/extensionproperty-delete.md) | 无 | 从应用程序对象删除扩展属性。 |
 |**联合标识凭据**| | |
 | [List federatedIdentityCredential](../api/application-list-federatedidentitycredentials.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) 集合 | 列出应用程序对象上的联合标识凭据。 |
 | [Create federatedIdentityCredential](../api/application-post-federatedidentitycredentials.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) | 在应用程序对象上创建联合标识凭据。 |
@@ -88,7 +89,7 @@ ms.locfileid: "62854732"
 | createdDateTime | DateTimeOffset | 注册应用程序的日期和时间。DateTimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 <br><br> 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in` 和 `null` 值上的 `eq`) 和 `$orderBy`。 |
 |defaultRedirectUri|String|默认重定向 URI。 如果指定，并且 SAML 和 OIDC 流的登录请求中不存在显式重定向 URI，则 Azure AD 将令牌发送到此重定向 URI。 Azure AD 还会在 SAML IdP 发起的单一登录中将令牌发送到此默认 URI。 该值必须与为应用程序配置的重定向 URI 之一匹配。|
 | deletedDateTime | DateTimeOffset | 删除应用程序的日期和时间。DateTimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 |
-| 说明 | String | 用于向最终用户提供应用程序对象说明的空闲文本字段。 最大允许大小为 1024 个字符。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`startsWith`）和 `$search`。 |
+| 说明 | String | 用于向最终用户提供应用程序对象说明的空闲文本字段。 最大允许大小为 1024 个字符。 <br><br>默认返回。支持 `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) 和 `$search`。 |
 | disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册的应用程序。可能的值为：`null`（默认值）、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement`（原因可能包括可疑、滥用或恶意活动或违反 Microsoft 服务协议）。 <br><br> 支持 `$filter`（`eq`、`ne`、`not`）。 |
 | displayName | String | 应用程序的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。 |
 | groupMembershipClaims | String | 配置应用程序预期的用户或 OAuth 2.0 访问令牌中发出的 `groups` 声明。要设置此属性，请使用以下字符串值之一：`None`、`SecurityGroup`（对于安全组和 Azure AD 角色）和 `All` （这将获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色）。 |
@@ -111,10 +112,11 @@ ms.locfileid: "62854732"
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 可能的值是：`AzureADMyOrg`、`AzureADMultipleOrgs`、`AzureADandPersonalMicrosoftAccount`（默认）和 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。 <br><br>支持 `$filter`（`eq`、`ne`、`not`）。|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
 | 标记 |字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。<br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
-| tokenEncryptionKeyId |GUID|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
-| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定已验证的应用程序发布者。 有关发行者验证如何帮助支持应用程序安全性、可信度和合规性的详细信息，请参阅[发行者验证](/azure/active-directory/develop/publisher-verification-overview)。|
+| tokenEncryptionKeyId |Guid|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定应用程序的已验证发布者。有关发布者验证如何帮助支持应用程序安全性、可信度和合规性的详细信息，请参阅 [发布者验证](/azure/active-directory/develop/publisher-verification-overview)。|
 | 唯一名称 | String | 可指定给应用程序作为替代标识符的唯一标识符。不可变。只读。 |
 | web |[webApplication](webapplication.md)| 指定 Web 应用程序的设置。 |
+| windows |[windowsApplication](windowsapplication.md)| 指定运行 Microsoft Windows 并在 Microsoft Store 或 Xbox 游戏商店中发布的应用的设置。|
 
 ### <a name="signinaudience-values"></a>signInAudience 值
 
@@ -134,7 +136,7 @@ ms.locfileid: "62854732"
 |connectorGroup|[connectorGroup](connectorgroup.md)| 应用程序与 Azure AD 应用程序代理一起使用的 connectorGroup。可为 Null。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
 |extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。可为 Null。|
-|federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) 集合 |应用程序的联合标识。 只能在单个 GET 请求 (`GET /applications/{id}/federatedIdentityCredentials`) 上检索此对象。|
+|federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) 集合 |应用程序的联合标识。只能在单个 GET 请求 (`GET /applications/{id}/federatedIdentityCredentials`) 上检索此对象。|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) 集合|只读。可为 Null。|
 |owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。只读。可为 Null。支持 `$expand`。|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) 集合|为此应用分配的 tokenLifetimePolicies。支持 `$expand`。|
@@ -187,7 +189,8 @@ ms.locfileid: "62854732"
   "tokenEncryptionKeyId": "String",
   "uniqueName": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
-  "web": {"@odata.type": "microsoft.graph.webApplication"}
+  "web": {"@odata.type": "microsoft.graph.webApplication"},
+  "windows": {"@odata.type": "microsoft.graph.windowsApplication"}
 }
 ```
 

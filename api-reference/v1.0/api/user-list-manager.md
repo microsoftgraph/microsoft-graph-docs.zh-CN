@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 62542da816755ddbdc8f1f42d843520e1cc1ba11
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0760053904beb361518f78ddbed7d5ea99b63141
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107384"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336681"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -53,14 +53,14 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 >**注意：** 
 > + 值 `n` 为 `$levels` （以 `max` 返回所有经理）或 1 到 1000 之间的数字。  
 > + 如果未指定 `$levels` 参数，将仅返回直属经理。  
-> + 您可以指定 `$select` 内部 `$expand` 单个经理的属性。 `$levels`参数是必需的：`$expand=manager($levels=max;$select=id,displayName)`。
+> + 可以在 `$expand` 内指定 `$select`，以选择单个管理器的属性。`$levels` 参数是必需的: `$expand=manager($levels=max;$select=id,displayName)`。
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |
-| ConsistencyLevel | 最终。 请求包含 `$count=true` 查询字符串时必需。 |
+| ConsistencyLevel | 最终。请求包含 `$count=true` 查询字符串时必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -158,6 +158,22 @@ ConsistencyLevel: eventual
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-transitive-managers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-transitive-managers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-transitive-managers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-transitive-managers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-transitive-managers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: d87e316200f2cc6fc1cc8632151361ede9d16a57
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: b74b4222e2f0065edb9b97c4adba0abd0f2df5b5
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282014"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334994"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Microsoft Graph 连接器概述
 
@@ -35,7 +35,7 @@ Microsoft 和合作伙伴当前提供的 100 多个连接器可用于连接到�
 
 尽管这些连接器有助于连接到流行的服务，但您可能希望与现有[连接器库](https://www.microsoft.com/microsoft-search/connectors/)中未提供的服务进行集成。 您可以使用 Microsoft Graph connectors API 构建自定义连接器，将外部数据引入 Microsoft 365 体验，包括 Microsoft Search、Viva 主题等（即将推出）。
 
-## <a name="get-started-with-custom-graph-connectors"></a>自定义图形连接线入门：
+## <a name="get-started-with-custom-microsoft-graph-connectors"></a>自定义 Microsoft Graph 连接器入门：
 * [使用连接器 API](connecting-external-content-connectors-api-overview.md)
 * [将 Postman 与 Microsoft Graph 连接器 API 一并使用](connecting-external-content-connectors-api-postman.md)
 * [生成你的第一个自定义 Microsoft Graph 连接器](connecting-external-content-build-quickstart.yml)
