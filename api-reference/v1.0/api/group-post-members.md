@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fbcf86e2c2ff087d5b2ece680ecd50c140a61edf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0b6eb77312d4fef189f776670eb446b5ab167b97
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117376"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335407"
 ---
 # <a name="add-members"></a>添加成员
 
@@ -21,11 +21,12 @@ ms.locfileid: "62117376"
 可以添加用户、组织联系人、服务主体或其他组。 
 
 > [!IMPORTANT]
-> + 只能将成员添加到安全和Microsoft 365组。
+> + 只能将成员添加到安全和 Microsoft 365 组。 有关详细信息，请参阅[仅限 Azure AD 和 Microsoft Graph 中的组类型](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph)。
 > + 不能将安全组添加到 Microsoft 365 组。
 > + 不能将 Microsoft 365 组添加到安全组或其他 Microsoft 365 组。
+> + 安全组可以将用户、设备、组或服务主体作为其成员，而安全 Microsoft 365 组只能将用户作为其成员。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -34,6 +35,9 @@ ms.locfileid: "62117376"
 |委派（工作或学校帐户） | GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | GroupMember.ReadWrite.All、Group.ReadWrite.All 和 Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> 若要将成员添加到可分配角色的组，还必须向调用用户或应用分配 *RoleManagement.ReadWrite.Directory* 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5630f5888be3a7c84d2075907231c3d73fc29cb5
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: d78005e99e4eb585eb326a4dc225c8ab3b83cfb1
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894773"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367935"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
@@ -39,8 +39,7 @@ GET /servicePrincipals/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-默认情况下，此 API 不会返回 **keyCredentials** 属性中 **密钥** 的公钥值，除非已在 `$select` 查询中指定了 **keyCredentials**。
-例如，`$select=id,appId,keyCredentials`。
+默认情况下，此 API 不会返回 **keyCredentials** 属性中 **密钥** 的公钥值，除非已在 `$select` 查询中指定了 **keyCredentials**。例如，`$select=id,appId,keyCredentials`。
 
 对于每个租户，使用 `$select` 获取服务主体的 **keyCredentials** 限制为每分钟 150 个请求。
 
@@ -143,6 +142,7 @@ Content-type: application/json
   "passwordCredentials": [],
   "publisherName": null,
   "replyUrls": [],
+  "resourceSpecificApplicationPermissions": [],
   "servicePrincipalNames": [],
   "servicePrincipalType": null,
   "signInAudience": "AzureADandPersonalMicrosoftAccount",
