@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e6982052065412a3ae79a99784d935ebb63a09b0
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: eedfdb613483c099216887bda1a86f18b780082b
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335029"
+ms.locfileid: "63368222"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -109,6 +109,7 @@ ms.locfileid: "63335029"
 | passwordCredentials | [passwordCredential](passwordcredential.md) 集合|与应用程序关联的密码凭据集合。不可为 Null。|
 |preferredSingleSignOnMode|string|指定为此应用程序配置的单一登录模式。 Azure AD 使用首选单一登录模式从 Microsoft 365 或Azure AD My Apps 启动应用程序。 支持的值是：`password`、`saml`、`notSupported` 和 `oidc`。|
 |replyUrls|String 集合|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。不可为 NULL。 |
+|resourceSpecificApplicationPermissions|[resourceSpecificPermission](../resources/resourcespecificpermission.md) 集合|此应用程序公开的特定于资源的应用程序权限。 目前，仅 [Teams 应用使用 Microsoft Graph 访问特定聊天和团队](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 支持特定于资源的权限。 只读。|
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|有关 saml 单一登录的设置的集合。|
 |servicePrincipalNames|字符串集合|包含从关联的 [应用程序](application.md)中复制的 **identifiersUris** 列表。 可以将其他值添加到混合应用程序。 这些值可用于标识此应用程序在 Azure AD 中公开的权限。 例如，<ul><li>客户端应用可以指定基于此属性的值的资源 URI（即“aud”声明中返回的 URI），以获取访问令牌。</li></ul><br>多值属性上的筛选器表达式需要 any 运算符。不可为 NULL。<br><br> 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 |servicePrincipalType|String|标识服务主体代表应用程序、托管标识还是旧版应用程序。 这是由 Azure AD 内部设置的。 **servicePrincipalType** 属性可以设置为三个不同的值： <ul><li>__应用程序__ - 表示应用程序或服务的服务主体。 **appId** 属性标识相关联的应用程序注册，并匹配 [应用程序](application.md)（可能来自不同租户）的 **appId**。 如果缺少关联的应用注册，将不会为服务主体颁发令牌。</li><li>__ManagedIdentity__ - 一个服务主体，代表 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)。 可授予表示托管标识的服务主体的访问权限和权限，但不能直接更新或修改。</li><li>__旧版__ - 表示在应用注册前或通过旧体验创建的应用程序的服务主体。 旧服务主体可以具有凭据、服务主体名称、答复 URL 以及其他由授权用户编辑但没有相关应用注册的属性。 值 **appId** 未将服务主体与应用注册关联。 服务主体只能在创建它的租户中使用。</li><li>__SocialIdp__ - 供内部使用。 </ul>|
@@ -173,6 +174,7 @@ ms.locfileid: "63335029"
   "oauth2PermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "replyUrls": ["String"],
+  "resourceSpecificApplicationPermissions": [{"@odata.type": "microsoft.graph.resourceSpecificPermission"}],
   "servicePrincipalNames": ["String"],
   "servicePrincipalType": "String",
   "tags": ["String"],
