@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 675039d4e935bcad8aa7eb3571c48e2191826ba9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9131ee6015cd468c6479128198d4d04659ae375c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090357"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411666"
 ---
 ```go
 
@@ -20,7 +20,7 @@ options := &msgraphsdk.SourceCollectionRequestBuilderPatchOptions{
 }
 caseId := "case-id"
 sourceCollectionId := "sourceCollection-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).Patch(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).Patch(options)
 
 
 ```

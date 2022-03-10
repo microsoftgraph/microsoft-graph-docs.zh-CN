@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 97a9aabe11cd85d558976dc2e501e99bc0bc8b36
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: c8a33617612e54eb49995e62007650fff525cdba
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519221"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411704"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.AddTokenSigningCertificateRequestBuilderPostOptions{
     Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddTokenSigningCertificate().Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddTokenSigningCertificate(servicePrincipal-id).Post(options)
 
 
 ```

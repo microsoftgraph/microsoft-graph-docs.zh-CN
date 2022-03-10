@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bce1254291fe68b13bedf3ca7e544a12e0c15507
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: cf9ac85a6b5582c734cf97ff178f0c1e7c8412ce
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101426"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411835"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.RemoveKeyRequestBuilderPostOptions{
     Body: requestBody,
 }
 applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).RemoveKey().Post(options)
+graphClient.ApplicationsById(&applicationId).RemoveKey(application-id).Post(options)
 
 
 ```

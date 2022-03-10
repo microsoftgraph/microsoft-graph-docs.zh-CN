@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e6fd8ce0454dad28059197902eba2ddb0bc140b7f7f26c094a2f48edb6b51c08
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b76d66dba1a6598eb4d450baccdf7eab829c0c13
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161311"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411841"
 ---
 ```csharp
 
@@ -13,11 +13,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var extensionProperty = new ExtensionProperty
 {
-    Name = "extensionName",
-    DataType = "string",
+    Name = "jobGroup",
+    DataType = "String",
     TargetObjects = new List<String>()
     {
-        "Application"
+        "User"
     }
 };
 

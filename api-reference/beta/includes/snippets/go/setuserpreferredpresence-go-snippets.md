@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 42b64de901be95350e16e9893e8844bdb7da60d5
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 5155414adc890b457f5b9c5fe50c7bab32d4d274
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526093"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412031"
 ---
 ```go
 
@@ -23,7 +23,7 @@ options := &msgraphsdk.SetUserPreferredPresenceRequestBuilderPostOptions{
     Body: requestBody,
 }
 userId := "user-id"
-graphClient.UsersById(&userId).Presence().SetUserPreferredPresence().Post(options)
+graphClient.UsersById(&userId).Presence().SetUserPreferredPresence(user-id).Post(options)
 
 
 ```

@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5ece8bd201ba0ab329e59d0154ede573b18be5fa
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a3bbb55eba15de4c3420959e57c112e694474cb9
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083800"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412039"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewNewReminderTimeRequestBody()
 newReminderTime := msgraphsdk.NewDateTimeTimeZone()
 requestBody.SetNewReminderTime(newReminderTime)
 dateTime := "2016-10-19T10:37:00Z"
@@ -23,7 +23,7 @@ options := &msgraphsdk.SnoozeReminderRequestBuilderPostOptions{
     Body: requestBody,
 }
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).SnoozeReminder().Post(options)
+graphClient.Me().EventsById(&eventId).SnoozeReminder(event-id).Post(options)
 
 
 ```

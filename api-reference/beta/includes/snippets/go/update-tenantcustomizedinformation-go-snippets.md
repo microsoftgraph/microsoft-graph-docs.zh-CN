@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 512d79d8e22f3acdec46a0d4e68dfb6b40f3351a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cffabbcdc8166d8b0d33c3f6351a535e3545779c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137681"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412756"
 ---
 ```go
 
@@ -35,7 +35,7 @@ options := &msgraphsdk.TenantCustomizedInformationRequestBuilderPatchOptions{
     Body: requestBody,
 }
 tenantCustomizedInformationId := "tenantCustomizedInformation-id"
-graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(options)
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(options)
 
 
 ```

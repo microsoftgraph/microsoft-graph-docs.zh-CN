@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 96bf5e3201f7dd05143a388aec2513addc29d66c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ce54f853ad1d675ac26277d8043134d0c6515979
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115549"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411799"
 ---
 ```go
 
@@ -27,7 +27,7 @@ options := &msgraphsdk.TiIndicatorRequestBuilderPatchOptions{
     H: headers,
 }
 tiIndicatorId := "tiIndicator-id"
-graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
+result, err := graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
 
 
 ```

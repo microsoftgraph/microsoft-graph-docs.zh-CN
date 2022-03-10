@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 67cce80979d6b1d911f48a0ad71b485e6bf49b93
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 4bb4e2b09d5cf59e7cf0455b8ebcb31cd9d8c378
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61288698"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412264"
 ---
 ```go
 
@@ -14,7 +14,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 caseId := "case-id"
 custodianId := "custodian-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Activate().Post(nil)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Activate(case-id, custodian-id).Post(nil)
 
 
 ```

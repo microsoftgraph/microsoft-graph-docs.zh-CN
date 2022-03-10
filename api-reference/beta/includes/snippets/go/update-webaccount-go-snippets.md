@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e0c4b8854155d9d285100a5917499e628459e1e2
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a7433ef3e326ecbdaa2861982337e5ce97911ed8
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083909"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412741"
 ---
 ```go
 
@@ -19,7 +19,7 @@ options := &msgraphsdk.WebAccountRequestBuilderPatchOptions{
     Body: requestBody,
 }
 webAccountId := "webAccount-id"
-graphClient.Me().Profile().WebAccountsById(&webAccountId).Patch(options)
+result, err := graphClient.Me().Profile().WebAccountsById(&webAccountId).Patch(options)
 
 
 ```

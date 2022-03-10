@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: eac8a5a6c0f97003e8b7fb5811fee081a283603b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a393d36f433b064266fe2f009417c1a74ec24d22
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090996"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412036"
 ---
 ```go
 
@@ -23,7 +23,7 @@ options := &msgraphsdk.FieldsRequestBuilderPatchOptions{
 siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
-graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).Fields().Patch(options)
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).Fields().Patch(options)
 
 
 ```

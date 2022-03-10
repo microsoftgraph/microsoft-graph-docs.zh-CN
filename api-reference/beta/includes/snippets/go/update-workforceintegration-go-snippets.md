@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3e6ee4a01109540ee37d8a566dbb0f8dd3fcc0da
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 65e618c84a41a8f24991d02a6e2aa526f1be80cd
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084857"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412011"
 ---
 ```go
 
@@ -33,7 +33,7 @@ options := &msgraphsdk.WorkforceIntegrationRequestBuilderPatchOptions{
     Body: requestBody,
 }
 workforceIntegrationId := "workforceIntegration-id"
-graphClient.Teamwork().WorkforceIntegrationsById(&workforceIntegrationId).Patch(options)
+result, err := graphClient.Teamwork().WorkforceIntegrationsById(&workforceIntegrationId).Patch(options)
 
 
 ```

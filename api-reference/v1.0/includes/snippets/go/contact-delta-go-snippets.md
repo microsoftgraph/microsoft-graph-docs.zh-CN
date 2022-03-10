@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 19e93fe44ae7780b157482edadee67a5db19e17a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 001cd08f830fdaec7c3cfc99013b2472822c8423
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137642"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412335"
 ---
 ```go
 
@@ -23,7 +23,7 @@ options := &msgraphsdk.DeltaRequestBuilderGetOptions{
     H: headers,
 }
 contactFolderId := "contactFolder-id"
-result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Contacts().Delta()().Get(options)
+result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Contacts().Delta()(contactFolder-id).Get(options)
 
 
 ```

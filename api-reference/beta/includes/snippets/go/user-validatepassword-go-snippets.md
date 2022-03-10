@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 167a0a5428214b69502bf3612ef720e21cd03c9d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 0239ed3022122b3ce9d2b1c46bfc5b5021b57019
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61100661"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411641"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewPasswordRequestBody()
 password := "1234567890"
 requestBody.SetPassword(&password)
 options := &msgraphsdk.ValidatePasswordRequestBuilderPostOptions{

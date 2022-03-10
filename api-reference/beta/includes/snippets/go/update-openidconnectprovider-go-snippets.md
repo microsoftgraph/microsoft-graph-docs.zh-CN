@@ -1,27 +1,26 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b17a5c99f59104c5048a57c9e218a2f70d420d06
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d446fdebe3d89589fab0fc132cec30491704a128
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127541"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411957"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewIdentityProviderBase()
+requestBody := msgraphsdk.NewIdentityProvider()
 requestBody.SetAdditionalData(map[string]interface{}{
-    "@odata.type": "#microsoft.graph.socialIdentityProvider",
     "responseType": "id_token",
 }
-options := &msgraphsdk.IdentityProviderBaseRequestBuilderPatchOptions{
+options := &msgraphsdk.IdentityProviderRequestBuilderPatchOptions{
     Body: requestBody,
 }
-identityProviderBaseId := "identityProviderBase-id"
-graphClient.Identity().IdentityProvidersById(&identityProviderBaseId).Patch(options)
+identityProviderId := "identityProvider-id"
+result, err := graphClient.IdentityProvidersById(&identityProviderId).Patch(options)
 
 
 ```

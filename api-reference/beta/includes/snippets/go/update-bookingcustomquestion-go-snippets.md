@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 07687240e50df5e9471c1f219ae00f8d529b0b15
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 106554cf7702e7a2b03629feaec56785478c3b36
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094538"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411698"
 ---
 ```go
 
@@ -27,7 +27,7 @@ options := &msgraphsdk.BookingCustomQuestionRequestBuilderPatchOptions{
 }
 bookingBusinessId := "bookingBusiness-id"
 bookingCustomQuestionId := "bookingCustomQuestion-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).CustomQuestionsById(&bookingCustomQuestionId).Patch(options)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).CustomQuestionsById(&bookingCustomQuestionId).Patch(options)
 
 
 ```

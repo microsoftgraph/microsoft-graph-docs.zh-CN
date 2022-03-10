@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b16b46b34d1ec00299926e9ca9d52969514ce575
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 94c980489043cc1c6bc332d2d39d7da25bbcc1a3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61091635"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412755"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.TenantTagRequestBuilderPatchOptions{
     Body: requestBody,
 }
 tenantTagId := "tenantTag-id"
-graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).Patch(options)
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).Patch(options)
 
 
 ```

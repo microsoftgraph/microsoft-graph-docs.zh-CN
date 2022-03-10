@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8b8bee09ca7622d63b45f8ad0bbcfd32583e5c1a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 0fb358fd4720d9a7f894a877d3105d76f1c615f4
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61097764"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412014"
 ---
 ```go
 
@@ -19,7 +19,7 @@ options := &msgraphsdk.ItemInsightsRequestBuilderPatchOptions{
     Body: requestBody,
 }
 userId := "user-id"
-graphClient.UsersById(&userId).Settings().ItemInsights().Patch(options)
+result, err := graphClient.UsersById(&userId).Settings().ItemInsights().Patch(options)
 
 
 ```

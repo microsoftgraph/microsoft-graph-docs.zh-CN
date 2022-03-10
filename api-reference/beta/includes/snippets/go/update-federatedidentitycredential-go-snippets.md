@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 35e5c97cee7fa66f73e3682fc82bff5bebcdb2e0
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 5bc0a1df7f0ecefb8b8924743ac8c310017f8877
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083373"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411907"
 ---
 ```go
 
@@ -29,7 +29,7 @@ options := &msgraphsdk.FederatedIdentityCredentialRequestBuilderPatchOptions{
 }
 applicationId := "application-id"
 federatedIdentityCredentialId := "federatedIdentityCredential-id"
-graphClient.ApplicationsById(&applicationId).FederatedIdentityCredentialsById(&federatedIdentityCredentialId).Patch(options)
+result, err := graphClient.ApplicationsById(&applicationId).FederatedIdentityCredentialsById(&federatedIdentityCredentialId).Patch(options)
 
 
 ```

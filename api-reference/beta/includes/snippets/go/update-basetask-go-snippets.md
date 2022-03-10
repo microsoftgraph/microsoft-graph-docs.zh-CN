@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a7566089851b6f8da43a1b918e9165aadecc2f82
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7b1fa89cf9f6c3f46b1c60ada5ed158ffc798bdb
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63351162"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411820"
 ---
 ```go
 
@@ -46,7 +46,7 @@ options := &msgraphsdk.BaseTaskRequestBuilderPatchOptions{
 }
 baseTaskListId := "baseTaskList-id"
 baseTaskId := "baseTask-id"
-graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).Patch(options)
+result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).Patch(options)
 
 
 ```

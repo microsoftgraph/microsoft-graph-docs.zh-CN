@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 80979062869cf1891ec07d449aff9915f24414d4
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 4e3b33f6ae53b631117770ea92387d1cbc91e095
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61228322"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411867"
 ---
 ```go
 
@@ -41,7 +41,7 @@ options := &msgraphsdk.EventRequestBuilderPatchOptions{
     Body: requestBody,
 }
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Patch(options)
+result, err := graphClient.Me().EventsById(&eventId).Patch(options)
 
 
 ```

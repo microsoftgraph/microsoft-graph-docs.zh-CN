@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 373f02f2342d78cadaa5ccc407a34b9aa13e4b3a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 836461f339c303697570021338f04b9c1dbd09a5
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338333"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412581"
 ---
 ```go
 
@@ -19,7 +19,7 @@ options := &msgraphsdk.AcronymRequestBuilderPatchOptions{
     Body: requestBody,
 }
 acronymId := "acronym-id"
-graphClient.Search().AcronymsById(&acronymId).Patch(options)
+result, err := graphClient.Search().AcronymsById(&acronymId).Patch(options)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d56cf8d91b6845c52d2b0d4b5ac97685958315bd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a993027ab32e560fa7e8ed4d5a0ee3c26b1cf83a
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137620"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412737"
 ---
 ```go
 
@@ -20,7 +20,7 @@ options := &msgraphsdk.DeltaRequestBuilderGetOptions{
 }
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Delta()().Get(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Delta()(team-id, channel-id).Get(options)
 
 
 ```

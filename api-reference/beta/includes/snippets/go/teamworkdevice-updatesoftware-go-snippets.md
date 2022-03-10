@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 69309d69e86f96393a633d56f069fc68bae1e153
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 8a764cef7f54e3ba75c564cc3cc4d0e146f4edb2
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348385"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412606"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.UpdateSoftwareRequestBuilderPostOptions{
     Body: requestBody,
 }
 teamworkDeviceId := "teamworkDevice-id"
-graphClient.Teamwork().DevicesById(&teamworkDeviceId).UpdateSoftware().Post(options)
+graphClient.Teamwork().DevicesById(&teamworkDeviceId).UpdateSoftware(teamworkDevice-id).Post(options)
 
 
 ```

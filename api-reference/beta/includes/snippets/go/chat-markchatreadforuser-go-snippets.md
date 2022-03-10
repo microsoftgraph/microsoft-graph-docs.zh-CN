@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 76b048b7552c271fa74f0faf692aa1db2c9076a4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e37784b7243cb46c8a1eb5f8eab83d5bbb1092fe
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137648"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411688"
 ---
 ```go
 
@@ -23,7 +23,7 @@ options := &msgraphsdk.MarkChatReadForUserRequestBuilderPostOptions{
     Body: requestBody,
 }
 chatId := "chat-id"
-graphClient.ChatsById(&chatId).MarkChatReadForUser().Post(options)
+graphClient.ChatsById(&chatId).MarkChatReadForUser(chat-id).Post(options)
 
 
 ```

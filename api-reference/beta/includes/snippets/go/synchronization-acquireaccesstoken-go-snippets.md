@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f2fb5074a268a276a7e629a70d61d4133dc74dac
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 8bb80a8eddf1dae7c59bf0c3d92bcbb7b8a5ac3f
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087982"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412747"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewCredentialsRequestBody()
 requestBody.SetCredentials( []SynchronizationSecretKeyStringValuePair {
     msgraphsdk.NewSynchronizationSecretKeyStringValuePair(),
     SetAdditionalData(map[string]interface{}{
@@ -23,7 +23,7 @@ options := &msgraphsdk.AcquireAccessTokenRequestBuilderPostOptions{
     Body: requestBody,
 }
 applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).Synchronization().AcquireAccessToken().Post(options)
+graphClient.ApplicationsById(&applicationId).Synchronization().AcquireAccessToken(application-id).Post(options)
 
 
 ```

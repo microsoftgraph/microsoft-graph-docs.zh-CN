@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dff1bd0015a6e5f594a92b9477590329f1e57036
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f9fd5dd6b6aff8405518612e4b2987165f502fd3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087759"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412467"
 ---
 ```go
 
@@ -18,7 +18,7 @@ requestBody.SetBlockMsolPowerShell(&blockMsolPowerShell)
 options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
     Body: requestBody,
 }
-graphClient.Policies().AuthorizationPolicy().Patch(options)
+result, err := graphClient.Policies().AuthorizationPolicy().Patch(options)
 
 
 ```

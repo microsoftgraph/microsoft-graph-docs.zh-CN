@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7727de589c0195eb5055a2bf4b07e7daad442c3e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f09ce563ff205a480be9113465597db7553b3675
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61092163"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412458"
 ---
 ```go
 
@@ -19,7 +19,7 @@ options := &msgraphsdk.DeviceRequestBuilderPatchOptions{
     Body: requestBody,
 }
 deviceId := "device-id"
-graphClient.DevicesById(&deviceId).Patch(options)
+result, err := graphClient.DevicesById(&deviceId).Patch(options)
 
 
 ```

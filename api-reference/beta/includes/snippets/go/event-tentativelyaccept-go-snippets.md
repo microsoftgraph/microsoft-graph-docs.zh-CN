@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 998c65681e6262cc68c53548cddf30ccc5322c0c
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b314f23583ba5b90be0e190cebc81936c6f82c00
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61097978"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412038"
 ---
 ```go
 
@@ -35,7 +35,7 @@ options := &msgraphsdk.TentativelyAcceptRequestBuilderPostOptions{
     Body: requestBody,
 }
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).TentativelyAccept().Post(options)
+graphClient.Me().EventsById(&eventId).TentativelyAccept(event-id).Post(options)
 
 
 ```

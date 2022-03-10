@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 531ac8192cc420c73e234142cd7640ff1bbeb0b1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 91e5157845d0a64c41dc7861e305add7b6336237
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101032"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412007"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.EducationClassRequestBuilderPatchOptions{
     Body: requestBody,
 }
 educationClassId := "educationClass-id"
-graphClient.Education().ClassesById(&educationClassId).Patch(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).Patch(options)
 
 
 ```

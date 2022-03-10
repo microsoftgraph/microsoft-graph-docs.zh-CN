@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 10aaa33bb1db2d2866751a3a645159a30da05976
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 5068cf1cb813dac91e98359225fa5c481bc07ce3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084310"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411769"
 ---
 ```go
 
@@ -23,7 +23,7 @@ options := &msgraphsdk.AssociateWithHubSitesRequestBuilderPostOptions{
 }
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).AssociateWithHubSites().Post(options)
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).AssociateWithHubSites(site-id, contentType-id).Post(options)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 66b46fe7977eeb31f633bc481e7c1088795f503f
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 19d4d944d0717a85eb1e1facf0856eee2986564e
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095235"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412400"
 ---
 ```go
 
@@ -24,7 +24,7 @@ options := &msgraphsdk.TokenIssuancePolicyRequestBuilderPatchOptions{
     Body: requestBody,
 }
 tokenIssuancePolicyId := "tokenIssuancePolicy-id"
-graphClient.Policies().TokenIssuancePoliciesById(&tokenIssuancePolicyId).Patch(options)
+result, err := graphClient.Policies().TokenIssuancePoliciesById(&tokenIssuancePolicyId).Patch(options)
 
 
 ```

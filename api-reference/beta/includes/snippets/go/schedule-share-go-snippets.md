@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 588263fb2764a7af285183c6a5c90afd127a5a25
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: de420629c1f49abd1b37e720354c84fa18f4f6e7
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61091817"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411644"
 ---
 ```go
 
@@ -23,7 +23,7 @@ options := &msgraphsdk.ShareRequestBuilderPostOptions{
     Body: requestBody,
 }
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Schedule().Share().Post(options)
+graphClient.TeamsById(&teamId).Schedule().Share(team-id).Post(options)
 
 
 ```

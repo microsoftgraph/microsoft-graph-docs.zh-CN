@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5aaa6ed8d42c4c708c6169498e39640aa8caebce
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: bdd4d4b7dab2fe70e898e1641acdef61ae222f0e
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61102525"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411768"
 ---
 ```go
 
@@ -28,7 +28,7 @@ options := &msgraphsdk.CopyToDefaultContentLocationRequestBuilderPostOptions{
 }
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).CopyToDefaultContentLocation().Post(options)
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).CopyToDefaultContentLocation(site-id, contentType-id).Post(options)
 
 
 ```

@@ -1,24 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2e19acc8c9d33310d525ee122bc639c371ca5372e3fcce6462ffdb49ea8f86a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0b604df193c670d9e10cbc7869a8d4894fad7ef2
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57278722"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412476"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ExtensionProperty extensionProperty = new ExtensionProperty();
-extensionProperty.name = "extensionName";
-extensionProperty.dataType = "string";
+extensionProperty.name = "jobGroup";
+extensionProperty.dataType = "String";
 LinkedList<String> targetObjectsList = new LinkedList<String>();
-targetObjectsList.add("Application");
+targetObjectsList.add("User");
 extensionProperty.targetObjects = targetObjectsList;
 
-graphClient.applications("{id}").extensionProperties()
+graphClient.applications("fd918e4b-c821-4efb-b50a-5eddd23afc6f").extensionProperties()
     .buildRequest()
     .post(extensionProperty);
 

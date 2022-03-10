@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3ce53fab811d688adaeefbc67ece2c51f0e84269
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 64ec29fe7361f2a9364cbe258ba0e9f847569376
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107092"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411828"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewAttachmentItemRequestBody()
 attachmentItem := msgraphsdk.NewAttachmentItem()
 requestBody.SetAttachmentItem(attachmentItem)
 attachmentType := "file"
@@ -29,7 +29,7 @@ options := &msgraphsdk.CreateUploadSessionRequestBuilderPostOptions{
     Body: requestBody,
 }
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Attachments().CreateUploadSession().Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).Attachments().CreateUploadSession(message-id).Post(options)
 
 
 ```

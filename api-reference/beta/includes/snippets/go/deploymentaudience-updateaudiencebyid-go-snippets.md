@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 424f521e781fb51b9001dfeee2aeb2c40d50ff14
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b7bdab078da102bb20dc96749234987fee129a0d
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084359"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412013"
 ---
 ```go
 
@@ -31,7 +31,7 @@ options := &msgraphsdk.UpdateAudienceByIdRequestBuilderPostOptions{
     Body: requestBody,
 }
 deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Audience().UpdateAudienceById().Post(options)
+graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Audience().UpdateAudienceById(deployment-id).Post(options)
 
 
 ```

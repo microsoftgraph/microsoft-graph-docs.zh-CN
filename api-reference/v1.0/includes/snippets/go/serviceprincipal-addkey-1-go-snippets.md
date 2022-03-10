@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 34e4bd7a9847b2467a8cd493be1fc357c51a1ed5
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a618c18a9ea8a52a289e64a647568b3752292e51
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098953"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411707"
 ---
 ```go
 
@@ -28,7 +28,7 @@ options := &msgraphsdk.AddKeyRequestBuilderPostOptions{
     Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddKey().Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddKey(servicePrincipal-id).Post(options)
 
 
 ```

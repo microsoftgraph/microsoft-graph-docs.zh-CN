@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d93c17a7c32a4640f55c8bf2bcb6649dd1e08bc28a1d4b4a3f0c7a9ea52703a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c6fc22f3ebcc41381e82cd1072f7ee7f8138b7c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57104434"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411842"
 ---
 ```javascript
 
@@ -16,14 +16,14 @@ const options = {
 const client = Client.init(options);
 
 const extensionProperty = {
-    name: 'extensionName',
-    dataType: 'string',
+    name: 'jobGroup',
+    dataType: 'String',
     targetObjects: [
-        'Application'
+        'User'
     ]
 };
 
-await client.api('/applications/{id}/extensionProperties')
+await client.api('/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties')
     .version('beta')
     .post(extensionProperty);
 
