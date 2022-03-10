@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0a35c33e592b6943e85198c3781e2807fb6d54fd
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 42209fa2602dbdd31a3102dc5395745daee0bad6
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61088395"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412365"
 ---
 ```go
 
@@ -26,7 +26,7 @@ options := &msgraphsdk.MobilityManagementPolicyRequestBuilderPatchOptions{
     Body: requestBody,
 }
 mobilityManagementPolicyId := "mobilityManagementPolicy-id"
-graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).Patch(options)
+result, err := graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).Patch(options)
 
 
 ```

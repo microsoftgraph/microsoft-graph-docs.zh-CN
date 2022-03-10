@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8b7dbc1f737906b3d0e1a796092307c93ccfcbd1
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f59a4afaa2e066119814ffb5de4086ca887a5c3b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61096695"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412094"
 ---
 ```go
 
@@ -18,7 +18,7 @@ requestBody.SetIsGroupOwnerManagementEnabled(&isGroupOwnerManagementEnabled)
 options := &msgraphsdk.AccessReviewPolicyRequestBuilderPatchOptions{
     Body: requestBody,
 }
-graphClient.Policies().AccessReviewPolicy().Patch(options)
+result, err := graphClient.Policies().AccessReviewPolicy().Patch(options)
 
 
 ```

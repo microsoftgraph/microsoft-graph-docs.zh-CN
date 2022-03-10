@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 669b5742c7773ed3490f1243ebe7b5a88b8bf2c5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7e705da8dea0dd396a2ef645e60caa69435bd01f
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121238"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411966"
 ---
 ```go
 
@@ -24,7 +24,7 @@ options := &msgraphsdk.ConditionalAccessPolicyRequestBuilderPatchOptions{
     Body: requestBody,
 }
 conditionalAccessPolicyId := "conditionalAccessPolicy-id"
-graphClient.Identity().ConditionalAccess().PoliciesById(&conditionalAccessPolicyId).Patch(options)
+result, err := graphClient.Identity().ConditionalAccess().PoliciesById(&conditionalAccessPolicyId).Patch(options)
 
 
 ```

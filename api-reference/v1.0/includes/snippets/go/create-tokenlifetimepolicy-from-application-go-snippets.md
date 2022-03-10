@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2f529a846ae070a7f1ac00c3593ef2c8a5ec1c07
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 56a75420c129ccfa348dbf0602657af01087e856
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61085759"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411726"
 ---
 ```go
 
@@ -16,11 +16,12 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.id": "https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9",
 }
-options := &msgraphsdk.RefRequestBuilderPostOptions{
+options := &msgraphsdk.TokenLifetimePolicyRequestBuilderPostOptions{
     Body: requestBody,
 }
 applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).TokenLifetimePolicies().$ref().Post(options)
+tokenLifetimePolicyId := "tokenLifetimePolicy-id"
+graphClient.ApplicationsById(&applicationId).TokenLifetimePoliciesById(&tokenLifetimePolicyId).Post(options)
 
 
 ```

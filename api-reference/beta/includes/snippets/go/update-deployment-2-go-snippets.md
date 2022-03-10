@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: be24aecf62c72260a76d0eb363f47338e22b0ed2
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b44242b82a2bfc32ff507fda581fe1332e532d10
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61100655"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412488"
 ---
 ```go
 
@@ -35,7 +35,7 @@ options := &msgraphsdk.DeploymentRequestBuilderPatchOptions{
     Body: requestBody,
 }
 deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Patch(options)
+result, err := graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Patch(options)
 
 
 ```

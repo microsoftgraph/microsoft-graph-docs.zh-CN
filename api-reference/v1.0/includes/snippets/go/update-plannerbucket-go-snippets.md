@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 08c8b9043c0dc3816ee1d781948beedd1026a0b4
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: cbb9dbe902b82399de126074904b3f39205965b7
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61091731"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412648"
 ---
 ```go
 
@@ -24,7 +24,7 @@ options := &msgraphsdk.PlannerBucketRequestBuilderPatchOptions{
     H: headers,
 }
 plannerBucketId := "plannerBucket-id"
-graphClient.Planner().BucketsById(&plannerBucketId).Patch(options)
+result, err := graphClient.Planner().BucketsById(&plannerBucketId).Patch(options)
 
 
 ```

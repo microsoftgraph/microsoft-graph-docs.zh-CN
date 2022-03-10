@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ec2516095c84c77e2b5472fa0309bb970aa30d5a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 0770420424da3bc01188ac665e65a741a73bcaf6
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098193"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412659"
 ---
 ```go
 
@@ -24,7 +24,7 @@ options := &msgraphsdk.ConversationMemberRequestBuilderPatchOptions{
 }
 teamId := "team-id"
 conversationMemberId := "conversationMember-id"
-graphClient.TeamsById(&teamId).MembersById(&conversationMemberId).Patch(options)
+result, err := graphClient.TeamsById(&teamId).MembersById(&conversationMemberId).Patch(options)
 
 
 ```

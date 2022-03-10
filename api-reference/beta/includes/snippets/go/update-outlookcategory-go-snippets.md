@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3446273925243ce9fe4e638d46dfaed8575e1e0e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 2e96be5a4576c7b91d752509a697a932f82a3a8a
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61102621"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412720"
 ---
 ```go
 
@@ -19,7 +19,7 @@ options := &msgraphsdk.OutlookCategoryRequestBuilderPatchOptions{
     Body: requestBody,
 }
 outlookCategoryId := "outlookCategory-id"
-graphClient.Me().Outlook().MasterCategoriesById(&outlookCategoryId).Patch(options)
+result, err := graphClient.Me().Outlook().MasterCategoriesById(&outlookCategoryId).Patch(options)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0eae807658904463f435423b6fe058006ec5e9c3
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c13e2bc6930891a81a1f2d11995b0e16c6723518
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61091116"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412722"
 ---
 ```go
 
@@ -19,7 +19,7 @@ options := &msgraphsdk.IdentityUserFlowAttributeRequestBuilderPatchOptions{
     Body: requestBody,
 }
 identityUserFlowAttributeId := "identityUserFlowAttribute-id"
-graphClient.Identity().UserFlowAttributesById(&identityUserFlowAttributeId).Patch(options)
+result, err := graphClient.Identity().UserFlowAttributesById(&identityUserFlowAttributeId).Patch(options)
 
 
 ```

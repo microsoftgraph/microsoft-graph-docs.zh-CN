@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ec7bdcbcc66b96fad937edab709eafb6bb573f2d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: af21d5794bdd2caf918f4ac5b8b42da895beb227
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093159"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412174"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewQualityRequestBody()
 quality := msgraphsdk.NewTeleconferenceDeviceQuality()
 requestBody.SetQuality(quality)
 callChainId := "0622673d-9f69-49b3-9d4f-5ec64f42ecce"

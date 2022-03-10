@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4c7648a4414847ba667590c10a1916ff3d8d6ea3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ce917a189fc31d485429dfde8bbd9ff7a6b3db32
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137676"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412548"
 ---
 ```go
 
@@ -25,7 +25,7 @@ options := &msgraphsdk.StartHoldMusicRequestBuilderPostOptions{
 }
 callId := "call-id"
 participantId := "participant-id"
-result, err := graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).StartHoldMusic().Post(options)
+result, err := graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).StartHoldMusic(call-id, participant-id).Post(options)
 
 
 ```

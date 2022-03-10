@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 84e547460c5ac0c3c6710a8d2ecfe57f78a971bc
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 62d8e00f477b9c32b98b51bf3ce9a9fbb5336b85
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094945"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412634"
 ---
 ```go
 
@@ -20,7 +20,7 @@ options := &msgraphsdk.TagRequestBuilderDeleteOptions{
 }
 caseId := "case-id"
 tagId := "tag-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).Delete(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).Delete(options)
 
 
 ```

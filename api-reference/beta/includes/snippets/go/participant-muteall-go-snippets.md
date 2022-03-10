@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fd0b14763c3b3326d2f1cf6a85992f399a7e1db1
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 9b1cad5d110185d59b95c86a47a339321f4bc620
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089048"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412669"
 ---
 ```go
 
@@ -22,7 +22,7 @@ options := &msgraphsdk.MuteAllRequestBuilderPostOptions{
     Body: requestBody,
 }
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).Participants().MuteAll().Post(options)
+result, err := graphClient.Communications().CallsById(&callId).Participants().MuteAll(call-id).Post(options)
 
 
 ```

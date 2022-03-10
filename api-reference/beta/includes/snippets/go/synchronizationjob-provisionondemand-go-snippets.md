@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d92e0944379da76f6f2a01751dde1cccabc284cf
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 6a51a9b01e32a65045c50b113812b8837f537393
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090531"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412348"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewParametersRequestBody()
 requestBody.SetParameters( []SynchronizationJobApplicationParameters {
     msgraphsdk.NewSynchronizationJobApplicationParameters(),
     SetAdditionalData(map[string]interface{}{
@@ -26,7 +26,7 @@ options := &msgraphsdk.ProvisionOnDemandRequestBuilderPostOptions{
 }
 servicePrincipalId := "servicePrincipal-id"
 synchronizationJobId := "synchronizationJob-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).ProvisionOnDemand().Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).ProvisionOnDemand(servicePrincipal-id, synchronizationJob-id).Post(options)
 
 
 ```

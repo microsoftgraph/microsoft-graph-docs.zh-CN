@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 757a7a67521fc95dd2b139f33d6bfc2143c3babb
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: d21245cb1a4a8361abda69ebeb557da83c139f60
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61288220"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411997"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61288220"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 inferenceClassificationOverrideId := "inferenceClassificationOverride-id"
-graphClient.Me().InferenceClassification().OverridesById(&inferenceClassificationOverrideId).Delete(nil)
+result, err := graphClient.Me().InferenceClassification().OverridesById(&inferenceClassificationOverrideId).Delete(nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 809d5d454c70912be809e1ce7f867483972c50f0
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 5b581028f803585965cd09fd1dffce615a833366
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093878"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411885"
 ---
 ```go
 
@@ -47,7 +47,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.AuthenticationMethodsPolicyRequestBuilderPatchOptions{
     Body: requestBody,
 }
-graphClient.Policies().AuthenticationMethodsPolicy().Patch(options)
+result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(options)
 
 
 ```

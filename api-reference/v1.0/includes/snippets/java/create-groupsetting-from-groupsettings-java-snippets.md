@@ -1,18 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 267409cdca95e0c8cf7bb6043b02845ba1d8b6bc
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: c111b88a8bb8eb9b807c9aedb803e36620f8972f
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514682"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412693"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GroupSetting groupSetting = new GroupSetting();
-groupSetting.displayName = "Group.Unified";
 groupSetting.templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b";
 LinkedList<SettingValue> valuesList = new LinkedList<SettingValue>();
 SettingValue values = new SettingValue();

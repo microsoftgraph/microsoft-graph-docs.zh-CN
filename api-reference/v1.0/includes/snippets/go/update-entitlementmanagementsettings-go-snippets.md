@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 30720bfd11d0666ceb26450cc52848ef31e312e5
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 4d5d0b1d2d283be02f12b68886d4546d8b8b1f1b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336898"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412123"
 ---
 ```go
 
@@ -18,7 +18,7 @@ requestBody.SetExternalUserLifecycleAction(&externalUserLifecycleAction)
 options := &msgraphsdk.SettingsRequestBuilderPatchOptions{
     Body: requestBody,
 }
-graphClient.IdentityGovernance().EntitlementManagement().Settings().Patch(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().Settings().Patch(options)
 
 
 ```

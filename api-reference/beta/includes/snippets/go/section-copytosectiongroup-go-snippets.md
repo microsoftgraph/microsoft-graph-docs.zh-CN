@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3be0da11bbdcff464ea178c2ff8bf16551203d05
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 39c0b0bcd8f83b44923b0bbfbd57b2f99a0870f8
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094727"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412492"
 ---
 ```go
 
@@ -23,7 +23,7 @@ options := &msgraphsdk.CopyToSectionGroupRequestBuilderPostOptions{
     Body: requestBody,
 }
 onenoteSectionId := "onenoteSection-id"
-result, err := graphClient.Me().Onenote().SectionsById(&onenoteSectionId).CopyToSectionGroup().Post(options)
+result, err := graphClient.Me().Onenote().SectionsById(&onenoteSectionId).CopyToSectionGroup(onenoteSection-id).Post(options)
 
 
 ```

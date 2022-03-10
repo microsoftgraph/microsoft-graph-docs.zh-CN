@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2650e4d90fffbe019be6c5c8a07e2a3e28e29432
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 399368b29ca235290c8e42bd8961e437daa8c516
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101337"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412687"
 ---
 ```go
 
@@ -13,8 +13,6 @@ ms.locfileid: "61101337"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewGroupSetting()
-displayName := "Group.Unified"
-requestBody.SetDisplayName(&displayName)
 templateId := "62375ab9-6b52-47ed-826b-58e47e0e304b"
 requestBody.SetTemplateId(&templateId)
 requestBody.SetValues( []SettingValue {

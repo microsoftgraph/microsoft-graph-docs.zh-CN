@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b78b0a18e059f5e424957ad5726a2f55a0457d70
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 7d3a012e390b6dba8e6337b1ad8c56359556b13c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61102920"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412151"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.PermissionRequestBuilderPatchOptions{
 }
 siteId := "site-id"
 permissionId := "permission-id"
-graphClient.SitesById(&siteId).PermissionsById(&permissionId).Patch(options)
+result, err := graphClient.SitesById(&siteId).PermissionsById(&permissionId).Patch(options)
 
 
 ```

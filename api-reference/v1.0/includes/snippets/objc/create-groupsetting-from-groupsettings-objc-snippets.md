@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 991850df6fa4dfa6229bce13a28a03f6bc753a6f
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 937d2ad8c1604bca9d1190ac9eddd8b1d934d75b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514684"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412691"
 ---
 ```objc
 
@@ -17,7 +17,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphGroupSetting *groupSetting = [[MSGraphGroupSetting alloc] init];
-[groupSetting setDisplayName:@"Group.Unified"];
 [groupSetting setTemplateId:@"62375ab9-6b52-47ed-826b-58e47e0e304b"];
 NSMutableArray *valuesList = [[NSMutableArray alloc] init];
 MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];

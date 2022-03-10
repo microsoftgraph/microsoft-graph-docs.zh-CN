@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ecc3a6e653f245c4b809e33dcc4a68fd30f617b8
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 4419a7adb55108c52549d5d8a8d3aa145bfca4d7
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61092036"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411728"
 ---
 ```go
 
@@ -24,7 +24,7 @@ options := &msgraphsdk.BatchRecordDecisionsRequestBuilderPostOptions{
 }
 accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
 accessReviewInstanceId := "accessReviewInstance-id"
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).BatchRecordDecisions().Post(options)
+graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).BatchRecordDecisions(accessReviewScheduleDefinition-id, accessReviewInstance-id).Post(options)
 
 
 ```

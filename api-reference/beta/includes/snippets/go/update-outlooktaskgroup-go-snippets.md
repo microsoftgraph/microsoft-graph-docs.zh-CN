@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2ea1d7a933f75f816887927b17c2c58215743ace
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bcf684ba3e28579bc1cbab1e10f3f2bc778b4cd1
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099142"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412154"
 ---
 ```go
 
@@ -19,7 +19,7 @@ options := &msgraphsdk.OutlookTaskGroupRequestBuilderPatchOptions{
     Body: requestBody,
 }
 outlookTaskGroupId := "outlookTaskGroup-id"
-graphClient.Me().Outlook().TaskGroupsById(&outlookTaskGroupId).Patch(options)
+result, err := graphClient.Me().Outlook().TaskGroupsById(&outlookTaskGroupId).Patch(options)
 
 
 ```

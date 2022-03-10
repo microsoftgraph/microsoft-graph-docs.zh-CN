@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e64b20c35b87c39715e68a3d8745c66768c2b1ea
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: fb8f06492eae897f15e49dc181004e6d34ec1e1c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087588"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63411877"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.UpdateRecordingStatusRequestBuilderPostOptions{
     Body: requestBody,
 }
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).UpdateRecordingStatus().Post(options)
+result, err := graphClient.Communications().CallsById(&callId).UpdateRecordingStatus(call-id).Post(options)
 
 
 ```

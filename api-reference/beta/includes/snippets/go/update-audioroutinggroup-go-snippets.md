@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1c505e26ae060265b1bd8ff26dabfd3a36816e6a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e76a231fed40c346eafd25bed97e99019563b988
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090675"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412184"
 ---
 ```go
 
@@ -29,7 +29,7 @@ options := &msgraphsdk.AudioRoutingGroupRequestBuilderPatchOptions{
 }
 callId := "call-id"
 audioRoutingGroupId := "audioRoutingGroup-id"
-graphClient.Communications().CallsById(&callId).AudioRoutingGroupsById(&audioRoutingGroupId).Patch(options)
+result, err := graphClient.Communications().CallsById(&callId).AudioRoutingGroupsById(&audioRoutingGroupId).Patch(options)
 
 
 ```

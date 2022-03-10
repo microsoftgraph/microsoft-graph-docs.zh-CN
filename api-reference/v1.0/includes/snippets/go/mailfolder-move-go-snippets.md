@@ -1,25 +1,25 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d0594976c975c3be3ef1897c12dc0473730da7e6
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 70c70a1675d17c4f0c2637d470596d49de2000dd
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098864"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412652"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewDestinationIdRequestBody()
 destinationId := "destinationId-value"
 requestBody.SetDestinationId(&destinationId)
 options := &msgraphsdk.MoveRequestBuilderPostOptions{
     Body: requestBody,
 }
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Move().Post(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).Move(mailFolder-id).Post(options)
 
 
 ```

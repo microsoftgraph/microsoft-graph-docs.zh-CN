@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1781dcbaa155b07e1aefc5a7203a7f48e8c8609d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 1bed46f87e9fa29370f8b4dd9213ed7c3ec49d05
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094983"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412346"
 ---
 ```go
 
@@ -27,7 +27,7 @@ options := &msgraphsdk.ClockOutRequestBuilderPostOptions{
 }
 teamId := "team-id"
 timeCardId := "timeCard-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).ClockOut().Post(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).ClockOut(team-id, timeCard-id).Post(options)
 
 
 ```

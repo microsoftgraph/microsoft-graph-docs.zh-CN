@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4361602525d22982ae0fa6061d6bcd2ac328ab02
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 38db2cd10cf966543e329155877ae68acfd0bbff
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61103724"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63412146"
 ---
 ```go
 
@@ -43,7 +43,7 @@ options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
     Body: requestBody,
 }
 teamId := "team-id"
-graphClient.TeamsById(&teamId).SendActivityNotification().Post(options)
+graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(options)
 
 
 ```
