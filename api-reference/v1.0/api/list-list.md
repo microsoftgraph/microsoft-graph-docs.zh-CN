@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: 获取网站列表的集合。
 doc_type: apiPageType
-ms.openlocfilehash: 7011a7e8c3ac04676635dcc914d1848beadbdf0b
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 17461e819195e2609bacd48bc7a5d80f5d895438
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262204"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396838"
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
 
@@ -20,10 +20,6 @@ ms.locfileid: "62262204"
 
 默认情况下，将隐藏包含 [system][] Facet 的列表。
 若要列出它们，请在 `$select` 语句中添加 `system`。
-
-[system]: ../resources/systemfacet.md
-[lists]: ../resources/list.md
-[site]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 
@@ -41,9 +37,25 @@ ms.locfileid: "62262204"
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
+## <a name="request-headers"></a>请求标头
+
+| 名称          | 说明               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}。必需。 |
+
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[列表][]对象集合。 
+
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
+请求示例如下所示。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,6 +93,8 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 ### <a name="response"></a>响应
 
+下面展示了示例响应。
+
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
 ```http
@@ -112,6 +126,11 @@ Content-type: application/json
   ]
 }
 ```
+
+[system]: ../resources/systemfacet.md
+[列表]: ../resources/list.md
+[lists]: ../resources/list.md
+[site]: ../resources/site.md
 
 <!-- {
   "type": "#page.annotation",
