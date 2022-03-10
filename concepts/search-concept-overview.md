@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 8cf6fd78cdb56523c92bc1d67e69bd0e87b999b4
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: 5e50b61d2989f01eefd61d1d318da174c9a53421
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115233"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336212"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Microsoft Graph 中的 Microsoft 搜索 API 概述
 
@@ -41,6 +41,7 @@ Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
 - SharePoint 和 OneDrive 文件和文件夹 ([driveItem](/graph/api/resources/driveitem) 资源)、[列表](/graph/api/resources/list)、[listItem](/graph/api/resources/listitem)、[网站](/graph/api/resources/site) 和 [驱动器](/graph/api/resources/drive) 资源。
 - 组织中与用户最相关的 [人员](/graph/api/resources/person) 资源。
 - 通过 Microsoft Graph 连接器平台引入的内容: [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 资源。
+- 管理搜索应答资源：[缩写词](/graph/api/resources/search-acronym)、[书签](/graph/api/resources/search-bookmark)和 [QnA](/graph/api/resources/search-qna) 资源。
 
 ## <a name="api-reference"></a>API 参考
 
@@ -49,6 +50,7 @@ Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
 - [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)（v1.0版本）
 - [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)（预览版）
 - [使用 Microsoft 搜索 API 索引数据](/graph/api/resources/indexing-api-overview)（预览版）
+- [使用 Microsoft 搜索 API 管理管理搜索应答](/graph/api/resources/search-api-answers-overview?view=graph-rest-beta&preserve-view=true) (预览版)
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -61,15 +63,11 @@ Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
   - [SharePoint 和 OneDrive 中的搜索内容](search-concept-files.md)
   - [搜索外部内容](search-concept-custom-types.md)
   - [搜索人员](search-concept-person.md)（预览）
-  - [排序搜索结果](search-concept-sort.md)（预览版）
-  - [改进搜索结果](search-concept-aggregation.md)（预览版）
+  - [管理管理搜索应答](search-concept-answers.md) (预览版) 
+  - [管理搜索结果布局](search-concept-display-layout.md) (预览版) 
+  - [改进搜索结果](search-concept-aggregation.md)
   - [请求拼写更正](search-concept-speller.md) （预览版）
-  - [搜索显示布局](search-concept-display-layout.md) （预览版）
- 
-  
-- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
+  - [排序搜索结果](search-concept-sort.md)
+- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 中浏览搜索 API。
 - 从 GitHub 下载[示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)。
-
-## <a name="see-also"></a>另请参阅
-
-- 在 [Microsoft Q&A](/answers/products/m365#microsoft-graph) 上或 GitHub 上与社区互动
+- 在 [Microsoft Q&A](/answers/products/m365#microsoft-graph) 上或 GitHub 上与社区互动。
