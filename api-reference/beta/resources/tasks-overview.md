@@ -1,22 +1,22 @@
 ---
-title: 使用微软待办任务 API
+title: 在 Microsoft Graph 中使用待办事项 API
 description: 可以使用 Microsoft Graph API 创建一个与微软待办中的任务和任务列表连接的应用。
 author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 1275e9de566bad3797255d232d2edf5892ac4b6d
-ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
+ms.openlocfilehash: 5db7dbb8a853fa7a2752d3b4931a22b5ae1e1b4b
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61432641"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451130"
 ---
-# <a name="use-the-microsoft-to-do-api"></a>使用微软待办 API
+# <a name="use-the-to-do-api-in-microsoft-graph"></a>在 Microsoft Graph 中使用待办事项 API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 Microsoft Graph 待办事项任务 API 创建与其邮箱中用户的任务连接的应用。 使用任务构建各种体验，如下所示：
+使用 Microsoft Graph 待办事项 API 创建与其邮箱中用户的任务连接的应用。 使用任务构建各种体验，如下所示：
 
 * 从应用的工作流（例如，从电子邮件或通知）创建任务，并将其保存到微软待办中。 使用 [linkedResource](linkedresource.md) 实体将链接存储回你的应用。
 * 将应用的现有任务与微软待办进行同步，并创建单个任务视图，以便更好地确定优先顺序和实施管理。
@@ -25,13 +25,13 @@ ms.locfileid: "61432641"
 
 目前，API 仅支持由已登录用户委派的权限。
 
-开始使用微软待办任务 API 之前，请查看资源以及它们之间的关系。
+在开始使用微软待办 API 之前，请查看资源以及它们之间的关系。
 
-![突出显示任务待办事项任务 API 实体的屏幕截图。 屏幕截图显示了左侧的任务列表、中心内特定任务列表中的任务，以及右侧的清单项和链接资源以及其他任务属性。](/graph/images/tasks-api-entities.png)
+![突出显示待办事项 API 实体的屏幕截图。屏幕截图显示了左侧的任务列表、中心内特定任务列表中的任务，以及右侧的清单项和链接资源以及其他任务属性。](/graph/images/tasks-api-entities.png)
 
 ## <a name="task-list"></a>任务列表
 
-[TaskList](./basetasklist.md) 代表 [Task](./basetask.md) 资源的逻辑容器。 目前只能在任务列表中创建任务。 在默认任务列表中创建未指定列表的情况下创建的任务。 若要[获取所有任务列表](../api/basetasklist-get.md)，请执行以下 HTTP 请求：
+[taskList](./basetasklist.md) 表示[任务](./basetask.md)资源的逻辑容器。 目前只能在任务列表中创建任务。 在默认任务列表中创建未指定列表的情况下创建的任务。 若要[获取所有任务列表](../api/basetasklist-get.md)，请执行以下 HTTP 请求：
 
 ``` http
 GET /me/tasks/lists
@@ -39,21 +39,21 @@ GET /me/tasks/lists
 
 ## <a name="task"></a>任务
 
-[Task](./basetask.md) 表示任务，即可跟踪和完成的一件工作或个人项目。 若要从任务列表中获取任务，请执行以下 HTTP 请求：
+[task](./basetask.md) 表示任务，即可跟踪和完成的一件工作或个人项目。 若要从任务列表中获取任务，请执行以下 HTTP 请求：
 ``` http
 GET /me/tasks/lists/{taskListId}/tasks
 ```
 
 ## <a name="checklist-item"></a>清单项 
 
-[ChecklistItem](linkedresource_v2.md)表示一个项，它有助于以更小的步骤分解复杂任务。 如果要从任务获取 checklistItems，请提出以下 HTTP 请求：
+[checklistItem](checklistitem.md) 表示有助于以更小的步骤分解复杂任务的项。 若要从任务获取 **checklistItem**，请发出以下 HTTP 请求：
 ``` http
 GET /me/tasks/lists/{taskListId}/tasks/{taskId}/checklistItems/{checklistItems}
 ```
 
 ## <a name="linked-resource"></a>链接的资源
 
-[linkedResource](linkedresource_v2.md) 表示与任务相关的合作伙伴应用程序中的任何项目，例如从中创建任务的项目（如电子邮件）。 可以使用它来将信息和链接存储回你的应用中的相关项。 若要从任务获取链接的资源，请执行以下 HTTP 请求：
+[linkedResource](linkedresource_v2.md) 表示与任务相关的合作伙伴应用程序中的任何项目，例如从中创建任务的电子邮件。 可以使用它来将信息和链接存储回你的应用中的相关项。 若要从任务获取链接的资源，请执行以下 HTTP 请求：
 ``` http
 GET /me/tasks/lists/{taskListId}/tasks/{taskId}/linkedresources/{linkedResourceId}
 ```
