@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 74d9cacc9f38c8693fb21b52bb194cf461b443cc
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 03ac058dd53861502bee64f85e254be53db4ab3a
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336933"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451450"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -50,11 +50,11 @@ POST /identityGovernance/termsOfUse/agreements
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|Boolean|指示用户在接受之前是否必须展开和查看协议。|
-|files/fileName|String|协议文件的名称 (例如，TOU.pdf) 。|
-|files/isDefault|Boolean|指示当没有任何区域性与客户端首选项匹配时，这是否是默认协议文件。 如果没有文件标记为默认文件，则第一个文件将被视为默认文件。|
-|文件/语言|String|格式为 languagecode2-country/regioncode2 的协议文件的区域性。 languagecode2 是从 ISO 639-1 派生的两个字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个小写字母或 BCP-47 语言标记 (例如 en-US) 。|
+|displayName|字符串|协议的显示名称。|
+|isViewingBeforeAcceptanceRequired|布尔值|指示用户在接受之前是否必须展开和查看协议。|
+|files/fileName|字符串|协议文件的名称 (例如，TOU.pdf) 。|
+|files/isDefault|布尔值|指示当没有任何区域性与客户端首选项匹配时，这是否是默认协议文件。 如果没有文件标记为默认文件，则第一个文件将被视为默认文件。|
+|文件/语言|字符串|格式为 languagecode2-country/regioncode2 的协议文件的区域性。 languagecode2 是从 ISO 639-1 派生的两个字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个小写字母或 BCP-47 语言标记 (例如 en-US) 。|
 |files/fileData/data|Binary|表示 PDF 文档的使用条款的数据。|
 
 ## <a name="response"></a>响应
@@ -76,7 +76,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
+  "displayName": "Contoso ToU for guest users",
   "isViewingBeforeAcceptanceRequired": true,
   "files": [
     {
@@ -84,7 +84,7 @@ Content-type: application/json
       "language": "en",
       "isDefault": true,
       "fileData": {
-        "data": "SGVsbG8gd29ybGQ="
+        "data": "SGVsbG8gd29ybGQ=//truncated-binary"
       }
     }
   ]
@@ -130,9 +130,13 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#agreements/$entity",
+    "id": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+    "displayName": "Contoso ToU for guest users",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": null,
+    "isViewingBeforeAcceptanceRequired": true,
+    "isPerDeviceAcceptanceRequired": false
 }
 ```
 

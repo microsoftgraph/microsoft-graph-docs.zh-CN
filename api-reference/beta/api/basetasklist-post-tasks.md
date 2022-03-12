@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0814b150c20f6651379800eeefad25bd4c4ffe9f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3b58413d2933a236bf9e5772dc8063be9414e7fa
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130103"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451331"
 ---
 # <a name="create-basetask"></a>创建 baseTask
 命名空间：microsoft.graph
@@ -50,9 +50,9 @@ POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 
 可以在创建 **baseTask** 时指定以下属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。|
+|textBody|字符串|通常包含有关任务的信息的文本格式的任务正文。|
 |createdDateTime|DateTimeOffset|在指定时区内完成任务的日期。|
 |lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
 |bodyLastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
@@ -61,9 +61,9 @@ POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内开始执行任务的日期。|
 |importance|importance|任务的重要性。 可能的值包括 `low`、`normal`、`high`。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
-|displayName|String|任务的简要说明。|
+|displayName|字符串|任务的简要说明。|
 |状态|taskStatus_v2|指示任务的状态或进度。 可能的值包括 `notStarted`、`inProgress`、`completed`、`unknownFutureValue`。 必需。|
-|personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|用户个人的属性，如 reminderDateTime。|
+|一个|[taskViewpoint](../resources/taskviewpoint.md)|用户个人的属性，如 reminderDateTime。|
 
 
 
@@ -87,10 +87,8 @@ Content-Type: application/json
 Content-length: 634
 
 {
-  "@odata.type": "#microsoft.graph.baseTask",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
+  "@odata.type": "#microsoft.graph.task",
+  "textBody":  "String",
   "bodyLastModifiedDateTime": "String (timestamp)",
   "completedDateTime": "String (timestamp)",
   "dueDateTime": {
@@ -105,8 +103,8 @@ Content-length: 634
   },
   "displayName": "String",
   "status": "String",
-  "personalProperties": {
-    "@odata.type": "microsoft.graph.personalTaskProperties"
+  "viewpoint": {
+    "@odata.type": "microsoft.graph.taskViewpoint"
   }
 }
 ```
@@ -139,7 +137,7 @@ Content-length: 634
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.baseTask"
+  "@odata.type": "microsoft.graph.task"
 }
 -->
 ``` http
@@ -155,10 +153,7 @@ Content-Type: application/json
     "createdDateTime": "2021-11-17T10:11:18.0229364Z",
     "lastModifiedDateTime": "2021-11-17T10:11:18.19789Z",
     "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC",
-    "body": {
-        "content": "",
-        "contentType": "text"
-    },
+    "textBody":  "",
     "parentList": {
         "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNi"
     }

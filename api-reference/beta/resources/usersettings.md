@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 4af8059856172ab15a44e20aa1b8dbc5374c195e
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 64454a7004946d354e83467d94aa5148438791e6
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336345"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451457"
 ---
 # <a name="usersettings-resource-type"></a>userSettings 资源类型
 
@@ -45,12 +45,12 @@ ms.locfileid: "63336345"
   - 确定是否启用合并用户重复联系人的建议。
   - 禁用或启用为用户合并重复联系人的建议。
 
-若要了解如何获取或更新用户设置，请参阅[获取设置](../api/usersettings-get.md)和[更新设置](../api/usersettings-update.md)。
+继承自 [entity](entity.md)。 若要了解如何获取或更新用户设置，请参阅[获取设置](../api/usersettings-get.md)和[更新设置](../api/usersettings-update.md)。
 
 > [!NOTE]
 > 此终结点仅适用于 [用户](user.md) 资源。 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[获取用户设置](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| 获取用户和组织设置。 |
@@ -62,6 +62,7 @@ ms.locfileid: "63336345"
 |:---------------|:--------|:----------|
 |contributionToContentDiscoveryDisabled|布尔值|如果设为 true，则用户的 Office Delve 中的文档将禁用。 用户可以在 [Office Delve](https://support.office.com/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout) 中控制此设置。 |
 |contributionToContentDiscoveryAsOrganizationDisabled|布尔值|反映Office Delve[级别设置](https://support.office.com/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff)。 如果设为 true，则组织没有 Office Delve 的访问权限。 此设置为只读，并且仅可由管理员在 [SharePoint 管理中心](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US)更改。|
+|id|字符串|用户设置的唯一标识符。 只读。 继承自 [entity](entity.md)。|
 
 ## <a name="relationships"></a>关系
 

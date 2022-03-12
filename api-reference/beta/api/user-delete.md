@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a1cb5fa43be13c98147d231eb7b76d94efa32f81
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 53c94889543ab366279c369e31b1b4efaa7552b5
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136806"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451317"
 ---
 # <a name="delete-a-user"></a>删除用户
 
@@ -63,7 +63,7 @@ DELETE /users/{id | userPrincipalName}
 
 ### <a name="request"></a>请求
 
-下面是一个请求示例。
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -101,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/users/ba9a3254-9f18-4209-aeb3-9e42a35b5b
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面展示了示例响应。 
 <!-- {
   "blockType": "response",
   "truncated": true

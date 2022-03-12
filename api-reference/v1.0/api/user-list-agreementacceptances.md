@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: raprakasMSFT
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e1b507c29b71a5591fa4bbae02ccc8fe033e613a
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 1107019aeb27ed444d34c4cddbd7c7e023876da6
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651531"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450987"
 ---
 # <a name="list-agreementacceptances"></a>List agreementAcceptances
 
 命名空间：microsoft.graph
 
-检索用户 [agreementAcceptance 对象](../resources/agreementacceptance.md) 的列表。
+检索登录用户的 [agreementAcceptance](../resources/agreementacceptance.md) 对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,6 +30,9 @@ ms.locfileid: "61651531"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/agreementAcceptances
+
+# where the id or userPrincipalName is the signed-in user's
+
 GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
 
@@ -44,7 +47,7 @@ GET /users/{id | userPrincipalName}/agreementAcceptances
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [agreementAcceptance](../resources/agreementacceptance.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [agreementAcceptance](../resources/agreementacceptance.md) 对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 
@@ -56,8 +59,6 @@ GET /users/{id | userPrincipalName}/agreementAcceptances
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/agreementAcceptances
-
-GET https://graph.microsoft.com/v1.0/users/f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf/agreementAcceptances
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreementacceptances-csharp-snippets.md)]
@@ -87,16 +88,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "agreementId": "093b947f-8363-4979-a47d-4c52b33ee1be",
-      "userId": "f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf",
-      "agreementFileId": "f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf",
-      "recordedDateTime": "2021-03-10T00:39:56.0523527Z",
-      "userDisplayName": "Test_User",
-      "userPrincipalName": "Test_User@TestTenant.onmicrosoft.com"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#agreementAcceptances",
+    "value": [
+        {
+            "id": "94410bbf-3d3e-4683-8149-f034e55c39dd_d4bb5206-77bf-4d5c-96b4-cf7b0ed3be98",
+            "agreementId": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+            "userId": "d4bb5206-77bf-4d5c-96b4-cf7b0ed3be98",
+            "deviceId": "00000000-0000-0000-0000-000000000000",
+            "deviceDisplayName": null,
+            "deviceOSType": null,
+            "deviceOSVersion": null,
+            "agreementFileId": "08033369-8972-42a3-8533-90bbd2757a01",
+            "userDisplayName": "Megan Bowen",
+            "userPrincipalName": "MeganB@M365x43961174.OnMicrosoft.com",
+            "userEmail": "MeganB@M365x43961174.OnMicrosoft.com",
+            "recordedDateTime": "2022-03-04T14:11:22.6658376Z",
+            "expirationDateTime": null,
+            "state": "accepted"
+        }
+    ]
 }
 ```
 

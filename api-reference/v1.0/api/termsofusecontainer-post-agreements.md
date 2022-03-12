@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: aa17625e8121726dd371dee7946655249fb64991
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 90a687abff58532e73b6b12edc8b670441b3c06a
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336254"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451275"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -44,8 +44,8 @@ POST /identityGovernance/termsOfUse/agreements
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|Boolean|指示用户在接受之前是否必须展开和查看协议。|
+|displayName|字符串|协议的显示名称。|
+|isViewingBeforeAcceptanceRequired|布尔值|指示用户在接受之前是否必须展开和查看协议。|
 |fileName|String|协议文件的名称 (例如，TOU.pdf) 。|
 |isDefault|Boolean|指示如果语言与客户端首选项匹配，这是否是默认协议文件。 如果未将任何文件标记为默认文件，则第一个文件将被视为默认文件。|
 |language|String|协议文件的语言，格式为"languagecode2-country/regioncode2"。 "languagecode2"是派生自 ISO 639-1 的两个字母小写代码，而"country/regioncode2"派生自 ISO 3166，通常包含两个小写字母或 BCP-47 语言标记。 例如，美国英语为 `en-US`。|
@@ -69,7 +69,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
+  "displayName": "Contoso ToU for guest users",
   "isViewingBeforeAcceptanceRequired": true,
   "files": [
     {
@@ -77,7 +77,7 @@ Content-type: application/json
       "language": "en",
       "isDefault": true,
       "fileData": {
-        "data": "SGVsbG8gd29ybGQ="
+        "data": "SGVsbG8gd29ybGQ=//truncated-binary"
       }
     }
   ]

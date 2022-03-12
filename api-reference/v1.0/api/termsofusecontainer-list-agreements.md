@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 8f0181a7124d7fca9bd1e1dc7f36c20e2204be6b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: be4cfd1cc73ca7b1b1f7a81b224da8acba4f8869
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336268"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451296"
 ---
 # <a name="list-agreements"></a>列出协议
 
@@ -33,7 +33,7 @@ GET /identityGovernance/termsOfUse/agreements
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持使用 `$select`、`$filter` 和`$top` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
@@ -96,13 +96,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "displayName": "Sample ToU",
-      "isViewingBeforeAcceptanceRequired": true,
-      "id": "093b947f-8363-4979-a47d-4c52b33ee1be"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#agreements",
+    "value": [
+        {
+            "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+            "displayName": "All users terms of use",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": "P90D",
+            "isViewingBeforeAcceptanceRequired": false,
+            "isPerDeviceAcceptanceRequired": false
+        },
+        {
+            "id": "920f5775-d5d7-454b-861f-14685bb24e2c",
+            "displayName": "ToU",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": "P90D",
+            "isViewingBeforeAcceptanceRequired": false,
+            "isPerDeviceAcceptanceRequired": false
+        },
+        {
+            "id": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+            "displayName": "Contoso ToU for guest users",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": null,
+            "isViewingBeforeAcceptanceRequired": true,
+            "isPerDeviceAcceptanceRequired": false
+        }
+    ]
 }
 ```
 

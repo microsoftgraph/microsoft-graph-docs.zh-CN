@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 3746db66d1f79c27d0910de55f9a20b08214b653
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a348466b45132e641d68785e0537cd4826a299b9
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395655"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451394"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -26,7 +26,7 @@ ms.locfileid: "63395655"
 
 ## <a name="permissions"></a>权限
 
-创建订阅需要对资源的读取权限。 例如，若要获取邮件更改通知，您的应用程序需要 Mail.Read 权限。 
+创建订阅需要对资源的读取权限。 例如，若要获取有关邮件的更改通知，应用需要 Mail.Read 权限。 
 
 根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
@@ -64,7 +64,7 @@ ms.locfileid: "63395655"
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All，TeamSettings.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-|[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
@@ -84,9 +84,9 @@ OneDrive for Business 和 SharePoint 支持向应用程序发送有关在 **driv
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### <a name="presence"></a>状态
+### <a name="onlinemeetings-presence"></a>onlineMeetings， presence
 
-**状态** 上的订阅要求对更改通知中包含的任何资源数据进行加密。 在 [创建订阅](/graph/webhooks-with-resource-data#creating-a-subscription) 时始终指定 **encryptionCertificate** 参数以避免失败。 请参阅有关 [设置更改通知以包含资源数据](/graph/webhooks-with-resource-data) 的详细信息。
+当为包含加密资源数据的通知创建订阅时，**onlineMeetings** 和 **presence** 上的订阅需要 [](/graph/webhooks-with-resource-data#creating-a-subscription) **encryptionCertificate** 和 **encryptionCertificateId** 属性。 有关详细信息，请参阅 [设置更改通知以包含资源数据](/graph/webhooks-with-resource-data)。
 
 ## <a name="http-request"></a>HTTP 请求
 

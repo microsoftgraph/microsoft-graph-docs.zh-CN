@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 195537e0cb8dfa04055e816bd20727af598db3c1
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7dc49dafd13eca1bf79667705384f3514bbbc723
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337451"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451415"
 ---
 # <a name="update-agreement"></a>更新协议
 
@@ -41,11 +41,11 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|Boolean|用户是否必须展开和查看协议才能接受。|
+|displayName|字符串|协议的显示名称。|
+|isViewingBeforeAcceptanceRequired|布尔值|用户是否必须展开和查看协议才能接受。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回 响应代码和更新[](../resources/agreement.md)的协议对象。
+如果成功，此方法返回 `204 No Content` 响应代码。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 
@@ -55,13 +55,13 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
   "blockType": "request",
   "name": "update_agreement"
 }-->
-```http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b
 Content-type: application/json
 
 {
-  "displayName": "Sample ToU display name",
-  "isViewingBeforeAcceptanceRequired": true
+    "displayName": "All Contoso volunteers - Terms of use",
+    "isViewingBeforeAcceptanceRequired": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -96,18 +96,10 @@ Content-type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.agreement"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "displayName": "Sample ToU display name",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "093b947f-8363-4979-a47d-4c52b33ee1be"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

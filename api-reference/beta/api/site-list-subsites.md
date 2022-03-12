@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: 获取为网站定义的子网站集合。
-ms.date: 09/10/2017
 title: 列出 SharePoint 网站的子网站
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9bb7d42132baa577b5590176f2ab77aad0e33e15
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fb9b8c564cf96d8a71f6833e0adaea1752be8a46
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126950"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451163"
 ---
 # <a name="enumerate-subsites"></a>枚举子网站
 
@@ -35,13 +34,31 @@ ms.locfileid: "62126950"
 
 ## <a name="http-request"></a>HTTP 请求
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 GET /sites/{site-id}/sites
 ```
 
+## <a name="request-headers"></a>请求标头
+
+| 名称      |说明|
+|:----------|:----------|
+| Authorization  | Bearer {code}。 必需。|
+
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应 
+
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [site][] 对象集合。 
+
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
@@ -77,6 +94,8 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 
 
 ### <a name="response"></a>响应
+
+下面展示了示例响应。
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

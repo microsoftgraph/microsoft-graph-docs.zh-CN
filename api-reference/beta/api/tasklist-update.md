@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d51e5e22602dfd6aecbd9f69653d81c6dd77cf87
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6b8c543bb5c07979c26654b64245cde8bddcd6bd
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119981"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451164"
 ---
 # <a name="update-basetasklist"></a>更新 baseTaskList
 命名空间：microsoft.graph
@@ -50,13 +50,13 @@ PATCH /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|指示任务列表的更新标题的字段。|
+|displayName|字符串|指示任务列表的更新标题的字段。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [baseTaskList](../resources/basetasklist.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [baseTaskList](../resources/basetasklist.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -74,6 +74,7 @@ Content-Type: application/json
 Content-length: 82
 
 {
+    "@odata.type": "#microsoft.graph.taskList",
     "displayName": "Travel Plan"
 }
 ```

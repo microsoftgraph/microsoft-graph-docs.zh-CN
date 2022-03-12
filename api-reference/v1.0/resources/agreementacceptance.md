@@ -1,40 +1,40 @@
 ---
 title: agreementAcceptance 资源类型
-description: 表示用户在受组织支持的公司可自定义使用条款范围内Azure Active Directory (Azure AD) 。
+description: 表示用户在受公司支持且可自定义的使用条款范围内Azure Active Directory (Azure AD) 。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 57165e25102b55bad73f43bcdee56baa8e2dd92e
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: fe3d453c7cbd34586bd8db2aaa812cd2a864fa8d
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651307"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451016"
 ---
 # <a name="agreementacceptance-resource-type"></a>agreementAcceptance 资源类型
 
 命名空间：microsoft.graph
 
-表示用户对受组织支持的公司可自定义使用条款协议Azure Active Directory (Azure AD) 。
+表示用户对受公司支持的公司可自定义使用条款协议的响应的当前Azure Active Directory (Azure AD) 。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|agreementFileId|String|用户接受的协议文件的标识符。|
-|agreementId|String|协议的标识符。|
+|agreementFileId|字符串|用户接受的协议文件的标识符。|
+|agreementId|字符串|协议的标识符。|
 |deviceDisplayName|String|用于显示名称协议的设备的设备组。|
 |deviceId|String|用于接受协议的设备的唯一标识符。|
-|deviceOSType|String|用于接受协议的操作系统。|
-|deviceOSVersion|String|用于接受协议的设备的操作系统版本。    |
+|deviceOSType|字符串|用于接受协议的操作系统。|
+|deviceOSVersion|字符串|用于接受协议的设备的操作系统版本。    |
 |expirationDateTime|DateTimeOffset|接受的到期日期时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|id|String| 协议接受的标识符。 只读。|
+|id|字符串| 协议接受的标识符。 只读。|
 |recordedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|state|string| 协议接受的状态。 可取值为：`accepted`、`declined`。|
+|state|string| 协议接受的状态。 可取值为：`accepted`、`declined`。 支持 `$filter`（`eq`）。|
 |userDisplayName|String|记录接受时用户的显示名称。|
 |userEmail|String|记录接受时用户的电子邮件。|
-|userId|String|接受该协议的用户的标识符。|
-|userPrincipalName|String|记录接受时用户的 UPN。|
+|userId|字符串|接受该协议的用户的标识符。|
+|userPrincipalName|字符串|记录接受时用户的 UPN。|
 
 ## <a name="relationships"></a>关系
 无。

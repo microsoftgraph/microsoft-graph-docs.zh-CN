@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: b34d70990cf603237a78cc16ec53f43433680641
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 98875f34f056dfc7bc56ccc5014a0af7d606cb6b
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332734"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451373"
 ---
 # <a name="delete-agreement"></a>删除协议
 
@@ -48,10 +48,10 @@ DELETE /identityGovernance/termsOfUse/agreements/{id}
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -60,7 +60,7 @@ DELETE /identityGovernance/termsOfUse/agreements/{id}
   "name": "delete_agreement"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}
+DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-agreement-csharp-snippets.md)]
@@ -89,8 +89,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 ---
 
 
-##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
   "truncated": true

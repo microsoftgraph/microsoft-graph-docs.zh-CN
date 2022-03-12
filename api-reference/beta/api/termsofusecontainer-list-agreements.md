@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 8934ee985c8184a4a76d12601d1dad3beb45666d
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: e5af9a99554b9bf2989467cc66ef3cc837818e0f
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336086"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451324"
 ---
 # <a name="list-agreements"></a>列出协议
 
@@ -38,10 +38,10 @@ ms.locfileid: "63336086"
 ```http
 GET /identityGovernance/termsOfUse/agreements
 ```
-<!--
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
--->
+
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持使用 `$select`、`$filter` 和`$top` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
@@ -104,13 +104,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "isViewingBeforeAcceptanceRequired": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#agreements",
+    "value": [
+        {
+            "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+            "displayName": "All users terms of use",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": "P90D",
+            "isViewingBeforeAcceptanceRequired": false,
+            "isPerDeviceAcceptanceRequired": false
+        },
+        {
+            "id": "920f5775-d5d7-454b-861f-14685bb24e2c",
+            "displayName": "ToU",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": "P90D",
+            "isViewingBeforeAcceptanceRequired": false,
+            "isPerDeviceAcceptanceRequired": false
+        },
+        {
+            "id": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+            "displayName": "Contoso ToU for guest users",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": null,
+            "isViewingBeforeAcceptanceRequired": true,
+            "isPerDeviceAcceptanceRequired": false
+        }
+    ]
 }
 ```
 

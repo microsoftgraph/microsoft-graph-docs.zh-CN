@@ -5,19 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d1e09db9d4976521c67138a2c510604ae3b2c699
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 84128000fb785e9d5d572de5e81b8d0b8d71b308
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114159"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451380"
 ---
 # <a name="list-basetasks"></a>列出 baseTasks
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [特定 baseTaskList](../resources/basetask.md) 的 tasks 导航属性 [获取 baseTask 资源](../resources/basetasklist.md)。
+从 [特定 baseTaskList](../resources/basetask.md) 的任务导航属性获取 [baseTask 资源](../resources/basetasklist.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,7 +40,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$expand` 使用 `$filter` `$top` [和 OData 查询参数](/graph/query-parameters)自定义响应。  
+此方法支持 `$expand`使用 和 `$filter` `$top`  [OData 查询参数](/graph/query-parameters) 自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +52,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [baseTask](../resources/basetask.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [baseTask](../resources/basetask.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -115,10 +115,7 @@ Content-Type: application/json
             "createdDateTime": "2021-11-17T06:58:32.4882235Z",
             "lastModifiedDateTime": "2021-11-17T07:02:49.1697427Z",
             "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC",
-            "body": {
-                "content": "",
-                "contentType": "text"
-            },
+            "textBody":  "",
             "parentList": {
                 "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNm"
             }

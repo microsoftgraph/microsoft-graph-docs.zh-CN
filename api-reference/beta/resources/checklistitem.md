@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 01cca362ac85b10cb4bf141908d2b5dac309c9cd
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 86ec25ee83ae6cd1f30bf8a84b6177f870d39586
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424868"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451132"
 ---
 # <a name="checklistitem-resource-type"></a>checklistItem 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "61424868"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示任务上的清单项的集合。 **ChecklistItem** 有助于将复杂任务拆分为更小型的可操作步骤。
+代表较大 [baseTask 中的子任务](./baseTask.md)。 **ChecklistItem** 允许将复杂的任务分解为更可操作、更小的任务。 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 checklistItems](../api/basetask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) 集合|获取 [checklistItem 对象](../resources/checklistitem.md) 及其属性的列表。|
@@ -34,9 +34,9 @@ ms.locfileid: "61424868"
 |:---|:---|:---|
 |checkedDateTime|DateTimeOffset|完成 **checklistItem 的** 日期和时间。|
 |createdDateTime|DateTimeOffset|创建 **checklistItem 的** 日期和时间。|
-|displayName|字符串|指示 **checklistItem 的标题的字段**。|
+|displayName|字符串|指示 **checklistItem 标题的字段**。|
 |id|字符串|**checkListItem 的服务器生成的 ID**|
-|isChecked|Boolean|指示项目是否已签出的状态。|
+|isChecked|布尔值|指示项目是否已签出的状态。|
 
 ## <a name="relationships"></a>关系
 无。

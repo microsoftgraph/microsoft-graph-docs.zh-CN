@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 7f8d8ec54eec709551281e5d6085e3ea6c5c7b47
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: e70bfb567f43d506bbfc0ce208208456aa9ac8a7
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337472"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451443"
 ---
 # <a name="get-agreement"></a>获取协议
 
@@ -33,7 +33,7 @@ GET /identityGovernance/termsOfUse/agreements/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 OData `$select` [查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
@@ -44,14 +44,50 @@ GET /identityGovernance/termsOfUse/agreements/{id}
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/agreement.md) 代码和 agreement 对象。
-## <a name="example"></a>示例
-### <a name="request"></a>请求
+## <a name="examples"></a>示例
 
+### <a name="example-1-retrieve-an-agreement"></a>示例 1：检索协议
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "get_agreement"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b
+```
+
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.agreement"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#agreements/$entity",
+    "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+    "displayName": "All users terms of use",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": "P90D",
+    "isViewingBeforeAcceptanceRequired": false,
+    "isPerDeviceAcceptanceRequired": false
+}
+```
+
+
+### <a name="example-2-retrieve-an-agreement-and-its-related-files"></a>示例 2：检索协议及其相关文件
+
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_agreement"
+  "name": "get_agreement_files"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be?$expand=files
@@ -83,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/09
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -95,17 +131,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "id-value",
-  "files": [
-    {
-      "id": "093b947f-8363-4979-a47d-4c52b33ee1be",
-      "language": "en",
-      "fileName": "TOU.pdf",
-      "isDefault": true
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#agreements(files())/$entity",
+    "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+    "displayName": "All users terms of use",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": "P90D",
+    "isViewingBeforeAcceptanceRequired": false,
+    "isPerDeviceAcceptanceRequired": false,
+    "files@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/termsOfUse/agreements('0ec9f6a6-159d-4dd8-a563-1f0b5935e80b')/files",
+    "files": [
+        {
+            "id": "681b73a7-e9ae-4f2d-aca5-9e857599cd15",
+            "fileName": "ToU.pdf",
+            "displayName": "Contoso Terms of Use",
+            "language": "en-GB",
+            "isDefault": true,
+            "isMajorVersion": false,
+            "createdDateTime": "2022-03-02T14:11:32.885186Z",
+            "fileData": null
+        }
+    ]
 }
 ```
 

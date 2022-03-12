@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0f6b3b5deee503e635bf1b6996bf9432d9a83b8f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f696ef66adced69dd286725cb5e1709ba6dbbe27
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098557"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451422"
 ---
 # <a name="create-basetasklist"></a>创建 baseTaskList
 命名空间：microsoft.graph
@@ -52,13 +52,13 @@ POST /users/{userId|userPrincipalName}/tasks/lists
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|指示任务列表标题的字段。|
+|displayName|字符串|指示任务列表标题的字段。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [baseTaskList](../resources/basetasklist.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [baseTaskList](../resources/basetasklist.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -75,6 +75,7 @@ POST https://graph.microsoft.com/beta/me/tasks/lists
 Content-Type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.taskList",
     "displayName": "Shopping list"
 }
 ```
