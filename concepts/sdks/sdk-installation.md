@@ -3,12 +3,12 @@ title: 安装 Microsoft Graph SDK
 description: 提供 C#、Java、JavaScript、Objective-C、PHP 和 Ruby Microsoft Graph SDK 的安装说明。
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: a545f0b3783b19fd23c86bd94a6a356d5767eab3
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 1133e8f4cd1d0690c5a8ff6ef818c29294b3d2ee
+ms.sourcegitcommit: 1ae0079021dfcbcc910dcdc74440d367ec4af7d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331774"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63460124"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>安装 Microsoft Graph SDK
 
@@ -39,9 +39,9 @@ Microsoft Graph Go SDK 包含在以下程序包中：
 - [Microsoft Graph Core SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go-core) - 用于调用 Microsoft Graph 的核心库。
 
 ```Shell
-go get -u github.com/microsoftgraph/msgraph-sdk-go
-go get -u github.com/Azure/azure-sdk-for-go/sdk/azidentity
-go get -u github.com/microsoft/kiota/authentication/go/azure
+go get github.com/microsoftgraph/msgraph-sdk-go
+go get github.com/Azure/azure-sdk-for-go/sdk/azidentity
+go get github.com/microsoft/kiota/authentication/go/azure
 ```
 
 ## <a name="install-the-microsoft-graph-java-sdk"></a>安装 Microsoft Graph Java SDK

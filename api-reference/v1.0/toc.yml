@@ -3341,34 +3341,6 @@ items:
                         href: api/intune-auditing-devicemanagement-get.md
                       - name: 更新
                         href: api/intune-auditing-devicemanagement-update.md
-                  - name: 设备管理
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: 获取
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: 更新
-                        href: api/intune-auditing-devicemanagement-update.md
-                  - name: 设备管理
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: 获取
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: 更新
-                        href: api/intune-auditing-devicemanagement-update.md
-                  - name: 设备管理
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: 获取
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: 更新
-                        href: api/intune-auditing-devicemanagement-update.md
-                  - name: 设备管理
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: 获取
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: 更新
-                        href: api/intune-auditing-devicemanagement-update.md
                   - name: 设备管理 Exchange 访问状态
                     href: resources/intune-devices-devicemanagementexchangeaccessstate.md
                   - name: 设备管理 Exchange 访问状态原因

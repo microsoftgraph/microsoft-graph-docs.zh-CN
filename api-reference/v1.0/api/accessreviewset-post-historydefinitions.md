@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 660a9e24980694688e0db5799ec58bed175af3e1
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7533b52e58f7229043bf9e6132ca02d36d7acc29
+ms.sourcegitcommit: 1ae0079021dfcbcc910dcdc74440d367ec4af7d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337654"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63460131"
 ---
 # <a name="create-historydefinitions"></a>创建 historyDefinitions
 
@@ -56,10 +56,10 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName | String  | 访问评审历史记录数据收集的名称。 必需项。 |
+|displayName | 字符串  | 访问评审历史记录数据收集的名称。 必需。 |
 |reviewHistoryPeriodStartDateTime  | DateTimeOffset  | 时间戳。 在此日期或之后开始审阅将包含在提取的历史记录数据中。 仅在未定义 **scheduleSettings** 时是必需的。  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | 时间戳。 在此日期或之前开始审阅将包含在提取的历史记录数据中。 仅在未定义 **scheduleSettings** 时是必需的。  |
-|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) 集合| 用于筛选包含在提取的历史记录数据中的审阅。 获取其范围与提供的范围匹配的审阅。 必需项。 <br> 有关详细信息，请参阅 [accessReviewHistoryDefinition 支持的作用域查询](#supported-scope-queries-for-accessreviewhistorydefinition)。 |
+|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) 集合| 用于筛选包含在提取的历史记录数据中的审阅。 获取其范围与提供的范围匹配的审阅。 必需。 <br> 有关详细信息，请参阅 [accessReviewHistoryDefinition 支持的作用域查询](#supported-scope-queries-for-accessreviewhistorydefinition)。 |
 | scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| 定期访问评审历史记录定义系列的设置。 仅在未定义 **reviewHistoryPeriodStartDateTime** 或 **reviewHistoryPeriodEndDateTime** 时是必需的。|
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>accessReviewHistoryDefinition 支持的范围查询
@@ -72,7 +72,7 @@ POST /identityGovernance/accessReviews/historyDefinitions
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
 ```
 
-的值 `{object}` 是可在 **accessReviewScheduleDefinition 中配置的资源之一**。 例如，以下内容包括单个组上的每个 accessReviewScheduleDefinition 审阅结果 (并排除作用域为包含来宾用户的所有 Microsoft 365 组) 。
+的值 `{object}` 是可在 **accessReviewScheduleDefinition 中配置的资源之一**。 例如，以下内容包括单个组上的每个 accessReviewScheduleDefinition 审阅结果 (并排除作用域为具有来宾用户的所有 Microsoft 365 组) 。
 
 ```http
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
@@ -89,8 +89,6 @@ POST /identityGovernance/accessReviews/historyDefinitions
 以下示例演示如何创建访问评审历史记录定义，该定义范围为从 01/01/2021 的开始日期到 04/05/2021 的结束日期，以访问访问包和组上的审阅。
 
 ### <a name="request"></a>请求
-
-# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
