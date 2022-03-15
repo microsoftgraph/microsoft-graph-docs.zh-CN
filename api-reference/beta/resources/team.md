@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 27c31e3bd23f5a3e204b8747f9724af93be7a4c5
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 419e88921785cb66d03fe763ff4badd490008ec7
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335981"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500894"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -71,6 +71,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |classSettings|[teamClassSettings](teamclasssettings.md) |配置班级设置。 仅当团队代表班级时可用。|
 |isMembershipLimitedToOwners|布尔值|如果设置为“`true`”，则团队当前处于“仅所有者”团队成员身份状态，且其他团队成员（如学生）不可访问。|
 |createdDateTime|dateTimeOffset|创建团队的时间戳。|
+|摘要|[teamSummary](teamsummary.md)| 包含有关团队的摘要信息，包括所有者、成员和来宾的数量。 |
 
 ### <a name="instance-attributes"></a>实例属性
 
@@ -127,7 +128,8 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
   "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "dateTimeOffset"
+  "createdDateTime": "dateTimeOffset",
+  "summary":  {"@odata.type": "microsoft.graph.teamSummary"}
 }
 ```
 

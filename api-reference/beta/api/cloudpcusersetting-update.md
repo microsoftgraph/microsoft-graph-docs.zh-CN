@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b16ea1571cc59831cb4736429a6fe6286fa64ff7
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: f6e6d6618e4bc90d23c0b3ec552026953a82bfb9
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335484"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500929"
 ---
 # <a name="update-cloudpcusersetting"></a>更新 cloudPcUserSetting
 
@@ -28,7 +28,7 @@ ms.locfileid: "63335484"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CloudPC.ReadWrite.All|
+|Application|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|用户界面中显示的设置名称。|
+|displayName|字符串|用户界面中显示的设置名称。|
 |localAdminEnabled|Boolean|若要启用本地管理员选项，将此设置更改为 `True`。  |
 |selfServiceEnabled|Boolean|若要启用自助服务选项，将此设置更改为 `True`。 |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|定义创建还原点的频率 (即，为用户预配的云电脑拍摄) 快照 (默认值为 12 小时) ，以及是否允许用户将自己的云电脑还原到特定时间点的备份。|
@@ -87,7 +87,7 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": true,
   "restorePointSetting": {
-    "frequencyInHours": "16",
+    "frequencyInHours": 16,
     "userRestoreEnabled": true
   },
   "localAdminEnabled": false

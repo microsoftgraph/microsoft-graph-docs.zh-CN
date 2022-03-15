@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: eaeab977623ab3e4dec2416958593f0cc0199b6a
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: eec7a1996c60f93aa60eb6642150cd3489870500
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62803987"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500922"
 ---
 # <a name="get-team"></a>获取团队
 
@@ -134,6 +134,11 @@ Content-type: application/json
   },
   "discoverySettings": {
     "showInTeamsSearchAndSuggestions": true
+  },
+  "summary": {
+    "ownersCount": 2,
+    "membersCount": 3,
+    "guestsCount": 4,
   }
 }
 ```

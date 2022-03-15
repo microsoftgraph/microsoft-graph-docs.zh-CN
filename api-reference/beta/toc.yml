@@ -9499,7 +9499,7 @@ items:
                   - name: Windows Hello 企业版 PIN 使用情况
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: 基于角色的访问控制 (RBAC)
-                href: /resources/intune-rbac-conceptual.md
+                href: resources/intune-rbac-conceptual.md
                 items:
                   - name: 设备和应用管理分配的角色详情
                     href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -12459,7 +12459,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-overview.md

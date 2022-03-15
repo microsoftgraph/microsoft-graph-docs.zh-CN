@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 755fa998397e49d65f282f4397b5cdb2f8ed7aad
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 41485c4cc3c70a161d1e048b9cf4e09b99c7d1ff
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093420"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500943"
 ---
 # <a name="list-unifiedroledefinitions"></a>列出 unifiedRoleDefinitions
 
@@ -28,15 +28,15 @@ ms.locfileid: "62093420"
 
 ## <a name="permissions"></a>权限
 
-根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最小特权权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请参阅 [权限](/graph/permissions-reference)。
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解更多信息，包括在 [选择](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 更多特权权限之前要谨慎，请参阅 [权限](/graph/permissions-reference)。
 
 ### <a name="for-a-cloud-pc-provider"></a>对于云电脑提供商
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  CloudPC.Read.All、CloudPC.ReadWrite.All、RoleManagement.Read.All   |
+|委派（工作或学校帐户） |  RoleManagement.Read.CloudPC、CloudPC.Read.All、RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All、RoleManagement.Read.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | CloudPC.Read.All、CloudPC.ReadWrite.All、RoleManagement.Read.All  |
+|Application | RoleManagement.Read.CloudPC、CloudPC.Read.All、RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All、RoleManagement.Read.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
 
@@ -44,7 +44,7 @@ ms.locfileid: "62093420"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
+|Application | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-a-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
@@ -52,7 +52,7 @@ ms.locfileid: "62093420"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|Application | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ### <a name="for-an-entitlement-management-provider"></a>对于权利管理提供程序
 
@@ -60,7 +60,7 @@ ms.locfileid: "62093420"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -89,7 +89,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$filter` 对 、 `id` 和 `displayName` 属性使用查询 `isBuiltIn` 参数。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持对 `$filter` 、 `id`和 `displayName`属性使用查询 `isBuiltIn` 参数。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -103,7 +103,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

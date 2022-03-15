@@ -3,23 +3,23 @@ title: 安装 Microsoft Graph PowerShell SDK
 description: 提供有关安装 Microsoft Graph PowerShell SDK 的说明。
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 0337b4641f8c84e63c4c5e7eecf1da0f186dad0c
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 80086e4879ce9acb547e060c45891bd58dc602bf
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201678"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500958"
 ---
 # <a name="install-the-microsoft-graph-powershell-sdk"></a>安装 Microsoft Graph PowerShell SDK
 
 > [!NOTE]
-> 安装 SDK 的主模块将安装所有 38 个子模块。 考虑仅安装必要的模块，包括 `Microsoft.Graph.Authentication` 。 有关可用 Microsoft Graph的列表，请使用以下命令。
+> 安装 SDK 的主模块将安装所有 38 个子模块。 考虑仅安装必要的模块，包括 `Microsoft.Graph.Authentication`。 有关可用 Microsoft Graph的列表，请使用以下命令。
 >
 > ```powershell
 > Find-Module Microsoft.Graph*
 > ```
 
-Microsoft Graph PowerShell SDK 发布在[PowerShell 库上](https://www.powershellgallery.com/packages/Microsoft.Graph)。 可以使用以下命令在 PowerShell 核心或 Windows PowerShell安装 SDK。
+Microsoft Graph PowerShell SDK 已发布在 [PowerShell 库中](https://www.powershellgallery.com/packages/Microsoft.Graph)。 可以使用以下命令在 PowerShell 核心或 Windows PowerShell安装 SDK。
 
 ```powershell
 Install-Module Microsoft.Graph -Scope CurrentUser
@@ -36,12 +36,12 @@ Install-Module Microsoft.Graph -Scope AllUsers
 
 ## <a name="supported-powershell-versions"></a>支持的 PowerShell 版本
 
-PowerShell 7 及更高版本是建议在所有平台上与 Microsoft Graph PowerShell SDK 一同使用的 PowerShell 版本。 将 SDK 与 PowerShell 7 或更高版本一同使用没有任何其他先决条件。
+PowerShell 7 及更高版本是建议在所有平台上与 Microsoft Graph PowerShell SDK 一Graph PowerShell 版本。 将 SDK 与 PowerShell 7 或更高版本一同使用没有任何其他先决条件。
 
 若要将 Microsoft Graph PowerShell SDK 与 Windows PowerShell 一Windows PowerShell。
 
 - 升级到 [PowerShell 5.1 或更高版本](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell)
-- 安装[.NET Framework 4.7.2 或更高版本](/dotnet/framework/install/)
+- 安装 [.NET Framework 4.7.2 或更高版本](/dotnet/framework/install/)
 - 使用 **将 PowerShellGet** 更新到最新版本 `Install-Module PowerShellGet -Force`
 
 ## <a name="verify-installation"></a>验证安装
