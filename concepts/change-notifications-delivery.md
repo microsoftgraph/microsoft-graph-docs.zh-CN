@@ -4,12 +4,12 @@ description: 更改通知可以通过不同的技术来传送，包括 Webhook �
 author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 9e61d8352c2566b902fea045bc69eff5a91d0a8e
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 5a93ed69c7e0ed83dcb9ac9d877a59b9033d30b2
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225978"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500901"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways"></a>以不同方式接收更改通知
 
@@ -95,7 +95,7 @@ echo "Notification Url:\n${notificationUrl}"
 1. 为新事件中心命名，然后单击“**创建**”。  
 1. 创建事件中心后，单击事件中心的名称，然后单击“**共享访问策略**”和“**+ 添加**”以添加新策略。  
 1. 为策略命名，选中“**发送**”，然后单击“**创建**”。  
-1. 创建策略后，单击策略的名称以打开“详细信息”面板，然后复制“**连接字符串-主键**” 值。 记下该值，在下一步中你需要使用它。  
+1. 创建策略后，单击策略名称以打开“详细信息”面板，然后复制“**连接字符串-主键**”值。请将其记下，下一步将需要使用该值。  
 
 ##### <a name="configuring-the-azure-key-vault"></a>配置 Azure 密钥保管库
 
@@ -114,12 +114,12 @@ echo "Notification Url:\n${notificationUrl}"
 1. 选择“**密钥保管库**”建议。 此时将加载“创建密钥保管库”页面。
 1. 在“创建密钥保管库”页面上，单击“**创建**”。  
 1. 填写密钥保管库创建详细信息，然后单击“**审阅 + 创建**”和“**创建**”。  
-1. 使用通知中的“**转到资源**”转到新创建的密钥保管库。  
+1. 使用通知中的“**转到资源**”来转到新创建的密钥保管库。  
 1. 复制 **DNS 名称**；在下一步中你需要使用它。  
 1. 转到“**密钥**”，然后单击“**+ 生成/导入**”。  
 1. 为密钥命名，并保留名称供以后使用，在下一步中你需要使用它。 对于该值，请粘贴在“事件中心”步骤中生成的连接字符串。 单击“**创建**”。  
 1. 单击“**访问策略**”和“**+ 添加访问策略**”。  
-1. 对于“**密钥权限**”，选择“**获取**”；对于“**选择主体**”，选择“**Microsoft Graph 更改跟踪**”。 单击“**添加**”。  
+1. 对于“**机密权限**”，选择“**获取**”；对于“**选择主体**”，选择“**Microsoft Graph 更改跟踪**”。单击“**添加**”。  
 
 ### <a name="creating-the-subscription-and-receiving-notifications"></a>创建订阅并接收通知
 
@@ -182,7 +182,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 > **注意：** 此 API 仅适用于学校或工作帐户，而不适用于个人帐户。 请确保使用域中的帐户登录。
 
-或者，可以在 Microsoft Graph PowerShell 中使用 [New-MgServicePrincipal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true) cmdlet 添加缺少的服务主体。 下面是一个示例脚本。
+或者，可以使用 Microsoft Graph PowerShell 中的 [New-MgServicePrincipal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true) cmdlet 添加缺少的服务主体。以下是示例脚本。
 
 ```PowerShell
 Connect-Graph -Scopes "Application.ReadWrite.All"
