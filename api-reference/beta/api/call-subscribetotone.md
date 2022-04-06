@@ -1,16 +1,16 @@
 ---
 title: call： subscribeToTone
 description: 订阅 DTMF (双音多频信号) 。 这允许你在用户按下"Dialpad"上的键时收到通知。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a6c66b2519ddbd72add03427f1d7330f92059c85
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5d3e1b30230aaa4ac1f02045446259558c629d69
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340272"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608021"
 ---
 # <a name="call-subscribetotone"></a>call： subscribeToTone
 
@@ -23,14 +23,14 @@ ms.locfileid: "62340272"
 > [!Note]
 > **subscribeToTone** 操作仅支持 [通过](../resources/call.md) [serviceHostedMediaConfig 启动的呼叫](../resources/servicehostedmediaconfig.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | Calls.AccessMedia.All                       |
+| Application     | Calls.AccessMedia.All                       |
 
 >**注意：** 提供的任何音调数据可能无法保留。 确保你遵守有关通信数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 ## <a name="http-request"></a>HTTP 请求
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/subscribeToTone
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    | 说明 |
+| 参数      | 类型    | Description |
 |:---------------|:--------|:------------|
 | clientContext  | String  | 唯一的客户端上下文字符串。 最多可包含 256 个字符。 |
 

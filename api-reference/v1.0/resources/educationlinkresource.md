@@ -5,26 +5,31 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1429ef21a8ff96ed1afdce14e2590ee4ce937f6e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1dbf39593f4e76aadd714b9a8989e25944f1c2d0
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036632"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684478"
 ---
 # <a name="educationlinkresource-resource-type"></a>educationLinkResource 资源类型
 
 命名空间：microsoft.graph
 
-educationResource 的 [子类](educationresource.md)。 
+[educationResource](educationresource.md) 的子类。 
 
-此资源是一个链接，没有与之关联的任何其他数据。
+此资源是一个链接，没有任何与之关联的其他数据。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|链接|String|资源的 URL。|
+|link|String|资源的 URL。|
+|createdBy|String|创建此对象的用户的显示名称。|
+|createdDateTime|DateTimeOffset|添加重索的日期时间。|
+|displayName|string|资源的显示名称。|
+|lastModifiedBy|[identitySet](identityset.md)|最后一个修改资源的用户。|
+|lastModifiedDateTime|DateTimeOffset|上次修改资源的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -40,7 +45,12 @@ educationResource 的 [子类](educationresource.md)。
 
 ```json
 {
-  "link": "String"
+  "link": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

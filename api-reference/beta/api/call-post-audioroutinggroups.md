@@ -1,16 +1,16 @@
 ---
 title: 创建音频路由组
 description: 创建新的 **audioRoutingGroup**。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 330142c280a0560ebf76e3afbce5abecba0726c2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bf4248182603da7502b48520a0fe0b4f478fc645
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097252"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607650"
 ---
 # <a name="create-audio-routing-group"></a>创建音频路由组
 
@@ -20,14 +20,14 @@ ms.locfileid: "62097252"
 
 创建新的 **audioRoutingGroup**。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                               |
 | 委派（个人 Microsoft 帐户） | 不支持。                               |
-| 应用程序                            | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| Application                            | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ POST /communications/calls/{id}/audioRoutingGroups
 在请求正文中，提供 [audioRoutingGroup](../resources/audioroutinggroup.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和 [audioRoutingGroup](../resources/audioroutinggroup.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [audioRoutingGroup](../resources/audioroutinggroup.md) 对象。
 
 ## <a name="examples"></a>示例
 

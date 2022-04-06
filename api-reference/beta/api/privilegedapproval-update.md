@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 59b6ab279d100bc32384469e5245dc4477f1073b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 522cf6dfab49dd282208ac56bf327d44de838e17
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135399"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671438"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
@@ -18,7 +18,7 @@ ms.locfileid: "62135399"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 更新 privilegedapproval 对象的属性。
 ## <a name="permissions"></a>权限
@@ -27,9 +27,9 @@ ms.locfileid: "62135399"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ PATCH /privilegedApproval/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |approvalDuration|期限||
 |approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
@@ -58,7 +58,7 @@ PATCH /privilegedApproval/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码
+如果成功，此方法返回 响应 `204 No Content` 代码
 
 请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 

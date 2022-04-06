@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 9edd626ae9914941a18801791e942c1dfd69e391
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: cba73bf9f8d3281fe43400e90db9303bba69f36a
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336912"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587663"
 ---
 # <a name="cloudpc-resource-type"></a>cloudPC 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "63336912"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示云托管虚拟桌面。 此云电脑还注册到 Intune 中，并通过 Microsoft Endpoint Manager 门户进行管理，因此云电脑还具有相应的 Intune 托管设备 ID。
+表示云托管虚拟桌面。 此云电脑还注册到 Intune，并通过 Microsoft Endpoint Manager 门户进行管理，因此云电脑还具有相应的Intune托管设备 ID。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -32,28 +32,28 @@ ms.locfileid: "63336912"
 |[重新启动](../api/cloudpc-reboot.md)|无|重新启动特定的 [cloudPC](../resources/cloudpc.md) 对象。|
 |[Rename](../api/cloudpc-rename.md)|无|重命名特定的 [cloudPC](../resources/cloudpc.md) 对象。 使用此 API 更新 **云电脑实体的 displayName** 。|
 |[重新设置](../api/cloudpc-reprovision.md)|无|重新设置 [cloudPC](../resources/cloudpc.md) 对象。|
-|[重新设置远程操作](../api/manageddevice-reprovisioncloudpc.md)|无|使用  [Intune 托管](../resources/cloudpc.md) 的设备 ID 重新设置云电脑。|
-|[批量重新设置远程操作](../api/manageddevice-bulkreprovisioncloudpc.md)|无|使用 Intune 托管的设备 ID 批量重新预配一组云电脑设备。|
-|[调整远程操作大小](../api/manageddevice-resizecloudpc.md)|无|通过 Intune 托管设备 ID 将现有云电脑升级或降级为具有新 vCPU 和存储大小的另一配置。|
+|[重新设置远程操作](../api/manageddevice-reprovisioncloudpc.md)|无|使用托管设备 ID Intune[云](../resources/cloudpc.md)电脑。  |
+|[批量重新设置远程操作](../api/manageddevice-bulkreprovisioncloudpc.md)|无|使用托管设备INTUNE批量重新预配一组云电脑设备。|
+|[调整远程操作大小](../api/manageddevice-resizecloudpc.md)|无|通过托管设备 ID 将现有云电脑升级或降级到具有新 vCPU 和存储Intune配置。|
 |[疑难解答](../api/cloudpc-troubleshoot.md)|无|特定 [cloudPC 对象疑](../resources/cloudpc.md) 难解答。 使用此 API 检查云电脑和会话主机的运行状况。|
 |[还原远程操作](../api/manageddevice-restorecloudpc.md)|无|将云电脑设备从快照还原到以前的状态。|
-|[批量还原远程操作](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|使用单个请求还原多个云电脑设备，其中包括 Intune 托管设备的 ID 和还原点日期和时间。|
+|[批量还原远程操作](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|使用单个请求还原多个云电脑设备，该请求Intune托管设备的 ID 以及还原点日期和时间。|
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---|:---|:---|
-|aadDeviceId|字符串|云Azure Active Directory (Azure AD) 的设备 ID。|
+|aadDeviceId|String|云Azure Active Directory (Azure AD) 的设备 ID。|
 |displayName|String|云显示名称的屏幕。|
 |gracePeriodEndDateTime|DateTimeOffset|宽限期结束和重新设置/取消设置发生的日期和时间。 仅在状态为 时是必需的 `inGracePeriod`。 时间戳以 ISO 8601 格式和 UTC 协调世界时 (显示) 。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |id|String|云电脑的唯一标识符。 只读。|
-|imageDisplayName|字符串|云电脑上的操作系统映像的名称。|
+|imageDisplayName|String|云电脑上的操作系统映像的名称。|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|云电脑的最后登录结果。 例如，`{ "time": "2014-01-01T00:00:00Z"}`。|
 |lastModifiedDateTime|DateTimeOffset|云电脑上次修改的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|企业云电脑的最后远程操作结果。 支持的远程操作包括：、`Reboot`、`Rename``Reprovision`、`Restore`和 `Troubleshoot`。|
-|managedDeviceId|String|云电脑的 Intune 设备 ID。|
-|managedDeviceName|String|云电脑的 Intune 设备名称。|
-|onPremisesConnectionName|String|预配云电脑期间应用本地连接。|
+|managedDeviceId|String|云Intune的设备 ID。|
+|managedDeviceName|String|云Intune的设备名称。|
+|onPremisesConnectionName|String|预配云电脑期间应用的 Azure 网络连接。|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|操作系统版本 (操作系统) 在云 PC 上预配。 可能的值是：、`windows10``windows11`和 `unknownFutureValue`。|
 |provisioningPolicyId|String|云电脑的预配策略 ID。|
 |provisioningPolicyName|String|预配云电脑期间应用的预配策略。|

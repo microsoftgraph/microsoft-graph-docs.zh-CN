@@ -1,16 +1,16 @@
 ---
 title: 创建频道
-description: 在团队中创建新频道，如请求正文中指定。
+description: 在团队中创建新通道，如请求正文中所指定的那样。
 ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d753d89f4dae91e5f052b636c10c86fc760b8561
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 585cda8ea0f44f11a57d08173373ba6440172d45
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804722"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684891"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -18,7 +18,11 @@ ms.locfileid: "62804722"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在团队 [中创建新](../resources/channel.md) 频道，如请求正文中指定。
+在团队中创建新 [通道](../resources/channel.md) ，如请求正文中所指定的那样。
+
+> [!IMPORTANT]
+> 共享通道当前处于公共预览状态。 在此期间，用于创建共享通道的 Microsoft 图形 API可供受众限制。 建议在Teams客户端中创建共享通道，并使用 Microsoft Graph API 来管理它们。 有关如何在Teams客户端中启用共享通道的详细信息，请[参阅Microsoft Teams (预览版) 中的共享频道](/microsoftteams/shared-channels)。
+
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +38,7 @@ ms.locfileid: "62804722"
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
-> **注意**：将来，Microsoft 可能会要求你或你的客户根据使用团队合作.Migrate.All 和/或迁移 API 导入的数据量支付额外的 [费用](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+> **注意**：将来，Microsoft 可能会要求你或你的客户根据使用 Teamwork.Migrate.All 和/或 [迁移 API](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) 导入的数据量支付额外费用。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,16 +55,16 @@ POST /teams/{team-id}/channels
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 channel 对象的 JSON [表示](../resources/channel.md) 形式。
+在请求正文中，提供 [通道](../resources/channel.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [channel](../resources/channel.md) 对象。
+如果成功，此方法在响应正文中返回 [一个](../resources/channel.md)`201 Created`响应代码和一个通道对象，用于成员 **身份类型** 值`standard`为或 `private`。 对于 **具有 membershipType** 值的 `shared`通道，此方法返回 `202 Accepted` 包含 [teamsAsyncOperation](../resources/teamsasyncoperation.md) 链接的响应。
 
 如果该请求成功，此方法返回 `400 Bad Request` 响应代码。 下面是出现此响应的常见原因：
 
 * **createdDateTime** 将在未来设置。
-* **已正确指定 createdDateTime** ， **但 channelCreationMode** 实例属性缺失或设置为无效值。
+* 已正确指定 **createdDateTime**，但 **channelCreationMode** 实例属性缺失或设置为无效值。
 
 ## <a name="examples"></a>示例
 
@@ -68,7 +72,7 @@ POST /teams/{team-id}/channels
 
 #### <a name="request"></a>请求
 
-以下示例显示创建标准通道的请求。
+以下示例演示创建标准通道的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -117,7 +121,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-以下示例显示了相应的响应。
+下面展示了示例响应。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
@@ -138,11 +142,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-private-channel-on-behalf-of-user"></a>示例 2：代表用户创建私人频道
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>示例 2：代表用户创建专用频道
 
 #### <a name="request"></a>请求
 
-以下示例显示创建私人频道和将用户添加为团队所有者的请求。
+以下示例演示创建专用频道并添加用户作为团队所有者的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -201,7 +205,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-以下示例显示了相应的响应。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -230,7 +234,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-以下示例演示如何创建将用于导入邮件的通道。
+以下示例演示如何创建用于导入消息的通道。
 
 
 <!-- {
@@ -253,8 +257,8 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
-以下示例显示了相应的响应。 响应中的 Content-Location 标头指定要预配的频道的路径。
-设置后，此通道可用于 [导入邮件](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+下面展示了示例响应。 `Content-Location`响应中的标头指定要预配的通道的路径。
+预配后，此通道可用于 [导入消息](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -280,11 +284,11 @@ Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24
 }
 ```
 
-### <a name="example-4-create-standard-channel-with-moderation-settings"></a>示例 4：使用审核设置创建标准频道
+### <a name="example-4-create-standard-channel-with-moderation-settings"></a>示例 4：使用审查设置创建标准通道
 
 #### <a name="request"></a>请求
 
-下面的示例展示了使用审核设置创建标准频道的请求。 只能对标准通道执行此操作。
+以下示例演示使用审查设置创建标准通道的请求。 此操作只能为标准通道执行。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -340,7 +344,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-以下示例显示了相应的响应。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -359,15 +363,15 @@ Content-type: application/json
     "isFavoriteByDefault": null,
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19:12b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
-    "membershipType": "private"
+    "membershipType": "standard"
 }
 ```
 
-### <a name="example-5-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>示例 5：使用用户主体名称代表用户创建私人频道
+### <a name="example-5-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>示例 5：使用用户主体名称代表用户创建专用通道
 
 #### <a name="request"></a>请求
 
-以下示例显示创建私人频道和将用户添加为团队所有者的请求。
+以下示例演示创建专用频道并添加用户作为团队所有者的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -423,12 +427,9 @@ Content-type: application/json
 
 
 
----
-
 #### <a name="response"></a>响应
 
-以下示例显示了相应的响应。
-
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -438,7 +439,8 @@ Content-type: application/json
 
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
+Content-Length: 0
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
@@ -452,9 +454,56 @@ Content-type: application/json
 }
 ```
 
+
+### <a name="example-6-create-a-shared-channel-on-behalf-of-a-user"></a>示例 6：代表用户创建共享通道
+
+#### <a name="request"></a>请求
+
+以下示例演示如何创建共享通道。
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_shared_channel"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "displayName": "My First Shared Channel",
+  "description": "This is my first shared channel",
+  "membershipType": "shared",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
+      "roles": [
+        "owner"
+      ]
+    }
+  ]
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
+Content-Length: 0
+```
+
 ## <a name="see-also"></a>另请参阅
 
-* [频道的完整迁移](channel-completemigration.md)
+* [通道的完整迁移](channel-completemigration.md)
 * [使用 Microsoft Graph 将第三方平台消息导入 Teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 * [创建团队](team-post.md)
 
@@ -471,3 +520,7 @@ Content-type: application/json
   ]
 }
 -->
+
+
+
+

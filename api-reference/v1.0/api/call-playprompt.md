@@ -1,16 +1,16 @@
 ---
 title: call： playPrompt
 description: 在呼叫中播放提示。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9af7512dc14491866da93f4c6632334c4bb85c7a
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: dc1c49d33fa4a336dd69e4e4313ec7f72893de85
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347828"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607979"
 ---
 # <a name="call-playprompt"></a>call： playPrompt
 
@@ -23,14 +23,16 @@ ms.locfileid: "62347828"
 > [!Note]
 > **playPrompt** 操作仅支持 [通过](../resources/call.md) [serviceHostedMediaConfig 启动的呼叫](../resources/servicehostedmediaconfig.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                               |
 | 委派（个人 Microsoft 帐户） | 不支持。                               |
-| 应用程序                            | 无。                                        |
+| Application                            | Calls.Initiate.All、Calls.AccessMedia.All |
+
+> **注意：** 创建调用时检查权限;调用此 API 时，不会进行其他权限检查。 Calls.AccessMedia.All 仅对于使用应用托管媒体的呼叫是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,10 +49,10 @@ POST /communications/calls/{id}/playPrompt
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |prompts|[MediaPrompt](../resources/mediaprompt.md) 集合| 要播放的提示。 支持的最大 MediaPrompt 集合大小为 20。|
-|clientContext|字符串|唯一的客户端上下文字符串。 最多可包含 256 个字符。|
+|clientContext|String|唯一的客户端上下文字符串。 最多可包含 256 个字符。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [playPromptOperation](../resources/playpromptoperation.md) 对象。

@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4806463a93de968f1989777e9a28243e10ddaf7e
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: b942bbf567fdc701e83944517f068fd2c020d943
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477683"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671963"
 ---
 # <a name="application-addpassword"></a>application： addPassword
 
 命名空间：microsoft.graph
 
-向应用程序添加强密码或 [密码](../resources/application.md)。
+向应用程序添加强 [密码](../resources/application.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -55,7 +55,7 @@ POST /applications/{id}/addPassword
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordCredential](../resources/passwordcredential.md) 对象。 响应 **对象中的 secretText** 属性包含由密码生成的强密码/密码Azure Active Directory长度为 16-64 个字符。 将来无法检索此密码。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordCredential](../resources/passwordcredential.md) 对象。 响应 **对象中的 secretText** 属性包含由 Azure Active Directory生成的强密码，长度为 16-64 个字符。 将来无法检索此密码。
 
 ## <a name="examples"></a>示例
 

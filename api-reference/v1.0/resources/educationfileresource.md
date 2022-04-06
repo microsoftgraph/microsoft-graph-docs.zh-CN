@@ -1,29 +1,34 @@
 ---
 title: educationFileResource 资源类型
-description: educationResource 的子类，表示与作业或提交关联的文件对象。
+description: educationResource 子类，表示与分配或提交关联的文件对象。
 ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e0e101e1d21bd8e5aa205875a9f444678aeee218
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c89bac36d51ee07e1ecb81bb7f5ac462e8f30cc7
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036639"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684485"
 ---
 # <a name="educationfileresource-resource-type"></a>educationFileResource 资源类型
 
 命名空间：microsoft.graph
 
-[educationResource](educationresource.md)的子类，表示与作业或提交关联的文件对象。
+[educationResource](educationresource.md) 子类，表示与分配或提交关联的文件对象。
 
-在这种情况下，该文件不是 (Word、Excel 等) 特殊文件之一，而是在系统中没有特殊处理的文件。 文件资源必须存储在与此资源所附加到的工作分配或提交关联的 **resourceFolder** 中。
+在这种情况下，该文件不是 Word、Excel 等 (特殊文件之一) 但该文件在系统中没有特殊处理。 文件资源必须存储在与此资源附加到的分配或提交关联的 **resourceFolder** 中。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|fileUrl|String|文件资源的磁盘上的位置。|
+|fileUrl|String|文件资源磁盘上的位置。|
+|createdBy|String|创建此对象的用户的显示名称。|
+|createdDateTime|DateTimeOffset|添加重索的日期时间。|
+|displayName|string|资源的显示名称。|
+|lastModifiedBy|[identitySet](identityset.md)|最后一个修改资源的用户。|
+|lastModifiedDateTime|DateTimeOffset|上次修改资源的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -39,7 +44,12 @@ ms.locfileid: "59036639"
 
 ```json
 {
-  "fileUrl": "String"
+  "fileUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 27188663d277d6efd70ebb3e1f96b3e88fadb078
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: eed79b67204666ae0d29cd2cff975b4deeb50676
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091497"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629790"
 ---
 # <a name="delete-unifiedroleassignment"></a>删除 unifiedRoleAssignment
 
@@ -18,9 +18,11 @@ ms.locfileid: "62091497"
 
 删除 [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+### <a name="for-the-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
@@ -28,12 +30,30 @@ ms.locfileid: "62091497"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | RoleManagement.ReadWrite.Directory |
 
+### <a name="for-the-entitlement-management-provider"></a>对于权利管理提供程序
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） |  EntitlementManagement.ReadWrite.All  |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | 不支持。 |
+
 ## <a name="http-request"></a>HTTP 请求
+
+从角色分配提供程序中删除一个目录：
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /roleManagement/directory/roleAssignments/{id}
+```
+
+从角色分配管理提供程序中删除以下权限：
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头

@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 08e50ebae639ba0124da66caea5df06018e05e33
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 9e34c8ce74c680138dabb891b5d9a2df742b1344
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671613"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510118"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -210,8 +210,8 @@ Content-type: application/json
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_devices_memberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'A')

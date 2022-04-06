@@ -1,16 +1,16 @@
 ---
 title: educationExcelResource 资源类型
-description: 'EducationResource 的子类。 此资源类型代表一个 Excel 文档。  '
+description: 'educationResource 的子类。 此资源类型表示Excel文档。  '
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 96fc84227bc7c8e5140ef06ce62ea2d485badab7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 29c892c8f1c4f4d961db654e008eed315407081b
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095518"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685052"
 ---
 # <a name="educationexcelresource-resource-type"></a>educationExcelResource 资源类型
 
@@ -18,15 +18,20 @@ ms.locfileid: "48095518"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)的子类。 此资源类型代表一个 Excel 文档。  
+[educationResource](educationresource.md) 的子类。 此资源类型表示Excel文档。  
  
->**注意：** Excel 文件必须位于与此资源所属的 "分配" 或 "提交" 对象相关联的资源文件夹中。
+>**注意：** Excel文件必须位于与此资源所属的赋值或提交对象关联的资源文件夹中。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|fileUrl|字符串|指向 Excel 文件对象的指针。|
+|fileUrl|String|指向Excel文件对象的指针。|
+|createdBy|String|创建此对象的用户的显示名称。|
+|createdDateTime|DateTimeOffset|添加重索的日期时间。|
+|displayName|string|资源的显示名称。|
+|lastModifiedBy|[identitySet](identityset.md)|最后一个修改资源的用户。|
+|lastModifiedDateTime|DateTimeOffset|上次修改资源的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -42,7 +47,12 @@ ms.locfileid: "48095518"
 
 ```json
 {
-  "fileUrl": "String"
+  "fileUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

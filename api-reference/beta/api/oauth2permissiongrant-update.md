@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 565cb1449eae3617587d586daf231a5aefc16627
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 44108f07d916f6d37332cf145bced1eb89461b93
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129673"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670829"
 ---
 # <a name="update-oauth2permissiongrant-a-delegated-permission-grant"></a>更新 oAuth2PermissionGrant (委派权限授予) 
 
@@ -20,7 +20,7 @@ ms.locfileid: "62129673"
 
 更新 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的属性，表示委派的权限授予。
 
-**oAuth2PermissionGrant** 可以更新为更改授予的委派权限，通过添加或删除列表中的项在 **作用域中**。
+**oAuth2PermissionGrant** 可通过在范围中添加或删除列表中的项目来更新以更改授予哪些委派 **权限**。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "62129673"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.ReadWrite.All |
 
@@ -48,7 +48,7 @@ PATCH /oauth2PermissionGrants/{id}
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |scope|String| 指定资源应用程序应在 OAuth 2.0 访问令牌中预期的范围声明的值。 |
 
@@ -68,12 +68,11 @@ PATCH /oauth2PermissionGrants/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
+PATCH https://graph.microsoft.com/beta/oauth2PermissionGrants/l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk
 Content-Type: application/json
-Content-Length: 30
 
 {
-  "scope": "scope-value"
+    "scope": "User.ReadBasic.All Group.ReadWrite.All"
 }
 ```
 

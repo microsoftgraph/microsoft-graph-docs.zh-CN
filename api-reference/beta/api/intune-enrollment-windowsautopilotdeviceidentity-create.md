@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6b7a86701c95bfdfbec6046c7985a5519a735ca
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ca95ab731773714d210bd315a25a668e52caa5be
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61340338"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628971"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>创建 windowsAutopilotDeviceIdentity
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,31 +55,34 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|autopilot 设备的Windows分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 autopilot Windows状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`、`surfaceHub2SProfileNotSupported` 或 `unknownFutureValue`。|
-|deploymentProfileAssignedDateTime|DateTimeOffset|autopilot 设备的配置文件Windows时间。|
-|groupTag|String|autopilot 设备的组Windows标记。|
-|purchaseOrderIdentifier|String|Purchase Order Autopilot Windows标识符。|
+|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows Autopilot 设备的配置文件分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 Windows Autopilot 设备的详细状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`、`surfaceHub2SProfileNotSupported` 或 `unknownFutureValue`。|
+|deploymentProfileAssignedDateTime|DateTimeOffset|Windows Autopilot 设备的配置文件设置时间。|
+|groupTag|String|Windows autopilot 设备的组标记。|
+|purchaseOrderIdentifier|String|Purchase Order Windows autopilot 设备的标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
-|manufacturer|String|autopilot Windows Oem 制造商。|
-|model|String|autopilot Windows型号名称。|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Autopilot 设备的 intune Windows状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|lastContactedDateTime|DateTimeOffset|Intune Autopilot 设备的上次Windows日期时间。|
+|manufacturer|String|Windows autopilot 设备的 Oem 制造商。|
+|model|String|Windows autopilot 设备的型号名称。|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune Windows autopilot 设备的注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
+|lastContactedDateTime|DateTimeOffset|Intune Windows autopilot 设备的上次联系日期时间。|
 |addressableUserName|String|可地址用户名。|
 |userPrincipalName|String|用户主体名称。|
 |resourceName|String|资源名称。|
 |skuNumber|String|SKU 号|
 |systemFamily|String|系统系列|
-|azureActiveDirectoryDeviceId|String|AAD设备 ID - 要弃用|
-|azureAdDeviceId|String|AAD设备 ID|
+|azureActiveDirectoryDeviceId|String|AAD 设备 ID - 已弃用|
+|azureAdDeviceId|String|AAD 设备 ID|
 |managedDeviceId|String|托管设备 ID|
 |displayName|String|显示名称|
+|deviceAccountUpn|String|Surface Hub 设备帐户 Upn|
+|deviceAccountPassword|String|Surface Hub 设备帐户密码|
+|deviceFriendlyName|String|Surface Hub 设备友好名称|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -88,7 +91,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 1077
+Content-length: 1244
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -111,7 +114,10 @@ Content-length: 1077
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
   "azureAdDeviceId": "Azure Ad Device Id value",
   "managedDeviceId": "Managed Device Id value",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "deviceAccountUpn": "Device Account Upn value",
+  "deviceAccountPassword": "Device Account Password value",
+  "deviceFriendlyName": "Device Friendly Name value"
 }
 ```
 
@@ -120,7 +126,7 @@ Content-length: 1077
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1126
+Content-Length: 1293
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -144,7 +150,10 @@ Content-Length: 1126
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
   "azureAdDeviceId": "Azure Ad Device Id value",
   "managedDeviceId": "Managed Device Id value",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "deviceAccountUpn": "Device Account Upn value",
+  "deviceAccountPassword": "Device Account Password value",
+  "deviceFriendlyName": "Device Friendly Name value"
 }
 ```
 

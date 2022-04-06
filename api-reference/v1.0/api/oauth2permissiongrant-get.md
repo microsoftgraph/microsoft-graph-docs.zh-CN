@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 220ebd3fcb4bf0e92dce53fcc80d68bab617cfe6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ac390e2394b9ad8e83670eda872de5a5030614e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119571"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669772"
 ---
 # <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a>获取 oAuth2PermissionGrant (委派权限授予) 
 
@@ -26,7 +26,7 @@ ms.locfileid: "62119571"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | .Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 

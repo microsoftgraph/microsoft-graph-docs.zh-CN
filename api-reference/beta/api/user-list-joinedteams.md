@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7d49f0d971b00d21abbbaffc6989f297ce18ab09
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
-ms.translationtype: HT
+ms.openlocfilehash: b7770b939a7c125657c3ea751c515f108598127d
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804666"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684926"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -19,6 +19,7 @@ ms.locfileid: "62804666"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户不是其直接成员的 Microsoft Teams [团队](../resources/team.md)。
+> **注意**：此 API 不会返回用户是其直接成员的共享通道的主机团队。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -58,6 +59,7 @@ GET /users/{id | user-principal-name}/joinedTeams
 
 > [!Note]
 > 目前，此 API 调用仅返回 [团队](../resources/team.md)的 **id**、**displayName** 和 **说明** 属性。 若要获取所有属性，请使用[获取团队](../api/team-get.md)操作。 有关详细信息，请参阅[已知问题](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams)。
+
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -124,7 +126,10 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 - [列出所有团队](/graph/teams-list-all-teams)
+- [列出关联的团队](../api/associatedteaminfo-list.md)
+- [列出组织中的所有团队](../api/teams-list.md)
 - [获取团队](../api/team-get.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

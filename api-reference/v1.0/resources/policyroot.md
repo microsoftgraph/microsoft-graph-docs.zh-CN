@@ -1,16 +1,16 @@
 ---
 title: policyRoot 资源类型
 description: 公开策略单一元素的导航属性的资源类型。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2ae4b3a54fd289d0e1b5e4924d3fe605468ca4d9
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 9ca01343954e659da2133543a3454a56be85ecc5
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688378"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510181"
 ---
 # <a name="policyroot-resource-type"></a>policyRoot 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "60688378"
 
 公开策略单一元素的导航属性的资源类型。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 无
 
 ## <a name="properties"></a>属性

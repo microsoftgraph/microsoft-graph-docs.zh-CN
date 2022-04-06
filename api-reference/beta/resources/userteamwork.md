@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: ff6a364ed21286d2fb01791bc0ccef0997f3ab5f
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
-ms.translationtype: HT
+ms.openlocfilehash: 709795ce885c5cad231d4aee289f2af18dc6d68a
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262223"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685185"
 ---
 # <a name="userteamwork-resource-type"></a>userTeamwork 资源类型
 
@@ -36,6 +36,7 @@ ms.locfileid: "62262223"
 | 关系 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此用户的个人范围内安装的应用。|
+|associatedTeams|[associatedTeamInfo](associatedteaminfo.md) 集合| [与用户](user.md)[关联的关联TeamInfo](associatedteaminfo.md) 对象的列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

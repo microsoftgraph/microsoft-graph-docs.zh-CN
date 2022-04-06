@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: a91c82a3e7378e7abde7bccae0d7a953c7d94cb8
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: deec2846b8f8490bf7005be46b19ad282c2cbae6
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671599"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588930"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -138,7 +138,7 @@ Retry-After: 2.128
 | -------------- | ------------ |
 | [通话](/graph/api/resources/call) | 每月10,000 通通话和 100 通并发通话   |
 | [会议信息](/graph/api/resources/meetinginfo)   | 每月每位用家会有 2000 则会议 |
-| [状态](/graph/api/resources/presence)（预览版）   | 平均每个租户每个应用在 30 秒的时间里 1500 个请求 |
+| [状态](/graph/api/resources/presence)   | 平均每个租户每个应用在 30 秒的时间里 1500 个请求 |
 
 ### <a name="onenote-service-limits"></a>OneNote 服务限制
 
@@ -174,20 +174,25 @@ Retry-After: 2.128
 
 | Teams 请求类型                                   | 每个租户每个应用限制        | 所有租户中的每个应用限制      |
 |------------------------------------------------------|---------------------------------|------------|
-| Microsoft Teams 的任何图形 API 调用              | 每 10 秒 15000 个请求 | 不适用 |
-| GET team, channel, tab, installedApps, appCatalogs   | 60 rps                          | 600 rps |
+| GET team, channel, tab, installedApps, appCatalogs   | 30 rps                          | 600 rps |
 | POST/PUT channel, tab, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
 | PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
 | DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
-| GET channel message  | 5 rps | 100 rps |
-| GET 1:1/group chat message  | 3 rps | 30 rps |
-| POST channel message | 2 rps | 20 rps |
-| POST 1:1/group chat message | 2 rps | 20 rps |
-| GET/teams/```{team-id}```/在以下路径下的日程安排和所有 API | 60 rps | 600 rps |
+| POST /teams | 10 rps | 100 rps  |
+| PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
+| GET channel message  | 20 rps | 200 rps |
+| GET 1:1/group chat message  | 20 rps | 200 rps |
+| POST channel message | 50 rps | 500 rps |
+| POST 1:1/group chat message | 20 rps | 200 rps |
+| GET/teams/```{team-id}```/在以下路径下的日程安排和所有 API | 30 rps | 600 rps |
 | POST, PATCH, PUT /teams/```{team-id}```/在以下路径下的日程安排和所有 API | 30 rps | 300 rps |
 | DELETE /teams/```{team-id}```/在以下路径下的日程安排和所有 API | 15 rps | 150 rps |
+| POST /teams/```{team-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /chats/```{chat-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /users/```{user-id}```/teamwork/sendActivityNotification | 5 rps | 50 rps |
+| Microsoft Teams 的其他 GET API 调用              | 30 rps | 1500 rps |
+| Microsoft Teams 的其他 API 调用              | 30 rps | 300 rps |
 
 对于给定团队或频道，每个应用最多可发布 4 个请求。
 每个应用每天最多可以将 3000 条消息发送到给定的频道。

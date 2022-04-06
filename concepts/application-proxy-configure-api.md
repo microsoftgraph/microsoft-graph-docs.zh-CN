@@ -5,20 +5,20 @@ author: davidmu1
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 96a1f390b41f585d530b04a831a2d9a79a12aa88
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c6466de02e1521889db27b509bc0ecb2d07cd4af
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142423"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685206"
 ---
-# <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 配置应用程序代理
+# <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>使用 Microsoft 图形 API 配置应用程序代理
 
-本文将了解如何为应用程序配置 Azure Active Directory (Azure AD) 应用程序代理。 应用程序代理提供对本地 Web 应用程序的安全远程访问和单一登录。 为应用程序配置应用程序代理后，用户可以通过外部 URL、"我的应用程序"门户或其他内部应用程序门户访问其本地应用程序。
+本文介绍如何为应用程序配置Azure Active Directory (Azure AD) 应用程序代理。 应用程序代理提供对本地 Web 应用程序的安全远程访问和单一登录。 为应用程序配置应用程序代理后，用户可以通过外部 URL、我的应用 门户或其他内部应用程序门户访问其本地应用程序。
 
 ## <a name="prerequisites"></a>先决条件
 
-- 本教程假定你已安装连接器并已完成应用程序代理的先决条件，以便连接器可以[](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin)与 Azure AD 服务通信。
+- 本教程假设你已安装连接器并完成了应用程序代理的[先决条件](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites)，以便连接器可以与Azure AD服务通信。
 - 本教程的前提是使用 Microsoft Graph Explorer，但是可以使用 Postman，也可以创建自己的客户端应用程序来调用 Microsoft Graph。 如果要在本教程中调用 Microsoft Graph API，需要使用具有全局管理员角色和适当权限的帐户。 完成以下步骤以在 Microsoft Graph Explorer 中设置权限：
     1. 启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
     2. 选择“**使用 Microsoft 登录**”，然后使用 Azure AD 全局管理员账户登录。 成功登录后，可在左侧窗格中看到用户帐户详细信息。
@@ -26,7 +26,7 @@ ms.locfileid: "59142423"
 
         ![设置权限](./images/application-proxy-configure-api/set-permissions.png)
         
-    4. Scroll through the list of permissions to **Directory (3)**， expand and then select `Directory.ReadWrite.All` .
+    4. 滚动浏览 **目录 (3)** 的权限列表，展开，然后选择 `Directory.ReadWrite.All`。
 
         ![搜索权限](./images/application-proxy-configure-api/select-permissions.png)
     
@@ -35,13 +35,13 @@ ms.locfileid: "59142423"
         ![接受权限](./images/application-proxy-configure-api/accept-permissions.png)
 
 > [!NOTE]
-> 为了可读性，可能会缩短显示的响应对象。 
+> 显示的响应对象可能会为了可读性而缩短。 
 
 ## <a name="step-1-create-a-custom-application"></a>步骤 1：创建自定义应用程序
 
-若要使用 API 为应用配置应用程序代理，首先创建自定义应用程序，然后更新应用程序的 **onPremisesPublishing** 属性以配置应用程序代理设置。 本教程使用应用程序模板在租户中创建自定义应用程序和服务主体的实例，以用于管理。 自定义应用程序的模板 ID 为 `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
+若要使用 API 为应用配置应用程序代理，请先创建自定义应用程序，然后更新应用程序的 **onPremisesPublishing** 属性以配置应用代理设置。 在本教程中，你将使用应用程序模板在租户中创建自定义应用程序和服务主体的实例以进行管理。 自定义应用程序的模板 ID 为 `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`。
 
-记录 **应用程序的 id** **、appId** **、servicePrincipalId，** 以在本教程的稍后部分使用。
+记录应用程序的 **ID**、 **appId**、 **servicePrincipalId** ，以便在本教程的后面部分使用。
 
 #### <a name="request"></a>请求
 
@@ -93,11 +93,11 @@ Content-type: application/json
 
 ## <a name="step-2-configure-application-proxy"></a>步骤 2：配置应用程序代理
 
-使用为 **应用程序** 记录的 ID 启动应用程序代理的配置。 更新以下属性：
+使用为应用程序记录的 **ID** 启动应用程序代理配置。 更新以下属性：
 
-- **onPremisesPublishing** - 在此例中，你将使用具有内部 URL 的应用 `https://contosoiwaapp.com` ：。 您还可以将默认域用于外部 `https://contosoiwaapp-contoso.msappproxy.net` URL：。 
-- **redirectUri、identifierUri** 和 **homepageUrl** - 设置为 **在 onPremisesPublishing** 属性中配置的相同外部 URL。 
-- **implicitGrantSettings** - 设置为 `true` **enabledTokenIssuance** 和 `false` **enabledAccessTokenIssuance**。
+- **onPremisesPublishing** - 在此示例中，将应用与内部 URL 配合使用： `https://contosoiwaapp.com` 此外，还对外部 URL 使用默认域： `https://contosoiwaapp-contoso.msappproxy.net` 
+- **redirectUri**、 **identifierUri** 和 **homepageUrl** - 设置为 **在 onPremisesPublishing** 属性中配置的同一外部 URL。
+- **implicitGrantSettings** - 设置 `true` 为 **enabledTokenIssuance** 和 `false` **enabledAccessTokenIssuance**。
 
 #### <a name="request"></a>请求
 
@@ -129,11 +129,11 @@ Content-type: application/json
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-3-assign-a-connector-group-to-the-application"></a>步骤 3：将连接器组分配给应用程序
+## <a name="step-3-assign-a-connector-group-to-the-application"></a>步骤 3：将连接器组分配到应用程序
 
 ### <a name="get-connectors"></a>获取连接器
 
-列出可用的连接器。 记录 **要** 分配给连接器组的连接器的 ID。
+列出可用的连接器。 记录要分配给连接器组的连接器 **的 ID** 。
 
 #### <a name="request"></a>请求
 
@@ -168,7 +168,7 @@ Content-type: application/json
 
 ### <a name="create-a-connectorgroup"></a>创建 connectorGroup
 
-对于此示例，将创建一个名为 的新 `IWA Demo Connector Group` connectorGroup，用于应用程序。 记录 **返回** 的 ID，以在下一步使用。
+在此示例中，将创建一个用于 `IWA Demo Connector Group` 应用程序的新连接器组。 记录要在下一步中使用的 **ID** 。
 
 #### <a name="request"></a>请求
 
@@ -196,7 +196,7 @@ Content-type: connectorGroup/json
 }
 ```
 
-### <a name="assign-a-connector-to-the-connectorgroup"></a>将连接器分配给 connectorGroup
+### <a name="assign-a-connector-to-the-connectorgroup"></a>将连接器分配到 connectorGroup
 
 #### <a name="request"></a>请求
 
@@ -215,7 +215,7 @@ Content-type: application/json
 HTTP/1.1 204 No content
 ```
 
-### <a name="assign-the-application-to-the-connectorgroup"></a>将应用程序分配给 connectorGroup
+### <a name="assign-the-application-to-the-connectorgroup"></a>将应用程序分配到 connectorGroup
 
 #### <a name="request"></a>请求
 
@@ -236,7 +236,7 @@ HTTP/1.1 204 No content
 
 ## <a name="step-4-configure-single-sign-on"></a>步骤 4：配置单一登录
 
-此应用程序使用 IWA Windows集成 (身份验证) 。 若要配置 IWA，请为 **onPremisesPublishing** 设置单一登录属性。
+此应用程序使用集成Windows身份验证 (IWA) 。 若要配置 IWA，请为 **onPremisesPublishing** 设置单一登录属性。
 
 #### <a name="request"></a>请求
 
@@ -267,7 +267,7 @@ HTTP/1.1 204 No content
 
 ### <a name="retrieve-the-approle-for-the-application"></a>检索应用程序的 appRole
 
-使用服务主体的 **ID** 获取应用程序的应用程序角色。 记录 **将在下****一步** 中使用的用户应用角色的 ID。
+使用服务主体的 **ID** 获取应用程序的应用角色。 记录要在下一步中使用的 **用户** 应用角色的 **ID**。
 
 #### <a name="request"></a>请求
 
@@ -301,7 +301,7 @@ Content-type: application/json
 
 ### <a name="create-a-user-account"></a>创建用户账户
 
-对于本教程，你将创建分配给应用角色的用户帐户。 在请求正文中， `contoso.com` 更改为租户的域名。 可在 Azure Active Directory 概述页面上找到租户信息。 记录 **将在** 下一步中使用的用户帐户的 ID。
+在本教程中，创建分配给应用角色的用户帐户。 在请求正文中，更改 `contoso.com` 为租户的域名。 可在 Azure Active Directory 概述页面上找到租户信息。 记录要在下一步中使用的用户帐户的 **ID** 。
 
 #### <a name="request"></a>请求
 
@@ -340,13 +340,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="assign-the-user-to-the-application"></a>将用户分配给应用程序
+### <a name="assign-the-user-to-the-application"></a>将用户分配到应用程序
 
-在下面的示例中，替换以下属性的值：
+在以下示例中，替换以下属性的值：
 
 - 具有用户 **ID** 的 **principalId**
 - 具有应用角色 **ID** 的 **appRoleId**
-- **resourceId，****其 ID** 为服务主体
+- 具有服务主体 **ID** 的 **resourceId**
 
 #### <a name="request"></a>请求
 
@@ -382,11 +382,11 @@ Content-type: application/json
 ```
 ## <a name="step-6-test-access-to-the-application"></a>步骤 6：测试对应用程序的访问
 
-通过访问为浏览器上的应用 **配置** 的外部 URL 来测试应用程序，然后使用测试用户登录。 你应该能够登录应用并访问应用程序。
+通过访问在浏览器上为应用配置的 **外部 URL** ，然后使用测试用户登录来测试应用程序。 应该能够登录到应用并访问应用程序。
 
 ## <a name="step-7-clean-up-resources"></a>第 7 步：清理资源
 
-在本教程中创建的资源不适合在生产环境中使用。 在此步骤中，将删除创建的资源。
+在本教程中创建的资源不应在生产环境中使用。 在此步骤中，将删除创建的资源。
 
 ### <a name="delete-the-user-account"></a>删除用户账户
 

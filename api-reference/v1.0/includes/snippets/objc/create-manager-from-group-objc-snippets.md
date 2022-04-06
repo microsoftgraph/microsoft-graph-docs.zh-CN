@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0e3d4a2538663b9fc5a18881d05c7048b107f92a883c0ea63310f2b5f88208cd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a83dc350d83468fa8fa3164051eb653c5672f1c
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57219808"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63759188"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/{id}/manager/$ref"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/10f17b99-784c-4526-8747-aec8a3159d6a/manager/$ref"]]];
 [urlRequest setHTTPMethod:@"PUT"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 

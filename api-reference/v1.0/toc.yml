@@ -2,7 +2,7 @@ name: 参考
 items:
   - name: Microsoft Graph 概述
     href: /graph/overview
-  - name: 获取身份验证令牌
+  - name: 身份验证和授权
     items:
       - name: 概述
         href: /graph/auth/index?context=graph/api/1.0
@@ -163,9 +163,9 @@ items:
         items:
           - name: 概述
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
-          - name: 适用于 React 的 /graph/toolkit
+          - name: /graph/toolkit for React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
-          - name: 适用于 SPFx 的 /graph/toolkit
+          - name: /graph/toolkit for SPFx
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
       - name: 构建首个应用
         items:
@@ -382,7 +382,7 @@ items:
                 href: api/user-list-joinedteams.md
               - name: 列出隶属于
                 href: api/user-list-memberof.md
-              - name: 列出其可传递成员
+              - name: 列出传递成员
                 href: api/user-list-transitivememberof.md
           - name: 见解
             items:
@@ -412,7 +412,7 @@ items:
                 href: api/user-post-mailfolders.md
               - name: 创建邮件
                 href: api/user-post-messages.md
-              - name: 创建邮件规则
+              - name: 创建消息规则
                 href: api/mailfolder-post-messagerules.md
               - name: 创建替代
                 href: api/inferenceclassification-post-overrides.md
@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -492,11 +492,11 @@ items:
             items:
               - name: 已安装应用
                 href: resources/teamsappinstallation.md
-              - name: 列出用户应用
+              - name: 列出用户的应用
                 href: api/userteamwork-list-installedapps.md
               - name: 为用户添加应用
                 href: api/userteamwork-post-installedapps.md
-              - name: 获取用户的已安装应用
+              - name: 获取为用户安装的应用
                 href: api/userteamwork-get-installedapps.md
               - name: 为用户升级已安装的应用
                 href: api/userteamwork-teamsappinstallation-upgrade.md
@@ -504,9 +504,9 @@ items:
                 href: api/userteamwork-delete-installedapps.md
               - name: 获取用户和应用之间的聊天
                 href: api/userscopeteamsappinstallation-get-chat.md
-              - name: 获取用户的聊天
+              - name: 获取用户聊天
                 href: api/chat-get.md
-              - name: 列出用户的聊天
+              - name: 列出用户聊天
                 href: api/chat-list.md
           - name: 待办任务
             items:
@@ -559,7 +559,7 @@ items:
                 href: api/group-delete-members.md
               - name: 列出隶属于
                 href: api/group-list-memberof.md
-              - name: 列出其可传递成员
+              - name: 列出传递成员
                 href: api/group-list-transitivememberof.md
               - name: List transitive members
                 href: api/group-list-transitivemembers.md
@@ -833,7 +833,7 @@ items:
                     href: api/applicationtemplate-list.md
                   - name: 获取
                     href: api/applicationtemplate-get.md
-                  - name: 实例化
+                  - name: 实例
                     href: api/applicationtemplate-instantiate.md
               - name: 证书和密码
                 items:
@@ -894,7 +894,7 @@ items:
                 items:
                   - name: Set
                     href: api/application-setverifiedpublisher.md
-                  - name: Unset
+                  - name: 取消设置
                     href: api/application-unsetverifiedpublisher.md
           - name: 服务主体
             href: resources/serviceprincipal.md
@@ -926,9 +926,9 @@ items:
                     href: api/serviceprincipal-delete-approleassignments.md
                   - name: 分配给的列表
                     href: api/serviceprincipal-list-approleassignedto.md
-                  - name: Add assigned to
+                  - name: 添加分配到
                     href: api/serviceprincipal-post-approleassignedto.md
-                  - name: Remove assigned to
+                  - name: 删除分配给
                     href: api/serviceprincipal-delete-approleassignedto.md
               - name: 证书和密码
                 items:
@@ -961,7 +961,7 @@ items:
                 items:
                   - name: 列出隶属于
                     href: api/serviceprincipal-list-memberof.md
-                  - name: 列出其可传递成员
+                  - name: 列出传递成员
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: 检查成员组
                     href: api/directoryobject-checkmembergroups.md
@@ -1017,15 +1017,15 @@ items:
                         items:
                           - name: 列表包括
                             href: api/permissiongrantpolicy-list-includes.md
-                          - name: Create in includes
+                          - name: 在包含中创建
                             href: api/permissiongrantpolicy-post-includes.md
-                          - name: 从包含中删除
+                          - name: 从包括中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除
+                          - name: 列表排除项
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: 在排除中创建
                             href: api/permissiongrantpolicy-post-excludes.md
-                          - name: 从排除项中删除
+                          - name: 从排除中删除
                             href: api/permissiongrantpolicy-delete-excludes.md
                   - name: 令牌颁发策略
                     href: resources/tokenissuancepolicy.md
@@ -1085,7 +1085,7 @@ items:
                 href: api/event-list-attachments.md
               - name: 添加附件
                 href: api/event-post-attachments.md
-              - name: 创建会话以附加大文件
+              - name: 创建用于附加大型文件的会话
                 href: api/attachment-createuploadsession.md
               - name: 创建开放扩展
                 href: api/opentypeextension-post-opentypeextension.md
@@ -1135,7 +1135,7 @@ items:
                 href: resources/itemattachment.md
               - name: 引用附件类型
                 href: resources/referenceattachment.md
-              - name: 创建会话以附加大文件
+              - name: 创建用于附加大型文件的会话
                 href: api/attachment-createuploadsession.md
               - name: 获取附件
                 href: api/attachment-get.md
@@ -1239,9 +1239,9 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: 获取多值属性
                     href: api/multivaluelegacyextendedproperty-get.md
-          - name: Place
+          - name: 地方
             items:
-              - name: Place
+              - name: 地方
                 href: resources/place.md
               - name: 会议室类型
                 href: resources/room.md
@@ -1320,19 +1320,19 @@ items:
                     href: api/participant-mute.md
                   - name: 邀请参与者
                     href: api/participant-invite.md
-                  - name: 开始保持音乐
+                  - name: 开始保留音乐
                     href: api/participant-startholdmusic.md
-                  - name: 停止保持音乐
+                  - name: 停止按住音乐
                     href: api/participant-stopholdmusic.md
               - name: 更改屏幕共享角色
                 href: api/call-changescreensharingrole.md
-              - name: 取消应用程序静音
+              - name: 取消调用应用程序
                 href: api/call-unmute.md
               - name: 将应用程序静音
                 href: api/call-mute.md
               - name: 更新录制状态
                 href: api/call-updaterecordingstatus.md
-              - name: 记录电话会议设备质量数据
+              - name: 日志电话会议设备质量数据
                 href: api/call-logteleconferencedevicequality.md
           - name: 通话记录
             items:
@@ -1350,17 +1350,17 @@ items:
                     href: resources/callrecords-session.md
                   - name: 列表会话
                     href: api/callrecords-session-list.md
-              - name: PSTN 呼叫
+              - name: PSTN 调用
                 items:
                   - name: PSTN 日志行
                     href: resources/callrecords-pstncalllogrow.md
-                  - name: 列出 PSTN 呼叫
+                  - name: 列出 PSTN 调用
                     href: api/callrecords-callrecord-getpstncalls.md
-              - name: 直接路由呼叫
+              - name: 直接路由调用
                 items:
-                  - name: 直接传送日志行
+                  - name: 直接路由日志行
                     href: resources/callrecords-directroutinglogrow.md
-                  - name: 列出直接路由呼叫
+                  - name: 列出直接路由调用
                     href: api/callrecords-callrecord-getdirectroutingcalls.md
           - name: 联机会议
             items:
@@ -1377,14 +1377,14 @@ items:
                     href: api/onlinemeeting-delete.md
                   - name: 创建或获取
                     href: api/onlinemeeting-createorget.md
-              - name: 考勤报告
+              - name: 出席情况报告
                 href: resources/meetingAttendanceReport.md
                 items:
                   - name: 列表
                     href: api/meetingattendancereport-list.md
                   - name: 获取
                     href: api/meetingattendancereport-get.md
-                  - name: 考勤记录
+                  - name: 出席率记录
                     href: resources/attendancerecord.md
                     items:
                       - name: 列表
@@ -1394,7 +1394,7 @@ items:
             items:
               - name: 获取状态
                 href: api/presence-get.md
-              - name: 获取多个用户状态
+              - name: 获取多个用户的状态
                 href: api/cloudcommunications-getpresencesbyuserid.md
               - name: 设置状态
                 href: api/presence-setpresence.md
@@ -1420,11 +1420,11 @@ items:
                     href: api/subjectrightsrequest-get.md
                   - name: 更新
                     href: api/subjectrightsrequest-update.md
-                  - name: 获取最终报告
+                  - name: 获取最终报表
                     href: api/subjectrightsrequest-getfinalreport.md
                   - name: 获取最终附件
                     href: api/subjectrightsrequest-getfinalattachment.md
-                  - name: 列出注释
+                  - name: 列出备注
                     href: api/subjectrightsrequest-list-notes.md
                   - name: 创建注释
                     href: api/subjectrightsrequest-post-notes.md
@@ -1587,7 +1587,7 @@ items:
                     href: api/printershare-post-jobs.md
                   - name: 列出打印机的作业
                     href: api/printer-list-jobs.md
-                  - name: 列出打印机共享作业
+                  - name: 列出打印机共享的作业
                     href: api/printershare-list-jobs.md
                   - name: 获取
                     href: api/printjob-get.md
@@ -1635,7 +1635,7 @@ items:
                     href: api/printer-post-tasktriggers.md
                   - name: 删除任务触发器
                     href: api/printer-delete-tasktrigger.md
-                  - name: 还原出厂默认设置
+                  - name: 还原工厂默认值
                     href: api/printer-restorefactorydefaults.md
               - name: 打印机共享
                 href: resources/printershare.md
@@ -1687,7 +1687,7 @@ items:
                     items:
                       - name: 获取
                         href: api/printusagebyprinter-get.md
-                      - name: 列出打印机的存档打印作业
+                      - name: 列出打印机存档的打印作业
                         href: api/reports-getprinterarchivedprintjobs.md
                       - name: 按打印机列出每日报表
                         href: api/reportroot-list-dailyprintusagebyprinter.md
@@ -1697,13 +1697,13 @@ items:
                     items:
                       - name: 获取
                         href: api/printusagebyuser-get.md
-                      - name: 列出用户的存档打印作业
+                      - name: 列出用户存档的打印作业
                         href: api/reports-getuserarchivedprintjobs.md
                       - name: 列出组的存档打印作业
                         href: api/reports-getgrouparchivedprintjobs.md
-                      - name: 按用户列出每日报告
+                      - name: 按用户列出每日报表
                         href: api/reportroot-list-dailyprintusagebyuser.md
-                      - name: 按用户列出每月报告
+                      - name: 按用户列出每月报表
                         href: api/reportroot-list-monthlyprintusagebyuser.md
               - name: 打印服务
                 href: resources/printservice.md
@@ -2205,7 +2205,7 @@ items:
                         href: api/intune-apps-win32lobapp-update.md
                   - name: Win32 LOB 应用分配设置
                     href: resources/intune-apps-win32lobappassignmentsettings.md
-                  - name: Win32 LOB 应用传递优化优先级
+                  - name: Win32 LOB 应用交付优化优先级
                     href: resources/intune-apps-win32lobappdeliveryoptimizationpriority.md
                   - name: Win32 LOB 应用文件系统操作类型
                     href: resources/intune-apps-win32lobappfilesystemoperationtype.md
@@ -2219,9 +2219,9 @@ items:
                     href: resources/intune-apps-win32lobappmsipackagetype.md
                   - name: Win32 LOB 应用通知
                     href: resources/intune-apps-win32lobappnotification.md
-                  - name: Win32 LOB 应用 Power Shell 脚本规则
+                  - name: Win32 LOB 应用 Power shell 脚本规则
                     href: resources/intune-apps-win32lobapppowershellscriptrule.md
-                  - name: Win32 LOB 应用 Power Shell 脚本规则操作类型
+                  - name: Win32 LOB 应用 Power shell 脚本规则操作类型
                     href: resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md
                   - name: Win32 LOB 应用产品代码规则
                     href: resources/intune-apps-win32lobappproductcoderule.md
@@ -3509,7 +3509,7 @@ items:
                         href: api/intune-troubleshooting-reportroot-update.md
                   - name: 重置密码操作结果
                     href: resources/intune-devices-resetpasscodeactionresult.md
-                  - name: Tuple_2操作type_collection_1执行顺序
+                  - name: type_操作collection_1执行Tuple_2
                     href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                   - name: 更新 Windows 设备帐户操作参数
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
@@ -4196,11 +4196,11 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: 所有许可的用户分配目标
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Android 企业始终使用 VPN 程序包类型
+                  - name: Android 企业始终在 VPN 包类型上
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: 符合性状态
                     href: resources/intune-shared-compliancestatus.md
-                  - name: 配置管理器集合分配目标
+                  - name: Configuration Manager 集合分配目标
                     href: resources/intune-shared-configurationmanagercollectionassignmenttarget.md
                   - name: 设备和应用管理分配目标
                     href: resources/intune-shared-deviceandappmanagementassignmenttarget.md
@@ -4247,12 +4247,12 @@ items:
             items:
               - name: 概述
                 href: resources/service-communications-api-overview.md
-              - name: 服务通知
+              - name: 服务公告
                 href: resources/serviceannouncement.md
               - name: 服务运行状况
                 href: resources/servicehealth.md
                 items:
-                  - name: 列表运行状况概述
+                  - name: 列出运行状况概述
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: 获取服务运行状况
                     href: api/servicehealth-get.md
@@ -4263,7 +4263,7 @@ items:
                     href: api/serviceannouncement-list-issues.md
                   - name: 获取问题
                     href: api/servicehealthissue-get.md
-                  - name: 获取事后评审报告
+                  - name: 获取事件后审阅报告
                     href: api/servicehealthissue-incidentreport.md
               - name: 服务更新消息
                 href: resources/serviceupdatemessage.md
@@ -4278,15 +4278,15 @@ items:
                     href: api/serviceupdatemessage-markunread.md
                   - name: 存档状态
                     href: api/serviceupdatemessage-archive.md
-                  - name: 未存档状态
+                  - name: 无政府状态
                     href: api/serviceupdatemessage-unarchive.md
-                  - name: 标记收藏夹状态
+                  - name: 标记收藏状态
                     href: api/serviceupdatemessage-favorite.md
                   - name: 删除收藏夹状态
                     href: api/serviceupdatemessage-unfavorite.md
-                  - name: 列出邮件附件
+                  - name: 列出消息附件
                     href: api/serviceupdatemessage-list-attachments.md
-              - name: 服务通知附件
+              - name: 服务公告附件
                 href: resources/serviceannouncementattachment.md
                 items:
                   - name: 获取
@@ -4308,7 +4308,7 @@ items:
                 href: api/educationschool-update.md
               - name: 删除学校
                 href: api/educationschool-delete.md
-              - name: 获取对学校所做的更改
+              - name: 获取对学校的更改
                 href: api/educationschool-delta.md
               - name: 列出课程
                 href: api/educationschool-list-classes.md
@@ -4349,13 +4349,13 @@ items:
                 href: api/educationclass-post-members.md
               - name: 删除成员
                 href: api/educationclass-delete-members.md
-              - name: 列出课程分配
+              - name: 列出类分配
                 href: api/educationclass-list-assignments.md
               - name: 创建作业
                 href: api/educationclass-post-assignment.md
               - name: 获取分配设置
                 href: api/educationassignmentsettings-get.md
-              - name: 获取工作分配默认值
+              - name: 获取分配默认值
                 href: api/educationassignmentdefaults-get.md
               - name: 列出类别
                 href: api/educationclass-list-categories.md
@@ -4374,13 +4374,13 @@ items:
                 href: api/educationuser-delete.md
               - name: 获取目录用户
                 href: api/educationuser-get-user.md
-              - name: 获取用户更改
+              - name: 获取对用户的更改
                 href: api/educationuser-delta.md
               - name: 列出课程
                 href: api/educationuser-list-classes.md
-              - name: List rubrics
+              - name: 列出 rubrics
                 href: api/educationuser-list-rubrics.md
-              - name: 列出课程
+              - name: 列出已教的类
                 href: api/educationuser-list-taughtclasses.md
               - name: 创建 rubric
                 href: api/educationuser-post-rubrics.md
@@ -4411,7 +4411,7 @@ items:
                 href: api/educationassignmentresource-delete.md
               - name: 列出作业提交
                 href: api/educationassignment-list-submissions.md
-              - name: 获取工作分配附加的分项
+              - name: 获取附加到分配的 rubric
                 href: api/educationassignment-get-rubric.md
               - name: 列出类别
                 href: api/educationassignment-list-categories.md
@@ -4419,18 +4419,18 @@ items:
                 href: api/educationassignment-post-categories.md
               - name: 删除类别
                 href: api/educationassignment-remove-category.md
-              - name: 将重度附加到工作分配
+              - name: 将 rubric 附加到分配
                 href: api/educationassignment-put-rubric.md
-              - name: 删除工作分配中的分项
+              - name: 从分配中删除 rubric
                 href: api/educationassignment-delete-rubric.md
-          - name: 工作分配设置
+          - name: 分配设置
             href: resources/educationassignmentsettings.md
             items:
               - name: 获取
                 href: api/educationassignmentsettings-get.md
               - name: 更新
                 href: api/educationassignmentsettings-update.md
-          - name: 工作分配默认值
+          - name: 分配默认值
             href: resources/educationassignmentdefaults.md
             items:
               - name: 获取
@@ -4446,7 +4446,7 @@ items:
                 href: api/educationcategory-get.md
               - name: 删除
                 href: api/educationcategory-delete.md
-          - name: Rubric
+          - name: 量规
             href: resources/educationrubric.md
             items:
               - name: 创建
@@ -4492,7 +4492,7 @@ items:
                 href: resources/educationoutcome.md
               - name: 反馈结果类型
                 href: resources/educationfeedbackoutcome.md
-              - name: Points 结果类型
+              - name: 点结果类型
                 href: resources/educationpointsoutcome.md
               - name: Rubric 结果类型
                 href: resources/educationrubricoutcome.md
@@ -4567,7 +4567,7 @@ items:
                 href: api/driveitem-update.md
               - name: 删除项目
                 href: api/driveitem-delete.md
-              - name: 还原项目
+              - name: 还原项
                 href: api/driveitem-restore.md
               - name: 移动项目
                 href: api/driveitem-move.md
@@ -4595,7 +4595,7 @@ items:
                 href: api/driveitem-preview.md
               - name: 获取项分析
                 href: api/itemanalytics-get.md
-          - name: 捆绑包
+          - name: 束
             href: resources/bundle.md
             items:
               - name: 列出
@@ -4608,7 +4608,7 @@ items:
                 href: api/bundle-update.md
               - name: 添加项
                 href: api/bundle-additem.md
-              - name: 删除项目
+              - name: 删除项
                 href: api/bundle-removeitem.md
           - name: 权限
             href: resources/permission.md
@@ -4640,9 +4640,9 @@ items:
                 href: resources/administrativeunit.md
                 items:
                   - name: 列出
-                    href: api/administrativeunit-list.md
+                    href: api/directory-list-administrativeunits.md
                   - name: 创建
-                    href: api/administrativeunit-post-administrativeunits.md
+                    href: api/directory-post-administrativeunits.md
                   - name: 获取
                     href: api/administrativeunit-get.md
                   - name: 更新
@@ -4717,9 +4717,9 @@ items:
                     href: api/device-post-registeredowners.md
                   - name: 创建注册的用户
                     href: api/device-post-registeredusers.md
-                  - name: 删除注册所有者
+                  - name: 删除已注册的所有者
                     href: api/device-delete-registeredowners.md
-                  - name: 删除注册用户
+                  - name: 删除已注册的用户
                     href: api/device-delete-registeredusers.md
                   - name: 列出设备组
                     href: api/device-list-memberof.md
@@ -4763,7 +4763,7 @@ items:
                     href: api/directoryrole-post-members.md
                   - name: 删除成员
                     href: api/directoryrole-delete-member.md
-                  - name: 列出作用域内的成员
+                  - name: 列出作用域成员
                     href: api/directoryrole-list-scopedmembers.md
                   - name: 获取 Delta
                     href: api/directoryrole-delta.md
@@ -5002,7 +5002,7 @@ items:
                         href: api/riskyuser-list.md
                       - name: 获取有风险的用户
                         href: api/riskyuser-get.md
-                      - name: 列表历史记录
+                      - name: 列出历史记录
                         href: api/riskyuser-list-history.md
                       - name: 获取历史记录
                         href: api/riskyuser-get-riskyuserhistoryitem.md
@@ -5012,13 +5012,13 @@ items:
                         href: api/riskyuser-dismiss.md
               - name: 标识提供程序
                 items:
-                  - name: 标识提供程序基础
+                  - name: 标识提供者基础
                     href: resources/identityproviderbase.md
-                  - name: 内置标识提供程序
+                  - name: 内置标识提供者
                     href: resources/builtinidentityprovider.md
-                  - name: 社会标识提供程序
+                  - name: 社交标识提供者
                     href: resources/socialidentityprovider.md
-                  - name: Apple 标识提供程序
+                  - name: Apple 标识提供者
                     href: resources/applemanagedidentityprovider.md
                   - name: 列出
                     href: api/identitycontainer-list-identityproviders.md
@@ -5032,9 +5032,9 @@ items:
                     href: api/identityproviderbase-delete.md
                   - name: 列出可用的提供程序类型
                     href: api/identityproviderbase-availableprovidertypes.md
-              - name: '已 (标识提供程序) '
+              - name: '标识提供者 (已弃用) '
                 items:
-                  - name: 标识提供程序类型
+                  - name: 标识提供者类型
                     href: resources/identityprovider.md
                   - name: 列出
                     href: api/identityprovider-list.md
@@ -5060,7 +5060,7 @@ items:
                     href: api/organizationalbranding-get.md
                   - name: 更新
                     href: api/organizationalbranding-update.md
-                  - name: 品牌打造本地化
+                  - name: 品牌化本地化
                     href: resources/organizationalbrandinglocalization.md
                     items:
                       - name: 列出
@@ -5220,7 +5220,7 @@ items:
                         href: api/tokenlifetimepolicy-delete.md
                       - name: 列出已应用到应用程序的策略
                         href: api/tokenlifetimepolicy-list-appliesto.md
-                  - name: 安全默认值策略
+                  - name: 安全默认策略
                     href: resources/identitysecuritydefaultsenforcementpolicy.md
                     items:
                       - name: 获取
@@ -5289,9 +5289,9 @@ items:
                         href: api/userflowlanguageconfiguration-get.md
                       - name: 列出默认页面
                         href: api/userflowlanguageconfiguration-list-defaultpages.md
-                      - name: 列表替代页面
+                      - name: 列表重写页面
                         href: api/userflowlanguageconfiguration-list-overridespages.md
-                      - name: 用户流语言页面
+                      - name: 用户流语言页
                         href: resources/userflowlanguagepage.md
                       - name: 获取
                         href: api/userflowlanguagepage-get.md
@@ -5315,7 +5315,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-overview.md
@@ -5522,6 +5522,19 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: 更新
                         href: api/entitlementmanagementsettings-update.md
+                  - name: 访问包分配策略
+                    href: resources/accesspackageassignmentpolicy.md
+                    items:
+                      - name: 列出
+                        href: api/entitlementmanagement-list-assignmentpolicies.md
+                      - name: 创建
+                        href: api/entitlementmanagement-post-assignmentpolicies.md
+                      - name: 获取
+                        href: api/accesspackageassignmentpolicy-get.md
+                      - name: 更新
+                        href: api/accesspackageassignmentpolicy-update.md
+                      - name: 删除
+                        href: api/accesspackageassignmentpolicy-delete.md
               - name: 使用条款
                 items:
                   - name: 协议
@@ -5539,7 +5552,7 @@ items:
                   - name: 协议接受
                     href: resources/agreementacceptance.md
                     items:
-                      - name: 列出接受
+                      - name: 列出接受情况
                         href: api/user-list-agreementacceptances.md
                       - name: 列出接受状态
                         href: api/agreement-list-acceptances.md
@@ -5599,7 +5612,7 @@ items:
                 href: api/message-list-attachments.md
               - name: 添加附件
                 href: api/message-post-attachments.md
-              - name: 创建会话以附加大文件
+              - name: 创建用于附加大型文件的会话
                 href: api/attachment-createuploadsession.md
               - name: 创建开放扩展
                 href: api/opentypeextension-post-opentypeextension.md
@@ -5614,7 +5627,7 @@ items:
                 href: resources/itemattachment.md
               - name: 引用附件类型
                 href: resources/referenceattachment.md
-              - name: 创建会话以附加大文件
+              - name: 创建用于附加大型文件的会话
                 href: api/attachment-createuploadsession.md
               - name: 获取附件
                 href: api/attachment-get.md
@@ -5949,9 +5962,9 @@ items:
               - name: 预配
                 href: resources/provisioningobjectsummary.md
                 items:
-                  - name: 列表预配
+                  - name: 列出预配
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365使用率报告
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -6216,7 +6229,7 @@ items:
                     href: api/externalconnectors-externalgroup-update.md
                   - name: 删除
                     href: api/externalconnectors-externalgroup-delete.md
-              - name: 外部组的成员
+              - name: 外部组成员
                 items:
                   - name: 标识
                     href: resources/externalconnectors-identity.md
@@ -6316,7 +6329,7 @@ items:
                 href: api/site-list-subsites.md
               - name: 搜索网站
                 href: api/site-search.md
-              - name: Permissions
+              - name: 权限
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -6347,7 +6360,7 @@ items:
                 href: api/list-post-columns.md
               - name: 列表内容类型
                 href: api/list-list-contenttypes.md
-              - name: 添加内容类型副本
+              - name: 添加内容类型的副本
                 href: api/contenttype-addcopy.md
           - name: 列数
             items:
@@ -6377,7 +6390,7 @@ items:
                 href: api/contenttype-unpublish.md
               - name: 将副本添加到列表
                 href: api/contenttype-addcopy.md
-              - name: 与中心网站关联
+              - name: 与中心站点关联
                 href: api/contenttype-associatewithhubsites.md
               - name: 复制到默认内容位置
                 href: api/contenttype-copytodefaultcontentlocation.md
@@ -6410,7 +6423,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 列出
@@ -6575,11 +6588,11 @@ items:
                 href: api/team-clone.md
               - name: 列出你的团队
                 href: api/user-list-joinedteams.md
-              - name: 获取主要频道
+              - name: 获取主通道
                 href: api/team-get-primarychannel.md
               - name: 列出所有团队
                 href: /graph/teams-list-all-teams?context=graph/api/1.0
-              - name: 团队完整迁移
+              - name: 团队的完整迁移
                 href: api/team-completemigration.md
           - name: 组（团队）
             href: resources/group.md
@@ -6641,13 +6654,13 @@ items:
                 href: api/channel-delete.md
               - name: 添加成员
                 href: api/channel-post-members.md
-              - name: 频道完整迁移
+              - name: 通道的完整迁移
                 href: api/channel-completemigration.md
               - name: 获取通道消息
                 href: api/chatmessage-get.md
               - name: 在所有通道中获取消息
                 href: api/channel-getallmessages.md
-              - name: 获取频道消息 delta
+              - name: 获取频道消息增量
                 href: api/chatmessage-delta.md
               - name: 获取文件文件夹
                 href: api/channel-get-filesfolder.md
@@ -6661,7 +6674,7 @@ items:
                 href: api/channel-list-members.md
               - name: 列出消息回复
                 href: api/chatmessage-list-replies.md
-              - name: 设置电子邮件地址
+              - name: 预配电子邮件地址
                 href: api/channel-provisionemail.md
               - name: 删除电子邮件地址
                 href: api/channel-removeemail.md
@@ -6696,7 +6709,7 @@ items:
                 href: api/chat-delete-members.md
               - name: 列出聊天中的消息
                 href: api/chat-list-messages.md
-              - name: 获取所有聊天的消息
+              - name: 在所有聊天中获取消息
                 href: api/chats-getallmessages.md
               - name: 获取聊天中的消息
                 href: api/chatmessage-get.md
@@ -6709,17 +6722,17 @@ items:
             items:
               - name: 列出频道消息
                 href: api/channel-list-messages.md
-              - name: 列出频道消息 delta
+              - name: 列出频道消息增量
                 href: api/chatmessage-delta.md
               - name: 列出消息回复
                 href: api/chatmessage-list-replies.md
-              - name: 获取频道或聊天中的消息
+              - name: 在频道或聊天中获取消息
                 href: api/chatmessage-get.md
               - name: 获取消息回复
                 href: api/chatmessage-get.md
               - name: 发送消息
                 href: api/chatmessage-post.md
-              - name: 向邮件发送回复
+              - name: 发送对邮件的答复
                 href: api/chatmessage-post-replies.md
               - name: 更新邮件
                 href: api/chatmessage-update.md
@@ -6727,13 +6740,13 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: 在所有通道中获取消息
                 href: api/channel-getallmessages.md
-              - name: 获取所有聊天的消息
+              - name: 在所有聊天中获取消息
                 href: api/chats-getallmessages.md
               - name: 获取托管内容
                 href: api/chatmessagehostedcontent-get.md
           - name: 应用
             items:
-              - name: 目录中的应用程序
+              - name: 目录中的应用
                 href: resources/teamsapp.md
               - name: 向目录发布应用
                 href: api/teamsapp-publish.md
@@ -6761,7 +6774,7 @@ items:
                     href: api/team-delete-installedapps.md
               - name: 用户个人范围内的应用
                 items:
-                  - name: 列出用户应用
+                  - name: 列出用户的应用
                     href: api/userteamwork-list-installedapps.md
                   - name: 为用户添加应用
                     href: api/userteamwork-post-installedapps.md
@@ -6810,11 +6823,11 @@ items:
                     href: api/channel-delete-tabs.md
               - name: 聊天中的选项卡
                 items:
-                  - name: 列出聊天中的选项卡
+                  - name: 聊天中的列表选项卡
                     href: api/chat-list-tabs.md
                   - name: 向聊天添加选项卡
                     href: api/chat-post-tabs.md
-                  - name: 在聊天中获取选项卡
+                  - name: 获取聊天中的选项卡
                     href: api/chat-get-tabs.md
                   - name: 聊天中的"更新"选项卡
                     href: api/chat-patch-tabs.md
@@ -6891,7 +6904,7 @@ items:
                     href: api/offershiftrequest-list.md
                   - name: 批准
                     href: api/offershiftrequest-approve.md
-                  - name: 拒绝
+                  - name: 下降
                     href: api/offershiftrequest-decline.md
               - name: 打开班次
                 href: resources/openshift.md
@@ -6917,9 +6930,9 @@ items:
                     href: api/openshiftchangerequest-get.md
                   - name: 批准
                     href: api/openshiftchangerequest-approve.md
-                  - name: 拒绝
+                  - name: 下降
                     href: api/openshiftchangerequest-decline.md
-              - name: Shift 首选项
+              - name: 班次首选项
                 href: resources/shiftpreferences.md
                 items:
                   - name: 获取
@@ -6937,7 +6950,7 @@ items:
                     href: api/swapshiftschangerequest-get.md
                   - name: 批准
                     href: api/swapshiftschangerequest-approve.md
-                  - name: 拒绝
+                  - name: 下降
                     href: api/swapshiftschangerequest-decline.md
               - name: 休假
                 href: resources/timeoff.md
@@ -6965,7 +6978,7 @@ items:
                     href: api/timeoffreason-put.md
                   - name: 删除
                     href: api/timeoffreason-delete.md
-              - name: 请假请求
+              - name: 休假请求
                 href: resources/timeoffrequest.md
                 items:
                   - name: 获取
@@ -6974,7 +6987,7 @@ items:
                     href: api/timeoffrequest-delete.md
                   - name: 批准
                     href: api/timeoffrequest-approve.md
-                  - name: 拒绝
+                  - name: 下降
                     href: api/timeoffrequest-decline.md
               - name: 员工集成
                 href: resources/workforceintegration.md
@@ -7089,7 +7102,7 @@ items:
                 href: api/workbook-list-worksheets.md
               - name: 列出名称
                 href: api/workbook-list-names.md
-              - name: '获取异步 (操作) '
+              - name: 获取异步)  (操作结果
                 href: api/workbook-tablerowoperationresult.md
           - name: 工作簿应用程序
             href: resources/workbookapplication.md

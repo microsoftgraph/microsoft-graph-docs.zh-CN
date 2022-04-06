@@ -1,16 +1,16 @@
 ---
 title: educationFeedbackOutcome 资源类型
 description: 以文本形式提供反馈的 educationOutcome。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1c50776f6b8dde27d8f937e8b7ee2028ce1cfca1
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 325994248fc72abbf96ec1c3113699f05ba3a75e
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153641"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684702"
 ---
 # <a name="educationfeedbackoutcome-resource-type"></a>educationFeedbackOutcome 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "50153641"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示对 [文本形式的 educationOutcome](educationoutcome.md) 对象的反馈。 
+表示以文本形式对 [educationOutcome](educationoutcome.md) 对象的反馈。 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -30,8 +30,9 @@ ms.locfileid: "50153641"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|反馈|[educationFeedback](educationfeedback.md)|教师向学生提供的反馈。|
-|publishedFeedback|[educationFeedback](educationfeedback.md)|在将成绩发布给学生时进行的反馈属性的副本。|
+|id|String|educationFeedbackOutcome 的唯一标识符。|
+|反馈|[educationFeedback](educationfeedback.md)|老师给学生的书面反馈。|
+|publishedFeedback|[educationFeedback](educationfeedback.md)|向学生发布成绩时的反馈属性的副本。|
 
 ## <a name="relationships"></a>关系
 
@@ -52,6 +53,7 @@ ms.locfileid: "50153641"
 
 ```json
 {
+  "id": "String (identifier)",
   "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
   "publishedFeedback": {"@odata.type": "microsoft.graph.educationFeedback"}
 }

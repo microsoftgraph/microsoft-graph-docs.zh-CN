@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 090bce11ea6fea4dc0ed4fe88f2e7b05f0bc3389
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: e498f718185ecf0497063c5cdf6f1bfa35e86c3d
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878874"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607468"
 ---
 # <a name="participant-invite"></a>participant： invite
 
@@ -24,14 +24,14 @@ ms.locfileid: "62878874"
 
 >**注意：** 仅支持组呼叫在一个请求中邀请多个参与者。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                |
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | Calls.InitiateGroupCalls.All                               |
+| Application     | Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/participants/invite
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合| 要邀请的参与者。|
-|clientContext|字符串|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
+|clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回响应 `200 OK` 代码和位置标头，该标头具有为此请求创建的 [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 的 URI。 响应正文包含创建的 [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 。

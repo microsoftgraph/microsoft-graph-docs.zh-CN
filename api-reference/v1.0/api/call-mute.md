@@ -1,16 +1,16 @@
 ---
 title: call： mute
 description: 允许应用程序自行静音。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4bec1525eff7ab4223f96522d674d4ab24f7be02
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 21284fb25d2431b153ad986962f078635070003e
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348697"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607839"
 ---
 # <a name="call-mute"></a>call： mute
 
@@ -24,14 +24,16 @@ ms.locfileid: "62348697"
 
 > **注意：** 此方法仅支持组调用。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                               |
 | 委派（个人 Microsoft 帐户） | 不支持。                               |
-| 应用程序                            | 无。                                        |
+| Application                            | Calls.Initiate.All、Calls.AccessMedia.All |
+
+> **注意：** 创建调用时检查权限;调用此 API 时，不会进行其他权限检查。 Calls.AccessMedia.All 仅对于使用应用托管媒体的呼叫是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +50,7 @@ POST /communications/calls/{id}/mute
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 

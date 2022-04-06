@@ -1,24 +1,24 @@
 ---
-title: 更新频道中的成员
+title: 在通道中更新成员
 description: 更新频道中成员的角色。
 author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6ac62c78b947354e2a9321f693fb7521ebb16be6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 07f5c350d80c0db470ff614576967f0d120fb335
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131534"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684569"
 ---
-# <a name="update-member-in-channel"></a>更新频道中的成员
+# <a name="update-member-in-channel"></a>在通道中更新成员
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新频道 [中 conversationMember](../resources/conversationmember.md) [的角色](../resources/channel.md)。 此操作仅允许 **membershipType** 值为 的通道 `private` 。
+更新[频道](../resources/channel.md)中 [conversationMember](../resources/conversationmember.md) 的角色。 此操作仅适用于 **成员身份类型** 值为或 `shared`. 的`private`通道。
 
 ## <a name="permissions"></a>权限
 
@@ -47,19 +47,19 @@ PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 在请求正文中，提供要更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|角色|string 集合|用户的角色。 必须为空 `owner` 。 来宾用户将自动标记 `guest` 角色，并且此值无法更新。 |
+|角色|string 集合|用户的角色。 必须为 `owner` 或为空。 来宾用户会自动使用 `guest` 角色进行标记，并且无法更新此值。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [conversationMember](../resources/conversationmember.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [conversationMember](../resources/conversationmember.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面是一个请求，要求将角色 `owner` 应用于频道的现有成员。
+下面是向通道的现有成员应用 `owner` 角色的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -123,13 +123,14 @@ Content-type: application/json
   "roles": ["owner"],
   "displayName": "John Doe",
   "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-  "email": null
+  "email": null,
+  "tenantId": "f2eea028-3898-4e55-b611-2e2d960f7512"
 }
 ```
 
 ## <a name="see-also"></a>另请参阅
 
-- [更新团队中成员的角色](team-update-members.md)
+- [更新成员在团队中的角色](team-update-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

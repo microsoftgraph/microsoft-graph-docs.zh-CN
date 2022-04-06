@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a73b872ce303a16f5363e5ef77c54773907399a4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f8f7728847b303f90658f9cb67bc193e3d0707ab
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346210"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607916"
 ---
 # <a name="participant-startholdmusic"></a>participant： startHoldMusic
 
@@ -20,16 +20,14 @@ ms.locfileid: "62346210"
  
 > **注意：** 在任何给定时间只能将一个参与者置于保留状态。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                               |
 | 委派（个人 Microsoft 帐户） | 不支持。                               |
-| 应用程序                            | 无。 |
-
-> **注意：** 当应用程序加入或尝试启动调用时，将执行权限检查。 调用 时，不会执行其他 `startHoldMusic` 权限检查。
+| Application                            | Calls.JoinGroupCallsasGuest.All 或 Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +44,7 @@ POST /communications/calls/{id}/participants/{id}/startHoldMusic
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |customPrompt|microsoft.graph.mediaPrompt|可选。 参与者置于保持时将听到的音频提示。|
 |clientContext|String|可选。 唯一的客户端上下文字符串。 最多可包含 256 个字符。|

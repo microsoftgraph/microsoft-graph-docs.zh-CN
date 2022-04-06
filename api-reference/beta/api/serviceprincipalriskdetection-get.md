@@ -5,12 +5,12 @@ author: ebasseri
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: edb82f42138f81e8d49c923891736ba437d03cea
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 56daf049e52575bcfa0b0e665f956ff3ae7fb028
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337269"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509754"
 ---
 # <a name="get-serviceprincipalriskdetection"></a>获取 servicePrincipalRiskDetection
 命名空间：microsoft.graph
@@ -21,14 +21,14 @@ ms.locfileid: "63337269"
 
 >**注意：** 必须具有证书或 P2 Azure AD Premium P1才能使用 servicePrincipalRiskDetection API。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|IdentityRiskyServicePrincipal.Read.All、IdentityRiskyServicePrincipal.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityRiskEvent.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|IdentityRiskyServicePrincipal.Read.All、IdentityRiskyServicePrincipal.ReadWrite.All|
+|应用程序|IdentityRiskEvent.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

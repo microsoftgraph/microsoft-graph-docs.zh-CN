@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: fc73433538ddb1d2d30388026c486109a54f304f
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 71ab92b1659fcbc701376eb55dd5a249f6ee2377
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64630217"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671655"
 ---
 # <a name="list-registereddevices"></a>List registeredDevices
 
@@ -19,7 +19,7 @@ ms.locfileid: "64630217"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户的注册设备列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -33,7 +33,6 @@ ms.locfileid: "64630217"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/registeredDevices
 GET /users/{id | userPrincipalName}/registeredDevices
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数

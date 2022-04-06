@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b9e18f3871c77c4380eaa9d1617d70f305dc0ad6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c8653c9d1054c05ef4f757b18f379789ea3ab0b6
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60995733"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63721934"
 ---
 # <a name="accessreviewscheduledefinition-filterbycurrentuser"></a>accessReviewScheduleDefinition：filterByCurrentUser
 命名空间：microsoft.graph
@@ -19,10 +19,7 @@ ms.locfileid: "60995733"
 
 返回 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象，其中调用用户是一个或多个 [accessReviewInstance](../resources/accessreviewinstance.md) 对象的审阅者。
 
->[!NOTE]
->此 API 的默认页面大小为 100 accessReviewScheduleDefinition 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
-
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -42,9 +39,11 @@ GET /identityGovernance/accessReviews/definitions/filterByCurrentUser(on='review
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` 、 `$filter` `$orderBy` 、 、 `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select`、 `$filter`、 `$orderBy`、 和 `$skip``$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+此 API 的默认页面大小为 100 **accessReviewScheduleDefinition** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -54,7 +53,7 @@ GET /identityGovernance/accessReviews/definitions/filterByCurrentUser(on='review
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 集合。
+如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 集合。
 
 ## <a name="examples"></a>示例
 返回调用用户是审阅者的所有审阅定义。
@@ -86,7 +85,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewscheduledefinition-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewscheduledefinition-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

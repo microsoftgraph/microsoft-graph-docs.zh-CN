@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: SharingInvitation 资源将与邀请相关的数据项分组到一个单一结构中。
+description: SharingInvitation 资源将邀请相关的数据项分组到一个结构中。
 ms.date: 09/10/2017
 title: SharingInvitation
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4c6a26e2acfdc4bca1eed34191ba78f333b5fc9f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db2214132dcbecdfb8b8689bdb3d5547a13be2ab
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997702"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723275"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "47997702"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**SharingInvitation**资源将与邀请相关的数据项分组到一个单一结构中。
+**SharingInvitation** 资源将邀请相关的数据项分组到一个结构中。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -44,19 +44,19 @@ ms.locfileid: "47997702"
 
 ## <a name="properties"></a>属性
 
-| 属性名  | 类型                          | 说明                                                                                                                   |
-|:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| email          | String                        | 为共享邀请的收件人提供的电子邮件地址。只读。                                          |
+| 属性       | 类型                          | 说明                                                                                                                   |
+| :------------- | :---------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| email          | String                        | 为共享邀请的收件人提供的电子邮件地址。只读。                                            |
 | invitedBy      | [identitySet](identityset.md) | 提供创建了此权限的邀请发送者的相关信息（如果信息可用）。只读。 |
 | signInRequired | Boolean                       | 如果 `true`，邀请接收者需要登录才能访问共享的项目。只读。                     |
 
-## <a name="remarks"></a>注解 
+## <a name="remarks"></a>注解
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -67,5 +67,3 @@ ms.locfileid: "47997702"
   "suppressions": []
 }
 -->
-
-

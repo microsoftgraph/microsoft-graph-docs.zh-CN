@@ -1,16 +1,16 @@
 ---
 title: educationPowerPointResource 资源类型
-description: 'EducationResource 的子类。 这是一种 PowerPoint 资源。 必须将 PowerPoint 文件上传到与 **fileResource** 目录关联的 '
-localization_priority: Normal
+description: 'educationResource 的子类。 这是一个PowerPoint资源。 PowerPoint文件必须上传到与 '
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e7dabc312e0e8db58624651436e8c04f742d51d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 63a26b1b136033bd52238b6b107f9a8068096602
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081704"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684954"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>educationPowerPointResource 资源类型
 
@@ -18,13 +18,18 @@ ms.locfileid: "48081704"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)的子类。 这是一种 PowerPoint 资源。 必须在与分配或提交相关联的 **fileResource** 目录中上载 PowerPoint 文件。
+[educationResource](educationresource.md) 的子类。 这是一个PowerPoint资源。 PowerPoint文件必须上传到与分配或提交关联 **的文件Resource** 目录中。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|fileUrl|字符串|文件在磁盘上的位置。|
+|fileUrl|String|文件在磁盘上的位置。|
+|createdBy|String|创建此对象的用户的显示名称。|
+|createdDateTime|DateTimeOffset|添加重索的日期时间。|
+|displayName|string|资源的显示名称。|
+|lastModifiedBy|[identitySet](identityset.md)|最后一个修改资源的用户。|
+|lastModifiedDateTime|DateTimeOffset|上次修改资源的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -40,7 +45,12 @@ ms.locfileid: "48081704"
 
 ```json
 {
-  "fileUrl": "String"
+  "fileUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

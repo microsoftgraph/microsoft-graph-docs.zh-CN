@@ -3,15 +3,15 @@ author: daspek
 description: itemActivity 上存在 VersionAction 资源指示活动导致要创建一个新版本。
 ms.date: 09/14/2017
 title: VersionAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 0f16858c8b62f327019d2523488827fa6b20dced
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0061e53ea03d2dbca8bb4c29d0fb88c1909b592a
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057739"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722648"
 ---
 # <a name="versionaction-resource-type"></a>VersionAction 资源类型
 
@@ -28,20 +28,20 @@ ms.locfileid: "48057739"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.versionAction"
+  "@type&quot;: &quot;microsoft.graph.versionAction"
 }-->
 
 ```json
 {
-  "newVersion": "string"
+  "newVersion&quot;: &quot;string"
 }
 ```
 
 ## <a name="properties"></a>属性
 
-| 属性名称 | 类型   | 说明
-|:--------------|:-------|:----------------------------------------------------
-| newVersion    | string | 此操作创建的新版本的名称。
+| 属性   | 类型   | 说明                                                  |
+| :--------- | :----- | :----------------------------------------------------------- |
+| newVersion | string | 此操作创建的新版本的名称。 |
 
 ## <a name="remarks"></a>注解
 
@@ -57,5 +57,3 @@ ms.locfileid: "48057739"
   "suppressions": []
 }
 -->
-
-

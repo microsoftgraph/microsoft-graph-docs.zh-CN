@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f8814d08273d9f779d0fd98f9cec9d2dd236bd66
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e39f46f70cb90967c32067b3ba7e402ccba6c703
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411893"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528150"
 ---
 ```go
 
@@ -15,11 +15,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewBaseTaskList()
 displayName := "Travel Plan"
 requestBody.SetDisplayName(&displayName)
+requestBody.SetAdditionalData(map[string]interface{}{
+    "@odata.type": "#microsoft.graph.taskList",
+}
 options := &msgraphsdk.BaseTaskListRequestBuilderPatchOptions{
     Body: requestBody,
 }
 baseTaskListId := "baseTaskList-id"
-result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).Patch(options)
+graphClient.Me().Tasks().ListsById(&baseTaskListId).Patch(options)
 
 
 ```

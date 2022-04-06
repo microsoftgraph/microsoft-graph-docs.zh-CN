@@ -1,16 +1,16 @@
 ---
 title: educationSubmission 资源类型
-description: 表示单个用户或 (组) 提交作业的资源，以及 (提交的结果（如成绩) 反馈）。
+description: 表示单个 (或组) 为分配提交的资源，以及 (的结果，例如与提交关联的成绩或反馈) 。
 author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5cb697eec89d681d7c24acbffd95740368f18f6d
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: 12618b5a852755f9c478896b6088aa1d6836a549
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61402968"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685059"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "61402968"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示单个用户或 (组) 为作业启用的资源，以及与提交 (的结果（如成绩 [](educationassignment.md)) 反馈 **报告）。**
+表示单个 (或组) 为 [分配](educationassignment.md) 而交 (的资源，以及与 **提交** 关联的成绩或反馈) 等结果。
 
-提交归工作分配 **所有**。 发布作业时将自动 **创建** 提交。 **提交** 拥有两个资源列表。 资源表示用户/组工作区，而提交的资源表示学生已主动启用的资源。  
+提交归 **分配** 所有。 发布 **分配** 时会自动创建提交。 该 **提交** 拥有两个资源列表。 资源表示用户/组工作区，而提交的资源表示学生主动上交的资源。  
 
-**status** 属性是只读的，并且对象通过操作在工作流中移动。 
+**状态** 属性为只读属性，对象通过操作在工作流中移动。 
 
-如果尚未对 **educationSubmission** 资源调用 [setUpResourcesFolder，](../api/educationsubmission-setupResourcesFolder.md)**则 resourcesFolderUrl** 属性为 `null` 。
+如果未对 **educationSubmission** 资源调用 [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md)，则 **resourcesFolderUrl** 属性为 `null`。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -34,25 +34,26 @@ ms.locfileid: "61402968"
 |[列出资源](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md) 集合| 获取 **educationSubmissionResource** 对象集合。|
 |[列出 submittedResources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) 集合| 获取 **educationSubmissionResource** 对象集合。|
 |[列出结果](../api/educationsubmission-list-outcomes.md) |[educationOutcome](educationoutcome.md) 集合| 获取 **educationOutcome** 对象集合。|
-|[return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|教师使用返回来指示可以向学生显示成绩/反馈。|
-|[reassign](../api/educationsubmission-reassign.md)|[educationSubmission](educationsubmission.md)|将提交重新分配给学生并反馈评价。|
-|[设置提交特定资源文件夹](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | 在预定义SharePoint位置 (创建一个) 文件夹，以将文件作为提交资源上载。 |
-|[提交](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|学生使用 submit 提交来提交 **作业**。 这会将资源复制到 **submittedResources** 文件夹中进行评分并更新状态。|
-|[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|学生使用取消提交将提交状态从提交后移回工作。 这会将资源复制到 **workingResources** 文件夹中进行评分并更新状态。|
+|[返回](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|教师使用返回来指示可以向学生显示成绩/反馈。|
+|[分配](../api/educationsubmission-reassign.md)|[educationSubmission](educationsubmission.md)|将提交重新分配给学生，并提供反馈以供审阅。|
+|[设置提交特定资源文件夹](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | 在预定义的位置下创建SharePoint文件夹 () 上传文件作为提交资源。 |
+|[提交](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|学生使用 submit 来提交 **作业**。 这会将资源复制到 **submittedResources** 文件夹中进行评分并更新状态。|
+|[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|学生使用取消提交将提交状态从提交移回工作状态。 这会将资源复制到 **workingResources** 文件夹中进行评分并更新状态。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who分配此提交。|
-|returnedBy|[identitySet](identityset.md)|将此提交的状态移至已返回的用户。|
-|returnedDateTime|DateTimeOffset|提交返回的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|id|String|提交的唯一标识符。|
+|recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who此提交被分配到。|
+|returnedBy|[identitySet](identityset.md)|将此提交状态移动到返回的用户。|
+|returnedDateTime|DateTimeOffset|返回提交的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |resourcesFolderUrl|String|需要存储此提交的所有文件资源的文件夹。|
-|状态|educationSubmissionStatus| 只读。 可能的值是 `working` `submitted` `released` ：、、、 `returned` `unknownFutureValue` 和 `reassigned` 。 请注意，必须使用此可变化枚举 (请求) 获取以下 `Prefer: include-unknown-enum-members` [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `reassigned` ： 。|
-|submittedBy|[identitySet](identityset.md)|将资源移动到已提交状态的用户。|
-|submittedDateTime|DateTimeOffset|提交移动到提交状态的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|unsubmittedBy|[identitySet](identityset.md)|将资源从提交移动到工作状态的用户。|
-|unsubmittedDateTime|DateTimeOffset|将提交从提交移动到工作状态的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|reassignedBy|[identitySet](identityset.md)|移动了此提交状态以重新分配的用户。|
+|状态|educationSubmissionStatus| 只读。 可能的值为：`working`、`submitted`、`released`和 `unknownFutureValue` `returned``reassigned`。 请注意，必须使用`Prefer: include-unknown-enum-members`请求标头获取以下值 (此[可旋转枚举](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)中的) ： `reassigned`|
+|submittedBy|[identitySet](identityset.md)|将资源移动到提交状态的用户。|
+|submittedDateTime|DateTimeOffset|提交进入提交状态的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|unsubmittedBy|[identitySet](identityset.md)|将资源从提交迁移到工作状态的用户。|
+|unsubmittedDateTime|DateTimeOffset|提交从提交移动到工作状态的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|reassignedBy|[identitySet](identityset.md)|将此提交状态移动到重新分配的用户。|
 |reassignedDateTime|DateTimeOffset|重新分配提交的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 
 ## <a name="relationships"></a>关系
@@ -60,7 +61,7 @@ ms.locfileid: "61402968"
 |:---------------|:--------|:----------|
 |resources|[educationSubmissionResource](educationsubmissionresource.md) 集合| 可为 NULL。|
 |submittedResources|[educationSubmissionResource](educationsubmissionresource.md) 集合| 只读。可为空。|
-|outcomes|[educationOutcome](educationOutcome.md) 集合。 保留教师分配给此提交的成绩、反馈和/或评分标准信息|读写。 可为 Null。|
+|结果|[educationOutcome](educationOutcome.md) 集合。 保存教师为此提交分配的分数、反馈和/或标准信息|读写。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

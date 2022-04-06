@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 94837492bf6c58ef51e214e52889b46a22e8de26
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: fc53b761f5ff9201416604fb71e58c8f04e57270
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226566"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672565"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 
@@ -18,18 +18,18 @@ ms.locfileid: "61226566"
 
 从 [directoryRole 中删除成员](../resources/directoryrole.md)。
 
-你可以将 **directoryRole** 的对象 ID 和模板 ID 用于此 API。 内置角色的模板 ID 是不可可变的，可以在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
+你可以将 **directoryRole** 的对象 ID 和模板 ID 用于此 API。 内置角色的模板 ID 是不可可变的，可以在 Azure 门户的角色描述中查看。 有关详细信息，请参阅 [角色模板 ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.ReadWrite.Directory |
+|应用程序 | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -60,7 +60,7 @@ DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 
 #### <a name="request"></a>请求
 
-本示例中，将 替换为目录角色的 id 值和希望从目录角色中取消分配的用户或目录对象的 `f8e85ed8-f66f-4058-b170-3efae8b9c6e5`  `bb165b45-151c-4cf6-9911-cd7188912848` **id** 值。
+本示例中， `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` 将 替换为目录角色的 **id** `bb165b45-151c-4cf6-9911-cd7188912848` 值和希望从目录角色中取消分配的用户或目录对象的 **id** 值。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

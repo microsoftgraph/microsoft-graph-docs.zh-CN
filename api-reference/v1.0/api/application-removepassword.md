@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 44c69ffaf2e7b7be8b751852604ee5a49981ea8c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: aeab25fbae0eafaf7309f170d33830703d67444c
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337185"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672166"
 ---
 # <a name="application-removepassword"></a>application： removePassword
 
@@ -24,7 +24,7 @@ ms.locfileid: "63337185"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Application.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | Application.ReadWrite.All |
 | 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 

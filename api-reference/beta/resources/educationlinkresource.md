@@ -1,16 +1,16 @@
 ---
 title: educationLinkResource 资源类型
-description: EducationResource 的子类。 此资源是链接，不具有与之关联的任何其他数据。
+description: educationResource 的子类。 此资源是一个链接，没有任何与之关联的其他数据。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 43c0c3ebf82becb1c82f447600073162af533837
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 586be05b3a1f5ad9d0890f5e3f150a0450a456d5
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095329"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684807"
 ---
 # <a name="educationlinkresource-resource-type"></a>educationLinkResource 资源类型
 
@@ -18,13 +18,18 @@ ms.locfileid: "48095329"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)的子类。 此资源是链接，不具有与之关联的任何其他数据。
+[educationResource](educationresource.md) 的子类。 此资源是一个链接，没有任何与之关联的其他数据。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|link|字符串|指向资源的 URL。|
+|link|String|资源的 URL。|
+|createdBy|String|创建此对象的用户的显示名称。|
+|createdDateTime|DateTimeOffset|添加重索的日期时间。|
+|displayName|string|资源的显示名称。|
+|lastModifiedBy|[identitySet](identityset.md)|最后一个修改资源的用户。|
+|lastModifiedDateTime|DateTimeOffset|上次修改资源的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -40,7 +45,12 @@ ms.locfileid: "48095329"
 
 ```json
 {
-  "link": "String"
+  "link": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

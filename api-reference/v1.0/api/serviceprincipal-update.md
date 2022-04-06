@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 311a80dcfac762c067fd13b94f6273d6aba28e8d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: b7c78f1a792930d701cc07666c3c95d4d77803bf
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672439"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477495"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 
@@ -19,9 +19,9 @@ ms.locfileid: "63672439"
 更新 [servicePrincipal](../resources/serviceprincipal.md) 对象的属性。
 
 > [!IMPORTANT]
-> 不支持使用 PATCH 设置 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](./serviceprincipal-addpassword.md) 和 [removePassword](./serviceprincipal-removepassword.md) 方法更新 servicePrincipal 的密码。
+> 不支持使用 PATCH 设置 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](./serviceprincipal-addpassword.md) 和 [removePassword](./serviceprincipal-removepassword.md) 方法更新 servicePrincipal 的密码或密钥。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

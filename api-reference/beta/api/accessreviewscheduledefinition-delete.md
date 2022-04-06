@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5e975f2d283135b086f5069fae18373159cae903
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 447b365b5bfbf2f72e7b80caadc4573d1004ccef
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721942"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684605"
 ---
 # <a name="delete-accessreviewscheduledefinition"></a>删除 accessReviewScheduleDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "63721942"
 
 删除 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-delete-intro-sentence.md)]
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

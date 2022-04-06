@@ -5,12 +5,12 @@ description: 术语Column 资源指示列的值包含分类数据。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: d89d389b78c4c8dc1a370722a5b40c7cff794d3d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc5cb17f47425efb2732f5258cbdb1ac9bfff916
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59128037"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757596"
 ---
 # <a name="termcolumn-resource-type"></a>termColumn 资源类型
 
@@ -20,12 +20,17 @@ ms.locfileid: "59128037"
 
 ## <a name="properties"></a>属性
 
-| 属性名称 | 类型   | 说明|
+| 属性 | 类型   | Description|
 |:--------------|:-------|:----------------------------------------------------|
 | allowMultipleValues | Boolean | 指定列是否允许多个值。|
-| parentTerm     | microsoft.graph.termStore.term | 指定可选择其子项作为列值的术语 GUID。  |
 | showFullyQualifiedName | Boolean | 指定是显示整个术语路径还是仅显示术语标签。  |
-| termSet      | microsoft.graph.termStore.set | 可以选择其子项作为列值的术语集。 |
+
+## <a name="relationships"></a>关系
+
+| 关系   | 类型                      | Description
+|:----------------|:--------------------------|:-------------------------------
+| parentTerm     | microsoft.graph.termStore.term | 指定子术语可以选作列值的父术语。
+| termSet      | microsoft.graph.termStore.set | 可以选择其子项作为列值的术语集。 
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -35,9 +40,7 @@ ms.locfileid: "59128037"
 ```json
 {
     "allowMultipleValues": true,
-    "parentTerm": { "@type": "microsoft.graph.termStore.term" },
     "showFullyQualifiedName": false,
-    "termSet": { "@type": "microsoft.graph.termStore.set" }
 }
 ```
 

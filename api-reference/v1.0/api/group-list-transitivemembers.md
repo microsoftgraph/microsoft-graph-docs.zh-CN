@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5511001af3e53c8108cbc6fa662a81d11a3a2ee2
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: ef7e1046e1c77ef65157c35fd24130daa7152c71
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672243"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509516"
 ---
 # <a name="list-group-transitive-members"></a>List group transitive members
 
@@ -18,7 +18,7 @@ ms.locfileid: "63672243"
 
 获取组的成员列表。 组可以将用户、设备、组织联系人和其他组作为成员。 此操作是可传递的，并返回所有简单列表的成员的一个数。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,7 +46,7 @@ GET /groups/{id}/transitiveMembers
 
 若要筛选 OData `microsoft.graph.user` 类型的结果（如 或 `microsoft.graph.group`），必须使用 [高级查询参数](/graph/aad-advanced-queries)。 即， **将 ConsistencyLevel** 标头设置为 和 `eventual` 查询 `$count=true` 字符串。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称 | 说明 |
 |:---- |:----------- |
@@ -347,7 +347,7 @@ Content-type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count"
+  "name": "list_groups_transitivemembers_startswith"
 }-->
 
 ```msgraph-interactive

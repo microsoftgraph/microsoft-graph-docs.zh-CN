@@ -13,4 +13,4 @@ ms.locfileid: "59764821"
 <!-- markdownlint-disable MD041-->
 
 >[!NOTE]
->这是访问评审的推荐 API。 访问评审 API [的](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) 以前版本已弃用。
+>这是用于访问评审的建议 API。 已弃用以前版本 [的访问评审 API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) 。

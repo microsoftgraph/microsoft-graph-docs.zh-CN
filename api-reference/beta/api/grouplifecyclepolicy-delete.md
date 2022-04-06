@@ -1,16 +1,16 @@
 ---
 title: 删除 groupLifecyclePolicy
 description: 删除 groupLifecyclePolicy。
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d4611478fbf90e91367a3762267fe62110ed7016
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 34a585b1a57ed5a7b400288654f2db6c4fdb767c
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509579"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589077"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>删除 groupLifecyclePolicy
 
@@ -24,28 +24,30 @@ ms.locfileid: "64509579"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All    |
-|委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | Directory.ReadWrite.All |
+| 权限类型                        | 权限（从最低特权到最高特权） |
+| :------------------------------------- | :------------------------------------------ |
+| 委派（工作或学校帐户）     | Directory.ReadWrite.All                     |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
+| Application                            | Directory.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /groupLifecyclePolicies/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称 | 说明 |
-|:---------------|:----------|
+| 名称          | 说明               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}。必需。 |
-| Content-Type  | application/json |
+| Content-Type  | application/json          |
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
 
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
@@ -58,34 +60,43 @@ DELETE /groupLifecyclePolicies/{id}
 请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_grouplifecyclepolicy"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-grouplifecyclepolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-grouplifecyclepolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-grouplifecyclepolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/delete-grouplifecyclepolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/delete-grouplifecyclepolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-grouplifecyclepolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,6 +110,7 @@ DELETE https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -116,5 +128,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

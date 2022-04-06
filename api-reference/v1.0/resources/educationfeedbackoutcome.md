@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 120e7b603ca1d441b696e0fe50c64cb5d0373b7f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab90e8cee986869b6d27e80061755970ea46f345
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036653"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684492"
 ---
 # <a name="educationfeedbackoutcome-resource-type"></a>educationFeedbackOutcome 资源类型
 
 命名空间：microsoft.graph
 
-表示对 [文本形式的 educationOutcome](educationoutcome.md) 对象的反馈。 
+表示以文本形式对 [educationOutcome](educationoutcome.md) 对象的反馈。 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -28,8 +28,9 @@ ms.locfileid: "59036653"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|反馈|[educationFeedback](educationfeedback.md)|教师向学生提供书面反馈。|
-|publishedFeedback|[educationFeedback](educationfeedback.md)|在将成绩发布给学生时所创建的反馈属性的副本。|
+|id|String|educationFeedbackOutcome 的唯一标识符。|
+|反馈|[educationFeedback](educationfeedback.md)|老师给学生的书面反馈。|
+|publishedFeedback|[educationFeedback](educationfeedback.md)|向学生发布成绩时的反馈属性的副本。|
 
 ## <a name="relationships"></a>关系
 
@@ -50,6 +51,7 @@ ms.locfileid: "59036653"
 
 ```json
 {
+  "id": "String (identifier)",
   "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
   "publishedFeedback": {"@odata.type": "microsoft.graph.educationFeedback"}
 }

@@ -1,23 +1,23 @@
 ---
 title: unifiedRoleEligibilityScheduleRequest：cancel
 description: 取消 unifiedRoleEligibilityScheduleRequest。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 922bf16d011ac904150a25dbd0341d0092888924
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e70449502a4dd715fcfc389f66d2f0d351a3e574
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344501"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510363"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest：cancel
 命名空间：microsoft.graph
 
 立即取消[状态为 unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)`Granted`，并要求系统在 30 天后自动删除已取消的请求。 调用此操作后， **已** 取消的 unifiedRoleEligibilityScheduleRequest 的状态将改为 `Revoked`。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 421bc21d5a5fa4b25981cc0a4a0d1ec8aa33b51d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ad3b07875b2a1fd1e1e65bf9755d3fcdf0fc82c5
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094223"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668589"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -20,14 +20,14 @@ ms.locfileid: "62094223"
 
 创建新的目录角色成员。
 
-你可以将 **directoryRole** 的对象 ID 和模板 ID 用于此 API。 内置角色的模板 ID 是不可可变的，可以在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
+你可以将 **directoryRole** 的对象 ID 和模板 ID 用于此 API。 内置角色的模板 ID 是不可可变的，可以在 Azure 门户的角色描述中查看。 有关详细信息，请参阅 [角色模板 ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.ReadWrite.Directory |
 
@@ -160,7 +160,7 @@ HTTP/1.1 204 No content
 
 ### <a name="example-3-add-a-new-member-to-a-directory-role-using-roletemplateid"></a>示例 3：使用 roleTemplateId 向目录角色添加新成员
 #### <a name="request"></a>请求
-在此请求中，将 替换为要分配给用户或目录对象的目录角色的 `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **roleTemplateId** 的值。 将 `bb165b45-151c-4cf6-9911-cd7188912848` 替换为 **用户** 或目录对象的 id 值。 
+在此请求中， `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` 将 替换为要分配给用户或目录对象的目录角色的 **roleTemplateId** 的值。 将 `bb165b45-151c-4cf6-9911-cd7188912848` 替换为用户或目录对象的 **id** 值。 
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d78005e99e4eb585eb326a4dc225c8ab3b83cfb1
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: d1224bc1eebf1d90bfcb46fead37dae4ad01e4bf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367935"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672236"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
@@ -23,7 +23,7 @@ ms.locfileid: "63367935"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
@@ -47,6 +47,9 @@ GET /servicePrincipals/{id}
 | 名称           | 说明                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}。必需。  |
+| Accept-Language| 语言代码。 可选。   |
+
+为 **Accept-Language** 标头提供受支持的语言代码（如 `es-ES` 或 `de-DE`），将在可用时返回本地化值。 请注意，[列表操作](serviceprincipal-list.md)不支持标头。
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

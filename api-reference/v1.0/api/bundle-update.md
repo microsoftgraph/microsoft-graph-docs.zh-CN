@@ -5,22 +5,22 @@ description: 更新 driveItems 捆绑包
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b4925016b63569bba1915ce83100f59e647acc1e
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: 07f69618fae4fe2424abee3a1ac274d6ed42e88d
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63561591"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684849"
 ---
 # <a name="update-bundle"></a>更新捆绑包
 
 命名空间：microsoft.graph
 
-按 [ID 更新][] [driveItemsdriveItem] [捆绑]包的元数据。
+按 ID 更新 [driveItemsdriveItem] [捆绑包][]的元数据。[]
 只能更新以下元数据：
 
 * 捆绑包名称
-* 专辑 `coverImageItemId` (（如果适用) 
+* 相册 `coverImageItemId` (（如果适用）) 
 
 将忽略任何其他更改请求。
 
@@ -47,7 +47,7 @@ PATCH /drive/items/{bundle-id}
 | 名称          | 说明  |
 |:------------- |:------------ |
 | Authorization | 持有者 \{token\}。必需。 |
-| if-match      | eTag。 可选。 如果包含此请求标头，并且提供的 eTag 与 buncle 上的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应。
+| if-match      | Etag。 可选。 如果包含此请求标头，并且提供的 eTag 与 buncle 上的当前 eTag 不匹配， `412 Precondition Failed` 则返回响应。
 
 ## <a name="request-body"></a>请求正文
 
@@ -55,7 +55,7 @@ PATCH /drive/items/{bundle-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回表示更新捆绑包的 [driveItem][] 资源。
+如果成功，此方法将返回一个 [driveItem][] 资源，该资源表示响应正文中更新的捆绑包。
 
 有关错误响应的信息，请参阅 [错误响应][error-response]。
 
@@ -65,16 +65,40 @@ PATCH /drive/items/{bundle-id}
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
+PATCH https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 Content-Type: application/json
 
 {
   "name": "Shared legal agreements"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/rename-bundle-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/rename-bundle-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/rename-bundle-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/rename-bundle-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/rename-bundle-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -96,7 +120,7 @@ Content-Type: application/json
 为了提高可读性，可能缩短了此处显示的响应对象。
 
 
-[bundle]: ../resources/bundle.md
+[捆绑]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 [error-response]: /graph/errors
 

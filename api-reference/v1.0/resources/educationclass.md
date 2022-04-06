@@ -1,61 +1,65 @@
 ---
 title: educationClass 资源类型
-description: '表示学校的课程。 **educationClass** 资源对应于 Microsoft 365 组并共享同一 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。  '
+description: '表示学校的课程。 **educationClass** 资源对应于Microsoft 365组，并共享相同的 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。  '
 ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dfe36d8068d0a9fa8d2c9f6c8d38b504ee9c83c5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e3b3a8618342afd21f9d18cc1d1c96fa2ed9bbf9
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084557"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685241"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
 命名空间：microsoft.graph
 
-表示学校的课程。 **educationClass** 资源对应于 Microsoft 365 组并共享同一 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。
+表示学校的课程。 **educationClass** 资源对应于Microsoft 365组，并共享相同的 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。
 
-继承自 [实体](../resources/entity.md)。
+继承自 [entity](../resources/entity.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                   | 返回类型                                                 | 说明                                                                                          |
 | :------------------------------------------------------- | :---------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
-| [列出 educationClasses](../api/educationclass-list.md)   | [educationClass](../resources/educationclass.md) 集合 | 获取 [educationClass 对象](../resources/educationclass.md) 及其属性的列表。     |
+| [列出 educationClasses](../api/educationclass-list.md)   | [educationClass](../resources/educationclass.md) 集合 | 获取 [educationClass](../resources/educationclass.md) 对象及其属性的列表。     |
 | [Create educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | 创建新的 [educationClass](../resources/educationclass.md) 对象。                                |
 | [Get educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | 读取 [educationClass](../resources/educationclass.md) 对象的属性和关系。 |
-| [更新 educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | 更新 [educationClass 对象](../resources/educationclass.md) 的属性。                 |
+| [更新 educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | 更新 [educationClass](../resources/educationclass.md) 对象的属性。                 |
 | [删除 educationClass](../api/educationclass-delete.md) | 无                                                        | 删除 [educationClass](../resources/educationclass.md) 对象。                                  |
-| [delta](../api/educationclass-delta.md)                  | [educationClass](../resources/educationclass.md) 集合 | 获取资源集合的增量更改。                                                  |
+| [delta](../api/educationclass-delta.md)                  | [educationClass](../resources/educationclass.md) 集合 | 获取对资源集合的增量更改。                                                  |
 
 ## <a name="properties"></a>属性
 
 | 属性             | 类型                                           | 说明                                                        |
 | :------------------- | :--------------------------------------------- | :----------------------------------------------------------------- |
-| id                   | String                                         | 对象标识符。 继承自 [实体](../resources/entity.md)。 |
-| displayName          | String                                         | 课程名称。                                                 |
+| id                   | String                                         | 对象标识符。 继承自 [entity](../resources/entity.md)。 |
+| displayName          | 字符串                                         | 课程名称。                                                 |
 | mailNickname         | String                                         | 向所有成员发送电子邮件的邮件名称（如果已启用）。    |
-| 说明          | String                                         | 课程说明。                                          |
+| 说明          | 字符串                                         | 课程说明。                                          |
 | createdBy            | [identitySet](../resources/identityset.md)     | 创建了课程的实体                                       |
 | classCode            | String                                         | 学校用于标识课程的课程代码。               |
 | externalName         | String                                         | 同步系统中的课程名称。                           |
 | externalId           | String                                         | 来自同步系统的课程 ID。                           |
 | externalSource       | educationExternalSource                        | 此课程的创建方式。 可取值为：`sis`、`manual`。  |
-| externalSourceDetail | String                                         | 生成此资源的外部源的名称。 |
-| grade                | String                                         | 课程的年级。                                          |
+| externalSourceDetail | 字符串                                         | 从中生成此资源的外部源的名称。 |
+| grade                | String                                         | 类的等级级别。                                          |
 | term                 | [educationTerm](../resources/educationterm.md) | 此课程的学期。                                               |
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型                                                          | 说明                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
-| 组        | [组](../resources/group.md)                                | 组Microsoft 365对象。                |
+| assignments  | [educationAssignment](educationAssignment.md) 集合 | 与此类关联的所有作业。 可为 NULL。     |
+| 组        | [group](../resources/group.md)                                | 基础Microsoft 365组对象。                |
 | members      | [educationUser](../resources/educationuser.md) 集合     | 课程中的所有用户。 可为 NULL。                         |
 | schools      | [educationSchool](../resources/educationschool.md) 集合 | 与此课程相关的所有学校。 可为 NULL。 |
-| teachers     | [educationUser](../resources/educationuser.md) 集合     | 课程中的所有教师。 可为 Null。                      |
+| teachers     | [educationUser](../resources/educationuser.md) 集合     | 课程中的所有教师。 可为 NULL。                      |
+|assignmentCategories| [educationCategory](educationcategory.md) 集合 | 与此类关联的所有类别。 可为 NULL。 |
+|assignmentDefaults| [educationAssignmentDefaults](educationassignmentdefaults.md) 集合 | 指定类中创建的新作业所尊重的类级默认值。 |
+|assignmentSettings| [educationAssignmentSettings](educationassignmentsettings.md) 集合 | 指定类级分配设置。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

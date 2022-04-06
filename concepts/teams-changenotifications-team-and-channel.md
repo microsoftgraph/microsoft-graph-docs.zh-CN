@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 08a6b996d3ddbe721775a888b161e14788a485a9
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
-ms.translationtype: HT
+ms.openlocfilehash: b6bbfac2cbdb8fcafccbd385c4aa43c994f3c04d
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507764"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684695"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>使用 Microsoft Graph 获取团队和频道的更改通知
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 ## <a name="subscribe-to-changes-in-any-channel-of-a-particular-team"></a>订阅特定团队的任何频道中的更改
 
 
-要获取与特定团队中任何频道相关的所有更改的更改通知，请订阅 `/teams/{team-id}/channels`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。 委派上下文中不支持专用频道更改通知。 在这种情况下，委派上下文中此资源的订阅者将仅接收特定团队下的标准频道的通知，而不是专用频道的通知。
+要获取与特定团队中任何频道相关的所有更改的更改通知，请订阅 `/teams/{team-id}/channels`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。 委派上下文中不支持专用频道更改通知。 在这种情况下，委派上下文中此资源的订阅者将仅接收特定团队下的标准频道的通知，而不是专用频道的通知。 不支持更改共享通道的通知。
 
 
 ### <a name="permissions"></a>权限

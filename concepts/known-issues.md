@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: fb9d91dc1390ecc217f94051006a8d10111d848b
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: f1e25a40b970656ad9f47c68abad0cb7fc5addc1
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477886"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684919"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -405,6 +405,24 @@ JSON 批处理请求目前限定为 20 个单独请求。
 - [升级团队中安装的应用](/graph/api/team-teamsappinstallation-upgrade.md)
 - [将应用添加到聊天](/graph/api/chat-post-installedapps)
 - [升级聊天中安装的应用](/graph/api/chat-teamsappinstallation-upgrade.md)
+
+### <a name="unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id"></a>当请求 URL 包含租户/{cross-tenant-id} 时，无法访问跨租户共享通道
+对 [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) 和 [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) 的 API 调用返回 **@odata.id** 属性，可用于访问通道并在 [通道](/graph/api/resources/channel.md) 对象上运行其他操作。 如果调用从 **@odata.id** 属性返回的 URL，则请求在尝试访问跨租户共享 [通道](/graph/api/resources/channel.md)时失败，并出现以下错误：
+```
+GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "TenantId in the optional tenants/{tenantId} segment should match the tenantId(tid) in the token used to call Graph.",
+        "innerError": {
+            "date": "2022-03-08T07:33:50",
+            "request-id": "dff19596-b5b2-421d-97d3-8d4b023263f3",
+            "client-request-id": "32ee2cbd-27f8-2441-e3be-477dbe0cedfa"
+        }
+    }
+}
+```
+若要解决此问题，请在调用 API 访问跨租户共享[通道](/graph/api/resources/channel.md)之前从 URL 中删除`/tenants/{tenant-id}`该部件。
 
 ## <a name="users"></a>用户
 

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2465cdff0cfccc8b6d6b3d7e234b5acec8c159f7
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 41c3d3621e741911a101e994dbb19ce1940b651c
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64630938"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670766"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -267,6 +267,7 @@ Content-type: application/json
 ---
 
 
+
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response"
@@ -274,54 +275,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-
-
-### <a name="example-4-add-or-update-the-values-of-a-schema-extension-for-a-user"></a>示例 4：为用户添加或更新架构扩展值
-
-可以将一个值更新或分配给扩展中的单个属性或所有属性。
-
-#### <a name="request"></a>请求
-
-<!-- {
-  "blockType": "request",
-  "name": "update_schemaextension"
-}-->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
-Content-type: application/json
-
-{
-    "ext55gb1l09_msLearnCourses": {
-        "courseType": "Admin"
-    }
-}
-```
-
-#### <a name="response"></a>响应
-
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-
->**注意：** 若要从用户对象中删除架构扩展值，请将属性设置为 `null`。 例如：
->
->```http
->PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
->Content-type: application/json
->
->{
->    "ext55gb1l09_msLearnCourses": null
->}
->```
-
-## <a name="see-also"></a>另请参阅
-
-- [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
-- [使用开放扩展向用户添加自定义数据（预览）](/graph/extensibility-open-users)
-- [使用架构扩展向组添加自定义数据（预览）](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

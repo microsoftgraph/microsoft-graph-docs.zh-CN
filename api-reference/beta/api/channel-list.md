@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: b9f6c08e80ae128aa76cc04dad230dd9bfe10263
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
-ms.translationtype: HT
+ms.openlocfilehash: f89e8bd0c492d67cb408ce5eaa090231a6a0c357
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804092"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684940"
 ---
 # <a name="list-channels"></a>列出频道
 
@@ -204,6 +204,59 @@ Content-type: application/json
       "membershipType": "private"
     }
   ]
+}
+```
+
+### <a name="example-3-list-all-shared-channels"></a>示例 3：列出所有共享通道
+
+#### <a name="request"></a>请求
+
+以下示例显示了列出所有共享通道的请求。
+
+
+<!-- {
+  "blockType": "request",
+  "name": "list_shared_channels"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels?$filter=membershipType eq 'shared'
+```
+
+
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 262
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('6a720ba5-7373-463b-bc9f-4cd04b5c6742')/channels",
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2",
+            "createdDateTime": null,
+            "displayName": "shared channel-01",
+            "description": "this is the shared channel description",
+            "isFavoriteByDefault": null,
+            "email": "",
+            "webUrl": "https://teams.microsoft.com/l/channel/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/shared%20channel-01?groupId=6a720ba5-7373-463b-bc9f-4cd04b5c6742&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
+            "membershipType": "shared",
+            "moderationSettings": null
+        }
+    ]
 }
 ```
 

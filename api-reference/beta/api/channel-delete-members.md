@@ -1,16 +1,16 @@
 ---
 title: 从频道中删除成员
-description: 从频道中删除成员。
+description: 从通道中删除成员。
 author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3957e2b26e05dec8a95d230678c29528240dd932
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6bfce0fee2dd2d1f00f4b5a8aead51d716cde253
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126095"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684884"
 ---
 # <a name="remove-member-from-channel"></a>从频道中删除成员
 
@@ -18,8 +18,7 @@ ms.locfileid: "62126095"
  
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从频道[中删除 conversationMember。](../resources/conversationmember.md) [](../resources/channel.md) 此操作仅允许 **membershipType** 值为 的通道 `private` 。
-
+从[频道](../resources/channel.md)中删除 [conversationMember](../resources/conversationmember.md)。 此操作仅适用于 **成员身份类型** 值为或 `shared`. 的`private`通道。
 
 ## <a name="permissions"></a>权限
 

@@ -1,16 +1,16 @@
 ---
 title: 创建 unifiedRoleEligibilityScheduleRequest
 description: 创建新的 unifiedRoleEligibilityScheduleRequest 对象。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6696c94977a9b6afde15fcb101cc56ee06b2f7ca
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b3b4c741c445de9a53bccd366c28abb0c98a5a8d
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119854"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510518"
 ---
 # <a name="create-unifiedroleeligibilityschedulerequest"></a>创建 unifiedRoleEligibilityScheduleRequest
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "62119854"
 
 创建新的 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象。 此操作允许管理员和符合条件的用户添加、撤销或扩展符合条件的分配。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -47,31 +47,31 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象的 JSON 表示形式。
 
-下表显示创建 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)时可选的和必需的属性。
+下表显示创建 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 时可选的和必需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |action|String|表示角色资格分配上的操作类型。 可能的值有： <ul><li>`AdminAssign`：供管理员向用户或组分配角色资格。</li><li>`AdminExtend`：供管理员扩展即将过期的工作分配。</li><li>`AdminUpdate`：供管理员更改现有角色分配。</li><li>`AdminRenew`：供管理员续订已过期的工作分配。</li><li>`AdminRemove`：供管理员从符合条件的角色中删除用户或组。</li><li>`UserAdd`：供用户激活其符合条件的工作分配。</li><li>`UserExtend`：用户请求延长其即将到期的合格分配。</li><li>`UserRemove`：让用户停用其活动符合条件的分配。</li><li>`UserRenew`：用户请求续订其已过期的合格分配。</li></ul>|
-|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元或所有用户。|
-|directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。|
-|isValidationOnly|布尔|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
-|justification|String|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。 操作为时可选 `AdminRemove` 。|
-|principalId|String|要向其中授予工作分配的主体的标识符。 例如，用户或组。 对于组，它们必须可分配给角色，即组属性设置为 的 **isAssignableToRole。** `true`|
-|roleDefinitionId|String|分配所针对的 unifiedRoleDefinition 的标识符。 必需。 只读。|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|请求的计划角色分配对象。 当操作为 时，此属性 **不** 是必需的 `AdminRemove` 。|
+|appScopeId|字符串|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元或所有用户。|
+|directoryScopeId|字符串|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。|
+|isValidationOnly|Boolean|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
+|justification|字符串|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。 操作 **为 时** 可选 `AdminRemove`。|
+|principalId|字符串|要向其中授予工作分配的主体的标识符。 例如，用户或组。 对于组，它们必须可分配给角色，即组属性设置为 的 **isAssignableToRole**`true`。|
+|roleDefinitionId|String|分配所针对的 unifiedRoleDefinition 的标识符。 必需项。 只读。|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|请求的计划角色分配对象。 当操作为 时，**此属性不是必需的**`AdminRemove`。|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|附加到请求的 ticketInfo 角色分配，其中包含票证编号和票证系统的详细信息。 可选。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-admin-to-assign-a-role-eligibility-schedule-request"></a>示例 1：分配角色资格计划请求的管理员
 
-在下面的请求中，管理员创建一个请求，将标识的角色资格分配给 id `fdd7a751-b60b-444a-984c-02652fe8fa1c` 标识的主体 `07706ff1-46c7-4847-ae33-3003830675a1` 。 资格的范围是租户中所有目录对象，直到 2022 年 6 月 30 日午夜 UTC 时间。
+在下面的请求中，管理员`fdd7a751-b60b-444a-984c-02652fe8fa1c`创建一个请求，将标识的角色资格分配给 **id 标识的主体**`07706ff1-46c7-4847-ae33-3003830675a1`。 资格的范围是租户中所有目录对象，直到 2022 年 6 月 30 日午夜 UTC 时间。
 
 #### <a name="request"></a>请求
 
@@ -184,7 +184,7 @@ Content-Type: application/json
 
 ### <a name="example-2-admin-to-remove-an-existing-role-eligibility-schedule-request"></a>示例 2：管理员删除现有角色资格计划请求
 
-在下面的请求中，管理员创建一个请求，撤消标识为 id 的主体的角色 `fdd7a751-b60b-444a-984c-02652fe8fa1c` **资格** `07706ff1-46c7-4847-ae33-3003830675a1` 。
+在下面的请求中，管理员`fdd7a751-b60b-444a-984c-02652fe8fa1c`创建一个请求，撤消标识为 id 的主体的角色 **资格**`07706ff1-46c7-4847-ae33-3003830675a1`。
 
 #### <a name="request"></a>请求
 
@@ -245,7 +245,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 请求返回响应对象，该对象将以前符合条件的工作分配更改的状态显示为 `Revoked` 。 主体将不再看到其以前符合条件的角色。
+下面展示了示例响应。 请求返回响应对象，该对象将以前符合条件的工作分配更改的状态显示为 `Revoked`。 主体将不再看到其以前符合条件的角色。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: bf02636b95e505d0001d91dcdbf2b5915f201e88
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 2b46abf3c7c7b8b74fcccc3647a4e33cae2efbc4
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722987"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607279"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD权限管理 API
 
@@ -23,7 +23,7 @@ Azure Active Directory (Azure AD) 权限管理可帮助您管理对内部用户�
 权利管理资源类型包括：
 
 - [accessPackage](accesspackage.md)：定义资源角色的集合以及一个或多个用户如何获取对这些资源的访问权限的策略。
-- accessPackageAssignmentPolicy：指定主题可以通过访问包分配请求或分配访问包的策略。
+- [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)：指定主题可以通过访问包分配请求或分配访问包的策略。
 - [accessPackageAssignmentRequest](accesspackageassignmentrequest.md)：由希望获取访问包分配的用户创建。
 - [accessPackageAssignment](accesspackageassignment.md)：一段时间内向特定主题分配访问包。
 - [accessPackageCatalog](accesspackagecatalog.md)：访问包的容器。
@@ -60,6 +60,11 @@ Azure Active Directory (Azure AD) 权限管理可帮助您管理对内部用户�
 | [获取 accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | 读取 **accessPackageCatalog 对象的属性和** 关系。 |
 | [更新 accessPackageCatalog](../api/accesspackagecatalog-update.md)|无 | 更新 **accessPackageCatalog 对象** 的属性。 |
 | [删除 accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | 删除 **accessPackageCatalog**。 |
+|[列出 accessPackageAssignmentPolicies](../api/entitlementmanagement-list-assignmentpolicies.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 集合|获取 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象及其属性的列表。|
+|[创建 accessPackageAssignmentPolicy](../api/entitlementmanagement-post-assignmentpolicies.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|创建新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。|
+|[获取 accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|读取 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象的属性和关系。|
+|[更新 accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|更新 [accessPackageAssignmentPolicy 对象](../resources/accesspackageassignmentpolicy.md) 的属性。|
+|[删除 accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md)|无|删除 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。|
 | [列出 connectedOrganizations](../api/entitlementmanagement-list-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) 集合 | 检索 **connectedOrganization 对象** 的列表。 |
 | [创建 connectedOrganization](../api/entitlementmanagement-post-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) | 创建新的 **connectedOrganization** 对象。 |
 | [获取 connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | 读取 **connectedOrganization 对象的属性和** 关系。 |

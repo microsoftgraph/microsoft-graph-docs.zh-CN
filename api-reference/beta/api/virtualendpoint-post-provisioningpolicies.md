@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 57414eb1a2a07245d5361111b4adf0f354cfeb78
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c8ceafcd70592f4f0b10e1818200021cfb7ae061
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089052"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722802"
 ---
 # <a name="create-cloudpcprovisioningpolicy"></a>创建 cloudPcProvisioningPolicy
 
@@ -56,16 +56,17 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|预配显示名称的项。|
-|说明|String|设置策略说明。|
+|displayName|String|设置显示名称策略的项。|
+|description|String|设置策略说明。|
 |onPremisesConnectionId|String|cloudPcOnPremisesConnection 的 ID。 若要确保云电脑具有网络连接并且它们已加入域，请选择与通过云电脑服务验证的虚拟网络的连接。|
 |imageId|String|你想要在云电脑中预配的操作系统映像的 ID。 库类型图像的格式为：{publisher_offer_sku}。 每个参数支持的值如下所示：<ul><li>发布者：Microsoftwindowsdesktop。</li> <li>offer：windows-ent-cpc。</li> <li>sku：21h1-ent-cpc-m365， 21h1-ent-cpc-os、20h2-ent-cpc-m365、20h2-ent-cpc-os、20h1-ent-cpc-m365、20h1-ent-cpc-os、19h2-ent-cpc-m365 和 19h2-ent-cpc-os。</li></ul>|
-|imageDisplayName|String|显示名称预配的操作系统映像的映像。|
-|imageType|cloudPcProvisioningPolicyImageType|你想要在云 (预配的操作系统映像) 库类型。 可取值为：`gallery`、`custom`。|
+|imageDisplayName|String|要显示名称的操作系统映像的映像的映像。|
+|imageType|cloudPcProvisioningPolicyImageType|你想要在云 (预配的操作系统映像类型) 自定义或库类型。 可取值为：`gallery`、`custom`。|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|为Windows策略创建云电脑时要配置的特定设置。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -95,7 +96,10 @@ Content-Type: application/json
     "imageDisplayName": "Windows-10 19h1-evd",
     "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
     "imageType":"gallery",
-    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+    "windowsSettings": {
+        "language": "en-US"
+    }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -151,6 +155,9 @@ Content-Type: application/json
   "imageDisplayName": "Windows-10 19h1-evd",
   "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
   "imageType":"gallery",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
+  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+  "windowsSettings": {
+    "language": "en-US"
   }
+}
 ```

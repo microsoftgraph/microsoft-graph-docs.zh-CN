@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: bef523345bfcb3636a66606b87764599dd606554
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
-ms.translationtype: HT
+ms.openlocfilehash: e7c8091f3f3e29932520e93a7be3cdd2d830c5e0
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766822"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684590"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -24,7 +24,9 @@ ms.locfileid: "59766822"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出频道](../api/channel-list.md) | [频道](channel.md)集合 | 获取此团队中的频道列表。|
+|[列出频道](../api/channel-list.md) | [频道](channel.md)集合 | 获取团队中的频道列表。|
+|[列出传入通道](../api/team-list-incomingchannels.md)|[channel](../resources/channel.md) 集合|获取与 **团队** 共享的 [频道](../resources/channel.md)列表。|
+|[列出所有通道](../api/team-list-allchannels.md)|[channel](../resources/channel.md) 集合|获取 **团队** 中的 [频道](../resources/channel.md)列表，或与 **团队** 共享 (传入频道) 。|
 |[创建频道](../api/channel-post.md) | [频道](channel.md) | 通过包含显示名称和描述来新建频道。|
 |[获取频道](../api/channel-get.md) | [频道](channel.md) | 读取频道的属性和关系。|
 |[更新频道](../api/channel-patch.md) | [频道](channel.md) | 更新频道属性。|
@@ -37,10 +39,10 @@ ms.locfileid: "59766822"
 |[获取文件文件夹](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
 |[列出选项卡](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
 |[列出频道成员](../api/channel-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员列表。|
-|[添加频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 membershipType 为 `private` 的 `channel`。|
+|[添加频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 **成员身份为或** `shared`. 的`private`频道。|
 |[获取频道成员](../api/channel-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员。|
-|[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 membershipType 为 `private` 的频道。|
-|[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持用于 `private` 的 `channelType`。|
+|[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 **成员身份为或** `shared`. 的`private`频道。|
+|[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持 **成员身份为或** `shared`. 的`private`频道。|
 |[完成迁移](../api/channel-completemigration.md)|[频道](channel.md)| 删除频道中的迁移模式，让用户可在频道中发布和阅读消息。|
 |[列出频道中的选项卡](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
 |[将选项卡添加到频道](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | 将选项卡添加（固定）到频道。|
@@ -49,6 +51,12 @@ ms.locfileid: "59766822"
 |[从频道中删除选项卡](../api/channel-delete-tabs.md) | 无 | 从频道中删除（取消固定）选项卡。|
 |[预配频道电子邮件地址](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| 为频道预配电子邮件地址。|
 |[删除频道电子邮件地址](../api/channel-removeemail.md) | 无 | 删除频道的电子邮件地址。|
+|[删除传入通道](../api/team-delete-incomingchannel.md) | 无| 删除传入通道。|
+|[列出与频道共享的团队](../api/sharedwithchannelteaminfo-list.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) 集合|获取与频道共享的团队列表。|
+|[获取与频道共享的团队](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|获取与频道共享的团队。|
+|[与团队取消共享频道](../api/sharedwithchannelteaminfo-delete.md)|无|取消与团队共享频道。|
+|[列出允许的成员](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|[conversationMember](../resources/conversationmember.md) 集合|获取有权访问共享频道的团队成员的列表。|
+|[检查用户访问权限](../api/channel-doesuserhaveaccess.md)|Boolean|检查用户是否有权访问共享通道。|
 
 ## <a name="properties"></a>属性
 
@@ -63,6 +71,7 @@ ms.locfileid: "59766822"
 |membershipType|channelMembershipType|频道的类型。 可在创建期间设置，但不可更改。 可能的值包括 `standard`、`private`、`unknownFutureValue`、`shared`。 默认值为 `standard`。 请注意，必须使用 `Prefer: include-unknown-enum-members` 请求标头获取此 [可进化枚举](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) 中的以下值: `shared`。|
 |createdDateTime|dateTimeOffset|只读。 创建频道的时间戳。|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|配置频道审核，以控制谁能在此频道中发起新帖子并回复帖子的设置。|
+|tenantId |string | Azure Active Directory租户的 ID。 |
 
 ### <a name="instance-attributes"></a>实例属性
 
@@ -70,7 +79,7 @@ ms.locfileid: "59766822"
 
 | 属性名称| 类型   | 说明
 |:-----------------------|:-------|:-------------------------|
-|@microsoft. graph channelCreationMode|string|指示频道处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。|
+|@microsoft. graph channelCreationMode|string|指示频道处于迁移状态，并且当前正用于迁移目的。它接受一个值：`migration`|
 
 > **注意**：`channelCreationMode` 是采用值 `migration`的枚举。
 
@@ -85,6 +94,7 @@ ms.locfileid: "59766822"
 |members|[conversationMember](conversationmember.md) 集合|与频道关联的成员资格记录的集合。|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 |
+|sharedWithTeams|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) 集合|与频道共享的团队集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

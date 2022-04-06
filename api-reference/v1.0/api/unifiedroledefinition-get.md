@@ -5,22 +5,29 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1c8b7063877f4a53986ac9683025db84e843fb11
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 1044c0195eade2a56d5d98f1834f59fa451f85e3
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672068"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629664"
 ---
 # <a name="get-unifiedroledefinition"></a>获取 unifiedRoleDefinition
 
 命名空间：microsoft.graph
 
-读取 [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) 对象的属性和关系。 目前 **，目录** 是唯一支持 RBAC (基于角色) 访问控制。
+读取 [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+当前支持以下基于角色的访问控制 (RBAC) 提供程序：
+
+-  (Azure AD 目录角色) 
+- 授权管理 (Azure AD 权利管理) 
+
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+### <a name="for-the-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -28,12 +35,30 @@ ms.locfileid: "63672068"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
+### <a name="for-the-entitlement-management-provider"></a>对于权利管理提供程序
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） |  EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All   |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | 不支持。 |
+
 ## <a name="http-request"></a>HTTP 请求
+
+获取目录提供程序的角色定义：
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /roleManagement/directory/roleDefinitions/{id}
+```
+
+获取权利管理提供程序的角色定义：
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -247,7 +272,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>示例 3：获取Azure AD角色的定义，并$expand继承自的角色定义
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>示例 3：获取 Azure AD 内置角色的定义，$expand继承自的角色定义
 
 #### <a name="request"></a>请求
 

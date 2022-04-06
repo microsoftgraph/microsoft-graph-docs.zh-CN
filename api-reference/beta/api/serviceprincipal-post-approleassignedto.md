@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 833a4c4c147535a8c96c9d881c75d01faf9ee6b3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 90ad355042412af79797398cc3f84a30a3262919
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105359"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671760"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>为服务主体授予 appRoleAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "62105359"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All 和 Application.Read.All、AppRoleAssignment.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All 和 Application.Read.All、AppRoleAssignment.ReadWrite.All 和 Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AppRoleAssignment.ReadWrite.All 和 Application.Read.All、AppRoleAssignment.ReadWrite.All 和 Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All |
 

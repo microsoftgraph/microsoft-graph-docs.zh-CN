@@ -4,13 +4,13 @@ description: '检索 governanceRoleAssignmentRequests 的集合。 '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 69e73c7caac24855b143c2cf9698cc5c01e0290a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+author: japere
+ms.openlocfilehash: e14489475e4cfb4b9cf39417f0681135ff9e23df
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939600"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510413"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>列出 governanceRoleAssignmentRequests
 
@@ -18,7 +18,7 @@ ms.locfileid: "60939600"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 检索 [governanceRoleAssignmentRequests 的集合](../resources/governanceroleassignmentrequest.md)。 
 
@@ -51,9 +51,9 @@ ms.locfileid: "60939600"
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-列出资源上的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合。
+列出资源 [上的 governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合。
     
->**注意：** 除了权限范围之外，请求还需要请求者对资源至少角色分配一个权限。
+>**注意：** 除了权限范围之外，请求还需要请求者至少具有一个角色分配资源。
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
@@ -67,7 +67,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq
 
 列出正在等待管理员 [决策的 governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合。
     
->**注意：** 除了权限范围之外，此请求还要求请求者至少具有一个角色分配 (`Active` `owner` 或) `user access administrator` 管理员。
+>**注意：** 除了权限范围之外`Active``owner`，此请求还要求请求者至少具有一个角色分配 (或`user access administrator`) 管理员。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
@@ -85,7 +85,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象集合。
 
 ## <a name="example"></a>示例
 <!-- {

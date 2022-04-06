@@ -1,16 +1,16 @@
 ---
 title: expressionEvaluationDetails 资源类型
 description: 表示表达式详细信息、结果和属性详细信息。
-localization_priority: Normal
-author: Jordanndahl
+ms.localizationpriority: medium
+author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a2e2b2620f30234c23753ef743f14e55e29f6f91
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: d588719e8d6bcf32ff337beec8815b6fe329ee0b
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679896"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587033"
 ---
 # <a name="expressionevaluationdetails-resource-type"></a>expressionEvaluationDetails 资源类型
 
@@ -22,12 +22,12 @@ ms.locfileid: "52679896"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
-|:-------------|:------------|:------------|
-| 表达式 | String | 表示已求值表达式。 |
-| expressionEvaluationDetails | expressionEvaluationDetails 集合 | 表示表达式的计算的详细信息。 |
-| expressionResult | Boolean | 表示当前表达式的结果的值。 |
-| propertyToEvaluate | [propertyToEvaluate](propertytoevaluate.md) | 定义属性的名称和该属性的值。 |
+| 属性                    | 类型                                        | 说明                                                      |
+| :-------------------------- | :------------------------------------------ | :--------------------------------------------------------------- |
+| 表达式                  | String                                      | 表示已求值表达式。                  |
+| expressionEvaluationDetails | expressionEvaluationDetails 集合      | 表示表达式的计算的详细信息。      |
+| expressionResult            | Boolean                                     | 表示当前表达式的结果的值。    |
+| propertyToEvaluate          | [propertyToEvaluate](propertytoevaluate.md) | 定义属性的名称和该属性的值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -45,9 +45,11 @@ ms.locfileid: "52679896"
 ```json
 {
   "expression": "String",
-  "expressionEvaluationDetails": [{"@odata.type": "microsoft.graph.expressionEvaluationDetails"}],
+  "expressionEvaluationDetails": [
+    { "@odata.type": "microsoft.graph.expressionEvaluationDetails" }
+  ],
   "expressionResult": true,
-  "propertyToEvaluate": {"@odata.type": "microsoft.graph.propertyToEvaluate"}
+  "propertyToEvaluate": { "@odata.type": "microsoft.graph.propertyToEvaluate" }
 }
 ```
 
@@ -60,5 +62,3 @@ ms.locfileid: "52679896"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

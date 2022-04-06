@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c0fdfd3e1537e73c974f1db8cdd0a35b8a93857c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c49b0a9414aa2109346d9ae3526521756517754b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098190"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671235"
 ---
 # <a name="delete-application"></a>删除应用程序
 
@@ -23,7 +23,7 @@ ms.locfileid: "62098190"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | Application.ReadWrite.All |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 

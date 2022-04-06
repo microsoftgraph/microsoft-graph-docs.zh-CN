@@ -1,16 +1,16 @@
 ---
 title: educationPointsOutcome 资源类型
-description: 提供数字成绩的 educationOutcome
-localization_priority: Normal
+description: 提供数值等级的 educationOutcome
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ebf9a0bf12b7c4a78f28c9d75c93469afec2c34c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 86e2b5bd8113b929252e78e4cf362ac1e966373f
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153620"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685178"
 ---
 # <a name="educationpointsoutcome-resource-type"></a>educationPointsOutcome 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "50153620"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供[数字成绩的 educationOutcome。](educationoutcome.md)
+提供数值等级 [的 educationOutcome](educationoutcome.md) 。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -30,8 +30,9 @@ ms.locfileid: "50153620"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|教师为此作业为学生提供的数字等级。|
-|publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|在将成绩释放给学生时所创建数据点属性的副本。|
+|id|String|educationPointsOutcome 的唯一标识符。|
+|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|老师给学生这个作业的数值等级。|
+|publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|分数发布给学生时所创建的 points 属性的副本。|
 
 ## <a name="relationships"></a>关系
 
@@ -52,6 +53,7 @@ ms.locfileid: "50153620"
 
 ```json
 {
+  "id": "String (identifier)",
   "points": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"},
   "publishedPoints": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"}
 }

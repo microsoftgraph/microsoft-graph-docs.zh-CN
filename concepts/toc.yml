@@ -443,10 +443,6 @@ items:
             href: search-concept-aggregation.md
           - name: 请求拼写更正（预览）
             href: search-concept-speller.md
-          - name: 剪裁重复搜索结果（预览）
-            href: search-concept-trim-duplicate.md
-          - name: 使用查询模板（预览）
-            href: search-concept-query-template.md
           - name: 排序搜索结果
             href: search-concept-sort.md
       - name: 安全性

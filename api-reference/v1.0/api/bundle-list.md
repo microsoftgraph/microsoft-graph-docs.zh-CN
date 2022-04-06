@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: 列出捆绑包
-description: 列出用户驱动器中的捆绑包
+description: 列出用户驱动器中的捆绑包。
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ac8277f00c46b47cdb074f6c167107300874714b
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: d136fdbd3f2398b6c0ba66b7622d509e4aff73a4
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63757886"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587838"
 ---
 # <a name="list-bundles"></a>列出捆绑包
 
@@ -38,25 +38,25 @@ GET /drive/bundles
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 [OData 查询参数][]筛选响应和生成响应形状。
+此方法支持使用 `$filter` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-在枚举捆绑包 `expand=children` 时，不能使用查询参数。
+你不能使用查询参数 `expand=children` 列出捆绑包。
 
 ## <a name="request-headers"></a>请求头
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。必需。 |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
-请勿为此方法提供请求正文。
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此请求将返回为驱动器定义的捆绑项列表。
+如果成功，此方法在响应`200 OK`正文中返回 响应代码和 [bundlebundle] 对象集合。[]
 
-有关错误响应的信息，请参阅 [错误响应][error-response]。
+有关错误响应的信息，请参阅 [Microsoft Graph错误响应和资源类型][error-response]。
 
 ## <a name="examples"></a>示例
 
@@ -66,6 +66,7 @@ GET /drive/bundles
 
 #### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
@@ -98,6 +99,10 @@ GET https://graph.microsoft.com/beta/drive/bundles
 
 #### <a name="response"></a>响应
 
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
 ```http
@@ -126,21 +131,20 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。
-
 
 ### <a name="example-2-list-all-photo-albums-in-a-drive"></a>示例 2：列出驱动器中所有的相册
 
-若要筛选从对 bundles `filter` 集合的请求返回的捆绑包列表，可以使用查询字符串参数指定要返回的捆绑包类型，具体方法为检查捆绑包上是否存在 Facet：
+若要筛选从对 bundles `filter` 集合的请求返回的捆绑包列表，可以使用查询字符串参数通过检查捆绑包上是否存在 Facet 来指定要返回的捆绑包的类型。
 
 #### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20null
+GET https://graph.microsoft.com/v1.0/drive/bundles?filter=bundle/album%20ne%20null
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-album-bundles-csharp-snippets.md)]
@@ -167,9 +171,10 @@ GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20nu
 
 #### <a name="response"></a>响应
 
-对捆绑包终结点的 GET 响应是包含 [捆绑包的 driveItem][] 资源的 [数组][]。
-由于所有捆绑包都是项目，因此您可以使用所有标准项操作。
+下面展示了示例响应。 对捆绑包终结点的 GET 响应是包含 [捆绑包的 driveItem][] 资源的 [数组][]。
+因为所有捆绑包都是项目，所以你可以对它们使用所有标准项操作。
 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
 ```http
@@ -204,13 +209,11 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。
-
 
 [捆绑]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 [error-response]: /graph/errors
-[OData 查询参数]: /graph/query-parameters
+[OData Query Parameters]: /graph/query-parameters
 
 <!-- {
   "type": "#page.annotation",

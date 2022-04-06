@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 45eba5747c46982d83e78b6e85df03eefbf1e04e
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 793170854597bc24127b1edeeaa8133c907c8467
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336366"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528125"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var groups = await graphClient.Groups
-    .Request()
+    .Request( queryOptions )
     .Header("ConsistencyLevel","eventual")
     .Filter("mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'")
     .Select("id,membershipRule,membershipRuleProcessingState")

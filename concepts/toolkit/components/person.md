@@ -1,16 +1,16 @@
 ---
-title: Microsoft Graph 功能中的人员Toolkit
+title: Microsoft 服务中的人员Graph Toolkit
 description: 人员组件用于通过使用联系人的照片、姓名和/或电子邮件地址来显示此人或联系人。
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: 59f2c6f286aa176ea2ebdad0044388bcfb25f896
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+author: sebastienlevert
+ms.openlocfilehash: 3d69bddd473bf43de4d713207ab8f54291cbcd7f
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336107"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589035"
 ---
-# <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 功能中的人员Toolkit
+# <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
 
 人员组件用于通过使用其照片、姓名、电子邮件地址或其他任何人员详细信息来显示此人或联系人。
 
@@ -28,9 +28,9 @@ ms.locfileid: "63336107"
 
 可以使用三个属性来设置人员详细信息。 每个实例仅使用以下属性之一：
 
-* 设置属性 `user-id` 或 `userId` 属性，以使用用户的 ID 从 Microsoft Graph 提取用户。
+* 设置属性`user-id`或`userId`属性以通过使用用户的 ID 从 Microsoft Graph获取用户。
 
-* 设置属性 `person-query` 或属性 `personQuery` 以在 Microsoft Graph 中搜索给定人员。 它将选择第一个可用的人员并提取该人员的详细信息。 电子邮件最适用于确保查询正确的人员，但名称也有效。
+* 设置属性`person-query`或属性`personQuery`以搜索 Microsoft Graph给定人员。 它将选择第一个可用的人员并提取该人员的详细信息。 电子邮件最适用于确保查询正确的人员，但名称也有效。
 
 * 设置属性 `person-presence` 或 `personPresence` 属性以手动向个人头像添加状态锁屏提醒。
 
@@ -50,7 +50,7 @@ ms.locfileid: "63336107"
 
   如果未提供图像，将提取一个图像 (（如果) ）。
 
-* 默认情况下，人员组件将仅请求标准 Microsoft Graph 用户属性 [集](/graph/api/user-get?&tabs=http#optional-query-parameters)。 为了请求其他属性，请将其声明为 的任何部分 `line(x)Property`。 
+* 默认情况下，人员组件将仅请求标准 Microsoft Graph属性[集。](/graph/api/user-get?&tabs=http#optional-query-parameters) 为了请求其他属性，请将其声明为 的任何部分 `line(x)Property`。 
 
 
 ## <a name="properties"></a>属性
@@ -59,14 +59,14 @@ ms.locfileid: "63336107"
 
 | 属性       | 属性       | 说明                                                   |
 | -----------     | ----------     | ------------------------------------------------------------- |
-| user-id         | userId         | 设置为用户 ID 以从 Microsoft Graph 提取该用户的详细信息和图像。|
-| person-query    | personQuery    | 设置为某人的姓名或电子邮件，以在 Microsoft Graph 中搜索某人并提取第一个人的详细信息和图像。|
+| user-id         | userId         | 设置为用户 ID 以从 Microsoft Graph 获取该用户的详细信息和Graph。|
+| person-query    | personQuery    | 设置为某人的姓名或电子邮件，以在 Microsoft Graph并提取第一个人的详细信息和图像。|
 | person-details  | personDetails  | 设置为表示人员的对象。 使用来自人员、用户、联系人或组、资源的对象。 |
 | fallback-details| fallbackDetails| 设置为一个对象，该对象表示在图中找不到用户/人员/联系人时的用户。
 | person-image    | personImage    | 设置要向人员显示的图像。 |
 | person-presence | personPresence | 为人员设置状态。 |
-| fetch-image     | fetchImage     | 将标志设置为根据 `personImage` 用户提供的对象自动 `personDetails` 从 Microsoft Graph 提取。 |
-| disable-image-fetch | disableImageFetch | 设置标志以禁用提取人员图像。 可用于避免指定属性时从 Microsoft Graph 获取不必要的 `personImage` 数据。
+| fetch-image     | fetchImage     | 将标志设置为根据`personImage`Graph自动`personDetails`从 Microsoft 网站提取。 |
+| disable-image-fetch | disableImageFetch | 设置标志以禁用提取人员图像。 可用于避免指定属性时从 Microsoft Graph不必要的`personImage`提取。
 | 头像类型     | 头像类型     | 设置为 或 `initials` `photo` 呈现任一显示状态 - 默认为照片。 |
 | view            | view           | 设置为控制呈现人员的方式。 默认值为 `avatar` <br /> `avatar` - 仅显示头像 <br /> `oneline` - 默认显示头像 `displayName` (第一)  <br /> `twolines`- 显示头像和两行`displayName``mail`文本 (默认显示)  <br /> `threelines` - 显示头像和三行 `displayName`文本 (， `mail` `jobTitle` 默认为)  |
 | line1-property  | line1Property  | 设置要用于第一行文本的 personDetails 的属性。 默认值为“`displayName`”。|
@@ -113,15 +113,15 @@ mgt-person {
 
 若要了解更多信息，请参阅 [设置组件样式](../customize-components/style.md)。
 
-## <a name="events"></a>活动
+## <a name="events"></a>事件
 
 从组件中触发以下事件。
 
 事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`line1clicked` | 单击第 1 行时触发 | 对象`person`，可以是 Graph [用户](/graph/api/resources/user)、[用户](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage`或具有包含用户照片 URL 的其他属性的联系人 | 否 | 否 | 是，除非您覆盖默认模板
-`line2clicked` | 单击第 2 行时触发 | 对象`person`，可以是 Graph [用户](/graph/api/resources/user)、[用户](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage`或具有包含用户照片 URL 的其他属性的联系人 | 否 | 否 | 是，除非您覆盖默认模板
-`line3clicked` | 单击第 3 行时触发 | 对象`person`，可以是 Graph [用户](/graph/api/resources/user)、[用户](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage`或具有包含用户照片 URL 的其他属性的联系人 | 否 | 否 | 是，除非您覆盖默认模板
+`line1clicked` | 单击第 1 行时触发 | 对象`person`，可以是包含Graph [](/graph/api/resources/user)[](/graph/api/resources/contact) `personImage` URL 的其他属性的用户、人员[](/graph/api/resources/person)或联系人 | 否 | 否 | 是，除非您覆盖默认模板
+`line2clicked` | 单击第 2 行时触发 | 对象`person`，可以是包含Graph [](/graph/api/resources/user)[](/graph/api/resources/contact) `personImage` URL 的其他属性的用户、人员[](/graph/api/resources/person)或联系人 | 否 | 否 | 是，除非您覆盖默认模板
+`line3clicked` | 单击第 3 行时触发 | 对象`person`，可以是包含Graph [](/graph/api/resources/user)[](/graph/api/resources/contact) `personImage` URL 的其他属性的用户、人员[](/graph/api/resources/person)或联系人 | 否 | 否 | 是，除非您覆盖默认模板
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
@@ -206,7 +206,7 @@ MgtPerson.config.useContactApis = false;
 
 | 属性 | 说明 |
 | ------------ | ------------- |
-| useContactApis | `boolean` - 指示人员组件是否可以使用 Microsoft Graph 个人联系人 API 搜索联系人详细信息和照片。 默认值为 `true`。  |
+| useContactApis | `boolean`- 指示人员组件是否可以使用 Microsoft Graph联系人 API 搜索联系人详细信息和照片。 默认值为 `true`。  |
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
@@ -233,7 +233,7 @@ MgtPerson.config.useContactApis = false;
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存数据|注解|
+|对象存储|缓存数据|备注|
 |---------|-----------|-------|
 |`photos`|人员照片|使用 时 `avatarType` ，将 设置为 `photo` ， `fetchImage` 将 设置为 `true`|
 |`presence`|人员状态|已使用，设置为`showPresence``true`|
