@@ -1,59 +1,53 @@
 ---
 title: 列出 memberOf
 description: '返回用户是其直接成员的组和目录角色。 '
-author: psaffaie
+author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 924e37162c7b0e0bb9819354738572ba7449e598
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 53b20d25de38c4a5412c0b50cb80f89141d8aeb7
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589441"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509894"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
 命名空间：microsoft.graph
 
-获取用户直接所属的[组](../resources/group.md)，[目录角色](../resources/directoryrole.md)和[管理单位](../resources/administrativeunit.md)。
+获取用户直接所属的[组](../resources/group.md)，[目录角色](../resources/directoryrole.md)和[管理单位](../resources/administrativeunit.md)。 
 
 ## <a name="permissions"></a>权限
-
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最低特权到最高特权）                                  |
-| :------------------------------------- | :--------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | User.Read、GroupMember.Read.All、Directory.Read.All、Directory.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | 不支持。                                                               |
-| 应用程序                            | Directory.Read.All、Directory.ReadWrite.All                                  |
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | User.Read、GroupMember.Read.All、Directory.Read.All、Directory.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
 > **注意：** 若要列出具有隐藏成员身份的组成员，需要 Member.Read.Hidden 权限。
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
-
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /me/memberOf
 GET /users/{id | userPrincipalName}/memberOf
 ```
-
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以强制转换为仅获取用户所属的 directoryRoles。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以强制转换为仅获取用户所属的 directoryRoles。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。 
 
 ## <a name="request-headers"></a>请求标头
-
-| 标头           | 值                                                                                                                                                                                                             |
-| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization    | Bearer {token}。必需。                                                                                                                                                                                         |
+| 标头       | 值 |
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。  |
 | ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
-
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
@@ -68,54 +62,47 @@ GET /users/{id | userPrincipalName}/memberOf
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_get_memberof"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/memberOf
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-memberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-memberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/user-get-memberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/user-get-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-get-memberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -123,7 +110,6 @@ GET https://graph.microsoft.com/v1.0/users/{id}/memberOf
   "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -150,7 +136,6 @@ Content-type: application/json
   "blockType": "ignored",
   "name": "get_user_memberof_count_only"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/$count
 ConsistencyLevel: eventual
@@ -160,12 +145,11 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -183,7 +167,6 @@ Content-type: text/plain
   "blockType": "ignored",
   "name": "get_count_only"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/microsoft.graph.group/$count
 ConsistencyLevel: eventual
@@ -196,7 +179,6 @@ ConsistencyLevel: eventual
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -214,7 +196,6 @@ Content-type: text/plain
   "blockType": "ignored",
   "name": "get_tier_count"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:tier"&$select=displayName,id
 ConsistencyLevel: eventual
@@ -224,7 +205,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -232,7 +213,6 @@ ConsistencyLevel: eventual
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -259,9 +239,8 @@ Content-type: application/json
   "blockType": "ignored",
   "name": "list_users_memberof_startswith"
 }-->
-
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
+GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a') 
 ConsistencyLevel: eventual
 ```
 
@@ -269,7 +248,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -277,7 +256,6 @@ ConsistencyLevel: eventual
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -296,7 +274,6 @@ Content-type: application/json
   ]
 }
 ```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

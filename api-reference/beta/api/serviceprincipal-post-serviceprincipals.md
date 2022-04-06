@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 0c0c0d40b39c761c68fdac02778a6f1032e99d59
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: d1d3e616582d6e5e5370aa9fc4ff31dcb707e53f
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671732"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477907"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 
@@ -21,9 +21,9 @@ ms.locfileid: "63671732"
 创建一个新的 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
 > [!IMPORTANT]
-> 不支持在创建 servicePrincipals 时添加 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](serviceprincipal-addpassword.md) 方法为 servicePrincipal 添加密码。
+> 不支持在创建 servicePrincipals 时添加 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](serviceprincipal-addpassword.md) 方法为 servicePrincipal 添加密码或机密。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

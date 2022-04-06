@@ -13,4 +13,4 @@ ms.locfileid: "59289509"
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> Microsoft Graph `/beta` 中的版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。 若要确定 API 在 v1.0 中是否可用，请使用版本 **选择** 器。
+> Microsoft Graph版本下的 `/beta` API 可能会发生更改。 不支持在生产应用程序中使用这些 API。 若要确定 API 是否在 v1.0 中可用，请使用 **版本** 选择器。
