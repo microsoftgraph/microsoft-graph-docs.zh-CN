@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 550a6ce0948638d939bff4b2aa8a014c4d4699d4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9bb94c5726897ed944a2cfbc4503ecc59986ce8f
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129672"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63759106"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-    Scope = "scope-value"
+    Scope = "User.ReadBasic.All Group.ReadWrite.All"
 }
 
 Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId -BodyParameter $params

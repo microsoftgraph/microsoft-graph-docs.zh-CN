@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6f0231791d243e9df6dd65f067564778326fa66a
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: afe1ebb541d8d83d7abd8d857383152e2756179b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346660"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669982"
 ---
 # <a name="directoryrole-delta"></a>directoryRole： delta
 
@@ -25,7 +25,7 @@ ms.locfileid: "62346660"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
@@ -155,7 +155,7 @@ Content-type: application/json
 
 ### <a name="see-also"></a>另请参阅
 
-- [使用 delta 查询跟踪 Microsoft Graph数据中的更改](/graph/delta-query-overview)，了解详细信息
+- [使用 delta 查询跟踪 Microsoft Graph数据中的更改](/graph/delta-query-overview)了解详细信息
 - [获取用户的增量更改](/graph/delta-query-users)获取示例请求。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

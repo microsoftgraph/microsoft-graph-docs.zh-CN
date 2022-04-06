@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 10bffe31804048328eac1ab1e8f080a2ef3ed263
-ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
+ms.openlocfilehash: a5b168df6c048588b033ed4b5fd33e46351a900f
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62047145"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477935"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 
@@ -41,7 +41,7 @@ Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分�
 
 ### <a name="fuzzy-searches-based-on-people-criteria"></a>基于人员条件的模糊搜索
 
-人员 API 允许你搜索与登录用户相关的人员，前提是你的应用已获取该用户授予的权限。 （详细了解[人员权限](permissions-reference.md#people-permissions)。）
+人员 API 允许你搜索与登录用户相关的人员，前提是你的应用已获取该用户授予的权限。（请在[人员权限](permissions-reference.md#people-permissions)阅读更多信息。）
 
 模糊搜索根据完全匹配以及搜索意图推断返回结果。 为了说明这一点，请见以下示例：这将返回与登录用户相关的、其名字或电子邮件地址中包含以“j”开头的单词的人员对象。
 
@@ -70,7 +70,7 @@ GET /me/people/?$search=j
 
 ### <a name="make-relevant-content-visible"></a>使相关内容可见
 
-在 Microsoft 365 中，Delve 使用 _热门_ 见解来帮助用户发现目前最令他们感兴趣的文档。 请参见图 1。
+在 Microsoft 365 中，Delve 使用 _热门_ 见解来帮助用户发现目前最令他们感兴趣的文档。请参见图 1。
 
 通过编程的方式，可以使用见解 API 中的[热门](/graph/api/resources/insights-trending)实体为应用客户提供类似体验。 使用“热门”实体可连接到最近热门或与用户相关的文档。 [列出热门文档](/graph/api/insights-list-trending)将返回存储在 OneDrive 或 SharePoint 团队网站上的文件，并参照这些文件的重要程度来对其排序。 
 
@@ -90,7 +90,7 @@ GET /me/people/?$search=j
 
 ## <a name="why-integrate-with-myanalytics-preview"></a>为什么要与 MyAnalytics（预览版）集成？
 
-[MyAnalytics](/workplace-analytics/myanalytics/index) 提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。
+[MyAnalytics](/viva/insights/introduction) 提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。
 
 借助分析 API，可以同步或集成用户分析数据与自定义第三方应用，以支持各种有助于提升用户工作效率和协作的方案。 例如，可以将 MyAnalytics 数据与移动设备活动集成，以帮助用户在一个应用中跟踪自己的所有工作和社交活动，并计划一天的日程安排。
  

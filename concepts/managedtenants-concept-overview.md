@@ -4,25 +4,25 @@ description: Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服
 author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
-ms.openlocfilehash: 7ce7d5a12b73d0e67f4ecef35f6ff3465c362fa8
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 5b7151b719823e880c1e6d90e5dbb3e739bff143
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61841789"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477963"
 ---
-# <a name="overview-for-multi-tenant-management-using-the-microsoft-365-lighthouse-api"></a>使用租户 API 进行多租户Microsoft 365 Lighthouse概述
+# <a name="overview-for-multi-tenant-management-using-the-microsoft-365-lighthouse-api"></a>使用应用程序 API 进行多租户Microsoft 365 Lighthouse概述
 
-Microsoft 365 Lighthouse是一个管理门户，它允许托管服务提供商 (MSP) 远程管理多个客户租户。 它可帮助使用 SMB 的中小型商业 (SMB) 级 MSP 大规模保护和管理Microsoft 365 商业高级版。
+Microsoft 365 Lighthouse是一个管理门户，它允许托管服务提供商 (MSP) 远程管理多个客户租户。 它可帮助 MSP 为使用 SMB 的中小型商业 (SMB 客户) 和管理Microsoft 365 商业高级版。
 
-Microsoft 365 Lighthouse可帮助 MSP 简化客户租户Microsoft 365 商业高级版载入。 它提供 MSP，方便跨所有客户租户环境查看多租户。 它可推荐为 MSP 的 SMB 客户定制的安全配置基线。 借助 Microsoft 365 Lighthouse，MSP 可以扩展其客户租户的管理，重点关注最重要的内容，快速查找和调查风险，并采取措施帮助其客户租户进入健康、安全的状态。
+Microsoft 365 Lighthouse可帮助 MSP 简化客户租户Microsoft 365 商业高级版载入。 它提供 MSP，方便跨所有客户租户环境查看多租户。 它可推荐为 MSP 的 SMB 客户定制的安全配置基线。 借助 Microsoft 365 Lighthouse，MSP 可以扩展其客户租户的管理，重点关注最重要的内容，快速查找和调查风险，并采取措施帮助其客户租户进入正常、安全的状态。
 
 > [!NOTE]  
-> 本文档与 Microsoft Microsoft 365 Lighthouse 上提供的 Graph API _有关_。 类似产品 Azure Lighthouse 通过使用内置于 Azure 平台的全面而稳固的管理工具，帮助服务提供商为 _Azure_ 服务提供托管服务。 若要了解更多信息，请参阅[什么是 Azure Lighthouse。](/azure/lighthouse/overview)
+> 本文档与 Microsoft Microsoft 365 Lighthouse 上提供的 _Graph API 有关_。 类似产品 Azure Lighthouse 通过使用内置于 Azure 平台的全面而稳固的管理工具，帮助服务提供商为 _Azure_ 服务提供托管服务。 若要了解更多信息，请参阅 [什么是 Azure Lighthouse](/azure/lighthouse/overview)。
 
-## <a name="why-integrate-with-microsoft-365-lighthouse"></a>为什么与Microsoft 365 Lighthouse？
+## <a name="why-integrate-with-microsoft-365-lighthouse"></a>为什么与 Microsoft 365 Lighthouse？
 
-作为 MSP，您可以使用 Microsoft Microsoft 365 Lighthouse API Graph了解确定的风险，并采取措施帮助客户进入健康、安全的状态。
+作为 MSP，您可以使用 Microsoft Graph 中的 Microsoft 365 Lighthouse API 深入了解确定的风险，并采取措施帮助客户进入健康、安全的状态。
 
 ### <a name="devices"></a>设备
 
@@ -35,28 +35,28 @@ Microsoft 365 Lighthouse可帮助 MSP 简化客户租户Microsoft 365 商业高�
 
 可以使用 Lighthouse API 执行以下威胁管理任务：
 
-- 深入了解客户注册用于管理的[](/graph/api/resources/managedtenants-windowsdevicemalwarestate)Windows 设备上存在恶意软件的状态。
-- 查看[注册用于](/graph/api/resources/managedtenants-windowsprotectionstate?view=graph-rest-beta&preserve-view=true)Windows客户管理的设备的保护状态，以确保使用Windows Defender的设备都运行正常。
+- 深入了解客户注册用于管理的 Windows [](/graph/api/resources/managedtenants-windowsdevicemalwarestate) 上存在恶意软件的状态。
+- 查看[注册用于](/graph/api/resources/managedtenants-windowsprotectionstate?view=graph-rest-beta&preserve-view=true)Windows客户管理的设备的保护状态，以确保Windows Defender设备都正常运行。
 
 ### <a name="users"></a>用户
 
 可以使用 Lighthouse API 执行以下用户任务：
 
-- 在 [客户中发现](/graph/api/resources/managedtenants-riskyuser?view=graph-rest-beta&preserve-view=true) 有风险的用户。
+- 在 [客户中发现](/graph/api/resources/riskyuser) 有风险的用户。
 - 查看 [凭据用户注册摘要](/graph/api/resources/managedtenants-credentialuserregistrationssummary?view=graph-rest-beta&preserve-view=true) ，了解你的客户中哪些用户注册了多重身份验证和自助服务密码重置。
 
 ## <a name="api-reference"></a>API 参考
 
 在查找此服务的 API 参考？
 
-请参阅[Microsoft 365 Lighthouse 预览版中的 Microsoft Graph (API) 。 ](/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta&preserve-view=true)
+请参阅 [microsoft Microsoft 365 Lighthouse 预览Graph (中的) ](/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta&preserve-view=true)API。
 
 > [!NOTE]
-> 该Microsoft 365 Lighthouse API 在 OData 子名称空间中定义 `microsoft.graph.managedTenants` 。
+> 该Microsoft 365 Lighthouse API 在 OData 子名称空间中定义`microsoft.graph.managedTenants`。
 
 
 ## <a name="next-steps"></a>后续步骤
 
-- 详细了解 Microsoft 365 Lighthouse[门户。](/microsoft-365/lighthouse/m365-lighthouse-overview?view=o365-worldwide&preserve-view=true)
-- 了解 Lighthouse [](/graph/whats-new-overview) API 的最新新功能和更新。
+- 详细了解 [Microsoft 365 Lighthouse 门户。](/microsoft-365/lighthouse/m365-lighthouse-overview?view=o365-worldwide&preserve-view=true)
+- 了解 Lighthouse API [](/graph/whats-new-overview) 的最新新功能和更新。
 - 浏览[示例](https://developer.microsoft.com/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。

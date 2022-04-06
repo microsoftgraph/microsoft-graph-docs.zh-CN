@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f6c47a286ae0f891a630d907bc64c6589d227ccc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b0a4bdc1d88a2759555d81c0628a12bdaab8002b
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089051"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63759287"
 ---
 ```powershell
 
@@ -24,6 +24,9 @@ $params = @{
     ImageId = "MicrosoftWindowsDesktop_Windows-10_19h1-evd"
     ImageType = "gallery"
     OnPremisesConnectionId = "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
+    WindowsSettings = @{
+        Language = "en-US"
+    }
 }
 
 New-MgDeviceManagementVirtualEndpointProvisioningPolicy -BodyParameter $params

@@ -5,12 +5,12 @@ title: driveItem
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 9b1da27ce64f07c386efd146847da417faeefa60
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: da35d9cb395e1aab22817e4304326848e9970791
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792195"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63559990"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -39,6 +39,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 具有 **文件夹** Facet 的项目充当项目的容器，因此具有指向文件夹下的 **driveItems** 集合的 `children` 引用。
 
 >**注意：** 在 OneDrive for Business 或 SharePoint 文档库中，如果 **driveItem** 具有 [folder][] Facet，则不返回 **cTag** 属性。
+
 
 ## <a name="methods"></a>方法
 
@@ -78,13 +79,14 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。 只读。 仅在个人OneDrive上。
+| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。 只读。 仅在 OneDrive 个人版上。
+| bundle               | [bundle][]         | 捆绑元数据（如果此项是捆绑包）。 只读。
 | content              | 流             | 内容流（如果此项表示一个文件）。
 | createdBy            | [identitySet][]    | 识别创建项目的用户、设备和应用程序。只读。
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
 | cTag                 | String             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。
 | deleted              | [deleted][]        | 有关项目删除状态的信息。只读。
-| description          | String             | 提供项的用户可见的说明。 读写。 仅在个人OneDrive上。
+| description          | String             | 提供该项的对用户可见的说明。读写。仅在 OneDrive 个人版上。
 | eTag                 | String             | 整个项目（元数据和内容）的 eTag。只读。
 | file                 | [file][]           | 文件元数据（如果此项是一个文件）。只读。
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
@@ -95,7 +97,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | lastModifiedDateTime | DateTimeOffset     | 上次修改项目的日期和时间。 只读。
 | location             | [geoCoordinates][] | 位置元数据（如果此项包含位置数据）。只读。
 | 恶意软件 (malware)              | [恶意软件][]        | 恶意软件元数据，如果检测到项目包含恶意软件。只读。
-| media                | [media][]          | 有关音频或 (项的媒体) 的信息。 读写。 仅在 OneDrive for Business 和 SharePoint。
+| media                | [media][]          | 有关音频或 (项的媒体) 的信息。 读写。 仅在 OneDrive for Business 和 SharePoint 上。
 | name                 | String             | 项目名称（文件名和扩展名）。读写。
 | package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
@@ -109,7 +111,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | sharepointIds        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 | size                 | Int64              | 项目大小，以字节为单位。只读。
 | specialFolder        | [specialFolder][]  | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。
-| source               | [driveItemSource][]| 有关驱动器项源的信息。 只读。 仅在 OneDrive for Business 和 SharePoint。
+| source               | [driveItemSource][]| 有关驱动器项源的信息。 只读。 仅在 OneDrive for Business 和 SharePoint 上。
 | video                | [video][]          | 视频元数据（如果此项是一个视频）。只读。
 | WebDavUrl            | String             | 项的可兼容 WebDAV 的 URL。
 | WebUrl               | String             | 在浏览器中显示此资源的 URL。只读。
@@ -157,7 +159,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds", "source", "media"],
@@ -166,6 +168,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 ```json
 {  
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "bundle": { "@odata.type": "microsoft.graph.bundle" },
   "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -226,7 +229,8 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 
 [audio]: audio.md
 [baseItem]: baseitem.md
-[Deleted]: deleted.md
+[bundle]: bundle.md
+[deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
 [driveItemSource]: driveItemSource.md
 [driveItemVersion]: driveitemversion.md

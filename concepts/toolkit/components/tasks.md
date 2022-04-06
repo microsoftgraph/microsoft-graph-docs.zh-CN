@@ -1,24 +1,24 @@
 ---
 title: Microsoft 服务中的任务Graph Toolkit
-description: 任务组件使用户能够查看、添加、删除、完成或编辑任务。 它适用于 Microsoft Planner 中的任何任务。
+description: 任务组件使用户能够查看、添加、删除、完成或编辑任务。 它适用于 Microsoft Planner 中Microsoft Planner。
 ms.localizationpriority: medium
-author: benotter
-ms.openlocfilehash: b25dadfeb34c045a7e3034860f208209a522362c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 92d38afc5d0385cde96f0b36b47c5a92de559e78
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129668"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586809"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的任务Graph Toolkit
 
-任务组件使用户能够查看、添加、删除、完成或编辑 Microsoft Planner 中的任务。  
+通过"任务"组件，用户可以查看、添加、删除、完成或编辑任务Microsoft Planner。  
 
-此外，用户能够将一个或多个 Microsoft Graph分配给任务。 有关 Microsoft 工作分配Graph，请参阅[plannerAssignments](/graph/api/resources/plannerassignments)。
+此外，用户能够将单个或多个 Microsoft Graph分配给任务。 有关 Microsoft 工作分配Graph，请参阅 [plannerAssignments](/graph/api/resources/plannerassignments)。
 
 ## <a name="example"></a>示例
 
-以下示例使用 组件显示已登录用户的 Microsoft Planner `mgt-tasks` 任务。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
+以下示例显示登录用户使用组件Microsoft Planner任务`mgt-tasks`。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-tasks--tasks&source=docs" height="500"></iframe>
 
@@ -28,13 +28,13 @@ ms.locfileid: "59129668"
 
 | 属性 | 属性 | 说明 |
 | -- | -- | -- |
-| 只读 | readOnly | 一个布尔值，用于将任务界面设置为只读， (添加或删除任务) 。 默认值为 `false`。 |
-| hide-header | hideHeader | 显示或隐藏组件标头的布尔值。 默认值为 `false`。 |
-| hide-options | hideOptions | 用于显示或隐藏任务中的选项的布尔值。 默认值为 `false`。
+| 只读 | readOnly | 一个布尔值，用于将任务界面设置为只读， (添加或删除任务) 。 默认值为“`false`”。 |
+| hide-header | hideHeader | 显示或隐藏组件标头的布尔值。 默认值为“`false`”。 |
+| hide-options | hideOptions | 用于显示或隐藏任务中的选项的布尔值。 默认值为“`false`”。
 | initial-id="planner_id/folder_id" | initialId | 一个字符串 ID，用于将最初显示的规划器或文件夹设置为提供的 ID。 |
 | initial-bucket-id="bucket_id" | initialBucketId | 一个字符串 ID，用于将最初显示的存储桶 (Planner Data-Source) 设置为提供的 ID。 |
 | target-id="planner_id/folder_id"| targetId | 一个字符串 ID，用于将任务接口锁定为提供的规划器或文件夹 ID。 |
-| target-bucket-id="bucket_id" |targetBucketId  | 一个字符串 ID，用于将任务接口锁定为 Planner (提供的Data-Source ID) 。 |
+| target-bucket-id="bucket_id" |targetBucketId  | 一个字符串 ID，用于将任务接口锁定为 Planner (Only Data-Source提供的) 。 |
 | group-id | groupId  | 用于将任务接口锁定为组 ID 的字符串 ID。 |
 | 不适用 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
 | 不适用 | taskFilter  | 可选函数，用于筛选向用户显示的任务。 |
@@ -118,9 +118,9 @@ mgt-tasks {
 }
 ````
 
-## <a name="events"></a>活动
+## <a name="events"></a>事件
 
-Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `taskAdded` | 新建任务后触发 | 新创建的任务，可以是 [plannerTask](/graph/api/resources/plannertask) [我们的 outlookTask](/graph/api/resources/outlooktask) | 否 | 否 | 是
 `taskChanged` | 更改任务元数据（如标记已完成）时触发 | 更新的任务，可以是 [plannerTask](/graph/api/resources/plannertask) [我们的 outlookTask](/graph/api/resources/outlooktask) | 否 | 否 | 否
@@ -131,7 +131,7 @@ Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义�
 
 ## <a name="templates"></a>模板
 
-组件 `tasks` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含组件 `<template>` 中的元素，将值 `data-type` 设置为下列值之一：
+组件 `tasks` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含 `<template>` 组件中的元素，将 `data-type` 值设置为下列值之一：
 
 | 数据类型     | 数据上下文              | 说明                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
@@ -159,20 +159,20 @@ Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义�
 
 | 配置 | 权限 | API |
 | ------------- | ---------- | --- |
-| `groupId` set and `dataSource` set to `TasksSource.planner` | Group.Read.All | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans?view=graph-rest-1.0&tabs=http)、 [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http)、 [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
-| `targetId` set and `dataSource` set to `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0) [、/me/outlook/taskGroups/${groupId}/taskFolders、/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) [](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |
-| `targetId` set and `dataSource` set to something else than `TasksSource.todo` | Group.Read.All | [/planner/plans/${planId}](/graph/api/plannerplan-get?view=graph-rest-1.0&tabs=http)、 [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http)、 [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
-| `dataSource` 设置为 `TasksSource.planner` | Group.Read.All | [/me/planner/plans](/graph/api/planneruser-list-plans?view=graph-rest-1.0&tabs=http)， [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http)， [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
-| `dataSource` 设置为 `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0) [、/me/outlook/taskGroups/${groupId}/taskFolders、/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) [](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |
-| `addTask` 设置为 `true` ， `dataSource` 设置为 `TasksSource.planner` | Group.ReadWrite.All | [/planner/tasks](/graph/api/planner-post-tasks?view=graph-rest-1.0&tabs=http) |
-| `addTask` 设置为 `true` ， `dataSource` 设置为 `TasksSource.todo` | Tasks.ReadWrite | [/me/outlook/taskFolders/${parentFolderId}/tasks](/graph/api/outlookuser-post-tasks?view=graph-rest-beta&tabs=csharp) |
+| `groupId` set and `dataSource` set to `TasksSource.planner` | Group.Read.All | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans?tabs=http)、 [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets&tabs=http)、 [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?tabs=http) |
+| `targetId` set and `dataSource` set to `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0)、 [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&preserve-view=true&tabs=http)、 [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&preserve-view=true&tabs=http) |
+| `targetId` set and `dataSource` set to something else than `TasksSource.todo` | Group.Read.All | [/planner/plans/${planId}](/graph/api/plannerplan-get?tabs=http)、 [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?tabs=http)、 [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?tabs=http) |
+| `dataSource` 设置为 `TasksSource.planner` | Group.Read.All | [/me/planner/plans](/graph/api/planneruser-list-plans?tabs=http)、 [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?tabs=http)、 [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?tabs=http) |
+| `dataSource` 设置为 `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0)、 [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&preserve-view=true&tabs=http)、 [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&preserve-view=true&tabs=http) |
+| `addTask`设置为 ，`true`设置为`dataSource``TasksSource.planner` | Group.ReadWrite.All | [/planner/tasks](/graph/api/planner-post-tasks?tabs=http) |
+| `addTask`设置为 ，`true`设置为`dataSource``TasksSource.todo` | Tasks.ReadWrite | [/me/outlook/taskFolders/${parentFolderId}/tasks](/graph/api/outlookuser-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=csharp) |
 
-对于 Microsoft Planner 数据源，提取和读取任务需要 Groups.Read.All 权限。 添加、更新或删除任务需要 Groups.ReadWrite.All 权限。
+对于Microsoft Planner数据源，提取和读取任务需要 Groups.Read.All 权限。 添加、更新或删除任务需要 Groups.ReadWrite.All 权限。
 
 ## <a name="authentication"></a>身份验证
 
-任务组件使用身份验证文档 中所述的全局 [身份验证提供程序](../providers/providers.md)。
+任务组件使用身份验证文档中介绍的全局 [身份验证提供程序](../providers/providers.md)。
 
 ## <a name="cache"></a>缓存
 
-`mgt-tasks`组件不缓存任何数据。
+组件 `mgt-tasks` 不缓存任何数据。

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 89c777179b3315f81b7378f9a829c81019b70120
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5cd44344f9be5087627b3b4bdd335f121372c1f5
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62087528"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629016"
 ---
 # <a name="get-unifiedroleassignment"></a>获取 unifiedRoleAssignment
 
@@ -18,17 +18,29 @@ ms.locfileid: "62087528"
 
 检索 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+### <a name="for-the-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
+
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
+### <a name="for-the-entitlement-management-provider"></a>对于权利管理提供程序
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） |  EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All  |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | 不支持。 |
+
 ## <a name="http-request"></a>HTTP 请求
+
+获取角色分配提供程序的名称：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,9 +48,17 @@ ms.locfileid: "62087528"
 GET /roleManagement/directory/roleAssignments/{id}
 ```
 
+获取角色分配管理提供程序的许可证：
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments/{id}
+```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,7 +72,7 @@ GET /roleManagement/directory/roleAssignments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -130,7 +150,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面是一个包含查询参数 `$expand` 的请求示例。
+下面是一个包含查询参数的请求 `$expand` 示例。
 
 
 
@@ -141,7 +161,7 @@ Content-type: application/json
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition,principal,directoryScope
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-csharp-snippets.md)]
@@ -206,18 +226,7 @@ Content-type: application/json
       "isEnabled": true,
       },
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "principal": {
-      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-      "id": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d ",
-      "userPrincipalName": "alice@contoso.com",
-      "displayName": "Alice Smith"
-    },
-    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScope": {
-      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization/$entity",
-      "id": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
-      "displayName": "Contoso_Seattle_Admins"
-    }
+    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d"
 }
 ```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

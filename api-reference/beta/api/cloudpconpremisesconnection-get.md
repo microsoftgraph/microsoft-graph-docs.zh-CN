@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 02f65bfde17598e36b9e8966e630f00dcf79b451
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 7db89f3a6181ad4e6dad8d424c00f4af99428a61
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262055"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671305"
 ---
 # <a name="get-cloudpconpremisesconnection"></a>获取 cloudPcOnPremisesConnection
 
@@ -120,6 +120,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "managedBy": "windows365",
     "type": "hybridAzureADJoin",
     "displayName": "Display Name value",
     "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
@@ -193,6 +194,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "managedBy": "windows365",
     "displayName": "Display Name value",
     "healthCheckStatus": "failed",
     "healthCheckStatusDetails": {

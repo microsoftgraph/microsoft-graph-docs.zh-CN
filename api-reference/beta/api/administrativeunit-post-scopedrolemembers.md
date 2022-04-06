@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b402f95fb9f6d83d73910753909b8bc676d2ab05
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 84bdfc68985fae07a9f19e2fdb84f418c6967fcd
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103973"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668988"
 ---
 # <a name="add-a-scopedrolemember"></a>添加 scopedRoleMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "62103973"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加新的 [scopedRoleMembership](../resources/scopedrolemembership.md)。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
+添加新 [的 scopedRoleMembership](../resources/scopedrolemembership.md)。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "62103973"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.ReadWrite.Directory |
 
@@ -45,7 +45,7 @@ POST /administrativeUnits/{id}/scopedRoleMembers
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

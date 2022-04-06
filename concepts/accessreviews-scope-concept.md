@@ -1,18 +1,18 @@
 ---
-title: 使用 Microsoft Graph API 配置访问评审的范围
+title: 使用 Microsoft 网站配置访问评审图形 API
 description: 了解如何使用 Microsoft 网站中的访问评审 API Graph查看对Azure AD的访问权限。
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 8224e78c0597777520de13906c7f3e302703cfd5
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4d1439e2086934ad01fcc83978b70c6dc68b083c
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394500"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509915"
 ---
-# <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 配置访问评审的范围
+# <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft 网站配置访问评审图形 API
 
 访问Azure AD [API](/graph/api/resources/accessreviewsv2-overview) 允许你以编程方式查看用户、服务主体或组对访问你的Azure AD的访问权限。
 
@@ -60,6 +60,7 @@ ms.locfileid: "63394500"
     "queryType": "MicrosoftGraph"
 }
 ```
+
 ### <a name="example-3-review-all-users-assigned-to-all-microsoft-365-groups"></a>示例 3：查看分配给所有组的所有Microsoft 365用户
 
 ```http
@@ -90,7 +91,7 @@ ms.locfileid: "63394500"
 ```
 
 由于此检查适用于所有Microsoft 365组，因此请配置 **instanceEnumerationScope** 以指定Microsoft 365组。 请注意，此审阅中不包含动态组和角色可分配组。
-    
+
 ### <a name="example-5-review-all-guest-users-assigned-to-all-teams"></a>示例 5：查看分配给所有用户的所有来宾Teams
 
 ```http
@@ -106,6 +107,8 @@ ms.locfileid: "63394500"
 ```
     
 由于此审查适用于所有Teams组Microsoft 365，因此请配置 **instanceEnumerationScope** 以指定Teams的Microsoft 365组。  请注意，此审阅中不包含动态组和角色可分配组。
+
+此评论不包括使用共享频道的团队中的 B2B 直接连接用户。 若要在具有共享频道的团队中包括 B2B 直接连接用户，请参阅示例 14：查看分配给团队的所有用户，包括使用共享频道的团队中的 [B2B](#example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) 直接连接用户。
 
 ### <a name="example-6-review-all-inactive-guest-users-assigned-to-all-microsoft-365-groups"></a>示例 6：查看分配给所有非活动来宾组的所有非Microsoft 365用户
 
@@ -140,6 +143,8 @@ ms.locfileid: "63394500"
 ```
 
 由于此审查适用于所有团队，因此请配置 **instanceEnumerationScope** 属性以指定所有团队。 请注意，此审阅中不包含动态组和角色可分配组。
+
+此评论不包括使用共享频道的团队中的 B2B 直接连接用户。 若要在具有共享频道的团队中包括 B2B 直接连接用户，请参阅示例 14：查看分配给团队的所有用户，包括使用共享频道的团队中的 [B2B](#example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) 直接连接用户。
 
 ### <a name="example-8-review-all-assignment-to-entitlement-management-access-packages"></a>示例 8：查看对权利管理访问包的所有分配
 
@@ -220,7 +225,44 @@ ms.locfileid: "63394500"
 
 本示例中，主体是处于非活动状态的所有来宾用户，其不活动期计算为自访问评审实例的开始日期起 30 天。
 
-### <a name="example-14-review-all-guest-users-assigned-to-a-directory-role"></a>示例 14：查看分配给目录角色的所有来宾用户
+### <a name="example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels"></a>示例 14：查看分配给团队的所有用户，包括使用共享频道直接连接团队中的用户
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/users",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        }
+    ],
+    "resourceScopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/groups/{groupId}/transitiveMembers",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/teams/{groupId}/channels?$filter=(membershipType eq 'shared')",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        }
+    ]
+}
+```
+
+本示例中，访问评审的范围为属于团队成员或分配到团队内共享频道的所有用户，包括内部用户、B2B 协作用户和 B2B 直接连接用户。
+
+若要查看共享频道中的 B2B `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` 直接连接用户和团队，必须在 **resourceScopes** 对象中指定查询模式。 所有 *团队* 评审（如示例 [7](#example-5-review-all-guest-users-assigned-to-all-teams)）不会在共享频道中包括 B2B 直接连接用户和团队。
+
+> [!NOTE]
+> B2B 直接连接用户和团队的访问评审仅在单阶段访问评审中受支持，在多阶段访问评审中不受支持。
+
+### <a name="example-15-review-all-guest-users-assigned-to-a-directory-role"></a>示例 15：查看分配给目录角色的所有来宾用户
 
 ```http
 "scope": {
@@ -246,3 +288,4 @@ ms.locfileid: "63394500"
 
 + [向访问评审定义分配审阅者](/graph/accessreviews-reviewers-concept)
 + [试用教程，](/graph/accessreviews-overview)了解如何使用访问评审 API 查看对Azure AD的访问权限
++ [创建访问评审](/azure/active-directory/governance/create-access-review)

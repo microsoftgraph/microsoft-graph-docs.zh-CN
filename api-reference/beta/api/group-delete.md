@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3aa8727d0a3d60141673877a25316707a080783d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: af36c7978718b2fd8d97bf70a862ba61f205345e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113487"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669744"
 ---
 # <a name="delete-group"></a>删除组
 
@@ -28,7 +28,7 @@ ms.locfileid: "62113487"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.AccessAsUser.All   |
+|委派（工作或学校帐户） | Group.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All |
 

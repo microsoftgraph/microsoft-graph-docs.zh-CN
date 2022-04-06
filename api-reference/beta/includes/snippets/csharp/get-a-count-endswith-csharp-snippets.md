@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 038ee2334eae5954701eae3cea44f3a58550de9d
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: ff6b9410b12ce837ed0587c8029c3a186c3597d1
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63351177"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528179"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var users = await graphClient.Users
-    .Request()
+    .Request( queryOptions )
     .Header("ConsistencyLevel","eventual")
     .Filter("endswith(mail,'a@contoso.com')")
     .OrderBy("userPrincipalName")

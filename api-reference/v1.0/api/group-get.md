@@ -1,16 +1,16 @@
 ---
 title: 获取组
 description: 获取组对象的属性和关系。
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b124d838766c03425ab6710fa18f5aa1e936eded
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 9bf782bfaa75dbb4c31e62d23c43a8b4465e944a
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672621"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587705"
 ---
 # <a name="get-group"></a>获取组
 
@@ -20,39 +20,46 @@ ms.locfileid: "63672621"
 
 此操作在默认情况下仅返回所有可用属性的一部分，如[属性](../resources/group.md#properties)部分中所示。 若要获取 _非_ 默认返回的属性，请在 `$select` OData 查询选项中指定这些属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。
 
->**注意：** 此请求可能对最近创建、更新或删除的组具有复制延迟。
+> **注意：** 此请求可能对最近创建、更新或删除的组具有复制延迟。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All  |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| 权限类型                        | 权限（从最低特权到最高特权）                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| 委派（工作或学校帐户）     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
+| 应用程序                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
->**注意：** 根据你尝试访问的组功能，权限可能会受到限制。 有关详细信息，请参阅 [Microsoft Graph 的已知问题](/graph/known-issues)中的[组](/graph/known-issues#groups)部分。
+> **注意：** 根据你尝试访问的组功能，权限可能会受到限制。 有关详细信息，请参阅 [Microsoft Graph 的已知问题](/graph/known-issues)中的[组](/graph/known-issues#groups)部分。
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 可以使用 `$select` 获取特定组属性，包括非默认返回的属性。
 
 有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+
+| 名称          | 类型   | 说明               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象。 除非使用 `$select` 指定特定属性，它会返回默认属性。
 
 ## <a name="example"></a>示例
@@ -61,23 +68,25 @@ GET /groups/{id}
 
 返回所有默认属性。
 
-#### <a name="request"></a>请求 
+#### <a name="request"></a>请求
 
-下面是一个 GET 请求示例。 
+下面是一个 GET 请求示例。
 
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
   "name": "get_group"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 ```
 
 #### <a name="response"></a>响应
+
 下面是一个响应示例。它仅包括默认属性。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。在实际调用中将返回每个组的所有默认属性。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。在实际调用中将返回每个组的所有默认属性。
 
 <!-- {
   "blockType": "response",
@@ -85,6 +94,7 @@ GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
   "@odata.type": "microsoft.graph.group",
   "name": "get_group"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -132,7 +142,6 @@ Content-type: application/json
 }
 ```
 
-
 ### <a name="example-2-return-additional-properties-by-using-select"></a>示例 2：通过使用 $select 返回其他属性
 
 通过使用 `$select` 返回其他属性。
@@ -141,42 +150,49 @@ Content-type: application/json
 
 下面是一个 GET 请求示例。
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
   "name": "get_group_non_default"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-non-default-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-non-default-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-non-default-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-non-default-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-non-default-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-group-non-default-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### <a name="response"></a>响应
 
@@ -188,6 +204,7 @@ GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
   "@odata.type": "microsoft.graph.group",
   "name": "get_group_non_default"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -202,7 +219,6 @@ Content-type: application/json
 }
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -214,4 +230,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

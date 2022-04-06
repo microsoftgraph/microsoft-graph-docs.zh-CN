@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ca76958de22160e61a9fcb874126893619fed688
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 7ce73c668bb9fb9031851ef2c232d9be0e2efb05
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509110"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671480"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -467,7 +467,7 @@ Content-type: text/plain
 
 <!-- {
   "blockType": "ignored",
-  "name": "list_users_startswith"
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1

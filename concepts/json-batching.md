@@ -4,12 +4,12 @@ description: JSON 批处理使你能够通过将多个请求合并为一个单�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: e20cc488589ae8403b5b6013de3f12caf3b62b92
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 55de4d5a122487173425ad297f8834267534f659
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526077"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477424"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理在一个 HTTP 调用中合并多个请求
 
@@ -27,13 +27,11 @@ ms.locfileid: "61526077"
 
 首先，为之前的示例构建 JSON 批处理请求。在这种情况下，单个请求不会以任何方式互相依赖，因此可以按任意顺序放入批处理请求中。
 
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/$batch
 Accept: application/json
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -66,14 +64,12 @@ Content-Type: application/json
 }
 ```
 
-对批处理请求的响应可能会按不同的顺序显示。`id` 属性可用于关联各个请求和响应。
+对批处理请求的响应可能会按不同的顺序显示。**id** 属性可用于关联各个请求和响应。
 
 ```http
 200 OK
 Content-Type: application/json
-```
 
-```json
 {
   "responses": [
     {
@@ -112,29 +108,32 @@ Content-Type: application/json
 
 ## <a name="request-format"></a>请求格式
 
-批处理请求始终使用 `POST` 发送到 `/$batch` 终结点。
+批处理请求始终使用 **POST** 发送到 `/$batch` 终结点。
 
-JSON 批处理请求正文包含具有一个必需的属性 `requests` 的单个 JSON 对象。`requests` 属性是一组单独请求。对于每个单独请求而言， `id`、`method` 和 `url` 属性是必需的。
+JSON 批处理请求正文由具有一个必需属性的单个 JSON 对象组成: **请求**。**请求** 属性是单个请求的集合。对于每个单独的请求，可以传递以下属性。
 
-`id` 属性主要用作关联单个响应和请求的相关值。这使服务器可以最高效的顺序处理批处理中的请求。
 
-`method` 和 `url` 正是你在任何给定的 HTTP 请求开头看到的属性。该方法是 HTTP 方法，且 URL 是通常会向其发送单独请求的资源 URL。
-
-单独请求还可以视需要包含 `headers` 属性和 `body` 属性。 这两种属性通常都是 JSON 对象，如上一示例所示。 在某些情况下，`body` 可能是经过 base64 URL 编码的值，而不是 JSON 对象（例如，当正文为图像时）。 如果 `body` 包含在该请求中，`headers` 对象必须包含 `Content-Type` 的值。
+| 属性 | 说明 |
+|----------|-------------|
+| id       | 必填。用于将单个响应与请求相关联的相关值。此值允许服务器以最高效的顺序处理批处理中的请求。    |
+| 方法   | 必需项。 HTTP 方法。    |
+| url      | 必需项。 单个请求通常会发送到的相对资源 URL。 因此，尽管绝对 URL 为 `https://graph.microsoft.com/v1.0/users`，但此 URL 为 `/users`。 |
+| 标头   | 可选，但在指定 **正文** 时是必填的。 具有标头的键/值对的 JSON 对象。 例如，当需要 **ConsistencyLevel** 标头时，此属性将表示为 `"headers": {"ConsistencyLevel": "eventual"}`。 提供 **正文** 时，必须包含 **Content-Type** 标头。    |
+| body   | 可选。 可以是 JSON 对象或 base64 URL 编码的值，例如，当正文是图像时。 当请求中包含 **正文** 时，**标头** 对象必须包含 **Content-Type** 的值。 |
 
 ## <a name="response-format"></a>响应格式
 
 JSON 批处理请求的响应格式与请求格式类似。主要区别如下：
 
-* 主 JSON 对象的中属性被命名为 `responses`，与 `requests` 相反。
+* 主 JSON 对象中的属性命名为 **响应** 而不是 **请求**。
 * 单独响应可能会按与请求不同的顺序显示。
-* 单独响应包含的是 `status` 属性，而不是 `method` 和 `url` 属性。`status` 的值是表示 HTTP 状态代码的数字。
+* 单个响应具有 **状态** 属性，而不是 **方法** 和 **URL**。**状态** 值是表示 HTTP 状态代码的数字。
 
-批处理响应中的状态代码通常为 `200` 或 `400`。如果批处理请求本身格式不正确，则状态代码为 `400`。如果批处理请求可分析，则状态代码为 `200`。批处理响应中的 `200` 状态代码并不表示批处理中的单独请求已成功。这就是为什么 `responses` 属性中的每个单独响应都有状态代码。
+批处理响应中的状态代码通常为 `200` 或 `400`。如果批处理请求本身格式不正确，则状态代码为 `400`。如果批处理请求可分析，则状态代码为 `200`。批处理响应中的 `200` 状态代码并不表示批处理中的单独请求已成功。这就是为什么 **响应** 属性中的每个单独响应都有状态代码。
 
 ## <a name="sequencing-requests-with-the-dependson-property"></a>使用 dependsOn 属性对请求进行排序
 
-通过使用 `dependsOn` 属性可按指定顺序执行单独请求。此属性是引用不同的单独请求的 `id` 的字符串数组。出于这个原因，`id` 的值必须唯一。例如，在下面的请求中，客户端指定请求 1 和 3 应该先运行，然后是请求 2，然后是请求 4。
+可以通过使用 **dependsOn** 属性按指定顺序执行单个请求。此属性是引用不同单个请求的 **ID** 的字符串数组。因此，**ID** 值必须是唯一的。例如，在以下请求中，客户端指定应按照请求 1 中运行请求，然后请求 3，然后请求 2，然后请求 4。
 
 ```json
 {
@@ -151,13 +150,14 @@ JSON 批处理请求的响应格式与请求格式类似。主要区别如下：
       "url": "..."
     },
     {
-      "id": "3",
+      "id": "4",
+      "dependsOn": [ "2" ],
       "method": "GET",
       "url": "..."
     },
     {
-      "id": "4",
-      "dependsOn": [ "2" ],
+      "id": "3",
+      "dependsOn": [ "4" ],
       "method": "GET",
       "url": "..."
     }
@@ -166,6 +166,9 @@ JSON 批处理请求的响应格式与请求格式类似。主要区别如下：
 ```
 
 如果单独请求失败，任何依赖此请求的请求都会失败，且状态代码为 `424`（依赖项失败）。
+
+> [!TIP]
+> 批处理应是完全有序的或完全并行的。
 
 ## <a name="bypassing-url-length-limitations-with-batching"></a>使用批处理绕过 URL 长度限制
 

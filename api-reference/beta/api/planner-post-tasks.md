@@ -1,16 +1,16 @@
 ---
 title: 创建 plannerTask
-description: 使用此 API 新建 **plannerTask**。
+description: 创建新的 plannerTask。
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ec674e9a807a34b2e130f0fbd8bf3c7a6257a546
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a699b06c0f2e0a6428709a017365790723ea22b2
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118585"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477865"
 ---
 # <a name="create-plannertask"></a>创建 plannerTask
 
@@ -18,15 +18,16 @@ ms.locfileid: "62118585"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 新建 **plannerTask**。
-## <a name="permissions"></a>权限
+创建新的 **plannerTask**。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Tasks.ReadWrite，Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -37,19 +38,21 @@ POST /planner/tasks
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
+| Content-Type   | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [plannerTask](../resources/plannertask.md) 对象的 JSON 表示形式。**plannerTask** planId 属性必须设为现有的 [plannerPlan](../resources/plannerplan.md) 对象的 id。
+在请求正文中，提供 [plannerTask](../resources/plannertask.md) 对象的 JSON 表示形式。
+**plannerTask** planId 属性必须设置为现有 [plannerPlan](../resources/plannerplan.md) 对象的 ID。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [plannerTask](../resources/plannertask.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [plannerTask](../resources/plannertask.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法的处理最常见的错误为 400、403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -90,9 +93,9 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [plannerTask](../resources/plannertask.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

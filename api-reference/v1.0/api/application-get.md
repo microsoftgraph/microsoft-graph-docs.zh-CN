@@ -5,8 +5,13 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
+ms.openlocfilehash: 93cf1bb04cdc0a1244adf403e0044d4c5893502b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672719"
 ---
-
 # <a name="get-application"></a>获取应用程序
 
 命名空间：microsoft.graph
@@ -18,7 +23,7 @@ doc_type: apiPageType
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、、 Directory.Read.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | Application.Read.All， Application.ReadWrite.All |
 |应用程序 | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
@@ -32,7 +37,7 @@ GET /applications/{id}
 
 此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 检索特定应用程序属性。
 
-默认情况下，此 API 不会返回 **keyCredential** 属性中 **密钥** 的公钥值，除非已在 `$select` 查询中指定了 **keyCredentials** 。 例如，`$select=id,appId,keyCredentials`。
+默认情况下，此 API 不会返回 **keyCredentials** 属性中 **密钥** 的公钥值，除非已在 `$select` 查询中指定了 **keyCredentials**。例如，`$select=id,appId,keyCredentials`。
 
 对于每个租户，使用 `$select` 获取应用程序的 **keyCredentials** 的限制为每分钟 150 个请求。
 

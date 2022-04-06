@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fe36e06b13898a9a26d8390e6796149a7e0acc1b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bf27d30d17e591be99daa75669d1571bee170cf4
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089050"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63759210"
 ---
 ```javascript
 
@@ -27,7 +27,10 @@ const cloudPcProvisioningPolicy = {
     imageDisplayName: 'Windows-10 19h1-evd',
     imageId: 'MicrosoftWindowsDesktop_Windows-10_19h1-evd',
     imageType: 'gallery',
-    onPremisesConnectionId: '4e47d0f6-6f77-44f0-8893-c0fe1701ffff'
+    onPremisesConnectionId: '4e47d0f6-6f77-44f0-8893-c0fe1701ffff',
+    windowsSettings: {
+        language: 'en-US'
+    }
 };
 
 await client.api('/deviceManagement/virtualEndpoint/provisioningPolicies')

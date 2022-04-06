@@ -4,13 +4,13 @@ description: 在 PIM 中注册 governanceResource 对象。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 88f379e283fcfb2cdee2fb44f4f33baa3eeb3c3b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 22274dd73fe3c2a227bedb863d8d95fd6d38bc3b
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687107"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510300"
 ---
 # <a name="governanceresource-register"></a>governanceResource： register
 
@@ -18,11 +18,11 @@ ms.locfileid: "60687107"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-在 Privileged Identity Management 中注册[governanceResource](../resources/governanceresource.md) Privileged Identity Management。
+在 Privileged Identity Management 中注册 [governanceResource](../resources/governanceresource.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
@@ -61,9 +61,9 @@ POST /privilegedAccess/azureResources/resources/register
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法 **仅** 支持 `$select` 和 `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法 **仅** 支持 和 `$select` `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称 | 说明 |
 |:---- |:----------- |
@@ -74,11 +74,11 @@ POST /privilegedAccess/azureResources/resources/register
 
 | 属性 | 类型 | 说明 |
 |:---------- |:---- |:----------- |
-| externalId | String | 在 PIM 中注册的资源的外部标识符。 如果注册订阅，标识符是预先预置的订阅标识符 `/subscriptions/` 。 例如，`/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`。 |
+| externalId | String | 在 PIM 中注册的资源的外部标识符。 如果注册订阅，标识符是预先预置的订阅标识符 `/subscriptions/`。 例如，`/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `200 OK` 响应。
+如果成功，此方法将返回 响应 `200 OK` 。
 
 ## <a name="example"></a>示例
 

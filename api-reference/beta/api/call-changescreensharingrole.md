@@ -1,16 +1,16 @@
 ---
 title: call： changeScreenSharingRole
 description: 允许应用程序与组呼叫的参与者共享屏幕内容。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 360ceab522ca22d95fb58ae4d691e54800ad0a84
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2595beeb9fa00c15853a1dbd776f14d05632694a
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345708"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607433"
 ---
 # <a name="call-changescreensharingrole"></a>call： changeScreenSharingRole
 
@@ -22,14 +22,14 @@ ms.locfileid: "62345708"
 
 > **注意：** 这仅适用于使用媒体的组App-Hosted支持。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | Calls.AccessMedia.All                       |
+| Application                            | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ POST /communications/calls/{id}/changeScreenSharingRole
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|role|字符串|可能的值包括："viewer"和"sharer"|
+|role|String|可能的值包括："viewer"和"sharer"|
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回 响应 `202 Accepted` 代码，所有参与者都将收到名单更新。

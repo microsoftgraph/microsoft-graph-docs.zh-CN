@@ -1,16 +1,16 @@
 ---
 title: 列出参与者
 description: 检索调用中的参与者对象列表。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6120c14bc8446b08f5f73b63b0057bd99a0ba5d6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3c2fb96d7613ee8dc31d3f82ef90dd25f1775bdf
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131647"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607412"
 ---
 # <a name="list-participants"></a>列出参与者
 
@@ -26,7 +26,9 @@ ms.locfileid: "62131647"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | None                                        |
+| Application     | Calls.Initiate.All、Calls.AccessMedia.All  |
+
+> **注意：** 创建调用时检查权限;调用此 API 时，不会进行其他权限检查。 Calls.AccessMedia.All 仅对于使用应用托管媒体的呼叫是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +44,7 @@ GET /communications/calls/{id}/participants
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明               |
 |:--------------|:--------------------------|
@@ -54,7 +56,7 @@ GET /communications/calls/{id}/participants
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/participant.md) 代码和 participant 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [participant](../resources/participant.md) 对象集合。
 
 ## <a name="example"></a>示例
 

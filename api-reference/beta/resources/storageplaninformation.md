@@ -1,17 +1,17 @@
 ---
 author: psampath
-description: StoragePlanInformation 资源提供有关驱动器的存储配额计划的信息。
+description: storagePlanInformation 资源提供有关驱动器的存储配额计划的信息。
 ms.date: 06/20/2018
 title: StoragePlanInformation
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4c115276631c67cb796fd06c582dd490d4c59b20
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db5707686f6104d8d9004696094c0bcc22066f5a
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019472"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723268"
 ---
 # <a name="storageplaninformation-resource-type"></a>storagePlanInformation 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "48019472"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**StoragePlanInformation**资源提供有关驱动器的存储配额计划的信息。
+**storagePlanInformation** 资源提供有关驱动器的存储配额计划的信息。
 
 ### <a name="json-representation"></a>JSON 表示形式
 
@@ -35,12 +35,12 @@ ms.locfileid: "48019472"
 }
 
 ```
+
 ## <a name="properties"></a>属性
 
-| 属性名称     | 类型      | 说明                                                             |
-|:------------------|:----------|:----------------------------------------------------------------------- |
-| upgradeAvailable  | Boolean   | 指示是否有更高的存储配额计划可用。 只读。 |
-
+| 属性         | 类型    | 说明                                                             |
+| :--------------- | :------ | :---------------------------------------------------------------------- |
+| upgradeAvailable | Boolean | 指示是否有更高的存储配额计划可用。 只读。 |
 
 <!--
 {
@@ -52,6 +52,3 @@ ms.locfileid: "48019472"
   "suppressions": []
 }
 -->
-
-
-

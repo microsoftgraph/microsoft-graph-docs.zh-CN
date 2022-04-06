@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4971ef6f4a65b4a6c0e1fd9d3f319da3ffb87a4c
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 9c36cb64449cef065810176a631a9bd8e68c3098
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224724"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63721886"
 ---
 # <a name="list-historydefinitions"></a>列出 historyDefinitions
 
@@ -19,11 +19,6 @@ ms.locfileid: "62224724"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索最近 30 天内创建的 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象，包括所有嵌套属性。
-
->[!NOTE]
->此 API 的默认页面大小为 100 **accessReviewHistoryDefinitions** 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
->
->如果未提供查询参数且结果超过 100 个，Microsoft Graph将按每页 100 个结果自动对结果分页。
 
 ## <a name="permissions"></a>权限
 
@@ -50,9 +45,11 @@ GET /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$top` 、 `$filter` 、 和 `$expand` `$skip` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 Including `?$expand=instances` 将返回 [accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) 对象及其关联实例。
+此方法支持 、 `$top`、 `$filter`和 `$expand``$skip` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 Including `?$expand=instances` 将返回 [accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) 对象及其关联实例。
 
-## <a name="request-headers"></a>请求标头
+此 API 的默认页面大小为 100 **accessReviewHistoryDefinitions** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+
+## <a name="request-headers"></a>请求头
 
 |名称|说明|
 |:---|:---|
@@ -64,7 +61,7 @@ GET /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

@@ -5,12 +5,12 @@ description: documentSetContent 资源包含有关内容的默认内容位置中
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 741047ab90badd16e4f7dea61c92ca8d952ee978
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5894c31c990f2cd55d5646c44e569c310d599e39
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072538"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757638"
 ---
 # <a name="documentsetcontent-resource-type"></a>documentSetContent 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "59072538"
 表示文档中文档集的默认SharePoint。
 ## <a name="properties"></a>属性
 
-| 属性名称  | 类型    | 说明|
+| 属性  | 类型    | 说明|
 |:---------------|:--------|:--------------------------------------------------|
 | contentType    | microsoft.graph.contentTypeInfo | 文件的内容类型信息。 |
 | fileName      | string  | 资源文件夹中应作为默认内容或文档集模板添加的文件的名称。|

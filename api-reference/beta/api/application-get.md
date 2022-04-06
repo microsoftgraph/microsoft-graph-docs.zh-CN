@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 012e3df6b36dedadcab968399ba3430663862543
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 3d6dbd8c6aba614415e02271c00131a79c3e8a00
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332698"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668883"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -25,7 +25,7 @@ ms.locfileid: "63332698"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | Application.Read.All， Application.ReadWrite.All    |
 |应用程序 | Application.Read.All、 Directory.Read.All、 Application.ReadWrite.OwnedBy、  Application.ReadWrite.All、 Directory.ReadWrite.All |
 

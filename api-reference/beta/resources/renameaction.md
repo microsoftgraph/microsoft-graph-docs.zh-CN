@@ -3,15 +3,15 @@ author: daspek
 description: itemActivity 上存在 RenameAction 资源指示活动重命名了一个项。
 ms.date: 09/14/2017
 title: RenameAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e14521b6be27a9b4b2772cd80c172e5faf73b0d3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f7d9e7dad20ff8c03e0135cfe90928561fede51
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003498"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723761"
 ---
 # <a name="renameaction-resource-type"></a>RenameAction 资源类型
 
@@ -28,22 +28,22 @@ ms.locfileid: "48003498"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.renameAction"
+  "@type&quot;: &quot;microsoft.graph.renameAction"
 }-->
 
 ```json
 {
   "oldName": "string",
-  "newName": "string"
+  "newName&quot;: &quot;string"
 }
 ```
 
 ## <a name="properties"></a>属性
 
-| 属性名称 | 类型   | 说明
-|:--------------|:-------|:----------------------------------------------------
-| oldName       | string | 项的原名称。
-| newName       | 字符串 | 项的新名称。
+| 属性 | 类型   | 说明                    |
+| :------- | :----- | :----------------------------- |
+| oldName  | string | 项的原名称。 |
+| newName  | string | 项目的新名称。      |
 
 ## <a name="remarks"></a>注解
 
@@ -59,5 +59,3 @@ ms.locfileid: "48003498"
   "suppressions": []
 }
 -->
-
-

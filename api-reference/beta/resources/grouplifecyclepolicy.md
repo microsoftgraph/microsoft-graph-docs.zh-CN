@@ -2,15 +2,15 @@
 title: groupLifecyclePolicy 资源类型
 description: 表示组组的生命周期Microsoft 365策略。
 ms.localizationpriority: medium
-author: Jordanndahl
+author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 5c2e67fc0bf4b1347c40dcadae9a84208368d061
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7affe2c7c6abe383eadffa51e577b9f7696c4b65
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335638"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588867"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy 资源类型
 
@@ -22,24 +22,24 @@ ms.locfileid: "63335638"
 
 ## <a name="methods"></a>方法
 
-| 方法 | 返回类型 | 说明 |
-|:---------------|:--------|:----------|
-|[获取 groupLifecyclePolicy](../api/grouplifecyclepolicy-get.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) |读取 groupLifecyclePolicy 对象的属性和关系。|
-|[列出 groupLifecyclePolicy](../api/grouplifecyclepolicy-list.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) 集合 | 列出所有 groupLifecyclePolicy。 |
-|[更新 groupLifecyclePolicy](../api/grouplifecyclepolicy-update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) | 更新 groupLifecyclePolicy 对象。 |
-|[删除 groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | 无 | 删除 groupLifecyclePolicy 对象。 |
-|[向 groupLifecyclePolicy 添加组](../api/grouplifecyclepolicy-addgroup.md)|无| 向生命周期策略添加组 |
-|[从 groupLifecyclePolicy 中删除组](../api/grouplifecyclepolicy-removegroup.md)|无| 从生命周期策略中删除组 |
-|[续订组](../api/grouplifecyclepolicy-renewgroup.md)|无| 续订组的到期日期。 |
+| 方法                                                                                   | 返回类型                                                | 说明                                                         |
+| :--------------------------------------------------------------------------------------- | :--------------------------------------------------------- | :------------------------------------------------------------------ |
+| [获取 groupLifecyclePolicy](../api/grouplifecyclepolicy-get.md)                           | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | 读取 groupLifecyclePolicy 对象的属性和关系。 |
+| [列出 groupLifecyclePolicy](../api/grouplifecyclepolicy-list.md)                       | [groupLifecyclePolicy](grouplifecyclepolicy.md) 集合 | 列出所有 groupLifecyclePolicy。                                |
+| [更新 groupLifecyclePolicy](../api/grouplifecyclepolicy-update.md)                     | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | 更新 groupLifecyclePolicy 对象。                               |
+| [删除 groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md)                     | 无                                                       | 删除 groupLifecyclePolicy 对象。                               |
+| [向 groupLifecyclePolicy 添加组](../api/grouplifecyclepolicy-addgroup.md)         | 无                                                       | 向生命周期策略添加组                                   |
+| [从 groupLifecyclePolicy 中删除组](../api/grouplifecyclepolicy-removegroup.md) | 无                                                       | 从生命周期策略中删除组                               |
+| [续订组](../api/grouplifecyclepolicy-renewgroup.md)                               | 无                                                       | 续订组的到期日期。                                    |
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
-|:---------------|:--------|:----------|
-|alternateNotificationEmails|String| 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
-|groupLifetimeInDays|Int32| 还剩多少天组就到期且需要续订。 续订后，组的有效期就会延长定义的天数。 |
-|id|String| 策略的唯一标识符。 只读。|
-|managedGroupTypes|String| 到期策略适用的组类型。 可取值为 **All**、**Selected** 或 **None**。 |
+| 属性                    | 类型   | 说明                                                                                                                                                |
+| :-------------------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| alternateNotificationEmails | String | 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
+| groupLifetimeInDays         | Int32  | 还剩多少天组就到期且需要续订。 续订后，组的有效期就会延长定义的天数。               |
+| id                          | String | 策略的唯一标识符。 只读。                                                                                                               |
+| managedGroupTypes           | String | 到期策略适用的组类型。 可取值为 **All**、**Selected** 或 **None**。                                             |
 
 ## <a name="relationships"></a>关系
 
@@ -75,5 +75,3 @@ ms.locfileid: "63335638"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

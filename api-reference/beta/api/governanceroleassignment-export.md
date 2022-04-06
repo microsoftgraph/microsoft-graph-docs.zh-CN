@@ -1,16 +1,16 @@
 ---
 title: 导出 governanceRoleAssignmentRequests
-description: 检索格式为 的 governanceRoleAssignmentRequests 集合，该集合可在浏览器中.csv `application/octet-stream` 文件的形式进行分析。
+description: 检索格式为 的 governanceRoleAssignmentRequests `application/octet-stream`集合，该集合可在浏览器中.csv文件进行分析。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 5848d5515d262a6994a9e0fb0270ec8edb28f2a8
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: c7f4aada8b5dd7d31b9dcce99112ddb8d3ec2682
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694503"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64508608"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>导出 governanceRoleAssignmentRequests
 
@@ -18,11 +18,11 @@ ms.locfileid: "60694503"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-检索格式为 [的 governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合，该集合可在浏览器中.csv `application/octet-stream` 文件的形式进行分析。
+检索格式 [为 的 governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) `application/octet-stream`集合，该集合可在浏览器中.csv文件的形式进行分析。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -52,9 +52,9 @@ ms.locfileid: "60694503"
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-导出资源上的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合
+导出资源 [上的 governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合
     
->**注意：** 除了权限范围之外，此请求要求请求者至少具有一角色分配资源的权限。 
+>**注意：** 除了权限范围之外，此请求要求请求程序至少具有一角色分配资源访问权限。 
     
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
@@ -67,7 +67,7 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -76,10 +76,10 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 响应 `200 OK` 代码和类型 的内容 `application/octet-stream` 。
+如果成功，此方法返回 响应 `200 OK` 代码和类型 的内容 `application/octet-stream`。
 
 ## <a name="example"></a>示例
-本示例将所有角色分配保存为订阅 Wingtip Toys .csv Prod 中的一个角色分配文件。 
+本示例将所有角色分配另存为.csv Wingtip Toys - Prod 中的一个角色分配文件。 
 
 ##### <a name="request"></a>请求
 ```http

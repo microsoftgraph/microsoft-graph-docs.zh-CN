@@ -1,22 +1,22 @@
 ---
-title: Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
+title: Microsoft Teams Microsoft Graph Toolkit 中的通道选取器组件
 description: 可以使用 mgt-teams-channel-picker从 Microsoft 搜索与用户关联的频道和Graph。
 ms.localizationpriority: medium
-author: vogtn
-ms.openlocfilehash: 5e44218da3f2ec1e0e2b36cfd9137bb91e189b6d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 0b37085f580258abb14737384d4a3d4c0a535b45
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129661"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589259"
 ---
-# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
+# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Teams Microsoft Graph Toolkit 中的通道选取器组件
 
-可以使用组件 `mgt-teams-channel-picker` 为与用户关联的Microsoft Teams启用搜索。 组件可以搜索用户已加入的所有团队，以及这些团队中的每个频道。 
+可以使用组件为`mgt-teams-channel-picker`与用户关联的Microsoft Teams启用搜索。 组件可以搜索用户已加入的所有团队，以及这些团队中的每个频道。 
 
 ## <a name="example"></a>示例
 
-以下示例显示 `mgt-teams-channel-picker` 组件。 开始搜索频道或团队以查看结果呈现。
+以下示例显示组件 `mgt-teams-channel-picker` 。 开始搜索频道或团队以查看结果呈现。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker--teams-channel-picker&source=docs" height="450"></iframe>
 
@@ -24,7 +24,7 @@ ms.locfileid: "59129661"
 
 ## <a name="getting-the-selected-channel"></a>获取所选频道
 
-使用 `selectedItem` 属性检索当前选定的频道和父团队。 如果未选择任何通道，则此值将为 null。 `selectedItem` 包含两个 `channel` 属性： ([MicrosoftGraph.Channel](/graph/api/resources/channel)) 和 `team` ([MicrosoftGraph.Team](/graph/api/resources/team)) 。
+`selectedItem`使用 属性检索当前选定的频道和父团队。 如果未选择任何通道，则此值将为 null。 `selectedItem` 包含两个属性： `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel)) 和 `team` ([MicrosoftGraph.Team](/graph/api/resources/team)) 。
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -34,9 +34,9 @@ console.log(channelPicker.selectedItem.team);
 
 ## <a name="selecting-a-channel"></a>选择频道
 
-使用 `selectChannelById(channelId: string)` 方法以编程方式选择通道。
+`selectChannelById(channelId: string)`使用 方法以编程方式选择通道。
 
-> **注意：Teams** 选取器仅支持单通道选择。
+> **注意：** Teams选取器仅支持单通道选择。
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -76,21 +76,21 @@ mgt-teams-channel-picker {
 }
 ```
 
-## <a name="events"></a>活动
+## <a name="events"></a>事件
 
-Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`selectionChanged` | 在用户更改频道选择时触发 | 当前选择的项目作为 `{ channel: ` [频道](/graph/api/resources/channel) `, team: ` [团队](/graph/api/resources/team)`}` | 否 | 否 | 是
+`selectionChanged` | 在用户更改频道选择时触发 | 当前选择的项目作为 `{ channel: `[channelteam](/graph/api/resources/team)[](/graph/api/resources/channel)`, team: ``}` | 否 | 否 | 是
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="templates"></a>模板
 
-`mgt-teams-channel-picker` 支持 [多个](../customize-components/templates.md) 模板，您可以使用这些模板替换组件的某些部分。 若要指定模板，请包含组件 `<template>` 中的元素，将值 `data-type` 设置为以下值之一。
+`mgt-teams-channel-picker` 支持 [多个](../customize-components/templates.md) 模板，您可以使用这些模板替换组件的某些部分。 若要指定模板，请包含 `<template>` 组件中的元素，将 `data-type` 值设置为以下值之一。
 
 | 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
-| loading | null：无数据 | 向 Microsoft 提交请求时用于呈现文件选取器Graph模板。 |
+| loading | null：无数据 | 向 Microsoft 请求时用于呈现文件选取器Graph模板。 |
 | error | null：无数据| 当用户搜索未返回任何用户时所使用的模板。 |
 
 以下示例演示如何使用该 `error` 模板。
@@ -120,7 +120,7 @@ import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";
 MgtTeamsChannelPicker.config.useTeamsBasedScopes = true;
 ```
 
-设置为 `useTeamsBasedScopes` `true` 时，Teams选取器将使用以下范围。 
+`true`设置为 `useTeamsBasedScopes` 时，Teams选取器将使用以下范围。 
 
 | API                                                                                                              | 权限  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
@@ -131,15 +131,15 @@ MgtTeamsChannelPicker.config.useTeamsBasedScopes = true;
 
 ## <a name="authentication"></a>身份验证
 
-该控件使用身份验证文档中所述的全局 [身份验证提供程序](../providers/providers.md)。
+该控件使用身份验证文档中介绍的全局 [身份验证提供程序](../providers/providers.md)。
 
 ## <a name="cache"></a>缓存
 
-`mgt-teams-channel-picker`组件不缓存任何数据。
+组件 `mgt-teams-channel-picker` 不缓存任何数据。
 
 ## <a name="extend-for-more-control"></a>扩展以了解更多控件
 
-对于更复杂的方案或真正自定义的 UX，此组件公开了多个在组件扩展 `protected render*` 中替代的方法：
+对于更复杂的方案或真正自定义的 UX，此组件公开 `protected render*` 了多个在组件扩展中替代的方法：
 
 | 方法 | 说明 |
 | - | - |

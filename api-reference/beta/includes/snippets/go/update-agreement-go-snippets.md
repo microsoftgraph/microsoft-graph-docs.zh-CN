@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 17dec165741b1c8c49296c29c901ea7095966281
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 68ebc19de19e6952d39b476f6fa620838dd5a76b
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412087"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528086"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "63412087"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewAgreement()
-displayName := "displayName-value"
+displayName := "All Contoso volunteers - Terms of use"
 requestBody.SetDisplayName(&displayName)
 isViewingBeforeAcceptanceRequired := true
 requestBody.SetIsViewingBeforeAcceptanceRequired(&isViewingBeforeAcceptanceRequired)
@@ -21,7 +21,7 @@ options := &msgraphsdk.AgreementRequestBuilderPatchOptions{
     Body: requestBody,
 }
 agreementId := "agreement-id"
-result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Patch(options)
+graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Patch(options)
 
 
 ```

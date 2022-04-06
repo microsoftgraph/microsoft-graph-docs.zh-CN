@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 95ea0d1c83309089cef715569288f4676db6fef0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1de55aca6e8a43fd594a616c14deb38747a3a83d
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980270"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671333"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 
@@ -27,9 +27,9 @@ ms.locfileid: "60980270"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,14 +51,14 @@ PUT /privilegedRoles/{id}/settings
 |:---------------|:--------|:----------|
 |elevationDuration|duration|角色激活的持续时间。 必需。|
 |id|string|角色设置的唯一标识符。 只读。 必需。|
-|isMfaOnElevationConfigurable|boolean|如果 mfaOnElevation 可配置，则其为 **true。** 如果 mfaOnElevation 不可配置，则其为 **false。** 必需。|
-|lastGlobalAdmin|布尔|仅供内部使用。|
+|isMfaOnElevationConfigurable|boolean|**如果** mfaOnElevation 可配置，则其为 true。 **如果** mfaOnElevation 不可配置，则其为 false。 必需。|
+|lastGlobalAdmin|Boolean|仅供内部使用。|
 |maxEationDuration|duration|已激活角色的最长持续时间。 必需。|
-|mfaOnElevation|布尔|如果激活角色需要 MFA，则其为 **true。** 如果不需要 MFA 即可激活角色，则其为 **false。** 必需。|
+|mfaOnElevation|布尔值|**如果** 激活角色需要 MFA，则其为 true。 **如果** 不需要 MFA 即可激活角色，则其为 false。 必需。|
 |minElevationDuration|duration|已激活角色的最短持续时间。 必需。|
-|notificationToUserOnElevation|布尔|如果激活角色时向最终用户发送通知，则其为 **true。** **假** 如果角色激活时不发送通知。 必需。|
-|ticketingInfoOnElevation|布尔|如果激活角色时需要票证信息，则其为 **true。** 如果激活角色时不需要票证信息，则其为 **false。** 必需。|
-|approvalOnElevation|布尔|如果激活角色时需要审批，则其为 **true。** 如果激活角色时不需要审批，则其为 **false。** 必需。|
+|notificationToUserOnElevation|布尔值|**如果** 激活角色时向最终用户发送通知，则其为 true。 **假** 如果角色激活时不发送通知。 必需。|
+|ticketingInfoOnElevation|Boolean|**如果** 激活角色时需要票证信息，则其为 true。 **如果** 激活角色时不需要票证信息，则其为 false。 必需。|
+|approvalOnElevation|布尔值|**如果** 激活角色时需要审批，则其为 true。 **如果** 激活角色时不需要审批，则其为 false。 必需。|
 |approverIds|字符串集合|审批 ID 列表（如果需要审批才能激活）。|
 
 ## <a name="response"></a>响应
@@ -109,7 +109,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/put-privilegedrolesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/put-privilegedrolesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

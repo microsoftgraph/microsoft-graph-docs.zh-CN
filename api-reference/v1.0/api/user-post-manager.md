@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cb5f4ef500a08ae3b6ec4ffff321a72520203724
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b883a3871567b8443397208a1f2fbc109d3b98d5
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114685"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672663"
 ---
 # <a name="assign-manager"></a>分配管理器
 
@@ -25,7 +25,7 @@ ms.locfileid: "62114685"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -41,7 +41,7 @@ PUT /users/{id}/manager/$ref
 | Content-type   | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要添加的[directoryObject、user](../resources/directoryobject.md)[](../resources/user.md)或[组织联系人](../resources/orgcontact.md)对象的 JSON 表示形式。
+在请求正文中，提供 JSON `@odata.id` 对象，并传递包含要添加的 [directoryObject](../resources/directoryobject.md)、 [user](../resources/user.md) 或 [组织联系](../resources/orgcontact.md) 对象的读取 URL 的参数。
 
 ## <a name="response"></a>响应
 
@@ -49,7 +49,7 @@ PUT /users/{id}/manager/$ref
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面展示了示例请求。
+下面展示了示例请求。 请求正文是一个 JSON `@odata.id` 对象，包含参数和要作为管理器分配的用户[](../resources/user.md)对象的读取 URL。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -57,11 +57,11 @@ PUT /users/{id}/manager/$ref
   "name": "create_manager_from_group"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
+PUT https://graph.microsoft.com/v1.0/users/10f17b99-784c-4526-8747-aec8a3159d6a/manager/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
+  "@odata.id": "https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

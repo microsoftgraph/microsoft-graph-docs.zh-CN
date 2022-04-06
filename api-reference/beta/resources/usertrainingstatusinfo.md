@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 82b0c6b1de49c9b8eb0572dab33fca8c90e2b6fe
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: d9e2900bb2c72ba8100d5fe49130b7229db988ee
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979548"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757841"
 ---
 # <a name="usertrainingstatusinfo-resource-type"></a>userTrainingStatusInfo 资源类型
 
@@ -21,12 +21,12 @@ ms.locfileid: "59979548"
 表示分配的培训及其在攻击模拟和培训中的用户状态。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |assignedDateTime|DateTimeOffset|向用户分配培训的日期和时间。|
 |completionDateTime|DateTimeOffset|用户完成培训的日期和时间。|
-|displayName|字符串|已分配培训的显示名称。|
-|trainingStatus|trainingStatus|分配给用户的培训的状态。 可取值为：`unknown`、`assigned`、`inProgress`、`completed`、`overdue`、`notCompleted`、`unknownFutureValue`。|
+|displayName|String|已分配培训的显示名称。|
+|trainingStatus|trainingStatus|分配给用户的培训的状态。 可取值为：`unknown`、`assigned`、`inProgress`、`completed`、`overdue`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系
 无。

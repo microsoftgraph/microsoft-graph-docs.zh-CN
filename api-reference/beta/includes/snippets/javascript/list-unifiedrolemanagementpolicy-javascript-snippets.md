@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6bc2a79a29ef237d77d5358e3e419053439daf005add9acdc3d266811d321027
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d17d66087b94de9d0782915acc83dfe9d39fe984
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57162700"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758753"
 ---
 ```javascript
 
@@ -17,6 +17,7 @@ const client = Client.init(options);
 
 let roleManagementPolicies = await client.api('/policies/roleManagementPolicies')
     .version('beta')
+    .filter('scopeId eq \'/\' and scopeType eq \'DirectoryRole\'')
     .get();
 
 ```

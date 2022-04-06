@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e94f25e60df83997442c46bb4720cfd0c71a3cdf
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: a4422ca22977a413f4c9e0a2819cf3dbff06a8f1
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62261964"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671291"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>更新 cloudPcOnPremisesConnection
 
@@ -30,7 +30,7 @@ ms.locfileid: "62261964"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,14 +58,14 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|内部显示名称连接的连接。|
+|displayName|String|本地显示名称的基础结构。|
 |type|cloudPcOnPremisesConnectionType|指定预配的云电脑如何加入 Azure Active Directory。 默认值为 `hybridAzureADJoin`。 可取值为：`azureADJoin`、`hybridAzureADJoin`、`unknownFutureValue`。|
-|subscriptionId|字符串|与租户关联的目标 Azure 订阅的 ID。|
+|subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
 |adDomainName|String|要加入的 Active Directory (的完全限定域名) FQDN。|
-|adDomainUsername|字符串|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户和服务帐户。 所需格式：username@contoso.com。|
-|adDomainPassword|字符串|与 adDomainUsername 关联的密码。|
-|resourceGroupId|字符串|目标资源组的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
-|virtualNetworkId|字符串|目标虚拟网络的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
+|adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：username@contoso.com。|
+|adDomainPassword|String|与 adDomainUsername 关联的密码。|
+|resourceGroupId|String|目标资源组的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
+|virtualNetworkId|String|目标虚拟网络的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
 |subnetId|String|目标子网的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
 
 ## <a name="response"></a>响应
@@ -146,6 +146,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdcc4ffff",
+  "managedBy": "windows365",
   "type": "hybridAzureADJoin", 
   "displayName": "Display Name value",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",

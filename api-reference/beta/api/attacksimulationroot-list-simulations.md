@@ -1,25 +1,25 @@
 ---
 title: 列出模拟
-description: 列出租户的攻击模拟。
+description: 获取租户的攻击模拟市场活动列表。
 author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d0fb681c1f1d1e6eb1b4eff9eaf293e6c142e8b9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 24c73af15cdffa97007caa367a37a780f3cdbb4f
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114307"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758030"
 ---
 # <a name="list-simulations"></a>列出模拟
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出租户的攻击模拟。
+获取租户的攻击模拟市场活动列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -39,9 +39,9 @@ GET /security/attackSimulation/simulations
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持以下 OData 查询参数来帮助自定义响应 `$count` `$filter` `$orderby` `$skiptoken` `$top` `$select` ：、、。
+此方法支持以下 OData 查询参数来帮助自定义响应：`$count``$filter``$skiptoken``$orderby``$top`、、。 `$select`
 
-以下属性支持 `$filter` `$orderby` 和 ： **attackTechnique**、 **attackType**、 **completionDateTime**、 **displayName**、 **isAutomated**、 **launchDateTime**、 **status**。
+以下属性支持 `$filter` `$orderby`和 ：**attackTechnique**、**attackType**、**completionDateTime**、**displayName**、**isAutomated**、**launchDateTime****、status**。
 
 用于 `@odata.nextLink` 分页。
 
@@ -72,13 +72,11 @@ GET /security/attackSimulation/simulations?$select={property}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码 `200 OK` 和 [模拟](../resources/simulation.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [模拟](../resources/simulation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_simulation"
@@ -87,32 +85,6 @@ GET /security/attackSimulation/simulations?$select={property}
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-simulation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-simulation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-simulation-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-simulation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[转到](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulation-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 
 ### <a name="response"></a>响应
@@ -150,15 +122,9 @@ Content-Type: application/json
       },
       "launchDateTime": "2021-01-01T02:01:01.01Z",
       "completionDateTime": "2021-01-07T01:01:01.01Z",
-      "includeAllAccountTargets": false,
-      "enableRegionTimezoneDelivery": false,
       "isAutomated": false,
-      "cleanupArtifacts": false,
-      "payloadSource": "global",
-      "payloadDeliveryPlatform": "email",
-      "trainingAssignmentPreference": "manual",
-      "trainingContentPreference": "microsoft",
-      "trainingDueDateTime": "2021-01-31T01:01:01.01Z"
+      "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
+      "payloadDeliveryPlatform": "email"
     }
   ]
 }

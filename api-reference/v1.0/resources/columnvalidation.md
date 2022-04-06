@@ -1,16 +1,16 @@
 ---
 author: swapnil1993
 title: columnValidation 资源类型
-description: 包含用于验证列值的数据。
+description: 包含验证列值的数据。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: a2c5b464b7f08fcd1de078b94b5ca1b039b6a6f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41136c74347e0acdfe41b5b8fd9a5ddc1501a08b
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062787"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757848"
 ---
 # <a name="columnvalidation-resource-type"></a>columnValidation 资源类型
 
@@ -19,14 +19,14 @@ ms.locfileid: "59062787"
 表示验证列值的属性。
 ## <a name="properties"></a>属性
 
-| 属性名称  | 类型    | 说明|
+| 属性  | 类型    | Description|
 |:---------------|:--------|:--------------------------------------------------|
-| **formula**    | string  | 用于验证列值的公式。 有关示例，请参阅 [列表中常见公式的示例](https://support.microsoft.com/office/examples-of-common-formulas-in-sharepoint-lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3)。|
+| **formula**    | string  | 用于验证列值的公式。 有关示例，请参阅 [列表中常用公式的示例](https://support.microsoft.com/office/examples-of-common-formulas-in-sharepoint-lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3)。|
 | **说明**    | 集合 (microsoft.graph.displayNameLocalization)   | 解释此列的值被视为有效的所需值的本地化邮件。 验证失败时，用户收到此消息的提示。 |
 | **defaultLanguage**    | string  | 说明的默认 BCP 47 语言标记。|
 
 SharePoint 公式使用一种类似于 Excel 公式的语法。
-有关详细信息，请参阅S examples [of common formulas in SharePoint Lists][SPFormulas]。
+有关详细信息，请参阅列表[的常用公式SharePoint示例][SPFormulas]。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

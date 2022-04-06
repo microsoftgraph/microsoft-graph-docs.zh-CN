@@ -3,15 +3,15 @@ author: JeremyKelley
 description: listItemVersion 资源表示先前版本的 ListItem 资源。
 ms.date: 09/17/2017
 title: ListItemVersion
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: de11928d2ac6f0f78e2dabbd34ebb25d927c5aa9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3daffc15f394139301d205c08b02b7a1a57f9d5a
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055237"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722915"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion 资源类型
 
@@ -25,16 +25,15 @@ ms.locfileid: "48055237"
 
 下列任务可用于 listItemVersion 资源。
 
-|            常见任务             |         HTTP 方法         |
-| :--------------------------------- | :-------------------------- |
-| [列出版本][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
-| [获取版本][version-get]         | `GET /sites/{site-id}/items/versions/{version-id}`     |
+| 常见任务                        | HTTP 方法                                                 |
+| :--------------------------------- | :---------------------------------------------------------- |
+| [列出版本][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`             |
+| [获取版本][version-get]         | `GET /sites/{site-id}/items/versions/{version-id}`          |
 | [还原版本][version-restore] | `POST /sites/{site-id}/items/versions/{version-id}/restore` |
 
 [version-list]: ../api/listitem-list-versions.md
 [version-get]: ../api/listitemversion-get.md
 [version-restore]: ../api/listitemversion-restore.md
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -53,22 +52,20 @@ ms.locfileid: "48055237"
 
 ## <a name="properties"></a>属性
 
-|      属性名称       |                         类型                         |                               说明                               |
+| 属性                 | 类型                                                 | 说明                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | 版本 ID。 只读。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 上次修改版本的用户的标识。 只读。        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | 上次修改版本的日期和时间。 只读。                 |
 | **published**            | [PublicationFacet](../resources/publicationfacet.md) | 指示此特定版本的发布状态。 只读。 |
 
-
 ## <a name="relationships"></a>关系
 
 下表定义了 **driveItemVersion** 资源与其他资源的关系。
 
-| 关系名称 |                      类型                      |                               说明                                |
-| :---------------- | :--------------------------------------------- | :----------------------------------------------------------------------- |
-| **fields**        | [FieldValueSet](../resources/fieldvalueset.md) | 此版本列表项的字段和值集合。 |
-
+| 关系 | 类型                                           | 说明                                                              |
+| :----------- | :--------------------------------------------- | :----------------------------------------------------------------------- |
+| **fields**   | [FieldValueSet](../resources/fieldvalueset.md) | 此版本列表项的字段和值集合。 |
 
 <!--
 {
@@ -80,5 +77,3 @@ ms.locfileid: "48055237"
   "suppressions": []
 }
 -->
-
-

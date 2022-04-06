@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 62b366b7a3547d78014f7a16b40670b3dd539626
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a27a94ffed15d601f05524ccf5c67547596d7b8b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62225646"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672229"
 ---
 # <a name="list-orgcontacts"></a>List orgContacts
 
@@ -23,7 +23,7 @@ ms.locfileid: "62225646"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -46,7 +46,7 @@ GET /contacts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [orgContact](../resources/orgcontact.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [orgContact](../resources/orgcontact.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -245,7 +245,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例 4：使用 $search 获取显示名称包含字母"wa"的组织联系人（包括返回的对象计数）
+### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例 4：$search获取显示名称包含字母"wa"的组织联系人，包括返回的对象计数
 
 #### <a name="request"></a>请求
 

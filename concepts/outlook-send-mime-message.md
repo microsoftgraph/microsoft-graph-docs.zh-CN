@@ -4,12 +4,12 @@ description: 电子邮件客户端可以通过 Exchange 以 MIME 邮件格式发
 author: isvargasmsft
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: d32aee40b5336c2a84fcc83d42692bede89c6bc8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 80b669bfb757010d1842c8ba16513d2789e1e059
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071740"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477711"
 ---
 # <a name="send-messages-with-mime-content"></a>使用 MIME 内容发送邮件
 
@@ -38,7 +38,7 @@ Outlook 邮件 API 支持对含有 MIME 内容的邮件执行以下操作：
 | 创建草稿以回复邮件 | [createReply](/graph/api/message-createreply) |
 | 对邮件执行全部答复 | [全部回复](/graph/api/message-replyall) | 
 | 创建草稿以全部回复邮件 | [createReplyAll](/graph/api-reference/api/message-createreplyall) |
-| 转发邮件 | [转发](/graph/api-reference/api/message-forward) |
+| 转发邮件 | [转发](/graph/api/message-forward) |
 | 创建草稿以转发邮件 | [createForward](/graph/api-reference/api/message-createforward) | 
 
 

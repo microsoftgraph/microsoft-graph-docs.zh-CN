@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f766da6d559fadd9143a9d33120f427946ba2020
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: d941906ca9dcf011aa1fd878f9e003268b79a705
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64630945"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671844"
 ---
 # <a name="list-ownedobjects"></a>List ownedObjects
 
@@ -19,7 +19,7 @@ ms.locfileid: "64630945"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户拥有的 directory 对象的列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -33,7 +33,6 @@ ms.locfileid: "64630945"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/ownedObjects
 GET /users/{id | userPrincipalName}/ownedObjects
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数

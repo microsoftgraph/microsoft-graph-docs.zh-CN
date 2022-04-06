@@ -1,16 +1,16 @@
 ---
 title: 删除呼叫
 description: 删除或挂断活动呼叫。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a603e90e404894e6e5b79c5a71d41f8206aca456
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4f4ada1c3f4fec91aa9e2ef9cb7dbc60f900c00e
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116359"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607804"
 ---
 # <a name="delete-call"></a>删除呼叫
 
@@ -26,7 +26,9 @@ ms.locfileid: "62116359"
 | :-------------- | :----------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持。                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                         |
-| 应用程序                            | 无。                                  |
+| Application                            | Calls.Initiate.All、Calls.AccessMedia.All |
+
+> **注意：** 创建调用时检查权限;调用此 API 时，不会进行其他权限检查。 Calls.AccessMedia.All 仅对于使用应用托管媒体的呼叫是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

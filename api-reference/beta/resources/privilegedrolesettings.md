@@ -4,13 +4,13 @@ description: 表示特权角色的设置。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 6085d6bc74a1399ea4baf0cc575ecb316a3519e9
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 4cc98c3db18569677e0d158da8b7cfb63b00dac7
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694165"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510546"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "60694165"
 表示特权角色的设置。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -38,8 +38,8 @@ ms.locfileid: "60694165"
 |mfaOnElevation|boolean|`true` 如果激活角色需要 MFA。 `false` 如果不需要 MFA 即可激活角色。|
 |minElevationDuration|duration|已激活角色的最短持续时间。|
 |notificationToUserOnElevation|boolean|`true` 如果激活角色时向最终用户发送通知。 `false` 如果角色激活时不发送通知。|
-|ticketingInfoOnElevation|boolean|`true` 如果激活角色时需要票证信息。 `false` 如果激活角色时不需要票证信息。|
-|approvalOnElevation|boolean|`true` 如果激活角色时需要审批。 `false` 如果激活角色时不需要审批。|
+|ticketingInfoOnElevation|布尔|`true` 如果激活角色时需要票证信息。 `false` 如果激活角色时不需要票证信息。|
+|approvalOnElevation|布尔|`true` 如果激活角色时需要审批。 `false` 如果激活角色时不需要审批。|
 |approverIds| 字符串集合 |审批 ID 列表（如果需要审批才能激活）。|
 
 ## <a name="relationships"></a>关系

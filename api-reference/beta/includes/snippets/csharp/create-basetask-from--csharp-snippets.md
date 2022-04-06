@@ -1,21 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0fed1558dd65889ad17ca593ad3caf5caef0cef1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c04da6bf8b4d26a015dcc3377787508dc4a700f1
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130108"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528080"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var baseTask = new BaseTask
+var baseTask = new Task
 {
-    Body = new ItemBody
-    {
-    },
+    TextBody = "String",
     BodyLastModifiedDateTime = DateTimeOffset.Parse("String (timestamp)"),
     CompletedDateTime = DateTimeOffset.Parse("String (timestamp)"),
     DueDateTime = new DateTimeTimeZone
@@ -30,7 +28,7 @@ var baseTask = new BaseTask
     },
     DisplayName = "String",
     Status = TaskStatus_v2.NotStarted,
-    PersonalProperties = new PersonalTaskProperties
+    Viewpoint = new TaskViewpoint
     {
     }
 };

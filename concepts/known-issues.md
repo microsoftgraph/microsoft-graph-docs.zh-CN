@@ -3,8 +3,13 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
+ms.openlocfilehash: 83c99695e82e4dde776eaadc4506668e4277d423
+ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63780511"
 ---
-
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
 本文介绍了 Microsoft Graph 已知问题。 
@@ -256,9 +261,7 @@ Outlook 实体类型不支持对架构扩展属性进行筛选（使用 `$filter
 
 ### <a name="admins-must-consent-to-permissions-for-groups-and-microsoft-teams"></a>管理员必须同意授予组和 Microsoft Teams 权限
 
-Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权限（[*Group.Read.All*](permissions-reference.md#group-permissions) 和 [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)）。
-管理员必须同意授予这些权限。
-今后，我们计划新增用户可同意授予的组和 Teams 权限。
+Microsoft Graph 访问组和 Microsoft Teams 的 API 公开了两个权限 ([*Group.Read.All*](permissions-reference.md#group-permissions) 和 [*Group.ReadWrite.All*](permissions-reference.md#group-permissions))。管理员必须同意这些权限。将来，我们计划为用户可以同意的组和 Teams 添加新权限。
 
 ### <a name="some-group-apis-dont-support-delegated-or-app-only-permissions"></a>某些组 API 不支持委派权限或仅应用权限
 
@@ -398,7 +401,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ### <a name="installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported"></a>不支持安装需要特定于资源的同意权限的应用
 以下 API 调用不支持安装需要 [资源特定的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 权限的应用。
-- [将应用添加到团队](/graph/api/team-post-installedapps.md)
+- [将应用添加到团队](/graph/api/team-post-installedapps)
 - [升级团队中安装的应用](/graph/api/team-teamsappinstallation-upgrade.md)
 - [将应用添加到聊天](/graph/api/chat-post-installedapps.md)
 - [升级聊天中安装的应用](/graph/api/chat-teamsappinstallation-upgrade.md)
@@ -466,4 +469,4 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis-deprecated"></a>功能仅在 Office 365 REST 或 Azure AD Graph API 中可用（已弃用）
 
-某些功能尚未在 Microsoft Graph 中提供。 如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](/previous-versions/office/office-365-api/)。 有关 Azure AD Graph，请参阅 [将 Azure Active Directory （Azure AD） Graph 应用迁移到 Microsoft Graph](./migrate-azure-ad-graph-overview.md)。
+某些功能尚未在 Microsoft Graph 中提供。如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](/previous-versions/office/office-365-api/)。有关 Azure AD Graph，请参阅 [将 Azure Active Directory (Azure AD) 应用迁移到 Microsoft Graph](./migrate-azure-ad-graph-overview.md)。

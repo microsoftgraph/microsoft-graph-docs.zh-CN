@@ -2,22 +2,22 @@
 title: Microsoft Graph Toolkit缓存
 description: 解释缓存的工作原理以及如何配置提供给开发人员的选项
 ms.localizationpriority: medium
-author: adchau
-ms.openlocfilehash: 79ac43d0a0cc1a09ded730a9957fd1735f7790de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 88b3ed3c8a30f0fcfd79da3cd094420d4534e619
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129640"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589252"
 ---
 # <a name="microsoft-graph-toolkit-caching"></a>Microsoft Graph Toolkit缓存
 
-Microsoft Graph Toolkit支持缓存选择 Microsoft Graph API 调用。 呼叫按实体（如人员、联系人、照片）进行缓存。 这允许一个组件检索数据和其他组件以重复使用它，而无需调用 Microsoft Graph。
+Microsoft Graph Toolkit支持缓存选择 Microsoft 图形 API调用。 呼叫按实体（如人员、联系人、照片）进行缓存。 这允许一个组件检索数据和其他组件以重复使用它，而无需调用 Microsoft Graph。
 
 > [!TIP]
 > 有关每个组件缓存哪些实体的信息，请参阅组件的文档。
 
-由 mgt 创建的用于缓存的数据库的前缀为 `mgt-` 。 每个实体的数据都存储在单独的对象存储中。 若要检查缓存，请使用开发人员面板中的"应用程序"选项卡 (F12 工具) - 在 **"存储"** 部分下，单击 **"IndexedDB"** 选项卡。 
+由 mgt 创建的用于缓存的数据库的前缀为 `mgt-`。 每个实体的数据都存储在单独的对象存储中。 若要检查缓存，请使用开发人员面板中的"应用程序"选项卡 (F12 工具) - 在 **"存储"** 部分下，单击"**IndexedDB**"选项卡。 
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
@@ -64,13 +64,13 @@ let config = {
 };
 ```
 
-在 config 对象中，单个缓存无效时段默认为 ，默认为 60 分钟内的常规值 `null` `defaultInvalidationPeriod` 3，600，000 ms (60 分钟) 。 传入的任何值 `config.x.invalidationPeriod` 都将替代 `defaultInvalidationPeriod` 。
+`null`在 config `defaultInvalidationPeriod` 对象中，单个缓存无效时段默认为 ，默认为 60 分钟 60 分钟的常规值 3，600，000 ms (60 分钟) 。 传入的任何值都将 `config.x.invalidationPeriod` 替代 `defaultInvalidationPeriod`。
 
 状态存储是唯一的例外，其默认值为 300000 毫秒（即 5 分钟）。
 
 ### <a name="examples"></a>示例
 
-若要单独禁用存储，只需将存储的 config 属性的值设置为 `isEnabled` false：
+若要单独禁用存储，只需 `isEnabled` 将存储的 config 属性的值设置为 false：
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
 
@@ -90,7 +90,7 @@ CacheService.config.users.invalidationPeriod = 1800000;
 
 当用户退出时，将自动清除缓存。也可以手动清除它。
 
-如果清除缓存中所有的存储，类的 方法将清除 CacheService 维护的所有 `clearCaches()` `CacheService` 存储。
+如果清除缓存中所有的存储，`clearCaches()``CacheService`类的 方法将清除 CacheService 维护的所有存储。
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';

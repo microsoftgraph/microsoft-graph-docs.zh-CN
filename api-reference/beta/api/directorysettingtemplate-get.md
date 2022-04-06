@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c9e1f065f3fdd21dcdb4d7cf067f0a7bf25c3d62
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 725b5685b46a5c61ab6f17378794afdd50fe8784
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096720"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670976"
 ---
 # <a name="get-a-directory-setting-template"></a>获取目录设置模板
 
@@ -27,7 +27,7 @@ ms.locfileid: "62096720"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -49,7 +49,7 @@ GET /directorySettingTemplates/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [directorySettingTemplate](../resources/directorysettingtemplate.md) 对象。
+如果成功，此方法在响应正文 `200 OK` 中返回 响应代码和 [directorySettingTemplate](../resources/directorysettingtemplate.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。

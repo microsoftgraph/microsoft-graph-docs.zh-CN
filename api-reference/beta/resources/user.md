@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 63a760648d7fcb58a6a24ee3505c82c65ee5c273
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: fa5d9a09174011a1c07f9c05bad833ea933b5b1a
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510223"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646604"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -70,7 +70,7 @@ ms.locfileid: "64510223"
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
 | [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。 |
@@ -220,7 +220,7 @@ ms.locfileid: "64510223"
 | onPremisesLastSyncDateTime | DateTimeOffset | 表示上一次对象与本地目录同步的时间；例如：“2013-02-16T03:04:54Z”。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`）。 |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合 | 在预配期间使用 Microsoft 同步产品时发生的错误。 <br> 支持 `$filter`（`eq`、`not`、`ge`、`le`）。|
 | onPremisesSamAccountName | String | 包含从本地目录同步的本地 `sAMAccountName`。仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br> 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-| onPremisesSecurityIdentifier | String | 包含从本地同步到云的用户的本地安全标识符 (SID)。只读。仅支持 `null` 值上的`$filter` (`eq`)。  |
+| onPremisesSecurityIdentifier | String | 包含从本地同步到云的用户的本地安全标识符 (SID)。 只读。 支持 `$filter` (`eq` 包括值 `null`) 。  |
 | onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步（默认），则为 `null`。只读。<br><br>支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。 |
 | onPremisesUserPrincipalName | String | 包含从本地目录同步的本地 `userPrincipalName`。仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
 | otherMails | 字符串集合 | 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。<br>注意：此属性不能包含突出字符。<br><br>支持 `$filter` （`eq`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
@@ -232,7 +232,7 @@ ms.locfileid: "64510223"
 | preferredLanguage | String | 用户的首选语言。应遵循 ISO 639-1 代码，例如 `en-US`。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
 | preferredName | String | 用户的首选名称。 <br><br>仅在 `$select` 上返回。 |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) 集合 | 为用户设置的计划。只读。不可为 null。支持 `$filter`（`eq`、`not`、`ge`、`le`）。|
-| proxyAddresses | String collection | 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 对 **mail** 属性的更改还将更新此集合，以将值作为 SMTP 地址包含在内。 有关详细信息，请参阅 [mail 和 proxyAddresses 属性](#mail-and-proxyaddresses-properties)。 以 `SMTP`（大写）为前缀的代理地址是主代理地址，而前缀为 `smtp` 的代理地址则是辅助代理地址。 对于 Azure AD B2C 帐户，此属性有 10 个唯一地址的限制。 Microsoft Graph 中的只读；只能通过 [Microsoft 365 管理中心](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) 来更新此属性。 不可为 null。 <br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。 |
+| proxyAddresses | String collection | 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 对 **mail** 属性的更改还将更新此集合，以将值作为 SMTP 地址包含在内。 有关详细信息，请参阅 [mail 和 proxyAddresses 属性](#mail-and-proxyaddresses-properties)。 以 `SMTP`（大写）为前缀的代理地址是主代理地址，而前缀为 `smtp` 的代理地址则是辅助代理地址。 对于 Azure AD B2C 帐户，此属性有 10 个唯一地址的限制。 Microsoft Graph 中的只读；只能通过 [Microsoft 365 管理中心](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) 来更新此属性。 不可为 null。 <br><br>支持 `$filter` （`eq`、 `not`、 `ge`、 `le`、 `startsWith`）。 |
 | refreshTokensValidFromDateTime | DateTimeOffset | 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) 进行重置。|
 | responsibilities | String collection | 供用户枚举其职责的列表。 <br><br>仅在 `$select` 上返回。 |
 | schools | String collection | 供用户枚举其学习过的学校列表。 <br><br>仅在 `$select` 上返回。 |

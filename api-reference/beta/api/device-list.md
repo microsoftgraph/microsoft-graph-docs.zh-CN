@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e6e252916848fa1b40158eef64e3982c07560b45
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 32bbd1e31a02662f31abaff2ed61845ec663d52f
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509803"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670563"
 ---
 # <a name="list-devices"></a>列出设备
 
@@ -20,7 +20,7 @@ ms.locfileid: "64509803"
 
 检索目录中的注册设备列表。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -206,11 +206,7 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device"
-} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -250,8 +246,8 @@ Content-type: application/json
 
 >**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 <!-- {
-  "blockType": "request",
-  "name": "list_devices_startswith"
+  "blockType": "ignored",
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName 

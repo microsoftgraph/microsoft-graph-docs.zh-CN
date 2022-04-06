@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 016ed313ac225c28f187e7f713de71fea51140d4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 60cd0e21852a0ae266075308f6b6ffb9c578817f
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022805"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588951"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -22,14 +22,14 @@ ms.locfileid: "59022805"
 
 最近删除的项目将保留最多 30 天的可用时间。 30 天后，该项目将永久删除。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="for-applications"></a>对于应用程序：
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
@@ -38,7 +38,7 @@ ms.locfileid: "59022805"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | User.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | User.ReadWrite.All |
 
@@ -46,7 +46,7 @@ ms.locfileid: "59022805"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All |
 
@@ -59,7 +59,7 @@ POST /directory/deletedItems/{id}/restore
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 需要 Bearer &lt; &gt; *token*|
+| Authorization  | 需要 Bearer &lt;*token*&gt;|
 | Content-type | application/json |
 
 ## <a name="request-body"></a>请求正文

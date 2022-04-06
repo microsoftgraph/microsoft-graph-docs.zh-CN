@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: dc32f5ba7ff9ed0ac412bc0257e9dc4c0d345dca
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 631bc0ce35a597c44af163cf82d12bc3eb029298
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129658"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670836"
 ---
 # <a name="create-oauth2permissiongrant-a-delegated-permission-grant"></a>创建 oAuth2PermissionGrant (委派权限授予) 
 
@@ -20,7 +20,7 @@ ms.locfileid: "62129658"
 
 创建由 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示的委派权限授予。
 
-委派权限授予授权表示客户端应用程序) 的客户端服务主体 (代表已登录用户的 API) 访问代表 API) 的资源服务主体 (，以访问已授予的委派权限限制的访问级别。
+委派权限授予授权表示客户端应用程序) 的客户端服务主体 (代表已登录用户的 API) 访问代表 API) 的资源服务主体 (，访问由已授予的委派权限限制的访问级别。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "62129658"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.ReadWrite.All |
 
@@ -50,15 +50,15 @@ POST /oauth2PermissionGrants
 
 在请求正文中，提供 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的 JSON 表示形式。
 
-下表显示创建 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)时所需的属性。
+下表显示创建 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 时所需的属性。
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-| clientId | 字符串 | **授权** 在访问 API [](../resources/serviceprincipal.md)时代表已登录用户操作的应用程序的客户端服务主体的 ID。 必需。  |
+| clientId | 字符串 | **授权** 在访问 API 时 [](../resources/serviceprincipal.md)代表已登录用户操作的应用程序的客户端服务主体的 ID。 必需。  |
 | consentType | String | 指示是否向客户端应用程序授予了模拟所有用户或仅模拟特定用户的授权。 *AllPrincipals* 指示对模拟所有用户的授权。 *主体* 指示对模拟特定用户的授权。 管理员可以代表所有用户授予同意。 在某些情况下，可能会授权非管理员用户代表自己同意某些委派权限。 必需。  |
-| principalId | String | 当 **consentType** [为 Principal](../resources/user.md)时，客户端有权访问资源的用户的 **ID。**  如果 **consentType** 为 *AllPrincipals，* 则此值为 null。 当 **consentType** 为 Principal 时 *是必需的*。 |
+| principalId | String | 当 **consentType** [为](../resources/user.md) Principal 时，客户端授权其访问资源的用户的 **ID**。 如果 **consentType** 为 *AllPrincipals* ，则此值为 null。 当 **consentType 为 Principal 时***是必需的*。 |
 | resourceId | String | **有权访问** 的资源 [服务主体](../resources/serviceprincipal.md)的 ID。 这标识了客户端有权尝试代表登录用户调用的 API。 |
-| scope | String | 委派权限声明值的列表（以空格分隔）应包含在 API (访问令牌) 。 例如，`openid User.Read GroupMember.Read.All`。 每个声明值都应与资源服务主体 的 **publishedPermissionScopes** 属性中列出的 API 定义的委派权限之一的值 [字段匹配](../resources/serviceprincipal.md)。 |
+| scope | String | 委派权限声明值的列表（以空格分隔）应包含在 API (访问令牌) 。 例如，`openid User.Read GroupMember.Read.All`。 每个声明值都应与资源服务主体的 **publishedPermissionScopes** 属性中列出的 API 定义的委派权限之一的值 [字段匹配](../resources/serviceprincipal.md)。 |
 | startTime | DateTimeOffset | 目前，将忽略开始时间值，但需要一个值。 必需。 |
 | expiryTime | DateTimeOffset | 目前，将忽略结束时间值，但需要一个值。 必需。 |
 
@@ -81,13 +81,12 @@ POST https://graph.microsoft.com/beta/oauth2PermissionGrants
 Content-Type: application/json
 
 {
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value",
-  "startTime": "2016-10-19T10:37:00Z",
-  "expiryTime": "2016-10-19T10:37:00Z"
+    "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+    "consentType": "AllPrincipals",
+    "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+    "scope": "DelegatedPermissionGrant.ReadWrite.All",
+    "startTime": "2022-03-17T00:00:00Z",
+    "expiryTime": "2023-03-17T00:00:00Z"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -130,14 +129,15 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "id-value",
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value",
-  "startTime": "2016-10-19T10:37:00Z",
-  "expiryTime": "2016-10-19T10:37:00Z"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#oauth2PermissionGrants/$entity",
+    "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+    "consentType": "AllPrincipals",
+    "expiryTime": "2023-03-17T00:00:00Z",
+    "id": "l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk",
+    "principalId": null,
+    "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+    "scope": "DelegatedPermissionGrant.ReadWrite.All",
+    "startTime": "2022-03-17T00:00:00Z"
 }
 ```
 
