@@ -1,27 +1,27 @@
 ---
 title: 创建 governanceRoleAssignmentRequest
-description: 创建角色分配个请求，以表示要处理角色分配。 下表列出了操作。
+description: 创建角色分配一个请求，以表示要处理角色分配。 下表列出了操作。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: f4a28ef2450411cd9d9f2a03c8ba418982ebee9d
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+author: japere
+ms.openlocfilehash: b4047c7e3483e205ca282f77636276a5268b4fd3
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161898"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510258"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>创建 governanceRoleAssignmentRequest
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-创建角色分配个请求，以表示要处理角色分配。 下表列出了操作。
+创建角色分配一个请求，以表示要处理角色分配。 下表列出了操作。
 
-| 操作                                   | 类型        |
+| Operation                                   | 类型        |
 |:--------------------------------------------|:------------|
 | 分配角色分配                    | AdminAdd    |
 | 激活符合条件的角色分配        | UserAdd     |
@@ -30,12 +30,12 @@ ms.locfileid: "62161898"
 | 更新角色分配                    | AdminUpdate |
 | 请求扩展我的角色分配        | UserExtend  |
 | 扩展角色分配                    | AdminExtend |
-| 请求续订已过期角色分配 | UserRenew   |
+| 请求续订我过期角色分配 | UserRenew   |
 | 续订过期角色分配            | AdminRenew  |
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
 
@@ -82,13 +82,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | 属性         | 类型                                                     | 说明 |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | 与请求关联的 Azure 资源的唯一标识符角色分配标识符。 Azure 资源可以包括订阅、资源组、虚拟机和SQL数据库。 必需。 |
-| roleDefinitionId | String                                                   | 与请求关联的 Azure 角色分配定义的标识符。 必需。 |
-| subjectId        | String                                                   | 与请求关联的主体或主题角色分配标识符。 主体可以是用户、组或服务主体。 必需。 |
-| assignmentState  | String                                                   | 工作分配的状态。 值可以是 和 `Eligible` `Active` 。 此为必需属性。 |
-| type             | String                                                   | 请求类型。 值可以是 `AdminAdd` `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` 、、、、、 `UserExtend` `UserRenew` 和 `AdminRenew` `AdminExtend` 。 必需。 |
-| reason           | String                                                   | 需要为请求审核和审核角色分配提供原因。 |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 请求角色分配计划。 对于 、 `UserAdd` `AdminAdd` 、 `AdminUpdate` 和 `AdminExtend` 的请求类型，是必需的。 |
+| resourceId       | String                                                   | 与请求关联的 Azure 资源的唯一角色分配标识符。 Azure 资源可以包括订阅、资源组、虚拟机和SQL数据库。 必需项。 |
+| roleDefinitionId | String                                                   | 与请求关联的 Azure 角色分配定义的标识符。 必需项。 |
+| subjectId        | 字符串                                                   | 与请求关联的主体或主题角色分配标识符。 主体可以是用户、组或服务主体。 必需项。 |
+| assignmentState  | String                                                   | 工作分配的状态。 值可以是 和 `Eligible` `Active`。 此为必需属性。 |
+| type             | 字符串                                                   | 请求类型。 值可以是 、`AdminAdd``UserAdd``AdminUpdate`、`AdminRemove`、`UserRemove`、`UserExtend``UserRenew`、 和 。 `AdminRenew``AdminExtend` 必需项。 |
+| reason           | String                                                   | 需要为审核和审核角色分配请求提供原因。 |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 请求角色分配计划。 对于 、 `UserAdd`、 `AdminAdd`和 `AdminUpdate``AdminExtend`的请求类型，是必需的。 |
 
 ## <a name="response"></a>响应
 
@@ -100,13 +100,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | 错误代码     | 错误消息                               | 详细信息       |
 |:---------------|:--------------------------------------------|:--------------|
-| 400 BadRequest | RoleNotFound                                | `roleDefinitionId`找不到请求正文中提供的 。 |
-| 400 BadRequest | ResourceIsLocked                            | 请求正文中提供的资源的状态为 `Locked` ，无法创建角色分配请求。 |
-| 400 BadRequest | SubjectNotFound                             | `subjectId`找不到请求正文中提供的 。 |
-| 400 BadRequest | PendingRoleAssignmentRequest                | 系统中已存在待定[governanceRoleAssignmentRequest。](../resources/governanceroleassignmentrequest.md) |
-| 400 BadRequest | RoleAssignmentExists                        | 系统中已存在请求创建的[governanceRoleAssignment。](../resources/governanceroleassignment.md) |
-| 400 BadRequest | RoleAssignmentDoesNotExist                  | 系统中不存在请求更新/扩展的[governanceRoleAssignment。](../resources/governanceroleassignment.md) |
-| 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)不符合内部策略，无法创建。 |
+| 400 BadRequest | RoleNotFound                                | 找不到 `roleDefinitionId` 请求正文中提供的 。 |
+| 400 BadRequest | ResourceIsLocked                            | 请求正文中提供的资源的状态 `Locked` 为 ，无法创建角色分配请求。 |
+| 400 BadRequest | SubjectNotFound                             | 找不到 `subjectId` 请求正文中提供的 。 |
+| 400 BadRequest | PendingRoleAssignmentRequest                | 系统中已存在待定 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 。 |
+| 400 BadRequest | RoleAssignmentExists                        | [系统中已存在请求创建的 governanceRoleAssignment](../resources/governanceroleassignment.md)。 |
+| 400 BadRequest | RoleAssignmentDoesNotExist                  | 系统中不存在请求更新/扩展的 [governanceRoleAssignment](../resources/governanceroleassignment.md) 。 |
+| 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 不符合内部策略，无法创建。 |
 
 ## <a name="examples"></a>示例
 
@@ -116,7 +116,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 本示例中，管理员将 nawu@contoso.com 分配给"计费读取者"角色。
 
- >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
+ >**注意：** 除了权限`Active``owner`之外，此示例还要求请求者至少具有一个管理员角色分配 (或`user access administrator`) 资源。
 
 | 属性         | 类型                                                     | 必需                 | 值 |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
@@ -463,9 +463,9 @@ Content-type: application/json
 
 ### <a name="example-4-administrator-removes-user-from-a-role"></a>示例 4：管理员从角色中删除用户
 
-本示例中，管理员从"nawu@contoso.com 读取者"角色中删除用户角色。
+本示例中，管理员从计费读取 nawu@contoso.com 中删除用户角色。
 
- >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
+ >**注意：** 除了权限`Active``owner`之外，此示例还要求请求者至少具有一个管理员角色分配 (或`user access administrator`) 资源。
 
 | 属性         | 类型                                                     | 必需 | 值 |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
@@ -559,9 +559,9 @@ Content-type: application/json
 
 ### <a name="example-5-administrator-updates-role-assignment"></a>示例 5：管理员更新角色分配
 
-此示例中，管理员更新角色分配所有者 nawu@contoso.com 用户。
+本示例中，管理员更新角色分配所有者 nawu@contoso.com 权限。
 
- >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
+ >**注意：** 除了权限`Active``owner`之外，此示例还要求请求者至少具有一个管理员角色分配 (或`user access administrator`) 资源。
 
 | 属性         | 类型                                                     | 必需                | 值 |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
@@ -678,13 +678,13 @@ Content-type: application/json
 
 ### <a name="example-6-administrator-extends-expiring-role-assignment"></a>示例 6：管理员扩展过期角色分配
 
-此示例将用户 ANUJCUSER 角色分配过期权限扩展到 API 管理服务参与者。
+此示例将用户 ANUJCUSER 角色分配服务参与者的过期API 管理扩展。
 
- >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
+ >**注意：** 除了权限`Active``owner`之外，此示例还要求请求者至少具有一个管理员角色分配 (或`user access administrator`) 资源。
 
 | 属性         | 类型                                                     | 必需                | 值 |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
-| resourceId       | String                                                   | 是                     | \<resourceId\> |
+| resourceId       | 字符串                                                   | 是                     | \<resourceId\> |
 | roleDefinitionId | 字符串                                                   | 是                     | \<roleDefinitionId\> |
 | subjectId        | 字符串                                                   | 是                     | \<subjectId\> |
 | assignmentState  | 字符串                                                   | 是                     | 符合条件的/活动的 |

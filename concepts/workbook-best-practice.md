@@ -1,19 +1,19 @@
 ---
 title: Microsoft Excel API 的最佳实践Graph
-description: 列出 Microsoft Excel API 的最佳实践Graph
+description: 列出 Microsoft Excel API 的最佳实践和Graph
 author: grangeryy
 ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: d5318b51316a20fff00c70df0e655a6058743c29
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 8f1dc872dd94547545c3ca9d47ec08909119e0ea
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944226"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672103"
 ---
-# <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>在 Microsoft Graph 中处理 Excel API 的最佳实践
+# <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>在 Microsoft Excel 中处理 Graph API 的最佳实践
 
-本文提供有关在 Microsoft Excel 中处理 Graph。
+本文提供在 Microsoft Excel 中处理 Graph API 的建议。
 
 ## <a name="manage-sessions-in-the-most-efficient-way"></a>以最有效的方式管理会话
 
@@ -126,11 +126,11 @@ HTTP/1.1 204 No Content
 
 您可能会注意到，某些操作需要不确定的时间才能完成;例如，打开一个大型工作簿。 在等待这些请求的响应时，很容易命中超时。 为了解决此问题，我们提供长时间运行的操作模式。 使用此模式时，无需担心请求超时。
 
-目前，Microsoft Excel API Graph会话创建已启用长时间运行的操作模式。 此模式涉及以下步骤：
+目前，Microsoft Excel API 中的会话Graph已启用长时间运行的操作模式。 此模式涉及以下步骤：
 
-1. 向 `Prefer: respond-async` 请求添加标头，以指示在加入会话时这是一个长时间运行的操作。
+1. `Prefer: respond-async`向请求添加标头，以指示在加入会话时这是一个长时间运行的操作。
 2. 长时间运行的操作将返回 响应 `202 Accepted` 以及 Location 标头，以检索操作状态。 如果会话创建在几秒后完成，它将返回常规创建会话响应，而不是使用长时间运行的操作模式。
-3. 通过 `202 Accepted` 响应，您可以在指定位置检索操作状态。 操作状态值包括 `notStarted` `running` 、、 `succeeded` 和 `failed` 。
+3. `202 Accepted`通过响应，您可以在指定位置检索操作状态。 操作状态值包括 、`notStarted``running`、`succeeded`和 `failed`。
 4. 操作完成后，可以通过成功响应中的指定 URL 获取会话创建结果。
 
 以下示例使用长时间运行的操作模式创建会话。
@@ -160,7 +160,7 @@ Content-type: application/json
 }
 ```
 
-在某些情况下，如果创建在几秒内成功，它不会进入长时间运行的操作模式;相反，它将作为常规创建会话返回，并且成功的请求将返回 `201 Created` 响应。
+在某些情况下，如果创建在几秒内成功，它不会进入长时间运行的操作模式;相反，它将作为常规创建会话返回，并且成功的请求将返回响应 `201 Created` 。
 
 ```http
 HTTP/1.1 201 Created
@@ -211,7 +211,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 
 #### <a name="response"></a>响应
 
-下面是操作的状态为 时的响应 `running` 。
+下面是操作的状态为 时的响应 `running`。
 
 ```http
 HTTP/1.1 200 OK
@@ -223,7 +223,7 @@ Content-type: application/json
 }
 ```
 
-下面是操作状态为 时的响应 `succeeded` 。
+下面是操作状态为 时的响应 `succeeded`。
 
 ```http
 HTTP/1.1 200 OK
@@ -236,7 +236,7 @@ Content-type: application/json
 }
 ```
 
-下面是操作状态为 时的响应 `failed` 。
+下面是操作状态为 时的响应 `failed`。
 
 ```http
 HTTP/1.1 200 OK
@@ -260,13 +260,13 @@ Content-type: application/json
 }
 ```
 
-有关错误的更多详细信息，请参阅错误 [代码](workbook-error-codes.md#error-code)。
+有关错误的更多详细信息，请参阅 [错误代码](workbook-error-codes.md#error-code)。
 
 ### <a name="acquire-session-information"></a>获取会话信息
 
 #### <a name="request"></a>请求
 
-状态为 `succeeded` 时，可以通过类似如下的请求获取创建的 `resourceLocation` 会话信息。
+状态为 `succeeded`时，可以通过类似如下 `resourceLocation` 的请求获取创建的会话信息。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')
@@ -288,3 +288,17 @@ Content-type: application/json
 ```
 
 >**注意：** 获取会话信息取决于初始请求。 如果初始请求未返回响应正文，则无需获取结果。
+
+## <a name="throttling"></a>限制
+
+Excel Microsoft Graph API 会影响多个依赖服务的资源使用情况。 不同请求的影响可能不同：例如，您可能预期更新小型工作簿的单个单元格中的短字符串将消耗的资源比向大型工作簿添加包含复杂公式的大表消耗的资源更少。 即使使用相同的 API，参数和目标工作簿也可能会引入显著差异。 因此Excel API 限制不是使用简单和通用限制号定义的，因为它们将导致限制更加严格。 以下最佳实践将帮助您更快完成任务，同时减少限制错误。
+
+### <a name="retry-after-header"></a>Retry-After标头
+
+在许多情况下，限制响应包括标头 `Retry-After` 。 遵循标头的值并延迟类似的请求将有助于客户端从限制中恢复。 有关处理来自 Microsoft Excel API 的错误响应Graph请参阅 [Microsoft Excel API 的错误Graph](workbook-error-handling.md)。
+
+### <a name="throttling-and-concurrency"></a>限制和并发
+
+与限制相关的另一个因素是请求并发。 我们不建议在使用 Excel API 时增加并发 (例如，将请求并行处理到同一工作簿) ，特别是对于写入请求。 相反，除非存在特定问题，例如与非常短的请求执行时间相比，网络开销很大，否则我们建议在最常见情况下按顺序使用：对于每个工作簿，仅在收到对当前请求的成功响应后发送下一个请求。
+
+对同一工作簿的并发写入请求通常不并行运行 (尽管在某些情况下，它们) ;相反，它们通常是限制、在服务器) 上排队请求时超时 (、当涉及并发会话时合并冲突 (以及其他类型的) 。 它们还会使错误处理变得复杂;例如，当您收到失败响应时，无法确认其他挂起的请求的状态，这使得难以确定或恢复工作簿的状态。

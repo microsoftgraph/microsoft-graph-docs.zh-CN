@@ -5,20 +5,17 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0eeb2746c1f1b93d19e15b21423eda3702c2f210
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 4d0d664dfb532b1dc8eaa53a85b21249ac732804
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651578"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722867"
 ---
 # <a name="list-definitions"></a>列表定义
 命名空间：microsoft.graph
 
 获取 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象及其属性的列表。
-
->[!NOTE]
->此 API 的默认页面大小为 100 accessReviewScheduleDefinition 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,10 +37,12 @@ GET /identityGovernance/accessReviews/definitions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 `$select` 、 、 、 和 OData 查询参数 `$top` `$skip` `$orderBy` `$filter` 来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持`$select`使用 、 `$top`、 `$skip`和`$orderBy``$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+
+此 API 的默认页面大小为 100 **accessReviewScheduleDefinition** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
 ### <a name="use-the-filter-query-parameter"></a>使用 $filter 查询参数
-`$filter` `contains` accessReviewScheduleDefinition 的 **scope** 属性支持具有 运算符的查询参数。 对请求使用以下格式：
+accessReviewScheduleDefinition `$filter` 的 **scope** 属性支持具有 运算符的查询`contains`参数。 对请求使用以下格式：
 
 ```http
 GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
@@ -53,15 +52,15 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 |值|说明|
 |:---     |:---       |
-|`/groups`  |列出单个组上的每个 accessReviewScheduleDefinition (排除作用域为具有来宾用户的所有Microsoft 365组的定义) 。|
-|`/groups/{group id}`  |列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有 Microsoft 365 组) 。|
+|`/groups`  |列出单个组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有 Microsoft 365 组) 。|
+|`/groups/{group id}`  |列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为包含来宾用户的所有 Microsoft 365 组) 。|
 |`./members`  |列出每个作用域为来宾用户的所有 Microsoft 365 AccessReviewScheduleDefinition。|
 |`accessPackageAssignments`  |列出访问包上的每个 accessReviewScheduleDefinition。|
 |`roleAssignmentScheduleInstances`  |列出分配给特权角色的服务主体的每个 accessReviewScheduleDefinition。|
 
-`$filter` **accessReviewInactiveUserQueryScope** 或 **principalResourceMembershipScope 不支持查询参数**。
+**accessReviewInactiveUserQueryScope** `$filter` 或 **principalResourceMembershipScope 不支持查询参数**。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -71,7 +70,7 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -104,7 +103,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -210,7 +209,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewscheduledefinition-allgroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewscheduledefinition-allgroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

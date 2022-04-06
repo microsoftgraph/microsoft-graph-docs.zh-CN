@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4c10e9b12bb0073cdc81994e7f03430aad55c1e9
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 58b6622f41582398345cb5dfc30f4be5f7ba3b3e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332621"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669275"
 ---
 # <a name="create-extensionproperty"></a>创建 extensionProperty
 
@@ -26,7 +26,7 @@ ms.locfileid: "63332621"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | Application.ReadWrite.All    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -53,7 +53,7 @@ POST /applications/{id}/extensionProperties
 |:-------------|:------------|:------------|
 |DataType|String| 指定数据类型属性可以保留的值的值的值。 支持以下值。 不可为 null。 <ul><li>`Binary` - 最多 256 个字节</li><li>`Boolean`</li><li>`DateTime` - 必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` - 32 位值。</li><li>`LargeInteger` - 64 位值。</li><li>`String` - 最多 256 个字符</li></ul>|
 |name|String| 扩展属性的名称。 不可为 null。 |
-|targetObjects|String 集合| 支持以下值。 不可为 null。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|targetObjects|字符串集合| 支持以下值。 不可为 null。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>响应

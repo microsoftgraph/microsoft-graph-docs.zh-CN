@@ -1,16 +1,16 @@
 ---
 title: participant： muteAll
 description: 将呼叫中的所有参与者设为静音。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4805c8aa107d2f056fad0b2c112caef58a629ddb
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 35ed8ecc894235ff5b7af1b638e471cdbd37b072
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341987"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608014"
 ---
 # <a name="participant-muteall"></a>participant： muteAll
 
@@ -23,14 +23,14 @@ ms.locfileid: "62341987"
 > **注意：** 此 API 已弃用，将在 2020 年 3 月 15 日之前删除。 若要使单个参与者静音，请参阅 [参与者：静音](participant-mute.md)。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | 无                                        |
+| Application                            | Calls.JoinGroupCallsasGuest.All 或 Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/participants/muteAll
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participants|字符串集合|要静音的参与者。|
+|participants|String collection|要静音的参与者。|
 |clientContext|String|客户端上下文。|
 
 ## <a name="response"></a>响应

@@ -1,16 +1,16 @@
 ---
 title: call： transfer
 description: 转接活动对等呼叫或组呼叫。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 36acccdec73dd2c5e7ae088d45329272aa47f348
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 476bcb8d3e8188c9780ab2e16ee5356cd30e8395
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341386"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608035"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -22,16 +22,16 @@ ms.locfileid: "62341386"
 
 > **注意：** 这仅在被转移方和转移目标都Microsoft Teams属于同一租户的用户时受支持。 仅应用程序实例支持转接到 PSTN 号码。 若要了解有关转移方、被转移方和转移目标有关详细信息，请参阅 [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2)。
 
-咨询转接意味着，在转接之前，转接人可以通知要 (转接) 转接给被叫方。 这与直接转移呼叫相反。
+咨询转接意味着在转接之前，转接人可以通知要 (转接) 转接给被叫方。 这与直接转移呼叫相反。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）         |
 | :-------------- | :-------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                |
 | 委派（个人 Microsoft 帐户） | 不支持                |
-| 应用程序     | Calls.Initiate.All                                  |
+| Application     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ POST /communications/calls/{id}/transfer
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|作为转移目标的参与者。|
 |transferee|[participantInfo](../resources/participantinfo.md)|作为传输的受让方的参与者。 仅在从组呼叫转接时需要此电话。|

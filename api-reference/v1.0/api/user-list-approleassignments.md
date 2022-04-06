@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 6f574dafcedbc4562206c8ad2720ae36ad285b74
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: c045ffce7b6dd16e1b44fac464bbe93039b16de3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477578"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672579"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>列出向用户授予的 appRoleAssignment
 
@@ -25,9 +25,9 @@ ms.locfileid: "64477578"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadBasic.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All  |
+|委派（工作或学校帐户） | Directory.Read.All、AppRoleAssignment.ReadWrite.All、Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All |
+|应用程序 | Directory.Read.All、AppRoleAssignment.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|

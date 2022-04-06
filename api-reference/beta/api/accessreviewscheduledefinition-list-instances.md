@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b0ff22d90982fe4eae14d7da68ed2e5ecb8ad32e
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 4a68e781a26cdb3176d102f0c7727da353921135
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651033"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63721910"
 ---
 # <a name="list-instances"></a>列表实例
 
@@ -18,10 +18,7 @@ ms.locfileid: "61651033"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索特定[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)的[accessReviewInstance](../resources/accessreviewinstance.md)对象。 返回零个或多个 **accessReviewInstance** 对象的列表，包括其所有嵌套属性。 返回的对象不包括关联的 accessReviewInstanceDecisionItems。 若要检索有关实例的决策，请使用 [List accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md)。
-
->[!NOTE]
->此 API 的默认页面大小为 100 accessReviewInstance 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+检索 [特定 accessReviewScheduleDefinition 的 accessReviewInstance](../resources/accessreviewinstance.md) [对象](../resources/accessreviewscheduledefinition.md)。 返回零个或多个 **accessReviewInstance** 对象的列表，包括其所有嵌套属性。 返回的对象不包括关联的 accessReviewInstanceDecisionItems。 若要检索有关实例的决策，请使用 [List accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,16 +37,18 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` 、 `$filter` `$orderBy` 、 、 `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select`、 `$filter`、 `$orderBy`、 和 `$skip``$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+此 API 的默认页面大小为 100 **accessReviewInstance** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+
+## <a name="request-headers"></a>请求头
 无。
 
 ## <a name="request-body"></a>请求正文
 不提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewInstance](../resources/accessreviewinstance.md) 对象数组。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstance](../resources/accessreviewinstance.md) 对象数组。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -80,7 +79,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstance-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

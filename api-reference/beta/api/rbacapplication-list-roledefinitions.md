@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 41485c4cc3c70a161d1e048b9cf4e09b99c7d1ff
-ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
+ms.openlocfilehash: 197ca38aee291954cdac700a15ce167aaaa6f127
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63500943"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669254"
 ---
 # <a name="list-unifiedroledefinitions"></a>列出 unifiedRoleDefinitions
 
@@ -36,7 +36,7 @@ ms.locfileid: "63500943"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  RoleManagement.Read.CloudPC、CloudPC.Read.All、RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All、RoleManagement.Read.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.Read.CloudPC、CloudPC.Read.All、RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All、RoleManagement.Read.All  |
+|应用程序 | RoleManagement.Read.CloudPC、CloudPC.Read.All、RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All、RoleManagement.Read.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
 
@@ -44,15 +44,15 @@ ms.locfileid: "63500943"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
+|应用程序 | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-a-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All   |
+|委派（工作或学校帐户） |  RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ### <a name="for-an-entitlement-management-provider"></a>对于权利管理提供程序
 

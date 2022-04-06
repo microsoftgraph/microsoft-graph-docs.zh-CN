@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d01b7ac60018ba1672ef4c33a61f86c7da1a814a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7ea7c0a24fbee12ece850072f7f1bc3e02b0796f
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095873"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671977"
 ---
 # <a name="get-subscribedsku"></a>获取 subscribedSku
 
@@ -26,7 +26,7 @@ ms.locfileid: "62095873"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Organization.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Organization.Read.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 

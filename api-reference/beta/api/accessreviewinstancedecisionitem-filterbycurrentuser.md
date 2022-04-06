@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c2424715661b20dd7fef4efe9291b5efa90c64eb
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: d75c344b21d04fb9d6af130e0387f374861a611d
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62815879"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722081"
 ---
 # <a name="accessreviewinstancedecisionitem-filterbycurrentuser"></a>accessReviewInstanceDecisionItem：filterByCurrentUser
 命名空间：microsoft.graph
@@ -18,10 +18,6 @@ ms.locfileid: "62815879"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索访问评审实例或多阶段访问评审实例阶段的所有决策项，调用用户是该实例的审阅者。 决策项由 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象呈现在调用用户作为审阅者的给定 [accessReviewInstance](../resources/accessreviewinstance.md) 或 [accessReviewStage](../resources/accessReviewStage.md) 上。
-
-
->[!NOTE]
->此 API 的默认页面大小为 100 **accessReviewInstanceDecisionItem** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -60,13 +56,15 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|筛选以查询当前用户的决策对象。 可能的值是 、`reviewer``unknownFutureValue`。 使用 `reviewer`。 必需项。|
+|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|筛选以查询当前用户的决策对象。 可能的值是 、`reviewer``unknownFutureValue`。 使用 `reviewer`。 必需。|
 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 `$select`使用 、 `$filter`、 `$orderBy`、 `$skip`和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+此 API 的默认页面大小为 100 **accessReviewInstanceDecisionItem** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -175,6 +173,8 @@ Content-Type: application/json
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accessreviewinstancedecisionitem_filterbycurrentuser_2"
@@ -183,6 +183,28 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/0185aab8-9a7e-44b5-ae36-41b923c3bf87/instances/1234aab8-9a7e-5678-ae36-41b923c3bf87/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/filterByCurrentUser(on='reviewer')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewinstancedecisionitem-filterbycurrentuser-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewinstancedecisionitem-filterbycurrentuser-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accessreviewinstancedecisionitem-filterbycurrentuser-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstancedecisionitem-filterbycurrentuser-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstancedecisionitem-filterbycurrentuser-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

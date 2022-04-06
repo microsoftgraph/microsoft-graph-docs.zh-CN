@@ -1,16 +1,16 @@
 ---
 title: 获取呼叫
 description: 检索 call 对象的属性和关系。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 04d9a518dc18b6d9da40e8056be004a253017d12
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9579aea4e40b9c49b78eddeb682b96d4ec9e3839
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101650"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608091"
 ---
 # <a name="get-call"></a>获取呼叫
 
@@ -18,14 +18,16 @@ ms.locfileid: "62101650"
 
 检索 call 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
 | :-------------- | :----------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持。                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                         |
-| 应用程序                            | 无。                                  |
+| Application                            | Calls.Initiate.All、Calls.AccessMedia.All |
+
+> **注意：** 创建调用时检查权限;调用此 API 时，不会进行其他权限检查。 Calls.AccessMedia.All 仅对于使用应用托管媒体的呼叫是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +38,7 @@ GET /communications/calls/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
@@ -45,7 +47,7 @@ GET /communications/calls/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/call.md) 代码和 call 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [call](../resources/call.md) 对象。
 
 ## <a name="examples"></a>示例
 

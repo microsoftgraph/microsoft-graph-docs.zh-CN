@@ -3,15 +3,15 @@ author: daspek
 description: itemActivity 上存在 DeleteAction 资源指示活动删除了一个项。
 ms.date: 09/14/2017
 title: DeleteAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b8f00827a37ba9c010acd1b52e751bd55638afb3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5e47f178da27708422e14897a1dd8b19ff328b9
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049882"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723498"
 ---
 # <a name="deleteaction-resource-type"></a>DeleteAction 资源类型
 
@@ -28,22 +28,22 @@ ms.locfileid: "48049882"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.deleteAction"
+  "@type&quot;: &quot;microsoft.graph.deleteAction"
 }-->
 
 ```json
 {
   "name": "string",
-  "objectType": "File | Folder"
+  "objectType&quot;: &quot;File | Folder"
 }
 ```
 
 ## <a name="properties"></a>属性
 
-| 属性名称 | 类型   | 说明
-|:--------------|:-------|:----------------------------------------------------
-| name          | string | 已删除的项的名称。
-| objectType    | string | `File` 或 `Folder` ，具体取决于已删除项目的类型。
+| 属性   | 类型   | 说明                                                    |
+| :--------- | :----- | :------------------------------------------------------------- |
+| name       | string | 已删除的项的名称。                         |
+| objectType | string | `File` 或 `Folder`，具体取决于已删除项目的类型。 |
 
 ## <a name="remarks"></a>注解
 
@@ -59,5 +59,3 @@ ms.locfileid: "48049882"
   "suppressions": []
 }
 -->
-
-

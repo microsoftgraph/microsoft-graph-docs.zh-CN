@@ -1,23 +1,23 @@
 ---
 title: 获取 unifiedRoleManagementPolicyRule
 description: 读取 unifiedRoleManagementPolicyRule 对象的属性和关系。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 038fa406c41fd76ed914b69ed48a5f92a0e80213
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c820f6137371ebd5987f97a52a104ed46dbd2cc5
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132626"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510595"
 ---
 # <a name="get-unifiedrolemanagementpolicyrule"></a>获取 unifiedRoleManagementPolicyRule
 命名空间：microsoft.graph
 
 读取 [unifiedRoleManagementPolicyRule 对象的属性和](../resources/unifiedrolemanagementpolicyrule.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

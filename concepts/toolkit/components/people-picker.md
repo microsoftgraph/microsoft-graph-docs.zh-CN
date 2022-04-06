@@ -2,13 +2,13 @@
 title: People-Picker组件
 description: 您可以使用 mgt-people-picker Web 组件搜索指定数量的人，然后通过 Microsoft Graph。
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: 110a28d5c9309d95591e210441784a63208fa02f
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+author: sebastienlevert
+ms.openlocfilehash: c66f28ec02ea45f74f7590fb98f3cf17e5cbec0d
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335365"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587418"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker Microsoft Graph Toolkit 中的组件
 
@@ -85,7 +85,7 @@ ms.locfileid: "63335365"
     document.querySelector('mgt-people-picker').selectGroupsById(["groupid","groupid"])
     ```
 
-## <a name="events"></a>活动
+## <a name="events"></a>事件
 
 从组件中触发以下事件。
 
@@ -135,7 +135,7 @@ mgt-people-picker {
 | error | null：无数据 | 当用户搜索未返回任何用户时所使用的模板。 |
 | no-data | null：无数据 | 如果用户搜索未返回任何用户，则使用备用模板。 |
 | selected-person | person： The person details object | 用于呈现选定人员的模板。 |
-| 人员 | person： The person details object | 下拉列表中用于呈现人员的模板。 |
+| person | person： The person details object | 下拉列表中用于呈现人员的模板。 |
 
 以下示例演示如何使用模板 `error` 。
 

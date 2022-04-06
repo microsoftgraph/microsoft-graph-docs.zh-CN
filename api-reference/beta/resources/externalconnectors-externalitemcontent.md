@@ -1,16 +1,16 @@
 ---
 title: externalItemContent 资源类型
 description: 通过连接建立索引的项目Microsoft 搜索内容。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d895d0056da71ea065dbc62d08c9deda054a6f29
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 36ca1d19e9be37d7c47c9195fc2c63f677673c0e
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467664"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63560089"
 ---
 # <a name="externalitemcontent-resource-type"></a>externalItemContent 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "53467664"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过连接[建立索引的 externalItem](externalconnectors-externalitem.md) Microsoft 搜索[内容](externalconnectors-externalconnection.md)。
+通过外部连接[建立索引的 externalItem](externalconnectors-externalitem.md) Microsoft 搜索[内容](externalconnectors-externalconnection.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型   | 说明                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
 | 值    | String | externalItem 的内容。 此为必需属性。                                                 |
-| type     | String | value 属性中的内容类型。 可能的值为 `text` 和 `html`。 必填。 |
+| type     | 字符串 | value 属性中的内容类型。 可能的值为 `text` 和 `html`。 这些是索引器支持的内容类型，而不是允许的文件扩展名类型。 必填。 |
 
 ## <a name="relationships"></a>关系
 

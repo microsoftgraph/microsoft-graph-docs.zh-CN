@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f35421b8f922c14e16930706cff10400520a0a85
-ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
+ms.openlocfilehash: b26a17f53d591172acb5334981aabfe83305277e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63500950"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671795"
 ---
 # <a name="update-unifiedroledefinition"></a>更新 unifiedRoleDefinition
 
@@ -37,7 +37,7 @@ ms.locfileid: "63500950"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All  |
+|应用程序 | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
 
@@ -45,15 +45,15 @@ ms.locfileid: "63500950"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  DeviceManagementRBAC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | DeviceManagementRBAC.ReadWrite.All |
+|应用程序 | DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-a-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All   |
+|委派（工作或学校帐户） |  RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|应用程序 | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -87,14 +87,14 @@ PATCH /roleManagement/cloudPc/roleDefinitions/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|字符串| 角色定义的说明。 isBuiltIn 为 true 时为只读。 |
-|displayName|字符串| 角色显示名称的角色定义。 isBuiltIn 为 true 时为只读。 必需。|
-|id|字符串| 角色定义的唯一标识符。 键，不可为 null，只读。 |
+|说明|String| 角色定义的说明。 isBuiltIn 为 true 时为只读。 |
+|displayName|String| 角色显示名称的角色定义。 isBuiltIn 为 true 时为只读。 必需。|
+|id|String| 角色定义的唯一标识符。 键，不可为 null，只读。 |
 |isBuiltIn|Boolean| 指示角色定义是否属于产品或自定义中包含的默认集的标志。 只读。 |
 |isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false，则角色不能用于分配。 isBuiltIn 为 true 时为只读。 |
 |resourceScopes|String collection| 角色定义授予的作用域权限列表适用。 目前仅支持"/"。 isBuiltIn 为 true 时为只读。 **请勿使用。此属性将很快弃用。将作用域附加到角色分配。**|
 |rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) 集合| 角色中包含的权限列表。 isBuiltIn 为 true 时为只读。 必需。 |
-|templateId|字符串| 可以在 isBuiltIn 为 false 时设置的自定义模板标识符。 如果一个标识符在不同目录之间需要相同，则通常使用此标识符。 isBuiltIn 为 true 时为只读。 |
+|templateId|String| 可以在 isBuiltIn 为 false 时设置的自定义模板标识符。 如果一个标识符在不同目录之间需要相同，则通常使用此标识符。 isBuiltIn 为 true 时为只读。 |
 |inheritsPermissionsFrom| [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 集合| 给定角色定义从其继承的角色定义的只读集合。 只有Azure AD角色才支持此属性。 |
 |version|String| 指示角色定义的版本。 isBuiltIn 为 true 时为只读。|
 

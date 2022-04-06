@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b37494d1c57d6a202d109c8d8c9c701a4622da5f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bff60a30b7bb22995eb2df470672b56081155311
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114653"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672138"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -27,7 +27,7 @@ ms.locfileid: "62114653"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -56,8 +56,8 @@ POST /users
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。 对于 Azure B2C 租户，**forceChangePasswordNextSignIn** 属性应设置为 `false`，并且应在第一次登录时使用自定义策略强制重置密码。|
-|userPrincipalName |string |用户主体名称 (someuser@contoso.com)。 它是基于 Internet 标准 RFC 822 的用户的 Internet 样式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中 domain 必须位于租户的已验证域集合中。 可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。 <br>注意：此属性不能包含突出字符。 仅支持使用以下字符：`A - Z`、`a - z`、`0 - 9`、` ' . - _ ! # ^ ~`。 有关允许字符的完整列表，请参阅[用户名策略](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts)。|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。对于 Azure B2C 租户，**forceChangePasswordNextSignIn** 属性应设置为 `false`，并且应在第一次登录时使用自定义策略强制重置密码。|
+|userPrincipalName |string |用户主体名称 (someuser@contoso.com)。它是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](../resources/organization.md)的 **verifiedDomains** 属性访问租户的已验证域。<br>注意：此属性不能包含突出字符。 仅支持使用以下字符：`A - Z`、`a - z`、`0 - 9`、` ' . - _ ! # ^ ~`。 有关允许字符的完整列表，请参阅[用户名策略](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts)。|
 
 由于 **用户** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。
 

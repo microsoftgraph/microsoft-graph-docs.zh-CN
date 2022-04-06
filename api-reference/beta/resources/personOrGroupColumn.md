@@ -3,15 +3,15 @@ author: simonhult
 description: columnDefinition 资源上的 personOrGroupColumn 指示列值，该值表示从目录中选择的个人或组。
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 261ed729bc865b6679bf6dc9d08060148f32006a
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 2e35c461dcec7cac70af8b6591a4fcb251ccc8e2
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176407"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63720802"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "50176407"
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是 **personOrGroupColumn** 资源的 JSON 表示形式。
+
 <!-- { "blockType": "resource", "@type": "microsoft.graph.personOrGroupColumn", "@property.aka": "chooseFromType=format" } -->
 
 ```json
@@ -36,16 +37,16 @@ ms.locfileid: "50176407"
 
 ## <a name="properties"></a>属性
 
-| 属性名称              | 类型    | 说明
-|:---------------------------|:--------|:--------------------------------------
-| **allowMultipleSelection** | boolean | 指示是否可以从源中选择多个值。
-| **displayAs**              | string  | 如何显示有关所选个人或组的信息。 请参阅下文。
-| **chooseFromType**         | string  | 是否允许仅选择人员，或同时选择人员和组。 必须为 `peopleAndGroups` 或 `peopleOnly` 的其中一个。
+| 属性                   | 类型    | 说明                                                                                                        |
+| :------------------------- | :------ | :----------------------------------------------------------------------------------------------------------------- |
+| **allowMultipleSelection** | boolean | 指示是否可以从源中选择多个值。                                                 |
+| **displayAs**              | string  | 如何显示有关所选个人或组的信息。 请参阅下文。                                        |
+| **chooseFromType**         | string  | 是否允许仅选择人员，或同时选择人员和组。 必须为 `peopleAndGroups` 或 `peopleOnly` 的其中一个。 |
 
 ## <a name="displayas-values"></a>displayAs 值
 
-| 值               | 说明                                                                                                 |
-|:------------------------------|:------------------------------------------------------------------------------------------------------------|
+| 值                         | 说明                                                                                                 |
+| :---------------------------- | :---------------------------------------------------------------------------------------------------------- |
 | **帐户**                   | 采用原始 SharePoint 编码的人员或组声明字符串（如 `i:0#.f|membership|jane@contoso.com`). |
 | **department**                | 人员或组的所在部门。                                                                           |
 | **firstName**                 | 人员的名字。                                                                                    |
@@ -77,5 +78,3 @@ ms.locfileid: "50176407"
   "suppressions": []
 }
 -->
-
-

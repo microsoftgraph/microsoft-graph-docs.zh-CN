@@ -1,16 +1,16 @@
 ---
 title: governanceRoleSetting 资源类型
-description: 表示每个角色定义上的一组配置，当创建或修改角色分配时，需要根据这些配置进行评估。
+description: 表示每个角色定义上的一组配置，创建或修改角色分配时需要根据这些配置进行评估。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: af49836d52659b6f75727008599aea1ca16d5206
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 8a98725d26d160b9d8687fceb87e6811440ed31a
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688168"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509656"
 ---
 # <a name="governancerolesetting-resource-type"></a>governanceRoleSetting 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "60688168"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-表示每个角色定义上的一组配置，当创建或修改角色分配时，需要根据这些配置进行评估。 例如，角色设置可能包括"最大分配持续时间"规则、"激活时需要 MFA"规则等。
+表示每个角色定义上的一组配置，创建或修改角色分配时需要根据这些配置进行评估。 例如，角色设置可能包括"最大分配持续时间"规则、"激活时需要 MFA"规则等。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法          | 返回类型 |Description|
 |:---------------|:--------|:--------|
@@ -38,7 +38,7 @@ ms.locfileid: "60688168"
 |roleDefinitionId     |String                                  |必需。 与角色设置关联的角色定义的 ID。|
 |isDefault            |Boolean                                 |只读。 指示 roleSetting 是否默认 roleSetting|
 |lastUpdatedDateTime  |DateTimeOffset                          |只读。 上次更新角色设置的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|lastUpdatedBy        |String                                  |只读。 最后显示名称 roleSetting 的管理员的组。|
+|lastUpdatedBy        |String                                  |只读。 上次显示名称 roleSetting 的管理员的组。|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加符合条件的规则时评估的规则角色分配。|
 |adminMemberSettings  |[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加直接成员角色时评估的规则角色分配。|
 |userEligibleSettings |[governanceRuleSetting](../resources/governancerulesetting.md) 集合|用户尝试添加符合条件的规则时评估的规则角色分配。 目前不支持该设置。|

@@ -1,16 +1,16 @@
 ---
 title: 列出 roleManagementPolicyAssignments
 description: 从 roleManagementPolicyAssignments 导航属性获取 unifiedRoleManagementPolicyAssignment 资源。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 85a89a8e568252ec10e9b9c994a18b10f41ceced
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 960204177d6092de89affe79e7f9775e78fc7f98
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133038"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509306"
 ---
 # <a name="list-rolemanagementpolicyassignments"></a>列出 roleManagementPolicyAssignments
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "62133038"
 
 从 roleManagementPolicyAssignments 导航属性获取 unifiedRoleManagementPolicyAssignment 资源。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -51,7 +51,7 @@ GET /policies/roleManagementPolicyAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

@@ -470,7 +470,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -614,7 +614,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -910,10 +910,8 @@ items:
               - name: 证书和密码
                 items:
                   - name: 添加密码
-                    displayName: Add secrets
                     href: api/application-addpassword.md
                   - name: 删除密码
-                    displayName: Remove secrets
                     href: api/application-removepassword.md
                   - name: 加号键
                     href: api/application-addkey.md
@@ -1103,10 +1101,8 @@ items:
               - name: 证书和密码
                 items:
                   - name: 添加密码
-                    displayName: Add secrets
                     href: api/serviceprincipal-addpassword.md
                   - name: 删除密码
-                    displayName: Remove secrets
                     href: api/serviceprincipal-removepassword.md
                   - name: 加号键
                     href: api/serviceprincipal-addkey.md
@@ -1131,7 +1127,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: 列出 transitive memberOf
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: 检查成员组
                     href: api/directoryobject-checkmembergroups.md
@@ -2034,7 +2030,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: 重定向
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -2112,7 +2108,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -10442,7 +10438,7 @@ items:
                     href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
                   - name: 获取租户详细信息
                     href: api/managedtenants-tenantdetailedinformation-get.md
-              - name: Tenant
+              - name: 租户
                 href: resources/managedtenants-tenant.md
                 items:
                   - name: 列出租户
@@ -11624,11 +11620,8 @@ items:
                 items:
                   - name: 概述
                     href: resources/authenticationmethods-overview.md
-                  - name: 身份验证方法
-                    href: resources/authenticationmethod.md
-                    items:
-                      - name: 列表
-                        href: api/authentication-list-methods.md
+                  - name: 列出所有方法
+                    href: api/authentication-list-methods.md
                   - name: FIDO2 安全密钥
                     href: resources/fido2authenticationmethod.md
                     items:
@@ -11811,7 +11804,7 @@ items:
                 items:
                   - name: 概述
                     href: resources/crosstenantaccesspolicy-overview.md
-                  - name: Policy
+                  - name: 策略
                     items:
                       - name: 跨租户访问策略
                         href: resources/crosstenantaccesspolicy.md
@@ -12433,7 +12426,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: 用户流属性分配
                     items:
-                      - name: User
+                      - name: 用户
                         href: resources/identityuserflowattributeassignment.md
                       - name: 获取
                         href: api/identityuserflowattributeassignment-get.md
@@ -13445,7 +13438,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 注释
+              - name: 备注
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -14252,7 +14245,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列表
                     href: api/simulationautomation-list-runs.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -14520,7 +14513,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -14981,7 +14974,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: 从聊天中删除应用
                     href: api/chat-delete-installedapps.md
-          - name: Device
+          - name: 设备
             items:
               - name: 预配的设备
                 href: resources/teamworkdevice.md
@@ -15026,7 +15019,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

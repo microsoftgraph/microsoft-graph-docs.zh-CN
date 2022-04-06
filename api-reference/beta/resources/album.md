@@ -1,35 +1,34 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
-title: 唱集资源类型
-description: 描述属于相册的捆绑包的 Facet。
-localization_priority: Normal
+title: 相册资源类型
+description: 描述作为相册的捆绑包的 Facet。
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: b17a910a488e1fb5f051b4acc02d788a21d530d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0f35eea761a467ce1a733f07fca5c33a218be030
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067410"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723220"
 ---
-# <a name="album-resource-type"></a>唱集资源类型
+# <a name="album-resource-type"></a>相册资源类型
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-相册是在[捆绑包][]中将[driveitem][driveItem]与[照片][]facet 组合在一起的一种方式。 此类型的捆绑包将在[捆绑][]资源上设置**唱集**属性。
+相册是一种在捆绑包中将具有照片 Facet 的 [driveItemsdriveItem][] 组合在一起[的方法][]。[][] 此类型的捆绑包将在 **bundle** 资源上设置 [相册][] 属性。
 
 ## <a name="properties"></a>属性
 
-| 属性名称     | 类型   | 说明
-|:------------------|:-------|:------------------------------------------------
-| coverImageItemId | String | [DriveItem][]的唯一标识符，它是唱片集的封面。
+| 属性         | 类型   | 说明                                                            |
+| :--------------- | :----- | :--------------------------------------------------------------------- |
+| coverImageItemId | String | 作为专辑封面的 [driveItem][] 的唯一标识符。 |
 
-**注意：** 如果尚未设置 **coverImageItemId** ，则会自动选择影集的缩略图。
-设置 **coverImageItemId** 后，影集的缩略图将始终为与该 id 关联的项目。您可以通过修补 [捆绑包项目][捆绑] 并将 **coverImageItemId** 属性设置 `album` 为包含在影集中的图像的 id 来覆盖默认封面。
-若要删除自定义设置的封面，可以将 **coverImageItemId** 属性设置为 null，并再次自动选择默认属性。
+**注意：** 如果 **之前尚未设置 coverImageItemId** ，则会自动选择专辑的缩略图。
+设置 **coverImageItemId** 后，相册的缩略图将始终与该 ID 关联。你可以替代默认封面，方法为 PATCHing the [bundle] [itembundle]，将 上的 **coverImageItemId** `album` 属性设置为相册中包含的图像的 ID。
+若要删除自定义集封面，可以将 **coverImageItemId** 属性设置为 null，并且将自动再次选择默认覆盖。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,8 +40,6 @@ ms.locfileid: "48067410"
 }
 ```
 
-[bundle]: bundle.md
+[捆绑]: bundle.md
 [driveItem]: driveItem.md
-[photo]: photo.md
-
-
+[照片]: photo.md

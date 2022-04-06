@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dfbf2e33622a6f127afa45e511140df7834b05e1
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 650d0fe5976ae9ad9763c6c4e8f15327a6349649
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201412"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671508"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "62201412"
 
 从[已删除的项目](../resources/directory.md)中检索最近删除的项目列表。
 
-目前，仅应用程序、组和用户资源支持[已删除项目功能](../resources/user.md)。 [](../resources/group.md) [](../resources/application.md)
+目前，仅应用程序、组和用户资源支持[已删除的项目](../resources/group.md)[功能](../resources/user.md)。[](../resources/application.md)
 
 >**注意：** 已删除的安全组将永久删除，无法通过此 API 进行检索。
 
@@ -32,7 +32,7 @@ ms.locfileid: "62201412"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All、Application.ReadWrite.All、Directory.Read.All |
 
@@ -40,7 +40,7 @@ ms.locfileid: "62201412"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -48,7 +48,7 @@ ms.locfileid: "62201412"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
 
@@ -60,22 +60,22 @@ GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-此 API 当前支持检索应用程序的对象类型 () 、 () 用户 () `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` 删除的项目。 OData 转换类型是 URI 的必需部分，不支持在没有类型 `GET /directory/deleteditems` 的情况下 **调用** 。
+此 API 当前支持 `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` 检索应用程序的对象类型 () 、 () 用户 () 删除的项目。 OData 转换类型是 URI 的必需部分，不支持 `GET /directory/deleteditems` 在没有类型的情况下 **调用** 。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData 转换指定的资源支持的查询参数。 即 `$count` `$expand` `$filter` ，、、、、、、 `$orderBy` `$search` `$select` 和 `$top` 查询参数。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 例如：
+此方法支持 OData 转换指定的资源支持的查询参数。 即，、`$count``$expand`、、`$filter`、`$orderBy`、`$search`、`$select`和`$top`查询参数。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 例如：
 
 ```msgraph-interactive
 https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderBy=deletedDateTime desc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 
-此示例需要 **ConsistencyLevel** 标头，因为 查询中使用了 和 `$orderBy` `$count` 查询参数。
+此示例需要 **ConsistencyLevel** 标头，因为 `$orderBy` 查询 `$count` 中使用了 和 查询参数。
 
 ### <a name="examples-using-the-orderby-odata-query-parameter"></a>使用 OData $orderBy参数的示例
 
-`$orderBy`在已删除的对象类型的 **deletedDateTime** **、displayName** 和 **userPrincipalName** 属性上支持 OData 查询参数。 在 **deletedDateTime** 属性上，查询需要将 [](/graph/aad-advanced-queries)高级查询参数 (**ConsistencyLevel** 标头设置为 ，并 `true` 添加 `$count=true` 查询字符串) 。
+在 `$orderBy` 已删除的对象类型的 **deletedDateTime**、 **displayName** 和 **userPrincipalName** 属性上支持 OData 查询参数。 在 **deletedDateTime** 属性上，查询需要将高级查询 [](/graph/aad-advanced-queries)参数 (**ConsistencyLevel** `true` `$count=true` 标头设置为 ，并添加查询字符串) 。
 
 | OData 转换 | 支持属性$orderBy | 示例 |
 | :--- | :--- | :--- |

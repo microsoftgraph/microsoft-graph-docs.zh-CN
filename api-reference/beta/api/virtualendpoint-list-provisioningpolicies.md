@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: be0833fbed80f93e370812891bf44c81c10c350a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5cfd4a178eb24c7f14a3351bd76affc71ac77643
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125144"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724010"
 ---
 # <a name="list-provisioningpolicies"></a>列出 provisioningPolicies
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 、 `$filter` 和 `$expand` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select`、 `$filter` 和 `$expand` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,7 +57,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 ### <a name="response"></a>响应
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,10 +127,13 @@ Content-Type: application/json
           "type": "hybridAzureADJoin"
       },
       "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
       "imageDisplayName": "Image Display Name value",
       "imageId": "Image ID value",
       "imageType":"custom",
-      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
+      "windowsSettings": {
+        "language": "en-US"
+      }
     }
   ]
 }

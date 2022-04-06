@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: 删除捆绑包
-description: 删除 driveItems 捆绑包
+description: 删除 driveItems 捆绑包。
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7edd748b0e1a1298ed950ce885fb92bbfcf56064
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f649bcda68e8eddfacecc24abd3ed5e0b80cb8bc
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994697"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758149"
 ---
 # <a name="delete-bundle"></a>删除捆绑包
 
@@ -18,11 +18,11 @@ ms.locfileid: "60994697"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 [id][] 删除 driveItems **捆绑包**。请注意，使用此方法删除捆绑包会永久删除该捆绑包，并且不会将其移动到回收站。
+使用 [driveItems][] 的 id 删除捆绑 **包**。请注意，使用此方法删除捆绑包会永久删除该捆绑包，并且不会将其移动到回收站。
 但是，它不会删除捆绑包引用的项目。
 它们将保留在父文件夹中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,23 +44,24 @@ DELETE /drive/items/{bundle-id}
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。必需。 |
-| if-match      | eTag。 可选。 如果包含此请求标头，且提供的 eTag (或 cTag) 与捆绑包上的当前标记不匹配，将返回响应，并且不会删除 `412 Precondition Failed` 捆绑包。
+| Authorization | Bearer {token}。必需。 |
+| if-match      | eTag。 可选。 如果包含此请求标头，并且提供的 eTag (或 cTag `412 Precondition Failed`) 与捆绑包上的当前标记不匹配，将返回响应，并且不会删除捆绑包。|
 
 ## <a name="request-body"></a>请求正文
 
-请勿为此方法提供请求正文。
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此调用将返回 `204 No Content` 响应，表示资源已被删除，没有可返回的内容。
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
-请参阅[错误响应][error-response]主题，详细了解错误返回方式。
+有关错误响应的信息，请参阅 [Microsoft Graph错误响应和资源类型][error-response]。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-bundle" } -->
@@ -84,7 +85,7 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-bundle-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,6 +94,8 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 
 ### <a name="response"></a>响应
 
+下面展示了示例响应。
+
 <!-- { "blockType": "response" } -->
 
 ```http
@@ -100,7 +103,7 @@ HTTP/1.1 204 No Content
 ```
 
 
-[bundle]: ../resources/bundle.md
+[捆绑]: ../resources/bundle.md
 [error-response]: /graph/errors
 
 <!-- {

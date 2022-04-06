@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleManagementPolicy 资源类型
 description: unifiedRoleManagementPolicy 指定与作用域和角色定义关联的各种策略。 它派生自 microsoft.graph.policyBase。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4b64b5fc402bab0d549d60c1653e826d80fa0bbd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: d458ab00c772040380adcb9aae800205fe82dc8e
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63667951"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510174"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>unifiedRoleManagementPolicy 资源类型
 
@@ -34,13 +34,13 @@ unifiedRoleManagementPolicy 指定与作用域和角色Azure AD相关联的各�
 |属性|类型|说明|
 |:---|:---|:---|
 |说明|String|策略的说明。|
-|displayName|String|策略的显示名称。|
+|displayName|字符串|策略的显示名称。|
 |id|String|策略的唯一标识符。|
-|isOrganizationDefault|布尔值|对于将适用于所有作用域和角色的单个租户范围策略，这只能设置为 true。 将 scopeId 设置为"/"，将 scopeType 设置为 Directory。|
+|isOrganizationDefault|Boolean|对于将适用于所有作用域和角色的单个租户范围策略，这只能设置为 true。 将 scopeId 设置为"/"，将 scopeType 设置为 Directory。|
 |lastModifiedBy|[identity](../resources/identity.md)|上次修改角色设置的标识。|
 |lastModifiedDateTime|DateTimeOffset|上次修改角色设置的时间。|
-|scopeId|String|创建策略的范围的 ID。 适用于 `/` 租户或组 ID。 必需。|
-|scopeType|String|创建策略的范围类型。 其中一`Directory`个。 `DirectoryRole` 必填。|
+|scopeId|String|创建策略的范围的 ID。 适用于 `/` 租户或组 ID。 必需项。|
+|scopeType|字符串|创建策略的范围类型。 其中一`Directory`个。 `DirectoryRole` 必填。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

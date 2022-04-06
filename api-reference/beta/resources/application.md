@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: d72b8a9e823d9f10276cb13b789de089250f67fe
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 4c790077a68746e90491bcc87dd139428458eb87
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335302"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477476"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -43,8 +43,8 @@ ms.locfileid: "63335302"
 |[创建调用](../api/application-post-calls.md)|[call](call.md)|通过发布到调用集合创建新的调用。|
 |[创建在线会议](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|通过发布到 onlineMeetings 集合创建新的在线会议。|
 |**证书和密码**| | |
-|[添加密码](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|向应用程序添加强密码。|
-|[删除密码](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|从应用程序删除密码。|
+|[添加密码](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|向应用程序添加强密码或机密。|
+|[删除密码](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|从应用程序中删除密码或机密。|
 |[加号键](../api/application-addkey.md)|[keyCredential](keycredential.md)|向应用程序添加密钥凭据。|
 |[删除键](../api/application-removekey.md)|无|从应用程序中删除密钥凭据。|
 |**Extensions**| | |
@@ -83,7 +83,7 @@ ms.locfileid: "63335302"
 | addIns | [addIn](addin.md) 集合 | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers)。 这将使 Office 365 之类的服务在用户正在处理的文档上下文中调用应用程序。 |
 | api | [apiApplication](apiapplication.md) | 指定实现 Web API 的应用程序的设置。 |
 | appId | String | Azure AD 分配给应用程序的唯一标识符。不可为 Null。只读。 |
-|applicationTemplateId | String | 应用程序模板的唯一标识符。 支持 `$filter`（`eq`、`not`、`ne`）。|
+|applicationTemplateId | String | applicationTemplate 的唯一标识符。支持 `$filter` （`eq`、 `not`、 `ne`）。|
 | appRoles | [appRole](approle.md) 集合 | 分配给应用程序的角色的集合。 使用[应用角色分配](approleassignment.md)，可将这些角色分配给与其他应用程序关联的用户、组或服务主体。 不可为空。 |
 |认证|[认证](certification.md)|指定应用程序的认证状态。|
 | createdDateTime | DateTimeOffset | 注册应用程序的日期和时间。DateTimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 <br><br> 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in` 和 `null` 值上的 `eq`) 和 `$orderBy`。 |

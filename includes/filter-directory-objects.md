@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 91a5d7042cbb336be47fd11a0846980bb49a0a0a
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 24543ebddf54800c7ca0d397712d88d37f91c795
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61323843"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646959"
 ---
 ### <a name="administrative-unit-properties"></a>管理单元属性
 
@@ -76,7 +76,7 @@ ms.locfileid: "61323843"
 | onPremisesProvisioningErrors/any(o:o/category)             | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
 | onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
 | onPremisesSamAccountName                                   | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![不支持][NS]                       |
-| onPremisesSecurityIdentifier                               | ![不支持][NS]                       |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
+| onPremisesSecurityIdentifier                               | ![默认支持][RDS]               |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
 | onPremisesSyncEnabled                                      | ![默认支持][RDS]               |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
 | preferredLanguage                                          | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![需要高级查询参数。][AQP] |
 | proxyAddresses/any(p:p)                                    | ![默认支持][RDS]               | ![默认支持][RDS]               | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |
@@ -168,7 +168,7 @@ ms.locfileid: "61323843"
 | onPremisesProvisioningErrors/any(o:o/category)             | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
 | onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
 | onPremisesSamAccountName                                   | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![不支持][NS]                       |
-| onPremisesSecurityIdentifier                               | ![不支持][NS]                       |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
+| onPremisesSecurityIdentifier                               | ![默认支持][RDS]               |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
 | onPremisesSyncEnabled                                      | ![默认支持][RDS]               |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
 | otherMails/any (p：p)                                         | ![默认支持][RDS]               | ![默认支持][RDS]               | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |
 | passwordPolicies                                           | ![不支持][NS]                       | ![不支持][NS]                       |                                            |                                            | ![需要高级查询参数。][AQP] |

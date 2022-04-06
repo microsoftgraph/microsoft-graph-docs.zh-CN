@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleManagementPolicies
 description: 获取 unifiedRoleManagementPolicy 对象及其属性的列表。
-author: japere
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0ee14bcd9dd97689c1260b1f681be7a13ed8d0e1
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 12bdee34ff2abf81db65bb8f32f23aafe89a82f2
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510370"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670052"
 ---
 # <a name="list-unifiedrolemanagementpolicies"></a>列出 unifiedRoleManagementPolicies
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "64510370"
 
 获取 [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象及其属性的列表。 此 API 仅适用于Azure AD角色。 若要检索适用于 Azure RBAC 的策略，请使用适用于角色管理策略的 [Azure REST PIM API](/rest/api/authorization/role-management-policies/list-for-scope)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|RoleManagementPolicy.Read.Directory、RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagementPolicy.ReadWrite.Directory、RoleManagement.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory|
+|Application|RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -2,15 +2,15 @@
 title: 组：subscribeByMail
 description: 调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。 仅支持 Microsoft 365 组。
 ms.localizationpriority: medium
-author: Jordanndahl
+author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d9438275c23cd54d2e229690e0f45a3e87a42a69
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: d18bf7ed010e1ee5d3597a0ea6af4ad729d9e0ee
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339026"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589021"
 ---
 # <a name="group-subscribebymail"></a>组：subscribeByMail
 
@@ -18,77 +18,97 @@ ms.locfileid: "62339026"
 
 调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。 仅支持 Microsoft 365 组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+| 权限类型                        | 权限（从最低特权到最高特权） |
+| :------------------------------------- | :------------------------------------------ |
+| 委派（工作或学校帐户）     | Group.ReadWrite.All                         |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
+| Application                            | 不支持。                              |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/subscribeByMail
 ```
+
 ## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
-| Prefer | return=minimal。 如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。 可选。  | 
+
+| 标头        | 值                                                                                                                                             |
+| :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Authorization | Bearer {token}。必需。                                                                                                                         |
+| Prefer        | return=minimal。 如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。 可选。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
+
 #### <a name="request"></a>请求
+
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_subscribebymail"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/subscribeByMail
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-subscribebymail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-subscribebymail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-subscribebymail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/group-subscribebymail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/group-subscribebymail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-subscribebymail-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### <a name="response"></a>响应
-下面展示了示例响应。 
+
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 ```
@@ -104,4 +124,3 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
-

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8393743d371caba7417512e7350bf08de134fd9f
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 2d68eb1570917254c5126f4326289f925806e5ab
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336410"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630427"
 ---
 # <a name="get-operationapprovalrequest"></a>获取 operationApprovalRequest
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1566
+Content-Length: 1637
 
 {
   "value": {
@@ -115,7 +115,8 @@ Content-Length: 1566
     },
     "status": "needsApproval",
     "requestJustification": "Request Justification value",
-    "approvalJustification": "Approval Justification value"
+    "approvalJustification": "Approval Justification value",
+    "operationApprovalPolicies": "Operation Approval Policies value"
   }
 }
 ```

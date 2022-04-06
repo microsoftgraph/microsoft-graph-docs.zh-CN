@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67b3f73a633cdff7a411d85851ef2cf1856a1083
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: b43716ae6a7122d8de198a228953cbfcea7449ce
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62290670"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629839"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>创建 userExperienceAnalyticsDevicePerformance
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -57,7 +57,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 |deviceName|String|用户体验分析设备名称。|
 |model|String|用户体验分析设备模型。|
 |manufacturer|String|用户体验分析设备制造商。|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|用户体验分析设备磁盘类型。 可取值为：`hdd`、`ssd`、`unknown`。|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|用户体验分析设备磁盘类型。 可取值为：`unknown`、`hdd`、`ssd`、`unknownFutureValue`。|
 |operatingSystemVersion|String|用户体验分析设备操作系统版本。|
 |bootScore|Int32|用户体验分析设备启动分数。|
 |coreBootTimeInMs|Int32|用户体验分析设备核心启动时间（以毫秒为单位）。|
@@ -70,8 +70,8 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应式桌面时间（以毫秒为单位）。|
 |blueScreenCount|Int32|最近 14 天内的蓝屏数。 有效值为 0 到 9999999|
 |restartCount|Int32|最近 14 天内的重启次数。 有效值为 0 到 9999999|
-|averageBlueScreens|双精度|平均 (表示) 14 天内每个设备的蓝屏数量。 有效值为 0 到 9999999|
-|averageRestarts|双精度|平均 (，) 最近 14 天内每个设备重新启动次数的平均次数。 有效值为 0 到 9999999|
+|averageBlueScreens|双精度|平均 (14) 设备的平均蓝屏数。 有效值为 0 到 9999999|
+|averageRestarts|双精度|平均 () 最近 14 天内每个设备重新启动次数的平均次数。 有效值为 0 到 9999999|
 |startupPerformanceScore|双精度|用户体验分析设备启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |modelStartupPerformanceScore|双精度|用户体验分析模型级别的启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 
@@ -94,7 +94,7 @@ Content-length: 739
   "deviceName": "Device Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "diskType": "ssd",
+  "diskType": "hdd",
   "operatingSystemVersion": "Operating System Version value",
   "bootScore": 9,
   "coreBootTimeInMs": 0,
@@ -127,7 +127,7 @@ Content-Length: 788
   "deviceName": "Device Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "diskType": "ssd",
+  "diskType": "hdd",
   "operatingSystemVersion": "Operating System Version value",
   "bootScore": 9,
   "coreBootTimeInMs": 0,

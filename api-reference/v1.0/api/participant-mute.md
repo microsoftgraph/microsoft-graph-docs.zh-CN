@@ -1,16 +1,16 @@
 ---
 title: participant： mute
 description: 将呼叫中的特定参与者静音。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 348cda658a38db68658d12e7472871d7f5a7c558
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 40b0f32948b32a970760d5a3d29e4bf39310ff55
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346233"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608133"
 ---
 # <a name="participant-mute"></a>participant： mute
 
@@ -30,7 +30,7 @@ ms.locfileid: "62346233"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | 无                                        |
+| Application     | Calls.JoinGroupCallsasGuest.All 或 Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 

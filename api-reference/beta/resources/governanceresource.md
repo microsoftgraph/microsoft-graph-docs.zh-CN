@@ -4,13 +4,13 @@ description: 表示由 PIM Privileged Identity Management (管理) 。 对于 Az
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: e3a01feb6c33252b377e5d1929c4f6edac0901ce
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 5eacdb75d6607827eaf288b3eed17d41cce07f66
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60693155"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510560"
 ---
 # <a name="governanceresource-resource-type"></a>governanceResource 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "60693155"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 表示由 PIM Privileged Identity Management (管理) 。 对于 Azure 资源，它可以是订阅、资源组和资源（如虚拟机、SQL数据库等）。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法          | 返回类型 |Description|
 |:---------------|:--------|:----------|
@@ -31,7 +31,7 @@ ms.locfileid: "60693155"
 |[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |读取由 id 指定的资源实体的属性和关系。|
 |[注册](../api/governanceresource-register.md) | |将非托管 Azure 订阅或管理组注册到 PIM 服务。 |
 
-目前 `POST` `PUT` ， `PATCH` `DELETE` 实体集不支持 `roleDefinitions` 、 。
+目前`POST`，`PUT`实体`PATCH``DELETE`集不支持 `roleDefinitions` 、 。
 
 ## <a name="properties"></a>属性
 | 属性          |类型         |说明|
@@ -40,7 +40,7 @@ ms.locfileid: "60693155"
 |externalId           |String   |资源的外部 ID，表示其外部系统中的原始 ID。 例如，订阅资源的外部 ID 可以是"/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac"。 |
 |type               |String     |必需。 资源类型。 例如，对于 Azure 资源，类型可以是"Subscription"、"ResourceGroup"、"Microsoft.Sql/server"等。|
 |displayName        |String     |资源的显示名称。|
-|status             |字符串     |给定资源的状态。 例如，它可以表示资源是否已锁定 (值 `Active` / `Locked` ：) 。 注意：以后可能会扩展此属性以支持更多方案。|
+|状态             |字符串     |给定资源的状态。 例如，它可以表示资源是否已锁定 (值： `Active`/`Locked`) 。 注意：以后可能会扩展此属性以支持更多方案。|
 |registeredDateTime|DateTimeOffset      |表示在 PIM 中注册资源的日期时间。|
 |registeredRoot|String      |在 PIM 中注册的资源根范围的 externalId。 根范围可以是父级、上级或更高上级资源。|
 |roleAssignmentCount|Int32      |可选。 给定资源的角色分配数。 若要获取 属性，请在查询中 `$select=roleAssignmentCount` 明显使用 。|

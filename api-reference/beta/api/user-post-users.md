@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 13b6c278e93685ffd0ac95af6f1588d33366db8b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 76aab90f6573c104cebd717c0619e85ff912c8e9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126560"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671900"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -31,7 +31,7 @@ ms.locfileid: "62126560"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -54,7 +54,7 @@ POST /users
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|accountEnabled |布尔 |如果启用帐户，则其参数为 True;否则为 false。|
+|accountEnabled |Boolean |如果启用帐户，则其参数为 True;否则为 false。|
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
@@ -66,7 +66,7 @@ POST /users
 默认情况下，将强制通过此 API 创建的联盟用户每 12 小时登录一次。 若要了解如何更改此限制，请参阅 [令牌生存期的例外](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
 
 >[!NOTE]
->不允许向现有 [用户对象添加 B2C](../resources/objectidentity.md)本地帐户，除非 **用户** 对象已包含本地帐户标识。
+>不允许向现有 [用户对象添加 B2C](../resources/objectidentity.md) 本地帐户，除非 **用户** 对象已包含本地帐户标识。
 
 ## <a name="response"></a>响应
 

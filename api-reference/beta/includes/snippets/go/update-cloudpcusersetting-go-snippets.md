@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f6f10290a096145126357fd2b3733a2ae681c8dd
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c22872836de65c59c2714fbdbe53a6885e61c17e
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411913"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528110"
 ---
 ```go
 
@@ -19,7 +19,7 @@ selfServiceEnabled := true
 requestBody.SetSelfServiceEnabled(&selfServiceEnabled)
 restorePointSetting := msgraphsdk.NewCloudPcRestorePointSetting()
 requestBody.SetRestorePointSetting(restorePointSetting)
-frequencyInHours := "16"
+frequencyInHours := int32(16)
 restorePointSetting.SetFrequencyInHours(&frequencyInHours)
 userRestoreEnabled := true
 restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled)
@@ -32,7 +32,7 @@ options := &msgraphsdk.CloudPcUserSettingRequestBuilderPatchOptions{
     Body: requestBody,
 }
 cloudPcUserSettingId := "cloudPcUserSetting-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Patch(options)
+graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Patch(options)
 
 
 ```

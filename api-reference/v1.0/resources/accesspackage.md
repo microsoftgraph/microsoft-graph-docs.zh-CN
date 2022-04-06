@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 226715a4678b593e68a8364e326950c7af019212
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: faabd5198bb0ce31eef62a8c7f823ccb93a62458
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651454"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608063"
 ---
 # <a name="accesspackage-resource-type"></a>accessPackage 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "61651454"
 
 
 ## <a name="methods"></a>方法
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 accessPackages](../api/entitlementmanagement-list-accesspackages.md)|[accessPackage](accesspackage.md) 集合|检索 **accesspackage 对象** 的列表。 |
 |[创建 accessPackage](../api/entitlementmanagement-post-accesspackages.md)|[accessPackage](accesspackage.md)|创建新的 **accesspackage** 对象。 |
@@ -38,7 +38,7 @@ ms.locfileid: "61651454"
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |说明|String|访问包的说明。|
-|displayName|String|访问显示名称的组。 支持$filter (`eq` `contains` 、) 。|
+|displayName|String|访问显示名称的组。 支持$filter (`eq`、) `contains` 。|
 |id|String|只读。|
 |IsHidden|布尔值|访问包是否对请求程序隐藏。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
@@ -46,6 +46,7 @@ ms.locfileid: "61651454"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
+|assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 集合|只读。可为空。|
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式

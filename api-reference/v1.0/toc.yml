@@ -532,7 +532,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -1681,7 +1681,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -4640,9 +4640,9 @@ items:
                 href: resources/administrativeunit.md
                 items:
                   - name: 列出
-                    href: api/administrativeunit-list.md
+                    href: api/directory-list-administrativeunits.md
                   - name: 创建
-                    href: api/administrativeunit-post-administrativeunits.md
+                    href: api/directory-post-administrativeunits.md
                   - name: 获取
                     href: api/administrativeunit-get.md
                   - name: 更新
@@ -4866,8 +4866,11 @@ items:
                 items:
                   - name: 概述
                     href: resources/authenticationmethods-overview.md
-                  - name: 列出所有方法
-                    href: api/authentication-list-methods.md
+                  - name: 身份验证方法
+                    href: resources/authenticationmethod.md
+                    items:
+                      - name: 列表
+                        href: api/authentication-list-methods.md
                   - name: FIDO2 安全密钥
                     href: resources/fido2authenticationmethod.md
                     items:
@@ -5312,7 +5315,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-overview.md
@@ -5519,6 +5522,19 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: 更新
                         href: api/entitlementmanagementsettings-update.md
+                  - name: 访问包分配策略
+                    href: resources/accesspackageassignmentpolicy.md
+                    items:
+                      - name: 列出
+                        href: api/entitlementmanagement-list-assignmentpolicies.md
+                      - name: 创建
+                        href: api/entitlementmanagement-post-assignmentpolicies.md
+                      - name: 获取
+                        href: api/accesspackageassignmentpolicy-get.md
+                      - name: 更新
+                        href: api/accesspackageassignmentpolicy-update.md
+                      - name: 删除
+                        href: api/accesspackageassignmentpolicy-delete.md
               - name: 使用条款
                 items:
                   - name: 协议
@@ -6407,7 +6423,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 列出
@@ -6790,7 +6806,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

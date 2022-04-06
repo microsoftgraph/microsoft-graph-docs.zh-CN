@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e1e7756b8663b2d370d1dc1f0b9b8ca189fcc229
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 34c976e1e9b444416cd6645cff0c392aa02d0e5b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477984"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672418"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -19,9 +19,9 @@ ms.locfileid: "64477984"
 更新 [application 对象的属性](../resources/application.md) 。
 
 > [!IMPORTANT]
-> 不支持使用 PATCH 设置 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](./application-addpassword.md) 和 [removePassword](./application-removepassword.md) 方法更新应用程序的密码或密码。
+> 不支持使用 PATCH 设置 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](./application-addpassword.md) 和 [removePassword](./application-removepassword.md) 方法更新应用程序的密码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -59,7 +59,7 @@ PATCH /applications/{id}
 | optionalClaims          | optionalClaims                                                              | 应用程序开发人员可以在其 Azure AD 应用中配置可选声明，以指定 Microsoft 安全令牌服务发送到他们应用程序的令牌中所需的声明。 有关详细信息 [，请参阅](/azure/active-directory/develop/active-directory-optional-claims) 可选声明。                                                                                                                                                                                                                                                               |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | 指定应用程序的家长控制设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | 指定已安装客户端（如台式设备或移动设备）的设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| requiredResourceAccess  | [requiredResourceAccess](../resources/requiredresourceaccess.md) 集合 | 指定应用程序需要访问的资源。 此属性还指定每个资源所需的委派权限和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 可配置的资源服务 (API) 不能超过 50 个。 从 2021 年 10 月中旬开始，所需权限总数不得超过 400 个。 不可为空。                                                                                                                 |
+| requiredResourceAccess  | [requiredResourceAccess](../resources/requiredresourceaccess.md) 集合 | 指定应用程序需要访问的资源。 此属性还指定每个资源所需的委派权限和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 可配置的资源服务 (API) 不能超过 50 个。 从 2021 年 10 月中旬开始，所需权限总数不得超过 400 个。 不可为 null。                                                                                                                 |
 | signInAudience          | String                                                                      | 指定当前应用程序支持的 Microsoft 帐户。 支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（即多租户）中拥有 Microsoft 工作或学校帐户的用户</li> <li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户</li></ul>                           |
 | tags                    | 字符串集合                                                           | 可用于分类和标识应用程序的自定义字符串。不可为 null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | tokenEncryptionKeyId    | String                                                                      | 指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。                                                                                                                                                                                                                               |

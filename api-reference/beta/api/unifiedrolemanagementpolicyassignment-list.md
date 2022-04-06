@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleManagementPolicyAssignments
 description: 获取 unifiedRoleManagementPolicyAssignment 对象及其属性的列表。
-author: japere
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 771ff41830a0a24c05704f9def617bb721613215
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 3887367fd8eed4ab68898802e39dbd9d853dbeb1
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510616"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477956"
 ---
 # <a name="list-unifiedrolemanagementpolicyassignments"></a>列出 unifiedRoleManagementPolicyAssignments
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "64510616"
 |:---|:---|
 |委派（工作或学校帐户）|RoleManagementPolicy.Read.Directory、RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagementPolicy.ReadWrite.Directory、RoleManagement.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|RoleManagement.Read.All、RoleManagement.Read.Directory、RoleManagement.ReadWrite.Directory|
+|Application|RoleManagement.Read.All、RoleManagement.Read.Directory、RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 

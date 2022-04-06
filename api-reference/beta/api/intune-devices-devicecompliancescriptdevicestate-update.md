@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e1eb29879d2d049d3e959aff4357beb07a2d498
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 26882b9da393c598a2c06d63a0f0dcdff4b8ce8e
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345273"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628824"
 ---
 # <a name="update-devicecompliancescriptdevicestate"></a>更新 deviceComplianceScriptDeviceState
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -49,22 +49,22 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/devic
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) 对象的 JSON 表示形式。
 
-下表显示创建 [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md)时所需的属性。
+下表显示创建 [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备合规性脚本设备状态实体的键。 此属性是只读的。|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|最近一次执行设备合规性脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|detectionState|[runState](../resources/intune-devices-runstate.md)|最近一次执行设备合规性脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备合规性脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|下一次执行设备合规性脚本的时间戳|
-|lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|
+|lastSyncDateTime|DateTimeOffset|最后一次Intune管理扩展与 Intune|
 |scriptOutput|String|检测脚本的输出|
 |scriptError|String|检测脚本中的错误|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) 对象。
 
 ## <a name="example"></a>示例
 

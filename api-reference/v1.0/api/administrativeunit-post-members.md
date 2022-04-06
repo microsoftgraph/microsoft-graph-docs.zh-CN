@@ -1,22 +1,22 @@
 ---
 title: 添加成员
-description: 使用此 API 将用户或 (组的成员) 添加到管理单元。
+description: 使用此 API 将用户或 (组) 添加到管理单元。
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c5095e34787f4739295ab4811356136c7fd30253
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 22cc8c5022cdc27d434ba62bdf76891a7344d7e9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092645"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672026"
 ---
 # <a name="add-a-member"></a>添加成员
 
 命名空间：microsoft.graph
 
-使用此 API 将用户或 (组的成员) 添加到管理单元。
+使用此 API 将用户或 (组) 添加到管理单元。
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
@@ -26,7 +26,7 @@ ms.locfileid: "62092645"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.ReadWrite.All |
 
@@ -42,7 +42,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 `id` 要[添加的用户、](../resources/user.md)[组](../resources/group.md)或[directoryObject](../resources/directoryobject.md)的 。
+在请求正文中， `id` 提供要添加 [的用户](../resources/user.md)、  [组](../resources/group.md) 或 [directoryObject](../resources/directoryobject.md) 的 。
 
 ## <a name="response"></a>响应
 

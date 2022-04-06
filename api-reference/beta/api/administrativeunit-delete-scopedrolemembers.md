@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a38ab8785d69738d07418fa5352c3b7142a1c2b6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ed090a121c3ed8e8eb1572e10f8701964138ab6a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116933"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669492"
 ---
 # <a name="remove-a-scopedrolemember"></a>删除 scopedRoleMember
 
@@ -26,7 +26,7 @@ ms.locfileid: "62116933"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.ReadWrite.Directory |
 

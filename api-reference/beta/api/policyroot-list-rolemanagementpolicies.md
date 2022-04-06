@@ -1,16 +1,16 @@
 ---
 title: 列出 roleManagementPolicies
 description: 从 roleManagementPolicies 导航属性获取 unifiedRoleManagementPolicy 资源。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e8894ce30b35a1633d0b457f6d2edf6637f38dfe
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 288727407c01fcba34a2f4abee6d6d9dacfe9f09
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62120158"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509950"
 ---
 # <a name="list-rolemanagementpolicies"></a>列出 roleManagementPolicies
 命名空间：microsoft.graph
@@ -21,7 +21,7 @@ ms.locfileid: "62120158"
 从 roleManagementPolicies 导航属性获取 unifiedRoleManagementPolicy 资源。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -53,7 +53,7 @@ GET /policies/roleManagementPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

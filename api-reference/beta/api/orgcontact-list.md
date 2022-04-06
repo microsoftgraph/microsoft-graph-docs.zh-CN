@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e1034068bfe01ecf6723fb5ca8bcca7230c52972
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 1f4c74fc5cbb9081aaade25bcad33ab9f8c52262
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671571"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510006"
 ---
 # <a name="list-orgcontacts"></a>List orgContacts
 
@@ -20,7 +20,7 @@ ms.locfileid: "63671571"
 
 获取该组织的组织联系人列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -186,7 +186,7 @@ Content-type: text/plain
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count"
+  "name": "list_orgcontacts_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts?$filter=startswith(displayName,'A')&$count=true&$top=1&$orderby=displayName

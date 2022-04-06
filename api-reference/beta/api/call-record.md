@@ -1,16 +1,16 @@
 ---
 title: call： recordResponse
 description: 录制来自呼叫者的简短音频响应。 如果机器人想要在提示后捕获来自呼叫者的语音响应，这将非常有用。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2722f649f5d30be05af9d469905b134171e856e0
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 9c23f9d50571d963df6d0f73f952af14d4ee4e14
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346961"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607566"
 ---
 # <a name="call-recordresponse"></a>call： recordResponse
 
@@ -30,14 +30,14 @@ ms.locfileid: "62346961"
 
 >**注意：** 不得记录或以其他方式保留应用程序访问的呼叫或会议中的媒体内容，或记录派生自该媒体内容的数据。 确保你遵守有关通信数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | Calls.AccessMedia.All                       |
+| Application     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -60,11 +60,11 @@ POST /communications/calls/{id}/recordResponse
 |:---------------|:--------|:----------|
 |prompts|[MediaPrompt](../resources/mediaprompt.md) 集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为 1。|
 |bargeInAllowed|Boolean| 如果为 true，recordResponse 请求将插入其他现有的排队向上/当前处理的记录/playprompt 请求。 默认值 = false。 |
-|initialSilenceTimeoutInSeconds | Int32| 在超时 (失败) ，从开始记录响应操作时，用户的最大初始静默表示用户静默。 如果我们播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
-|maxSilenceTimeoutInSeconds|Int32| 用户开始 (后) 允许的最大静默时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
+|initialSilenceTimeoutInSeconds | Int32| 在超时 (失败) 记录响应操作时，将允许的最大初始静默时间设置为用户静默。 如果我们播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
+|maxSilenceTimeoutInSeconds|Int32| 最大静 (在) 开始说话后允许的最大静默时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
 |maxRecordDurationInSeconds|Int32| 在停止录制之前，recordResponse 操作的最大持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
-|playBeep|Boolean| 如果为 true，则播放一个嘟嘟声，以向用户指示他们可以开始录制其消息。 默认值 = true。|
-|stopTones|String 集合|结束录制指定的停止音调。|
+|playBeep|布尔| 如果为 true，则播放一个嘟嘟声，以向用户指示他们可以开始录制其消息。 默认值 = true。|
+|stopTones|String collection|结束录制指定的停止音调。|
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 > **注意：** 最大录制时间从 5 分钟减少到 2 分钟。

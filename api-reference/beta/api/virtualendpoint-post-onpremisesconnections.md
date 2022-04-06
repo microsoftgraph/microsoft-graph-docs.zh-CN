@@ -1,16 +1,16 @@
 ---
 title: 创建 cloudPcOnPremisesConnection
-description: 创建本地连接以预配云电脑。
+description: 创建 Azure 网络连接以预配云电脑。
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a1b2968ea12b703e228a55fea6b2c2efbf3e4bdf
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: f541ae5a05ae79507cb042ad6685bbe25754eef8
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670633"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589364"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>创建 cloudPcOnPremisesConnection
 
@@ -20,7 +20,9 @@ ms.locfileid: "63670633"
 
 创建新的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象以预配云电脑。
 
-## <a name="permissions"></a>权限
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
+
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,7 +58,7 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|本地显示名称的基础结构。|
+|displayName|String|Azure 显示名称连接的信息。|
 |type|cloudPcOnPremisesConnectionType|指定预配的云电脑如何加入 Azure Active Directory。 默认值为 `hybridAzureADJoin`。 可取值为：`azureADJoin`、`hybridAzureADJoin`、`unknownFutureValue`。|
 |subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
 |adDomainName|String|要加入的 Active Directory (的完全限定域名) FQDN。|

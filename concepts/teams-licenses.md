@@ -4,12 +4,12 @@ description: 了解适用于 Microsoft Graph 中的 Microsoft Teams API 的许�
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 422e1ba9c8ff61ce39b0d65615bd2e2fb45ffaaf
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: aac85b96442c7162d67f16d198a076402aa03314
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672705"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722260"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Microsoft Graph 中 Microsoft Teams API 的许可和付款要求
 
@@ -102,3 +102,4 @@ ms.locfileid: "63672705"
 ## <a name="price-for-additional-use"></a>其他用途的价格
 
 将来，Microsoft 会对种子设定容量之外的使用量收取费用。 你还可以将 Azure 订阅关联到应用程序注册。
+拥有应用注册的组织负责付款，对于多租户应用，这可能与运行应用的组织不同。

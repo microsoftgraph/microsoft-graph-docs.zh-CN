@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: cdf2841aa238a9c37f86c18330b9522deef4f025
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fe144c80f9cab914f57eda3a3104b5fc1df4383a
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60997294"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630350"
 ---
 # <a name="create-tasktrigger"></a>Create taskTrigger
 
@@ -18,12 +18,14 @@ ms.locfileid: "60997294"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的 [打印机 上创建新的](../resources/printtasktrigger.md) 任务 [触发器](../resources/printer.md)。 目前， **每个打印机** 只能指定一个任务触发器，但以后可能会删除此限制。 
+在指定的 [打印机上创建新的](../resources/printtasktrigger.md) 任务 [触发器](../resources/printer.md)。 目前， **每个打印机** 只能指定一个任务触发器，但以后可能会删除此限制。 
+
+>**注意：** 用于生成用于创建任务触发器的访问令牌的 appId 应该与用于创建相应任务定义的 appId 相同。
 
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -44,10 +46,10 @@ POST /print/printers/{id}/taskTriggers
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [printTaskTrigger](../resources/printtasktrigger.md) 对象的 JSON 表示形式。 使用 格式提供 [对 printTaskDefinition](../resources/printtaskdefinition.md) 的引用 `@odata.bind` ，如以下示例所示。
+在请求正文中，提供 [printTaskTrigger](../resources/printtasktrigger.md) 对象的 JSON 表示形式。 使用 格式提供 [对 printTaskDefinition](../resources/printtaskdefinition.md) `@odata.bind` 的引用，如以下示例所示。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和[printTaskTrigger。](../resources/printtasktrigger.md)
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [printTaskTrigger](../resources/printtasktrigger.md) 。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -83,7 +85,7 @@ POST https://graph.microsoft.com/beta/print/printers/ae63f617-4856-4b45-8ea9-69d
 [!INCLUDE [sample-code](../includes/snippets/java/create-printer-tasktrigger-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-printer-tasktrigger-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

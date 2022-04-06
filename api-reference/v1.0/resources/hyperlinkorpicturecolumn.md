@@ -5,12 +5,12 @@ description: hyperlinkOrPictureColumn 资源指示列包含 URL 数据，这些�
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 093ec12e6920c74ccbef942f18493602d785ee9f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1f2cc282732bbafcb5e5acff3aed53d534a2c557
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007199"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758200"
 ---
 # <a name="hyperlinkorpicturecolumn-resource-type"></a>hyperlinkOrPictureColumn 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "59007199"
 
 ## <a name="properties"></a>属性
 
-| 属性名称      | 类型               | 说明|
+| 属性      | 类型               | Description|
 |:-------------------|:-------------------|:----------------------------------------------|
 | isPicture       | Boolean             | 指定用于 URL 列的显示格式是图像还是超链接。 |
 

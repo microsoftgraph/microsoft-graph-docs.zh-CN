@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e834455f015966e59b2a668461ca6054eb21b03b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 0f312edfa5ba40edabe0d4bb315085a54f6ff84a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331912"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670262"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal： removeKey
 
@@ -29,7 +29,7 @@ ms.locfileid: "63331912"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All、Application.ReadWrite.All、Directory.ReadWrite.All   |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 无。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 

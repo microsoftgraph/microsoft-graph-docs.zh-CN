@@ -1,16 +1,16 @@
 ---
 title: call： cancelMediaProcessing
 description: 取消任何进行中的 playPrompt 或 recordResponse 运算的媒体处理。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3d8e257382f347c7203d071fd017bcde698f01e4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 3f2e20db5b503c5d74fca602c66edd864f617cd9
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339271"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607377"
 ---
 # <a name="call-cancelmediaprocessing"></a>call： cancelMediaProcessing
 
@@ -22,14 +22,16 @@ ms.locfileid: "62339271"
 
 媒体操作是指 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse](./call-record.md)，它们默认排队等待处理。 **cancelMediaProcessing** 方法取消进程内的任何操作以及排队的操作。 例如，此 API 可用于清理新媒体操作的 IVR 操作队列。 但是，它将不会取消 **ubscribeToTone** 操作，因为它独立于任何操作队列运行。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                              |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | 无。                                       |
+| Application                            | Calls.Initiate.All、Calls.AccessMedia.All |
+
+> **注意：** 创建调用时检查权限;调用此 API 时，不会进行其他权限检查。 Calls.AccessMedia.All 仅对于使用应用托管媒体的呼叫是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

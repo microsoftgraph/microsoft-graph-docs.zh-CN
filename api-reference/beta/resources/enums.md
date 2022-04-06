@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: aedf9e901c570fc53e65a519c4363d6f00d633c9
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 775fa88e83b398ce1a6607ece80c53e1103051d0
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588510"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630671"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -1112,7 +1112,7 @@ ms.locfileid: "64588510"
 |网站|
 |list|
 |listItem|
-|驱动器|
+|drive|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType 值
@@ -1572,7 +1572,7 @@ ms.locfileid: "64588510"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | 参考
 
 
@@ -1760,7 +1760,7 @@ ms.locfileid: "64588510"
 
 ### <a name="registryhive-values"></a>registryHive 值
 
-由 定义的注册表配置单元枚举 [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives)。
+注册表配置单元的枚举，由 [注册表配置单元定义](/windows/desktop/sysinfo/registry-hives)。
 
 | 成员                  | 值 | 说明                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -1850,7 +1850,7 @@ ms.locfileid: "64588510"
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
-根据组定义， (用户帐户) 类型的) 值Windows值。
+根据 Windows 定义，用户帐户类型 (组) 的可能值。
 
 | 成员        | 值 | 说明                     |
 | :------------ | :---- | :------------------------------ |
@@ -2301,7 +2301,7 @@ ms.locfileid: "64588510"
 |:----------------------|:------|:------------------------------------|
 | 无                  | 0     | 尚不知道。                       |
 | mailFlowRule          | 1     | Exchange传输规则。            |
-| safeSender            | 2     | 保险箱发件人列表。                   |
+| safeSender            | 2     | 安全发件人列表。                   |
 | blockedSender         | 3     | 阻止的发件人列表。                |
 | advancedSpamFiltering | 4     | 高级垃圾邮件筛选选项。     |
 | domainAllowList       | 5     | 发件人域允许列表。           |
@@ -2399,7 +2399,7 @@ ms.locfileid: "64588510"
 | 成员                | 值 | 说明                         |
 |:----------------------|:------|:------------------------------------|
 | string                | 1     | String 数据类型                    |
-| boolean               | 2     | Boolean 数据类型                   |
+| 布尔               | 2     | Boolean 数据类型                   |
 | int64                 | 3     | Int 数据类型                       |
 | stringCollection      | 4     | 字符串集合数据类型         |
 |dateTime|5||
@@ -2510,7 +2510,7 @@ ms.locfileid: "64588510"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|team      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
+|团队      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
@@ -2745,7 +2745,7 @@ ms.locfileid: "64588510"
 
 |成员|
 |:---|
-|或者|
+|或|
 |和|
 
 ### <a name="subjectrightsrequeststage-values"></a>subjectRightsRequestStage 值 

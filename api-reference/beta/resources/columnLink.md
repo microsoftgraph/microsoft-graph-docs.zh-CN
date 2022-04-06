@@ -3,15 +3,15 @@ author: daspek
 description: contentType 上的 columnLink 将网站 columnDefinition 附加到该内容类型。
 ms.date: 09/12/2017
 title: ColumnLink
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: f60392954cb1a214327edd4ffcc65449c6d976f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ae75a605f8476b9ec25d5aab5cf50f1bf9508c95
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034061"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723526"
 ---
 # <a name="columnlink-resource-type"></a>ColumnLink 资源类型
 
@@ -26,21 +26,22 @@ ms.locfileid: "48034061"
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是 **columnLink** 资源的 JSON 表示形式。
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnLink" } -->
 
 ```json
 {
   "id": "string",
-  "name": "string"
+  "name&quot;: &quot;string"
 }
 ```
 
 ## <a name="properties"></a>属性
 
-| 属性名称 | 类型   | 说明
-|:--------------|:-------|:----------------------------------------------------
-| **id**        | string | 列的唯一标识符。
-| **name**      | string | 此内容类型中的列的名称。
+| 属性 | 类型   | 说明                                   |
+| :------- | :----- | :-------------------------------------------- |
+| **id**   | string | 列的唯一标识符。         |
+| **name** | string | 此内容类型中的列的名称。 |
 
 <!--
 {
@@ -52,5 +53,3 @@ ms.locfileid: "48034061"
   "suppressions": []
 }
 -->
-
-

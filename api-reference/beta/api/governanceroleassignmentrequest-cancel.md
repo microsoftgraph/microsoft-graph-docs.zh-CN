@@ -4,13 +4,13 @@ description: 取消 governanceRoleAssignmentRequest。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 946e0dbfde3f097fb146d4725a2f4b3f9277aa14
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: e5d7946ca588830552a00a630b3c766ba43ecc03
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688217"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510293"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>取消 governanceRoleAssignmentRequest
 
@@ -18,11 +18,11 @@ ms.locfileid: "60688217"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 取消 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -50,7 +50,7 @@ ms.locfileid: "60688217"
 | 应用程序 | 不支持。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法 **不支持**[OData 查询参数](/graph/query-parameters)。
+此方法 **不支持** [OData 查询参数](/graph/query-parameters)。
 
 ### <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -76,7 +76,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 | 错误代码 | 错误消息 | 详细信息 |
 |:---------- |:------------- |:------- |
 | 400 BadRequest | RoleAssignmentRequestNotFound | governanceRoleAssignmentRequest 在系统中不存在。 |
-| 400 BadRequest | RequestCannotBeCancelled | 仅状态为 、 `Granted` `PendingApproval` 和 `PendingApprovalProvisioning` `PendingAdminDecision` 的请求可以取消。 |
+| 400 BadRequest | RequestCannotBeCancelled | 仅状态为 、 `Granted``PendingApproval`和 `PendingApprovalProvisioning` `PendingAdminDecision` 的请求可以取消。 |
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

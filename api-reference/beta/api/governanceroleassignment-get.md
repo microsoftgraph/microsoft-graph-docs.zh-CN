@@ -4,13 +4,13 @@ description: 检索 governanceRoleAssignment 的属性和关系。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: e4c93a97bebc38b66cdc73cc55fa1b8d7c752393
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+author: japere
+ms.openlocfilehash: de853db14b68357071627c8f678d3b93f6982e4a
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60929615"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510013"
 ---
 # <a name="get-governanceroleassignment"></a>获取 governanceRoleAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "60929615"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 检索 [governanceRoleAssignment 的属性和关系](../resources/governanceroleassignment.md)。
 
@@ -53,18 +53,18 @@ ms.locfileid: "60929615"
 <!-- { "blockType": "ignored" } -->
 1. 获取[资源的 governanceRoleAssignment](../resources/governanceroleassignment.md)
 
-    *注意：除了权限范围之外，它要求请求者对资源角色分配一个权限。* 
+    *注意：除了权限范围之外，它要求请求者至少对资源角色分配一个权限。* 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments/{id}
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
-2. 获取[mine 的 governanceRoleAssignment](../resources/governanceroleassignment.md)
+2. 获取 [mine 的 governanceRoleAssignment](../resources/governanceroleassignment.md)
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'{myId}'
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-除了帮助 **自定义** 响应外，此方法不支持 [OData](/graph/query-parameters) 查询 `$filter` 参数。
+除了帮助 **自定义** 响应外，此方法不支持 [OData](/graph/query-parameters) `$filter` 查询参数。
 
 ## <a name="request-headers"></a>请求头
 | 名称      |说明|
@@ -80,7 +80,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
   "blockType": "request",
   "name": "get_governanceroleassignment"
 }-->
-获取订阅"Wingtip Toys - Prod"的[governanceRoleAssignment](../resources/governanceroleassignment.md)
+获取订阅"Wingtip Toys - Prod"的 [governanceRoleAssignment](../resources/governanceroleassignment.md)
 ##### <a name="request"></a>请求
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/0ba78f41-ee7a-4227-adb9-1499431b2164?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'

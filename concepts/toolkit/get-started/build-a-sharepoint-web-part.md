@@ -2,13 +2,13 @@
 title: 使用 Microsoft Graph 工具包构建 SharePoint Web 部件
 description: 开始使用 Microsoft Graph 工具包构建 SharePoint Web 部件。
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: d30a2dd4fbaa89890124332528ed157e9043f8a9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 700cfd44ddc115fc88451ce97880893b45feb9d3
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083808"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588804"
 ---
 # <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>使用 Microsoft Graph 工具包构建 SharePoint Web 部件
 
@@ -147,7 +147,7 @@ gulp serve
 托管工作台将自动在浏览器中打开。 将 Web 部件添加到页面，你应该会看到带有 Microsoft Graph 工具包组件的 Web 部件正在运行！ 只要 gulp serve 命令仍在控制台中运行，你就可以继续编辑代码，然后刷新浏览器以查看更改。
 
 ## <a name="next-steps"></a>后续步骤
-- 请查看此有关生成 web 部件SharePoint[分步教程](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/)。
+- 请查看此有关生成 Web 部件SharePoint[教程](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/)。
 - 在[样本](https://mgt.dev)中试用组件。
 - 在 [Stack Overflow](https://aka.ms/mgt-question) 上提问。
 - 在 [GitHub](https://aka.ms/mgt) 上报告 bug 或提出功能请求。

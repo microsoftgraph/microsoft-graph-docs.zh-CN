@@ -1,16 +1,16 @@
 ---
 title: teamworkDevice 资源类型
-description: 表示有关Microsoft Teams租户预配的启用租户的设备的详细信息。
+description: 表示有关为Microsoft Teams预配的启用租户的设备的详细信息。
 author: adsrivastava2
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7cd91f9901c02d1008e5c08a72c47e416222ab75
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 38058cf2c1697a158eb31c356e22c20af9054156
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262474"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646569"
 ---
 # <a name="teamworkdevice-resource-type"></a>teamworkDevice 资源类型
 
@@ -18,19 +18,24 @@ ms.locfileid: "62262474"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关Microsoft Teams租户预配的启用租户的设备的详细信息。
+表示有关为Microsoft Teams预配的启用租户的设备的详细信息。
 
-继承自 [实体](../resources/entity.md)。
+Microsoft Teams支持的设备是Teams认证的协作设备。 它们包括 Microsoft Teams 会议室 (和 Android Windows、) 、Microsoft Teams、面板、Surface Hub 和 SIP 设备上的设备。 这些类别与"管理中心"部分Teams的类别Teams **相同**。
 
-## <a name="methods"></a>方法
+有关详细信息，请参阅在 [Microsoft Teams 中管理设备。](/microsoftteams/devices/device-management)
+>**注意**：这不包括移动电话、笔记本电脑、计算机、选项卡等。
+
+继承自 [entity](../resources/entity.md)。
+
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 teamworkDevices](../api/teamworkdevice-list.md)|[teamworkDevice](../resources/teamworkdevice.md) 集合|获取为租户Microsoft Teams已启用设备的列表。|
-|[获取 teamworkDevice](../api/teamworkdevice-get.md)|[teamworkDevice](../resources/teamworkdevice.md)|获取启用Microsoft Teams设备的属性。|
+|[列出 teamworkDevices](../api/teamworkdevice-list.md)|[teamworkDevice](../resources/teamworkdevice.md) 集合|获取为租户预配Microsoft Teams已启用设备的列表。|
+|[获取 teamworkDevice](../api/teamworkdevice-get.md)|[teamworkDevice](../resources/teamworkdevice.md)|获取启用Microsoft Teams的设备的属性。|
 |[restart](../api/teamworkdevice-restart.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|重新启动已启用Microsoft Teams设备。|
 |[runDiagnostics](../api/teamworkdevice-rundiagnostics.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|运行并生成指定已启用Microsoft Teams诊断日志。|
 |[updateSoftware](../api/teamworkdevice-updatesoftware.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|更新启用了 Microsoft Teams 的设备的软件。|
-|[列举操作](../api/teamworkdeviceoperation-list.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) 集合|获取在启用了移动设备的设备上Teams操作的列表。|
+|[列举操作](../api/teamworkdeviceoperation-list.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) 集合|获取在已启用Teams上运行的操作列表。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -43,7 +48,7 @@ ms.locfileid: "62262474"
 |deviceType|[teamworkDeviceType](../resources/teamworkdevice.md#teamworkdevicetype-values)|设备的类型。 可能的值包括：、`unknown``teamsRoom``ipPhone`、`surfaceHub`、`collaborationBar`、、`teamsDisplay`、、`touchConsole``sip``lowCostPhone``teamsPanel``unknownFutureValue`、。|
 |hardwareDetail|[teamworkHardwareDetail](../resources/teamworkhardwaredetail.md)|硬件相关的属性的集合。 例如， **oemSerialNumber** 和 **model**。|
 |healthStatus|[teamworkDeviceHealthStatus](../resources/teamworkdevice.md#teamworkdevicehealthstatus-values)|设备的运行状况。 可能的值包括 `unknown`、`offline`、`critical`、`nonUrgent`、`healthy`、`unknownFutureValue`。|
-|id|字符串|设备标识符。 继承自 [实体](../resources/entity.md)。|
+|id|字符串|设备标识符。 继承自 [entity](../resources/entity.md)。|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|上次修改设备详细信息的用户的标识。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备详细信息的 UTC 日期和时间。|
 |notes|String|管理员添加到设备的注释。|
@@ -58,7 +63,7 @@ ms.locfileid: "62262474"
 |teamsRoom|2|Microsoft Teams 会议室基于 Windows IoT 的设备，旨在将会议体验扩展到会议室。|
 |surfaceHub|3|Surface Hub是具有交互式白板的挂式或立式安装设备。|
 |collaborationBar|4|Android 上Microsoft Teams 会议室用于小型会议空间的协作栏。|
-|teamsDisplay|5|Teams设备是手机Teams演变。 这些设备是一类一体式专用Teams设备，具有环境触摸屏和由 Cortana 支持的免费Cortana。|
+|teamsDisplay|5|Teams设备是手机Teams演变。 这些设备是一类一体式专用Teams设备，具有环境触摸屏和由移动设备支持Cortana。|
 |touchConsole|6 |触摸控制台设备是 Android Teams 会议室执行所有设备操作的设备可选外设。|
 |lowCostPhone|7 |低成本电话设备是经济高效的Microsoft Teams电话。|
 |teamsPanel|8 |Microsoft Teams面板是紧凑式触摸屏设备，用于显示通过会议计划的会议Teams。|

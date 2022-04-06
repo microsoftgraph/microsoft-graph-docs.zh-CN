@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c243bdefab340678b9f3317b87cc3ba0bffce77a
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 75772b3b45fbf5aaf44016b6dceee3b86801c438
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671739"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509481"
 ---
 # <a name="list-group-memberof"></a>List group memberOf
 
@@ -243,8 +243,8 @@ Content-type: application/json
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_groups_memberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')

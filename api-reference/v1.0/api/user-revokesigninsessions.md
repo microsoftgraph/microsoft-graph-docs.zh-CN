@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5603d0982b28fb25ccdaa60e204592b751e078ed
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 3a635f8b6be26ea2f625f065ef6333c0f23e18df
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878832"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672320"
 ---
 # <a name="user-revokesigninsessions"></a>user： revokeSignInSessions
 
 命名空间：microsoft.graph
 
-将 **signInSessionsValidFromDateTime** 用户属性重置为当前日期时间，使颁发给用户 (应用程序的所有刷新令牌以及用户浏览器) 中的会话 cookie 失效。 通常，如果用户的设备丢失 (，则由) 管理员执行此操作。 此操作通过要求用户重新登录到他们之前同意的所有应用程序（独立于设备）来阻止通过设备上的应用程序访问组织的数据。
+将 **signInSessionsValidFromDateTime** 用户属性重置为当前日期时间，使颁发给用户 (应用程序的所有刷新令牌以及用户浏览器) 中的会话 Cookie 失效。 通常，如果用户的设备丢失 (，则由用户或管理员) 用户或管理员执行此操作。 此操作通过要求用户重新登录到他们之前同意的所有应用程序（独立于设备）来阻止通过设备上的应用程序访问组织的数据。
 
 >如果应用程序尝试使用无效的刷新令牌兑换此用户的委派访问令牌，则应用程序将发生错误。 如果发生这种情况，应用程序将需要通过向授权终结点提出请求来获取新的刷新令牌，这将强制用户登录。
 
@@ -29,7 +29,7 @@ ms.locfileid: "62878832"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户）     | User.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | User.ReadWrite.All、Directory.ReadWrite.All、|
 

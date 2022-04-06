@@ -2,21 +2,21 @@
 title: Microsoft 服务中的文件列表Graph Toolkit
 description: 文件列表组件用于通过显示文件图标和名称来显示文件列表
 ms.localizationpriority: medium
-author: beth-panx
-ms.openlocfilehash: 1f3aea2c4d012cd4627167523540fcfeaaaf7651
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: c9a219ca02e10bc5470c71e006ad99512a0e6382
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035344"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588874"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的文件列表Graph Toolkit
 
-文件列表 [组件使用您](/graph/api/resources/onedrive) 指定的文件/文件夹名称、图标和其他属性显示多个文件夹和文件的列表。 此组件使用 [mgt 文件](./file.md) 组件。 您可以指定特定驱动器或站点，根据见解类型 (趋势、使用或共享) 显示文件列表，或者向自定义文件列表提供查询。 该组件还提供允许用户将文件上载到 One Drive 或 SharePoint 中的指定位置的选项。
+文件列表 [组件使用您](/graph/api/resources/onedrive) 指定的文件/文件夹名称、图标和其他属性显示多个文件夹和文件的列表。 此组件使用 [mgt 文件](./file.md) 组件。 您可以指定特定驱动器或站点、根据见解类型显示文件列表 (趋势、使用或共享) ，或者向自定义文件列表提供查询。 该组件还提供允许用户将文件上传到 One Drive 或 SharePoint 中的指定位置的选项。
 
 ## <a name="example"></a>示例
 
-以下示例使用 组件显示 `mgt-file-list` 文件。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
+以下示例使用 组件显示文件 `mgt-file-list` 。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-list--file-list&source=docs" height="250"></iframe>
 
@@ -32,18 +32,18 @@ ms.locfileid: "59035344"
 | 文件查询 | fileQueries | 由组件呈现的文件查询数组。 |
 | 无 | files | 用于获取或设置组件呈现的文件列表的文件数组。 使用它来访问组件加载的文件。 设置此值以加载您自己的文件。 |
 | insight-type | insightType | 设置为显示用户的趋势、使用的文件或共享文件。 |
-| drive-id | driveId | 文件夹所属驱动器的 ID。 还必须提供 或 `item-id` `item-path` 。 |
-| group-id | groupId | 文件夹所属组的 ID。 还必须提供 或 `item-id` `item-path` 。 |
-| site-id | siteId | 文件夹所属网站的 ID。 还必须提供 或 `{item-id}` `{item-path}` 。 `{list-id}`如果从特定列表引用文件，则提供 。 |
-| item-id | itemId | 文件夹的 ID。 默认查询为 `/me/drive/items` 。 提供 `{drive-id}` `{group-id}` 、 、 或 `{site-id}` `{user-id}` 以查询特定位置。 |
-| item-path | itemPath | 文件夹的项目路径 (相对于根文件夹) 。 默认查询为 `/me/drive/root` 。 提供 `{drive-id}` `{group-id}` 、 、 或 `{site-id}` `{user-id}` 以查询特定位置。 |
-| 页面大小 | pageSize | 一个数字值，指示每个页面上要呈现的最大文件数。 **注意：** `page-size` 不支持 `insight-type` 。 |
+| drive-id | driveId | 文件夹所属驱动器的 ID。 还必须提供 或 `item-id` `item-path`。 |
+| group-id | groupId | 文件夹所属组的 ID。 还必须提供 或 `item-id` `item-path`。 |
+| site-id | siteId | 文件夹所属网站的 ID。 还必须提供 或 `{item-id}` `{item-path}`。 如果 `{list-id}` 从特定列表引用文件，则提供 。 |
+| item-id | itemId | 文件夹的 ID。 默认查询为 `/me/drive/items`。 提供 `{drive-id}`、 `{group-id}``{site-id}`、 或 `{user-id}` 以查询特定位置。 |
+| item-path | itemPath | 文件夹的项目路径 (相对于根文件夹) 。 默认查询为 `/me/drive/root`。 提供 `{drive-id}`、 `{group-id}``{site-id}`、 或 `{user-id}` 以查询特定位置。 |
+| 页面大小 | pageSize | 一个数字值，指示每个页面上要呈现的最大文件数。 **注意：** `page-size``insight-type`不支持 。 |
 | 文件扩展名 | fileExtensions | 用于筛选要显示的文件的文件扩展名数组。 |
 | hide-more-files-button | hideMoreFilesButton | 用于指示是否显示按钮以呈现更多文件的布尔值。 |
 | enable-file-upload | enableFileUpload | 启用或禁用文件上载功能的布尔值。 默认值为 `false`。  |
-| excluded-file-extensions | excludedFileExtensions | 要从文件上载中排除的文件扩展名的字符串数组。 还必须将 属性 `enable-file-upload` 设置为 `true` 。 |
-| max-file-size | maxFileSize | 一个数字，表示最大文件上载大小 (KB) 。 还必须将 属性 `enable-file-upload` 设置为 `true` 。 |
-| max-upload-file | maxUploadFile | 一个数字，表示允许上载的最大文件数。 默认值为 `10` files。 还必须将 属性 `enable-file-upload` 设置为 `true` 。 |
+| excluded-file-extensions | excludedFileExtensions | 要从文件上载中排除的文件扩展名的字符串数组。 还必须将 属性 `enable-file-upload` 设置为 `true`。 |
+| max-file-size | maxFileSize | 一个数字，表示最大文件上载大小 (KB) 。 还必须将 属性 `enable-file-upload` 设置为 `true`。 |
+| max-upload-file | maxUploadFile | 一个数字，表示允许上载的最大文件数。 默认值为 `10` files。 还必须将 属性 `enable-file-upload` 设置为 `true`。 |
 
 下面的示例更改组件的行为，以从特定查询获取文件列表。
 
@@ -151,7 +151,7 @@ mgt-file-list {
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>Microsoft Graph API 和权限
 
-| 配置 | 权限 | API |
+| 配置 | Permissions | API |
 | ------------- | ----------------- | --- |
 | 默认 (未提供标识符或查询)  | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/root/children` |
 | 提供 `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /me/drive/root/children` <br /> `PUT /me/drive/root:/{filename}:/content` <br /> `POST /me/drive/root:/{filename}:/createUploadSession` |
@@ -176,15 +176,15 @@ mgt-file-list {
 | 仅提供 `{item-path}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/root:/{item-path}:/children` |
 | 仅提供 `{item-path}` AND `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /me/drive/root:/{item-path}:/children` <br /> `PUT /me/drive/root:/{item-path}/{filename}:/content` <br /> `POST /me/drive/root:/{item-path}/{filename}:/createUploadSession` |
 | `insight-type` 设置为趋势 | Sites.Read.All | `GET /me/insights/trending` |
-| " `{user-id or upn}` `insight-type` 提供 AND"设置为 `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` |
+| " `{user-id or upn}` 提供 AND `insight-type` "设置为 `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` |
 | `insight-type` 设置为 `used` | Sites.Read.All | `GET /me/insights/used` |
-| " `{user-id or upn}` `insight-type` 提供 AND"设置为 `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used` |
+| " `{user-id or upn}` 提供 AND `insight-type` "设置为 `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used` |
 | `insight-type` 设置为共享 | Sites.Read.All | `GET /me/insights/shared` |
-| " `{user-id or upn}` `insight-type` 提供 AND"设置为 `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))` |
+| " `{user-id or upn}` 提供 AND `insight-type` "设置为 `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))` |
 
-## <a name="events"></a>活动
+## <a name="events"></a>事件
 
-Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `itemClick` | 在用户单击文件时触发。 | 所选 [文件](/graph/api/resources/driveItem) | 否 | 否 | 是，使用自定义 **文件** 模板
 
@@ -192,7 +192,7 @@ Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义�
 
 ## <a name="templates"></a>模板
 
-组件 `mgt-file-list` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含组件内的元素，将值设置为下表 `<template>` `data-type` 中列出的数据类型之一。
+组件 `mgt-file-list` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含 `<template>` 组件内的元素， `data-type` 将值设置为下表中列出的数据类型之一。
 
 | 数据类型 | 数据上下文 | 说明 |
 | ----------- | -------------- | ------------ |
@@ -213,6 +213,6 @@ Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义�
 |`insightfileLists`|见解文件列表列表|提供时 `insightType` 使用。|
 
 > [!NOTE]
-> 组件 `mgt-file-list` 在提供时 `fileQueries` 还使用 IndexedDB 中的对象存储 `mgt-file` 来 `fileQueries` 缓存文件。
+> 组件 `mgt-file-list` 在提供时 `fileQueries` 还使用 `mgt-file` IndexedDB 中的对象存储来缓存 `fileQueries` 文件。
 
-若要详细了解如何配置缓存[，请参阅](../customize-components/cache.md)Caching。
+若要详细了解如何配置缓存[，请参阅Caching](../customize-components/cache.md)。

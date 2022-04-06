@@ -3,15 +3,15 @@ author: daspek
 description: MentionAction 资源提供了有关提到人员的活动的信息。
 ms.date: 09/14/2017
 title: MentionAction
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: b0f8376c3fcc86cdd16c1eeb32507e5b26469285
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4675a732738741dc5bb201f97753dca2be42a17d
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971600"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723484"
 ---
 # <a name="mentionaction-resource-type"></a>MentionAction 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "47971600"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**MentionAction** 资源提供了有关提到人员的[活动][]的信息。
+**MentionAction** 资源提供了有关提到人员的 [活动][]的信息。
 
 [活动]: itemactivity.md
 
@@ -28,7 +28,7 @@ ms.locfileid: "47971600"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.mentionAction"
+  "@type&quot;: &quot;microsoft.graph.mentionAction"
 }-->
 
 ```json
@@ -39,9 +39,9 @@ ms.locfileid: "47971600"
 
 ## <a name="properties"></a>属性
 
-| 属性名称 | 类型                       | 说明
-|:--------------|:---------------------------|:-----------------------------
-| mentionees    | [identitySet][] 集合 | 此操作提及的用户的标识。
+| 属性   | 类型                       | 说明                                           |
+| :--------- | :------------------------- | :---------------------------------------------------- |
+| mentionees | [identitySet][] 集合 | 此操作提及的用户的标识。 |
 
 [identitySet]: identityset.md
 
@@ -59,5 +59,3 @@ ms.locfileid: "47971600"
   "suppressions": []
 }
 -->
-
-

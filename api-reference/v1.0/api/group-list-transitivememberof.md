@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ec51cead8186c08d2bcd12206cee9af2af544f31
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: a3f3c1892acc9ba47814faa8fc8a9dee22759436
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64508514"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672656"
 ---
 # <a name="list-group-transitive-memberof"></a>List group transitive memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "64508514"
 
 获取组是其中一个成员的组。  此操作是可传递的，并且还将包含此组是嵌套成员的所有组。 与获取用户的组Microsoft 365不同，这将返回所有类型的组，而不只是Microsoft 365组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -234,7 +234,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "list_groups_transitivememberof_startswith"
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')

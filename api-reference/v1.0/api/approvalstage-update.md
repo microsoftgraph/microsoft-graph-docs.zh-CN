@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 62aafeda3d6f04ffd1f195ea8f1cdb9ac8d89891
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8a3ec53fcd67716de873187c7a34e060cdebc6f4
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398092"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63516057"
 ---
 # <a name="update-approvalstage"></a>更新 approvalStage
 
@@ -26,7 +26,7 @@ ms.locfileid: "63398092"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,8 +48,8 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
-| reviewResult | String | 审批者的决定。 可取值为：`Approve`、`Deny`。 必需。|
-| justification | String | 与审批者决策相关的理由。 |
+| reviewResult | 字符串 | 审批者的决定。 可取值为：`Approve`、`Deny`。 必需。|
+| justification | 字符串 | 与审批者决策相关的理由。 |
 
 
 ## <a name="response"></a>响应
@@ -60,6 +60,8 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_approvalstage"
@@ -73,6 +75,28 @@ PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/
  "justification":"OK"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/patch-approvalstage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-approvalstage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-approvalstage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/patch-approvalstage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/patch-approvalstage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

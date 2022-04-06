@@ -1,16 +1,16 @@
 ---
 title: call： answer
 description: 应答传入呼叫。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ae80594e940b288403f04aa7885fd5c8e8fb20db
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: b0bd88104cb8f1c548e1cfa8b3a9c90b272bb0c2
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343214"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607958"
 ---
 # <a name="call-answer"></a>call： answer
 
@@ -22,14 +22,14 @@ ms.locfileid: "62343214"
 
 机器人预期在呼叫退出[之前](./call-reject.md)应答、拒绝[](./call-redirect.md)或重定向呼叫。当前超时值为 15 秒。 对于常规方案，当前超时值为 15 秒，基于策略的录制方案为 5 秒。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 无需任何权限来应答对等呼叫。 需要以下权限之一才能加入组呼叫。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                 |
 | :-------------- | :-----------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                        |
 | 委派（个人 Microsoft 帐户） | 不支持                        |
-| 应用程序     | Calls.JoinGroupCalls.All 或 Calls.JoinGroupCallsasGuest.All |
+| Application     | Calls.JoinGroupCalls.All 或 Calls.JoinGroupCallsasGuest.All |
 
 > **注意：** 对于使用应用程序托管媒体的呼叫，你还需要 Calls.AccessMedia.All 权限。 `source`必须至少具有以下权限之一才能确保对传入呼叫通知中的 解密：Calls.AccessMedia.All、Calls.Initiate.All、Calls.InitiateGroupCall.All、Calls.JoinGroupCall.All、Calls.JoinGroupCallAsGuest.All。 `source`是传入呼叫通知中的呼叫者信息。 如果没有其中至少一个权限， `source` 将保持加密状态。
 
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/answer
 | 参数           | 类型                                                                                                                                 | 说明                                                                                                                                                                                                         |
 | :-----------------  | :-----------------------------------------                                                                                           | :----------------------------------------------------------------------------------------------------------------------------------------------                                                                     |
 | callbackUri         | String                                                                                                                               | 允许机器人为并发呼叫提供特定的回调 URI 以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https`。 |
-| acceptedModalities  | 字符串集合                                                                                                                    | 接受形式列表。 可能的值是：、`audio`、`videoBasedScreenSharing``video`。 应答呼叫时必需。                                                                                      |
+| acceptedModalities  | String collection                                                                                                                    | 接受形式列表。 可能的值是：、`audio`、`videoBasedScreenSharing``video`。 应答呼叫时必需。                                                                                      |
 | mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | 媒体配置。必需。                                                                                                                                                                                 |
 | participantCapacity | Int                                                                                                                                  | 对于基于策略的录制方案，应用程序可以处理Teams[的数量](/MicrosoftTeams/teams-recording-policy)。                                                     |
 

@@ -1,23 +1,23 @@
 ---
 title: 更新 unifiedRoleManagementPolicyRule
 description: 更新 unifiedRoleManagementPolicyRule 对象的属性。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: afdaee102ddda3a5995d32b0d7dff0dfab26e748
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9450c28fba13722d6d30dde62f9d102ff9b32981
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136820"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64508543"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>更新 unifiedRoleManagementPolicyRule
 命名空间：microsoft.graph
 
 更新 [unifiedRoleManagementPolicyRule 对象](../resources/unifiedrolemanagementpolicyrule.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -57,7 +57,7 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effective
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 对象。
 
 ## <a name="examples"></a>示例
 

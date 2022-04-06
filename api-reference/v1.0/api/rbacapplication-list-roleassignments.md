@@ -5,28 +5,22 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 486671d43c71f7756222429e7a15f508a4cfdd1e
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: bcba974b749092103730cbe492caa23d3c994360
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629090"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672635"
 ---
 # <a name="list-unifiedroleassignments"></a>列出 unifiedRoleAssignments
 
 命名空间：microsoft.graph
 
-获取 RBAC [提供程序的 unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象列表。
+获取目录提供程序 [的 unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象列表。
 
-目前支持以下 RBAC 提供程序：
-- Azure AD (目录) 
-- Azure AD (授权) 
-
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
-
-### <a name="for-the-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -34,17 +28,7 @@ ms.locfileid: "64629090"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
-### <a name="for-the-entitlement-management-provider"></a>对于权利管理提供程序
-
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All   |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
-
 ## <a name="http-request"></a>HTTP 请求
-
-列出目录提供程序的角色分配：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -54,27 +38,9 @@ GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal
 GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
-列出权利管理提供程序的角色分配：
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
-
-GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
-
-GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'
-```
-
 ## <a name="query-parameters"></a>查询参数
 
-此操作需要查询 `$filter` 参数来查询受支持的 RBAC 提供程序的角色分配。
-
-对于目录提供程序，您必须筛选 **roleDefinitionId** 或 **principalId** 属性。 **roleDefinitionId** 属性可以是角色对象 ID 或 **templateId 属性的值**。
-
-对于权利管理提供程序，您必须筛选 **roleDefinitionId**、 **principalId** 或 **appScopeId** 属性。
-
-若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此操作需要查询 `$filter` 参数来查询角色分配的特定实例。 可以筛选 或 `roleDefinitionId` `principalId` 属性。 属性 `roleDefinitionId` 可以是角色对象 ID 或 **templateId**。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -291,55 +257,6 @@ Content-type: application/json
             "resourceScope": "/",
             "directoryScopeId": "/",
             "roleDefinitionId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
-        }
-    ]
-}
-```
-
-### <a name="example-3-request-using-filter-for-role-assignments-on-an-access-package-catalog-and-expand-the-principal-object"></a>示例 3：请求$filter包目录上的角色分配，并展开主体对象
-
-#### <a name="request"></a>请求
-
-下面展示了示例请求。
-
-<!-- {
-  "blockType": "request",
-  "name": "get_roleAssignments_3"
-}-->
-
-```http
-GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'&$expand=principal
-```
-
-
-#### <a name="response"></a>响应
-
-下面展示了示例响应。
-
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
-  "isCollection": true
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-        {
-            "id": "900633fe-2508-4b13-a561-a15e320ad35f",
-            "principalId": "39228473-522e-4533-88cc-a9553180cb99",
-            "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
-            "appScopeId": "/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc",
-            "principal": {
-                "@odata.type": "#microsoft.graph.user",
-                "id": "39228473-522e-4533-88cc-a9553180cb99"
-            }
         }
     ]
 }

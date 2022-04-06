@@ -4,13 +4,13 @@ description: 检索资源上的 governanceRoleSettings 集合。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 79194499a7b53d151c5c11011a0e9850e09c0edc
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+author: japere
+ms.openlocfilehash: d044c1d5c8d64ed9d5c4b3b7863798ed7a709a00
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939593"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509873"
 ---
 # <a name="list-governancerolesettings"></a>列出 governanceRoleSettings
 
@@ -18,9 +18,9 @@ ms.locfileid: "60939593"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-检索资源上的 [governanceRoleSettings](../resources/governancerolesetting.md) 集合。
+检索资源 [上的 governanceRoleSettings](../resources/governancerolesetting.md) 集合。
 
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
@@ -68,7 +68,7 @@ GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resour
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和 governanceRoleSetting](../resources/governancerolesetting.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 governanceRoleSetting](../resources/governancerolesetting.md) 对象集合。
 
 ## <a name="example"></a>示例
 此示例演示管理员如何列出资源 Wingtip Toys - Prod 的角色设置。 

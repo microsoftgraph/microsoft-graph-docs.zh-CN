@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ceea7cfeb8325cf016a912bed070985b991a1e48
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 63a4fe5067c309783ffba5fedf9ea2cfad56bfa6
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136491"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672194"
 ---
 # <a name="add-owner"></a>添加所有者
 
@@ -23,11 +23,11 @@ ms.locfileid: "62136491"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Application.ReadWrite.All 和 Directory.Read.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） |  Application.ReadWrite.All 和 Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.OwnedBy 和 Directory.Read.All、Application.ReadWrite.All 和 Directory.Read.All |
 
-> **注意****：Application.ReadWrite.OwnedBy** 不足以添加其他所有者。 也同意 **Application.ReadWrite.All。** 
+> **注意：****Application.ReadWrite.OwnedBy** 不足以添加其他所有者。 也同意 **Application.ReadWrite.All**。 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

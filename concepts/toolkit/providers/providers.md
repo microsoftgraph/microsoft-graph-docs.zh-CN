@@ -2,17 +2,17 @@
 title: Microsoft Graph Toolkit提供程序
 description: Microsoft Graph Toolkit提供程序启用身份验证，并且 Microsoft Graph访问所有组件。
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: ec7fd10e37e2382313ae611fee3912110216cfc3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: fe499f256c30602536049cfd2a5b57670d51258f
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126553"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588412"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Microsoft Graph Toolkit提供程序
 
-Microsoft Graph Toolkit提供程序使应用程序能够使用 Microsoft Identity 进行身份验证，并且只需Graph几行代码Graph访问 Microsoft 标识。 每个提供程序都处理用户身份验证并获取访问令牌以调用 Microsoft Graph API，因此，你不必自己编写此代码。 
+Microsoft Graph Toolkit提供程序使应用程序只需几行代码，就能够使用 Microsoft 标识进行身份验证Graph访问 Microsoft 服务。 每个提供程序都处理用户身份验证和获取访问令牌以调用 Microsoft Graph API，因此，你不必自己编写此代码。 
 
 你可以自行使用提供程序（无需组件）为应用快速实现身份验证，并调用 Microsoft Graph JavaScript 客户端 SDK。
 
@@ -23,13 +23,13 @@ Microsoft Graph Toolkit提供程序使应用程序能够使用 Microsoft Identit
 |提供程序|说明|
 |---------|-----------|
 |[MSAL](./msal.md)|使用 msal.js 登录用户并获取与 Web 应用程序中的 Microsoft Graph一同使用的令牌。|
-|[MSAL2](./msal2.md)| 使用 msal-browser 登录用户并获取令牌，以便与 Web Graph Microsoft 应用程序一同使用。 | 
-|[百年](./electron.md)|通过身份验证并提供 Microsoft Graph访问应用内的组件。|
-|[SharePoint](./sharepoint.md)|通过身份验证并提供 Microsoft Graph访问 Web 部件内SharePoint权限。|
-|[Teams](./teams.md)|使用 msal.js 在客户端上通过选项卡登录Microsoft Teams令牌。|
-|[TeamsMSAL2](./teams-msal2.md)|使用 msal-browser 登录用户，并获取选项卡Microsoft Teams令牌。 支持单个Sign-On自定义后端。 |
-|[代理](./proxy.md)|允许通过后端将所有调用路由到 Microsoft Graph后端身份验证。|
-|[自定义](./custom.md)|创建自定义提供程序以使用应用程序的现有身份验证代码Graph访问 Microsoft 客户端。|
+|[MSAL2](./msal2.md)| 使用 msal-browser 登录用户并获取与 Microsoft Graph Web 应用程序中的令牌。 | 
+|[电子](./electron.md)|通过身份验证并提供 Microsoft Graph访问应用内的组件。|
+|[SharePoint](./sharepoint.md)|对 SharePoint Web 部件中的组件进行身份验证并提供对组件的 Microsoft Graph 访问权限。|
+|[Teams](./teams.md)|使用 msal.js 登录用户并在 Microsoft Graph 选项卡的客户端中获取令牌。|
+|[Teams MSAL2](./teams-msal2.md)|使用 msal-browser 登录用户并在 Microsoft Graph 选项卡中获取令牌。 支持使用自定义后端进行单一登录。 |
+|[代理](./proxy.md)|通过后端将所有调用路由到 Microsoft Graph 以允许使用后端身份验证。|
+|[自定义](./custom.md)|创建自定义提供程序以启用身份验证，并使用应用程序的现有身份验证代码访问 Microsoft Graph。|
 
 ## <a name="initializing-a-provider"></a>初始化提供程序
 
@@ -46,7 +46,7 @@ Microsoft Graph Toolkit提供程序使应用程序能够使用 Microsoft Identit
 
 **选项 2：在代码中初始化**
 
-通过 JavaScript 代码初始化提供程序，可以提供更多选项。 为此，请创建一个新的提供程序实例，将属性的值设置为 `Providers.globalProvider` 希望使用的提供程序。 以下示例演示如何使用 MSAL2 提供程序。
+通过 JavaScript 代码初始化提供程序，可以提供更多选项。 为此，请创建一个新的提供程序实例，将 `Providers.globalProvider` 属性的值设置为希望使用的提供程序。 以下示例演示如何使用 MSAL2 提供程序。
 
 ```js
 import {Providers, Msal2Provider } from "@microsoft/mgt";
@@ -58,7 +58,7 @@ Providers.globalProvider = new Msal2Provider({
 
 ## <a name="permission-scopes"></a>权限范围
 
-建议在初始化提供程序时，将应用程序需要的所有权限范围添加到属性或属性 (这不适用于 SharePoint `scopes` [提供程序](../providers/sharepoint.md)) 。 这是可选的，但会通过向用户显示单个许可屏幕（即应用内所有组件请求的权限聚合列表）来改进用户体验，而不是显示每个组件的单独屏幕。 以下示例显示如何使用 MSAL2 提供程序进行此操作。
+建议在初始化提供程序`scopes`时，将应用程序需要的所有权限范围添加到属性或属性 (这不适用于 SharePoint [提供程序](../providers/sharepoint.md)) 。 这是可选的，但会通过向用户显示单个许可屏幕（即应用内所有组件请求的权限聚合列表）来改进用户体验，而不是显示每个组件的单独屏幕。 以下示例显示如何使用 MSAL2 提供程序进行此操作。
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -67,7 +67,7 @@ Providers.globalProvider = new Msal2Provider({
                    ></mgt-msal2-provider>
 ```
 
-如果要在代码中初始化提供程序，请提供 属性中数组中 `scopes` 的权限范围。
+如果要在代码中初始化提供程序，请提供 属性中数组中的权限 `scopes` 范围。
 
 ```js
 import {Providers, Msal2Provider } from "@microsoft/mgt";
@@ -77,11 +77,11 @@ Providers.globalProvider = new Msal2Provider({
 });
 ```
 
-您可以在每个组件的文档页的 Microsoft Graph **权限** 部分找到每个组件所需的权限范围列表。
+您可以在每个组件的文档页的 **Microsoft Graph 权限** 部分找到每个组件所需的权限范围列表。
 
 ## <a name="provider-state"></a>提供程序状态
 
-提供程序跟踪用户的身份验证状态，并通知组件。 例如，当用户成功登录时，将 更新为 ，向 组件发出信号，指示他们现在可以调用 `ProviderState` `SignedIn` Microsoft Graph。 枚举 `ProviderState` 定义三种状态，如下所示。
+提供程序跟踪用户的身份验证状态，并通知组件。 例如，当用户`ProviderState``SignedIn`成功登录时，将 更新为 ，向 组件发出信号，指示他们现在可以调用 Microsoft Graph。 枚举 `ProviderState` 定义三种状态，如下所示。
 
 ```ts
 export enum ProviderState {
@@ -124,7 +124,7 @@ Providers.removeProviderUpdatedListener(providerStateChanged);
 
 ## <a name="getting-an-access-token"></a>获取访问令牌
 
-每个提供程序都公开一个称为 的函数，该函数可以检索当前访问令牌或检索提供的范围 `getAccessToken` 的新访问令牌。 以下示例演示如何获取具有权限范围的新访问 `User.Read` 令牌。
+每个提供程序都公开一个称为 `getAccessToken` 的函数，该函数可以检索当前访问令牌或检索提供的范围的新访问令牌。 以下示例演示如何获取具有权限范围的新访问 `User.Read` 令牌。
 
 ```js
 import { Providers, ProviderState } from "@microsoft/mgt";
@@ -138,7 +138,7 @@ if (Providers.globalProvider.state === ProviderState.SignedIn) {
 
 ## <a name="making-your-own-calls-to-microsoft-graph"></a>自行调用 Microsoft Graph
 
-所有组件都可以访问 Microsoft Graph，而无需任何自定义，只要初始化提供程序 (如前面的部分所述) 。 如果要自行调用 Microsoft Graph，可以通过获取对组件使用的同一 Microsoft Graph SDK 的引用来这样做。 首先，获取对全局的引用 `IProvider` ，然后 `graph` 使用 对象，如下所示：
+所有组件都可以访问 Microsoft Graph，而无需任何自定义，只要初始化提供程序 (如前面的部分所述) 。 如果你想要自行调用 Microsoft Graph，可以通过获取对组件使用的同一 Microsoft Graph SDK 的引用来这样做。 首先，获取对全局的引用 `IProvider` ，然后使用 `graph` 对象，如下所示：
 
 ```js
 import { Providers } from '@microsoft/mgt';
@@ -162,7 +162,7 @@ graphClient
 
 ## <a name="using-multiple-providers"></a>使用多个提供程序
 
-在某些情况下，应用程序将在不同的环境中运行，并且需要针对每个环境使用不同的提供程序。 例如，应用可能同时作为 Web 应用程序和 Microsoft Teams 选项卡运行，这意味着您可能需要同时使用 MSAL2 提供程序和 TEAMS MSAL2 提供程序。 对于此方案，所有提供程序组件都有 用于创建回退链的属性， `depends-on` 如以下示例所示。
+在某些情况下，应用程序将在不同的环境中运行，并且需要针对每个环境使用不同的提供程序。 例如，应用可能同时作为 Web 应用程序和 Microsoft Teams 选项卡运行，这意味着您可能需要同时使用 MSAL2 提供程序和 Teams MSAL2 提供程序。 对于此方案，所有提供程序组件 `depends-on` 都有 用于创建回退链的属性，如以下示例所示。
 
 ```html
 <mgt-teams-msal2-provider
@@ -176,7 +176,7 @@ graphClient
 
 在此方案中，只有当您的应用程序作为 Web 应用程序运行并且 Teams MSAL2 提供程序在当前环境中不可用时，才使用 MSAL2 提供程序。
 
-若要在代码中完成相同的任务，可以在提供程序上使用 `isAvailable` 属性，如下所示。
+若要在代码中完成相同的任务，可以在 `isAvailable` 提供程序上使用 属性，如下所示。
 
 ```ts
 if (TeamsProvider.isAvailable) {
@@ -187,7 +187,7 @@ if (TeamsProvider.isAvailable) {
 ```
 ## <a name="user-loginlogout"></a>用户登录/注销
 
-为应用程序初始化正确的提供程序后，Toolkit登录组件轻松快速地实现用户登录和注销。 [](../components/login.md) 该组件与提供程序一起处理所有身份验证逻辑和登录/注销功能。 以下示例使用 MSAL2 提供程序和 Login 组件。
+为应用程序初始化正确的提供程序后，可以添加Toolkit[登录](../components/login.md)组件，以轻松快速地实现用户登录和注销。 该组件与提供程序一起处理所有身份验证逻辑和登录/注销功能。 以下示例使用 MSAL2 提供程序和 Login 组件。
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -195,13 +195,13 @@ if (TeamsProvider.isAvailable) {
 <mgt-login></mgt-login>
 ```
 
-在需要自己实现此组件（而不是使用 Toolkit 登录组件的方案中，可以使用 提供程序的 和 方法 `login` `logout` 来实现此实现。
+在需要自己实现此操作（而不是`login``logout`使用 Toolkit 登录组件的方案中，可以使用 提供程序的 和 方法来实现此方案。
 
 ## <a name="implement-your-own-provider"></a>实现你自己的提供程序
 
-在想要将 Toolkit组件添加到具有预先存在的身份验证代码的应用程序的方案中，您可以创建一个连接到身份验证机制的自定义提供程序，而不是使用预定义的提供程序。 该工具包提供两种创建新提供程序的方法：
+在想要将 Toolkit 组件添加到具有预先存在的身份验证代码的应用程序的方案中，您可以创建一个连接到身份验证机制的自定义提供程序，而不是使用预定义的提供程序。 该工具包提供两种创建新提供程序的方法：
 
 - 创建一 `SimpleProvider` 个通过传递函数从身份验证代码返回访问令牌的新建。
-- 扩展 `IProvider` 抽象类。
+- 扩展抽象 `IProvider` 类。
 
 有关每个提供程序的更多详细信息，请参阅 [自定义提供程序](../providers/custom.md)。

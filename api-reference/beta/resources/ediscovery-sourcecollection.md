@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: a67599c4a813e1ac7e354d1fd2b0c26c8eb366bb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 85850001fefed11976ab8c671424497bc0bc2b00
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101884"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607965"
 ---
 # <a name="sourcecollection-resource-type"></a>sourceCollection 资源类型
 
@@ -31,22 +31,23 @@ ms.locfileid: "62101884"
 |[创建 sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|创建新的 **sourceCollection** 对象。|
 |[获取 sourceCollection](../api/ediscovery-sourcecollection-get.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|读取 **sourceCollection** 对象的属性和关系。|
 |[更新 sourceCollection](../api/ediscovery-sourcecollection-update.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|更新 **sourceCollection 对象** 的属性。|
-|[删除 sourceCollection](../api/ediscovery-sourcecollection-delete.md)|None|删除 **sourceCollection** 对象。|
-|[estimateStatistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|None|运行源集合中电子邮件和文档的估计数量。|
+|[删除 sourceCollection](../api/ediscovery-sourcecollection-delete.md)|无|删除 **sourceCollection** 对象。|
+|[estimateStatistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|无|运行源集合中电子邮件和文档的估计数量。|
 |[列出 additionalSources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 集合|获取与源集合关联的其他 **dataSource** 对象的列表。|
 |[列出 custodianSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 集合|获取与源集合关联的保管人 **dataSource** 对象的列表。|
 |[列出 noncustodialSources](../api/ediscovery-sourcecollection-list-noncustodialsources.md)|[microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md) 集合|获取与源集合关联的非自定义源 **非自定义源** 对象的列表。|
+|[清除数据](../api/ediscovery-sourcecollection-purgedata.md)|无|对源集合中包含的数据Teams清除数据操作。|
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---|:---|:---|
-|contentQuery|String|KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅内容 [搜索和电子数据展示的关键字查询和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。 您可以通过使用与值配对的字段来优化搜索;例如 *，subject："Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*。|
+|contentQuery|String|关键字查询语言KQL (查询中的) 字符串。 有关详细信息，请参阅内容 [搜索和电子数据展示的关键字查询和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。 您可以通过使用与值配对的字段来优化搜索;例如， *subject："Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*。|
 |createdBy|[identitySet](../resources/identityset.md)|创建 **sourceCollection 的用户**。|
 |createdDateTime|DateTimeOffset|创建 **sourceCollection** 的日期和时间。|
 |dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|指定此参数时，集合将跨越整个工作负荷的服务。 可取值为：`none`、`allTenantMailboxes`、`allTenantSites`、`allCaseCustodians`、`allCaseNoncustodialDataSources`。|
 |说明|String|**sourceCollection 的说明**。|
-|displayName|String|sourceCollection 的 **显示名称。**|
+|displayName|String|**sourceCollection 的 显示名称。**|
 |id|String| **sourceCollection 的** ID。 只读。 |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|上次修改 **sourceCollection 的用户**。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 **sourceCollection** 的日期和时间。|
@@ -66,9 +67,9 @@ ms.locfileid: "62101884"
 |关系|类型|说明|
 |:---|:---|:---|
 |additionalSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 集合|向 **sourceCollection 添加其他源**。|
-|addToReviewSetOperation|[microsoft.graph.ediscovery.addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md)|将 **sourceCollection** 的结果添加到指定的 **reviewSet 。**|
-|custodianSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 集合|**包含在** **sourceCollection** 中的保管人源。|
-|lastEstimateStatisticsOperation|[microsoft.graph.ediscovery.estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md)|与 **sourceCollection** 关联的最后一个估计操作。|
+|addToReviewSetOperation|[microsoft.graph.ediscovery.addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md)|将 **sourceCollection** 的结果添加到指定的 **reviewSet**。|
+|custodianSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 集合| **sourceCollection 中包含的保管人源**。|
+|lastEstimateStatisticsOperation|[microsoft.graph.ediscovery.estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md)|上次与 **sourceCollection** 关联的估计操作。|
 |noncustodialSources|[microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) 集合|**sourceCollection** 中包含的 **noncustodialDataSource** 源|
 
 ## <a name="json-representation"></a>JSON 表示形式

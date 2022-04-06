@@ -1,16 +1,16 @@
 ---
 title: call： transfer
 description: 转接活动对等呼叫或组呼叫。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e0b11ac0f196096060dfb3e48d5bf06ed9b16ae6
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 0dcb6db4e7a9bc9278807db607c7cd868c85cf39
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344377"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608077"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -22,14 +22,14 @@ ms.locfileid: "62344377"
 
 咨询转接意味着在转接之前，转接人可以通知要 (转接) 转接给被叫方。 这与直接转移呼叫相反。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）         |
 | :-------------- | :-------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                |
 | 委派（个人 Microsoft 帐户） | 不支持                |
-| 应用程序     | Calls.Initiate.All                                  |
+| Application     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ POST /communications/calls/{id}/transfer
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|作为转移目标的参与者。|
 |transferee|[participantInfo](../resources/participantinfo.md)|作为传输的受让方的参与者。 仅在从组呼叫转接时需要此电话。|

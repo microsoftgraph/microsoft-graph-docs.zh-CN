@@ -2,21 +2,21 @@
 title: 创建 depEnrollmentProfile
 description: 创建新的 depEnrollmentProfile 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44960dffab057a897350c3fc1e0ec1611ef272b0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9921295784ffe0e343af7b872a7e9385aaafc6ea
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141933"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629727"
 ---
 # <a name="create-depenrollmentprofile"></a>创建 depEnrollmentProfile
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,13 +55,13 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |:---|:---|:---|
 |id|String|对象的 GUID 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |displayName|String|配置文件的名称 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|说明|String|配置文件的说明 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|String|配置文件的说明 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requiresUserAuthentication|Boolean|指示配置文件是否要求用户身份验证 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |configurationEndpointUrl|String|用于注册的配置终结点 URL 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 而不是 公司门户。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在公司门户注册的设备上需要安装文件。继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 而不是 Unternehmensportal。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在Unternehmensportal注册的设备上需要安装文件。继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|指示这是否为默认配置文件|
-|supervisedModeEnabled|Boolean|监督模式，如果为 True，则启用，否则为 false。 有关 https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune 其他信息，请参阅 。|
+|supervisedModeEnabled|Boolean|监督模式，如果为 True，则启用，否则为 false。 有关[其他信息，请参阅Microsoft Intune](/mem/intune/enrollment)注册设备。|
 |supportDepartment|String|支持部门信息|
 |passCodeDisabled|Boolean|指示密码设置窗格是否被禁用|
 |isMandatory|Boolean|指示配置文件是否是必需的|
@@ -82,13 +82,13 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |macOSRegistrationDisabled|Boolean|指示是否禁用 Mac OS 注册|
 |macOSFileVaultDisabled|Boolean|指示是否禁用 Mac OS 文件保管库|
 |awaitDeviceConfiguredConfirmation|Boolean|指示设备是否需要等待配置的确认|
-|sharedIPadMaximumUserCount|Int32|这指定可以使用共享网站的最大iPad。 仅适用于共享iPad模式。|
+|sharedIPadMaximumUserCount|Int32|这指定可以使用共享 iPad 的最大用户数。 仅适用于共享 iPad 模式。|
 |enableSharedIPad|Boolean|这指示设备是否将在支持多用户方案的模式下注册。 仅适用于共享 iPad。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -188,6 +188,7 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
+
 
 
 

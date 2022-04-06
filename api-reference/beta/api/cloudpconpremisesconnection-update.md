@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a4422ca22977a413f4c9e0a2819cf3dbff06a8f1
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 35dc9f400753115e9dfbdad92d819314cecd262e
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671291"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587733"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>更新 cloudPcOnPremisesConnection
 
@@ -19,10 +19,10 @@ ms.locfileid: "63671291"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 [cloudPcOnPremisesConnection 对象](../resources/cloudpconpremisesconnection.md) 的属性。
-本地连接通过运行状况检查（由 `healthCheckStatus` 属性指示）后，将无法更新它。
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -58,7 +58,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|本地显示名称的基础结构。|
+|displayName|String|Azure 显示名称连接的信息。|
 |type|cloudPcOnPremisesConnectionType|指定预配的云电脑如何加入 Azure Active Directory。 默认值为 `hybridAzureADJoin`。 可取值为：`azureADJoin`、`hybridAzureADJoin`、`unknownFutureValue`。|
 |subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
 |adDomainName|String|要加入的 Active Directory (的完全限定域名) FQDN。|

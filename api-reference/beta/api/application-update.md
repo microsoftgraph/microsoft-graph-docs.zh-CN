@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7fac54742cca998d94af7792db820c2c0859983a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8cac1fcb4b35076b6349406630cd6a1460df5977
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332488"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669268"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -29,7 +29,7 @@ ms.locfileid: "63332488"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） |  Application.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | Application.ReadWrite.All    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -69,7 +69,7 @@ PATCH /applications/{id}
 | 唯一名称 | String | 可指定给应用程序作为替代标识符的唯一标识符。不可变。只读。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | web                     | [webApplication](../resources/webapplication.md)                            | 指定 Web 应用程序的设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
-| windows                     | [windowsApplication](../resources/windowsapplication.md)                            | 指定运行 Microsoft 游戏或 Xbox Windows中发布Microsoft Store应用的设置。 包括授权代码和访问令牌的程序包 SID 和重定向 URI。 |
+| windows                     | [windowsApplication](../resources/windowsapplication.md)                            | 指定运行 Microsoft Windows 并在 Microsoft Store 或 Xbox 游戏商店中发布的应用的设置。 包括授权代码和访问令牌的程序包 SID 和重定向 URI。 |
 
 ## <a name="response"></a>响应
 

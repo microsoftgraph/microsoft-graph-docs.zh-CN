@@ -5,12 +5,12 @@ description: 术语Column 资源指示列的值包含分类数据。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: fcdad019f3eb2496116767e560f63a4668ed7508
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 6ccf926f646f11f12bc150fd22b339777df4208b
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63720865"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757743"
 ---
 # <a name="termcolumn-resource-type"></a>termColumn 资源类型
 
@@ -21,12 +21,17 @@ ms.locfileid: "63720865"
 
 ## <a name="properties"></a>属性
 
-| 属性               | 类型                           | 说明                                                               |
+| 属性               | 类型                           | Description                                                               |
 | :--------------------- | :----------------------------- | :------------------------------------------------------------------------ |
 | allowMultipleValues    | Boolean                        | 指定列是否允许多个值               |
-| parentTerm             | microsoft.graph.termStore.term | 指定可选择其子项作为列值的术语 guid。 |
 | showFullyQualifiedName | Boolean                        | 指定是显示整个术语路径还是仅显示术语标签。 |
-| termSet                | microsoft.graph.termStore.set  | 可以选择其子项作为列值的术语集。                 |
+
+## <a name="relationships"></a>关系
+
+| 关系   | 类型                      | Description
+|:----------------|:--------------------------|:-------------------------------
+| parentTerm     | microsoft.graph.termStore.term | 指定子术语可以选作列值的父术语。
+| termSet      | microsoft.graph.termStore.set | 可以选择其子项作为列值的术语集。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -37,8 +42,6 @@ ms.locfileid: "63720865"
 ```json
 {
     "allowMultipleValues": true,
-    "parentTerm": { "@type": "microsoft.graph.termStore.term" },
     "showFullyQualifiedName": false,
-    "termSet": { "@type": "microsoft.graph.termStore.set" }
 }
 ```

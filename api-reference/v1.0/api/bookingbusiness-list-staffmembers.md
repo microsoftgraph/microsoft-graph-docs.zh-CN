@@ -5,18 +5,19 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c7756e775e53256ff51c9a980618f82ba4d4f29f
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 5fee209f3fdced792cc12ee4ea2e12f45f67e7dd
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014234"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757869"
 ---
 # <a name="list-staffmembers"></a>列出 staffMembers
 
 命名空间：microsoft.graph
 
-获取指定的[bookingBusiness](../resources/bookingbusiness.md)中的[bookingStaffMember](../resources/bookingstaffmember.md)对象列表。
+获取指定 [bookingBusiness](../resources/bookingbusiness.md) 中的 [bookingStaffMember](../resources/bookingstaffmember.md) 对象列表。
+
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,19 +33,23 @@ ms.locfileid: "62014234"
 GET /solutions/bookingBusinesses/{id}/staffMembers
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 $count 和 $expand [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
+此方法支持`$count` 和 `$expand` [OData 查询参数](/graph/query-parameters)，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。 必需。|
+| Authorization  | 持有者 {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [bookingStaffMember](../resources/bookingstaffmember.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bookingStaffMember](../resources/bookingstaffmember.md) 对象集合。
+
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
+
 下面展示了示例请求。
 
 <!-- {
@@ -55,6 +60,7 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 ```
 
 ### <a name="response"></a>响应
+
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 21dd2b8b045f956eba2537be33e59bb05b30f2ea
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: db687ea4c8768dcfaba5c6841a857e8396129471
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339383"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668904"
 ---
 # <a name="application-addpassword"></a>application： addPassword
 
@@ -26,7 +26,7 @@ ms.locfileid: "62339383"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | Application.ReadWrite.All |
 | 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -57,7 +57,7 @@ POST /applications/{id}/addPassword
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordCredential](../resources/passwordcredential.md) 对象。 **响应对象中的 secretText** 属性包含由 Azure Active Directory生成的强密码，长度为 16-64 个字符。 将来无法检索此密码。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordCredential](../resources/passwordcredential.md) 对象。 响应 **对象中的 secretText** 属性包含由 Azure Active Directory生成的强密码，长度为 16-64 个字符。 将来无法检索此密码。
 
 ## <a name="examples"></a>示例
 

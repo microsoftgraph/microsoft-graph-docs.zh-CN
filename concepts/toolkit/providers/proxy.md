@@ -1,14 +1,14 @@
 ---
 title: 代理服务器提供商
-description: 代理提供程序允许您将自己的服务器端身份验证与 Microsoft Graph Toolkit。
+description: 代理提供程序允许您使用自己的服务器端身份验证和 Microsoft Graph Toolkit。
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: f545d39a14ac448fc926f5caa22a0b0c7aaab667
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 44f247cb85dbe7444cfd86928387f510369a4193
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126539"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586795"
 ---
 # <a name="proxy-provider"></a>代理服务器提供商
 
@@ -18,7 +18,7 @@ ms.locfileid: "59126539"
 
 <pre>https://graph.microsoft.com/v1.0/me => https://myurl.com/api/GraphProxy/v1.0/me</pre> 
 
-然后，你的 API 实现应Graph用户调用 Microsoft 代码，然后将结果返回到组件。
+然后，你的 API 实现应Graph用户调用 Microsoft 应用，然后将结果返回到组件。
 
 有关实现示例，请参阅 ASP.NET [MVC 示例](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/proxy-provider-asp-net-mvc)。 
 
@@ -30,7 +30,7 @@ ms.locfileid: "59126539"
 
 ### <a name="initialize-in-your-html-page"></a>在 HTML 页中初始化
 
-在 HTML 中初始化代理提供程序是定义您自己的自定义服务器端身份验证路由的最简单方法。 使用 `mgt-proxy-provider` 组件设置 **graph-proxy-url**。 这会将定义的代理提供程序设置为全局提供程序。
+在 HTML 中初始化代理提供程序是定义您自己的自定义服务器端身份验证路由的最简单方法。 `mgt-proxy-provider`使用 组件设置 **graph-proxy-url**。 这会将定义的代理提供程序设置为全局提供程序。
 
 ```html
 <mgt-proxy-provider graph-proxy-url="https://myurl.com/api/GraphProxy"></mgt-proxy-provider>
@@ -66,7 +66,7 @@ Providers.globalProvider = new ProxyProvider("https://myurl.com/api/GraphProxy",
 
 当你需要将令牌或其他标头传递到后端时，这非常有用。
 
-如果要使用该组件 `mgt-login` ，还应为提供程序 `login` 指定 和 `logout` 函数：
+如果要使用该组件 `mgt-login` ，还应为 `login` 提供程序指定 和 `logout` 函数：
 
 ```ts
 import {Providers, ProxyProvider} from '@microsoft/mgt';

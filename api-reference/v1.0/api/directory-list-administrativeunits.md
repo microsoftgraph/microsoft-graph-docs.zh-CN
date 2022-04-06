@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 776238cdcff6b7f839fddfb0d8a30ef83c533922
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 47dc4c0770a8c9476aa3d5a9a67c6304cf141edd
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62855295"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672383"
 ---
 # <a name="list-administrativeunits"></a>列出 administrativeUnits
 
@@ -23,7 +23,7 @@ ms.locfileid: "62855295"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -33,7 +33,7 @@ ms.locfileid: "62855295"
 GET /directory/administrativeUnits
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$count`、 、 `$search``$select`、 (`$filter` `eq`) `$expand` 和 [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
+此方法支持 `$count`、 、 `$search``$select`、 (`$filter` `eq`) 和 `$expand` [OData 查询](/graph/query-parameters)参数来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

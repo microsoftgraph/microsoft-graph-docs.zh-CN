@@ -1,16 +1,16 @@
 ---
 title: rbacApplication：roleSchedules
 description: 检索 roleAssignmentSchedules 和 roleEligibilitySchedules。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 51b175f2a7cf53cfe9a7778ccfc8ae6f2202fe18
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 5bb7c202d222999266379692007c89543605d4a0
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695970"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510321"
 ---
 # <a name="rbacapplication-roleschedules"></a>rbacApplication：roleSchedules
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "60695970"
 
 检索 roleAssignmentSchedules 和 roleEligibilitySchedules。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -44,12 +44,12 @@ GET /roleManagement/directory/roleSchedules
 |参数|类型|说明|
 |:---|:---|:---|
 |directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 |
-|appScopeId|字符串|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元。 |
+|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元。 |
 |principalId|字符串| 要向其中授予工作分配的主体的标识符。 可以是组或用户。 |
 |roleDefinitionId|String|工作分配的 unifiedRoleDefinition 的标识符。 只读。|
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -59,7 +59,7 @@ GET /roleManagement/directory/roleSchedules
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

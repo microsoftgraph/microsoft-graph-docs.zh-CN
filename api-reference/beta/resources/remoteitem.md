@@ -3,15 +3,15 @@ author: JeremyKelley
 description: remoteItem 资源指示 driveItem 引用存在于其他驱动器中的项。
 ms.date: 09/10/2017
 title: RemoteItem
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 87d3c19d6d6714f88fb3404f4485ed303a86e051
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 196f0105a2fb9f436d50728af1ab5865de47d397
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073447"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724223"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
 
@@ -57,7 +57,7 @@ ms.locfileid: "48073447"
 
 ## <a name="properties"></a>属性
 
-| 属性名称        | 类型                                | 说明                                                                                                                                                       |
+| 属性             | 类型                                | 说明                                                                                                                                                       |
 | :------------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [IdentitySet](identityset.md)       | 识别创建项目的用户、设备和应用程序。只读。                                                                                  |
 | createdDateTime      | Timestamp                           | 创建项的日期和时间。只读。                                                                                                                        |
@@ -65,7 +65,7 @@ ms.locfileid: "48073447"
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | 本地文件系统中的远程项的有关信息。只读。                                                                                          |
 | 文件夹               | [文件夹](folder.md)                 | 指示远程项是文件夹。只读。                                                                                                            |
 | id                   | String                              | 驱动器内远程项的唯一标识符。只读。                                                                                                    |
-| image                | [Image](image.md)                   | 图像元数据（如果此项是一个图像）。只读。                                                                                               |
+| image                | [Image](image.md)                   | 图像元数据（如果此项是一个图像）。只读。                                                                                                               |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                            |
 | lastModifiedDateTime | Timestamp                           | 上次修改项目的日期和时间。只读。                                                                                                              |
 | name                 | String                              | 可选。远程项的 Filename。只读。                                                                                                                 |
@@ -74,7 +74,7 @@ ms.locfileid: "48073447"
 | shared               | [shared](shared.md)                 | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | 为 OneDrive for Business 和 SharePoint 中的项之间的互操作性提供了完整的项标识符集。只读。                                          |
 | size                 | Int64                               | 远程项的大小。只读。                                                                                                                               |
-| video                | [Video](video.md)                   | 视频元数据（如果此项是一个视频）。只读。                                                                                                    |
+| video                | [Video](video.md)                   | 视频元数据（如果此项是一个视频）。只读。                                                                                                                |
 | WebDavUrl            | Url                                 | 项的可兼容 DAV 的 URL。                                                                                                                                  |
 | WebUrl               | Url                                 | 在浏览器中显示此资源的 URL。只读。                                                                                                         |
 
@@ -92,5 +92,3 @@ ms.locfileid: "48073447"
   "suppressions": []
 }
 -->
-
-

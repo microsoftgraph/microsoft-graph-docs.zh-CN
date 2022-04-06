@@ -1,16 +1,16 @@
 ---
 title: imageInfo 资源类型
-description: 一个复杂类型，用于表示 activity 对象的 visualInfo 部分中 **的属性属性** 。
-localization_priority: Normal
+description: 表示活动对象的 visualInfo 部分中的属性的复杂类型。
+ms.localizationpriority: medium
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ailae
-ms.openlocfilehash: d94e67ecf590198afff31768e550d6b4454dc4bc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a123ea442fe4309ea96962b4155e0f36909fee7b
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026509"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723768"
 ---
 # <a name="imageinfo-resource-type"></a>imageInfo 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48026509"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-一个复杂类型，用于表示[activity](../resources/projectrome-activity.md)对象的[visualInfo](../resources/projectrome-visualinfo.md)部分中**的属性属性**。
+表示活动对象的 [visualInfo](../resources/projectrome-visualinfo.md) 部分中的[属性的复杂类型](../resources/projectrome-activity.md)。
 
 ## <a name="properties"></a>属性
 
-|名称 | 类型 | 说明|
-|:----|:-----|:-----------|
-|iconUrl | String | Optional指向代表用于生成活动的应用程序的图标的 URI|
-|alternateText | String | Optional图像的可选文本可访问内容|
-|addImageQuery | Boolean | Optional用于指示服务器能够动态呈现图像以响应参数化的参数。 例如-高对比度图像|
+| 属性      | 类型    | 说明                                                                                                                                              |
+| :------------ | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| iconUrl       | String  | 可选;指向表示用于生成活动的应用程序的图标的 URI                                                      |
+| alternateText | String  | 可选;图像可选文字辅助内容                                                                                                      |
+| addImageQuery | Boolean | 可选;参数，用于指示服务器能够动态呈现图像以响应参数化。 例如 - 高对比度图像 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -53,6 +53,7 @@ ms.locfileid: "48026509"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -63,5 +64,3 @@ ms.locfileid: "48026509"
   "suppressions": []
 }
 -->
-
-

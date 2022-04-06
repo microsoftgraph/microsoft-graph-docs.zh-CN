@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: dbe208e343c23e12f247fc3ae73953fcead328e2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 13a487cf3bc070976af6cc7e193dd77fe95b988c
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115785"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671802"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal：添加所有者
 
@@ -25,7 +25,7 @@ ms.locfileid: "62115785"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.ReadWrite.All 和Directory.Read.All、 Application.ReadWrite.All 和Directory.ReadWrite.All、 Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.ReadWrite.All 和 Directory.Read.All、Application.ReadWrite.All 和 Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.OwnedBy 和Directory.Read.All、 Application.ReadWrite.All 和Directory.Read.All、 Application.ReadWrite.OwnedBy 和Directory.ReadWrite.All、 Application.ReadWrite.All 和Directory.ReadWrite.All  |
 

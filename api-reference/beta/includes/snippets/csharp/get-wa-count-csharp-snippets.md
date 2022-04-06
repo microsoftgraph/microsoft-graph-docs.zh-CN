@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 86efc57b97e44dcbecdf24b0cb62500105daf0e3
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7e452dcd3eeb2648429de65a11c9c2ced857ae96
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63351178"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528180"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var users = await graphClient.Users
-    .Request()
+    .Request( queryOptions )
     .Header("ConsistencyLevel","eventual")
     .Search("displayName:wa")
     .OrderBy("displayName")

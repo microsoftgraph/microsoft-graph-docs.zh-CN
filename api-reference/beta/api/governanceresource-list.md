@@ -4,13 +4,13 @@ description: 检索请求者有权访问的 governanceResource 集合。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: bf6ce207c535a4ebae6d8b30bb9f40401dcc54d5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 2b0a4846b5b75215a25ad8d027dece7a10947608
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125921"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510153"
 ---
 # <a name="list-governanceresources"></a>列出 governanceResources
 
@@ -18,11 +18,11 @@ ms.locfileid: "62125921"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 检索请求 [者有权访问的 governanceResource](../resources/governanceresource.md) 集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -57,7 +57,7 @@ GET /privilegedAccess/azureResources/resources
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|

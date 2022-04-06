@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3dcec84548ba6c9ce1fc1c1f85eafea4bc0887f9
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 3bebc76aac2d674cca95653c08ef12907f8e0a24
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672628"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629188"
 ---
 # <a name="list-unifiedroledefinitions"></a>列出 unifiedRoleDefinitions
 
@@ -18,9 +18,15 @@ ms.locfileid: "63672628"
 
 获取提供商 [的 unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象列表。
 
-## <a name="permissions"></a>权限
+目前支持以下 RBAC 提供程序：
+- Azure AD (目录) 
+- Azure AD (授权) 
+
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+### <a name="for-the-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -28,12 +34,29 @@ ms.locfileid: "63672628"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
+
+### <a name="for-the-entitlement-management-provider"></a>对于权利管理提供程序
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） |  EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All   |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | 不支持。 |
+
 ## <a name="http-request"></a>HTTP 请求
+
+列出目录提供程序的角色定义：
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /roleManagement/directory/roleDefinitions
+```
+
+列出权利管理提供程序的角色定义：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

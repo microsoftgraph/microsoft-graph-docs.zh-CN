@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68dd7303e9b444d35b4d3183043b498236d39393
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 64a6edcb4c012ba318b09726850e6fd9b9dcecba
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339673"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630833"
 ---
 # <a name="update-operationapprovalrequest"></a>Update operationApprovalRequest
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -62,11 +62,12 @@ PATCH /deviceManagement/operationApprovalRequests/{operationApprovalRequestId}
 |状态|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|当前审批请求状态。 此属性是只读的。 可取值为：`unknown`、`needsApproval`、`approved`、`rejected`、`cancelled`、`completed` 或 `expired`。|
 |requestJustification|String|请求理由。 此属性是只读的。|
 |approvalJustification|String|批准请求的理由。 此属性是只读的。|
+|operationApprovalPolicies|String|请求中使用的操作审批策略。 此属性是只读的。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -75,7 +76,7 @@ PATCH /deviceManagement/operationApprovalRequests/{operationApprovalRequestId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/{operationApprovalRequestId}
 Content-type: application/json
-Content-length: 1346
+Content-length: 1415
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalRequest",
@@ -119,7 +120,8 @@ Content-length: 1346
   },
   "status": "needsApproval",
   "requestJustification": "Request Justification value",
-  "approvalJustification": "Approval Justification value"
+  "approvalJustification": "Approval Justification value",
+  "operationApprovalPolicies": "Operation Approval Policies value"
 }
 ```
 
@@ -128,7 +130,7 @@ Content-length: 1346
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1459
+Content-Length: 1528
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalRequest",
@@ -174,7 +176,8 @@ Content-Length: 1459
   },
   "status": "needsApproval",
   "requestJustification": "Request Justification value",
-  "approvalJustification": "Approval Justification value"
+  "approvalJustification": "Approval Justification value",
+  "operationApprovalPolicies": "Operation Approval Policies value"
 }
 ```
 

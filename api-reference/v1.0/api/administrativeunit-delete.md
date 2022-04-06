@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 14e5e6bbdd8aca3c7f02543cb5739a25f95c056a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7ed4083bf8e55298d5587af8ed352b0697bef967
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129210"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672425"
 ---
 # <a name="delete-administrativeunit"></a>删除 administrativeUnit
 
@@ -24,7 +24,7 @@ ms.locfileid: "62129210"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.ReadWrite.All |
 

@@ -5,12 +5,12 @@ author: currenmehta
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0304fb18e2af0865dd9ff6ccde030dc68f067bc8
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: b89d41ec573d6035e19590d7015df4e7269909f3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338220"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672733"
 ---
 # <a name="customaccesspackageworkflowextension-resource-type"></a>customAccessPackageWorkflowExtension 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "63338220"
 继承并派生自 [customCalloutExtension](../resources/customcalloutextension.md)。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 customAccessPackageWorkflowExtensions](../api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) 集合|获取 [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) 对象及其属性的列表。|
@@ -44,7 +44,7 @@ ms.locfileid: "63338220"
 |说明|String|customAccessPackageWorkflowExtension 对象的说明。 继承自 [customCalloutExtension](../resources/customcalloutextension.md)。 只读。|
 |displayName|String|customAccessPackageWorkflowExtension 对象的显示名称。 继承自 [customCalloutExtension](../resources/customcalloutextension.md)。 只读。 支持 `$filter`（`contains`）。|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|用于配置终结点以调用逻辑应用的工作流的类型和详细信息。 继承自 [customCalloutExtension](../resources/customcalloutextension.md)。|  
-|id|String|customAccessPackageWorkflowExtension 对象的标识符。 继承自 [实体](../resources/entity.md)。|
+|id|String|customAccessPackageWorkflowExtension 对象的标识符。 继承自 [entity](../resources/entity.md)。|
 |lastModifiedDateTime|DateTimeOffset|表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 
 ## <a name="relationships"></a>关系
@@ -65,6 +65,12 @@ ms.locfileid: "63338220"
   "@odata.type": "#microsoft.graph.customAccessPackageWorkflowExtension",
   "id": "String (identifier)",
   "displayName": "String",
+  "clientConfiguration": {
+    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
+  },
+  "authenticationConfiguration": {
+    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
+  },
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",

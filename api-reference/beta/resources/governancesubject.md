@@ -4,13 +4,13 @@ description: 表示在 PIM 管理中心中管理的用户、Privileged Identity 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 5552ba73a20ed4e27b906244d5610f84dccadfe7
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 99e668cc18ff38f8a4b26c11d514beddcc020e00
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695403"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509635"
 ---
 # <a name="governancesubject-resource-type"></a>governanceSubject 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "60695403"
 | 属性  | 类型       |说明|
 |:----------|:----------|:----------|
 |id         |字符串     | 主题的 ID。|
-|type       |字符串     |主题的类型。 值可以是 ``User`` 、 ``Group`` 和 ``ServicePrincipal`` 。|
-|displayName|字符串     |主题显示名称。|
+|type       |字符串     |主题的类型。 值可以是 、 ``User````Group``和 ``ServicePrincipal``。|
+|displayName|String     |主题显示名称。|
 |email      |String     |用户主题的电子邮件地址。 如果主题位于其他类型的中，则为空。|
 |principalName|String   |用户主题的主体名称。 如果主题位于其他类型的中，则为空。|
 

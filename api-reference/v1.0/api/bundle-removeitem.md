@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: 从捆绑包中删除项目
-description: 从 driveItems 捆绑包中删除项。
+description: 从 driveItems 捆绑包中删除项
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 18068d3645c114dab38c6d7ae4d745e8c15a0e49
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: 678bfba01471a123f21f034beed7438b3331eff8
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607381"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758223"
 ---
 # <a name="remove-item-from-bundle"></a>从捆绑包中删除项目
 
@@ -38,29 +38,28 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | Bearer {token}。必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
-请勿为 method 提供请求正文。
+请勿为此方法提供请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，响应为 `204 No Content`。
 
-有关错误响应的信息，请参阅 [Microsoft Graph错误响应和资源类型][error-response]。
+有关错误响应的信息，请参阅 [错误响应][error-response]。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}/children/{item-id}
+DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item-id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/remove-from-bundle-csharp-snippets.md)]
@@ -82,8 +81,6 @@ DELETE https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}/children/{item
 
 
 ### <a name="response"></a>响应
-
-下面展示了示例响应。
 
 <!-- { "blockType": "response" } -->
 

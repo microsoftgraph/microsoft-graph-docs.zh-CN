@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 56bff72bdde8eb18eb245cdd399412fbd73bee6b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5324e130ef195c11fdb969b9e2828d9bfc1f3e6f
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395095"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528165"
 ---
 ```go
 
@@ -18,7 +18,7 @@ requestBody.SetIsEnabled(&isEnabled)
 options := &msgraphsdk.ContactMergeSuggestionsRequestBuilderPatchOptions{
     Body: requestBody,
 }
-result, err := graphClient.Me().Settings().ContactMergeSuggestions().Patch(options)
+graphClient.Me().Settings().ContactMergeSuggestions().Patch(options)
 
 
 ```

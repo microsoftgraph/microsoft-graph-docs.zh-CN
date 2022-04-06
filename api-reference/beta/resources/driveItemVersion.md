@@ -3,15 +3,15 @@ author: JeremyKelley
 description: DriveItemVersion 资源表示特定版本的 DriveItem。
 ms.date: 09/17/2017
 title: DriveItemVersion
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ae02fdd643f0aaa0f085f96e7c08adae50a81c63
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6f2245fe02657d883d1e6646ac6ff6fce0187ea
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979621"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723160"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
 
@@ -21,16 +21,15 @@ ms.locfileid: "47979621"
 
 **DriveItemVersion** 资源表示特定版本的 [DriveItem](driveitem.md)。
 
-
 ## <a name="tasks-on-driveitemversion-resources"></a>DriveItemVersion 资源上的任务
 
 下列任务可用于 driveItemVersion 资源。
 
-|            常见任务             |         HTTP 方法         |
-| :--------------------------------- | :-------------------------- |
-| [列出版本][version-list]      | `GET /drive/items/{item-id}/versions`  |
-| [获取版本][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
-| [获取内容][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
+| 常见任务                        | HTTP 方法                                                        |
+| :--------------------------------- | :----------------------------------------------------------------- |
+| [列出版本][version-list]      | `GET /drive/items/{item-id}/versions`                              |
+| [获取版本][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`                 |
+| [获取内容][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content`         |
 | [还原版本][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
@@ -57,7 +56,7 @@ ms.locfileid: "47979621"
 
 ## <a name="properties"></a>属性
 
-|      属性名称       |                         类型                         |                               说明                               |
+| 属性                 | 类型                                                 | 说明                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | 版本 ID。 只读。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 上次修改版本的用户的标识。 只读。        |
@@ -69,9 +68,9 @@ ms.locfileid: "47979621"
 
 下表定义了 **driveItemVersion** 资源与其他资源的关系。
 
-| 关系名称 |  类型  |            说明             |
-| :---------------- | :----- | :--------------------------------- |
-| **content**       | Stream | 版本的内容流。 |
+| 关系 | 类型   | 说明                        |
+| :----------- | :----- | :--------------------------------- |
+| **content**  | Stream | 版本的内容流。 |
 
 <!--
 {
@@ -83,5 +82,3 @@ ms.locfileid: "47979621"
   "suppressions": []
 }
 -->
-
-

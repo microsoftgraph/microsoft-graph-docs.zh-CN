@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 66ea0c51822159d7a3f85b4525a12481943d54f1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b59eb882f3560847f16aed7f9e4d360f68360989
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136988"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671389"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "62136988"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 创建 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象。
 
@@ -27,9 +27,9 @@ ms.locfileid: "62136988"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,16 +45,16 @@ POST /privilegedRoleAssignmentRequests
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象的 JSON 表示形式。 
 
-| 属性     | 类型    |  Description|
+| 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
 |roleId|String|角色的 ID。 此为必需属性。|
-|type|String|表示对项目执行的操作角色分配。 值可以是 `AdminAdd` ：管理员将用户添加到角色 `UserAdd` ;：用户添加角色分配。 必需。|
-|assignmentState|String|工作分配的状态。 该值可用于符合条件的分配 - 如果直接由管理员分配，或由用户对符合条件的分配 `Eligible` `Active` `Active` 进行激活。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
-|reason|String|需要为请求审核和审核角色分配提供原因。|
+|type|String|表示对项目执行的操作角色分配。 值可以是 `AdminAdd`：管理员将用户添加到角色;`UserAdd`：用户添加角色分配。 必需。|
+|assignmentState|String|工作分配的状态。 该值可用于符合条件的 `Eligible` `Active` 分配 - `Active` 如果直接由管理员分配，或由用户对符合条件的分配进行激活。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
+|reason|String|需要为审核和审核角色分配请求提供原因。|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|请求角色分配计划。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象。
 
 ### <a name="error-codes"></a>错误代码
 此 API 返回标准 HTTP 错误代码。 此外，它还可以返回下表中列出的错误代码。

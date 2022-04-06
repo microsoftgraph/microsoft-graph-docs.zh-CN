@@ -5,18 +5,18 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8386e40dc74f5594f59b7f190d03e73886423bf5
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e05e0b7ef4be952f7a87adc9fa20c82fa9583e9e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344688"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672110"
 ---
 # <a name="user-delta"></a>user: delta
 
 命名空间：microsoft.graph
 
-获得新建、更新或删除的用户，无需对整个用户集合执行完整读取。 有关详细信息，请参阅[更改跟踪](/graph/delta-query-overview)。
+获取新建、更新或删除的用户，无需对整个用户集合执行完整读取。有关详细信息，请参阅[更改跟踪](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -25,7 +25,7 @@ ms.locfileid: "62344688"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -40,7 +40,7 @@ GET /users/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪用户更改会引发一组对 **delta** 函数的一次或多次调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。
+跟踪用户的更改会触发一个或多个 **delta** 函数调用。如果使用任何查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在初始 **delta** 请求中指定它。Microsoft Graph 会自动将任何指定参数编码为响应中返回的 `nextLink` 或 `deltaLink` URL 的令牌部分。
 
 只需预先指定所需的任何查询参数一次。
 
@@ -64,17 +64,17 @@ GET /users/delta
 |:---------------|:----------|
 | Authorization  | 持有者&lt;令牌&gt;|
 | Content-Type  | application/json |
-| Prefer | return=minimal <br><br>在使用 `deltaLink` 的请求中执行此标头将仅返回自上一轮之后发生更改的对象属性。 可选。 |
+| Prefer | return=minimal <br><br>在使用 `deltaLink` 的请求中执行此标头将仅返回自上一轮之后发生更改的对象属性。可选。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法的响应正文返回`200 OK`响应代码和[用户](../resources/user.md)集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法的响应正文将返回`200 OK`响应代码和[用户](../resources/user.md)集合对象。响应还包括 `nextLink` URL 或 `deltaLink` URL。
 
 - 如果返回 `nextLink`URL：
-  - 这表示绘画中存在要检索的其他数据页面。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
+  - 这表明会话中存在要检索的其他数据页面。应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
   - 响应包含与初始 Delta 查询请求相同的属性集。 这使你能够在发起 Delta 循环时捕获对象当前的完整状态。
 
 - 如果返回 `deltaLink`URL：

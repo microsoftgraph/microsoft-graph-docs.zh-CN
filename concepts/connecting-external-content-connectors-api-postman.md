@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 8f63a225231365f7dfd654c11b797a52489633ce
-ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.openlocfilehash: 3737a7203deb844a7fb45cb34e823dba02bb5b15
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63780539"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477564"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>将 Postman 与 Microsoft Graph 连接器 API 一并使用
 
@@ -44,7 +44,7 @@ ms.locfileid: "63780539"
 ## <a name="step-2---download-the-postman-agent-optional---postman-web-browser-only"></a>步骤 2 - 下载Postman代理（可选 - 仅适用于 Postman Web 浏览器）
 
 要在 web 浏览器中使用此 Postman 集合，请下载 [Postman 桌面代理](https://www.postman.com/downloads)。 由于 web 浏览器的限制，无法在未下载此代理的情况下在 web 上使用 Postman。
-“每个Microsoft 365租户的最大[连接](/graph/api-reference/resources/externalconnection?view=graph-rest-beta&preserve-view=true)资源数。”
+“每个Microsoft 365租户的最大[连接](/graph/api/resources/externalconnectors-externalconnection)资源数。”
 
 > [!NOTE]
 > 如果你正在使用 Postman for Windows 应用，则不需要此代理。 如果打开 Postman for Windows 后，你会在工作区中看到这个分支集合。

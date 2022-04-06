@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e354dd264633b2acb2f178106843bfa168dde710
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 9dac062856e50a6d077125e0a7322942507e9529
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346639"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672215"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal： addKey
 
@@ -23,13 +23,13 @@ ms.locfileid: "62346639"
 
 作为此方法的请求验证的一部分，将验证拥有现有密钥的证明，然后才能执行该操作。 
 
-没有任何现有有效证书的 ServicePrincipals (即：尚未添加任何证书，或所有证书都已过期) ，将不能使用此服务操作。 [Update servicePrincipal](../api/serviceprincipal-update.md) 可用于执行更新。
+没有任何现有有效证书的 ServicePrincipals (即尚未添加任何证书，或者所有证书都已过期) ，将不能使用此服务操作。 [Update servicePrincipal](../api/serviceprincipal-update.md) 可用于执行更新。
 
 ## <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All、Application.ReadWrite.All、Directory.ReadWrite.All  |
+|委派（工作或学校帐户） | sApplication.ReadWrite.All、Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 无。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 

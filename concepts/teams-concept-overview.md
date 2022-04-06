@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 64a314223a333b5ba945ed10426a5ea4bce83283
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: f0bed81ec3857dcb2ef7678b4ff1b1644e0eaae2
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477949"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510502"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 
@@ -24,7 +24,7 @@ ms.locfileid: "64477949"
 
 ### <a name="automate-team-lifecycles"></a>自动化团队生命周期
 
-当出现新的业务问题时，使用 Microsoft Graph [创建一个新的虚拟团队](/graph/api/team-put-teams)，向团队[添加合适的人员](/graph/api/group-post-members)，并使用[渠道](/graph/api/channel-post)、[选项卡](/graph/teams-configuring-builtin-tabs)和[应用](/graph/api/teamsappinstallation-add)配置团队。
+当出现新的业务问题时，使用 Microsoft Graph [创建一个新的虚拟团队](/graph/api/team-put-teams)，向团队[添加合适的人员](/graph/api/group-post-members)，并使用[渠道](/graph/api/channel-post)、[选项卡](/graph/teams-configuring-builtin-tabs)和[应用](/graph/api/team-post-installedapps)配置团队。
 如果想要让新团队一起讨论业务问题，请在团队日历中[添加一个新事件](/graph/api/group-post-events)。
 
 ![通过创建团队、添加成员和所有者、配置团队设置、添加渠道、安装应用、添加选项卡和适时存档或删除团队来自动化团队生命周期。](images/teams-lifecycle.png)

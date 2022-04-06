@@ -1,16 +1,16 @@
 ---
 title: 列出 signIn
 doc_type: apiPageType
-description: 获取租户中用户登录Azure Active Directory列表。
+description: 获取租户租户中的用户登录Azure Active Directory列表。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 699ca644b3c968953c36eff155440dea198aefd0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6aaf95669860d39ca7d26e1bae2301560e2041c8
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095919"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757771"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -22,7 +22,7 @@ ms.locfileid: "62095919"
 
 最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有默认保留期Azure Active Directory (Azure AD) [登录事件](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)可用。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,13 +37,13 @@ ms.locfileid: "62095919"
 
 应用必须[正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)Azure AD。
 
-除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要详细了解目录角色，请参阅Azure AD[角色：](/azure/active-directory/roles/permissions-reference)
+除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要了解有关目录角色Azure AD，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 全局读取者
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全读取者
++ 安全信息读取者
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$top` 、 `$skiptoken` 和 `$filter` OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 、 `$top`和 `$skiptoken``$filter` OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -67,7 +67,7 @@ GET auditLogs/signIns
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象集合。 对象的集合根据 **createdDateTime** 按降序列出。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象集合。 对象集合根据 **createdDateTime** 按降序列出。
 
 ## <a name="examples"></a>示例
 
@@ -387,5 +387,194 @@ Content-type: application/json
       "sessionLifetimePolicies":[]
     }
   ]
+}
+```
+
+
+
+### <a name="example-3-retrieve-the-first-10-sign-ins-where-the-signineventtype-is-not-interactiveuser-starting-with-the-latest-sign-in"></a>示例 3：检索 signInEventType 不是交互式用户（从最新登录开始）前 10 个登录
+
+此示例中，响应包含 `@odata.nextLink` 一个属性，其中包含可用于检索接下来的 10 个结果的 URL。
+
+#### <a name="request"></a>请求
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_signins_ne_nonInteractiveUser"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventTypes/any(t: t ne 'interactiveUser'))&$orderBy=createdDateTime DESC&$top=10
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-ne-noninteractiveuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signins-ne-noninteractiveuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signins-ne-noninteractiveuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signins-ne-noninteractiveuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-signins-ne-noninteractiveuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-signins-ne-noninteractiveuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.signIn"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/auditLogs/signins?$filter=(signInEventTypes%2fany(t%3a+t+ne+%27interactiveUser%27))&$top=10&$orderBy=createdDateTime+DESC&$skiptoken=186ac5626b89ae2a991ff26b674ac381be50b941a40542cb66f8136f2887275b",
+    "value": [
+        {
+            "id": "ef1e1fcc-80bd-489b-82c5-16ad80770e00",
+            "createdDateTime": "2022-03-18T18:13:37Z",
+            "userDisplayName": "MOD Administrator",
+            "userPrincipalName": "admin@contoso.com",
+            "userId": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
+            "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "appDisplayName": "Graph Explorer",
+            "ipAddress": "197.178.9.154",
+            "ipAddressFromResourceProvider": null,
+            "clientAppUsed": "Browser",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36",
+            "correlationId": "17b4f05d-3659-42b8-856d-99322911d398",
+            "conditionalAccessStatus": "notApplied",
+            "originalRequestId": "",
+            "isInteractive": false,
+            "tokenIssuerName": "",
+            "tokenIssuerType": "AzureAD",
+            "processingTimeInMilliseconds": 132,
+            "riskDetail": "none",
+            "riskLevelAggregated": "none",
+            "riskLevelDuringSignIn": "none",
+            "riskState": "none",
+            "riskEventTypes_v2": [],
+            "resourceDisplayName": "Microsoft Graph",
+            "resourceId": "00000003-0000-0000-c000-000000000000",
+            "resourceTenantId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "homeTenantId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "homeTenantName": "",
+            "authenticationMethodsUsed": [],
+            "authenticationRequirement": "singleFactorAuthentication",
+            "signInIdentifier": "",
+            "signInIdentifierType": null,
+            "servicePrincipalName": "",
+            "signInEventTypes": [
+                "nonInteractiveUser"
+            ],
+            "servicePrincipalId": "",
+            "federatedCredentialId": "",
+            "userType": "member",
+            "flaggedForReview": false,
+            "isTenantRestricted": false,
+            "autonomousSystemNumber": 33771,
+            "crossTenantAccessType": "none",
+            "servicePrincipalCredentialKeyId": "",
+            "servicePrincipalCredentialThumbprint": "",
+            "uniqueTokenIdentifier": "ZWYxZTFmY2MtODBiZC00ODliLTgyYzUtMTZhZDgwNzcwZTAw",
+            "incomingTokenType": "none",
+            "authenticationProtocol": "none",
+            "resourceServicePrincipalId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+            "mfaDetail": null,
+            "status": {
+                "errorCode": 0,
+                "failureReason": "Other.",
+                "additionalDetails": null
+            },
+            "deviceDetail": {
+                "deviceId": "eab73519-780d-4d43-be6d-a4a89af2a348",
+                "displayName": "DESKTOP-LK3PESR",
+                "operatingSystem": "Windows 10",
+                "browser": "Chrome 99.0.4844",
+                "isCompliant": false,
+                "isManaged": false,
+                "trustType": "Azure AD registered"
+            },
+            "location": {
+                "city": "Mombasa",
+                "state": "Coast",
+                "countryOrRegion": "KE",
+                "geoCoordinates": {}
+            },
+            "appliedConditionalAccessPolicies": [
+                {
+                    "id": "80290cf6-04c8-4a25-8252-2b4d7d88228a",
+                    "displayName": "Exchange Online Requires Compliant Device",
+                    "enforcedGrantControls": [],
+                    "enforcedSessionControls": [],
+                    "result": "notEnabled",
+                    "conditionsSatisfied": "none",
+                    "conditionsNotSatisfied": "none",
+                    "includeRulesSatisfied": [],
+                    "excludeRulesSatisfied": []
+                },
+                {
+                    "id": "a00746d4-8c33-47f7-b120-91936b367a54",
+                    "displayName": "Office 365 App Control",
+                    "enforcedGrantControls": [],
+                    "enforcedSessionControls": [],
+                    "result": "notEnabled",
+                    "conditionsSatisfied": "none",
+                    "conditionsNotSatisfied": "none",
+                    "includeRulesSatisfied": [],
+                    "excludeRulesSatisfied": []
+                }
+            ],
+            "authenticationProcessingDetails": [
+                {
+                    "key": "Root Key Type",
+                    "value": "Unknown"
+                },
+                {
+                    "key": "Oauth Scope Info",
+                    "value": "[\"Application.ReadWrite.All\",\"AppRoleAssignment.ReadWrite.All\",\"DelegatedPermissionGrant.ReadWrite.All\",\"Directory.ReadWrite.All\",\"openid\",\"profile\",\"RoleManagement.Read.Directory\",\"User.Read\",\"email\",\"AuditLog.Read.All\"]"
+                }
+            ],
+            "networkLocationDetails": [
+                {
+                    "networkType": "namedNetwork",
+                    "networkNames": [
+                        "Suspicious countries"
+                    ]
+                }
+            ],
+            "authenticationDetails": [],
+            "authenticationRequirementPolicies": [],
+            "sessionLifetimePolicies": [],
+            "privateLinkDetails": {
+                "policyId": "",
+                "policyName": "",
+                "resourceId": "",
+                "policyTenantId": ""
+            }
+        }
+    ]
 }
 ```

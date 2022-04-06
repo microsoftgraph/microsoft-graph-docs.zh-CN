@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志（存档）
 description: 本主题包含已存档的 Microsoft Graph 更改日志条目。
 author: MSGraphDocsVteam
 ms.localizationpriority: high
-ms.openlocfilehash: 5e2dcded5ed5b84644ee60d7d9a7196cf75ddf7a
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 3f504e45a6fa9becceb8d6afb4bb327a740f3242
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651391"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477823"
 ---
 # <a name="changelog-for-microsoft-graph-archive"></a>Microsoft Graph 更改日志（存档）
 
@@ -55,7 +55,7 @@ ms.locfileid: "61651391"
 |加|beta 版|新增了复杂类型：<br/>[textInputQuestion](/graph/api/resources/textInputQuestion?view=graph-rest-beta)<br/>|
 |加|beta 版|添加的新枚举类型：<br/>[androidManagedAppSafetyNetEvaluationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetevaluationtype?view=graph-rest-beta)<br/>[androidRequiredPasswordComplexity](/graph/api/resources/intune-deviceconfig-androidrequiredpasswordcomplexity?view=graph-rest-beta)<br/>[macOSSoftwareUpdateDelayPolicy](/graph/api/resources/intune-deviceconfig-macossoftwareupdatedelaypolicy?view=graph-rest-beta)<br/>[managedDeviceManagementFeatures](/graph/api/resources/intune-devices-manageddevicemanagementfeatures?view=graph-rest-beta)<br/>[mobileAppRelationshipType](/graph/api/resources/intune-apps-mobileapprelationshiptype?view=graph-rest-beta)<br/>[mobileAppSupersedenceType](/graph/api/resources/intune-apps-mobileappsupersedencetype?view=graph-rest-beta)<br/>[settingSourceType](/graph/api/resources/intune-shared-settingsourcetype?view=graph-rest-beta)<br/>|
 |加|beta 版|添加 [getAvailableExtensionProperties](/graph/api/resources/getAvailableExtensionProperties?view=graph-rest-beta) 操作|
-|加|beta 版|添加 [getObjectsById](/graph/api/resources/getObjectsById?view=graph-rest-beta) 操作|
+|加|beta 版|添加 [getObjectsById](/graph/api/directoryobject-getbyids) 操作|
 |加|beta 版|对 [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta) 新增了 [revokeLicenses](/graph/api/intune-onboarding-vpptoken-revokelicenses?view=graph-rest-beta) 操作 |
 |加|beta 版|在 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) 上添加了 [getSuggestedEnrollmentLimit](/graph/api/intune-enrollment-devicemanagement-getsuggestedenrollmentlimit?view=graph-rest-beta) 函数 |
 |删除|beta|删除了 [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta) 上的 [revokeLicenses](/graph/api/intune-onboarding-vpptoken-revokelicenses?view=graph-rest-beta) 操作 |
@@ -111,7 +111,7 @@ ms.locfileid: "61651391"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | v1.0 | 引入了[管理单元 API](/graph/api/resources/administrativeunit?view=graph-rest-1.0)。 管理单元允许组织细分其 Azure Active Directory，并向这些细分项委派管理职能。 细分项可以代表区域、部门、成本中心等。 现在可通过 Microsoft Graph API 对此进行管理。|
+| 添加项 | v1.0 | 引入了 [管理单元 API](/graph/api/resources/administrativeunit?view=graph-rest-1.0)。管理单元允许组织对其 Azure Active Directory 进行细分，并将管理职责委派给这些细分。细分可以表示区域、部门、成本中心等。现在可以通过 Microsoft Graph API 进行管理。|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
@@ -138,7 +138,7 @@ ms.locfileid: "61651391"
 | 加        | beta 版 | 通过在 [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true) 资源中指定 **sortProperties** 来对 OneDrive 和 SharePoint 中的搜索结果进行 [排序](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results)。|
 | 加        | beta 版 | 通过在 **searchRequest** 资源中指定 **aggregations** 和 **aggregationFilters**，为 OneDrive 和 SharePoint [使用聚合来优化结果](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations)。|
 | 加        | beta 版 | 跨[多个连接](search-concept-custom-types.md)查询外部数据。|
-| 更改项        | beta 版 |请求和响应中的某些属性已重命名并弃用。  查找有关弃用的[更多详细信息](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning)。|
+| 更改项        | beta 版 |请求和响应中的某些属性已重命名并已弃用。请参阅 有关弃用的 [详细信息](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning)。|
 
 ### <a name="teamwork"></a>团队合作
 
@@ -279,7 +279,7 @@ ms.locfileid: "61651391"
 
 | **更改类型** | **版本** | **说明** |
 |:---|:---|:---|
-|添加项|beta 版|引入了微软待办 API。 添加了 [todoTask](/graph/api/resources/todotask?view=graph-rest-beta)、[todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta) 和 [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) 资源和 CRUD 操作。|
+|添加项|beta 版|引入了“微软待办 API”。添加了 [todoTask](/graph/api/resources/todotask?view=graph-rest-beta)、[todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta) 和 [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) 资源和 CRUD 操作。|
 |更改项|beta 版|已启用 Outlook 任务 API，包括 [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta)、[outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta)、[outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta) 以及相关的操作和方法。|
 
 ## <a name="july-2020"></a>2020 年 7 月
@@ -629,7 +629,7 @@ ms.locfileid: "61651391"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|添加项 | v1.0 | v1 中的可用 Places API。 添加了 [place](/graph/api/resources/place?view=graph-rest-1.0)、[room](/graph/api/resources/room?view=graph-rest-1.0) 和 [roomList](/graph/api/resources/room?view=graph-rest-1.0) 资源及其方法，从而在应用中提供丰富的位置详信息。 |
+|添加项 | v1.0 | 位置 API 在 v1 中可用。添加了 [位置](/graph/api/resources/place?view=graph-rest-1.0)、[会议室](/graph/api/resources/room?view=graph-rest-1.0)、[roomList](/graph/api/resources/room?view=graph-rest-1.0) 资源及其方法，以提供有关应用中位置的丰富详细信息。 |
 
 ### <a name="change-notifications"></a>更改通知
 
@@ -660,7 +660,7 @@ ms.locfileid: "61651391"
 | “更改” | beta 版 | 已将 [printer](/graph/api/resources/printer?view=graph-rest-beta) 实体中的 **shares** 导航属性更改为 **printerShare collection**。 |
 | 更改项 | beta 版 | 已弃用 [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) 实体的 **name** 属性。 |
 | 更改项 | beta 版 | 已弃用 [printer](/graph/api/resources/printer?view=graph-rest-beta)实体的 **name** 和 **acceptingJobs** 属性。 |
-| 更改项 | beta 版 | 已弃用 [print](/graph/api/resources/print?view=graph-rest-beta) 实体的 **printerShares** 导航属性。<br/> 不久，诸如“/print/printerShares/\*”之类的 URL 路径将停止运行。 请改为使用“/print/shares/\*”。 |
+| 更改项 | beta 版 | 已弃用 [print](/graph/api/resources/print?view=graph-rest-beta) 实体的 **printerShares** 导航属性。<br/> 很快，类似于“/print/printerShares/\*”的 URL 路径将停止工作。请改用“/print/shares/\*”。 |
 | 更改项 | beta 版 | 已弃用 [printer](/graph/api/resources/printerShare?view=graph-rest-beta) 实体的 **registeredBy** 属性。 |
 | 加 | beta 版 | 向 [print](/graph/api/resources/print?view=graph-rest-beta) 实体添加了 **shared** 导航属性。 |
 | 加 | beta 版 | 向 [print](/graph/api/resources/printer?view=graph-rest-beta) 实体添加了 **displayName** 和 **isAcceptingJobs** 属性。 |
@@ -838,7 +838,7 @@ ms.locfileid: "61651391"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta 版 | 新增了新资源类型 [relyingPartyDetailedSummary](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta)。 此资源类型支持[列出](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) Active Directory 联合身份验证服务中配置的依赖方。|
+| 添加项 | beta 版 | [relyingPartyDetailedSummary](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta) 添加了新的资源类型。此资源类型支持 [列出](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) Active Directory 联合身份验证服务中配置的信赖方。|
 
 ### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
 
@@ -1161,7 +1161,7 @@ ms.locfileid: "61651391"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | v1.0 | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 资源添加了 **identities** 属性。 此属性表示此用户可用于登录的标识集（如本地帐户和社交帐户）。|
+| 添加项 | v1.0 | 已将 **标识** 属性添加到 [用户](/graph/api/resources/user?view=graph-rest-1.0) 资源。此属性表示此用户可用于登录的标识集 (如本地帐户和社交帐户)。|
 
 ## <a name="december-2019"></a>2019 年 12 月
 
@@ -1235,7 +1235,7 @@ ms.locfileid: "61651391"
 |:---|:---|:---|
 |“更改” | beta 版 |更新了 [servicePrincipal](/graph/api/resources/serviceprincipal.md) 中的 **appRoleAssignments** 和 **appRoleAssignedTo** 关系的行为以返回记录的角色。 **appRoleAssignments** 返回向服务主体授予的应用程序角色，而 **appRoleAssignedTo** 返回向服务主体授予应用程序角色的主体。|
 | 加 | beta 版 | 添加了新的实体类型 [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)。 |
-|添加项|beta、v1.0|添加了以下支持：当应用程序无法访问响应集中的某些类型时，返回有限的信息。 有关更多详细信息，请参阅[为不可访问的成员对象返回有限的信息](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects)。|
+|添加项|beta、v1.0|当应用程序无法访问响应集合中的某些类型时，添加了对返回有限信息数量的支持。更多细节，请参阅 [为不可访问的成员对象返回的受限信息](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects)。|
 
 ### <a name="security"></a>安全性
 
@@ -1274,7 +1274,7 @@ ms.locfileid: "61651391"
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
-| “更改”          | Beta 和 v1.0  | 若要获得委派权限以允许应用代表用户读取 Microsoft 365 服务使用情况报告，租户管理员必须事先为用户分配 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](reportroot-authorization.md)。|
+| “更改”          | Beta 和 v1.0  | 如需获得委派权限以允许应用代表用户读取 Microsoft 365 服务使用情况报告，租户管理员必须事先为用户分配的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [授权 API 以读取 Microsoft 365 使用情况报告](reportroot-authorization.md)。|
 
 ### <a name="teamwork"></a>团队合作
 
@@ -1544,9 +1544,9 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | Beta 版本 | 向 [serviceprincipal](/graph/resources/serviceprincipal?view=graph-rest-beta) 资源添加了 [addPassword](/graph/api/serviceprincipal-addpassword?view=graph-rest-beta) 和 [removePassword](/graph/api/serviceprincipal-removepassword?view=graph-rest-beta) 方法。 |
 | 添加 | Beta 和 v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 实体添加了“onPremisesDomainName”、“onPremisesNetBiosName” 和“onPremisesSamAccountName”属性。 |
 | 添加 | Beta 和 v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **securityIdentifier** 属性。 |
-| 添加项 | Beta 和 v1.0 | 向 [device](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **mdmAppId** 属性。 |
+| 添加 | Beta 和 v1.0 | 向 [device](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **mdmAppId** 属性。 |
 | 添加项 | Beta 和 v1.0 | 已将 **manufacturer** 和 **model** 属性添加到 [device](/graph/api/resources/device?view=graph-rest-1.0) 实体。 |
-| 添加项 | v1.0 | 添加了新的 [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源。 这些联系人由组织管理，不同于[个人联系人](outlook-contacts-concept-overview.md)|
+| 添加项 | v1.0 | 添加了新的 [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源。这些联系人由组织管理，与 [个人联系人](outlook-contacts-concept-overview.md) 不同|
 | 添加项 | v1.0 | 添加了新的 [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) 资源。 |
 | 添加项 | v1.0 | 添加了新实体 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-1.0)。 |
 | 添加项 | v1.0 | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-1.0)。 |
@@ -2010,8 +2010,8 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本** | **说明**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:----------------|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 添加项        | beta 版        | 添加了 [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta)，它表示 Azure AD Identity Protection 中的风险检测。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| 添加项        | Beta 版本        | 引入了新资源类型 [applicationTemplate](/graph/api/resources/applicationtemplate.md)。 此资源类型支持从 Azure AD 应用程序库[实例化](/graph/api/applicationtemplate-instantiate.md)、[列出](/graph/api/applicationtemplate-instantiate.md)和[获取](/graph/api/applicationtemplate-get.md)应用程序。                                                                                                                                                                                                                                                                                                                                                                   |
-| 加        | beta 版        | 添加了新资源： </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta) |
+| 添加项        | Beta 版本        | 引入了新的资源类型 [applicationTemplate](/graph/api/resources/applicationtemplate.md)。此资源类型支持 [实例](/graph/api/applicationtemplate-instantiate.md)、[列表](/graph/api/applicationtemplate-instantiate.md) 和 [获取](/graph/api/applicationtemplate-get.md) 来自 Azure AD 应用程序库应用程序。                                                                                                                                                                                                                                                                                                                                                                   |
+| 添加项        | beta 版        | 添加了新资源： </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta) |
 | 加        | beta 版        | 添加了 [List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) 操作</br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | 添加项        | v1.0        | 在 [用户](/graph/api/resources/user?view=graph-rest-1.0)资源上添加了 **signInSessionsValidFromDateTime** 属性。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | 添加项        | v1.0        | 在[用户](/graph/api/resources/user?view=graph-rest-1.0)资源上添加了 [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) 操作。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -2053,7 +2053,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | v1.0 和 beta | 添加了管理员限制应用程序仅访问特定邮箱的功能，即使应用程序已被授予邮件、邮箱设置、日历或联系人的应用程序权限。 有关更多详细信息，请参阅[将应用程序权限界定为特定 Exchange Online 邮箱](auth-limit-mailbox-access.md)。 |
+| 添加项 | v1.0 和 beta | 为管理员添加了限制应用仅访问特定邮箱的功能，即使应用已授予对邮件、邮箱设置、日历或联系人的应用程序权限。有关详细信息，请参阅 [确定特定 Exchange Online 邮箱的应用程序权限范围](auth-limit-mailbox-access.md)。 |
 
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
@@ -2119,7 +2119,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 ### <a name="groups"></a>组
 | **更改类型** | **版本** | **说明** |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta 版 | 已将 **assignedlabels** 属性添加到 [组](/graph/api/resources/group?view=graph-rest-beta)实体。 此属性表示与组关联的敏感度标签对（标签 ID、标签名称）列表。
+| 添加项 | beta 版 | 向 [组](/graph/api/resources/group?view=graph-rest-beta) 实体添加 **assignedlabels** 属性。此属性表示与组关联的敏感度标签对 (标签 ID、标签名称) 的列表。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
@@ -2228,8 +2228,8 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | v1.0 |  为 Azure AD 引入了新的 **审核日志 API**，通过 [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-1.0) 对目录管理任务提供活动日志，通过 [signIns](/graph/api/resources/signIns?view=graph-rest-1.0) 提供登录活动。。|
-| 加 | beta 版 | 为 **访问评审** API 添加了新的应用程序权限：AccessReview.Read.All、ProgramControl.Read.All 和 ProgramControl.ReadWrite.All。 有关详细信息，请参阅[访问评审 API 参考](/graph/api/resources/accessreviews-root?view=graph-rest-beta)。 |
-| 加 | beta 版 | 对 [用户](/graph/api/resources/user?view=graph-rest-beta)资源添加 **signInSessionsValidFromDateTime** 属性。 这是 **refreshTokensValidFromDateTime** 属性的重命名，但两个属性将均受支持，以使客户端顺畅迁移。 将在接下来的几个月中删除 **refreshTokensValidFromDateTime** 属性。|
+| 加 | beta 版 | 为 accessReview.Read.All、ProgramControl.Read.All 和 ProgramControl.ReadWrite.All 的 **访问评审** API 添加了新的应用程序权限。有关详细信息，请参阅 [访问评审 API 参考](/graph/api/resources/accessreviews-root?view=graph-rest-beta)。 |
+| 添加项 | beta 版 | 对 [用户](/graph/api/resources/user?view=graph-rest-beta)资源添加 **signInSessionsValidFromDateTime** 属性。 这是 **refreshTokensValidFromDateTime** 属性的重命名，但两个属性将均受支持，以使客户端顺畅迁移。 将在接下来的几个月中删除 **refreshTokensValidFromDateTime** 属性。|
 | 加 | beta 版 | 对 [用户](/graph/api/resources/user?view=graph-rest-beta)资源添加 **revokeSignInSessions** 操作。 这是 **invalidateAllRefreshTokens** 属性的重命名，但两项服务操作将均受支持，以使客户端顺畅迁移。 将在接下来的几个月中删除旧的服务操作 **invalidateAllRefreshTokens**。 |
 | 添加项 | Beta 版本 |引入了新的资源类型[trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta)以支持[Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview)。 此资源类型支持[创建](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta)、[列表](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)、[获取](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta)、[更新](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta)和[删除](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta)操作。|
 
@@ -2499,9 +2499,9 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-|添加项 |v1.0| 添加了新实体 [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-1.0)。 这表示可用于跟踪目的的提交数据策略操作。
-|添加项 |v1.0| 在 [users](/graph/api/resources/users?view=graph-rest-1.0) 上添加了 [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0) 操作。 此操作将提交数据策略操作请求，以导出由 Microsoft 为用户存储的个人数据。 |
-|添加 |v1.0| 添加了方法 [dataPolicyOperations](/graph/api/datapolicyoperation-get?view=graph-rest-1.0)。 该方法将检索 dataPolicyOperation 对象的属性。|
+|添加项 |v1.0| 添加了 [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-1.0) 的新实体。这表示用于跟踪目的的已提交数据策略操作。
+|添加项 |v1.0| 向 [用户](/graph/api/resources/users?view=graph-rest-1.0) 添加 [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0) 操作。此操作提交数据策略操作请求，以导出 Microsoft 为用户存储的个人数据。 |
+|添加项 |v1.0| 添加了 [dataPolicyOperations](/graph/api/datapolicyoperation-get?view=graph-rest-1.0) 方法。这将检索 dataPolicyOperation 对象的属性。|
 
 ### <a name="identity-and-access"></a>身份和访问
 
@@ -2511,7 +2511,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 加 | beta 版 | 添加了新资源类型 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)。|
 | 添加项 | beta 版 | 向 [organization](/graph/api/resources/organization?view=graph-rest-beta) 资源添加了 `createdDateTime` 属性。|
 | 添加 | v1.0 | 添加了 `memberOf` 方法以获取[设备的](/graph/api/resources/device?view=graph-rest-1.0)直接[成员身份](/graph/api/device-list-memberOf?view=graph-rest-1.0)。 添加此方法是为了获取成员身份列表，包括嵌套成员身份。|
-| Change    | Beta 版本 | 重新整理了[组织联系人](/graph/api/resources/orgcontact?view=graph-rest-beta)资源。 物理地址属性（`city`、`country`、`postalCode`、`streetAddress` 和 `state`）和 `officeLocation` 现在位于 `addresses` 集合（采用新的 [physicalOfficeAddress](/graph/api/resources/physicalofficeaddress?view=graph-rest-beta) 资源类型），`mobilePhone`、`businessPhones` 和 `faxNumber` 现在位于 `phones` 集合中。 还添加了 `companyName` 和 `imAddresses`|
+| Change    | Beta 版本 | 重构了 [组织联系人](/graph/api/resources/orgcontact?view=graph-rest-beta) 资源。物理地址属性 (`city`、`country`、`postalCode`、`streetAddress` 和 `state`) 和现在位于 `addresses` 集合中的 `officeLocation` (新 [physicalOfficeAddress](/graph/api/resources/physicalofficeaddress?view=graph-rest-beta) 资源类型)，以及 `mobilePhone`、`businessPhones` 和现在位于`phones` 集合中的 `faxNumber`。还添加了 `companyName` 和 `imAddresses`|
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 
@@ -3020,7 +3020,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| “更改”          | Beta 版本        | [application](/graph/api/resources/application?view=graph-rest-beta) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) API 将在预览版 (beta) 中得到更新。 第一个更改集将于 2018 年 7 月 16 日应用。 这些更改包括属性重命名和重构。 在更改完成后，大部分现有属性才可用。 将会添加新属性。 这些更改在发布到 v1.0 之前将先在预览版 (beta) 中发布。 |
+| “更改”          | Beta 版本        | [应用程序](/graph/api/resources/application?view=graph-rest-beta) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) API 将在预览版 (beta 版) 中更新。第一组更改将于 2018 年 7 月 16 日应用。更改包括属性重命名和重构。在完成更改之前，大多数现有属性将不可用。将添加新属性。这些更改将在发布到 v1.0 之前以预览版 (beta 版) 的形式发布。 |
 
 ### <a name="applications"></a>应用程序
 
@@ -3140,8 +3140,8 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 加 | beta 版 | 添加了 [governanceSubject](/graph/api/resources/governancesubject?view=graph-rest-beta) 实体。|
 | 加 | beta 版 | 添加了 [governanceRoleDefinition](/graph/api/resources/governanceroledefinition?view=graph-rest-beta) 实体及以下方法和操作：<br> [List](/graph/api/governanceroledefinition-list?view=graph-rest-beta) <br> [Get](/graph/api/governanceroledefinition-get?view=graph-rest-beta) |
 | 加 | beta 版 | 添加了 [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta) 实体及以下方法和操作：<br> [List](/graph/api/governanceroleassignment-list?view=graph-rest-beta) <br> [Get](/graph/api/governanceroleassignment-get?view=graph-rest-beta) <br> [Export](/graph/api/governanceroleassignment-export?view=graph-rest-beta) |
-| 加 | beta 版 | 添加了 [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta) 实体及以下方法和操作：<br> [List](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta) <br> [获取](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta) <br> [Create](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta) <br> [Cancel](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta) <br> [Update](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta) |
-| 加 | beta 版 | 添加了 [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta) 实体及以下方法和操作：<br> [List](/graph/api/governancerolesetting-list?view=graph-rest-beta) <br> [获取](/graph/api/governancerolesetting-get?view=graph-rest-beta) <br> [更新](/graph/api/governancerolesetting-update?view=graph-rest-beta) |
+| 加 | beta 版 | 添加了 [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta) 实体及以下方法和操作：<br> [List](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta) <br> [Get](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta) <br> [Create](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta) <br> [Cancel](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta) <br> [Update](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta) |
+| 加 | beta 版 | 添加了 [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta) 实体及以下方法和操作：<br> [List](/graph/api/governancerolesetting-list?view=graph-rest-beta) <br> [Get](/graph/api/governancerolesetting-get?view=graph-rest-beta) <br> [更新](/graph/api/governancerolesetting-update?view=graph-rest-beta) |
 | 加 | beta 版 | 添加了以下复杂类型： <br> [governancePermission](/graph/api/resources/governancepermission?view=graph-rest-beta) <br> [governanceRoleAssignmentRequestStatus](/graph/api/resources/governanceroleassignmentrequeststatus?view=graph-rest-beta) <br> [governanceRuleSetting](/graph/api/resources/governancerulesetting?view=graph-rest-beta) <br> [governanceSchedule](/graph/api/resources/governanceschedule?view=graph-rest-beta)|
 
 ### <a name="security"></a>安全性
@@ -3520,8 +3520,8 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | beta 版        | 添加了新实体 [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta)。 这表示可用于跟踪目的的提交数据策略操作。
-| 添加项        | beta 版        | 在 [users](/graph/api/resources/users?view=graph-rest-beta) 上添加了 [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) 操作。 此操作将提交数据策略操作请求，以导出由 Microsoft 为用户存储的个人数据。 |
+| 添加项        | beta 版        | 添加了 [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta) 的新实体。这表示用于跟踪目的的已提交数据策略操作。
+| 添加项        | beta 版        | 向 [用户](/graph/api/resources/users?view=graph-rest-beta) 添加 [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) 操作。此操作提交数据策略操作请求，以导出 Microsoft 为用户存储的个人数据。 |
 
 ### <a name="identity-and-access"></a>身份和访问
 
@@ -4794,7 +4794,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta 版本        | 使用[架构扩展](extensibility-overview.md#schema-extensions)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>message<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](extensibility-schema-groups.md) |
+| 添加项        | Beta 版本        | 使用[架构扩展](extensibility-overview.md#schema-extensions)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>消息<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](extensibility-schema-groups.md) |
 | 添加项        | Beta 版本        | 提供另一种不需要验证的 .com 虚域就能创建架构扩展定义的方法。有关详细信息，请参阅[架构扩展](extensibility-overview.md#schema-extensions)。 |
 
 ### <a name="extensions--open-extensions"></a>扩展 | 开放扩展

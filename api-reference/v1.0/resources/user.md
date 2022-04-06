@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: a21cfb34d99142f88eb8651e6df241677844765c
-ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
+ms.openlocfilehash: 55402defbc9ebc8a4c077838b8fcece7d4d16fd8
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64646534"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509341"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -189,7 +189,7 @@ ms.locfileid: "64646534"
 |onPremisesLastSyncDateTime|DateTimeOffset|指示对象最后一次与本地目录同步的时间。例如：`2013-02-16T03:04:54Z`。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`）。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `not`、 `ge`、 `le`）。|
 |onPremisesSamAccountName|String| 包含从本地目录同步的本地 `samAccountName`。仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|onPremisesSecurityIdentifier|String|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。<br><br>仅在 `$select` 上返回。  支持 `$filter` (`eq` 包括值 `null`) 。 |
+|onPremisesSecurityIdentifier|String|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。<br><br>仅在 `$select` 时返回。仅在值为 `null` 时支持 `$filter`（`eq`）。 |
 |onPremisesSyncEnabled|Boolean| 如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步（默认），则为 `null`。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。|
 |onPremisesUserPrincipalName|String| 包含从本地目录同步的本地 `userPrincipalName`。仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 |otherMails|字符串集合| 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。 <br>注意：此属性不能包含突出字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。|

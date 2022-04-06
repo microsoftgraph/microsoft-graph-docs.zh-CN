@@ -4,13 +4,13 @@ description: 更新给定角色设置的角色设置。 将返回 privilegedRole
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 1de55aca6e8a43fd594a616c14deb38747a3a83d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: d4a21eb18d8cfa6e6b3616840b66cd2e2ec01c2f
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671333"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509943"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 
@@ -19,7 +19,7 @@ ms.locfileid: "63671333"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新给定角色设置的角色设置。 将 [返回 privilegedRoleSettings](../resources/privilegedrolesettings.md) 对象。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "63671333"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,14 +51,14 @@ PUT /privilegedRoles/{id}/settings
 |:---------------|:--------|:----------|
 |elevationDuration|duration|角色激活的持续时间。 必需。|
 |id|string|角色设置的唯一标识符。 只读。 必需。|
-|isMfaOnElevationConfigurable|boolean|**如果** mfaOnElevation 可配置，则其为 true。 **如果** mfaOnElevation 不可配置，则其为 false。 必需。|
+|isMfaOnElevationConfigurable|boolean|**如果** mfaOnElevation 可配置，则其为 true。 **如果** mfaOnElevation 不可配置，则其为 false。 必需项。|
 |lastGlobalAdmin|Boolean|仅供内部使用。|
-|maxEationDuration|duration|已激活角色的最长持续时间。 必需。|
-|mfaOnElevation|布尔值|**如果** 激活角色需要 MFA，则其为 true。 **如果** 不需要 MFA 即可激活角色，则其为 false。 必需。|
-|minElevationDuration|duration|已激活角色的最短持续时间。 必需。|
-|notificationToUserOnElevation|布尔值|**如果** 激活角色时向最终用户发送通知，则其为 true。 **假** 如果角色激活时不发送通知。 必需。|
-|ticketingInfoOnElevation|Boolean|**如果** 激活角色时需要票证信息，则其为 true。 **如果** 激活角色时不需要票证信息，则其为 false。 必需。|
-|approvalOnElevation|布尔值|**如果** 激活角色时需要审批，则其为 true。 **如果** 激活角色时不需要审批，则其为 false。 必需。|
+|maxEationDuration|duration|已激活角色的最长持续时间。 必需项。|
+|mfaOnElevation|Boolean|**如果** 激活角色需要 MFA，则其为 true。 **如果** 不需要 MFA 即可激活角色，则其为 false。 必需项。|
+|minElevationDuration|duration|已激活角色的最短持续时间。 必需项。|
+|notificationToUserOnElevation|Boolean|**如果** 激活角色时向最终用户发送通知，则其为 true。 **假** 如果角色激活时不发送通知。 必需项。|
+|ticketingInfoOnElevation|Boolean|**如果** 激活角色时需要票证信息，则其为 true。 **如果** 激活角色时不需要票证信息，则其为 false。 必需项。|
+|approvalOnElevation|Boolean|**如果** 激活角色时需要审批，则其为 true。 **如果** 激活角色时不需要审批，则其为 false。 必需项。|
 |approverIds|字符串集合|审批 ID 列表（如果需要审批才能激活）。|
 
 ## <a name="response"></a>响应

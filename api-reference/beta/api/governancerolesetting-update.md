@@ -4,13 +4,13 @@ description: 更新 governanceRoleSetting 的属性。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: d92382a056ec666480508c7afb94d0006b527cb6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 5638532dd97fec4e19cfb19d1b1bf3f19c481f19
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108810"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510443"
 ---
 # <a name="update-governancerolesetting"></a>更新 governanceRoleSetting
 
@@ -18,14 +18,14 @@ ms.locfileid: "62108810"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 更新 [governanceRoleSetting 的属性](../resources/governancerolesetting.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
->**注意：** 此 API 还要求请求者至少具有一个角色分配 (`Active` `owner` 或) `user access administrator` 管理员。
+>**注意：** 此 API 还要求请求 `Active` `owner` `user access administrator` 者至少具有一个角色分配 (或) 管理员。
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
@@ -71,7 +71,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [需要更新的 governanceRuleSettings](../resources/governancerulesetting.md) 的值。 
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加符合条件的规则时评估的规则角色分配。|
 |adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加直接成员角色时评估的规则角色分配。|
@@ -86,7 +86,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 |错误代码     | 错误消息         | 详细信息             |
 |:--------------| :---------------------|:--------------------|
-| 400 BadRequest| RoleSettingNotFound   | [governanceRoleSetting](../resources/governancerolesetting.md)在系统中不存在。
+| 400 BadRequest| RoleSettingNotFound   | [governanceRoleSetting](../resources/governancerolesetting.md) 在系统中不存在。
 | 400 BadRequest| InvalidRoleSetting    | 请求 [正文中提供的 governanceRuleSettings](../resources/governancerulesetting.md) 值无效。
 
 ## <a name="example"></a>示例 

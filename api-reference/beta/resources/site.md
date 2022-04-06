@@ -5,12 +5,12 @@ title: site 资源类型
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 06649de710e2145dfcd624b15b3fe6a45357f687
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 52d5a66533304d2b7df479e2393a7a4a7cf41974
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721674"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586865"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -46,6 +46,7 @@ ms.locfileid: "63721674"
 | [List columns][]                                  | 获取 /sites/{site-id}/columns                                |
 | [创建列][]                                 | 发布 /sites/{site-id}/columns                               |
 | [列举操作](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
+| [获取网站设置][]                             | GET /sites/{site-id}/settings                               |
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
@@ -68,6 +69,7 @@ ms.locfileid: "63721674"
 [创建 contentType]: ../api/site-post-contenttypes.md
 [List columns]: ../api/site-list-columns.md
 [创建列]: ../api/site-post-columns.md
+[获取网站设置]: ../api/sitesettings-get.md
 
 ## <a name="properties"></a>属性
 
@@ -81,6 +83,7 @@ ms.locfileid: "63721674"
 | **lastModifiedDateTime** | DateTimeOffset     | 上次修改项目的日期和时间。只读。                                       |
 | **name**                 | string             | 项目名称/标题。                                                                  |
 | **根**                 | [根][]           | 如果存在，则表示这是网站集中的根网站。只读。            |
+| **设置**             | [siteSettings]     | 此网站上的设置。 仅在 $select 上返回。 只读。                                |
 | **sharepointIds**        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。                       |
 | **siteCollection**       | [siteCollection][] | 提供有关该网站的网站集的详细信息。仅在根网站上可用。只读。 |
 | **webUrl**               | string (url)       | 在浏览器中显示此项目的 URL。只读。                                          |
@@ -126,6 +129,7 @@ ms.locfileid: "63721674"
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
+[siteSettings]: sitesettings.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 [microsoft.graph.termStore.store]: termstore-store.md
@@ -154,30 +158,32 @@ ms.locfileid: "63721674"
 
 ```json
 {
+  "displayName": "string",
   "id": "string",
   "root": { "@odata.type": "microsoft.graph.root" },
+  "settings": { "@odata.type": "microsoft.graph.sitesettings" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
-  "displayName": "string",
 
   /* relationships */
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
-  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
-  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+
   /* inherited from baseItem */
-  "name": "string",
   "createdDateTime": "datetime",
   "description": "string",
   "eTag": "string",
   "lastModifiedDateTime": "datetime",
+  "name": "string",
   "webUrl": "url"
 }
 ```

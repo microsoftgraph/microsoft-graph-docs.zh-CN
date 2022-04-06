@@ -1,26 +1,26 @@
 ---
 title: Microsoft Teams MSAL2 提供程序
-description: 使用 Teams 选项卡Microsoft Teams MSAL2 提供程序，以方便身份验证Graph Microsoft 访问所有组件。 该提供程序可用于 SSO (单一) 登录。
+description: 使用"Teams"选项卡内的 MSAL2 Microsoft Teams便于身份验证和 Microsoft Graph访问所有组件。 该提供程序可用于 SSO (单一) 登录。
 ms.localizationpriority: medium
-author: simonagren
-ms.openlocfilehash: f46bff605b0980ab71b5ae204e86d90949760117
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+author: sebastienlevert
+ms.openlocfilehash: f4c05862b1a7ad0ffce33b6fa152d47e8e111a63
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862838"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588720"
 ---
 # <a name="microsoft-teams-msal2-provider"></a>Microsoft Teams MSAL2 提供程序
 
-使用"Microsoft Teams"选项卡内的"MSAL2 Microsoft Teams"，以方便身份验证和 Microsoft Graph访问所有组件。 该提供程序可用于 SSO (或) 登录。
+使用 Microsoft Teams 选项卡内的 MSAL2 提供程序Microsoft Teams便于身份验证和 Microsoft Graph访问所有组件。 该提供程序可用于 SSO 登录或 (登录) 登录。
 
 若要了解更多信息，请参阅 [提供程序](./providers.md)。
 
->**提示：** 有关如何使用 Microsoft Teams MSAL2 提供程序创建 Teams 应用程序的详细信息，请参阅使用 SSO 生成 Microsoft Teams [选项卡](../get-started/build-a-microsoft-teams-tab.md)和Microsoft Teams构建 [应用程序选项卡](../get-started/build-a-microsoft-teams-sso-tab.md)。
+>**提示：** 有关如何使用 Microsoft Teams MSAL2 提供程序创建 Teams 应用程序的详细信息，请参阅使用 SSO 生成 Microsoft Teams 选项卡Microsoft Teams生成 [应用程序选项卡](../get-started/build-a-microsoft-teams-sso-tab.md)。[](../get-started/build-a-microsoft-teams-tab.md)
 
 
-### <a name="difference-between-teams-provider-and-teams-msal2-provider"></a>MSAL2 Teams提供程序Teams之间的差异
-与 Teams 提供程序不同，Teams MSAL2 提供程序支持单一登录 (SSO) 并且构建于[msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)上，用于客户端身份验证。 [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)使用 PKCE 实现 OAuth 2.0 [Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow)代码。 由于授权Flow被视为比 Web 应用程序的隐式授权Flow安全，因此我们建议使用 Teams MSAL2 提供程序而不是 Teams 提供程序。 有关与隐式授予流相关的安全问题的详细信息，请参阅 [隐式流的缺点](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6)。
+### <a name="difference-between-teams-provider-and-teams-msal2-provider"></a>MSAL2 Teams提供程序Teams的不同之处
+与 Teams 提供程序不同，Teams MSAL2 提供程序支持单一登录 (SSO) 并且构建于 [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) 上，用于客户端身份验证。 [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) 使用 PKCE 实现 OAuth 2.0 [Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow)代码。 由于授权Flow被视为比 Web 应用程序的隐式授权Flow安全，因此我们建议对 Teams 提供程序使用 Teams MSAL2 提供程序。 有关与隐式授予流相关的安全问题的详细信息，请参阅 [隐式流的缺点](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6)。
 
 所有新应用程序应尽可能Teams MSAL2 提供程序。 
 
@@ -29,17 +29,17 @@ ms.locfileid: "61862838"
 提供程序可在交互式客户端身份验证模式或 SSO 模式下使用。 
 
 ### <a name="client-side-authentication"></a>客户端身份验证
-在客户端身份验证 (或交互式) 中，用户首次启动应用时需要进行身份验证。 用户将需要使用登录按钮启动身份验证流程。 可以在客户端上完成此操作，并且不需要后端服务。 
+在客户端身份验证 (或交互式) ，用户首次启动应用时将要求他们进行身份验证。 用户将需要使用登录按钮启动身份验证流程。 可以在客户端上完成此操作，并且不需要后端服务。 
 
 ### <a name="sso-authentication"></a>SSO 身份验证
-为了避免要求用户向应用进行身份验证，Microsoft Teams[选项卡还可使用 SSO](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso)自动对用户进行身份验证。 但是，此过程需要后端服务，该服务用于将Microsoft Teams提供的令牌与可用于访问 Microsoft Graph 的访问令牌交换。
+为了避免要求用户向应用进行身份验证，Microsoft Teams[选项卡还可使用 SSO](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) 自动对用户进行身份验证。 但是，此过程需要后端服务，该服务用于将Microsoft Teams提供的令牌与可用于访问 Microsoft Graph 的访问令牌交换。
 
-Teams MSAL2 提供程序支持 SSO 模式 `ssoUrl`  \  `sso-url` ，当设置为能够交换令牌的后端服务。 后端服务需要公开 API (如) ，它将从 Microsoft Teams 接收身份验证令牌，并使用流交换令牌以交换可以访问 `api/token` Microsoft Graph `on-behalf-of` 的访问令牌。 有关节点后端服务的参考实现，请参阅Microsoft Teams[节点 SSO 示例](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)。
+Teams MSAL2 提供程序支持 SSO 模式，`ssoUrl` \ `sso-url`当设置为能够交换令牌的后端服务。 后端服务需要公开 API `api/token` (如) ，它将从 Microsoft Teams 接收身份验证令牌，`on-behalf-of`并使用流交换令牌，获取可以访问 Microsoft Graph 的访问令牌。 有关节点后端服务的参考实现，请参阅Microsoft Teams[节点 SSO 示例](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)。
 
 ### <a name="initialize-the-provider"></a>初始化提供程序
-使用 MSAL2 Teams之前，请确保在页面中引用[Microsoft Teams SDK。](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk)
+使用 MSAL2 Teams之前，请确保在页面中引用 [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk)。
 
-在主Teams初始化 MSAL2 提供程序。
+在主代码中Teams MSAL2 提供程序。
 
 # <a name="npm"></a>[npm](#tab/ts)
 在 JavaScript Teams MSAL2 提供程序时，请确保同时安装工具包和 Microsoft Teams SDK。
@@ -93,8 +93,8 @@ export interface TeamsMsal2Config {
 
 | 属性 | 说明 |
 | --- | --- |
-| client-id   | 字符串客户端 ID ([配置你的Teams应用](#configure-your-teams-app)。 必需。 |
-| auth-popup-url  | 将在弹出窗口中处理身份验证的页面的绝对路径或相对路径 (创建 [弹出窗口页面](#create-the-popup-page)) 。 必需。 |
+| client-id   | 字符串客户端 ID ([配置你的Teams应用](#configure-your-teams-app)。 必需项。 |
+| auth-popup-url  | 将在弹出窗口中处理身份验证的页面的绝对路径或相对路径 (创建 [弹出窗口页面](#create-the-popup-page)) 。 必需项。 |
 | scopes  | 用户登录时必须同意的范围的逗号分隔字符串。 可选。 |
 | authority    | 颁发机构字符串。 默认值为公共颁发机构。 对于单租户应用，请使用租户 ID 或租户名称。 例如，`https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` 或 `https://login.microsoftonline.com/[your-tenant-id]`。 可选。 |
 | sso-url  | 处理 OBO 令牌交换的后端 API 的绝对路径或相对路径。 可选。 |
@@ -103,7 +103,7 @@ export interface TeamsMsal2Config {
 ---
 ### <a name="create-the-popup-page"></a>创建弹出页
 
-若要使用你的 Teams 凭据登录并处理同意，你需要提供 Teams 应用将在弹出窗口中打开的 URL，这将遵循身份验证流程。 例如，在应用程序中创建新 (，该页面将 https://mydomain.com/auth) 处理身份验证重定向并调用 `TeamsMsal2Provider.handleAuth` 方法。 这是此页面唯一需要执行的事情。 例如: 
+若要使用你的 Teams 凭据登录并处理同意，你需要提供 Teams 应用将在弹出窗口中打开的 URL，这将遵循身份验证流程。 例如，在应用程序中创建新 (， https://mydomain.com/auth) 该页面将处理身份验证重定向并调用 `TeamsMsal2Provider.handleAuth` 方法。 这是此页面唯一需要执行的事情。 例如：
 
 # <a name="npm"></a>[npm](#tab/ts)
 
@@ -129,29 +129,29 @@ TeamsMsal2Provider.handleAuth();
 
 ## <a name="configure-your-teams-app"></a>配置 Teams 应用
 
-如果你刚开始使用应用Teams，请参阅向应用Microsoft Teams[选项卡](/microsoftteams/platform/concepts/tabs/tabs-overview)。 您还可以使用 [App Studio](/microsoftteams/platform/get-started/get-started-app-studio) 开发应用清单。
+如果你刚开始使用应用Teams，请参阅[将选项卡添加到Microsoft Teams应用中](/microsoftteams/platform/concepts/tabs/tabs-overview)。 您还可以使用 [App Studio](/microsoftteams/platform/get-started/get-started-app-studio) 开发应用清单。
 
 ### <a name="creating-an-appclient-id"></a>创建应用/客户端 ID
 
-若要详细了解如何注册应用并获取交互式身份验证的客户端 ID，请参阅创建Azure Active Directory[应用](../get-started/add-aad-app-registration.md)。
+若要详细了解如何注册应用和获取交互式身份验证的客户端 ID，请参阅创建Azure Active Directory[应用](../get-started/add-aad-app-registration.md)。
 
 
 若要详细了解如何注册应用并获取 SSO 的客户端 ID 和密码，请参阅使用单一登录Microsoft Teams[生成客户端 ID 和密码](../get-started/build-a-microsoft-teams-sso-tab.md)。
 
 ## <a name="migrating-from-teams-provider-to-teams-msal2-provider"></a>从 Teams 提供程序迁移到Teams MSAL2 提供程序
 若要将使用 Teams 提供程序的应用程序迁移到 TEAMS MSAL2 提供程序：
-1. 转到 Azure 门户，位于 https://portal.azure.com 。
-1. 从菜单中，选择 **"Azure Active Directory"。**
-1. 从"Azure Active Directory"菜单中，选择 **"应用注册"。**
+1. 转到 上Azure 门户。https://portal.azure.com
+1. 从菜单中，选择"Azure Active Directory **"**。
+1. 从"Azure Active Directory"菜单中，选择"应用注册 **"**。
 1. 选择当前使用的应用的应用注册。 
-1. 在左侧菜单上， **转到身份验证**。
-1. 在 **"平台配置"** 下，**选择"添加平台**"，然后选择 **"单页应用程序"。**
-1. 删除当前在 **Web** 下注册的所有重定向 URI，并改为将它们添加到 **单页应用程序 下**。
+1. 在左侧菜单上，转到"身份验证 **"**。
+1. 在 **"平台配置**"下 **，选择"添加平台"** ，然后选择 **"单页应用程序"**。
+1. 删除当前在 **Web** 下注册的所有重定向 URI，并改为将它们添加到 **单页应用程序下**。
 1. 在你的代码中，将 TeamsProvider 替换为Teams MSAL2 提供程序。
 
     如果要在 JS/TS 代码中初始化提供程序，请按照以下步骤操作：
     
-    将 的 import 语句 ```mgt-teams-provider``` 替换为 
+    将 的 import 语句替换为```mgt-teams-provider``` 
     ```ts 
     import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
     ```
@@ -171,4 +171,4 @@ TeamsMsal2Provider.handleAuth();
 ## <a name="see-also"></a>另请参阅
 * [Microsoft Teams节点 SSO 示例](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
 * [构建 Microsoft Teams 选项卡](../get-started/build-a-microsoft-teams-tab.md)
-* [使用 SSO Microsoft Teams"选项卡](../get-started/build-a-microsoft-teams-sso-tab.md)
+* [使用 SSO Microsoft Teams选项卡](../get-started/build-a-microsoft-teams-sso-tab.md)

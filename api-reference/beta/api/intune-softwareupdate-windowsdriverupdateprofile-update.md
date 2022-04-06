@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c01e3fc62d9b68a77ed2f430ed994d59bb14e93
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 58b4b986183f4ac5247103a8d214e7c488811cc2
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338622"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629489"
 ---
 # <a name="update-windowsdriverupdateprofile"></a>更新 windowsDriverUpdateProfile
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,9 +53,9 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Intune 策略 ID。|
+|id|String|策略Intune ID。|
 |displayName|String|配置文件显示名称的配置文件。|
-|说明|String|由用户指定的配置文件的说明。|
+|description|String|由用户指定的配置文件的说明。|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|驱动程序更新配置文件审批类型。 例如，手动或自动审批。 可取值为：`manual`、`automatic`。|
 |deviceReporting|Int32|此配置文件的报告设备数|
 |newUpdates|Int32|可用于此配置文件的新驱动程序更新数。|
@@ -63,11 +63,12 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
 |roleScopeTagIds|字符串集合|此驱动程序更新实体的范围标记列表。|
+|inventorySyncStatus|[windowsDriverUpdateProfileInventorySyncStatus](../resources/intune-softwareupdate-windowsdriverupdateprofileinventorysyncstatus.md)|此配置文件的驱动程序清单同步状态。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新 `200 OK` 的 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -76,7 +77,7 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 Content-type: application/json
-Content-length: 322
+Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
@@ -88,7 +89,12 @@ Content-length: 322
   "deploymentDeferralInDays": 8,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "inventorySyncStatus": {
+    "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+    "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+    "driverInventorySyncState": "success"
+  }
 }
 ```
 
@@ -97,7 +103,7 @@ Content-length: 322
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 494
+Content-Length: 727
 
 {
   "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
@@ -112,7 +118,12 @@ Content-Length: 494
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "inventorySyncStatus": {
+    "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+    "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+    "driverInventorySyncState": "success"
+  }
 }
 ```
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: be5327218209d0a0711cc20461e532fdf892c597
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 347b211572ce4a4739f43cdf2f32d1edd27cadfa
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106514"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671242"
 ---
 # <a name="list-contracts"></a>列出合同
 
@@ -27,7 +27,7 @@ ms.locfileid: "62106514"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -56,7 +56,7 @@ GET /contracts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [Contract](../resources/contract.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [Contract](../resources/contract.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

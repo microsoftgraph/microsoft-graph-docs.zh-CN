@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aeb0d9cc3c4251b68876dc99e6ae56b500d50249
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 9f7a3e34188c892af5a759f2f7c9bc43a6acca87
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343039"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671949"
 ---
 # <a name="orgcontact-delta"></a>orgContact： delta
 
@@ -27,7 +27,7 @@ ms.locfileid: "62343039"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。  |
 |应用程序 | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 
