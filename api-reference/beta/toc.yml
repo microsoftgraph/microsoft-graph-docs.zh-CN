@@ -424,7 +424,7 @@ items:
                     href: api/insights-list-used.md
               - name: '组织控件 (预览) '
                 items:
-                  - name: Insights设置
+                  - name: 见解设置
                     href: resources/insightssettings.md
                   - name: 列出
                     href: api/organizationsettings-list-iteminsights.md
@@ -520,7 +520,7 @@ items:
                 href: api/user-list-people.md
               - name: '用于人员见解和预览 (组织) '
                 items:
-                  - name: Insights设置
+                  - name: 见解设置
                     href: resources/insightssettings.md
                   - name: 列出
                     href: api/organizationsettings-list-peopleinsights.md
@@ -2106,7 +2106,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -3047,7 +3047,7 @@ items:
                     href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
                   - name: Office 配置组分配目标
                     href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
-                  - name: Office产品 ID
+                  - name: Office 产品 ID
                     href: resources/intune-apps-officeproductid.md
                   - name: Office 套件应用
                     href: resources/intune-apps-officesuiteapp.md
@@ -3690,8 +3690,6 @@ items:
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
                       - name: unassignResourceAccountFromDevice 操作
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
-                  - name: Windows autopilot 设备修正状态
-                    href: resources/intune-enrollment-windowsautopilotdeviceremediationstate.md
                   - name: Windows Autopilot 设备类型
                     href: resources/intune-enrollment-windowsautopilotdevicetype.md
                   - name: Windows Autopilot 配置文件分配详细状态
@@ -4488,6 +4486,19 @@ items:
                         href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-update.md
+                  - name: Aosp 设备所有者企业Wi-Fi配置
+                    href: resources/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-get.md
+                      - name: 创建
+                        href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-create.md
+                      - name: 删除
+                        href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-delete.md
+                      - name: 更新
+                        href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-update.md
                   - name: Aosp 设备所有者 PKCS 证书配置文件
                     href: resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md
                     items:
@@ -4501,6 +4512,19 @@ items:
                         href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-update.md
+                  - name: Aosp 设备所有者 SCEP 证书配置文件
+                    href: resources/intune-deviceconfig-aospdeviceownerscepcertificateprofile.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-get.md
+                      - name: 创建
+                        href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-create.md
+                      - name: 删除
+                        href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-delete.md
+                      - name: 更新
+                        href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-update.md
                   - name: Aosp 设备所有者信任的根证书
                     href: resources/intune-deviceconfig-aospdeviceownertrustedrootcertificate.md
                     items:
@@ -4514,6 +4538,21 @@ items:
                         href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-update.md
+                  - name: Aosp 设备所有者Wi-Fi配置
+                    href: resources/intune-deviceconfig-aospdeviceownerwificonfiguration.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-get.md
+                      - name: 创建
+                        href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-create.md
+                      - name: 删除
+                        href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-delete.md
+                      - name: 更新
+                        href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-update.md
+                  - name: Aosp 设备所有者Wi-Fi安全类型
+                    href: resources/intune-deviceconfig-aospdeviceownerwifisecuritytype.md
                   - name: 应用安装控件类型
                     href: resources/intune-deviceconfig-appinstallcontroltype.md
                   - name: 应用列表项
@@ -5843,6 +5882,8 @@ items:
                     href: resources/intune-deviceconfig-keyvaluepair.md
                   - name: 展台模式托管主屏幕 PIN 复杂性
                     href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
+                  - name: 展台模式类型
+                    href: resources/intune-deviceconfig-kioskmodetype.md
                   - name: LAN Manager 身份验证级别
                     href: resources/intune-deviceconfig-lanmanagerauthenticationlevel.md
                   - name: 本地安全选项管理员提升提示行为类型
@@ -6905,7 +6946,7 @@ items:
                         href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-update.md
                   - name: Windows 传递优化模式
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
-                  - name: Windows边缘展台类型
+                  - name: Windows Edge 展台类型
                     href: resources/intune-deviceconfig-windowsedgekiosktype.md
                   - name: Windows 防火墙网络配置文件
                     href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
@@ -6974,7 +7015,7 @@ items:
                         href: api/intune-deviceconfig-windowskioskconfiguration-update.md
                   - name: Windows Kiosk 桌面应用
                     href: resources/intune-deviceconfig-windowskioskdesktopapp.md
-                  - name: Windows展台强制更新计划
+                  - name: Windows 展台强制更新计划
                     href: resources/intune-deviceconfig-windowskioskforceupdateschedule.md
                   - name: Windows Kiosk 本地组
                     href: resources/intune-deviceconfig-windowskiosklocalgroup.md
@@ -6986,7 +7027,7 @@ items:
                     href: resources/intune-deviceconfig-windowskioskprofile.md
                   - name: Windows Kiosk 单个 UWP 应用
                     href: resources/intune-deviceconfig-windowskiosksingleuwpapp.md
-                  - name: Windows展台单一 win32 应用
+                  - name: Windows Kiosk Single win32 应用
                     href: resources/intune-deviceconfig-windowskiosksinglewin32app.md
                   - name: Windows Kiosk 用户
                     href: resources/intune-deviceconfig-windowskioskuser.md
@@ -6994,7 +7035,7 @@ items:
                     href: resources/intune-deviceconfig-windowskioskuwpapp.md
                   - name: Windows Kiosk 访问者
                     href: resources/intune-deviceconfig-windowskioskvisitor.md
-                  - name: Windows展台 win32 应用
+                  - name: Windows Kiosk win32 应用
                     href: resources/intune-deviceconfig-windowskioskwin32app.md
                   - name: Windows 网络隔离策略
                     href: resources/intune-deviceconfig-windowsnetworkisolationpolicy.md
@@ -7202,6 +7243,23 @@ items:
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-update.md
+                  - name: Windows 有线网络配置
+                    href: resources/intune-deviceconfig-windowswirednetworkconfiguration.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-windowswirednetworkconfiguration-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-windowswirednetworkconfiguration-get.md
+                      - name: 创建
+                        href: api/intune-deviceconfig-windowswirednetworkconfiguration-create.md
+                      - name: 删除
+                        href: api/intune-deviceconfig-windowswirednetworkconfiguration-delete.md
+                      - name: 更新
+                        href: api/intune-deviceconfig-windowswirednetworkconfiguration-update.md
+                  - name: 有线网络身份验证方法
+                    href: resources/intune-deviceconfig-wirednetworkauthenticationmethod.md
+                  - name: 有线网络身份验证类型
+                    href: resources/intune-deviceconfig-wirednetworkauthenticationtype.md
                   - name: 有线网络接口
                     href: resources/intune-deviceconfig-wirednetworkinterface.md
               - name: 设备管理
@@ -8298,6 +8356,17 @@ items:
                         href: api/intune-deviceintent-securitybaselinetemplate-update.md
                   - name: 共享 Apple 设备用户
                     href: resources/intune-devices-sharedappledeviceuser.md
+                  - name: 租户附加 r b a c
+                    href: resources/intune-devices-tenantattachrbac.md
+                    items:
+                      - name: 获取
+                        href: api/intune-devices-tenantattachrbac-get.md
+                      - name: 更新
+                        href: api/intune-devices-tenantattachrbac-update.md
+                      - name: 启用操作
+                        href: api/intune-devices-tenantattachrbac-enable.md
+                  - name: 租户附加 r b a c 状态
+                    href: resources/intune-devices-tenantattachrbacstate.md
                   - name: Tuple_2操作type_collection_1执行顺序
                     href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                   - name: 更新 Windows 设备帐户操作参数
@@ -8861,7 +8930,7 @@ items:
                     href: resources/intune-devices-windowsmalwareoverview.md
                   - name: Windows 恶意软件严重性
                     href: resources/intune-devices-windowsmalwareseverity.md
-                  - name: Windows恶意软件严重性计数
+                  - name: Windows 恶意软件严重性计数
                     href: resources/intune-devices-windowsmalwareseveritycount.md
                   - name: Windows 恶意软件状态
                     href: resources/intune-devices-windowsmalwarestate.md
@@ -9126,7 +9195,7 @@ items:
                         href: api/intune-mam-targetedmanagedappprotection-assign.md
                       - name: targetApps 操作
                         href: api/intune-mam-targetedmanagedappprotection-targetapps.md
-                  - name: Windows应用标识符
+                  - name: Windows 应用标识符
                     href: resources/intune-mam-windowsappidentifier.md
                   - name: Windows 信息保护
                     href: resources/intune-mam-windowsinformationprotection.md
@@ -9497,7 +9566,7 @@ items:
                   - name: Windows Hello 企业版 PIN 使用情况
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: 基于角色的访问控制 (RBAC)
-                href: resources/intune-rbac-conceptual.md
+                href: /resources/intune-rbac-conceptual.md
                 items:
                   - name: 设备和应用管理分配的角色详情
                     href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -10052,7 +10121,7 @@ items:
                         href: api/intune-shared-windowsdomainjoinconfiguration-update.md
                   - name: Windows Universal AppX 应用分配设置
                     href: resources/intune-shared-windowsuniversalappxappassignmentsettings.md
-                  - name: Windows更新状态
+                  - name: Windows 更新状态
                     href: resources/intune-shared-windowsupdatestate.md
                     items:
                       - name: 列表
@@ -10278,14 +10347,14 @@ items:
                     href: api/windowsupdates-updatableasset-get.md
                   - name: 删除可更新资源
                     href: api/windowsupdates-updatableasset-delete.md
-                  - name: Azure AD设备
+                  - name: Azure AD 设备
                     href: resources/windowsupdates-azureaddevice.md
                     items:
-                      - name: 列出Azure AD设备
+                      - name: 列出 Azure AD 设备
                         href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
-                      - name: 获取Azure AD设备
+                      - name: 获取 Azure AD 设备
                         href: api/windowsupdates-azureaddevice-get.md
-                      - name: 删除Azure AD设备
+                      - name: 删除 Azure AD 设备
                         href: api/windowsupdates-azureaddevice-delete.md
                       - name: 注册更新管理
                         href: api/windowsupdates-updatableasset-enrollassets.md
@@ -10476,16 +10545,16 @@ items:
               - name: Windows 设备恶意软件状态
                 href: resources/managedtenants-windowsdevicemalwarestate.md
                 items:
-                  - name: 列出Windows恶意软件状态
+                  - name: 列出 Windows 设备恶意软件状态
                     href: api/managedtenants-managedtenant-list-windowsdevicemalwarestates.md
-                  - name: 获取Windows恶意软件状态
+                  - name: 获取 Windows 设备恶意软件状态
                     href: api/managedtenants-windowsdevicemalwarestate-get.md
               - name: Windows 保护状态
                 href: resources/managedtenants-windowsprotectionstate.md
                 items:
-                  - name: 列出Windows保护状态
+                  - name: 列出 Windows 保护状态
                     href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
-                  - name: 获取Windows保护状态
+                  - name: 获取 Windows 保护状态
                     href: api/managedtenants-windowsprotectionstate-get.md
           - name: 服务运行状况和通信
             items:
@@ -10500,7 +10569,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: 获取服务运行状况
                     href: api/servicehealth-get.md
-              - name: 服务运行状况问题
+              - name: Estado de funcionamento dos serviços问题
                 href: resources/servicehealthissue.md
                 items:
                   - name: 列出问题
@@ -11460,7 +11529,7 @@ items:
                         href: api/microsoftapplicationdataaccesssettings-update.md
                   - name: '项目见解组织控件 (预览) '
                     items:
-                      - name: Insights设置
+                      - name: 见解设置
                         href: resources/insightssettings.md
                       - name: 列出
                         href: api/organizationsettings-list-iteminsights.md
@@ -11468,7 +11537,7 @@ items:
                         href: api/insightssettings-update.md
                   - name: '用于人员见解和预览 (组织) '
                     items:
-                      - name: Insights设置
+                      - name: 见解设置
                         href: resources/insightssettings.md
                       - name: 列出
                         href: api/organizationsettings-list-peopleinsights.md
@@ -11747,7 +11816,7 @@ items:
                         href: api/softwareOathAuthenticationMethod-get.md
                       - name: 删除
                         href: api/softwareOathAuthenticationMethod-delete.md
-                  - name: 'Microsoft Authenticator密码电话 Sign-In (已弃用) '
+                  - name: 'Microsoft Authenticator 无密码Sign-In (已弃用) '
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: 列表
@@ -12013,7 +12082,7 @@ items:
                         href: resources/socialidentityprovider.md
                       - name: Apple 标识提供程序类型
                         href: resources/applemanagedidentityprovider.md
-                      - name: OpenID 连接标识提供程序类型
+                      - name: OpenID Connect 标识提供程序类型
                         href: resources/openidconnectidentityprovider.md
                       - name: 列出可用的标识提供程序
                         href: api/identityproviderbase-availableprovidertypes.md
@@ -12049,7 +12118,7 @@ items:
                 items:
                   - name: 标识提供程序类型
                     href: resources/identityprovider.md
-                  - name: OpenID 连接标识提供程序类型
+                  - name: OpenID Connect 标识提供程序类型
                     href: resources/openidconnectprovider.md
                   - name: 列出
                     href: api/identityprovider-list.md
@@ -12201,7 +12270,7 @@ items:
                             href: api/x509certificateauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/x509certificateauthenticationmethodconfiguration-delete.md
-                      - name: Microsoft Authenticator策略
+                      - name: Microsoft Authenticator 策略
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -12210,7 +12279,7 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                      - name: 'Microsoft Authenticator密码电话已弃 (登录策略) '
+                      - name: 'Microsoft Authenticator 无密码电话登录策略 (已弃) '
                         href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -12403,11 +12472,11 @@ items:
                     href: api/trustframeworkkeyset-generatekey.md
                   - name: 获取活动密钥
                     href: api/trustframeworkkeyset-getactivekey.md
-                  - name: Upload证书
+                  - name: 上载证书
                     href: api/trustframeworkkeyset-uploadcertificate.md
-                  - name: Upload PKCS12 证书
+                  - name: 上载 PKCS12 证书
                     href: api/trustframeworkkeyset-uploadpkcs12.md
-                  - name: Upload密码
+                  - name: 上传密码
                     href: api/trustframeworkkeyset-uploadsecret.md
               - name: 信任框架策略
                 href: resources/trustframeworkpolicy.md
@@ -12564,7 +12633,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: 更新
                         href: api/identityapiconnector-update.md
-                      - name: Upload客户端证书
+                      - name: 上载客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
@@ -12946,7 +13015,7 @@ items:
                 items:
                   - name: Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
-                  - name: 'Azure AD (弃用) '
+                  - name: 'Azure AD (已弃) '
                     items:
                       - name: Azure AD
                         href: resources/privilegedidentitymanagement-directory.md
@@ -13382,7 +13451,7 @@ items:
                 href: api/user-list-people.md
               - name: '用于人员见解和预览 (组织) '
                 items:
-                  - name: Insights设置
+                  - name: 见解设置
                     href: resources/insightssettings.md
                   - name: 列出
                     href: api/organizationsettings-list-peopleinsights.md
@@ -13594,7 +13663,7 @@ items:
                     href: api/workposition-delete.md
               - name: 项目
                 items:
-                  - name: Project参与
+                  - name: 项目参与
                     href: resources/projectparticipation.md
                   - name: 列出
                     href: api/profile-list-projects.md
@@ -13704,7 +13773,7 @@ items:
                     href: api/insights-list-used.md
               - name: '组织控件 (预览) '
                 items:
-                  - name: Insights设置
+                  - name: 见解设置
                     href: resources/insightssettings.md
                   - name: 列出
                     href: api/organizationsettings-list-iteminsights.md
@@ -14009,7 +14078,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: 获取服务用户计数
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Microsoft 365 应用使用情况
+              - name: Microsoft 365 应用版使用情况
                 href: resources/microsoft-365-apps-usage-report.md
                 items:
                   - name: 获取用户详细信息
@@ -14018,7 +14087,7 @@ items:
                     href: api/reportroot-getm365appusercounts.md
                   - name: 获取平台用户计数
                     href: api/reportroot-getm365appplatformusercounts.md
-              - name: Microsoft 365浏览器使用情况
+              - name: Microsoft 365 浏览器使用状况
                 href: resources/microsoft-365-browser-usage-report.md
                 items:
                   - name: 获取用户详细信息
@@ -14344,7 +14413,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列表
                     href: api/simulationautomation-list-runs.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
