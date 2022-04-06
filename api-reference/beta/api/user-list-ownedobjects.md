@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7feaa94be686c0db9a75c39d8a6f7cbf56a95232
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f766da6d559fadd9143a9d33120f427946ba2020
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134979"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630945"
 ---
 # <a name="list-ownedobjects"></a>List ownedObjects
 
@@ -19,12 +19,12 @@ ms.locfileid: "62134979"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户拥有的 directory 对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.Read、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -33,6 +33,7 @@ ms.locfileid: "62134979"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/ownedObjects
 GET /users/{id | userPrincipalName}/ownedObjects
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数

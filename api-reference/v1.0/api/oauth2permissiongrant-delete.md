@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: fab9fa26922d50096e260cfcdd8cea8ad7bc6742
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fe2079beb91c35a758fe45ed0613cfc2ed8253cf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134649"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672299"
 ---
 # <a name="delete-oauth2permissiongrant-a-delegated-permission-grant"></a>删除委派权限授予 (oAuth2PermissionGrant) 
 
@@ -21,7 +21,7 @@ ms.locfileid: "62134649"
 删除委派的权限授予后，将撤消授予该权限的访问权限。 现有访问令牌在生存期内将继续有效，但不会为已删除的 **oAuth2PermissionGrant** 中标识的委派权限授予新的访问令牌。
 
 > [!NOTE]
-> 可能有两个委派权限授予，授权应用程序在调用 API 时代表用户操作。 当用户代表自己同意应用程序时，可能会发生这种情况 (创建具有 **consentType** 主体的 **oAuth2PermissionGrant，** 标识用户) 然后管理员代表所有用户授予租户范围的管理员同意 (创建第二个具有 *AllPrincipals*) **consentType** 的 **oAuth2PermissionGrant。**
+> 可能有两个委派权限授予，授权应用程序在调用 API 时代表用户操作。 如果用户代表自己同意应用程序 (创建具有 **consentType** *主体* 的 **oAuth2PermissionGrant**、标识用户) 然后管理员代表所有用户授予租户范围的管理员许可 (则可能会发生这种情况 (创建具有 *AllPrincipals*) **consentType** 的第二 **个 oAuth2PermissionGrant**。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "62134649"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.ReadWrite.All |
 
@@ -67,7 +67,7 @@ DELETE /oAuth2PermissionGrants/{id}
   "name": "delete_oAuth2PermissionGrant"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
+DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-oauth2permissiongrant-csharp-snippets.md)]

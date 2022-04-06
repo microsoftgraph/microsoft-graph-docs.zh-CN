@@ -1,22 +1,22 @@
 ---
 title: 添加所有者
-description: 将用户或服务主体添加 Microsoft 365 到安全组的所有者。 所有者是一组可修改组对象的用户或服务主体。
+description: 向 Microsoft 365 或安全组的所有者添加用户或服务主体。所有者是一组具有组对象修改权限的用户或服务主体。
 ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6d30d60e0bd0e15b4649cbd2ed298fa863a6fc7a
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: e0966f288264611d21a31e87a68dbb7e56f5c11b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201440"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672726"
 ---
 # <a name="add-owners"></a>添加所有者
 
 命名空间：microsoft.graph
 
-将用户或服务主体添加 Microsoft 365 到安全组的所有者。 所有者是一组可修改组对象的用户或服务主体。
+向 Microsoft 365 或安全组的所有者添加用户或服务主体。所有者是一组具有组对象修改权限的用户或服务主体。
 
 >**重要提示：** 如果更新组所有者并为该组创建团队，则所有者与 Microsoft Team 同步需要最多花费 2 小时。 此外，如果希望所有者能够在团队中进行更改，例如创建 Planner 计划，则还需要将所有者添加为组/团队成员。 
 
@@ -25,7 +25,7 @@ ms.locfileid: "62201440"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Group.ReadWrite.All, Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
 

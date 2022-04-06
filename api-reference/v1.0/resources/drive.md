@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
 title: 驱动器资源类型
+description: 驱动器资源是代表用户的 OneDrive 或在 SharePoint 中文档库的顶级对象。
 ms.localizationpriority: high
 ms.prod: sharepoint
-description: 驱动器资源是代表用户的 OneDrive 或在 SharePoint 中文档库的顶级对象。
 doc_type: resourcePageType
-ms.openlocfilehash: 9449c118ed5ca0ebd158e5555a6ab4f7bef847d2
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: eb7070e357681311cfe0d881940c3047dbac5505
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123956"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63560234"
 ---
 # <a name="drive-resource-type"></a>驱动器资源类型
 
@@ -23,17 +22,16 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 
 ## <a name="methods"></a>方法
 
-|                        常见任务                         |         HTTP 方法         |
-| :--------------------------------------------------------- | :-------------------------- |
-| [获取其他驱动器的驱动器元数据][drive-get]           | `GET /drives/{drive-id}`    |
-| [获取用户默认驱动器的根文件夹][item-get]       | `GET /drive/root`           |
-| [列出驱动器下的子项][item-children]             | `GET /drive/root/children`  |
-| [列出驱动器中所有项的变更][item-changes]    | `GET /drive/root/delta`     |
-| [列出用户的关注 driveItems][drive-following]         | `Get /drive/following`       |
-| [搜索驱动器中的项][item-search]               | `GET /drive/root/search`    |
-| [访问特殊文件夹](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
+|                        方法                              |         返回类型         | 说明 |
+| :--------------------------------------------------------- | :-------------------------- |-------------|
+| [获取驱动器][drive-get]                                     | 驱动器                       | 获取有关驱动器的元数据 |
+| [获取驱动器根][item-get]                                 | [driveItem][]               | 获取驱动器的根文件夹 |
+| [列出关注的项][drive-following]                     | [driveItem][] 集合    | 列出用户的关注 driveItems |
+| [列出子项][item-children]                             | [driveItem][] 集合    | 列出驱动器根文件夹的子项 |
+| [列出变更][item-changes]                               | [driveItem][] 集合    | 列出驱动器中所有 DriveItem 的变更 |
+| [搜索][item-search]                                      | [driveItem][] 集合    | 搜索驱动器中的 DriveItem |
+| [获取特殊文件夹](../api/drive-get-specialfolder.md)    | [driveItem][]               | 通过特殊文件夹的规范名称访问它 |
 
-在上表中，各示例使用的是 `/drive`，但其他路径也同样有效。
 
 ## <a name="properties"></a>属性
 
@@ -61,11 +59,12 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 
 | 关系 | 类型                                 | 说明
 |:-------------|:-------------------------------------|:-----------------------
-| following    | [DriveItem](driveitem.md) 集合 | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
-| items        | [DriveItem](driveitem.md) 集合 | 驱动器中包含的所有项。只读。可为 NULL。
-| root         | [DriveItem](driveitem.md)            | 驱动器的根文件夹。只读。
-| special      | [DriveItem](driveitem.md) 集合 | OneDrive 中可用的公用文件夹集合。只读。可为 NULL。
-| list         | [List](list.md)                      | 适合于 SharePoint 中的驱动器，基本文档库列表。 只读。 可为 Null。
+| 捆绑      | [driveItem][] 集合             | [捆绑][bundle]（相册和多选共享项集）的集合。仅在个人版 OneDrive 中。
+| following    | [driveItem][] 集合             | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
+| items        | [driveItem][] 集合             | 驱动器中包含的所有项。只读。可为 NULL。
+| root         | [driveItem][]                        | 驱动器的根文件夹。只读。
+| special      | [driveItem][] 集合             | OneDrive 中可用的公用文件夹的集合。只读。可为 NULL。
+| list         | [列表][]                             | 对于 SharePoint 中的驱动器，则为基础文档库列表。只读。可为 NULL。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -98,47 +97,55 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 ```json
 {
   "id": "string",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
   "following": [{"@odata.type": "microsoft.graph.driveItem"}],
-  "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "items": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "string (timestamp)",
   "name": "string",
-  "owner": { "@odata.type": "microsoft.graph.identitySet" },
-  "quota": { "@odata.type": "microsoft.graph.quota" },
-  "root": { "@odata.type": "microsoft.graph.driveItem" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "system": { "@odata.type": "microsoft.graph.systemFacet" },
-  "webUrl": "url"
+  "owner": {"@odata.type": "microsoft.graph.identitySet"},
+  "quota": {"@odata.type": "microsoft.graph.quota"},
+  "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"},
+  "special": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "system": {"@odata.type": "microsoft.graph.systemFacet"},
+  "webUrl": "string",
+
 }
 ```
 
+[bundle]: bundle.md
+[driveItem]: driveItem.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
+[列表]: list.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
+[drive-following]: ../api/drive-list-following.md
 [drive-get]: ../api/drive-get.md
 [item-get]: ../api/driveitem-get.md
 [item-changes]: ../api/driveitem-delta.md
 [item-search]: ../api/driveitem-search.md
 [item-children]: ../api/driveitem-list-children.md
-[drive-following]: ../api/drive-list-following.md
 
 
-<!-- {
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
   "type": "#page.annotation",
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
-  "suppressions": [
-    "Warning: /api-reference/v1.0/resources/drive.md:
-      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
-  ],
   "tocPath": "Drives",
-  "tocBookmarks": { "Resources/Drive": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Drive&quot;: &quot;#"
+  },
+  "suppressions": []
+}
+-->
+
 

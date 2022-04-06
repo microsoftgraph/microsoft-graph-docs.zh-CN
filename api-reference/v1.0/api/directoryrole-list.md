@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 245bf0b2fe5b5df3def91d88269b6f3a2f353287
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d2003c5592064d1983c0eecbe6261905584ff379
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128770"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672516"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -20,14 +20,14 @@ ms.locfileid: "62128770"
 
 此操作仅返回已激活的角色。 当管理员使用 [Activate directoryRole](directoryrole-post-directoryroles.md) API 激活角色时，角色将变为激活状态。 并非所有内置角色最初都是激活的。 
 
-使用 Azure 门户分配角色时，角色激活步骤将代表管理员隐式完成。 若要获取可用角色的完整列表，Azure AD [DirectoryRoleTemplates](directoryroletemplate-list.md)。
+使用 Azure 门户分配角色时，角色激活步骤将代表管理员隐式完成。 若要获取可用角色的完整列表，请使用Azure AD [directoryRoleTemplates](directoryroletemplate-list.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
@@ -37,7 +37,7 @@ ms.locfileid: "62128770"
 GET /directoryRoles
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 、 、 、 () 和 OData 查询参数来帮助 `$count` `$select` `$search` `$filter` `eq` `$expand` [](/graph/query-parameters)自定义响应。
+此方法支持 `$count`、 、 `$search``$select`、 (`$filter` `eq`) 和 `$expand` [OData 查询](/graph/query-parameters)参数来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -49,7 +49,7 @@ GET /directoryRoles
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [directoryRole](../resources/directoryrole.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [directoryRole](../resources/directoryrole.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

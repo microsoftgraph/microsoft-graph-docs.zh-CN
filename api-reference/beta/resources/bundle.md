@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: 捆绑资源类型
-description: 描述作为其他 Driveitem 的逻辑分组的 driveItem 的 Facet
-localization_priority: Normal
+description: 描述作为其他 driveItems 的逻辑分组的 driveItem 的 Facet
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bcc132bf4ccd21c98abd621c5ca9fa86dc7d5a27
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3a17b133e79dfc670b486ca391112b45dbb3acf5
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071631"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724134"
 ---
 # <a name="bundle-resource-type"></a>捆绑资源类型
 
@@ -19,35 +18,35 @@ ms.locfileid: "48071631"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-捆绑包是一次用于一次性共享多个文件的文件的逻辑分组。 它由包含 facet 的 [driveItem][] 实体表示 `bundle` ，并且可以像其他任何其他 driveItem 一样进行共享。
+捆绑包是文件的逻辑分组，用于一次共享多个文件。 它由包含 Facet 的 [driveItem][] `bundle` 实体表示，并且可以与任何其他 driveItem 相同的方式共享。
 
-`bundle` [DriveItem][]上的 facet 将项目标识为捆绑包，并将捆绑包中的信息分组到一个单一结构中。 它仅包含在从**捆绑包**终结点返回的[driveItem][]资源中。
+[driveItem][] `bundle` 上的 Facet 将项标识为捆绑包，将特定于捆绑包的信息分组到单个结构中。 它仅包含在从捆绑包终结点返回的 [driveItem][] **资源** 中。
 
-请注意， `bundle` 资源类型本身并不是自己的实体，并且只是 [driveItem][]上的一个 facet。 `bundles`[驱动器][]上的集合的类型为[driveItem][]，而不是 `bundle` 。
+请注意，资源 `bundle` 类型本身不是其自身的实体，只是 [driveItem 上的一个 Facet][]。 驱动器 `bundles` 上 [的集合的类型为][] [driveItem][]，而不是 `bundle`。
 
 ## <a name="methods"></a>方法
 
-|                        方法             |         返回类型      | 说明        |
-| :---------------------------------------- | :----------------------- | :------------------|
-| [列出捆绑包][bundle-list]               | [driveItem][] 集合 | 列出驱动器中的所有捆绑包 |
-| [获取捆绑包][bundle-get]                  | [driveItem][]            | 获取捆绑包元数据 |
-| [创建捆绑包][bundle-create]            | [driveItem][]            | 创建新的捆绑包 |
-| [添加项目][bundle-add-item]               | 无                     | 将 [driveItem][] 添加到现有捆绑包 |
-| [删除项][bundle-remove-item]         | 无                     | 从现有捆绑包中删除[driveItem][] |
-| [更新捆绑包][bundle-update]            | [driveItem][]            | 更新捆绑包元数据 |
-| [删除捆绑包][bundle-delete]            | 无                     | 删除捆绑包 |
-
+| 方法                            | 返回类型              | 说明                                    |
+| :-------------------------------- | :----------------------- | :--------------------------------------------- |
+| [列出捆绑包][bundle-list]       | [driveItem][] 集合 | 列出驱动器中所有捆绑包                    |
+| [获取捆绑包][bundle-get]          | [driveItem][]            | 获取捆绑包元数据                            |
+| [创建捆绑包][bundle-create]    | [driveItem][]            | 创建新的捆绑包                            |
+| [添加项][bundle-add-item]       | 无                     | 将 [driveItem][] 添加到现有捆绑包      |
+| [删除项目][bundle-remove-item] | 无                     | 从现有[捆绑包中删除 driveItem][] |
+| [更新捆绑包][bundle-update]    | [driveItem][]            | 更新捆绑包元数据                         |
+| [删除捆绑包][bundle-delete]    | 无                     | 删除捆绑包                                  |
 
 ## <a name="properties"></a>属性
 
-| 属性名称 | 类型      | 说明
-|:--------------|:----------|:------------------------------------------------
-| childCount    | Int32     | 此容器包含的直接子项数量。
-| album         | [album][] | 如果捆绑包是 [唱片集][]，则会将该 `album` 属性包含
+| 属性   | 类型      | 说明                                                          |
+| :--------- | :-------- | :------------------------------------------------------------------- |
+| childCount | Int32     | 此容器包含的直接子项数量。      |
+| album      | [album][] | 如果捆绑包是 [专辑][]，则包含 `album` 属性 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.bundle" } -->
+
 ```json
 {
   "childCount": 3,
@@ -66,5 +65,3 @@ ms.locfileid: "48071631"
 [bundle-remove-item]: ../api/bundle-removeItem.md
 [bundle-update]: ../api/bundle-update.md
 [bundle-delete]: ../api/bundle-delete.md
-
-

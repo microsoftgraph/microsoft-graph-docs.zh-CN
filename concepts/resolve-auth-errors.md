@@ -4,12 +4,12 @@ description: 了解如何解决 Microsoft Graph 401 和 403 授权错误。
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: 38fab3502dbf025408b6abc45c9d50021284c727
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: a004370af868648e77cc3d7a1c89e9897a7da0f5
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525825"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477942"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>解决 Microsoft Graph 授权错误
 
@@ -40,7 +40,7 @@ ms.locfileid: "61525825"
 确保请求或授予的权限类型与你的应用获取的访问令牌类型相匹配。 你可能正在请求和授予应用程序权限，但使用的是委派的交互式代码流令牌而不是客户端凭据流令牌，或者正在请求和授予委派权限，但使用的是客户端凭据流令牌而不是委派的代码流令牌。 <br>
 * [代表用户获取访问权限和委派权限](/graph/auth_v2_user) 
 * [Azure AD v2.0 - OAuth 2.0 授权代码流](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
-* [在没有用户的情况下获取访问权限（守护程序服务）和应用程序权限](/graph/auth_v2_service)
+* [在没有用户的情况下获取访问权限（守护程序服务）和应用程序权限](/graph/auth-v2-service)
 * [Azure AD v2.0 - OAuth 2.0 客户端凭据流](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 
 **403 禁止访问错误：重置密码** <br>

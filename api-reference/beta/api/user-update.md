@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d21f2a4e25ff42f37df238fc2304d52f825c40f4
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: bf1a8b16076575272c215c28a81bd0b3246a32c9
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334483"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629454"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -91,14 +91,14 @@ PATCH /users/{id | userPrincipalName}
 |streetAddress|String|用户公司地点的街道地址。|
 |surname|String|用户的姓氏。|
 |usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 由于法律要求，将被分配许可证的用户需要检查国家/地区的服务可用性。 示例包括：`US`、`JP`、`GB`。不可为 null。 |
-|userPrincipalName|String|用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中 domain 必须位于租户的已验证域集合中。 可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。 <br>注意：此属性不能包含突出字符。 仅支持使用以下字符：`A - Z`、`a - z`、`0 - 9`、` ' . - _ ! # ^ ~`。 有关允许字符的完整列表，请参阅[用户名策略](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts)。|
+|userPrincipalName|字符串|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。 <br>注意：此属性不能包含突出字符。 仅支持使用以下字符：`A - Z`、`a - z`、`0 - 9`、` ' . - _ ! # ^ ~`。 有关允许字符的完整列表，请参阅[用户名策略](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts)。|
 |userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。          |
 
 由于 **用户** 资源 [支持扩展](/graph/extensibility-overview)`PATCH`，因此可以使用 操作在现有用户实例的扩展的自定义属性中添加、更新或删除你自己的特定于 **应用** 的数据。
 
 > [!NOTE] 
 > - 只有应用程序权限的应用无法更新以下属性：**aboutMe**、 **birthday**、 **employeeHireDate**、 **interests**、 **mySite**、 **pastProjects**、 **preferredName**、 **responsibilities**、 **schools**、 and **skills**。
-> - 若要更新以下属性，您必须在其自己的 PATCH 请求中指定这些属性，而不包括上表中列出的其他属性： **aboutMe**、 **birthday**、 **interests**、 **mySite**、 **pastProjects**、 **preferredName**、 **responsibilities**、 **schools** 和 **skills**。
+> - 要更新以下属性，必须在其 PATCH 请求中指定它们，无需包含上表中列出的其他属性：**aboutMe**、**birthday**、**interests**、**mySite**、**pastProjects**、**preferredName**、**职责**、**schools** 和 **skills**。
 
 ## <a name="response"></a>响应
 
@@ -287,14 +287,14 @@ HTTP/1.1 204 No Content
 
 以下示例演示如何向用户分配具有字符串值的自定义安全属性。
 
-+ 属性集：`Engineering`
++ 属性集： `Engineering`
 + 属性：`ProjectDate`
 + 属性数据类型：字符串
 + 属性值： `"2022-10-01"`
 
 若要分配自定义安全属性，必须为调用主体分配"属性分配管理员"角色，并且必须授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。
 
-有关用户的更多示例，请参阅使用 Microsoft Graph API 分配、更新[或删除自定义安全属性](/graph/custom-security-attributes-examples)。
+有关用户的更多示例，请参阅[使用 Microsoft](/graph/custom-security-attributes-examples) 策略分配、更新或删除自定义安全Graph API。
 
 #### <a name="request"></a>请求
 
@@ -346,6 +346,46 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
+### <a name="example-5-add-or-update-the-values-of-a-schema-extension-for-a-user"></a>示例 5：为用户添加或更新架构扩展的值
+
+你可以更新或分配一个值到扩展中的单个属性或所有属性。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "update_schemaextension"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+Content-type: application/json
+
+{
+    "ext55gb1l09_msLearnCourses": {
+        "courseType": "Admin"
+    }
+}
+```
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+>**注意：** 若要从用户对象中删除架构扩展的值，将 属性设置为 `null`。 例如：
+>
+>```http
+>PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+>Content-type: application/json
+>
+>{
+>    "ext55gb1l09_msLearnCourses": null
+>}
+>```
 
 ## <a name="see-also"></a>另请参阅
 

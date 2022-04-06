@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5177fd5746217796b81dd65813fcef0416cb465c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 324dc1de7acde4548283ccd64b65a1f1c93c56f0
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089049"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63759319"
 ---
 ```go
 
@@ -34,6 +34,10 @@ imageType := "gallery"
 requestBody.SetImageType(&imageType)
 onPremisesConnectionId := "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
 requestBody.SetOnPremisesConnectionId(&onPremisesConnectionId)
+windowsSettings := msgraphsdk.NewCloudPcWindowsSettings()
+requestBody.SetWindowsSettings(windowsSettings)
+language := "en-US"
+windowsSettings.SetLanguage(&language)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
 }

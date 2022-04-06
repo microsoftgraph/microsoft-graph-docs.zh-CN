@@ -3,15 +3,15 @@ author: rahmit
 description: 此资源表示 SitePages 列表中的页面。
 ms.date: 03/15/2018
 title: SitePage
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 5562c0e60f0e36acf3621a160c1801d49661ea5c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 981d6795a5c7999854e8c1ac55b7e9429622eabb
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440113"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723632"
 ---
 # <a name="sitepage-resource"></a>sitePage 资源
 
@@ -20,24 +20,24 @@ ms.locfileid: "50440113"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此资源表示 SitePages 列表中的 [页面][]。
-它包含标题、布局和 [Web 部件][]的集合。
+它包含标题、布局和 [webParts][] 集合。
 
 ## <a name="tasks-on-a-page"></a>页面上的任务
 
 以下任务可用于 **sitePage** 资源。
-所有示例都相对于 [网站][];例如 `https://graph.microsoft.com/{api-version}/sites/{site-id}` ，。
+所有示例都相对于 [网站][];例如， `https://graph.microsoft.com/{api-version}/sites/{site-id}`。
 
-| 常见任务                     | HTTP 方法
-|:--------------------------------|:------------------------------
-| [列出页面][]                  | GET /pages
-| [获取页面][]                    | GET /pages/{page-id}
-| [创建][]                      | POST /pages
-| [删除][]                      | DELETE /pages/{page-id}
-| [发布][]                     | POST /pages/{page-id}/publish
+| 常见任务    | HTTP 方法                   |
+| :------------- | :---------------------------- |
+| [列出页面][] | GET /pages                    |
+| [获取页面][]   | GET /pages/{page-id}          |
+| [Create][]     | POST /pages                   |
+| [Delete][]     | DELETE /pages/{page-id}       |
+| [发布][]    | POST /pages/{page-id}/publish |
 
 [列出页面]: ../api/sitepage-list.md
 [获取页面]: ../api/sitepage-get.md
-[创建]: ../api/sitepage-create.md
+[Create]: ../api/sitepage-create.md
 [删除]: ../api/sitepage-delete.md
 [发布]: ../api/sitepage-publish.md
 
@@ -83,40 +83,40 @@ ms.locfileid: "50440113"
 
 **sitePage** 资源具有以下属性。
 
-| 属性名称    | 类型                         | 说明
-|:-----------------|:-----------------------------|:---------------------------
-| contentType      | [contentTypeInfo][]          | 页面的内容类型。
+| 属性    | 类型                | 说明                   |
+| :---------- | :------------------ | :---------------------------- |
+| contentType | [contentTypeInfo][] | 页面的内容类型。 |
 
 ## <a name="page-content"></a>页面内容
 
 **sitePage** 资源具有以下内容字段。
 
-| 属性名称      | 类型                       | 说明
-|:-------------------|:---------------------------|:---------------------------
-| title              | 字符串                     | 页面的标题。
-| pageLayout         | string                     | 页面的页面布局的名称。
-| webParts           | [webPart][]                | 页面上的 Web 部件。
+| 属性名称 | 类型        | 说明                              |
+| :------------ | :---------- | :--------------------------------------- |
+| title         | string      | 页面的标题。                   |
+| pageLayout    | string      | 页面页面布局的名称。 |
+| webParts      | [webPart][] | 页面上的 Web 部件。               |
 
 ## <a name="authoring-metadata"></a>创作元数据
 
-**sitePage** 资源具有以下与创作相关的元数据。 **publishingState** 属性将反映页面创作状态，如已签出或已发布。
+**sitePage** 资源具有以下创作相关元数据。 **publishingState** 属性将反映页面创作状态，如已签出或已发布。
 
-| 属性名称          | 类型                   | 说明
-|:-----------------------|:-----------------------|:---------------------------
-| publishingState        | [publicationFacet][]   | 页面的MM.mm和发布版本。
+| 属性名称   | 类型                 | 说明                                              |
+| :-------------- | :------------------- | :------------------------------------------------------- |
+| publishingState | [publicationFacet][] | 页面的发布 MM.mm 版本。 |
 
 以下属性继承自 **[baseItem][]**。
 
-| 属性名称        | 类型              | 说明
-|:---------------------|:------------------|:----------------------------------
-| id                   | string            | 项的唯一标识符。只读。
-| name                 | string            | 项目名称/标题。
-| createdBy            | [identitySet][]   | 此项的创建者的标识。 只读。
-| eTag                 | 字符串            | 该项目的 ETag。只读。
-| lastModifiedBy       | [identitySet][]   | 此项的最后一个修饰符的标识。 只读。
-| lastModifiedDateTime | DateTimeOffset    | 上次修改项目的日期和时间。只读。
-| parentReference      | [itemReference][] | 父信息（如果此项具有父级）。 只读。
-| WebUrl               | string (url)      | 在浏览器中显示此项目的 URL。只读。
+| 属性名称        | 类型              | 说明                                              |
+| :------------------- | :---------------- | :------------------------------------------------------- |
+| id                   | string            | 项的唯一标识符。只读。            |
+| name                 | string            | 项目名称/标题。                            |
+| createdBy            | [identitySet][]   | 此项的创建者的标识。只读。         |
+| eTag                 | 字符串            | 该项目的 ETag。只读。                            |
+| lastModifiedBy       | [identitySet][]   | 此项最后一个修饰符的标识。只读。   |
+| lastModifiedDateTime | DateTimeOffset    | 上次修改项目的日期和时间。只读。 |
+| parentReference      | [itemReference][] | 父信息（如果此项具有父级）。 只读。 |
+| WebUrl               | string (url)      | 在浏览器中显示此项目的 URL。只读。    |
 
 ## <a name="relationships"></a>关系
 
@@ -142,7 +142,7 @@ ms.locfileid: "50440113"
   "section": "documentation",
   "tocPath": "Resources/Page",
   "tocBookmarks": {
-    "Page": "#"
+    "Page&quot;: &quot;#"
   },
   "suppressions": []
 }
@@ -157,5 +157,3 @@ TODO:
     * Add the URL to the underlying list item resource in the API
 * PATCH for list item patches /item/{item-id}/fields.
 -->
-
-

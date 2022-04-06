@@ -5,19 +5,24 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
+ms.openlocfilehash: 7628a829216f8c5a9feb93544657dead23f4f9d8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668897"
 ---
-
 # <a name="directoryobject-checkmembergroups"></a>directoryObject：checkMemberGroups
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查指定的组 ID 列表中的成员身份，然后从该列表返回由 (标识的由 ID) 其中指定的用户、组、服务主体、组织联系人、设备或目录对象是其成员的组[](../resources/user.md)。 [](../resources/group.md)[](../resources/serviceprincipal.md)[](../resources/orgcontact.md)[](../resources/device.md)[](../resources/directoryobject.md) 此函数是可传递的。
+检查指定的组 ID 列表中的成员身份，然后从该列表返回由 (ID) 其中指定的用户、组、服务主体、组织联系人、设备或目录对象是其成员的组。[](../resources/user.md)[](../resources/group.md)[](../resources/serviceprincipal.md)[](../resources/orgcontact.md)[](../resources/device.md)[](../resources/directoryobject.md) 此函数是可传递的。
 
 每个请求最多可检查 20 个组。 此函数支持在 Azure AD 中设置的所有组。 由于Microsoft 365组不能包含其他组，因此Microsoft 365组的成员始终是直接的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -33,7 +38,7 @@ doc_type: apiPageType
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:-|:-|
-| 委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -41,7 +46,7 @@ doc_type: apiPageType
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:-|:-|
-| 委派（工作或学校帐户） | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户） | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -49,7 +54,7 @@ doc_type: apiPageType
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -57,7 +62,7 @@ doc_type: apiPageType
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All   |
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -75,7 +80,7 @@ The following table lists the permission types to use for different scenarios.
 
 ## <a name="http-request"></a>HTTP 请求
 
-目录对象的组成员身份 (、组、服务主体或组织联系人) 。
+目录对象的组成员身份 (用户、组、服务主体或组织联系人) 。
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryObjects/{id}/checkMemberGroups
@@ -173,7 +178,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -247,7 +252,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-me-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -2,15 +2,15 @@
 title: List user transitive memberOf
 description: 获取用户是其中一个成员的组、目录角色和管理单元。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
 ms.localizationpriority: medium
-author: jpettere
+author: Jordanndahl
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1e62c19a93cde4a7e2aa3e0500880a89f2c5a444
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ab79028a05cd5765db414d4164061248a5597049
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118004"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510356"
 ---
 # <a name="list-user-transitive-memberof"></a>List user transitive memberOf
 
@@ -20,13 +20,13 @@ ms.locfileid: "62118004"
 
 获取用户是其中一个成员的组、目录角色和管理单元。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+| 委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All    |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -200,7 +200,7 @@ Content-type: text/plain
 588
 ```
 
-### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 转换获取显示名称包含字母"tier"（包括返回对象计数）的组的可传递成员资格
+### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 转换获取包含字母"tier"的显示名称（包括返回的对象计数）的组的可传递成员身份
 
 #### <a name="request"></a>请求
 
@@ -242,7 +242,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 和 OData 转换获取组中以"a"开头显示名称返回的对象计数的可传递成员身份
+### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 和 OData 转换获取组中以"a"开头的可传递成员身份显示名称包括返回对象计数的组
 
 #### <a name="request"></a>请求
 
@@ -250,7 +250,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_users_transitivememberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c41a217d781738292d52912dc8525fc64565b2a4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: aad33a2affbab407bc187a70d71aa86f270f3c50
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339481"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672684"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 
@@ -18,7 +18,7 @@ ms.locfileid: "62339481"
 
 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  客户端可以使用此 API 确定显示名称或邮件昵称是否有效，然后再尝试创建Microsoft 365组。[](group-post-groups.md) 若要验证现有组的属性，请使用 [group： validateProperties](group-validateproperties.md) 函数。
 
-对别名和邮件昵称显示名称执行以下策略验证：
+对邮件和邮件昵称显示名称执行以下策略验证：
 1. 验证前缀和后缀命名策略
 2. 验证自定义禁止字策略
 3. 验证邮件昵称是否唯一
@@ -30,7 +30,7 @@ ms.locfileid: "62339481"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 

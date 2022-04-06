@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleEligibilityScheduleInstances
 description: 获取 unifiedRoleEligibilityScheduleInstance 对象及其属性的列表。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2995a579684a7a5e50f8b295693d721c64532934
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 426a6cc7053524fbf70121d11203c55fd8d02daa
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132661"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510377"
 ---
 # <a name="list-unifiedroleeligibilityscheduleinstances"></a>列出 unifiedRoleEligibilityScheduleInstances
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "62132661"
 
 获取 [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` 和 `$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 和 `$select` `$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -51,7 +51,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

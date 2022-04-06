@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1d15acb9af6a3abe36098ad344ae62239c9eba16
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5e975f2d283135b086f5069fae18373159cae903
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991799"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63721942"
 ---
 # <a name="delete-accessreviewscheduledefinition"></a>删除 accessReviewScheduleDefinition
 
@@ -19,6 +19,9 @@ ms.locfileid: "60991799"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
+
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -71,7 +74,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

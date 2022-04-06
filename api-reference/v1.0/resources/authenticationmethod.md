@@ -5,21 +5,21 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 92c504bf5cbbec90c11bb51c6d8e19a67e4d7cfb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef8a1576865fa3bf4fc8e2e9e9908bdbba792c64
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127043"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510132"
 ---
 # <a name="authenticationmethod-resource-type"></a>authenticationMethod 资源类型
 
 命名空间：microsoft.graph
 
-表示注册到用户的身份验证方法。 [身份验证方法是](/azure/active-directory/authentication/concept-authentication-methods)用户用来向系统进行身份验证或以其他方式证明其身份的方法。 一些示例包括密码、 (短信或语音呼叫) 、FIDO2 安全密钥等。
+表示注册到用户的身份验证方法。 [身份验证方法是](/azure/active-directory/authentication/concept-authentication-methods)用户用来向系统进行身份验证或以其他方式证明其身份的方法。 一些示例包括密码、 (通过短信或语音呼叫) 、FIDO2 安全密钥等。
 
 > [!IMPORTANT]
-> 列出用户的身份验证方法仅返回此 API 版本支持的方法。 有关 [当前支持的方法的列表，请参阅 Azure AD 身份验证](authenticationmethods-overview.md) 方法 API 概述。
+> 列出用户的身份验证方法仅返回此 API 版本上支持并注册到用户的方法。 请参阅[Azure AD方法 API 概述](authenticationmethods-overview.md)，了解当前支持的方法的列表。
 
 ## <a name="methods"></a>方法
 

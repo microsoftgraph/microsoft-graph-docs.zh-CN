@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: be5d28d546f56fcc673fbd39da811b420d02d065
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a016ece96a22560925a5a73b8702ba0e0e069d07
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103546"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671683"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>列出目录角色的 scopedMembers
 
@@ -24,7 +24,7 @@ ms.locfileid: "62103546"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
@@ -47,13 +47,13 @@ GET /directoryroles/roleTemplateId={roleTemplateId}/scopedMembers
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [scopedRoleMembership](../resources/scopedrolemembership.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象集合。
 ## <a name="examples"></a>示例
 
 ### <a name="example-1--get-the-scoped-members-of-a-directory-role-using-role-id"></a>示例 1：使用角色 ID 获取目录角色的作用域成员
 
 #### <a name="request"></a>请求
-下面是一个请求目录角色 **ID 的示例** `41d12a2f-caa8-4e3e-ba14-05e5102ce085` 。
+下面是一个请求目录角色 **ID 的示例**`41d12a2f-caa8-4e3e-ba14-05e5102ce085`。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -121,7 +121,7 @@ Content-type: application/json
 ### <a name="example-2--get-the-scoped-members-of-a-directory-role-using-roletemplateid"></a>示例 2：使用 roleTemplateId 获取目录角色的作用域成员
 
 #### <a name="request"></a>请求
-以下是对 **roleTemplateId** 为 的目录角色的请求示例 `fdd7a751-b60b-444a-984c-02652fe8fa1c` 。
+以下是对 **roleTemplateId** 为 的目录角色的请求示例 `fdd7a751-b60b-444a-984c-02652fe8fa1c`。
 
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->

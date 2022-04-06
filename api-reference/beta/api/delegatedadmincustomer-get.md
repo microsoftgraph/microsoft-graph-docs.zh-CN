@@ -1,0 +1,90 @@
+---
+title: 获取 delegatedAdminCustomer
+description: 读取 delegatedAdminCustomer 对象的属性。
+author: adtangir
+ms.localizationpriority: medium
+ms.prod: directory-management
+doc_type: apiPageType
+ms.openlocfilehash: d2e2d3735b7913267fa2dd4ecd3311d457e09566
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589747"
+---
+# <a name="get-delegatedadmincustomer"></a>获取 delegatedAdminCustomer
+命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+读取 [delegatedAdminCustomer 对象](../resources/delegatedadmincustomer.md) 的属性。
+
+## <a name="permissions"></a>Permissions
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型|权限（从最低特权到最高特权）|
+|:---|:---|
+|委派（工作或学校帐户）| DelegatedAdminRelationship.Read.All、DelegatedAdminRelationship.ReadWrite.All |
+|委派（个人 Microsoft 帐户）| 不支持。 |
+|Application| 不支持。 |
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}
+```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 `$select` OData 查询参数检索特定用户属性，包括默认情况下未返回的属性。
+
+## <a name="request-headers"></a>请求头
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
+
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应 `200 OK` 正文中返回 响应 [代码和 delegatedAdminCustomer](../resources/delegatedadmincustomer.md) 对象。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "get_delegatedadmincustomer"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers/4fdbff88-9d6b-42e0-9713-45c922ba8001
+```
+
+
+### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.delegatedAdminCustomer"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.delegatedAdminCustomer",
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#delegatedAdminCustomers/$entity",
+  "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
+  "id": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
+  "tenantId": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
+  "displayName": "Contoso Inc"
+}
+```
+

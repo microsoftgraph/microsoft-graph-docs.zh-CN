@@ -2,15 +2,15 @@
 title: group： assignLicense
 description: 在组上添加或删除许可证。 分配给该组的许可证将分配给该组中的所有用户。
 ms.localizationpriority: medium
-author: Jordanndahl
+author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 48e23d332c2383bf1bc43ce1d9e73126660550a6
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: e79bf467ed69b7462b6c4d946b914c1b23b7bbd1
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333692"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589126"
 ---
 # <a name="group-assignlicense"></a>group： assignLicense
 
@@ -20,33 +20,39 @@ ms.locfileid: "63333692"
 
 若要获取目录中可用的订阅，请执行 [GET subscribedSkus 请求](../resources/subscribedsku.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All, Directory.ReadWrite.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
+| 权限类型                        | 权限（从最低特权到最高特权）  |
+| :------------------------------------- | :------------------------------------------- |
+| 委派（工作或学校帐户）     | Group.ReadWrite.All, Directory.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。                               |
+| 应用程序                            | Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/assignLicense
 ```
+
 ## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json. Required.  |
+
+| 标头        | 值                       |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}。必需。   |
+| Content-Type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 可以通过在 assignedLicense 对象上设置 **disabledPlans** 属性来禁用 [与许可证关联的 servicePlans](../resources/assignedlicense.md) 。|
-|removeLicenses|Guid 集合|标识要删除的许可证的 skuIds 集合。|
+| 参数      | 类型                                                          | 说明                                                                                                                                                                                                                                                                    |
+| :------------- | :------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| addLicenses    | [assignedLicense](../resources/assignedlicense.md) collection | 用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 可以通过在 assignedLicense 对象上设置 **disabledPlans** 属性来禁用 [与许可证关联的 servicePlans](../resources/assignedlicense.md) 。 |
+| removeLicenses | Guid 集合                                               | 标识要删除的许可证的 skuIds 集合。                                                                                                                                                                                                                   |
 
 ## <a name="response"></a>响应
 
@@ -55,15 +61,18 @@ POST /groups/{id}/assignLicense
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-add-licenses-to-the-group"></a>示例 1：向组添加许可证
+
 以下示例向组添加许可证。
+
 #### <a name="request"></a>请求
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_assignlicense"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense
 Content-type: application/json
@@ -87,43 +96,51 @@ Content-type: application/json
   "removeLicenses": []
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-assignlicense-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-assignlicense-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-assignlicense-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/group-assignlicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/group-assignlicense-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-assignlicense-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### <a name="response"></a>响应
 
 响应是更新的 group 对象。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group"
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-type: application/json
@@ -138,12 +155,13 @@ location: https://graph.microsoft.com/v2/e8e96c2a-d787-4eb1-98d7-9e57c965f1de/di
 ```
 
 ### <a name="example-2-remove-licenses-from-the-group"></a>示例 2：从组中删除许可证
+
 以下示例从组中删除许可证。
 
 #### <a name="request"></a>请求
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_removelicense"
@@ -161,43 +179,51 @@ Content-type: application/json
   ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-removelicense-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-removelicense-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-removelicense-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/group-removelicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/group-removelicense-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-removelicense-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### <a name="response"></a>响应
 
 响应是更新的 group 对象。
 
->**注意：** 为了可读性，可能会缩短此处所示的响应对象。
+> **注意：** 为了可读性，可能会缩短此处所示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group"
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-type: application/json
@@ -227,4 +253,3 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
   ]
 }
 -->
-

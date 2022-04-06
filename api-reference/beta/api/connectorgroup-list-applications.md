@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: daae2148a46bd4f55834c998a477bd57a655db10
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e47674875358101d0e90459e1dd6f2aa23eb9a94
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100451"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671165"
 ---
 # <a name="list-applications-assigned-to-a-connectorgroup"></a>列出分配给 connectorGroup 的应用程序
 
@@ -18,16 +18,16 @@ ms.locfileid: "62100451"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与 [connectorGroup](../resources/application.md) 关联的 [应用程序对象列表](../resources/connectorgroup.md)。 此列表包含分配给特定连接器组的所有应用程序。
+检索与 [connectorGroup 关联的应用程序对象的列表](../resources/connectorgroup.md)。[](../resources/application.md) 此列表包含分配给特定连接器组的所有应用程序。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applicat
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/application.md) 代码和 application 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [application](../resources/application.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

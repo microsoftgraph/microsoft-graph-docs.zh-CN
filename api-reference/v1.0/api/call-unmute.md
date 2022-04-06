@@ -1,16 +1,16 @@
 ---
 title: call： unmute
 description: 允许应用程序自行取消静音。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 14882251b3c07fa3e8f45dc2a5da9b96dd5442a1
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: d7d9d0729715fd5d7d5437c30396c3a02e6ebb4a
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342873"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608119"
 ---
 # <a name="call-unmute"></a>call： unmute
 
@@ -30,7 +30,9 @@ ms.locfileid: "62342873"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                               |
 | 委派（个人 Microsoft 帐户） | 不支持。                               |
-| 应用程序                            | 无。                                        |
+| Application                            | Calls.Initiate.All、Calls.AccessMedia.All |
+
+> **注意：** 创建调用时检查权限;调用此 API 时，不会进行其他权限检查。 Calls.AccessMedia.All 仅对于使用应用托管媒体的呼叫是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +49,7 @@ POST /communications/calls/{id}/unmute
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 

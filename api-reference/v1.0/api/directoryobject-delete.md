@@ -5,29 +5,46 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8387a1615eee66f377458bb4d36a26099ae8d66c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ae3b1c98075db838c72ef8f2028d06c292e9ab8
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092513"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588258"
 ---
 # <a name="delete-directoryobject"></a>删除 directoryObject
 
 命名空间：microsoft.graph
 
-删除 directoryObject。
+删除目录对象，例如组、用户、应用程序或服务主体。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+### <a name="delete-a-user"></a>删除用户
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | User.ReadWrite.All |
+
+### <a name="delete-a-group"></a>删除组
+
+| 权限类型                        | 权限（从最低特权到最高特权）                                                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| 委派（工作或学校帐户）     | Group.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
+| 应用程序                            | Group.ReadWrite.All                             |
+
+### <a name="delete-an-application-or-service-principal"></a>删除应用程序或服务主体
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Application.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|Application | Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,7 +78,7 @@ DELETE /directoryObjects/{id}
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryObjects/{id}
+DELETE https://graph.microsoft.com/v1.0/directoryObjects/ffab4dce-9b82-49a6-b7c7-1a143106598c
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-csharp-snippets.md)]

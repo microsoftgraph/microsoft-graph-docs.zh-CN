@@ -5,22 +5,24 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b9a392eed805fa816e3eb4ac84e91965880d7091
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ba37207f1f1a776925ce4db60ed7a89f93fb3fa7
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132241"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629237"
 ---
 # <a name="create-printtasktrigger"></a>创建 printTaskTrigger
 命名空间：microsoft.graph
 
-在指定的 [打印机 上创建新的](../resources/printtasktrigger.md) 任务 [触发器](../resources/printer.md)。 目前， **每个打印机** 只能指定一个任务触发器，但以后可能会删除此限制。 
+在指定的 [打印机上创建新的](../resources/printtasktrigger.md) 任务 [触发器](../resources/printer.md)。 目前， **每个打印机** 只能指定一个任务触发器，但以后可能会删除此限制。 
 
-## <a name="permissions"></a>权限
+>**注意：** 用于生成用于创建任务触发器的访问令牌的 appId 应该与用于创建相应任务定义的 appId 相同。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -45,10 +47,10 @@ POST /print/printers/{printerId}/taskTriggers
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [printTaskTrigger](../resources/printtasktrigger.md) 对象的 JSON 表示形式。 使用 格式提供 [对 printTaskDefinition](../resources/printtaskdefinition.md) 的引用 `@odata.bind` ，如以下示例所示。
+在请求正文中，提供 [printTaskTrigger](../resources/printtasktrigger.md) 对象的 JSON 表示形式。 使用 格式提供 [对 printTaskDefinition](../resources/printtaskdefinition.md) `@odata.bind` 的引用，如以下示例所示。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和[printTaskTrigger。](../resources/printtasktrigger.md)
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [printTaskTrigger](../resources/printtasktrigger.md) 。
 
 ## <a name="examples"></a>示例
 
@@ -98,7 +100,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

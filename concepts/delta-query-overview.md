@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8b2a302157a7f3a1309d0f7917d1c16816bfab82
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: be2f0aa1df6edc791f2e34b34ad0c7ab4b8c9555
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878748"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477970"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -105,7 +105,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 ## <a name="supported-resources"></a>支持的资源
 
-目前，以下资源支持 delta 查询。 请注意，v1.0 中可用的某些资源的相应 **delta** 函数仍处于预览状态，如下所示。
+以下资源当前支持 Delta 查询。请注意，v1.0 中提供的某些资源相应的 **delta** 函数仍处于预览状态，如所示。
 
 | **资源集合**                                        | **API**                                                                                                                                                      |
 | :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -113,7 +113,6 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | 管理单元（预览版）                                 | [administrativeUnit](/graph/api/resources/administrativeunit) 资源的 [delta](/graph/api/administrativeunit-delta) 函数（预览版）                |
 | 作业类别                                          | [educationCategory](/graph/api/resources/educationcategory) 资源的 [delta](/graph/api/educationcategory-delta) 函数                                    |
 | 频道中的聊天消息                                     | [chatMessage](/graph/api/resources/chatmessage) 的 [delta](/graph/api/chatmessage-delta) 函数（预览版）                                              |
-| 目录对象                                              | [directoryObject](/graph/api/resources/directoryobject) 资源的 [delta](/graph/api/directoryobject-delta) 函数（预览版）                         |
 | 目录角色                                                | [directoryRole](/graph/api/resources/directoryrole) 资源的 [delta](/graph/api/directoryrole-delta) 函数 |
 | 驱动器项目\*                                                  | [driveItem](/graph/api/resources/driveitem) 资源的 [delta](/graph/api/driveitem-delta) 函数             |
 | 教育作业                                          | [educationAssignment](/graph/api/resources/educationassignment) 资源的 [delta](/graph/api/educationassignment-delta) 函数                                    |
@@ -137,7 +136,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 > \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。若要详细了解现行语法，请参阅[跟踪驱动器更改](/graph/api/driveitem-delta)。
 
-> \*\* Planner 资源的使用模式与其他支持资源类似，仅存在些许差异。  有关详细信息，请参阅[跟踪 Planner 更改](/graph/api/planneruser-list-delta)。
+> \*\* Planner 资源的使用模式与其他受支持的资源类似，但存在一些差异。 有关详细信息，请参阅[查看 Planner 的更改](/graph/api/planneruser-list-delta)。
 
 ## <a name="limitations"></a>限制
 
@@ -145,7 +144,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 某些资源包含一些存储在资源主数据存储外部的属性（例如，用户资源大部分存储在 Azure AD 系统中，而 **skills** 之类的一些属性存储在 SharePoint Online 中）。 目前，在更改跟踪中不支持这些属性；对其中一个属性所做的更改不会导致在增量查询响应中显示对象。 目前，仅在主数据存储中存储的属性会触发增量查询中的更改。
 
-若要验证属性是否可在增量查询中使用，请尝试对资源集合执行常规 `GET` 操作，然后选择感兴趣的属性。 例如，可尝试对用户集合使用 **skills** 属性。
+若要验证属性是否可用于增量查询，请尝试对资源集合执行常规 `GET` 操作，然后选择感兴趣的属性。例如，可以在用户集合上尝试 **skills** 属性。
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/?$select=skills
@@ -180,7 +179,7 @@ Content-type: application/json
 
 ### <a name="navigation-properties"></a>导航属性
 
-不支持导航属性。 例如，不能跟踪对用户集合所做的更改，这些更改将包含对用户 **photo** 属性所做的更改；**photo** 是一个存储在用户实体之外的导航属性，且对其进行的更改不会导致增量响应中包含用户对象。
+不支持导航属性。例如，不能跟踪对用户集合所做的更改，这些更改将包含对用户 **photo** 属性所做的更改；**photo** 是一个存储在用户实体之外的导航属性，且对其进行的更改不会导致增量响应中包含用户对象。
 
 ### <a name="processing-delays"></a>处理延迟
 

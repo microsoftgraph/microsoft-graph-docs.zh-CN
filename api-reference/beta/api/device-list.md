@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f52b09635a002c271907b6cb087ed6bbc182b57f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e6e252916848fa1b40158eef64e3982c07560b45
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133982"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509803"
 ---
 # <a name="list-devices"></a>列出设备
 
@@ -20,14 +20,14 @@ ms.locfileid: "62133982"
 
 检索目录中的注册设备列表。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户） | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -206,7 +206,11 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -246,8 +250,8 @@ Content-type: application/json
 
 >**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_devices_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName 
@@ -351,7 +355,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 此请求需要 **将 ConsistencyLevel** 标头设置为 且查询字符串，因为 `eventual` `$count=true` extensionAttributes 属性 `$filter` 仅支持高级查询参数。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+下面展示了示例请求。 此请求需要 **将 ConsistencyLevel** 标头设置为 `eventual` `$count=true` 且查询字符串，因为 extensionAttributes `$filter` 属性仅支持高级查询参数。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 >**注意：**`$count`和`$search` 查询参数当前在 Azure AD B2C 租户中不可用。
 

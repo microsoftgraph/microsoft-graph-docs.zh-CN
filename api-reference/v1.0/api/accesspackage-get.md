@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a0babe007c61c897513ec5b3aa676b63f3dcf408
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a83e07fcfdf004f12a8f3c74085890d4679df071
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136672"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607993"
 ---
 # <a name="get-accesspackage"></a>获取 accessPackage
 
@@ -19,7 +19,7 @@ ms.locfileid: "62136672"
 
 检索 [accessPackage](../resources/accesspackage.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "62136672"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
+| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,9 +41,11 @@ GET /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` [OData 查询参数检索](/graph/query-parameters) 特定属性。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 检索特定属性 `$expand` 和参数以检索关系。
 
-## <a name="request-headers"></a>请求标头
+例如，若要检索访问包分配策略，请添加 `$expand=assignmentPolicies`。
+
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -54,7 +56,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [accessPackage](../resources/accesspackage.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的 [accessPackage](../resources/accesspackage.md) 对象。
 
 ## <a name="examples"></a>示例
 

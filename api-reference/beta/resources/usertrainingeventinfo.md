@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 9b6eca7e4c911b9cc5e5019244b04f2e48e6cb30
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 1a33cba93e61752d33b9829871b3280955895360
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979521"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758239"
 ---
 # <a name="usertrainingeventinfo-resource-type"></a>userTrainingEventInfo 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "59979521"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|培训的显示名称。|
-|latestTrainingStatus|trainingStatus|分配给用户的培训的最新状态。 可取值为：`unknown`、`assigned`、`inProgress`、`completed`、`overdue`、`notCompleted` 或 `unknownFutureValue`。|
+|displayName|String|培训的显示名称。|
+|latestTrainingStatus|trainingStatus|分配给用户的培训的最新状态。 可取值为：`unknown`、`assigned`、`inProgress`、`completed`、`overdue`、`unknownFutureValue`。|
 |trainingAssignedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|分配给用户的培训的事件详细信息。|
 |trainingCompletedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|用户完成培训时的事件详细信息。|
 |trainingUpdatedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|用户更新/进行中的培训的事件详细信息。|

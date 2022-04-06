@@ -5,20 +5,17 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a3c822d56d0e25209b66b531c47aa9b934d9a1d3
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: cabfa4c55086e125b3eb078bef1b09337cd9854d
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651166"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722383"
 ---
 # <a name="list-decisions"></a>列出决策
 命名空间：microsoft.graph
 
-从给定 accessReviewInstance 上的 decisions 导航属性获取 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) [资源](../resources/accessreviewinstance.md)。 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括所有嵌套属性。
-
->[!NOTE]
->此 API 的默认页面大小为 100 accessReviewScheduleDefinition 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+从 [给定 accessReviewInstance 上的决策导航属性获取 accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) [资源](../resources/accessreviewinstance.md)。 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括所有嵌套属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,9 +37,11 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` 、 `$filter` `$orderBy` 、 、 `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select`、 `$filter`、 `$orderBy`、 和 `$skip``$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+此 API 的默认页面大小为 100 **accessReviewInstanceDecisionItem** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -52,7 +51,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -83,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

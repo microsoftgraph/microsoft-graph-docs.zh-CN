@@ -3,15 +3,15 @@ author: daspek
 description: ItemActivityTimeSet 资源提供有关项上某个活动发生时间的信息。
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 9295337237c681fd0ec02c9fa8061bf206059600
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eb0477255783b3aba7aaa61a0e9ece868c1882d1
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075659"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724323"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>ItemActivityTimeSet 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "48075659"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**ItemActivityTimeSet** 资源提供有关项上某个[活动][activity]发生时间的信息。
+**ItemActivityTimeSet** 资源提供有关项上某个 [活动][activity]发生时间的信息。
 
 [activity]: itemactivity.md
 
@@ -31,7 +31,7 @@ ms.locfileid: "48075659"
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActivityTimeSet",
   "@type.aka": "oneDrive.times",
-  "@property.aka": "observedDateTime=observedTime recordedDateTime=recordedTime"
+  "@property.aka&quot;: &quot;observedDateTime=observedTime recordedDateTime=recordedTime"
 }-->
 
 ```json
@@ -43,12 +43,12 @@ ms.locfileid: "48075659"
 
 ## <a name="properties"></a>属性
 
-| 属性名称    | 类型           | 说明
-|:-----------------|:---------------|:-----------------------------------------
-| observedDateTime | DateTimeOffset | 在观察到要发生活动时。
-| recordedDateTime | DateTimeOffset | 在服务上记录观察时。
+| 属性         | 类型           | 说明                                       |
+| :--------------- | :------------- | :------------------------------------------------ |
+| observedDateTime | DateTimeOffset | 在观察到要发生活动时。     |
+| recordedDateTime | DateTimeOffset | 在服务上记录观察时。 |
 
-对于离线协作方案来说，**观察**和**记录**时间差异尤为重要。
+对于离线协作方案来说，**观察** 和 **记录** 时间差异尤为重要。
 如果用户在离线时对文件添加注释，则会将他们添加注释的时间设置为 **observedDateTime**。
 稍后，当用户重新连接到云并上传更改后，则会将稍后的时间设置为 **recordedDateTime**。
 
@@ -66,5 +66,3 @@ ms.locfileid: "48075659"
   "suppressions": []
 }
 -->
-
-

@@ -1,16 +1,16 @@
 ---
 title: visualInfo 资源类型
-description: 一个代表 activity 对象中的 **visualElements** 属性的复杂类型。
-localization_priority: Normal
+description: 表示活动对象中的 **visualElements** 属性的复杂类型。
+ms.localizationpriority: medium
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ailae
-ms.openlocfilehash: e6bc7bb02ccfc077f9461e5c2a4f15aac4ddf22d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc64213460ecc2b033da2f28a00d875f8de9bf33
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078219"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722438"
 ---
 # <a name="visualinfo-resource-type"></a>visualInfo 资源类型
 
@@ -18,23 +18,23 @@ ms.locfileid: "48078219"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-一个代表[activity](../resources/projectrome-activity.md)对象中的**visualElements**属性的复杂类型。
+表示活动对象中的 **visualElements** [属性的复杂类型](../resources/projectrome-activity.md) 。
 
-每个用户活动将在时间轴中显示为一个自适应卡片。 鼓励应用程序开发人员提供自定义卡片，以捕获应用程序中发生的活动的实质。 可通过在 content 属性中提供自定义 JSON 卡片来实现这一点。
+每个用户活动将在时间线中显示为自适应卡片。 建议应用开发人员提供自定义卡片，以捕获应用中所发生活动的本质。 这一点在 content 属性中提供自定义 JSON 卡成为可能。
 
-除了具有自适应卡片的可视元数据之外，应用还可以指定内容元数据–用于在用户活动上建立推断的数据，以便为将来的重新约定提供新活动。 为此，可以使用活动的 contentInfo 属性提供一个 JSON 对象，该对象利用 schema.org 属性来描述内容。
+除了具有自适应卡片的可视元数据外，应用还可以指定内容元数据 – 用于生成用户活动推断的数据，以便提供新的活动供将来重新参与。 这通过使用活动的 contentInfo 属性来提供 JSON 对象，该对象利用 schema.org 描述内容。
 
-如果未提供自定义卡片，将使用 "文本" 和 "说明" 属性生成一个简单的卡片。 建议使用自定义卡片展示应用程序中的最佳内容。
+如果未提供自定义卡片，则使用 displayText 和 description 属性生成简单卡片。 建议使用自定义卡片来展示应用中的最佳内容。
 
 ## <a name="properties"></a>属性
 
-|名称 | 类型 | 说明|
-|:----|:------|:-----------|
-|displayText | String | 必需。 用户独特活动的简短文本说明 (例如，当活动引用文档创建时的文档名称) |
-|说明 | String | 可选。 用户独特活动的更长文本说明 (示例：文档名称、第一句和/或元数据) |
-|backgroundColor | String | 可选。 用于呈现活动的应用程序源的 UI 品牌颜色中的活动的背景色。 必须是有效的十六进制颜色|
-|content | 非类型化 JSON 对象 | 可选。 用于提供自定义内容以在 Windows Shell UI 中呈现活动的自定义数据 JSON 对象块|
-|attribution | [imageInfo](../resources/projectrome-imageinfo.md) | 可选。 JSON 对象，用于表示表示用于生成活动的应用程序的图标|
+| 属性        | 类型                                               | 说明                                                                                                                                          |
+| :-------------- | :------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayText     | String                                             | 必需。 用户唯一活动实例的简短文本 (例如，在活动引用文档创建项目时的文档)    |
+| description     | String                                             | 可选。 用户唯一活动较长文本说明 (例如：文档名称、第一句和/或元数据)                             |
+| backgroundColor | String                                             | 可选。 用于在 UI 中呈现活动的背景颜色 - 活动的应用程序源的品牌颜色。 必须为有效的十六进制颜色 |
+| content         | 未键入的 JSON 对象                                | 可选。 自定义数据部分 - JSON 对象，用于提供自定义内容以在命令行管理程序 UI Windows活动                           |
+| attribution     | [imageInfo](../resources/projectrome-imageinfo.md) | 可选。 JSON 对象，用于表示表示用于生成活动的应用程序的图标                                       |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -71,6 +71,7 @@ ms.locfileid: "48078219"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -81,5 +82,3 @@ ms.locfileid: "48078219"
   "suppressions": []
 }
 -->
-
-

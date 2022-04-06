@@ -5,26 +5,23 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ea2ae928596ec02642d599fa29516d5da2c90808
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5925711646753fdde070f34a1d0da37c075377d1
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991813"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722006"
 ---
-# <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>列出 accessReviewInstanceDecisionItems 待审批 (弃) 
+# <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>列出 accessReviewInstanceDecisionItems 待审批 (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->此方法将弃用，并将于 2023 年 5 月 19 日停止返回数据。 它已被替换为 [filterByCurrentUser](accessreviewinstancedecisionitem-filterbycurrentuser.md)。
+>此方法将弃用，并将于 2023 年 5 月 19 日停止返回数据。 它已被 [filterByCurrentUser 取代](accessreviewinstancedecisionitem-filterbycurrentuser.md)。
 
-检索[调用用户等待批准的特定 accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md)对象的[accessReviewInstance。](../resources/accessreviewscheduledefinition.md) 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括所有嵌套属性。
-
->[!NOTE]
->此 API 的默认页面大小为 100 accessReviewInstanceDecisionItem 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+检索 [调用用户等待批准的特定 accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) 对象的 [accessReviewInstance](../resources/accessreviewscheduledefinition.md) 。 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括所有嵌套属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,16 +40,18 @@ GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$skip` `$top` 和 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+此 API 的默认页面大小为 100 **accessReviewInstanceDecisionItem** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+
+## <a name="request-headers"></a>请求头
 无。
 
 ## <a name="request-body"></a>请求正文
 不提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) 对象数组。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) 对象数组。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -83,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-pendingapproval-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-pendingapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

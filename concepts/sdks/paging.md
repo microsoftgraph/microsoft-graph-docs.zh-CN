@@ -3,12 +3,12 @@ title: 使用 Microsoft SDK 分页Graph集合
 description: 提供有关使用 Microsoft Graph SDK 创建 Microsoft Graph API 请求的说明。
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 515b24324309c8121ec231bca73f0878f5c227f7
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a6ccc53fd58685948c486ff047733ba88949e553
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337409"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63560041"
 ---
 # <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>使用 Microsoft SDK 分页Graph集合
 
@@ -146,10 +146,7 @@ options := messages.MessagesRequestBuilderGetOptions{
 result, err := client.Me().Messages().Get(&options)
 
 // Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase,
-    func() serialization.Parsable {
-        return messages.NewMessagesResponse()
-    })
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter, graph.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
 // to the iterator
@@ -276,10 +273,7 @@ options := messages.MessagesRequestBuilderGetOptions{
 result, err := client.Me().Messages().Get(&options)
 
 // Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase,
-    func() serialization.Parsable {
-        return messages.NewMessagesResponse()
-    })
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter, graph.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
 // to the iterator

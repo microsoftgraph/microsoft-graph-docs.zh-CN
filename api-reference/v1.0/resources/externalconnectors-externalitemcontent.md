@@ -5,23 +5,23 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: eade917bcee86acbc44917d8809fb26a1776bf42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 35a410a12608ad43f75196b41b3d747e56b10d59
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123424"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63560024"
 ---
 # <a name="externalitemcontent-resource-type"></a>externalItemContent 资源类型
 
 命名空间：microsoft.graph.externalConnectors
 
-通过连接[建立索引的 externalItem](externalconnectors-externalitem.md) Microsoft 搜索[内容](externalconnectors-externalconnection.md)。
+通过外部连接[建立索引的 externalItem](externalconnectors-externalitem.md) Microsoft 搜索[内容](externalconnectors-externalconnection.md)。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|类型|microsoft.graph.externalConnectors.externalItemContentType|value 属性中的内容类型。 可取值为：`text`、`html`、`unknownFutureValue`。|
+|类型|microsoft.graph.externalConnectors.externalItemContentType|value 属性中的内容类型。 可取值为：`text`、`html`、`unknownFutureValue`。 这些是索引器支持的内容类型，而不是允许的文件扩展名类型。|
 |value|String|externalItem 的内容。 必填。|
 
 ## <a name="relationships"></a>关系

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9ac744be0ccc193d4f7c59737c52d431e28c66e2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a21bad82533bba99b86fb8a88c95efe1b5bcffa9
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106967"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528101"
 ---
 ```objc
 
@@ -17,8 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphBaseTask *baseTask = [[MSGraphBaseTask alloc] init];
-MSGraphItemBody *body = [[MSGraphItemBody alloc] init];
-[baseTask setBody:body];
+[baseTask setTextBody:@"String"];
 [baseTask setBodyLastModifiedDateTime:@"String (timestamp)"];
 [baseTask setCompletedDateTime:@"String (timestamp)"];
 MSGraphDateTimeTimeZone *dueDateTime = [[MSGraphDateTimeTimeZone alloc] init];
@@ -30,8 +29,8 @@ MSGraphPatternedRecurrence *recurrence = [[MSGraphPatternedRecurrence alloc] ini
 [baseTask setRecurrence:recurrence];
 [baseTask setDisplayName:@"String"];
 [baseTask setStatus: [MSGraphTaskStatus_v2 notStarted]];
-MSGraphPersonalTaskProperties *personalProperties = [[MSGraphPersonalTaskProperties alloc] init];
-[baseTask setPersonalProperties:personalProperties];
+MSGraphTaskViewpoint *viewpoint = [[MSGraphTaskViewpoint alloc] init];
+[baseTask setViewpoint:viewpoint];
 
 NSError *error;
 NSData *baseTaskData = [baseTask getSerializedDataWithError:&error];

@@ -1,16 +1,16 @@
 ---
 title: 更新 governanceRoleAssignmentRequests
-description: 使管理员能够根据处于 状态的 `AdminApproved` `AdminDenied` governanceRoleAssignmentRequests (或) 更新其决策 `PendingAdminDecision` 。
+description: 使管理员能够更新其 `AdminApproved` (或 `AdminDenied`) 状态为 的 governanceRoleAssignmentRequests 的决策 `PendingAdminDecision`。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 9d08b6786d16956161a3e4835e961cc893ae8241
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 4d07d05d9335b6d8dd7a1a123e0432d4f702deed
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688484"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510455"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>更新 governanceRoleAssignmentRequests
 
@@ -18,14 +18,14 @@ ms.locfileid: "60688484"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-使管理员能够更新其 (`AdminApproved` 或) `AdminDenied` 状态为 的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的决策 `PendingAdminDecision` 。
+使管理员能够更新其 `AdminApproved` (或 `AdminDenied`) [状态为 的 governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的决策 `PendingAdminDecision`。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
->**注意：** 此 API 还要求请求者对 `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 角色分配 (或) 至少一个管理员。 
+>**注意：** 此 API 还要求请求 `Active` `owner` `user access administrator` 者对 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 角色分配 (或) 至少一个管理员。 
 
 ### <a name="azure-resources"></a>Azure 资源
 
@@ -67,12 +67,12 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |参数      |类型                   |必需 |说明|
 |:-------------|:----------------------|:--------|:----------|
-|reason        |String                 |✓        |管理员提供其决策的原因。|
-|decision        |String                 |✓        |请求的管理员角色分配决定。 值应更新为 `AdminApproved` 或 `AdminDenied` 。|
-|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | 请求角色分配计划。 对于 状态 `AdminApproved` ，此为必填项。|
-|assignmentState      |字符串|         | 工作分配的状态，值可以是 `Eligible` 或 `Active` 。 为做出 `AdminApproved` 决策，需要此权限。 |
+|reason        |字符串                 |✓        |管理员提供其决策的原因。|
+|decision        |String                 |✓        |请求的管理员角色分配决定。 值应更新为 或 `AdminApproved` `AdminDenied`。|
+|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | 请求角色分配计划。 对于 状态 `AdminApproved`，此为必填项。|
+|assignmentState      |String|         | 工作分配的状态，值可以是 或 `Eligible` `Active`。 为做出决策 `AdminApproved`，需要此权限。 |
 ### <a name="response"></a>响应
-此方法只能应用于状态为 的请求 `PendingAdminDecision` 。
+此方法只能应用于状态为 的请求 `PendingAdminDecision`。
 
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 

@@ -1,16 +1,16 @@
 ---
 title: 创建调用
 description: 创建新呼叫。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 132dc8bcceeee11383f6e429addcb3542b970420
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fff18805550d888a493573d1f2200277d09fc128
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136578"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607825"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -18,7 +18,7 @@ ms.locfileid: "62136578"
 
 Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call， or join an existing meeting. 你需要注册 [呼叫机器人](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) 并浏览所需的权限列表，如下所示。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions)。
 
@@ -26,7 +26,7 @@ Create [call](../resources/call.md) enables your bot to create a new outgoing pe
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                                                                           |
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
-| 应用程序                            | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate.All、Calls.InitiateGroupCalls.All |
+| Application                            | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate.All、Calls.InitiateGroupCalls.All |
 
 > **注意：** 对于使用应用托管媒体的呼叫，除了上表中列出的权限之一之外，还需要 Calls.AccessMedia.All 权限。
 
@@ -46,7 +46,7 @@ POST /communications/calls
 在请求正文中，提供 call 对象的 JSON [表示](../resources/call.md) 形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 [响应](../resources/call.md) 代码和 call 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [call](../resources/call.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -415,7 +415,7 @@ Content-Type: application/json
 ### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>示例 3：使用服务托管媒体创建组呼叫
 
 这支持最多 5 个 VoIP 用户。 该示例演示如何创建具有两个 VoIP 用户的组呼叫。
-> **注意：** 此示例调用需要 `Calls.InitiateGroupCalls.All` 权限。 创建的组呼叫不支持聊天或录制。
+> **注意：** 此示例调用需要 权限 `Calls.InitiateGroupCalls.All` 。 创建的组呼叫不支持聊天或录制。
 
 ##### <a name="request"></a>请求
 
@@ -482,7 +482,7 @@ Content-Type: application/json
 ### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>示例 4：使用应用程序托管媒体创建组呼叫
 
 这支持最多 5 个 VoIP 用户。 该示例演示如何创建具有两个 VoIP 用户的组呼叫。
-> **注意：** 此示例调用需要 `Calls.InitiateGroupCalls.All` 权限。 创建的组呼叫不支持聊天或录制。
+> **注意：** 此示例调用需要 权限 `Calls.InitiateGroupCalls.All` 。 创建的组呼叫不支持聊天或录制。
 
 ##### <a name="request"></a>请求
 
@@ -550,8 +550,8 @@ Content-Type: application/json
 若要加入安排的会议，我们需要获取主题 ID、消息 ID、组织者 ID 和计划会议的租户 ID。
 此信息只能从基于 VTC 的会议 (联机会议 [API](../api/onlinemeeting-get.md)) 。
 
-授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值必须替换为从基于 (VTC 的  [Get Online Meetings API](../api/onlinemeeting-get.md) (会议获取的详细信息) 实际值才能使示例有效。
-> **注意：** 此示例需要 `Calls.JoinGroupCalls.All` 权限。
+授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值必须与从基于  [Get Online Meetings API](../api/onlinemeeting-get.md) (VTC 的会议获取的详细信息一起替换) 以使用实际值使示例有效。
+> **注意：** 此示例需要权限 `Calls.JoinGroupCalls.All` 。
 
 ##### <a name="request"></a>请求
 
@@ -921,7 +921,7 @@ Content-Type: application/json
 
 > **注意：** 此调用需要 Calls.Initiate.All 权限。
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给机器人](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
 下面的示例展示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值替换为实际值，以确保示例有效。
@@ -1088,7 +1088,7 @@ Content-Type: application/json
 
 > **注意**：此示例需要 Calls.Initiate.All 和 Calls.AccessMedia.All 权限。
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给机器人](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
 以下示例显示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由应用程序本地托管。 必须将授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值替换为实际值，以确保示例有效。

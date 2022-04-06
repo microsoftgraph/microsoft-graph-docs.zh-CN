@@ -2,13 +2,13 @@
 title: Microsoft Graph 工具包入门
 description: 开始在应用程序中使用 Microsoft Graph 工具包。
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: 00e4bdf2f7c4561ea67ed1917edbe2290df2950d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
-ms.translationtype: HT
+author: sebastienlevert
+ms.openlocfilehash: 09e69c51e4cbb693f9923b793a80b687c0afbddc
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032074"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477676"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包入门
 
@@ -73,13 +73,13 @@ Microsoft Graph 工具包由多个 NPM 包组成，仅允许包含应用程序�
 
 提供程序可通过单个包使用，并可根据需要进行安装。 以下提供程序包可用:
 
-- <b>@micosoft/mgt-msal-provider</b>
+- <b>@microsoft/mgt-msal-provider</b>
 
-    [`@micosoft/mgt-msal-provider`](../providers/msal.md) 包含 `MsalProvider` 和 `mgt-msal-provider` 组件。 MSAL 提供程序使用 msal.js 在 Web 应用和渐进式 Web 应用 (PWA) 中进行身份验证。
+    [`@microsoft/mgt-msal-provider`](../providers/msal.md) 包含 `MsalProvider` 和 `mgt-msal-provider` 组件。 MSAL 提供程序使用 msal.js 在 Web 应用和渐进式 Web 应用 (PWA) 中进行身份验证。
 
-- <b>@micosoft/mgt-msal2-provider</b>
+- <b>@microsoft/mgt-msal2-provider</b>
 
-    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) 包含 `Msal2Provider` 和 `mgt-msal2-provider` 组件。 MSAL2 提供程序使用 msal-browser 在 Web 应用和 PWA 中进行身份验证。
+    [`@microsoft/mgt-msal2-provider`](../providers/msal2.md) 包含 `Msal2Provider` 和 `mgt-msal2-provider` 组件。 MSAL2 提供程序使用 msal-browser 在 Web 应用和 PWA 中进行身份验证。
 
 -  <b>@microsoft/mgt-teams-provider</b>
 

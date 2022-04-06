@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bb705e320baca323a927e7dd2de08745f616a8ed
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 02618a58825b3edeb4de7aa5bda23f4fad06d113
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089053"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63759017"
 ---
 ```objc
 
@@ -28,6 +28,9 @@ MSGraphCloudPcDomainJoinConfiguration *domainJoinConfiguration = [[MSGraphCloudP
 [cloudPcProvisioningPolicy setImageId:@"MicrosoftWindowsDesktop_Windows-10_19h1-evd"];
 [cloudPcProvisioningPolicy setImageType: [MSGraphCloudPcProvisioningPolicyImageType gallery]];
 [cloudPcProvisioningPolicy setOnPremisesConnectionId:@"4e47d0f6-6f77-44f0-8893-c0fe1701ffff"];
+MSGraphCloudPcWindowsSettings *windowsSettings = [[MSGraphCloudPcWindowsSettings alloc] init];
+[windowsSettings setLanguage:@"en-US"];
+[cloudPcProvisioningPolicy setWindowsSettings:windowsSettings];
 
 NSError *error;
 NSData *cloudPcProvisioningPolicyData = [cloudPcProvisioningPolicy getSerializedDataWithError:&error];

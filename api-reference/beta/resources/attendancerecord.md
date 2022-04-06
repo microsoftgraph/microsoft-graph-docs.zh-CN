@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f6f045062f088dcb264cb6485bdd8df6e222e400
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 957daa2412997f6db32de8f57ae196edd89e4b4e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61547678"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672082"
 ---
 # <a name="attendancerecord-resource-type"></a>attendanceRecord 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "61547678"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含与 [meetingAttendanceReport](meetingattendancereport.md)中的与会者记录关联的信息。
+包含与 [meetingAttendanceReport](meetingattendancereport.md) 中的与会者记录关联的信息。
 
 ## <a name="methods"></a>方法
 
@@ -34,6 +34,7 @@ ms.locfileid: "61547678"
 | emailAddress | String | 与此 at此操作记录关联的用户的电子邮件地址。 |
 | identity | [identity](identity.md) | 与此 atance 记录关联的用户的标识。 |
 | role | String | 与会者的角色。 可能的值为： `None`、 `Attendee`、 `Presenter`和 `Organizer`。  |
+| registrantId | String | [meetingRegistrant 的唯一标识符](meetingregistrantbase.md)。 参与者已注册会议时显示。 |
 | totalAttendanceInSeconds | Int32 | 总出席持续时间（以秒表示）。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -54,6 +55,7 @@ ms.locfileid: "61547678"
   "emailAddress": "String",
   "totalAttendanceInSeconds": "Int32",
   "role": "String(None|Attendee|Presenter|Organizer)",
+  "registrantId": "String",
   "identity": {
     "@odata.type": "#microsoft.graph.identity"
   },

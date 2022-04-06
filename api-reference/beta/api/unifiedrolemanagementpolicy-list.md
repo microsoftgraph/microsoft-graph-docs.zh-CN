@@ -1,25 +1,25 @@
 ---
 title: 列出 unifiedRoleManagementPolicies
 description: 获取 unifiedRoleManagementPolicy 对象及其属性的列表。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6f0e5e6bf6ff86e25a9d623a63d2ece2ea18e609
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0ee14bcd9dd97689c1260b1f681be7a13ed8d0e1
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119774"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510370"
 ---
 # <a name="list-unifiedrolemanagementpolicies"></a>列出 unifiedRoleManagementPolicies
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象及其属性的列表。
+获取 [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象及其属性的列表。 此 API 仅适用于Azure AD角色。 若要检索适用于 Azure RBAC 的策略，请使用适用于角色管理策略的 [Azure REST PIM API](/rest/api/authorization/role-management-policies/list-for-scope)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -35,7 +35,7 @@ ms.locfileid: "62119774"
 }
 -->
 ``` http
-GET /policies/roleManagementPolicies
+GET /policies/roleManagementPolicies?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -51,11 +51,13 @@ GET /policies/roleManagementPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+以下示例检索范围为租户的策略并应用于目录角色。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -64,7 +66,7 @@ GET /policies/roleManagementPolicies
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicies
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicies?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicy-csharp-snippets.md)]
@@ -107,20 +109,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-      "displayName": "Policy1",
-      "description": "Policy for all privileged admins",
-      "isOrganizationDefault": false,
-      "scopeId": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-      "scopeType": "subscription",
-      "lastModifiedDateTime": "2020-09-09T21:35:27.91Z",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identity"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies",
+    "value": [
+        {
+            "id": "DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9",
+            "displayName": "DirectoryRole",
+            "description": "DirectoryRole",
+            "isOrganizationDefault": false,
+            "scopeId": "/",
+            "scopeType": "DirectoryRole",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        },
+        {
+            "id": "DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a",
+            "displayName": "DirectoryRole",
+            "description": "DirectoryRole",
+            "isOrganizationDefault": false,
+            "scopeId": "/",
+            "scopeType": "DirectoryRole",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        }
+    ]
 }
 ```
 

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7cdb2354858ca1afd215f4360680792b08966630
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8828fd3c01e989e2fd122802d3728765fef57664
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114756"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510707"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>删除 groupLifecyclePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "62114756"
 
 删除 [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,6 @@ ms.locfileid: "62114756"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groupLifecyclePolicies/{id}
-
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -52,8 +51,9 @@ DELETE /groupLifecyclePolicies/{id}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -89,7 +89,9 @@ DELETE https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
+
+下面展示了示例请求。
 
 <!-- {
   "blockType": "response",

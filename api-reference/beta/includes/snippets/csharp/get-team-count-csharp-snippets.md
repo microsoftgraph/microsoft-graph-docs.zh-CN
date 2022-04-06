@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a402f7f38f2e1506ffb2745842b325b6b164149a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 468a6fa800455339cc0fe5bf44ec97391e882c28
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63351204"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528132"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var servicePrincipals = await graphClient.ServicePrincipals
-    .Request()
+    .Request( queryOptions )
     .Header("ConsistencyLevel","eventual")
     .Search("displayName:Team")
     .GetAsync();

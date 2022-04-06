@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b7004a448ff57d007e8fee1e67a368a70830d96a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7510a3f0b4d9817f5ad6da30d36204e7b96406fd
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019080"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672159"
 ---
 # <a name="list-groupsettingtemplates"></a>List groupSettingTemplates
 
@@ -25,7 +25,7 @@ ms.locfileid: "61019080"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -35,11 +35,11 @@ ms.locfileid: "61019080"
 GET /groupSettingTemplates
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 OData `$select` [查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 > **注意：** 不支持 $filter。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称 | 说明 |
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsettingtemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-groupsettingtemplates-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

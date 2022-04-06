@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9a4b7f8310bda8726995c536f2922cab8aab7f2b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 71c0f7b0d5e10dd3b412fe26cde02b0345f166e4
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335491"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528113"
 ---
 ```java
 
@@ -15,7 +15,7 @@ CloudPcUserSetting cloudPcUserSetting = new CloudPcUserSetting();
 cloudPcUserSetting.displayName = "Example";
 cloudPcUserSetting.selfServiceEnabled = true;
 CloudPcRestorePointSetting restorePointSetting = new CloudPcRestorePointSetting();
-restorePointSetting.frequencyInHours = "16";
+restorePointSetting.frequencyInHours = 16;
 restorePointSetting.userRestoreEnabled = true;
 cloudPcUserSetting.restorePointSetting = restorePointSetting;
 cloudPcUserSetting.localAdminEnabled = false;

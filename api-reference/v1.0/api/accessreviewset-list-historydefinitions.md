@@ -5,23 +5,18 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 099240b1f73e5dad7f0b56590c695f30f6188088
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: b991b24b2d8b3c09c882c3e2087641c571e32d2b
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337660"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722994"
 ---
 # <a name="list-historydefinitions"></a>列出 historyDefinitions
 
 命名空间：microsoft.graph
 
 检索最近 30 天内创建的 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象，包括所有嵌套属性。
-
->[!NOTE]
->此 API 的默认页面大小为 100 **accessReviewHistoryDefinitions** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
->
->如果未提供查询参数且结果超过 100 个，Microsoft Graph 将按每页 100 个结果自动对结果分页。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +45,9 @@ GET /identityGovernance/accessReviews/historyDefinitions
 
 此方法支持 、 `$top`、 `$filter`和 `$expand``$skip` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 Including `?$expand=instances` 将返回 [accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) 对象及其关联实例。
 
-## <a name="request-headers"></a>请求标头
+此 API 的默认页面大小为 100 **accessReviewHistoryDefinitions** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+
+## <a name="request-headers"></a>请求头
 
 |名称|说明|
 |:---|:---|

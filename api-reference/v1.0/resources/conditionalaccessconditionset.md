@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d331a2e1995b6c33ab45f1a99f680b772d090dec
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: 6bb96bd08f9ffdd3876ba3836b19878b24fad686
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161702"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672544"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "62161702"
 |:-------------|:------------|:------------|
 |应用程序|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必需。 |
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必需。 |
+|clientApplications|[conditionalAccessClientApplications](../resources/conditionalaccessclientapplications.md)|客户端应用程序 (服务主体和工作负荷) 包含在策略中以及从策略中排除。 用户 **或** **clientApplications** 是必需的。 |
 |clientAppTypes|conditionalAccessClientApp 集合| 策略中包含的客户端应用程序类型。 可取值为：`all`、`browser`、`mobileAppsAndDesktopClients`、`exchangeActiveSync`、`easSupported`、`other`。 必需。|
 |设备|[conditionalAccessDevices](conditionalaccessdevices.md)| 策略中的设备。 |
 |位置|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含的位置和从策略中排除的位置。 |
@@ -56,6 +57,7 @@ ms.locfileid: "62161702"
 {
   "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
+  "clientApplications": {"@odata.type": "microsoft.graph.conditionalAccessClientApplications"},
   "clientAppTypes": ["String"],
   "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},

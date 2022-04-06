@@ -1,37 +1,28 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3002b2db37f4fe7fb94ba2d99b24756cd3978c10
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: d1825725f4648c40409136de5c86f54403fe4c8a
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093813"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758924"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDriveItem()
-name := "My Day at the Beach"
-requestBody.SetName(&name)
-bundle := msgraphsdk.NewBundle()
-requestBody.SetBundle(bundle)
-album := msgraphsdk.NewAlbum()
-bundle.SetAlbum(album)
-requestBody.SetChildren( []DriveItem {
-    msgraphsdk.NewDriveItem(),
-    SetAdditionalData(map[string]interface{}{
-        "id": "1234asdf",
-    }
-}
+requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
+    "name": "My Day at the Beach",
     "@microsoft.graph.conflictBehavior": "rename",
+    "children":  []Object {
+    }
 }
 options := &msgraphsdk.BundlesRequestBuilderPostOptions{
     Body: requestBody,
 }
-result, err := graphClient.Drive().Bundles().Post(options)
+graphClient.Drive().Bundles().Post(options)
 
 
 ```

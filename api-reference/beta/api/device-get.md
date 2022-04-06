@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9baacdbdbe801a9fd83c0540923f15cb6d5b92e6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: dec9c03571ebdaae8e0557d7dffbd369f7c2c5c8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022477"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671284"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -20,27 +20,27 @@ ms.locfileid: "61022477"
 
 获取 device 对象的属性和关系。
 
-由于 **设备** 资源 [支持扩展](/graph/extensibility-overview)，因此也可使用 操作获取设备实例中的自定义属性 `GET` 和 **扩展** 数据。
+由于 **设备** 资源 [支持扩展](/graph/extensibility-overview)，因此 `GET` 也可使用 操作获取设备实例中的自定义属性和 **扩展** 数据。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
-`{id}`请求中的 是设备的 **id** 属性的值，而不是 **deviceId** 属性的值。
+请求 `{id}` 中的 是设备的 **id** 属性的值，而不是 **deviceId** 属性的值。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 OData `$select` [查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:-----------|:------|
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 [!INCLUDE [sample-code](../includes/snippets/java/get-device-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-device-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 
 
 #### <a name="response"></a>响应
-以下示例显示无 **hostNames** 的设备的响应。 
+以下示例显示无 **hostNames 的设备的响应**。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -115,7 +115,7 @@ Content-type: application/json
 }
 ```
 
-以下示例显示对具有 **hostNames** 的设备的响应。 
+以下示例显示对具有 **hostNames 的设备的响应**。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -168,7 +168,7 @@ GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d182198
 [!INCLUDE [sample-code](../includes/snippets/java/get-device-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-device-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17532fe64ade03be6227cbe928f1c3da9e981260
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 1d64af17564bbdb8612814576b6190ef7d741716
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61342683"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630882"
 ---
 # <a name="update-operationapprovalpolicy"></a>Update operationApprovalPolicy
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,17 +54,16 @@ PATCH /deviceManagement/operationApprovalPolicies/{operationApprovalPolicyId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|OperationApprovalPolicy 的 ID。 此属性是只读的。|
-|displayName|String|此操作显示名称ApprovalPolicy|
-|description|String|此 OperationApprovalPolicy 的说明|
+|displayName|String|OperationApprovalPolicy 显示名称|
+|说明|String|此 OperationApprovalPolicy 的说明|
 |lastModifiedDateTime|DateTimeOffset|此 OperationApprovalPolicy 的上次修改日期和时间。 此属性是只读的。|
-|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|此 OperationApprovalPolicy 的策略类型。 可能的值是 `deviceActions` `deviceWipe` `deviceRetire` ：、、、、、、、、。 `deviceRetireNonCompliant` `deviceDelete` `deviceLock` `deviceErase` `deviceDisableActivationLock` `windowsEnrollment` `compliancePolicies` `configurationPolicies` `appProtectionPolicies` `policySets` `filters` `endpointSecurity` `apps` `scripts` `roles` `deviceResetPasscode` `unknownFutureValue`|
-|policyPlatform|[operationApprovalPolicyPlatform](../resources/intune-rbac-operationapprovalpolicyplatform.md)|适用于此 OperationApprovalPolicy () 一个应用平台。 可取值为：`notApplicable`、`androidDeviceAdministrator`、`androidEnterprise`、`iOSiPadOS`、`macOS`、`windows10AndLater`、`windows81AndLater`、`windows10X`。|
-|approverGroupIds|字符串集合|此 OperationApprovalPolicy 的审批者组 ID|
+|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|此 OperationApprovalPolicy 的策略类型。 可能的值是：、`deviceActions`、`deviceRetire``deviceWipe`、`deviceRetireNonCompliant`、、`deviceDelete`、`deviceLock`、、`windowsEnrollment``deviceResetPasscode``scripts``unknownFutureValue``roles``apps``endpointSecurity``filters``appProtectionPolicies``compliancePolicies``policySets``deviceErase``deviceDisableActivationLock``configurationPolicies`。|
+|approverGroupIds|String collection|此 OperationApprovalPolicy 的审批者组 ID|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -73,14 +72,13 @@ PATCH /deviceManagement/operationApprovalPolicies/{operationApprovalPolicyId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/operationApprovalPolicies/{operationApprovalPolicyId}
 Content-type: application/json
-Content-length: 289
+Content-length: 238
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalPolicy",
   "displayName": "Display Name value",
   "description": "Description value",
   "policyType": "deviceWipe",
-  "policyPlatform": "androidDeviceAdministrator",
   "approverGroupIds": [
     "Approver Group Ids value"
   ]
@@ -92,7 +90,7 @@ Content-length: 289
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 402
+Content-Length: 351
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalPolicy",
@@ -101,7 +99,6 @@ Content-Length: 402
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "policyType": "deviceWipe",
-  "policyPlatform": "androidDeviceAdministrator",
   "approverGroupIds": [
     "Approver Group Ids value"
   ]

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 2049332c4eb5f82cf44d3cde3fad71f02bd9049a
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 8f63a225231365f7dfd654c11b797a52489633ce
+ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561463"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63780539"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>将 Postman 与 Microsoft Graph 连接器 API 一并使用
 
@@ -125,7 +125,7 @@ client_id={{client_id}}
 
 ## <a name="step-6--create-a-new-connection"></a>步骤 6 - 创建新连接
 
-[连接](/concepts/connecting-external-content-manage-connections.md)是外部数据的逻辑容器，您可以作为一个单元进行管理。 选择连接名称、ID 和说明。 从管理员获取连接到数据源的必要详细信息，并提供一种机制，在设置连接时授权处理内容源。 可使用 [Microsoft Graph SDK](/graph/sdks/sdks-overview) 和API对连接器设置进行编程。 如果要存储凭据，则可以使用Azure Key Vault。
+[连接](/graph/connecting-external-content-manage-connections)是外部数据的逻辑容器，您可以作为一个单元进行管理。 选择连接名称、ID 和说明。 从管理员获取连接到数据源的必要详细信息，并提供一种机制，在设置连接时授权处理内容源。 可使用 [Microsoft Graph SDK](/graph/sdks/sdks-overview) 和API对连接器设置进行编程。 如果要存储凭据，则可以使用Azure Key Vault。
 
 ```http
 POST /external/connections

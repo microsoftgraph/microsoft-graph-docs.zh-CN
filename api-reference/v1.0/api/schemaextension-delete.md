@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 351932db521d386879aa91feb6fd8b392dc4bf42
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4371f2e0bb36acfe78b5bb17a41846e96e001b7a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104470"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671914"
 ---
 # <a name="delete-schemaextension"></a>删除 schemaExtension
 
@@ -27,12 +27,12 @@ ms.locfileid: "62104470"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 > [!NOTE]
-> 此外，对于委派流，登录用户只能删除他们拥有 (其中 schemaExtension 的所有者属性是已登录用户拥有) 的应用程序的 。 `appId`
+> 此外，对于委派流，登录用户只能删除他们拥有 (其中 schemaExtension  `appId` 的所有者属性是已登录用户拥有) 的应用程序的 。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

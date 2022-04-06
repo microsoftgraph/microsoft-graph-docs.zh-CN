@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: d431299c1bb674236ac2e54e9324a438853a3157
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: fc9f732c3cb5269866f9dafc24043b0b06c65fcb
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62183938"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629412"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -160,6 +160,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 
 OData 定义 `any` 和 `all` 运算符以评估多值属性的匹配项，即基元值(如字符串 类型或实体集合)的集合。
 
+#### <a name="any-operator"></a>`any` 运算符
+
 `any` 运算符以迭代方式将布尔表达式应用于集合的每个成员，如果集合的 *任何成员* 的表达式为 `true`，则返回 `true`;否则返回 `false`。下面是 `any` 运算符的语法：
 
 ```http
@@ -191,6 +193,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuI
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true
 ConsistencyLevel: eventual
 ```
+
+#### <a name="all-operator"></a>`all` 运算符
 
 `all`运算符以迭代方式将布尔表达式应用于集合的每个成员，如果集合的 *所有成员* 的表达式为`true`，则返回`true`;否则返回`false`。它不受任何属性支持。
 

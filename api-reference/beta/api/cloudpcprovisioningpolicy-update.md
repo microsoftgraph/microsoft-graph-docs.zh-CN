@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c8fe98b5306137944b1b0e9117d90a649ea709fc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8adae318e45899cb5a36fc9f534f2f2cdbbea349
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131443"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722809"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>更新 cloudPcProvisioningPolicy
 
@@ -57,11 +57,12 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|设置显示名称策略的项。 |
-|说明|String|设置策略说明。|
+|description|String|设置策略说明。|
 |onPremisesConnectionId|String|cloudPcOnPremisesConnection 的 ID。 若要确保云电脑具有网络连接并且它们已加入域，请选择与通过云电脑服务验证的虚拟网络的连接。|
 |imageId|String|你想要在云电脑中预配的操作系统映像的 ID。 库类型图像的格式为：{publisher_offer_sku}。 每个参数支持的值如下所示： <ul><li>发布者：Microsoftwindowsdesktop。</li> <li>offer：windows-ent-cpc。</li> <li>sku：21h1-ent-cpc-m365， 21h1-ent-cpc-os、20h2-ent-cpc-m365、20h2-ent-cpc-os、20h1-ent-cpc-m365、20h1-ent-cpc-os、19h2-ent-cpc-m365 和 19h2-ent-cpc-os。</li></ul>|
-|imageDisplayName|String|显示名称预配的操作系统映像的映像。|
-|imageType|cloudPcProvisioningPolicyImageType|要预配的自定义 (库) 操作系统映像的类型。 可取值为：`gallery`、`custom`。|
+|imageDisplayName|String|要显示名称的操作系统映像的映像的映像。|
+|imageType|cloudPcProvisioningPolicyImageType|你想要在云 (预配的操作系统映像类型) 自定义或库类型。 可取值为：`gallery`、`custom`。|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|The Windows operation system settings for the provisioned Cloud PC with this provisioning policy， such as operation system language setting.|
 
 ## <a name="response"></a>响应
 
@@ -84,9 +85,16 @@ PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisio
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
   "displayName": "HR provisioning policy",
   "description": "Provisioning policy for India HR employees",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701b553"
+  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+  "imageId": "Image ID value",
+  "imageDisplayName": "Image Display Name value",
+  "imageType": "custom",
+  "windowsSettings": {
+    "language": "en-US"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -1,25 +1,25 @@
 ---
 title: 列出 effectiveRules
 description: 从 effectiveRules 导航属性获取 unifiedRoleManagementPolicyRule 资源。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ba4fd2025a7e56388b72400866c25d07713b82da
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 97bedd15a81c495590fe48359ef54c060b12c8b3
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132653"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510574"
 ---
 # <a name="list-effectiverules"></a>列出 effectiveRules
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 effectiveRules 导航属性获取 unifiedRoleManagementPolicyRule 资源。
+从 effectiveRules 导航属性获取 unifiedRoleManagementPolicyRule 资源。 若要检索适用于 Azure RBAC 的策略的规则，请使用适用于角色管理策略的 [Azure REST PIM API](/rest/api/authorization/role-management-policies/list-for-scope)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -51,7 +51,7 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effectiveRu
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: 获取列表中项的集合。
-ms.date: 09/11/2017
 title: 检索 SharePoint 列表中的项
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bc6f0d0f8fc96ceffd3114a4cfc3ac99ebf8a0e9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5eb0910bb74119ab99a99b5b59b19ae90b050efe
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096279"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63516201"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
@@ -42,10 +41,25 @@ GET /sites/{site-id}/lists/{list-id}/items?expand=fields
 GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
+## <a name="request-headers"></a>请求标头
+
+| 名称      |说明|
+|:----------|:----------|
+| Authorization  | 持有者 {code}。必需。|
+
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应 
+
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [listItem][item] 对象集合。 
+
 ## <a name="example"></a>示例
 
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-items" } -->
@@ -80,7 +94,9 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 ---
 
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
+
+下面展示了示例响应。
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 

@@ -2,21 +2,21 @@
 title: Microsoft 服务中的文件Graph Toolkit
 description: 文件组件用于通过显示图标和名称来显示文件
 ms.localizationpriority: medium
-author: beth-panx
-ms.openlocfilehash: 8b3aaac8e0216cad39b0dd566de763d26eacfb4a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 1519b314be1d41d1a2df87cebbfb99d2e593c6a4
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035330"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589063"
 ---
 # <a name="file-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的文件Graph Toolkit
 
-文件组件用于表示 OneDrive 或[SharePoint](/graph/onedrive-concept-overview)中的单个文件/文件夹，具体方法为显示文件/文件夹名称、指示文件类型的图标以及其他属性（如作者、上次修改日期或其他详细信息）。 你可以提供文件的标识符，组件将生成查询以根据提供的标识符检索文件。 此组件可以自己使用，也可以作为 [mgt-file-list组件的一部分](./file-list.md) 使用。
+文件组件用于表示 [OneDrive 或 SharePoint](/graph/onedrive-concept-overview) 中的单个文件/文件夹，具体方法为显示文件/文件夹名称、指示文件类型的图标以及其他属性（如作者、上次修改日期或其他详细信息）。 你可以提供文件的标识符，组件将生成查询以根据提供的标识符检索文件。 此组件可以自己使用，也可以作为 [mgt-file-list组件的一部分](./file-list.md) 使用。
 
 ## <a name="example"></a>示例
 
-以下示例使用 组件显示 `mgt-file` 文件。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
+以下示例使用 组件显示文件 `mgt-file` 。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-file--file&source=docs" height="250"></iframe>
 
@@ -29,20 +29,20 @@ ms.locfileid: "59035330"
 | 属性 | 属性 | 说明 |
 | --------- | -------- | ----------- |
 | 文件查询 | fileQuery | 要检索的文件的完整查询或路径。 |
-| drive-id | driveId | 文件所属驱动器的 ID。 还必须提供 或 `item-id` `item-path` 。 |
-| group-id | groupId | 文件所属组的 ID。 还必须提供 或 `item-id` `item-path` 。 |
-| site-id | siteId | 文件所属网站的 ID。 还必须提供 或 `{item-id}` `{item-path}` 。 如果 `{list-id}` 从特定列表引用文件，则也提供 。 |
-| list-id | listId | 文件所属列表的 ID。 还必须提供 `{site-id}` `{item-id}` 和 。 |
-| item-id | itemId | 文件的 ID。 默认查询为 `/me/drive/items` 。 提供 `{drive-id}` `{group-id}` 、 、 或 `{site-id}` `{user-id}` 以查询特定位置。 |
-| item-path | itemPath | 文件的项目路径。 默认查询为 `/me/drive/root` 。 提供 `{drive-id}` `{group-id}` 、 、 或 `{site-id}` `{user-id}` 以查询特定位置。 |
-| insight-type | insightType | 从中检索文件的见解类型。 可以是 `trending` `used` 、、 或 `shared` 。 |
+| drive-id | driveId | 文件所属驱动器的 ID。 还必须提供 或 `item-id` `item-path`。 |
+| group-id | groupId | 文件所属组的 ID。 还必须提供 或 `item-id` `item-path`。 |
+| site-id | siteId | 文件所属网站的 ID。 还必须提供 或 `{item-id}` `{item-path}`。 `{list-id}`如果从特定列表引用文件，则也提供 。 |
+| list-id | listId | 文件所属列表的 ID。 还必须提供 `{site-id}` 和 `{item-id}`。 |
+| item-id | itemId | 文件的 ID。 默认查询为 `/me/drive/items`。 提供 `{drive-id}`、 `{group-id}``{site-id}`、 或 `{user-id}` 以查询特定位置。 |
+| item-path | itemPath | 文件的项目路径。 默认查询为 `/me/drive/root`。 提供 `{drive-id}`、 `{group-id}``{site-id}`、 或 `{user-id}` 以查询特定位置。 |
+| insight-type | insightType | 从中检索文件的见解类型。 可以是 、`trending``used`、 或 `shared`。 |
 | insight-id | insightId | 见解资源的 ID。 |
 | file-details | fileDetails | 设置为表示文件的对象 |
 | file-icon | fileIcon | 设置为要显示文件的图标 |
-| view | view | 设置为控制文件的呈现方式。 默认值为 `oneline`。 <br>`image` - 只显示图标 <br>`oneline` - 显示图标和一行文本 (默认为文件 `name`)  <br>`twolines` - 显示图标和两行文本 (`name` `lastModifiedDateTime` 默认情况下显示) <br> `threelines` - 默认显示作者的图标 (、、和三行 `name` `lastModifiedDateTime` `displayName` 文本)  |
-| line1-property | line1Property | 设置 要 `fileDetails` 用于第一行文本的属性。 默认值 `name` 为 文件。 |
-| line2-property | line2Property | 设置 要 `fileDetails` 用于第二行文本的属性。 默认值为 `lastModifiedDateTime`。 |
-| line3-property | line3Property | 设置 要 `fileDetails` 用于第三行文本的属性。 默认值 `size` 为 文件。 |
+| view | view | 设置为控制文件的呈现方式。 默认值为 `oneline`。 <br>`image` - 只显示图标 <br>`oneline`- 显示图标和一行文本 (默认为文件) `name` <br>`twolines`- 显示图标和两行`name``lastModifiedDateTime`文本 (默认情况下显示) <br> `threelines`- 默认显示作者的图标 (`name`、`lastModifiedDateTime``displayName`、和三行文本)  |
+| line1-property | line1Property | 设置 要用于 `fileDetails` 第一行文本的属性。 `name`默认值为 文件。 |
+| line2-property | line2Property | 设置 要用于 `fileDetails` 第二行文本的属性。 默认值为“`lastModifiedDateTime`”。 |
+| line3-property | line3Property | 设置 要用于 `fileDetails` 第三行文本的属性。 `size`默认值为 文件。 |
 
 以下示例将组件的行为更改为从特定查询提取数据。
 
@@ -122,16 +122,16 @@ mgt-file {
 | 开发人员提供 `{site-id}` AND `{list-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /sites/{site-id}/lists/{list-id}/items/{item-id}/driveItem` |
 | 开发人员提供 `{user-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}` |
 | 开发人员提供 `{user-id}` AND `{item-path}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /users/{user-id}/drive/root:/{item-path}` |
-| `insight-type` 设置为 `trending` AND 开发人员提供 `{insight-id}` | Sites.Read.All | `GET /me/insights/trending/{insight-id}/resource` |
-| 开发人员提供 `{user-id or upn}` `{insight-id}` AND AND `insight-type` 设置为 `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending/{insight-id}/resource` |
-| `insight-type` 设置为 `used` AND 开发人员提供 `{insight-id}` | Sites.Read.All | `GET /me/insights/used/{id}/resource` |
-| 开发人员提供 `{user-id or upn}` `{insight-id}` AND AND `insight-type` 设置为 `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used/{id}/resource` |
+| `insight-type` 设置为 AND `trending` 开发人员提供 `{insight-id}` | Sites.Read.All | `GET /me/insights/trending/{insight-id}/resource` |
+| 开发人员提供 `{user-id or upn}` AND `{insight-id}` AND `insight-type` 设置为 `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending/{insight-id}/resource` |
+| `insight-type` 设置为 AND `used` 开发人员提供 `{insight-id}` | Sites.Read.All | `GET /me/insights/used/{id}/resource` |
+| 开发人员提供 `{user-id or upn}` AND `{insight-id}` AND `insight-type` 设置为 `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used/{id}/resource` |
 | `insight-type` is `shared` AND 开发人员提供 `{insight-id}` | Sites.Read.All | `GET /me/insights/shared/{id}/resource` |
-| 开发人员提供 `{user-id or upn}` `{insight-id}` AND AND `insight-type` 设置为 `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared/{id}/resource` |
+| 开发人员提供 `{user-id or upn}` AND `{insight-id}` AND `insight-type` 设置为 `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared/{id}/resource` |
 
 ## <a name="templates"></a>模板
 
-组件 `mgt-file` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含组件 `<template>` 内的元素，将值 `data-type` 设置为下列值之一：
+组件 `mgt-file` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含 `<template>` 组件内的元素，将 `data-type` 值设置为下列值之一：
 
 | 数据类型 | 数据上下文 | 说明 |
 | ----------- | -------------- | ------------- |
@@ -151,7 +151,7 @@ mgt-file {
 |`groupFiles`|按组 ID 列出文件|提供时 `groupId` 使用|
 |`siteFiles`|按网站 ID 列出文件|提供时 `siteId` 使用|
 |`userFiles`|按用户 ID 列出文件|提供时 `userId` 使用|
-|`insightFiles`|按见解列出文件|提供 `insightType` 和 `insightId` 时使用|
+|`insightFiles`|按见解列出文件|提供 和 `insightType` `insightId` 时使用|
 |`fileQueries`|按查询列出文件|提供时 `fileQuery` 使用|
 
-若要详细了解如何配置缓存[，请参阅](../customize-components/cache.md)Caching。
+若要详细了解如何配置缓存[，请参阅Caching](../customize-components/cache.md)。

@@ -4,13 +4,13 @@ description: 检索 governanceRoleDefinition 的属性和关系。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 441e23267b4b2358331fc08f92872c4839d7f4fc
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+author: japere
+ms.openlocfilehash: c154871edfb183ba56d0e03a8fdac16c8500a0d2
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934316"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510469"
 ---
 # <a name="get-governanceroledefinition"></a>获取 governanceRoleDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "60934316"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 检索 [governanceRoleDefinition 的属性和关系](../resources/governanceroledefinition.md)。
 
@@ -58,7 +58,7 @@ GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions/{id}
 GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法 **不支持**[OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法 **不支持** [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求头
 | 名称      |说明|

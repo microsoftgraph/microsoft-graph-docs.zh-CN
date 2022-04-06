@@ -5,29 +5,26 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ebd23b66aa59457518e3613902e0b6d850905f92
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 2f6a06e7b6de066e0a8b06383ca3882504dfbf87
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224760"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63720848"
 ---
 # <a name="accessreviewinstancedecisionitem-filterbycurrentuser"></a>accessReviewInstanceDecisionItem：filterByCurrentUser
 命名空间：microsoft.graph
 
-检索调用用户是审阅者的给定 accessReviewInstance 上的所有[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)对象。 [](../resources/accessreviewinstance.md)
+检索调用用户是审阅者的给定 accessReviewInstance 上的所有 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象。[](../resources/accessreviewinstance.md)
 
->[!NOTE]
->此 API 的默认页面大小为 100 accessReviewScheduleDefinition 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
-
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.Read.All、AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|AccessReview.Read.All、AccessReview.ReadWrite.All|
+|应用程序|AccessReview.Read.All、AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,12 +41,14 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|筛选以查询当前用户的决策对象。 可能的值是 `reviewer` `unknownFutureValue` 、。 使用 `reviewer` 。 必需。|
+|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|筛选以查询当前用户的决策对象。 可能的值是 、`reviewer``unknownFutureValue`。 使用 `reviewer`。 必需。|
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` 、 `$filter` `$orderBy` 、 、 `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select`、 `$filter`、 `$orderBy`、 和 `$skip``$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+此 API 的默认页面大小为 100 **accessReviewInstanceDecisionItem** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -59,7 +58,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 集合。
+如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 集合。
 
 ## <a name="examples"></a>示例
 
@@ -90,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstancedecisionitem-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstancedecisionitem-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

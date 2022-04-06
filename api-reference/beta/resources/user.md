@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 28f778723b12e6400a84079fb79eb4e7f842f63b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
-ms.translationtype: HT
+ms.openlocfilehash: 63a760648d7fcb58a6a24ee3505c82c65ee5c273
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336891"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510223"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -70,7 +70,7 @@ ms.locfileid: "63336891"
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
 | [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。 |
@@ -250,7 +250,7 @@ ms.locfileid: "63336891"
 ### <a name="mail-and-proxyaddresses-properties"></a>mail 和 proxyAddresses 属性
 **mail** 和 **proxyAddresses** 都是与电子邮件相关的属性。 **proxyAddresses** 是仅与 Microsoft Exchange 服务器相关的地址集合。 它用于存储绑定到单个邮箱的用户的邮件地址列表。 将 **mail** 属性用作用户的电子邮件地址具有包括用户登录在内的各种用途，同时该属性定义了主代理地址。
  
-可通过 MS Graph 上的 [GET 用户](add link) API 检索 **mail** 和 **proxyAdress**。 可以通过 [更新用户的 PATCH 方法](add link) API 来更新 **mail**，但 **proxyAddresses** 无法通过 Microsoft Graph 进行更新。 更新用户的 **mail** 属性时，将触发重新计算 **proxyAddresses**，并将新更新的邮件设置为主要代理地址，但在以下方案中除外： 
+可通过 MS Graph 上的 [GET 用户](../api/user-get.md) API 检索 **mail** 和 **proxyAdress**。 可以通过 [更新用户的 PATCH 方法](../api/user-update.md) API 来更新 **mail**，但 **proxyAddresses** 无法通过 Microsoft Graph 进行更新。 更新用户的 **mail** 属性时，将触发重新计算 **proxyAddresses**，并将新更新的邮件设置为主要代理地址，但在以下方案中除外： 
  
 1. 如果用户具有包含 Microsoft Exchange 的许可证，则其所有代理地址必须属于租户上的已验证域。任何不属于已验证域的域都将以无提示方式删除。
 2. 如果用户是来宾，并且主代理地址包含具有 #EXT# 的来宾用户 UPN 字符串，则不会将用户的邮件设置为主代理地址。
@@ -308,6 +308,7 @@ ms.locfileid: "63336891"
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) 集合| 用户的使用条款接受状态。只读。可以为 null。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|表示用户已被授予的某个应用程序的应用角色。支持 `$expand`。 |
+|身份验证|[身份验证](../resources/authentication.md)|**TODO：添加说明**|
 |日历|[calendar](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
 |calendarView|[event](event.md) 集合|日历的日历视图。只读。可为 Null。|

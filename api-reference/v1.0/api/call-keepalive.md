@@ -1,16 +1,16 @@
 ---
 title: call： keepAlive
 description: 每隔 15 到 45 分钟对此 API 提出请求，以确保正在进行的调用保持活动状态。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6848af1587bfc79573781d20afbf0ca4e3220e2d
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 7e951d6e76bbe41cf3027b124a5f130e0efbd448
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346342"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608084"
 ---
 # <a name="call-keepalive"></a>call： keepAlive
 
@@ -24,14 +24,16 @@ ms.locfileid: "62346342"
 
 尝试向已结束的呼叫发送请求将导致错误 `404 Not-Found` 。 与调用相关的资源应在应用程序端清理。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 调用此 API 可能需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | 无                                        |
+| Application                            | Calls.Initiate.All、Calls.AccessMedia.All |
+
+> **注意：** 创建调用时检查权限;调用此 API 时，不会进行其他权限检查。 Calls.AccessMedia.All 仅对于使用应用托管媒体的呼叫是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

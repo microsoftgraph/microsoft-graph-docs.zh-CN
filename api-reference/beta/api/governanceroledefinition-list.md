@@ -4,23 +4,23 @@ description: 获取资源上的 governanceRoleDefinitions 集合。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 89ce17091cf141269414b29d06c81110308fab82
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 35f3d30a39dda6aacdfd6f06215b82746b75788e
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695014"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510286"
 ---
 # <a name="list-governanceroledefinitions"></a>列出 governanceRoleDefinitions
 
 命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-获取资源上的 [governanceRoleDefinitions](../resources/governanceroledefinition.md) 集合。
+获取资源 [上的 governanceRoleDefinitions](../resources/governanceroledefinition.md) 集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -47,7 +47,7 @@ ms.locfileid: "60695014"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | PrivilegedAccess.Read.AzureADGroup |
 
-除了权限范围之外，此 API 要求请求程序至少具有一角色分配资源访问权限。
+除了权限范围之外，此 API 要求请求程序至少具有一角色分配资源的权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{res
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -66,7 +66,7 @@ GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{res
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和 governanceRoleDefinition](../resources/governanceroledefinition.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 governanceRoleDefinition](../resources/governanceroledefinition.md) 对象集合。
 ## <a name="example"></a>示例
 <!-- {
   "blockType": "request",

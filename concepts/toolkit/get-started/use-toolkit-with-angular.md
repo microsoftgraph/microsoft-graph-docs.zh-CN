@@ -1,22 +1,22 @@
 ---
 title: 将 Microsoft Graph Toolkit与 Angular
-description: 在应用程序应用程序中Graph Toolkit Microsoft Angular入门。
+description: 开始应用程序Graph Toolkit Microsoft Angular。
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: da50a18176a5945c3b90b136766149ff83951692
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 9131fa4a1e161c93983fea3d615ebd1fc78bf0b7
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032081"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588755"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>将 Microsoft Graph Toolkit与 Angular
 
-除了Graph Toolkit JavaScript 和 HTML 外，Microsoft Angular 还非常支持 Web 框架（如 Web 框架）。 本主题介绍如何将 Microsoft Graph Toolkit与 Angular。 有关介绍如何创建新的 Angular 应用程序并使用 Microsoft Graph Toolkit 的分步演练，请参阅将[Microsoft](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/)Graph Toolkit 与 Angular。
+除了Graph Toolkit JavaScript 和 HTML 外，Microsoft Angular 组件还非常与 Web 框架（如 web 框架）一起运行。 本主题介绍如何将 Microsoft Graph Toolkit与 Angular。 有关介绍如何创建新的 Angular 应用程序并使用 Microsoft Graph Toolkit 的分步演练，请参阅将 [Microsoft](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/) Graph Toolkit 与 Angular。
 
 ## <a name="add-the-microsoft-graph-toolkit"></a>添加 Microsoft Graph Toolkit
 
-首先，你需要通过将 添加到 中的 在 Angular 应用程序中启用 `CUSTOM_ELEMENT_SCHEMA` 自定义 `@NgModule() decorator` 元素 `app.module.ts` 。 以下示例显示了具体的操作方法：
+首先，你需要通过将 添加到 中的 在 Angular 应用程序中启用`CUSTOM_ELEMENT_SCHEMA`自定义`@NgModule() decorator`元素`app.module.ts`。 以下示例显示了具体的操作方法：
 ```TypeScript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -66,7 +66,7 @@ export class AppComponent implements OnInit {
 }
 ```
 ### <a name="create-an-appclient-id"></a>创建应用/客户端 ID
-若要获取客户端 ID，需要在 Azure AD 中 [注册](../../auth-register-app-v2.md) 应用程序。 
+若要获取客户端 ID，需要在客户端 ID 中[注册](../../auth-register-app-v2.md)Azure AD。 
 
 ## <a name="add-components"></a>添加组件
 
@@ -78,7 +78,7 @@ export class AppComponent implements OnInit {
 
 ## <a name="customizing-components-with-angular"></a>使用自定义组件Angular
 
-所有 Microsoft Graph Toolkit 组件[](../customize-components/templates.md)都支持自定义模板，通过自定义模板可以修改组件的内容。 自定义组件的默认语法是使用双括号来引用每个返回项目的属性数据，如下所示：
+所有 Microsoft Graph Toolkit组件都支持自定义模板[](../customize-components/templates.md)，通过自定义模板可以修改组件的内容。 自定义组件的默认语法是使用双括号来引用每个返回项目的属性数据，如下所示：
 
 ```html
 <!-- Double braces are used for data binding in Angular. This will throw an error. -->
@@ -91,9 +91,9 @@ export class AppComponent implements OnInit {
 
 但是Angular，双括号用于数据绑定，如果尝试使用双大括号语法，Angular编译器将引发错误。
 
-可以通过使用 将用户所使用的默认字符Toolkit双括号而非双括号来避免这些 `TemplateHelper` 错误。 最好在顶级应用组件中这样做，以便它可全局应用。
+可以通过使用 将用户所使用的默认字符Toolkit双括号而非双括号来避免这些错误`TemplateHelper`。 最好在顶级应用组件中这样做，以便它可全局应用。
 
-导入 `TemplateHelper` 并使用 `.setBindingSyntax()` 方法设置自定义绑定语法。
+`TemplateHelper`导入 并使用 方法`.setBindingSyntax()`设置自定义绑定语法。
 
 ```TypeScript
 import { Component, OnInit } from '@angular/core';

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d9ae143051bd839ac34b4d5b326d2768bc821186
-ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
+ms.openlocfilehash: e45be47c3ed71b86f0a6415abd54f2a442a9cc2e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63500915"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671424"
 ---
 # <a name="delete-unifiedroledefinition"></a>删除 unifiedRoleDefinition
 
@@ -35,7 +35,7 @@ ms.locfileid: "63500915"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All  |
+|应用程序 | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
 
@@ -43,15 +43,15 @@ ms.locfileid: "63500915"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  DeviceManagementRBAC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | DeviceManagementRBAC.ReadWrite.All |
+|应用程序 | DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-a-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All   |
+|委派（工作或学校帐户） |  RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|应用程序 | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

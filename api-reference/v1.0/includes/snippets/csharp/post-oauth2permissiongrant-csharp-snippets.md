@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 689bd562b1a3b89bfb1759e44ddea5ead2764ac1d808ac4e1b442a6643b833cc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6e18a4922e9b8f2cf6dc2d3edc1ddad360ad13a
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57277498"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758953"
 ---
 ```csharp
 
@@ -13,11 +13,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var oAuth2PermissionGrant = new OAuth2PermissionGrant
 {
-    ClientId = "clientId-value",
-    ConsentType = "consentType-value",
-    PrincipalId = "principalId-value",
-    ResourceId = "resourceId-value",
-    Scope = "scope-value"
+    ClientId = "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+    ConsentType = "AllPrincipals",
+    ResourceId = "943603e4-e787-4fe9-93d1-e30f749aae39",
+    Scope = "DelegatedPermissionGrant.ReadWrite.All"
 };
 
 await graphClient.Oauth2PermissionGrants

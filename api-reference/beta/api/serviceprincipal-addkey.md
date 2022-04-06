@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal： addKey
 description: 向 servicePrincipal 添加密钥凭据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ef3c1d740b2fe84232d6c6732d5ad15f6f591f6b
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 0fbeb8479463fd52c2cbbf041ba24470ae2d7307
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490635"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671662"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal： addKey
 
@@ -25,13 +25,13 @@ ms.locfileid: "58490635"
 
 作为此方法的请求验证的一部分，将验证拥有现有密钥的证明，然后才能执行该操作。 
 
-没有任何现有有效证书的 ServicePrincipals (即：尚未添加任何证书，或所有证书都已过期) ，将不能使用此服务操作。 [Update servicePrincipal](../api/serviceprincipal-update.md) 可用于执行更新。
+没有任何现有有效证书的 ServicePrincipals (即尚未添加任何证书，或者所有证书都已过期) ，将不能使用此服务操作。 [Update servicePrincipal](../api/serviceprincipal-update.md) 可用于执行更新。
 
 ## <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All、Application.ReadWrite.All、Directory.ReadWrite.All   |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 无。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -57,9 +57,9 @@ POST /servicePrincipals/{id}/addKey
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新 servicePrincipal 密钥凭据。 __type、usage__ 和 __key__ 是此用法的必需属性。  受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：用法必须为 `Verify` 。</li><li>`X509CertAndPassword`：用法必须为 `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText。__ 此属性仅对类型 为 的键是必需的 `X509CertAndPassword` 。 否则， `null` 设置为 。|
-| proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss`- 颁发者需要是发出调用的 servicePrincipal 的 ID。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
+| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新 servicePrincipal 密钥凭据。 __类型__、__用法____和密钥__ 是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：用法必须为 `Verify`。</li><li>`X509CertAndPassword`：用法必须为 `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText__ 。 此属性仅对类型 为 的键是必需的 `X509CertAndPassword`。 否则，设置为 `null` 。|
+| proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss`- 颁发者需要是发出调用的 servicePrincipal 的 ID。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应为 `nbf` + 10 分钟。</li></ul><br>有关生成此拥有令牌证明的步骤，请参阅生成滚动密钥的 [拥有令牌证明](/graph/application-rollkey-prooftoken)。|
 
 ## <a name="response"></a>响应
 

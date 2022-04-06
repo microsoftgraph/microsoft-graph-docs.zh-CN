@@ -1,24 +1,25 @@
 ---
 title: cloudPcOnPremisesConnection：updateAdDomainPassword
-description: 更新 Active Directory 域密码，成功进行本地连接。 当 onPremisesConnection 的类型为 hybridAzureADJoin 时，支持此 API。
+description: 更新 Active Directory 域密码，以成功建立 Azure 网络连接。 当 onPremisesConnection 的类型为 hybridAzureADJoin 时，支持此 API。
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3a2f518821eb7825146450dc6aaf2da00e39dd36
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: b10b3d2cdac6ce00119a374987c71ee19f0f94a0
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266311"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587726"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection：updateAdDomainPassword
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [onPremisesConnection](../resources/cloudpconpremisesconnection.md)的 Active Directory 域密码。 当 **onPremisesConnection** 的类型为 时，支持此 `hybridAzureADJoin` API。
+更新 [onPremisesConnection](../resources/cloudpconpremisesconnection.md) 的 Active Directory 域密码。 当 **onPremisesConnection** 的类型为 时，支持此 API `hybridAzureADJoin`。
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +28,7 @@ ms.locfileid: "61266311"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CloudPC.ReadWrite.All|
+|Application|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -87,7 +88,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/cloudpconpremisesconnection-updateaddomainpassword-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpconpremisesconnection-updateaddomainpassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

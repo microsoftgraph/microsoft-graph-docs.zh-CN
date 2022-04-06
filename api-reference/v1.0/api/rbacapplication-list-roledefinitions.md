@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1cdf2b6091b8e370c9aff541636f9d9e7209b2e7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3dcec84548ba6c9ce1fc1c1f85eafea4bc0887f9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124471"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672628"
 ---
 # <a name="list-unifiedroledefinitions"></a>列出 unifiedRoleDefinitions
 
 命名空间：microsoft.graph
 
-获取提供商的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象列表。
+获取提供商 [的 unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -24,7 +24,7 @@ ms.locfileid: "62124471"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
@@ -37,7 +37,7 @@ GET /roleManagement/directory/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持在 `$filter` 、 (`eq` `in` 和属性) OData 查询参数的运算符 `id` 和 `displayName` `isBuiltIn` 运算符。 它还支持 `$expand` 关系。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持使用 (`$filter` `eq` `in` 和属性) OData 查询参数的`id``displayName``isBuiltIn`运算符和运算符。 它还支持 `$expand` 关系。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -51,7 +51,7 @@ GET /roleManagement/directory/roleDefinitions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象集合。
 
 ## <a name="example"></a>示例
 

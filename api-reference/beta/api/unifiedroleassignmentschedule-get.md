@@ -1,16 +1,16 @@
 ---
 title: 获取 unifiedRoleAssignmentSchedule
 description: 读取 unifiedRoleAssignmentSchedule 对象的属性和关系。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a1a0c4869d592daa5c690018ab317399ab001a40
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 222c225faf4cc443ebb6b6b99bacef4bc613a3b3
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115281"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510665"
 ---
 # <a name="get-unifiedroleassignmentschedule"></a>获取 unifiedRoleAssignmentSchedule
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "62115281"
 
 读取 [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -51,7 +51,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 对象。
 
 ## <a name="examples"></a>示例
 

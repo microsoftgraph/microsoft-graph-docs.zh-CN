@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8a2cf4ddba451fe42d2bcb46e495c0f526c3c105
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: aad4c8b6c26ea9197921cb9005f012323038f33a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100465"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671249"
 ---
 # <a name="list-connectors"></a>List connectors
 
@@ -25,9 +25,9 @@ ms.locfileid: "62100465"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/connector.md) 代码和 connector 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [connector](../resources/connector.md) 对象集合。
 
 ## <a name="example"></a>示例
 

@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备配置 - Microsoft Gaaph API
-description: 列出定义Graph配置设备的 Intune 终结点的 Microsoft (API) REST 应用程序。
+description: 列出用于Graph API租户Intune配置设备的 REST (REST) 的 Microsoft 解决方案。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 574998aa66144f8b3a6a90c92f69e016891268aa
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 15533e2fc60f32dc924b6557e8039b8e7851213d
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368215"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629419"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -124,8 +124,12 @@ ms.locfileid: "63368215"
 - [Aosp 设备所有者证书配置文件基础](intune-deviceconfig-aospdeviceownercertificateprofilebase.md)
 - [Aosp 设备所有者合规性策略](intune-deviceconfig-aospdeviceownercompliancepolicy.md)
 - [Aosp 设备所有者设备配置](intune-deviceconfig-aospdeviceownerdeviceconfiguration.md)
+- [Aosp 设备所有者企业Wi-Fi配置](intune-deviceconfig-aospdeviceownerenterprisewificonfiguration.md)
 - [Aosp 设备所有者 PKCS 证书配置文件](intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md)
+- [Aosp 设备所有者 SCEP 证书配置文件](intune-deviceconfig-aospdeviceownerscepcertificateprofile.md)
 - [Aosp 设备所有者信任的根证书](intune-deviceconfig-aospdeviceownertrustedrootcertificate.md)
+- [Aosp 设备所有者Wi-Fi配置](intune-deviceconfig-aospdeviceownerwificonfiguration.md)
+- [Aosp 设备所有者Wi-Fi安全类型](intune-deviceconfig-aospdeviceownerwifisecuritytype.md)
 - [应用安装控件类型](intune-deviceconfig-appinstallcontroltype.md)
 - [应用列表项](intune-deviceconfig-applistitem.md)
 - [应用列表类型](intune-deviceconfig-applisttype.md)
@@ -379,6 +383,7 @@ ms.locfileid: "63368215"
 - [键/值对](intune-deviceconfig-keyvaluepair.md)
 - [键/值对](intune-deviceconfig-keyvaluepair.md)
 - [展台模式托管主屏幕 PIN 复杂性](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
+- [展台模式类型](intune-deviceconfig-kioskmodetype.md)
 - [LAN Manager 身份验证级别](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [本地安全选项管理员提升提示行为类型](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
 - [允许本地安全选项格式化和弹出可移动媒体的用户类型](intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)
@@ -598,7 +603,7 @@ ms.locfileid: "63368215"
 - [Windows Defender 防篡改保护选项](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Windows 传递优化配置](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows 传递优化模式](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
-- [Windows边缘展台类型](intune-deviceconfig-windowsedgekiosktype.md)
+- [Windows Edge 展台类型](intune-deviceconfig-windowsedgekiosktype.md)
 - [Windows 防火墙网络配置文件](intune-deviceconfig-windowsfirewallnetworkprofile.md)
 - [Windows 防火墙规则](intune-deviceconfig-windowsfirewallrule.md)
 - [Windows 防火墙规则接口类型](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
@@ -616,17 +621,17 @@ ms.locfileid: "63368215"
 - [Windows Kiosk Azure AD 用户](intune-deviceconfig-windowskioskazureaduser.md)
 - [Windows Kiosk 配置](intune-deviceconfig-windowskioskconfiguration.md)
 - [Windows Kiosk 桌面应用](intune-deviceconfig-windowskioskdesktopapp.md)
-- [Windows展台强制更新计划](intune-deviceconfig-windowskioskforceupdateschedule.md)
+- [Windows 展台强制更新计划](intune-deviceconfig-windowskioskforceupdateschedule.md)
 - [Windows Kiosk 本地组](intune-deviceconfig-windowskiosklocalgroup.md)
 - [Windows Kiosk 本地用户](intune-deviceconfig-windowskiosklocaluser.md)
 - [Windows Kiosk 多个应用](intune-deviceconfig-windowskioskmultipleapps.md)
 - [Windows Kiosk 配置文件](intune-deviceconfig-windowskioskprofile.md)
 - [Windows Kiosk 单个 UWP 应用](intune-deviceconfig-windowskiosksingleuwpapp.md)
-- [Windows展台单一 win32 应用](intune-deviceconfig-windowskiosksinglewin32app.md)
+- [Windows Kiosk Single win32 应用](intune-deviceconfig-windowskiosksinglewin32app.md)
 - [Windows Kiosk 用户](intune-deviceconfig-windowskioskuser.md)
 - [Windows Kiosk UWP 应用](intune-deviceconfig-windowskioskuwpapp.md)
 - [Windows Kiosk 访问者](intune-deviceconfig-windowskioskvisitor.md)
-- [Windows展台 win32 应用](intune-deviceconfig-windowskioskwin32app.md)
+- [Windows Kiosk win32 应用](intune-deviceconfig-windowskioskwin32app.md)
 - [Windows 网络隔离策略](intune-deviceconfig-windowsnetworkisolationpolicy.md)
 - [Windows Phone 8.1 证书配置文件基础](intune-deviceconfig-windowsphone81certificateprofilebase.md)
 - [Windows Phone 8.1 合规性策略](intune-deviceconfig-windowsphone81compliancepolicy.md)
@@ -657,4 +662,7 @@ ms.locfileid: "63368215"
 - [Windows VPN 连接类型](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi 配置](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi 企业版 e a p 配置](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Windows 有线网络配置](intune-deviceconfig-windowswirednetworkconfiguration.md)
+- [有线网络身份验证方法](intune-deviceconfig-wirednetworkauthenticationmethod.md)
+- [有线网络身份验证类型](intune-deviceconfig-wirednetworkauthenticationtype.md)
 - [有线网络接口](intune-deviceconfig-wirednetworkinterface.md)

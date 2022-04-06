@@ -1,29 +1,29 @@
 ---
 title: 列出成员
-description: 使用此 API 获取管理 (用户和) 的成员列表。
+description: 使用此 API 获取管理单元中 (组) 的成员列表。
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 518acaa07960f5569b2996c797b7cfcb4671a9d1
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 4a87d88bbd69a9a9a93b80968b1719780d2f032e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947033"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672495"
 ---
 # <a name="list-members"></a>列出成员
 
 命名空间：microsoft.graph
 
-使用此 API 获取管理 (用户和) 的成员列表。
+使用此 API 获取管理单元中 (组) 的成员列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -47,7 +47,7 @@ GET /directory/administrativeUnits/{id}/members/$ref
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [user](../resources/user.md) 和/或 [group](../resources/group.md) 对象集合。  相反，如果放在请求末尾，响应将包含指向成员的链接 `$ref` `@odata.id` /URL 集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [user](../resources/user.md) 和/或 [group](../resources/group.md) 对象集合。  相反，如果放在 `$ref` 请求末尾，响应将包含 `@odata.id` 指向成员的链接/URL 集合。
 
 ## <a name="examples"></a>示例
 ##### <a name="list-member-objects"></a>列出成员对象

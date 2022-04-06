@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2088bfea2aea6a8383b05826bf3783ea1a84de3f
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 6122c36481204c7f6e7269839be625e45db5432a
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331868"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477466"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>accessPackageCatalog 资源类型
 
@@ -18,10 +18,12 @@ ms.locfileid: "63331868"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD中，](entitlementmanagement-overview.md)访问包目录是零个或多个访问包的容器。 访问包目录还可能包含链接的资源，这些资源用于这些访问包中以提供访问权限。 若要查看或更改目录作用域角色的成员身份，请使用角色 [分配 API 和](unifiedroleassignment.md) 权利管理 RBAC 提供程序。
+在[Azure AD中，](entitlementmanagement-overview.md)访问包目录是零个或多个访问包的容器。 Azure AD权限管理包括一个名为"常规"的内置 **目录**。
+
+访问包目录还可能包含链接的资源，这些资源用于这些访问包中以提供访问权限。 若要查看或更改目录作用域角色的成员身份，请使用角色 [分配 API 和](unifiedroleassignment.md) 权利管理 RBAC 提供程序。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -49,8 +51,8 @@ ms.locfileid: "63331868"
 |catalogType|String|`UserManaged`或`ServiceDefault`之一。 |
 |createdBy|String|创建此资源的用户的 UPN。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|说明|字符串|访问包目录的说明。|
-|displayName|字符串|访问显示名称目录的索引。 支持 `$filter`（`eq`、`contains`）。|
+|说明|String|访问包目录的说明。|
+|displayName|String|访问显示名称目录的索引。 支持 `$filter`（`eq`、`contains`）。|
 |id|String| 只读。|
 |isExternallyVisible|Boolean|租户外部的用户是否可以请求此目录中的访问包。|
 |modifiedBy|String|上次修改此资源的用户的 UPN。 只读。|

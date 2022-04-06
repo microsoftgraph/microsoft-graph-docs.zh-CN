@@ -1,16 +1,16 @@
 ---
 title: cloudPcOnPremisesConnectionStatusDetails 资源类型
-description: 云电脑本地连接的状态详细信息。
+description: 云电脑 Azure 网络连接的状态详细信息。
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d2ac1616bfe48eec2d589cea7e1dc44404429601
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: dbcf7e34ac1d5b38f2ff2c7f3e6cdb91afa86543
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780728"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586922"
 ---
 # <a name="cloudpconpremisesconnectionstatusdetails-resource-type"></a>cloudPcOnPremisesConnectionStatusDetails 资源类型
 
@@ -19,6 +19,8 @@ ms.locfileid: "60780728"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [cloudPcOnPremisesConnection 的状态详细信息](../resources/cloudpconpremisesconnection.md)。
+
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## <a name="properties"></a>属性
 

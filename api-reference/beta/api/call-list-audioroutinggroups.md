@@ -1,16 +1,16 @@
 ---
 title: 列出音频路由组
 description: 检索 **audioRoutingGroup 对象** 的列表。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e175b9de2e4230098503600bd926612f340dda78
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 324365fb111c22146f8e3c265a3ec6de3e75057d
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129946"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607573"
 ---
 # <a name="list-audio-routing-groups"></a>列出音频路由组
 
@@ -20,14 +20,14 @@ ms.locfileid: "62129946"
 
 检索 **audioRoutingGroup 对象** 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                               |
 | 委派（个人 Microsoft 帐户） | 不支持。                               |
-| 应用程序     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /communications/calls/{id}/audioRoutingGroups
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
@@ -49,7 +49,7 @@ GET /communications/calls/{id}/audioRoutingGroups
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [audioRoutingGroup](../resources/audioroutinggroup.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [audioRoutingGroup](../resources/audioroutinggroup.md) 对象集合。
 
 ## <a name="example"></a>示例
 

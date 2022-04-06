@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备管理 - Microsoft Graph API
-description: 列出定义Graph管理设备的适用于 Intune 终结点的 Microsoft (API) REST 应用程序。
+description: 列出定义租户Graph API Intune的 (REST) 的 Microsoft 解决方案。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: c9f4eee1ab3c4b1ea58b27fd0fea2af879b909e9
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: a5c2263feafc8316be17d5e3ec6051c77861b7f8
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368194"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628831"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -203,6 +203,8 @@ ms.locfileid: "63368194"
 - [安全基线状态摘要](intune-deviceintent-securitybaselinestatesummary.md)
 - [安全基线模板](intune-deviceintent-securitybaselinetemplate.md)
 - [共享 Apple 设备用户](intune-devices-sharedappledeviceuser.md)
+- [租户附加 r b a c](intune-devices-tenantattachrbac.md)
+- [租户附加 r b a c 状态](intune-devices-tenantattachrbacstate.md)
 - [Tuple_2操作type_collection_1执行顺序](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [用户体验分析应用运行状况应用性能（按应用版本）](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)
@@ -273,7 +275,7 @@ ms.locfileid: "63368194"
 - [Windows 恶意软件名称计数](intune-devices-windowsmalwarenamecount.md)
 - [Windows 恶意软件概述](intune-devices-windowsmalwareoverview.md)
 - [Windows 恶意软件严重性](intune-devices-windowsmalwareseverity.md)
-- [Windows恶意软件严重性计数](intune-devices-windowsmalwareseveritycount.md)
+- [Windows 恶意软件严重性计数](intune-devices-windowsmalwareseveritycount.md)
 - [Windows 恶意软件状态](intune-devices-windowsmalwarestate.md)
 - [Windows 恶意软件状态计数](intune-devices-windowsmalwarestatecount.md)
 - [Windows 恶意软件威胁状态](intune-devices-windowsmalwarethreatstate.md)

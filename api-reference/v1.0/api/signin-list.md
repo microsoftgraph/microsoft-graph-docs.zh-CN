@@ -1,16 +1,16 @@
 ---
 title: 列出 signIn
-description: 介绍 Microsoft (API) signIn 资源Graph方法。
+description: 介绍 Microsoft (中的 signIn) 实体Graph API。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 615566490fb902724142a96d4ca0fc7c3622e4e9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f4e3f31e3a713d39129d99d726b6628b3d4e10dc
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128470"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629017"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -18,9 +18,9 @@ ms.locfileid: "62128470"
 
 检索租户的 Azure AD 用户登录信息。 本质上是交互式登录 (其中用户名/密码作为身份验证令牌) 且成功的联合登录当前包含在登录日志中。 
 
-最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有默认保留期Azure Active Directory (Azure AD) [登录事件](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)可用。
+最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有 Azure Active Directory 中发生的登录事件 (Azure AD) [保留](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) 期才可用。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -33,15 +33,15 @@ ms.locfileid: "62128470"
 > [!IMPORTANT]
 > 此 API 有 [一个已知](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
-应用必须[正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)Azure AD。
+应用必须 [正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD。
 
-除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要详细了解目录角色，请参阅Azure AD[角色：](/azure/active-directory/roles/permissions-reference)
+除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 全局读取者
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全读取者
++ 安全信息读取者
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,11 +52,11 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$top` 、 `$skiptoken` 和 `$filter` OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 、 `$top`和 `$skiptoken``$filter` OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象集合。 对象的集合根据 **createdDateTime** 按降序列出。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象集合。 对象集合根据 **createdDateTime** 按降序列出。
 
 ## <a name="examples"></a>示例
 
@@ -186,7 +186,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>示例 2：检索 appDisplayName 以"Graph"开头的应用的前 10 Graph
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>示例 2：检索 appDisplayName 以"Graph"开头的应用的前 10 个登录
 
 #### <a name="request"></a>请求
 
@@ -199,7 +199,7 @@ Content-type: application/json
   "name": "list_signins_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDisplayName,'Graph')&top=10
+GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDisplayName,'Graph')&$top=10
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-signins-2-csharp-snippets.md)]

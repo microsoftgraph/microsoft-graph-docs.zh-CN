@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 457a0806844a4acab8ba51eb84b9750ff3034198
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 4ca2ff0dcd86461e05197b3a34293e222926153b
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60481046"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629643"
 ---
 # <a name="list-iosstoreapps"></a>列出 iosStoreApps
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1618
+Content-Length: 1642
 
 {
   "value": [
@@ -112,12 +112,14 @@ Content-Length: 1618
         "v11_0": true,
         "v12_0": true,
         "v13_0": true,
-        "v14_0": true
+        "v14_0": true,
+        "v15_0": true
       }
     }
   ]
 }
 ```
+
 
 
 

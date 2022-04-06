@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a3c84dbe7b22ead4d3abeeabb4df970a71e4aad8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9b4b32e3340c66a3a61e4a132303f4bfeaa8caa3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090763"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669527"
 ---
 # <a name="get-connector"></a>Get connector
 
@@ -25,9 +25,9 @@ ms.locfileid: "62090763"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/connector.md) 代码和 connector 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [connector](../resources/connector.md) 对象。
 
 ## <a name="example"></a>示例
 

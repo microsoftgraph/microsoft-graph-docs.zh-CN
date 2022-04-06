@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: eedfdb613483c099216887bda1a86f18b780082b
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: ca78548f8fe4590ccde9d8faf8cb558c6572ca8f
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368222"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477816"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "63368222"
 |[更新 servicePrincipal](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |更新 servicePrincipal 对象。 |
 |[删除 servicePrincipal](../api/serviceprincipal-delete.md) | 无 |删除 servicePrincipal 对象。|
 |[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 createdObject 对象集合。|
-|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| 获取 ownedObject 对象集合。|
+|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 ownedObject 对象集合。|
 |[获取 delta](../api/serviceprincipal-delta.md)|servicePrincipal 集合| 获取服务主体的增量更改。 |
 |**应用角色分配**| | |
 |[列出 appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) 集合| 获取已分配到此服务主体的应用角色。|
@@ -40,9 +40,9 @@ ms.locfileid: "63368222"
 |[添加 appRoleAssignedTo](../api/serviceprincipal-post-approleassignedto.md) |[appRoleAssignment](approleassignment.md)| 向用户、组或服务主体分配此服务主体的应用角色。|
 |[移除 appRoleAssignedTo](../api/serviceprincipal-delete-approleassignedto.md) | 无 | 从用户、组或服务主体中移除此服务主体的应用角色分配。|
 |**证书和密码**| | |
-|[添加密码](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|向 servicePrincipal 添加强密码。|
+|[添加密码](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|将强密码或机密添加到 servicePrincipal。|
 |[添加 tokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)| 将自签名证书添加到服务主体。 主要用于从 [Azure AD 库](/azure/active-directory/saas-apps/tutorial-list)配置基于 SAML 的 SSO 应用程序。
-|[删除密码](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|从 servicePrincipal 中移除密码。|
+|[删除密码](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|从 servicePrincipal 中删除密码或机密。|
 |[加号键](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|向 servicePrincipal 添加密钥凭据。|
 |[删除键](../api/serviceprincipal-removekey.md)|无|从 servicePrincipal 中移除密钥凭据。|
 |**委派权限分类**| | |
@@ -115,7 +115,7 @@ ms.locfileid: "63368222"
 |servicePrincipalType|String|标识服务主体代表应用程序、托管标识还是旧版应用程序。 这是由 Azure AD 内部设置的。 **servicePrincipalType** 属性可以设置为三个不同的值： <ul><li>__应用程序__ - 表示应用程序或服务的服务主体。 **appId** 属性标识相关联的应用程序注册，并匹配 [应用程序](application.md)（可能来自不同租户）的 **appId**。 如果缺少关联的应用注册，将不会为服务主体颁发令牌。</li><li>__ManagedIdentity__ - 一个服务主体，代表 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)。 可授予表示托管标识的服务主体的访问权限和权限，但不能直接更新或修改。</li><li>__旧版__ - 表示在应用注册前或通过旧体验创建的应用程序的服务主体。 旧服务主体可以具有凭据、服务主体名称、答复 URL 以及其他由授权用户编辑但没有相关应用注册的属性。 值 **appId** 未将服务主体与应用注册关联。 服务主体只能在创建它的租户中使用。</li><li>__SocialIdp__ - 供内部使用。 </ul>|
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。只读。 <br><br>支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（多租户）中拥有 Microsoft 工作或学校帐户的用户。</li><li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户。</li><li>`PersonalMicrosoftAccount`：仅限拥有个人 Microsoft 帐户的用户。</li></ul> |
 |tags|String collection| 可用于对服务主体进行分类和识别的自定义字符串。不可为空。<br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。 |
-| tokenEncryptionKeyId |字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+| tokenEncryptionKeyId |String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定该服务主体代表的应用程序的已验证发布者。
 
 ## <a name="relationships"></a>关系

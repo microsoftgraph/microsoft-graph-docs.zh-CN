@@ -4,13 +4,13 @@ description: '获取 governanceRoleAssignmentRequest。 '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 364021cdf0d9f29f278f316bd6aaee5d6ff0f2d3
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+author: japere
+ms.openlocfilehash: 28112d23ac613cc3694b4105dc0d5300c7e180c8
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934588"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510476"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>获取 governanceRoleAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "60934588"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 获取 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。
 

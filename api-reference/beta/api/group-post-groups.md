@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ac356d2a1b66ff9a0a6605262c84045f677d88b8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 40e64178ff682ae9db4c58bffce686a84471361b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127715"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671396"
 ---
 # <a name="create-group"></a>创建组
 
@@ -32,7 +32,7 @@ ms.locfileid: "62127715"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
+|委派（工作或学校帐户） | Group.ReadWrite.All, Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Create、Group.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -57,7 +57,7 @@ POST /groups
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
-| displayName | string | 要在组的通讯簿中显示的名称。 最大长度为 256 个字符。 必需。 |
+| displayName | string | 要在组的通讯簿中显示的名称。最大长度为 256 个字符。必需。 |
 | mailEnabled | 布尔 | 设置为启用邮件的组的 `true`。必填。 |
 | mailNickname | string | 组的邮件别名，它对于组织中的 Microsoft 365 组是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 必需。 |
 | securityEnabled | boolean | 对于已启用安全机制的组（包括 Microsoft 365 组），请设置为 `true`。 必需。 **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。|
@@ -88,7 +88,7 @@ POST /groups
 
 ### <a name="example-1-create-a-microsoft-365-group"></a>示例 1：创建 Microsoft 365 组
 
-以下示例将创建 Microsoft 365 组。 由于尚未指定所有者，调用用户将自动添加为组的所有者。
+以下示例将创建 Microsoft 365 组。由于尚未指定所有者，调用用户将自动添加为组的所有者。
 
 
 #### <a name="request"></a>请求

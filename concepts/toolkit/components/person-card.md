@@ -3,12 +3,12 @@ title: Person-Card Microsoft Graph Toolkit 中的组件
 description: Person-Card组件是显示与人员相关详细信息的组件。
 ms.localizationpriority: medium
 author: vogtn
-ms.openlocfilehash: fcbb58a29405c5491db988a26b2c35a237aab346
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a9ebf62b31756702b925ca9b696bf62624205ee6
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337381"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672040"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card Microsoft Graph Toolkit 中的组件
 
@@ -61,7 +61,7 @@ The person card contains several configurable sections for displaying person det
 | 组织 | `boolean` - 指示是否显示个人卡片组织部分。 默认值为 `true`。  |
 | mailMessages | `boolean` - 指示是否显示"人员卡片邮件"部分。 默认值为 `true`。  |
 | files | `boolean` - 指示是否显示人员卡片文件部分。 默认值为 `true`。  |
-| 个人资料 | `boolean` - 指示是否显示个人卡片配置文件部分。 默认值为 `true`。  |
+| profile | `boolean` - 指示是否显示个人卡片配置文件部分。 默认值为 `true`。  |
 
 若要禁用分区，只需在应用 `false` 初始化代码中将 属性设置为 ：
 ```ts
@@ -168,14 +168,15 @@ mgt-person {
 
 | 配置 | 权限 | API | 节 |
 | --- | ---------- | ------- | --------- |
-| `personDetails`使用用户的 但`id`不带电子邮件进行设置，`userId`或设置为`personQuery``me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people)、 [/users/{id}/photo/$value](/graph/api/profilephoto-get) | 默认 |
+| `personDetails`使用用户的 但`id`不带电子邮件进行设置，`userId`或设置为`personQuery``me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people)、 [/users/{id}/photo/$value](/graph/api/profilephoto-get) | 默认值 |
 | `personQuery` 设置为不同于 `me` | People.Read | [/me/people/？$search=](/graph/api/user-list-people) | 默认值 |
-| `personQuery`设置为不同于 默认值`me``config.useContactApis`的值，`true` (设置为)  | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) | 默认 |
+| `personQuery`设置为不同于 默认值`me``config.useContactApis`的值，`true` (设置为)  | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) | 默认值 |
 | `showPresence` 设置为 `true` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) | 默认值 |
 | `sections.organization` 已启用 (默认)  | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | 组织 |
 | `sections.organization.showWorksWith` 将 (设置为默认)  | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | 组织 |
 | `sections.mailMessages` 已启用 (默认)  | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | 消息 |
 | `sections.files` 已启用 (默认)  | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) 和 [/me/insights/used](/graph/api/insights-list-used) | 文件 |
+| `sections.profile` 已启用 (默认)  | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta) | 个人资料 |
 
 该类 `MgtPersonCard` 还公开了 `getScopes` 一个静态方法，该方法返回人员卡片根据全局人员卡片配置运行所需的作用域数组。
 

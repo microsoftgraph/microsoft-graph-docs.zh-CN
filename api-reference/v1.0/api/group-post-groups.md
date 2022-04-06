@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6dcfd1d27c08bf9d302b44394f207589f3a2722d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5b684fed8c3349f620ab4c04c13b85b07a7d7fb7
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095352"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672187"
 ---
 # <a name="create-group"></a>创建组
 
@@ -32,7 +32,7 @@ ms.locfileid: "62095352"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
+|委派（工作或学校帐户） | Group.ReadWrite.All, Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Create、Group.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -85,7 +85,7 @@ POST /groups
 
 ### <a name="example-1-create-a-microsoft-365-group"></a>示例 1：创建 Microsoft 365 组
 
-以下示例将创建 Microsoft 365 组。 由于尚未指定所有者，调用用户将自动添加为组的所有者。
+以下示例将创建 Microsoft 365 组。由于尚未指定所有者，调用用户将自动添加为组的所有者。
 
 #### <a name="request"></a>请求
 

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 03f4764becd2753ab3cffcc60cf42d031e87c9c4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 28dfc04b0286ffc7adcb16dfb690da1051036bda
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131486"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723234"
 ---
 # <a name="get-cloudpcprovisioningpolicy"></a>获取 cloudPcProvisioningPolicy
 
@@ -44,7 +44,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` `$expand` 和 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` 和 `$expand` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -58,7 +58,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### <a name="response"></a>响应
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,8 +129,11 @@ Content-Type: application/json
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
-    "imageType":"custom",
-    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
+    "imageType": "custom",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+    "windowsSettings": {
+      "language": "en-US"
+    }
 }
 ```
 
@@ -178,7 +181,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### <a name="response"></a>响应
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -202,8 +205,11 @@ Content-Type: application/json
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
-    "imageType":"custom",
+    "imageType": "custom",
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+    "windowsSettings": {
+      "language": "en-US"
+    },
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",

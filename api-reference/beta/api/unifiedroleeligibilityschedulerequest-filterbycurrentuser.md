@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleEligibilityScheduleRequest： filterByCurrentUser
 description: 获取 unifiedRoleEligibilityScheduleRequest 对象及其属性的列表，这些对象按特定用户主体进行筛选
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 50107b09d3b9ae0fbe0cceaea992404baf84c65f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bdbde5e6eb17dd04a787bcf841d6942971092e21
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089081"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509558"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleRequest： filterByCurrentUser
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "62089081"
 > [!NOTE]
 > 此方法不检索当前已登录用户是这些组的成员以及具有符合条件的分配的对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -47,11 +47,11 @@ GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUse
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|筛选以查询当前用户作为主体的对象。 允许的值为 `principal` 。 必需。 不检索此用户是其中一个成员的组的工作分配。|
+|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|筛选以查询当前用户作为主体的对象。 允许的值为 `principal`。 必需项。 不检索此用户是其中一个成员的组的工作分配。|
 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -64,7 +64,7 @@ GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUse
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) 集合。
+如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) 集合。
 
 ## <a name="examples"></a>示例
 
