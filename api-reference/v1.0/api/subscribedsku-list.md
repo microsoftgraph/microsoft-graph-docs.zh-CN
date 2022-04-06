@@ -5,18 +5,18 @@ ms.localizationpriority: high
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c2f94819364a5fa197edb27da134d1ed1a79b549
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c66b57165f26715a739e4d805580ac4198cf2b70
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128406"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668463"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 
 命名空间：microsoft.graph
 
-获取组织已获取的商业版订阅的列表。 有关在 Azure 门户或 Microsoft 365 管理中心上显示的许可证名称与其 Microsoft Graph **skuId** 和 **skuPartNumber** 属性的映射，请参阅 [许可的产品名称和服务计划标识符](/azure/active-directory/enterprise-users/licensing-service-plan-reference)。
+获取组织已获取的商业版订阅的列表。有关在 Azure 门户或 Microsoft 365 管理中心上显示的许可证名称与其 Microsoft Graph **skuId** 和 **skuPartNumber** 属性的映射，请参阅 [许可的产品名称和服务计划标识符](/azure/active-directory/enterprise-users/licensing-service-plan-reference)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "62128406"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All、 Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 

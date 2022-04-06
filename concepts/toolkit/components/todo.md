@@ -1,22 +1,22 @@
 ---
-title: 微软待办 Microsoft Graph Toolkit
-description: 利用微软待办组件，用户可以查看、添加、删除、完成或编辑任务。 它适用于 Microsoft 微软待办 中微软待办。
+title: 微软待办 Microsoft Graph Toolkit 中的组件
+description: 利用微软待办组件，用户可以查看、添加、删除、完成或编辑 todo 任务。 它适用于 Microsoft 微软待办 中微软待办。
 ms.localizationpriority: medium
-author: shweaver-MSFT
-ms.openlocfilehash: de9c49937b3db76c2d93c308b88d03ec577f76ed
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+author: sebastienlevert
+ms.openlocfilehash: 6a77d75609cbff22fbaccefe45cd1f8b9e5355ca
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072689"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589245"
 ---
-# <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>微软待办 Microsoft Graph Toolkit
+# <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>微软待办 Microsoft Graph Toolkit 中的组件
 
 微软待办 组件用于使登录用户可以使用 Microsoft Graph 中的 微软待办 API 查看、添加、删除、完成和/或编辑 微软待办 中的任务。
 
 ## <a name="example"></a>示例
 
-以下示例显示登录用户使用组件微软待办任务 `mgt-todo` 。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
+以下示例显示登录用户使用组件微软待办任务`mgt-todo`。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo--tasks&source=docs" height="500"></iframe>
 
@@ -95,7 +95,7 @@ mgt-todo {
 
 若要了解更多信息，请参阅 [设置组件样式](/graph/toolkit/style.md)。
 
-## <a name="events"></a>活动
+## <a name="events"></a>事件
 
 从组件中触发以下事件。
 
@@ -107,7 +107,7 @@ mgt-todo {
 
 ## <a name="templates"></a>模板
 
-组件 `tasks` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含组件 `<template>` 中的元素，将值 `data-type` 设置为以下值之一。
+组件 `tasks` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含 `<template>` 组件中的元素，将 `data-type` 值设置为以下值之一。
 
 | 数据类型     | 数据上下文              | 说明                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
@@ -132,14 +132,14 @@ mgt-todo {
 
 | 配置 | 权限 | API |
 | ------------- | ---------- | --- |
-| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?view=graph-rest-1.0&tabs=http)、 [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
-| `targetId` 未设置 | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http) [、/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?tabs=http)、 [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` 未设置 | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?tabs=http)、 [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
 | 创建、更新或删除任务 | Tasks.ReadWrite | [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) |
 
 ## <a name="authentication"></a>身份验证
 
-任务组件使用身份验证文档 中所述的全局 [身份验证提供程序](../providers/providers.md)。
+任务组件使用身份验证文档中介绍的全局 [身份验证提供程序](../providers/providers.md)。
 
 ## <a name="cache"></a>缓存
 
-`mgt-todo`组件不缓存任何数据。
+组件 `mgt-todo` 不缓存任何数据。

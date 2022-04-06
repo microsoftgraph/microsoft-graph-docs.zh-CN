@@ -2,21 +2,21 @@
 title: intuneBrand 资源类型
 description: intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 75e6d8101247517e5b86f256d7cf3c8faf11ee01
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3017408294f8b09abfadccae491ba54a2fbaa15d
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017224"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629265"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -31,7 +31,7 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有浅色背景。|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有深色背景。|
 |showNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在应用登录公司门户中显示的自定义图像|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在应用登录Unternehmensportal中显示的自定义图像|
 |showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 |roleScopeTagIds|String collection|分配给默认品牌配置文件的范围标记列表|
 |contactITName|String|负责 IT 支持的员工/组织名称。|
@@ -46,10 +46,10 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |customCanSeePrivacyMessage|String|用于说明组织可在托管设备上查看和执行哪些操作的自定义隐私消息。|
 |isRemoveDeviceDisabled|Boolean|Boolean 值，表示 adminsistrator 是否已在公司拥有的设备上禁用"删除设备"操作。|
 |isFactoryResetDisabled|Boolean|Boolean 值，表示 adminsistrator 是否已在公司拥有的设备上禁用"恢复出厂设置"操作。|
-|companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) 集合|根据平台和设备所有权类型，在公司门户上阻止的操作的集合。|
-|showAzureADEnterpriseApps|Boolean|指示 AzureAD 应用是否将在Enterprise中显示的布尔值公司门户|
-|showOfficeWebApps|Boolean|Boolean 值，Office WebApps 是否将显示在 webApps 公司门户|
-|sendDeviceOwnershipChangePushNotification|Boolean|指示当用户的设备所有权类型从个人更改到公司时是否向用户发送推送通知的布尔值|
+|companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) 集合|根据平台和设备所有权类型在公司门户上阻止的操作的集合。|
+|showAzureADEnterpriseApps|Boolean|Boolean 值，指示 AzureAD 企业应用是否将显示在 Unternehmensportal|
+|showOfficeWebApps|Boolean|Boolean 值，指示 Office WebApps 是否将显示在 Unternehmensportal|
+|sendDeviceOwnershipChangePushNotification|Boolean|SendDeviceOwnershipChangePushNotification 将在 2022 年 6 月弃用，2022 年 7 月将停止返回值。 一个 boolean 类型的值，指示当用户的设备所有权类型从个人类型更改到公司时是否向用户发送推送通知|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|向最终用户显示的自定义设备注册流。 可取值为：`availableWithPrompts`、`availableWithoutPrompts`、`unavailable`。|
 |disableClientTelemetry|Boolean|适用于从所有客户端发送到 Intune 服务的遥测。 禁用后，将关闭客户端内的所有主动故障排除和发出警告，并且遥测设置对设备用户显示为非活动或隐藏。|
 
@@ -121,6 +121,7 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
   "disableClientTelemetry": true
 }
 ```
+
 
 
 

@@ -6,12 +6,12 @@ title: 音频
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 436ff5a46dd83c3a736765515678a3e2e47f620f
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 53373f8d7b06efe549832287f6a9f8f786b3ab2b
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792062"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723605"
 ---
 # <a name="audio-facet"></a>Audio Facet
 
@@ -28,6 +28,7 @@ ms.locfileid: "61792062"
 ## <a name="json-representation"></a>JSON 表示形式
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.audio" } -->
+
 ```json
 {
   "album": "string",
@@ -51,8 +52,8 @@ ms.locfileid: "61792062"
 
 ## <a name="properties"></a>属性
 
-| 属性名称         | 类型    | 说明                                                          |
-|:----------------------|:--------|:---------------------------------------------------------------------|
+| 属性              | 类型    | 说明                                                          |
+| :-------------------- | :------ | :------------------------------------------------------------------- |
 | **album**             | string  | 此音频文件的专辑标题。                          |
 | **albumArtist**       | string  | 此音频文件的专辑上的艺术家。                    |
 | **artist**            | string  | 此音频文件的表演艺术家。                            |
@@ -86,5 +87,3 @@ ms.locfileid: "61792062"
   "suppressions": []
 }
 -->
-
-

@@ -5,24 +5,24 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45c2b30a39c9930ee8a8d7def27a06e7617fddbf
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 1c731cc5192d6b6c088d081fdc5c3e0b8a44e642
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346743"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628733"
 ---
 # <a name="operationapprovalrequest-resource-type"></a>operationApprovalRequest 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 OperationApprovalRequest 实体
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List operationApprovalRequests](../api/intune-rbac-operationapprovalrequest-list.md)|[operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) 集合|列出 [operationApprovalRequest 对象的属性和](../resources/intune-rbac-operationapprovalrequest.md) 关系。|
@@ -50,6 +50,7 @@ OperationApprovalRequest 实体
 |状态|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|当前审批请求状态。 此属性是只读的。 可取值为：`unknown`、`needsApproval`、`approved`、`rejected`、`cancelled`、`completed` 或 `expired`。|
 |requestJustification|String|请求理由。 此属性是只读的。|
 |approvalJustification|String|批准请求的理由。 此属性是只读的。|
+|operationApprovalPolicies|String|请求中使用的操作审批策略。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 无
@@ -107,7 +108,8 @@ OperationApprovalRequest 实体
   },
   "status": "String",
   "requestJustification": "String",
-  "approvalJustification": "String"
+  "approvalJustification": "String",
+  "operationApprovalPolicies": "String"
 }
 ```
 

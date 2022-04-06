@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6e4cb3cd79a05365159a6ca13b8916cc54dfdbbe
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 07d2a88c32539c9146faac4681cc2021fa68533a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337586"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671984"
 ---
 # <a name="create-settings"></a>创建设置
 
@@ -27,7 +27,7 @@ ms.locfileid: "63337586"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.ReadWrite.All |
 
@@ -59,7 +59,7 @@ POST /groups/{id}/settings
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|templateId|字符串| 用于创建此组级别设置对象的租户级别的 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象的唯一标识符。 只读。 |
+|templateId|String| 用于创建此组级别设置对象的租户级别的 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象的唯一标识符。 只读。 |
 |values|[settingValue](../resources/settingvalue.md) 集合| 与引用的 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象中的 **name** 和 **defaultValue** 属性对应的名称-值对的集合。|
 
 ## <a name="response"></a>响应

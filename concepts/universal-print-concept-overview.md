@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0fab7fd9b7bc1902b2a643d8cb825301c846a8ff
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: c66e967a4844226af29fecbcb1d6a9be2f47a2be
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629714"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510244"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
@@ -79,7 +79,7 @@ Microsoft Graph 通用打印 API 使你的应用程序能够支持拉取打印�
 
 3. 使用应用程序权限和 `application/ipp` 介质类型[更新虚拟打印机的属性](/graph/api/printer-update)（参阅示例）。
 
-4. 使用将任务定义与虚拟打印机相关联的管理员身份验证令牌来[为虚拟打印机创建任务触发器](/graph/api/printer-post-tasktriggers)。 用于生成访问令牌的应用 ID 应与用于创建任务定义的应用 ID 相同。
+4. 使用将任务定义与虚拟打印机相关联的管理员身份验证令牌来[为虚拟打印机创建任务触发器](/graph/api/printer-post-tasktriggers)。
 
 5. 将打印作业提交到虚拟打印机后，由于 [printTaskTrigger](/graph/api/resources/printtasktrigger)，它将暂停。 将根据关联的 [printTaskDefinition](/graph/api/resources/printtaskdefinition) 创建状态为 `processing` 的 [printTask](/graph/api/resources/printtask)。
 

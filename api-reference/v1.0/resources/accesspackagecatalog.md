@@ -5,19 +5,21 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fa2614c7cdc70622bdab85b3afdd43666e253472
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 556216ac7c7b51e18b2a918ccde63b5f730bf7d0
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650676"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477557"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>accessPackageCatalog 资源类型
 
 命名空间：microsoft.graph
 
 
-在[Azure AD中](entitlementmanagement-overview.md)，访问包目录是零个或多个访问包的容器。 访问包目录还可能包含链接的资源，这些资源用于这些访问包中以提供访问权限。 若要查看或更改目录作用域角色的成员身份，请使用角色分配 [API](unifiedroleassignment.md) 和权利管理 RBAC 提供程序。
+在[Azure AD中，](entitlementmanagement-overview.md)访问包目录是零个或多个访问包的容器。 Azure AD权限管理包括一个名为"常规"的内置 **目录**。
+
+访问包目录还可能包含链接的资源，这些资源用于这些访问包中以提供访问权限。 若要查看或更改目录作用域角色的成员身份，请使用角色 [分配 API 和](unifiedroleassignment.md) 权利管理 RBAC 提供程序。
 
 
 

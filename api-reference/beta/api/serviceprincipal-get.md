@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 933a7cd6f4cee0fdb0abdc78296eaac949824948
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 108337592abcee2411c3f17327fbac36afdf648d
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894696"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669730"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
@@ -26,7 +26,7 @@ ms.locfileid: "62894696"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All、 Directory.Read.All、 Application.ReadWrite.OwnedBy、 Application.ReadWrite.All、 Directory.ReadWrite.All |
 
@@ -44,8 +44,7 @@ GET /servicePrincipals/{id}
 
 此方法支持使用 `$count`、`$expand`、`$filter`、`$orderBy`、`$search`、`$select` 和 `$top` [ OData 查询参数 ](/graph/query-parameters) 以帮助自定义响应。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
-默认情况下，此 API 不会返回 **keyCredentials** 属性中 **密钥** 的公钥值，除非已在 `$select` 查询中指定了 **keyCredentials**。
-例如，`$select=id,appId,keyCredentials`。
+默认情况下，此 API 不会返回 **keyCredentials** 属性中 **密钥** 的公钥值，除非已在 `$select` 查询中指定了 **keyCredentials**。例如，`$select=id,appId,keyCredentials`。
 
 对于每个租户，使用 `$select` 获取服务主体的 **keyCredentials** 限制为每分钟 150 个请求。
 
@@ -53,6 +52,9 @@ GET /servicePrincipals/{id}
 | 名称           | 说明                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}。必需。  |
+| Accept-Language| 语言代码。 可选。   |
+
+为 **Accept-Language** 标头提供受支持的语言代码（如 `es-ES` 或 `de-DE`），将在可用时返回本地化值。 请注意，[列表操作](serviceprincipal-list.md)不支持标头。
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

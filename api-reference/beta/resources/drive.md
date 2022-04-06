@@ -5,12 +5,12 @@ description: 表示用户的 OneDrive 或 SharePoint 中文档库的驱动器资
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1df4114e9dd79dd5845ca0cf1aedfdc458b83668
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: c92e5ef52ed02ba1428624c65d7fd075a27cfc15
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123718"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63559997"
 ---
 # <a name="drive-resource-type"></a>驱动器资源类型
 
@@ -63,12 +63,12 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | 关系 | 类型                                 | 说明
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | [itemActivity][] 集合          | 最近发生在此驱动器下的活动的列表。
-| 捆绑      | [driveItem][] 集合             | [捆绑][bundle] (相册和多选共享项目集) 的集合。 只在个人的 OneDrive 中。
+| 捆绑      | [driveItem][] 集合             | [捆绑][bundle]（相册和多选共享项集）的集合。仅在个人版 OneDrive 中。
 | following    | [driveItem][] 集合             | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
 | items        | [driveItem][] 集合             | 驱动器中包含的所有项。只读。可为 NULL。
 | root         | [driveItem][]                        | 驱动器的根文件夹。只读。
 | special      | [driveItem][] 集合             | OneDrive 中可用的公用文件夹的集合。只读。可为 NULL。
-
+| list         | [列表][]                             | 对于 SharePoint 中的驱动器，则为基础文档库列表。只读。可为 NULL。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -89,6 +89,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
     "webUrl",
     "items",
     "root",
+    "sharepointIds",
     "special",
     "system"
   ],
@@ -113,10 +114,11 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
   "owner": {"@odata.type": "microsoft.graph.identitySet"},
   "quota": {"@odata.type": "microsoft.graph.quota"},
   "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"},
   "special": [{"@odata.type": "microsoft.graph.driveItem"}],
   "system": {"@odata.type": "microsoft.graph.systemFacet"},
   "webUrl": "string",
-  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"}
+
 }
 ```
 
@@ -126,6 +128,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
+[列表]: list.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
 [drive-activities]: ../api/activities-list.md

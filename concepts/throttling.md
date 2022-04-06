@@ -4,8 +4,13 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.openlocfilehash: a91c82a3e7378e7abde7bccae0d7a953c7d94cb8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671599"
 ---
-
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
 限制可调节并发调用服务的数量，以防止资源的过度使用。Microsoft Graph 旨在用于处理大量的请求。如果出现过多请求，限制将有助于保持 Microsoft Graph 的最佳性能和服务的可靠性。
@@ -78,7 +83,7 @@ Retry-After: 2.128
 
 ## <a name="best-practices-to-avoid-throttling"></a>避免限制的最佳做法
 
-如持续轮询资源以检查更新以及定期扫描资源集合以检查新资源或已删除资源之类的编程模式，更有可能导致应用程序受到限制并降低整体性能。 如果可用，改为使用[更改跟踪](delta-query-overview.md)并[更改通知](webhooks.md)。
+如持续轮询资源以检查更新以及定期扫描资源集合以检查新资源或已删除资源之类的编程模式，更有可能导致应用程序受到限制并降低整体性能。如果可用，你应该改为使用[更改跟踪](delta-query-overview.md)和[更改通知](webhooks.md)。
 
 >[!NOTE]
 >[大规模发现文件和检测更改的最佳做法](/onedrive/developer/rest-api/concepts/scan-guidance)详细介绍最佳做法。
@@ -267,7 +272,7 @@ Retry-After: 2.128
 
 ##### <a name="regular-responses-requests"></a>正常响应请求
 
-- **x-ms-resource-unit** - 指示用于此请求的资源单位。 值为正整数。
+- **x-ms-resource-unit** - 指示用于此请求的资源单位。值为正整数。
 - **x-ms-throttle-limit-percentage** - 仅当应用程序消耗了超过其限制的 0.8 时才返回。 该值的范围是 0.8 到 1.8，是使用限制的百分比。 调用者可以使用该值设置警报并采取措施。
 
 ##### <a name="throttled-responses-requests"></a>受限制的响应请求
@@ -346,7 +351,7 @@ Retry-After: 2.128
 | 任何请求（CSV）         | 每10分钟14个请求   | 每10分钟40个请求 |
 | 任何请求（JSON、beta）  | 每10分钟100个请求  | 不适用                        |
 
-上述限制分别适用于每个报表 API。 例如，在 10 分钟内分别有对 Microsoft Teams 用户活动报告 API 的请求及对 Outlook 用户活动报告 API 的请求，将分别被视为 14 个请求中的 1 个请求，而不是 14 个请求中的 2 个请求。
+上述限制分别适用于每个报告 API。例如，在 10 分钟内分别有对 Microsoft Teams 用户活动报告 API 的请求及对 Outlook 用户活动报告 API 的请求，将分别被视为 14 个请求中的 1 个请求，而不是 14 个请求中的 2 个请求。
 
 上述限制适用于所有 [使用情况报表](/graph/api/resources/report) 资源。
 
@@ -415,6 +420,8 @@ Planner 的服务限制不可用。
 
 ### <a name="excel-service-limits"></a>Excel 服务限制
 
+有关 Excel 服务限制的说明和最佳实践，请参阅[限制](workbook-best-practice.md#throttling)。 此外，还存在以下限制。
+  
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
 ### <a name="identity-providers-service-limits"></a>身份提供程序的服务限制

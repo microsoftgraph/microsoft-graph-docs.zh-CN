@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4f7b3c07eac3e870cd59e2a4998e6c22f15f05ef
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6cb1ab164f37ed08e8c941f75ea8b5b455dc5dc6
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124296"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670612"
 ---
 # <a name="list-attendancerecords"></a>列出 attendanceRecords
 命名空间：microsoft.graph
@@ -32,11 +32,11 @@ ms.locfileid: "62124296"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | OnlineMeetingArtifact.Read.All |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建应用程序访问策略，并授予用户权限。 这将授权策略中配置的应用代表该用户获取联机会议和/或联机会议项目 (请求路径中指定的用户 ID) 。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序访问策略，并授予用户权限。 这将授权策略中配置的应用代表该用户使用请求路径 (中指定的用户 ID 获取联机会议和/或联机会议项目) 。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取具有委派参加报告的与会者记录， () `/me` 应用程序 () `/users/{userId}` 权限：
+若要获取具有委派 `/me` 的与会者和 () 的与会者 () `/users/{userId}` 权限：
 <!-- {"blockType": "ignored"}-->
 ``` http
 GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
@@ -44,8 +44,8 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/atte
 ```
 
 >- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
->- `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
->- `reportId`是 [meetingAttendanceReport 对象的](../resources/meetingAttendanceReport.md) **ID。**
+>- `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID**。
+>- `reportId`是 [meetingAttendanceReport 对象的](../resources/meetingAttendanceReport.md) **ID**。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -63,7 +63,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/atte
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [attendanceRecord](../resources/attendancerecord.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [attendanceRecord](../resources/attendancerecord.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -127,6 +127,7 @@ Content-Type: application/json
       "emailAddress": "frederick.cormier@contoso.com",
       "totalAttendanceInSeconds": 322,
       "role": "Organizer",
+      "registrantId": null,
       "identity": {
         "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
         "displayName": "Frederick Cormier",
@@ -144,6 +145,7 @@ Content-Type: application/json
       "emailAddress": "lisa.adkins@contoso.com",
       "totalAttendanceInSeconds": 314,
       "role": "Presenter",
+      "registrantId": null,
       "identity": {
         "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
         "displayName": "Lisa Adkins",

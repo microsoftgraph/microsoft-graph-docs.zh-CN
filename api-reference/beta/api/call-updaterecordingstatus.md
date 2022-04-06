@@ -1,16 +1,16 @@
 ---
 title: call： updateRecordingStatus
 description: 更新与呼叫关联的应用程序录制状态。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ef8ea1bf9b5e48bba453addfe3e778856ce4126c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 4b1757c3a4a3c28613ff8c45c4ced22beeb9e207
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341175"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608007"
 ---
 # <a name="call-updaterecordingstatus"></a>call： updateRecordingStatus
 
@@ -22,14 +22,14 @@ ms.locfileid: "62341175"
 
 > 其他限制：如果不首先调用 **updateRecordingStatus** API 以指示录制已开始，并且从该 API 收到成功回复，则不得使用媒体访问 API 记录或以其他方式保留应用程序访问的呼叫或会议中的媒体内容，或者记录派生自该媒体内容 ("record"或"recording") 的数据。 如果应用程序开始录制任何会议，则必须在调用 **updateRecordingStatus** API 之前结束录制，以指示录制已结束。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）      |
 |:---------------------------------------|:-------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                                    |
 | 委派（个人 Microsoft 帐户） | 不支持                                    |
-| 应用程序                            | Calls.JoinGroupCalls.All、Calls.AccessMedia.All  |
+| Application                            | Calls.JoinGroupCalls.All、Calls.AccessMedia.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

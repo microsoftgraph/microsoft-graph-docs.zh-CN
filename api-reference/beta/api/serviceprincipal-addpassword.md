@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dff434b29e93480e8101cf393da09df491214d30
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 04520ec6146b3d63c05dbc6e48b900eca76d44df
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669233"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477872"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal：addPassword
 
@@ -18,9 +18,9 @@ ms.locfileid: "63669233"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向 [servicePrincipal 对象添加强](../resources/serviceprincipal.md) 密码。
+将强密码或密码添加到 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -57,7 +57,7 @@ POST /servicePrincipals/{id}/addPassword
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordCredential](../resources/passwordcredential.md) 对象。 响应 **对象中的 secretText** 属性包含由 Azure Active Directory生成的强密码，长度为 16-64 个字符。 将来无法检索此密码。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordCredential](../resources/passwordcredential.md) 对象。 响应 **对象中的 secretText** 属性包含由密码生成的强密码或密码Azure Active Directory长度为 16-64 个字符。 将来无法检索此密码。
 
 ## <a name="examples"></a>示例
 

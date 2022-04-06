@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleEligibilityScheduleRequest 资源类型
 description: 表示通过请求执行角色分配符合条件的Azure AD Privileged Identity Management。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 446e5f32ab7443266c16b6d89a9d0fa9913e48e4
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ce25402cb8d16cb16cd38630005b7afe0659bbe5
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695228"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510090"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-resource-type"></a>unifiedRoleEligibilityScheduleRequest 资源类型
 
@@ -20,39 +20,39 @@ ms.locfileid: "60695228"
 
 表示通过请求角色分配符合条件的Azure AD Privileged Identity Management。
 
-**unifiedRoleEligibilityScheduleRequest** 是一种票证模型实体，用于管理目录中符合条件的角色分配的生命周期。 它表示用户和管理员的意图或决策，还提供了实现重复性日程安排、审批入口等的灵活性，与在 `POST` `PUT` `DELETE` **unifiedRoleEligibilitySchedule 和 unifiedRoleEligibilityInstance** 资源上直接公开 、 和 操作相比。
+**unifiedRoleEligibilityScheduleRequest** 是一种票证模型实体，用于管理目录中符合条件的角色分配的生命周期。 `POST``PUT``DELETE`它表示用户和管理员的意图或决策，还提供了实现重复性日程安排、审批入口等的灵活性，与在 **unifiedRoleEligibilitySchedule 和 unifiedRoleEligibilityInstance** 资源上直接公开 、 和 操作相比。
 
 管理员可以使用 **unifiedRoleEligibilityScheduleRequest'** 创建和/或更新具有开始时间和结束时间或不具有开始时间和结束时间符合条件的角色分配。 符合条件的管理员可使用它创建请求，以扩展或续订其符合条件的分配。
 
 继承自 [请求](request.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 unifiedRoleEligibilityScheduleRequests](../api/unifiedroleeligibilityschedulerequest-list.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 集合|获取 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象及其属性的列表。|
 |[创建 unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|创建新的 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象。|
 |[获取 unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-get.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|读取 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象的属性和关系。|
 |[filterByCurrentUser](../api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 集合|获取与特定用户相关的 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象及其属性的列表。|
-|[取消](../api/unifiedroleeligibilityschedulerequest-cancel.md)|无|立即取消 [unifiedRoleEligibilityScheduleRequest，](../resources/unifiedroleeligibilityschedulerequest.md) 并标记为在 30 天内删除|
+|[取消](../api/unifiedroleeligibilityschedulerequest-cancel.md)|无|立即取消 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) ，并标记为在 30 天内删除|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|action|字符串|表示角色资格分配上的操作类型。 可能的值有： <ul><li>`AdminAssign`：供管理员向用户或组分配角色资格。</li><li>`AdminExtend`：供管理员扩展即将过期的工作分配。</li><li>`AdminUpdate`：供管理员更改现有角色分配。</li><li>`AdminRenew`：供管理员续订已过期的工作分配。</li><li>`AdminRemove`：供管理员从符合条件的角色中删除用户或组。</li><li>`UserAdd`：供用户激活其符合条件的工作分配。</li><li>`UserExtend`：用户请求延长其即将过期的合格分配。</li><li>`UserRemove`：让用户停用其活动符合条件的分配。</li><li>`UserRenew`：用户请求续订其已过期的合格分配。</li></ul>|
+|action|String|表示角色资格分配上的操作类型。 可能的值有： <ul><li>`AdminAssign`：供管理员向用户或组分配角色资格。</li><li>`AdminExtend`：供管理员扩展即将过期的工作分配。</li><li>`AdminUpdate`：供管理员更改现有角色分配。</li><li>`AdminRenew`：供管理员续订已过期的工作分配。</li><li>`AdminRemove`：供管理员从符合条件的角色中删除用户或组。</li><li>`UserAdd`：供用户激活其符合条件的工作分配。</li><li>`UserExtend`：用户请求延长其即将到期的合格分配。</li><li>`UserRemove`：让用户停用其活动符合条件的分配。</li><li>`UserRenew`：用户请求续订其已过期的合格分配。</li></ul>|
 |approvalId|字符串|请求审批的标识符。 继承自 [请求](request.md)。|
 |appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元。|
 |completedDateTime|DateTimeOffset|请求完成日期时间。 继承自 [请求](request.md)。|
 |createdBy|[identitySet](identityset.md)|创建此请求的用户。 继承自 [请求](request.md)。|
 |createdDateTime|DateTimeOffset|请求创建日期时间。 继承自 [请求](request.md)。|
-|customData|String|用于定义请求的任何自定义数据的免费文本字段。 未使用。 继承自 [请求](request.md)。|
+|customData|字符串|用于定义请求的任何自定义数据的免费文本字段。 未使用。 继承自 [请求](request.md)。|
 |directoryScopeId|字符串|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。|
 |id|字符串|unifiedRoleEligibilityScheduleRequest 的唯一标识符。 只读。|
-|isValidationOnly|布尔值|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
+|isValidationOnly|Boolean|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
 |justification|字符串|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。|
-|principalId|String| 要向其中授予工作分配的主体的标识符。 例如，用户或组。 对于组，它们必须可分配给角色，即组属性设置为 的 **isAssignableToRole。** `true`|
+|principalId|字符串| 要向其中授予工作分配的主体的标识符。 例如，用户或组。 对于组，它们必须可分配给角色，即组属性设置为 的 **isAssignableToRole**`true`。|
 |roleDefinitionId|String|分配所针对的 unifiedRoleDefinition 的标识符。 只读。|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|请求的计划角色分配对象。|
-|status|String|角色资格请求的计划对象。 继承自 [请求](request.md)。|
+|状态|String|角色资格请求的计划对象。 继承自 [请求](request.md)。|
 |targetScheduleId|String|资格分配有效的时间段。|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|附加到请求的票证编号和票证系统角色分配详细信息。|
 
@@ -60,9 +60,9 @@ ms.locfileid: "60695228"
 |关系|类型|说明|
 |:---|:---|:---|
 |appScope|[appScope](../resources/appscope.md)|当分配范围特定于应用时，具有特定于应用的范围的详细信息的只读属性。 包含实体。|
-|directoryScope|[directoryObject](../resources/directoryobject.md)|引用作为工作分配范围的目录对象的属性。 提供，以便调用方可以在获取目录对象的同时获取 `$expand` 角色分配。 只读。|
-|principal|[directoryObject](../resources/directoryobject.md)|引用通过请求获取角色分配主体的属性。 提供此权限，以便调用方可以使用 与获取权限 `$expand` 角色分配。 只读。 |
-|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|指示分配所针对的 roleDefinition 的属性。 提供，以便调用方可以在获取角色定义的同时使用 `$expand` 角色分配。 roleDefinition.Id 自动展开。|
+|directoryScope|[directoryObject](../resources/directoryobject.md)|引用作为工作分配范围的目录对象的属性。 提供，以便调用方可以在获取目录对象 `$expand` 的同时获取角色分配。 只读。|
+|principal|[directoryObject](../resources/directoryobject.md)|引用通过请求获取角色分配主体的属性。 提供此权限，以便调用方 `$expand` 可以使用 与获取权限相同的角色分配。 只读。 |
+|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|指示分配所针对的 roleDefinition 的属性。 提供，以便调用方可以在 `$expand` 获取角色定义的同时使用 角色分配。 roleDefinition.Id 自动展开。|
 |targetSchedule|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)| 指示符合条件的项目计划角色分配。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

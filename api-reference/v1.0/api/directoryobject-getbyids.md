@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: high
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b55f5bc2d942ff622374fb44b3521df95667591f
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 3aae6f488bfe2e652cdffaec85ad7f73cd664946
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339544"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668568"
 ---
 # <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
@@ -33,7 +33,7 @@ ms.locfileid: "62339544"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All |
 
@@ -61,7 +61,7 @@ POST /directoryObjects/getByIds
 | 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
 |ids|String collection| 要返回其对象的 ID 集合。 ID 是 GUID，由字符串表示。 最多可以指定 1000 个 ID。 |
-|types|String collection| 指定要搜索的资源集合集的资源类型集合。 如果未指定，则默认为 [directoryObject](../resources/directoryobject.md)，其包含目录中定义的所有资源类型。 可以在该集合中指定派生自 [directoryObject](../resources/directoryobject.md) 的任何对象，例如：[用户](../resources/user.md)、[组](../resources/group.md)、[设备](../resources/device.md)对象等。 <br/><br/>若要搜索[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织，请指定 [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md)。如果未指定，则默认为 [directoryObject](../resources/directoryobject.md)，其包含目录中定义的所有资源类型，对[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织的引用除外。</br><br/> 这些值不区分大小写。|
+|types|String collection| 指定要搜索的资源集合集的资源类型集合。如果未指定，则默认值 [directoryObject](../resources/directoryobject.md)，其中包含目录中定义的所有资源类型。从 directoryObject [派生的任何对象](../resources/directoryobject.md) 都可以在集合中指定，例如：[用户](../resources/user.md)、[组](../resources/group.md)和[设备](../resources/device.md)对象。 <br/><br/>若要搜索[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织，请指定 [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md)。如果未指定，则默认为 [directoryObject](../resources/directoryobject.md)，其包含目录中定义的所有资源类型，对[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织的引用除外。</br><br/> 这些值不区分大小写。|
 
 ## <a name="response"></a>响应
 

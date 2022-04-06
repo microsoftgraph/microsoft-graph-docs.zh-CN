@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f9c166a1ea2f3335cb63b8c729dced516a957c56
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 4914b9cf39f35f96421f765a842a72d5d4197ac2
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670927"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477496"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal：addPassword
 
 命名空间：microsoft.graph
 
-向 [servicePrincipal 对象添加强](../resources/serviceprincipal.md) 密码。
+将强密码或密码添加到 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

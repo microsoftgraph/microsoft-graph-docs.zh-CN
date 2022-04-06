@@ -2,13 +2,13 @@
 title: 'Microsoft Graph 工具包: 适用于 Microsoft Graph 的 UI 组件和身份验证提供程序'
 description: Microsoft Graph工具包是身份验证提供程序和可重用的、与框架无关的 Web 组件的集合，用于访问和使用 Microsoft Graph。
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: 83b8329eab672ad8361a3f20ce1ac07564aa8341
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
-ms.translationtype: HT
+author: sebastienlevert
+ms.openlocfilehash: 91de94be7ba84ead7d84c3eff0d10c89fc248b9c
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143585"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589308"
 ---
 # <a name="microsoft-graph-toolkit-ui-components-and-authentication-providers-for-microsoft-graph"></a>Microsoft Graph 工具包: 适用于 Microsoft Graph 的 UI 组件和身份验证提供程序 
 

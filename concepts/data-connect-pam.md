@@ -4,12 +4,12 @@ description: Microsoft Graph 数据连接依赖于 Privileged Access Management 
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 8c60df49086ac3b0ebc45475d152e7d7a7d973d9
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: b7ac532d3a175e2ef93a77c8413b245da3bf1ec8
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072598"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724017"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Microsoft Graph 数据连接与 Privileged Access Management 的集成
 
@@ -71,7 +71,7 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
    >**注意：** 数据访问请求的 context 字段描述复制活动的参数和属性。
 
    ```powershell
-   Get-ElevatedAccessRequest -RequestId $requestId).Context | ConvertFrom-Json
+   Get-ElevatedAccessRequest -RequestId ($requestId).Context | ConvertFrom-Json
    ```
 
    你将收到如下所示的响应。
@@ -138,7 +138,7 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
 
 使用以下步骤，通过 PAM Web 体验与请求交互：
 
-1. 使用管理员凭据登录到 Microsoft 365 管理门户，并转到“[Privileged Access Managment 审批用户体验](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess)”页面。 这将显示所有访问请求（待处理请求/已批准请求/已过期请求/已拒绝请求）。
+1. 使用管理员凭据登录到 Microsoft 365 管理门户，并转到“[Privileged Access Managment 审批用户体验](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess)”页面。这将显示所有访问请求（待处理请求/已批准请求/已过期请求/已拒绝请求）。
 
 2. 在生成的页面上，选择你感兴趣的请求。 若要选择用于清理隐私的拒绝列表，请单击“**拒绝列表**”下拉列表，选择需要清理的组，然后选择“**批准**”。
 

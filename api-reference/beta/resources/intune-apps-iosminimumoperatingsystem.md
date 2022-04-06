@@ -2,21 +2,21 @@
 title: iosMinimumOperatingSystem 资源类型
 description: 包含 iOS 移动应用需要的最低操作系统的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5630f8aa58a1cc745acba4351a535cf281fc7ae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9b7a7b497e7a76b02975540bb75d482b44e7ee0
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047308"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629594"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -32,6 +32,7 @@ ms.locfileid: "59047308"
 |v12_0|Boolean|版本 12.0 或更高版本。|
 |v13_0|Boolean|版本 13.0 或更高版本。|
 |v14_0|Boolean|版本 14.0 或更高版本。|
+|v15_0|Boolean|版本 15.0 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -52,9 +53,11 @@ ms.locfileid: "59047308"
   "v11_0": true,
   "v12_0": true,
   "v13_0": true,
-  "v14_0": true
+  "v14_0": true,
+  "v15_0": true
 }
 ```
+
 
 
 

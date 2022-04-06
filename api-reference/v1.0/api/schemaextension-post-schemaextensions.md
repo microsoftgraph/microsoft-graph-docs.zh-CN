@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 0f8a2374d2966618bc1170f09275c02bf86f077c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1adccedf32431e52bb2deca8f373c591ff4017bd
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091761"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671515"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -28,9 +28,9 @@ ms.locfileid: "62091761"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 > [!NOTE]
 > 此外，对于委派的流程，登录用户必须是调用应用程序的所有者或用于设置 **所有者** 属性的（所带应用程序）`appId`所有者。

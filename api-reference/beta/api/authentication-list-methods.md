@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 51415c33a78763bc15d7951fa050271f12aec208
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ed50862cfbfd5b4ead416557ebc1857b8fb796d0
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109833"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509586"
 ---
 # <a name="list-methods"></a>List 方法
 
@@ -18,10 +18,10 @@ ms.locfileid: "62109833"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索身份验证 [方法对象](../resources/authenticationmethod.md) 的列表。 此 API 仅返回此 API 版本支持的身份验证方法。 请参阅[Azure AD](../resources/authenticationmethods-overview.md)方法 API 概述，了解当前支持的方法的列表。
+检索 [authenticationMethod 对象](../resources/authenticationmethod.md) 的列表。 此 API 仅返回此 API 版本支持的身份验证方法。 请参阅[Azure AD方法 API 概述](../resources/authenticationmethods-overview.md)，了解当前支持的方法的列表。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,7 +45,7 @@ ms.locfileid: "62109833"
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽) 
+* 身份验证管理员 (只能看到屏蔽的电话号码) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -60,7 +60,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 此方法不支持自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -72,7 +72,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [authenticationMethod](../resources/authenticationmethod.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [authenticationMethod](../resources/authenticationmethod.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

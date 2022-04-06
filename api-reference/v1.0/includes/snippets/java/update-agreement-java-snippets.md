@@ -1,21 +1,21 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2c77e1929ad27b6a4e1e597a0b7c90c8a06749abd69556883166f94ee288c9b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 53e54ad6356b170b01ab1676df43cd2314f5d519
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57328903"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528140"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Agreement agreement = new Agreement();
-agreement.displayName = "Sample ToU display name";
+agreement.displayName = "All Contoso volunteers - Terms of use";
 agreement.isViewingBeforeAcceptanceRequired = true;
 
-graphClient.identityGovernance().termsOfUse().agreements("093b947f-8363-4979-a47d-4c52b33ee1be")
+graphClient.identityGovernance().termsOfUse().agreements("0ec9f6a6-159d-4dd8-a563-1f0b5935e80b")
     .buildRequest()
     .patch(agreement);
 

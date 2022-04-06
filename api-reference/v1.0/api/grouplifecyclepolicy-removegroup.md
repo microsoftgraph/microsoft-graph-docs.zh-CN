@@ -1,16 +1,16 @@
 ---
 title: 'groupLifecyclePolicy: removeGroup'
 description: 从生命周期策略中删除组。
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 90581ea2ea2317363e4043c92e520f2bd379bf59
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: f6f657010a91ff80d4370d64863f280385c3e1da
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936262"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588440"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -22,31 +22,34 @@ ms.locfileid: "60936262"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+| 权限类型                        | 权限（从最低特权到最高特权） |
+| :------------------------------------- | :------------------------------------------ |
+| 委派（工作或学校帐户）     | Directory.ReadWrite.All                     |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
+| Application                            | Directory.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groupLifecyclePolicies/{id}/removeGroup
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称 | 说明 |
-|:---------------|:----------|
+| 名称          | 说明               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}。必需。 |
-| Content-Type  | application/json |
+| Content-Type  | application/json          |
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | 类型 | Description |
-|:---------------|:--------|:----------|
-|groupId|String| 要从策略中删除的组的标识符。|
+| 参数 | 类型   | 说明                                            |
+| :-------- | :----- | :----------------------------------------------------- |
+| groupId   | String | 要从策略中删除的组的标识符。 |
 
 ## <a name="response"></a>响应
 
@@ -60,6 +63,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
   "blockType": "ignored",
   "name": "grouplifecyclepolicy_removegroup"
 } -->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}/removeGroup
 Content-type: application/json
@@ -70,6 +74,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>响应
+
 <!-- { "blockType": "response" } -->
 
 ```http
@@ -90,4 +95,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

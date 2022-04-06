@@ -2,21 +2,21 @@
 title: 列出 windows81TrustedRootCertificates
 description: 列出 windows81TrustedRootCertificate 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b5dd054cd6d66402a3e79234fccc5919b9d2ecb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 466dada1c28e76ed57c8bc290603f8fff62f230f
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028231"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630343"
 ---
 # <a name="list-windows81trustedrootcertificates"></a>列出 windows81TrustedRootCertificates
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -37,6 +37,7 @@ ms.locfileid: "59028231"
 }
 -->
 ``` http
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWiredNetworkConfiguration/rootCertificatesForServerValidation
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation
 ```
 
@@ -50,14 +51,14 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWiredNetworkConfiguration/rootCertificatesForServerValidation
 ```
 
 ### <a name="response"></a>响应
@@ -109,6 +110,7 @@ Content-Length: 1543
   ]
 }
 ```
+
 
 
 

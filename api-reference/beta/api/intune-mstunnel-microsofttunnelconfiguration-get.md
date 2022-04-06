@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c9e49ab2c107c6534afc68e5f334ad0e513457e
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d6c0220944c2e68d63589c7bb2ac562bf36e93c7
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336270"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630644"
 ---
 # <a name="get-microsofttunnelconfiguration"></a>获取 microsoftTunnelConfiguration
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -103,7 +103,7 @@ Content-Length: 912
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
-    "disableUDPConnections": true
+    "disableUdpConnections": true
   }
 }
 ```

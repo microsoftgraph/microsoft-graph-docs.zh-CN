@@ -5,20 +5,22 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7a9f6e7ec2fe77f87c81717c406a56de7e1bbef7
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 4e3a9cfac827c7bc6e2b6d7c8afe9d838b25d291
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226002"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63516136"
 ---
 # <a name="list-assignments-of-a-user"></a>列出用户的分配
 
 命名空间：microsoft.graph
 
-返回分配给 educationUser 的所有班级的[educationAssignment](../resources/educationassignment.md) [列表](../resources/educationclass.md)。 [](../resources/educationuser.md) 
+返回分配给 [educationUser 的所有课程的 educationAssignment](../resources/educationassignment.md) [列表](../resources/educationclass.md)。[](../resources/educationuser.md) 
 
-此方法允许呼叫者在一次通话中查找属于学生或教师的所有作业，而不必从每个班级请求 **作业**。  **工作** 分配列表包含从类命名空间内获取工作分配的详细信息 **所需的** 内容。 对所有其他操作使用为 **工作分配** 定义的方法。
+此方法允许呼叫者在一次通话中查找属于学生或教师的所有作业，而不必从每个 **班级请求****作业**。 **工作** 分配列表包含从类命名空间内获取工作分配的详细信息 **所需的** 内容。 对所有其他操作使用为 **工作分配** 定义的方法。
+
+> **注意：**`assignedDateTime`、 `instructions`、 `assignTo`和 `resourcesFolderUrl` `webUrl` 属性将始终显示 null。
 
 ## <a name="permissions"></a>权限
 
@@ -28,11 +30,11 @@ ms.locfileid: "62226002"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
-| 应用程序                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
+| Application                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
 
 调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 的终结点时不支持应用程序权限。
 
-`/users/{user-id}`终结点使用委派权限和应用程序权限。
+终结点 `/users/{user-id}` 使用委派权限和应用程序权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +45,7 @@ GET /education/users/{user-id}/assignments
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$submissions` 和 `$categories` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 和 `$submissions` `$categories` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,7 +59,7 @@ GET /education/users/{user-id}/assignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationAssignment](../resources/educationassignment.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationAssignment](../resources/educationassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -250,9 +252,7 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 
 #### <a name="response"></a>响应
 
-如果用户尝试查询与自己的用户 ID 不同的用户 ID，此方法将返回 `403 Forbidden` 响应代码。
-
-、 `instructions` `assignedDateTime` 、 和 `assignTo` `resourcesFolderUrl` `webUrl` 属性将始终显示 null。
+如果用户尝试查询与自己的用户 ID 不同的用户 ID，此方法将返回 响应 `403 Forbidden` 代码。
 
 下面展示了示例响应。 
 
