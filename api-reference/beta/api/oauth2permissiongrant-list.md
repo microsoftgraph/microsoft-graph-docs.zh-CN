@@ -1,16 +1,16 @@
 ---
-title: '列出 oAuth2PermissionGrants (委派的权限授予) '
+title: '列出 oAuth2PermissionGrants (委派权限授予) '
 description: 检索表示委派权限授予的 oauth2PermissionGrant 对象的列表。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: e4ca93a83199d3ed3e712045abb58ff2cc5b5a06
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d1d27b6c27944529b128785c765cb7ff856380bf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125767"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671529"
 ---
 # <a name="list-oauth2permissiongrants-delegated-permission-grants"></a>列出 oauth2PermissionGrants (委派的权限授予) 
 
@@ -21,7 +21,7 @@ ms.locfileid: "62125767"
 检索 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的列表，这些对象代表已授予客户端应用程序代表登录用户访问 API 的委派权限。
 
 > [!NOTE]
-> 此请求对最近创建、更新或删除的委派权限授予可能具有复制延迟。 如果指定了筛选，此延迟 `clientId` 将最小化。
+> 此请求对最近创建、更新或删除的委派权限授予可能具有复制延迟。 如果指定了筛选，此延迟将 `clientId` 最小化。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "62125767"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | .Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 

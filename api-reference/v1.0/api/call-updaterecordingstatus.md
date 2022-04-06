@@ -1,16 +1,16 @@
 ---
 title: call： updateRecordingStatus
 description: 更新与呼叫关联的应用程序录制状态。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ca7fc640b1d482a8c8cb0fbbdfd55e0388071d87
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e53694f29ceedae54d5977a0fb2008a7e32649e1
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339040"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607815"
 ---
 # <a name="call-updaterecordingstatus"></a>call： updateRecordingStatus
 
@@ -20,14 +20,14 @@ ms.locfileid: "62339040"
 
 > 其他限制：如果不首先调用 **updateRecordingStatus** API 以指示录制已开始，并且从该 API 收到成功回复，则不得使用媒体访问 API 记录或以其他方式保留应用程序访问的呼叫或会议中的媒体内容，或者记录派生自该媒体内容 ("record"或"recording") 的数据。 如果应用程序开始录制任何会议，则必须在调用 **updateRecordingStatus** API 之前结束录制，以指示录制已结束。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）      |
 |:---------------------------------------|:-------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                                    |
 | 委派（个人 Microsoft 帐户） | 不支持                                    |
-| 应用程序                            | Calls.JoinGroupCalls.All、Calls.AccessMedia.All  |
+| Application                            | Calls.JoinGroupCalls.All、Calls.AccessMedia.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    | 说明                                                                           |
+| 参数       | 类型    | Description                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
 | clientContext   | String  | 唯一的客户端上下文字符串。 最大限制为 256 个字符。                                 |
 | 状态          | String  | 录制状态。 可能的值为： `notRecording`、 `recording`或 `failed`。  |

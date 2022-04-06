@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7b1fa89cf9f6c3f46b1c60ada5ed158ffc798bdb
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e454392c128893a65fdc407b1eef48072e54900e
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411820"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528100"
 ---
 ```go
 
@@ -13,6 +13,8 @@ ms.locfileid: "63411820"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewBaseTask()
+textBody := "String"
+requestBody.SetTextBody(&textBody)
 bodyLastModifiedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetBodyLastModifiedDateTime(&bodyLastModifiedDateTime)
 completedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
@@ -38,15 +40,20 @@ displayName := "String"
 requestBody.SetDisplayName(&displayName)
 status := "String"
 requestBody.SetStatus(&status)
+viewpoint := msgraphsdk.NewTaskViewpoint()
+requestBody.SetViewpoint(viewpoint)
+viewpoint.SetAdditionalData(map[string]interface{}{
+    "@odata.type": "microsoft.graph.taskViewpoint",
+}
 requestBody.SetAdditionalData(map[string]interface{}{
-    "@odata.type": "#microsoft.graph.baseTask",
+    "@odata.type": "#microsoft.graph.task",
 }
 options := &msgraphsdk.BaseTaskRequestBuilderPatchOptions{
     Body: requestBody,
 }
 baseTaskListId := "baseTaskList-id"
 baseTaskId := "baseTask-id"
-result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).Patch(options)
+graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).Patch(options)
 
 
 ```

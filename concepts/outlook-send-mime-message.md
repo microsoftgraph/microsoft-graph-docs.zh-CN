@@ -4,12 +4,12 @@ description: 电子邮件客户端可以通过 Exchange 以 MIME 邮件格式发
 author: isvargasmsft
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 80b669bfb757010d1842c8ba16513d2789e1e059
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: c1aec55ea0d8fa405047bc9c7e3a31dbd3d06deb
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477711"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510511"
 ---
 # <a name="send-messages-with-mime-content"></a>使用 MIME 内容发送邮件
 
@@ -43,7 +43,7 @@ Outlook 邮件 API 支持对含有 MIME 内容的邮件执行以下操作：
 
 
 ## <a name="specify-request-header-and-mime-message-body"></a>指定请求标头和 MIME 邮件正文
-可以创建 JSON 或 MIME 格式的[邮件](/graph/api-reference/v1.0/resources/message)。 在请求标头中指定所需的格式：
+可以创建 JSON 或 MIME 格式的[邮件](/graph/api/resources/user)。 在请求标头中指定所需的格式：
 
 - `Content-Type: application/json` 以在请求正文使用 JSON 格式。
 - `Content-Type: text/plain` 以在请求正文使用 MIME 格式。

@@ -1,16 +1,16 @@
 ---
 title: searchQuery 资源类型
 description: searchQuery
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 1d2d643fed135f97f1ccf2c6346d8fdd6e22f8b5
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 0c437bcb8fd7462d8c4bc85514c40d47311155de
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193363"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589315"
 ---
 # <a name="searchquery-resource-type"></a>searchQuery 资源类型
 
@@ -24,11 +24,11 @@ ms.locfileid: "48193363"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|queryString|字符串|包含搜索词的搜索查询。 必需。|
-|query_string (已弃用) |[searchQueryString](searchquerystring.md)|现在，它将替换为 **queryString** 属性。 包含搜索词的搜索查询。|
-
+|queryString|String|包含搜索词的搜索查询。 必需项。|
+|queryTemplate|String|提供一种修饰查询字符串的方法。 支持KQL和查询变量。 可选。|
+|query_string (弃用) |[searchQueryString](searchquerystring.md)|This is now replaced by the **queryString** property. 包含搜索词的搜索查询。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -46,6 +46,7 @@ ms.locfileid: "48193363"
 ```json
 {
   "queryString": "String",
+  "queryTemplate": "String",
   "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
 }
 ```

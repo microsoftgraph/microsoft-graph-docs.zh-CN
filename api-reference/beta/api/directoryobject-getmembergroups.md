@@ -5,8 +5,13 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
+ms.openlocfilehash: 0b282c5f8bb9556c371c40364bb41eb6e4217d3f
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671200"
 ---
-
 # <a name="directoryobject-getmembergroups"></a>directoryObject： getMemberGroups
 
 命名空间：microsoft.graph
@@ -15,7 +20,7 @@ doc_type: apiPageType
 
 返回指定的用户、组、服务主体、组织联系人、设备或[](../resources/user.md)目录对象是其中一个成员的[](../resources/orgcontact.md)组的所有组 [](../resources/device.md)ID。 [](../resources/group.md)[](../resources/serviceprincipal.md)[](../resources/directoryobject.md) 此函数是可传递的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="group-memberships-for-a-directory-object"></a>目录对象的组成员身份
@@ -38,7 +43,7 @@ doc_type: apiPageType
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| 委派（工作或学校帐户）     | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
 | 应用程序                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
@@ -46,7 +51,7 @@ doc_type: apiPageType
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -54,7 +59,7 @@ doc_type: apiPageType
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -62,7 +67,7 @@ doc_type: apiPageType
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -81,7 +86,7 @@ The following table lists the permission types to use for different scenarios.
 
 ## <a name="http-request"></a>HTTP 请求
 
-目录对象的组成员身份 (、组、服务主体或组织联系人) 。
+目录对象的组成员身份 (用户、组、服务主体或组织联系人) 。
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryObjects/{id}/getMemberGroups
@@ -170,7 +175,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmembergroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -238,7 +243,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmembergroups-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmembergroups-me-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

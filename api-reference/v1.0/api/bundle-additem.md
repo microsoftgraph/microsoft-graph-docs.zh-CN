@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: 将项目添加到捆绑包
-description: 将项添加到 driveItems 捆绑包中。
+description: 将项目添加到 driveItems 捆绑包
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 88b8e8c5e93d746522979f4086adeae5d5212e00
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: ed5ded16b1577a4931b28d24ac22a785eaed2d2a
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724254"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63561581"
 ---
 # <a name="add-item-to-a-bundle"></a>将项目添加到捆绑包
 
@@ -18,7 +18,7 @@ ms.locfileid: "63724254"
 
 将驱动器中的其他 [driveItem][] 添加到 [捆绑包][]。
 
-[捆绑]: ../resources/bundle.md
+[bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 
 ## <a name="permissions"></a>权限
@@ -41,29 +41,28 @@ POST /drive/bundles/{bundle-id}/children
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | Bearer {token}。必需。 |
-| Content-Type  | application/json. Required.|
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [driveItem][] 对象的 JSON 表示形式。
+请求正文包括应添加到捆绑包的子集合中的项目的标识符。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，响应为 `204 No Content`。
 
-有关错误响应的信息，请参阅 [Microsoft Graph错误响应和资源类型][error-response]。
+有关错误响应的信息，请参阅 [错误响应][error-response]。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面是将现有项目添加到指定捆绑包的请求示例。
+此请求将现有项添加到指定的捆绑包。
 
 <!-- {"blockType": "request", "name": "add-to-bundle", "isCollection": true, "@odata.type": "microsoft.graph.driveItem", "tags": "onedrive.only" } -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}/children
+POST https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children
 Content-Type: application/json
 
 {
@@ -72,8 +71,6 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>响应
-
-下面展示了示例响应。
 
 <!-- { "blockType": "response" } -->
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d12936be876e34797e76bcd3608cc9cf5e51bae3
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5f7d16015da2368dfd3570d52e0af6d6200740b2
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338353"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528201"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var transitiveRoleAssignments = await graphClient.RoleManagement.Directory.TransitiveRoleAssignments
-    .Request()
+    .Request( queryOptions )
     .Header("ConsistencyLevel","eventual")
     .Filter("principalId eq '2c7936bc-3517-40f3-8eda-4806637b6516' and roleDefinitionId eq 'fe930be7-5e62-47db-91af-98c3a49a38b1'")
     .GetAsync();

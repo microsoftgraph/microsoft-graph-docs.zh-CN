@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 83c99695e82e4dde776eaadc4506668e4277d423
-ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.openlocfilehash: fb9d91dc1390ecc217f94051006a8d10111d848b
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63780511"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477886"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -293,7 +293,7 @@ Microsoft Graph 访问组和 Microsoft Teams 的 API 公开了两个权限 ([*Gr
 
 ### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>删除组所有者还将删除作为组成员的用户
 
-在为与 [团队](/graph/api/resources/team.md) 关联的组调用 [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) 时，还会从 /groups/{id}/members 列表中删除用户。 要解决此问题，请从所有者和成员中移除用户，然后等待 10 秒，再将其添加回成员。
+在为与 [团队](/graph/api/resources/team.md) 关联的组调用 [DELETE /groups/{id}/owners](/graph/api/group-delete-owners) 时，还会从 /groups/{id}/members 列表中删除用户。 要解决此问题，请从所有者和成员中移除用户，然后等待 10 秒，再将其添加回成员。
 
 ## <a name="identity-and-access"></a>身份和访问
 
@@ -403,7 +403,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 以下 API 调用不支持安装需要 [资源特定的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 权限的应用。
 - [将应用添加到团队](/graph/api/team-post-installedapps)
 - [升级团队中安装的应用](/graph/api/team-teamsappinstallation-upgrade.md)
-- [将应用添加到聊天](/graph/api/chat-post-installedapps.md)
+- [将应用添加到聊天](/graph/api/chat-post-installedapps)
 - [升级聊天中安装的应用](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ## <a name="users"></a>用户

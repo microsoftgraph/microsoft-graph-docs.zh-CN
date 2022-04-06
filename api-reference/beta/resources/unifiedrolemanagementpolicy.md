@@ -5,44 +5,48 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4680bc93bed7995eb35d08ecf4d10750710ca40e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4b64b5fc402bab0d549d60c1653e826d80fa0bbd
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687534"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63667951"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>unifiedRoleManagementPolicy 资源类型
 
 命名空间：microsoft.graph
 
-unifiedRoleManagementPolicy 指定与作用域和角色定义关联的各种策略。 它派生自 microsoft.graph.policyBase。
+unifiedRoleManagementPolicy 指定与作用域和角色Azure AD相关联的各种策略。 它派生自 [实体](entity.md)。 对于适用于 Azure RBAC 的策略，将 [Azure REST PIM API 用于角色管理策略](/rest/api/authorization/role-management-policies)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 unifiedRoleManagementPolicies](../api/unifiedrolemanagementpolicy-list.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 集合|获取 [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象及其属性的列表。|
-|[获取 unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|读取 [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象的属性和关系。|
-|[列出 effectiveRules](../api/unifiedrolemanagementpolicy-list-effectiverules.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|从 effectiveRules 导航属性获取 unifiedRoleManagementPolicyRule 资源。|
+|[获取 unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|读取给定作用域 [的 unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象的属性和关系。|
 |[List rules](../api/unifiedrolemanagementpolicy-list-rules.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|从 rules 导航属性获取 unifiedRoleManagementPolicyRule 资源。|
+|[获取规则](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|获取 unifiedRoleManagementPolicyRule 对象的规则。|
+|[更新规则](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|更新 unifiedRoleManagementPolicyRule 对象的规则。|
+<!--unsurface effectiveRules because it hasn't been implemented
+|[List effectiveRules](../api/unifiedrolemanagementpolicy-list-effectiverules.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) collection|Get the unifiedRoleManagementPolicyRule resources from the effectiveRules navigation property.|
+-->
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |说明|String|策略的说明。|
-|displayName|字符串|策略的显示名称。|
-|id|字符串|策略的唯一标识符。|
-|isOrganizationDefault|布尔值|对于将应用于所有作用域和角色的单个租户范围策略，这只能设置为 true。 将 scopeId 设置为"/"，将 scopeType 设置为 Directory。|
+|displayName|String|策略的显示名称。|
+|id|String|策略的唯一标识符。|
+|isOrganizationDefault|布尔值|对于将适用于所有作用域和角色的单个租户范围策略，这只能设置为 true。 将 scopeId 设置为"/"，将 scopeType 设置为 Directory。|
 |lastModifiedBy|[identity](../resources/identity.md)|上次修改角色设置的标识。|
 |lastModifiedDateTime|DateTimeOffset|上次修改角色设置的时间。|
-|scopeId|String|创建策略的范围的 ID。 例如， "/"、groupId 等。|
-|scopeType|String|创建策略的范围类型。 Directory、DirectoryRole、Group 之一。|
+|scopeId|String|创建策略的范围的 ID。 适用于 `/` 租户或组 ID。 必需。|
+|scopeType|String|创建策略的范围类型。 其中一`Directory`个。 `DirectoryRole` 必填。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|effectiveRules|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|根据继承的引用规则评估的有效规则（如审批规则、过期规则等）的列表。 例如， 如果存在用于强制执行启用审批规则的租户范围策略，则有效规则将为启用审批，即使该 polcy 具有禁用审批的规则。|
-|规则|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|审批规则、过期规则等规则的集合。|
+|effectiveRules|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|**未实现。** 根据继承的引用规则评估的有效规则（如审批规则和过期规则）的列表。 例如，如果有租户范围的策略强制启用审批规则，则有效规则将为启用审批，即使该策略具有禁用审批的规则。|
+|规则|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|审批规则和过期规则等规则的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

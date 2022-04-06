@@ -5,12 +5,12 @@ title: site 资源类型
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 496796c5d7d2667b41ca97f31f81c3c79fc5de96
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: 06649de710e2145dfcd624b15b3fe6a45357f687
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62162067"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63721674"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -22,30 +22,30 @@ ms.locfileid: "62162067"
 
 ## <a name="methods"></a>方法
 
-| 方法                         | REST 路径
-|:-------------------------------|:--------------------------------------------
-| [获取根网站][]              | GET /sites/root
-| [获取网站][]                   | GET /sites/{site-id}
-| [根据路径获取网站][]           | GET /sites/{hostname}:/{site-path}
-| [获取组的网站][]       | GET /groups/{group-id}/sites/root
-| [获取分析结果][]              | GET /sites/{site-id}/analytics
-| [按间隔获取活动][] | GET /sites/{site-id}/getActivitiesByInterval
-| [列出页面][]                 | GET /sites/{site-id}/pages
-| [列出根网站][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
-| [搜索网站][]           | GET /sites?search={query}
-| [关注网站][]                | POST /users/{user-id}/followedSites/add
-| [取消关注网站][]              | POST /users/{user-id}/followedSites/remove
-| [关注网站列表][]        | GET /me/followedSites
-| [获取权限][]             | GET /sites/{site-id}/permissions/{permission-id}
-| [列出权限][]           | GET /sites/{site-id}/permissions
-| [创建权限][]         | POST /sites/{site-id}/permissions
-| [删除权限][]         | DELETE /sites/{site-id}/permissions/{permission-id}
-| [更新权限][]         | PATCH /sites/{site-id}/permissions/{permission-id}
-|[列表内容类型][]          | GET /sites/{site-id}/contentTypes
-|[创建 contentType][]        | POST/sites/{site-id}/contentTypes
-|[List columns][]               | 获取 /sites/{site-id}/columns
-|[创建列][]              | 发布 /sites/{site-id}/columns
-|[列举操作](../api/site-list-operations.md)|GET /sites/{site-id}/operations
+| 方法                                            | REST 路径                                                   |
+| :------------------------------------------------ | :---------------------------------------------------------- |
+| [获取根网站][]                                 | GET /sites/root                                             |
+| [获取网站][]                                      | GET /sites/{site-id}                                        |
+| [根据路径获取网站][]                              | GET /sites/{hostname}:/{site-path}                          |
+| [获取组的网站][]                          | GET /groups/{group-id}/sites/root                           |
+| [获取分析结果][]                                 | GET /sites/{site-id}/analytics                              |
+| [按间隔获取活动][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
+| [列出页面][]                                    | GET /sites/{site-id}/pages                                  |
+| [列出根网站][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
+| [搜索网站][]                              | GET /sites?search={query}                                   |
+| [关注网站][]                                   | POST /users/{user-id}/followedSites/add                     |
+| [取消关注网站][]                                 | POST /users/{user-id}/followedSites/remove                  |
+| [关注网站列表][]                           | GET /me/followedSites                                       |
+| [获取权限][]                                | GET /sites/{site-id}/permissions/{permission-id}            |
+| [列出权限][]                              | GET /sites/{site-id}/permissions                            |
+| [创建权限][]                            | POST /sites/{site-id}/permissions                           |
+| [删除权限][]                             | DELETE /sites/{site-id}/permissions/{permission-id}         |
+| [更新权限][]                             | PATCH /sites/{site-id}/permissions/{permission-id}          |
+| [列表内容类型][]                            | GET /sites/{site-id}/contentTypes                           |
+| [创建 contentType][]                            | POST/sites/{site-id}/contentTypes                          |
+| [List columns][]                                  | 获取 /sites/{site-id}/columns                                |
+| [创建列][]                                 | 发布 /sites/{site-id}/columns                               |
+| [列举操作](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
@@ -69,24 +69,24 @@ ms.locfileid: "62162067"
 [List columns]: ../api/site-list-columns.md
 [创建列]: ../api/site-post-columns.md
 
-
 ## <a name="properties"></a>属性
 
-| 属性名称            | 类型               | 说明
-|:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | 项的[唯一标识符](#id-property)。只读。
-| **createdDateTime**      | DateTimeOffset     | 创建项目的日期和时间。只读。
-| **说明**          | string             | 网站的描述性文本。
+| 属性                 | 类型               | 说明                                                                                    |
+| :----------------------- | :----------------- | :--------------------------------------------------------------------------------------------- |
+| **id**                   | string             | 项的[唯一标识符](#id-property)。只读。                                  |
+| **createdDateTime**      | DateTimeOffset     | 创建项目的日期和时间。只读。                                             |
+| **说明**          | string             | 网站的描述性文本。                                                             |
 | **eTag**                 | string             | 该项目的 ETag。只读。                                                                  |
-| **displayName**          | string             | 网站的完整标题。只读。
-| **lastModifiedDateTime** | DateTimeOffset     | 上次修改项目的日期和时间。只读。
-| **name**                 | string             | 项目名称/标题。
-| **根**                 | [根][]           | 如果存在，则表示这是网站集中的根网站。只读。
-| **sharepointIds**        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
-| **siteCollection**       | [siteCollection][] | 提供有关该网站的网站集的详细信息。仅在根网站上可用。只读。
-| **webUrl**               | string (url)       | 在浏览器中显示此项目的 URL。只读。
+| **displayName**          | string             | 网站的完整标题。只读。                                                        |
+| **lastModifiedDateTime** | DateTimeOffset     | 上次修改项目的日期和时间。只读。                                       |
+| **name**                 | string             | 项目名称/标题。                                                                  |
+| **根**                 | [根][]           | 如果存在，则表示这是网站集中的根网站。只读。            |
+| **sharepointIds**        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。                       |
+| **siteCollection**       | [siteCollection][] | 提供有关该网站的网站集的详细信息。仅在根网站上可用。只读。 |
+| **webUrl**               | string (url)       | 在浏览器中显示此项目的 URL。只读。                                          |
 
 ### <a name="id-property"></a>id 属性
+
 **site** 由一个唯一 ID 标识，此唯一 ID 由以下值组成：
 * 网站集主机名称 (contoso.sharepoint.com)
 * 网站集的唯一 ID (GUID)
@@ -99,21 +99,21 @@ ms.locfileid: "62162067"
 
 ## <a name="relationships"></a>关系
 
-| 关系名称 | 类型                             | 说明
-|:------------------|:---------------------------------|:----------------------
-| **analytics**     | [itemAnalytics][] 资源       | 此网站上发生的查看活动的相关分析。
-| **columns**       | Collection([columnDefinition][]) | 可以在此网站下方的列表中重复使用的列定义集合。
-| **contentTypes**  | Collection([contentType][])      | 为此网站定义的内容类型集合。
-| **drive**         | [drive][]                        | 此网站的默认驱动器（文档库）。
-| **驱动器**        | 集合（[drive][]）            | 网站下方的驱动器集合（文档库）。
-| **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
-| **lists**         | Collection([list][])             | 此网站下的列表集合。
-|**operations**|[richLongRunningOperation](../resources/richlongrunningoperation.md) 集合| 站点长时间运行操作的集合。
-| **pages**         | Collection([sitePage][])         | 此网站的 SitePages 列表中的页面集合。
-| **权限**   | 集合([权限][])         | 与网站关联的权限。空。
-| **sites**         | 集合（[网站][]）             | 网站下方的子网站的集合。
-| **termStore**     | [microsoft.graph.termStore.store]  | 此站点下的术语库。
-| **externalColumns**     | 集合（[columnDefinition][]）  | 网站中可用列定义的集合，从当前网站的父层次结构中的网站引用。
+| 关系        | 类型                                                                            | 说明                                                                                                                                |
+| :------------------ | :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| **analytics**       | [itemAnalytics][] 资源                                                      | 此网站上发生的查看活动的相关分析。                                                                          |
+| **columns**         | Collection([columnDefinition][])                                                | 可以在此网站下方的列表中重复使用的列定义集合。                                                                |
+| **contentTypes**    | Collection([contentType][])                                                     | 为此网站定义的内容类型集合。                                                                                     |
+| **drive**           | [drive][]                                                                       | 此网站的默认驱动器（文档库）。                                                                                        |
+| **驱动器**          | 集合（[drive][]）                                                           | 网站下方的驱动器集合（文档库）。                                                                             |
+| **项目**           | 集合 ([baseItem][])                                                        | 用于处理包含在此网站中的任何项目。不能枚举该集合。                                                     |
+| **lists**           | Collection([list][])                                                            | 此网站下的列表集合。                                                                                                   |
+| **operations**      | [richLongRunningOperation](../resources/richlongrunningoperation.md) 集合 | 站点长时间运行操作的集合。                                                                                    |
+| **pages**           | Collection([sitePage][])                                                        | 此网站的 SitePages 列表中的页面集合。                                                                                |
+| **权限**     | 集合([权限][])                                                      | 与网站关联的权限。空。                                                                                        |
+| **sites**           | 集合（[网站][]）                                                            | 网站下方的子网站的集合。                                                                                           |
+| **termStore**       | [microsoft.graph.termStore.store]                                               | 此站点下的术语库。                                                                                                             |
+| **externalColumns** | 集合（[columnDefinition][]）                                                | 网站中可用列定义的集合，从当前网站的父层次结构中的网站引用。 |
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md

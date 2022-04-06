@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 53f176f5121bd196edc8f9f8597a0ca75bdfb406
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f10fe8fbb2a58b08ea8e24fc245eefe5ef71eca6
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128153"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670850"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>向用户授予 appRoleAssignment
 
@@ -28,7 +28,7 @@ ms.locfileid: "62128153"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AppRoleAssignment.ReadWrite.All |
 

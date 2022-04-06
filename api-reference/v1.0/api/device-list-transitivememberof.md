@@ -5,12 +5,12 @@ author: spunukol
 ms.prod: directory-management
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: 7c62f1f102791d90fb52acc077eb57a6f230bd03
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 469a9899a6443c6ab403a9d6118704b7fc4f93c0
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092527"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510349"
 ---
 # <a name="list-device-transitive-groups"></a>List device transitive groups
 
@@ -18,13 +18,13 @@ ms.locfileid: "62092527"
 
 获取设备是其中一个成员的组。 此 API 请求是可传递的，并且还将返回设备是嵌套成员的所有组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -160,7 +160,7 @@ Content-type: text/plain
 294
 ```
 
-### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换$search获取显示名称包含字母"Video"（包括返回对象计数）的组成员身份
+### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取显示名称包含字母"Video"（包括返回对象计数）的组成员身份
 
 #### <a name="request"></a>请求
 
@@ -203,15 +203,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换$filter获取以"A"开头显示名称（包括返回的对象计数）的组成员身份
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换$filter获取以"A"开头显示名称（包括返回对象计数）的组成员身份
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_devices_transitivememberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')

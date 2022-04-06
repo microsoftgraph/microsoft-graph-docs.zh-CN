@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 2dc4e219a10b6c2aebba0e4292cad9180d68c711
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5da57fe2bca541786addf0e4472497965ff9b038
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139301"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63559791"
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -26,7 +26,7 @@ Microsoft Graph 连接器平台提供了一种简单的方法，可将外部数�
 
 ![访问控制列表示例](./images/connectors-images/connecting-external-content-manage-items-acl.png)
 
-**accessType** 值 `deny` 优先于 `grant`。 例如，在以前显示的项目中，如果授予 `Everyone` 访问权限，并且拒绝了特定用户的访问权限，则此用户的有效权限将被 `deny`。
+**accessType** 值 `deny` 优先于 `grant`。例如，在前面显示的项中，虽然向 `Everyone` 授予了访问权限，但拒绝特定用户的访问，而该用户的有效访问权限为 `deny`。
 
 如果数据源具有非 Azure Active Directory 组（例如支持人员系统中的团队），并且用于设置项目的权限，则可以使用组同步 API 复制 `allow` 或 `deny` 权限，在 Microsoft Graph 中创建外部组。 避免将外部组的成员身份直接展开为各项的访问控制列表，，因为每个组的成员资格都可能导致大量项目更新。
 
@@ -42,7 +42,7 @@ Microsoft Graph 连接器平台提供了一种简单的方法，可将外部数�
 
 内容组件用于添加需要进行全文检索的大量项目。 示例包括票证说明、文件正文中的已分析文本或者 wiki 网页正文。
 
-内容是影响 Microsoft 体验[相关性](./connecting-external-content-manage-schema.md#relevance)的关键字段之一。 支持内容类型 `text` 和 `HTML`。 如果数据源有二进制文件，则可以先将它们分析为文本，然后再将其添加到 Microsoft Graph。
+内容是影响 Microsoft 体验[相关性](./connecting-external-content-manage-schema.md#relevance)的关键字段之一。 支持内容类型 `text` 和 `html`。 如果数据源具有其他内容类型，如二进制文件、视频或图像，则可以在将它们添加到 Microsoft Graph 之前将其解析为文本。 例如，可以使用光学字符识别从图像中提取可搜索文本。
 
 ![内容组件示例](./images/connectors-images/connecting-external-content-manage-items-2.png)
 

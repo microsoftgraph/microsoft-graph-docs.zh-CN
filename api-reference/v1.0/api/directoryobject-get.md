@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: high
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a97a760cab8d2b07bd4df5dc88acb6291904354b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 276a568a1a33b11b55fc8b00d0eec3f1b58411b3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134769"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668372"
 ---
 # <a name="get-directoryobject"></a>获取 directoryObject
 
@@ -24,7 +24,7 @@ ms.locfileid: "62134769"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All |
 

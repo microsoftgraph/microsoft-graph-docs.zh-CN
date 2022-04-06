@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 3de1c3582ca792225b6aa7e6d36b5b33594249e2
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 9bfdb8240d72a9b97f8b4dc89844734416576021
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766472"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723567"
 ---
 # <a name="cloudpcsourcedeviceimage-resource-type"></a>cloudPcSourceDeviceImage 资源类型
 
@@ -26,6 +26,8 @@ ms.locfileid: "59766472"
 |:---|:---|:---|
 |id|String|源图像的 ID。|
 |displayName|String|源显示名称的源图像。|
+|subscriptionId|String|托管源映像的订阅的 ID。|
+|subscriptionDisplayName|String|托管显示名称映像的订阅的订阅组。|
 
 ## <a name="relationships"></a>关系
 
@@ -44,6 +46,8 @@ ms.locfileid: "59766472"
 {
   "@odata.type": "#microsoft.graph.cloudPcSourceDeviceImage",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "subscriptionId": "String",
+  "subscriptionDisplayName": "String"
 }
 ```

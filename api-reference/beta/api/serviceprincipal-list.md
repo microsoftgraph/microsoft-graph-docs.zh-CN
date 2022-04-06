@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 787a503f75d5b9b41dc0c0730468a280bc639e5d
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 17d3ba6689edb7d32e9804769ae9892a03bec097
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510041"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671767"
 ---
 # <a name="list-serviceprincipals"></a>List servicePrincipals
 
@@ -176,7 +176,7 @@ Content-type: text/plain
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_serviceprincipals_startswith"
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName

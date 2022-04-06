@@ -4,12 +4,12 @@ description: 说明 SDK 已经可用，以及 SDK 所支持的平台及其对于
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: eeeff1427c5630aed85e0f6cc8827cd81aef05b2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5e1ed9da65088b7f3542efcae95ff7e8ce26cee4
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60995823"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646597"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Microsoft Graph SDK 概述
 
@@ -34,7 +34,6 @@ SDK 当前支持以下语言和平台：
 - [PHP](https://developer.microsoft.com/en-us/graph/get-started/php)
 - [PowerShell](/graph/powershell/get-started)
 - [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
-- [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
 
 ## <a name="microsoft-365-developer-subscription"></a>Microsoft 365 开发人员订阅
 
@@ -42,4 +41,4 @@ SDK 当前支持以下语言和平台：
 
 ## <a name="see-also"></a>另请参阅
 
-SDK [设计要求文档](https://github.com/microsoftgraph/msgraph-sdk-design) 提供了有关 SDK 功能的更多详细信息。 在开发人员平台创意论坛 中Microsoft 365[功能的请求或投票](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。 若要获取 Microsoft Graph 的 SDK 和样本列表，请参阅 [Microsoft Graph 资源页面](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs)。
+SDK [设计要求文档](https://github.com/microsoftgraph/msgraph-sdk-design) 提供了有关 SDK 功能的更多详细信息。 在开发人员平台创意论坛中Microsoft 365[功能或投票](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。 若要获取 Microsoft Graph 的 SDK 和样本列表，请参阅 [Microsoft Graph 资源页面](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs)。

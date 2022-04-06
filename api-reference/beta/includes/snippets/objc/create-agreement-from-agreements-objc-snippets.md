@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e9c5f20bc6346b2bc039edd9ea761a46778306d10137dd65df9a9f8dcfe71d8d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eee5bbfb30e83d523248094a883cbb82796df4bc
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56902537"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528186"
 ---
 ```objc
 
@@ -17,7 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAgreement *agreement = [[MSGraphAgreement alloc] init];
-[agreement setDisplayName:@"MSGraph Sample"];
+[agreement setDisplayName:@"Contoso ToU for guest users"];
 [agreement setIsViewingBeforeAcceptanceRequired: true];
 NSMutableArray *filesList = [[NSMutableArray alloc] init];
 MSGraphAgreementFileLocalization *files = [[MSGraphAgreementFileLocalization alloc] init];
@@ -25,7 +25,7 @@ MSGraphAgreementFileLocalization *files = [[MSGraphAgreementFileLocalization all
 [files setLanguage:@"en"];
 [files setIsDefault: true];
 MSGraphAgreementFileData *fileData = [[MSGraphAgreementFileData alloc] init];
-[fileData setData:@"SGVsbG8gd29ybGQ="];
+[fileData setData:@"SGVsbG8gd29ybGQ=//truncated-binary"];
 [files setFileData:fileData];
 [filesList addObject: files];
 [agreement setFiles:filesList];

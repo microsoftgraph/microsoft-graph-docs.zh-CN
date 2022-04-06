@@ -614,7 +614,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -1131,7 +1131,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: 列出 transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: 检查成员组
                     href: api/directoryobject-checkmembergroups.md
@@ -1227,7 +1227,7 @@ items:
                     href: api/synchronization-synchronizationjob-pause.md
                   - name: Restart
                     href: api/synchronization-synchronizationjob-restart.md
-                  - name: Delete
+                  - name: 删除
                     href: api/synchronization-synchronizationjob-delete.md
                   - name: 按需预配
                     href: api/synchronization-synchronizationjob-provision-on-demand.md
@@ -9813,7 +9813,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: 列表
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: Delete
+                      - name: 删除
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理脚本
                     href: resources/intune-shared-devicemanagementscript.md
@@ -11624,8 +11624,11 @@ items:
                 items:
                   - name: 概述
                     href: resources/authenticationmethods-overview.md
-                  - name: 列出所有方法
-                    href: api/authentication-list-methods.md
+                  - name: 身份验证方法
+                    href: resources/authenticationmethod.md
+                    items:
+                      - name: 列表
+                        href: api/authentication-list-methods.md
                   - name: FIDO2 安全密钥
                     href: resources/fido2authenticationmethod.md
                     items:
@@ -14517,7 +14520,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -15023,7 +15026,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

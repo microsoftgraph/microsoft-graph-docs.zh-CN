@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: dbed0a0d791cd96f952fd4230b33d911b9c888be
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 439d32b29a202207b7ecd83cec99f51dee3bff48
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670878"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630259"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -126,16 +126,37 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "displayName":"contoso1",
-      "mail":"'contoso1@gmail.com",
-      "mailNickname":"contoso1_gmail.com#EXT#",
-      "otherMails":["contoso1@gmail.com"],
-      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
-      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "value": [
+        {
+            "businessPhones": [],
+            "displayName": "Conf Room Adams",
+            "givenName": null,
+            "jobTitle": null,
+            "mail": "Adams@contoso.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": null,
+            "userPrincipalName": "Adams@contoso.com",
+            "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0"
+        },
+        {
+            "businessPhones": [
+                "425-555-0100"
+            ],
+            "displayName": "MOD Administrator",
+            "givenName": "MOD",
+            "jobTitle": null,
+            "mail": null,
+            "mobilePhone": "425-555-0101",
+            "officeLocation": null,
+            "preferredLanguage": "en-US",
+            "surname": "Administrator",
+            "userPrincipalName": "admin@contoso.com",
+            "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
+        }
+    ]
 }
 ```
 
@@ -248,7 +269,7 @@ Content-type: text/plain
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_users_startswith"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
@@ -279,8 +300,6 @@ Content-type: application/json
       "displayName":"a",
       "mail":"a@contoso.com",
       "mailNickname":"a_contoso.com#EXT#",
-      "otherMails":["a@contoso.com"],
-      "proxyAddresses":["SMTP:a@contoso.com"],
       "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
@@ -431,7 +450,6 @@ Content-type: application/json
       "displayName":"Oscar Ward",
       "givenName":"Oscar",
       "mail":"oscarward@contoso.com",
-      "mailNickname":"oscward",
       "userPrincipalName":"oscarward@contoso.com"
     }
   ]
@@ -491,15 +509,13 @@ Content-type: application/json
       "displayName":"Oscar Ward",
       "givenName":"Oscar",
       "mail":"oscarward@contoso.com",
-      "mailNickname":"oscward",
       "userPrincipalName":"oscarward@contoso.com"
     },
     {
       "displayName":"contosoAdmin1",
-      "mail":"'contosoadmin1@gmail.com",
-      "mailNickname":"contosoadmin1_gmail.com#EXT#",
-      "proxyAddresses":["SMTP:contosoadmin1@gmail.com"], 
-      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+      "givenName":"Contoso Administrator",
+      "mail":"'contosoadmin1@fabrikam.com",
+      "userPrincipalName":"contosoadmin1_fabrikam.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
 }
@@ -559,6 +575,52 @@ Content-type: application/json
   ]
 }
 ```
+
+
+### <a name="example-9-get-the-value-of-a-schema-extension-for-all-users"></a>示例 9: 获取所有用户的架构扩展值
+
+在此示例中，架构扩展 ID 为 `ext55gb1l09_msLearnCourses`。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "list_schemaextension"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=ext55gb1l09_msLearnCourses
+```
+
+#### <a name="response"></a>响应
+
+在以下响应中，在两个用户对象未分配架构扩展属性 `ext55gb1l09_msLearnCourses`。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(ext55gb1l09_msLearnCourses)",
+    "value": [
+        {},
+        {
+            "ext55gb1l09_msLearnCourses": {
+                "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+                "courseType": "Developer",
+                "courseName": "Introduction to Microsoft Graph",
+                "courseId": 1
+            }
+        },
+        {}
+    ]
+}
+```
+
+>**请注意:** 还可以对架构扩展属性应用 `$filter` 以检索集合中属性与指定值匹配的对象。 语法为 `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`。 例如，`GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`。 支持 `eq` 和 `not` 运算符。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

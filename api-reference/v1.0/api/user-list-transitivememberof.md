@@ -1,16 +1,16 @@
 ---
 title: List user transitive memberOf
 description: 获取用户是其中一个成员的组、目录角色。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
-author: psaffaie
+author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8f510a9526ed3b6af0f456c87b33dc1c257febb0
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 1fd11cdf0e75951fccc76be0c79ec6d0fe38bc62
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589385"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63516045"
 ---
 # <a name="list-user-transitive-memberof"></a>List user transitive memberOf
 
@@ -18,15 +18,15 @@ ms.locfileid: "64589385"
 
 获取用户是其中一个成员的组、目录角色。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最低特权到最高特权） |
-| :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | Directory.Read.All、Directory.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | Directory.Read.All、Directory.ReadWrite.All |
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -44,9 +44,9 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="request-headers"></a>请求标头
 
-| 标头           | 值                                                                                                                                                                                                             |
-| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization    | Bearer {token}。必需。                                                                                                                                                                                         |
+| 标头       | 值 |
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。  |
 | ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
@@ -65,8 +65,8 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_transitivememberof"
@@ -75,44 +75,38 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-transitivememberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-transitivememberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/get-transitivememberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/get-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-transitivememberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -120,7 +114,6 @@ GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf
   "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -149,7 +142,6 @@ Content-type: application/json
   "blockType": "ignored",
   "name": "get_count_only"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/$count
 ConsistencyLevel: eventual
@@ -162,7 +154,6 @@ ConsistencyLevel: eventual
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -180,7 +171,6 @@ Content-type: text/plain
   "blockType": "ignored",
   "name": "get_count_only"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/microsoft.graph.group/$count
 ConsistencyLevel: eventual
@@ -193,7 +183,6 @@ ConsistencyLevel: eventual
 <!-- {
   "blockType": "response"
   } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -211,7 +200,6 @@ Content-type: text/plain
   "blockType": "ignored",
   "name": "get_tier_count"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:tier"&$select=displayName,id
 ConsistencyLevel: eventual
@@ -221,7 +209,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -229,7 +217,6 @@ ConsistencyLevel: eventual
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -254,9 +241,8 @@ Content-type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "list_users_transitivememberof_startswith"
+  "name": "get_a_count"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
@@ -266,7 +252,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -274,7 +260,6 @@ ConsistencyLevel: eventual
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -293,7 +278,6 @@ Content-type: application/json
   ]
 }
 ```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

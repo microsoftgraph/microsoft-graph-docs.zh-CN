@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 908e0d391cf8989a5efa7af9d814cf586a42151f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5a3b4e5d0888f6eaa2f618f8db4db03963b4ed09
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121028"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670458"
 ---
 # <a name="permanently-delete-item"></a>永久删除项目
 
@@ -18,9 +18,9 @@ ms.locfileid: "62121028"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从已删除的项目 [中永久删除项目](../resources/directory.md)。
+从已删除的项中 [永久删除项目](../resources/directory.md)。
 
-目前，仅应用程序、组和用户资源支持已删除的项目[](../resources/application.md)功能。 [](../resources/group.md) [](../resources/user.md) 可以永久删除“已删除的项目”中的项目。 但当某个项目永久删除后，将 **无法** 还原。
+目前，仅应用程序、组和用户资源支持[已删除的项目](../resources/group.md)[功能](../resources/user.md)。[](../resources/application.md) 可以永久删除“已删除的项目”中的项目。 但当某个项目永久删除后，将 **无法** 还原。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "62121028"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
@@ -39,21 +39,21 @@ ms.locfileid: "62121028"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | User.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
-登录用户需要具有以下角色之一：全局 *管理员* 或 *用户管理员*。
+登录用户需要具有以下角色之一： *全局管理员* 或 *用户管理员*。
 
 对于组：
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
-请求程序需要具有以下角色之一： *全局管理员* 或 *组管理员*。
+请求程序需要具有以下角色之一：*全局管理员或**组管理员*。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

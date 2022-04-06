@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 85e58fb14ffbf76253320cf0ffe271f8433b7d6c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: c111b802a5582517ca0d408a0cfece842f615c2f
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63351241"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528116"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var devices = await graphClient.Devices
-    .Request()
+    .Request( queryOptions )
     .Header("ConsistencyLevel","eventual")
     .Search("displayName:Android")
     .GetAsync();

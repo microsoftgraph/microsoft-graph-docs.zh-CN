@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal：addPassword
 description: 向 servicePrincipal 添加强密码。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: cd791f00aa2a3f5e2e6513256bb7ec7e2328dbe1
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: dff434b29e93480e8101cf393da09df491214d30
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490509"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669233"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal：addPassword
 
@@ -26,7 +26,7 @@ ms.locfileid: "58490509"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -57,7 +57,7 @@ POST /servicePrincipals/{id}/addPassword
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordCredential](../resources/passwordcredential.md) 对象。 **响应对象中的 secretText** 属性包含由 Azure Active Directory生成的强密码，长度为 16-64 个字符。 将来无法检索此密码。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordCredential](../resources/passwordcredential.md) 对象。 响应 **对象中的 secretText** 属性包含由 Azure Active Directory生成的强密码，长度为 16-64 个字符。 将来无法检索此密码。
 
 ## <a name="examples"></a>示例
 

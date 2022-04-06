@@ -3,15 +3,15 @@ author: JeremyKelley
 description: columnDefinition 资源上的 numberColumn 指示该列的值为数字。
 ms.date: 09/11/2017
 title: NumberColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 49c3dce15297187bcda20e20ae339dba86d154db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d361d204471e01bb65e33a7c4177600fc2dcd6f0
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988953"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723296"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn 资源类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "47988953"
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是 **numberColumn** 资源的 JSON 表示形式。
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.numberColumn" } -->
 
 ```json
@@ -37,24 +38,24 @@ ms.locfileid: "47988953"
 
 ## <a name="properties"></a>属性
 
-| 属性名称      | 类型   | 说明
-|:-------------------|:-------|:-----------------------------------------------
-| **decimalPlaces**  | string | 要显示的小数位数。 有关可能的值的信息，请参阅以下信息。
-| **displayAs**      | string | 值在用户体验中的显示方式。 必须为 `number` 或 `percentage` 的其中一个。 如果未指定，则视为 `number`。
-| **maximum**        | double | 最大允许值。
-| **minimum**        | double | 最小允许值。
+| 属性          | 类型   | 说明                                                                                                                |
+| :---------------- | :----- | :------------------------------------------------------------------------------------------------------------------------- |
+| **decimalPlaces** | string | 要显示的小数位数。 有关可能的值的信息，请参阅以下信息。                                   |
+| **displayAs**     | string | 值在用户体验中的显示方式。 必须为 `number` 或 `percentage` 的其中一个。 如果未指定，则视为 `number`。 |
+| **maximum**       | double | 最大允许值。                                                                                               |
+| **minimum**       | double | 最小允许值。                                                                                               |
 
 ## <a name="decimalplaces-values"></a>DecimalPlaces 值
 
-| 值          | 说明
-|:---------------|:--------------------------------------------------------------
-| **automatic**  | 默认值。 根据需要自动显示小数位数。
-| **none**       | 不显示任何小数位数。
-| **one**        | 显示一位小数位数。
-| **two**        | 显示两位小数位数。
-| **three**      | 显示三位小数位数。
-| **four**       | 显示四位小数位数。
-| **five**       | 显示五位小数位数。
+| 值         | 说明                                              |
+| :------------ | :------------------------------------------------------- |
+| **automatic** | 默认值。 根据需要自动显示小数位数。 |
+| **none**      | 不显示任何小数位数。                       |
+| **one**       | 显示一位小数位数。                        |
+| **two**       | 显示两位小数位数。                       |
+| **three**     | 显示三位小数位数。                     |
+| **four**      | 显示四位小数位数。                      |
+| **five**      | 显示五位小数位数。                      |
 
 注意：**decimalPlaces** 和 **displayAs** 应用于数字的呈现方式，而不是存储方式。
 这些属性可能会更新。
@@ -69,5 +70,3 @@ ms.locfileid: "47988953"
   "suppressions": []
 }
 -->
-
-

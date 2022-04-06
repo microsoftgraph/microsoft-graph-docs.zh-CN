@@ -5,12 +5,12 @@ description: 项目是 OneDrive API 中的主数据模型。每一个都是一�
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 3be0a329d891bbaccac012b8753a5c374b49a8a7
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 86589350f5808667067a26d4f89ee0693928c418
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61847224"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63559767"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -73,7 +73,8 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。 只读。 仅在 OneDrive 个人版上。
+| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。 只读。 只读。 仅在 OneDrive 个人版上。
+| bundle               | [捆绑][]         | 捆绑包元数据（如果该项是捆绑包）。 只读。
 | content              | 流             | 内容流（如果此项表示一个文件）。
 | createdBy            | [identitySet][]    | 识别创建项目的用户、设备和应用程序。只读。
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
@@ -118,7 +119,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | children           | driveItem 集合        | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
 | createdByUser      | [user][]                    | 创建了项的用户的身份。只读。
 | lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。只读。
-| listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 只读。 可为 null。
+| listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，则为关联的文档库列表项。只读。可为 Null。
 | permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
 | 订阅      | [订阅][]集合 | 项目上的订阅集。 仅在驱动器根目录上支持。
 | 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
@@ -151,7 +152,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
@@ -160,6 +161,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "bundle": { "@odata.type": "microsoft.graph.bundle" },
   "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -219,6 +221,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 
 [audio]: audio.md
 [baseItem]: baseitem.md
+[捆绑]: bundle.md
 [Deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
 [driveItemVersion]: driveitemversion.md

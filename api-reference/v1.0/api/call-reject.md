@@ -1,16 +1,16 @@
 ---
 title: call： reject
 description: 使机器人能够拒绝传入呼叫。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c7d72d6448cddbd1a174c1f713792453b5039cbb
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e58b6d996c1083c03aec5b0e96a353da562c020e
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348677"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607930"
 ---
 # <a name="call-reject"></a>call： reject
 
@@ -22,14 +22,14 @@ ms.locfileid: "62348677"
 
 此 API 不会结束已应答的现有调用。 使用 [删除呼叫](../api/call-delete.md) 结束呼叫。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                |
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | 无                                                       |
+| Application     | 无                                                       |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ POST /communications/calls/{id}/reject
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |reason|String|拒绝原因。 可能的值是 、 `None`和 `Busy``Forbidden` |
 |callbackUri|String|这允许机器人为当前呼叫提供特定的回调 URI，以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https`。|

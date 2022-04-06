@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleAssignmentScheduleRequest： filterByCurrentUser
 description: 获取由特定用户主体筛选的 unifiedRoleAssignmentScheduleRequest 对象及其属性的列表
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e4fb0a94cc88bd764fd937d6453e051c05a899d3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9e583434563406242657b12c184e91963bcd62bc
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125171"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510700"
 ---
 # <a name="unifiedroleassignmentschedulerequest-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleRequest： filterByCurrentUser
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "62125171"
 
 获取与特定主体对象关联的 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -42,13 +42,13 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser
 ## <a name="function-parameters"></a>函数参数
 下表显示了可用于此方法的查询参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
-|on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|筛选以查询当前用户作为主体的对象。 允许的值为 `principal` 。 必需。|
+|on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|筛选以查询当前用户作为主体的对象。 允许的值为 `principal`。 必需项。|
 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -60,7 +60,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和[unifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 39bd3f2aeeb87ff82fca521173b78f2be6a9b215
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: e741b3e35ab2e128b9e8d9a6dd8ed9a265559c39
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854562"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671858"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 
@@ -30,7 +30,7 @@ ms.locfileid: "62854562"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -44,7 +44,7 @@ POST /directoryObjects/validateProperties
 
 | 名称           | 说明      |
 |:---------------|:-----------------|
-| Authorization  | Bearer {code}。 必需。   |
+| Authorization  | 持有者 {code}。必需。   |
 | Content-Type   | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /directoryObjects/validateProperties
 |entityType|String| `Group` 是唯一受支持的实体类型。 |
 |displayName|String| 要显示名称组的成员。 属性不单独是必需的。 但是，至少需要一 (displayName 或 mailNickname) 属性。 |
 |mailNickname|String| 要验证的组的邮件昵称。 属性不单独是必需的。 但是，至少需要一 (displayName 或 mailNickname) 属性。 |
-|onBehalfOfUserId|GUID| 调用 API 时要模拟的用户的对象 ID。 验证结果适用于 onBehalfOfUserId 的属性和角色。 |
+|onBehalfOfUserId|Guid| 调用 API 时要模拟的用户的对象 ID。 验证结果适用于 onBehalfOfUserId 的属性和角色。 |
 
 ## <a name="response"></a>响应
 

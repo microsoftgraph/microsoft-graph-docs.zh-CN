@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: 获取捆绑包
-description: 获取 driveItems 捆绑包
+description: 获取 driveItems 捆绑包。
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d370a758719ac3ee252113732673a807d3e307de
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: 70eb5c758ddb97dc399dec7e98972410326525db
+ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63757963"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63780490"
 ---
 # <a name="get-bundle"></a>获取捆绑包
 
@@ -36,27 +36,27 @@ GET /drive/items/{bundle-id}
 ```
 
 由于捆绑包是项，因此可以使用 **items** 集合返回有关捆绑包的元数据。
-您还可以使用 **bundles 集合** 作为方便，以确保收到响应中的捆绑包。
+为了方便起见，您还可以使用 **bundles** 集合来确保在响应中获取捆绑包。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-可以使用 [OData查询参数][odata-parameters]限制通过此调用返回的对象的形状。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求头
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。必需。 |
-| if-none-match | eTag。 可选。 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。
+| Authorization | Bearer {token}。必需。 |
+| if-none-match | eTag。 可选。 如果包含此请求标头，并且提供的 eTag (或 cTag) 与文件上的当前标记匹配，则返回  `304 Not Modified` 响应。|
 
 ## <a name="request-body"></a>请求正文
 
-请勿为此方法提供请求正文。
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 [driveItem][driveItem]resource with the [bundle][bundle]。
+如果成功，此方法在响应`200 OK`正文中返回 响应代码和 [driveItem][driveItem]object that contains the [bundle][bundle]。
 
-有关错误响应的信息，请参阅 [错误响应][error-response]。
+有关错误响应的信息，请参阅 [Microsoft Graph错误响应和资源类型][error-response]。
 
 ## <a name="examples"></a>示例
 
@@ -64,12 +64,13 @@ GET /drive/items/{bundle-id}
 
 #### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
+GET https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-metadata-csharp-snippets.md)]
@@ -96,6 +97,10 @@ GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 
 #### <a name="response"></a>响应
 
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
@@ -120,20 +125,19 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。
-
 ### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>示例 2：在单个调用中获取捆绑包及其子项
 
-可以使用查询 [`expand`](/graph/query-parameters) 字符串参数在检索捆绑包元数据的同一调用中包括捆绑包的子项。
+`expand`使用[查询字符串参数](/graph/query-parameters)将捆绑包的子项包括在检索捆绑包元数据的同一请求中。
 
 #### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
+GET https://graph.microsoft.com/v1.0/drive/items/{bundle-id}?expand=children
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-and-children-csharp-snippets.md)]
@@ -160,10 +164,12 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 
 #### <a name="response"></a>响应
 
-此调用将返回捆绑包元数据和捆绑包的子项列表。
+下面展示了示例响应。 此调用将返回捆绑包元数据和捆绑包的子项列表。
 如果捆绑包没有子项，它将返回空集合。
 
 如果捆绑包中的子项数量大于默认页面大小， **children@odata.nextLink** 属性将返回一个 URL，该 URL 可用于请求捆绑包中的下一页子项。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -181,8 +187,6 @@ Content-Type: application/json
   "children@odata.nextLink": "https://api.onedrive.com/v1.0/..."
 }
 ```
-
-为了提高可读性，可能缩短了此处显示的响应对象。
 
 
 [捆绑]: ../resources/bundle.md

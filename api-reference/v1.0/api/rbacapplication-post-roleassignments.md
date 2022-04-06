@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d964aa9dda53533a82384af60369db3b8fe120c5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 27d61f6e10d851272721da13a2cfebdd769fa933
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134406"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629015"
 ---
 # <a name="create-unifiedroleassignment"></a>创建 unifiedRoleAssignment
 
@@ -18,9 +18,12 @@ ms.locfileid: "62134406"
 
 创建新的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
+
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+### <a name="for-the-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
@@ -28,13 +31,32 @@ ms.locfileid: "62134406"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | RoleManagement.ReadWrite.Directory |
 
+### <a name="for-the-entitlement-management-provider"></a>对于权利管理提供程序
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） |  EntitlementManagement.ReadWrite.All   |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | 不支持。 |
+
 ## <a name="http-request"></a>HTTP 请求
+
+为角色分配创建一个目录提供程序：
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /roleManagement/directory/roleAssignments
 ```
+
+为角色分配提供程序创建一个权限管理提供程序：
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /roleManagement/entitlementManagement/roleAssignments
+```
+
 
 ## <a name="request-headers"></a>请求标头
 
@@ -44,11 +66,11 @@ POST /roleManagement/directory/roleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 **directoryScopeId** Azure Active Directory (Azure AD) 中定义的作用域，或 **appScopeId** 指定的特定于应用程序的范围。 租户Azure AD包括租户 `/` () 、管理单元或应用程序。 有关 appScope 详细信息，请参阅 [appScope](../resources/appscope.md)。
+在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 Azure Active Directory (由 **directoryScopeId**) Azure AD 中定义的作用域，或 **appScopeId** 指定的特定于应用程序的范围。 Azure AD 范围的示例包括租户 () `/` 、管理单元或应用程序。 有关 appScope 有关详细信息，请参阅 [appScope](../resources/appscope.md)。
 
 下表显示创建 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象时所需的属性。
 
-| 参数 | 类型 | Description|
+| 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
 |roleDefinitionId|String| 分配所针对的角色定义的标识符。|
 |principalId|String| 分配授予的主体的标识符。 |
@@ -57,11 +79,11 @@ POST /roleManagement/directory/roleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新的 `201 Created` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-role-assignment-with-a-tenant-wide-scope"></a>示例 1：角色分配范围创建租户范围
+### <a name="example-1-create-a-role-assignment-with-a-tenant-wide-scope"></a>示例 1：创建角色分配范围的范围的租户
 
 #### <a name="request"></a>请求
 
@@ -295,6 +317,53 @@ Content-type: application/json
     "resourceScope": "/661e1310-bd76-4795-89a7-8f3c8f855bfc",
     "directoryScopeId": "/661e1310-bd76-4795-89a7-8f3c8f855bfc",
     "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+}
+```
+
+### <a name="example-4-create-a-role-assignment-with-access-package-catalog-scope"></a>示例 4：创建角色分配包目录作用域的包
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment3_from_rbacapplication_4"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleAssignments
+Content-type: application/json
+
+{
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/entitlementManagement/roleAssignments/$entity",
+    "id": "f3092518-7874-462e-93e9-0cd6c11ffc52",
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
 }
 ```
 

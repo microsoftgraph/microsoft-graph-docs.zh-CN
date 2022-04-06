@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 61fe8e4f202a5b921818eca1dd4be7e753d7f8fa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 13a017ac30de19f978c21b1da549efefac985ae7
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129710"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586868"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>使用 Microsoft Graph 获取 OneNote 内容和结构
 
@@ -19,10 +19,16 @@ ms.locfileid: "59129710"
 
 `GET ../onenote/pages/{id}`
 
-如果请求成功，Microsoft Graph 将返回一个 200 HTTP 状态代码以及请求的实体或内容。 OneNote 实体作为符合 OData 版本 4.0 规范的 JSON 对象返回。
+如果请求成功，Microsoft Graph 会返回 `200 OK` HTTP 状态代码以及请求的实体或内容。 OneNote 实体作为符合 OData 版本 4.0 规范的 JSON 对象返回。
 
 通过使用查询字符串选项，可以筛选查询并提高性能。
 
+> [!NOTE]
+> 如果正在构建支持以下方案之一的解决方案，则会遇到 OneNote API 限制:
+> - 备份/还原 OneNote 部分
+> - 备份/还原 OneNote 笔记本
+> 
+> 有关备份和还原操作，请参阅 [发现文件和检测大规模更改的最佳做法](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online)。
 
 <a name="request-uri"></a>
 
@@ -143,7 +149,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 **previewText** 属性包含来自页面的文本片段。 Microsoft Graph 返回完整短语，最多 300 个字符。 
 
-如果页面包含可用于生成预览 UI 的图像，则 **previewImageUrl** 对象中的 **href** 属性包含指向公共 [图像资源](#image-or-other-file-resource)的链接。 可以在 HTML 中使用此链接。 否则，**href** 返回 null。
+如果页面具有可用于生成预览 UI 的图像，则 **previewImageUrl** 对象中的 **href** 属性包含指向公共 [映像资源](#image-or-other-file-resource) 的链接。可以在 HTML 中使用此链接。否则，**href** 返回 null。
 
 #### <a name="example"></a>示例 
 
@@ -471,7 +477,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
  
 ### <a name="orderby"></a>orderby
 
-获取先按照 **createdByAppId** 属性排序再按照最近创建时间排序的前 20 个页面。 默认情况下，API 返回 20 个条目。
+获取按 **createdByAppId** 属性排序的前 20 个页面，然后按最近创建时间排序。默认情况下，此 API 返回 20 个条目。
 
 ```
 [GET] ../pages?orderby=createdByAppId,createdTime desc
@@ -600,7 +606,7 @@ Microsoft Graph 支持 **filter** 表达式中的以下 OData 运算符和函数
 not | `not contains(tolower(title),'school')` |  
 
 <br/>
-  
+
 | 字符串函数 | 示例 |  
 |------|------|   
 | contains | `contains(tolower(title),'spring')` |  
@@ -651,7 +657,7 @@ not | `not contains(tolower(title),'school')` |
 | 请求数据 | 说明 |  
 |------|------|  
 | 协议 | 所有请求均使用 SSL/TLS HTTPS 协议。 |  
-| 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果缺少或无效，则请求失败，并显示 401 状态代码。 请参阅[身份验证和权限](permissions-reference.md)。</p> |  
+| 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果丢失或无效，则请求将失败，并显示 401 状态代码。请参阅 [身份验证和权限](permissions-reference.md)。</p> |  
 | 接受标头 | <p> `application/json` 适用于 OneNote 实体和实体集</p><p> `text/html` 适用于页面内容</p> | 
 
 <br/>

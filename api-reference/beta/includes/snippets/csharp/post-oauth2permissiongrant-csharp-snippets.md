@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4e6690495432c5bfc5f6b940d64cf0467cae30006814b1c0846496b28a03f223
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4a1338d71ec6e12c29cdfe0f27e88c524670a5ff
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57158513"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758759"
 ---
 ```csharp
 
@@ -13,13 +13,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var oAuth2PermissionGrant = new OAuth2PermissionGrant
 {
-    ClientId = "clientId-value",
-    ConsentType = "consentType-value",
-    PrincipalId = "principalId-value",
-    ResourceId = "resourceId-value",
-    Scope = "scope-value",
-    StartTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
-    ExpiryTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z")
+    ClientId = "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+    ConsentType = "AllPrincipals",
+    ResourceId = "943603e4-e787-4fe9-93d1-e30f749aae39",
+    Scope = "DelegatedPermissionGrant.ReadWrite.All",
+    StartTime = DateTimeOffset.Parse("2022-03-17T00:00:00Z"),
+    ExpiryTime = DateTimeOffset.Parse("2023-03-17T00:00:00Z")
 };
 
 await graphClient.Oauth2PermissionGrants

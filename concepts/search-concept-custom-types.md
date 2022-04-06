@@ -1,25 +1,25 @@
 ---
-title: 使用 Microsoft Microsoft 搜索中的 Graph API 搜索自定义类型
-description: 可以使用 Microsoft 搜索 API 通过[externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)资源导入外部数据，并对此外部内容运行搜索查询。
+title: 使用 Microsoft Microsoft 搜索 中的 Graph API 搜索自定义类型
+description: 可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 资源导入外部数据，并对此外部内容运行搜索查询。
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 18269238f77c1c9405242326a5015cdc620c4092
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 01a78191440f017aaa43600d9d15170bf96662b3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214823"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671893"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义 (预览)  
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph连接器导入的自定义类型
 
-使用 Microsoft 搜索 API 跨 Microsoft Graph 连接器进行内容[搜索](/microsoftsearch/connectors-overview)。 内容通过 Microsoft 提供的内置[](/microsoftsearch/connectors-gallery)连接器或通过使用[Microsoft](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)Graph连接器 API 实现的自定义连接器导入。
+使用 Microsoft 搜索 API 跨 Microsoft Graph 连接器的检索和[索引内容进行搜索](/microsoftsearch/connectors-overview)。 内容通过 Microsoft 提供的内置连接器或[](https://www.microsoft.com/microsoft-search/connectors)通过使用 [Microsoft](/graph/api/resources/indexing-api-overview) Graph API 实现的自定义连接器导入。
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
 导入内容并编制索引后，可以使用搜索 API 查询内容。
 
-若要搜索自定义类型，在查询方法的请求正文中指定 [以下](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 属性：
+若要搜索自定义类型，在查询方法的请求正文中指定 [以下](/graph/api/search-query) 属性：
 
 - 要包括在连接器设置过程中分配的连接 ID 的 **contentSources** 属性。 你可以传递多个连接 ID 以跨多个连接进行搜索。 结果在单个列表中返回，并跨多个连接进行排名。
 
@@ -27,20 +27,20 @@ ms.locfileid: "60214823"
 TODOSEARCHAPI - Bug 1653398 
 -->
 
-- **entityTypes** 属性为 `externalItem` 。
+- **entityTypes** 属性为 `externalItem`。
 
 - 要 **包含** 要检索的外部项中的字段的 fields 属性。 请注意，如果请求中不包含任何字段，响应将包含 **contentSources** 属性中为指定连接指定的数据架构中标记为可检索的所有字段。
 
-此外，您可以基于 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 中的属性聚合搜索结果，这些属性是数值或字符串类型，且在架构中设置为可 [精简](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true)。 有关详细信息，请参阅使用聚合 [优化搜索结果](search-concept-aggregation.md)。
+此外，您可以基于 [externalItem](/graph/api/resources/externalitem) 中的属性聚合搜索结果，这些属性是数值或字符串类型，并且设置为可在架构中 [精简](/graph/api/resources/schema)。 有关详细信息，请参阅使用 [聚合优化搜索结果](search-concept-aggregation.md)。
 
 ## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>示例 1：使用 Azure SQL内置连接器检索项目
 
-本示例中[，AdventureWorks](/sql/samples/adventureworks-install-configure)数据库的内容已使用 Azure SQL内置连接器进行采用。
+本示例中，[AdventureWorks](/sql/samples/adventureworks-install-configure) 数据库的内容已使用 Azure SQL内置连接器进行采用。
 
 ### <a name="request"></a>请求
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -75,7 +75,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
       "searchTerms": ["yang"],
@@ -126,7 +126,7 @@ Content-type: application/json
 ### <a name="request"></a>请求
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -163,7 +163,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)",
 "value": [
       {
         "searchTerms": [
@@ -236,8 +236,8 @@ Content-type: application/json
 }
 ```
 
-有关详细信息，请参阅分配 [属性标签](/microsoftsearch/configure-connector#step-5-assign-property-labels)。
+有关详细信息，请参阅分配 [属性标签](/microsoftsearch/configure-connector#step-6-assign-property-labels)。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview)

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 771e2a5c82a4966fc9ef25fb0026312e9acf27ea
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: aa606909476353a6e2fdf235b37cf474b71f5d32
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509824"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671746"
 ---
 # <a name="list-device-transitive-groups"></a>List device transitive groups
 
@@ -20,7 +20,7 @@ ms.locfileid: "64509824"
 
 获取设备是其中一个成员的组。 此 API 请求是可传递的，并且还将返回设备是嵌套成员的所有组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -218,8 +218,8 @@ Content-type: application/json
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "request",
-  "name": "list_devices_transitivememberof_startswith"
+  "blockType": "ignored",
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')

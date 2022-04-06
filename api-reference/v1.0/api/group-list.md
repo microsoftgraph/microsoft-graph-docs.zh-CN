@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0d1661d1660ae1b1d1cf6a3468f1429f0e635fb6
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 37cb08116132171597fd6115c1142552adf7ae3f
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672523"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510588"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -314,7 +314,7 @@ Content-type: text/plain
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count"
+  "name": "get_groups_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName

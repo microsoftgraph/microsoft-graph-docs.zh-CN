@@ -5,12 +5,12 @@ title: List 资源
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c2f0fd3fe48eaebbf7f730d0e52e964aab2e057b
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: bdca492a6abac648cee5f48b10ef95f1fd77b8b7
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854471"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723320"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -29,22 +29,22 @@ ms.locfileid: "62854471"
 
 下面的所有示例都与网站相关，例如：`https://graph.microsoft.com/beta/sites/{site-id}`。
 
-| 常见任务               | HTTP 方法
-|:--------------------------|:------------------------------
-| [获取网站中的列表][]   | GET /sites/{site-id}/lists
-| [创建列表][]           | POST /列表
-| [获取列表][]              | GET /lists/{list-id}
-| [枚举列表项][]  | GET /lists/{list-id}/items
-| [更新列表项][]      | PATCH /lists/{list-id}/items/{item-id}
-| [删除列表项][]      | DELETE /lists/{list-id}/items/{item-id}
-| [创建列表项][]      | POST /lists/{list-id}
-| [获取最近的活动][] | GET /lists/{list-id}/activities
-| [获取 WebSocket 频道][] | GET /lists/{list-id}/subscriptions/socketIo
-|[列表内容类型][]          | GET /lists/{list-id}/contentTypes
-|[从网站添加内容类型副本][] | POST /lists/{list-id}/contentTypes/addCopy
-|[List columns][]               | GET /lists/{list-id}/columns
-|[创建列][]              | POST /lists/{list-id}/columns
-|[列举操作](../api/list-list-operations.md)|GET /lists/{list-id}/operations
+| 常见任务                                       | HTTP 方法                                 |
+| :------------------------------------------------ | :------------------------------------------ |
+| [获取网站中的列表][]                           | GET /sites/{site-id}/lists                  |
+| [创建列表][]                                   | POST /列表                                 |
+| [获取列表][]                                      | GET /lists/{list-id}                        |
+| [枚举列表项][]                          | GET /lists/{list-id}/items                  |
+| [更新列表项][]                              | PATCH /lists/{list-id}/items/{item-id}      |
+| [删除列表项][]                              | DELETE /lists/{list-id}/items/{item-id}     |
+| [创建列表项][]                              | POST /lists/{list-id}                       |
+| [获取最近的活动][]                         | GET /lists/{list-id}/activities             |
+| [获取 WebSocket 频道][]                         | GET /lists/{list-id}/subscriptions/socketIo |
+| [列表内容类型][]                            | GET /lists/{list-id}/contentTypes           |
+| [从网站添加内容类型副本][]            | POST /lists/{list-id}/contentTypes/addCopy  |
+| [List columns][]                                  | GET /lists/{list-id}/columns                |
+| [创建列][]                                 | POST /lists/{list-id}/columns               |
+| [列举操作](../api/list-list-operations.md) | GET /lists/{list-id}/operations             |
 
 [获取网站中的列表]: ../api/list-list.md
 [获取列表]: ../api/list-get.md
@@ -64,38 +64,38 @@ ms.locfileid: "62854471"
 
 **list** 资源具有以下属性。
 
-| 属性名称    | 类型                             | 说明
-|:-----------------|:---------------------------------|:---------------------------
-| **columns**      | Collection([columnDefinition][]) | 此列表的字段定义集合。
-| **contentTypes** | Collection([contentType][])      | 此列表中出现的内容类型的集合。
-| **displayName**  | string                           | 列表的可显示标题。
-| **list**         | [listInfo][]                     | 提供关于列表的其他详细信息。
-| **system**       | [systemFacet][]                  | 如果存在，则表示这是系统管理的列表。只读。
+| 属性         | 类型                             | 说明                                                          |
+| :--------------- | :------------------------------- | :------------------------------------------------------------------- |
+| **columns**      | Collection([columnDefinition][]) | 此列表的字段定义集合。                   |
+| **contentTypes** | Collection([contentType][])      | 此列表中出现的内容类型的集合。                |
+| **displayName**  | string                           | 列表的可显示标题。                                   |
+| **list**         | [listInfo][]                     | 提供关于列表的其他详细信息。                          |
+| **system**       | [systemFacet][]                  | 如果存在，则表示这是系统管理的列表。只读。 |
 
 以下属性继承自 **[baseItem][]**。
 
-| 属性名称            | 类型             | 说明
-|:-------------------------|:-----------------|:-------------------------------
-| **id**                   | string           | 项的唯一标识符。只读。
-| **名称**                 | string           | 项目名称。
-| **createdBy**            | [identitySet][]  | 此项的创建者的标识。只读。
-| **createdDateTime**      | DateTimeOffset   | 创建项目的日期和时间。只读。
-| **说明**          | string           | 项目的描述性文本。
-| **lastModifiedBy**       | [identitySet][]  | 此项最后一个修饰符的标识。只读。
-| **lastModifiedDateTime** | DateTimeOffset   | 上次修改项目的日期和时间。只读。
-| **webUrl**               | string (url)     | 在浏览器中显示此项目的 URL。只读。
+| 属性名称            | 类型            | 说明                                              |
+| :----------------------- | :-------------- | :------------------------------------------------------- |
+| **id**                   | string          | 项的唯一标识符。只读。            |
+| **名称**                 | string          | 项目名称。                                    |
+| **createdBy**            | [identitySet][] | 此项的创建者的标识。只读。         |
+| **createdDateTime**      | DateTimeOffset  | 创建项目的日期和时间。只读。       |
+| **说明**          | string          | 项目的描述性文本。                       |
+| **lastModifiedBy**       | [identitySet][] | 此项最后一个修饰符的标识。只读。   |
+| **lastModifiedDateTime** | DateTimeOffset  | 上次修改项目的日期和时间。只读。 |
+| **webUrl**               | string (url)    | 在浏览器中显示此项目的 URL。只读。    |
 
 ## <a name="relationships"></a>关系
 
 **list** 资源与其他资源具有以下关系。
 
-| 关系名称 | 类型                        | 说明
-|:------------------|:----------------------------|:------------------------------
-| **activities**    | [itemActivity][] 集合 | 最近发生在此列表内的活动。
-| **drive**         | [drive][]                   | 仅存在于文档库中。允许使用 [driveItems][driveItem] 作为 [drive][] 资源访问列表。
-| **项目**         | Collection([listItem][])    | 列表中包含的所有项。
-| 订阅      | [订阅][]集合 | 列表上的订阅集。
-|**operations**|[richLongRunningOperation](../resources/richlongrunningoperation.md) 集合| 列表长时间运行的操作的集合。
+| 关系   | 类型                                                                            | 说明                                                                                                         |
+| :------------- | :------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------ |
+| **activities** | [itemActivity][] 集合                                                     | 最近发生在此列表内的活动。                                                             |
+| **drive**      | [drive][]                                                                       | 仅存在于文档库中。允许使用 [driveItems][driveItem] 作为 [drive][] 资源访问列表。 |
+| **项目**      | Collection([listItem][])                                                        | 列表中包含的所有项。                                                                                    |
+| 订阅  | [订阅][]集合                                                     | 列表上的订阅集。                                                                               |
+| **operations** | [richLongRunningOperation](../resources/richlongrunningoperation.md) 集合 | 列表长时间运行的操作的集合。                                                             |
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -161,5 +161,3 @@ ms.locfileid: "62854471"
   "suppressions": []
 }
 -->
-
-

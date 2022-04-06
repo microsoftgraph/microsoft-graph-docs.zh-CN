@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d477e0333c94114818a0bd4fa8ec7723c1a06150
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 83a5a8e1ca6f43aa56454a7a3acb4a2c653880bc
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878643"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630861"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -27,16 +27,19 @@ ms.locfileid: "62878643"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
-调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 的终结点时不支持应用程序权限。
+> [!TIP]
+> 1. 调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 的终结点时不支持应用程序权限。
+>2. `User.Read` 权限允许应用读取配置文件，并仅发现组成员身份、报表和经理等已登录用户的关系。
 
 ## <a name="http-request"></a>HTTP 请求
 对于特定用户：
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me
 GET /users/{id | userPrincipalName}
 ```
 
@@ -249,6 +252,42 @@ Content-type: application/json
             "issuerAssignedId": "AdeleV@contoso.com"
         }
     ]
+}
+```
+
+### <a name="example-4-get-the-value-of-a-schema-extension-for-a-user"></a>示例 4：获取用户的架构扩展值
+
+在此示例中，架构扩展 ID 为 `ext55gb1l09_msLearnCourses`。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_schemaextension"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?$select=ext55gb1l09_msLearnCourses
+```
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(ext55gb1l09_msLearnCourses)/$entity",
+    "ext55gb1l09_msLearnCourses": {
+        "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+        "courseType": "Developer",
+        "courseName": "Introduction to Microsoft Graph",
+        "courseId": 1
+    }
 }
 ```
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 81bc1cba76e1d52d77178765fd08776fe4a79c99
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 61867cea30bbc248ab85ca21c237a61ad62fd1a2
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397958"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528071"
 ---
 ```go
 
@@ -22,7 +22,7 @@ options := &msgraphsdk.OrganizationalBrandingLocalizationRequestBuilderPatchOpti
 }
 organizationId := "organization-id"
 organizationalBrandingLocalizationId := "organizationalBrandingLocalization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().LocalizationsById(&organizationalBrandingLocalizationId).Patch(options)
+graphClient.OrganizationById(&organizationId).Branding().LocalizationsById(&organizationalBrandingLocalizationId).Patch(options)
 
 
 ```

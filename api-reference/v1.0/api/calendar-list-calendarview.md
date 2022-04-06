@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 85cb84de23883e15cd6c34e2f2db4cc8fae382e8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ba9c2deaaf34e0ff343dc690ad6d06550fd3429a
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132536"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477893"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -82,7 +82,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象集合。
 
-如果结果集跨多个页面，**calendarView** 将在响应中返回 **@odata.nextLink** 属性，其中包含指向下一页结果的 URL。 有关详细信息，请参阅[分页](/graph/concepts/paging.md)。
+如果结果集跨多个页面，**calendarView** 将在响应中返回 **@odata.nextLink** 属性，其中包含指向下一页结果的 URL。如需详细信息，请参阅 [分页](/graph/paging)。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

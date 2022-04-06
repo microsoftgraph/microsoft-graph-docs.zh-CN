@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dc942a03b7cbc479c2312c41e7086a526756e807
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 82f8de570b1a7596cb558ee79456dc00e68b4ae1
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118606"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671585"
 ---
 # <a name="get-phoneauthenticationmethod"></a>获取 phoneAuthenticationMethod
 
@@ -30,7 +30,7 @@ ms.locfileid: "62118606"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -44,17 +44,17 @@ ms.locfileid: "62118606"
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽) 
+* 身份验证管理员 (只能看到屏蔽的电话号码) 
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/authentication/phoneMethods/{id}
-GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
+GET /me/authentication/phoneMethods/{phoneMethodId}
+GET /users/{userId | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
 ```
-与要 `id` 检索的 phoneType 对应的值是下列值之一：
+与 `phoneMethodId` phoneType 对应的值是下列值之一：
 + `b6332ec1-7057-4abe-9331-3d72feddfe41` 检索 `alternateMobile` **phoneType**。
 + `e37fc753-ff3b-4958-9484-eaa9425c82bc` 检索 `office` **phoneType**。
 + `3179e48a-750b-4051-897c-87b9720928f7` 检索 `mobile` **phoneType**。
@@ -75,7 +75,7 @@ GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

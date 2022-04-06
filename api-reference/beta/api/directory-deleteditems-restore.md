@@ -2,15 +2,15 @@
 title: 恢复已删除的项目
 description: '从已删除的项目中还原最近删除的项目。 '
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f542b6617d1f58d22304bd10f8bbefed2b22741a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8d7944e12d093ca62c428f5d90183fbc4f8ff5e9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046900"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668609"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "52046900"
 
 从[已删除的项目](../resources/directory.md)中还原最近删除的项目。 
 
-目前，仅应用程序、组和用户资源支持还原已删除[项目](../resources/user.md)功能。 [](../resources/group.md) [](../resources/application.md) 如果意外删除项目，可完全还原该项目。 这不适用于永久删除的安全组。
+目前，仅应用程序、组和用户资源支持还原[已删除项目](../resources/group.md)[功能](../resources/user.md)。[](../resources/application.md) 如果意外删除项目，可完全还原该项目。 这不适用于永久删除的安全组。
 
 最近删除的项目将保留最多 30 天的可用时间。 30 天后，该项目将永久删除。
 
@@ -31,7 +31,7 @@ ms.locfileid: "52046900"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.ReadWrite.All     |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.All、 Application.ReadWrite.OwnedBy |
 
@@ -40,7 +40,7 @@ ms.locfileid: "52046900"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | User.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | User.ReadWrite.All |
 
@@ -48,7 +48,7 @@ ms.locfileid: "52046900"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All |
 
@@ -61,7 +61,7 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 需要 Bearer &lt; &gt; *token*|
+| Authorization  | 需要 Bearer &lt;*token*&gt;|
 | Content-type | application/json |
 
 ## <a name="request-body"></a>请求正文

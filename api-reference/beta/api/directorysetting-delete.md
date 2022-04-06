@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0fcecbfbb3d5133eb2bed9377f653ebe1cc8608c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 27cfa150303e7a89553c212561966f87f7b1b47a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336100"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671501"
 ---
 # <a name="delete-directorysetting"></a>删除 directorySetting
 
@@ -25,7 +25,7 @@ ms.locfileid: "63336100"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.ReadWrite.All |
 

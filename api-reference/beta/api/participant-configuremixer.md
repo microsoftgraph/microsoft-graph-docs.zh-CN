@@ -1,16 +1,16 @@
 ---
 title: participant： configureMixer
 description: 配置多方对话中不同参与者的音频混合方式。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9b7bfd09c189f506933dce3103adc9141e374371
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 275765d6124236a00dd7dba9fd61dd9a9aa945c5
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018282"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608028"
 ---
 # <a name="participant-configuremixer"></a>participant： configureMixer
 
@@ -20,14 +20,14 @@ ms.locfileid: "61018282"
 
 配置多方对话中不同参与者的音频混合方式。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /communications/calls/{id}/participants/configureMixer
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) 集合| 给定音频参与者的调频器级别配置。|
 |clientContext|String|客户端上下文。|
@@ -105,7 +105,7 @@ Content-Length: 501
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-configuremixer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-configuremixer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

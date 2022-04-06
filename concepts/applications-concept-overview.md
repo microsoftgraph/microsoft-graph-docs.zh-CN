@@ -5,12 +5,12 @@ author: FaithOmbongi
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c0e264cb0b0b9b638741aeb0db774efd121c83e9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: c824f8b70f273d31b37d2458e384dbb49ffcb0c7
+ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526168"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63780525"
 ---
 # <a name="applications-api-overview"></a>应用程序 API 概述
 
@@ -26,7 +26,7 @@ Microsoft Graph API 使你能够管理与 Azure Active Directory 中的应用程
 
 ## <a name="application-management"></a>应用管理
 
-应用程序注册涉及告知 Azure AD 有关应用程序的信息，包括其所在的 URL、身份验证后发送回复的 URL、标识应用程序的 URI 等。 可使用 Microsoft Graph 中的[应用程序 API](/graph/api/resources/application?view=graph-rest-1.0) 以编程方式管理应用程序。
+应用程序注册是指告知 Azure AD 有关应用程序的信息，包括其所在的 URL、身份验证后发送回复的 URL、标识应用程序的 URI 等。可以在 Microsoft Graph 中使用 [应用程序 API](/graph/api/resources/application?view=graph-rest-1.0) 以编程方式管理应用程序。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
 
@@ -74,7 +74,7 @@ Microsoft Graph API 使你能够管理与 Azure Active Directory 中的应用程
 - [预配的工作原理](/azure/active-directory/app-provisioning/how-provisioning-works)
 
 若要了解有关使用同步 API 的信息，请参阅以下教程及其相关联的 API：
-- [使用 Microsoft Graph Api 配置预配](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [使用 Microsoft Graph Api 配置预配](/azure/active-directory/app-provisioning/application-provisioning-configuration-api)
     - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
     - [synchronizationTemplate](/graph/api/resources/synchronization-synchronizationtemplate)
     - [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob)

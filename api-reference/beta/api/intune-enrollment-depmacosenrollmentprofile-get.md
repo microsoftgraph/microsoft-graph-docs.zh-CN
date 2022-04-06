@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b53e5d53a655d6718aa274e53c80a30e766a122
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 8bb6df891063ec75cf90ef0c5e2988b075260516
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489161"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629804"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>获取 depMacOSEnrollmentProfile
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1438
+Content-Length: 1480
 
 {
   "value": {
@@ -106,10 +106,12 @@ Content-Length: 1438
     "zoomDisabled": true,
     "iCloudStorageDisabled": true,
     "chooseYourLockScreenDisabled": true,
-    "accessibilityScreenDisabled": true
+    "accessibilityScreenDisabled": true,
+    "autoUnlockWithWatchDisabled": true
   }
 }
 ```
+
 
 
 

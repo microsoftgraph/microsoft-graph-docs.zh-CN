@@ -2,21 +2,21 @@
 title: 获取 windowsCertificateProfileBase
 description: 读取 windowsCertificateProfileBase 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 41806a6f23857bbc481afe07e77c12ddc2e34b43
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8991df1b5b624e63a584256ff380c31620aa390a
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59112578"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630203"
 ---
 # <a name="get-windowscertificateprofilebase"></a>获取 windowsCertificateProfileBase
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -38,7 +38,9 @@ ms.locfileid: "59112578"
 -->
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10VpnConfiguration/identityCertificate
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWiredNetworkConfiguration/identityCertificateForClientAuthentication
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWiredNetworkConfiguration/secondaryIdentityCertificateForClientAuthentication
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -54,7 +56,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -114,6 +116,7 @@ Content-Length: 1576
   }
 }
 ```
+
 
 
 

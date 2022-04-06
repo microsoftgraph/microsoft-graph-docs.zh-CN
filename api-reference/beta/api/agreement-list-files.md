@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: f1f9cb218dc366e8e99c6d24769cecfc38009cf8
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 9679e1e26867130c5ae44cbc2bf0b3fafc6aa110
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451538"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63516197"
 ---
 # <a name="list-files-localized-agreement-files"></a>列出 (本地化协议文件) 
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "63451538"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Agreement.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -57,6 +57,8 @@ GET /agreements/{agreementsId}?$expand=files
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_agreementfilelocalization"
@@ -65,6 +67,32 @@ GET /agreements/{agreementsId}?$expand=files
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/94410bbf-3d3e-4683-8149-f034e55c39dd?$expand=files
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-agreementfilelocalization-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-agreementfilelocalization-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-agreementfilelocalization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-agreementfilelocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-agreementfilelocalization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-agreementfilelocalization-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

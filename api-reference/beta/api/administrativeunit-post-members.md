@@ -1,16 +1,16 @@
 ---
 title: 添加成员
-description: 使用此 API 将用户或 (组的成员) 管理单元。
+description: 使用此 API 将用户 (组或设备) 添加到管理单元。
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 871b83fbda9aa97df9ea2971f92c16c944f82e94
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cfe40b6d418759c3087eb31f4e0b9dcf5fd87fe9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097399"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669408"
 ---
 # <a name="add-a-member"></a>添加成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "62097399"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 将用户或 (组) 添加到管理单元，或在管理单元中创建新组。 可以在 [管理](/graph/api/resources/groups-overview) 单元内创建所有组类型。
+使用此 API 将用户 (组或设备) 添加到管理单元，或在管理单元中创建新组。 可以在 [管理](/graph/api/resources/groups-overview) 单元内创建所有组类型。
 
 **注意：** 目前，一次只能向管理单元添加一个成员。
 
@@ -28,14 +28,14 @@ ms.locfileid: "62097399"
 ### <a name="permissions-to-add-an-existing-user-group-or-device"></a>添加现有用户、组或设备的权限
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.ReadWrite.All |
 
 ### <a name="permissions-to-create-a-new-group"></a>创建新组的权限
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Group.ReadWrite.All, Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Create、Group.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -59,9 +59,8 @@ POST /administrativeUnits/{id}/members
 | Authorization  | Bearer {token}。必需。 |
 | Content-type  | application/json. Required. |
 
-## <a name="request-body"></a>请求正文
 ### <a name="adding-an-existing-user-or-group"></a>添加现有用户或组
-在请求正文中，提供 `id` 要 [添加的用户](../resources/user.md)、  [组](../resources/group.md)或 [directoryObject](../resources/directoryobject.md) 的 。
+在请求正文中，`id`提供[要添加的用户](../resources/user.md)、组[](../resources/group.md)、设备或 [](../resources/device.md)[directoryObject](../resources/directoryobject.md) 的 。
 
 ### <a name="creating-a-new-group"></a>创建新组
 下表显示了在管理单元 [中创建组](../resources/group.md) 时要指定的组资源的属性。 
@@ -80,9 +79,9 @@ POST /administrativeUnits/{id}/members
 
 ## <a name="response"></a>响应
 
-如果成功，使用 (添加现有对象 `$ref`) `204 No Content` 返回 响应代码。 它不会在响应正文中返回任何内容。 
+如果成功，使用 (对象 `$ref`) 返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。 
 
-在未 (组) 时，此方法在响应正文中返回 响应代码和 `$ref` `201 Created` [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
+在未 (组) `$ref` 时，此方法在 `201 Created` 响应正文中返回 响应代码和 [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-add-an-existing-user-or-group"></a>示例 1：添加现有用户或组
@@ -133,9 +132,10 @@ Content-type: application/json
 
 
 
-在请求正文中， `id` 提供 [要添加](../resources/user.md) 的用户或 [组](../resources/group.md) 对象的 。
+在请求正文中，`id`提供[要添加](../resources/user.md)的用户、组[](../resources/group.md)或[设备](../resources/device.md)对象的 。
 
 #### <a name="response"></a>响应
+
 下面展示了示例响应。
  
 <!-- {

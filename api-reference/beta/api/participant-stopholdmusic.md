@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 31b1b0f98254b04cc1758737ee3e454728c81720
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 7665fc34203bf6b25f8e23cc93bca2d6f6593f2a
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878867"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607937"
 ---
 # <a name="participant-stopholdmusic"></a>participant： stopHoldMusic
 
@@ -20,16 +20,14 @@ ms.locfileid: "62878867"
 
 重新合并之前置于呼叫保留状态的参与者。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                               |
 | 委派（个人 Microsoft 帐户） | 不支持。                               |
-| 应用程序                            | 无。 |
-
-> **注意：** 当应用程序加入或尝试启动调用时，将执行权限检查。 调用 时，不会执行其他 `stopHoldMusic` 权限检查。
+| Application                            | Calls.JoinGroupCallsasGuest.All 或 Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

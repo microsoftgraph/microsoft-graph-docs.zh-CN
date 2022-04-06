@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 35fa4a5ccfd01fce38ab725ae1491252976d6824
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d695fb1b55f270219485c7fe957d69bf7621ed4f
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335470"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528112"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const cloudPcUserSetting = {
   displayName: 'Example',
   selfServiceEnabled: true,
   restorePointSetting: {
-    frequencyInHours: '16',
+    frequencyInHours: 16,
     userRestoreEnabled: true
   },
   localAdminEnabled: false

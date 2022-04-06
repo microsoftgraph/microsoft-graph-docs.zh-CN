@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 41e8ea251511ed1bb8a33225ec65451c9e529793
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d8f7252ebe32a019b1b7a52705c8ab79104f9255
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987404"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528185"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var agreement = new Agreement
 {
-    DisplayName = "MSGraph Sample",
+    DisplayName = "Contoso ToU for guest users",
     IsViewingBeforeAcceptanceRequired = true,
     Files = new AgreementFilesCollectionPage()
     {
@@ -24,7 +24,7 @@ var agreement = new Agreement
             IsDefault = true,
             FileData = new AgreementFileData
             {
-                Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=")
+                Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=//truncated-binary")
             }
         }
     }

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9dd4043db022df8616de698cfed54b8b47acfb90
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 5cf421ac9b9bcf09318b5ed3e6a7a444b2f2c2ad
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094392"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758635"
 ---
 ```go
 
@@ -13,15 +13,13 @@ ms.locfileid: "61094392"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewOAuth2PermissionGrant()
-clientId := "clientId-value"
+clientId := "ef969797-201d-4f6b-960c-e9ed5f31dab5"
 requestBody.SetClientId(&clientId)
-consentType := "consentType-value"
+consentType := "AllPrincipals"
 requestBody.SetConsentType(&consentType)
-principalId := "principalId-value"
-requestBody.SetPrincipalId(&principalId)
-resourceId := "resourceId-value"
+resourceId := "943603e4-e787-4fe9-93d1-e30f749aae39"
 requestBody.SetResourceId(&resourceId)
-scope := "scope-value"
+scope := "DelegatedPermissionGrant.ReadWrite.All"
 requestBody.SetScope(&scope)
 options := &msgraphsdk.Oauth2PermissionGrantsRequestBuilderPostOptions{
     Body: requestBody,

@@ -2,21 +2,21 @@
 title: 更新 deviceHealthScriptDeviceState
 description: 更新 deviceHealthScriptDeviceState 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84afe17183b25fc476b9be63e50acb4e3f45ef2c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d15e904d75af015a379baa516f9055eb394081b7
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052256"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628985"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a>更新 deviceHealthScriptDeviceState
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -49,7 +49,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStat
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceHealthScriptDeviceState 对象的](../resources/intune-devices-devicehealthscriptdevicestate.md) JSON 表示形式。
 
-下表显示创建 [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)时所需的属性。
+下表显示创建 [deviceHealthScriptDeviceState 时所需的属性](../resources/intune-devices-devicehealthscriptdevicestate.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -57,19 +57,19 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStat
 |detectionState|[runState](../resources/intune-devices-runstate.md)|最近一次执行设备运行状况脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备运行状况脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|预计执行设备运行状况脚本的下一个时间戳|
-|lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|
+|lastSyncDateTime|DateTimeOffset|最后一次Intune管理扩展与 Intune|
 |preRemediationDetectionScriptOutput|String|修正前检测脚本的输出|
 |preRemediationDetectionScriptError|String|修正前检测脚本的错误|
 |remediationScriptError|String|修正脚本的错误输出|
 |postRemediationDetectionScriptOutput|String|修正后检测脚本输出|
 |postRemediationDetectionScriptError|String|修正后检测脚本中的错误|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|自上次设备运行状况脚本执行以来的修正状态。 可取值为：`unknown`、`skipped`、`success`、`remediationFailed`、`scriptError`。|
-|assignmentFilterIds|字符串集合|用于运行状况脚本适用性评估的分配筛选器 ID 的列表|
+|assignmentFilterIds|String 集合|用于运行状况脚本适用性评估的分配筛选器 ID 的列表|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -123,6 +123,7 @@ Content-Length: 880
   ]
 }
 ```
+
 
 
 

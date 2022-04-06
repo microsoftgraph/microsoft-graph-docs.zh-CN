@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0760053904beb361518f78ddbed7d5ea99b63141
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 28e9a6fe5430835a6866a3c54064fb0816f4178a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336681"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671998"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -24,7 +24,7 @@ ms.locfileid: "63336681"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 

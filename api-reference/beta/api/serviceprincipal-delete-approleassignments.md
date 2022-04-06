@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 59fb187428c993828ccf2caa3eaaace1152a66ed
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 30454de3e550352e8b7bddcd9dfb245e7669bb63
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115840"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670206"
 ---
 # <a name="delete-approleassignment"></a>删除 appRoleAssignment
 
@@ -18,9 +18,9 @@ ms.locfileid: "62115840"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除已授予服务主体的[appRoleAssignment。](../resources/approleassignment.md)
+删除已 [授予服务主体的 appRoleAssignment](../resources/approleassignment.md) 。
 
-分配给服务主体的应用程序角色也称为应用程序 [权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。 删除服务主体角色分配应用程序权限等效于撤销仅应用程序权限授予。
+分配给服务主体的应用程序角色也称为应用程序 [权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。 删除服务角色分配应用程序权限等效于撤销仅应用程序权限授予。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "62115840"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AppRoleAssignment.ReadWrite.All |
 
@@ -41,7 +41,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 ```
 
 > [!NOTE]
-> 最佳做法是，我们建议你使用 Delete [appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md)方法删除应用角色分配，该方法通过资源服务主体的 **appRoleAssignedTo** 关系删除，而不是使用此方法。
+> 最佳做法是，我们建议你使用 Delete [appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md) 方法删除应用角色分配，该方法通过资源服务主体的 **appRoleAssignedTo** 关系删除，而不是使用此方法。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -61,7 +61,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 
 ### <a name="request"></a>请求
 
-下面是一个请求删除应用或应用角色分配。
+下面是一个请求删除应用角色分配。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

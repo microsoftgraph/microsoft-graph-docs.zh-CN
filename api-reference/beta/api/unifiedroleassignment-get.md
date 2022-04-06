@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 940ad910af64aa128ad263d415aef8c3a3e83195
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 374c1e3fb8cdf6b36709a9fb680ce1f89cc2d874
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130690"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668638"
 ---
 # <a name="get-unifiedroleassignment"></a>获取 unifiedRoleAssignment
 
@@ -22,13 +22,13 @@ ms.locfileid: "62130690"
 
 ## <a name="permissions"></a>权限
 
-根据 RBAC 提供程序以及 (或应用程序) 类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 ### <a name="for-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All   |
+|委派（工作或学校帐户） |  RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
@@ -38,7 +38,7 @@ ms.locfileid: "62130690"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ ms.locfileid: "62130690"
 GET /roleManagement/directory/roleAssignments/{id}
 ```
 
-获取角色分配管理提供程序的信息：
+获取角色分配管理提供程序的许可证：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -74,7 +74,7 @@ GET /roleManagement/entitlementManagement/roleAssignments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -150,7 +150,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面是一个包含查询参数 `$expand` 的请求示例。
+下面是一个包含查询参数的请求 `$expand` 示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -160,7 +160,7 @@ Content-type: application/json
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition,principal,directoryScope
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-2-csharp-snippets.md)]
@@ -224,18 +224,7 @@ Content-type: application/json
       "isEnabled": true,
       },
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "principal": {
-      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-      "id": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d ",
-      "userPrincipalName": "alice@contoso.com",
-      "displayName": "Alice Smith"
-    },
-    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScope": {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization/$entity",
-      "id": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
-      "displayName": "Contoso_Seattle_Admins"
-    }
+    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d"
 }
 ```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

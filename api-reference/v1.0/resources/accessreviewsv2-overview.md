@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 1e69482507020fb2902472fcbd7dcfa96639c343
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8bdf2a99e0b26adfaa5b00d207397ce225599478
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337178"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722860"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
@@ -26,7 +26,7 @@ ms.locfileid: "63337178"
 
 访问评审功能（包括 API）仅在用户或 EMS E5 订阅的有效购买或试用Azure AD Premium P2可用。 有关许可证要求详细信息，请参阅 [访问评审许可证要求](/azure/active-directory/governance/access-reviews-overview#license-requirements)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 下表列出了可用于与访问评审相关资源进行交互的方法。
 

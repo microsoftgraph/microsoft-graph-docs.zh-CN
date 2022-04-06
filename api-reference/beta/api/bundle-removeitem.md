@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: 从捆绑包中删除项目
-description: 从 driveItems 捆绑包中删除项
+description: 从 driveItems 捆绑包中删除项。
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1a84ceeee22736c7ac02fa50403523734fe2e65b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7738ee4348b0b6f0caa81696bcbfe4283c79a483
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395186"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607482"
 ---
 # <a name="remove-item-from-bundle"></a>从捆绑包中删除项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "63395186"
 
 从捆绑包中删除 [项目][]。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,22 +40,23 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。必需。 |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
-请勿为此方法提供请求正文。
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，响应为 `204 No Content`。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
-请参阅[错误响应][error-response]主题，详细了解错误返回方式。
+有关错误响应的信息，请参阅 [Microsoft Graph错误响应和资源类型][error-response]。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->
@@ -88,6 +89,8 @@ DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item
 
 ### <a name="response"></a>响应
 
+下面展示了示例响应。
+
 <!-- { "blockType": "response" } -->
 
 ```http
@@ -95,7 +98,7 @@ HTTP/1.1 204 No Content
 ```
 
 
-[bundle]: ../resources/bundle.md
+[捆绑]: ../resources/bundle.md
 [error-response]: /graph/errors
 
 <!-- {

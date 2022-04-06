@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 7db89f3a6181ad4e6dad8d424c00f4af99428a61
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 4a00389960259eea94efbad77f1305dc434da37e
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671305"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587593"
 ---
 # <a name="get-cloudpconpremisesconnection"></a>获取 cloudPcOnPremisesConnection
 
@@ -20,7 +20,8 @@ ms.locfileid: "63671305"
 
 读取 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +29,7 @@ ms.locfileid: "63671305"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户） | 不支持。|
-|应用程序|CloudPC.Read.All、CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All、CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,7 +62,7 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a>示例 1：获取本地连接的默认属性
+### <a name="example-1-get-the-default-properties-of-an-azure-network-connection"></a>示例 1：获取 Azure 网络连接的默认属性
 
 #### <a name="request"></a>请求
 
@@ -135,7 +136,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a>示例 2：获取本地连接的选定属性，包括 healthCheckStatusDetails
+### <a name="example-2-get-the-selected-properties-of-an-azure-network-connection-including-healthcheckstatusdetails"></a>示例 2：获取 Azure 网络连接的选定属性，包括 healthCheckStatusDetails
 
 #### <a name="request"></a>请求
 

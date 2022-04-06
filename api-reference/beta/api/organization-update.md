@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8998fd151a07b1d219647135302b63a290401e59
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 174c9d51d2c7e67c3b1a9a4c603457ab68715dd7
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096237"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671641"
 ---
 # <a name="update-organization"></a>更新组织
 
@@ -18,7 +18,7 @@ ms.locfileid: "62096237"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新当前经过身份验证的组织的属性。 在这种情况下，定义为只包含一条记录的集合，因此必须在请求中指定 `organization` 其 **ID。**  **ID** 也称为组织的 **tenantId。**
+更新当前经过身份验证的组织的属性。 在这种情况下，定义为 `organization` 只包含一条记录的集合，因此必须在请求中指定其 **ID** 。  **ID** 也称为组织的 **tenantId**。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "62096237"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Organization.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Organization.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | Organization.ReadWrite.All |
 
@@ -58,7 +58,7 @@ PATCH /organization/{id}
 |securityComplianceNotificationPhones|String collection||
 |technicalNotificationMails|String collection|                                        **注意：** 不可为 null。            |
 
-由于 **组织** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作在现有组织实例的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` 应用的数据。
+由于 **组织** 资源 [支持](/graph/extensibility-overview)`PATCH`扩展，因此可以使用 操作在现有组织实例的扩展的自定义属性中添加、更新或删除你自己的特定于 **应用的数据。**
 
 ## <a name="response"></a>响应
 

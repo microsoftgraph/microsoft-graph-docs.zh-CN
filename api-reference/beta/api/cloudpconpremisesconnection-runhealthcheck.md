@@ -1,16 +1,16 @@
 ---
 title: CloudPcOnPremisesConnection：runHealthChecks
-description: 在云电脑本地连接上运行运行状况检查。
+description: 在云电脑 Azure 网络连接上运行运行状况检查。
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 9ce1b540034632c63adc19c23d6255283701021c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 273480475bc4d110cea3ae5e038feba24bdb64ba
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345730"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587943"
 ---
 # <a name="cloudpconpremisesconnection-runhealthchecks"></a>CloudPcOnPremisesConnection：runHealthChecks
 
@@ -20,10 +20,12 @@ ms.locfileid: "62345730"
 
 对 [cloudPcOnPremisesConnection 对象运行运行状况](../resources/cloudpconpremisesconnection.md) 检查。
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
+
 这将触发此 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的新运行状况检查，并完成检查后更改 healthCheckStatus 和 [healthCheckStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md) 属性。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +33,7 @@ ms.locfileid: "62345730"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 

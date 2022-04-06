@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 58ab85988cc71cf0f2e9945b665e00b8d60791b5
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e778ebc2a8ab5d60f6aef2113cdf190b6d01685d
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393443"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509929"
 ---
 # <a name="list-group-transitive-members"></a>List group transitive members
 
@@ -20,13 +20,13 @@ ms.locfileid: "63393443"
 
 获取组的成员列表。 组可以将用户、联系人、设备、服务主体和其他组作为成员。 此操作是可传递的，并且还将返回简单列表嵌套成员的成员。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | GroupMember.Read.All，Group.Read.All，GroupMember.ReadWrite.All，Group.ReadWrite.All，Directory.Read.All，Directory.AccessAsUser.All    |
+| 委派（工作或学校帐户） | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All    |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
@@ -48,7 +48,7 @@ GET /groups/{id}/transitiveMembers
 
 若要筛选 OData `microsoft.graph.user` 类型的结果（如 或 `microsoft.graph.group`），必须使用 [高级查询参数](/graph/aad-advanced-queries)。 即， **将 ConsistencyLevel** 标头设置为 和 `eventual` 查询 `$count=true` 字符串。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称 | 说明 |
 |:---- |:----------- |
@@ -346,7 +346,7 @@ Content-type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count"
+  "name": "list_groups_transitivemembers_startswith"
 }-->
 
 ```msgraph-interactive

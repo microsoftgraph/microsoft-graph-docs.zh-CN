@@ -5,26 +5,26 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: aa8115c759fb87eca2ca08669106b79a0bd84272
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 90885d0203f4357548ae319e6e8cc49972354118
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091694"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510679"
 ---
 # <a name="list-serviceprincipal-memberof"></a>List servicePrincipal memberOf
 
 命名空间：microsoft.graph
 
-获取此 [servicePrincipal](../resources/serviceprincipal.md) 作为直接成员所属的组和目录角色。 此操作不可传递。
+获取此 [servicePrincipal](../resources/serviceprincipal.md) 作为直接成员所属的组和目录角色。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -244,7 +244,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_serviceprincipals_memberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')

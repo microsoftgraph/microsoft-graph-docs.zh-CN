@@ -1,16 +1,16 @@
 ---
 title: 添加所有者
-description: 向 Microsoft 365 或安全组的所有者添加用户或服务主体。所有者是一组具有组对象修改权限的用户或服务主体。
+description: 将用户或服务主体添加 Microsoft 365 到安全组的所有者。 所有者是一组可修改组对象的用户或服务主体。
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: dc3758231f7d16b8e53e7bd985d1d7e13439b03e
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 5e66820fa0e8c8a373935c12b8296e7783f198f7
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477914"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671487"
 ---
 # <a name="add-owners"></a>添加所有者
 
@@ -18,7 +18,7 @@ ms.locfileid: "64477914"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向 Microsoft 365 或安全组的所有者添加用户或服务主体。所有者是一组具有组对象修改权限的用户或服务主体。
+将用户或服务主体添加 Microsoft 365 到安全组的所有者。 所有者是一组可修改组对象的用户或服务主体。
 
 >**重要提示：** 如果更新组所有者并为该组创建团队，则所有者与 Microsoft Team 同步需要最多花费 2 小时。 此外，如果希望所有者能够在团队中进行更改，例如创建 Planner 计划，则还需要将所有者添加为组/团队成员。 
 
@@ -43,7 +43,7 @@ POST /groups/{id}/owners/$ref
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要添加的 [用户](../resources/user.md)**@odata.id**，或 [servicePrincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。
+在请求正文中，提供要添加的 [用户](../resources/user.md)**@odata.id**，或 [servicePrincipal](../resources/user.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。 当对象已是组的成员时，此方法将返回 `400 Bad Request` 响应代码。 当添加的对象不存在时，此方法返回 `404 Not Found` 响应代码。

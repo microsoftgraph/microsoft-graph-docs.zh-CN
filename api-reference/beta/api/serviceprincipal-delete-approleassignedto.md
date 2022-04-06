@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: c884b6eeeba7e53d6a4d7684e4c25e1ec0aa3259
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 51c6ff9f411a296c5aa391515d714828dd7b5baf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125445"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670521"
 ---
 # <a name="delete-approleassignedto"></a>删除 appRoleAssignedTo
 
@@ -18,7 +18,7 @@ ms.locfileid: "62125445"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除已授予资源服务主体的用户、组或客户端服务主体的[appRoleAssignment。](../resources/approleassignment.md)
+删除已授予资源服务主体的用户、组或客户端服务主体的 [appRoleAssignment](../resources/approleassignment.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "62125445"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AppRoleAssignment.ReadWrite.All |
 
@@ -39,7 +39,7 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 ```
 
 > [!NOTE]
-> 最佳做法是，建议使用此方法删除应用角色分配，而不是删除通过分配的用户、组或服务主体的[appRoleAssignments 关系删除的 appRoleAssignments](serviceprincipal-delete-approleassignments.md)方法。 
+> 最佳做法是，建议使用此方法删除应用角色分配，而不是删除通过分配的用户、组或服务主体的 [appRoleAssignments 关系删除的 appRoleAssignments ](serviceprincipal-delete-approleassignments.md) 方法。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,7 +59,7 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 
 ### <a name="request"></a>请求
 
-下面是从资源服务主体中删除应用程序角色分配请求的示例。
+下面是从资源服务主体角色分配应用程序请求的示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -98,7 +98,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{resource-SP-id}/appRo
 ---
 
 
-此示例中 为资源服务主体的 `{resource-SP-id}` ID，是 appRoleAssignment 对象的 ID，该对象表示用户、组或客户端服务主体的 `{appRoleAssignment-id}` 分配。
+此示例中 为 `{resource-SP-id}` 资源服务主体的 ID `{appRoleAssignment-id}` ，是 appRoleAssignment 对象的 ID，该对象表示用户、组或客户端服务主体的分配。
 
 ### <a name="response"></a>响应
 

@@ -3,15 +3,15 @@ author: JeremyKelley
 description: baseItemVersion 资源表示项或实体的以前版本。
 ms.date: 09/17/2017
 title: BaseItemVersion
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 0d007d18f6329763fa6a7a426f1f944ef1fb4106
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7db0626d3915bfb7a76e492ede0d8cfec256f522
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089727"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724141"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion 资源类型
 
@@ -20,7 +20,6 @@ ms.locfileid: "48089727"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **baseItemVersion** 资源表示项或实体的以前版本。
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -38,13 +37,12 @@ ms.locfileid: "48089727"
 
 ## <a name="properties"></a>属性
 
-|      属性名称       |                         类型                         |                               说明                               |
+| 属性                 | 类型                                                 | 说明                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | 版本 ID。 只读。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 上次修改版本的用户的标识。 只读。        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | 上次修改版本的日期和时间。 只读。                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | 指示此特定版本的发布状态。 只读。 |
-
 
 <!--
 {
@@ -56,5 +54,3 @@ ms.locfileid: "48089727"
   "suppressions": []
 }
 -->
-
-

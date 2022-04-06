@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: c0729952d48ce0e7d4fd31608e1dd2e761b4d4ba
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 91af45d12b72923de76b6ad0408e31d7a0c3745f
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118368"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671452"
 ---
 # <a name="get-privilegedapproval"></a>获取 privilegedApproval
 
@@ -18,7 +18,7 @@ ms.locfileid: "62118368"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 检索 privilegedapproval 对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -27,9 +27,9 @@ ms.locfileid: "62118368"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All   |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

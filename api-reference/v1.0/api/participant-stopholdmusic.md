@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b37f26086bcab8ab7d0450a8ece612f7d7f5a25c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: d05669e2855ff1944415096fc129098ddf748798
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342742"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607294"
 ---
 # <a name="participant-stopholdmusic"></a>participant： stopHoldMusic
 
@@ -18,16 +18,14 @@ ms.locfileid: "62342742"
 
 重新合并之前置于呼叫保留状态的参与者。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                               |
 | 委派（个人 Microsoft 帐户） | 不支持。                               |
-| 应用程序                            | 无。 |
-
-> **注意：** 当应用程序加入或尝试启动调用时，将执行权限检查。 调用 时，不会执行其他 `stopHoldMusic` 权限检查。
+| Application                            | Calls.JoinGroupCallsasGuest.All 或 Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +42,7 @@ POST /communications/calls/{id}/participants/{id}/stopHoldMusic
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |clientContext|String|可选。 唯一的客户端上下文字符串。 最多可包含 256 个字符。|
 
@@ -118,38 +116,8 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/e141b67c-90fd-45
 {
   "@odata.type": "#microsoft.graph.stopHoldMusicOperation",
   "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-### <a name="notification-sent-to-the-application-after-the-stopholdmusicoperation-finishes"></a>stopHoldMusicOperation 完成之后发送到应用程序的通知
-
-```http
-POST https://bot.contoso.com/api/calls
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "@odata.type": "#microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.commsNotification",
-      "changeType": "deleted",
-      "resourceUrl": "communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.stopHoldMusicOperation",
-        "@odata.id": "communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
-      }
-    }
-  ]
+  "status": "completed",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "resultInfo": null
 }
 ```

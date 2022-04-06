@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d82d09b3ca326014d97ee708e0cb7dc80cbde8f8
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: a16b1a3130b0ab7667624c4a20149cc5eab55ae5
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510209"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630007"
 ---
 # <a name="list-user-memberof"></a>List user memberOf
 
@@ -37,7 +37,6 @@ ms.locfileid: "64510209"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/memberOf
-or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: cc969d7e31e376f158a7c8cd6504a803656bf1b7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d3ba0e26b746022230675100a4fbb003c58f69f3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097118"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671102"
 ---
 # <a name="create-connectorgroup"></a>Create connectorGroup
 
@@ -25,9 +25,9 @@ ms.locfileid: "62097118"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [connectorGroup](../resources/connectorgroup.md) 对象的 JSON 表示形式。
-下表列出了 **connectorGroup** 可用的属性。 **name** 属性是必需的属性。
+下表列出了 **connectorGroup 可用的属性**。 **name** 属性是必需的属性。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|

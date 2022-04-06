@@ -3,15 +3,15 @@ author: JeremyKelley
 description: columnDefinition 资源上的 textColumn 指示该列的值为文本。
 ms.date: 09/11/2017
 title: TextColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: ecfd6d72e0946519b570962577b03a9ffcbcdf10
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a6e8d3a06c3d34a321ec2fb5ff5d83586accb56
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973545"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724285"
 ---
 # <a name="textcolumn-resource-type"></a>TextColumn 资源类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "47973545"
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是 **textColumn** 资源的 JSON 表示形式。
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.textColumn" } -->
 
 ```json
@@ -38,13 +39,13 @@ ms.locfileid: "47973545"
 
 ## <a name="properties"></a>属性
 
-| 属性名称                   | 类型   | 说明
-|:--------------------------------|:-------|:-----------------------------------------------
-| **allowMultipleLines**          | string | 是否支持多行文本。
-| **appendChangesToExistingText** | string | 对此列的更新应替换现有文本，还是附加到现有文本。
-| **linesForEditing**             | int    | 文本框的大小。
-| **maxLength**                   | int    | 值的最大字符数。
-| **textType**                    | string | 要存储的文本类型。 必须为 `plain` 或 `richText`.的其中一个
+| 属性                        | 类型   | 说明                                                                   |
+| :------------------------------ | :----- | :---------------------------------------------------------------------------- |
+| **allowMultipleLines**          | string | 是否支持多行文本。                                      |
+| **appendChangesToExistingText** | string | 对此列的更新应替换现有文本，还是附加到现有文本。 |
+| **linesForEditing**             | int    | 文本框的大小。                                                     |
+| **maxLength**                   | int    | 值的最大字符数。                               |
+| **textType**                    | string | 要存储的文本类型。 必须为 `plain` 或 `richText`.的其中一个           |
 
 <!--
 {
@@ -56,5 +57,3 @@ ms.locfileid: "47973545"
   "suppressions": []
 }
 -->
-
-

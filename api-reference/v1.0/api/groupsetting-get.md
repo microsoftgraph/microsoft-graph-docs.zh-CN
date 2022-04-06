@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: dd2c23bfb37acd11aecca52100866ae1afaa8cc6
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: afaeea22c2a0175588eb8770d6db713c4eed3838
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393548"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671564"
 ---
 # <a name="get-groupsetting"></a>获取 groupSetting
 
@@ -27,7 +27,7 @@ ms.locfileid: "63393548"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -37,7 +37,7 @@ ms.locfileid: "63393548"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Group.ReadWrite.All  |
+|Application | Group.Read.All、Group.ReadWrite.All  |
 
 
 ## <a name="http-request"></a>HTTP 请求

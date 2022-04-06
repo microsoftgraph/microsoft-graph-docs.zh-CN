@@ -2,13 +2,13 @@
 title: Microsoft Graph Toolkit
 description: 使用自定义模板修改组件的内容。
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: 93b595e3e8111d0a51c9c049cbf153bd287472f7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 2632b726c1f2260afe31dacb8c487d5976224be7
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044221"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587775"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
 
@@ -36,11 +36,11 @@ ms.locfileid: "59044221"
 </mgt-agenda>
 ```
 
-如果你使用的是 Microsoft Graph Toolkit React组件，可以使用React模板。 有关详细信息，请参阅[将工具包与React。](../get-started/mgt-react.md)
+如果你使用的是 Microsoft Graph Toolkit React组件，可以使用React模板。 有关详细信息，请参阅[将工具包与 React](../get-started/mgt-react.md)。
 
 ## <a name="data-type"></a>数据类型
 
-每个组件可以有多个可模板创建的部件。 例如，在组件中，可以模板单个事件、单个节标题、 `mgt-agenda` 加载视图、无数据视图等。 若要指示模板，请使用 `data-type` 模板上的 属性。 例如，若要为 中的每个事件创建模板 `mgt-agenda` ，请使用 `event` 数据类型，如下所示。
+每个组件可以有多个可模板创建的部件。 例如，在 `mgt-agenda` 组件中，可以模板单个事件、单个节标题、加载视图、无数据视图等。 若要指示模板，请使用 `data-type` 模板上的 属性。 例如，若要为 中的每个事件 `mgt-agenda`创建模板，请使用 `event` 数据类型，如下所示。
 
 ```html
 <mgt-agenda>
@@ -48,11 +48,11 @@ ms.locfileid: "59044221"
 </mgt-agenda>
 ```
 
-如果 `data-type` 未指定，则整个组件将替换为模板。 您还可以用于 `data-type="default"` 同一目的。
+如果未指定 `data-type` ，则整个组件将替换为模板。 您还可以用于 `data-type="default"` 同一目的。
 
 ## <a name="binding-data"></a>绑定数据
 
-许多模板允许绑定作为数据上下文传递给模板的数据。 例如， `event` 组件中的模板 `mgt-agenda` 传递 `{event}` 可以直接在模板中使用的对象。 若要展开表达式（如 `event.subject` ），请使用双花括号。
+许多模板允许绑定作为数据上下文传递给模板的数据。 例如，组件 `event` 中的模板 `mgt-agenda` 传递可以直接 `{event}` 在模板中使用的对象。 若要展开表达式（如 ） `event.subject`，请使用双花括号。
 
 ```html
 <template data-type="event">
@@ -68,11 +68,11 @@ ms.locfileid: "59044221"
 </template>
 ```
 
-> **注意：** 还可以展开 或 等对象 `{{event}}` `{{this}}` ，它们将呈现为 JSON 字符串。 在开发模板时，这非常有用。
+> **注意：** 还可以展开 或 等对象`{{event}}``{{this}}`，它们将呈现为 JSON 字符串。 在开发模板时，这非常有用。
 
 ### <a name="change-binding-syntax"></a>更改绑定语法
 
-默认情况下，若要展开表达式，请使用双花括号 `{{expression}}` () 。 但是，您可以更改已使用双括号语法的环境的此语法。 例如，以下示例使用双方括号 `[[expression]]` () 。
+默认情况下，若要展开表达式，请使用双花括号 () `{{expression}}` 。 但是，您可以更改已使用双括号语法的环境的此语法。 例如，以下示例使用双方括号 () `[[expression]]` 。
 
 ```ts
 import { TemplateHelper } from '@microsoft/mgt';
@@ -86,10 +86,10 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 | 属性 | 说明                                                                                                    |
 |----------|----------------------------------------------------------------------------------------------------------------|
-| $index   | 使用 循环时呈现的项目的数字索引 `data-for` 。                                     |
+| $index   | 使用 循环时呈现的项目的数字索引 `data-for`。                                     |
 | $parent  | 如果模板呈现在另一个模板内，则此属性允许您访问父数据上下文。 |
 
-以下示例演示如何在 `$index` data-for 循环中使用 属性。
+以下示例演示如何在 data-for `$index` 循环中使用 属性。
 
 ```html
 <mgt-person>
@@ -105,7 +105,7 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 ### <a name="this"></a>{{this}}
 
-为了帮助调试数据上下文，可以在 `this` 绑定表达式中使用。 最简单的表单是在模板 `{{this}}` 中的任何位置添加。
+为了帮助调试数据上下文，可以在绑定 `this` 表达式中使用。 最简单的表单是在模板中的任何 `{{this}}` 位置添加。
 
 ```html
 <template data-type="event">
@@ -115,7 +115,7 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 </template>
 ```
 
-由于可以在绑定表达式中使用 JavaScript，因此还可以访问对象，该对象允许你在模板中使用 [`console`](https://developer.mozilla.org/docs/Web/API/Console) `console.log(this)` (或其他任何 API `console`) 。
+由于可以在绑定表达式中使用 JavaScript [`console`](https://developer.mozilla.org/docs/Web/API/Console) `console.log(this)` `console` ，因此还可以访问对象，该对象允许你在模板 (任何其他 API) 。
 
 ```html
 <template data-type="event">
@@ -127,7 +127,7 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 ## <a name="conditional-rendering"></a>条件呈现
 
-您可能只希望根据数据上下文在条件为 true 或 false 时呈现元素。 和 `data-if` `data-else` 属性可以计算表达式，并且仅在 true 或 false 时呈现。
+您可能只希望根据数据上下文在条件为 true 或 false 时呈现元素。 `data-else`和 `data-if` 属性可以计算表达式，并且仅在 true 或 false 时呈现。
 
 ```html
 <mgt-person person-query="john doe">
@@ -162,7 +162,7 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 1. 直接在组件上。
 
-    每个组件都定义 属性，可用于向组件中的任意 `templateContext` 模板传递其他数据。
+    每个组件都定义 `templateContext` 属性，可用于向组件中的任意模板传递其他数据。
 
     ```ts
     document.querySelector('mgt-agenda').templateContext = {
@@ -178,7 +178,7 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 2. 针对所有组件的全局性。
 
-    `TemplateHelper`类公开 `globalContext` 对象以添加应在全局上可供所有组件使用的数据或函数。
+    类 `TemplateHelper` 公开对象以 `globalContext` 添加应在全局上可供所有组件使用的数据或函数。
 
     ```ts
     import { TemplateHelper } from '@microsoft/mgt';
@@ -219,7 +219,7 @@ document.querySelector('mgt-agenda').templateContext = {
 
 ### <a name="event-or-property-binding"></a>事件或属性绑定
 
-`data-props`通过 属性，您可以直接在模板中添加事件侦听器或设置属性值。
+通过 `data-props` 属性，您可以直接在模板中添加事件侦听器或设置属性值。
 
 ```html
 <template>
@@ -229,7 +229,7 @@ document.querySelector('mgt-agenda').templateContext = {
 
 data-props 接受您可能要设置的每个属性或事件处理程序的逗号分隔字符串。
 
-若要添加事件处理程序，请以 作为事件名称的前缀 `@` 。 事件处理程序将需要在 元素中 `templateContext` 可用。
+若要添加事件处理程序，请以 作为事件名称的前缀 `@`。 事件处理程序将需要在 元素中 `templateContext` 可用。
 
 ```ts
 document.querySelector('mgt-agenda').templateContext = {
@@ -252,7 +252,7 @@ document.querySelector('mgt-agenda').templateContext = {
 
 在某些情况下，您可能希望获取对已呈现元素的引用。 如果希望自己处理内容的呈现，或者要修改呈现的元素，这将非常有用。
 
-在此方案中，可以使用 `templateRendered` 事件，该事件在模板呈现后触发。
+在此方案中，可以使用事件 `templateRendered` ，该事件在模板呈现后触发。
 
 ```ts
 let agenda = document.querySelector('mgt-agenda');

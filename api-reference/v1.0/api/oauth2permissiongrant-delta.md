@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psignoret
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6a3a504ee524e637a9f8a131aa090729b2f60bd6
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: ba578315a1e5e23bff68ebf3189041eb4b2ad9c5
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344179"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672292"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant： delta
 
@@ -25,7 +25,7 @@ ms.locfileid: "62344179"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 

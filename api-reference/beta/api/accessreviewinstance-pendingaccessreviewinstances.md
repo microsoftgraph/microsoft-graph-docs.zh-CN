@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ede1dd60226629d024dffb52958fa1308489f35a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fdca1660b2b5e63f838fdc6cab5c0cdf038e22bd
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991869"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722098"
 ---
 # <a name="accessreviewinstance-pendingaccessreviewinstances-deprecated"></a>accessReviewInstance：pendingAccessReviewInstances (弃) 
 
@@ -19,10 +19,7 @@ ms.locfileid: "60991869"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->此方法将弃用，并将于 2023 年 5 月 19 日停止返回数据。 它已被替换为 [filterByCurrentUser](accessreviewinstance-filterbycurrentuser.md)。
-
->[!NOTE]
->此 API 的默认页面大小为 100 accessReviewInstance 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+>此方法将弃用，并将于 2023 年 5 月 19 日停止返回数据。 它已被 [filterByCurrentUser 取代](accessreviewinstance-filterbycurrentuser.md)。
 
 检索 [调用用户等待审批的 accessReviewInstance](../resources/accessreviewinstance.md) 对象。 返回零个或多个 accessReviewInstance 对象的列表，其中调用用户是分配的审阅者。
 
@@ -42,16 +39,18 @@ GET /me/pendingAccessReviewInstances
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$skip` `$top` 和 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+此 API 的默认页面大小为 100 **accessReviewInstance** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+
+## <a name="request-headers"></a>请求头
 无。
 
 ## <a name="request-body"></a>请求正文
 不提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewInstance](../resources/accessreviewinstance.md) 对象数组。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstance](../resources/accessreviewinstance.md) 对象数组。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -82,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances?$expand=def
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstance-pendingapproval-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstance-pendingapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

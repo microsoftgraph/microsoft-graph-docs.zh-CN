@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 64406625dfcb8b4472a79a0fba694f4bb7d916d6
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: cc3b041d0cac4e65ba7ef563a9fd57d3df7c57ef
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262139"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586893"
 ---
 # <a name="list-cloudpcs"></a>列出 cloudPCs
 
@@ -20,7 +20,7 @@ ms.locfileid: "62262139"
 
 列出 [cloudPC 对象的属性和](../resources/cloudpc.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "62262139"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CloudPC.Read.All、CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All、CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -127,7 +127,7 @@ Content-Type: application/json
       "managedDeviceName": "A00002GI001",
       "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c373ffff",
       "provisioningPolicyName": "HR provisioning policy",
-      "onPremisesConnectionName": "on-Premises connection for HR",
+      "onPremisesConnectionName": "Azure network connection for HR",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
       "servicePlanType": "enterprise",

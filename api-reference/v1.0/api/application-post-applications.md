@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: dd405f5b0cbc5b953c6f32efcf0860df095fe15d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 1bcf0bfe10fb1070bd33d251c7bfa76cde101982
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671368"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477991"
 ---
 # <a name="create-application"></a>创建应用程序
 
@@ -19,9 +19,9 @@ ms.locfileid: "63671368"
 创建新的 [application](../resources/application.md) 对象。
 
 > [!IMPORTANT]
-> 不支持在创建应用程序时添加 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](application-addpassword.md) 方法为应用程序添加密码。
+> 不支持在创建应用程序时添加 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](application-addpassword.md) 方法为应用程序添加密码或密钥。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

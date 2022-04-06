@@ -4,13 +4,13 @@ description: 表示 governanceRoleAssignmentRequest 的状态。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: e023b40cd5c23c6b6f34d18c51eb7681354587b1
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+author: japere
+ms.openlocfilehash: 19eb182a450053400b66db12c0d2fe119908a992
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723008"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510202"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>governanceRoleAssignmentRequestStatus 资源类型
 

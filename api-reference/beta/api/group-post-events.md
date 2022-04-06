@@ -1,16 +1,16 @@
 ---
 title: 创建事件
 description: 使用此 API 创建新事件。
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3d69f11881c0e90f9b9051ade8fc110d99f99dac
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 4bab0640fe84bbb147348a952266f077474ab654
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201638"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589294"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -21,42 +21,52 @@ ms.locfileid: "62201638"
 使用此 API 新建[事件](../resources/event.md)。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+| 权限类型                        | 权限（从最低特权到最高特权） |
+| :------------------------------------- | :------------------------------------------ |
+| 委派（工作或学校帐户）     | Group.ReadWrite.All                         |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
+| Application                            | 不支持。                              |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+
+| 标头        | 值                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 event 对象的 JSON [表示](../resources/event.md) 形式。
+
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [event](../resources/event.md) 对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
+
 请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01d4ee64-15ce-491e-bad1-b91aa3223df4"],
   "name": "create_event_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/groups/01d4ee64-15ce-491e-bad1-b91aa3223df4/events
 Content-type: application/json
@@ -89,40 +99,51 @@ Content-type: application/json
   ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/create-event-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-event-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### <a name="response"></a>响应
+
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -222,5 +243,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: e56a960bc1dc8c7bc767cc7673c68ebee2c8ed4e
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: d849bb6b2d5666e0e9953d4684bf20596bf938ff
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672649"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587285"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>cloudPcOnPremisesConnection 资源类型
 
@@ -19,6 +19,8 @@ ms.locfileid: "63672649"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示一个定义的 Azure 资源信息集合，可用于为云电脑建立本地网络连接。
+
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## <a name="methods"></a>方法
 
@@ -36,10 +38,10 @@ ms.locfileid: "63672649"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|本地连接的唯一标识符。 只读。|
+|id|String|Azure 网络连接的唯一标识符。 只读。|
 |managedBy|[cloudPcManagementService](#cloudpcmanagementservice-values)|指定管理内部部署连接的服务。 可能的值是： `windows365`和 `devBox` `unknownFutureValue`。 只读。
 |类型|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|指定预配的云电脑如何加入 Azure Active Directory。 默认值为 `hybridAzureADJoin`。 可取值为：`azureADJoin`、`hybridAzureADJoin`、`unknownFutureValue`。|
-|displayName|String|本地显示名称的基础结构。|
+|displayName|String|Azure 显示名称连接的信息。|
 |subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
 |subscriptionName|String|目标 Azure 订阅的名称。 只读。|
 |adDomainName|String|要加入的 Active Directory (的完全限定域名) FQDN。 可选。|
@@ -49,9 +51,9 @@ ms.locfileid: "63672649"
 |resourceGroupId|String|目标资源组的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
 |virtualNetworkId|String|目标虚拟网络的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
 |subnetId|String|目标子网的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
-|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|在本地连接上完成的最新运行状况检查的状态。 例如，如果状态为"passed"，则本地连接已通过服务运行的所有检查。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
-|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|连接运行状况检查的详细信息和相应结果。 仅在 上返回 `$select`。有关演示如何获取 **inUse** 属性的示例，请参阅示例 2：获取本地连接的选定属性，包括 [healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md)。 只读。|
-|inUse|Boolean|如果 `true`为 ，则使用内部部署连接。 如果 `false`为 ，则不使用连接。 不能删除使用的连接。 仅在 `$select` 上返回。 有关演示如何获取 **inUse** 属性的示例，请参阅示例 2：获取本地连接的选定属性，包括 [healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md)。 只读。|
+|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|在 Azure 网络连接上完成的最新运行状况检查的状态。 例如，如果状态为"通过"，则 Azure 网络连接已通过服务运行的所有检查。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
+|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|连接运行状况检查的详细信息和相应结果。 仅在 上返回 `$select`。有关演示如何获取 **inUse** 属性的示例，请参阅示例 2：获取 Azure 网络连接的选定属性， [包括 healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md)。 只读。|
+|inUse|Boolean|如果 `true`为 ，则使用 Azure 网络连接。 如果 `false`为 ，则不使用连接。 不能删除使用的连接。 仅在 `$select` 上返回。 有关演示如何获取 **inUse** 属性的示例，请参阅示例 2：获取 Azure 网络连接的选定属性， [包括 healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md)。 只读。|
 
 ### <a name="cloudpcmanagementservice-values"></a>cloudPcManagementService 值
 
@@ -65,7 +67,7 @@ ms.locfileid: "63672649"
 
 |成员|说明|
 |:---|:---|
-|hybridAzureADJoin|已加入本地 Active Directory 和 Azure AD。 只能分配混合用户并登录到云电脑。|
+|hybridAzureADJoin|已加入本地 Active Directory Azure AD。 只能分配混合用户并登录到云电脑。|
 |azureADJoin|仅联接到Azure AD。 可以分配仅云用户和混合用户并登录到云电脑。|
 |unknownFutureValue|可发展枚举 sentinel 值。 请勿使用。|
 

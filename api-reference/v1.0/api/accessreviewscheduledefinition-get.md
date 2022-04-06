@@ -5,19 +5,19 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 72e6ed93a56e39daeb74a9236314ccfe5b2fbfa6
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 943368046a8c6e8efa2c018ebbb6fe957825ab67
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650571"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723069"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>获取 accessReviewScheduleDefinition
 命名空间：microsoft.graph
 
 读取 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的属性和关系。
 
-若要检索访问评审系列的实例，请使用 [列表 accessReviewInstance](accessreviewscheduledefinition-list-instances.md) API。   
+若要检索访问评审系列的实例，请使用 [列表 accessReviewInstance](accessreviewscheduledefinition-list-instances.md) API。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

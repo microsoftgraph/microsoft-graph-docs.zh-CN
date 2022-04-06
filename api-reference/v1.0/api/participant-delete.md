@@ -1,30 +1,29 @@
 ---
 title: 删除参与者
 description: 删除呼叫中的特定参与者。
-manager: zhengni
-author: jackry6350
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 69f714bba49458030627daf5e0a568fc26b1e74b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 0dcbe3a1b9adcb5e516ec492e7e5887574f89bcc
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340767"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608000"
 ---
 # <a name="delete-participant"></a>删除参与者
 
 删除呼叫中的特定参与者。 在某些情况下，适合应用程序从活动呼叫中删除参与者。 此操作可在参与者应答呼叫之前或之后执行。 删除活动呼叫者后，会立即从呼叫中删除这些呼叫，同时不会发出删除前或删除后通知。 删除受邀参与者后，将取消任何未完成的添加参与者请求。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | 无                                        |
+| Application                            | Calls.JoinGroupCallsasGuest.All 或 Calls.JoinGroupCalls.All |
 
 需要租户级应用程序会议配置，应用程序才能调用此 API。 租户管理员应在租户远程 PowerShell 上调用以下 cmdlet，以向应用程序授予调用此 API 的权限。 有关详细信息，请参阅 [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md)。
 ```

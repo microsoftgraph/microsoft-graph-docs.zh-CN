@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 30292140cb83ed52bf3bba747ee9b59fbad506c751ca1836af0c5b65b36e65ac
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe49ce56c00c9a53b1dab2d26563e8f1d7d4d9c1
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57277499"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63759299"
 ---
 ```objc
 
@@ -17,11 +17,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphOAuth2PermissionGrant *oAuth2PermissionGrant = [[MSGraphOAuth2PermissionGrant alloc] init];
-[oAuth2PermissionGrant setClientId:@"clientId-value"];
-[oAuth2PermissionGrant setConsentType:@"consentType-value"];
-[oAuth2PermissionGrant setPrincipalId:@"principalId-value"];
-[oAuth2PermissionGrant setResourceId:@"resourceId-value"];
-[oAuth2PermissionGrant setScope:@"scope-value"];
+[oAuth2PermissionGrant setClientId:@"ef969797-201d-4f6b-960c-e9ed5f31dab5"];
+[oAuth2PermissionGrant setConsentType:@"AllPrincipals"];
+[oAuth2PermissionGrant setResourceId:@"943603e4-e787-4fe9-93d1-e30f749aae39"];
+[oAuth2PermissionGrant setScope:@"DelegatedPermissionGrant.ReadWrite.All"];
 
 NSError *error;
 NSData *oAuth2PermissionGrantData = [oAuth2PermissionGrant getSerializedDataWithError:&error];

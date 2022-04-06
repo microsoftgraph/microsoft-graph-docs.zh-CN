@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleManagementPolicyAssignments
 description: 获取 unifiedRoleManagementPolicyAssignment 对象及其属性的列表。
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 81137910425309b93c27197db39e67f97e394a27
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 771ff41830a0a24c05704f9def617bb721613215
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125206"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510616"
 ---
 # <a name="list-unifiedrolemanagementpolicyassignments"></a>列出 unifiedRoleManagementPolicyAssignments
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "62125206"
 
 获取 [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -35,7 +35,7 @@ ms.locfileid: "62125206"
 }
 -->
 ``` http
-GET /policies/roleManagementPolicyAssignments
+GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -51,7 +51,7 @@ GET /policies/roleManagementPolicyAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -64,7 +64,7 @@ GET /policies/roleManagementPolicyAssignments
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$filter=scopeId eq '/' and scopeType eq 'Directory'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyassignment-csharp-snippets.md)]
@@ -107,15 +107,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "policyId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "scopeId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "scopeType": "subscription",
-      "roleDefinitionId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicyAssignments",
+    "value": [
+        {
+            "id": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9_fe930be7-5e62-47db-91af-98c3a49a38b1",
+            "policyId": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9",
+            "scopeId": "/",
+            "scopeType": "Directory",
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
+        },
+        {
+            "id": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a_0526716b-113d-4c15-b2c8-68e3c22b9f80",
+            "policyId": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a",
+            "scopeId": "/",
+            "scopeType": "Directory",
+            "roleDefinitionId": "0526716b-113d-4c15-b2c8-68e3c22b9f80"
+        }
+    ]
 }
 ```
 

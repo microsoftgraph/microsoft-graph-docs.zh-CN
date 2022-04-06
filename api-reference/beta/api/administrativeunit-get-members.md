@@ -1,16 +1,16 @@
 ---
 title: 获取成员
-description: 使用此 API 获取管理 (或) 组的特定成员。
+description: 使用此 API 获取管理 (用户、组或) 的特定成员。
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a6355465e00e6d39cc1b8d34182c234131de2120
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 96fa562d1b954bbcfd1cf3dd99731d6359fed06a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940048"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669156"
 ---
 # <a name="get-a-member"></a>获取成员
 
@@ -18,15 +18,15 @@ ms.locfileid: "60940048"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 获取管理 (或) 组的特定成员。
+使用此 API 获取管理 (用户、组或) 的特定成员。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -45,18 +45,19 @@ GET /administrativeUnits/{id}/members/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 user 或 `200 OK` [group](../resources/group.md)对象。 [](../resources/user.md)
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [user](../resources/user.md)、 [group](../resources/group.md) 或 [device](../resources/device.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
-##### <a name="response"></a>响应
-下面是一个重发的示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 200 OK

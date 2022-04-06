@@ -1,16 +1,16 @@
 ---
 title: participant： mute
 description: 将呼叫中的特定参与者静音。
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3a26be264fbc14461d1193bc3e1ec51e2d63abca
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: dd3cd2d07f233e0e18d656b7f580672a01b2d272
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346116"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607524"
 ---
 # <a name="participant-mute"></a>participant： mute
 
@@ -32,7 +32,7 @@ ms.locfileid: "62346116"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | 无                                        |
+| Application     | Calls.JoinGroupCallsasGuest.All 或 Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

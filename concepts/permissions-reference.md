@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 856dbe141f03ed88de587ae3fa6142b7ddc6751b
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: e82902116d9e6abde93dffb9b8c090e8b26a782a
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510062"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588531"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -593,14 +593,14 @@ _CallRecord-PstnCalls.Read.All_ 权限授予应用程序访问 [PSTN（通话套
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_CloudPC.Read.All_ | 读取云端电脑 | 允许应用代表已登录的用户读取云电脑对象（例如配置策略）。 | 否 | 否 |
-|_CloudPC.ReadWrite.All_ | 读取和写入云端电脑 | 允许应用代表用户创建、读取、更新和删除云电脑对象，例如本地连接、预配策略和设备映像。 | 是 | 否 |
+|_CloudPC.ReadWrite.All_ | 读取和写入云端电脑 | 允许应用代表用户创建、读取、更新和删除云电脑对象，例如Azure 网络连接、预配策略和设备映像。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_CloudPC.Read.All_ | 读取云端电脑 | 无需登录用户，允许该应用读取 Cloud PC 对象，如设置策略。 | 否 | 否 |
-|_CloudPC.ReadWrite.All_ | 读取和写入云端电脑 | 无需登录用户，允许该应用创建、读取、更新和删除 Cloud PC 对象，如本地连接、设置策略和设备图像。 | 是 | 否 |
+|_CloudPC.ReadWrite.All_ | 读取和写入云端电脑 | 无需登录用户，允许该应用创建、读取、更新和删除 Cloud PC 对象，如 Azure 网络连接、设置策略和设备图像。 | 是 | 否 |
 
 ### <a name="example-usage"></a>用法示例
 
@@ -688,6 +688,24 @@ _CallRecord-PstnCalls.Read.All_ 权限授予应用程序访问 [PSTN（通话套
 | _CustomSecAttributeAssignment.ReadWrite.All_ | 读取和写入自定义安全属性分配 | 允许应用代表已登录的用户读取和写入租户中所有主体的自定义安全属性分配。 | 是 |
 | _CustomSecAttributeDefinition.Read.All_ | 读取自定义安全属性定义 | 允许应用在没有登录用户的情况下读取租户的自定义安全属性定义。 | 是 |
 | _CustomSecAttributeDefinition.ReadWrite.All_ | 读取和写入自定义安全属性定义 | 允许应用在没有登录用户的情况下读取和写入租户的自定义安全属性定义。 | 是 |
+
+---
+
+## <a name="delegated-admin-relationship-permissions"></a>委派管理员关系权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DelegatedAdminRelationship.Read.All_ | 读取委派管理员与客户的关系 | 允许应用代表已登录用户读取委派管理员与客户的关系的详细信息，例如访问详细信息（包括角色）和持续时间以及面向安全组的特定角色分配。 | 是 | 否 |
+| _DelegatedAdminRelationship.ReadWrite.All_ | 管理委派管理员与客户的关系 | 允许应用代表你管理（创建-更新-终止）委派管理员与客户的关系，以及针对活动的委派管理员关系面向安全组的角色分配。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DelegatedAdminRelationship.Read.All_ | 读取委派管理员与客户的关系 | 允许应用在无已登录用户的情况下，读取委派管理员与客户的关系的详细信息，例如访问详细信息（包括角色）和持续时间以及面向安全组的特定角色分配。 | 是 | 否 |
+| _DelegatedAdminRelationship.ReadWrite.All_ | 管理委派管理员与客户的关系 | 允许应用在无已登录用户的情况下，管理（创建-更新-终止）委派管理员与客户的关系，以及针对活动的委派管理员关系面向安全组的角色分配。 | 是 | 否 |
 
 ---
 

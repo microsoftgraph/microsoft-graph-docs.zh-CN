@@ -1,18 +1,18 @@
 ---
-title: 在 Microsoft Graph Toolkit
+title: 设置 Microsoft 服务中的组件Graph Toolkit
 description: 使用 CSS 自定义属性修改 Microsoft Graph Toolkit样式。
 ms.localizationpriority: medium
-author: beth-panx
-ms.openlocfilehash: 8447517a10bf61c78c1a7c668b6430c616f40fa8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 6d3c565ff2455643d0435936a34add1dda0c6578
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129563"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589203"
 ---
-# <a name="styling-components-in-the-microsoft-graph-toolkit"></a>在 Microsoft Graph Toolkit
+# <a name="styling-components-in-the-microsoft-graph-toolkit"></a>设置 Microsoft 服务中的组件Graph Toolkit
 
-每个 Microsoft Graph Toolkit组件都记录一组[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)自定义属性，可用于更改某些元素的外观。 您可以在每个组件文档找到可用的自定义 CSS 属性。例如：
+每个 Microsoft Graph Toolkit组件都记录一组 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) 自定义属性，可用于更改某些元素的外观。 您可以在每个组件文档找到可用的自定义 CSS 属性。例如：
 
 ```css
 mgt-person {
@@ -26,7 +26,7 @@ mgt-person {
 
 ## <a name="apply-themes"></a>应用主题
 
-有两个主题可用 - 浅色和深色。 默认情况下，所有组件都使用浅色主题设置样式。 若要切换到深色主题，只需应用到 HTML `class="mgt-dark"` 页面的 部分。 该部分中的组件将应用深色主题。 以下示例显示了如何根据 HTML 的结构应用主题。
+有两个主题可用 - 浅色和深色。 默认情况下，所有组件都使用浅色主题设置样式。 若要切换到深色主题，只需应用到 `class="mgt-dark"` HTML 页面的 部分。 该部分中的组件将应用深色主题。 以下示例显示了如何根据 HTML 的结构应用主题。
 
 示例 1：全局主题
 

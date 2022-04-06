@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fad8afd1fd3d4507ad7cf9447b855e3d70bc65cc
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 3e07320950184a89c9d8000145b75af978a4e1e1
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224460"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646583"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod：resetPassword
 
@@ -20,35 +20,24 @@ ms.locfileid: "61224460"
 
 为与密码身份验证方法对象关联的 [密码启动重置](../resources/passwordauthenticationmethod.md) 。 这只能由具有适当权限的管理员完成，并且不能对用户自己的帐户执行。
 
-此流将新密码写入Azure Active Directory，如果已使用密码写回进行配置，则将新密码推送到本地 Active Directory。 管理员可以提供新密码或使系统生成一个密码。 系统将提示用户在下次登录时更改其密码。
+此流将新密码写入Azure Active Directory，如果已使用密码写回本地 Active Directory则推送到新密码。 管理员可以提供新密码或使系统生成一个密码。 系统将提示用户在下次登录时更改其密码。
 
-此重置是一项长时间运行的操作，它将在标头中返回一个链接，调用方可在其中定期检查 `Location` 重置的状态。
+此重置是一项长时间运行的操作，它将返回一个 **Location** 标头，其中具有一个链接，调用方可以在其中定期检查重置操作的状态。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-### <a name="permissions-acting-on-self"></a>自行操作的权限
-
-不能在用户自己的帐户上执行该操作。
+> [!IMPORTANT]
+> 不能在用户自己的帐户上执行该操作。 只有具有适当权限的管理员才能执行此操作。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:---------------------------------------|:-------------------------|
-| 委派（工作或学校帐户）     | 不支持。 |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
-
-### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
-
-只有具有适当权限的管理员才能执行此操作。
-
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
-对于管理员在另一用户上操作的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -75,11 +64,11 @@ POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPa
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|newPassword|String|管理员输入的新密码。对于具有混合密码方案的租户，此为必需项。 如果省略仅云密码，系统将返回系统生成的密码。 这是一个没有其他编码的 unicode 字符串。 在验收之前，将针对租户的禁止密码系统验证它，并且必须遵守租户的云和/或本地密码要求。|
+|newPassword|String|新密码。 对于具有混合密码方案的租户，此为必需项。 如果省略仅云密码，系统将返回系统生成的密码。 这是一个没有其他编码的 unicode 字符串。 在验收之前，将针对租户的禁止密码系统验证它，并且必须遵守租户的云和/或本地密码要求。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 标头 `202 ACCEPTED` 中返回 响应代码和 `Location` URL。
+如果成功，此方法返回 响应 `202 Accepted` 代码和 **包含 URL 的位置** 标头，以检查重置操作的状态。
 
 如果调用方未提交密码，则响应正文中的 JSON 对象中会提供 Microsoft 生成的密码。
 
@@ -87,8 +76,8 @@ POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPa
 
 | 名称        | 说明     |
 |:------------|:----------------|
-|Location     | 要调用以检查操作状态的 URL。|
-|重试后  | 持续时间（以秒表示）。|
+|Location     | 要调用以检查操作状态的 URL。 必需。|
+|重试后  | 持续时间（以秒表示）。 可选。|
 
 ## <a name="examples"></a>示例
 
@@ -107,11 +96,11 @@ POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPa
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
+POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 Content-type: application/json
 
 {
-  "newPassword": "newPassword-value",
+    "newPassword": "Cuyo5459"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -137,17 +126,18 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
-
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.entity"
 } -->
 
 ```http
-HTTP/1.1 202 ACCEPTED
+HTTP/1.1 202 Accepted
 Content-type: application/json
-Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/operations/{id}
+Location: https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/88e7560c-9ebf-435c-8089-c3998ac1ec51?aadgdc=DUB02P&aadgsu=ssprprod-a
+
+{}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
@@ -175,7 +165,7 @@ Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authen
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
+POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/passwordauthenticationmethod-resetpassword-systemgenerated-csharp-snippets.md)]
@@ -210,11 +200,12 @@ POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authenticat
 
 ```http
 HTTP/1.1 202 ACCEPTED
-Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/operations/{id}
+Location: https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/77bafe36-3ac0-4f89-96e4-a4a5a48da851?aadgdc=DUB02P&aadgsu=ssprprod-a
 Content-type: application/json
 
 {
-  "password": "new system generated password"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.passwordResetResponse",
+    "newPassword": "Cuyo5459"
 }
 ```
 

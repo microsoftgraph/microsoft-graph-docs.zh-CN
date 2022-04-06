@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7ce73c668bb9fb9031851ef2c232d9be0e2efb05
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 4b43f13b984aa7a1708b48acc5a8959e4be78a60
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671480"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629426"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -467,7 +467,7 @@ Content-type: text/plain
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_users_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
@@ -794,6 +794,52 @@ Content-type: application/json
   ]
 }
 ```
+
+### <a name="example-12-get-the-value-of-a-schema-extension-for-all-users"></a>示例 12：获取所有用户的架构扩展值
+
+在此示例中，架构扩展 ID 为 `ext55gb1l09_msLearnCourses`。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "list_schemaextension"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$select=ext55gb1l09_msLearnCourses
+```
+
+#### <a name="response"></a>响应
+
+在以下响应中，在两个用户对象未分配架构扩展属性 `ext55gb1l09_msLearnCourses`。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(ext55gb1l09_msLearnCourses)",
+    "value": [
+        {},
+        {
+            "ext55gb1l09_msLearnCourses": {
+                "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+                "courseType": "Developer",
+                "courseName": "Introduction to Microsoft Graph",
+                "courseId": 1
+            }
+        },
+        {}
+    ]
+}
+```
+
+> **注意：** 还可以对架构扩展属性应用 `$filter` 以检索集合中属性与指定值匹配的对象。 语法为`/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`。 例如，`GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`。 支持 `eq` 和 `not` 运算符。
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a13b1d7d8a418d5332f098043bb3d3bd1428e4a
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 06f56ede9e8c98471992dac96a5d7de0797bd18a
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291420"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630700"
 ---
 # <a name="update-hardwareconfigurationdevicestate"></a>更新 hardwareConfigurationDeviceState
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -59,8 +59,8 @@ PATCH /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceR
 |upn|String|用户主体名称 (UPN)。|
 |internalVersion|Int32|策略内部版本|
 |lastStateUpdateDateTime|DateTimeOffset|执行硬件配置的最后时间戳|
-|configurationState|[runState](../resources/intune-shared-runstate.md)|上次执行硬件配置后的配置状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
-|configurationOutput|字符串|硬件配置执行的输出|
+|configurationState|[runState](../resources/intune-deviceconfig-runstate.md)|上次执行硬件配置后的配置状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|configurationOutput|String|硬件配置执行的输出|
 |configurationError|String|硬件配置执行中的错误|
 
 

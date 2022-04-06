@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bb1558119b842634de5dcba43339d3c0155cd74e
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 4c849eba9e34245d58578cd93c90fa88d9fda145
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348951"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672502"
 ---
 # <a name="orgcontact-delta"></a>orgContact： delta
 
@@ -25,7 +25,7 @@ ms.locfileid: "62348951"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。  |
 |应用程序 | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 

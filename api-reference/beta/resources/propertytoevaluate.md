@@ -1,16 +1,16 @@
 ---
 title: propertyToEvaluate 资源类型
 description: 定义属性的名称和值。
-localization_priority: Normal
-author: Jordanndahl
+ms.localizationpriority: medium
+author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0855d4f06ed7f1be59c57c2989313268638e9859
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 84481eeff8ed1367e85d4000ffe1b60fb5116ad2
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682612"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587061"
 ---
 # <a name="propertytoevaluate-resource-type"></a>propertyToEvaluate 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "52682612"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
-|:-------- |:---- |:----------- |
-| PropertyName | String | 提供属性名称。 |
+| 属性      | 类型   | 说明                  |
+| :------------ | :----- | :--------------------------- |
+| PropertyName  | String | 提供属性名称。  |
 | propertyValue | String | 提供属性值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -56,4 +56,3 @@ ms.locfileid: "52682612"
   "section": "documentation",
   "tocPath": ""
 }-->
-

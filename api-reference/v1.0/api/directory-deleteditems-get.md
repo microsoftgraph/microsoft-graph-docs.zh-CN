@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fbca1ace9901149fcc00953145663e5e56c99ed8
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: ecd2dbce0993e9610c51007f50ce1f2c58bad423
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201335"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672033"
 ---
 # <a name="get-deleted-item"></a>获取已删除项目
 
@@ -18,7 +18,7 @@ ms.locfileid: "62201335"
 
 检索[已删除的项目](../resources/directory.md)中最近删除项目的属性。
 
-目前，仅应用程序、组和用户资源支持已删除的项目[](../resources/application.md)功能。 [](../resources/group.md) [](../resources/user.md)
+目前，仅应用程序、组和用户资源支持[已删除的项目](../resources/group.md)[功能](../resources/user.md)。[](../resources/application.md)
 
 >**注意：** 已删除的安全组将永久删除，无法通过此 API 进行检索。
 
@@ -29,7 +29,7 @@ ms.locfileid: "62201335"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All、Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
@@ -37,7 +37,7 @@ ms.locfileid: "62201335"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -45,7 +45,7 @@ ms.locfileid: "62201335"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 

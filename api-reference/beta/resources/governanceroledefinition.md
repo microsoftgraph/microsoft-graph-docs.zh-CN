@@ -4,13 +4,13 @@ description: 表示角色定义。 对于 Azure 资源，它可以表示 Azure R
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: de3fcec9b3adf2573b3128f5f741f538c98e8e01
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 631640b8187b2fae87b28fcd6cd1b1b9b57a9bb5
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696411"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510553"
 ---
 # <a name="governanceroledefinition-resource-type"></a>governanceRoleDefinition 资源类型
 
@@ -18,20 +18,20 @@ ms.locfileid: "60696411"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 
 表示角色定义。 对于 Azure 资源，它可以表示 Azure RBAC 角色，如所有者、读者、参与者等。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法          | 返回类型 |Description|
 |:---------------|:--------|:--------|
 |[List](../api/governanceroledefinition-list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) 集合 |列出资源上的角色定义集合。|
 |[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |读取由 id 指定的角色定义实体的属性和关系。|
 
-目前 `POST` `PUT` ， `PATCH` 实体 `DELETE` 集不支持 `roleDefinitions` 、 。
+目前`POST`，`PUT`实体`PATCH``DELETE`集不支持 `roleDefinitions` 、 。
 
 ## <a name="properties"></a>属性
 | 属性    | 类型   | 说明                                                           |

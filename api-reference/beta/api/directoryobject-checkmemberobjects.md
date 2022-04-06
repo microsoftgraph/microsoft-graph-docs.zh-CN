@@ -5,8 +5,13 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
+ms.openlocfilehash: bb2e6deebe40c9deedddcdaad2d85f754ddca5e9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668855"
 ---
-
 # <a name="directoryobject-checkmemberobjects"></a>directoryObject：checkMemberObjects
 
 命名空间：microsoft.graph
@@ -15,7 +20,7 @@ doc_type: apiPageType
 
 检查组 ID、管理单元 ID 或目录角色 ID 列表中的成员身份，以检查指定的用户、组、服务主体、组织联系人、设备或目录对象的 ID。[](../resources/user.md)[](../resources/group.md)[](../resources/serviceprincipal.md)[](../resources/orgcontact.md)[](../resources/device.md)[](../resources/directoryobject.md) 此方法是可传递的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +36,7 @@ doc_type: apiPageType
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read、User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.Read、User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -39,7 +44,7 @@ doc_type: apiPageType
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| 委派（工作或学校帐户）     | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
 | 应用程序                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
@@ -47,7 +52,7 @@ doc_type: apiPageType
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -55,7 +60,7 @@ doc_type: apiPageType
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -63,7 +68,7 @@ doc_type: apiPageType
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -170,7 +175,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-checkmemberobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

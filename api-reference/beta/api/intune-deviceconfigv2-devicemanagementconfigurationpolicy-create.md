@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a81870614248464e031d7f79586d337d209d936d
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 4549f26c1525acaa800f7e5f0a40815b91f032c5
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291104"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628999"
 ---
 # <a name="create-devicemanagementconfigurationpolicy"></a>创建 deviceManagementConfigurationPolicy
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -56,12 +56,12 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 |:---|:---|:---|
 |id|String|策略文档的键。 自动生成。|
 |name|String|策略名称|
-|description|String|策略说明|
+|说明|String|策略说明|
 |平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此策略的平台。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`、`linux`、`unknownFutureValue`。|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此策略的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`、`linuxMdm`、`unknownFutureValue`。|
-|createdDateTime|DateTimeOffset|策略创建日期和时间。 此属性是只读的。|
-|lastModifiedDateTime|DateTimeOffset|策略上次修改日期和时间。 此属性是只读的。|
-|settingCount|Int32|设置数。 此属性是只读的。|
+|createdDateTime|DateTimeOffset|策略创建日期和时间|
+|lastModifiedDateTime|DateTimeOffset|策略上次修改日期和时间|
+|settingCount|Int32|设置数|
 |creationSource|String|策略创建源|
 |roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 |isAssigned|Boolean|策略分配状态。 此属性是只读的。|

@@ -527,7 +527,7 @@ items:
   - name: 开发
     expanded: true
     items:
-      - name: 身份验证和授权
+      - name: 获取身份验证令牌
         items:
           - name: 概述
             href: auth/index.yml

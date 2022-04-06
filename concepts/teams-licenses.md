@@ -4,12 +4,12 @@ description: 了解适用于 Microsoft Graph 中的 Microsoft Teams API 的许�
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: e3f8637bc55c6cd1cb9055d6b914063b8980e858
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 422e1ba9c8ff61ce39b0d65615bd2e2fb45ffaaf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262104"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672705"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Microsoft Graph 中 Microsoft Teams API 的许可和付款要求
 
@@ -67,7 +67,8 @@ ms.locfileid: "62262104"
 
 ## <a name="required-licenses-for-modela"></a>`model=A` 需要的许可证 
 
-用户需要[支持许可证](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export)之一。 需要许可证的用户因 API 而异；有关详细信息，请参阅[`model=A`要求](#modela-requirements)。
+用户将需要支持 Microsoft 通信 DLP [服务计划](/azure/active-directory/enterprise-users/licensing-service-plan-reference)的许可证，例如这些[受支持的许可证](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export)之一。
+需要许可证的用户因 API 而异；有关详细信息，请参阅[`model=A`要求](#modela-requirements)。
 
 来宾用户不受这些许可要求的约束。
 同样地，从租户外部发送的消息（联合聊天）不受约束。
