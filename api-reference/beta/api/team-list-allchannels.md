@@ -1,23 +1,23 @@
 ---
 title: 列出 allChannels
-description: 获取此团队中的频道列表，或与此团队共享 (传入频道) 。
+description: 获取此团队中的频道列表或与此团队 (传入频道) 共享的频道列表。
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4f5f025062089d3550fe8f2212b353757059bd12
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 77332d239310ab4552d724362c19d770d6f1d471
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685318"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704167"
 ---
 # <a name="list-allchannels"></a>列出 allChannels
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取此[团队](../resources/team.md)中的[频道](../resources/channel.md)列表或与此[团队](../resources/team.md)共享 (传入频道) 。
+获取此 [团队](../resources/team.md) 中的 [频道](../resources/channel.md) 列表或与此 [团队](../resources/team.md) (传入频道) 共享的频道列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -38,7 +38,7 @@ ms.locfileid: "64685318"
 }
 -->
 ``` http
-GET /teams/{teamsId}/allChannels
+GET /teams/{team-id}/allChannels
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -57,10 +57,10 @@ GET /teams/{teamsId}/allChannels
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [通道](../resources/channel.md) 对象集合。 响应还包括 **@odata.id** 属性，可用于访问通道并在 [通道](../resources/channel.md) 对象上运行其他操作。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和响应主体中的 [频道](../resources/channel.md) 对象集合。 响应还包括 **@odata.id** 属性，可用于访问频道并在 [频道](../resources/channel.md) 对象上运行其他操作。
 
 > [!Note]
-> 目前，调用从 **@odata.id** 属性返回的 URL 对于跨租户共享通道失败。 如果在调用此 API 之前从 URL 中删除 `/tenants/{tenant-id}` 该部件，则可以解决此问题。 有关详细信息，请参阅 [Microsoft Graph 的已知问题](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id)。
+> 目前，调用 **@odata.id** 属性返回的 URL 对跨租户共享频道失败。 如果在调用此 API 之前从 URL 中删除 `/tenants/{tenant-id}` 部件，则可以解决此问题。 有关详细信息，请参阅 [Microsoft Graph 的已知问题](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id)。
 
 ## <a name="examples"></a>示例
 
@@ -107,7 +107,7 @@ Content-Type: application/json
        "@odata.id": "https://graph.microsoft.com/beta/tenants/b3246f44-b4gb-5678-96c6-25b18fa2c910/teams/893075dd-5678-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv",
       "id": "19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv2",
       "createdDateTime": "2020-05-27T19:22:25.692Z",
-      "displayName": "Shared channel from Contosso",
+      "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }
@@ -116,7 +116,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-2-list-all-shared-channels"></a>示例 2：列出所有共享通道
+### <a name="example-2-list-all-shared-channels"></a>示例 2: 列出所有共享频道
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -150,7 +150,7 @@ Content-Type: application/json
        "@odata.id": "https://graph.microsoft.com/beta/tenants/b3246f44-b4gb-5678-96c6-25b18fa2c910/teams/893075dd-5678-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv",
       "id": "19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv2",
       "createdDateTime": "2020-05-27T19:22:25.692Z",
-      "displayName": "Shared channel from Contosso",
+      "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }
