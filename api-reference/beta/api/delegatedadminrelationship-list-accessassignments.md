@@ -3,14 +3,14 @@ title: 列出 accessAssignments
 description: 获取 delegatedAdminAccessAssignment 对象及其属性的列表。
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: e4e08efc3cb349787d1cb0b98dc9c76af817bc29
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 66ed3acd2ffd153fa3499acaf1a73a711509b768
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589629"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704398"
 ---
 # <a name="list-accessassignments"></a>列出 accessAssignments
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "64589629"
 
 获取 [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| DelegatedAdminRelationship.Read.All、DelegatedAdminRelationship.ReadWrite.All |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|Application| 不支持。 |
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,9 +39,9 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持`$select`使用 、 、 `$filter``$top`、 `$orderBy`、 和 `$count``$skipToken`[OData](/graph/query-parameters) 查询参数来帮助自定义响应。  
+此方法支持 `$select`[OData](/graph/query-parameters) `$filter``$orderBy``$top`查询参数，`$count``$skipToken`以帮助自定义响应。  
 
-`$top` 支持最多 300 个对象。
+`$top` 最多支持 300 个对象。
 
 ## <a name="request-headers"></a>请求头
 |名称|说明|
@@ -53,9 +53,9 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) 对象的集合。
 
-每个 **delegatedAdminAccessAssignment** 对象都包含一个 **@odata.etag** 属性（根据 RFC2616）。
+每个 **delegatedAdminAccessAssignment** 对象都包含根据 RFC2616 的 **@odata.etag** 属性。
 
 ## <a name="examples"></a>示例
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: e5a0d99a1f17c9a61a221b4df0c06a0b4e5f2dac
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 192a2476c6e7f34d202ada3ec46dff334d63b6b6
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239055"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704301"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -37,8 +37,8 @@ ms.locfileid: "62239055"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsUserActivityUserDetail(period='D7')
-GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
+GET /reports/getTeamsUserActivityUserDetail(period='{period_value}')
+GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 ```
 
 ## <a name="function-parameters"></a>函数参数
@@ -52,13 +52,19 @@ GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
 
 > **注意：** 需要在 URL 中设置 period 或 date。
 
-此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
+## <a name="optional-query-parameters"></a>可选的查询参数
 
-## <a name="request-headers"></a>请求标头
+此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 `text/csv`. 但是，如果要指定输出类型，可以使用设置为或`application/json`设置的 `text/csv` OData `$format` 查询参数。
+
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}。必需。 |
+
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
@@ -71,6 +77,8 @@ GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
 CSV 文件包含下面的列标题。
 
 - 报表刷新日期
+- 租户显示名称
+- 共享频道租户显示名称
 - User Id
 - 用户主体名称
 - 上次活动日期
@@ -81,33 +89,36 @@ CSV 文件包含下面的列标题。
 - 专用聊天消息计数
 - 呼叫计数
 - 会议计数
+- 发布消息
+- 回复消息
+- 紧急消息
 - 会议组织计数
-- 会议参加计数
+- 参加的会议计数
 - 临时会议组织计数
-- 参加临时会议计数
-- 安排的一次会议组织计数
-- 已安排的一次会议参加次数
-- 安排的定期会议组织计数
-- 已安排的定期会议参加次数
+- 出席的临时会议计数
+- 计划的一次性会议有组织计数
+- 计划的一次性会议出席计数
+- 计划的定期会议有组织计数
+- 计划的定期会议出席计数
 - 音频持续时间
 - 视频持续时间
 - 屏幕共享持续时间
-- 音频持续时间（秒）
-- 视频持续时间（秒）
-- 屏幕共享持续时间（秒）
+- 音频持续时间（以秒为单位）
+- 视频持续时间（以秒为单位）
+- 屏幕共享持续时间（以秒为单位）
 - 包含其他操作
-- 已许可
+- 已获得许可
 - 报表周期
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 JSON 对象。
 
 此请求的默认页面大小为 2000 个项目。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-### <a name="csv"></a>CSV
+### <a name="example-1-csv-output"></a>示例 1：CSV 输出
 
 下面是输出 CSV 的示例。
 
@@ -150,10 +161,10 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
+Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
-### <a name="json"></a>JSON
+### <a name="example-2-json-output"></a>示例 2：JSON 输出
 
 下面是返回 JSON 的示例。
 
@@ -193,6 +204,8 @@ Content-Length: 452
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
+      "tenantDisplayName": "Microsoft",
+      "sharedChannelTenantDisplayNames": "SampleTenant",
       "userId": "userId-value", 
       "userPrincipalName": "userPrincipalName-value", 
       "isLicensed": true, 
@@ -205,7 +218,10 @@ Content-Length: 452
       "teamChatMessageCount": 0, 
       "privateChatMessageCount": 49, 
       "callCount": 2, 
-      "meetingCount": 0, 
+      "meetingCount": 0,
+      "postMessages": 10,
+      "replyMessages": 1,
+      "urgentMessages": 1, 
       "meetingsOrganizedCount": 0, 
       "meetingsAttendedCount": 0, 
       "adHocMeetingsOrganizedCount": 0, 

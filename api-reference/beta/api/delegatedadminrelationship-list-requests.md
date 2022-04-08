@@ -3,14 +3,14 @@ title: 列出请求
 description: 获取 delegatedAdminRelationshipRequest 对象及其属性的列表。
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 4a836751466151d9e0b2b53bfa7c9e689dffbc22
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: db0ebb59bea4fa6b278e15580fda9108768b115a
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589627"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704280"
 ---
 # <a name="list-requests"></a>列出请求
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "64589627"
 
 获取 [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| DelegatedAdminRelationship.Read.All、DelegatedAdminRelationship.ReadWrite.All |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|Application| 不支持。 |
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持`$expand`使用 、 、 `$select``$filter`、 `$top`、 和 `$count``$skipToken`[OData](/graph/query-parameters) 查询参数来帮助自定义响应。  
+此方法支持 `$expand`[OData](/graph/query-parameters) `$select``$top``$filter`查询参数，`$count``$skipToken`以帮助自定义响应。  
 
 ## <a name="request-headers"></a>请求头
 |名称|说明|
@@ -51,9 +51,9 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) 对象的集合。
 
-每个 **delegatedAdminRelationshipRequest** 对象都包含一个 **@odata.etag** 属性（根据 RFC2616）。
+每个 **delegatedAdminRelationshipRequest** 对象都包含根据 RFC2616 的 **@odata.etag** 属性。
 
 ## <a name="examples"></a>示例
 

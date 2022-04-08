@@ -3,14 +3,14 @@ title: delegatedAdminServiceManagementDetail 资源类型
 description: 包含由委派管理的客户租户中服务的管理详细信息。
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 837a7377031b7b2b913cf9346f8ca151da0267e1
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 53eca1c8d8d60ea78e080caede5ed7096a6ff825
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589593"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704161"
 ---
 # <a name="delegatedadminservicemanagementdetail-resource-type"></a>delegatedAdminServiceManagementDetail 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "64589593"
 
 包含由委派管理的客户租户中服务的管理详细信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 delegatedAdminServiceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md)|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md)|获取 **delegatedAdminServiceManagementDetail** 对象及其属性的列表。|
@@ -29,7 +29,7 @@ ms.locfileid: "64589593"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|托管服务的标识符。 只读。|
+|id|字符串|托管服务的标识符。 只读。|
 |serviceName|String|托管服务的名称。 只读。|
 |serviceManagementUrl|String|托管服务的管理门户的 URL。 只读。|
 

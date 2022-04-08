@@ -5,12 +5,12 @@ author: devjha-ms
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 91973ab0c32943e186f1167296fd32e56c08617d
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: 757677d0f3e75ff1b571a3991117c21a6361dff4
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685395"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704365"
 ---
 # <a name="channel-doesuserhaveaccess"></a>channel： doesUserHaveAccess
 命名空间：microsoft.graph
@@ -35,7 +35,7 @@ ms.locfileid: "64685395"
 }
 -->
 ``` http
-GET /teams/{teamsId}/channels/{channelId}/doesUserHaveAccess
+GET /teams/{team-id}/channels/{channel-id}/doesUserHaveAccess
 ```
 
 ## <a name="function-parameters"></a>函数参数
@@ -44,9 +44,9 @@ GET /teams/{teamsId}/channels/{channelId}/doesUserHaveAccess
 
 |参数|类型|说明|
 |:---|:---|:---|
-|tenantId|字符串|[用户](../resources/useridentity.md)所属的Azure Active Directory租户的 ID。 此属性的默认值是已登录用户或应用的当前 **tenantId** 。|
-|userId|String|[用户](../resources/useridentity.md)的唯一标识符。 在请求中指定 **userId** 或 **userPrincipalName** 属性。|
-|userPrincipalName|字符串|用户的 UPN)  ([用户](../resources/useridentity.md)主体名称。 在请求中指定 **userId** 或 **userPrincipalName** 属性。|
+|tenantId|String|[用户](../resources/useridentity.md)所属的Azure Active Directory租户的 ID。 此属性的默认值是已登录用户或应用的当前 **tenantId** 。|
+|userId|字符串|[用户](../resources/useridentity.md)的唯一标识符。 在请求中指定 **userId** 或 **userPrincipalName** 属性。|
+|userPrincipalName|String|用户的 UPN)  ([用户](../resources/useridentity.md)主体名称。 在请求中指定 **userId** 或 **userPrincipalName** 属性。|
 
 
 ## <a name="request-headers"></a>请求头

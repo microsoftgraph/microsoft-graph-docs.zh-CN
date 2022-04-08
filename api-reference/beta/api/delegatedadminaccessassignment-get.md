@@ -3,30 +3,30 @@ title: 获取 delegatedAdminAccessAssignment
 description: 读取 delegatedAdminAccessAssignment 对象的属性。
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 3f5fe01c5f68fc70e859c9701f7a61efd6ee2d77
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 41f41940a9802270e02d20aff462e1152a1792f2
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589746"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704162"
 ---
 # <a name="get-delegatedadminaccessassignment"></a>获取 delegatedAdminAccessAssignment
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [delegatedAdminAccessAssignment 对象](../resources/delegatedadminaccessassignment.md) 的属性。
+读取 [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| DelegatedAdminRelationship.Read.All、DelegatedAdminRelationship.ReadWrite.All |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|Application| 不支持。 |
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数检索特定用户属性，包括默认情况下未返回的属性。
+此方法支持 `$select` OData 查询参数来检索特定的用户属性，包括默认情况下未返回的属性。
 
 ## <a name="request-headers"></a>请求头
 |名称|说明|
@@ -51,7 +51,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 

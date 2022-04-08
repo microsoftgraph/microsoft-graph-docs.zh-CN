@@ -3,14 +3,14 @@ title: 删除 delegatedAdminAccessAssignment
 description: 删除 delegatedAdminAccessAssignment 对象。
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 1169e1d17011b8521bc5b79cd12681647476258b
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 2f9342324f44e2abf63062f0252d50c27aa293ec
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589742"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704250"
 ---
 # <a name="delete-delegatedadminaccessassignment"></a>删除 delegatedAdminAccessAssignment
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "64589742"
 
 删除 [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| DelegatedAdminRelationship.ReadWrite.All |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|Application| 不支持。 |
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ DELETE /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelations
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|If-Match|If-match： {etag}. 要删除的 **delegatedAdminAccessAssignment 的** 上次已知 ETag 值。 必需项。 从 LIST 或 GET 操作检索 ETag 值。|
+|If-Match|If-match： {etag}。 要删除 **的 delegatedAdminAccessAssignment** 的最后一个已知 ETag 值。 必需。 从 LIST 或 GET 操作中检索 ETag 值。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

@@ -3,30 +3,30 @@ title: 更新 delegatedAdminAccessAssignment
 description: 更新 delegatedAdminAccessAssignment 对象的属性。
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 52bee21df148af0bd02bb6a72d52d7c24db3c75f
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 7c0a6e045d64aba40c2db8a323afab273ee7f517
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589622"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704287"
 ---
 # <a name="update-delegatedadminaccessassignment"></a>更新 delegatedAdminAccessAssignment
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [delegatedAdminAccessAssignment 对象](../resources/delegatedadminaccessassignment.md) 的属性。
+更新 [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| DelegatedAdminRelationship.ReadWrite.All |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|Application| 不支持。 |
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|If-Match|If-match：etag}。 要更新的 **delegatedAdminAccessAssignment 的** 上次已知 ETag 值。 必需。|
+|If-Match|If-match：etag}。 要更新 **的 delegatedAdminAccessAssignment** 的最后一个已知 ETag 值。 必需。|
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
@@ -55,16 +55,16 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 或 `200 OK` 响应 `202 Accepted` 代码。
+如果成功，此方法将返回一个 `200 OK` 或一个 `202 Accepted` 响应代码。
 
 ## <a name="response-headers"></a>响应标头
 |名称|说明|
 |:---|:---|
 |Content-Type|application/json.|
 |位置|长时间运行的操作的位置。|
-|Retry-After|之后对位置 URL 进行后续 API 调用以检查长时间运行的操作的状态的时间。|
+|Retry-After|之后可以对位置 URL 进行后续 API 调用，以检查长时间运行的操作的状态。|
 
-此方法通常返回响应 `202 Accepted` 代码，该响应代码的 URL 指向 **Location** 响应标头中长时间运行的操作，该响应标头可监视其完成情况。 如果在调用中指定的值与现有对象中的值相同，API `200 OK` 将返回响应代码，响应正文中具有原始 [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) 对象。
+此方法通常返回一个 `202 Accepted` 响应代码，其中包含 **位置响应标** 头中长时间运行的操作的 URL，该操作可监视以完成。 如果调用中指定的值与现有对象中的值相同，则 API 将返回响应 `200 OK` 正文中原始 [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) 对象的响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -98,7 +98,7 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>响应
-下面是返回 响应代码以及 `202 Accepted` **Location** 和 **Retry-After** 标头的示例响应。
+下面是返回响应代码以及 **Location** 和 **Retry-After** 标头的示例响应`202 Accepted`。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

@@ -1,22 +1,25 @@
 ---
 title: 列出 meetingAttendanceReports
-description: 获取联机会议与会者报告的列表。
+description: 获取联机会议的出席情况报告列表。
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8acd40211d4225653eb32a0e5ef170e4e4ff48a5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 433e64a6fc02d70ad083d915bdfcb5529c639751
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104677"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704464"
 ---
 # <a name="list-meetingattendancereports"></a>列出 meetingAttendanceReports
 
 命名空间：microsoft.graph
 
-获取 [onlineMeeting 的 meetingAttendanceReport](../resources/meetingAttendanceReport.md) [对象列表](../resources/onlinemeeting.md)。 每次联机会议结束时，会生成该会话的与会者报告。
+获取 [onlineMeeting](../resources/onlinemeeting.md) 的 [meetingAttendanceReport](../resources/meetingAttendanceReport.md) 对象列表。 每次联机会议结束时，都会为该会话生成出勤报告。
+
+> [!WARNING]
+> 此方法不支持频道会议。
 
 ## <a name="permissions"></a>权限
 
@@ -28,11 +31,11 @@ ms.locfileid: "62104677"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | OnlineMeetingArtifact.Read.All |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建应用程序访问策略，并授予用户权限。 这将授权策略中配置的应用代表该用户获取联机会议和/或联机会议项目 (请求路径中指定的用户 ID) 。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
+要对此 API 使用应用程序权限，租户管理员必须创建应用程序访问策略并将其授予用户。 这会授权策略中配置的应用，代表该用户使用请求路径 () 中指定的用户 ID 提取联机会议和/或联机会议项目。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取具有委派权限的在线会议的所有与会者报告 () `/me` 应用 () `/users/{userId}` 权限：
+若要获取具有委派 () `/me` 和应用 `/users/{userId}` () 权限的联机会议的所有出席报告：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports
@@ -41,14 +44,14 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 
 > [!TIP]
 >
->- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
->- `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
+>- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+>- `meetingId`是 [onlineMeeting](../resources/onlinemeeting.md) 对象的 **ID**。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称            | 说明               |
 | :-------------- | :------------------------ |
@@ -60,10 +63,10 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [meetingAttendanceReport](../resources/meetingAttendanceReport.md) 对象列表。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [meetingAttendanceReport](../resources/meetingAttendanceReport.md) 对象列表。
 
 > [!TIP]
-> **attendanceRecords** 属性在响应中为空。
+> 响应中的 **attendanceRecords** 属性为空。
 
 ## <a name="example"></a>示例
 

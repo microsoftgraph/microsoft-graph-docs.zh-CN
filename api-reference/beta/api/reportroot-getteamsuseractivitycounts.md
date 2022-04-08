@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityCounts'
-description: 获取按活动类型的 Microsoft Teams 活动的数量。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。 活动由许可Microsoft Teams执行。
+description: 获取按活动类型的 Microsoft Teams 活动的数量。 活动由Microsoft Teams许可用户执行。
 ms.localizationpriority: medium
 ms.prod: reports
-author: sarahwxy
+author: zhiliqiao
 doc_type: apiPageType
-ms.openlocfilehash: d54bd9da2e36dc7f297f041dea19f0e9eccb5fa7
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: fa04a85e992c649c39587d386ae8e422b6a2d2b5
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044671"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704308"
 ---
 # <a name="reportroot-getteamsuseractivitycounts"></a>reportRoot: getTeamsUserActivityCounts
 
@@ -18,9 +18,9 @@ ms.locfileid: "61044671"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取按活动类型的 Microsoft Teams 活动的数量。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。 活动由许可Microsoft Teams执行。
+获取按活动类型的 Microsoft Teams 活动的数量。 活动由Microsoft Teams许可用户执行。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,9 +48,9 @@ GET /reports/getTeamsUserActivityCounts(period='D7')
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用将 OData $format查询参数设置为 text/csv 或 application/json。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
@@ -69,14 +69,21 @@ CSV 文件包含下面的列标题。
 - 报表刷新日期
 - 报表日期
 - 团队聊天消息
+- 发布消息
+- 回复消息
 - 专用聊天消息
 - 呼叫
 - 会议
+- 音频持续时间
+- 视频持续时间
+- 屏幕共享持续时间
+- 组织会议
+- 参加的会议
 - 报表周期
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 JSON 对象。
 
 ## <a name="example"></a>示例
 
@@ -122,7 +129,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Post Messages,Reply Messages,Private Chat Messages,Calls,Meetings,Audio Duration,Video Duration,Screen Share Duration,Meetings Organized,Meetings Attended,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -159,7 +166,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 277
+Content-Length: 475
 
 {
   "value": [
@@ -167,9 +174,16 @@ Content-Length: 277
       "reportRefreshDate": "2017-09-01", 
       "reportDate": "2017-09-01", 
       "teamChatMessages": 26, 
+      "postMessages": 3,
+      "replyMessages": 1,
       "privateChatMessages": 17, 
       "calls": 4, 
       "meetings": 0, 
+      "audioDuration": 00:00:00,
+      "videoDuration": 00:00:00,
+      "screenShareDuration": 00:00:00,
+      "meetingsOrganized": 0,
+      "meetingsAttended": 0,
       "reportPeriod": "7"
     }
   ]

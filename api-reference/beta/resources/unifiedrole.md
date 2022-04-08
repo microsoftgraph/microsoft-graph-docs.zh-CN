@@ -1,23 +1,23 @@
 ---
 title: unifiedRole 资源类型
-description: 可通过委派管理员关系分配给 Microsoft 合作伙伴的目录角色。
+description: 可以通过委派的管理关系分配给 Microsoft 合作伙伴的目录角色。
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 8a5c1cc9d450275642e767f7653eea09bcb103f6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 2355770dfdae2209d61903e7160527a57d4e5203
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589738"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704415"
 ---
 # <a name="unifiedrole-resource-type"></a>unifiedRole 资源类型
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可通过委派管理员关系分配给 Microsoft 合作伙伴的目录角色。
+可以通过委派的管理关系分配给 Microsoft 合作伙伴的目录角色。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

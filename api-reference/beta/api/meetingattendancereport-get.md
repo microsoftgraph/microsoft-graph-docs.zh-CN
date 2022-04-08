@@ -1,16 +1,16 @@
 ---
 title: 获取 meetingAttendanceReport
-description: 获取联机会议的会议出席报告。
+description: 获取联机会议的出席情况报告。
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d99e8c832db9bab9abd21fc380f4d8a1daf22e4b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 684e4cdd80c74c11d4118aa769bf15882d94ed4d
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130995"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704471"
 ---
 # <a name="get-meetingattendancereport"></a>获取 meetingAttendanceReport
 
@@ -18,7 +18,10 @@ ms.locfileid: "62130995"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[onlineMeeting 的 meetingAttendanceReport。](../resources/meetingAttendanceReport.md) [](../resources/onlinemeeting.md) 每次联机会议结束时，都会为该会话生成一份与会者报告。
+获取 [onlineMeeting](../resources/onlinemeeting.md) 的 [meetingAttendanceReport](../resources/meetingAttendanceReport.md)。 每次联机会议结束时，将为该会话生成出勤报告。
+
+> [!WARNING]
+> 此方法不支持频道会议。
 
 ## <a name="permissions"></a>权限
 
@@ -30,18 +33,18 @@ ms.locfileid: "62130995"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | OnlineMeetingArtifact.Read.All |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建应用程序访问策略，并授予用户权限。 这将授权策略中配置的应用代表该用户获取联机会议和/或联机会议项目 (请求路径中指定的用户 ID) 。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
+要对此 API 使用应用程序权限，租户管理员必须创建应用程序访问策略并将其授予用户。 这会授权策略中配置的应用，代表该用户使用请求路径 () 中指定的用户 ID 提取联机会议和/或联机会议项目。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要按 ID 获取具有委派 () 和应用 `/me` () `/users/{userId}` 报告：
+若要按 ID 获取具有委派 () `/me` 和应用 () `/users/{userId}` 权限的出勤报告：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 ```
 
-若要获取具有委派访问权限的在线会议的最新会话的与会者报告， () 应用 () `/me` `/users/{userId}` 权限：
+若要获取具有委派 () `/me` 和应用 `/users/{userId}` () 权限的联机会议的最新会话的出席情况报告：
 <!-- { "blockType": "ignored" }-->
 ```http
 GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
@@ -51,22 +54,22 @@ GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 > [!TIP]
 >
 >- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
->- `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
->- `reportId`是 [meetingAttendanceReport 对象的](../resources/meetingAttendanceReport.md) **ID。**
+>- `meetingId`是 [onlineMeeting](../resources/onlinemeeting.md) 对象的 **ID**。
+>- `reportId`是 [meetingAttendanceReport](../resources/meetingAttendanceReport.md) 对象的 **ID**。
 
 > [!CAUTION]
 >
->- 路径 `/meetingAttendanceReport` 已弃用。 今后，请使用 `/attendanceReports` 路径检索联机会议的会议出席报告。
->- 该 `/meetingAttendanceReport` 路径将保留在 beta 版中，实现向后兼容。 但是，若要获取相同的响应，您需要添加 `expand` 查询选项。 有关详细信息，请参阅可选 [查询参数](#optional-query-parameters) 部分。
+>- 路径 `/meetingAttendanceReport` 已弃用。 今后，请使用 `/attendanceReports` 路径检索联机会议的出席情况报告。
+>- 为了向后兼容，路径 `/meetingAttendanceReport` 将保留在 beta 中。 但是，若要获取相同的响应，需要添加 `expand` 查询选项。 有关详细信息，请参阅 ["可选查询参数](#optional-query-parameters) "部分。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 > [!TIP]
-> **attendanceRecords** 属性是默认情况下不返回的导航属性。 若要检索 **行中的 attendanceRecords，** 请使用 `$expand=attendanceRecords` 查询选项，如示例 [2 所示](#example-2-get-the-latest-attendance-report-for-an-online-meeting)。
+> **attendanceRecords** 属性是默认情况下未返回的导航属性。 若要按行检索 **attendanceRecords** ，请使用 `$expand=attendanceRecords` 查询选项，如 [示例 2](#example-2-get-the-latest-attendance-report-for-an-online-meeting) 所示。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称            | 说明               |
 | :-------------- | :------------------------ |
@@ -78,11 +81,11 @@ GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [meetingAttendanceReport](../resources/meetingAttendanceReport.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [meetingAttendanceReport](../resources/meetingAttendanceReport.md) 对象。
 
 ## <a name="example"></a>示例
 
-### <a name="example-1-get-the-attendance-report-for-an-online-meeting-by-id"></a>示例 1：按 ID 获取联机会议的会议出席报告
+### <a name="example-1-get-the-attendance-report-for-an-online-meeting-by-id"></a>示例 1：按 ID 获取联机会议的出席情况报告
 
 #### <a name="request"></a>请求
 
@@ -148,9 +151,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-latest-attendance-report-for-an-online-meeting"></a>示例 2：获取联机会议的最新与会者报告
+### <a name="example-2-get-the-latest-attendance-report-for-an-online-meeting"></a>示例 2：获取在线会议的最新出席情况报告
 
-以下示例显示请求获取联机会议的最新会话的会议出席报告。
+下面的示例演示了一个请求，请求为联机会议的最新会话获取会议出席情况报告。
 
 #### <a name="request"></a>请求
 

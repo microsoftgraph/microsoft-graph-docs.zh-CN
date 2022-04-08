@@ -3,14 +3,14 @@ title: List serviceManagementDetails
 description: 获取 delegatedAdminServiceManagementDetail 对象及其属性的列表。
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 72b9293e6dab7cc9f4d85fe1444304b5848beeef
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: c61167f61ff0caf04dee02d43e82d855665c9679
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589633"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704238"
 ---
 # <a name="list-servicemanagementdetails"></a>List serviceManagementDetails
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "64589633"
 
 获取 [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| DelegatedAdminRelationship.Read.All、DelegatedAdminRelationship.ReadWrite.All |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|Application| 不支持。 |
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}/serv
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

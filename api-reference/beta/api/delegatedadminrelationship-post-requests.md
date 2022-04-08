@@ -3,14 +3,14 @@ title: 创建请求
 description: 创建新的 delegatedAdminRelationshipRequest 对象。
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 96760913dc8dc5e4745cd1231f1b69a18a313b6f
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: df8e80f55e51c5b720e791243668fa468c1bcea6
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589623"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704394"
 ---
 # <a name="create-requests"></a>创建请求
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "64589623"
 
 创建新的 [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| DelegatedAdminRelationship.ReadWrite.All |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|Application| 不支持。 |
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,15 +47,15 @@ POST /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshi
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) 对象的 JSON 表示形式。
 
-在创建 **delegatedAdminRelationshipRequest** 时，可以指定以下属性。
+创建 **delegatedAdminRelationshipRequest** 时，可以指定以下属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|action|delegatedAdminRelationshipRequestAction|对委派管理员关系执行的操作。 必需项。 可能的值是：、`lockForApproval``terminate`。|
+|action|delegatedAdminRelationshipRequestAction|要对委派的管理关系执行的操作。 必需。 可能的值为： `lockForApproval`. `terminate`|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) 对象。 该响应包含 **一个 Location** 标头，其中包含指向已创建的委派管理员关系请求的 URL。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) 对象。 响应包含一个 **Location** 标头，其中包含创建的委派管理员关系请求的 URL。
 
 ## <a name="examples"></a>示例
 

@@ -1,16 +1,16 @@
 ---
 title: delegatedAdminCustomer 资源类型
-description: 表示与 Microsoft 合作伙伴具有委派管理员关系的客户。
+description: 表示与 Microsoft 合作伙伴有委派管理员关系的客户。
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: b7ac3c580ab566565d99f7c7c542e2bee0f0bcc3
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 4d86eb070a72102aee490321bc854ea319467fab
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589754"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704208"
 ---
 # <a name="delegatedadmincustomer-resource-type"></a>delegatedAdminCustomer 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "64589754"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表Azure AD Microsoft 合作伙伴的客户且与 Microsoft 合作伙伴具有委派管理员关系的组织。 当合作伙伴与客户之间至少存在一个委派管理员关系时，系统会自动创建此对象，当不存在更多活动关系时，此对象将被删除。
+表示一个Azure AD组织，它是 Microsoft 合作伙伴的客户，并与 Microsoft 合作伙伴有委派的管理员关系。 当合作伙伴和客户之间至少存在一个委派的管理关系时，系统会自动创建此对象，并在不存在其他活动关系时将其删除。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 delegatedAdminCustomers](../api/tenantrelationship-list-delegatedadmincustomers.md)|[delegatedAdminCustomer](delegatedadmincustomer.md) 集合|获取 **delegatedAdminCustomer** 对象及其属性的列表。|
@@ -29,9 +29,9 @@ ms.locfileid: "64589754"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|客户Azure AD 显示名称的租户。 只读。 支持 `$orderBy`。 |
+|displayName|String|Azure AD客户租户的显示名称。 只读。 支持 `$orderBy`。 |
 |id|String|客户Azure AD分配的唯一标识符。 只读。 继承自 [entity](../resources/entity.md)。|
-|tenantId|String|客户Azure AD的租户 ID。 只读。|
+|tenantId|String|客户Azure AD分配的租户 ID。 只读。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

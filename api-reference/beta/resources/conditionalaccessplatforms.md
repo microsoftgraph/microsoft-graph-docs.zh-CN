@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessPlatforms 资源类型
-description: 策略作用域中包含和排除的平台。
+description: 策略范围中包含和排除的平台。
 ms.localizationpriority: medium
 author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5dec75019dc01b4d1ec12b55b66c34f03cb53630
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 3899a47a3a952d6546f308868deefbe2cdd89591
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804099"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704294"
 ---
 # <a name="conditionalaccessplatforms-resource-type"></a>conditionalAccessPlatforms 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "62804099"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-策略作用域中包含和排除的平台。
+策略范围中包含和排除的平台。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|includePlatforms|conditionalAccessDevicePlatform 集合| 可取值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`、`all`、`unknownFutureValue`、`linux`。 请注意，必须使用此可 `Prefer: include-unknown-enum-members` 变化枚举 (请求) 获取以下 [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)： `linux`。 |
-|excludePlatforms|conditionalAccessDevicePlatform 集合| 可取值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`、`all`、`unknownFutureValue`、`linux`。 请注意，必须使用此可 `Prefer: include-unknown-enum-members` 变化枚举 (请求) 获取以下 [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)： `linux`。 |
+|includePlatforms|conditionalAccessDevicePlatform 集合| 可能的值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`、`unknownFutureValue, ``all`linux'。|
+|excludePlatforms|conditionalAccessDevicePlatform 集合| 可取值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`、`all`、`unknownFutureValue`、`linux`。|
 
 ## <a name="relationships"></a>关系
 
