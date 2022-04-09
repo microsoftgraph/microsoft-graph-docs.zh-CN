@@ -3,12 +3,12 @@ title: 安装 Microsoft Graph SDK
 description: 提供 C#、Java、JavaScript、Objective-C、PHP 和 Ruby Microsoft Graph SDK 的安装说明。
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 1133e8f4cd1d0690c5a8ff6ef818c29294b3d2ee
-ms.sourcegitcommit: 1ae0079021dfcbcc910dcdc74440d367ec4af7d6
+ms.openlocfilehash: 587c5f1e9c14cff83bb55a7b4174297c5e1256f3
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63460124"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733064"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>安装 Microsoft Graph SDK
 
@@ -28,20 +28,20 @@ Microsoft Graph SDK 现已通过 Github 和常用平台包管理器包含在你�
 Install-Package Microsoft.Graph
 ```
 
-## <a name="install-the-microsoft-graph-go-sdk-preview"></a>安装 Microsoft Graph Go SDK (预览) 
+## <a name="install-the-microsoft-graph-go-sdk-preview"></a>安装 Microsoft Graph Go SDK (预览版) 
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
-Microsoft Graph Go SDK 包含在以下程序包中：
+Microsoft Graph Go SDK 包含在以下包中：
 
-- [Microsoft Graph SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go) - 包含`v1.0`用于通过 fluent API 访问终结点的模型和请求生成器。
-- [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) - 包含`beta`用于通过 fluent API 访问终结点的模型和请求生成器。
+- [Microsoft Graph SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go) - 包含用于使用 Fluent API 访问`v1.0`终结点的模型和请求生成器。
+- [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) - 包含模型并请求生成器使用流畅的 API 访问`beta`终结点。
 - [Microsoft Graph Core SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go-core) - 用于调用 Microsoft Graph 的核心库。
 
 ```Shell
 go get github.com/microsoftgraph/msgraph-sdk-go
 go get github.com/Azure/azure-sdk-for-go/sdk/azidentity
-go get github.com/microsoft/kiota/authentication/go/azure
+go get github.com/microsoft/kiota-authentication-azure-go
 ```
 
 ## <a name="install-the-microsoft-graph-java-sdk"></a>安装 Microsoft Graph Java SDK

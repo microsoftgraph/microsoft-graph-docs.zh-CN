@@ -5,19 +5,19 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6eac121c8bc16460e76c6f0909eb154eb0e225ef
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 711c386c8df0ddcbb7a3c6dd6bd2964eff0bacbc
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62803874"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733211"
 ---
 # <a name="update-cloudpcorganizationsettings"></a>更新 cloudPcOrganizationSettings
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新租户 [中 cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) 对象的属性。
+更新租户中 [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "62803874"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CloudPC.Read.All、CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All、CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,8 +50,9 @@ PATCH /deviceManagement/virtualEndpoint/organizationSettings
 
 |属性|类型|说明|
 |:---|:---|:---|
-|osVersion|cloudPcOperatingSystem|操作系统版本 (操作系统) 在云 PC 上预配。 可能的值包括 `windows10`、`windows11`、`unknownFutureValue`。 可选。|
-|userAccountType|cloudPcUserAccountType|已预配云 PC 上的用户的帐户类型。 可能的值包括 `standardUser`、`administrator`、`unknownFutureValue`。 可选。|
+|osVersion|cloudPcOperatingSystem|操作系统版本 (操作系统) 在云电脑上进行预配。 可能的值包括 `windows10`、`windows11`、`unknownFutureValue`。 可选。|
+|userAccountType|cloudPcUserAccountType|预配的云电脑上用户的帐户类型。 可能的值包括 `standardUser`、`administrator`、`unknownFutureValue`。 可选。|
+|windowsSettings|cloudPcWindowsSettings|为组织创建云电脑时要应用于Windows的设置。 默认语言值为 `en-US`.|
 
 
 ## <a name="response"></a>响应
@@ -76,7 +77,10 @@ Content-length: 127
 {
   "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
   "userAccountType": "standardUser",
-  "osVersion": "windows11"
+  "osVersion": "windows11",
+  "windowsSettings": {
+    "language": "en-US"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

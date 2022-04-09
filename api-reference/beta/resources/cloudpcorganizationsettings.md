@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 4e8cbb2e5dbf87eb34decbf3ec5161477cbd2cf1
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: 770531c1d5bcf5dac870b2c341c9b20e2d723e66
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282152"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733183"
 ---
 # <a name="cloudpcorganizationsettings-resource-type"></a>cloudPcOrganizationSettings 资源类型
 
@@ -20,18 +20,19 @@ ms.locfileid: "62282152"
 
 表示租户的云电脑组织设置。 租户只有一个 **cloudPcOrganizationSettings** 对象。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取 cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-get.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|读取 [cloudPcOrganizationSettings 对象的属性和](../resources/cloudpcorganizationsettings.md) 关系。|
-|[更新 cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-update.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|更新 [cloudPcOrganizationSettings 对象](../resources/cloudpcorganizationsettings.md) 的属性。|
+|[获取 cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-get.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|读取 [cloudPcOrganizationSettings 对象的](../resources/cloudpcorganizationsettings.md) 属性和关系。|
+|[更新 cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-update.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|更新 [cloudPcOrganizationSettings 对象的](../resources/cloudpcorganizationsettings.md) 属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|组织设置的 ID。|
-|osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem-values)|操作系统版本 (操作系统) 在云 PC 上预配。 可能的值包括 `windows10`、`windows11`、`unknownFutureValue`。|
-|userAccountType|[cloudPcUserAccountType](#cloudpcuseraccounttype-values)|已预配云 PC 上的用户的帐户类型。 可能的值包括 `standardUser`、`administrator`、`unknownFutureValue`。|
+|osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem-values)|操作系统版本 (操作系统) 在云电脑上进行预配。 可能的值包括 `windows10`、`windows11`、`unknownFutureValue`。|
+|userAccountType|[cloudPcUserAccountType](#cloudpcuseraccounttype-values)|预配的云电脑上用户的帐户类型。 可能的值包括 `standardUser`、`administrator`、`unknownFutureValue`。|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|表示租户的云电脑组织设置。 租户只有一个 **cloudPcOrganizationSettings** 对象。 默认语言值 `en-US`。|
 
 ### <a name="cloudpcoperatingsystem-values"></a>cloudPcOperatingSystem 值
 
@@ -39,15 +40,15 @@ ms.locfileid: "62282152"
 |:---|:---|
 |windows10|Windows 10操作系统。|
 |windows11|Windows 11操作系统。|
-|unknownFutureValue|可发展枚举 sentinel 值。 请勿使用。|
+|unknownFutureValue|可变枚举 sentinel 值。 请勿使用。|
 
 ### <a name="cloudpcuseraccounttype-values"></a>cloudPcUserAccountType 值
 
 |成员|说明|
 |:---|:---|
-|standardUser|在云电脑上没有本地管理权限的用户。 标准用户只能安装来自 Microsoft Store 的内容，但他们无法Windows需要本地管理权限的自定义设置。|
-|administrator|在云电脑上具有完全本地管理权限的用户。 管理员可以在云电脑上安装任何软件并修改任何文件或设置。|
-|unknownFutureValue|可发展枚举 sentinel 值。 请勿使用。|
+|standardUser|对云电脑没有本地管理权限的用户。 标准用户只能从Microsoft Store应用安装内容，但无法修改需要本地管理权限的Windows设置。|
+|管理员|对云电脑拥有完全本地管理权限的用户。 管理员可以在云电脑上安装任何软件并修改任何文件或设置。|
+|unknownFutureValue|可变枚举 sentinel 值。 请勿使用。|
 
 ## <a name="relationships"></a>关系
 无。
@@ -66,6 +67,9 @@ ms.locfileid: "62282152"
   "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
   "id": "String (identifier)",
   "osVersion": "String",
-  "userAccountType": "String"
+  "userAccountType": "String",
+  "windowsSettings": {
+    "@odata.type": "microsoft.graph.cloudPcWindowsSettings"
+  }
 }
 ```

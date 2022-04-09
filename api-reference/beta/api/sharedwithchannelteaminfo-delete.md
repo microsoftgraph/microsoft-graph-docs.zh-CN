@@ -1,23 +1,23 @@
 ---
-title: 删除 sharedWithChannelTeamInfo
+title: Delete sharedWithChannelTeamInfo
 description: 从共享频道中删除团队。
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3b5e72ed6b43c94f04a55568023bd44d5fb035b4
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 6efc3817b107eb3a30d26b3648de0ec5f4594e16
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685374"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704255"
 ---
-# <a name="delete-sharedwithchannelteaminfo"></a>删除 sharedWithChannelTeamInfo
+# <a name="delete-sharedwithchannelteaminfo"></a>Delete sharedWithChannelTeamInfo
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从共享[频道](../resources/channel.md)中删除[团队](../resources/sharedwithchannelteaminfo.md)。 此操作仅允许 **具有 membershipType** 值的 `shared`通道执行。
+从共享[频道](../resources/channel.md)中删除[团队](../resources/sharedwithchannelteaminfo.md)。 此操作仅允许 **membershipType** 值为 `shared` 的频道。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -38,7 +38,7 @@ ms.locfileid: "64685374"
 }
 -->
 ``` http
-DELETE /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}
+DELETE /teams/{team-id}/channels/{channel-id}/sharedWithTeams/{shared-with-channel-team-info-id}
 ```
 
 ## <a name="request-headers"></a>请求标头

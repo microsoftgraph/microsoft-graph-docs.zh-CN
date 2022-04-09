@@ -3,12 +3,12 @@ title: 创建 Microsoft Graph 客户端
 description: 说明如何创建客户端，以使用客户端呼叫 Microsoft Graph。 包含如何设置身份验证和选择主权云。
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 0daa9a27ff1a7c92fc39c1eb46c76f38fb34336a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3f1cc7167f0cff4266707fb1d66f6b82c8c01475
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020023"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733169"
 ---
 # <a name="create-a-microsoft-graph-client"></a>创建 Microsoft Graph 客户端
 
@@ -164,7 +164,7 @@ $user = $graph->createRequest("GET", "/me")
               ->execute();
 ```
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -174,7 +174,7 @@ import (
     "fmt"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 

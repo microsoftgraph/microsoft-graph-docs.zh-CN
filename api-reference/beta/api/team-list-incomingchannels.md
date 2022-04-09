@@ -1,23 +1,23 @@
 ---
 title: 列出 incomingChannels
-description: 获取传入通道的列表。
+description: 获取传入频道列表。
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 50ef42f8aaefed6aa297bddf396f577b8ab89be1
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 4e664f4460b46c76cb1aeb6ccded0812feadfa66
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685297"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704242"
 ---
 # <a name="list-incomingchannels"></a>列出 incomingChannels
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取与[团队](../resources/team.md)) 共享的 (频道的传入[频道](../resources/channel.md)列表。
+获取传入 [频道](../resources/channel.md)（与[团队](../resources/team.md)共享的频道）列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ ms.locfileid: "64685297"
 }
 -->
 ``` http
-GET /teams/{teamsId}/incomingChannels
+GET /teams/{team-id}/incomingChannels
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -53,10 +53,10 @@ GET /teams/{teamsId}/incomingChannels
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [通道](../resources/channel.md) 对象集合。 响应还包括 **@odata.id** 属性，可用于访问通道并在 [通道](../resources/channel.md) 对象上运行其他操作。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和响应主体中的 [频道](../resources/channel.md) 对象集合。 响应还包括 **@odata.id** 属性，可用于访问频道并在 [频道](../resources/channel.md) 对象上运行其他操作。
 
 > [!Note]
-> 目前，调用从 **@odata.id** 属性返回的 URL 对于跨租户共享通道失败。 如果在调用此 API 之前从 URL 中删除 `/tenants/{tenant-id}` 该部件，则可以解决此问题。 有关详细信息，请参阅 [Microsoft Graph 的已知问题](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id)。
+> 目前，调用 **@odata.id** 属性返回的 URL 对跨租户共享频道失败。 如果在调用此 API 之前从 URL 中删除 `/tenants/{tenant-id}` 部件，则可以解决此问题。 有关详细信息，请参阅 [Microsoft Graph 的已知问题](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id)。
 
 ## <a name="examples"></a>示例
 

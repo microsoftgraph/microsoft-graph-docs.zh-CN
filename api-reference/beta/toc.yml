@@ -564,7 +564,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: 团队合作
             items:
               - name: 已安装应用
                 href: resources/teamsappinstallation.md
@@ -10192,7 +10192,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: 远程批量还原操作
                     href: api/manageddevice-bulkrestorecloudpc.md
-                  - name: 疑难解答
+                  - name: 排除故障
                     href: api/cloudpc-troubleshoot.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
@@ -11221,8 +11221,10 @@ items:
           - name: 客户关系管理
             items:
               - name: 委派的管理员关系
-                displayName: 'Partner Center, CSP, VAR'
+                displayName: 'GDAP, Partner Center, CSP, VAR'
                 items:
+                  - name: 概述
+                    href: resources/delegatedadminrelationships-api-overview.md
                   - name: 委派的管理员关系
                     href: resources/delegatedadminrelationship.md
                     items:
@@ -14231,7 +14233,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: 获取活动计数
                     href: api/reportroot-getyammergroupsactivitycounts.md
-          - name: Pertahanan Microsoft untuk Office 365安全报告
+          - name: Microsoft Defender for Office 365安全报告
             items:
               - name: 攻击模拟报告
                 displayname: Attack simulation and training

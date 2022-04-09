@@ -5,27 +5,27 @@ author: devjha-ms
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aa8d70f76656f01fdcda6fc29304e0a1ba29a25e
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 170181e59e2f427d87ce9a55c1c5165121d77262
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685283"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704259"
 ---
 # <a name="list-allowedmembers"></a>列出 allowedMembers
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取可以访问共享[频道](../resources/channel.md)[的 conversationMembers](../resources/conversationmember.md) 的列表。
-此方法不会从[团队](../resources/team.md)返回以下 [conversationMembers](../resources/conversationmember.md)：
-- 具有角色的 `Guest` 用户
+获取可以访问共享的[频道](../resources/channel.md)的 [conversationMembers](../resources/conversationmember.md) 列表。
+此方法不从[团队](../resources/team.md)返回以下 [conversationMembers](../resources/conversationmember.md)：
+- 具有 `Guest` 角色的用户
 - 在租户中进行外部身份验证的用户
 
 > [!NOTE]
-> 服务器返回的成员身份 ID 必须被视为不透明的字符串。 客户端不应尝试分析或对此 ID 做出任何假设。
+> 服务器返回的成员 ID 必须作为不透明的字符串处理。 客户端不应尝试对此 ID 进行分析或做出任何假设。
 >
-> 成员身份结果可以映射到来自不同租户的用户，如响应中所示。 客户端不应假定所有成员仅来自当前租户。
+> 未来，成员资格结果可以映射到来自不同租户的用户，如响应中所示。客户端不应假定所有成员仅来自当前租户。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,7 +46,7 @@ ms.locfileid: "64685283"
 }
 -->
 ``` http
-GET /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}/allowedMembers
+GET /teams/{team-id}/channels/{channel-id}/sharedWithTeams/{shared-with-channel-team-info-id}/allowedMembers
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

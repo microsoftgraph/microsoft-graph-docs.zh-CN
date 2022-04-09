@@ -1,16 +1,16 @@
 ---
 title: cloudPcOnPremisesConnection 资源类型
-description: 表示一个定义的 Azure 资源信息集合，可用于为云电脑建立本地网络连接。
+description: 表示可用于为云电脑建立 Azure 网络连接的 Azure 资源信息的定义集合。
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d849bb6b2d5666e0e9953d4684bf20596bf938ff
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 3c6e3630ffe7ed1853c758ce14a32178ea835549
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587285"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733225"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>cloudPcOnPremisesConnection 资源类型
 
@@ -18,69 +18,69 @@ ms.locfileid: "64587285"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一个定义的 Azure 资源信息集合，可用于为云电脑建立本地网络连接。
+表示可用于为云电脑建立 Azure 网络连接的 Azure 资源信息的定义集合。
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 onPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 集合|列出 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的属性和关系。|
-|[获取 cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-get.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|读取 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的属性和关系。|
+|[列出 onPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 集合|列出 [cloudPcOnPremisesConnection 对象的](../resources/cloudpconpremisesconnection.md) 属性和关系。|
+|[获取 cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-get.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|读取 [cloudPcOnPremisesConnection 对象的](../resources/cloudpconpremisesconnection.md) 属性和关系。|
 |[创建 cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|创建新的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。|
-|[更新 cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-update.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|更新 [cloudPcOnPremisesConnection 对象](../resources/cloudpconpremisesconnection.md) 的属性。|
-|[删除 cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-delete.md)|无|删除 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。 不能删除使用的连接。|
-|[cloudPcOnPremisesConnection 的 RunHealthChecks](../api/cloudpconpremisesconnection-runhealthcheck.md)|无|在 [cloudPcOnPremisesConnection 上运行运行状况检查](../resources/cloudpconpremisesconnection.md)。|
-|[updateAdDomainPassword](../api/cloudpconpremisesconnection-updateaddomainpassword.md)|无|为成功的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 更新 Active Directory 域密码。 当 **onPremisesConnection** 的类型为 时，支持此 API `hybridAzureADJoin`。|
+|[更新 cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-update.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|更新 [cloudPcOnPremisesConnection 对象的](../resources/cloudpconpremisesconnection.md) 属性。|
+|[删除 cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-delete.md)|无|删除 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。 无法删除正在使用的连接。|
+|[cloudPcOnPremisesConnection 的 RunHealthChecks](../api/cloudpconpremisesconnection-runhealthcheck.md)|无|在 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 上运行运行运行状况检查。|
+|[updateAdDomainPassword](../api/cloudpconpremisesconnection-updateaddomainpassword.md)|无|为成功的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 更新 Active Directory 域密码。 当 **cloudPcOnPremisesConnection** 对象的类型为 `hybridAzureADJoin` 时，支持此 API。|
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Azure 网络连接的唯一标识符。 只读。|
-|managedBy|[cloudPcManagementService](#cloudpcmanagementservice-values)|指定管理内部部署连接的服务。 可能的值是： `windows365`和 `devBox` `unknownFutureValue`。 只读。
-|类型|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|指定预配的云电脑如何加入 Azure Active Directory。 默认值为 `hybridAzureADJoin`。 可取值为：`azureADJoin`、`hybridAzureADJoin`、`unknownFutureValue`。|
-|displayName|String|Azure 显示名称连接的信息。|
+|id|字符串|Azure 网络连接的唯一标识符。 只读。|
+|managedBy|[cloudPcManagementService](#cloudpcmanagementservice-values)|指定管理 Azure 网络连接的服务。 可能的值为： `windows365`和 `unknownFutureValue``devBox` . 只读。
+|类型|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|指定如何将预配的云电脑加入Azure Active Directory。 默认值为 `hybridAzureADJoin`。 可取值为：`azureADJoin`、`hybridAzureADJoin`、`unknownFutureValue`。|
+|displayName|String|Azure 网络连接的显示名称。|
 |subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
 |subscriptionName|String|目标 Azure 订阅的名称。 只读。|
-|adDomainName|String|要加入的 Active Directory (的完全限定域名) FQDN。 可选。|
-|adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：admin@contoso.com。 可选。|
-|adDomainPassword|String|与 **adDomainUsername 关联的密码**。|
-|organizationalUnit|String|组织单位 (OU) 创建计算机帐户的组织单位。 如果保留为 null，则使用配置为默认的 OU (Active Directory 域) OU (已知的计算机对象) 容器。 可选。|
-|resourceGroupId|String|目标资源组的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
-|virtualNetworkId|String|目标虚拟网络的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
-|subnetId|String|目标子网的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
-|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|在 Azure 网络连接上完成的最新运行状况检查的状态。 例如，如果状态为"通过"，则 Azure 网络连接已通过服务运行的所有检查。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
-|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|连接运行状况检查的详细信息和相应结果。 仅在 上返回 `$select`。有关演示如何获取 **inUse** 属性的示例，请参阅示例 2：获取 Azure 网络连接的选定属性， [包括 healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md)。 只读。|
-|inUse|Boolean|如果 `true`为 ，则使用 Azure 网络连接。 如果 `false`为 ，则不使用连接。 不能删除使用的连接。 仅在 `$select` 上返回。 有关演示如何获取 **inUse** 属性的示例，请参阅示例 2：获取 Azure 网络连接的选定属性， [包括 healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md)。 只读。|
+|adDomainName|String|要加入的 Active Directory 域的完全限定域名 (FQDN) 。 可选。|
+|adDomainUsername|String|Active Directory 帐户的用户名 (用户或服务帐户) ，该帐户有权在 Active Directory 中创建计算机对象。 必需格式：admin@contoso.com。 可选。|
+|adDomainPassword|字符串|与 **adDomainUsername** 关联的密码。|
+|organizationalUnit|字符串|在其中创建计算机帐户的组织单位 (OU) 。 如果留空，则会使用配置为默认 (Active Directory 域中已知计算机对象容器) 的 OU (OU) 。 可选。|
+|resourceGroupId|String|目标资源组的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
+|virtualNetworkId|字符串|目标虚拟网络的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
+|subnetId|String|目标子网的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
+|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|在 Azure 网络连接上执行的最新运行状况检查的状态。 例如，如果状态为"传递"，则 Azure 网络连接已通过服务运行的所有检查。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
+|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|连接运行状况检查的详细信息和相应的结果。 仅返回 。 `$select`有关演示如何获取 **inUse** 属性的示例，请参阅 [示例 2：获取 Azure 网络连接的选定属性，包括 healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md)。 只读。|
+|inUse|Boolean|当 `true`Azure 网络连接正在使用时。 当 `false`连接未使用时。 无法删除正在使用的连接。 仅在 `$select` 上返回。 有关演示如何获取 **inUse** 属性的示例，请参阅 [示例 2：获取 Azure 网络连接的选定属性，包括 healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md)。 只读。|
 
 ### <a name="cloudpcmanagementservice-values"></a>cloudPcManagementService 值
 
 |成员| 值 |说明|
 |:---|:---|:---|
-|windows365|1| 本地连接已成功通过 Windows365 创建。|
-|devBox|2| 本地连接已成功通过 Fidalgo Project创建。|
-|unknownFutureValue|4| 可发展枚举 sentinel 值。 请勿使用。|
+|windows365|1| Azure 网络连接是通过 Windows365 成功创建的。|
+|devBox|2| Azure 网络连接是通过 Project Fidalgo 成功创建的。|
+|unknownFutureValue|4| 可变枚举 sentinel 值。 请勿使用。|
 
 ### <a name="cloudpconpremisesconnectiontype-values"></a>cloudPcOnPremisesConnectionType 值
 
 |成员|说明|
 |:---|:---|
-|hybridAzureADJoin|已加入本地 Active Directory Azure AD。 只能分配混合用户并登录到云电脑。|
-|azureADJoin|仅联接到Azure AD。 可以分配仅云用户和混合用户并登录到云电脑。|
-|unknownFutureValue|可发展枚举 sentinel 值。 请勿使用。|
+|hybridAzureADJoin|已加入本地 Active Directory和Azure AD。 只能分配混合用户并登录到云电脑。|
+|azureADJoin|仅加入Azure AD。 可以分配仅限云的和混合用户并登录到云电脑。|
+|unknownFutureValue|可变枚举 sentinel 值。 请勿使用。|
 
 ### <a name="cloudpconpremisesconnectionstatus-values"></a>cloudPcOnPremisesConnectionStatus 值
 
 |成员|说明|
 |:---|:---|
-|pending|已创建并等待运行状况检查。|
-|running|运行状况检查正在运行。|
-|passed|运行状况检查通过。|
-|failed|运行状况检查失败。|
-|警告|运行状况检查通过，并发出警告。|
-|unknownFutureValue|未知未来状态 (保留，当前未) 。|
+|等待|创建并等待运行状况检查。|
+|运行|运行运行状况检查。|
+|通过|运行状况检查已通过。|
+|失败|运行状况检查失败。|
+|警告|使用警告传递的运行状况检查。|
+|unknownFutureValue|未知的未来状态 (保留，目前) 未使用。|
 
 ## <a name="relationships"></a>关系
 

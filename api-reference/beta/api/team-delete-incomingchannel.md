@@ -1,23 +1,23 @@
 ---
 title: 删除 incomingChannels
-description: 删除传入通道。
+description: 删除传入频道。
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2d5b71c2b39da4094792f95d2ccf1084d21e5742
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: f7f79688b0fd722136ab6f5f2539ecfdc7685fc2
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685367"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704224"
 ---
 # <a name="remove-incomingchannels"></a>删除 incomingChannels
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [团队](../resources/team.md))  (与 **团队** 共享的 **频道** 中删除传入 [频道](../resources/channel.md)。
+从 [团队](../resources/team.md)删除传入 [频道](../resources/channel.md)（从 **团队** 共享的 **频道**）。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -38,7 +38,7 @@ ms.locfileid: "64685367"
 }
 -->
 ``` http
-DELETE /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}
+DELETE /teams/{team-id}/channels/{channel-id}/incomingChannels/{incoming-channel-id}
 ```
 
 ## <a name="request-headers"></a>请求标头

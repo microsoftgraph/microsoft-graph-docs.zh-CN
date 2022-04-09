@@ -1,27 +1,27 @@
 ---
-title: cloudPcOnPremisesConnection：updateAdDomainPassword
-description: 更新 Active Directory 域密码，以成功建立 Azure 网络连接。 当 onPremisesConnection 的类型为 hybridAzureADJoin 时，支持此 API。
+title: cloudPcOnPremisesConnection： updateAdDomainPassword
+description: 更新 Active Directory 域密码以实现成功的 Azure 网络连接。 当 onPremisesConnection 的类型为 hybridAzureADJoin 时，支持此 API。
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b10b3d2cdac6ce00119a374987c71ee19f0f94a0
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 0328358f712f952fa4a264405298ea7fd22858c5
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587726"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733202"
 ---
-# <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection：updateAdDomainPassword
+# <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection： updateAdDomainPassword
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [onPremisesConnection](../resources/cloudpconpremisesconnection.md) 的 Active Directory 域密码。 当 **onPremisesConnection** 的类型为 时，支持此 API `hybridAzureADJoin`。
+更新 [cloudPcOnPremisesConnection 对象的](../resources/cloudpconpremisesconnection.md) Active Directory 域密码。 当 **cloudPcOnPremisesConnection** 对象的类型为 `hybridAzureADJoin` 时，支持此 API。
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -53,7 +53,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomai
 
 |参数|类型|说明|
 |:---|:---|:---|
-|adDomainPassword|String|与 **adDomainUsername 关联的密码**。|
+|adDomainPassword|String|与 **adDomainUsername** 关联的密码。|
 
 
 

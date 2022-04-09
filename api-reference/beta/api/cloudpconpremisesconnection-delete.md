@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a68f11b4d4db4a139f9a82abd71ea8445464fbf6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 765bdf68d0aa5f12af24cf148d6da0045b9ba617
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587544"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733218"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>删除 cloudPcOnPremisesConnection
 
@@ -18,17 +18,15 @@ ms.locfileid: "64587544"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除特定的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
+删除特定 [的 cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-删除连接时，将从指定的 Azure 资源中删除对服务的权限。
+删除 Azure 网络连接时，将从指定的 Azure 资源中删除对服务的权限。
 
-Azure 网络连接通过运行状况检查（由 属性指示）后，将无法删除该 `healthCheckStatus` 网络连接。
+无法在使用 Azure 网络连接时删除它，如属性所 `inUse` 示。
 
-如果连接在使用中，则不能删除该连接， `inUse` 如 属性所指示。
-
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
