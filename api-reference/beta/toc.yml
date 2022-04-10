@@ -564,7 +564,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装应用
                 href: resources/teamsappinstallation.md
@@ -2110,7 +2110,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -10573,7 +10573,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: 获取服务运行状况
                     href: api/servicehealth-get.md
-              - name: 服务运行状况问题
+              - name: Estado de funcionamento dos serviços问题
                 href: resources/servicehealthissue.md
                 items:
                   - name: 列出问题
@@ -11220,7 +11220,7 @@ items:
             href: resources/azure-ad-overview.md
           - name: 客户关系管理
             items:
-              - name: 委派的管理员关系
+              - name: '精细委派的管理员权限 (预览) '
                 displayName: 'GDAP, Partner Center, CSP, VAR'
                 items:
                   - name: 概述
@@ -12625,7 +12625,7 @@ items:
                         href: api/userflowlanguagepage-get.md
                       - name: 更新用户流语言页
                         href: api/userflowlanguagepage-put.md
-                      - name: '"删除用户流语言"页'
+                      - name: “删除用户流语言”页
                         href: api/userflowlanguagepage-delete.md
                   - name: API 连接器
                     items:
@@ -14421,7 +14421,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列表
                     href: api/simulationautomation-list-runs.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -15244,7 +15244,7 @@ items:
                     href: api/chat-post-tabs.md
                   - name: 获取聊天中的选项卡
                     href: api/chat-get-tabs.md
-                  - name: 聊天中的"更新"选项卡
+                  - name: 聊天中的“更新”选项卡
                     href: api/chat-patch-tabs.md
                   - name: 从聊天中删除选项卡
                     href: api/chat-delete-tabs.md

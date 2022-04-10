@@ -1,18 +1,18 @@
 ---
-title: " (DAP) API 概述委派的管理员权限"
-description: 委派的管理员权限允许 Microsoft 合作伙伴配置和请求对其客户环境的粒度和时间限制的访问权限，从而允许客户对 Microsoft 合作伙伴强制实施最低特权的访问权限。
+title: 'GDAP) API 概述 (粒度委派的管理员权限 (预览) '
+description: GDAP) GDAP (粒度委派的管理员权限允许 Microsoft 合作伙伴配置和请求对其客户环境的粒度和时间限制的访问权限，从而允许客户对 Microsoft 合作伙伴强制实施最低特权的访问权限。
 author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2c59e78f1b8f2da00eaf56b4d24c09cbad397941
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: a76e77ed5f6585016ec02a2bf69a613754d6771f
+ms.sourcegitcommit: c854c48f33159628e1d4852e897bb3343ecaf11a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733261"
+ms.lasthandoff: 04/10/2022
+ms.locfileid: "64753969"
 ---
-# <a name="delegated-admin-privileges-dap-api-overview"></a> (DAP) API 概述委派的管理员权限
+# <a name="granular-delegated-admin-privileges-gdap-api-overview-preview"></a>GDAP) API 概述 (粒度委派的管理员权限 (预览) 
 
 命名空间：microsoft.graph
 
@@ -20,15 +20,15 @@ ms.locfileid: "64733261"
 
 作为 Microsoft 合作伙伴中心生态系统的一部分，云解决方案提供商、增值经销商或顾问计划中的 Microsoft 合作伙伴可以对其客户租户执行管理操作，以帮助管理客户的服务，例如Azure AD和Microsoft 365。 此功能以前允许合作伙伴无限期地在客户租户中担任全局管理员角色，从而产生潜在的安全风险并限制市场潜力。
 
-**委派的管理员权限 (DAP)** 为合作伙伴提供对客户租户的最低特权访问权限，遵循 [零信任网络安全模型](/security/zero-trust/)。 通过 DAP，合作伙伴配置并请求对客户环境的粒度和限时访问权限，客户必须显式向合作伙伴授予此最低特权的访问权限。 此外，合作伙伴必须在一定的时间内请求客户租户管理的特定角色。 此控件消除了合作伙伴在其客户的租户中具有全局管理员角色的需求，但是，他们现在拥有委派的管理任务绝对需要的特权更低的权限。
+**GDAP (粒度委派的管理员权限)** 为合作伙伴提供对客户租户的最低特权访问权限，遵循 [Confiança zero网络安全模型](/security/zero-trust/)。 通过 GDAP，合作伙伴配置并请求对其客户环境的粒度和限时访问权限，客户必须显式向合作伙伴授予此最低特权的访问权限。 此外，合作伙伴必须在一定的时间内请求客户租户管理的特定角色。 此控件消除了合作伙伴在其客户的租户中具有全局管理员角色的需求，但是，他们现在拥有委派的管理任务绝对需要的特权更低的权限。
 
-有关 DAP 的详细信息，请参阅：
+有关 GDAP 的详细信息，请参阅：
 + [GDAP)  (粒度委派管理员权限简介 ](/partner-center/gdap-introduction)
 + [按任务分配的最小特权角色](/partner-center/gdap-least-privileged-roles-by-task)
 
-## <a name="use-cases-for-delegated-admin-apis"></a>委派管理员 API 的用例
+## <a name="use-cases-for-gdap-apis"></a>GDAP API 的用例
 
-本部分介绍 Microsoft 合作伙伴以编程方式管理客户委派的管理员关系的方式。
+本部分介绍 Microsoft 合作伙伴使用 GDAP API 以编程方式管理客户委派的管理员关系的方式。
 
 ### <a name="delegated-admin-relationship"></a>委派的管理员关系
 
@@ -76,4 +76,9 @@ ms.locfileid: "64733261"
 
 ## <a name="permissions"></a>权限
 
-若要管理委派的管理员关系，调用主体必须在合作伙伴租户中，并被授予适当的 [委派管理员权限](/graph/permissions-reference#delegated-admin-relationship-permissions)。
+若要管理委派的管理员关系，调用主体必须在合作伙伴租户中，并被授予适当的 [粒度委派管理员权限](/graph/permissions-reference#delegated-admin-relationship-permissions)。
+
+
+## <a name="see-also"></a>另请参阅
+
++ [GDAP)  (粒度委派管理员权限简介 ](/partner-center/gdap-introduction)
