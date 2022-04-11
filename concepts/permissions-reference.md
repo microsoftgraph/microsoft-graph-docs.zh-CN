@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e82902116d9e6abde93dffb9b8c090e8b26a782a
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: b0e578acd8467c7fe0cc6ba3c3a35160cf243e90
+ms.sourcegitcommit: c854c48f33159628e1d4852e897bb3343ecaf11a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588531"
+ms.lasthandoff: 04/10/2022
+ms.locfileid: "64753955"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -691,7 +691,7 @@ _CallRecord-PstnCalls.Read.All_ 权限授予应用程序访问 [PSTN（通话套
 
 ---
 
-## <a name="delegated-admin-relationship-permissions"></a>委派管理员关系权限
+## <a name="granular-delegated-admin-privileges-gdap-permissions"></a>粒度委派管理员权限 (GDAP) 权限
 
 #### <a name="delegated-permissions"></a>委派权限
 
