@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 85538db0260c2e07facbeb44383e93747967d416
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e7d36ede35c144dcba1580fe5f2233c3b3d77af4
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109683"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755458"
 ---
 # <a name="get-bookingcustomquestion"></a>获取 bookingCustomQuestion
 
@@ -18,7 +18,7 @@ ms.locfileid: "62109683"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [bookingCustomQuestion](../resources/bookingcustomquestion.md) 对象的属性和关系。
+读取 [bookingCustomQuestion 对象的](../resources/bookingcustomquestion.md) 属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "62109683"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                       |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------ |
-| 委派（工作或学校帐户）     | Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All |
+| 委派（工作或学校帐户）     | Bookings。Read.All，BookingsAppointment.ReadWrite.All，Bookings。ReadWrite.All，Bookings。Manage.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                    |
-| 应用程序                            | 不支持。                                                                                    |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -43,7 +43,7 @@ GET /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuest
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关常规信息，请参阅 $count 和 $expand [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 有关常规信息，请参阅$count和$expand [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,14 +57,14 @@ GET /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuest
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bookingCustomQuestion](../resources/bookingcustomquestion.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [bookingCustomQuestion](../resources/bookingcustomquestion.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_bookingcustomquestion"

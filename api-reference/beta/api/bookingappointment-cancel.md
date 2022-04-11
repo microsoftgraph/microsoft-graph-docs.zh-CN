@@ -1,33 +1,34 @@
 ---
-title: bookingAppointment： cancel
-description: 取消指定 bookingbusiness 中的指定 bookingAppointment，并将消息发送给涉及的客户和员工成员。
+title: bookingAppointment：取消
+description: 取消指定 bookingBusiness 中的指定 bookingAppointment，并向相关客户和员工发送消息。
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5ae148f44e5234f2101b656eb3d4155d9de8512b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 8b9d64f2ffae95af61e2b6eb524887a02c659208
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343494"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755542"
 ---
-# <a name="bookingappointment-cancel"></a>bookingAppointment： cancel
+# <a name="bookingappointment-cancel"></a>bookingAppointment：取消
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-取消指定 [bookingbusiness 中的指定 bookingAppointment](../resources/bookingappointment.md)，并将消息发送给涉及的客户和员工成员。[](../resources/bookingbusiness.md)
+取消指定 [bookingBusiness](../resources/bookingbusiness.md) 中的指定 [bookingAppointment](../resources/bookingappointment.md)，并向相关客户和员工发送消息。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All，Bookings。ReadWrite.All，Bookings。Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | BookingsAppointment.ReadWrite.All，Bookings。Read.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -35,26 +36,33 @@ ms.locfileid: "62343494"
 POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 ```
+
 ## <a name="request-headers"></a>请求标头
+
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|cancellationMessage|字符串|向客户确认约会已取消的消息。|
+|cancellationMessage|String|向客户确认约会已取消的消息。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
 
-如果您尝试取消未取消的约会，此方法将返回 `HTTP 404 Not found`。
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+
+如果尝试取消不存在的约会，此方法将返回 `HTTP 404 Not found`。
 
 ## <a name="example"></a>示例
+
 下面是如何调用此 API 的示例。
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
+
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,7 +105,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。
 <!-- {
   "blockType": "response"

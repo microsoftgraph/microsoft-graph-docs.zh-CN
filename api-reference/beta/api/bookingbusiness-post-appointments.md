@@ -1,16 +1,16 @@
 ---
 title: 创建 bookingAppointment
-description: 为指定的 bookingbusiness 创建新的 bookingAppointment。
+description: 为指定的 bookingBusiness 创建新的 bookingAppointment。
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 7b1fd5d57bd5c92e74d18b3a8f87fdac284fd703
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 34ab4476c00db82e365b4657ad38acac8ddf6ac7
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367788"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755640"
 ---
 # <a name="create-bookingappointment"></a>创建 bookingAppointment
 
@@ -19,16 +19,22 @@ ms.locfileid: "63367788"
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 为指定的 [bookingBusiness](../resources/bookingbusiness.md) 创建新的 [bookingAppointment](../resources/bookingappointment.md)。
+
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All，Bookings。ReadWrite.All，Bookings。Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | BookingsAppointment.ReadWrite.All，Bookings。Read.All  |
+
+> [!NOTE]
+> 如果使用应用程序权限创建自定义应用，则必须遵循 [业务规则验证](/graph/bookingsbusiness-business-rules)。
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/appointments
@@ -39,24 +45,25 @@ POST /bookingBusinesses/{id}/appointments
 
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}。 必需。|
+| Authorization  | 持有者 {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供 [bookingAppointment](../resources/bookingappointment.md) 对象的 JSON 表示形式。
 
-如果服务中允许 (**maximumAttedeesCount**) 数 [大于](../resources/bookingservice.md) 1：
+如果服务中允许的最大客户数 (**最大AttedeesCount**) 大于 1：[](../resources/bookingservice.md)
 
-- 确保客户存在于 Booking Calendar 中。 如果没有，则使用 Create [bookingCustomer](bookingbusiness-post-customers.md) 操作创建。
-- 创建或更新约会时传递有效的客户 ID。 如果客户 ID 无效，该客户将不会包含在约会对象中。
+- 确保客户存在于“预订日历”中。 如果不这样做，请使用 [Create bookingCustomer 操作创建](bookingbusiness-post-customers.md) 。
+- 创建或更新约会时传递有效的客户 ID。 如果客户 ID 无效，则该客户不会包含在约会对象中。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
 下面展示了示例请求。 此约会不涉及预订特定员工。
 
 # <a name="http"></a>[HTTP](#tab/http)

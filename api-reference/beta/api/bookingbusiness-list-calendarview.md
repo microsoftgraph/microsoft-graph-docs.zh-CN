@@ -1,16 +1,16 @@
 ---
 title: 列出 Bookings 日历视图
-description: 获取 bookingBusiness 的 bookingAppointment 对象的集合，该集合发生在指定的日期范围内。
+description: 获取在指定日期范围内发生的 bookingBusiness 的 bookingAppointment 对象的集合。
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 64d5ddd168064445c26c7e23d8b26e33e97af864
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3362edeb6d9382dca937e4484ea0ccc4d4f85b84
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114104"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755486"
 ---
 # <a name="list-bookings-calendarview"></a>列出 Bookings 日历视图
 
@@ -18,16 +18,16 @@ ms.locfileid: "62114104"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[bookingBusiness](../resources/bookingbusiness.md)的[bookingAppointment](../resources/bookingappointment.md)对象的集合，该集合发生在指定的日期范围内。
+获取在指定日期范围内发生的 [bookingBusiness](../resources/bookingbusiness.md) 的 [bookingAppointment](../resources/bookingappointment.md) 对象的集合。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委派（工作或学校帐户） |  Bookings。Read.All，BookingsAppointment.ReadWrite.All，Bookings。ReadWrite.All，Bookings。Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,16 +39,17 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 在请求 URL 中，提供以下必要查询参数的值。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|start|DateTimeOffset|一个时间范围的开始日期和时间，以 ISO 8601 格式表示，为 UTC 或与 UTC 的时差。 例如，2018 年 1 月 1 日午夜 UTC 如下所示："2018-01-01T00：00：00Z"，PST 中的同一时间如下所示："2017-12-31T16：00：00-08：00"。|
-|end|DateTimeOffset|一个时间范围的结束日期和时间，以 ISO 8601 格式表示为 UTC 或与 UTC 的偏移量。 例如，2018 年 1 月 1 日凌晨 3 点 UTC 如下所示："2018-01-01T03：00：00Z"，PST 中的同一时间如下所示："2017-12-31T19：00：00-08：00"。|
+|start|DateTimeOffset|以 ISO 8601 格式表示的时间范围的开始日期和时间，作为 UTC 或 UTC 的偏移量。 例如，2018 年 1 月 1 日午夜 UTC 如下所示：“2018-01-01T00：00：00Z”，PST 中的同一时间如下所示：“2017-12-31T16：00：00-08：00”。|
+|end|DateTimeOffset|以 ISO 8601 格式表示的时间范围的结束日期和时间，作为 UTC 或 UTC 的偏移量。 例如，2018 年 1 月 1 日凌晨 3 点 UTC 如下所示：“2018-01-01T03：00：00Z”，PST 中的同一时间如下所示：“2017-12-31T19：00：00-08：00”。|
 
-和 的值使用其相应值中指定的时区偏移量进行解释，如果存在，则不会影响 `start` `end` `Prefer: outlook.timezone` 标头的值。
+值的值 `start` 使用 `end` 其相应值中指定的时区偏移量进行解释，如果存在，则不会受到标头值 `Prefer: outlook.timezone` 的影响。
 
-此方法还支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法还支持一些 [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
+
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
@@ -57,7 +58,8 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `200, OK` 响应正文中返回 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 集合对象。
+
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象集合。
 
 ## <a name="example"></a>示例
 下面是如何调用此 API 的示例。

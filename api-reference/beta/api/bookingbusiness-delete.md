@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 27c5c39fd128ad8eb5e83f4fc326eee6a429c724
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fc6d51511279139b61382cc70ab0c3cf15e31fd4
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130148"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755675"
 ---
 # <a name="delete-bookingbusiness"></a>删除 bookingBusiness
 
@@ -26,7 +26,7 @@ ms.locfileid: "62130148"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | BookingsAppointment.ReadWrite.All，Bookings。Read.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

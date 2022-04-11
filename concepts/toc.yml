@@ -208,6 +208,9 @@ items:
       - name: 客户预订（预览版）
         href: booking-concept-overview.md
         displayName: 'Bookings, Microsoft Bookings'
+        items:
+          - name: 业务规则
+            href: bookingsbusiness-business-rules.md
       - name: 设备和应用管理
         expanded: true
         items:
@@ -443,6 +446,10 @@ items:
             href: search-concept-aggregation.md
           - name: 请求拼写更正（预览）
             href: search-concept-speller.md
+          - name: 剪裁重复搜索结果（预览）
+            href: search-concept-trim-duplicate.md
+          - name: 使用查询模板（预览）
+            href: search-concept-query-template.md
           - name: 排序搜索结果
             href: search-concept-sort.md
       - name: 安全性
@@ -523,7 +530,7 @@ items:
   - name: 开发
     expanded: true
     items:
-      - name: 获取身份验证令牌
+      - name: 身份验证和授权
         items:
           - name: 概述
             href: auth/index.yml

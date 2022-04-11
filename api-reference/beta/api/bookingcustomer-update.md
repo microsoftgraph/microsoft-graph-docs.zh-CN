@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4d84becf75c11f97370540e089017e4cc429bea3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e2bd3e0b3a1f844523a77b5212fa7105ae606d99
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094583"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755528"
 ---
 # <a name="update-bookingcustomer"></a>更新 bookingcustomer
 
@@ -18,22 +18,27 @@ ms.locfileid: "62094583"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [bookingCustomer 对象](../resources/bookingcustomer.md) 的属性。
+更新 [bookingCustomer](../resources/bookingcustomer.md) 对象的属性。
+
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委派（工作或学校帐户） | BookingsAppointment.ReadWrite.All，Bookings。ReadWrite.All，Bookings。Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | BookingsAppointment.ReadWrite.All，Bookings。Read.All  |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /bookingBusinesses/{id}/customers/{id}
 ```
+
 ## <a name="optional-request-headers"></a>可选的请求标头
+
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
@@ -45,11 +50,11 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 |:---------------|:--------|:----------|
 |displayName|String|客户的名称。|
 |emailAddress|String|客户的 SMTP 地址。|
-|addresses|[physicalAddress](../resources/physicaladdress.md) 集合|与客户关联的地址，包括住宅、企业和其他地址。|
-|phones|[phone](../resources/phone.md) collection|电话客户关联的电话号码，包括家庭号码、商务号码和移动电话号码。|
+|地址|[physicalAddress](../resources/physicaladdress.md) 集合|与客户关联的地址，包括家庭、业务和其他地址。|
+|phones|[phone](../resources/phone.md) collection|电话与客户关联的数字，包括家庭、商业和移动号码。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新 [的 bookingCustomer](../resources/bookingcustomer.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [bookingCustomer](../resources/bookingcustomer.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

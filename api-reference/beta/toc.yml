@@ -1913,6 +1913,8 @@ items:
                 href: api/bookingbusiness-publish.md
               - name: 取消发布
                 href: api/bookingbusiness-unpublish.md
+              - name: 获取员工可用性
+                href: api/bookingbusiness-getstaffavailability.md
           - name: 预订约会
             href: resources/bookingappointment.md
             items:
@@ -10192,7 +10194,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: 远程批量还原操作
                     href: api/manageddevice-bulkrestorecloudpc.md
-                  - name: 排除故障
+                  - name: 疑难解答
                     href: api/cloudpc-troubleshoot.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
@@ -10573,7 +10575,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: 获取服务运行状况
                     href: api/servicehealth-get.md
-              - name: Estado de funcionamento dos serviços问题
+              - name: 服务运行状况问题
                 href: resources/servicehealthissue.md
                 items:
                   - name: 列出问题
@@ -14086,7 +14088,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: 获取服务用户计数
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Microsoft 365 应用版用法
+              - name: Microsoft 365 应用使用情况
                 href: resources/microsoft-365-apps-usage-report.md
                 items:
                   - name: 获取用户详细信息

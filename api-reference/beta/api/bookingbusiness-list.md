@@ -1,16 +1,16 @@
 ---
 title: 列出 bookingBusinesses
-description: 获取为租户创建的 bookingbusiness 对象的集合。
+description: 获取为租户创建的 bookingBusiness 对象的集合。
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 7c591f89800c773fb6b841e924f684a51c937dfa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1308d0a8b01eeb2d073fcb69c0a71addcdf70b82
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131768"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755514"
 ---
 # <a name="list-bookingbusinesses"></a>列出 bookingBusinesses
 
@@ -18,31 +18,32 @@ ms.locfileid: "62131768"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取为 [租户创建的 bookingbusiness](../resources/bookingbusiness.md) 对象的集合。
+获取为租户创建的 [bookingBusiness](../resources/bookingbusiness.md) 对象的集合。
 
-此操作仅返回集合中每个 Bookings 业务的 **id** 和 **displayName。** 出于性能方面的考虑，它不会返回其他属性。 可以通过在 [GET](bookingbusiness-get.md)操作中指定 Bookings 业务 **ID，获取** 其其他属性。
+此操作仅返回集合中每个Microsoft Bookings企业的 **ID** 和 **displayName**。 出于性能考虑，它不会返回其他属性。 可以通过在 [GET](bookingbusiness-get.md) 操作中指定其 **ID** 来获取Bookings业务的其他属性。
 
-您还可以查询 Bookings 业务，具体方法为在参数中指定一个字符串，以在租户的企业之间执行 `query` 子字符串匹配。 请参阅以下[示例](#request-2)。
-
+还可以通过在参数中`query`指定字符串来查询Bookings企业，以便在租户的业务之间进行子字符串匹配。 请参阅以下[示例](#request-2)。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委派（工作或学校帐户） |  Bookings。Read.All，BookingsAppointment.ReadWrite.All，Bookings。ReadWrite.All，Bookings。Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | BookingsAppointment.ReadWrite.All，Bookings。Read.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-此方法还支持 `query` 接受字符串值的参数。 此参数将 GET 结果限定为匹配指定字符串的企业。 可以看到下面的示例。 [](#request-2)
+此方法还支持 `query` 接受字符串值的参数。 此参数将 GET 结果限制为与指定字符串匹配的企业。 可在下面看到一个 [示例](#request-2) 。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -53,10 +54,10 @@ GET /bookingBusinesses
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bookingBusiness](../resources/bookingbusiness.md) 对象集合。
+如果成功，此方法在响应正文中返回一个 `200 OK` 响应代码和 [bookingBusiness](../resources/bookingbusiness.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-以下示例获取租户中的 Bookings 业务。
+以下示例获取租户中的Bookings企业。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -119,9 +120,9 @@ Content-type: application/json
 }
 ```
 
-
 ##### <a name="request-2"></a>请求 2
-以下示例演示如何使用 参数获取租户中一个或多个匹配的 `query` Bookings 企业。
+
+以下示例演示如何使用`query`该参数获取租户中一个或多个匹配Bookings企业。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
