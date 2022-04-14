@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9721e20954105efde2c43be33ec47889884405e7
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: bf59437cde4e33cafe7c9d6da1af24a735f17969
+ms.sourcegitcommit: ca3edeed9408ee94bb12d7acf506d7317bf01d25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64608255"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64842340"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>更新 accessPackageAssignmentPolicy
 
@@ -19,14 +19,14 @@ ms.locfileid: "64608255"
 
 更新现有 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象以更改其一个或多个属性，例如显示名称或说明。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | EntitlementManagement.ReadWrite.All |
+|应用程序                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,17 +49,17 @@ PUT /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageA
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|策略显示名称。|
-|说明|String|策略的说明。|
-|allowedTargetScope|allowedTargetScope|Who允许通过此策略请求访问包。 可取值包括：`notSpecified`、`specificDirectoryUsers`、`specificConnectedOrganizationUsers`、`specificDirectoryServicePrincipals`、`allMemberUsers`、`allDirectoryUsers`、`allDirectoryServicePrincipals`、`allConfiguredConnectedOrganizationUsers`、`allExternalUsers`、`unknownFutureValue`。|
-|specificAllowedTargets|[subjectSet](../resources/subjectset.md) 集合|可以通过此策略从访问包分配访问权限的主体。|
-|expiration|[expirationPattern](../resources/expirationpattern.md)|在此策略中创建的工作分配的到期日期。|
-|requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|提供其他设置，以选择谁可以通过此策略创建访问包分配请求，以及可以在请求中包括的内容。|
-|requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|指定通过此策略审批访问包分配请求的设置。 例如，如果新请求需要审批。|
-|reviewSettings|[accessPackageReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|设置此策略访问分配评审。|
+|displayName|String|策略的显示名称。|
+|description|String|策略的说明。|
+|allowedTargetScope|allowedTargetScope|允许Who通过此策略请求访问包。 可取值包括：`notSpecified`、`specificDirectoryUsers`、`specificConnectedOrganizationUsers`、`specificDirectoryServicePrincipals`、`allMemberUsers`、`allDirectoryUsers`、`allDirectoryServicePrincipals`、`allConfiguredConnectedOrganizationUsers`、`allExternalUsers`、`unknownFutureValue`。|
+|specificAllowedTargets|[subjectSet](../resources/subjectset.md) 集合|可通过此策略从访问包分配访问权限的主体。|
+|到期|[expirationPattern](../resources/expirationpattern.md)|在此策略中创建的分配的到期日期。|
+|requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|提供其他设置，以选择谁可以通过此策略创建访问包分配请求，以及它们可以包含在请求中的内容。|
+|requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|指定通过此策略批准访问包分配请求的设置。 例如，如果新请求需要审批。|
+|reviewSettings|[accessPackageReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|设置通过此策略对分配进行访问评审。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
 
 
@@ -79,6 +79,48 @@ Content-Type: application/json
   "id":"87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187",
   "displayName": "All Users",
   "description": "All users can request for access to the directory.",
+  "allowedTargetScope": "allDirectoryUsers",
+  "specificAllowedTargets": [],
+  "expiration": {
+      "type": "noExpiration"
+  },
+  "requestorSettings": {
+      "enableTargetsToSelfAddAccess": true,
+      "enableTargetsToSelfUpdateAccess": false,
+      "enableTargetsToSelfRemoveAccess": true,
+      "allowCustomAssignmentSchedule": false,
+      "enableOnBehalfRequestorsToAddAccess": false,
+      "enableOnBehalfRequestorsToUpdateAccess": false,
+      "enableOnBehalfRequestorsToRemoveAccess": false,
+      "onBehalfRequestors": []
+  },
+  "requestApprovalSettings": {
+      "isApprovalRequiredForAdd": true,
+      "isApprovalRequiredForUpdate": false,
+      "stages": [
+          {
+              "durationBeforeAutomaticDenial": "P2D",
+              "isApproverJustificationRequired": false,
+              "isEscalationEnabled": false,
+              "durationBeforeEscalation": "PT0S",
+              "primaryApprovers": [
+                  {
+                      "@odata.type": "#microsoft.graph.requestorManager",
+                      "managerLevel": 1
+                  }
+              ],
+              "fallbackPrimaryApprovers": [
+                  {
+                      "@odata.type": "#microsoft.graph.singleUser",
+                      "userId": "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2",
+                      "description": "user"
+                  }
+              ],
+              "escalationApprovers": [],
+              "fallbackEscalationApprovers": []
+          }
+      ]
+  },
   "accessPackage": {
         "id": "49d2c59b-0a81-463d-a8ec-ddad3935d8a0"
   }
