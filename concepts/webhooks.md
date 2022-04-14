@@ -1,18 +1,18 @@
 ---
-title: 设置用户数据更改的通知
+title: 设置资源数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将更改通知传递到客户端。客户端是用于配置自身的 URL 以接收更改通知的 Web 服务。客户端应用使用更改通知在更改时更新其状态。
-author: FaithOmbongi
+author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: ee62ed00b557155bc31f587412806ff00521ec04
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: d9a16eff7edee32a45709bf614bf401ea15af408
+ms.sourcegitcommit: ca3edeed9408ee94bb12d7acf506d7317bf01d25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367984"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64842298"
 ---
-# <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
+# <a name="set-up-notifications-for-changes-in-resource-data"></a>设置资源数据更改的通知
 
 Microsoft Graph API 使用 Webhook 机制将更改通知传递到客户端。客户端是用于配置自身的 URL 以接收更改通知的 Web 服务。客户端应用使用更改通知在更改时更新其状态。
 
@@ -54,20 +54,20 @@ Microsoft Graph 接受订阅请求之后，它将更改通知推送到订阅中�
 - [todoTask][]（预览版）
 - [用户][]
 
-可以创建对特定 Outlook 文件夹的订阅，例如收件箱：`me/mailFolders('inbox')/messages`
+### <a name="sample-scenarios"></a>方案示例
 
-或以下顶级资源的订阅：`/me/messages`、`/me/contacts`、`/me/events`、`users`、`groups`、`/communications/callRecords`
+可以为以下方案创建订阅：
 
-或以下特定资源实例的订阅：`users/{id}`、`groups/{id}`、`groups/{id}/conversations`、`sites/{site-id}/lists/{list-id}`、`/communications/presences/{id}`、`/communications/onlinemeeting/{meeting-id}`
 
-或用户个人 OneDrive 中任何文件夹的订阅：`/drives/{id}/root`
-`/drives/{id}/root/subfolder`
-
-或 SharePoint/OneDrive for Business 驱动器根文件夹的订阅：`/drive/root`
-
-或对新[安全性 API](security-concept-overview.md) 警报的订阅：`/security/alerts?$filter=status eq 'newAlert'`、`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
-
-或对用户的待办事项列表中的任务的订阅：`/me/todo/lists/{todoTaskListId}/tasks`
+|应用场景  |查询  |
+|---------|---------|
+|收件箱等特定 Outlook 文件夹     |   `me/mailFolders('inbox')/messages`      |
+|到顶级资源     | `/me/messages` <br/> `/me/contacts` <br/> `/me/events` <br/> `/users` <br/> `/groups` <br/> `/communications/callRecords`        |
+|到特定资源实例     |  `/users/{id}` <br/> `/groups/{id}` <br/> `/groups/{id}/conversations` <br/> `/sites/{site-id}/lists/{list-id}` <br/> `/communications/presences/{id}` <br/> `/communications/onlinemeeting/{meeting-id}`       |
+|转到用户个人 OneDrive 中的任何文件夹     |  `/drives/{id}/root` <br/> `/drives/{id}/root/subfolder`      |
+|转到 SharePoint/OneDrive for Business 驱动器的根文件夹     |   `/drive/root`      |
+| 或新 [安全性 API](security-concept-overview.md) 警报 |`/security/alerts?$filter=status eq 'newAlert'` <br/> `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`|
+|转到用户待办事项列表中的任务|`/me/todo/lists/{todoTaskListId}/tasks`|
 
 ### <a name="azure-ad-resource-limitations"></a>Azure AD 资源限制
 
@@ -91,7 +91,7 @@ Microsoft Graph 接受订阅请求之后，它将更改通知推送到订阅中�
 
 ### <a name="outlook-resource-limitations"></a>Outlook 资源限制
 
-订阅 Outlook 资源（如 **邮件**、**事件** 或 **联系人**）时，如果选择使用资源路径中的 *用户主体名称* UPN，则在 UPN 包含撇号的情况下，订阅请求可能会失败。 请考虑使用 GUID 用户 ID 而不是 UPN，以避免遇到此问题。 例如，请勿使用资源路径：
+订阅 Outlook 资源（如 **消息** 时， **事件** 或 **联系人**），如果选择在资源路径中使用 **userPrincipalName** （UPN），则如果 UPN 包含撇号，则订阅请求可能会失败。 请考虑使用用户 ID 而不是 UPN 以避免遇到此问题。 例如，请勿使用资源路径：
 
 `/users/sh.o'neal@contoso.com/messages`
 
