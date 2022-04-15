@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 430c44adc75bf18d44d3e3bc6d3c0fc7dc724b45
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 7ce17257ac6d300b9006472261a913663d654d3f
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780931"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848634"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的项目见解隐私（预览版）
 
@@ -46,7 +46,7 @@ ms.locfileid: "60780931"
 
 
 ### <a name="how-to-configure-item-insights-settings-via-powershell"></a>如何通过 PowerShell 配置项目见解设置？
-确认以下附加先决条件。 然后，你可以使用 [Microsoft Graph PowerShell SDK](./powershell/installation.md) 为整个组织或特定组设置项目见解。
+确认以下附加先决条件。然后，可以使用 [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation.md) 为整个组织或特定组设置项见解。
 
 #### <a name="additional-prerequisites"></a>附加先决条件
 * **PowerShell 模块** - 安装 [模块 0.9.1 或更高版本](https://www.powershellgallery.com/packages/Microsoft.Graph)。
@@ -65,7 +65,7 @@ ms.locfileid: "60780931"
 
 默认情况下，将为整个组织启用项目见解。 你可以使用 Microsoft Graph PowerShell 模块来更改该设置并为组织中的所有人禁用项目见解。 
 > [!NOTE]
-> 更新方法需要其他 `User.ReadWrite.All` 权限。 若要创建带特定所需范围的 Microsoft Graph 会话，请使用以下命令并同意请求的权限。
+> 更新方法需要其他 `User.ReadWrite.All` 权限。若要创建具有特定所需作用域的 Microsoft Graph 会话，请使用以下命令并同意请求的权限。
 > ```powershell
 >    Connect-MgGraph -Scopes "User.Read.All","User.ReadWrite.All"
 > ```
@@ -83,7 +83,7 @@ ms.locfileid: "60780931"
 如前所述，默认情况下，将为整个组织启用项目见解隐私设置。 这些设置通过 [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true) 中名为 **itemInsights** 的导航属性公开。 可采用以下两种方式之一来更改默认设置：
 
 - 通过将 [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) 资源的 **isEnabledInOrganization** 属性设置为`false`，为组织中的所有用户禁用项目见解。 
-- 为用户的 _子集_ 禁用项目见解：将这些用户分配到一个 Azure AD 组中，将 **disabledForGroup** 属性设置为该组的 ID。 详细了解如何[创建组并将用户添加为成员](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)。 
+- 禁用用户的 _子集_ 的项见解，方法是在 Azure AD 组中对这些用户进行分配，然后将 **disabledForGrou** 属性设置为该组的 ID。了解有关 [创建群组并将用户添加为成员](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)的详细信息。 
 
 使用 [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) 操作来相应地设置 **isEnabledInOrganization** 和 **disabledForGroup** 属性。
 

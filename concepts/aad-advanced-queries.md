@@ -4,12 +4,12 @@ description: Azure AD 目录对象支持高级查询功能以高效访问数据�
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c2dd37ce2323af5d46e88da8f8594f809857da73
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: b5eff1cba4f2f8db4e09c5224aaf4b43ff86d513
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894724"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848646"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Azure AD 目录对象的高级查询功能
 
@@ -254,11 +254,11 @@ Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了添
 
 ### <a name="legend"></a>图例
 
-+ ![默认情况下有效。 不需要高级查询参数。](../concepts/images/advanced-query-parameters/default.svg) 默认情况下， `$filter` 运算符适用于该属性。
-+ ![需要高级查询参数。](../concepts/images/advanced-query-parameters/advanced.svg) `$filter`运算符 **需要***高级查询参数*，其中包括：
++ ![默认情况下有效。 不需要高级查询参数。](../concepts/images/yesandnosymbols/greencheck.svg) 默认情况下， `$filter` 运算符适用于该属性。
++ ![需要高级查询参数。](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) `$filter`运算符 **需要***高级查询参数*，其中包括：
   + `ConsistencyLevel=eventual` 标头
   + `$count=true` 查询字符串
-+ ![不支持。](../concepts/images/advanced-query-parameters/notSupported.svg) 该属性不支持 `$filter` 运算符。 [向我们发送反馈](https://aka.ms/MsGraphAADSurveyDocs) ，请求此属性支持 `$filter` 方案。
++ ![不支持。](../concepts/images/yesandnosymbols/no.svg) 该属性不支持 `$filter` 运算符。 [向我们发送反馈](https://aka.ms/MsGraphAADSurveyDocs) ，请求此属性支持 `$filter` 方案。
 + 空白单元格指示查询对该属性无效。
 + 列 **null 值** 指示该属性可为 null 且可使用 `null`筛选。
 + 此处未列出的属性完全不支持 `$filter`。
@@ -267,7 +267,7 @@ Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了添
 
 ## <a name="error-handling-for-advanced-queries-on-directory-objects"></a>针对目录对象的高级查询的错误处理
 
-仅支持使用高级查询参数对目录对象进行计数。 如果未指定 `ConsistencyLevel=eventual` 标头，则在使用 `$count` URL 段时，请求将返回错误或以无提示方式忽略 `$count` 查询参数(`?$count=true`)。
+仅支持使用高级查询参数对目录对象进行计数。如果未指定 `ConsistencyLevel=eventual` 标头，则当 `$count` URL 段被使用时，请求将返回错误；如果使用了 `$count` 查询参数 (`?$count=true`)，则会无提示地忽略该参数。
 
 <!-- {
   "blockType": "request",
