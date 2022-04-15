@@ -1,16 +1,16 @@
 ---
 title: 列出 signIn
 doc_type: apiPageType
-description: 获取 Azure Active Directory 租户中的用户登录列表。
+description: 获取Azure Active Directory租户中的用户登录列表。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 873c2d6be67c50b29fdeb52ba77d68cddaa548e7
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 547b13bbd97b459eec60b88270e13c6063107704
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629958"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848774"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -18,11 +18,11 @@ ms.locfileid: "64629958"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [signIn 对象](../resources/signin.md) 的列表。 该列表包含 Azure Active Directory 租户的用户登录。 用户名和密码作为授权令牌的一部分传递的登录，并且成功的联合登录当前包含在登录日志中。
+获取 [signIn](../resources/signin.md) 对象的列表。 该列表包含Azure Active Directory租户的用户登录。 登录时，用户名和密码作为授权令牌的一部分传递，并且成功的联合登录当前包含在登录日志中。
 
-最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有 Azure Active Directory 中发生的登录事件 (Azure AD) [保留](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) 期才可用。
+最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有在[默认保留期](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)内发生的Azure Active Directory (Azure AD) 登录事件才可用。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,14 +30,14 @@ ms.locfileid: "64629958"
 |:--------------- |:------------------------------------------- |
 | 委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| 应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
+| Application | AuditLog.Read.All 和 Directory.Read.All | 
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 存在 [已知问题](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
-应用必须 [正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD。
+应用必须[正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)到Azure AD。
 
-除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
+除了委派的权限外，已登录的用户还需要属于以下目录角色之一，这些角色允许他们读取登录报告。 若要详细了解目录角色，请参阅[Azure AD内置角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 全局读取者
 + 报告读取者
@@ -53,7 +53,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 、 `$top`和 `$skiptoken``$filter` OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$top``$skiptoken`OData 查询参数，`$filter`以帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -72,7 +72,7 @@ GET auditLogs/signIns
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-list-all-sign-ins"></a>示例 1：列出所有登录
-此示例中，响应对象显示使用由条件访问策略触发的 MFA 登录的用户，并且主要身份验证方法是通过 FIDO。
+在此示例中，响应对象显示使用由条件访问策略触发的 MFA 登录的用户，并且主要身份验证方法是通过 FIDO 进行的。
 
 #### <a name="request"></a>请求
 
@@ -144,6 +144,7 @@ Content-type: application/json
       ],
       "ipAddress":"131.107.159.37",
       "clientAppUsed":"Browser",
+      "clientCredentialType": "certificate",
       "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
       "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
       "conditionalAccessStatus":"notApplied",
@@ -238,9 +239,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-azure"></a>示例 2：检索 appDisplayName 以"Azure"开头的应用的前 10 个登录
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-azure"></a>示例 2：使用以“Azure”开头的 appDisplayName 检索应用的前 10 个登录
 
-此示例中，响应对象显示用户仅使用其主身份验证方法（云密码）登录。 该响应包含 `@odata.nextLink` 一个属性，其中包含可用于检索接下来的 10 个结果的 URL。
+在此示例中，响应对象显示用户仅使用其主要身份验证方法（云密码）登录。 响应包含一个 `@odata.nextLink` 属性，其中包含可用于检索接下来 10 个结果的 URL。
 
 #### <a name="request"></a>请求
 
@@ -392,9 +393,9 @@ Content-type: application/json
 
 
 
-### <a name="example-3-retrieve-the-first-10-sign-ins-where-the-signineventtype-is-not-interactiveuser-starting-with-the-latest-sign-in"></a>示例 3：检索 signInEventType 不是交互式用户（从最新登录开始）前 10 个登录
+### <a name="example-3-retrieve-the-first-10-sign-ins-where-the-signineventtype-is-not-interactiveuser-starting-with-the-latest-sign-in"></a>示例 3：从最新登录开始检索 signInEventType 不是 interactiveUser 的前 10 个登录
 
-此示例中，响应包含 `@odata.nextLink` 一个属性，其中包含可用于检索接下来的 10 个结果的 URL。
+在此示例中，响应包含一个 `@odata.nextLink` 属性，其中包含可用于检索下一个 10 个结果的 URL。
 
 #### <a name="request"></a>请求
 

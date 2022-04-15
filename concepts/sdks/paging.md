@@ -1,29 +1,29 @@
 ---
-title: 使用 Microsoft SDK 分页Graph集合
-description: 提供有关使用 Microsoft Graph SDK 创建 Microsoft Graph API 请求的说明。
+title: 使用 Microsoft Graph SDK 对集合进行分页
+description: 提供有关使用 Microsoft Graph SDK 创建 Microsoft 图形 API 请求的说明。
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: a6ccc53fd58685948c486ff047733ba88949e553
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: e8ce14ad1836b454b96c303bb887757d26a73212
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63560041"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848536"
 ---
-# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>使用 Microsoft SDK 分页Graph集合
+# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>使用 Microsoft Graph SDK 对集合进行分页
 
-出于性能原因，实体集合通常拆分为多个页面，并且每个页面返回一个指向下一页的 URL。 **PageIterator** 类简化了分页集合的使用。 **PageIterator** 自动枚举当前页面和请求后续页面。
+出于性能原因，实体集合通常拆分为页面，每个页面都返回下一页的 URL。 **PageIterator** 类简化了分页集合的使用。 **PageIterator** 处理枚举当前页面并自动请求后续页面。
 
 ## <a name="request-headers"></a>请求标头
 
-如果在初始请求中发送任何其他请求头，则默认情况下这些标头不会包含在后续页面请求中。 如果需要在后续请求中发送这些标头，则必须显式设置它们。
+如果在初始请求中发送任何其他请求标头，则默认情况下，这些标头不会包含在后续页面请求中。 如果需要在后续请求中发送这些标头，则必须显式设置它们。
 
-## <a name="iterate-over-all-the-messages"></a>在所有邮件上进行 Iterate
+## <a name="iterate-over-all-the-messages"></a>循环访问所有消息
 
-下面的示例展示了如何对用户邮箱中所有邮件进行访问。
+以下示例演示如何迭代用户邮箱中的所有邮件。
 
 > [!TIP]
-> 此示例使用 参数设置一个小页面 `top` 大小以用于演示。 可以将页面大小设置为最多 999，以最大限度地减少所需的请求数。
+> 本示例使用 `top` 参数设置较小的页面大小以进行演示。 可以将页面大小设置为 999，以最大程度地减少所需的请求数。
 
 ### <a name="c"></a>[C#](#tab/csharp)
 
@@ -137,10 +137,10 @@ query := messages.MessagesRequestBuilderGetQueryParameters{
 }
 
 options := messages.MessagesRequestBuilderGetOptions{
-    H: map[string]string{
+    Headers: map[string]string{
         "Prefer": "outlook.body-content-type=\"text\"",
     },
-    Q: &query,
+    QueryParameters: &query,
 }
 
 result, err := client.Me().Messages().Get(&options)
@@ -150,7 +150,7 @@ pageIterator, err := msgraphcore.NewPageIterator(result, adapter, graph.CreateMe
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(options.H)
+pageIterator.SetHeaders(options.Headers)
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
@@ -165,7 +165,7 @@ iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
 
 ## <a name="stopping-and-resuming-the-iteration"></a>停止和恢复迭代
 
-在某些情况下，为了执行其他操作，需要停止迭代过程。 通过从迭代回调返回可以 `false` 暂停迭代。 可以通过在 **PageIterator** 上调用 `resume` 方法来恢复迭代。
+某些方案需要停止迭代过程才能执行其他操作。 可以通过从迭代回调返回 `false` 来暂停迭代。 可以通过在 **PageIterator** 上调用`resume`方法来恢复迭代。
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)
@@ -264,10 +264,10 @@ query := messages.MessagesRequestBuilderGetQueryParameters{
 }
 
 options := messages.MessagesRequestBuilderGetOptions{
-    H: map[string]string{
+    Headers: map[string]string{
         "Prefer": "outlook.body-content-type=\"text\"",
     },
-    Q: &query,
+    QueryParameters: &query,
 }
 
 result, err := client.Me().Messages().Get(&options)
@@ -277,7 +277,7 @@ pageIterator, err := msgraphcore.NewPageIterator(result, adapter, graph.CreateMe
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(options.H)
+pageIterator.SetHeaders(options.Headers)
 
 // Pause iterating after 25
 var count, pauseAfter = 0, 25

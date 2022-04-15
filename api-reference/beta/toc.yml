@@ -2112,7 +2112,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -9882,7 +9882,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: 列表
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: 删除
+                      - name: Delete
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理脚本
                     href: resources/intune-shared-devicemanagementscript.md
@@ -10511,7 +10511,7 @@ items:
                     href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
                   - name: 获取租户详细信息
                     href: api/managedtenants-tenantdetailedinformation-get.md
-              - name: 租户
+              - name: Tenant
                 href: resources/managedtenants-tenant.md
                 items:
                   - name: 列出租户
@@ -12122,6 +12122,18 @@ items:
                         href: api/samlorwsfedexternaldomainfederation-list-domains.md
                       - name: 创建域
                         href: api/samlorwsfedexternaldomainfederation-post-domains.md
+                  - name: 与Azure AD联合
+                    items:
+                      - name: 联合域配置
+                        href: resources/internaldomainfederation.md
+                      - name: 获取
+                        href: api/internaldomainfederation-get.md
+                      - name: 创建
+                        href: api/domain-post-federationconfiguration.md
+                      - name: 更新
+                        href: api/internaldomainfederation-update.md
+                      - name: 删除
+                        href: api/internaldomainfederation-delete.md
               - name: '标识提供者 (已弃用) '
                 items:
                   - name: 标识提供者类型
@@ -12601,7 +12613,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: 用户流属性分配
                     items:
-                      - name: 用户
+                      - name: User
                         href: resources/identityuserflowattributeassignment.md
                       - name: 获取
                         href: api/identityuserflowattributeassignment-get.md
@@ -12643,7 +12655,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: 删除
+                      - name: Delete
                         href: api/identityapiconnector-delete.md
           - name: 管控
             items:
@@ -13932,6 +13944,10 @@ items:
                     href: api/signin-list.md
                   - name: 获取登录
                     href: api/signin-get.md
+                  - name: 确认安全
+                    href: api/signin-confirmsafe.md
+                  - name: 确认已被盗用
+                    href: api/signin-confirmcompromised.md
               - name: 预配
                 href: resources/provisioningobjectsummary.md
                 items:
@@ -14423,7 +14439,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列表
                     href: api/simulationautomation-list-runs.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -15178,7 +15194,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: 从聊天中删除应用
                     href: api/chat-delete-installedapps.md
-          - name: 设备
+          - name: Device
             items:
               - name: 预配的设备
                 href: resources/teamworkdevice.md
@@ -15223,7 +15239,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

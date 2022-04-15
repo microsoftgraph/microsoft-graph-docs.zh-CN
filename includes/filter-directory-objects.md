@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 24543ebddf54800c7ca0d397712d88d37f91c795
-ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
+ms.openlocfilehash: 712dfa3c20949a771a5d9cf62c06c7ca6bf22cf8
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64646959"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848645"
 ---
 ### <a name="administrative-unit-properties"></a>管理单元属性
 
@@ -187,6 +187,6 @@ ms.locfileid: "64646959"
 | userPrincipalName                                          | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![不支持][NS]                       |
 | userType                                                   | ![默认支持][RDS]               |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
 
-[RDS]: ../concepts/images/advanced-query-parameters/default.svg
-[AQP]: ../concepts/images/advanced-query-parameters/advanced.svg
-[NS]: ../concepts/images/advanced-query-parameters/notSupported.svg
+[RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
+[AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg
+[NS]: ../concepts/images/yesandnosymbols/no.svg

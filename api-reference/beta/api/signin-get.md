@@ -1,16 +1,16 @@
 ---
 title: 获取 signIn
 doc_type: apiPageType
-description: 获取一个 signIn 对象，该对象包含租户的所有Azure Active Directory登录。
+description: 获取一个 signIn 对象，该对象包含Azure Active Directory租户的所有登录。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: ce2fa2046e563e2d294d9022e08354af37038436
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e3e2259e130bbc091d078cd86551fb62afb038bc
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125368"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848753"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -18,7 +18,7 @@ ms.locfileid: "62125368"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取包含租户的特定用户登录事件的 [signIn](../resources/signin.md) 对象。 这包括要求用户输入用户名或密码以及会话令牌的登录。
+获取一个 [signIn](../resources/signin.md) 对象，该对象包含租户的特定用户登录事件。 这包括要求用户输入用户名或密码的登录，以及会话令牌。
 
 ## <a name="permissions"></a>权限
 
@@ -28,20 +28,20 @@ ms.locfileid: "62125368"
 |:--------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| 应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
+| Application | AuditLog.Read.All 和 Directory.Read.All | 
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 存在 [已知问题](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
-应用必须[正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)Azure AD。
+应用必须[正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)到Azure AD。
 
-除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要详细了解目录角色，请参阅Azure AD[角色：](/azure/active-directory/roles/permissions-reference)
+除了委派的权限外，已登录的用户还需要属于以下目录角色之一，这些角色允许他们读取登录报告。 若要详细了解目录角色，请参阅[Azure AD内置角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 全局读取者
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全读取者
++ 安全信息读取者
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,7 +66,7 @@ GET /auditLogs/signIns/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码 `200 OK` 和 [signIn](../resources/signin.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -143,6 +143,7 @@ Content-type: application/json
   "incomingTokenType": "Primary Refresh Token",
   "ipAddress":"131.107.159.37",
   "clientAppUsed":"Browser",
+  "clientCredentialType": "certificate",
   "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
   "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
   "conditionalAccessStatus":"notApplied",

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3d6dbd8c6aba614415e02271c00131a79c3e8a00
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: f0b518e7c1b9ff8e4b64238b802d2ccec581b465
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63668883"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848706"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -170,7 +170,10 @@ Content-type: application/json
             "enableAccessTokenIssuance": false
         }
     },
-    "windows": null
+    "windows": {
+        "packageSid": null,
+        "redirectUris": []
+    }
 }
 ```
 

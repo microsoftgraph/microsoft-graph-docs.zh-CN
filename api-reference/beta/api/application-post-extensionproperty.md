@@ -1,16 +1,16 @@
 ---
 title: 创建 extensionProperty
-description: 创建新的 extensionProperty。
+description: 创建新的扩展Property。
 ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 58b6622f41582398345cb5dfc30f4be5f7ba3b3e
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 44a36227c6f4cd215e20d6db2f81668cffe8e8b6
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669275"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848705"
 ---
 # <a name="create-extensionproperty"></a>创建 extensionProperty
 
@@ -18,7 +18,7 @@ ms.locfileid: "63669275"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [extensionProperty](../resources/extensionproperty.md) 定义。 可以使用此操作向 extensionProperty 中定义的对象类型添加自定义属性值，同时使用对目标对象的标准创建和更新请求。
+创建新的 [extensionProperty](../resources/extensionproperty.md) 定义。 可以使用此操作将自定义属性值添加到 extensionProperty 中定义的目标对象类型，使用标准创建和更新目标对象的请求。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +35,7 @@ ms.locfileid: "63669275"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /applications/{id}/extensionProperties
+POST /applications/{application ObjectId}/extensionProperties
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -51,14 +51,14 @@ POST /applications/{id}/extensionProperties
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|DataType|String| 指定数据类型属性可以保留的值的值的值。 支持以下值。 不可为 null。 <ul><li>`Binary` - 最多 256 个字节</li><li>`Boolean`</li><li>`DateTime` - 必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` - 32 位值。</li><li>`LargeInteger` - 64 位值。</li><li>`String` - 最多 256 个字符</li></ul>|
-|name|String| 扩展属性的名称。 不可为 null。 |
+|DataType|String| 指定扩展属性可以保存的值的数据类型。 支持以下值。 不可为 null。 <ul><li>`Binary` - 最大 256 字节数</li><li>`Boolean`</li><li>`DateTime` - 必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` - 32 位值。</li><li>`LargeInteger` - 64 位值。</li><li>`String` - 最大 256 个字符</li></ul>|
+|name|字符串| 扩展属性的名称。 不可为 null。 |
 |targetObjects|字符串集合| 支持以下值。 不可为 null。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201, Created` 正文中返回 响应代码和新 [extensionProperty](../resources/extensionproperty.md) 对象。
+如果成功，此方法在响应正文中返回 `201, Created` 响应代码和新的 [extensionProperty](../resources/extensionproperty.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -113,7 +113,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [extensionProperty](../resources/extensionProperty.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [extensionProperty](../resources/extensionProperty.md) 对象。
 
 <!-- {
   "blockType": "response",

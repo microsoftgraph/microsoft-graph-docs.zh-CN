@@ -706,14 +706,16 @@ items:
             href: sdks/use-beta.md
           - name: 使用 PowerShell
             items:
+              - name: 概述
+                href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
               - name: 安装
-                href: powershell/installation.md
+                href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
               - name: 入门
-                href: powershell/get-started.md
+                href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
               - name: SDK 导航
-                href: powershell/navigating.md
+                href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: 仅应用身份验证
-                href: powershell/app-only.md
+                href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
       - name: 使用工具包
         items:
           - name: 工具包概述
