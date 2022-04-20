@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph SDK 对集合进行分页
 description: 提供有关使用 Microsoft Graph SDK 创建 Microsoft 图形 API 请求的说明。
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: a6b15317b15d9494fff02a1bff7ea06172bd34f0
-ms.sourcegitcommit: 813bed8cbb61a5f892e8a227afc17c66687ab1fb
+ms.openlocfilehash: 10e408d82e6b806abd11a57066df53509a649c24
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974466"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917575"
 ---
 # <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>使用 Microsoft Graph SDK 对集合进行分页
 
@@ -146,7 +146,7 @@ options := messages.MessagesRequestBuilderGetOptions{
 result, err := client.Me().Messages().Get(&options)
 
 // Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator(result, adapter, models.CreateMessageCollectionResponseFromDiscriminatorValue)
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter, graph.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
 // to the iterator
@@ -154,7 +154,7 @@ pageIterator.SetHeaders(options.Headers)
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
-    message := pageItem.(models.Messageable)
+    message := pageItem.(graph.Messageable)
     fmt.Printf("%s\n", *message.GetSubject())
     // Return true to continue the iteration
     return true
@@ -273,7 +273,7 @@ options := messages.MessagesRequestBuilderGetOptions{
 result, err := client.Me().Messages().Get(&options)
 
 // Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator(result, adapter, models.CreateMessageCollectionResponseFromDiscriminatorValue)
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter, graph.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
 // to the iterator
@@ -284,7 +284,7 @@ var count, pauseAfter = 0, 25
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
-    message := pageItem.(models.Messageable)
+    message := pageItem.(graph.Messageable)
     count++
     fmt.Printf("%d: %s\n", count, *message.GetSubject())
     // Once count = 25, this returns false,
@@ -299,7 +299,7 @@ fmt.Printf("Resuming iteration...\n")
 
 // Resume iteration
 iterateErr = pageIterator.Iterate(func(pageItem interface{}) bool {
-    message := pageItem.(models.Message)
+    message := pageItem.(graph.Message)
     count++
     fmt.Printf("%d: %s\n", count, *message.GetSubject())
     // Return true to continue the iteration
