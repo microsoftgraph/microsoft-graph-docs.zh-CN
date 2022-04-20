@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 003bb04755c4106661d6e315f601341c9294d8ce
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: a1f5f669b54d900e58982242273d5e76bccbab04
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684597"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917687"
 ---
 # <a name="add-member-to-channel"></a>将成员添加到通道
 
@@ -207,7 +207,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-add-a-member-to-a-channel-using-user-principal-name"></a>示例 3：使用用户主体名称将成员添加到频道
+### <a name="example-3-add-an-owner-to-a-channel-using-user-principal-name"></a>示例 3：使用用户主体名称将所有者添加到频道
 
 #### <a name="request"></a>请求
 

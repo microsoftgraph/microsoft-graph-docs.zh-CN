@@ -5,12 +5,12 @@ title: driveItem
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: da35d9cb395e1aab22817e4304326848e9970791
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: f0bf0d668aacd62cf452f7fa8a469d7e6b9663f7
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63559990"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917729"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -43,44 +43,45 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 
 ## <a name="methods"></a>方法
 
-| 方法                                                   | REST 路径
-|:---------------------------------------------------------|:------------------
-| [获取项目](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
-| [列出活动](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
-| [获取分析结果][]                                        | `GET /drive/items/{item-id}/analytics`
-| [按间隔获取活动][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
-| [列出子项](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
-| [列出版本](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [创建项目](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
-| [更新项目](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
-| [上载内容](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
-| [下载内容](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [下载特定文件格式][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
-| [删除项](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [还原项目](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
-| [移动项目](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
-| [复制项目](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [搜索项目](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [列出驱动器中的更改](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [关注项目](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
-| [取消关注项目](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
-| [列出缩略图](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [创建共享链接](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [添加权限](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
-| [列出权限](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [删除权限](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [获取 WebSocket 频道][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [预览项目][item-preview]                             | `POST /drive/items/{item-id}/preview`
-| [签入](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [签出](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-| [撤销授权](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
+| 方法                                                                       | REST 路径                                                              |
+|:-----------------------------------------------------------------------------|:-----------------------------------------------------------------------|
+| [获取项目](../api/driveitem-get.md)                                          | `GET /drive/items/{item-id}`                                           |
+| [列出活动](../api/activities-list.md)                                 | `GET /drive/items/{item-id}/activities`                                |
+| [获取分析结果][]                                                            | `GET /drive/items/{item-id}/analytics`                                 |
+| [按间隔获取活动][]                                               | `GET /drive/items/{item-id}/getActivitiesByInterval`                   |
+| [列出子项](../api/driveitem-list-children.md)                           | `GET /drive/items/{item-id}/children`                                  |
+| [列出版本](../api/driveitem-list-versions.md)                           | `GET /drive/items/{item-id}/versions`                                  |
+| [创建项目](../api/driveitem-post-children.md)                             | `POST /drive/items/{item-id}/children`                                 |
+| [更新项目](../api/driveitem-update.md)                                    | `PATCH /drive/items/{item-id}`                                         |
+| [上载内容](../api/driveitem-put-content.md)                            | `PUT /drive/items/{item-id}/content`                                   |
+| [下载内容](../api/driveitem-get-content.md)                          | `GET /drive/items/{item-id}/content`                                   |
+| [下载特定文件格式][download-format]                             | `GET /drive/items/{item-id}/content?format={format}`                   |
+| [删除项](../api/driveitem-delete.md)                                    | `DELETE /drive/items/{item-id}`                                        |
+| [还原项](../api/driveitem-restore.md)                                  | `POST /drive/items/{item-id}/restore`                                  |
+| [移动项目](../api/driveitem-move.md)                                        | `PATCH /drive/items/{item-id}`                                         |
+| [复制项目](../api/driveitem-copy.md)                                        | `POST /drive/items/{item-id}/copy`                                     |
+| [搜索项目](../api/driveitem-search.md)                                   | `GET /drive/items/{item-id}/search(q='text')`                          |
+| [列出驱动器中的更改](../api/driveitem-delta.md)                         | `GET /drive/root/delta`                                                |
+| [关注项目](../api/driveitem-follow.md)                                    | `POST /drives/{drive-id}/items/{item-id}/follow`                       |
+| [取消关注项](../api/driveitem-unfollow.md)                                | `POST /drives/{drive-id}/items/{item-id}/unfollow`                     |
+| [列出缩略图](../api/driveitem-list-thumbnails.md)                       | `GET /drive/items/{item-id}/thumbnails`                                |
+| [创建共享链接](../api/driveitem-createlink.md)                        | `POST /drive/items/{item-id}/createLink`                               |
+| [添加权限](../api/driveitem-invite.md)                                | `POST /drive/items/{item-id}/invite`                                   |
+| [列出权限](../api/driveitem-list-permissions.md)                     | `GET /drive/items/{item-id}/permissions`                               |
+| [删除权限](../api/permission-delete.md)                             | `DELETE /drive/items/{item-id}/permissions/{perm-id}`                  |
+| [获取 WebSocket 频道][getWebSocket]                                        | `GET /drive/root/subscriptions/socketIo`                               |
+| [预览项目][item-preview]                                                 | `POST /drive/items/{item-id}/preview`                                  |
+| [签入](../api/driveitem-checkin.md)                                      | `POST /drives/{driveId}/items/{itemId}/checkin`                        |
+| [签出](../api/driveitem-checkout.md)                                    | `POST /drives/{driveId}/items/{itemId}/checkout`                       |
+| [撤销授权](../api/permission-revokegrants.md)                           | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`      |
+| [提取敏感度标签](../api/driveitem-extractsensitivitylabels.md)   | `POST /drive/items/{item-id}/extractSensitivityLabels`                 |
 
 ## <a name="properties"></a>属性
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。 只读。 仅在 OneDrive 个人版上。
-| bundle               | [bundle][]         | 捆绑元数据（如果此项是捆绑包）。 只读。
+| bundle               | [捆绑][]         | 捆绑包元数据（如果该项是捆绑包）。 只读。
 | content              | 流             | 内容流（如果此项表示一个文件）。
 | createdBy            | [identitySet][]    | 识别创建项目的用户、设备和应用程序。只读。
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
@@ -94,14 +95,14 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | id                   | String             | 项在驱动器中的唯一标识符。只读。
 | image                | [image][]          | 图像元数据（如果此项是一个图像）。只读。
 | lastModifiedBy       | [identitySet][]    | 上次修改项目的用户、设备和应用程序的标识。只读。
-| lastModifiedDateTime | DateTimeOffset     | 上次修改项目的日期和时间。 只读。
+| lastModifiedDateTime | DateTimeOffset     | 上次修改项的日期和时间。 只读。
 | location             | [geoCoordinates][] | 位置元数据（如果此项包含位置数据）。只读。
 | 恶意软件 (malware)              | [恶意软件][]        | 恶意软件元数据，如果检测到项目包含恶意软件。只读。
-| media                | [media][]          | 有关音频或 (项的媒体) 的信息。 读写。 仅在 OneDrive for Business 和 SharePoint 上。
+| 媒体                | [media][]          | 有关媒体 (音频或视频) 项的信息。 读写。 仅在OneDrive for Business和SharePoint。
 | name                 | String             | 项目名称（文件名和扩展名）。读写。
 | package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
-| pendingOperations    | [pendingOperations][] | 如果存在，则指示可能影响 driveItem 状态的一个或多个操作正在等待完成。 只读。
+| pendingOperations    | [pendingOperations][] | 如果存在，则指示一个或多个可能影响 driveItem 状态的操作正在等待完成。 只读。
 | photo                | [照片][]          | 照片元数据（如果此项包含照片）。只读。
 | publication          | [publicationFacet][] | 在支持此类操作的位置提供有关某个项目的已发布或签出状态信息。 默认情况下，不会返回此属性。 只读。 |
 | remoteItem           | [remoteItem][]     | 远程项目数据（如果此项是从驱动器共享的项目，而不是被访问的项目）。只读。
@@ -111,7 +112,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | sharepointIds        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 | size                 | Int64              | 项目大小，以字节为单位。只读。
 | specialFolder        | [specialFolder][]  | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。
-| source               | [driveItemSource][]| 有关驱动器项源的信息。 只读。 仅在 OneDrive for Business 和 SharePoint 上。
+| source               | [driveItemSource][]| 有关驱动器项源的信息。 只读。 仅在OneDrive for Business和SharePoint。
 | video                | [video][]          | 视频元数据（如果此项是一个视频）。只读。
 | WebDavUrl            | String             | 项的可兼容 WebDAV 的 URL。
 | WebUrl               | String             | 在浏览器中显示此资源的 URL。只读。
@@ -127,7 +128,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | children           | driveItem 集合        | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
 | createdByUser      | [user][]                    | 创建了项的用户的身份。只读。
 | lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。只读。
-| listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 只读。 可为 null。
+| listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，则为关联的文档库列表项。只读。可为 Null。
 | permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
 | 订阅      | [订阅][]集合 | 项目上的订阅集。 仅在驱动器根目录上支持。
 | 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
@@ -229,8 +230,8 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 
 [audio]: audio.md
 [baseItem]: baseitem.md
-[bundle]: bundle.md
-[deleted]: deleted.md
+[捆绑]: bundle.md
+[Deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
 [driveItemSource]: driveItemSource.md
 [driveItemVersion]: driveitemversion.md

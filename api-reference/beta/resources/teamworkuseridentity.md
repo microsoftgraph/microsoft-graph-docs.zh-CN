@@ -1,16 +1,16 @@
 ---
 title: teamworkUserIdentity 资源类型
-description: 表示用户Microsoft Teams。
+description: 表示Microsoft Teams中的用户。
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b0c50856a2b7051a631cd14ab3985cd8724bfe4c
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 7c705ecfb250fe06ead32ad97ec7a476e862d0a4
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211306"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917671"
 ---
 # <a name="teamworkuseridentity-resource-type"></a>teamworkUserIdentity 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "53211306"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 **用户Microsoft Teams。**
+表示Microsoft Teams中的 **用户**。
 
 
 继承自 [标识](../resources/identity.md)。
@@ -26,9 +26,9 @@ ms.locfileid: "53211306"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|继承自 [标识](../resources/identity.md)。 用户的显示名称。 可选。|
-|id|String|继承自 [标识](../resources/identity.md)。 用户的 ID。 |
-|userIdentityType|teamworkUserIdentityType| 用户类型。 可能的值是 `aadUser` `onPremiseAadUser` `anonymousGuest` ：、、、、、、 `federatedUser` `personalMicrosoftAccountUser` 和 `skypeUser` `phoneUser` 。|
+|displayName|字符串|继承自 [标识](../resources/identity.md)。 用户的显示名称。 可选。|
+|id|字符串|继承自 [标识](../resources/identity.md)。 用户的 ID。 |
+|userIdentityType|teamworkUserIdentityType| 用户类型。 可能的值为：`aadUser`、、`onPremiseAadUser``anonymousGuest`、`federatedUser`、`personalMicrosoftAccountUser`、`phoneUser``skypeUser`和 `emailUser`。|
 
 ## <a name="relationships"></a>关系
 无。

@@ -1,24 +1,24 @@
 ---
 title: 从聊天中删除选项卡
-description: '从 (聊天) 取消固定选项卡。 '
+description: '从指定的聊天中删除 (取消固定) 选项卡。 '
 author: subray
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 223a19a9bad471f7b4f3cfb376e1ed1dc79769c6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fa6ab0da8eb50a038e6b75cbf0b777bda90a73c6
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122315"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917589"
 ---
 # <a name="delete-tab-from-chat"></a>从聊天中删除选项卡
 
 命名空间：microsoft.graph
 
-从 (聊天) 取消固定选项卡[。](../resources/chat.md) 
+从指定的 [聊天](../resources/chat.md)中删除 (取消固定) 选项卡。 
 
-> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上选项卡将从会议中删除。
+> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例相关联，则实际上会从会议中删除该选项卡。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "62122315"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
+|Application | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -102,7 +102,7 @@ HTTP/1.1 204 No Content
 ```
 ## <a name="see-also"></a>另请参阅
 
-- [从频道中删除选项卡](channel-delete-tabs.md)
+- [从通道中删除选项卡](channel-delete-tabs.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

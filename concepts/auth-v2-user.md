@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: f4e4e9033c7a43ccf61358733a252ab635148223
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 72e2522a8208c9296ff7e39469a9085c9889b862
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335022"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917526"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 
@@ -126,7 +126,7 @@ client_id=11111111-1111-1111-1111-111111111111
 
 | 参数     | 必需              | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 租户        | 必需              | 请求路径中的 `{tenant}` 值可用于控制登录应用程序的用户。 允许的值是： <br><li>Microsoft 帐户和工作或学校帐户的 `common` <li>仅适用于工作或学校帐户的 `organizations` <li>仅适用于 Microsoft 帐户的 `consumers` <li>租户标识符，如租户 ID 或域名。 <br/>有关详细信息，请参阅[协议基础](/azure/active-directory/develop/active-directory-v2-protocols#endpoints)。 |
+| 租户        | 必需              | 请求路径中的 `{tenant}` 值可用于控制登录应用程序。允许的值包括：<br><li>Microsoft 帐户和工作或学校帐户的 `common` <li>仅适用于工作或学校帐户的 `organizations` <li>仅适用于 Microsoft 帐户的 `consumers` <li>租户标识符，如租户 ID 或域名。 <br/>有关详细信息，请参阅[协议基础](/azure/active-directory/develop/active-directory-v2-protocols#endpoints)。 |
 | client_id     | 必需              | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                                                                                                                                                                                                               |
 | grant_type    | 必需              | 对于授权代码流必须为 `authorization_code`。                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | 范围         | 必需              | 用空格分隔的范围列表。在此图例中应用请求的范围必须等于在首个（授权）图例中请求的范围或其子集。如果此请求中指定的范围跨越多个资源服务器，则 v2.0 将为首个范围中指定的资源返回令牌。                                                                                                                                                                   |
@@ -286,3 +286,4 @@ Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终
 
 - [了解如何创建代表用户调用 Microsoft Graph 的 Web 应用](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user)。
 - 有关使用 Microsoft 标识平台保护不同应用程序类型的示例，请查看 [Microsoft 标识平台代码示例（v2.0 终结点）](/azure/active-directory/develop/sample-v2-code)。
+- [MSAL.js 交互式请求中的提示行为](/azure/active-directory/develop/msal-js-prompt-behavior)

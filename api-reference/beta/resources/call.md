@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c98483bd92db368b997692b1856ce6a475c15d37
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: b12d80ae786abc93d9b3e00358f7b18d42b89140
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695125"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917771"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -76,8 +76,9 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | activeModalities    | modality 集合                                                                                      | 活动模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。 只读。                                                    |
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | 已应答呼叫的参与者。只读。                                                                                                                                |
 | callRoutes          | [callRoute](callroute.md) 集合                                                                   | 有关如何重定向呼叫的路由信息。只读。                                                                                                                |
-| callbackUri         | 字符串                                                                                                 | 用于传递回调的回调 URL。 必须是 `https`。                                                                                                                               |
-| callChainId         | String                                                                                                 | 一个针对会议中所有参与者的通话的唯一标识符，或一个针对 P2P 通话中两位参与者的通话的唯一标识符。  需要从 `Microsoft.Graph.Call.CallChainId` 复制它。 |
+| callbackUri         | 字符串                                                                                                 | 用于传递回拨的回拨 URL。必须为 `https`。                                                                                                                               |
+| callChainId         | String                                                                                                 | 会议中所有参与者通话的唯一标识符，或 P2P 通话中两位参与者通话的唯一标识符。需要从 `Microsoft.Graph.Call.CallChainId` 复制它。 |
+| callOptions            | [outgoingCallOptions](outgoingcalloptions.md)                                                         | 包含该通话的可选功能。   |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | 聊天信息。 会议情境所需的信息。                                                                                                                                |
 | direction           | callDirection                                                                                                 | 呼叫的方向。 可取值为 `incoming` 或 `outgoing`。 只读。                                                                                            |
 | id                  | 字符串                                                                                                 | 来电显示。只读。                                                                                                                                                                        |
@@ -91,7 +92,7 @@ myParticipantId     | String                                                    
 | requestedModalities | modality 集合                                                                                      | 请求模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | 结果信息。 例如，可以保留终止原因。 只读。                                                                                                        |
 | ringingTimeoutInSeconds | Int32                                                                                              | 传出对等呼叫的以秒为单位的响铃超时。 此属性的最大值为 115 秒。                                                                                        |
-| routingPolicies     | routingPolicy 集合集合                                                                                      | 此属性仅适用于对等呼叫。 可取值为：`none`、`noMissedCall`、`disableForwardingExceptPhone`、`disableForwarding`、`preferSkypeForBusiness`、`unknownFutureValue`。                                                                                                   |
+| routingPolicies     | routingPolicy 集合集合                                                                                      | 此属性仅适用于对等通话。可能的值为: `none`、`noMissedCall`、`disableForwardingExceptPhone`、`disableForwarding`、`preferSkypeForBusiness`、`unknownFutureValue`。                                                                                                   |
 | source              | [participantInfo](participantinfo.md)                                                                  | 呼叫的发起方。                                                                                                                                                                         |
 | state               | callState                                                                                                 | 呼叫状态。 可取值为：`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated`。 只读。                          |
 | subject             | String                                                                                                 | 对话的主题。                                                                                                                                                                    |
@@ -107,6 +108,7 @@ myParticipantId     | String                                                    
 | audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) 集合 | 只读。可为空。                                                |
 | operations          | [commsOperation](commsoperation.md) 集合       | 只读。可为空。                                                |
 | participants        | [participant](participant.md) 集合             | 只读。可为空。                                                |
+| contentSharingSessions        | [contentSharingSession](contentsharingsession.md) 集合             | 只读。可为空。                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -119,7 +121,9 @@ myParticipantId     | String                                                    
     "answeredBy",
     "callRoutes",
     "callChainId",
+    "callOptions",
     "chatInfo",
+    "contentSharingSessions",
     "direction",
     "id",
     "incomingContext",
@@ -150,7 +154,9 @@ myParticipantId     | String                                                    
   "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
   "callChainId": "String",
+  "callOptions": {"@odata.type": "#microsoft.graph.outgoingCallOptions"},
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "contentSharingSessions": [{ "@odata.type": "microsoft.graph.contentSharingSession" }],
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
   "incomingContext": {"@odata.type": "#microsoft.graph.incomingContext"},

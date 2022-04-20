@@ -1,16 +1,16 @@
 ---
 title: bookingsBusiness： getStaffAvailability
-description: 了解如何获取Microsoft Bookings日历中工作人员的可用性信息。
+description: 获取Microsoft Bookings日历的工作人员的可用性信息。
 ms.localizationpriority: medium
 author: kwekua
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 71954be1123f5b36532380b61159934228edfc9e
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: f3c63a90dd58b0765d641c7be7cf5dd0727571f4
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755733"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917701"
 ---
 # <a name="bookingsbusiness-getstaffavailability"></a>bookingsBusiness： getStaffAvailability
 
@@ -35,7 +35,6 @@ ms.locfileid: "64755733"
 <!-- { "blockType": "ignored" } -->
 ```http
 Get /solutions/bookingBusinesses/{id}/getStaffAvailability
-
 ```
 
 ## <a name="request-header"></a>请求标头
@@ -51,7 +50,7 @@ Get /solutions/bookingBusinesses/{id}/getStaffAvailability
 
 ## <a name="response"></a>响应
 
-如果成功，此方法会在响应中返回 `200 OK` 响应代码和 [staffAvailabilityItem](../resources/staffavailabilityitem.md) 集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [staffAvailabilityItem](../resources/staffavailabilityitem.md) 集合。
 
 ## <a name="example"></a>示例
 

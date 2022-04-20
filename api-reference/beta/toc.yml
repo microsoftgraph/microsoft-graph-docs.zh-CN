@@ -1223,7 +1223,7 @@ items:
                     href: api/synchronization-synchronizationjob-pause.md
                   - name: Restart
                     href: api/synchronization-synchronizationjob-restart.md
-                  - name: 删除
+                  - name: Delete
                     href: api/synchronization-synchronizationjob-delete.md
                   - name: 按需预配
                     href: api/synchronization-synchronizationjob-provision-on-demand.md
@@ -1561,6 +1561,13 @@ items:
                     href: api/audioroutinggroup-update.md
                   - name: 删除
                     href: api/audioroutinggroup-delete.md
+              - name: 内容共享会话
+                href: resources/contentsharingsession.md
+                items:
+                  - name: 列表
+                    href: api/call-list-contentsharingsessions.md
+                  - name: 获取
+                    href: api/contentsharingsession-get.md
               - name: 日志电话会议设备质量数据
                 href: api/call-logteleconferencedevicequality.md
           - name: 通话记录
@@ -2112,7 +2119,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -10194,7 +10201,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: 远程批量还原操作
                     href: api/manageddevice-bulkrestorecloudpc.md
-                  - name: 疑难解答
+                  - name: 排除故障
                     href: api/cloudpc-troubleshoot.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
@@ -10511,7 +10518,7 @@ items:
                     href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
                   - name: 获取租户详细信息
                     href: api/managedtenants-tenantdetailedinformation-get.md
-              - name: Tenant
+              - name: 租户
                 href: resources/managedtenants-tenant.md
                 items:
                   - name: 列出租户
@@ -10949,6 +10956,8 @@ items:
                 href: api/itemactivity-getbyinterval.md
               - name: 预览项目
                 href: api/driveitem-preview.md
+              - name: 提取敏感度标签
+                href: api/driveitem-extractsensitivitylabels.md
           - name: 束
             href: resources/bundle.md
             items:
@@ -14055,6 +14064,15 @@ items:
                     href: api/reportroot-getteamsuseractivitydistributiontotalusercounts.md
                   - name: 获取总分布活动计数
                     href: api/reportroot-getteamsuseractivitytotaldistributioncounts.md
+              - name: Microsoft Teams团队活动
+                href: resources/microsoft-teams-team-usage-reports.md
+                items:
+                  - name: 获取团队详细信息
+                    href: api/reportroot-getteamsteamactivitydetail.md
+                  - name: 获取团队活动计数
+                    href: api/reportroot-getteamsteamactivitycounts.md
+                  - name: 获取团队活动分布计数
+                    href: api/reportroot-getteamsteamactivitydistributioncounts.md
               - name: Outlook 活动
                 href: resources/email-activity-reports.md
                 items:
@@ -14439,7 +14457,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列表
                     href: api/simulationautomation-list-runs.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -14713,7 +14731,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建

@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: bc9694ff5e7946656cac8246cf9682e0b71663ab
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: d524a6d1015943b269f95535aa7cf3a390aa57b7
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848725"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917631"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -2319,7 +2319,7 @@ ms.locfileid: "64848725"
 
 | 成员             | 值 | 说明        |
 |:-------------------|:------|:-------------------|
-| 垃圾邮件               | 1     | 垃圾邮件威胁。       |
+| 垃圾邮件 (spam)               | 1     | 垃圾邮件威胁。       |
 | 仿冒           | 2     | 网络钓鱼威胁。   |
 | 恶意软件            | 3     | 恶意软件威胁。    |
 | unknownFutureValue | 4     | 一个 sentinel 成员。 |
@@ -2752,6 +2752,7 @@ ms.locfileid: "64848725"
 |skypeUser|
 |phoneUser|
 |unknownFutureValue|
+|emailUser|
 
 ### <a name="callrecordingstatus-values"></a>callRecordingStatus 值
 

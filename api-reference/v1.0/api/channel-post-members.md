@@ -1,22 +1,22 @@
 ---
-title: 向频道添加成员
-description: 向频道添加成员。
+title: 将成员添加到通道
+description: 将成员添加到通道。
 author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0768fdfe759fc99e39057a978a947b8045bed5c2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c6ea35bfef3de2d51f0c374e3b4a2f1f67cef3ea
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124945"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917757"
 ---
-# <a name="add-member-to-channel"></a>向频道添加成员
+# <a name="add-member-to-channel"></a>将成员添加到通道
 
 命名空间：microsoft.graph
 
-将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。 此操作仅允许 **membershipType** 值为 的通道 `private` 。
+将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。 此操作仅允许 **membershipType** 值为 `private` 的频道。
 
 ## <a name="permissions"></a>权限
 
@@ -45,10 +45,10 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 请求正文中包含以下属性。
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|角色|string 集合|用户的角色。 必须为空 `owner` 。|
-|用户|[用户](../resources/user.md)|要添加到频道的用户。|
+|角色|string 集合|用户的角色。 必须为 `owner` 或为空。|
+|用户|[user](../resources/user.md)|要添加到通道的用户。|
 
 ## <a name="response"></a>响应
 
@@ -56,7 +56,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-a-member-to-a-channel"></a>示例 1：向频道添加成员
+### <a name="example-1-add-a-member-to-a-channel"></a>示例 1：将成员添加到通道
 
 #### <a name="request"></a>请求
 
@@ -126,7 +126,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>示例 2：向频道添加具有所有者角色的成员
+### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>示例 2：将具有所有者角色的成员添加到频道
 
 #### <a name="request"></a>请求
 
@@ -185,7 +185,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-add-a-member-to-a-channel-using-user-principal-name"></a>示例 3：使用用户主体名称向频道添加成员
+### <a name="example-3-add-an-owner-to-a-channel-using-user-principal-name"></a>示例 3：使用用户主体名称将所有者添加到频道
 
 #### <a name="request"></a>请求
 

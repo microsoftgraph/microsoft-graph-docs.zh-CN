@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c02592e2236a8c86626140f81f175a1a8e92757b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 434114bea205a8eeca6e3c843bf9c28754da58bb
+ms.sourcegitcommit: 813bed8cbb61a5f892e8a227afc17c66687ab1fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62088431"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974473"
 ---
 # <a name="update-plannerbucket"></a>更新 plannerbucket
 
@@ -24,7 +24,7 @@ ms.locfileid: "62088431"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Tasks.ReadWrite，Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -42,13 +42,12 @@ PATCH /planner/buckets/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|String|存储桶的名称。|
+|name|字符串|存储桶的名称。|
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
-|planId|String|此存储桶所属的计划 id。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定具有首选项的标头，则此方法在响应正文中返回 响应代码和更新 `Prefer` `return=representation` 的 `200 OK` [plannerBucket](../resources/plannerbucket.md) 对象。
+如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定 `Prefer` 具有首选项的标头 `return=representation` ，则此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerBucket](../resources/plannerbucket.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 

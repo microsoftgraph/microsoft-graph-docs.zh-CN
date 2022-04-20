@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: b3f542369e7f39600aa49ea0d37c13d9f0264c15
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: f51cea4ec7ca24c228ad7d4c92459f4c81cf3a45
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239307"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917778"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -28,7 +28,7 @@ ms.locfileid: "62239307"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
+**注意**：对于允许应用代表用户读取服务使用情况报告的委派权限，租户管理员必须为用户分配适当的Azure Active Directory受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,7 +36,7 @@ ms.locfileid: "62239307"
 
 ```http
 GET /reports/getTeamsDeviceUsageUserDetail(period='{period_value}')
-GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
+GET /reports/getTeamsDeviceUsageUserDetail(date='{date_value}')
 ```
 
 ## <a name="function-parameters"></a>函数参数
@@ -45,12 +45,12 @@ GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 |
-| date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 由于此报告仅适用于过去 28 天，{date_value} 应为该范围的日期。 |
+| period    | string | 指定在多长时间内聚合报表。 {period_value} 支持的值为： `D7`、 和 `D90``D30``D180`. 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 |
+| date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 由于此报表仅供过去 28 天使用，因此 {date_value} 应为该范围的日期。 |
 
-> **注意：** 需要在 URL 中设置 period 或 date。
+> **注意：** 需要在 URL 中设置 **句点** 或 **日期** 。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
@@ -80,10 +80,9 @@ CSV 文件包含下面的列标题：
 
 ## <a name="example"></a>示例
 
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-下面展示了示例请求。
-
+请求示例如下所示。
 
 <!-- {
   "blockType": "ignored",
@@ -95,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserDetail(perio
 ```
 
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。
 

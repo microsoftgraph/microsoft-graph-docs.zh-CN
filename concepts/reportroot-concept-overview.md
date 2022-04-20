@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ec4077dfb44b4135463412d56ecbb38ec0fd2be4
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: 8c0ea574670cd5d52d33a0ef6f8479335206cef4
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115142"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917792"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Microsoft Graph 报告 API 概述
 
@@ -51,7 +51,7 @@ Microsoft Graph 中的报告 API 可帮助你了解 Azure Active Directory 租�
 | AD FS 应用程序 | [信赖方详细摘要（预览版）](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta) |
 | 应用程序注册 | [凭据用户注册计数（预览版）](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta)<br/>[凭据用户注册详细信息（预览版）](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta) <br/>[用户凭据使用情况详细信息（预览版）](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta) <br/>[凭据使用情况摘要（预览版）](/graph/api/resources/credentialusagesummary?view=graph-rest-beta)|
 | 应用程序登录 | [登录摘要（预览版）](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta) <br/>[登录详细信息（预览版）](/graph/api/resources/applicationsignindetailedsummary?view=graph-rest-beta)|
-| Microsoft Teams | [设备使用情况](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0)<br/>[用户活动](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0) |
+| Microsoft Teams | [设备使用情况](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0)<br/>[团队使用情况](/graph/api/resources/microsoft-teams-team-usage-reports?view=graph-rest-beta)<br/>[用户活动](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0)|
 | Microsoft 365（常规） | [激活](/graph/api/resources/office-365-activations-reports?view=graph-rest-1.0)<br/>[活动用户](/graph/api/resources/office-365-active-users-reports?view=graph-rest-1.0)<br/>[组活动](/graph/api/resources/office-365-groups-activity-reports?view=graph-rest-1.0) |
 | OneDrive | [活动](/graph/api/resources/onedrive-activity-reports?view=graph-rest-1.0)<br/>[使用情况](/graph/api/resources/onedrive-usage-reports?view=graph-rest-1.0) |
 | Outlook | [活动](/graph/api/resources/email-activity-reports?view=graph-rest-1.0)<br/>[应用使用情况](/graph/api/resources/email-app-usage-reports?view=graph-rest-1.0)<br/>[邮箱使用情况](/graph/api/resources/mailbox-usage-reports?view=graph-rest-1.0) |

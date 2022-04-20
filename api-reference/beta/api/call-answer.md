@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 01c85c2084bf651fff71a731a75b10ce58a07a32
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: 8c0f2b68d9a196a53aa6d2a151acb3c55f80c00c
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684535"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917785"
 ---
 # <a name="call-answer"></a>调用：应答
 
@@ -29,7 +29,7 @@ ms.locfileid: "64684535"
 | :-------------- | :-----------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                       |
 | 委派（个人 Microsoft 帐户） | 不支持。                       |
-| 应用程序     | Calls.JoinGroupCall.All、Calls.JoinGroupCallAsGuest.All     |
+| Application     | Calls.JoinGroupCall.All、Calls.JoinGroupCallAsGuest.All     |
 
 > **注意：** 对于使用应用程序托管媒体的调用，还需要 Call.AccessMedia.All 权限。 必须至少具有以下权限之一， `source` 以确保对传入的呼叫通知进行解密：Calls.AccessMedia.All、Calls.Initiate.All、Calls.InitiateGroupCall.All、Calls.JoinGroupCall.All、Calls.JoinGroupCallAsGuest.All。 是 `source` 传入呼叫通知中的调用方信息。 如果没有这些权限中至少有一个， `source` 则会保持加密状态。
 
@@ -52,8 +52,9 @@ POST /communications/calls/{id}/answer
 
 | 参数           | 类型                                                                                                                                 | 说明                                                                                                                                                                                                         |
 | :-----------------  | :-----------------------------------------                                                                                           | :----------------------------------------------------------------------------------------------------------------------------------------------                                                                     |
-| callbackUri         | String                                                                                                                               | 允许机器人为并发调用提供特定的回调 URI 以接收以后的通知。 如果尚未设置此属性，则将改用机器人的全局回调 URI。 这一定是 `https`. |
+| callbackUri         | 字符串                                                                                                                               | 允许机器人为并发调用提供特定的回调 URI 以接收以后的通知。 如果尚未设置此属性，则将改用机器人的全局回调 URI。 这一定是 `https`. |
 | acceptedModalities  | String collection                                                                                                                    | 接受方式列表。 可能的值为： `audio`， ， `video``videoBasedScreenSharing`. 应答呼叫所必需。                                                                                      |
+| callOptions            | [incomingCallOptions](../resources/incomingcalloptions.md)                                                         | 调用选项。   |
 | mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | 媒体配置。必需。                                                                                                                                                                                 |
 | participantCapacity | Int                                                                                                                                  | 对于[基于策略的录制](/MicrosoftTeams/teams-recording-policy)方案，应用程序可以为调用处理的参与者数Teams。                                                     |
 
@@ -63,7 +64,7 @@ POST /communications/calls/{id}/answer
 ## <a name="examples"></a>示例
 以下示例演示如何调用此 API。
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 下面为请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -85,6 +86,10 @@ Content-Length: 211
   "acceptedModalities": [
     "audio"
   ],
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.incomingCallOptions",
+    "isContentSharingNotificationEnabled": true
+  },
   "participantCapacity": 200
 }
 ```
@@ -117,7 +122,7 @@ Content-Length: 211
 ---
 
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 下面是一个响应示例。 
 
 <!-- {
@@ -129,7 +134,7 @@ HTTP/1.1 202 Accepted
 
 ### <a name="example-1-answer-a-peer-to-peer-voip-call-with-service-hosted-media"></a>示例 1：使用服务托管媒体响应对等 VoIP 调用
 
-##### <a name="notification---incoming"></a>通知 - 传入
+#### <a name="notification---incoming"></a>通知 - 传入
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -198,7 +203,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 <!-- {
   "blockType": "ignored",
@@ -227,7 +232,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 <!-- {
   "blockType": "response"
 } -->
@@ -235,7 +240,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a>通知 - 建立
+#### <a name="notification---establishing"></a>通知 - 建立
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -265,7 +270,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>通知 - 已建立
+#### <a name="notification---established"></a>通知 - 已建立
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -297,7 +302,7 @@ Content-Type: application/json
 
 ### <a name="example-2-answer-voip-call-with-application-hosted-media"></a>示例 2：使用应用程序托管媒体响应 VOIP 调用
 
-##### <a name="notification---incoming"></a>通知 - 传入
+#### <a name="notification---incoming"></a>通知 - 传入
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -353,7 +358,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -401,7 +406,7 @@ Content-Type: application/json
 ---
 
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response"
@@ -410,7 +415,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a>通知 - 建立
+#### <a name="notification---establishing"></a>通知 - 建立
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -440,7 +445,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>通知 - 已建立
+#### <a name="notification---established"></a>通知 - 已建立
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -465,6 +470,54 @@ Content-Type: application/json
         "@odata.etag": "W/\"5445\"",
         "state": "established"
       }
+    }
+  ]
+}
+```
+
+#### <a name="notification---content-sharing-started"></a>通知 - 内容共享已启动
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions/2765eb15-01f8-47c6-b12b-c32111a4a86f"
+    }
+  ]
+}
+```
+
+#### <a name="notification---content-sharing-ended"></a>通知 - 内容共享结束
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions/2765eb15-01f8-47c6-b12b-c32111a4a86f"
     }
   ]
 }

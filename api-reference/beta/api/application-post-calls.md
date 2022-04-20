@@ -1,16 +1,16 @@
 ---
 title: 创建调用
-description: 创建新呼叫。
+description: 创建新调用。
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b272eb839dd1bf2bb9384db9be58610bc5c7ce4e
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: ddd3d8ca490183a20763eec07a7c651107fd47de
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607769"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917666"
 ---
 <!-- markdownlint-disable MD001 MD022 MD024 -->
 
@@ -20,9 +20,9 @@ ms.locfileid: "64607769"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call， or join an existing meeting. 你需要注册 [呼叫机器人](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) 并浏览所需的权限列表。
+创建 [呼叫](../resources/call.md) 使机器人能够创建新的传出对等或组呼叫，或加入现有会议。 需要 [注册调用机器人](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) 并完成所需的权限列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions)。
 
@@ -32,7 +32,7 @@ Create [call](../resources/call.md) enables your bot to create a new outgoing pe
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
 | Application                            | Calls.JoinGroupCalls.Chat*、Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate.All、Calls.InitiateGroupCalls.All |
 
-> **注意：** 对于具有应用托管媒体的呼叫，除了列出的权限之一之外，还需要 Calls.AccessMedia.All 或 Calls.AccessMedia.Chat* 权限。
+> **笔记：** 对于应用托管媒体的调用，除了列出的权限之一外，还需要 Call.AccessMedia.All 或 Calls.AccessMedia.Chat* 权限。
 >
 > 标记为 * 的权限使用 [特定于资源的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
@@ -54,21 +54,21 @@ POST /communications/calls
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 call 对象的 JSON [表示](../resources/call.md) 形式。
+在请求正文中，提供 [调用](../resources/call.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [call](../resources/call.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [调用](../resources/call.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>示例 1：使用服务托管媒体创建对等 VoIP 呼叫
+### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>示例 1：使用服务托管媒体创建对等 VoIP 调用
 
-> **注意：** 此调用需要 Calls.Initiate.All 权限。
+> **注意：** 此调用需要 Call.Initiate.All 权限。
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
-以下示例显示一个请求，该请求在机器人和指定用户之间进行对等呼叫。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
+以下示例演示在机器人和指定用户之间进行对等调用的请求。 在此示例中，媒体由服务托管。 授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值必须替换为实际值才能使示例正常工作。
 
 # <a name="http"></a>[HTTP](#tab/http)
 
@@ -101,6 +101,10 @@ Content-Type: application/json
   "requestedModalities": [
     "audio"
   ],
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.outgoingCallOptions",
+    "isContentSharingNotificationEnabled": true
+  },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
@@ -133,7 +137,7 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -223,7 +227,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a>通知 - 建立
+#### <a name="notification---establishing"></a>通知 - 建立
 
 ```http
 POST https://bot.contoso.com/callback
@@ -254,7 +258,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>通知 - 已建立
+#### <a name="notification---established"></a>通知 - 已建立
 
 ```http
 POST https://bot.contoso.com/callback
@@ -287,12 +291,102 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>示例 2：使用应用程序托管媒体创建对等 VoIP 呼叫
+#### <a name="notification---content-sharing-started"></a>通知 - 内容共享已启动
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### <a name="notification---content-sharing-updated"></a>通知 - 内容共享已更新
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### <a name="notification---content-sharing-ended"></a>通知 - 内容共享结束
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>示例 2：使用应用程序托管媒体创建对等 VoIP 调用
 
 > **注意**：此示例需要 Calls.Initiate.All 和 Calls.AccessMedia.All 权限。
 
-##### <a name="request"></a>请求
-以下示例显示一个请求，该请求在机器人和指定用户之间进行对等呼叫。 本示例中，媒体由应用程序本地托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
+#### <a name="request"></a>请求
+以下示例演示在机器人和指定用户之间进行对等调用的请求。 在此示例中，媒体由应用程序在本地托管。 授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值必须替换为实际值才能使示例正常工作。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -370,17 +464,17 @@ Content-Type: application/json
 
 ---
 
-`<Media Session Configuration>` 是包含媒体堆栈的会话信息的序列化媒体会话配置。 此处应传递有关音频、视频、VBSS ssession 信息的特定信息。
+`<Media Session Configuration>` 是包含媒体堆栈的会话信息的序列化媒体会话配置。 有关音频、视频、VBSS ssession 信息的特定信息应在此处传递。
 
-下面是音频媒体会话 blob 的示例。
+下面是音频媒体会话 Blob 的示例。
 
 ```json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
 
->**注意：** 对于对等呼叫，预期通知仅适用于呼叫状态更改。
+>**注意：** 对于对等调用，预期通知仅用于调用状态更改。
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -455,12 +549,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>示例 3：使用服务托管媒体创建组呼叫
+### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>示例 3：使用服务托管媒体创建组调用
 
-这支持最多 5 个 VoIP 用户。 该示例演示如何创建具有两个 VoIP 用户的组呼叫。
-> **注意：** 此示例调用需要 权限 `Calls.InitiateGroupCalls.All` 。 创建的组呼叫不支持聊天或录制。
+这最多支持 5 个 VoIP 用户。 此示例演示如何创建包含两个 VoIP 用户的组调用。
+> **注意：** 此示例调用需要权 `Calls.InitiateGroupCalls.All` 限。 创建的组呼叫不支持聊天或录制。
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
@@ -524,12 +618,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>示例 4：使用应用程序托管媒体创建组呼叫
+### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>示例 4：使用应用程序托管媒体创建组调用
 
-这支持最多 5 个 VoIP 用户。 该示例演示如何创建具有两个 VoIP 用户的组呼叫。
-> **注意：** 此示例调用需要 权限 `Calls.InitiateGroupCalls.All` 。 创建的组呼叫不支持聊天或录制。
+这最多支持 5 个 VoIP 用户。 此示例演示如何创建包含两个 VoIP 用户的组调用。
+> **注意：** 此示例调用需要权 `Calls.InitiateGroupCalls.All` 限。 创建的组呼叫不支持聊天或录制。
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
@@ -594,16 +688,16 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>示例 5：使用服务托管媒体加入安排的会议
+### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>示例 5：与服务托管媒体加入计划会议
 
-若要加入安排的会议，我们需要获取主题 ID、消息 ID、组织者 ID 和计划会议的租户 ID。
-此信息可以从 Get [Online Meetings API 获取](../api/onlinemeeting-get.md)。
+若要加入计划的会议，我们需要获取安排会议的线程 ID、消息 ID、组织者 ID 和租户 ID。
+可从 [“获取联机会议”API](../api/onlinemeeting-get.md) 获取此信息。
 
-必须将授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从  [Get Online Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，以确保示例有效。
+必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从  [Get Online 会议 API](../api/onlinemeeting-get.md) 获取的详细信息替换为实际值，使示例正常工作。
 
-> **注意：** 此示例需要权限`Calls.JoinGroupCalls.All`或特定于`Calls.JoinGroupCalls.Chat`[资源的权限](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
+> **注意：** 此示例需要权`Calls.JoinGroupCalls.All`限或 [特定于](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)`Calls.JoinGroupCalls.Chat`资源的权限。
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 
@@ -680,7 +774,7 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response",
@@ -767,7 +861,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a>通知 - 建立
+#### <a name="notification---establishing"></a>通知 - 建立
 
 ```http
 POST https://bot.contoso.com/callback
@@ -817,7 +911,7 @@ Content-Type: application/json
 
 ```
 
-##### <a name="notification---established"></a>通知 - 已建立
+#### <a name="notification---established"></a>通知 - 已建立
 
 ```http
 POST https://bot.contoso.com/callback
@@ -866,7 +960,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster"></a>通知 - 名单
+#### <a name="notification---roster"></a>通知 - 名单
 
 ```http
 POST https://bot.contoso.com/callback
@@ -962,12 +1056,12 @@ Content-Type: application/json
 }
 ```
 
->**注意：** 对于除呼叫状态通知之外加入会议方案，我们接收名单通知。
+>**注意：** 对于除呼叫状态通知之外的加入会议方案，我们会收到名册通知。
 
 ### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>示例 6：使用应用托管媒体加入计划会议
-若要使用应用程序托管的媒体加入会议，请通过 [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 更新媒体配置，如以下示例所示。
+若要使用应用程序托管媒体加入会议，请使用 [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 更新媒体配置，如以下示例所示。
 
->**注意：** 此示例需要权限`Calls.AccessMedia.All`或特定于`Calls.AccessMedia.Chat`[资源的权限](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
+>**注意：** 此示例需要权`Calls.AccessMedia.All`限或 [特定于](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)`Calls.AccessMedia.Chat`资源的权限。
 
 <!-- {
   "blockType": "example",
@@ -1013,13 +1107,13 @@ Content-Type: application/json
 ```
 
 ### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>示例 7：使用服务托管媒体加入频道会议
-频道内的会议需要特定的详细信息，如主题 ID、messageid 和组织者详细信息，可以使用 [Get Online Meetings API 获取这些详细信息](../api/onlinemeeting-get.md)。
+频道内的会议需要使用 [Get Online 会议 API](../api/onlinemeeting-get.md) 获取的特定详细信息，例如线程 ID、messageid 和组织者详细信息。
 
-必须将授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从  [Get Online Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，以确保示例有效。
+必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从  [Get Online 会议 API](../api/onlinemeeting-get.md) 获取的详细信息替换为实际值，使示例正常工作。
 
-> **注意：** 此示例需要权限 `Calls.JoinGroupCalls.All` 。
+> **注意：** 此示例需要权 `Calls.JoinGroupCalls.All` 限。
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 <!-- {
   "blockType": "example",
@@ -1071,13 +1165,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>示例 8：使用服务托管媒体作为来宾加入频道会议
-若要以来宾身份加入频道会议，你需要创建来宾标识，并将其添加到加入[](../resources/identityset.md)会议请求中的呼叫源。
-the 显示名称 is the name you want to be displayed in the meeting for your guest identity. id 可能是标识来宾标识的唯一 ID。
+### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>示例 8：使用服务托管媒体以来宾身份加入频道会议
+若要以来宾身份加入频道会议，需要创建来宾 [标识](../resources/identityset.md) 并将其添加为加入会议请求中的呼叫源。
+显示名称是要在会议中显示来宾标识的名称。 ID 可能是标识来宾标识的唯一 ID。
 
-> **注意：** 此示例需要权限 `Calls.JoinGroupCallsAsGuest.All` 。
+> **注意：** 此示例需要权 `Calls.JoinGroupCallsAsGuest.All` 限。
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 <!-- {
   "blockType": "example",
@@ -1140,9 +1234,9 @@ Content-Type: application/json
 }
 ```
 
-> **注意：** 来宾加入取决于会议租户设置。 应用程序可能会进入大厅，等待用户进行注册。 此属性由 属性 `isInLobby` 定义
+> **注意：** 来宾加入取决于会议的租户设置。 应用程序可能会被放入大厅等待用户接受。 这是由属性定义的`isInLobby`
 
-##### <a name="notification---roster"></a>通知 - 名单
+#### <a name="notification---roster"></a>通知 - 名单
 
 ```http
 POST https://bot.contoso.com/callback
@@ -1197,17 +1291,17 @@ Content-Type: application/json
 }
 ```
 
-> **注意：** 在从会议厅中获准加入会议之前，应用程序不会接收会议参与者名单
+> **注意：** 在会议从大厅中承认之前，该应用程序将不会收到会议参与者的名单
 
-### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>示例 9：使用服务托管媒体创建对等 PSTN 呼叫
+### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>示例 9：使用服务托管媒体创建对等 PSTN 调用
 
-> **注意：** 此调用需要 Calls.Initiate.All 权限。
+> **注意：** 此调用需要 Call.Initiate.All 权限。
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给机器人](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+此调用需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [为机器人分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
-下面的示例展示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值替换为实际值，以确保示例有效。
-> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话 ID 是 E.164 格式的电话号码。
+以下示例演示在机器人和 PSTN 号码之间进行对等调用的请求。 在此示例中，媒体由服务托管。 授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值必须替换为实际值才能使示例正常工作。
+> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应与授权令牌中的应用程序 ID 匹配。 电话 ID 是 E.164 格式的电话号码。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -1367,15 +1461,15 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-10-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>示例 10：使用应用程序托管媒体创建对等 PSTN 呼叫
+### <a name="example-10-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>示例 10：使用应用程序托管媒体创建对等 PSTN 调用
 
 > **注意**：此示例需要 Calls.Initiate.All 和 Calls.AccessMedia.All 权限。
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给机器人](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+此调用需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [为机器人分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
-以下示例显示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由应用程序本地托管。 必须将授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值替换为实际值，以确保示例有效。
-> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话 ID 是 E.164 格式的电话号码。
+以下示例演示在机器人和 PSTN 号码之间进行对等调用的请求。 在此示例中，媒体由应用程序在本地托管。 授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值必须替换为实际值才能使示例正常工作。
+> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应与授权令牌中的应用程序 ID 匹配。 电话 ID 是 E.164 格式的电话号码。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
