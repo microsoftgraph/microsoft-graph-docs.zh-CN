@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 27d61f6e10d851272721da13a2cfebdd769fa933
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 2307fd3a8c4542eae1806f34bc2f9d7a20916848
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629015"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016825"
 ---
 # <a name="create-unifiedroleassignment"></a>创建 unifiedRoleAssignment
 
@@ -18,18 +18,18 @@ ms.locfileid: "64629015"
 
 创建新的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-### <a name="for-the-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
+### <a name="for-the-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | RoleManagement.ReadWrite.Directory |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | RoleManagement.ReadWrite.Directory |
+| Application                            | RoleManagement.ReadWrite.Directory |
 
 ### <a name="for-the-entitlement-management-provider"></a>对于权利管理提供程序
 
@@ -37,11 +37,11 @@ ms.locfileid: "64629015"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EntitlementManagement.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
-为角色分配创建一个目录提供程序：
+为目录提供程序创建角色分配：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -49,7 +49,7 @@ ms.locfileid: "64629015"
 POST /roleManagement/directory/roleAssignments
 ```
 
-为角色分配提供程序创建一个权限管理提供程序：
+为权利管理提供程序创建角色分配：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -66,28 +66,28 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 Azure Active Directory (由 **directoryScopeId**) Azure AD 中定义的作用域，或 **appScopeId** 指定的特定于应用程序的范围。 Azure AD 范围的示例包括租户 () `/` 、管理单元或应用程序。 有关 appScope 有关详细信息，请参阅 [appScope](../resources/appscope.md)。
+在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 Azure Active Directory 中定义的范围 (由 **directoryScopeId** 指定的 Azure AD) 或 **appScopeId** 指定的特定于应用程序的范围。 Azure AD 范围的示例包括租户 () `/` 、管理单元或应用程序。 有关 appScope 的详细信息，请参阅 [appScope](../resources/appscope.md)。
 
-下表显示创建 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象时所需的属性。
+下表显示了创建 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象时所需的属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|roleDefinitionId|String| 分配所针对的角色定义的标识符。|
-|principalId|String| 分配授予的主体的标识符。 |
-|directoryScopeId|String|表示工作分配范围的目录对象的标识符。 此属性或 **appScopeId** 是必需的。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。|
-|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 此属性或 **directoryScopeId** 是必需的。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元。|
+|roleDefinitionId|字符串| 分配所用于的角色定义的标识符。|
+|principalId|String| 向其授予分配的主体的标识符。 |
+|directoryScopeId|String|表示分配范围的目录对象的标识符。 需要此属性或 **appScopeId** 。 分配的范围确定已授予主体访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。|
+|appScopeId|字符串|分配范围特定于应用时特定于应用的范围的标识符。 需要此属性或 **directoryScopeId** 。 应用范围是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将范围限制为特定目录对象，例如管理单元。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-role-assignment-with-a-tenant-wide-scope"></a>示例 1：创建角色分配范围的范围的租户
+### <a name="example-1-create-a-role-assignment-with-a-tenant-wide-scope"></a>示例 1：创建具有租户范围的角色分配
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 请注意 roleDefinitionId 的 roleTemplateId 的使用。 roleDefinitionId 可以是服务范围的模板 ID 或特定于目录的 roleDefinitionId。
+下面展示了示例请求。 请注意，roleTemplateId 用于 roleDefinitionId。 roleDefinitionId 可以是服务范围的模板 ID，也可以是特定于目录的角色DefinitionId。
 
 
 
@@ -161,11 +161,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--create-a-role-assignment-with-an-administrative-unit-scope"></a>示例 2：创建角色分配管理单元作用域的组
+### <a name="example-2--create-a-role-assignment-with-an-administrative-unit-scope"></a>示例 2：创建具有管理单元范围的角色分配
 
 #### <a name="request"></a>请求
 
-以下示例为主体分配管理单元的"用户管理员"角色。
+以下示例通过管理单元为主体分配用户管理员角色。
 
 
 
@@ -239,11 +239,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3--create-a-role-assignment-with-an-application-scope"></a>示例 3：创建角色分配应用程序作用域的组
+### <a name="example-3--create-a-role-assignment-with-an-application-scope"></a>示例 3：创建具有应用程序范围的角色分配
 
 #### <a name="request"></a>请求
 
-下面的示例在应用程序作用域为主体分配应用程序管理员角色。 应用程序注册的对象 ID 为 661e1310-bd76-4795-89a7-8f3c8f855bfc。
+以下示例为主体分配应用程序范围内的应用程序管理员角色。 应用程序注册的对象 ID 为 661e1310-bd76-4795-89a7-8f3c8f855bfc。
 
 
 
@@ -320,7 +320,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-a-role-assignment-with-access-package-catalog-scope"></a>示例 4：创建角色分配包目录作用域的包
+### <a name="example-4-create-a-role-assignment-with-access-package-catalog-scope"></a>示例 4：创建具有访问包目录范围的角色分配
 
 #### <a name="request"></a>请求
 

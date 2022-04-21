@@ -5,34 +5,34 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3bebc76aac2d674cca95653c08ef12907f8e0a24
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: bfee6100df1de5bf524d067ed65c19032b3ae8fa
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629188"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016816"
 ---
 # <a name="list-unifiedroledefinitions"></a>列出 unifiedRoleDefinitions
 
 命名空间：microsoft.graph
 
-获取提供商 [的 unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象列表。
+获取提供程序的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象列表。
 
 目前支持以下 RBAC 提供程序：
-- Azure AD (目录) 
-- Azure AD (授权) 
+- 目录 (Azure AD) 
+- Azure AD (权利管理) 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-### <a name="for-the-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
+### <a name="for-the-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|Application | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 
 ### <a name="for-the-entitlement-management-provider"></a>对于权利管理提供程序
@@ -41,7 +41,7 @@ ms.locfileid: "64629188"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -60,7 +60,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 (`$filter` `eq` `in` 和属性) OData 查询参数的`id``displayName``isBuiltIn`运算符和运算符。 它还支持 `$expand` 关系。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 (和运算符) OData 查询参数和 `displayName``isBuiltIn` `id`属性。`in` `eq` `$filter` 它还支持 `$expand` 关系。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -74,7 +74,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的集合。
 
 ## <a name="example"></a>示例
 

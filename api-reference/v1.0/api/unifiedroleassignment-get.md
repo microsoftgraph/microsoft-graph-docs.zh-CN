@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5bc137caa9eb23f65a8d79515dc5484c48eb4629
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 3e090cb660e7f2dc22a1bb229cf96bbdd8033c7d
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672334"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016965"
 ---
 # <a name="get-unifiedroleassignment"></a>获取 unifiedRoleAssignment
 
@@ -22,13 +22,25 @@ ms.locfileid: "63672334"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+### <a name="for-the-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
+
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|Application | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+
+### <a name="for-the-entitlement-management-provider"></a>对于权利管理提供程序
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） |  EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All  |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|Application | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
+获取目录提供程序的角色分配：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,9 +48,17 @@ ms.locfileid: "63672334"
 GET /roleManagement/directory/roleAssignments/{id}
 ```
 
+获取权利管理提供程序的角色分配：
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments/{id}
+```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,11 +72,11 @@ GET /roleManagement/directory/roleAssignments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和请求的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1--get-the-details-of-a-role-assignment"></a>示例 1：获取角色分配
+### <a name="example-1--get-the-details-of-a-role-assignment"></a>示例 1：获取角色分配的详细信息
 
 #### <a name="request"></a>请求
 
@@ -126,11 +146,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-details-of-a-role-assignment-and-expand-the-relationships"></a>示例 2：获取角色分配并展开关系
+### <a name="example-2-get-the-details-of-a-role-assignment-and-expand-the-relationships"></a>示例 2：获取角色分配的详细信息并展开关系
 
 #### <a name="request"></a>请求
 
-下面是一个包含查询参数的请求 `$expand` 示例。
+下面是具有查询参数的请求示 `$expand` 例。
 
 
 

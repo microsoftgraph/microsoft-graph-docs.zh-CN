@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6f4d0038039f711bca5a7754fced2c516276b298
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: ebcd0088a85fb1c272f44e0b335b1aa9f6f05477
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332635"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016869"
 ---
 # <a name="list-extensionproperties"></a>列出 extensionProperties
 
@@ -18,7 +18,7 @@ ms.locfileid: "63332635"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索应用程序 [上的 extensionProperty](../resources/extensionproperty.md) 对象列表。
+检索应用程序上的 [extensionProperty](../resources/extensionproperty.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +35,7 @@ ms.locfileid: "63332635"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /applications/{id}/extensionProperties
+GET /applications/{application ObjectId}/extensionProperties
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -54,7 +54,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [extensionProperty](../resources/extensionproperty.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [extensionProperty](../resources/extensionproperty.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

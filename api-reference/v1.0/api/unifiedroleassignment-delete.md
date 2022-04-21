@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: eed79b67204666ae0d29cd2cff975b4deeb50676
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: a9fa75dd7dd1d48305fffb4871d5dacd1da1fdd8
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629790"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016923"
 ---
 # <a name="delete-unifiedroleassignment"></a>删除 unifiedRoleAssignment
 
@@ -18,17 +18,17 @@ ms.locfileid: "64629790"
 
 删除 [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-### <a name="for-the-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
+### <a name="for-the-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | RoleManagement.ReadWrite.Directory |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | RoleManagement.ReadWrite.Directory |
+| Application                            | RoleManagement.ReadWrite.Directory |
 
 ### <a name="for-the-entitlement-management-provider"></a>对于权利管理提供程序
 
@@ -36,11 +36,11 @@ ms.locfileid: "64629790"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EntitlementManagement.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
-从角色分配提供程序中删除一个目录：
+从目录提供程序中删除角色分配：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -48,7 +48,7 @@ ms.locfileid: "64629790"
 DELETE /roleManagement/directory/roleAssignments/{id}
 ```
 
-从角色分配管理提供程序中删除以下权限：
+从权利管理提供程序中删除角色分配：
 
 <!-- { "blockType": "ignored" } -->
 

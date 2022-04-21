@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a8653aa179b5577fa04f959c137bb71083198b7a
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 936694843e1d40de51de33f9f70ac61bb039512c
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396054"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016846"
 ---
 # <a name="get-extensionproperty"></a>获取 extensionProperty
 命名空间：microsoft.graph
@@ -35,11 +35,11 @@ ms.locfileid: "63396054"
 }
 -->
 ``` http
-GET /applications/{applicationsId}/extensionProperties/{extensionPropertyId}
+GET /applications/{application ObjectId}/extensionProperties/{extensionPropertyId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -51,7 +51,7 @@ GET /applications/{applicationsId}/extensionProperties/{extensionPropertyId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [extensionProperty](../resources/extensionproperty.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [extensionProperty](../resources/extensionproperty.md) 对象。
 
 ## <a name="examples"></a>示例
 

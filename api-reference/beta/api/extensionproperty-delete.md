@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b30de9c7078d879fedec5840ad83550588375ad0
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 21c5990ede8784afc6bc4b4be1fb0b46409cd6c9
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516312"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016951"
 ---
 # <a name="delete-extensionproperty"></a>删除 extensionProperty
 
@@ -35,7 +35,7 @@ ms.locfileid: "63516312"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/extensionProperties/{id}
+DELETE /applications/{application ObjectId}/extensionProperties/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
