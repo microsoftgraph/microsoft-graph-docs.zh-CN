@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 11902dde2f697ffc3d1e3022043dab9e2436817d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 0138fee6bd43e6d15a7f75d4d24baee90e53986c
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672670"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016937"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>向组授予 appRoleAssignment
 
@@ -18,9 +18,9 @@ ms.locfileid: "63672670"
 
 使用此 API 将应用角色分配给组。 该组的所有直接成员都将被视为已分配。 若要向组授予应用角色分配，需使用三个标识符：
 
-- `principalId`：要向其分配应用角色的组的 `id`。
-- `resourceId`：已定义应用角色的资源 `servicePrincipal` 的 `id`。
-- `appRoleId`：要分配给组的 `appRole`（在资源服务主体上定义）的 `id`。
+- **principalId**：要向其分配应用角色的 **组** 的 ID。
+- **resourceId**：已定义应用角色的资源 **servicePrincipal** 的 ID。
+- **appRoleId**：要分配给组的 **appRole** （在资源服务主体上定义）的 ID。
 
 要[使用组来管理对应用程序的访问](/azure/active-directory/users-groups-roles/groups-saasapps)，可能还需要其他许可证。
 
@@ -38,7 +38,7 @@ ms.locfileid: "63672670"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/appRoleAssignments
+POST /groups/{groupId}/appRoleAssignments
 ```
 
 > [!NOTE]
@@ -55,6 +55,15 @@ POST /groups/{id}/appRoleAssignments
 
 在请求正文中，提供 [appRoleAssignment](../resources/approleassignment.md) 对象的 JSON 表示形式。
 
+下表显示了创建 [appRoleAssignment](../resources/approleassignment.md) 时所需的属性。 根据需要为 **appRoleAssignment** 指定其他可写属性。
+
+| 属性 | 类型 | 说明 |
+|--|--|--|
+| appRoleId | Guid | 分配给主体的 [应用角色](../resources/approle.md)的标识符 (**id**)。 必须在资源应用程序的服务主体 (**resourceId**) 上的 **appRoles** 属性中公开此应用角色。 如果资源应用程序尚未声明任何应用角色，则可以指定默认应用角色 ID `00000000-0000-0000-0000-000000000000`，以表示将主体分配给资源应用，但没有任何特定应用角色。 |
+| principalId | Guid | [ 组的唯一标识符（**ID**）](../resources/group.md)被授予应用角色。 |
+| resourceId | Guid | 已为其分配的资源 [服务主体](../resources/serviceprincipal.md)的唯一标识符 (**id**)。 |
+
+
 ## <a name="response"></a>响应
 
 如果成功，此运营商将在响应正文中返回 `201 Created` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象。
@@ -63,7 +72,7 @@ POST /groups/{id}/appRoleAssignments
 
 ### <a name="request"></a>请求
 
-下面是一个请求示例。
+下面是一个请求示例。 在此示例中，URL 中的 ID 和 **principalId** 的值都将是已分配组的 ID。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -108,9 +117,6 @@ Content-Type: application/json
 
 ---
 
-
-在此示例中，`{id}` 和 `{principalId-value}` 均为已分配组的 `id`。
-
 ### <a name="response"></a>响应
 
 下面是一个响应示例。 
@@ -124,7 +130,7 @@ Content-Type: application/json
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -140,8 +146,6 @@ Content-type: application/json
   "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055"
 }
 ```
-
-请注意，本例中，请求 URL （`cde330e5-2150-4c11-9c5b-14bfdc948c79`） 中用作用户 **ID** 的值与正文中的 **principalId** 属性相同。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

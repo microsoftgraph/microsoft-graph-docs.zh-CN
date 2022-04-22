@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b12d80ae786abc93d9b3e00358f7b18d42b89140
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: b1b2dc2890686d61845223a517698096ef1d9a0a
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917771"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016811"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -53,8 +53,9 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [所有参与者静音](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | 将呼叫中的所有参与者设为静音。                                              |
 | [参与者静音](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | 群组通话中参与者静音。                                           |
 | [配置 Audio Mixer](../api/participant-configuremixer.md)      | [commsOperation](commsoperation.md)                         | 在多方对话中配置音频。                                     |
-| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | 通过发布到 audioRoutingGroups 集合创建一个新的 audioRoutingGroup。 |
-| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) 集合        | 获取 audioRoutingGroup 对象集合。                                      |
+| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | 通过发布到 audioRoutingGroups 集合来创建新的 **audioRoutingGroup** 。 |
+| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) 集合        | 获取 **audioRoutingGroup** 对象集合。                                      |
+| [添加大型库视图](../api/call-addlargegalleryview.md)            | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md)  | 将大型库视图添加到调用。                                      |
 | **Interactive-Voice-Response**                                     |                                                             |                                                                                 |
 | [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | 在呼叫中播放提示。                                                        |
 | [RecordResponse](../api/call-record.md)                            | [recordOperation](recordoperation.md)                       | 录制来自呼叫方的简短音频回复。                                        |
