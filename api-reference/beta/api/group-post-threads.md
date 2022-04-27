@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ba5ace674ce3482ca5316589a55ba61fa22209e8
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 8b1b3bf121ab873d1645684dd73d04b9d58013a0
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587495"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061144"
 ---
 # <a name="create-conversation-thread"></a>创建对话线程
 
@@ -24,7 +24,7 @@ ms.locfileid: "64587495"
 
 注意：你还可以 [在现有会话中启动新线程](conversation-post-threads.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "64587495"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | Group.ReadWrite.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| Application                            | 不支持。                              |
+| 应用程序                            | 不支持。                              |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -136,7 +136,7 @@ Content-type: application/json
 } -->
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

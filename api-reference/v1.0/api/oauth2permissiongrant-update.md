@@ -1,25 +1,25 @@
 ---
 title: 更新 oAuth2PermissionGrant
-description: 更新 oAuth2PermissionGrant 的属性，表示委派权限授予。
+description: 更新 oAuth2PermissionGrant 的属性，表示委派的权限授予。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: b1da4a17b903ec2f340f3d63c83dcef14a9831d5
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 062eec013595bcc9957ed85eb447cf7355bd1570
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672257"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061088"
 ---
-# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新 oAuth2PermissionGrant (委派) 
+# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新 (oAuth2PermissionGrant) 委派的权限授予
 
 命名空间：microsoft.graph
 
 
 更新 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的属性，表示委派的权限授予。
 
-**oAuth2PermissionGrant** 可通过在范围中添加或删除列表中的项目来更新以更改授予哪些委派 **权限**。
+可以通过在 **范围** 中添加或删除列表中的项来更新 **oAuth2PermissionGrant** 以更改授予哪些委派权限。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "63672257"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|应用程序 | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

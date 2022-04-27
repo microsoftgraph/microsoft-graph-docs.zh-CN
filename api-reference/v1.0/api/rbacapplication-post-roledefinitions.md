@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ebeea0cdf0922dde8dff004f21832df206cfaad0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 582d0c3619779c3291a0cf2bfaa06bab62a4fee1
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134390"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060722"
 ---
 # <a name="create-unifiedroledefinition"></a>创建 unifiedRoleDefinition
 
@@ -47,17 +47,17 @@ POST /roleManagement/directory/roleDefinitions
 
 在请求正文中，提供 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的 JSON 表示形式。
 
-下表显示创建 roleDefinition 时所需的属性。
+下表显示了创建 roleDefinition 时所需的属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|displayName |string |角色显示名称的角色定义。|
-|isEnabled |Boolean |指示角色是否已启用分配的标志。 如果 `false` 为 ，则角色不可用于分配。|
+|displayName |string |角色定义的显示名称。|
+|isEnabled |Boolean |指示是否为分配启用角色的标志。 如果 `false`该角色不可用于分配。|
 |rolePermissions |[unifiedRolePermission](../resources/unifiedrolepermission.md) 集合 |角色中包含的权限列表。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -142,7 +142,7 @@ Content-type: application/json
     "displayName": "Application Registration Support Administrator",
     "isBuiltIn": false,
     "isEnabled": true,
-    "templateId": "c2cb59a3-2d01-4176-a458-95b0e674966f",
+    "templateId": "d5eec5e0-6992-4c6b-b430-0f833f1a815a",
     "version": null,
     "rolePermissions": [
         {
@@ -153,7 +153,7 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('c2cb59a3-2d01-4176-a458-95b0e674966f')/inheritsPermissionsFrom"
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom"
 }
 ```
 

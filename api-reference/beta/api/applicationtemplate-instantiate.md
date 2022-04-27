@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c55b93249535bc12b26c299a3d4a916f739d0fe4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f0374ec223daba8f5df49ebb89d764eec24cee0c
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339292"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060554"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -18,7 +18,7 @@ ms.locfileid: "62339292"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将应用程序实例从应用程序Azure AD添加到目录中。
+将应用程序的实例从Azure AD应用程序库添加到目录中。 还可以使用此 API 实例化 [非库应用](/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate** 对象使用以下 ID： `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 ## <a name="permissions"></a>权限
 
@@ -38,6 +38,8 @@ ms.locfileid: "62339292"
 POST /applicationTemplates/{id}/instantiate
 ```
 
+若要实例化非库应用，请使用`8adf8e6e-67b2-4cf2-a259-e3dc5476c621` `{applicationTemplate-id}`
+
 ## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明   |
@@ -54,7 +56,7 @@ POST /applicationTemplates/{id}/instantiate
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 OK` 正文中返回 响应代码和新的 [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -62,9 +64,7 @@ POST /applicationTemplates/{id}/instantiate
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。
- 
-> 可以使用此 API 实例化 [非库应用](/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate** 使用以下 ID： `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`。
+下面展示了示例请求。 请求 URL 指定 `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 为应用程序模板 ID。 这意味着请求正在实例化非库应用。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -73,11 +73,11 @@ POST /applicationTemplates/{id}/instantiate
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/applicationTemplates/{id}/instantiate
+POST https://graph.microsoft.com/beta/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
 Content-type: application/json
 
 {
-  "displayName": "My custom name"
+    "displayName": "testProperties"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -120,56 +120,59 @@ Content-type: application/json
 } -->
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-   "servicePrincipal":{
-      "accountEnabled":true,
-      "addIns":[
-         {
-            "id":"id-value",
-            "type":"type-value",
-            "properties":[
-               {
-                  "key":"key-value",
-                  "value":"value-value"
-               }
-            ]
-         }
-      ],
-      "appDisplayName":"appDisplayName-value",
-      "appId":"appId-value",
-      "appOwnerOrganizationId":"appOwnerOrganizationId-value",
-      "appRoleAssignmentRequired":true
-   },
-   "application":{
-      "api":{
-         "acceptedAccessTokenVersion":1,
-         "publishedPermissionScopes":[
-            {
-               "adminConsentDescription":"adminConsentDescription-value",
-               "adminConsentDisplayName":"adminConsentDisplayName-value",
-               "id":"id-value",
-               "isEnabled":true,
-               "type":"type-value",
-               "userConsentDescription":"userConsentDescription-value",
-               "userConsentDisplayName":"userConsentDisplayName-value",
-               "value":"value-value"
-            }
-         ]
-      },
-      "allowPublicClient":true,
-      "applicationAliases":[
-         "applicationAliases-value"
-      ],
-      "createdDateTime":"datetime-value",
-      "installedClients":{
-         "redirectUrls":[
-            "redirectUrls-value"
-         ]
-      }
-   }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.applicationServicePrincipal",
+    "application": {
+        "objectId": "428fbcb1-35bc-471d-95f2-6cc339357cb5",
+        "appId": "23a223ba-bb90-4949-8232-1bf479189e9b",
+        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+        "displayName": "testProperties",
+        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+        "identifierUris": [],
+        "publicClient": null,
+        "replyUrls": [],
+        "logoutUrl": null,
+        "samlMetadataUrl": null,
+        "errorUrl": null,
+        "groupMembershipClaims": null,
+        "availableToOtherTenants": false
+    },
+    "servicePrincipal": {
+        "objectId": "7b358fa1-7d10-4a57-bd96-b7e63c2f9be5",
+        "deletionTimestamp": null,
+        "accountEnabled": true,
+        "appId": "23a223ba-bb90-4949-8232-1bf479189e9b",
+        "appDisplayName": "testProperties",
+        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+        "appOwnerTenantId": "29a4f813-9274-4e1b-858d-0afa98ae66d4",
+        "appRoleAssignmentRequired": true,
+        "displayName": "testProperties",
+        "errorUrl": null,
+        "loginUrl": null,
+        "logoutUrl": null,
+        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+        "samlMetadataUrl": null,
+        "microsoftFirstParty": null,
+        "publisherName": "Contoso",
+        "preferredSingleSignOnMode": null,
+        "preferredTokenSigningKeyThumbprint": null,
+        "preferredTokenSigningKeyEndDateTime": null,
+        "replyUrls": [],
+        "servicePrincipalNames": [
+            "23a223ba-bb90-4949-8232-1bf479189e9b"
+        ],
+        "tags": [
+            "WindowsAzureActiveDirectoryIntegratedApp",
+            "WindowsAzureActiveDirectoryCustomSingleSignOnApplication"
+        ],
+        "notificationEmailAddresses": [],
+        "samlSingleSignOnSettings": null,
+        "keyCredentials": [],
+        "passwordCredentials": []
+    }
 }
 ```
 

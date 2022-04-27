@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph API 配置应用程序代理
 description: 使用 Microsoft Graph API 配置应用程序代理，以提供对本地应用程序的远程访问和单一登录。
-author: davidmu1
+author: FaithOmbongi
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: c6466de02e1521889db27b509bc0ecb2d07cd4af
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: 832060f2aed60311b8315a4511a467cc57847f47
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685206"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060777"
 ---
 # <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>使用 Microsoft 图形 API 配置应用程序代理
 
@@ -110,7 +110,7 @@ Content-type: application/json
     "externalAuthenticationType": "aadPreAuthentication",
     "internalUrl": "https://contosoiwaapp.com",
     "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-  }
+  },
   "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
   "web": {
     "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],

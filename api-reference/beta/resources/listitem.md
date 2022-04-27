@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
-description: 此资源表示 SharePoint list 中的项目。
-ms.date: 09/11/2017
-title: ListItem
+description: 此资源表示SharePoint列表中的项。
+title: listItem 资源
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e1a1c17a7feabb66be08c7a036191d82ec18ff45
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: bfda041c473da6d5d98c7c6b076ba9be276cd486
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722683"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060673"
 ---
-# <a name="listitem-resource"></a>ListItem 资源
+# <a name="listitem-resource"></a>listItem 资源
 
 命名空间：microsoft.graph
 
@@ -41,6 +40,9 @@ SharePoint 文档库中的所有项目可以表示为 **listItem** 或 [driveIte
 | [更新][]                     | PATCH /items/{item-id}                       |
 | [更新列值][Update] | PATCH /items/{item-id}/fields                |
 | [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
+|[列出 documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
+|[创建 documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
+|[还原 documentSetVersion](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
 
 [Get]: ../api/listitem-get.md
 [获取分析结果]: ../api/itemanalytics-get.md
@@ -70,6 +72,7 @@ SharePoint 文档库中的所有项目可以表示为 **listItem** 或 [driveIte
   /* relationships */
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "documentSetVersions": [{"@odata.type": "microsoft.graph.documentSetVersion"}],
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
 
@@ -118,7 +121,8 @@ SharePoint 文档库中的所有项目可以表示为 **listItem** 或 [driveIte
 | 关系 | 类型                           | 说明                                                                                        |
 | :----------- | :----------------------------- | :------------------------------------------------------------------------------------------------- |
 | activities   | [itemActivity][] 集合    | 最近发生在此项上的活动的列表。                                        |
-| 分析    | [itemAnalytics][] 资源     | 此项目上发生的查看活动的相关分析。                                  |
+| 分析    | [itemAnalytics][] 资源     | 此项目上发生的查看活动的相关分析。|
+|documentSetVersions|[documentSetVersion](../resources/documentsetversion.md) 集合| 用户创建的文档集版本的版本信息。|
 | driveItem    | [driveItem][]                  | 对于文档库，**driveItem** 关系将 listItem 显示为 **[driveItem][]**。 |
 | fields       | [fieldValueSet][]              | 在此列表项上设置的列的值。                                                   |
 | 版本     | [listItemVersion][] 集合 | 先前版本的列表项的列表。                                                    |

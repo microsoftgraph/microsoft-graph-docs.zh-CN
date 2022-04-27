@@ -1,49 +1,53 @@
 ---
 title: 使用 Microsoft Graph标识保护 API
-description: 使用 Microsoft Graph查询和接收有关 Identity Protection 检测到Azure AD的信息。
+description: 使用 Microsoft Graph查询和接收有关Azure AD标识保护检测到的风险的信息。
 author: cloudhandler
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: b170326d51361643c8f9335a601b0f26a73fd35e
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: 2fc391e49d9d177c8487e23b752bdfdc276c186d
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161605"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65059904"
 ---
 # <a name="use-the-microsoft-graph-identity-protection-apis"></a>使用 Microsoft Graph标识保护 API
 
 命名空间：microsoft.graph
 
-Azure Active Directory (Azure AD) Identity [Protection](/azure/active-directory/identity-protection/overview-identity-protection)是一种工具，允许组织发现、调查和修正其组织中基于标识Azure AD风险。 可以使用以下 Microsoft Graph API 查询 Identity Protection 检测到Azure AD风险：
+Azure Active Directory (Azure AD) [标识保护](/azure/active-directory/identity-protection/overview-identity-protection)是允许组织发现、调查和修正其Azure AD组织中基于标识的风险的工具。 可以使用以下 Microsoft Graph API 来查询Azure AD标识保护检测到的风险：
 
-* [riskDetection](riskdetection.md) - Graph Microsoft 查询用户和登录链接风险检测列表，以及有关检测的相关信息。 Identity Protection 中Azure AD检测包括任何与目录中的用户帐户相关的已识别可疑操作。
+* [riskDetection](riskdetection.md) - 查询 Microsoft Graph，以获取用户和登录链接风险检测的列表以及有关检测的相关信息。 Azure AD标识保护中的风险检测包括与目录中的用户帐户相关的任何已识别的可疑操作。
 
-* [riskyUsers](riskyuser.md) - 查询 Microsoft Graph，了解标识保护Azure AD有风险的用户的信息。 用户风险表示给定标识或帐户受到威胁的可能性。 这些风险使用 Microsoft 的内部和外部威胁情报源（包括安全研究人员、执法机构、Microsoft 的安全团队和其他受信任来源）脱机计算。
+* [riskyUsers](riskyuser.md) - 查询 Microsoft Graph，以获取有关Azure AD标识保护检测为有风险的用户的信息。 用户风险表示给定标识或帐户遭到入侵的概率。 这些风险是使用 Microsoft 的内部和外部威胁情报源（包括安全研究人员、执法专业人员、Microsoft 安全团队和其他受信任来源）脱机计算的。
 
-* [signIn](signin.md) - Graph Microsoft Azure AD使用与风险状态、详细信息和级别相关的特定属性登录的信息。 登录风险表示给定身份验证请求未由标识所有者授权的概率。 可以使用 Microsoft 的内部和外部威胁情报源（包括安全研究人员、执法机构专业人员、Microsoft 的安全团队和其他受信任来源）实时或脱机计算这些风险。
+* [signIn](signin.md) - 查询 Microsoft Graph，以获取与风险状态、详细信息和级别相关的特定属性Azure AD登录的信息。 登录风险表示标识所有者未授权给定身份验证请求的概率。 这些风险可以使用 Microsoft 的内部和外部威胁情报源（包括安全研究人员、执法专业人员、Microsoft 的安全团队和其他受信任的来源）实时计算或脱机计算。
 
 
-## <a name="what-can-i-do-with-identity-protection-apis-in-microsoft-graph"></a>Microsoft Graph 中的标识保护 API 可以Graph？
+## <a name="what-can-i-do-with-identity-protection-apis-in-microsoft-graph"></a>如何在 Microsoft Graph 中使用标识保护 API？
 
 以下是处理审核日志数据的常见请求：
 
 Operation | URL
 :----------|:----
 获取有风险的用户 | [GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskyUsers&version=v1.0)
-获取风险检测 | [GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskDetections&version=v1.0)
+GET 风险检测 | [GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskDetections&version=v1.0)
 获取用户的风险历史记录 | [GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/{riskyUserId}/history](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskyUsers/{riskyUserId}/history&version=v1.0)
-确认用户受到威胁 | [发布 https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/confirmCompromised&version=v1.0)
+确认用户已泄露 | [发布 https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/confirmCompromised&version=v1.0)
 消除有风险的用户 | [发布 https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/dismiss](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/dismiss&version=v1.0)
 
-有关特定指南和其他信息，请参阅使用 Microsoft Graph [API 识别和修正风险](/graph/tutorial-riskdetection-api)。
+有关具体指南和其他信息，请参阅[使用 Microsoft Graph API 识别和修正风险](/graph/tutorial-riskdetection-api)。
 
 ## <a name="what-licenses-do-i-need"></a>需要哪些许可证？
 
-Azure AD Identity Protection 是一项高级功能。 你需要一Azure AD Premium P1或 P2 许可证才能访问 Microsoft Graph [riskDetection API](riskdetection.md) (注意： P1 许可证会收到有限的) 。 [riskyUsers API](riskyuser.md)仅适用于Azure AD Premium P2许可证。
+Azure AD标识保护是一项高级功能。 需要一个Azure AD Premium P1或 P2 许可证才能访问 Microsoft Graph [riskDetection API](riskdetection.md) (注意：P1 许可证) 收到有限的风险信息。 [riskyUsers API](riskyuser.md) 仅适用于Azure AD Premium P2许可证。
+
+## <a name="how-much-data-is-available"></a>有多少数据可用？
+
+风险数据的可用性受[Azure AD数据保留策略](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)的约束。
 
 ## <a name="see-also"></a>另请参阅
 
-* [关于 Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
-* [开始使用 Azure Active Directory Identity Protection 和 Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
+* [关于Azure Active Directory标识保护](/azure/active-directory/identity-protection/overview-identity-protection)
+* [使用 Azure Active Directory 标识保护和 Microsoft Graph 开始](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

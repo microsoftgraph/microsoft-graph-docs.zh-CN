@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 49a6b986055207205f1af3778dfed7a5ccf01e74
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 7ed0b30e2e2f1a2c7c0b995cc8062a4bf0e68fde
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669870"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061081"
 ---
 # <a name="create-unifiedroledefinition"></a>创建 unifiedRoleDefinition
 
@@ -18,16 +18,16 @@ ms.locfileid: "63669870"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为 RBAC [提供程序创建新的 unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
+为 RBAC 提供程序创建新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
 
 目前支持以下 RBAC 提供程序：
 - 云电脑
-- Intune (设备) 
+- 设备管理 (Intune) 
 - 目录 (Azure AD) 
 
 ## <a name="permissions"></a>权限
 
-根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解更多信息，包括在 [选择](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 更多特权权限之前要谨慎，请参阅 [权限](/graph/permissions-reference)。 
+根据 RBAC 提供程序和权限类型 (委派或应用程序) 需要，请从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权权限之前 [要小心](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) ，请参阅 [权限](/graph/permissions-reference)。 
 
 ### <a name="for-a-cloud-pc-provider"></a>对于云电脑提供商
 
@@ -37,7 +37,7 @@ ms.locfileid: "63669870"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All  |
 
-### <a name="for-a-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
+### <a name="for-a-device-management-intune-provider"></a>对于设备管理 (Intune) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,19 +55,19 @@ ms.locfileid: "63669870"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要为设备管理提供程序创建角色定义，请运行：
+若要为设备管理提供程序创建角色定义，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/deviceManagement/roleDefinitions
 ```
 
-为目录提供程序创建角色定义：
+若要为目录提供程序创建角色定义，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/directory/roleDefinitions
 ```
 
-若要为云电脑提供商创建角色定义，请运行：
+若要为云电脑提供商创建角色定义，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/cloudPc/roleDefinitions
@@ -83,17 +83,17 @@ POST /roleManagement/cloudPc/roleDefinitions
 
 在请求正文中，提供 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的 JSON 表示形式。
 
-下表显示创建 roleDefinition 时所需的属性。
+下表显示了创建 roleDefinition 时所需的属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|displayName |string |角色显示名称的角色定义。|
-|isEnabled |Boolean |指示角色是否已启用分配的标志。 如果为 false，则角色不能用于分配。|
+|displayName |string |角色定义的显示名称。|
+|isEnabled |Boolean |指示是否为分配启用角色的标志。 如果为 false，则该角色不可用于分配。|
 |rolePermissions |[unifiedRolePermission](../resources/unifiedrolepermission.md) 集合 |角色中包含的权限列表。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
 
 ## <a name="example-1create-a-custom-role-for-a-directory-provider"></a>示例 1：为目录提供程序创建自定义角色
 
@@ -173,7 +173,7 @@ Content-type: application/json
     "displayName": "Application Registration Support Administrator",
     "isBuiltIn": false,
     "isEnabled": true,
-    "templateId": "c2cb59a3-2d01-4176-a458-95b0e674966f",
+    "templateId": "d5eec5e0-6992-4c6b-b430-0f833f1a815a",
     "version": null,
     "rolePermissions": [
         {
@@ -184,7 +184,7 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('c2cb59a3-2d01-4176-a458-95b0e674966f')/inheritsPermissionsFrom",
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": []
 }
 ```

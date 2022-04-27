@@ -1,18 +1,18 @@
 ---
-title: 将 connectorGroup 分配给应用程序
-description: 使用此 API 将 connectorGroup 分配给应用程序
+title: 将 connectorGroup 分配到应用程序
+description: 使用此 API 将 connectorGroup 分配到应用程序
 ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1bf14d7060aae8a329259bd3a50772fc5252b72b
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: fec92858ff617b83d26a60d4bd750034c9acec40
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671144"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060003"
 ---
-# <a name="assign-a-connectorgroup-to-an-application"></a>将 connectorGroup 分配给应用程序
+# <a name="assign-a-connectorgroup-to-an-application"></a>将 connectorGroup 分配到应用程序
 
 命名空间：microsoft.graph
 
@@ -27,7 +27,7 @@ ms.locfileid: "63671144"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。  |
+|应用程序 | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ PUT /applications/{id}/connectorGroup/$ref
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer。 必需。|
+| Authorization  | 承载。 必需。|
 | Content-type | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
@@ -46,7 +46,7 @@ PUT /applications/{id}/connectorGroup/$ref
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [application](../resources/application.md) 对象。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

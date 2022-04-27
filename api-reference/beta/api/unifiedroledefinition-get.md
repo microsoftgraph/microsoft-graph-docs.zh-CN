@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f24ed48d9167d3f8bfa6c8c74fe1c9f74a868a7d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 8b7db1af8d1ba0fb6f3fa130c89732a1ce9fb87e
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670857"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060805"
 ---
 # <a name="get-unifiedroledefinition"></a>获取 unifiedRoleDefinition
 
@@ -18,17 +18,17 @@ ms.locfileid: "63670857"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 RBAC 提供程序 [的 unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) 对象的属性和关系。 
+获取 RBAC 提供程序的 [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) 对象的属性和关系。 
 
 目前支持以下 RBAC 提供程序：
 - 云电脑 
-- Intune (设备) 
-- directory (Azure AD directory roles) 
+- 设备管理 (Intune) 
+- 目录 (Azure AD目录角色) 
 - 权利管理 (Azure AD权利管理) 
 
 ## <a name="permissions"></a>权限
 
-根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解更多信息，包括在 [选择](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 更多特权权限之前要谨慎，请参阅 [权限](/graph/permissions-reference)。 
+根据 RBAC 提供程序和权限类型 (委派或应用程序) 需要，请从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权权限之前 [要小心](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) ，请参阅 [权限](/graph/permissions-reference)。 
 
 ### <a name="for-a-cloud-pc-provider"></a>对于云电脑提供商
 
@@ -38,7 +38,7 @@ ms.locfileid: "63670857"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.Read.CloudPC、CloudPC.Read.All、RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All、RoleManagement.Read.All  |
 
-### <a name="for-a-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
+### <a name="for-a-device-management-intune-provider"></a>对于设备管理 (Intune) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -60,7 +60,7 @@ ms.locfileid: "63670857"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -106,11 +106,11 @@ GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和请求的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-definition-of-a-custom-role-for-a-directory-provider"></a>示例 1：获取目录提供程序的自定义角色的定义
+### <a name="example-1-get-the-definition-of-a-custom-role-for-a-directory-provider"></a>示例 1：获取目录提供程序的自定义角色定义
 
 #### <a name="request"></a>请求
 
@@ -172,7 +172,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions/$entity",
-    "id": "429c3819-053d-4250-9926-4c7dcb18ae17",
+    "id": "f189965f-f560-4c59-9101-933d4c87a91a",
     "description": "Allows reading Application Registrations",
     "displayName": "Application Registration Reader",
     "isBuiltIn": false,
@@ -300,7 +300,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>示例 3：获取Azure AD角色的定义，并$expand继承自的角色定义
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>示例 3：获取Azure AD内置角色的定义，并对其继承的角色$expand
 
 #### <a name="request"></a>请求
 
@@ -474,7 +474,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-definition-of-a-built-in-role-for-a-cloud-pc-provider"></a>示例 4：获取云电脑提供商的内置角色的定义
+### <a name="example-4-get-the-definition-of-a-built-in-role-for-a-cloud-pc-provider"></a>示例 4：获取云电脑提供商的内置角色定义
 
 #### <a name="request"></a>请求
 
@@ -557,7 +557,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-5-get-the-definition-of-a-built-in-role-for-the-entitlement-management-provider"></a>示例 5：获取权利管理提供程序的内置角色的定义
+## <a name="example-5-get-the-definition-of-a-built-in-role-for-the-entitlement-management-provider"></a>示例 5：获取权利管理提供程序的内置角色定义
 
 #### <a name="request"></a>请求
 

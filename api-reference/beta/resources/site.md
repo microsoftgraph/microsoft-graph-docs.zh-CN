@@ -5,12 +5,12 @@ title: site 资源类型
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 52d5a66533304d2b7df479e2393a7a4a7cf41974
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 423986ac43de3558836660a1684978784db724eb
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586865"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65059968"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -83,7 +83,7 @@ ms.locfileid: "64586865"
 | **lastModifiedDateTime** | DateTimeOffset     | 上次修改项目的日期和时间。只读。                                       |
 | **name**                 | string             | 项目名称/标题。                                                                  |
 | **根**                 | [根][]           | 如果存在，则表示这是网站集中的根网站。只读。            |
-| **设置**             | [siteSettings]     | 此网站上的设置。 仅在 $select 上返回。 只读。                                |
+| **设置**             | [siteSettings]     | 此网站上的设置。 只读。                                |
 | **sharepointIds**        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。                       |
 | **siteCollection**       | [siteCollection][] | 提供有关该网站的网站集的详细信息。仅在根网站上可用。只读。 |
 | **webUrl**               | string (url)       | 在浏览器中显示此项目的 URL。只读。                                          |

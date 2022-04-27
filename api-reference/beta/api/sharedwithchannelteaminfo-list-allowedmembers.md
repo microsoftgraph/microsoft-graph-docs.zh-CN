@@ -5,12 +5,12 @@ author: devjha-ms
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 170181e59e2f427d87ce9a55c1c5165121d77262
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: eae5653a68d72d8ec68ad3eb81d96bc192c3f90a
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704259"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060855"
 ---
 # <a name="list-allowedmembers"></a>列出 allowedMembers
 命名空间：microsoft.graph
@@ -18,6 +18,7 @@ ms.locfileid: "64704259"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取可以访问共享的[频道](../resources/channel.md)的 [conversationMembers](../resources/conversationmember.md) 列表。
+
 此方法不从[团队](../resources/team.md)返回以下 [conversationMembers](../resources/conversationmember.md)：
 - 具有 `Guest` 角色的用户
 - 在租户中进行外部身份验证的用户

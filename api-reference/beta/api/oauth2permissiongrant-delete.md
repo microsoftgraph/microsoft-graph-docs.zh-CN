@@ -1,29 +1,29 @@
 ---
-title: '删除委派权限授予 (oAuth2PermissionGrant) '
+title: '删除 oAuth2PermissionGrant (委派的权限授予) '
 description: 删除表示委派权限授予的 oAuth2PermissionGrant。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 6f2d7d0a0f0efdcd0c5fadf2dc1f49a53db82e7a
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 4f26af9ea04979dc50070c4ab0d33e2b7b9c0b81
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669548"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060547"
 ---
-# <a name="delete-oauth2permissiongrant-a-delegated-permission-grant"></a>删除委派权限授予 (oAuth2PermissionGrant) 
+# <a name="delete-oauth2permissiongrant-a-delegated-permission-grant"></a>删除 oAuth2PermissionGrant (委派的权限授予) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除表示委派权限授予 [的 oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)。
+删除表示委派权限授予的 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)。
 
-删除委派的权限授予后，将撤消授予该权限的访问权限。 现有访问令牌在生存期内将继续有效，但不会为已删除的 **oAuth2PermissionGrant** 中标识的委派权限授予新的访问令牌。
+删除委派的权限授予后，将撤销授予的访问权限。 现有访问令牌的生存期将继续有效，但不会为已删除的 **oAuth2PermissionGrant** 中标识的委派权限授予新的访问令牌。
 
 > [!NOTE]
-> 可能有两个委派权限授予，授权应用程序在调用 API 时代表用户操作。 如果用户代表自己同意应用程序 (创建具有 **consentType** *主体* 的 **oAuth2PermissionGrant**、标识用户) 然后管理员代表所有用户授予租户范围的管理员许可 (则可能会发生这种情况 (创建具有 *AllPrincipals*) **consentType** 的第二 **个 oAuth2PermissionGrant**。
+> 可能有两个委派的权限授予，授权应用程序在调用 API 时代表用户采取行动。 当用户代表自己同意应用程序 (使用 **consentType** *主体* 创建 **oAuth2PermissionGrant**，标识用户) ，然后管理员代表所有用户授予租户范围的管理员同意时，可能会发生这种情况， (使用 *AllPrincipals*) 的 **consentType** 创建第二个 **oAuth2PermissionGrant**。
 
 ## <a name="permissions"></a>权限
 
@@ -33,7 +33,7 @@ ms.locfileid: "63669548"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|应用程序 | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

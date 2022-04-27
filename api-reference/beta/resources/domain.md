@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 0909c6b1e414fe38b438e2b491e4110b7b6e6825
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 981b64bf5becec9bc51072700580781f855815bf
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848678"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060561"
 ---
 # <a name="domain-resource-type"></a>域资源类型
 
@@ -40,21 +40,22 @@ ms.locfileid: "64848678"
 |:---------------|:--------|:----------|
 |[获取域](../api/domain-get.md) | [domain](domain.md) | 读取域对象的属性和关系。|
 |[创建域](../api/domain-post-domains.md) | [domain](domain.md) | 向租户添加域。 |
+|[列出域](../api/domain-list.md) | [domain](domain.md) | 检索链接到租户的所有域。 |
 |[列出 domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| 检索引用域的目录对象列表。|
 |[列出 serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) 集合|  检索域配置的域 DNS 记录列表。|
 |[列出 verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) 集合|  检索域 DNS 记录的列表以进行域验证。|
 |[更新域](../api/domain-update.md) | [domain](domain.md) |更新域。|
-|[删除域](../api/domain-delete.md) | None |删除域。|
-|[ForceDelete 域](../api/domain-forcedelete.md)|None|使用异步操作删除域。|
+|[删除域](../api/domain-delete.md) | 无 |删除域。|
+|[ForceDelete 域](../api/domain-forcedelete.md)|无|使用异步操作删除域。|
 |[验证域](../api/domain-verify.md)|[domain](domain.md)|验证域的所有权。|
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|authenticationType|字符串| 指示为域配置的身份验证类型。 值为或 `Managed` `Federated`. `Managed`指示Azure AD执行用户身份验证的云托管域。 `Federated`指示身份验证通过Active Directory 联合身份验证服务与标识提供者（例如租户的本地 Active Directory）联合。 此属性为只读属性，不可为 null。 |
-|availabilityStatus|字符串| 此属性始终 `null` 是使用 [验证](../api/domain-verify.md) 操作时除外。 使用 [验证](../api/domain-verify.md) 操作时，会在响应中返回 **域** 实体。 响应中 **域** 实体的 **availabilityStatus** 属性为或 `AvailableImmediately` `EmailVerifiedDomainTakeoverScheduled`。|
-|id|字符串| 域的完全限定名称。 键，不可变，不可为 null，唯一。 |
+|authenticationType|String| 指示为域配置的身份验证类型。 值为或 `Managed` `Federated`. `Managed`指示Azure AD执行用户身份验证的云托管域。 `Federated`指示身份验证通过Active Directory 联合身份验证服务与标识提供者（例如租户的本地 Active Directory）联合。 此属性为只读属性，不可为 null。 |
+|availabilityStatus|String| 此属性始终 `null` 是使用 [验证](../api/domain-verify.md) 操作时除外。 使用 [验证](../api/domain-verify.md) 操作时，会在响应中返回 **域** 实体。 响应中 **域** 实体的 **availabilityStatus** 属性为或 `AvailableImmediately` `EmailVerifiedDomainTakeoverScheduled`。|
+|id|String| 域的完全限定名称。 键，不可变，不可为 null，唯一。 |
 |isAdminManaged|Boolean| 该属性的值是`false`域的 DNS 记录管理是否已委托给Microsoft 365。 否则，值为 `true`. 不可为 null |
 |isDefault|Boolean| `true` 如果这是用于创建用户的默认域。 每个公司只有一个默认域。 不可为 null |
 |isInitial|Boolean| `true` 如果这是 Microsoft Online Services (companyname.onmicrosoft.com) 创建的初始域。 每个公司只有一个初始域。 不可为 null |
@@ -62,7 +63,7 @@ ms.locfileid: "64848678"
 |isVerified|Boolean| `true` 如果域已完成域所有权验证。 不可为 null |
 |passwordNotificationWindowInDays|Int32|指定用户收到其密码过期通知之前的天数。 如果未设置该属性，将使用默认值 14 天。|
 |passwordValidityPeriodInDays|Int32| 指定必须更改密码之前密码有效的时间长度。 如果未设置该属性，将使用默认值 90 天。 |
-|supportedServices|String collection| 分配给域的功能。 可以包括`0``1`或包含以下值的更多内容：`Email`、、`Sharepoint`、`SharePointDefaultDomain``OfficeCommunicationsOnline``EmailInternalRelayOnly`、、、`SharePointPublic``FullRedelegation`、、`OrgIdAuthentication`、。 `Intune``Yammer` 可以使用图形 API添加/删除的值包括： `Email`， ， `OfficeCommunicationsOnline`。 `Yammer` 不可为 null|
+|supportedServices|字符串集合| 分配给域的功能。 可以包括`0``1`或包含以下值的更多内容：`Email`、、`Sharepoint`、`SharePointDefaultDomain``OfficeCommunicationsOnline``EmailInternalRelayOnly`、、、`SharePointPublic``FullRedelegation`、、`OrgIdAuthentication`、。 `Intune``Yammer` 可以使用图形 API添加/删除的值包括： `Email`， ， `OfficeCommunicationsOnline`。 `Yammer` 不可为 null|
 |state|[domainState](domainstate.md)| 为域计划异步操作的状态。 |
 
 ## <a name="relationships"></a>关系

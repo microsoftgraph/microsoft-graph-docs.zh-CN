@@ -1,22 +1,22 @@
 ---
-title: '获取 oAuth2PermissionGrant (委派权限授予) '
+title: " (委派的权限授予) 获取 oAuth2PermissionGrant"
 description: 检索表示委派权限授予的单个 oAuth2PermissionGrant 的属性和关系。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3ac390e2394b9ad8e83670eda872de5a5030614e
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 708dbc4342e905e5c925416e8c94dc27a22b613d
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669772"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060512"
 ---
-# <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a>获取 oAuth2PermissionGrant (委派权限授予) 
+# <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a> (委派的权限授予) 获取 oAuth2PermissionGrant
 
 命名空间：microsoft.graph
 
-检索由 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示的单个委派权限的属性。
+检索 [由 oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示的单个委派权限授予的属性。
 
 **oAuth2PermissionGrant** 表示已授予客户端应用程序代表已登录用户访问 API 的委派权限。
 
@@ -28,7 +28,7 @@ ms.locfileid: "63669772"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | .Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | .Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /oauth2PermissionGrants/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。
 
 ## <a name="example"></a>示例
 
