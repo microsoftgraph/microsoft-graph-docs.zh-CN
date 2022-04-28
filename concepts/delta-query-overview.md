@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: be2f0aa1df6edc791f2e34b34ad0c7ab4b8c9555
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 45232a25e17aedbd47c208ee31c7f21b51ca4986
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477970"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65102991"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -201,9 +201,14 @@ delta 查询可以返回 `410 (gone)` 响应代码和一个 **Location** 标头�
 
 ### <a name="token-duration"></a>令牌持续时间
 
-增量令牌仅在客户端应用程序需要再次运行完整同步前的特定时间段内有效。 目录对象（**应用程序**、**administrativeUnit**、**directoryObject**、**directoryRole**、**组**、**orgContact**、**oauth2permissiongrant**、**servicePrincipal** 和 **用户**）的时限为 7 天。 教育对象（**educationSchool**、**educationUser** 和 **educationClass**）的时限为 7 天内。 Outlook 实体（**邮件**、**邮件文件夹**、**事件**、**联系人**、**联系人文件夹**、**待办事项** 和 **待办事项列表**）没有固定时间上限，取决于内部 delta 令牌缓存的大小。 因为缓存中不断添加新 delta 令牌，因此超过缓存容量后，旧 delta 令牌将被删除。
+增量令牌仅在客户端应用程序需要再次运行完整同步前的特定时间段内有效。
++ [目录对象](/graph/api/resources/directoryobject)的时限为 7 天内。 
++ 教育对象（**educationSchool**、**educationUser** 和 **educationClass**）的时限为 7 天内。
++ Outlook 实体（**邮件**、**邮件文件夹**、**事件**、**联系人**、**联系人文件夹**、**待办事项** 和 **待办事项列表**）没有固定时间上限，取决于内部 delta 令牌缓存的大小。 因为缓存中不断添加新 delta 令牌，因此超过缓存容量后，旧 delta 令牌将被删除。
 
-## <a name="prerequisites"></a>必备条件
+如果令牌过期，服务应响应 40X 系列错误，并显示错误代码，如 `syncStateNotFound`。 有关详细信息，请参阅“Microsoft Graph 中的错误代码 (/graph/errors#code-property)”。
+
+## <a name="prerequisites"></a>先决条件
 
 在对某个特定资源执行 delta 查询时也需要读取该资源所需的相同[权限](./permissions-reference.md)。
 
