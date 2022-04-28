@@ -1,22 +1,33 @@
 ---
 title: directoryObject 资源类型
-description: 表示 Azure Active Directory 对象。directoryObject 类型是其他许多目录实体类型的基类型。
+description: 表示 Azure Active Directory 对象。directoryObject 类型是许多其他目录实体类型（通常称为目录对象）的基类型。
 ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3be3d259d76c20b02ccf4da1ef2bc995f82517e3
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 48355b69913b494f26765bbb49ef831539c897bc
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337143"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65102988"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
 命名空间：microsoft.graph
 
-表示 Azure Active Directory 对象。**directoryObject** 类型是其他许多目录实体类型的基类型。
+表示 Azure Active Directory 对象。 **directoryObject** 类型是以下目录实体类型（通常称为目录对象）的基类型：
+
++ [application](application.md)
++ [administrativeUnit](administrativeunit.md)
++ [directoryObject](directoryobject.md)
++ [directoryRole](directoryrole.md)
++ [设备](device.md)
++ [组](group.md)
++ [orgContact](orgcontact.md)
++ [oauth2PermissionGrant](oauth2permissiongrant.md)
++ [servicePrincipal](serviceprincipal.md)
++ [用户](user.md)
 
 继承自 [entity](entity.md)。
 
