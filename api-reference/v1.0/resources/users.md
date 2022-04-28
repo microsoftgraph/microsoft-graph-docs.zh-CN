@@ -5,21 +5,23 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: conceptualPageType
-ms.openlocfilehash: 6a39b5faf36501373592476f043c23ed51412fb5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2baecddca89ac58ec01eea231688d9243946a687
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136290"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060970"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 
-可以使用 Microsoft Graph 构建基于用户、用户与其他用户和组的关系、用户邮件、日历和文件且有说服力的应用体验。
+可以使用 Microsoft Graph 基于用户、他们与其他用户和组的关系以及他们访问的资源（例如其邮件、日历、文件、管理角色、组成员身份）构建引人注目的应用体验。
 
-通过 Microsoft Graph，你能以两种方式访问 [用户](user.md)
+通过 Microsoft Graph，你能以两种方式访问用户：
 
-- 通过用户 ID，`/users/{id | userPrincipalName}`
+- 通过用户 ID，`/users/{id}`
 - 通过使用已登录的用户的 `/me` 别名，这与 `/users/{signed-in user's id}` 相同
+
+Azure AD 中有两种类型的用户 - 成员用户和来宾用户。 来宾用户通过兑换其邀请加入组织。 来宾用户可以转换为成员，享受成员的所有特权。
 
 ## <a name="authorization"></a>授权
 
@@ -53,6 +55,16 @@ ms.locfileid: "59136290"
 |userPrincipalName| 用户主体名称。 |
 
 有关详细信息及所有属性的列表，请参阅 [user](user.md) 对象。
+
+## <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>组织中来宾用户的用户和组搜索限制
+
+用户和组搜索功能允许应用对 `/users` 或 `/groups` 资源集(例如 `https://graph.microsoft.com/v1.0/users`)执行查询，以搜索组织目录中的任何用户或组。管理员和成员用户都具有此功能；但来宾用户没有。
+
+如果登录用户是来宾用户，应用程序可以读取特定用户或组的配置文件（例如，`https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`），具体视应用程序获得的授权而定；不过，不能对可能返回多个资源的 `/users` 或 `/groups` 资源集执行查询。
+
+借助授予的适当权限，应用程序可以读取用户或组的配置文件，具体是通过导航属性中的链接获取；例如，`/users/{id}/directReports` 或 `/groups/{id}/members`。
+
+有关来宾用户搜索限制的详细信息，请参阅[比较成员用户和来宾用户的默认权限](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions)。
 
 ## <a name="common-operations"></a>通用操作
 

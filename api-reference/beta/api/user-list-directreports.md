@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e5adbc854d51c891d8a6abc462f35521d8f8dade
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: db1dfeda0ddf7008ee97b47415e9b07c0f8e66f6
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669821"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103044"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
@@ -104,11 +104,23 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0",
+            "businessPhones": [],
+            "displayName": "Conf Room Adams",
+            "givenName": null,
+            "jobTitle": null,
+            "mail": "Adams@Contoso.OnMicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": null,
+            "userPrincipalName": "Adams@Contoso.OnMicrosoft.com"
+        }
+    ]
 }
 ```
 

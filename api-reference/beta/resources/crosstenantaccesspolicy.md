@@ -5,8 +5,13 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: ed825ae07c1a707be2847b9bdc40f7fe71add334
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103011"
 ---
-
 # <a name="crosstenantaccesspolicy-resource-type"></a>crossTenantAccessPolicy 资源类型
 
 命名空间：microsoft.graph
@@ -21,23 +26,22 @@ doc_type: resourcePageType
 
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取 crossTenantAccessPolicy](../api/crosstenantaccesspolicy-get.md)|[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md)|读取 [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) 对象的属性和关系。|
-|[更新 crossTenantAccessPolicy](../api/crosstenantaccesspolicy-update.md)|[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md)|更新 [crossTenantAccessPolicy 对象](../resources/crosstenantaccesspolicy.md) 的属性。|
+|[获取 crossTenantAccessPolicy](../api/crosstenantaccesspolicy-get.md)|[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md)|读取 [crossTenantAccessPolicy 对象的](../resources/crosstenantaccesspolicy.md) 属性和关系。|
+|[更新 crossTenantAccessPolicy](../api/crosstenantaccesspolicy-update.md)|[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md)|更新 [crossTenantAccessPolicy 对象的](../resources/crosstenantaccesspolicy.md) 属性。|
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---|:---|:---|
-| displayName | String | 跨显示名称访问策略的组。 继承自 [policyBase](../resources/policybase.md)。|
-| lastModifiedDateTime | DateTimeOffset | 上次修改跨租户访问策略的时间表示为使用 ISO 8601 格式且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-| 定义 (弃)  | String | 跨租户访问策略的原始 JSON 定义。 **已弃用。请勿使用。**|
+| displayName | String | 跨租户访问策略的显示名称。 继承自 [policyBase](../resources/policybase.md)。|
+| 定义 (已弃用)  | 字符串 | 跨租户访问策略的原始 JSON 定义。 **已弃用。请勿使用。**|
 
 ## <a name="relationships"></a>关系
 
 |关系|类型|说明|
 |:---|:---|:---|
-|default|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|定义组织与外部组织之间的交互方式的默认Azure Active Directory配置。|
-|合作伙伴|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) 集合|为外部组织定义特定于合作伙伴Azure Active Directory配置。|
+|默认|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|定义组织与外部Azure Active Directory组织的交互方式的默认配置。|
+|合作 伙伴|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) 集合|为外部Azure Active Directory组织定义特定于合作伙伴的配置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -55,7 +59,6 @@ doc_type: resourcePageType
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
   "displayName": "String",
-  "lastModifiedDateTime": "String (timestamp)",
   "definition": "String"
 }
 ```

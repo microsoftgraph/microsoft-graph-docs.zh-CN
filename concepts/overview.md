@@ -4,12 +4,12 @@ description: Microsoft Graph 是 Microsoft 365 中数据和智能的网关。Mic
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8680a3c979136c74de7dfaf5668b138c5f990833
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 966ace44a87d79a6c74ad758c342cdcf5796a788
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917533"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103051"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph 概述
 
@@ -20,9 +20,9 @@ Microsoft Graph 是 Microsoft 365 中通往数据和智能的网关。 它提供
 ## <a name="data-and-services-powering-the-microsoft-365-platform"></a>支持 Microsoft 365 平台的数据和服务
 在 Microsoft 365 平台中，这三大组件让数据访问和传输变得轻松：
 
-- Microsoft Graph API 提供了一个终结点`https://graph.microsoft.com`，用于 **访问 Microsoft 云** 中丰富的以人为中心的数据和见解，包括 Microsoft 365、Windows 和企业移动性 + 安全性。 你可使用 REST API 或 SDK 来访问终结点并构建支持横跨生产力、协作、教育、人员和工作场所智能等 Microsoft 365 场景的应用。 Microsoft Graph 还包含一组功能强大的服务，可管理用户和设备标识、访问、合规性和安全性，并帮助保护组织防止数据泄露或丢失。
-- [Microsoft Graph连接器](connecting-external-content-connectors-overview.md) 按传入方向工作， **将 Microsoft 云外部的数据传送到** Microsoft Graph服务和应用程序，以增强 microsoft 搜索等Microsoft 365体验。 许多常用数据源中均存在连接器，如 Box、Google Drive、Jira 和 Salesforce。
-- [Microsoft Graph 数据连接](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect) 提供了一组工具，可以更加轻松地安全和可扩展地 **向热门 Azure 数据存储传递 Microsoft Graph 数据**。 缓存数据充当 Azure 开发工具的数据源，可用于构建智能应用程序。
+- **Microsoft Graph API** 提供了一个终结点 `https://graph.microsoft.com`，用于访问 **Microsoft 云中丰富的以人为中心的数据和见解**，包括 Microsoft 365、Windows 和企业移动性 + 安全性。 你可使用 REST API 或 SDK 来访问终结点并构建支持横跨生产力、协作、教育、人员和工作场所智能等 Microsoft 365 场景的应用。 Microsoft Graph 还包含一组功能强大的服务，可管理用户和设备标识、访问、合规性和安全性，并帮助保护组织防止数据泄露或丢失。
+- **[Microsoft Graph 连接器](#bring-data-from-an-external-content-source-to-microsoft-graph)** 按传入方向工作，**将 Microsoft 云外部的数据传送到 Microsoft Graph 服务和应用程序**，以增强 Microsoft 搜索等 Microsoft 365 体验。 许多常用数据源中均存在连接器，如 Box、Google Drive、Jira 和 Salesforce。
+- **[Microsoft Graph 数据连接](#access-microsoft-graph-data-at-scale)** 提供了一组工具，可更加轻松地以安全且可扩展的方式 **向热门 Azure 数据存储传递 Microsoft Graph 数据**。 缓存数据充当 Azure 开发工具的数据源，可用于构建智能应用程序。
 
 Microsoft Graph API、连接器和 Data Connect 共同为Microsoft 365平台提供支持。 借助可访问 Microsoft Graph 数据和其他数据集的能力，你可以获取见解和分析、扩展 Microsoft 365 体验和构建唯一而智能的应用程序。
 
@@ -95,13 +95,13 @@ Microsoft Graph 不断向开发人员开放 Microsoft 365 平台，且始终仅�
 
 ## <a name="bring-data-from-an-external-content-source-to-microsoft-graph"></a>将外部内容源中的数据引入Microsoft Graph
 
-使用 Microsoft Graph _连接器_ 将 Microsoft 云外部的数据引入 Microsoft Graph。 此类数据的示例可以是组织的人力资源数据库或产品目录，它们在本地托管或在公有云或私有云中托管。
+使用 [Microsoft Graph 连接器](connecting-external-content-connectors-overview.md)将 Microsoft 云外部的数据引入 Microsoft Graph。 此类数据的示例可以是组织的人力资源数据库或产品目录，它们在本地托管或在公有云或私有云中托管。
 
 Microsoft Graph 连接器创建与外部数据源的连接、对数据编制索引并将其作为外部自定义项和文件进行存储。 编制索引后，这些项目可以显示在 Microsoft 搜索中，并显示在使用 [Microsoft 搜索 API](search-concept-overview.md)的应用中。
 
-## <a name="access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect"></a>使用 Microsoft Graph 数据连接大规模访问 Microsoft Graph 数据
+## <a name="access-microsoft-graph-data-at-scale"></a>批量访问 Microsoft Graph 数据
 
-使用 Microsoft Graph _Data Connect_ 大规模访问Microsoft Graph上的数据，同时允许管理员精细同意并完全控制其Microsoft Graph数据。Data Connect 简化了将此数据传递到Microsoft Azure。
+使用 [Microsoft Graph 数据连接](data-connect-concept-overview.md)批量访问 Microsoft Graph 上的数据，同时允许管理员精细同意并完全控制其 Microsoft Graph 数据。数据连接简化了将此数据传递到 Microsoft Azure 的过程。
 
 之后，可使用 Azure 工具构建能实现以下功能的智能应用：
 
@@ -124,7 +124,6 @@ Microsoft Graph 连接器创建与外部数据源的连接、对数据编制索�
 | **管理员同意** | 整个组织<br>资源类型 | 选择用户组<br>资源类型和属性<br>排除用户 |
 | **访问工具** | RESTful Web 查询 | Azure 数据工厂 |
 
- 有关详细信息，请参阅 [Microsoft Graph Data Connect](data-connect-concept-overview.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

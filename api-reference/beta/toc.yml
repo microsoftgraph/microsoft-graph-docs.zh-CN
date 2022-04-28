@@ -39,9 +39,9 @@ items:
       - name: 限制
         href: /graph/throttling?context=graph/api/beta
       - name: 更改通知
-        displayname: 'Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
         items:
           - name: 概述
+            displayName: 'Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             href: /graph/api/resources/webhooks?context=graph/api/beta
           - name: 教程
             href: /learn/modules/msgraph-changenotifications-trackchanges
@@ -54,9 +54,9 @@ items:
           - name: 获取聊天和信道消息的更改通知
             href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
       - name: 更改跟踪
-        displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
         items:
           - name: 概述
+            displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
             href: /graph/delta-query-overview?context=graph/api/beta
           - name: 获取事件更改（示例）
             href: /graph/delta-query-events?context=graph/api/beta
@@ -67,9 +67,9 @@ items:
           - name: 获取用户更改（示例）
             href: /graph/delta-query-users?context=graph/api/beta
       - name: 添加自定义数据
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
         items:
           - name: 概述
+            displayName: 'Extensions, Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
             href: /graph/extensibility-overview?context=graph/api/beta
           - name: 使用开放扩展（示例）
             href: /graph/extensibility-open-users?context=graph/api/beta
@@ -89,9 +89,9 @@ items:
     expanded: false
     items:
       - name: Azure AD Graph
-        displayname: 'Migration, Azure AD Graph'
         items:
           - name: 概述
+            displayName: Azure AD Graph Migration
             href: /graph/migrate-azure-ad-graph-overview
           - name: 应用迁移清单
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -1466,9 +1466,9 @@ items:
               - name: 更新位置
                 href: api/place-update.md
       - name: 更改通知
-        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
         items:
           - name: 概述
+            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             href: resources/webhooks.md
           - name: 订阅
             href: resources/subscription.md
@@ -10867,7 +10867,7 @@ items:
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
-            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            displayName: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
               - name: 创建开放扩展
                 href: api/opentypeextension-post-opentypeextension.md
@@ -10879,7 +10879,7 @@ items:
                 href: api/opentypeextension-delete.md
           - name: 架构扩展
             href: resources/schemaextension.md
-            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            displayName: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
               - name: 列出架构扩展
                 href: api/schemaextension-list.md
@@ -11233,16 +11233,16 @@ items:
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
       - name: 身份和访问
-        displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
+            displayName: 'Azure AD, Microsoft identity platform'
             href: resources/azure-ad-overview.md
           - name: 客户关系管理
             items:
               - name: '精细委派的管理员权限 (预览) '
-                displayName: 'GDAP, Partner Center, CSP, VAR'
                 items:
                   - name: 概述
+                    displayName: 'GDAP, Partner Center, CSP, VAR'
                     href: resources/delegatedadminrelationships-api-overview.md
                   - name: 委派的管理员关系
                     href: resources/delegatedadminrelationship.md
@@ -13054,9 +13054,9 @@ items:
                       - name: 更新
                         href: api/entitlementmanagementsettings-update.md
               - name: Privileged Identity Management
-                displayName: PIM v2
                 items:
                   - name: Privileged Identity Management
+                    displayName: PIM v2
                     href: resources/privilegedidentitymanagement-root.md
                   - name: 'Azure AD (已弃用) '
                     items:
@@ -15026,7 +15026,7 @@ items:
           - name: 频道
             href: resources/channel.md
             items:
-              - name: 列出所有通道
+              - name: 示例 1：列出所有频道
                 href: api/team-list-allchannels.md
               - name: 列出频道
                 href: api/channel-list.md
@@ -15040,7 +15040,7 @@ items:
                 href: api/channel-patch.md
               - name: 删除频道
                 href: api/channel-delete.md
-              - name: 删除传入通道
+              - name: 删除传入频道
                 href: api/team-delete-incomingchannel.md
               - name: 添加成员
                 href: api/channel-post-members.md

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 39855db405aeac9d6f8896e04fdd4fa25067cc0d
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 799fd82f5754d07a58fd570205f10fbe6d306f8a
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848529"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061130"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -59,11 +59,11 @@ Microsoft 365 组的强大之处在于它的协作本质，它是项目或团队
 调用 Microsoft Graph 组 API 时，以下 JSON 对象显示组的示例表示形式。
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
     "id": "4c5ee71b-e6a5-4343-9e2c-4244bc7e0938",
     "deletedDateTime": null,
     "classification": "MBI",
@@ -98,7 +98,7 @@ Content-type: application/json
 调用 Microsoft Graph 组 API 时，以下 JSON 对象显示组的示例表示形式。
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -153,6 +153,16 @@ Content-type: application/json
 ## <a name="other-types-of-groups"></a>其他类型的组
 
 Yammer 中的 Microsoft 365 组用于通过 Yammer 帖子促进用户协作。 可以通过读取请求返回这种类型的组，但无法通过 API 访问它们的帖子。 如果对组启用了 Yammer 帖子和对话源，将会禁用默认的 Microsoft 365 组对话。 若要了解详细信息，请参阅 [Yammer 开发人员 API 文档](https://developer.yammer.com/docs)。
+
+## <a name="group-search-limitations-for-guest-users-in-organizations"></a>组织中来宾用户的组搜索限制
+
+组搜索功能允许应用对 `/groups` 资源(例如 `https://graph.microsoft.com/beta/groups`)执行查询，以搜索组织目录中的任何组。管理员和成员用户都具有此功能；但来宾用户没有。
+
+如果登录用户是来宾用户，应用程序可以读取特定组的配置文件（例如，`https://graph.microsoft.com/beta/group/fc06287e-d082-4aab-9d5e-d6fd0ed7c8bc`），具体视应用程序获得的授权而定；不过，不能对可能返回多个资源的 `/groups` 资源执行查询。
+
+借助授予的适当权限，应用程序可以读取组的配置文件，具体是通过导航属性中的链接获取；例如，`/groups/{id}/members`。
+
+有关来宾用户可以对组执行的操作的详细信息，请参阅[比较成员和来宾默认权限](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions)。
 
 ## <a name="group-based-licensing"></a>基于组的许可
 

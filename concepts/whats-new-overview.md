@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 30119dbd92c3a1b8552f19857225d868d50dd03b
-ms.sourcegitcommit: 0ae140eafaca2dddc4584930cc0ac27fb1731c61
+ms.openlocfilehash: 8be4d3f66de2d9a58b25f3782e0ed2de5b378c87
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65017111"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65059939"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -16,6 +16,36 @@ ms.locfileid: "65017111"
 
 > [!IMPORTANT]
 > 处于 _预览_ 状态的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。不要在生产应用中使用预览功能。
+
+
+## <a name="april-2022-new-in-preview-only"></a>2022 年 4 月：仅限预览版中的新增功能
+
+### <a name="customer-bookings"></a>客户预订
+- [获取[企业](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true)中[员工成员](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true)资源的可用信息](/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta&preserve-view=true)。
+- 使用面向`Bookings.Read.All`[企业](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true)、[员工成员](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true)、[服务](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true)、[客户](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true)和[预约](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true)资源的读取操作中的应用程序权限。
+- 对客户和预约资源使用读/写操作的应用程序权限 `BookingsAppointment.ReadWrite.All`。
+
+### <a name="device-and-app-management--cloud-pc"></a>设备和应用管理|云电脑
+将 [Windows 设置](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true)指定为租户的[云电脑组织设置](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true)的一部分。
+
+### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
+配置[联合身份验证设置](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true)，将域与 Azure Active Directory 联合。
+
+### <a name="reports--identity-and-access-reports"></a>报告 | 身份和访问报告
+通过在相应的 Azure Active Directory 登录日志中标记事件，确认事件存在[高风险且已泄露](/graph/api/signin-confirmCompromised?view=graph-rest-beta&preserve-view=true)或[安全](/graph/api/signin-confirmSafe?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
+- 获取指定时间段内特定 Teams 活动的计数的[总分布报告](/graph/api/reportroot-getTeamsUserActivityTotalDistributionCounts?view=graph-rest-beta&preserve-view=true)。 Teams 活动的计数包括团队聊天消息、通话、会议、音频持续时间、发布消息等。
+- 在报告中获取其获取用户详细信息，包括[获取用户详细信息](/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta&preserve-view=true)、[获取活动计数](/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta&preserve-view=true)，以及[获取活动总计数](/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="teamwork"></a>Teamwork
+与一个或多个团队共享频道：
+- [仅列出与团队共享的频道](/graph/api/team-list-incomingchannels?view=graph-rest-beta&preserve-view=true)。
+- [列出团队中的所有频道](/graph/api/team-list-allchannels?view=graph-rest-beta&preserve-view=true)，包括在团队中托管或与团队共享的频道。
+- [列出可以访问指定共享通道的团队成员](/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-beta&preserve-view=true)。
+- [删除与团队共享的频道](/graph/api/team-delete-incomingchannel?view=graph-rest-beta&preserve-view=true)。
+- [列出已共享指定频道的团队](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true)。
+- [取消与团队共享频道](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true)。
 
 
 ## <a name="march-2022-new-and-generally-available"></a>2022 年 3 月：新增和正式发布
@@ -27,7 +57,8 @@ ms.locfileid: "65017111"
 使用 [特定于资源的权限](/graph/api/resources/resourcespecificpermission) 授权 Teams 应用直接访问聊天或团队的特定实例的数据。 例如，特定于资源的权限 ChannelMessage.Read.Group 允许 Teams 应用读取单个团队的频道消息。
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-[获取](/graph/api/approval-get)与[访问包分配](/graph/api/resources/accesspackageassignmentrequest)的请求关联的[审批](/graph/api/resources/approval)决策。
+- [获取](/graph/api/approval-get)与[访问包分配](/graph/api/resources/accesspackageassignmentrequest)的请求关联的[审批](/graph/api/resources/approval)决策。
+- 作为 [Azure Active Directory (Azure AD) 权利管理](/graph/api/resources/entitlementmanagement-overview)的一部分，使用[访问包评估策略](/graph/api/resources/accesspackageassignmentpolicy)来管理[对访问包](/graph/api/resources/accesspackage)的请求、审批、分配或定期审查。 可以控制内部和外部用户对组织组、应用程序和联机网站 SharePoint 的访问权限。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 指定客户端应用程序[包含或排除](/graph/api/resources/conditionalaccessclientapplications)为应用[条件访问策略](/graph/api/resources/conditionalaccesspolicy)的一组[条件](/graph/api/resources/conditionalAccessConditionSet)。
@@ -38,11 +69,14 @@ ms.locfileid: "65017111"
 ### <a name="cloud-communications--online-meeting"></a>云通信 | 联机会议
 指定一个或多个 [会议参与者](/graph/api/resources/meetingParticipants?view=graph-rest-beta&preserve-view=true) 为共同组织者。
 
+### <a name="compliance--ediscovery"></a>合规性 | 电子数据展示
+[清除数据](/graph/api/ediscovery-sourcecollection-purgeData?view=graph-rest-beta&preserve-view=true)并永久删除电子数据展示[源集合](/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta&preserve-view=true)中的 Microsoft Teams 消息。
+
 ### <a name="device-and-app-management--cloud-pc"></a>设备和应用管理|云电脑
 - 对[unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true)资源的读取操作使用`RoleManagement.Read.CloudPC`的委派权限或应用程序权限资源。
 - 对[unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true)资源的读取和写入操作使用`RoleManagement.ReadWrite.CloudPC`的委派权限或应用程序权限资源。
 - 指定 Azure 订阅的 ID 和显示名称，作为设备的[源映像信息](/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta&preserve-view=true)的一部分。
-- 指定 [Windows 设置](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) 在为 [预配策略创建云电脑时](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true)进行配置。
+- 指定 [Windows 设置](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true)在为[预配策略创建云电脑时](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true)进行配置。
 
 ### <a name="device-and-app-management--corporate-management"></a>设备和应用管理|公司管理
 - Intune 3 beta 版更新。
@@ -51,18 +85,20 @@ ms.locfileid: "65017111"
 [列出](/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta&preserve-view=true) 和 [获取 Microsoft 365 Lighthouse 中托管租户的](/graph/api/managedtenants-auditevent-get?view=graph-rest-beta&preserve-view=true) 审核事件。
 
 ### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
-[列表](/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta&preserve-view=true)或[更新](/graph/api/microsoftapplicationdataaccesssettings-update?view=graph-rest-beta&preserve-view=true)[设置](/graph/api/resources/microsoftapplicationdataaccesssettings?view=graph-rest-beta&preserve-view=true)，这些设置指定从 Microsoft 应用程序访问Microsoft 365属于组织中用户的数据。 例如，如果授权正确，是否只有Microsoft 365应用（如 Word 和 Excel）才能访问用户的Microsoft 365数据，或者其他 Microsoft 应用（如 Windows）是否也可以访问数据。 默认情况下，组织中的所有用户都可以在 Microsoft 应用中访问用户有权访问的任何Microsoft 365数据。 
+- [列表](/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta&preserve-view=true)或[更新](/graph/api/microsoftapplicationdataaccesssettings-update?view=graph-rest-beta&preserve-view=true)[设置](/graph/api/resources/microsoftapplicationdataaccesssettings?view=graph-rest-beta&preserve-view=true)，这些设置指定从 Microsoft 应用程序访问Microsoft 365属于组织中用户的数据。 例如，如果授权正确，是否只有Microsoft 365应用（如 Word 和 Excel）才能访问用户的Microsoft 365数据，或者其他 Microsoft 应用（如 Windows）是否也可以访问数据。 默认情况下，组织中的所有用户都可以在 Microsoft 应用中访问用户有权访问的任何Microsoft 365数据。 
+- 在采用零信任网络案例模式后，Microsoft 合作伙伴可以使用[粒度委派管理员权限 (GDAP) ](/graph/api/resources/delegatedadminrelationships-api-overview?view=graph-rest-beta&preserve-view=true)以对其客户租户最低权限访问执行管理任务，避免潜在的安全风险。 合作伙伴无需像过去那样请求全局管理员角色，而是在一定的时间内请求客户租户管理的特定角色，并且其客户必须明确授予对他们的最低特权访问。
 
 ### <a name="security--attack-simulation-and-training"></a>安全 | 攻击模拟和训练
 - [列出租户的模拟自动化](/graph/api/attacksimulationroot-list-simulationautomations?view=graph-rest-beta&preserve-view=true)。
 - [列表为租户运行模拟自动化](/graph/api/resources/simulationautomationrun?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="search"></a>搜索
-- 在 [搜索请求中指定](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) 是否从搜索结果中剪裁重复的 SharePoint 文件。 默认值为 false。
+- 在 [搜索请求中指定](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) 是否从搜索结果中剪裁重复的 SharePoint 文件。默认为 false。
 - 使用支持 KQL 和查询变量的模板限定 [搜索查询](/graph/api/resources/searchquery?view=graph-rest-beta&preserve-view=true) 字符串。
 
 ### <a name="sites-and-lists"></a>网站和列表
-对于包含分类数据的 [列](/graph/api/resources/columnDefinition?view=graph-rest-beta&preserve-view=true) ，请指定父 [术语](/graph/api/resources/termstore-term?view=graph-rest-beta&preserve-view=true) 和 [术语集](/graph/api/resources/termstore-set?view=graph-rest-beta&preserve-view=true) ，子术语可选为列值。
+- 对于包含分类数据的 [列](/graph/api/resources/columnDefinition?view=graph-rest-beta&preserve-view=true) ，请指定父 [术语](/graph/api/resources/termstore-term?view=graph-rest-beta&preserve-view=true) 和 [术语集](/graph/api/resources/termstore-set?view=graph-rest-beta&preserve-view=true) ，子术语可选为列值。
+- 获取[网站](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true)的设置，包括语言和时区。
 
 ### <a name="tasks-and-plans"></a>任务和计划
 通过检查相应 [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true)资源关系的 **详细信息** 关系，确定用于 Planner 外部体验的 Planner 计划（如 Microsoft Teams）能否跟踪该上下文中的工作。
@@ -70,46 +106,6 @@ ms.locfileid: "65017111"
 ### <a name="teamwork"></a>Teamwork
 - 获取或设置有关[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)的[摘要信息](/graph/api/resources/teamSummary?view=graph-rest-beta&preserve-view=true)，包括所有者、成员和来宾的计数。
 - 在聊天中[列出消息](/graph/api/chat-list-messages?view=graph-rest-beta&preserve-view=true)时，按降序对邮件进行排序。
-
-
-## <a name="february-2022-new-and-generally-available"></a>2022 年 2 月：新版本和正式版
-
-### <a name="teamwork"></a>Teamwork
-通过 **onlineMeetingInfo** 属性获取与 [聊天](/graph/api/resources/chat)关联的 [联机会议的详细信息](/graph/api/resources/teamworkOnlineMeetingInfo)。
-
-## <a name="february-2022-new-in-preview-only"></a>2022 年 2 月：仅限预览版中的新增功能
-
-### <a name="applications"></a>应用程序
-- 使用新策略选项 [应用程序身份验证方法](/graph/api/resources/applicationauthenticationmethodpolicy?view=graph-rest-beta&preserve-view=true) 限制应用程序或服务主体上的自定义密码机密。
-- 为运行 Windows 并在 Microsoft Store 或 Xbox 游戏商店中发布的应用指定 [设置](/graph/api/resources/windowsApplication?view=graph-rest-beta&preserve-view=true)。
-
-### <a name="change-notifications"></a>更改通知
-订阅 Outlook 联系人、事件或消息的更改，以接收有效负载中包含资源数据的通知。 有关详细信息，请参阅 [Microsoft Graph 中 Outlook 资源的更改通知](outlook-change-notifications-overview.md)。
-
-### <a name="device-and-app-management--cloud-pc"></a>设备和应用管理|云电脑 
-- 定义 [还原点设置](/graph/api/resources/cloudpcrestorepointsetting?view=graph-rest-beta&preserve-view=true)，其中包括创建还原点的频率，以及用户是否可以基于还原点备份还原自己的云电脑。
-- [根据以前的快照](/graph/api/manageddevice-restorecloudpc?view=graph-rest-beta&preserve-view=true) 云电脑还原。
-- [通过指定其托管设备 ID 和还原点的日期/时间范围（例如之前、之后）在单个请求中还原多个云电脑](/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta&preserve-view=true)。
-
-### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
-使用应用程序权限 `CustomSecAttributeAssignment.Read.All` 为没有登录用户的组织读取[自定义安全属性定义](/graph/api/resources/customsecurityattributedefinition?view=graph-rest-beta&preserve-view=true)。
-
-### <a name="identity-and-access--governance"></a>标识和访问权限 | 治理
-- 在多阶段访问评审中为每个[阶段](/graph/api/resources/accessreviewstage?view=graph-rest-beta&preserve-view=true)配置[设置](/graph/api/resources/accessreviewstagesettings?view=graph-rest-beta&preserve-view=true)。 除了[获取](/graph/api/accessreviewstage-get?view=graph-rest-beta&preserve-view=true)或[更新](/graph/api/accessreviewstage-update?view=graph-rest-beta&preserve-view=true)访问评审阶段外，还可以执行以下操作： 
-  - [阻止](/graph/api/accessreviewstage-stop?view=graph-rest-beta&preserve-view=true)审阅者向阶段提供更多输入，并继续进行下一个阶段（如果适用）。 
-  - [筛选](/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta&preserve-view=true)并获取[访问评审实例](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true)的所有阶段，其中调用用户是其审阅者
-  - [列出](/graph/api/accessreviewstage-list-decisions?view=graph-rest-beta&preserve-view=true)多阶段访问评审中的决策。
-- 应用可以使用应用程序权限 `EntitlementManagement.ReadWrite.All` 来[创建访问包资源请求](/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta&preserve-view=true)，以向[访问包目录](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)添加或删除资源。
-
-### <a name="identity-and-access--identity-and-sign-in"></a>标识和访问权限 | 标识和登录
-- 使用许多新属性来配置 [组织的品牌](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true)。例如，登录页面的公司徽标的横幅版本、包含基于 CDN 的 URL 的自定义 favicon，以及用户管理帐户的一些其他自定义属性。
-- 在[条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true)中包括或排除 Linux 作为[平台](/graph/api/resources/conditionalaccessplatforms?view=graph-rest-beta&preserve-view=true)条件之一。
-- 使用 Azure AD 确定组织中的[风险服务主体](/graph/api/resources/riskyserviceprincipal?view=graph-rest-beta&preserve-view=true)，它会持续根据各种信号和机器学习[检测和评估](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-beta&preserve-view=true)风险。 可以[确认](/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta&preserve-view=true)风险服务主体是否确实遭到入侵，Microsoft 将据此对其禁用该服务主体对象。 可以[消除](/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta&preserve-view=true)风险服务主体的风险。 此外，还可以列出服务主体的[风险历史记录](/graph/api/riskyserviceprincipal-list-history?view=graph-rest-beta&preserve-view=true)。
-- 使用[跨租户访问设置](/graph/api/resources/crosstenantaccesspolicy-overview?view=graph-rest-beta&preserve-view=true)来控制和管理组织中用户与其他组织之间的协作。 它们非常细化，可让你确定组织和外部组织中可以参与 Azure AD B2B 协作和 Azure AD B2B 直接连接的用户、组和应用程序。 
-- 启用或禁用组织中的用户和组以使用 [Azure AD 本机基于证书的身份验证 (CBA)](/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true)。
-
-### <a name="search"></a>搜索
-为组织中的用户设置 [首字母缩写词](/graph/api/resources/search-acronym?view=graph-rest-beta&preserve-view=true)、 [书签](/graph/api/resources/search-bookmark?view=graph-rest-beta&preserve-view=true)和 [QnA](/graph/api/resources/search-qna?view=graph-rest-beta&preserve-view=true) 资源，作为组织中用户的 [管理搜索答案](search-concept-answers.md)。
 
 
 ## <a name="want-to-stay-in-the-loop"></a>保持循环

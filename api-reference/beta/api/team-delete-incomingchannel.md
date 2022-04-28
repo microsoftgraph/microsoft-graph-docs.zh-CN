@@ -1,18 +1,18 @@
 ---
-title: 删除 incomingChannels
+title: 删除频道
 description: 删除传入频道。
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: f7f79688b0fd722136ab6f5f2539ecfdc7685fc2
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 74c3798239df3d67d48b1c5086fdb6702b27aac0
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704224"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060798"
 ---
-# <a name="remove-incomingchannels"></a>删除 incomingChannels
+# <a name="remove-channel"></a>删除频道
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "64704224"
 }
 -->
 ``` http
-DELETE /teams/{team-id}/channels/{channel-id}/incomingChannels/{incoming-channel-id}
+DELETE /teams/{team-id}/incomingChannels/{incoming-channel-id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头

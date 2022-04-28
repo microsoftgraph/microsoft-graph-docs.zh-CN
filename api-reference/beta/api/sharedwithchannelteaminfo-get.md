@@ -5,19 +5,19 @@ author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 091dba268028c36ab5622b0ca800dc78330056d3
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 35d6fb0aa5323df0494d3ec3ccd2a4ae11ee9ae4
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704322"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061137"
 ---
 # <a name="get-sharedwithchannelteaminfo"></a>Get sharedWithChannelTeamInfo
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取与[通道](../resources/channel.md)共享的[团队](../resources/sharedwithchannelteaminfo.md)。 此操作仅允许 **membershipType** 值为 `shared` 的频道。
+获取已共享指定[频道](../resources/channel.md)的[团队](../resources/sharedwithchannelteaminfo.md)。 此操作仅允许 **membershipType** 值为 `shared` 的频道。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
