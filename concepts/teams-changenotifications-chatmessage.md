@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3e62386b6d51c8e6fe97b0ede9f6a21f97f72a8b
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: c9bd130ce01738ae03cb0521b85774e974240055
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60083985"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133326"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
@@ -86,7 +86,7 @@ Content-Type: application/json
 
 ## <a name="subscribe-to-messages-in-a-channel"></a>订阅频道中的消息
 
-若要跟踪频道中的消息和回复，可在频道级别创建更改通知订阅。 为此，请订阅 `/teams/{team-id}/channels/{channel-id}/messages`。 此资源支持在 *仅限应用程序模式* 下 [包括通知中的资源数据](webhooks-with-resource-data.md)。
+若要跟踪频道中的消息和回复，可在频道级别创建更改通知订阅。 为此，请订阅 `/teams/{team-id}/channels/{channel-id}/messages`。 不管是在 *委派* 模式还是 *仅应用程序* 模式下，此资源都支持在通知中 [包含资源数据](webhooks-with-resource-data.md)。
 
 频道级别订阅还支持通过 `$search` 查询参数进行基于关键字的搜索。
 
@@ -174,7 +174,7 @@ Content-Type: application/json
 
 ## <a name="subscribe-to-messages-in-a-chat"></a>订阅聊天中的消息
 
-若要跟踪聊天中的消息，你可以在聊天级别创建更改通知订阅。 为此，请订阅 `/chats/{chat-id}/messages`。 此资源支持在 *仅限应用程序模式* 下 [包括通知中的资源数据](webhooks-with-resource-data.md)。
+若要跟踪聊天中的消息，你可以在聊天级别创建更改通知订阅。 为此，请订阅 `/chats/{chat-id}/messages`。 不管是在 *委派* 模式还是 *仅应用程序* 模式下，此资源都支持在通知中 [包含资源数据](webhooks-with-resource-data.md)。
 
 聊天级别订阅还支持通过 `$search` 查询参数进行基于关键字的搜索。
 
