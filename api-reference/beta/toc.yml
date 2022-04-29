@@ -324,6 +324,14 @@ items:
                 href: api/user-list-events.md
               - name: 提醒视图
                 href: api/user-reminderview.md
+          - name: 云电脑
+            items:
+              - name: 云电脑
+                href: resources/cloudpc.md
+              - name: 列表
+                href: api/user-list-cloudpcs.md
+              - name: 获取启动信息
+                href: api/cloudpc-getcloudpclaunchinfo.md
           - name: 联系人
             items:
               - name: 联系人
@@ -464,7 +472,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -10211,6 +10219,10 @@ items:
                     href: api/manageddevice-bulkrestorecloudpc.md
                   - name: 疑难解答
                     href: api/cloudpc-troubleshoot.md
+                  - name: 用户列表
+                    href: api/user-list-cloudpcs.md
+                  - name: 获取用户的启动信息
+                    href: api/cloudpc-getcloudpclaunchinfo.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -11708,93 +11720,6 @@ items:
                         href: api/unifiedroleassignmentmultiple-update.md
                       - name: 删除
                         href: api/unifiedroleassignmentmultiple-delete.md
-                  - name: 角色分配请求
-                    href: resources/unifiedroleassignmentschedulerequest.md
-                    items:
-                      - name: 列表
-                        href: api/unifiedroleassignmentschedulerequest-list.md
-                      - name: 获取
-                        href: api/unifiedroleassignmentschedulerequest-get.md
-                      - name: 创建
-                        href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
-                      - name: 取消
-                        href: api/unifiedroleassignmentschedulerequest-cancel.md
-                      - name: 按当前用户筛选
-                        href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-                  - name: 角色资格请求
-                    href: resources/unifiedroleeligibilityschedulerequest.md
-                    items:
-                      - name: 列表
-                        href: api/unifiedroleeligibilityschedulerequest-list.md
-                      - name: 获取
-                        href: api/unifiedroleeligibilityschedulerequest-get.md
-                      - name: 创建
-                        href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
-                      - name: 取消
-                        href: api/unifiedroleeligibilityschedulerequest-cancel.md
-                      - name: 按当前用户筛选
-                        href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
-                  - name: 角色分配计划
-                    href: resources/unifiedRoleAssignmentSchedule.md
-                    items:
-                      - name: 列表
-                        href: api/unifiedroleassignmentschedule-list.md
-                      - name: 获取
-                        href: api/unifiedroleassignmentschedule-get.md
-                      - name: 按当前用户筛选
-                        href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
-                  - name: 角色资格计划
-                    href: resources/unifiedRoleEligibilitySchedule.md
-                    items:
-                      - name: 列表
-                        href: api/unifiedRoleEligibilitySchedule-list.md
-                      - name: 获取
-                        href: api/unifiedRoleEligibilitySchedule-get.md
-                      - name: 按当前用户筛选
-                        href: api/unifiedRoleEligibilitySchedule-filterbycurrentuser.md
-                  - name: 角色分配实例
-                    href: resources/unifiedRoleAssignmentScheduleInstance.md
-                    items:
-                      - name: 列表
-                        href: api/unifiedRoleAssignmentScheduleInstance-list.md
-                      - name: 获取
-                        href: api/unifiedRoleAssignmentScheduleInstance-get.md
-                      - name: 按当前用户筛选
-                        href: api/unifiedRoleAssignmentScheduleInstance-filterbycurrentuser.md
-                  - name: 角色资格实例
-                    href: resources/unifiedRoleEligibilityScheduleInstance.md
-                    items:
-                      - name: 列表
-                        href: api/unifiedRoleEligibilityScheduleInstance-list.md
-                      - name: 获取
-                        href: api/unifiedRoleEligibilityScheduleInstance-get.md
-                      - name: 按当前用户筛选
-                        href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
-                  - name: 角色管理策略
-                    items:
-                      - name: 角色管理策略
-                        href: resources/unifiedRoleManagementPolicy.md
-                        items:
-                          - name: 列表
-                            href: api/unifiedrolemanagementpolicy-list.md
-                          - name: 获取
-                            href: api/unifiedrolemanagementpolicy-get.md
-                          - name: Rules
-                            href: resources/unifiedRoleManagementPolicyRule.md
-                            items:
-                              - name: 列表
-                                href: api/unifiedrolemanagementpolicy-list-rules.md
-                              - name: 获取
-                                href: api/unifiedrolemanagementpolicyrule-get.md
-                              - name: 更新
-                                href: api/unifiedrolemanagementpolicyrule-update.md
-                      - name: 角色管理策略分配
-                        href: resources/unifiedRoleManagementPolicyAssignment.md
-                        items:
-                          - name: 列表
-                            href: api/unifiedRoleManagementPolicyAssignment-list.md
-                          - name: 获取
-                            href: api/unifiedRoleManagementPolicyAssignment-get.md
                   - name: 资源命名空间
                     href: resources/unifiedrbacresourcenamespace.md
                     items:
@@ -11809,6 +11734,98 @@ items:
                             href: api/unifiedrbacresourcenamespace-list-resourceactions.md
                           - name: 获取
                             href: api/unifiedrbacresourceaction-get.md
+                  - name: Privileged Identity Management
+                    items:
+                      - name: 角色分配
+                        items:
+                          - name: 计划请求
+                            href: resources/unifiedroleassignmentschedulerequest.md
+                            items:
+                              - name: 列出
+                                href: api/unifiedroleassignmentschedulerequest-list.md
+                              - name: 创建
+                                href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+                              - name: 获取
+                                href: api/unifiedroleassignmentschedulerequest-get.md
+                              - name: 取消
+                                href: api/unifiedroleassignmentschedulerequest-cancel.md
+                              - name: 按当前用户筛选
+                                href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                          - name: 计划
+                            href: resources/unifiedroleassignmentschedule.md
+                            items:
+                              - name: 列表
+                                href: api/unifiedroleassignmentschedule-list.md
+                              - name: 获取
+                                href: api/unifiedroleassignmentschedule-get.md
+                              - name: 按当前用户筛选
+                                href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                          - name: 计划实例
+                            href: resources/unifiedroleassignmentscheduleinstance.md
+                            items:
+                              - name: 列表
+                                href: api/unifiedroleassignmentscheduleinstance-list.md
+                              - name: 获取
+                                href: api/unifiedroleassignmentscheduleinstance-get.md
+                              - name: 按当前用户筛选
+                                href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+                      - name: 角色资格
+                        items:
+                          - name: 计划请求
+                            href: resources/unifiedroleeligibilityschedulerequest.md
+                            items:
+                              - name: 列出
+                                href: api/unifiedroleeligibilityschedulerequest-list.md
+                              - name: 创建
+                                href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+                              - name: 获取
+                                href: api/unifiedroleeligibilityschedulerequest-get.md
+                              - name: 取消
+                                href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                              - name: 按当前用户筛选
+                                href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+                          - name: 计划
+                            href: resources/unifiedroleeligibilityschedule.md
+                            items:
+                              - name: 列表
+                                href: api/unifiedroleeligibilityschedule-list.md
+                              - name: 获取
+                                href: api/unifiedroleeligibilityschedule-get.md
+                              - name: 按当前用户筛选
+                                href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+                          - name: 计划实例
+                            href: resources/unifiedroleeligibilityscheduleinstance.md
+                            items:
+                              - name: 列表
+                                href: api/unifiedroleeligibilityscheduleinstance-list.md
+                              - name: 获取
+                                href: api/unifiedroleeligibilityscheduleinstance-get.md
+                              - name: 按当前用户筛选
+                                href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+                      - name: 角色管理策略
+                        items:
+                          - name: 策略和规则
+                            displayName: 'role management policies, Azure AD role settings'
+                            href: resources/unifiedrolemanagementpolicy.md
+                            items:
+                              - name: 列表
+                                href: api/policyroot-list-rolemanagementpolicies.md
+                              - name: 获取
+                                href: api/unifiedrolemanagementpolicy-get.md
+                              - name: 列出规则
+                                href: api/unifiedrolemanagementpolicy-list-rules.md
+                              - name: 获取规则
+                                href: api/unifiedrolemanagementpolicyrule-get.md
+                              - name: 更新规则
+                                href: api/unifiedrolemanagementpolicyrule-update.md
+                          - name: 策略分配
+                            displayName: role managemement policy assignments
+                            href: resources/unifiedrolemanagementpolicyassignment.md
+                            items:
+                              - name: 列表
+                                href: api/unifiedRoleManagementPolicyAssignment-list.md
+                              - name: 获取
+                                href: api/unifiedrolemanagementpolicyassignment-get.md
           - name: 身份和登录
             items:
               - name: 身份验证方法
@@ -13648,7 +13665,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 备注
+              - name: 注释
                 items:
                   - name: 人员批注
                     href: resources/personannotation.md
