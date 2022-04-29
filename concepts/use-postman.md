@@ -3,12 +3,12 @@ title: 结合使用 Postman 和 Microsoft Graph API
 description: 使用 Microsoft Graph Postman 集合，只需几分钟，即可开始使用 Microsoft Graph API。
 author: jasonjoh
 ms.localizationpriority: high
-ms.openlocfilehash: ef4b7a6c990ce831b9f2a7ac10b9d828eded9c13
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 4071db82be82d52f6ec5ebd924fe6ed23b87643e
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368257"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133641"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>结合使用 Postman 和 Microsoft Graph API
 
@@ -47,11 +47,9 @@ ms.locfileid: "63368257"
 1. 在左侧菜单上，选择 **注册**。
 1. 在水平菜单中，单击“**新建注册**”。
 1. 将“**应用名称**”设置为“`Postman`”。
-1. 从下拉菜单中，选择“**Web**”。 
-1. 将“**重定向 URI**”设置为“`https://oauth.pstmn.io/v1/callback`”。
+1. 从下拉菜单中，选择“**Web**”。
+1. 将“**重定向 URI**”设置为“`https://oauth.pstmn.io/v1/browser-callback`”。
 1. 选择“**注册**”。
-1. 在左侧菜单中，选择“**身份验证**”。
-1. 在 **重定向 URI** 下，选择“**添加 URI**”。 将值设置为 `https://app.getpostman.com/oauth2/callback` 并选择“**保存**”。
 1. 在左侧菜单上，选择 **API 权限**。
 1. 在水平菜单中，依次选择“**添加权限**”和“**Microsoft Graph**”，然后选择“**委派权限**”。
 1. 键入“`Mail.`”，展开“**邮件**”选项，然后检查 **Mail.Read**.

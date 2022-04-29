@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8e09cd8fc86d1a2bbf0dbc4d09c5900fad56b6bf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9554696b6b911cdf278ee7d6f6c63de7962cea25
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135517"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133186"
 ---
 # <a name="update-connection"></a>更新连接
 
@@ -18,7 +18,7 @@ ms.locfileid: "62135517"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [externalConnection 的属性](../resources/externalconnectors-externalconnection.md)。
+更新 [externalConnection](../resources/externalconnectors-externalconnection.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "62135517"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持。 |
+| 委派（工作或学校帐户）     | ExternalConnection.ReadWrite.OwnedBy，ExternalConnection.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ExternalConnection.ReadWrite.OwnedBy |
+| 应用程序                            | ExternalConnection.ReadWrite.OwnedBy，ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,11 +49,11 @@ PATCH /external/connections/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
-| 属性      | 类型                                           | Description |
+| 属性      | 类型                                           | 说明 |
 |:--------------|:-----------------------------------------------|:------------|
-| configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | 指定允许管理连接和索引连接内容的其他应用程序 ID。 |
-| 说明   | String                                         | 网站中显示的连接Microsoft 365 管理中心。 |
-| name          | String                                         | 要显示名称中显示的连接的Microsoft 365 管理中心。 最大长度为 128 个字符。 |
+| configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | 指定允许管理连接和为连接中的内容编制索引的其他应用程序 ID。 |
+| description   | String                                         | Microsoft 365 管理中心中显示的连接的说明。 |
+| name          | String                                         | 要在Microsoft 365 管理中心中显示的连接的显示名称。 最大长度为 128 个字符。 |
 
 ## <a name="response"></a>响应
 

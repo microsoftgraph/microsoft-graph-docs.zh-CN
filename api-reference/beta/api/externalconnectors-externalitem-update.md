@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c338aac56111598eaffd8eb10d7419d5730f505b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a37cb11ac809955d80b59b2134b099815608b313
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396026"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133662"
 ---
 # <a name="update-externalitem"></a>更新 externalItem
 
@@ -18,7 +18,7 @@ ms.locfileid: "63396026"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [externalitem 的属性](../resources/externalconnectors-externalitem.md)。
+更新 [externalitem](../resources/externalconnectors-externalitem.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "63396026"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持。 |
+| 委派（工作或学校帐户）     | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
@@ -42,8 +42,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | 包含 `id` [externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 |
+| connection-id | string | `id`包含 [externalConnection](../resources/externalconnectors-externalconnection.md) 的属性 |
+| item-id       | string | [externalItem](../resources/externalconnectors-externalitem.md) 的开发人员提供的`id`属性。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,25 +54,25 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 现有 (`properties` 不包括对象) 不包含在请求正文中的属性将保留其以前的值或根据其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
+在请求正文中，提供应更新的相关字段的值。 现有属性 (排除未包含在请求正文中的对象) 中的属性 `properties` ，将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
 | 属性   | 类型                                  | 说明               |
 |:-----------|:--------------------------------------|:--------------------------|
-| acl        | [microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合 | 访问控制项数组。 每个条目指定授予用户或组的访问权限。 |
-| content    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | 项目内容的纯文本表示形式。 此属性中的文本已编制全文索引。 |
-| properties | Object                                | 具有项目属性的属性包。 属性必须符合为 [externalConnection 定义的架构](../resources/externalconnectors-externalconnection.md)。[](../resources/externalconnectors-schema.md) |
+| Acl        | [microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合 | 访问控制条目的数组。 每个条目指定授予用户或组的访问权限。 |
+| content    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | 项内容的纯文本表示形式。 此属性中的文本为全文索引。 |
+| properties | Object                                | 包含项属性的属性包。 属性必须符合为 [externalConnection](../resources/externalconnectors-externalconnection.md) 定义的[架构](../resources/externalconnectors-schema.md)。 |
 
 ### <a name="updating-the-acl-collection"></a>更新 acl 集合
 
-`acl`如果属性包含在更新请求中，则现有 ACL 集合将被请求中包含的集合覆盖。
+如果该 `acl` 属性包含在更新请求中，则现有 ACL 集合会被请求中包含的集合覆盖。
 
 ### <a name="updating-the-properties-object"></a>更新 properties 对象
 
-`properties`如果属性包含在更新请求中，则现有属性包将被请求中包含的值覆盖。
+如果该 `properties` 属性包含在更新请求中，则会用请求中包含的值覆盖现有属性包。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [externalItem](../resources/externalconnectors-externalitem.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [externalItem](../resources/externalconnectors-externalitem.md) 对象。
 
 ## <a name="examples"></a>示例
 

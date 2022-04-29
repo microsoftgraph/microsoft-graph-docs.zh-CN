@@ -1,29 +1,31 @@
 ---
 title: expirationPattern 资源类型
-description: 请求计划中的过期模式可包含在访问包分配请求中，并且存在于访问包分配中。
+description: 过期模式定义请求或分配何时过期。
 author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 83ec2f3cafc25787a979103f4edea5e6436b57a9
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 03810c04707d9b53a0254cbb4d322f4d5696b0d0
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650690"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133194"
 ---
 # <a name="expirationpattern-resource-type"></a>expirationPattern 资源类型
 
 命名空间：microsoft.graph
 
-在[Azure AD中](entitlementmanagement-overview.md)，访问包分配请求由想要获取访问包分配的用户创建。 此请求可包括用户希望何时进行工作分配的计划。  由此类请求导致的访问包分配也具有计划。  [entitlementManagementSchedule 的](entitlementmanagementschedule.md)过期字段指示访问包分配应过期的时间。
+在[Azure AD权利管理](entitlementmanagement-overview.md)中，访问包分配请求由想要获取访问包分配的用户创建。 此请求可以包含用户想要分配时间的计划。 来自此类请求的访问包分配也有计划。 [entitlementManagementSchedule](entitlementmanagementschedule.md) 的过期字段指示访问包分配何时到期。
+
+在 PIM 中，使用此资源定义 [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) 或 [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) 对象何时过期。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|duration|期限|请求者所需的访问持续时间以 ISO 8601 格式表示。 例如，PT3H 是指三个小时。  如果在请求中指定 **，endDateTime** 不应存在， **并且 type** 属性应设置为 `afterDuration` 。|
-|endDateTime|DateTimeOffset|使用 ISO 8601 格式的日期和时间信息的时间戳，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|type|[expirationPatternType](#expirationpatterntype-values)|请求者所需的过期模式类型。 可能的值包括 `notSpecified`、`noExpiration`、`afterDateTime`、`afterDuration`。 |
+|duration|期限|请求者所需的访问持续时间（以 ISO 8601 格式表示）持续时间。 例如，PT3H 是指 3 小时。  如果在请求中指定， **则不应存在 endDateTime** ，并且应将 **type** 属性设置为 `afterDuration`。|
+|endDateTime|DateTimeOffset|使用 ISO 8601 格式的时间戳日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|type|[expirationPatternType](#expirationpatterntype-values)|请求者的所需过期模式类型。 可能的值包括 `notSpecified`、`noExpiration`、`afterDateTime`、`afterDuration`。 |
 
 ### <a name="expirationpatterntype-values"></a>expirationPatternType 值
 
@@ -32,7 +34,7 @@ ms.locfileid: "61650690"
 |notSpecified|未指定过期计划。|
 |noExpiration|请求者不希望访问过期。|
 |afterDateTime|访问将在指定的日期和时间后过期。|
-|afterDuration|访问将在相对于授予访问权限的指定持续时间后过期。 指定 **duration 属性** 时是必需的。|
+|afterDuration|相对于授予访问权限的指定持续时间后，访问权限将过期。 指定 **duration** 属性时是必需的。|
 
 ## <a name="relationships"></a>关系
 无。

@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c558a0452984ee67a5adb92269af6e40c80d39e5
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 901d9a3eb85441f3828315e628ee01a536cf35d2
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394829"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133620"
 ---
 # <a name="create-externalgroup"></a>创建 externalGroup
 
@@ -26,9 +26,9 @@ ms.locfileid: "63394829"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持                               |
-| 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                  |
+| 委派（工作或学校帐户）     | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,17 +52,17 @@ POST /external/connections/{connectionId}/groups
 
 在请求正文中，提供 **externalGroup** 对象的 JSON 表示形式。
 
-您可以在创建 **externalGroup 时指定以下属性**。
+创建 **externalGroup** 时，可以指定以下属性。
 
 | 属性    | 类型   | 说明                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | 连接内外部组的唯一 ID。 它必须是字母数字，并且最多为 128 个字符。 |
-| displayName | 字符串 | 外部组的友好名称。 可选。                                                                      |
+| id          | String | 连接中外部组的唯一 ID。 它必须是字母数字，最多可以是 128 个字符。 |
+| displayName | String | 外部组的友好名称。 可选。                                                                      |
 | 说明 | String | 外部组的说明。 可选。                                                                         |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 **externalGroup** 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 **externalGroup** 对象。
 
 ## <a name="examples"></a>示例
 

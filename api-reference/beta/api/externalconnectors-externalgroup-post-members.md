@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4d3b6a7dd81e283362ac9e013966f8c0bf22841c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 975b08d9850ca7512813b222491c608e18fdd065
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394416"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133452"
 ---
 # <a name="create-externalgroupmember"></a>创建 externalGroupMember
 
@@ -26,9 +26,9 @@ ms.locfileid: "63394416"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持                               |
-| 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                  |
+| 委派（工作或学校帐户）     | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,17 +52,17 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 在请求正文中，提供 **externalGroupMember** 对象的 JSON 表示形式。
 
-您可以在创建 **externalGroupMember 时指定以下属性**。
+创建 **externalGroupMember** 时，可以指定以下属性。
 
 | 属性       | 类型                    | 说明                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | 成员 `id` 的唯一性。 对于用户或组，它Azure Active Directory objectId，对于外部组，为 externalGroupId。 此为必需属性。                                   |
-| type           | microsoft.graph.externalConnectors.externalGroupMemberType | 添加到外部组的成员的类型。 可能的值是： `user` 或 `group` 当 identitySource 为 `azureActiveDirectory` 时，或者当 `group` identitySource `external`为 时。 必需。 |
+| id             | String                  | 成员的唯 `id` 一。 如果Azure Active Directory用户或组，则为 objectId，对于外部组，则为 externalGroupId。 此为必需属性。                                   |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | 添加到外部组的成员的类型。 可能的值是： `user` 或 `group` 标识源所在的 `azureActiveDirectory` 时间，以及标 `group` 识源所在的时间 `external`。 必需。 |
 | identitySource | microsoft.graph.externalConnectors.identitySourceType      | 成员所属的标识源。 可取值为：`azureActiveDirectory`、`external`。 必需。                                                                                       |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 **externalGroupMember** 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 **externalGroupMember** 对象。
 
 ## <a name="examples"></a>示例
 

@@ -1,46 +1,50 @@
 ---
 title: policyRoot 资源类型
-description: 公开策略单一元素的导航属性的资源类型。
+description: 公开策略单一实例导航属性的资源类型。
 author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9ca01343954e659da2133543a3454a56be85ecc5
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: f91bdf76395b44c4041a64ce81716158455de3cf
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510181"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133494"
 ---
 # <a name="policyroot-resource-type"></a>policyRoot 资源类型
 
 命名空间：microsoft.graph
 
-公开策略单一元素的导航属性的资源类型。
+公开策略单一实例导航属性的资源类型。 继承自 [entity](../resources/entity.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 无
 
 ## <a name="properties"></a>属性
-无
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|策略的唯一标识符。 继承自 [entity](../resources/entity.md)。|
 
 
 ## <a name="relationships"></a>关系
 | 关系                              | 类型                                                                                                      | 说明                                                                                                                                                          |
 |:------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | 身份验证方法以及允许使用它们登录并执行 MFA 中 MFA (多重) 用户Azure Active Directory (Azure AD) 。 |
-| authenticationFlowsPolicy                 | [authenticationFlowsPolicy](authenticationflowspolicy.md)                                                 | 外部用户的自助注册体验的策略配置。                                                                                   |
-| activityBasedTimeoutPolicies              | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) 集合                                    | 控制应用程序的 Web 会话的空闲时间的策略。                                                                                        |
-| authorizationPolicy                       | [authorizationPolicy](authorizationpolicy.md) 集合                                                  | 控制授权Azure AD策略。                                                                                                            |
-| claimsMappingPolicies                     | [claimsMappingPolicy](claimsmappingpolicy.md) 集合                                                  | WS-Fed、SAML、OAuth 2.0 和 OpenID 连接协议声明映射策略，用于颁发给特定应用程序的令牌。                                   |
-| homeRealmDiscoveryPolicies                | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合                                        | 用于控制联盟Azure AD身份验证行为的策略。                                                                                          |
-| permissionGrantPolicies                   | [permissionGrantPolicy](permissiongrantpolicy.md) 集合                                              | 指定可授予同意的条件的策略。                                                                                         |
-| tokenIssuancePolicies                     | [tokenIssuancePolicy](tokenissuancepolicy.md) 集合                                                  | 指定由 SAML 令牌颁发者颁发的 SAML 令牌Azure AD。                                                                                     |
-| tokenLifetimePolicies                     | [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合                                                  | 控制 JWT 访问令牌、ID 令牌或由应用程序颁发的 SAML 1.1/2.0 令牌的生命周期Azure AD。                                                |
-| featureRolloutPolicies                    | [featureRolloutPolicy](featurerolloutpolicy.md) 集合                                                | 与目录对象关联的功能推出策略。                                                                                                       |
-| adminConsentRequestPolicy                 | [adminConsentRequestPolicy](adminconsentrequestpolicy.md)                                                 | 创建和管理整个租户的同意请求的策略。                                                                                  |
+| activityBasedTimeoutPolicies              | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) 集合                                    | 用于控制应用程序的 Web 会话空闲超时的策略。                                                                                        |
+| adminConsentRequestPolicy                 | [adminConsentRequestPolicy](adminconsentrequestpolicy.md)                                                 | 为整个租户创建和管理同意请求的策略。                                                                                  |
+| authenticationFlowsPolicy                 | [authenticationFlowsPolicy](authenticationflowspolicy.md)                                                 | 外部用户自助注册体验的策略配置。                                                                                   |
+| authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | 允许其登录的身份验证方法和用户在 Azure Active Directory (Azure AD) 中 (MFA) 执行多重身份验证。 |
+| authorizationPolicy                       | [authorizationPolicy](authorizationpolicy.md) 集合                                                  | 控制Azure AD授权设置的策略。                                                                                                            |
+| claimsMappingPolicies                     | [claimsMappingPolicy](claimsmappingpolicy.md) 集合                                                  | WS-Fed、SAML、OAuth 2.0 和 OpenID 连接协议的声明映射策略，用于向特定应用程序颁发的令牌。                                   |
 | conditionalAccessPolicies                 | [conditionalAccessPolicy](conditionalaccesspolicy.md)                                                     | 定义访问方案的自定义规则。                                                                                                                     |
-| identitySecurityDefaultsEnforcementPolicy | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md)                 | 表示用于防范常见攻击的安全默认值的策略。                                                                                |
+| featureRolloutPolicies                    | [featureRolloutPolicy](featurerolloutpolicy.md) 集合                                                | 与目录对象关联的功能推出策略。                                                                                                       |
+| homeRealmDiscoveryPolicies                | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合                                        | 用于控制联合用户Azure AD身份验证行为的策略。                                                                                          |
+| identitySecurityDefaultsEnforcementPolicy | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md)                 | 表示可防范常见攻击的安全默认值的策略。                                                                                |
+| permissionGrantPolicies                   | [permissionGrantPolicy](permissiongrantpolicy.md) 集合                                              | 指定可以授予许可的条件的策略。                                                                                         |
+|roleManagementPolicies|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 集合| 指定与范围和角色关联的各种策略。 |
+|roleManagementPolicyAssignments|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 集合| 将角色管理策略分配给角色定义对象。 |
+| tokenIssuancePolicies                     | [tokenIssuancePolicy](tokenissuancepolicy.md) 集合                                                  | 指定由Azure AD颁发的 SAML 令牌的特征的策略。                                                                                     |
+| tokenLifetimePolicies                     | [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合                                                  | 控制 JWT 访问令牌、ID 令牌或由Azure AD颁发的 SAML 1.1/2.0 令牌的生存期的策略。                                                |
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -54,7 +58,8 @@ ms.locfileid: "64510181"
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.policyRoot"
+  "@odata.type": "#microsoft.graph.policyRoot",
+  "id": "String (identifier)"
 }
 ```
 

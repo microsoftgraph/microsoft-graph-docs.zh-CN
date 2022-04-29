@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7909bfba11da8ba0fb24549f4a21c040d0375864
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a474302922518ed535350ddf619c32560ee63ab2
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397230"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133319"
 ---
 # <a name="get-schema"></a>获取架构
 
@@ -18,7 +18,7 @@ ms.locfileid: "63397230"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [externalConnection](../resources/externalconnectors-externalconnection.md) [架构](../resources/externalconnectors-schema.md)的属性。
+检索 [externalConnection](../resources/externalconnectors-externalconnection.md) [架构的属性](../resources/externalconnectors-schema.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "63397230"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持。 |
+| 委派（工作或学校帐户）     | ExternalConnection.ReadWrite.OwnedBy、ExternalConnection.Read.All、ExternalConnection.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ExternalConnection.ReadWrite.OwnedBy |
+| 应用程序                            | ExternalConnection.ReadWrite.OwnedBy、ExternalConnection.Read.All、ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /external/connections/{id}/schema
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 [使用 OData 查询参数](/graph/query-parameters) 自定义响应。
+此方法不支持 [OData 查询参数](/graph/query-parameters) 自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /external/connections/{id}/schema
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回 响应代码和请求[](../resources/externalconnectors-schema.md)的架构对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和请求的 [架构](../resources/externalconnectors-schema.md) 对象。
 
 ## <a name="examples"></a>示例
 

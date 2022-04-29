@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d76ef5bebac8caabe95782af22620ea22c84ad9e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5a7ece15096d5d676f691b82754a4fafdba2ebc5
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396152"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133480"
 ---
 # <a name="delete-externalitem"></a>删除 externalItem
 命名空间：microsoft.graph.externalConnectors
@@ -24,9 +24,9 @@ ms.locfileid: "63396152"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不适用|
-|委派（个人 Microsoft 帐户）|不适用|
-|应用程序| ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All|
+| 委派（工作或学校帐户）     | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持                               |
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

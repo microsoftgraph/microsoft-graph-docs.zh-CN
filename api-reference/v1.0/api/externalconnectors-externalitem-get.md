@@ -5,28 +5,28 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c983947208ea02f4af0f395c3e294acedc894b89
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 1c36751b9463454f1251cc7ca269054791ca9ed5
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558544"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133459"
 ---
 # <a name="get-externalitem"></a>获取 externalItem
 命名空间：microsoft.graph.externalConnectors
 
 
 
-读取 [externalItem 对象的属性和](../resources/externalconnectors-externalitem.md) 关系。
+读取 [externalItem](../resources/externalconnectors-externalitem.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不适用|
-|委派（个人 Microsoft 帐户）|不适用|
-|Application| ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+| 委派（工作或学校帐户）     | ExternalItem.ReadWrite.OwnedBy、ExternalItem.Read.All、ExternalItem.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持                               |
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.Read.All、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /external/connections/{connectionsId}/items/{externalItemId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [externalItem](../resources/externalconnectors-externalitem.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [externalItem](../resources/externalconnectors-externalitem.md) 对象。
 
 ## <a name="examples"></a>示例
 

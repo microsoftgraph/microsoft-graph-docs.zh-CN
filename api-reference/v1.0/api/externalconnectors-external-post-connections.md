@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 437359ac65a0fe53ea0dafc6704935b3337c6ffd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 459ec5b7c867e7b85aa353aa10294a52a431d5e2
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107458"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133774"
 ---
 # <a name="create-externalconnection"></a>创建 externalConnection
 命名空间：microsoft.graph.externalConnectors
@@ -24,9 +24,9 @@ ms.locfileid: "62107458"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不适用|
+|委派（工作或学校帐户）|ExternalConnection.ReadWrite.OwnedBy，ExternalConnection.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不适用|
-|应用程序| ExternalConnection.ReadWrite.OwnedBy|
+|应用程序| ExternalConnection.ReadWrite.OwnedBy，ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ POST /external/connections
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [externalConnection](../resources/externalconnectors-externalconnection.md) 对象的 JSON 表示形式。
 
-您可以在创建 [externalConnection](../resources/externalconnectors-externalconnection.md)时指定以下属性。
+创建 [externalConnection](../resources/externalconnectors-externalconnection.md) 时，可以指定以下属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -60,7 +60,7 @@ POST /external/connections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [externalConnection](../resources/externalconnectors-externalconnection.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [externalConnection](../resources/externalconnectors-externalconnection.md) 对象。
 
 ## <a name="examples"></a>示例
 

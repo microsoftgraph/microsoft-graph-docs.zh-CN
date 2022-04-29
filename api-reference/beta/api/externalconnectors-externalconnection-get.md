@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4c7e42319396d36330817bc27f15cb0e176cb844
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 98d0895eace4b387ddb50019f595f49270e805dc
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108942"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133189"
 ---
 # <a name="get-connection"></a>获取连接
 
@@ -18,7 +18,7 @@ ms.locfileid: "62108942"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [externalConnection 的属性和关系](../resources/externalconnectors-externalconnection.md)。
+检索 [externalConnection](../resources/externalconnectors-externalconnection.md) 的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "62108942"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持。 |
+| 委派（工作或学校帐户）     | ExternalConnection.ReadWrite.OwnedBy、ExternalConnection.Read.All、ExternalConnection.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ExternalConnection.ReadWrite.OwnedBy |
+| 应用程序                            | ExternalConnection.ReadWrite.OwnedBy、ExternalConnection.Read.All、ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /external/connections/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [externalConnection](../resources/externalconnectors-externalconnection.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和请求的 [externalConnection](../resources/externalconnectors-externalconnection.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -1,18 +1,18 @@
 ---
-title: participant： invite
+title: 参与者：邀请
 description: 邀请参与者加入活动呼叫。
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e498f718185ecf0497063c5cdf6f1bfa35e86c3d
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: 640cd67114ec43ae6981b10a645d0fe8d90a0268
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607468"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133823"
 ---
-# <a name="participant-invite"></a>participant： invite
+# <a name="participant-invite"></a>参与者：邀请
 
 命名空间：microsoft.graph
 
@@ -20,18 +20,18 @@ ms.locfileid: "64607468"
 
 邀请参与者加入活动呼叫。
 
-若要详细了解如何处理操作，请参阅 [通信操作](../resources/commsoperation.md)。
+有关如何处理操作的详细信息，请参阅 [commsoperation](../resources/commsoperation.md)。
 
->**注意：** 仅支持组呼叫在一个请求中邀请多个参与者。
+>**注意：** 仅组调用支持在一个请求中邀请多个参与者。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                |
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| Application     | Calls.InitiateGroupCalls.All |
+| 应用程序     | Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -56,17 +56,17 @@ POST /communications/calls/{id}/participants/invite
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回响应 `200 OK` 代码和位置标头，该标头具有为此请求创建的 [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 的 URI。 响应正文包含创建的 [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 。
+如果成功，此方法将向为此请求创建[的 inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 返回一个`200 OK`响应代码和一个带有 URI 的位置标头。 响应正文包含已创建 [的 inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 。
 
->**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
+>**注意：** 当此 API 返回成功响应时，所有参与者都将收到名册更新。
 
 
 ## <a name="examples"></a>示例
-以下示例显示如何调用此 API。
+以下示例演示如何调用此 API。
 
-> **注意：** 为了可读性，可能会缩短响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 可能会缩短响应对象的可读性。 所有属性都将通过实际调用返回。
 
-### <a name="example-1-invite-one-participant-to-an-existing-call"></a>示例 1：邀请一个参与者加入现有呼叫
+### <a name="example-1-invite-one-participant-to-an-existing-call"></a>示例 1：邀请一名参与者参加现有呼叫
 
 #### <a name="request"></a>请求
 
@@ -205,7 +205,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>通知 - 已添加参与者更新名单
+#### <a name="notification---roster-updated-with-participant-added"></a>通知 - 已更新名单，并添加了参与者
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -260,9 +260,9 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>示例 2：邀请多个参与者加入现有组呼叫
+### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>示例 2：邀请多个参与者加入现有组调用
 
-> **注意**：现有组调用必须具有有效的 [chatInfo](../resources/chatInfo.md)。 支持邀请最多 5 个参与者。
+> **注意**：现有组调用必须具有有效的 [chatInfo](../resources/chatInfo.md)。 最多支持邀请 5 名参与者。
 
 #### <a name="request"></a>请求
 
@@ -436,7 +436,7 @@ Content-Type: application/json
 }
 
 ```
-#### <a name="notification---roster-updated-with-participants-added"></a>通知 - 已添加参与者更新名单
+#### <a name="notification---roster-updated-with-participants-added"></a>通知 - 已更新名单，并添加了参与者
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
@@ -520,14 +520,14 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>示例 3：邀请参与者加入现有组呼叫，替换现有的对等呼叫
+### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>示例 3：邀请参与者加入现有组调用，替换现有的对等呼叫
 
 
-替换现有的对等调用时，邀请 API 仅支持一个参与者。 当请求正文中提供了多个参与者时，只会读取第一个参与者，其余参与者将被忽略。
+在替换现有对等调用时，邀请 API 仅支持一个参与者。 在请求正文中提供多个参与者时，将只读取第一个参与者，其余参与者将被忽略。
 
 
-> **注意：** 提供邀请 API 时，仅支持一 `replacesCallId` 个参与者。 
-> 有关使用 替换 `replacesCallId` 现有对等呼叫的详细信息，请参阅 [invitationParticipantInfo](../resources/invitationparticipantinfo.md)。
+> **注意：** 在提供邀请时，邀请 API 仅支持一个参与者 `replacesCallId` 。 
+> 有关使用 `replacesCallId` 替换现有对等呼叫的详细信息，请 [参阅 invitationParticipantInfo](../resources/invitationparticipantinfo.md)。
 
 #### <a name="request"></a>请求
 
@@ -667,7 +667,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>通知 - 已添加参与者更新名单
+#### <a name="notification---roster-updated-with-participant-added"></a>通知 - 已更新名单，并添加了参与者
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -723,11 +723,11 @@ Content-Type: application/json
 }
 ```
 
->**注意：** 在"已完成"状态下，可以预期收到有关原始对等呼叫如何终止和删除的通知。
+>**注意：** 使用“已完成”状态时，可以预期收到有关原始对等呼叫终止和删除方式的通知。
 
-### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>示例 4：邀请一个 PSTN 参与者加入现有组呼叫
+### <a name="example-4-invite-one-pstn-participant-to-an-existing-call"></a>示例 4：邀请一名 PSTN 参与者到现有调用
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给机器人](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+此调用需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [为机器人分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 > **注意：** 电话 ID 是 E.164 格式的电话号码。
 
 #### <a name="request"></a>请求
@@ -863,7 +863,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>通知 - 已添加参与者更新名单
+#### <a name="notification---roster-updated-with-participant-added"></a>通知 - 已更新名单，并添加了参与者
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -917,7 +917,7 @@ Content-Type: application/json
 
 ```
 
->**注意：** 状态 `completed` 为，可以预期收到有关原始对等呼叫如何终止和删除的通知。
+>**注意：**`completed`使用状态时，可以预期收到有关原始对等呼叫终止和删除方式的通知。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

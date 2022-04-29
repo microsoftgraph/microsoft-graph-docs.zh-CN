@@ -1,16 +1,16 @@
 ---
-title: 删除成员标识
+title: 删除成员的标识
 description: 通过删除相应的标识资源从 externalGroup 中删除成员。
 author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9b032649ba0b078a13311d7dc57449afc70a2d2e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 9db185f168e5f7ce486635133029893cb7ab06e5
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397755"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133027"
 ---
 # <a name="delete-identity"></a>删除标识
 命名空间：microsoft.graph.externalConnectors
@@ -23,9 +23,9 @@ ms.locfileid: "63397755"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持                               |
+| 委派（工作或学校帐户）     | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                 |
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: deec2846b8f8490bf7005be46b19ad282c2cbae6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 6f37fdf90f510a650f2b1d13c42e83636c22697a
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588930"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133347"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -164,9 +164,8 @@ Retry-After: 2.128
 
 上述限制适用于下列资源:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
+- [activityHistoryItem](/graph/api/resources/activityhistoryitem)
+- [userActivity](/graph/api/resources/useractivity)
 
 ### <a name="microsoft-teams-service-limits"></a>Microsoft Teams 服务限制
 
@@ -342,9 +341,10 @@ Retry-After: 2.128
 
 上述限制适用于下列资源:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [people](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [trending](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
+- [people](/graph/api/resources/people)
+- [sharedInsight](/graph/api/resources/sharedinsight)
+- [trending](/graph/api/resources/trending)
+- [usedInsight](/graph/api/resources/usedinsight)
 
 
 ### <a name="microsoft-graph-reports-service-limits"></a>Microsoft Graph 报告的服务限制
@@ -412,9 +412,7 @@ Planner 的服务限制不可用。
 
 上述限制适用于下列资源：
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
+- [dataPolicyOperation](/graph/api/resources/datapolicyoperation)
 
 > **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
@@ -491,9 +489,10 @@ Planner 的服务限制不可用。
 
 上述限制适用于下列资源：
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+- [educationAssignment](/graph/api/resources/educationassignment)
+- [educationSubmission](/graph/api/resources/educationsubmission)
+- [trending](/graph/api/resources/trending)
+- [educationResource](/graph/api/resources/educationresource)
 
 ### <a name="service-communications-service-limits"></a>服务通信服务限制
 以下限制适用于`/admin/serviceAnnouncement/`下任何类型的服务通信请求。

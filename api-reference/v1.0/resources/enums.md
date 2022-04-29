@@ -5,16 +5,120 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 3391b332900b05fccf3cce873cc5e9ffa6aeec66
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 30a478f5a3021bf7efbadd0e924bd8c8e343ad40
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917743"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133137"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="expirationpatterntype-values"></a>expirationPatternType 值 
+
+|Member|
+|:---|
+|notSpecified|
+|noExpiration|
+|afterDateTime|
+|afterDuration|
+
+### <a name="recurrencepatterntype-values"></a>recurrencePatternType 值 
+
+|Member|
+|:---|
+|日常|
+|每周|
+|absoluteMonthly|
+|relativeMonthly|
+|absoluteYearly|
+|relativeYearly|
+
+### <a name="roleassignmentschedulefilterbycurrentuseroptions-values"></a>roleAssignmentScheduleFilterByCurrentUserOptions 值 
+
+|Member|
+|:---|
+|主要|
+|unknownFutureValue|
+
+### <a name="roleassignmentscheduleinstancefilterbycurrentuseroptions-values"></a>roleAssignmentScheduleInstanceFilterByCurrentUserOptions 值 
+
+|Member|
+|:---|
+|主要|
+|unknownFutureValue|
+
+### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>roleAssignmentScheduleRequestFilterByCurrentUserOptions 值 
+
+|Member|
+|:---|
+|主要|
+|createdBy|
+|审批者|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulefilterbycurrentuseroptions-values"></a>roleEligibilityScheduleFilterByCurrentUserOptions 值 
+
+|Member|
+|:---|
+|主要|
+|unknownFutureValue|
+
+### <a name="roleeligibilityscheduleinstancefilterbycurrentuseroptions-values"></a>roleEligibilityScheduleInstanceFilterByCurrentUserOptions 值 
+
+|Member|
+|:---|
+|主要|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulerequestfilterbycurrentuseroptions-values"></a>roleEligibilityScheduleRequestFilterByCurrentUserOptions 值 
+
+|Member|
+|:---|
+|主要|
+|createdBy|
+|审批者|
+|unknownFutureValue|
+
+### <a name="unifiedrolemanagementpolicyruletargetoperations-values"></a>unifiedRoleManagementPolicyRuleTargetOperations 值 
+
+|Member|
+|:---|
+|所有|
+|激活|
+|关闭|
+|分配|
+|更新|
+|删除|
+|扩展|
+|续订|
+|unknownFutureValue|
+
+### <a name="unifiedroleschedulerequestactions-values"></a>unifiedRoleScheduleRequestActions 值 
+
+|Member|
+|:---|
+|adminAssign|
+|adminUpdate|
+|adminRemove|
+|selfActivate|
+|selfDeactivate|
+|adminExtend|
+|adminRenew|
+|selfExtend|
+|selfRenew|
+|unknownFutureValue|
+
+### <a name="approvalfilterbycurrentuseroptions-values"></a>approvalFilterByCurrentUserOptions 值 
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|审批者|
+|unknownFutureValue|
 
 ### <a name="accessreviewexpirationbehavior-values"></a>accessReviewExpirationBehavior 值
 
@@ -214,7 +318,7 @@ ms.locfileid: "64917743"
 
 |Member|
 |:---|
-|默认|
+| 默认值|
 |enabled|
 |禁用|
 |unknownFutureValue|
@@ -534,7 +638,7 @@ ms.locfileid: "64917743"
 |:---|
 |无|
 |SecurityGroup|
-|全部|
+|所有|
 
 ### <a name="recipientscopetype-values"></a>recipientScopeType 值
 
@@ -843,7 +947,7 @@ ms.locfileid: "64917743"
 
 | Member
 |:-------------------------
-| 默认
+|  默认值
 | conferenceRoom
 | homeAddress
 | businessAddress
@@ -943,7 +1047,7 @@ ms.locfileid: "64917743"
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | 参考
 
 
@@ -1059,7 +1163,7 @@ ms.locfileid: "64917743"
 | preset7  | 7 
 | preset8  | 8 
 | preset9  | 9 
-| preset10 | 10 
+| preset10 | 10
 | preset11 | 11
 | preset12 | 12 
 | preset13 | 13
@@ -1131,7 +1235,7 @@ ms.locfileid: "64917743"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知。|
-|可信|10 |完整性级别不受信任。|
+|可信|10|完整性级别不受信任。|
 |低|20| 完整性级别较低。|
 |中等|30| 完整性级别为中等。|
 |高|40| 完整性级别较高。|
@@ -1174,11 +1278,11 @@ ms.locfileid: "64917743"
 |dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN注册表值类型。|
 |dwordBigEndian|4| REG_DWORD_BIG_ENDIAN注册表值类型。|
 |expandSz|5| REG_EXPAND_SZ注册表值类型。|
-|link|6 | REG_LINK注册表值类型。|
+|链接|6 | REG_LINK注册表值类型。|
 |multiSz|7 | REG_MULTI_SZ注册表值类型。|
 |无|8 | REG_NONE注册表值类型。|
 |qword|9 | REG_QWORD注册表值类型。|
-|qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN注册表值类型。|
+|qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN注册表值类型。|
 |深圳|11| REG_SZ注册表值类型。|
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
@@ -1200,7 +1304,7 @@ ms.locfileid: "64917743"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知状态。|
-|newAlert|10 | 警报是新的。|
+|newAlert|10| 警报是新的。|
 |inProgress|20|警报正在进行中。|
 |已解决|30|警报已解决。|
 
@@ -1413,7 +1517,7 @@ ms.locfileid: "64917743"
 | notInAddressBook      | 7      | 排除未在通讯簿中的发件人。 |
 | firstTimeSender       | 8      | 由于第一次发送者而被阻止。   |
 | autoPurgeToInbox      | 9      | TimeTravel 将消息移动到收件箱。   |
-| autoPurgeToJunk       | 10     | TimeTravel 将消息移动到垃圾邮件。    |
+| autoPurgeToJunk       | 10    | TimeTravel 将消息移动到垃圾邮件。    |
 | autoPurgeToDeleted    | 11    | 要删除的 TimeTravel 移动消息。 |
 | 出境              | 12     | 出站邮件。                      |
 | notJunk               | 13    | 允许由于不是垃圾。              |
@@ -1734,7 +1838,7 @@ ms.locfileid: "64917743"
 |Member|
 |:---|
 |团队|
-|频道|
+|通道|
 |聊天|
 |unknownFutureValue|
 
@@ -1883,7 +1987,7 @@ ms.locfileid: "64917743"
 
 |Member|
 |:---|
-|默认|
+| 默认值|
 |enabled|
 |禁用|
 |unknownFutureValue|

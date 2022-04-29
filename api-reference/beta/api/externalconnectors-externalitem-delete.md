@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c2d151babb8704b7fb14b12f28fd5f67fef5b192
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3d07f499c4ac419ef54e9265ca96338ee5e8168d
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394395"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133606"
 ---
 # <a name="delete-externalitem"></a>删除 externalItem
 
@@ -26,7 +26,7 @@ ms.locfileid: "63394395"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持。 |
+| 委派（工作或学校帐户）     | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
@@ -42,8 +42,8 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | 包含 `id` [externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 |
+| connection-id | string | `id`包含 [externalConnection](../resources/externalconnectors-externalconnection.md) 的属性 |
+| item-id       | string | [externalItem](../resources/externalconnectors-externalitem.md) 的开发人员提供的`id`属性。 |
 
 ## <a name="request-headers"></a>请求标头
 

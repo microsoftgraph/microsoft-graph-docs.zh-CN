@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 634b76929a03a549e2b438811cbd5bd2300b76b6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0dbc325853f973236fea190c77f65567206862db
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099701"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133718"
 ---
 # <a name="delete-externalconnection"></a>删除 externalConnection
 
@@ -26,9 +26,9 @@ ms.locfileid: "62099701"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持。 |
+| 委派（工作或学校帐户）     | ExternalConnection.ReadWrite.OwnedBy，ExternalConnection.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ExternalConnection.ReadWrite.OwnedBy |
+| 应用程序                            | ExternalConnection.ReadWrite.OwnedBy，ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

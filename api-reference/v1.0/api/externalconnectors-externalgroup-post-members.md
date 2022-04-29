@@ -1,23 +1,23 @@
 ---
 title: 创建标识
-description: 在 externalGroup 中创建新成员作为标识资源。
+description: 在 externalGroup 中创建一个新成员作为标识资源。
 author: sacampbe
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 508189bc61dcc7eec8f35da1b8733d72e957b0e0
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 66bf2b1f9b179fcef6f1b4754cf3316be0a067c1
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394941"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133732"
 ---
 # <a name="create-identity"></a>创建标识
 命名空间：microsoft.graph.externalConnectors
 
 
 
-为 [externalGroup](../resources/externalconnectors-identity.md) 中的新成员创建 [标识资源](../resources/externalconnectors-externalgroup.md)。
+在 [externalGroup](../resources/externalconnectors-externalgroup.md) 中为新成员创建[标识](../resources/externalconnectors-identity.md)资源。
 
 ## <a name="permissions"></a>权限
 
@@ -25,9 +25,9 @@ ms.locfileid: "63394941"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持                               |
+| 委派（工作或学校帐户）     | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                  |
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,19 +48,19 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供标识对象的 JSON **表示** 形式。
+在请求正文中，提供 **标识** 对象的 JSON 表示形式。
 
-为 **externalGroup** 中的成员创建 **标识** 资源时，可以指定以下属性。
+在为 **externalGroup** 中的成员创建 **标识** 资源时，可以指定以下属性。
 
 | 属性       | 类型                    | 说明                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | 成员 `id` 的唯一性。 对于用户或组，它将是 **objectId** Azure Active Directory，对于外部组，为 **externalGroupId**。 此为必需属性。                                    |
-| type           | microsoft.graph.externalConnectors.identityType | 添加到外部组的成员的类型。 可能的值是：、`user``group`、`externalGroup`。 必需。 |
+| id             | String                  | 成员的唯 `id` 一。 如果Azure Active Directory用户或组，则为 **objectId**，对于外部组，则为 **externalGroupId**。 此为必需属性。                                    |
+| type           | microsoft.graph.externalConnectors.identityType | 添加到外部组的成员的类型。 可能的值为： `user`，`group`， `externalGroup`. 必需。 |
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 **identity** 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 **标识** 对象。
 
 ## <a name="examples"></a>示例
 

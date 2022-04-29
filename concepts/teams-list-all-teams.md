@@ -4,27 +4,27 @@ description: '列出所有团队 '
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 010c22046df95b684bad73632cf658c074723366
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1045c71fadcd70f9888f6357366d7097178dbec4
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936080"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133571"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>列出组织中 Microsoft Teams 的所有团队
 
-若要列出组织（租户）中的所有[团队](/graph/api/resources/team?view=graph-rest-beta)，请找到包含团队的所有组，然后获取每个团队的信息。
+若要列出组织（租户）中的所有[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)，请找到包含团队的所有组，然后获取每个团队的信息。
 
 ## <a name="get-a-list-of-groups"></a>获取组列表
 
-若要获取包含团队的组织中所有 [组](/graph/api/resources/group?view=graph-rest-beta)的列表，请获取 [所有组的列表](/graph/api/group-list?view=graph-rest-beta)，然后在代码中找到具有包含“Team”的 **resourceProvisioningOptions** 属性的代码。
+若要获取包含团队的组织中所有 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)的列表，请获取 [所有组的列表](/graph/api/group-list?view=graph-rest-beta&preserve-view=true)，然后在代码中找到具有包含“Team”的 **resourceProvisioningOptions** 属性的代码。
 由于组是大型对象，因此使用 $select 仅获取你关注的组的属性。
 
 ```http
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> **注意**：某些未使用的旧团队将不会设置 resourceProvisioningOptions。 有关详细信息，请参阅[已知问题](known-issues.md#missing-teams-in-list-all-teams)。
+> **注意**：某些未使用的旧团队将不会设置 resourceProvisioningOptions。 有关详细信息，请参阅[已知问题](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined)。
 
 下面介绍响应示例。 
 
@@ -59,7 +59,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 
 > **注意**：仅可通过 beta 端点按 resourceProvisioningOptions 对组进行筛选。 resourceProvisioningOptions 在 v1.0 和 beta 中可用。
 
-> **注意**：不会列出某些未使用的旧团队。 有关详细信息，请参阅[已知问题](known-issues.md#missing-teams-in-list-all-teams)。
+> **注意**：不会列出某些未使用的旧团队。 有关详细信息，请参阅[已知问题](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined)。
 
 下面介绍响应示例。 
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 ## <a name="get-team-information-for-a-group"></a>获取组的团队信息
 
-若要获取特定组中团队的团队信息，请调用[获取团队](/graph/api/team-get?view=graph-rest-beta) API 并包括组 ID。
+若要获取特定组中团队的团队信息，请调用[获取团队](/graph/api/team-get?view=graph-rest-beta&preserve-view=true) API 并包括组 ID。
 
 ```http
 GET /teams/{group-id}
@@ -159,5 +159,5 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-- [列出 joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta)
-- [列出组](/graph/api/group-list?view=graph-rest-beta)
+- [列出 joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta&preserve-view=true)
+- [列出组](/graph/api/group-list?view=graph-rest-beta&preserve-view=true)

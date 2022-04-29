@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 15e8d1de626d0cb64806c3398c880a9b15a4b6b6
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 6c670eb174b410519de41d78f8c2fdab694566a2
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393590"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133029"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -23,9 +23,9 @@ ms.locfileid: "63393590"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|不适用|
-|委派（个人 Microsoft 帐户）|不适用|
-|应用程序| ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+| 委派（工作或学校帐户）     | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持                               |
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,18 +46,18 @@ PUT /external/connections/{connection-id}/items/{item-id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [externalItem](../resources/externalconnectors-externalitem.md) 对象的 JSON 表示形式。
 
-您可以在创建 [externalItem 时指定以下属性](../resources/externalconnectors-externalitem.md)。
+创建 [externalItem](../resources/externalconnectors-externalitem.md) 时，可以指定以下属性。
 
 |属性|类型| 说明|
 |:---|:---|:---|
-|id|String|项目 ID。 必需。|
-|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|项目属性。 对象 `properties` 必须至少包含一个属性。 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。 必需。|
+|id|String|项 ID。 必需。|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|项属性。 该 `properties` 对象必须至少包含一个属性。 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。 必需。|
 |content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|外部项内容。 可选。|
-|acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合|访问控制列表。 必需。|
+|Acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合|访问控制列表。 必需。|
 
-在下列 `externalItem` 情况下，上的 属性应在有效负载中使用类型说明符：
+在以下方案中，某个属性 `externalItem` 应在有效负载中使用类型说明符：
 
-- 对于 `String` 类型属性，如果值包含非 ASCII 字符。
+- 对于 `String` 类型属性，如果该值包含非 ASCII 字符。
 
     ```json
     "description@odata.type": "String",
@@ -75,7 +75,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > 当包含类型的 属性时 `Collection(DateTime)`，必须使用类型说明器 `Collection(DateTimeOffset)`。
+    > 包括类型的 `Collection(DateTime)`属性时，必须使用类型说明符 `Collection(DateTimeOffset)`。
 
 ## <a name="response"></a>响应 
 

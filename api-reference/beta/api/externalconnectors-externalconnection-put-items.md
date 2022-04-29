@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9df3496e49fe7017641b98d2d867e67b420ceede
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 49cf69b49edda6c8a7ea7a97d2ef826ce1bd5bce
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396782"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133438"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -20,7 +20,7 @@ ms.locfileid: "63396782"
 
 创建新的 [externalItem](../resources/externalconnectors-externalitem.md)。
 
-此 API 可用于创建自定义项。 包含 [externalConnection](../resources/externalconnectors-externalconnection.md) 的架构 [必须已](../resources/externalconnectors-schema.md) 注册相应类型。
+此 API 可用于创建自定义项。 包含 [的 externalConnection](../resources/externalconnectors-externalconnection.md) 必须注册相应类型的 [架构](../resources/externalconnectors-schema.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "63396782"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持。 |
+| 委派（工作或学校帐户）     | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
@@ -44,8 +44,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | 包含 `id` [externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 如果不存在此项目，将 `id`创建一个新项。 如果项目已存在， `id`则它将被正文中发送的对象覆盖。 |
+| connection-id | string | `id`包含 [externalConnection](../resources/externalconnectors-externalconnection.md) 的属性 |
+| item-id       | string | [externalItem](../resources/externalconnectors-externalitem.md) 的开发人员提供的`id`属性。 如果此 `id`项中尚不存在任何项，则会创建一个新项。 如果此项已存在 `id`，则由在正文中发送的对象覆盖该项。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -60,13 +60,13 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ### <a name="creating-an-externalitem"></a>创建 externalItem
 
-创建 时 `externalItem`，以下字段是必需的： `acl`和 `properties`。 对象 `properties` 必须至少包含一个属性。
+创建某个`externalItem`字段时，需要以下字段： `acl``properties` 该 `properties` 对象必须至少包含一个属性。
 
 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。
 
-在下列 `externalItem` 情况下，上的 属性应在有效负载中使用类型说明符：
+在以下方案中，某个属性 `externalItem` 应在有效负载中使用类型说明符：
 
-- 对于 `String` 类型属性，如果值包含非 ASCII 字符。
+- 对于 `String` 类型属性，如果该值包含非 ASCII 字符。
 
     ```json
     "description@odata.type": "String",
@@ -84,7 +84,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > 当包含类型的 属性时 `Collection(DateTime)`，必须使用类型说明器 `Collection(DateTimeOffset)`。
+    > 包括类型的 `Collection(DateTime)`属性时，必须使用类型说明符 `Collection(DateTimeOffset)`。
 
 ## <a name="response"></a>响应
 
