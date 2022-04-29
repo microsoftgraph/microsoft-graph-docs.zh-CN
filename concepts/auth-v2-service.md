@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4310bbc6c2dc64b9e59cb6f0dfe1010a043452c4
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 1fd849f0176468c76353f9f2c478dfca0b753027
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333636"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133424"
 ---
 # <a name="get-access-without-a-user"></a>无用户访问
 
@@ -143,7 +143,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 |:--------------|:----------|:------------
 | 租户        | 必需  | 希望从中请求权限的目录租户。值可以采用 GUID 或易记名称格式。
 | client_id     | 必需  | 注册应用时由 [Azure 应用注册门户](https://go.microsoft.com/fwlink/?linkid=2083908) 分配的应用程序 ID。
-| 范围         | 必需  | 为此请求中的 `scope` 参数传递的值应为所需资源的资源标识符（应用程序 ID URI），带有 `.default` 后缀。 对于 Microsoft Graph，值为 `https://graph.microsoft.com/.default`。 此值通知 Microsoft 标识平台终结点将管理员同意的所有应用级别权限包含在访问令牌中。
+| 范围         | 必需  | 为此请求中的 **scope** 参数传递的值应为所需资源的标识符（应用程序 ID URI），带有 `.default` 后缀。 例如，Microsoft Graph 资源应用 ID URI 为 `https://graph.microsoft.com/`。 因此，对于 Microsoft Graph，**scope** 的值为 `https://graph.microsoft.com/.default`。 此值通知 Microsoft 标识平台终结点将管理员同意的所有应用级别权限包含在访问令牌中。
 | client_secret | 必需  | 在应用注册门户中为应用生成的客户端密码。请确保它已进行 URL 编码。
 | grant_type    | 必需  | 必须是 `client_credentials`。
 

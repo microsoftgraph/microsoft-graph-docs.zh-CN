@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 72a104326a577e2d66f484f720666fbc07653528
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: b439eba70c583004a98f45bc78908b040842d11c
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755612"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133273"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1195,7 +1195,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1367,7 +1367,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1831,15 +1831,23 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 #### <a name="application-permissions"></a>应用程序权限
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ExternalConnection.Read.All_ | 读取所有外部连接 | 允许应用在没有登录用户的情况下读取所有外部连接。 | 可访问 | 否 |
+| _ExternalConnection.ReadWrite.All_ | 读取和写入所有外部连接 | 允许应用在没有登录用户的情况下读取和写入所有外部连接。 | 可访问 | 否 |
 | _ExternalConnection.ReadWrite.OwnedBy_ | 读取和写入外部连接和连接设置 | 允许应用在没有已登录用户的情况下读取和写入外部连接及其设置。 应用只能读取和写入其授权的外部连接，也可以创建新的外部连接。 | 是 | 否 |
-| _ExternalItem.ReadWrite.OwnedBy_ | 读取和写入外部项目 | 允许应用在没有已登录用户的情况下读取和写入外部项目。 应用只能读取获得授权的连接的外部项目。 | 是 | 否 |
+| _ExternalItem.Read.All_ | 读取所有外部项 | 允许应用在没有登录用户的情况下读取所有外部项。 | 可访问 | 否 |
 | _ExternalItem.ReadWrite.All_ | 读取和写入所有外部项目 | 允许应用在没有已登录用户的情况下读取和写入所有外部项目。 | 是 | 否 |
+| _ExternalItem.ReadWrite.OwnedBy_ | 读取和写入外部项目 | 允许应用在没有已登录用户的情况下读取和写入外部项目。 应用只能读取获得授权的连接的外部项目。 | 是 | 否 |
 
 #### <a name="delegated-permissions"></a>委派权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _ExternalItem.Read.All_ | 读取外部数据 | 允许应用查询使用 Microsoft Graph 引入的数据| 是 | 否 |
+| _ExternalConnection.Read.All_ | 读取所有外部连接 | 允许应用代表已登录用户读取所有外部连接。 | 是 | 否 |
+| _ExternalConnection.ReadWrite.All_ | 读取和写入所有外部连接 | 允许应用代表已登录用户读取和写入所有外部连接。 | 可访问 | 否 |
+| _ExternalConnection.ReadWrite.OwnedBy_ | 读取和写入外部连接 | 允许应用代表已登录用户读取和写入外部连接。 应用只能读取和写入其授权的外部连接，也可以创建新的外部连接。 | 是 | 否 |
+| _ExternalItem.Read.All_ | 读取外部数据 | 允许应用代表登录用户读取外部数据集和内容。 | 可访问 | 否 |
+| _ExternalItem.ReadWrite.All_ | 读取和写入所有外部项目 | 允许应用代表已登录用户读取并写入所有外部项目。 | 可访问 | 否 |
+| _ExternalItem.ReadWrite.OwnedBy_ | 读取和写入外部项目 | 允许应用代表已登录用户读取和写入外部项目。 应用只能读取获得授权的连接的外部项目。 | 是 | 否 |
 
 ### <a name="remarks"></a>注解
 搜索权限仅对工作或学校帐户有效。
@@ -1892,7 +1900,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _SecurityEvents.Read.All_        |  读取组织的安全事件 | 允许应用代表已登录用户读取组织的安全事件。 | 是  | 否 |
 | _SecurityEvents.ReadWrite.All_   | 读取和更新组织的安全事件。 | 允许应用代表已登录用户读取组织的安全事件。 还允许应用代表已登录用户更新安全事件中的可编辑属性。 | 是  | 否 |
-| _SecurityActions.Read.All_        |  读取组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。 | 是  | 否 |
+| _SecurityActions.Read.All_        |  读取组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。 | 可访问  | 否 |
 | _SecurityActions.ReadWrite.All_   | 读取和更新组织的安全措施 | 允许应用代表登录的用户读取或更新组织的安全措施。  | 是  | 否 |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | 管理此应用创建或拥有的威胁指标 |允许应用代表已登录的用户创建威胁指标和完全管理这些威胁指标（阅读、更新和删除）。  | 是  | 否 |
 | _ThreatIndicators.Read.All_   | 读取组织的威胁指示器 | 允许应用代表已登录的用户读取组织的所有威胁指示器。  | 是  | 否 |
