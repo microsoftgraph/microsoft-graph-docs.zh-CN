@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: fa5d9a09174011a1c07f9c05bad833ea933b5b1a
-ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
-ms.translationtype: MT
+ms.openlocfilehash: 2701ff53871efa34719fb7cdf9b8542f39746641
+ms.sourcegitcommit: 4ef29d4a2cfa1ccc4a3da649e683377b17b90108
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64646604"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125893"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -70,7 +70,7 @@ ms.locfileid: "64646604"
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
 | [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。 |
@@ -162,6 +162,9 @@ ms.locfileid: "64646604"
 | **Outlook 任务**（已弃用）|||
 | [创建 outlookTask](../api/outlookuser-post-tasks.md)（已弃用） | [outlookTask](outlooktask.md) | 在用户邮箱的默认任务组（“我的任务”）和默认任务文件夹（“任务”）中创建 Outlook 任务。 |
 | [列出任务](../api/outlookuser-list-tasks.md)（已弃用） | [outlookTask](outlooktask.md) 集合 | 获取用户邮箱中的所有 Outlook 任务。 |
+| **云电脑**|||
+|[列出 cloudPC](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) 集合|列出归属于已登录用户的 [cloudPC](../resources/cloudpc.md) 设备。|
+|[获取启动信息](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|获取已登录用户的 [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) 。|
 
 
 ## <a name="properties"></a>属性
@@ -220,7 +223,7 @@ ms.locfileid: "64646604"
 | onPremisesLastSyncDateTime | DateTimeOffset | 表示上一次对象与本地目录同步的时间；例如：“2013-02-16T03:04:54Z”。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`）。 |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合 | 在预配期间使用 Microsoft 同步产品时发生的错误。 <br> 支持 `$filter`（`eq`、`not`、`ge`、`le`）。|
 | onPremisesSamAccountName | String | 包含从本地目录同步的本地 `sAMAccountName`。仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br> 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-| onPremisesSecurityIdentifier | String | 包含从本地同步到云的用户的本地安全标识符 (SID)。 只读。 支持 `$filter` (`eq` 包括值 `null`) 。  |
+| onPremisesSecurityIdentifier | String | 包含从本地同步到云的用户的本地安全标识符 （SID）。只读。支持 `$filter` （`eq` 包括 `null` 值）。  |
 | onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步（默认），则为 `null`。只读。<br><br>支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。 |
 | onPremisesUserPrincipalName | String | 包含从本地目录同步的本地 `userPrincipalName`。仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
 | otherMails | 字符串集合 | 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。<br>注意：此属性不能包含突出字符。<br><br>支持 `$filter` （`eq`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
