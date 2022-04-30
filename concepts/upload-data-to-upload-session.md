@@ -1,23 +1,21 @@
 ---
 title: 使用 Microsoft Graph 通用打印 API 上载文档
-description: 通用打印是一种新式打印解决方案，组织可以使用它通过 Microsoft 云服务来管理自己的打印基础设施。
+description: 了解通用打印，这是一种新式打印解决方案，组织可以通过 Microsoft 提供的云服务来管理打印基础结构。
 author: nilakhan
 ms.localizationpriority: high
-ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 13d97001f95efabb31b2aaa5e0d8e02c19d35fc5
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 36dd113e02e15822f9a64b04da390d5a87cae867
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946851"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133102"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>使用 Microsoft Graph 通用打印 API 上载文档
 
 若要使用 Microsoft Graph 中的通用打印 API 打印文档，你需要 [创建一个打印作业](/graph/api/printershare-post-jobs)、上传文档，然后 [启动打印作业](/graph/api/printjob-start)。 本文介绍了如何上传文档，首先需要 [创建一个上载会话](/graph/api/printdocument-createuploadsession)。
 
-若要上传文件或文件的一部分，你的应用可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值发出 PUT 请求。
-可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求中的最大字节数小于 10 MB 即可。
+若要上传文件或文件的一部分，应用程序可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 10 MB 即可。
 
 可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。 上传文档的所有二进制片段时，二进制文件将链接到 **printDocument**。
 

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: d1d3e616582d6e5e5370aa9fc4ff31dcb707e53f
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 83ed328690b6cf46f7fdec22c9eba2e77f020d17
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477907"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133809"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 
@@ -32,6 +32,11 @@ ms.locfileid: "64477907"
 |委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> 应用必须满足以下附加要求才能创建服务主体：
+> + 如果在调用应用的主租户中注册了后备应用程序，则调用应用必须是支持应用程序的所有者。
+> + 如果支持应用程序在另一 Azure AD 租户中注册，则必须为调用应用分配 `Cloud Application Administrator` 该或 `Application Administrator` 角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
