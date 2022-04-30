@@ -3,15 +3,18 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
+ms.openlocfilehash: 6e5f62d52969dcc1b332b2cd6e5f02f318c8b6a9
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65135151"
 ---
-
 <!-- markdownlint-disable MD041-->
 
 ### <a name="chatmessage"></a>chatMessage
 
-具有委派权限的 **chatMessage** 订阅不支持资源数据（**includeResourceData** 必须为 `false`），并且不需要 [加密](/graph/webhooks-with-resource-data)。 唯一的例外是 `/users/{id}/chats/getAllMessages` 资源（仅在 beta 版中可用），它支持资源数据，而不考虑权限类型。
-
-具有应用程序权限的 **chatMessage** 订阅包含资源数据，并且需要进行 [加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](/graph/api/resources/subscription)，则订阅创建将失败。 创建 **chatMessage** 订阅前，必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+可以指定 **chatMessage** 订阅以包含资源数据。 如果指定为包含资源数据（将 **includeResourceData** 设置为 `true`），则需要 [encryption](/graph/webhooks-with-resource-data)。 如果没有为此类订阅指定 [encryptionCertificate](/graph/api/resources/subscription)，则订阅创建将失败。 在可以使用应用程序权限创建 **chatMessage** 订阅之前，可能需要请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 必须使用 `Prefer: include-unknown-enum-members` 请求标头以 **chatMessage** **messageType** [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) 中获取以下值：适用于 `/teams/{id}/channels/{id}/messages` 和 `/chats/{id}/messages` 的 `systemEventMessage`。
 
