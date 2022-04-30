@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 428a108a1ccf2f27b13691b8f81cecd0fb3f727a
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 34d5c8ca00ffc2f8a817aad3b025b783919bbbef
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671228"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133074"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 
@@ -19,9 +19,9 @@ ms.locfileid: "63671228"
 创建一个新的 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
 > [!IMPORTANT]
-> 不支持在创建 servicePrincipals 时添加 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](serviceprincipal-addpassword.md) 方法为 servicePrincipal 添加密码。
+> 不支持在创建 servicePrincipals 时添加 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](serviceprincipal-addpassword.md) 方法为 servicePrincipal 添加密码或机密。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -30,6 +30,11 @@ ms.locfileid: "63671228"
 |委派（工作或学校帐户） | Application.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
+
+> [!IMPORTANT]
+> 应用必须满足以下附加要求才能创建服务主体：
+> + 如果在调用应用的主租户中注册了后备应用程序，则调用应用必须是支持应用程序的所有者。
+> + 如果支持应用程序在另一 Azure AD 租户中注册，则必须为调用应用分配 `Cloud Application Administrator` 该或 `Application Administrator` 角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
