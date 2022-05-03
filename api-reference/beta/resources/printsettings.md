@@ -1,16 +1,16 @@
 ---
 title: printSettings 资源类型
-description: 表示通用打印服务的租户范围的设置。
+description: 表示通用打印服务的租户范围设置。
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 01c98eb68031018e6f7a32837e49a2095c7880d2
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 0339843083695904080104882ba9385a840b4c9e
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49521234"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176650"
 ---
 # <a name="printsettings-resource-type"></a>printSettings 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "49521234"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示通用打印服务的租户范围的设置。
+表示通用打印服务的租户范围设置。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|布尔值|指定是否为租户启用文档转换。 如果启用了文档转换，则通用打印服务会在需要时自动将文档转换为与打印机 (xps) 兼容的格式。|
+|documentConversionEnabled|Boolean|指定是否为租户启用文档转换。 如果启用文档转换，则通用打印服务会根据需要自动将文档转换为与打印机兼容的格式 (xps 转换为 pdf) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-以下是 printSettings 的 JSON 表示形式。
+下面是 printSettings 的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

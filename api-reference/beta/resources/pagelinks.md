@@ -1,16 +1,16 @@
 ---
 title: pageLinks 资源类型
-description: 用于打开 OneNote 页面的链接。
-localization_priority: Normal
+description: 用于打开OneNote页的链接。
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: 0a475e7315b08111c97a762f19caeff16d94874d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 055730829df1ac3523b9a7160e7332cec5d6368a
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998311"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176961"
 ---
 # <a name="pagelinks-resource-type"></a>pageLinks 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "47998311"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于打开 OneNote 页面的链接。
+用于打开OneNote页的链接。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -40,10 +40,10 @@ ms.locfileid: "47998311"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端，则在其中打开页面。|
-|oneNoteWebUrl|[externalLink](externallink.md)|打开 web 上的 OneNote 中的页面。|
+|oneNoteClientUrl|[externalLink](externallink.md)|如果已安装，请在OneNote本机客户端中打开该页面。|
+|oneNoteWebUrl|[externalLink](externallink.md)|在OneNote web 版中打开页面。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

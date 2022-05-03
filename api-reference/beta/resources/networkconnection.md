@@ -1,16 +1,17 @@
 ---
 title: networkConnection 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: preetikr
-ms.openlocfilehash: 2221f38c4ba8f8e71030d540985fb93f415bfa19
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 4e87cd2019f3dd4eeda73509857d34775017dd1b
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722109"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176827"
 ---
 # <a name="networkconnection-resource-type"></a>networkConnection 资源类型
 
@@ -18,46 +19,46 @@ ms.locfileid: "50722109"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含有关与警报相关的网络连接的有状态信息。
+包含与警报相关的网络连接的有状态信息。
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|说明|
+| 属性   | 类型|Description|
 |:---------------|:--------|:----------|
-|applicationName|String|管理网络连接应用程序的名称 (例如 Facebook、SMTP 等) 。|
-|destinationAddress|String|网络连接 (目标 IP 地址) 。|
-|destinationDomain|String|目标 URL 的目标域部分。  ("www.contoso.com") 。|
-|destinationLocation|String|位置 (IP 地址映射) 网络连接目标关联的位置。|
-|destinationPort|String|网络连接 (目标端口) 。|
-|destinationUrl|String|网络连接 URL/URI 字符串 - 不包括参数。  (例如"www.contoso.com/products/default.html') |
+|applicationName|String|管理网络连接 (的应用程序的名称，例如 Facebook、SMTP 等) 。|
+|destinationAddress|String|网络连接) 的目标 IP 地址 (。|
+|destinationDomain|String|目标 URL 的目标域部分。  (例如“www.contoso.com”) 。|
+|destinationLocation|String|按 IP 地址映射 (的位置) 与网络连接的目标相关联。|
+|destinationPort|String|网络连接) 的目标端口 (。|
+|destinationUrl|String|网络连接 URL/URI 字符串 - 不包括参数。  (例如“www.contoso.com/products/default.html”) |
 |direction|connectionDirection|网络连接方向。 可取值为：`unknown`、`inbound`、`outbound`。|
-|domainRegisteredDateTime|DateTimeOffset|目标域的注册日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|localDnsName|String|显示在主机的本地 DNS 缓存中的本地 DNS 名称解析 (例如，如果"主机"文件被篡改) 。|
+|domainRegisteredDateTime|DateTimeOffset|注册目标域的日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|localDnsName|String|本地 DNS 名称解析，因为它显示在主机的本地 DNS 缓存 (例如，如果“hosts”文件被篡改) 。|
 |natDestinationAddress|String|网络地址转换目标 IP 地址。|
 |natDestinationPort|String|网络地址转换目标端口。|
 |natSourceAddress|String|网络地址转换源 IP 地址。|
 |natSourcePort|String|网络地址转换源端口。|
-|协议|securityNetworkProtocol|网络协议。 可能的值是： `unknown` ， ， ， ， ， ， `ip` ， `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII` 。|
-|riskScore|String|网络连接的提供程序生成/计算的风险评分。 建议的值范围为 0-1，等于百分比。|
-|sourceAddress|String|源 (，即) 的 IP 地址 (的 ip 地址) 。|
-|sourceLocation|String|位置 (与网络连接) 关联的 IP 地址映射。|
-|sourcePort|String|源 (，例如) IP 端口 (的) 。|
+|协议|securityNetworkProtocol|网络协议。 可能的值为：、、、、`igmp``ggp`、`ipv4`、`pup``tcp`、、`udp`、`idp`、`ipv6RoutingHeader``ipv6`、`ipv6FragmentHeader`、`ipSecEncapsulatingSecurityPayload``ipSecAuthenticationHeader`、`icmpV6`、`ipv6NoNextHeader`、`ipv6DestinationOptions`、`nd`、`raw`、、`ipx`、、 `spxII``spx``icmp``ip``unknown`|
+|riskScore|字符串|网络连接的提供程序生成/计算风险分数。 建议的值范围为 0-1，这等同于百分比。|
+|sourceAddress|String|源 (，即网络连接) 的源) IP 地址 (。|
+|sourceLocation|String|IP 地址映射) 与网络连接源关联的位置 (。|
+|sourcePort|String|源 (，即网络连接) 的源) IP 端口 (。|
 |状态|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked`、`failed`。|
-|urlParameters|String|参数 (URL) 后缀。|
+|urlParameters|String|参数 (目标 URL 的后缀) 。|
 
 ### <a name="securitynetworkprotocol-values"></a>securityNetworkProtocol 值
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|-1|未知协议。|
-|ip|0|Internet 协议。|
-|icmp|1| Internet 控制消息协议。|
-|i|2 | Internet 组管理协议。|
-|ggp|3 | 网关到网关协议。|
-|ipv4|4 | Internet 协议版本 4。|
+|Ip|0|Internet 协议。|
+|Icmp|1| Internet 控制消息协议。|
+|igmp|2| Internet 组管理协议。|
+|ggp|3| 网关到网关协议。|
+|ipv4|4| Internet 协议版本 4。|
 |tcp|6 | 传输控制协议。|
-|pup|12 | PARC 通用数据包协议。|
-|udp|17 | 用户数据报协议。|
+|狗|12 | PARC 通用数据包协议。|
+|Udp|17 | 用户数据报协议。|
 |idp|22| Internet 数据报协议。|
 |ipv6|41| Internet 协议版本 6 (ipv6) 。|
 |ipv6RoutingHeader|43| ipv6 路由标头。|
@@ -67,11 +68,11 @@ ms.locfileid: "50722109"
 |icmpV6|58| 适用于 ipv6 的 Internet 控制消息协议。|
 |ipv6NoNextHeader|59| ipv6 无下一个标头。|
 |ipv6DestinationOptions|60| ipv6 目标选项标头。|
-|nd|77| Net Disk Protocol (非正式) 。|
-|raw|255| 原始 IP 数据包协议。|
-|ipx|1000| Internet 数据包交换协议。|
-|spx|1256| 已排序的数据包交换协议。|
-|spxII|1257| 已排序的数据包交换版本 2 协议。|
+|nd|77| 网络磁盘协议 (非官方) 。|
+|原始|255| 原始 IP 数据包协议。|
+|Ipx|1000| Internet 数据包Exchange协议。|
+|Spx|1256| 已排序的数据包Exchange协议。|
+|spxII|1257| 排序数据包Exchange版本 2 协议。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

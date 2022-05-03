@@ -2,15 +2,15 @@
 title: printerCreateOperation 资源类型
 description: 表示长时间运行的打印机注册操作。 派生自 printOperation。
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 3ae18e201f5b768de9cc1456de186fdd6b9336b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 716c23603dd811ddad61dd604c9961d1df3f5297
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048853"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176532"
 ---
 # <a name="printercreateoperation-resource-type"></a>printerCreateOperation 资源类型
 
@@ -22,18 +22,18 @@ ms.locfileid: "48048853"
 
 ## <a name="methods"></a>方法
 
-| 方法       | 返回类型 | 说明 |
+| 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
-| [Get 操作](../api/printoperation-get.md) | [printOperation](printoperation.md) | 在当前用户或应用程序的租户内检索长时间运行的操作。 |
+| [获取操作](../api/printoperation-get.md) | [printOperation](printoperation.md) | 检索当前用户或应用租户中长时间运行的操作。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String|操作的标识符。 只读。|
-|状态|[printOperationStatus](printoperationstatus.md)|注册操作的状态。 包含操作的进度以及它是否成功完成。 只读。|
+|状态|[printOperationStatus](printoperationstatus.md)|注册操作的状态。 包含操作的进度以及是否已成功完成。 只读。|
 |createdDateTime|DateTimeOffset|创建操作时的 DateTimeOffset。 只读。|
-|证书|String|注册过程中创建的签名证书。 只读。|
-|印刷|[印刷](printer.md)|创建的打印机实体。 只读。|
+|证书|String|注册过程中创建的已签名证书。 只读。|
+|打印机|[打印机](printer.md)|创建的打印机实体。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

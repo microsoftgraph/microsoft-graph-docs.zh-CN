@@ -4,13 +4,12 @@ description: 使用“代理发送”和“代表发送”权限，从 Microsoft
 author: jasonjoh
 ms.localizationpriority: high
 ms.prod: outlook
-ms.date: 01/16/2019
-ms.openlocfilehash: 0071c85db2d4637c96cc6d6e12047b617f5dfbc0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a6ef4de6e015ed485fe23a142c2a0c44b803d654
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071761"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176802"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>从其他用户身份发送 Outlook 邮件
 
@@ -30,6 +29,9 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 ### <a name="mailbox-permissions"></a>邮箱权限
 
 以下两种权限会影响从其他用户身份发送邮件的最终结果：**代表发送** 和 **代理发送**。 使用 **Mail.Send.Shared** 权限登录应用程序的用户必须至少拥有这两种权限之一，这些权限已授予从其中发送邮件的邮箱、组或通讯组列表。
+
+> [!NOTE]
+> 目前无法使用 Microsoft Graph 来查询经过身份验证的用户对哪些邮箱具有权限。
 
 #### <a name="send-on-behalf"></a>代表发送
 
@@ -58,19 +60,19 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 }
 ```
 
-用户可以[使用 Outlook](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-41C40C04-3BD1-4D22-963A-28EAFEC25926) 将其自己邮箱的这种权限授予其他用户。 管理员可以在 [Microsoft 365 管理中心](/office365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide)为任何邮箱、组或通讯组列表授予此权限。
+用户可以[使用 Outlook](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-41C40C04-3BD1-4D22-963A-28EAFEC25926) 将其自己邮箱的这种权限授予其他用户。 管理员可以在 [Microsoft 365 管理中心](/office365/admin/add-users/give-mailbox-permissions-to-another-user)为任何邮箱、组或通讯组列表授予此权限。
 
 #### <a name="send-as"></a>代理发送
 
-使用此权限时，不会显示邮件是以其他用户身份发送的指示。 `sender` 和 `from` 属性具有相同的值。
+使用此权限时，不会显示邮件是以其他用户身份发送的指示。`sender` 和 `from` 属性具有相同的值。
 
 用户无法为其邮箱授予此权限。 管理员可以在 Microsoft 365 管理中心授予此权限。
 
 ## <a name="sending-with-microsoft-graph"></a>通过 Microsoft Graph 发送
 
-可以通过[直接发送](/graph/api/user-sendmail?view=graph-rest-1.0)或[创建草稿](/graph/api/user-post-messages?view=graph-rest-1.0)然后再[发送](/graph/api/message-send?view=graph-rest-1.0)这两种方式，从其他用户身份发送邮件。
+可以通过[直接发送](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true)或[创建草稿](/graph/api/user-post-messages?view=graph-rest-1.0&preserve-view=true)然后再[发送](/graph/api/message-send?view=graph-rest-1.0&preserve-view=true)这两种方式，从其他用户身份发送邮件。
 
-如要从其他用户身份发送，请设置要从其中向用户电子邮件地址发送的[邮件](/graph/api/resources/message?view=graph-rest-1.0)上的 `from` 属性。 无需设置 `sender` 属性 - Microsoft Graph 将会根据授予已登录用户的邮箱权限进行相应的设置。
+如要从其他用户身份发送，请设置要从其中向用户电子邮件地址发送的[邮件](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true)上的 `from` 属性。 无需设置 `sender` 属性 - Microsoft Graph 将会根据授予已登录用户的邮箱权限进行相应的设置。
 
 例如，若要从 `sales@contoso.com` 组发送邮件，请按如下所示配置邮件。
 
@@ -107,7 +109,7 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 以下其他外部因素可能会改变默认行为：
 
 - 管理员将发件人用户的邮箱更新为[始终将从代理发送的邮件副本保存](/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox)至其“已发送邮件”。
-- 通过在 [send mail](/graph/api/user-sendmail?view=graph-rest-1.0) 请求中将 `saveToSentItems` 属性设为 `false`，可以防止邮件被保存至“已发送邮件”文件夹。 但是，如果管理员已配置“始终保存副本”设置，则邮件将被保存至发件人用户的“已发送邮件”文件夹。
+- 通过在 [send mail](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true) 请求中将 `saveToSentItems` 属性设为 `false`，可以防止邮件被保存至“已发送邮件”文件夹。 但是，如果管理员已配置“始终保存副本”设置，则邮件将被保存至发件人用户的“已发送邮件”文件夹。
 
 ## <a name="examples"></a>示例
 
@@ -152,7 +154,7 @@ HTTP/1.1 202 Accepted
 
 ### <a name="example-2-unsuccessful-attempt-to-send-without-permissions"></a>示例 2：在无权限的情况下，尝试发送失败
 
-在此示例中，Adele Vance 尝试从 Patti Fernandez 身份发送电子邮件，但他并没有被授予 **代表发送** 或 **代理发送** 权限。 响应中包含 `ErrorSendAsDenied` 错误。
+在此示例中，Adele Vance 尝试从 Patti Fernandez 身份发送电子邮件，但他并没有被授予 **代表发送** 或 **代理发送** 权限。响应包含 `ErrorSendAsDenied` 错误。
 
 <!-- markdownlint-disable MD024 -->
 
@@ -208,7 +210,7 @@ Content-Type: application/json
 详细了解以下信息：
 
 - [为什么与 Outlook 邮件集成](outlook-mail-concept-overview.md)
-- Microsoft Graph v1.0 中的[使用邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 和邮件 API [用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)。
+- Microsoft Graph v1.0 中的[使用邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true) 和邮件 API [用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true#common-use-cases)。
 
 <!--
 {

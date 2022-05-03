@@ -5,13 +5,13 @@ ms.date: 09/11/2017
 title: LookupColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: abd4ac45549d38f6f33c0d53109d07550891cf86
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: d5ddc59f00b171d6ba7d125e8a626aa97ddcfff9
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723083"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176555"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "63723083"
 
 ## <a name="properties"></a>属性
 
-| 属性                  | 类型    | 说明                                                                                                                                                                                                                |
+| 属性                  | 类型    | Description                                                                                                                                                                                                                |
 | :------------------------ | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **allowMultipleValues**   | boolean | 指示是否可以从源中选择多个值。                                                                                                                                                         |
 | **allowUnlimitedLength**  | boolean | 指示列中的值是否可以超过 255 个字符的标准限制。                                                                                                                      |

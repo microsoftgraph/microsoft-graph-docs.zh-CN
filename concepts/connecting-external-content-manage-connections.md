@@ -5,16 +5,16 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 50248f9a1edbd3fa1ea054a05e7e6b3410180362
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 264f9611b9bd71524f60718e066d064b844acec0
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335876"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176618"
 ---
 <!---<author of this doc: rsamai>--->
 
-# <a name="create-update-and-delete-connections-in-the-microsoft-graph"></a>创建、更新和删除 Microsoft Graph 中的连接
+# <a name="create-update-and-delete-connections-in-microsoft-graph"></a>创建、更新和删除 Microsoft Graph 中的连接
 
 外部服务与 Microsoft 搜索服务的连接由 Microsoft Graph 中的 [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) 资源表示。
 

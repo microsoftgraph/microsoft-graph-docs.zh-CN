@@ -2,15 +2,15 @@
 title: printOperationStatus 资源类型
 description: 表示长时间运行的通用打印操作的当前状态。
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 14c66cf59dc1715a16bd786657202a554d7c1753
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 79cc94a38335bede616ef57bc33db12db63a5664
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052549"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176654"
 ---
 # <a name="printoperationstatus-complex-type"></a>printOperationStatus 复杂类型
 
@@ -21,20 +21,20 @@ ms.locfileid: "48052549"
 表示长时间运行的通用打印操作的当前状态。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|state|printOperationProcessingState|PrintOperation 的当前处理状态。 有效值如下表所述。 只读。|
-|说明|String|PrintOperation 的当前处理状态的可读说明。 只读。|
+|state|printOperationProcessingState|printOperation 的当前处理状态。 下表描述了有效值。 只读。|
+|说明|String|printOperation 当前处理状态的人工可读说明。 只读。|
 
 ### <a name="printoperationprocessingstate-values"></a>printOperationProcessingState 值
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
-|notStarted|0|该操作尚未启动。|
-|运行|1 |操作正在运行。|
-|完成|2 |操作已成功完成。|
-|未能|第三章|操作失败。|
-|向 unknownfuturevalue|4 |Evolvable 枚举 sentinel 值。 请勿使用。|
+|notStarted|0|操作尚未启动。|
+|运行|1|操作正在运行。|
+|成功|2|操作已成功完成。|
+|失败|3|操作失败。|
+|unknownFutureValue|4|可变枚举 sentinel 值。 请勿使用。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

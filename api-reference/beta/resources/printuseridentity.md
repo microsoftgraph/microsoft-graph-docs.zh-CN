@@ -1,16 +1,16 @@
 ---
 title: printUserIdentity 资源类型
-description: 代表通用打印服务中的用户标识。 映射到 Azure AD 用户。
+description: 表示通用打印服务中的用户标识。 向Azure AD用户地图。
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8a695bed829d6c7e8825898da366737427195e1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 50a73a6f08448d50ac616e82d15c046d52d63b83
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070653"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176304"
 ---
 # <a name="printuseridentity-resource-type"></a>printUserIdentity 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48070653"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表通用打印服务中的用户标识。 映射到 [Azure Active Directory (AZURE AD) 用户](user.md)。
+表示通用打印服务中的用户标识。 向Azure Active Directory (Azure AD) [用户地图](user.md)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String|PrintUserIdentity 的标识符。 只读。|
-|displayName|String|PrintUserIdentity 的显示名称。|
-|ipAddress|String|PrintUserIdentity 的 IP 地址。 未填充。|
-|userPrincipalName|String|PrintUserIdentity 的用户主体名称 (UPN) 。|
+|id|String|printUserIdentity 的标识符。 只读。|
+|displayName|String|printUserIdentity 的显示名称。|
+|ipAddress|String|printUserIdentity 的 IP 地址。 未填充。|
+|userPrincipalName|String|printUserIdentity 的用户主体名称 (UPN) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

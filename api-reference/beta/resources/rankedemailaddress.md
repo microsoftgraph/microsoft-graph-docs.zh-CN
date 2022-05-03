@@ -1,16 +1,16 @@
 ---
 title: rankedEmailAddress 资源类型
-description: 表示排名排名的电子邮件地址。
-localization_priority: Normal
+description: 表示排名靠前的电子邮件地址。
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: AAmatino
-ms.openlocfilehash: 36215d545bb6d24fae4ef8cbca35a1c5210976bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2723009cc44680e98b9c8b5a685c06846bb9abd7
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026402"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176316"
 ---
 # <a name="rankedemailaddress-resource-type"></a>rankedEmailAddress 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48026402"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示排名排名的电子邮件地址。
+表示排名靠前的电子邮件地址。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|string|电子邮件地址。|
-|排名|double|电子邮件地址的排名。 Rank 用作排序关键字，相对于其他返回的结果。 较高的排名值对应于更相关的结果。 相关性取决于沟通、协作和业务关系信号。|
+|排名|double|电子邮件地址的排名。 与其他返回的结果相比，排名用作排序键。 较高的排名值对应于更相关的结果。 相关性取决于沟通、协作和业务关系信号。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

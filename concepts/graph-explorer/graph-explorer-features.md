@@ -1,16 +1,16 @@
 ---
-title: 使用 Graph 浏览器
+title: 使用 Graph 管理器
 description: 了解如何使用 Graph 浏览器中的一些重要功能。
 ms.localizationpriority: high
 author: RabebOthmani
-ms.openlocfilehash: bfbde32a895118816bfaa3553582d7733880bbc1
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: ec040c8db2330f9b20407765199adf4a1a84c9ad
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604285"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176828"
 ---
-# <a name="working-with-graph-explorer"></a>使用 Graph 浏览器
+# <a name="work-with-graph-explorer"></a>使用 Graph 管理器
 
 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/) 是一种开发人员工具，便于发起 Microsoft Graph REST API 请求并查看相应响应。 本文介绍了如何使用 Graph 浏览器中的一些重要功能。
 
@@ -20,17 +20,17 @@ ms.locfileid: "61604285"
 
 要同意权限:
 
-1.  选择并运行示例查询。
-2.  选择“**修改权限**”选项卡。
-3.  查看运行查询所需的权限列表。
-4.  选择要同意的权限旁边的“同意”按钮。 
+1. 选择并运行示例查询。
+2. 选择“**修改权限**”选项卡。
+3. 查看运行查询所需的权限列表。
+4. 选择要同意的权限旁边的“**同意**”按钮。
 
 ![突出显示了同意权限步骤的 Graph 浏览器屏幕截图](./images/modify-permissions.png)
 
 “**修改权限**”功能当前处于预览状态，一些查询可能缺少权限。 如果查询缺少权限，则配置文件旁边的设置齿轮中的“**选择权限**”选项包含所有可用权限的列表:
 
-1.  转到设置齿轮并点击“**选择权限**”选项。 此选项包含所有可用权限的列表。
-2.  从所有权限列表中，同意所需权限。
+1. 转到设置齿轮并选中“**选择权限**”选项。 此选项包含所有可用权限的列表。
+2. 从所有权限列表中，同意所需权限。
 
 ![突出显示了“选择权限”选项的 Graph 浏览器屏幕截图](./images/select-permissions.png)
 
@@ -42,11 +42,11 @@ Graph 浏览器包含“**访问令牌**”选项卡，该选项卡会在登录�
 
 ## <a name="copy-code-snippets"></a>复制代码片段
 
-对于在 Graph 浏览器中选择或输入的每个 REST API 查询，可以找到如何用“**代码片段**”选项卡下展示的四种语言 - C#、Java、JavaScript 和 Objective-C 中的每一种调用该 API。 
+对于在 Graph 浏览器中选择或输入的每个 REST API 查询，可以找到如何用“**代码片段**”选项卡下展示的四种语言 - C#、Java、JavaScript 和 Objective-C 中的每一种调用该 API。
 
 ![突出显示了“代码片段”选项卡的 Graph 浏览器屏幕截图](./images/code-snippets.png)
 
-## <a name="ui-component-integration"></a>UI 组件集成
+## <a name="integrate-ui-components"></a>集成 UI 组件
 
 Graph 浏览器包含多个功能，以简化 UI 的实现。 也可以在应用中重复使用这些组件。
 
@@ -76,30 +76,30 @@ Graph 浏览器提供与 Microsoft Graph 工具包组件对应的示例 REST API
 
 ## <a name="customize-the-theme-in-graph-explorer"></a>在 Graph 浏览器中自定义主题
 
-选择设置齿轮下的“**更改主题**”选项，以选择 Graph 浏览器的主题。 主题选项为“浅色”、“深色”和“高对比度”。
+选择设置齿轮下的“**更改主题**”选项，以选择 Graph 浏览器的主题。 主题选项 **浅色**、 **深色** 和 **高对比度**。
 
 ![Graph 浏览器中“更改主题”选项的屏幕截图，其中突出显示了主题选项](./images/change-theme.png)
 
-## <a name="storing-and-sharing-queries"></a>存储并共享查询
+## <a name="store-and-share-queries"></a>存储和共享查询
 
-在 Graph 浏览器中运行的查询会在“**历史记录**”选项卡中保存 30 天。在“历史记录”选项卡上，可以:
+在 Graph 浏览器中运行的查询会在“**历史记录**”选项卡中保存 30 天。在“**历史记录**”选项卡上，可以：
 
-1.  以 `.har` 格式导出所有历史记录项。
-2.  删除所有历史记录项。
-3.  查看历史记录项。
-4.  运行查询。
-5.  以 `.har` 格式导出历史记录项。
-6.  删除历史记录项。
+1. 以 `.har` 格式导出所有历史记录项。
+2. 删除所有历史记录项。
+3. 查看历史记录项。
+4. 运行查询。
+5. 以 `.har` 格式导出历史记录项。
+6. 删除历史记录项。
 
 ![突出显示了选项的“历史记录”选项卡屏幕截图](./images/storing-and-sharing-queries.png)
 
-要共享运行的查询，请点击响应窗格中的“共享查询”按钮，并点击“**复制**”。 此操作会复制链接，以共享并允许他人查看你的查询和结果。
+若要共享运行的查询，请在响应窗格中选择“**共享** ”按钮，然后选择“**复制**”。 此操作会复制链接，以共享并允许他人查看你的查询和结果。
 
 ![突出显示了“共享和复制”选项的 Graph 浏览器屏幕截图](./images/share-query.png)
 
-## <a name="graph-explorer-ui-features"></a>Graph 浏览器 UI 功能
+## <a name="use-graph-explorer-ui-features"></a>Graph 浏览器 UI 功能
 
-要扩大请求和响应区域，请折叠并展开 Graph 浏览器中的边栏组件。 要折叠边栏组件，请选择边栏左上角的汉堡图标。
+若要扩大请求和响应区域，请在 Graph 资源管理器中折叠和展开边栏组件。 要折叠边栏组件，请选择边栏左上角的汉堡图标。
 
 ![突出显示了“展开并折叠”选项的 Graph 浏览器屏幕截图](./images/expand-collapse-sidebar-component.png)
 
@@ -107,7 +107,7 @@ Graph 浏览器提供与 Microsoft Graph 工具包组件对应的示例 REST API
 
 ![突出显示了“展开并折叠”选项的响应窗格屏幕截图](./images/expand-collapse-response-preview.png)
 
-从 Graph 浏览器 UI 轻松访问 Microsoft 365 开发人员计划网站，从而免费获取包含要试验的示例数据的沙盒。 在设置齿轮下，选择“**获取包含示例数据的沙盒**”。
+从 Graph 浏览器 UI 轻松访问 Microsoft 365 开发人员计划网站，从而免费获取包含要试验的示例数据的沙盒。在设置齿轮下，选择 **获取包含示例数据的沙盒**。
 
 ![突出显示了“获取包含示例数据的沙盒”选项的 Graph 浏览器屏幕截图](./images/link-to-m365-dev-program.png)
 

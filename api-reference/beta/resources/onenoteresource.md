@@ -1,16 +1,16 @@
 ---
 title: onenoteResource 资源类型
-description: '页面图像或其他文件OneNote资源。 '
+description: 'OneNote页上的图像或其他文件资源。 '
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: f7a479ec529cae209fef085da2978c3e412a844f
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 21d0be436241b518e87b0eb36956886808211a0d
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804918"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176711"
 ---
 # <a name="onenoteresource-resource-type"></a>onenoteResource 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "62804918"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-页面图像或其他文件OneNote资源。
+OneNote页上的图像或其他文件资源。
 
-您可以获取资源的二进制数据，但不支持获取资源对象或资源集合的 JSON 表示形式。
+可以获取资源的二进制数据，但不支持获取资源对象或资源集合的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",
@@ -37,19 +37,19 @@ ms.locfileid: "62804918"
 }
 ```
 
-通过向资源的终结点发送 GET 请求，获取特定资源的二进制 `content` 数据：
+通过将 GET 请求发送到资源的终结点来获取特定资源的 `content` 二进制数据：
 
 ```http
 GET ../onenote/resources/{id}/content
 ```
 
-当您通过以下请求获取页面的 HTML 内容时，将返回文件的资源 URI：
+使用以下请求获取页面的 HTML 内容时，将返回文件的资源 URI：
 
 ```http
 GET ../onenote/pages/{id}/content
 ```
 
-在页面 HTML 中，标记 `img` 包括 属性 `data-fullres-src` 中原始图像资源的终结点和 属性中的 `src` 优化图像：
+在页面 HTML 中， `img` 标记包含属性中原始映像资源的 `data-fullres-src` 终结点和属性中的 `src` 优化映像：
 
 ```html
 <img
@@ -59,7 +59,7 @@ GET ../onenote/pages/{id}/content
     data-fullres-src-type="media-type" ... />
 ```
 
-一 `object` 个 (表示 PDF、DOCX 和 PNG 等文件的标记) 属性中包含文件资源的 `data` 终结点：
+表示 `object` PDF、DOCX 和 PNG) 等文件的标记 (包含属性中文件资源的 `data` 终结点：
 
 ```html
 <object
@@ -69,15 +69,15 @@ GET ../onenote/pages/{id}/content
 ```
 
 ## <a name="methods"></a>方法
-| 方法           | 返回类型    |说明|
+| 方法           | 返回类型    |Description|
 |:---------------|:--------|:----------|
 |[获取资源二进制数据](../api/resource-get.md) | Stream |检索文件或图像资源的二进制数据。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 | 内容 | Edm.Stream||
-| contentUrl | 字符串 ||
+| contentUrl | String ||
 
 ## <a name="relationships"></a>关系
 无。

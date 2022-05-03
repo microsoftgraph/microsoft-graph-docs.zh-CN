@@ -3,15 +3,15 @@ author: JeremyKelley
 description: publicationFacet 资源提供有关 driveItemVersion 或 driveItem 资源发布状态的详细信息。
 ms.date: 09/10/2017
 title: PublicationFacet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 3df98fd151e8ca528a0a946a273ff6e64eb54a8e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: 066c0c03a436acff42f4186183b483d76afceffa
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993089"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176743"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "47993089"
 
 ## <a name="properties"></a>属性
 
-|   属性    |  类型  | 说明 |
+|   属性    |  类型  | Description |
 | :------------ | :----- | :---------- |
 | **level**     | String | 此文档的发布状态。 `published` 或 `checkout`。 只读。  |
 | **versionId** | String | 对当前调用方可见的版本的唯一标识符。 只读。  |

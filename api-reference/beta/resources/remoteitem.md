@@ -5,13 +5,13 @@ ms.date: 09/10/2017
 title: RemoteItem
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 196f0105a2fb9f436d50728af1ab5865de47d397
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: 13016aa906c70ed0b3023b9cdd71843243371246
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724223"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176522"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
 

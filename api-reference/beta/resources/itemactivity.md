@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: ItemActivity
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: dd1ff94bc03a06b69427a76339284ca783b17b39
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: d07ec18e3e9ccd70cd4028f577d927f0b12323c2
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722700"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176574"
 ---
 # <a name="itemactivity-resource-type"></a>ItemActivity 资源类型
 
@@ -50,10 +50,10 @@ ItemActivity 资源提供有关在项目上或容器内发生的活动的信息�
 | 属性 | 类型                    | 说明                                                  |
 | :------- | :---------------------- | :----------------------------------------------------------- |
 | id       | string                  | 活动的唯一标识符。 只读。            |
-| access   | [accessAction][]        | 已访问项目。                                        |
+| 访问   | [accessAction][]        | 已访问项。                                        |
 | action   | [itemActionSet][]       | 有关发生的操作的详细信息。 只读。         |
 | actor    | [identitySet][]         | 操作执行者的身份。 只读。             |
-| location | [位置][]            | 执行操作的物理位置。 只读。 |
+| 位置 | [位置][]            | 执行操作的物理位置。 只读。 |
 | times    | [itemActivityTimeSet][] | 有关活动何时发生的详细信息。 只读。       |
 
 [identitySet]: identityset.md
@@ -76,7 +76,7 @@ ItemActivity 资源提供有关在项目上或容器内发生的活动的信息�
 以下是现在可执行的操作。
 未来可能会记录新操作，因此确保应用程序允许在不了解任何操作的情况下便可处理 **itemActivity**。
 
-| 操作名 | 类型              | 说明                       |
+| 操作名 | 类型              | Description                       |
 | :---------- | :---------------- | :-------------------------------- |
 | comment     | [commentAction][] | 向项目添加了注释。  |
 | create      | [createAction][]  | 创建了项目。              |

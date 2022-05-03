@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: ItemActivityTimeSet
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: eb0477255783b3aba7aaa61a0e9ece868c1882d1
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: 3d25a4bd3961b2f01759ba3f414b873c9c6daac9
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724323"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176787"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>ItemActivityTimeSet 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "63724323"
 
 ## <a name="properties"></a>属性
 
-| 属性         | 类型           | 说明                                       |
+| 属性         | 类型           | Description                                       |
 | :--------------- | :------------- | :------------------------------------------------ |
 | observedDateTime | DateTimeOffset | 在观察到要发生活动时。     |
 | recordedDateTime | DateTimeOffset | 在服务上记录观察时。 |

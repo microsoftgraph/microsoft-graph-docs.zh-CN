@@ -1,17 +1,17 @@
 ---
 author: daspek
-description: ItemAnalytics 资源提供有关项目上发生的活动的分析。 此资源目前仅适用于 SharePoint 和 OneDrive for business。
+description: itemAnalytics 资源提供有关在项上发生的活动的分析。 此资源目前仅在SharePoint和OneDrive for Business上可用。
 ms.date: 09/14/2017
 title: ItemAnalytics
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 0ef1fd6778b9ed31c0cd6dcd5ac14316675d697f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: 15bd59f04384f2b18329f581f568ee465a86c040
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075628"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176931"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics 资源类型
 
@@ -19,11 +19,11 @@ ms.locfileid: "48075628"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**ItemAnalytics**资源提供有关项目上发生的活动的分析。 此资源目前仅适用于 SharePoint 和 OneDrive for business。
+**itemAnalytics** 资源提供有关在项上发生的活动的分析。 此资源目前仅在SharePoint和OneDrive for Business上可用。
 
-您还可以使用 [getActivitiesByInterval][] API 检索自定义时间范围或时间间隔内的分析。
+还可以使用 [getActivitiesByInterval][] API 在自定义时间范围或间隔内检索分析。
 
->**注意：****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
+>**注意：****itemAnalytics** 资源在所有 [国家部署](/graph/deployments)中尚不可用。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,10 +43,10 @@ ms.locfileid: "48075628"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型                 | 说明
+| 属性      | 类型                 | Description
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | 对项目生命周期的分析。
-| lastSevenDays | [itemActivityStat][] | 最近七天的分析。
+| allTime       | [itemActivityStat][] | 有关项目生存期的分析。
+| lastSevenDays | [itemActivityStat][] | 过去七天的分析。
 
 [itemActivityStat]: itemactivitystat.md
 

@@ -3,14 +3,14 @@ title: printerStatus 资源类型
 description: 表示打印机的处理状态，包括任何错误。
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 97462f4e2c7059eb857a382c4944da7b697ee363
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 4b405fe00ab7dfe0e3ce90e79b1e7a82607f012c
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508452"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176542"
 ---
 # <a name="printerstatus-resource-type"></a>printerStatus 资源类型
 
@@ -23,19 +23,19 @@ ms.locfileid: "59508452"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|state|printerProcessingState|当前处理状态。 下表介绍了有效值。 只读。|
-|详细信息|printerProcessingStateDetail 集合|描述打印机为何当前状态的详细信息列表。 下表介绍了有效值。 只读。|
-|说明|String|打印机当前处理状态可读的说明。 只读。|
+|state|printerProcessingState|当前处理状态。 下表描述了有效值。 只读。|
+|详细信息|printerProcessingStateDetail 集合|描述打印机处于当前状态的原因的详细信息列表。 下表描述了有效值。 只读。|
+|说明|String|打印机当前处理状态的可读说明。 只读。|
 
 ### <a name="printerprocessingstate-values"></a>printerProcessingState 值
 
 |成员|值|Description|
 |:---|:---|:---|
 |unknown|0|打印机报告的处理状态未知。|
-|idle|1|打印机处于空闲状态并准备接受新的打印作业。|
-|processing|2|打印机当前正在处理打印作业，并且将在完成时处理所有挂起的作业。|
-|已停止|3|打印机遇到问题 (例如，活动纸盒中的纸张) 无法继续当前打印作业，直到问题得到解决。 有关详细信息 **，** 请参阅 (的详细信息) **或说明** 值。|
-|unknownFutureValue|4 |可发展枚举 sentinel 值。 请勿使用。|
+|闲置|1|打印机处于空闲状态，可以接受新的打印作业。|
+|处理|2|打印机目前正在处理打印作业，完成后将处理任何挂起的作业。|
+|停止|3|打印机遇到问题 (例如，活动托盘) 中的纸张用完，在问题得到解决之前，无法继续当前的打印作业。 有关详细信息，请参阅 **详细信息** () 或 **说明** 值。|
+|unknownFutureValue|4|可变枚举 sentinel 值。 请勿使用。|
 
 ### <a name="printerprocessingstatedetail-values"></a>printerProcessingStateDetail 值
 

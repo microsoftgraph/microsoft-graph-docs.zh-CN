@@ -3,14 +3,14 @@ title: logonUser 资源类型
 description: 包含有关此主机上已登录用户的有状态信息
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: c7c696850acfa66d4dfbbc345f518234c4698aac
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d665906abbbea3f49d352de5600c647f62d8bff6
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59120036"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176781"
 ---
 # <a name="logonuser-resource-type"></a>logonUser 资源类型
 
@@ -20,15 +20,15 @@ ms.locfileid: "59120036"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
 |accountDomain|String|用于登录的用户帐户的域。|
-|accountName|String|用于登录的用户帐户名。|
-|accountType|String|用户帐户类型，根据Windows类型。 可取值为：`unknown`、`standard`、`power`、`administrator`。|
-|firstSeenDateTime|DateTimeOffset|此用户帐户的最早登录发生的日期时间 (提供程序确定的时间段) 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|lastSeenDateTime|DateTimeOffset|此用户帐户最近一次登录的日期/时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|accountName|String|用于登录的用户帐户的帐户名称。|
+|accountType|String|用户帐户类型，根据Windows定义。 可能的值是：`unknown`、`standard`、`power`、`administrator`。|
+|firstSeenDateTime|DateTimeOffset|此用户帐户最早登录的 DateTime 发生 (提供程序确定的) 期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|lastSeenDateTime|DateTimeOffset|发生此用户帐户最新登录的 DateTime。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |logonId|String|用户登录 ID。|
-|logonTypes|字符串集合|从首次看到到最后一次看到时为登录用户观察到的登录类型的集合。 可取值为：`unknown`、`interactive`、`remoteInteractive`、`network`、`batch`、`service`。|
+|logonTypes|String collection|从第一次到最后一次看到时，为登录用户观察到的登录类型的集合。 可取值为：`unknown`、`interactive`、`remoteInteractive`、`network`、`batch`、`service`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

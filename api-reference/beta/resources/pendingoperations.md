@@ -1,17 +1,17 @@
 ---
 title: pendingOperations
-description: PendingOperations 资源指示可能影响 driveItem 状态的一个或多个操作正在等待完成。
-localization_priority: Normal
+description: 挂起的Operations 资源指示可能影响 driveItem 状态的一个或多个操作正在等待完成。
+ms.localizationpriority: medium
 author: JeremyKelley
 ms.date: 08/06/2019
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: b7b5d162bfcc9cccdfc7a2ea769e4ea39272e2d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cf3903a99405dbcbdf83f26da053030e46dbb9e
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998082"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176539"
 ---
 # <a name="pendingoperations-resource-type"></a>pendingOperations 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "47998082"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|pendingContentUpdate|[pendingContentUpdate](pendingcontentupdate.md)|一个属性，指示可能更新文件二进制内容的操作正在等待完成。|
+|pendingContentUpdate|[pendingContentUpdate](pendingcontentupdate.md)|一个属性，指示可能更新文件的二进制内容的操作正在等待完成。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,32 +5,32 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0fc8837911d46f56ae577b599a860d6a0722872a
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 788895c9f09103b5b87198db6f7c974cf40ef8f8
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014101"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176849"
 ---
 # <a name="delete-bookingservice"></a>删除 bookingService
 
 命名空间：microsoft.graph
 
-删除指定的 [bookingBusiness](../resources/bookingservice.md) 中的 [bookingService 对象](../resources/bookingbusiness.md)。
-## <a name="permissions"></a>Permissions
+删除指定 [bookingBusiness](../resources/bookingbusiness.md) 中的 [bookingService](../resources/bookingservice.md) 对象。
+
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.ReadWrite.All、Bookings.Manage.All   |
+|委派（工作或学校帐户） |  Bookings。ReadWrite.All，Bookings。Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /solutions/bookingBusinesses/{id}/services/{id}
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -56,7 +56,7 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunch
 ```
 
 ### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true

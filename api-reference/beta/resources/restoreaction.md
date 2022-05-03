@@ -3,15 +3,15 @@ author: daspek
 description: <decription>
 ms.date: 09/14/2017
 title: RestoreAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: fca74c8bdfbae8c43f5dab0cafbe9cd4abadd008
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: fd53c1225e808d2d9a97588f50a814b7ac655b5f
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026250"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176642"
 ---
 # <a name="restoreaction-resource-type"></a>RestoreAction 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "48026250"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.restoreAction"
+  "@type&quot;: &quot;microsoft.graph.restoreAction"
 }-->
 
 ```json

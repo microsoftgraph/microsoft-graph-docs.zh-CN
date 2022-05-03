@@ -3,14 +3,14 @@ title: printerProcessingStateDetail 枚举类型
 description: 表示打印机的处理状态详细信息。
 author: tomsato-ms
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: enumPageType
-ms.openlocfilehash: 5af406797f96d5ba554b6ef428f56c3b3257c67e
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: fd762b7325aed6d5cea3b0039459bf5f1964ed61
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777339"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176768"
 ---
 # <a name="printerprocessingstatedetail-enum-type"></a>printerProcessingStateDetail 枚举类型
 
@@ -20,46 +20,46 @@ ms.locfileid: "59777339"
 
 表示打印机的处理状态详细信息。
 
-包括 `Prefer: include-unknown-enum-members` 要显式请求超出 的枚举值的 标头 `unknownFutureValue` 。 有关详细信息，请参阅 [处理可发展枚举中的未来成员](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)。
+`Prefer: include-unknown-enum-members`包括用于显式请求枚举值以外的`unknownFutureValue`标头。 有关详细信息，请参阅 [在可旋转枚举中处理将来的成员](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)。
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
-|paused|0| 正在进行的打印作业已暂停。|
-|mediaJam|2|一个或多个纸盒中的媒体被阻塞。|
-|mediaNeeded|3|需要替换当前使用的输入纸盒中的媒体，然后作业才能继续。|
-|mediaLow|4 |一个或多个纸盒中的媒体几乎耗尽。|
-|mediaEmpty|5|一个或多个纸盒中的媒体已耗尽。|
-|coverOpen|6 |一个或多个覆盖已打开。|
-|interlockOpen|7 |一个或多个互锁设备已打开。|
-|outputTrayMissing|9 |缺少一个或多个输出纸盒。|
-|outputAreaFull|10 |一个或多个输出纸盒已满，无法接受更多媒体。|
-|markerSupplyLow|11|一个或多个标记源 (，例如墨迹、颜色笔或功能区) 较低。|
-|markerSupplyEmpty|12 |一个或多个标记源 (，例如墨迹、颜色笔或功能区) 已耗尽。|
-|inputTrayMissing|13|一个或多个输入纸盒不在设备中。|
-|outputAreaAlmostFull|14 |一个或多个输出区域几乎已满， (纸盒、堆叠器、整理器) 。|
-|markerWasteAlmostFull|15 |设备标记提供浪费接受几乎已满。|
-|markerWasteFull|16 |设备标记提供垃圾接受器已满。|
-|将overTemp|17 |温度高于正常水平。|
-|一些|18 |温度低于正常值。|
-|other|19|其他原因不包括在其余原因中。|
-|无|20|无原因。|
-|movingToPaused| 21|有人使用"打印机"Pause-Printer打印机。|
-|shutdown|22|某人从服务中删除了 Printer 对象，设备可能断电或实际移除。|
+|暂停|0| 正在进行的打印作业已暂停。|
+|mediaJam|2|一个或多个托盘中的媒体被卡住。|
+|mediaNeeded|3|在继续作业之前，需要替换当前使用的输入托盘中的媒体。|
+|mediaLow|4|一个或多个托盘中的媒体几乎耗尽。|
+|mediaEmpty|5|一个或多个托盘中的媒体已用尽。|
+|coverOpen|6 |打开一个或多个封面。|
+|interlockOpen|7 |一个或多个互锁设备处于打开状态。|
+|outputTrayMissing|9 |缺少一个或多个输出托盘。|
+|outputAreaFull|10|一个或多个输出托盘已满，无法接受更多媒体。|
+|markerSupplyLow|11|一个或多个标记源 (例如，墨迹、调和器或功能区) 较低。|
+|markerSupplyEmpty|12 | (一个或多个标记源，例如墨迹、调和器或功能区) 已用尽。|
+|inputTrayMissing|13|设备中不包含一个或多个输入托盘。|
+|outputAreaAlmostFull|14|一个或多个输出区域几乎已满 (例如，托盘、堆栈器、排序规则) 。|
+|markerWasteAlmostFull|15|设备标记提供废物的容器几乎已满。|
+|markerWasteFull|16|设备标记提供废物受体已满。|
+|fuserOverTemp|17 |导火器温度高于正常值。|
+|fuserUnderTemp|18 |导火器温度低于正常值。|
+|其他|19|其他任何不属于其他原因的原因。|
+|无|20|没有任何理由。|
+|movingToPaused| 21|有人使用Pause-Printer操作暂停了打印机。|
+|关闭|22|有人从服务中删除了 Printer 对象，设备可能已关闭或物理删除。|
 |connectingToDevice|23|打印机正在连接到共享网络输出设备。|
 |timedOut|24|服务器无法从输出设备获取响应。|
-|stopping|25|Printer 对象正在停止设备。|
+|停止|25|Printer 对象正在停止设备。|
 |stoppedPartially|26|一个或多个输出设备已停止。|
-|tonerLow|27|设备在 Toner 上较低。|
-|tonerEmpty|28|设备已外出。|
-|spoolAreaFull|29|已达到分配给后台处理程序的持久性存储的限制。|
-|doorOpen|30|设备上一个或多个门已打开。|
-|opticalPhotoConductorNearEndOfLife|31|光学照片的光学镜头即将结束。|
-|opticalPhotoConductorLifeOver|32|光学照片的光学镜头不再起作用。|
-|developerLow|33|设备对开发人员影响较低。|
-|developerEmpty|34|设备不为开发人员使用。|
-|interpreterResourceUnavailable|35|解释器资源 (字体、窗体和) 。|
+|tonerLow|27|设备的调配器不足。|
+|tonerEmpty|28|设备已过时。|
+|spoolAreaFull|29|已达到为后台池分配的持久存储限制。|
+|doorOpen|30|设备上的一个或多个门是打开的。|
+|opticalPhotoConductorNearEndOfLife|31|光学照片导体已接近尾声。|
+|opticalPhotoConductorLifeOver|32|光学照片导体不再正常工作。|
+|developerLow|33|开发人员的设备不足。|
+|developerEmpty|34|设备已退出开发人员。|
+|interpreterResourceUnavailable|35|解释器资源不可用 (例如字体、表单) 。|
 |alertRemovalOfBinaryChangeEntry|37|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |banderAdded|38|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |banderAlmostEmpty|39|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -76,7 +76,7 @@ ms.locfileid: "59777339"
 |banderJam|50|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |banderLifeAlmostOver|51|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |banderLifeOver|52|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|banderMemoryExtedted|53|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|banderMemoryExhausted|53|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |banderMissing|54|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |banderMotorFailure|55|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |banderNearLimit|56|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -112,7 +112,7 @@ ms.locfileid: "59777339"
 |binderJam|86|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |binderLifeAlmostOver|87|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |binderLifeOver|88|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|binderMemoryExtedted|89|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|binderMemoryExhausted|89|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |binderMissing|90|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |binderMotorFailure|91|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |binderNearLimit|92|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -134,52 +134,52 @@ ms.locfileid: "59777339"
 |binderUnrecoverableStorageError|108|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |binderWarmingUp|109|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |cameraFailure|110|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
-|将cooling|111|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
-|将进行配置|112|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
-|heatHeating|113|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
-|将temperatureHigh|114|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
-|将temperatureLow|115|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
+|chamberCooling|111|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
+|chamberFailure|112|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
+|chamberHeating|113|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
+|chamberTemperatureHigh|114|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
+|chamberTemperatureLow|115|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
 |cleanerLifeAlmostOver|116|这是 PWG5100.13 中描述的标准 IPP 打印机属性值。|
 |cleanerLifeOver|117|这是 PWG5100.13 中描述的标准 IPP 打印机属性值。|
 |configurationChange|118|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|deactivated|119|这是 RFC3998 中描述的标准 IPP 打印机属性值。|
-|deleted|120|这是 PWG5100.22 中描述的标准 IPP 打印机属性值。|
-|utterCutterAdded|121|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterAlmostEmpty|122|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterAlmostFull|123|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterAtLimit|124|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterClosed|125|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterConfigurationChange|126|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterCoverClosed|127|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterCoverOpen|128|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterEmpty|129|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterFull|130|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterInterlockClosed|131|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterInterlockOpen|132|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterJam|133|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterLifeAlmostOver|134|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterLifeOver|135|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterMemoryExtedted|136|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterMissing|137|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterMotorFailure|138|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterNearLimit|139|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterOffline|140|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterOpened|141|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterOverTemperature|142|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterPowerSaver|143|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterRecoverableFailure|144|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterRecoverableStorage|145|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterRemoved|146|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterResourceAdded|147|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterResourceRemoved|148|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterThermistorFailure|149|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterTimingFailure|150|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterTurnedOff|151|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterTurnedOn|152|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterUnderTemperature|153|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterUnrecoverableFailure|154|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterUnrecoverableStorageError|155|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|utterCutterWarmingUp|156|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|关闭|119|这是 RFC3998 中描述的标准 IPP 打印机属性值。|
+|deleted|120|这是 PWG5100.22 中所述的标准 IPP 打印机属性值。|
+|dieCutterAdded|121|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterAlmostEmpty|122|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterAlmostFull|123|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterAtLimit|124|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterClosed|125|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterConfigurationChange|126|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterCoverClosed|127|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterCoverOpen|128|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterEmpty|129|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterFull|130|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterInterlockClosed|131|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterInterlockOpen|132|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterJam|133|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterLifeAlmostOver|134|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterLifeOver|135|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterMemoryExhausted|136|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterMissing|137|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterMotorFailure|138|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterNearLimit|139|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterOffline|140|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterOpened|141|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterOverTemperature|142|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterPowerSaver|143|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterRecoverableFailure|144|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterRecoverableStorage|145|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterRemoved|146|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterResourceAdded|147|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterResourceRemoved|148|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterThermistorFailure|149|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterTimingFailure|150|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterTurnedOff|151|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterTurnedOn|152|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterUnderTemperature|153|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterUnrecoverableFailure|154|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterUnrecoverableStorageError|155|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|dieCutterWarmingUp|156|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |extruderCooling|157|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
 |extruderFailure|158|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
 |extruderHeating|159|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
@@ -207,7 +207,7 @@ ms.locfileid: "59777339"
 |folderJam|181|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |folderLifeAlmostOver|182|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |folderLifeOver|183|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|folderMemoryExtedted|184|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|folderMemoryExhausted|184|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |folderMissing|185|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |folderMotorFailure|186|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |folderNearLimit|187|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -228,7 +228,7 @@ ms.locfileid: "59777339"
 |folderUnrecoverableFailure|202|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |folderUnrecoverableStorageError|203|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |folderWarmingUp|204|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|休眠|205|这是 PWG5106.4 中描述的标准 IPP 打印机属性值。|
+|冬眠|205|这是 PWG5106.4 中描述的标准 IPP 打印机属性值。|
 |holdNewJobs|206|这是 RFC3998 中描述的标准 IPP 打印机属性值。|
 |identifyPrinterRequested|207|这是 PWG5100.18 中描述的标准 IPP 打印机属性值。|
 |imprinterAdded|208|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -246,7 +246,7 @@ ms.locfileid: "59777339"
 |imprinterJam|220|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |imprinterLifeAlmostOver|221|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |imprinterLifeOver|222|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|imprinterMemoryExtedted|223|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|imprinterMemoryExhausted|223|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |imprinterMissing|224|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |imprinterMotorFailure|225|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |imprinterNearLimit|226|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -298,7 +298,7 @@ ms.locfileid: "59777339"
 |inserterJam|272|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |inserterLifeAlmostOver|273|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |inserterLifeOver|274|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|inserterMemoryExtedted|275|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|inserterMemoryExhausted|275|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |inserterMissing|276|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |inserterMotorFailure|277|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |inserterNearLimit|278|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -320,11 +320,11 @@ ms.locfileid: "59777339"
 |inserterUnrecoverableStorageError|294|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |inserterWarmingUp|295|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |interlockClosed|296|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将cartridgeAdded|297|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将cartridgeDeleted|298|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将complexPageEncountered|299|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|interpreterCartridgeAdded|297|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|interpreterCartridgeDeleted|298|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|interpreterComplexPageEncountered|299|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |interpreterMemoryDecrease|300|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将memoryIncrease|301|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|interpreterMemoryIncrease|301|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |interpreterResourceAdded|302|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |interpreterResourceDeleted|303|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |lampAtEol|304|这是 PWG5100.21 中描述的标准 IPP 打印机属性值。|
@@ -348,7 +348,7 @@ ms.locfileid: "59777339"
 |makeEnvelopeJam|322|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |makeEnvelopeLifeAlmostOver|323|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |makeEnvelopeLifeOver|324|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|makeEnvelopeMemoryExtedted|325|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|makeEnvelopeMemoryExhausted|325|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |makeEnvelopeMissing|326|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |makeEnvelopeMotorFailure|327|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |makeEnvelopeNearLimit|328|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -436,7 +436,7 @@ ms.locfileid: "59777339"
 |perforaterJam|410|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |perforaterLifeAlmostOver|411|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |perforaterLifeOver|412|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|perforaterMemoryExtedted|413|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|perforaterMemoryExhausted|413|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |perforaterMissing|414|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |perforaterMotorFailure|415|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |perforaterNearLimit|416|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -467,43 +467,43 @@ ms.locfileid: "59777339"
 |printerManualReset|441|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |printerNmsReset|442|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |printerReadyToPrint|443|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|444|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一部分|445|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将almostFull|446|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|447|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|448|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些应用程序|449|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将coverClosed|450|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将covererCoverOpen|451|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|452|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|453|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|454|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一个功能区|455|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|456|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将lifeAlmostOver|457|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|458|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|459|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|460|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一个功能区|461|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一个 2013 年 1 月 2 日|462|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|463|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|464|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherAdded|444|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherAlmostEmpty|445|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherAlmostFull|446|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherAtLimit|447|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherClosed|448|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherConfigurationChange|449|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherCoverClosed|450|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherCoverOpen|451|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherEmpty|452|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherFull|453|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherInterlockClosed|454|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherInterlockOpen|455|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherJam|456|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherLifeAlmostOver|457|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherLifeOver|458|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherMemoryExhausted|459|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherMissing|460|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherMotorFailure|461|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherNearLimit|462|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherOffline|463|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherOpened|464|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |puncherOverTemperature|465|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|466|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将recoverableFailure|467|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|covererRecoverableStorage|468|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|469|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将resourceAdded|470|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将resourceRemoved|471|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|472|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将timingFailure|473|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将turnederTurnedOff|474|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将turnederTurnedOn|475|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|476|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|477|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|478|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一个功能区|479|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|resuming|480|这是 PWG5100.22 中描述的标准 IPP 打印机属性值。|
+|puncherPowerSaver|466|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherRecoverableFailure|467|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherRecoverableStorage|468|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherRemoved|469|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherResourceAdded|470|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherResourceRemoved|471|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherThermistorFailure|472|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherTimingFailure|473|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherTurnedOff|474|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherTurnedOn|475|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherUnderTemperature|476|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherUnrecoverableFailure|477|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherUnrecoverableStorageError|478|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|puncherWarmingUp|479|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|恢复|480|这是 PWG5100.22 中所述的标准 IPP 打印机属性值。|
 |scanMediaPathFailure|481|这是 PWG5107.3 中描述的标准 IPP 打印机属性值。|
 |scanMediaPathInputEmpty|482|这是 PWG5107.3 中描述的标准 IPP 打印机属性值。|
 |scanMediaPathInputFeedError|483|这是 PWG5107.3 中描述的标准 IPP 打印机属性值。|
@@ -543,7 +543,7 @@ ms.locfileid: "59777339"
 |separationCutterJam|517|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |separationCutterLifeAlmostOver|518|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |separationCutterLifeOver|519|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|separationCutterMemoryExtedted|520|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|separationCutterMemoryExhausted|520|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |separationCutterMissing|521|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |separationCutterMotorFailure|522|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |separationCutterNearLimit|523|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -579,7 +579,7 @@ ms.locfileid: "59777339"
 |sheetRotatorJam|553|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |sheetRotatorLifeAlmostOver|554|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |sheetRotatorLifeOver|555|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|sheetRotatorMemoryExtedted|556|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|sheetRotatorMemoryExhausted|556|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |sheetRotatorMissing|557|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |sheetRotatorMotorFailure|558|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |sheetRotatorNearLimit|559|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -615,7 +615,7 @@ ms.locfileid: "59777339"
 |slitterJam|589|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |slitterLifeAlmostOver|590|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |slitterLifeOver|591|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|slitterMemoryExtedted|592|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|slitterMemoryExhausted|592|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |slitterMissing|593|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |slitterMotorFailure|594|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |slitterNearLimit|595|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -651,7 +651,7 @@ ms.locfileid: "59777339"
 |stackerJam|625|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |stackerLifeAlmostOver|626|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |stackerLifeOver|627|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|stackerMemoryExtedted|628|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stackerMemoryExhausted|628|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |stackerMissing|629|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |stackerMotorFailure|630|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |stackerNearLimit|631|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -673,78 +673,78 @@ ms.locfileid: "59777339"
 |stackerUnrecoverableStorageError|647|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |stackerWarmingUp|648|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |备用|649|这是 PWG5106.4 中描述的标准 IPP 打印机属性值。|
-|装订器Added|650|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerAdded|650|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerAlmostEmpty|651|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerAlmostFull|652|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerAtLimit|653|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器Closed|654|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器ConfigurationChange|655|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器CoverClosed|656|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器CoverOpen|657|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerClosed|654|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerConfigurationChange|655|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerCoverClosed|656|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerCoverOpen|657|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerEmpty|658|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器Full|659|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器InterlockClosed|660|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器InterlockOpen|661|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器Jam|662|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerFull|659|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerInterlockClosed|660|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerInterlockOpen|661|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerJam|662|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerLifeAlmostOver|663|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器LifeOver|664|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|staplerMemoryExtedted|665|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerLifeOver|664|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerMemoryExhausted|665|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerMissing|666|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器MotorFailure|667|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerMotorFailure|667|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerNearLimit|668|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订线|669|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器Opened|670|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerOffline|669|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerOpened|670|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerOverTemperature|671|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器PowerSaver|672|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器RecoverableFailure|673|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器RecoverableStorage|674|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器Removed|675|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器ResourceAdded|676|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器ResourceRemoved|677|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerPowerSaver|672|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerRecoverableFailure|673|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerRecoverableStorage|674|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerRemoved|675|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerResourceAdded|676|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerResourceRemoved|677|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerThermistorFailure|678|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器TimingFailure|679|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器TurnedOff|680|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器TurnedOn|681|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerTimingFailure|679|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerTurnedOff|680|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerTurnedOn|681|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerUnderTemperature|682|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|装订器UnrecoverableFailure|683|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|staplerUnrecoverableFailure|683|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerUnrecoverableStorageError|684|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |staplerWarmingUp|685|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|686|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一部分|687|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将almostFull|688|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|689|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|690|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些应用程序|691|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将coverClosed|692|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将covererCoverOpen|693|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|694|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一台或多张|695|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一台或多张|696|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一键式打开|697|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|698|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将lifeAlmostOver|699|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|700|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|701|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将missing|702|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一个 2013 年 1 月 2 日|703|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一个 2013|704|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|705|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|706|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将overTemperature|707|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一个 2013 年 1 月 2 日|708|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|covererRecoverableFailure|709|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|covererRecoverableStorage|710|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一台或多张|711|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将resourceAdded|712|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将resourceRemoved|713|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一台或多张|714|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将timingFailure|715|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|turnederTurnedOff|716|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|将turnederTurnedOn|717|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一些|718|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|covererUnrecoverableFailure|719|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|covererUnrecoverableStorageError|720|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|一个|721|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherAdded|686|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherAlmostEmpty|687|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherAlmostFull|688|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherAtLimit|689|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherClosed|690|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherConfigurationChange|691|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherCoverClosed|692|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherCoverOpen|693|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherEmpty|694|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherFull|695|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherInterlockClosed|696|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherInterlockOpen|697|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherJam|698|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherLifeAlmostOver|699|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherLifeOver|700|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherMemoryExhausted|701|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherMissing|702|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherMotorFailure|703|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherNearLimit|704|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherOffline|705|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherOpened|706|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherOverTemperature|707|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherPowerSaver|708|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherRecoverableFailure|709|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherRecoverableStorage|710|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherRemoved|711|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherResourceAdded|712|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherResourceRemoved|713|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherThermistorFailure|714|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherTimingFailure|715|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherTurnedOff|716|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherTurnedOn|717|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherUnderTemperature|718|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherUnrecoverableFailure|719|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherUnrecoverableStorageError|720|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|stitcherWarmingUp|721|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |subunitAdded|722|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |subunitAlmostEmpty|723|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |subunitAlmostFull|724|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -755,7 +755,7 @@ ms.locfileid: "59777339"
 |subunitFull|729|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |subunitLifeAlmostOver|730|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |subunitLifeOver|731|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|subunitMemoryExtedted|732|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|subunitMemoryExhausted|732|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |subunitMissing|733|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |subunitMotorFailure|734|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |subunitNearLimit|735|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -776,8 +776,8 @@ ms.locfileid: "59777339"
 |subunitUnrecoverableFailure|750|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |subunitUnrecoverableStorage|751|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |subunitWarmingUp|752|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|suspend|753|这是 PWG5106.4 中描述的标准 IPP 打印机属性值。|
-|测试|754|这是 PWG5100.22 中描述的标准 IPP 打印机属性值。|
+|暂停|753|这是 PWG5106.4 中描述的标准 IPP 打印机属性值。|
+|测试|754|这是 PWG5100.22 中所述的标准 IPP 打印机属性值。|
 |trimmerAdded|755|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |trimmerAlmostEmpty|756|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |trimmerAlmostFull|757|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -793,7 +793,7 @@ ms.locfileid: "59777339"
 |trimmerJam|767|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |trimmerLifeAlmostOver|768|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |trimmerLifeOver|769|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|trimmerMemoryExtedted|770|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|trimmerMemoryExhausted|770|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |trimmerMissing|771|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |trimmerMotorFailure|772|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |trimmerNearLimit|773|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -830,7 +830,7 @@ ms.locfileid: "59777339"
 |wrapperJam|804|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |wrapperLifeAlmostOver|805|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |wrapperLifeOver|806|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|wrapperMemoryExtedted|807|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
+|wrapperMemoryExhausted|807|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |wrapperMissing|808|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |wrapperMotorFailure|809|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |wrapperNearLimit|810|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
@@ -851,4 +851,4 @@ ms.locfileid: "59777339"
 |wrapperUnrecoverableFailure|825|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |wrapperUnrecoverableStorageError|826|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
 |wrapperWarmingUp|827|这是 PWG5100.9 中描述的标准 IPP 打印机属性值。|
-|unknownFutureValue|36|可发展枚举 sentinel 值。 请勿使用。|
+|unknownFutureValue|36|可变枚举 sentinel 值。 请勿使用。|

@@ -1,16 +1,16 @@
 ---
 author: nilakhan
-description: 表示打印文档上载的信息
+description: 表示打印文档上传的信息
 title: printDocumentUploadProperties 资源类型
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: universal-print
-ms.openlocfilehash: 1249eaae4d62cffe14935587c655ba402237b0ed
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.prod: cloud-printing
+ms.openlocfilehash: 219834eb64863d67dcc6e3ed75f33bc08eead768
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727967"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176896"
 ---
 # <a name="printdocumentuploadproperties-resource-type"></a>printDocumentUploadProperties 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48727967"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述要上载的文档
+描述要上传的文档
 
 ## <a name="json-representation"></a>JSON 表示形式
 

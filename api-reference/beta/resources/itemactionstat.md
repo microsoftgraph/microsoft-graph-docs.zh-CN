@@ -1,17 +1,17 @@
 ---
 author: daspek
-description: ItemActionStat 资源提供有关一段时间内的操作的聚合详细信息。
+description: itemActionStat 资源提供有关一段时间内操作的聚合详细信息。
 ms.date: 09/14/2017
 title: ItemActionStat
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 8316239a7e00cdc74921c42b70431eba60cdc2d7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: b1fb726904c3b97ead34162410025a82f410231d
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075670"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176297"
 ---
 # <a name="itemactionstat-resource-type"></a>itemActionStat 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "48075670"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**ItemActionStat**资源提供有关一段时间内的操作的聚合详细信息。
+**itemActionStat** 资源提供有关一段时间内操作的聚合详细信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -38,10 +38,10 @@ ms.locfileid: "48075670"
 
 ## <a name="properties"></a>属性
 
-| 属性    | 类型  | 说明
+| 属性    | 类型  | Description
 |:------------|:------|:-------------------------------------------------------
-| actionCount | Int32 | 操作发生次数。 只读。
-| actorCount  | Int32 | 执行此操作的不同参与者的数量。 只读。
+| actionCount | Int32 | 执行操作的次数。 只读。
+| actorCount  | Int32 | 执行该操作的非重复执行组件的数目。 只读。
 
 <!--
 {

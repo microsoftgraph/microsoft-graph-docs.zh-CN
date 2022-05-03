@@ -2,15 +2,15 @@
 title: printJobStatus 资源类型
 description: 表示打印作业的当前状态。
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: bb3221eb12946d58664211731a31993e540aaf00
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 73038bbea54860ef37b8ebbf2602450dc556efd2
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728933"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176674"
 ---
 # <a name="printjobstatus-resource-type"></a>printJobStatus 资源类型
 
@@ -21,37 +21,37 @@ ms.locfileid: "48728933"
 表示打印作业的当前状态。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|state|printJobProcessingState|打印作业的当前处理状态。 有效值如下表所述。 只读。|
-|详细信息|printJobProcessingDetail 集合|打印作业状态的其他详细信息。 有效值如下表所述。 只读。|
-|说明|String|打印作业的当前处理状态的可读说明。 只读。|
-|isAcquiredByPrinter|布尔|如果作业已由打印机确认，则为 True; 否则为 false。否则为 false。 只读。|
+|state|printJobProcessingState|打印作业的当前处理状态。 下表描述了有效值。 只读。|
+|详细信息|printJobProcessingDetail 集合|打印作业状态的其他详细信息。 下表描述了有效值。 只读。|
+|说明|String|打印作业当前处理状态的人工可读说明。 只读。|
+|isAcquiredByPrinter|Boolean|如此 如果该作业已由打印机确认;否则为 false。 只读。|
 
 ### <a name="printjobprocessingstate-values"></a>printJobProcessingState 值
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|无法识别打印机报告的处理状态。|
-|决|1|打印作业正在等待打印机处理。|
-|处理|双面|打印机当前正在处理打印作业。|
-|停留|第三章|打印作业已暂停。|
-|停止|4 |打印作业已停止，因为需要先解决打印机问题，然后才能继续执行作业。 在打印机状态资源中可以找到详细信息。|
-|后|5 |打印作业已成功完成，不会进行进一步的处理。|
-|取消|6 |打印作业已被用户取消，不会进行进一步的处理。|
-|其间|7 |打印作业已被用户或打印机中止，不会进行进一步处理。|
+|等待|1|打印作业正在等待打印机的处理。|
+|处理|2|打印机当前正在处理打印作业。|
+|暂停|3|打印作业已暂停。|
+|停止|4|打印作业已停止，因为在继续作业之前，需要解决打印机问题。 可以在打印机状态资源中找到详细信息。|
+|完成|5|打印作业已成功完成，不会进行进一步处理。|
+|取消|6 |打印作业已由用户取消，不会进行进一步处理。|
+|中止|7 |打印作业已被用户或打印机中止，不会进行进一步处理。|
 
 ### <a name="printjobprocessingdetail-values"></a>printJobProcessingDetail 值
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
-|uploadPending|0|尚未上传文档有效负载。|
-|改变|1|正在转换文档有效负载。|
-|completedSuccessfully|双面|作业已成功完成。|
-|completedWithWarnings|第三章|作业已完成，但出现警告。|
-|completedWithErrors|4 |作业已完成，但有错误。|
-|releaseWait|5 |作业挂起，无法释放。|
-|口译|6 |作业处于 "正在处理" 状态，但更具体地说，是解释文档有效负载。|
+|uploadPending|0|文档有效负载尚未上传。|
+|转化|1|正在转换文档有效负载。|
+|completedSuccessfully|2|作业已成功完成。|
+|completedWithWarnings|3|作业已使用警告完成。|
+|completedWithErrors|4|作业已完成并出现错误。|
+|releaseWait|5|作业正在等待发布。|
+|解释|6 |作业处于“处理”状态，但更具体地说，正在解释文档有效负载。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

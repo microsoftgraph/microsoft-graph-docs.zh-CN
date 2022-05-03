@@ -5,13 +5,13 @@ ms.date: 09/11/2017
 title: NumberColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: d361d204471e01bb65e33a7c4177600fc2dcd6f0
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: cloud-pc
+ms.openlocfilehash: 8970c7a2526a4a29a3efe8e27759e81338013ed8
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723296"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176923"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "63723296"
 
 ## <a name="properties"></a>属性
 
-| 属性          | 类型   | 说明                                                                                                                |
+| 属性          | 类型   | Description                                                                                                                |
 | :---------------- | :----- | :------------------------------------------------------------------------------------------------------------------------- |
 | **decimalPlaces** | string | 要显示的小数位数。 有关可能的值的信息，请参阅以下信息。                                   |
 | **displayAs**     | string | 值在用户体验中的显示方式。 必须为 `number` 或 `percentage` 的其中一个。 如果未指定，则视为 `number`。 |
@@ -47,7 +47,7 @@ ms.locfileid: "63723296"
 
 ## <a name="decimalplaces-values"></a>DecimalPlaces 值
 
-| 值         | 说明                                              |
+| 值         | Description                                              |
 | :------------ | :------------------------------------------------------- |
 | **automatic** | 默认值。 根据需要自动显示小数位数。 |
 | **none**      | 不显示任何小数位数。                       |

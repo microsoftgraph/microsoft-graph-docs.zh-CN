@@ -1,18 +1,18 @@
 ---
-title: 收件人资源类型
-description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+title: recipients 资源类型
+description: 描述资源的 JSON 表示形式”
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: MSGraphDocsVteam
-ms.openlocfilehash: 3a8879e677ccc59aee47f0ab7e4c6a0e92d5562b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b47ea2da356c465a633f30256945b4b1bed33bf
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055188"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176935"
 ---
-# <a name="recipients-resource-type"></a>收件人资源类型
+# <a name="recipients-resource-type"></a>recipients 资源类型
 
 命名空间：microsoft.graph
 
@@ -40,7 +40,7 @@ ms.locfileid: "48055188"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |alias|String||
 |email|String||

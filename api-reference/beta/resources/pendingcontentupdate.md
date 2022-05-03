@@ -1,17 +1,17 @@
 ---
 title: pendingContentUpdate
-description: PendingContentUpdate 资源指示可能影响 driveItem 的二进制内容的操作处于 "正在等待" 已完成。
-localization_priority: Normal
+description: pendingContentUpdate 资源指示可能影响 driveItem 二进制内容的操作正在等待完成。
+ms.localizationpriority: medium
 author: JeremyKelley
 ms.date: 08/06/2019
-ms.prod: ''
+ms.prod: notes
 doc_type: resourcePageType
-ms.openlocfilehash: 5e7291ac4591ba63bec96108dd46bf9561358bb4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec44c2c1d75bc11276d99dad1815c0d999b4f0e1
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998083"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176343"
 ---
 # <a name="pendingcontentupdate-resource-type"></a>pendingContentUpdate 资源类型
 
@@ -19,13 +19,13 @@ ms.locfileid: "47998083"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指示可能会影响 **driveItem** 的二进制内容的操作正在等待完成。
+指示可能影响 **driveItem** 的二进制内容的操作正在等待完成。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型         | 说明 |
+| 属性     | 类型         | Description |
 |:-------------|:-------------|:------------|
-|queuedDateTime|DateTimeOffset|在 UTC 时间内排队待执行的二进制操作的日期和时间。 只读。|
+|queuedDateTime|DateTimeOffset|挂起的二进制操作在 UTC 时间排队的日期和时间。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

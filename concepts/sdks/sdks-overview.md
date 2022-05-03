@@ -4,12 +4,12 @@ description: 介绍可用的 SDK、它们支持的语言以及它们为开发人
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9fdd4d5cc858413b08ff4f86c2b564611617c315
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: c8ea966ce6ef2510e484897816dc62f7359a882f
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060540"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176796"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Microsoft Graph SDK 概述
 
@@ -30,7 +30,6 @@ SDK 目前可用于以下语言：
 - [转到](https://github.com/microsoftgraph/msgraph-sdk-go)
 - [PHP](https://github.com/microsoftgraph/msgraph-sdk-php)
 - [Python (预览) ](https://github.com/microsoftgraph/msgraph-sdk-python-core)
-- [Objective-C |迅速](https://github.com/microsoftgraph/msgraph-sdk-objc)
 
 ## <a name="microsoft-365-developer-subscription"></a>Microsoft 365 开发人员订阅
 

@@ -1,16 +1,16 @@
 ---
 title: printMargin 资源类型
-description: 指定打印时使用的页边距宽度。
+description: 指定打印时要使用的边距宽度。
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8f89d2d4daa45d1043e3412852cdaa480223129b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d6d2e0d1f83cb0da747fb0bb901ba21547612c4
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048727"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176670"
 ---
 # <a name="printmargin-complex-type"></a>printMargin 复杂类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48048727"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定打印时使用的页边距宽度。
+指定打印时要使用的边距宽度。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|top|Int32|从上边缘到 microns 中的边距。|
-|bottom|Int32|从下边缘 microns 的边距。|
-|左向右|Int32|从右边缘 microns 的边距。|
-|左边|Int32|从左边缘的 microns 中的边距。|
+|top|Int32|上边缘以微米为单位的边距。|
+|底部|Int32|下边缘的边距（以微米为单位）。|
+|对|Int32|从右边缘以微米为单位的边距。|
+|左边|Int32|从左边缘以微米为单位的边距。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

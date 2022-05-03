@@ -1,16 +1,16 @@
 ---
 title: printIdentity 资源类型
-description: 表示通用打印服务中的标识。 映射到 Azure AD 组。
+description: 表示通用打印服务中的标识。 地图到Azure AD组。
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 45a69cbad25d2f9c3c99c9e01aa47982fe5c62b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6132cabcb0aa7dfff94207a38b963aefe568fe29
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048765"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176328"
 ---
 # <a name="printidentity-resource-type"></a>printIdentity 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "48048765"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示通用打印服务中的标识。 映射到 [Azure Active Directory (AZURE AD) 组](group.md)。
+表示通用打印服务中的标识。 地图到[Azure Active Directory (Azure AD) 组](group.md)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String|PrintIdentity 的标识符。 只读。|
-|displayName|String|PrintIdentity 的显示名称。|
+|id|String|printIdentity 的标识符。 只读。|
+|displayName|String|printIdentity 的显示名称。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
