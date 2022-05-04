@@ -1,21 +1,21 @@
 ---
 title: 列出关系
-description: 从 relations 导航属性获取关系。
+description: 从关系导航属性获取关系。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: b4634f82d813d6a8add04f818f02c4ca5c5cf8e4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ec4e7e0caa4c765b67445883cacb6eac6ecb722
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128279"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191385"
 ---
 # <a name="list-relations"></a>列出关系
 命名空间：microsoft.graph.termStore
 
-从 relations [导航属性获取] 术语 [或集] 的不同关系。
+从关系导航属性获取 [术语] 或 [集] 的不同关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "62128279"
 |:---|:---|
 |委派（工作或学校帐户） |TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -51,7 +51,7 @@ GET sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [microsoft.graph.termStore.relation](../resources/termstore-relation.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoft.graph.termStore.relation](../resources/termstore-relation.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 
@@ -119,7 +119,7 @@ Content-Type: application/json
 
 
 [set]: ../resources/termstore-set.md
-[term]: ../resources/termstore-term.md
+[术语]: ../resources/termstore-term.md
 [microsoft.graph.termStore.relation]: ../resources/termstore-relation.md
 
 

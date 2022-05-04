@@ -3,19 +3,19 @@ title: 更新术语
 description: 更新术语对象的属性。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: f14ca04df3b90553d9fec9ae737a0f896a122134
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 10b4371906456ddc24c9dbf3f19afab844d7979e
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121699"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191702"
 ---
 # <a name="update-term"></a>更新术语
 命名空间：microsoft.graph.termStore
 
-更新术语 [对象](../resources/termstore-term.md) 的属性。
+更新 [术语](../resources/termstore-term.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "62121699"
 |:---|:---|
 |委派（工作或学校帐户） | TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -44,21 +44,21 @@ PATCH sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供术语对象的 JSON [表示](../resources/termstore-term.md) 形式。
+在请求正文中，提供 [术语](../resources/termstore-term.md) 对象的 JSON 表示形式。
 
-下表显示了可针对术语 [对象更新的属性](../resources/termstore-term.md) 。
+下表显示了可以针对 [术语](../resources/termstore-term.md) 对象更新的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|术语的标签。|
-|说明|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) 集合|有关术语的说明。|
+|标签|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|术语的标签。|
+|描述|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) 集合|有关术语的说明。|
 |properties|[microsoft.graph.keyValue](../resources/keyvalue.md) 集合|与术语关联的属性。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [microsoft.graph.termStore.term](../resources/termstore-term.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [microsoft.graph.termStore.term](../resources/termstore-term.md) 对象。
 
 ## <a name="examples"></a>示例
 

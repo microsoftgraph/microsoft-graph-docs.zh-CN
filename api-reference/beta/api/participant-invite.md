@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 640cd67114ec43ae6981b10a645d0fe8d90a0268
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: ff2fcc644112b2f3594c476d796779b7402c58ed
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133823"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191659"
 ---
 # <a name="participant-invite"></a>参与者：邀请
 
@@ -20,7 +20,7 @@ ms.locfileid: "65133823"
 
 邀请参与者加入活动呼叫。
 
-有关如何处理操作的详细信息，请参阅 [commsoperation](../resources/commsoperation.md)。
+有关如何处理操作的详细信息，请参阅 [commsOperation](../resources/commsoperation.md)。
 
 >**注意：** 仅组调用支持在一个请求中邀请多个参与者。
 
@@ -31,7 +31,7 @@ ms.locfileid: "65133823"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | Calls.InitiateGroupCalls.All |
+| Application     | Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/participants/invite
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合| 要邀请的参与者。|
-|clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
+|clientContext|字符串|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
 如果成功，此方法将向为此请求创建[的 inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 返回一个`200 OK`响应代码和一个带有 URI 的位置标头。 响应正文包含已创建 [的 inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 。
@@ -520,7 +520,7 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>示例 3：邀请参与者加入现有组调用，替换现有的对等呼叫
+### <a name="example-3-invite-participants-to-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>示例 3：邀请参与者加入现有组调用，替换现有的对等呼叫
 
 
 在替换现有对等调用时，邀请 API 仅支持一个参与者。 在请求正文中提供多个参与者时，将只读取第一个参与者，其余参与者将被忽略。
@@ -918,6 +918,191 @@ Content-Type: application/json
 ```
 
 >**注意：**`completed`使用状态时，可以预期收到有关原始对等呼叫终止和删除方式的通知。
+
+### <a name="example-5-move-one-participant-from-one-meeting-to-another"></a>示例 5：将一个参与者从一个会议移到另一个会议
+
+如果这两个会议是由同一个应用程序创建的，则可以将一个参与者从一个会议移到另一个会议。
+有关如何创建联机会议的详细信息，请参阅 [“创建 onlineMeeting](/graph/api/application-post-onlinemeetings)”。
+
+> **注意：** 每个请求只能移动一个参与者的邀请 API。 如果在请求正文中提供多个参与者，则邀请 API 将仅移动第一个参与者。
+
+#### <a name="request"></a>请求
+
+请求示例如下所示。
+
+<!-- {
+  "blockType": "request",
+  "name": "participant-invite-move"
+}-->
+
+```http
+POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
+Content-Type: application/json
+
+{
+  "participants": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "participantId": "7d501bf1-5ee4-4605-ba92-0ae4513c611c",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "682b6c37-0729-4fab-ace6-d730d5d9137e",
+          "identityProvider": "AAD"
+        }
+      }
+    }
+  ],
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
+}
+```
+
+#### <a name="response"></a>响应
+
+下面介绍响应示例。
+
+<!-- {
+  "blockType": "response",
+  "truncated": "true",
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation",
+  "name": "participant-invite-move"
+}-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
+  "id": "278405a3-f568-4b3e-b684-009193463064",
+  "status": "Running",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
+  "participants": [
+    {
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "participantId": "7d501bf1-5ee4-4605-ba92-0ae4513c611c",
+      "identity": {
+        "user": {
+          "id": "682b6c37-0729-4fab-ace6-d730d5d9137e",
+          "displayName": "Participant",
+          "identityProvider": "AAD",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        "application": null,
+        "device": null,
+        "phone": null
+      }
+    }
+  ]
+}
+```
+
+#### <a name="notification---operation-completed"></a>通知 - 操作已完成
+
+``` http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+
+```json
+{ 
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[ 
+      { 
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"deleted",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
+         "resourceData":{ 
+            "@odata.type":"#microsoft.graph.inviteParticipantsOperation",
+            "participants":[ 
+               { 
+                  "@odata.type":"#microsoft.graph.invitationParticipantInfo",
+                  "identity":{ 
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "user":{ 
+                        "@odata.type":"#microsoft.graph.identity",
+                        "id":"682b6c37-0729-4fab-ace6-d730d5d9137e",
+                        "identityProvider":"AAD",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  }
+               }
+            ],
+            "status":"completed",
+            "clientContext":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+            "id":"278405a3-f568-4b3e-b684-009193463064"
+         }
+      }
+   ]
+}
+```
+
+#### <a name="notification---roster-updated-with-participant-added"></a>通知 - 已更新名单，并添加了参与者
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+
+```json
+{
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"updated",
+         "resource":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceData":[
+            {
+               "@odata.type":"#microsoft.graph.participant",
+               "info":{
+                  "@odata.type":"#microsoft.graph.participantInfo",
+                  "identity":{
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "user":{ 
+                        "@odata.type":"#microsoft.graph.identity",
+                        "id":"682b6c37-0729-4fab-ace6-d730d5d9137e",
+                        "identityProvider":"AAD",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  },
+                  "endpointType":"default"
+               },
+               "mediaStreams":[
+                  {
+                     "@odata.type":"#microsoft.graph.mediaStream",
+                     "mediaType":"audio",
+                     "sourceId":"1",
+                     "direction":"sendReceive",
+                     "serverMuted":false
+                  }
+               ],
+               "isMuted":false,
+               "isInLobby":false,
+               "id":null
+            }
+         ]
+      }
+   ]
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

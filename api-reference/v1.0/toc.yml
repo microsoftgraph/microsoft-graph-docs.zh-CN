@@ -488,7 +488,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装应用
                 href: resources/teamsappinstallation.md
@@ -1681,7 +1681,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -5416,7 +5416,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-overview.md
@@ -6430,6 +6430,8 @@ items:
                 href: api/site-list-subsites.md
               - name: 搜索网站
                 href: api/site-search.md
+              - name: 列举操作
+                href: api/site-list-operations.md
               - name: 权限
                 href: resources/permission.md
                 items:
@@ -6463,6 +6465,8 @@ items:
                 href: api/list-list-contenttypes.md
               - name: 添加内容类型的副本
                 href: api/contenttype-addcopy.md
+              - name: 列举操作
+                href: api/list-list-operations.md
           - name: 列数
             items:
               - name: 列定义
@@ -6491,6 +6495,8 @@ items:
                 href: api/contenttype-unpublish.md
               - name: 将副本添加到列表
                 href: api/contenttype-addcopy.md
+              - name: 从中心添加或同步
+                href: api/contenttype-addcopyfromcontenttypehub.md
               - name: 与中心站点关联
                 href: api/contenttype-associatewithhubsites.md
               - name: 复制到默认内容位置
@@ -6499,6 +6505,8 @@ items:
                 href: api/contenttype-list-columns.md
               - name: 创建列
                 href: api/contenttype-post-columns.md
+              - name: 从中心获取兼容性
+                href: api/contenttype-getcompatiblehubcontenttypes.md
           - name: 列表项目
             href: resources/listitem.md
             items:
@@ -6514,6 +6522,12 @@ items:
                 href: api/listitem-list-versions.md
               - name: 获取项分析
                 href: api/itemanalytics-get.md
+          - name: 丰富的长时间运行操作
+            items:
+              - name: 丰富的长时间运行操作
+                href: resources/richLongRunningOperation.md
+              - name: 获取
+                href: api/richlongrunningoperation-get.md
           - name: 分类
             displayname: Taxonomy API
             items:

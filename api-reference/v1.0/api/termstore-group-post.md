@@ -1,30 +1,30 @@
 ---
-title: 创建组
+title: 创建 termStore 组
 description: 在术语存储中创建新的组对象。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: ff08b50016ff40065ec09c462f6f14bd6d8face4
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b8bd550ea4d310099385a6cb9b522250db273612
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947449"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191779"
 ---
 # <a name="create-termstore-group"></a>创建 termStore 组
 命名空间：microsoft.graph.termStore
 
-在术语 [存储中](../resources/termstore-group.md) 创建新的组对象。
+在术语存储中创建新的 [组](../resources/termstore-group.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户） |TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,17 +46,17 @@ POST sites/{site-id}/termStore/groups
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[组](../resources/termstore-group.md)对象的 JSON 表示形式。
 
-下表显示创建 group 对象 [时所需的属性](../resources/termstore-group.md) 。
+下表显示了创建 [组](../resources/termstore-group.md) 对象时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|要创建的组的名称。|
+|displayName|字符串|要创建的组的名称。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [microsoft.graph.termStore.group](../resources/termstore-group.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [microsoft.graph.termStore.group](../resources/termstore-group.md) 对象。
 
 ## <a name="examples"></a>示例
 

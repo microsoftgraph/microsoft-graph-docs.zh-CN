@@ -1,21 +1,21 @@
 ---
-title: 获取应用商店
-description: 读取 store 对象的属性和关系。
+title: 获取存储
+description: 读取存储对象的属性和关系。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: df211027b5485244566635a29d16d2a1deb9741c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e471c529e7b18d8bd9c144755cbe742b56913171
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104350"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191709"
 ---
-# <a name="get-store"></a>获取应用商店
+# <a name="get-store"></a>获取存储
 命名空间：microsoft.graph.termStore
 
-读取 store [对象的属性和](../resources/termstore-store.md) 关系。
+读取 [存储](../resources/termstore-store.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "62104350"
 |:---|:---|
 |委派（工作或学校帐户） | TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,7 +44,7 @@ GET sites/{site-id}/termStore
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [microsoft.graph.termStore.store](../resources/termstore-store.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoft.graph.termStore.store](../resources/termstore-store.md) 对象。
 
 ## <a name="examples"></a>示例
 

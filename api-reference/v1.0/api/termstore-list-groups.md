@@ -1,21 +1,21 @@
 ---
-title: 列出组
-description: 获取术语存储中的组对象列表。
+title: 列出 termStore 组
+description: 获取术语存储中组对象的列表。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: cc0e21fddef8fdc4251009e07e1413e213d4af1c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6e750ecc3de80821e9e3fee8c0f978bd676c4e3f
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104399"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191441"
 ---
-# <a name="list-termstore-groups"></a>列出术语存储组
+# <a name="list-termstore-groups"></a>列出 termStore 组
 命名空间：microsoft.graph.termStore
 
-获取术语 [库中的](../resources/termstore-group.md) 组对象 [列表](../resources/termstore-store.md)。
+获取术语[存储](../resources/termstore-store.md)中[组](../resources/termstore-group.md)对象的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "62104399"
 |:---|:---|
 |委派（工作或学校帐户） | TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET sites/{site-id}/termStore/groups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [microsoft.graph.termStore.group](../resources/termstore-group.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoft.graph.termStore.group](../resources/termstore-group.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

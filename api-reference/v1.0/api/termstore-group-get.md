@@ -1,21 +1,21 @@
 ---
 title: 获取组
-description: 读取术语库组对象的属性和关系。
+description: 读取术语存储组对象的属性和关系。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 79f336e1a2921ed8785771b9e37570a80e78564c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 9729f67e69e71e8ff12df7c403a28474394c7c22
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336695"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191399"
 ---
 # <a name="get-group"></a>获取组
 命名空间：microsoft.graph.termStore
 
-读取术语库组对象的属性 [和](../resources/termstore-group.md) 关系。
+读取术语存储 [组](../resources/termstore-group.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "63336695"
 |:---|:---|
 |委派（工作或学校帐户） | TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -48,7 +48,7 @@ GET sites/{site-id}/termStore/groups/{group-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [microsoft.graph.termStore.group](../resources/termstore-group.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoft.graph.termStore.group](../resources/termstore-group.md) 对象。
 
 ## <a name="examples"></a>示例
 

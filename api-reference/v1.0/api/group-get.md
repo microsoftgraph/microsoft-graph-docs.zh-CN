@@ -5,14 +5,14 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9bf782bfaa75dbb4c31e62d23c43a8b4465e944a
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 17e249db9ec645a6cb7a013bd5949d377b772519
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587705"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191392"
 ---
-# <a name="get-group"></a>获取组
+# <a name="get-group"></a>获取组 
 
 命名空间：microsoft.graph
 

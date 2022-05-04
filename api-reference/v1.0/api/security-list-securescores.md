@@ -3,20 +3,20 @@ title: 列出 secureScores
 description: 检索 secureScore 对象的列表。
 author: preetikr
 ms.localizationpriority: medium
-ms.prod: ''
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 3ee7298d55fbbb57d07d416aa7f1f88f014a5ce3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 65218ac1ec9d2f31f2129dace93bad645ab84fff
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134313"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191744"
 ---
 # <a name="list-securescores"></a>列出 secureScores
 
 命名空间：microsoft.graph
 
-检索 [secureScore 对象](../resources/securescore.md) 的列表。
+检索 [secureScore](../resources/securescore.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ GET /security/secureScores?$filter={property} eq '{property-value}'
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。 必需。|
+| Authorization  | 持有者 {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,7 +59,7 @@ GET /security/secureScores?$filter={property} eq '{property-value}'
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 **secureScores** 对象集合。
+如果成功，此方法在响应正文中返回一个 `200 OK` 响应代码和 **secureScores** 对象集合。
 
 ## <a name="example"></a>示例
 

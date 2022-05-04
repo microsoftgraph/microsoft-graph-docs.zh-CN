@@ -3,14 +3,14 @@ title: 删除术语
 description: 删除术语对象。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 21e4d28705627987effe09363259e36062f1a8e7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f5e70745b85958e83ceaf47b4a3a695bbb96ec05
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121713"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191807"
 ---
 # <a name="delete-term"></a>删除术语
 命名空间：microsoft.graph.termStore
@@ -24,7 +24,7 @@ ms.locfileid: "62121713"
 |:---|:---|
 |委派（工作或学校帐户） |TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求

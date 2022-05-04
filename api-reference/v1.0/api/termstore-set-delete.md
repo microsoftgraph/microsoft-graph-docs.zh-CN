@@ -3,14 +3,14 @@ title: 删除集
 description: 删除 set 对象。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: bbe0d4a5b022ae737c6261e484e1c7c2fa91b216
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5ab2105011d8c29b758b9d62e7169be85a4d2fdf
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104385"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191758"
 ---
 # <a name="delete-set"></a>删除集
 命名空间：microsoft.graph.termStore
@@ -24,7 +24,7 @@ ms.locfileid: "62104385"
 |:---|:---|
 |委派（工作或学校帐户） |TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求

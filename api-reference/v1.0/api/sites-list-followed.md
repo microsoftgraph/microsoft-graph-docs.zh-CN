@@ -3,20 +3,20 @@ author: learafa
 description: 已登录用户的关注网站列表。
 title: 关注网站列表
 ms.localizationpriority: medium
-ms.prod: SharePoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 32ff7dab3ad5a2b64a93606502fff80de30ca134
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5c787ed7f8b5c17a26f84d89a7271c9f82a0ddc5
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121784"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191786"
 ---
 # <a name="list-followed-sites"></a>关注网站列表
 
 命名空间：microsoft.graph
 
-列出 [已](../resources/site.md) 登录用户关注的网站。
+列出已登录用户之后的 [网站](../resources/site.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -30,19 +30,19 @@ ms.locfileid: "62121784"
 
 ## <a name="http-request"></a>HTTP 请求
 
-此方法只能通过 OneDrive for Business。
+此方法只能通过OneDrive for Business访问。
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/followedSites
 ```
-获取目标用户关注的网站列表（基于其 ID）。
+根据其 ID 获取后跟目标用户的站点列表。
 
 ```http
 GET /users/{user-id}/followedSites
 ```
-**注意：** 若要访问另一目标用户的已关注网站列表，您需要应用程序权限。
+**注意：** 若要访问其他目标用户的已关注网站列表，需要应用程序权限。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -51,7 +51,7 @@ GET /users/{user-id}/followedSites
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。 必需。|
+| Authorization  | 持有者 {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,7 +59,7 @@ GET /users/{user-id}/followedSites
 
 ## <a name="response"></a>响应
 
-此方法返回用户 [正在](../resources/site.md) 跟踪的网站资源的集合。
+此方法返回用户所关注 [网站](../resources/site.md) 资源的集合。
 如果未找到任何网站，则返回空集合。
 
 ## <a name="example"></a>示例

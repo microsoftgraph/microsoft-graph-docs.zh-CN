@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: b8b34d6041ca63f696a879ae237b9ffe324fc393
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: b5b92bdde3aa98f78a2bcccdbd0709b446a68441
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61403146"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191716"
 ---
 # <a name="create-authorednote"></a>创建 authoredNote
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "61403146"
 |:---|:---|
 |委派（工作或学校帐户）|SubjectRightsRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,20 +45,22 @@ POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [authoredNote](../resources/authorednote.md) 对象的 JSON 表示形式。
 
-下表显示创建 [authoredNote](../resources/authorednote.md)时所需的属性。
+下表显示了创建 [authoredNote](../resources/authorednote.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|内容|[microsoft.graph.itemBody](../resources/itembody.md)|请求的注释内容|
+|内容|[microsoft.graph.itemBody](../resources/itembody.md)|请求的笔记内容。|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [authoredNote](../resources/authorednote.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [authoredNote](../resources/authorednote.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -94,15 +96,16 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-authorednote-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-authorednote-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### <a name="response"></a>响应
+
+下面展示了示例响应。
+
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

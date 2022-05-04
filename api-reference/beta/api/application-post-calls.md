@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ddd3d8ca490183a20763eec07a7c651107fd47de
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 093cfa3291324c4520c77f8603e0f05d0ce48b6d
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917666"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191490"
 ---
 <!-- markdownlint-disable MD001 MD022 MD024 -->
 
@@ -75,7 +75,8 @@ POST /communications/calls
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-1",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -392,7 +393,8 @@ Content-Type: application/json
 <!-- {
   "blockType": "request",
   "name": "create-call-app-hosted-media",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -563,7 +565,8 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```json
@@ -632,7 +635,8 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```json
@@ -1307,7 +1311,8 @@ Content-Type: application/json
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-2",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -1475,7 +1480,8 @@ Content-Type: application/json
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-3",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http

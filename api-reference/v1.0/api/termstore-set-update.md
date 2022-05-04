@@ -3,19 +3,19 @@ title: 更新集
 description: 更新 set 对象的属性。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 4866a3efb88f005ade8020bb3155b197d2ccedd7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2aa24cf98f787b382c3df96e2295225804464aa0
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110540"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191723"
 ---
 # <a name="update-set"></a>更新集
 命名空间：microsoft.graph.termStore
 
-更新 [set 对象](../resources/termstore-set.md) 的属性。
+更新 [set](../resources/termstore-set.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "62110540"
 |:---|:---|
 |委派（工作或学校帐户） |TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -45,21 +45,21 @@ PATCH sites/{site-id}/termStore/sets/{set-id}
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 set 对象的 JSON [表示](../resources/termstore-set.md) 形式。
+在请求正文中，提供 set 对象的 JSON 表示 [形式](../resources/termstore-set.md) 。
 
-下表显示了可编辑 set 对象 [的属性](../resources/termstore-set.md) 。
+下表显示了可为 [set](../resources/termstore-set.md) 对象编辑的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|localizedNames|[microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md) 集合|集合的名称。|
-|说明|String|集的说明。|
-|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) 集合|集合的属性。|
+|localizedNames|[microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md) 集合|集的名称。|
+|说明|字符串|集的说明。|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) 集合|集的属性。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [microsoft.graph.termStore.set](../resources/termstore-set.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [microsoft.graph.termStore.set](../resources/termstore-set.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -2,20 +2,20 @@
 title: 列出子项
 description: 从子导航属性获取术语。
 author: vishriv
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: fbaede0e9c9233ed536805b3101976054b722470
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ab871eef76bfce88435c6a3539d39477b445c2b8
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091616"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191772"
 ---
 # <a name="list-children"></a>列出子项
 命名空间：microsoft.graph.termStore
 
-使用 children 导航属性获取 [集] 或 [术语] 资源的第一级子级。
+使用子导航属性获取 [集] 或 [术语] 资源的第一级子级。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "62091616"
 |:---|:---|
 |委派（工作或学校帐户） | TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [microsoft.graph.termStore.term](../resources/termstore-term.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoft.graph.termStore.term](../resources/termstore-term.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 
@@ -123,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-[term]: ../resources/termstore-term.md
+[术语]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 
 <!--

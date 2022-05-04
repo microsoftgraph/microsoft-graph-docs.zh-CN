@@ -1,16 +1,16 @@
 ---
 title: invitationParticipantInfo 资源类型
-description: 表示受邀加入组呼叫的实体。
+description: 表示受邀加入组调用的实体。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9193ec70a3884ba9bf25e4f1c8c33eb7c77d838f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 16885239d0af9be8e9e8e66eade8f75c2d120a8e
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989036"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191638"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 
@@ -18,15 +18,16 @@ ms.locfileid: "47989036"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示受邀加入组呼叫的实体。 
+表示受邀加入组调用的实体。 
 
 ## <a name="properties"></a>属性
 
 | 属性                           | 类型                          | 说明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | endpointType                       | String                        | 终结点的类型。 可取值为：`default`、`voicemail`。 |
-| 窃取                           | [identitySet](identityset.md) | 与此邀请关联的 [了解 identityset](identityset.md) 。                   |
-| replacesCallId                     | String                        | 可选。 目标 idenity 当前是其一部分的调用。 添加参与者后，将删除此呼叫。 |
+| identity                           | [identitySet](identityset.md) | 与此邀请关联的 [identitySet](identityset.md) 。                   |
+| participantId                      | String                        | 可选。 目标参与者的 ID。                                          |
+| replacesCallId                     | String                        | 可选。 目标标识当前所属的调用。 对于对等情况，一旦成功添加参与者，将放弃调用。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -42,8 +43,9 @@ ms.locfileid: "47989036"
 }-->
 ```json
 {
-  "endpointType": "default | voicemail",
+  "endpointType": "String",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
+  "participantId": "String",  
   "replacesCallId": "String"
 }
 ```

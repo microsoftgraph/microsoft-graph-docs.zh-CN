@@ -3,20 +3,20 @@ title: 列出 secureScoreControlProfiles
 description: 检索 secureScoreControlProfiles 对象的属性和关系。
 author: preetikr
 ms.localizationpriority: medium
-ms.prod: ''
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 0402b07fc2a972401826fbc95217f65433de2906
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ab569fae3b6b7592c1e5c4565bd335d21c4e1a90
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124416"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191751"
 ---
 # <a name="list-securescorecontrolprofiles"></a>列出 secureScoreControlProfiles
 
 命名空间：microsoft.graph
 
-检索 [secureScoreControlProfiles 对象的属性和](../resources/securescorecontrolprofile.md) 关系。
+检索 [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ GET /security/secureScoreControlProfiles?$filter={property} eq '{property-value}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。 必需。|
+| Authorization  | 持有者 {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,7 +59,7 @@ GET /security/secureScoreControlProfiles?$filter={property} eq '{property-value}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 **和 secureScoreControlProfiles** 对象集合。
+如果成功，此方法在响应正文中返回一个 `200 OK` 响应代码和 **secureScoreControlProfiles** 对象集合。
 
 ## <a name="example"></a>示例
 

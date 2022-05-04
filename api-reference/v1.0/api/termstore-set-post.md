@@ -3,28 +3,28 @@ title: 创建集
 description: 创建新的 set 对象。
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 781cca8fce8b83b00be65cc1063cd290318bbd55
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3dd711a657f536ca3d48db6bed989b0a0a99bbe3
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940256"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191631"
 ---
 # <a name="create-set"></a>创建集
 命名空间：microsoft.graph.termStore
 
 创建新的 [set](../resources/termstore-set.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户） |TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -44,20 +44,20 @@ POST sites/{site-id}/termStore/sets
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 set 对象的 JSON [表示](../resources/termstore-set.md) 形式。
+在请求正文中，提供 set 对象的 JSON 表示 [形式](../resources/termstore-set.md) 。
 
-下表显示创建 set 对象时[所需的属性。](../resources/termstore-set.md)
+下表显示了创建 [set](../resources/termstore-set.md) 对象时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |localizedNames|[microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) 集合|要创建的集的名称。|
-|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|需要创建集的 termstore-group。|
+|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|需要在其中创建集的 termstore 组。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [microsoft.graph.termStore.set](../resources/termstore-set.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [microsoft.graph.termStore.set](../resources/termstore-set.md) 对象。
 
 ## <a name="examples"></a>示例
 
