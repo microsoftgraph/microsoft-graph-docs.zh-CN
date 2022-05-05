@@ -1,19 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9144523d95aa137c50736a9555874d396e80d33734dd61a8f765d500177c5456
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d6172a3ccdf4461b94af842226acec2389c5d253
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57279114"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220314"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String newPassword = "newPassword-value";
+String newPassword = "Cuyo5459";
 
-graphClient.users("{id | userPrincipalName}").authentication().passwordMethods("{id}")
+graphClient.users("6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0").authentication().passwordMethods("28c10230-6103-485e-b985-444c60001490")
     .resetPassword(AuthenticationMethodResetPasswordParameterSet
         .newBuilder()
         .withNewPassword(newPassword)

@@ -1,23 +1,35 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ed2e252ea3c99a4c908e82f3644859cdecff171687b6da3b579358b3292842aa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 04dbf92725e94aded83af6a1ed8d5e9c8bdf053b
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57162693"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220337"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{unifiedRoleManagementPolicyRuleId}"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/policies/roleManagementPolicies/DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9/rules/Expiration_EndUser_Assignment"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphUnifiedRoleManagementPolicyRule *unifiedRoleManagementPolicyRule = [[MSGraphUnifiedRoleManagementPolicyRule alloc] init];
+[unifiedRoleManagementPolicyRule setId:@"Expiration_EndUser_Assignment"];
+[unifiedRoleManagementPolicyRule setIsExpirationRequired: true];
+[unifiedRoleManagementPolicyRule setMaximumDuration:@"PT1H45M"];
 MSGraphUnifiedRoleManagementPolicyRuleTarget *target = [[MSGraphUnifiedRoleManagementPolicyRuleTarget alloc] init];
+[target setCaller:@"EndUser"];
+NSMutableArray *operationsList = [[NSMutableArray alloc] init];
+[operationsList addObject: @"All"];
+[target setOperations:operationsList];
+[target setLevel:@"Assignment"];
+NSMutableArray *inheritableSettingsList = [[NSMutableArray alloc] init];
+[target setInheritableSettings:inheritableSettingsList];
+NSMutableArray *enforcedSettingsList = [[NSMutableArray alloc] init];
+[target setEnforcedSettings:enforcedSettingsList];
 [unifiedRoleManagementPolicyRule setTarget:target];
 
 NSError *error;

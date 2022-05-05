@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f9fa6b861ab32dce7c96660615a77c29583cb782d176fc6c74561ec658730a02
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cb3d1455c0fb875ea4d7d65f7e260c61e80585e0
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57273825"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220303"
 ---
 ```objc
 
@@ -28,6 +28,10 @@ payloadDictionary[@"mediaConfig"] = mediaConfig;
 NSMutableArray *acceptedModalitiesList = [[NSMutableArray alloc] init];
 [acceptedModalitiesList addObject: @"audio"];
 payloadDictionary[@"acceptedModalities"] = acceptedModalitiesList;
+
+MSGraphIncomingCallOptions *callOptions = [[MSGraphIncomingCallOptions alloc] init];
+[callOptions setIsContentSharingNotificationEnabled: true];
+payloadDictionary[@"callOptions"] = callOptions;
 
 int32_t participantCapacity = 200;
 payloadDictionary[@"participantCapacity"] = participantCapacity;

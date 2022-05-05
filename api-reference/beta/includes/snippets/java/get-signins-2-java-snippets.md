@@ -1,22 +1,20 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8a9a21dbd57d2aa510f2a97f83c6e1a429f491af
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 40a23176dd4322b9a9aaf6b51a674736d947bf06
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095915"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220307"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("top", "10"));
-
 SignInCollectionPage signIns = graphClient.auditLogs().signIns()
-    .buildRequest( requestOptions )
+    .buildRequest()
     .filter("startsWith(appDisplayName,'Azure')")
+    .top(10)
     .get();
 
 ```

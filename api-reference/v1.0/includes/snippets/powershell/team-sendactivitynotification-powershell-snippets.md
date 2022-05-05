@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 77e68a3d50a0ecbd21991bce1abc51e5acf5986e
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: ea713d3c783872645b588b6e1770d291d574fb02
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339930"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220268"
 ---
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
     Topic = @{
@@ -21,6 +21,10 @@ $params = @{
     PreviewText = @{
         Content = "New deployment requires your approval"
     }
+    Recipient = @{
+        "@odata.type" = "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient"
+        UserId = "569363e2-4e49-4661-87f2-16f245c5d66a"
+    }
     TemplateParameters = @(
         @{
             Name = "deploymentId"
@@ -29,6 +33,6 @@ $params = @{
     )
 }
 
-Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
+Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6c30f519c207fe4128321d9ab036fdeeb4cb90ef
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b643b6e470f74a87f7ef11eae91f0cca1ad4605e
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099380"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220276"
 ---
 ```powershell
 
@@ -13,11 +13,11 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
     "@odata.type" = "#microsoft.graph.mobilityManagementPolicy"
-    ComplianceUrl = "https://portal.mg.contoso.com/?portalAction=Compliance"
-    DiscoveryUrl = "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc"
-    TermsOfUseUrl = "https://portal.mg.contoso.com/TermsofUse.aspx"
+    ComplianceUrl = "https://portal.uem.contoso.com/?portalAction=Compliance"
+    DiscoveryUrl = "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc"
+    TermsOfUseUrl = "https://portal.uem.contoso.com/TermsofUse.aspx"
 }
 
-Update-MgPolicyMobileAppManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
+Update-MgPolicyMobileDeviceManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
 
 ```

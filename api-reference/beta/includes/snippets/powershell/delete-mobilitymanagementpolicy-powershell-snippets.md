@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bb5da8d358b5cd6aabead4a1357904173b62df3f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8194be6f1d93ea8096303b9b0010c500981c8c3f
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099408"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220312"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Remove-MgPolicyMobileDeviceManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId
+Remove-MgPolicyMobileAppManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId
 
 ```

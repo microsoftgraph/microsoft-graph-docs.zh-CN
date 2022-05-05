@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 38441d508accf505eede6bbcc2f6346c5069bcf1
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: c1b50b75465d2cc14c158cca208a36ec5dbaeccf
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61337915"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220296"
 ---
 ```objc
 
@@ -17,9 +17,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAccessPackageAssignmentRequest *accessPackageAssignmentRequest = [[MSGraphAccessPackageAssignmentRequest alloc] init];
-[accessPackageAssignmentRequest setRequestType: [MSGraphAccessPackageRequestType adminRemove]];
+[accessPackageAssignmentRequest setRequestType: [MSGraphAccessPackageRequestType userAdd]];
 MSGraphAccessPackageAssignment *assignment = [[MSGraphAccessPackageAssignment alloc] init];
-[assignment setId:@"a6bb6942-3ae1-4259-9908-0133aaee9377"];
+[assignment setAccessPackageId:@"d7be3253-b9c6-4fab-adef-30d30de8da2b"];
 [accessPackageAssignmentRequest setAssignment:assignment];
 
 NSError *error;

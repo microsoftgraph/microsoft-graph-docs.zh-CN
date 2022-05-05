@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 41554d5f9f053efbd15328cb50a980382e3e8bdb
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: 6edc7c676050670572984016908966dd99d90a2a
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63757908"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220287"
 ---
 ```javascript
 
@@ -16,7 +16,6 @@ const options = {
 const client = Client.init(options);
 
 let bundles = await client.api('/drive/bundles?filter=bundle/album%20ne%20null')
-    .version('beta')
     .filter('bundle/album ne null')
     .get();
 

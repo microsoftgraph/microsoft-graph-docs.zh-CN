@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4c342a72f8423187adac47081f4eedfb3ddb637dd25911e2e3b9d07c6e4817e7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4549b65d4af79ab2712be0f699c7e9ca5660a43c
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57104439"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220263"
 ---
 ```csharp
 
@@ -31,6 +31,10 @@ var call = new Call
     RequestedModalities = new List<Modality>()
     {
         Modality.Audio
+    },
+    CallOptions = new OutgoingCallOptions
+    {
+        IsContentSharingNotificationEnabled = true
     },
     MediaConfig = new ServiceHostedMediaConfig
     {

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f70c86a838ead804031975dad6b33c1f7cd3549c
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 0fefaabbb057267c8c411df3c0a0f85754642b4f
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225012"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220284"
 ---
 ```objc
 
@@ -19,6 +19,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphCloudPcOrganizationSettings *cloudPcOrganizationSettings = [[MSGraphCloudPcOrganizationSettings alloc] init];
 [cloudPcOrganizationSettings setUserAccountType: [MSGraphCloudPcUserAccountType standardUser]];
 [cloudPcOrganizationSettings setOsVersion: [MSGraphCloudPcOperatingSystem windows11]];
+MSGraphCloudPcWindowsSettings *windowsSettings = [[MSGraphCloudPcWindowsSettings alloc] init];
+[windowsSettings setLanguage:@"en-US"];
+[cloudPcOrganizationSettings setWindowsSettings:windowsSettings];
 
 NSError *error;
 NSData *cloudPcOrganizationSettingsData = [cloudPcOrganizationSettings getSerializedDataWithError:&error];

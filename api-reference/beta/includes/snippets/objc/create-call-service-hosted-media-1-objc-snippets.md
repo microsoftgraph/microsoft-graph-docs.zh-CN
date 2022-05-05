@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4fbfa88f8b91722fad52be48ce8cb80b1abcac339498295ef46d1bcfa8b25992
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 95494dbd52eb27ab50c137a599bcd86205d4d725
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161333"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220262"
 ---
 ```objc
 
@@ -31,6 +31,9 @@ MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 NSMutableArray *requestedModalitiesList = [[NSMutableArray alloc] init];
 [requestedModalitiesList addObject: @"audio"];
 [call setRequestedModalities:requestedModalitiesList];
+MSGraphCallOptions *callOptions = [[MSGraphCallOptions alloc] init];
+[callOptions setIsContentSharingNotificationEnabled: true];
+[call setCallOptions:callOptions];
 MSGraphMediaConfig *mediaConfig = [[MSGraphMediaConfig alloc] init];
 [call setMediaConfig:mediaConfig];
 

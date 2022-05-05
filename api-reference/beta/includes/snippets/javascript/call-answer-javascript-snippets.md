@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: af6b3bf4c2cd93177084cbb0e20ba162fb2b9d1dbbaf781536697e4a95096196
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 03ae202e65c8160586ddb0843e3b8c60d583aa58
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163729"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220302"
 ---
 ```javascript
 
@@ -24,6 +24,10 @@ const answer = {
   acceptedModalities: [
     'audio'
   ],
+  callOptions: {
+    '@odata.type': '#microsoft.graph.incomingCallOptions',
+    isContentSharingNotificationEnabled: true
+  },
   participantCapacity: 200
 };
 

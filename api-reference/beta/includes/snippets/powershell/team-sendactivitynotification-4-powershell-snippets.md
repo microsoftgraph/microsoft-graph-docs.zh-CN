@@ -1,34 +1,37 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 77e68a3d50a0ecbd21991bce1abc51e5acf5986e
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 00f0d9106cd5bbe7f291b7e07523559b96af2adf
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340938"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220270"
 ---
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
     Topic = @{
-        Source = "text"
-        Value = "Deployment Approvals Channel"
-        WebUrl = "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000"
+        Source = "entityUrl"
+        Value = "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
     }
-    ActivityType = "deploymentApprovalRequired"
+    ActivityType = "pendingFinanceApprovalRequests"
     PreviewText = @{
-        Content = "New deployment requires your approval"
+        Content = "Internal spending team has a pending finance approval requests"
+    }
+    Recipient = @{
+        "@odata.type" = "microsoft.graph.teamMembersNotificationRecipient"
+        TeamId = "e8bece96-d393-4b9b-b8da-69cedef1a7e7"
     }
     TemplateParameters = @(
         @{
-            Name = "deploymentId"
-            Value = "6788662"
+            Name = "pendingRequestCount"
+            Value = "5"
         }
     )
 }
 
-Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
+Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
 ```

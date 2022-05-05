@@ -1,19 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c9655409e2574ec00d35146acf52488c036b2f6ea906415c0cb505898c9f1908
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4689dd12f8b77e81c0a996205148c92a74fecb47
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57104910"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220255"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String displayName = "My custom name";
+String displayName = "testProperties";
 
-graphClient.applicationTemplates("{id}")
+graphClient.applicationTemplates("8adf8e6e-67b2-4cf2-a259-e3dc5476c621")
     .instantiate(ApplicationTemplateInstantiateParameterSet
         .newBuilder()
         .withDisplayName(displayName)

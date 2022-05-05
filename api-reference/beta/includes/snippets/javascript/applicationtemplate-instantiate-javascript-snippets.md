@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b75aaabe042e9e159f507825b6227dc775024fa925a328d5dbab0cdd9bb1f8de
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 18ac4567523edd734ab0cbcd0d3d3ce96edec147
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161597"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220256"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const applicationServicePrincipal = {
-  displayName: 'My custom name'
+    displayName: 'testProperties'
 };
 
-await client.api('/applicationTemplates/{id}/instantiate')
+await client.api('/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate')
     .version('beta')
     .post(applicationServicePrincipal);
 

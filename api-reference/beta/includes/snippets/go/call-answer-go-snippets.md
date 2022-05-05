@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c322f945fb0de20ce50c092e6c9b818e164c81f6
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 1b6fa6d58c1e9aac3b2ba2bd9b5e933bb326e062
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411920"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220299"
 ---
 ```go
 
@@ -23,6 +23,13 @@ mediaConfig.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetAcceptedModalities( []Modality {
     "audio",
+}
+callOptions := msgraphsdk.NewIncomingCallOptions()
+requestBody.SetCallOptions(callOptions)
+isContentSharingNotificationEnabled := true
+callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled)
+callOptions.SetAdditionalData(map[string]interface{}{
+    "@odata.type": "#microsoft.graph.incomingCallOptions",
 }
 participantCapacity := int32(200)
 requestBody.SetParticipantCapacity(&participantCapacity)
