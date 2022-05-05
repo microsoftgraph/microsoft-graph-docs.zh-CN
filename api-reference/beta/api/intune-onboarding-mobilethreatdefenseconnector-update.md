@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afab05105a150cc0d4e24000e8b3da3a597bb6a9
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 06febd286f3485e23d728a49a1d61752749d58c2
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346848"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211527"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>更新 mobileThreatDefenseConnector
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "61346848"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -55,22 +55,22 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 |:---|:---|:---|
 |id|String|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|从数据同步合作伙伴接收到上一个检测信号的日期/时间|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|数据同步帐户的合作伙伴状态。 可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。|
-|androidMobileApplicationManagementEnabled|布尔|对于 Android，设置数据同步合作伙伴的数据是否应该在移动应用管理或 MAM (过程中) 评估。 每个平台只能为一个合作伙伴启用移动应用管理 (MAM) 评估。|
-|iosMobileApplicationManagementEnabled|Boolean|对于 IOS，获取或设置是否在移动应用管理期间使用来自数据同步合作伙伴的数据 (MAM) 评估。 每个平台只能为一个合作伙伴启用移动应用管理 (MAM) 评估。|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|数据同步此帐户的合作伙伴状态。 可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。|
+|androidMobileApplicationManagementEnabled|Boolean|对于 Android，请设置是否应在移动应用程序管理 (MAM) 评估期间使用来自数据同步伙伴的数据。 对于移动应用程序管理 (MAM) 评估，每个平台只能启用一个合作伙伴。|
+|iosMobileApplicationManagementEnabled|Boolean|对于 IOS，获取或设置是否应在移动应用程序管理 (MAM) 评估期间使用来自数据同步伙伴的数据。 对于移动应用程序管理 (MAM) 评估，每个平台只能启用一个合作伙伴。|
 |androidEnabled|Boolean|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
 |iosEnabled|Boolean|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
-|windowsEnabled|Boolean|For Windows， get or set whether data sync partner from data should be used during compliance evaluations|
-|macEnabled|布尔|对于 Mac，获取或设置是否在合规性评估期间使用来自数据同步合作伙伴的数据|
+|windowsEnabled|Boolean|对于Windows，获取或设置是否应在符合性评估期间使用来自数据同步伙伴的数据|
+|macEnabled|Boolean|对于 Mac，获取或设置是否应在符合性评估期间使用来自数据同步伙伴的数据|
 |androidDeviceBlockedOnMissingPartnerData|Boolean|对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
 |iosDeviceBlockedOnMissingPartnerData|Boolean|对于 iOS 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
-|windowsDeviceBlockedOnMissingPartnerData|Boolean|对于Windows，设置 Intune 是否必须在将设备标记为兼容之前从数据同步合作伙伴接收数据|
-|macDeviceBlockedOnMissingPartnerData|布尔|对于 Mac，获取或设置 Intune 是否必须在将设备标记为兼容之前从数据同步合作伙伴接收数据|
+|windowsDeviceBlockedOnMissingPartnerData|Boolean|对于Windows，设置Intune是否必须从数据同步伙伴接收数据，然后再标记符合设备的要求|
+|macDeviceBlockedOnMissingPartnerData|Boolean|对于 Mac，获取或设置Intune在标记符合设备之前是否必须从数据同步伙伴接收数据|
 |partnerUnsupportedOsVersionBlocked|Boolean|获取或设置是否阻止不符合数据同步合作伙伴最低版本要求的启用平台上的设备|
 |partnerUnresponsivenessThresholdInDays|Int32|获取或设置每个租户允许此合作伙伴集成不响应的天数|
-|allowPartnerToCollectIOSApplicationMetadata|布尔|对于 IOS 设备，允许管理员配置数据同步合作伙伴是否还可以从 Intune 收集有关已安装应用程序的元数据|
-|allowPartnerToCollectIOSPersonalApplicationMetadata|Boolean|对于 IOS 设备，允许管理员配置数据同步合作伙伴是否还可以从 Intune 收集有关个人安装的应用程序的元数据|
-|microsoftDefenderForEndpointAttachEnabled|布尔|如果为 TRUE，则启用通过 Microsoft Defender for Endpoint 的配置文件管理。 如果为 FALSE，则禁用通过 Microsoft Defender for Endpoint 的配置文件管理。|
+|allowPartnerToCollectIOSApplicationMetadata|Boolean|对于 IOS 设备，允许管理员配置数据同步伙伴是否也可以从Intune收集有关已安装应用程序的元数据|
+|allowPartnerToCollectIOSPersonalApplicationMetadata|Boolean|对于 IOS 设备，允许管理员配置数据同步伙伴是否也可以从Intune收集有关个人安装的应用程序的元数据|
+|microsoftDefenderForEndpointAttachEnabled|Boolean|如果为 TRUE，则启用通过Microsoft Defender for Endpoint的配置文件管理。 如果为 FALSE，则禁用通过Microsoft Defender for Endpoint的配置文件管理。|
 
 
 

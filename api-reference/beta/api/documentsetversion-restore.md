@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: de3a44018bffc3040ab1da2819be1d189ae5c3de
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 3a000fa0d7add3c225f545bde24dcf5983e8a7e9
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65061182"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205988"
 ---
 # <a name="documentsetversion-restore"></a>documentSetVersion：restore
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "65061182"
 |:---|:---|
 |委派（工作或学校帐户）|Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All、Sites.Selected|
+|Application|Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All、Sites.Selected|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,6 +56,8 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions/{document
 
 请求示例如下所示。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "documentsetversionthis.restore"
@@ -64,6 +66,28 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions/{document
 ``` http
 POST https://graph.microsoft.com/beta/sites/root/lists/Documents/items/2/documentSetVersions/1/restore
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/documentsetversionthisrestore-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/documentsetversionthisrestore-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/documentsetversionthisrestore-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/documentsetversionthisrestore-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/documentsetversionthisrestore-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

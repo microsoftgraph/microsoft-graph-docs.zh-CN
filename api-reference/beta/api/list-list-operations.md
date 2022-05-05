@@ -1,23 +1,23 @@
 ---
 title: 列举操作
-description: 获取与列表关联的 richLongRunningOperations 列表。
+description: 获取与列表关联的 richLongRunningOperations 的列表。
 author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 01e4cdd6130ee2d412cd53d5683a690e63fd07fb
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: be2cab5c08ecc7743b5947836b4ad6c1cf6c1010
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262202"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211380"
 ---
 # <a name="list-operations"></a>列举操作
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取与列表关联的 [richLongRunningOperations](../resources/richlongrunningoperation.md) [列表](../resources/list.md)。
+获取与列表关联的 [richLongRunningOperations](../resources/richlongrunningoperation.md) [的列表](../resources/list.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "62262202"
 |:---|:---|
 |委派（工作或学校帐户）|Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
+|Application|Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /sites/{siteId}/lists/{listId}/operations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [richLongRunningOperation](../resources/richlongrunningoperation.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [richLongRunningOperation](../resources/richlongrunningoperation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-richlongrunningoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-richlongrunningoperation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

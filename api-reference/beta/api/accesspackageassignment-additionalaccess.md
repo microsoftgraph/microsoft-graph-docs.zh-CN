@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bb5bc9c0b6d55f4bf93e57cbbdb852d5bd109b8f
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 6aac3e2ac4ecb3c539a24bf8fa730641e2fa09e1
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134573"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203781"
 ---
 # <a name="accesspackageassignment-additionalaccess"></a>accessPackageAssignment：additionalAccess
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "65134573"
 |:---|:---|
 |委派（工作或学校帐户）|EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -43,8 +43,8 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/additiona
 
 |参数|类型|说明|
 |:---|:---|:---|
-| accessPackageId | String |  指示调用方要为其检索分配的访问包的 ID。 必需。 |
-| incompatibleAccessPackageId | String | 特定的不兼容访问包，调用方希望仅检索用户还具有此不兼容访问包的分配的分配。 必需。 |
+| accessPackageId | String |  指示调用方要为其检索分配的访问包的 ID。 必填。 |
+| incompatibleAccessPackageId | String | 特定的不兼容访问包，调用方希望仅检索用户还具有此不兼容访问包的分配的分配。 必填。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -70,6 +70,8 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/additiona
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackageassignment_additionalaccess"
@@ -78,6 +80,32 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/additiona
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments/additionalAccess(accessPackageId='2506aef1-3929-4d24-a61e-7c8b83d95e6f',incompatibleAccessPackageId='d5d99728-8c0b-4ede-83d2-cf9b0e8dabfb')?$expand=target
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accesspackageassignment-additionalaccess-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackageassignment-additionalaccess-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accesspackageassignment-additionalaccess-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignment-additionalaccess-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignment-additionalaccess-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackageassignment-additionalaccess-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

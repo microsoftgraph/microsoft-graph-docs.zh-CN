@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 29f985d26e5c69ee7a7dd1dfc8d30f743c3c6fa3
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 2d279732025e39af5081104832138b542c68ba52
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64630756"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210848"
 ---
 # <a name="create-operationapprovalrequest"></a>创建 operationApprovalRequest
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "64630756"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -47,27 +47,27 @@ POST /deviceManagement/operationApprovalRequests
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 operationApprovalRequest 对象的 JSON 表示形式。
+在请求正文中，为 operationApprovalRequest 对象提供 JSON 表示形式。
 
-下表显示创建 operationApprovalRequest 时所需的属性。
+下表显示了创建 operationApprovalRequest 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的 ID|
 |requestDateTime|DateTimeOffset|请求的 DateTime。 此属性是只读的。|
-|expirationDateTime|DateTimeOffset|不再允许对请求执行操作的日期/时间。 此属性是只读的。|
-|lastModifiedDateTime|DateTimeOffset|上次修改日期时间。 此属性是只读的。|
-|requestor|[identitySet](../resources/intune-rbac-identityset.md)|请求者的身份。 此属性是只读的。|
-|审批者|[identitySet](../resources/intune-rbac-identityset.md)|审批者的身份。 此属性是只读的。|
-|状态|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|当前审批请求状态。 此属性是只读的。 可取值为：`unknown`、`needsApproval`、`approved`、`rejected`、`cancelled`、`completed` 或 `expired`。|
+|expirationDateTime|DateTimeOffset|不再允许对请求执行操作的 DateTime。 此属性是只读的。|
+|lastModifiedDateTime|DateTimeOffset|上次修改的 DateTime。 此属性是只读的。|
+|请求|[identitySet](../resources/intune-rbac-identityset.md)|请求方的标识。 此属性是只读的。|
+|审批者|[identitySet](../resources/intune-rbac-identityset.md)|审批者的标识。 此属性是只读的。|
+|状态|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|当前审批请求状态。 此属性是只读的。 可取值为：`unknown`、`needsApproval`、`approved`、`rejected`、`cancelled`、`completed`、`expired`、`unknownFutureValue`。|
 |requestJustification|String|请求理由。 此属性是只读的。|
-|approvalJustification|String|批准请求的理由。 此属性是只读的。|
+|approvalJustification|字符串|请求批准的理由。 此属性是只读的。|
 |operationApprovalPolicies|String|请求中使用的操作审批策略。 此属性是只读的。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 [响应代码和 operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) 对象。
 
 ## <a name="example"></a>示例
 

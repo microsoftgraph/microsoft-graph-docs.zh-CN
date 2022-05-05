@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d2f512c760d0c9d50e8089420ed6c4676bb34ab8
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: ef409744ee99cbf39648252b3d192fb235060943
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589455"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211282"
 ---
 # <a name="create-settings"></a>创建设置
 
@@ -18,9 +18,9 @@ ms.locfileid: "64589455"
 
 基于 [groupSettingTemplates](../resources/groupsettingtemplate.md) 中可用的模板创建新设置。 这些设置可以在租户级别或组级别。
 
-组设置仅适用于Microsoft 365组。 名为 的`Group.Unified`模板可用于配置租户范围的Microsoft 365组设置`Group.Unified.Guest`，而名为 的模板可用于配置特定于组的设置。
+组设置仅适用于Microsoft 365组。 命名`Group.Unified`的模板可用于配置租户范围的Microsoft 365组设置，而命名`Group.Unified.Guest`的模板可用于配置特定于组的设置。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "64589455"
 
 ## <a name="http-request"></a>HTTP 请求
 
-创建租户范围设置。
+创建租户范围的设置。
 
 <!-- { "blockType": "ignored" } -->
 
@@ -48,7 +48,7 @@ POST /groupSettings
 POST /groups/{id}/settings
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
@@ -57,24 +57,24 @@ POST /groups/{id}/settings
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [groupSetting](../resources/groupsetting.md) 对象的 JSON 表示形式。 the 显示名称， templateId， and description are inherited from the referenced [groupSettingTemplates](../resources/groupsettingtemplate.md) object. 只能从默认值更改 value 属性。
+在请求正文中，提供 [groupSetting](../resources/groupsetting.md) 对象的 JSON 表示形式。 显示名称、模板Id 和说明继承自引用的 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象。 只能从默认值更改值属性。
 
-创建 [groupSetting](../resources/groupsetting.md) 对象时，需要以下属性。
+创建 [groupSetting](../resources/groupsetting.md) 对象时需要以下属性。
 
 | 参数  | 类型                                                    | 说明                                                                                                                                                                          |
 | :--------- | :------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| templateId | String                                                  | 用于创建此组级别设置对象的租户级别的 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象的唯一标识符。 只读。              |
-| values     | [settingValue](../resources/settingvalue.md) 集合 | 与引用的 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象中的 **name** 和 **defaultValue** 属性对应的名称-值对的集合。 |
+| templateId | 字符串                                                  | 用于创建此组级设置对象的租户级 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象的唯一标识符。 只读。              |
+| values     | [settingValue](../resources/settingvalue.md) 集合 | 与引用的 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象中的名称和 **defaultValue** 属性对应的 **名称**-值对的集合。 |
 
 ## <a name="response"></a>响应
 
 如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [groupSetting](../resources/groupsetting.md) 对象。
 
-## <a name="example-1-create-a-new-setting-for-all-microsoft-365-groups-in-the-tenant"></a>示例 1：为租户中Microsoft 365组创建新设置
+## <a name="example-1-create-a-new-setting-for-all-microsoft-365-groups-in-the-tenant"></a>示例 1：为租户中的所有Microsoft 365组创建新设置
 
 ### <a name="request"></a>请求
 
-只有[名为 的 groupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified` 对象才能应用于租户Microsoft 365组的所有组。
+只有命名`Group.Unified`的 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象才能应用于租户级别的所有Microsoft 365组。
 
 # <a name="http"></a>[HTTP](#tab/http)
 
@@ -111,27 +111,27 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -177,13 +177,13 @@ Content-type: application/json
 }
 ```
 
-**displayName** 属性和其他名称-值对将用与 templateId 匹配的 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象的 **默认值填充**。
+**displayName** 属性和其他名称值对将填充与 **templateId** 匹配的 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象中的默认值。
 
-## <a name="example-2-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>示例 2：创建用于阻止特定组来宾Microsoft 365设置
+## <a name="example-2-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>示例 2：创建用于阻止特定Microsoft 365组的来宾的设置
 
 ### <a name="request"></a>请求
 
-只有[名为 的 groupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified.Guest` 对象才能应用于特定的Microsoft 365组。
+只有命名`Group.Unified.Guest`的 [groupSettingTemplates](../resources/groupsettingtemplate.md) 对象才能应用于特定Microsoft 365组。
 
 # <a name="http"></a>[HTTP](#tab/http)
 
@@ -208,27 +208,27 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-for-guests-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-for-guests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-for-guests-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-for-guests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-for-guests-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-for-guests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-for-guests-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-for-guests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

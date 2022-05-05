@@ -1,46 +1,26 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 898fd9094b6cdb1660ac2c8ead3ad7150c4e3783
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 68c925a8b2302859cb597af1f62ed5fc36b92853
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767312"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212078"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var schemaExtension = new SchemaExtension
+var user = new User
 {
-    Owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
-    Properties = new List<ExtensionSchemaProperty>()
+    AdditionalData = new Dictionary<string, object>()
     {
-        new ExtensionSchemaProperty
-        {
-            Name = "courseId",
-            Type = "Integer"
-        },
-        new ExtensionSchemaProperty
-        {
-            Name = "courseName",
-            Type = "String"
-        },
-        new ExtensionSchemaProperty
-        {
-            Name = "courseType",
-            Type = "String"
-        },
-        new ExtensionSchemaProperty
-        {
-            Name = "courseSupervisors",
-            Type = "String"
-        }
+        {"ext55gb1l09_msLearnCourses", "{\"courseType\":\"Admin\"}"}
     }
 };
 
-await graphClient.SchemaExtensions["{schemaExtension-id}"]
+await graphClient.Users["{user-id}"]
     .Request()
-    .UpdateAsync(schemaExtension);
+    .UpdateAsync(user);
 
 ```

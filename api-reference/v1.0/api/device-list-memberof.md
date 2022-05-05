@@ -1,22 +1,22 @@
 ---
 title: 列出设备组
-description: 获取此设备直接成员所参与的组。 此操作不可传递。
+description: 获取此设备是其直接成员的组。 此操作不可传递。
 author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3e4efd6250c129b125d8d0ea6069f1a28e58a27c
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: a7a8321c12f3fb31c7daef3e79c2f4f9da82d353
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672607"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209765"
 ---
 # <a name="list-device-groups"></a>列出设备组
 
 命名空间：microsoft.graph
 
-获取此设备直接成员所参与的组。 此操作不可传递。
+获取此设备是其直接成员的组。 此操作不可传递。
 
 ## <a name="permissions"></a>Permissions
 
@@ -26,7 +26,7 @@ ms.locfileid: "63672607"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|Application | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -37,7 +37,7 @@ GET /devices/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$search`、`$count` 和`$filter` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。 OData 转换也已启用，例如，你可以转换以仅获取设备是其中一个成员的 directoryRoles。 可使用“**displayName**”和“**说明**”属性上的`$search`。
+此方法支持使用 `$search`、`$count` 和`$filter` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。 OData 强制转换也已启用，例如，可以强制转换以仅获取设备所属的 directoryRoles。 可使用“**displayName**”和“**说明**”属性上的`$search`。
 
 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
@@ -48,7 +48,7 @@ GET /devices/{id}/memberOf
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| ConsistencyLevel | 最终。 使用 、`$count`OData 转换`$filter`参数`$search`或特定用途时，需要此标头 和 。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。 |
+| ConsistencyLevel | 最终。 此标头， `$count` 在使用 `$search`OData 强制转换参数时或在特定用法中是必需的 `$filter`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -59,7 +59,7 @@ GET /devices/{id}/memberOf
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-groups-that-the-device-is-a-direct-member-of"></a>示例 1：获取设备是其直接成员
+### <a name="example-1-get-groups-that-the-device-is-a-direct-member-of"></a>示例 1：获取设备是其直接成员的组
 
 #### <a name="request"></a>请求
 
@@ -148,7 +148,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response"
@@ -160,7 +160,7 @@ Content-type: text/plain
 394
 ```
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取包含字母"Video"（包括返回对象计数）的显示名称的成员资格
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 强制转换和$search以包含字母“Video”的显示名称（包括返回的对象计数）获取成员身份
 
 #### <a name="request"></a>请求
 
@@ -204,20 +204,44 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换$filter获取以字母"A"开头显示名称包含返回对象计数的组成员身份
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 强制转换和$filter获取以字母“A”开头的显示名称的成员身份，包括返回的对象计数
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_devices_memberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'A')
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-devices-memberof-startswith-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-devices-memberof-startswith-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-devices-memberof-startswith-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-devices-memberof-startswith-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-devices-memberof-startswith-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

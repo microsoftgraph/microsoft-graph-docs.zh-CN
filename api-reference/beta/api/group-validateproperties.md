@@ -1,31 +1,31 @@
 ---
-title: group： validateProperties
-description: 验证用户Microsoft 365或邮件昵显示名称是否符合命名策略。
+title: group：validateProperties
+description: 验证Microsoft 365组的显示名称或邮件昵称是否符合命名策略。
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 88c162ad3aa40aa4ed6c6a293afeef3a6470f66d
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 9c8da32a04195e42b97562705551af3e0326ce42
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588391"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203041"
 ---
-# <a name="group-validateproperties"></a>group： validateProperties
+# <a name="group-validateproperties"></a>group：validateProperties
 
 命名空间：microsoft.graph
 
-验证用户Microsoft 365或邮件昵显示名称是否符合命名策略。 客户端可以使用 API 确定显示名称或邮件昵称是否有效，然后再尝试更新Microsoft 365组。 若要在创建组之前验证属性，请对目录 [对象使用 validateProperties](directoryobject-validateproperties.md) 函数。
+验证Microsoft 365组的显示名称或邮件昵称是否符合命名策略。 在尝试 **更新** Microsoft 365组之前，客户端可以使用 API 来确定显示名称或邮件昵称是否有效。 若要在创建组之前验证属性，请对目录对象使用 [validateProperties](directoryobject-validateproperties.md) 函数。
 
-对邮件和邮件昵称显示名称执行以下验证：
+对显示名称和邮件昵称属性执行以下验证：
 
 1. 验证前缀和后缀命名策略
-2. 验证自定义禁止字策略
+2. 验证自定义禁止字词策略
 
-此 API 返回遇到的第一个故障。 如果一个或多个属性未能通过多次验证，则仅返回第一个验证失败的属性。 但是，如果您仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。
+此 API 返回时遇到第一个故障。 如果一个或多个属性的多个验证失败，则仅返回第一个验证失败的属性。 但是，如果仅验证前缀和后缀命名策略，则可以验证邮件昵称和显示名称，并接收验证错误的集合。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,21 +56,21 @@ POST /groups/{id}/validateProperties
 
 | 参数        | 类型   | 说明                                                                                                                                                      |
 | :--------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | String | 要显示名称组的成员。 属性不单独是必需的。 但是，至少需要一 (displayName 或 mailNickname) 属性。  |
-| mailNickname     | String | 要验证的组的邮件昵称。 属性不单独是必需的。 但是，至少需要一 (displayName 或 mailNickname) 属性。 |
+| displayName      | String | 要验证的组的显示名称。 属性不是单独必需的。 但是，至少需要一个属性 (displayName 或 mailNickname) 。  |
+| mailNickname     | String | 要验证的组的邮件昵称。 属性不是单独必需的。 但是，至少需要一个属性 (displayName 或 mailNickname) 。 |
 | onBehalfOfUserId | Guid   | 调用 API 时要模拟的用户的对象 ID。 验证结果适用于 onBehalfOfUserId 的属性和角色。                       |
 
 ## <a name="response"></a>响应
 
-如果成功且没有验证错误，该方法将返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。
+如果成功且没有验证错误，则该方法将返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。
 
-如果请求无效，该方法将返回 `400 Bad Request` 响应代码。 响应正文中返回一条错误消息，包含有关无效请求的详细信息。
+如果请求无效，该方法将返回 `400 Bad Request` 响应代码。 响应正文中将返回一条错误消息，其中包含有关无效请求的详细信息。
 
-如果存在验证错误。 方法返回 响应 `422 Unprocessable Entity` 代码。 响应正文中返回错误消息和错误详细信息集合。
+如果出现验证错误。 该方法返回 `422 Unprocessable Entity` 响应代码。 响应正文中返回错误消息和错误详细信息集合。
 
 ## <a name="examples"></a>示例
 
-这是成功验证请求的一个示例。
+这是成功验证请求的示例。
 
 ### <a name="request"></a>请求
 
@@ -93,32 +93,32 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/group-validateproperties-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-validateproperties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-validateproperties-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-validateproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -135,7 +135,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-这是一个出现验证错误的请求示例。
+这是具有验证错误的请求的示例。
 
 ### <a name="request"></a>请求
 

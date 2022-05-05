@@ -1,16 +1,16 @@
 ---
 title: 列出 microsoftApplicationDataAccessSettings
-description: 获取 microsoftApplicationDataAccessSettings 对象中的设置，该对象指定从 Microsoft 应用程序访问Microsoft 365组织的用户数据。
+description: 获取 microsoftApplicationDataAccessSettings 对象中的设置，该对象指定从 Microsoft 应用程序Microsoft 365组织中用户数据的访问权限。
 author: ttomi
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 01b0f53b99eaff9abf62b36c8247be44cf5c94e7
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: f5a13e06466c759d9cd74bc1a089a3e935285a9b
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589591"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205694"
 ---
 # <a name="list-microsoftapplicationdataaccesssettings"></a>列出 microsoftApplicationDataAccessSettings
 
@@ -18,9 +18,9 @@ ms.locfileid: "64589591"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) 对象中的设置，该对象指定从 Microsoft 应用程序访问以Microsoft 365组织的用户数据。
+获取 [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) 对象中的 _设置_，该对象指定从 Microsoft 应用程序Microsoft 365组织中用户数据的访问权限。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,11 +52,13 @@ GET /organization/{organizationId}/settings/microsoftApplicationDataAccess
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_microsoftapplicationdataaccesssettings"
@@ -65,6 +67,32 @@ GET /organization/{organizationId}/settings/microsoftApplicationDataAccess
 ``` http
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/microsoftApplicationDataAccess
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-microsoftapplicationdataaccesssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-microsoftapplicationdataaccesssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-microsoftapplicationdataaccesssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-microsoftapplicationdataaccesssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-microsoftapplicationdataaccesssettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-microsoftapplicationdataaccesssettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -89,4 +117,4 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-[自定义组织的项目](/graph/insights-customize-item-insights-privacy) 见解隐私。
+[为组织自定义项见解隐私](/graph/insights-customize-item-insights-privacy) 。

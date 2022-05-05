@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: ”列表”资源代表网站中的列表。
 doc_type: resourcePageType
-ms.openlocfilehash: f57507bc75e4e672e0799ac5b0758db5cf16fda6
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 2de3af4c781ad325b59eeb9dff762c47a23dff20
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854492"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191645"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -35,6 +35,7 @@ ms.locfileid: "62854492"
 | [删除列表项][]      | DELETE /lists/{list-id}/items/{item-id}
 | [创建列表项][]      | POST /lists/{list-id}
 | [获取 WebSocket 频道][] | GET /lists/{list-id}/subscriptions/socketIo
+| [列举操作](../api/list-list-operations.md)| GET /lists/{list-id}/operations
 
 [获取列表]: ../api/list-get.md
 [创建列表]: ../api/list-create.md
@@ -80,6 +81,7 @@ ms.locfileid: "62854492"
 | **项目**         | Collection([listItem][])         | 列表中包含的所有项。
 | **columns**       | Collection([columnDefinition][]) | 此列表的字段定义集合。
 | **contentTypes**  | Collection([contentType][])      | 此列表中出现的内容类型的集合。
+| **operations** | [richLongRunningOperation](../resources/richlongrunningoperation.md) 集合 | 列表上长时间运行操作的集合。 
 | **订阅** | 集合（[订阅][]）     | 列表上的订阅集。
 
 [baseItem]: baseitem.md
@@ -123,6 +125,7 @@ ms.locfileid: "62854492"
     "hidden": false,
     "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
+  "operations": [ { "@odata.type": "microsoft.graph.richLongRunningOperation" }],
   "system": false,
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
 

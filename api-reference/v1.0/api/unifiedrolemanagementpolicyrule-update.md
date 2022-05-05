@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9c082c138b0846635773822ce0f3976e99a62066
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: a32f562a86ed72d8da728973ca6c5b5a5db7fcbb
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134081"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65204411"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>更新 unifiedRoleManagementPolicyRule
 命名空间：microsoft.graph
@@ -29,7 +29,7 @@ ms.locfileid: "65134081"
 |:---|:---|
 |委派（工作或学校帐户）|RoleManagementPolicy.ReadWrite.Directory、RoleManagement.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,16 +53,16 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{un
 
 |属性|类型|说明|
 |:---|:---|:---|
-|claimValue|String|身份验证上下文声明的值。 <br/><br/>可以针对 **unifiedRoleManagementPolicyAuthenticationContextRule** 规则类型进行更新。|
+|claimValue|字符串|身份验证上下文声明的值。 <br/><br/>可以针对 **unifiedRoleManagementPolicyAuthenticationContextRule** 规则类型进行更新。|
 |enabledRules|字符串集合|为此策略规则启用的规则的集合。 例如，`MultiFactorAuthentication``Ticketing`和 `Justification`.<br/><br/>可以针对 **unifiedRoleManagementPolicyEnablementRule** 规则类型进行更新。|
 |isDefaultRecipientsEnabled|Boolean|指示默认收件人是否会收到通知电子邮件。<br/><br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
 |isEnabled|Boolean| 是否启用此规则。 <br/><br/>可以针对 **unifiedRoleManagementPolicyAuthenticationContextRule** 规则类型进行更新。|
 |isExpirationRequired|Boolean|指示是否需要过期，或者它是永久活动分配还是资格。 <br/><br/>可以针对 **unifiedRoleManagementPolicyExpirationRule** 规则类型进行更新。|
 |maximumDuration|期限| 资格或分配所允许的最长持续时间不是永久性的。 如果 **isExpirationRequired** 为 .，则 `true`为必需。 <br/><br/>可以针对 **unifiedRoleManagementPolicyExpirationRule** 规则类型进行更新。 |
-|notificationLevel|String|通知级别。 可能的值是 `None`， `Critical`. `All`<br/><br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
+|notificationLevel|字符串|通知级别。 可能的值是 `None`， `Critical`. `All`<br/><br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
 |notificationRecipients|字符串集合|电子邮件通知的收件人列表。<br/><br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
 |notificationType|String|通知的类型。 仅 `Email` 支持。<br/><br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
-|recipientType|String|通知的收件人的类型。 可能的值是 `Requestor`， `Approver`. `Admin`<br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
+|recipientType|字符串|通知的收件人的类型。 可能的值是 `Requestor`， `Approver`. `Admin`<br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
 |setting|[approvalSettings](../resources/approvalsettings.md)|用于批准角色分配的设置。 <br/><br/>可以针对 **unifiedRoleManagementPolicyApprovalRule** 规则类型进行更新。|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|定义角色管理策略规则所针对的范围的详细信息。 详细信息可以包括主体类型、角色分配类型和影响角色的操作。 <br/><br/> 可以针对所有规则类型进行更新。|
 
@@ -77,6 +77,8 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{un
 ### <a name="request"></a>请求
 
 以下示例更新 **unifiedRoleManagementPolicyExpirationRule** 类型的角色管理策略规则，并且 ID 为 `Expiration_EndUser_Assignment`。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_unifiedrolemanagementpolicyrule"
@@ -103,6 +105,28 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedrolemanagementpolicyrule-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedrolemanagementpolicyrule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-unifiedrolemanagementpolicyrule-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementpolicyrule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicyrule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

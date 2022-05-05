@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 871755979904dfa05156c814911a40b43a177914
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: c778b6bf713bafd3199d7fa2fe8743ecdca4bf19
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133915"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206681"
 ---
 # <a name="create-unifiedroleeligibilityschedulerequest"></a>创建 unifiedRoleEligibilityScheduleRequest
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "65133915"
 |:---|:---|
 |委派（工作或学校帐户）|RoleEligibilitySchedule.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|RoleAssignmentSchedule.ReadWrite.Directory|
+|Application|RoleAssignmentSchedule.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,8 +54,8 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 |directoryScopeId|String|表示角色资格范围的目录对象的标识符。 角色资格的范围决定了向主体授予访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。 需要 **directoryScopeId** 或 **appScopeId** 。|
 |isValidationOnly|Boolean|确定调用是验证还是实际调用。 仅当要在实际提交请求之前检查激活是否受 MFA 等其他规则约束时，才设置此属性。 可选。|
 |理由|String|用户和管理员在创建 **统一RoleEligibilityScheduleRequest** 对象时提供的消息。 操作 **为 {** a0 时为 `adminRemove`可选。|
-|principalId|String|已授予角色资格的主体的标识符。 必需。|
-|roleDefinitionId|String|分配给主体的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的标识符。 必需。|
+|principalId|字符串|已授予角色资格的主体的标识符。 必填。|
+|roleDefinitionId|字符串|分配给主体的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的标识符。 必填。|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|角色资格的期限。 当前不支持定期计划。 操作 **为 {** a0 时为 `adminRemove`可选。|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|与角色资格请求链接的票证详细信息，包括票证编号和票证系统的详细信息。 可选|
 
@@ -69,6 +69,8 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 ### <a name="example-1-admin-to-assign-a-role-eligibility-schedule-request"></a>示例 1：管理员分配角色资格计划请求
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleeligibilityschedulerequest_from_"
@@ -93,6 +95,28 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleeligibilityschedulerequest-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleeligibilityschedulerequest-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleeligibilityschedulerequest-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleeligibilityschedulerequest-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleeligibilityschedulerequest-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应
@@ -152,6 +176,8 @@ Content-Type: application/json
 在以下请求中，管理员会创建一个请求，以撤销 ID 为 ID `071cc716-8147-4397-a5ba-b2105951cc0b` 角色 `8424c6f0-a189-499e-bbd0-26c1753c96d4`的主体的资格。
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleeligibilityschedulerequest_from_unifiedroleeligibilityschedulerequests_adminRemove"
@@ -168,11 +194,37 @@ Content-Type: application/json
     "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 响应对象显示主体的先前角色资格。`Revoked` 主体将不再看到其以前符合条件的角色。
+下面介绍响应示例。 响应对象显示主体的先前角色资格。`Revoked` 主体将不再看到其以前符合条件的角色。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

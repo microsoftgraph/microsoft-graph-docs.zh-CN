@@ -5,12 +5,12 @@ author: jaLuthra
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f1e97e0be8cea61fa76b225159e22ad319c042d1
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: d516f6f530041d662f6818d5f8d832762678b038
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917849"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65208883"
 ---
 # <a name="driveitem-extractsensitivitylabels"></a>driveItem： extractSensitivityLabels
 命名空间：microsoft.graph
@@ -77,10 +77,22 @@ POST /users/{user-id}/drive/root:/{item-path}/extractSensitivityLabels
 
 请求示例如下所示。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "extract-sensitivitylabels", "tags": "service.graph" } -->
 ``` http
 POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/extractSensitivityLabels
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extract-sensitivitylabels-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/extract-sensitivitylabels-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

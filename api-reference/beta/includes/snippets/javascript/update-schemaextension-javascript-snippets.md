@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 92aa0dad46de860682cdcfdea4bd0cac19ff260c
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 47dfda0b992cb5c4cb1527da2cd80a7f3a97382d
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767308"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212084"
 ---
 ```javascript
 
@@ -15,30 +15,14 @@ const options = {
 
 const client = Client.init(options);
 
-const schemaExtension = {
-    owner: 'ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa',
-    properties: [
-        {
-            name: 'courseId',
-            type: 'Integer'
-        },
-        {
-            name: 'courseName',
-            type: 'String'
-        },
-        {
-            name: 'courseType',
-            type: 'String'
-        },
-        {
-            name: 'courseSupervisors',
-            type: 'String'
-        }
-    ]
+const user = {
+    ext55gb1l09_msLearnCourses: {
+        courseType: 'Admin'
+    }
 };
 
-await client.api('/schemaExtensions/exto6x7sfft_courses')
+await client.api('/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e')
     .version('beta')
-    .update(schemaExtension);
+    .update(user);
 
 ```

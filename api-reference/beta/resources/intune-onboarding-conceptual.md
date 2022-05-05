@@ -1,15 +1,15 @@
 ---
-title: 使用 Intune 载入托管设备 - Microsoft Graph API
-description: 列出用于为租户Graph载入 (配置和) 设备的适用于 Intune 终结点的 Microsoft (API) REST 应用程序。
+title: 使用 Intune 载入托管设备 - Microsoft 图形 API
+description: 列出用于载入 (为租户组织配置和初始化) 设备 (REST) Intune终结点的 Microsoft 图形 API。
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 75d06ef328c6af99eaba70df8b0d3fd858921bd1
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: e005cc667656b5620778dc80bd80ffe65736b08e
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367739"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211324"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
@@ -27,9 +27,10 @@ ms.locfileid: "63367739"
 - [合规性管理合作伙伴](intune-onboarding-compliancemanagementpartner.md)
 - [合规性管理合作伙伴分配](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [设备和应用管理数据](intune-onboarding-deviceandappmanagementdata.md)
-- [设备共同管理颁发机构配置](intune-onboarding-devicecomanagementauthorityconfiguration.md)
+- [设备共同管理机构配置](intune-onboarding-devicecomanagementauthorityconfiguration.md)
 - [设备注册配置类型](intune-onboarding-deviceenrollmentconfigurationtype.md)
 - [设备注册限制配置](intune-onboarding-deviceenrollmentlimitconfiguration.md)
+- [设备注册通知配置](intune-onboarding-deviceenrollmentnotificationconfiguration.md)
 - [设备注册平台限制](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [设备注册平台限制配置](intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)
 - [设备注册平台限制配置](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
@@ -49,6 +50,8 @@ ms.locfileid: "63367739"
 - [设备管理合作伙伴租户状态](intune-onboarding-devicemanagementpartnertenantstate.md)
 - [设备平台类型](intune-onboarding-deviceplatformtype.md)
 - [注册配置分配](intune-onboarding-enrollmentconfigurationassignment.md)
+- [注册通知品牌选项](intune-onboarding-enrollmentnotificationbrandingoptions.md)
+- [注册通知模板类型](intune-onboarding-enrollmentnotificationtemplatetype.md)
 - [注册限制平台类型](intune-onboarding-enrollmentrestrictionplatformtype.md)
 - [Intune 品牌](intune-onboarding-intunebrand.md)
 - [MDM 颁发机构](intune-onboarding-mdmauthority.md)
