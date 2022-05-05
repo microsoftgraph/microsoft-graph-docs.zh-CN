@@ -2,21 +2,21 @@
 title: 创建 deviceManagementPartner
 description: 创建新的 deviceManagementPartner 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51a30722c6c9a2734a3fa3ad2ea4517fbf6b1dc3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 736e0fd1d906834e039a3409165ac4023dba6b2e
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59076724"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205744"
 ---
 # <a name="create-devicemanagementpartner"></a>创建 deviceManagementPartner
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "59076724"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,18 +53,18 @@ POST /deviceManagement/deviceManagementPartners
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的 ID|
+|id|字符串|实体的 ID|
 |lastHeartbeatDateTime|DateTimeOffset|管理员启用“连接到设备管理合作伙伴”选项后上次检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|合作伙伴应用类型。 可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。|
 |singleTenantAppId|String|合作伙伴单个租户应用 ID|
-|displayName|String|合作伙伴显示名称|
+|displayName|字符串|合作伙伴显示名称|
 |isConfigured|Boolean|是否配置了设备管理合作伙伴|
-|whenPartnerDevicesWillBeRemoved|DateTimeOffset|将删除 PartnerDevices 的 DateTime（UTC 时间）。 这将很快成为删除。|
-|whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|将 PartnerDevices 标记为"不兼容"的 DateTime（UTC 时间）。 这将很快成为删除。|
+|whenPartnerDevicesWillBeRemoved|DateTimeOffset|将删除 PartnerDevices 时 UTC 中的 DateTime。 这很快就会变得过时。|
+|whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|当 PartnerDevices 将标记为“不符合”时，UTC 中的 DateTime。 这很快就会变得过时。|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|要删除 PartnerDevices 时的日期/时间（UTC 时间）|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|PartnerDevices 将被标记为“不符合”时的日期/时间（UTC 时间）|
-|groupsRequiringPartnerEnrollment|[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md) 集合|指定是否通过合作伙伴注册的用户组。|
+|groupsRequiringPartnerEnrollment|[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md) 集合|指定注册是否通过合作伙伴的用户组。|
 
 
 
@@ -139,6 +139,7 @@ Content-Length: 1189
   ]
 }
 ```
+
 
 
 

@@ -1,15 +1,15 @@
 ---
-title: 使用 Intune 注册公司设备 - Microsoft Graph API
-description: 列出注册租户Graph设备的适用于 Intune 终结点 (REST) 。
+title: 使用Intune注册公司设备 - Microsoft 图形 API
+description: 列出为租户组织注册设备 (REST) Intune终结点的 Microsoft 图形 API。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 5e0e299a5275e55ddf70d604916f163b02da990b
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 68bf3e2f220be640434be73a6dcb87a953870198
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368019"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210743"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 
@@ -26,8 +26,8 @@ ms.locfileid: "63368019"
 - [Active Directory Windows Autopilot Deployment 配置文件](intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)
 - [Apple 注册配置文件分配](intune-enrollment-appleenrollmentprofileassignment.md)
 - [Apple 所有者类型注册类型](intune-enrollment-appleownertypeenrollmenttype.md)
-- [Apple 用户启动的注册配置文件](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
-- [Apple 用户启动的注册类型](intune-enrollment-appleuserinitiatedenrollmenttype.md)
+- [Apple 用户发起的注册配置文件](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
+- [Apple 用户发起的注册类型](intune-enrollment-appleuserinitiatedenrollmenttype.md)
 - [Azure AD Windows AutoPilot Deployment 配置文件](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
 - [DEP 注册基准配置文件](intune-enrollment-depenrollmentbaseprofile.md)
 - [DEP 注册配置文件](intune-enrollment-depenrollmentprofile.md)
@@ -63,4 +63,3 @@ ms.locfileid: "63368019"
 - [Windows 设备使用类型](intune-enrollment-windowsdeviceusagetype.md)
 - [Windows 注册状态屏幕设置](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Windows 用户类型](intune-enrollment-windowsusertype.md)
-

@@ -1,16 +1,16 @@
 ---
 title: 创建设置
 description: 使用此 API 为组创建新的目录设置。
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 13bd70519e84b7170dc67d5bfa1205e5829c1c67
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 7f1acd81e20b3ee1a8935fe5c394c9bf175baae4
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671263"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212299"
 ---
 # <a name="create-settings"></a>创建设置
 
@@ -20,56 +20,65 @@ ms.locfileid: "63671263"
 
 基于 [directorySettingTemplates](../resources/directorysettingtemplate.md) 中可用的模板创建新设置。 这些设置可以在租户级别或组级别。
 
-组设置仅适用于Microsoft 365组。 名为 的`Group.Unified`模板可用于配置租户范围的Microsoft 365组设置`Group.Unified.Guest`，而名为 的模板可用于配置特定于组的设置。
+组设置仅适用于Microsoft 365组。 命名`Group.Unified`的模板可用于配置租户范围的Microsoft 365组设置，而命名`Group.Unified.Guest`的模板可用于配置特定于组的设置。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+| 权限类型                        | 权限（从最低特权到最高特权） |
+| :------------------------------------- | :------------------------------------------ |
+| 委派（工作或学校帐户）     | Directory.ReadWrite.All                     |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
+| Application                            | Directory.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP 请求
 
-创建租户范围设置。
+创建租户范围的设置。
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /settings
 ```
 
 创建特定于组的设置。
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/settings
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
-|:---------------|:----------|
-| Authorization  | Bearer {token}。 必需|
+
+| 名称          | 说明              |
+| :------------ | :----------------------- |
+| Authorization | 持有者 {token}。 必需 |
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供 [directorySetting](../resources/directorysetting.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>示例 1：创建用于阻止特定组来宾Microsoft 365设置
+### <a name="example-1-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>示例 1：创建用于阻止特定Microsoft 365组的来宾的设置
 
 #### <a name="request"></a>请求
+
 下面展示了示例请求。
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_groupsetting_from_groupsettings_for_guests"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings
 Content-type: application/json
@@ -84,42 +93,51 @@ Content-type: application/json
     ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-for-guests-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-for-guests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-for-guests-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-for-guests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-groupsetting-from-groupsettings-for-guests-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-groupsetting-from-groupsettings-for-guests-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-for-guests-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-for-guests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-for-guests-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-for-guests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 #### <a name="response"></a>响应
+
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.directorySetting"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -143,10 +161,12 @@ Content-type: application/json
 #### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_directorysettings"
 }-->
+
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/settings
 Content-type: application/json
@@ -173,32 +193,38 @@ Content-type: application/json
     ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysettings-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysettings-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-directorysettings-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directorysettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directorysettings-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-directorysettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-directorysettings-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/create-directorysettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-directorysettings-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-directorysettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### <a name="response"></a>响应
 
@@ -207,6 +233,7 @@ Content-type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.directorySetting"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -250,5 +277,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

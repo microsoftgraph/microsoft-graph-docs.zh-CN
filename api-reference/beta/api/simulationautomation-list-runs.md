@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 36f0a7375b1aafbaa5eed5ec44b8c47790c2bf0b
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: afe7d605d0d6868bbcc6d131efc093c1bf76d14a
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63758308"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212678"
 ---
 # <a name="list-runs"></a>列出运行
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "63758308"
 
 获取租户的攻击模拟自动化运行列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | SecurityEvents.Read.All                     |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | SecurityEvents.Read.All                     |
+| Application                            | SecurityEvents.Read.All                     |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,11 +39,11 @@ GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/ru
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 、 `$count`、 `$skiptoken`和 `$top``$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 `$count``$skiptoken``$top`[OData 查询参数](/graph/query-parameters)，`$select`以帮助自定义响应。
 
-如果结果集跨多个页面 `@odata.nextLink` ，响应正文将包含 可用于分页浏览结果集。
+如果结果集跨多个页面，则响应正文包含一个 `@odata.nextLink` 可用于对结果集进行分页的响应正文。
 
-以下是它们的使用示例：
+下面是使用它们的示例：
 
 <!-- {
   "blockType": "ignored"
@@ -56,7 +56,7 @@ GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/ru
 GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$select={property}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -66,7 +66,7 @@ GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/ru
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [simulationAutomationRun](../resources/simulationautomationrun.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [simulationAutomationRun](../resources/simulationautomationrun.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -74,6 +74,8 @@ GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/ru
 
 请求示例如下所示。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_simulationautomationrun"
@@ -82,6 +84,32 @@ GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/ru
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulationAutomations/fbad62b0-b32d-b6ac-9f48-d84bbea08f96/runs
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-simulationautomationrun-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-simulationautomationrun-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-simulationautomationrun-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-simulationautomationrun-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-simulationautomationrun-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulationautomationrun-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

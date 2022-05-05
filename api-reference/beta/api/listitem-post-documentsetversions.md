@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 9c9c20f8a6e524d203914e10d2faf63de3f0b8b4
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 25f22bbc7556600ec9f9cdf911871f3dc95c0cc5
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65061188"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211490"
 ---
 # <a name="create-documentsetversion"></a>创建 documentSetVersion
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "65061188"
 |:---|:---|
 |委派（工作或学校帐户）|Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All、Sites.Selected|
+|Application|Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All、Sites.Selected|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,6 +66,8 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions
 
 请求示例如下所示。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_documentsetversion"
@@ -81,6 +83,28 @@ Content-length: 70
   "shouldCaptureMinorVersion": false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-documentsetversion-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-documentsetversion-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-documentsetversion-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-documentsetversion-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-documentsetversion-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

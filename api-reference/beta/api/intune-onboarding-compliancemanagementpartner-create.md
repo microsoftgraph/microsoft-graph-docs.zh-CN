@@ -2,21 +2,21 @@
 title: 创建 complianceManagementPartner
 description: 创建新的 complianceManagementPartner 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8d0c1dbadc05648902647495d3680f984ed4f3e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0151586601f4da93aa19357311d91eff459bd239
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009761"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209105"
 ---
 # <a name="create-compliancemanagementpartner"></a>创建 complianceManagementPartner
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "59009761"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -47,29 +47,29 @@ POST /deviceManagement/complianceManagementPartners
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 complianceManagementPartner 对象的 JSON 表示形式。
+在请求正文中，为 complianceManagementPartner 对象提供 JSON 表示形式。
 
-下表显示创建 complianceManagementPartner 时所需的属性。
+下表显示了创建 complianceManagementPartner 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的 ID|
-|lastHeartbeatDateTime|DateTimeOffset|管理员载入合规性管理合作伙伴后最后检测信号的时间戳|
+|lastHeartbeatDateTime|DateTimeOffset|管理员加入合规性管理合作伙伴后最后一个检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |displayName|String|合作伙伴显示名称|
-|macOsOnboarded|布尔值|为 Mac 设备载入的合作伙伴。|
-|windowsOnboarded|布尔值|合作伙伴已载入Windows设备。|
-|androidOnboarded|Boolean|针对 Android 设备加入的合作伙伴。|
-|iosOnboarded|布尔值|为 ios 设备载入的合作伙伴。|
+|macOsOnboarded|Boolean|合作伙伴已加入 Mac 设备。|
+|windowsOnboarded|Boolean|已加入Windows设备的合作伙伴。|
+|androidOnboarded|Boolean|适用于 Android 设备的合作伙伴。|
+|iosOnboarded|Boolean|适用于 ios 设备的合作伙伴加入。|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Mac 设备的用户组。|
-|windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册Windows的用户组。|
+|windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册Windows设备的用户组。|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Android 设备的用户组。|
 |iosEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 ios 设备的用户组。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -199,6 +199,7 @@ Content-Length: 2265
   ]
 }
 ```
+
 
 
 
