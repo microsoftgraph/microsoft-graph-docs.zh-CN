@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 8be4d3f66de2d9a58b25f3782e0ed2de5b378c87
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 4db9be8a564eb133b92830729902f5c36d0ed84c
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65059939"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191666"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 

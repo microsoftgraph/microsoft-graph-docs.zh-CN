@@ -5,12 +5,12 @@ description: site 资源提供 Sharepoint 网站的元数据和关系。
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 030edb54913db91f1ff69b3e8589addeae60ba95
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2eef3e7f3e46d28fe848b5693329e967c05a9a54
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134116"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191469"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -37,6 +37,7 @@ ms.locfileid: "62134116"
 | [创建权限][]         | POST /sites/{site-id}/permissions
 | [删除权限][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [更新权限][]         | PATCH /sites/{site-id}/permissions/{permission-id}
+| [列举操作](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) 集合|获取与[站点](../resources/site.md)关联的[丰富长时间运行操作](../resources/richlongrunningoperation.md)的列表。
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
@@ -94,6 +95,7 @@ ms.locfileid: "62134116"
 | **项目**         | 集合 ([baseItem][])                         | 用于处理包含在此网站中的任何项目。此集合无法枚举。
 | **lists**         | Collection([list][])                             | 此网站下方的列表集合。
 | **onenote**       | [onenote][]                                      | 调用 OneNote 服务执行笔记本相关操作。
+| **operations**    | [richLongRunningOperation](../resources/richlongrunningoperation.md) 集合 | 站点上长时间运行的操作的集合。
 | **权限**   | 集合([权限][])                       | 与网站关联的权限。空。
 | **sites**         | 集合（[网站][]）                             | 网站下方的子网站的集合。
 | **termStore**     | [microsoft.graph.termStore.store]                | 此网站下的默认 termStore。
@@ -148,6 +150,7 @@ ms.locfileid: "62134116"
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
+  "operations": [ { "@odata.type": "microsoft.graph.richLongRunningOperation" }],
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
