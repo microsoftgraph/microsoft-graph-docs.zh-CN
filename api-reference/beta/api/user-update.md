@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bf1a8b16076575272c215c28a81bd0b3246a32c9
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 36d96649c4b527caf1772e9fab9045718e405d12
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629454"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212061"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -21,7 +21,7 @@ ms.locfileid: "64629454"
 更新 [user](../resources/user.md) 对象的属性。 并非所有属性都可以在没有管理员角色的情况下由具有其默认权限的成员或来宾用户更新。 [比较成员和来宾默认](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) 权限，查看其可管理的属性。
 
 ## <a name="permissions"></a>权限
-若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+调用此 API 需要以下一个功能。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -62,13 +62,13 @@ PATCH /users/{id | userPrincipalName}
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | 设置是否已获得未成年人的同意。 允许的值：`null`、`Granted`、`Denied` 和 `NotRequired`。 请参阅[法定年龄组属性定义](../resources/user.md#legal-age-group-property-definitions)以了解详细信息。 |
 |country|String|用户所在的国家/地区;例如， `US` 或 `UK`。|
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|保留分配给目录对象的自定义安全属性的值的开放式复杂类型。<br/><br/>若要更新此属性，必须为调用主体分配"属性分配管理员"角色，并且必须向其授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。|
-|department|String|用户工作部门的名称。|
+|部门|String|用户工作部门的名称。|
 |displayName|String|用户通讯簿中显示的名称，通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。|
 |employeeId|String|由组织分配给该用户的员工标识符。 最大长度为 16 个字符。|
 | employeeType | String | 捕获企业员工类型。 例如，`Employee`、`Contractor`、`Consultant` 或 `Vendor`。|
 |givenName|String|用户的名。|
 |employeeHireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对标识 **的任何** 更新都将替换整个集合，并且您必须在集合中提供 userPrincipalName **signInType** 标识。|
+|identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对 **标识** 的任何更新都将替换整个集合，并且必须在集合中提供 userPrincipalName **signInType** 标识。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
 |mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。 对于 Azure AD B2C 帐户，此属性最多可以使用唯一的 SMTP 地址更新 10 次。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。|
@@ -94,7 +94,7 @@ PATCH /users/{id | userPrincipalName}
 |userPrincipalName|字符串|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。 <br>注意：此属性不能包含突出字符。 仅支持使用以下字符：`A - Z`、`a - z`、`0 - 9`、` ' . - _ ! # ^ ~`。 有关允许字符的完整列表，请参阅[用户名策略](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts)。|
 |userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。          |
 
-由于 **用户** 资源 [支持扩展](/graph/extensibility-overview)`PATCH`，因此可以使用 操作在现有用户实例的扩展的自定义属性中添加、更新或删除你自己的特定于 **应用** 的数据。
+由于 **用户** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用该 `PATCH` 操作在现有 **用户** 实例的扩展的自定义属性中添加、更新或删除自己的特定于应用的数据。
 
 > [!NOTE] 
 > - 只有应用程序权限的应用无法更新以下属性：**aboutMe**、 **birthday**、 **employeeHireDate**、 **interests**、 **mySite**、 **pastProjects**、 **preferredName**、 **responsibilities**、 **schools**、 and **skills**。
@@ -226,7 +226,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-update-the-passwordprofile-of-a-user-to-reset-their-password"></a>示例 3：更新用户的 passwordProfile 以重置其密码
 
-以下示例显示重置其他用户密码的请求。 必须为调用用户分配 *Directory.AccessAsUser.All* 委派权限才能更新此属性。
+以下示例演示重置其他用户密码的请求。 必须为调用用户分配 *Directory.AccessAsUser.All* 委派权限才能更新此属性。
 
 #### <a name="request"></a>请求
 
@@ -283,18 +283,18 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-4-assign-a-custom-security-attribute-with-a-string-value-to-a-user"></a>示例 4：向用户分配具有字符串值的自定义安全属性
+### <a name="example-4-assign-a-custom-security-attribute-with-a-string-value-to-a-user"></a>示例 4：为用户分配具有字符串值的自定义安全属性
 
 以下示例演示如何向用户分配具有字符串值的自定义安全属性。
 
-+ 属性集： `Engineering`
++ 属性集：`Engineering`
 + 属性：`ProjectDate`
 + 属性数据类型：字符串
 + 属性值： `"2022-10-01"`
 
 若要分配自定义安全属性，必须为调用主体分配"属性分配管理员"角色，并且必须授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。
 
-有关用户的更多示例，请参阅[使用 Microsoft](/graph/custom-security-attributes-examples) 策略分配、更新或删除自定义安全Graph API。
+有关用户的更多示例，请参阅[使用 Microsoft 图形 API 分配、更新或删除自定义安全属性](/graph/custom-security-attributes-examples)。
 
 #### <a name="request"></a>请求
 
@@ -348,10 +348,12 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-5-add-or-update-the-values-of-a-schema-extension-for-a-user"></a>示例 5：为用户添加或更新架构扩展的值
 
-你可以更新或分配一个值到扩展中的单个属性或所有属性。
+可以将一个值更新或分配给扩展中的单个属性或所有属性。
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_schemaextension"
@@ -366,6 +368,24 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-schemaextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-schemaextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -376,7 +396,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
->**注意：** 若要从用户对象中删除架构扩展的值，将 属性设置为 `null`。 例如：
+>**注意：** 若要从用户对象中删除架构扩展值，请将属性设置为 `null`。 例如：
 >
 >```http
 >PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e

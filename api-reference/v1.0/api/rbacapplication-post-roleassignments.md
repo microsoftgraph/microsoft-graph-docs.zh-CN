@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2307fd3a8c4542eae1806f34bc2f9d7a20916848
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 3e0cf3ea1b24c3c5556a11bb0aca3d9bed13df4f
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016825"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206975"
 ---
 # <a name="create-unifiedroleassignment"></a>创建 unifiedRoleAssignment
 
@@ -66,13 +66,13 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 Azure Active Directory 中定义的范围 (由 **directoryScopeId** 指定的 Azure AD) 或 **appScopeId** 指定的特定于应用程序的范围。 Azure AD 范围的示例包括租户 () `/` 、管理单元或应用程序。 有关 appScope 的详细信息，请参阅 [appScope](../resources/appscope.md)。
+在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 **directoryScopeId** 指定的Azure Active Directory (Azure AD) 中定义的范围，或者 **由 appScopeId** 指定的特定于应用程序的范围。 Azure AD范围的示例包括租户 () `/` 、管理单元或应用程序。 有关 appScope 的详细信息，请参阅 [appScope](../resources/appscope.md)。
 
 下表显示了创建 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象时所需的属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|roleDefinitionId|字符串| 分配所用于的角色定义的标识符。|
+|roleDefinitionId|String| 分配所用于的角色定义的标识符。|
 |principalId|String| 向其授予分配的主体的标识符。 |
 |directoryScopeId|String|表示分配范围的目录对象的标识符。 需要此属性或 **appScopeId** 。 分配的范围确定已授予主体访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。|
 |appScopeId|字符串|分配范围特定于应用时特定于应用的范围的标识符。 需要此属性或 **directoryScopeId** 。 应用范围是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将范围限制为特定目录对象，例如管理单元。|
@@ -326,6 +326,8 @@ Content-type: application/json
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignment3_from_rbacapplication_4"
@@ -341,6 +343,32 @@ Content-type: application/json
     "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment3-from-rbacapplication-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment3-from-rbacapplication-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment3-from-rbacapplication-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment3-from-rbacapplication-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment3-from-rbacapplication-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignment3-from-rbacapplication-4-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

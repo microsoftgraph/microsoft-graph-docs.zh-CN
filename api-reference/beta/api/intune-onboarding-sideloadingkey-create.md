@@ -2,21 +2,21 @@
 title: 创建 sideLoadingKey
 description: 创建新的 sideLoadingKey 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 249a57d10c4e7640b76ed7052906cc0c4b396a87
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a55840adf84a5234a7ded834ca03ceb4a9c69498
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027573"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212905"
 ---
 # <a name="create-sideloadingkey"></a>创建 sideLoadingKey
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "59027573"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -47,23 +47,23 @@ POST /deviceAppManagement/sideLoadingKeys
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 sideLoadingKey 对象的 JSON 表示形式。
+在请求正文中，为 sideLoadingKey 对象提供 JSON 表示形式。
 
-下表显示创建 sideLoadingKey 时所需的属性。
+下表显示了创建 sideLoadingKey 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|旁加载密钥唯一 ID。|
-|value|String|Side Loading Key Value， it is 5x5 value， seperated by hiphens.|
-|displayName|String|向 ITPro 管理员显示的旁加载密钥名称。|
-|说明|String|旁加载 向 ITPro 管理员显示的密钥说明。|
+|id|String|旁加载键唯一 ID。|
+|value|String|侧加载键值为 5x5 值，由 hiphens 分隔。|
+|displayName|字符串|向 ITPro 管理员显示的旁加载密钥名称。|
+|说明|String|向 ITPro 管理员显示的旁加载密钥说明。|
 |totalActivation|Int32|向 ITPro 管理员显示的旁加载密钥总激活。|
-|lastUpdatedDateTime|String|向 ITPro 管理员显示的"旁加载密钥上次更新日期"。|
+|lastUpdatedDateTime|String|向 ITPro 管理员显示的“旁加载密钥上次更新日期”。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -101,6 +101,7 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
+
 
 
 

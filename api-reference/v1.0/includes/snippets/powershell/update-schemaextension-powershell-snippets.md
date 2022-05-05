@@ -1,38 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6fde8b8bc713faed72af0efabf69c52967741702
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: MT
+ms.openlocfilehash: ebb5e9e0540ee7965d20446d7aafaf7704726a67
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110869"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65204235"
 ---
 ```powershell
 
-Import-Module Microsoft.Graph.SchemaExtensions
+Import-Module Microsoft.Graph.Users
 
 $params = @{
-    Owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa"
-    Properties = @(
-        @{
-            Name = "courseId"
-            Type = "Integer"
-        }
-        @{
-            Name = "courseName"
-            Type = "String"
-        }
-        @{
-            Name = "courseType"
-            Type = "String"
-        }
-        @{
-            Name = "courseSupervisors"
-            Type = "String"
-        }
-    )
 }
 
-Update-MgSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
+Update-MgUser -UserId $userId -BodyParameter $params
 
 ```

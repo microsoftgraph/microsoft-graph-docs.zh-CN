@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 7c0a6e045d64aba40c2db8a323afab273ee7f517
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 4cd761bee3a41033804e16840e27b60a3f4928aa
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704287"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202389"
 ---
 # <a name="update-delegatedadminaccessassignment"></a>更新 delegatedAdminAccessAssignment
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "64704287"
 |:---|:---|
 |委派（工作或学校帐户）| DelegatedAdminRelationship.ReadWrite.All |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|应用程序| 不支持。 |
+|Application| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|If-Match|If-match：etag}。 要更新 **的 delegatedAdminAccessAssignment** 的最后一个已知 ETag 值。 必需。|
+|If-Match|If-match：etag}。 要更新 **的 delegatedAdminAccessAssignment** 的最后一个已知 ETag 值。 必填。|
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
@@ -69,6 +69,8 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_delegatedadminaccessassignment",
@@ -96,6 +98,28 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-delegatedadminaccessassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-delegatedadminaccessassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-delegatedadminaccessassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-delegatedadminaccessassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-delegatedadminaccessassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 下面是返回响应代码以及 **Location** 和 **Retry-After** 标头的示例响应`202 Accepted`。

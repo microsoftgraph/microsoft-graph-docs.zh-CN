@@ -1,22 +1,22 @@
 ---
 title: defaultUserRolePermissions 资源类型
 description: 包含默认用户角色的某些可自定义权限。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b6ee2e8deccf73929b68079379efb0f6d93a3369
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 71edaa99eedc7a37abe5694ace6e5c3c05e29884
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135672"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202327"
 ---
 # <a name="defaultuserrolepermissions-resource-type"></a>defaultUserRolePermissions 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含 Azure AD 中默认用户角色的某些可自定义权限。
+包含Azure AD中默认用户角色的某些可自定义权限。
 
 ## <a name="properties"></a>属性
 
@@ -24,6 +24,7 @@ ms.locfileid: "50135672"
 |:-------- |:---- |:----------- |
 | allowedToCreateApps | Boolean | 指示默认用户角色是否可以创建应用程序。 |  
 | allowedToCreateSecurityGroups | Boolean | 指示默认用户角色是否可以创建安全组。 |  
+| allowedToReadBitlockerKeysForOwnedDevice | Boolean | 指示设备的注册所有者是否可以使用默认用户角色读取自己的 BitLocker 恢复密钥。 |
 | allowedToReadOtherUsers | Boolean | 指示默认用户角色是否可以读取其他用户。 |  
 
 ## <a name="relationships"></a>关系
@@ -44,6 +45,7 @@ ms.locfileid: "50135672"
 {
   "allowedToCreateApps": true,
   "allowedToCreateSecurityGroups": true,
+  "allowedToReadBitlockerKeysForOwnedDevice": true,
   "allowedToReadOtherUsers": true
 }
 ```

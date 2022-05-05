@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e57940b4325c7830541d48b8f1c7e35b88802cf
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 72007b0e2de2264a4afee4c68b103505815921f5
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589182"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211128"
 ---
 # <a name="update-group"></a>更新组
 
@@ -102,32 +102,32 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/update-group-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/update-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/update-group-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/update-group-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/update-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-group-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
