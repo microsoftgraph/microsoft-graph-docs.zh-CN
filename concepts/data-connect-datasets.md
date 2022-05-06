@@ -4,20 +4,20 @@ description: 介绍可与 Microsoft Graph 数据连接结合使用的受支持�
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 1ac242bf99707916e23f2cccfaba8a05cd62749d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 6d73482dbf2b8b0c85851970460836094a982ad3
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336599"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247193"
 ---
 # <a name="datasets-regions-and-sinks-supported-by-microsoft-graph-data-connect"></a>Microsoft Graph Data Connect 支持的数据集、区域和接收器
 
-Microsoft Graph 数据连接支持 Microsoft Azure 中的各种数据集、数据区域和存储位置。 本主题介绍支持的数据集和如何访问数据集架构、支持的 Microsoft 365 和 Microsoft Azure 区域，以及数据连接通过 Azure 数据工厂使用的存储位置。
+Microsoft Graph 数据连接支持 Microsoft Azure 中的各种数据集、数据区域和存储位置。 本文介绍受支持的数据集以及如何访问数据集架构、支持的Microsoft 365和Microsoft Azure区域，以及 Data Connect 通过Azure 数据工厂利用的存储位置。
 
 ## <a name="datasets"></a>数据集
 
-数据连接现在支持以下数据集。若要查看每个数据集的架构，请在 Azure 数据工厂中创建新数据集，然后使用“架构”选项卡查看。
+Microsoft Graph Data Connect 当前支持以下数据集。若要查看每个数据集的架构，请在Azure 数据工厂中创建一个新的数据集，并使用“架构”选项卡查看它。
 
 | 数据集名称 | 说明 | 示例 | 架构 |
 |--------------|-------------|--------|--------|
@@ -42,27 +42,29 @@ Microsoft Graph 数据连接支持 Microsoft Azure 中的各种数据集、数�
 
 ## <a name="regions"></a>地区
 
-数据连接支持从各种不同的 Microsoft 365 区域提取数据。 若要成功将数据从 Microsoft 365 数据中心转移到 Microsoft Azure 存储，Azure 数据工厂实例和 Azure 存储位置均必须映射到支持的 Microsoft 365 数据位置区域。 下表指明了支持哪些 Microsoft 365 区域，以及数据移动所需的对应 Azure 区域。
+Microsoft Graph Data Connect 支持从各种不同的Microsoft 365区域提取数据。若要将数据从Microsoft 365数据中心成功移动到Microsoft Azure存储，Azure 数据工厂实例和 Azure 存储位置必须都映射到受支持的区域，以获取Microsoft 365数据的位置。 
 
-| Office 区域      | Azure 区域                                                                                                                                                               |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **亚太地区**   | <ul><li>东亚</li><li>东南亚</li></ul>                                                                                                                         |
-| **澳大利亚**      | <ul><li>澳大利亚东部</li><li>澳大利亚东南部</li></ul>                                                                                                               |
-| **欧洲**         | <ul><li>北欧</li><li>西欧</li></ul>                                                                                                                         |
-| **北美**  | <ul><li>美国中部</li><li>美国东部</li><li>美国东部 2</li><li>美国中北部</li><li>美国中南部</li><li>美国中西部</li><li>美国西部</li><li>美国西部 2</li></ul> |
-| **英国** | <ul><li>英国南部</li><li>英国西部</li></ul>                                                                                                                                 |
+下表指明了支持哪些 Microsoft 365 区域，以及数据移动所需的对应 Azure 区域。
+
+| Office 区域      | Azure 区域                                                   |
+| ------------------ | ---------------------------------------------------------------|
+| **亚太地区**   | <ul><li>东亚</li><li>东南亚</li></ul>             |
+| **澳大利亚**      | <ul><li>澳大利亚东部</li><li>澳大利亚东南部</li></ul>   |
+| **欧洲**         | <ul><li>北欧</li><li>西欧</li></ul>             |
+| **北美**  | <ul><li>美国中部</li><li>美国东部</li><li>美国东部 2</li><li>美国中北部</li><li>美国中南部</li><li>美国中西部</li><li>美国西部</li><li>美国西部 2</li></ul>                                            |
+| **英国** | <ul><li>英国南部</li><li>英国西部</li></ul>                     |
 
 ## <a name="sinks"></a>接收器
 
-接收器是数据工厂用于在 Azure 存储中放置数据的输出位置。 数据连接支持以下接收器存储类型：
+接收器是Azure 数据工厂用于将数据放置在 Azure 存储中的输出位置。 数据连接支持以下接收器存储类型：
 
-- [Azure Data Lake Storage Gen 1](/azure/data-lake-store/data-lake-store-overview)
-- [Azure Data Lake Storage Gen 2](/azure/storage/blobs/data-lake-storage-introduction)
+- [Azure Data Lake Storage Gen1](/azure/data-lake-store/data-lake-store-overview)
+- [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction)
 - [Azure 存储 Blob](/azure/storage/blobs/storage-blobs-overview)
 
 接收器具有以下特点：
 
-- 输出文件将采用 JSON 行的格式。 输出格式是固定的，并且不支持修改输出的格式。 但是，你可以使用 Azure 数据工厂将数据连接管道的结果复制到另一个存储机制（例如 Azure SQL DB）中。
+- 输出文件采用 JSON 行格式。 输出格式是固定的，并且不支持修改输出的格式。 但是，可以使用Azure 数据工厂将数据连接管道的结果复制到另一个存储机制（如 Azure SQL 数据库）。
 - 对于使用 Microsoft 365 作为来源的复制活动中的所有接收器类型，服务主体身份验证是唯一支持的身份验证机制。
 - 使用 Azure 存储 Blob 作为接收器时，你必须确保应用程序对 Azure 存储 Blob 位置具有存储 Blob 数据参与者访问权限。
 

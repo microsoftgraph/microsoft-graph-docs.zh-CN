@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 45232a25e17aedbd47c208ee31c7f21b51ca4986
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: 4331c661889868bdbf7735e7ef476739d63621fc
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65102991"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247075"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -25,22 +25,22 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 1. 应用程序首先对所需资源运行 delta 函数以调用 GET 请求。
 2. Microsoft Graph 发送一个包含已请求资源和[状态令牌](#state-tokens)的响应。
 
-     a.如果返回了 `nextLink` URL，则会话中可能存在要检索的其他数据页面。应用程序继续使用 `nextLink` URL 发出请求以检索所有页面中的数据，直到响应中返回 `deltaLink` URL。
+     a.如果返回了 `@odata.nextLink` URL，则会话中可能存在要检索的其他数据页面。应用程序继续使用 `@odata.nextLink` URL 发出请求以检索所有页面中的数据，直到响应中返回 `@odata.deltaLink` URL。
 
-     b.如果返回了 `deltaLink` URL，则未返回关于资源现有状态的更多数据。为了执行以后的请求，应用程序使用 `deltaLink` URL 了解资源更改。
+     b.如果返回了 `@odata.deltaLink` URL，则未返回关于资源现有状态的更多数据。为了执行以后的请求，应用程序使用 `@odata.deltaLink` URL 了解资源更改。
 
-3. 当应用程序需要了解资源更改时，会使用步骤 2 中收到的 `deltaLink` URL 发出新请求。*可能* 在完成步骤 2 或应用程序检查更改时立即发出此请求。
-4. Microsoft Graph 返回响应（`nextLink` URL 或 `deltaLink` URL），其中描述了自上一个请求以来的资源变更。
+3. 当应用程序需要了解资源更改时，会使用步骤 2 中收到的 `@odata.deltaLink` URL 发出新请求。*可能* 在完成步骤 2 或应用程序检查更改时立即发出此请求。
+4. Microsoft Graph 返回响应（`@odata.nextLink` URL 或 `@odata.deltaLink` URL），其中描述了自上一个请求以来的资源变更。
 
->**注意：** Azure Active Directory 中存储的资源（如用户和组）支持“从现在开始同步”方案。 这样一来，便可以跳过第 1 步和第 2 步（如果不想检索资源完整状态的话），并改为请求获取最新 `deltaLink`。 将 `$deltaToken=latest` 追加到 `delta` 函数中，这样响应就会包含 `deltaLink`，而不包含资源数据。 OneDrive 和 SharePoint 中的资源也支持此功能。 有关 OneDrive 和 SharePoint 中的资源，请改为附加 `token=latest` 。
+>**注意：** Azure Active Directory 中存储的资源（如用户和组）支持“从现在开始同步”方案。 这样一来，便可以跳过第 1 步和第 2 步（如果不想检索资源完整状态的话），并改为请求获取最新 `@odata.deltaLink`。 将 `$deltaToken=latest` 追加到 `delta` 函数中，这样响应就会包含 `@odata.deltaLink`，而不包含资源数据。 OneDrive 和 SharePoint 中的资源也支持此功能。 有关 OneDrive 和 SharePoint 中的资源，请改为附加 `token=latest` 。
 
 >**注意：** 引用增量查询函数的方式通常是将 `/delta` 附加到资源名称。 但是，`/delta` 是在 Microsoft Graph SDK 生成的请求中显示的完全限定名称 `/microsoft.graph.delta` 的快捷方式。
 
->**注意** 初始请求发到 delta 查询函数后（无 delta 或跳过标记），会返回集合中现有的资源。 初始 delta 查询之前创建并已删除的资源不会返回。 初始请求前进行的更新在返回的资源上按其最新状态进行汇总。
+>**注意：** 对增量查询函数的初始请求（没有 `$deltaToken` 或 `$skipToken`）将返回集合中当前存在的资源。 初始 delta 查询之前创建并已删除的资源不会返回。 初始请求前进行的更新在返回的资源上按其最新状态进行汇总。
 
 ### <a name="state-tokens"></a>状态令牌
 
-增量查询 GET 响应中始终返回 `nextLink` 或 `deltaLink` 响应头中指定的 URL。`nextLink` URL 包含的是 _skipToken_，`deltaLink` URL 包含的是 _deltaToken_。
+增量查询 GET 响应中始终返回 `@odata.nextLink` 或 `@odata.deltaLink` 响应头中指定的 URL。`@odata.nextLink` URL 包含的是 `$skipToken`，`@odata.deltaLink` URL 包含的是 `$deltaToken`。
 
 这些令牌对客户端不透明。以下是需要了解的详细信息：
 
@@ -48,17 +48,17 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 
 - 状态令牌还会进行编码，并包括初始 delta 查询请求中指定的其他查询参数（如 `$select`）。因此，不需要在后续 delta 查询请求中重复这些操作。
 
-- 执行增量查询时，可以将 `nextLink` 或 `deltaLink` URL 复制并应用到下一个 **delta** 函数调用，无需检查 URL 的内容（包括其状态令牌）。
+- 执行增量查询时，可以将 `@odata.nextLink` 或 `@odata.deltaLink` URL 复制并应用到下一个 **delta** 函数调用，无需检查 URL 的内容（包括其状态令牌）。
 
 ### <a name="optional-query-parameters"></a>可选的查询参数
 
-如果客户使用查询参数，则它必须在初始请求中指定。Microsoft Graph 自动将指定参数编码为响应中提供的 `nextLink` 或 `deltaLink`。调用应用程序只需预先指定查询参数一次。Microsoft Graph 将为所有后续请求自动添加指定参数。
+如果客户使用查询参数，则它必须在初始请求中指定。Microsoft Graph 自动将指定参数编码为响应中提供的 `@odata.nextLink` 或 `@odata.deltaLink`。调用应用程序只需预先指定查询参数一次。Microsoft Graph 将为所有后续请求自动添加指定参数。
 
 请注意以下可选查询参数的常规有限支持：
 
 - `$orderby`
 
-    不要假设增量查询返回特定响应顺序。 假设同一项目可以显示在 `nextLink` 序列的任意位置，并以合并逻辑进行处理。
+    不要假设增量查询返回特定响应顺序。 假设同一项目可以显示在 `@odata.nextLink` 序列的任意位置，并以合并逻辑进行处理。
 - `$top`
 
     每页中的对象数量可能因资源类型和资源更改类型而异。
@@ -71,7 +71,7 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 - 不支持 `$top`。
 - 不支持 `$orderby`。
 - 如果使用的是 `$select` 查询参数，则该参数表示客户倾向于仅跟踪 `$select` 语句中指定的属性或关系的更改。如果未选中的属性发生更改，则属性已更改的资源将不会出现在后续请求之后的 delta 响应中。
-- `$select` 还支持用户和组的 `manager` 和 `members` 导航属性。 选择这些属性可以跟踪对用户管理器和组成员身份的更改。
+- `$select` 还分别支持用户和组的 **管理** 器和 **成员** 导航属性。 选择这些属性可以跟踪对用户管理器和组成员身份的更改。
 
 - 使用范围筛选器可以按对象 ID 跟踪对一个或多个特定用户或组所做的更改。例如，以下请求返回与查询筛选器中指定的 ID 匹配的组所做的更改。
 
@@ -89,17 +89,17 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - 更新实例由它们的 **id** 表示，*至少* 具有已更新的属性，但可能也包含其他属性。
 
-- 用户和组的关系表示为对标准资源表示形式的注释。这些注释使用格式 `propertyName@delta`。注释包含在初始 delta 查询请求的响应内。
+- 用户和组上的关系表示为标准资源表示形式的注释。这些批注使用格式 **propertyName@delta**。批注包含在初始增量查询请求的响应中。
 
-删除的实例使用其 **id** 和 `@removed` 对象表示。`@removed` 对象可能包含有关为何删除该实例的其他信息。例如，"@removed": {"reason": “changed”}。
+删除的实例由它们的 **id** 和 **@removed** 对象表示。 **@removed** 对象可能包含有关删除实例的原因的附加信息。 例如，`"@removed": {"reason": "changed"}`。
 
-可能的 @removed 原因可以是 *已更改* 或 *已删除*。
+可能的 **@removed** 原因可以是`changed` 或 `deleted`。
 
-- *已更改* 表示该项已被删除，可以从 [deletedItems](/graph/api/resources/directory) 恢复。
+- `changed`表示该项已被删除，可以从 [deletedItems](/graph/api/resources/directory) 恢复。
 
-- *已删除* 表示该项已被删除，无法恢复。
+- `deleted`表示该项已被删除，无法恢复。
 
-`@removed` 对象可以在初始 delta 查询响应和跟踪的 (deltaLink) 响应中返回。使用 delta 查询请求的客户端应能够处理响应中的这些对象。
+在初始的 delta 查询响应和跟踪的 (deltaLink) 响应中，可以返回 **@removed** 对象。使用 delta 查询请求的客户端应应被设计为处理响应中的这些对象。
 
 >**注意：** 在响应中可能会多次包含一个实体，前提是多次在特定情况下更改了该实体。 增量查询可以使应用程序列出所有更改，但不能确保实体在单个响应中是统一的。
 
@@ -185,7 +185,7 @@ Content-type: application/json
 
 对资源实例进行更改（可通过应用界面或 API 进行）的时间与所做的更改反映在增量查询响应中的时间之间可能会出现不同的延迟。
 
-有时，当你选择 `nextLink` 或 `deltaLink` 时，可能无法指示对于对象所做的更改。 这是因为某些请求可能对最近创建、更新或删除的对象具有复制延迟。 请在一段时间后重试 `nextLink` 或 `deltaLink` 以检索最新更改。
+有时，当你选择 `@odata.nextLink` 或 `@odata.deltaLink` 时，可能无法指示对于对象所做的更改。 这是因为某些请求可能对最近创建、更新或删除的对象具有复制延迟。 请在一段时间后重试 `@odata.nextLink` 或 `@odata.deltaLink` 以检索最新更改。
 
 ### <a name="national-clouds"></a>国家云
 
@@ -197,7 +197,7 @@ Content-type: application/json
 
 ### <a name="synchronization-reset"></a>同步重置
 
-delta 查询可以返回 `410 (gone)` 响应代码和一个 **Location** 标头，其中包含带空增量标记（与初始查询相同）的请求 URL。 这表示应用程序必须在目标租户的完全同步的情况下重启。 发生这种情况的原因通常是由于目标租户的内部维护或迁移导致数据不一致。
+Delta 查询可以返回一个`410 (gone)`响应代码和一个 **Location** 标头，其中包含一个空的`$deltaToken`请求 URL（与初始查询相同）。 这表示应用程序必须在目标租户的完全同步的情况下重启。 发生这种情况的原因通常是由于目标租户的内部维护或迁移导致数据不一致。
 
 ### <a name="token-duration"></a>令牌持续时间
 
