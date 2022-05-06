@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 67a9e1375c96cc22cce174208adf308467174d77
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: a9c9632a65c7423ea80d60d0eae0e05bdb8ad4bd
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510525"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65204288"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -126,16 +126,37 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "displayName":"contoso1",
-      "mail":"'contoso1@gmail.com",
-      "mailNickname":"contoso1_gmail.com#EXT#",
-      "otherMails":["contoso1@gmail.com"],
-      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
-      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "value": [
+        {
+            "businessPhones": [],
+            "displayName": "Conf Room Adams",
+            "givenName": null,
+            "jobTitle": null,
+            "mail": "Adams@contoso.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": null,
+            "userPrincipalName": "Adams@contoso.com",
+            "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0"
+        },
+        {
+            "businessPhones": [
+                "425-555-0100"
+            ],
+            "displayName": "MOD Administrator",
+            "givenName": "MOD",
+            "jobTitle": null,
+            "mail": null,
+            "mobilePhone": "425-555-0101",
+            "officeLocation": null,
+            "preferredLanguage": "en-US",
+            "surname": "Administrator",
+            "userPrincipalName": "admin@contoso.com",
+            "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
+        }
+    ]
 }
 ```
 
@@ -279,8 +300,6 @@ Content-type: application/json
       "displayName":"a",
       "mail":"a@contoso.com",
       "mailNickname":"a_contoso.com#EXT#",
-      "otherMails":["a@contoso.com"],
-      "proxyAddresses":["SMTP:a@contoso.com"],
       "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
@@ -431,7 +450,6 @@ Content-type: application/json
       "displayName":"Oscar Ward",
       "givenName":"Oscar",
       "mail":"oscarward@contoso.com",
-      "mailNickname":"oscward",
       "userPrincipalName":"oscarward@contoso.com"
     }
   ]
@@ -491,15 +509,13 @@ Content-type: application/json
       "displayName":"Oscar Ward",
       "givenName":"Oscar",
       "mail":"oscarward@contoso.com",
-      "mailNickname":"oscward",
       "userPrincipalName":"oscarward@contoso.com"
     },
     {
       "displayName":"contosoAdmin1",
-      "mail":"'contosoadmin1@gmail.com",
-      "mailNickname":"contosoadmin1_gmail.com#EXT#",
-      "proxyAddresses":["SMTP:contosoadmin1@gmail.com"], 
-      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+      "givenName":"Contoso Administrator",
+      "mail":"'contosoadmin1@fabrikam.com",
+      "userPrincipalName":"contosoadmin1_fabrikam.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
 }
@@ -559,6 +575,80 @@ Content-type: application/json
   ]
 }
 ```
+
+
+### <a name="example-9-get-the-value-of-a-schema-extension-for-all-users"></a>示例 9: 获取所有用户的架构扩展值
+
+在此示例中，架构扩展 ID 为 `ext55gb1l09_msLearnCourses`。
+
+#### <a name="request"></a>请求
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_schemaextension"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=ext55gb1l09_msLearnCourses
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-schemaextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-schemaextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-schemaextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-schemaextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-schemaextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>响应
+
+在以下响应中，在两个用户对象未分配架构扩展属性 `ext55gb1l09_msLearnCourses`。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(ext55gb1l09_msLearnCourses)",
+    "value": [
+        {},
+        {
+            "ext55gb1l09_msLearnCourses": {
+                "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+                "courseType": "Developer",
+                "courseName": "Introduction to Microsoft Graph",
+                "courseId": 1
+            }
+        },
+        {}
+    ]
+}
+```
+
+>**注意：** 还可以对架构扩展属性应用 `$filter`，以检索集合中的属性与指定值匹配的对象。该语法为 `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`。例如，`GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`。支持 `eq` 和 `not` 运算符。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

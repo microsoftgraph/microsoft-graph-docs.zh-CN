@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: f89e8bd0c492d67cb408ce5eaa090231a6a0c357
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: bafd98995981238929dd311092c3d3e3d72d8d75
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684940"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211892"
 ---
 # <a name="list-channels"></a>列出频道
 
@@ -207,13 +207,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-all-shared-channels"></a>示例 3：列出所有共享通道
+### <a name="example-3-list-all-shared-channels"></a>示例 3: 列出所有共享频道
 
 #### <a name="request"></a>请求
 
-以下示例显示了列出所有共享通道的请求。
+以下示例显示了列出所有共享频道的请求。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_shared_channels"
@@ -221,6 +223,28 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels?$filter=membershipType eq 'shared'
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-shared-channels-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-shared-channels-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-shared-channels-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-shared-channels-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-shared-channels-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

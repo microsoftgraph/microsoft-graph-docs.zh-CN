@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4b43f13b984aa7a1708b48acc5a8959e4be78a60
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 8a14aa4ee74a3d978b0da3e8c8076098545f03e0
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629426"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210058"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -801,6 +801,8 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_schemaextension"
@@ -808,6 +810,32 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=ext55gb1l09_msLearnCourses
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-schemaextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-schemaextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-schemaextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-schemaextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-schemaextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -838,7 +866,7 @@ Content-type: application/json
 }
 ```
 
-> **注意：** 还可以对架构扩展属性应用 `$filter` 以检索集合中属性与指定值匹配的对象。 语法为`/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`。 例如，`GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`。 支持 `eq` 和 `not` 运算符。
+> **注意：** 还可以对架构扩展属性应用 `$filter`，以检索集合中的属性与指定值匹配的对象。该语法为 `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`。例如，`GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`。支持 `eq` 和 `not` 运算符。
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

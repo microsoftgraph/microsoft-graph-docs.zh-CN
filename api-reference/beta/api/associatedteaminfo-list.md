@@ -1,26 +1,26 @@
 ---
 title: 列出 associatedTeamInfo
-description: 获取与用户关联的Microsoft Teams中的团队列表。
+description: 获取用户与之关联的 Microsoft Teams 中的团队列表。
 author: devjha-ms
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 16842866ca4c2b03268e80eb838bbf953844c605
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: c94e2edd52bd647d2884051d0e9c53422d39c7b8
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685262"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203690"
 ---
 # <a name="list-associatedteaminfo"></a>列出 associatedTeamInfo
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[与用户](../resources/user.md)关联的Microsoft Teams中的[团队](../resources/associatedteaminfo.md)列表。
-目前， [用户](../resources/user.md) 可以通过两种不同的方式与 [团队](../resources/team.md) 关联：
-* [用户](../resources/user.md)可以是[团队](../resources/team.md)的直接成员。
-* [用户](../resources/user.md)可以是托管在[团队](../resources/team.md)中的共享[频道](../resources/channel.md)的成员。
+获取 [用户](../resources/user.md) 与之关联的 Microsoft Teams 中的 [团队](../resources/associatedteaminfo.md) 列表。
+目前，[用户](../resources/user.md) 可以通过两种不同的方式与 [团队](../resources/team.md) 相关联：
+* [用户](../resources/user.md) 可以是 [团队](../resources/team.md) 的直接成员。
+* [用户](../resources/user.md) 可以是 [团队](../resources/team.md) 中托管的共享 [频道](../resources/channel.md) 成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -56,9 +56,9 @@ GET /users/{user-id}/teamwork/associatedTeams
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [关联TeamInfo](../resources/associatedteaminfo.md) 对象的集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [associatedTeamInfo](../resources/associatedteaminfo.md) 对象集合。
 
-> **注意**：此 API 还返回用户是其直接成员的共享通道的主机团队。
+> **注意：** 此 API 还会返回用户是其直接成员的共享频道的托管团队。
 
 ## <a name="examples"></a>示例
 
@@ -66,6 +66,8 @@ GET /users/{user-id}/teamwork/associatedTeams
 
 请求示例如下所示。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_associatedteaminfo"
@@ -74,6 +76,32 @@ GET /users/{user-id}/teamwork/associatedTeams
 ``` http
 GET https://graph.microsoft.com/beta/me/teamwork/associatedTeams
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-associatedteaminfo-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-associatedteaminfo-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-associatedteaminfo-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-associatedteaminfo-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-associatedteaminfo-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-associatedteaminfo-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应
