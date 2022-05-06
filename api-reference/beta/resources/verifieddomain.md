@@ -1,16 +1,16 @@
 ---
 title: verifiedDomain 资源类型
-description: 指定租户的域。 **organization 实体的 verifiedDomains** 属性是 **VerifiedDomain 的集合**。
-localization_priority: Normal
+description: 指定租户的域。 组织实体的 verifiedDomains 属性是 verifiedDomain 对象的集合。
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: Jumaodhiss
-ms.openlocfilehash: b4a3a5bed105fe0e0849ddf7c21d7a1b087942ca
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: e792f30cf77d5199d27cae8d7ca7e6dbc6fc37da
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468679"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247033"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain 资源类型
 
@@ -18,17 +18,17 @@ ms.locfileid: "51468679"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定租户的域。 **organization 实体的 verifiedDomains** 属性是 **VerifiedDomain 的集合**。 [](organization.md)
+指定租户的域。 [组织](organization.md)实体 **的 verifiedDomains** 属性是 **verifiedDomain** 对象的集合。
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|capabilities|String|例如，“Email”、“OfficeCommunicationsOnline”。|
-|isDefault|Boolean|                如果这是与租户关联的默认域，则为 **true**；否则为 **false**。            |
-|isInitial|Boolean|如果这是与租户关联的初始域，则为 **true**；否则为 **false**|
-|name|String|域名；例如，“contoso.onmicrosoft.com”|
-|type|String|例如，“Managed”。|
+| 属性     | 类型    | 说明                                                                          |
+|:-------------|:--------|:-------------------------------------------------------------------------------------|
+| capabilities | String  | 例如，`Email`、`OfficeCommunicationsOnline`。                                  |
+| isDefault    | Boolean | `true` 如果这是与租户关联的默认域，否则， `false`. |
+| isInitial    | Boolean | `true` 如果这是与租户关联的初始域，否则， `false`. |
+| name         | String  | 域名;例如， `contoso.onmicrosoft.com`.                             |
+| type         | String  | 例如，`Managed`。                                                              |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -44,11 +44,11 @@ ms.locfileid: "51468679"
 
 ```json
 {
-  "capabilities": "string",
+  "capabilities": "String",
   "isDefault": true,
   "isInitial": true,
-  "name": "string",
-  "type": "string"
+  "name": "String",
+  "type": "String"
 }
 
 ```

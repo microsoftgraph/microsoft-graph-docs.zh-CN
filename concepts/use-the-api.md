@@ -4,12 +4,12 @@ description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源�
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 299f29cf740d1290a93c62da0724e0ebe21b6387
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7d146c6082aff2c6d1251dbb8b193f1e29d84d2f
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134015"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246599"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
@@ -45,7 +45,7 @@ Microsoft Graph API 在 [Microsoft Graph 元数据](traverse-the-graph.md#micros
 
 * 状态代码 - 表示成功或失败的 HTTP 状态代码。若要详细了解 HTTP 错误代码，请参阅[错误](errors.md)。
 * 响应消息 - 请求获取的数据或操作结果。对于某些操作，响应消息可能为空。
-* `nextLink` - 如果请求返回大量数据，则需要使用 `@odata.nextLink` 中返回的 URL 对其进行翻页。有关详细信息，请参阅[分页](paging.md)。
+* `@odata.nextLink` - 如果请求返回大量数据，则需要使用 `@odata.nextLink` 中返回的 URL 对其进行翻页。有关详细信息，请参阅[分页](paging.md)。
 
 ## <a name="http-methods"></a>HTTP 方法
 

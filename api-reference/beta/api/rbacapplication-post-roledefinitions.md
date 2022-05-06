@@ -1,18 +1,18 @@
 ---
-title: 创建 unifiedRoleDefinition
+title: 创建 roleDefinitions
 description: 创建新的 unifiedRoleDefinition 对象。
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7ed0b30e2e2f1a2c7c0b995cc8062a4bf0e68fde
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 6a53b70d813ba0104bcd93f525866d8c73cf378e
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65061081"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246830"
 ---
-# <a name="create-unifiedroledefinition"></a>创建 unifiedRoleDefinition
+# <a name="create-roledefinitions"></a>创建 roleDefinitions
 
 命名空间：microsoft.graph
 
@@ -25,7 +25,7 @@ ms.locfileid: "65061081"
 - 设备管理 (Intune) 
 - 目录 (Azure AD) 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 根据 RBAC 提供程序和权限类型 (委派或应用程序) 需要，请从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权权限之前 [要小心](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) ，请参阅 [权限](/graph/permissions-reference)。 
 
@@ -35,7 +35,7 @@ ms.locfileid: "65061081"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All  |
+|Application | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>对于设备管理 (Intune) 提供程序
 
@@ -43,7 +43,7 @@ ms.locfileid: "65061081"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  DeviceManagementRBAC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | DeviceManagementRBAC.ReadWrite.All |
+|Application | DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-a-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
@@ -51,7 +51,7 @@ ms.locfileid: "65061081"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|Application | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a12377bcc74e721f3e43bb378051bca7248ff34b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: dd02fdc75c4ccceb3c3b9eec88dfa2965f631e9a
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947271"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246865"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -40,12 +40,12 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪邮件更改会引发一组对 **delta** 函数的一次或多次调用。如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。你只需预先指定任意所需查询参数一次。在后续的请求中，只需复制并应用以前响应中的 `nextLink` 或 `deltaLink` URL，因为该 URL 已包含所需的编码参数。
+跟踪邮件更改会引发一组对 **delta** 函数的一次或多次调用。如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `@odata.nextLink` 或 `@odata.deltaLink` URL 的令牌部分。你只需预先指定任意所需查询参数一次。在后续的请求中，只需复制并应用以前响应中的 `@odata.nextLink` 或 `@odata.deltaLink` URL，因为该 URL 已包含所需的编码参数。
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 对同一个邮件集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示同一个邮件集合中有进一步的更改需要追踪。 |
+| $deltatoken | string | 对同一个邮件集合之前的 **delta** 函数调用的 `@odata.deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `@odata.deltaLink` URL。|
+| $skiptoken | string | 对之前的 **delta** 函数调用的 `@odata.nextLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示同一个邮件集合中有进一步的更改需要追踪。 |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 

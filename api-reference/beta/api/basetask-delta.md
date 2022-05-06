@@ -1,27 +1,27 @@
 ---
-title: baseTask：delta
-description: 获取一组已添加、删除或更新到特定 baseTaskList 中的 baseTask 资源。
+title: baseTask： delta
+description: 获取一组已在特定 baseTaskList 中添加、删除或更新的 baseTask 资源。
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a662af2401b7cb0e56aa1616c04b195aa0bf6cf7
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: c788b04c31b65ee46b7af0416c21bf21822b564e
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341783"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247180"
 ---
-# <a name="basetask-delta"></a>baseTask：delta
+# <a name="basetask-delta"></a>baseTask： delta
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取一 [组已](../resources/basetask.md) 添加、删除或更新到特定 [baseTaskList 中的 baseTask 资源](../resources/basetasklist.md)。
+获取一组已在特定 [baseTaskList](../resources/basetask.md) 中添加、删除或更新的 [baseTask](../resources/basetasklist.md) 资源。
 
-**baseTaskList** 中 **对 baseTask** 资源的 **delta** 函数调用类似于 GET 请求，只不过通过在这些调用的一个或多个调用中正确应用状态 [](/graph/delta-query-overview)令牌，可以查询 **baseTask 中 baseTask** 中的增量更改。 这允许您维护和同步用户 **baseTask** 资源的本地存储，而无需每次从服务器提取整个集合。
+**baseTaskList** 中 **baseTask** 资源的 **增量** 函数调用类似于 GET 请求，只是通过在其中一个或多个调用中适当应用 [状态令牌](/graph/delta-query-overview)，可以查询该 **baseTaskList 中的 baseTask** 中的增量更改。 这样便可以维护和同步用户 **的 baseTask** 资源的本地存储，而无需每次从服务器提取整个集。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -43,16 +43,16 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪 **baseTask 集合中的** 更改会导致一次或多 **组 delta** 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，只需 `nextLink` 复制并应用上一响应中的 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
+跟踪 **baseTask** 集合中的更改会产生一轮或多次 **增量** 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `@odata.nextLink` 或 `@odata.deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中`@odata.nextLink``@odata.deltaLink`，只需复制并应用上一个响应中的 URL，因为该 URL 已包含编码的所需参数。
 
 | 查询参数    | 类型 |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 对 [同一](/graph/delta-query-overview) `deltaLink` baseTask 集合之前的 **delta** 函数调用的 URL 中返回的状态令牌，指示完成这一轮更改跟踪。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 上 [一个](/graph/delta-query-overview) **delta** 函数`nextLink`调用的 URL 中返回的状态令牌，指示同一 baseTask 集合中还有进一步的更改需要跟踪。 |
+| $deltatoken | string | 在上一个 **增量** 函数调用同一 baseTask 集合的 URL 中`@odata.deltaLink`返回的 [状态令](/graph/delta-query-overview)牌，指示完成该轮更改跟踪。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `@odata.deltaLink` URL。|
+| $skiptoken | string | 在上一个 **增量** 函数调用的 URL 中`@odata.nextLink`返回的 [状态令牌](/graph/delta-query-overview)，指示要在同一 baseTask 集合中进行进一步的更改。 |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
-- delta 查询支持和 `$filter` `$top``$expand` **baseTask 的查询参数**。 
+- Delta 查询支持`$filter``$top`以及 `$expand` **baseTask** 的查询参数。 
 - 不支持 `$search`。
 
 ## <a name="request-headers"></a>请求标头
@@ -66,7 +66,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [baseTask](../resources/basetask.md) 集合。
+如果成功，此函数在响应正文中返回 `200 OK` 响应代码和 [baseTask](../resources/basetask.md) 集合。
 
 ## <a name="examples"></a>示例
 

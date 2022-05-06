@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: b439eba70c583004a98f45bc78908b040842d11c
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 2e6b169fb1adffd6a55f04e8c7dc20c94431a9d1
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133273"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212642"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -405,11 +405,11 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_Calls.Initiate.All_|从应用发起一对一拨出通话（预览版）|允许应用在没有登录用户的情况下，向单个用户发起播出通话并将通话转接到组织目录中的用户。|是|
-|_Calls.InitiateGroupCall.All_|从应用发起组拨出通话（预览版）|允许应用在没有登录用户的情况下，向多个用户发起播出通话并向组织中的会议添加参与者。|是|
-|_Calls.JoinGroupCall.All_|作为应用加入组通话和会议（预览版）|允许应用在没有登录用户的情况下，加入组织中的组通话和计划会议。 应用将加入到租户的会议中并获得目录用户特权。|是|
-|_Calls.JoinGroupCallasGuest.All_|作为来宾加入组通话和会议（预览版）|允许应用在没有登录用户的情况下，以匿名方式加入组织中的组通话和计划会议。 应用将作为来宾加入租户的会议。|是|
-|_Calls.AccessMedia.All_\*|作为应用访问通话中的媒体数据流（预览版）|允许应用在没有登录用户的情况下，直接访问通话中的媒体数据流。|是|
+|_Calls.Initiate.All_|从应用发起一对一传出呼叫|允许应用在没有登录用户的情况下，向单个用户发起播出通话并将通话转接到组织目录中的用户。|是|
+|_Calls.InitiateGroupCall.All_|从应用发起组传出呼叫|允许应用在没有登录用户的情况下，向多个用户发起播出通话并向组织中的会议添加参与者。|是|
+|_Calls.JoinGroupCall.All_|作为应用加入组通话和会议|允许应用在没有登录用户的情况下，加入组织中的组通话和计划会议。 应用将加入到租户的会议中并获得目录用户特权。|是|
+|_Calls.JoinGroupCallasGuest.All_|作为来宾加入组通话和会议|允许应用在没有登录用户的情况下，以匿名方式加入组织中的组通话和计划会议。 应用将作为来宾加入租户的会议。|是|
+|_Calls.AccessMedia.All_\*|作为应用访问通话中的媒体流|允许应用在没有登录用户的情况下，直接访问通话中的媒体数据流。|是|
 
 > \***重要说明：** 不得使用云通信 API 进行记录，否则保留来自应用程序访问的通话或会议的媒体内容，或派生自该媒体内容的数据。 请确保你遵守有关通信的数据保护和机密性方面的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
@@ -1367,7 +1367,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1466,29 +1466,25 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 ---
 
-## <a name="openid-connect-oidc-permissions"></a>OpenID Connect （OIDC） 权限
-
-#### <a name="delegated-permissions"></a>委派权限
+## <a name="openid-connect-oidc-scopes"></a>OpenID Connect (OIDC)作用域
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _email_ |    查看用户的电子邮件地址 | 允许应用读取用户的主电子邮件地址。 | 否 | 否 |
-| _offline_access_ |    随时访问用户数据 | 允许应用读取和更新用户数据，即使用户当前没有在使用此应用，也不例外。| 否 | 否 |
-| _openid_ |    让用户登录 | 允许用户以其工作或学校帐户登录应用，并允许应用查看用户的基本个人资料信息。| 否 | 否 |
-| _个人资料_ |    查看用户的基本个人资料 | 允许应用查看用户的基本个人资料（名称、图片、用户名称）。| 否 | 否 |
+| _email_ |    查看用户的电子邮件地址 | 允许应用读取用户的主电子邮件地址。 | 否 | 是 |
+| _offline_access_ |    随时访问用户数据 | 允许应用读取和更新用户数据，即使用户当前没有在使用此应用，也不例外。| 否 | 是 |
+| _openid_ |    让用户登录 | 通过使用此权限，应用可以以子声明的形式接收用户的唯一标识符。 该权限还允许应用访问 UserInfo 终结点。 openid 作用域可用于 Microsoft 标识平台令牌终结点，从而获取 ID 令牌。 应用可以使用这些令牌进行身份验证。| 否 | 是 |
+| _个人资料_ |    查看用户的基本个人资料 | 允许应用查看用户的基本个人资料（名称、图片、用户名称）。| 否 | 是 |
 
-#### <a name="application-permissions"></a>应用程序权限
+### <a name="remarks"></a>备注
+可以使用这些作用域指定要在 Azure AD 授权和令牌请求中返回的项目。Azure AD v1.0 和 v2.0 终结点以不同的方式支持它们。
 
-无。
+使用 Azure AD v1.0 终结点时，仅使用 _openid_ 作用域。当使用 OpenID Connect 协议将用户登录到应用时，可以在授权请求的 *作用域* 参数中指定 openid，从而返回 ID 令牌。有关详细信息，请参阅 [使用 OpenID Connect 和 Azure Active Directory 授权对 Web 应用程序的访问权限](/azure/active-directory/develop/active-directory-protocols-openid-connect-code)。要成功返回 ID 令牌，还必须确保在注册应用时已配置 _User.Read_ 权限。
 
-### <a name="remarks"></a>注解
-可以使用这些权限指定要在 Azure AD 授权和令牌请求中返回的项目。Azure AD v1.0 和 v2.0 终结点以不同的方式支持它们。
+使用 Azure AD v2.0 终结点时，当使用 OAuth 2.0 或 OpenID Connect 协议时，在 _作用域_ 参数中指定 _联机\_访问_ 作用域，从而显式请求刷新令牌。借助 OpenID Connect，指定 _openid_ 作用域以请求 ID 令牌。还可以指定 _电子邮件_ 作用域、_配置文件_ 作用域或两者，从而在 ID 令牌中返回其他声明。使用 v2.0 终结点时，无需指定 _User.Read_ 以返回 ID 令牌。有关详细信息，请参阅 [OpenID Connect 作用域](/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes)。
 
-使用 Azure AD (v1.0) 终结点时，仅使用 _openid_ 权限。在授权请求的 *scope* 参数中指定它，以在使用 OpenID Connect 协议让用户登录应用时返回 ID 令牌。有关详细信息，请参阅 [使用 OpenID Connect 和 Azure Active Directory 来授权访问 Web 应用程序](/azure/active-directory/develop/active-directory-protocols-openid-connect-code)。若要成功返回 ID 令牌，还必须确保在注册应用时已配置 _User.Read_ 权限。
-
-使用 Azure AD v2.0 终结点时，在 _scope_ 参数中指定 _offline\_access_ 权限，以在使用 OAuth 2.0 或 OpenID Connect 协议时显式请求获取刷新令牌。使用 OpenID Connect 时，指定 _openid_ 权限来请求获取 ID 令牌。还可指定 _email_ 权限和/或 _profile_ 权限，以在 ID 令牌中返回其他声明。使用 v2.0 终结点时，无需指定 _User.Read_ 来返回 ID 令牌。有关详细信息，请参阅 [OpenID Connect 作用域](/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes)。
-
-> **重要说明**：目前，Microsoft 身份验证库 (MSAL) 默认在授权和令牌请求中指定 _offline\_access_、_openid_、_profile_ 和 _email_。也就是说，在默认情况下，如果显式指定这些权限，Azure AD 可能会返回错误。
+> [!IMPORTANT]
+> 
+> Microsoft 身份验证库(MSAL)目前默认在授权和令牌请求中指定 _脱机\_访问_、_openid_、_配置文件_ 和 _电子邮件_。这意味着，对于默认情况，如果显式指定这些作用域，则 Azure AD 可能会返回错误。
 
 ---
 
@@ -1900,7 +1896,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _SecurityEvents.Read.All_        |  读取组织的安全事件 | 允许应用代表已登录用户读取组织的安全事件。 | 是  | 否 |
 | _SecurityEvents.ReadWrite.All_   | 读取和更新组织的安全事件。 | 允许应用代表已登录用户读取组织的安全事件。 还允许应用代表已登录用户更新安全事件中的可编辑属性。 | 是  | 否 |
-| _SecurityActions.Read.All_        |  读取组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。 | 可访问  | 否 |
+| _SecurityActions.Read.All_        |  读取组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。 | 是  | 否 |
 | _SecurityActions.ReadWrite.All_   | 读取和更新组织的安全措施 | 允许应用代表登录的用户读取或更新组织的安全措施。  | 是  | 否 |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | 管理此应用创建或拥有的威胁指标 |允许应用代表已登录的用户创建威胁指标和完全管理这些威胁指标（阅读、更新和删除）。  | 是  | 否 |
 | _ThreatIndicators.Read.All_   | 读取组织的威胁指示器 | 允许应用代表已登录的用户读取组织的所有威胁指示器。  | 是  | 否 |

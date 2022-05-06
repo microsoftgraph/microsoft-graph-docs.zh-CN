@@ -1,24 +1,24 @@
 ---
 title: 列出 domainNameReferences
-description: 检索具有对域的引用的 directoryObject 列表。
+description: 检索引用域的 directoryObject 列表。
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d91fbe92928fd339cbccab80296182fc394da8ea
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 570146bf4da429711e3ce7afe31264365bda29b9
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136386"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247348"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
 命名空间：microsoft.graph
 
-检索具有对域的引用的 [directoryObject](../resources/directoryobject.md) 列表。 返回的列表将包含所有依赖域的目录对象。
+检索引用域的 [directoryObject](../resources/directoryobject.md) 列表。 返回的列表将包含对域具有依赖关系的所有目录对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "62136386"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.Read.All、Domain.ReadWrite.All |
+|Application | Domain.Read.All、Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -39,7 +39,7 @@ GET /domains/{id}/domainNameReferences
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters)，`$filter`以帮助自定义响应。 例如，只能按返回的对象的 OData 类型进行`/domains/{domainId}/domainNameReferences/microsoft.graph.user`筛选， `/domains/{domainId}/domainNameReferences/microsoft.graph.group`
 
 ## <a name="request-headers"></a>请求标头
 

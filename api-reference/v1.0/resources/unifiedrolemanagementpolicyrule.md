@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 06db472f1af4634d409f51afb788dfca80d33dda
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 1ef9d1e4998a46f503b8960c2c0c9fca452a5c08
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134021"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246977"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>unifiedRoleManagementPolicyRule 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "65134021"
 
 继承自 [entity](../resources/entity.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 无。
 
@@ -35,7 +35,7 @@ ms.locfileid: "65134021"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|规则的标识符。 继承自 [entity](../resources/entity.md)。 只读。|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)| **未实现。** 定义角色管理策略规则所针对的范围的详细信息。 详细信息可以包括主体类型、角色分配类型和影响角色的操作。 支持 `$filter`（`eq`、`ne`）。|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)| 定义角色管理策略规则所针对的范围的详细信息。 详细信息可以包括主体类型、角色分配类型和影响角色的操作。 支持 `$filter`（`eq`、`ne`）。|
 
 ## <a name="relationships"></a>关系
 无。

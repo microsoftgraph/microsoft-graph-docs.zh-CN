@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 15db1271f4d7f31525b2b548542531048e14b887
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 12b6399f7f513cfe99f11a535c086c242580169c
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443182"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247369"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 
 #### <a name="response"></a>响应
-下面展示了示例请求。 响应中的 `nextLink` 可用于获取下一页消息。
+下面展示了示例请求。 响应中的 `@odata.nextLink` 可用于获取下一页消息。
 
 <!-- {
   "blockType": "response",

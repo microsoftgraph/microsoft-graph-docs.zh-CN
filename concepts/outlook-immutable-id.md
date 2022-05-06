@@ -4,12 +4,12 @@ description: 借助不可变标识符，应用程序可为 Outlook 项获取在�
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: dbb03ebc6397152b4b9ae9e5e260a0567f477a08
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 51090217a7f92f4bf4803ad97770e4e6e3acbbef
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135891"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246907"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>获取 Outlook 资源的不可变标识符
 
@@ -65,7 +65,7 @@ Prefer: IdType="ImmutableId"
 
 ## <a name="immutable-id-with-delta-query"></a>使用 delta 查询发送不可变 ID
 
-可以通过添加 `Prefer: IdType="ImmutableId"` 头，请求 Microsoft Graph 在受支持资源类型的 [delta 查询响应](delta-query-overview.md)中返回不可变 ID。 由于 delta 查询返回的 `nextLink` 和 `deltaLink` 值与两种 ID 格式都兼容，因此应用无需重新同步，即可利用不可变 ID。 可以使用此头在以后获取不可变 ID，也可以单独[更新应用的存储](#updating-existing-data)。
+可以通过添加 `Prefer: IdType="ImmutableId"` 头，请求 Microsoft Graph 在受支持资源类型的 [delta 查询响应](delta-query-overview.md)中返回不可变 ID。 由于 delta 查询返回的 `@odata.nextLink` 和 `@odata.deltaLink` 值与两种 ID 格式都兼容，因此应用无需重新同步，即可利用不可变 ID。 可以使用此头在以后获取不可变 ID，也可以单独[更新应用的存储](#updating-existing-data)。
 
 ## <a name="updating-existing-data"></a>更新现有数据
 

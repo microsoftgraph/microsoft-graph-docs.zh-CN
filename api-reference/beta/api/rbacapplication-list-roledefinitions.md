@@ -1,34 +1,34 @@
 ---
-title: 列出 unifiedRoleDefinitions
+title: 列出 roleDefinitions
 description: 获取 unifiedRoleDefinition 对象的列表。
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 197ca38aee291954cdac700a15ce167aaaa6f127
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: f9409d573cac02be8e870c6e7572713ec72c30ff
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669254"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246879"
 ---
-# <a name="list-unifiedroledefinitions"></a>列出 unifiedRoleDefinitions
+# <a name="list-roledefinitions"></a>列出 roleDefinitions
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 RBAC [提供程序的 unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象列表。
+获取 RBAC 提供程序的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象列表。
 
 目前支持以下 RBAC 提供程序：
 - 云电脑 
-- Intune (设备) 
+- 设备管理 (Intune) 
 - 目录 (Azure AD)  
 - 权利管理 (Azure AD) 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解更多信息，包括在 [选择](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 更多特权权限之前要谨慎，请参阅 [权限](/graph/permissions-reference)。
+根据 RBAC 提供程序和权限类型 (委派或应用程序) 需要，请从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权权限之前 [要小心](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) ，请参阅 [权限](/graph/permissions-reference)。
 
 ### <a name="for-a-cloud-pc-provider"></a>对于云电脑提供商
 
@@ -36,15 +36,15 @@ ms.locfileid: "63669254"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  RoleManagement.Read.CloudPC、CloudPC.Read.All、RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All、RoleManagement.Read.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.Read.CloudPC、CloudPC.Read.All、RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All、RoleManagement.Read.All  |
+|Application | RoleManagement.Read.CloudPC、CloudPC.Read.All、RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All、RoleManagement.Read.All  |
 
-### <a name="for-a-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
+### <a name="for-a-device-management-intune-provider"></a>对于设备管理 (Intune) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
+|Application | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-a-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
@@ -52,7 +52,7 @@ ms.locfileid: "63669254"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|Application | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ### <a name="for-an-entitlement-management-provider"></a>对于权利管理提供程序
 
@@ -89,7 +89,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持对 `$filter` 、 `id`和 `displayName`属性使用查询 `isBuiltIn` 参数。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持`$filter`查询参数和`id``displayName``isBuiltIn`属性。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -103,7 +103,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

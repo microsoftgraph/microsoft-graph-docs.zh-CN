@@ -1,24 +1,24 @@
 ---
 title: educationSchool： delta
-description: 获取新建或更新的学校，而无需执行整个学校集合的完整读取。
+description: 获取新创建或更新的学校，而无需对整个学校集合执行完整读取操作。
 author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3c1bd5fa223b876725ce49a72bd0c34ac88be1ee
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 0d03adf36b56ded39b62c7101323ede33ebcbf9c
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343746"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246613"
 ---
 # <a name="educationschool-delta"></a>educationSchool： delta
 
 命名空间：microsoft.graph
 
-获取新建或更新的学校，而无需执行整个学校集合的完整读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
+获取新创建或更新的学校，而无需对整个学校集合执行完整读取操作。 有关详细信息，请参阅 [“使用增量查询](/graph/delta-query-overview) ”。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "62343746"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | EduRoster.ReadBasic                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
+| Application                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,12 +51,12 @@ GET /education/schools/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [educationSchool](../resources/educationschool.md) 集合。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此函数在响应正文中返回 `200 OK` 响应代码和 [educationSchool](../resources/educationschool.md) 集合。 该响应还包括 `@odata.nextLink`URL 或 `@odata.deltaLink`URL。
 
-- `nextLink`如果返回 URL，则会话中有其他要检索的数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
-- `deltaLink`如果返回 URL，则不再返回有关资源现有状态的数据。 保留并使用 `deltaLink` URL 了解将来对资源的更改。
+- `@odata.nextLink`如果返回 URL，则会话中将检索其他数据页。 应用程序继续使用 `@odata.nextLink` URL 发出请求，直到响应中包含 `@odata.deltaLink` URL。
+- `@odata.deltaLink`如果返回 URL，则不再有关于要返回的资源的现有状态的数据。 保留并使用 `@odata.deltaLink` URL 了解将来对资源所做的更改。
 
-有关详细信息，请参阅使用 [delta 查询](/graph/delta-query-overview)。 有关示例请求，请参阅 [获取用户的增量更改](/graph/delta-query-users)。
+有关详细信息，请参阅 [使用增量查询](/graph/delta-query-overview)。 有关请求的示例，请参阅 [获取用户的增量更改](/graph/delta-query-users)。
 
 ## <a name="examples"></a>示例
 

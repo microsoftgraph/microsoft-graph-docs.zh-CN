@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6293582e47eccc81ee3ac7ecbc47e9e8e6f38082
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: a042e7c3cd23ad8748075dd8e04af8c9b62b0ccc
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134056"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246739"
 ---
 # <a name="overview-of-role-management-through-the-privileged-identity-management-pim-api"></a>通过特权标识管理 (PIM) API 进行角色管理概述
 
@@ -62,11 +62,21 @@ PIM 允许通过创建永久性分配或临时分配来管理活动角色分配�
 
 ## <a name="role-settings-and-pim"></a>角色设置和 PIM
 
-每个Azure AD角色定义设置或规则。 此类设置包括激活符合条件的角色是否需要多重身份验证 (MFA) 、理由或审批。 或者，是否可以为角色的主体创建永久性分配或可取性。 这些特定于角色的设置将确定通过 PIM 创建或管理角色分配和可实现的设置。 在 Microsoft Graph中，这些角色设置通过 [unifiedRoleManagementPolicy 资源类型](unifiedrolemanagementpolicy.md)和相关方法公开。
+每个Azure AD角色定义设置或规则。 此类设置包括激活符合条件的角色是否需要多重身份验证 (MFA) 、理由或审批。 或者，是否可以为角色的主体创建永久性分配或可取性。 这些特定于角色的设置将确定通过 PIM 创建或管理角色分配和可实现的设置。 在 Microsoft Graph中，这些角色设置通过 [unifiedRoleManagementPolicy](unifiedrolemanagementpolicy.md) 和 [unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) 资源类型及其相关方法进行管理。
 
 例如，假定默认情况下，角色不允许永久活动分配，并且为活动分配定义最多 15 天。 尝试在没有过期日期的情况下创建 [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) 对象将返回 `400 Bad Request` 违反过期规则的响应代码。
 
-使用 [unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) 资源类型及其相关方法检索适用于每个Azure AD角色的规则。 然后，使用 [Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md) API 更新应用于分配给特定Azure AD角色的策略的默认规则或设置。
+下表列出了使用 PIM 管理Azure AD角色设置或规则以及要调用的 API 的方案：
+
+|应用场景  |API  |
+|---------|---------|
+|检索角色管理策略和关联的规则或设置   |   [列出 unifiedRoleManagementPolicies](../api/policyroot-list-rolemanagementpolicies.md)      |
+|检索角色管理策略及其关联的规则或设置 |   [获取 unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)      |
+|检索为角色管理策略定义的规则或设置 | [List rules](../api/unifiedrolemanagementpolicy-list-rules.md)       |
+|检索为角色管理策略定义的规则或设置 |  [获取 unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)      |
+|更新为角色管理策略定义的规则或设置|[更新 unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|
+|获取所有角色管理策略分配的详细信息，包括与Azure AD角色关联的策略和规则或设置 |  [列出 unifiedRoleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md)      |
+|获取角色管理策略分配的详细信息，包括与Azure AD角色关联的策略和规则或设置 |   [获取 unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md)     |
 
 有关角色设置的详细信息，请参阅[Privileged Identity Management中配置Azure AD角色设置](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings)。
 

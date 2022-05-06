@@ -1,18 +1,18 @@
 ---
-title: 列出 unifiedRoleDefinitions
+title: 列出 roleDefinitions
 description: 获取 unifiedRoleDefinition 对象的列表。
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 992c25a0e050fe8fa58cc0cb674acb0db64302d7
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: eada3530c736ba8be1e027ea4610ddcb6b69cafd
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65207129"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246963"
 ---
-# <a name="list-unifiedroledefinitions"></a>列出 unifiedRoleDefinitions
+# <a name="list-roledefinitions"></a>列出 roleDefinitions
 
 命名空间：microsoft.graph
 
@@ -22,7 +22,7 @@ ms.locfileid: "65207129"
 - 目录 (Azure AD) 
 - 权利管理 (Azure AD) 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

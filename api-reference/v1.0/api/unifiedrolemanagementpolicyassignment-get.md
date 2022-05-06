@@ -1,23 +1,23 @@
 ---
 title: 获取 unifiedRoleManagementPolicyAssignment
-description: 获取角色管理策略分配和关联策略的详细信息。
+description: 获取角色管理策略分配的详细信息，包括与Azure AD角色关联的策略和规则。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 67801e603a87ea395fae33b4ce8b3535659c301e
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 167a2682d5e59ff948a3afcf12fc5143352a62e0
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204503"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246634"
 ---
 # <a name="get-unifiedrolemanagementpolicyassignment"></a>获取 unifiedRoleManagementPolicyAssignment
 命名空间：microsoft.graph
 
-获取角色管理策略分配和关联策略的详细信息。
+获取角色管理策略分配的详细信息，包括与Azure AD角色关联的策略和规则。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

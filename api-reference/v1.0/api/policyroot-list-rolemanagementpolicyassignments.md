@@ -1,23 +1,23 @@
 ---
 title: 列出 roleManagementPolicyAssignments
-description: 获取所有角色管理策略分配的详细信息。
+description: 获取所有角色管理策略分配的详细信息，包括与Azure AD角色关联的策略和规则。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5ebb16cc0f2ee140d4c1151a88de3f4bf57b717d
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: ec171a251928fab96bfb10a2a9f58143c0e204de
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65207353"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246816"
 ---
 # <a name="list-rolemanagementpolicyassignments"></a>列出 roleManagementPolicyAssignments
 命名空间：microsoft.graph
 
-获取所有角色管理策略分配的详细信息。
+获取所有角色管理策略分配的详细信息，包括与Azure AD角色关联的策略和规则。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

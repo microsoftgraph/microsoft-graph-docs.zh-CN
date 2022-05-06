@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 93fcc9136f176b89a6009b3740366b8629087b16
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 730be028a09c85cfea581151ebac01263b9fc891
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65203650"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247383"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -20,7 +20,7 @@ ms.locfileid: "65203650"
 
 获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完整读取。 有关详细信息，请参阅 [使用 Delta 查询](/graph/delta-query-overview) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,16 +42,16 @@ GET /groups/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪组中的更改会触发一个或多个 **delta** 函数调用。如果使用任何查询参数（而不是 `$deltatoken` 和 `$skiptoken`），必须在初始 **delta** 请求中指定它。Microsoft Graph 会自动将任何指定参数编码为响应中返回的 `nextLink` 或 `deltaLink` URL 的令牌部分。
+跟踪组中的更改会触发一个或多个 **delta** 函数调用。如果使用任何查询参数（而不是 `$deltatoken` 和 `$skiptoken`），必须在初始 **delta** 请求中指定它。Microsoft Graph 会自动将任何指定参数编码为响应中返回的 `@odata.nextLink` 或 `@odata.deltaLink` URL 的令牌部分。
 
 只需预先指定所需的任何查询参数一次。
 
-在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
+在后续请求中，可以复制并应用之前响应中返回的 `@odata.nextLink` 或 `@odata.deltaLink` URL，因为此 URL 已包含所需的编码参数。
 
 | 查询参数 | 类型   | 说明                                                                                                                                                                                                                                                                                                                                                   |
 | :-------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| $deltatoken     | string | 对同一个组集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。 |
-| $skiptoken      | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示同一个组集合中有进一步的更改需要追踪。                                                                                                                                                         |
+| $deltatoken     | string | 对同一个组集合之前的 **delta** 函数调用的 `@odata.deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `@odata.deltaLink` URL。 |
+| $skiptoken      | string | 对之前的 **delta** 函数调用的 `@odata.nextLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示同一个组集合中有进一步的更改需要追踪。                                                                                                                                                         |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
@@ -68,7 +68,7 @@ GET /groups/delta
 | :------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | 持有者&lt;令牌&gt;                                                                                                                                                           |
 | Content-Type  | application/json                                                                                                                                                               |
-| Prefer        | return=minimal <br><br>在使用 `deltaLink` 的请求中执行此标头将仅返回自上一轮之后发生更改的对象属性。可选。 |
+| Prefer        | return=minimal <br><br>在使用 `@odata.deltaLink` 的请求中执行此标头将仅返回自上一轮之后发生更改的对象属性。可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -76,20 +76,20 @@ GET /groups/delta
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../resources/group.md)集合对象。 响应还包括一个状态令牌，该令牌要么 `nextLink` 是 URL，要么是 `deltaLink` URL。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../resources/group.md)集合对象。 响应还包括一个状态令牌，该令牌要么 `@odata.nextLink` 是 URL，要么是 `@odata.deltaLink` URL。
 
-- 如果返回 `nextLink`URL：
+- 如果返回 `@odata.nextLink`URL：
 
-  - 这表明会话中存在要检索的其他数据页面。应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
+  - 这表明会话中存在要检索的其他数据页面。应用程序继续使用 `@odata.nextLink` URL 发出请求，直到响应中包含 `@odata.deltaLink` URL。
   - 响应包含与初始 Delta 查询请求相同的属性集。 这使你能够在发起 Delta 循环时捕获对象当前的完整状态。
 
-- 如果返回 `deltaLink`URL：
-  - 这表示未返回关于资源现有状态的更多数据。 保存并使用 `deltaLink` URL 来了解下一轮资源更改。
-  - 只有对于在签发 `deltaLink` 之后更改的属性，你才可以选择指定 `Prefer:return=minimal` 标头以包含在响应值中。
+- 如果返回 `@odata.deltaLink`URL：
+  - 这表示未返回关于资源现有状态的更多数据。 保存并使用 `@odata.deltaLink` URL 来了解下一轮资源更改。
+  - 只有对于在签发 `@odata.deltaLink` 之后更改的属性，你才可以选择指定 `Prefer:return=minimal` 标头以包含在响应值中。
 
 #### <a name="default-return-the-same-properties-as-initial-delta-request"></a>默认：返回与初始 Delta 请求相同的属性
 
-默认情况下，使用 `deltaLink` 或 `nextLink` 的请求将通过以下方式返回与初始 Delta 查询中选择的相同属性：
+默认情况下，使用 `@odata.deltaLink` 或 `@odata.nextLink` 的请求将通过以下方式返回与初始 Delta 查询中选择的相同属性：
 
 - 如果属性已更改，则新值将包括在响应中。 这包括设为 Null 值的属性。
 - 如果属性未更改，则旧值将包括在响应中。
@@ -104,7 +104,7 @@ GET /groups/delta
 - 如果属性已更改，则新值将包括在响应中。 这包括设为 Null 值的属性。
 - 如果尚未更改属性，则该属性不会包括在响应中。（不同于默认行为。）
 
-> **注意：** 可以在 Delta 循环中的任何时间点将标头添加到 `deltaLink` 请求中。 标头仅影响响应中包含的属性集，它不会影响执行 Delta 查询的方式。 请参阅下面的[第三个示例](#request-3)。
+> **注意：** 可以在 Delta 循环中的任何时间点将标头添加到 `@odata.deltaLink` 请求中。 标头仅影响响应中包含的属性集，它不会影响执行 Delta 查询的方式。 请参阅下面的[第三个示例](#request-3)。
 
 ### <a name="example"></a>示例
 
@@ -157,7 +157,7 @@ GET https://graph.microsoft.com/beta/groups/delta
 
 #### <a name="response-1"></a>响应 1
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。
+以下示例所示为使用从查询初始化获得的 `@odata.deltaLink` 时的响应。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 >
@@ -250,7 +250,7 @@ GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,descriptio
 
 #### <a name="response-2"></a>响应 2
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，所有 3 种属性将包括在响应中，并且无法知道在获得 `deltaLink` 之后发生更改的属性。
+以下示例所示为使用从查询初始化获得的 `@odata.deltaLink` 时的响应。 请注意，所有 3 种属性将包括在响应中，并且无法知道在获得 `@odata.deltaLink` 之后发生更改的属性。
 
 <!-- {
   "blockType": "response",
@@ -326,7 +326,7 @@ Prefer: return=minimal
 
 #### <a name="response-3"></a>响应 3
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，`mailNickname` 属性不包括在内，这意味着它在上一轮 Delta 查询之后未发生更改；并且 `displayName` 和 `description` 将包括在内，这意味着其值已发生更改。
+以下示例所示为使用从查询初始化获得的 `@odata.deltaLink` 时的响应。 请注意，`mailNickname` 属性不包括在内，这意味着它在上一轮 Delta 查询之后未发生更改；并且 `displayName` 和 `description` 将包括在内，这意味着其值已发生更改。
 
 <!-- {
   "blockType": "response",

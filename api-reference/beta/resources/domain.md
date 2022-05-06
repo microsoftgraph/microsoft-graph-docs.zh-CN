@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 981b64bf5becec9bc51072700580781f855815bf
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: bcc45acf0bab837c9724967bb826e37d55573c83
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060561"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246697"
 ---
 # <a name="domain-resource-type"></a>域资源类型
 
@@ -63,7 +63,7 @@ ms.locfileid: "65060561"
 |isVerified|Boolean| `true` 如果域已完成域所有权验证。 不可为 null |
 |passwordNotificationWindowInDays|Int32|指定用户收到其密码过期通知之前的天数。 如果未设置该属性，将使用默认值 14 天。|
 |passwordValidityPeriodInDays|Int32| 指定必须更改密码之前密码有效的时间长度。 如果未设置该属性，将使用默认值 90 天。 |
-|supportedServices|字符串集合| 分配给域的功能。 可以包括`0``1`或包含以下值的更多内容：`Email`、、`Sharepoint`、`SharePointDefaultDomain``OfficeCommunicationsOnline``EmailInternalRelayOnly`、、、`SharePointPublic``FullRedelegation`、、`OrgIdAuthentication`、。 `Intune``Yammer` 可以使用图形 API添加/删除的值包括： `Email`， ， `OfficeCommunicationsOnline`。 `Yammer` 不可为 null|
+|supportedServices|String collection| 分配给域的功能。 可以包括`0``1`或包含以下值的更多内容：`Email`、、`Sharepoint`、`SharePointDefaultDomain``OfficeCommunicationsOnline``EmailInternalRelayOnly`、、、`SharePointPublic``FullRedelegation`、、`OrgIdAuthentication`、。 `Intune``Yammer` 可以使用图形 API添加/删除的值包括： `Email`， ， `OfficeCommunicationsOnline`。 `Yammer` 不可为 null。|
 |state|[domainState](domainstate.md)| 为域计划异步操作的状态。 |
 
 ## <a name="relationships"></a>关系
@@ -72,10 +72,10 @@ ms.locfileid: "65060561"
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|domainNameReferences|[directoryObject](directoryobject.md) collection| 只读，可为 Null|
-|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) 集合| 在 Microsoft Online 服务使用域之前，客户会将 DNS 记录添加到域的 DNS 区域文件中。 只读，可为 Null |
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) 集合| 在客户使用Azure AD完成域所有权验证之前，DNS 记录客户添加到域的 DNS 区域文件。 只读，可为 Null|
-|federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| 客户在与Azure AD联合时配置的域设置。|
+|domainNameReferences|[directoryObject](directoryobject.md) collection| 引用域 ID 的用户和组等对象。 只读，可为 Null。 支持 `$expand` 并 `$filter` 由返回的对象的 OData 类型提供支持。 例如 `/domains/{domainId}/domainNameReferences/microsoft.graph.user` 和 `/domains/{domainId}/domainNameReferences/microsoft.graph.group`.|
+|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) 集合| 在 Microsoft Online 服务使用域之前，客户会将 DNS 记录添加到域的 DNS 区域文件中。 只读，可为 Null。 支持 `$expand`。 |
+|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) 集合| 在客户使用Azure AD完成域所有权验证之前，DNS 记录客户添加到域的 DNS 区域文件。 只读，可为 Null。 支持 `$expand`。|
+|federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| 客户在与Azure AD联合时配置的域设置。 支持 `$expand`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 813e0bd3ec6c5327f3bd0028d9b1c8c59eab5c5d
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: b03374daa233ca550e10faefc92b1b7d7c843e5b
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134051"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247208"
 ---
 # <a name="unifiedrolemanagementpolicyassignment-resource-type"></a>unifiedRoleManagementPolicyAssignment 资源类型
 
@@ -23,16 +23,9 @@ ms.locfileid: "65134051"
 ## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 unifiedRoleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md)|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 集合|获取 [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 对象及其属性的列表。|
+|[列出 unifiedRoleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md)|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 集合|获取所有角色管理策略分配的详细信息，包括与Azure AD角色关联的策略和规则。|
 |[获取 unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md)|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md)|读取 [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 对象的属性和关系。|
 
-<!--
-|[Create unifiedRoleManagementPolicyAssignment](../api/policyroot-post-rolemanagementpolicyassignments.md)|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md)|Create a new [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) object.|
-|[Update unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-update.md)|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md)|Update the properties of an [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) object.|
-|[Delete unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-delete.md)|None|Deletes an [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) object.|
-|[List unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicyassignment-list-policy.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) collection|Get the unifiedRoleManagementPolicy resources from the policy navigation property.|
-|[Add unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicyassignment-post-policy.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Add policy by posting to the policy collection.|
--->
 
 ## <a name="properties"></a>属性
 
@@ -41,7 +34,7 @@ ms.locfileid: "65134051"
 |id|String|策略分配的唯一标识符。 ID 通常是 **unifiedRoleManagementPolicy** ID 的串联， **roleDefinitionId** 由下划线分隔。|
 |policyId|String|策略的 ID。 继承自 [entity](../resources/entity.md)。|
 |roleDefinitionId|String|应用策略 [的角色定义](unifiedroledefinition.md) 对象的标识符。 如果未指定，则策略将应用于所有角色。 支持$filter (`eq`) 。|
-|scopeId|String|分配策略的范围的标识符。  可以 `/` 用于租户或组 ID。 必需。|
+|scopeId|String|分配策略的范围的标识符。  可以 `/` 用于租户或组 ID。 必填。|
 |scopeType|String|分配策略的范围的类型。 其中一 `Directory`个 ， `DirectoryRole`. 必填。|
 
 ## <a name="relationships"></a>关系

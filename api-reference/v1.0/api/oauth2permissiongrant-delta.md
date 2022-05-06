@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psignoret
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2df707743c55a0b1b07a0c7a8348e502dbd7da92
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 807f77d0d1b4d8030f7dbcd1fae3fdb046b9aaa7
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060519"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247005"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant： delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "65060519"
 
 获取新创建、更新或删除的 [oauth2permissiongrant](../resources/oauth2permissiongrant.md) 对象，而无需对整个资源集合执行完整读取。 有关详细信息，请参阅 [使用增量查询](/graph/delta-query-overview)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,12 +39,12 @@ GET /oauth2PermissionGrants/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪更改会产生一轮或多次 **增量** 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需指定查询参数一次。 在后续请求中 `nextLink` ，复制并应用上一响应中的或 `deltaLink` URL。 URL 包括编码的参数。
+跟踪更改会产生一轮或多次 **增量** 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `@odata.nextLink` 或 `@odata.deltaLink` URL 的令牌部分。 只需指定查询参数一次。 在后续请求中 `@odata.nextLink` ，复制并应用上一响应中的或 `@odata.deltaLink` URL。 URL 包括编码的参数。
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 在上一个 **增量** 函数调用同一资源集合的 URL 中`deltaLink`返回的 [状态令牌](/graph/delta-query-overview)，指示完成这一轮更改跟踪。 在该集合的下一轮更改跟踪的第一个请求中保存并应用整个 `deltaLink` URL（包括此令牌）。|
-| $skiptoken | string | 在上一个 **增量** 函数调用的 URL 中`nextLink`返回的 [状态令牌](/graph/delta-query-overview)，指示要在同一资源集合中跟踪进一步的更改。 |
+| $deltatoken | string | 在上一个 **增量** 函数调用同一资源集合的 URL 中`@odata.deltaLink`返回的 [状态令牌](/graph/delta-query-overview)，指示完成这一轮更改跟踪。 在该集合的下一轮更改跟踪的第一个请求中保存并应用整个 `@odata.deltaLink` URL（包括此令牌）。|
+| $skiptoken | string | 在上一个 **增量** 函数调用的 URL 中`@odata.nextLink`返回的 [状态令牌](/graph/delta-query-overview)，指示要在同一资源集合中跟踪进一步的更改。 |
 
 ### <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -64,10 +64,10 @@ GET /oauth2PermissionGrants/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [oauth2permissiongrant](../resources/oauth2permissiongrant.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [oauth2permissiongrant](../resources/oauth2permissiongrant.md) 集合对象。 该响应还包括 `@odata.nextLink`URL 或 `@odata.deltaLink`URL。
 
-- `nextLink`如果返回 URL，则可以在会话中检索其他数据页。 **oauth2permissiongrant** 继续使用 URL 发出请求，`nextLink`直到`deltaLink`响应中包含 URL。
-- `deltaLink`如果返回 URL，则不会返回有关资源的更多数据。 保留并使用 `deltaLink` URL 了解将来对资源所做的更改。
+- `@odata.nextLink`如果返回 URL，则可以在会话中检索其他数据页。 **oauth2permissiongrant** 继续使用 URL 发出请求，`@odata.nextLink`直到`@odata.deltaLink`响应中包含 URL。
+- `@odata.deltaLink`如果返回 URL，则不会返回有关资源的更多数据。 保留并使用 `@odata.deltaLink` URL 了解将来对资源所做的更改。
 
 有关详细信息，请参阅 [使用增量查询](/graph/delta-query-overview)。 有关请求的示例，请参阅 [获取用户的增量更改](/graph/delta-query-users)。
 
