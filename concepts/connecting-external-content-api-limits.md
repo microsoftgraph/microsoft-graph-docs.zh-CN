@@ -5,16 +5,16 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 9e05d022b9bcf2359bdd2a84e8d5707d55c086b6
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 88cd4d08db4b903e188c82dd38c8d5b89131887f
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205618"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247334"
 ---
 # <a name="microsoft-graph-connectors-api-limits"></a>Microsoft Graph 连接器 API 限制
 
-本文介绍了 Microsoft Graph 连接器的实施和运行限制。 设计连接器时，请牢记这些限制。
+本文介绍 Microsoft Graph 连接器的实施和运行限制。 设计连接器时，请牢记这些限制。
 
 ## <a name="connection-limits"></a>连接限制
 
@@ -34,7 +34,7 @@ ms.locfileid: "65205618"
 
 | **限制** | **说明** |
 | --------- | --------------- |
-| 100,000 | 每个 Microsoft 365 租户的最大[外部组](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true)数量。 |
+| **100,000** | 每个 Microsoft 365 租户的最大[外部组](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true)数量。 |
 | **1000 个请求/秒** | 组管理[限制](#throttling)阈值中每秒允许的最大请求数。 |
 
 ## <a name="item-ingestion"></a>项引入

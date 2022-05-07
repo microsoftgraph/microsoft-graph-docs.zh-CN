@@ -4,18 +4,18 @@ description: '日历视图是默认日历中特定日期/时间范围内的事�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2734559d7c43b39cd3e144b1c78d2ebd5111fd27
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 9af9c72f3228dc11ef41884ea9e178494ce0a2ad
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525496"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247236"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>获取日历视图中事件的增量更改 
 
 通过使用增量查询，你可以在指定的日历，或者日历中的定义事件集合（作为日历视图）中获取新的、更新的或删除的事件。 本文将介绍后一种情况（在日历视图中对事件进行此类增量更改）。 
 
-> **注意** 前者（对日历中的事件进行增量更改，而不受固定的开始日期和结束日期范围的约束）的功能目前仅在 beta 版中可用。 有关更多信息，请参阅 [delta](/graph/api/event-delta?view=graph-rest-beta) 函数。
+> **注意** 前者（对日历中的事件进行增量更改，而不受固定的开始日期和结束日期范围的约束）的功能目前仅在 beta 版中可用。有关详细信息，请参阅 [delta](/graph/api/event-delta) 函数。
 
 日历视图是一个日期/时间范围内事件的集合 (.../me/calendarview)，这些事件来自默认日历或用户的其他指定日历，或来自组日历。返回的事件可能包括单一的实例，或重复发生系列的发生次数和例外情况。Delta 数据使你能够维护和同步一个用户事件的本地存储，而不必每次都从服务器上获取用户的整个事件集。
 
@@ -25,7 +25,7 @@ ms.locfileid: "61525496"
 
 日历视图中事件的 Delta 查询是针对指定的日历和日期/时间范围的。若要跟踪多个日历的变化，则需要单独跟踪每个日历。 
 
-跟踪日历视图中的事件更改通常需要使用 [delta](/graph/api/event-delta?view=graph-rest-1.0) 函数按轮发出一个或多个 GET 请求。 初始 GET 请求非常类似于 [列出 calendarView](/graph/api/calendar-list-calendarview?view=graph-rest-1.0)，区别在于要添加 **delta** 函数。 下面是登录用户的默认日历中，“日历”视图的初始 GET 增量请求：
+跟踪日历视图中的事件更改通常需要使用 [delta](/graph/api/event-delta) 函数按轮发出一个或多个 GET 请求。初始 GET 请求非常类似于 [列出 calendarView](/graph/api/calendar-list-calendarview)，区别在于要添加 **delta** 函数。下面是登录用户的默认日历中，“日历”视图的初始 GET 增量请求：
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -33,14 +33,14 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 
 使用 **delta** 函数的 GET 请求返回以下任一内容：
 
-- `nextLink`（包含具有 **delta** 函数调用和 _skipToken_ 的 URL），或 
-- `deltaLink`（包含具有 **delta** 函数调用和 _deltaToken_ 的 URL）。
+- `@odata.nextLink`（包含具有 **delta** 函数调用和 `$skipToken` 的 URL），或 
+- `@odata.deltaLink`（包含具有 **delta** 函数调用和 `$deltaToken` 的 URL）。
 
 这些令牌是 [状态令牌](delta-query-overview.md#state-tokens)，负责对 _startDateTime_、_endDateTime_ 参数以及初始增量查询 GET 请求中的其他任何查询参数进行编码。 在后续请求中，无需包括这些参数，因为它们已在令牌中编码。
 
-状态令牌对客户端完全不透明。若要继续一轮事件更改跟踪，只需将最后一个 GET 请求返回的 `nextLink` 或 `deltaLink` URL 复制并应用到同一日历视图的下一个 **delta** 函数调用即可。响应中返回的 `deltaLink` 表示当前一轮更改跟踪已完成。可以保存 `deltaLink` URL，并在开始下一轮时使用。
+状态令牌对客户端完全不透明。若要继续一轮事件更改跟踪，只需将最后一个 GET 请求返回的 `@odata.nextLink` 或 `@odata.deltaLink` URL 复制并应用到同一日历视图的下一个 **delta** 函数调用即可。响应中返回的 `@odata.deltaLink` 表示当前一轮更改跟踪已完成。可以保存 `@odata.deltaLink` URL，并在开始下一轮时使用。
 
-若要了解如何使用这些 `nextLink` 和 `deltaLink` URL，请参阅下面的[示例](#example-to-synchronize-events-in-a-calendar-view)。
+若要了解如何使用这些 `@odata.nextLink` 和 `@odata.deltaLink` URL，请参阅下面的[示例](#example-to-synchronize-events-in-a-calendar-view)。
 
 ### <a name="use-query-parameters-in-a-delta-query-for-calendar-view"></a>在日历视图的增量查询中使用查询参数
 
@@ -50,7 +50,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 
 ### <a name="optional-request-header"></a>可选的请求头
 
-每个 delta 查询 GET 请求在响应中返回包含一个或多个事件的集合。 可以视需要指定请求头 `Prefer: odata.maxpagesize={x}`，设置响应中可包含的事件数上限。
+每个增量查询 GET 请求在响应中返回一个或多个事件的集合。可以视需要指定请求头 `Prefer: odata.maxpagesize={x}`，设置在响应中返回的事件数上限。
 
 
 ## <a name="example-to-synchronize-events-in-a-calendar-view"></a>同步日历视图中事件的示例
@@ -107,7 +107,7 @@ Prefer: odata.maxpagesize=2
 
 ### <a name="sample-initial-response"></a>示例第一个响应
 
-响应中返回两个事件和一个包含 `skipToken` 的 `@odata.nextLink` 响应头。`nextLink` URL 表示此日历视图中还有更多事件可获取。
+响应中返回两个事件和一个包含 `skipToken` 的 `@odata.nextLink` 响应头。`@odata.nextLink` URL 表示此日历视图中还有更多事件可获取。
 
 <!-- {
   "blockType": "response",
@@ -183,7 +183,7 @@ Content-type: application/json
 
 ### <a name="step-2-sample-second-request"></a>第 2 步：示例第二个请求
 
-第二个请求指定上一个响应中返回的 `nextLink` URL。请注意，不再需要像第一个请求一样指定相同的 _startDateTime_ 和 _endDateTime_ 参数，因为 `nextLink` URL 中的 `skipToken` 已将其编码并包含在内。
+第二个请求指定上一个响应中返回的 `@odata.nextLink` URL。请注意，不再需要像第一个请求一样指定相同的 _startDateTime_ 和 _endDateTime_ 参数，因为 `@odata.nextLink` URL 中的 `skipToken` 已将其编码并包含在内。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -216,7 +216,7 @@ Prefer: odata.maxpagesize=2
 
 ### <a name="sample-second-response"></a>示例第二个响应 
 
-第二个响应中返回此日历视图中接下来的 2 个事件和另一个 `nextLink`（表示此日历视图中还有更多事件可获取）。
+第二个响应中返回此日历视图中接下来的 2 个事件和另一个 `@odata.nextLink`（表示此日历视图中还有更多事件可获取）。
 
 <!-- {
   "blockType": "response",
@@ -293,7 +293,7 @@ Content-type: application/json
 
 ### <a name="step-3-sample-third-request"></a>第 3 步：示例第三个请求
 
-第三个请求继续使用上一个同步请求返回的最新 `nextLink`。 
+第三个请求继续使用上一个同步请求返回的最新 `@odata.nextLink`。 
  
 
 
@@ -327,7 +327,7 @@ Prefer: odata.maxpagesize=2
 
 ### <a name="sample-third-and-final-response"></a>示例第三个响应（即最终响应）
 
-第三个响应中返回此日历视图中仅剩的事件，以及表示已完成同步此日历视图的 `deltaLink` URL。保存并使用 `deltaLink` URL [在下一轮中同步此日历视图](#the-next-round-sample-first-request)。
+第三个响应中返回此日历视图中仅剩的事件，以及表示已完成同步此日历视图的 `@odata.deltaLink` URL。保存并使用 `@odata.deltaLink` URL [在下一轮中同步此日历视图](#the-next-round-sample-first-request)。
 
 
 <!-- {
@@ -381,7 +381,7 @@ Content-type: application/json
 
 ### <a name="the-next-round-sample-first-request"></a>下一轮：示例第一个请求
 
-使用上一轮中[最后一个请求](#step-3-sample-third-request)返回的 `deltaLink`，可以只获取从那以后此日历视图中发生变化（已添加、删除或更新）的事件。假设你愿意在响应中保持页面大小上限不变，下一轮的第一个请求如下所示：
+使用上一轮中[最后一个请求](#step-3-sample-third-request)返回的 `@odata.deltaLink`，可以只获取从那以后此日历视图中发生变化（已添加、删除或更新）的事件。假设你愿意在响应中保持页面大小上限不变，下一轮的第一个请求如下所示：
 
 
 # <a name="http"></a>[HTTP](#tab/http)

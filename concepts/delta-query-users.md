@@ -4,18 +4,18 @@ description: Microsoft Graph中的增量查询可用于查询支持的资源的�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: dc9480b4cb53de576490d95f94bb46df534fbec4
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: d03762372a789d76d3f38121da47d662e281b2f2
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878790"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247222"
 ---
 # <a name="get-incremental-changes-for-users"></a>获取用户的增量更改
 
 Microsoft Graph中的 [增量查询](./delta-query-overview.md)，可用于查询 [支持的资源](delta-query-overview.md#supported-resources) 的添加、删除或更新。 它通过一系列 [增量](/graph/api/user-delta) 请求启用。 对于用户，增量查询使你可以发现更改，而无需提取用户组来比较更改。
 
-将用户与本地配置文件存储同步的客户端可以使用增量查询进行初始完全同步以及后续增量同步。 通常，客户会对租户中的所有用户进行初始完全同步，然后定期获取对用户的增量更改。
+以后，对本地配置文件存储使用同步用户功能的客户端可以将增量查询用于初始完全同步和后续增量同步。通常，客户会对租户中的所有用户进行初始完全同步，之后定期获取对用户的增量更改。
 
 ## <a name="track-changes-to-users"></a>获取对用户的更改
 
@@ -46,7 +46,7 @@ Microsoft Graph中的 [增量查询](./delta-query-overview.md)，可用于查�
 记下以下各项:
 
 - 请求中包含可选的 `$select` 查询参数，以演示如何在以后的请求中自动包含查询参数。
-- 初始请求不包括状态令牌。 状态令牌将用于后续请求中。
+- 初始请求不包括状态令牌。状态令牌将用于后续请求中。
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
@@ -54,9 +54,9 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,s
 
 ### <a name="initial-response"></a>初始响应
 
-如果成功，此方法的响应正文返回`200 OK`响应代码和[用户](/graph/api/resources/user)集合对象。 假设整个用户集太大，响应也将包括 `@odata.nextLink` 参数中的 `nextLink` 状态令牌。
+如果成功，此方法的响应正文返回`200 OK`响应代码和[用户](/graph/api/resources/user)集合对象。假定整组用户过大，则响应还将包含 `@odata.nextLink` 参数中的 `@odata.nextLink` 状态令牌。
 
-本示例中，返回 `nextLink` URL，表示此会话存在要检索的更多数据页面。 初始请求的 `$select` 查询参数已编码为 `nextLink` URL。
+本示例中，返回 `@odata.nextLink` URL，表示此会话存在要检索的其他数据页面。初始请求的 `$select` 查询参数已编码为 `@odata.nextLink` URL。
 
 ```http
 HTTP/1.1 200 OK
@@ -94,7 +94,7 @@ Content-type: application/json
 
 ### <a name="nextlink-request"></a>nextLink 请求
 
-第二个请求指定上一个响应中返回的 `skipToken`。 请注意，`$select` 参数已编码并包含在 `skipToken` 中。
+第二个请求指定上一个响应中返回的 `skipToken`。请注意，`$select` 参数已编码并包含在 `skipToken`  中。
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 ### <a name="nextlink-response"></a>nextLink 响应
 
-响应包含另一个`nextLink`，其中有一个新的`skipToken`值，这表示为用户跟踪的更多更改可用。 在更多请求中使用 `nextLink` URL，直到在最终响应中返回 `deltaLink` URL (在 `@odata.deltaLink` 参数中)。 即使值为空数组也是如此。
+响应包含另一个`@odata.nextLink`，其中有一个新的`skipToken`值，这表示为用户跟踪的更多更改可用。 在更多请求中使用 `@odata.nextLink` URL，直到在最终响应中返回 `@odata.deltaLink` URL (在 `@odata.deltaLink` 参数中)。 即使值为空数组也是如此。
 
 ```http
 HTTP/1.1 200 OK
@@ -138,7 +138,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwE
 
 ### <a name="final-nextlink-response"></a>最终 nextLink 响应
 
-返回 `deltaLink` URL 时，不再有有关用户对象的现有状态的数据。 对于将来的请求，应用程序使用 `deltaLink` URL 了解用户的其他更改。 保存 `deltaToken`并在后续请求 URL 中使用它来发现对用户的更多更改。
+当返回 `@odata.deltaLink` URL 时，不再返回关于用户对象现有状态的数据。为了执行以后的请求，应用程序使用 `@odata.deltaLink` URL 了解用户的其他更改。保存 `deltaToken`，并在后续请求 URL 中使用它来发现用户的更多更改。
 
 ```http
 HTTP/1.1 200 OK
@@ -174,7 +174,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 ## <a name="deltalink-response"></a>deltaLink 响应
 
-如果未发生任何更改，则返回 `deltaLink` 而不返回结果 - **值** 属性为空数组。
+如果未发生任何更改，则返回 `@odata.deltaLink` 而不返回结果 - **值** 属性为空数组。
 
 ```http
 HTTP/1.1 200 OK
@@ -187,9 +187,9 @@ Content-type: application/json
 }
 ```
 
-如果发生更改，则包含已更改用户对象的集合。 响应还包含 `nextLink` 或 `deltaLink`（如果要检索多个更改页面）。 实现遵循 `nextLink` 的相同模式，并为将来的调用保留最终 `deltaLink`。
+如果发生更改，则包含已更改用户对象的集合。 响应还包含 `@odata.nextLink` 或 `@odata.deltaLink`（如果要检索多个更改页面）。 实现遵循 `@odata.nextLink` 的相同模式，并为将来的调用保留最终 `@odata.deltaLink`。
 
->**注意：** 此请求可能对最近创建、更新或删除的用户具有复制延迟。 请在一段时间后重试 `nextLink` 或 `deltaLink` 以检索最新更改。
+>**注意：** 此请求可能对最近创建、更新或删除的用户具有复制延迟。 请在一段时间后重试 `@odata.nextLink` 或 `@odata.deltaLink` 以检索最新更改。
 
 ```http
 HTTP/1.1 200 OK

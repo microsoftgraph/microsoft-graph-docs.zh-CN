@@ -4,12 +4,12 @@ description: 介绍了如何使用 Microsoft Graph 数据连接来选择用户�
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: cfe05545a6cfacc08f132be37c54c3a31ccdd62a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f87810144bd5b7edff28ea33b6a733559ecdc0f5
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139182"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247278"
 ---
 # <a name="user-selection-and-filtering-capabilities-in-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接中的用户选择和筛选功能
 
@@ -20,14 +20,14 @@ ms.locfileid: "59139182"
 可以针对一组用户运行管道。 下面是适用于用户选择的选项：
 
 - 组织内的所有用户
-- 对组织内最多 10 个用户组运行
+- 组织内最多有 10 个用户组
 - 基于由 Azure Active Directory 用户属性组成的谓词的一组用户。
 
-在 Azure 数据工厂复制活动的 SourceDataSet 中指定用户选择。 若要针对组列表运行，请在 **typeProperties** 下添加一个新字段 **allowedGroups**，并将此字段设置为最多 10 个组的列表，**对象 Id** 由逗号分隔。 如果默认情况下未指定组，则将为整个组织提取数据。
+在 Azure 数据工厂复制活动的 SourceDataSet 中指定用户选择。 若要针对组列表运行，请在 **typeProperties** 下添加一个新字段 **allowedGroups**，并将此字段设置为最多 10 个组的列表，**对象 Id** 由逗号分隔。 如果默认情况下未指定组，则为整个组织提取数据。
 
 若要指定针对整个租户运行的谓词，请在 **typeProperties** 下添加一个新字段 **userScopeFilterUri**，并将此字段设置为该谓词。 谓词格式应与 Microsoft Graph API 的查询格式匹配。 例如，如果要仅选择在财务部门工作的用户，你可以使用 `https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'`。 如果要仅选择一个用户，可使用 `https://graph.microsoft.com/v1.0/users?$filter=mail eq 'contosouser1@contoso.com'`。
 
-查询将仅返回你所查询的 Microsoft 365 组织内的用户。 将不会返回来宾用户和非用户邮箱。
+查询仅返回你所查询的 Microsoft 365 组织内的用户。 不会返回来宾用户和非用户邮箱。
 
 ## <a name="filtering"></a>筛选
 

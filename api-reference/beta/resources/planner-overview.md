@@ -5,12 +5,12 @@ author: TarkanSevilmis
 ms.localizationpriority: high
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 18c8f9a7bb418c849a5ac2255f8931ff3ec84a50
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: db63a6a93a6290a368d7aa8eda3254f860ee780f
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695334"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247054"
 ---
 # <a name="use-the-planner-rest-api"></a>使用 Planner REST API
 
@@ -34,7 +34,7 @@ ms.locfileid: "58695334"
 GET /groups/{group-id}/planner/plans
 ```
 
-[创建新计划](../api/planner-post-plans.md)时，通过在计划对象上设置 `container` 属性，可使组成为其容器。 计划必须包含在支持的资源中。
+在 [创建新计划](../api/planner-post-plans.md) 时，请通过在计划对象上设置 `container` 属性来使组成为其容器。计划必须包含在受支持的资源中。
 
 >**注意：** 正在创建计划的用户必须是将包含计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
 
@@ -118,11 +118,11 @@ Planner delta 查询当前可以返回的 delta 有效负载对象将为以下�
 
 Planner 的 delta 查询调用流如下所示：
 
-1. 调用方启动 delta 同步查询，以便获取 `nextLink` 和空的更改集合。
+1. 调用方启动 delta 同步查询，以便获取 `@odata.nextLink` 和空的更改集合。
 2. 调用方必须使用用户订阅的对象[填充 delta 查询的对象缓存](#populate-the-object-cache-for-delta-queries)，从而更新其缓存。
-3. 调用方遵循初始 delta 同步查询中提供的 `nextLink`，以便获得自上一步以来所做的任何更改的新 `deltaLink`。
+3. 调用方遵循初始 delta 同步查询中提供的 `@odata.nextLink`，以便获得自上一步以来所做的任何更改的新 `@odata.deltaLink`。
 4. 调用方将返回的 delta 响应中的更改应用于其缓存中的对象。
-5. 调用方遵循新的 deltaLink 以获取下一个 deltaLink，以及自生成当前 `deltaLink` 以来所做的更改。
+5. 调用方遵循新的 deltaLink 以获取下一个 deltaLink，以及自生成当前 `@odata.deltaLink` 以来所做的更改。
 6. 调用方应用更改（如果有）并等待一小段时间，然后重新执行上一步和此步骤。
 
 ## <a name="planner-resource-versioning"></a>Planner 资源版本控制

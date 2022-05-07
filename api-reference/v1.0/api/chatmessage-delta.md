@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2aaa800fd49bc87f6dbe6f107d72a4818e8bc6d6
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 57395fefb1b01b3ea445b34b6b7f860ddb41af9d
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443049"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247145"
 ---
 # <a name="chatmessage-delta"></a>chatMessage：delta
 
@@ -26,10 +26,10 @@ Delta 查询既支持可检索指定频道中所有消息的完全同步，也�
 
 使用 delta 函数的 GET 请求返回以下任一内容：
 
-- `nextLink`（包含具有 **delta** 函数调用和 `skipToken` 的 URL），或
-- `deltaLink`（包含具有 **delta** 函数调用和 `deltaToken` 的 URL）。
+- `@odata.nextLink`（包含具有 **delta** 函数调用和 `skipToken` 的 URL），或
+- `@odata.deltaLink`（包含具有 **delta** 函数调用和 `deltaToken` 的 URL）。
 
-状态令牌对客户端完全不透明。若要继续一轮更改跟踪，只需将最后一个 GET 请求返回的 `nextLink` 或 `deltaLink` URL 复制并应用到同一日历视图的下一个 delta 函数调用即可。响应中返回的 `deltaLink` 表示当前一轮更改跟踪已完成。可以保存 `deltaLink` URL，并在开始检索其他更改时使用 (获取 `deltaLink` 后更改或发布的消息)。
+状态令牌对客户端完全不透明。若要继续一轮更改跟踪，只需将最后一个 GET 请求返回的 `@odata.nextLink` 或 `@odata.deltaLink` URL 复制并应用到同一日历视图的下一个 delta 函数调用即可。响应中返回的 `@odata.deltaLink` 表示当前一轮更改跟踪已完成。可以保存 `@odata.deltaLink` URL，并在开始检索其他更改时使用 (获取 `@odata.deltaLink` 后更改或发布的消息)。
 
 有关详细信息，请参阅[增量查询](/graph/delta-query-overview)文档。
 
@@ -56,16 +56,16 @@ GET /teams/{team-id}/channels/{channel-id}/messages/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪频道消息更改会引发一组对 **delta** 函数的一次或多次调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。
+跟踪频道消息中的更改会触发一个或多个 **delta** 函数调用。如果使用任何查询参数（而不是 `$deltatoken` 和 `$skiptoken`），必须在初始 **delta** 请求中指定它。Microsoft Graph 会自动将任何指定参数编码为响应中返回的 `@odata.nextLink` 或 `@odata.deltaLink` URL 的令牌部分。
 
 只需预先指定任何查询参数一次。
 
-在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含编码参数。
+在后续请求中，可以复制并应用之前响应中返回的 `@odata.nextLink` 或 `@odata.deltaLink` URL，因为此 URL 已包含编码参数。
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| `$deltatoken` | string | 之前的 **delta** 函数调用的 `deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该轮更改跟踪的完成状态。将整个 `deltaLink` URL (包括此令牌) 保存并应用在该集合下一轮更改跟踪的首个请求中。|
-| `$skiptoken` | 字符串 | 上一个 **delta** 函数调用中的 `nextLink` URL 返回的 [状态令牌](/graph/delta-query-overview)，指示需要跟踪进一步的更改。 |
+| `$deltatoken` | string | 之前的 **delta** 函数调用的 `@odata.deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该轮更改跟踪的完成状态。将整个 `@odata.deltaLink` URL (包括此令牌) 保存并应用在该集合下一轮更改跟踪的首个请求中。|
+| `$skiptoken` | 字符串 | 上一个 **delta** 函数调用中的 `@odata.nextLink` URL 返回的 [状态令牌](/graph/delta-query-overview)，指示需要跟踪进一步的更改。 |
 
 ### <a name="optional-odata-query-parameters"></a>OData 可选查询参数
 
@@ -85,7 +85,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatMessage](../resources/chatmessage.md) 对象集合。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [chatMessage](../resources/chatmessage.md) 对象集合。响应还包括 `@odata.nextLink` URL 或 `@odata.deltaLink` URL。
 
 ## <a name="examples"></a>示例
 
@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="initial-request-response"></a>第一个请求响应
 
-该响应包含两封邮件和一个具有 `skipToken` 的 `@odata.nextLink` 响应标头。 `nextLink` URL 表示此频道中还更多邮件可获取。
+该响应包含两个消息和一个具有 `skipToken` 的 `@odata.nextLink` 响应标头。`@odata.nextLink` URL 表示该频道中有更多要获取的消息。
 
 <!-- {
   "blockType": "response",
@@ -247,7 +247,7 @@ Content-type: application/json
 
 #### <a name="second-request"></a>第二个请求
 
-第二个请求指定上一个响应中返回的 `nextLink` URL。 请注意，无需再像在第一个请求中一样指定相同的顶级参数，因为 `nextLink` URL 中的 `skipToken` 会将其编码并包含在内。
+第二个请求指定上一个响应中返回的 `@odata.nextLink` URL。请注意，不再需要像第一个请求一样指定相同的 top 参数，因为 `@odata.nextLink` URL 中的 `skipToken` 已将其编码并包含在内。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -387,7 +387,7 @@ Content-type: application/json
 
 #### <a name="third-request"></a>第三个请求
 
-第三个请求继续使用上一个同步请求返回的最新 `nextLink`。
+第三个请求继续使用上一个同步请求返回的最新 `@odata.nextLink`。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -427,7 +427,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="third-request-response"></a>第三个请求响应
 
-第三个响应仅返回频道中剩下的消息以及带有 `deltaToken` 的 `@odata.deltaLink` 响应标头，指示频道中的所有消息已被阅读。 保存并使用 `deltaLink` URL，查询从此点开始的任何新消息。
+第三个响应仅返回频道中剩下的消息以及带有 `deltaToken` 的 `@odata.deltaLink` 响应标头，指示频道中的所有消息已被阅读。 保存并使用 `@odata.deltaLink` URL，查询从此点开始的任何新消息。
 
 <!-- {
   "blockType": "response",
@@ -527,7 +527,7 @@ Content-type: application/json
 
 ### <a name="example-2-retrieving-additional-changes"></a>示例 2：检索其他更改
 
-使用上一轮中最后一个请求返回的 `deltaLink`，可以只获取从那以后此频道中发生变化（已添加或更新）的邮件。 假如你更喜欢在响应中保持最大页面的同一大小，则请求将如下所示：
+使用上一轮中最后一个请求返回的 `@odata.deltaLink`，可以只获取从那以后此频道中发生变化（已添加或更新）的消息。假设你愿意在响应中保持页面大小上限不变，你的请求将如下所示：
 
 #### <a name="request"></a>请求
 
