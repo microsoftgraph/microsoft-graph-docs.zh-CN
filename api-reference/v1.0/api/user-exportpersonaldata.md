@@ -1,16 +1,16 @@
 ---
 title: user： exportPersonalData
-description: 提交由公司管理员提出的数据策略操作请求，以导出组织用户的数据。
+description: 提交由公司管理员发出的数据策略操作请求以导出组织用户的数据。
 ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a28edb51f3a36f1cdb40f427d61fe276bb1280a5
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 536c08bded82a25befa1865495f3fa6ba0f415c2
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345190"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65293996"
 ---
 # <a name="user-exportpersonaldata"></a>user： exportPersonalData
 
@@ -23,11 +23,11 @@ ms.locfileid: "62345190"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  User.Export.All、User.Read.All  |
+|委派（工作或学校帐户） |  User.Export.All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | User.Export.All、User.Read.All |
+|应用程序 | User.Export.All |
 
->**注意：** 只有在使用委派权限时，导出才能由公司管理员执行。
+>**注意：** 仅当使用委派权限时，公司管理员才能执行导出。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,15 +45,15 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|storageLocation|String|这是一个共享访问签名 (SAS) URL Azure 存储帐户，数据应导出到其中。|
+|storageLocation|String|这是一个共享访问签名 (SAS) Azure 存储帐户的 URL，应将数据导出到何处。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `202 Accepted` 响应代码。 它不会在响应正文中返回任何内容。 该响应包含以下响应标头。
+如果成功，此方法返回 `202 Accepted` 响应代码。 它不会在响应正文中返回任何内容。 响应包含以下响应标头。
 
 | 名称       | 说明|
 |:---------------|:----------|
-| Location  | 检查请求状态的 URL。 |
-| Retry-After  | 时间段（以秒表示）。 请求建立者应在提交检查状态的请求后等待此时间。 |
+| Location  | 用于检查请求状态的 URL。 |
+| Retry-After  | 时间段（以秒为单位）。 请求创建者应在提交请求以检查状态后等待这么长时间。 |
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

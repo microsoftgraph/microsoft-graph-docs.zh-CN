@@ -2,15 +2,15 @@
 title: 组织资源类型
 description: " 不支持创建和删除操作。 继承自 directoryObject。"
 ms.localizationpriority: high
-author: adimitui
+author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 816f0028c8250e497b4cf067c5bd22995b73973b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 1c96894d044e77d1faddf27085163248d1fd4d9b
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695375"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65293968"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 

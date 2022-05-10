@@ -2,15 +2,15 @@
 title: 列出组织
 description: 检索组织对象列表。
 ms.localizationpriority: medium
-author: adimitui
+author: KuiGithui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7e920ece14415686aacd88c778ac69cecb44d515
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4da11a8c4a8db104d3909183f15c3fa68e733aec
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096258"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65294045"
 ---
 # <a name="list-organization"></a>列出组织
 
@@ -85,7 +85,8 @@ GET https://graph.microsoft.com/beta/organization
 ---
 
 ##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+下面是一个响应示例。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,25 +98,90 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "assignedPlans": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization",
+    "value": [
         {
-          "assignedDateTime": "2016-10-19T10:37:00Z",
-          "capabilityStatus": "capabilityStatus-value",
-          "service": "service-value",
-          "servicePlanId": "servicePlanId-value"
+            "id": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "deletedDateTime": null,
+            "businessPhones": [
+                "425-555-0100"
+            ],
+            "city": null,
+            "country": null,
+            "countryLetterCode": "NL",
+            "createdDateTime": "2021-08-02T10:30:06Z",
+            "displayName": "Contoso",
+            "isMultipleDataLocationsForServicesEnabled": null,
+            "marketingNotificationEmails": [],
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSyncEnabled": null,
+            "postalCode": null,
+            "preferredLanguage": "en",
+            "securityComplianceNotificationMails": [],
+            "securityComplianceNotificationPhones": [],
+            "state": null,
+            "street": null,
+            "technicalNotificationMails": [
+                "admin@contoso.com"
+            ],
+            "tenantType": "AAD",
+            "directorySizeQuota": {
+                "used": 698,
+                "total": 50000
+            },
+            "assignedPlans": [
+                {
+                    "assignedDateTime": "2022-04-03T02:46:42Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "Adallom",
+                    "servicePlanId": "932ad362-64a8-4783-9106-97849a1a30b9"
+                },
+                {
+                    "assignedDateTime": "2022-04-03T02:46:42Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "MultiFactorService",
+                    "servicePlanId": "8a256a2b-b617-496d-b51b-e76466e88db0"
+                },
+                {
+                    "assignedDateTime": "2021-08-02T10:36:57Z",
+                    "capabilityStatus": "Enabled",
+                    "service": "exchange",
+                    "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318"
+                },
+                {
+                    "assignedDateTime": "2021-08-02T10:36:02Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "SCO",
+                    "servicePlanId": "882e1d05-acd1-4ccb-8708-6ee03664b117"
+                }
+            ],
+            "privacyProfile": {
+                "contactEmail": "",
+                "statementUrl": ""
+            },
+            "provisionedPlans": [
+                {
+                    "capabilityStatus": "Deleted",
+                    "provisioningStatus": "Success",
+                    "service": "Adallom"
+                },
+                {
+                    "capabilityStatus": "Enabled",
+                    "provisioningStatus": "Success",
+                    "service": "exchange"
+                }
+            ],
+            "verifiedDomains": [
+                {
+                    "capabilities": "Email, OfficeCommunicationsOnline",
+                    "isDefault": true,
+                    "isInitial": true,
+                    "name": "Contoso.com",
+                    "type": "Managed"
+                }
+            ]
         }
-      ],
-      "businessPhones": [
-        "businessPhones-value"
-      ],
-      "city": "city-value",
-      "country": "country-value",
-      "countryLetterCode": "countryLetterCode-value",
-      "displayName": "displayName-value"
-    }
-  ]
+    ]
 }
 ```
 

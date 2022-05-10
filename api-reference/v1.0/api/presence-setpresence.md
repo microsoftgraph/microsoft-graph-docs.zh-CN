@@ -1,45 +1,45 @@
 ---
 title: presence： setPresence
-description: 设置用户的应用程序状态会话状态信息。
+description: 设置用户应用程序状态会话的状态信息。
 author: jsandoval-msft
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: d24966539da1d4fa45686b2340e1a28f96550e3b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: c65754ffa61f62577ce4023d9a4a6e48ce0d533e
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340775"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65293954"
 ---
 # <a name="presence-setpresence"></a>presence： setPresence
 
 命名空间：microsoft.graph
 
-将用户的状态设置为应用程序状态。
+将用户的状态会话设置为应用程序。
 
 ### <a name="presence-sessions"></a>状态会话
-用户可以具有多个状态会话，因为用户可以在桌面、Teams和 web (多个) 。 每个Teams客户端都有一个独立的状态会话，并且用户的状态是来自所有隐藏会话的聚合状态。
+用户可以有多个状态会话，因为用户可以在桌面、移动和 Web)  (多个Teams客户端上。 每个Teams客户端都有一个独立的状态会话，并且用户的状态是后面所有会话的聚合状态。
 
-同样，应用程序可以具有其自己的用户状态会话，并能够更新状态。
+同样，应用程序可以为用户拥有自己的状态会话，并能够更新状态。
 
-以下是会话状态聚合方式的优先级：
-* 用户配置>应用配置 (状态会覆盖其他用户) 
-* 在已配置应用之间： (状态设置状态设置) >忙碌>状态>离开
+以下是聚合会话状态的优先级：
+* 用户配置的>应用配置的 (用户配置状态替代其他) 
+* 在配置的应用中：DoNotDisturb (当前不支持设置状态) >忙>可用>离开
 
-### <a name="timeout-expiration-and-keep-alive"></a>超时、到期并保持活动状态
-状态会话 **可能会超时和****过期**，因此应用程序需要在超时之前调用此 API，以维护会话的状态;或过期 **之前，** 使会话保持活动状态。
+### <a name="timeout-expiration-and-keep-alive"></a>超时、过期和保持活动状态
+状态会话可能会 **超时** 和 **过期**，因此应用程序需要在 **超时** 前调用此 API 来维护会话的状态;或在 **过期** 之前，为了使会话保持活动状态。
 
-如果状态会话可用且 `Available` 超时为 5 分钟，则状态会话可能会超时。 当状态淡出时，状态将逐渐淡出。 例如，如果 `Available/Available`应用程序将状态会话设置为 ， `Available/AvailableInactive` 状态将在 5 分钟内更改为第一个超时，然后在另外 5 `Away/Away` 分钟（第二个超时）中更改。
+如果可用性为 `Available` 且超时为 5 分钟，则状态会话可能会超时。 超时时时，状态将分阶段淡出。 例如，如果应用程序将状态会话设置为 `Available/Available`，状态将在第一次超时后更改为 `Available/AvailableInactive` 5 分钟，然后 `Away/Away` 在 5 分钟内再进行第二次超时。
 
-状态会话的过期时间可用 参数 `expirationDuration` 进行配置。 当会话过期时，它将变为 `Offline`。
+状态会话的过期可使用 `expirationDuration` 参数进行配置。 当会话过期时，它将变为 `Offline`。
 
 ## <a name="permissions"></a>权限
 调用 API 需要以下权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | 不支持。                              |
+| 委派（工作或学校帐户）     | Presence.ReadWrite                              |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | Presence.ReadWrite.All                      |
 
@@ -60,29 +60,29 @@ POST /users/{userId}/presence/setPresence
 
 | 参数          | 类型     | 说明                                                                                            |
 | :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
-| sessionId          | string   | 应用程序状态会话的 ID。                                                          |
+| sessionId          | string   | 应用程序的状态会话的 ID。                                                          |
 | availability       | string   | 基本状态信息。                                                                         |
 | 活动           | string   | 可用性的补充信息。                                                          |
-| expirationDuration | duration | 应用状态会话的过期时间。 该值以 ISO 8601 格式表示，持续时间为。</p>如果未提供，将应用 5 分钟的默认过期时间。 有效持续时间范围为 5-240 分钟 (PT5M 至 PT4H) |
+| expirationDuration | duration | 应用状态会话过期。 该值在持续时间内以 ISO 8601 格式表示。</p>如果未提供，将应用默认过期 5 分钟。 有效持续时间范围为 5-240 分钟 (PT5M 到 PT4H) |
 
 > [!IMPORTANT]
 >
-> 提供请求中应用程序 ID `sessionId` 。
+> 提供应用程序的 ID，如请求中所示 `sessionId` 。
 
-支持的 和 `availability` `activity` 的组合包括：
+支持的组合包括`availability``activity`：
 
 | availability | 活动          | 说明                                              |
 | :----------- | :---------------- | :------------------------------------------------------- |
-| 可用    | 可用         | 将状态会话更新为"可用"。               |
+| 可用    | 可用         | 将状态会话更新为可用。               |
 | 忙碌         | InACall           | 将状态会话更新为 Busy、InACall。           |
 | 忙碌         | InAConferenceCall | 将状态会话更新为 Busy、InAConferenceCall。 |
-| 离开         | 离开              | 将状态会话更新为离开。                    |
+| 离开         | 离开              | 将状态会话更新为“离开”。                    |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `200 OK` 响应代码。
 
 ## <a name="examples"></a>示例
-以下请求显示 ID 为 `22553876-f5ab-4529-bffb-cfe50aa89f87` 用户设置其状态会话的应用程序 `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`。
+以下请求显示 ID `22553876-f5ab-4529-bffb-cfe50aa89f87` 为用户设置其状态会话的应用程序 `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`。
 
 ### <a name="request"></a>请求
 

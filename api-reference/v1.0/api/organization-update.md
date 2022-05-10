@@ -2,21 +2,21 @@
 title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
 ms.localizationpriority: medium
-author: adimitui
+author: KuiGithui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c2fbb6b2f8c93c9e4f44c6e1877f3b98132d1f9c
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: be0561ea0c96a21dd4829e594a0842b188ba4973
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672712"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65293983"
 ---
 # <a name="update-organization"></a>更新组织
 
 命名空间：microsoft.graph
 
-更新当前经过身份验证的组织的属性。 在这种情况下，定义为 `organization` 只包含一条记录的集合，因此必须在请求中指定其 **ID** 。  **ID** 也称为组织的 **tenantId**。
+更新当前经过身份验证的组织的属性。 在这种情况下， `organization` 定义为一条记录的集合，因此必须在请求中指定其 **ID** 。  **ID 也** 称为组织的 **tenantId**。
 
 ## <a name="permissions"></a>权限
 
@@ -71,7 +71,7 @@ PATCH /organization/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization/{id}
+PATCH https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3
 Content-type: application/json
 
 {

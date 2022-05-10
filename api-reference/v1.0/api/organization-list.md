@@ -2,15 +2,15 @@
 title: 列出组织
 description: 检索组织对象列表。
 ms.localizationpriority: medium
-author: adimitui
+author: KuiGithui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1d03109a5e391e795767e4d8b59d8c5789db31eb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 93e6e21363c4071c65f590d3e8c948a3d6a18a0b
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62088494"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65293984"
 ---
 # <a name="list-organization"></a>列出组织
 
@@ -87,7 +87,8 @@ GET https://graph.microsoft.com/v1.0/organization
 ---
 
 ##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+下面是一个响应示例。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,25 +100,90 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "assignedPlans": [
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization",
+    "value": [
         {
-          "assignedDateTime": "2017-07-29T02:16:28Z",
-          "capabilityStatus": "Enabled",
-          "service": "SharePoint",
-          "servicePlanId": "5dbe027f-2339-4123-9542-606e4d348a72"
+            "id": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "deletedDateTime": null,
+            "businessPhones": [
+                "425-555-0100"
+            ],
+            "city": null,
+            "country": null,
+            "countryLetterCode": "NL",
+            "createdDateTime": "2021-08-02T10:30:06Z",
+            "displayName": "Contoso",
+            "isMultipleDataLocationsForServicesEnabled": null,
+            "marketingNotificationEmails": [],
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSyncEnabled": null,
+            "postalCode": null,
+            "preferredLanguage": "en",
+            "securityComplianceNotificationMails": [],
+            "securityComplianceNotificationPhones": [],
+            "state": null,
+            "street": null,
+            "technicalNotificationMails": [
+                "admin@contoso.com"
+            ],
+            "tenantType": "AAD",
+            "directorySizeQuota": {
+                "used": 698,
+                "total": 50000
+            },
+            "assignedPlans": [
+                {
+                    "assignedDateTime": "2022-04-03T02:46:42Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "Adallom",
+                    "servicePlanId": "932ad362-64a8-4783-9106-97849a1a30b9"
+                },
+                {
+                    "assignedDateTime": "2022-04-03T02:46:42Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "MultiFactorService",
+                    "servicePlanId": "8a256a2b-b617-496d-b51b-e76466e88db0"
+                },
+                {
+                    "assignedDateTime": "2021-08-02T10:36:57Z",
+                    "capabilityStatus": "Enabled",
+                    "service": "exchange",
+                    "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318"
+                },
+                {
+                    "assignedDateTime": "2021-08-02T10:36:02Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "SCO",
+                    "servicePlanId": "882e1d05-acd1-4ccb-8708-6ee03664b117"
+                }
+            ],
+            "privacyProfile": {
+                "contactEmail": "",
+                "statementUrl": ""
+            },
+            "provisionedPlans": [
+                {
+                    "capabilityStatus": "Deleted",
+                    "provisioningStatus": "Success",
+                    "service": "Adallom"
+                },
+                {
+                    "capabilityStatus": "Enabled",
+                    "provisioningStatus": "Success",
+                    "service": "exchange"
+                }
+            ],
+            "verifiedDomains": [
+                {
+                    "capabilities": "Email, OfficeCommunicationsOnline",
+                    "isDefault": true,
+                    "isInitial": true,
+                    "name": "Contoso.onmicrosoft.com",
+                    "type": "Managed"
+                }
+            ]
         }
-      ],
-      "businessPhones": [
-        "8006427676"
-      ],
-      "city": "redmond",
-      "country": null,
-      "countryLetterCode": "US",
-      "displayName": "Contoso"
-    }
-  ]
+    ]
 }
 ```
 
