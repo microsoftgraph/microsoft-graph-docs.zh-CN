@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 7fc50d29102b83465365365cec6bdc1d5149e9fd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: f2c007dadbcdb49b670e23e2237a11d833c985bb
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671991"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296533"
 ---
 # <a name="delete-schemaextension"></a>删除 schemaExtension
 
@@ -18,9 +18,7 @@ ms.locfileid: "63671991"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[架构扩展](../resources/schemaextension.md)定义。
-
-仅创建架构扩展的应用（所有者应用）可以删除架构扩展定义，并且仅在该扩展处于 **InDevelopment** 状态下时才可以将其删除。删除架构扩展定义不会影响访问基于此定义已添加到资源实例的自定义数据。
+删除[架构扩展](../resources/schemaextension.md)定义。 只有创建架构扩展的应用 (所有者应用) 才能删除架构扩展定义，并且仅当扩展处于 `InDevelopment` 状态时。 删除架构扩展定义不会影响访问已基于该定义添加到资源实例的自定义数据。
 
 
 ## <a name="permissions"></a>权限
@@ -31,10 +29,10 @@ ms.locfileid: "63671991"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 > [!NOTE]
-> 此外，对于委派流，登录用户只能删除他们拥有 (其中 schemaExtension  `appId` 的所有者属性是已登录用户拥有) 的应用程序的 。
+> 此外，对于委派流，已登录用户只能删除他们拥有的架构Extensions (其中 schemaExtension 的 **所有者** 属性是登录用户拥有的应用程序的 **appId**) 。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

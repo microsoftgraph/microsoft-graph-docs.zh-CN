@@ -4,12 +4,12 @@ description: 介绍Azure AD Graph资源 (实体) 和 Microsoft Graph 之间的�
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 19f6490cda2c6107de97fd853a8d09e604fb83f6
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 2d5df9eede57ff0987bfced91d34c11d4d5142f1
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65293961"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296238"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph和 Microsoft Graph 之间的属性差异
 
@@ -38,7 +38,8 @@ Azure AD Graph **用户** 资源继承自 **DirectoryObject**;它已重命名为
 | **isCompromised** | beta  &nbsp;-&nbsp; _不可用_ <br> v1.0 &nbsp;-&nbsp; _不可用_ | Microsoft Graph[标识保护](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) API 提供了更复杂的功能。 |
 | **lastDirSyncDateTime** | beta &nbsp;-&nbsp;**onPremisesLastSyncDateTime** <br> v1.0 &nbsp;-&nbsp; **onPremisesLastSyncDateTime** | |
 | **mobile** | beta  &nbsp;-&nbsp; **mobilePhone** <br> v1.0 &nbsp;-&nbsp; **mobilePhone** | |
-| **passwordProfile** | beta  &nbsp;-&nbsp; **passwordProfile** <br> v1.0 &nbsp;-&nbsp; **passwordProfile** | 属性名称和类型仍为 **passwordProfile** ，但 **passwordProfile** 复杂类型的属性已更改。 请参阅 [passwordProfile 属性差异](#passwordprofile-property-differences)。 |
+| **passwordProfile/enforceChangePasswordPolicy** | beta  &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignIn** <br> v1.0 &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignIn** | |
+| **passwordProfile/forceChangePasswordNextLogin** | beta  &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignInWithMfa** <br> v1.0 &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignInWithMfa** | |
 | **provisioningErrors** | beta &nbsp;-&nbsp; _不可用_ <br> v1.0 &nbsp;-&nbsp; _不可用_ | 此属性及其信息已弃用。  但是，可在 **onPremisesProvisioningErrors** 中找到描述任何 AD 连接 相关预配错误的新属性 |
 | **refreshTokensValidFromDateTime** | **betasigninSessionsValidFromDateTime**&nbsp;-&nbsp;<br>**v1.0signinSessionsValidFromDateTime**&nbsp;-&nbsp; | |
 | **signinNames** | beta &nbsp;-&nbsp; **标识/signInType** <br> v1.0 &nbsp;-&nbsp; **标识/signInType** | 此属性现在是 [objectIdentity](/graph/api/resources/objectIdentity) 资源的一部分。|
@@ -47,16 +48,6 @@ Azure AD Graph **用户** 资源继承自 **DirectoryObject**;它已重命名为
 | **userIdentities** | beta &nbsp;-&nbsp; **标识** <br> v1.0 &nbsp;-&nbsp; **标识** | 有关更多详细信息，请参阅 [objectIdentity](/graph/api/resources/objectIdentity) 资源类型。|
 | **userState** | beta  &nbsp;-&nbsp; **externalUserState** <br> v1.0 &nbsp;-&nbsp; **externalUserState** | |
 | **userStateChangedOn** | **betaexternalUserStateChangeDateTime**&nbsp;-&nbsp;<br>**v1.0externalUserStateChangeDateTime**&nbsp;-&nbsp; | |
-
-### <a name="passwordprofile-property-differences"></a>passwordProfile 属性差异
-
-Microsoft Graph中已重命名 **passwordProfile** 复杂类型的属性，如下所示。
-
-| Azure AD Graph <br> (v1.6) 属性 | Microsoft Graph<br> property | 备注 |
-|--|--|--|
-| enforceChangePasswordPolicy | beta &nbsp;-&nbsp; **forceChangePasswordNextSignIn** <br> v1.0 &nbsp;-&nbsp; **forceChangePasswordNextSignIn** |  |
-| forceChangePasswordNextLogin | beta &nbsp;-&nbsp; **forceChangePasswordNextSignInWithMfa** <br> v1.0 &nbsp;-&nbsp; **forceChangePasswordNextSignInWithMfa** |  |
-| 密码 | beta &nbsp;-&nbsp; 密码 <br> v1.0 &nbsp;-&nbsp; 密码 |  |
 
 ## <a name="group-property-differences"></a>组属性差异
 

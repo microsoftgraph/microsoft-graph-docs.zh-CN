@@ -1,24 +1,26 @@
 ---
 title: 列出 schemaExtension
-description: '获取在当前租户中拥有的任何应用创建的 schemaExtension 对象 (可以是 '
+description: '获取当前租户 (中拥有的任何应用创建的 schemaExtension 对象的列表，这些应用可以是 '
 ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: a5dd68860b6a527155d51b6adeb66856006a87f7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6c062007bc08aaf0ca4417b9d7239dd309d709a2
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132109"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296428"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
 命名空间：microsoft.graph
 
-获取由你在当前租户 (中拥有的任何应用创建的 [schemaExtension](../resources/schemaextension.md)对象列表，这些应用可以是 **InDevelopment、Available** 或 **Deprecated**) ，以及标记为"可用"的其他应用所拥有的所有其他架构 **扩展。**  
+获取租户中的 [schemaExtension](../resources/schemaextension.md) 对象列表。 架构扩展可以是`InDevelopment``Available`，也可以`Deprecated`包括架构扩展：
++ 由你在当前租户中拥有的任何应用创建。
++ 由标记为 `Available`.. 的其他应用拥有。
++ 由其他开发人员从其他租户创建，并标记为 `Available`。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据特定于租户，只能由显式授予权限的应用访问。 
 
-> **注意：** 该列表还将包含架构扩展定义 (标记为) `Available` 租户中其他开发人员创建的列表。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据特定于租户，并且只有显式授予权限的应用才能访问这些数据。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,10 +49,10 @@ GET /schemaExtensions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [schemaExtension](../resources/schemaextension.md) 对象集合。
+如果成功，此方法在响应正文中返回一个 `200 OK` 响应代码和 [schemaExtension](../resources/schemaextension.md) 对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-下面的示例演示如何通过筛选特定扩展的唯一 id 来查找其所有可访问 **的扩展**。 
+以下示例演示如何通过筛选特定扩展的唯一 **ID**，在所有可访问的扩展之间进行查找。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

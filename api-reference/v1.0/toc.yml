@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1681,7 +1681,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -5115,24 +5115,44 @@ items:
                 items:
                   - name: 标识提供者基础
                     href: resources/identityproviderbase.md
-                  - name: 内置标识提供者
-                    href: resources/builtinidentityprovider.md
-                  - name: 社交标识提供者
-                    href: resources/socialidentityprovider.md
-                  - name: Apple 标识提供者
-                    href: resources/applemanagedidentityprovider.md
-                  - name: 列出
-                    href: api/identitycontainer-list-identityproviders.md
-                  - name: 创建
-                    href: api/identitycontainer-post-identityproviders.md
-                  - name: 获取
-                    href: api/identityproviderbase-get.md
-                  - name: 更新
-                    href: api/identityproviderbase-update.md
-                  - name: 删除
-                    href: api/identityproviderbase-delete.md
-                  - name: 列出可用的提供程序类型
-                    href: api/identityproviderbase-availableprovidertypes.md
+                  - name: 外部标识
+                    items:
+                      - name: 内置标识提供者类型
+                        href: resources/builtinidentityprovider.md
+                      - name: 社交标识提供者类型
+                        href: resources/socialidentityprovider.md
+                      - name: Apple 标识提供者类型
+                        href: resources/applemanagedidentityprovider.md
+                      - name: 列出可用标识提供者
+                        href: api/identityproviderbase-availableprovidertypes.md
+                      - name: 列出配置的标识提供者
+                        href: api/identitycontainer-list-identityproviders.md
+                      - name: 创建标识提供程序
+                        href: api/identitycontainer-post-identityproviders.md
+                      - name: 获取标识提供程序
+                        href: api/identityproviderbase-get.md
+                      - name: 更新标识提供者
+                        href: api/identityproviderbase-update.md
+                      - name: 删除标识提供程序
+                        href: api/identityproviderbase-delete.md
+                  - name: 基于域的外部标识
+                    items:
+                      - name: SAML/Ws-Fed 外部域联合
+                        href: resources/samlorwsfedexternaldomainfederation.md
+                      - name: 列出联合配置
+                        href: api/samlorwsfedexternaldomainfederation-list.md
+                      - name: 获取联合配置
+                        href: api/samlorwsfedexternaldomainfederation-get.md
+                      - name: 创建联合配置
+                        href: api/samlorwsfedexternaldomainfederation-post.md
+                      - name: 更新联合配置
+                        href: api/samlorwsfedexternaldomainfederation-update.md
+                      - name: 删除联合配置
+                        href: api/samlorwsfedexternaldomainfederation-delete.md
+                      - name: 列出域
+                        href: api/samlorwsfedexternaldomainfederation-list-domains.md
+                      - name: 创建 externalDomainName
+                        href: api/samlorwsfedexternaldomainfederation-post-domains.md
               - name: '标识提供者 (已弃用) '
                 items:
                   - name: 标识提供者类型

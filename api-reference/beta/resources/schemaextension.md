@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: f7cdfc4812332e157a34dfe11b6456600ff405d8
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 907f23f3669a56e0a9e79652603dfe5999e27dfe
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334007"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296315"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension 资源类型（架构扩展）
 
@@ -39,7 +39,7 @@ ms.locfileid: "63334007"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[Create](../api/schemaextension-post-schemaextensions.md) | schemaExtension |创建架构扩展定义。|
-|[List](../api/schemaextension-list.md) | schemaExtension |列出 avaialbe schemaExtension 定义及其属性。|
+|[List](../api/schemaextension-list.md) | schemaExtension |列出可用的 schemaExtension 定义及其属性。|
 |[Get](../api/schemaextension-get.md) | schemaExtension |读取特定的 schemaExtension 定义的属性。|
 |[Update](../api/schemaextension-update.md) | schemaExtension   |更新 schemaExtension 定义。 |
 |[Delete](../api/schemaextension-delete.md) | 无 |删除 schemaExtension 定义。 |
@@ -48,11 +48,11 @@ ms.locfileid: "63334007"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。支持`$filter`（`eq`）。|
-|id|String|架构扩展定义的唯一标识符。 <br>你可以使用下面两种方法之一分配值： <ul><li>连接已验证域名与架构扩展名称，形成此格式的唯一字符串：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。例如 `contoso_mySchema`。 </li><li>提供一个架构名称，并让 Microsoft Graph 使用此格式的架构名称完成 **id** 分配：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如 `extkvbmkofy_mySchema`。</li></ul>此属性创建后无法更改。支持 `$filter`（`eq`）。<br/><br> **注意：** 我们建议你的 **ID** 以 A-Z 之间的字母字母开头，因为对于以整数开头的 ID，查询功能可能受到限制。 |
+|id|String|架构扩展定义的唯一标识符。 <br>你可以使用下面两种方法之一分配值： <ul><li>连接已验证域名与架构扩展名称，形成此格式的唯一字符串：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。例如 `contoso_mySchema`。 </li><li>提供一个架构名称，并让 Microsoft Graph 使用此格式的架构名称完成 **id** 分配：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如 `extkvbmkofy_mySchema`。</li></ul>此属性创建后无法更改。支持 `$filter`（`eq`）。<br/><br> **注意：** 建议 **ID** 以 A-Z 之间的字母开头，因为查询功能可能限制为以整数开头的 ID。 |
 |所有者|String| 属于架构扩展的所有者的应用程序的 `appId`。 可在创建时提供此属性以设置所有者。  如果未提供，则会将调用应用程序的 `appId` 设置为所有者。 在任一情况下，已登录用户均必须是应用程序的所有者。 因此，如果使用 Graph 浏览器新建一个架构扩展定义，则 **必须** 提供 owner 属性（以此为例）。 设置后，此属性为只读，且无法更改。 支持 `$filter`（`eq`）。|
 |properties|[extensionSchemaProperty](extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。|
-|status|String|架构扩展的生命周期状态。 可能的状态为 **InDevelopment**、**Available** 和 **Deprecated**。 创建后将自动设置为 **InDevelopment**。 [架构扩展](/graph/extensibility-overview#schema-extensions)将提供关于可能的状态转换和行为的详细信息。 支持 `$filter`（`eq`）。|
-|targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。 从 **administrativeUnit、****联系人**、**设备**、**事件、****组、****邮件**、**组织**、**帖子** 或用户 **中选择**。|
+|status|String|架构扩展的生命周期状态。 可能的状态是 `InDevelopment`， `Available`和 `Deprecated`. 自动设置为 `InDevelopment` 创建时。 [架构扩展](/graph/extensibility-overview#schema-extensions)将提供关于可能的状态转换和行为的详细信息。 支持 `$filter`（`eq`）。|
+|targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。 从 **administrativeUnit**、 **contact**、 **device**、 **event**、 **group**、 **message**、 **organization**、 **post** 或 **user** 中进行选择。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

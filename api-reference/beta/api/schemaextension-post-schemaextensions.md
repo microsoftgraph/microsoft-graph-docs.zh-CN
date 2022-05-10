@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 362688a24163da2ed26c625b81d21790269467c8
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: f1bce914868eeb4ccb02daaa608d6d46f00f8325
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671935"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296470"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -32,10 +32,10 @@ ms.locfileid: "63671935"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | Application.ReadWrite.All 和 Directory.ReadWrite.All |
 
 > [!NOTE]
-> 此外，对于委派的流程，登录用户必须是调用应用程序的所有者或用于设置 **所有者** 属性的（所带应用程序）`appId`所有者。
+> 此外，对于委托的流，已登录用户必须是调用应用程序的所有者或 (应用程序的所有者，其) **appId** 用于设置 **所有者** 属性。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ POST /schemaExtensions
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [schemaExtension](../resources/schemaextension.md) 对象的 JSON 表示形式。
 
-下表显示创建架构扩展时可用的属性。
+下表显示了创建架构扩展时可用的属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
@@ -72,7 +72,7 @@ POST /schemaExtensions
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何使用已验证`graphlearn``courses`的域名 和 架构名称 ，为架构扩展定义的 **id** 属性形成唯一的字符串。 唯一字符串采用此格式：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
+以下示例演示如何使用已验证的域名 `graphlearn`和架构名称 `courses`为架构扩展定义的 **ID** 属性形成唯一字符串。 唯一字符串采用此格式：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 在请求正文中，提供 [schemaExtension](../resources/schemaextension.md) 对象的 JSON 表示形式。
 

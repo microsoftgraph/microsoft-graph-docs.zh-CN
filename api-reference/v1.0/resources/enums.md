@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 85536cc55604de7f88f561a3b1e232cd333c7ec8
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: fab1fff05253708ddad039d04ebb79a8c747f598
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191350"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296224"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -638,7 +638,7 @@ ms.locfileid: "65191350"
 |:---|
 |无|
 |SecurityGroup|
-|全部|
+|所有|
 
 ### <a name="recipientscopetype-values"></a>recipientScopeType 值
 
@@ -1596,7 +1596,7 @@ ms.locfileid: "65191350"
 |货币 | 货币列。 |
 |dateTime | DateTime 列。 |
 |查找 | 查阅列。 |
-|布尔 | 是/否列。 |
+|boolean | 是/否列。 |
 |用户 | 人员或组列。 |
 |url | 超链接或图片列。 |
 |计算 | 计算列。 |
@@ -2072,6 +2072,13 @@ ms.locfileid: "65191350"
 |dontKnow|
 |notNotified|
 |unknownFutureValue|
+
+### <a name="authenticationprotocol-values"></a>authenticationProtocol 值 
+
+|成员|
+|:---|
+|wsFed|
+|Saml|
 
 ### <a name="longrunningoperationstatus-values"></a>longRunningOperationStatus 值
 

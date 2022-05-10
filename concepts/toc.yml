@@ -90,7 +90,7 @@ items:
       - name: 组
         items:
           - name: 概述
-            href: /graph/api/resources/groups-overview
+            href: /graph/api/resources/groups-overview?context=graph/context
           - name: Microsoft 365 组
             href: office365-groups-concept-overview.md
           - name: 配置组选项

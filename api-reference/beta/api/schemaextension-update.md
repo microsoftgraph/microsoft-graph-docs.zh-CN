@@ -1,16 +1,16 @@
 ---
 title: 更新 schemaExtension
-description: 更新指定 schemaExtension 的定义中的属性。
+description: 更新指定架构Extension 定义中的属性。
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 676e45bfc710910eb76570597778312014bf82a7
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 70f8277e7400c2369adac3da7b03354602e36f33
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671207"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296491"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 
@@ -18,13 +18,13 @@ ms.locfileid: "63671207"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新指定 [schemaExtension 的定义中的属性](../resources/schemaextension.md)。 只有当扩展位于"开发中"或"可用"状态时，才能对 **扩展进行附加****更新。** 这意味着无法从定义中删除自定义属性或目标资源类型，但可以添加新的自定义属性并更改扩展的说明。
+更新指定 [架构Extension](../resources/schemaextension.md) 定义中的属性。 仅当扩展处于或`Available`状态时，才能对扩展`InDevelopment`进行附加更新。 这意味着无法从定义中删除自定义属性或目标资源类型，但可以添加新的自定义属性并更改扩展说明。
 
-此更新适用于扩展的 **targetTypes** 属性中包含的所有资源。 这些资源是支持 [的资源类型之一](/graph/extensibility-overview#supported-resources)。
+更新适用于扩展的 **targetTypes** 属性中包含的所有资源。 这些资源是 [支持资源类型](/graph/extensibility-overview#supported-resources)之一。
 
-对于委派流，登录用户可以更新架构扩展，只要该扩展的所有者属性设置为已登录用户拥有的应用程序的 **appId**。 该应用程序可以是最初创建扩展的应用程序，或者是登录用户拥有的一些其他应用程序。 
+对于委派流，只要扩展的 **所有者** 属性设置为已登录用户拥有的应用程序的 **appId** ，登录用户就可以更新架构扩展。 该应用程序可以是最初创建扩展的应用程序，也可以是已登录用户拥有的其他应用程序。 
 
-owner 属性 **的** 此条件允许登录用户通过他们并不拥有的其他应用程序（如 Microsoft Graph Explorer）进行更新。 使用 Graph Explorer 更新 **schemaExtension** 资源时，请包含 PATCH 请求正文中的 owner  属性。 有关详细信息，请参阅 [Microsoft Graph 已知问题中的扩展部分](/graph/known-issues)。[](/graph/known-issues#extensions)
+**所有者** 属性的此条件允许已登录用户通过他们不拥有的其他应用程序（例如 Microsoft Graph Explorer）进行更新。 使用Graph资源管理器更新 **schemaExtension** 资源时，请将 **所有者** 属性包含在 PATCH 请求正文中。 有关详细信息，请参阅 [Microsoft Graph 的“已知问题](/graph/known-issues)”中的[“扩展](/graph/known-issues#extensions)”部分。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +35,7 @@ owner 属性 **的** 此条件允许登录用户通过他们并不拥有的其�
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | Application.ReadWrite.All 和 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,19 +58,19 @@ PATCH /schemaExtensions/{id}
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
-|properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。 只允许进行增量更改。 |
-|状态|String|架构扩展的生命周期状态。 创建时的初始状态为 **InDevelopment**。 可能状态转换包括从 **"开发中"** 转换到"可用"和 **"** 可用"**到"已弃用"**。|
-|targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。  只允许进行增量更改。|
+|properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。 仅允许进行添加性更改。 |
+|状态|String|架构扩展的生命周期状态。 创建时的初始状态是 `InDevelopment`。 可能的状态转换是从`InDevelopment`来到`Available``Available`向`Deprecated`。|
+|targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。  仅允许进行添加性更改。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。 尝试从不拥有 (且未将 **owner** 属性设置为你拥有的应用程序的 **appId** 的应用程序运行此) 将返回 响应 `403 Forbidden` 代码。
+如果成功，此方法返回 `204 No Content` 响应代码。 尝试从不拥有 (且未将 **所有者** 属性设置为你拥有的应用程序的 **appId** 的应用程序运行此请求) 返回 `403 Forbidden` 响应代码。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。 如果您 **运行的是来自** 您不拥有的应用程序的请求，则必须包含 owner 属性。 在这种情况下，将 **owner 属性** 设置为你拥有的应用程序的 **appId** 。
+下面展示了示例请求。 如果从不拥有的应用程序运行请求，则必须包括 **所有者** 属性。 在这种情况下，请将 **所有者** 属性设置为你拥有的应用程序的 **appId** 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
