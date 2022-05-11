@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0302363266d66a5481f856dc5783238e32c36874
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 2b0d2adfe05283a2adc5c312911c13280ba2b72d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412679"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329097"
 ---
 ```go
 
@@ -73,11 +73,10 @@ contentInfo.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
     "User-Agent": "ContosoLOBApp/1.0"
 }
-options := &msgraphsdk.ExtractLabelRequestBuilderPostOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.ExtractLabelRequestBuilderPostRequestConfiguration{
+    Headers: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().ExtractLabel().Post(options)
+result, err := graphClient.InformationProtection().Policy().Labels().ExtractLabel().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

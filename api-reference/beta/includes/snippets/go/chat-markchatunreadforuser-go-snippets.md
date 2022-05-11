@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2bce47d008606823f8b6faaaf891ca8faef23da1
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: d177a27e06e37fbf6768a0f89445e4b05c564363
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411687"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327867"
 ---
 ```go
 
@@ -21,11 +21,8 @@ tenantId := "2a690434-97d9-4eed-83a6-f5f13600199a"
 requestBody.SetTenantId(&tenantId)
 lastMessageReadDateTime, err := time.Parse(time.RFC3339, "2021-05-27T22:13:01.577Z")
 requestBody.SetLastMessageReadDateTime(&lastMessageReadDateTime)
-options := &msgraphsdk.MarkChatUnreadForUserRequestBuilderPostOptions{
-    Body: requestBody,
-}
 chatId := "chat-id"
-graphClient.ChatsById(&chatId).MarkChatUnreadForUser(chat-id).Post(options)
+graphClient.ChatsById(&chatId).MarkChatUnreadForUser(chat-id).Post(requestBody)
 
 
 ```

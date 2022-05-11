@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9dd0fcef38ad758301fef1d774c437aed37f2ac2
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 237678c13587f13fd3ad67b419ffeba276a4e5fe
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412018"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328574"
 ---
 ```go
 
@@ -17,11 +17,8 @@ customSecurityAttributes := msgraphsdk.NewCustomSecurityAttributeValue()
 requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 customSecurityAttributes.SetAdditionalData(map[string]interface{}{
 }
-options := &msgraphsdk.UserRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Patch(options)
+graphClient.UsersById(&userId).Patch(requestBody)
 
 
 ```

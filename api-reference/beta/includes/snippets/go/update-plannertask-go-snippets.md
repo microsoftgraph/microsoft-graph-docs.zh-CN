@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6f9597096fd05e8a9d9da1ffa7d06f66fd534e36
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 9d04871c08cbdf66c9c2b7151e5fc1ec631c2adf
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412609"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327685"
 ---
 ```go
 
@@ -27,12 +27,11 @@ headers := map[string]string{
     "Prefer": "return=representation"
     "If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
 }
-options := &msgraphsdk.PlannerTaskRequestBuilderPatchOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.PlannerTaskRequestBuilderPatchRequestConfiguration{
+    Headers: headers,
 }
 plannerTaskId := "plannerTask-id"
-result, err := graphClient.Planner().TasksById(&plannerTaskId).Patch(options)
+graphClient.Planner().TasksById(&plannerTaskId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 93e384b44e5fdc347e68d26094ea1b49dfac781d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: d6b8f03047ed5802a44546fc1ae3fa74ef44e87c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61097951"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327889"
 ---
 ```go
 
@@ -23,10 +23,7 @@ written := "nativeOrBilingual"
 requestBody.SetWritten(&written)
 reading := "nativeOrBilingual"
 requestBody.SetReading(&reading)
-options := &msgraphsdk.LanguagesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Languages().Post(options)
+result, err := graphClient.Me().Profile().Languages().Post(requestBody)
 
 
 ```

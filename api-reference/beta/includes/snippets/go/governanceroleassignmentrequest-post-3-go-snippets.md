@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b2f634a7fa4a7701e5ba100ed711ac4d2409120b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 41db6448ce954eedacaa7fb4df3e88ba71d9b374
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61085463"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328722"
 ---
 ```go
 
@@ -27,11 +27,8 @@ reason := "Deactivate the role"
 requestBody.SetReason(&reason)
 linkedEligibleRoleAssignmentId := "cb8a533e-02d5-42ad-8499-916b1e4822ec"
 requestBody.SetLinkedEligibleRoleAssignmentId(&linkedEligibleRoleAssignmentId)
-options := &msgraphsdk.RoleAssignmentRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 privilegedAccessId := "privilegedAccess-id"
-result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(options)
+result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(requestBody)
 
 
 ```

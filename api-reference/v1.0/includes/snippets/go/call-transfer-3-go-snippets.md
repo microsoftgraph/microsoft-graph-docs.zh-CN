@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e340db2f2c4cf8324aef59d34e0709334da34ebe
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 0013fa3515cf9c0cf2289a57829c14de8ac31301
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412219"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325749"
 ---
 ```go
 
@@ -27,11 +27,8 @@ transferTarget.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
     "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08",
 }
-options := &msgraphsdk.TransferRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(options)
+graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(requestBody)
 
 
 ```

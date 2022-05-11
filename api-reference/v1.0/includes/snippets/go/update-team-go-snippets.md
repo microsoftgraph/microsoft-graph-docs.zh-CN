@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f8469fd31fc52056d23a607400726978d49c24c5
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: bb0e006743bc76e294a918a27a9aa599c3a1926a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099057"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328653"
 ---
 ```go
 
@@ -29,11 +29,8 @@ allowGiphy := true
 funSettings.SetAllowGiphy(&allowGiphy)
 giphyContentRating := "strict"
 funSettings.SetGiphyContentRating(&giphyContentRating)
-options := &msgraphsdk.TeamRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Patch(options)
+graphClient.TeamsById(&teamId).Patch(requestBody)
 
 
 ```

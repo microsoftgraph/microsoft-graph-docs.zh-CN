@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5f158e1aec70ca9bff9663674a8a52dd52b8f011
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 33d744f7bb3fa25c733c4064ea0464af8cd5efb7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089130"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326306"
 ---
 ```go
 
@@ -49,10 +49,7 @@ requestBody.SetTenantId(&tenantId)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.call",
 }
-options := &msgraphsdk.CallsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Communications().Calls().Post(options)
+result, err := graphClient.Communications().Calls().Post(requestBody)
 
 
 ```

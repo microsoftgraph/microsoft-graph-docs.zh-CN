@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 93b3939d7eea2020d60a9eeaceb2b5805bcd924e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 82edde3c5e9af1c0118b87f87d06321f4a3c1c02
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412086"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326112"
 ---
 ```go
 
@@ -27,10 +27,7 @@ requestBody.SetValue( []Alert {
         }
     }
 }
-options := &msgraphsdk.UpdateAlertsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Security().Alerts().UpdateAlerts().Post(options)
+result, err := graphClient.Security().Alerts().UpdateAlerts().Post(requestBody)
 
 
 ```

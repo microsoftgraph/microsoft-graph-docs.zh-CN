@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bf34633bd17b3c3be8863ee0c6d102bc9579b809
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c6e79bf5f47be6981dabf1fc1c9cc5d9766a7699
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412169"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327478"
 ---
 ```go
 
@@ -19,11 +19,8 @@ requestBody.SetAssignments( []CloudPcUserSettingAssignment {
         "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
     }
 }
-options := &msgraphsdk.AssignRequestBuilderPostOptions{
-    Body: requestBody,
-}
 cloudPcUserSettingId := "cloudPcUserSetting-id"
-graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Assign(cloudPcUserSetting-id).Post(options)
+graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Assign(cloudPcUserSetting-id).Post(requestBody)
 
 
 ```

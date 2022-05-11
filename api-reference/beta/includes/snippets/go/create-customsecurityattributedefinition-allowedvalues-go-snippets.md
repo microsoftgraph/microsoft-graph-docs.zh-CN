@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8909113e1beeb5a8a75501b08b29e87f3fccf790
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 18babb3b00e8bc3cc40a3cbfae4a6a153f33d637
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519332"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328442"
 ---
 ```go
 
@@ -46,10 +46,7 @@ requestBody.SetAllowedValues( []AllowedValue {
         "isActive": true,
     }
 }
-options := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(options)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(requestBody)
 
 
 ```

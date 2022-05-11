@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cc91690d4649ae2eb84aded5280b4b9b0e1bac08
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: edfcda3913b2616b5a47b2e221f5d071b95201b9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61102822"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328628"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ChannelsRequestBuilderGetQueryParameters{
     Filter: "membershipType%20eq%20'private'",
 }
-options := &msgraphsdk.ChannelsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.ChannelsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Get(options)
+result, err := graphClient.TeamsById(&teamId).Channels().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

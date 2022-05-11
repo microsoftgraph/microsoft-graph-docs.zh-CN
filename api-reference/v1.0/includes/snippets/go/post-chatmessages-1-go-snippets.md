@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0f17a1b85ffc8320ab61ab9c9d9d923a3c4bbb30
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e6df1421e48fdbf2a2c77eb3745c08c1b34ad625
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095291"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326853"
 ---
 ```go
 
@@ -17,11 +17,8 @@ body := msgraphsdk.NewItemBody()
 requestBody.SetBody(body)
 content := "Hello world"
 body.SetContent(&content)
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Messages().Post(options)
+result, err := graphClient.ChatsById(&chatId).Messages().Post(requestBody)
 
 
 ```

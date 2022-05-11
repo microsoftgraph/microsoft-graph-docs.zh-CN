@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 86e2cbb5c0219c05dc51d3d302b7741d3bcd4758
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5edf750aa8b887fa5b6f7b5cf5657b1e0d355612
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336800"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326728"
 ---
 ```go
 
@@ -25,10 +25,7 @@ requestBody.SetAddLicenses( []AssignedLicense {
 requestBody.SetRemoveLicenses( []String {
     "bea13e0c-3828-4daa-a392-28af7ff61a0f",
 }
-options := &msgraphsdk.AssignLicenseRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().AssignLicense().Post(options)
+result, err := graphClient.Me().AssignLicense().Post(requestBody)
 
 
 ```

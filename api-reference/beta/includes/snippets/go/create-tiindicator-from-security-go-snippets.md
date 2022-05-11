@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8e8abb00b33e8b5851dcaba32156429a9cfdf72a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 805f943f287f120928258de12869c2a8733f21be
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099464"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327950"
 ---
 ```go
 
@@ -43,10 +43,7 @@ threatType := "WatchList"
 requestBody.SetThreatType(&threatType)
 tlpLevel := "green"
 requestBody.SetTlpLevel(&tlpLevel)
-options := &msgraphsdk.TiIndicatorsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Security().TiIndicators().Post(options)
+result, err := graphClient.Security().TiIndicators().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b2f18e3b9ed461a3887a32ba96e025ec377dcfc6
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f2480959513280632c7dddf67c64f9effc50eeb8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098385"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326697"
 ---
 ```go
 
@@ -18,10 +18,7 @@ requestBody.SetDefinition( []String {
 }
 displayName := "Test1234"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ClaimsMappingPoliciesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Policies().ClaimsMappingPolicies().Post(options)
+result, err := graphClient.Policies().ClaimsMappingPolicies().Post(requestBody)
 
 
 ```

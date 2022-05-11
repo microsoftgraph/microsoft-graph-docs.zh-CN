@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4cfbdfe511b8c46677c94b2925bf794363d5907b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c7b4cddd719540380d769356eaf75183d2153922
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098562"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328860"
 ---
 ```go
 
@@ -16,10 +16,10 @@ requestParameters := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderGe
     Expand: "requestor($expand=connectedOrganization)",
     Filter: "(requestState%20eq%20'PendingApproval')",
 }
-options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Get(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
