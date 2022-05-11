@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 88cd4d08db4b903e188c82dd38c8d5b89131887f
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: e50085b8c59e304c852f8f75c326fca2967a54f9
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247334"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296463"
 ---
 # <a name="microsoft-graph-connectors-api-limits"></a>Microsoft Graph 连接器 API 限制
 
@@ -18,32 +18,32 @@ ms.locfileid: "65247334"
 
 ## <a name="connection-limits"></a>连接限制
 
-| **限制** | **说明** |
-| --------- | --------------- |
-| **10 个连接** | 每个 Microsoft 365 租户的最大[连接](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true)资源数。 |
-| **700,000 项** | 每个连接的最大[项目](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true)数。 |
-| **70 GB** | 连接的最大字节大小。 |
+| 限制类型 | 限制 |
+| ---------- | ----- |
+| 每个 Microsoft 365 租户的[连接](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true)资源 | 10 |
+| 每个连接的[项目数](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) | 700,000 项 |
+| 连接字节大小 | 70 GB |
 
 ## <a name="schema-limits"></a>架构限制
 
-| **限制** | **说明** |
-| --------- | --------------- |
-| **128 个属性** | 可以在[架构](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true)中定义的最大数量的属性，描述通过连接引入的数据。 |
+| 限制类型 | 限制 |
+| ---------- | ----- |
+| 可以在[架构](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true)中定义属性，描述通过连接引入的数据。 | 128 |
 
 ## <a name="group-limits"></a>组限制
 
-| **限制** | **说明** |
-| --------- | --------------- |
-| **100,000** | 每个 Microsoft 365 租户的最大[外部组](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true)数量。 |
-| **1000 个请求/秒** | 组管理[限制](#throttling)阈值中每秒允许的最大请求数。 |
+| 限制类型 | 限制 |
+| ---------- | ----- |
+| 每个 Microsoft 365 租户的[外部组](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) | 100,000 | 
+| 组管理[限制](#throttling)阈值中每秒允许的请求数（请求数/秒）。 | 1,000 |
 
 ## <a name="item-ingestion"></a>项引入
 
-| **限制** | **说明** |
-| --------- | --------------- |
-| **每秒 4 个项目（每小时 250 MB）** | 通过连接引入项目的吞吐量限制。 |
-| **4 MB** | 项目的最大大小；此限制适用于[引入项目并为其建立索引](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0)时的请求正文。 |
-| **N/A** | 属性的最大大小。 |
+| 限制类型 | 限制 |
+| ---------- | ----- |
+| 通过连接引入项目的吞吐量限制。 | 每秒 4 个项目 <br> 每小时 250 MB |
+| 项目大小；此限制适用于[引入项目并为其建立索引](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0)时的请求正文。 | 4 MB |
+| 属性大小 | 不适用 |
 
 ## <a name="throttling"></a>限制
 

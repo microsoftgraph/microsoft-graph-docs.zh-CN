@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6e8b1555fa56bf884d36aad20c1c382a8279708b
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: c5ea0860085ce2740e6ca014965f0e31586de324
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247320"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296498"
 ---
 # <a name="chatmessage-delta"></a>chatMessage：delta
 
@@ -74,7 +74,10 @@ GET /teams/{team-id}/channels/{channel-id}/messages/delta
 此 API 支持以下[ OData 查询参数](/graph/query-parameters)：
 - `$top`，表示在调用中获取的最大消息数。 上限为 **50**。
 - `$skip`，表示列表开头要跳过的消息数。
-- `$filter`，允许返回满足特定条件的消息。 支持筛选的唯一属性是 `lastModifiedDateTime`，且仅支持 **gt** 运算符。 例如，`../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` 将提取指定日期时间后创建或更改的任何消息。
+- `$filter`，允许返回满足特定条件的消息。 支持筛选的唯一属性是 `lastModifiedDateTime`，且仅支持 **gt** 运算符。 例如， `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` 将提取 **任何回复链 (每个频道的帖子和关联的回复消息)** 在指定的日期时间后创建或更改。
+- `$expand` 允许扩展每个通道消息的属性。 仅支持 **答复** 。 如果频道混乱包含超过 1000 个答复， `replies@odata.nextLink` 则将提供分页。 
+
+> **注意：** 有关 `$expand` 查询参数，请参阅 [列表通道消息](channel-list-messages.md#example-3-request-with-top-and-expand-query-options-on-replies)。
 
 ## <a name="request-headers"></a>请求头
 | 标头        | 值                     |

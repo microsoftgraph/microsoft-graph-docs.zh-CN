@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8c610b1d795045c49b469ceb906a9994a4020b3a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4817c905f5283a1b248d38d9a1910e9a52db18c6
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021391"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296231"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>从云解决方案提供商应用程序中调用 Microsoft Graph
 
@@ -18,7 +18,7 @@ ms.locfileid: "59021391"
 
 本主题介绍如何使应用程序使用[授权代码授予流](/azure/active-directory/develop/active-directory-protocols-oauth-code)或[服务到服务客户端凭据流](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)，通过 Microsoft Graph 访问合作伙伴托管的客户数据。
 
-**重要说明：** 从 CSP 应用程序中调用 Microsoft Graph 仅受目录资源（例如 **用户**、**组**、**设备**、**组织**）和 [Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-beta) 资源支持。
+**重要说明：** 从 CSP 应用程序中调用 Microsoft Graph 仅受目录资源（例如 **用户**、**组**、**设备**、**组织**）和 [Intune](/graph/api/resources/intune-graph-overview) 资源支持。
 
 ## <a name="what-is-a-partner-managed-application"></a>什么是合作伙伴托管的应用程序
 
@@ -41,7 +41,9 @@ CSP 计划使 Microsoft 的合作伙伴可以管理 Microsoft Online Services（
 
 ### <a name="pre-consent-your-app-for-all-your-customers"></a>为你的所有客户预先同意应用
 
-为你的所有客户最终授予合作伙伴托管的应用的已配置权限。你可以通过使用 Azure AD powershell V2 将代表应用的 **servicePrincipal** 添加到合作伙伴租户中的 *Adminagents* 组，以执行此操作。你可以在 [此处](https://www.powershellgallery.com/packages/AzureAD)下载和安装 Azure AD PowerShell V2。按照以下步骤查找 *Adminagents* 组、**servicePrincipal** 并将其添加到组。
+最后，向合作伙伴管理的应用授予所有客户配置权限。为此，可以同两国使用 [Azure AD powershell V2 或 Microsoft Graph](https://www.powershellgallery.com/packages/AzureAD)[PowerShell](/powershell/microsoftgraph/installation) 表示应用的 **servicePrincipal** 添加到合作伙伴租户中的 *Adminagents* 组。按照以下步骤查找 *Adminagents* 组 **servicePrincipal** 并将其添加到组。
+
+# <a name="azure-ad-powershell"></a>[Azure AD PowerShell](#tab/azuread)
 
 1. 打开 PowerShell 会话，并通过在登录窗口中输入管理员凭据连接到合作伙伴租户。
 
@@ -66,6 +68,33 @@ CSP 计划使 Microsoft 的合作伙伴可以管理 Microsoft Online Services（
     ```PowerShell
     Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
     ```
+
+# <a name="microsoft-graph-powershell"></a>[Microsoft Graph PowerShell](#tab/graphpowershell)
+
+1. 打开 PowerShell 会话，并通过在登录窗口中输入管理员凭据连接到合作伙伴租户。
+
+    ```PowerShell
+    Connect-MgGraph
+    ```
+
+2. 查找代表 *Adminagents* 的组。
+
+    ```PowerShell
+    $group = Get-MgGroup -Filter "displayName eq 'Adminagents'"
+    ```
+
+3. 查找与应用具有相同 *appId* 的服务主体。
+
+    ```PowerShell
+    $sp = Get-MgServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
+    ```
+
+4. 最后，将服务主体添加到 *Adminagents* 组中。
+
+    ```PowerShell
+    New-MgGroupMember -GroupId $group.Id -DirectoryObjectId $sp.Id
+    ```
+----
 
 ## <a name="token-acquisition-flows"></a>令牌购置流
 
@@ -107,6 +136,6 @@ CSP 客户服务当前仅限于单个区域。合作伙伴托管的应用程序�
 
 使用[合作伙伴中心 API](https://partnercenter.microsoft.com/partner/developer) 创建新客户时会创建新的客户租户。此外，还会创建合作伙伴关系，这使你成为此新客户租户的在案合作伙伴。这种伙伴关系可能需要最多 3 分钟传播给新客户租户。如果应用在创建后直接调用 Microsoft Graph，应用可能会接收拒绝访问错误。当现有客户接受你的邀请时可能会遇到类似延迟。这是因为预先同意依赖于客户租户中现已存在的合作伙伴关系。
 
-为避免此问题，在调用 Azure AD 以获取令牌（从而调用 Microsoft Graph）之前，我们建议你的合作伙伴应用应在创建客户后等待 **三分钟**。 这应该涵盖了大多数情况。 但是，如果等待三分钟后仍收到授权错误，请再等待 60 秒后重试。
+为避免此问题，在调用 Azure AD 以获取令牌（从而调用 Microsoft Graph）之前，我们建议你的合作伙伴应用在创建客户后等待 **三分钟**。这应该涵盖了大多数情况。但是，如果等待三分钟后仍收到授权错误，请再等待 60 秒后重试。
 
 > **注意：** 重试时，你必须在调用 Microsoft Graph 之前从 Azure AD 获取新的访问令牌。你将无法使用已经拥有的访问令牌调用 Microsoft Graph，因为访问令牌只能使用一小时，且不包含预先同意的权限声明。

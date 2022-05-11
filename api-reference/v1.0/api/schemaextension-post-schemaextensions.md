@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 1adccedf32431e52bb2deca8f373c591ff4017bd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 46cc17173698ca00f203127d0aa37bbc4b4d433b
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671515"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296421"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -30,10 +30,10 @@ ms.locfileid: "63671515"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | Application.ReadWrite.All and Directory.ReadWrite.All |
 
 > [!NOTE]
-> 此外，对于委派的流程，登录用户必须是调用应用程序的所有者或用于设置 **所有者** 属性的（所带应用程序）`appId`所有者。
+> 此外，对于委派的流程，登录用户必须是调用应用程序的所有者，或用于设置 **所有者** 属性的（所带应用程序）**appId** 所有者。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
