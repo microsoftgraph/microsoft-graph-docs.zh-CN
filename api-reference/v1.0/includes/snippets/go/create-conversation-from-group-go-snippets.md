@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: be3a3d1ee32e19b9afa12825844445d34420be51
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: bd5ae234c14069017e5333cf9ae6900494268db8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095483"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327316"
 ---
 ```go
 
@@ -22,11 +22,8 @@ requestBody.SetThreads( []ConversationThread {
         }
     }
 }
-options := &msgraphsdk.ConversationsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Conversations().Post(options)
+result, err := graphClient.GroupsById(&groupId).Conversations().Post(requestBody)
 
 
 ```

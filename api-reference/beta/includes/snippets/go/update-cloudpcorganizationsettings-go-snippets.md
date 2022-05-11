@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 741c5214740010c62b14ade530b41ef01d6c20ac
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 371590a2b7c7fdaf0289ae1de6da1978c60e8db0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65220283"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327555"
 ---
 ```go
 
@@ -24,10 +24,7 @@ windowsSettings.SetLanguage(&language)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
 }
-options := &msgraphsdk.OrganizationSettingsRequestBuilderPatchOptions{
-    Body: requestBody,
-}
-graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(options)
+graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(requestBody)
 
 
 ```

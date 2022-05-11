@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fded40af06bc649a7fe397400d4f2c96ff258f50
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c96043ff1943c48ddabc5f89c13a6f115f10fd88
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412131"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326634"
 ---
 ```go
 
@@ -16,12 +16,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderPostOptions{
-    Body: requestBody,
-}
 deviceId := "device-id"
 directoryObjectId := "directoryObject-id"
-graphClient.DevicesById(&deviceId).RegisteredUsersById(&directoryObjectId).Post(options)
+graphClient.DevicesById(&deviceId).RegisteredUsersById(&directoryObjectId).Post(requestBody)
 
 
 ```

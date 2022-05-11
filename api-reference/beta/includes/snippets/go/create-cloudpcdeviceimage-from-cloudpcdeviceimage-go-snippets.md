@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f5d7254f1eaf18cfca0d0d094c81e5507501f4b1
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: d4b1ef1735b50c7ffeb232e023c8296b12af7a0d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084550"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327659"
 ---
 ```go
 
@@ -26,10 +26,7 @@ requestBody.SetSourceImageResourceId(&sourceImageResourceId)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
 }
-options := &msgraphsdk.DeviceImagesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().Post(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().Post(requestBody)
 
 
 ```

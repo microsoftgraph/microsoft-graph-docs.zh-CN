@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e454392c128893a65fdc407b1eef48072e54900e
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: bb75fff4a9f4021d6dff9fb9f546ed59cc3e75f2
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63528100"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328114"
 ---
 ```go
 
@@ -48,12 +48,9 @@ viewpoint.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.task",
 }
-options := &msgraphsdk.BaseTaskRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 baseTaskListId := "baseTaskList-id"
 baseTaskId := "baseTask-id"
-graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).Patch(options)
+graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 91e5157845d0a64c41dc7861e305add7b6336237
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c9a3578ef62e11c25ff4ce51ea3baf950c1fe617
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412683"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326378"
 ---
 ```go
 
@@ -17,11 +17,8 @@ description := "History - World History 1"
 requestBody.SetDescription(&description)
 displayName := "World History Level 1"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.EducationClassRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).Patch(options)
+graphClient.Education().ClassesById(&educationClassId).Patch(requestBody)
 
 
 ```

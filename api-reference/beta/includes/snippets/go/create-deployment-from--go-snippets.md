@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4809666781d8627c1d0b6ea55a36ddce828d98a1
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: cc08481d13b71bc6444b557f3d81c3c0819a5477
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083905"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327411"
 ---
 ```go
 
@@ -42,10 +42,7 @@ settings.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
 }
-options := &msgraphsdk.DeploymentsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Admin().Windows().Updates().Deployments().Post(options)
+result, err := graphClient.Admin().Windows().Updates().Deployments().Post(requestBody)
 
 
 ```

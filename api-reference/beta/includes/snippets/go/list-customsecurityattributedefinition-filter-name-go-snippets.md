@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7aa180781e96cca632f367bce73e8bf01b490afd
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 0ad43bb996ee6d9ac5c00c2f7031785aaa76ad13
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224589"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326384"
 ---
 ```go
 
@@ -15,10 +15,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderGetQueryParameters{
     Filter: "name%20eq%20'Project'%20and%20status%20eq%20'Available'",
 }
-options := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Get(options)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

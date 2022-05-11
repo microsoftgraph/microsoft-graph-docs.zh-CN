@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c0914a8d37d661418d8c1b9d6255a0222fed4f62
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 45384e03b2da19b70466bacfffba57a215ccea6a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412072"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327873"
 ---
 ```go
 
@@ -19,10 +19,7 @@ isUserNameAuthenticationEnabled := true
 requestBody.SetIsUserNameAuthenticationEnabled(&isUserNameAuthenticationEnabled)
 isPhoneOneTimePasswordAuthenticationEnabled := true
 requestBody.SetIsPhoneOneTimePasswordAuthenticationEnabled(&isPhoneOneTimePasswordAuthenticationEnabled)
-options := &msgraphsdk.B2cAuthenticationMethodsPolicyRequestBuilderPatchOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(options)
+graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(requestBody)
 
 
 ```

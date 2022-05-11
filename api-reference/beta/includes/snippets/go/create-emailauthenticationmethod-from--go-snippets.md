@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 692a702d0b02aff4ed704838ced7f8aa62290648
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 2ba8fcaa8e9c19ab53e64d965ac3e8d50bed9e0d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089078"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326455"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewEmailAuthenticationMethod()
 emailAddress := "kim@contoso.com"
 requestBody.SetEmailAddress(&emailAddress)
-options := &msgraphsdk.EmailMethodsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Authentication().EmailMethods().Post(options)
+result, err := graphClient.UsersById(&userId).Authentication().EmailMethods().Post(requestBody)
 
 
 ```

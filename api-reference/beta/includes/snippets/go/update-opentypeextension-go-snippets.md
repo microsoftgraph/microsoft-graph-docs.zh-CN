@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 26df8ea5d89eade705b2bead976f13be8f7b335e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7fc9c4476a2c5e9dfcb2ed4a54927e5694dadbe0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412412"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328487"
 ---
 ```go
 
@@ -25,14 +25,11 @@ requestBody.SetAdditionalData(map[string]interface{}{
         "Add family",
     }
 }
-options := &msgraphsdk.ExtensionRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
 extensionId := "extension-id"
-result, err := graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).ExtensionsById(&extensionId).Patch(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).ExtensionsById(&extensionId).Patch(requestBody)
 
 
 ```

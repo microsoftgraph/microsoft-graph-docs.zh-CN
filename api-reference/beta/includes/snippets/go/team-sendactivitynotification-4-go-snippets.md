@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fade62e32c10c5fd811ba038267f268cc0e84669
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 9e9bfaecea384fddc03e4d2674f0b45c1c9e72e6
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65220271"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326552"
 ---
 ```go
 
@@ -38,11 +38,8 @@ requestBody.SetTemplateParameters( []KeyValuePair {
         "value": "5",
     }
 }
-options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(options)
+graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(requestBody)
 
 
 ```

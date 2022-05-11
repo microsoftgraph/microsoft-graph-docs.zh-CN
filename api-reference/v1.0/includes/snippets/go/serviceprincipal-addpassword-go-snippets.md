@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6750f51d6791a1295d67758667c3913899571433
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c93715c71390a1dedfa79295bcd98c9d2e1cb8de
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411705"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327762"
 ---
 ```go
 
@@ -17,11 +17,8 @@ passwordCredential := msgraphsdk.NewPasswordCredential()
 requestBody.SetPasswordCredential(passwordCredential)
 displayName := "Password friendly name"
 passwordCredential.SetDisplayName(&displayName)
-options := &msgraphsdk.AddPasswordRequestBuilderPostOptions{
-    Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddPassword(servicePrincipal-id).Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddPassword(servicePrincipal-id).Post(requestBody)
 
 
 ```

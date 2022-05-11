@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 56d7d57d201e477834e67dd57d978a6d5bd2ef49
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 48809c91a3411f620082f69b53f794b3366452b8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524930"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328951"
 ---
 ```go
 
@@ -15,13 +15,13 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
     "Prefer": "include-unknown-enum-members"
 }
-options := &msgraphsdk.EducationSubmissionRequestBuilderGetOptions{
-    H: headers,
+options := &msgraphsdk.EducationSubmissionRequestBuilderGetRequestConfiguration{
+    Headers: headers,
 }
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
 educationSubmissionId := "educationSubmission-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).Get(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

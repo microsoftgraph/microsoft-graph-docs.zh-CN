@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f85a25b8ebecf0b09c41028288fde8aefc3d8593
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 39c9ecfa0ac00980e8cc46f3d032232ab453bc01
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412610"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325851"
 ---
 ```go
 
@@ -21,11 +21,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "capacity": ,
     "isWheelChairAccessible": false,
 }
-options := &msgraphsdk.PlaceRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 placeId := "place-id"
-result, err := graphClient.PlacesById(&placeId).Patch(options)
+graphClient.PlacesById(&placeId).Patch(requestBody)
 
 
 ```

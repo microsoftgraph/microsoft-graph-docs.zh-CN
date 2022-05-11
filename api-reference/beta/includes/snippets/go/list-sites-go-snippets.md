@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 33afb6be7c4476680e1bfb6ea1e03a529e5f01f6
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 8f193217565d4fe511ffa9f0887aff184e899e8f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090298"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325773"
 ---
 ```go
 
@@ -16,10 +16,10 @@ requestParameters := &msgraphsdk.SitesRequestBuilderGetQueryParameters{
     Select: "siteCollection,webUrl",
     Filter: "siteCollection/root%20ne%20null",
 }
-options := &msgraphsdk.SitesRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.SitesRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.Sites().Get(options)
+result, err := graphClient.Sites().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

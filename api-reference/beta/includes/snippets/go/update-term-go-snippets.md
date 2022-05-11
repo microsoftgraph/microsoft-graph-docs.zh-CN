@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b75495dd8cd2cf700199c35df0aabab606713def
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 274737645c92a2d5e4477d105db1bbd408d12789
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412285"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327615"
 ---
 ```go
 
@@ -21,12 +21,9 @@ requestBody.SetLabels( []LocalizedLabel {
         "isDefault": true,
     }
 }
-options := &msgraphsdk.TermRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 setId := "set-id"
 termId := "term-id"
-result, err := graphClient.TermStore().SetsById(&setId).TermsById(&termId).Patch(options)
+graphClient.TermStore().SetsById(&setId).TermsById(&termId).Patch(requestBody)
 
 
 ```

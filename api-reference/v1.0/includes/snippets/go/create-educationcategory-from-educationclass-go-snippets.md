@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9c16661101013b1761379c43bc2b6993328095a4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4b7c038fd49fb9fcdbdd0de52ba23b7e4d6f6abc
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136278"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326964"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewEducationCategory()
 displayName := "Quizzes"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.AssignmentCategoriesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentCategories().Post(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentCategories().Post(requestBody)
 
 
 ```

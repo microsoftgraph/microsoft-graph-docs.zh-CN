@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 78f743e52cb48fd4c10d1b62c895c27f3ae90c18
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c46df712d8bef9d0e15532a1dbc7bffa61e4f1c8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61091568"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328123"
 ---
 ```go
 
@@ -18,11 +18,11 @@ requestParameters := &msgraphsdk.EventsRequestBuilderGetQueryParameters{
 headers := map[string]string{
     "Prefer": "outlook.timezone="Pacific Standard Time""
 }
-options := &msgraphsdk.EventsRequestBuilderGetOptions{
-    Q: requestParameters,
-    H: headers,
+options := &msgraphsdk.EventsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
+    Headers: headers,
 }
-result, err := graphClient.Me().Events().Get(options)
+result, err := graphClient.Me().Events().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

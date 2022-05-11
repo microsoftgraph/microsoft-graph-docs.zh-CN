@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 317fea08f906739083069e277e422fb5c36c3635
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5c4361fffdbd2e1981d037a1772976702a0a70b1
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204418"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325702"
 ---
 ```go
 
@@ -36,12 +36,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "isExpirationRequired": true,
     "maximumDuration": "PT1H45M",
 }
-options := &msgraphsdk.UnifiedRoleManagementPolicyRuleRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 unifiedRoleManagementPolicyId := "unifiedRoleManagementPolicy-id"
 unifiedRoleManagementPolicyRuleId := "unifiedRoleManagementPolicyRule-id"
-graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).RulesById(&unifiedRoleManagementPolicyRuleId).Patch(options)
+graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).RulesById(&unifiedRoleManagementPolicyRuleId).Patch(requestBody)
 
 
 ```

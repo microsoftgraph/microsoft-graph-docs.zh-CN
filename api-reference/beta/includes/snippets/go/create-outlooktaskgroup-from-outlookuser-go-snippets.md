@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 072467f5f3b6524c4ec31be0249ee91cca03910d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: bf7a23c08652f3224896ae4f7f2ea399f449409c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084674"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328278"
 ---
 ```go
 
@@ -15,10 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewOutlookTaskGroup()
 name := "Leisure tasks"
 requestBody.SetName(&name)
-options := &msgraphsdk.TaskGroupsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Outlook().TaskGroups().Post(options)
+result, err := graphClient.Me().Outlook().TaskGroups().Post(requestBody)
 
 
 ```

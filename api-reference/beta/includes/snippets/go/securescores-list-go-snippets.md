@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d6cacbf18b9a432f315bcd59e5f86ad3162035fd
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e7dcc900af57921290ea5d1a06a90514d00b3416
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101919"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327674"
 ---
 ```go
 
@@ -15,10 +15,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.SecureScoresRequestBuilderGetQueryParameters{
     Top: 1,
 }
-options := &msgraphsdk.SecureScoresRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.SecureScoresRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.Security().SecureScores().Get(options)
+result, err := graphClient.Security().SecureScores().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c419714510c54c2bb3c4e7a48a97032f9003d793
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 30d365ae0c8a08e706bfbe03f8c4cd8877ed3c98
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412619"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328716"
 ---
 ```go
 
@@ -21,11 +21,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "ipRanges":  []Object {
     }
 }
-options := &msgraphsdk.NamedLocationRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 namedLocationId := "namedLocation-id"
-result, err := graphClient.Identity().ConditionalAccess().NamedLocationsById(&namedLocationId).Patch(options)
+graphClient.Identity().ConditionalAccess().NamedLocationsById(&namedLocationId).Patch(requestBody)
 
 
 ```

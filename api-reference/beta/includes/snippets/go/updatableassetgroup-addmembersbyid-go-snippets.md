@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 275cb6bf8f92b87de827d56b68aa56e40bba6f74
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: eecb7fd89b336d3eec39216cee6a73e03693701d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412602"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327412"
 ---
 ```go
 
@@ -20,11 +20,8 @@ requestBody.SetIds( []String {
 }
 memberEntityType := "#microsoft.graph.windowsUpdates.azureADDevice"
 requestBody.SetMemberEntityType(&memberEntityType)
-options := &msgraphsdk.AddMembersByIdRequestBuilderPostOptions{
-    Body: requestBody,
-}
 updatableAssetId := "updatableAsset-id"
-graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).AddMembersById(updatableAsset-id).Post(options)
+graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).AddMembersById(updatableAsset-id).Post(requestBody)
 
 
 ```

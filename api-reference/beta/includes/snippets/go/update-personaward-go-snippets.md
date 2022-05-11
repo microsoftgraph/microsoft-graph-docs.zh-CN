@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 81c6713cc9f2fe99d31fc166f3f952c8f0090b08
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8098614db1486eaca32d72b2ecf99309d9ff9cec
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412666"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327182"
 ---
 ```go
 
@@ -17,12 +17,9 @@ issuingAuthority := "International Association of Branding Management"
 requestBody.SetIssuingAuthority(&issuingAuthority)
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
 requestBody.SetThumbnailUrl(&thumbnailUrl)
-options := &msgraphsdk.PersonAwardRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 userId := "user-id"
 personAwardId := "personAward-id"
-result, err := graphClient.UsersById(&userId).Profile().AwardsById(&personAwardId).Patch(options)
+graphClient.UsersById(&userId).Profile().AwardsById(&personAwardId).Patch(requestBody)
 
 
 ```

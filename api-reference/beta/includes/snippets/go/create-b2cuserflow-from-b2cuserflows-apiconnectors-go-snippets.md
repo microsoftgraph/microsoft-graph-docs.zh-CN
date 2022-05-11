@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 83e47dbc8f19f671804ffe638f4f83f9cdf78401
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b991dee47b03d3b7f71ebd3779cc2cb43e8b5d42
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095174"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328717"
 ---
 ```go
 
@@ -31,10 +31,7 @@ apiConnectorConfiguration.SetPostAttributeCollection(postAttributeCollection)
 postAttributeCollection.SetAdditionalData(map[string]interface{}{
     "@odata.id": "{apiConnectorId}",
 }
-options := &msgraphsdk.B2cUserFlowsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().B2cUserFlows().Post(options)
+result, err := graphClient.Identity().B2cUserFlows().Post(requestBody)
 
 
 ```

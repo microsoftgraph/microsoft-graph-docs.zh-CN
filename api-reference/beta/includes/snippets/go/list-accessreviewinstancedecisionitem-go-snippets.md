@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 156d76a494b40f487840ae0518063186daf2b7f6
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: b173978bfcac9689e025fab4940382aefe0f3c91
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224903"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326176"
 ---
 ```go
 
@@ -16,12 +16,12 @@ requestParameters := &msgraphsdk.DecisionsRequestBuilderGetQueryParameters{
     Top: 100,
     Skip: 0,
 }
-options := &msgraphsdk.DecisionsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.DecisionsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
 accessReviewInstanceId := "accessReviewInstance-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).Decisions().Get(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).Decisions().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b8b79dcd020e0b241295b133192f9c08b02ae5be
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 06eaa89201614e21f1a882231eec5ab2555921db
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095607"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327052"
 ---
 ```go
 
@@ -21,10 +21,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.urlAssessmentRequest",
     "url": "http://test.com",
 }
-options := &msgraphsdk.ThreatAssessmentRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(options)
+result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(requestBody)
 
 
 ```
