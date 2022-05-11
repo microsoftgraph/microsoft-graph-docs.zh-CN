@@ -1,24 +1,26 @@
 ---
-title: 添加 accessReview 审阅者
-description: '在Azure AD审阅功能中，更新现有 accessReview 对象以将其他用户添加为审阅者。  仅允许对尚未完成的访问评审进行此操作，并且仅允许对明确指定审阅者的访问评审执行此操作。 不允许此操作进行访问评审，用户在此审阅自己的访问权限，并且不允许进行访问评审，其中组所有者被分配为审阅者。 '
+title: 添加 accessReview 审阅器
+description: '在 Azure AD 访问评审功能中，更新现有 accessReview 对象，将另一个用户添加为审阅者。  此操作仅适用于尚未完成的访问评审，并且仅允许在显式指定审阅者的访问评审中执行此操作。 此操作不允许用户在访问评审中审阅其自己的访问权限，并且不适用于将组所有者分配为审阅者的访问评审。 '
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e710927e5f67d45ceeb60692a05fb449c482e48d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e5814ab38f90bc0f7f2d3ef55eda276bbf3f27c6
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091092"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314548"
 ---
-# <a name="add-accessreview-reviewer"></a>添加 accessReview 审阅者
+# <a name="add-accessreview-reviewer"></a>添加 accessReview 审阅器
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[审阅](../resources/accessreviews-root.md)功能中，更新现有[accessReview](../resources/accessreview.md)对象以将其他用户添加为审阅者。  仅允许对尚未完成的访问评审进行此操作，并且仅允许对明确指定审阅者的访问评审执行此操作。 不允许此操作进行访问评审，用户在此审阅自己的访问权限，并且不允许进行访问评审，其中组所有者被分配为审阅者。 
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，更新现有 [accessReview](../resources/accessreview.md) 对象，将另一个用户添加为审阅者。  此操作仅适用于尚未完成的访问评审，并且仅允许在显式指定审阅者的访问评审中执行此操作。 此操作不允许用户在访问评审中审阅其自己的访问权限，并且不适用于将组所有者分配为审阅者的访问评审。 
 
 
 ## <a name="permissions"></a>权限
@@ -41,9 +43,9 @@ POST /accessReviews/{reviewId}/reviewers
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供将成为审阅者的用户 ID 的 JSON 表示形式。
+在请求正文中，提供将担任审阅者的用户 ID 的 JSON 表示形式。
 
-下表显示更新 accessReview 时提供的属性。
+下表显示了更新 accessReview 时可以提供的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -51,14 +53,14 @@ POST /accessReviews/{reviewId}/reviewers
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 响应 `201 Created` 代码 。
+如果成功，此方法将返回 `201 Created` 响应代码。
 
 ## <a name="example"></a>示例
 
-这是一个更新一次检查， (审阅者) 访问评审的示例。
+这是更新一次性 (不重复) 使用其他审阅者进行访问评审的示例。
 
 ##### <a name="request"></a>请求
-在请求正文中，提供用户对象的 ID 的 JSON 表示形式。
+在请求正文中，提供用户对象 ID 的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

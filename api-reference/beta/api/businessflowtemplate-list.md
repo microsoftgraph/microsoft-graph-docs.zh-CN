@@ -1,16 +1,16 @@
 ---
 title: 列出 businessFlowTemplates
-description: 在"Azure AD评审"功能中，列出所有 businessFlowTemplate 对象。
+description: 在 Azure AD 访问评审功能中，列出所有 businessFlowTemplate 对象。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 0fefb1b789b3d13995d93c5acfe09362faa3e600
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 150617d1035cf8036dc4424db5e48f38676f8127
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124122"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65315180"
 ---
 # <a name="list-businessflowtemplates"></a>列出 businessFlowTemplates
 
@@ -18,7 +18,9 @@ ms.locfileid: "62124122"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在"Azure AD评审["功能中](../resources/accessreviews-root.md)，列出所有[businessFlowTemplate](../resources/businessflowtemplate.md)对象。
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，列出所有 [businessFlowTemplate](../resources/businessflowtemplate.md) 对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +30,7 @@ ms.locfileid: "62124122"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.Membership |
 
-登录用户还必须具有允许其阅读访问评审的目录角色。
+已登录的用户还必须具有允许他们读取访问评审的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,10 +43,10 @@ GET /businessFlowTemplates
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-不应提供请求正文。
+不应提供任何请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200, OK` [businessFlowTemplate](../resources/businessflowtemplate.md) 对象数组。
+如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [businessFlowTemplate](../resources/businessflowtemplate.md) 对象数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -126,7 +128,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-| 方法           | 返回类型    |Description|
+| 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[创建 accessReview](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  创建新的 accessReview。 |
 

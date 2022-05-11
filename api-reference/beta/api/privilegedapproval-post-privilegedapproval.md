@@ -1,16 +1,16 @@
 ---
 title: 创建 privilegedApproval
-description: 使用此 API 创建新的 privilegedApproval。
+description: 使用此 API 创建新的 PrivilegedApproval。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 1613da269d527065059fdf3ddee9c6d1b6d1f7b3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 0fa39e7332279fda504b4d8f9563ff1f2dd713d6
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112235"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314808"
 ---
 # <a name="create-privilegedapproval"></a>创建 privilegedApproval
 
@@ -18,9 +18,9 @@ ms.locfileid: "62112235"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-使用此 API 创建新的 privilegedApproval。
+使用此 API 创建新的 PrivilegedApproval。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -43,13 +43,13 @@ POST /privilegedApproval
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [privilegedApproval 对象的](../resources/privilegedapproval.md) JSON 表示形式。
+在请求正文中，提供 [privilegedApproval](../resources/privilegedapproval.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [privilegedApproval](../resources/privilegedapproval.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [privilegedApproval](../resources/privilegedapproval.md) 对象。
 
-请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -98,7 +98,7 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [privilegedApproval 对象的](../resources/privilegedapproval.md) JSON 表示形式。
+在请求正文中，提供 [privilegedApproval](../resources/privilegedapproval.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

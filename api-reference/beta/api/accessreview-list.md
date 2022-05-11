@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a29d365a253f5917d3f5f58021dbe639d2a02713
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8330e5dedcaae077864c556b9def9d09dac2cc8b
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095131"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314520"
 ---
 # <a name="list-accessreviews"></a>列出 accessReviews
 
@@ -18,14 +18,16 @@ ms.locfileid: "62095131"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索特定[businessFlowTemplate](../resources/businessflowtemplate.md)的[accessReview](../resources/accessreview.md)对象。 对于使用该业务流程模板创建的每次一次性和定期访问评审，将返回零个或多个 **accessReview** 对象的列表。  请注意，业务流程模板的 ID 区分大小写。
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+检索特定 [businessFlowTemplate](../resources/businessflowtemplate.md) 的 [accessReview](../resources/accessreview.md) 对象。 对于使用该业务流模板创建的每次一次性和定期访问评审，将返回零个或多个 **accessReview** 对象的列表。  请注意，业务流模板 ID 区分大小写。
 
 >[!NOTE]
-> 如果与筛选器匹配的任何访问评审是定期访问评审，则除了任何当前、过去和下一个即将发生的实例之外，还将返回一 **个 accessReview** 对象以表示整个定期系列。 例如，如果每月对组 A 的来宾成员进行定期访问评审，对组 B 的来宾成员进行季度定期访问评审，对组 C 的来宾成员进行一次性访问评审，则每个定期访问评审都刚刚开始，并且调用方使用查看组来宾成员的业务流程模板查询访问评审， 将返回表示三个系列的三个对象，以及当前访问评审实例的三个对象，以及下一个即将推出的实例可能返回的三个对象。 若要检索定期访问评审的实例，或为特定月份或季度安排的访问评审实例，调用方随后可以导航定期 **accessReview** 对象的实例关系。  实例 **关系** 链接到定期访问评审的当前或过去实例的 **accessReview** 对象。
+> 如果与筛选器匹配的任何访问评审都是定期访问评审，则除了任何当前、过去和下一个即将推出的实例外，还将返回一个 **accessReview** 对象来表示每个定期序列作为一个整体。 例如，如果每月对组 A 的来宾成员进行定期访问评审、对 B 组的来宾成员进行季度定期访问评审，以及对组 C 的来宾成员进行一次性访问评审，则每个定期访问都刚刚开始，并且调用方使用组的来宾成员评审的业务流模板查询访问评审， 将返回三个表示三个序列的对象，以及当前访问评审实例的三个对象，以及下一个即将推出的实例的三个对象。 若要检索定期访问评审的实例或计划用于特定月份或季度的访问评审实例，调用方随后可以导航定期 **accessReview** 对象的 **实例** 关系。 实 **例** 关系链接到 **AccessReview** 对象，以获取定期访问评审的当前或过去实例。
 
-如果许多访问评审与筛选器匹配，为了提高效率并避免超时，请检索页面中的 结果集，方法包括页面大小为 100 的查询参数和请求中的 query 参数。 `$top` `$skip=0` 即使您预计请求将跨越多个页面，也可以包含这些参数。 当一结果集跨多个页面时，Microsoft Graph 返回该页面，该页面在响应中包含指向下一页结果的 `@odata.nextLink` URL 中的属性。 如果该属性存在，请继续使用每次响应中的 `@odata.nextLink` URL 来创建额外请求，直至返回所有结果，如[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)一文中所述。
+如果许多访问评审与筛选器匹配，为了提高效率和避免超时，请在页面中检索结果集，方法是同时 `$top` 包括页面大小为 100 的查询参数和 `$skip=0` 请求中的查询参数。 即使未预料到请求将跨越多个页面，也可以包含这些参数。 当结果集跨多个页面时，Microsoft Graph在响应中返回包含`@odata.nextLink`下一页结果 URL 的属性的页面。 如果该属性存在，请继续使用每次响应中的 `@odata.nextLink` URL 来创建额外请求，直至返回所有结果，如[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)一文中所述。
 
-此 API 返回的 **accessReview** 对象不包括嵌套结构属性，如 **设置** 或 关系。  若要检索访问评审设置或关系，请使用 [get accessReview](accessreview-get.md) API。
+此 API 返回的 **accessReview** 对象将不包括嵌套结构属性，例如 **设置** 或关系。  若要检索访问评审设置或关系，请使用 [get accessReview](accessreview-get.md) API。
 
 
 ## <a name="permissions"></a>权限
@@ -37,7 +39,7 @@ ms.locfileid: "62095131"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.Membership |
 
- 登录用户还必须具有允许其阅读访问评审的目录角色。
+ 已登录的用户还必须具有允许他们读取访问评审的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,14 +52,14 @@ GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}&$
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-不提供请求正文。
+请勿提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReview](../resources/accessreview.md) 对象数组。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReview](../resources/accessreview.md) 对象数组。
 
 ## <a name="examples"></a>示例
 ##### <a name="request"></a>请求
-以下示例显示检索业务流程模板"6e4f3d20-c5c3-407f-9695-8460952bcc68"的所有一次性和定期访问评审的请求。
+以下示例演示了检索业务流模板“6e4f3d20-c5c3-407f-9695-8460952bcc68”的所有一次性和定期访问评审的请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

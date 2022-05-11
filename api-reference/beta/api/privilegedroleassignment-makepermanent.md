@@ -1,33 +1,33 @@
 ---
-title: privilegedRoleAssignment：makePermanent
-description: 使角色分配永久。
+title: privilegedRoleAssignment： makePermanent
+description: 使角色分配永久化。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 1d37c53633b41ca729de856d2eaedd8b3325fd18
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: e9069d820d85a2b228192a997c70dfbfee0505b9
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340125"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314268"
 ---
-# <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment：makePermanent
+# <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment： makePermanent
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-使角色分配永久。
+使角色分配永久化。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止错误。
+租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止使用的错误。
 
-请求者需要具有 _Privileged Role Administrator_ 角色。 
+请求者需要具有 _特权角色管理员_ 角色。 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -50,13 +50,13 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|reason|string|可选。 进行此调用的原因。|
-|ticketNumber|string|可选。 与此操作关联的票证编号。|
-|ticketSystem|string|可选。 票证系统。|
+|reason|字符串|可选。 进行此调用的原因。|
+|ticketNumber|字符串|可选。 与此操作关联的票证号。|
+|ticketSystem|字符串|可选。 票证系统。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

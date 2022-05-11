@@ -4,13 +4,13 @@ description: '检索 privilegedRoleAssignmentRequest 的集合。 '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 8ea2888e370bbfd2c3cb082994fbc154b9a0f0b5
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: 835a544de23eddbc016d3c20089cddb73c728d45
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671347"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315607"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>列出 privilegedRoleAssignmentRequests
 
@@ -20,9 +20,9 @@ ms.locfileid: "63671347"
 
 [!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-检索 [privilegedRoleAssignmentRequest 的集合](../resources/privilegedroleassignmentrequest.md)。 
+检索 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 的集合。 
 
-**注意：** 此请求者必须对资源角色分配一个资源。
+**注意：** 此请求者必须至少对资源分配一个角色。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,7 +31,7 @@ ms.locfileid: "63671347"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ GET /privilegedRoleAssignmentRequests
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象的集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

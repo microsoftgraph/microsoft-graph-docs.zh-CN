@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.prod: search
 ms.author: emzho
 author: emzho
-ms.openlocfilehash: a15712ce6fe32efe9e26d659b8e763432c478040
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: c89dfafdd1973dfbdc908368427e43076aaad07d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214648"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315452"
 ---
 # <a name="external-connectors-enum-values"></a>外部连接器枚举值
 
@@ -21,8 +21,8 @@ ms.locfileid: "60214648"
 
 | 成员
 |:--------------
-| grant
-| deny
+| 授予
+| 否认
 | unknownFutureValue
 
 ### <a name="acltype-values"></a>aclType 值
@@ -31,7 +31,7 @@ ms.locfileid: "60214648"
 |:--------------
 | 用户
 | 组
-| everyone
+| 每个人 都
 | everyoneExceptGuests
 | externalGroup
 | unknownFutureValue
@@ -41,10 +41,10 @@ ms.locfileid: "60214648"
 
 | 成员
 |:--------------
-| unspecified
+| 未指定
 | inprogress
-| 已完成
-| failed
+| 完成
+| 失败
 | unknownFutureValue
 
 
@@ -52,12 +52,11 @@ ms.locfileid: "60214648"
 
 |成员
 |:--------------
-| draft
-| ready
-| 已过时
+| 草案
+| 准备
+| 过时
 | limitExceeded
 | unknownFutureValue
-
 
 ### <a name="externalgroupmembertype-values"></a>externalGroupMemberType 值
 
@@ -81,7 +80,7 @@ ms.locfileid: "60214648"
 | 成员
 |:--------------
 | azureActiveDirectory
-| external
+| 外部
 
 
 ### <a name="label-values"></a>标签值
@@ -107,7 +106,7 @@ ms.locfileid: "60214648"
 
 | 成员
 |:--------------
-| string
+| 字符串
 | int64
 | double
 | dateTime
@@ -123,7 +122,7 @@ ms.locfileid: "60214648"
 |成员|
 |:---|
 |空|
-|equals|
+|等于|
 |notEquals|
 |contains|
 |notContains|

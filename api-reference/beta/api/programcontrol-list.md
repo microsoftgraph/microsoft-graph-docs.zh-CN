@@ -1,16 +1,16 @@
 ---
 title: 列出 programControls
-description: 在Azure AD评审"功能中，列出租户中所有程序的所有 programControl 对象。
+description: 在 Azure AD 访问评审功能中，列出租户中所有程序的所有 programControl 对象。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 1c3883fa2d3a902d2e5f6d8ee086065b71e16874
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1fe6c105296369d6119a857916dfa3510b3dd4b1
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105660"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65315327"
 ---
 # <a name="list-programcontrols"></a>列出 programControls
 
@@ -18,7 +18,9 @@ ms.locfileid: "62105660"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD访问[评审](../resources/accessreviews-root.md)功能中，列出租户中所有程序的所有[programControl](../resources/programcontrol.md)对象。
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，列出租户中所有程序的所有 [programControl](../resources/programcontrol.md) 对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +30,7 @@ ms.locfileid: "62105660"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | ProgramControl.Read.All、ProgramControl.ReadWrite.All  |
 
-登录用户还必须具有允许其读取程序的目录角色。
+已登录的用户还必须具有允许他们读取程序的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,10 +43,10 @@ GET /programControls
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-不应提供请求正文。
+不应提供任何请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200, OK` [programControl](../resources/programcontrol.md) 对象数组。
+如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [programControl](../resources/programcontrol.md) 对象数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -116,7 +118,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-| 方法           | 返回类型    |Description|
+| 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序控件的集合。|
 

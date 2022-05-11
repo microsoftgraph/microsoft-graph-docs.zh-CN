@@ -1,16 +1,16 @@
 ---
 title: 获取 accessReview
-description: 在Azure AD查看功能中，检索 accessReview 对象。
+description: 在 Azure AD 访问评审功能中，检索 accessReview 对象。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6a5d14aa63b523d5bd0b3fd9846b96eae055d1a3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 50f3ba903b15db5e2cee1972d0629127e14926f7
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104015"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314506"
 ---
 # <a name="get-accessreview"></a>获取 accessReview
 
@@ -18,11 +18,13 @@ ms.locfileid: "62104015"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[评审](../resources/accessreviews-root.md)功能中，检索[accessReview](../resources/accessreview.md)对象。  
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-若要检索访问评审的审阅者，请使用 [列表 accessReview reviewers](accessreview-listreviewers.md) API。 若要检索访问评审的决策，请使用 [列表 accessReview 决策](accessreview-listdecisions.md) API 或列表 [my accessReview 决策](accessreview-listmydecisions.md) API。
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，检索 [accessReview](../resources/accessreview.md) 对象。  
 
-如果这是定期访问评审，则不与定期访问评审系列关联任何决策。 相反，请使用该系列的关系检索访问评审的过去、当前和未来实例的 `instances` [accessReview](../resources/accessreview.md) 集合。 每个过去和当前实例都将有决策。
+若要检索访问评审的审阅者，请使用 [列表 accessReview 审阅者](accessreview-listreviewers.md) API。 若要检索访问评审的决策，请使用 [列表 accessReview 决策](accessreview-listdecisions.md) API 或 [AccessReview 决策](accessreview-listmydecisions.md) API 列表。
+
+如果这是定期访问评审，则不会与定期访问评审系列相关联。 相反，请使用 `instances` 该系列的关系来检索访问评审的过去、当前和将来实例的 [accessReview](../resources/accessreview.md) 集合。 每个过去实例和当前实例都有决策。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -33,7 +35,7 @@ ms.locfileid: "62104015"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.Membership  |
 
-为了调用此 API，已登录用户还必须位于允许其阅读访问评审的目录角色中，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviews-root.md)。
+若要调用此 API，已登录的用户还必须具有允许他们读取访问评审的目录角色，也可以将用户分配为访问评审的审阅者。  有关详细信息，请参阅 [访问评审](../resources/accessreviews-root.md)的角色和权限要求。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ GET /accessReviews/{reviewId}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReview](../resources/accessreview.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReview](../resources/accessreview.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ad2dcfdd60a91ed11b52fefdea09b8fe3ecfc143
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b856a01d252232c21f4ae2924984904042fc1053
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137696"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316339"
 ---
 ```go
 
@@ -18,11 +18,11 @@ requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
 headers := map[string]string{
     "Prefer": "return=minimal"
 }
-options := &msgraphsdk.DeltaRequestBuilderGetOptions{
-    Q: requestParameters,
-    H: headers,
+options := &msgraphsdk.DeltaRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
+    Headers: headers,
 }
-result, err := graphClient.Users().Delta()().Get(options)
+result, err := graphClient.Users().Delta()().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

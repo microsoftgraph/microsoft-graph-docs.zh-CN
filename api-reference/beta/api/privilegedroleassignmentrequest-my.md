@@ -1,18 +1,18 @@
 ---
-title: privilegedRoleAssignmentRequest： my
-description: 获取请求者对请求角色分配权限。
+title: privilegedRoleAssignmentRequest：my
+description: 获取请求者的特权角色分配请求。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: d0fa95397478e9736ad5c7b91cee795619e1f7cb
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: 44964c5152fbb38a8cba63fd656d85f28a72aa83
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671634"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316175"
 ---
-# <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest： my
+# <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest：my
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "63671634"
 
 [!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-获取请求者对请求角色分配权限。
+获取请求者的特权角色分配请求。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "63671634"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ POST /privilegedRoleAssignmentRequests/my
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 集合对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 集合对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

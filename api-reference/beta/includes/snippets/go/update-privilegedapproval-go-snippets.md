@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4168f242f7c89d7ccd55d151e53eb2959a45d80c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 856eaad5b39d6fd686753478534d555c252853a7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63671431"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315475"
 ---
 ```go
 
@@ -17,11 +17,8 @@ approvalState := "approvalState-value"
 requestBody.SetApprovalState(&approvalState)
 approverReason := "approverReason-value"
 requestBody.SetApproverReason(&approverReason)
-options := &msgraphsdk.PrivilegedApprovalRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 privilegedApprovalId := "privilegedApproval-id"
-result, err := graphClient.PrivilegedApprovalById(&privilegedApprovalId).Patch(options)
+graphClient.PrivilegedApprovalById(&privilegedApprovalId).Patch(requestBody)
 
 
 ```

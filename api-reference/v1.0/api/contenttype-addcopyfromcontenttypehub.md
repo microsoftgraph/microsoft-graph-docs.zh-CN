@@ -5,19 +5,19 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: c19aa0813e8bf7a5fa59fd87e9023a1ea605318c
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 975957cb1dca96e074b9012dc7f6d2d7fa948271
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191834"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315919"
 ---
 # <a name="contenttype-addcopyfromcontenttypehub"></a>contentType：addCopyFromContentTypeHub
 命名空间：microsoft.graph
 
 将已发布内容类型的副本从内容类型中心添加或同步到目标 [网站](../resources/site.md) 或 [列表](../resources/list.md)。
 
-此方法是内容类型发布更改的一部分，旨在优化已发布内容类型与网站和列表的同步，从而有效地从“随处推送”切换为“根据需要拉取”。 该方法允许用户直接从内容类型中心将内容类型拉取到网站或列表。 有关详细信息，请参阅 [contentType：getCompatibleHubContentTypes](contenttype-getcompatiblehubcontenttypes.md) 和博客文章 [Syntex Product Updates – 2021 年 8 月](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438)。
+此方法是内容类型发布更改的一部分，旨在优化已发布内容类型与网站和列表的同步，从而有效地从“随处推送”切换为“根据需要拉取”。 该方法允许用户直接从内容类型中心将内容类型拉取到网站或列表。 有关详细信息，请参阅 [contentType：getCompatibleHubContentTypes](contenttype-getcompatiblehubcontenttypes.md) 和博客 帖子 [Syntex Product Updates – 2021 年 8 月](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "65191834"
 |:---|:---|
 |委派（工作或学校帐户） | Sites.Manage.All、Sites.FullControl.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Sites.Manage.All、Sites.FullControl.All |
+|应用程序 | Sites.Manage.All、Sites.FullControl.All |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -53,7 +53,7 @@ POST /sites/{siteId}/contentTypes/addCopyFromContentTypeHub
 
 |参数|类型|说明|
 |:---|:---|:---|
-|contentTypeId|字符串| 将添加到目标网站或列表的内容类型中心中的内容类型的 ID。|
+|contentTypeId|String| 将添加到目标网站或列表的内容类型中心中的内容类型的 ID。|
 
 
 
@@ -71,6 +71,8 @@ POST /sites/{siteId}/contentTypes/addCopyFromContentTypeHub
 
 下面是同步操作的示例。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_addcopyfromcontenttypehub"
@@ -85,6 +87,28 @@ Content-length: 33
   "contentTypeId": "0x0101"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-addcopyfromcontenttypehub-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-addcopyfromcontenttypehub-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-addcopyfromcontenttypehub-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-addcopyfromcontenttypehub-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-addcopyfromcontenttypehub-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: b10143e0c5aa7111930b188c20b23c4e4f938bfd
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 4a0fae72f07131310d7cdd5bdaeb97def8770682
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191839"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65314203"
 ---
 # <a name="list-operations-on-a-list"></a>列出列表上的操作
 
@@ -25,7 +25,7 @@ ms.locfileid: "65191839"
 |:---|:---|
 |委派（工作或学校帐户）|Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
+|应用程序|Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,6 +58,8 @@ GET /sites/{siteId}/lists/{listId}/operations
 
 请求示例如下所示。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_richlongrunningoperation"
@@ -66,6 +68,32 @@ GET /sites/{siteId}/lists/{listId}/operations
 ``` http
 GET https://graph.microsoft.com/v1.0/sites/root/lists/Documents
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-richlongrunningoperation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-richlongrunningoperation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-richlongrunningoperation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-richlongrunningoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-richlongrunningoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-richlongrunningoperation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

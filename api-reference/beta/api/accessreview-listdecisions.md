@@ -1,16 +1,16 @@
 ---
 title: 列出 accessReview 决策
-description: 在Azure AD评审功能中，检索 accessReview 对象的决策。
+description: 在 Azure AD 访问评审功能中，检索 accessReview 对象的决策。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b5e19b303745d6c217f2dec6dc084330b45eb858
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9e6f9d7430a1fd00357ac2455e4754f7d4958e58
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110119"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314473"
 ---
 # <a name="list-accessreview-decisions"></a>列出 accessReview 决策
 
@@ -18,9 +18,11 @@ ms.locfileid: "62110119"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[评审](../resources/accessreviews-root.md)功能中，检索[accessReview 对象](../resources/accessreview.md)的决策。
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-请注意，定期访问评审 **将没有决策** 关系。  相反，调用方必须导航 **实例** 关系以查找访问评审的当前或过去实例的 [accessReview](../resources/accessreview.md) 对象。
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，检索 [accessReview](../resources/accessreview.md) 对象的决策。
+
+请注意，定期访问评审将不具有 **决策** 关系。  相反，调用方必须导航 **实例** 关系，以查找访问评审的当前或过去的实例的 [accessReview](../resources/accessreview.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,7 +33,7 @@ ms.locfileid: "62110119"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.Membership |
 
- 登录用户还必须具有允许其阅读访问评审的目录角色。
+ 已登录的用户还必须具有允许他们读取访问评审的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,10 +46,10 @@ GET /accessReviews/{reviewId}/decisions
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-不应提供请求正文。
+不应提供任何请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewDecision](../resources/accessreviewdecision.md) 对象数组。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewDecision](../resources/accessreviewdecision.md) 对象数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -115,14 +117,14 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-| 方法           | 返回类型    |Description|
+| 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  检索访问评审。 |
-|[列出我的 accessReview 决策](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md) 集合|    作为审阅者，获取我在 accessReview 上的决定。|
+|[列出我的 accessReview 决策](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md) 集合|    作为审阅者，获取 AccessReview 的决策。|
 |[发送 accessReview 提醒](accessreview-sendreminder.md) |       无。   |   向 accessReview 的审阅者发送提醒。 |
-|[Stop accessReview](accessreview-stop.md) |        无。   |   停止 accessReview。 |
-|[重置 accessReview 决策](accessreview-reset.md) |        无。   |   重置进行中的 accessReview 中的决策。|
-|[应用 accessReview 决策](accessreview-apply.md) |        无。   |   从已完成的 accessReview 应用决策。|
+|[停止 accessReview](accessreview-stop.md) |        无。   |   停止 accessReview。 |
+|[重置 accessReview 决策](accessreview-reset.md) |        无。   |   在正在进行的 accessReview 中重置决策。|
+|[应用 accessReview 决策](accessreview-apply.md) |        无。   |   应用已完成的 accessReview 中的决策。|
 
 
 <!--

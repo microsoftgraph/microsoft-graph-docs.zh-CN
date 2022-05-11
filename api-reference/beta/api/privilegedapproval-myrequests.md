@@ -1,24 +1,24 @@
 ---
-title: privilegedApproval：myRequests
+title: privilegedApproval： myRequests
 description: 获取请求者的审批请求。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: af0aa900c13e401cf3f70cc992c02e7bc9162713
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: c2df406d619b5ba28456f41b14e7464d0dba8382
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340153"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316381"
 ---
-# <a name="privilegedapproval-myrequests"></a>privilegedApproval：myRequests
+# <a name="privilegedapproval-myrequests"></a>privilegedApproval： myRequests
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 获取请求者的审批请求。
 
@@ -47,9 +47,9 @@ GET /privilegedApproval/myRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [privilegedApproval](../resources/privilegedapproval.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [privilegedApproval](../resources/privilegedapproval.md) 对象。
 
-请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

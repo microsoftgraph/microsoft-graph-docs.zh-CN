@@ -1,16 +1,16 @@
 ---
 title: 列出 programControlTypes
-description: 在"Azure AD评审"功能中，列出所有 programControlType 对象。
+description: 在 Azure AD 访问评审功能中，列出所有 programControlType 对象。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: e06627d9d3e4070e5fa7e63be7f0ee4a820d779b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 69596e18a015c6b8528648f7165894f6244f43c1
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123030"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65315341"
 ---
 # <a name="list-programcontroltypes"></a>列出 programControlTypes
 
@@ -18,7 +18,9 @@ ms.locfileid: "62123030"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在"Azure AD评审"功能[](../resources/accessreviews-root.md)中，列出[所有 programControlType](../resources/programcontroltype.md)对象。
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，列出所有 [programControlType](../resources/programcontroltype.md) 对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,9 +28,9 @@ ms.locfileid: "62123030"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.Read.All、ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | ProgramControl.Read.All'， ProgramControl.ReadWrite.All  |
+|应用程序                            | ProgramControl.Read.All“，ProgramControl.ReadWrite.All  |
 
-登录用户还必须具有允许其读取程序的目录角色。
+已登录的用户还必须具有允许他们读取程序的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,10 +43,10 @@ GET /programControlTypes
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-不应提供请求正文。
+不应提供任何请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200, OK` [programControlType](../resources/programcontroltype.md) 对象数组。
+如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [programControlType](../resources/programcontroltype.md) 对象数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -122,7 +124,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-| 方法           | 返回类型    |Description|
+| 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序控件的集合。|
 

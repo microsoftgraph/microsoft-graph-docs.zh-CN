@@ -1,16 +1,16 @@
 ---
 title: 列出 privilegedRoleAssignments
-description: 检索 privilegedRoleAssignment 对象的列表，这些对象对应于组织的所有角色分配。
+description: 检索 PrivilegedRoleAssignment 对象的列表，这些对象对应于组织的所有角色分配。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 932b52c7897cfd1b60b25e5be850e2cd5e49ca91
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 3532915fc41226846a05e3f3ea6520f940fc0875
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129602"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314299"
 ---
 # <a name="list-privilegedroleassignments"></a>列出 privilegedRoleAssignments
 
@@ -18,13 +18,13 @@ ms.locfileid: "62129602"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-检索 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象的列表，这些对象对应于组织的所有角色分配。
+检索 [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象的列表，这些对象对应于组织的所有角色分配。
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-请求程序需要具有以下角色之一 _：Privileged Role Administrator、Global_ _Administrator、Security_ _Administrator_ 或 _Security Reader。_ 
+请求者需要具有以下角色之一： _特权角色管理员_、 _全局管理员_、 _安全管理员_ 或 _安全读取者_。 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -50,13 +50,13 @@ GET /privilegedRoleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象集合。
+如果成功，此方法在响应正文中返回一个 `200 OK` 响应代码和 [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象集合。
 
-请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 ## <a name="examples"></a>示例
 ### <a name="get-all-role-assignments"></a>获取所有角色分配
 ##### <a name="request"></a>请求
-以下示例显示获取所有角色分配的请求：
+以下示例演示获取所有角色分配的请求：
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -119,7 +119,7 @@ Content-type: application/json
 ```
 ### <a name="get-active-role-assignments"></a>获取活动角色分配
 ##### <a name="request"></a>请求 
-以下示例显示查询活动角色分配的请求：
+以下示例演示查询活动角色分配的请求：
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -190,7 +190,7 @@ Content-type: application/json
 ```
 ### <a name="get-permanent-role-assignments"></a>获取永久角色分配
 ##### <a name="request"></a>请求 
-以下示例显示查询永久角色分配的请求，其中 ``expirationDateTime`` value 为 ``null`` ：
+以下示例演示查询永久角色分配的请求，其中 ``expirationDateTime`` 值为 ``null``：
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -261,7 +261,7 @@ Content-type: application/json
 ```
 ### <a name="get-eligible-role-assignments"></a>获取符合条件的角色分配
 ##### <a name="request"></a>请求 
-以下示例显示查询符合条件的角色分配的请求，包括活动和非活动角色分配：
+以下示例演示查询符合条件的角色分配的请求，包括活动和非活动角色分配：
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

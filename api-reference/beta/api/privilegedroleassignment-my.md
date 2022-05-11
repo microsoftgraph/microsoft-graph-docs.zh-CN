@@ -1,26 +1,26 @@
 ---
-title: privilegedRoleAssignment： my
-description: 获取请求者特权角色分配。
+title: privilegedRoleAssignment：my
+description: 获取请求者的特权角色分配。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 22fa9e10c08ee2446885451eaba1c480be0a30b0
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: 0212a6597ecdad812749f2f3b9d4a421cc0fe71e
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62349132"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314249"
 ---
-# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment： my
+# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment：my
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-获取请求者特权角色分配。
+获取请求者的特权角色分配。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,7 +46,7 @@ GET /privilegedRoleAssignments/my
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 privilegedRoleAssignment](../resources/privilegedroleassignment.md) 集合对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 集合对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

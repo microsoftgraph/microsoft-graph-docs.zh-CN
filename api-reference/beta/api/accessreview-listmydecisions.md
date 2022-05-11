@@ -1,16 +1,16 @@
 ---
 title: 列出我的 accessReview 决策
-description: 在Azure AD评审功能中，检索作为审阅者调用用户的 accessReview 对象的决策。
+description: 在 Azure AD 访问评审功能中，检索调用用户作为审阅者的 accessReview 对象的决策。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cd6dadbf363dcd9d8425582fc3913a360069c09e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 60e70fb24ec64648bc273a68dc0b640ad7865be5
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114504"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314483"
 ---
 # <a name="list-my-accessreview-decisions"></a>列出我的 accessReview 决策
 
@@ -18,7 +18,9 @@ ms.locfileid: "62114504"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在Azure AD[审阅](../resources/accessreviews-root.md)功能中，检索调用用户作为审阅者的[accessReview](../resources/accessreview.md)对象的决策。
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，检索调用用户作为审阅者的 [accessReview](../resources/accessreview.md) 对象的决策。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +30,7 @@ ms.locfileid: "62114504"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
-还必须允许登录用户阅读此特定访问评审。
+还必须允许已登录的用户读取此特定的访问评审。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,10 +43,10 @@ GET /accessReviews/{reviewId}/myDecisions
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-不应提供请求正文。
+不应提供任何请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewDecision](../resources/accessreviewdecision.md) 对象数组，调用用户为其分配了审阅者。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [accessReviewDecision](../resources/accessreviewdecision.md) 对象数组，调用用户是为其分配的审阅者。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -112,7 +114,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-| 方法           | 返回类型    |Description|
+| 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  检索访问评审。 |
 |[列出 accessReview 决策](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md) 集合|    检索 accessReview 的所有决策。|

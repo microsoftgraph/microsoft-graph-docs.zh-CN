@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3ba3280f8e69d42980c5949db57c94cec6ed0835
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 0659f4ba451a165f48b737c58abc7b0f9da09d10
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089246"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316365"
 ---
 ```go
 
@@ -31,10 +31,7 @@ assignmentState := "Active"
 requestBody.SetAssignmentState(&assignmentState)
 roleId := "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 requestBody.SetRoleId(&roleId)
-options := &msgraphsdk.PrivilegedRoleAssignmentRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.PrivilegedRoleAssignmentRequests().Post(options)
+result, err := graphClient.PrivilegedRoleAssignmentRequests().Post(requestBody)
 
 
 ```

@@ -4,13 +4,13 @@ description: 检索 privilegedRoleSummary 对象的属性和关系。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 13957f9519f575d9542d331678ce7fde461c8a70
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 34aaebfd36fec82bc4c214716f6aa8bf7134a009
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137002"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316413"
 ---
 # <a name="get-privilegedrolesummary"></a>获取 privilegedRoleSummary
 
@@ -18,9 +18,9 @@ ms.locfileid: "62137002"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-检索 [privilegedRoleSummary 对象的属性和](../resources/privilegedrolesummary.md) 关系。
+检索 [privilegedRoleSummary](../resources/privilegedrolesummary.md) 对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,9 +49,9 @@ GET /privilegedRoles/{id}?$expand=summary
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [privilegedRoleSummary](../resources/privilegedrolesummary.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [privilegedRoleSummary](../resources/privilegedrolesummary.md) 对象。
 
-请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

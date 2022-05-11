@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 10beeef7443188b0bd56523f4c97b7c1d5a11944
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: d9e80d30f8bd3ed79ec8dd8bc75767f823b7b5de
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412445"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315854"
 ---
 ```go
 
@@ -22,11 +22,8 @@ requestBody.SetParticipants( []InvitationParticipantInfo {
 }
 clientContext := "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 requestBody.SetClientContext(&clientContext)
-options := &msgraphsdk.InviteRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).Participants().Invite(call-id).Post(options)
+result, err := graphClient.Communications().CallsById(&callId).Participants().Invite(call-id).Post(requestBody)
 
 
 ```

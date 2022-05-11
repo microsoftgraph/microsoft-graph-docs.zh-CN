@@ -1,34 +1,34 @@
 ---
-title: privilegedRole： selfActivate
+title: privilegedRole：selfActivate
 description: 激活分配给请求者的角色。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: d1d0fe73770e6ef5994423ebeee0152975ccd047
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: 4c4abcbac602fd0c3c32a2641798aaf7304ba781
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340139"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316379"
 ---
-# <a name="privilegedrole-selfactivate"></a>privilegedRole： selfActivate
+# <a name="privilegedrole-selfactivate"></a>privilegedRole：selfActivate
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 激活分配给请求者的角色。
 
->**注意：** 自 2018 年 12 月起，将不再支持此 API，也不应使用。 请 [改为使用 Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) 。
+>**注意：** 自 2018 年 12 月起，此 API 将不再受支持，也不应使用。 请改用 [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) 。
 
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者只能 ```selfActivate``` 调用分配给他的角色。
+请求者只能调用 ```selfActivate``` 分配给他的角色。
  
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -54,16 +54,16 @@ POST /privilegedRoles/{id}/selfActivate
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|reason|string|可选。 有关此角色激活原因的说明。|
-|duration|string|可选。 有效值 ```min``` ```default``` 可以是 (最短激活) 、 (角色) 的默认激活持续时间，或用于指定激活小时数的双精度值。 指定持续时间不能长于角色设置中角色的激活持续时间。 |
-|ticketNumber|string|可选。 用于跟踪此角色激活的票证编号。|
-|ticketSystem|string|可选。 票证系统。|
+|reason|字符串|可选。 有关此角色激活原因的说明。|
+|duration|string|可选。 有效值可以 ```min``` (最小激活持续时间) ， ```default``` (角色) 的默认激活持续时间，也可以是用于指定激活小时数的双值。 指定的持续时间不能超过角色设置中的激活持续时间。 |
+|ticketNumber|字符串|可选。 用于跟踪此角色激活的票证号。|
+|ticketSystem|字符串|可选。 票证系统。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
 
-请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
 ##### <a name="request"></a>请求

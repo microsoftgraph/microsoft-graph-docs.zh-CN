@@ -4,13 +4,13 @@ description: 检索给定角色的角色设置。 将返回 privilegedRoleSettin
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 9dab88badf941a41e69015c04ccd905b0804a15e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 43ec849554f6573f6bb964ba86fa2d5f94b52259
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137016"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315460"
 ---
 # <a name="get-privilegedrolesettings"></a>获取 privilegedRoleSettings
 
@@ -18,14 +18,14 @@ ms.locfileid: "62137016"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-检索给定角色的角色设置。 将 [返回 privilegedRoleSettings](../resources/privilegedrolesettings.md) 对象。
+检索给定角色的角色设置。 将返回 [privilegedRoleSettings](../resources/privilegedrolesettings.md) 对象。
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-请求程序需要具有以下角色之一 _：Privileged Role Administrator、Global_ _Administrator、Security_ _Administrator_ 或 _Security Reader。_ 
+请求者需要具有以下角色之一： _特权角色管理员_、 _全局管理员_、 _安全管理员_ 或 _安全读取者_。 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -51,9 +51,9 @@ GET /privilegedRoles/{id}/settings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [privilegedRoleSettings](../resources/privilegedrolesettings.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [privilegedRoleSettings](../resources/privilegedrolesettings.md) 对象。
 
-请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

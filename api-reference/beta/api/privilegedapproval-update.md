@@ -4,13 +4,13 @@ description: 更新 privilegedapproval 对象的属性。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 522cf6dfab49dd282208ac56bf327d44de838e17
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: a431b5fa873cce61fd4b53219f8de09f6729ea64
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671438"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315474"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
@@ -29,7 +29,7 @@ ms.locfileid: "63671438"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -58,9 +58,9 @@ PATCH /privilegedApproval/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 响应 `204 No Content` 代码
+如果成功，此方法将返回 `204 No Content` 响应代码
 
-请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

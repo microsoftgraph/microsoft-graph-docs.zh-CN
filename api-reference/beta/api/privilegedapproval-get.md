@@ -4,13 +4,13 @@ description: 检索 privilegedapproval 对象的属性和关系。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 91af45d12b72923de76b6ad0408e31d7a0c3745f
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: f22e8e5b547b2c36a9b48922aed526be344e4aa4
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671452"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315999"
 ---
 # <a name="get-privilegedapproval"></a>获取 privilegedApproval
 
@@ -29,7 +29,7 @@ ms.locfileid: "63671452"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,9 +49,9 @@ GET /privilegedApproval/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [privilegedApproval](../resources/privilegedapproval.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [privilegedApproval](../resources/privilegedapproval.md) 对象。
 
-请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

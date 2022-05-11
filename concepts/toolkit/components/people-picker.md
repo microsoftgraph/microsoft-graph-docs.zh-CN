@@ -1,22 +1,22 @@
 ---
-title: People-Picker组件
+title: 人员选取器组件
 description: 可以使用 mgt-people-picker Web 组件搜索指定数量的人员，并通过 Microsoft Graph 呈现结果列表。
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.openlocfilehash: 4cc135fef448ecadc67a0ad1ba93e5be609d1258
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: d35e801dd851a4bb6f8ace37eb706bdb6182af92
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060708"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65314891"
 ---
-# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph Toolkit中的People-Picker组件
+# <a name="people-picker-component-in-microsoft-graph-toolkit"></a>Microsoft Graph Toolkit中的人员选取器组件
 
 可以使用 `mgt-people-picker` Web 组件搜索人员和/或组。 默认情况下，组件将搜索组织中的所有人员和用户，但你可以将行为更改为同时搜索组或仅搜索组。 还可以将搜索筛选为特定组。 此外，你可以允许用户输入并选择任何电子邮件地址。
 
 ## <a name="example"></a>示例
 
-下面的示例显示了组 `mgt-people-picker` 件。 开始搜索名称以查看结果呈现，并使用代码编辑器查看 [属性](#properties) 如何更改组件的行为。
+下面的示例显示了组 `mgt-people-picker` 件。 "开始"菜单搜索名称以查看结果呈现，并使用代码编辑器查看[属性](#properties)如何更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
@@ -44,7 +44,7 @@ ms.locfileid: "65060708"
 | disable-images | disableImages | 设置是否禁用人员图像的提取和显示。 设置为 `true`时，将改为显示用户首字母缩写。
 | allow-any-email | allowAnyEmail | 指示人员选取器是否可以在不选择人员的情况下接受电子邮件地址。 默认值为 `false`。 键入电子邮件地址后，可以按逗号 () `,` 、分号 (`;`) 、选项卡或输入键来添加它。
 | user-ids | userIds | 逗号分隔用户 ID 字符串。 只有在键入查询时，它们才会显示在下拉菜单或搜索结果上。 例如 `48d31887-5fad-4d73-a9f5-3c356e68a038,24fcbca3-c3e2-48bf-9ffc-c7f81b81483d` ，仅当输入处于焦点时，才会在下拉列表中显示这两个用户。 键入搜索文本时，它将返回仅与两个用户 ID 中的用户匹配的结果。
-| user-filters | userFilters | 指定查询用户终结点时要使用的筛选条件。 它要求 `user-type` 设置为 `user` 或 `contact`。 默认情况下， `user-type` 是 `any` 且这会导致查询在终结点块中 `people` 进行。 示例：`user-filters="startsWith(displayName,'a')"`。 此特性是可选的。 详细了解如何[支持筛选Azure AD目录对象的用户属性](/graph/aad-advanced-queries?tabs=http#user-properties)。
+| user-filters | userFilters | 指定查询用户终结点时要使用的筛选条件。 它要求 `user-type` 设置为 `user` 或 `contact`。 默认情况下， `user-type` 是 `any` 且这会导致查询在终结点块中 `people` 进行。 示例：`user-filters="startsWith(displayName,'a')"`。 此特性是可选的。 详细了解如何 [支持筛选 Azure AD 目录对象的用户属性](/graph/aad-advanced-queries?tabs=http#user-properties)。
 | group-filters | groupFilters | 指定查询终结点时 `groups` 要使用的筛选条件。 它需要 `type` 设置为 `group`。 示例：`group-filters="startsWith(displayName,'a')"`。 此特性是可选的。
 | people-filters | peopleFilters | 指定查询终结点时 `people` 要使用的筛选条件。 它按其方式使用。 示例：`people-filters="jobTitle eq 'Web Marketing Manager'"`。 此特性是可选的。 详细了解 [人员资源上的筛选和支持的功能](/graph/people-example)。
 | group-ids | groupIds | 逗号分隔组 ID 的字符串。 可用结果应限制为指定的组。 将显示在下拉菜单上并通过搜索体验显示的用户应仅来自指定的组 ID。 例如， `02bd9fd6-8f93-4758-87c3-1fb73740a315,06f62f70-9827-4e6e-93ef-8e0f2d9b7b23` 将仅显示属于这些组的用户。 键入搜索文本时，它将返回仅与两个组 ID 中的用户匹配的结果。 如果 `group-id` 定义了此属性，则不使用此属性。 如果设置了该属性，`type`则默认情况下为`group`默认`true``trnsitive-search`值。 如果使用 `group-type` 属性设置该属性， `type` 则可以是 `any` 或 `group`。 `type`如果是`person`，则不使用该属性。
@@ -90,7 +90,7 @@ ms.locfileid: "65060708"
 
 从组件触发以下事件。
 
-Event | 何时发出 | 自定义数据 | 可取消 | 泡沫 | 使用自定义模板
+事件 | 何时发出 | 自定义数据 | 可取消 | 泡沫 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `selectionChanged` | 用户从选定/选定人员列表中添加或删除了一个人 | 所选人员的数组，其中一个人可以是Graph[用户](/graph/api/resources/user)、[人员](/graph/api/resources/person)或[与](/graph/api/resources/contact)包含用户照片 URL 的其他`personImage`属性的联系人 | 否 | 否 | 是，除非重写默认模板
 
@@ -136,7 +136,7 @@ mgt-people-picker {
 | error | null：无数据 | 如果用户搜索不返回任何用户，则使用的模板。 |
 | no-data | null：无数据 | 如果用户搜索不返回任何用户，则使用替代模板。 |
 | selected-person | 人员：人员详细信息对象 | 用于呈现所选人员的模板。 |
-| 人 | 人员：人员详细信息对象 | 用于在下拉列表中呈现人员的模板。 |
+| person | 人员：人员详细信息对象 | 用于在下拉列表中呈现人员的模板。 |
 
 以下示例演示如何使用 `error` 模板。
 
@@ -166,7 +166,7 @@ mgt-people-picker {
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存的数据|备注|
+|对象存储|缓存的数据|注解|
 |---------|-----------|-------|
 |`groups`|组列表|将时间 `type` 设置为 `PersonType.group`|
 |`people`|人员列表|`type`何时设置为`PersonType.person`或`PersonType.any`|

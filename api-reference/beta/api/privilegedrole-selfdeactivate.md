@@ -1,30 +1,30 @@
 ---
-title: privilegedRole： selfDeactivate
+title: privilegedRole：selfDeactivate
 description: 停用分配给请求者的角色。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 74ace71b13372c00b61b5456bb38a676efb86a7c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: 78c7c918774da2523ac8c42c9409b267f3d5c295
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342967"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315229"
 ---
-# <a name="privilegedrole-selfdeactivate"></a>privilegedRole： selfDeactivate
+# <a name="privilegedrole-selfdeactivate"></a>privilegedRole：selfDeactivate
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 停用分配给请求者的角色。
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者只能 ```selfDeactivate``` 调用分配给他的角色。 
+请求者只能调用 ```selfDeactivate``` 分配给他的角色。 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -49,9 +49,9 @@ POST /privilegedRoles/{id}/selfDeactivate
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
 
-请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求

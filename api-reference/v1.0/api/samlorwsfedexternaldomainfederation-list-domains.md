@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 403b1afebbf9e904ca3c81378b014fce8f44f531
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: 803e67770dc38851e96f2c69a78568b855c7f7a3
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296567"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315659"
 ---
 # <a name="list-domains"></a>列出域
 命名空间：microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "65296567"
 |委派（个人 Microsoft 帐户）| 不支持。|
 |应用程序|Domain.Read.All、Domain.ReadWrite.All|
 
-工作或学校帐户需要属于以下[Azure Active Directory (Azure AD) 角色](/azure/active-directory/roles/permissions-reference)之一：
+工作或学校帐户需要属于以下[Azure Active Directory (Azure AD) 角色之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
 * 外部标识提供者管理员
@@ -61,6 +61,8 @@ GET /directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomai
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_externaldomainname"
@@ -70,6 +72,24 @@ GET /directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomai
 ``` http
 GET https://graph.microsoft.com/beta/directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation/f1e11a04-0244-4592-99df-b01cfaadce15/domains
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-externaldomainname-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-externaldomainname-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-externaldomainname-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-externaldomainname-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

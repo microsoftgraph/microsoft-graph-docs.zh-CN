@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 461decb162e11ecc96b39b9e75bf8a9ffb970adb
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 8344ee5d4ef01335ce53387e225da7ffd790a36e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191830"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315807"
 ---
 # <a name="get-richlongrunningoperation"></a>获取 richLongRunningOperation
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "65191830"
 |:---|:---|
 |委派（工作或学校帐户）|Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
+|应用程序|Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,6 +59,8 @@ GET /sites/{siteId}/lists/{listId}/operations/{richLongRunningOperation-ID}
 
 请求示例如下所示。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_richlongrunningoperation"
@@ -67,6 +69,28 @@ GET /sites/{siteId}/lists/{listId}/operations/{richLongRunningOperation-ID}
 ``` http
 GET https://graph.microsoft.com/v1.0/sites/root/operations/contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-richlongrunningoperation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-richlongrunningoperation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-richlongrunningoperation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-richlongrunningoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-richlongrunningoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

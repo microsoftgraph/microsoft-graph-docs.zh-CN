@@ -1,18 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bac6ea6efca9ef93f3a94e6055f55adabdce3c0a
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d7214254a829b7059adeace6a3d9fa9bfee4fe3f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335675"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65314676"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var queryOptions = new List<QueryOption>()
+{
+    new QueryOption("top", "3")
+};
+
 var messages = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages
-    .Request()
+    .Request( queryOptions )
     .GetAsync();
 
 ```
