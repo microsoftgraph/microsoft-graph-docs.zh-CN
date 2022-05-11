@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f3e0e9fdd9efc25cf5ddef1368bdaf72f147f767
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3832ac2e7451f8c4995d8e6f048e512fe32079c8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412377"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329110"
 ---
 ```go
 
@@ -39,11 +39,8 @@ requestBody.SetHideAttendees(&hideAttendees)
 requestBody.SetCategories( []String {
     "Red category",
 }
-options := &msgraphsdk.EventRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Patch(options)
+graphClient.Me().EventsById(&eventId).Patch(requestBody)
 
 
 ```

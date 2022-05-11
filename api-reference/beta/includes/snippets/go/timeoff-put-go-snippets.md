@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 06264aa25ce0c6d7aa0baf688d6bfdbf078d4a2e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 82c6865c48ff1142cbfea6219bab24fa7e65b492
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094909"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327166"
 ---
 ```go
 
@@ -19,13 +19,12 @@ requestBody.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
     "Prefer": "return=representation"
 }
-options := &msgraphsdk.TimeOffRequestBuilderPutOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.TimeOffRequestBuilderPutRequestConfiguration{
+    Headers: headers,
 }
 teamId := "team-id"
 timeOffId := "timeOff-id"
-graphClient.TeamsById(&teamId).Schedule().TimesOffById(&timeOffId).Put(options)
+graphClient.TeamsById(&teamId).Schedule().TimesOffById(&timeOffId).PutWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

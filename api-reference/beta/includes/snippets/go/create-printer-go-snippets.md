@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 11346e0879fe4664dc16260fbc4d2c629b9235c4
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 5bb14602f3225092095de1c579aabfd4be49d5f0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087814"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329087"
 ---
 ```go
 
@@ -29,10 +29,7 @@ certificateSigningRequest.SetContent(&content)
 transportKey := "{sampleTransportKey}"
 certificateSigningRequest.SetTransportKey(&transportKey)
 requestBody.SetConnectorId(nil)
-options := &msgraphsdk.CreateRequestBuilderPostOptions{
-    Body: requestBody,
-}
-graphClient.Print().Printers().Create().Post(options)
+graphClient.Print().Printers().Create().Post(requestBody)
 
 
 ```

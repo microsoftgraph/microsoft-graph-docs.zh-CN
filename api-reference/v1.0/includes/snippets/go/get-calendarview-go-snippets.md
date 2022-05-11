@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b8de0ff88acd1e50a6c74b9b2b73fda54fb061de
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 0e3387c04286fd501fdc0afc3ecbbe84cae74350
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093872"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329218"
 ---
 ```go
 
@@ -16,10 +16,10 @@ requestParameters := &msgraphsdk.CalendarViewRequestBuilderGetQueryParameters{
     StartDateTime: "2017-01-01T19:00:00-08:00",
     EndDateTime: "2017-01-07T19:00:00-08:00",
 }
-options := &msgraphsdk.CalendarViewRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.CalendarViewRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Calendar().CalendarView().Get(options)
+result, err := graphClient.Me().Calendar().CalendarView().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

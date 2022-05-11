@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8d54acc9950b75acb439ef952ee098d3abb4c213
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 10706567deea50d38d19c43f54f51686d6206a9c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61288498"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328577"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61288498"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 unifiedRoleManagementPolicyAssignmentId := "unifiedRoleManagementPolicyAssignment-id"
-result, err := graphClient.Policies().RoleManagementPolicyAssignmentsById(&unifiedRoleManagementPolicyAssignmentId).Get(nil)
+result, err := graphClient.Policies().RoleManagementPolicyAssignmentsById(&unifiedRoleManagementPolicyAssignmentId).Get()
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2ca81142d81d593f1d47a3dae51fd7d03aaf1fb0
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 99a75849e39640a371a4874fada40c916e561d4e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412716"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328605"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewPersonWebsite()
 description := "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.PersonWebsiteRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 personWebsiteId := "personWebsite-id"
-result, err := graphClient.Me().Profile().WebsitesById(&personWebsiteId).Patch(options)
+graphClient.Me().Profile().WebsitesById(&personWebsiteId).Patch(requestBody)
 
 
 ```

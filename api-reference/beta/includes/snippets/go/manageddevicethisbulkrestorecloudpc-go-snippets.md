@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 10c2c535302d1d752955b3d6d774a7e46c632565
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 9f26d61a6c4f952933dcbaf292baf5874e161bec
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338189"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329148"
 ---
 ```go
 
@@ -21,10 +21,7 @@ restorePointDateTime, err := time.Parse(time.RFC3339, "2021-09-23T04:00:00.00000
 requestBody.SetRestorePointDateTime(&restorePointDateTime)
 timeRange := "before"
 requestBody.SetTimeRange(&timeRange)
-options := &msgraphsdk.BulkRestoreCloudPcRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.DeviceManagement().ManagedDevices().BulkRestoreCloudPc().Post(options)
+result, err := graphClient.DeviceManagement().ManagedDevices().BulkRestoreCloudPc().Post(requestBody)
 
 
 ```

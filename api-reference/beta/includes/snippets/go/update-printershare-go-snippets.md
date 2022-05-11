@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 842c6bb6173574024a6f8c4451bc3c0cd77fe6ae
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c9e1816f26e150264fad5d0e8fe21ad372606cc9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412752"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329008"
 ---
 ```go
 
@@ -20,11 +20,8 @@ requestBody.SetAllowAllUsers(&allowAllUsers)
 requestBody.SetAdditionalData(map[string]interface{}{
     "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}",
 }
-options := &msgraphsdk.PrinterShareRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 printerShareId := "printerShare-id"
-result, err := graphClient.Print().SharesById(&printerShareId).Patch(options)
+graphClient.Print().SharesById(&printerShareId).Patch(requestBody)
 
 
 ```

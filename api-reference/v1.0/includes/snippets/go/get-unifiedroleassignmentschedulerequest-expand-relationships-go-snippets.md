@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a70b31c18e4c9b2555fbc41dfc3bc499c7633477
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: d9d45f29b75ba83a3ee8bc6a3b917374d5128bf5
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205096"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327742"
 ---
 ```go
 
@@ -16,11 +16,11 @@ requestParameters := &msgraphsdk.UnifiedRoleAssignmentScheduleRequestRequestBuil
     Select: "principalId,action,roleDefinitionId",
     Expand: "roleDefinition,activatedUsing,principal,targetSchedule",
 }
-options := &msgraphsdk.UnifiedRoleAssignmentScheduleRequestRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.UnifiedRoleAssignmentScheduleRequestRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 unifiedRoleAssignmentScheduleRequestId := "unifiedRoleAssignmentScheduleRequest-id"
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequestsById(&unifiedRoleAssignmentScheduleRequestId).Get(options)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequestsById(&unifiedRoleAssignmentScheduleRequestId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

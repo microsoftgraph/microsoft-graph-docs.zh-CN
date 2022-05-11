@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3306b2e98de6222506c7735ba4f2764b668631f1
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 207d29c986cf5ac10ce01da18834485883e1c2ea
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412268"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326934"
 ---
 ```go
 
@@ -23,11 +23,8 @@ requestBody.SetPrompts( []Prompt {
 }
 loop := false
 requestBody.SetLoop(&loop)
-options := &msgraphsdk.PlayPromptRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).PlayPrompt(call-id).Post(options)
+result, err := graphClient.Communications().CallsById(&callId).PlayPrompt(call-id).Post(requestBody)
 
 
 ```

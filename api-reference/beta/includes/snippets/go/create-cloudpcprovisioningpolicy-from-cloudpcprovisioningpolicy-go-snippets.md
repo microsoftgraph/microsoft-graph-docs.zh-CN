@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 324dc1de7acde4548283ccd64b65a1f1c93c56f0
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: 80f8348f95bc9047b31033f9163d6f7f0c962422
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63759319"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329114"
 ---
 ```go
 
@@ -41,10 +41,7 @@ windowsSettings.SetLanguage(&language)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
 }
-options := &msgraphsdk.ProvisioningPoliciesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(requestBody)
 
 
 ```

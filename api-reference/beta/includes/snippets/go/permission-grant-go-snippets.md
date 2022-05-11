@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3ac828623352ea831442aa657bb59b993a5f6b42
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7492f7ec5ebebba6aa56f08788eed6a8e99097b5
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412153"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329175"
 ---
 ```go
 
@@ -26,11 +26,8 @@ requestBody.SetRecipients( []DriveRecipient {
 requestBody.SetRoles( []String {
     "read",
 }
-options := &msgraphsdk.GrantRequestBuilderPostOptions{
-    Body: requestBody,
-}
 sharedDriveItemId := "sharedDriveItem-id"
-result, err := graphClient.SharesById(&sharedDriveItemId).Permission().Grant(sharedDriveItem-id).Post(options)
+result, err := graphClient.SharesById(&sharedDriveItemId).Permission().Grant(sharedDriveItem-id).Post(requestBody)
 
 
 ```

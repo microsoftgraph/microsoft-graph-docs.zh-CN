@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 95e92690ee451e45f2ee5806c612f03aefde35f6
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: ad4e7f7d95cc0eaaa0efffa316175f05d12c01d0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65208932"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328458"
 ---
 ```go
 
@@ -45,12 +45,9 @@ requestBody.SetAttachments( []ChatMessageAttachment {
         "teamsAppId": "881b8843-fd91-49e5-9ac2-47ec497ffbe5",
     }
 }
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(requestBody)
 
 
 ```

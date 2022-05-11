@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9e6ce9985f89570878b56578ef7657e7ecdbd987
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 2955d208df6e7778201c2865ba3bd8387e29730c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61088353"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328924"
 ---
 ```go
 
@@ -22,10 +22,7 @@ requestBody.SetDirectoryScopeId(&directoryScopeId)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
 }
-options := &msgraphsdk.RoleAssignmentsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.RoleManagement().Directory().RoleAssignments().Post(options)
+result, err := graphClient.RoleManagement().Directory().RoleAssignments().Post(requestBody)
 
 
 ```

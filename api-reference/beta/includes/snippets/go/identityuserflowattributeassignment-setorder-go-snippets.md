@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dc91320de6e04c6a8ad61ff7d89d68b1da63eb09
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: d1be4561444d7b0daadf7ce7aff6aeabb76ac381
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412247"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329152"
 ---
 ```go
 
@@ -19,11 +19,8 @@ newAssignmentOrder.SetOrder( []String {
     "City",
     "extension_GUID_ShoeSize",
 }
-options := &msgraphsdk.SetOrderRequestBuilderPostOptions{
-    Body: requestBody,
-}
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignments().SetOrder(b2cIdentityUserFlow-id).Post(options)
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignments().SetOrder(b2cIdentityUserFlow-id).Post(requestBody)
 
 
 ```

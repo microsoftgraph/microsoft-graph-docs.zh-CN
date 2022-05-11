@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1d99e988aad8eb304405f945386ca0c21a2fbf8e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 4c87e8a422c56b07e28cb1330e0931073eb5115b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61088337"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328991"
 ---
 ```go
 
@@ -25,11 +25,8 @@ requestBody.SetMembers( []TeamworkTagMember {
         "userId": "085d800c-b86b-4bfc-a857-9371ad1caf29",
     }
 }
-options := &msgraphsdk.TagsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Tags().Post(options)
+result, err := graphClient.TeamsById(&teamId).Tags().Post(requestBody)
 
 
 ```

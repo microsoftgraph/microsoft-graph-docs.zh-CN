@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bdd4d4b7dab2fe70e898e1641acdef61ae222f0e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: f54932f5ed5b85b0e92f43f52483d4b6f8db6e92
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411719"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328548"
 ---
 ```go
 
@@ -23,12 +23,9 @@ listItemId := "2"
 sharepointIds.SetListItemId(&listItemId)
 destinationFileName := "newname.txt"
 requestBody.SetDestinationFileName(&destinationFileName)
-options := &msgraphsdk.CopyToDefaultContentLocationRequestBuilderPostOptions{
-    Body: requestBody,
-}
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).CopyToDefaultContentLocation(site-id, contentType-id).Post(options)
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).CopyToDefaultContentLocation(site-id, contentType-id).Post(requestBody)
 
 
 ```

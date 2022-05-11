@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ce54f853ad1d675ac26277d8043134d0c6515979
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 543186fa05afd8dd0c8ae844f575e9b504963bc7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411799"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329248"
 ---
 ```go
 
@@ -22,12 +22,11 @@ requestBody.SetDescription(&description)
 headers := map[string]string{
     "Prefer": "return=representation"
 }
-options := &msgraphsdk.TiIndicatorRequestBuilderPatchOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.TiIndicatorRequestBuilderPatchRequestConfiguration{
+    Headers: headers,
 }
 tiIndicatorId := "tiIndicator-id"
-result, err := graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
+graphClient.Security().TiIndicatorsById(&tiIndicatorId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

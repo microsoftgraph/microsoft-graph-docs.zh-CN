@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1388660c3ead03d92634ed1c7ac2751fb65f6bb9
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ad57118f00e6064c6ae5031ae589c261d5e09aaa
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61085801"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329098"
 ---
 ```go
 
@@ -79,11 +79,10 @@ downgradeJustification.SetIsDowngradeJustified(&isDowngradeJustified)
 headers := map[string]string{
     "User-Agent": "ContosoLOBApp/1.0"
 }
-options := &msgraphsdk.EvaluateRemovalRequestBuilderPostOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.EvaluateRemovalRequestBuilderPostRequestConfiguration{
+    Headers: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateRemoval().Post(options)
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateRemoval().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

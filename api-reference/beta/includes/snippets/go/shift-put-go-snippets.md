@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 605fa1afa8075d4f93660765f889bf76f761080d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: eebb24d91b805979e6743268a3f9d8eada783c15
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093769"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329259"
 ---
 ```go
 
@@ -23,13 +23,12 @@ requestBody.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
     "Prefer": "return=representation"
 }
-options := &msgraphsdk.ShiftRequestBuilderPutOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.ShiftRequestBuilderPutRequestConfiguration{
+    Headers: headers,
 }
 teamId := "team-id"
 shiftId := "shift-id"
-graphClient.TeamsById(&teamId).Schedule().ShiftsById(&shiftId).Put(options)
+graphClient.TeamsById(&teamId).Schedule().ShiftsById(&shiftId).PutWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```
