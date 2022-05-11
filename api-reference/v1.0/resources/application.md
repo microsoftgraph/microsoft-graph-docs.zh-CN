@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 04f8f16b6c83c97708a2e56cc77474f24b075274
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5bd90acea4a93bba5ae5687141a68b1deaca841f
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333664"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65294024"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "63333664"
 |[删除应用程序](../api/application-delete.md) | 无 |删除 application 对象。 |
 |[Get delta](../api/application-delta.md)|[application](application.md)|获得新建、更新或删除的应用，无需完全读取整个资源集合。|
 |[列出已删除的应用程序](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索最近删除的应用程序的列表。 |
-| [列出用户拥有的已删除应用程序](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) 集合 | 检索租户中最近 30 天内删除的应用程序以及用户拥有的应用程序。 |
+| [列出用户拥有的已删除应用程序](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 检索租户中最近 30 天内删除的应用程序以及用户拥有的应用程序。 |
 |[获取已删除的应用程序](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | 检索最近删除的应用程序的属性。 |
 |[永久删除应用程序](../api/directory-deleteditems-delete.md) | 无 | 永久删除应用程序。 |
 |[还原已删除的应用程序](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | 还原最近删除的应用程序。 |
@@ -43,7 +43,7 @@ ms.locfileid: "63333664"
 |**Extensions**| | |
 | [列出 extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) 集合 | 列出应用程序对象上的扩展属性。 |
 | [创建 extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | 在应用程序对象上创建扩展属性。 |
-| [获取 extensionProperty](../api/extensionproperty-delete.md) | None | 从应用程序对象获取扩展属性。 |
+| [获取 extensionProperty](../api/extensionproperty-delete.md) | 无 | 从应用程序对象获取扩展属性。 |
 | [删除 extensionProperty](../api/extensionproperty-delete.md) | 无 | 从应用程序对象删除扩展属性。 |
 |[获取可用扩展属性](../api/directoryobject-getavailableextensionproperties.md)|[extensionProperty](../resources/extensionproperty.md) 集合|获取已在目录中注册的目录扩展属性的所有或筛选列表。|
 |**Owners**| | |
@@ -71,7 +71,7 @@ ms.locfileid: "63333664"
 | addIns | [addIn](addin.md) 集合| 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers)。 这将使 Office 365 之类的服务在用户正在处理的文档上下文中调用应用程序。 |
 | api | [apiApplication](apiapplication.md) | 指定实现 Web API 的应用程序的设置。 |
 | appId | String | Azure AD 分配给应用程序的唯一标识符。不可为 Null。只读。 |
-| applicationTemplateId | String | 应用程序模板的唯一标识符。 支持 `$filter`（`eq`、`not`、`ne`）。|
+| applicationTemplateId | String | applicationTemplate 的唯一标识符。支持 `$filter` （`eq`、 `not`、 `ne`）。|
 | appRoles | [appRole](approle.md) 集合 | 分配给应用程序的角色的集合。 使用[应用角色分配](approleassignment.md)，可将这些角色分配给与其他应用程序关联的用户、组或服务主体。 不可为空。 |
 | createdDateTime | DateTimeOffset | 注册应用程序的日期和时间。DateTimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 <br><br> 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in` 和 `null` 值上的 `eq`) 和 `$orderBy`。 |
 | deletedDateTime | DateTimeOffset | 删除应用程序的日期和时间。DateTimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 |
@@ -94,10 +94,11 @@ ms.locfileid: "63333664"
 | publicClient | [publicClientApplication](publicclientapplication.md) | 指定已安装客户端（如台式设备或移动设备）的设置。 |
 | publisherDomain | String | 应用程序的已验证发布者域。 只读。 有关更多信息，请参阅[操作指南：配置应用程序的发布者域](/azure/active-directory/develop/howto-configure-publisher-domain)。 支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合| 指定应用程序需要访问的资源。 此属性还指定每个资源所需的委派权限和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 可配置的资源服务 (API) 不能超过 50 个。 从 2021 年 10 月中旬开始，所需权限总数不得超过 400 个。 不可为 null。 <br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`）。|
+| serviceManagementReference | 字符串 | 引用服务或资产管理数据库中的应用程序或服务联系人信息。 可为 NULL。 |
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 可能的值是：`AzureADMyOrg`、`AzureADMultipleOrgs`、`AzureADandPersonalMicrosoftAccount`（默认）和 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。 <br><br>支持 `$filter`（`eq`、`ne`、`not`）。|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
 | 标记 |字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。<br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
-| tokenEncryptionKeyId |字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+| tokenEncryptionKeyId |String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定应用程序的已验证发布者。有关发布者验证如何帮助支持应用程序安全性、可信度和合规性的详细信息，请参阅 [发布者验证](/azure/active-directory/develop/publisher-verification-overview)。|
 | web |[webApplication](webapplication.md)| 指定 Web 应用程序的设置。 |
 
@@ -159,6 +160,7 @@ ms.locfileid: "63333664"
   "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
+  "serviceManagementReference": "String",
   "signInAudience": "String",
   "spa": {"@odata.type": "microsoft.graph.spaApplication"},
   "tags": ["String"],

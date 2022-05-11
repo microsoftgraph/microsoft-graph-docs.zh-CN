@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 4db9be8a564eb133b92830729902f5c36d0ed84c
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 75b01f4903153249131cc69e336bb2d12e26095d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191666"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316159"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -62,6 +62,12 @@ ms.locfileid: "65191666"
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 指定客户端应用程序[包含或排除](/graph/api/resources/conditionalaccessclientapplications)为应用[条件访问策略](/graph/api/resources/conditionalaccesspolicy)的一组[条件](/graph/api/resources/conditionalAccessConditionSet)。
+
+### <a name="use-the-toolkit"></a>使用工具包
+通过社区贡献来庆祝真正的团队合作，并试用 [Microsoft Graph 工具包 v2.4.0](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v2.4.0) 中的新功能：
+- 通过使用 `disable-image-fetch` 属性控制不必要的提取，优化[人员](/graph/toolkit/components/person)组件中人员图像的刷新。
+- 通过使用 `disable-images` 属性，避免在[人员选取器](/graph/toolkit/components/people-picker)组件中不必要地加载人员图像。 
+- 使用 `user-filters`、`group-filters` 和 `people-filters` 属性筛选[人员选取器](/graph/toolkit/components/people-picker)组件中的可用用户、组和人员列表。
 
 
 ## <a name="march-2022-new-in-preview-only"></a>2022 年 3 月：仅预览版中的新增功能

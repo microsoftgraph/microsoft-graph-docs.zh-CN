@@ -5,18 +5,21 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 46a1c1c89d96a6117e5dddfbb6e1c42f30157b59
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: ffd00feb6beaf2ce5ac8aeec33befe07caed05b7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247355"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315143"
 ---
 # <a name="user-delta"></a>user: delta
 
 命名空间：microsoft.graph
 
 获取新建、更新或删除的用户，无需对整个用户集合执行完整读取。有关详细信息，请参阅[更改跟踪](/graph/delta-query-overview)。
+
+> [!NOTE]
+> 当前不会跟踪对 **licenseAssignmentStates** 属性的更改。
 
 ## <a name="permissions"></a>权限
 

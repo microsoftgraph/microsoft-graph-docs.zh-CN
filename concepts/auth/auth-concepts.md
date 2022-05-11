@@ -5,36 +5,18 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5ecbe4a163ab378ecc6a68aa6283c789be785203
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 4f69413ebbe824a87414649ceea6d904cdc24bc4
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335883"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65294059"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph 身份验证和授权基础知识
 
 为了调用 Microsoft Graph，应用必须从 Microsoft 标识平台获取访问令牌。该访问令牌包含应用相关信息以及它对可通过 Microsoft Graph 使用的资源和 API 所具有的权限。若要获取访问令牌，应用必须向 Microsoft 标识平台注册，并且获得用户或管理员的授权，可访问其所需的 Microsoft Graph 资源。
 
-本文概述了访问令牌、Microsoft 标识平台，以及应用可获取访问令牌的方式。 如果你已知道如何将应用与 Microsoft 标识平台集成来获取令牌，请参阅 [后续步骤](#next-steps) 部分中的信息和特定于 Microsoft Graph 的示例。
-
-## <a name="access-tokens"></a>访问令牌
-
-Microsoft 标识平台发布的访问令牌包含受 Microsoft 标识平台保护的 Web API （如 Microsoft Graph，用于验证调用方和确保调用方具有适当的权限来执行其请求的操作）的信息（声明）。 调用方应将访问令牌视为不透明字符串，因为令牌的内容仅适用于 API。 调用Microsoft Graph时，始终通过使用传输层安全性 （TLS） 的安全通道传输访问令牌来保护访问令牌。
-
-下面是一个 Microsoft 标识平台访问令牌示例：
-
-```jwt
-EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-```
-
-若要调用 Microsoft Graph，请将访问令牌作为持有者令牌附加到 HTTP 请求中的授权标头。例如以下调用，它返回已登录用户的个人资料信息（为了可读性，已将访问令牌缩短）：
-
-```http
-GET https://graph.microsoft.com/v1.0/me/ HTTP/1.1
-Host: graph.microsoft.com
-Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-```
+本文概述了 Microsoft 标识平台、访问令牌以及应用如何获取访问令牌。有关 Microsoft 标识平台的详细信息，请参阅 [什么是 Microsoft 标识平台？](/azure/active-directory/develop/v2-overview)。 如果你已知道如何将应用与 Microsoft 标识平台集成来获取令牌，请参阅 [后续步骤](#next-steps) 部分中的信息和特定于 Microsoft Graph 的示例。
 
 ## <a name="register-your-app-with-the-microsoft-identity-platform"></a>向 Microsoft 标识平台注册应用
 
@@ -105,7 +87,28 @@ Microsoft Graph具有两种类型的权限。
 
 有关 Microsoft Graph 委派权限和应用程序权限的完整列表，以及哪些权限需要管理员同意，请参阅 [权限参考](../permissions-reference.md)。
 
-## <a name="getting-an-access-token"></a>获取访问令牌
+
+## <a name="access-tokens"></a>访问令牌
+
+Microsoft 标识平台发布的访问令牌包含受 Microsoft 标识平台保护的 Web API （如 Microsoft Graph，用于验证调用方和确保调用方具有适当的权限来执行其请求的操作）的信息（声明）。 调用方应将访问令牌视为不透明字符串，因为令牌的内容仅适用于 API。 调用Microsoft Graph时，始终通过使用传输层安全性 （TLS） 的安全通道传输访问令牌来保护访问令牌。
+
+下面是一个 Microsoft 标识平台访问令牌示例：
+
+```jwt
+EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==
+```
+
+若要调用 Microsoft Graph，请将访问令牌作为持有者令牌附加到 HTTP 请求中的授权标头。例如以下调用，它返回已登录用户的个人资料信息（为了可读性，已将访问令牌缩短）：
+
+```http
+GET https://graph.microsoft.com/v1.0/me/ HTTP/1.1
+Host: graph.microsoft.com
+Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
+```
+
+访问令牌是 Microsoft 标识平台提供的一种 [安全令牌](/azure/active-directory/develop/security-tokens)。 它们生存期较短，但具有可变的默认生存期。 有关访问令牌以及客户端如何使用访问令牌的详细信息，请参阅 [访问令牌](/azure/active-directory/develop/access-tokens#access-token-lifetime)。
+
+### <a name="get-an-access-token"></a>获取访问令牌
 
 与大多数开发人员一样，你可能会使用身份验证库来管理令牌与 Microsoft 标识平台的交互。身份验证库从开发人员处提取许多协议详细信息，例如验证、Cookie 处理、令牌缓存和维护安全连接，并让你专注于应用功能的开发。Microsoft 发布开源客户端库和服务器中间件。
 
@@ -121,12 +124,7 @@ Microsoft Graph具有两种类型的权限。
 
 ## <a name="next-steps"></a>后续步骤
 
-- 有关如何为调用 Microsoft Graph 的应用获取访问令牌的快捷步骤，请选择与你的场景相符的应用类型：
-  - [桌面应用](/azure/active-directory/develop/scenario-desktop-overview)
-  - [移动应用](/azure/active-directory/develop/scenario-mobile-overview)
-  - [Web 应用](/azure/active-directory/develop/scenario-web-app-call-api-overview)
-  - [单页应用](/azure/active-directory/develop/scenario-spa-overview)
-  - [守护程序/后台服务](/azure/active-directory/develop/scenario-daemon-overview)
+- 要开始使用身份验证并授权应用访问资源，请参阅 [开始使用：选择应用程序方案](/azure/active-directory/develop/v2-overview#getting-started)。
 - 若要查看你可以在 Microsoft Graph 中使用的权限，请参阅[权限](../permissions-reference.md)。
 - 如果你是 Microsoft 云解决方案提供商并且对通过 Microsoft Graph 访问合作伙伴托管的客户数据感兴趣，请参阅[管理应用访问 (CSPs)](../auth-cloudsolutionprovider.md)。
 
