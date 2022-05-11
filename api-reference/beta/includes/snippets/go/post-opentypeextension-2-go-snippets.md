@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d10a5a6c85dcc3d9905653d1275d178656404345
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 818c7d5da1ba92ea29d967fd1a84158d5a952703
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083665"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329018"
 ---
 ```go
 
@@ -20,11 +20,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "dealValue": ,
     "expirationDate": "2015-12-03T10:00:00.000Z",
 }
-options := &msgraphsdk.ExtensionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Extensions().Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).Extensions().Post(requestBody)
 
 
 ```

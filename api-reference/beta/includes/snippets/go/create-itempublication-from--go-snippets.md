@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 59ff3f2a711d3d51fd5780d6c2f720d969f08c94
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a77d5fe6150e2910ed22aa749bfe930eacad4aff
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61102927"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326880"
 ---
 ```go
 
@@ -25,10 +25,7 @@ thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
 requestBody.SetThumbnailUrl(&thumbnailUrl)
 webUrl := "https://www.iabm.io"
 requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.PublicationsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Publications().Post(options)
+result, err := graphClient.Me().Profile().Publications().Post(requestBody)
 
 
 ```

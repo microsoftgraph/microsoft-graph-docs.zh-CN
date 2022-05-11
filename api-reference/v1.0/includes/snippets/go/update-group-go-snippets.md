@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1432b265fbc7a7ffe699542c3eb057428648f2d3
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 31e705d4b0d04159b7ddaca41f4924488bedbe17
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412000"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326333"
 ---
 ```go
 
@@ -24,11 +24,8 @@ mailEnabled := true
 requestBody.SetMailEnabled(&mailEnabled)
 mailNickname := "library-help"
 requestBody.SetMailNickname(&mailNickname)
-options := &msgraphsdk.GroupRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Patch(options)
+graphClient.GroupsById(&groupId).Patch(requestBody)
 
 
 ```

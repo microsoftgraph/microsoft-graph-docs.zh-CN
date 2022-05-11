@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: da91fe73825b888a2703d2af9f5494ad68d876c0
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 2110de7a3b1db06defba6fc34078b98015afbc8b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211725"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327978"
 ---
 ```go
 
@@ -17,12 +17,9 @@ displayName := "Contoso name change"
 requestBody.SetDisplayName(&displayName)
 federatedIdpMfaBehavior := "acceptIfMfaDoneByFederatedIdp"
 requestBody.SetFederatedIdpMfaBehavior(&federatedIdpMfaBehavior)
-options := &msgraphsdk.InternalDomainFederationRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 domainId := "domain-id"
 internalDomainFederationId := "internalDomainFederation-id"
-graphClient.DomainsById(&domainId).FederationConfigurationById(&internalDomainFederationId).Patch(options)
+graphClient.DomainsById(&domainId).FederationConfigurationById(&internalDomainFederationId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: afd9ff2d5447562addbb858186f08e298919822e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 935e5d39e8805b0f923b2df854fa4311e4e3e6f1
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61103040"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327711"
 ---
 ```go
 
@@ -17,12 +17,9 @@ email := "adelev@contoso.com"
 requestBody.SetEmail(&email)
 includedSources := "mailbox"
 requestBody.SetIncludedSources(&includedSources)
-options := &msgraphsdk.UserSourcesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 caseId := "case-id"
 legalHoldId := "legalHold-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).UserSources().Post(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).UserSources().Post(requestBody)
 
 
 ```

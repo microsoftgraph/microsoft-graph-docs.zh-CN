@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d5b8815bea70bebb1f60697d4be0a87cf7d51f51
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 218ac859374fe99e29cc64145ac18b9cedfffc79
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099229"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326467"
 ---
 ```go
 
@@ -39,10 +39,7 @@ requestBody.SetInstalledApps( []TeamsAppInstallation {
         "teamsApp@odata.bind": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/05F59CEC-A742-4A50-A62E-202A57E478A4",
     }
 }
-options := &msgraphsdk.ChatsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Chats().Post(options)
+result, err := graphClient.Chats().Post(requestBody)
 
 
 ```

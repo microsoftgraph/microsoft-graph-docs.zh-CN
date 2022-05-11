@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d1e16f1f7401b4e2acb6d6236c57ba872f4a85d4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3ddb2087fbf33d4c717ddc5ec7d3ff92385ab087
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412502"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328157"
 ---
 ```go
 
@@ -31,11 +31,8 @@ dateTime := "2019-12-02T19:00:00"
 end.SetDateTime(&dateTime)
 timeZone := "Pacific Standard Time"
 end.SetTimeZone(&timeZone)
-options := &msgraphsdk.DeclineRequestBuilderPostOptions{
-    Body: requestBody,
-}
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Decline(event-id).Post(options)
+graphClient.Me().EventsById(&eventId).Decline(event-id).Post(requestBody)
 
 
 ```

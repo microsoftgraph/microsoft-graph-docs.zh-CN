@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 62a4ecf0a23aaa0de19d892043c8a5dc5ac06890
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c14d25ca7bd434e3348238395f77acb50fffc40f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61096563"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325927"
 ---
 ```go
 
@@ -24,11 +24,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "timeOffRequestsEnabled": true,
     "timeClockEnabled": true,
 }
-options := &msgraphsdk.ScheduleRequestBuilderPutOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Schedule().Put(options)
+graphClient.TeamsById(&teamId).Schedule().Put(requestBody)
 
 
 ```

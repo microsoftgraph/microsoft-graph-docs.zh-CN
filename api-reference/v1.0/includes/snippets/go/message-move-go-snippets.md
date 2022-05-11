@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9d7d0cf8c59d96b479107f5e1c5f57e8efc344a5
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3c0db9899e8293e8c8286a1218c6b1bbedf1f5a8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412520"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328195"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewDestinationIdRequestBody()
 destinationId := "deleteditems"
 requestBody.SetDestinationId(&destinationId)
-options := &msgraphsdk.MoveRequestBuilderPostOptions{
-    Body: requestBody,
-}
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Move(message-id).Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).Move(message-id).Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9b11b921b4747eb247df69c154bc9b561b2ec4703d66fbc7bf322d6d2a1285ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7f508b1a39d5da4918d61e4df546536b2f0d78bc
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57220635"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326900"
 ---
 ```javascript
 
@@ -27,7 +27,7 @@ const organization = {
   technicalNotificationMails: ['tech@contoso.com']
 };
 
-await client.api('/organization/{id}')
+await client.api('/organization/84841066-274d-4ec0-a5c1-276be684bdd3')
     .version('beta')
     .update(organization);
 

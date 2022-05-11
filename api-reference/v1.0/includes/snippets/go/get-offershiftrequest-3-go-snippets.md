@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3020426f8dc11bfa3960fa7c98119b106f58d95a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: eb65fb32ed287a3c27ee3259939f87708f19f3a1
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101846"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328194"
 ---
 ```go
 
@@ -22,12 +22,11 @@ requestBody.SetRecipientUserId(&recipientUserId)
 headers := map[string]string{
     "Authorization": "Bearer {token}"
 }
-options := &msgraphsdk.OfferShiftRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.OfferShiftRequestsRequestBuilderPostRequestConfiguration{
+    Headers: headers,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().OfferShiftRequests().Post(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().OfferShiftRequests().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

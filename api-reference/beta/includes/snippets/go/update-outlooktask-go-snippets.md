@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4f0c263d6bf627ff23d2694ba56b7b70e355c5d0
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: fe1536d54cfab645725ac70fe15248e0ef8921e5
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412670"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329265"
 ---
 ```go
 
@@ -22,12 +22,11 @@ dueDateTime.SetTimeZone(&timeZone)
 headers := map[string]string{
     "Prefer": "outlook.timezone="Eastern Standard Time""
 }
-options := &msgraphsdk.OutlookTaskRequestBuilderPatchOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.OutlookTaskRequestBuilderPatchRequestConfiguration{
+    Headers: headers,
 }
 outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Patch(options)
+graphClient.Me().Outlook().TasksById(&outlookTaskId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 557f7df90acd29ca74d36112ba36ed4bcd3b167d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 1b7095492db84892a8f2ca9633f84b5d93e0c0a1
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083700"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326422"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.PrinterRequestBuilderGetQueryParameters{
     Select: "id,displayName,capabilities",
 }
-options := &msgraphsdk.PrinterRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.PrinterRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 printerId := "printer-id"
-result, err := graphClient.Print().PrintersById(&printerId).Get(options)
+result, err := graphClient.Print().PrintersById(&printerId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

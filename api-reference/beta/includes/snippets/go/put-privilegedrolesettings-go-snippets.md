@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 21d153e7423baa6f72282c02bb62bd7b4550099c
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 7531f56ecc2895f4af7f7836d0bd38b1eb8a677e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095665"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328929"
 ---
 ```go
 
@@ -29,11 +29,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
         "22770e3f-b9b4-418e-9dea-d0e3d2f275dd",
     }
 }
-options := &msgraphsdk.SettingsRequestBuilderPutOptions{
-    Body: requestBody,
-}
 privilegedRoleId := "privilegedRole-id"
-graphClient.PrivilegedRolesById(&privilegedRoleId).Settings().Put(options)
+graphClient.PrivilegedRolesById(&privilegedRoleId).Settings().Put(requestBody)
 
 
 ```

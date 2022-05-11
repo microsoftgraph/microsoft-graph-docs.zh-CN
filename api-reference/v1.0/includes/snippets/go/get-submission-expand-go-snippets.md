@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 402267c9a9abbc4ad5808067ecf79c1b0ce7b2c6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f561b971e2eeb263ac761a6a3721efd6d1f0dd01
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130452"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326848"
 ---
 ```go
 
@@ -15,13 +15,13 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.EducationSubmissionRequestBuilderGetQueryParameters{
     Expand: "*",
 }
-options := &msgraphsdk.EducationSubmissionRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.EducationSubmissionRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
 educationSubmissionId := "educationSubmission-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).Get(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

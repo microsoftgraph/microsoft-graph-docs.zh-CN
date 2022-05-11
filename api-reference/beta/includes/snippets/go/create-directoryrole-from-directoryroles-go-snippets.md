@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2cb5732571a07b29ae91aed6d7a40e231606d15b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 7240ca5272a44a13ee9ebf57bb167f3983f08df5
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099033"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325873"
 ---
 ```go
 
@@ -15,10 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewDirectoryRole()
 roleTemplateId := "fe930be7-5e62-47db-91af-98c3a49a38b1"
 requestBody.SetRoleTemplateId(&roleTemplateId)
-options := &msgraphsdk.DirectoryRolesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.DirectoryRoles().Post(options)
+result, err := graphClient.DirectoryRoles().Post(requestBody)
 
 
 ```

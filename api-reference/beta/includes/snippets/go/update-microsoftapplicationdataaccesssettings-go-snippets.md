@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b3dc8c4f33bbaaaad620a8cfdaecbbda94d44238
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 53cf314fb3cc60cb4eff378874039a7b9b063295
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212427"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327261"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewMicrosoftApplicationDataAccessSettings()
 disabledForGroup := "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 requestBody.SetDisabledForGroup(&disabledForGroup)
-options := &msgraphsdk.MicrosoftApplicationDataAccessRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).Settings().MicrosoftApplicationDataAccess().Patch(options)
+graphClient.OrganizationById(&organizationId).Settings().MicrosoftApplicationDataAccess().Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c290a2e42da8afaaa01869f90423f67da68021ab
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 0c42dcecf7e7f81b198abecc0f9c3f4eb33b0c6a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412133"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328484"
 ---
 ```go
 
@@ -19,11 +19,8 @@ description := "Connected organization new description"
 requestBody.SetDescription(&description)
 state := "configured"
 requestBody.SetState(&state)
-options := &msgraphsdk.ConnectedOrganizationRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 connectedOrganizationId := "connectedOrganization-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).Patch(options)
+graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).Patch(requestBody)
 
 
 ```

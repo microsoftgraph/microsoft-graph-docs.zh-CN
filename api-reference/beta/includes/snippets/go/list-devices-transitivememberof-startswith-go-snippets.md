@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 31cccd5f8720b9a612920a1e410661b6305ca960
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 194745516d834802bf16bddb5b61e2e9310a994a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206410"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326927"
 ---
 ```go
 
@@ -20,13 +20,13 @@ requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderGetQueryParameters
 headers := map[string]string{
     "ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderGetOptions{
-    Q: requestParameters,
-    H: headers,
+options := &msgraphsdk.DirectoryObjectRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
+    Headers: headers,
 }
 deviceId := "device-id"
 directoryObjectId := "directoryObject-id"
-result, err := graphClient.DevicesById(&deviceId).TransitiveMemberOfById(&directoryObjectId).Get(options)
+result, err := graphClient.DevicesById(&deviceId).TransitiveMemberOfById(&directoryObjectId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a41a1cf666bc7bf6befa49110dfc58f9e9b4697a
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 6955f15f8bea46d1cd6848ac6df54652ad50ac98
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412175"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328266"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewRoleRequestBody()
 role := "viewer"
 requestBody.SetRole(&role)
-options := &msgraphsdk.ChangeScreenSharingRoleRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).ChangeScreenSharingRole(call-id).Post(options)
+graphClient.Communications().CallsById(&callId).ChangeScreenSharingRole(call-id).Post(requestBody)
 
 
 ```

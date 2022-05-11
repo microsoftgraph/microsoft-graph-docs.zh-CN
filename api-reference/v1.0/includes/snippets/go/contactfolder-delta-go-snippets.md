@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2d8f042a9034bf9974d62c6e33e897c24ae8abdd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e075fc23bd3d10de063811957271085b2529dc90
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137674"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326238"
 ---
 ```go
 
@@ -15,10 +15,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
     "Prefer": "odata.maxpagesize=2"
 }
-options := &msgraphsdk.DeltaRequestBuilderGetOptions{
-    H: headers,
+options := &msgraphsdk.DeltaRequestBuilderGetRequestConfiguration{
+    Headers: headers,
 }
-result, err := graphClient.Me().ContactFolders().Delta()().Get(options)
+result, err := graphClient.Me().ContactFolders().Delta()().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
