@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2938e477b5195973fddcd40bf32365bf7900be50
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 13924c96b774c6f90e950113e3b22e02d2652d0c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412364"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327451"
 ---
 ```go
 
@@ -19,11 +19,8 @@ endDateTime, err := time.Parse(time.RFC3339, "2020-09-09T15:03:30.8566356-07:00"
 requestBody.SetEndDateTime(&endDateTime)
 subject := "Patch Meeting Subject"
 requestBody.SetSubject(&subject)
-options := &msgraphsdk.OnlineMeetingRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 onlineMeetingId := "onlineMeeting-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Patch(options)
+graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Patch(requestBody)
 
 
 ```

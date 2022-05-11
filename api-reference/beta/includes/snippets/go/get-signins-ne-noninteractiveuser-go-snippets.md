@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1cf5edeff488c86b0e7ad34872e6c50080176d38
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: e505b84bff22219a3cb30d82360733a4e9853110
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63757773"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327957"
 ---
 ```go
 
@@ -17,10 +17,10 @@ requestParameters := &msgraphsdk.SignInsRequestBuilderGetQueryParameters{
     OrderBy: "createdDateTime%20DESC",
     Top: 10,
 }
-options := &msgraphsdk.SignInsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.SignInsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.AuditLogs().SignIns().Get(options)
+result, err := graphClient.AuditLogs().SignIns().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

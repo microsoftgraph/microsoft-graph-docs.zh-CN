@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: daa4e34464fbf010756b27e5848fd278a586f94f
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 1c3d5291bfe0ad5e5c7b1773af7c00d04bd2d4aa
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338317"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326449"
 ---
 ```go
 
@@ -23,10 +23,7 @@ webUrl := "http://microsoft.com/deep-neural-network"
 requestBody.SetWebUrl(&webUrl)
 state := "draft"
 requestBody.SetState(&state)
-options := &msgraphsdk.AcronymsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Search().Acronyms().Post(options)
+result, err := graphClient.Search().Acronyms().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 70c70a1675d17c4f0c2637d470596d49de2000dd
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 893051237c5033113d543429ecf3231347833513
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411749"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327702"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewDestinationIdRequestBody()
 destinationId := "destinationId-value"
 requestBody.SetDestinationId(&destinationId)
-options := &msgraphsdk.MoveRequestBuilderPostOptions{
-    Body: requestBody,
-}
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Move(mailFolder-id).Post(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).Move(mailFolder-id).Post(requestBody)
 
 
 ```

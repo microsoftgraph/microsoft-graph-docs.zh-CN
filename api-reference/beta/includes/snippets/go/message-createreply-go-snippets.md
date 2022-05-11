@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 975bdc38428fdeca71cca9026b10ac6ac18607bc
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 0a2d4c2f7982e0cd3f65e62c876ec8b59247c7ef
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412035"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327358"
 ---
 ```go
 
@@ -25,11 +25,8 @@ message.SetToRecipients( []Recipient {
 }
 comment := "Samantha, Randi, would you name the group if the project is approved, please?"
 requestBody.SetComment(&comment)
-options := &msgraphsdk.CreateReplyRequestBuilderPostOptions{
-    Body: requestBody,
-}
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).CreateReply(message-id).Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).CreateReply(message-id).Post(requestBody)
 
 
 ```

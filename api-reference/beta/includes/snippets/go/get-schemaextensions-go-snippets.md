@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 64e261c6a666ed853301d0b2f5f21fcc6a90bede
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 77a9acbf221b18e77243d3e692c14583e052ade4
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098780"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325775"
 ---
 ```go
 
@@ -15,10 +15,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.SchemaExtensionsRequestBuilderGetQueryParameters{
     Filter: "id%20eq%20'graphlearn_test'",
 }
-options := &msgraphsdk.SchemaExtensionsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.SchemaExtensionsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.SchemaExtensions().Get(options)
+result, err := graphClient.SchemaExtensions().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

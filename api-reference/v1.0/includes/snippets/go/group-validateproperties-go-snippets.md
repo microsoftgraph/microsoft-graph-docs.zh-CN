@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ae6ba52a40abcbcf57f58a40f82cd1a8dc7b7ecc
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3279777b833d8bb28023ec3d66be1cc5c642f6aa
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411934"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325992"
 ---
 ```go
 
@@ -19,11 +19,8 @@ mailNickname := "Myprefix_test_mysuffix"
 requestBody.SetMailNickname(&mailNickname)
 onBehalfOfUserId := "onBehalfOfUserId-value"
 requestBody.SetOnBehalfOfUserId(&onBehalfOfUserId)
-options := &msgraphsdk.ValidatePropertiesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 groupId := "group-id"
-graphClient.GroupsById(&groupId).ValidateProperties(group-id).Post(options)
+graphClient.GroupsById(&groupId).ValidateProperties(group-id).Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 348f0bb1a2452457df696484b3736a317b0b09ba
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a6e1a31810d09f8171559bef915f7996b362025c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61104117"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325764"
 ---
 ```go
 
@@ -21,12 +21,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "breaks":  []Object {
     }
 }
-options := &msgraphsdk.TimeCardRequestBuilderPutOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
 timeCardId := "timeCard-id"
-graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).Put(options)
+graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).Put(requestBody)
 
 
 ```

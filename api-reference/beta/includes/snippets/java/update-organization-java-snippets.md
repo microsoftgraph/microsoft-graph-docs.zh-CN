@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5f4de5e2fb6b1e85e20fe603072041ba3c28a7d12102b0f820273f2c8c6b2f5c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 456d2b6fa4c25a2bc3bdc3b26376d784064b5f96
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57220634"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326902"
 ---
 ```java
 
@@ -29,7 +29,7 @@ LinkedList<String> technicalNotificationMailsList = new LinkedList<String>();
 technicalNotificationMailsList.add("tech@contoso.com");
 organization.technicalNotificationMails = technicalNotificationMailsList;
 
-graphClient.organization("{id}")
+graphClient.organization("84841066-274d-4ec0-a5c1-276be684bdd3")
     .buildRequest()
     .patch(organization);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1d3c78d3986a2cebde091ce87ae6204c226ba92e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4298761d0a6f74b6757a9fbe59637579510bfbf6
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412350"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327886"
 ---
 ```go
 
@@ -27,10 +27,7 @@ defaultRegionalFormat := msgraphsdk.NewLocaleInfo()
 requestBody.SetDefaultRegionalFormat(defaultRegionalFormat)
 locale := "en-US"
 defaultRegionalFormat.SetLocale(&locale)
-options := &msgraphsdk.RegionalAndLanguageSettingsRequestBuilderPatchOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(options)
+graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(requestBody)
 
 
 ```

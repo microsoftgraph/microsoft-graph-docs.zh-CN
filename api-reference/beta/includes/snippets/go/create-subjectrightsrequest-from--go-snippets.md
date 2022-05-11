@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6daaf87a9cb51375b736b140ab2dcafb1629a3f7
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f64e05e6e64bb3a970014d823670162ef35102b7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095833"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327824"
 ---
 ```go
 
@@ -40,10 +40,7 @@ dataSubject.SetAdditionalData(map[string]interface{}{
     "phoneNumber": "String",
     "SSN": "String",
 }
-options := &msgraphsdk.SubjectRightsRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(options)
+result, err := graphClient.Privacy().SubjectRightsRequests().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3a480727c153b222f850f77e186a93952a0e5935
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 2a1e4693d18e89149547ec1e676ad86b1e956d52
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412714"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327834"
 ---
 ```go
 
@@ -29,11 +29,8 @@ longitude := float64(2.2)
 location.SetLongitude(&longitude)
 altitudeInMeters := int32(3)
 location.SetAltitudeInMeters(&altitudeInMeters)
-options := &msgraphsdk.PrintConnectorRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 printConnectorId := "printConnector-id"
-result, err := graphClient.Print().ConnectorsById(&printConnectorId).Patch(options)
+graphClient.Print().ConnectorsById(&printConnectorId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6550e0fdd33a1fd76267e394826c4b667a9e647e
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: cdc9060acce5274779b4cafb07922887bbf2271f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65203165"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327551"
 ---
 ```go
 
@@ -44,12 +44,11 @@ accessDetails.SetUnifiedRoles( []UnifiedRole {
 headers := map[string]string{
     "If-Match": "W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==""
 }
-options := &msgraphsdk.DelegatedAdminRelationshipRequestBuilderPatchOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.DelegatedAdminRelationshipRequestBuilderPatchRequestConfiguration{
+    Headers: headers,
 }
 delegatedAdminRelationshipId := "delegatedAdminRelationship-id"
-graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).Patch(options)
+graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

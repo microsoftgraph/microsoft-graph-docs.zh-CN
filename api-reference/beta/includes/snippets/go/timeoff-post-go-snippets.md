@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7341094fdab2787c18494c15e378d60138175d57
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3edf5a962307a9dd9c91dda12bdb574bf865ef11
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096041"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326873"
 ---
 ```go
 
@@ -35,11 +35,8 @@ endDateTime, err := time.Parse(time.RFC3339, "2019-03-12T07:00:00Z")
 draftTimeOff.SetEndDateTime(&endDateTime)
 theme := "pink"
 draftTimeOff.SetTheme(&theme)
-options := &msgraphsdk.TimesOffRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimesOff().Post(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().TimesOff().Post(requestBody)
 
 
 ```

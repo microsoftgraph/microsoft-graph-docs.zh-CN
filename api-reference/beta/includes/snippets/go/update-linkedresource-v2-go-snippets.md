@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: da8a2fe4b059538cb021ceb691c8f5cc313a7fee
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 6cec8749a9340c963fad46855d6654c905d421d3
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411905"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327360"
 ---
 ```go
 
@@ -21,13 +21,10 @@ displayName := "Microsoft Web page"
 requestBody.SetDisplayName(&displayName)
 externalId := "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 requestBody.SetExternalId(&externalId)
-options := &msgraphsdk.LinkedResource_v2RequestBuilderPatchOptions{
-    Body: requestBody,
-}
 baseTaskListId := "baseTaskList-id"
 baseTaskId := "baseTask-id"
 linkedResource_v2Id := "linkedResource_v2-id"
-result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).LinkedResourcesById(&linkedResource_v2Id).Patch(options)
+graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).LinkedResourcesById(&linkedResource_v2Id).Patch(requestBody)
 
 
 ```

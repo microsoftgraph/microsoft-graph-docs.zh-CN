@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 116547074170eed5c7151685523a5e4e7dc11441
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e72513c3e49b841f519c41b9e5dee0bc93b9e3fc
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411714"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327582"
 ---
 ```go
 
@@ -20,11 +20,8 @@ requestBody.SetToRecipients( []Recipient {
 }
 comment := "Dana, hope you can make this meeting."
 requestBody.SetComment(&comment)
-options := &msgraphsdk.ForwardRequestBuilderPostOptions{
-    Body: requestBody,
-}
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Forward(event-id).Post(options)
+graphClient.Me().EventsById(&eventId).Forward(event-id).Post(requestBody)
 
 
 ```

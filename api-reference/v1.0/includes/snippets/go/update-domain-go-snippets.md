@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d36a42d020c7af927806259c2bdc88a046356718
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 194feb8bc9371044e05de6f8045c7b217971f81f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412331"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328974"
 ---
 ```go
 
@@ -19,11 +19,8 @@ requestBody.SetSupportedServices( []String {
     "Email",
     "OfficeCommunicationsOnline",
 }
-options := &msgraphsdk.DomainRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 domainId := "domain-id"
-result, err := graphClient.DomainsById(&domainId).Patch(options)
+graphClient.DomainsById(&domainId).Patch(requestBody)
 
 
 ```

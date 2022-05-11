@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 21f467c9fda7626a0391ab3e2b81409fbcb86634
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7ea17d2e49202da1b5123761485c33e488ae0568
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119055"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326794"
 ---
 ```go
 
@@ -33,10 +33,7 @@ originId := "https://contoso-admin.sharepoint.com/"
 accessPackageResourceEnvironment.SetOriginId(&originId)
 requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType)
-options := &msgraphsdk.AccessPackageResourceRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
 
 
 ```

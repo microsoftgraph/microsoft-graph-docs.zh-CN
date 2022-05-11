@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 24095fe5724a6b35621d806484e7cd0c0d5d6783
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 17ee15366f20bd8ad0fd15ea53bd43d6c07483b7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61092584"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326489"
 ---
 ```go
 
@@ -22,11 +22,8 @@ requestBody.SetSubject(&subject)
 requestBody.SetAudiences( []String {
     "api://AzureADTokenExchange",
 }
-options := &msgraphsdk.FederatedIdentityCredentialsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).FederatedIdentityCredentials().Post(options)
+result, err := graphClient.ApplicationsById(&applicationId).FederatedIdentityCredentials().Post(requestBody)
 
 
 ```

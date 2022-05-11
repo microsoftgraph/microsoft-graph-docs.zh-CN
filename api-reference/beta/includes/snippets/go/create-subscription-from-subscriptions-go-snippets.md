@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d8dacbd9bd7bcf2172ea14a82e6079750c4b0a9e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: d9251bda079cc9ab6043086929e8367c6e7b9a12
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089239"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325838"
 ---
 ```go
 
@@ -25,10 +25,7 @@ clientState := "secretClientValue"
 requestBody.SetClientState(&clientState)
 latestSupportedTlsVersion := "v1_2"
 requestBody.SetLatestSupportedTlsVersion(&latestSupportedTlsVersion)
-options := &msgraphsdk.SubscriptionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Subscriptions().Post(options)
+result, err := graphClient.Subscriptions().Post(requestBody)
 
 
 ```

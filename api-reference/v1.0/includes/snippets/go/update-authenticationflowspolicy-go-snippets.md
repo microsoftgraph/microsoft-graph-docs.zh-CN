@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 35c5dea5a7b6b2bfa2467ce9ea32b11be0290d32
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 1cf2e4ae290cba415b2bda72173fa122f921a6dc
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411886"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326972"
 ---
 ```go
 
@@ -17,10 +17,7 @@ selfServiceSignUp := msgraphsdk.NewSelfServiceSignUpAuthenticationFlowConfigurat
 requestBody.SetSelfServiceSignUp(selfServiceSignUp)
 isEnabled := true
 selfServiceSignUp.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.AuthenticationFlowsPolicyRequestBuilderPatchOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Policies().AuthenticationFlowsPolicy().Patch(options)
+graphClient.Policies().AuthenticationFlowsPolicy().Patch(requestBody)
 
 
 ```

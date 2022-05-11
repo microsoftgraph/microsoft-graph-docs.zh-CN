@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8804e2ab1b10cdaa903339ee7ac2fd777bd10b5e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a902867ddf0db3ddb509eba58b9376621732bb79
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083594"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328517"
 ---
 ```go
 
@@ -28,11 +28,8 @@ configuration.SetRemoveUrl(&removeUrl)
 requestBody.SetAdditionalData(map[string]interface{}{
     "teamsApp@odata.bind": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
 }
-options := &msgraphsdk.TabsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Tabs().Post(options)
+result, err := graphClient.ChatsById(&chatId).Tabs().Post(requestBody)
 
 
 ```
