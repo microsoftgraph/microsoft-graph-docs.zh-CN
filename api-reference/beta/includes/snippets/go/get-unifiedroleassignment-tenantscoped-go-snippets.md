@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 411ba8fc2a6b0e7aad7dc20bd78194506fa8f812
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: ffc2cd8a0160d9f82d2a9d588a84f626c6a03934
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338348"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325841"
 ---
 ```go
 
@@ -19,11 +19,11 @@ requestParameters := &msgraphsdk.TransitiveRoleAssignmentsRequestBuilderGetQuery
 headers := map[string]string{
     "ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.TransitiveRoleAssignmentsRequestBuilderGetOptions{
-    Q: requestParameters,
-    H: headers,
+options := &msgraphsdk.TransitiveRoleAssignmentsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
+    Headers: headers,
 }
-result, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().Get(options)
+result, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

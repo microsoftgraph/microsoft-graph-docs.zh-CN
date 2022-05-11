@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9952932d0c1bb3ba4cf24926c088c5f996aa7cf0
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 169b0873e2bc95440277bc7157b397559bd19685
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101526"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326084"
 ---
 ```go
 
@@ -45,11 +45,8 @@ requestBody.SetAttendees( []Attendee {
 }
 transactionId := "7E163156-7762-4BEB-A1C6-729EA81755A7"
 requestBody.SetTransactionId(&transactionId)
-options := &msgraphsdk.EventsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 calendarId := "calendar-id"
-result, err := graphClient.Me().CalendarsById(&calendarId).Events().Post(options)
+result, err := graphClient.Me().CalendarsById(&calendarId).Events().Post(requestBody)
 
 
 ```

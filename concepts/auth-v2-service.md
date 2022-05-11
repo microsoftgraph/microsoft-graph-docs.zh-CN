@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1fd849f0176468c76353f9f2c478dfca0b753027
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: b958ca3774218383edc24504a115da37a43d9822
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133424"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296505"
 ---
 # <a name="get-access-without-a-user"></a>无用户访问
 
@@ -155,15 +155,17 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 {
   "token_type": "Bearer",
   "expires_in": 3599,
+  "ext_expires_in":3599,
   "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik1uQ19WWmNBVGZNNXBP..."
 }
 ```
 
-| 参数     | 说明
-|:--------------|:------------
-| access_token  | 请求的访问令牌。应用可使用此令牌调用 Microsoft Graph。
-| token_type    | 表示令牌类型值。Azure AD 唯一支持的类型是 `bearer`
-| expires_in    | 访问令牌的有效期是多久（以秒为单位）。
+| 参数      | 说明                                                                                   |
+|:---------------|:----------------------------------------------------------------------------------------------|
+| access_token   | 请求的访问令牌。应用可使用此令牌调用 Microsoft Graph。          |
+| expires_in     | 访问令牌的有效期是多久（以秒为单位）。                                              |
+| ext_expires_in | 用于指示访问令牌的延长生存期，以及在令牌颁发服务未响应时支持复原。 |
+| token_type     | 表示令牌类型值。Azure AD 唯一支持的类型是 `Bearer`             |
 
 ## <a name="5-use-the-access-token-to-call-microsoft-graph"></a>5.使用访问令牌调用 Microsoft Graph
 

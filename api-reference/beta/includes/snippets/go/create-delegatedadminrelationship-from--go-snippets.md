@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e25e2cb072995c8aaebe0774d8163f051e628e6e
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: a8c6a64284b874d3ca73c8d0bf78057518d846ee
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205430"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328829"
 ---
 ```go
 
@@ -35,10 +35,7 @@ accessDetails.SetUnifiedRoles( []UnifiedRole {
         "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5",
     }
 }
-options := &msgraphsdk.DelegatedAdminRelationshipsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.TenantRelationships().DelegatedAdminRelationships().Post(options)
+result, err := graphClient.TenantRelationships().DelegatedAdminRelationships().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3af9502fd143cb9ba5a9207120ad226338745309
+ms.openlocfilehash: 18fc3a09680cc5d7a15b20252833f660965d4c71
 ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326150"
+ms.locfileid: "65326152"
 ---
 ```go
 
@@ -13,39 +13,44 @@ ms.locfileid: "65326150"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewAccessReviewScheduleDefinition()
-displayName := "Review employee access to LinkedIn"
+displayName := "Group Multi-stage Access Review"
 requestBody.SetDisplayName(&displayName)
-descriptionForAdmins := "Review employee access to LinkedIn"
+descriptionForAdmins := "New scheduled access review"
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins)
+descriptionForReviewers := "If you have any questions, contact jerry@contoso.com"
+requestBody.SetDescriptionForReviewers(&descriptionForReviewers)
 scope := msgraphsdk.NewAccessReviewScope()
 requestBody.SetScope(scope)
 scope.SetAdditionalData(map[string]interface{}{
-    "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
-    "principalScopes":  []Object {
-    }
-    "resourceScopes":  []Object {
-    }
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
+    "queryType": "MicrosoftGraph",
 }
-requestBody.SetReviewers( []AccessReviewReviewerScope {
-    msgraphsdk.NewAccessReviewReviewerScope(),
+requestBody.SetStageSettings( []AccessReviewStageSettings {
+    msgraphsdk.NewAccessReviewStageSettings(),
     SetAdditionalData(map[string]interface{}{
-        "query": "./manager",
-        "queryType": "MicrosoftGraph",
-        "queryRoot": "decisions",
+        "stageId": "1",
+        "durationInDays": ,
+        "recommendationsEnabled": false,
+        "decisionsThatWillMoveToNextStage":  []String {
+            "NotReviewed",
+            "Approve",
+        }
+        "reviewers":  []Object {
+        }
     }
-}
-requestBody.SetBackupReviewers( []AccessReviewReviewerScope {
-    msgraphsdk.NewAccessReviewReviewerScope(),
+    msgraphsdk.NewAccessReviewStageSettings(),
     SetAdditionalData(map[string]interface{}{
-        "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-        "queryType": "MicrosoftGraph",
-    }
-}
-requestBody.SetFallbackReviewers( []AccessReviewReviewerScope {
-    msgraphsdk.NewAccessReviewReviewerScope(),
-    SetAdditionalData(map[string]interface{}{
-        "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-        "queryType": "MicrosoftGraph",
+        "stageId": "2",
+        "dependsOn":  []String {
+            "1",
+        }
+        "durationInDays": ,
+        "recommendationsEnabled": true,
+        "reviewers":  []Object {
+        }
+        "fallbackReviewers":  []Object {
+        }
     }
 }
 settings := msgraphsdk.NewAccessReviewScheduleSettings()
@@ -56,34 +61,28 @@ reminderNotificationsEnabled := true
 settings.SetReminderNotificationsEnabled(&reminderNotificationsEnabled)
 justificationRequiredOnApproval := true
 settings.SetJustificationRequiredOnApproval(&justificationRequiredOnApproval)
-defaultDecisionEnabled := true
+defaultDecisionEnabled := false
 settings.SetDefaultDecisionEnabled(&defaultDecisionEnabled)
-defaultDecision := "Recommendation"
+defaultDecision := "None"
 settings.SetDefaultDecision(&defaultDecision)
-instanceDurationInDays := int32(180)
+instanceDurationInDays := int32(4)
 settings.SetInstanceDurationInDays(&instanceDurationInDays)
-autoApplyDecisionsEnabled := true
-settings.SetAutoApplyDecisionsEnabled(&autoApplyDecisionsEnabled)
-recommendationsEnabled := true
-settings.SetRecommendationsEnabled(&recommendationsEnabled)
 recurrence := msgraphsdk.NewPatternedRecurrence()
 settings.SetRecurrence(recurrence)
 pattern := msgraphsdk.NewRecurrencePattern()
 recurrence.SetPattern(pattern)
-type := "absoluteMonthly"
+type := "weekly"
 pattern.SetType(&type)
-interval := int32(6)
+interval := int32(1)
 pattern.SetInterval(&interval)
-dayOfMonth := int32(0)
-pattern.SetDayOfMonth(&dayOfMonth)
 range := msgraphsdk.NewRecurrenceRange()
 recurrence.SetRange(range)
-type := "numbered"
+type := "noEnd"
 range.SetType(&type)
-startDate := "2021-05-05"
+startDate := "2020-09-08T12:02:30.667Z"
 range.SetStartDate(&startDate)
-endDate := "2022-05-05"
-range.SetEndDate(&endDate)
+decisionHistoriesForReviewersEnabled := true
+settings.SetDecisionHistoriesForReviewersEnabled(&decisionHistoriesForReviewersEnabled)
 result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
 
 

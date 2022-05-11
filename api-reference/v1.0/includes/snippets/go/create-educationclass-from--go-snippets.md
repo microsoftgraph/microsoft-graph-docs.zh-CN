@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f05277ed11d3c800b1f3d665d3ee2a03d137d202
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 137ca3d1243c3d88bbf743f82e3b79747faab916
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101352"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327589"
 ---
 ```go
 
@@ -44,10 +44,7 @@ term.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.educationClass",
 }
-options := &msgraphsdk.ClassesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Education().Classes().Post(options)
+result, err := graphClient.Education().Classes().Post(requestBody)
 
 
 ```

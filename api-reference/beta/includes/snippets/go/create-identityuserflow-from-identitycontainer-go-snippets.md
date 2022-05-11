@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a17f66c0b5710f29f0b7e0a58cf07fe8978c9b6b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 03fa9d67b2fe82c07a056ed16af62d4e997609dc
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089459"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328850"
 ---
 ```go
 
@@ -19,10 +19,7 @@ userFlowType := "signUpOrSignIn"
 requestBody.SetUserFlowType(&userFlowType)
 userFlowTypeVersion := float32(1)
 requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
-options := &msgraphsdk.UserFlowsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().UserFlows().Post(options)
+result, err := graphClient.Identity().UserFlows().Post(requestBody)
 
 
 ```

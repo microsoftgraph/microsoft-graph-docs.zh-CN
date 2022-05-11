@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a791aa14025cb4a32f45cb9a96147685f2a29fac
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: c0f022afd58dfaf6ce5925470eb7f34537e4dd4e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63528153"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327168"
 ---
 ```go
 
@@ -57,10 +57,7 @@ applicationRestrictions.SetKeyCredentials( []KeyCredentialConfiguration {
         "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z",
     }
 }
-options := &msgraphsdk.DefaultAppManagementPolicyRequestBuilderPatchOptions{
-    Body: requestBody,
-}
-graphClient.Policies().DefaultAppManagementPolicy().Patch(options)
+graphClient.Policies().DefaultAppManagementPolicy().Patch(requestBody)
 
 
 ```

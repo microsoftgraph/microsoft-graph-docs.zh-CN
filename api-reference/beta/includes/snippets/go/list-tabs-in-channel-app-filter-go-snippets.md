@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fd23d749cdccab697e34cb7973c44e76193bab25
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e49a647bd679c4f7c4c376cc6c5d747e7d9c8061
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61096396"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327201"
 ---
 ```go
 
@@ -16,12 +16,12 @@ requestParameters := &msgraphsdk.TabsRequestBuilderGetQueryParameters{
     Expand: "teamsApp",
     Filter: "teamsApp/id%20eq%20'com.microsoft.teamspace.tab.planner'",
 }
-options := &msgraphsdk.TabsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.TabsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Tabs().Get(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Tabs().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9215b16aec5a0bc2850aa595548a1212ab70f3f7
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 991765257460a8c9e3d62d4bef1142c584fc6853
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61096893"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328839"
 ---
 ```go
 
@@ -29,10 +29,7 @@ countryOrRegion := "United Kingdom"
 detail.SetCountryOrRegion(&countryOrRegion)
 postalCode := "E14 3TD"
 detail.SetPostalCode(&postalCode)
-options := &msgraphsdk.AddressesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Addresses().Post(options)
+result, err := graphClient.Me().Profile().Addresses().Post(requestBody)
 
 
 ```

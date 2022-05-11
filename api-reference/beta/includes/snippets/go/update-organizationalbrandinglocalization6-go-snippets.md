@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ac9ea8effcea402b9acd0355c1a4b6afac99a792
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 3dabb005c9f2afb993de0e779261c8863097d1a6
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63528155"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329014"
 ---
 ```go
 
@@ -17,12 +17,9 @@ backgroundColor := "#00000F"
 requestBody.SetBackgroundColor(&backgroundColor)
 signInPageText := "Welcome to Contoso France"
 requestBody.SetSignInPageText(&signInPageText)
-options := &msgraphsdk.OrganizationalBrandingLocalizationRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 organizationId := "organization-id"
 organizationalBrandingLocalizationId := "organizationalBrandingLocalization-id"
-graphClient.OrganizationById(&organizationId).Branding().LocalizationsById(&organizationalBrandingLocalizationId).Patch(options)
+graphClient.OrganizationById(&organizationId).Branding().LocalizationsById(&organizationalBrandingLocalizationId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 02f4f829f7f2167a60d238012553549dc3fd90d1
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 2bf8a9831a9447b375d229b7c1e98fb240907b22
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411976"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327380"
 ---
 ```go
 
@@ -21,11 +21,8 @@ requestBody.SetTargets( []InvitationParticipantInfo {
 }
 callbackUri := "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 requestBody.SetCallbackUri(&callbackUri)
-options := &msgraphsdk.RedirectRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Redirect(call-id).Post(options)
+graphClient.Communications().CallsById(&callId).Redirect(call-id).Post(requestBody)
 
 
 ```

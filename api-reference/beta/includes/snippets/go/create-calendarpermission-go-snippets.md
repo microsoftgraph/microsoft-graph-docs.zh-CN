@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4dec3ae2fcbc07a03ff93ebc41c770a2a6de2833
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ad900049298e2d6d88c3bae13abf24b18558173c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101527"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328112"
 ---
 ```go
 
@@ -25,11 +25,8 @@ isRemovable := true
 requestBody.SetIsRemovable(&isRemovable)
 role := "read"
 requestBody.SetRole(&role)
-options := &msgraphsdk.CalendarPermissionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Calendar().CalendarPermissions().Post(options)
+result, err := graphClient.UsersById(&userId).Calendar().CalendarPermissions().Post(requestBody)
 
 
 ```

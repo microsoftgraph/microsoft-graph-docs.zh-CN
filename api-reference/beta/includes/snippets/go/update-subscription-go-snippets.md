@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 22cae59585dfcb2d9ffbeefe87b6becc6d7b5831
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 2d05018264e10b1f580cf19273e0b238bed3c78c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394759"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328912"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewSubscription()
 expirationDateTime, err := time.Parse(time.RFC3339, "2016-11-22T18:23:45.9356913Z")
 requestBody.SetExpirationDateTime(&expirationDateTime)
-options := &msgraphsdk.SubscriptionRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 subscriptionId := "subscription-id"
-result, err := graphClient.SubscriptionsById(&subscriptionId).Patch(options)
+graphClient.SubscriptionsById(&subscriptionId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 29df077206bfed303490ef9e2f196ce71231390a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 1cd18208429eff0c2de7d9d4fb247d9bf625f55b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093722"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328007"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.LanguagesRequestBuilderGetQueryParameters{
     Filter: "isEnabled%20eq%20true",
 }
-options := &msgraphsdk.LanguagesRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.LanguagesRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Languages().Get(options)
+result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Languages().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

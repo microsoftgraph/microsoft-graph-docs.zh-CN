@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4be6f3f5f6d1c7b0798a848910e63b64cdfb1934
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8b351ef0ae5eadcc74f77b8d0369704ce63a1a84
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411681"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327469"
 ---
 ```go
 
@@ -21,11 +21,8 @@ isCompliantDeviceAccepted := true
 inboundTrust.SetIsCompliantDeviceAccepted(&isCompliantDeviceAccepted)
 isHybridAzureADJoinedDeviceAccepted := true
 inboundTrust.SetIsHybridAzureADJoinedDeviceAccepted(&isHybridAzureADJoinedDeviceAccepted)
-options := &msgraphsdk.CrossTenantAccessPolicyConfigurationPartnerRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 crossTenantAccessPolicyConfigurationPartnerTenantId := "crossTenantAccessPolicyConfigurationPartner-tenantId"
-result, err := graphClient.Policies().CrossTenantAccessPolicy().PartnersById(&crossTenantAccessPolicyConfigurationPartnerTenantId).Patch(options)
+graphClient.Policies().CrossTenantAccessPolicy().PartnersById(&crossTenantAccessPolicyConfigurationPartnerTenantId).Patch(requestBody)
 
 
 ```

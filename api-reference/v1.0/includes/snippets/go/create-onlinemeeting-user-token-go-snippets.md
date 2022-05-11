@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1ff3c3f2e14635d4c4f47def3659fa8017ce48ab
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b25a652398d4fe3c0bbf27dabaa914dfeaa57987
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089638"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329067"
 ---
 ```go
 
@@ -19,10 +19,7 @@ endDateTime, err := time.Parse(time.RFC3339, "2019-07-12T15:00:34.2464912-07:00"
 requestBody.SetEndDateTime(&endDateTime)
 subject := "User Token Meeting"
 requestBody.SetSubject(&subject)
-options := &msgraphsdk.OnlineMeetingsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().OnlineMeetings().Post(options)
+result, err := graphClient.Me().OnlineMeetings().Post(requestBody)
 
 
 ```

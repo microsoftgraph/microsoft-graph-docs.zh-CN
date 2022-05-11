@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: de8de765fd146c306e982e80ecb192920289ed1a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c149fa92e224d01530e7ff39e533979cdc90ef63
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099442"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326980"
 ---
 ```go
 
@@ -16,10 +16,10 @@ requestParameters := &msgraphsdk.DefinitionsRequestBuilderGetQueryParameters{
     Top: 100,
     Skip: 0,
 }
-options := &msgraphsdk.DefinitionsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.DefinitionsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Get(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

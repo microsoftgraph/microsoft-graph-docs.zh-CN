@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b38f7ca94780725ddb160f1333c5f1ec0d4c4076
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: b0ffa31e932d9b27d53ceced0cc42def62b5e5b7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411817"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326935"
 ---
 ```go
 
@@ -15,12 +15,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCalendarPermission()
 role := "write"
 requestBody.SetRole(&role)
-options := &msgraphsdk.CalendarPermissionRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 userId := "user-id"
 calendarPermissionId := "calendarPermission-id"
-result, err := graphClient.UsersById(&userId).Calendar().CalendarPermissionsById(&calendarPermissionId).Patch(options)
+graphClient.UsersById(&userId).Calendar().CalendarPermissionsById(&calendarPermissionId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 388e9e3fb7fcd3269cf8b9ecc8772d4c82f28b86
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 48af16384b4217342c8ecdc5abefa25dd6b3b295
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094854"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325725"
 ---
 ```go
 
@@ -24,10 +24,7 @@ authenticationConfiguration.SetAdditionalData(map[string]interface{}{
     "pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
     "password": "CertificatePassword",
 }
-options := &msgraphsdk.ApiConnectorsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().ApiConnectors().Post(options)
+result, err := graphClient.Identity().ApiConnectors().Post(requestBody)
 
 
 ```

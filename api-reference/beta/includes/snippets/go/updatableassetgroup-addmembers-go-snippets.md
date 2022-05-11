@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a7c45759e77ac878f06655e7517bd34183c8a60b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 061c092c44e7e2fed9cd974fb2c9bf4b4907688c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412012"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329242"
 ---
 ```go
 
@@ -20,11 +20,8 @@ requestBody.SetAssets( []UpdatableAsset {
         "id": "String (identifier)",
     }
 }
-options := &msgraphsdk.AddMembersRequestBuilderPostOptions{
-    Body: requestBody,
-}
 updatableAssetId := "updatableAsset-id"
-graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).AddMembers(updatableAsset-id).Post(options)
+graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).AddMembers(updatableAsset-id).Post(requestBody)
 
 
 ```

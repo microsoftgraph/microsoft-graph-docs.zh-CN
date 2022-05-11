@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fcc5ce9e3e81318c04389e89317f14993e59805a
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4ea911b22bba5b8f431de2d914e155a60dc9edbd
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412215"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326344"
 ---
 ```go
 
@@ -25,12 +25,9 @@ dueDateTime, err := time.Parse(time.RFC3339, "2021-09-10T00:00:00Z")
 requestBody.SetDueDateTime(&dueDateTime)
 addedStudentAction := "none"
 requestBody.SetAddedStudentAction(&addedStudentAction)
-options := &msgraphsdk.EducationAssignmentRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Patch(options)
+graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0a3c7b33e98f72f5fce5deb18b56b1cc38004bb3
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 685e7ba108e8d1c53e962dd9fe0dbc4d444ffb99
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61288143"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326969"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61288143"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-result, err := graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserAttributeAssignments().Get(nil)
+result, err := graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserAttributeAssignments().Get()
 
 
 ```

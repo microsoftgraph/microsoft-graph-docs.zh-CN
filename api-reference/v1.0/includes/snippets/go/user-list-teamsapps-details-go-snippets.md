@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 808d44d30d2de167599abc5b113a417befea21b0
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 5e940b426ad3585152c91945c9491f732b107cda
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083177"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326720"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.InstalledAppsRequestBuilderGetQueryParameters{
     Expand: "teamsAppDefinition",
 }
-options := &msgraphsdk.InstalledAppsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.InstalledAppsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Teamwork().InstalledApps().Get(options)
+result, err := graphClient.UsersById(&userId).Teamwork().InstalledApps().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

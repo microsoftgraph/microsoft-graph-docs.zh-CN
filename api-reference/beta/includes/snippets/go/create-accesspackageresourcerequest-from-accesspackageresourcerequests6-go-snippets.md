@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9246e00ae1203c0b0b1f1d4017927f12a439a51a
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: dc494a86393f9c8fafec4718f19da09ea1c7faff
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854268"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326791"
 ---
 ```go
 
@@ -41,10 +41,7 @@ accessPackageResource.SetAttributes( []AccessPackageResourceAttribute {
         "isPersistedOnAssignmentRemoval": true,
     }
 }
-options := &msgraphsdk.AccessPackageResourceRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4c7569d83b224b65674e3c753ce093a9e8022a6d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e5f16140f4308814877b2969efca4ee721b603b9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093389"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327418"
 ---
 ```go
 
@@ -20,10 +20,7 @@ displayName := "displayName-value"
 requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault)
-options := &msgraphsdk.TokenLifetimePoliciesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Policies().TokenLifetimePolicies().Post(options)
+result, err := graphClient.Policies().TokenLifetimePolicies().Post(requestBody)
 
 
 ```

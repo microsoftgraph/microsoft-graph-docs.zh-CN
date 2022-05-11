@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: de420629c1f49abd1b37e720354c84fa18f4f6e7
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5073d59667ba0e4714a1fd534f784b9150e1faea
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411708"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329035"
 ---
 ```go
 
@@ -19,11 +19,8 @@ startDateTime, err := time.Parse(time.RFC3339, "2018-10-08T00:00:00.000Z")
 requestBody.SetStartDateTime(&startDateTime)
 endDateTime, err := time.Parse(time.RFC3339, "2018-10-15T00:00:00.000Z")
 requestBody.SetEndDateTime(&endDateTime)
-options := &msgraphsdk.ShareRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Schedule().Share(team-id).Post(options)
+graphClient.TeamsById(&teamId).Schedule().Share(team-id).Post(requestBody)
 
 
 ```

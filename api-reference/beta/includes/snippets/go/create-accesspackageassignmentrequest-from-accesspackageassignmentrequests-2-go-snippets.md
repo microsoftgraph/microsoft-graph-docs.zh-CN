@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c5c6658bc8733f24e1e4f96451e1d052b3f88032
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 44f806830a530cc6bae18e848f141f5090f94ab8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129846"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325793"
 ---
 ```go
 
@@ -35,10 +35,7 @@ requestBody.SetAnswers( []AccessPackageAnswer {
         "value": "Need access to marketing campaign material",
     }
 }
-options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(requestBody)
 
 
 ```

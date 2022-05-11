@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 71268d4e92878c067d966ec6ede00555ecdb3bee
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 65365fed4cbbfa59ba75d5adbab7c63c103d1f38
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412705"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328127"
 ---
 ```go
 
@@ -17,11 +17,8 @@ requestBody.SetPrincipalIds( []String {
     "0aeec2c1-fee7-4e02-b534-6f920d25b300",
     "2d5386a7-732f-44db-9cf8-f82dd2a1c0e0",
 }
-options := &msgraphsdk.UnifiedRoleAssignmentMultipleRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 unifiedRoleAssignmentMultipleId := "unifiedRoleAssignmentMultiple-id"
-result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignmentsById(&unifiedRoleAssignmentMultipleId).Patch(options)
+graphClient.RoleManagement().DeviceManagement().RoleAssignmentsById(&unifiedRoleAssignmentMultipleId).Patch(requestBody)
 
 
 ```

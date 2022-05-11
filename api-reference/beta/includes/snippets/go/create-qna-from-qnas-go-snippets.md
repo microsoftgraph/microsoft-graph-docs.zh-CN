@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 116128852620a2a37ec041695a2988662a329fda
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a0649f60e2dda8ea072e226bd8b03ab0e52ba783
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338260"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327429"
 ---
 ```go
 
@@ -52,10 +52,7 @@ requestBody.SetGroupIds( []String {
 }
 state := "published"
 requestBody.SetState(&state)
-options := &msgraphsdk.QnasRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Search().Qnas().Post(options)
+result, err := graphClient.Search().Qnas().Post(requestBody)
 
 
 ```

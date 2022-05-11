@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 232318b067a05cb978965a5140299ff656c1e372
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 9c6be1c69dfa996b40cab63b478cdab4fa29e00a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412176"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328269"
 ---
 ```go
 
@@ -14,7 +14,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 userId := "user-id"
 calendarPermissionId := "calendarPermission-id"
-result, err := graphClient.UsersById(&userId).Calendar().CalendarPermissionsById(&calendarPermissionId).Delete(nil)
+graphClient.UsersById(&userId).Calendar().CalendarPermissionsById(&calendarPermissionId).Delete()
 
 
 ```

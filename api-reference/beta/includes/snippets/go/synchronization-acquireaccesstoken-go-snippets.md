@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8bb80a8eddf1dae7c59bf0c3d92bcbb7b8a5ac3f
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3303096c72dd45c4b129d2d22774bd8ee8d32b5a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412747"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328795"
 ---
 ```go
 
@@ -19,11 +19,8 @@ requestBody.SetCredentials( []SynchronizationSecretKeyStringValuePair {
         "@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair",
     }
 }
-options := &msgraphsdk.AcquireAccessTokenRequestBuilderPostOptions{
-    Body: requestBody,
-}
 applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).Synchronization().AcquireAccessToken(application-id).Post(options)
+graphClient.ApplicationsById(&applicationId).Synchronization().AcquireAccessToken(application-id).Post(requestBody)
 
 
 ```

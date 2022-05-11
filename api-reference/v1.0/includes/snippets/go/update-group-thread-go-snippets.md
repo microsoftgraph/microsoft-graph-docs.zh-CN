@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c7befd61f6c4d327a264c1609c9a1f49d88918a7
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 012ce7a394c2aa1e02ed02e69ffa8639b328b527
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412120"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326741"
 ---
 ```go
 
@@ -20,12 +20,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "reminderMinutesBeforeStart": ,
     "isReminderOn": true,
 }
-options := &msgraphsdk.ConversationThreadRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
-result, err := graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Patch(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Patch(requestBody)
 
 
 ```

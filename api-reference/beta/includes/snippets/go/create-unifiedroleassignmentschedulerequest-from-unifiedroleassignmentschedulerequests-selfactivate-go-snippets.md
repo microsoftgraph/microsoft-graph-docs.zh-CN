@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 44467f25c537ed60792dc4b1b8a9a2d1324d31ce
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ab07da1fed6e37f6e710a7c0bc914058884886aa
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084566"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326012"
 ---
 ```go
 
@@ -39,10 +39,7 @@ ticketNumber := "CONTOSO:Normal-67890"
 ticketInfo.SetTicketNumber(&ticketNumber)
 ticketSystem := "MS Project"
 ticketInfo.SetTicketSystem(&ticketSystem)
-options := &msgraphsdk.RoleAssignmentScheduleRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(options)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(requestBody)
 
 
 ```

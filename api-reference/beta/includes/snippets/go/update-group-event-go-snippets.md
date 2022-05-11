@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8d214d57e573dfe71deeb36807923f885195287e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 98556e2c6137f9fa44a04b25dbde6a871031d54b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412252"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328243"
 ---
 ```go
 
@@ -29,12 +29,9 @@ reminderMinutesBeforeStart := int32(99)
 requestBody.SetReminderMinutesBeforeStart(&reminderMinutesBeforeStart)
 isReminderOn := true
 requestBody.SetIsReminderOn(&isReminderOn)
-options := &msgraphsdk.EventRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 groupId := "group-id"
 eventId := "event-id"
-result, err := graphClient.GroupsById(&groupId).EventsById(&eventId).Patch(options)
+graphClient.GroupsById(&groupId).EventsById(&eventId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a229a896d191eddf295d3a29c24eed53f000cf7f
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 7e65f7b1a9845f3ea0561d77e53bd3f3be555809
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099401"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329006"
 ---
 ```go
 
@@ -23,10 +23,7 @@ number := "USPTO-3954432633"
 requestBody.SetNumber(&number)
 webUrl := "https://patents.gov/3954432633"
 requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.PatentsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Patents().Post(options)
+result, err := graphClient.Me().Profile().Patents().Post(requestBody)
 
 
 ```
