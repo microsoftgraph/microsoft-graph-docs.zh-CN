@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 20261716516e01ff52f017344336ccdb94496573
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 985d992b0babae18bb7d8ed9e80d5e00be3a69b2
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411742"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327625"
 ---
 ```go
 
@@ -16,10 +16,7 @@ requestBody := msgraphsdk.NewServicePrincipalIdsRequestBody()
 requestBody.SetServicePrincipalIds( []String {
     "9089a539-a539-9089-39a5-899039a58990",
 }
-options := &msgraphsdk.DismissRequestBuilderPostOptions{
-    Body: requestBody,
-}
-graphClient.IdentityProtection().RiskyServicePrincipals().Dismiss().Post(options)
+graphClient.IdentityProtection().RiskyServicePrincipals().Dismiss().Post(requestBody)
 
 
 ```

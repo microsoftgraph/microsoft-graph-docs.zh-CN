@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fd929e8707252cd8620075f87aeaed27d051ed1a
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8cf8626f206fc62a0911da457b5eec5370107a57
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412665"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328606"
 ---
 ```go
 
@@ -17,12 +17,9 @@ issuingAuthority := "International Academy of Marketing Excellence"
 requestBody.SetIssuingAuthority(&issuingAuthority)
 issuingCompany := "International Academy of Marketing Excellence"
 requestBody.SetIssuingCompany(&issuingCompany)
-options := &msgraphsdk.PersonCertificationRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 userId := "user-id"
 personCertificationId := "personCertification-id"
-result, err := graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Patch(options)
+graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Patch(requestBody)
 
 
 ```

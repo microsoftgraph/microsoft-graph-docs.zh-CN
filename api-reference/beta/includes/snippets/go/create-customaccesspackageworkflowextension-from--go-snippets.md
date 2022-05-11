@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c5eac417dae9a56e68cc55b97568cc52b4256030
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 75fa196626b259963f2ed15fa781f5be668153bc
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338196"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326194"
 ---
 ```go
 
@@ -31,11 +31,8 @@ authenticationConfiguration.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
     "resourceId": "f604bd15-f785-4309-ad7c-6fad18ddb6cb",
 }
-options := &msgraphsdk.CustomAccessPackageWorkflowExtensionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 accessPackageCatalogId := "accessPackageCatalog-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).CustomAccessPackageWorkflowExtensions().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).CustomAccessPackageWorkflowExtensions().Post(requestBody)
 
 
 ```

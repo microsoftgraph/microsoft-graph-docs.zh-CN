@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fbbf87da0b37f39da1a840332b8545da29034007
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: eab13954a1b3cd373252e1189754f85d04cda492
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412347"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329124"
 ---
 ```go
 
@@ -20,13 +20,12 @@ criteria.SetResetScope(&resetScope)
 headers := map[string]string{
     "Authorization": "Bearer <token>"
 }
-options := &msgraphsdk.RestartRequestBuilderPostOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.RestartRequestBuilderPostRequestConfiguration{
+    Headers: headers,
 }
 servicePrincipalId := "servicePrincipal-id"
 synchronizationJobId := "synchronizationJob-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Restart(servicePrincipal-id, synchronizationJob-id).Post(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Restart(servicePrincipal-id, synchronizationJob-id).PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

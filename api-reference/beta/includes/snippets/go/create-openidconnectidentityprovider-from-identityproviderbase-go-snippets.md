@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5d8b9fc9e863ed7a7b47bc90a4a5b62ba66ed59b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 17e225c207dbf7c809f948a9c29cd8df32195b47
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61096453"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329182"
 ---
 ```go
 
@@ -25,10 +25,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "responseType": "code",
     "scope": "openid",
 }
-options := &msgraphsdk.IdentityProvidersRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().IdentityProviders().Post(options)
+result, err := graphClient.Identity().IdentityProviders().Post(requestBody)
 
 
 ```

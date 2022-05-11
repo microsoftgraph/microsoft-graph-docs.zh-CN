@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d6c77c6f4599b54daf0ecbddc9c1ccfcbcaeeb8f
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c0fd3d382a70d1810b90face5897db33a621ffec
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412441"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326424"
 ---
 ```go
 
@@ -19,11 +19,8 @@ createdBy := msgraphsdk.NewAppIdentity()
 requestBody.SetCreatedBy(createdBy)
 displayName := "Requesting App Display Name"
 createdBy.SetDisplayName(&displayName)
-options := &msgraphsdk.PrintTaskDefinitionRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 printTaskDefinitionId := "printTaskDefinition-id"
-result, err := graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).Patch(options)
+graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).Patch(requestBody)
 
 
 ```

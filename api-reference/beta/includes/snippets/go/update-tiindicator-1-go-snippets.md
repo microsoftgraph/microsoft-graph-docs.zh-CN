@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5ab8a2b00444b29f62f00a37392efa699417656e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 867bf7023d5640a261b070ec16a298465fe112fa
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411798"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65329247"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTiIndicator()
 description := "description-updated"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.TiIndicatorRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 tiIndicatorId := "tiIndicator-id"
-result, err := graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
+graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6fd1dd2c7aeea7a09bcd9447f9691b4c9440a131
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 1d4291c397bea3c51d87aa947f833221d2feb5e9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090672"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327657"
 ---
 ```go
 
@@ -17,10 +17,7 @@ phoneNumber := "+1 2065555555"
 requestBody.SetPhoneNumber(&phoneNumber)
 phoneType := "mobile"
 requestBody.SetPhoneType(&phoneType)
-options := &msgraphsdk.PhoneMethodsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Authentication().PhoneMethods().Post(options)
+result, err := graphClient.Me().Authentication().PhoneMethods().Post(requestBody)
 
 
 ```
