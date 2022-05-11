@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d785288ac48d4ae0300c4ed42da2ac28266abaaf
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 32515a9c99bc7da3132a15223be6323870d69924
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411822"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326477"
 ---
 ```go
 
@@ -16,12 +16,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}",
 }
-options := &msgraphsdk.IdentityProviderRequestBuilderPostOptions{
-    Body: requestBody,
-}
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
 identityProviderId := "identityProvider-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).IdentityProvidersById(&identityProviderId).Post(options)
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).IdentityProvidersById(&identityProviderId).Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f2217a8b5bde85a1686ea01805695d60b22fd7b7
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 586d33702ca33413a2392e3dddd39578a2cab356
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61086112"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327339"
 ---
 ```go
 
@@ -15,12 +15,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ChatRequestBuilderGetQueryParameters{
     Top: 2,
 }
-options := &msgraphsdk.ChatRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.ChatRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 userId := "user-id"
 chatId := "chat-id"
-result, err := graphClient.UsersById(&userId).ChatsById(&chatId).Get(options)
+result, err := graphClient.UsersById(&userId).ChatsById(&chatId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

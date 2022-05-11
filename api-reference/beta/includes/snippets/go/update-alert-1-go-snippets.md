@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8abb22c39757d15bd73e486812c9d684cb382486
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5342089a6e893af445b91aa5ff21ba5217c0dd9d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411849"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326113"
 ---
 ```go
 
@@ -33,11 +33,8 @@ provider := "String"
 vendorInformation.SetProvider(&provider)
 vendor := "String"
 vendorInformation.SetVendor(&vendor)
-options := &msgraphsdk.AlertRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 alertId := "alert-id"
-result, err := graphClient.Security().AlertsById(&alertId).Patch(options)
+graphClient.Security().AlertsById(&alertId).Patch(requestBody)
 
 
 ```

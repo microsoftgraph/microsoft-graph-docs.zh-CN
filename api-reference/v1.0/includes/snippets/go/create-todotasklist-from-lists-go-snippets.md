@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bb170f9460877d165b5e45131ac084ccd861de31
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b4a3c9778b3c93458b8708c0881155c94ccd3323
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61085047"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328874"
 ---
 ```go
 
@@ -15,10 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTodoTaskList()
 displayName := "Travel items"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ListsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Todo().Lists().Post(options)
+result, err := graphClient.Me().Todo().Lists().Post(requestBody)
 
 
 ```

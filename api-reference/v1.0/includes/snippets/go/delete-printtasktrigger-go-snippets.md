@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 02d1bf603b55a35343a33954b27ac86dc73800ba
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 759e5f8ad5e95ba3c9703c84e8680da69f843835
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411622"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328529"
 ---
 ```go
 
@@ -14,7 +14,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 printerId := "printer-id"
 printTaskTriggerId := "printTaskTrigger-id"
-result, err := graphClient.Print().PrintersById(&printerId).TaskTriggersById(&printTaskTriggerId).Delete(nil)
+graphClient.Print().PrintersById(&printerId).TaskTriggersById(&printTaskTriggerId).Delete()
 
 
 ```

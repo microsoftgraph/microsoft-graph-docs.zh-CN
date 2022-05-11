@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b8c88c57858edcefd5ff2ce6b4c7907b696e909a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 63cb5efff3f8600f71ab363395c5cfa74c23ffd3
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137647"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326587"
 ---
 ```go
 
@@ -25,11 +25,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "customQuestions":  []Object {
     }
 }
-options := &msgraphsdk.RegistrationRequestBuilderPostOptions{
-    Body: requestBody,
-}
 onlineMeetingId := "onlineMeeting-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Post(options)
+graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Post(requestBody)
 
 
 ```

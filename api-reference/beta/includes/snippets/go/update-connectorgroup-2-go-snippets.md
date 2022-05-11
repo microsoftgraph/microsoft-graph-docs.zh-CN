@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 10b82455b8e608becb62919127d3ed85a2f11ace
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 01617a047e1d3cb083b588d5e4fbc0b90e552b50
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411772"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328447"
 ---
 ```go
 
@@ -17,12 +17,9 @@ name := "name-value"
 requestBody.SetName(&name)
 region := "region-value"
 requestBody.SetRegion(&region)
-options := &msgraphsdk.ConnectorGroupRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 connectorGroupId := "connectorGroup-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorGroupsById(&connectorGroupId).Patch(options)
+graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorGroupsById(&connectorGroupId).Patch(requestBody)
 
 
 ```

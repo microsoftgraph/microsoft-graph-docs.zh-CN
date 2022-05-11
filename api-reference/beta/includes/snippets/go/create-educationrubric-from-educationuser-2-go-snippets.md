@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cafae7414c3b086ad4710f9a4724146fafdc10b7
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 683284b2b0eede66510d1424aaaebf482b6dba77
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61104147"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327124"
 ---
 ```go
 
@@ -50,10 +50,7 @@ requestBody.SetGrading(grading)
 grading.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
 }
-options := &msgraphsdk.RubricsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Education().Me().Rubrics().Post(options)
+result, err := graphClient.Education().Me().Rubrics().Post(requestBody)
 
 
 ```

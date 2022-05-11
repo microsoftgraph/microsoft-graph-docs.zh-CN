@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f3e81342538d57fd85794faf5743422bdbcbeb9e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 535c3619e33c37b532e8713497e3d9298cfb0401
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087407"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326543"
 ---
 ```go
 
@@ -21,10 +21,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "reviewers":  []Object {
     }
 }
-options := &msgraphsdk.AdminConsentRequestPolicyRequestBuilderPutOptions{
-    Body: requestBody,
-}
-graphClient.Policies().AdminConsentRequestPolicy().Put(options)
+graphClient.Policies().AdminConsentRequestPolicy().Put(requestBody)
 
 
 ```

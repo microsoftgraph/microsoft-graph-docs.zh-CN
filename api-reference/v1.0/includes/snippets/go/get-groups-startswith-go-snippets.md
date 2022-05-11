@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ac71f981de7b05359f891d1fa6b0a1b1b01ed833
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 7c7af4c405cab86404b80c0c29fd7abe10f7091c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65209985"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327077"
 ---
 ```go
 
@@ -21,11 +21,11 @@ requestParameters := &msgraphsdk.GroupsRequestBuilderGetQueryParameters{
 headers := map[string]string{
     "ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.GroupsRequestBuilderGetOptions{
-    Q: requestParameters,
-    H: headers,
+options := &msgraphsdk.GroupsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
+    Headers: headers,
 }
-result, err := graphClient.Groups().Get(options)
+result, err := graphClient.Groups().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

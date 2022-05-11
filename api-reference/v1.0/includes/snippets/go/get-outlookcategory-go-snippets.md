@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 502ecebc0da79d18d97e4ce7bc5617730d4e77b6
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: cf1083a27199a643b66ff7d66b248835b24877a8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61288898"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327508"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61288898"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 outlookCategoryId := "outlookCategory-id"
-result, err := graphClient.Me().Outlook().MasterCategoriesById(&outlookCategoryId).Get(nil)
+result, err := graphClient.Me().Outlook().MasterCategoriesById(&outlookCategoryId).Get()
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c7f622b4101f8cd55623501ef68e48b8a2c72484
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: d09c41aca9bf0b4c36f3f7751526c2a7cc0d9faf
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411653"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326590"
 ---
 ```go
 
@@ -15,12 +15,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewItemPhone()
 type := "other"
 requestBody.SetType(&type)
-options := &msgraphsdk.ItemPhoneRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 userId := "user-id"
 itemPhoneId := "itemPhone-id"
-result, err := graphClient.UsersById(&userId).Profile().PhonesById(&itemPhoneId).Patch(options)
+graphClient.UsersById(&userId).Profile().PhonesById(&itemPhoneId).Patch(requestBody)
 
 
 ```

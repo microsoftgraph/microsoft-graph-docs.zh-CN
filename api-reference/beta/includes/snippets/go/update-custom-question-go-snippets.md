@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bf8bfb9db2896785db5622b273a33f7ee7e62488
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: ab90e7a188b88f907438fbbfa9b95c326e6d1b60
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412369"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328707"
 ---
 ```go
 
@@ -22,12 +22,9 @@ requestBody.SetAnswerOptions( []String {
     "Data scientist",
     "Other",
 }
-options := &msgraphsdk.MeetingRegistrationQuestionRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 onlineMeetingId := "onlineMeeting-id"
 meetingRegistrationQuestionId := "meetingRegistrationQuestion-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().CustomQuestionsById(&meetingRegistrationQuestionId).Patch(options)
+graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().CustomQuestionsById(&meetingRegistrationQuestionId).Patch(requestBody)
 
 
 ```

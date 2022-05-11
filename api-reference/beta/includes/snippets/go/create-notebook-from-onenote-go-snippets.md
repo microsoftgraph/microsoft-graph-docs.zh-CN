@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: eb9ab64f5ce484923e96c5e9ca220e900e2a218b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 55a515b64e2943a31c5afb2690e7107b15df84a9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098283"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327529"
 ---
 ```go
 
@@ -15,10 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewNotebook()
 displayName := "My Private notebook"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.NotebooksRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Onenote().Notebooks().Post(options)
+result, err := graphClient.Me().Onenote().Notebooks().Post(requestBody)
 
 
 ```

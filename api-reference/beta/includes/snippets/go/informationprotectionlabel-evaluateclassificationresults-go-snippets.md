@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 08c85b1e4314753d25080df95ba2abb0e4cb03e4
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ca161f9a207a7bfe629420891a1e2e698dd86951
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61103516"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328284"
 ---
 ```go
 
@@ -36,11 +36,10 @@ requestBody.SetClassificationResults( []ClassificationResult {
 headers := map[string]string{
     "User-Agent": "ContosoLOBApp/1.0"
 }
-options := &msgraphsdk.EvaluateClassificationResultsRequestBuilderPostOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.EvaluateClassificationResultsRequestBuilderPostRequestConfiguration{
+    Headers: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().Post(options)
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

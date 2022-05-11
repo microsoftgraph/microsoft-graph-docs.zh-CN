@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 976f27acd63e5077913d72105adab118557b1dc8
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a7cb4e7f7a056616a4ac57f96b2bf6b7c02bbbca
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412727"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327219"
 ---
 ```go
 
@@ -31,11 +31,8 @@ requestBody.SetSecurityComplianceNotificationPhones( []String {
 requestBody.SetTechnicalNotificationMails( []String {
     "tech@contoso.com",
 }
-options := &msgraphsdk.OrganizationRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Patch(options)
+graphClient.OrganizationById(&organizationId).Patch(requestBody)
 
 
 ```

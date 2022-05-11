@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fa975ff140b654b20aef43cc94261386be06dd9f
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5e3528e84124a8a73167e6301cad738eb0efce08
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411995"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328051"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
     "Prefer": "odata.maxpagesize=2"
 }
-options := &msgraphsdk.DeltaRequestBuilderGetOptions{
-    H: headers,
+options := &msgraphsdk.DeltaRequestBuilderGetRequestConfiguration{
+    Headers: headers,
 }
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Delta()(mailFolder-id).Get(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Delta()(mailFolder-id).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

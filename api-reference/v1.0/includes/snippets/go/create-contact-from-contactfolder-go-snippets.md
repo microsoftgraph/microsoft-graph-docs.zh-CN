@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e960e5afde70867c1a3ee1dcdb0dd823a6c79cad
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 049a7431a0786d955476a2df8e60efe6646c9d48
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61082803"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328346"
 ---
 ```go
 
@@ -25,11 +25,8 @@ givenName := "givenName-value"
 requestBody.SetGivenName(&givenName)
 initials := "initials-value"
 requestBody.SetInitials(&initials)
-options := &msgraphsdk.ContactsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 contactFolderId := "contactFolder-id"
-result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Contacts().Post(options)
+result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Contacts().Post(requestBody)
 
 
 ```

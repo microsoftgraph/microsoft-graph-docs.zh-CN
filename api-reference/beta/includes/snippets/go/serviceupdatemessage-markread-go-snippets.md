@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ea02d0eb9e7a8459cb30ef72005b9be33cbd2d84
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 89202cf9b6cf6337da280eae57e1b693251ed188
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393730"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326871"
 ---
 ```go
 
@@ -17,10 +17,7 @@ requestBody.SetMessageIds( []String {
     "MC172851",
     "MC167983",
 }
-options := &msgraphsdk.MarkReadRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkRead().Post(options)
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkRead().Post(requestBody)
 
 
 ```

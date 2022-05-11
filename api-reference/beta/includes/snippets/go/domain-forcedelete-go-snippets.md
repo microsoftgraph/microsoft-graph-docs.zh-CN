@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cc38282f06241911952120afc7e0a06040ad482a
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 77b48f09cc249e23cd2d148adeac56205c352433
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412164"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327911"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewDisableUserAccountsRequestBody()
 disableUserAccounts := true
 requestBody.SetDisableUserAccounts(&disableUserAccounts)
-options := &msgraphsdk.ForceDeleteRequestBuilderPostOptions{
-    Body: requestBody,
-}
 domainId := "domain-id"
-graphClient.DomainsById(&domainId).ForceDelete(domain-id).Post(options)
+graphClient.DomainsById(&domainId).ForceDelete(domain-id).Post(requestBody)
 
 
 ```

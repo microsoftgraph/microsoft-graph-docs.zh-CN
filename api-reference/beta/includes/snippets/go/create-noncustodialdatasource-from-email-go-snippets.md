@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 55b8eba397f0c4a2ce062818c51303a35351ba23
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: cae8b943d96c7f76c5586a34151e284292a3368a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61102184"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327193"
 ---
 ```go
 
@@ -21,11 +21,8 @@ dataSource.SetAdditionalData(map[string]interface{}{
     "@odata.type": "microsoft.graph.ediscovery.userSource",
     "email": "adelev@contoso.com",
 }
-options := &msgraphsdk.NoncustodialDataSourcesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 caseId := "case-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).NoncustodialDataSources().Post(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).NoncustodialDataSources().Post(requestBody)
 
 
 ```

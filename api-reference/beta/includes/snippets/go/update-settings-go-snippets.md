@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8eef609b58426f865538b5d04fc03aaac58d8597
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: ef45868c9c6e6fe0ed58dffe2b09e0cfd2272b7c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411648"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328743"
 ---
 ```go
 
@@ -39,11 +39,8 @@ isEnabled := true
 ocr.SetIsEnabled(&isEnabled)
 maxImageSize := int32(12000)
 ocr.SetMaxImageSize(&maxImageSize)
-options := &msgraphsdk.SettingsRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 caseId := "case-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).Settings().Patch(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).Settings().Patch(requestBody)
 
 
 ```

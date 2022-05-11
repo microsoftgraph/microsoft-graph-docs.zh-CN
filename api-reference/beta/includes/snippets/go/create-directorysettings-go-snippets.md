@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9bf8ae0a81861dfe68abe4126c0528f02ff90332
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 6b4979851b10031ece59b400cdfa9f837bade3d3
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395704"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327018"
 ---
 ```go
 
@@ -37,10 +37,7 @@ requestBody.SetValues( []SettingValue {
         "value": "[Contoso-][GroupName]",
     }
 }
-options := &msgraphsdk.SettingsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Settings().Post(options)
+result, err := graphClient.Settings().Post(requestBody)
 
 
 ```

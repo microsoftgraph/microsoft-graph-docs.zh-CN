@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a4f0114f34575e740bfd1c63944ba0b30b0c7c23
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 2f8f659c855de5d6eb8288673433935d7a74b7e5
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411999"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328676"
 ---
 ```go
 
@@ -20,11 +20,8 @@ authenticationConfiguration.SetAdditionalData(map[string]interface{}{
     "pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
     "password": "secret",
 }
-options := &msgraphsdk.IdentityApiConnectorRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 identityApiConnectorId := "identityApiConnector-id"
-result, err := graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).Patch(options)
+graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2a8c968514e547ee94a2f1cb89bb488c1d3601ae
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e4faebf1a10278a159bb522cd3a3fa2cec99c0d9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411940"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326963"
 ---
 ```go
 
@@ -16,14 +16,11 @@ requestBody := msgraphsdk.NewEducationOutcome()
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.educationPointsOutcome",
 }
-options := &msgraphsdk.EducationOutcomeRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
 educationSubmissionId := "educationSubmission-id"
 educationOutcomeId := "educationOutcome-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).OutcomesById(&educationOutcomeId).Patch(options)
+graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).OutcomesById(&educationOutcomeId).Patch(requestBody)
 
 
 ```

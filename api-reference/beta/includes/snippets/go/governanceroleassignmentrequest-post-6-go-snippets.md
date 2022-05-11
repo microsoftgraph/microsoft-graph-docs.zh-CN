@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ab4dd8e7a696ca0dd2d5454083a126d97d203180
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 4593f48e02fbb331a11bd6d4c1647466ffa36a9a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61088934"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328725"
 ---
 ```go
 
@@ -33,11 +33,8 @@ startDateTime, err := time.Parse(time.RFC3339, "2018-05-12T23:53:55.327Z")
 schedule.SetStartDateTime(&startDateTime)
 endDateTime, err := time.Parse(time.RFC3339, "2018-08-10T23:53:55.327Z")
 schedule.SetEndDateTime(&endDateTime)
-options := &msgraphsdk.RoleAssignmentRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 privilegedAccessId := "privilegedAccess-id"
-result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(options)
+result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(requestBody)
 
 
 ```

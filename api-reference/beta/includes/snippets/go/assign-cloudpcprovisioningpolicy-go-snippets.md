@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e15f217999e2592cdd5ce2b887f1bc7fe215bae5
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: d3affc6771fc85a6a63fd93d40a36aba90f36b5f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412389"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327650"
 ---
 ```go
 
@@ -22,11 +22,8 @@ requestBody.SetAssignments( []CloudPcProvisioningPolicyAssignment {
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyAssignment",
 }
-options := &msgraphsdk.AssignRequestBuilderPostOptions{
-    Body: requestBody,
-}
 cloudPcProvisioningPolicyId := "cloudPcProvisioningPolicy-id"
-graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).Assign(cloudPcProvisioningPolicy-id).Post(options)
+graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).Assign(cloudPcProvisioningPolicy-id).Post(requestBody)
 
 
 ```

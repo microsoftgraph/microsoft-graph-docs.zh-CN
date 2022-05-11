@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c634b3f7fac78f6c1e52cbceb994552e67d183d6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7eb42ab93af6963499d5bc1ba2a99eabfb6f5b29
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104941"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328702"
 ---
 ```go
 
@@ -32,12 +32,9 @@ contentType := "html"
 body.SetContentType(&contentType)
 content := "Hello World"
 body.SetContent(&content)
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(requestBody)
 
 
 ```

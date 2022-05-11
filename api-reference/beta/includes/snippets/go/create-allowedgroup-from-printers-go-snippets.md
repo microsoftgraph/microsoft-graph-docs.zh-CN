@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9e6914ff9bd768893a7b0ca776320a4d9ef2911b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3ea8d157734aca34682115652762241d7a8b28be
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411647"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327832"
 ---
 ```go
 
@@ -16,12 +16,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.id": "https://graph.microsoft.com/beta/groups/{id}",
 }
-options := &msgraphsdk.GroupRequestBuilderPostOptions{
-    Body: requestBody,
-}
 printerShareId := "printerShare-id"
 groupId := "group-id"
-graphClient.Print().SharesById(&printerShareId).AllowedGroupsById(&groupId).Post(options)
+graphClient.Print().SharesById(&printerShareId).AllowedGroupsById(&groupId).Post(requestBody)
 
 
 ```

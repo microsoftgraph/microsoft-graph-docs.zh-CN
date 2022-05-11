@@ -1,26 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bf57577c1ab275ca089a85d300cb30a591b2cc8311a4b1856cc016f4f5770a29
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f93b5c345969a2dc7dea0264b5b77c8a2c789f8b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56904107"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327514"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/organization"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/organization/84841066-274d-4ec0-a5c1-276be684bdd3"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        NSError *jsonError = nil;
-        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphOrganization *organization = [[MSGraphOrganization alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphOrganization *organization = [[MSGraphOrganization alloc] initWithData:data error:&nserror];
 
 }];
 

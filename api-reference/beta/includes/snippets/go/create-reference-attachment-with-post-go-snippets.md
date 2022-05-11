@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d221529ef44938dc988687692975748f57c4e3a6
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 68abcd3e6cc41a2e8eab16c9df027d7636dd3f1d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411650"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328602"
 ---
 ```go
 
@@ -32,12 +32,9 @@ post.SetAttachments( []Attachment {
         "isFolder": "True",
     }
 }
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-    Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply(group-id, conversationThread-id).Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply(group-id, conversationThread-id).Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c057034836c8fee5d013aab854b5a6ff0940ea3b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 043836f99bea54edd931c15470a3e8a87b4f0049
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089299"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326234"
 ---
 ```go
 
@@ -19,12 +19,12 @@ requestParameters := &msgraphsdk.CalendarViewRequestBuilderGetQueryParameters{
 headers := map[string]string{
     "Prefer": "outlook.body-content-type="text""
 }
-options := &msgraphsdk.CalendarViewRequestBuilderGetOptions{
-    Q: requestParameters,
-    H: headers,
+options := &msgraphsdk.CalendarViewRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
+    Headers: headers,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).CalendarView().Get(options)
+result, err := graphClient.GroupsById(&groupId).CalendarView().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

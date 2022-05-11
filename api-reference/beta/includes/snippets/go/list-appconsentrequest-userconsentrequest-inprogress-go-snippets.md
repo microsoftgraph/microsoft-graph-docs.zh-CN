@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 348c1e7f1ce445ac62629bff241dd969731910a5
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f451a658fcff9d714c7d32960c336dadfe10c044
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093557"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326104"
 ---
 ```go
 
@@ -15,10 +15,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AppConsentRequestsRequestBuilderGetQueryParameters{
     Filter: "userConsentRequests/any%20(u:u/status%20eq%20'InProgress')",
 }
-options := &msgraphsdk.AppConsentRequestsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.AppConsentRequestsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequests().Get(options)
+result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequests().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

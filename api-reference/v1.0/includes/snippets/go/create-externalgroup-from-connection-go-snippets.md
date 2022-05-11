@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 08afe4c472f21fc48769376686f9acb096c89ccf
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 962d07a2acf65f6bd21f4c93b56b54d644d79d93
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393239"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326336"
 ---
 ```go
 
@@ -19,11 +19,8 @@ displayName := "Contoso Marketing"
 requestBody.SetDisplayName(&displayName)
 description := "The product marketing team"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.GroupsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 externalConnectionId := "externalConnection-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).Groups().Post(options)
+result, err := graphClient.External().ConnectionsById(&externalConnectionId).Groups().Post(requestBody)
 
 
 ```

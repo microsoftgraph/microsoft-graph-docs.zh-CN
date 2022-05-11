@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a8e3383d076ef3b96df7cd9677022ceb4e316597
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 59e16e9505feb5e61cc968e7ff363b5eed75c011
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411904"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328087"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "63411904"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Delete(nil)
+graphClient.Me().MailFoldersById(&mailFolderId).Delete()
 
 
 ```

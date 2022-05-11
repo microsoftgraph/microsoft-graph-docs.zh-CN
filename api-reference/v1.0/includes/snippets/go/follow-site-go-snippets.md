@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b3290434ef581f6d229c0f9c4176cbdd7225b019
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 321375271439c13c193e0c90a107138ed44dfede
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397013"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325978"
 ---
 ```go
 
@@ -17,12 +17,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "value":  []Object {
     }
 }
-options := &msgraphsdk.SiteRequestBuilderPostOptions{
-    Body: requestBody,
-}
 userId := "user-id"
 siteId := "site-id"
-graphClient.UsersById(&userId).FollowedSitesById(&siteId).Post(options)
+graphClient.UsersById(&userId).FollowedSitesById(&siteId).Post(requestBody)
 
 
 ```

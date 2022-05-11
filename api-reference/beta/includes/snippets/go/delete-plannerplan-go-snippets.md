@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 87fc91e387ce332b105b3ad735e8122b82208dd6
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 698d6e3e2e722a728162d8c91092cf5637595d4c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412663"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326252"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
     "If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
 }
-options := &msgraphsdk.PlannerPlanRequestBuilderDeleteOptions{
-    H: headers,
+options := &msgraphsdk.PlannerPlanRequestBuilderDeleteRequestConfiguration{
+    Headers: headers,
 }
 plannerPlanId := "plannerPlan-id"
-result, err := graphClient.Planner().PlansById(&plannerPlanId).Delete(options)
+graphClient.Planner().PlansById(&plannerPlanId).DeleteWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

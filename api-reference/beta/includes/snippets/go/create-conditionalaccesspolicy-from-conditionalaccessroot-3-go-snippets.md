@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4655873463dc150e307f091197af8e920fa0c605
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4fb3703abaa908d4f5a55cc410fa612f2cb801f3
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135626"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327375"
 ---
 ```go
 
@@ -126,10 +126,7 @@ type := "hours"
 signInFrequency.SetType(&type)
 isEnabled := true
 signInFrequency.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.PoliciesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(options)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e6d47287cada29e6eb585e162dd0a239f0d6c2ce
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4ce75d9e2c4a468e4463c8094f44a2813f36e52c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411781"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328171"
 ---
 ```go
 
@@ -27,11 +27,8 @@ sendConfirmationsToOwner := true
 schedulingPolicy.SetSendConfirmationsToOwner(&sendConfirmationsToOwner)
 allowStaffSelection := true
 schedulingPolicy.SetAllowStaffSelection(&allowStaffSelection)
-options := &msgraphsdk.BookingBusinessRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Patch(options)
+graphClient.BookingBusinessesById(&bookingBusinessId).Patch(requestBody)
 
 
 ```

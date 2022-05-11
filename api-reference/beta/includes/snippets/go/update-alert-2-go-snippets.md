@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 89dc4365e2ec1a63e85edd2368c6ee35ddff3106
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 0533ae88b9ab12889817634ed02bb4b86e24bc3f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411851"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326114"
 ---
 ```go
 
@@ -36,12 +36,11 @@ vendorInformation.SetVendor(&vendor)
 headers := map[string]string{
     "Prefer": "return=representation"
 }
-options := &msgraphsdk.AlertRequestBuilderPatchOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.AlertRequestBuilderPatchRequestConfiguration{
+    Headers: headers,
 }
 alertId := "alert-id"
-result, err := graphClient.Security().AlertsById(&alertId).Patch(options)
+graphClient.Security().AlertsById(&alertId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

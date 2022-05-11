@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2cb61f8b4cca2245e9a749f5c6fdc1cc980f1114
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b418747c6121d762ba7ea3c0759031f4c5728c15
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087039"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327861"
 ---
 ```go
 
@@ -21,10 +21,7 @@ description := "Medium protection level defined for Contoso policy"
 requestBody.SetDescription(&description)
 isAvailable := true
 requestBody.SetIsAvailable(&isAvailable)
-options := &msgraphsdk.AuthenticationContextClassReferencesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferences().Post(options)
+result, err := graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferences().Post(requestBody)
 
 
 ```

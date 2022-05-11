@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 81b1fcaa3f85d4f65186c04411ab708d2a9e5e43
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 1120b08807536a6daadfd7cb30b7bdc65c35602c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61104214"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328211"
 ---
 ```go
 
@@ -15,12 +15,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.SubmissionsRequestBuilderGetQueryParameters{
     Expand: "outcomes",
 }
-options := &msgraphsdk.SubmissionsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.SubmissionsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Submissions().Get(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Submissions().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

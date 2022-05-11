@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4193a0c52ad2480c80c11450e45d7ebf373c5896
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7df5c50eef69c996b9745391aba4a13294451a1a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412515"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326831"
 ---
 ```go
 
@@ -35,13 +35,10 @@ post.SetExtensions( []Extension {
         }
     }
 }
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-    Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Reply(group-id, conversationThread-id, post-id).Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Reply(group-id, conversationThread-id, post-id).Post(requestBody)
 
 
 ```

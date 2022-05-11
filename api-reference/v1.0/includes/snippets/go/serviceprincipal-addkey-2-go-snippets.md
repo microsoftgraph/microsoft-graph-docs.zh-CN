@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 695a09d16f185dd75a244427f7f9c71b1a52a101
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5669b1899fa03e9f2c4ea59a1b288010c94621b8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411706"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327764"
 ---
 ```go
 
@@ -27,11 +27,8 @@ secretText := "MKTr0w1..."
 passwordCredential.SetSecretText(&secretText)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof)
-options := &msgraphsdk.AddKeyRequestBuilderPostOptions{
-    Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddKey(servicePrincipal-id).Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddKey(servicePrincipal-id).Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d730c390990d1b0bf26773e276bc4f360cf54f62
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: c5579df165615aa7d169ac0def459f4ffba034c9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202368"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327715"
 ---
 ```go
 
@@ -40,11 +40,8 @@ requestBody.SetFederatedIdpMfaBehavior(&federatedIdpMfaBehavior)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.internalDomainFederation",
 }
-options := &msgraphsdk.FederationConfigurationRequestBuilderPostOptions{
-    Body: requestBody,
-}
 domainId := "domain-id"
-result, err := graphClient.DomainsById(&domainId).FederationConfiguration().Post(options)
+result, err := graphClient.DomainsById(&domainId).FederationConfiguration().Post(requestBody)
 
 
 ```

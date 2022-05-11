@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4636de8b4287e64cde6316cd508fc1e077bc930e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ca61acc083f0b512789c9d512510a7af4e162cb4
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090620"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328172"
 ---
 ```go
 
@@ -39,10 +39,7 @@ webSiteUrl := "https://www.fourthcoffee.com"
 requestBody.SetWebSiteUrl(&webSiteUrl)
 defaultCurrencyIso := "USD"
 requestBody.SetDefaultCurrencyIso(&defaultCurrencyIso)
-options := &msgraphsdk.BookingBusinessesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.BookingBusinesses().Post(options)
+result, err := graphClient.BookingBusinesses().Post(requestBody)
 
 
 ```

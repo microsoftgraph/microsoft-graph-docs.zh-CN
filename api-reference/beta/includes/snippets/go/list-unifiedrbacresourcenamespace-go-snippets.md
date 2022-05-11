@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1120822a31f02b118eb6bad5753378df6bba2edb
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 1173498414781e6caa88bec08cb3d3d1ee448699
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338381"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327830"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-result, err := graphClient.RoleManagement().Directory().ResourceNamespaces().Get(nil)
+result, err := graphClient.RoleManagement().Directory().ResourceNamespaces().Get()
 
 
 ```

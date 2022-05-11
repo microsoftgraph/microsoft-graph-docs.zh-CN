@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7c9588af4fd52c54f866179dfb3a269f0d08ab3a
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: f9731df28f6c3cdbdf5ff30cf1dd36e551233414
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394962"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327331"
 ---
 ```go
 
@@ -17,12 +17,9 @@ id := "e5477431-1038-484e-bf69-1dfedb97a110"
 requestBody.SetId(&id)
 type := "group"
 requestBody.SetType(&type)
-options := &msgraphsdk.MembersRequestBuilderPostOptions{
-    Body: requestBody,
-}
 externalConnectionId := "externalConnection-id"
 externalGroupId := "externalGroup-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Members().Post(options)
+result, err := graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Members().Post(requestBody)
 
 
 ```

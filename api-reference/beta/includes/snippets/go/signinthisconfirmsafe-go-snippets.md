@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 39e6f6f5a689a2c363f119a14f36463c9cc1798a
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 2a2d243b6a5b99a5fed0ddf7713d85d6cc096b14
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212713"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326367"
 ---
 ```go
 
@@ -18,10 +18,7 @@ requestBody.SetRequestIds( []String {
     "96609214-09ef-4f80-9d4a-ace5fceecaec",
     "05020696-4eb8-45a3-918f-8f8bb7ad6015",
 }
-options := &msgraphsdk.ConfirmSafeRequestBuilderPostOptions{
-    Body: requestBody,
-}
-graphClient.AuditLogs().SignIns().ConfirmSafe().Post(options)
+graphClient.AuditLogs().SignIns().ConfirmSafe().Post(requestBody)
 
 
 ```

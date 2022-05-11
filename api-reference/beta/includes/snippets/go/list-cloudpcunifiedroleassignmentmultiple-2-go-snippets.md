@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cd0cb59edf05b8d7ad0046256d1da1627e8091f7
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e720fcd8497672f154d717e36a0794dda19f14ce
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090555"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327964"
 ---
 ```go
 
@@ -15,10 +15,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.RoleAssignmentsRequestBuilderGetQueryParameters{
     Filter: "roleDefinitionId%20eq%20'b5c08161-a7af-481c-ace2-a20a69a48fb1'",
 }
-options := &msgraphsdk.RoleAssignmentsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.RoleAssignmentsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Get(options)
+result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

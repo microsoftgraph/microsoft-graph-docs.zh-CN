@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f3e3b8abae56ba352f9d345db17163ac1980bd7f
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: c1a0ffc14f69d49233a1afc1b23d2e171b3657a1
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63758899"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327531"
 ---
 ```go
 
@@ -25,10 +25,7 @@ startTime, err := time.Parse(time.RFC3339, "2022-03-17T00:00:00Z")
 requestBody.SetStartTime(&startTime)
 expiryTime, err := time.Parse(time.RFC3339, "2023-03-17T00:00:00Z")
 requestBody.SetExpiryTime(&expiryTime)
-options := &msgraphsdk.Oauth2PermissionGrantsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Oauth2PermissionGrants().Post(options)
+result, err := graphClient.Oauth2PermissionGrants().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9219d8b714e266d4f4c02c7a5c632001aea9a482
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: cc8df128ec1d730296f0ad58480ecc4755f08dc7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63528175"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328020"
 ---
 ```go
 
@@ -25,10 +25,7 @@ requestBody.SetFiles( []AgreementFileLocalization {
         "isDefault": true,
     }
 }
-options := &msgraphsdk.AgreementsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(options)
+result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(requestBody)
 
 
 ```

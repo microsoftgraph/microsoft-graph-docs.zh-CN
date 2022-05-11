@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 141e877cc50f52101ad9ae678abc9b6ae6c35f36
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 3e77efd86c7e7ce7d9009ac79b68f7a2cd20a2ec
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204240"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326491"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewUser()
 requestBody.SetAdditionalData(map[string]interface{}{
 }
-options := &msgraphsdk.UserRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 userId := "user-id"
-graphClient.UsersById(&userId).Patch(options)
+graphClient.UsersById(&userId).Patch(requestBody)
 
 
 ```

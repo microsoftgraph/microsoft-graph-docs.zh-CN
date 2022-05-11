@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ac22ca93f40798b9e1e8563a91ba3256ac9301cd
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: b027692f75849de8b52696e910e944bdc3267b80
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412021"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328571"
 ---
 ```go
 
@@ -18,10 +18,7 @@ requestBody.SetBusinessPhones( []String {
 }
 officeLocation := "18/2111"
 requestBody.SetOfficeLocation(&officeLocation)
-options := &msgraphsdk.MeRequestBuilderPatchOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Patch(options)
+graphClient.Me().Patch(requestBody)
 
 
 ```

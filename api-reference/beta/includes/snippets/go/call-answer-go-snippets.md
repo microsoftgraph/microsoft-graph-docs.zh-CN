@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1b6fa6d58c1e9aac3b2ba2bd9b5e933bb326e062
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 853bff74f0051d38bf4a31a9f4f32053b896c3f9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65220299"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328267"
 ---
 ```go
 
@@ -33,11 +33,8 @@ callOptions.SetAdditionalData(map[string]interface{}{
 }
 participantCapacity := int32(200)
 requestBody.SetParticipantCapacity(&participantCapacity)
-options := &msgraphsdk.AnswerRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Answer(call-id).Post(options)
+graphClient.Communications().CallsById(&callId).Answer(call-id).Post(requestBody)
 
 
 ```

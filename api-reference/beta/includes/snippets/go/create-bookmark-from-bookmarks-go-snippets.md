@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 26132df72e753d415b123b5e540b50f593aab2fd
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 49dab32df52396a5d83c592728bce3b45cd6b08c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338241"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327961"
 ---
 ```go
 
@@ -51,10 +51,7 @@ requestBody.SetPowerAppIds( []String {
 }
 state := "published"
 requestBody.SetState(&state)
-options := &msgraphsdk.BookmarksRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Search().Bookmarks().Post(options)
+result, err := graphClient.Search().Bookmarks().Post(requestBody)
 
 
 ```

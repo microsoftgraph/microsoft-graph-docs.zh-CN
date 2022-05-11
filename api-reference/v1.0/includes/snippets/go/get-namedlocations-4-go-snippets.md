@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e6d18d5c5ace3aef4b31db52c3b237deffb5115c
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 43e1aedcb2f4ecfa44bdee58d13304fb7b91e01d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101366"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328349"
 ---
 ```go
 
@@ -15,10 +15,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.NamedLocationsRequestBuilderGetQueryParameters{
     Filter: "microsoft.graph.countryNamedLocation/countriesAndRegions/any(c:%20c%20eq%20'CA')",
 }
-options := &msgraphsdk.NamedLocationsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.NamedLocationsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(options)
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

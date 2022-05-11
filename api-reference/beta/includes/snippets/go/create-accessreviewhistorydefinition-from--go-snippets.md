@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0cdf3db51e1fe7dbc4849ba36826c2b981917b73
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 16342fb10eae41f29123d81ba01c716d651e7bc7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62349943"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326148"
 ---
 ```go
 
@@ -59,10 +59,7 @@ requestBody.SetScopes( []AccessReviewScope {
         "queryRoot": nil,
     }
 }
-options := &msgraphsdk.HistoryDefinitionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0fb358fd4720d9a7f894a877d3105d76f1c615f4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 516c3d27e31835a58da8b73a4f910126a91d3106
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412014"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328120"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewUserInsightsSettings()
 isEnabled := "false"
 requestBody.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.ItemInsightsRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Settings().ItemInsights().Patch(options)
+graphClient.UsersById(&userId).Settings().ItemInsights().Patch(requestBody)
 
 
 ```

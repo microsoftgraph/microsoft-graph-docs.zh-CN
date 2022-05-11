@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 732f279a3886cd7168794d1e367355e8136532c5
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 8a8ba0305d7e42aa789f606f9681f660f99e5240
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61102970"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325995"
 ---
 ```go
 
@@ -19,10 +19,7 @@ name := "Contoso HR"
 requestBody.SetName(&name)
 description := "Connection to index Contoso HR system"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.ConnectionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.External().Connections().Post(options)
+result, err := graphClient.External().Connections().Post(requestBody)
 
 
 ```

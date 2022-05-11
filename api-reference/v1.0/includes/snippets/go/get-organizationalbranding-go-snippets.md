@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c7d0bc4212458c3df5ad06efbac14e67a7892d55
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 3f6b36ad2ceba85c9e182e9d5f0f1492909af30c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61081976"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328190"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
     "Accept-Language": "0"
 }
-options := &msgraphsdk.BrandingRequestBuilderGetOptions{
-    H: headers,
+options := &msgraphsdk.BrandingRequestBuilderGetRequestConfiguration{
+    Headers: headers,
 }
 organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().Get(options)
+result, err := graphClient.OrganizationById(&organizationId).Branding().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a6809d630fb17d6772b822277c38876190b55a3a
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e55f670f89b5e86f2ec8b3608d52cf374ae59bd5
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412604"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328132"
 ---
 ```go
 
@@ -22,11 +22,8 @@ notes.SetContent(&content)
 requestBody.SetAdditionalData(map[string]interface{}{
     "atAprovedLocation": true,
 }
-options := &msgraphsdk.ClockInRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().ClockIn(team-id).Post(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().ClockIn(team-id).Post(requestBody)
 
 
 ```

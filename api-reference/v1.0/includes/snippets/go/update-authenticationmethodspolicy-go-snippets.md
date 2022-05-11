@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5b581028f803585965cd09fd1dffce615a833366
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 1632adeefb728ed117901ea5545b501aa32b28ef
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411885"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327595"
 ---
 ```go
 
@@ -44,10 +44,7 @@ requestBody.SetAuthenticationMethodConfigurations( []AuthenticationMethodConfigu
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy",
 }
-options := &msgraphsdk.AuthenticationMethodsPolicyRequestBuilderPatchOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(options)
+graphClient.Policies().AuthenticationMethodsPolicy().Patch(requestBody)
 
 
 ```

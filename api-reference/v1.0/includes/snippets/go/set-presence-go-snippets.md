@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 999e83affbc09d8eb2663e3e4186506f84f77a70
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: cab6b04f3f4f07f2b4f003acb014826021563ce0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412319"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326426"
 ---
 ```go
 
@@ -21,11 +21,8 @@ activity := "Available"
 requestBody.SetActivity(&activity)
 expirationDuration := "PT1H"
 requestBody.SetExpirationDuration(&expirationDuration)
-options := &msgraphsdk.SetPresenceRequestBuilderPostOptions{
-    Body: requestBody,
-}
 userId := "user-id"
-graphClient.UsersById(&userId).Presence().SetPresence(user-id).Post(options)
+graphClient.UsersById(&userId).Presence().SetPresence(user-id).Post(requestBody)
 
 
 ```

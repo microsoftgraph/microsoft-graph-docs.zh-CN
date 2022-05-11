@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 43be92550c4d34ffb3a7d0b4d98553ee8500c71e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: efdbef8d4b5d99416d51c3bb64b95c750bbf8a4e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099863"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328736"
 ---
 ```go
 
@@ -23,10 +23,7 @@ managementTemplateId := "String"
 requestBody.SetManagementTemplateId(&managementTemplateId)
 status := "String"
 requestBody.SetStatus(&status)
-options := &msgraphsdk.ChangeDeploymentStatusRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ChangeDeploymentStatus().Post(options)
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ChangeDeploymentStatus().Post(requestBody)
 
 
 ```

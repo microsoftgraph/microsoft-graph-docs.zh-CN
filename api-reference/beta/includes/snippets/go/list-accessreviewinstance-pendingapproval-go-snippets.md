@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 989ee095c12f93435d2463b276f00971fa8a5477
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 4d5771d2eecef4a602371a4104af67754e8aff4a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087538"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326174"
 ---
 ```go
 
@@ -17,10 +17,10 @@ requestParameters := &msgraphsdk.PendingAccessReviewInstancesRequestBuilderGetQu
     Top: 100,
     Skip: 0,
 }
-options := &msgraphsdk.PendingAccessReviewInstancesRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.PendingAccessReviewInstancesRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().PendingAccessReviewInstances().Get(options)
+result, err := graphClient.Me().PendingAccessReviewInstances().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

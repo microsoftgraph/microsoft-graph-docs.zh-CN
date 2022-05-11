@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cc710550362e331f04702de7fc1f3cd0d9ce63e7
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c439d9421b799ab0f23867725f2ced6be667b454
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412053"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328383"
 ---
 ```go
 
@@ -55,12 +55,9 @@ documentSet.SetWelcomePageColumns( []ColumnDefinition {
         "id": "fc2e188e-ba91-48c9-9dd3-16431afddd50",
     }
 }
-options := &msgraphsdk.ContentTypeRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 siteId := "site-id"
 contentTypeId := "contentType-id"
-result, err := graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Patch(options)
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9a769ff6da03aac276be193de5e212582789d481
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 152cd2199c74832c8247eacf2bc4ed0c8af95e40
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411765"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328422"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCustomSecurityAttributeDefinition()
 status := "Deprecated"
 requestBody.SetStatus(&status)
-options := &msgraphsdk.CustomSecurityAttributeDefinitionRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(options)
+graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(requestBody)
 
 
 ```

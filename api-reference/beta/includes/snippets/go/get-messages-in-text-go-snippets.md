@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f146a98d266dc9d51662e6f050063c6a832fb8ab
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 9c8fb684489fd6ea59ef87cbed9b6e7293ba1468
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61082522"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326009"
 ---
 ```go
 
@@ -18,11 +18,11 @@ requestParameters := &msgraphsdk.MessagesRequestBuilderGetQueryParameters{
 headers := map[string]string{
     "Prefer": "outlook.body-content-type="text""
 }
-options := &msgraphsdk.MessagesRequestBuilderGetOptions{
-    Q: requestParameters,
-    H: headers,
+options := &msgraphsdk.MessagesRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
+    Headers: headers,
 }
-result, err := graphClient.Me().Messages().Get(options)
+result, err := graphClient.Me().Messages().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0948782279970684d21de96118fb4b6248e49e60
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 7bdddb19239cdc43448c2f876263bcd3755bd1d6
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61086719"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327341"
 ---
 ```go
 
@@ -26,12 +26,9 @@ requestBody.SetMentions( []ChatMessageMention {
         "mentionText": "Jane Smith",
     }
 }
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(requestBody)
 
 
 ```

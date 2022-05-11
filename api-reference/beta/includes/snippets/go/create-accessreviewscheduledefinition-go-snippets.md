@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e6a4d21be209343aef6bf7f4daa0350cba62d8c7
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 1ded21b7c7d3adef911634562a251074638eb780
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61100459"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326149"
 ---
 ```go
 
@@ -63,10 +63,7 @@ type := "noEnd"
 range.SetType(&type)
 startDate := "2020-09-08T12:02:30.667Z"
 range.SetStartDate(&startDate)
-options := &msgraphsdk.DefinitionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
 
 
 ```

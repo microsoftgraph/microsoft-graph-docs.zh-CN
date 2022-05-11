@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3e447542341cc94df0ac98a8512c6059d35ffe49
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 426add7ef593db27f0be7cbd760bacf305cb021c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411679"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328610"
 ---
 ```go
 
@@ -17,11 +17,8 @@ extensionAttributes := msgraphsdk.NewOnPremisesExtensionAttributes()
 requestBody.SetExtensionAttributes(extensionAttributes)
 extensionAttribute1 := "BYOD-Device"
 extensionAttributes.SetExtensionAttribute1(&extensionAttribute1)
-options := &msgraphsdk.DeviceRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 deviceId := "device-id"
-result, err := graphClient.DevicesById(&deviceId).Patch(options)
+graphClient.DevicesById(&deviceId).Patch(requestBody)
 
 
 ```

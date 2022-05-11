@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 344e1616548c5e5d2fffe34e9d738651f8e7b544
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 657eb66e2b5c776ba1d1e6fef365310beaad1372
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202392"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326388"
 ---
 ```go
 
@@ -32,13 +32,12 @@ accessDetails.SetUnifiedRoles( []UnifiedRole {
 headers := map[string]string{
     "If-Match": "W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==""
 }
-options := &msgraphsdk.DelegatedAdminAccessAssignmentRequestBuilderPatchOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.DelegatedAdminAccessAssignmentRequestBuilderPatchRequestConfiguration{
+    Headers: headers,
 }
 delegatedAdminRelationshipId := "delegatedAdminRelationship-id"
 delegatedAdminAccessAssignmentId := "delegatedAdminAccessAssignment-id"
-graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).AccessAssignmentsById(&delegatedAdminAccessAssignmentId).Patch(options)
+graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).AccessAssignmentsById(&delegatedAdminAccessAssignmentId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

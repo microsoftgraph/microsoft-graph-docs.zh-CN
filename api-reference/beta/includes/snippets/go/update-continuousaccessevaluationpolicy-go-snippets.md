@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 56a35e0a6fce5d0eeef1f4c19b07ce6d602ad643
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 1b588816f20c00691d98df2afdb93c679675c90b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411964"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326599"
 ---
 ```go
 
@@ -18,10 +18,7 @@ requestBody.SetMigrate(&migrate)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.continuousAccessEvaluationPolicy",
 }
-options := &msgraphsdk.ContinuousAccessEvaluationPolicyRequestBuilderPatchOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(options)
+graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(requestBody)
 
 
 ```

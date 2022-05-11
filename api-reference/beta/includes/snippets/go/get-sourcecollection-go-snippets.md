@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8b21d62748eb03bc97dd0d6e5b591372d8abe40d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 352f9111d93db35f6a62b5166b9ebfc1a3fc1012
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61103646"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325871"
 ---
 ```go
 
@@ -15,12 +15,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.SourceCollectionRequestBuilderGetQueryParameters{
     Expand: "addToReviewSetOperation,custodianSources,lastEstimateStatisticsOperation",
 }
-options := &msgraphsdk.SourceCollectionRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.SourceCollectionRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 caseId := "case-id"
 sourceCollectionId := "sourceCollection-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).Get(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

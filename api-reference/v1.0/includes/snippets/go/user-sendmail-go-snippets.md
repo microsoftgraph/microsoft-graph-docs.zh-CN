@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f1816e906016b0dd6ae4e89cce4430c64afe24bc
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 956d2ebd3bcd61b0c165f5596df1994b9d9c4df1
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098842"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327492"
 ---
 ```go
 
@@ -35,10 +35,7 @@ message.SetCcRecipients( []Recipient {
 }
 saveToSentItems := "false"
 requestBody.SetSaveToSentItems(&saveToSentItems)
-options := &msgraphsdk.SendMailRequestBuilderPostOptions{
-    Body: requestBody,
-}
-graphClient.Me().SendMail().Post(options)
+graphClient.Me().SendMail().Post(requestBody)
 
 
 ```

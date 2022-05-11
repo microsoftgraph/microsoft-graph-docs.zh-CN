@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 08179a803031ebdec8f11b5c5137de35425566cb
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ddcd353e868a71ad5ce63b67621ca642491b3878
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087830"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327275"
 ---
 ```go
 
@@ -17,11 +17,11 @@ requestParameters := &msgraphsdk.InstancesRequestBuilderGetQueryParameters{
     EndDateTime: "2019-04-30T09:00:00.0000000",
     Select: "subject,bodyPreview,seriesMasterId,type,recurrence,start,end",
 }
-options := &msgraphsdk.InstancesRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.InstancesRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Instances().Get(options)
+result, err := graphClient.Me().EventsById(&eventId).Instances().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

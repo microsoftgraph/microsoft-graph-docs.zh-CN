@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 44d08a230054b0cfba9d4f75aefcd48eb0d39aa9
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: de8fd93ad081910bf043cc7ae3e29dade3181733
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099642"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326127"
 ---
 ```go
 
@@ -24,11 +24,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "mailNickname": "golfassist",
     "securityEnabled": false,
 }
-options := &msgraphsdk.MembersRequestBuilderPostOptions{
-    Body: requestBody,
-}
 administrativeUnitId := "administrativeUnit-id"
-graphClient.AdministrativeUnitsById(&administrativeUnitId).Members().Post(options)
+graphClient.AdministrativeUnitsById(&administrativeUnitId).Members().Post(requestBody)
 
 
 ```

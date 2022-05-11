@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a908a734e5b2b297be9dd544185bdad1226c1ef0
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e76686cb49f28f52012740d87927e4879c8064c1
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089844"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326369"
 ---
 ```go
 
@@ -19,11 +19,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "availability":  []Object {
     }
 }
-options := &msgraphsdk.ShiftPreferencesRequestBuilderPutOptions{
-    Body: requestBody,
-}
 userId := "user-id"
-graphClient.UsersById(&userId).Settings().ShiftPreferences().Put(options)
+graphClient.UsersById(&userId).Settings().ShiftPreferences().Put(requestBody)
 
 
 ```

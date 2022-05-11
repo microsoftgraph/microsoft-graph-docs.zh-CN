@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: af21d5794bdd2caf918f4ac5b8b42da895beb227
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: d115c3175cf5fe6da71a8f099aec67563af0e8f2
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412174"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328307"
 ---
 ```go
 
@@ -105,10 +105,7 @@ quality.SetMediaQualityList( []TeleconferenceDeviceMediaQuality {
 quality.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.teleconferenceDeviceQuality",
 }
-options := &msgraphsdk.LogTeleconferenceDeviceQualityRequestBuilderPostOptions{
-    Body: requestBody,
-}
-graphClient.Communications().Calls().LogTeleconferenceDeviceQuality().Post(options)
+graphClient.Communications().Calls().LogTeleconferenceDeviceQuality().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 34ddb5f06dfb64d81d7bf20a98ea1135bf2e87ae
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 0aa435cfda18ffcb12b463f3c7c75d0ccb2b0d7e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "64510442"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328156"
 ---
 ```go
 
@@ -20,12 +20,9 @@ requestBody.SetAdminEligibleSettings( []GovernanceRuleSetting {
         "setting": "{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}",
     }
 }
-options := &msgraphsdk.GovernanceRoleSettingRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 privilegedAccessId := "privilegedAccess-id"
 governanceRoleSettingId := "governanceRoleSetting-id"
-result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleSettingsById(&governanceRoleSettingId).Patch(options)
+graphClient.PrivilegedAccessById(&privilegedAccessId).RoleSettingsById(&governanceRoleSettingId).Patch(requestBody)
 
 
 ```

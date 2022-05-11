@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 729c35dfbf28fa98ecbe85218e6db3311bac330d
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: f3aee042bb90f1ea50a1aa3930e993c2e0bb7f0c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411993"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325809"
 ---
 ```go
 
@@ -19,12 +19,9 @@ actions := msgraphsdk.NewMessageRuleActions()
 requestBody.SetActions(actions)
 markImportance := "high"
 actions.SetMarkImportance(&markImportance)
-options := &msgraphsdk.MessageRuleRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 mailFolderId := "mailFolder-id"
 messageRuleId := "messageRule-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).MessageRulesById(&messageRuleId).Patch(options)
+graphClient.Me().MailFoldersById(&mailFolderId).MessageRulesById(&messageRuleId).Patch(requestBody)
 
 
 ```

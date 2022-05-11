@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 33f23d8a01cb6281b0e42a08deca60c0db12593c
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 5b0daaa70592abf3371ecaad5d8f1df49b5b96e5
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087376"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327771"
 ---
 ```go
 
@@ -37,10 +37,7 @@ requestBody.SetProperties( []ExtensionSchemaProperty {
         "type": "String",
     }
 }
-options := &msgraphsdk.SchemaExtensionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.SchemaExtensions().Post(options)
+result, err := graphClient.SchemaExtensions().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 279174086e3e83abf55cd0a38c5523d4fed248a4
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: c999886047310cbe4787f023c6b0348936cb4791
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206844"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326702"
 ---
 ```go
 
@@ -20,12 +20,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "user@odata.bind": "https://graph.microsoft.com/beta/users/bc3598dd-cce4-4742-ae15-173429951408",
     "tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681",
 }
-options := &msgraphsdk.MembersRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Members().Post(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Members().Post(requestBody)
 
 
 ```

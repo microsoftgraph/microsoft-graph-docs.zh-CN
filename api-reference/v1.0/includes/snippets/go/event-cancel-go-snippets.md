@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 33351750aec15f0ed2e5f4851022adbd1e62cd59
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 2119f6b57724d62c1f91900340655e692c317afb
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411716"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325739"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCommentRequestBody()
 comment := "Cancelling for this week due to all hands"
 requestBody.SetComment(&comment)
-options := &msgraphsdk.CancelRequestBuilderPostOptions{
-    Body: requestBody,
-}
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Cancel(event-id).Post(options)
+graphClient.Me().EventsById(&eventId).Cancel(event-id).Post(requestBody)
 
 
 ```

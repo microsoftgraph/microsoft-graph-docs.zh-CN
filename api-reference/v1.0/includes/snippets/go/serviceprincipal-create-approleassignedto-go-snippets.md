@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 54bdeb8f773f37976823b98fd29b9fb625576438
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 62a59c6df630ec4cb29d0e38d103d091f93aede2
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083608"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325799"
 ---
 ```go
 
@@ -19,11 +19,8 @@ resourceId := "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 requestBody.SetResourceId(&resourceId)
 appRoleId := "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7"
 requestBody.SetAppRoleId(&appRoleId)
-options := &msgraphsdk.AppRoleAssignedToRequestBuilderPostOptions{
-    Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AppRoleAssignedTo().Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AppRoleAssignedTo().Post(requestBody)
 
 
 ```

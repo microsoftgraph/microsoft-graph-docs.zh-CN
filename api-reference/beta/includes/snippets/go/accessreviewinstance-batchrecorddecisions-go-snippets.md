@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 75d098fe5ca4037e1527e7294897b27e0c2151ae
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 75545a37be5e05cba066fb815153df781159da37
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412100"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326181"
 ---
 ```go
 
@@ -19,11 +19,8 @@ justification := "All principals with access need continued access to the resour
 requestBody.SetJustification(&justification)
 resourceId := "a5c51e59-3fcd-4a37-87a1-835c0c21488a"
 requestBody.SetResourceId(&resourceId)
-options := &msgraphsdk.BatchRecordDecisionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 accessReviewInstanceId := "accessReviewInstance-id"
-graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).BatchRecordDecisions(accessReviewInstance-id).Post(options)
+graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).BatchRecordDecisions(accessReviewInstance-id).Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e1a21268f0e6e7bdc890801049ded7734a9321b8
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b710d56f6026ff8beeef30ca20fe13f9a936d8f0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090619"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328271"
 ---
 ```go
 
@@ -103,11 +103,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "defaultReminders@odata.type": "#Collection(microsoft.graph.bookingReminder)",
     "staffMemberIds@odata.type": "#Collection(String)",
 }
-options := &msgraphsdk.ServicesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Services().Post(options)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Services().Post(requestBody)
 
 
 ```

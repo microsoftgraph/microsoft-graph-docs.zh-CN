@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: be57aad49acbb49668bccd7ea56ab8d272707a0d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 36cff1d23338fa0b41fd7363ed4ae4986f59649a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099675"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326725"
 ---
 ```go
 
@@ -64,10 +64,7 @@ requestBody.SetAttendees( []Attendee {
 }
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals)
-options := &msgraphsdk.EventsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Events().Post(options)
+result, err := graphClient.Me().Events().Post(requestBody)
 
 
 ```

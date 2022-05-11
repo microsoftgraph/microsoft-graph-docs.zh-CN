@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: caea6ab3d22b8e39a20d84c2b8f53cac0a9abefc
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a71c1241cd803ded361712d0321a34d0ae07e3f8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61103706"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326765"
 ---
 ```go
 
@@ -33,10 +33,7 @@ endDateTime, err := time.Parse(time.RFC3339, "2022-06-30T00:00:00Z")
 expiration.SetEndDateTime(&endDateTime)
 type := "AfterDateTime"
 expiration.SetType(&type)
-options := &msgraphsdk.RoleEligibilityScheduleRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(options)
+result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(requestBody)
 
 
 ```

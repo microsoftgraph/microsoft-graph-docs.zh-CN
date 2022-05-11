@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2b2f20d3727656a72467b2934bb612678c658c41
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c6c6a407584a52c2c52cfdfce8e3f1f4a7917a71
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412321"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65327506"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewPermissionGrantPolicy()
 displayName := "Custom permission grant policy"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.PermissionGrantPolicyRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 permissionGrantPolicyId := "permissionGrantPolicy-id"
-result, err := graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Patch(options)
+graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Patch(requestBody)
 
 
 ```

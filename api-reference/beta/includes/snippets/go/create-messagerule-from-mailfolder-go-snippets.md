@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dfb518422187b8db572dfc94ab08b3017af9a10e
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 4b052847eb461f6cb7a47e3006f382a265242c80
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093215"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328497"
 ---
 ```go
 
@@ -33,11 +33,8 @@ actions.SetForwardTo( []Recipient {
 }
 stopProcessingRules := true
 actions.SetStopProcessingRules(&stopProcessingRules)
-options := &msgraphsdk.MessageRulesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).MessageRules().Post(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).MessageRules().Post(requestBody)
 
 
 ```

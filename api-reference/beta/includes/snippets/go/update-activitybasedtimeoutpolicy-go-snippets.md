@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 44bbab81e296c04389d7be5bf21eafa681fd2263
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8768db3611d9d064474cd1ad210553242eb6dd60
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411852"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65326138"
 ---
 ```go
 
@@ -20,11 +20,8 @@ displayName := "displayName-value"
 requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault)
-options := &msgraphsdk.ActivityBasedTimeoutPolicyRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 activityBasedTimeoutPolicyId := "activityBasedTimeoutPolicy-id"
-result, err := graphClient.Policies().ActivityBasedTimeoutPoliciesById(&activityBasedTimeoutPolicyId).Patch(options)
+graphClient.Policies().ActivityBasedTimeoutPoliciesById(&activityBasedTimeoutPolicyId).Patch(requestBody)
 
 
 ```

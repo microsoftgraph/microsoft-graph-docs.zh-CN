@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1172ac9b6f62d24d91d307cf04853bfaa0eaceaa
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4e4b7127d158f7e5b8e6e14d8efcff49c5b0781b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63412259"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65328609"
 ---
 ```go
 
@@ -16,12 +16,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.id": "https://graph.microsoft.com/beta/education/users/14008",
 }
-options := &msgraphsdk.EducationUserRequestBuilderPostOptions{
-    Body: requestBody,
-}
 educationSchoolId := "educationSchool-id"
 educationUserId := "educationUser-id"
-graphClient.Education().SchoolsById(&educationSchoolId).UsersById(&educationUserId).Post(options)
+graphClient.Education().SchoolsById(&educationSchoolId).UsersById(&educationUserId).Post(requestBody)
 
 
 ```
