@@ -1320,7 +1320,7 @@ items:
                     href: api/participant-mute.md
                   - name: 邀请参与者
                     href: api/participant-invite.md
-                  - name: 开始保留音乐
+                  - name: '"开始"菜单保留音乐'
                     href: api/participant-startholdmusic.md
                   - name: 停止按住音乐
                     href: api/participant-stopholdmusic.md
@@ -1599,7 +1599,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: 重定向
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -4196,7 +4196,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: 所有许可的用户分配目标
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Android 企业始终在 VPN 包类型上
+                  - name: Android企业始终在 VPN 包类型上
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: 符合性状态
                     href: resources/intune-shared-compliancestatus.md
@@ -4263,7 +4263,7 @@ items:
                     href: api/serviceannouncement-list-issues.md
                   - name: 获取问题
                     href: api/servicehealthissue-get.md
-                  - name: 获取事件后审阅报告
+                  - name: 获取帖子事件审查报告
                     href: api/servicehealthissue-incidentreport.md
               - name: 服务更新消息
                 href: resources/serviceupdatemessage.md
@@ -4335,7 +4335,7 @@ items:
                 href: api/educationclass-update.md
               - name: 删除课程
                 href: api/educationclass-delete.md
-              - name: 获取对类的更改
+              - name: 获取 Delta
                 href: api/educationclass-delta.md
               - name: 列出教师
                 href: api/educationclass-list-teachers.md
@@ -4423,6 +4423,8 @@ items:
                 href: api/educationassignment-put-rubric.md
               - name: 从分配中删除 rubric
                 href: api/educationassignment-delete-rubric.md
+              - name: 获取 Delta
+                href: api/educationassignment-delta.md
           - name: 分配设置
             href: resources/educationassignmentsettings.md
             items:
@@ -4446,6 +4448,8 @@ items:
                 href: api/educationcategory-get.md
               - name: 删除
                 href: api/educationcategory-delete.md
+              - name: 获取 Delta
+                href: api/educationcategory-delta.md
           - name: 量规
             href: resources/educationrubric.md
             items:

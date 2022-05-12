@@ -3,21 +3,21 @@ title: 更新位置
 description: 更新 place 对象的属性。
 ms.localizationpriority: medium
 author: vrod9429
-ms.prod: Outlook
+ms.prod: calendar
 doc_type: apiPageType
-ms.openlocfilehash: 5b28581b3da3e35c6720d5ba7dee50969cea9dca
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b9954243e415797a7628f8fa503772656ccf20b8
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135903"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366070"
 ---
 # <a name="update-place"></a>更新位置
 
 命名空间：microsoft.graph
 
 
-更新 place [对象](../resources/place.md) 的属性，可以是 room [或](../resources/room.md) [roomList](../resources/roomlist.md)。 可以通过指定 **id** **或** **emailAddress** 属性来标识 room 或 **roomList。**
+更新 [place](../resources/place.md) 对象的属性，该属性可以是 [会议室](../resources/room.md) 或 [roomList](../resources/roomlist.md)。 可以通过指定 **ID** 或 **emailAddress** 属性来标识 **会议室** 或 **roomList**。
 
 ## <a name="permissions"></a>权限
 
@@ -46,33 +46,33 @@ PATCH /places/{id | emailAddress}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 一次只能更新 (**或** **roomList**) 一个实例。 在请求正文中，使用 指定位置的类型，并包括要 `@odata.type` 更新的类型的属性。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值。 一次只能更新一个位置资源 (**会议室** 或 **roomList**) 实例。 在请求正文中，用于 `@odata.type` 指定位置类型，并包含要更新的类型的属性。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性               | 类型                                              | 说明 |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | 会议室或会议室列表的街道地址。 |
-| audioDeviceName        | String                                            | 指定会议室中的音频设备的名称。 |
-| bookingType            | [bookingType](../resources/room.md)                            | 聊天室的类型。 可能的值为 `Standard` 和 `Reserved`。 |
-| building               | String                                            | 指定会议室的大楼名称或建筑物编号。 |
-| capacity               | Int32                                             | 指定会议室的容量。 |
+| audioDeviceName        | 字符串                                            | 指定会议室中音频设备的名称。 |
+| bookingType            | [bookingType](../resources/room.md)                            | 房间类型。 可能的值为 `Standard` 和 `Reserved`。 |
+| 建筑               | 字符串                                            | 指定会议室所在的建筑物名称或建筑物号。 |
+| 能力               | Int32                                             | 指定房间的容量。 |
 | displayDeviceName      | String                                            | 指定会议室中显示设备的名称。 |
-| floorLabel             | String                                            | 指定房间的楼层号。 |
-| floorNumber            | Int32                                             | 指定房间的楼层。 |
-| geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | 以纬度、经度和（可选）海拔坐标指定房间或房间列表位置。 |
-| isWheelChairAccessible | 布尔                                           | 指定会议室是否可供访问。 |
-| 标签                  | String                                            | 指定会议室的描述性标签，例如数字或名称。 |
-| nickname               | String                                            | 为会议室指定昵称，例如"conf room"。 |
+| floorLabel             | String                                            | 指定会议室所在的地板字母。 |
+| floorNumber            | Int32                                             | 指定房间所在的楼层号。 |
+| geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | 指定纬度、经度和可选高度坐标中的房间或会议室列表位置。 |
+| isWheelChairAccessible | Boolean                                           | 指定房间是否可使用轮椅。 |
+| 标签                  | 字符串                                            | 指定会议室的描述性标签，例如数字或名称。 |
+| 昵称               | String                                            | 指定房间的昵称，例如“conf room”。 |
 | phone                  | String                                            | 会议室或会议室列表的电话号码。 |
-| 标记                   | 字符串集合                                 | 指定会议室的其他功能，例如，视图类型或装饰类型等详细信息。 |
-| videoDeviceName        | String                                            | 指定会议室中的视频设备的名称。 |
+| 标记                   | String collection                                 | 指定会议室的其他功能，例如，视图类型或家具类型的详细信息。 |
+| videoDeviceName        | String                                            | 指定会议室中视频设备的名称。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [place](../resources/place.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新 [的 place](../resources/place.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-room"></a>示例 1：更新聊天室
+### <a name="example-1-update-a-room"></a>示例 1：更新会议室
 
 ### <a name="request"></a>请求
 

@@ -5,19 +5,19 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8821a520a8e0f3572e10e884fb09ece8601a67a5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d92ef61d5f7228a74d2dfd9bf84d2e05ea37b345
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60995621"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365860"
 ---
 # <a name="appconsentrequest-filterbycurrentuser"></a>appConsentRequest：filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [appConsentRequest](../resources/appconsentrequest.md) 对象的集合，当前用户是这些对象的审阅者，并且用于访问指定应用的 userConsentRequest 的状态为 `InProgress` 。
+检索 [appConsentRequest](../resources/appconsentrequest.md) 对象的集合，当前用户是该对象的审阅者，而用于访问指定应用的 userConsentRequest 的状态为 `InProgress`。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,10 +44,10 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 |属性|类型|说明|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|筛选以查询当前用户是审阅者的 appConsentRequest 对象。 允许的值为 `reviewer` 。 必需。|
+|on|consentRequestFilterByCurrentUserOptions|筛选以查询当前用户为审阅者的 appConsentRequest 对象。 允许的值为 `reviewer`. 必填。|
 
 ## <a name="query-parameters"></a>查询参数
-此函数需要  `$filter` OData 查询参数以返回状态为 的 [userConsentRequest](../resources/userconsentrequest.md) 对象的集合 `InProgress` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此函数要求 `$filter` OData 查询参数返回状态`InProgress`为的 [userConsentRequest](../resources/userconsentrequest.md) 对象的集合。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -59,7 +59,7 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [appConsentRequest](../resources/appconsentrequest.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [appConsentRequest](../resources/appconsentrequest.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/java/appconsentrequest-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/appconsentrequest-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -120,7 +120,6 @@ Content-Type: application/json
       "appDisplayName": "Moodle",
       "consentType": "Dynamic",
       "pendingScopes": [],
-      "userConsentRequests@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
       "userConsentRequests": []
     }
   ]

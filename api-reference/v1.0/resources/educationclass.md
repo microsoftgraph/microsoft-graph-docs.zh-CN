@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e3b3a8618342afd21f9d18cc1d1c96fa2ed9bbf9
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: d9853bf9d82240801c9853b69a60b21ad8830709
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685241"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366231"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "64685241"
 | [Get educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | 读取 [educationClass](../resources/educationclass.md) 对象的属性和关系。 |
 | [更新 educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | 更新 [educationClass](../resources/educationclass.md) 对象的属性。                 |
 | [删除 educationClass](../api/educationclass-delete.md) | 无                                                        | 删除 [educationClass](../resources/educationclass.md) 对象。                                  |
-| [delta](../api/educationclass-delta.md)                  | [educationClass](../resources/educationclass.md) 集合 | 获取对资源集合的增量更改。                                                  |
+| [Get delta](../api/educationclass-delta.md)                  | [educationClass](educationclass.md) 集合              | 获取 **educationClasses** 的增量更改。                                          |
 
 ## <a name="properties"></a>属性
 
@@ -38,7 +38,7 @@ ms.locfileid: "64685241"
 | id                   | String                                         | 对象标识符。 继承自 [entity](../resources/entity.md)。 |
 | displayName          | 字符串                                         | 课程名称。                                                 |
 | mailNickname         | String                                         | 向所有成员发送电子邮件的邮件名称（如果已启用）。    |
-| 说明          | 字符串                                         | 课程说明。                                          |
+| 说明          | String                                         | 课程说明。                                          |
 | createdBy            | [identitySet](../resources/identityset.md)     | 创建了课程的实体                                       |
 | classCode            | String                                         | 学校用于标识课程的课程代码。               |
 | externalName         | String                                         | 同步系统中的课程名称。                           |
@@ -53,7 +53,7 @@ ms.locfileid: "64685241"
 | 关系 | 类型                                                          | 说明                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
 | assignments  | [educationAssignment](educationAssignment.md) 集合 | 与此类关联的所有作业。 可为 NULL。     |
-| 组        | [group](../resources/group.md)                                | 基础Microsoft 365组对象。                |
+| 组        | [组](../resources/group.md)                                | 基础Microsoft 365组对象。                |
 | members      | [educationUser](../resources/educationuser.md) 集合     | 课程中的所有用户。 可为 NULL。                         |
 | schools      | [educationSchool](../resources/educationschool.md) 集合 | 与此课程相关的所有学校。 可为 NULL。 |
 | teachers     | [educationUser](../resources/educationuser.md) 集合     | 课程中的所有教师。 可为 NULL。                      |

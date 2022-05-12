@@ -1,38 +1,38 @@
 ---
 title: 列出位置
-description: 检索 place 对象的列表。
+description: 检索位置对象的列表。
 ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 229b977f1dca627a92aae9d9b7a17caddec8901a
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 2eb3f7728c89cfad1fd64a7c473ff0f32f5998c6
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477977"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366084"
 ---
 # <a name="list-places"></a>列出位置
 
 命名空间：microsoft.graph
 
 
-获取租户中定义的指定 [类型 place](../resources/place.md) 对象的集合。 例如，可以获取租户中所有会议室、所有会议室列表或特定会议室列表中的会议室。
+获取租户中定义的指定类型的 [位置](../resources/place.md) 对象的集合。 例如，可以获取租户中特定房间列表中的所有会议室、所有会议室列表或会议室。
 
->**注意：** 无法通过此终结点检索标记为"从 GAL 隐藏"的会议室。
+>**注意：** 标记为“从 GAL 隐藏”的会议室无法通过此终结点检索。
 
-**place** 对象可以是下列类型之一：
+**place** 对象可以是以下类型之一：
 
-* [包含](../resources/room.md)丰富属性（例如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。
-* [会议室列表](../resources/roomlist.md)，其中包括会议室列表的电子邮件地址，以及用于获取会议室列表中会议室实例集合的导航属性。
+* 包含丰富的属性（例如会议室的电子邮件地址）的 [房间](../resources/room.md) ，以及辅助功能、容量和设备支持。
+* 包含会议室列表的电子邮件地址的 [会议室列表](../resources/roomlist.md) ，以及用于获取会议室列表中会议室实例集合的导航属性。
 
-**room 和** **roomList** 均派生自 **place** 对象。
+**room** 和 **roomList** 均派生自 **place** 对象。
 
-默认情况下，此操作返回每页 100 个位置。
+默认情况下，此操作每页返回 100 个位置。
 
-与 [findRooms 和](/graph/api/user-findrooms?view=graph-rest-beta) [findRoomLists](/graph/api/user-findroomlists?view=graph-rest-beta) 函数相比，此操作为会议室和会议室列表返回更丰富的有效负载。 请参阅 [有关](../resources/place.md#using-the-places-api) 它们如何比较的详细信息。
+与 [findRooms](/graph/api/user-findrooms) 和 [findRoomLists](/graph/api/user-findroomlists) 函数相比，此操作为会议室和会议室列表返回更丰富的有效负载。 有关比较 [方式的详细信息](../resources/place.md#using-the-places-api) ，请参阅详细信息。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,19 +40,19 @@ ms.locfileid: "64477977"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Place.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| Application                            | Place.Read.All |
+| 应用程序                            | Place.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
-若要获取租户中所有会议室，
+若要获取租户中的所有房间，请执行以下操作：
 
 ```http
 GET /places/microsoft.graph.room
 ```
 
-若要获取租户中所有会议室列表，请进行以下设置：
+若要获取租户中的所有会议室列表，请执行以下操作：
 
 ```http
 GET /places/microsoft.graph.roomlist
@@ -64,7 +64,7 @@ GET /places/microsoft.graph.roomlist
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**注意**：若要获取会议室列表中的会议室，必须按 **其 emailAddress** 属性指定会议室列表，而不是按 **其 ID 指定。**
+>**注意**：若要在会议室列表中获取会议室，必须按其 **emailAddress** 属性（ **而不是 ID）** 指定会议室列表。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持以下查询参数来帮助自定义响应：
@@ -90,7 +90,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [place](../resources/place.md) 对象集合。
+如果成功，此方法将返回 `200 OK` 响应代码和响应正文中 [位置](../resources/place.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 
@@ -98,7 +98,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 #### <a name="request"></a>请求
 
-以下示例演示如何获取租户 [中所有](../resources/room.md) 会议室对象。
+以下示例演示如何获取租户中的所有 [房间](../resources/room.md) 对象。
 
 
 
@@ -230,7 +230,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-以下示例演示如何获取租户中 [所有 roomList](../resources/roomlist.md) 对象。
+以下示例演示如何获取租户中的所有 [roomList](../resources/roomlist.md) 对象。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -322,11 +322,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-rooms-contained-in-a-room-list"></a>示例 3：列出包含在会议室列表中的聊天室
+### <a name="example-3-list-rooms-contained-in-a-room-list"></a>示例 3：列出会议室列表中包含的会议室
 
 #### <a name="request"></a>请求
 
-以下示例演示如何获取 [roomList 中包含的会议室](../resources/room.md) 对象 **列表**。
+以下示例演示如何获取 **roomList** 中包含的 [会议室](../resources/room.md)对象的列表。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

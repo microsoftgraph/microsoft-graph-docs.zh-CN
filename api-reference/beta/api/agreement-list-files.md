@@ -1,18 +1,18 @@
 ---
-title: '列出 (本地化协议文件) '
+title: '列出 (本地化协议文件的文件) '
 description: 检索与协议相关的所有本地化文件。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 9679e1e26867130c5ae44cbc2bf0b3fafc6aa110
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 1c1c821dc14e515972b9a10d06361ccd97c3c118
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516197"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365888"
 ---
-# <a name="list-files-localized-agreement-files"></a>列出 (本地化协议文件) 
+# <a name="list-files-localized-agreement-files"></a>列出 (本地化协议文件的文件) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63516197"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Agreement.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -52,7 +52,7 @@ GET /agreements/{agreementsId}?$expand=files
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [agreementFileLocalization](../resources/agreementfilelocalization.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [agreementFileLocalization](../resources/agreementfilelocalization.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -115,7 +115,6 @@ Content-Type: application/json
     "userReacceptRequiredFrequency": null,
     "isViewingBeforeAcceptanceRequired": true,
     "isPerDeviceAcceptanceRequired": false,
-    "files@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/termsOfUse/agreements('94410bbf-3d3e-4683-8149-f034e55c39dd')/files",
     "files": [
         {
             "id": "08033369-8972-42a3-8533-90bbd2757a01",

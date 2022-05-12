@@ -1,16 +1,16 @@
 ---
 title: 列出用户的分配
-description: 返回分配给用户的所有课程的工作分配列表。
+description: 返回分配给所有类的用户的分配列表。
 ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f9642ccc072e71ab950448c6e8661149e1e1f302
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7b1de5d2031bd6da5305c6cefa6b6a1fe3fcbfbf
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109010"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365832"
 ---
 # <a name="list-assignments-of-a-user"></a>列出用户的分配
 
@@ -18,9 +18,9 @@ ms.locfileid: "62109010"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回分配给用户的所有课程的工作分配列表。 
+返回分配给所有类的用户的分配列表。 
 
-通过此实用工具命名空间，呼叫者可以在一次通话中查找属于学生或教师的所有作业，而不必从每个班级请求作业。 工作分配列表包含从类命名空间内获取工作分配的详细信息所需的内容。 对分配执行的其他所有操作都应使用类命名空间。
+此实用工具命名空间允许调用方在单个呼叫中查找属于学生或教师的所有作业，而不必从每个班级请求作业。 分配列表包含从类命名空间中获取分配的详细信息所需的内容。 作业上的所有其他操作都应使用类命名空间。
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +34,7 @@ ms.locfileid: "62109010"
 
 调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 的终结点时不支持应用程序权限。
 
-`/users/{user-id}`终结点使用委派权限和应用程序权限。
+终结 `/users/{user-id}` 点使用委派权限和应用程序权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -59,11 +59,11 @@ GET /education/users/{user-id}/assignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationAssignment](../resources/educationassignment.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [educationAssignment](../resources/educationassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-assignments-of-the-logged-in-user"></a>示例 1：获取已登录用户的分配
+### <a name="example-1-get-the-assignments-of-the-logged-in-user"></a>示例 1：获取登录用户的分配
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -207,7 +207,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-assignments-of-a-user"></a>示例 2：获取用户的工作分配
+### <a name="example-2-get-assignments-of-a-user"></a>示例 2：获取用户的分配
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -251,9 +251,9 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 
 #### <a name="response"></a>响应
 
-如果用户尝试查询与自己的用户 ID 不同的用户 ID，此方法将返回 `403 Forbidden` 响应代码。
+如果用户尝试查询与自己的用户 ID 不同的用户 ID，则此方法将返回 `403 Forbidden` 响应代码。
 
-、 `instructions` `assignedDateTime` 、 和 `assignTo` `resourcesFolderUrl` `webUrl` 属性将始终显示 null。
+、`instructions``assignedDateTime`、`assignTo``resourcesFolderUrl`和`webUrl`属性将始终显示为 null。
 
 下面展示了示例响应。 
 
@@ -356,7 +356,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-user-assignments-with-expand-submissions"></a>示例 3：通过展开提交获取用户分配
+### <a name="example-3-get-user-assignments-with-expand-submissions"></a>示例 3：使用扩展提交获取用户分配
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -402,7 +402,7 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 
 下面展示了示例响应。 
 
-> **注意：** 如果用户具有学生角色，它将展开提交，并且对于教师角色将为 null。
+> **注意：** 如果用户具有学生角色，并且教师角色为 null，则会扩展提交。
 
 
 <!-- {
@@ -458,7 +458,6 @@ Content-type: application/json
                     "displayName": null
                 }
             },
-            "submissions@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions",
             "submissions": [
                 {
                     "status": "working",

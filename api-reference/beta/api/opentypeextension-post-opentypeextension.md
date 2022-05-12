@@ -1,16 +1,16 @@
 ---
 title: 创建开放扩展
-description: 使用 openTypeExtension (创建开放扩展) 并添加自定义属性
+description: 创建 open extension (openTypeExtension 对象) 并添加自定义属性
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: f834fc291a2294de095a6e223d3b144e4e3e995a
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 92b6400c3541e4964cf5ef1ba09cc99e05a60665
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339723"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365804"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -18,7 +18,7 @@ ms.locfileid: "62339723"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 [openTypeExtension](../resources/opentypeextension.md) (创建开放扩展) 受支持的资源的新实例或现有实例中添加自定义属性。
+创建 open extension ([openTypeExtension](../resources/opentypeextension.md) 对象) 并在受支持资源的新实例或现有实例中添加自定义属性。
 
 "权限" ["](#permissions) "部分中列出支持打开扩展的资源。
 
@@ -102,7 +102,7 @@ POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
 
 ## <a name="request-body"></a>请求正文
 
-提供 [openTypeExtension](../resources/opentypeextension.md) 的 JSON 正文，并具有以下所需的名称-值对和任何其他自定义数据。 JSON 负载中的数据可以是基元类型或基元类型数组。
+提供 [openTypeExtension](../resources/opentypeextension.md) 的 JSON 正文，其中包含以下必需的名称值对和任何其他自定义数据。 JSON 负载中的数据可以是基元类型或基元类型数组。
 
 | 名称       | 值 |
 |:---------------|:----------|
@@ -260,8 +260,6 @@ Content-type: application/json
   "webLink": "https://outlook.office.com/owa/?
 ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
   "inferenceClassification": "Focused",
-  "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages
-('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
       "@odata.type": "#microsoft.graph.openTypeExtension",
@@ -604,7 +602,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations/$entity",
     "id": "AAQkADJToRlbJ5Mg7TFM7H-j3Y=",
-    "threads@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations('AAQkADJToRlbJ5Mg7TFM7H-j3Y%3D')/threads",
     "threads": [
         {
             "id": "AAQkADJDtMUzsf_PdhAAswJOhGVsnkyDtMUzsf_Pdg=="

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 6848888d4d40c80c72cd1bd49854f9a378aedf76
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 6cf4fd01f5de2d71b444a4327c784f210cb45530
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516240"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365896"
 ---
 # <a name="get-agreement"></a>获取协议
 
@@ -18,7 +18,7 @@ ms.locfileid: "63516240"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索协议对象的属性 [和](../resources/agreement.md) 关系。
+检索 [协议](../resources/agreement.md) 对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,9 +26,9 @@ ms.locfileid: "63516240"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Agreement.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
 
-代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色Azure AD，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference)：
+代表用户调用时，用户需要属于以下目录角色之一。 若要详细了解目录角色，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 条件访问管理
 + 安全管理员
@@ -40,7 +40,7 @@ GET /identityGovernance/termsOfUse/agreements/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData `$select` [查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
@@ -50,7 +50,7 @@ GET /identityGovernance/termsOfUse/agreements/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/agreement.md) 代码和 agreement 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [协议](../resources/agreement.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -176,7 +176,6 @@ Content-type: application/json
     "userReacceptRequiredFrequency": "P90D",
     "isViewingBeforeAcceptanceRequired": false,
     "isPerDeviceAcceptanceRequired": false,
-    "files@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/termsOfUse/agreements('0ec9f6a6-159d-4dd8-a563-1f0b5935e80b')/files",
     "files": [
         {
             "id": "681b73a7-e9ae-4f2d-aca5-9e857599cd15",

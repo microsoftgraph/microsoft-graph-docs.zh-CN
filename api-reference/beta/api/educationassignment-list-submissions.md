@@ -1,16 +1,16 @@
 ---
 title: 列出提交
-description: 列出与工作分配关联的所有提交。
+description: 列出与分配关联的所有提交。
 author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 58e065a068a2785a3e32860cfbd77d8e33e21463
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 500a2ca9e60c293199a477f06c2a25ed41d28b3e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103179"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365965"
 ---
 # <a name="list-submissions"></a>列出提交
 
@@ -18,11 +18,11 @@ ms.locfileid: "62103179"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出 [与作业](../resources/educationsubmission.md) 关联的所有 [提交](../resources/educationassignment.md)。
+列出与[分配](../resources/educationassignment.md)关联的所有[提交](../resources/educationsubmission.md)。
 
-教师或具有应用程序权限的应用程序可以获取所有提交，学生只能获取与其关联的提交。 
+具有应用程序权限的教师或应用程序可以获取所有 **提交**，学生只能获取与之关联 **的提交** 。
 
-提供标头 `Prefer: include-unknown-enum-members` 以正确 **列出状态** 为 `reassigned` 提交的提交。 有关详细信息，请参阅示例部分。
+提供标头`Prefer: include-unknown-enum-members`以正确列出具有状态 **的**`reassigned`提交。 有关详细信息，请参阅示例部分。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,7 +42,7 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-以下是此方法的 `$expand` 可用选项：、、和 `outcomes` `resources` `submittedResources` `*` ，其中包括之前的所有选项。
+下面是此方法的可用`$expand`选项：`outcomes`、`resources``submittedResources`和`*`，其中包括前面的所有选项。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -51,10 +51,10 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions
 | Prefer  | `include-unknown-enum-members`. 可选。  |
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+请勿为此方法提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象集合。
+如果成功，此方法在响应正文中返回一个 `200 OK` 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -155,7 +155,7 @@ Content-length: 873
 }
 ```
 
-### <a name="example-2-get-submissions-with-expand-options"></a>示例 2：使用选项$expand提交
+### <a name="example-2-get-submissions-with-expand-options"></a>示例 2：使用$expand选项获取提交
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
@@ -259,7 +259,6 @@ Content-length: 4492
                     "displayName": null
                 }
             },
-            "outcomes@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions('9bc724ee-d314-1ec5-725d-5f81228e85a6')/outcomes",
             "outcomes": [
                 {
                     "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
@@ -320,7 +319,7 @@ Content-length: 4492
 }
 ```
 
-### <a name="example-3-get-submissions---request-with-optional-prefer-header"></a>示例 3：获取提交 - 具有可选 Prefer 标头的请求
+### <a name="example-3-get-submissions---request-with-optional-prefer-header"></a>示例 3：获取提交 - 具有可选首选标头的请求
 #### <a name="request"></a>请求
 下面展示了示例请求。
 

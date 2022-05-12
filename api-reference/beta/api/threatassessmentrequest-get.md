@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 9f1803c736b272ae4ba853169569b37ee3980f35
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f8c1d77d4bbf43592452eb4788ecc502564785a0
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115613"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364786"
 ---
 # <a name="get-threatassessmentrequest"></a>获取 threatAssessmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "62115613"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索指定 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象的属性和关系。
+检索指定 [threatAssessmentRequest 对象的](../resources/threatassessmentrequest.md) 属性和关系。
 
 威胁评估请求可以是以下类型之一：
 
@@ -47,11 +47,11 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持以下 OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-|名称            |值    |Description                                                                                                                                                                 |
+|名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$expand         |string   |在 `$expand=results` 查询中用于检索威胁评估结果。                                                                                              |
+|$expand         |string   |在查询中使用 `$expand=results` 来检索威胁评估结果。                                                                                              |
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 
 ## <a name="request-headers"></a>请求标头
@@ -66,7 +66,7 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象。 返回该类型的属性： [mailAssessmentRequest](../resources/mailAssessmentRequest.md)、 [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md)、 [fileAssessmentRequest](../resources/fileAssessmentRequest.md)、 [urlAssessmentRequest](../resources/urlAssessmentRequest.md)。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和请求 [的 threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象。 返回该类型的属性： [mailAssessmentRequest](../resources/mailAssessmentRequest.md)、 [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md)、 [fileAssessmentRequest](../resources/fileAssessmentRequest.md)、 [urlAssessmentRequest](../resources/urlAssessmentRequest.md)。
 
 ## <a name="examples"></a>示例
 
@@ -309,7 +309,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>示例 4：获取 url 评估请求的属性
+### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>示例 4：获取 URL 评估请求的属性
 
 #### <a name="request"></a>请求
 
@@ -387,7 +387,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>示例 5：展开请求的威胁评估结果
+### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>示例 5：扩展请求的威胁评估结果
 
 #### <a name="request"></a>请求
 
@@ -464,7 +464,6 @@ Content-type: application/json
         "displayName": "Ronald Admin"
       }
     },
-    "results@odata.context": "https://graph.microsoft.com/beta/$metadata#informationProtection/threatAssessmentRequests('11922306-b25b-4605-ff0d-08d772fcf996')/microsoft.graph.mailAssessmentRequest/results",
     "results": [
         {
             "id": "63798129-a62c-4f9e-2c6d-08d772fcfb0e",

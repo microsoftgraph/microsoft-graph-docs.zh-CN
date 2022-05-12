@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a34e8541ba99da30027122195e63b9e19b7e76b4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2eebc9d8b84beff27d0f98bcb3a125d714ad0557
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130520"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364972"
 ---
 # <a name="get-callrecord"></a>获取 callRecord
 
@@ -18,10 +18,10 @@ ms.locfileid: "62130520"
 
 检索 [callRecord](../resources/callrecords-callrecord.md) 对象的属性和关系。
 
-有两种方法可以获取 **callRecord 的** **ID：**
+可通过两种方法获取 **callRecord** 的 **ID**：
 
-* 订阅 [终结点更改](/graph/api/resources/webhooks?view=graph-rest-1.0) `/communications/callRecords` 通知。
-* 使用 **呼叫 的 callChainId** [属性](../resources/call.md)。 呼叫记录仅在关联的呼叫完成之后可用。
+* 订阅到终结点的`/communications/callRecords`[更改通知](/graph/api/resources/webhooks?view=graph-rest-1.0)。
+* 使用 [调用](../resources/call.md)的 **callChainId** 属性。 调用记录仅在关联的调用完成后才可用。
 
 ## <a name="permissions"></a>权限
 
@@ -57,7 +57,7 @@ GET /communications/callRecords/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和请求的 [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -65,7 +65,7 @@ GET /communications/callRecords/{id}
 
 #### <a name="request"></a>请求
 
-下面是从 [callRecord](../resources/callrecords-callrecord.md)获取基本详细信息的请求示例。
+下面是请求从 [callRecord](../resources/callrecords-callrecord.md) 获取基本详细信息的示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -161,7 +161,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面是从 [callRecord](../resources/callrecords-callrecord.md)获取完整详细信息的请求示例，包括会话和分段组件。
+下面是请求从 [callRecord](../resources/callrecords-callrecord.md) 获取完整详细信息（包括会话和段组件）的示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -202,7 +202,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 如果会话列表被截断，则会提供一个值 `sessions@odata.nextLink` 来检索下一页会话。
+下面展示了示例响应。 如果会话列表被截断，将提供一个 `sessions@odata.nextLink` 值来检索下一页的会话。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -250,7 +250,6 @@ Content-type: application/json
             }
         }
     ],
-    "sessions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions(segments())",
     "sessions": [
         {
             "modalities": [
@@ -305,7 +304,6 @@ Content-type: application/json
                     }
                 }
             },
-            "segments@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions('e523d2ed-2966-4b6b-925b-754a88034cc5')/segments",
             "segments": [
                 {
                     "startDateTime": "2020-02-25T18:52:21.2169889Z",

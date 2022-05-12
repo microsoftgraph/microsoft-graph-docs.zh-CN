@@ -5,18 +5,18 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b0cc62b18db107d05e3317c6832eae310c8af978
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1a7d96d7db62a9457bd8d8883be7452ea19f961d
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134930"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366259"
 ---
 # <a name="list-chats"></a>列出聊天
 
 命名空间：microsoft.graph
 
-检索用户 [属于](../resources/chat.md) 的聊天列表。
+检索用户所属 [的聊天](../resources/chat.md) 列表。
 
 ## <a name="permissions"></a>权限
 
@@ -39,7 +39,7 @@ GET /chats
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法仅 (members 属性和 OData) 参数的查询， `$expand`  `$filter` [](/graph/query-parameters)以帮助自定义响应。
+此方法仅支持`$expand`**成员** 属性) 和 `$filter` [OData 查询参数](/graph/query-parameters)的 (，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -213,7 +213,6 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
-            "members@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -247,7 +246,6 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
-            "members@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3A561082c0f3f847a58069deb8eb300807%40thread.v2')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -297,7 +295,6 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
-            "members@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",

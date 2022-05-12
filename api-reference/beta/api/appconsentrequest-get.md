@@ -5,19 +5,19 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c4909341272128f21891a6d344bcac04cc2634e6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 95dcdfacdcc96b79966454bb058bc8911833e5b7
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991001"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365867"
 ---
 # <a name="get-appconsentrequest"></a>获取 appConsentRequest
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [appConsentRequest](../resources/appconsentrequest.md) 对象的属性和关系。
+读取 [appConsentRequest 对象的](../resources/appconsentrequest.md) 属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -39,7 +39,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持  `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -51,7 +51,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [appConsentRequest](../resources/appconsentrequest.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [appConsentRequest](../resources/appconsentrequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/java/get-appconsentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-appconsentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,7 +109,6 @@ Content-Type: application/json
   "appDisplayName": "Moodle",
   "consentType": "Dynamic",
   "pendingScopes": [],
-  "userConsentRequests@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
   "userConsentRequests": []
 }
 ```

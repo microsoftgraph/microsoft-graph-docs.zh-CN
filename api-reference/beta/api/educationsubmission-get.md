@@ -1,16 +1,16 @@
 ---
 title: 获取 educationSubmission
-description: '检索特定提交。 提交对象表示学生作业的工作。 与提交关联的资源表示此工作。 只有分配提交的学生才能查看和修改提交。 具有应用程序权限的教师或应用程序具有所有提交的完全访问权限。 '
+description: '检索特定提交。 提交对象表示学生作业的工作。 与提交关联的资源表示此工作。 只有分配给提交的学生才能查看和修改提交。 具有应用程序权限的教师或应用程序可以完全访问所有提交。 '
 author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cdc8de1c61ef136a974b786b5aa4756b8f02f3a0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9d9769f1f2053ce66d51a664d228961829203bd6
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099974"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365846"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
@@ -20,13 +20,13 @@ ms.locfileid: "62099974"
 
 检索特定 [提交](../resources/educationsubmission.md)。
 
-**提交** 对象表示学生作业 [的工作](../resources/educationassignment.md)。 与提交关联的 **资源表示** 此工作。
+**提交** 对象表示学生作业 [的工作。](../resources/educationassignment.md) 与 **提交** 关联的资源表示此工作。
 
-仅 **assignedTo** 学生可以看到和修改 **提交**。 具有应用程序权限的教师或应用程序具有所有提交的 **完全访问权限**。
+只有 **assignedTo** 学生才能查看和修改 **提交**。 具有应用程序权限的教师或应用程序可以完全访问所有 **提交**。
 
-教师的成绩和反馈是与此 [对象关联的 educationOutcome](../resources/educationoutcome.md) 的一部分。 只有具有应用程序权限的教师或应用程序才能添加或更改成绩和反馈。 在作业发布之前，学生将看不到成绩 **或** 反馈。
+教师的分数和反馈是与此对象关联的 [educationOutcome 的](../resources/educationoutcome.md) 一部分。 只有具有应用程序权限的教师或应用程序才能添加或更改成绩和反馈。 在 **作业** 发布之前，学生将看不到成绩或反馈。
 
-提供标头 `Prefer: include-unknown-enum-members` 以正确 **列出状态** 为 `reassigned` 提交的提交。 有关详细信息，请参阅示例部分。
+提供标头`Prefer: include-unknown-enum-members`以正确列出具有状态 **的**`reassigned`提交。 有关详细信息，请参阅示例部分。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,7 +45,7 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submi
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-以下是此方法的 `$expand` 可用选项：、、和 `outcomes` `resources` `submittedResources` `*` ，其中包括之前的所有选项。 有关详细信息，请参阅示例部分。
+下面是此方法的可用`$expand`选项：`outcomes`、`resources``submittedResources`和`*`，其中包括前面的所有选项。 有关详细信息，请参阅示例部分。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -56,7 +56,7 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submi
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-request-without-optional-prefer-header"></a>示例 1：没有可选首选标头的请求
@@ -100,9 +100,9 @@ GET https://graph.microsoft.com/beta/education/classes/59069eb2-2a09-4d90-bb19-2
 #### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了可读性，可能会缩短此处所示的响应对象。 
+>**笔记：** 此处显示的响应对象可能会为了可读性而缩短。 
 >
->如果尚未对此 [educationSubmission](../resources/educationsubmission.md)资源调用 [setUpResourcesFolder，](educationsubmission-setupResourcesFolder.md)则 **resourcesFolderUrl** 属性为 `null` 。
+>如果尚未对此 [educationSubmission](../resources/educationsubmission.md) 资源调用 [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md)，则 **resourcesFolderUrl** 属性为 `null`。
 
 <!-- {
   "blockType": "response",
@@ -207,9 +207,9 @@ Prefer: include-unknown-enum-members
 #### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了可读性，可能会缩短此处所示的响应对象。 
+>**笔记：** 此处显示的响应对象可能会为了可读性而缩短。 
 >
->如果尚未对此 [educationSubmission](../resources/educationsubmission.md)资源调用 [setUpResourcesFolder，](educationsubmission-setupResourcesFolder.md)则 **resourcesFolderUrl** 属性为 `null` 。
+>如果尚未对此 [educationSubmission](../resources/educationsubmission.md) 资源调用 [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md)，则 **resourcesFolderUrl** 属性为 `null`。
 
 <!-- {
   "blockType": "response",
@@ -269,7 +269,7 @@ Content-length: 712
 }
 ```
 
-### <a name="example-3-get-submission-with-expand-options"></a>示例 3：获取具有$expand提交
+### <a name="example-3-get-submission-with-expand-options"></a>示例 3：使用$expand选项获取提交
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
@@ -354,7 +354,6 @@ Content-length: 4492
             "displayName": null
         }
     },
-    "outcomes@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions('869369de-3e5a-89eb-6f2d-83cd88f860b5')/outcomes",
     "outcomes": [
         {
             "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
@@ -458,9 +457,7 @@ Content-length: 4492
             ]
         }
     ],
-    "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions('869369de-3e5a-89eb-6f2d-83cd88f860b5')/resources",
     "resources": [],
-    "submittedResources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions('869369de-3e5a-89eb-6f2d-83cd88f860b5')/submittedResources",
     "submittedResources": []
 }
 ```

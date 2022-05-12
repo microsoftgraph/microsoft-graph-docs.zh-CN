@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6a53b70d813ba0104bcd93f525866d8c73cf378e
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 86a2a9dc48c52923e51146eedc2dc4cd23c790d8
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246830"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365181"
 ---
 # <a name="create-roledefinitions"></a>创建 roleDefinitions
 
@@ -25,7 +25,7 @@ ms.locfileid: "65246830"
 - 设备管理 (Intune) 
 - 目录 (Azure AD) 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 根据 RBAC 提供程序和权限类型 (委派或应用程序) 需要，请从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权权限之前 [要小心](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) ，请参阅 [权限](/graph/permissions-reference)。 
 
@@ -35,7 +35,7 @@ ms.locfileid: "65246830"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All  |
+|应用程序 | RoleManagement.ReadWrite.CloudPC、CloudPC.ReadWrite.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>对于设备管理 (Intune) 提供程序
 
@@ -43,7 +43,7 @@ ms.locfileid: "65246830"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  DeviceManagementRBAC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | DeviceManagementRBAC.ReadWrite.All |
+|应用程序 | DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-a-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
@@ -51,7 +51,7 @@ ms.locfileid: "65246830"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|应用程序 | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -184,7 +184,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": []
 }
 ```

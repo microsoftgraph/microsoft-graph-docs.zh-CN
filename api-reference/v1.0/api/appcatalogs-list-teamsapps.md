@@ -1,26 +1,26 @@
 ---
 title: 列出 teamsApp
-description: 列出Teams应用程序目录中发布的应用程序的列表。
+description: 列出Teams租户应用目录中发布的应用。
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c8ec5421c2fe9ae71486b6beb5c65e2e9b19e318
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 7b2106e86cc2a3a719b88311b23b3a632a24c4c7
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805128"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366112"
 ---
 # <a name="list-teamsapp"></a>列出 teamsApp
 
 命名空间：microsoft.graph
 
-列出[应用程序](../resources/teamsapp.md)目录中Microsoft Teams应用程序。
-这包括来自 Microsoft Teams 商店的应用程序，以及租户应用程序目录 (组织的应用程序目录中) 。 若要仅从组织的应用程序目录中获取应用程序，请指定 `organization` 为请求 **中的 distributionMethod** 。
+[列出Microsoft Teams](../resources/teamsapp.md)应用目录中的应用。
+这包括来自Microsoft Teams存储的应用，以及组织应用目录中的应用 (租户应用目录) 。 若要仅从组织的应用目录中获取应用，请在请求中指定 `organization` 为 **distributionMethod** 。
 
 > [!NOTE]
-> `id` **teamsApp** 资源的 由`id`服务器生成，与在应用清单Teams不同。 开发人员`id`作为应用清单的一Teams提供的 标记在 `externalId` **teamsApp** 资源中。
+> `id` **teamsApp** 资源由服务器生成，与Teams应用清单中指定的资源不同`id`。 开发`id`人员作为Teams应用清单的一部分提供的标记为 `externalId` **teamsApp** 资源中的标记。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "62805128"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | AppCatalog.Read.All、AppCatalog.ReadWrite.All |
 
-> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您更新解决方案以使用上表中列出的备用权限，并避免今后使用这些权限。
+> **Note**： 仅支持使用 ** 标记的权限以实现向后兼容。 建议更新解决方案，以使用上表中列出的替代权限，并避免今后使用这些权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,9 +46,9 @@ GET /appCatalogs/teamsApps
 
 此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-Using `$expand=AppDefinitions` 将返回有关应用状态（如 **publishingState**）的更多信息，它反映应用提交评价状态，并返回应用是否已获得批准、被拒绝或仍在审核中。 
+Using `$expand=AppDefinitions` 将返回有关应用状态的详细信息，例如 **publishingState**，它反映应用提交评审状态，并返回应用是否已获得批准、拒绝或仍在审查中。 
 
-> **注意：** 可以筛选 [teamsApp](../resources/teamsapp.md) 对象的任何字段以缩短结果列表。 可以使用下列任一筛选操作：等于、不等于、和、或、不。
+> **注意：** 可以筛选 [teamsApp](../resources/teamsapp.md) 对象的任何字段，以缩短结果列表。 可以使用以下任一筛选器操作：等于、不等于、或不等于。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -62,7 +62,7 @@ Using `$expand=AppDefinitions` 将返回有关应用状态（如 **publishingSta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [teamsApp](../resources/teamsapp.md) 对象列表。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [teamsApp](../resources/teamsapp.md) 对象列表。
 
 ## <a name="examples"></a>示例
 
@@ -141,7 +141,7 @@ Content-Type: application/json
 
 ### <a name="example-2-list-applications-with-a-given-id"></a>示例 2：列出具有给定 ID 的应用程序
 
-以下示例列出具有给定 ID 的应用程序。
+以下示例列出了具有给定 ID 的应用程序。
 
 #### <a name="request"></a>请求
 
@@ -207,9 +207,9 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>示例 3：根据应用程序清单 ID Teams应用程序。
+### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>示例 3：根据Teams应用清单 ID 查找应用程序。
 
-以下示例列出了与在应用程序清单中指定的"id"Teams匹配的应用程序。 在此示例中，Teams 应用的清单 ID 为“cf1ba4c7-f94e-4d80-ba90-5594b641a8ee”。
+以下示例列出了与Teams应用清单中指定的“id”匹配的应用程序。 在此示例中，Teams 应用的清单 ID 为“cf1ba4c7-f94e-4d80-ba90-5594b641a8ee”。
 
 #### <a name="request"></a>请求
 
@@ -276,9 +276,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例 4：列出具有给定 ID 的应用程序，并返回提交审阅状态
+### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例 4：列出具有给定 ID 的应用程序，并返回提交评审状态
 
-以下示例列出具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState**，这反映了应用的提交审阅状态。 `Submitted` 表示评价挂起， `published` 表示应用已由 `rejected` 管理员批准，并且表示应用已遭管理员拒绝。
+以下示例列出了具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState**，这反映了应用的提交评审状态。 `Submitted` 表示评审处于挂起状态， `published` 表示应用已由管理员批准，意味着 `rejected` 该应用被管理员拒绝。
 
 #### <a name="request"></a>请求
 
@@ -359,9 +359,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>示例 5：仅列出目录中包含自动程序的应用的详细信息
+### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>示例 5：列出目录中仅包含机器人的应用的详细信息
 
-以下示例仅列出目录中包含自动程序的应用。
+以下示例仅列出目录中包含机器人的应用。
 
 #### <a name="request"></a>请求
 
@@ -425,7 +425,6 @@ Content-Type: application/json
             "externalId": "3CAB7543-216D-47C6-986C-6247670F4663",
             "displayName": "Ducks-3",
             "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions(bot())",
             "appDefinitions": [
                 {
                     "@odata.etag": "ImNOTW1CR2V1VzgwczlEblVidU00UHc9PSI=",
@@ -449,7 +448,6 @@ Content-Type: application/json
                             "userIdentityType": "aadUser"
                         }
                     },
-                    "bot@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions('OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ%3D')/bot/$entity",
                     "bot": {
                         "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
                     }
@@ -461,7 +459,6 @@ Content-Type: application/json
             "externalId": "0ebd3f4d-ca91-495b-a227-a17d298e22cc",
             "displayName": "Self-Install-App-E2E-Tests",
             "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions(bot())",
             "appDefinitions": [
                 {
                     "@odata.etag": "IkwzVDlMOTBSSEdTMFducHUyYkpjVmc9PSI=",
@@ -485,7 +482,6 @@ Content-Type: application/json
                             "userIdentityType": "aadUser"
                         }
                     },
-                    "bot@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions('MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk')/bot/$entity",
                     "bot": {
                         "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
                     }
@@ -498,5 +494,5 @@ Content-Type: application/json
 ## <a name="see-also"></a>另请参阅
 
 - [列出在团队中安装的应用](team-list-installedapps.md) <!-- - [List apps installed in a chat](chat-list-installedapps.md) -->
-- [列出在用户的个人范围内安装的应用](userteamwork-list-installedapps.md)
+- [列出用户个人范围内安装的应用](userteamwork-list-installedapps.md)
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3a016999b2b51b3cc0ec80cdc9681a14de15348c
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: bc796ce943230b695075e6295195424e2527286a
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587299"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365790"
 ---
 # <a name="get-organizationsettings"></a>获取 organizationSettings
 
@@ -20,11 +20,11 @@ ms.locfileid: "64587299"
 
 检索 [organizationSettings](../resources/organizationsettings.md) 对象的属性和关系，包括 **profileCardProperties**。
 
-此操作不会返回 [insightsSettings](../resources/insightssettings.md)。 根据见解的类型，可以使用列表 [itemInsights](organizationsettings-list-iteminsights.md) 或 list [peopleInsights 获取其设置](organizationsettings-list-peopleinsights.md)。
+此操作不会返回 [insightsSettings](../resources/insightssettings.md)。 根据见解的类型，可以使用 [列表项Insights](organizationsettings-list-iteminsights.md) 或 [list peopleInsights](organizationsettings-list-peopleinsights.md) 获取其设置。
 
 此操作不会返回 [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md)。 若要获取 [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md)，请使用 [list microsoftApplicationDataAccessSettings](organizationsettings-list-microsoftapplicationdataaccess.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,9 +32,9 @@ ms.locfileid: "64587299"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | User.Read、User.Read.All                    |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| Application                            | 不支持。                              |
+| 应用程序                            | 不支持。                              |
 
->**注意：** 对此操作使用委派权限要求登录用户具有租户管理员或全局管理员角色。
+>**注意：** 使用此操作的委派权限要求已登录用户具有租户管理员或全局管理员角色。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的 [organizationSettings](../resources/organizationsettings.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和请求的 [organizationSettings](../resources/organizationsettings.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -125,7 +125,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/$entity",
     "id": "",
-    "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/profileCardProperties",
     "profileCardProperties": [
       {
         "directoryPropertyName": "CustomAttribute1",

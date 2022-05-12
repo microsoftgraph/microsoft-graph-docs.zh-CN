@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3e50590e0c7708daa0b769ce817eb81cc4b8bff4
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 3f6519662c4c864c945347323f06698291afe14e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721903"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365897"
 ---
 # <a name="list-definitions"></a>列表定义
 
@@ -18,7 +18,7 @@ ms.locfileid: "63721903"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 对于创建的每个访问评审系列，将返回零个或多个 accessReviewScheduleDefinition 对象的列表，包括它们的所有嵌套属性。 这不包括关联的 accessReviewInstance 对象。
+检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 为创建的每个访问评审系列返回零个或多个 accessReviewScheduleDefinition 对象的列表，包括其所有嵌套属性。 这不包括关联的 accessReviewInstance 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "63721903"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
- 登录用户还必须具有允许其读取访问评审的目录角色。 请参阅访问评审 [角色和应用程序权限授权检查](../resources/accessreviewsv2-overview.md#role-and-application-permission-authorization-checks)。
+ 登录用户还必须具有允许他们读取访问评审的目录角色。 请参阅访问评审 [角色和应用程序权限授权检查](../resources/accessreviewsv2-overview.md#role-and-application-permission-authorization-checks)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,42 +41,42 @@ GET /identityGovernance/accessReviews/definitions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 、 `$select`、 `$top`和 `$skip``$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select``$top``$skip`OData 查询参数，`$filter`以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-此 API 的默认页面大小为 100 **accessReviewScheduleDefinition** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+此 API 的默认页面大小为 100 **个 accessReviewScheduleDefinition** 对象。 若要提高效率并避免因大型结果集而超时，请使用 `$skip` 分页和 `$top` 查询参数。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-### <a name="use-the-filter-query-parameter"></a>使用 $filter 查询参数
-accessReviewScheduleDefinition `$filter` 的 **scope** 属性支持具有 运算符的查询`contains`参数。 对请求使用以下格式：
+### <a name="use-the-filter-query-parameter"></a>使用$filter查询参数
+`$filter` accessReviewScheduleDefinition **的范围** 属性支持具有`contains`运算符的查询参数。 对请求使用以下格式：
 
 ```http
 GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
 ```
 
-的值 `{object}` 可以是下列值之一：
+其值 `{object}` 可以是下列值之一：
 
 |值|说明|
 |:---     |:---       |
-|/groups  |列出单个组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有 Microsoft 365 组) 。|
-|/groups/{group id}  |列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为包含来宾用户的所有 Microsoft 365 组) 。|
-|./members  |列出每个作用域为来宾用户的所有 Microsoft 365 AccessReviewScheduleDefinition。|
+|/groups  |列出单个组上的每个 accessReviewScheduleDefinition (排除范围限于所有Microsoft 365组的定义，其中) 来宾用户。|
+|/groups/{group id}  |列出特定组上的每个 accessReviewScheduleDefinition (排除范围限定到所有Microsoft 365组的定义，其中) 来宾用户。|
+|./members  |列出范围为具有来宾用户的所有Microsoft 365组的每个 accessReviewScheduleDefinition。|
 |accessPackageAssignments  |列出访问包上的每个 accessReviewScheduleDefinition。|
 |roleAssignmentScheduleInstances  |列出分配给特权角色的服务主体的每个 accessReviewScheduleDefinition。|
 
-**accessReviewInactiveUserQueryScope** `$filter` 或 **principalResourceMembershipScope 不支持查询参数**。
+`$filter` **accessReviewInactiveUserQueryScope** 或 **principalResourceMembershipScope** 不支持查询参数。
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 无。
 
 ## <a name="request-body"></a>请求正文
-不提供请求正文。
+请勿提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象数组。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象数组。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a>示例 1：列出前 100 个访问评审定义
+### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a>示例 1：列出前一百个访问评审定义
 
 #### <a name="request"></a>请求
 
@@ -180,10 +180,10 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>示例 2：检索范围为租户中Microsoft 365组的所有访问评审定义
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>示例 2：检索范围为租户中所有Microsoft 365组的所有访问评审定义
 
 #### <a name="request"></a>请求
-以下示例显示一个请求，请求检索范围为租户中所有Microsoft 365组的所有访问评审系列。
+以下示例演示了检索租户中所有Microsoft 365组中的所有访问评审系列的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -287,7 +287,6 @@ Content-type: application/json
                     }
                 ]
             },
-            "instances@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('cc701697-762c-439a-81f5-f58d680fde76')/instances",
             "instances": []
         }
     ]

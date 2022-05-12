@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2d309c618355728a0fcc9cfeabaf232e4b6cad9e
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 06facfc74ae014a8f409869c446782a614d2c6fc
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224721"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366063"
 ---
 # <a name="get-chat"></a>获取聊天
 
@@ -238,7 +238,6 @@ Content-type: application/json
         "isHidden": false,
         "lastMessageReadDateTime": "2021-08-09T17:38:24.101Z"
     },
-    "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ab8577894a63548969c5c92bb9c80c5e1%40thread.v2')/members",
     "members": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",

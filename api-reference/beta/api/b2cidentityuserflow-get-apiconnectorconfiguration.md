@@ -5,12 +5,12 @@ author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2ca6062f803cfe1323d5de880369693babe5b91b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5fb9cd8a9cc84d533a77ae0efc1b8122f8576cce
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "63332406"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365972"
 ---
 # <a name="get-userflowapiconnectorconfiguration"></a>获取 userFlowApiConnectorConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "63332406"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [b2cIdentityUserFlow](../resources/userFlowApiConnectorConfiguration.md) 中的 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 属性，详细说明为用户流启用的 API 连接器。
+获取 [b2cIdentityUserFlow](../resources/userFlowApiConnectorConfiguration.md) 中的 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 属性，详细介绍为用户流启用的 API 连接器。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +48,7 @@ GET identity/b2cUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData `$expand` 查询参数来帮助自定义响应。 例如，若要检索 和 步骤的 `postFederationSignup` `postAttributeCollection` API 连接器，请添加 `$expand=postFederationSignup,postAttributeCollection`。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$expand` OData 查询参数，以帮助自定义响应。 例如，若要检索 API 连接器的 `postFederationSignup` 和 `postAttributeCollection` 步骤，请添加 `$expand=postFederationSignup,postAttributeCollection`。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -62,7 +62,7 @@ GET identity/b2cUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 响应 `200 OK` 代码和 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 对象。
+如果成功，此方法将返回 `200 OK` 响应代码和 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -117,7 +117,6 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('B2C_1_testuserflow')/apiConnectorConfiguration(postFederationSignup(),postAttributeCollection())",
-    "postFederationSignup@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('B2C_1_testuserflow')/apiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/postFederationSignup/$entity",
     "postFederationSignup": {
         "id": "<guid1>",
         "displayName": "Test API Connector 1",
@@ -128,7 +127,6 @@ Content-Type: application/json
             "password": "******"
         }
     },
-    "postAttributeCollection@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('B2C_1_testuserflow')/apiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/postAttributeCollection/$entity",
     "postAttributeCollection": {
         "id": "<guid2>",
         "displayName": "Test API Connector 2",

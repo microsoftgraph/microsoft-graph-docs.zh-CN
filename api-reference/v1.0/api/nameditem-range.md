@@ -3,21 +3,21 @@ title: NamedItem：Range
 description: 返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: c815be7955f28a57db3900808066944dac247541
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: fad8ae7da8b207b8ea477a54b4ec71d1cafa047d
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943682"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366028"
 ---
 # <a name="nameditem-range"></a>NamedItem：Range
 
 命名空间：microsoft.graph
 
 返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

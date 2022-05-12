@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 49281f2f1304c776791ba2fdc04691c21daf151e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f00e3930b337c9789cf80ff7dc1c4bac6ce8473e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091953"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365930"
 ---
 # <a name="get-printershare"></a>获取 printerShare
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "62091953"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅。
+除以下权限外，用户或应用的租户还必须具有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -40,16 +40,16 @@ GET /print/printers/{printerId}/shares/{printerShareId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数（包括 和 ） `$select` `$expand` 来帮助自定义响应。 例如： 
+此方法支持某些 OData 查询参数，包括 `$select` 和 `$expand`帮助自定义响应。 例如： 
 
-例如 
+e.g.g. 
 ```http
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-### <a name="exceptions"></a>Exceptions
-* `$count`运算符不受支持。
+### <a name="exceptions"></a>例外
+* 不支持该 `$count` 运算符。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -59,16 +59,16 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [printerShare](../resources/printershare.md) 对象。
-默认情况下，该响应将不包含 [printerCapabilities](../resources/printerCapabilities.md)。 若要获取 **printerCapabilities，** 请使用 `$select` 查询参数。 
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [printerShare](../resources/printershare.md) 对象。
+默认情况下，响应将不包含 [printerCapabilities](../resources/printerCapabilities.md)。 若要获取 **printerCapabilities**，请使用 `$select` 查询参数。 
 
-## <a name="response"></a>响应
+<!--## Response
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [printerShare](../resources/printershare.md) 对象。
+If successful, this method returns a `200 OK` response code and a [printerShare](../resources/printershare.md) object in the response body.-->
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-printershare"></a>示例 1：获取 printerShare
+### <a name="example-1-get-a-printershare"></a>示例 1：获取打印机共享
 
 #### <a name="request"></a>请求
 
@@ -186,7 +186,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-a-printershare-and-its-capabilities"></a>示例 2：获取 printerShare 及其功能
+### <a name="example-2-get-a-printershare-and-its-capabilities"></a>示例 2：获取打印机共享及其功能
 
 #### <a name="request"></a>请求
 

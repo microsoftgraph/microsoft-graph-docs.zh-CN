@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0b380851d0eee45411dc02908d2b905b6ba590ec
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2f8a2dcd2ebb53db5285c77888408be335d92147
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095723"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365783"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -21,8 +21,8 @@ ms.locfileid: "62095723"
 采用 JSON 或 MIME 格式创建新邮件的草稿。
 
 使用 JSON 格式时，可以：
-- 包括附件[](../resources/attachment.md)。
-- 使用 [提及](../resources/mention.md) 功能在新邮件中呼叫其他用户。
+- 包括 [附件](../resources/attachment.md)。
+- 使用 [提及](../resources/mention.md) 在新消息中调用另一个用户。
 - 随后 [更新](../api/message-update.md)草稿以将内容添加到 **正文**，或更改其他邮件属性。
 
 使用 MIME 格式时：
@@ -33,7 +33,7 @@ ms.locfileid: "62095723"
 
 在后续操作中[发送](../api/message-send.md)草稿消息。
 
-或者，[在单个操作中](../api/user-sendmail.md)发送新邮件，或创建转发草稿，以[](../api/message-createforward.md)[答复](../api/message-createreply.md)或[全部](../api/message-createreplyall.md)答复现有邮件。
+或者，在单个操作中[发送新消息](../api/user-sendmail.md)，或创建[转发、](../api/message-createforward.md)[答复](../api/message-createreply.md)或[答复](../api/message-createreplyall.md)现有邮件的草稿。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,31 +55,31 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。|
+| Authorization  | string  | 持有者 {token}。|
 | Content-Type | string  | 实体正文中的数据性质。必需。<br/> 用于 `application/json` JSON 对象和 `text/plain` MIME 内容 |
 
 ## <a name="request-body"></a>请求正文
-使用 JSON 格式时，提供 message 对象的 JSON [表示](../resources/message.md) 形式。
+使用 JSON 格式时，请提供 [消息](../resources/message.md) 对象的 JSON 表示形式。
 
 当指定 MIME 格式的正文时，请提供 MIME 内容与适用的 Internet 邮件头（“收件人”、“抄送”、“密件抄送”、“主题”）所有内容在请求正文中编码为 **base64** 格式。
 
-若要使用 **提及** 功能在新邮件中呼叫其他用户，请执行以下操作：
-- 在请求 **正文中包括必需的 toRecipients** 属性 **、mentions** 属性和任何可写邮件属性。
-- 对于 **mentions** 属性中的每个提及，必须指定 **提及的** 属性。
+若要使用 **提及** 在新消息中调用另一个用户，请执行以下操作：
+- 在请求正文中包括必需 **的 toRecipients** 属性、 **提及** 属性和任何可写邮件属性。
+- 对于提及属性中的每个 **提及** ，必须指定 **上述** 属性。
 
 由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 [响应](../resources/message.md) 代码和 message 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [消息](../resources/message.md) 对象。
 
 如果请求正文包含错误的 MIME 内容，此方法将返回 `400 Bad request` 和以下错误消息：“无效的 base64 字符串 MIME 内容”。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-create-a-message-draft-in-json-format"></a>示例 1：创建 JSON 格式的邮件草稿
+### <a name="example-1-create-a-message-draft-in-json-format"></a>示例 1：创建 JSON 格式的消息草稿
 #### <a name="request"></a>请求
-下面是一个请求创建新邮件草稿的示例。
+下面是创建新消息草稿的请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -203,9 +203,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-draft-message-that-includes-an--mention"></a>示例 2：创建包含 @-mention 的草稿邮件
+### <a name="example-2-create-a-draft-message-that-includes-an--mention"></a>示例 2：创建包含 @-mention 的草稿消息
 #### <a name="request"></a>请求
-下一个示例显示 Randi Welch 发往 Samantha 一份草稿电子邮件。 邮件还包括另一个用户 Dana Swope 的提及。
+下一个示例显示了兰迪·韦尔奇给萨曼莎·布斯的草稿电子邮件。 该消息还包括另一个用户 Dana Swope 的提及。
 
 在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
 
@@ -301,7 +301,6 @@ Content-type: application/json
   "mentionsPreview":{
     "isMentioned":false
   },
-  "mentions@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages('AQMkADJmMTUAAAW1fsAAAAA%3D%3D')/mentions",
   "mentions":[
     {
       "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAW1fsAAAAA==')/mentions('4577bba4-b063-4cea-9073-6f7ca815fcec')",
@@ -326,7 +325,7 @@ Content-type: application/json
 
 ```
 
-### <a name="example-3-create-a-draft-message-that-includes-custom-internet-message-headers"></a>示例 3：创建包含自定义 Internet 邮件头的草稿邮件
+### <a name="example-3-create-a-draft-message-that-includes-custom-internet-message-headers"></a>示例 3：创建包含自定义 Internet 消息标头的草稿消息
 #### <a name="request"></a>请求
 
 
@@ -460,7 +459,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-a-message-draft-in-mime-format"></a>示例 4：创建 MIME 格式的邮件草稿
+### <a name="example-4-create-a-message-draft-in-mime-format"></a>示例 4：创建 MIME 格式的消息草稿
 #### <a name="request"></a>请求
 
 <!-- {

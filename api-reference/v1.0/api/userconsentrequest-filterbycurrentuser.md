@@ -5,18 +5,18 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cc518ecf0ed1e7cccae32c1d09aecb7997e15381
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 968cc909c0d9a781af8daaf9c689406bcd31512a
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008320"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365692"
 ---
 # <a name="userconsentrequest-filterbycurrentuser"></a>userConsentRequest：filterByCurrentUser
 
 命名空间：microsoft.graph
 
-检索用于访问 [指定应用程序的 userConsentRequest](../resources/userconsentrequest.md) 对象的集合，当前用户是该应用的审阅者。
+检索用于访问指定应用 [的 userConsentRequest](../resources/userconsentrequest.md) 对象的集合，当前用户是该应用的审阅者。
 
 ## <a name="permissions"></a>权限
 
@@ -45,11 +45,11 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 |属性|类型|说明|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|筛选以查询当前用户是审阅者的 appConsentRequest 对象的 userConsentRequest 对象。 允许的值为 `reviewer` 。 必需。|
+|on|consentRequestFilterByCurrentUserOptions|筛选以查询 appConsentRequest 对象的 userConsentRequest 对象，当前用户是该对象的审阅者。 允许的值为 `reviewer`. 必填。|
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此函数支持  `$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此函数支持 `$filter` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -63,13 +63,13 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [userConsentRequest](../resources/userconsentrequest.md) 对象集合。
+如果成功，此函数在响应正文中返回 `200 OK` 响应代码和 [userConsentRequest](../resources/userconsentrequest.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-在此请求中，将列出当前用户是审阅者且状态为 的所有 **userConsentRequest** 对象 `Completed` 。
+在此请求中，列出当前用户是审阅者且状态为`Completed`的所有 **userConsentRequest** 对象。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/java/userconsentrequest-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/userconsentrequest-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -133,10 +133,8 @@ Content-Type: application/json
           "mail": "AlexW@contoso.com"
         }
       },
-      "approval@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/$entity",
       "approval": {
         "id": "acef2660-d194-4943-b927-4fe4fb5cb7e3",
-        "stages@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/stages",
         "stages": [
           {
             "id": "f5a4ca4a-1316-4872-8112-993c55dab51e",

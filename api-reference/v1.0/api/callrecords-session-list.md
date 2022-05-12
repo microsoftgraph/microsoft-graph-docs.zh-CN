@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 05d2878cf30f7b443ca0661588d0a4e1285a8859
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 15fcab480cd6e125d242d38846ecb01b922f0022
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107739"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364973"
 ---
 # <a name="list-callrecord-sessions"></a>列出 callRecord 会话
 
 命名空间：microsoft.graph.callRecords
 
-检索与[callRecord](../resources/callrecords-callrecord.md)对象关联的会话列表。 [](../resources/callrecords-session.md)
+检索与 [callRecord](../resources/callrecords-callrecord.md) 对象关联的[会话](../resources/callrecords-session.md)列表。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ GET /communications/callRecords/{id}/sessions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和[](../resources/callrecords-session.md)请求的会话对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和请求的 [会话](../resources/callrecords-session.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -60,7 +60,7 @@ GET /communications/callRecords/{id}/sessions
 
 #### <a name="request"></a>请求
 
-下面是请求获取[callRecord](../resources/callrecords-callrecord.md)的[会话](../resources/callrecords-session.md)列表的示例。
+下面是请求获取 [callRecord](../resources/callrecords-callrecord.md) 会[话](../resources/callrecords-session.md)列表的示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -178,11 +178,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-session-list-with-segments"></a>示例 2：获取包含分段的会话列表
+### <a name="example-2-get-session-list-with-segments"></a>示例 2：获取包含段的会话列表
 
 #### <a name="request"></a>请求
 
-下面是请求获取包含分段的[callRecord](../resources/callrecords-callrecord.md)的[](../resources/callrecords-session.md)会话[列表的示例。](../resources/callrecords-segment.md)
+下面是请求获取包含段的 [callRecord](../resources/callrecords-callrecord.md) 的[会话](../resources/callrecords-session.md)列表[的](../resources/callrecords-segment.md)示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -294,7 +294,6 @@ Content-type: application/json
                     }
                 }
             },
-            "segments@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions('e523d2ed-2966-4b6b-925b-754a88034cc5')/segments",
             "segments": [
                 {
                     "startDateTime": "2020-02-25T18:52:21.2169889Z",

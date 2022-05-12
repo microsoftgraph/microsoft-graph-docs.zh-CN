@@ -5,16 +5,16 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fd0a387fb49f75328c4d24618494c34d083686c6
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 7445e4be152d9f1895c66585d368e91ead9585c9
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206459"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366049"
 ---
 # <a name="create-conversation"></a>创建对话
 
-命名空间：microsoft.graph 通过包括线程和帖子创建新 [对话](../resources/conversation.md) 。
+命名空间：microsoft.graph 通过包括线程和帖子创建新[会话](../resources/conversation.md)。
 
 使用[回复线程](conversationthread-reply.md)或[回复帖子](post-reply.md)进一步发布到该对话。
 
@@ -26,7 +26,7 @@ ms.locfileid: "65206459"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | Group.ReadWrite.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| Application                            | 不支持。                              |
+| 应用程序                            | 不支持。                              |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -147,7 +147,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations/$entity",
     "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQADamkjVbzvRKnUq1oBRdwhk=",
-    "threads@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQADamkjVbzvRKnUq1oBRdwhk%3D')/threads",
     "threads": [
         {
             "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAANqaSNVvO9EqdSrWgFF3CGRAANqaSNVvO9EqdSrWgFF3CGQ=="

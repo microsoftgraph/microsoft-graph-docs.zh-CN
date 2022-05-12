@@ -3,26 +3,26 @@ title: 创建 printTaskDefinition
 description: 创建新的任务定义。
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: c9ef9a2726238fdcee143193610d5a70adf75f60
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d963e05888b45d42444cb88013c8558dffe9c32d
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117002"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366238"
 ---
 # <a name="create-printtaskdefinition"></a>创建 printTaskDefinition
 命名空间：microsoft.graph
 
 创建新的任务定义。
 
-有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此 API 向通用打印添加拉取打印支持的详细信息，请参阅 [扩展通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+除了以下权限外，用户的租户还必须具有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -49,11 +49,11 @@ POST /print/taskDefinitions
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [printTaskDefinition](../resources/printtaskdefinition.md) 对象的 JSON 表示形式。
 
-[printTaskDefinition](../resources/printtaskdefinition.md)对象的 **id** 和 **createdBy.appId** 属性会在创建资源时自动设置。
+[printTaskDefinition](../resources/printtaskdefinition.md) 对象的 **ID** 和 **createdBy.appId** 属性在资源创建时自动设置。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [printTaskDefinition](../resources/printtaskdefinition.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [printTaskDefinition](../resources/printtaskdefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 

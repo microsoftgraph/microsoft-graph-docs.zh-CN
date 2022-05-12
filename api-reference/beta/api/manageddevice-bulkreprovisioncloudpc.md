@@ -1,16 +1,16 @@
 ---
 title: managedDevice：bulkReprovisionCloudPc
-description: 使用 Intune 托管的设备 ID 批量重新预配一组云电脑设备。
+description: 使用Intune托管设备 ID 批量重新预配一组云电脑设备。
 author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 2c98d596fad136245eae59daef954256f7045ad1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 314c7170ff700abfb2ae59b303610b4ba309c7eb
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030057"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365055"
 ---
 # <a name="manageddevice-bulkreprovisioncloudpc"></a>managedDevice：bulkReprovisionCloudPc
 
@@ -18,9 +18,9 @@ ms.locfileid: "61030057"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 [Intune](../resources/cloudpc.md) 托管的设备 ID 批量重新预配一组云电脑设备。
+使用Intune托[管设备](../resources/cloudpc.md) ID 批量重新预配一组云电脑设备。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,9 +50,9 @@ POST /deviceManagement/managedDevices/bulkReprovisionCloudPc
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 Intune 托管设备的 ID 的 JSON 表示形式。
+在请求正文中，提供Intune托管设备的 ID 的 JSON 表示形式。
 
-下表显示批量重新设置一组云电脑设备时所需的属性。
+下表显示了批量重新预配一组云电脑设备时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -60,7 +60,7 @@ POST /deviceManagement/managedDevices/bulkReprovisionCloudPc
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，此操作在响应正文中返回 `200 OK` 响应代码和 [cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -98,7 +98,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/manageddevice-bulkreprovisioncloudpc-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/manageddevice-bulkreprovisioncloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,10 +109,28 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult"
 }
 -->
 
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult",
+    "successfulDeviceIds": [
+        "30d0e128-de93-41dc-89ec-33d84bb662a0"
+    ],
+    "failedDeviceIds": [
+        "7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
+    ],
+    "notFoundDeviceIds": [
+    ],
+    "notSupportedDeviceIds": [
+    ]
+  }
+}
 ```

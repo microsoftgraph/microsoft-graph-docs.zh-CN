@@ -1,16 +1,16 @@
 ---
 title: 获取 meetingRegistration
-description: 获取联机会议注册信息。
+description: 获取联机会议的注册信息。
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e236bd73973d67305ef43be1809d24ca5d7e5339
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 57108b112413d34fd9cf948e4c5ed5324052b28b
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102823"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365712"
 ---
 # <a name="get-meetingregistration"></a>获取 meetingRegistration
 
@@ -18,7 +18,7 @@ ms.locfileid: "62102823"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表组织者获取与[onlineMeeting 关联的 meetingRegistration](../resources/onlinemeeting.md)详细信息。 [](../resources/meetingregistration.md)
+代表组织者获取与 [onlineMeeting](../resources/onlinemeeting.md) 关联的 [meetingRegistration](../resources/meetingregistration.md) 详细信息。
 
 ## <a name="permissions"></a>权限
 
@@ -41,7 +41,7 @@ GET /me/onlineMeetings/{id}/registration
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 > [!TIP]
-> 默认情况下 **不返回 customQuestions** 属性。 若要检索 **行中的 customQuestions，** 请使用 `expand` 查询选项，如本主题稍后的示例所示。
+> 默认情况下不会返回 **customQuestions** 属性。 若要按行检索 **customQuestions** ，请使用 `expand` 查询选项，如本主题后面的示例所示。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,7 +55,7 @@ GET /me/onlineMeetings/{id}/registration
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [meetingRegistration](../resources/meetingregistration.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [meetingRegistration](../resources/meetingregistration.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -133,7 +133,6 @@ Content-Type: application/json
       "bio": "CFO"
     }
   ],
-  "customQuestions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc17674c-81d9-4adb-bfb2-8f6a442e4622')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/microsoft.graph.meetingRegistration/microsoft.graph.meetingRegistration/customQuestions",
   "customQuestions": [
     {
       "id": "MSNhMjVlZmUyMy01MDBhLTQwYjItYjUwZS04YWU5EG9hX3gwMDIwX2RldmU=",

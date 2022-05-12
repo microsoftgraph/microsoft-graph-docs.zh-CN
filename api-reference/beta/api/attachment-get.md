@@ -1,16 +1,16 @@
 ---
 title: 获取附件
-description: 读取附件的属性和关系、附加到事件、邮件、Outlook或帖子。
+description: 读取附加到事件、消息、Outlook任务或帖子的附件的属性和关系。
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: f49ee7d3aebb7aca29e39ad158dc8f0cceb7a07d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 806d6f606b1978767e2d50b9ca848555e58ec87e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094993"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365755"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -20,7 +20,7 @@ ms.locfileid: "62094993"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-读取附加到用户事件、邮件、任务或组帖子的附件Outlook关系或原始[内容](../resources/post.md)。 [](../resources/event.md) [](../resources/message.md) [](../resources/outlooktask.md) 
+读取附加到用户[事件](../resources/event.md)、[消息](../resources/message.md)、[Outlook任务](../resources/outlooktask.md)或组[帖子](../resources/post.md)的附件的属性、关系或原始内容。 
 
 附件可以是下列类型之一：
 
@@ -33,21 +33,21 @@ ms.locfileid: "62094993"
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>获取文件或项目附件的原始内容
 你可以附加路径段 `/$value` 以获取文件或项目附件的原始内容。 
 
-对于文件附件，内容类型基于其原始内容类型。 请参阅示例[6。](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message)
+对于文件附件，内容类型基于其原始内容类型。 请参阅示 [例 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message)。
 
 对于作为[联系人](../resources/contact.md)、[事件](../resources/event.md)或[邮件](../resources/message.md)的项目附件，返回的原始内容为 MIME 格式。
 
 | 项目附件类型  | 返回的原始内容 |
 |:-----------|:----------|
-| **联系人** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME 格式。 请参阅[示例 7。](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message) |
-| **事件** | iCal MIME 格式。 请参阅[示例 8。](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message) |
-| **邮件** | MIME 格式。 请参阅[示例 9。](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message) |
+| **联系人** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME 格式。 请参阅 [示例 7](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)。 |
+| **事件** | iCal MIME 格式。 请参阅 [示例 8](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message)。 |
+| **邮件** | MIME 格式。 请参阅 [示例 9](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message)。 |
 
 尝试获取参考附件的 `$value` 时返回 HTTP 405。
 
 ## <a name="permissions"></a>权限
 
-根据附件附加到的资源 (**事件**、邮件 **、outlookTask** 或 post **)** 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据附件附加到的资源 (**事件**、**消息**、**outlookTask** 或 **帖子**) 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最低特权。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -63,12 +63,12 @@ ms.locfileid: "62094993"
 
 ## <a name="http-request"></a>HTTP 请求
 
-本节显示支持附件的每个实体 ([事件](../resources/event.md)、[邮件](../resources/message.md)、Outlook任务) HTTP GET 请求语法： [](../resources/outlooktask.md) [](../resources/post.md)
+本部分介绍支持附件的每个实体 ([事件](../resources/event.md)、[消息](../resources/message.md)、[Outlook任务](../resources/outlooktask.md)和[帖子) ](../resources/post.md)的 HTTP GET 请求语法：
 
-- 若要获取附件的属性和关系，请指定要索引到附件集合、附加到指定事件、邮件、Outlook任务或[](../resources/event.md)post[](../resources/message.md)[实例的](../resources/outlooktask.md)[附件](../resources/post.md)ID。
+- 若要获取附件的属性和关系，请指定要索引到附件集合的 **附件** ID、附加到指定 [的事件](../resources/event.md)、[消息](../resources/message.md)、[Outlook任务](../resources/outlooktask.md)或 [帖子](../resources/post.md)实例。
 - 如果附件是文件或 Outlook 项目（联系人、事件或邮件），则可以通过将路径段 `/$value` 附加到请求 URL 来进一步获取附件的原始内容。
 
-事件的[附件：](../resources/event.md)
+[事件](../resources/event.md)的附件：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -83,7 +83,7 @@ GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 GET /groups/{id}/events/{id}/attachments/{id}
 -->
 
-用户邮箱 [中的](../resources/message.md) 邮件附件：
+用户邮箱中 [邮件](../resources/message.md) 的附件：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -93,7 +93,7 @@ GET /me/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 
-用户邮箱 [的](../resources/message.md) 顶级 [mailFolder](../resources/mailfolder.md) 中包含的邮件附件：
+用户邮箱中顶级 [mailFolder](../resources/mailfolder.md) [中包含的消息](../resources/message.md)的附件：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -103,7 +103,7 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-用户邮箱 [中](../resources/message.md) [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的邮件附件：
+包含在用户邮箱中 [mailFolder](../resources/mailfolder.md) 子文件夹中[的消息](../resources/message.md)的附件：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -113,9 +113,9 @@ GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$v
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-前面的示例显示了一个嵌套级别，但邮件可以位于子级的子级中，等等。
+前面的示例显示了一个级别的嵌套，但消息可以位于子级子级中，等等。
 
-任务Outlook[附件](../resources/outlooktask.md)：
+[Outlook任务](../resources/outlooktask.md)的附件：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -125,7 +125,7 @@ GET /me/outlook/tasks/{id}/attachments/{id}/$value
 GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
-属于组[对话](../resources/post.md)的[线程](../resources/conversationthread.md)中的帖子附件： [](../resources/conversation.md)
+属于组[对话](../resources/conversation.md)的[线程](../resources/conversationthread.md)中[帖子](../resources/post.md)的附件：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -153,7 +153,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 
 ## <a name="response"></a>响应
 
-如果成功，GET 方法将返回 响应 `200 OK` 代码。 
+如果成功，GET 方法将返回 `200 OK` 响应代码。 
 
 如果要获取附件的属性和关系，则响应正文应包含 [attachment](../resources/attachment.md) 对象。
 返回附件类型的属性：[fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md) 或 [referenceAttachment](../resources/referenceattachment.md)。
@@ -166,7 +166,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 
 #### <a name="request"></a>请求
 
-下面是请求获取邮件的文件附件属性的示例。
+下面是请求获取邮件上文件附件的属性的示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -350,7 +350,6 @@ Content-type: application/json
   "contentType":null,
   "size":32005,
   "isInline":false,
-  "item@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
   "item":{
     "@odata.type":"#microsoft.graph.message",
     "id":"",
@@ -445,7 +444,6 @@ Content-type: application/json
     "contentType": null,
     "size": 465916,
     "isInline": false,
-    "item@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
     "item": {
         "@odata.type": "#microsoft.graph.message",
         "id": "",
@@ -493,7 +491,6 @@ Content-type: application/json
         "flag": {
             "flagStatus": "notFlagged"
         },
-        "attachments@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/microsoft.graph.itemAttachment/item/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/attachments",
         "attachments": [
             {
                 "@odata.type": "#microsoft.graph.fileAttachment",

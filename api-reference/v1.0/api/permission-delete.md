@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: 删除对项目的访问权限
+title: 删除对项的访问权限
 ms.localizationpriority: medium
 description: 删除 DriveItem 访问权限。
-ms.prod: ''
+ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: ffe87066c4a1d99b6458629fcbbc58318585b636
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 36e6a2e455f65ea2975fc751441042d3774356ea
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072839"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365923"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>从文件或文件夹中删除共享权限
 
@@ -92,7 +92,7 @@ DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a>说明
+## <a name="remarks"></a>注解
 
 * 具有 `personal`（OneDrive 个人版）**driveType** 的 [驱动器](../resources/drive.md) 无法创建或修改根 DriveItem 上的权限。 
 

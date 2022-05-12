@@ -1,26 +1,26 @@
 ---
 title: 列出用户的分配
-description: 返回分配给用户的所有课程的工作分配列表。
+description: 返回分配给所有类的用户的分配列表。
 ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4e3a9cfac827c7bc6e2b6d7c8afe9d838b25d291
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: ed12fe80755feac3ac543590a33b2f851457da2a
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516136"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365013"
 ---
 # <a name="list-assignments-of-a-user"></a>列出用户的分配
 
 命名空间：microsoft.graph
 
-返回分配给 [educationUser 的所有课程的 educationAssignment](../resources/educationassignment.md) [列表](../resources/educationclass.md)。[](../resources/educationuser.md) 
+返回分配给所有[类](../resources/educationclass.md)的 [educationUser 的](../resources/educationuser.md) [educationAssignment](../resources/educationassignment.md) 列表。 
 
-此方法允许呼叫者在一次通话中查找属于学生或教师的所有作业，而不必从每个 **班级请求****作业**。 **工作** 分配列表包含从类命名空间内获取工作分配的详细信息 **所需的** 内容。 对所有其他操作使用为 **工作分配** 定义的方法。
+此方法允许调用方在单个呼叫中查找属于学生或教师的所有 **作业**，而不必从每个 **班级** 请求 **作业**。 **分配** 列表包含从 **类** 命名空间中获取 **分配** 的详细信息所需的内容。 使用为所有其他操作的 **分配** 定义的方法。
 
-> **注意：**`assignedDateTime`、 `instructions`、 `assignTo`和 `resourcesFolderUrl` `webUrl` 属性将始终显示 null。
+> **注意：**、`instructions``assignedDateTime`、`assignTo``resourcesFolderUrl`和`webUrl`属性将始终显示为 null。
 
 ## <a name="permissions"></a>权限
 
@@ -30,11 +30,11 @@ ms.locfileid: "63516136"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
-| Application                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
+| 应用程序                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
 
 调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 的终结点时不支持应用程序权限。
 
-终结点 `/users/{user-id}` 使用委派权限和应用程序权限。
+终结 `/users/{user-id}` 点使用委派权限和应用程序权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /education/users/{user-id}/assignments
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 和 `$submissions` `$categories` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$submissions` [OData 查询参数](/graph/query-parameters)，`$categories`以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,11 +59,11 @@ GET /education/users/{user-id}/assignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationAssignment](../resources/educationassignment.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [educationAssignment](../resources/educationassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-assignments-of-the-logged-in-user"></a>示例 1：获取已登录用户的分配
+### <a name="example-1-get-the-assignments-of-the-logged-in-user"></a>示例 1：获取登录用户的分配
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -205,7 +205,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-assignments-of-a-user"></a>示例 2：获取用户的工作分配
+### <a name="example-2-get-assignments-of-a-user"></a>示例 2：获取用户的分配
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -252,7 +252,7 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 
 #### <a name="response"></a>响应
 
-如果用户尝试查询与自己的用户 ID 不同的用户 ID，此方法将返回 响应 `403 Forbidden` 代码。
+如果用户尝试查询与自己的用户 ID 不同的用户 ID，则此方法将返回 `403 Forbidden` 响应代码。
 
 下面展示了示例响应。 
 
@@ -352,7 +352,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-user-assignments-with-expand-submissions"></a>示例 3：通过展开提交获取用户分配
+### <a name="example-3-get-user-assignments-with-expand-submissions"></a>示例 3：使用扩展提交获取用户分配
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -401,7 +401,7 @@ GET https://graph.microsoft.com/v1.0/education/users/80cefd93-8d88-40e2-b5d3-678
 
 下面展示了示例响应。 
 
-> **注意：** 如果用户具有学生角色，它将展开提交，并且对于教师角色将为 null。
+> **注意：** 如果用户具有学生角色，并且教师角色为 null，则会扩展提交。
 
 
 <!-- {
@@ -457,7 +457,6 @@ Content-type: application/json
                     "displayName": null
                 }
             },
-            "submissions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions",
             "submissions": [
                 {
                     "status": "working",

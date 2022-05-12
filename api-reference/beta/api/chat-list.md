@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5f79a828ac03100e722b086d9fbe8172f3c61189
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f434a9d8a15a81da23a5e6b2c2ff4eaa24a41193
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094449"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366161"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -18,7 +18,7 @@ ms.locfileid: "62094449"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户 [属于](../resources/chat.md) 的聊天列表。
+检索用户所属 [的聊天](../resources/chat.md) 列表。
 
 ## <a name="permissions"></a>权限
 
@@ -41,7 +41,7 @@ GET /chats
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 (`$expand` **和** **lastMessagePreview** 属性) `$filter` [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
+此方法支持 `$expand` (**成员** 和 **lastMessagePreview** 属性) 和 `$filter` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -237,7 +237,6 @@ Content-type: application/json
                 "lastMessageReadDateTime": "2021-04-02T08:15:02.091Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-            "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -276,7 +275,6 @@ Content-type: application/json
                 "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-            "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A561082c0f3f847a58069deb8eb300807%40thread.v2')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -331,7 +329,6 @@ Content-type: application/json
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-            "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -359,7 +356,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-以下示例显示一个列出聊天的请求，以及聊天中发送的最后一条消息的预览。 通过对 `createdDateTime` 预览进行比较，呼叫者可以确定用户是否已阅读聊天 `lastMessageReadDateTime` `viewpoint` 中的所有消息。
+以下示例演示列出聊天的请求，以及聊天中发送的最后一条消息的预览。 通过将预览版与 `lastMessageReadDateTime` in `viewpoint` 进行比较`createdDateTime`，调用方可以确定用户是否已读取聊天中的所有消息。
 
 <!-- {
   "blockType": "request",
@@ -398,7 +395,6 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
-            "lastMessagePreview@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438%40unq.gbl.spaces')/lastMessagePreview/$entity",
             "lastMessagePreview": {
                 "id": "1622853091207",
                 "createdDateTime": "2021-06-05T00:31:31.207Z",
@@ -430,7 +426,6 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
             },
-            "lastMessagePreview@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A8ea0e38b-efb3-4757-924a-5f94061cf8c2_da7d471b-de7d-4152-8556-1cdf7a564f6c%40unq.gbl.spaces')/lastMessagePreview/$entity",
             "lastMessagePreview": {
                 "id": "1622707540293",
                 "createdDateTime": "2021-06-03T08:05:40.293Z",
@@ -463,7 +458,6 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-04T05:34:23.712Z"
             },
-            "lastMessagePreview@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A7b5c1643d8d74a03afa0af9c02dd0ef2%40thread.v2')/lastMessagePreview/$entity",
             "lastMessagePreview": {
                 "id": "1622784857324",
                 "createdDateTime": "2021-06-04T05:34:17.324Z",
@@ -506,7 +500,6 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
             },
-            "lastMessagePreview@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Aa6bac1f4daaf4db3bc6ac7536721331f%40thread.v2')/lastMessagePreview/$entity",
             "lastMessagePreview": {
                 "id": "1621533401696",
                 "createdDateTime": "2021-05-20T17:56:41.696Z",
@@ -532,11 +525,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-list-all-chats-that-have-a-member-with-a-specific-display-name"></a>示例 4：列出成员具有特定用户显示名称
+### <a name="example-4-list-all-chats-that-have-a-member-with-a-specific-display-name"></a>示例 4：列出具有具有特定显示名称的成员的所有聊天
 
 #### <a name="request"></a>请求
 
-下面是一个请求示例，该请求将基于特定成员的信息筛选所有显示名称。
+下面是一个请求示例，该请求将根据特定成员的显示名称筛选所有聊天。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -610,7 +603,6 @@ Content-type: application/json
                 "lastMessageReadDateTime": "2021-06-05T00:01:30.233Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-            "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -649,7 +641,6 @@ Content-type: application/json
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-            "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",

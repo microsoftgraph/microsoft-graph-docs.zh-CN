@@ -1,18 +1,18 @@
 ---
-title: 列出课程分配
+title: 列出类分配
 description: 检索分配对象的列表。
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e1fed901bb8174247e4108f635791b27e170fca7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 685fe0a965a21ac2d609219719f1269893909898
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123640"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365958"
 ---
-# <a name="list-class-assignments"></a>列出课程分配
+# <a name="list-class-assignments"></a>列出类分配
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "62123640"
 
 检索分配对象的列表。 
 
-教师或使用应用程序权限执行的应用程序可以看到课程的所有作业对象。 学生只能看到分配给他们的作业。
+教师或使用应用程序权限执行的应用程序可以看到该类的所有分配对象。 学生只能看到分配给他们的作业。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-此方法 `$expand` 的可用选项包括：、、 `categories` `resources` `rubric` `submissions` 和 `*` ，其中包括之前的所有选项。
+此方法的可用`$expand`选项包括：`categories`、 `submissions` `resources``rubric`、以及`*`包括所有以前的选项。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,15 +52,15 @@ GET /education/classes/{id}/assignments
 
 ## <a name="request-body"></a>请求正文
 
-请勿提供此方法的请求正文。
+请勿为此方法提供请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationAssignment](../resources/educationassignment.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [educationAssignment](../resources/educationassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-assignments"></a>示例 1：获取工作分配
+### <a name="example-1-get-assignments"></a>示例 1：获取分配
 
 #### <a name="request"></a>请求
 
@@ -169,7 +169,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-assignments-using-expand-options"></a>示例 2：使用选项$expand工作分配
+### <a name="example-2-get-assignments-using-expand-options"></a>示例 2：使用$expand选项获取分配
 
 #### <a name="request"></a>请求
 
@@ -214,7 +214,7 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 该响应包括每个工作分配的资源列表。 
+下面展示了示例响应。 响应包括每个分配的资源列表。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -275,7 +275,6 @@ Content-length: 344
                     "displayName": null
                 }
             },
-            "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/resources",
             "resources": []
         },
         {
@@ -320,7 +319,6 @@ Content-length: 344
                     "displayName": null
                 }
             },
-            "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('c057de5a-850e-4a35-b233-daf89cd55c8b')/resources",
             "resources": [
                 {
                     "distributeForStudentWork": false,

@@ -5,19 +5,19 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6986e51bc8815684841158e0b65f7bfbf429a2df
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 2f2c00157ebd34bcdee5ffe7258c38bb81326dd3
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397965"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365937"
 ---
 # <a name="get-x509certificateauthenticationmethodconfiguration"></a>获取 x509CertificateAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-阅读身份验证方法策略 [中 X.509 证书](../resources/x509certificateauthenticationmethodconfiguration.md) 身份验证 [方法的配置详细信息](../resources/authenticationmethodspolicy.md)。
+阅读[身份验证方法](../resources/authenticationmethodspolicy.md)策略中 [X.509 证书身份验证方法](../resources/x509certificateauthenticationmethodconfiguration.md)的配置详细信息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "63397965"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
-对于委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于委派方案，管理员需要以下 [Azure AD 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
 
 * 全局读取者
 * 身份验证策略管理员
@@ -57,7 +57,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x50
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应 `200 OK` 代码和 [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 ### <a name="response"></a>响应
 
-以下响应对象显示 x509CertificateAuthenticationMethodConfiguration 及其默认配置。
+以下响应对象显示具有默认配置的 x509CertificateAuthenticationMethodConfiguration。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -130,7 +130,6 @@ Content-Type: application/json
         "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
         "rules": []
     },
-    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('X509Certificate')/microsoft.graph.x509CertificateAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",

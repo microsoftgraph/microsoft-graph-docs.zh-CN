@@ -5,22 +5,22 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: eea88e679900db3bbd68a22b8fb9191db125b48a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b65d8433177a4a6e71c267a01e2e7387474617dc
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60924395"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365709"
 ---
 # <a name="get-printjob"></a>获取 printJob
 命名空间：microsoft.graph
 
 检索打印作业的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有根据使用的打印机还是 printerShare 授予获取 [打印机](printer-get.md) 或获取 [printerShare](printershare-get.md) 访问权限的权限。
+除以下权限外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [Get 打印机](printer-get.md) 或 [获取打印机共享](printershare-get.md) 访问权限的权限，具体取决于是否正在使用打印机或打印机共享。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -32,12 +32,12 @@ ms.locfileid: "60924395"
 
 <!-- { "blockType": "ignored" } -->
 
-从打印机获取作业：
+若要从打印机获取作业，请执行以下操作：
 ```http
 GET /print/printers/{id}/jobs/{id}
 ```
 
-从打印机共享获取作业：
+若要从打印机共享获取作业，
 ```http
 GET /print/shares/{id}/jobs/{id}
 ```
@@ -55,7 +55,7 @@ GET /print/shares/{id}/jobs/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [printJob](../resources/printjob.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [printJob](../resources/printjob.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -125,10 +125,10 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-print-job-with-task-list"></a>示例 2：获取包含任务列表的打印作业
+### <a name="example-2-get-print-job-with-task-list"></a>示例 2：使用任务列表获取打印作业
 
 #### <a name="request"></a>请求
-下面是一个请求，请求获取打印作业以及针对打印[](../resources/printtask.md)作业执行或已执行的任何任务。
+下面是获取打印作业的请求，以及针对它执行或已执行的任何 [任务](../resources/printtask.md) 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -264,7 +264,6 @@ Content-Type: application/json
   "redirectedTo": null,
   "redirectedFrom": null,
   "isFetchable": false,
-  "documents@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs('5182')/documents",
   "documents": [
     {
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",

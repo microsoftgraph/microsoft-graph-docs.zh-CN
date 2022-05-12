@@ -1,22 +1,22 @@
 ---
 title: educationCategory 资源类型
-description: 可应用于工作分配的类别。
+description: 可应用于分配的类别。
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b4bd1220e65b2c855d4698cbe24f1d4d8d9f6ac7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2a265a8733b72dc26967b390503abdbf201d9a1e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025564"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365909"
 ---
 # <a name="educationcategory-resource-type"></a>educationCategory 资源类型
 
 命名空间：microsoft.graph
 
-可应用于工作分配的类别。
+可应用于分配的类别。
 
 
 ## <a name="methods"></a>方法
@@ -25,7 +25,8 @@ ms.locfileid: "59025564"
 |:---------------|:--------|:----------|
 |[Create category](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | 创建新的 **educationCategory**。|
 |[获取 educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | 获取现有的 **educationCategory**。|
-|[删除类别](../api/educationcategory-delete.md) | None | 删除 **educationCategory**。|
+|[删除类别](../api/educationcategory-delete.md) | 无 | 删除 **educationCategory**。|
+|[Get delta](../api/educationcategory-delta.md)|[educationCategory](../resources/educationcategory.md) 集合|获取新创建或更新的 **educationCategory 对象的** 列表，而无需对集合执行完整读取。|
 
 
 ## <a name="properties"></a>属性

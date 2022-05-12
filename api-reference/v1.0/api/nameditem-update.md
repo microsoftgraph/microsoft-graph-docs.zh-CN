@@ -3,21 +3,21 @@ title: 更新 nameditem
 description: 更新 nameditem 对象的属性。
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbook-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: a861709a63239b02385b22ece2a009485bb553b5
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 5b8876e7e046628c531ad879c148d274739090db
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938208"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364740"
 ---
 # <a name="update-nameditem"></a>更新 nameditem
 
 命名空间：microsoft.graph
 
 更新 nameditem 对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -41,14 +41,14 @@ PATCH /me/drive/root:/{item-path}:/workbook/names/{name}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |visible|布尔|指定对象是否可见。|
 |comment|   string  |表示与此名称相关联的注释。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [WorkbookNamedItem](../resources/nameditem.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新 [的 WorkbookNamedItem](../resources/nameditem.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

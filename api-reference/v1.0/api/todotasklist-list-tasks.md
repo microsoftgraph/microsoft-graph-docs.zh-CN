@@ -1,21 +1,21 @@
 ---
-title: 列出 Todo 任务
-description: 从指定的 todoTaskList 的任务导航属性获取 todoTask 资源。
+title: 列出待办事项任务
+description: 从指定 todoTaskList 的任务导航属性中获取 todoTask 资源。
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0a8eb72640666e6ce8d777e1c663da403062d0bf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 62499074919aa2f539148c38d06be32c266572df
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128237"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364958"
 ---
 # <a name="list-tasks"></a>列出任务
 命名空间：microsoft.graph
 
-从 **指定的 todoTaskList** 的任务导航属性获取 [todoTask 资源](../resources/todotasklist.md)。
+从指定 **todoTaskList** **的任务** 导航属性中获取 [todoTask](../resources/todotasklist.md) 资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [todoTask](../resources/todotask.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [todoTask](../resources/todotask.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -122,7 +122,6 @@ Content-Type: application/json
             "content":"",
             "contentType":"text"
          },
-         "linkedResources@odata.context":"https://graph.microsoft.com/beta/$metadata#users('todoservicetest2412201901%40outlook.com')/todo/lists('35e2-35e2-721a-e235-1a72e2351a7')/tasks('AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD')/linkedResources",
          "linkedResources":[
             {
                "applicationName":"Partner App Name",

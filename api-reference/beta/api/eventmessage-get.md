@@ -1,16 +1,16 @@
 ---
 title: 获取 eventMessage
-description: 事件上的 expand' **参数**
+description: 展开 **事件的参数**
 ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9683d97e3b47baf9b44d4eea28b5940a2d39b955
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e2410e6e5839445509caedd01645a47a47a77841
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090085"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366197"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
@@ -18,18 +18,18 @@ ms.locfileid: "62090085"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。 对 `$expand` 事件导航 **属性** 应用 参数，获取与会者日历中的关联 [](../resources/event.md)事件。
+获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。 在`$expand`**事件** 导航属性上应用参数以获取与会者日历中的关联 [事件](../resources/event.md)。
 
-### <a name="get-the-event-message-body-in-html-or-text-format"></a>获取 HTML 或文本格式的事件邮件正文
+### <a name="get-the-event-message-body-in-html-or-text-format"></a>获取 HTML 或文本格式的事件消息正文
 
-事件邮件正文可以是 HTML 格式或文本格式。
+事件消息正文可以是 HTML 或文本格式。
 
-可以使用 标头指定在请求的 body 和 `Prefer: outlook.body-content-type` **uniqueBody** 属性中返回的所需 `GET` 格式：
+可以使用标 `Prefer: outlook.body-content-type` 头指定请求中 **正文** 中返回的所需格式和 **uniqueBody** 属性 `GET` ：
 
-- 指定 `Prefer: outlook.body-content-type="text"` 获取以文本格式返回的事件邮件正文。
-- 指定 `Prefer: outlook.body-content-type="html"` 或直接跳过 标头，以 HTML 格式返回事件邮件正文。
+- 指定 `Prefer: outlook.body-content-type="text"` 以文本格式返回事件消息正文。
+- 指定 `Prefer: outlook.body-content-type="html"`或只是跳过标头以 HTML 格式返回事件消息正文。
 
-如果指定任一标头，响应中将包含相应的 `Preference-Applied` 标头作为确认：
+如果指定任一标头，响应将包含相应的 `Preference-Applied` 标头作为确认：
 
 - 对于文本格式请求：`Preference-Applied: outlook.body-content-type="text"`
 - 对于 HTML 格式请求：`Preference-Applied: outlook.body-content-type="html"`
@@ -353,7 +353,6 @@ Content-type: application/json
     "previousLocation":null,
     "previousStartDateTime":null,
     "previousEndDateTime":null,
-    "event@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages('AAMkADYAAAImV_jAAA%3D')/microsoft.graph.eventMessage/event/$entity",
     "event":{
         "@odata.etag":"W/\"V5Qf0i9DeEOoOqPo0mABLgAACJpBWg==\"",
         "id":"AAMkADYAAAImVu6AAA=",

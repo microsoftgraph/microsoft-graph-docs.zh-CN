@@ -1,16 +1,16 @@
 ---
 title: 获取邮件
-description: 检索 message 对象的属性和关系。
+description: 检索消息对象的属性和关系。
 author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f9894993c6d49126a948a3860e3394f2c23e7a89
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0e2d8b9333cfe0ad327444c6886494c3a7556590
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099504"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365818"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -18,9 +18,9 @@ ms.locfileid: "62099504"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 message 对象的属性 [和](../resources/message.md) 关系。
+检索 [消息](../resources/message.md) 对象的属性和关系。
 
-例如，您可以获取一条消息，并展开 [邮件中提及](../resources/mention.md) 的所有实例。 请参阅以下[示例](#example-2-get-all-mentions-in-a-specific-message)。
+例如，可以获取消息并展开消息中的所有 [提及](../resources/mention.md) 实例。 请参阅以下[示例](#example-2-get-all-mentions-in-a-specific-message)。
 
 可以使用 `$value` 参数来 [获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。另请参阅以下 [示例](#example-5-get-mime-content)。
 
@@ -61,7 +61,7 @@ GET /me/mailFolders/{id}/messages/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
 ```
 
-若要获取邮件并展开邮件中提及的所有内容，
+若要获取消息并展开邮件中的所有提及内容，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=mentions
@@ -75,7 +75,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 
 使用 `$value` 参数获取邮件的 MIME 内容。
 
-使用 mentions 导航属性上的 query 参数可获取一封邮件，其中展开邮件中 `$expand` [每个提及](../resources/mention.md)的详细信息。 
+`$expand`使用 **提及** 导航属性上的查询参数获取一条消息，其中已展开邮件中每个 [提及](../resources/mention.md)的详细信息。
 
 
 
@@ -97,7 +97,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="examples"></a>示例
 ### <a name="example-1-get-a-specific-message"></a>示例1：获取特定邮件
 #### <a name="request"></a>请求
-第一个示例获取指定的邮件。 它不指定任何标头来指示要返回的正文的所需格式。
+第一个示例获取指定的消息。 它不指定任何标头来指示要返回的正文的所需格式。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -135,8 +135,8 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 body **和** **uniqueBody** 属性以默认 HTML 格式返回。
-注意：为简洁起见，将截断此处所示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。 正 **文** 和 **uniqueBody** 属性以默认的 HTML 格式返回。
+注意：为了简洁起见，此处显示的响应对象被截断。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -165,9 +165,9 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-get-all-mentions-in-a-specific-message"></a>示例 2：获取特定邮件的所有提及
+### <a name="example-2-get-all-mentions-in-a-specific-message"></a>示例 2：获取特定消息中的所有提及
 #### <a name="request"></a>请求
-下一个示例中，登录用户是 Dana Swope。 该示例显示获取 Dana 邮箱中指定邮件中所有提及的详细信息。
+在下一个示例中，已登录的用户是 Dana Swope。 此示例演示如何获取 Dana 邮箱中指定邮件中所有提及内容的详细信息。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -260,7 +260,6 @@ Content-type: application/json
   "mentionsPreview":{
     "isMentioned":true
   },
-  "mentions@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages('AQMkADJmMTUAAAgVZAAAA')/mentions",
   "mentions":[
     {
       "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAgVZAAAA')/mentions('138f4c0a-1130-4776-b780-bf79d73abb3f')",
@@ -376,10 +375,10 @@ Preference-Applied: outlook.body-content-type="text"
     }
 }
 ```
-### <a name="example-4-get-internet-message-headers"></a>示例 4：获取 Internet 邮件头
+### <a name="example-4-get-internet-message-headers"></a>示例 4：获取 Internet 消息标头
 #### <a name="request"></a>请求
 
-第四个示例演示如何获取特定邮件的 Internet 邮件头。  
+第四个示例演示如何获取特定消息的 Internet 消息标头。  
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -421,7 +420,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，响应对象中的 Internet 邮件头数量已减少。
+下面是一个响应示例。 注意：为了简洁起见，响应对象中的 Internet 消息标头数已减少。
 
 <!-- {
   "blockType": "response",

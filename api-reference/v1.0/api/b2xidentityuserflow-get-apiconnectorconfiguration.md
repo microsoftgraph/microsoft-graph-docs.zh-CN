@@ -5,18 +5,18 @@ author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9f3eab8f03dba29f92dfc2d2d1dde4b8d83c3775
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e7899b28048b93164b8b7c4c885ddcd6b72113e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100461"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365671"
 ---
 # <a name="get-userflowapiconnectorconfiguration"></a>获取 userFlowApiConnectorConfiguration
 
 命名空间：microsoft.graph
 
-获取[b2xIdentityUserFlow](../resources/userFlowApiConnectorConfiguration.md)中的[apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)属性，详细说明为用户流启用的 API 连接器。
+获取 [b2xIdentityUserFlow](../resources/userFlowApiConnectorConfiguration.md) 中的 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 属性，详细介绍为用户流启用的 API 连接器。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ GET identity/b2xUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$expand` OData 查询参数来帮助自定义响应。 例如，若要检索 和 步骤的 API 连接器 `postFederationSignup` `postAttributeCollection` ，请添加 `$expand=postFederationSignup,postAttributeCollection` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$expand` OData 查询参数，以帮助自定义响应。 例如，若要检索 API 连接器的 `postFederationSignup` 和 `postAttributeCollection` 步骤，请添加 `$expand=postFederationSignup,postAttributeCollection`。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -60,7 +60,7 @@ GET identity/b2xUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 响应 `200 OK` 代码和 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 对象。
+如果成功，此方法将返回 `200 OK` 响应代码和 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -115,7 +115,6 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/b2xUserFlows('B2X_1_testuserflow')/apiConnectorConfiguration(postFederationSignup(),postAttributeCollection())",
-    "postFederationSignup@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows('B2X_1_testuserflow')/apiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/postFederationSignup/$entity",
     "postFederationSignup": {
         "id": "74d13179-2c02-4ae7-bff3-82842d4e2f1f",
         "displayName": "Test API Connector 1",
@@ -126,7 +125,6 @@ Content-Type: application/json
             "password": "******"
         }
     },
-    "postAttributeCollection@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/b2xUserFlows('B2X_1_testuserflow')/apiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/postAttributeCollection/$entity",
     "postAttributeCollection": {
         "id": "900bc92c-bcbf-4093-af8e-450a4a77635f",
         "displayName": "Test API Connector 2",

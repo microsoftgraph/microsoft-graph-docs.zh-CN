@@ -5,18 +5,18 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e6ba7198f47257439d3a5a687b906c6c18a5e2d5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2672785b42008872950ecaee78516fd5d84e5dcd
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007067"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366091"
 ---
 # <a name="get-appconsentrequest"></a>获取 appConsentRequest
 
 命名空间：microsoft.graph
 
-读取 [appConsentRequest](../resources/appconsentrequest.md) 对象的属性和关系。
+读取 [appConsentRequest 对象的](../resources/appconsentrequest.md) 属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持  `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [appConsentRequest](../resources/appconsentrequest.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [appConsentRequest](../resources/appconsentrequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/java/get-appconsentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-appconsentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -112,7 +112,6 @@ Content-Type: application/json
   "appId": "3ca5f23f-94b4-4930-aec9-b8ca0f060e68",
   "appDisplayName": "Moodle",
   "pendingScopes": [],
-  "userConsentRequests@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
   "userConsentRequests": []
 }
 ```

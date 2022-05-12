@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d49fc85b0e16bf7b3377a413123b31588293bf38
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 705b3461eaa04c37513c7aac62a574adfcf929bd
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246998"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366007"
 ---
 # <a name="create-roledefinitions"></a>创建 roleDefinitions
 
@@ -18,7 +18,7 @@ ms.locfileid: "65246998"
 
 创建新的自定义 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "65246998"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | RoleManagement.ReadWrite.Directory |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | RoleManagement.ReadWrite.Directory |
+| 应用程序                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -152,8 +152,7 @@ Content-type: application/json
             ],
             "condition": null
         }
-    ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom"
+    ]
 }
 ```
 
