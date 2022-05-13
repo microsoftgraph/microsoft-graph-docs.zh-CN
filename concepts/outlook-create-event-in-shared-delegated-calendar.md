@@ -4,12 +4,12 @@ description: 在 Outlook 中，客户可以与其他用户共享日历，并允�
 author: juforan
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 4b9e57cdd251a72a7a6f51b3ca14eb17a0da9367
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 77534a6b1fad8392df01c33f91e0db321767007c
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135982"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366077"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>在共享或委托日历中创建 Outlook 事件
 
@@ -39,7 +39,7 @@ Microsoft Graph 支持以编程方式读取或写入其他用户已共享日历�
 
 **Microsoft Graph 权限**
 
-使用权限最 `Calendars.Read.Shared`的权限。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
+使用最小特权委派权限 `Calendars.Read.Shared`。要了解详细信息，请参阅 [日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -118,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-> **注意** 以 Adele 的身份登录，你也可以直接从 Alex 的邮箱获取委派的日历，方法是指定 Alex 的身份和 `calendar` 快捷方式，如 `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar` 中所示。 返回的日历 ID 仅对应于 Alex 的邮箱。 
+> **注意** 如果以 Adele 身份登录，也可以通过指定 Alex 的标识和 `calendar` 快捷方式直接从 Alex 的邮箱获取委派日历，如 `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar` 中所示。返回的日历 ID 仅对应于 Alex 的邮箱。 
 
 ## <a name="step-2-adele-creates-and-sends-an-invitation-on-alex-behalf"></a>步骤 2：Adele 代表 Alex 创建并发送邀请
 
@@ -126,7 +126,7 @@ Content-type: application/json
 
 **Microsoft Graph 权限**
 
-使用权限最 `Calendars.ReadWrite.Shared`的权限。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
+使用最小特权委派权限 `Calendars.ReadWrite.Shared`。要了解详细信息，请参阅 [日历权限](permissions-reference.md#calendars-permissions)。
 
 <!-- {
   "blockType": "request",
@@ -409,7 +409,6 @@ Content-type: application/json
     "flag": {
         "flagStatus": "notFlagged"
     },
-    "event@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('662b947c-d9a1-4064-926c-eba1316d4462')/messages('AAMkADADVj3fyAABZ5hYdAAA%3D')/microsoft.graph.eventMessage/microsoft.graph.eventMessage/event/$entity",
     "event": {
         "@odata.etag": "W/\"yvNriWFaOEaxVdwA1Y938gAAX+T7Jg==\"",
         "id": "AAMkADADVj3fyAABZ5ieyAAA=",
@@ -519,7 +518,7 @@ Content-type: application/json
 
 **Microsoft Graph 权限**
 
-使用权限最 `Calendars.ReadWrite.Shared`的权限。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
+使用最小特权委派权限 `Calendars.ReadWrite.Shared`。要了解详细信息，请参阅 [日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -574,7 +573,7 @@ HTTP/1.1 202 Accepted
 
 **Microsoft Graph 权限**
 
-使用权限最 `Mail.Read.Shared`的权限。 有关详细信息，请参阅 [邮件权限](permissions-reference.md#mail-permissions)。
+使用最小特权委派权限 `Mail.Read.Shared`。要了解详细信息，请参阅 [邮件权限](permissions-reference.md#mail-permissions)。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -688,7 +687,7 @@ Content-type: application/json
 
 **Microsoft Graph 权限**
 
-使用权限最 `Calendars.Read`的权限。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
+使用最小特权委派权限 `Calendars.Read`。要了解详细信息，请参阅 [日历权限](permissions-reference.md#calendars-permissions)。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

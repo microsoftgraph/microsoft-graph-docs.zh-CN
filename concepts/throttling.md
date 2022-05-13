@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6f37fdf90f510a650f2b1d13c42e83636c22697a
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: f870167c24d1ccdf24659bc9b8bdb843c8d0b812
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133347"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365916"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -307,6 +307,11 @@ Retry-After: 2.128
 
 [!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
 
+#### <a name="identity-and-access-reports-best-practices"></a>标识和访问报告最佳做法
+当 Azure AD 在给定时间范围内从租户或应用接收过多调用时，Azure AD 报告 API 会受到限制。 如果服务响应时间过长，则调用也可能受到限制。 如果尽管应用了 [上述最佳做法](#best-practices-to-handle-throttling)，但请求仍然失败并出现 `429 Too Many Requests` 错误代码，请尝试减少返回的数据量。 首先尝试以下方法:
+- 使用筛选器将查询定位到所需数据。 例如，如果只需要特定类型的事件或部分用户，请使用 `$filter` 和 `$select` 查询参数筛选出其他事件，从而减小响应对象的大小并减少限制风险。
+- 如果需要大量 Azure AD 报告数据，请使用 **createdDateTime** 上的 `$filter` 以限制在单个调用中查询的登录事件数。 然后，循环访问下一个时间跨度，直到获得所需的所有记录。 例如，如果受到限制，则可以从请求 3 天数据的调用开始，并以较短的时间跨度循环访问，直到请求不再受到限制。
+  
 ### <a name="information-protection-service-limits"></a>信息保护服务限制
 
 以下限制适用于 `/informationProtection` 上的所有请求。
