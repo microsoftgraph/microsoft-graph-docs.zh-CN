@@ -2,15 +2,15 @@
 title: Privileged Identity Management - Azure AD
 description: 使用适合于 Azure AD Privileged Identity Management 的 API 管理 Azure Active Directory 角色。
 ms.localizationpriority: high
-author: carolinetempleton
+author: rkarim-ms
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 900038e9c68517ac42ade68218b55d7cc52450f9
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bf9ef6441e4157f62b57a5f5bfdc8a21333b11a5
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688778"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398859"
 ---
 # <a name="privileged-identity-management---azure-ad-deprecated"></a>Privileged Identity Management - Azure AD（已弃用）
 
@@ -18,7 +18,7 @@ ms.locfileid: "60688778"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 以下方法由 PIM 针对 Azure AD 角色提供。 此服务构建于 OData 之上。 若要筛选查询中的结果，请在 URL 中使用标准 OData `$filter` 表达式。
 
@@ -46,6 +46,8 @@ ms.locfileid: "60688778"
 |[创建 privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |创建 privilegedApproval 对象。 |
 |[更新 privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |更新 privilegedApproval 对象。 |
 |[myrequests](../api/privilegedapproval-myrequests.md) | [privilegedApproval](privilegedapproval.md) 集合|获取请求者的审批请求。 |
+
+[!INCLUDE [pimv2AADRoles-migration](../../includes/pimv2AADRoles-migration.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

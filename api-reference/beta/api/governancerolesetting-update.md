@@ -4,13 +4,13 @@ description: 更新 governanceRoleSetting 的属性。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 5638532dd97fec4e19cfb19d1b1bf3f19c481f19
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 96ddd9c1da7676ec3a61e2178ada6b973a9c760d
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510443"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398365"
 ---
 # <a name="update-governancerolesetting"></a>更新 governanceRoleSetting
 
@@ -20,12 +20,12 @@ ms.locfileid: "64510443"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-更新 [governanceRoleSetting 的属性](../resources/governancerolesetting.md)。
+更新 [governanceRoleSetting](../resources/governancerolesetting.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
->**注意：** 此 API 还要求请求 `Active` `owner` `user access administrator` 者至少具有一个角色分配 (或) 管理员。
+>**注意：** 此 API 还要求请求者至少有一个 `Active` 管理员角色分配 (`owner` 或 `user access administrator`) 资源。
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
@@ -69,14 +69,14 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [需要更新的 governanceRuleSettings](../resources/governancerulesetting.md) 的值。 
+在请求正文中，提供需要更新的 [governanceRuleSettings 的](../resources/governancerulesetting.md) 值。 
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加符合条件的规则时评估的规则角色分配。|
-|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加直接成员角色时评估的规则角色分配。|
-|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|用户尝试添加符合条件的规则时评估的规则角色分配。 |
-|userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|用户尝试激活其密码时评估的规则角色分配。|
+|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加符合条件的角色分配时评估的规则设置。|
+|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加直接成员角色分配时评估的规则设置。|
+|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|当用户尝试添加符合条件的角色分配时评估的规则设置。 |
+|userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|当用户尝试激活其角色分配时评估的规则设置。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 NoContent` 响应代码。它不在响应正文中返回任何内容。 
@@ -87,7 +87,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 |错误代码     | 错误消息         | 详细信息             |
 |:--------------| :---------------------|:--------------------|
 | 400 BadRequest| RoleSettingNotFound   | [governanceRoleSetting](../resources/governancerolesetting.md) 在系统中不存在。
-| 400 BadRequest| InvalidRoleSetting    | 请求 [正文中提供的 governanceRuleSettings](../resources/governancerulesetting.md) 值无效。
+| 400 BadRequest| InvalidRoleSetting    | 请求正文中提供的 [governanceRuleSettings](../resources/governancerulesetting.md) 值无效。
 
 ## <a name="example"></a>示例 
 本示例更新订阅 Wingtip Toys - Prod 中自定义角色 3 的角色设置。

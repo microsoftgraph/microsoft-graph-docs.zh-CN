@@ -4,13 +4,13 @@ description: 表示特权角色的设置。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 4cc98c3db18569677e0d158da8b7cfb63b00dac7
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 6c91003b7aa0455c6dd56b374fb45c3664111be3
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510546"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397477"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings 资源类型
 
@@ -30,17 +30,17 @@ ms.locfileid: "64510546"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|角色激活的持续时间。|
+|elevationDuration|duration|激活角色时的持续时间。|
 |id|string| 角色设置的唯一标识符。 只读。|
-|isMfaOnElevationConfigurable|boolean|`true` 如果 **mfaOnElevation** 可配置。 `false` 如果 **mfaOnElevation** 不可配置。|
+|isMfaOnElevationConfigurable|boolean|`true` 如果 **mfaOnElevation** 是可配置的， `false` 如果 **无法配置 mfaOnElevation，则为 mfaOnElevation** 。|
 |lastGlobalAdmin|boolean|仅内部使用。|
-|maxEationDuration|duration|已激活角色的最长持续时间。|
-|mfaOnElevation|boolean|`true` 如果激活角色需要 MFA。 `false` 如果不需要 MFA 即可激活角色。|
-|minElevationDuration|duration|已激活角色的最短持续时间。|
-|notificationToUserOnElevation|boolean|`true` 如果激活角色时向最终用户发送通知。 `false` 如果角色激活时不发送通知。|
-|ticketingInfoOnElevation|布尔|`true` 如果激活角色时需要票证信息。 `false` 如果激活角色时不需要票证信息。|
-|approvalOnElevation|布尔|`true` 如果激活角色时需要审批。 `false` 如果激活角色时不需要审批。|
-|approverIds| 字符串集合 |审批 ID 列表（如果需要审批才能激活）。|
+|maxElavationDuration|duration|激活角色的最大持续时间。|
+|mfaOnElevation|boolean|`true` 如果需要 MFA 来激活角色。 `false` 如果不需要 MFA 来激活角色。|
+|minElevationDuration|duration|激活角色的最短持续时间。|
+|notificationToUserOnElevation|boolean|`true` 如果在激活角色时向最终用户发送通知。 `false` 如果激活角色时不发送通知。|
+|ticketingInfoOnElevation|boolean|`true` 如果激活角色时需要票证信息， `false` 如果激活角色时不需要票证信息。|
+|approvalOnElevation|boolean|`true` if the approval is required when activate the role. `false` 如果激活角色时不需要审批。|
+|approverIds| 字符串集合 |如果激活需要审批，则为审批 ID 列表。|
 
 ## <a name="relationships"></a>关系
 无

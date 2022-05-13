@@ -1,16 +1,16 @@
 ---
 title: rbacApplication：roleScheduleInstances
 description: 检索 roleAssignmentScheduleInstances 和 roleEligibilityScheduleInstances。
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1539d4078639d5d7d16a43c70324e7d339b995d0
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: a9a0df954f7d83149471ad8afa568cd1a3cd3345
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509859"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398480"
 ---
 # <a name="rbacapplication-rolescheduleinstances"></a>rbacApplication：roleScheduleInstances
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "64509859"
 
 检索 roleAssignmentScheduleInstances 和 roleEligibilityScheduleInstances。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -44,12 +44,12 @@ GET /roleManagement/directory/roleScheduleInstances
 
 |参数|类型|说明|
 |:---|:---|:---|
-|directoryScopeId|字符串|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 |
-|appScopeId|字符串|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元。 |
-|principalId|String|计划所属的主体的标识符。 |
-|roleDefinitionId|String|工作分配的 unifiedRoleDefinition 的标识符。 只读。|
+|directoryScopeId|String|表示分配范围的目录对象的标识符。 分配的范围确定已授予主体访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。 |
+|appScopeId|String|分配范围特定于应用时特定于应用的范围的标识符。 分配的范围确定已授予主体访问权限的资源集。 应用范围是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将范围限制为特定目录对象，例如管理单元。 |
+|principalId|String|计划所属主体的标识符。 |
+|roleDefinitionId|字符串|工作分配的 unifiedRoleDefinition 的标识符。 只读。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -59,7 +59,7 @@ GET /roleManagement/directory/roleScheduleInstances
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md) 集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md) 集合。
 
 ## <a name="examples"></a>示例
 

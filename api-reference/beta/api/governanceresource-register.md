@@ -1,18 +1,18 @@
 ---
-title: governanceResource： register
+title: governanceResource：register
 description: 在 PIM 中注册 governanceResource 对象。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 22274dd73fe3c2a227bedb863d8d95fd6d38bc3b
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 8f676f534e08e66a481d68c892241ff33206d651
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510300"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398018"
 ---
-# <a name="governanceresource-register"></a>governanceResource： register
+# <a name="governanceresource-register"></a>governanceResource：register
 
 命名空间：microsoft.graph
 
@@ -22,11 +22,11 @@ ms.locfileid: "64510300"
 
 在 Privileged Identity Management 中注册 [governanceResource](../resources/governanceresource.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
->**注意：** 此 API 还要求请求者至少具有一个角色分配活动资源。
+>**注意：** 此 API 还要求请求者对资源至少具有一个活动角色分配。
 
 ### <a name="azure-resources"></a>Azure 资源
 
@@ -61,9 +61,9 @@ POST /privilegedAccess/azureResources/resources/register
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法 **仅** 支持 和 `$select` `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法 **仅** 支持 `$select` [OData 查询参数](/graph/query-parameters)，`$expand`以帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称 | 说明 |
 |:---- |:----------- |
@@ -74,11 +74,11 @@ POST /privilegedAccess/azureResources/resources/register
 
 | 属性 | 类型 | 说明 |
 |:---------- |:---- |:----------- |
-| externalId | String | 在 PIM 中注册的资源的外部标识符。 如果注册订阅，标识符是预先预置的订阅标识符 `/subscriptions/`。 例如，`/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`。 |
+| externalId | String | 要在 PIM 中注册的资源的外部标识符。 如果注册订阅，则标识符是订阅标识符，其 `/subscriptions/`前缀是订阅标识符。 例如，`/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 响应 `200 OK` 。
+如果成功，此方法将返回 `200 OK` 响应。
 
 ## <a name="example"></a>示例
 

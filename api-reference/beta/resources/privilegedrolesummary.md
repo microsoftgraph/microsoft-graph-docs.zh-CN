@@ -4,13 +4,13 @@ description: 特定角色的统计信息摘要。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 10963bbd913b1c11651a4de3899056f3edc5be88
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: c8917786bfce56910555e2ea5aea98dfd0af3a75
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510539"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397480"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>privilegedRoleSummary 资源类型
 
@@ -33,9 +33,9 @@ ms.locfileid: "64510539"
 |elevatedCount|int32|分配了角色并激活角色的用户数。|
 |id|string| 角色的唯一标识符。 只读。|
 |managedCount|int32|分配了角色但角色已停用的用户数。|
-|mfaEnabled|boolean|`true` 如果角色激活需要 MFA。 `false` 如果角色激活不需要 MFA。|
-|状态|roleSummaryStatus| 可取值为：`ok`、`bad`。 该值取决于 managedCount /usersCount (的) 。 如果比率小于预定义阈值，则 `ok` 返回 。 否则， `bad` 将返回 。|
-|usersCount|int32|分配了角色的用户数。|
+|mfaEnabled|boolean|`true` 如果角色激活需要 MFA， `false` 如果角色激活不需要 MFA，则为 MFA。|
+|status|roleSummaryStatus| 可取值为：`ok`、`bad`。 该值取决于 managedCount/usersCount) 的 (比率。 如果比率小于预定义阈值， `ok` 则返回该比率。 否则返回 `bad` 。|
+|usersCount|int32|分配有该角色的用户数。|
 
 ## <a name="relationships"></a>关系
 无

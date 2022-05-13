@@ -1,16 +1,16 @@
 ---
 title: 更新 unifiedRoleManagementPolicyRule
 description: 更新为角色管理策略定义的规则。
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 79b88f50dcbbe60756e9a47459906454785bdc34
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: c2c90eafa7693a99d0f7d07cfd95de7d87725975
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65061095"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398445"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>更新 unifiedRoleManagementPolicyRule
 命名空间：microsoft.graph

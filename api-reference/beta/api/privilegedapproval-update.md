@@ -4,13 +4,13 @@ description: 更新 privilegedapproval 对象的属性。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: a431b5fa873cce61fd4b53219f8de09f6729ea64
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: afb9a19c3db9f474973390d725042930025b6be2
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315474"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398025"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
@@ -49,12 +49,12 @@ PATCH /privilegedApproval/{id}
 |approvalDuration|期限||
 |approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
 |approvalType|String||
-|approverReason|String||
+|approverReason|字符串||
 |endDateTime|DateTimeOffset||
-|requestorReason|String||
-|roleId|String||
+|requestorReason|字符串||
+|roleId|字符串||
 |startDateTime|DateTimeOffset||
-|userId|String||
+|userId|字符串||
 
 ## <a name="response"></a>响应
 

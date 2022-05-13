@@ -4,13 +4,13 @@ description: '获取 governanceRoleAssignmentRequest。 '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 28112d23ac613cc3694b4105dc0d5300c7e180c8
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 592fc3ac4bbebbbe8f20a759c05a28c1306102e0
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510476"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398564"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>获取 governanceRoleAssignmentRequest
 
@@ -22,7 +22,7 @@ ms.locfileid: "64510476"
 
 获取 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -49,9 +49,9 @@ ms.locfileid: "64510476"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | PrivilegedAccess.Read.AzureADGroup |
 
-除了权限范围之外，它还需要请求者 
-*   至少对资源角色分配一个资源;或
-*   是 [governanceRoleAssignmentRequest 的主题](../resources/governanceroleassignmentrequest.md)。
+除了权限范围，它还需要请求者 
+*   对资源至少具有一个角色分配;或
+*   是 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 的主题。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -70,7 +70,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象。
 
 ## <a name="example"></a>示例
 获取角色分配请求

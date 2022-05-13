@@ -1,25 +1,25 @@
 ---
 title: 创建 unifiedRoleAssignmentScheduleRequest
 description: 创建新的 unifiedRoleAssignmentScheduleRequest 对象。
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b21347c0ff5c4d8d4175968556fca0f1d5167ff1
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 7ec7a150b413b79590b304b63d2a37a0b918b2a4
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510483"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397577"
 ---
 # <a name="create-unifiedroleassignmentschedulerequest"></a>创建 unifiedRoleAssignmentScheduleRequest
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象。 此操作允许管理员和用户添加、删除、扩展或续订分配。 若要运行此请求，调用用户必须强制执行多重身份验证 (MFA) ，并且必须在要求他们进行 MFA 的会话中运行查询。 请参阅 [Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates)。
+创建新的 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象。 此操作允许管理员和用户添加、删除、扩展或续订分配。 若要运行此请求，调用用户必须实施多重身份验证 (MFA) 并在请求 MFA 的会话中运行查询。 请参阅 [“启用每用户 Azure AD 多重身份验证”来保护登录事件](/azure/active-directory/authentication/howto-mfa-userstates)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -47,27 +47,27 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象的 JSON 表示形式。
 
-下表显示创建 [unifiedRoleAssignmentScheduleRequest 时所需的属性](../resources/unifiedroleassignmentschedulerequest.md)。
+下表显示了创建 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|unifiedRoleAssignmentScheduleRequest 的唯一标识符。 键，不可为 null，只读。|
-|action|字符串|表示对项目执行的操作角色分配。 可能的值有： <ul><li>`AdminAssign`：供管理员向用户或组分配角色。</li><li>`AdminRemove`：供管理员从角色中删除用户或组。</li><li> `AdminUpdate`：供管理员更改现有角色分配。</li><li>`AdminExtend`：供管理员扩展即将过期的工作分配。</li><li>`AdminRenew`：供管理员续订已过期的工作分配。</li><li>`SelfActivate`：供用户激活其工作分配。</li><li>`SelfDeactivate`：供用户停用其活动分配。</li><li>`SelfExtend`：用户请求延长其过期分配。</li><li>`SelfRenew`：用户请求续订其已过期的工作分配。</li></ul>
-|principalId|String|要向其中授予工作分配的主体的标识符。|
-|roleDefinitionId|字符串|分配所针对的 unifiedRoleDefinition 的标识符。 只读。|
-|directoryScopeId|字符串|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 |
-|appScopeId|字符串|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元。|
-|isValidationOnly|Boolean|指定调用是验证调用还是实际调用。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
-|targetScheduleId|字符串|附加到工作分配的计划对象的 ID。|
-|justification|String|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|请求的计划角色分配对象。|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|附加到请求的 ticketInfo 角色分配，其中包含票证编号和票证系统的详细信息。|
+|action|字符串|表示角色分配上的操作类型。 可能的值有： <ul><li>`AdminAssign`：让管理员将角色分配给用户或组。</li><li>`AdminRemove`：让管理员从角色中删除用户或组。</li><li> `AdminUpdate`：让管理员更改现有角色分配。</li><li>`AdminExtend`：让管理员延长即将过期的分配。</li><li>`AdminRenew`：让管理员续订过期的分配。</li><li>`SelfActivate`：让用户激活其分配。</li><li>`SelfDeactivate`：让用户停用其活动分配。</li><li>`SelfExtend`：让用户请求延长其即将到期的分配。</li><li>`SelfRenew`：用户请求续订其过期的分配。</li></ul>
+|principalId|String|要向其授予分配的主体的标识符。|
+|roleDefinitionId|字符串|工作分配所用于的 unifiedRoleDefinition 的标识符。 只读。|
+|directoryScopeId|String|表示分配范围的目录对象的标识符。 分配的范围确定已授予主体访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。 |
+|appScopeId|String|分配范围特定于应用时特定于应用的范围的标识符。 分配的范围确定已授予主体访问权限的资源集。 应用范围是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将范围限制为特定目录对象，例如管理单元。|
+|isValidationOnly|Boolean|指定调用是验证还是实际调用。 仅当要在实际提交请求之前检查激活是否受 MFA 等其他规则约束时，才设置此属性。|
+|targetScheduleId|String|附加到分配的计划对象的 ID。|
+|理由|字符串|用户和管理员在创建有关为何需要它的请求时提供的消息。|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|角色分配请求的计划对象。|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|附加到角色分配请求的 ticketInfo 对象，其中包括票证编号和票证系统的详细信息。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象。
 
-当调用用户登录会话期间未要求进行多重身份验证时，具有 SelfActivate 操作的请求将失败并返回响应 `400 Bad request` 代码。
+当调用用户在登录会话期间未对多重身份验证提出质询时，使用 SelfActivate 操作的请求将失败并返回 `400 Bad request` 响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -75,7 +75,7 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 
 #### <a name="request"></a>请求
 
-在下面的请求中，管理员 `fdd7a751-b60b-444a-984c-02652fe8fa1c` 创建一个请求，以将标识的角色分配给由 **id** `07706ff1-46c7-4847-ae33-3003830675a1`标识的主体。 其角色的作用域是租户中所有目录对象，并且分配是永久性的，即不会过期。
+在以下请求中，管理员创建一个请求，以将标 `fdd7a751-b60b-444a-984c-02652fe8fa1c` 识的角色分配 **给 ID 标** 识的 `07706ff1-46c7-4847-ae33-3003830675a1`主体。 其角色的范围是租户中的所有目录对象，并且分配是永久性的，即不会过期。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -187,7 +187,7 @@ Content-Type: application/json
 
 #### <a name="request"></a>请求
 
-在下面的请求中， **principalId** `c6ad1942-4afa-47f8-8d48-afb5d8d69d2f` 标识的用户激活由 标识的其自己的符合条件的角色 `9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3`。 其角色的作用域是租户中所有目录对象，分配的时间为五个小时。 若要运行此请求，调用用户必须强制执行多重身份验证 (MFA) ，并且必须在要求他们进行 MFA 的会话中运行查询。
+在以下请求中， **由 principalId** `c6ad1942-4afa-47f8-8d48-afb5d8d69d2f` 标识的用户激活其自己的符合条件的角色 `9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3`。 其角色的范围是租户中的所有目录对象，分配为 5 小时。 若要运行此请求，调用用户必须实施多重身份验证 (MFA) 并在请求 MFA 的会话中运行查询。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

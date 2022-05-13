@@ -4,13 +4,13 @@ description: 检索 privilegedRole 对象的列表。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 114db703f0af6b7ce0fedf159f332959c1d2cd51
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 6c3c84e6e78a53cee0ab7b5af59fd050245c547f
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315985"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397517"
 ---
 # <a name="list-privilegedroles"></a>列出 privilegedRoles
 
@@ -24,7 +24,7 @@ ms.locfileid: "65315985"
 
 若要筛选查询中的结果，请在 URL 中使用标准 OData ``$filter`` 表达式。
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有以下角色之一： _特权角色管理员_、 _全局管理员_、 _安全管理员_ 或 _安全读取者_。
  

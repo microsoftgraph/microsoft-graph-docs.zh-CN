@@ -4,13 +4,13 @@ description: 使用此 API 创建新的 privilegedRoleAssignment。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 8e5c4ea375bae729f4b078ef850575889ffc219c
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 6886d6bb83bdc73f8d9eaf262cfbd9855918a6b4
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65316322"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397515"
 ---
 # <a name="create-privilegedroleassignment"></a>创建 privilegedRoleAssignment
 
@@ -22,7 +22,7 @@ ms.locfileid: "65316322"
 
 使用此 API 创建新的  [privilegedRoleAssignment](../resources/privilegedroleassignment.md)。
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有 _特权角色管理员_ 角色。 
 

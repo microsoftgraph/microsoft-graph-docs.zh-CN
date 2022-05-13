@@ -4,13 +4,13 @@ description: 检索 governanceResource 对象的属性和关系。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 7670a7a2fb157d6c9dcf752f54d673c8604ed067
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 5ed1ac7790d35f13302e30630df9a2c74a2c60c2
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510497"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398459"
 ---
 # <a name="get-governanceresource"></a>获取 governanceResource
 
@@ -22,7 +22,7 @@ ms.locfileid: "64510497"
 
 检索 [governanceResource](../resources/governanceresource.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -49,7 +49,7 @@ ms.locfileid: "64510497"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | PrivilegedAccess.Read.AzureADGroup |
 
-除了权限范围之外，此 API 要求请求程序至少具有一角色分配资源的权限。
+除了权限范围，此 API 要求请求者对资源至少具有一个角色分配。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -58,9 +58,9 @@ GET /privilegedAccess/azureResources/resources/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法 **仅** 支持  `$select` 和 `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法 **仅** 支持  `$select` `$expand` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -68,10 +68,10 @@ GET /privilegedAccess/azureResources/resources/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [governanceResource](../resources/governanceresource.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [governanceResource](../resources/governanceresource.md) 对象。
 
 ## <a name="example"></a>示例
-此示例演示如何获取订阅 Wingtip Toys - Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5) 。
+此示例演示如何获取订阅 Wingtip Toys - Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5) 的详细信息。
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"

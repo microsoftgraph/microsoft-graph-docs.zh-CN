@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: f1e25a40b970656ad9f47c68abad0cb7fc5addc1
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: c05bc8548fc6e43b96720e358204cb9752c5ddbe
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684919"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366056"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -245,7 +245,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="owner-must-be-specified-when-updating-a-schemaextension-definition-using-microsoft-graph-explorer"></a>使用 Microsoft Graph 浏览器更新 schemaExtension 定义时，必须指定所有者
 
-当使用`PATCH` 使用 Graph 浏览器更新 schemaExtension 时，必须指定 **所有者** 属性并将其设置为其当前`appid`值（该值必须是您所拥有的应用程序的 `appId`）。 对于 `appId` 与 **所有者** 不同的任何客户端应用程序，也是如此。
+当使用`PATCH` 使用 Graph 浏览器更新 schemaExtension 时，必须指定 **所有者** 属性并将其设置为其当前`appId`值（该值必须是您所拥有的应用程序的 `appId`）。 对于 `appId` 与 **所有者** 不同的任何客户端应用程序，也是如此。
 
 ### <a name="filtering-on-schema-extension-properties-is-not-supported-on-all-entity-types"></a>并非所有实体类型都支持对架构扩展属性进行筛选
 
@@ -407,8 +407,8 @@ JSON 批处理请求目前限定为 20 个单独请求。
 - [升级聊天中安装的应用](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ### <a name="unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id"></a>当请求 URL 包含租户/{cross-tenant-id} 时，无法访问跨租户共享通道
-对 [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) 和 [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) 的 API 调用返回 **@odata.id** 属性，可用于访问通道并在 [通道](/graph/api/resources/channel.md) 对象上运行其他操作。 如果调用从 **@odata.id** 属性返回的 URL，则请求在尝试访问跨租户共享 [通道](/graph/api/resources/channel.md)时失败，并出现以下错误：
-```
+针对 [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) 和 [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) 的 API 调用返回 **@odata.id** 属性，可将此属性用于访问信道和在 [信道](/graph/api/resources/channel.md) 对象上运行其他操作。 如果调用从 **@odata.id** 属性返回的 URL，则请求将在尝试访问跨租户共享 [信道](/graph/api/resources/channel.md) 时失败，并出现以下错误：
+```http
 GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 {
     "error": {
@@ -422,7 +422,7 @@ GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
     }
 }
 ```
-若要解决此问题，请在调用 API 访问跨租户共享[通道](/graph/api/resources/channel.md)之前从 URL 中删除`/tenants/{tenant-id}`该部件。
+要解决此问题，请先从 URL 中删除 `/tenants/{tenant-id}` 部分，然后调用 API 以访问跨租户共享 [信道](/graph/api/resources/channel.md)。
 
 ## <a name="users"></a>用户
 

@@ -4,13 +4,13 @@ description: 使用此 API 创建新的 PrivilegedApproval。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 0fa39e7332279fda504b4d8f9563ff1f2dd713d6
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: b560e5c6e10ce9fc70debbe567a0b46cf210c7b8
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65314808"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397647"
 ---
 # <a name="create-privilegedapproval"></a>创建 privilegedApproval
 

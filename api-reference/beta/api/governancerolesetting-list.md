@@ -4,13 +4,13 @@ description: 检索资源上的 governanceRoleSettings 集合。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: d044c1d5c8d64ed9d5c4b3b7863798ed7a709a00
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: b83799d091cca65d53327b34be9b9e2205c64680
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509873"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398438"
 ---
 # <a name="list-governancerolesettings"></a>列出 governanceRoleSettings
 
@@ -20,9 +20,9 @@ ms.locfileid: "64509873"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-检索资源 [上的 governanceRoleSettings](../resources/governancerolesetting.md) 集合。
+检索资源上的 [governanceRoleSettings](../resources/governancerolesetting.md) 集合。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -49,7 +49,7 @@ ms.locfileid: "64509873"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | PrivilegedAccess.Read.AzureADGroup |
 
-除了权限范围之外，此 API 要求请求程序至少具有一角色分配资源的权限。
+除了权限范围，此 API 要求请求者对资源至少具有一个角色分配。
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -59,7 +59,7 @@ GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resour
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -68,7 +68,7 @@ GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resour
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 governanceRoleSetting](../resources/governancerolesetting.md) 对象集合。
+如果成功，此方法在响应正文中返回一个 `200 OK` 响应代码和 [governanceRoleSetting](../resources/governancerolesetting.md) 对象集合。
 
 ## <a name="example"></a>示例
 此示例演示管理员如何列出资源 Wingtip Toys - Prod 的角色设置。 

@@ -4,13 +4,13 @@ description: 激活分配给请求者的角色。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 4c4abcbac602fd0c3c32a2641798aaf7304ba781
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 359f25af6e3f940e10a1d11d6db94bc5f548ed29
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65316379"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397809"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole：selfActivate
 
@@ -26,7 +26,7 @@ ms.locfileid: "65316379"
 
 
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者只能调用 ```selfActivate``` 分配给他的角色。
  
@@ -54,10 +54,10 @@ POST /privilegedRoles/{id}/selfActivate
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|reason|字符串|可选。 有关此角色激活原因的说明。|
+|reason|string|可选。 有关此角色激活原因的说明。|
 |duration|string|可选。 有效值可以 ```min``` (最小激活持续时间) ， ```default``` (角色) 的默认激活持续时间，也可以是用于指定激活小时数的双值。 指定的持续时间不能超过角色设置中的激活持续时间。 |
-|ticketNumber|字符串|可选。 用于跟踪此角色激活的票证号。|
-|ticketSystem|字符串|可选。 票证系统。|
+|ticketNumber|string|可选。 用于跟踪此角色激活的票证号。|
+|ticketSystem|string|可选。 票证系统。|
 
 ## <a name="response"></a>响应
 

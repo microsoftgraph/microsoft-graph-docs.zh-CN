@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleEligibilityScheduleRequests
 description: 获取 unifiedRoleEligibilityScheduleRequest 对象及其属性的列表。
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 64b141e421a8c632f312f925c18d2522590c2c1b
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: c484b5b5171332fdcad301ce61517cafb7b5adc0
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510658"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397973"
 ---
 # <a name="list-unifiedroleeligibilityschedulerequests"></a>列出 unifiedRoleEligibilityScheduleRequests
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "64510658"
 
 获取 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -51,7 +51,7 @@ GET /roleManagement/directory/roleEligibilityScheduleRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

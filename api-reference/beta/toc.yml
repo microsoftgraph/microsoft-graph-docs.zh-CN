@@ -2135,7 +2135,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -10322,6 +10322,11 @@ items:
                     href: api/managedtenants-tenanttag-assigntag.md
                   - name: 取消分配租户标记
                     href: api/managedtenants-tenanttag-unassigntag.md
+              - name: 租户使用情况
+                href: resources/managedtenants-tenantusage.md
+                items:
+                  - name: 列出
+                    href: api/managedtenants-managedtenant-list-tenantusage.md
               - name: Windows 设备恶意软件状态
                 href: resources/managedtenants-windowsdevicemalwarestate.md
                 items:
@@ -14243,7 +14248,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列出
                     href: api/simulationautomation-list-runs.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training

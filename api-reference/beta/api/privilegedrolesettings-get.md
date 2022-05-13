@@ -4,13 +4,13 @@ description: 检索给定角色的角色设置。 将返回 privilegedRoleSettin
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 43ec849554f6573f6bb964ba86fa2d5f94b52259
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 20b27f3ac7db34b5aaa31edb850bc99eee67e995
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315460"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397988"
 ---
 # <a name="get-privilegedrolesettings"></a>获取 privilegedRoleSettings
 
@@ -23,7 +23,7 @@ ms.locfileid: "65315460"
 检索给定角色的角色设置。 将返回 [privilegedRoleSettings](../resources/privilegedrolesettings.md) 对象。
 ## <a name="permissions"></a>权限
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有以下角色之一： _特权角色管理员_、 _全局管理员_、 _安全管理员_ 或 _安全读取者_。 
 

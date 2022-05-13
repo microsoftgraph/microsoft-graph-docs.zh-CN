@@ -4,13 +4,13 @@ description: '检索 privilegedRole 对象的属性和关系。 '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: c20c41d56da63990764bcf0db06f3bb9805fb4e5
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 3b4e79d03b6364e73d674cd15e406b5bcbd90bd0
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315516"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398396"
 ---
 # <a name="get-privilegedrole"></a>获取 privilegedRole
 
@@ -23,7 +23,7 @@ ms.locfileid: "65315516"
 检索 [privilegedRole](../resources/privilegedrole.md) 对象的属性和关系。 
 
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有以下角色之一： _特权角色管理员_、 _全局管理员_、 _安全管理员_ 或 _安全读取者_。
  

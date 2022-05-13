@@ -4,13 +4,13 @@ description: 使角色分配符合条件。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 73c4a227589e32bc65238544357b55cf88f97116
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: cd277c4f47e5af8bd40fe09187d08bf5da480e01
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65314282"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397563"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment： makeEligible
 
@@ -23,7 +23,7 @@ ms.locfileid: "65314282"
 使角色分配符合条件。 如果角色分配在调用之前已符合条件，则不执行任何操作。 如果角色分配是永久性的，并且请求方与目标用户不同，则角色分配将符合条件，并且将停用目标用户的角色。 如果请求者是目标用户，并且该角色是安全管理员或特权角色管理员，则该角色将在默认到期时激活。
 
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有 _特权角色管理员_ 角色。 
 

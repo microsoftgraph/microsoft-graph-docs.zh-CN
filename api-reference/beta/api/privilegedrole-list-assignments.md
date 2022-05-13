@@ -4,13 +4,13 @@ description: 检索与角色关联的 privilegedRoleAssignment 对象的列表�
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: d7b3c48cf104318d62620701aa85b11c210cadee
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: b83956890f42e79ce1802a2d355ec2af5004b5d0
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65314352"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397640"
 ---
 # <a name="list-assignments"></a>列出作业
 
@@ -22,7 +22,7 @@ ms.locfileid: "65314352"
 
 检索与角色关联的 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象的列表。 每个 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 都表示给用户的角色分配。
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有以下角色之一： _特权角色管理员_、 _全局管理员_、 _安全管理员_ 或 _安全读取者_。
  

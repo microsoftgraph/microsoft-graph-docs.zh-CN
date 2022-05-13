@@ -4,13 +4,13 @@ description: 检索 privilegedapproval 对象的列表。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: bbf4d7841f456a398f5c5aadc3f228dc3315727e
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: d89e96dea491c23606191f3ae1731bc8e1c2f216
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65316203"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397507"
 ---
 # <a name="list-privilegedapproval"></a>列出 privilegedApproval
 

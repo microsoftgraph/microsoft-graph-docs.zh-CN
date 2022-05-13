@@ -4,13 +4,13 @@ description: 适合于 Azure AD Privileged Identity Management 的 API，用于�
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 241c9f44ac942ad9f3d67b030539f22425f86a14
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 5e92e7da1a18d4bec2167eefc2e47d07a4e3abf4
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509233"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398326"
 ---
 # <a name="privileged-identity-management-deprecated"></a>Privileged Identity Management（已弃用）
 

@@ -4,13 +4,13 @@ description: 检索 governanceRoleSetting 的属性和关系。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 6a52b5acb0a45d613bcbf83daccab555982da0b0
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 52b0c4754838054149da7d442134e86b26fe7018
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509985"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397810"
 ---
 # <a name="get-governancerolesetting"></a>获取 governanceRoleSetting
 
@@ -21,9 +21,9 @@ ms.locfileid: "64509985"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-检索 [governanceRoleSetting 的属性和关系](../resources/governancerolesetting.md)。
+检索 [governanceRoleSetting](../resources/governancerolesetting.md) 的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -50,7 +50,7 @@ ms.locfileid: "64509985"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | PrivilegedAccess.Read.AzureADGroup |
 
-除了权限范围之外，此 API 要求请求程序至少对资源角色分配一个资源， [governanceRoleSetting](../resources/governancerolesetting.md) 属于该资源。
+除了权限范围，此 API 要求请求者对该资源至少具有一个角色分配，而 [governanceRoleSetting](../resources/governancerolesetting.md) 属于该资源。
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -67,7 +67,7 @@ GET /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [governanceRoleSetting](../resources/governancerolesetting.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [governanceRoleSetting](../resources/governancerolesetting.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

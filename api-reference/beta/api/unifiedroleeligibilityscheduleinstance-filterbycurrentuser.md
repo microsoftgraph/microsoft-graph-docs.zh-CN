@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleEligibilityScheduleInstance：filterByCurrentUser
-description: 获取 unifiedRoleEligibilityScheduleInstance 对象及其属性的列表，这些对象按特定用户主体进行筛选
-author: japere
+description: 获取由特定用户主体筛选的 unifiedRoleEligibilityScheduleInstance 对象及其属性的列表
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 07c455344d871d1c93715d15a543c45488537b1d
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 3ea34105c7884459cb87b4e0f0d79c771a726a24
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510567"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397972"
 ---
 # <a name="unifiedroleeligibilityscheduleinstance-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleInstance：filterByCurrentUser
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "64510567"
 
 获取 [unifiedRoleEligibilityScheduleInstance](../resources/unifiedRoleEligibilityScheduleInstance.md) 对象及其与特定主体对象关联的属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -43,10 +43,10 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUs
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|筛选以查询当前用户作为主体的对象。 允许的值为 `principal`。 必需项。|
+|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|筛选以查询当前用户为主体的对象。 允许的值为 `principal`. 必填。|
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -59,7 +59,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUs
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 ### <a name="response"></a>响应
 
-下面是通过组分配显示 roleEligibilitySchedule 实例的响应示例。
+下面是一个响应示例，其中显示了通过组分配的 roleEligibilitySchedule 的实例。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

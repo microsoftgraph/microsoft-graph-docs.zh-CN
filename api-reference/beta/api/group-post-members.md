@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e6ec54c660d31bc5143b31487047569460ce87d3
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5aeaa4a0955ed595a481191fce2946a0e7013be0
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65208986"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398375"
 ---
 # <a name="add-members"></a>添加成员
 
@@ -23,13 +23,14 @@ ms.locfileid: "65208986"
 下表显示了可添加到安全组或Microsoft 365组的成员类型。
 
 
-| 对象类型          | 安全组的成员     | Microsoft 365组的成员 |
-|----------------------|-------------------------------|-------------------------------|
-| 用户                | ![可以是组成员][Yes]   | ![可以是组成员][Yes]   |
-| 安全组      | ![可以是组成员][Yes]   | ![不能是组成员][No] |
-| Microsoft 365 组 | ![不能是组成员][No] | ![不能是组成员][No] |
-| 设备              | ![可以是组成员][Yes]   | ![不能是组成员][No] |
-| 服务主体   | ![可以是组成员][Yes]   | ![不能是组成员][No] |
+| 对象类型             | 安全组的成员     | Microsoft 365组的成员 |
+|-------------------------|-------------------------------|-------------------------------|
+| 用户                   | ![可以是组成员][Yes]   | ![可以是组成员][Yes]   |
+| 安全组         | ![可以是组成员][Yes]   | ![不能是组成员][No] |
+| Microsoft 365 组    | ![不能是组成员][No] | ![不能是组成员][No] |
+| 设备                 | ![可以是组成员][Yes]   | ![不能是组成员][No] |
+| 服务主体      | ![可以是组成员][Yes]   | ![不能是组成员][No] |
+| 组织联系人 | ![可以是组成员][Yes]   | ![不能是组成员][No] |
 
 
 ## <a name="permissions"></a>权限

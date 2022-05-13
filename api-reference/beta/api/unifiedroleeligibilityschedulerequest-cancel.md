@@ -1,28 +1,28 @@
 ---
-title: unifiedRoleEligibilityScheduleRequest：cancel
+title: unifiedRoleEligibilityScheduleRequest： cancel
 description: 取消 unifiedRoleEligibilityScheduleRequest。
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e70449502a4dd715fcfc389f66d2f0d351a3e574
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: c0a89a241a4dfcaf9ed946bee9b1e6ee1e0dae5e
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510363"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397465"
 ---
-# <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest：cancel
+# <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest： cancel
 命名空间：microsoft.graph
 
-立即取消[状态为 unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)`Granted`，并要求系统在 30 天后自动删除已取消的请求。 调用此操作后， **已** 取消的 unifiedRoleEligibilityScheduleRequest 的状态将改为 `Revoked`。
+立即取消处于状态的 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) ，并让系统在 `Granted` 30 天后自动删除已取消的请求。 调用此操作后，已取消的 unifiedRoleEligibilityScheduleRequest 的 **状态** 将更改为 `Revoked`。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|RoleEligibilitySchedule.ReadWrite.Directory、RoleManagement.ReadWrite.Directory |
+|委派（工作或学校帐户）|RoleEligibilitySchedule.ReadWrite.Directory， RoleManagement.ReadWrite.Directory |
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序|RoleManagement.ReadWrite.Directory |
 
@@ -46,7 +46,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligi
 
 ## <a name="response"></a>响应
 
-如果成功，此操作返回 `204 No Content` 响应代码。 尝试取消未在可取消状态的请求，例如，状态为 或  `Failed`的 unifiedRoleEligibilityScheduleRequest `Provisioned` 对象将返回错误`400 Bad Request`代码。
+如果成功，此操作返回 `204 No Content` 响应代码。 尝试取消未处于可取消状态的请求，例如，其 **状态** 为`Provisioned`或`Failed``400 Bad Request`返回错误代码的 unifiedRoleEligibilityScheduleRequest 对象。
 
 ## <a name="examples"></a>示例
 

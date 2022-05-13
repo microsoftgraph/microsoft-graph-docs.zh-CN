@@ -4,13 +4,13 @@ description: 检索 privilegedapproval 对象的属性和关系。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: f22e8e5b547b2c36a9b48922aed526be344e4aa4
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: d63008a58f8e0615e84449d908ce6d12749a9d82
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315999"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398789"
 ---
 # <a name="get-privilegedapproval"></a>获取 privilegedApproval
 

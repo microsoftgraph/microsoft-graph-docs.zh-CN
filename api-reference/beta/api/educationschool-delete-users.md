@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 051a70df6ffa59cafee08733e1bb1f9dd888f44e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3e5aba9fe623b2f02966246264b44a1a49c94f8b
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396558"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398403"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>从 educationSchool 删除 educationUser
 
@@ -53,9 +53,9 @@ DELETE /education/schools/{id}/users/{userId}/$ref
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-下面是一个请求示例。
+请求示例如下所示。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。 
 

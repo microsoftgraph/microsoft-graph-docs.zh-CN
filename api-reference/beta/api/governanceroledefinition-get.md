@@ -4,13 +4,13 @@ description: 检索 governanceRoleDefinition 的属性和关系。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: c154871edfb183ba56d0e03a8fdac16c8500a0d2
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 4dad4a2bc7f4d2b2ad4cbed58036f84e0f185212
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510469"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397850"
 ---
 # <a name="get-governanceroledefinition"></a>获取 governanceRoleDefinition
 
@@ -20,9 +20,9 @@ ms.locfileid: "64510469"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-检索 [governanceRoleDefinition 的属性和关系](../resources/governanceroledefinition.md)。
+检索 [governanceRoleDefinition](../resources/governanceroledefinition.md) 的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -49,7 +49,7 @@ ms.locfileid: "64510469"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | PrivilegedAccess.Read.AzureADGroup |
 
-除了权限范围之外，此 API 要求请求程序对 [governanceRoleDefinition](../resources/governanceroledefinition.md) 所属的资源角色分配至少一个权限。
+除了权限范围，此 API 要求请求者对该资源至少具有一个角色分配，而 [governanceRoleDefinition](../resources/governanceroledefinition.md) 属于该资源。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -58,9 +58,9 @@ GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions/{id}
 GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法 **不支持** [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法 **不** 支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -69,9 +69,9 @@ GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [governanceRoleDefinition](../resources/governanceroledefinition.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [governanceRoleDefinition](../resources/governanceroledefinition.md) 对象。
 ## <a name="example"></a>示例
-此示例演示如何获取订阅 Wingtip Toys - Prod 中的角色定义 DNS 区域参与者的详细信息。
+此示例演示如何在订阅 Wingtip Toys - Prod 中获取角色定义 DNS 区域参与者的详细信息。
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinition"

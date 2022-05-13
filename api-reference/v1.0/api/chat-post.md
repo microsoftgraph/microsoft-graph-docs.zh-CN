@@ -5,18 +5,20 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e6a84f714afcbfaff254f77b439ac431d0f695dc
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 3119daba10087abfe802405e2878d85851dde1ea
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335155"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397626"
 ---
 # <a name="create-chat"></a>创建聊天
 命名空间：microsoft.graph
 
 创建新的 [聊天](../resources/chat.md) 对象。
 
+> **注意：** 两个成员之间只能存在一对一聊天。 如果已存在一对一聊天，则此操作将返回现有聊天，而不会创建新的聊天。
+> 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -43,19 +45,19 @@ POST /chats
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 chat 对象的 JSON [表示](../resources/chat.md) 形式。
+在请求正文中，提供 [聊天](../resources/chat.md) 对象的 JSON 表示形式。
 
 下表列出了创建聊天对象所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|topic| (可选) 字符串|聊天的标题。 只有在聊天类型为时，才能提供聊天标题 `group` 。|
-|chatType|[chatType](../resources/chat.md#chattype-values)| 指定聊天类型。 可能的值是： `group` 和 `oneOnOne`。 |
-|members|[conversationMember](../resources/conversationmember.md) 集合|应该添加的对话成员列表。 必须在此列表中指定将参与聊天的每个用户（包括发起创建请求的用户）。 必须为每个成员分配或 `owner` 的角色 `guest`。 必须为来宾租户用户分配角色 `guest` 。|
+|topic| (可选) 字符串|聊天的标题。 仅当聊天类型为 `group` 类型时，才能提供聊天标题。|
+|chatType|[chatType](../resources/chat.md#chattype-values)| 指定聊天的类型。 可能的值为： `group` 和 `oneOnOne`. |
+|members|[conversationMember](../resources/conversationmember.md) 集合|应该添加的对话成员列表。 每个将参与聊天的用户（包括发起创建请求的用户）都必须在此列表中指定。 每个成员必须分配一个角色 `owner` 或 `guest`。 必须为来宾租户用户分配 `guest` 角色。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应 **代码和新建** 的聊天资源。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新创建的 **聊天** 资源。
 
 ## <a name="examples"></a>示例
 
@@ -140,7 +142,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-create-a-group-chat"></a>示例 2：创建群聊
+### <a name="example-2-create-a-group-chat"></a>示例 2：创建群组聊天
 
 #### <a name="request"></a>请求
 
@@ -308,7 +310,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-create-a-group-chat-with-tenant-guest-user"></a>示例 4：创建与租户来宾用户的群聊
+### <a name="example-4-create-a-group-chat-with-tenant-guest-user"></a>示例 4：创建与租户来宾用户的群组聊天
 
 #### <a name="request"></a>请求
 

@@ -4,13 +4,13 @@ description: 检索 privilegedRoleSummary 对象的属性和关系。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 34aaebfd36fec82bc4c214716f6aa8bf7134a009
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: f5ba2c0398038bfe84943de4e282264708f2e5d9
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65316413"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398060"
 ---
 # <a name="get-privilegedrolesummary"></a>获取 privilegedRoleSummary
 

@@ -1,16 +1,16 @@
 ---
 title: governanceSchedule 资源类型
-description: '表示 governanceRoleAssignmentRequest 的计划。 对于角色分配请求，计划控制何时执行 角色分配 操作、何时停止 角色分配 以及执行 角色分配 操作的频率。 '
+description: '表示 governanceRoleAssignmentRequest 的计划。 对于角色分配请求，计划控制何时执行角色分配操作、何时停止角色分配以及执行角色分配操作的频率。 '
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 87abccdfac02bea7a3158feb786b39aad23fac3f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: rkarim-ms
+ms.openlocfilehash: 1182409b573684b59b40cec14e976ea00ee4d966
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694265"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397949"
 ---
 # <a name="governanceschedule-resource-type"></a>governanceSchedule 资源类型
 
@@ -18,19 +18,19 @@ ms.locfileid: "60694265"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-表示 [governanceRoleAssignmentRequest 的计划](../resources/governanceroleassignmentrequest.md)。 对于角色分配请求，计划控制何时执行 角色分配 操作、何时停止 角色分配 以及执行 角色分配 操作的频率。
+表示 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 的计划。 对于角色分配请求，计划控制何时执行角色分配操作、何时停止角色分配以及执行角色分配操作的频率。
 
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|startDateTime|DateTimeOffset|会议开始时间角色分配。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|endDateTime|DateTimeOffset|会议结束角色分配。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 *注意：如果值为 `null` ，则指示永久分配。*|
-|type|String|计划角色分配类型。 目前 `Once` 仅受支持。
-|duration|期限|项目持续时间角色分配。 其格式为 TimeSpan。|
+|startDateTime|DateTimeOffset|角色分配的开始时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|endDateTime|DateTimeOffset|角色分配的结束时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 *注意：如果值为 `null`，则表示永久性分配。*|
+|type|字符串|角色分配计划类型。 目前仅 `Once` 支持此项。
+|duration|期限|角色分配的持续时间。 它采用 TimeSpan 格式。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
