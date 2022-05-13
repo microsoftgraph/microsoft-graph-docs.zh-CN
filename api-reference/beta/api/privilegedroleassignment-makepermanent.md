@@ -4,13 +4,13 @@ description: 使角色分配永久化。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: e9069d820d85a2b228192a997c70dfbfee0505b9
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 434ade1c8686a9899e8359c0d544f3468173152e
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65314268"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399535"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment： makePermanent
 
@@ -23,7 +23,7 @@ ms.locfileid: "65314268"
 使角色分配永久化。
 
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止使用的错误。
 
@@ -50,9 +50,9 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|reason|字符串|可选。 进行此调用的原因。|
-|ticketNumber|字符串|可选。 与此操作关联的票证号。|
-|ticketSystem|字符串|可选。 票证系统。|
+|reason|string|可选。 进行此调用的原因。|
+|ticketNumber|string|可选。 与此操作关联的票证号。|
+|ticketSystem|string|可选。 票证系统。|
 
 ## <a name="response"></a>响应
 

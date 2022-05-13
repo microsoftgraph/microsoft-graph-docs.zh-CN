@@ -4,13 +4,13 @@ description: 检索 governanceRoleAssignments 的集合。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 146839ce0341633d1b8b5390e06cea11c6160084
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 51324e0ce9bc6ede19debe1ec157c23c51f5b0af
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510490"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399509"
 ---
 # <a name="list-governanceroleassignments"></a>列出 governanceRoleAssignments
 
@@ -20,9 +20,9 @@ ms.locfileid: "64510490"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-检索 [governanceRoleAssignments 的集合](../resources/governanceroleassignment.md)。
+检索 [governanceRoleAssignments](../resources/governanceroleassignment.md) 的集合。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -52,14 +52,14 @@ ms.locfileid: "64510490"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 
-列出资源 [上的 governanceRoleAssignments](../resources/governanceroleassignment.md) 集合。
+列出资源上的 [governanceRoleAssignments](../resources/governanceroleassignment.md) 集合。
 
->**注意：** 除了权限范围之外，此请求要求请求程序至少具有一角色分配资源访问权限。 
+>**注意：** 除了权限范围之外，此请求要求请求者对资源至少具有一个角色分配。 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-列出 mine [的 governanceRoleAssignments](../resources/governanceroleassignment.md) 集合。
+列出我的 [governanceRoleAssignments](../resources/governanceroleassignment.md) 的集合。
 ```http
 GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
 ```
@@ -75,10 +75,10 @@ GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [governanceRoleAssignment](../resources/governanceroleassignment.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [governanceRoleAssignment](../resources/governanceroleassignment.md) 对象集合。
 ## <a name="example"></a>示例
 
-本示例演示如何在订阅 Wingtip Toys - Prod 上获取我的角色分配。
+此示例演示如何在订阅 Wingtip Toys - Prod 上获取我的角色分配。
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignments"

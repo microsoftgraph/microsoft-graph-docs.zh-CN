@@ -4,13 +4,13 @@ description: 停用分配给请求者的角色。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 78c7c918774da2523ac8c42c9409b267f3d5c295
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: c231a90d04d251568dfa6ad1059198077b70eda9
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315229"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399416"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole：selfDeactivate
 
@@ -22,7 +22,7 @@ ms.locfileid: "65315229"
 
 停用分配给请求者的角色。
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者只能调用 ```selfDeactivate``` 分配给他的角色。 
 

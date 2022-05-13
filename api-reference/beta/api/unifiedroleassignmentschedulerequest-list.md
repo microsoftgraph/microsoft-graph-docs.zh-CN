@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleAssignmentScheduleRequests
 description: 获取 unifiedRoleAssignmentScheduleRequest 对象及其属性的列表。
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 17f49c14e155282b992caeceb19d49a9eaebebe4
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 83aafcc071eba4ca7af93e9cc8816a3ac5617d8d
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509383"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399151"
 ---
 # <a name="list-unifiedroleassignmentschedulerequests"></a>列出 unifiedRoleAssignmentScheduleRequests
 
@@ -20,7 +20,7 @@ ms.locfileid: "64509383"
 
 获取 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -57,7 +57,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

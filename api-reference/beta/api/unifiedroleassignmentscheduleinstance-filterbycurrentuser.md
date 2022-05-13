@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleAssignmentScheduleInstance：filterByCurrentUser
-description: 获取 unifiedRoleAssignmentScheduleInstance 对象及其属性的列表，这些对象按特定用户主体进行筛选
-author: japere
+description: 获取由特定用户主体筛选的 unifiedRoleAssignmentScheduleInstance 对象及其属性的列表
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cceacda74d3c7047a66df47cdc373d4a2f13e90c
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: a3f20d169afb59308e27953ff973e58716bebd6c
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510391"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399500"
 ---
 # <a name="unifiedroleassignmentscheduleinstance-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleInstance：filterByCurrentUser
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "64510391"
 
 获取 [unifiedRoleAssignmentScheduleInstance](../resources/unifiedRoleAssignmentScheduleInstance.md) 对象及其与特定主体对象关联的属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -43,11 +43,11 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUse
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|筛选以查询当前用户作为主体的对象。 允许的值为 `principal`。 必需项。|
+|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|筛选以查询当前用户为主体的对象。 允许的值为 `principal`. 必填。|
 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -60,7 +60,7 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUse
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

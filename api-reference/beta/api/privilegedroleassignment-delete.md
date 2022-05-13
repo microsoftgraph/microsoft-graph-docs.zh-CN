@@ -4,13 +4,13 @@ description: 删除 privilegedRoleAssignment。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 02aef76cbd5f2619126659881adc0e74ac88d3ca
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: d35e1610ebcb8b943fcbcf267a055e892ba41e40
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315306"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399381"
 ---
 # <a name="delete-privilegedroleassignment"></a>Delete privilegedRoleAssignment
 
@@ -22,7 +22,7 @@ ms.locfileid: "65315306"
 
 删除 [privilegedRoleAssignment](../resources/privilegedroleassignment.md)。
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者需要具有 _特权角色管理员_ 角色。
  
