@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c2ecae03202adb66cc0aa49148679a5b9807fe41
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 781a90f75e070feb17380e4538a340b88831b422
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205974"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397630"
 ---
 # <a name="add-members"></a>添加成员
 
@@ -18,14 +18,16 @@ ms.locfileid: "65205974"
 
 通过 **members** 导航属性将成员添加到安全组或 Microsoft 365 组中。
 
-可以添加用户、组织联系人、服务主体或其他组。
+下表显示了可添加到安全组或 Microsoft 365 组的成员类型。
 
-> [!IMPORTANT]
->
-> - 只能将成员添加到安全和 Microsoft 365 组。 有关详细信息，请参阅[仅限 Azure AD 和 Microsoft Graph 中的组类型](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph)。
-> - 不能将安全组添加到 Microsoft 365 组。
-> - 不能将 Microsoft 365 组添加到安全组或其他 Microsoft 365 组。
-> - 安全组可以将用户、设备、组或服务主体作为其成员，而安全 Microsoft 365 组只能将用户作为其成员。
+| 对象类型             | 安全组成员     | Microsoft 365 组成员 |
+|-------------------------|-------------------------------|-------------------------------|
+| 用户                   | ![可以是组成员][Yes]   | ![可以是组成员][Yes]   |
+| 安全组         | ![可以是组成员][Yes]   | ![不能是组成员][No] |
+| Microsoft 365 组    | ![不能是组成员][No] | ![不能是组成员][No] |
+| 设备                 | ![可以是组成员][Yes]   | ![不能是组成员][No] |
+| 服务主体      | ![可以是组成员][Yes]   | ![不能是组成员][No] |
+| 组织联系人 | ![可以是组成员][Yes]   | ![不能是组成员][No] |
 
 ## <a name="permissions"></a>权限
 
@@ -213,6 +215,11 @@ HTTP/1.1 204 No Content
 - [更新成员在团队中的角色](team-update-members.md)
 - [从团队删除成员](team-delete-members.md)
 
+
+
+[Yes]: /graph/images/yesandnosymbols/greencheck.svg
+[No]: /graph/images/yesandnosymbols/no.svg
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -222,5 +229,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api/group-post-members.md:
+      Failed to parse enumeration values for type microsoft.graph.add. Table requires a column header named one of the following: Member, Name, Value"
   ]
 }-->

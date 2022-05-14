@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4331c661889868bdbf7735e7ef476739d63621fc
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 714fac5350f7df2222ca563b9660994431a3b382
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247075"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398571"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -58,7 +58,7 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 
 - `$orderby`
 
-    不要假设增量查询返回特定响应顺序。 假设同一项目可以显示在 `@odata.nextLink` 序列的任意位置，并以合并逻辑进行处理。
+    不要假定从增量查询返回的响应的特定序列。假定同一项可以显示在 `@odata.nextLink` 序列中的任何位置，并在合并逻辑中处理它。
 - `$top`
 
     每页中的对象数量可能因资源类型和资源更改类型而异。
@@ -206,7 +206,7 @@ Delta 查询可以返回一个`410 (gone)`响应代码和一个 **Location** 标
 + 教育对象（**educationSchool**、**educationUser** 和 **educationClass**）的时限为 7 天内。
 + Outlook 实体（**邮件**、**邮件文件夹**、**事件**、**联系人**、**联系人文件夹**、**待办事项** 和 **待办事项列表**）没有固定时间上限，取决于内部 delta 令牌缓存的大小。 因为缓存中不断添加新 delta 令牌，因此超过缓存容量后，旧 delta 令牌将被删除。
 
-如果令牌过期，服务应响应 40X 系列错误，并显示错误代码，如 `syncStateNotFound`。 有关详细信息，请参阅“Microsoft Graph 中的错误代码 (/graph/errors#code-property)”。
+如果令牌过期，服务应响应 40X 系列错误，并显示错误代码，如 `syncStateNotFound`。 有关详细信息，请参阅 [Microsoft Graph](/graph/errors#code-property) 中的错误代码。
 
 ## <a name="prerequisites"></a>先决条件
 
