@@ -1,22 +1,22 @@
 ---
 title: 列出组
-description: 列出组织中所有可用的组，包括但不限于 Microsoft 365 组。
+description: 列出组织中可用的所有组，不包括动态通讯组。
 ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ee26997b522dc7ba4d80a87ea09ca831793446df
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 123ef7129156d1eb34e213042c126564d444ff11
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65209978"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399241"
 ---
 # <a name="list-groups"></a>列出组
 
 命名空间：microsoft.graph
 
-列出组织中的所有组，包括但不限于 Microsoft 365 组。
+列出组织中可用的所有组，不包括动态通讯组。 若要检索动态通讯组，请 [使用 Exchange 管理中心](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)。
 
 此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取 _非_ 默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。
 
