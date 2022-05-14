@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: fab1fff05253708ddad039d04ebb79a8c747f598
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: abf5a95ccc6c19bcb656d84c9d6cf4d9891cbea6
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296224"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420570"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -1038,6 +1038,15 @@ ms.locfileid: "65296224"
 | otherFax
 | pager
 | 无线电
+
+
+### <a name="plannercontainertype-values"></a>plannerContainerType 值
+
+|成员|
+|:---|
+|组|
+|unknownFutureValue|
+|名册|
 
 
 ### <a name="plannerpreviewtype-values"></a>plannerPreviewType 值

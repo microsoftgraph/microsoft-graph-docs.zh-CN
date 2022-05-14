@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: d6064493c26d01c2b5003ae3b3c7a1eed00a043e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9563defac39bc426a837357b9fba956476c8441c
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135861"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420584"
 ---
 # <a name="get-plannerplandetails"></a>获取 plannerPlanDetails
 
@@ -106,7 +106,26 @@ Content-type: application/json
     "category3": null,
     "category4": null,
     "category5": "Needs materials",
-    "category6": "Needs equipment"
+    "category6": "Needs equipment",
+    "category7": "Description of category 7",
+    "category8": "Description of category 8",
+    "category9": "Description of category 9",
+    "category10": "Description of category 10",
+    "category11": "Description of category 11",
+    "category12": "Description of category 12",
+    "category13": "Description of category 13",
+    "category14": "Description of category 14",
+    "category15": "Description of category 15",
+    "category16": "Description of category 16",
+    "category17": "Description of category 17",
+    "category18": "Description of category 18",
+    "category19": "Description of category 19",
+    "category20": "Description of category 20",
+    "category21": "Description of category 21",
+    "category22": "Description of category 22",
+    "category23": "Description of category 23",
+    "category24": "Description of category 24",
+    "category25": "Description of category 25"
   },
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

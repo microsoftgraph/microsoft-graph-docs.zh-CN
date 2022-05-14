@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 826554e5d7060561ee7f278ae6b5b9ce14ede230
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c838cd79c2f37bbf39045c0ddcec5a9594e02a25
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097615"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420668"
 ---
 # <a name="get-plannertask"></a>获取 plannerTask
 
@@ -119,7 +119,8 @@ Content-type: application/json
       "orderHint": "RWk1"
     }
   },
-  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
+  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh",
+  "priority": 5
 }
 ```
 

@@ -1,22 +1,22 @@
 ---
 title: 更新 plannerPlan
-description: 更新 **plannerPlan 对象** 的属性。
+description: 更新 **plannerPlan** 对象的属性。
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 1652a725873e05de6b47f5583b426a006393458e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1cbe211096b341fff2ce148e3551d2f521c49244
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62088354"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420710"
 ---
 # <a name="update-plannerplan"></a>更新 plannerPlan
 
 命名空间：microsoft.graph
 
-更新 **plannerPlan 对象** 的属性。
+更新 **plannerPlan** 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,12 +45,12 @@ PATCH /planner/plans/{plan-id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|所有者|String|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
+|owner|String|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
 |title|String|计划的标题。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定具有首选项的标头，则此方法在响应正文中返回 响应代码和更新的 `Prefer` `return=representation` `200 OK` [plannerPlan](../resources/plannerplan.md) 对象。
+如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定 `Prefer` 具有首选项的标 `return=representation` 头，则此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerPlan](../resources/plannerplan.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -122,7 +122,12 @@ Content-type: application/json
     }
   },
   "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "url": "https://graph.microsoft.com/v1.0/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "type": "group"
+  },
   "title": "title-value",
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

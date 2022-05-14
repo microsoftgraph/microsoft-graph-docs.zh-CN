@@ -1,17 +1,17 @@
 ---
 author: daspek
-description: IncompleteData facet 指示资源是使用不完整的数据生成的。
+description: 不完整的Data 方面指示使用不完整的数据生成了资源。
 ms.date: 10/06/2017
 title: IncompleteData
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 6505d02ee7436e02d90627cfd38a83e3e436706a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: b24b10db7f38ee17356c77d40bcda3b08576e45b
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016557"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420675"
 ---
 # <a name="incompletedata-resource-type"></a>incompleteData 资源类型
 
@@ -19,8 +19,8 @@ ms.locfileid: "48016557"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**IncompleteData** facet 指示资源是使用不完整的数据生成的。
-中的属性可能提供了有关不完整数据的原因的信息。
+**不完整的Data** 方面指示使用不完整的数据生成了资源。
+其中的属性可能会提供有关数据不完整原因的信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -37,8 +37,8 @@ ms.locfileid: "48016557"
 
 | 属性                  | 类型           | 说明
 |:--------------------------|:---------------|:--------------------------------
-| missingDataBeforeDateTime | DateTimeOffset | 该服务在指定的时间之前没有源数据。
-| wasThrottled              | Boolean        | 由于活动过多而未记录某些数据。
+| missingDataBeforeDateTime | DateTimeOffset | 服务在指定时间之前没有源数据。
+| wasThrottled              | Boolean        | 由于活动过多，某些数据未记录。
 
 <!--
 {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5580752ad6d62ffe4036f2703d305fe302c7f875
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dfc6526b9e6d861cbbce55bfc85d2b26e717a38c
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093747"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420745"
 ---
 # <a name="update-plannerplandetails"></a>更新 plannerplandetails
 
@@ -45,11 +45,11 @@ PATCH /planner/plans/{id}/details
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
-|sharedWith|[plannerUserIds](../resources/planneruserids.md)|此计划共享的用户 ID 集。 如果你要利用Microsoft 365组，请使用组 API 管理组成员身份以[共享组计划](../resources/group.md)。 您还可以将组的现有成员添加到此集合中，尽管他们无需访问组所拥有的计划。|
+|sharedWith|[plannerUserIds](../resources/planneruserids.md)|与此计划共享的用户 ID 集。 如果要利用Microsoft 365组，请使用组 API 管理组成员身份以共享[组](../resources/group.md)的计划。 你还可以将组的现有成员添加到此集合中，尽管它们不需要访问组拥有的计划。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定具有首选项的标头，则此方法在响应正文中返回 响应代码和更新的 `Prefer` `return=representation` `200 OK` [plannerPlanDetails](../resources/plannerplandetails.md) 对象。
+如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定具有 `Prefer` 首选项的标头 `return=representation` ，则此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerPlanDetails](../resources/plannerplandetails.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -127,7 +127,26 @@ Content-type: application/json
     "category3": null,
     "category4": null,
     "category5": "Needs materials",
-    "category6": "Needs equipment"
+    "category6": "Needs equipment",
+    "category7": "Description of category 7",
+    "category8": "Description of category 8",
+    "category9": "Description of category 9",
+    "category10": "Description of category 10",
+    "category11": "Description of category 11",
+    "category12": "Description of category 12",
+    "category13": "Description of category 13",
+    "category14": "Description of category 14",
+    "category15": "Description of category 15",
+    "category16": "Description of category 16",
+    "category17": "Description of category 17",
+    "category18": "Description of category 18",
+    "category19": "Description of category 19",
+    "category20": "Description of category 20",
+    "category21": "Description of category 21",
+    "category22": "Description of category 22",
+    "category23": "Description of category 23",
+    "category24": "Description of category 24",
+    "category25": "Description of category 25"
   },
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

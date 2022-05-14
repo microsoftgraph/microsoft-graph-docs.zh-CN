@@ -1,16 +1,16 @@
 ---
 title: importStatusModel 资源类型
-description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+description: 下面是 importStatusModel 资源的 JSON 表示形式。
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: non-product-specific
 author: MSGraphDocsVteam
-ms.openlocfilehash: 6fc2d3cabe47df982c72fe1abae5ba5d991fd31d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5c8ea86be6afc6259d3c675889e46d3ece9aa884
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016609"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420458"
 ---
 # <a name="importstatusmodel-resource-type"></a>importStatusModel 资源类型
 

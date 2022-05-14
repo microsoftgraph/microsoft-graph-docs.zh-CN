@@ -5,12 +5,12 @@ author: cindycrane
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 98f63a2f80c4087721040311ece0e157453783f5
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: d0a1b8bb32c5b9bde0a28b3409a37f079ca72bae
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63668603"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420633"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
 
@@ -18,7 +18,7 @@ ms.locfileid: "63668603"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索企业 **用户的 licenseDetails** 对象列表。
+检索企业用户的 [licenseDetails](../resources/licensedetails.md) 对象列表。 此 API 返回直接分配的许可证以及通过许可组中的成员身份传递分配的许可证的详细信息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,19 +36,19 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持查询 `$select` 参数。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` 查询参数。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt;|
+| Authorization  | 持有者 &lt;代码&gt;|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [licenseDetails](../resources/licensedetails.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [licenseDetails](../resources/licensedetails.md) 对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 
@@ -100,21 +100,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "servicePlans": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('071cc716-8147-4397-a5ba-b2105951cc0b')/assignedLicenses",
+    "value": [
         {
-          "servicePlanId": "servicePlanId-value",
-          "servicePlanName": "servicePlanName-value",
-          "provisioningStatus": "provisioningStatus-value",
-          "appliesTo": "appliesTo-value"
+            "disabledPlans": [],
+            "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968"
         }
-      ],
-      "skuId": "skuId-value",
-      "skuPartNumber": "skuPartNumber-value",
-      "id": "id-value"
-    }
-  ]
+    ]
 }
 ```
 

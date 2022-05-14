@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: f13d607c1f15bb3dcefba5f50d0db9830c8dd280
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 224403f8479c72b9076627f9f1fafb3b8a1443d2
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396173"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420472"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -18,38 +18,38 @@ ms.locfileid: "63396173"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的变更通知。 目前，为以下资源启用了订阅。
+借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的变更通知。 目前，已为以下资源启用订阅。
 
-> **注意** 标记为星号* (*) 仅在终结点中 `/beta` 受支持。
+> **注意** 仅终结点支持使用星号 (*) 标记的 `/beta` 订阅。
 
 - Microsoft Graph 安全性 API 中的[警报][]。
 - Microsoft Teams 中的通话或会议后生成的 [callRecord][]。
-- [Microsoft Teams中的](./channel.md)频道。*
-- [Microsoft Teams 中的](./chat.md)聊天。*
+- Microsoft Teams中的[通道](./channel.md)。*
+- Microsoft Teams中的[聊天](./chat.md)。*
 - 通过 Microsoft Teams 中的团队或频道发送的 [chatMessage][]。
 - Microsoft 365 组中的[对话][]。
-- [团队、频道或聊天中的 conversationMember](./conversationmember.md) Microsoft Teams。*
+- 团队、频道或聊天中的 [conversationMember](./conversationmember.md) Microsoft Teams。*
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容。
 - Azure Active Directory 中的 [组][]。
 - SharePoint [site][]下的[list][]。
 - Outlook 中的[邮件][]、[事件][]或[联系人][]。
-- [Microsoft Teams 中的][]联机会议。*
-- [用户状态][]Microsoft Teams。*
-- [Microsoft Teams 团队](./team.md)。*
+- Microsoft Teams中的[联机会议][]。*
+- 用户[在][] Microsoft Teams 中的存在。*
+- Microsoft Teams.* 中的[团队](./team.md)
 - 通用打印中的 [打印机][] (当打印机的打印作业进入 JobFetchable 状态 - 准备好提取以打印时)和 [printTaskDefinition][]。有关详细信息，请参阅 [订阅来自云打印 API 的更改通知](/graph/universal-print-webhook-notifications)。
-- 微软待办.* 中的用户 [baseTask][]。
+- 微软待办中用户的 [baseTask][]。*
 - 在 Azure Active Directory 中的 [用户][]。
 
-有关每个受支持的资源的可能资源路径值，以及要了解资源如何使用生命周期通知，请参阅 [使用 Microsoft Graph API 获取更改通知](webhooks.md)。
+关于每个支持资源的可能资源路径值，请参阅[使用 Microsoft Graph API 获取更改通知](webhooks.md)。 若要了解如何使用生命周期通知，请参阅 [“减少缺少的订阅和更改通知](/graph/webhooks-lifecycle)”。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:-------|:------------|:------------|
 | [创建订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 订阅侦听器应用程序，在 Microsoft Graph 数据发生更改时接收变更通知。 |
-| [更新订阅](../api/subscription-update.md) | [订阅](subscription.md) | 通过更新其过期时间续订订阅。 |
+| [更新订阅](../api/subscription-update.md) | [订阅](subscription.md) | 通过更新订阅的过期时间来续订订阅。 |
 | [列出订阅](../api/subscription-list.md) | [订阅](subscription.md) | 列出有效订阅。 |
-| [获取订阅](../api/subscription-get.md) | [订阅](subscription.md) | 读取 subscription 对象的属性和关系。 |
+| [获取订阅](../api/subscription-get.md) | [订阅](subscription.md) | 读取订阅对象的属性和关系。 |
 | [删除订阅](../api/subscription-delete.md) | 无 | 删除订阅对象。 |
 
 ## <a name="properties"></a>属性
@@ -58,17 +58,17 @@ ms.locfileid: "63396173"
 |:---------|:-----|:------------|:--------------|
 | applicationId | String | 可选。用于创建订阅的应用程序的标识符。只读。  | 全部 |
 | changeType | 字符串 | 必填。 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 <br><br>**注意：** <li> 驱动器根项和列表变更通知仅支持 `updated` changeType。 <li>[用户](../resources/user.md)和[组](../resources/user.md)的变更通知支持 `updated` 和 `deleted` changeType。 | 全部 |
-| clientState | String | 可选。 指定服务在每个更改通知中发送的 **clientState** 属性的值。 最大长度为 255 个字符。 通过比较与订阅一起发送的 **clientState** 属性的值与每个更改通知一起收到的 **clientState** 属性的值，客户端可以检查更改通知是否来自服务。 | 全部 |
-| creatorId | String | 可选。 已创建订阅的用户或服务主体的标识符。 如果应用使用委派权限创建订阅，则此字段包含代表应用调用的登录用户的 ID。 如果应用程序使用应用程序权限，则此字段包含与应用程序对应的服务主体的 ID。 只读。 | 全部 |
+| clientState | String | 可选。 指定服务在每个更改通知中发送 **的 clientState** 属性的值。 最大长度为 255 个字符。 客户端可以通过将发送的客户 **端State** 属性的值与每个更改通知中收到的 **clientState** 属性的值进行比较来检查更改通知是否来自服务。 | 全部 |
+| creatorId | String | 可选。 已创建订阅的用户或服务主体的标识符。 如果应用使用委派的权限创建订阅，则此字段包含代表该应用调用的已登录用户的 ID。 如果应用使用了应用程序权限，则此字段包含与应用对应的服务主体的 ID。 只读。 | 全部 |
 | encryptionCertificate | String | 可选。带有公钥的证书的 base64 编码表示形式(用于在更改通知中加密资源数据)。可选，但当 **includeResourceData** 为 `true` 时，为必需项。 | 全部 |
-| encryptionCertificateId | String | 可选。 自定义应用提供的标识符，用于帮助识别解密资源数据所需的证书。 **includeResourceData** 为 时是必需的`true`。 | 全部 |
+| encryptionCertificateId | String | 可选。 自定义应用提供的标识符，用于帮助识别解密资源数据所需的证书。 如果 **includeResourceData** 为 `true`. | 全部 |
 | expirationDateTime | DateTimeOffset | 必需项。指定 Webhook 订阅的过期日期和时间。时间为 UTC，且可以是从订阅创建(因订阅资源而异)开始的一段时间。有关受支持的最大订阅时长，请参阅 [下表](#maximum-length-of-subscription-per-resource-type)。  | 全部 |
 | id | String | 可选。订阅的唯一标识符。只读。 | 全部 |
 | includeResourceData | 布尔值 | 可选。当设置为 `true` 时，更改通知 [ 包含资源数据](/graph/webhooks-with-resource-data) (例如聊天消息的内容)。 | 全部 |
 | latestSupportedTlsVersion | 字符串 | 可选。指定由 **notificationUrl** 指定的通知终结点支持的最新版本的传输层安全性(TLS)。可能的值为:`v1_0`、`v1_1`、`v1_2`、`v1_3`。</br></br>对于通知终结点支持的版本低于当前推荐版本(TLS 1.2)的订阅者，通过设置 [时间线](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性可允许他们在完成升级到 TLS 1.2 之前暂时使用他们已弃用的 TLS 版本。对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 | 全部 |
 | lifecycleNotificationUrl | String | 可选。 接收生命周期通知（包括 `subscriptionRemoved` 和 `missed` 通知）的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 | 全部 |
 | notificationContentType | String | 可选。 Microsoft Graph 所需的 **内容类型** 为更改支持的资源类型变更通知。 默认内容类型为 `application/json`。 | 全部 |
-| notificationQueryOptions | String |可选。  用于指定目标资源值的 OData 查询选项。 当资源达到与此处提供的查询选项匹配的状态时，客户端将收到通知。 通过订阅创建有效负载中的这一新属性以及所有现有属性，只要资源达到 **notificationQueryOptions** 属性中提到的所需状态，Webhook 就会发送通知。 例如，打印作业完成时或打印作业资源属性值 `isFetchable` 变为 `true` 等时。 | [通用打印服务](/graph/universal-print-webhook-notifications) |
+| notificationQueryOptions | String |可选。  用于指定目标资源值的 OData 查询选项。 当资源达到与此处提供的查询选项匹配的状态时，客户端会收到通知。 借助订阅创建有效负载中的此新属性以及所有现有属性，每当资源达到 **notificationQueryOptions** 属性中提到的所需状态时，Webhook 就会提供通知。 例如，打印作业完成时或打印作业资源属性值 `isFetchable` 变为 `true` 等时。 | [通用打印服务](/graph/universal-print-webhook-notifications) |
 | notificationUrl | String | 必填。 接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。  | 全部 |
 | notificationUrlAppId| String | 可选。 订阅服务可用于生成验证令牌的应用 ID。 这允许客户端验证收到的通知的真实性。  | 全部 |
 | resource | 字符串 | 必填。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。  | 全部 |

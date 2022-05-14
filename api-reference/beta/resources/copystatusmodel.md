@@ -1,16 +1,16 @@
 ---
 title: copyStatusModel 资源类型
-description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+description: 下面是 copyStatusModel 资源的 JSON 表示形式。
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: non-product-specific
 author: MSGraphDocsVteam
-ms.openlocfilehash: 51dcb3372fecf32e7b9658a5f280a3549306f393
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e43752619d2c02542e84aa5bb744f512426a44a
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016694"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420766"
 ---
 # <a name="copystatusmodel-resource-type"></a>copyStatusModel 资源类型
 

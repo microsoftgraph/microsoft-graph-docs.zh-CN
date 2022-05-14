@@ -1,16 +1,16 @@
 ---
 title: fileHashType 枚举
 description: 文件哈希类型的枚举。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: enumPageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: ab94fec4d4a8f6940b7c2bfccc61d38d9fe66887
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 85d599b600150dc258442bbac99ba96fdfbd2f2b
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076384"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420759"
 ---
 # <a name="filehashtype-enum-type"></a>fileHashType 枚举类型
 
@@ -25,11 +25,11 @@ ms.locfileid: "48076384"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知类型。|
-|sha1|1 |SHA1 哈希类型。|
-|sha256|2 | SHA256 哈希类型。|
-|md5|第三章| MD5 哈希类型。|
-|authenticodeHash256|4 | AuthenticodeHash256 哈希类型。|
-|lsHash|5 | LsHash 哈希类型。|
+|sha1|1|SHA1 哈希类型。|
+|sha256|2| SHA256 哈希类型。|
+|md5|3| MD5 哈希类型。|
+|authenticodeHash256|4| AuthenticodeHash256 哈希类型。|
+|lsHash|5| LsHash 哈希类型。|
 |ctph|6 | CTPH 哈希类型。|
 |peSha1|7 | PESHA1 哈希类型。|
 |peSha256|8 | PESHA256 哈希类型。|
