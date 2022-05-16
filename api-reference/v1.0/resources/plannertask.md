@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 7ebc2b2940ea7fd767279ee9fdbb0b4772c7330f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 079170c91bfa754f1f36dbef1404b7c92c0d1602
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021454"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420647"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask 资源类型
 
@@ -46,6 +46,7 @@ ms.locfileid: "59021454"
 |id|String|只读。计划的 ID。长度为 28 个字符，区分大小写。[格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
+|priority|Int32|任务优先级。 有效值范围介于 `0` 和 `10`之间，优先级与递增数值成反比（`0` 优先级最高， `10` 优先级最低）。  目前，Planner 将值 `0` 和 `1` 解释为“紧急”，值 `2`、`3` 和 `4` 为“重要”，值 `5`、`6` 和 `7` 为“中等”，值 `8`、 `9` 和 `10` 为“低”。  此外，Planner 将值 `1` 设置为“紧急”，值 `3` 为“重要”，值 `5` 为“中等”，值 `9` 为“低”。|
 |planId|String|任务所属的计划 ID。|
 |previewType|String|这将设置显示在任务上的预览类型。可能的值为： `automatic`、 `noPreview`、 `checklist`、 `description`、 `reference`。|
 |referenceCount|Int32|任务上存在的外部引用的数量。|
@@ -74,12 +75,12 @@ ms.locfileid: "59021454"
 
 ```json
 {
-  "activeChecklistItemCount": 1024,
+  "activeChecklistItemCount": "Int32",
   "appliedCategories": {"@odata.type": "microsoft.graph.plannerAppliedCategories"},
   "assigneePriority": "String",
   "assignments": {"@odata.type": "microsoft.graph.plannerAssignments"},
   "bucketId": "String",
-  "checklistItemCount": 1024,
+  "checklistItemCount": "Int32",
   "completedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "completedDateTime": "String (timestamp)",
   "conversationThreadId": "String",
@@ -89,10 +90,11 @@ ms.locfileid: "59021454"
   "hasDescription": true,
   "id": "String (identifier)",
   "orderHint": "String",
-  "percentComplete": 1024,
+  "percentComplete": "Int32",
+  "priority": "Int32",
   "planId": "String",
   "previewType": "String",
-  "referenceCount": 1024,
+  "referenceCount": "Int32",
   "startDateTime": "String (timestamp)",
   "title": "String"
 }

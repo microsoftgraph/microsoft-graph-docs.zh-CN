@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: c5d25b8de538d96784e5001107063355497c073c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 9213403b8651454bbec57a7dcd6ea0bf0cc09dd5
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335904"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420577"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -29,10 +29,10 @@ ms.locfileid: "63335904"
 - 通用打印中的 [打印机][] (当打印机的打印作业进入 JobFetchable 状态 - 准备好提取以打印时)和 [printTaskDefinition][]。有关详细信息，请参阅 [订阅来自云打印 API 的更改通知](/graph/universal-print-webhook-notifications)。
 - 在 Azure Active Directory 中的 [用户][]。
 
-有关每个受支持的资源的可能资源路径值，以及要了解资源如何使用生命周期通知，请参阅 [使用 Microsoft Graph API 获取更改通知](webhooks.md)。
+关于每个支持资源的可能资源路径值，请参阅[使用 Microsoft Graph API 获取更改通知](webhooks.md)。 若要了解如何使用生命周期通知，请参阅“[减少缺失的订阅和更改通知](/graph/webhooks-lifecycle)”。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:-------|:------------|:------------|
@@ -47,8 +47,8 @@ ms.locfileid: "63335904"
 | 属性 | 类型 | 说明 | 支持的资源 |
 |:---------|:-----|:------------|:--------------|
 | applicationId | String | 可选。用于创建订阅的应用程序的标识符。只读。 | 全部 |
-| changeType | 字符串 | 必填。 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 <br><br>**注意：** <li> 驱动器根项和列表变更通知仅支持 `updated` changeType。 <li>[用户](../resources/user.md)和[组](../resources/user.md)的变更通知支持 `updated` 和 `deleted` changeType。 | 全部 |
-| clientState | String | 可选。 指定服务为每个变更通知发送的 `clientState` 属性的值。 最大长度为 128 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个变更通知一起接收的 `clientState` 属性值，客户端可以检查变更通知是否是由服务发送。 | 全部 |
+| changeType | 字符串 | 必填。指示订阅资源中将引发更改通知的更改类型。支持的值是：`created`、`updated`、`deleted`。可以使用以逗号分隔的列表组合多个值。<br><br>**注意：** <li> 驱动器根项和列表变更通知仅支持 `updated` changeType。 <li>[用户](../resources/user.md)和[组](../resources/user.md)的变更通知支持 `updated` 和 `deleted` changeType。 | 全部 |
+| clientState | String | 选填。指定服务为每个变更通知发送的 `clientState` 属性的值。最大长度为 128 个字符。通过对比与订阅一起发送的 `clientState` 属性值和与每个变更通知一起接收的 `clientState` 属性值，客户端可以检查变更通知是否是由服务发送。 | 全部 |
 | creatorId | String | 可选。 已创建订阅的用户或服务主体的标识符。 如果此应用使用委派权限来创建订阅，则此字段包含该应用代表其调用的已登录用户的 ID。 如果此应用使用应用程序权限，则此字段包含对应于该应用的服务主体的 ID。 只读。 | 全部 |
 | encryptionCertificate | String | 可选。带有公钥的证书的 base64 编码表示形式(用于在更改通知中加密资源数据)。可选，但当 **includeResourceData** 为 `true` 时，为必需项。 | 全部 |
 | encryptionCertificateId | String | 可选。自定义应用提供的标识符，用于帮助识别解密资源数据所需的证书。 | 全部 |
