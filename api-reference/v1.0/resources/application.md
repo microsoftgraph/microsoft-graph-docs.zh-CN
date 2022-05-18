@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 5bd90acea4a93bba5ae5687141a68b1deaca841f
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 8b7864114f357ea031fbaae72c8ee20ad6c477c3
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294024"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461189"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -94,7 +94,7 @@ ms.locfileid: "65294024"
 | publicClient | [publicClientApplication](publicclientapplication.md) | 指定已安装客户端（如台式设备或移动设备）的设置。 |
 | publisherDomain | String | 应用程序的已验证发布者域。 只读。 有关更多信息，请参阅[操作指南：配置应用程序的发布者域](/azure/active-directory/develop/howto-configure-publisher-domain)。 支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合| 指定应用程序需要访问的资源。 此属性还指定每个资源所需的委派权限和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 可配置的资源服务 (API) 不能超过 50 个。 从 2021 年 10 月中旬开始，所需权限总数不得超过 400 个。 不可为 null。 <br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`）。|
-| serviceManagementReference | 字符串 | 引用服务或资产管理数据库中的应用程序或服务联系人信息。 可为 NULL。 |
+| serviceManagementReference | 字符串 | 引用服务或资产管理数据库中的应用程序或服务联系人信息。可为空。 |
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 可能的值是：`AzureADMyOrg`、`AzureADMultipleOrgs`、`AzureADandPersonalMicrosoftAccount`（默认）和 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。 <br><br>支持 `$filter`（`eq`、`ne`、`not`）。|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
 | 标记 |字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。<br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
@@ -116,7 +116,7 @@ ms.locfileid: "65294024"
 | 关系 | 类型 | Description |
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
-|extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。可为 Null。|
+|extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。 可为 NULL。 支持 `$expand` 和 `$filter`（`eq` - 当计数空集合时）。|
 |owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。只读。可为 Null。支持 `$expand`。|
 
 ## <a name="json-representation"></a>JSON 表示形式

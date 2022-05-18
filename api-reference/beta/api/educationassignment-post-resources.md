@@ -1,16 +1,16 @@
 ---
 title: 创建 educationAssignmentResource
-description: 创建教育作业资源。
+description: 创建教育分配资源。
 ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 58af8c78229aa5f2656eac1403a19f02d7729406
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6cbf5e876145bdf342397b162257068904bb8053
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103209"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461294"
 ---
 # <a name="create-educationassignmentresource"></a>创建 educationAssignmentResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "62103209"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建工作 [分配资源](../resources/educationassignmentresource.md)。 可以创建以下类型的分配资源：
+创建 [分配资源](../resources/educationassignmentresource.md)。 可以创建以下类型的分配资源：
 
 - [educationFileResource](../resources/educationfileresource.md)
 - [educationExcelResource](../resources/educationexcelresource.md)
@@ -26,11 +26,12 @@ ms.locfileid: "62103209"
 - [educationLinkResource](../resources/educationlinkresource.md)
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
+- [educationTeamsAppResource](../resources/educationteamsappresource.md)
 
-每个资源都有一@odata.type 属性，用于指示要创建的资源类型。 
+每个资源都有一个@odata.type 属性，用于指示要创建的资源类型。 
 
 > [!IMPORTANT] 
-> 在上载作业资源之前，你必须为[educationAssignment](../resources/educationassignment.md)设置[资源](../api/educationassignment-setupresourcesfolder.md)文件夹以将文件上载到。
+> 在上传分配资源之前，必须为 [educationAssignment](../resources/educationassignment.md) [设置资源文件夹](../api/educationassignment-setupresourcesfolder.md)才能将文件上传到。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -61,11 +62,12 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/resources
 - [educationLinkResource](../resources/educationlinkresource.md)
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
+- [educationTeamsAppResource](../resources/educationteamsappresource.md)
 
->**注意：** 你不能使用此操作创建 [educationExternalResource](../resources/educationexternalresource.md)。
+>**注意：** 不能使用此操作创建 [educationExternalResource](../resources/educationexternalresource.md)。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [educationAssignmentResource](../resources/educationassignmentresource.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [educationAssignmentResource](../resources/educationassignmentresource.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-create-an-educationlinkresource"></a>示例 1：创建 educationLinkResource
@@ -589,11 +591,85 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-7-create-an-educationteamsappresource"></a>示例 7：创建 educationTeamsAppResource
+#### <a name="request"></a>请求
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
+  "name": "create_educationTeamsAppResource_from_educationassignment"
+}-->
+```http
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
+Content-type: application/json
+
+{
+    "distributeForStudentWork": false,
+    "resource": {
+        "displayName": "Template - My Story",
+        "appId": "6fbeb90c-3d55-4bd5-82c4-bfe824be4300",
+        "appIconWebUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/6fbeb90c-3d55-4bd5-82c4-bfe824be4300_largeImage.png?v=2.0.2",
+        "teamsEmbeddedContentUrl": "https://app.api.edu.buncee.com/player/C7B0866C9B7E485EAE21AE14DBC3FD08?embed=1&render_slide_panel=1",
+        "webUrl": "https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08",
+        "@odata.type": "#microsoft.graph.educationTeamsAppResource"
+    }
+}
+```
+
+#### <a name="response"></a>响应
+下面展示了示例响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationMediaResource"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/resources/$entity",
+  "distributeForStudentWork": false,
+  "id": "5bae19da-a720-4046-8af8-f56b9ae62d25",
+  "resource": {
+      "@odata.type": "#microsoft.graph.educationTeamsAppResource",
+      "displayName": "Template - My Story",
+      "createdDateTime": "2022-04-22T13:51:20.577384Z",
+      "lastModifiedDateTime": "2022-04-22T13:51:20.577384Z",
+      "appId": "6fbeb90c-3d55-4bd5-82c4-bfe824be4300",
+      "appIconWebUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/6fbeb90c-3d55-4bd5-82c4-bfe824be4300_largeImage.png?v=2.0.2",
+      "teamsEmbeddedContentUrl": "https://app.api.edu.buncee.com/player/C7B0866C9B7E485EAE21AE14DBC3FD08?embed=1&render_slide_panel=1",
+      "webUrl": "https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08",
+      "createdBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+              "displayName": null
+          }
+      },
+      "lastModifiedBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+              "displayName": null
+          }
+      }
+  }
+}
+```
+
+
 
 ## <a name="see-also"></a>另请参阅
 
-* [分配和提交状态、转换和限制](/graph/assignments-submissions-states-transition)
-* [Upload作业和提交的作业文件](/graph/education-upload-resource-overview)
+* [分配和提交的状态、转换和限制](/graph/assignments-submissions-states-transition)
+* [Upload教育作业和提交的文件](/graph/education-upload-resource-overview)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

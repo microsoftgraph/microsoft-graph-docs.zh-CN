@@ -1,23 +1,23 @@
 ---
-title: 教程：使用 Privileged Identity Management (PIM) API 分配Azure AD角色
-description: 了解如何在 Microsoft Graph中使用 Privileged Identity Management (PIM) API 分配Azure AD特权角色。
+title: 教程：使用 Privileged Identity Management (PIM) API 分配 Azure AD 角色
+description: 了解如何在 Microsoft Graph中使用 Privileged Identity Management (PIM) API 来分配 Azure AD 特权角色。
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 78e523a12d59ac7b25482da26f3fb594e9517657
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 0f15636c80b72ba67f56a28d4352236fa4c0e19e
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247187"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461210"
 ---
-# <a name="tutorial-use-the-privileged-identity-management-pim-api-to-assign-azure-ad-roles"></a>教程：使用 Privileged Identity Management (PIM) API 分配Azure AD角色
+# <a name="tutorial-use-the-privileged-identity-management-pim-api-to-assign-azure-ad-roles"></a>教程：使用 Privileged Identity Management (PIM) API 分配 Azure AD 角色
 
 Microsoft Graph PIM API 使组织能够管理对 Azure Active Directory (Azure AD) 中的资源的特权访问。 它还通过限制访问处于活动状态、管理访问范围以及提供可审核的特权访问日志来帮助管理特权访问的风险。
 
-在本教程中，一家名为 Contoso Limited 的虚构公司希望其 IT 支持人员管理员工访问的生命周期。 公司已将Azure AD用户管理员角色确定为 IT 支持人员所需的适当特权角色，并将使用 PIM API 分配该角色。
+在本教程中，一家名为 Contoso Limited 的虚构公司希望其 IT 支持人员管理员工访问的生命周期。 公司已将 Azure AD 用户管理员角色确定为 IT 支持人员所需的适当特权角色，并将使用 PIM API 分配该角色。
 
-你将为 IT 支持人员创建一个可分配角色的安全组，并使用 PIM API 将安全组资格分配给用户管理员角色。 通过将符合条件的角色分配给安全组，Contoso 可以更高效地管理管理员对资源（如Azure AD角色）的访问权限。 例如：
+你将为 IT 支持人员创建一个可分配角色的安全组，并使用 PIM API 将安全组资格分配给用户管理员角色。 通过将符合条件的角色分配给安全组，Contoso 可以更高效地管理管理员对 Azure AD 角色等资源的访问权限。 例如：
 
 + 删除现有或添加更多组成员也会删除管理员。
 + 向组成员添加更多角色，而不是将角色分配给单个用户。
@@ -27,13 +27,13 @@ Microsoft Graph PIM API 使组织能够管理对 Azure Active Directory (Azure A
 >[!NOTE]
 >本教程中显示的响应对象可能会缩短以实现可读性。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 若要完成本教程，需要以下资源和权限：
 
-+ 已启用Azure AD Premium P2或 EMS E5 许可证的工作Azure AD租户。
++ 已启用Azure AD Premium P2或 EMS E5 许可证的工作 Azure AD 租户。
 + 以全局管理员角色的用户身份登录[到Graph资源管理器](https://developer.microsoft.com/graph/graph-explorer)。
-  + [可选]启动新的隐身或 InPrivate 浏览器会话，或在匿名浏览器中启动会话。 本教程稍后将登录。
+  + [可选]"开始"菜单新的隐身或 InPrivate 浏览器会话，或在匿名浏览器中启动会话。 本教程稍后将登录。
 + 以下委派权限：`User.ReadWrite.All`、`Group.ReadWrite.All`、`Directory.Read.All`、`RoleEligibilitySchedule.ReadWrite.Directory`和 `RoleAssignmentSchedule.ReadWrite.Directory``RoleManagement.ReadWrite.Directory`。
 + Authenticator安装在手机上的应用，以注册用户进行多重身份验证 (MFA) 。
 
@@ -101,9 +101,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-create-a-security-group-that-can-be-assigned-an-azure-ad-role"></a>步骤 2：创建可分配Azure AD角色的安全组
+## <a name="step-2-create-a-security-group-that-can-be-assigned-an-azure-ad-role"></a>步骤 2：创建可分配 Azure AD 角色的安全组
 
-创建可分配给Azure AD角色的组。 将自己分配为组所有者，你和 Aline (在步骤 1 中创建的用户) 作为成员。
+创建可分配给 Azure AD 角色的组。 将自己分配为组所有者，你和 Aline (在步骤 1 中创建的用户) 作为成员。
 
 ### <a name="request-create-a-role-assignable-group"></a>请求：创建可分配角色的组
 
@@ -166,12 +166,12 @@ Content-type: application/json
 
 现在你有一个安全组，将其分配为符合用户管理员角色的条件。 在此步骤中：
 
-+ 创建一个 unifiedRoleEligibilityScheduleRequest 对象，该对象将组 **IT 支持人员 (用户)** 标识为符合用户管理员角色一年的条件。 Azure AD将此符合条件的分配扩展到组成员，即你和 Aline。
++ 创建一个 unifiedRoleEligibilityScheduleRequest 对象，该对象将组 **IT 支持人员 (用户)** 标识为符合用户管理员角色一年的条件。 Azure AD 将此符合条件的分配扩展到组成员，即你和 Aline。
 + 将符合条件的分配范围限定到整个租户。 这允许用户管理员对租户中的所有用户使用其特权，但更高特权用户（如全局管理员）除外。
 
 ### <a name="request"></a>请求
 
-替换`e77cbb23-0ff2-4e18-819c-690f58269752`为 **IT 支持人员 (用户)** 安全组的 **ID** 值。 此 **principalId** 标识用户管理员角色的资格分配者。 roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` 是Azure AD中用户管理员角色的全局模板标识符。
+替换`e77cbb23-0ff2-4e18-819c-690f58269752`为 **IT 支持人员 (用户)** 安全组的 **ID** 值。 此 **principalId** 标识用户管理员角色的资格分配者。 roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` 是 Azure AD 中用户管理员角色的全局模板标识符。
 
 <!-- {
   "blockType": "request",
@@ -271,7 +271,7 @@ Content-type: application/json
 }
 ```
 
-空响应对象显示 Aline 在 Contoso 中没有现有的Azure AD角色。 Aline 现在会在有限的时间内激活其符合条件的用户管理员角色。
+空响应对象显示 Aline 在 Contoso 中没有现有的 Azure AD 角色。 Aline 现在会在有限的时间内激活其符合条件的用户管理员角色。
 
 ## <a name="step-5-user-self-activates-their-eligible-assignment"></a>步骤 5：用户自行激活其符合条件的分配
 
@@ -469,7 +469,5 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>另请参阅
 
++ [教程：使用 Microsoft Graph PowerShell 在Privileged Identity Management中分配 Azure AD 角色](/powershell/microsoftgraph/tutorial-pim)
 + [通过 PIM 管理角色的概述](/graph/api/resources/privilegedidentitymanagementv3-overview)
-+ [Azure AD内置角色](/azure/active-directory/roles/permissions-reference#all-roles)
-+ [启用按用户Azure AD多重身份验证来保护登录事件](/azure/active-directory/authentication/howto-mfa-userstates)
-+ [unifiedRoleEligibilityScheduleRequest 资源类型](/graph/api/resources/unifiedroleeligibilityschedulerequest)

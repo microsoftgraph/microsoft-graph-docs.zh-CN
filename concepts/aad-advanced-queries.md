@@ -4,20 +4,20 @@ description: Azure AD 目录对象支持高级查询功能以高效访问数据�
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: b5eff1cba4f2f8db4e09c5224aaf4b43ff86d513
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 8156670a19364be7a58722ce966067c2e9e4a8b3
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848646"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461553"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Azure AD 目录对象的高级查询功能
 
-随着 Azure AD 在稳定性、可用性和性能方面不断提供更多功能和改进，Microsoft Graph 也在不断改进和扩展以便高效访问数据。 一个途径是 Microsoft Graph 对各种 Azure AD 对象及其属性的高级查询功能加强支持。 例如，在`$filter`查询参数上添加 **Not** （`not`），**不等于** （`ne`），**以** （`endsWith`） 运算符结尾。
+随着 Azure AD 在稳定性、可用性和性能方面不断提供更多功能和改进，Microsoft Graph 也在不断改进和扩展以便高效访问数据。 一个途径是 Microsoft Graph 对各种 Azure AD 对象及其属性的高级查询功能加强支持。 例如，在 `$filter` 查询参数上添加 **not** (`not`)，**不等于** (`ne`)，**以** (`endswith`) 运算符结尾。
 
 Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了添加对某些属性的其他查询功能的支持，这些属性现在在单独的存储中编制索引。 这种单独的索引使 Azure AD 可以增加支持并提高查询请求的性能。 但是，这些高级查询功能在默认情况下不可用，但是，请求者还必须将 **ConsistencyLevel** 标头设置为`eventual`*，*（`$search`除外）使用`$count`查询参数。 **ConsistencyLevel** 标头和`$count`被称为 *高级查询参数*。
 
-例如，如果只想检索非活动用户帐户，则可以运行使用 `$filter` 查询参数的查询之一。
+例如，要仅检索非活动用户帐户，你可以运行使用 `$filter` 查询参数的查询之一。
 
 <!-- markdownlint-disable MD023 MD024 MD025 -->
 + 选项 1：将 `$filter` 查询参数与 运算符 `eq` 一同使用。 默认情况下，此请求将起作用，即请求不需要高级查询参数。
@@ -222,6 +222,7 @@ Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了添
 | :----------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 使用 `$count` 作为 URL 段                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=groups%2F%24count&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups/$count`                                                                                                                                                                                       |
 | 使用 `$count` 作为查询字符串参数                              | [GET](https://developer.microsoft.com/graph/graph-explorer?request=servicePrincipals%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../servicePrincipals?$count=true`                                                                                                                                                     |
+| 在 `$filter` 表达式中使用 `$count`                                 | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedLicenses%2F%24count%2Bne%2B0%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedLicenses/$count eq 0&$count=true`                                                                                                                                                                                       |
 | 使用 `$search`                                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24search%3D%22displayName%3ABrowser%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$search="displayName:Browser"`                                                                                                                     |
 | 对选择属性使用 `$orderby`                                   | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$count=true`                                                                                                               |
 | 将 `$filter` 与 `endsWith` 运算符结合使用                            | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40outlook.com')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@outlook.com')`                                                                                       |
@@ -238,6 +239,7 @@ Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了添
 > + 仅高级查询支持将 `$filter` 和 `$orderBy` 结合使用。
 > + 高级查询当前不支持`$expand`。
 > + 高级查询功能目前不适用于Azure AD B2C租户。
+> + 若要在 [批处理请求](json-batching.md)中使用高级查询功能，请在 JSON 请求的 **headers** 属性中指定 **ConsistencyLevel** 标头。
 
 ## <a name="support-for-filter-on-properties-of-azure-ad-directory-objects"></a>支持筛选 Azure AD 目录对象的属性
 
@@ -245,7 +247,7 @@ Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了添
 
 + 默认情况下支持的查询也适用于高级查询，但响应最终会保持一致。
 + 默认情况下，只要默认支持`eq`运算符，则默认支持`in`运算符。
-+ 仅`mail`和`userPrincipalName`属性的高级查询支持 `endsWith` 运算符。
++ 仅对 **mail**、**userPrincipalName** 和 **proxyAddresses** 属性的高级查询支持 `endsWith` 运算符。
 + 仅高级查询支持 `not` 和 `ne` 求反运算符。
   + 支持 `eq` 运算符的所有属性也支持 `ne` 或 `not` 运算符。
   + 对于使用 `any` lambda 运算符的查询，请使用 `not` 运算符。 请参阅[使用 lambda 运算符的筛选器](/graph/query-parameters#filter-using-lambda-operators)。

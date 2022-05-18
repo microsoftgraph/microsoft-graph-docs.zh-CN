@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2efa24746d8670e9e96d9f3d66f6ec884c643a72
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 50ba58f3546ec06e4c7dab0c62a9453687c99a90
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110333"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461301"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -24,13 +24,15 @@ ms.locfileid: "62110333"
 
 使用 MIME 格式时：
 - 提供适用的 [Internet 邮件头](https://tools.ietf.org/html/rfc2076) 和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，所有内容在请求正文中都通过 **base64** 格式进行编码。
-- 向 MIME 内容添加任何附件和 S/MIME 属性。
+- \* 向 MIME 内容添加任何附件和 S/MIME 属性。
 
 默认情况下，此操作将草稿保存在“草稿”文件夹中。
 
 在后续操作中[发送](../api/message-send.md)草稿消息。
 
 或者，通过一次操作[发送新邮件](../api/user-sendmail.md) ，或创建一个草稿以[转发](../api/message-createforward.md)、[答复](../api/message-createreply.md)和[答复所有](../api/message-createreplyall.md)现有邮件。
+
+>\* **注意：** S/MIME 消息有效负载当前限制为 4 MB。 超过此限制的提交尝试将导致 `HTTP 413 Request Entity Too Large`错误响应。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

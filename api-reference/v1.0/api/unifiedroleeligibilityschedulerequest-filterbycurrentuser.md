@@ -5,17 +5,20 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 000e75459d321a19f546b12dd0b4063b4d60aba5
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 978703b8e6dedaf049916143587bc433fc5c5873
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204769"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461224"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleRequest： filterByCurrentUser
 命名空间：microsoft.graph
 
 在 PIM 中，检索针对特定主体的角色可取性请求。 主体可以是 **unifiedRoleEligibilityScheduleRequest** 对象的创建者或审批者，也可以是角色资格的目标。
+
+> [!NOTE]
+> 此 API 不会通过组成员身份返回符合条件的角色分配。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +27,7 @@ ms.locfileid: "65204769"
 |:---|:---|
 |委派（工作或学校帐户）|RoleEligibilitySchedule.Read.Directory、RoleManagement.Read.Directory、RoleManagement.Read.All、RoleEligibilitySchedule.ReadWrite.Directory、RoleManagement.ReadWrite.Directory |
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory |
+|应用程序|RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 

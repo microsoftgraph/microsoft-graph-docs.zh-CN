@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: governance
 author: rkarim-ms
-ms.openlocfilehash: 5e92e7da1a18d4bec2167eefc2e47d07a4e3abf4
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: ab02fa8a20b6f01bf0d7b71aa70882b7f0af51bb
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398326"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461282"
 ---
 # <a name="privileged-identity-management-deprecated"></a>Privileged Identity Management（已弃用）
 
@@ -19,7 +19,7 @@ ms.locfileid: "65398326"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->2021 年 5 月 31 日，用于 **Azure AD 角色** 的 Privileged Identity Management (PIM) API 已弃用，并停止返回数据。 使用 [角色管理](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) API 并查看 [下面的迁移指南](#migrate-from-pim-v2-to-pim-v3-apis)。
+>2021 年 5 月 31 日，用于 **Azure AD 角色** 的 Privileged Identity Management (PIM) API 已弃用，并停止返回数据。 使用 [角色管理](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true) API 并查看 [下面的迁移指南](#migrate-from-pim-v2-to-pim-v3-apis)。
 >
 >用于 **Azure 资源** 的特权标识管理 (PIM) API 即将弃用。 使用新的 [用于 Azure 资源的 Azure REST PIM API](/rest/api/authorization/role-eligibility-schedule-requests)。 如果要迁移，请参阅下面的迁移指南。
 

@@ -5,19 +5,19 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: c4341f58e52ce37be2071a4699d0a14f11923aa5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dc4fca0e134b1d596783727360da1e630bd41a38
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098763"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461532"
 ---
 # <a name="subjectrightsrequest-getfinalreport"></a>subjectRightsRequest： getFinalReport
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取主题权限请求的最终报告。 该报告是一个文本文件，其中包含有关隐私管理员包含的文件的信息。
+获取主题权限请求的最终报告。 报表是一个文本文件，其中包含隐私管理员包含的文件的相关信息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,11 +30,14 @@ ms.locfileid: "62098763"
 
 ## <a name="http-request"></a>HTTP 请求
 
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 GET /privacy/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 ```
 
@@ -48,7 +51,7 @@ GET /privacy/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 Stream。
+如果成功，此函数在响应正文中返回 `200 OK` 响应代码和流。
 
 ## <a name="examples"></a>示例
 

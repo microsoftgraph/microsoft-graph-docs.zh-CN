@@ -5,20 +5,20 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 03810c04707d9b53a0254cbb4d322f4d5696b0d0
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: a42454acfb8c6dc50077fdd85fc7fcf9fa8086e5
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133194"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461329"
 ---
 # <a name="expirationpattern-resource-type"></a>expirationPattern 资源类型
 
 命名空间：microsoft.graph
 
-在[Azure AD权利管理](entitlementmanagement-overview.md)中，访问包分配请求由想要获取访问包分配的用户创建。 此请求可以包含用户想要分配时间的计划。 来自此类请求的访问包分配也有计划。 [entitlementManagementSchedule](entitlementmanagementschedule.md) 的过期字段指示访问包分配何时到期。
+在 [Azure AD 权利管理](entitlementmanagement-overview.md)中，访问包分配请求由想要获取访问包分配的用户创建。 此请求可以包含用户想要分配时间的计划。 来自此类请求的访问包分配也有计划。 [entitlementManagementSchedule](entitlementmanagementschedule.md) 的过期字段指示访问包分配何时到期。
 
-在 PIM 中，使用此资源定义 [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) 或 [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) 对象何时过期。
+在 PIM 中，使用此资源定义 [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) 或 [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) 对象何时过期。 此对象允许的设置取决于 [Azure AD 角色的设置](../api/unifiedrolemanagementpolicy-list-rules.md)。 例如，如果 Azure AD 角色的设置指定不允许永久符合条件的分配，则为 **type** 属性指定`noExpiration`将返回错误。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

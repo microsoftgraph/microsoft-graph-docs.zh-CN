@@ -1,23 +1,23 @@
 ---
-title: 列出注释
-description: 从 notes 导航属性获取 authoredNote 资源。
+title: 列出备注
+description: 从备注导航属性获取 authoredNote 资源。
 author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: b9290ad1c10f2b8ec3e3fe36afcce619f2630d01
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: e1a934f721f079699e63920e58e62d551d4e1534
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61403094"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461539"
 ---
-# <a name="list-notes"></a>列出注释
+# <a name="list-notes"></a>列出备注
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取与主题权限请求相关联的创作笔记列表。 
+获取与主题权限请求关联的创作笔记的列表。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,15 +26,18 @@ ms.locfileid: "61403094"
 |:---|:---|
 |委派（工作或学校帐户）|SubjectRightsRequest.Read.All、SubjectRightsRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持|
+|应用程序|不支持|
 
 ## <a name="http-request"></a>HTTP 请求
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}/notes
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ```
 
@@ -51,7 +54,7 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [authoredNote](../resources/authorednote.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [authoredNote](../resources/authorednote.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -82,7 +85,7 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 [!INCLUDE [sample-code](../includes/snippets/java/list-authorednote-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-authorednote-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -106,11 +109,17 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/privacy/subjectRightsRequests('77f885ac-1d7b-4317-bde8-4cb3d24a3ed8')/notes",
     "value": [
         {
-            "id": "String (identifier)",
-            "createdDateTime": "String (timestamp)",
-            "author": { "@odata.type": "microsoft.graph.identitySet"},
+            "id": "73A1E594-D973-4740-B1CC-42FD21727543",
+            "createdDateTime": "2022-06-20T22:42:28Z",
+            "author": {
+                "user": {
+                    "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+                    "displayName": "srradmin@contoso.com"
+                }
+            },
             "content": {
-                 "@odata.type": "microsoft.graph.itemBody"
+                "content": "Please review all the files tagged with follow up.",
+                "contentType": "text"
             }
         }
     ]

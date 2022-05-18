@@ -1,21 +1,21 @@
 ---
 title: '列出角色管理策略 (规则) '
-description: 获取为角色管理策略定义的规则。
+description: 获取为角色管理策略定义的规则或设置。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1084a5b889fcec98c74f9211705d6d6ec261c509
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: f24a62dedc25d3fb871f86e14863741ab91b8ade
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204580"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461602"
 ---
 # <a name="list-rules-for-a-role-management-policy"></a>列出角色管理策略 (规则) 
 命名空间：microsoft.graph
 
-获取为角色管理策略定义的规则。 规则是派生自 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 对象的以下类型的集合：
+获取为角色管理策略定义的规则或设置。 规则是派生自 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 对象的以下类型的集合：
 + [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)
@@ -29,7 +29,7 @@ ms.locfileid: "65204580"
 |:---|:---|
 |委派（工作或学校帐户）|RoleManagementPolicy.Read.Directory、RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagementPolicy.ReadWrite.Directory、RoleManagement.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory|
+|应用程序|RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 

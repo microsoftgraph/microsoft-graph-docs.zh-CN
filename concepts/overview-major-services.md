@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e4e48c8317afcc67e0096beb6bf71f44ceb0a424
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: ae8f0b29fccbfea9d7c71342a5bc45f08367e943
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103002"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461252"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -78,7 +78,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 | 个人资料（预览版） | 配置文件 | 提供存储和检索有关租户内人员的信息的轻型机制。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 | 个人资料卡片自定义（预览版） | 个人资料卡片 | 为管理员提供一种轻量级机制，以自定义组织中 Microsoft 365 个人资料卡上显示的内容。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 | 文档见解  | Delve、OneDrive、Outlook、SharePoint | 使用高级分析和机器学习技术获取常用的文档，以及用户查看、修改或共享的文档。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md)  |
-| 分析（预览版） | MyAnalytics | 使用高级分析和机器学习技巧，提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
+| 分析（预览版） | Viva Insights | 使用高级分析和机器学习技巧，提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 
 
 ## <a name="device-and-app-management"></a>设备和应用管理

@@ -10,7 +10,7 @@ ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461217"
+ms.locfileid: "65461695"
 ---
 # <a name="overview-of-role-management-through-the-privileged-identity-management-pim-api"></a>通过特权标识管理 (PIM) API 进行角色管理概述
 

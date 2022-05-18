@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: a4c6b7ebd169c8c0557748a476a773072df75a7a
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 6b3d2bc227b81eb39f6bb324579366f5bf3b7386
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294031"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461406"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "65294031"
 |[更新应用程序](../api/application-update.md) | [application](application.md) |更新 application 对象。 |
 |[删除应用程序](../api/application-delete.md) | 无 |删除 application 对象。 |
 |[列出已删除的应用程序](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索最近删除的应用程序的列表。 |
-| [列出用户拥有的已删除应用程序](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) 集合 | 检索租户中最近 30 天内删除的应用程序以及用户拥有的应用程序。 |
+| [列出用户拥有的已删除应用程序](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 检索租户中最近 30 天内删除的应用程序以及用户拥有的应用程序。 |
 |[获取已删除的应用程序](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | 检索最近删除的应用程序的属性。 |
 |[永久删除应用程序](../api/directory-deleteditems-delete.md) | 无 | 永久删除应用程序。 |
 |[还原已删除的应用程序](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | 还原最近删除的应用程序。 |
@@ -109,8 +109,8 @@ ms.locfileid: "65294031"
 | publicClient | [publicClientApplication](publicclientapplication.md) | 指定已安装客户端（如台式设备或移动设备）的设置。 |
 | publisherDomain | String | 应用程序的已验证发布者域。只读。支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合| 指定应用程序需要访问的资源。 此属性还指定每个资源所需的委派权限和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 可配置的资源服务 (API) 不能超过 50 个。 从 2021 年 10 月中旬开始，所需权限总数不得超过 400 个。 不可为 null。 <br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`）。|
-| serviceManagementReference | 字符串 | 引用服务或资产管理数据库中的应用程序或服务联系人信息。 可为 NULL。 |
-| signInAudience | 字符串 | 指定当前应用程序支持的 Microsoft 帐户。 可能的值是：`AzureADMyOrg`、`AzureADMultipleOrgs`、`AzureADandPersonalMicrosoftAccount`（默认）和 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。 <br><br>支持 `$filter`（`eq`、`ne`、`not`）。|
+| serviceManagementReference | 字符串 | 引用服务或资产管理数据库中的应用程序或服务联系人信息。可为空。 |
+| signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 可能的值是：`AzureADMyOrg`、`AzureADMultipleOrgs`、`AzureADandPersonalMicrosoftAccount`（默认）和 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。 <br><br>支持 `$filter`（`eq`、`ne`、`not`）。|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
 | 标记 |字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。<br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 | tokenEncryptionKeyId |Guid|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
@@ -136,8 +136,8 @@ ms.locfileid: "65294031"
 |calls           |[call](call.md) 集合                  |只读。可为 Null。|
 |connectorGroup|[connectorGroup](connectorgroup.md)| 应用程序与 Azure AD 应用程序代理一起使用的 connectorGroup。可为 Null。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
-|extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。可为 Null。|
-|federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) 集合 |应用程序的联合标识。只能在单个 GET 请求 (`GET /applications/{id}/federatedIdentityCredentials`) 上检索此对象。|
+|extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。 可为 NULL。 支持 `$expand` 和 `$filter`（`eq` - 当计数空集合时）。|
+|federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) 集合 |应用程序的联合标识。 支持 `$expand` 和 `$filter`（`eq` - 当计数空集合时）。|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) 集合|只读。可为 Null。|
 |owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。只读。可为 Null。支持 `$expand`。|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) 集合|为此应用分配的 tokenLifetimePolicies。支持 `$expand`。|

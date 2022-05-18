@@ -5,19 +5,19 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 905bc47f41271bcaff38ab16431bcfbf6c555272
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: cd48eb10d40a44d6dfbf392c7207ddd7bf9b4b6b
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61402907"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461462"
 ---
 # <a name="get-subjectrightsrequest"></a>获取 subjectRightsRequest
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [subjectRightsRequest 对象的属性和](../resources/subjectRightsRequest.md) 关系。
+读取 [subjectRightsRequest 对象的](../resources/subjectRightsRequest.md) 属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,21 +26,24 @@ ms.locfileid: "61402907"
 |:---|:---|
 |委派（工作或学校帐户）|SubjectRightsRequest.Read.All、SubjectRightsRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持|
+|应用程序|不支持|
 
 ## <a name="http-request"></a>HTTP 请求
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 [OData 查询参数来帮助](/graph/query-parameters) 自定义响应。
+此方法不支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +55,7 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [subjectRightsRequest](../resources/subjectRightsRequest.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subjectRightsRequest](../resources/subjectRightsRequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -83,7 +86,7 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 [!INCLUDE [sample-code](../includes/snippets/java/get-subjectrightsrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -103,19 +106,19 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-    {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
+{
+    "type": "export",
+    "dataSubjectType": "customer",
     "regulations": [
-        "String"
+        "GDPR"
     ],
-    "displayName": "String",
-    "description": "String",
+    "displayName": "Export request for Monica Thompson",
+    "description": "This is a export request",
     "status": "active",
-    "internalDueDateTime": "String",
-    "lastModifiedDateTime": "String",
-    "id": "String",
-    "createdDateTime": "String",
+    "internalDueDateTime": "2022-06-20T22:42:28Z",
+    "lastModifiedDateTime": "2022-04-20T22:42:28Z",
+    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+    "createdDateTime": "2022-04-19T22:42:28Z",
     "stages": [
         {
             "stage": "contentRetrieval",
@@ -139,22 +142,36 @@ Content-Type: application/json
         }
     ],
     "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
+        "firstName": "Monica",
+        "lastName": "Thompson",
+        "email": "Monica.Thompson@contoso.com",
+        "residency": "USA",
+        "SSN": "123-456-7890"
     },
     "team": {
-        "id": "String (identifier)",
-        "webUrl": "String"
+        "id": "5484809c-fb5b-415a-afc6-da7ff601034e",
+        "webUrl": "https://teams.contoso.com/teams/teamid"
+    },
+    "includeAllVersions": false,
+    "pauseAfterEstimate": true,
+    "includeAuthoredContent": true,
+    "externalId": null,
+    "contentQuery": "(('Monica Thompson' OR 'Monica.Thompson@contoso.com') OR (participants=Monica.Thompson@contoso.com))",
+    "mailboxLocations": null,
+    "siteLocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     }
 }
 ```

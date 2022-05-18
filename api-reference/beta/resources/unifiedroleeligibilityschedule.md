@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ff650b5a4f50c85783d357cc54e5dae9ac273425
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: f89a81fcf64cffa8875f58ead56a95550b655a95
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398756"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461469"
 ---
 # <a name="unifiedroleeligibilityschedule-resource-type"></a>unifiedRoleEligibilitySchedule 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "65398756"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 unifiedRoleEligibilitySchedules](../api/unifiedroleeligibilityschedule-list.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) 集合|获取 [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) 对象及其属性的列表。|
+|[列出 unifiedRoleEligibilitySchedules](../api/rbacapplication-list-roleeligibilityschedules.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) 集合|获取 [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) 对象及其属性的列表。|
 |[获取 unifiedRoleEligibilitySchedule](../api/unifiedroleeligibilityschedule-get.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|读取 [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) 对象的属性和关系。|
 |[filterByCurrentUser](../api/unifiedroleeligibilityschedule-filterbycurrentuser.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) 集合|获取向特定用户授予的 [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) 对象及其属性的列表。|
 
@@ -39,10 +39,10 @@ ms.locfileid: "65398756"
 |id|String|unifiedRoleEligibilitySchedule 的唯一标识符。 键，不可为 null，只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。|
 |memberType|String|符合条件的分配的成员身份类型。 它可以是 `Inherited`， `Direct`或 `Group`.|
 |modifiedDateTime|DateTimeOffset|上次更新计划的时间。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。|
-|principalId|String| 要向其授予合格分配的主体的标识符。 可以是组或用户。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
-|roleDefinitionId|String|工作分配所用于的 unifiedRoleDefinition 的标识符。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
+|principalId|字符串| 要向其授予合格分配的主体的标识符。 可以是组或用户。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
+|roleDefinitionId|字符串|工作分配所用于的 unifiedRoleDefinition 的标识符。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|符合条件的角色分配请求的计划对象。|
-|status|String|`roleEligibilitySchedule`的状态 。 它可以包括状态相关的消息，如 `Provisioned`， `Revoked`， `Pending Provisioning`和 `Pending Approval`。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
+|status|字符串|`roleEligibilitySchedule`的状态 。 它可以包括状态相关的消息，如 `Provisioned`， `Revoked`， `Pending Provisioning`和 `Pending Approval`。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

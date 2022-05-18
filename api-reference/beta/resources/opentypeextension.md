@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: d0f2e474488cc0c264483f69b11e3cc95ed4f767
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 476747b9341f0d7b2d5b551809319ccec5edc787
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424621"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461399"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -19,16 +19,16 @@ ms.locfileid: "61424621"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 借助开放扩展（旧称为“Office 365 数据扩展”），可以直接将泛型属性轻松添加到 Microsoft Graph 中的资源。
-开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。  每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。 一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
+开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。  每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。 一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_。例如，`com.contoso.ContactInfo`。 **请勿在** 扩展名中使用 Microsoft 域 (`com.microsoft` 或 `com.onmicrosoft`) 。
 
 开放扩展示例：[使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
 
-一般可用性（GA: /v1.0 和 /beta）或预览版 (/beta) 对应版本中的以下资源支持开放扩展。
+相应版本中的以下资源支持开放扩展 - 正式发布 (/v1.0) 或预览版 (/beta) 。
 
 | 资源 | 版本 |
 |---------------|-------|
-| [管理单元](administrativeunit.md)  | GA |
-| [日历事件](event.md) | GA |
+| [管理单元](administrativeunit.md) | GA |
+| [日历事件](event.md) \* | GA |
 | 组[日历事件](event.md) | GA |
 | 组对话线程[帖子](post.md) | GA |
 | [设备](device.md) | GA |
@@ -37,8 +37,10 @@ ms.locfileid: "61424621"
 | [组织](organization.md) | GA |
 | [个人联系人](contact.md) | GA |
 | [用户](user.md) | GA |
-| [任务](basetask.md)  | GA |
-| [任务列表](basetasklist.md)  | GA |
+| [任务](basetask.md) | GA |
+| [任务列表](basetasklist.md) | GA |
+
+>\***注意：** 由于现有服务限制，委托无法在共享邮箱日历中创建打开的扩展追加事件。 尝试执行此操作将导致 `ErrorAccessDenied` 响应。
 
 ## <a name="outlook-specific-considerations"></a>Outlook 特定注意事项
 
@@ -87,7 +89,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[创建](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (在现有资源实例) 中，或者包含 openTypeExtension[](event.md)对象[](message.md)的新联系人、事件、邮件、[帖子](post.md)、[任务](basetask.md)或[TaskList](basetasklist.md)中。 [](contact.md) | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (现有资源实例) 或包含 openTypeExtension 对象的新[联系](contact.md)人、[事件](event.md)、[消息](message.md)、[帖子](post.md)、[Task](basetask.md) 或 [TaskList](basetasklist.md)。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
 |[获取](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
 |[更新](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |更新 openTypeExtension 对象。 |
 |[删除](../api/opentypeextension-delete.md) | 无 |删除 openTypeExtension 对象。 |

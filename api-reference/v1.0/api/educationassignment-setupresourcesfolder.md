@@ -1,26 +1,26 @@
 ---
-title: educationAssignment： setUpResourcesFolder
-description: 创建一SharePoint文件夹以上传给定 educationAssignment 的文件。
+title: educationAssignment：setUpResourcesFolder
+description: 创建一个SharePoint文件夹，用于上传给定 educationAssignment 的文件。
 ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d7847f6e38f6a4ce1ce64773f0ced248417beae1
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 2416a4a53c1b8cfee579fa604a5f8ba873875233
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936381"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65460671"
 ---
-# <a name="educationassignment-setupresourcesfolder"></a>educationAssignment： setUpResourcesFolder
+# <a name="educationassignment-setupresourcesfolder"></a>educationAssignment：setUpResourcesFolder
 
 命名空间：microsoft.graph
 
-创建一SharePoint文件夹，以上传给定[educationAssignment 的文件](../resources/educationassignment.md)。 
+创建一个SharePoint文件夹，用于上传给定 [educationAssignment](../resources/educationassignment.md) 的文件。 
 
-教师确定要上载到作业文件夹中的资源。 
+教师确定要在作业的文件夹中上传的资源。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -37,14 +37,15 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | 持有者 `{token}`。必需。  |
+| Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-你需要提供一个空 json `{}` 作为此方法的请求正文。
-## <a name="response"></a>响应
-如果成功，此方法在请求 `200 OK` 正文中返回 响应代码和 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) 对象。
+在请求正文中，提供此方法的空 JSON 对象 `{}` 。
 
-如果指定的 **工作分配** 已经有一个文件夹，此方法将返回 `400 Bad request` 和 错误响应。
+## <a name="response"></a>响应
+如果成功，此方法在请求正文中返回 `200 OK` 响应代码和 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) 对象。
+
+如果指定 **的分配** 已经有一个文件夹，则此方法将返回一个 `400 Bad request` 和一个错误响应。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -86,7 +87,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>响应
-响应示例如下所示。 
+下面展示了示例响应。 
 
 <!-- {
   "blockType": "response",
@@ -148,7 +149,7 @@ Content-type: application/json
 }
 ```
 
-如果指定的 **工作分配** 已经有一个文件夹，此方法将返回 `400 Bad request` 和 错误响应。
+如果指定 **的分配** 已经有一个文件夹，则此方法将返回一个 `400 Bad request` 和一个错误响应。
 
 <!-- {
   "blockType": "response",

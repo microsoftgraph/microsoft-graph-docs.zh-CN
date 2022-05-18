@@ -5,18 +5,18 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 67fb91da3601c467e33725064ca68753f35eab86
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 59adc6589ea351d565248797aeb9384b9ae3f890
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134037"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461441"
 ---
 # <a name="requestschedule-resource-type"></a>requestSchedule 资源类型
 
 命名空间：microsoft.graph
 
-在 PIM 中，使用此资源来定义主体何时具有合格或活动角色分配的计划。
+在 PIM 中，在创建或更新 [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) 或 [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) 对象时，使用此资源定义主体何时具有合格或活动角色分配的计划。 此对象允许的设置取决于 [Azure AD 角色的设置](../api/unifiedrolemanagementpolicy-list-rules.md)。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

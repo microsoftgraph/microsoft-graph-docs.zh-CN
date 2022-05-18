@@ -4,14 +4,14 @@ description: 介绍可用的 SDK、它们支持的语言以及它们为开发人
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c8ea966ce6ef2510e484897816dc62f7359a882f
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 9a1d2713019de95661b532d32e00e2a918991b3e
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176796"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461511"
 ---
-# <a name="microsoft-graph-sdks-overview"></a>Microsoft Graph SDK 概述
+# <a name="microsoft-graph-sdk-overview"></a>Microsoft Graph SDK 概述
 
 Microsoft Graph SDK 目的是简化设计访问 Microsoft Graph 的优质、高效的弹性应用程序。 SDK 包含两个组件：服务库和核心库。
 

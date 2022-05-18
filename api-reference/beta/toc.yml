@@ -472,7 +472,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1255,7 +1255,7 @@ items:
                     items:
                       - name: 发现
                         href: api/directorydefinition-discover.md
-              - name: 模板
+              - name: “Microsoft UEFI Certificate Authority”，
                 href: resources/synchronization-synchronizationtemplate.md
                 items:
                   - name: 列出
@@ -9960,7 +9960,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: 远程批量还原操作
                     href: api/manageddevice-bulkrestorecloudpc.md
-                  - name: 疑难解答
+                  - name: 排除故障
                     href: api/cloudpc-troubleshoot.md
                   - name: 用户列表
                     href: api/user-list-cloudpcs.md
@@ -11487,6 +11487,8 @@ items:
                           - name: 获取
                             href: api/unifiedrbacresourceaction-get.md
                   - name: Privileged Identity Management
+                    displayName: 'Privileged identity management, PIM'
+                    href: resources/privilegedidentitymanagementv3-overview.md
                     items:
                       - name: 角色分配
                         items:
@@ -11494,9 +11496,9 @@ items:
                             href: resources/unifiedroleassignmentschedulerequest.md
                             items:
                               - name: 列出
-                                href: api/unifiedroleassignmentschedulerequest-list.md
+                                href: api/rbacapplication-list-roleassignmentschedulerequests.md
                               - name: 创建
-                                href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+                                href: api/rbacapplication-post-roleassignmentschedulerequests.md
                               - name: 获取
                                 href: api/unifiedroleassignmentschedulerequest-get.md
                               - name: 取消
@@ -11507,7 +11509,7 @@ items:
                             href: resources/unifiedroleassignmentschedule.md
                             items:
                               - name: 列出
-                                href: api/unifiedroleassignmentschedule-list.md
+                                href: api/rbacapplication-list-roleassignmentschedules.md
                               - name: 获取
                                 href: api/unifiedroleassignmentschedule-get.md
                               - name: 按当前用户筛选
@@ -11516,7 +11518,7 @@ items:
                             href: resources/unifiedroleassignmentscheduleinstance.md
                             items:
                               - name: 列出
-                                href: api/unifiedroleassignmentscheduleinstance-list.md
+                                href: api/rbacapplication-list-roleassignmentscheduleinstances.md
                               - name: 获取
                                 href: api/unifiedroleassignmentscheduleinstance-get.md
                               - name: 按当前用户筛选
@@ -11527,9 +11529,9 @@ items:
                             href: resources/unifiedroleeligibilityschedulerequest.md
                             items:
                               - name: 列出
-                                href: api/unifiedroleeligibilityschedulerequest-list.md
+                                href: api/rbacapplication-list-roleeligibilityschedulerequests.md
                               - name: 创建
-                                href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+                                href: api/rbacapplication-post-roleeligibilityschedulerequests.md
                               - name: 获取
                                 href: api/unifiedroleeligibilityschedulerequest-get.md
                               - name: 取消
@@ -11540,7 +11542,7 @@ items:
                             href: resources/unifiedroleeligibilityschedule.md
                             items:
                               - name: 列出
-                                href: api/unifiedroleeligibilityschedule-list.md
+                                href: api/rbacapplication-list-roleeligibilityschedules.md
                               - name: 获取
                                 href: api/unifiedroleeligibilityschedule-get.md
                               - name: 按当前用户筛选
@@ -11549,7 +11551,7 @@ items:
                             href: resources/unifiedroleeligibilityscheduleinstance.md
                             items:
                               - name: 列出
-                                href: api/unifiedroleeligibilityscheduleinstance-list.md
+                                href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
                               - name: 获取
                                 href: api/unifiedroleeligibilityscheduleinstance-get.md
                               - name: 按当前用户筛选
@@ -11575,7 +11577,7 @@ items:
                             href: resources/unifiedrolemanagementpolicyassignment.md
                             items:
                               - name: 列出
-                                href: api/unifiedRoleManagementPolicyAssignment-list.md
+                                href: api/policyroot-list-rolemanagementpolicyassignments.md
                               - name: 获取
                                 href: api/unifiedrolemanagementpolicyassignment-get.md
           - name: 身份和登录
@@ -13419,7 +13421,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 备注
+              - name: 注释
                 items:
                   - name: 人员批注
                     href: resources/personannotation.md
@@ -14587,7 +14589,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划

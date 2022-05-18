@@ -3,12 +3,12 @@ title: 安装 Microsoft Graph SDK
 description: 提供 C#、Java、JavaScript、Objective-C、PHP 和 Ruby Microsoft Graph SDK 的安装说明。
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 770b1e72d418a3f0308651b8fdd93a5e2fb7e834
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 048d9fc3daee48d5b41623916dab937eae595f78
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848767"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461427"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>安装 Microsoft Graph SDK
 
@@ -164,7 +164,17 @@ composer require microsoft/microsoft-graph
 
 ## <a name="install-the-microsoft-powershell-sdk"></a>安装 Microsoft PowerShell
 
-请参阅 [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation.md)。
+所有模块都发布在[PowerShell 库](https://www.powershellgallery.com/packages/Microsoft.Graph)上。 若要安装：
+
+``` powershell
+Install-Module Microsoft.Graph
+```
+
+如果要从预览模块升级，请使用 AllowClobber 和 Force 参数运行 `Install-Module` ，以避免命令名称冲突：
+
+``` powershell
+ Install-Module Microsoft.Graph -AllowClobber -Force
+```
 
 ## <a name="install-the-microsoft-graph-ruby-sdk"></a>安装 Microsoft Graph Ruby SDK
 

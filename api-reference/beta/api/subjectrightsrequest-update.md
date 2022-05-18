@@ -5,19 +5,19 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 007df34dfddc56344627f21419b37c3a9ea6937e
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: 896790cb8a6c69a247695819b8d3f26cef2e2410
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61403080"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461483"
 ---
 # <a name="update-subjectrightsrequest"></a>更新 subjectRightsRequest
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [subjectRightsRequest 对象](../resources/subjectRightsRequest.md) 的属性。
+更新 [subjectRightsRequest](../resources/subjectRightsRequest.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,15 +26,18 @@ ms.locfileid: "61403080"
 |:---|:---|
 |委派（工作或学校帐户）|SubjectRightsRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持|
+|应用程序|不支持|
 
 ## <a name="http-request"></a>HTTP 请求
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+PATCH /security/subjectRightsRequests/{subjectRightsRequestId}
 PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
@@ -47,18 +50,17 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [subjectRightsRequest](../resources/subjectRightsRequest.md) 对象的 JSON 表示形式。
 
-下表显示更新 [subjectRightsRequest 时所需的属性](../resources/subjectRightsRequest.md)。
+下表显示了更新 [subjectRightsRequest](../resources/subjectRightsRequest.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|assignedTo|[microsoft.graph.identity](../resources/identity.md)|请求分配给的用户的标识信息。|
-|说明|String|更新了请求的说明。|
-|displayName|String|请求的更新名称。|
+|说明|字符串|已更新请求的说明。|
+|displayName|String|已更新请求的名称。|
 |internalDueDateTime|DateTimeOffset|更新了请求的内部截止日期。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [subjectRightsRequest](../resources/subjectRightsRequest.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [subjectRightsRequest](../resources/subjectRightsRequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -75,8 +77,8 @@ PATCH https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRig
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.subjectRightsRequest",
-  "internalDueDateTime": "2021-08-30T00:00:00Z"
+    "@odata.type": "#microsoft.graph.subjectRightsRequest",
+    "internalDueDateTime": "2021-08-30T00:00:00Z"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -95,7 +97,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-subjectrightsrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -115,36 +117,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
-    "regulations": [
-        "String"
-    ],
-    "displayName": "String",
-    "description": "String",
-    "status": "active",
-    "internalDueDateTime": "String",
-    "lastModifiedDateTime": "String",
-    "id": "String",
-    "createdDateTime": "String",
-    "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-    },
-    "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
-    },
-    "team": {
-        "id": "String (identifier)",
-        "webUrl": "String"
-    }
+    "displayName": "Updated case name for Diego Siciliani",
+    "description": "This is an updated case",
+    "internalDueDateTime": "2022-07-20T22:42:28Z"
 }
 ```
 

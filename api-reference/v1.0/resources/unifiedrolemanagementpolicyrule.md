@@ -1,23 +1,23 @@
 ---
 title: unifiedRoleManagementPolicyRule 资源类型
-description: 定义与角色管理策略关联的规则的抽象类型。
+description: 定义与角色管理策略关联的规则或设置的抽象类型。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1ef9d1e4998a46f503b8960c2c0c9fca452a5c08
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 54444e25d6967536fa2e9a444fd05adf66467881
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246977"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461259"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>unifiedRoleManagementPolicyRule 资源类型
 
 命名空间：microsoft.graph
 
 
-定义与角色管理策略关联的规则的抽象类型。 此抽象类型由以下资源继承，这些资源定义各种类型的规则及其与角色管理策略关联的设置。
+定义与角色管理策略关联的规则或设置的抽象类型。 此抽象类型由以下资源继承，这些资源定义各种类型的规则及其与角色管理策略关联的设置。
 + [unifiedRoleManagementPolicyApprovalRule](unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](unifiedrolemanagementpolicyauthenticationcontextrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](unifiedrolemanagementpolicyenablementrule.md)

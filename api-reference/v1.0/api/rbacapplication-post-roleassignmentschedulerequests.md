@@ -1,25 +1,25 @@
 ---
-title: 创建 unifiedRoleAssignmentScheduleRequest
+title: 创建 roleAssignmentScheduleRequests
 description: 在 PIM 中，通过 unifiedRoleAssignmentScheduleRequest 对象请求活动和持久角色分配。 使用此 API 激活符合条件的角色。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bb94ee6d549209d64289f67d1b830c787afe4e04
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: aa00d85024698cbc802db7e07fcf82683750dc8b
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206765"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461609"
 ---
-# <a name="create-unifiedroleassignmentschedulerequest"></a>创建 unifiedRoleAssignmentScheduleRequest
+# <a name="create-roleassignmentschedulerequests"></a>创建 roleAssignmentScheduleRequests
 命名空间：microsoft.graph
 
 在 PIM 中，通过 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象执行以下操作：
 + 请求主体的活动和持久角色分配，无论是否过期日期。
 + 激活、停用、扩展或续订主体的合格角色分配。
 
-若要调用此 API 来为自己更新、续订和扩展分配，必须强制执行多重身份验证 (MFA) ，并在对 MFA 提出质询的会话中运行查询。 请参阅[“启用每用户Azure AD多重身份验证来保护登录事件](/azure/active-directory/authentication/howto-mfa-userstates)。
+若要调用此 API 来为自己更新、续订和扩展分配，必须强制执行多重身份验证 (MFA) ，并在对 MFA 提出质询的会话中运行查询。 请参阅 [“启用每用户 Azure AD 多重身份验证”来保护登录事件](/azure/active-directory/authentication/howto-mfa-userstates)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "65206765"
 |:---|:---|
 |委派（工作或学校帐户）|RoleAssignmentSchedule.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|RoleAssignmentSchedule.ReadWrite.Directory|
+|应用程序|RoleAssignmentSchedule.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,12 +55,12 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 |:---|:---|:---|
 |action|unifiedRoleScheduleRequestActions|表示角色分配请求上的操作类型。 可取值包括：`adminAssign`、`adminUpdate`、`adminRemove`、`selfActivate`、`selfDeactivate`、`adminExtend`、`adminRenew`、`selfExtend`、`selfRenew`、`unknownFutureValue`。 <br/><ul><li>`adminAssign`：让管理员将角色分配给用户或组。</li><li>`adminRemove`：让管理员从角色中删除用户或组。</li><li> `adminUpdate`：让管理员更改现有角色分配。</li><li>`adminExtend`：让管理员延长即将过期的分配。</li><li>`adminRenew`：让管理员续订过期的分配。</li><li>`selfActivate`：让用户激活其分配。</li><li>`selfDeactivate`：让用户停用其活动分配。</li><li>`selfExtend`：让用户请求延长其即将到期的分配。</li><li>`selfRenew`：用户请求续订其过期的分配。</li></ul>|
 |customData|String|用于定义请求的任何自定义数据的免费文本字段。 可选。|
-|principalId|字符串|已授予分配的主体的标识符。 必填。|
-|roleDefinitionId|String|正在分配的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的标识符。 必填。|
-|directoryScopeId|字符串|表示分配范围的目录对象的标识符。 分配的范围确定已授予主体访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。 需要 **directoryScopeId** 或 **appScopeId** 。|
+|principalId|String|已授予分配的主体的标识符。 必填。|
+|roleDefinitionId|字符串|正在分配的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的标识符。 必填。|
+|directoryScopeId|String|表示分配范围的目录对象的标识符。 分配的范围确定已授予主体访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。 需要 **directoryScopeId** 或 **appScopeId** 。|
 |appScopeId|字符串|分配作用域为应用时特定于应用的范围的标识符。 分配的范围确定已授予主体访问权限的资源集。 应用范围是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将范围限制为特定目录对象，例如管理单元。 需要 **directoryScopeId** 或 **appScopeId** 。|
-|理由|字符串|用户和管理员创建 **unifiedRoleAssignmentScheduleRequest** 对象时提供的消息。 可选。|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|角色分配请求的周期。 当前不支持定期计划。 必填。|
+|理由|String|用户和管理员创建 **unifiedRoleAssignmentScheduleRequest** 对象时提供的消息。 可选。 此属性是必需的还是可选的，也取决于 [Azure AD 角色的设置](../api/unifiedrolemanagementpolicy-list-rules.md)。|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|角色分配请求的周期。 必填。 分配的期限取决于 [Azure AD 角色的设置](../api/unifiedrolemanagementpolicy-list-rules.md)。|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|链接到角色分配请求的票证详细信息，包括票证编号和票证系统的详细信息。 可选。|
 
 
@@ -72,6 +72,8 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-admin-assigning-a-directory-role-to-a-principal"></a>示例 1：管理员将目录角色分配给主体
+
+在以下请求中，管理员创建一个请求，以将标 `fdd7a751-b60b-444a-984c-02652fe8fa1c` 识的角色分配给 ID 标识的 `071cc716-8147-4397-a5ba-b2105951cc0b`主体。 其角色的范围是租户中的所有目录对象，分配是永久性的。
 
 #### <a name="request"></a>请求
 
@@ -179,7 +181,7 @@ Content-Type: application/json
 
 #### <a name="request"></a>请求
 
-在以下请求中，**principalId** `071cc716-8147-4397-a5ba-b2105951cc0b` 标识的用户将激活自己的 *符合条件的角色*，并将其激活到 ID 标`8424c6f0-a189-499e-bbd0-26c1753c96d4`识的Azure AD角色。 其角色的范围是租户中的所有目录对象，分配为 5 小时。 若要运行此请求，调用用户必须实施多重身份验证 (MFA) 并在请求 MFA 的会话中运行查询。
+在以下请求中， **principalId** `071cc716-8147-4397-a5ba-b2105951cc0b` 标识的用户会将自己的 *符合条件的角色* 激活到 ID 标识的 `8424c6f0-a189-499e-bbd0-26c1753c96d4`Azure AD 角色。 其角色的范围是租户中的所有目录对象，分配为 5 小时。 若要运行此请求，调用用户必须实施多重身份验证 (MFA) 并在请求 MFA 的会话中运行查询。
 
 若要检索其资格请求的详细信息并确定激活资格，用户将调用 [unifiedRoleEligibilitySchedule：filterByCurrentUser](unifiedroleeligibilityschedule-filterbycurrentuser.md) API。
 

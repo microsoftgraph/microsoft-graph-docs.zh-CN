@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: d5aa9c443701a4ae04d1982387ac6f3ecfd7a1c7
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 616041fb30b65c41de3bc5b0a2ab239a0393a212
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393274"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461203"
 ---
 # <a name="subjectrightsrequest-getfinalattachment"></a>subjectRightsRequest： getFinalAttachment
 命名空间：microsoft.graph
@@ -30,11 +30,14 @@ ms.locfileid: "63393274"
 
 ## <a name="http-request"></a>HTTP 请求
 
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 ```
 
@@ -48,7 +51,7 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 
 ## <a name="response"></a>响应
 
-如果成功，此函数将重定向到包含 SAS Microsoft Azure blob 存储链接并返回响应`200`代码。
+如果成功，此函数将使用 SAS 令牌重定向到 Microsoft Azure blob 存储链接，并返回`200`响应代码。
 
 ## <a name="examples"></a>示例
 

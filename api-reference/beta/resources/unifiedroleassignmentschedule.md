@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d2188f6e3a19f2ff906a16cad9d24d8444b3972d
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: ab32cf141bf16b8b763c5b2d54700df7d3f3d8a9
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398866"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461623"
 ---
 # <a name="unifiedroleassignmentschedule-resource-type"></a>unifiedRoleAssignmentSchedule 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "65398866"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 unifiedRoleAssignmentSchedules](../api/unifiedroleassignmentschedule-list.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 集合|获取 [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 对象及其属性的列表。|
+|[列出 unifiedRoleAssignmentSchedules](../api/rbacapplication-list-roleassignmentschedules.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 集合|获取 [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 对象及其属性的列表。|
 |[获取 unifiedRoleAssignmentSchedule](../api/unifiedroleassignmentschedule-get.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|读取 [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 对象的属性和关系。|
 |[filterByCurrentUser](../api/unifiedroleassignmentschedule-filterbycurrentuser.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 集合|获取向特定用户授予的 [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 对象及其属性的列表。|
 
@@ -35,13 +35,13 @@ ms.locfileid: "65398866"
 |appScopeId|String|分配范围特定于应用时特定于应用的范围的标识符。 分配的范围确定已授予主体访问权限的资源集。 应用范围是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将范围限制为特定目录对象，例如管理单元。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |assignmentType|String|工作分配类型。 它可以是 `Assigned` 或 `Activated`.|
 |createdDateTime|DateTimeOffset|创建计划的时间。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|createdUsing|String|创建此计划的角色AssignmentScheduleRequest 的 ID。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|directoryScopeId|字符串|表示分配范围的目录对象的标识符。 分配的范围确定已授予主体访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|id|String|unifiedRoleAssignmentSchedule 的唯一标识符。 键，不可为 null，只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|createdUsing|字符串|创建此计划的角色AssignmentScheduleRequest 的 ID。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|directoryScopeId|String|表示分配范围的目录对象的标识符。 分配的范围确定已授予主体访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|id|字符串|unifiedRoleAssignmentSchedule 的唯一标识符。 键，不可为 null，只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |memberType|String|分配的成员身份类型。 它可以是 `Inherited`， `Direct`或 `Group`.|
 |modifiedDateTime|DateTimeOffset|上次更新计划的时间。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|principalId|String| 要向其授予分配的主体的 Objectid。 可以是组或用户。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。 <br> 支持 `$filter`（`eq`）。|
-|roleDefinitionId|String|工作分配所针对的 unifiedRoleDefinition 的 ID。 只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。 <br> 支持 `$filter`（`eq`）。|
+|principalId|字符串| 要向其授予分配的主体的 Objectid。 可以是组或用户。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。 <br> 支持 `$filter`（`eq`）。|
+|roleDefinitionId|字符串|工作分配所针对的 unifiedRoleDefinition 的 ID。 只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。 <br> 支持 `$filter`（`eq`）。|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|角色分配请求的计划对象。|
 |status|String|`roleAssignmentSchedule`的状态 。 它可以包括状态相关的消息，如 `Provisioned`， `Revoked`， `Pending Provisioning`和 `Pending Approval`。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
 

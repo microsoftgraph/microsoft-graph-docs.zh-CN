@@ -4,12 +4,12 @@ description: JSON 批处理使你能够通过将多个请求合并为一个单�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 55de4d5a122487173425ad297f8834267534f659
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 016f096eee9d601f0f178c0fa256c4271d1cd563
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477424"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461378"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理在一个 HTTP 调用中合并多个请求
 
@@ -59,6 +59,14 @@ Content-Type: application/json
       "headers": {
         "Content-Type": "application/json"
       }
+    },
+    {
+      "id": "5",
+      "url": "users?$select=id,displayName,userPrincipalName&$filter=city eq null&$count=true",
+      "method": "GET",
+      "headers": {
+        "ConsistencyLevel": "eventual"
+      }
     }
   ]
 }
@@ -87,6 +95,24 @@ Content-Type: application/json
           "code": "Forbidden",
           "message": "..."
         }
+      }
+    },
+    {
+      "id": "5",
+      "status": 200,
+      "headers": {
+        "OData-Version": "4.0",
+      },
+      "body": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,userPrincipalName)",
+        "@odata.count": 12,
+        "value": [
+          {
+            "id": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "displayName": "Adele Vance",
+            "userPrincipalName": "AdeleV@Contoso.com"
+          }
+        ]
       }
     },
     {
@@ -128,6 +154,7 @@ JSON 批处理请求的响应格式与请求格式类似。主要区别如下：
 * 主 JSON 对象中的属性命名为 **响应** 而不是 **请求**。
 * 单独响应可能会按与请求不同的顺序显示。
 * 单个响应具有 **状态** 属性，而不是 **方法** 和 **URL**。**状态** 值是表示 HTTP 状态代码的数字。
+* 每个响应中的 **headers** 属性表示服务器返回的标头，例如 **Cache-Control** 和 **Content-Type** 标头。
 
 批处理响应中的状态代码通常为 `200` 或 `400`。如果批处理请求本身格式不正确，则状态代码为 `400`。如果批处理请求可分析，则状态代码为 `200`。批处理响应中的 `200` 状态代码并不表示批处理中的单独请求已成功。这就是为什么 **响应** 属性中的每个单独响应都有状态代码。
 
