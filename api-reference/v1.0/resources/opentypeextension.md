@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 921070300f91cb0e41d4189b33d4bbad0a024126
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d83b3aed5b8f803d1e12e946201a161245858ab2
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098550"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461273"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -20,16 +20,16 @@ ms.locfileid: "59098550"
 
 开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。 每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。
 
-一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
+一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_。例如，`com.contoso.ContactInfo`。在扩展名中 **不要使用** Microsoft 域（`com.microsoft` 或 `com.onmicrosoft`）。
 
 开放扩展示例：[使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
 
-一般可用性（GA: /v1.0 和 /beta）或预览版 (/beta) 对应版本中的以下资源支持开放扩展。
+相应版本中的以下资源支持开放扩展 - 正式发布 (/v1.0) 或预览版（/beta 版）。
 
 |资源 |版本 |
 |:---------------|:-------|
 | [管理单元](/graph/api/resources/administrativeunit)  | GA |
-| [日历事件](event.md) | GA |
+| [日历事件](event.md) \* | GA |
 | 组[日历事件](event.md) | GA |
 | 组对话线程[帖子](post.md) | GA |
 | [设备](device.md) | GA |
@@ -40,6 +40,8 @@ ms.locfileid: "59098550"
 | [用户](user.md) | GA |
 | [任务](todotask.md)  | GA |
 | [任务列表](todotasklist.md)  | GA |
+
+>\* **注意：** 由于现有的服务限制，代理无法在共享邮箱日历中创建已追加开放扩展的事件。 尝试这样做将导致 `ErrorAccessDenied` 响应。
 
 ## <a name="outlook-specific-considerations"></a>Outlook 特定注意事项
 
@@ -52,7 +54,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>使用开放扩展（针对 Outlook 资源）或扩展属性
 
-开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。 不过，如果需要访问尚未通过 [Microsoft Graph API 元数据](/graph/traverse-the-graph#microsoft-graph-api-metadata)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。 若要确认元数据公开了哪些属性，请访问 https://graph.microsoft.com/v1.0/$metadata。
+开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。但如果需要访问尚未通过 [Microsoft Graph API 元数据](/graph/traverse-the-graph#microsoft-graph-api-metadata) 公开的 Outlook MAPI 属性的自定义数据，则可以使用 [扩展属性及其 REST API](extended-properties-overview.md)。要确认元数据公开了哪些属性，请访问 https://graph.microsoft.com/v1.0/$metadata。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

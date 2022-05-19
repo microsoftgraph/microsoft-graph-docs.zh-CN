@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: eb05f82d9f6cfc2ef88ee0104875caa88cd5a9ba
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 004a4af4b84712d824787e7d45d7b4f083d9fd6b
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134054"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549342"
 ---
 # <a name="unifiedroleassignmentscheduleinstance-resource-type"></a>unifiedRoleAssignmentScheduleInstance 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "65134054"
 
 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 unifiedRoleAssignmentScheduleInstances](../api/rbacapplication-list-roleassignmentscheduleinstances.md)|[unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) 集合|获取活动角色分配的实例。|
@@ -31,14 +31,14 @@ ms.locfileid: "65134054"
 |属性|类型|说明|
 |:---|:---|:---|
 |appScopeId|String|分配作用域为应用时特定于应用的范围的标识符。 分配的范围确定已授予主体访问权限的资源集。 应用范围是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将范围限制为特定目录对象，例如管理单元。 支持`$filter` (`eq`和`ne``null`值) 。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。|
-|assignmentType|String|工作分配的类型，可以是 `Assigned` 或 `Activated`。 支持 `$filter`（`eq`、`ne`）。|
+|assignmentType|字符串|工作分配的类型，可以是 `Assigned` 或 `Activated`。 支持 `$filter`（`eq`、`ne`）。|
 |directoryScopeId|String|表示分配范围的目录对象的标识符。 分配的范围确定已授予主体访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。 支持`$filter` (`eq`和`ne``null`值) 。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。|
 |endDateTime|DateTimeOffset| 计划实例的结束日期。|
 |id|String|**unifiedRoleAssignmentScheduleInstance** 对象的唯一标识符。 继承自 [entity](../resources/entity.md)。|
-|memberType|String|分配的继承方式。 它可以是 `Inherited`， `Direct`或 `Group`. 这进一步意味着 **unifiedRoleAssignmentSchedule** 是否可以由调用方管理。 支持 `$filter`（`eq`、`ne`）。|
+|memberType|字符串|分配的继承方式。 它可以是 `Inherited`， `Direct`或 `Group`. 这进一步意味着 **unifiedRoleAssignmentSchedule** 是否可以由调用方管理。 支持 `$filter`（`eq`、`ne`）。|
 |principalId|String|已授予角色分配的主体的标识符。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。 支持 `$filter`（`eq`、`ne`）。 |
-|roleAssignmentOriginId|String|Azure AD中的角色分配的标识符。|
-|roleAssignmentScheduleId|String|从中创建此实例的 **unifiedRoleAssignmentSchedule** 对象的标识符。|
+|roleAssignmentOriginId|String|Azure AD 中角色分配的标识符。 支持 `$filter`（`eq`、`ne`）。|
+|roleAssignmentScheduleId|String|从中创建此实例的 **unifiedRoleAssignmentSchedule** 对象的标识符。 支持 `$filter`（`eq`、`ne`）。|
 |roleDefinitionId|String|分配给主体的 [unifiedRoleDefinition](unifiedroledefinition.md) 对象的标识符。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。 支持 `$filter`（`eq`、`ne`）。|
 |startDateTime|DateTimeOffset|当此实例启动时。|
 

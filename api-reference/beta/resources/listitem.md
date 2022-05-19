@@ -5,12 +5,12 @@ title: listItem 资源
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bfda041c473da6d5d98c7c6b076ba9be276cd486
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: e7e0c01ccbdbbf532b9faecab32bcc3e0d7d4ba8
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060673"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549482"
 ---
 # <a name="listitem-resource"></a>listItem 资源
 
@@ -40,9 +40,10 @@ SharePoint 文档库中的所有项目可以表示为 **listItem** 或 [driveIte
 | [更新][]                     | PATCH /items/{item-id}                       |
 | [更新列值][Update] | PATCH /items/{item-id}/fields                |
 | [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
-|[列出 documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
-|[创建 documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
-|[还原 documentSetVersion](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
+| [列出 documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
+| [创建 documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
+| [还原 documentSetVersion](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
+| [Get delta][item-changes]    | GET /items/{item-id}/delta
 
 [Get]: ../api/listitem-get.md
 [获取分析结果]: ../api/itemanalytics-get.md
@@ -51,6 +52,7 @@ SharePoint 文档库中的所有项目可以表示为 **listItem** 或 [driveIte
 [删除]: ../api/listitem-delete.md
 [更新]: ../api/listitem-update.md
 [CreateLink]: ../api/listitem-createlink.md
+[item-changes]: ../api/listitem-delta.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 

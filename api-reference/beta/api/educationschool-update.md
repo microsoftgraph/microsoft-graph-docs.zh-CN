@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fbc31501492e364a935a60b7600ab01807567af5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9fb09925d8f34ca9ebe816262f1519a1b62aada2
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123681"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549580"
 ---
 # <a name="update-educationschool-properties"></a>更新 educationschool 属性
 
@@ -49,10 +49,10 @@ PATCH /education/schools/{id}
 
 | 属性            | 类型                                               | 说明                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | String                                             | 学校的显示名称         |
-| 说明         | String                                             | 学校描述          |
-| principalEmail      | String                                             | 主体的电子邮件地址     |
-| principalName       | String                                             | 主体名称              |
+| displayName         | 字符串                                             | 学校的显示名称。        |
+| 说明         | String                                             | 学校描述。         |
+| principalEmail      | String                                             | 主体的电子邮件地址。    |
+| principalName       | String                                             | 主体名称。             |
 | externalPrincipalId | String                                             | 同步系统中主体的 ID。 |
 | highestGrade        | String                                             | 教授的最高年级。              |
 | lowestGrade         | String                                             | 教授的最低年级。               |
@@ -67,7 +67,7 @@ PATCH /education/schools/{id}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。
 

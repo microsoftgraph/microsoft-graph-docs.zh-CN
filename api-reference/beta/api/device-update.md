@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 145eded434e80a9418747682e16afb3a654a05eb
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 7e5732fc3f634123401780549e4d24d12f819d5c
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399437"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549587"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -75,7 +75,7 @@ PATCH /devices/{id}
   "name": "update_device"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/devices/{id}
+PATCH https://graph.microsoft.com/beta/devices/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
 Content-type: application/json
 
 {
@@ -128,7 +128,7 @@ HTTP/1.1 204 No Content
   "name": "update_device_extensionAttributes"
 }-->
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/devices/{id}
+PATCH https://graph.microsoft.com/beta/devices/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
 Content-type: application/json
 
 {

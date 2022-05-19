@@ -472,7 +472,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1602,7 +1602,7 @@ items:
                     href: resources/callrecords-session.md
                   - name: 列出
                     href: api/callrecords-session-list.md
-              - name: PSTN 调用
+              - name: PSTN 呼叫
                 items:
                   - name: PSTN 日志行
                     href: resources/callrecords-pstncalllogrow.md
@@ -13421,7 +13421,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 注释
+              - name: 备注
                 items:
                   - name: 人员批注
                     href: resources/personannotation.md
@@ -14490,6 +14490,8 @@ items:
                 href: api/itemanalytics-get.md
               - name: 列出版本
                 href: api/listitem-list-versions.md
+              - name: 获取 Delta
+                href: api/listitem-delta.md
           - name: 文档集版本
             items:
               - name: 文档集版本

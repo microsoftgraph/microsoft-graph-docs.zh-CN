@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 91ed173a26262fd6285df4d60518a80aded68b60
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: e219bdce8f3cc5c2ec83d8cecf7b9b779a8ed782
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134052"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549293"
 ---
 # <a name="unifiedroleeligibilityscheduleinstance-resource-type"></a>unifiedRoleEligibilityScheduleInstance 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "65134052"
 
 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 unifiedRoleEligibilityScheduleInstances](../api/rbacapplication-list-roleeligibilityscheduleinstances.md)|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) 集合|获取角色可变性实例。|
@@ -38,7 +38,7 @@ ms.locfileid: "65134052"
 |memberType|String|角色资格的继承方式。 它可以是 `Inherited`， `Direct`或 `Group`. 这进一步意味着 **unifiedRoleEligibilitySchedule** 是否可由调用方管理。 支持 `$filter`（`eq`、`ne`）。|
 |principalId|String|符合角色条件的主体的标识符。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。 支持 `$filter`（`eq`、`ne`）。 |
 |roleDefinitionId|String|主体有资格的 [unifiedRoleDefinition](unifiedroledefinition.md) 对象的标识符。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。 支持 `$filter`（`eq`、`ne`）。|
-|roleEligibilityScheduleId|String|从中创建此实例的 **unifiedRoleEligibilitySchedule** 对象的标识符。|
+|roleEligibilityScheduleId|字符串|从中创建此实例的 **unifiedRoleEligibilitySchedule** 对象的标识符。 支持 `$filter`（`eq`、`ne`）。|
 |startDateTime|DateTimeOffset|当此实例启动时。|
 
 ## <a name="relationships"></a>关系

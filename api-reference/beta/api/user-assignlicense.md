@@ -1,16 +1,16 @@
 ---
 title: assignLicense
-description: 添加或删除用户许可证，以允许或禁止其使用 Microsoft 云产品/服务。 例如，组织可以拥有一个 Microsoft 365 企业版 E3 订阅（具有 100 个许可证）。此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要详细了解订阅和许可证，请参阅此 Technet 文章。
+description: 为用户添加或删除许可证以启用或禁用其使用 Microsoft 云产品/服务。 例如，组织可以拥有包含 100 个许可证的 Microsoft 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要详细了解订阅和许可证，请参阅此 Technet 文章。
 ms.localizationpriority: medium
-author: jpettere
+author: jconley76
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 04f4e91c082f8edb0d78ad2ea767b6db80e7736c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5c84288339cc6f59e11dcf4ea7318d83b5621612
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63339978"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549510"
 ---
 # <a name="user-assignlicense"></a>用户：assignLicense
 
@@ -18,7 +18,7 @@ ms.locfileid: "63339978"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加或删除用户许可证，以允许或禁止其使用 Microsoft 云产品/服务。 例如，组织可以拥有一个 Microsoft 365 企业版 E3 订阅（具有 100 个许可证）。此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要详细了解订阅和许可证，请参阅此 [Technet 文章](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)。
+为用户添加或删除许可证以启用或禁用其使用 Microsoft 云产品/服务。 例如，组织可以拥有包含 100 个许可证的 Microsoft 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要详细了解订阅和许可证，请参阅此 [Technet 文章](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)。
 
 若要获取目录中可用的订阅，请执行 [GET subscribedSkus 请求](subscribedsku-list.md)。 
 
@@ -47,16 +47,16 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 可以通过在 assignedLicense 对象上设置 **disabledPlans** 属性来禁用 [与许可证关联的 servicePlans](../resources/assignedlicense.md) 。|
-|removeLicenses|Guid 集合|标识要删除的许可证的 skuIds 集合。|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 可以通过在 [assignedLicense](../resources/assignedlicense.md) 对象上设置 disabledPlans 属性来禁用与许可证关联的 **servicePlans**。|
+|removeLicenses|Guid 集合|标识要删除的许可证的 skuId 的集合。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回 响应代码[](../resources/user.md)和更新的用户对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新后的 [用户](../resources/user.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-assign-licenses-to-the-signed-in-user"></a>示例 1：向登录用户分配许可证
+### <a name="example-1-assign-licenses-to-the-signed-in-user"></a>示例 1：将许可证分配给已登录用户
 
 #### <a name="request"></a>请求
 
@@ -142,7 +142,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-remove-licenses-from-the-signed-in-user"></a>示例 2：从已登录用户删除许可证
+### <a name="example-2-remove-licenses-from-the-signed-in-user"></a>示例 2：从登录用户中删除许可证
 
 #### <a name="request"></a>请求
 

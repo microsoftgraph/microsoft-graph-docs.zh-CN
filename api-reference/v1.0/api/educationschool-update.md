@@ -5,18 +5,18 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 70502ab3ad21d6d71d9560c95e2cdef1fc5c5f98
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4e2f1528590020420631fc789a672a3147400c6e
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117654"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549468"
 ---
 # <a name="update-educationschool"></a>更新 educationSchool
 
 命名空间：microsoft.graph
 
-更新 [educationSchool 对象](../resources/educationschool.md) 的属性。
+更新 [educationSchool](../resources/educationschool.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -46,14 +46,14 @@ PATCH /education/schools/{id}
 
 在请求正文中，提供 [educationSchool](../resources/educationschool.md) 对象的 JSON 表示形式。
 
-下表显示更新 [educationSchool 时所需的属性](../resources/educationschool.md)。
+下表显示了更新 [educationSchool](../resources/educationschool.md) 时所需的属性。
 
 | 属性             | 类型                                               | 说明                                                                                                                                                           |
 | :------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName          | String                                             | 学校的显示名称。 继承自 [educationOrganization](../resources/educationorganization.md)。                                                            |
-| 说明          | String                                             | 学校描述。 继承自 [educationOrganization](../resources/educationorganization.md)。                                                             |
-| externalSource       | educationExternalSource                            | 创建组织的来源。 继承自 [educationOrganization](../resources/educationorganization.md)。 可取值为：`sis`、`manual`。 |
-| externalSourceDetail | String                                             | 生成此资源的外部源的名称。                                                                                                    |
+| 说明          | 字符串                                             | 学校描述。 继承自 [educationOrganization](../resources/educationorganization.md)。                                                             |
+| externalSource       | educationExternalSource                            | 从中创建此组织的源。 继承自 [educationOrganization](../resources/educationorganization.md)。 可取值为：`sis`、`manual`。 |
+| externalSourceDetail | 字符串                                             | 从中生成此资源的外部源的名称。                                                                                                    |
 | principalEmail       | String                                             | 主体的电子邮件地址。                                                                                                                                       |
 | principalName        | String                                             | 主体名称。                                                                                                                                                |
 | externalPrincipalId  | String                                             | 同步系统中主体的 ID。                                                                                                                                    |
@@ -72,7 +72,7 @@ PATCH /education/schools/{id}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -118,7 +118,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。
 

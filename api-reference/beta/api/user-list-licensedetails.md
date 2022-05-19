@@ -1,16 +1,16 @@
 ---
 title: List licenseDetails
 description: 检索 licenseDetails 对象的列表。
-author: cindycrane
+author: jconley76
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d0a1b8bb32c5b9bde0a28b3409a37f079ca72bae
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: ed2564cf9c7360bb60f8b382ef96eb6ff7b6a8a6
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420633"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549517"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
 
