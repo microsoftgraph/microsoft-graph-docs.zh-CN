@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mahage-msft
 ms.prod: compliance
 doc_type: conceptualPageType
-ms.openlocfilehash: 24d92fdd6ab10d57ff49271e85059964f6422f56
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 54e22173ec5ec46321cb2f2bf05fc57d34e87784
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453117"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461245"
 ---
 # <a name="use-the-microsoft-graph-compliance-and-privacy-apis"></a>使用Microsoft Graph合规性和隐私 API
 
@@ -31,9 +31,9 @@ Microsoft 365中的电子数据展示提供了端到端工作流，用于保留�
 
 ## <a name="subject-rights-request"></a>使用者权限请求
 
-隐私管理提供了强大的主题权限请求功能，可帮助你处理来自寻求管理组织内个人数据的人员的请求。 这些请求有时也称为数据主体请求 （DSR）、数据主体访问请求 （DSAR） 或使用者权限请求。 隐私管理使负责满足主体权利请求的人员能够轻松识别数据主体，并在 Exchange、SharePoint、OneDrive 和 Teams 中的组织数据中查找其个人信息。 详细了解[Microsoft 365使用者权限请求](/microsoft-365/compliance/privacy-management-subject-rights-requests)。
+Microsoft Priva 主体权利请求提供了强大的功能，可帮助你处理组织中来自寻求管理个人数据的人员的请求。 这些请求有时也称为数据主体请求 （DSR）、数据主体访问请求 （DSAR） 或使用者权限请求。 Microsoft Priva 使负责满足主体权利请求的人员能够轻松识别数据主体，并在 Exchange、SharePoint、OneDrive 和 Teams 中的组织数据中查找他们的个人信息。 了解有关 [Priva 主体权利请求](/microsoft-365/compliance/privacy-management-subject-rights-requests)的详细信息。
 
-浏览[Microsoft 365使用者权限请求 API](subjectrightsrequest-subjectrightsrequestapioverview.md)。
+浏览[主体权利请求 API](subjectrightsrequest-subjectrightsrequestapioverview.md)。
 
 <!--
 ## Labels

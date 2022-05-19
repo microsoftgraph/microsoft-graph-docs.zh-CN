@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a5b168df6c048588b033ed4b5fd33e46351a900f
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 63443cf872ebb978a681a4ce3f0b29eb3fa30818
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477935"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461238"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 
@@ -88,11 +88,11 @@ GET /me/people/?$search=j
 
 ![Outlook 网页版中用户的人员卡片屏幕截图，显示最近使用的文件](images/peoplecard-concept.png)
 
-## <a name="why-integrate-with-myanalytics-preview"></a>为什么要与 MyAnalytics（预览版）集成？
+## <a name="why-integrate-with-microsoft-viva-insights-preview"></a>为何要与 Microsoft Viva Insights（预览版）集成？
 
-[MyAnalytics](/viva/insights/introduction) 提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。
+[Microsoft Viva Insights](/viva/insights/introduction) 提供了有关用户如何花费自己时间以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。
 
-借助分析 API，可以同步或集成用户分析数据与自定义第三方应用，以支持各种有助于提升用户工作效率和协作的方案。 例如，可以将 MyAnalytics 数据与移动设备活动集成，以帮助用户在一个应用中跟踪自己的所有工作和社交活动，并计划一天的日程安排。
+借助分析 API，可以同步或集成用户分析数据与自定义第三方应用，以支持各种有助于提升用户工作效率和协作的方案。 例如，可以将 Viva Insights 数据与移动设备活动集成，以帮助用户在一个应用中跟踪自己的所有工作和社交活动，并计划一天的日程安排。
  
 ## <a name="api-reference"></a>API 参考
 

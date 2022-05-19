@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 1ae0e4bd967238aa5566177b89c808231999f688
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 460f5d4af2dbc75b9496b7ff0e5c33d9d62a7fd0
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61861249"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461196"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用中集成人员和工作区智能
 
@@ -86,7 +86,7 @@ Include the next sentence when supporting events.
 
 使用分析 API 获取用户的活动统计信息及相关设置：
 
-- [设置](../resources/settings.md)：要让分析 API 为用户返回结果，当前用户分析设置必须显示有效的 MyAnalytics 许可证、选择使用 MyAnalytics，并具有启用了图形的云托管邮箱。
+- [设置](../resources/settings.md)：若要让分析 API 为用户返回结果，当前用户分析设置必须显示有效的 Microsoft Viva Insights 许可证、选择加入使用 Viva Insights，并具有支持图形的云托管邮箱。
 - [activityStatistics](../resources/activitystatistics.md)：获取整个上周用户花时间参与的 Microsoft 365 活动的相关数据，包括工作时间内及工作之余在[通话](callactivitystatistics.md)、[聊天（即时消息）](chatactivitystatistics.md)、[电子邮件](emailactivitystatistics.md)和[会议](meetingactivitystatistics.md)上花费的小时数，以及可用于[专注工作](focusactivitystatistics.md)的小时数。
 
 ## <a name="whats-new"></a>新增功能
