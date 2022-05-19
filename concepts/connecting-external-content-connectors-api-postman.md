@@ -1,20 +1,22 @@
 ---
 title: 将 Postman 与 Microsoft Graph 连接器 API 一并使用
-description: 使用 Postman 试用连接器 API
+description: 使用 Postman 试用 Microsoft Graph 连接器 API。
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: dcd8af90915c9e8e6440d238f239eb3335bbad1c
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 977a0a2a1c361a46795556d336a2eefe41ee3917
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176634"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461546"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>将 Postman 与 Microsoft Graph 连接器 API 一并使用
 
-本文介绍如何将 Microsoft Graph 连接器 API 与 Postman 一起使用。
+Postman 是用于构建和使用 API 的 API 平台。 Postman 简化了 API 生命周期的每个步骤并简化了协作，以便可以更快地创建更好的 API。
+
+本文介绍如何将 Microsoft Graph 连接器 API 与 Postman 配合使用。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -47,42 +49,41 @@ ms.locfileid: "65176634"
 
 由于 Web 浏览器中的 CORS 限制，无法在缺少此项的情况下使用面向 Web 的 Postman：“每个 Microsoft 365 租户的最大 [连接](/graph/api/resources/externalconnectors-externalconnection) 数。”
 
-> [!NOTE]
-> 如果你正在使用 Postman for Windows 应用，则不需要此代理。 如果打开 Postman for Windows，则会在工作区中看到此集合。
+如果你正在使用 Postman for Windows 应用，则不需要此代理。 如果打开 Postman for Windows，则会在工作区中看到此集合。
 
 ## <a name="step-3-create-an-azure-ad-application"></a>步骤 3：创建 Azure AD 应用程序
 
 要在自己的开发人员租户中使用此集合，请创建一个 Azure Active Directory (Azure AD) 应用程序，并根据想要调用的请求向其授予合适权限。
 
-1. 转到 [portal.azure.com](https://portal.azure.com/) ， 并使用您的开发人员租户管理员帐户 **登录**。
-2. 在 Azure 服务下， 选择 **Azure Active Directory**。
+1. 转到 [portal.azure.com](https://portal.azure.com/) 并使用开发者租户管理员帐户登录。
+2. 在 **Azure 服务** 下，选择“**Azure Active Directory**”。
 3. 在左侧菜单上，选择 **注册**。
 4. 在水平菜单中，单击“**新建注册**”。
-5. 将应用程序名称设置为"部件库存"。
-6. 将"重定向 URI"设置为 https://oauth.pstmn.io/v1/browser-callback。
+5. 将“**应用名称**”设置为“`Parts Inventory`”。
+6. 将“**重定向 URI**”设置为“`https://oauth.pstmn.io/v1/browser-callback`”。
 7. 选择“**注册**”。
 8. 在左侧菜单上，选择 **API 权限**。
-9. 在水平菜单中，**Microsoft Graph** > **权限或** > **权限添加**。
+9. 在水平菜单上，选择“**添加权限**” > “**Microsoft Graph**” > “**委派权限**”。
 10. 开始键入 `ExternalItem.ReadWrite.All`，然后选择 `ExternalItem.ReadWrite.All`。
-11. 选择“**应用程序权限**”，键入“用户”，然后选中“**应用程序权限**”。
-12. 展开“**用户选项**”，然后选择“**`ExternalItem.ReadWrite.All`**”。
+11. 选择“**应用程序权限**”，键入 `ExternalItem`，然后选择“**应用程序权限**”。
+12. 展开 **ExternalItem** 选项，然后选择 `ExternalItem.ReadWrite.All`。
 13. 选择 **添加权限**。
-14. 在水平菜单中，选择“**授予管理员同意**”，然后选择“**是**”。
-15. 在左侧的菜单中，选择 **概述**。 在这里，你可以获取应用程序（客户端）ID 和目录（租户）ID。 步骤 4 中将需要使用这些信息。
-16. 在左侧的菜单中， **证书和秘诀**。
+14. 在水平菜单上，选择“**授予管理员同意**”，然后选择“**是**”。
+15. 在左侧菜单中，选择“**概述**”。 在这里，可以获取 **应用程序（客户端）ID** 和 **目录（租户）ID**。 步骤 4 中将需要使用这些信息。
+16. 在左侧菜单中，选择“**证书和机密**”。
 17. 选择“**新建客户端机密**”，输入说明，然后选择“**添加**”。 复制新的客户端密码值；步骤 4 中将需要使用该密码。
 
-现在，Azure AD应用程序具有代表用户发出呼叫请求`ExternalItem.ReadWrite.All`的权限，并作为`ExternalItem.ReadWrite.All`的应用程序。
+应用程序现在配置了两个权限。 `ExternalItem.ReadWrite.All` 添加为委派权限，这是需要登录用户的权限。 应用程序可以代表用户读取/写入外部项。 `ExternalItem.ReadWrite.All` 添加为应用程序权限，这是不需要登录用户的权限。 应用程序可以代表自己读取/写入外部项。
 
 ## <a name="step-4-configure-authentication"></a>步骤 4：配置身份验证
 
-在 Postman 中设置变量。 此信息用于生成访问令牌。
+在此步骤中，请在 Postman 中设置用于检索访问令牌的环境变量。
 
 1. 选择 **"Microsoft Graph"** 选项卡，然后转到 **"变量"** 部分。
 
    ![Microsoft Graph 连接器 API 选项卡和"变量"部分屏幕截图](./images/connectors-images/07-postman.png)
 
-2. 在“变量”部分，通过使用步骤 3 中的信息提供所需信息：
+2. 在“**变量**”部分，使用步骤 3 中的信息提供所需信息：
 
    - 将 **租户** 的当前值设置为步骤 3.15 中的目录（租户）ID 值。
    - 将 **客户端\_id** 的当前值设置为步骤 3.15 中的应用程序（客户端）ID 值。
@@ -271,7 +272,7 @@ Content-type: application/json
 
 ## <a name="step-8-add-external-group-member-optional"></a>步骤 8：添加外部组成员（可选）
 
-如果外部服务使用非 Azure AD ACL，请同步这些权限。  
+如果外部服务使用非 Azure AD 访问控制列表 (ACL)，请同步这些权限。  
 
 外部组（以及 Azure Active Directory 用户和组）用于设置已添加到 Microsoft Graph 连接的 `externalItems` 的权限。有关详细信息，请参阅 [externalGroup](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true)。
 
@@ -309,7 +310,7 @@ Content-Type: application/json
 
 如果有二进制文件，则必须进行分析以获得元数据和内容的文本版本。 如果有 PDF 或 BMP 文件等非文本内容，则必须使用对象字符识别将内容转换为文本。  
 
-你负责转换源权限以授予或拒绝。 拒绝优先于授予。
+你负责将源权限转换为 `grant` 或 `deny`。 `Deny` 优先级高于 `grant`。
 
 请求示例如下所示。
 
@@ -354,3 +355,7 @@ HTTP/1.1 200 OK
 ## <a name="error-handling"></a>错误处理
 
 要详细了解如何解决错误，请参阅 [解决 Microsoft Graph 授权错误](/graph/resolve-auth-errors)。
+
+## <a name="see-also"></a>另请参阅
+
+- [结合使用 Postman 和 Microsoft Graph API](use-postman.md)

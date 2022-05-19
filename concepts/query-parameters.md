@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: fc9f732c3cb5269866f9dafc24043b0b06c65fcb
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: e0af0692e89f0ea099fb480ecd57cd60e54bd798
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629412"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461371"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -18,7 +18,7 @@ Microsoft Graph 支持可选的查询参数，可用于指定和控制响应中�
 > [!TIP] 
 > 在 beta 终结点上，`$` 前缀是可选的。 例如，可使用 `filter` 来代替 `$filter`。 在 v1 终结点上, `$`前缀仅对 API 的一个子集是可选的。 为简单起见, 如果使用 v1 终结点, 请始终包含`$`。
 
-查询参数可以是 OData 系统查询选项，也可以是其他查询参数。 
+查询参数可以是 [OData 系统查询选项](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#_Toc31360955)，也可以是其他查询参数。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
@@ -58,6 +58,7 @@ Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询�
 | [$count](/graph/api/user-list#example-3-get-only-a-count-of-users)| 检索集合的整数总计。 | `GET /users/$count` <br> `GET /groups/{id}/members/$count`|
 | [$ref](/graph/api/group-post-members) | 更新实体成员身份至集合。 | `POST /groups/{id}/members/$ref` |
 | [$value](/graph/api/profilephoto-get) | 检索或更新项的二进制值。 | `GET /me/photo/$value` |
+| [$batch](/graph/json-batching) | 将多个 HTTP 请求合并到批处理请求中。 | `POST /$batch` |
 
 ## <a name="encoding-query-parameters"></a>对查询参数进行编码
 
@@ -85,12 +86,15 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 ## <a name="count-parameter"></a>count 参数
 
-使用 `$count` 查询参数以包括集合中项总数的计数，以及从 Microsoft Graph 返回的数据值页。
+使用 `$count` 查询参数检索集合中的项总数或与表达式匹配的项总数。 可以通过以下方式使用 `$count`：
+
+1. 作为具有语法 `$count=true` 的查询字符串参数，用于在从 Microsoft Graph 返回的数据值页面旁边包含集合中的项总数。例如，`users?$count=true`。
+2. 作为 [URL 段](#other-odata-url-capabilities)，仅检索集合的整数总计。 例如，`users/$count`。
+3. 在具有等式运算符的 `$filter` 表达式中，检索筛选属性为空集合的数据集合。 请参阅[以下示例](#examples-using-the-filter-query-operator)。
 
 > [!NOTE]
-> `$count` 还可以用作 [URL 段](#other-odata-url-capabilities) 以检索集合的整数总计。 在派生自[directoryObject](/graph/api/resources/directoryobject)的资源上，它仅适用于高级查询。 请参阅[Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
->
-> Azure AD B2C 租户不支持使用`$count`。
+> 1. 在派生自 [directoryObject](/graph/api/resources/directoryobject) 的资源上，仅在高级查询中支持 `$count`。 请参阅[Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+> 2. Azure AD B2C 租户不支持使用`$count`。
 
 例如，下面的请求返回当前用户的 **contact** 集合，以及 `@odata.count` 属性中 **contact** 集合内的项数。
 
@@ -208,6 +212,7 @@ ConsistencyLevel: eventual
 |:------------|:--------|
 | 跨多个属性获取名为 Mary 的用户。 | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) `../users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')` |
 | 获取邮件域等于“hotmail.com”的所有用户 | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)`../users?$count=true&$filter=endsWith(mail,'@hotmail.com')`。这是一个[高级查询](/graph/aad-advanced-queries)。 |
+| 获取所有未分配许可证的用户 | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedLicenses%2F%24count%2Bne%2B0%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)`../users?$filter=assignedLicenses/$count eq 0&$count=true`。这是一个[高级查询](/graph/aad-advanced-queries)。 |
 | 获取 2017 年 7 月 1 日之后开始的所有登录用户的事件。 | 
   [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) `../me/events?$filter=start/dateTime ge '2017-07-01T08:00'`。 <br/>**注意：****dateTime** 属性为字符串类型。 |
 | 获取登录用户收到的来自特定地址的所有电子邮件。 | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) `../me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'` |
