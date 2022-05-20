@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 75b01f4903153249131cc69e336bb2d12e26095d
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: b3584d205e5d511d77e6283b5ca0fa8cb9595084
+ms.sourcegitcommit: 4d8161fb286a3529bd6565856450d2fecb6a8c1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316159"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65603070"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -16,6 +16,16 @@ ms.locfileid: "65316159"
 
 > [!IMPORTANT]
 > 处于 _预览_ 状态的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。不要在生产应用中使用预览功能。
+
+
+## <a name="april-2022-new-and-generally-available"></a>2022 年 4 月：新版本和正式版
+### <a name="search--index"></a>搜索 | 索引
+- 使用应用程序权限 `ExternalConnection.Read.All` 和 `ExternalConnection.ReadWrite.All` 在没有登录用户的情况下读取或写入所有外部连接。
+- 使用应用程序权限 `ExternalItem.Read.All` 在没有登录用户的情况下读取所有外部项。
+- 使用委托的权限 `ExternalConnection.ReadWrite.OwnedBy` 代表已登录用户读取和写入外部连接，应用已获授权。
+- 使用委托的权限 `ExternalConnection.Read.All` 或 `ExternalConnection.ReadWrite.All` 代表已登录用户读取或写入所有外部连接。
+- 使用委托的权限 `ExternalItem.ReadWrite.OwnedBy` 代表已登录的用户读取和写入外部项，应用已获授权。
+- 使用委托的权限 `ExternalItem.Read.All` 或 `ExternalItem.ReadWrite.All` 代表已登录用户读取或写入所有外部项。
 
 
 ## <a name="april-2022-new-in-preview-only"></a>2022 年 4 月：仅限预览版中的新增功能
@@ -26,7 +36,9 @@ ms.locfileid: "65316159"
 - 对客户和预约资源使用读/写操作的应用程序权限 `BookingsAppointment.ReadWrite.All`。
 
 ### <a name="device-and-app-management--cloud-pc"></a>设备和应用管理|云电脑
-将 [Windows 设置](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true)指定为租户的[云电脑组织设置](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true)的一部分。
+- 将 [Windows 设置](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true)指定为租户的[云电脑组织设置](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true)的一部分。
+- [获取](/graph/api/user-list-cloudpcs?view=graph-rest-beta&preserve-view=true)归属于已登录用户的云电脑设备。
+- [获取信息以为已登录用户启动云电脑设备](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
 配置[联合身份验证设置](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true)，将域与 Azure Active Directory 联合。
