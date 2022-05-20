@@ -5,14 +5,14 @@ author: andrewku0409
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c63838a4e63d4126a5cfb270cd01618c340eca7b
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: a5f7d28d9969ada4e91b894a2f721d8eca4d4ee6
+ms.sourcegitcommit: 4d8161fb286a3529bd6565856450d2fecb6a8c1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211967"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65603077"
 ---
-# <a name="list-cloudpcs-for-user"></a>列出用户的 cloudPC
+# <a name="list-cloudpcs"></a>列出 cloudPC
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "65211967"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 

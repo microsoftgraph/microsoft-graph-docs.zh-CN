@@ -300,7 +300,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: 创建
+              - name: 创建日历
                 href: api/user-post-calendars.md
               - name: 创建日历组
                 href: api/user-post-calendargroups.md
@@ -328,7 +328,7 @@ items:
             items:
               - name: 云电脑
                 href: resources/cloudpc.md
-              - name: 列出
+              - name: 列出 cloudPC
                 href: api/user-list-cloudpcs.md
               - name: 获取启动信息
                 href: api/cloudpc-getcloudpclaunchinfo.md
@@ -9934,14 +9934,22 @@ items:
               - name: 云电脑
                 href: resources/cloudpc.md
                 items:
-                  - name: 列出
+                  - name: 列出组织的 cloudPC
                     href: api/virtualendpoint-list-cloudpcs.md
-                  - name: 获取
+                  - name: 列出用户的 cloudPC
+                    href: api/user-list-cloudpcs.md
+                  - name: 获取 cloudPC
                     href: api/cloudpc-get.md
+                  - name: 批量重新预配远程操作
+                    href: api/manageddevice-bulkreprovisioncloudpc.md
+                  - name: 远程批量还原操作
+                    href: api/manageddevice-bulkrestorecloudpc.md
                   - name: 更改用户累加类型
                     href: api/cloudpc-changeuseraccounttype.md
                   - name: 结束宽限期
                     href: api/cloudpc-endgraceperiod.md
+                  - name: 获取用户的启动信息
+                    href: api/cloudpc-getcloudpclaunchinfo.md
                   - name: 获取远程操作结果
                     href: api/manageddevice-getcloudpcremoteactionresults.md
                   - name: 重新 启动
@@ -9952,20 +9960,12 @@ items:
                     href: api/cloudpc-reprovision.md
                   - name: 重新预配远程操作
                     href: api/manageddevice-reprovisioncloudpc.md
-                  - name: 批量重新预配远程操作
-                    href: api/manageddevice-bulkreprovisioncloudpc.md
                   - name: 调整远程操作的大小
                     href: api/manageddevice-resizecloudpc.md
                   - name: 远程还原操作
                     href: api/manageddevice-restorecloudpc.md
-                  - name: 远程批量还原操作
-                    href: api/manageddevice-bulkrestorecloudpc.md
-                  - name: 排除故障
+                  - name: 疑难解答
                     href: api/cloudpc-troubleshoot.md
-                  - name: 用户列表
-                    href: api/user-list-cloudpcs.md
-                  - name: 获取用户的启动信息
-                    href: api/cloudpc-getcloudpclaunchinfo.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -14592,7 +14592,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
