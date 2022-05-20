@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 714fac5350f7df2222ca563b9660994431a3b382
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 3cb2ae70d84b8eeb2087bebfeae60a95b1e84184
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398571"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549524"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -121,6 +121,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | 教育学校                                              | [educationSchool](/graph/api/resources/educationschool) 资源的 [delta](/graph/api/educationschool-delta) 函数                                   |
 | 主日历的日历视图（日期范围）中的事件 | [事件](/graph/api/resources/event)资源的 [delta](/graph/api/event-delta) 函数                         |
 | 组                                                         | [组](/graph/api/resources/group)资源的 [delta](/graph/api/group-delta) 函数                         |
+| 列表项\*                                                   | [listItem](/graph/api/resources/listitem) 资源的 [delta](/graph/api/listitem-delta) 函数             |
 | 邮件文件夹                                                   | [邮件文件夹](/graph/api/resources/mailfolder)资源的 [delta](/graph/api/mailfolder-delta) 函数          |
 | 文件夹中的邮件                                           | [邮件](/graph/api/resources/message)资源的 [delta](/graph/api/message-delta) 函数                   |
 | 组织联系人                                        | [orgContact](/graph/api/resources/orgcontact) 资源的 [delta](/graph/api/orgcontact-delta) 函数          |
@@ -134,9 +135,9 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | 用户                                                          | [用户](/graph/api/resources/user)资源的 [delta](/graph/api/user-delta) 函数                            |
 
 
-> \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。若要详细了解现行语法，请参阅[跟踪驱动器更改](/graph/api/driveitem-delta)。
+> \* OneDrive 和 SharePoint 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。为了与其他资源类型保持一致，适用于驱动器和列表的 delta 查询今后将进行更新。若要详细了解现行语法，请参阅 [driveItem：delta](/graph/api/driveitem-delta) 和 [listItem：delta](/graph/api/listitem-delta)。
 
-> \*\* Planner 资源的使用模式与其他受支持的资源类似，但存在一些差异。 有关详细信息，请参阅[查看 Planner 的更改](/graph/api/planneruser-list-delta)。
+> \*\* Planner 资源的使用模式与其他受支持的资源类似，但存在一些差异。有关详细信息，请参阅[planner: delta](/graph/api/planneruser-list-delta)。
 
 ## <a name="limitations"></a>限制
 
