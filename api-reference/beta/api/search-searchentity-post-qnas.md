@@ -5,12 +5,12 @@ author: jakeost-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b0e0c563b76dfd74bf095fc8ea005d78cbbbb1d9
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d3b2266238a74b052aba433c75e5b91d08669386
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338257"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602719"
 ---
 # <a name="create-qna"></a>创建 qna
 命名空间：microsoft.graph.search
@@ -47,27 +47,27 @@ POST /search/qnas
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [qna](../resources/search-qna.md) 对象的 JSON 表示形式。
 
-下表显示创建 [qna](../resources/search-qna.md) 时可用的属性。
+下表显示了创建 [qna](../resources/search-qna.md) 时可用的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|搜索结果中显示的问题。 继承自 [searchAnswer](../resources/search-searchAnswer.md)。|
+|displayName|String|搜索结果中显示的问题。 继承自 [searchAnswer](../resources/search-searchAnswer.md)。|
 |说明|String|搜索结果中显示的答案。 继承自 [searchAnswer](../resources/search-searchAnswer.md)。|
 |webUrl|String|Qna URL 链接。 当用户在搜索结果中单击此 qna 时，他们将转到此 URL。 继承自 [searchAnswer](../resources/search-searchAnswer.md)。|
-|availabilityStartDateTime|DateTimeOffset|qna 开始显示为搜索结果的时间戳。 设置为" `null` 始终可用"。|
-|availabilityEndDateTime|DateTimeOffset|qna 停止显示为搜索结果的时间戳。 设置为" `null` 始终可用"。|
-|languageTags|String collection|能够查看此问答的一个或多个国家/地区列表。|
-|平台|microsoft.graph.devicePlatformType 集合|能够查看此问答的设备和操作系统列表。 可取值为：`unknown`、`android`、`androidForWork`、`ios`、`macOS`、`windowsPhone81`、`windowsPhone81AndLater`、`windows10AndLater`、`androidWorkProfile`、`androidASOP`。|
-|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) 集合|qna 的变体，适用于不同的国家/地区或设备。 当你需要根据用户的设备、国家/地区或两者向用户显示不同的内容时，请使用 。 日期和组设置将应用于所有变体。|
-|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|触发此 qna 显示在搜索结果中的关键字。|
-|state|microsoft.graph.search.answerState|qna 的状态。 可能的值是：、`published``draft`、`excluded`或 `unknownFutureValue`。|
+|availabilityStartDateTime|DateTimeOffset|qna 何时开始显示为搜索结果的时间戳。 `null`设置为始终可用。|
+|availabilityEndDateTime|DateTimeOffset|qna 何时停止显示为搜索结果的时间戳。 `null`设置为始终可用。|
+|languageTags|字符串集合|能够查看此 qna 的国家或地区的列表。|
+|平台|microsoft.graph.devicePlatformType 集合|能够查看此 qna 的设备和操作系统的列表。 可取值为：`unknown`、`android`、`androidForWork`、`ios`、`macOS`、`windowsPhone81`、`windowsPhone81AndLater`、`windows10AndLater`、`androidWorkProfile`、`androidASOP`。|
+|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) 集合|不同国家/地区或设备的 qna 变体。 需要根据用户的设备、国家/地区或两者向用户显示不同内容时使用。 日期和组设置将应用于所有变体。|
+|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|触发此 qna 以显示在搜索结果中的关键字。|
+|state|microsoft.graph.search.answerState|qna 的状态。 可能的值为：`published`、`draft`或 `excluded``unknownFutureValue`。|
 |groupIds|String collection|能够查看此 qna 的安全组列表。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回响应 `201 Created` 代码，并创建问题 ID 和答案。
+如果成功，此方法将返回包含 `201 Created` 所创建的问答 ID 的响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -93,9 +93,8 @@ Content-Type: application/json
   },
   "availabilityStartDateTime": "2020-09-21T20:01:37Z",
   "availabilityEndDateTime": "2021-12-31T20:01:37Z",
-  "languageTags": ["en-US"],
+  "languageTags": ["en-us"],
   "platforms": ["ios"],
-  "groupIds": ["groupId"],
   "state": "published"
 }
 ```

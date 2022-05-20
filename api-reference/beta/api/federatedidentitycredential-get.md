@@ -1,23 +1,23 @@
 ---
 title: Get federatedIdentityCredential
 description: 读取 federatedIdentityCredential 对象的属性和关系。
-author: kjyam98
+author: shahzad-khalid
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4950aeaae15578ae14b5dfbfd67c42b4408c6ad4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5df46a8578c0aa39ed5157c346a196a27837bc6c
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113558"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602796"
 ---
 # <a name="get-federatedidentitycredential"></a>Get federatedIdentityCredential
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象的属性和关系。
+读取 [federatedIdentityCredential 对象的](../resources/federatedidentitycredential.md) 属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,7 +42,7 @@ GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentit
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -54,7 +54,7 @@ GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentit
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象。
 
 ## <a name="examples"></a>示例
 

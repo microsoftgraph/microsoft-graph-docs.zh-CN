@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 18fb7ea822974d12037a7c140f11354a8cefb73c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a5edf3cc84b8e922376bdda54a38d2bf9e768a70
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103644"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602726"
 ---
 # <a name="create-device"></a>创建设备
 
@@ -29,6 +29,8 @@ ms.locfileid: "62103644"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
+调用用户还必须具有以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：*全局管理员*、*Intune管理员* 或 *Windows 365管理员*。
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -43,7 +45,7 @@ POST /devices
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [device](../resources/device.md) 对象的 JSON 表示形式。
 
-由于 **设备** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作，并在创建设备实例时将包含你自己的数据的 `POST` 自定义属性添加到设备实例。
+由于 **设备** 资源支持 [扩展](/graph/extensibility-overview)，因此可以在创建设备实例时使用 `POST` 该操作并将自定义属性与自己的数据一起添加到设备实例。
 
 ## <a name="response"></a>响应
 

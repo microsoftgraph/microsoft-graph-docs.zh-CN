@@ -1,23 +1,23 @@
 ---
 title: Update federatedIdentityCredential
 description: 更新 federatedIdentityCredential 对象的属性。
-author: kjyam98
+author: shahzad-khalid
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4ed503883bca7da4a1e141684f373f932d07b2db
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 11ee8eb14f13398dcf322b1f2553f076e3db9038
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127866"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602754"
 ---
 # <a name="update-federatedidentitycredential"></a>Update federatedIdentityCredential
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [federatedIdentityCredential 对象](../resources/federatedidentitycredential.md) 的属性。
+更新 [federatedIdentityCredential 对象的](../resources/federatedidentitycredential.md) 属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,12 +53,12 @@ PATCH /applications/{applicationId}/federatedIdentityCredentials/{federatedIdent
 
 下表指定可更新的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|访问群体|String 集合|显示在已颁发令牌中的访问群体列表。 建议值为 `api://AzureADTokenExchange` 。 |
-|说明|String|用户提供的有关 federatedIdentityCredential 用于哪些内容的说明。 |
-|issuer|String|安全令牌服务策略中 (受信任颁发) 。 匹配访问令牌的颁发者声明。 例如，对于客户托管密钥方案，Azure AD是颁发者，有效值为 `https://login.microsoftonline.com/{tenantid}/v2.0` 。 颁发者和主题的值组合在应用中必须是唯一的。 |
-|subject|String|<li>对于Azure AD颁发者 `objectId` ，servicePrincipal (表示可) 应用的托管标识。 与此 GUID 关联的对象需要存在于租户中。</li><li>对于所有其他颁发者，一个无需额外验证的字符串</ul><br><br>颁发者和主题的值组合在应用中必须是唯一的。|
+|观众|字符串集合|可在颁发的令牌中显示的受众列表。 建议的值为 `api://AzureADTokenExchange`. |
+|说明|String|用户提供的 federatedIdentityCredential 的用途说明。 |
+|发行|String|传入的受信任颁发者 (安全令牌服务) 的 URL。 匹配访问令牌的颁发者声明。 例如，在客户托管密钥方案中，Azure AD 是颁发者，有效值为 `https://login.microsoftonline.com/{tenantid}/v2.0`。 **颁发者** 和 **主题** 的值的组合在应用中必须是唯一的。 |
+|subject|String|<li>对于 Azure AD 颁发者， `objectId` servicePrincipal (可以表示可模拟应用的托管标识) 。 与此 GUID 关联的对象需要存在于租户中。</li><li>对于所有其他颁发者，没有附加验证的字符串</ul><br><br>**颁发者** 和 **主题** 的值的组合在应用中必须是唯一的。|
 
 
 

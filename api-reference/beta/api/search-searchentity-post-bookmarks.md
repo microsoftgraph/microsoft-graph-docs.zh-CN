@@ -5,12 +5,12 @@ author: jakeost-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f935c97a966755a3cdb519cf5d6e1ff6bf76dd96
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 84283c08a8e80427ff34a310cbcae799bd26ecef
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338242"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602747"
 ---
 # <a name="create-bookmark"></a>创建书签
 命名空间：microsoft.graph.search
@@ -44,31 +44,31 @@ POST /search/bookmarks
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供书签对象的 JSON [表示](../resources/search-bookmark.md) 形式。
+在请求正文中，提供 [书签](../resources/search-bookmark.md) 对象的 JSON 表示形式。
 
-下表显示创建书签时可用的 [属性](../resources/search-bookmark.md)。
+下表显示了创建 [书签](../resources/search-bookmark.md)时可用的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|搜索结果中显示的书签名称。 继承自 [searchAnswer](../resources/search-searchAnswer.md)。|
+|displayName|String|搜索结果中显示的书签名称。 继承自 [searchAnswer](../resources/search-searchAnswer.md)。|
 |说明|String|搜索结果页上显示的书签说明。 继承自 [searchAnswer](../resources/search-searchAnswer.md)。|
 |webUrl|String|书签 URL 链接。 当用户在搜索结果中单击此书签时，他们将转到此 URL。 继承自 [searchAnswer](../resources/search-searchAnswer.md)。|
-|categories|String 集合|通常用于描述此书签的类别。 例如，IT 和 HR。|
-|availabilityStartDateTime|DateTimeOffset|书签开始显示为搜索结果的时间戳。 设置为" `null` 始终可用"。|
-|availabilityEndDateTime|DateTimeOffset|书签停止显示为搜索结果的时间戳。 设置为" `null` 始终可用"。|
-|languageTags|字符串集合|可查看此书签的一个或多个国家/地区的列表。|
-|平台|microsoft.graph.devicePlatformType 集合|能够查看此书签的设备列表和操作系统。 可取值为：`unknown`、`android`、`androidForWork`、`ios`、`macOS`、`windowsPhone81`、`windowsPhone81AndLater`、`windows10AndLater`、`androidWorkProfile`、`androidASOP`。|
-|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) 集合|不同国家/地区或设备的书签变体。 当你需要根据用户的设备、国家/地区或两者向用户显示不同的内容时，请使用 。 日期和组设置将应用于所有变体。|
-|powerAppIds|字符串集合|与此Power Apps关联的列表。 如果用户将现有Power Apps添加到书签，他们可以完成任务，例如输入休假时间或在搜索结果页上报告费用。|
-|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|触发此书签显示在搜索结果中的关键字。|
-|state|microsoft.graph.search.answerState|书签的状态。 可能的值是：、`published``draft`、`excluded`或 `unknownFutureValue`。|
+|类别|String 集合|通常用于描述此书签的类别。 例如，IT 和 HR。|
+|availabilityStartDateTime|DateTimeOffset|书签何时开始显示为搜索结果的时间戳。 `null`设置为始终可用。|
+|availabilityEndDateTime|DateTimeOffset|书签何时停止显示为搜索结果的时间戳。 `null`设置为始终可用。|
+|languageTags|字符串集合|能够查看此书签的国家或地区的列表。|
+|平台|microsoft.graph.devicePlatformType 集合|能够查看此书签的设备和操作系统的列表。 可取值为：`unknown`、`android`、`androidForWork`、`ios`、`macOS`、`windowsPhone81`、`windowsPhone81AndLater`、`windows10AndLater`、`androidWorkProfile`、`androidASOP`。|
+|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) 集合|不同国家或设备的书签的变体。 需要根据用户的设备、国家/地区或两者向用户显示不同内容时使用。 日期和组设置将应用于所有变体。|
+|powerAppIds|字符串集合|与此书签关联的Power Apps列表。 如果用户将现有Power Apps添加到书签，则他们可以完成任务，例如输入休假时间或在搜索结果页上报告费用。|
+|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|触发此书签以显示在搜索结果中的关键字。|
+|state|microsoft.graph.search.answerState|书签的状态。 可能的值为：`published`、`draft`或 `excluded``unknownFutureValue`。|
 |groupIds|String collection|能够查看此书签的安全组列表。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回响应 `201 Created` 代码，其中 ID 为创建的书签。
+如果成功，此方法将返回包含 `201 Created` 所创建书签 ID 的响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -97,13 +97,11 @@ Content-Type: application/json
   "platforms": ["windows"],
   "targetedVariations": [
     {
-      "languageTag": "es-ES",
+      "languageTag": "es-es",
       "displayName": "Sitio de instalación Contoso",
       "description": "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
     }
   ],
-  "groupIds": ["groupId"],
-  "powerAppIds": ["powerAppId"],
   "state": "published"
 }
 ```

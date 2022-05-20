@@ -1,23 +1,23 @@
 ---
 title: Create federatedIdentityCredential
 description: 为应用程序创建新的 federatedIdentityCredential 对象。
-author: kjyam98
+author: shahzad-khalid
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 09c06d30a39755b7b0d04fba29352d4f4a94da64
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b110f00734c7d7ad2044f289917713ad5d19887a
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097272"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602696"
 ---
 # <a name="create-federatedidentitycredential"></a>Create federatedIdentityCredential
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为应用程序 [创建新的 federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象。 通过[](/azure/active-directory/develop/workload-identity-federation-create-trust)为计算平台配置 Azure AD 应用程序注册和标识提供程序之间的信任关系，可以使用该平台颁发的令牌向 Microsoft 标识平台 进行身份验证并调用 Microsoft 生态系统中的 API。 最多可向应用程序添加 20 个对象。
+为应用程序创建新的 [federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象。 通过在 Azure AD 应用程序注册与计算平台的标识提供者之间[配置信任关系](/azure/active-directory/develop/workload-identity-federation-create-trust)，可以使用该平台颁发的令牌对Microsoft 标识平台进行身份验证，并在 Microsoft 生态系统中调用 API。 最多可向应用程序添加 20 个对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,20 +47,20 @@ POST /applications/{applicationsId}/federatedIdentityCredentials
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象的 JSON 表示形式。
 
-下表显示创建 [federatedIdentityCredential](../resources/federatedidentitycredential.md)时所需的属性。
+下表显示了创建 [federatedIdentityCredential](../resources/federatedidentitycredential.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|访问群体|字符串集合|列出可在外部令牌中显示访问群体。 此字段是必需的，默认为"api://AzureADTokenExchange"。 它指出Microsoft 标识平台 `aud` 令牌中的声明应接受哪些信息。 此值表示Azure AD标识提供程序中的名称，并且固定值标识提供程序之间没有任何关系 - 可能需要在标识提供程序中创建新的应用程序注册，以用作此令牌的受众。 必需。|
-|issuer|String|T外部标识提供程序的 URL，并且必须与要交换的外部令牌的颁发者声明相匹配。 颁发者和主题的值组合在应用中必须是唯一的。 必需。|
-|name|String|联合标识凭据的唯一标识符，其字符限制为 120 个字符，并且必须为 URL 友好。 创建后不可变|
-|subject|String|必需。 外部标识提供程序中的外部软件工作负荷的标识符。 与访问群体值一样，它没有固定格式，因为每个标识提供程序都使用其自己的格式，有时是 GUID，有时是冒号分隔的标识符，有时是任意字符串。 此处的值必须与向用户呈现的令牌中的子声明Azure AD。 颁发者和 **主题****的组合在** 应用中必须是唯一的。|
+|观众|字符串集合|列出可以在外部令牌中显示的受众。 此字段是必需的，默认为“api://AzureADTokenExchange”。 它说明了Microsoft 标识平台应该接受`aud`传入令牌中的声明。 此值表示外部标识提供程序中的 Azure AD，并且在标识提供者之间没有固定值 - 可能需要在标识提供者中创建新的应用程序注册，以充当此令牌的受众。 必需项。|
+|发行|String|外部标识提供者的 URL，必须与要交换的外部令牌的颁发者声明匹配。 **颁发者** 和 **主题** 的值的组合在应用中必须是唯一的。 必需项。|
+|name|String|联合标识凭据的唯一标识符，其字符限制为 120 个字符，并且必须对 URL 友好。 创建后它是不可变的|
+|subject|String|必需。 外部标识提供程序中外部软件工作负荷的标识符。 与受众值一样，它没有固定格式，因为每个标识提供者都使用自己的标识提供者 - 有时是 GUID，有时是冒号分隔标识符，有时是任意字符串。 此处的值必须与显示给 Azure AD 的令牌中的子声明匹配。 **颁发者** 和 **主题** 的组合在应用中必须是唯一的。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象。
 
 ## <a name="examples"></a>示例
 

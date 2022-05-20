@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5b0cd39783c97f93bbf3c52ea3d2377d4e0c56da
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 317d482ab6ccce74d501ed09ffa186a352d843dc
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100311"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602712"
 ---
 # <a name="delete-device"></a>删除设备
 
@@ -30,9 +30,11 @@ ms.locfileid: "62100311"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
+调用用户还必须具有以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：全局 *管理员*、*Intune管理员*、*Windows 365管理员* 或 *云设备管理员*。
+
 ## <a name="http-request"></a>HTTP 请求
 
-`{id}`请求中的 是设备的 **id** 属性的值，而不是 **deviceId** 属性的值。
+请求 `{id}` 中是设备 **ID 属性的** 值，而不是 **deviceId** 属性的值。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}

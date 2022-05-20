@@ -1,16 +1,16 @@
 ---
 title: 列出 federatedIdentityCredentials
 description: 获取 federatedIdentityCredential 对象及其属性的列表。
-author: kjyam98
+author: shahzad-khalid
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f61479457ffcd619f1cdd684ae5a6d7622ec2618
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ad3de7af5f7ccb92fbe8da4bc75c40b2084d8d3f
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103888"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602705"
 ---
 # <a name="list-federatedidentitycredentials"></a>列出 federatedIdentityCredentials
 命名空间：microsoft.graph
@@ -40,7 +40,7 @@ GET /applications/{applicationsId}/federatedIdentityCredentials
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 () OData 查询参数来帮助 `$filter` `eq` `$select` [](/graph/query-parameters)自定义响应。 例如，`/applications/{id}/federatedIdentityCredentials?$filter=subject eq 'value'`。
+此方法支持 `$filter` () `eq` 和 `$select` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。 例如，`/applications/{id}/federatedIdentityCredentials?$filter=subject eq 'value'`。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +52,7 @@ GET /applications/{applicationsId}/federatedIdentityCredentials
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

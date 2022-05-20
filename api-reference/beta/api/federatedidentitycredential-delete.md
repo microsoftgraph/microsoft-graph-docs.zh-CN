@@ -1,23 +1,23 @@
 ---
 title: Delete federatedIdentityCredential
 description: 删除 federatedIdentityCredential 对象。
-author: kjyam98
+author: shahzad-khalid
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dad6470b7e4d2c7f6d4e0d8443d2b3d81d5da1c4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a19e88bfcac1bb453fc59fcbd5e82c9265f40a4b
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106135"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602761"
 ---
 # <a name="delete-federatedidentitycredential"></a>Delete federatedIdentityCredential
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从应用程序 [中删除 federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象。
+从应用程序中删除 [federatedIdentityCredential](../resources/federatedidentitycredential.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

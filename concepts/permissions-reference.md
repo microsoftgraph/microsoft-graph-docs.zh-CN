@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 67b5398e5e8374e55f54af399d6c045624d8e6cb
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: c9edf63d9cc2ebbc68597963ca90790ada14e390
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247327"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602775"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -340,10 +340,10 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Bookings.Read.All_ |  允许应用代表登录用户读取预订约会、业务、客户、服务和员工。 | 适用于只读应用程序。典型的目标用户是预定业务的客户。 | 否 | 否 |
-| _BookingsAppointment.ReadWrite.All_ | 允许应用代表登录用户读取和写入预订约会和客户，此外，还允许读取业务、服务和员工。 | 适用于需要操作约会和客户的安排日程的应用程序。 无法更改有关预订业务的基本信息及其服务和员工成员。 典型目标用户是某预订业务的客户。| 否 | 否 |
-| _Bookings.ReadWrite.All_ | 允许应用代表登录用户读取和编写预订约会、业务、客户、服务和员工。 不允许创建、删除或发布预订业务。 | 适用于操纵现有业务、其服务和员工成员的管理应用程序。 无法创建、删除或更改预订业务的发布状态。 典型目标用户是组织的支持人员。| 否 | 否 |
-| _Bookings.Manage.All_ | 允许应用代表登录用户读取、编写和管理预订约会、业务、客户、服务和员工。  | 允许应用具有完全访问权限。 <br>适用于完全管理体验。 典型目标用户是组织的管理员。| 否 | 否 |
+| _Bookings.Read.All_ |  允许应用代表登录用户读取预订约会、业务、客户、服务和员工。 | 适用于只读应用程序。典型的目标用户是预定业务的客户。 | 是 | 否 |
+| _BookingsAppointment.ReadWrite.All_ | 允许应用代表登录用户读取和写入预订约会和客户，此外，还允许读取业务、服务和员工。 | 适用于需要操作约会和客户的安排日程的应用程序。 无法更改有关预订业务的基本信息及其服务和员工成员。 典型目标用户是某预订业务的客户。| 是 | 否 |
+| _Bookings.ReadWrite.All_ | 允许应用代表登录用户读取和编写预订约会、业务、客户、服务和员工。 不允许创建、删除或发布预订业务。 | 适用于操纵现有业务、其服务和员工成员的管理应用程序。 无法创建、删除或更改预订业务的发布状态。 典型目标用户是组织的支持人员。| 是 | 否 |
+| _Bookings.Manage.All_ | 允许应用代表登录用户读取、编写和管理预订约会、业务、客户、服务和员工。  | 允许应用具有完全访问权限。 <br>适用于完全管理体验。 典型目标用户是组织的管理员。| 是 | 否 |
 
 ### <a name="example-usage"></a>用法示例
 
@@ -604,7 +604,7 @@ _CallRecord-PstnCalls.Read.All_ 权限授予应用程序访问 [PSTN（通话套
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_CloudPC.Read.All_ | 读取云端电脑 | 无需登录用户，允许该应用读取 Cloud PC 对象，如设置策略。 | 否 | 否 |
+|_CloudPC.Read.All_ | 读取云端电脑 | 无需登录用户，允许该应用读取 Cloud PC 对象，如设置策略。 | 是 | 否 |
 |_CloudPC.ReadWrite.All_ | 读取和写入云端电脑 | 无需登录用户，允许该应用创建、读取、更新和删除 Cloud PC 对象，如 Azure 网络连接、设置策略和设备图像。 | 是 | 否 |
 
 ### <a name="example-usage"></a>用法示例
@@ -1195,7 +1195,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1262,7 +1262,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 | _Mail.ReadBasic.All_        | 读取所有用户基本邮件                | 允许此应用读取除 Body、BodyPreview、UniqueBody、Attachments、ExtendedProperties 和扩展以外的所有用户邮箱。不包括搜索邮件的权限。 | 是                    |
 | _Mail.ReadWrite_            | 读取和写入所有邮箱中的邮件     | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有邮箱中的邮件。不包括发送电子邮件的权限。                                       | 是                    |
 | _Mail.Send_                 | 以任意用户身份发送邮件                    | 允许应用在没有登录用户的情况下以任意用户身份发送邮件。                                                                                                                  | 是                    |
-| _MailboxSettings.Read_      | 读取用户的所有邮箱设置           | 允许应用在没有已登录用户的情况下读取用户邮箱设置。不包括邮件发送权限。                                                                 | 否                     |
+| _MailboxSettings.Read_      | 读取用户的所有邮箱设置           | 允许应用在没有已登录用户的情况下读取用户邮箱设置。不包括邮件发送权限。                                                                 | 是                     |
 | _MailboxSettings.ReadWrite_ | 读取和写入所有用户邮箱设置 | 允许应用在没有登录用户的情况下创建、读取、更新和删除用户邮箱设置。不包括邮件发送权限。                                     | 是                    |
 
 > **重要说明** 管理员可以配置 [应用程序访问策略](auth-limit-mailbox-access.md)，以限制应用程序访问 _特定_ 邮箱，而不是组织中的所有邮箱，即使该应用程序已被授予 Mail.Read、Mail.ReadWrite、Mail.Send、MailboxSettings.Read 或 MailboxSettings.ReadWrite 的应用程序权限。
@@ -1462,7 +1462,7 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| OnPremisesPublishingProfiles.ReadWrite.All |    访问本地发布配置文件| 允许应用通过代表已登录用户创建、查看、更新和删除本地发布的资源、本地代理和代理组来管理混合标识服务配置。 | 否 | 否 |
+| OnPremisesPublishingProfiles.ReadWrite.All |    访问本地发布配置文件| 允许应用在没有用户登录的情况下创建、查看、更新和删除本地发布的资源，本地代理和代理组，以作为混合标识配置的一部分。 | 是 | 否 |
 
 ---
 
@@ -2237,7 +2237,7 @@ _任务_ 权限用于控制对待办事项任务和 Outlook 任务（已弃用�
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | 获取所有团队列表。| 在没有用户登录的情况下获取所有团队列表。|是| 否 |
 | _TeamSettings.Read.All_ | 读取所有团队设置| 在没有登录用户的情况下读取此团队的设置。|是| 否 |
-| _TeamSettings.ReadWrite.All_ | 读取和更改所有团队的设置| 在没有登录用户的情况下读取和更改所有团队的设置。|否 | 否 |
+| _TeamSettings.ReadWrite.All_ | 读取和更改所有团队的设置| 在没有登录用户的情况下读取和更改所有团队的设置。|是 | 否 |
 
 ## <a name="teams-tab-permissions"></a>Teams 选项卡权限
 

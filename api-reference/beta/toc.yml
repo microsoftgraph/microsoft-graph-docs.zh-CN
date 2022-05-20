@@ -11772,6 +11772,7 @@ items:
               - name: '跨租户访问 (预览) '
                 items:
                   - name: 概述
+                    displayName: 'Cross-tenant access settings, XTAP'
                     href: resources/crosstenantaccesspolicy-overview.md
                   - name: Policy
                     items:

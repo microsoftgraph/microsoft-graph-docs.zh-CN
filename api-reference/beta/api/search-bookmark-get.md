@@ -5,19 +5,19 @@ author: jakeost-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 274cf589a20babbb584e1edde1159e803a54157b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 2b02bfc05e0fc1e993942c7002287a62edc19947
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338308"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602789"
 ---
 # <a name="get-bookmark"></a>获取书签
 命名空间：microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取书签对象 [的属性和](../resources/search-bookmark.md) 关系。
+读取 [书签](../resources/search-bookmark.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -39,7 +39,7 @@ GET /search/bookmarks/{bookmarksId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持`select`使用 、 、 `expand``filter`、 `orderBy`、 和 `maxTop``count` [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
+此方法支持 `select`[OData](/graph/query-parameters) `expand``orderBy``filter`查询参数，`maxTop``count`以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -51,7 +51,7 @@ GET /search/bookmarks/{bookmarksId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回 响应代码[](../resources/search-bookmark.md)和 bookmark 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [书签](../resources/search-bookmark.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -126,7 +126,7 @@ Content-Type: application/json
   "categories": ["HR"],
   "availabilityStartDateTime": "2020-09-21T20:01:37Z",
   "availabilityEndDateTime": "2020-11-21T20:01:37Z",
-  "languageTags": ["en-US"],
+  "languageTags": ["en-us"],
   "platforms": ["ios"],
   "groupIds": ["groupId"],
   "targetedVariations": null,

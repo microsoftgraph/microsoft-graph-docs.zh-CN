@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7e5732fc3f634123401780549e4d24d12f819d5c
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: d03c5d1a1d58f1347bb485bd5661357e288b7785
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549587"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602691"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -28,6 +28,8 @@ ms.locfileid: "65549587"
 |委派（工作或学校帐户） | Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | Device.ReadWrite.All、Directory.ReadWrite.All |
+
+调用用户还必须具有以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：*全局管理员**、Intune管理员*。 *云设备管理员* 角色中的调用用户只能使用此 API 启用或禁用设备，具有 *Windows 365管理员角色的* 用户只能更新基本设备属性。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +54,7 @@ PATCH /devices/{id}
 |accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。 只有全局管理员和云设备管理员角色中的调用方才能更新此属性。 |
 |operatingSystem|String|设备上的操作系统类型。|
 |operatingSystemVersion|String|设备上的操作系统版本|
-|displayName|String|设备显示名称。|
+|displayName|字符串|设备显示名称。|
 |isCompliant|Boolean|`true`如果设备符合移动设备管理 (MDM) 策略，则为 ɭ;否则为 `false`。 这只能通过任何设备 OS 类型的Intune或Windows OS 设备的[已批准 MDM 应用](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
 |isManaged|Boolean|`true`如果设备由移动设备管理 (MDM) 应用管理，则为 ！;否则为 `false`。 这只能通过任何设备 OS 类型的Intune或Windows OS 设备的[已批准 MDM 应用](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
 

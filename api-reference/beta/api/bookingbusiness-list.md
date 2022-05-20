@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1308d0a8b01eeb2d073fcb69c0a71addcdf70b82
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 312ad8d2337ec0c7273c192721389d0465fd3203
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755514"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602768"
 ---
 # <a name="list-bookingbusinesses"></a>列出 bookingBusinesses
 
@@ -32,7 +32,7 @@ ms.locfileid: "64755514"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Bookings。Read.All，BookingsAppointment.ReadWrite.All，Bookings。ReadWrite.All，Bookings。Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|Application | BookingsAppointment.ReadWrite.All，Bookings。Read.All  |
+|应用程序 | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
