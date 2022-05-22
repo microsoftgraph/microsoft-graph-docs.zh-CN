@@ -3,14 +3,80 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: bcfced8791bddae5bac1d32f0a900f40db286511
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 7e9ec0b2b9bba305b3ad2acdf9cce1d3ecbfb65a
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060694"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629174"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="march-2022-new-and-generally-available"></a>2022 年 3 月：新增和正式发布
+
+### <a name="files"></a>文件
+使用 [捆绑包](/graph/api/resources/bundle) 资源一次共享多个文件，就像其他 [driveItem](/graph/api/resources/driveitem) 资源一样。 可以对捆绑包应用 CRUD 操作， [将](/graph/api/bundle-additem) 项添加到或 [从捆绑包中删除](/graph/api/bundle-removeitem) 项。
+
+### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
+使用 [特定于资源的权限](/graph/api/resources/resourcespecificpermission) 授权 Teams 应用直接访问聊天或团队的特定实例的数据。 例如，特定于资源的权限 ChannelMessage.Read.Group 允许 Teams 应用读取单个团队的频道消息。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+- [获取](/graph/api/approval-get)与[访问包分配](/graph/api/resources/accesspackageassignmentrequest)的请求关联的[审批](/graph/api/resources/approval)决策。
+- 作为 [Azure Active Directory (Azure AD) 权利管理](/graph/api/resources/entitlementmanagement-overview)的一部分，使用[访问包评估策略](/graph/api/resources/accesspackageassignmentpolicy)来管理[对访问包](/graph/api/resources/accesspackage)的请求、审批、分配或定期审查。 可以控制内部和外部用户对组织组、应用程序和联机网站 SharePoint 的访问权限。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+指定客户端应用程序[包含或排除](/graph/api/resources/conditionalaccessclientapplications)为应用[条件访问策略](/graph/api/resources/conditionalaccesspolicy)的一组[条件](/graph/api/resources/conditionalAccessConditionSet)。
+
+### <a name="use-the-toolkit"></a>使用工具包
+通过社区贡献来庆祝真正的团队合作，并试用 [Microsoft Graph 工具包 v2.4.0](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v2.4.0) 中的新功能：
+- 通过使用 `disable-image-fetch` 属性控制不必要的提取，优化[人员](/graph/toolkit/components/person)组件中人员图像的刷新。
+- 通过使用 `disable-images` 属性，避免在[人员选取器](/graph/toolkit/components/people-picker)组件中不必要地加载人员图像。 
+- 使用 `user-filters`、`group-filters` 和 `people-filters` 属性筛选[人员选取器](/graph/toolkit/components/people-picker)组件中的可用用户、组和人员列表。
+
+
+## <a name="march-2022-new-in-preview-only"></a>2022 年 3 月：仅预览版中的新增功能
+
+### <a name="cloud-communications--online-meeting"></a>云通信 | 联机会议
+指定一个或多个 [会议参与者](/graph/api/resources/meetingParticipants?view=graph-rest-beta&preserve-view=true) 为共同组织者。
+
+### <a name="compliance--ediscovery"></a>合规性 | 电子数据展示
+[清除数据](/graph/api/ediscovery-sourcecollection-purgeData?view=graph-rest-beta&preserve-view=true)并永久删除电子数据展示[源集合](/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta&preserve-view=true)中的 Microsoft Teams 消息。
+
+### <a name="device-and-app-management--cloud-pc"></a>设备和应用管理|云电脑
+- 对[unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true)资源的读取操作使用`RoleManagement.Read.CloudPC`的委派权限或应用程序权限资源。
+- 对[unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true)资源的读取和写入操作使用`RoleManagement.ReadWrite.CloudPC`的委派权限或应用程序权限资源。
+- 指定 Azure 订阅的 ID 和显示名称，作为设备的[源映像信息](/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta&preserve-view=true)的一部分。
+- 指定 [Windows 设置](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true)在为[预配策略创建云电脑时](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true)进行配置。
+
+### <a name="device-and-app-management--corporate-management"></a>设备和应用管理|公司管理
+- Intune 3 beta 版更新。
+
+### <a name="device-and-app-management--multi-tenant-management"></a>设备和应用管理|多租户管理
+[列出](/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta&preserve-view=true) 和 [获取 Microsoft 365 Lighthouse 中托管租户的](/graph/api/managedtenants-auditevent-get?view=graph-rest-beta&preserve-view=true) 审核事件。
+
+### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
+- [列表](/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta&preserve-view=true)或[更新](/graph/api/microsoftapplicationdataaccesssettings-update?view=graph-rest-beta&preserve-view=true)[设置](/graph/api/resources/microsoftapplicationdataaccesssettings?view=graph-rest-beta&preserve-view=true)，这些设置指定从 Microsoft 应用程序访问Microsoft 365属于组织中用户的数据。 例如，如果授权正确，是否只有Microsoft 365应用（如 Word 和 Excel）才能访问用户的Microsoft 365数据，或者其他 Microsoft 应用（如 Windows）是否也可以访问数据。 默认情况下，组织中的所有用户都可以在 Microsoft 应用中访问用户有权访问的任何Microsoft 365数据。 
+- 在采用零信任网络案例模式后，Microsoft 合作伙伴可以使用[粒度委派管理员权限 (GDAP) ](/graph/api/resources/delegatedadminrelationships-api-overview?view=graph-rest-beta&preserve-view=true)以对其客户租户最低权限访问执行管理任务，避免潜在的安全风险。 合作伙伴无需像过去那样请求全局管理员角色，而是在一定的时间内请求客户租户管理的特定角色，并且其客户必须明确授予对他们的最低特权访问。
+
+### <a name="security--attack-simulation-and-training"></a>安全 | 攻击模拟和训练
+- [列出租户的模拟自动化](/graph/api/attacksimulationroot-list-simulationautomations?view=graph-rest-beta&preserve-view=true)。
+- [列表为租户运行模拟自动化](/graph/api/resources/simulationautomationrun?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="search"></a>搜索
+- 在 [搜索请求中指定](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) 是否从搜索结果中剪裁重复的 SharePoint 文件。默认为 false。
+- 使用支持 KQL 和查询变量的模板限定 [搜索查询](/graph/api/resources/searchquery?view=graph-rest-beta&preserve-view=true) 字符串。
+
+### <a name="sites-and-lists"></a>网站和列表
+- 对于包含分类数据的 [列](/graph/api/resources/columnDefinition?view=graph-rest-beta&preserve-view=true) ，请指定父 [术语](/graph/api/resources/termstore-term?view=graph-rest-beta&preserve-view=true) 和 [术语集](/graph/api/resources/termstore-set?view=graph-rest-beta&preserve-view=true) ，子术语可选为列值。
+- 获取[网站](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true)的设置，包括语言和时区。
+
+### <a name="tasks-and-plans"></a>任务和计划
+通过检查相应 [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true)资源关系的 **详细信息** 关系，确定用于 Planner 外部体验的 Planner 计划（如 Microsoft Teams）能否跟踪该上下文中的工作。
+
+### <a name="teamwork"></a>Teamwork
+- 获取或设置有关[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)的[摘要信息](/graph/api/resources/teamSummary?view=graph-rest-beta&preserve-view=true)，包括所有者、成员和来宾的计数。
+- 在聊天中[列出消息](/graph/api/chat-list-messages?view=graph-rest-beta&preserve-view=true)时，按降序对邮件进行排序。
+
 
 ## <a name="february-2022-new-and-generally-available"></a>2022 年 2 月：新版本和正式版
 

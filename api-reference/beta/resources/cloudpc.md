@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: a4f43588966d060e79663ce20b945b9fee47ebb2
-ms.sourcegitcommit: 4ef29d4a2cfa1ccc4a3da649e683377b17b90108
+ms.openlocfilehash: f529b46fc5bb11be7f58fbd4068789d5def4e824
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125892"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65628850"
 ---
 # <a name="cloudpc-resource-type"></a>cloudPC 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "65125892"
 
 ## <a name="methods"></a>方法
 
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 cloudPC](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) 集合|列出 [cloudPC](../resources/cloudpc.md) 对象的属性和关系。|
 |[获取 cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|读取 [cloudPC](../resources/cloudpc.md) 对象的属性和关系。|
@@ -38,34 +38,37 @@ ms.locfileid: "65125892"
 |[疑难解答](../api/cloudpc-troubleshoot.md)|无|对特定 [cloudPC](../resources/cloudpc.md) 对象进行故障排除。 使用此 API 检查云电脑和会话主机的运行状况。|
 |[还原远程操作](../api/manageddevice-restorecloudpc.md)|无|从快照将云电脑设备还原到以前的状态。|
 |[批量还原远程操作](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|使用单个请求还原多个云电脑设备，其中包括Intune托管设备的 ID 以及还原点日期和时间。|
+|[设置审阅状态](../api/manageddevice-setcloudpcreviewstatus.md)|无|设置特定云电脑设备的审阅状态。|
+|[获取审阅状态](../api/manageddevice-getcloudpcreviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|获取特定云电脑设备的审阅状态。|
+|[批量集审阅状态](../api/manageddevice-bulksetcloudpcreviewstatus.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|使用包含Intune托管设备 ID 的单个请求设置多个云电脑设备的审阅状态。|
 |[用户列表](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) 集合|列出归属于已登录用户的 [cloudPC](../resources/cloudpc.md) 设备。|
 |[获取用户的启动信息](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|获取已登录用户的 [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) 。|
 
 ## <a name="properties"></a>属性
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|aadDeviceId|String|云电脑的Azure Active Directory (Azure AD) 设备 ID。|
-|displayName|String|云电脑的显示名称。|
+|aadDeviceId|字符串|Azure Active Directory (Azure AD) 云电脑的设备 ID。|
+|displayName|字符串|云电脑的显示名称。|
 |gracePeriodEndDateTime|DateTimeOffset|宽限期结束和重新预配/取消预配的日期和时间。 仅当状态为 `inGracePeriod`.. 时间戳以 ISO 8601 格式显示，协调世界时 (UTC) 。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |id|String|云电脑的唯一标识符。 只读。|
-|imageDisplayName|String|云电脑上的 OS 映像的名称。|
+|imageDisplayName|字符串|云电脑上的 OS 映像的名称。|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|云电脑的最后一次登录结果。 例如，`{ "time": "2014-01-01T00:00:00Z"}`。|
 |lastModifiedDateTime|DateTimeOffset|云电脑的上次修改日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|企业云电脑的最后一个远程操作结果。 支持的远程操作包括：`Reboot`、`Rename`、`Reprovision`和 `Restore``Troubleshoot`。|
 |managedDeviceId|String|云电脑的Intune设备 ID。|
 |managedDeviceName|String|云电脑的Intune设备名称。|
-|onPremisesConnectionName|String|在预配云电脑期间应用的 Azure 网络连接。|
+|onPremisesConnectionName|字符串|在预配云电脑期间应用的 Azure 网络连接。|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|操作系统版本 (操作系统) 在云电脑上进行预配。 可能的值为： `windows10`和 `windows11``unknownFutureValue`.|
 |provisioningPolicyId|String|云电脑的预配策略 ID。|
-|provisioningPolicyName|String|在预配云电脑期间应用的预配策略。|
+|provisioningPolicyName|字符串|在预配云电脑期间应用的预配策略。|
 |servicePlanId|String|云电脑的服务计划 ID。|
 |servicePlanName|String|云电脑的服务计划名称。|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|云电脑的服务计划类型。|
-|状态|[cloudPcStatus](#cloudpcstatus-values)|云电脑的状态。 可取值为：`notProvisioned`、`provisioning`、`provisioned`、`upgrading`、`inGracePeriod`、`deprovisioning`、`failed`、`restoring`。|
+|status|[cloudPcStatus](#cloudpcstatus-values)|云电脑的状态。 可取值为：`notProvisioned`、`provisioning`、`provisioned`、`upgrading`、`inGracePeriod`、`deprovisioning`、`failed`、`restoring`。|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|云电脑状态的详细信息。|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|预配的云电脑上用户的帐户类型。 可能的值为： `standardUser`和 `administrator``unknownFutureValue`.|
-|userPrincipalName|String|分配给云电脑的用户的用户主体名称 (UPN) 。|
+|userPrincipalName|字符串|分配给云电脑的用户的用户主体名称 (UPN) 。|
 
 ### <a name="cloudpcstatus-values"></a>cloudPcStatus 值
 

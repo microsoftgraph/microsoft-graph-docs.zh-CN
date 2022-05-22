@@ -1,24 +1,24 @@
 ---
 title: 列出 availableProviderTypes
-description: 检索目录中所有可用的标识提供程序类型。
+description: 检索目录中所有可用的标识提供者类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: c9647057ac993fee1eff4591850102701b112a0a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0c1972e27ecee3e89fe97cb9072f188ff5d3ae76
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014976"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629109"
 ---
-# <a name="list-availableprovidertypes-deprecated"></a>列出已弃 (的 availableProviderTypes) 
+# <a name="list-availableprovidertypes-deprecated"></a>列出已弃用的 availableProviderTypes () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-检索目录中可用的所有标识提供程序类型。
+检索目录中可用的所有标识提供者类型。
 
 ## <a name="permissions"></a>权限
 
@@ -33,7 +33,7 @@ ms.locfileid: "61014976"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识提供程序管理员
+* 外部标识提供者管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -87,8 +87,12 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 [!INCLUDE [sample-code](../includes/snippets/objc/identityprovider-availableprovidertypes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
