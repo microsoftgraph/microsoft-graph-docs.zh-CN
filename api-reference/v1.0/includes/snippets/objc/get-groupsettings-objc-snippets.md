@@ -1,26 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 30110ff955a7130fd3497f96acbd03cd60a0f0815dd504ddefe7b77e3d02298a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec04d9d282bdd9a574af942a166413f1555ec16b
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57333942"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629806"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groupSettings"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings/a06fa228-3042-4662-bd09-33e298da1afe"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        NSError *jsonError = nil;
-        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphGroupSetting *groupSetting = [[MSGraphGroupSetting alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphGroupSetting *groupSetting = [[MSGraphGroupSetting alloc] initWithData:data error:&nserror];
 
 }];
 
