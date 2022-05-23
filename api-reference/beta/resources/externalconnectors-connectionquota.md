@@ -1,16 +1,16 @@
 ---
 title: connectionQuota 资源类型
 description: 表示包含有关外部连接配额利用率的计算信息的连接配额。
-author: josmoran
+author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 968d0154a1a0bbc5fe33bdcad1123c0944e854fb
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 68a8015115157bbc7ca12a9851c7386053e2d72a
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316540"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629213"
 ---
 # <a name="connectionquota-resource-type"></a>connectionQuota 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "65316540"
 
 |属性|类型|说明|
 |:---|:---|:---|
-| itemsRemaining | Int64 | 返回包含以下数据的范围内的最小数字： *连接中剩余的项* 和 *租户级别的剩余项*。 以下公式表示用于计算最小数字的公式： `min(max capacity in the connection – number of items in the connection, tenant quota – number of items indexed in all connections)`。 如果连接 (预览连接器或预览内容体验) 非规范化，则返回连接中的剩余项数。 |
+| itemsRemaining | Int64 | 最少两个值，一个表示 *连接中剩余的项* ，另一个 *表示租户级别的其他剩余项*。 <br/>以下公式表示用于计算最小数字的公式：<br/> 最小 (\{&#65279;连接\}_中的最大容量_ - \{_&#65279;连接_\}中的项数， \{_&#65279;租户配额_\} - \{_&#65279;在所有连接_\}) 索引的项目数。 <br/>如果连接未盈利，例如在预览连接器或预览内容体验中，则此属性只是连接中剩余项的数量。 |
 
 ## <a name="relationships"></a>关系
 

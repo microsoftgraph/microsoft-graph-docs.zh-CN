@@ -1,18 +1,28 @@
 ---
 title: 安装 Microsoft Graph SDK
-description: 提供 C#、Java、JavaScript、Objective-C、PHP 和 Ruby Microsoft Graph SDK 的安装说明。
+description: 提供有关安装 .NET、Go、Java、JavaScript、PHP、PowerShell 和 Python Microsoft Graph SDK 的说明。
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 048d9fc3daee48d5b41623916dab937eae595f78
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 659730d111e3d23f0ef7a9d9352a5dc6730e37c3
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461427"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65628698"
 ---
-# <a name="install-the-microsoft-graph-sdks"></a>安装 Microsoft Graph SDK
+# <a name="install-a-microsoft-graph-sdk"></a>安装 Microsoft Graph SDK
 
-Microsoft Graph SDK 现已通过 Github 和常用平台包管理器包含在你的项目中。 此主题说明了如何将 Microsoft Graph SDK 安装到你的项目中。
+Microsoft Graph SDK 可用于通过GitHub和常用平台包管理器将多种语言包含在项目中。 本文介绍如何将 Microsoft Graph SDK 安装到项目中。
+
+SDK 以以下语言提供。
+
+- [.NET](#install-the-microsoft-graph-net-sdk)
+- [转 (预览) ](#install-the-microsoft-graph-go-sdk-preview)
+- [Java](#install-the-microsoft-graph-java-sdk)
+- [JavaScript](#install-the-microsoft-graph-javascript-sdk)
+- [PHP](#install-the-microsoft-graph-php-sdk)
+- [PowerShell](#install-the-microsoft-graph-powershell-sdk)
+- [Python (预览) ](#install-the-microsoft-graph-python-sdk-preview)
 
 ## <a name="install-the-microsoft-graph-net-sdk"></a>安装 Microsoft Graph .NET SDK
 
@@ -89,58 +99,17 @@ dependency {
 
 ## <a name="install-the-microsoft-graph-javascript-sdk"></a>安装 Microsoft Graph JavaScript SDK
 
-以下程序包中都包含了 Microsoft Graph JavaScript SDK：
+以下包中包含 Microsoft Graph JavaScript SDK：
 
 - @microsoft/microsoft-graph-client ([npm](https://www.npmjs.com/package/@microsoft/microsoft-graph-client)) - 呼叫 Microsoft Graph 的核心库。
 - @microsoft/microsoft-graph-types ([npm](https://www.npmjs.com/package/@microsoft/microsoft-graph-types)) - 用于 Microsoft Graph 实体的 Typescript 类型。
 
-可以使用 [npm](https://www.npmjs.com) 安装 Microsoft Graph JavaScript SDK：
+可以使用[npm](https://www.npmjs.com)安装 Microsoft Graph JavaScript SDK：
 
 ```Shell
 npm install @microsoft/microsoft-graph-client --save
 npm install @microsoft/microsoft-graph-types --save-dev
 ```
-
-## <a name="install-the-microsoft-graph-objective-c-sdk"></a>安装 Microsoft Graph Objective-C SDK
-
-Microsoft Graph Objective-C SDK 支持 iOS 和 macOS 平台，可以通过 CocoaPod 或 Carthage 安装到项目中。
-
-### <a name="install-the-microsoft-graph-objective-c-sdk-using-cocoapods"></a>使用 Cocoapod 安装 Microsoft Graph Objective-C SDK
-
-添加 podflie 中的以下行，将 Objective-C Microsoft Graph SDK 和 Microsoft Graph Objective-C Auth SDK 安装到 xcode 项目中：
-
-```ruby
-pod 'MSGraphClientSDK'
-pod 'MSGraphMSALAuthProvider'
-```
-
-### <a name="install-the-microsoft-graph-objective-c-sdk-using-carthage"></a>使用 Carthage 安装 Microsoft Graph Objective-C SDK
-
-执行以下步骤使用 [Carthage](https://github.com/Carthage/Carthage) 程序包管理器安装 Microsoft Graph Objective-C SDK 和 Microsoft Graph Objective-C Auth SDK。
-
-1. 创建 **Cartfile**，指定 Objective-C SDK Github 存储库 和目标的 [发行标记](https://github.com/microsoftgraph/msgraph-sdk-objc/releases)。
-
-    ```text
-    github "microsoftgraph/msgraph-sdk-objc" "tags/<latest_release_tag>"
-    github "microsoftgraph/msgraph-sdk-objc-auth" "tags/<latest_release_tag>"
-    ```
-
-1. 运行 `carthage update`。 此操作将依赖项提取到 Carthage/Checkouts 文件夹，然后生成 MSGraphClientSDK 库。
-
-1. 使用 Xcode，在应用程序目标的 **常规** 设置选项卡上的 **链接的框架和库** 部分，将 **MSGraphClientSDK.framework** 和 **MSGraphMSALAuthProvider.framework** 从磁盘上的 Carthage/Build 文件夹拖放到此处。
-
-1. 在应用程序目标的 **生成阶段** 设置选项卡上，单击 **+** 图标，并选择 **新建运行脚本阶段**。 创建指定 Shell 的运行脚本（例如：/bin/sh），添加下列内容至 脚本：
-
-    ```Shell
-    /usr/local/bin/carthage copy-frameworks
-    ```
-
-1. 并添加路径至希望在 **Input Files** 下使用的框架。
-
-    ```Shell
-    $(SRCROOT)/Carthage/Build/iOS/MSGraphClientSDK.framework
-    $(SRCROOT)/Carthage/Build/iOS/MSGraphMSALAuthProvider.framework
-    ```
 
 ## <a name="install-the-microsoft-graph-php-sdk"></a>安装 Microsoft Graph PHP SDK
 
@@ -162,7 +131,7 @@ composer require microsoft/microsoft-graph
 }
 ```
 
-## <a name="install-the-microsoft-powershell-sdk"></a>安装 Microsoft PowerShell
+## <a name="install-the-microsoft-graph-powershell-sdk"></a>安装 Microsoft Graph PowerShell SDK
 
 所有模块都发布在[PowerShell 库](https://www.powershellgallery.com/packages/Microsoft.Graph)上。 若要安装：
 
@@ -176,10 +145,13 @@ Install-Module Microsoft.Graph
  Install-Module Microsoft.Graph -AllowClobber -Force
 ```
 
-## <a name="install-the-microsoft-graph-ruby-sdk"></a>安装 Microsoft Graph Ruby SDK
+## <a name="install-the-microsoft-graph-python-sdk-preview"></a>安装 Microsoft Graph Python SDK (预览) 
 
-[Microsoft Graph Ruby SDK](https://github.com/microsoftgraph/msgraph-sdk-ruby) 已在 [packagist.org](https://rubygems.org/) 中可用，可按以下方法安装：
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```ruby
-gem install microsoft_graph
+[Microsoft Graph核心 Python 客户端库 (预览) ](https://github.com/microsoftgraph/msgraph-sdk-python-core)在 [PyPI](https://pypi.org/) 上可用。
+
+```Shell
+python -m pip install msgraph-core
+python -m pip install azure-identity
 ```

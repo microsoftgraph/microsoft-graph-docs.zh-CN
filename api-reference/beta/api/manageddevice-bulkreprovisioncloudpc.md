@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 314c7170ff700abfb2ae59b303610b4ba309c7eb
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: c7ba4082db38a8f2ac4f1c72f0acbc84fa6c95fa
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365055"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65628872"
 ---
 # <a name="manageddevice-bulkreprovisioncloudpc"></a>managedDevice：bulkReprovisionCloudPc
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4daead4b510944427edbea4f3c42a8946614293a
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 0dd40e8cb399b055d8568c97c3d6560110fc0aad
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294010"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629081"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "65294010"
 |**架构扩展**| | |
 |[添加架构扩展值](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 |**组织许可证**| | |
-|[activateService](../api/organization-activateservice.md) | 无 |  为组织激活服务。 |
+|[activateService](../api/organization-activateservice.md) | None |  为组织激活服务。 |
 |**组织品牌**| | |
 |[Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | 获取默认组织的品牌对象。 |
 |[Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | 更新默认组织的品牌对象。 |
@@ -64,7 +64,6 @@ ms.locfileid: "65294010"
 | id | 字符串 | 租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
 | isMultipleDataLocationsForServicesEnabled | 布尔值 | `true` 如果启用了多地理位置，则为组织; `false` 如果组织未启用多地理位置， `null` (默认) 。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
 | marketingNotificationEmails | String collection | 不可为空。 |
-| objectType | String | 一个标识对象类型的字符串。 对于租户，值始终 `Company`为 。|
 | onPremisesLastSyncDateTime | DateTimeOffset | 租户上次与本地目录同步的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 | onPremisesSyncEnabled | Boolean | `true` 如果此对象是从本地目录同步的， `false` 如果此对象最初是从本地目录同步，但不再同步，空。 `null` 如果此对象从未从本地目录（默认）进行同步。 |
 | postalCode | String | 组织地址的邮政编码。 |
@@ -84,7 +83,7 @@ ms.locfileid: "65294010"
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) 集合| 用于管理基于证书的身份验证配置的导航属性。 只能在集合中创建 certificateBasedAuthConfiguration 的单个实例。  |
 |extensions|[扩展](extension.md)集合|为组织资源定义的开放扩展的集合。 可为 NULL。| 
-|organizationalbranding|[organizationalBranding](organizationalbranding.md) 集合| 用于管理组织的默认品牌的资源。 可为 Null。|
+|品牌打造|[organizationalBranding](organizationalbranding.md) 集合| 用于管理组织的默认品牌的资源。 可为 Null。|
 |settings|[organizationSettings](organizationsettings.md) | 检索 organizationSettings 对象的属性和关系。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -114,7 +113,6 @@ ms.locfileid: "65294010"
   "id": "String (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "Boolean",
   "marketingNotificationEmails": ["String"],
-  "objectType": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "String",

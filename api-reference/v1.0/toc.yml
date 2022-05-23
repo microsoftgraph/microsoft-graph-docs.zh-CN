@@ -1350,7 +1350,7 @@ items:
                     href: resources/callrecords-session.md
                   - name: 列表会话
                     href: api/callrecords-session-list.md
-              - name: PSTN 调用
+              - name: PSTN 呼叫
                 items:
                   - name: PSTN 日志行
                     href: resources/callrecords-pstncalllogrow.md
@@ -5439,7 +5439,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-overview.md
@@ -6612,7 +6612,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 创建计划

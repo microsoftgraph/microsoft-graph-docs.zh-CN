@@ -9,4 +9,4 @@ ms.locfileid: "60992262"
 ---
 <!-- markdownlint-disable MD041 -->
 > [!IMPORTANT]
-> Microsoft Graph SDK for Go 目前处于预览阶段。 不支持在生产中使用此 SDK。
+> Microsoft Graph SDK for Go 目前处于预览状态。 不支持在生产环境中使用此 SDK。

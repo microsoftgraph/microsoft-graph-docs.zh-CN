@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 272a0bc60540135b8e885ea2c436fd8cec2c4bf2
+ms.openlocfilehash: 9718f72d430c7a18d22ebfd001b3623266fc16d2
 ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/22/2022
-ms.locfileid: "65628950"
+ms.locfileid: "65629054"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.teams("ece6f0a1-7ca4-498b-be79-edf6c8fc4d82").channels("19:56eb04e133944cf69e603c5dac2d292e@thread.skype").sharedWithTeams("ece6f0a1-5g39-498b-be79-edf6c8fc4d82")
+Content tenantUsage = graphClient.tenantRelationships().managedTenants().tenantUsage()
     .buildRequest()
-    .delete();
+    .get();
 
 ```

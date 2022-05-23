@@ -472,7 +472,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -9958,14 +9958,24 @@ items:
                     href: api/cloudpc-rename.md
                   - name: 重新预配
                     href: api/cloudpc-reprovision.md
-                  - name: 重新预配远程操作
+                  - name: 远程重新预配
                     href: api/manageddevice-reprovisioncloudpc.md
-                  - name: 调整远程操作的大小
+                  - name: 远程批量重新预配
+                    href: api/manageddevice-bulkreprovisioncloudpc.md
+                  - name: 远程调整大小
                     href: api/manageddevice-resizecloudpc.md
-                  - name: 远程还原操作
+                  - name: 远程还原
                     href: api/manageddevice-restorecloudpc.md
+                  - name: 远程批量还原
+                    href: api/manageddevice-bulkrestorecloudpc.md
                   - name: 疑难解答
                     href: api/cloudpc-troubleshoot.md
+                  - name: 设置审阅状态
+                    href: api/manageddevice-setcloudpcreviewstatus.md
+                  - name: 获取审阅状态
+                    href: api/manageddevice-getcloudpcreviewstatus.md
+                  - name: 批量集审阅状态
+                    href: api/manageddevice-bulksetcloudpcreviewstatus.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -12310,7 +12320,7 @@ items:
                 items:
                   - name: '已弃用 (用户流) '
                     items:
-                      - name: 用户流
+                      - name: 用户流程
                         href: resources/identityuserflow.md
                       - name: 列出
                         href: api/identityuserflow-list.md
@@ -12452,7 +12462,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-overview.md
@@ -13422,7 +13432,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 备注
+              - name: 注释
                 items:
                   - name: 人员批注
                     href: resources/personannotation.md
@@ -15022,7 +15032,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: 从聊天中删除应用
                     href: api/chat-delete-installedapps.md
-          - name: 设备
+          - name: Device
             items:
               - name: 预配的设备
                 href: resources/teamworkdevice.md
