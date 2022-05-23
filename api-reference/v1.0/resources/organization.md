@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1c96894d044e77d1faddf27085163248d1fd4d9b
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: adcef3a522e3f906176285d7f4b477541118bbb9
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65293968"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629186"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -76,7 +76,7 @@ ms.locfileid: "65293968"
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) 集合| 用于管理基于证书的身份验证配置的导航属性。 只能在集合中创建 certificateBasedAuthConfiguration 的单个实例。  |
 |extensions|[扩展](extension.md)集合|为组织定义的开放扩展集合。只读。可为 Null。|
-|organizationalbranding|[organizationalBranding](organizationalbranding.md) 集合| 为组织打造品牌。可以为 null。|
+|品牌打造|[organizationalBranding](organizationalbranding.md) 集合| 为组织打造品牌。可以为 null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
