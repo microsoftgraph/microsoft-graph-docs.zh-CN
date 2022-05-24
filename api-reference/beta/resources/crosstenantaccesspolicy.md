@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ed825ae07c1a707be2847b9bdc40f7fe71add334
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: beea220ebf3a0b12e40e56997c236b82fcb5d2fe
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103011"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653537"
 ---
 # <a name="crosstenantaccesspolicy-resource-type"></a>crossTenantAccessPolicy 资源类型
 
@@ -34,7 +34,8 @@ ms.locfileid: "65103011"
 |属性|类型|说明|
 |:---|:---|:---|
 | displayName | String | 跨租户访问策略的显示名称。 继承自 [policyBase](../resources/policybase.md)。|
-| 定义 (已弃用)  | 字符串 | 跨租户访问策略的原始 JSON 定义。 **已弃用。请勿使用。**|
+| allowedCloudEndpoints | String collection | 用于指定组织要与哪些 Microsoft 云协作。 默认情况下，此值为空。 此字段支持的值为： `microsoftonline.com`和 `microsoftonline.us``partner.microsoftonline.cn`. |
+| 定义 (已弃用)  | String | 跨租户访问策略的原始 JSON 定义。 **已弃用。请勿使用。**|
 
 ## <a name="relationships"></a>关系
 
@@ -59,6 +60,7 @@ ms.locfileid: "65103011"
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
   "displayName": "String",
-  "definition": "String"
+  "definition": "String",
+  "allowedCloudEndpoints": ["String"]
 }
 ```

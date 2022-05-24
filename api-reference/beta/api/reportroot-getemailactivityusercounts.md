@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: d1ce2708cece59e39f289677b8804f8dd57b9556
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: f635887cb9dfe86c5707bb012cdeb493106558fd
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044741"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653474"
 ---
 # <a name="reportroot-getemailactivityusercounts"></a>reportRoot: getEmailActivityUserCounts
 
@@ -50,7 +50,7 @@ GET /reports/getEmailActivityUserCounts(period='{period_value}')
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用将 OData $format查询参数设置为 text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -73,13 +73,13 @@ CSV 文件包含下面的列标题。
 - 已接收
 - 已阅读
 - 已创建会议
-- 已交互会议
+- 会议交互
 - 报表日期
 - 报表周期
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 JSON 对象。
 
 ## <a name="example"></a>示例
 
@@ -126,7 +126,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Send,Receive,Read,Report Date,Report Period
+Report Refresh Date,Send,Receive,Read,Meeting Created,Meeting Interacted,Report Date,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -172,6 +172,8 @@ Content-Length: 237
       "send": 69, 
       "receive": 197, 
       "read": 158, 
+      "meetingCreated": 59, 
+      "meetingInteracted": 90, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }

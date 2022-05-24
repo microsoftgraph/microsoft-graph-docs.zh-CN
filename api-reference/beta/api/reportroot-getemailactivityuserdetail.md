@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 9e7a8c4b0906e534d91ff62bd32e471fe46cf083
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: dfb96e4428ac51c62b0280e9c830e3d9ce3c379e
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044608"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653551"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 
@@ -54,7 +54,7 @@ GET /reports/getEmailActivityUserDetail(date={date_value})
 
 > **注意：** 需要在 URL 中设置 period 或 date。
 
-此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
+此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用将 OData $format查询参数设置为 text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -81,14 +81,14 @@ CSV 文件包含下面的列标题。
 - 已发送数
 - 已接收数
 - 已阅读数
-- 已创建会议
-- 已交互会议
+- 会议创建计数
+- 会议交互计数
 - 分配的产品
 - 报表周期
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 JSON 对象。
 
 此请求的默认页面大小为 200 个项目。
 
@@ -137,7 +137,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Assigned Products,Report Period
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Meeting Created Count,Meeting Interacted Count,Assigned Products,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -191,6 +191,8 @@ Content-Length: 424
       "assignedProducts": [
         "Microsoft 365 ENTERPRISE E5"
       ], 
+      "meetingCreatedCount": 50, 
+      "meetingInteractedCount": 86, 
       "reportPeriod": "7"
     }
   ]

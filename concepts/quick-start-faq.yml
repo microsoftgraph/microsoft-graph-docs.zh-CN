@@ -1,24 +1,55 @@
 ### YamlMime:FAQ
 metadata:
   title: Microsoft Graph 快速入门 FAQ
-  description: 此 FAQ 解答了与 Microsoft Graph 快速入门相关的问题。
+  description: 本常见问题解答解答与 Microsoft Graph快速入门相关的问题。
   author: jasonjoh
   ms.localizationpriority: medium
-  ms.openlocfilehash: bbf4f3711aa9fdd62df12388d15cd14f363384c4
-  ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+  ms.openlocfilehash: 181f37b706a64395a912fe45b6b53a9b1901ea68
+  ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/22/2022
-  ms.locfileid: "65628738"
+  ms.lasthandoff: 05/24/2022
+  ms.locfileid: "65653558"
 title: Microsoft Graph 快速入门 FAQ
-summary: "此 FAQ 解答了与 [Microsoft Graph 快速启动](https://developer.microsoft.com/graph/quick-start)相关的问题。\n\n## <a name=\"general-design\"></a>常规设计\n\n快速启动示例展示了如何使用 Microsoft Graph。 这些示例使用一个身份验证访问两个服务：Azure Active Directory和Outlook。 每个快速入门都从 Microsoft 帐户用户的配置文件访问信息，并显示来自其收件箱的消息。\n\n快速启动分为四步：\n\n- 选择语言\n- 获取客户端 ID (应用 ID) \n- 下载示例\n- 运行示例\n\n完成快速启动后，即表示应用程序可供运行。\n\n## <a name=\"prerequisites\"></a>先决条件\n\n所有快速入门示例都需要访问具有 Outlook.com 上的邮箱的个人 Microsoft 帐户，或具有Exchange Online邮箱的 Microsoft 工作或学校帐户。 如果没有 Microsoft 帐户，可以使用以下几个选项来获取免费帐户：\n\n- 可以 [注册新的个人 Microsoft 帐户](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1)。\n- 可以[注册Microsoft 365开发人员计划](https://developer.microsoft.com/office/dev-program)以获取免费的Microsoft 365订阅。\n"
+summary: >
+  本常见问题解答解答与 [Microsoft Graph快速入门](https://developer.microsoft.com/graph/quick-start)相关的问题。
+
+
+  ## <a name="about-quick-start-samples"></a>关于快速入门示例
+
+
+  快速启动示例展示了如何使用 Microsoft Graph。 这些示例使用一个身份验证访问两个服务：Azure Active Directory和Outlook。 每个快速入门示例从 Microsoft 帐户用户的配置文件访问信息，并显示来自其收件箱的消息。
+
+
+  快速入门涉及三个步骤：
+
+
+  1. 选择语言。
+
+  2. 获取客户端 ID (应用 ID) 。
+
+  3. 下载并运行示例。
+
+
+  完成快速启动后，即表示应用程序可供运行。
+
+
+  ## <a name="prerequisites"></a>先决条件
+
+
+  所有快速入门示例都需要访问具有 Outlook.com 上的邮箱的个人 Microsoft 帐户，或具有Exchange Online邮箱的 Microsoft 工作或学校帐户。 如果没有 Microsoft 帐户，可以使用以下几个选项来获取免费帐户：
+
+
+  - 可以 [注册新的个人 Microsoft 帐户](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1)。
+
+  - 可以[注册Microsoft 365开发人员计划](https://developer.microsoft.com/office/dev-program)以获取免费Microsoft 365开发人员订阅。
 sections:
-- name: 快速启动示例常见问题
+- name: 常见问题解答
   questions:
   - question: >
       不通过快速启动页面下载可以获取快速启动代码吗？
     answer: >
-      当然可以！ 每个快速启动下载都是基于 [Microsoft Graph 教程](tutorials.md)，因此，可以通过其他两种方法获取相同的源代码：
+      当然可以！ 每个快速入门示例下载都基于 Microsoft Graph 教程，因此你有两个其他选项来获取相同的源代码：
 
 
       - 按分步教程操作，自己构建代码。
@@ -26,50 +57,28 @@ sections:
       - 从相应的 GitHub 存储库下载完整的项目，然后按照自述文件中的说明配置和运行示例。
 
 
-      #### <a name="tutorials-and-github-repositories"></a>教程和 GitHub 存储库
-
-
-      下表列出了每个快速启动示例对应的教程和 GitHub 存储库。
-
-
-      | 快速启动 | 教程 | GitHub 存储库 |
-
-      |-------------|----------|-------------------|
-
-      | .NET | [教程](/tutorials/dotnet) | [microsoftgraph/msgraph-training-dotnet](https://github.com/microsoftgraph/msgraph-training-dotnet) |
-
-      | 转到 | [教程](/tutorials/go) | [microsoftgraph/msgraph-training-go](https://github.com/microsoftgraph/msgraph-training-go) |
-
-      | Java | [教程](/tutorials/java) | [microsoftgraph/msgraph-training-java](https://github.com/microsoftgraph/msgraph-training-java) |
-
-      | JavaScript | [教程](/tutorials/javascript) | [microsoftgraph/msgraph-training-javascript](https://github.com/microsoftgraph/msgraph-training-javascript) |
-
-      | PHP | [教程](/tutorials/php) | [microsoftgraph/msgraph-training-php](https://github.com/microsoftgraph/msgraph-training-php) |
-
-      | PowerShell | [教程](/tutorials/powershell) | [microsoftgraph/msgraph-training-powershell](https://github.com/microsoftgraph/msgraph-training-powershell) |
-
-      | Python | [教程](/tutorials/python) | [microsoftgraph/msgraph-training-python](https://github.com/microsoftgraph/msgraph-training-python) |
-
-      | TypeScript | [教程](/tutorials/typescript) | [microsoftgraph/msgraph-training-typescript](https://github.com/microsoftgraph/msgraph-training-typescript) |
+      若要查看教程表和对应的GitHub存储库，[请参阅 Microsoft Graph 教程](tutorials.md)。
   - question: >
       为什么所有快速启动示例都没有展示高级身份验证用例？
     answer: >
-      通过快速启动示例，大家认识了身份验证和 Microsoft Graph API 调用。 可以在 [Azure Active Directory](/azure/active-directory/develop/authentication-scenarios) 文档中了解与其他身份验证流相关的更多信息。
+      通过快速启动示例，大家认识了身份验证和 Microsoft Graph API 调用。 可以在Azure Active Directory文档中详细了解其他[身份验证流](/azure/active-directory/develop/authentication-flows-app-scenarios)。
   - question: >
       使用快速启动时发生意外错误或遇到问题，该怎么办？
     answer: >
-      如果无法正常使用快速启动，请在对应的 GitHub 存储库中报告问题。
+      如果无法快速开始正常工作，请在相应的GitHub存储库上打开问题。 若要查看教程表和对应的GitHub存储库，[请参阅 Microsoft Graph 教程](tutorials.md)。
 - name: 已知问题
   questions:
   - question: >
-      运行快速启动时，我遇到错误“AADSTS50011：请求中指定的回复 URL 与为应用程序配置的回复 URL 不匹配”。
-    answer: >
-      这表示快速启动的应用程序注册存在问题。 从 [Microsoft Graph 快速入门页面](https://developer.microsoft.com/graph/quick-start)下载快速启动时，我们会为你创建应用程序注册，并配置与示例项目使用的默认 URL 匹配的回复 URL（也称为重定向 URL）。 如果你更改了此 URL，则应用程序注册将不再匹配，并可能导致此错误。 若要解决此错误，请参阅快速启动项目附带的 README.md 文件，以获取有关如何创建应用程序注册并在示例代码中对其进行配置的说明。
+      运行快速入门时，会收到错误消息 AADSTS50011。
+    answer: "错误消息 _“**AADSTS50011：** 请求中指定的回复 URL 与为应用程序配置的回复 URL 不匹配”_ 指示快速入门的应用程序注册出现问题。 \n\n从 [Microsoft Graph 快速入](https://developer.microsoft.com/graph/quick-start)门页下载快速入门示例时，我们将创建应用程序注册并配置回复 URL (也称为重定向 URL) ，该 URL 与示例项目使用的默认 URL 匹配。 如果更改 URL，应用注册将不再匹配，并可能导致此错误。\n\n若要解决此错误，请参阅快速启动项目中包含的 README.md 文件，了解有关如何创建应用注册并在示例代码中对其进行配置的说明。\n"
   - question: >
       登录后，我被告知我需要管理员批准。
     answer: >
-      登录到其中一个快速入门示例后，可能会看到一条消息，指出 **需要管理员批准** “XXX 教程需要访问组织中只有管理员才能授予的资源的权限。 请要求管理员授予此应用的权限，然后才能使用它。 这不是示例中的 bug！ 在 *默认情况下*，任何快速入门都不请求任何需要管理员同意的Graph权限范围。 租户管理员可以禁用你同意Graph其未批准的任何应用的权限范围的能力。 在这种情况下，你会看到此错误。
+      登录到其中一个快速入门示例后，可能会看到以下消息 _：“**需要管理员批准：** XXX 教程需要访问组织中只有管理员才能授予的资源的权限。请要求管理员授予此应用的权限，然后才能使用它。_
 
 
-      你需要与管理员合作以获得批准、使用个人 Microsoft 帐户 (Outlook.com) ，或将测试Microsoft 365租户与Exchange Online配合使用。
-additionalContent: "\n## <a name=\"didnt-find-what-you-need\"></a>找不到需要的内容？\n\n如果此 FAQ 无法解答在使用一个或多个快速启动时遇到的问题，请使用下面的“反馈”部分告知我们。"
+      这不是示例中的 bug。 在 *默认情况下*，任何快速入门示例都不请求任何需要管理员同意的 Microsoft Graph权限范围。 租户管理员可以禁用你同意 Microsoft Graph其未批准的任何应用的权限范围的能力。 在这种情况下，你会看到此错误。
+
+
+      若要解决此错误，请与管理员协作以获得批准，使用个人 Microsoft 帐户 (Outlook.com) ，或将测试Microsoft 365租户与Exchange Online配合使用。
+additionalContent: "\n## <a name=\"didnt-find-what-you-need\"></a>找不到需要的内容？\n\n如果此常见问题解答未解决在一个或多个快速入门示例中遇到的问题或问题，请使用以下 **“反馈** ”部分告知我们。"

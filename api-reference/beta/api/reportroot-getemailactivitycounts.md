@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: e2b17160836a305fb1158bb89ef2f285e5887ba4
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: 917f1cb6b226b6b0702cefa662f26ada0f931f91
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044769"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653481"
 ---
 # <a name="reportroot-getemailactivitycounts"></a>reportRoot: getEmailActivityCounts
 
@@ -50,7 +50,7 @@ GET /reports/getEmailActivityCounts(period='{period_value}')
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用将 OData $format查询参数设置为 text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -73,13 +73,13 @@ CSV 文件包含下面的列标题。
 - 已接收
 - 已阅读
 - 已创建会议
-- 已交互会议
+- 会议交互
 - 报表日期
 - 报表周期
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 JSON 对象。
 
 ## <a name="example"></a>示例
 
@@ -126,7 +126,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Send,Receive,Read,Report Date,Report Period
+Report Refresh Date,Send,Receive,Read,Meeting Created,Meeting Interacted,Report Date,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -172,6 +172,8 @@ Content-Length: 242
       "send": 504, 
       "receive": 76506, 
       "read": 12161, 
+      "meetingCreated": 421, 
+      "meetingInteracted": 7930, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }

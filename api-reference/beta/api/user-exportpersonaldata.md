@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 77c61da4c9857dc45aaa059e93f94abd9c9d4d4f
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: e592061e5cd7b3838be4d036beb46d5df4594b62
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294038"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653502"
 ---
 # <a name="user-exportpersonaldata"></a>user： exportPersonalData
 
 命名空间：microsoft.graph
 
-提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。
+从公司管理员或应用程序提交数据策略操作请求以导出组织用户的数据。 此数据包括存储在OneDrive中的用户数据及其活动报告。 有关在遵守法规的同时导出数据的更多指导，请 [参阅数据主体请求、GDPR 和 CCPA](/compliance/regulatory/gdpr-data-subject-requests)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

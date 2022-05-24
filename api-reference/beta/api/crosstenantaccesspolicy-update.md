@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aa2c2db38d3c65dae58f5efb6d922559c9c524d3
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8b94ab5f20642ea7283d5a3c3552a4b2a271c2e3
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336604"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653516"
 ---
 # <a name="update-crosstenantaccesspolicy"></a>更新 crossTenantAccessPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "63336604"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新跨租户 [访问策略的属性](../resources/crosstenantaccesspolicy.md)。
+更新 [跨租户访问策略](../resources/crosstenantaccesspolicy.md)的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -54,20 +54,18 @@ PATCH /policies/crossTenantAccessPolicy
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|跨显示名称访问策略的组。|
+|displayName|String|跨租户访问策略的显示名称。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
 
-[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) 对象大小当前限制为 25KB。 如果策略大小超过 `400 Bad Request` 25KB，此方法将返回错误代码。
+[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) 对象大小目前限制为 25KB。 如果策略的大小超过 25KB，此方法将返回 `400 Bad Request` 错误代码。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_crosstenantaccesspolicy"
@@ -79,35 +77,9 @@ PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy
 Content-Type: application/json
 
 {
-  "displayName": "CrossTenantAccessPolicy",
+  "allowedCloudEndpoints": ["microsoftonline.us", "partner.microsoftonline.cn"]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-crosstenantaccesspolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-crosstenantaccesspolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-crosstenantaccesspolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-crosstenantaccesspolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[转到](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-crosstenantaccesspolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicy-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>响应
 

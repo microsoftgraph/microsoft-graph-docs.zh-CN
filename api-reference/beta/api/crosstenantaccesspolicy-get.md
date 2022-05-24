@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d4c26dde37ad56843a87d793d3664da4195887ac
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 34b7eaed4ff32332f98612a85cdeb80a51ca670d
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336555"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653565"
 ---
 # <a name="get-crosstenantaccesspolicy"></a>获取 crossTenantAccessPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "63336555"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) 对象的属性和关系。
+读取 [crossTenantAccessPolicy 对象的](../resources/crosstenantaccesspolicy.md) 属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -53,14 +53,12 @@ GET /policies/crossTenantAccessPolicy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_crosstenantaccesspolicy"
@@ -70,36 +68,10 @@ GET /policies/crossTenantAccessPolicy
 ``` http
 GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-crosstenantaccesspolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-crosstenantaccesspolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-crosstenantaccesspolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-crosstenantaccesspolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[转到](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-crosstenantaccesspolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-crosstenantaccesspolicy-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>响应
 
->**注意：** 如果从未修改跨租户访问设置，此响应将返回 `{}`。
+>**注意：** 如果从未修改过跨租户访问设置，则会返回 `{}`此响应。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -116,7 +88,8 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
     "displayName": "CrossTenantAccessPolicy",
     "lastModifiedDateTime": "08-23-2021Z00:00:00",
-    "definition": "Cross tenant access policy..."
+    "definition": "Cross tenant access policy...",
+    "allowedCloudEndpoints": ["partner.microsoftonline.cn"]
   }
 }
 ```
