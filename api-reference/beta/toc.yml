@@ -9940,10 +9940,12 @@ items:
                     href: api/user-list-cloudpcs.md
                   - name: 获取 cloudPC
                     href: api/cloudpc-get.md
-                  - name: 批量重新预配远程操作
+                  - name: 远程批量重新预配
                     href: api/manageddevice-bulkreprovisioncloudpc.md
-                  - name: 远程批量还原操作
+                  - name: 远程批量还原
                     href: api/manageddevice-bulkrestorecloudpc.md
+                  - name: 批量集审阅状态
+                    href: api/manageddevice-bulksetcloudpcreviewstatus.md
                   - name: 更改用户累加类型
                     href: api/cloudpc-changeuseraccounttype.md
                   - name: 结束宽限期
@@ -9952,6 +9954,8 @@ items:
                     href: api/cloudpc-getcloudpclaunchinfo.md
                   - name: 获取远程操作结果
                     href: api/manageddevice-getcloudpcremoteactionresults.md
+                  - name: 获取审阅状态
+                    href: api/manageddevice-getcloudpcreviewstatus.md
                   - name: 重新 启动
                     href: api/cloudpc-reboot.md
                   - name: 重命名
@@ -9960,22 +9964,14 @@ items:
                     href: api/cloudpc-reprovision.md
                   - name: 远程重新预配
                     href: api/manageddevice-reprovisioncloudpc.md
-                  - name: 远程批量重新预配
-                    href: api/manageddevice-bulkreprovisioncloudpc.md
                   - name: 远程调整大小
                     href: api/manageddevice-resizecloudpc.md
                   - name: 远程还原
                     href: api/manageddevice-restorecloudpc.md
-                  - name: 远程批量还原
-                    href: api/manageddevice-bulkrestorecloudpc.md
-                  - name: 疑难解答
-                    href: api/cloudpc-troubleshoot.md
                   - name: 设置审阅状态
                     href: api/manageddevice-setcloudpcreviewstatus.md
-                  - name: 获取审阅状态
-                    href: api/manageddevice-getcloudpcreviewstatus.md
-                  - name: 批量集审阅状态
-                    href: api/manageddevice-bulksetcloudpcreviewstatus.md
+                  - name: 疑难解答
+                    href: api/cloudpc-troubleshoot.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
                 items:
