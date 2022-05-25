@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: c05bc8548fc6e43b96720e358204cb9752c5ddbe
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: d5234149ddfafb4633803975e33a57294cba656b
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366056"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629013"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -456,6 +456,10 @@ GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 ### <a name="incomplete-objects-are-returned-when-using-getbyids-request"></a>使用 getByIds 请求时返回不完整的对象
 
 使用[获取 ID 列表中的目录对象](/graph/api/directoryobject-getbyids)请求对象应返回完整对象。 但是，当前返回的 v1.0 端点上的[用户](/graph/api/resources/user)对象具有一组有限的属性。 作为临时解决方法，当您将该操作与 `$select` 查询选项结合使用时, 将返回更完整的[用户](/graph/api/resources/user)对象。 此行为不符合 OData 规范。 由于此行为可能在将来更新，因此仅在你提供 `$select=` 以及感兴趣的所有属性时，并且仅当此解决方法的未来重大更改可接受时，才使用此解决方法。
+
+### <a name="showinaddresslist-property-is-out-of-sync-with-microsoft-exchange"></a>showInAddressList 属性与 Microsoft Exchange 不同步
+
+通过 Microsoft Graph 查询用户时， **showInAddressList** 属性可能并不指示 Microsoft Exchange 中显示的相同状态。 建议通过 Microsoft 365 管理中心直接使用 Microsoft Exchange 管理此功能，而不是在 Microsoft Graph 中使用此属性。 
 
 ## <a name="query-parameters"></a>查询参数 
 

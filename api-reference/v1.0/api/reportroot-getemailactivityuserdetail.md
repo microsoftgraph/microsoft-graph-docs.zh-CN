@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 351d0373f223444352226618a4c4f9b0ae8a4860
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 00a1ed4827fa44e989c22eda779728169fb9fbfb
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053383"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653530"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 
@@ -57,7 +57,7 @@ GET /reports/getEmailActivityUserDetail(date={date_value})
 
 | 名称          | 说明                              |
 | :------------ | :--------------------------------------- |
-| Authorization | 持有者{令牌}。必需。                |
+| Authorization | 持有者{token}.必需。                |
 | If-None-Match | 如果包含此请求表头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。可选。 |
 
 ## <a name="response"></a>响应
@@ -77,6 +77,8 @@ CSV 文件包含下面的列标题。
 - 已发送数
 - 已接收数
 - 已阅读数
+- 会议创建数
+- 会议交互数
 - 分配的产品
 - 报表周期
 
@@ -122,7 +124,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Assigned Products,Report Period
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Meeting Created Count,Meeting Interacted Count,Assigned Products,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
