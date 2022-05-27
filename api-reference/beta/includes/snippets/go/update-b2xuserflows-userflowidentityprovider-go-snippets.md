@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 70712e96e4131f3b7ea16ba5e57ca120d28ffd6b
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 798d71c65f933a39fc0da4c9c7f4b68ba1a02430
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326707"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719238"
 ---
 ```go
 
@@ -18,8 +18,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.identityProvider",
 }
 b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-identityProviderBaseId := "identityProviderBase-id"
-graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserFlowIdentityProvidersById(&identityProviderBaseId).Patch(requestBody)
+graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserFlowIdentityProviders().$ref().Patch(requestBody)
 
 
 ```

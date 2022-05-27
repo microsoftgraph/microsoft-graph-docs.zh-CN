@@ -1,16 +1,16 @@
 ---
 title: 从 onPremisesAgentGroup 中删除 publishedResource
-description: 从[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象中删除[publishedResource](../resources/publishedresource.md)对象。
-localization_priority: Normal
+description: 从 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象中删除 [publishedResource](../resources/publishedresource.md) 对象。
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4c93aeab74a8ef4191bd66354144e6746a5b5abf
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 139ffd1950a7d02cff33ff33b277d997bd3bee18
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787581"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695341"
 ---
 # <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a>从 onPremisesAgentGroup 中删除 publishedResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "52787581"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象中删除[publishedResource](../resources/publishedresource.md)对象。
+从 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象中删除 [publishedResource](../resources/publishedresource.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisionin
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-onpremisesagentgroup-from-publishedresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-onpremisesagentgroup-from-publishedresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

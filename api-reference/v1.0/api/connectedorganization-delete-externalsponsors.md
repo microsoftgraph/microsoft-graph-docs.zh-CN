@@ -1,22 +1,22 @@
 ---
 title: 删除 externalSponsors
-description: 从已连接的组织的外部发起人中删除用户或组。
+description: 从连接组织的外部发起人中删除用户或组。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f5982554d878a322e4daa759a9db29f1bd4242ad
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e51ac2dd7c65bf7d2a3f93671315966f48ee9d7b
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117866"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694882"
 ---
 # <a name="remove-externalsponsors"></a>删除 externalSponsors
 
 命名空间：microsoft.graph
 
-从已连接的组织的外部发起人中删除用户或组。 外部 [发起](../resources/externalsponsors.md) 人是一组用户可以代表该已连接的组织的其他用户批准请求。
+从连接组织的外部发起人中删除用户或组。 [外部发起人](../resources/externalsponsors.md)是一组用户，他们可以代表来自该连接组织的其他用户批准请求。
 
 
 ## <a name="permissions"></a>权限
@@ -26,7 +26,7 @@ ms.locfileid: "62117866"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | EntitlementManagement.ReadWrite.All |
+|应用 | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-externalsponsor-from-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-externalsponsor-from-connectedorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

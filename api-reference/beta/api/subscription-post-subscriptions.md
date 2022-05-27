@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序，以在 Microsoft 数据或资源发生更改时Graph更改通知。
+description: 订阅侦听器应用程序，以便在 Microsoft Graph资源上的数据发生更改时接收更改通知。
 ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: a348466b45132e641d68785e0537cd4826a299b9
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 8351c0801700cc6d9e724fdcbbc609e646834bc8
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451394"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695417"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -22,13 +22,13 @@ ms.locfileid: "63451394"
 
 请参阅" [权限](#permissions) 部分中的表格，了解支持订阅以更改通知的资源列表。
 
-某些资源支持在更改通知中包括加密资源数据的选项。 这些资源包括 [chatMessage、](../resources/chatmessage.md)[contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md)、[onlineMeetings 和](../resources/onlinemeeting.md) [presence](../resources/presence.md)。 有关详细信息，请参阅[设置包含资源数据的更改通知](/graph/webhooks-with-resource-data)和 [Microsoft Graph 中 Outlook 资源的更改通知](/graph/outlook-change-notification-overview)。
+某些资源支持在更改通知中包括加密资源数据的选项。 这些资源包括 [chatMessage](../resources/chatmessage.md)、 [联系](../resources/contact.md)人、 [事件](../resources/event.md)、 [消息](../resources/message.md)、 [onlineMeetings](../resources/onlinemeeting.md) 和 [状态](../resources/presence.md)。 有关详细信息，请参阅[设置包含资源数据的更改通知](/graph/webhooks-with-resource-data)和 [Microsoft Graph 中 Outlook 资源的更改通知](/graph/outlook-change-notification-overview)。
 
 ## <a name="permissions"></a>权限
 
 创建订阅需要对资源的读取权限。 例如，若要获取有关邮件的更改通知，应用需要 Mail.Read 权限。 
 
-根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解详细信息，包括在选择权限之前 [要小心](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) ，请在权限中搜索以下权 [限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -66,6 +66,8 @@ ms.locfileid: "63451394"
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
+建议使用上表中所述的权限。 由于安全限制，仅需要读取访问权限时，Microsoft Graph订阅将不支持写入访问权限。
+
 > **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
@@ -80,13 +82,13 @@ OneDrive for Business 和 SharePoint 支持向应用程序发送有关在 **driv
 
 ### <a name="contact-event-and-message"></a>联系人、事件和消息
 
-您可以订阅联系人、Outlook或邮件资源中的更改，还可以选择在 POST  请求有效负载中指定是否在通知中包括加密的资源数据。 
+可以订阅Outlook **联系人**、**事件** 或 **消息** 资源中的更改，并在 POST 请求有效负载中选择性地指定是否在通知中包含加密的资源数据。
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### <a name="onlinemeetings-presence"></a>onlineMeetings， presence
+### <a name="onlinemeetings-presence"></a>onlineMeetings，状态
 
-当为包含加密资源数据的通知创建订阅时，**onlineMeetings** 和 **presence** 上的订阅需要 [](/graph/webhooks-with-resource-data#creating-a-subscription) **encryptionCertificate** 和 **encryptionCertificateId** 属性。 有关详细信息，请参阅 [设置更改通知以包含资源数据](/graph/webhooks-with-resource-data)。
+在使用加密资源数据 [创建通知订阅](/graph/webhooks-with-resource-data#creating-a-subscription)时，**OnlineMeetings** 和 **状态** 上的订阅需要 **encryptionCertificate** 和 **encryptionCertificateId** 属性。 有关详细信息，请参阅 [设置更改通知以包含资源数据](/graph/webhooks-with-resource-data)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -108,7 +110,7 @@ POST /subscriptions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文 [中返回 响应](../resources/subscription.md) 代码和 subscription 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [订阅](../resources/subscription.md) 对象。
 
 要详细了解错误返回方式，请参阅[错误响应][error-response]。
 
@@ -116,9 +118,10 @@ POST /subscriptions
 
 ### <a name="request"></a>请求
 
-在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。`clientState` 和 `latestSupportedTlsVersion` 字段是可选的。
+在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。
+`clientState` 和 `latestSupportedTlsVersion` 是可选字段。
 
-此请求为当前登录用户收到的新邮件更改通知创建订阅。
+此请求为当前已登录用户收到的新邮件的更改通知创建订阅。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -169,12 +172,12 @@ Content-type: application/json
 
 #### <a name="resources-examples"></a>资源示例
 
-以下是资源属性的有效值。
+下面是资源属性的有效值。
 
 | 资源类型 | 示例 |
 |:------ |:----- |
 |[通话记录](../resources/callrecords-callrecord.md)|`communications/callRecords`|
-|[频道](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
+|[渠道](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[聊天](../resources/chat.md)|`/chats`, `/chats/{id}`|
 |[聊天消息](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[联系人](../resources/contact.md)|`me/contacts`|
@@ -229,7 +232,7 @@ Content-type: application/json
 
 #### <a name="notification-endpoint-validation"></a>通知终结点验证
 
-notificationUrl (中指定的订阅通知终结点) 必须能够响应验证请求，如设置用户数据更改的通知[中所述](/graph/webhooks#notification-endpoint-validation)。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
+**notificationUrl** 属性中指定的订阅通知终结点 () 必须能够响应验证请求，如 [为用户数据更改设置通知中](/graph/webhooks#notification-endpoint-validation)所述。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
 
 [error-response]: /graph/errors
 

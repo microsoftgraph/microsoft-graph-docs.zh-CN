@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 50e11e49e6fc9b77949ec6b3f0dc814140623b79
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 4246d54b98fb8df3a4e8ff43635ab76e18dae98a
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561827"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719198"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var authoredNote = new AuthoredNote
 {
     Content = new ItemBody
     {
-        Content = "String",
+        Content = "Please take a look at the files tagged with follow up",
         ContentType = BodyType.Text
     }
 };

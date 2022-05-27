@@ -1,16 +1,16 @@
 ---
 title: 从 printerShare 中删除 allowedGroup
-description: 撤销指定组向关联的打印机共享提交打印作业的访问权限。
+description: 撤消指定组将打印作业提交到关联打印机共享的访问权限。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: dce2a4d044b555116396953e926ef3c5d8c13fb0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 31dfa999eb10d2a2f6dc2b6b6170e2f5815e6545
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051058"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695355"
 ---
 # <a name="delete-allowedgroup-from-printershare"></a>从 printerShare 中删除 allowedGroup
 
@@ -18,18 +18,18 @@ ms.locfileid: "52051058"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-撤销指定组向关联的 [printerShare](../resources/printershare.md)提交打印作业的访问权限。
+撤销指定组将打印作业提交到关联 [的 printerShare](../resources/printershare.md) 的访问权限。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，除下表中列出的权限外，用户或应用的租户还必须具有活动的通用打印订阅。 已登录的用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -73,6 +73,10 @@ DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/{id}/$re
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-allowedgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-allowedgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

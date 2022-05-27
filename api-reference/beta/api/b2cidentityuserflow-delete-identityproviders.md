@@ -1,25 +1,25 @@
 ---
-title: '从 b2cIdentityUserFlow 中删除 identityProvider (弃) '
-description: '从 b2cIdentityUserFlow 中删除 identityProvider。  (已弃) '
-localization_priority: Normal
+title: '从 b2cIdentityUserFlow 中删除 identityProvider (已弃用) '
+description: '从 b2cIdentityUserFlow 中删除 identityProvider。  (已弃用) '
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 64a72b0d286ff9e794d8ca654d498ee95f1a52de
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: ece5e74db1f27293f58f159eb142ee8b18e47888
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439810"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694699"
 ---
-# <a name="delete-an-identityprovider-from-a-b2cidentityuserflow-deprecated"></a>从 b2cIdentityUserFlow 中删除已弃 (identityProvider) 
+# <a name="delete-an-identityprovider-from-a-b2cidentityuserflow-deprecated"></a>从 b2cIdentityUserFlow 中删除 identityProvider (已弃用) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-从 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象中删除标识提供程序。 有关可用于用户流的标识提供程序详细信息，请参阅 [identityProviders](../resources/identityprovider.md) API 参考。
+从 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象中删除标识提供者。 有关可用于用户流的标识提供程序的详细信息，请参阅 [identityProviders](../resources/identityprovider.md) API 参考。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "53439810"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序| IdentityUserFlow.ReadWrite.All|
+|应用| IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -89,6 +89,10 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSign
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-b2xuserflows-identityproviders-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-b2xuserflows-identityproviders-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

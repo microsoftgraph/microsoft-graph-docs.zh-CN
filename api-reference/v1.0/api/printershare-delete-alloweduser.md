@@ -1,33 +1,33 @@
 ---
 title: 从 printerShare 中删除 allowedUser
-description: 撤销指定用户向关联的打印机共享提交打印作业的访问权限。
+description: 撤消指定用户将打印作业提交到关联打印机共享的访问权限。
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: a1d6edce095e0cac5e0a416c5568c5cf5b7e8e85
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: bfddc3d8a995163a2904550cc6cd6dddfa095d04
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60924341"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695523"
 ---
 # <a name="delete-alloweduser-from-printershare"></a>从 printerShare 中删除 allowedUser
 
 命名空间：microsoft.graph
 
-撤销指定用户向关联的 [printerShare](../resources/printershare.md)提交打印作业的访问权限。
+撤消指定用户将打印作业提交到关联 [打印机Share](../resources/printershare.md) 的访问权限。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，除下表中列出的权限外，用户或应用的租户还必须具有活动的通用打印订阅。 已登录的用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedUse
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-alloweduser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-alloweduser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

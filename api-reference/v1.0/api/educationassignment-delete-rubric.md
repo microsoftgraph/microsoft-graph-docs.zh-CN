@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 163c829a2fd2aa88b9bfd5731ccab18070afca14
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c6dcbf9d57b91b6861615de3c337e73e3a921f1
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090654"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694776"
 ---
 # <a name="delete-educationrubric-from-educationassignment"></a>从 educationAssignment 中删除 educationRubric
 
 命名空间：microsoft.graph
 
-从[educationAssignment](../resources/educationassignment.md)中删除[educationRubric。](../resources/educationrubric.md)
-此方法不会删除测试点本身。
+从 [educationAssignment](../resources/educationassignment.md) 中删除 [educationRubric](../resources/educationrubric.md)。
+此方法不会删除 rubric 本身。
 
 ## <a name="permissions"></a>权限
 
@@ -45,7 +45,7 @@ DELETE /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf600
 
 ## <a name="request-body"></a>请求正文
 
-请勿提供此方法的请求正文。
+请勿为此方法提供请求正文。
 
 ## <a name="response"></a>响应
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationrubric-from-educationassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationrubric-from-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

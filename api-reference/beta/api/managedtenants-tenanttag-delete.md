@@ -5,12 +5,12 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 8da414f46b8116c3f7f5daef30ddb66dbc1993c8
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 0cace0ce196ae1a521610d0c2beeaa9478a5885b
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792211"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695557"
 ---
 # <a name="delete-tenanttag"></a>删除 tenantTag
 命名空间：microsoft.graph.managedTenants
@@ -54,6 +54,8 @@ DELETE /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 
 ### <a name="request"></a>请求
 
+请求示例如下所示。
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -88,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenan
 
 
 ### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true

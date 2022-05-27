@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7c56be5e04334258ec0a997896904010d1e2dcfd
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: b378e56a33ffef761e1f80098a2cbf6c37d99385
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328994"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719192"
 ---
 ```go
 
@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAuthoredNote()
 content := msgraphsdk.NewItemBody()
 requestBody.SetContent(content)
-content := "String"
+content := "Please take a look at the files tagged with follow up"
 content.SetContent(&content)
 contentType := "text"
 content.SetContentType(&contentType)

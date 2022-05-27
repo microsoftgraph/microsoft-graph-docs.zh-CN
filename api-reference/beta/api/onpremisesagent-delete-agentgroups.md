@@ -1,16 +1,16 @@
 ---
 title: 从 onPremisesAgentGroup 中删除 onpremisesAgent
 description: 从 onPremisesAgentGroup 中删除 onpremisesAgent。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d5649a10cf38f3a8da1004db30a191363a8e6a21
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: c39ceb44b233493ebb2cad914b7b6c4fabec3991
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781161"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694672"
 ---
 # <a name="remove-onpremisesagent-from-an-onpremisesagentgroup"></a>从 onPremisesAgentGroup 中删除 onPremisesAgent
 
@@ -18,7 +18,7 @@ ms.locfileid: "52781161"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [onPremisesAgentGroup](../resources/onpremisesagent.md) 中删除 [onPremisesAgent](../resources/onpremisesagentgroup.md)。
+从 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 中删除 [onPremisesAgent](../resources/onpremisesagent.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisionin
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/removeonpremisesagentfromanonpremisesagentgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/removeonpremisesagentfromanonpremisesagentgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

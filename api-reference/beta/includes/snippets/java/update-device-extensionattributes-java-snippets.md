@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bed66164022a3ce4b4f3cc34cfc8d68ad594d053
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 20e9f09fd457a12238e7bd63530c7adab460ff24
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688580"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719265"
 ---
 ```java
 
@@ -16,7 +16,7 @@ OnPremisesExtensionAttributes extensionAttributes = new OnPremisesExtensionAttri
 extensionAttributes.extensionAttribute1 = "BYOD-Device";
 device.extensionAttributes = extensionAttributes;
 
-graphClient.devices("{id}")
+graphClient.devices("7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac")
     .buildRequest()
     .patch(device);
 

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 516fb3d6d04396ef9ded12b38ca984f447cf5d8e
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: ee00c1424a21a08509b3b050d5b7e92c5ea78397
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205630"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694686"
 ---
 # <a name="create-rejectedsender"></a>创建 rejectedSender
 
@@ -30,7 +30,7 @@ ms.locfileid: "65205630"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | Group.ReadWrite.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| Application                            | 不支持。                              |
+| 应用程序                            | 不支持。                              |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -102,7 +102,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-rejectedsender-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-rejectedsender-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

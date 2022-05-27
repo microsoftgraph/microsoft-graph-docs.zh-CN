@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5aeaa4a0955ed595a481191fce2946a0e7013be0
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 763147a8fd43ff64bab71e2c6248957936960919
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398375"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695208"
 ---
 # <a name="add-members"></a>添加成员
 
@@ -20,10 +20,10 @@ ms.locfileid: "65398375"
 
 通过 **members** 导航属性将成员添加到安全组或 Microsoft 365 组中。
 
-下表显示了可添加到安全组或Microsoft 365组的成员类型。
+下表显示了可添加到安全组或 Microsoft 365 组的成员类型。
 
 
-| 对象类型             | 安全组的成员     | Microsoft 365组的成员 |
+| 对象类型             | 安全组成员     | Microsoft 365 组成员 |
 |-------------------------|-------------------------------|-------------------------------|
 | 用户                   | ![可以是组成员][Yes]   | ![可以是组成员][Yes]   |
 | 安全组         | ![可以是组成员][Yes]   | ![不能是组成员][No] |
@@ -116,7 +116,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

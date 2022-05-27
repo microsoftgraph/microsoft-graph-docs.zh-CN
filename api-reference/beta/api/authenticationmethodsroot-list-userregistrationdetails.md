@@ -1,23 +1,23 @@
 ---
 title: 列出 userRegistrationDetails
-description: 获取为用户注册的身份验证方法的列表，如 userRegistrationDetails 对象中的定义。
+description: 获取在 userRegistrationDetails 对象中定义的为用户注册的身份验证方法的列表。
 author: danielwood95
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: f89d322841c7b9d3e1d6c3153bd6e9e06415b5cb
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 474750f2f954a75d7fcaa403f061fc96bc663283
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239006"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694853"
 ---
 # <a name="list-userregistrationdetails"></a>列出 userRegistrationDetails
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取为用户注册的身份验证方法的列表，如 [userRegistrationDetails](../resources/userregistrationdetails.md) 对象中的定义。
+获取在 [userRegistrationDetails](../resources/userregistrationdetails.md) 对象中定义的为用户注册的身份验证方法的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "62239006"
 |:---|:---|
 |委派（工作或学校帐户）|UserAuthenticationMethod.Read.All、AuditLog.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|UserAuthenticationMethod.Read.All、AuditLog.Read.All|
+|应用|UserAuthenticationMethod.Read.All、AuditLog.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ GET /reports/authenticationMethods/userRegistrationDetails
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法仅支持 `$filter` 和 `$orderBy` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法仅 `$filter` 支持 OData 查询参数， `$orderBy` 以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -51,7 +51,7 @@ GET /reports/authenticationMethods/userRegistrationDetails
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userRegistrationDetails](../resources/userregistrationdetails.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [userRegistrationDetails](../resources/userregistrationdetails.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -122,7 +122,8 @@ Content-Type: application/json
             "methodsRegistered": [
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
-            ]
+            ],
+            "defaultMethod": "microsoftAuthenticatorPush"
         },
         {
             "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
@@ -134,7 +135,8 @@ Content-Type: application/json
             "isMfaRegistered": false,
             "isMfaCapable": false,
             "isPasswordlessCapable": false,
-            "methodsRegistered": []
+            "methodsRegistered": [],
+            "defaultMethod": ""    
         },
         {
             "id": "c8096958-797c-44fa-8fde-a6fb62567cf0",
@@ -150,7 +152,8 @@ Content-Type: application/json
                 "mobilePhone",
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
-            ]
+            ],
+            "defaultMethod": "mobilePhone"
         }
     ]
 }

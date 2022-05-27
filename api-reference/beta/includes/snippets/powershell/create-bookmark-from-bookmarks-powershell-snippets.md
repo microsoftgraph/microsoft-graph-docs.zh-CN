@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a0c3e9281d0ed2bbd12f32dfca36fc85a856cf5a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 94bc4b321859421b91f1c974c7fb4db0e1509f0b
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338235"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719296"
 ---
 ```powershell
 
@@ -32,16 +32,10 @@ $params = @{
     )
     TargetedVariations = @(
         @{
-            LanguageTag = "es-ES"
+            LanguageTag = "es-es"
             DisplayName = "Sitio de instalación Contoso"
             Description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
         }
-    )
-    GroupIds = @(
-        "groupId"
-    )
-    PowerAppIds = @(
-        "powerAppId"
     )
     State = "published"
 }

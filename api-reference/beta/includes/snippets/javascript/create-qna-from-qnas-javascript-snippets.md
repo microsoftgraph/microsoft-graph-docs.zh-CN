@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 279b01d6272462b6b986817ab24d15f73978f4a7
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 54526bc5add0271e38b1ff5a3c5f37b62ee145ae
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338255"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719222"
 ---
 ```javascript
 
@@ -26,9 +26,8 @@ const qna = {
   },
   availabilityStartDateTime: '2020-09-21T20:01:37Z',
   availabilityEndDateTime: '2021-12-31T20:01:37Z',
-  languageTags: ['en-US'],
+  languageTags: ['en-us'],
   platforms: ['ios'],
-  groupIds: ['groupId'],
   state: 'published'
 };
 

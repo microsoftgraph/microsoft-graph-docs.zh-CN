@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f4a25616baa6698b3365c077ee85f907d93d44f2
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a00c0032e39b3de66dcedb99c8a9e0c6e040b204
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396376"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695105"
 ---
 # <a name="remove-educationclass"></a>删除 educationClass
 
@@ -27,7 +27,7 @@ ms.locfileid: "63396376"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduRoster.ReadWrite.All | 
+|应用 | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ DELETE /education/schools/{id}/classes/{classId}/$ref
 如果成功，此方法将返回 `204 No Content` 响应代码和响应正文。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,7 +81,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/classes/11001
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
 <!-- {

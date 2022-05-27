@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ec348164cccddf8480f2940e2a549e2dff1cd3ae
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 58c08864e34266b875ff979f179cf4f76be49536
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559602"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719289"
 ---
 ```javascript
 
@@ -16,8 +16,8 @@ const options = {
 const client = Client.init(options);
 
 const subjectRightsRequest = {
-  '@odata.type': '#microsoft.graph.subjectRightsRequest',
-  internalDueDateTime: '2021-08-30T00:00:00Z'
+    '@odata.type': '#microsoft.graph.subjectRightsRequest',
+    internalDueDateTime: '2021-08-30T00:00:00Z'
 };
 
 await client.api('/privacy/subjectRightsRequests/{subjectRightsRequestId}')

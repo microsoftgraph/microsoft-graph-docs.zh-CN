@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 51bfc45fd2f013fc4661ac63d9d8030f3333953d
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: bc07474256eb8a8d5c4ed543648a2eeb55cc7320
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338259"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719227"
 ---
 ```powershell
 
@@ -35,13 +35,10 @@ $params = @{
     AvailabilityStartDateTime = [System.DateTime]::Parse("2020-09-21T20:01:37Z")
     AvailabilityEndDateTime = [System.DateTime]::Parse("2021-12-31T20:01:37Z")
     LanguageTags = @(
-        "en-US"
+        "en-us"
     )
     Platforms = @(
         "ios"
-    )
-    GroupIds = @(
-        "groupId"
     )
     State = "published"
 }

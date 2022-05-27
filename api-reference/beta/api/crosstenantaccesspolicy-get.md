@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 34b7eaed4ff32332f98612a85cdeb80a51ca670d
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: b70af6eefa9946e4127670384b6d56515e16a751
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653565"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694846"
 ---
 # <a name="get-crosstenantaccesspolicy"></a>获取 crossTenantAccessPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "65653565"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.CrossTenantAccess|
 |委派（个人 Microsoft 帐户）|不适用|
-|应用程序|Policy.Read.All、Policy.ReadWrite.CrossTenantAccess|
+|应用|Policy.Read.All、Policy.ReadWrite.CrossTenantAccess|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,6 +59,8 @@ GET /policies/crossTenantAccessPolicy
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_crosstenantaccesspolicy"
@@ -68,6 +70,28 @@ GET /policies/crossTenantAccessPolicy
 ``` http
 GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-crosstenantaccesspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-crosstenantaccesspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-crosstenantaccesspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-crosstenantaccesspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-crosstenantaccesspolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

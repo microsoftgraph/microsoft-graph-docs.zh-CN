@@ -1,24 +1,24 @@
 ---
-title: 从 incompatibleAccessPackages 中删除 accessPackage
-description: 删除指示访问包与指定访问包不兼容的链接。
-localization_priority: Normal
+title: 从不兼容的AccessPackages中删除 accessPackage
+description: 删除一个链接，该链接指示访问包与指定的访问包不兼容。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c228402a433c3d9920481030ead07e79333459bc
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: d06f46f1e93b9afb97ab0b49a707f90f1f08f10d
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439356"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694069"
 ---
-# <a name="remove-accesspackage-from-incompatibleaccesspackages"></a>从 incompatibleAccessPackages 中删除 accessPackage
+# <a name="remove-accesspackage-from-incompatibleaccesspackages"></a>从不兼容的AccessPackages中删除 accessPackage
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [accessPackage](../resources/accesspackage.md) 上标记为不兼容的访问包列表中删除 [访问包](../resources/accesspackage.md)。  
+从 [AccessPackage](../resources/accesspackage.md) 上标记为不兼容的访问包列表中删除访问[包](../resources/accesspackage.md)。  
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "53439356"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | EntitlementManagement.ReadWrite.All |
+| 应用                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/remove-incompatibleaccesspackage-from-accesspackage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/remove-incompatibleaccesspackage-from-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

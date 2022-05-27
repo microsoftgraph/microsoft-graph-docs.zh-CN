@@ -5,20 +5,20 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc53b761f5ff9201416604fb71e58c8f04e57270
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 0b654bb741ac5be56941eee279110ff39d415e8a
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672565"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694630"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 
 命名空间：microsoft.graph
 
-从 [directoryRole 中删除成员](../resources/directoryrole.md)。
+从 [directoryRole](../resources/directoryrole.md) 中删除成员。
 
-你可以将 **directoryRole** 的对象 ID 和模板 ID 用于此 API。 内置角色的模板 ID 是不可可变的，可以在 Azure 门户的角色描述中查看。 有关详细信息，请参阅 [角色模板 ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)。
+可以将 **directoryRole** 的对象 ID 和模板 ID 与此 API 结合使用。 内置角色的模板 ID 是不可变的，可以在Azure 门户上的角色说明中看到。 有关详细信息，请参阅 [角色模板 ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "63672565"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.ReadWrite.Directory |
+|应用 | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -60,7 +60,7 @@ DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 
 #### <a name="request"></a>请求
 
-本示例中， `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` 将 替换为目录角色的 **id** `bb165b45-151c-4cf6-9911-cd7188912848` 值和希望从目录角色中取消分配的用户或目录对象的 **id** 值。
+在此示例中，请替换 `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` 为目录角色的 **ID** 值以及 `bb165b45-151c-4cf6-9911-cd7188912848` 要从目录角色中取消分配的用户或目录对象的 **ID** 值。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -87,6 +87,10 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-from-directoryrole-objectid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-directoryobject-from-directoryrole-objectid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -104,7 +108,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 将 `9f06204d-73c1-4d4c-880a-6edb90606fd8` 替换为 roleTemplateId 的值和 `bb165b45-151c-4cf6-9911-cd7188912848` directory 对象的用户的 **id** 值。
+下面展示了示例请求。 替换 `9f06204d-73c1-4d4c-880a-6edb90606fd8` 为 roleTemplateId 的值和 `bb165b45-151c-4cf6-9911-cd7188912848` 目录对象用户的 **ID** 值。
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

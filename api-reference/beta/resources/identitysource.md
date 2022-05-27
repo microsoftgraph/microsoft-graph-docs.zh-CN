@@ -1,16 +1,16 @@
 ---
 title: identitySource 资源类型
-description: identitySource 类型是已连接组织的标识源的抽象基本类型。
-localization_priority: Normal
+description: identitySource 类型是连接的组织的标识源的抽象基类型。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6d516aa2057feaf12449492c8e2246dfb04413c1
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: efac0ae9a9798f8491a02b62ff1a2ac900cf60dc
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761119"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694509"
 ---
 # <a name="identitysource-resource-type"></a>identitySource 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50761119"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此类型的子类型 [azureActiveDirectoryTenant](azureactivedirectorytenant.md) [、domainIdentitySource](domainidentitysource.md) 和 [externalDomainFederation](externaldomainfederation.md)用于 [connectedOrganization](connectedOrganization.md)的标识源。
+此类型的子类型 [azureActiveDirectoryTenant](azureactivedirectorytenant.md)、 [crossCloudAzureActiveDirectoryTenant](crosscloudazureactivedirectorytenant.md)、 [domainIdentitySource](domainidentitysource.md) 和 [externalDomainFederation](externaldomainfederation.md) 在 [connectedOrganization](connectedOrganization.md) 的标识源中使用。
 
 ## <a name="properties"></a>属性
 

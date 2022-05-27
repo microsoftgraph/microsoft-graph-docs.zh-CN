@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9fdb1b0a1b7b792be5a25a8a95b415547709105a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: c67e950177f3cb5285eaeca8e623dc2c1f908187
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338240"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719297"
 ---
 ```csharp
 
@@ -39,18 +39,10 @@ var bookmark = new Microsoft.Graph.Search.Bookmark
     {
         new Microsoft.Graph.Search.AnswerVariant
         {
-            LanguageTag = "es-ES",
+            LanguageTag = "es-es",
             DisplayName = "Sitio de instalación Contoso",
             Description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
         }
-    },
-    GroupIds = new List<String>()
-    {
-        "groupId"
-    },
-    PowerAppIds = new List<String>()
-    {
-        "powerAppId"
     },
     State = Microsoft.Graph.Search.AnswerState.Published
 };

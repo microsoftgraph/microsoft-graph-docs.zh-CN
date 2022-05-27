@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dea509633fa5da74e92108c9a436b5c2037a377f
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: c26c5201b2e9cbeb8d4e72b36a23385837c67b64
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338256"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719226"
 ---
 ```csharp
 
@@ -40,15 +40,11 @@ var qna = new Microsoft.Graph.Search.Qna
     AvailabilityEndDateTime = DateTimeOffset.Parse("2021-12-31T20:01:37Z"),
     LanguageTags = new List<String>()
     {
-        "en-US"
+        "en-us"
     },
     Platforms = new List<DevicePlatformType>()
     {
         DevicePlatformType.IOS
-    },
-    GroupIds = new List<String>()
-    {
-        "groupId"
     },
     State = Microsoft.Graph.Search.AnswerState.Published
 };

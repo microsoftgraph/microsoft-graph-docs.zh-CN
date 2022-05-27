@@ -1,16 +1,16 @@
 ---
 title: Remove appliesTo
 description: 从功能推出中删除 directoryObject。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7952b8cc3360c8332c4e5ed6a7a5635d5d7e0e2c
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 8b72317c4b807509bcca17393480f2acdfc31f1e
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508701"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695426"
 ---
 # <a name="remove-appliesto"></a>Remove appliesTo
 
@@ -20,7 +20,7 @@ ms.locfileid: "51508701"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象的 appliesTo 以从功能推出中删除[directoryObject。](../resources/directoryobject.md)
+删除 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象上的 appliesTo，以从功能推出中删除 [directoryObject](../resources/directoryobject.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +44,7 @@ DELETE /policies/featureRolloutPolicies/{policyId}/appliesTo/{directoryObjectId}
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}。 必需 |
+| Authorization | 持有者 {token}。 必需 |
 
 ## <a name="response"></a>响应
 
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-from-featurerolloutpolicy-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-directoryobject-from-featurerolloutpolicy-policies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

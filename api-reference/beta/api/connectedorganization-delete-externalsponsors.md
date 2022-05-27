@@ -1,16 +1,16 @@
 ---
 title: 删除连接的组织外部发起人
-description: 从已连接的组织的外部发起人中删除用户或组。
-localization_priority: Normal
+description: 从连接组织的外部发起人中删除用户或组。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 936c91f5ebd3bff0af8ec25a4ce542707e04227d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 44b70bf8018afd72d55a2905a6ba9dddd6297eb8
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786508"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695439"
 ---
 # <a name="remove-connected-organization-external-sponsor"></a>删除连接的组织外部发起人
 
@@ -18,7 +18,7 @@ ms.locfileid: "52786508"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从已连接的组织的外部发起人中删除用户或组。 外部发起人是一组用户，可以代表该连接的组织的其他用户批准请求。
+从连接组织的外部发起人中删除用户或组。 外部发起人是一组用户，他们可以代表来自该连接组织的其他用户批准请求。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "52786508"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | EntitlementManagement.ReadWrite.All |
+|应用 | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-externalsponsor-from-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-externalsponsor-from-connectedorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8b94ab5f20642ea7283d5a3c3552a4b2a271c2e3
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: fc8d6598a646fe2f04f17162a574e265083fbef9
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653516"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694968"
 ---
 # <a name="update-crosstenantaccesspolicy"></a>更新 crossTenantAccessPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "65653516"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.CrossTenantAccess|
 |委派（个人 Microsoft 帐户）|不适用|
-|应用程序|Policy.ReadWrite.CrossTenantAccess|
+|应用|Policy.ReadWrite.CrossTenantAccess|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,6 +66,8 @@ PATCH /policies/crossTenantAccessPolicy
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_crosstenantaccesspolicy"
@@ -80,6 +82,20 @@ Content-Type: application/json
   "allowedCloudEndpoints": ["microsoftonline.us", "partner.microsoftonline.cn"]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-crosstenantaccesspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-crosstenantaccesspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

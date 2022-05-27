@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 74102cd7e7456580fe20adee01d9f5cf4e0fad50
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 2cd87fca8de26632a150e434fa804cce21227bdd
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338258"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719224"
 ---
 ```java
 
@@ -35,14 +35,11 @@ qna.keywords = keywords;
 qna.availabilityStartDateTime = OffsetDateTimeSerializer.deserialize("2020-09-21T20:01:37Z");
 qna.availabilityEndDateTime = OffsetDateTimeSerializer.deserialize("2021-12-31T20:01:37Z");
 LinkedList<String> languageTagsList = new LinkedList<String>();
-languageTagsList.add("en-US");
+languageTagsList.add("en-us");
 qna.languageTags = languageTagsList;
 LinkedList<DevicePlatformType> platformsList = new LinkedList<DevicePlatformType>();
 platformsList.add(DevicePlatformType.I_O_S);
 qna.platforms = platformsList;
-LinkedList<String> groupIdsList = new LinkedList<String>();
-groupIdsList.add("groupId");
-qna.groupIds = groupIdsList;
 qna.state = AnswerState.PUBLISHED;
 
 graphClient.search().qnas()

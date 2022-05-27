@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 95a6ea99386aa69aa7c0f783719ef0731d50dba7
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 08789be4954db6948693d64d110e8512ca72d19e
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336289"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694860"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -26,7 +26,7 @@ ms.locfileid: "63336289"
 
 创建订阅需要读取资源范围。 例如，若要获取更改消息通知，应用需要 `Mail.Read` 权限。 
  
-根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 要了解详细信息，包括在选择权限之前的 [注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，可在 [权限](/graph/permissions-reference) 中搜索以下权限。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -48,6 +48,8 @@ ms.locfileid: "63336289"
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+
+建议使用上表中记载的权限。 由于安全限制，Microsoft Graph 订阅在只需要读取访问权限时将不支持写入访问权限。
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 

@@ -1,23 +1,23 @@
 ---
 title: 获取 userRegistrationDetails
 description: 读取 userRegistrationDetails 对象的属性和关系。
-author: danielwood95
+author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 895d2a6a744fe2233fecaf9252962354bd963771
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 9d0b5e114aa9a990bcafffcf2ee94a858cc83ab0
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239129"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694740"
 ---
 # <a name="get-userregistrationdetails"></a>获取 userRegistrationDetails
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [userRegistrationDetails 对象的属性和](../resources/userregistrationdetails.md) 关系。
+读取 [userRegistrationDetails](../resources/userregistrationdetails.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "62239129"
 |:---|:---|
 |委派（工作或学校帐户）|UserAuthenticationMethod.Read.All、AuditLog.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|UserAuthenticationMethod.Read.All、AuditLog.Read.All|
+|应用|UserAuthenticationMethod.Read.All、AuditLog.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /reports/authenticationMethods/userRegistrationDetails/{userRegistrationDeta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userRegistrationDetails](../resources/userregistrationdetails.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [userRegistrationDetails](../resources/userregistrationdetails.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -120,7 +120,8 @@ Content-Type: application/json
     "methodsRegistered": [
     "microsoftAuthenticatorPush",
       "softwareOneTimePasscode"
-    ]
+    ],
+    "defaultMfaMethod": "microsoftAuthenticatorPush"
   }
 }
 ```

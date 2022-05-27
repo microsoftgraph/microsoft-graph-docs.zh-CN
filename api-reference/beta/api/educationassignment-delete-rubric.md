@@ -1,16 +1,16 @@
 ---
 title: 从 educationAssignment 中删除 educationRubric
 description: 从 educationAssignment 中删除 educationRubric
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 619938b8550647acfe10f648a20460fe9c7554aa
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: c5c0ae0cf55767753f65788575ac5e3ed22c3045
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911944"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695369"
 ---
 # <a name="remove-educationrubric-from-educationassignment"></a>从 educationAssignment 中删除 educationRubric
 
@@ -18,8 +18,8 @@ ms.locfileid: "52911944"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[educationAssignment 中删除 educationRubric。](../resources/educationrubric.md) [](../resources/educationassignment.md)
-此方法不会删除测试点本身。
+从 [educationAssignment](../resources/educationassignment.md) 中删除 [educationRubric](../resources/educationrubric.md)。
+此方法不会删除 rubric 本身。
 
 ## <a name="permissions"></a>权限
 
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationrubric-from-educationassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationrubric-from-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

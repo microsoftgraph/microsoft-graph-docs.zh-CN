@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 046fd5a8e3463ab9efcdd63c79eacb82302d70fa
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 50e476e116ca4af3882364415c665d705f96817f
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894759"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695389"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -72,6 +72,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 - 指定初始请求中的较小的首页。 例如，将 **起始数量** 指定为 0，将 **大小** 指定为 25。
 - 通过更新 **起始数量** 和 **大小** 属性来对后续页面进行分页。 可以在每个后续请求中增加页面大小。 下表显示了一个示例。
+- 页面大小上限是 1000。
 
     | 页面 | 起始数量 | 大小 |
     |:-----|:-----|:-----|

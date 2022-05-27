@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fc68bd46ba9ff9cb59110ac0df018732c1e4a261
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: ad11c2444c54bc58c785b2ae604de55f77de079f
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561820"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719193"
 ---
 ```java
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 AuthoredNote authoredNote = new AuthoredNote();
 ItemBody content = new ItemBody();
-content.content = "String";
+content.content = "Please take a look at the files tagged with follow up";
 content.contentType = BodyType.TEXT;
 authoredNote.content = content1;
 

@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 88e0ec77915fd7d71e08654562617d90de00f23f
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 779448c1ed56787c26db0e8c12d49dec0a0ec69f
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326598"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719236"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.GroupRequestBuilderGetQueryParameters{
     Count: true,
     OrderBy: "deletedDateTime%20asc",
     Select: "id,displayName,deletedDateTime",
@@ -20,12 +20,11 @@ requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderGetQueryParameters
 headers := map[string]string{
     "ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderGetRequestConfiguration{
+options := &msgraphsdk.GroupRequestBuilderGetRequestConfiguration{
     QueryParameters: requestParameters,
     Headers: headers,
 }
-directoryObjectId := "directoryObject-id"
-result, err := graphClient.Directory().DeletedItemsById(&directoryObjectId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+result, err := graphClient.Directory().DeletedItems().Group().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

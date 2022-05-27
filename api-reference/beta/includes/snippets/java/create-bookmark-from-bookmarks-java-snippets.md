@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9c02c240caadfdbb8207b1db19f57461a5f189e9
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: cd3ddabbac6b01aa21a684c782d8d23ca908949a
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338231"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719299"
 ---
 ```java
 
@@ -32,17 +32,11 @@ platformsList.add(DevicePlatformType.ANDROID);
 bookmark.platforms = platformsList;
 LinkedList<AnswerVariant> targetedVariationsList = new LinkedList<AnswerVariant>();
 AnswerVariant targetedVariations = new AnswerVariant();
-targetedVariations.languageTag = "es-ES";
+targetedVariations.languageTag = "es-es";
 targetedVariations.displayName = "Sitio de instalación Contoso";
 targetedVariations.description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto";
 targetedVariationsList.add(targetedVariations);
 bookmark.targetedVariations = targetedVariationsList;
-LinkedList<String> groupIdsList = new LinkedList<String>();
-groupIdsList.add("groupId");
-bookmark.groupIds = groupIdsList;
-LinkedList<String> powerAppIdsList = new LinkedList<String>();
-powerAppIdsList.add("powerAppId");
-bookmark.powerAppIds = powerAppIdsList;
 bookmark.state = AnswerState.PUBLISHED;
 
 graphClient.search().bookmarks()

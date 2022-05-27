@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e2d61a8bf824d5db0c78a074b3c69b8a78baf7b1
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 02add8026edcbdefeb3b6459f16c4dfc3e3710a0
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326372"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694685"
 ---
 ```go
 
@@ -17,8 +17,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.id": "https://graph.microsoft.com/beta/users/alexd@contoso.com",
 }
 groupId := "group-id"
-directoryObjectId := "directoryObject-id"
-graphClient.GroupsById(&groupId).RejectedSendersById(&directoryObjectId).Post(requestBody)
+result, err := graphClient.GroupsById(&groupId).RejectedSenders().$ref().Post(requestBody)
 
 
 ```

@@ -732,6 +732,8 @@ items:
                 href: toolkit/providers/teams.md
               - name: Teams MSAL2 提供商
                 href: toolkit/providers/teams-msal2.md
+              - name: TeamsFx 提供商
+                href: toolkit/providers/teamsfx.md
               - name: 电子提供程序
                 href: toolkit/providers/electron.md
               - name: 代理服务器提供商
