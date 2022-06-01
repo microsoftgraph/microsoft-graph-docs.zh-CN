@@ -1,22 +1,25 @@
 ---
 title: 获取 signIn
-description: 介绍从 Microsoft (API) signIn Graph get 方法。
+description: 介绍来自 Microsoft 图形 API 的 signIn 资源 (实体) 的 get 方法。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9c5b6a97c288379c0aecfd2c099c8bbd53ed75f6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 099075180c81c1b4cf242b6ff8c0160a0b607f25
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091673"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821272"
 ---
 # <a name="get-signin"></a>获取 signIn
 
 命名空间：microsoft.graph
 
-检索租户的特定 Azure AD 用户登录事件。 本质上是交互式登录 (其中用户名/密码作为身份验证令牌) 且成功的联合登录当前包含在登录日志中。
+检索租户的特定 Azure AD 用户登录事件。 以交互方式进行交互的登录 (其中，用户名/密码作为身份验证令牌) 的一部分传递，并且成功的联合登录当前包含在登录日志中。
+
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
 
 ## <a name="permissions"></a>权限
 
@@ -29,11 +32,11 @@ ms.locfileid: "62091673"
 |应用程序 | AuditLog.Read.All 和 Directory.Read.All |
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 存在 [已知问题](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
-应用必须[正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)Azure AD。
+应用必须 [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) 到 Azure AD。
 
-除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要详细了解目录角色，请参阅Azure AD[角色：](/azure/active-directory/roles/permissions-reference)
+除了委派的权限外，已登录的用户还需要属于以下目录角色之一，这些角色允许他们读取登录报告。 若要详细了解目录角色，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 全局读取者
 + 报告读取者

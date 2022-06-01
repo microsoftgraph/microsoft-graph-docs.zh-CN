@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 99307a2f2de13a6b526dceed38134440e92f8118
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: 183155c31a69c0f669d4bafcaa19cb0a6fa78ee4
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549622"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821132"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -20,6 +20,9 @@ ms.locfileid: "65549622"
 
 设备的特定属性只能通过获准的移动设备管理 (MDM) 应用进行更新。
 
+> [!IMPORTANT]
+> 此 API 存在一个[已知问题](/graph/known-issues#linux-based-devices-cant-be-updated-by-an-app-with-application-permissions)。 具有应用程序权限的应用只能更新基于 Linux 的设备的 **extensionAttributes** 属性，即 **operationSystem** 属性所在的 `linux`位置。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,6 +31,8 @@ ms.locfileid: "65549622"
 |委派（工作或学校帐户） | Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | Device.ReadWrite.All、Directory.ReadWrite.All |
+
+调用用户还必须具有以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：*全局管理员**、Intune管理员*。 *云设备管理员* 角色中的调用用户只能使用此 API 启用或禁用设备，具有 *Windows 365管理员角色的* 用户只能更新基本设备属性。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +54,7 @@ PATCH /devices/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。 只有全局管理员和云设备管理员角色中的调用方才能更新此属性。|
+|accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。 只有 *全局管理员* 和 *云设备管理员* 角色中的调用方才能更新此属性。|
 |operatingSystem|String|设备上的操作系统类型。|
 |operatingSystemVersion|String|设备上的操作系统版本|
 |displayName|String|设备显示名称。|
@@ -120,6 +125,8 @@ HTTP/1.1 204 No Content
 #### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_device_extensionAttributes"
@@ -134,6 +141,24 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-device-extensionattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-device-extensionattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-device-extensionattributes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-device-extensionattributes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

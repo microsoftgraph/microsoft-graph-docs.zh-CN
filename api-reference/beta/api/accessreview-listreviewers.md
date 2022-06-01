@@ -1,18 +1,18 @@
 ---
-title: 列出 accessReview 审阅者
+title: '列出 accessReview 审阅者 (已弃用) '
 description: 在 Azure AD 访问评审功能中，检索 accessReview 对象的审阅者。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0a5ffc308b63eabf9b883be1f68bee1190c86c8a
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 6a120097d4baca6533091c0eeba9e2557bd3e8b6
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314464"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819140"
 ---
-# <a name="list-accessreview-reviewers"></a>列出 accessReview 审阅者
+# <a name="list-accessreview-reviewers-deprecated"></a>列出 accessReview 审阅者 (已弃用) 
 
 命名空间：microsoft.graph
 

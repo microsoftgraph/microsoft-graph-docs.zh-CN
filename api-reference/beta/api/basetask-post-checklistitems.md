@@ -5,19 +5,21 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a77aae528bbe86a6c45e6e31205c41b49b66155d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 83429f43474d247e599b0c562e32e899df8e0a6a
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114206"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821006"
 ---
 # <a name="create-checklistitem"></a>创建 checklistItem
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [checklistItem](../resources/checklistitem.md) 对象。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+在更大的 [baseTask](../resources/basetask.md) 中创建新的 [checklistItem](../resources/checklistitem.md) 对象作为子任务。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,19 +50,19 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [checklistItem](../resources/checklistitem.md) 对象的 JSON 表示形式。
 
-您可以在创建 **checklistItem** 时指定以下属性。
+创建 **checklistItem** 时，可以指定以下属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|checkedDateTime|DateTimeOffset|完成 **checklistItem 的** 日期和时间。|
-|createdDateTime|DateTimeOffset|创建 **checklistItem 的** 日期和时间。|
-|displayName|String|指示 **checklistItem 的标题的字段**。|
-|isChecked|布尔|指示项目是否已签出的状态。|
+|checkedDateTime|DateTimeOffset|**checklistItem** 完成的日期和时间。|
+|createdDateTime|DateTimeOffset|创建 **checklistItem** 的日期和时间。|
+|displayName|String|指示 **checklistItem** 标题的字段。|
+|isChecked|布尔|指示是否签出项的状态。|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [checklistItem](../resources/checklistitem.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [checklistItem](../resources/checklistitem.md) 对象。
 
 ## <a name="examples"></a>示例
 

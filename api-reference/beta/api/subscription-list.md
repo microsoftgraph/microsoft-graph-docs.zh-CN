@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: d5a569303830388ec95df1988acb755204a9817d
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 24d4ed04b721855422829cd8114d7e4651fc11a0
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368096"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820950"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -18,7 +18,9 @@ ms.locfileid: "63368096"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 webhook 订阅列表。 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
+检索 Webhook 订阅的列表。 
 
 响应的内容取决于应用调用的上下文；有关详细信息，请参阅 [权限](#permissions) 部分中的方案。
 
@@ -28,6 +30,7 @@ ms.locfileid: "63368096"
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
+|[baseTask](../resources/basetask.md) (已弃用)  | Tasks.ReadWrite、Subscription.Read.All | Tasks.ReadWrite、Subscription.Read.All | 不支持 |
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | 不支持 | 不支持 | CallRecords.Read.All  |
 |[频道](../resources/channel.md)（/teams/getAllChannels - 组织中的所有频道） | 不支持  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All |
 |[频道](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All, Subscription.Read.All  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All  |

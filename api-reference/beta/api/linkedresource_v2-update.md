@@ -1,23 +1,25 @@
 ---
 title: 更新linkedResource_v2
-description: 更新 linkedResource_v2 对象的属性。
+description: 更新linkedResource_v2对象的属性。
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0709b060f69c426c83d35e3c8b9c9d38306f9c19
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 52bd6eebf4bd03a46748da730303c64370dd536c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089919"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819935"
 ---
-# <a name="update-linkedresource_v2"></a>更新linkedResource_v2
+# <a name="update-linkedresource_v2-deprecated"></a>更新linkedResource_v2 (已弃用的) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 linkedResource_v2 [对象的属性](../resources/linkedresource_v2.md) 。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+更新 [linkedResource_v2](../resources/linkedresource_v2.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,14 +54,14 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 |属性|类型|说明|
 |:---|:---|:---|
 |applicationName|String|指示发送 **linkedResource** 的源的应用名称的字段。|
-|displayName|String|指示 **linkedResource 的标题的字段**。|
-|externalId|String|第三方/合作伙伴系统上与此任务关联的对象的 ID。|
-|WebUrl|String|指向 **linkedResource 的深层链接**。|
+|displayName|String|指示 **linkedResource** 的标题的字段。|
+|externalId|String|与第三方/合作伙伴系统上的此任务关联的对象的 ID。|
+|webUrl|String|**指向 linkedResource** 的深层链接。|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和更新](../resources/linkedresource_v2.md) linkedResource_v2对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新 [的linkedResource_v2](../resources/linkedresource_v2.md) 对象。
 
 ## <a name="examples"></a>示例
 

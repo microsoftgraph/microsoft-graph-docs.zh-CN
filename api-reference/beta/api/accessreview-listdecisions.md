@@ -1,18 +1,18 @@
 ---
-title: 列出 accessReview 决策
+title: '列出已弃用 (accessReview 决策) '
 description: 在 Azure AD 访问评审功能中，检索 accessReview 对象的决策。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9e6f9d7430a1fd00357ac2455e4754f7d4958e58
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: d4d50761e56f3c8b3d342b1b1d704ea37a4cc13b
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314473"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819136"
 ---
-# <a name="list-accessreview-decisions"></a>列出 accessReview 决策
+# <a name="list-accessreview-decisions-deprecated"></a>列出已弃用 (accessReview 决策) 
 
 命名空间：microsoft.graph
 

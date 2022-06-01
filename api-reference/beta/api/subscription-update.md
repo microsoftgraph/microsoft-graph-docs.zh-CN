@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 830ed9a27ae30feb349a9c340436c4a1aa0e6eff
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 648d39302258b0f6940ac06312fb6f7c482f5248
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394766"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821097"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -18,11 +18,13 @@ ms.locfileid: "63394766"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 通过延长到期时间续订订阅。
 
-"权限 ["部分](#permissions) 中的表列出了支持订阅更改通知的资源。
+“ [权限](#permissions) ”部分中的表列出了支持订阅更改通知的资源。
 
-订阅在时间长度因资源类型而异后过期。 为了避免缺少更改通知，应用应在到期日期之前提前续订其订阅。 请参阅 [订阅](../resources/subscription.md) ，了解每种资源类型的订阅的最大长度。
+订阅在时间长度因资源类型而异后过期。 为了避免缺少更改通知，应用应在订阅到期日期之前提前续订订阅。 有关每个资源类型的订阅的最大长度，请参阅 [订阅](../resources/subscription.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -30,6 +32,7 @@ ms.locfileid: "63394766"
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
+|[baseTask](../resources/basetask.md) (已弃用)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 |[callRecord](../resources/callrecords-callrecord.md) | 不支持 | 不支持 | CallRecords.Read.All  |
 |[频道](../resources/channel.md)（/teams/getAllChannels - 组织中的所有频道） | 不支持  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All |
 |[频道](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All，ChannelSettings.Read.All  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All  |
@@ -61,7 +64,6 @@ ms.locfileid: "63394766"
 |[teams](../resources/team.md) (/teams - 组织中的所有团队) | 不支持 | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All，TeamSettings.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
@@ -76,13 +78,13 @@ ms.locfileid: "63394766"
 
 ### <a name="contact-event-and-message"></a>联系人、事件和消息
 
-您可以订阅联系人、Outlook或邮件资源中的更改，还可以选择在 POST  请求有效负载中指定是否在通知中包括加密的资源数据。 
+可以订阅Outlook **联系人**、**事件** 或 **消息** 资源中的更改，并在 POST 请求有效负载中选择性地指定是否在通知中包含加密的资源数据。
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### <a name="onlinemeetings-presence"></a>onlineMeetings， presence
+### <a name="onlinemeetings-presence"></a>onlineMeetings，状态
 
-**onlineMeetings** 和 **状态** 订阅要求 [对包含](/graph/webhooks-with-resource-data) 资源数据的通知进行加密。 如果通知中需要资源数据，则如果[未指定 encryptionCertificate 和 encryptionCertificateId](../resources/subscription.md)，订阅创建将失败。[](../resources/subscription.md)
+**onlineMeetings** 和 **状态** 订阅需要对包含资源数据的通知进行 [加密](/graph/webhooks-with-resource-data) 。 如果在通知中需要资源数据，则未指定 [encryptionCertificate](../resources/subscription.md) 和 [encryptionCertificateId](../resources/subscription.md) ，则订阅创建将失败。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -105,7 +107,7 @@ PATCH /subscriptions/{id}
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| expirationDateTime  | DateTimeOffset  | 指定订阅过期的日期和时间（UTC 格式）。 对于支持的最大订阅时长，时间因资源而异。 |
+| expirationDateTime  | DateTimeOffset  | 指定订阅到期时 UTC 中的日期和时间。 受支持的最大订阅时间长度因资源而异。 |
 
 ## <a name="response"></a>响应
 

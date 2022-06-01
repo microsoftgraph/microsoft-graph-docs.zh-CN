@@ -1,18 +1,18 @@
 ---
-title: 更新 accessReview
-description: 在Azure AD评审功能中，更新现有 accessReview 对象以更改其一个或多个属性。
+title: '更新已弃用的 accessReview () '
+description: 在 Azure AD 访问评审功能中，更新现有 accessReview 对象以更改其一个或多个属性。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 289d2aabaab79f7fb02d5d1f6235dce8294c2660
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: eb7bc62b0ca05ff985bfb9a06d776d3ed7a2a2eb
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63394185"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819128"
 ---
-# <a name="update-accessreview"></a>更新 accessReview
+# <a name="update-accessreview-deprecated"></a>更新已弃用的 accessReview () 
 
 命名空间：microsoft.graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "63394185"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-在Azure AD[评审](../resources/accessreviews-root.md)功能中，更新现有 [accessReview](../resources/accessreview.md) 对象以更改其一个或多个属性。
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，更新现有 [accessReview](../resources/accessreview.md) 对象以更改其一个或多个属性。
 
-此 API 不用于更改审阅者或审阅决策。  若要更改审阅者，请使用 [addReviewer](accessreview-addreviewer.md) 或 [removeReviewer](accessreview-removereviewer.md) API。  若要停止已启动的一次性审阅或已启动的定期审阅实例，请尽早使用 [停止](accessreview-stop.md) API。 若要将决策应用于目标组或应用访问权限，请使用 [应用](accessreview-apply.md) API。 
+此 API 不用于更改评审的审阅者或决策。  若要更改审阅者，请使用 [addReviewer](accessreview-addreviewer.md) 或 [removeReviewer](accessreview-removereviewer.md) API。  若要停止已启动的一次性评审或已启动的定期评审实例，请尽早使用 [停止](accessreview-stop.md) API。 若要将决策应用于目标组或应用访问权限，请使用 [应用](accessreview-apply.md) API。 
 
 
 ## <a name="permissions"></a>权限
@@ -45,25 +45,25 @@ PATCH /accessReviews/{reviewId}
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [accessReview](../resources/accessreview.md) 对象的参数的 JSON 表示形式。
+在请求正文中，提供 [accessReview](../resources/accessreview.md) 对象参数的 JSON 表示形式。
 
-下表显示更新 accessReview 时提供的属性。
+下表显示了更新 accessReview 时可以提供的属性。
 
 | 属性      | 类型           | 说明                                                                                                |
 |:--------------|:---------------|:-----------------------------------------------------------------------------------------------------------|
 | displayName   | String         | 访问评审名称。                                                                                    |
-| startDateTime | DateTimeOffset | 计划启动审阅的 DateTime。  这必须是将来的日期。                 |
-| endDateTime   | DateTimeOffset | 计划结束审阅的 DateTime。 这必须至少比开始日期晚一天。 |
-| 说明   | String         | 向审阅者显示的说明。                                                                 |
+| startDateTime | DateTimeOffset | 计划开始评审时的 DateTime。  这必须是将来的日期。                 |
+| endDateTime   | DateTimeOffset | 计划结束评审时的 DateTime。 这必须至少比开始日期晚一天。 |
+| description   | String         | 要向审阅者显示的说明。                                                                 |
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `204 Accepted` 正文中返回 响应代码和 [accessReview](../resources/accessreview.md) 对象。
+如果成功，此方法在响应正文中返回 `204 Accepted` 响应代码和 [accessReview](../resources/accessreview.md) 对象。
 
 ## <a name="example"></a>示例
 
-这是一个更新一次访问 (访问) 的示例。
+这是更新一次性 (不重复) 访问评审的示例。
 
 ##### <a name="request"></a>请求
 在请求正文中，提供 [accessReview](../resources/accessreview.md) 对象的新属性的 JSON 表示形式。

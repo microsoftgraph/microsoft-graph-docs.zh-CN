@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 0703504f98312b39e1c0b2e22d9407e56662e576
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 42341e7d5fc27a912be45bc1eb811433aadbb8c9
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367634"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821188"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -18,7 +18,7 @@ ms.locfileid: "63367634"
 
 删除订阅。
 
-有关支持订阅更改通知的资源列表，请参阅权限 [部分中的](#permissions) 表。
+有关支持订阅更改通知的资源列表，请参阅“ [权限](#permissions) ”部分中的表。
 
 ## <a name="permissions"></a>权限
 
@@ -42,6 +42,7 @@ ms.locfileid: "63367634"
 |[打印机](../resources/printer.md) | 不支持。 | 不支持。 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持。 | 不支持。 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持。 | SecurityEvents.ReadWrite.All |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 
@@ -57,7 +58,7 @@ ms.locfileid: "63367634"
 
 ### <a name="contact-event-and-message"></a>联系人、事件和消息
 
-您可以订阅联系人、Outlook **或邮件** 资源 **中的** 更改。 
+你可以订阅 Outlook **联系人**、**事件** 或 **消息** 资源中的更改。
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 

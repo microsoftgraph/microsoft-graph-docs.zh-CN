@@ -5,17 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8d1465d85efa53147bcba683a8fd5781a8c45bcc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f9d27a249d57b1922c4e5934cc832f3f73246c07
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093167"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819817"
 ---
-# <a name="list-lists"></a>列出列表
+# <a name="list-lists-deprecated"></a>列表列表 (已弃用) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 获取用户的 [baseTaskList](../resources/basetasklist.md) 对象及其属性的列表。
 
@@ -40,7 +42,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$expand` 使用 `$filter` `$top` [和 OData 查询参数](/graph/query-parameters)自定义响应。  
+此方法支持 `$expand``$filter` `$top`[OData 查询参数](/graph/query-parameters)自定义响应。  
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +54,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [baseTaskList](../resources/basetasklist.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [baseTaskList](../resources/basetasklist.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

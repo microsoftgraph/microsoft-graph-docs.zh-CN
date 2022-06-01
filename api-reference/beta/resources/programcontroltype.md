@@ -1,38 +1,40 @@
 ---
-title: programControlType 资源类型
-description: '在 Azure AD 访问评审功能中，将控件关联到程序时，会使用程序控件类型来指示控件所针对的访问评审类型。  '
-localization_priority: Normal
+title: 'programControlType 资源类型 (已弃用) '
+description: '在 Azure AD 访问评审功能中，将控件与程序关联时使用程序控件类型，以指示控件用于的访问评审类型。  '
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 58c9ee3ade6e3969de9653f54c5181a66f087ea5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2dcb4c5e00b4c3b5ea0cf9283dadaa9b2c89cd12
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960360"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819736"
 ---
-# <a name="programcontroltype-resource-type"></a>programControlType 资源类型
+# <a name="programcontroltype-resource-type-deprecated"></a>programControlType 资源类型 (已弃用) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure [AD](accessreviews-root.md) 访问评审功能中，将控件关联到程序时，会使用程序控件类型来指示控件所针对的访问评审类型。  
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+在 Azure AD [访问评审](accessreviews-root.md) 功能中，将控件与程序关联时使用程序控件类型，以指示控件用于的访问评审类型。  
 
 当全局管理员载入租户以使用访问评审功能时，将自动生成程序控制类型对象。  无法创建其他程序控制类型。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) 集合| 列出程序控件类型。 |
+|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) 集合| 列出程序控制类型。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| id                     |String                | 程序控件类型的功能分配的标识符                                      |
+| id                     |String                | 程序控件类型的功能分配标识符                                      |
 | displayName            |String                | 程序控件类型的名称                                                             |
 
 

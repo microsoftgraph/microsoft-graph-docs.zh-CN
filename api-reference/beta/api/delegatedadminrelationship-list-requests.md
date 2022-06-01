@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: ab1dd04955864b772f661f1968b5b5581c9104b3
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 05fc0e885b598dbe0139adbcac13c7e6e9db51b7
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65203508"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820768"
 ---
 # <a name="list-requests"></a>列出请求
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "65203508"
 |:---|:---|
 |委派（工作或学校帐户）| DelegatedAdminRelationship.Read.All、DelegatedAdminRelationship.ReadWrite.All |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|Application| 不支持。 |
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -112,7 +112,7 @@ Content-Type: application/json
       "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
       "id": "ae5a6b9e-6355-43dd-b708-48486b69c3ff",
       "action": "lockForApproval",
-      "status": "complete",
+      "status": "succeeded",
       "createdDateTime": "2022-02-01T06:14:55.5398865Z",
       "lastModifiedDateTime": "2022-02-01T06:14:55.5398865Z"
     },

@@ -5,12 +5,12 @@ description: 获取一个 signIn 对象，该对象包含Azure Active Directory�
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: e3e2259e130bbc091d078cd86551fb62afb038bc
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: f6880fe40bc4560454b985f00bef03eec7891868
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848753"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820733"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -20,6 +20,8 @@ ms.locfileid: "64848753"
 
 获取一个 [signIn](../resources/signin.md) 对象，该对象包含租户的特定用户登录事件。 这包括要求用户输入用户名或密码的登录，以及会话令牌。
 
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,20 +30,20 @@ ms.locfileid: "64848753"
 |:--------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| Application | AuditLog.Read.All 和 Directory.Read.All | 
+| 应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
 
 > [!IMPORTANT]
 > 此 API 存在 [已知问题](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
-应用必须[正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)到Azure AD。
+应用必须 [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) 到 Azure AD。
 
-除了委派的权限外，已登录的用户还需要属于以下目录角色之一，这些角色允许他们读取登录报告。 若要详细了解目录角色，请参阅[Azure AD内置角色](/azure/active-directory/roles/permissions-reference)：
+除了委派的权限外，已登录的用户还需要属于以下目录角色之一，这些角色允许他们读取登录报告。 若要详细了解目录角色，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 全局读取者
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全信息读取者
++ 安全读取者
 
 ## <a name="http-request"></a>HTTP 请求
 

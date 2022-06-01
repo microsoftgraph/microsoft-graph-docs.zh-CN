@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: d76b36380c5cac12a3607e0475c3a57386e2f985
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ec5128ade8bd56526be0bbed3ee608d5c7fa9855
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128587"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821153"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 
@@ -23,11 +23,11 @@ ms.locfileid: "62128587"
 
 扩展插件中的数据可以是基元类型，也可以是基元类型数组。
 
-有关支持开放 [扩展](#permissions) 的资源列表，请参阅权限部分中的表。
+有关支持打开扩展的资源列表，请参阅“ [权限](#permissions) ”部分中的表。
 
 ## <a name="permissions"></a>权限
 
-根据创建扩展的资源以及请求的权限类型 (或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据已在其中创建扩展的资源以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最低特权。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -39,9 +39,9 @@ ms.locfileid: "62128587"
 | [邮件](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [组织](../resources/organization.md) | Organization.ReadWrite.All | 不支持 | Organization.ReadWrite.All |
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [任务列表](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 在请求中，标识资源实例，使用资源实例的 **extensions** 导航属性标识扩展插件，然后对此扩展插件实例执行 `PATCH`。
@@ -82,7 +82,7 @@ PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
 
 提供 [openTypeExtension](../resources/opentypeextension.md) 对象的 JSON 正文（具有以下所需的名称-值对）以及要更改或添加到该扩展中的任意定义数据。JSON 负载中的数据可以是基元或基元数组类型。
 
-| 名称       | 值 |
+| Name       | 值 |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |

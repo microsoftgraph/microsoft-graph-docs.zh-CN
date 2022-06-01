@@ -1,26 +1,29 @@
 ---
 title: 列出 signIn
-description: 介绍 Microsoft (中的 signIn) 实体Graph API。
+description: 介绍来自 Microsoft 图形 API的 signIn 资源 (实体) 的列表方法。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: f4e3f31e3a713d39129d99d726b6628b3d4e10dc
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 8348d19b8c9f15436bb09d8c34c6b0865aaf95f8
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629017"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819642"
 ---
 # <a name="list-signins"></a>列出 signIn
 
 命名空间：microsoft.graph
 
-检索租户的 Azure AD 用户登录信息。 本质上是交互式登录 (其中用户名/密码作为身份验证令牌) 且成功的联合登录当前包含在登录日志中。 
+检索租户的 Azure AD 用户登录信息。 以交互方式进行交互的登录 (其中，用户名/密码作为身份验证令牌) 的一部分传递，并且成功的联合登录当前包含在登录日志中。 
 
-最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有 Azure Active Directory 中发生的登录事件 (Azure AD) [保留](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) 期才可用。
+最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有在Azure Active Directory (Azure AD) [默认保留期](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)内发生的登录事件才可用。
 
-## <a name="permissions"></a>Permissions
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
+
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,17 +34,17 @@ ms.locfileid: "64629017"
 |应用程序 | AuditLog.Read.All 和 Directory.Read.All  |
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 存在 [已知问题](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
-应用必须 [正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD。
+应用必须 [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) 到 Azure AD。
 
-除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
+除了委派的权限外，已登录的用户还需要属于以下目录角色之一，这些角色允许他们读取登录报告。 若要详细了解目录角色，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 全局读取者
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全信息读取者
++ 安全读取者
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +55,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 、 `$top`和 `$skiptoken``$filter` OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$top``$skiptoken`OData 查询参数，`$filter`以帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="response"></a>响应
 
@@ -186,7 +189,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>示例 2：检索 appDisplayName 以"Graph"开头的应用的前 10 个登录
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>示例 2：使用以“Graph”开头的 appDisplayName 检索对应用的前 10 个登录
 
 #### <a name="request"></a>请求
 
@@ -230,7 +233,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 该响应包含 `@odata.nextLink` 一个属性，其中包含可用于检索接下来的 10 个结果的 URL。
+下面是一个响应示例。 响应包含一个 `@odata.nextLink` 属性，其中包含可用于检索接下来 10 个结果的 URL。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {

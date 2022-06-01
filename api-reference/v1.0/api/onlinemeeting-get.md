@@ -5,25 +5,25 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b4f8d978196b07ba0b6945377e90bbed3bd97245
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f96c7b413532f092b60ac684c79b4949622d3e50
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114704"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820862"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
 命名空间：microsoft.graph
 
-检索 [onlineMeeting 对象的属性和](../resources/onlinemeeting.md) 关系。
+检索 [onlineMeeting](../resources/onlinemeeting.md) 对象的属性和关系。
 
 例如，你能够：
 
-- 使用[videoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)[会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或[joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取联机会议的详细信息。
-- 使用 路径获取活动Microsoft Teams下载链接的形式，如示例 `/attendeeReport` [4 所示](#example-4-fetch-attendee-report-of-a-teams-live-event)。 [](/microsoftteams/teams-live-events/what-are-teams-live-events)
+- 使用 [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)、 [会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id) 或 [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl) 获取联机会议的详细信息。
+- `/attendeeReport`使用路径以下载链接的形式获取[Microsoft Teams直播活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告，如[示例 4](#example-4-fetch-attendee-report-of-a-teams-live-event) 所示。
 
-Teams事件参与者报告是联机会议项目。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
+Teams直播活动与会者报告是一个在线会议项目。 有关详细信息，请参阅 [联机会议项目和权限](/graph/cloud-communications-online-meeting-artifacts)。
 
 ## <a name="permissions"></a>权限
 
@@ -35,33 +35,33 @@ Teams事件参与者报告是联机会议项目。 有关详细信息，请参�
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
 | 应用程序                            | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用，以代表该用户 (代表该用户获取联机会议和/或联机会议项目，请求路径) 中指定了用户 ID。
+若要对此 API 使用应用程序权限，租户管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy) 并将其授予用户授权策略中配置的应用，以便代表该用户 (使用请求路径) 中指定的用户 ID 提取联机会议和/或联机会议项目。
 
 > [!IMPORTANT]
-> 如果您提取联机会议项目并且没有联机会议项目，则仅需要 _OnlineMeetingArtifact.Read.All_ 权限。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
+> 如果提取联机会议项目，并且没有联机会议项目，则仅需要 _OnlineMeetingArtifact.Read.All_ 权限。 有关详细信息，请参阅 [联机会议项目和权限](/graph/cloud-communications-online-meeting-artifacts)。
 
 ## <a name="http-request"></a>HTTP 请求
-若要使用具有委派权限的会议 ID 获取 **onlineMeeting， ()** `/me` 应用 () `/users/{userId}` 权限：
+若要使用具有委派 () 和应用`/users/{userId}` (`/me`) 权限的会议 ID 获取 **onlineMeeting**：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-若要使用具有应用权限 **的 videoTeleconferenceId** 获取 **onlineMeeting*：**
+若要使用具有应用权限的 **videoTeleconferenceId** 获取 **onlineMeeting***：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-若要使用具有委派权限和应用权限的 **joinWebUrl** 获取 **onlineMeeting：**
+若要使用具有委派权限和应用权限的 **joinWebUrl** 获取 **onlineMeeting**：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-若要获取具有委派Teams实时事件的[](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告 () `/me` 应用 () `/users/{userId}` 权限：
+若要获取具有委派[ () 和应用的Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) `/me` 实时活动的与会者报告 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -70,11 +70,11 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
 > [!NOTE]
-> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
-> - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
-> - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关详细信息，请参阅 [VTC 会议 ID](/microsoftteams/cloud-video-interop-for-teams-set-up)。
+> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> - `meetingId`是 [onlineMeeting](../resources/onlinemeeting.md) 对象的 **ID**。
+> - **videoTeleconferenceId** 是为 Cloud-Video-Interop 许可用户生成的，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关详细信息，请参阅 [VTC 会议 ID](/microsoftteams/cloud-video-interop-for-teams-set-up)。
 > - \* 此方案仅支持应用程序令牌，不支持应用程序访问策略。
-> - `joinWebUrl` 必须经过 URL 编码。
+> - `joinWebUrl` 必须对 URL 进行编码。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -92,16 +92,16 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 响应代码。 该响应还包括下列内容之一：
+如果成功，此方法返回 `200 OK` 响应代码。 响应还包括下列操作之一：
 
-- 如果通过会议 ID 获取联机会议，此方法在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
-- 如果通过 **videoTeleconferenceId** 或 **joinWebUrl** 提取联机会议，此方法将返回响应正文中仅包含 [一个 onlineMeeting](../resources/onlinemeeting.md) 对象的集合。
-- 如果获取活动实时事件的Teams[报告](/microsoftteams/teams-live-events/what-are-teams-live-events)，此方法将返回一个标头，指示与会者报告的 `Location` URI。
+- 如果按会议 ID 提取联机会议，此方法会在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+- 如果通过 **videoTeleconferenceId** 或 **joinWebUrl** 提取联机会议，此方法将返回一个集合，该集合在响应正文中只包含一个 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+- 如果提取[Teams直播活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告，此方法将返回一个`Location`标头，该标头指示与会者报表的 URI。
 
 ## <a name="examples"></a>示例
 
 > [!NOTE]
-> 为了可读性，已缩短以下示例的响应对象。 所有属性都将通过实际调用返回。
+> 为了实现可读性，已缩短以下示例的响应对象。 所有属性都将通过实际调用返回。
 
 ### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>示例 1：通过 videoTeleconferenceId 检索联机会议
 
@@ -220,19 +220,19 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：按会议 ID 检索联机会议
-可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中会提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
+### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：通过会议 ID 检索联机会议
+可以通过包含用户或应用程序令牌的会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md) 时，会在响应对象中提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，应用程序首先使用图形 API创建联机会议，然后以单独的操作方式检索会议信息。
 
 #### <a name="request"></a>请求
 
-> **注意：** 为了可读性，会议 ID 已被截断。
+> **注意：** 为了实现可读性，会议 ID 已被截断。
 
 以下请求使用用户令牌。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "get-onlinemeeting-user-token"} -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onlinemeeting-user-token-csharp-snippets.md)]
@@ -261,10 +261,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 ---
 
 
-以下请求使用应用程序令牌。
+以下请求使用应用令牌。
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
+GET https://graph.microsoft.com/v1.0/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 
 #### <a name="response"></a>响应
@@ -313,20 +313,20 @@ Content-Type: application/json
 ```
 
 ### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>示例 3：通过 joinWebUrl 检索联机会议
-您可以使用用户令牌或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的用例，例如，当用户在 Microsoft Teams 客户端) 中创建会议 (时，单独的应用程序需要检索会议详细信息作为后续操作。
+可以使用用户或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的用例，例如，当用户在Microsoft Teams客户端) 中创建会议 (时，单独的应用程序需要检索会议详细信息作为后续操作。
 
 #### <a name="request"></a>请求
 
 以下请求使用用户令牌。
 <!-- {"blockType": "request", "name": "get-onlinemeeting-joinurl-user-token"} -->
-```http
-GET https://graph.microsoft.com/v1/me/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
 ```
 
-以下请求使用应用程序令牌。
+以下请求使用应用令牌。
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
+GET https://graph.microsoft.com/v1.0/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
 ```
 
 #### <a name="response"></a>响应
@@ -378,9 +378,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>示例 4：获取实时事件的Teams报告
+### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>示例 4：获取Teams直播活动的与会者报告
 
-以下示例显示下载与会者报告的请求。
+以下示例演示下载与会者报表的请求。
 
 #### <a name="request"></a>请求
 
@@ -394,7 +394,7 @@ Content-Type: application/json
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-attendee-report-csharp-snippets.md)]
@@ -427,7 +427,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 <!-- { "blockType": "ignored" }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+GET https://graph.microsoft.com/v1.0/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
 ```
 
 #### <a name="response"></a>响应

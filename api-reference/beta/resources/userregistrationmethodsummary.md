@@ -1,16 +1,16 @@
 ---
 title: userRegistrationMethodSummary 资源类型
-description: 针对每种身份验证方法注册的用户数的摘要。
-author: danielwood95
-localization_priority: Normal
+description: 为每个身份验证方法注册的用户数的摘要。
+author: besiler
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 6ff9a079ddce0df5031eef2b1374ebb1d233d56d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e7c5288fb533f3b97ea5c69d7916e3cd3bc33d50
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132917"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820026"
 ---
 # <a name="userregistrationmethodsummary-resource-type"></a>userRegistrationMethodSummary 资源类型
 
@@ -18,20 +18,20 @@ ms.locfileid: "50132917"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-针对每种身份验证方法注册的用户数的摘要。
+为每个身份验证方法注册的用户数的摘要。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [usersRegisteredByMethod](../api/authenticationmethodsroot-usersregisteredbymethod.md) | userRegistrationMethodSummary | 获取每个身份验证方法注册的用户数。 |
+| [usersRegisteredByMethod](../api/authenticationmethodsroot-usersregisteredbymethod.md) | userRegistrationMethodSummary | 获取为每个身份验证方法注册的用户数。 |
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |totalUserCount|Int64|租户中的用户总数。|
-|userRegistrationMethodCounts|[userRegistrationMethodCount](../resources/userregistrationmethodcount.md) 集合|为每种身份验证方法注册的用户数。|
-|userRoles|includedUserRoles|用户角色类型。 可取值为：`all`、`privilegedAdmin`、`admin`、`user`。|
+|userRegistrationMethodCounts|[userRegistrationMethodCount](../resources/userregistrationmethodcount.md) 集合|为每个身份验证方法注册的用户数。|
+|userRoles|includedUserRoles|用户角色类型。 可能的值是：`all`、`privilegedAdmin`、`admin`、`user`。|
 |userTypes|includedUserTypes|用户类型。 可取值为：`all`、`member`、`guest`。|
 
 该值 `privilegedAdmin` 由以下特权管理员角色组成：

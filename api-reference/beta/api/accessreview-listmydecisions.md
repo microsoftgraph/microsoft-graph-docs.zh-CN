@@ -1,18 +1,18 @@
 ---
-title: 列出我的 accessReview 决策
+title: '列出我的 accessReview 决策 (已弃用) '
 description: 在 Azure AD 访问评审功能中，检索调用用户作为审阅者的 accessReview 对象的决策。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 60e70fb24ec64648bc273a68dc0b640ad7865be5
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 0a7c60cb53c6232240a8786a19e8a9c97add990d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314483"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819125"
 ---
-# <a name="list-my-accessreview-decisions"></a>列出我的 accessReview 决策
+# <a name="list-my-accessreview-decisions-deprecated"></a>列出我的 accessReview 决策 (已弃用) 
 
 命名空间：microsoft.graph
 

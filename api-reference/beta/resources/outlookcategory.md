@@ -1,16 +1,16 @@
 ---
 title: outlookCategory 资源类型
-description: 表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 在 Outlook 中，用户在主列表中定义类别，并可以应用其中一个或多个用户定义的类别
-localization_priority: Normal
+description: 表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 在Outlook中，用户定义主列表中的类别，并可以应用其中一个或多个用户定义的类别
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fbaa5b6387cfdb869c7e71693a5ef4ae722ca68e
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: f88c5df573e52e852311f71eb08781cd8061d503
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293090"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820922"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory 资源类型
 
@@ -20,10 +20,10 @@ ms.locfileid: "50293090"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 在 Outlook 中，用户在主列表中定义类别，并且可以将这些用户定义的一个或多个类别应用于项目。 
+表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 在Outlook中，用户定义主列表中的类别，并且可以将其中一个或多个用户定义的类别应用于项。 
 
 使用 REST API，可以在用户类别的主列表中[创建](../api/outlookuser-post-mastercategories.md)和定义类别。 还可以[获取主类别列表](../api/outlookuser-list-mastercategories.md)、[获取特定类别](../api/outlookcategory-get.md)、[更新](../api/outlookcategory-update.md)与类别相关联的颜色，或[删除](../api/outlookcategory-delete.md)类别。 可以通过将类别的 **displayName** 属性分配给项目的 **categories** 集合，将类别应用到项目。
-可分配类别的资源包括[联系人](contact.md)、[事件](event.md)、[消息](message.md)[、outlookTask](outlooktask.md)和[帖子](post.md)。   
+可分配类别的资源包括[联系人](contact.md)、[事件](event.md)、[消息](message.md)、[outlookTask](outlooktask.md)、[帖子](post.md) 和 [todoTask](todotask.md)。   
 
 每个类别都有 2 个属性：**displayName** 和 **color**。 **displayName** 值在用户的主列表中必须是唯一的。 然而，**color** 不一定是唯一的；主列表中的多个类别可以映射到相同颜色。 可以在用户的主列表中将多达 25 种不同的颜色映射到类别。
 

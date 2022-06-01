@@ -1,23 +1,23 @@
 ---
 title: authenticationMethodsRoot： usersRegisteredByFeature
-description: 获取能够进行多重身份验证、自助服务密码重置和无密码身份验证的用户数。
-author: danielwood95
-localization_priority: Normal
+description: 获取能够进行多重身份验证、自助密码重置和无密码身份验证的用户数。
+author: besiler
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 874b8cd14f663913c89dbfba1e48900a14274b9f
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 2ce9fe387526d4f0762ffebc282ec4e6b3a4eb56
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384096"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820691"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbyfeature"></a>authenticationMethodsRoot： usersRegisteredByFeature
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取能够进行多重身份验证、自助服务密码重置和无密码身份验证的用户数。
+获取能够进行多重身份验证、自助密码重置和无密码身份验证的用户数。
 
 ## <a name="permissions"></a>权限
 以下权限需要调用此 API。要了解详细信息，包括如何选择权限，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "58384096"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
-若要访问 API， [需要以下角色之](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 一：
+若要访问 API，需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) ：
 
 * 报表读取者
 * 安全读者
@@ -52,9 +52,9 @@ GET /reports/authenticationMethods/usersRegisteredByFeature
 |参数|类型|说明|
 |:---|:---|:---|
 |includedUserTypes|includedUserTypes|用户类型。 可取值为：`all`、`member`、`guest`。|
-|includedUserRoles|includedUserRoles|用户角色类型。 可取值为：`all`、`privilegedAdmin`、`admin`、`user`。|
+|includedUserRoles|includedUserRoles|用户角色类型。 可能的值是：`all`、`privilegedAdmin`、`admin`、`user`。|
 
-值 `privilegedAdmin` 由以下特权管理员角色组成：
+该值 `privilegedAdmin` 由以下特权管理员角色组成：
 
 * 全局管理员
 * 安全管理员
@@ -66,9 +66,9 @@ GET /reports/authenticationMethods/usersRegisteredByFeature
 * 用户管理员
 * 身份验证管理员
 
-值 `admin` 包括所有 Azure AD 管理员角色。 
+该值 `admin` 包括所有 Azure AD 管理员角色。 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -78,7 +78,7 @@ GET /reports/authenticationMethods/usersRegisteredByFeature
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [userRegistrationFeatureSummary。](../resources/userregistrationfeaturesummary.md)
+如果成功，此函数在响应正文中返回 `200 OK` 响应代码和 [userRegistrationFeatureSummary](../resources/userregistrationfeaturesummary.md) 。
 
 ## <a name="examples"></a>示例
 

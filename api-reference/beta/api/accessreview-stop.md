@@ -1,18 +1,18 @@
 ---
-title: Stop accessReview
-description: 在Azure AD访问评审功能中，停止当前处于活动状态的 accessReview。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。   (若要阻止定期访问评审启动将来的实例，请更新该检查以更改其计划的结束日期) 。  在访问评审停止后，审阅者无法再提供输入，并且可以应用访问评审决策。
+title: '停止 accessReview (已弃用) '
+description: 在 Azure AD 访问评审功能中，停止当前活动的 accessReview。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。   (若要防止定期访问评审启动将来的实例，请将其更新为更改计划的结束日期) 。  访问评审停止后，审阅者将无法再提供输入，并且可以应用访问评审决策。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9e38afea02221d670812932efead6f05ca219d21
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 13a522a327d9067d5e5c8a9c5c6ae755a3d38f10
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340631"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819141"
 ---
-# <a name="stop-accessreview"></a>Stop accessReview
+# <a name="stop-accessreview-deprecated"></a>停止 accessReview (已弃用) 
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "62340631"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-在Azure AD[检查功能](../resources/accessreviews-root.md)中，停止当前处于活动状态[的 accessReview](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。   (若要阻止定期访问评审启动将来的实例，请更新该检查以更改[](accessreview-update.md)其计划的结束日期) 。  在访问评审停止后，审阅者无法再提供输入，并且可以应用访问评审决策。
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，停止当前活动的 [accessReview](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。   (若要防止定期访问评审启动将来的实例， [请将其更新](accessreview-update.md) 为更改计划的结束日期) 。  访问评审停止后，审阅者将无法再提供输入，并且可以应用访问评审决策。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

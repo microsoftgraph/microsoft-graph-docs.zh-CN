@@ -1,18 +1,18 @@
 ---
-title: 删除 programControl
-description: 在Azure AD访问评审功能中，删除 programControl 对象。  这会将访问评审与计划取消链接。
+title: '删除已弃用的 programControl () '
+description: 在 Azure AD 访问评审功能中，删除 programControl 对象。  这会取消链接来自程序的访问评审。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: d593f6961b470874576e8ff266fabe85a9441723
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 646e194bead131a40f6fbdbd57ac509e61e4f3cc
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63396313"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820446"
 ---
-# <a name="delete-programcontrol"></a>删除 programControl
+# <a name="delete-programcontrol-deprecated"></a>删除已弃用的 programControl () 
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "63396313"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，删除 [programControl](../resources/programcontrol.md) 对象。  这会将访问评审与计划取消链接。
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，删除 [programControl](../resources/programcontrol.md) 对象。  这会取消链接来自程序的访问评审。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "63396313"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | ProgramControl.ReadWrite.All  |
 
-登录用户还必须在允许其删除 的目录角色中 `programControl`。
+已登录的用户还必须具有允许其删除 `programControl`的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

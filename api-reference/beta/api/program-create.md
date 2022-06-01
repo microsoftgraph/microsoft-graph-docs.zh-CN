@@ -1,18 +1,18 @@
 ---
-title: 创建程序
+title: '创建已弃用的程序 () '
 description: 在 Azure AD 访问评审功能中，创建一个新的程序对象。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: aa1ac48fb85b2c20d40b9b211d17183a6a78ab65
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 15a74a350d62e31976e62f00726b2aea8f558aed
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65315278"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820964"
 ---
-# <a name="create-program"></a>创建程序
+# <a name="create-program-deprecated"></a>创建已弃用的程序 () 
 
 命名空间：microsoft.graph
 

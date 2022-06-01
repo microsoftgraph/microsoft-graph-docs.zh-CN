@@ -5,18 +5,20 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: e0e11621f10ce5e137b1f90f4e3d53287978e182
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: acd04e9d1bd24bcd87228a8b29c1f9154f02c5d9
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089866"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820747"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
 通过请求正文中的属性更新开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象）：
 
@@ -25,14 +27,16 @@ ms.locfileid: "62089866"
 
 扩展插件中的数据可以是基元类型，也可以是基元类型数组。
 
-有关支持开放 [扩展](#permissions) 的资源列表，请参阅权限部分中的表。
+有关支持打开扩展的资源列表，请参阅“ [权限](#permissions) ”部分中的表。
 
 ## <a name="permissions"></a>权限
 
-根据创建扩展的资源以及请求的权限 (或应用程序) ，下表中指定的权限是调用此 API 所需的最低特权。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据已在其中创建扩展的资源以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最低特权。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
+| [baseTask](../resources/basetask.md) (已弃用)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
+| [baseTasklist](../resources/basetasklist.md) (已弃用)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 | [设备](../resources/device.md) | Directory.AccessAsUser.All | 不支持 | Device.ReadWrite.All |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [组](../resources/group.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
@@ -41,9 +45,9 @@ ms.locfileid: "62089866"
 | [邮件](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [组织](../resources/organization.md) | Organization.ReadWrite.All | 不支持 | Organization.ReadWrite.All |
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
+| [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [任务列表](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,8 +65,10 @@ PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 PATCH /organization/{Id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-PATCH /users/me/tasks/lists/{baseTaskListId}/tasks/{taskId}/extensions/{extensionId}
-PATCH /users/me/tasks/lists/{baseTaskListId}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{Id}/tasks/{Id}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{Id}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{Id}/tasks/{Id}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{Id}/extensions/{extensionId}
 ```
 
 >**注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中更新一个扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式在其中更新开放扩展。
@@ -85,7 +91,7 @@ PATCH /users/me/tasks/lists/{baseTaskListId}/extensions/{extensionId}
 
 提供 [openTypeExtension](../resources/opentypeextension.md) 对象的 JSON 正文（具有以下所需的名称-值对）以及要更改或添加到该扩展中的任意定义数据。JSON 负载中的数据可以是基元或基元数组类型。
 
-| 名称       | 值 |
+| Name       | 值 |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |

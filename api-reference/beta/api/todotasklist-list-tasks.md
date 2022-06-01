@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cc4af2698729827cbbc5c65c3bf82169ed8e05d1
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: ce54c12b6b23d8d35610b1826844d0d76717300f
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365027"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820824"
 ---
 # <a name="list-tasks"></a>列出任务
 命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -116,6 +116,10 @@ Content-Type: application/json
          "title":"Linked entity new task 1",
          "createdDateTime":"2020-07-08T11:15:19.9359889Z",
          "lastModifiedDateTime":"2020-07-08T11:15:20.0614375Z",
+          "categories": [
+               "Important",
+               "Urgent"
+            ],
          "id":"AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD",
          "body":{
             "content":"",

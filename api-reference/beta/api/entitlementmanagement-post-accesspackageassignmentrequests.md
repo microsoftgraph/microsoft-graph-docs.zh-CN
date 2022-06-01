@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e266fd6e67c51c7de27341a1880e65d090cc00aa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1018bedc70bf164698aba075b4a8b921a49e7a6e
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129848"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820810"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>创建 accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "62129848"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD管理](../resources/entitlementmanagement-overview.md)中，创建新的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象。  此操作用于将用户分配给访问包或删除访问包分配。
+在 [Azure AD 权利管理](../resources/entitlementmanagement-overview.md)中，创建新的 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象。  此操作用于将用户分配到访问包或删除访问包分配。
 
 ## <a name="permissions"></a>权限
 
@@ -42,32 +42,32 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。必需。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 | Content-Type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象的 JSON 表示形式。
 
-对于请求为用户创建工作分配的管理员 **，requestType** 属性的值为 ，accessPackageAssignment 属性包含要分配的用户的 、标识 `AdminAdd`  `targetId` [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)的 **assignmentPolicyId** 属性和标识 accessPackage 的 **accessPackageId**[](../resources/accesspackage.md)属性。
+对于请求为用户创建分配的管理员，**requestType** 属性的值为 `AdminAdd`**accessPackageAssignment** 属性包含`targetId`所分配用户的值、标识 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 的 **assignmentPolicyId** 属性以及标识 [accessPackage](../resources/accesspackage.md) 的 **accessPackageId** 属性。
 
-对于请求删除分配的管理员 **，requestType** 属性的值为 `AdminRemove` **，accessPackageAssignment** 属性包含标识要删除的 [accessPackageAssignment](../resources/accesspackageassignment.md)的 **id** 属性。
+对于请求删除分配的管理员，**requestType** 属性的值为`AdminRemove`**，accessPackageAssignment** 属性包含标识要删除 [的 accessPackageAssignment](../resources/accesspackageassignment.md) 的 **ID** 属性。
 
-对于非管理员用户请求为第一个分配或续订分配创建自己的工作分配 **，requestType** 属性的值为 `UserAdd` 。 **accessPackageAssignment** 属性包含 `targetId` 用户的 `id` 。 **assignmentPolicyId** 属性标识 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。 **accessPackageId** 属性标识 [accessPackage](../resources/accesspackage.md)。 提出请求的用户必须已存在于 目录中。
+对于非管理员用户请求为第一个分配或续订分配创建自己的分配， **requestType** 属性的值为 `UserAdd`。 **accessPackageAssignment** 属性包含`targetId``id`用户的属性。 **assignmentPolicyId** 属性标识 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。 **accessPackageId** 属性标识 [accessPackage](../resources/accesspackage.md)。 发出请求的用户必须已存在于目录中。
 
-对于非管理员用户请求扩展其自己的分配 **，requestType** 属性的值为 `UserExtend` 。 **accessPackageAssignment** 属性包含 `targetId` 用户的 `id` 。 **assignmentPolicyId** 属性标识 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。 **accessPackageId** 属性标识 [accessPackage](../resources/accesspackage.md)。 提出请求的用户必须已存在于 目录中。
+对于要请求扩展其自身分配的非管理员用户， **requestType** 属性的值为 `UserExtend`。 **accessPackageAssignment** 属性包含`targetId``id`用户的属性。 **assignmentPolicyId** 属性标识 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。 **accessPackageId** 属性标识 [accessPackage](../resources/accesspackage.md)。 发出请求的用户必须已存在于目录中。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 200 系列响应代码和新 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象。  
+如果成功，此方法在响应正文中返回 200 系列响应代码和新的 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象。  
 
-如果这是请求，则随后会 `AdminAdd` [创建 accessPackageAssignment，](../resources/accesspackageassignment.md)如果需要，还会创建[accessPackageSubject。](../resources/accesspackagesubject.md) 在列出 [accessPackageAssignments](entitlementmanagement-list-accesspackageassignments.md)时，可以使用查询参数查找这些参数。
+如果这是请求 `AdminAdd` ，则随后会创建 [accessPackageAssignment](../resources/accesspackageassignment.md) ，如果需要，还会创建 [accessPackageSubject](../resources/accesspackagesubject.md) 。 列出 [accessPackageAssignments](entitlementmanagement-list-accesspackageassignments.md) 时，可以查找使用查询参数的用户。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-admin-requests-a-direct-assignment-for-a-user-already-in-the-directory"></a>示例 1：管理员为目录中已有的用户请求直接分配
+### <a name="example-1-admin-requests-a-direct-assignment-for-a-user-already-in-the-directory"></a>示例 1：管理员为已在目录中的用户请求直接分配
 #### <a name="request"></a>请求
 
-下面是直接分配请求的一个示例，其中管理员请求为用户创建工作分配。 由于 [accessPackageSubject](../resources/accesspackagesubject.md) 可能尚不存在 **，targetID** 的值是所分配用户的对象 **ID，accessPackageId** 的值是该用户所需的访问包 **，assignmentPolicyId** 的值是该访问包中的直接分配策略。
+下面是直接分配请求的示例，管理员在其中请求为用户创建分配。 由于 [accessPackageSubject](../resources/accesspackagesubject.md) 可能尚不存在， **因此 targetID** 的值是所分配用户的对象 ID， **accessPackageId** 的值是该用户所需的访问包， **assignmentPolicyId** 的值是该访问包中的直接分配策略。
  
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -142,10 +142,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>示例 2：用户请求程序包并回答需要审批的问题
+### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>示例 2：用户请求包并回答审批问题
 #### <a name="request"></a>请求
 
-下面是请求的一个示例，请求者向审批者提供了答案以帮助他们做出决策。
+下面是请求的示例，请求者向审批者提供了答案，以帮助他们做出决策。
  
 
 
@@ -317,7 +317,7 @@ Content-type: application/json
 ### <a name="example-3-request-a-package-and-provide-a-justification"></a>示例 3：请求包并提供理由
 #### <a name="request"></a>请求
 
-以下示例演示如何请求访问包并为审批者提供理由。
+以下示例演示如何请求访问包并向审批者提供理由。
  
 
 
@@ -376,16 +376,16 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-remove-an-assignment"></a>示例 4：删除工作分配
+### <a name="example-4-remove-an-assignment"></a>示例 4：删除分配
 
-若要删除分配，请创建具有以下设置的新 accessPackageAssignmentRequest 对象：
+若要删除分配，请使用以下设置创建新的 accessPackageAssignmentRequest 对象：
 
-+ **requestType** 属性的值设置为 `AdminRemove` 。
-+ 在 accessPackageAssignment 属性中，包括一个包含要删除的 accessPackageAssignment 对象的标识符的列表。
++ **requestType** 属性设置为`AdminRemove`的值 。
++ 在 accessPackageAssignment 属性中，包含一个对象，其中包含要删除的 accessPackageAssignment 对象的标识符。
 
 #### <a name="request"></a>请求
 
-以下示例演示如何删除工作分配。
+以下示例演示如何删除分配。
 
 
 <!-- {
@@ -431,10 +431,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-admin-requests-a-direct-assignment-for-a-user-not-yet-in-the-directory"></a>示例 5：管理员请求对目录中尚不存在的用户进行直接分配
+### <a name="example-5-admin-requests-a-direct-assignment-for-a-user-not-yet-in-the-directory"></a>示例 5：管理员为尚未在目录中的用户请求直接分配
 #### <a name="request"></a>请求
 
-下面是直接分配请求的一个示例，其中管理员请求为目录中不存在的用户创建一个工作分配。 **accessPackageId** 的值是该用户所需的访问包 **，assignmentPolicyId** 的值是该访问包中的直接分配策略。
+下面是针对目录中不存在的用户请求直接分配的示例，管理员请求为用户创建分配。 **accessPackageId** 的值是该用户所需的访问包，**assignmentPolicyId** 的值是该访问包中的直接分配策略。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,16 +1,16 @@
 ---
 title: 更新 plannerPlan
-description: 更新 **plannerPlan 对象** 的属性。
+description: 更新 **plannerPlan** 对象的属性。
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: df853231704a3922c420fa2b0ddac79c5b0637bd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9275c8ef3afadbde73bf986b630aa0314af8656f
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133110"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820904"
 ---
 # <a name="update-plannerplan"></a>更新 plannerPlan
 
@@ -18,7 +18,7 @@ ms.locfileid: "62133110"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 **plannerPlan 对象** 的属性。
+更新 **plannerPlan** 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,9 +45,13 @@ PATCH /planner/plans/{plan-id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
+| 属性     | 类型   |说明|
+|:---------------|:--------|:----------|
+|title|String|计划的标题。|
+
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定具有首选项的标头，则此方法在响应正文中返回 响应代码和更新的 `Prefer` `return=representation` `200 OK` [plannerPlan](../resources/plannerplan.md) 对象。
+如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定 `Prefer` 具有首选项的标 `return=representation` 头，则此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerPlan](../resources/plannerplan.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 

@@ -5,12 +5,12 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc0135fcbd7508a435e562c4b2c96cf68da09124
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: abb6d745a30274eda5ec17fa0075315633830b67
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695679"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819834"
 ---
 # <a name="teamwork-sendactivitynotificationtorecipients"></a>teamwork： sendActivityNotificationToRecipients
 
@@ -30,7 +30,7 @@ ms.locfileid: "65695679"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | TeamsActivity.Send                          |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用                            | TeamsActivity.Send                          |
+| 应用程序                            | TeamsActivity.Send                          |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ POST /teamwork/sendActivityNotificationToRecipients
 
 下表显示了可用于此操作的参数。
 
-| 参数          | 类型                                                         | 描述                                                  |
+| 参数          | 类型                                                         | 说明                                                  |
 | :----------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | topic              | [teamworkActivityTopic](../resources/teamworkactivitytopic.md) | 通知的主题。 指定正在讨论的资源。 |
 | activityType       | String                                                       | 活动类型。 必须在[Teams应用清单](/microsoftteams/platform/overview)中声明这一点。 |
@@ -83,6 +83,8 @@ POST /teamwork/sendActivityNotificationToRecipients
 #### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamwork_sendactivitynotificationtorecipients_1"
@@ -124,6 +126,24 @@ Content-Type: application/json
     ] 
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-sendactivitynotificationtorecipients-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/teamwork-sendactivitynotificationtorecipients-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/teamwork-sendactivitynotificationtorecipients-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -143,6 +163,8 @@ HTTP/1.1 202 Accepted
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamwork_sendactivitynotificationtorecipients_2"
@@ -185,6 +207,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-sendactivitynotificationtorecipients-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/teamwork-sendactivitynotificationtorecipients-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/teamwork-sendactivitynotificationtorecipients-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

@@ -1,18 +1,18 @@
 ---
-title: 列出 programControlTypes
+title: '列出已弃用的 programControlTypes () '
 description: 在 Azure AD 访问评审功能中，列出所有 programControlType 对象。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 69596e18a015c6b8528648f7165894f6244f43c1
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: a97e7430f2b40d29e81a9fda1f83ad34dc618711
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65315341"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821223"
 ---
-# <a name="list-programcontroltypes"></a>列出 programControlTypes
+# <a name="list-programcontroltypes-deprecated"></a>列出已弃用的 programControlTypes () 
 
 命名空间：microsoft.graph
 

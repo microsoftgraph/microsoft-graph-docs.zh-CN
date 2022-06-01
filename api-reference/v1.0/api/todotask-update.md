@@ -5,17 +5,17 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 27efc8b0f8f02170dac49405128ed12da9e9afe3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 39c71639e061e0faa61437ebb1705a4ae91750da
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110477"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820775"
 ---
 # <a name="update-todotask"></a>更新 todoTask
 命名空间：microsoft.graph
 
-更新 [todoTask 对象](../resources/todotask.md) 的属性。
+更新 [todoTask](../resources/todotask.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,15 +46,16 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [todoTask](../resources/todotask.md) 对象的 JSON 表示形式。
 
-下表显示创建 [todoTask 时所需的属性](../resources/todotask.md)。
+下表显示了创建 [todoTask](../resources/todotask.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|任务的唯一标识符。 继承自 [实体](../resources/entity.md)|
 |body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
+|类别|String 集合|与任务关联的类别。 每个类别对应于用户定义的 [outlookCategory](../resources/outlookcategory.md) 的 **displayName** 属性。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区内完成任务的日期。|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内完成任务的日期。|
-|importance|importance|事件的重要性。可能的值为： `low`、 `normal`、 `high`。|
+|importance|importance|事件的重要性。 可取值为：`low`、`normal`、`high`。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
@@ -68,7 +69,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [todoTask](../resources/todotask.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [todoTask](../resources/todotask.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -143,6 +144,7 @@ Content-Type: application/json
     "title": "Shop for dinner",
     "createdDateTime": "2020-07-22T10:39:03.7937971Z",
     "lastModifiedDateTime": "2020-07-22T12:02:10.8835421Z",
+    "categories": [],
     "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
     "body": {
         "content": "",

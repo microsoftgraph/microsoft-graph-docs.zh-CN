@@ -1,18 +1,18 @@
 ---
-title: 更新程序
-description: 在Azure AD访问评审功能中，更新现有程序对象。
+title: '更新程序 (已弃用) '
+description: 在 Azure AD 访问评审功能中，更新现有程序对象。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 0aaa99de12963528a5b0dc08c8556c5d632f4d30
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: ba710e22bc40300513bed7c31cacf47213dc3b14
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63398028"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820880"
 ---
-# <a name="update-program"></a>更新程序
+# <a name="update-program-deprecated"></a>更新程序 (已弃用) 
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "63398028"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，更新现有[程序](../resources/program.md)对象。
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，更新现有 [程序](../resources/program.md) 对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "63398028"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
-登录用户还必须具有允许其更新程序的目录角色。
+已登录的用户还必须具有允许他们更新程序的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,9 +43,9 @@ PATCH /programs/{programId}
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 program 对象的 JSON [表示](../resources/program.md) 形式。
+在请求正文中，提供 [程序](../resources/program.md) 对象的 JSON 表示形式。
 
-下表显示更新程序时提供的属性。
+下表显示了更新程序时可以提供的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -54,11 +54,11 @@ PATCH /programs/{programId}
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `204, Accepted` 正文中返回 响应代码和 [program](../resources/program.md) 对象。
+如果成功，此方法在响应正文中返回 `204, Accepted` 响应代码和 [程序](../resources/program.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中，提供要更改 [的 program](../resources/program.md) 对象参数的 JSON 表示形式。
+在请求正文中，提供要更改的 [程序](../resources/program.md) 对象参数的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

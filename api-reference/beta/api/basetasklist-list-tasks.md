@@ -5,19 +5,21 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 84128000fb785e9d5d572de5e81b8d0b8d71b308
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 356a59cb3804a7ae5ca27b5b382c59c0228b7c14
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451380"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820684"
 ---
-# <a name="list-basetasks"></a>列出 baseTasks
+# <a name="list-basetasks-deprecated"></a>列出已弃用的 baseTasks () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [特定 baseTaskList](../resources/basetask.md) 的任务导航属性获取 [baseTask 资源](../resources/basetasklist.md)。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+从特定 [baseTaskList](../resources/basetasklist.md) 的任务导航属性获取 [baseTask](../resources/basetask.md) 资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,7 +42,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$expand`使用 和 `$filter` `$top`  [OData 查询参数](/graph/query-parameters) 自定义响应。
+此方法支持 `$expand``$filter` `$top`[OData 查询参数](/graph/query-parameters)自定义响应。  
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +54,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [baseTask](../resources/basetask.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [baseTask](../resources/basetask.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

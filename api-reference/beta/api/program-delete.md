@@ -1,18 +1,18 @@
 ---
-title: 删除程序
-description: 在Azure AD访问评审功能中，删除程序对象。
+title: '删除程序 (已弃用) '
+description: 在 Azure AD 访问评审功能中，删除程序对象。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 2220f7dc45749723e813fdcd85a8313001ff1804
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 1ce817894608eb0833d687855d2bead42c126fa5
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63396761"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821104"
 ---
-# <a name="delete-program"></a>删除程序
+# <a name="delete-program-deprecated"></a>删除程序 (已弃用) 
 
 命名空间：microsoft.graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "63396761"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-在Azure AD[评审功能](../resources/accessreviews-root.md)中，删除[程序](../resources/program.md)对象。
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，删除 [程序](../resources/program.md) 对象。
 
-不要删除仍链接到 `programControl` 该程序的程序，应首先删除这些访问评审，或将其从该程序取消链接，并链接到其他程序。  此外，请注意，无法删除内置默认程序。
+请勿删除仍链接 `programControl` 到它的程序，应首先从程序中删除或取消链接这些访问评审，并将其链接到其他程序。  此外，请注意，无法删除内置默认程序。
 
 
 ## <a name="permissions"></a>权限
@@ -34,7 +34,7 @@ ms.locfileid: "63396761"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
-登录用户还必须具有允许其创建程序的目录角色。
+已登录的用户还必须具有允许他们创建程序的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

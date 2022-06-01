@@ -1,18 +1,18 @@
 ---
-title: 删除 accessReview 审阅者
-description: 删除访问评审审阅者。
+title: '删除 accessReview 审阅者 (已弃用) '
+description: 删除访问评审评审者。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e5bd42bf61f85a20b63462ce902809302d30dfd5
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: ca1c1eca841524963f79f05f8a70c1f7495e94d7
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63394171"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819158"
 ---
-# <a name="remove-accessreview-reviewer"></a>删除 accessReview 审阅者
+# <a name="remove-accessreview-reviewer-deprecated"></a>删除 accessReview 审阅者 (已弃用) 
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "63394171"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-在Azure AD[审阅](../resources/accessreviews-root.md)功能中，更新现有 [accessReview](../resources/accessreview.md) 对象以删除作为审阅者的用户。  仅允许对尚未完成的访问评审进行此操作，并且仅允许对明确指定审阅者的访问评审执行此操作。 不允许此操作进行访问评审，用户在此审阅自己的访问权限，并且不允许进行访问评审，其中组所有者被分配为审阅者。 
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，更新现有 [accessReview](../resources/accessreview.md) 对象以删除用户作为审阅者。  此操作仅适用于尚未完成的访问评审，并且仅允许在显式指定审阅者的访问评审中执行此操作。 此操作不允许用户在访问评审中审阅其自己的访问权限，并且不适用于将组所有者分配为审阅者的访问评审。 
 
 
 ## <a name="permissions"></a>权限
@@ -43,7 +43,7 @@ DELETE /accessReviews/{reviewId}/reviewers/{userId}
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-不应提供请求正文。
+不应提供任何请求正文。
 
 
 ## <a name="response"></a>响应
@@ -51,7 +51,7 @@ DELETE /accessReviews/{reviewId}/reviewers/{userId}
 
 ## <a name="example"></a>示例
 
-这是一个更新一次检查， (访问评审) 不必要的审阅者的示例。
+这是更新一次性 (不定期) 访问评审以删除不必要的审阅者的示例。
 
 
 ##### <a name="request"></a>请求

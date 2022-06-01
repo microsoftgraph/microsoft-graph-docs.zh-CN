@@ -5,18 +5,20 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 247795d16dadacdc5f88ffa45d03ffbb880e839e
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: fab76137d91db84b5034e6565676feb396045f18
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65364999"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820754"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
 获取用名称或完全限定的名称标识的开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象）。
 
@@ -26,9 +28,9 @@ ms.locfileid: "65364999"
 
 |**GET 应用场景**|**支持的资源**|**响应正文**|
 |:-----|:-----|:-----|
-|从已知资源实例中获取特定扩展。| [管理单元](../resources/administrativeunit.md)、[设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[消息](../resources/message.md)、[组织](../resources/organization.md)、[个人联系](../resources/contact.md)人、[用户](../resources/user.md)、[任务](../resources/basetask.md)、[任务列表](../resources/basetasklist.md)  | 仅开放扩展。|
-|获取一个通过特定扩展插件扩展的已知资源实例。|管理单元、设备、事件、组、组事件、组帖子、消息、组织、个人联系人、用户、任务、任务列表。 |一个通过开放扩展插件扩展的资源实例。|
-|查找并展开具有特定扩展的资源实例。 | 事件、组事件、组帖子、消息、个人联系人、任务、任务列表 |通过开放扩展展开的资源实例。|
+|从已知资源实例中获取特定扩展。| [管理单元](../resources/administrativeunit.md)，[baseTask](../resources/basetask.md) (已弃用) ，[baseTaskList](../resources/basetasklist.md) (已弃用) 、[设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[消息](../resources/message.md)、[组织](../resources/organization.md)、[个人联系](../resources/contact.md)人、[用户](../resources/user.md)、[todoTask](../resources/todotask.md)、[todoTaskList](../resources/todotasklist.md)  | 仅开放扩展。|
+|获取一个通过特定扩展插件扩展的已知资源实例。|管理单元、基任务、基任务列表、设备、事件、组、组事件、组帖子、消息、组织、个人联系人、用户、操作任务、操作任务列表。 |一个通过开放扩展插件扩展的资源实例。|
+|查找并展开具有特定扩展的资源实例。 | 基任务、基任务列表、事件、组事件、组帖子、消息、个人联系人、操作任务、操作任务列表 |通过开放扩展展开的资源实例。|
 
 ## <a name="permissions"></a>权限
 
@@ -36,17 +38,19 @@ ms.locfileid: "65364999"
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
+| [baseTask](../resources/basetask.md) (已弃用)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
+| [baseTaskList](../resources/basetasklist.md) (已弃用)   | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 | [设备](../resources/device.md) | Directory.Read.All | 不支持 | Device.ReadWrite.All |
-| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [组事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [组织](../resources/organization.md) | User.Read | 不支持 | Organization.Read.All |
 | [个人联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 | [用户](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [任务](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-| [任务列表](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -68,13 +72,15 @@ GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
 GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{taskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{todoTaskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{baseTaskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/extensions/{extensionId}
 ```
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>获取一个通过匹配的扩展插件扩展的已知资源实例 
 
-对于事件、组事件、组帖子、邮件、个人联系人、任务、任务列表资源类型，可使用与获取资源实例相同的 REST 请求，查找与其 **id** 属性上的筛选器匹配的扩展，然后使用此扩展来扩展实例。 该响应包括大部分资源属性。
+对于事件、组事件、组帖子、邮件、个人联系人、任务、任务列表资源类型，可使用与获取资源实例相同的 REST 请求，查找与其 **id** 属性的筛选器匹配的扩展，然后使用此扩展来扩展该实例。该响应包括大部分资源属性。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -83,7 +89,9 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/tasks/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
@@ -486,24 +494,14 @@ Content-Type: application/json
 
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
-# <a name="go"></a>[转到](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-opentypeextension-5-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response-5"></a>响应 5

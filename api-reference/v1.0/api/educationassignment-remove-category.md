@@ -1,22 +1,22 @@
 ---
 title: 删除 educationCategory
-description: 从此 educationAssignment 中删除现有 educationCategory
+description: 从此教育分配中删除现有 educationCategory。
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c457654c4ff05e90e0e75a27d0386302fff9a1cf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 78035badbf5e481f752a54874ac7769f594a9b82
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61337111"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820782"
 ---
 # <a name="remove-educationcategory"></a>删除 educationCategory
 
 命名空间：microsoft.graph
 
-从[educationAssignment](../resources/educationcategory.md)中删除[educationCategory。](../resources/educationassignment.md)
+从 [educationAssignment](../resources/educationassignment.md) 中删除 [educationCategory](../resources/educationcategory.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,10 +36,9 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+请勿为此方法提供请求正文。
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。
@@ -74,7 +73,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e
 [!INCLUDE [sample-code](../includes/snippets/java/add-educationcategory-to-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-educationcategory-to-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

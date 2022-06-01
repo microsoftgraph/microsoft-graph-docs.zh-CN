@@ -1,18 +1,18 @@
 ---
-title: 列出 businessFlowTemplates
+title: '列出已弃用 (businessFlowTemplates) '
 description: 在 Azure AD 访问评审功能中，列出所有 businessFlowTemplate 对象。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 150617d1035cf8036dc4424db5e48f38676f8127
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: da70173c081ee7546ed7ebe858763fd3f25f42e3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65315180"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821062"
 ---
-# <a name="list-businessflowtemplates"></a>列出 businessFlowTemplates
+# <a name="list-businessflowtemplates-deprecated"></a>列出已弃用 (businessFlowTemplates) 
 
 命名空间：microsoft.graph
 

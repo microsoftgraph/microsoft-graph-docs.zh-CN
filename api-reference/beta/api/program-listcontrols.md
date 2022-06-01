@@ -1,18 +1,18 @@
 ---
-title: 列出程序的 programControls
+title: '列出程序的 programControls (已弃用) '
 description: 在 Azure AD 访问评审功能中，列出链接到特定程序的所有 programControl 对象。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 2bcde8209a3abaa5af26f681f6427a07f2476aba
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 9c28d2666134268f9c5f76cedc807fb918f7c99a
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314184"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820929"
 ---
-# <a name="list-programcontrols-of-a-program"></a>列出程序的 programControls
+# <a name="list-programcontrols-of-a-program-deprecated"></a>列出程序的 programControls (已弃用) 
 
 命名空间：microsoft.graph
 

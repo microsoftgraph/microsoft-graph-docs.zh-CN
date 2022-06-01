@@ -1,24 +1,27 @@
 ---
 title: user： activateServicePlan
-description: 为给定用户和给定用户`servicePlanId``skuId`激活服务计划。
+description: 使用给定 `servicePlanId` 用户和 `skuId` 给定用户激活服务计划。
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4e39fc0f9c6d27c4c820c5fd10eb7e648ed07bba
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: b35b36a42c1c979dc777615d8f73012c47cab13d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62855159"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820670"
 ---
-# <a name="user-activateserviceplan"></a>user： activateServicePlan
+# <a name="user-activateserviceplan-deprecated"></a>user： activateServicePlan (已弃用) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为给定用户和给定用户`servicePlanId``skuId`激活服务计划。
+> [!CAUTION]
+> **activateServicePlan** API 已弃用，将于 2022 年 6 月 30 日停止返回数据。
+
+使用给定 `servicePlanId` 用户和 `skuId` 给定用户激活服务计划。
 
 ## <a name="permissions"></a>权限
 
@@ -54,8 +57,8 @@ POST /users/{id | userPrincipalName}/activateServicePlan
 
 | 参数 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| servicePlanId | GUID | 要激活的 ServicePlan 的 PlanId。 |
-| skuId | GUID | 服务计划已打开的 SKU 的 SkuId。 |
+| servicePlanId | Guid | 要激活的 ServicePlan 的 PlanId。 |
+| skuId | Guid | 服务计划所在的 SKU SkuId。 |
 
 ## <a name="response"></a>响应
 

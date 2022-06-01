@@ -5,19 +5,21 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 202435c81dc9bb95dc64316f6ec5509506980360
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9c4c5e2a33f970481e7366adbc07ae1b23839bdc
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113280"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821013"
 ---
-# <a name="delete-linkedresource_v2"></a>删除linkedResource_v2
+# <a name="delete-linkedresource_v2-deprecated"></a>删除linkedResource_v2 (已弃用) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除linkedResource_v2 [对象](../resources/linkedresource_v2.md) 。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+删除 [linkedResource_v2](../resources/linkedresource_v2.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

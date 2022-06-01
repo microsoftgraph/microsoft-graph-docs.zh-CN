@@ -1,27 +1,27 @@
 ---
 title: Get organizationalBranding
-description: 读取 organizationalBranding 对象的属性和关系。
+description: 读取组织品牌对象的属性和关系。
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e9651b07552be60586a9a15050881b80aa13b80d
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 599b38bf2d1b1552cf7e3cd4dc518f266f2ca832
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395676"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820992"
 ---
 # <a name="get-organizationalbranding"></a>Get organizationalBranding
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-如果 **Accept-Language** 标头设置为 或 ，则检索默认组织品牌 `0` 对象 `default`。 如果不存在默认的组织品牌对象，此方法将返回错误 `404 Not Found` 。
+检索默认的组织品牌对象（如果 **Accept-Language** 标头设置为 `0` 或 `default`）。 如果不存在默认的组织品牌对象，此方法将返回错误 `404 Not Found` 。
 
-如果将 **Accept-Language** 标头设置为由 **id** 的值标识的现有区域设置，此方法将检索指定区域设置的品牌。
+如果 **接受语言** 标头设置 **为由 ID** 值标识的现有区域设置，则此方法将检索指定区域设置的品牌。
 
-此方法仅检索非 Stream 属性，例如 **usernameHintText** 和 **signInPageText**。 若要检索默认品牌（例如 **bannerLogo** 和 **backgroundImage**）的 Stream 类型，请使用 [GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) 方法。
+此方法仅检索非 Stream 属性，例如 **usernameHintText** 和 **signInPageText**。 若要检索默认品牌的 Stream 类型（例如 **bannerLogo** 和 **backgroundImage）**，请使用 [GET 组织BrandingLocalization](organizationalbrandinglocalization-get.md) 方法。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,20 +44,20 @@ GET /organization/{organizationId}/branding
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法仅支持 OData `$select` 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法仅 `$select` 支持 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|Accept-Language|有效的 ISO 639-1 区域设置。 必需。|
+|Accept-Language|有效的 ISO 639-1 区域设置或 `0` 默认区域设置。 必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [organizationalBranding](../resources/organizationalbranding.md) 对象。 如果不存在默认品牌对象，此方法将返回 响应 `404 Not Found` 代码。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [组织品牌](../resources/organizationalbranding.md) 对象。 如果不存在默认品牌对象，此方法将返回 `404 Not Found` 响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -215,7 +215,7 @@ HTTP/1.1 404 Not Found
 
 ### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>示例 3：获取法语区域设置的组织品牌
 
-在下面的示例中， **Accept-Language** 标头用于指定检索本地化 `fr-FR` 品牌。
+在以下示例中，使用 **Accept-Language** 标头指定来检索 `fr-FR` 本地化品牌。
 
 #### <a name="request"></a>请求
 
@@ -290,7 +290,7 @@ Content-Type: application/json
 
 ### <a name="example-4-get-the-bannerlogo-for-the-default-locale"></a>示例 4：获取默认区域设置的 bannerLogo
 
-下面的示例返回默认 **区域设置中的 bannerLogo** 对象。 若要检索 Stream 对象类型（例如 **bannerLogo**），请使用 [Get organizationalBrandingLocalization 方法](organizationalbrandinglocalization-get.md)。 您可以在请求 **URL 中或指定 id** `default` `0` 的值。 如果未设置属性，请求将返回空响应。
+以下示例返回默认区域设置的 **bannerLogo** 对象。 若要检索 Stream 对象类型（例如 **bannerLogo）**，请使用 [Get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md)。 可以在请求 URL 中指定 **ID** `default` 的值。`0` 如果未设置该属性，则请求将返回空响应。
 
 #### <a name="request"></a>请求
 
@@ -322,7 +322,7 @@ Content-Type: image/*
 <Image>
 ```
 
-### <a name="example-5-get-the-bannerlogo-for-the-default-locale-when-it-is-not-set"></a>示例 5：在未设置默认区域设置时获取其 bannerLogo
+### <a name="example-5-get-the-bannerlogo-for-the-default-locale-when-it-is-not-set"></a>示例 5：未设置默认区域设置时获取 bannerLogo
 
 以下示例返回尚未为默认区域设置设置的 **bannerLogo** 对象。
 

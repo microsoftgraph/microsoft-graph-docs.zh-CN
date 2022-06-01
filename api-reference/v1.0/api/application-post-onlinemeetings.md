@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9924c5d3c5bfcf5722d400b132ed10eb3045d532
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 43843f8b0803d635267e8c9505633af42a6f79c6
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136505"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820695"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -175,7 +175,7 @@ Content-Type: application/json
 #### <a name="request"></a>请求
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings
 Content-Type: application/json
 
 {

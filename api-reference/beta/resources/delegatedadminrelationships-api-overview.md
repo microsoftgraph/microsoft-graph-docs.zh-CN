@@ -1,26 +1,26 @@
 ---
-title: 'GDAP) API 概述 (粒度委派的管理员权限 (预览) '
+title: GDAP) API 概述 (粒度委派的管理员权限
 description: GDAP) GDAP (粒度委派的管理员权限允许 Microsoft 合作伙伴配置和请求对其客户环境的粒度和时间限制的访问权限，从而允许客户对 Microsoft 合作伙伴强制实施最低特权的访问权限。
 author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: a76e77ed5f6585016ec02a2bf69a613754d6771f
-ms.sourcegitcommit: c854c48f33159628e1d4852e897bb3343ecaf11a
+ms.openlocfilehash: 2d4876f6017219c655b38bc303ce6bbca81db8d2
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2022
-ms.locfileid: "64753969"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821246"
 ---
-# <a name="granular-delegated-admin-privileges-gdap-api-overview-preview"></a>GDAP) API 概述 (粒度委派的管理员权限 (预览) 
+# <a name="granular-delegated-admin-privileges-gdap-api-overview"></a>GDAP) API 概述 (粒度委派的管理员权限
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-作为 Microsoft 合作伙伴中心生态系统的一部分，云解决方案提供商、增值经销商或顾问计划中的 Microsoft 合作伙伴可以对其客户租户执行管理操作，以帮助管理客户的服务，例如Azure AD和Microsoft 365。 此功能以前允许合作伙伴无限期地在客户租户中担任全局管理员角色，从而产生潜在的安全风险并限制市场潜力。
+作为 Microsoft 合作伙伴中心生态系统的一部分，云解决方案提供商、增值经销商或顾问程序中的 Microsoft 合作伙伴可以对其客户租户执行管理操作，以帮助管理客户的服务，例如 Azure AD 和Microsoft 365。 此功能以前允许合作伙伴无限期地在客户租户中担任全局管理员角色，从而产生潜在的安全风险并限制市场潜力。
 
-**GDAP (粒度委派的管理员权限)** 为合作伙伴提供对客户租户的最低特权访问权限，遵循 [Confiança zero网络安全模型](/security/zero-trust/)。 通过 GDAP，合作伙伴配置并请求对其客户环境的粒度和限时访问权限，客户必须显式向合作伙伴授予此最低特权的访问权限。 此外，合作伙伴必须在一定的时间内请求客户租户管理的特定角色。 此控件消除了合作伙伴在其客户的租户中具有全局管理员角色的需求，但是，他们现在拥有委派的管理任务绝对需要的特权更低的权限。
+**GDAP (粒度委派的管理员权限)** 为合作伙伴提供对客户租户的最低特权访问权限，遵循 [零信任网络安全模型](/security/zero-trust/)。 通过 GDAP，合作伙伴配置并请求对其客户环境的粒度和限时访问权限，客户必须显式向合作伙伴授予此最低特权的访问权限。 此外，合作伙伴必须在一定的时间内请求客户租户管理的特定角色。 此控件消除了合作伙伴在其客户的租户中具有全局管理员角色的需求，但是，他们现在拥有委派的管理任务绝对需要的特权更低的权限。
 
 有关 GDAP 的详细信息，请参阅：
 + [GDAP)  (粒度委派管理员权限简介 ](/partner-center/gdap-introduction)
@@ -73,6 +73,29 @@ ms.locfileid: "64753969"
 | 列出所有委派的管理员客户 | [列出 delegatedAdminCustomers](../api/tenantrelationship-list-delegatedadmincustomers.md)|
 | 按 ID 获取单个委派的管理员客户 | [获取 delegatedAdminCustomer](../api/delegatedadmincustomer-get.md) |
 | 获取委派管理员客户的服务管理详细信息 | [List serviceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md) |
+
+
+## <a name="gdap-workflow"></a>GDAP 工作流
+
+### <a name="gdap-relationship-status-transition"></a>GDAP 关系状态转换
+
+委派管理员关系转换的状态如下所示：
+
+![委托管理员关系状态转换图](relationship-status-transitions.png)
+
+1. [创建 delegatedAdminRelationship](../api/tenantrelationship-post-delegatedadminrelationships.md)
+2. [更新 delegatedAdminRelationship](../api/delegatedadminrelationship-update.md)
+3. [创建 delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (操作：lockForApproval) 
+4. [创建 delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (操作：终止) 
+
+### <a name="gdap-relationship-access-assignment-status-transition"></a>GDAP 关系访问分配状态转换
+
+委派管理员访问分配的状态。 状态转换如下所示：
+
+![委派管理员访问分配状态转换关系图](access-assignment-status-transitions.png)
+
+1. [创建 delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)
+2. [删除 delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)
 
 ## <a name="permissions"></a>权限
 

@@ -5,19 +5,21 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 291bfa800ce25c333836bf8e45565c61bc6005c6
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 8afd20706102edc9bf25a5e9952675e539a83847
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451338"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820565"
 ---
-# <a name="update-basetask"></a>更新 baseTask
+# <a name="update-basetask-deprecated"></a>更新已弃用的 baseTask () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [baseTask 对象](../resources/basetask.md) 的属性。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+更新 [baseTask](../resources/basetask.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +55,7 @@ PATCH /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|textBody|字符串|通常包含有关任务的信息的文本格式的任务正文。|
+|textBody|String|通常包含有关任务的信息的文本格式的任务正文。|
 |createdDateTime|DateTimeOffset|在指定时区内完成任务的日期。|
 |lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。|
 |bodyLastModifiedDateTime|DateTimeOffset|上次修改任务正文的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。|
@@ -62,15 +64,15 @@ PATCH /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内开始执行任务的日期。|
 |importance|importance|事件的重要性。 可能的值包括 `low`、`normal`、`high`。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
-|displayName|字符串|任务的简要说明。|
-|状态|taskStatus_v2|指示任务的状态或进度。 可能的值包括 `notStarted`、`inProgress`、`completed`、`unknownFutureValue`。|
-|一个|[taskViewpoint](../resources/taskviewpoint.md)|用户个人的属性，如 reminderDateTime。|
+|displayName|String|任务的简要说明。|
+|status|taskStatus_v2|指示任务的状态或进度。 可能的值包括 `notStarted`、`inProgress`、`completed`、`unknownFutureValue`。|
+|观点|[taskViewpoint](../resources/taskviewpoint.md)|用户的个人属性，例如 reminderDateTime。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [baseTask](../resources/basetask.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [baseTask](../resources/basetask.md) 对象。
 
 ## <a name="examples"></a>示例
 

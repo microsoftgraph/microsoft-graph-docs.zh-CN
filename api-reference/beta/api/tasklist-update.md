@@ -5,19 +5,21 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6b8c543bb5c07979c26654b64245cde8bddcd6bd
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 9c1ebb6868569bebb63eef01c487e3c2342e68e4
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451164"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819900"
 ---
-# <a name="update-basetasklist"></a>更新 baseTaskList
+# <a name="update-basetasklist-deprecated"></a>更新已弃用的 baseTaskList () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [taskList 对象](../resources/tasklist.md) 的属性。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+更新 [baseTaskList](../resources/tasklist.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,13 +52,13 @@ PATCH /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|指示任务列表的更新标题的字段。|
+|displayName|String|指示任务列表的更新标题的字段。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [baseTaskList](../resources/basetasklist.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [baseTaskList](../resources/basetasklist.md) 对象。
 
 ## <a name="examples"></a>示例
 

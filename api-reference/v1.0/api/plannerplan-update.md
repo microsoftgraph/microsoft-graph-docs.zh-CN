@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 1cbe211096b341fff2ce148e3551d2f521c49244
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: 048768a10d303e6c5b84d5d1fa3c00d6db8e0311
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420710"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821111"
 ---
 # <a name="update-plannerplan"></a>更新 plannerPlan
 
@@ -45,7 +45,6 @@ PATCH /planner/plans/{plan-id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|owner|String|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
 |title|String|计划的标题。|
 
 ## <a name="response"></a>响应

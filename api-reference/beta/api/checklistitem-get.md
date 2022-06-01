@@ -5,17 +5,19 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b01a08775eb1664c8b9f8bae64555db50e962a5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 52154a278d9d24ea763f3a135f76b70f1410e47a
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090864"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820803"
 ---
 # <a name="get-checklistitem"></a>获取 checklistItem
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
 读取 [checklistItem](../resources/checklistitem.md) 对象的属性和关系。
 
@@ -30,6 +32,21 @@ ms.locfileid: "62090864"
 
 ## <a name="http-request"></a>HTTP 请求
 
+本部分列出了上述两 `GET` 种方案中的每个方案的语法。
+
+### <a name="get-a-checklistitem-associated-to-a-specified-todotask"></a>获取与指定 todoTask 关联的 checklistItem
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems/{checklistItemId}
+GET /users/{id | userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems/{checklistItemId}
+```
+
+### <a name="get-a-checklistitem-associated-to-a-specified-basetask-deprecated"></a>获取与指定的 baseTask 关联的 checklistItem (已弃用) 
+
 <!-- {
   "blockType": "ignored"
 }
@@ -38,6 +55,7 @@ ms.locfileid: "62090864"
 GET /me/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/checklistItems/{checklistItemId}
 GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/checklistItems/{checklistItemId}
 ```
+
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
@@ -52,16 +70,77 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [checklistItem](../resources/checklistitem.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [checklistItem](../resources/checklistitem.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="request-1"></a>请求 1 
+
+下面是获取与 **todoTask** 关联的 **checklistItem** 的示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_checklistitem"
+  "name": "get_checklistitem_1"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA=/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA/checklistitems/51d8a471-2e9d-4f53-9937-c33a8742d28f
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-checklistitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-checklistitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-checklistitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-checklistitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-checklistitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.checklistItem"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('6f9a2a92-8527-4d64-937e-b5312852f35d')/todo/lists('AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA%3D')/tasks('AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA')/checklistItems/$entity",
+    "displayName": "Create draft",
+    "createdDateTime": "2021-11-17T05:22:14.2207813Z",
+    "isChecked": false,
+    "id": "51d8a471-2e9d-4f53-9937-c33a8742d28f"
+}
+```
+
+
+### <a name="request-2"></a>请求 2
+
+下面是一个示例，用于获取与已弃用的 **baseTask** () 关联的 **checklistItem**。
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_checklistitem_2"
 }
 -->
 ``` http
@@ -111,4 +190,3 @@ Content-Type: application/json
     "id": "51d8a471-2e9d-4f53-9937-c33a8742d28f"
 }
 ```
-

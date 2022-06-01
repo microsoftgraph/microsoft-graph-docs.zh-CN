@@ -1,18 +1,18 @@
 ---
-title: 获取 accessReview
+title: '获取已弃用的 accessReview () '
 description: 在 Azure AD 访问评审功能中，检索 accessReview 对象。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 50f3ba903b15db5e2cee1972d0629127e14926f7
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: ee160d056e4aa4ba792a85551d14ac10c5801d17
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314506"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819142"
 ---
-# <a name="get-accessreview"></a>获取 accessReview
+# <a name="get-accessreview-deprecated"></a>获取已弃用的 accessReview () 
 
 命名空间：microsoft.graph
 

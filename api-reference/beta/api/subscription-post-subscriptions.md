@@ -5,18 +5,20 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 8351c0801700cc6d9e724fdcbbc609e646834bc8
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 879238c0468b15f1ae4466ed8c9efef8b25d540e
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695417"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820523"
 ---
 # <a name="create-subscription"></a>创建订阅
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
 订阅侦听器应用程序，以在 Microsoft Graph 中指定资源发生的更改属于请求的更改类型时接收更改通知。
 
@@ -28,10 +30,11 @@ ms.locfileid: "65695417"
 
 创建订阅需要对资源的读取权限。 例如，若要获取有关邮件的更改通知，应用需要 Mail.Read 权限。 
 
-根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解详细信息，包括在选择权限之前 [要小心](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) ，请在权限中搜索以下权 [限](/graph/permissions-reference)。
+根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 要了解详细信息，包括在选择权限之前的 [注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，可在 [权限](/graph/permissions-reference) 中搜索以下权限。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
+|[baseTask](../resources/basetask.md) (已弃用)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | 不支持 | 不支持 | CallRecords.Read.All  |
 |[频道](../resources/channel.md)（/teams/getAllChannels - 组织中的所有频道） | 不支持  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All |
 |[频道](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All，ChannelSettings.Read.All  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All  |
@@ -63,10 +66,9 @@ ms.locfileid: "65695417"
 |[teams](../resources/team.md) (/teams - 组织中的所有团队) | 不支持 | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All，TeamSettings.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-建议使用上表中所述的权限。 由于安全限制，仅需要读取访问权限时，Microsoft Graph订阅将不支持写入访问权限。
+建议使用上表中记载的权限。 由于安全限制，Microsoft Graph 订阅在只需要读取访问权限时将不支持写入访问权限。
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
@@ -176,6 +178,7 @@ Content-type: application/json
 
 | 资源类型 | 示例 |
 |:------ |:----- |
+|[baseTask](../resources/basetask.md) (已弃用)  | `/me/tasks/lists/{Id}/tasks`
 |[通话记录](../resources/callrecords-callrecord.md)|`communications/callRecords`|
 |[渠道](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[聊天](../resources/chat.md)|`/chats`, `/chats/{id}`|
@@ -195,7 +198,6 @@ Content-type: application/json
 |[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
 |[用户](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
-|[baseTask](../resources/basetask.md) | `/me/tasks/lists/{baseTaskListId}/tasks`, `/me/tasks/alltasks`
 |[安全警报](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **注意：** 以 `me` 开头的任何路径也可与 `users/{id}`（而不是 `me`）一起使用，从而以特定用户为目标，而不是以当前用户为目标。

@@ -1,18 +1,18 @@
 ---
-title: 创建 programControl
+title: '创建已弃用的 programControl () '
 description: 在 Azure AD 访问评审功能中，创建一个新的 programControl 对象。  这会将访问评审链接到程序。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 61b903d83b6d5b7c8de8e101e9b435a8ff34496e
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: f1a2e919a24d71d50fe0af26dc7f766fd4c0a8d1
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314935"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820902"
 ---
-# <a name="create-programcontrol"></a>创建 programControl
+# <a name="create-programcontrol-deprecated"></a>创建已弃用的 programControl () 
 
 命名空间：microsoft.graph
 

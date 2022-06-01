@@ -1,23 +1,25 @@
 ---
 title: 列出 linkedResources
-description: 从 linkedResources linkedResource_v2获取与 baseTask 关联的资源。
+description: 从 linkedResources 导航属性获取与 baseTask 关联的linkedResource_v2资源。
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4c6ee298f7ed86fa997f127cbbe9b416b00829f1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cbff5c559ef909821b1f1f48acc3f076fb9b773b
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124237"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820719"
 ---
-# <a name="list-linkedresources"></a>列出 linkedResources
+# <a name="list-linkedresources-deprecated"></a>列出已弃用的 linkedResources () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [linkedResources](../resources/linkedresource_v2.md) linkedResource_v2获取与 [baseTask](../resources/basetask.md) 关联的资源。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+从 linkedResources 导航属性获取与 [baseTask](../resources/basetask.md) 关联的[linkedResource_v2](../resources/linkedresource_v2.md)资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,7 +42,7 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法不支持 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持不支持 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +54,7 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [linkedResource_v2](../resources/linkedresource_v2.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [linkedResource_v2](../resources/linkedresource_v2.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

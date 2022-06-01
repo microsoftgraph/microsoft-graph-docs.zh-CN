@@ -1,23 +1,25 @@
 ---
 title: 列出 checklistItems
-description: 从 checklistItems 导航属性获取与 baseTask 关联的 checklistItem 资源。
+description: 获取与 baseTask 的 checklistItems 导航属性关联的 checklistItem 资源。
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bb0fe73336dded11a35581b98985db79ff886652
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f8ed81db725f49e112ee7f67d64224ddf46b8749
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130184"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820894"
 ---
 # <a name="list-checklistitems"></a>列出 checklistItems
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [checklistItems](../resources/checklistitem.md) 导航属性获取与 [baseTask](../resources/basetask.md) 关联的 checklistItem 资源。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+获取与 [baseTask](../resources/baseTask.md) 的 **checklistItems** 导航属性关联的 [checklistItem](../resources/checklistitem.md) 资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +54,7 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [checklistItem](../resources/checklistitem.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [checklistItem](../resources/checklistitem.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

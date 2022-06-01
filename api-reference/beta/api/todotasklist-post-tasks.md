@@ -1,21 +1,21 @@
 ---
 title: 创建 todoTask
-description: 在指定的 todoTaskList 中创建新的任务对象。
+description: 在指定的 todoTaskList 中创建新任务对象。
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c2cfd346ec14222c63bdf97ef5aa6555ad6cd82f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ed01fa8abbef32fd290d54ce3aeae7fe0777eaac
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093037"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820817"
 ---
 # <a name="create-todotask"></a>创建 todoTask
 命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的 [todoTaskList](../resources/todotasklist.md)中创建新的任务对象。
+在指定 [的 todoTaskList](../resources/todotasklist.md) 中创建新任务对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,12 +46,13 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [todoTask](../resources/todotask.md) 对象的 JSON 表示形式。
 
-下表显示创建 [todoTask 时所需的属性](../resources/todotask.md)。
+下表显示了创建 [todoTask](../resources/todotask.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|任务的唯一标识符。 默认情况下，当项目从一个列表移动到另一个列表时，此值将发生更改。|
+|id|String|任务的唯一标识符。 默认情况下，当项从一个列表移动到另一个列表时，此值会更改。|
 |body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。|
+|类别|String 集合|与任务关联的类别。 每个类别对应于用户定义的 [outlookCategory](../resources/outlookcategory.md) 的 **displayName** 属性。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区内完成任务的日期。|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内完成任务的日期。|
 |importance|importance|任务的重要性。 可取值为：`low`、`normal`、`high`。|
@@ -60,20 +61,20 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
 |状态|任务状态|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
 |title|String|任务的简要说明。|
-|createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
-|lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
-|bodyLastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
+|createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2020 年 1 月 1 日午夜 UTC 如下所示：“2020-01-01T00：00：00Z”。|
+|lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示：“2020-01-01T00：00：00Z”。|
+|bodyLastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示：“2020-01-01T00：00：00Z”。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [todoTask](../resources/todotask.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [todoTask](../resources/todotask.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-以下示例在指定的任务列表中创建 **一个 todoTask，** 并包含 [linkedResource](../resources/linkedresource.md)。
+以下示例在指定的任务列表中创建 **todoTask** ，并包含 [linkedResource](../resources/linkedresource.md)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -88,6 +89,7 @@ Content-Type: application/json
 
 {
    "title":"A new task",
+   "categories": ["Important"],
    "linkedResources":[
       {
          "webUrl":"http://microsoft.com",
@@ -145,6 +147,7 @@ Content-Type: application/json
    "title":"A new task",
    "createdDateTime":"2020-08-18T09:03:05.8339192Z",
    "lastModifiedDateTime":"2020-08-18T09:03:06.0827766Z",
+   "categories": ["Important"],
    "id":"AlMKXwbQAAAJws6wcAAAA=",
    "body":{
       "content":"",

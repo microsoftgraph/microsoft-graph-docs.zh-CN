@@ -5,17 +5,17 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c4337a07e9667ac23d3d0c386964fc1f9f44a275
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: f47448533da07ad369ca3013f9efeae0ca8f8919
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65209600"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820388"
 ---
 # <a name="create-assignmentpolicies"></a>创建 assignmentPolicies
 命名空间：microsoft.graph
 
-在[Azure AD权利管理](../resources/entitlementmanagement-overview.md)中，创建新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。  请求将包含对将包含此策略的 [accessPackage](../resources/accesspackage.md) 的引用，该策略必须已经存在。
+在 [Azure AD 权利管理](../resources/entitlementmanagement-overview.md)中，创建新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。  请求将包含对将包含此策略的 [accessPackage](../resources/accesspackage.md) 的引用，该策略必须已经存在。
 
 ## <a name="permissions"></a>权限
 
@@ -25,7 +25,7 @@ ms.locfileid: "65209600"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -52,11 +52,12 @@ POST /identityGovernance/entitlementManagement/assignmentPolicies
 |属性|类型|说明|
 |:---|:---|:---|
 |说明|String|策略的说明。|
-|displayName|字符串|策略的显示名称。|
+|displayName|String|策略的显示名称。|
 |allowedTargetScope|allowedTargetScope|允许通过此策略为Who分配访问包。 可取值包括：`notSpecified`、`specificDirectoryUsers`、`specificConnectedOrganizationUsers`、`specificDirectoryServicePrincipals`、`allMemberUsers`、`allDirectoryUsers`、`allDirectoryServicePrincipals`、`allConfiguredConnectedOrganizationUsers`、`allExternalUsers`、`unknownFutureValue`。 可选。|
 |到期|[expirationPattern](../resources/expirationpattern.md)|在此策略中创建的分配的到期日期。|
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|指定通过此策略批准访问包分配请求的设置。 例如，如果新请求需要审批。|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|提供其他设置，以选择谁可以通过此策略创建访问包分配请求，以及它们可以包含在请求中的内容。|
+|reviewSettings|[accessPackageAssignmentReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|设置通过此策略对分配进行访问评审。|
 |specificAllowedTargets|[subjectSet](../resources/subjectset.md) 集合|从此策略的访问包分配访问权限的目标。|
 |accessPackage|[accessPackage](../resources/accesspackage.md)| 对将包含必须已存在的策略的访问包的引用。|
 
@@ -163,7 +164,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>示例 2：为其他组织的用户创建要请求的策略
 
-下面的示例演示了一个更复杂的策略，其中有两个阶段的审批。
+下面的示例演示了一个更复杂的策略，其中包含两个阶段的审批和定期访问评审。
 
 #### <a name="request"></a>请求
 
@@ -243,6 +244,40 @@ Content-Type: application/json
                 "fallbackEscalationApprovers": []
             }
         ]
+    },
+    "reviewSettings": {
+        "isEnabled": true,
+        "expirationBehavior": "keepAccess",
+        "isRecommendationEnabled": true,
+        "isReviewerJustificationRequired": true,
+        "isSelfReview": false,
+        "schedule": {
+            "startDateTime": "2022-07-02T06:59:59.998Z",
+            "expiration": {
+                "duration": "P14D",
+                "type": "afterDuration"
+            },
+            "recurrence": {
+                "pattern": {
+                    "type": "absoluteMonthly",
+                    "interval": 3,
+                    "month": 0,
+                    "dayOfMonth": 0,
+                    "daysOfWeek": []
+                },
+                "range": {
+                    "type": "noEnd",
+                    "numberOfOccurrences": 0
+                }
+            }
+        },
+        "primaryReviewers": [
+            {
+                "@odata.type": "#microsoft.graph.groupMembers",
+                "groupId": "1623f912-5e86-41c2-af47-39dd67582b66"
+            }
+        ],
+        "fallbackReviewers": []
     },
     "accessPackage": {
         "id": "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"

@@ -5,17 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e2188bc5e84dcf93fb7fbbdc02e889064fabe08f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: eb0c9809f5da1c7e1f32ce86724504692ff7149b
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116661"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819788"
 ---
-# <a name="delete-basetask"></a>删除 baseTask
+# <a name="delete-basetask-deprecated"></a>删除已弃用的 baseTask () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 删除 [baseTask](../resources/basetask.md) 对象。
 

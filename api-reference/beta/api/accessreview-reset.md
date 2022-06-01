@@ -1,18 +1,18 @@
 ---
-title: Reset accessReview
-description: 在Azure AD评审"功能中，重置当前处于活动状态的 accessReview 的决策。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  不再记录以前的决策，但审阅者可以继续更新决策。
+title: '重置 accessReview (已弃用) '
+description: 在 Azure AD 访问评审功能中，重置当前处于活动状态的 accessReview 的决策。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。  以前的决策不再记录，但审阅者可以继续更新决策。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bf189f1bdae786baa8239a924b5502c442878135
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 77cf15a9120cf59eb5925958368ba2104a588a7c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340694"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819146"
 ---
-# <a name="reset-accessreview"></a>Reset accessReview
+# <a name="reset-accessreview-deprecated"></a>重置 accessReview (已弃用) 
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "62340694"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-在Azure AD[评审](../resources/accessreviews-root.md)"功能中，重置当前处于活动状态[的 accessReview 的决策](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  不再记录以前的决策，但审阅者可以继续更新决策。
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，重置当前处于活动状态 [的 accessReview](../resources/accessreview.md) 的决策。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。  以前的决策不再记录，但审阅者可以继续更新决策。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

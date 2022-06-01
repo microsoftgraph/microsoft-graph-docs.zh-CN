@@ -1,16 +1,16 @@
 ---
 title: authenticationMethodsRoot 资源类型
-description: 用于身份验证方法资源的Azure AD属性的容器。
-author: danielwood95
+description: 用于 Azure AD 身份验证方法资源的导航属性的容器。
+author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: def78eddd43cdb7ea738d32e25c8d90adb23fbc4
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: cc86e2ff67f7c628406aa90aca5bd00d03101272
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201685"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820481"
 ---
 # <a name="authenticationmethodsroot-resource-type"></a>authenticationMethodsRoot 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "62201685"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于身份验证方法资源的Azure AD属性的容器。
+用于 Azure AD 身份验证方法资源的导航属性的容器。
 
-继承自 [实体](../resources/entity.md)。
+继承自 [entity](../resources/entity.md)。
 
 ## <a name="methods"></a>方法
 
@@ -29,12 +29,12 @@ ms.locfileid: "62201685"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串| 唯一标识符。 继承自 [实体](../resources/entity.md)。|
+|id|String| 唯一标识符。 继承自 [entity](../resources/entity.md)。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|userRegistrationDetails|[userRegistrationDetails](../resources/userRegistrationDetails.md)| 表示用户的身份验证方法的状态，包括注册哪些方法以及用户注册哪些功能 (如多重身份验证、自助服务密码重置和无密码身份验证) 。|
+|userRegistrationDetails|[userRegistrationDetails](../resources/userRegistrationDetails.md)| 表示用户的身份验证方法的状态，包括哪些方法已注册，哪些功能是用户注册的，哪些功能能够 (，例如多重身份验证、自助式密码重置和无密码身份验证) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

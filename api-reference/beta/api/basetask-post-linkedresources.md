@@ -1,21 +1,23 @@
 ---
 title: 创建linkedResource_v2
-description: 创建新的 linkedResource_v2 对象。
+description: 创建新的linkedResource_v2对象。
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 96ed1ca949a1485e952d44e4d1113fa5d80fe3f5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 85b87094a277b39dab56fe0dc49ed9da5e82b019
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124147"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820299"
 ---
-# <a name="create-linkedresource_v2"></a>创建linkedResource_v2
+# <a name="create-linkedresource_v2-deprecated"></a>创建linkedResource_v2 (已弃用的) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 创建新的 [linkedResource_v2](../resources/linkedresource_v2.md) 对象。
 
@@ -45,20 +47,20 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 linkedResource_v2 [对象的 JSON](../resources/linkedresource_v2.md) 表示形式。
+在请求正文中，提供 [linkedResource_v2](../resources/linkedresource_v2.md) 对象的 JSON 表示形式。
 
-在创建一个属性时，**可以指定linkedResource_v2。**
+创建 **linkedResource_v2** 时，可以指定以下属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |applicationName|String|指示发送 **linkedResource** 的源的应用名称的字段。|
-|displayName|String|指示 **linkedResource 的标题的字段**。|
-|externalId|String|第三方/合作伙伴系统上与此任务关联的对象的 ID。|
-|WebUrl|String|指向 **linkedResource 的深层链接**。|
+|displayName|String|指示 **linkedResource** 的标题的字段。|
+|externalId|String|与第三方/合作伙伴系统上的此任务关联的对象的 ID。|
+|webUrl|String|**指向 linkedResource** 的深层链接。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码 [linkedResource_v2](../resources/linkedresource_v2.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [linkedResource_v2](../resources/linkedresource_v2.md) 对象。
 
 ## <a name="examples"></a>示例
 

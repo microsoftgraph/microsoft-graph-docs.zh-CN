@@ -1,23 +1,25 @@
 ---
-title: baseTask： move
-description: 将 baseTask 对象从一个 baseTaskList 移动到另一个。
+title: baseTask：move
+description: 将 baseTask 对象从一个 baseTaskList 移动到另一个 baseTaskList。
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9f3fe575d2614ea2e9763fd7679e66cf03c928bd
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e17821703a355d436104394f2c899452d3cc1ad3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341716"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820313"
 ---
-# <a name="basetask-move"></a>baseTask： move
+# <a name="basetask-move-deprecated"></a>baseTask：移动 (已弃用) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [baseTask](../resources/basetask.md) 对象从一 [个 baseTaskList 移动到](../resources/basetasklist.md) 另一个。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+将 [baseTask](../resources/basetask.md) 对象从一个 [baseTaskList](../resources/basetasklist.md) 移动到另一个 baseTaskList。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -57,13 +59,13 @@ POST /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}/move
 
 |参数|类型|说明|
 |:---|:---|:---|
-|destinationTaskListId|String|必须将 [baseTask](../resources/basetasklist.md) 对象移动到的 [baseTaskList](../resources/basetask.md) 。|
+|destinationTaskListId|String|必须将 [baseTask](../resources/basetask.md) 对象移动到的 [baseTaskList](../resources/basetasklist.md)。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 [baseTask](../resources/basetask.md) 。
+如果成功，此操作在响应正文中返回 `200 OK` 响应代码和 [baseTask](../resources/basetask.md) 。
 
 ## <a name="examples"></a>示例
 

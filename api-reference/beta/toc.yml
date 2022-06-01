@@ -360,7 +360,7 @@ items:
           - name: 目录对象
             href: resources/directoryobject.md
             items:
-              - name: 激活服务计划
+              - name: '激活服务计划 (已弃用) '
                 href: api/user-activateserviceplan.md
               - name: 分配许可证
                 href: api/user-assignlicense.md
@@ -594,7 +594,7 @@ items:
                 href: api/chat-list.md
           - name: 待办任务
             items:
-              - name: 任务
+              - name: 执行任务
                 href: resources/todotask.md
               - name: 创建任务
                 href: api/todotasklist-post-tasks.md
@@ -925,7 +925,7 @@ items:
                     href: api/application-removekey.md
               - name: 扩展
                 items:
-                  - name: 扩展属性
+                  - name: Extension 属性
                     href: resources/extensionproperty.md
                     items:
                       - name: 列出
@@ -11313,7 +11313,7 @@ items:
                     href: api/organization-get.md
                   - name: 更新组织详细信息
                     href: api/organization-update.md
-                  - name: 激活服务
+                  - name: '激活已弃用的服务 () '
                     href: api/organization-activateservice.md
               - name: 组织设置
                 href: resources/organizationSettings.md
@@ -14617,6 +14617,8 @@ items:
                 href: api/plannerplan-get.md
               - name: 更新计划
                 href: api/plannerplan-update.md
+              - name: 删除计划
+                href: api/plannerplan-delete.md
               - name: 列出计划任务
                 href: api/plannerplan-list-tasks.md
               - name: 列出计划存储桶
@@ -15051,7 +15053,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: 从聊天中删除应用
                     href: api/chat-delete-installedapps.md
-          - name: Device
+          - name: 设备
             items:
               - name: 预配的设备
                 href: resources/teamworkdevice.md
@@ -15351,51 +15353,43 @@ items:
         displayName: Microsoft To Do
         items:
           - name: 概述
-            href: resources/tasks-overview.md
-          - name: 任务列表
+            href: resources/todo-overview.md
+          - name: “执行任务”列表
             items:
-              - name: 基本任务列表
-                href: resources/basetasklist.md
-              - name: 任务列表
-                href: resources/tasklist.md
-              - name: 已知任务列表
-                href: resources/wellknowntasklist.md
+              - name: “执行任务”列表
+                href: resources/todotasklist.md
               - name: 列出任务列表
-                href: api/tasks-list-lists.md
+                href: api/todo-list-lists.md
               - name: 创建任务列表
-                href: api/tasks-post-lists.md
+                href: api/todo-post-lists.md
               - name: 获取任务列表
-                href: api/basetasklist-get.md
+                href: api/todotasklist-get.md
               - name: 更新任务列表
-                href: api/tasklist-update.md
+                href: api/todotasklist-update.md
               - name: 删除任务列表
-                href: api/tasklist-delete.md
-              - name: 获取任务列表增量
-                href: api/basetasklist-delta.md
+                href: api/todotasklist-delete.md
+              - name: 获取任务列表的增量
+                href: api/todotasklist-delta.md
               - name: 创建开放扩展
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
                 href: api/opentypeextension-get.md
-          - name: 任务
+          - name: 执行任务
             items:
-              - name: 基本任务
-                href: resources/basetask.md
-              - name: 任务
-                href: resources/task.md
+              - name: 执行任务
+                href: resources/todotask.md
               - name: 列出任务
-                href: api/basetasklist-list-tasks.md
+                href: api/todotasklist-list-tasks.md
               - name: 创建任务
-                href: api/basetasklist-post-tasks.md
+                href: api/todotasklist-post-tasks.md
               - name: 获取任务
-                href: api/basetask-get.md
+                href: api/todotask-get.md
               - name: 更新任务
-                href: api/basetask-update.md
-              - name: 移动任务
-                href: api/basetask-move.md
+                href: api/todotask-update.md
               - name: 删除任务
-                href: api/basetask-delete.md
-              - name: 获取任务增量
-                href: api/basetask-delta.md
+                href: api/todotask-delete.md
+              - name: 获取任务的增量
+                href: api/todotask-delta.md
               - name: 创建开放扩展
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
@@ -15404,9 +15398,9 @@ items:
             href: resources/checklistitem.md
             items:
               - name: 列出
-                href: api/basetask-list-checklistitems.md
+                href: api/todotask-list-checklistitems.md
               - name: 创建
-                href: api/basetask-post-checklistitems.md
+                href: api/todotask-post-checklistitems.md
               - name: 获取
                 href: api/checklistitem-get.md
               - name: 更新
@@ -15414,73 +15408,96 @@ items:
               - name: 删除
                 href: api/checklistitem-delete.md
           - name: 链接的资源
-            href: resources/linkedresource_v2.md
+            href: resources/linkedresource.md
             items:
               - name: 列出
-                href: api/basetask-list-linkedresources.md
+                href: api/todotask-list-linkedresources.md
               - name: 创建
-                href: api/basetask-post-linkedresources.md
+                href: api/todotask-post-linkedresources.md
               - name: 获取
-                href: api/linkedresource_v2-get.md
+                href: api/linkedresource-get.md
               - name: 更新
-                href: api/linkedresource_v2-update.md
+                href: api/linkedresource-update.md
               - name: 删除
-                href: api/linkedresource_v2-delete.md
-          - name: '执行任务 (旧) '
+                href: api/linkedresource-delete.md
+          - name: '使用已弃用的基本任务 (执行 API) '
             items:
               - name: 概述
-                href: resources/todo-overview.md
-              - name: 任务列表
-                href: resources/todotasklist.md
+                href: resources/tasks-overview.md
+              - name: 基本任务列表
                 items:
-                  - name: 列出任务列表
-                    href: api/todo-list-lists.md
-                  - name: 创建任务列表
-                    href: api/todo-post-lists.md
-                  - name: 获取任务列表
-                    href: api/todotasklist-get.md
-                  - name: 更新任务列表
-                    href: api/todotasklist-update.md
-                  - name: 删除任务列表
-                    href: api/todotasklist-delete.md
-                  - name: 获取任务列表增量
-                    href: api/todotasklist-delta.md
+                  - name: 基本任务列表
+                    href: resources/basetasklist.md
+                  - name: 任务列表
+                    href: resources/tasklist.md
+                  - name: 已知任务列表
+                    href: resources/wellknowntasklist.md
+                  - name: 列出基本任务列表
+                    href: api/tasks-list-lists.md
+                  - name: 创建基本任务列表
+                    href: api/tasks-post-lists.md
+                  - name: 获取基本任务列表
+                    href: api/basetasklist-get.md
+                  - name: 更新基本任务列表
+                    href: api/tasklist-update.md
+                  - name: 删除基本任务列表
+                    href: api/tasklist-delete.md
+                  - name: 获取基本任务列表的增量
+                    href: api/basetasklist-delta.md
                   - name: 创建开放扩展
                     href: api/opentypeextension-post-opentypeextension.md
                   - name: 获取开放扩展
                     href: api/opentypeextension-get.md
-              - name: 任务
-                href: resources/todotask.md
+              - name: 基本任务
                 items:
-                  - name: 列出任务
-                    href: api/todotasklist-list-tasks.md
-                  - name: 创建任务
-                    href: api/todotasklist-post-tasks.md
-                  - name: 获取任务
-                    href: api/todotask-get.md
-                  - name: 更新任务
-                    href: api/todotask-update.md
-                  - name: 删除任务
-                    href: api/todotask-delete.md
-                  - name: 获取任务增量
-                    href: api/todotask-delta.md
+                  - name: 基本任务
+                    href: resources/basetask.md
+                  - name: 任务
+                    href: resources/task.md
+                  - name: 列出基本任务
+                    href: api/basetasklist-list-tasks.md
+                  - name: 创建基本任务
+                    href: api/basetasklist-post-tasks.md
+                  - name: 获取基本任务
+                    href: api/basetask-get.md
+                  - name: 更新基任务
+                    href: api/basetask-update.md
+                  - name: 移动基任务
+                    href: api/basetask-move.md
+                  - name: 删除基本任务
+                    href: api/basetask-delete.md
+                  - name: 获取基本任务的增量
+                    href: api/basetask-delta.md
                   - name: 创建开放扩展
                     href: api/opentypeextension-post-opentypeextension.md
                   - name: 获取开放扩展
                     href: api/opentypeextension-get.md
-              - name: 链接的资源
-                href: resources/linkedresource.md
+              - name: 清单项
+                href: resources/checklistitem.md
                 items:
                   - name: 列出
-                    href: api/todotask-list-linkedresources.md
+                    href: api/basetask-list-checklistitems.md
                   - name: 创建
-                    href: api/todotask-post-linkedresources.md
+                    href: api/basetask-post-checklistitems.md
                   - name: 获取
-                    href: api/linkedresource-get.md
+                    href: api/checklistitem-get.md
                   - name: 更新
-                    href: api/linkedresource-update.md
+                    href: api/checklistitem-update.md
                   - name: 删除
-                    href: api/linkedresource-delete.md
+                    href: api/checklistitem-delete.md
+              - name: 链接的资源 v2
+                href: resources/linkedresource_v2.md
+                items:
+                  - name: 列出
+                    href: api/basetask-list-linkedresources.md
+                  - name: 创建
+                    href: api/basetask-post-linkedresources.md
+                  - name: 获取
+                    href: api/linkedresource_v2-get.md
+                  - name: 更新
+                    href: api/linkedresource_v2-update.md
+                  - name: 删除
+                    href: api/linkedresource_v2-delete.md
           - name: Outlook 任务（已弃用）
             items:
               - name: 'Outlook任务 (已弃用) '

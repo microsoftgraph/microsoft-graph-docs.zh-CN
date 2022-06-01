@@ -1,16 +1,16 @@
 ---
 title: userRegistrationMethodCount 资源类型
-description: 为身份验证方法注册的用户数。
-author: danielwood95
-localization_priority: Normal
+description: 注册身份验证方法的用户数。
+author: besiler
+ms.localizationpriority: medium
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 8e4c19c48771ccd0bd1dd1f1a4b049334266834a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c505ea408599dbb7b0c6803d03b87b2586d6d0c3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132930"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820075"
 ---
 # <a name="userregistrationmethodcount-resource-type"></a>userRegistrationMethodCount 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "50132930"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为身份验证方法注册的用户数。
+注册身份验证方法的用户数。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|authenticationMethod|字符串|身份验证方法的名称。|
+|authenticationMethod|String|身份验证方法的名称。|
 |userCount|Int64|注册的用户数。|
 
 ## <a name="relationships"></a>关系

@@ -1,23 +1,23 @@
 ---
-title: '列出 (访问评审任务中的) '
-description: 从多阶段访问评审的阶段获取决策。
+title: '列出多阶段访问评审 (的决策) '
+description: 在多阶段访问评审中从某个阶段获取决策。
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a188aa60896a31cdde5cdbb6ca7edcf8929cce9d
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 3a2e06ed7d927686a84e352eab52d7a8554e04c0
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721855"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819634"
 ---
-# <a name="list-decisions-from-a-multi-stage-access-review"></a>列出 (访问评审任务中的) 
+# <a name="list-decisions-from-a-multi-stage-access-review"></a>列出多阶段访问评审 (的决策) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从多阶段访问评审的阶段获取决策。 [accessReviewStage](../resources/accessReviewStage.md) 对象中的决策由 accessReviewInstanceDecisionItem] (。/resources/accessreviewinstancedecisiisitem.md) 对象。
+在多阶段访问评审中从某个阶段获取决策。 [accessReviewStage](../resources/accessReviewStage.md) 对象中的决策由 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象表示。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -39,12 +39,12 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select`使用 、 `$filter`、 `$orderBy`、 `$skip`和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select`OData `$orderBy``$filter`查询参数，`$top``$skip`以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-此 API 的默认页面大小为 100 **accessReviewStage** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+此 API 的默认页面大小为 100 **个 accessReviewStage** 对象。 若要提高效率并避免因大型结果集而超时，请使用 `$skip` 分页和 `$top` 查询参数。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -54,7 +54,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

@@ -849,7 +849,7 @@ items:
                     href: api/application-removekey.md
               - name: 扩展
                 items:
-                  - name: 扩展属性
+                  - name: Extension 属性
                     href: resources/extensionproperty.md
                     items:
                       - name: 列出
@@ -6627,6 +6627,8 @@ items:
                 href: api/plannerplan-list-buckets.md
               - name: 更新计划
                 href: api/plannerplan-update.md
+              - name: 删除计划
+                href: api/plannerplan-delete.md
           - name: 任务
             href: resources/plannertask.md
             items:
@@ -7207,6 +7209,19 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
                 href: api/opentypeextension-get.md
+          - name: 清单项
+            href: resources/checklistitem.md
+            items:
+              - name: 列出
+                href: api/todotask-list-checklistitems.md
+              - name: 创建
+                href: api/todotask-post-checklistitems.md
+              - name: 获取
+                href: api/checklistitem-get.md
+              - name: 更新
+                href: api/checklistitem-update.md
+              - name: 删除
+                href: api/checklistitem-delete.md
           - name: 链接的资源
             href: resources/linkedresource.md
             items:

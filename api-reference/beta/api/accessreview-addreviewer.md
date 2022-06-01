@@ -1,18 +1,18 @@
 ---
-title: 添加 accessReview 审阅器
+title: '添加 accessReview 审阅者 (已弃用) '
 description: '在 Azure AD 访问评审功能中，更新现有 accessReview 对象，将另一个用户添加为审阅者。  此操作仅适用于尚未完成的访问评审，并且仅允许在显式指定审阅者的访问评审中执行此操作。 此操作不允许用户在访问评审中审阅其自己的访问权限，并且不适用于将组所有者分配为审阅者的访问评审。 '
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e5814ab38f90bc0f7f2d3ef55eda276bbf3f27c6
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 1f59b588bb1ae59b9c21ee35beed218b23479195
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314548"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819385"
 ---
-# <a name="add-accessreview-reviewer"></a>添加 accessReview 审阅器
+# <a name="add-accessreview-reviewer-deprecated"></a>添加 accessReview 审阅者 (已弃用) 
 
 命名空间：microsoft.graph
 

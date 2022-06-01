@@ -5,19 +5,21 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f696ef66adced69dd286725cb5e1709ba6dbbe27
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 890d5f89ed3b77b237a1bfa0b546d76bf6ce95e3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451422"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820726"
 ---
-# <a name="create-basetasklist"></a>创建 baseTaskList
+# <a name="create-basetasklist-deprecated"></a>创建已弃用的 baseTaskList () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [taskList](../resources/basetasklist.md) 对象。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+创建新的 [baseTaskList](../resources/basetasklist.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,17 +50,17 @@ POST /users/{userId|userPrincipalName}/tasks/lists
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [baseTaskList](../resources/basetasklist.md) 对象的 JSON 表示形式。
 
-下表显示创建 **baseTaskList 时所需的属性**。
+下表显示了创建 **baseTaskList** 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|指示任务列表标题的字段。|
+|displayName|String|指示任务列表标题的字段。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [baseTaskList](../resources/basetasklist.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [baseTaskList](../resources/basetasklist.md) 对象。
 
 ## <a name="examples"></a>示例
 

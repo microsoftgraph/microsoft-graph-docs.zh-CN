@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 0dd40e8cb399b055d8568c97c3d6560110fc0aad
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: 68dea07be58926aeb918ea51ae176471e6a17d68
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629081"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820506"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "65629081"
 |**架构扩展**| | |
 |[添加架构扩展值](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 |**组织许可证**| | |
-|[activateService](../api/organization-activateservice.md) | None |  为组织激活服务。 |
+|[activateService](../api/organization-activateservice.md) (已弃用)  | 无 |  为组织激活服务。 |
 |**组织品牌**| | |
 |[Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | 获取默认组织的品牌对象。 |
 |[Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | 更新默认组织的品牌对象。 |

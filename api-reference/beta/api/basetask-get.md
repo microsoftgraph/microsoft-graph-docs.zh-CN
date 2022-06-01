@@ -5,17 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2b1cef10bb6f67b2f9613d566b971a9e353271cb
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 11ffe48ba964d736d3dc459f01712a681fd01da3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365195"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820019"
 ---
-# <a name="get-basetask"></a>获取 baseTask
+# <a name="get-basetask-deprecated"></a>获取已弃用的 baseTask () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 读取 [baseTask](../resources/basetask.md) 对象的属性和关系。
 

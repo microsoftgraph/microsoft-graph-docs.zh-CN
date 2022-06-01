@@ -1,16 +1,16 @@
 ---
 title: userRegistrationFeatureSummary 资源类型
-description: 能够进行多重身份验证、密码Self-Service和无密码身份验证的用户摘要。
-author: danielwood95
-localization_priority: Normal
+description: 能够进行多重身份验证、Self-Service密码重置和无密码身份验证的用户摘要。
+author: besiler
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 291da483380d6e1d65b5db527128098b8b416c83
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b058276eaa3bc9f12dbe46ddc33afbe06b0bc2f2
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132929"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820145"
 ---
 # <a name="userregistrationfeaturesummary-resource-type"></a>userRegistrationFeatureSummary 资源类型
 
@@ -18,20 +18,20 @@ ms.locfileid: "50132929"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示组织中有多少用户能够进行多重身份验证、自助服务密码重置和无密码身份验证的当前状态。
+表示组织中能够进行多重身份验证、自助密码重置和无密码身份验证的用户数量的当前状态。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [usersRegisteredByFeature](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | userRegistrationFeatureSummary | 获取能够进行多重身份验证、密码Self-Service密码重置和无密码身份验证的用户数。 |
+| [usersRegisteredByFeature](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | userRegistrationFeatureSummary | 获取能够进行多重身份验证、Self-Service密码重置和无密码身份验证的用户数。 |
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |totalUserCount|Int64|用户帐户总数，不包括被阻止的帐户|
-|userRegistrationFeatureCounts|[userRegistrationFeatureCount](../resources/userregistrationfeaturecount.md) 集合|注册或能够进行多重身份验证、密码重置Self-Service无密码身份验证的用户数量。|
-|userRoles|includedUserRoles|用户角色类型。 可取值为：`all`、`privilegedAdmin`、`admin`、`user`。|
+|userRegistrationFeatureCounts|[userRegistrationFeatureCount](../resources/userregistrationfeaturecount.md) 集合|注册或支持多重身份验证、Self-Service密码重置和无密码身份验证的用户数。|
+|userRoles|includedUserRoles|用户角色类型。 可能的值是：`all`、`privilegedAdmin`、`admin`、`user`。|
 |userTypes|includedUserTypes|用户类型。 可取值为：`all`、`member`、`guest`。|
 
 该值 `privilegedAdmin` 由以下特权管理员角色组成：

@@ -5,23 +5,25 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f5427f68c14faf5e1205cebee608a37e8eda87e0
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 485fa1e144d9d4e100c55be9c563d61e9faf768a
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247173"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821027"
 ---
-# <a name="basetasklist-delta"></a>baseTaskList： delta
+# <a name="basetasklist-delta-deprecated"></a>baseTaskList：已弃用 delta () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 获取在微软待办中添加、删除或删除的一组 [baseTaskList](../resources/basetasklist.md) 资源。
 
 **baseTaskList** 的 **增量** 函数调用类似于 GET 请求，只是通过在其中一个或多个调用中适当应用 [状态令牌](/graph/delta-query-overview)，可以查询 **baseTaskList** 中的增量更改。 这样便可以维护和同步用户 **的 baseTaskList** 的本地存储，而无需每次从服务器提取所有 **baseTaskList** 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

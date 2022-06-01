@@ -1,23 +1,25 @@
 ---
-title: 删除 taskList
+title: 删除 baseTaskList
 description: 删除 taskList 对象。
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4aec06d9b1e8984686dd06afee52a3eef7dfe9fb
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 3cf2defb603273d7402d5070d2b05eabf36e4730
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519281"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819919"
 ---
-# <a name="delete-basetasklist"></a>删除 baseTaskList
+# <a name="delete-basetasklist-deprecated"></a>删除已弃用的 baseTaskList () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 [taskList](../resources/tasklist.md) 对象。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+删除 [baseTaskList](../resources/tasklist.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

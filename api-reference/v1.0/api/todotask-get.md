@@ -1,21 +1,21 @@
 ---
-title: Get todoTask
+title: 获取 todoTask
 description: 读取 todoTask 对象的属性和关系。
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b4d70ed4c003e741562774a435cc1f5481d37f4e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5f207fcb6f3e3145eb2f335feddc35aae352ebc4
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091539"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821069"
 ---
-# <a name="get-todotask"></a>Get todoTask
+# <a name="get-todotask"></a>获取 todoTask
 命名空间：microsoft.graph
 
-读取 [todoTask 对象的属性和](../resources/todotask.md) 关系。
+读取 [todoTask](../resources/todotask.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [todoTask](../resources/todotask.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [todoTask](../resources/todotask.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -116,6 +116,10 @@ Content-Type: application/json
     "title": "Shop for dinner",
     "createdDateTime": "2020-07-22T10:39:03.7937971Z",
     "lastModifiedDateTime": "2020-07-22T12:02:10.8835421Z",
+    "categories": [
+       "Important",
+       "Urgent"
+            ],
     "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
     "body": {
         "content": "",

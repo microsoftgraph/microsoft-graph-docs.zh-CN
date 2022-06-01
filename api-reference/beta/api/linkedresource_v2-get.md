@@ -1,23 +1,25 @@
 ---
 title: 获取linkedResource_v2
-description: 读取 linkedResource_v2 对象的属性和关系。
+description: 读取linkedResource_v2对象的属性和关系。
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 22108f9e4859552ebfc5e4f88ae96b31f42f6c41
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1159d79c8c74b0170f59dc45d7c7e61d5c5f64c1
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099573"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821174"
 ---
-# <a name="get-linkedresource_v2"></a>获取linkedResource_v2
+# <a name="get-linkedresource_v2-deprecated"></a>获取已弃用linkedResource_v2 () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 linkedResource_v2 对象的属性 [和](../resources/linkedresource_v2.md) 关系。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+读取 [linkedResource_v2](../resources/linkedresource_v2.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +54,7 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [linkedResource_v2](../resources/linkedresource_v2.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [linkedResource_v2](../resources/linkedresource_v2.md) 对象。
 
 ## <a name="examples"></a>示例
 

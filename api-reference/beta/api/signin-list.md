@@ -5,12 +5,12 @@ description: 获取Azure Active Directory租户中的用户登录列表。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 547b13bbd97b459eec60b88270e13c6063107704
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 08f857df962878ff60d711043ac4c32c4543951d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848774"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821230"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -20,7 +20,10 @@ ms.locfileid: "64848774"
 
 获取 [signIn](../resources/signin.md) 对象的列表。 该列表包含Azure Active Directory租户的用户登录。 登录时，用户名和密码作为授权令牌的一部分传递，并且成功的联合登录当前包含在登录日志中。
 
-最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有在[默认保留期](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)内发生的Azure Active Directory (Azure AD) 登录事件才可用。
+最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有在Azure Active Directory (Azure AD) [默认保留期](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)内发生的登录事件才可用。
+
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
 
 ## <a name="permissions"></a>权限
 
@@ -30,20 +33,20 @@ ms.locfileid: "64848774"
 |:--------------- |:------------------------------------------- |
 | 委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| Application | AuditLog.Read.All 和 Directory.Read.All | 
+| 应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
 
 > [!IMPORTANT]
 > 此 API 存在 [已知问题](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
-应用必须[正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)到Azure AD。
+应用必须 [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) 到 Azure AD。
 
-除了委派的权限外，已登录的用户还需要属于以下目录角色之一，这些角色允许他们读取登录报告。 若要详细了解目录角色，请参阅[Azure AD内置角色](/azure/active-directory/roles/permissions-reference)：
+除了委派的权限外，已登录的用户还需要属于以下目录角色之一，这些角色允许他们读取登录报告。 若要详细了解目录角色，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 全局读取者
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全信息读取者
++ 安全读取者
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

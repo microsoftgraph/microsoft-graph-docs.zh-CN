@@ -5,19 +5,21 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f2b0537b62836ca93ff713d6d739198a617e4431
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 925d8094ac0e8a93f582409a656903a4b1127f82
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116625"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819767"
 ---
-# <a name="get-basetasklist"></a>获取 baseTaskList
+# <a name="get-basetasklist-deprecated"></a>获取已弃用的 baseTaskList () 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [baseTaskList 对象的属性和](../resources/basetasklist.md) 关系。
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+读取 [baseTaskList](../resources/basetasklist.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +54,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [baseTaskList](../resources/basetasklist.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [baseTaskList](../resources/basetasklist.md) 对象。
 
 ## <a name="examples"></a>示例
 

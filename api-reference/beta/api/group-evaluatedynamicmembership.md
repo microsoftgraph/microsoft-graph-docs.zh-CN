@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 778ed1164d41d05193dae32f90187ab6f3d4604a
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 6d031e6c18b3611efdf6c0ae37962c3e977abc54
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65208734"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819488"
 ---
 # <a name="group-evaluatedynamicmembership"></a>group：evaluateDynamicMembership
 
@@ -33,7 +33,7 @@ ms.locfileid: "65208734"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 对于用户：Group.Read.All 和 User.Read.All、Directory.Read.All<br>对于设备：Group.Read.All 和 Device.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                                       |
-| Application                            | 不支持。                                                                                                                       |
+| 应用程序                            | 不支持。                                                                                                                       |
 
 ### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a>使用成员 ID 和成员身份规则评估动态成员身份
 
@@ -41,7 +41,7 @@ ms.locfileid: "65208734"
 | :------------------------------------- | :--------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 对于用户：User.Read.All、Directory.Read.All<br>对于设备：Device.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                 |
-| Application                            | 不支持。                                                                                 |
+| 应用程序                            | 不支持。                                                                                 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -67,8 +67,8 @@ POST /groups/evaluateDynamicMembership
 
 | 参数      | 类型              | 说明                                                                                                                                                                                                                                                                                                                                                                                                            |
 | :------------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| memberId       | 字符串集合 | memberId 是要评估的用户或设备的对象 ID。                                                                                                                                                                                                                                                                                                                                                       |
-| membershipRule | 字符串集合 | 用于成员资格评估的规则。 如果未提供此属性，则会评估现有组的规则。 如果提供了此属性，则会评估用户或设备是否可以加入具有相同规则的组。 有关详细信息，请参阅 [Azure Active Directory 中的组动态成员资格规则](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 |
+| memberId       | String collection | memberId 是要评估的用户或设备的对象 ID。                                                                                                                                                                                                                                                                                                                                                       |
+| membershipRule | String collection | 用于成员资格评估的规则。 如果未提供此属性，则会评估现有组的规则。 如果提供了此属性，则会评估用户或设备是否可以加入具有相同规则的组。 有关详细信息，请参阅 [Azure Active Directory 中的组动态成员资格规则](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 |
 
 ## <a name="response"></a>响应
 
@@ -132,7 +132,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -206,6 +206,10 @@ Content-type: application/json
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-evaluatedynamicmembership-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

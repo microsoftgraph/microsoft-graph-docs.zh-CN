@@ -1,24 +1,26 @@
 ---
-title: programResource 资源类型
+title: 'programResource 资源类型 (已弃用) '
 description: 表示对作为访问评审目标的对象的引用。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0ef610650887b1d34569465bd5babb7ec91c194d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: a324c047f6a2a7cf5143d1394696f20c429a12ea
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761826"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819732"
 ---
-# <a name="programresource-resource-type"></a>programResource 资源类型
+# <a name="programresource-resource-type-deprecated"></a>programResource 资源类型 (已弃用) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**programResource** 对象包含在 [programControl](programcontrol.md)对象中，表示对作为访问评审目标的对象的引用。
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+**programResource** 对象包含在 [programControl](programcontrol.md) 对象中，表示对作为访问评审目标的对象的引用。
 
 此类型继承自 [标识](identity.md)。
 

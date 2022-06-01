@@ -1,18 +1,18 @@
 ---
-title: 创建 accessReview
+title: '创建已弃用的 accessReview () '
 description: 在 Azure AD 访问评审功能中，创建新的 accessReview 对象。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bfddca0486d9f622107b4e234c5baa6ab66cbaa0
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 2d23b1a6607564e7ea073738a0e8e58af39331a4
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314534"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819382"
 ---
-# <a name="create-accessreview"></a>创建 accessReview
+# <a name="create-accessreview-deprecated"></a>创建已弃用的 accessReview () 
 
 命名空间：microsoft.graph
 
@@ -47,7 +47,7 @@ POST /accessReviews
 ## <a name="request-headers"></a>请求标头
 | 名称         | 说明 |
 |:-------------|:------------|
-| Authorization | 持有者 \{token\}。必需。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
@@ -60,7 +60,7 @@ POST /accessReviews
 | displayName             |String                                                        | 访问评审名称。  |
 | startDateTime           |DateTimeOffset                                                | 计划开始评审时的 DateTime。  这必须是将来的日期。   |
 | endDateTime             |DateTimeOffset                                                | 计划结束评审时的 DateTime。 这必须至少比开始日期晚一天。   |
-| 说明             |String                                                        | 要向审阅者显示的说明。 |
+| description             |String                                                        | 要向审阅者显示的说明。 |
 | businessFlowTemplateId  |String                                                        | 从 [businessFlowTemplate](../resources/businessflowtemplate.md) 获取的业务流模板标识符。  |
 | reviewerType            |String                                                        | 审阅者与审阅对象的访问权限的关系类型，其中 `self`之一， `delegated`或 `entityOwners`。 | 
 | reviewedEntity          |[identity](../resources/identity.md)                                     | 为其创建访问评审的对象，例如组的成员身份或用户对应用程序的分配。 | 
