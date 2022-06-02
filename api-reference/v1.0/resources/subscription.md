@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 9213403b8651454bbec57a7dcd6ea0bf0cc09dd5
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: 831de5675b78e94ada5a64c625738b869848c02c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420577"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819452"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "65420577"
 - SharePoint [site][]下的[list][]。
 - Outlook 中的[邮件][]、[事件][]或[联系人][]。
 - 通用打印中的 [打印机][] (当打印机的打印作业进入 JobFetchable 状态 - 准备好提取以打印时)和 [printTaskDefinition][]。有关详细信息，请参阅 [订阅来自云打印 API 的更改通知](/graph/universal-print-webhook-notifications)。
+- Microsoft 待办事项中某个用户的 [todoTask][]。*
 - 在 Azure Active Directory 中的 [用户][]。
 
 关于每个支持资源的可能资源路径值，请参阅[使用 Microsoft Graph API 获取更改通知](webhooks.md)。 若要了解如何使用生命周期通知，请参阅“[减少缺失的订阅和更改通知](/graph/webhooks-lifecycle)”。
@@ -77,6 +78,8 @@ ms.locfileid: "65420577"
 | **状态**        | 60 分钟（1 小时） |
 | 打印 **打印机** | 4230 分钟（不到 3 天）    |
 | 打印 **printTaskDefinition** | 4230 分钟（不到 3 天）    |
+| **todoTask**              | 4230 分钟（不到 3 天）    |
+
 
 
 > **注意：** 现有和新的应用都不得超过支持的这一上限值。 今后，任何超出最大值的订阅创建或续订请求都将失败。
@@ -145,6 +148,7 @@ ms.locfileid: "65420577"
 [callRecord]: ./callrecords-callrecord.md
 [打印机]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[todoTask]: ./todotask.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

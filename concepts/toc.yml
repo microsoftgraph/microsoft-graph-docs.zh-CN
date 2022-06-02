@@ -56,7 +56,11 @@ items:
     expanded: true
     items:
       - name: 用户
-        href: azuread-users-concept-overview.md
+        items:
+          - name: 概述
+            href: azuread-users-concept-overview.md
+          - name: 访问用户数据
+            href: /learn/modules/msgraph-access-user-data
       - name: 组
         items:
           - name: 概述
@@ -65,6 +69,8 @@ items:
             href: office365-groups-concept-overview.md
           - name: 配置组选项
             href: group-set-options.md
+          - name: 管理组生命周期
+            href: /learn/modules/msgraph-access-group-data
       - name: 应用程序
         items:
           - name: 概述

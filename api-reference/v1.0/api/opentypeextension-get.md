@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 97eab08847dcbb23ba67c5928528b6a611e9dbe5
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 8682c47e0ec7503c3a41d60a7b93f8d4346cb8d6
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365769"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820411"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 
@@ -24,8 +24,8 @@ ms.locfileid: "65365769"
 
 |**GET 应用场景**|**支持的资源**|**响应正文**|
 |:-----|:-----|:-----|
-|从已知资源实例中获取特定扩展。| [设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[邮件](../resources/message.md)、[组织](../resources/organization.md)、[个人联系人](../resources/contact.md)、[用户](../resources/user.md)、[任务](../resources/todotask.md)、[任务列表](../resources/todotasklist.md)。  | 仅开放扩展。|
-|获取一个通过特定扩展插件扩展的已知资源实例。|设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户、任务、任务列表。 |一个通过开放扩展插件扩展的资源实例。|
+|从已知资源实例中获取特定扩展。| [设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[消息](../resources/message.md)、[组织](../resources/organization.md)、[个人联系人](../resources/contact.md)、[用户](../resources/user.md)、[待办事项任务](../resources/todotask.md)、[待办事项任务列表](../resources/todotasklist.md)。  | 仅开放扩展。|
+|获取一个通过特定扩展插件扩展的已知资源实例。|设备、事件、组、组事件、组帖子、消息、组织、个人联系人、用户、待办事项任务、待办事项任务列表。 |一个通过开放扩展插件扩展的资源实例。|
 |查找并展开具有特定扩展的资源实例。 |事件、组事件、组帖子、邮件、个人联系人、任务、任务列表。|通过开放扩展展开的资源实例。|
 
 ## <a name="permissions"></a>权限
@@ -35,16 +35,16 @@ ms.locfileid: "65365769"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.Read.All | 不支持 | Device.ReadWrite.All |
-| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [组事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [组织](../resources/organization.md) | User.Read | 不支持 | Organization.Read.All |
 | [个人联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [用户](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [任务](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [任务列表](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -482,23 +482,13 @@ Content-Type: application/json
 第五个示例查看已登录用户的邮箱中的所有邮件，并查找包含与筛选器匹配的扩展的邮件，然后通过包括扩展将其展开。此筛选器将返回其 **id** 属性与扩展名 `Com.Contoso.Referral` 匹配的扩展。
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
-# <a name="go"></a>[转到](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-opentypeextension-5-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

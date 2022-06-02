@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: e24dfe413f46c4d8e4cc65dd6327ff17ef8d7927
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f5a1c64039f1ba2fd77913e76a1c18f4ff48927c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071859"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821160"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>使用微软待办 API
 
@@ -24,7 +24,7 @@ ms.locfileid: "59071859"
  
 在开始使用微软待办 API 之前，请查看资源以及它们之间的关系。
 
-![微软待办 API 实体](/graph/images/todo-api-entities.png)
+![突出显示待办事项 API 实体的屏幕截图。屏幕截图显示了左侧的任务列表、中心内特定任务列表中的任务，以及右侧的清单项和链接资源以及其他任务属性。](/graph/images/tasks-api-entities.png)
 
 ## <a name="task-list"></a>任务列表
 
@@ -39,6 +39,13 @@ GET /me/todo/lists
 [todoTask](./todotask.md) 表示任务，即可跟踪和完成的一件工作或个人项目。 若要从任务列表中获取任务，请执行以下 HTTP 请求：
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks
+```
+
+## <a name="checklist-item"></a>清单项 
+
+[checklistItem](checklistitem.md) 表示较大的 [todoTask](./todotask.md) 中的子任务。 通过 **ChecklistItem**，可将复杂任务分解为更具可操作性、更小的任务。 若要从任务获取 **checklistItem**，请发出以下 HTTP 请求：
+``` http
+GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems/{checklistItems}
 ```
 
 ## <a name="linked-resource"></a>链接的资源

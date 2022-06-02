@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 53497ac4745cecc18d86fe3341da43118ea22210
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: d25c85d8cf63ff018a521b86822d8d2380d65ebb
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420598"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819711"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "65420598"
 |[List buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| 获取 **plannerBucket** 对象集合。|
 |[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| 获取 **plannerTask** 对象集合。|
 |[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |更新 **plannerPlan** 对象。 |
+|[删除](../api/plannerplan-delete.md) | 无 | 删除 **plannerPlan** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

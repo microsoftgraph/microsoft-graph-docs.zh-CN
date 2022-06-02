@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: d83b3aed5b8f803d1e12e946201a161245858ab2
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: e7b5097a43325fd356c0d33e2ec59965d17b8d79
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461273"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820761"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -38,8 +38,8 @@ ms.locfileid: "65461273"
 | [组织](organization.md) | GA |
 | [个人联系人](contact.md) | GA |
 | [用户](user.md) | GA |
-| [任务](todotask.md)  | GA |
-| [任务列表](todotasklist.md)  | GA |
+| [待办事项任务](todotask.md)  | GA |
+| [待办事项任务列表](todotasklist.md)  | GA |
 
 >\* **注意：** 由于现有的服务限制，代理无法在共享邮箱日历中创建已追加开放扩展的事件。 尝试这样做将导致 `ErrorAccessDenied` 响应。
 

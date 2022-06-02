@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: d5234149ddfafb4633803975e33a57294cba656b
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: 925062122223563e00b3a4413b06076fc0164c41
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629013"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820201"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -309,6 +309,10 @@ Microsoft Graph 访问组和 Microsoft Teams 的 API 公开了两个权限 ([*Gr
 + 如果存在要检索的 **claimsMappingPolicy** 对象，则应用必须同意这两项授权。否则，将返回错误 `403 Forbidden`。
 
 将来，任一权限都足以调用这两种方法。
+
+### <a name="linux-based-devices-cant-be-updated-by-an-app-with-application-permissions"></a>具有应用程序权限的应用无法更新基于 Linux 的设备
+
+当具有应用程序权限的应用程序尝试更新 **operationSystem** 属性为 `linux` 的设备对象的任何属性时，除了 **extensionAttributes** 属性外，“[更新设备](/graph/api/device-update)”API 将返回 `400 Bad request` 错误代码和错误消息“ExtendedAttribute1..15 以外的属性只能在 Windows 设备上修改”。 使用委派权限更新基于 Linux 的设备的属性。
 
 ## <a name="json-batching"></a>JSON 批处理
 
