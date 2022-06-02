@@ -1,22 +1,22 @@
 ---
-title: 获取指定用户与应用之间的 1：1 Teams聊天
-description: 检索指定用户与应用之间的一对一Teams聊天。
+title: 获取用户和 teamsApp 之间的聊天
+description: 检索指定用户与Teams应用之间的一对一聊天。
 author: AkJo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: f3ad93980c9eae16cdce603906af01d454426abb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3b925eef77c950968fe1f033a89dfd5f079a4f8a
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114594"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857972"
 ---
-# <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>获取指定用户与应用之间的一对一Teams聊天
+# <a name="get-chat-between-user-and-teamsapp"></a>获取用户和 teamsApp 之间的聊天
 
 命名空间：microsoft.graph
 
-检索[指定用户的](../resources/chat.md)聊天[和Teams](../resources/user.md)[应用](../resources/teamsapp.md)。
+检索指定[用户](../resources/user.md)和[Teams应用](../resources/teamsapp.md)的[聊天](../resources/chat.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ GET /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installat
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,16 +52,13 @@ GET /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installat
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [chat](../resources/chat.md) 对象的实例。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [聊天](../resources/chat.md) 对象实例。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>示例 1：列出指定用户与应用之间的一对一Teams聊天
+### <a name="request"></a>请求
 
-#### <a name="request"></a>请求
-
-下面展示了示例请求。
-
+下面是一个请求示例，其中列出了指定用户与Teams应用之间的一对一聊天。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -98,7 +95,7 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 ---
 
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

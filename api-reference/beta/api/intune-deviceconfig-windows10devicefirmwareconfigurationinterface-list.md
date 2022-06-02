@@ -2,25 +2,25 @@
 title: 列出 windows10DeviceFirmwareConfigurationInterfaces
 description: 列出 windows10DeviceFirmwareConfigurationInterface 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db1a1042b17f0132bca838351a62e68eb7782b51
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 33182f061e8dfc3efbffb860c610167e809df99e
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59048589"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857440"
 ---
 # <a name="list-windows10devicefirmwareconfigurationinterfaces"></a>列出 windows10DeviceFirmwareConfigurationInterfaces
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [windows10DeviceFirmwareConfigurationInterface 对象的属性和](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) 关系。
+列出 [windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) 对象的集合。
 
 ## <a name="example"></a>示例
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1766
+Content-Length: 2171
 
 {
   "value": [
@@ -111,11 +111,24 @@ Content-Length: 1766
       "bootFromExternalMedia": "enabled",
       "bootFromBuiltInNetworkAdapters": "enabled",
       "windowsPlatformBinaryTable": "enabled",
-      "simultaneousMultiThreading": "enabled"
+      "simultaneousMultiThreading": "enabled",
+      "frontCamera": "enabled",
+      "rearCamera": "enabled",
+      "infraredCamera": "enabled",
+      "microphone": "enabled",
+      "bluetooth": "enabled",
+      "wirelessWideAreaNetwork": "enabled",
+      "nearFieldCommunication": "enabled",
+      "wiFi": "enabled",
+      "usbTypeAPort": "enabled",
+      "sdCard": "enabled",
+      "wakeOnLAN": "enabled",
+      "wakeOnPower": "enabled"
     }
   ]
 }
 ```
+
 
 
 

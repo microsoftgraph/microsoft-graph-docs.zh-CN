@@ -5,16 +5,18 @@ ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: 732e233bf0e110c97415c51695a0358fddecf688
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: f8a76a1212f6a53e3f913391c2d672c3c0bf9142
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365797"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858418"
 ---
 # <a name="add-named-item-formulalocal"></a>添加已命名项 FormulaLocal
 
-命名空间：microsoft.graph 使用公式的用户区域设置将新名称添加到给定范围的集合中。
+命名空间：microsoft.graph
+
+使用用户的公式区域设置，将新名称添加到给定范围的集合。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

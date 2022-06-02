@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph SDK 进行 API 调用
 description: 提供有关使用 SDK 创建 Microsoft Graph HTTP 请求的说明。
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 49be5a3fdb2ead7e8e3a4d39b459b7ef068a9a74
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 28fad7ebf6a6aec274bb607b79e3cc3c1f4c20fa
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848690"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858147"
 ---
 <!-- markdownlint-disable MD025 -->
 
@@ -16,7 +16,7 @@ ms.locfileid: "64848690"
 
 Microsoft Graph SDK 服务库提供一个客户端类，你可以使用该类作为创建所有 API 请求的起点。 客户端类有两种样式：一种使用 Fluent 接口创建请求 (例如， `client.Users["user-id"].Manager`) ，另一种接受路径字符串 (例如 `api("/users/user-id/manager")` ，) 。 拥有请求对象时，可以指定各种选项，例如筛选和排序，最后选择要执行的操作类型。
 
-还有 [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started.md)，它根本没有客户端类。 相反，所有请求都表示为 PowerShell 命令。 例如，若要获取用户的管理器，命令为 `Get-MgUserManager`。 有关查找 API 调用命令的详细信息，请参[阅导航 Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating.md)。
+还有 [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started)，它根本没有客户端类。 相反，所有请求都表示为 PowerShell 命令。 例如，若要获取用户的管理器，命令为 `Get-MgUserManager`。 有关查找 API 调用命令的详细信息，请参[阅导航 Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating)。
 
 ## <a name="read-information-from-microsoft-graph"></a>从 Microsoft Graph读取信息
 
