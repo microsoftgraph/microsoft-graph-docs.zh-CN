@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a2e6986259621bcc0c16ab4a1c772a4b9e45241
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 8953cf93c2fff6da1438f8122bfc124a7ffb857c
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212107"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858105"
 ---
 # <a name="list-defaultmanagedappprotections"></a>列出 defaultManagedAppProtections
 
@@ -29,7 +29,7 @@ ms.locfileid: "65212107"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6307
+Content-Length: 6441
 
 {
   "value": [
@@ -196,7 +196,10 @@ Content-Length: 6307
       "connectToVpnOnLaunch": true,
       "appActionIfDevicePasscodeComplexityLessThanLow": "wipe",
       "appActionIfDevicePasscodeComplexityLessThanMedium": "wipe",
-      "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe"
+      "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe",
+      "requireClass3Biometrics": true,
+      "requirePinAfterBiometricChange": true,
+      "fingerprintAndBiometricEnabled": true
     }
   ]
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dea0680c1c1dac260fc195fbf23449e2283eb0ec
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: cb342337ab17db43d75bf84529c43e1ed496369c
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210901"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858301"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>列出 androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "65210901"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10859
+Content-Length: 10911
 
 {
   "value": [
@@ -319,7 +319,8 @@ Content-Length: 10859
       "workProfilePasswordMinimumSymbolCharacters": 10,
       "workProfilePasswordPreviousPasswordCountToBlock": 15,
       "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-      "workProfilePasswordRequiredType": "required"
+      "workProfilePasswordRequiredType": "required",
+      "workProfilePasswordRequireUnlock": "daily"
     }
   ]
 }

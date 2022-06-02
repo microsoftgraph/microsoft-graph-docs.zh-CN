@@ -1,23 +1,23 @@
 ---
 title: signIn：confirmCompromised
-description: 允许将Azure AD登录事件标记为Azure AD标识保护有风险。
+description: 允许管理员将 Azure AD 登录事件标记为 Azure AD 标识保护有风险。
 author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 226a9986402ce315b77472ea1f37062f9e1f6753
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 75e0f6e4ffc85f54a54c964ec72e56d6703ac751
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212804"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858266"
 ---
 # <a name="signin-confirmcompromised"></a>signIn：confirmCompromised
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-允许管理员将Azure AD登录日志中的事件标记为有风险。 被管理员标记为有风险的事件在标识保护Azure AD立即标记为高风险，替代了以前的风险状态。 管理员可以确认Azure AD标识保护标记为有风险的事件实际上存在风险，或者可以将未标记的事件标记为有风险。 
+允许管理员将 Azure AD 登录日志中的事件标记为有风险。 在 Azure AD 标识保护中，被管理员标记为有风险的事件会立即标记为高风险，替代以前的风险状态。 管理员可以确认被 Azure AD 标识保护标记为有风险的事件实际上存在风险，并将其转移到高风险。 有关调查标识保护风险的详细信息，请参阅 [如何调查风险](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "65212804"
 |:---|:---|
 |委派（工作或学校帐户）|IdentityRiskyUser.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|IdentityRiskyUser.ReadWrite.All|
+|应用程序|IdentityRiskEvent.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST /auditLogs/signIns/confirmCompromised
 
 |参数|类型|说明|
 |:---|:---|:---|
-|requestIds|字符串集合|应为Azure AD标识保护标记为有风险的登录事件的 ID。|
+|requestIds|字符串集合|应为 Azure AD 标识保护标记为有风险的登录事件的 ID。|
 
 
 

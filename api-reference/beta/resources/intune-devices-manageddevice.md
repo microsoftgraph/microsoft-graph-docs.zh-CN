@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7674843208283c91103b257c5f942f006511403f
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 0765838967c1c6f3a1608dbbae32eca21206fab9
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202018"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858014"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -28,10 +28,10 @@ ms.locfileid: "65202018"
 |[Get managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|读取 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。|
 |[Update managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|更新 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性。|
 |[executeAction 操作](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md)|尚未记录|
-|[enableLostMode 操作](../api/intune-devices-manageddevice-enablelostmode.md)|无|启用丢失模式|
-|[playLostModeSound 操作](../api/intune-devices-manageddevice-playlostmodesound.md)|无|播放丢失模式声音|
-|[setDeviceName 操作](../api/intune-devices-manageddevice-setdevicename.md)|无|设置设备的设备名称。|
-|[activateDeviceEsim 操作](../api/intune-devices-manageddevice-activatedeviceesim.md)|无|在设备上激活 eSIM。|
+|[enableLostMode 操作](../api/intune-devices-manageddevice-enablelostmode.md)|None|启用丢失模式|
+|[playLostModeSound 操作](../api/intune-devices-manageddevice-playlostmodesound.md)|None|播放丢失模式声音|
+|[setDeviceName 操作](../api/intune-devices-manageddevice-setdevicename.md)|None|设置设备的设备名称。|
+|[activateDeviceEsim 操作](../api/intune-devices-manageddevice-activatedeviceesim.md)|None|在设备上激活 eSIM。|
 |[rotateFileVaultKey 操作](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|无|尚未记录|
 |[getFileVaultKey 函数](../api/intune-devices-manageddevice-getfilevaultkey.md)|String|尚未记录|
 |[createDeviceLogCollectionRequest 操作](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|尚未记录|
@@ -53,21 +53,22 @@ ms.locfileid: "65202018"
 |[windowsDefenderScan 操作](../api/intune-devices-manageddevice-windowsdefenderscan.md)|无|尚未记录|
 |[windowsDefenderUpdateSignatures 操作](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|无|尚未记录|
 |[updateWindowsDeviceAccount 操作](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|无|尚未记录|
-|[revokeAppleVppLicenses 操作](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|无|吊销设备的所有 Apple Vpp 许可证|
+|[revokeAppleVppLicenses 操作](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|None|吊销设备的所有 Apple Vpp 许可证|
 |[rotateBitLockerKeys 操作](../api/intune-devices-manageddevice-rotatebitlockerkeys.md)|无|旋转 BitLockerKeys|
 |[sendCustomNotificationToCompanyPortal 操作](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|无|尚未记录|
-|[triggerConfigurationManagerAction 操作](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|无|ConfigurationManager 客户端上的触发器操作|
+|[triggerConfigurationManagerAction 操作](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|None|ConfigurationManager 客户端上的触发器操作|
 |[取消预配操作](../api/intune-devices-manageddevice-deprovision.md)|无|尚未记录|
 |[禁用操作](../api/intune-devices-manageddevice-disable.md)|无|尚未记录|
 |[可重置操作](../api/intune-devices-manageddevice-reenable.md)|无|尚未记录|
 |[moveDevicesToOU 操作](../api/intune-devices-manageddevice-movedevicestoou.md)|无|尚未记录|
+|[removeDeviceFirmwareConfigurationInterfaceManagement 操作](../api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md)|无|尚未记录|
 |[getOemWarranty 函数](../api/intune-devices-manageddevice-getoemwarranty.md)|[oemWarranty](../resources/intune-devices-oemwarranty.md)|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备的唯一标识符。 此属性是只读的。|
-|userId|字符串|与设备关联的用户的唯一标识符。 此属性是只读的。|
+|userId|String|与设备关联的用户的唯一标识符。 此属性是只读的。|
 |deviceName|String|设备的名称。 此属性是只读的。|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的硬性详细信息。  包括存储空间、制造商、序列号等信息。此属性是只读的。|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|设备的所有权。 可以是“公司”或“个人”。 可取值为：`unknown`、`company`、`personal`。|
@@ -77,7 +78,7 @@ ms.locfileid: "65202018"
 |enrolledDateTime|DateTimeOffset|设备的注册时间。 此属性是只读的。|
 |lastSyncDateTime|DateTimeOffset|设备上次成功完成与 Intune 同步的日期和时间。 此属性是只读的。|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|设备的底盘类型。 此属性是只读的。 可取值为：`unknown`、`desktop`、`laptop`、`worksWorkstation`、`enterpriseServer`、`phone`、`tablet`、`mobileOther`、`mobileUnknown`。|
-|operatingSystem|String|设备的操作系统。 Windows、iOS 等。此属性是只读的。|
+|operatingSystem|String|设备的操作系统。 Windows、iOS等。此属性是只读的。|
 |deviceType|[deviceType](../resources/intune-devices-devicetype.md)|设备的平台。 此属性是只读的。 可能的值为：`desktop`、`windowsRT`、`winMO6`、`nokia`、`windowsPhone`、`mac`、`winEmbedded``winCE`、、`iPhone`、`iPad`、`iPod`、`iSocConsumer``android`、`unix`、`macMDM``holoLens`、`surfaceHub`、、`androidForWork`、 `unknown``cloudPC``palm``androidEnterprise``windows10x``androidnGMS``chromeOS``linux``blackberry`|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|设备的符合性状态。 此属性是只读的。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
 |jailBroken|String|设备是否已越狱或取得 root 权限。 此属性是只读的。|
@@ -110,7 +111,7 @@ ms.locfileid: "65202018"
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期到期时的 DateTime。 此属性是只读的。|
 |serialNumber|String|SerialNumber。 此属性是只读的。|
 |phoneNumber|String|电话设备数。 此属性是只读的。|
-|androidSecurityPatchLevel|String|Android 安全修补程序级别。 此属性是只读的。|
+|androidSecurityPatchLevel|String|Android安全修补程序级别。 此属性是只读的。|
 |userDisplayName|String|用户显示名称。 此属性是只读的。|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|启用了 ConfigrMgr 客户端的功能。 此属性是只读的。|
 |wiFiMacAddress|String|Wi-Fi MAC。 此属性是只读的。|
@@ -124,12 +125,12 @@ ms.locfileid: "65202018"
 |retireAfterDateTime|DateTimeOffset|指示设备因计划操作而自动停用的时间。 此属性是只读的。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) 集合|指示设备用户上一次登录。 此属性是只读的。|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告已设置 preferMdmOverGroupPolicy 设置的 DateTime。  设置时，如果存在冲突，Intune MDM 设置将替代组策略设置。 只读。 此属性是只读的。|
-|autopilotEnrolled|Boolean|报告是否通过自动试点注册托管设备。 此属性是只读的。|
-|requireUserEnrollmentApproval|Boolean|报告托管 iOS 设备是否为用户批准注册。 此属性是只读的。|
+|autopilotEnrolled|布尔|报告是否通过自动试点注册托管设备。 此属性是只读的。|
+|requireUserEnrollmentApproval|布尔|报告托管iOS设备是否为用户审批注册。 此属性是只读的。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书过期日期。 此属性是只读的。|
 |iccid|String|集成电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
-|udid|String|iOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
-|roleScopeTagIds|String collection|此设备实例的范围标记 ID 列表。|
+|udid|String|iOS和macOS设备的唯一设备标识符。 此属性是只读的。|
+|roleScopeTagIds|字符串集合|此设备实例的范围标记 ID 列表。|
 |windowsActiveMalwareCount|Int32|此 Windows 设备的活动恶意软件计数。 此属性是只读的。|
 |windowsRemediatedMalwareCount|Int32|此 Windows 设备的修正恶意软件计数。 此属性是只读的。|
 |notes|String|IT 管理员创建的设备上的说明|
@@ -139,7 +140,7 @@ ms.locfileid: "65202018"
 |physicalMemoryInBytes|Int64|总内存（以字节为单位）。 此属性是只读的。|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|处理器体系结构。 此属性是只读的。 可取值为：`unknown`、`x86`、`x64`、`arm`、`arM64`。|
 |specificationVersion|String|规范版本。 此属性是只读的。|
-|joinType|[joinType](../resources/intune-devices-jointype.md)|设备联接类型。 可能的值是：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
+|joinType|[joinType](../resources/intune-devices-jointype.md)|设备联接类型。 可取值为：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
 |skuFamily|String|设备 sku 系列|
 |skuNumber|Int32|设备 sku 编号，另请参阅： https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo。 要2147483647的有效值 0。 此属性是只读的。|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|设备管理功能。 可取值为：`none`、`microsoftManagedDesktop`。|

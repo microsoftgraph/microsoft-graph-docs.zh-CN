@@ -2,21 +2,21 @@
 title: 获取 deviceAppManagement
 description: 读取 deviceAppManagement 对象的属性和关系。
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63d3f21639ce33dd7e8a2fe53f8fa02482f2e801
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 070a4fd85b7720e8140a3afb95746d649978bd90
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59096352"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857678"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
+> **重要：** Microsoft Graph中 /beta 版本下的 API 可能会发生更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,16 +24,16 @@ ms.locfileid: "59096352"
 
 ## <a name="prerequisites"></a>先决条件
 
-若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  请注意，相应的权限因工作流而异。
+调用此 API 需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  请注意，适当的权限根据工作流而异。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 | 委派（工作或学校帐户） | |
-| &nbsp;&nbsp;**应用****、书籍****、载入**、**合作伙伴集成** 或 **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.ReadW.All |
+| &nbsp;&nbsp; **应用**、**书籍**、**载入**、**合作伙伴集成** 或 **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| |
-| &nbsp;&nbsp;**应用****、书籍****、载入**、**合作伙伴集成** 或 **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.ReadW.All |
+| &nbsp;&nbsp; **应用**、**书籍**、**载入**、**合作伙伴集成** 或 **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求

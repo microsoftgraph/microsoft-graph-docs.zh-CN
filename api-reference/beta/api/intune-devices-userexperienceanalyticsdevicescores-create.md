@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e597dc9ec4598492f2f381c4ff2f2ff15551e23
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 60c16f45f80fc2d51c81496bcf1b0ad8af53ac24
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344111"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857902"
 ---
 # <a name="create-userexperienceanalyticsdevicescores"></a>创建 userExperienceAnalyticsDeviceScores
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -47,9 +47,9 @@ POST /deviceManagement/userExperienceAnalyticsDeviceScores
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 userExperienceAnalyticsDeviceScores 对象的 JSON 表示形式。
+在请求正文中，为 userExperienceAnalyticsDeviceScores 对象提供 JSON 表示形式。
 
-下表显示创建 userExperienceAnalyticsDeviceScores 时所需的属性。
+下表显示了创建 userExperienceAnalyticsDeviceScores 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -60,13 +60,14 @@ POST /deviceManagement/userExperienceAnalyticsDeviceScores
 |endpointAnalyticsScore|双精度|用户体验分析设备分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |startupPerformanceScore|双精度|用户体验分析设备启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |appReliabilityScore|双精度|用户体验分析设备应用可靠性分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|workFromAnywhereScore|双精度|用户体验分析设备可以随时随地进行评分。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析设备的运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|workFromAnywhereScore|双精度|用户体验分析设备工作从任意位置评分。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|batteryHealthScore|双精度|用户体验分析设备电池运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析设备的运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [userExperienceAnalyticsDeviceScores](../resources/intune-devices-userexperienceanalyticsdevicescores.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [userExperienceAnalyticsDeviceScores](../resources/intune-devices-userexperienceanalyticsdevicescores.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -75,7 +76,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceScores
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceScores
 Content-type: application/json
-Content-length: 397
+Content-length: 427
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -86,6 +87,7 @@ Content-length: 397
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
   "workFromAnywhereScore": 7.0,
+  "batteryHealthScore": 6.0,
   "healthStatus": "insufficientData"
 }
 ```
@@ -95,7 +97,7 @@ Content-length: 397
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 446
+Content-Length: 476
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -107,6 +109,7 @@ Content-Length: 446
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
   "workFromAnywhereScore": 7.0,
+  "batteryHealthScore": 6.0,
   "healthStatus": "insufficientData"
 }
 ```

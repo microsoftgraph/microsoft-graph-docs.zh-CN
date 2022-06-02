@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a3083ff595397873718254e6b12447b92bf820e
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: bc33e646e76090dc07ceeabb18e961d7c460a15a
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291911"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857755"
 ---
 # <a name="list-userexperienceanalyticsmodelscoreses"></a>列出 userExperienceAnalyticsModelScoreses
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [userExperienceAnalyticsModelScores 对象的属性和](../resources/intune-devices-userexperienceanalyticsmodelscores.md) 关系。
+列出 [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /deviceManagement/userExperienceAnalyticsModelScores
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) 对象的集合。
 
 ## <a name="example"></a>示例
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMod
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 506
+Content-Length: 540
 
 {
   "value": [
@@ -79,6 +79,7 @@ Content-Length: 506
       "startupPerformanceScore": 7.666666666666667,
       "appReliabilityScore": 6.333333333333333,
       "workFromAnywhereScore": 7.0,
+      "batteryHealthScore": 6.0,
       "healthStatus": "insufficientData"
     }
   ]

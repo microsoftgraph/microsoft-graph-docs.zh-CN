@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f6933d0a4d4492b1b7ce29227df53c09e35d11c5
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 7c2281c197af248d0e1bba53e76d0885f9de4fca
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339463"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858000"
 ---
 # <a name="list-androiddeviceownerenterprisewificonfigurations"></a>列出 androidDeviceOwnerEnterpriseWiFiConfigurations
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [androidDeviceOwnerEnterpriseWiFiConfiguration 对象的属性和](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) 关系。
+列出 [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) 对象的集合。
 
 ## <a name="example"></a>示例
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2095
+Content-Length: 2373
 
 {
   "value": [
@@ -110,6 +110,11 @@ Content-Length: 2095
       "wiFiSecurityType": "wep",
       "preSharedKey": "Pre Shared Key value",
       "preSharedKeyIsSet": true,
+      "proxySettings": "manual",
+      "proxyManualAddress": "Proxy Manual Address value",
+      "proxyManualPort": 15,
+      "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+      "proxyExclusionList": "Proxy Exclusion List value",
       "eapType": "eapTtls",
       "trustedServerCertificateNames": [
         "Trusted Server Certificate Names value"

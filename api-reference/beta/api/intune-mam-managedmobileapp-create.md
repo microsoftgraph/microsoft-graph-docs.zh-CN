@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c50ec67f7f54fc638e235ae671ced8cd291bdfc
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: ae4dabe19adcda7a470cf8ae0af99df5ed265bd8
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204014"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858126"
 ---
 # <a name="create-managedmobileapp"></a>创建 managedMobileApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "65204014"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -39,6 +39,7 @@ ms.locfileid: "65204014"
 ``` http
 POST /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps
 POST /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/apps
+POST /deviceAppManagement/windowsManagedAppProtections/{windowsManagedAppProtectionId}/apps
 POST /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps
 POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps
 ```

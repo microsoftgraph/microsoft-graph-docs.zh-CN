@@ -4,12 +4,12 @@ description: JSON 批处理使你能够通过将多个请求合并为一个单�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 016f096eee9d601f0f178c0fa256c4271d1cd563
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 52c50796722faf51c91b65d65a21b3b495566924
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461378"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819697"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理在一个 HTTP 调用中合并多个请求
 
@@ -201,13 +201,24 @@ JSON 批处理请求的响应格式与请求格式类似。主要区别如下：
 
 JSON 批处理的其他用例是绕过 URL 长度限制。如果筛选子句太复杂，URL 长度可能会超越浏览器或其他 HTTP 客户端中内置的限制。你可以使用 JSON 批处理作为运行这些请求的解决方法，因为长 URL 只能成为请求有效负载的一部分。
 
+## <a name="batch-size-limitations"></a>批大小限制
+
+JSON 批处理请求目前限制为 20 个单独的请求，此外还有以下限制:
+
+* 根据作为批处理请求一部分的 API，基础服务会施加自己的限制，从而影响使用 Microsoft Graph 访问它们的应用程序。
+* 批处理中的请求将根据限制单独进行评估，如果任何请求超过限制，则请求会失败，状态为 `429`。
+* 面向 Outlook 资源的批处理 (如邮件和日历) 只能包含四个针对同一邮箱的请求。 有关详细信息，请参阅 [Outlook 服务限制][throttling-outlook]。
+
+有关详细信息，请参阅 [限制和批处理][throttling-and-batching]。
+
 ## <a name="known-issues"></a>已知问题
 
 有关与批处理相关的当前限制列表，请参阅[已知问题][batching-known-issues]。
 
 [batching-known-issues]: known-issues.md#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
-
+[throttling-and-batching]: throttling.md#throttling-and-batching
+[throttling-outlook]: throttling.md#outlook-service-limits
 
 ## <a name="see-also"></a>另请参阅
 

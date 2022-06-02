@@ -5,16 +5,18 @@ author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 5db7dbb8a853fa7a2752d3b4931a22b5ae1e1b4b
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 4dbeb597c8819f968ae67f06c25850cdc03d678d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451130"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821118"
 ---
-# <a name="use-the-to-do-api-in-microsoft-graph"></a>在 Microsoft Graph 中使用待办事项 API
+# <a name="use-the-to-do-api-built-on-base-tasks-in-microsoft-graph-deprecated"></a>使用建立在 Microsoft Graph 基础任务上的待办事项 API (已废弃)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 使用 Microsoft Graph 待办事项 API 创建与其邮箱中用户的任务连接的应用。 使用任务构建各种体验，如下所示：
 
@@ -31,7 +33,7 @@ ms.locfileid: "63451130"
 
 ## <a name="task-list"></a>任务列表
 
-[taskList](./basetasklist.md) 表示[任务](./basetask.md)资源的逻辑容器。 目前只能在任务列表中创建任务。 在默认任务列表中创建未指定列表的情况下创建的任务。 若要[获取所有任务列表](../api/basetasklist-get.md)，请执行以下 HTTP 请求：
+在此 API 集中，任务列表由 [baseTaskList](./basetasklist.md) 表示，它是 [baseTask](./basetask.md) 资源的逻辑容器。 目前只能在任务列表中创建任务。 在默认任务列表中创建未指定列表的情况下创建的任务。 若要[获取所有任务列表](../api/basetasklist-get.md)，请执行以下 HTTP 请求：
 
 ``` http
 GET /me/tasks/lists
@@ -39,7 +41,7 @@ GET /me/tasks/lists
 
 ## <a name="task"></a>任务
 
-[task](./basetask.md) 表示任务，即可跟踪和完成的一件工作或个人项目。 若要从任务列表中获取任务，请执行以下 HTTP 请求：
+在此 API 集中，任务由 [baseTask](./basetask.md) 资源表示，该资源是可跟踪和完成的工作项或个人项目。 若要从任务列表中获取任务，请执行以下 HTTP 请求：
 ``` http
 GET /me/tasks/lists/{taskListId}/tasks
 ```
@@ -63,8 +65,8 @@ GET /me/tasks/lists/{taskListId}/tasks/{taskId}/linkedresources/{linkedResourceI
 出于性能原因，可能需要维护对象的本地缓存，并使用 [delta 查询](/graph/delta-query-overview)定期将本地缓存与服务器同步。
 
 以下微软待办 API 资源支持 delta 查询：
-* 任务列表中的 [Task](./basetask.md) 集合
-* [TaskList](./basetasklist.md)
+* 任务列表中的 [baseTask](./basetask.md) 集合
+* [baseTaskList](./basetasklist.md)
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

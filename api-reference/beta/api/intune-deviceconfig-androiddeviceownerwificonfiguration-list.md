@@ -2,25 +2,25 @@
 title: 列出 androidDeviceOwnerWiFiConfigurations
 description: 列出 androidDeviceOwnerWiFiConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 98669ab1c913f511001ce349c65353cd71843fb0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 20496b5eed57e4f32064010417a4774f0c0ee17a
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088491"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857447"
 ---
 # <a name="list-androiddeviceownerwificonfigurations"></a>列出 androidDeviceOwnerWiFiConfigurations
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [androidDeviceOwnerWiFiConfiguration 对象的属性和](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) 关系。
+列出 [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) 对象的集合。
 
 ## <a name="example"></a>示例
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1643
+Content-Length: 1921
 
 {
   "value": [
@@ -109,11 +109,17 @@ Content-Length: 1643
       "connectWhenNetworkNameIsHidden": true,
       "wiFiSecurityType": "wep",
       "preSharedKey": "Pre Shared Key value",
-      "preSharedKeyIsSet": true
+      "preSharedKeyIsSet": true,
+      "proxySettings": "manual",
+      "proxyManualAddress": "Proxy Manual Address value",
+      "proxyManualPort": 15,
+      "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+      "proxyExclusionList": "Proxy Exclusion List value"
     }
   ]
 }
 ```
+
 
 
 

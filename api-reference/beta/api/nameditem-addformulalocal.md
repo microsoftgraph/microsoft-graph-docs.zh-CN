@@ -3,20 +3,22 @@ title: 添加已命名项 FormulaLocal
 description: 使用用户的公式区域设置，将新名称添加到给定范围的集合。
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: workbooks-and-charts
 author: ruoyingl
-ms.openlocfilehash: f680bc3757a24a8acea979f191cc5b7366422f6d
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 00980f38605b527237424983506dac6e10767613
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939537"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858441"
 ---
 # <a name="add-named-item-formulalocal"></a>添加已命名项 FormulaLocal
 
-命名空间：microsoft.graph 使用公式的用户区域设置将新名称添加到给定范围的集合。
+命名空间：microsoft.graph
 
-## <a name="permissions"></a>Permissions
+使用用户的公式区域设置，将新名称添加到给定范围的集合。
+
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +45,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|已命名项的名称。|
 |公式|字符串|名称将引用的公式或区域。|
