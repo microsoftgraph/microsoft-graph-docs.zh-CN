@@ -4,12 +4,12 @@ description: Microsoft Graph 提供单一 API 终结点，以便用户能够通�
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2cc63ae714b09060976b984aff576dd5a7c0bf05
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 1433de1b011f76bac8c1f0b0bda2dbbbdeebf288
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224396"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821083"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
 
@@ -40,8 +40,8 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 | [组织](/graph/api/resources/organization) | GA | GA |
 | [个人联系人](/graph/api/resources/contact)| GA | GA |
 | [用户](/graph/api/resources/user) | GA | GA |
-| [任务](/graph/api/resources/todotask) | GA | GA |
-| [任务列表](/graph/api/resources/todotasklist) | GA | GA |
+| [待办事项任务](/graph/api/resources/todotask) | GA | GA |
+| [待办事项任务列表](/graph/api/resources/todotasklist) | GA | GA |
 
 使用工作或学校帐户登录时，可以对所有这些资源使用扩展。 此外，使用个人帐户登录时，可以对“**事件**”、“**帖子**”、“**组**”、“**邮件**”、“**联系人**”和“**用户**”资源使用扩展。
 

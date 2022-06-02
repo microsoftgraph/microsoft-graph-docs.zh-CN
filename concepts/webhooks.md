@@ -5,12 +5,12 @@ author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: d9a16eff7edee32a45709bf614bf401ea15af408
-ms.sourcegitcommit: ca3edeed9408ee94bb12d7acf506d7317bf01d25
+ms.openlocfilehash: 5b1efac48762e1f1e69f9ac42d63d2c62b3b9a81
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64842298"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820705"
 ---
 # <a name="set-up-notifications-for-changes-in-resource-data"></a>设置资源数据更改的通知
 
@@ -51,7 +51,7 @@ Microsoft Graph 接受订阅请求之后，它将更改通知推送到订阅中�
 - Teams [状态][]
 - Teams [onlineMeeting][]
 - Teams [团队][]
-- [todoTask][]（预览版）
+- [待办事项任务][]
 - [用户][]
 
 ### <a name="sample-scenarios"></a>方案示例
@@ -267,7 +267,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
     如果处理预计花费不到 3 秒，则应处理通知，并在响应Microsoft Graph时返回 `200 - OK` 状态代码。 如果通知未正确处理，则返回 5xx 类代码以指示错误，以便重试通知。
 
-1. 验证 `clientState` 属性。它必须与最初使用订阅创建请求提交的值匹配。
+1. 验证 `clientState` 属性。 它必须与最初使用订阅创建请求提交的值匹配。
 
     > **注意：** 如果不符合这个条件，无需将其视为有效更改通知。 更改通知可能不是来自 Microsoft Graph，并且可能是由未授权操作者发送的。 还应调查更改通知来自何处并采取适当的措施。
 
@@ -357,7 +357,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [列表]: /graph/api/resources/list
 [打印机]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
-[todoTask]: /graph/api/resources/todotask
+[待办事项任务]: /graph/api/resources/todotask
 [频道]: /graph/api/resources/channel
 [聊天]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember

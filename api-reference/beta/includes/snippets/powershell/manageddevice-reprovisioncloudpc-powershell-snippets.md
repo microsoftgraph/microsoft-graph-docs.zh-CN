@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5d4eb97740cb2b664a7e43ca391bcb11dd2d5ac6
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 69bed042e78ffc4597f3feeff65a6426d0882199
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341693"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65828763"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Actions
 
-Invoke-MgCloudDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId
+Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 04e251ceae4adf8b0a721701965094114188a9d4
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 13aaf5305e64cdce8728aaffb106ff7e7c638608
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338191"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65828762"
 ---
 ```powershell
 
@@ -20,6 +20,6 @@ $params = @{
     TimeRange = "before"
 }
 
-Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc -BodyParameter $params
+Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc -BodyParameter $params
 
 ```
