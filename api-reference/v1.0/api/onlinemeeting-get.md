@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f96c7b413532f092b60ac684c79b4949622d3e50
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 1dddf9b98e39f7ff34b72d662a939ffb9561a9a8
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820862"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884186"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -21,9 +21,9 @@ ms.locfileid: "65820862"
 例如，你能够：
 
 - 使用 [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)、 [会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id) 或 [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl) 获取联机会议的详细信息。
-- `/attendeeReport`使用路径以下载链接的形式获取[Microsoft Teams直播活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告，如[示例 4](#example-4-fetch-attendee-report-of-a-teams-live-event) 所示。
+- `/attendeeReport`使用路径以下载链接的形式获取 [Microsoft Teams 直播活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告，如[示例 4](#example-4-fetch-attendee-report-of-a-teams-live-event) 所示。
 
-Teams直播活动与会者报告是一个在线会议项目。 有关详细信息，请参阅 [联机会议项目和权限](/graph/cloud-communications-online-meeting-artifacts)。
+Teams 实时事件与会者报告是一个联机会议项目。 有关详细信息，请参阅 [联机会议项目和权限](/graph/cloud-communications-online-meeting-artifacts)。
 
 ## <a name="permissions"></a>权限
 
@@ -41,12 +41,15 @@ Teams直播活动与会者报告是一个在线会议项目。 有关详细信�
 > 如果提取联机会议项目，并且没有联机会议项目，则仅需要 _OnlineMeetingArtifact.Read.All_ 权限。 有关详细信息，请参阅 [联机会议项目和权限](/graph/cloud-communications-online-meeting-artifacts)。
 
 ## <a name="http-request"></a>HTTP 请求
+
 若要使用具有委派 () 和应用`/users/{userId}` (`/me`) 权限的会议 ID 获取 **onlineMeeting**：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
+
+这些请求 URL 接受组织者和受邀与会者的用户令牌 (委派权限) 或用户 ID (应用权限) 。
 
 若要使用具有应用权限的 **videoTeleconferenceId** 获取 **onlineMeeting***：
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +64,7 @@ GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-若要获取具有委派[ () 和应用的Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) `/me` 实时活动的与会者报告 () `/users/{userId}` 权限：
+若要获取具有委派 () 和应用`/users/{userId}` () `/me` 权限的 [Teams 实时活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告：
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -96,7 +99,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 
 - 如果按会议 ID 提取联机会议，此方法会在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
 - 如果通过 **videoTeleconferenceId** 或 **joinWebUrl** 提取联机会议，此方法将返回一个集合，该集合在响应正文中只包含一个 [onlineMeeting](../resources/onlinemeeting.md) 对象。
-- 如果提取[Teams直播活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告，此方法将返回一个`Location`标头，该标头指示与会者报表的 URI。
+- 如果提取 [Teams 直播活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告，此方法将返回一个 `Location` 标头，该标头指示与会者报表的 URI。
 
 ## <a name="examples"></a>示例
 
@@ -221,7 +224,7 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：通过会议 ID 检索联机会议
-可以通过包含用户或应用程序令牌的会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md) 时，会在响应对象中提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，应用程序首先使用图形 API创建联机会议，然后以单独的操作方式检索会议信息。
+可以通过包含用户或应用程序令牌的会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md) 时，会在响应对象中提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，当应用程序首先使用图形 API 创建联机会议，然后以单独的操作方式检索会议信息时。
 
 #### <a name="request"></a>请求
 
@@ -313,7 +316,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>示例 3：通过 joinWebUrl 检索联机会议
-可以使用用户或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的用例，例如，当用户在Microsoft Teams客户端) 中创建会议 (时，单独的应用程序需要检索会议详细信息作为后续操作。
+可以使用用户或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的用例，例如，当用户在 Microsoft Teams 客户端) 中创建会议 (时，需要单独的应用程序检索会议详细信息作为后续操作。
 
 #### <a name="request"></a>请求
 
@@ -378,7 +381,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>示例 4：获取Teams直播活动的与会者报告
+### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>示例 4：获取 Teams 直播活动的与会者报告
 
 以下示例演示下载与会者报表的请求。
 

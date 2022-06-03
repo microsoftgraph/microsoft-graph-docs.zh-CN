@@ -5,12 +5,12 @@ title: driveItem
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: f0bf0d668aacd62cf452f7fa8a469d7e6b9663f7
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 6dfc2326b062becde4fd29138c29e21cf701f7d6
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917729"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883850"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -27,7 +27,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 * 通过 **driveItem** 唯一标识符使用 `drive/items/{item-id}` 的方式
 * 通过使用文件系统路径 `/drive/root:/path/to/file` 的方式
 
-有关详细信息，请参阅 [寻址 driveItems](/graph/concepts/onedrive-addressing-driveitems.md)。
+有关详细信息，请参阅 [寻址 driveItems](/graph/onedrive-addressing-driveitems)。
 
 **DriveItem** 资源拥有作为属性进行模块化的多个 Facet，用于提供 driveItem 的标识和功能相关数据。例如：
 
@@ -98,7 +98,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | lastModifiedDateTime | DateTimeOffset     | 上次修改项的日期和时间。 只读。
 | location             | [geoCoordinates][] | 位置元数据（如果此项包含位置数据）。只读。
 | 恶意软件 (malware)              | [恶意软件][]        | 恶意软件元数据，如果检测到项目包含恶意软件。只读。
-| 媒体                | [media][]          | 有关媒体 (音频或视频) 项的信息。 读写。 仅在OneDrive for Business和SharePoint。
+| 媒体                | [media][]          | 有关媒体 (音频或视频) 项的信息。 读写。 仅在 OneDrive for Business 和 SharePoint 上。
 | name                 | String             | 项目名称（文件名和扩展名）。读写。
 | package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
@@ -112,7 +112,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | sharepointIds        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 | size                 | Int64              | 项目大小，以字节为单位。只读。
 | specialFolder        | [specialFolder][]  | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。
-| source               | [driveItemSource][]| 有关驱动器项源的信息。 只读。 仅在OneDrive for Business和SharePoint。
+| source               | [driveItemSource][]| 有关驱动器项源的信息。 只读。 仅在 OneDrive for Business 和 SharePoint 上。
 | video                | [video][]          | 视频元数据（如果此项是一个视频）。只读。
 | WebDavUrl            | String             | 项的可兼容 WebDAV 的 URL。
 | WebUrl               | String             | 在浏览器中显示此资源的 URL。只读。

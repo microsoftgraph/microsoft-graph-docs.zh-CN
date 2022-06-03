@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 0328358f712f952fa4a264405298ea7fd22858c5
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: f6101ee472cb1df688760f79bcf38034f999216c
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733202"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884046"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection： updateAdDomainPassword
 命名空间：microsoft.graph
@@ -28,15 +28,19 @@ ms.locfileid: "64733202"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|CloudPC.ReadWrite.All|
+|应用程序|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
+
+> [!CAUTION] 
+> 此操作的 PATCH 语法已弃用，将在 2022 年 6 月之后停止工作。 我们建议你今后使用 POST。
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+POST /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 ```
 
@@ -73,7 +77,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomai
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 Content-Type: application/json
 
 {

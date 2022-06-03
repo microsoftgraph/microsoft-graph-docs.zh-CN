@@ -1,24 +1,22 @@
 ---
 title: 添加成员
-description: 使用此 API 将用户或 (组) 添加到管理单元。
+description: 使用此 API 将成员 (用户、组或设备) 添加到管理单元。
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 22cc8c5022cdc27d434ba62bdf76891a7344d7e9
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 9598d63f17e83d92913724f0b64cb5092307a3a4
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672026"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884101"
 ---
 # <a name="add-a-member"></a>添加成员
 
 命名空间：microsoft.graph
 
-使用此 API 将用户或 (组) 添加到管理单元。
-
-`NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
+使用此 API 将成员 (用户、组或设备) 添加到管理单元。 目前只能一次向管理单元添加一个成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,7 +40,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中， `id` 提供要添加 [的用户](../resources/user.md)、  [组](../resources/group.md) 或 [directoryObject](../resources/directoryobject.md) 的 。
+在请求正文中，提供 `id` 要添加的 [用户](../resources/user.md)、  [组](../resources/group.md)、 [设备](../resources/device.md)或 [directoryObject](../resources/directoryobject.md) 。
 
 ## <a name="response"></a>响应
 
@@ -58,7 +56,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
   "blockType": "request",
   "name": "post_administrativeUnits_members"
 } -->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
 
@@ -93,7 +91,6 @@ Content-type: application/json
 
 ---
 
-在请求正文中， `id` 提供 [要添加](../resources/user.md) 的用户或 [组](../resources/group.md) 对象的 。
 
 ### <a name="response"></a>响应
 下面是一个响应示例。

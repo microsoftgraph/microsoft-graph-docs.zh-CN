@@ -1,30 +1,30 @@
 ---
-title: informationProtectionLabel：evaluateClassificationResults
+title: informationProtectionLabel： evaluateClassificationResults
 description: 根据现有内容信息和分类结果评估要应用的标签。
 ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a832aeedbe8f4d44cb6e33b11daf7c6b0ab2a72b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 7cc2a3922ab9361ec607518d81eb74a9f3facda7
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346870"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884053"
 ---
-# <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel：evaluateClassificationResults
+# <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel： evaluateClassificationResults
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 [分类](../resources/classificationresult.md)结果 [，计算应](../resources/informationprotectionlabel.md) 应用的信息保护标签，并返回为正确标记信息而必须采取的一组操作。 当标签应基于文件内容分类自动设置，而不是直接由用户或服务进行标记时，此 API 非常有用。 
+使用 [分类结果](../resources/classificationresult.md)，计算应应用 [的信息保护标签](../resources/informationprotectionlabel.md) ，并返回为正确标记信息而必须采取的操作集。 当应根据文件内容的分类自动设置标签，而不是由用户或服务直接标记时，此 API 非常有用。 
 
-若要根据分类结果进行评估，请提供 [contentInfo](../resources/contentinfo.md)，其中包括现有内容元数据 [键/](../resources/keyvaluepair.md)值对 [以及分类结果](../resources/classificationresult.md)。 API 返回 [一个 informationProtectionAction](../resources/informationprotectionaction.md) ，其中包含下列内容之一： 
+若要根据分类结果进行评估，请提供 [contentInfo](../resources/contentinfo.md)，其中包括现有内容元数据 [键/值对](../resources/keyvaluepair.md)和 [分类结果](../resources/classificationresult.md)。 API 返回一个 [信息ProtectionAction](../resources/informationprotectionaction.md) ，其中包含以下更多内容之一： 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
-* [addActionmarkAction](../resources/addWatermarkaction.md)
+* [addWatermarkAction](../resources/addWatermarkaction.md)
 * [applyLabelAction](../resources/applylabelaction.md)
 * [customAction](../resources/customaction.md)
 * [justifyAction](../resources/justifyaction.md)
@@ -36,7 +36,7 @@ ms.locfileid: "62346870"
 * [removeContentFooterAction](../resources/removecontentfooteraction.md)
 * [removeContentHeaderAction](../resources/removecontentheaderaction.md)
 * [removeProtectionAction](../resources/removeprotectionaction.md)
-* [remove使用markAction](../resources/removewatermarkaction.md)
+* [removeWatermarkAction](../resources/removewatermarkaction.md)
 
 ## <a name="permissions"></a>权限
 
@@ -62,7 +62,7 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}。必需。                                                                                                                                             |
 | Content-type  | application/json. Required.                                                                                                                                           |
-| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将显示于 Azure 信息保护分析中。 建议的格式为 ApplicationName/Version。 可选。 |
+| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显示。 建议的格式为 ApplicationName/Version。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -70,12 +70,12 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 
 | 参数             | 类型                                                                    | 说明                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | 提供有关内容格式、内容状态和作为键/值对[](../resources/keyvaluepair.md)的现有元数据的详细信息。                                                                                                                                                   |
-| classificationResults | [classificationResult](../resources/classificationresult.md) 集合 | 包含数据分类终结点返回的分类结果集。 分类信息用于根据安全与合规中心中的Microsoft 信息保护策略标签Office 365相应的标签。 |
+| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | 提供有关内容格式、内容状态和现有 [元数据](../resources/keyvaluepair.md) 作为键/值对的详细信息。                                                                                                                                                   |
+| classificationResults | [classificationResult](../resources/classificationresult.md) 集合 | 包含数据分类终结点返回的分类结果集。 分类信息用于根据 Office 365 安全与合规中心中的 Microsoft Purview 信息保护策略标签配置确定适当的标签。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和新的 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。
 
 ## <a name="examples"></a>示例
 

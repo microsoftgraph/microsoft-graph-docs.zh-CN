@@ -1,22 +1,22 @@
 ---
-title: List device transitive groups
-description: 获取设备所属的组。
+title: 列出设备可传递成员身份
+description: 获取设备所属的组和管理单元。
 author: spunukol
 ms.prod: directory-management
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: 4610a7c493146c127e3847d762fc953635f50733
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5b62d40e7dcc6d583f4e4a2c369244e4f6e72659
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65203953"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883871"
 ---
-# <a name="list-device-transitive-groups"></a>List device transitive groups
+# <a name="list-device-transitive-memberships"></a>列出设备可传递成员身份
 
 命名空间：microsoft.graph
 
-获取设备所属的组。 此 API 请求是可传递的，还会返回设备是嵌套成员的所有组。
+获取设备所属的组和管理单元。 此 API 请求是可传递的，还会返回设备是嵌套成员的所有组和管理单元。
 
 ## <a name="permissions"></a>权限
 
@@ -148,7 +148,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response"

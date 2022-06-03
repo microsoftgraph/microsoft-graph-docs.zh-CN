@@ -1,16 +1,16 @@
 ---
 title: 删除页面
-description: 删除OneNote页。
+description: 删除 OneNote 页面。
 ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c18f3421dbd68755ac8c2cdb124bb1f4d1c5a085
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7fe2c042daed84c349b8b054a779239f09f619bd
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133222"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884244"
 ---
 # <a name="delete-page"></a>删除页面
 
@@ -18,7 +18,7 @@ ms.locfileid: "62133222"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除OneNote页。
+删除 OneNote 页面。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,8 +46,8 @@ DELETE /sites/{id}/onenote/pages/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,8 +83,8 @@ DELETE https://graph.microsoft.com/beta/me/onenote/pages/{id}
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。
+### <a name="response"></a>响应
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: c0d6a5538b97a2109c51698a1df55f5b7210622e
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 4b605df9871e0847c13206da3fcc9144d6b63a34
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883997"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -30,7 +30,7 @@ ms.locfileid: "64917750"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：对于允许应用代表用户读取服务使用情况报告的委派权限，租户管理员必须为用户分配适当的Azure Active Directory受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+> **注意**：对于允许应用代表用户读取服务使用情况报告的委派权限，租户管理员必须为用户分配相应的 Azure Active Directory 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -97,7 +97,7 @@ CSV 文件包含下面的列标题：
 
 ## <a name="examples"></a>示例
 
-### <a name="csv"></a>CSV
+### <a name="example-1-csv-output"></a>示例 1：CSV 输出
 
 下面是输出 CSV 的示例。
 
@@ -143,7 +143,7 @@ Content-Type: application/octet-stream
 Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
 ```
 
-### <a name="json"></a>JSON
+### <a name="example-2-json-output"></a>示例 2：JSON 输出
 
 下面是返回 JSON 的示例。
 

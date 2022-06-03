@@ -163,9 +163,9 @@ items:
         items:
           - name: 概述
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
-          - name: /graph/toolkit for React
+          - name: 用于 React 的 /graph/toolkit
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
-          - name: /graph/toolkit for SPFx
+          - name: SPFx 的 /graph/toolkit
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
       - name: 构建首个应用
         items:
@@ -386,9 +386,9 @@ items:
                 href: api/user-list-transitivememberof.md
           - name: 见解
             items:
-              - name: Office Graph见解
+              - name: Office Graph 见解
                 items:
-                  - name: Office Graph见解
+                  - name: Office Graph 见解
                     href: resources/officegraphinsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -455,10 +455,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: 更新邮箱设置
                     href: api/user-update-mailboxsettings.md
-              - name: Outlook用户服务
+              - name: Outlook 用户服务
                 expanded: true
                 items:
-                  - name: Outlook用户
+                  - name: Outlook 用户
                     href: resources/outlookuser.md
                   - name: 创建类别
                     href: api/outlookuser-post-mastercategories.md
@@ -1320,7 +1320,7 @@ items:
                     href: api/participant-mute.md
                   - name: 邀请参与者
                     href: api/participant-invite.md
-                  - name: '"开始"菜单保留音乐'
+                  - name: 开始保留音乐
                     href: api/participant-startholdmusic.md
                   - name: 停止按住音乐
                     href: api/participant-stopholdmusic.md
@@ -4196,7 +4196,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: 所有许可的用户分配目标
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Android企业始终在 VPN 包类型上
+                  - name: Android 企业始终在 VPN 包类型上
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: 符合性状态
                     href: resources/intune-shared-compliancestatus.md
@@ -4263,7 +4263,7 @@ items:
                     href: api/serviceannouncement-list-issues.md
                   - name: 获取问题
                     href: api/servicehealthissue-get.md
-                  - name: 获取帖子事件审查报告
+                  - name: 获取事件后审阅报告
                     href: api/servicehealthissue-incidentreport.md
               - name: 服务更新消息
                 href: resources/serviceupdatemessage.md
@@ -4725,9 +4725,9 @@ items:
                     href: api/device-delete-registeredowners.md
                   - name: 删除已注册的用户
                     href: api/device-delete-registeredusers.md
-                  - name: 列出设备组
+                  - name: 列出设备成员身份
                     href: api/device-list-memberof.md
-                  - name: List device transitive groups
+                  - name: 列出设备可传递成员身份
                     href: api/device-list-transitivememberof.md
                   - name: 列出注册的所有者
                     href: api/device-list-registeredowners.md
@@ -5242,7 +5242,7 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/fido2authenticationmethodconfiguration-delete.md
-                      - name: Microsoft Authenticator策略
+                      - name: Microsoft Authenticator 策略
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -5435,7 +5435,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: 更新
                         href: api/identityapiconnector-update.md
-                      - name: Upload客户端证书
+                      - name: 上传客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
@@ -5964,7 +5964,7 @@ items:
                 href: api/user-list-people.md
           - name: 见解
             items:
-              - name: Office Graph见解
+              - name: Office Graph 见解
                 href: resources/officegraphinsights.md
               - name: 共享的内容
                 href: resources/insights-shared.md
@@ -6088,7 +6088,7 @@ items:
                 items:
                   - name: 列出预配
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365使用情况报告
+          - name: Microsoft 365 使用情况报告
             items:
               - name: 概述
                 href: resources/report.md

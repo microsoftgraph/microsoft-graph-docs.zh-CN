@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 505a31673ea110f899b37b7d6404b5020ed6d88e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d46f15a86742a23b6ec4e9f6c270308de34c169c
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113649"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883983"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>meetingParticipantInfo 资源类型
 
@@ -22,9 +22,13 @@ ms.locfileid: "59113649"
 
 | 属性 | 类型                          | 说明                                                                         |
 | :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
-| identity | [identitySet](identityset.md) | 参与者的身份信息。                                            |
-| upn      | String                        | 参与者的用户主体名称。                                             |
-| role     | onlineMeetingRole             | 指定会议参与者的角色。  可能的值为 `attendee` `presenter` 、、 `producer` 和 `unknownFutureValue` 。|
+| 身份 | [identitySet](identityset.md) | 参与者的标识信息。                                            |
+| Upn      | String                        | 参与者的用户主体名称。                                             |
+| role     | onlineMeetingRole             | 指定参与者在会议中的角色。  可能的值是`attendee`， `presenter`和 `producer``unknownFutureValue`.|
+
+> [!TIP]
+>
+> 若要在创建或更新 [OnlineMeeting](onlinemeeting.md) 时设置会议与会者的 **演示** 者角色，还必须将 **allowedPresenters** 的值设置为 `roleIsPresenter`。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: df070a34f26dddf17670237f25df5bc1bfff0f29
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e735e4440eec0b5ab82f0e7b3cbddc16f851114f
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105748"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884251"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -18,15 +18,15 @@ ms.locfileid: "62105748"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [onlineMeeting 对象的属性和](../resources/onlinemeeting.md) 关系。
+检索 [onlineMeeting](../resources/onlinemeeting.md) 对象的属性和关系。
 
 例如，你能够：
 
-- 使用[videoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)[会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或[joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取 onlineMeeting 的详细信息。
-- 使用 路径获取活动Microsoft Teams下载链接的形式，如示例 `/attendeeReport` [4 所示](#example-4-fetch-attendee-report-of-a-teams-live-event)。 [](/microsoftteams/teams-live-events/what-are-teams-live-events)
-- 使用 `/recording` 和 路径，以下载Teams获取实时事件的录制，如示例 `/alternativeRecording` [5 所示](#example-5-fetch-recording-of-a-teams-live-event)。 [](/microsoftteams/teams-live-events/what-are-teams-live-events)
+- 使用 [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)、 [会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id) 或 [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl) 获取 onlineMeeting 的详细信息。
+- `/attendeeReport`使用路径以下载链接的形式获取 [Microsoft Teams 直播活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告，如[示例 4](#example-4-fetch-attendee-report-of-a-teams-live-event) 所示。
+- `/recording`使用和`/alternativeRecording`路径以下载链接的形式获取 [Teams 实时事件](/microsoftteams/teams-live-events/what-are-teams-live-events)的录制，如[示例 5](#example-5-fetch-recording-of-a-teams-live-event) 所示。
 
-Teams事件参与者报告，Teams实时事件录制是联机会议项目。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
+Teams 实时事件与会者报告和 Teams 实时事件录制是联机会议项目。 有关详细信息，请参阅 [联机会议项目和权限](/graph/cloud-communications-online-meeting-artifacts)。
 
 ## <a name="permissions"></a>权限
 
@@ -38,35 +38,36 @@ Teams事件参与者报告，Teams实时事件录制是联机会议项目。 有
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                         |
 | 应用程序                            | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All  |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用代表该用户获取联机会议和/或联机会议项目 (请求路径) 中指定了用户 ID。
+若要对此 API 使用应用程序权限，租户管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy) 并将其授予用户授权策略中配置的应用，以便代表该用户 (使用请求路径) 中指定的用户 ID 提取联机会议和/或联机会议项目。
 
 > [!CAUTION]
-> 如果获取联机会议项目，则仅需要 _OnlineMeetingArtifact.Read.All_ 权限。 在 **2022** 年 1 月 15 日之前，你仍然可以提取没有它们的会议项目。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
+> 如果提取联机会议项目，则仅需要 _OnlineMeetingArtifact.Read.All_ 权限。 在 **2022 年 1 月 15** 日之前，仍可以提取没有它们的会议项目。 有关详细信息，请参阅 [联机会议项目和权限](/graph/cloud-communications-online-meeting-artifacts)。
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要使用具有委派权限的会议 ID 获取 **onlineMeeting， ()** `/me` 应用 () `/users/{userId}` 权限：
+若要使用具有委派 () 和应用`/users/{userId}` (`/me`) 权限的会议 ID 获取 **onlineMeeting**：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
+这些请求 URL 接受组织者和受邀与会者的用户令牌 (委派权限) 或用户 ID (应用权限) 。
 
-若要使用具有应用权限 **的 videoTeleconferenceId** 获取 **onlineMeeting：**
+若要使用具有应用权限 **的 videoTeleconferenceId** 获取 **onlineMeeting**：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-若要使用具有委派权限的 **joinWebUrl** 获取 **onlineMeeting， ()** `/me` 应用程序 () `/users/{userId}` 权限：
+若要使用具有委派 () 和应用的 `/me` **joinWebUrl** 获取 **onlineMeeting**， () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-若要获取具有委派Teams实时事件的[](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告 () `/me` 应用 () `/users/{userId}` 权限：
+若要获取具有委派 () 和应用`/users/{userId}` () `/me` 权限的 [Teams 实时活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告：
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -74,7 +75,7 @@ GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-若要通过委派的 Teams[](/microsoftteams/teams-live-events/what-are-teams-live-events)和应用 () 实时事件 `/me` () `/users/{userId}` 权限：
+若要获取具有委派 () 和应用`/users/{userId}` (`/me`) 权限的 [Teams 实时事件](/microsoftteams/teams-live-events/what-are-teams-live-events)的录制：
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -86,10 +87,10 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 > [!NOTE]
 >- 路径 `/app` 已弃用。 今后，请使用路径 `/communications`。
->- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
->- `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
-> - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关详细信息，请参阅 [VTC 会议 ID](/microsoftteams/cloud-video-interop-for-teams-set-up)。
->- `joinWebUrl` 必须经过 URL 编码。
+>- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+>- `meetingId`是 [onlineMeeting](../resources/onlinemeeting.md) 对象的 **ID**。
+> - **videoTeleconferenceId** 是为 Cloud-Video-Interop 许可用户生成的，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关详细信息，请参阅 [VTC 会议 ID](/microsoftteams/cloud-video-interop-for-teams-set-up)。
+>- `joinWebUrl` 必须对 URL 进行编码。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -107,12 +108,12 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 响应代码。 该响应还包括下列内容之一：
+如果成功，此方法返回 `200 OK` 响应代码。 响应还包括下列操作之一：
 
-- 如果通过会议 ID 获取联机会议，此方法在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
-- 如果通过 **videoTeleconferenceId** 或 **joinWebUrl** 提取联机会议，此方法将返回响应正文中仅包含 [一个 onlineMeeting](../resources/onlinemeeting.md) 对象的集合。
-- 如果提取联机会议的会议出席报告，此方法在响应正文中返回 [meetingAttendanceReport](../resources/meetingAttendanceReport.md) 对象。
-- 如果提取 Live 事件与会者报告或录制 **Microsoft Teams，** 此方法将分别返回一个标头，指示与会者报告或录制 `Location` 的 URI。
+- 如果按会议 ID 提取联机会议，此方法会在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+- 如果通过 **videoTeleconferenceId** 或 **joinWebUrl** 提取联机会议，此方法将返回一个集合，该集合在响应正文中只包含一个 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+- 如果提取联机会议的出席情况报告，此方法会在响应正文中返回 [meetingAttendanceReport](../resources/meetingAttendanceReport.md) 对象。
+- 如果提取与会者报告或 **Microsoft Teams Live 事件** 的录制，此方法将返回一个 `Location` 标头，该标头分别指示与会者报表或录制的 URI。
 
 ## <a name="examples"></a>示例
 
@@ -239,12 +240,12 @@ Content-Length: 1574
     }  
 ```
 
-### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：按会议 ID 检索联机会议
-可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中会提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
+### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：通过会议 ID 检索联机会议
+可以通过包含用户或应用程序令牌的会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md) 时，会在响应对象中提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，当应用程序首先使用图形 API 创建联机会议，然后以单独的操作方式检索会议信息时。
 
 #### <a name="request"></a>请求
 
-> **注意：** 为了可读性，会议 ID 已被截断。
+> **注意：** 为了实现可读性，会议 ID 已被截断。
 
 以下请求使用用户令牌。
 <!-- { "blockType": "ignored" } -->
@@ -252,7 +253,7 @@ Content-Length: 1574
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 
-以下请求使用应用程序令牌。
+以下请求使用应用令牌。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
@@ -301,7 +302,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```
 
 ### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>示例 3：通过 joinWebUrl 检索联机会议
-您可以使用用户令牌或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的用例，例如当用户创建会议 (例如，在 Microsoft Teams 客户端) 中，而单独的应用程序需要检索会议详细信息作为后续操作。
+可以使用用户或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 不为人知的用例，例如当用户创建会议 (（例如在 Microsoft Teams 客户端) 中）时，单独的应用程序需要检索会议详细信息作为后续操作。
 
 #### <a name="request"></a>请求
 
@@ -311,7 +312,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
 ```
 
-以下请求使用应用程序令牌。
+以下请求使用应用令牌。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
@@ -363,9 +364,9 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>示例 4：获取实时事件的Teams报告
+### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>示例 4：获取 Teams 直播活动的与会者报告
 
-以下示例显示下载与会者报告的请求。
+以下示例演示下载与会者报表的请求。
 
 #### <a name="request"></a>请求
 
@@ -427,9 +428,9 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
-### <a name="example-5-fetch-recording-of-a-teams-live-event"></a>示例 5：提取实时Teams录制
+### <a name="example-5-fetch-recording-of-a-teams-live-event"></a>示例 5：提取 Teams 直播活动的录制
 
-以下示例显示下载录制的请求。
+以下示例演示下载录制的请求。
 
 #### <a name="request"></a>请求
 

@@ -5,19 +5,19 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 0d17a2bccf9289d144d90efda970d97cd777c38a
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: a683661fe309b99d97d2cd6d5a771bc17b0bcb97
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862077"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884067"
 ---
 # <a name="list-credentialuserregistrationssummaries"></a>列出 credentialUserRegistrationsSummaries
 命名空间：microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [credentialUserRegistrationsSummary 对象](../resources/managedtenants-credentialuserregistrationssummary.md) 及其属性的列表。
+获取 [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) 对象及其属性的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -39,7 +39,7 @@ GET /tenantRelationships/managedTenants/credentialUserRegistrationsSummaries
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应，包括 `$apply` `$count` `$filter` `$orderBy` `$select` 、、 `$skip` 和 `$top` 。
+此方法支持 [OData 查询参数](/graph/query-parameters)，以帮助自定义响应，包括`$apply`、`$count`、`$filter`、`$orderBy``$select`和 `$skip``$top`。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -51,7 +51,7 @@ GET /tenantRelationships/managedTenants/credentialUserRegistrationsSummaries
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -110,6 +110,7 @@ Content-Type: application/json
       "mfaAndSsprCapableUserCount": 2,
       "ssprEnabledUserCount": 9,
       "mfaRegisteredUserCount": 3,
+      "mfaExcludedUserCount": 0,
       "ssprRegisteredUserCount": 2,
       "totalUserCount": 9,
       "securityDefaultsEnabled": false,
@@ -123,6 +124,7 @@ Content-Type: application/json
       "mfaAndSsprCapableUserCount": 0,
       "ssprEnabledUserCount": 1,
       "mfaRegisteredUserCount": 0,
+      "mfaExcludedUserCount": 2,
       "ssprRegisteredUserCount": 0,
       "totalUserCount": 7,
       "securityDefaultsEnabled": false,
