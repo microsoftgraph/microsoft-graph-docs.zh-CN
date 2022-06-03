@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: c1704b2bb745f34f4dd87ba9fe63d8cf66ecc087
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d76959a962da2ae13c05c5ac042aa63bca6da317
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139476"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821125"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -36,6 +36,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | 安全[警报][] | 对特定警报更改：<br>`/security/alerts/{id}` <br>对已筛选的警报更改：<br> `/security/alerts/?$filter`| 否 |
 | Teams [callRecord][] | 更改 _所有_ 呼叫记录： `/communications/callRecords` | 否 |
 | Teams [chatMessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
+| [待办事项任务][] | 对特定任务列表中的所有任务进行更改:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>对所有任务的更改:<br>`/me/todo/lists/alltasks` | 否 |
 
 > **注意**：以 `/users/{id}` 开头的任何资源路径还可接受 `/me` 以引用已登录的用户。
 
@@ -45,8 +46,8 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 
 | 权限类型                        | 支持的资源类型                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| 委派 - 工作或学校帐户     | [警报][]、[联系人][]、[对话][]、[driveItem][]、[列表][]、 [事件][]、[组][]、[邮件][]、[用户][]|
-| 委派 - 个人 Microsoft 帐户 | [联系人][]、[driveItem][]、[列表][]、[事件][]、[邮件][]                                        |
+| 委派 - 工作或学校帐户     | [警报][]、[联系人][]、[对话][]、[driveItem][]、[列表][]、[事件][]、[组][]、[消息][]、[todoTask][]、[用户][]|
+| 委派 - 个人 Microsoft 帐户 | [联系人][]、[driveItem][]、[列表][]、[事件][]、[消息][]、[todoTask][]                                       |
 | 应用程序                            | [警报][]、 [联系人][]、 [列表][]、 [driveItem][]、 [event][]、 [组][]、 [、][]， [用户][]、 [callRecord][]、 [chatMessage][]、 [打印机][]、 [printTaskDefinition][]|
 
 
@@ -73,4 +74,6 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [警报]: ./alert.md
 [打印机]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[待办事项任务]: ./todotask.md
+[todoTask]: ./todotask.md
 
