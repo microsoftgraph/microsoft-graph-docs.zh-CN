@@ -4,12 +4,12 @@ description: 可选择两种方法中的一种来将文件附加到邮件或事�
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 582501205c106b3deaf0312f3db9c81488feb3de
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: c6e23f8f30e5dc155f54015fd740df761b9a7769
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133046"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883829"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>将大文件附加到 Outlook 邮件或事件
 
@@ -193,11 +193,11 @@ Content-type: application/json
 成功的上传将返回 `HTTP 200 OK` 和 **uploadSession** 对象。 请注意响应对象中的以下项：
 
 - **ExpirationDateTime** 属性指示 **uploadUrl** 属性值中嵌入的身份验证令牌的到期日期/时间。 此到期日期/时间与步骤 1 中由初始 **uploadSession** 返回的值相同。
-- **NextExpectedRanges** 指定上传开始的下一个字节位置，例如 `"NextExpectedRanges":["2097152"]`。 必须按顺序上传文件中的字节。
-<!-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
+- nextExpectedRanges ** 指定下一个字节位置，例如， `"nextExpectedRanges":["2097152"]`。 必须按顺序上传文件中的字节。
+<!-- The **nextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
-  - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`.
-  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
+  - On a successful upload, this property returns the next range to start from, for example, `"nextExpectedRanges":["2097152"]`.
+  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"nextExpectedRanges":["1998457-2097094"]`.
 -->
 - **uploadUrl** 属性不会显式返回，因为上传会话的所有 `PUT` 操作使用创建会话时返回的同一 URL（步骤 1）。
 
@@ -219,7 +219,7 @@ Content-Range: bytes 0-2097151/3483322
 
 #### <a name="response"></a>响应
 
-下列示例响应在 **NextExpectedRanges** 属性中显示服务器预期的下一字节范围的起点。
+下列示例响应在 **nextExpectedRanges** 属性中显示服务器预期的下一字节范围的起点。
 <!-- {
   "blockType": "ignored"
 }-->
@@ -230,7 +230,7 @@ Content-type: application/json
 {
   "@odata.context":"https://outlook.office.com/api/v2.0/$metadata#Users('a8e8e219-4931-95c1-b73d-62626fd79c32%4072aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA%3D')/AttachmentSessions/$entity",
   "ExpirationDateTime":"2019-09-25T01:09:30.7671707Z",
-  "NextExpectedRanges":["2097152"]
+  "nextExpectedRanges":["2097152"]
 }
 ```
 
@@ -252,7 +252,7 @@ Content-Range: bytes 0-2097151/3483322
 
 #### <a name="response"></a>响应
 
-下列示例响应在 **NextExpectedRanges** 属性中显示服务器预期的下一字节范围的起点。
+下列示例响应在 **nextExpectedRanges** 属性中显示服务器预期的下一字节范围的起点。
 <!-- {
   "blockType": "ignored"
 }-->
@@ -263,14 +263,14 @@ Content-type: application/json
 {
     "@odata.context":"https://outlook.office.com/api/v2.0/$metadata#Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69%4098a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA%3D')/AttachmentSessions/$entity",
     "ExpirationDateTime":"2020-02-22T02:46:56.7410786Z",
-    "NextExpectedRanges":["2097152"]
+    "nextExpectedRanges":["2097152"]
 }
 ```
 
 
 ## <a name="step-3-continue-uploading-byte-ranges-until-the-entire-file-has-been-uploaded"></a>步骤 3：继续上传字节范围，直至完整文件上传完毕
 
-执行步骤 2 中的初始上传后，在会话的到期日期/时间前，使用步骤 2 中所述的 `PUT` 请求，继续上传文件中剩余的部分。 使用 **NextExpectedRanges** 集合确定要上传的下一个字节范围的开头。 可能会发现指定了多个范围，这些范围指明了服务器尚未收到的文件部分。 如果需要恢复中断的传输，并且客户端不能确定服务的状态，这个方法很有用。
+执行步骤 2 中的初始上传后，在会话的到期日期/时间前，使用步骤 2 中所述的 `PUT` 请求，继续上传文件中剩余的部分。 使用 **nextExpectedRanges** 集合确定要上传的下一个字节范围的开头。 可能会发现指定了多个范围，这些范围指明了服务器尚未收到的文件部分。 如果需要恢复中断的传输，并且客户端不能确定服务的状态，这个方法很有用。
 
 成功上传文件的最后一个字节后，最终 `PUT` 操作返回 `HTTP 201 Created` 以及指示 `https://outlook.office.com` 域中文件附件 URL 的 `Location` 标头。 可从 URL 获取附件 ID 并将其保存供以后使用。 可以使用该 ID [获取附件的元数据](/graph/api/attachment-get)，或使用 Microsoft Graph 终结点[将附件从 Outlook 项中删除](/graph/api/attachment-delete)，具体取决于你的场景。
 
