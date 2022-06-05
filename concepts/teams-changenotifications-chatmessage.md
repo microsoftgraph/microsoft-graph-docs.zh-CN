@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c9bd130ce01738ae03cb0521b85774e974240055
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 564ed33603585b333f12f72b6a8e1f8e3f9de406
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133326"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899545"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
@@ -28,16 +28,16 @@ ms.locfileid: "65133326"
 
 #### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|委派（工作或学校帐户） | 不支持。 | 不支持。 |
-|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | ChannelMessage.Read.All | beta, v1.0 |
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | 不支持。 |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | ChannelMessage.Read.All |
 
 #### <a name="example"></a>示例
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -60,16 +60,16 @@ Content-Type: application/json
 
 #### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|委派（工作或学校帐户） | 不支持。 | 不支持。 |
-|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | Chat.Read.All | beta, v1.0 |
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | 不支持。 |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Chat.Read.All |
 
 #### <a name="example"></a>示例
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -92,18 +92,18 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              |版本支持 |
-|:--------------------|:---------------------------------------------------------|:--------------------|
-|委派（工作或学校帐户） | ChannelMessage.Read.All | beta, v1.0 |
-|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | ChannelMessage.Read.Group*、ChannelMessage.Read.All  | beta 版 v1.0 |
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | ChannelMessage.Read.All |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
 
 >**注意：** 带有 * 标记的权限作为 [ 资源特定的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 的一部分受到支持。
 
 ### <a name="example-1-subscribe-to-all-messages-and-replies-in-a-channel"></a>示例 1：订阅频道中的所有消息（和回复）
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -123,7 +123,7 @@ Content-Type: application/json
 以下请求将向订阅者发送包含 `Hello` 的消息。
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -141,7 +141,7 @@ Content-Type: application/json
 ### <a name="example-3-subscribe-to-messages-and-replies-in-a-channel-without-resource-data"></a>示例 3：订阅频道中的消息（和回复），不含资源数据
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -159,7 +159,7 @@ Content-Type: application/json
 要仅获得提到特定用户的消息，你可以在查询中指定用户的 ID（在此示例中为 `9a6eb4d1-826b-48b1-9627-b50836c8fee9`）。
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -182,18 +182,18 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              | 版本支持 |
-|:--------------------|:---------------------------------------------------------|:---------------------|
-|委派（工作或学校帐户） | Chat.Read | beta, v1.0 |
-|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | ChatMessage.Read.Chat*、Chat.Read.All | beta 版 v1.0 |
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Chat.Read |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | ChatMessage.Read.Chat*、Chat.Read.All |
 
 >**注意：** 带有标记 * 的权限当前仅作为 beta 版本的特定于 [ 资源的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 的一部分受到支持。
 
 ### <a name="example-1-subscribe-to-messages-in-a-chat"></a>示例 1：订阅聊天中的消息
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -213,7 +213,7 @@ Content-Type: application/json
 以下请求将向订阅者发送包含 `Hello` 的消息。
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -231,7 +231,7 @@ Content-Type: application/json
 ### <a name="example-3-subscribe-to-messages-and-replies-in-a-chat-without-resource-data"></a>示例 3：订阅聊天中的消息（和回复），不含资源数据
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
   "changeType": "created,updated",
@@ -248,7 +248,7 @@ Content-Type: application/json
 要仅获得提到特定用户的消息，你可以在查询中指定用户的 ID（在此示例中为 `9a6eb4d1-826b-48b1-9627-b50836c8fee9`）。
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -261,9 +261,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscribe-to-changes-at-the-user-level"></a>订阅用户级别的更改
+## <a name="subscribe-to-changes-at-the-user-level-preview"></a>订阅用户级别的更改（预览）
 
-若要跟踪特定用户参与的所有聊天中的消息，可以在用户级别创建更改通知订阅。 为此，请订阅 `/users/{user-id}/chats/getAllMessages`。 不管是在 *委派* 模式还是 *仅应用程序* 模式下，此资源都支持在通知中 [包含资源数据](webhooks-with-resource-data.md)。
+若要跟踪特定用户参与的所有聊天中的消息，可以在用户级别创建更改通知订阅。 为此，请订阅 `/users/{user-id}/chats/getAllMessages`。 不管是在 *委派* 模式还是 *仅应用程序* 模式下，此资源都支持在通知中 [包含资源数据](webhooks-with-resource-data.md)。 此订阅仅在 beta 终结点中可用。
 
 用户级别聊天的消息传递订阅还支持通过 `$search` 查询参数进行基于关键字的搜索。
 
@@ -271,11 +271,11 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              | 版本支持 |
-|:--------------------|:---------------------------------------------------------|:---------------------|
-|委派（工作或学校帐户） | Chat.Read、Chat.ReadWrite | beta 版 |
-|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | Chat.Read.All、Chat.ReadWrite.All | beta 版 |
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Chat.Read、Chat.ReadWrite |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|Application | Chat.Read.All、Chat.ReadWrite.All |
 
 ### <a name="example-subscribe-to-messages-across-all-chats-a-particular-user-is-part-of"></a>示例：订阅特定用户参与的所有聊天中的消息
 
