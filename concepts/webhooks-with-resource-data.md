@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: 3cb94fcc4ba55447646e31635a0e9a68a9b8d1a2
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 9bbd29d374160fdd8c86b6bd34293ce7fe241e17
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368180"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898824"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>设置包含资源数据的更改通知
 
@@ -39,6 +39,16 @@ Microsoft Teams [chatMessage](/graph/api/resources/chatmessage)、[onlineMeeting
 - 整个组织（租户）中所有团队频道中的新消息或已更改消息： `/teams/getAllMessages`
 - 指定团队聊天中的新增或已更改消息： `/chats/{id}/messages`
 - 整个组织（租户）中所有聊天的新消息或已更改消息： `/chats/getAllMessages`
+- 所有 Teams 聊天中的新成员或已更改的成员：`/chats/getAllMembers`
+- 特定 Teams 聊天中的新成员或已更改的成员：`/chats/{id}/members`
+- 整个租户中的新聊天或已更改的聊天：`/chats`
+- 特定聊天中的属性更改：`/chats/{id}`
+- 特定团队下所有频道中的新成员或已更改的成员：`/teams/{id}/channels/getAllMembers`
+- 特定团队中的新成员或已更改的成员：`/teams/{id}/members`
+- 整个租户中的新团队或已更改的团队：`/teams`
+- 特定团队中的属性更改：`/teams/{id}`
+- 所有 Teams 团队中的新频道或已更改的频道：`/teams/getAllChannels`
+- 特定团队中的新频道或已更改的频道：`/teams/{id}/channels`
 - 用户的状态信息更新：`/communications/presences/{id}`
 
 仅在 Beta 版终结点中可用：

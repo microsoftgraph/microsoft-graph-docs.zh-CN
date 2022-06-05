@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 831de5675b78e94ada5a64c625738b869848c02c
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 3adc9490dc554344b553de5a0520c66e2f905956
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819452"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900042"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -20,13 +20,17 @@ ms.locfileid: "65819452"
 
 - Microsoft Graph 安全性 API 中的[警报][]。
 - Microsoft Teams 中的通话或会议后生成的 [callRecord][]。
+- Microsoft Teams 中的[频道](./channel.md)。
+- Microsoft Teams 中的[聊天](./chat.md)。
 - 通过 Microsoft Teams 中的团队或频道发送的 [chatMessage][]。
 - Microsoft 365 组中的[对话][]。
+- Microsoft Teams 的团队或频道中的 [conversationMember](./conversationmember.md)。
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容。
 - Azure Active Directory 中的 [组][]。
 - SharePoint [site][]下的[list][]。
 - Outlook 中的[邮件][]、[事件][]或[联系人][]。
 - 通用打印中的 [打印机][] (当打印机的打印作业进入 JobFetchable 状态 - 准备好提取以打印时)和 [printTaskDefinition][]。有关详细信息，请参阅 [订阅来自云打印 API 的更改通知](/graph/universal-print-webhook-notifications)。
+- Microsoft Teams 中的[团队](./team.md)。
 - Microsoft 待办事项中某个用户的 [todoTask][]。*
 - 在 Azure Active Directory 中的 [用户][]。
 
@@ -69,7 +73,11 @@ ms.locfileid: "65819452"
 |:--------------------|:-------------------------|
 | 安全 **警报**     | 43200分钟（不到 30 天）  |
 | Teams **callRecord**    | 4230 分钟（不到 3 天）  |
+| Teams **频道**    | 60 分钟（1 小时）  |
+| Teams **聊天**    | 60 分钟（1 小时）  |
 | Teams **chatMessage**    | 60 分钟（1 小时）  |
+| Teams **conversationMember**    | 60 分钟（1 小时）  |
+| Teams **团队**    | 60 分钟（1 小时）  |
 | 组 **对话** | 4230 分钟（不到 3 天）    |
 | OneDrive **driveItem**    | 42300 分钟（不到 30 天）    |
 | SharePoint **列表**    | 42300 分钟（不到 30 天）    |
