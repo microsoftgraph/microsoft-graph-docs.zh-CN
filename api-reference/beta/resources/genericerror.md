@@ -1,16 +1,16 @@
 ---
 title: genericError 资源类型
-description: 通用错误。
-localization_priority: Normal
+description: 常规用途错误。
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: non-product-specific
 author: abheek-das
-ms.openlocfilehash: 611671cc6e35fa9376bff2761719c58f0255f19d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 24e54a0efb033347f9bf7479dc9592f97a5fc9e6
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129448"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899790"
 ---
 # <a name="genericerror-resource-type"></a>genericError 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "50129448"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通用错误。
+常规用途错误。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 描述 |
 |:---------|:-----|:------------|
 | message | String | 错误消息。 |
-| code | 字符串 | 错误代码。 |
+| code | String | 错误代码。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

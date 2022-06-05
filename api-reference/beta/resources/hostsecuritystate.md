@@ -1,16 +1,16 @@
 ---
 title: hostSecurityState 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: a76797ed5660a80e1bbce73609617844de326863
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 55a947e26b8ebb147ac0ef52d5764435846d30ea
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013592"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899643"
 ---
 # <a name="hostsecuritystate-resource-type"></a>hostSecurityState 资源类型
 
@@ -18,21 +18,21 @@ ms.locfileid: "48013592"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含有关主机 (的状态信息，包括设备、计算机等) 。
+包含有关主机 (的有状态信息，包括设备、计算机等) 。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|域名|String|主机 FQDN (完全限定的域名)  (例如，machine.company.com) 。|
-|isAzureAadJoined|Boolean|如此如果主机已加入域到 Azure Active Directory 域服务。|
-|isAzureAadRegistered|Boolean|如果主机注册到 Azure Active Directory 设备注册 (BYOD 设备-即不是由企业) 完全管理的，则该属性值为 True。|
-|isHybridAzureDomainJoined|Boolean|如此如果主机已加入域到本地 Active Directory 域。|
-|netBiosName|String|本地主机名，不包含 DNS 域名。|
-|os|String|主机操作系统。  (例如，Windows10、MacOS、RHEL 等 ) 。|
-|privateIpAddress|String|专用 (不可路由) IPv4 或 IPv6 地址 (请参阅在发出警报时) [RFC 1918](https://tools.ietf.org/html/rfc1918) 。|
-|publicIpAddress|String|可公开路由的 IPv4 或 IPv6 地址 (请参阅 [RFC 1918](https://tools.ietf.org/html/rfc1918)) 警报时间。|
-|riskScore|String|主机的提供程序生成/计算的风险分数。  建议的值范围为0-1，这相当于一个百分比。|
+|Fqdn|String|例如，主机 FQDN (完全限定的域名)  (machine.company.com) 。|
+|isAzureAadJoined|Boolean|如此 如果主机已加入 Azure Active Directory 域服务的域。|
+|isAzureAadRegistered|Boolean|如此 如果在 Azure Active Directory 设备注册中注册的主机 (BYOD 设备，即并非完全由企业) 管理。|
+|isHybridAzureDomainJoined|Boolean|如此 如果主机已将域联接到本地 Active Directory 域。|
+|netBiosName|String|本地主机名，不带 DNS 域名。|
+|os|String|主机操作系统。  (例如 Windows10、MacOS、RHEL 等) 。|
+|privateIpAddress|String|专用 (无法路由) IPv4 或 IPv6 地址， (在警报时查看 [RFC 1918](https://tools.ietf.org/html/rfc1918)) 。|
+|publicIpAddress|String|可公开路由的 IPv4 或 IPv6 地址 (在警报时查看 [RFC 1918](https://tools.ietf.org/html/rfc1918)) 。|
+|riskScore|String|主机的提供程序生成/计算风险分数。  建议的值范围为 0-1，这等同于百分比。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

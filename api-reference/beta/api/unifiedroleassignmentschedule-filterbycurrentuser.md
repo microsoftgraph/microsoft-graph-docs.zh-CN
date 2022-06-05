@@ -1,23 +1,23 @@
 ---
 title: unifiedRoleAssignmentSchedule： filterByCurrentUser
-description: 获取由特定用户主体筛选的 unifiedRoleAssignmentSchedule 对象及其属性的列表
+description: 检索登录用户是其主体的活动角色分配操作的计划。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e6499aa163ea860cf7b8e09b4c5d7e80b7447ea4
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 61cac73364365eb27b8210acc294099e0fd38454
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399430"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899916"
 ---
 # <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a>unifiedRoleAssignmentSchedule： filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [unifiedRoleAssignmentSchedule](../resources/unifiedRoleAssignmentSchedule.md) 对象及其与特定主体对象关联的属性的列表。
+检索登录用户是其主体的活动角色分配操作的计划。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "65399430"
 |:---|:---|
 |委派（工作或学校帐户）|RoleAssignmentSchedule.Read.Directory、RoleManagement.Read.Directory、RoleManagement.Read.All、RoleAssignmentSchedule.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|RoleManagement.Read.All、RoleManagement.Read.Directory、RoleManagement.ReadWrite.Directory|
+|Application|RoleManagement.Read.All、RoleManagement.Read.Directory、RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,14 +39,15 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pr
 ```
 
 ## <a name="function-parameters"></a>函数参数
-下表显示了可用于此方法的查询参数。
+在请求 URL 中，提供以下查询参数（含值）。
+下表显示了此函数所需的参数。
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|roleAssignmentScheduleFilterByCurrentUserOptions|筛选以查询当前用户为主体的对象。 允许的值为 `principal`. 必填。|
+|on|roleAssignmentScheduleFilterByCurrentUserOptions| 可能的值是`principal`. `unknownFutureValue`|
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select``$filter`OData 查询参数，`$expand`以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|

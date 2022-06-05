@@ -1,16 +1,16 @@
 ---
 title: 获取 signIn
 doc_type: apiPageType
-description: 获取一个 signIn 对象，该对象包含Azure Active Directory租户的所有登录。
+description: 获取一个 signIn 对象，该对象包含 Azure Active Directory 租户的所有登录。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: f6880fe40bc4560454b985f00bef03eec7891868
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 332a222e8d84b8fe2db37115e843f3a79591c8d1
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820733"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899811"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -30,7 +30,7 @@ ms.locfileid: "65820733"
 |:--------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| 应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
+| Application | AuditLog.Read.All 和 Directory.Read.All | 
 
 > [!IMPORTANT]
 > 此 API 存在 [已知问题](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
@@ -44,6 +44,8 @@ ms.locfileid: "65820733"
 + 安全管理员
 + 安全操作员
 + 安全读取者
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 

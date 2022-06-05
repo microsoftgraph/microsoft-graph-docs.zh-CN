@@ -3,15 +3,15 @@ author: JeremyKelley
 description: '文件夹资源将与文件夹相关的数据项分组到一个单一结构。 '
 ms.date: 09/10/2017
 title: Folder
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 99bb3acc25b6bf09d755dbcf8d2ee916c3366074
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: 9559a24264fd654649189b9d530bf759a7fc0e0c
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973942"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899881"
 ---
 # <a name="folder-resource-type"></a>文件夹资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "47973942"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**文件夹**资源将与文件夹相关的数据项分组到一个单一结构。具有非 null **文件夹**方面的 **[DriveItems](driveitem.md)** 是其他 DriveItems 的容器。
+**文件夹** 资源将与文件夹相关的数据项分组到一个单一结构。具有非 null **文件夹** 方面的 **[DriveItems](driveitem.md)** 是其他 DriveItems 的容器。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

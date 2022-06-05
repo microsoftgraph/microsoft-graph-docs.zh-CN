@@ -3,14 +3,14 @@ title: FilterDatetime 资源类型
 description: 表示在筛选值时如何筛选日期。
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
-ms.openlocfilehash: c51e52499530e5ec0caa6c382c9f3e96a14e0d6c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f895128fea1cabd0f4111446443c758f09b06bdd
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137642"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899027"
 ---
 # <a name="filterdatetime-resource-type"></a>FilterDatetime 资源类型
 

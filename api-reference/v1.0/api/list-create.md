@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 在 site 中的创建新的 list。
 doc_type: apiPageType
-ms.openlocfilehash: 8539ce7508d49476edf663eb2fc3cbfdeebca6ea
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d79d8392672253aeb273656f2479460a840a10fe
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335624"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900088"
 ---
 # <a name="create-a-new-list"></a>创建新列表
 
@@ -45,17 +45,17 @@ POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 list 对象的 JSON [表示][] 形式。
+在请求正文中，提供 [列表][] 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [list][] 对象。 
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [列表][] 对象。 
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-下面是如何创建新的泛型列表的示例。
+下面是有关如何创建新的泛型列表的示例。
 
 > **注意：** 自定义列都是可选的。
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 ---
 
 
-## <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。
 
@@ -146,8 +146,8 @@ Content-type: application/json
 ```
 
 
-[列表]: ../resources/list.md
-[网站]: ../resources/site.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
 
 <!-- {
   "type": "#page.annotation",

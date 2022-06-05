@@ -1,16 +1,16 @@
 ---
 title: 列出 signIn
-description: 介绍来自 Microsoft 图形 API的 signIn 资源 (实体) 的列表方法。
+description: 介绍来自 Microsoft Graph API 的 signIn 资源 (实体) 的列表方法。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8348d19b8c9f15436bb09d8c34c6b0865aaf95f8
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: bd01785c267fc3497adb85308493062ca8742240
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819642"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899286"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -18,7 +18,7 @@ ms.locfileid: "65819642"
 
 检索租户的 Azure AD 用户登录信息。 以交互方式进行交互的登录 (其中，用户名/密码作为身份验证令牌) 的一部分传递，并且成功的联合登录当前包含在登录日志中。 
 
-最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有在Azure Active Directory (Azure AD) [默认保留期](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)内发生的登录事件才可用。
+最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有 Azure Active Directory (Azure AD) [默认保留期](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) 内发生的登录事件才可用。
 
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "65819642"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用程序 | AuditLog.Read.All 和 Directory.Read.All  |
+|Application | AuditLog.Read.All 和 Directory.Read.All  |
 
 > [!IMPORTANT]
 > 此 API 存在 [已知问题](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
@@ -45,6 +45,8 @@ ms.locfileid: "65819642"
 + 安全管理员
 + 安全操作员
 + 安全读取者
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -189,7 +191,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>示例 2：使用以“Graph”开头的 appDisplayName 检索对应用的前 10 个登录
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>示例 2：使用以“Graph”开头的 appDisplayName 检索应用的前 10 个登录
 
 #### <a name="request"></a>请求
 

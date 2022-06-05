@@ -1,28 +1,28 @@
 ---
 title: ticketInfo 资源类型
-description: 表示与角色分配请求相关的票证信息的对象
+description: 表示与角色分配和资格请求相关的票证信息。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d64bd63615ec156548942d14deb5833eb5dd990a
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: e2356ef6fdbf0d1832d79fc2b68ecbef69db1ede
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399451"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900462"
 ---
 # <a name="ticketinfo-resource-type"></a>ticketInfo 资源类型
 
 命名空间：microsoft.graph
 
-表示与角色分配请求相关的票证信息的对象
+表示与角色分配和资格请求相关的票证信息。 使用此对象可以定义角色分配的票证参数，或者资格请求是由外部系统中发出的另一个请求发起的。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ticketNumber|String|票证号元数据|
-|ticketSystem|String|票证系统元数据|
+|ticketNumber|字符串|票证号。|
+|ticketSystem|字符串|票证系统的说明。|
 
 ## <a name="relationships"></a>关系
 无。

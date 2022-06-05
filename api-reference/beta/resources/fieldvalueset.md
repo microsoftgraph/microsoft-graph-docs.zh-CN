@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 表示 listItem 资源中的列值。
 ms.date: 09/11/2017
 title: FieldValueSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 62a7d55813877a1808c4930322f1a0ddc33bf89f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: a9416cda6123a6982ca10e51a59002b82319d84a
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071197"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898712"
 ---
 # <a name="fieldvalueset-resource"></a>FieldValueSet 资源
 
@@ -40,7 +40,7 @@ ms.locfileid: "48071197"
 ## <a name="properties"></a>属性
 
 **listItem** 中的每个用户可见字段作为 **fieldValueSet** 中的名称/值对返回。
-上面是针对包含**作者**、**名称**、**颜色**和**数量**这四列列表的一个示例。
+上面是针对包含 **作者**、**名称**、**颜色** 和 **数量** 这四列列表的一个示例。
 
 默认情况下不返回查找字段（如上述 `Author`）。
 相反，服务器会返回一个引用查找中锁定的 listItem 的“LookupId”字段（如上述 `AuthorLookupId`）。

@@ -1,26 +1,26 @@
 ---
 title: iosLobAppProvisioningConfiguration 资源类型
-description: 本主题提供由 iOS Lob 应用预配配置资源公开的已声明方法、属性和关系的说明。
+description: 本主题提供 iOS Lob 应用预配配置资源公开的已声明方法、属性和关系的说明。
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff3425d1d9bb4de6e51c6310a28d182dfbed654b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3143c19f87144e718b2e5db0dbdb84c24feb2f17
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054238"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899342"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>iosLobAppProvisioningConfiguration 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-本主题提供由 iOS Lob 应用预配配置资源公开的已声明方法、属性和关系的说明。
+本主题提供 iOS Lob 应用预配配置资源公开的已声明方法、属性和关系的说明。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -29,22 +29,22 @@ ms.locfileid: "59054238"
 |[获取 iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-get.md)|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|读取 [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 对象的属性和关系。|
 |[创建 iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-create.md)|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|创建新的 [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 对象。|
 |[删除 iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-delete.md)|无|删除 [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)。|
-|[更新 iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-update.md)|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|更新 [iosLobAppProvisioningConfiguration 对象](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 的属性。|
+|[更新 iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-update.md)|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|更新 [iosLobAppProvisioningConfiguration 对象的](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 属性。|
 |**应用**|
 |[分配操作](../api/intune-shared-ioslobappprovisioningconfiguration-assign.md)|无|尚未记录|
 |**策略集**|
 |[hasPayloadLinks 操作](../api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) 集合|尚未记录|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
-|:---|:---|:---|
+| 属性 | 类型 | 说明 |
+| --- | --- | --- |
 |id|String|实体的键。|
-|expirationDateTime|DateTimeOffset|可选的配置文件过期日期和时间。|
+|expirationDateTime|DateTimeOffset|可选配置文件过期日期和时间。|
 |payloadFileName|String|有效负载文件名 (*.mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
-|roleScopeTagIds|字符串集合|此 iOS LOB 应用预配配置实体的范围标记列表。|
+|roleScopeTagIds|字符串集合|此 iOS LOB 应用预配配置实体的作用域标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|说明|String|管理员提供的设备配置说明。|
+|description|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|

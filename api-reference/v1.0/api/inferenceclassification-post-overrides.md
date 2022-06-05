@@ -1,16 +1,16 @@
 ---
 title: 创建 inferenceClassificationOverride
-description: '创建由 SMTP 地址识别的发件人的替代。 来自该 SMTP 地址的未来邮件将被一致分类 '
+description: '创建由 SMTP 地址识别的发件人的替代。 来自该 SMTP 地址的未来消息将一致分类 '
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: mail
 doc_type: apiPageType
-ms.openlocfilehash: 71fc980df141b010a74bbc950ad444f240b3ae37
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4838d72bc9c156b88312ac20a5733788b709c51f
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134727"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898649"
 ---
 # <a name="create-inferenceclassificationoverride"></a>创建 inferenceClassificationOverride
 
@@ -20,7 +20,7 @@ ms.locfileid: "62134727"
 
 **注意**
 
-- 如果已存在同一 SMTP 地址的覆盖，则使用所提供的值更新该替代的 **classifyAs** 和 **name** 字段。
+- 如果已存在具有相同 SMTP 地址的替代，则会使用提供的值更新该替代的 **classifyAs** 和 **名称** 字段。
 - 基于唯一发件人的 SMTP 地址，邮箱支持的最大替代数目为 1000 个。
 - POST 操作仅支持一次创建一个替代。
 

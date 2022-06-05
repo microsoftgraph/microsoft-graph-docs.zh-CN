@@ -1,18 +1,18 @@
 ---
-title: FormatProtection 资源类型
+title: formatProtection 资源类型
 description: 表示对范围对象的格式保护。
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
-ms.openlocfilehash: 7f4c6b3c29092e74dbbd749e9d75319b7f1fe028
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 592699a23a7a418faa8e9679111b41c0eb964b2f
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084571"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900455"
 ---
-# <a name="formatprotection-resource-type"></a>FormatProtection 资源类型
+# <a name="formatprotection-resource-type"></a>formatProtection 资源类型
 
 命名空间：microsoft.graph
 
@@ -33,7 +33,7 @@ ms.locfileid: "59084571"
 |已锁定|boolean|指示 Excel 是否锁定对象中的单元格。指示整个区域不具有统一锁定设置的空值。|
 
 ## <a name="relationships"></a>关系
-无
+无。
 
 
 ## <a name="json-representation"></a>JSON 表示形式

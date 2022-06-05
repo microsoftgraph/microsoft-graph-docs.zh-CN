@@ -3,14 +3,14 @@ title: 更新 inferenceclassificationoverride
 description: '按指定内容更改替代的 **ClassifyAs** 字段。 '
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: mail
 doc_type: apiPageType
-ms.openlocfilehash: ac4dec87574e5b6c440e9737b7eb4e1816c33270
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0efc49ab4e47e5b58a1f6da9d1d048601df8cbaf
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124738"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897914"
 ---
 # <a name="update-inferenceclassificationoverride"></a>更新 inferenceclassificationoverride
 
@@ -49,9 +49,9 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 **classifyAs** 的新值。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值是 `focused` `other` ：、。|
+|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值为： `focused`. `other`|
 
 ## <a name="response"></a>响应
 

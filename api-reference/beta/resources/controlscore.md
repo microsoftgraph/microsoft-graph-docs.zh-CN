@@ -3,14 +3,14 @@ title: " controlScore 资源类型"
 description: 此资源包含单个控件的租户分数和说明。
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: 347e7830239f5bf04f0c8611c955173bdda0f18d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b749a81b00a1fe93c12fa5b8b17b8e7f95ca89ae
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146812"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900184"
 ---
 #  <a name="controlscore-resource-type"></a>controlScore 资源类型
 
@@ -20,10 +20,10 @@ ms.locfileid: "59146812"
 
 |名称 |类型 |说明 |
 |:--|:--|:--|
-|   controlName |   String  |   控件唯一名称 |
-|   score   |   双精度  |  租户获得控件的分数 (因租户对控件控件的操作而异) 。 |
-|   controlCategory |   String  |  控制操作类别 (标识、数据、设备、应用、基础结构) 。 |
-|   说明 |   String  |  控件的说明。 |
+|   controlName |   字符串  |   控制唯一名称 |
+|   得分   |   双精度  |  租户实现了控件的分数 (它因控件) 上的租户操作而日复一日地变化。 |
+|   controlCategory |   字符串  |  控制操作类别 (标识、数据、设备、应用、基础结构) 。 |
+|   description |   字符串  |  控件的说明。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

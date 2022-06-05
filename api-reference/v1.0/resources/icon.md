@@ -3,14 +3,14 @@ title: 图标资源类型
 description: 表示单元格图标。
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 73ae9bbe240df7bd1e8ca2b6cb7a4a0556fae0f5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc8a3ff251a321d6accc89015ba9b0ec751ed0ed
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098998"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899706"
 ---
 # <a name="icon-resource-type"></a>图标资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "59098998"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|int|表示给定集合中图标的索引。|
-|set|string|表示图标所属的集合。 可能的值是：、 `Invalid` `ThreeArrows` `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack` `FourRating` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars` `ThreeTriangles` `FiveBoxes` 。|
+|set|string|表示图标所属的集合。 可能的值为：`Invalid`、`ThreeArrows`、、`ThreeFlags``ThreeArrowsGray`、`ThreeTrafficLights1`、`ThreeTrafficLights2`、`ThreeSigns`、`ThreeSymbols`、、`FourArrows``ThreeSymbols2`、`FourArrowsGray``FourRedToBlack`、`FourTrafficLights``FourRating`、`FiveArrows`、`FiveArrowsGray`、、`FiveRating`、`FiveQuarters`、`ThreeStars`、、、 `FiveBoxes``ThreeTriangles`|
 
 ## <a name="relationships"></a>关系
 无

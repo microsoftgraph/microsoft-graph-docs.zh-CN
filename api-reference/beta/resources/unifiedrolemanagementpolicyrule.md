@@ -1,35 +1,40 @@
 ---
 title: unifiedRoleManagementPolicyRule 资源类型
-description: unifiedRoleManagementPolicyRule 指定与角色管理策略关联的规则。 它是抽象的。
+description: 定义与角色管理策略关联的规则的抽象类型。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d8dee3e3e6b28668b1370a2bb0c34f58e28c82ef
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 4851f090b4e73ace7de7b86fc85db76555c918fa
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461308"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898516"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>unifiedRoleManagementPolicyRule 资源类型
 
 命名空间：microsoft.graph
 
-unifiedRoleManagementPolicyRule 指定与角色管理策略关联的规则。 它是抽象的。
+定义与角色管理策略关联的规则的抽象类型。 此抽象类型由以下资源继承，这些资源定义各种类型的规则及其与角色管理策略关联的设置。
++ [unifiedRoleManagementPolicyApprovalRule](unifiedrolemanagementpolicyapprovalrule.md)
++ [unifiedRoleManagementPolicyAuthenticationContextRule](unifiedrolemanagementpolicyauthenticationcontextrule.md)
++ [unifiedRoleManagementPolicyEnablementRule](unifiedrolemanagementpolicyenablementrule.md)
++ [unifiedRoleManagementPolicyExpirationRule](unifiedrolemanagementpolicyexpirationrule.md)
++ [unifiedRoleManagementPolicyNotificationRule](unifiedrolemanagementpolicynotificationrule.md)
+
+
+继承自 [entity](../resources/entity.md)。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|说明|
-|:---|:---|:---|
-|[列出 unifiedRoleManagementPolicyRules](../api/unifiedrolemanagementpolicy-list-rules.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|获取 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 对象及其属性的列表。|
-|[获取 unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|读取 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 对象的属性和关系。|
-|[更新 unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|更新 [unifiedRoleManagementPolicyRule 对象的](../resources/unifiedrolemanagementpolicyrule.md) 属性。|
+
+无。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|规则的唯一标识符。|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|策略规则的目标。|
+|id|字符串|规则的标识符。 继承自 [entity](../resources/entity.md)。 只读。|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)| **未实现。** 定义角色管理策略规则所针对的范围的详细信息。 详细信息可以包括主体类型、角色分配类型和影响角色的操作。 支持 `$filter`（`eq`、`ne`）。|
 
 ## <a name="relationships"></a>关系
 无。
@@ -40,6 +45,7 @@ unifiedRoleManagementPolicyRule 指定与角色管理策略关联的规则。 �
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
@@ -52,4 +58,3 @@ unifiedRoleManagementPolicyRule 指定与角色管理策略关联的规则。 �
   }
 }
 ```
-

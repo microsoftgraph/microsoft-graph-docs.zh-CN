@@ -1599,7 +1599,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: 重定向
+                  - name: Redirect
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -4661,13 +4661,13 @@ items:
                     href: api/administrativeunit-get-members.md
                   - name: 删除成员
                     href: api/administrativeunit-delete-members.md
-                  - name: 添加作用域角色管理员
+                  - name: 分配具有作用域的角色
                     href: api/administrativeunit-post-scopedrolemembers.md
-                  - name: 列出作用域角色管理员
+                  - name: 列出具有作用域的角色分配
                     href: api/administrativeunit-list-scopedrolemembers.md
-                  - name: 获取作用域角色管理员
+                  - name: 获取具有作用域的角色分配
                     href: api/administrativeunit-get-scopedrolemembers.md
-                  - name: 删除作用域角色管理员
+                  - name: 删除具有作用域的角色分配
                     href: api/administrativeunit-delete-scopedrolemembers.md
               - name: BitLocker 恢复密钥
                 href: resources/bitlockerrecoverykey.md
@@ -5439,7 +5439,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-overview.md

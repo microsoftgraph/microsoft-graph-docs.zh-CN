@@ -1,39 +1,39 @@
 ---
 title: 进程资源类型
-description: 包含有关与警报相关的进程的有状态信息。
+description: 包含与警报相关的进程的有状态信息。
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 4c8f24c0df5c4481c51859ff5f22ef0d619d00fd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c290ed08adae9f9b995c5c24c398826a2bb1160
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143830"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900490"
 ---
 # <a name="process-resource-type"></a>进程资源类型
 
 命名空间：microsoft.graph
 
-包含有关与警报相关的进程的有状态信息。
+包含与警报相关的进程的有状态信息。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|accountName|String|用户帐户标识符 (进程在) 下运行，例如 AccountName、SID 等。|
+|accountName|字符串|用户帐户标识符 (进程在) 下运行的用户帐户上下文，例如 AccountName、SID 等。|
 |commandLine|String|包含所有参数的完整进程调用命令行。|
-|createdDateTime|DateTimeOffset|启动进程的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|fileHash|[fileHash](filehash.md)|包含文件哈希的复杂类型 (加密和位置敏感) 。|
+|createdDateTime|DateTimeOffset|开始此过程的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|fileHash|[fileHash](filehash.md)|包含文件哈希 (加密和位置敏感) 的复杂类型。|
 |integrityLevel|processIntegrityLevel|过程的完整性级别。 可取值为：`unknown`、`untrusted`、`low`、`medium`、`high`、`system`。|
-|isElevated|Boolean|如果进程已提升，则其为 True。|
-|name|String|进程的图像文件的名称。|
-|parentProcessCreatedDateTime|DateTimeOffset|父进程启动的 DateTime。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|parentProcessId|Int32|进程 ID (父) PID。|
-|parentProcessName|String|父进程的图像文件的名称。|
+|isElevated|Boolean|如此 如果进程被提升。|
+|name|字符串|进程的映像文件的名称。|
+|parentProcessCreatedDateTime|DateTimeOffset|启动父进程的 DateTime。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|parentProcessId|Int32|父进程的进程 ID (PID) 。|
+|parentProcessName|字符串|父进程的映像文件的名称。|
 |路径|String|完整路径，包括文件名。|
-|processId|Int32|进程 ID (PID) 进程。|
+|processId|Int32|进程 ID (进程的 PID) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5341dd7bd2f4a97db7f5777e8b6f057a401e0c42
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1fab03031b2fc74647d5e3014ec649e65c5869ab
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094718"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898901"
 ---
 # <a name="create-bookingbusiness"></a>创建 bookingBusiness
 
@@ -20,7 +20,7 @@ ms.locfileid: "62094718"
 
 在租户中创建新的 Microsoft Bookings 业务。
 
-这是设置 Bookings 业务的第一步，你必须指定业务显示名称。 可以包括其他信息（如公司地址、网站地址和日程安排策略）或稍后通过更新 **bookingBusiness** 来 [](bookingbusiness-update.md)设置该信息。
+这是设置 Bookings 业务的第一步，你必须在其中指定业务显示名称。 可以包含其他信息，例如业务地址、网站地址和计划策略，或稍后通过更新 **bookingBusiness** [来](bookingbusiness-update.md)设置该信息。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "62094718"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Bookings.Manage.All  |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ POST /bookingBusinesses
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `201, Created` 响应正文中返回 响应代码和 [bookingBusiness](../resources/bookingbusiness.md) 对象。
+如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [bookingBusiness](../resources/bookingbusiness.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -64,7 +64,6 @@ Content-type: application/json
 {
     "displayName":"Fourth Coffee",
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",
@@ -128,7 +127,6 @@ Content-type: application/json
     "isPublished":false,
     "publicUrl":null,
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",

@@ -1,16 +1,16 @@
 ---
 title: 获取 signIn
-description: 介绍来自 Microsoft 图形 API 的 signIn 资源 (实体) 的 get 方法。
+description: 介绍来自 Microsoft Graph API 的 signIn 资源 (实体) 的 get 方法。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 099075180c81c1b4cf242b6ff8c0160a0b607f25
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: daae2d982a3a5609483f3a9a742ffa3d5b7ee752
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821272"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898972"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -29,7 +29,7 @@ ms.locfileid: "65821272"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用程序 | AuditLog.Read.All 和 Directory.Read.All |
+|Application | AuditLog.Read.All 和 Directory.Read.All |
 
 > [!IMPORTANT]
 > 此 API 存在 [已知问题](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
@@ -43,6 +43,8 @@ ms.locfileid: "65821272"
 + 安全管理员
 + 安全操作员
 + 安全读取者
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 

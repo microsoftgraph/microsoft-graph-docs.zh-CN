@@ -1,16 +1,16 @@
 ---
 title: freeBusyError 资源类型
 description: 表示尝试获取用户、通讯组列表或资源可用性的错误信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: calendar
 author: harini84
-ms.openlocfilehash: 565abb49b82a2d8fa41120a9df556113d790ed36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 58e55ce6a77d10f5be794de4c5223e903d5d5af9
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973944"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900168"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "47973944"
 | 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 |message |String |描述错误。 |
-|responseCode |String |对用户、通讯组列表或资源的可用性进行查询的响应代码。 |
+|responseCode |字符串 |查询用户、通讯组列表或资源可用性的响应代码。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式

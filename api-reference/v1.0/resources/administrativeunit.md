@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: de7c9260c5682c12f2d61cbc336f22ecb7579d20
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 40f81892de0fe1a9925a6d9d62d51e679b57748b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883976"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899461"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -31,16 +31,16 @@ ms.locfileid: "65883976"
 |[创建](../api/directory-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | 创建新的管理单元。|
 |[列表](../api/directory-list-administrativeunits.md) | [administrativeUnit](administrativeunit.md) 集合 |列出所有 administrativeUnits 的属性。|
 |[获取](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |读取特定 administrativeUnit 对象的属性和关系。|
-|[Update](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |更新 administrativeUnit 对象。 |
+|[更新](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |更新 administrativeUnit 对象。 |
 |[删除](../api/administrativeunit-delete.md) | 无 |删除 administrativeUnit 对象。 |
 |[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 添加成员 (用户、组或设备) 。|
 |[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取 (用户、组或设备) 成员的列表。|
 |[获取成员](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 获取特定成员。|
 |[删除成员](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| 删除成员。|
-|[添加 scoped-role 成员](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 添加作用域内角色成员。|
-|[列出作用域角色成员](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) 集合| 获取作用域内角色管理员的列表。|
-|[获取作用域内角色成员](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 获取特定的作用域角色成员。|
-|[删除作用域内角色成员](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 删除作用域内角色成员。|
+|[添加 scopedRoleMember](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 分配具有管理单元范围的 Azure AD 角色。|
+|[列出 scopedRoleMembers](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) 集合| 列出具有管理单元范围的 Azure AD 角色分配。|
+|[获取 scopedRoleMember](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 获取具有管理单元范围的 Azure AD 角色分配。|
+|[删除 scopedRoleMember](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 删除具有管理单元范围的 Azure AD 角色分配。|
 
 ## <a name="properties"></a>属性
 
@@ -49,10 +49,10 @@ ms.locfileid: "65883976"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|String|管理单元的可选说明。 支持`$filter` (`eq`、`ne`、 `in``startsWith`) 、 `$search`|
-|displayName|String|管理单元的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。|
-|id|String|管理单元的唯一标识符。 只读。 支持 `$filter`（`eq`）。|
-|visibility|String|控制管理单元及其成员是隐藏的还是公开的。 可以设置为 `HiddenMembership`. 如果未设置 (值 `null`) ，则默认行为为公共行为。 设置为 `HiddenMembership`后，只有管理单位的成员才能列出管理单位的其他成员。|
+|说明|字符串|管理单元的可选说明。 支持`$filter` (`eq`、`ne`、 `in``startsWith`) 、 `$search`|
+|displayName|字符串|管理单元的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。|
+|id|字符串|管理单元的唯一标识符。 只读。 支持 `$filter`（`eq`）。|
+|visibility|字符串|控制管理单元及其成员是隐藏的还是公开的。 可以设置为 `HiddenMembership`. 如果未设置 (值 `null`) ，则默认行为为公共行为。 设置为 `HiddenMembership`后，只有管理单位的成员才能列出管理单位的其他成员。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

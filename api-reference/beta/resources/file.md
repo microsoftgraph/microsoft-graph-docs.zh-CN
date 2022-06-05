@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 文件资源将与文件相关的数据项分组到一个单一结构。
 ms.date: 09/10/2017
 title: 文件
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: abffb60e4ea82f279ed1605659e5d0f969ed42fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: df40102472783180943389ed4a3d3da48ed5e322
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071190"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899671"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
@@ -19,9 +19,9 @@ ms.locfileid: "48071190"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**文件**资源将与文件相关的数据项分组到一个单一结构。
+**文件** 资源将与文件相关的数据项分组到一个单一结构。
 
-如果 [**DriveItem**](driveitem.md) 具有一个非 null **文件**方面，则该项表示一个文件。除了其他属性，文件还具有**内容**关系，其中包含文件字节流。
+如果 [**DriveItem**](driveitem.md) 具有一个非 null **文件** 方面，则该项表示一个文件。除了其他属性，文件还具有 **内容** 关系，其中包含文件字节流。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -44,7 +44,7 @@ ms.locfileid: "48071190"
 
 | 属性 | 类型                    | 说明                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 哈希   | [hashes](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
+| 哈希   | [Hashes](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
 | mimeType | string                  | 文件的 MIME 类型。这由服务器上的逻辑决定，不能是在上载文件时提供的值。只读。 |
 
 ## <a name="remarks"></a>注解 

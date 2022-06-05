@@ -1,16 +1,16 @@
 ---
 title: inferenceClassificationOverride 资源类型
-description: 表示用户应始终将来自特定发件人的传入邮件分类为的用户替代
-localization_priority: Normal
+description: 表示用户对来自特定发件人的传入消息应始终分类为的替代
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: abheek-das
-ms.openlocfilehash: 537032c220ed98fc9052afe6a31376359836fa94
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c0668afef202f646d1d07412077dd15c29747b61
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954985"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898579"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "50954985"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示用户覆盖如何始终将来自特定发件人的传入邮件分类为重点 [收件箱](manage-focused-inbox.md)中。
+表示用户对特定发件人传入邮件应始终在 [重点收件箱](manage-focused-inbox.md)中分类的方式的替代。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 808cff2707016d16cccff7dbda3bf6971626f06c
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5ec4eb01ee725109d3e746fa41570f2ee240a705
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205334"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898530"
 ---
 # <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a>unifiedRoleAssignmentSchedule： filterByCurrentUser
 命名空间：microsoft.graph
@@ -38,7 +38,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pa
 
 ## <a name="function-parameters"></a>函数参数
 在请求 URL 中，提供以下查询参数（含值）。
-下表显示了可用于此函数的参数。
+下表显示了此函数所需的参数。
 
 |参数|类型|说明|
 |:---|:---|:---|

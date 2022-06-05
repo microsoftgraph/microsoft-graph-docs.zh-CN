@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 身份资源表示主角的身份。
 ms.date: 09/14/2017
 title: 标识
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 5b3f831a51097664c7afc5905aa2960f1fefaec5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: 818fed7343a5af9cd39f0ebc00c43a411089eb96
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013562"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899391"
 ---
 # <a name="identity-resource-type"></a>标识资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "48013562"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**身份**资源表示_主角_的身份。例如，主角可以是用户、设备或应用程序。
+**身份** 资源表示 _主角_ 的身份。例如，主角可以是用户、设备或应用程序。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -40,7 +40,7 @@ ms.locfileid: "48013562"
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName         | String | 此身份的显示名称。请注意，此信息不一定可查看或是最新的。例如，如果用户更改了其显示名称，API 可能会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/driveitem-delta.md) 时不会显示更改后的值。  |
 | id                  | String | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
-| tenantId            | String | 租户 (可选) 的唯一标识。                                                                                                                                                                                                                                                                             |
+| tenantId            | String | 租户的唯一标识 (可选) 。                                                                                                                                                                                                                                                                             |
 
 ## <a name="remarks"></a>注解
 

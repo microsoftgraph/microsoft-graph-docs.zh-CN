@@ -3,14 +3,14 @@ title: 筛选器资源类型
 description: 管理表格列的筛选。
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
-ms.openlocfilehash: f0abc2b341e8833472593db8ce9ceb21a9e5e6a6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f221a50d17a8df230fba96f8d657a478cc99502a
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137663"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898964"
 ---
 # <a name="filter-resource-type"></a>筛选器资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "59137663"
 
 | 名称 | 类型   |说明|
 |:---------------|:--------|:----------|
-|条件|[WorkbookFilterCriteria](filtercriteria.md)|给定列上当前应用的筛选器。只读。|
+|条件|[WorkbookFilterCriteria](filtercriteria.md)|给定列上当前应用的筛选器。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9598d63f17e83d92913724f0b64cb5092307a3a4
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 287b06162d8c8d5f4ccd3853ae15d2542516ffd6
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884101"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899769"
 ---
 # <a name="add-a-member"></a>添加成员
 
@@ -27,6 +27,11 @@ ms.locfileid: "65884101"
 |委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.ReadWrite.All |
+
+若要将成员添加到管理单元，必须为调用主体分配以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：
+
+* 特权角色管理员
+* 全局管理员
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

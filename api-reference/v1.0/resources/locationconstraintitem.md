@@ -1,16 +1,16 @@
 ---
 title: locationConstraintItem 资源类型
-description: 客户端声明的会议地点条件。
+description: locationConstraintItem - 客户端为会议位置声明的条件。
 ms.localizationpriority: medium
 author: harini84
-ms.prod: ''
+ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f9f4e550c1378cd40acf99bd93c2a24f847a9ca0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fb5828e603c9a5dc2ef0f66d6d00b8c5fe7741ed
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134673"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900343"
 ---
 # <a name="locationconstraintitem-resource-type"></a>locationConstraintItem 资源类型
 

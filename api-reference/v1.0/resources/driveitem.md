@@ -5,12 +5,12 @@ description: 项目是 OneDrive API 中的主数据模型。每一个都是一�
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 86589350f5808667067a26d4f89ee0693928c418
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: 3648f56678be1fb23e818982c03ba58ec2191562
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63559767"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883955"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -25,7 +25,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 * 通过 **driveItem** 唯一标识符使用 `drive/items/{item-id}` 的方式
 * 通过使用文件系统路径 `/drive/root:/path/to/file` 的方式
 
-有关详细信息，请参阅 [寻址 driveItems](/graph/concepts/onedrive-addressing-driveitems.md)。
+有关详细信息，请参阅 [寻址 driveItems](/concepts/onedrive-addressing-driveitems.md)。
 
 **DriveItem** 资源拥有作为属性进行模块化的多个 Facet，用于提供 driveItem 的标识和功能相关数据。例如：
 

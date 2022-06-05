@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
 ms.localizationpriority: medium
-title: Hashes 资源类型
+title: hashes 资源类型
 description: 哈希资源将可用哈希分组到项的单个结构中。
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 2321d710c73aa4ed37a9cdd65fb63eac33a1f8ea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b682b30615d605bf0200e5a43e89672791563ad
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084522"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898572"
 ---
-# <a name="hashes-resource-type"></a>Hashes 资源类型
+# <a name="hashes-resource-type"></a>hashes 资源类型
 
 命名空间：microsoft.graph
 
-**哈希** 资源将可用哈希分组到项的单个结构中。
+可用哈 **希** 资源组的哈希成项的单个结构。
 
-**注意：** 并非所有服务均为列出的所有哈希属性提供值。
+>**注意：** 并非所有服务均为列出的所有哈希属性提供值。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -45,15 +44,15 @@ ms.locfileid: "59084522"
 | 属性         | 类型   | 说明                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | 文件内容的 SHA1 哈希（如果可用）。只读。 |
-| **sha256Hash**   | String | 文件内容的 SHA256 哈希 (（如果) ）。 只读。 |
-| **crc32Hash**    | String | 文件的 CRC32 值以小尾数表示， (可用) 。 只读。            |
+| **sha256Hash**   | 字符串 | 文件内容的 SHA256 哈希 (（如果) 可用）。 只读。 |
+| **crc32Hash**    | String | 文件的 CRC32 值（如果) 可用） (。 只读。            |
 | **quickXorHash** | String | 文件的专有哈希，可用于确定文件内容是否更改（如果存在）。只读。 |
 
-**注意：** 在某些情况下，哈希值不可用。如果出现这种情况，将在下载项后对项上的哈希值进行更新。
+>**注意：** 在某些情况下，哈希值不可用。如果出现这种情况，将在下载项后对项上的哈希值进行更新。
 
 ## <a name="remarks"></a>注解
 
-在 OneDrive for Business 和 SharePoint Server 2016 中 **，sha1Hash** 和 **crc32Hash** 和 **sha256Hash** 不可用。
+在 OneDrive for Business 和 SharePoint Server 2016 中， **sha1Hash** 和 **crc32Hash** 以及 **sha256Hash** 不可用。
 
 在 OneDrive 个人版中，**quickXorHash** 不可用。
 

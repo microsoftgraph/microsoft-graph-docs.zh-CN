@@ -1,22 +1,22 @@
 ---
 title: 删除 scopedRoleMember
-description: 从管理单元中删除作用域角色成员。
+description: 删除 Azure Active Directory (Azure AD) 具有管理单元范围的角色分配。
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5baaa9475e4e6a90b7b7290675e0ce17136094ff
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 57a8f4aadbfeba5d3405f3406c2bce70600139fd
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672096"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900441"
 ---
 # <a name="remove-a-scopedrolemember"></a>删除 scopedRoleMember
 
 命名空间：microsoft.graph
 
-从管理单元中删除作用域角色成员。
+删除 Azure Active Directory (Azure AD) 具有管理单元范围的角色分配。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,12 @@ ms.locfileid: "63672096"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.ReadWrite.Directory |
+|Application | RoleManagement.ReadWrite.Directory |
+
+若要从管理单元中删除角色分配，必须为调用主体分配以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：
+
+* 特权角色管理员
+* 全局管理员
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

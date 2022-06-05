@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 68cce260c78a68aad3c6b233a47e662c1d7350ff
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: f8a329d6855a9ab17ff2d9a6372c56b8823b6a63
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821041"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899129"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -25,22 +25,22 @@ ms.locfileid: "65821041"
 > **注意** 仅终结点支持使用星号 (*) 标记的 `/beta` 订阅。
 
 - Microsoft Graph 安全性 API 中的[警报][]。
-- 微软待办中已弃用用户的 [baseTask][] () 。*
+- Microsoft To Do.* 中已弃用用户的 [baseTask][] () 。
 - Microsoft Teams 中的通话或会议后生成的 [callRecord][]。
-- Microsoft Teams中的[通道](./channel.md)。*
-- Microsoft Teams中的[聊天](./chat.md)。*
+- Microsoft Teams 中的 [频道](./channel.md) 。
+- Microsoft Teams 中的 [聊天](./chat.md) 。
 - 通过 Microsoft Teams 中的团队或频道发送的 [chatMessage][]。
 - Microsoft 365 组中的[对话][]。
-- 团队、频道或聊天中的 [conversationMember](./conversationmember.md) Microsoft Teams。*
+- 团队、频道或 Microsoft Teams 中聊天的 [conversationMember](./conversationmember.md) 。
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容。
 - Azure Active Directory 中的 [组][]。
 - SharePoint [site][]下的[list][]。
 - Outlook 中的[邮件][]、[事件][]或[联系人][]。
-- Microsoft Teams中的[联机会议][]。*
-- 用户[在][] Microsoft Teams 中的存在。*
-- Microsoft Teams.* 中的[团队](./team.md)
+- Microsoft Teams 中的 [联机会议][] 。*
+- Microsoft Teams 中的用户 [状态][] 。*
+- Microsoft Teams 中的 [团队](./team.md) 。
 - 通用打印中的 [打印机][] (当打印机的打印作业进入 JobFetchable 状态 - 准备好提取以打印时)和 [printTaskDefinition][]。有关详细信息，请参阅 [订阅来自云打印 API 的更改通知](/graph/universal-print-webhook-notifications)。
-- 微软待办中用户的 [todoTask][]。
+- Microsoft 待办事项中用户的 [todoTask][] 。
 - 在 Azure Active Directory 中的 [用户][]。
 
 关于每个支持资源的可能资源路径值，请参阅[使用 Microsoft Graph API 获取更改通知](webhooks.md)。 若要了解如何使用生命周期通知，请参阅“[减少缺失的订阅和更改通知](/graph/webhooks-lifecycle)”。
@@ -72,7 +72,7 @@ ms.locfileid: "65821041"
 | lifecycleNotificationUrl | String | 可选。 接收生命周期通知（包括 `subscriptionRemoved` 和 `missed` 通知）的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 | 全部 |
 | notificationContentType | String | 可选。 Microsoft Graph 所需的 **内容类型** 为更改支持的资源类型变更通知。 默认内容类型为 `application/json`。 | 全部 |
 | notificationQueryOptions | String |可选。  用于指定目标资源值的 OData 查询选项。 当资源达到与此处提供的查询选项匹配的状态时，客户端会收到通知。 借助订阅创建有效负载中的此新属性以及所有现有属性，每当资源达到 **notificationQueryOptions** 属性中提到的所需状态时，Webhook 就会提供通知。 例如，打印作业完成时或打印作业资源属性值 `isFetchable` 变为 `true` 等时。 | [通用打印服务](/graph/universal-print-webhook-notifications) |
-| notificationUrl | String | 必需。 接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。  | 全部 |
+| notificationUrl | String | 必填。 接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。  | 全部 |
 | notificationUrlAppId| String | 可选。 订阅服务可用于生成验证令牌的应用 ID。 这允许客户端验证收到的通知的真实性。  | 全部 |
 | resource | 字符串 | 必填。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。  | 全部 |
 

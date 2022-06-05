@@ -4,18 +4,24 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: f870167c24d1ccdf24659bc9b8bdb843c8d0b812
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 4dd9dfb9471d127d54bd27e644a296201f3501bf
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365916"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884109"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
 限制可调节并发调用服务的数量，以防止资源的过度使用。Microsoft Graph 旨在用于处理大量的请求。如果出现过多请求，限制将有助于保持 Microsoft Graph 的最佳性能和服务的可靠性。
 
 根据该方案，执行的限制会有所不同。例如，如果你正在执行大量的写入操作，限制的可能性会比仅执行读取时要高。
+
+> [!NOTE]
+> 需要从 Microsoft Graph 提取大量数据的解决方案应使用 [Microsoft Graph Data Connect](data-connect-concept-overview.md) 而不是 Microsoft Graph REST API。 Microsoft Graph Data Connect 允许组织批量提取 Microsoft 365 数据，不受限制。
+
+<!-- markdownlint-disable MD033 -->
+<br/>
 
 <!-- markdownlint-disable MD034 -->
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
@@ -130,7 +136,6 @@ Retry-After: 2.128
 | 个人联系人 API | <li>[contact](/graph/api/resources/contact) <li> [contactFolder](/graph/api/resources/contactfolder) <li> [outlookCategory](/graph/api/resources/outlookcategory)|
 | 社交和工作场所智能 | <li>[person](/graph/api/resources/person) |
 | 待办事项任务 API（预览版） | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
-
 
 ### <a name="cloud-communication-service-limits"></a>云通信服务限制
 
@@ -315,7 +320,7 @@ Retry-After: 2.128
 ### <a name="information-protection-service-limits"></a>信息保护服务限制
 
 以下限制适用于 `/informationProtection` 上的所有请求。
-  
+
 对于电子邮件，资源是唯一的网络消息 ID/收件人对。 例如，在 15 分钟内多次向同一个人提交具有相同邮件 ID 的电子邮件将触发下表中列出的每个资源限制的限制。 但是，每 15 分钟最多可以提交 150 封唯一电子邮件（租户限制）。
 
 | 操作                 | 每个租户的使用限制                                            | 每个资源（电子邮件、URL、文件）的使用限制                |
@@ -331,7 +336,6 @@ Retry-After: 2.128
 | 任何 | 每秒1个请求 |
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
-
 
 > **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
@@ -351,7 +355,6 @@ Retry-After: 2.128
 - [trending](/graph/api/resources/trending)
 - [usedInsight](/graph/api/resources/usedinsight)
 
-
 ### <a name="microsoft-graph-reports-service-limits"></a>Microsoft Graph 报告的服务限制
 
 以下限制适用于 `/reports` 上的所有请求。
@@ -364,7 +367,6 @@ Retry-After: 2.128
 上述限制分别适用于每个报告 API。例如，在 10 分钟内分别有对 Microsoft Teams 用户活动报告 API 的请求及对 Outlook 用户活动报告 API 的请求，将分别被视为 14 个请求中的 1 个请求，而不是 14 个请求中的 2 个请求。
 
 上述限制适用于所有 [使用情况报表](/graph/api/resources/report) 资源。
-
 
 ### <a name="invitation-manager-service-limits"></a>邀请管理器服务限制
 
@@ -392,7 +394,6 @@ Retry-After: 2.128
 | 任何          | 每 10 秒 455 个请求 |
 
 上述限制适用于下列资源：[!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
-
 
 ### <a name="files-and-lists-service-limits"></a>文件和列表服务限制
 
@@ -499,6 +500,7 @@ Planner 的服务限制不可用。
 - [trending](/graph/api/resources/trending)
 - [educationResource](/graph/api/resources/educationresource)
 
+
 ### <a name="service-communications-service-limits"></a>服务通信服务限制
 以下限制适用于`/admin/serviceAnnouncement/`下任何类型的服务通信请求。
 
@@ -506,3 +508,4 @@ Planner 的服务限制不可用。
 | ------------ | ------------------------ |
 | 任何 | 每 60 秒 240 个请求 |
 |任何 | 每小时 800 个请求 |
+

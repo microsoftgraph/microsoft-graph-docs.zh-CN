@@ -1,14 +1,14 @@
 ---
-title: 选择 Microsoft Graph身份验证提供程序
+title: 选择 Microsoft Graph 身份验证提供程序
 description: 了解如何为应用程序选择特定于方案的身份验证提供程序。
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 040a42ae20ee48d5af92dd4460b2e26b059ffea7
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: e04d6352012227fcb34ba030ce0cbfdc6a8fed57
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733242"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898761"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
@@ -16,7 +16,7 @@ ms.locfileid: "64733242"
 
 身份验证提供程序实现使用 Microsoft 身份验证库 (MSAL) 获取令牌所需的代码;处理一些可能的错误，例如增量同意、过期密码和条件访问;然后设置 HTTP 请求授权标头。 下表列出了与不同 [应用程序类型的](/azure/active-directory/develop/v2-app-types)方案匹配的提供程序集。
 
-| 应用场景                                                                                               | Flow/授予         | 受众               | 提供程序 |
+| 应用场景                                                                                               | Flow/Grant         | 受众               | 提供程序 |
 |--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
 | [单页应用](/azure/active-directory/develop/scenario-spa-acquire-token)                          | 使用 PKCE 的授权代码 | 委派的使用者/组织 | [授权代码提供程序](#authorization-code-provider) |
 | [调用 Web API 的 Web 应用](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
@@ -27,7 +27,7 @@ ms.locfileid: "64733242"
 |                                                                                                        | 客户端凭据 | 仅限应用               | [客户端凭据提供程序](#client-credentials-provider) |
 | [调用 Web API 的桌面应用](/azure/active-directory/develop/scenario-desktop-acquire-token)      |                    |                        |     |
 |                                                                                                        | Interactive        | 委派的使用者/组织 | [交互式提供程序](#interactive-provider) |
-|                                                                                                        | 集成Windows | 委派的组织          | [集成Windows提供程序](#integrated-windows-provider) |
+|                                                                                                        | 集成 Windows | 委派的组织          | [集成 Windows 提供程序](#integrated-windows-provider) |
 |                                                                                                        | 资源所有者     | 委派的组织          | [用户名/密码提供程序](#usernamepassword-provider) |
 |                                                                                                        | 设备代码        | 委派的组织          | [设备代码提供程序](#device-code-provider) |
 | [守护程序应用](/azure/active-directory/develop/scenario-daemon-acquire-token)                            |                    |                        |     |
@@ -44,7 +44,7 @@ ms.locfileid: "64733242"
 
 ## <a name="authorization-code-provider"></a>授权代码提供程序
 
-授权代码流使本机和 Web 应用能够安全地获取用户名中的令牌。 若要了解详细信息，请参阅 [Microsoft 标识平台 和 OAuth 2.0 授权代码流](/azure/active-directory/develop/v2-oauth2-auth-code-flow)。
+授权代码流使本机和 Web 应用能够安全地获取用户名中的令牌。 若要了解详细信息，请参阅 [Microsoft 标识平台和 OAuth 2.0 授权代码流](/azure/active-directory/develop/v2-oauth2-auth-code-flow)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -160,11 +160,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要，请支持或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请支持或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="go"></a>[转到](#tab/Go)
 
@@ -202,7 +202,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="client-credentials-provider"></a>客户端凭据提供程序
 
-客户端凭据流使服务应用程序无需用户交互即可运行。 访问基于应用程序的标识。 有关详细信息，请参阅 [Microsoft 标识平台 和 OAuth 2.0 客户端凭据流](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)。
+客户端凭据流使服务应用程序无需用户交互即可运行。 访问基于应用程序的标识。 有关详细信息，请参阅 [Microsoft 标识平台和 OAuth 2.0 客户端凭据流](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -239,7 +239,7 @@ var graphClient = new GraphServiceClient(clientSecretCredential, scopes);
 ### <a name="using-a-client-certificate"></a>使用客户端证书
 
 ```csharp
-var scopes = new[] { "User.Read" };
+var scopes = new[] { "https://graph.microsoft.com/.default" };
 
 // Multi-tenant apps can use "common",
 // single-tenant apps must use the tenant ID from the Azure portal
@@ -317,11 +317,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要，请支持或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请支持或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要，请支持或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请支持或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="go"></a>[转到](#tab/Go)
 
@@ -356,7 +356,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="on-behalf-of-provider"></a>代表提供程序
 
-当应用程序调用服务/Web API 而反过来调用 Microsoft 图形 API 时，代表流适用。 通过阅读[Microsoft 标识平台和 OAuth 2.0 代理流了解详细信息](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+当应用程序调用服务/Web API 时，代表流适用，而服务/Web API 反过来调用 Microsoft Graph API。 通过阅读 [Microsoft 标识平台和 OAuth 2.0 代理流了解详细信息](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -439,17 +439,17 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="go"></a>[转到](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
-尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 ---
 
@@ -459,7 +459,7 @@ final User me = graphClient.me().buildRequest().get();
 
 ## <a name="device-code-provider"></a>设备代码提供程序
 
-设备代码流允许通过其他设备登录到设备。 有关详细信息，请参阅[Microsoft 标识平台和 OAuth 2.0 设备代码流](/azure/active-directory/develop/v2-oauth2-device-code)。
+设备代码流允许通过其他设备登录到设备。 有关详细信息，请参阅 [Microsoft 标识平台和 OAuth 2.0 设备代码流](/azure/active-directory/develop/v2-oauth2-device-code)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -550,11 +550,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="go"></a>[转到](#tab/Go)
 
@@ -588,13 +588,13 @@ result, err := client.Me().Get(nil)
 
 ---
 
-## <a name="integrated-windows-provider"></a>集成Windows提供程序
+## <a name="integrated-windows-provider"></a>集成 Windows 提供程序
 
-集成Windows流为Windows计算机提供了一种在加入域时以无提示方式获取访问令牌的方法。 有关详细信息，请参阅[集成Windows 身份验证](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)。
+集成的 Windows 流为 Windows 计算机提供了一种在加入域时以无提示方式获取访问令牌的方法。 有关详细信息，请参阅 [集成 Windows 身份验证](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
-此`Azure.Identity`包当前不支持Windows集成身份验证。 而是使用 MSAL 创建自定义身份验证提供程序。
+此 `Azure.Identity` 包当前不支持 Windows 集成身份验证。 而是使用 MSAL 创建自定义身份验证提供程序。
 
 ```csharp
 var scopes = new[] { "User.Read" };
@@ -658,7 +658,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 ## <a name="interactive-provider"></a>交互式提供程序
 
-Xamarin 和 UWP) 和桌面应用程序 (移动应用程序使用交互式流以用户的名义调用 Microsoft Graph。 有关详细信息，请参阅 [以交互方式获取令牌](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively)。
+ (Xamarin 和 UWP) 和桌面应用程序的移动应用程序使用交互式流以用户的名义调用 Microsoft Graph。 有关详细信息，请参阅 [以交互方式获取令牌](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -691,7 +691,7 @@ var graphClient = new GraphServiceClient(interactiveCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -782,7 +782,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="usernamepassword-provider"></a>用户名/密码提供程序
 
-用户名/密码提供程序允许应用程序使用用户名和密码登录用户。 仅当无法使用任何其他 OAuth 流时，才使用此流。 有关详细信息，请参阅 [Microsoft 标识平台 和 OAuth 2.0 资源所有者密码凭据](/azure/active-directory/develop/v2-oauth-ropc)
+用户名/密码提供程序允许应用程序使用用户名和密码登录用户。 仅当无法使用任何其他 OAuth 流时，才使用此流。 有关详细信息，请参阅 [Microsoft 标识平台和 OAuth 2.0 资源所有者密码凭据](/azure/active-directory/develop/v2-oauth-ropc)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -814,7 +814,7 @@ var graphClient = new GraphServiceClient(userNamePasswordCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -846,11 +846,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)。
+尚不可用。 如果这对你很重要，请投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests) 。
 
 # <a name="go"></a>[转到](#tab/Go)
 
@@ -886,6 +886,6 @@ result, err := client.Me().Get(nil)
 
 ## <a name="next-steps"></a>后续步骤
 
-- 有关演示如何使用Microsoft 标识平台保护不同应用程序类型的代码示例，请[参阅Microsoft 标识平台代码示例 (v2.0 终结点) ](/azure/active-directory/develop/sample-v2-code)。
+- 有关演示如何使用 Microsoft 标识平台保护不同应用程序类型的代码示例，请 [参阅 microsoft 标识平台代码示例 (v2.0 终结点) ](/azure/active-directory/develop/sample-v2-code)。
 - 身份验证提供程序需要客户端 ID。 设置身份验证提供程序后，需要 [注册](https://portal.azure.com/) 应用程序。
-- 请告诉我们，投票或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)当前是否不支持所需的 OAuth 流。
+- 请告诉我们，投票赞成或打开 [Microsoft Graph 功能请求](https://aka.ms/graphrequests)当前是否不支持所需的 OAuth 流。

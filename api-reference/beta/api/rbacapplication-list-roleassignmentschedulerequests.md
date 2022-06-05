@@ -1,16 +1,16 @@
 ---
 title: 列出 roleAssignmentScheduleRequests
-description: 获取 unifiedRoleAssignmentScheduleRequest 对象及其属性的列表。
+description: 检索通过 PIM unifiedRoleAssignmentScheduleRequest 对象或角色分配 API 向主体发出的活动角色分配请求。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9a82b30e19d30eacc04c55b586e0bd9f06598b84
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 4396f1b4bef429aca76274e91aea9b218cf9aa6a
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461688"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899181"
 ---
 # <a name="list-roleassignmentschedulerequests"></a>列出 roleAssignmentScheduleRequests
 
@@ -18,7 +18,8 @@ ms.locfileid: "65461688"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象及其属性的列表。
+检索对主体进行活动角色分配的请求。 活动分配包括通过 [分配和激活请求](rbacapplication-post-roleassignmentschedulerequests.md)，以及直接通过 [角色分配 API 进行的分配](../resources/unifiedroleassignment.md)。 角色分配可以在到期日期或未过期日期的情况下永久处于活动状态，或者在用户激活符合条件的分配后暂时处于活动状态。
+
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +29,7 @@ ms.locfileid: "65461688"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | RoleAssignmentSchedule.Read.Directory、RoleManagement.Read.Directory、RoleManagement.Read.All、RoleAssignmentSchedule.ReadWrite.Directory、RoleManagement.ReadWrite.Directory |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory               |
+| Application                            | RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory               |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -43,7 +44,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select``$filter`OData 查询参数，`$expand`以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 

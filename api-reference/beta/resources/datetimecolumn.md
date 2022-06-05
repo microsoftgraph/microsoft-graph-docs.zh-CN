@@ -5,13 +5,13 @@ ms.date: 09/11/2017
 title: DateTimeColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: adca775df47110f5d79cf9b85c8877f05d22a361
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: 0460a65a3d70dfbbc6fe991c108f6fac1f9f0d55
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724103"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900280"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn 资源类型
 

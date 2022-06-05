@@ -1,26 +1,25 @@
 ---
 author: daspek
-ms.date: 09/12/2017
-title: SystemFacet
+title: systemFacet
 ms.localizationpriority: medium
-description: 系统 Facet 指示对象由系统为其自己的操作进行管理。
-ms.prod: ''
+description: 系统方面指示该对象由系统管理以进行自己的操作。
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 62858c85724bc74ed4f560f70bdfafcc01b63d8d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b51cc0db78fffceca2c1af4ea67c63a9a5ee9e22
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134428"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900483"
 ---
-# <a name="system-facet"></a>系统 Facet
+# <a name="system-facet"></a>系统方面
 
 命名空间：microsoft.graph
 
-**系统** Facet 指示对象由系统为其自己的操作进行管理。
+**系统** 方面指示该对象由系统管理以进行自己的操作。
 大多数应用应忽略具有系统 Facet 的项。
 
-**注意**：尽管此 Facet 暂为空，但在今后推出的 API 版本中将在此 Facet 中填充其他属性。
+>**注意**：尽管此 Facet 暂为空，但在今后推出的 API 版本中将在此 Facet 中填充其他属性。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

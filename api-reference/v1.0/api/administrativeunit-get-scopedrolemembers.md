@@ -1,22 +1,23 @@
 ---
 title: 获取 scopedRoleMember
-description: 检索特定的 scopedRoleMembership 资源。
+description: 获取 Azure Active Directory (Azure AD) 具有管理单元范围的角色分配。
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 103a74664943ce216cea3372b9a13f789f7e831e
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 2e569b293d7657fe107716790bf803096120881f
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672124"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898614"
 ---
 # <a name="get-a-scopedrolemember"></a>获取 scopedRoleMember
 
 命名空间：microsoft.graph
 
-检索特定的 [scopedRoleMembership](../resources/scopedrolemembership.md) 资源。
+获取 Azure Active Directory (Azure AD) 具有管理单元范围的角色分配。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -25,7 +26,7 @@ ms.locfileid: "63672124"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|Application | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +46,7 @@ GET /directory/administrativeUnits/{id}/scopedRoleMembers/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求 [的 scopedRoleMembership](../resources/scopedrolemembership.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和请求 [的 scopedRoleMembership](../resources/scopedrolemembership.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

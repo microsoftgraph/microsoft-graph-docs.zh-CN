@@ -5,28 +5,28 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 54f3bf6e57baad1f12cdeeeb8945dda50bdf5783
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 65b46e7683e5ab715c381fe646657becb9e843a2
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014213"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898922"
 ---
 # <a name="create-bookingbusiness"></a>创建 bookingBusiness
 
 命名空间：microsoft.graph
 
-在租户中 [创建新的 Microsoft Bookings](../resources/bookingbusiness.md) 业务。
+在租户中创建新的 [Microsoft Bookings 业务](../resources/bookingbusiness.md) 。
 
-这是设置 Bookings 业务的第一步，你必须指定业务显示名称。 可以包括其他信息（如公司地址、网站地址和日程安排策略）或稍后通过更新 **bookingBusiness** 来 [](bookingbusiness-update.md)设置该信息。
-## <a name="permissions"></a>Permissions
+这是设置 Bookings 业务的第一步，你必须在其中指定业务显示名称。 可以包含其他信息，例如业务地址、网站地址和计划策略，或稍后通过更新 **bookingBusiness** [来](bookingbusiness-update.md)设置该信息。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Bookings.Manage.All  |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ POST /solutions/bookingBusinesses
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [bookingBusiness](../resources/bookingbusiness.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [bookingBusiness](../resources/bookingbusiness.md) 对象。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -60,7 +60,6 @@ Content-type: application/json
 {
     "displayName":"Fourth Coffee",
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",
@@ -98,7 +97,6 @@ Content-type: application/json
     "isPublished":false,
     "publicUrl":null,
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",

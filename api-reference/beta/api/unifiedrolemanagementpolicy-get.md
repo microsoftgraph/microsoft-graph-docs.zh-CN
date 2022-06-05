@@ -1,23 +1,23 @@
 ---
 title: 获取 unifiedRoleManagementPolicy
-description: 读取 unifiedRoleManagementPolicy 对象的属性和关系。
+description: 检索角色管理策略的详细信息。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9838eff41eda53f7bd1657631f4e6a0c194aa7c9
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 77c14e4a85de4e68031bf4cdc1c87d37ef6c1dc7
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398452"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900294"
 ---
 # <a name="get-unifiedrolemanagementpolicy"></a>获取 unifiedRoleManagementPolicy
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象的属性和关系。 若要读取适用于 Azure RBAC 的策略，请将 [Azure REST PIM API 用于角色管理策略](/rest/api/authorization/role-management-policies/get)。
+检索角色管理策略的详细信息。 若要读取适用于 Azure RBAC 的策略，请将 [Azure REST PIM API 用于角色管理策略](/rest/api/authorization/role-management-policies/get)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "65398452"
 |:---|:---|
 |委派（工作或学校帐户）|RoleManagementPolicy.Read.Directory、RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagementPolicy.ReadWrite.Directory、RoleManagement.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory|
+|Application|RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持所有 OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数， `$expand` 以帮助自定义响应。 还可以指定通配符值 `*` 以展开所有受支持的关系，即 `?$expand=*`。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|

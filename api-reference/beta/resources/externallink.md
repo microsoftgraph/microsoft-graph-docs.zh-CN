@@ -1,16 +1,16 @@
 ---
 title: externalLink 资源类型
-description: 打开 OneNote 页面或笔记本的 url。
-localization_priority: Normal
+description: 打开 OneNote 页面或笔记本的 URL。
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: 8ff8a71585441943008c809c9a71ea05a6cb030e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 690eade5d04b5c0a5b90074fa53717df84618ae4
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013691"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899174"
 ---
 # <a name="externallink-resource-type"></a>externalLink 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48013691"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-打开 OneNote 页面或笔记本的 url。
+打开 OneNote 页面或笔记本的 URL。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,7 +41,7 @@ ms.locfileid: "48013691"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|href|String|链接的 url。|
+|href|字符串|链接的 URL。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

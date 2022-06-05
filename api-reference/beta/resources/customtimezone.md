@@ -1,16 +1,16 @@
 ---
 title: customTimeZone 资源类型
 description: 表示从标准时间到夏令时的切换不标准（反之亦然）的时区。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: calendar
 author: abheek-das
-ms.openlocfilehash: c16234ea68b014b1c4682a5b158545121c0ceb42
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9c7b240a010a5fb729cd12770648634decadf284
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136239"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900182"
 ---
 # <a name="customtimezone-resource-type"></a>customTimeZone 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50136239"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性 | 类型   |说明|
 |:---------------|:--------|:----------|
 | bias | Edm.Int32 | 时区与协调世界时 (UTC) 的时间偏移量。 此值以分钟为单位。 早于 UTC 的时区为正偏移；晚于 UTC 的时区为负偏移。|
 | daylightOffset | [daylightTimeZoneOffset](daylighttimezoneoffset.md) | 指定时区何时从标准时间切换到夏令时。 |

@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: FolderView
+title: folderView
 ms.localizationpriority: medium
 description: FolderView 资源提供或设置关于文件夹的用户体验建议。
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 72371634e8cebba4c520277de6bae7055a63ea97
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 79614af785392918026c857816505a12c9f8e476
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078845"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900161"
 ---
-# <a name="folderview-resource-type"></a>FolderView 资源类型
+# <a name="folderview-resource-type"></a>folderView 资源类型
 
 命名空间：microsoft.graph
 
 **FolderView** 资源提供或设置关于文件夹的用户体验建议。
 
-可从[driveItem][item-resource]资源的[folder][folder-facet]属性获得它。
+它可从 [driveItem][item-resource] 资源[的文件夹][folder-facet]属性获取。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

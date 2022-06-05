@@ -5,13 +5,13 @@ ms.date: 09/17/2017
 title: BaseItemVersion
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 7db0626d3915bfb7a76e492ede0d8cfec256f522
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: fb1383c2e906b17c039d0489c5212f7084f8c2f2
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724141"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899419"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion 资源类型
 

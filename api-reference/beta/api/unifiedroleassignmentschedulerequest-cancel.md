@@ -1,23 +1,23 @@
 ---
 title: unifiedRoleAssignmentScheduleRequest：cancel
-description: 取消 unifiedRoleAssignmentScheduleRequest。
+description: 立即取消其状态为“已授予”的 unifiedRoleAssignmentScheduleRequest 对象。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8bcfafb372fc5b72b4b404a1a2d87f269ca7b230
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 2e73bd9625e82467a9f1bdb512e20cbc41528fec
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398382"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900175"
 ---
 # <a name="unifiedroleassignmentschedulerequest-cancel"></a>unifiedRoleAssignmentScheduleRequest：cancel
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-立即取消处于状态的 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象，并让系统在 `Granted` 30 天后自动删除已取消的请求。 调用此操作后，取消的 unifiedRoleAssignmentScheduleRequest 的 **状态** 将更改为 `Canceled`。
+立即取消处于状态的 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象，并让系统在 `Granted` 30 天后自动删除已取消的请求。 调用此操作后，取消的 **unifiedRoleAssignmentScheduleRequest** 的 **状态** 将更改为 `Canceled`。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "65398382"
 |:---|:---|
 |委派（工作或学校帐户）|RoleAssignmentSchedule.ReadWrite.Directory， RoleManagement.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|不支持|
+|Application|RoleAssignmentSchedule.ReadWrite.Directory， RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssign
 
 ## <a name="response"></a>响应
 
-如果成功，此操作返回 `204 No Content` 响应代码。 尝试取消未处于可取消状态的请求，例如，其 **状态** 为`Provisioned`或`Failed``400 Bad Request`返回错误代码的 unifiedRoleAssignmentScheduleRequest 对象。
+如果成功，此操作返回 `204 No Content` 响应代码。 尝试取消未处于可取消状态的请求，例如，其 **状态** 为`Provisioned`或`Failed``400 Bad Request`返回错误代码的 **unifiedRoleAssignmentScheduleRequest** 对象。
 
 ## <a name="examples"></a>示例
 

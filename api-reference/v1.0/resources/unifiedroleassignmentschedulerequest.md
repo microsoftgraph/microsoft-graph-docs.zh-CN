@@ -1,22 +1,22 @@
 ---
 title: unifiedRoleAssignmentScheduleRequest 资源类型
-description: 表示通过 PIM 向主体分配活动角色的请求。 角色分配可以在到期日期或未过期日期的情况下永久活动，也可以在激活符合条件的分配后暂时处于活动状态。
+description: 在 PIM 中，表示对主体进行活动角色分配的请求。 角色分配可以在到期日期或未过期日期的情况下永久活动，也可以在激活符合条件的分配后暂时处于活动状态。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9c30760412982a00d6d0a45773f181f5e0cfbbc4
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: b6826ddbf94feb7cdb71d2002803c027bb150ed1
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134053"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899797"
 ---
 # <a name="unifiedroleassignmentschedulerequest-resource-type"></a>unifiedRoleAssignmentScheduleRequest 资源类型
 
 命名空间：microsoft.graph
 
-表示通过 PIM 向主体分配活动角色的请求。 角色分配可以在到期日期或未过期日期的情况下永久活动，也可以在激活符合条件的分配后暂时处于活动状态。 继承自 [请求](../resources/request.md)。
+在 PIM 中，表示对主体进行活动角色分配的请求。 角色分配可以在到期日期或未过期日期的情况下永久活动，也可以在激活符合条件的分配后暂时处于活动状态。 继承自 [请求](../resources/request.md)。
 
 有关可通过 **unifiedRoleAssignmentScheduleRequest** 资源类型定义的 PIM 方案的详细信息，请参阅 [通过特权标识管理 (PIM) API 进行角色管理的概述](privilegedidentitymanagementv3-overview.md)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "65134053"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|action|unifiedRoleScheduleRequestActions|表示角色分配请求上的操作类型。 可取值包括：`adminAssign`、`adminUpdate`、`adminRemove`、`selfActivate`、`selfDeactivate`、`adminExtend`、`adminRenew`、`selfExtend`、`selfRenew`、`unknownFutureValue`。 <br/><ul><li>`adminAssign`：让管理员将角色分配给主体。</li><li>`adminRemove`：让管理员从角色中删除主体。</li><li> `adminUpdate`：让管理员更改现有角色分配。</li><li>`adminExtend`：让管理员延长即将过期的分配。</li><li>`adminRenew`：让管理员续订过期的分配。</li><li>`selfActivate`：让主体激活其分配。</li><li>`selfDeactivate`：让主体停用其活动分配。</li><li>`selfExtend`：让主体请求延长其即将过期的分配。</li><li>`selfRenew`：让主体请求续订其过期的分配。</li></ul>|
+|action|String|表示角色分配请求上的操作类型。 可取值包括：`adminAssign`、`adminUpdate`、`adminRemove`、`selfActivate`、`selfDeactivate`、`adminExtend`、`adminRenew`、`selfExtend`、`selfRenew`、`unknownFutureValue`。 <br/><ul><li>`adminAssign`：让管理员将角色分配给主体。</li><li>`adminRemove`：让管理员从角色中删除主体。</li><li> `adminUpdate`：让管理员更改现有角色分配。</li><li>`adminExtend`：让管理员延长即将过期的分配。</li><li>`adminRenew`：让管理员续订过期的分配。</li><li>`selfActivate`：让主体激活其分配。</li><li>`selfDeactivate`：让主体停用其活动分配。</li><li>`selfExtend`：让主体请求延长其即将过期的分配。</li><li>`selfRenew`：让主体请求续订其过期的分配。</li></ul>|
 |approvalId|String|请求批准的标识符。 继承自 [请求](../resources/request.md)。|
 |appScopeId|String|分配作用域为应用时特定于应用的范围的标识符。 分配的范围确定已授予主体访问权限的资源集。 应用范围是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将范围限制为特定目录对象，例如管理单元。 支持`$filter` (`eq`和`ne``null`值) 。|
 |completedDateTime|DateTimeOffset|请求完成日期时间。 继承自 [请求](../resources/request.md)。|
@@ -46,7 +46,7 @@ ms.locfileid: "65134053"
 |principalId|String|已授予分配的主体的标识符。 支持 `$filter`（`eq`、`ne`）。|
 |roleDefinitionId|String|分配给主体的 [unifiedRoleDefinition](unifiedroledefinition.md) 对象的标识符。 支持 `$filter`（`eq`、`ne`）。|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|角色分配的周期。 当前不支持定期计划。|
-|状态|String|角色分配请求的状态。 继承自 [请求](../resources/request.md)。 只读。 支持 `$filter`（`eq`、`ne`）。|
+|status|String|角色分配请求的状态。 继承自 [请求](../resources/request.md)。 只读。 支持 `$filter`（`eq`、`ne`）。|
 |targetScheduleId|String|链接到分配请求的计划对象的标识符。 支持 `$filter`（`eq`、`ne`）。|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|链接到角色分配请求的票证详细信息，包括票证编号和票证系统的详细信息。|
 

@@ -1,16 +1,16 @@
 ---
 title: integerRange 资源类型
-description: 表示由两个 Int64 边界描述的整数的包含范围。
+description: 表示由两个 Int64 边界描述的非独占整数范围。
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: ee879104878189ddcaf51f65e4e127a61798c811
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e370d7b0fcf67c76fcb43cba7c9382521e8ada78
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986054"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900133"
 ---
 # <a name="integerrange-resource-type"></a>integerRange 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "47986054"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示由两个 Int64 边界描述的整数的包含范围。
+表示由两个 Int64 边界描述的非独占整数范围。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |start|Int64|整数范围的非独占下限。|
-|end|Int64|整数范围的上下限。|
+|end|Int64|整数范围的非独占上限。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: 身份
+title: Identity 资源类型
 ms.localizationpriority: medium
-description: 身份资源表示主角的身份。
-ms.prod: ''
+description: 标识资源表示执行组件的标识。
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 3165b70282fd3a0a20c373e3c10ca8ab0c6fc909
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5445aec8f1f6901ccfba72b5262528fc2d84c203
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098977"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900336"
 ---
-# <a name="identity-resource-type"></a>Identity 资源类型
+# <a name="identity-resource-type"></a>标识资源类型
 
 命名空间：microsoft.graph
 
-**身份** 资源表示 _主角_ 的身份。例如，主角可以是用户、设备或应用程序。
+标 **识** 资源表示 _执行组_ 件的标识。
+例如，主角可以是用户、设备或应用程序。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,28 +1,28 @@
 ---
-title: Json 资源类型
-description: 表示以 JSON 格式返回的数据
+title: json 资源类型
+description: 表示以 JSON 格式为 Excel 返回的数据。
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
-ms.openlocfilehash: c0be936af70345098792572ec55066eb4b858239
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d95939170f870e3dd9ab2a5d28bcda98f6487479
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036226"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898495"
 ---
-# <a name="json-resource-type"></a>Json 资源类型
+# <a name="json-resource-type"></a>json 资源类型 
 
 命名空间：microsoft.graph
 
-表示以 JSON 格式返回的数据
+表示以 JSON 格式为 Excel 返回的数据。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
-|:---|:---|:---|
+无。
 
 ## <a name="relationships"></a>关系
-无
+无。
+
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!--{

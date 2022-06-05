@@ -1,21 +1,21 @@
 ---
 title: 列出 roleAssignmentScheduleRequests
-description: 在 PIM 中，检索通过 unifiedRoleAssignmentScheduleRequest 对象向主体发出的活动角色分配请求。
+description: 检索通过 PIM unifiedRoleAssignmentScheduleRequest 对象或角色分配 API 向主体发出的活动角色分配请求。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 167fa54bcca28c3d9b362e3a44b6834aecab864d
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 163ff3370f7e39e93dc0b855d18bf7ea599956a5
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65207234"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898775"
 ---
 # <a name="list-roleassignmentschedulerequests"></a>列出 roleAssignmentScheduleRequests
 命名空间：microsoft.graph
 
-在 PIM 中，检索对主体进行活动角色分配的请求。 活动分配包括通过 [分配和激活请求](rbacapplication-post-roleassignmentschedulerequests.md)，以及直接通过 [角色分配 API 进行的分配](../resources/unifiedroleassignment.md)。 角色分配可以在到期日期或未过期日期的情况下永久处于活动状态，或者在用户激活符合条件的分配后暂时处于活动状态。
+检索对主体进行活动角色分配的请求。 活动分配包括通过 [分配和激活请求](rbacapplication-post-roleassignmentschedulerequests.md)，以及直接通过 [角色分配 API 进行的分配](../resources/unifiedroleassignment.md)。 角色分配可以在到期日期或未过期日期的情况下永久处于活动状态，或者在用户激活符合条件的分配后暂时处于活动状态。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

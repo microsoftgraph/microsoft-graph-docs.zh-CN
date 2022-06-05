@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0a7bb53d098ef2383035485c7cb9311db3935dcf
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: c63191d9f5c71a08cc96b81277c7b9d1712df0c5
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670241"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900014"
 ---
 # <a name="create-administrativeunit"></a>创建 administrativeUnit
 
@@ -29,6 +29,11 @@ ms.locfileid: "63670241"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.ReadWrite.All |
 
+若要创建管理单元，必须为调用主体分配以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：
+
+* 特权角色管理员
+* 全局管理员
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -44,11 +49,11 @@ POST /directory/administrativeUnits
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [administrativeUnit](../resources/administrativeunit.md) 对象的 JSON 表示形式。
 
-由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)`POST`，因此您可以使用 操作，并创建时将包含自己的数据的自定义属性添加到管理单元。
+由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以在创建该扩展时使用 `POST` 该操作并将自定义属性与自己的数据一起添加到管理单元。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
 
 ## <a name="example"></a>示例
 

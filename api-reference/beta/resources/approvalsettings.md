@@ -1,16 +1,16 @@
 ---
 title: approvalSettings 复杂类型
-description: 用于访问包分配策略的 requestApprovalSettings 属性。 提供其他设置，以选择必须批准每个请求的人。
-localization_priority: Normal
+description: 角色管理策略规则中定义的审批设置。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 99892e0943b993fe43edb4bd104fd2a3a8736a51
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0fd8af9a314052dab87908fde5987850899e8f90
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135254"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900217"
 ---
 # <a name="approvalsettings-complex-type"></a>approvalSettings 复杂类型
 
@@ -18,37 +18,40 @@ ms.locfileid: "50135254"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于 `requestApprovalSettings` 访问包分配 [策略的属性](accesspackageassignmentpolicy.md)。 提供其他设置，以选择必须批准每个请求的人。 
+角色管理策略规则中定义的审批设置。
 
 ## <a name="properties"></a>属性
 
-| 属性                     | 类型                      | 说明 |
-| :--------------------------- | :------------------------ | :---------- |
-| isApprovalRequired | Boolean | 如果为 false，则不需要批准此策略中的请求。 |
-| isApprovalRequiredForExtension | Boolean| 如果为 false，则已拥有工作分配的用户不需要批准以扩展其工作分配。 |
-| isRequestorJustificationRequired | Boolean | 指示请求者是否需要在请求中提供理由。 |
-| approvalMode| 字符串 | 之 `NoApproval` 一， `SingleStage` 或 `Serial` 。 如果 `NoApproval` 为 `isApprovalRequired` false，则使用 。 |
-| approvalStages | [approvalStage](approvalstage.md) 集合| 如果需要审批，则此集合的一个或两个元素定义审批的每个阶段。 如果不需要批准，则为空数组。  |
+|属性|类型|说明|
+|:---|:---|:---|
+|approvalMode|字符串|其中一`SingleStage``Serial`个 (`Parallel``NoApproval` 默认) 。 `NoApproval`是使用时间`isApprovalRequired`。`false`|
+|approvalStages|[approvalStage](../resources/approvalstage.md) 集合|如果需要审批，则此集合的一个或两个元素定义审批的每个阶段。 如果不需要审批，则为空数组。|
+|isApprovalRequired|Boolean|指示是否需要批准此策略中的请求。|
+|isApprovalRequiredForExtension|Boolean|指示用户是否需要批准才能扩展其分配。|
+|isRequestorJustificationRequired|Boolean|指示请求者是否需要在其请求中提供理由。|
+
+## <a name="relationships"></a>关系
+无。
 
 ## <a name="json-representation"></a>JSON 表示形式
-
-以下是请求审批设置属性的 JSON 表示形式。
-
+下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.approvalSettings"
-}-->
-
-```json
+}
+-->
+``` json
 {
-    "isApprovalRequired": true,
-    "isApprovalRequiredForExtension": false,
-    "isRequestorJustificationRequired": true,
-    "approvalMode": "Serial",
-    "approvalStages": [{"@odata.type": "microsoft.graph.approvalStage"}]
+  "@odata.type": "#microsoft.graph.approvalSettings",
+  "isApprovalRequired": "Boolean",
+  "isApprovalRequiredForExtension": "Boolean",
+  "isRequestorJustificationRequired": "Boolean",
+  "approvalMode": "String",
+  "approvalStages": [
+    {
+      "@odata.type": "microsoft.graph.approvalStage"
+    }
+  ]
 }
 ```
 

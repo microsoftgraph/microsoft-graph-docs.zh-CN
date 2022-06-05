@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5a6c4c2ba37e1c5e36b4b6906aab301325fd237e
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 14b8319c0043e40964273a74c138c9724d17d164
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695468"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900322"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -40,6 +40,8 @@ ms.locfileid: "65695468"
 ```http
 DELETE /groups/{id}/members/{id}/$ref
 ```
+> [!IMPORTANT]
+> 如果 `/$ref` 未追加到请求中，则会从 Azure Active Directory (Azure AD) 中删除用户（如果使用适当的权限）;否则将 `403 Forbidden` 返回错误。 
 
 ## <a name="request-headers"></a>请求标头
 

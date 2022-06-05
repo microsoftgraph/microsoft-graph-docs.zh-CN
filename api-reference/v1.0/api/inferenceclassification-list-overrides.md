@@ -3,14 +3,14 @@ title: 列出替代
 description: 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的替代。
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: mail
 doc_type: apiPageType
-ms.openlocfilehash: 3b44a44163269fa254358ab464efd99898df5380
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3d05b1ae5b43e3c73fdbf741fe356655dffe2cf9
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095278"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900434"
 ---
 # <a name="list-overrides"></a>列出替代
 

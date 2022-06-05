@@ -2,15 +2,15 @@
 title: 列出结果
 description: 检索 educationoutcome 对象的列表。
 ms.localizationpriority: medium
-author: dipakboyed
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 75591171a58f17e7f2d58955e23d03fe2a967984
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 72f4d034b9afa7639b8cc671aff01489c5a334db
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099929"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900238"
 ---
 # <a name="list-outcomes"></a>列出结果
 
@@ -18,17 +18,19 @@ ms.locfileid: "62099929"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [educationOutcome 对象](../resources/educationoutcome.md) 的列表。  有三种类型的结果 **：educationPointsOutcome、educationFeedbackOutcome** 和 **educationRubricOutcome**。 
+检索 [educationOutcome](../resources/educationoutcome.md) 对象的列表。  有四种类型的结果： **educationPointsOutcome**、 **educationFeedbackOutcome**、 **educationRubricOutcome** 和 **educationFeedbackResourceOutcome**。
 
-对于没有点值和 (信用额度的信用分配提交) 将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)。  (它也可能返回 [educationPointsOutcome，](../resources/educationpointsoutcome.md)但会忽略该结果。) 
+信用分配的提交 (没有点值且没有) 将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 的提交。  (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但该结果将被忽略。) 
 
-分数分配提交 (分配了分数值的) 将同时具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationPointsOutcome](../resources/educationpointsoutcome.md)。
+ (分配了点值的分数分配的提交) 将同时具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationPointsOutcome](../resources/educationpointsoutcome.md)。
 
-对于附加了分数的作业，如果分数为信用额度， (分数为) ，则其将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。  (它也可能返回 [educationPointsOutcome，](../resources/educationpointsoutcome.md)但会忽略该结果。) 
+如果使用附加的 rubric 进行作业的提交（如果 rubric 是信用标准 (没有积分) ，则将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。  (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但该结果将被忽略。) 
 
-对于附加了标点的工作分配，如果分数为分值，则提交内容将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)，即 [educationPointsOutcome] (。/resources/educationpointsoutcome.md 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。
+如果使用附加的 rubric 的作业提交，如果 rubric 是磅，则将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)（一个 [educationPointsOutcome] (.）。/resources/educationpointsoutcome.md 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。
 
-所有结果类型都有一个适合该结果类型的常规和已发布属性;例如 **，points** 和 **publishedPoints** **、feedback** 和 **publishedFeedback**。  常规属性是由教师更新的最新值;已发布属性是返回到学生的最新值。
+反馈资源的提交将具有 [educationFeedbackResourceOutcome](../resources/educationfeedbackresourceoutcome.md)。
+
+所有结果类型都有一个适合该结果类型的常规属性和已发布属性;例如， **点** 和 **已发布的Points**、 **反馈** 和 **已发布的Feedback**。  常规属性是教师更新的最新值：已发布的属性是返回给学生的最新值。
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +40,7 @@ ms.locfileid: "62099929"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
+| Application                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -60,11 +62,15 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationOutcome](../resources/educationoutcome.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [educationOutcome](../resources/educationoutcome.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-get-all-outcomes"></a>示例 1：获取所有结果
+
+以下示例演示如何检索所有结果。
+
+#### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -103,8 +109,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 
 ---
 
-
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。
 
@@ -233,6 +238,121 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-get-outcomes-filtered-by-outcome-type"></a>示例 2：获取按结果类型筛选的结果
+
+以下示例演示如何检索按结果类型筛选的结果。
+
+#### <a name="request"></a>请求
+
+请求示例如下所示。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_outcomes_by_type"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/a3cce0ba-2008-4c4d-bf62-079408562d96/submissions/2185e6d7-2924-4ed1-dde1-269f89e29184/outcomes?$filter=isof('microsoft.graph.educationFeedbackResourceOutcome')
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationOutcome",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('a3cce0ba-2008-4c4d-bf62-079408562d96')/submissions('2185e6d7-2924-4ed1-dde1-269f89e29184')/outcomes",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.educationFeedbackResourceOutcome",
+            "lastModifiedDateTime": "2022-05-06T00:52:12.8318457Z",
+            "id": "8fb409c5-570b-4fe5-8473-d3666e61f3a0",
+            "resourceStatus": "notPublished",
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                    "displayName": null
+                }
+            },
+            "feedbackResource": {
+                "@odata.type": "#microsoft.graph.educationWordResource",
+                "displayName": "Document2.docx",
+                "createdDateTime": "2022-05-06T00:52:12.8318064Z",
+                "lastModifiedDateTime": "2022-05-06T00:52:12.8318457Z",
+                "fileUrl": "https://graph.microsoft.com/beta/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ26WF6K2W2IOFAKDITG4F5GWRH5",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                        "displayName": null
+                    }
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationFeedbackResourceOutcome",
+            "lastModifiedDateTime": "2022-05-06T00:52:17.3180275Z",
+            "id": "0710aeea-590d-46b4-9eb8-1c08b6549677",
+            "resourceStatus": "notPublished",
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                    "displayName": null
+                }
+            },
+            "feedbackResource": {
+                "@odata.type": "#microsoft.graph.educationWordResource",
+                "displayName": "Document3.docx",
+                "createdDateTime": "2022-05-06T00:52:17.3180176Z",
+                "lastModifiedDateTime": "2022-05-06T00:52:17.3180275Z",
+                "fileUrl": "https://graph.microsoft.com/beta/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ563EMEMHRTBBH2SOZ4GDSNEUZK",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                        "displayName": null
+                    }
+                }
+            }
+        }
+    ]
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -242,5 +362,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

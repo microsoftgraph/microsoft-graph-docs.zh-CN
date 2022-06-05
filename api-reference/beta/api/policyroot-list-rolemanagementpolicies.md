@@ -1,34 +1,32 @@
 ---
 title: 列出 roleManagementPolicies
-description: 从 roleManagementPolicies 导航属性获取 unifiedRoleManagementPolicy 资源。
+description: 获取角色管理策略及其详细信息。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 424e26ab89005f9dba9c2a1473c737e2e175c921
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: b3b24f143d1d0cb7daa42947526d39ac9147403e
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398772"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900301"
 ---
 # <a name="list-rolemanagementpolicies"></a>列出 roleManagementPolicies
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-从 roleManagementPolicies 导航属性获取 unifiedRoleManagementPolicy 资源。
-
+获取角色管理策略及其详细信息。 此 API 仅适用于 Azure AD 角色。 若要检索适用于 Azure RBAC 的策略，请将 [Azure REST PIM API 用于角色管理策略](/rest/api/authorization/role-management-policies/list-for-scope)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|PrivilegedAccess.ReadWrite.AzureAD|
+|委派（工作或学校帐户）|RoleManagementPolicy.Read.Directory、RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagementPolicy.ReadWrite.Directory、RoleManagement.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|PrivilegedAccess.Read.AzureAD|
+|Application|RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,11 +35,11 @@ ms.locfileid: "65398772"
 }
 -->
 ``` http
-GET /policies/roleManagementPolicies
+GET /policies/roleManagementPolicies?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持所有 OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法要求 `$filter` (`eq`) 查询参数将请求的范围限定到 **scopeId** 和 **scopeType**。 还可以使用 `$select` OData 查询参数和 `$expand` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -59,6 +57,8 @@ GET /policies/roleManagementPolicies
 
 ### <a name="request"></a>请求
 
+以下示例检索范围为租户的策略，并将其应用于目录角色。
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,7 +66,7 @@ GET /policies/roleManagementPolicies
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicies
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicies?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicy-csharp-snippets.md)]
@@ -109,20 +109,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-      "displayName": "Policy1",
-      "description": "A policy for all privileged administrators",
-      "isOrganizationDefault": true,
-      "scopeId": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-      "scopeType": "subscriptions",
-      "lastModifiedDateTime": "2021-03-17T02:54:27.167+00:00",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identity"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies",
+    "value": [
+        {
+            "id": "DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9",
+            "displayName": "DirectoryRole",
+            "description": "DirectoryRole",
+            "isOrganizationDefault": false,
+            "scopeId": "/",
+            "scopeType": "DirectoryRole",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        },
+        {
+            "id": "DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a",
+            "displayName": "DirectoryRole",
+            "description": "DirectoryRole",
+            "isOrganizationDefault": false,
+            "scopeId": "/",
+            "scopeType": "DirectoryRole",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        }
+    ]
 }
 ```
 

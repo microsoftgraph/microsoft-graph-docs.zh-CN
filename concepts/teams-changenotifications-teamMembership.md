@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2a69b010885c79dba87ef80a23f035e50d7aec53
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: bdc228637496774dd7eb90dcd9b09dff8a6c9da7
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084089"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900473"
 ---
 # <a name="get-change-notifications-for-membership-changes-in-teams-and-channels-using-microsoft-graph"></a>使用 Microsoft Graph 获取团队和频道中成员身份更改的更改通知
 
@@ -22,18 +22,18 @@ ms.locfileid: "60084089"
 
 ### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|委派（工作或学校帐户） | TeamMember.Read.All, TeamMember.ReadWrite.All | beta 版 |
-|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   | beta 版 |
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | TeamMember.Read.All, TeamMember.ReadWrite.All |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   |
 
 >**注意：** 带有 * 标记的权限作为 [ 资源特定的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 的一部分受到支持。
 
 ### <a name="example"></a>示例
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -56,17 +56,17 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|委派（工作或学校帐户） | 不支持。 | 不支持。 |
-|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | ChannelMember.Read.All   | beta 版 |
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | 不支持。 |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | ChannelMember.Read.All   |
 
 
 ### <a name="example"></a>示例
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

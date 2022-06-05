@@ -1,16 +1,16 @@
 ---
 title: inferenceClassification 资源类型
 description: '用户邮件分类，确保仅关注对用户更相关或更重要的邮件。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: abheek-das
-ms.openlocfilehash: b69f892a9d8223e467a10ce1c055cc470a2c171e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 53754b1a803a7c6e550bd8afc682d0d6403b77b1
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130253"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899398"
 ---
 # <a name="inferenceclassification-resource-type"></a>inferenceClassification 资源类型
 

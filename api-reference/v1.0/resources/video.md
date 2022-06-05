@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: 视频
+title: 视频资源类型
 ms.localizationpriority: medium
-description: 视频资源将与视频相关的数据项分组到一个单一结构。
-ms.prod: ''
+description: 视频资源将与视频相关的数据项分组到单个结构中。
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: d46949bf48455fbb74a99891a80984bdedb460fb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 81a2ccd6250261c87b5af84cc0bef0ace4342702
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134267"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897823"
 ---
-# <a name="video-resource-type"></a>Video 资源类型
+# <a name="video-resource-type"></a>视频资源类型
 
 命名空间：microsoft.graph
 
-**视频** 资源将与视频相关的数据项分组到一个单一结构。
+**视频** 资源将与视频相关的数据项分组到单个结构中。
 
-如果 [**DriveItem**](driveitem.md) 具有一个非 null **视频** 方面，则该项表示一个视频文件。通过从文件中提取元数据对 **视频** 资源的属性进行填充。
+如果 [**driveItem**](driveitem.md) 具有非 null **视频** 方面，则该项表示视频文件。
+通过从文件中提取元数据来填充 **视频** 资源的属性。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -65,7 +65,7 @@ ms.locfileid: "59134267"
 
 ## <a name="remarks"></a>注解
 
-有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
+有关 driveItem 上的分面的详细信息，请参阅 [driveItem](driveitem.md)。
 
 <!-- {
   "type": "#page.annotation",

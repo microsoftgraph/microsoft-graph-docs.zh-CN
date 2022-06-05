@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4f69413ebbe824a87414649ceea6d904cdc24bc4
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 01d1206a3083fda0820be91b8e84a4f5edc2397f
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294059"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899650"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph 身份验证和授权基础知识
 
@@ -74,7 +74,7 @@ Microsoft Graph具有两种类型的权限。
 ##### <a name="comparison-of-delegated-and-application-permissions"></a>委派权限和应用程序权限的比较
 
 
-| <!-- No header--> | 委派权限 | 应用程序权限 |
+| Item | 委派权限 | 应用程序权限 |
 |--|--|--|
 | 应用类型方案 | Web/移动/单页应用 （SPA） | Web/守护程序 |
 | 访问上下文 | [代表用户获取访问权限](../auth-v2-user.md) | [以服务的形式获取访问权限](../auth-v2-service.md) |

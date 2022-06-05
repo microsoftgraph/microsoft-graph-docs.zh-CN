@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5ab726733f07102acd16ef004dc559b7634725b7
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 2f9ca520011b3bd8e6ce80266fbdaa276a44c929
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669380"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898117"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -18,7 +18,7 @@ ms.locfileid: "63669380"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [administrativeUnit 对象](../resources/administrativeunit.md) 的属性。
+更新 [administrativeUnit](../resources/administrativeunit.md) 对象的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -27,7 +27,12 @@ ms.locfileid: "63669380"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | AdministrativeUnit.ReadWrite.All |
+|Application | AdministrativeUnit.ReadWrite.All |
+
+若要更新管理单元，必须为调用主体分配以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：
+
+* 特权角色管理员
+* 全局管理员
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,10 +53,10 @@ PATCH /directory/administrativeUnits/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|说明|String|管理单元的说明。|
-|displayName|String|管理单元的显示名称。|
+|说明|字符串|管理单元的说明。|
+|displayName|字符串|管理单元的显示名称。|
 
-由于 **administrativeUnit** [资源支持](/graph/extensibility-overview)`PATCH`扩展，因此可以使用 操作添加、更新或删除现有 **administrativeUnit** 实例中扩展的自定义属性中您自己的特定于应用的数据。
+由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用该 `PATCH` 操作在现有 **administrativeUnit** 实例的扩展的自定义属性中添加、更新或删除自己的特定于应用的数据。
 
 ## <a name="response"></a>响应
 

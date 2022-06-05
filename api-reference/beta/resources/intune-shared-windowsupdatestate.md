@@ -1,22 +1,22 @@
 ---
 title: windowsUpdateState 资源类型
-description: 尚未记录
+description: windowsUpdateState 资源类型
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a904a2c30d134b0b54ac20304ada5a5cbfabee79
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6cff1bf1becbd2e43967b05a210c7f3f5cfa864a
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030008"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900252"
 ---
 # <a name="windowsupdatestate-resource-type"></a>windowsUpdateState 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,25 +25,25 @@ ms.locfileid: "59030008"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 windowsUpdateStates](../api/intune-shared-windowsupdatestate-list.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 集合|列出 [windowsUpdateState 对象的属性和](../resources/intune-shared-windowsupdatestate.md) 关系。|
-|[获取 windowsUpdateState](../api/intune-shared-windowsupdatestate-get.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|读取 [windowsUpdateState 对象的属性和](../resources/intune-shared-windowsupdatestate.md) 关系。|
+|[列出 windowsUpdateStates](../api/intune-shared-windowsupdatestate-list.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 集合|列出 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象的属性和关系。|
+|[获取 windowsUpdateState](../api/intune-shared-windowsupdatestate-get.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|读取 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象的属性和关系。|
 |[创建 windowsUpdateState](../api/intune-shared-windowsupdatestate-create.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|创建新的 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象。|
 |[删除 windowsUpdateState](../api/intune-shared-windowsupdatestate-delete.md)|无|删除 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)。|
-|[更新 windowsUpdateState](../api/intune-shared-windowsupdatestate-update.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|更新 [windowsUpdateState 对象](../resources/intune-shared-windowsupdatestate.md) 的属性。|
+|[更新 windowsUpdateState](../api/intune-shared-windowsupdatestate-update.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|更新 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|这是实体的 ID。|
+|id|字符串|这是实体的 ID。|
 |deviceId|String|设备的 ID。|
-|userId|String|用户的 ID。|
+|userId|字符串|用户的 ID。|
 |deviceDisplayName|String|设备显示名称。|
-|userPrincipalName|String|用户主体名称。|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|String|质量更新设备的版本。|
-|featureUpdateVersion|String|设备的当前功能更新版本。|
-|lastScanDateTime|DateTimeOffset|更新代理执行Windows扫描的日期时间。|
-|lastSyncDateTime|DateTimeOffset|设备上次与设备同步的日期Microsoft Intune。|
+|userPrincipalName|字符串|用户主体名称。|
+|status|[windowsUpdateStatus](/resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可能的值是：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|qualityUpdateVersion|字符串|设备的质量更新版本。|
+|featureUpdateVersion|字符串|设备的当前功能更新版本。|
+|lastScanDateTime|DateTimeOffset|Windows 更新代理成功扫描的日期时间。|
+|lastSyncDateTime|DateTimeOffset|设备与 Microsoft Intune 同步的上次日期。|
 
 ## <a name="relationships"></a>关系
 无

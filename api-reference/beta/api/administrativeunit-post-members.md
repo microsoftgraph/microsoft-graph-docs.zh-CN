@@ -1,16 +1,16 @@
 ---
 title: 添加成员
-description: 使用此 API 将用户 (组或设备) 添加到管理单元。
+description: 使用此 API 将成员 (用户、组或设备) 添加到管理单元。
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cfe40b6d418759c3087eb31f4e0b9dcf5fd87fe9
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: b34bdd4930eec2c58fce432314c259c4fa5d12f9
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669408"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898185"
 ---
 # <a name="add-a-member"></a>添加成员
 
@@ -18,9 +18,9 @@ ms.locfileid: "63669408"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 将用户 (组或设备) 添加到管理单元，或在管理单元中创建新组。 可以在 [管理](/graph/api/resources/groups-overview) 单元内创建所有组类型。
+使用此 API 将成员 (用户、组或设备) 添加到管理单元，或在管理单元中创建新组。 可以在管理单元中创建所有 [组类型](/graph/api/resources/groups-overview) 。
 
-**注意：** 目前，一次只能向管理单元添加一个成员。
+**注意：** 目前，一次只能向管理单位添加一个成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,7 +30,7 @@ ms.locfileid: "63669408"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | AdministrativeUnit.ReadWrite.All |
+|Application | AdministrativeUnit.ReadWrite.All |
 
 ### <a name="permissions-to-create-a-new-group"></a>创建新组的权限
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -38,6 +38,11 @@ ms.locfileid: "63669408"
 |委派（工作或学校帐户） | Group.ReadWrite.All, Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Create、Group.ReadWrite.All、Directory.ReadWrite.All |
+
+若要将成员添加到管理单元，必须为调用主体分配以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：
+
+* 特权角色管理员
+* 全局管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +52,7 @@ ms.locfileid: "63669408"
 POST /administrativeUnits/{id}/members/$ref
 ```
 
-以下请求在管理单元内创建新组。
+以下请求在管理单元中创建一个新组。
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits/{id}/members
@@ -60,10 +65,10 @@ POST /administrativeUnits/{id}/members
 | Content-type  | application/json. Required. |
 
 ### <a name="adding-an-existing-user-or-group"></a>添加现有用户或组
-在请求正文中，`id`提供[要添加的用户](../resources/user.md)、组[](../resources/group.md)、设备或 [](../resources/device.md)[directoryObject](../resources/directoryobject.md) 的 。
+在请求正文中，提供 `id` 要添加的 [用户](../resources/user.md)、  [组](../resources/group.md)、 [设备](../resources/device.md)或 [directoryObject](../resources/directoryobject.md) 。
 
 ### <a name="creating-a-new-group"></a>创建新组
-下表显示了在管理单元 [中创建组](../resources/group.md) 时要指定的组资源的属性。 
+下表显示了在管理单元中创建 [组](../resources/group.md) 时要指定的组资源的属性。 
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
@@ -75,17 +80,17 @@ POST /administrativeUnits/{id}/members
 | securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
 | owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。可选。 |
 | members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。可选。 |
-|visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
+|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
 
 ## <a name="response"></a>响应
 
-如果成功，使用 (对象 `$ref`) 返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。 
+如果成功，使用 `$ref`) 添加现有对象 (将返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。 
 
-在未 (组) `$ref` 时，此方法在 `201 Created` 响应正文中返回 响应代码和 [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
+在没有) 的情况下 `$ref` 创建新组 (时，此方法在响应正文中返回 `201 Created` 响应代码和 [组](../resources/group.md) 对象。 该响应仅包括组的默认属性。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-add-an-existing-user-or-group"></a>示例 1：添加现有用户或组
-下面将现有用户或组添加到管理单元。
+下面将向管理单元添加现有用户或组。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -124,15 +129,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-ref-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-ref-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 
-在请求正文中，`id`提供[要添加](../resources/user.md)的用户、组[](../resources/group.md)或[设备](../resources/device.md)对象的 。
+在请求正文中 `id` ，提供要添加的 [用户](../resources/user.md)、 [组](../resources/group.md)或 [设备](../resources/device.md) 对象。
 
 #### <a name="response"></a>响应
 
@@ -148,7 +149,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### <a name="example-2-create-a-new-group"></a>示例 2：创建新组
-以下示例在管理单元中创建新组。
+以下示例在管理单元中创建一个新组。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -200,7 +201,7 @@ Content-length: 244
 
 
 
-在请求正文中，提供要添加的 [group](../resources/group.md) 对象的属性。
+在请求正文中，提供要添加的 [组](../resources/group.md) 对象的属性。
 
 #### <a name="response"></a>响应
 

@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: IdentitySet
+title: identitySet 资源类型
 ms.localizationpriority: medium
-description: IdentitySet 资源是 标识 资源的键控集合。
-ms.prod: ''
+description: 表示标识资源的密钥集合。
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: a37afd466cf99851ef6343f69c8d97188476ae72
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3f91b44dd10d842787aba9af96fa57a4ef67f53b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032368"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899937"
 ---
-# <a name="identityset-resource-type"></a>IdentitySet 资源类型
+# <a name="identityset-resource-type"></a>identitySet 资源类型
 
 命名空间：microsoft.graph
 
-**IdentitySet** 资源是 [标识](identity.md) 资源的键控集合。它用来表示一组与项目的各种事件相关的标识，例如 _创建者_ 或 _上次修改人_。
+**identitySet** 资源是 [标识](identity.md)资源的密钥集合。
+它用来表示一组与项目的各种事件相关的标识，例如 _创建者_ 或 _上次修改人_。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -44,7 +44,7 @@ ms.locfileid: "59032368"
 
 ## <a name="remarks"></a>注解 
 
-请参阅 [DriveItem](driveitem.md) 以了解 **IdentitySet** 资源的使用情况。
+有关 **identitySet** 资源的使用情况，请参阅 [driveItem](driveitem.md)。
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

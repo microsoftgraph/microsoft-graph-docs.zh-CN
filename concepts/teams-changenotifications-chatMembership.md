@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0b2f2c9cff290ec80a298a43744fa357d9c3bdf0
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 4109d5c1a1f7882f04e9479c2eca355e5e3a926b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62442923"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899930"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>使用 Microsoft Graph 获取聊天成员资格的更改通知
 
@@ -24,16 +24,16 @@ ms.locfileid: "62442923"
 
 ### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|委派（工作或学校帐户） | 不支持。 | 不支持。 |
-|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All.  | beta 版|
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | 不支持。 |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All.  |
 
 ### <a name="example"></a>示例
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -54,18 +54,18 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|委派（工作或学校帐户） | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | beta 版 |
-|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | ChatMember.Read.Chat *、Chat.Manage.Chat*、ChatMember.Read.All、ChatMember.ReadWrite.All、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All  | beta |
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | ChatMember.Read.Chat *、Chat.Manage.Chat*、ChatMember.Read.All、ChatMember.ReadWrite.All、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All  |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 ### <a name="example"></a>示例
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 7e9ec0b2b9bba305b3ad2acdf9cce1d3ecbfb65a
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: 38bfe22b2f5b9e571d40243d0bbb9bbc83a2b238
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629174"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884123"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -1879,7 +1879,7 @@ Intune [10 月](changelog.md#october-2019)更新
 
 - [附件](/graph/api/resources/attachment?view=graph-rest-1.0&preserve-view=true)
 - [联系人](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)
-- [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
+- [事件](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
 - [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0&preserve-view=true)
 - [邮件](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true)
 - [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0&preserve-view=true)
@@ -2038,7 +2038,7 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 - [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta&preserve-view=true) 和 [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta&preserve-view=true)的增量查询和属性添加。 
 
 ### <a name="group"></a>Group
-获取[敏感度标签](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true)，帮助保护 Microsoft 365 组的敏感数据并满足合规性策略。 这些标签是[assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true)对象，由 Microsoft 365 安全与合规性中心的管理员发布，作为 Microsoft 信息保护功能的一部分。 
+获取[敏感度标签](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true)，帮助保护 Microsoft 365 组的敏感数据并满足合规性策略。 这些标签是 [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true) 对象，由 Microsoft 365 安全与合规性中心的管理员发布，这是 Microsoft Purview 信息保护功能的一部分。 
 
 ### <a name="identity-and-access"></a>身份和访问控制
 - 获取[应用程序](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true)的实例，或将 Azure AD 应用程序库中的实例作为模板添加到目录中。

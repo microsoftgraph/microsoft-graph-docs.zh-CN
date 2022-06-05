@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 已删除资源指示该项已被删除。
 ms.date: 09/10/2017
 title: Deleted
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 6f42f5cea70e4dd4304a12130aaa34376fde226d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: c62d3a6e0636b2e39875bef17dabe2b92cad806a
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049869"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900035"
 ---
 # <a name="deleted-facet"></a>Deleted Facet
 
@@ -19,7 +19,7 @@ ms.locfileid: "48049869"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**已删除的**资源指示该项已被删除。在这个 API 版本中，已删除资源值的状态（非 null）指示文件。Null（或缺少）值表示未删除该文件。
+**已删除的** 资源指示该项已被删除。在这个 API 版本中，已删除资源值的状态（非 null）指示文件。Null（或缺少）值表示未删除该文件。
 
 有关跟踪更改和查找已删除项的详细信息，请参阅[查看项更改](../api/driveitem-delta.md)。
 

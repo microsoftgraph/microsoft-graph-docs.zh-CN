@@ -1,16 +1,16 @@
 ---
 title: secureScore 资源类型
-description: 'top = n，其中 n = 要检索的数据的天数。 '
-localization_priority: Normal
+description: 'top=n，其中 n = 要检索的数据天数。 '
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: 3db31203f9c5827459ab2149efbd3adb28030d0a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f289ef7c91dbe7975970e679d1950a03498ab333
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087542"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900126"
 ---
 # <a name="securescore-resource-type"></a>secureScore 资源类型
 
@@ -18,30 +18,30 @@ ms.locfileid: "48087542"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示租户和控制级别上的每日记分数据的租户安全分数。 默认情况下，将保留90天的数据。 此数据按 **createdDateTime**进行排序，从最新到最早。 这将允许您使用 $top = n 对响应进行分页，其中 n = 要检索的数据的天数。
+表示租户在租户和控制级别每天评分数据的安全分数。 默认情况下，将保存 90 天的数据。 此数据按 **createdDateTime** 排序，从最新到最早。 这将允许你使用$top=n 对响应进行页面处理，其中 n = 要检索的数据天数。
 
 
 ## <a name="methods"></a>方法
 
 | 方法   | 返回类型|说明|
 |:---------------|:--------|:----------|
-|[列出 secureScore](../api/securescores-list.md) | [secureScores](securescores.md) |读取 secureScores 对象的属性和元数据。|
+|[列出 secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |读取 secureScores 对象的属性和元数据。|
 
 
 ## <a name="properties"></a>属性
-包含租户安全分数的属性的实体类型 (每日快照数据) 。
+包含租户安全分数属性的实体类型 (每日快照数据) 。
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
 |   azureTenantId   |   字符串  |   租户 ID 的 GUID 字符串。  |
 |   createdDateTime |   DateTimeOffset  |   创建实体的日期。  |
-|   id  |   字符串  |   AzureTenantId_createdDateTime 的组合。   |
+|   id  |   String  |   azureTenantId_createdDateTime的组合。   |
 |   licensedUserCount   |   Int32   |   给定租户的许可用户计数。    |
 |   activeUserCount |   Int32   |   给定租户的活动用户计数。  |
-|   currentScore    |   双精度  |   租户当前在指定日期的得分。    |
-|   maxScore |  双精度  |   指定日期上可能的租户最大分数。    |
-|   enabledServices |   字符串集合   |   Microsoft 为租户提供的服务 (例如，Exchange online、Skype、Sharepoint) 。   |
-|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md) 集合    |不同作用域的平均分数 (例如，行业平均值、座位) 和控制类别的平均 (标识、数据、设备、应用程序、基础结构) 在范围内。 |
+|   currentScore    |   双精度  |   租户当前在指定日期达到的分数。    |
+|   maxScore |  双精度  |   指定日期的租户最大可能分数。    |
+|   enabledServices |   字符串集合   |   Microsoft 为租户 (提供的服务，例如 Exchange Online、Skype、Sharepoint) 。   |
+|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md) 集合    |按不同范围 (的平均分数，例如，按行业划分的平均分数，按座位) 的平均分数，以及范围内的标识、数据、设备、应用、基础结构)  (控制类别的平均分数。 |
 |   controlScores | [controlScore](controlscore.md) 集合  |   包含一组控件的租户分数。   |
 
 

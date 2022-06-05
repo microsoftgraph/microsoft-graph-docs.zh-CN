@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: jconley76
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ef2891e465bdeefcb7bec8314394bc298bf8f48d
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: 6a321eeb77b011730ec99b76112bd441862e72d2
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549552"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900399"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail 资源类型
 
 命名空间：microsoft.graph
 
-**subscribedSku** 实体的 [prepaidUnits](subscribedsku.md) 属性为 **licenseUnitsDetail** 类型。 有关订阅的进度状态的详细信息， [请参阅我的订阅是否过期？](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide)
+**subscribedSku** 实体的 [prepaidUnits](subscribedsku.md) 属性为 **licenseUnitsDetail** 类型。 有关订阅的进度状态的详细信息， [请参阅我的订阅是否过期？](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide&preserve-view=true)
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

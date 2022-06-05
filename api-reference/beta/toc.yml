@@ -2057,7 +2057,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: 重定向
+                  - name: Redirect
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -10649,7 +10649,7 @@ items:
                     href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
                   - name: 获取租户详细信息
                     href: api/managedtenants-tenantdetailedinformation-get.md
-              - name: 租户
+              - name: Tenant
                 href: resources/managedtenants-tenant.md
                 items:
                   - name: 列出租户
@@ -10869,6 +10869,8 @@ items:
                 href: api/educationassignment-list-submissions.md
               - name: 设置工作分配资源文件夹
                 href: api/educationassignment-setupresourcesfolder.md
+              - name: 设置工作分配反馈资源文件夹
+                href: api/educationassignment-setupfeedbackresourcesfolder.md
               - name: 获取附加到分配的 rubric
                 href: api/educationassignment-get-rubric.md
               - name: 列出类别
@@ -10926,10 +10928,14 @@ items:
                 href: api/educationsubmission-list-resources.md
               - name: 添加提交资源
                 href: api/educationsubmission-post-resources.md
+              - name: 添加提交反馈资源结果
+                href: api/educationfeedbackresourceoutcome-post-outcomes.md
               - name: 获取提交资源
                 href: api/educationsubmissionresource-get.md
               - name: 删除提交资源
                 href: api/educationsubmissionresource-delete.md
+              - name: 删除反馈资源结果
+                href: api/educationfeedbackresourceoutcome-delete.md
               - name: 获取提交内容
                 href: api/educationsubmission-get.md
               - name: 设置提交资源文件夹
@@ -11451,13 +11457,13 @@ items:
                     href: api/administrativeunit-get-members.md
                   - name: 删除成员
                     href: api/administrativeunit-delete-members.md
-                  - name: 添加作用域角色管理员
+                  - name: 分配具有作用域的角色
                     href: api/administrativeunit-post-scopedrolemembers.md
-                  - name: 列出作用域角色管理员
+                  - name: 列出具有作用域的角色分配
                     href: api/administrativeunit-list-scopedrolemembers.md
-                  - name: 获取作用域角色管理员
+                  - name: 获取具有作用域的角色分配
                     href: api/administrativeunit-get-scopedrolemembers.md
-                  - name: 删除作用域角色管理员
+                  - name: 删除具有作用域的角色分配
                     href: api/administrativeunit-delete-scopedrolemembers.md
               - name: 'BitLocker 恢复密钥 (预览) '
                 items:
@@ -12816,7 +12822,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-overview.md
@@ -15411,7 +15417,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: 从聊天中删除应用
                     href: api/chat-delete-installedapps.md
-          - name: 设备
+          - name: Device
             items:
               - name: 预配的设备
                 href: resources/teamworkdevice.md

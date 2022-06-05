@@ -3,14 +3,14 @@ title: 创建 workbookCommentReply
 description: 使用此 API 创建新的 workbookCommentReply。
 ms.localizationpriority: medium
 author: grangeryy
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: 191a97ed263c448790f795437bebca305216daf2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44487008863da83246198fcde39394d6ecc078fd
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104523"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898593"
 ---
 # <a name="create-workbookcommentreply"></a>创建 workbookCommentReply
 
@@ -26,7 +26,7 @@ ms.locfileid: "59104523"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Files.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [workbookCommentReply](../resources/workbookcommentreply.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [workbookCommentReply](../resources/workbookcommentreply.md) 对象。
 
 ## <a name="examples"></a>示例
 
