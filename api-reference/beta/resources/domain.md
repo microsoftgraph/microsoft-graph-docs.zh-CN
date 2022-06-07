@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: bcc45acf0bab837c9724967bb826e37d55573c83
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 85c51be36e5c2d55fdb1474187a27f6c49e38a36
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246697"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924096"
 ---
 # <a name="domain-resource-type"></a>域资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "65246697"
 
 表示与租户关联的域。
 
-使用域操作将域关联到租户，验证域所有权并配置受支持的服务。  域操作使注册机构能够为服务（如Microsoft 365）自动关联域关联。 例如，作为域注册的一部分，注册机构可以为电子邮件、网站、身份验证等启用虚荣域。
+使用域操作将域关联到租户，验证域所有权并配置受支持的服务。  域操作使注册机构能够为 Microsoft 365 等服务自动执行域关联。 例如，作为域注册的一部分，注册机构可以为电子邮件、网站、身份验证等启用虚荣域。
 
 若要将域与租户关联，请执行下表操作：
 
@@ -48,22 +48,23 @@ ms.locfileid: "65246697"
 |[删除域](../api/domain-delete.md) | 无 |删除域。|
 |[ForceDelete 域](../api/domain-forcedelete.md)|无|使用异步操作删除域。|
 |[验证域](../api/domain-verify.md)|[domain](domain.md)|验证域的所有权。|
+|[提升域](../api/domain-promote.md)|布尔值|将已验证的子域升级到根域。|
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|authenticationType|String| 指示为域配置的身份验证类型。 值为或 `Managed` `Federated`. `Managed`指示Azure AD执行用户身份验证的云托管域。 `Federated`指示身份验证通过Active Directory 联合身份验证服务与标识提供者（例如租户的本地 Active Directory）联合。 此属性为只读属性，不可为 null。 |
-|availabilityStatus|String| 此属性始终 `null` 是使用 [验证](../api/domain-verify.md) 操作时除外。 使用 [验证](../api/domain-verify.md) 操作时，会在响应中返回 **域** 实体。 响应中 **域** 实体的 **availabilityStatus** 属性为或 `AvailableImmediately` `EmailVerifiedDomainTakeoverScheduled`。|
+|authenticationType|String| 指示为域配置的身份验证类型。 值为或 `Managed` `Federated`. `Managed` 指示 Azure AD 执行用户身份验证的云托管域。 `Federated` 指示身份验证通过 Active Directory 联合身份验证服务与标识提供者（例如租户的本地 Active Directory）联合。 此属性为只读属性，不可为 null。 |
+|availabilityStatus|字符串| 此属性始终 `null` 是使用 [验证](../api/domain-verify.md) 操作时除外。 使用 [验证](../api/domain-verify.md) 操作时，会在响应中返回 **域** 实体。 响应中 **域** 实体的 **availabilityStatus** 属性为或 `AvailableImmediately` `EmailVerifiedDomainTakeoverScheduled`。|
 |id|String| 域的完全限定名称。 键，不可变，不可为 null，唯一。 |
-|isAdminManaged|Boolean| 该属性的值是`false`域的 DNS 记录管理是否已委托给Microsoft 365。 否则，值为 `true`. 不可为 null |
+|isAdminManaged|布尔值| 该属性的值是 `false` 域的 DNS 记录管理是否已委托给 Microsoft 365。 否则，值为 `true`. 不可为 null |
 |isDefault|Boolean| `true` 如果这是用于创建用户的默认域。 每个公司只有一个默认域。 不可为 null |
 |isInitial|Boolean| `true` 如果这是 Microsoft Online Services (companyname.onmicrosoft.com) 创建的初始域。 每个公司只有一个初始域。 不可为 null |
-|isRoot|Boolean| `true` 如果域是已验证的根域， 否则， `false` 如果域是子域或未验证。 不可为 null |
-|isVerified|Boolean| `true` 如果域已完成域所有权验证。 不可为 null |
+|isRoot|布尔值| `true` 如果域是已验证的根域， 否则， `false` 如果域是子域或未验证。 不可为 null |
+|isVerified|布尔值| `true` 如果域已完成域所有权验证。 不可为 null |
 |passwordNotificationWindowInDays|Int32|指定用户收到其密码过期通知之前的天数。 如果未设置该属性，将使用默认值 14 天。|
 |passwordValidityPeriodInDays|Int32| 指定必须更改密码之前密码有效的时间长度。 如果未设置该属性，将使用默认值 90 天。 |
-|supportedServices|String collection| 分配给域的功能。 可以包括`0``1`或包含以下值的更多内容：`Email`、、`Sharepoint`、`SharePointDefaultDomain``OfficeCommunicationsOnline``EmailInternalRelayOnly`、、、`SharePointPublic``FullRedelegation`、、`OrgIdAuthentication`、。 `Intune``Yammer` 可以使用图形 API添加/删除的值包括： `Email`， ， `OfficeCommunicationsOnline`。 `Yammer` 不可为 null。|
+|supportedServices|String collection| 分配给域的功能。 可以包括`0``1`或包含以下值的更多内容：`Email`、、`Sharepoint`、`SharePointDefaultDomain``OfficeCommunicationsOnline``EmailInternalRelayOnly`、、、`SharePointPublic``FullRedelegation`、、`OrgIdAuthentication`、。 `Intune``Yammer` 可以使用图形 API 添加/删除的值包括： `Email`， ， `OfficeCommunicationsOnline`. `Yammer` 不可为 null。|
 |state|[domainState](domainstate.md)| 为域计划异步操作的状态。 |
 
 ## <a name="relationships"></a>关系
@@ -74,8 +75,8 @@ ms.locfileid: "65246697"
 |:---------------|:--------|:----------|
 |domainNameReferences|[directoryObject](directoryobject.md) collection| 引用域 ID 的用户和组等对象。 只读，可为 Null。 支持 `$expand` 并 `$filter` 由返回的对象的 OData 类型提供支持。 例如 `/domains/{domainId}/domainNameReferences/microsoft.graph.user` 和 `/domains/{domainId}/domainNameReferences/microsoft.graph.group`.|
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) 集合| 在 Microsoft Online 服务使用域之前，客户会将 DNS 记录添加到域的 DNS 区域文件中。 只读，可为 Null。 支持 `$expand`。 |
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) 集合| 在客户使用Azure AD完成域所有权验证之前，DNS 记录客户添加到域的 DNS 区域文件。 只读，可为 Null。 支持 `$expand`。|
-|federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| 客户在与Azure AD联合时配置的域设置。 支持 `$expand`。|
+|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) 集合| 在客户可以使用 Azure AD 完成域所有权验证之前，DNS 记录客户添加到域的 DNS 区域文件。 只读，可为 Null。 支持 `$expand`。|
+|federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| 客户在与 Azure AD 联合时配置的域设置。 支持 `$expand`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

@@ -1,16 +1,16 @@
 ---
 title: 获取 cloudPC
-description: 查看 cloudPC 对象的属性和关系。
+description: 读取特定 cloudPC 对象的属性和关系。
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a84621b6b723f873867fff6d5d961fb6042d9e3c
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: ed3df398cf3bd8f3fd3216552e8e453c970b8a0b
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587803"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924119"
 ---
 # <a name="get-cloudpc"></a>获取 cloudPC
 
@@ -20,7 +20,7 @@ ms.locfileid: "64587803"
 
 读取特定 [cloudPC](../resources/cloudpc.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "64587803"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|CloudPC.Read.All、CloudPC.ReadWrite.All|
+|应用程序|CloudPC.Read.All、CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,7 +57,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [cloudPC](../resources/cloudpc.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [cloudPC](../resources/cloudpc.md) 对象。
 
 ## <a name="examples"></a>示例
 

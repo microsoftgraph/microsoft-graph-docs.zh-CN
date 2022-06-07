@@ -572,7 +572,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: 团队合作
             items:
               - name: 已安装应用
                 href: resources/teamsappinstallation.md
@@ -616,7 +616,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -11366,7 +11366,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         items:
           - name: 概述
             displayName: 'Azure AD, Microsoft identity platform'
@@ -11653,6 +11653,8 @@ items:
                     href: api/domain-update.md
                   - name: 验证域
                     href: api/domain-verify.md
+                  - name: 提升域
+                    href: api/domain-promote.md
               - name: 功能推出策略
                 href: resources/featurerolloutpolicy.md
                 items:
@@ -12778,7 +12780,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: 用户流属性分配
                     items:
-                      - name: User
+                      - name: 用户
                         href: resources/identityuserflowattributeassignment.md
                       - name: 获取
                         href: api/identityuserflowattributeassignment-get.md
@@ -14911,7 +14913,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -14970,7 +14972,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划

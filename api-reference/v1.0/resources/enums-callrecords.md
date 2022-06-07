@@ -1,24 +1,24 @@
 ---
-title: 呼叫记录枚举值
-description: Microsoft Graph呼叫记录枚举值
+title: 调用记录枚举值
+description: Microsoft Graph 调用记录枚举值
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: 1c3fc672f4197003212a972b8a6fc1e647e9bac2
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: a5be4abf9e4f9f5ae0853484851938b1cd2192b9
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61334009"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924150"
 ---
-# <a name="call-records-enum-values"></a>呼叫记录枚举值
+# <a name="call-records-enum-values"></a>调用记录枚举值
 
 命名空间：microsoft.graph.callRecords
 
 ### <a name="calltype-values"></a>callType 值
 
-| 成员
+| Member
 |:--------------
 | unknown
 | groupCall
@@ -27,13 +27,13 @@ ms.locfileid: "61334009"
 
 ### <a name="clientplatform-values"></a>clientPlatform 值
 
-| 成员
+| Member
 |:--------------
 | unknown
 | windows
 | macOS
 | iOS
-| android
+| Android
 | web
 | ipPhone
 | roomSystem
@@ -43,7 +43,7 @@ ms.locfileid: "61334009"
 
 ### <a name="failurestage-values"></a>failureStage 值
 
-| 成员
+| Member
 |:--------------
 | unknown
 | callSetup
@@ -52,14 +52,14 @@ ms.locfileid: "61334009"
 
 ### <a name="mediastreamdirection-values"></a>mediaStreamDirection 值
 
-| 成员
+| Member
 |:--------------
 | callerToCallee
 | calleeToCaller
 
-### <a name="modality-values"></a>形式值
+### <a name="modality-values"></a>模式值
 
-| 成员
+| Member
 |:--------------
 | unknown
 | audio
@@ -71,21 +71,30 @@ ms.locfileid: "61334009"
 
 ### <a name="networkconnectiontype-values"></a>networkConnectionType 值
 
-| 成员
+| Member
 |:--------------
 | unknown
 | 有线
-| wifi
+| 无线
 | mobile
 | 隧道
 | unknownFutureValue
 
+### <a name="networktransportprotocol-values"></a>networkTransportProtocol 值
+
+| Member             |
+|:-------------------|
+| unknown            |
+| Udp                |
+| tcp                |
+| unknownFutureValue |
+
 ### <a name="productfamily-values"></a>productFamily 值
 
-| 成员
+| Member
 |:--------------
 | unknown
-| teams
+| 团队
 | skypeForBusiness
 | lync
 | unknownFutureValue
@@ -93,7 +102,7 @@ ms.locfileid: "61334009"
 
 ### <a name="servicerole-values"></a>serviceRole 值
 
-| 成员
+| Member
 |:--------------
 | unknown
 | customBot
@@ -111,7 +120,7 @@ ms.locfileid: "61334009"
 | audioTeleconferencerController
 | skypeForBusinessUnifiedCommunicationApplicationPlatform
 | responseGroupServiceAnnouncementService
-| gateway
+| 网关
 | skypeTranslator
 | skypeForBusinessAttendant
 | responseGroupService
@@ -120,19 +129,19 @@ ms.locfileid: "61334009"
 
 ### <a name="userfeedbackrating-values"></a>userFeedbackRating 值
 
-| 成员
+| Member
 |:--------------
 | notRated
-| bad
-| poor
-| fair
-| good
+| 坏
+| 可怜
+| 公平
+| 好
 | 非常好
 | unknownFutureValue
 
 ### <a name="wifiband-values"></a>wifiBand 值
 
-| 成员
+| Member
 |:--------------
 | unknown
 | frequency24GHz
@@ -142,7 +151,7 @@ ms.locfileid: "61334009"
 
 ### <a name="wifiradiotype-values"></a>wifiRadioType 值
 
-| 成员
+| Member
 |:--------------
 | unknown
 | wifi80211a
@@ -155,10 +164,55 @@ ms.locfileid: "61334009"
 
 ### <a name="pstncalldurationsource-values"></a>pstnCallDurationSource 值 
 
-|成员|
+|Member|
 |:---|
-|microsoft|
+|微软|
 |operator|
+
+### <a name="audiocodec-values"></a>audioCodec 值 
+
+| Member             |
+|:-------------------|
+| unknown            |
+| 无效            |
+| cn                 |
+| pcma               |
+| pcmu               |
+| amrWide            |
+| g722               |
+| g7221              |
+| g7221c             |
+| g729               |
+| multiChannelAudio  |
+| muchv2             |
+| 作品               |
+| 缎              |
+| satinFullband      |
+| rtAudio8           |
+| rtAudio16          |
+| 丝绸               |
+| silkNarrow         |
+| silkWide           |
+| 警笛              |
+| xmsRta             |
+| unknownFutureValue |
+
+### <a name="videocodec-values"></a>videoCodec 值 
+
+| Member             |
+|:-------------------|
+| unknown            |
+| 无效            |
+| av1                |
+| h263               |
+| h264               |
+| h264s              |
+| h264uc             |
+| h265               |
+| rtvc1              |
+| rtVideo            |
+| xrtvc1             |
+| unknownFutureValue |
 
 <!--
 {

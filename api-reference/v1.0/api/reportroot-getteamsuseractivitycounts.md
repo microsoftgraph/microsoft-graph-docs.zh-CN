@@ -1,22 +1,22 @@
 ---
 title: 'reportRoot: getTeamsUserActivityCounts'
-description: 获取按活动类型的 Microsoft Teams 活动的数量。 活动类型是团队聊天消息、专用聊天消息、呼叫或会议。
+description: 获取按活动类型的 Microsoft Teams 活动的数量。 这些活动由 Microsoft Teams 许可的用户执行。
 ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2bc02b6505b4d407b4161a81e772a98fc60b6f66
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4cf69a3d38791290406795b9e3e22f52f90e6d01
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050052"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924049"
 ---
 # <a name="reportroot-getteamsuseractivitycounts"></a>reportRoot: getTeamsUserActivityCounts
 
 命名空间：microsoft.graph
 
-获取按活动类型的 Microsoft Teams 活动的数量。 活动类型是团队聊天消息、专用聊天消息、呼叫或会议。
+获取按活动类型的 Microsoft Teams 活动的数量。 这些活动由 Microsoft Teams 许可的用户执行。
 
 ## <a name="permissions"></a>权限
 
@@ -63,9 +63,16 @@ CSV 文件包含下面的列标题：
 - 报表刷新日期
 - 报表日期
 - 团队聊天消息
+- 发布消息
+- 回复消息
 - 专用聊天消息
 - 呼叫
 - 会议
+- 音频持续时间
+- 视频持续时间
+- 屏幕共享持续时间
+- 组织会议
+- 参加的会议
 - 报表周期
 
 ## <a name="example"></a>示例
@@ -108,7 +115,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Post Messages,Reply Messages,Private Chat Messages,Calls,Meetings,Audio Duration,Video Duration,Screen Share Duration,Meetings Organized,Meetings Attended,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

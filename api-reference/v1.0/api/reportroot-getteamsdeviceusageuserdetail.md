@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: f51cea4ec7ca24c228ad7d4c92459f4c81cf3a45
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 54a8394598f7e3ea2db082956e8594f79f9b0a96
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917778"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924036"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -28,7 +28,7 @@ ms.locfileid: "64917778"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：对于允许应用代表用户读取服务使用情况报告的委派权限，租户管理员必须为用户分配适当的Azure Active Directory受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：对于允许应用代表用户读取服务使用情况报告的委派权限，租户管理员必须为用户分配相应的 Azure Active Directory 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -76,13 +76,16 @@ CSV 文件包含下面的列标题：
 - 使用的 Mac
 - 使用的 Android 手机
 - 使用的 Windows
+- 已使用的 Chrome OS
+- 已使用 Linux
+- 已获得许可
 - 报表周期
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-请求示例如下所示。
+下面展示了示例请求。
 
 <!-- {
   "blockType": "ignored",
@@ -118,7 +121,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
+Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

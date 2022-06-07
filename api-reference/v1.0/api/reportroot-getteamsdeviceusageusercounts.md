@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: ce12fdd6e2103fa996a70804123310fc020e783f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 93c319667bfb2862024951a45d7cac3ec91474b5
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050066"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924084"
 ---
 # <a name="reportroot-getteamsdeviceusageusercounts"></a>reportRoot: getTeamsDeviceUsageUserCounts
 
@@ -67,8 +67,13 @@ CSV 文件包含下面的列标题：
 - iOS
 - Mac
 - Windows
+- Chrome OS
+- Linux
 - 报表日期
 - 报表周期
+
+> [!CAUTION] 
+> **Windows Phone** 列已弃用，其值将始终为 `0`。 由于向后兼容性的原因，它保留在响应中。
 
 ## <a name="example"></a>示例
 
@@ -111,7 +116,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Report Date,Report Period
+Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Chrome OS,Linux,Report Date,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
