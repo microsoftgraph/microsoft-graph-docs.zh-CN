@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2774c0a729ed5154b4148698585d79ac79c0d028
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 2a3add855edad204d45be5aaaa20d02afef2cd84
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239104"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924037"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -56,6 +56,10 @@ GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}。必需。 |
 
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。 可以在响应的 `Location` 头中找到此 URL。
@@ -65,6 +69,8 @@ GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 CSV 文件包含下面的列标题：
 
 - 报表刷新日期
+- 租户显示名称
+- 共享频道租户显示名称
 - User Id
 - 用户主体名称
 - 上次活动日期
@@ -75,7 +81,25 @@ CSV 文件包含下面的列标题：
 - 专用聊天消息计数
 - 呼叫计数
 - 会议计数
+- 发布消息
+- 回复消息
+- 紧急消息
+- 组织会议数量
+- 参加会议数量
+- 临时组织会议数量
+- 临时出席会议数量
+- 安排组织的一次性会议数量
+- 安排出席的一次性会议数量
+- 安排组织的定期会议数量
+- 安排出席的定期会议数量
+- 音频持续时间
+- 视频持续时间
+- 屏幕共享持续时间
+- 音频持续时间（以秒为单位）
+- 视频持续时间（以秒为单位）
+- 屏幕共享持续时间（以秒为单位）
 - 包含其他操作
+- 已获得许可
 - 报表周期
 
 ## <a name="example"></a>示例
@@ -119,7 +143,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
