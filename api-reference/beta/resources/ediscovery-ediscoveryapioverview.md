@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: conceptualPageType
-ms.openlocfilehash: 655636052c849e42b977b0dbca121b4f8b62c21b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b5154880913e25ca6ed90a19695ff1c103a42eea
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101891"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944939"
 ---
 # <a name="use-the-microsoft-graph-ediscovery-api"></a>使用 Microsoft Graph 电子数据展示 API
 
@@ -25,6 +25,9 @@ Microsoft Graph 电子数据展示 API 为组织提供了自动执行重复任�
 > 在预览版中，使用这些 API 可能需要订阅特定 Microsoft 产品，并且受 [Microsoft API 使用条款](/legal/microsoft-apis/terms-of-use?context=graph%252fcontext)的约束。  发行正式版后，Microsoft 可能会要求你或你的客户支付额外费用。
 >
 > 目前，Microsoft Graph 中的电子数据展示 API 仅适用于高级电子数据展示用例。
+
+> [!CAUTION]
+> 电子数据展示子名称空间下的电子数据展示 API 正在被弃用。 请使用新的[安全性下的电子数据展示 API](security-api-overview.md#ediscovery-preview)。
 
 电子数据展示 API 在 OData 子名称space，microsoft.graph.ediscovery 中定义。 Microsoft Graph API 包括以下关键实体。
 

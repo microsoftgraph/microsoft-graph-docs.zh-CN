@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ae8f0b29fccbfea9d7c71342a5bc45f08367e943
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: eff2c9e58e9d091ba72ccec2151b746b61186e34
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461252"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944433"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -98,7 +98,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 安全集成 | Azure AD 标识保护、Azure 信息保护、Azure 安全中心、Microsoft Defender for Cloud Apps、Windows Defender 高级威胁防护[等](/graph/api/resources/security-api-overview) | 跨整个 Microsoft 和生态系统合作伙伴提供安全见解和操作的统一网关。 | [Microsoft Graph 中的安全性](security-concept-overview.md) |
-
+| 电子数据展示（预览版） | Microsoft Purview 电子数据展示（高级版） | 提供对电子数据展示功能的访问权限，这些功能可用于标识和传递可在法律案例中用作证据的电子信息。|[Microsoft Graph 中的安全性](security-concept-overview.md)|
 
 
 ## <a name="cross-device-experiences"></a>跨设备体验
