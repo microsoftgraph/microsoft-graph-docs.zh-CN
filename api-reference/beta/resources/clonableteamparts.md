@@ -1,16 +1,16 @@
 ---
 title: clonableTeamParts 枚举类型
-description: '介绍应克隆的团队部分。 '
-localization_priority: Normal
+description: '描述应克隆团队的哪个部分。 '
+ms.localizationpriority: medium
 doc_type: enumPageType
-ms.prod: ''
+ms.prod: teamwork
 author: nkramer
-ms.openlocfilehash: 666dc3cc60490a9a30a5e2bab0b0642c34fb5009
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 99a50eb62af486b1d5eb84ae779627bbf8509cc1
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034076"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944143"
 ---
 # <a name="clonableteamparts-enum-type"></a>clonableTeamParts 枚举类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "48034076"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-介绍应克隆的 [团队](../resources/team.md) 部分。
+描述应克隆 [团队](../resources/team.md) 的哪个部分。
 
 ## <a name="members"></a>成员
 
 | 成员 | 值| 说明 |
 |:---------------|:--------|:----------|
-|apps|1 |复制已安装应用程序的列表。|
-|选项卡|2 |复制通道中的选项卡。|
-|settings|4 |复制团队中的所有设置以及关键组设置。|
-|channels|8 |将通道结构 (，但不会复制频道) 中的邮件。|
-|members|16 |复制团队的成员和所有者。|
+|apps|1|复制已安装应用的列表。|
+|选项卡|2|复制通道中的选项卡。|
+|settings|4|复制团队中的所有设置以及关键组设置。|
+|channels|8 |复制通道结构 (但不复制通道) 中的消息。|
+|members|16|复制团队的成员和所有者。|
 
 

@@ -3,14 +3,14 @@ title: 创建集
 description: 创建新的 set 对象。
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: Sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 03cee9f09aca4fd30e79659fccfe1749c936d8ef
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9a81822f9810bf0d730ebaf8d963e6954ad3cb06
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926061"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944147"
 ---
 # <a name="create-set"></a>创建集
 命名空间：microsoft.graph.termStore
@@ -19,7 +19,7 @@ ms.locfileid: "60926061"
 
 创建新的 [set](../resources/termstore-set.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -46,20 +46,20 @@ POST /termStore/sets
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 set 对象的 JSON [表示](../resources/termstore-set.md) 形式。
+在请求正文中，提供 set 对象的 JSON 表示 [形式](../resources/termstore-set.md) 。
 
-下表显示创建集时所需的 [属性](../resources/termstore-set.md)。
+下表显示了创建 [集](../resources/termstore-set.md)时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |localizedNames|[microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) 集合|要创建的集的名称|
-|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|需要创建集的 termstore-group|
+|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|需要在其中创建集的 termstore-group|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [set](../resources/termstore-set.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [set](../resources/termstore-set.md) 对象。
 
 ## <a name="examples"></a>示例
 

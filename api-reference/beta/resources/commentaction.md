@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: CommentAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 32532bf0771da739db86915091cdc8b79aa942c2
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: 984e9777c31fb1ce6b6b748b9ffb0cdfe9b6446a
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722755"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944145"
 ---
 # <a name="commentaction-resource-type"></a>CommentAction 资源类型
 

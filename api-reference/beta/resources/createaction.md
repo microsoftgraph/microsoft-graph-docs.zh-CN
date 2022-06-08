@@ -3,15 +3,15 @@ author: daspek
 description: itemActivity 上存在 CreateAction 资源指示活动已创建一个项。
 ms.date: 09/14/2017
 title: CreateAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 34db4c31b3f2c286805f10e6d0e370cef75a5b72
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: 8bf5adc68a0195069abcae353d694700b579840a
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016695"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944897"
 ---
 # <a name="createaction-resource-type"></a>CreateAction 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "48016695"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.createAction"
+  "@type&quot;: &quot;microsoft.graph.createAction"
 }-->
 
 ```json

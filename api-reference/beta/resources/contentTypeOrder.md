@@ -5,13 +5,13 @@ ms.date: 09/13/2017
 title: ContentTypeOrder
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 615655ecf400c814e08ef75dfbabd9a5f97cf167
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: bf7fca8ae00a0fd131fa2410a980f73fe4588083
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63720820"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944904"
 ---
 # <a name="contenttypeorder-resource-type"></a>ContentTypeOrder 资源类型
 

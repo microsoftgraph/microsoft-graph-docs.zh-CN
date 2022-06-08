@@ -3,15 +3,15 @@ author: JeremyKelley
 description: baseItem 资源是抽象资源，其中包含一组在若干其他资源类型中共享的常见类型。
 ms.date: 09/10/2017
 title: BaseItem
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 6fbaf549cb9555c787cdd9077421ca1e3641aa04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: 770106991a8e2008245a4a7665155eafe6ad7216
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089728"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944953"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem 资源类型
 
@@ -65,7 +65,7 @@ ms.locfileid: "48089728"
 | lastModifiedDateTime | dateTimeOffset    | 上次修改项目的日期和时间。只读。                                   |
 | name                 | string            | 项目名称。读写。                                                      |
 | parentReference      | [itemReference][] | 父信息（如果此项具有父级）。读写。                              |
-| webUrl               | string (url)      | 在浏览器中显示此资源的 URL。只读。                              |
+| WebUrl               | string (url)      | 在浏览器中显示此资源的 URL。只读。                              |
 
 [identitySet]: identityset.md
 [itemReference]: itemreference.md

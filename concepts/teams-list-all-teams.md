@@ -4,12 +4,12 @@ description: '列出所有团队 '
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1045c71fadcd70f9888f6357366d7097178dbec4
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: b3395432192a47e46fd69b37ea6c587538e1e515
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133571"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944918"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>列出组织中 Microsoft Teams 的所有团队
 
@@ -57,9 +57,7 @@ Content-type: application/json
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **注意**：仅可通过 beta 端点按 resourceProvisioningOptions 对组进行筛选。 resourceProvisioningOptions 在 v1.0 和 beta 中可用。
-
-> **注意**：不会列出某些未使用的旧团队。 有关详细信息，请参阅[已知问题](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined)。
+> **注意**：不会列出某些未使用的旧团队。 有关详细信息，请参阅[已知问题](known-issues.md#missing-teams-in-list-all-teams)。
 
 下面介绍响应示例。 
 

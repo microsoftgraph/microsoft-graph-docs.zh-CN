@@ -3,15 +3,15 @@ author: JeremyKelley
 description: columnDefinition 资源上的 booleanColumn 指示该列包含一个布尔值。
 ms.date: 09/11/2017
 title: BooleanColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: f7f0d5c8fa874b928a3da5fd0a5d0492894288f5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: bc5df9c27cdd295b89facd8d2b4025dc818c1e26
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071651"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944146"
 ---
 # <a name="booleancolumn-resource-type"></a>BooleanColumn 资源类型
 

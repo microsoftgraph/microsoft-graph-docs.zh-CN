@@ -1,16 +1,16 @@
 ---
 title: 创建单值扩展属性
 description: '在新建或现有的资源实例中创建一个或多个单值扩展属性。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: non-product-specific
 author: abheek-das
-ms.openlocfilehash: f5cfd9e123c63a8b629dfddb38d93b78c219cfe4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: eb6bbbbc34f060a5c7ec6abfcf9ea3e535d63463
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132095"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944890"
 ---
 # <a name="create-single-value-extended-property"></a>创建单值扩展属性
 
@@ -42,11 +42,11 @@ ms.locfileid: "50132095"
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据要创建扩展属性的资源以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据要在其中创建扩展属性的资源以及请求) 委派或应用程序 (权限类型，下表中指定的权限是调用此 API 所需的最小权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
@@ -62,7 +62,7 @@ ms.locfileid: "50132095"
 可以在新建或现有的资源实例中创建扩展属性。
 
 若要在 _新的_ 资源实例中创建一个或多个扩展属性，请使用与创建实例相同的 REST 请求，并包括新资源实例的属性和请求正文中的 _扩展属性_。
-注意，一些资源支持以多种方式创建。 有关创建这些资源实例的信息，请参阅创建邮件[、](../resources/message.md) [mailFolder](../api/user-post-mailfolders.md)、[事件](../api/user-post-events.md)、 日历[、](../api/user-post-calendars.md)[联系人](../api/user-post-contacts.md)、 [contactFolder](../api/user-post-contactfolders.md)、 [Outlook 任务](../resources/outlooktask.md)、 [Outlook](../resources/outlooktaskfolder.md)任务文件夹[、](../api/group-post-events.md)组事件和组帖子的相应[主题](../resources/post.md)。
+注意，一些资源支持以多种方式创建。 有关创建这些资源实例的详细信息，请参阅有关创建[邮件](../resources/message.md)、[mailFolder](../api/user-post-mailfolders.md)、[事件](../api/user-post-events.md)、[日历](../api/user-post-calendars.md)、[联系人、](../api/user-post-contacts.md)[contactFolder](../api/user-post-contactfolders.md)、[Outlook 任务](../resources/outlooktask.md)、[Outlook 任务文件夹](../resources/outlooktaskfolder.md)、[组事件](../api/group-post-events.md)和[组帖子](../resources/post.md)的相应主题。
 
 以下是请求的语法。
 
@@ -149,7 +149,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 值 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -162,7 +162,7 @@ PATCH /groups/{id}/events/{id}
 |**属性**|**类型**|**说明**|
 |:-----|:-----|:-----|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 一个或多个单值扩展属性的数组。 |
-|id|字符串|对于 **singleValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
+|id|String|对于 **singleValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |值|string|对于 **singleValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
 
 在 _新的_ 资源实例中创建扩展属性时，除了新的 **singleValueExtendedProperties** 集合，请提供资源实例的 JSON 表示形式（即 [邮件](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md) 等）。

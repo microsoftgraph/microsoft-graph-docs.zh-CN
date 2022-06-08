@@ -3,14 +3,14 @@ title: 创建组
 description: 创建新的组对象。
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: Sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 2d7a697bbbf616053c0adf709256b443c0851d33
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3456e128d28ef9e604e26aa860bb9f1c1eae9389
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940910"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944869"
 ---
 # <a name="create-group"></a>创建组
 命名空间：microsoft.graph.termStore
@@ -19,7 +19,7 @@ ms.locfileid: "60940910"
 
 创建新的 [组](../resources/termstore-group.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

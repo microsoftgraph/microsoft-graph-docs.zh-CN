@@ -5,13 +5,13 @@ ms.date: 09/11/2017
 title: ChoiceColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: d7c2e1292bc3868b188b9389a0c44477606cbb3e
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: 4aac6e565274ef17263e0bbf5a3c8eeade9d729c
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722253"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944911"
 ---
 # <a name="choicecolumn-resource-type"></a>ChoiceColumn 资源类型
 

@@ -5,17 +5,32 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 94dec31967c4ca5caf349d3ddbee5f9a7d000343
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: c61273ced5a43a0a200bbcdf433c844643130845
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900007"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944988"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
 
+
+### <a name="signinfrequencyauthenticationtype-values"></a>signInFrequencyAuthenticationType 值
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### <a name="signinfrequencyinterval-values"></a>signInFrequencyInterval 值
+
+|Member|
+|:---|
+|timeBased|
+|每次|
 
 #### <a name="authenticationprotocol-values"></a>authenticationProtocol 值
 
@@ -342,7 +357,7 @@ ms.locfileid: "65900007"
 |整数|
 |参考|
 |Binary|
-|Boolean|
+|布尔值|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变性值
@@ -1746,7 +1761,7 @@ ms.locfileid: "65900007"
 | 家
 | 工时
 | 博客
-| 个人资料
+| profile
 
 
 ### <a name="categorycolor-values"></a>categoryColor 值
@@ -2760,7 +2775,7 @@ ms.locfileid: "65900007"
 |Member|
 |:---|
 |团队|
-|频道|
+|通道|
 |聊天|
 |unknownFutureValue|
 

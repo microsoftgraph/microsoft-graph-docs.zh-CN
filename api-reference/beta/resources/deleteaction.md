@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: DeleteAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: f5e47f178da27708422e14897a1dd8b19ff328b9
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: e7fcdac76d208bcb2f2fe79ca51d95ac89ef23ae
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723498"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944876"
 ---
 # <a name="deleteaction-resource-type"></a>DeleteAction 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "63723498"
 | 属性   | 类型   | 说明                                                    |
 | :--------- | :----- | :------------------------------------------------------------- |
 | name       | string | 已删除的项的名称。                         |
-| objectType | string | `File` 或 `Folder`，具体取决于已删除项目的类型。 |
+| objectType | string | `File` 或者 `Folder`，具体取决于已删除项的类型。 |
 
 ## <a name="remarks"></a>注解
 

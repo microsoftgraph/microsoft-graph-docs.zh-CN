@@ -5,13 +5,13 @@ ms.date: 09/12/2017
 title: ColumnLink
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: ae75a605f8476b9ec25d5aab5cf50f1bf9508c95
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: 8bf46496209b62748c82e46ca52ec7e7e80ded7c
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723526"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944946"
 ---
 # <a name="columnlink-resource-type"></a>ColumnLink 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "63723526"
 | 属性 | 类型   | 说明                                   |
 | :------- | :----- | :-------------------------------------------- |
 | **id**   | string | 列的唯一标识符。         |
-| **name** | string | 此内容类型中的列的名称。 |
+| **名称** | string | 此内容类型中的列的名称。 |
 
 <!--
 {

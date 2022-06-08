@@ -1,16 +1,16 @@
 ---
 title: signInFrequencySessionControl 资源类型
-description: 强制执行登录频率的会话控制。
-localization_priority: Normal
-author: dkershaw10
+description: 用于强制执行登录频率的会话控制。
+ms.localizationpriority: medium
+author: rckyplln
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 1f224c1e9ba72e114fd9c9bcacdd74670713837d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a42697bd49f9f6742c3f6c1e61ace9a8a1362111
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945625"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944447"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>signInFrequencySessionControl 资源类型
 
@@ -18,15 +18,17 @@ ms.locfileid: "50945625"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-强制执行登录频率的会话控制。 继承自 [条件访问会话控件](conditionalaccesssessioncontrol.md)。
+用于强制实施登录频率的会话控制。 继承自 [条件访问会话控制](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | 指定是否启用会话控件。 |
-|type          |signinFrequencyType       | 可取值为：`days`、`hours`。|
-|值         |Int32        | 或 `days` 的编号 `hours` 。|
+|type          |signinFrequencyType       | 可能的值为： `days`、 `hours`或 `null` frequencyInterval 是否为 `everyTime` 。|
+|值         |Int32        | 或 `days` `hours`.|
+|authenticationType |signInFrequencyAuthenticationType  | 可能的值是 `primaryAndSecondaryAuthentication`， `secondaryAuthentication`. `unknownFutureValue`|
+|frequencyInterval  |signInFrequencyInterval  | 可能的值是 `timeBased`， `everyTime`. `unknownFutureValue`|
 
 ## <a name="relationships"></a>关系
 
@@ -47,9 +49,11 @@ ms.locfileid: "50945625"
 
 ```json
 {
-  "isEnabled": true,
+  "isEnabled":true,
   "type": "String",
-  "value": 1024
+  "value": 1024,
+  "authenticationType": "String",
+  "frequencyInterval": "String"
 }
 ```
 
