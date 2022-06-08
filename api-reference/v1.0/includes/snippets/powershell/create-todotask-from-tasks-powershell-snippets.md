@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a356dd7bc1efdc45ff419a4888ff830f5c483374
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5b1d7037a144a9982443b527e44791287a0eca0f
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62350994"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946814"
 ---
 ```powershell
 
@@ -13,6 +13,9 @@ Import-Module Microsoft.Graph.Users
 
 $params = @{
     Title = "A new task"
+    Categories = @(
+        "Important"
+    )
     LinkedResources = @(
         @{
             WebUrl = "http://microsoft.com"

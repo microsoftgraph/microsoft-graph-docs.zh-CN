@@ -1,19 +1,25 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6d6de51489a17bcfbff9c3bc45c20c365b10a8a6
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 978c991cb95bcf581c9dfe935f47dcb681323e55
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327962"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946799"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-schemaExtensionId := "schemaExtension-id"
-result, err := graphClient.SchemaExtensionsById(&schemaExtensionId).Get()
+requestParameters := &msgraphsdk.UserRequestBuilderGetQueryParameters{
+    Select: "ext55gb1l09_msLearnCourses",
+}
+options := &msgraphsdk.UserRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
+}
+userId := "user-id"
+result, err := graphClient.UsersById(&userId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

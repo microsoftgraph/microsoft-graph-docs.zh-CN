@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8bf4668973fded9d05c33c351e45637e47e4b7eda8d05ca12bffedeab9cd35f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 18fa828e25991bbb5f7d1eee15074273fade0e81
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57105046"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946833"
 ---
 ```csharp
 
@@ -16,7 +16,6 @@ var bookingBusiness = new BookingBusiness
     DisplayName = "Fourth Coffee",
     Address = new PhysicalAddress
     {
-        Type = PhysicalAddressType.Unknown,
         PostOfficeBox = "P.O. Box 123",
         Street = "4567 Main Street",
         City = "Buffalo",

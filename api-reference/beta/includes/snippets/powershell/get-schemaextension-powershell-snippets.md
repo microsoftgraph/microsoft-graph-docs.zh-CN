@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9f568b3f94eba9308ac84005456cc29669616bc3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: aa9111633d1d0b0ca5b25499dad53e5d7ff16e66
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129469"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946802"
 ---
 ```powershell
 
-Import-Module Microsoft.Graph.SchemaExtensions
+Import-Module Microsoft.Graph.Users
 
-Get-MgSchemaExtension -SchemaExtensionId $schemaExtensionId
+Get-MgUser -UserId $userId -Property "ext55gb1l09_msLearnCourses" 
 
 ```

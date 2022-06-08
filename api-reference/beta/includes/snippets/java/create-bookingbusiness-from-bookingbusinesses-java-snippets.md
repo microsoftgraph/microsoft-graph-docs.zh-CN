@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7fcd529cd240e637045ae91fbe9dcff45a12ab2b978059279087879aec14b6ec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b0defe980e4f32d681a82f8a4e4a738be0273cb6
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903146"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946831"
 ---
 ```java
 
@@ -14,7 +14,6 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 BookingBusiness bookingBusiness = new BookingBusiness();
 bookingBusiness.displayName = "Fourth Coffee";
 PhysicalAddress address = new PhysicalAddress();
-address.type = PhysicalAddressType.UNKNOWN;
 address.postOfficeBox = "P.O. Box 123";
 address.street = "4567 Main Street";
 address.city = "Buffalo";

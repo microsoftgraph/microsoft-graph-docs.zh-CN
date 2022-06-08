@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e827ed22a63b330b8046f40c6d03dde882189033
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: eb24b9403fb169717850f9eb3ac07430795709e1
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65209603"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946818"
 ---
 ```csharp
 
@@ -99,6 +99,51 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
                 {
                 }
             }
+        }
+    },
+    ReviewSettings = new AccessPackageAssignmentReviewSettings
+    {
+        IsEnabled = true,
+        ExpirationBehavior = AccessReviewExpirationBehavior.KeepAccess,
+        IsRecommendationEnabled = true,
+        IsReviewerJustificationRequired = true,
+        IsSelfReview = false,
+        Schedule = new EntitlementManagementSchedule
+        {
+            StartDateTime = DateTimeOffset.Parse("2022-07-02T06:59:59.998Z"),
+            Expiration = new ExpirationPattern
+            {
+                Duration = new Duration("P14D"),
+                Type = ExpirationPatternType.AfterDuration
+            },
+            Recurrence = new PatternedRecurrence
+            {
+                Pattern = new RecurrencePattern
+                {
+                    Type = RecurrencePatternType.AbsoluteMonthly,
+                    Interval = 3,
+                    Month = 0,
+                    DayOfMonth = 0,
+                    DaysOfWeek = new List<DayOfWeek>()
+                    {
+                    }
+                },
+                Range = new RecurrenceRange
+                {
+                    Type = RecurrenceRangeType.NoEnd,
+                    NumberOfOccurrences = 0
+                }
+            }
+        },
+        PrimaryReviewers = new List<SubjectSet>()
+        {
+            new GroupMembers
+            {
+                GroupId = "1623f912-5e86-41c2-af47-39dd67582b66"
+            }
+        },
+        FallbackReviewers = new List<SubjectSet>()
+        {
         }
     },
     AccessPackage = new AccessPackage

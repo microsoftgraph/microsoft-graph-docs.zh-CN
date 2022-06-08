@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a9d5bc6ac63d6026b701b533891326a38f15f64dcf92912289242e7dd6b2a157
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 53204cba6f51803aea1a8b2728c63e1cdbcc7c77
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903145"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946832"
 ---
 ```javascript
 
@@ -18,7 +18,6 @@ const client = Client.init(options);
 const bookingBusiness = {
     displayName: 'Fourth Coffee',
     address: {
-        type: 'mall',
         postOfficeBox: 'P.O. Box 123',
         street: '4567 Main Street',
         city: 'Buffalo',

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: de4dcc7e6ef9ab480c7d63c169f3f2cbdb86451d
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 82c2d8634d8d1bd9d4b8dd647b5fedc8a28d0553
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65209625"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946817"
 ---
 ```java
 
@@ -79,6 +79,41 @@ stages1.fallbackEscalationApprovers = fallbackEscalationApproversList1;
 stagesList.add(stages1);
 requestApprovalSettings.stages = stagesList;
 accessPackageAssignmentPolicy.requestApprovalSettings = requestApprovalSettings;
+AccessPackageAssignmentReviewSettings reviewSettings = new AccessPackageAssignmentReviewSettings();
+reviewSettings.isEnabled = true;
+reviewSettings.expirationBehavior = AccessReviewExpirationBehavior.KEEP_ACCESS;
+reviewSettings.isRecommendationEnabled = true;
+reviewSettings.isReviewerJustificationRequired = true;
+reviewSettings.isSelfReview = false;
+EntitlementManagementSchedule schedule = new EntitlementManagementSchedule();
+schedule.startDateTime = OffsetDateTimeSerializer.deserialize("2022-07-02T06:59:59.998Z");
+ExpirationPattern expiration1 = new ExpirationPattern();
+expiration1.duration = DatatypeFactory.newInstance().newDuration("P14D");
+expiration1.type = ExpirationPatternType.AFTER_DURATION;
+schedule.expiration = expiration1;
+PatternedRecurrence recurrence = new PatternedRecurrence();
+RecurrencePattern pattern = new RecurrencePattern();
+pattern.type = RecurrencePatternType.ABSOLUTE_MONTHLY;
+pattern.interval = 3;
+pattern.month = 0;
+pattern.dayOfMonth = 0;
+LinkedList<DayOfWeek> daysOfWeekList = new LinkedList<DayOfWeek>();
+pattern.daysOfWeek = daysOfWeekList;
+recurrence.pattern = pattern;
+RecurrenceRange range = new RecurrenceRange();
+range.type = RecurrenceRangeType.NO_END;
+range.numberOfOccurrences = 0;
+recurrence.range = range;
+schedule.recurrence = recurrence;
+reviewSettings.schedule = schedule;
+LinkedList<SubjectSet> primaryReviewersList = new LinkedList<SubjectSet>();
+GroupMembers primaryReviewers = new GroupMembers();
+primaryReviewers.groupId = "1623f912-5e86-41c2-af47-39dd67582b66";
+primaryReviewersList.add(primaryReviewers);
+reviewSettings.primaryReviewers = primaryReviewersList;
+LinkedList<SubjectSet> fallbackReviewersList = new LinkedList<SubjectSet>();
+reviewSettings.fallbackReviewers = fallbackReviewersList;
+accessPackageAssignmentPolicy.reviewSettings = reviewSettings;
 AccessPackage accessPackage = new AccessPackage();
 accessPackage.id = "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b";
 accessPackageAssignmentPolicy.accessPackage = accessPackage;

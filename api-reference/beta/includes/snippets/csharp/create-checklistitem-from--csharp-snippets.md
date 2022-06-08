@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 24a858768977ee7e09b5533be18b2d0e058b4839
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 18ad4517bb2616d698da9a60f2bd3b85c3115fcc
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114211"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946805"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var checklistItem = new ChecklistItem
     DisplayName = "Final sign-off from the team"
 };
 
-await graphClient.Me.Tasks.Lists["{baseTaskList-id}"].Tasks["{baseTask-id}"].ChecklistItems
+await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].ChecklistItems
     .Request()
     .AddAsync(checklistItem);
 

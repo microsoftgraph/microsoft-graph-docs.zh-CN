@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ee3a2ef1442395f0167b15fcfdacc0bec919c559
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 13c261ccb75e43da11d14a6acf7fa7e4b6129d58
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65719228"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946808"
 ---
 ```go
 
@@ -14,10 +14,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
-    "@odata.id": "https://graph.microsoft.com/odata/groups('1a9db3ab-0acf-4808-99ae-e8ed581cb2e0')",
+    "@odata.id": "https://graph.microsoft.com/odata/groups('dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef')",
 }
 mobilityManagementPolicyId := "mobilityManagementPolicy-id"
-result, err := graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).IncludedGroups().$ref().Post(requestBody)
+result, err := graphClient.Policies().MobileDeviceManagementPoliciesById(&mobilityManagementPolicyId).IncludedGroups().$ref().Post(requestBody)
 
 
 ```

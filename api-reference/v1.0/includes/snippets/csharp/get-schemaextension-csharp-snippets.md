@@ -1,18 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 449099e9f622c8603f1745d1454a5075e5cab6de4e6bef0507fcbcd74dfdfea4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4f8be6b4ef93875a19ed23a615be0ab1c13a6532
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163258"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946838"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var schemaExtension = await graphClient.SchemaExtensions["{schemaExtension-id}"]
+var user = await graphClient.Users["{user-id}"]
     .Request()
+    .Select("ext55gb1l09_msLearnCourses")
     .GetAsync();
 
 ```
