@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0b054c0defdce7ba026e5391bd16aadc3bbead8a
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 7a8f45505439446e9d42881dddf32b2f08cdb8e0
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214655"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65945002"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
@@ -67,6 +67,23 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 ### <a name="proactively-manage-security-risks-preview"></a>主动管理安全风险（预览版）
 
 使用 Microsoft 安全功能分数（预览版）了解组织的安全需求，获取改进方法建议，并预测在采纳这些建议后的改进分数。 可以轻松度量一段时间内的进度，并获取有助于提高分数的具体变更的相关见解。
+
+### <a name="manage-your-ediscovery-workflows-preview"></a>管理电子数据展示工作流（预览版）
+
+组织依靠 [Microsoft Purview 电子数据展示](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) 功能来满足要求，根据内部或外部要求（如诉讼、调查或法规合规性）查找组织中所发生情况的真实信息。
+在许多组织中，电子数据展示工作流频繁、关键且数量大。 在存在常见重复任务或大量活动的情况下，API 将帮助提供一种可缩放的方式来一致且有效地重复进程。
+许多组织处理大量案例和电子数据展示请求，并且希望自动执行某些任务。 高级电子数据展示的 Microsoft Graph API 提供对 Microsoft Purview 电子数据展示（高级）解决方案中可用的大多数功能的 API 访问权限。
+根据当前的系统和流程，组织可能具有自动化和集成的各种优先级，从上游流程（如案例创建）到下游流程（如收集、审阅集查询或导出）。 在整个高级电子数据展示工作流中通过 API 支持工作流提供了灵活性和选项。
+
+#### <a name="build-custom-ediscovery-workflows-with-microsoft-graph"></a>使用 Microsoft Graph 构建自定义电子数据展示工作流
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/gXqBEHy5K6E]
+
+- 使用案例管理工具自动执行案例管理和同步。
+
+- 将标准化标记托盘添加到案例。
+
+- 创建自定义报告以跟踪案例负载和各个案例的进度。
 
 ## <a name="benefits-of-using-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API 的优势
 
