@@ -1,23 +1,21 @@
 ---
 title: 获取 temporaryAccessPassAuthenticationMethodConfiguration
-description: 读取 temporaryAccessPassAuthenticationMethodConfiguration 对象的属性和关系。
-author: inbarckms
+description: 阅读由 temporaryAccessPassAuthenticationMethodConfiguration 对象表示的 Azure AD 租户的临时访问传递策略的详细信息。
+author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1fb4b2959631b6e99ad2ea64da26a9c8de460bd6
+ms.openlocfilehash: bc6fc21af43a28072c7f193d449ee8a4dad6aec2
 ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971565"
+ms.locfileid: "65971692"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>获取 temporaryAccessPassAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-读取 [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) 对象的属性和关系，该对象表示 Azure Active Directory (Azure AD) 租户的临时访问传递 [身份验证方法策略](../resources/authenticationmethodspolicies-overview.md) 。
+阅读由 [临时AccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) 对象表示的 Azure Active Directory (Azure AD) 租户的临时访问传递策略的详细信息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,7 +39,7 @@ ms.locfileid: "65971565"
 }
 -->
 ``` http
-GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -54,31 +52,30 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/Tem
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) 对象。
 
-
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-请求示例如下所示。
 <!-- {
   "blockType": "request",
   "name": "get_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
 
 ### <a name="response"></a>响应
 
 下面是响应的示例
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -91,7 +88,7 @@ Content-Type: application/json
     "defaultLength": 8,
     "minimumLifetimeInMinutes": 60,
     "maximumLifetimeInMinutes": 480,
-    "isUsableOnce": true,
+    "isUsableOnce": false,
     "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {

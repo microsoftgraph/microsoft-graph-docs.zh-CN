@@ -4,14 +4,14 @@ ms.date: 09/12/2017
 title: ColumnLink
 ms.localizationpriority: medium
 description: contentType 上的 columnLink 将网站 columnDefinition 附加到该内容类型。
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 1ad2a7397c18ad8be17a5e5bb27c25ecc84dffa6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 56936039e6524a9a5bc05832748b5989e2f99816
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113719"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971558"
 ---
 # <a name="columnlink-resource-type"></a>ColumnLink 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "59113719"
 | 属性名称 | 类型   | 说明
 |:--------------|:-------|:----------------------------------------------------
 | **id**        | string | 列的唯一标识符。
-| **name**      | string | 此内容类型中的列的名称。
+| **名称**      | string | 此内容类型中的列的名称。
 
 <!-- {
   "type": "#page.annotation",

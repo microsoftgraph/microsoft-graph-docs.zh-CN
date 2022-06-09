@@ -4,14 +4,14 @@ ms.date: 09/11/2017
 title: BooleanColumn
 ms.localizationpriority: medium
 description: columnDefinition 资源上的 booleanColumn 指示该列包含一个布尔值。
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: e25307aee02485cc6b0bab8b0dd4e8ed58958947
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5d8f3cc26ab7fd0d2926b7a3e0bc61ece41f20ee
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019389"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65970949"
 ---
 # <a name="booleancolumn-resource-type"></a>BooleanColumn 资源类型
 

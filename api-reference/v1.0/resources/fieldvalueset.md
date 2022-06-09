@@ -4,14 +4,14 @@ ms.date: 09/11/2017
 title: FieldValueSet
 ms.localizationpriority: medium
 description: 表示 listItem 资源中的列值。
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 59124bdf897bb7a388c54d57a151fd5383502421
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7c43764ba5f834b918f7f80687f58cc8f9f58e98
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036513"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971579"
 ---
 # <a name="fieldvalueset-resource"></a>FieldValueSet 资源
 

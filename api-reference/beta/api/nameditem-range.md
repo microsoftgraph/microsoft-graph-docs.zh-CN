@@ -1,25 +1,25 @@
 ---
-title: NamedItem：Range
-description: 返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。
+title: namedItem： range
+description: 返回与名称相关的 range 对象。 如果已命名项目的类型不是区域，将引发异常。
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: workbooks-and-charts
 author: ruoyingl
-ms.openlocfilehash: 2eb66ea6c5665e9e3b0808e1df9a545518fbbecb
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3832114b1d23a90c5a14f05e73a3b4168f9dbe0f
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942133"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971019"
 ---
-# <a name="nameditem-range"></a>NamedItem：Range
+# <a name="nameditem-range"></a>namedItem： range
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,7 +49,7 @@ GET /me/drive/root:/{item-path}:/workbook/names/{name}/Range
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,8 +79,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/R
 ---
 
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面是一个响应示例。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

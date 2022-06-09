@@ -4,14 +4,14 @@ ms.date: 09/13/2017
 title: ContentTypeOrder
 ms.localizationpriority: medium
 description: contentTypeOrder 资源指定在选择 UI 中显示内容类型的顺序。
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: be84be025a17677fa6c8546b1a7ccc9f1b3122c0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7a1ef454fc43dbde05d974ae8b7d355a1e33d00
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049590"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971544"
 ---
 # <a name="contenttypeorder-resource-type"></a>ContentTypeOrder 资源类型
 

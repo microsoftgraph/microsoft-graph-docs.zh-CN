@@ -1,23 +1,21 @@
 ---
 title: 删除 temporaryAccessPassAuthenticationMethodConfiguration
-description: 删除对 temporaryAccessPassAuthenticationMethodConfiguration 对象所做的更改。
+description: 将临时访问传递策略还原到其默认配置，由默认的 temporaryAccessPassAuthenticationMethodConfiguration 对象表示。
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a9ba4b0729f0c2f15af5e251a470f05ef8812c90
+ms.openlocfilehash: ae877c66ca6c989b11706dff072f729895e69dcf
 ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/09/2022
-ms.locfileid: "65970984"
+ms.locfileid: "65971659"
 ---
 # <a name="delete-temporaryaccesspassauthenticationmethodconfiguration"></a>删除 temporaryAccessPassAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-通过将策略还原到其默认配置，删除对 [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) 对象所做的更改。
+将临时访问传递策略还原到其默认配置，由默认的 [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) 对象表示。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,9 +38,8 @@ ms.locfileid: "65970984"
 }
 -->
 ``` http
-DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
-
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -64,14 +61,17 @@ DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
   "name": "delete_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
+```msgraph-interactive
+DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass`
+```
 
 ### <a name="response"></a>响应
-
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
+
 ``` http
 HTTP/1.1 204 No Content
 ```

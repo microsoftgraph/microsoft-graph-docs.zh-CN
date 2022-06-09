@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 599b38bf2d1b1552cf7e3cd4dc518f266f2ca832
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 1e8c83cd568e77ae9ca13ee4ee538d5493eac6c4
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820992"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971229"
 ---
 # <a name="get-organizationalbranding"></a>Get organizationalBranding
 命名空间：microsoft.graph
@@ -50,7 +50,7 @@ GET /organization/{organizationId}/branding
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|Accept-Language|有效的 ISO 639-1 区域设置或 `0` 默认区域设置。 必需。|
+|Accept-Language|有效的 ISO 639-1 区域设置或 `0` 默认区域设置。 必填。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -359,6 +359,11 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 
 ---
 

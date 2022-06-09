@@ -1,16 +1,16 @@
 ---
 title: 列出位置
-description: 检索 place 对象的列表。
+description: 检索位置对象的列表。
 ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cbf78d68fc26aab3007551b532c270ecfb139fe0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5e316e529fe0e7ffb540912da8acd0df0567f3f9
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093922"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971635"
 ---
 # <a name="list-places"></a>列出位置
 
@@ -18,18 +18,18 @@ ms.locfileid: "62093922"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取租户中定义的指定 [类型 place](../resources/place.md) 对象的集合。 例如，可以获取租户中所有会议室、所有会议室列表或特定会议室列表中的会议室。
+获取租户中定义的指定类型的 [位置](../resources/place.md) 对象的集合。 例如，可以获取租户中特定房间列表中的所有会议室、所有会议室列表或会议室。
 
-**place** 对象可以是下列类型之一：
+**place** 对象可以是以下类型之一：
 
-* [包含](../resources/room.md)丰富属性（例如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。 
-* [会议室列表](../resources/roomlist.md)，其中包括会议室列表的电子邮件地址，以及用于获取会议室列表中会议室实例集合的导航属性。 
+* 包含丰富的属性（例如会议室的电子邮件地址）的 [房间](../resources/room.md) ，以及辅助功能、容量和设备支持。 
+* 包含会议室列表的电子邮件地址的 [会议室列表](../resources/roomlist.md) ，以及用于获取会议室列表中会议室实例集合的导航属性。 
 
-**room 和** **roomList** 均派生自 **place** 对象。
+**room** 和 **roomList** 均派生自 **place** 对象。
 
-默认情况下，此操作返回每页 100 个位置。 
+默认情况下，此操作每页返回 100 个位置。 
 
-与 [findRooms 和](../api/user-findrooms.md) [findRoomLists](../api/user-findroomlists.md) 函数相比，此操作为会议室和会议室列表返回更丰富的有效负载。 请参阅 [有关](../resources/place.md#using-the-places-api) 它们如何比较的详细信息。
+与 [findRooms](../api/user-findrooms.md) 和 [findRoomLists](../api/user-findroomlists.md) 函数相比，此操作为会议室和会议室列表返回更丰富的有效负载。 有关比较 [方式的详细信息](../resources/place.md#using-the-places-api) ，请参阅详细信息。
 
 ## <a name="permissions"></a>权限
 
@@ -39,19 +39,19 @@ ms.locfileid: "62093922"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Place.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| 应用程序                            | Place.Read.All |
+| 应用                            | Place.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
-若要获取租户中所有会议室，
+若要获取租户中的所有房间，请执行以下操作：
 
 ```http
 GET /places/microsoft.graph.room
 ```
 
-若要获取租户中所有会议室列表，请进行以下设置：
+若要获取租户中的所有会议室列表，请执行以下操作：
 
 ```http
 GET /places/microsoft.graph.roomlist
@@ -63,7 +63,7 @@ GET /places/microsoft.graph.roomlist
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**注意**：若要获取会议室列表中的会议室，必须按 **其 emailAddress** 属性指定会议室列表，而不是按 **其 id 指定**。 
+>**注意**：若要在会议室列表中获取会议室，必须按其 **emailAddress** 属性（ **而不是 ID）** 指定会议室列表。 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持以下查询参数来帮助自定义响应：
@@ -89,7 +89,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [place](../resources/place.md) 对象集合。
+如果成功，此方法将返回 `200 OK` 响应代码和响应正文中 [位置](../resources/place.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 
@@ -97,7 +97,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 #### <a name="request"></a>请求
 
-以下示例演示如何获取租户 [中所有](../resources/room.md) 会议室对象。
+以下示例演示如何获取租户中的所有 [房间](../resources/room.md) 对象。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -227,7 +227,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-以下示例演示如何获取租户中 [所有 roomList](../resources/roomlist.md) 对象。
+以下示例演示如何获取租户中的所有 [roomList](../resources/roomlist.md) 对象。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -318,11 +318,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-rooms-contained-in-a-room-list"></a>示例 3：列出包含在会议室列表中的聊天室
+### <a name="example-3-list-rooms-contained-in-a-room-list"></a>示例 3：列出会议室列表中包含的会议室
 
 #### <a name="request"></a>请求
 
-以下示例演示如何获取 **roomList** 中包含的 [会议室](../resources/room.md)对象列表。 
+以下示例演示如何获取 **roomList** 中包含的 [会议室](../resources/room.md)对象的列表。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -347,6 +347,14 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

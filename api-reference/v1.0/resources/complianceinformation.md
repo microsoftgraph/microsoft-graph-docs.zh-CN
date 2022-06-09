@@ -1,16 +1,16 @@
 ---
 title: complianceInformation 资源类型
-description: 此资源包含与安全分数控制关联的合规性数据。
+description: 此资源包含与安全分数控制关联的符合性数据。
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 05ba1b7900f50474e2eaaac64326f02eeadfd913
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dc7f50753723d5ae0566803b3ad3b1937ec08f1f
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109260"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971523"
 ---
 #  <a name="complianceinformation-resource-type"></a>complianceInformation 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "59109260"
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
-|certificationName|String| 合规性认证 (例如 ISO 27018：2014、GDPR、FedRAMP、NIST 800-171)  |
-|certificationControls|[certificationControl](certificationcontrol.md) 集合|与认证关联的认证控制措施的集合|
+|certificationName|String| 符合性认证名称 (例如 ISO 27018：2014、GDPR、FedRAMP、NIST 800-171)  |
+|certificationControls|[certificationControl](certificationcontrol.md) 集合|与认证关联的认证控件的集合|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

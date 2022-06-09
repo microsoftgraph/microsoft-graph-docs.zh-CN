@@ -4,14 +4,14 @@ ms.date: 09/11/2017
 title: DateTimeColumn
 ms.localizationpriority: medium
 description: columnDefinition 资源上的 dateTimeColumn 指示该列的值为日期或时间。
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 21f9f3491d87823926bbc6c0f541362114a6d710
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 462110be3c0972745570e935e9d7a432b0415708
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029085"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65970991"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn 资源类型
 

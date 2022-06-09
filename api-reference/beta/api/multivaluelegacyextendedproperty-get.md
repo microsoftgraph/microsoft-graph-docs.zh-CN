@@ -3,14 +3,14 @@ title: 获取 multiValueLegacyExtendedProperty
 description: expand'.
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: non-product-specific
 author: abheek-das
-ms.openlocfilehash: 58adb39062247d970f91a702ec4146199b6a3491
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 6023a396ab1b285a40cefd074d055d1eb99cfc2d
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365034"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971628"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>获取 multiValueLegacyExtendedProperty
 
@@ -29,9 +29,9 @@ ms.locfileid: "65365034"
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
-- [event](../resources/event.md)
+- [事件](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md)
+- [邮件](../resources/message.md)
 - [Outlook 任务](../resources/outlooktask.md)
 - [Outlook 任务文件夹](../resources/outlooktaskfolder.md)
 
@@ -56,7 +56,7 @@ ms.locfileid: "65365034"
 | 组 [事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | 组[帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [Outlook 任务](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | 不支持 |
 | [Outlook 任务文件夹](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | 不支持 |
 
@@ -142,7 +142,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 |:-----|:-----|:-----|
 |id_value|String|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |

@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 笔记
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -532,7 +532,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -4633,7 +4633,7 @@ items:
                 href: api/permission-update.md
               - name: 删除权限
                 href: api/permission-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -5002,17 +5002,28 @@ items:
                         href: api/windowshelloforbusinessauthenticationmethod-get.md
                       - name: 删除
                         href: api/windowshelloforbusinessauthenticationmethod-delete.md
-              - name: 基于证书的身份验证配置
-                href: resources/certificatebasedauthconfiguration.md
-                items:
-                  - name: 列出
-                    href: api/certificatebasedauthconfiguration-list.md
-                  - name: 创建
-                    href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-                  - name: 获取
-                    href: api/certificatebasedauthconfiguration-get.md
-                  - name: 删除
-                    href: api/certificatebasedauthconfiguration-delete.md
+                  - name: 临时访问通行证
+                    href: resources/temporaryaccesspassauthenticationmethod.md
+                    items:
+                      - name: 列出
+                        href: api/authentication-list-temporaryaccesspassmethods.md
+                      - name: 创建
+                        href: api/authentication-post-temporaryaccesspassmethods.md
+                      - name: 获取
+                        href: api/temporaryaccesspassauthenticationmethod-get.md
+                      - name: 删除
+                        href: api/temporaryaccesspassauthenticationmethod-delete.md
+                  - name: 基于证书的身份验证配置
+                    href: resources/certificatebasedauthconfiguration.md
+                    items:
+                      - name: 列出
+                        href: api/certificatebasedauthconfiguration-list.md
+                      - name: 创建
+                        href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                      - name: 获取
+                        href: api/certificatebasedauthconfiguration-get.md
+                      - name: 删除
+                        href: api/certificatebasedauthconfiguration-delete.md
               - name: 条件访问
                 items:
                   - name: 策略
@@ -5251,6 +5262,15 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+                      - name: 临时访问传递策略
+                        href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+                        items:
+                          - name: 获取
+                            href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+                          - name: 更新
+                            href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+                          - name: 删除
+                            href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
                       - name: 电子邮件策略
                         href: resources/emailauthenticationmethodconfiguration.md
                         items:
@@ -6561,7 +6581,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 列出

@@ -4,14 +4,14 @@ ms.date: 09/11/2017
 title: ChoiceColumn
 ms.localizationpriority: medium
 description: columnDefinition 资源上的 choiceColumn 指示可从所选列表中选择列的值。
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 3660aadda00b8b9e50856cb9eeeea35727ef1ecf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dae9bfbf6193bde99b3113cf5c0a28e59ded8525
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109358"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971614"
 ---
 # <a name="choicecolumn-resource-type"></a>ChoiceColumn 资源类型
 

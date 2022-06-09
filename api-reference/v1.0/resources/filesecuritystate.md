@@ -1,31 +1,31 @@
 ---
 title: fileSecurityState 资源类型
-description: 包含有关未处理 (警报) 文件的信息。
+description: 包含有关文件 (不处理与警报相关的) 的信息。
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 2db9d028c6a1550886a956bbfaad3bb3141f3141
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 00a8f3ce61c185969fab0adaf99483a8d03c906c
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078859"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971068"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState 资源类型
 
 命名空间：microsoft.graph
 
-包含有关未处理 (警报) 文件的信息。
+包含有关文件 (不处理与警报相关的) 的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|包含文件哈希的复杂类型 (加密和位置敏感) 。|
-|name|String|文件名 (路径) 。|
-|路径|String|file/imageFile 的完整文件路径。|
-|riskScore|String|警报文件的提供程序生成/计算的风险评分。 建议的值范围为 0-1，等于百分比。|
+|fileHash|[fileHash](filehash.md)|包含文件哈希 (加密和位置敏感) 的复杂类型。|
+|name|String|文件名 (没有路径) 。|
+|路径|String|文件/imageFile 的完整文件路径。|
+|riskScore|String|警报文件的提供程序生成/计算风险分数。 建议的值范围为 0-1，这等同于百分比。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,23 +1,23 @@
 ---
 title: Get organizationalBrandingLocalization
-description: 读取 organizationalBrandingLocalization 对象的属性和关系。
+description: 读取组织BrandingLocalization 对象的属性和关系。
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 46742b1b73665037c778cafa1ca9b5cbbf86d0a4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3b014626b5781119561ea09aa9215d982a0f3cdb
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393302"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971410"
 ---
 # <a name="get-organizationalbrandinglocalization"></a>Get organizationalBrandingLocalization
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [organizationalBrandingLocalization 对象的属性和](../resources/organizationalbrandinglocalization.md) 关系。 若要检索本地化品牌对象，请指定 **URL 中的 id** 值。
+读取 [组织BrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象的属性和关系。 若要检索本地化品牌对象，请在 URL 中指定 **ID** 的值。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,11 +48,11 @@ GET /organization/{organizationId}/branding/localizations/{organizationalBrandin
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [组织BrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr-fr"></a>示例 1：为 fr-FR (特定区域设置获取本地化) 
+### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr-fr"></a>示例 1：获取特定区域设置的本地化品牌 (fr-FR) 
 
 #### <a name="request"></a>请求
 
@@ -144,7 +144,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-value-of-signinpagetext-for-a-specific-locale"></a>示例 2：获取特定区域设置 signInPageText 的值
+### <a name="example-2-get-the-value-of-signinpagetext-for-a-specific-locale"></a>示例 2：获取特定区域设置的 signInPageText 的值
 
 #### <a name="request"></a>请求
 
@@ -175,6 +175,11 @@ GET https://graph.microsoft.com/beta/organization/99b24e1b-abec-4598-9d63-a2baf0
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandinglocalization-locale-signinpagetext-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+
 ---
 
 
@@ -203,7 +208,7 @@ Content-Type: application/json
 
 ### <a name="example-3-get-the-bannerlogo-for-the-default-locale"></a>示例 3：获取默认区域设置的 bannerLogo
 
-下面的示例返回默认 **区域设置中的 bannerLogo** 对象。 您可以在请求 **URL 中** 指定 `default` `0` id 或 。 如果未设置对象，请求将返回空响应。
+以下示例返回默认区域设置的 **bannerLogo** 对象。 可以将 **ID** 指定为 `default` 请求 URL 或 `0` 在请求 URL 中。 如果未设置对象，则请求返回空响应。
 
 #### <a name="request"></a>请求
 
@@ -237,7 +242,7 @@ Content-Type: image/*
 
 ### <a name="example-4-get-the-bannerlogo-for-the-fr-fr-locale"></a>示例 4：获取 fr-FR 区域设置的 bannerLogo
 
-下面的示例返回 **未设置其 bannerLogo 区域设置的 bannerLogo** `fr-FR` 对象。
+以下示例返回未设置 bannerLogo 的区域设置的 **bannerLogo** 对象 `fr-FR` 。
 
 #### <a name="request"></a>请求
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 86a26afb9bba3421fa2ceaa8fbad035e2f47b6fa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f8efa4a80cf754de11eddf7777a2548fc617fc05
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129265"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944862"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -60,6 +60,10 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表显�
 ## <a name="attack-simulation-and-training-preview"></a>攻击模拟和培训（预览版）
 
 [攻击模拟和培训](/microsoft-365/security/office-365-security/attack-simulation-training)是 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true) 的一部分。 此服务可让租户中的用户体验真实的恶意钓鱼攻击，并从中学习。 最终用户的社交工程模拟和培训体验有助于降低用户被这些攻击技术入侵的风险。 攻击模拟和培训 API 使租户管理员能够查看启动的[模拟](simulation.md)练习和培训，并获取有关网络钓鱼模拟中用户在线行为的派生见解的[报告](report-m365defender-reports-overview.md)。
+
+## <a name="ediscovery-preview"></a>电子数据展示（预览版）
+
+[Microsoft Purview 电子数据展示（高级版）](/microsoft-365/compliance/overview-ediscovery-20) 提供端到端工作流，用于保留、收集、分析、审阅和导出响应组织内部和外部调查的内容。
 
 ## <a name="information-protection"></a>信息保护
 

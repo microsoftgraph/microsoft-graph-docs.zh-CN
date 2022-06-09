@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 72ccc0e8b12545914d7d1cfad9ea01a974b1430a
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: a494e5180db305f012db73018df42fed6b4fbd19
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607559"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971026"
 ---
 # <a name="delete-participant"></a>删除参与者
 
@@ -18,18 +18,18 @@ ms.locfileid: "64607559"
 
 命名空间：microsoft.graph
 
-删除呼叫中的特定参与者。 在某些情况下，适合应用程序从活动呼叫中删除参与者。 此操作可在参与者应答呼叫之前或之后执行。 删除活动呼叫者后，会立即从呼叫中删除这些呼叫，同时不会发出删除前或删除后通知。 删除受邀参与者后，将取消任何未完成的添加参与者请求。
+删除呼叫中的特定参与者。 在某些情况下，应用程序应从活动呼叫中删除参与者。 可以在参与者接听呼叫之前或之后执行此操作。 删除活动调用方时，会立即将其从调用中删除，而不会收到删除前或删除后通知。 删除受邀参与者后，将取消任何未完成的添加参与者请求。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| Application                            | Calls.JoinGroupCallsasGuest.All 或 Calls.JoinGroupCalls.All |
+| 应用程序                            | Calls.JoinGroupCallsasGuest.All 或 Calls.JoinGroupCalls.All |
 
-需要租户级应用程序会议配置，应用程序才能调用此 API。 租户管理员应在租户远程 PowerShell 上调用以下 cmdlet，以向应用程序授予调用此 API 的权限。 有关详细信息，请参阅 [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md)。
+允许应用程序调用此 API 需要租户级应用程序会议配置。 租户管理员应在租户远程 PowerShell 上调用以下 cmdlet，以授予应用程序调用此 API 的权限。 有关详细信息，请参阅 [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md)。
 ```
 PS C:\> Set-CsApplicationMeetingConfiguration -AllowRemoveParticipantAppIds @{Add="app_id"}
 ```
@@ -119,7 +119,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-cancel-invited-non-active-participant"></a>示例 2：取消受邀的非活动参与者
 
-#### <a name="invite-a-participant-to-an-existing-call"></a>邀请参与者加入现有呼叫
+#### <a name="invite-a-participant-to-an-existing-call"></a>邀请参与者参加现有呼叫
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -160,6 +160,10 @@ Content-Length: 464
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)
@@ -212,7 +216,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="delete-invited-participant-before-participant-is-added-to-the-roster"></a>在将参与者添加到名单之前删除受邀参与者
+#### <a name="delete-invited-participant-before-participant-is-added-to-the-roster"></a>在将参与者添加到名册之前删除受邀参与者
 
 <!-- {
   "blockType": "request",

@@ -1,16 +1,16 @@
 ---
 title: 获取 teamsAppIcon
-description: 检索与应用的特定定义相关联的Teams图标。
+description: 检索与 Teams 应用的特定定义关联的图标。
 ms.localizationpriority: medium
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ff380f17ee983f9bc1be2456f4cd28d24aeaa15c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 489f244b9492450c362b826fa57b13f552e727ad
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115730"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971593"
 ---
 # <a name="get-teamsappicon"></a>获取 teamsAppIcon
 
@@ -18,7 +18,7 @@ ms.locfileid: "62115730"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[Teams](../resources/teamsappicon.md)特定定义的[应用图标。](../resources/teamsapp.md) [](../resources/teamsappdefinition.md)
+检索与[应用](../resources/teamsapp.md)的特定[定义](../resources/teamsappdefinition.md)关联的 [Teams 应用图标](../resources/teamsappicon.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -28,18 +28,18 @@ ms.locfileid: "62115730"
 | :------------------------------------- | :--------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | AppCatalog.Read.All、AppCatalog.ReadWrite.All、AppCatalog.Submit |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                   |
-| 应用程序                            | AppCatalog.Read.All、AppCatalog.ReadWrite.All                    |
+| 应用                            | AppCatalog.Read.All、AppCatalog.ReadWrite.All                    |
 
 ## <a name="http-request"></a>HTTP 请求
 
-**获取应用定义Teams图标**
+**获取 Teams 应用定义的颜色图标**
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/colorIcon
 ```
 
-**获取应用定义的Teams图标**
+**获取 Teams 应用定义的大纲图标**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -48,9 +48,9 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此操作支持 `$select` 使用 `$expand` [和 OData 查询参数](/graph/query-parameters) 自定义响应。
+此操作支持 `$select` [OData 查询参数](/graph/query-parameters)和 `$expand` OData 查询参数来自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头           | 值                      |
 | :--------------- | :------------------------- |
@@ -62,11 +62,11 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [teamsAppIcon](../resources/teamsappicon.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [teamsAppIcon](../resources/teamsappicon.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-color-icon-of-a-custom-teams-app"></a>示例 1：获取自定义 *自定义应用Teams* 图标
+### <a name="example-1-get-color-icon-of-a-custom-teams-app"></a>示例 1：获取 *自定义* Teams 应用的颜色图标
 
 #### <a name="request"></a>请求
 
@@ -110,8 +110,8 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 #### <a name="response"></a>响应
 
-以下示例显示组织应用的响应。 
-> **注意**：访问自定义 [应用](teamworkhostedcontent-get.md)图标的实际图像需要一个 Microsoft Graph令牌，以在请求上设置。
+以下示例演示组织应用的响应。 
+> **注意**：访问 [自定义应用图标的实际映像](teamworkhostedcontent-get.md) 需要在请求上设置 Microsoft Graph 令牌。
 
 <!-- {
   "blockType": "response",
@@ -129,7 +129,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outline-icon-of-a-custom-teams-app"></a>示例 2：获取自定义 *自定义应用Teams* 图标
+### <a name="example-2-get-outline-icon-of-a-custom-teams-app"></a>示例 2：获取 *自定义* Teams 应用的大纲图标
 
 #### <a name="request"></a>请求
 
@@ -173,8 +173,8 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 #### <a name="response"></a>响应
 
-以下示例显示组织应用的响应。 
-> **注意**：访问自定义 [应用](teamworkhostedcontent-get.md)图标的实际图像需要一个 Microsoft Graph令牌，以在请求上设置。
+以下示例演示组织应用的响应。 
+> **注意**：访问 [自定义应用图标的实际映像](teamworkhostedcontent-get.md) 需要在请求上设置 Microsoft Graph 令牌。
 
 
 <!-- {
@@ -194,7 +194,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-3-get-color-icon-of-a-store-teams-app"></a>示例 3：获取应用商店 *或应用Teams* 图标
+### <a name="example-3-get-color-icon-of-a-store-teams-app"></a>示例 3：获取 *应用商店* Teams 应用的颜色图标
 
 #### <a name="request"></a>请求
 
@@ -251,13 +251,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetateamsgraphdev/$metadata#appCatalogs/teamsApps('95de633a-083e-42f5-b444-a4295d8e9314')/appDefinitions('OTVkZTYzM2EtMDgzZS00MmY1LWI0NDQtYTQyOTVkOGU5MzE0IyMxLjAuNSMjUHVibGlzaGVk')/colorIcon/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('95de633a-083e-42f5-b444-a4295d8e9314')/appDefinitions('OTVkZTYzM2EtMDgzZS00MmY1LWI0NDQtYTQyOTVkOGU5MzE0IyMxLjAuNSMjUHVibGlzaGVk')/colorIcon/$entity",
     "id": "aHR0cHM6Ly9zdGF0aWNzLnRlYW1zLmNkbi5vZmZpY2UubmV0L2V2ZXJncmVlbi1hc3NldHMvYXBwcy85NWRlNjMzYS0wODNlLTQyZjUtYjQ0NC1hNDI5NWQ4ZTkzMTRfbGFyZ2VJbWFnZS5wbmc/dj0xLjAuNQ==",
     "webUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/95de633a-083e-42f5-b444-a4295d8e9314_largeImage.png?v=1.0.5"
 }
 ```
 
-### <a name="example-4-get-outline-icon-of-a-store-teams-app"></a>示例 4：获取应用商店 *或应用的Teams* 图标
+### <a name="example-4-get-outline-icon-of-a-store-teams-app"></a>示例 4：获取 *应用商店* Teams 应用的大纲图标
 
 #### <a name="request"></a>请求
 

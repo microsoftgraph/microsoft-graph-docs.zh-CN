@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: fab76137d91db84b5034e6565676feb396045f18
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 06f84bf05337f396f3004f69b314b07d24dd472b
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820754"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971621"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 
@@ -28,9 +28,9 @@ ms.locfileid: "65820754"
 
 |**GET 应用场景**|**支持的资源**|**响应正文**|
 |:-----|:-----|:-----|
-|从已知资源实例中获取特定扩展。| [管理单元](../resources/administrativeunit.md)，[baseTask](../resources/basetask.md) (已弃用) ，[baseTaskList](../resources/basetasklist.md) (已弃用) 、[设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[消息](../resources/message.md)、[组织](../resources/organization.md)、[个人联系](../resources/contact.md)人、[用户](../resources/user.md)、[todoTask](../resources/todotask.md)、[todoTaskList](../resources/todotasklist.md)  | 仅开放扩展。|
-|获取一个通过特定扩展插件扩展的已知资源实例。|管理单元、基任务、基任务列表、设备、事件、组、组事件、组帖子、消息、组织、个人联系人、用户、操作任务、操作任务列表。 |一个通过开放扩展插件扩展的资源实例。|
-|查找并展开具有特定扩展的资源实例。 | 基任务、基任务列表、事件、组事件、组帖子、消息、个人联系人、操作任务、操作任务列表 |通过开放扩展展开的资源实例。|
+|从已知资源实例中获取特定扩展。| [管理单元](../resources/administrativeunit.md)， [baseTask](../resources/basetask.md) (已弃用) ， [baseTaskList](../resources/basetasklist.md) (已弃用) 、 [设备](../resources/device.md)、 [事件](../resources/event.md)、 [组](../resources/group.md)、 [组事件](../resources/event.md)、 [组帖子](../resources/post.md)、 [邮件](../resources/message.md)、 [组织](../resources/organization.md)、 [个人联系](../resources/contact.md)人、 [用户](../resources/user.md)、 [todoTask](../resources/todotask.md)、 [todoTaskList](../resources/todotasklist.md)  | 仅开放扩展。|
+|获取一个通过特定扩展插件扩展的已知资源实例。|管理单元、基任务、基任务列表、设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户、操作任务、操作任务列表。 |一个通过开放扩展插件扩展的资源实例。|
+|查找并展开具有特定扩展的资源实例。 | 基任务、基任务列表、事件、组事件、组帖子、邮件、个人联系人、操作任务、操作任务列表 |通过开放扩展展开的资源实例。|
 
 ## <a name="permissions"></a>权限
 
@@ -494,14 +494,52 @@ Content-Type: application/json
 
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-opentypeextension-5-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-opentypeextension-5-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 
 
 #### <a name="response-5"></a>响应 5

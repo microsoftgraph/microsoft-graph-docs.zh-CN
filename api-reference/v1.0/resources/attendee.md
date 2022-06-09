@@ -3,14 +3,14 @@ title: 与会者资源类型
 description: 会议与会者。 这可以是人或在 Exchange 服务器上为租户设置的资源（例如会议室或设备）。
 ms.localizationpriority: medium
 author: harini84
-ms.prod: ''
+ms.prod: calendar
 doc_type: resourcePageType
-ms.openlocfilehash: a518a39aa507173f0190a14bc947e11c3f7a90ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 15c6dbc48e07b6193ca99c7dde9239b6bcf4ec50
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067554"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971187"
 ---
 # <a name="attendee-resource-type"></a>与会者资源类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "59067554"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |emailAddress|[emailAddress](emailaddress.md)|添加与会者姓名和 SMTP 地址。|
-|proposedNewTime|[timeSlot](timeslot.md)|与会者为开始和结束会议请求建议的备用日期/时间。 如果与会者尚未建议其他时间，则此属性不包括在 GET 事件的响应中。|
+|proposedNewTime|[timeSlot](timeslot.md)|与会者为开始和结束会议请求建议的备用日期/时间。 如果与会者未提出其他时间，则此属性不包括在 GET 事件的响应中。|
 |状态|[ResponseStatus](responsestatus.md)|事件与会者的响应（无、接受、拒绝等）和发送响应的日期时间。|
-|type|String|与会者类型：`required`、`optional`、`resource`。|
+|type|字符串|与会者类型：`required`、`optional`、`resource`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

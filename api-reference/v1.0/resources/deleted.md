@@ -4,14 +4,14 @@ ms.date: 09/10/2017
 title: Deleted
 ms.localizationpriority: medium
 description: 已删除资源指示该项已被删除。
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 603e66c9256cf433cf3928db1432f90389a8f203
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3ba5423b677455735323ea96738f56a7946ac200
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104227"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971264"
 ---
 # <a name="deleted-facet"></a>Deleted Facet
 

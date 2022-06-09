@@ -3,14 +3,14 @@ title: 列出 NamedItemCollection
 description: 检索 nameditem 对象的列表。
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: workbooks-and-charts
 author: ruoyingl
-ms.openlocfilehash: 8463be8d1fe6d4bc9303373fb725df047071d815
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 267addc7cf4a93ee73b8a5ee70dff5f995aff2c8
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947697"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971257"
 ---
 # <a name="list-nameditemcollection"></a>列出 NamedItemCollection
 
@@ -19,7 +19,7 @@ ms.locfileid: "60947697"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 nameditem 对象的列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,7 +48,7 @@ GET /me/drive/root:/{item-path}:/workbook/names
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [workbookNamedItem](../resources/workbooknameditem.md) 对象集合。
+如果成功，此方法将返回 `200 OK` 响应正文中 [workbookNamedItem](../resources/workbooknameditem.md) 对象的响应代码和集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

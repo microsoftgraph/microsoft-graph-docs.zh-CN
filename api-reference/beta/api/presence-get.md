@@ -1,16 +1,16 @@
 ---
 title: 获取状态
-description: 获取用户状态信息。
+description: 获取用户的状态信息。
 author: ananmishr
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 2c97baf23c428bc4e34897441f9c32f4bd91bd6b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2c4973c2b3460b13539e873acb34b62f6b48552f
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130877"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971432"
 ---
 # <a name="get-presence"></a>获取状态
 
@@ -18,7 +18,7 @@ ms.locfileid: "62130877"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户 [状态](../resources/presence.md) 信息。
+获取用户的 [状态](../resources/presence.md) 信息。
 
 ## <a name="permissions"></a>权限
 调用这些 API 需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "62130877"
 | :-------------- | :----------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 状态.阅读，状态.阅读.全部      |
 | 委派（个人 Microsoft 帐户） | 不支持。                        |
-| 应用程序                            | 不支持。                        |
+| 应用                            | 不支持。                        |
 
 ## <a name="http-requests"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,13 +48,13 @@ GET /communications/presences
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应[](../resources/presence.md)代码和 presence 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [状态](../resources/presence.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-your-own-presence-information"></a>示例 1：获取你自己的状态信息
+### <a name="example-1-get-your-own-presence-information"></a>示例 1：获取自己的状态信息
 
-以下示例显示如何获取您自己的状态信息。 此操作需要 Presence.Read 权限。
+以下示例演示如何获取自己的状态信息。 此操作需要 Presence.Read 权限。
 
 #### <a name="request"></a>请求
 
@@ -119,9 +119,9 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-2-get-the-presence-information-of-another-user"></a>示例 2：获取其他用户状态信息
+### <a name="example-2-get-the-presence-information-of-another-user"></a>示例 2：获取其他用户的状态信息
 
-以下示例显示如何获取其他用户状态信息。 此操作需要 Presence.Read.All 权限。
+以下示例演示如何获取其他用户的状态信息。 此操作需要 Presence.Read.All 权限。
 
 #### <a name="request"></a>请求
 
@@ -185,9 +185,9 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-3-get-the-presence-information-of-another-user"></a>示例 3：获取其他用户状态信息
+### <a name="example-3-get-the-presence-information-of-another-user"></a>示例 3：获取其他用户的状态信息
 
-以下示例显示如何获取其他用户状态信息。 此操作需要 Presence.Read.All 权限。
+以下示例演示如何获取其他用户的状态信息。 此操作需要 Presence.Read.All 权限。
 
 #### <a name="request"></a>请求
 
@@ -219,6 +219,10 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-presences-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

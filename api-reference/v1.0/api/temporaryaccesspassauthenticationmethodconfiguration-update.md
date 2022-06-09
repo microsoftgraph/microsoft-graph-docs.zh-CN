@@ -1,23 +1,21 @@
 ---
 title: 更新 temporaryAccessPassAuthenticationMethodConfiguration
-description: 更新 temporaryAccessPassAuthenticationMethodConfiguration 对象的属性。
+description: 更新由 temporaryAccessPassAuthenticationMethodConfiguration 对象表示的 Azure AD 租户的临时访问传递策略。
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8a81d7c55e67e7037bdc3c5bede73424d960695b
+ms.openlocfilehash: a4114b5731d012c3c13b7b59ba7516cef5687c7c
 ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971005"
+ms.locfileid: "65971666"
 ---
 # <a name="update-temporaryaccesspassauthenticationmethodconfiguration"></a>更新 temporaryAccessPassAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-更新 [临时AccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) 对象的属性，该对象代表 Azure AD 租户的临时访问传递身份验证方法策略。
+更新由 [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) 对象表示的 Azure AD 租户的临时访问传递策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +30,6 @@ ms.locfileid: "65971005"
 
 * 身份验证策略管理员
 * 全局管理员
-
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,7 +52,8 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/T
 
 可以更新对象的所有属性。 有关属性列表，请参阅 [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md)。
 
->**注意：**`@odata.type`具有值的`#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration`属性必须包含在正文中。
+> [!NOTE]
+> 具有值`#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration`**的 @odata.type** 属性必须包含在请求正文中。
 
 ## <a name="response"></a>响应
 
@@ -64,55 +62,19 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/T
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+```http
+PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 Content-Type: application/json
 
 {
-  "@odata.type":"#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
-  "state":"enabled",
-  "defaultLifetimeInMinutes":60,
-  "defaultLength":8,
-  "minimumLifetimeInMinutes":60,
-  "maximumLifetimeInMinutes":1440,"
-  isUsableOnce":false,
-  "includeTargets": [
-        {
-            "targetType": "group",
-            "id": "all_users",
-            "isRegistrationRequired": false,
-            "useForSignIn": true
-        }
-    ]
+  "isUsableOnce": true
 }
-
-
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-temporaryaccesspassauthenticationmethodconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-temporaryaccesspassauthenticationmethodconfiguration-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-temporaryaccesspassauthenticationmethodconfiguration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[转到](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-temporaryaccesspassauthenticationmethodconfiguration-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>响应
 <!-- {
@@ -120,6 +82,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+
+```http
 HTTP/1.1 204 No Content
 ```

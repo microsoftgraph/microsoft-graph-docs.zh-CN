@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8a120dd2cfd0bce297dc094447932d26f6991e8d
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: bf32d936c4dfe246aedcb2ed947d4ebb79dfadff
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316254"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971222"
 ---
 # <a name="participant-invite"></a>参与者：邀请
 
@@ -31,7 +31,7 @@ ms.locfileid: "65316254"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | Calls.InitiateGroupCalls.All |
+| 应用     | Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -765,6 +765,10 @@ Content-Length: 464
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)

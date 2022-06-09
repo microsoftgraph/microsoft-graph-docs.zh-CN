@@ -1,48 +1,39 @@
 ---
 title: 创建 temporaryAccessPassAuthenticationMethod
 description: 创建新的 temporaryAccessPassAuthenticationMethod 对象。
-author: inbarckMS
+author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e96a886a3627bf12b42bcd249bd5b800036c67c5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 43d4b5df97653498c4c3630cb95ca5abb48a9a60
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126746"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971572"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>创建 temporaryAccessPassAuthenticationMethod
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在用户上 [创建新的 temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象。 用户只能有一个临时访问传递。 可以在临时访问传递的开始时间和结束时间之间使用密码。 如果用户需要新的临时访问通道：
-* 当前临时访问传递有效时 ， 管理员需要删除现有的临时访问通道，并创建用户的新传递。 删除有效的临时访问通道将撤消用户的会话。 
-* 临时访问传递过期后 - 新的临时访问传递将覆盖当前临时访问传递，并且不会撤消用户的会话。
+在用户上创建新的 [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象。 用户只能有一个临时访问通行证。 可在临时访问密码的开始时间和结束时间之间使用密码。 如果用户需要新的临时访问通行证：
+* 虽然当前临时访问通行证有效 ， 但管理员需要删除现有的临时访问通行证并在用户上创建新通行证。 删除有效的临时访问通行证将撤销用户的会话。 
+* 临时访问通行证过期后 - 新的临时访问传递会覆盖当前的临时访问通行证，并且不会撤消用户的会话。
 
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-### <a name="permissions-acting-on-self"></a>自行操作的权限
-
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:---------------------------------------|:-------------------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
-
-### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
+| 应用                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员在另一用户上操作的委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员对另一用户执行操作的委派方案，管理员需要以下 [Azure AD 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员
@@ -66,19 +57,19 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象的 JSON 表示形式。
 
-下表介绍在创建 [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)时可以使用的可选属性。
+下表描述了创建 [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 时可以使用的可选属性。
 
 |属性|类型|说明|必需| 
 |:---|:---|:---|:---|
-|startDateTime|DateTimeOffset|temporaryAccessPass 可供使用的日期和时间（如果未设置，则创建时可以使用临时访问传递）。| 否|
-|lifetimeInMinutes|Int32|temporaryAccessPass 的生存期，以分钟计，从创建时间开始或 startDateTime（如果已设置）。 最少 10 天，最多 43200 (相当于 30 天) 。| 否|
-|isUsableOnce|布尔|确定是否将传递限制为一次使用。 如果为 True，则传递可以使用一次，如果为 False，则 pass 可以在 temporaryAccessPass 生命周期内多次使用。 多用途临时访问 (isUsableOnce = false) ，只有在临时访问传递身份验证方法策略允许时，才能创建并用于登录。|  否|
+|startDateTime|DateTimeOffset|如果未设置临时访问密码，则在创建时可以使用 temporaryAccessPass 的日期和时间。| 否|
+|lifetimeInMinutes|Int32|临时AccessPass 的生存期（以分钟为单位），从创建时间开始，或者在 startDateTime（如果设置）。 最小 10，最大 43200 (等效于 30 天) 。| 否|
+|isUsableOnce|布尔值|确定传递是否限制为一次性使用。 如果为 True ， 则可以使用一次，如果为 False， 则可在临时AccessPass生命时间内多次使用该通行证。 多用临时访问传递 (isUsableOnce = false) ，只有在临时访问传递身份验证方法策略允许的情况下，才能创建并用于登录。|  否|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

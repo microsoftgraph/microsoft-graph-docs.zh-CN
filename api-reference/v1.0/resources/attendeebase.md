@@ -3,14 +3,14 @@ title: attendeeBase 资源类型
 description: 与会者类型。
 ms.localizationpriority: medium
 author: harini84
-ms.prod: ''
+ms.prod: calendar
 doc_type: resourcePageType
-ms.openlocfilehash: 76ad64b53245f4e78dd082c10e85b4eeeb1de854
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4f8b9c6913e9dd2f7eb050f53e390182e6481408
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021741"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971334"
 ---
 # <a name="attendeebase-resource-type"></a>attendeeBase 资源类型
 
