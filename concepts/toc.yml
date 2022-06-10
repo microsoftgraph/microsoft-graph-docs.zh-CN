@@ -545,11 +545,18 @@ items:
                 href: search-query-parameter.md
               - name: 高级查询功能
                 href: aad-advanced-queries.md
+              - name: 使用查询参数优化请求
+                href: /learn/modules/optimize-data-usage
           - name: 批处理
             displayName: Batch requests
             href: json-batching.md
           - name: 限制
-            href: throttling.md
+            items:
+              - name: 概述
+                displayName: throttling
+                href: throttling.md
+              - name: 优化网络流量
+                href: /learn/modules/optimize-network-traffic
           - name: 更改通知
             displayName: 'Webhooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             items:
