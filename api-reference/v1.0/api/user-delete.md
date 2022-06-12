@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f5b00898335d1c83ce8579d3007284478fc52901
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9514fed277a8d3775a8f75325757db7586c8764d
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104239"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034759"
 ---
 # <a name="delete-a-user"></a>删除用户
 
@@ -30,7 +30,7 @@ ms.locfileid: "62104239"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.ReadWrite.All |
 
-工作或学校帐户必须具有以下角色之一：
+必须为调用用户或应用分配以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：
 + 全局管理员
 + 用户管理员
 
@@ -61,7 +61,7 @@ DELETE /users/{id | userPrincipalName}
 
 ### <a name="request"></a>请求
 
-下面是一个请求示例。
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面展示了示例响应。 
 <!-- {
   "blockType": "response",
   "truncated": true

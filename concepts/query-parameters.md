@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e0af0692e89f0ea099fb480ecd57cd60e54bd798
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 7f87d5c3d410a351c366d5cc66550f868aba4711
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461371"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034717"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -21,6 +21,9 @@ Microsoft Graph 支持可选的查询参数，可用于指定和控制响应中�
 查询参数可以是 [OData 系统查询选项](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#_Toc31360955)，也可以是其他查询参数。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
+
+> [!NOTE]
+> [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2) 要求在 URL 中对保留字符进行百分比编码。 但是，为了便于阅读，本文档可能不会显示百分比编码的字符。 但是，保留字符（如 `startsWith` 表达式中的逗号 (`,`)）应在请求中进行百分比编码。
 
 ## <a name="odata-system-query-options"></a>OData 系统查询选项
 Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询选项。 这些查询选项与 [OData V4 查询语言][odata-query]兼容。
