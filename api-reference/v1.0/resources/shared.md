@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: 共享的内容
+title: 共享资源类型
 ms.localizationpriority: medium
-description: 共享 资源指示 DriveItem 已与他人共享。
-ms.prod: ''
+description: 共享资源指示 driveItem 已与其他人共享。
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 4298f35f95e4e5e5f18c8ee8492c70fae30d4928
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7dc698106ffcb619e9e5e8e28845841084f59702
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126623"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034388"
 ---
-# <a name="shared-resource-type"></a>Shared 资源类型
+# <a name="shared-resource-type"></a>共享资源类型
 
 命名空间：microsoft.graph
 
-**共享** 资源指示 DriveItem 已与他人共享。此资源包括有关如何共享项的信息。
+**共享** 资源指示 **driveItem** 已与其他人共享。
+此资源包括有关如何共享项的信息。
 
-如果 [**DriveItem**](driveitem.md) 具有非 NULL **共享** facet，则该项已共享。
+如果 [**driveitem**](driveitem.md) 具有非 null **共享** 分面，则已共享该项。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

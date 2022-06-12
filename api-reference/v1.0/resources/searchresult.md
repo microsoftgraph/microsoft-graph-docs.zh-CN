@@ -1,23 +1,22 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: SearchResult
+title: searchResult 资源类型
 ms.localizationpriority: medium
-description: SearchResult 资源指示项是搜索查询的响应。
-ms.prod: ''
+description: searchResult 资源指示的不是项是对搜索查询的响应。
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: ad26c1df29e78d6c04c4332d5a1c1e9f88c12513
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 376e0a709f7607215aac1b1509434549bd437db3
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126686"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034794"
 ---
-# <a name="searchresult-resource-type"></a>SearchResult 资源类型
+# <a name="searchresult-resource-type"></a>searchResult 资源类型
 
 命名空间：microsoft.graph
 
-**SearchResult** 资源指示项是搜索查询的响应。
+**searchResult** 资源指示的不是项是对搜索查询的响应。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,7 +40,7 @@ ms.locfileid: "59126686"
 
 ## <a name="remarks"></a>注解 
 
-有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
+有关 DriveItem 上的分面的详细信息，请参阅 [driveItem](driveitem.md)。
 
 <!-- {
   "type": "#page.annotation",

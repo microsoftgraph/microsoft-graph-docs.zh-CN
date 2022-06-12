@@ -1,22 +1,22 @@
 ---
 title: 页面资源类型
-description: 笔记本中的OneNote页。
+description: 笔记本OneNote页。
 ms.localizationpriority: medium
 author: jewan-microsoft
-ms.prod: ''
+ms.prod: notes
 doc_type: resourcePageType
-ms.openlocfilehash: f2a21f47d0e29930cf4012f4a2713b372cd77d2c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f1cdc80494d8b16aa34ca5675fcbe5652bdf4c76
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117975"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034913"
 ---
 # <a name="page-resource-type"></a>页面资源类型
 
 命名空间：microsoft.graph
 
-笔记本中的OneNote页。
+笔记本OneNote页。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -53,15 +53,15 @@ ms.locfileid: "59117975"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |content|流|页面的 HTML 内容。|
-|contentUrl|String|页面的 HTML 内容的 URL。  只读。|
+|contentUrl|String|页面 HTML 内容的 URL。  只读。|
 |createdByAppId|字符串|创建页面的应用程序的唯一标识符。 只读。|
 |createdDateTime|DateTimeOffset|页面的创建日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |id|String|页面的唯一标识符。  只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改页面的日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|level|Int32|页面的缩进级别。 只读。|
-|links|[PageLinks](pagelinks.md)|用于打开页面的链接。 如果 `oneNoteClientURL` 已安装，该链接将在OneNote客户端中打开页面。 链接 `oneNoteWebUrl` 将在页面打开OneNote web 版。 只读。|
-|order|Int32|页面在其父节中的顺序。 只读。|
-|self|String|可在其中获取页面详细信息的终结点。 只读。|
+|水平|Int32|页面的缩进级别。 只读。|
+|links|[PageLinks](pagelinks.md)|用于打开页面的链接。 如果已安装，链接`oneNoteClientURL`将在OneNote本机客户端中打开该页面。 链接`oneNoteWebUrl`在OneNote web 版中打开页面。 只读。|
+|以|Int32|页面在其父部分中的顺序。 只读。|
+|自我|字符串|可在其中获取有关页面的详细信息的终结点。 只读。|
 |title|String|页面的标题。 |
 
 ## <a name="relationships"></a>关系

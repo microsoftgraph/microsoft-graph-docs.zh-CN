@@ -1,23 +1,22 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
 title: 配额
 ms.localizationpriority: medium
-description: 配额资源提供有关 驱动器 资源上的空间限制的详细信息。
-ms.prod: ''
+description: 配额资源提供有关驱动器资源的空间约束的详细信息。
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 71f0f29c4ab6979f7154940e9007665d020b7f68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f53fc260a785bc44d4e82a149504eca4066e728f
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143808"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034710"
 ---
-# <a name="quota-resource-type"></a>Quota 资源类型
+# <a name="quota-resource-type"></a>配额资源类型
 
 命名空间：microsoft.graph
 
-**配额** 资源提供有关 [驱动器](drive.md) 资源上的空间限制的详细信息。
+**配额** 资源提供有关 [驱动器](drive.md)资源的空间约束的详细信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -51,7 +50,7 @@ ms.locfileid: "59143808"
 | remaining     | Int64  | 达到配额限制之前剩余的总空间，以字节为单位。只读。 |
 | deleted       | Int64  | 回收站中的文件占用的总空间，以字节为单位。只读。      |
 | state         | string | 指示存储空间状态的枚举值。只读。 |
-| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | 有关驱动器的存储配额计划的信息。 仅在个人OneDrive。|
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | 有关驱动器的存储配额计划的信息。 仅在个人OneDrive中。|
 
 ## <a name="state-enumeration"></a>状态枚举
 

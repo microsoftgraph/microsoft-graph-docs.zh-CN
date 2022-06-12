@@ -3,14 +3,14 @@ title: operationError 资源类型
 description: 描述 teamsAsyncOperation 中的错误。
 ms.localizationpriority: medium
 author: billbliss
-ms.prod: ''
+ms.prod: teamwork
 doc_type: resourcePageType
-ms.openlocfilehash: b30a945dcbd19a6c1be0c276eec0b650b8251ea1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0bdc08d7d98b4f926a1cd6a247ccb9b6d41b9d62
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098508"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034447"
 ---
 # <a name="operationerror-resource-type"></a>operationError 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "59098508"
 
 
 
-描述 [teamsAsyncOperation 中的错误](teamsasyncoperation.md)。
+描述 [teamsAsyncOperation](teamsasyncoperation.md) 中的错误。
 
 ## <a name="operationerror-properties"></a>operationError 属性
 | 属性     | 类型   |说明|

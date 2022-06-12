@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: SharingInvitation
+title: sharingInvitation 资源类型
 ms.localizationpriority: medium
-description: SharingInvitation 资源将邀请相关的数据项分组到一个结构中。
-ms.prod: ''
+description: sharingInvitation 资源将邀请相关的数据项分组到单个结构中。
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 064c687b761872f587f8fe992d320c204dc260f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7c76fe60f21831db94b44df5f6e0ccabdeff98d8
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032256"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034934"
 ---
-# <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
+# <a name="sharinginvitation-resource-type"></a>sharingInvitation 资源类型
 
 命名空间：microsoft.graph
 
-**SharingInvitation** 资源将邀请相关的数据项分组到一个结构中。
+将邀请相关的数据项分组到单个结构中。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -49,7 +49,7 @@ ms.locfileid: "59032256"
 
 ## <a name="remarks"></a>注解
 
-有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
+有关 **driveItem** 上 facet 的详细信息，请参阅 [driveItem](driveitem.md)。
 
 [DriveItem]: driveitem.md
 [IdentitySet]: identityset.md

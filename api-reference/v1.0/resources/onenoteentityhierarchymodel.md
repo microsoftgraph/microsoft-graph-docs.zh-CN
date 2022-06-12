@@ -1,22 +1,22 @@
 ---
 title: onenoteEntityHierarchyModel 资源
-description: 这是一个基类型，OneNote实体。
+description: OneNote实体的基类型。
 author: jewan-microsoft
 ms.localizationpriority: medium
-ms.prod: onenote
+ms.prod: notes
 doc_type: resourcePageType
-ms.openlocfilehash: 8b8a53205227f71f92245ebfb8cf4896ec91e58e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 914a2832a79d278660711cfccc1318dc56c390ba
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118031"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034703"
 ---
 # <a name="onenoteentityhierarchymodel-resource"></a>onenoteEntityHierarchyModel 资源
 
 命名空间：microsoft.graph
 
-这是一个基类型，OneNote实体。
+OneNote实体的基类型。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,7 +41,6 @@ ms.locfileid: "59118031"
 }
 
 ```
-## <a name="properties"></a>属性
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|

@@ -4,14 +4,14 @@ ms.date: 09/11/2017
 title: NumberColumn
 ms.localizationpriority: medium
 description: columnDefinition 资源上的 numberColumn 指示该列的值为数字。
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 58f8db33b374bc8e3e6665f307109c0deec76597
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ae1f12b9c5f0f4b21830091c2518e1d66d624fef
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015453"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034920"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn 资源类型
 

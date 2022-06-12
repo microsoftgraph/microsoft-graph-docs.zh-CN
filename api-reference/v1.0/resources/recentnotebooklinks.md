@@ -3,14 +3,14 @@ title: recentNotebookLinks 资源类型
 description: 用于打开 OneNote 笔记本的链接。 此资源类型以 recentNotebook 资源属性的形式存在。
 ms.localizationpriority: medium
 author: jewan-microsoft
-ms.prod: ''
+ms.prod: notes
 doc_type: resourcePageType
-ms.openlocfilehash: 40ad8a64d96f8b9a98a7689eda9b4147d2deed62
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ddcdad1e3bfaeb6ca21c20071eefd7e3fc43921d
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078670"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034591"
 ---
 # <a name="recentnotebooklinks-resource-type"></a>recentNotebookLinks 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59078670"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端，则在其中打开笔记本。|
-|oneNoteWebUrl|[externalLink](externallink.md)|在"页面"中OneNote web 版。|
+|oneNoteWebUrl|[externalLink](externallink.md)|在OneNote web 版中打开笔记本。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

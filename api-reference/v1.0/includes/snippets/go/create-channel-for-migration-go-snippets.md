@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4ad141c9f68e4728fdaff1ed749280176c7accdb
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e7927e696148f413ceb6dc5e72183f5d70811c3c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099739"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316137"
 ---
 ```go
 
@@ -22,11 +22,8 @@ requestBody.SetCreatedDateTime(&createdDateTime)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@microsoft.graph.channelCreationMode": "migration",
 }
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+result, err := graphClient.TeamsById(&teamId).Channels().Post(requestBody)
 
 
 ```

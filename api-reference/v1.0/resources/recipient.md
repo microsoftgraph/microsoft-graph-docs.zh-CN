@@ -3,14 +3,14 @@ title: 收件人资源类型
 description: '表示事件、邮件或组帖子发送或接收端的用户的相关信息。 '
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: mail
 doc_type: resourcePageType
-ms.openlocfilehash: a484a49e582d2df904dde65572453836b9d2fc4a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ae1cb6593f259efeae6f1fe39bb5b18b115d63d
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078663"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034843"
 ---
 # <a name="recipient-resource-type"></a>收件人资源类型
 

@@ -1,22 +1,23 @@
 ---
 title: 创建频道
-description: 在团队中创建新频道，如请求正文中指定。
+description: 在团队中创建新通道，如请求正文中所指定的那样。
 ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fceaca74289ed68c861e23c30ce6dd2b46a6d2b5
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: f74ab131db847a942923e2caac074a40bed6db45
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804715"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034500"
 ---
 # <a name="create-channel"></a>创建频道
 
 命名空间：microsoft.graph
 
-在团队 [中创建新](../resources/channel.md) 频道，如请求正文中指定。
+在团队中创建新 [通道](../resources/channel.md) ，如请求正文中所指定的那样。
+> **注意：** 创建专用频道时，最多可添加 200 个成员。
 
 ## <a name="permissions"></a>权限
 
@@ -28,11 +29,11 @@ ms.locfileid: "62804715"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Channel.Create.Group *、Channel.Create、Teamwork.Migrate.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：仅支持使用 ** 标记的权限，以确保向后兼容。 建议您更新解决方案以使用上表中列出的备用权限，并避免今后使用这些权限。 标记为 * 的权限使用 [特定于资源的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
+> **注意**：仅支持使用 ** 标记的权限，以实现向后兼容性。 建议更新解决方案，以使用上表中列出的替代权限，并避免今后使用这些权限。 标记为 * 的权限使用 [特定于资源的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 >
 > 此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 >
-> 将来，Microsoft 可能会要求你或你的客户根据使用团队合作.Migrate.All 和/或迁移 API 导入的数据量支付 [额外的费用](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+> 将来，Microsoft 可能会要求你或你的客户根据使用 Teamwork.Migrate.All 和/或 [迁移 API](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) 导入的数据量支付额外费用。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +61,7 @@ POST /teams/{team-id}/channels
 ### <a name="example-1-create-a-standard-channel"></a>示例 1：创建标准通道
 #### <a name="request"></a>请求
 
-以下示例显示创建标准通道的请求。
+以下示例演示创建标准通道的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -130,11 +131,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-private-channel-on-behalf-of-user"></a>示例 2：代表用户创建私人频道
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>示例 2：代表用户创建专用频道
 
 #### <a name="request"></a>请求
 
-以下示例显示创建私人频道和将用户添加为团队所有者的请求。
+以下示例演示创建专用频道并添加用户作为团队所有者的请求。
 
 
 
@@ -221,7 +222,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-以下示例演示如何创建将用于导入邮件的通道。
+以下示例演示如何创建用于导入消息的通道。
 
 
 
@@ -272,8 +273,8 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
-以下示例显示了相应的响应。 响应中的 Content-Location 标头指定要预配的频道的路径。
-设置后，此通道可用于 [导入邮件](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+以下示例显示了相应的响应。 响应中的 Content-Location 标头指定要预配的通道的路径。
+预配后，此通道可用于 [导入消息](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -299,11 +300,11 @@ Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24
 }
 ```
 
-### <a name="example-4-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>示例 4：使用用户主体名称代表用户创建私人频道
+### <a name="example-4-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>示例 4：使用用户主体名称代表用户创建专用通道
 
 #### <a name="request"></a>请求
 
-以下示例显示创建私人频道和将用户添加为团队所有者的请求。
+以下示例演示创建专用频道并添加用户作为团队所有者的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

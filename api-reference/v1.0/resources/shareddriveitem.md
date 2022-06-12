@@ -1,23 +1,22 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: SharedDriveItem
+title: sharedDriveItem 资源类型
 ms.localizationpriority: medium
 description: 使用 Shares API 访问共享的 driveItem 时，返回 sharedDriveItem 资源。
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: e425d8d243722ffa29b9ffcedfaae566508d8f57
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 52fa1c8d4395283f6e33464142eab0f411fd46ac
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066994"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034584"
 ---
-# <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
+# <a name="shareddriveitem-resource-type"></a>sharedDriveItem 资源类型
 
 命名空间：microsoft.graph
 
-使用 [Shares](../api/shares-get.md) API 访问共享的 [driveItem](driveitem.md) 时，返回 **sharedDriveItem** 资源。
+使用 [共享](../api/shares-get.md) API 访问共享 [driveItem](driveitem.md) 时，将返回 **sharedDriveItem** 资源。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -52,8 +51,8 @@ ms.locfileid: "59066994"
 | 属性 | 类型                          | 说明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
 | id       | String                        | 要访问的内容的唯一标识符。              |
-| name     | String                        | 共享项的显示名称。                             |
-| 所有者    | [IdentitySet](identityset.md) | 正在引用的共享项的所有者信息。 |
+| name     | 字符串                        | 共享项的显示名称。                             |
+| 所有者    | [identitySet](identityset.md) | 正在引用的共享项的所有者信息。 |
 
 ## <a name="relationships"></a>关系
 
@@ -62,15 +61,15 @@ ms.locfileid: "59066994"
 | **driveItem**     | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**
 | **list**          | [**列表**][list]        | 用于访问基础 **list**
 | **listItem**      | [**listItem**][listItem]    | 用于访问基础 **listItem**
-| **permission**    | [**permission**][permission] | 用于访问 **表示** 基础共享链接的权限
-| **网站**          | [**网站**][site]        | 用于访问基础 **site**
+| **权限**    | [**许可**][permission] | 用于访问表示基础共享链接的 **权** 限
+| **site**          | [**site**][site]        | 用于访问基础 **site**
 
 另外，对于从个人 OneDrive 帐户共享的 **driveItems**，也可使用以下关系。
 
 | 关系名称 | 类型                         | 说明
 | ------------------|:-----------------------------|:-----------------------------------
 | **items**         | [**driveItem**][driveItem] 集合 | 共享根中包含的所有 driveItem。 不能枚举此集合。
-| **root**          | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**。 已弃用 -- 请 `driveItem` 改为使用。
+| **root**          | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**。 已弃用 - 请改用 `driveItem` 。
 
 [driveItem]: driveitem.md
 [list]: list.md
@@ -86,7 +85,7 @@ ms.locfileid: "59066994"
 
 ## <a name="remarks"></a>注解
 
-有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
+有关 DriveItem 上的分面的详细信息，请参阅 [driveItem](driveitem.md)。
 
 <!-- {
   "type": "#page.annotation",

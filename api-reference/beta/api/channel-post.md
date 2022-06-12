@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9440a84f25f92836f56fb740f460af546ed1aece
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 241296e2cbddb94d582a7241c6f81c195a5cabfe
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202784"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034546"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -19,6 +19,7 @@ ms.locfileid: "65202784"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在团队中创建新 [通道](../resources/channel.md) ，如请求正文中所指定的那样。
+> **注意：** 创建专用频道时，最多可添加 200 个成员。
 
 > [!IMPORTANT]
 > 共享通道当前处于公共预览状态。 在此期间，用于创建共享通道的 Microsoft 图形 API可供受众限制。 建议在Teams客户端中创建共享通道，并使用 Microsoft Graph API 来管理它们。 有关如何在Teams客户端中启用共享通道的详细信息，请[参阅Microsoft Teams (预览版) 中的共享频道](/microsoftteams/shared-channels)。
@@ -32,11 +33,11 @@ ms.locfileid: "65202784"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Channel.Create、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Channel.Create.Group *、Channel.Create、Teamwork.Migrate.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
+|应用程序 | Channel.Create.Group *、Channel.Create、Teamwork.Migrate.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
 [!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
-> **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 > **注意**：将来，Microsoft 可能会要求你或你的客户根据使用 Teamwork.Migrate.All 和/或 [迁移 API](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) 导入的数据量支付额外费用。
 
@@ -205,7 +206,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -257,7 +258,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。 `Content-Location`响应中的标头指定要预配的通道的路径。
+下面展示了示例响应。 `Content-Location`响应中的标头指定要预配的通道的路径。
 预配后，此通道可用于 [导入消息](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 <!-- {
   "blockType": "response",
@@ -344,7 +345,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -429,7 +430,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,

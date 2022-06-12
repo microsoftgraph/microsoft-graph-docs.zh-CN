@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 41adbba8d7ffb988ddad7cd91a754712f329aca3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d13d3d077faf34f80fb4f5446589156933219a29
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125692"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034577"
 ---
 # <a name="create-unifiedroleassignment"></a>创建 unifiedRoleAssignment
 
@@ -22,9 +22,9 @@ ms.locfileid: "62125692"
 
 ## <a name="permissions"></a>权限
 
-根据 RBAC 提供程序以及 (或应用程序) 类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据 RBAC 提供程序和权限类型 (委派或应用程序) 需要，请从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
-### <a name="for-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
+### <a name="for-the-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -32,7 +32,7 @@ ms.locfileid: "62125692"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.ReadWrite.Directory |
 
-### <a name="for-entitlement-management-provider"></a>对于权利管理提供程序
+### <a name="for-the-entitlement-management-provider"></a>对于权利管理提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,7 +42,7 @@ ms.locfileid: "62125692"
 
 ## <a name="http-request"></a>HTTP 请求
 
-为角色分配创建一个目录提供程序：
+为目录提供程序创建角色分配：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -50,7 +50,7 @@ ms.locfileid: "62125692"
 POST /roleManagement/directory/roleAssignments
 ```
 
-为角色分配提供程序创建一个权限管理提供程序：
+为权利管理提供程序创建角色分配：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -59,7 +59,7 @@ POST /roleManagement/entitlementManagement/roleAssignments
 ```
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明   |
 |:--------------|:--------------|
@@ -67,19 +67,19 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的作用域（如 **directoryScopeId）** 或特定于应用程序的范围（如 **appScopeId）。** 租户Azure AD包括租户 (/") 、管理单元或应用程序。 权利管理使用租户 ("/") 和访问包目录范围。 有关详细信息，请参阅 [appScope](../resources/appscope.md)。
+在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的范围（如 **directoryScopeId**）或特定于应用程序的范围（如 **appScopeId**）。 Azure AD 范围的示例包括租户 (“/”) 、管理单元、属性集或应用程序。 权利管理使用租户 (“/”) 和访问包目录范围。 有关详细信息，请参阅 [appScope](../resources/appscope.md)。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新的 `201 Created` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-role-assignment-at-tenant-scope"></a>示例 1：在租户角色分配创建租户
+### <a name="example-1-create-a-role-assignment-with-tenant-scope"></a>示例 1：创建具有租户范围的角色分配
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 请注意 roleDefinitionId 的 roleTemplateId 的使用。 roleDefinitionId 可以是服务范围的模板 ID 或特定于目录的 roleDefinitionId。
+下面展示了示例请求。 请注意，roleTemplateId 用于 roleDefinitionId。 roleDefinitionId 可以是服务范围的模板 ID，也可以是特定于目录的角色DefinitionId。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -151,11 +151,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--create-a-role-assignment-over-an-administrative-unit-scope"></a>示例 2：创建角色分配管理单元作用域的组
+### <a name="example-2--create-a-role-assignment-with-administrative-unit-scope"></a>示例 2：创建具有管理单元范围的角色分配
 
 #### <a name="request"></a>请求
 
-以下示例将主要用户管理员角色分配给管理单元。
+以下示例将用户管理员角色分配给具有管理单元范围的主体。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -170,9 +170,9 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1", //template id of User Account Administrator
+    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
+    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -193,6 +193,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-over-administrativeunit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -224,7 +228,55 @@ Content-type: application/json
 ```
 
 
-### <a name="example-3-create-a-role-assignment-at-access-package-catalog-scope"></a>示例 3：在角色分配包目录范围创建一个数据库
+### <a name="example-3--create-a-role-assignment-with-attribute-set-scope"></a>示例 3：创建具有属性集范围的角色分配
+
+#### <a name="request"></a>请求
+
+以下示例将属性分配管理员角色分配给具有名为 Engineering 的属性集范围的主体。 有关 Azure AD 自定义安全属性和属性集范围的详细信息，请参阅 [管理对 Azure AD 中自定义安全属性的访问权限](/azure/active-directory/fundamentals/custom-security-attributes-manage)。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment_attributeset_scope"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "roleDefinitionId": "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d",
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScopeId": "/attributeSets/Engineering"
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
+    "id": "oz6hWDLGrkae4JwNQ81_PU-mYqx8m71OpqEQPdN1u",
+    "roleDefinitionId": "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d",
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScopeId": "/attributeSets/Engineering"
+}
+```
+
+### <a name="example-4-create-a-role-assignment-with-access-package-catalog-scope"></a>示例 4：创建具有访问包目录范围的角色分配
 
 #### <a name="request"></a>请求
 

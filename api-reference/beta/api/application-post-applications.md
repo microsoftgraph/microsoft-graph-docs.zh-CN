@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: a27891136f2092a4012188cfed6606cf3906e1f3
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 6508e953a6668129fc8b3ec395c3e09ac9fe33f8
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477585"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034507"
 ---
 # <a name="create-application"></a>创建应用程序
 
@@ -123,6 +123,7 @@ Content-type: application/json
     "optionalClaims": null,
     "addIns": [],
     "publisherDomain": "contoso.onmicrosoft.com",
+    "samlMetadataUrl": "https://graph.microsoft.com/2h5hjaj542de/app",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "tags": [],
     "tokenEncryptionKeyId": null,

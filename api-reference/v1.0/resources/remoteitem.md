@@ -1,28 +1,27 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: RemoteItem
+title: remoteItem
 ms.localizationpriority: medium
 description: remoteItem 资源指示 driveItem 引用存在于其他驱动器中的项。
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 4338b6c6f4a4191b7d073b834030af6a7fad5202
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2c9a71820f0862c827a62e827899de483fedbb0f
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59006940"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034437"
 ---
-# <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
+# <a name="remoteitem-resource-type"></a>remoteItem 资源类型
 
 命名空间：microsoft.graph
 
 **remoteItem** 资源指示 [**driveItem**](driveitem.md) 引用存在于其他驱动器中的项。
 该资源提供源驱动器和目标项的唯一 ID。
 
-具有非 NULL **remoteItem** facet 的 [**DriveItems**](driveitem.md) 是共享、添加到用户的 OneDrive 的资源，或从项（例如搜索结果）的 hetrogenous 集合返回的项中的资源。
+具有非 null **remoteItem** facet 的 [**driveItems**](driveitem.md) 是共享、添加到用户OneDrive的资源，或者是从 (的项的异质集合（如搜索结果) ）返回的项上返回的资源。
 
-**注意：** 与同一驱动器中的文件夹不同，移动到远程项的 **driveItem** 可更改其 `id` 值。
+>**注意：** 与同一驱动器中的文件夹不同，移动到远程项的 **driveItem** 可更改其 `id` 值。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -67,14 +66,14 @@ ms.locfileid: "59006940"
 | image                | [Image](image.md)                   | 图像元数据（如果此项是一个图像）。只读。                                                                                               |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                            |
 | lastModifiedDateTime | Timestamp                           | 上次修改项目的日期和时间。只读。                                                                                                              |
-| name                 | String                              | 可选。远程项的 Filename。只读。                                                                                                                 |
+| name                 | 字符串                              | 可选。远程项的 Filename。只读。                                                                                                                 |
 | 包              | [包](package.md)               | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。 |
 | parentReference      | [ItemReference](itemreference.md)   | 远程项的父级的属性。只读。                                                                                                           |
 | shared               | [shared](shared.md)                 | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | 为 OneDrive for Business 和 SharePoint 中的项之间的互操作性提供了完整的项标识符集。只读。                                          |
 | size                 | Int64                               | 远程项的大小。只读。                                                                                                                               |
 | specialFolder        | [specialFolder][]                   | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。                                                                     |
-| video                | [Video](video.md)                   | 视频元数据（如果此项是一个视频）。只读。                                                                                                    |
+| video                | [视频](video.md)                   | 视频元数据（如果此项是一个视频）。只读。                                                                                                    |
 | WebDavUrl            | Url                                 | 项的可兼容 DAV 的 URL。                                                                                                                                  |
 | WebUrl               | Url                                 | 在浏览器中显示此资源的 URL。只读。                                                                                                         |
 

@@ -3,14 +3,14 @@ title: 操作资源类型
 description: 长时间运行的操作的状态。
 ms.localizationpriority: medium
 author: billbliss
-ms.prod: ''
+ms.prod: teamwork
 doc_type: resourcePageType
-ms.openlocfilehash: fddecc3226904acd5b871212acf7df6583b844e3
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: e43d86c5c53ce95855bdb0ccd42c3a43049073ca
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860402"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034528"
 ---
 # <a name="operation-resource-type"></a>操作资源类型
 
@@ -21,9 +21,9 @@ ms.locfileid: "61860402"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|createdDateTime| DateTimeOffset |操作开始时间。|
+|createdDateTime| DateTimeOffset |操作的开始时间。|
 |lastActionDateTime| DateTimeOffset |操作的最后一个操作的时间。|
-|状态|operationStatus|操作的当前状态 `notStarted` ：、 `running` `completed``failed` |
+|status|operationStatus|操作的当前状态： `notStarted`， ， `running``completed``failed` |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

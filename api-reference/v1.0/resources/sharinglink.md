@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: SharingLink
+title: sharingLink 资源类型
 ms.localizationpriority: medium
-description: SharingLink 资源将与链接相关的数据项分组到一个单一结构。
-ms.prod: ''
+description: sharingLink 资源将链接相关的数据项分组到单个结构中。
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 5333d397af2627537017de1f90e193e6442fcac5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 95994292e4925e577c5ffe3dee4edb88fdeaf5a6
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032214"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034395"
 ---
-# <a name="sharinglink-resource-type"></a>SharingLink 资源类型
+# <a name="sharinglink-resource-type"></a>sharingLink 资源类型
 
 命名空间：microsoft.graph
 
-**SharingLink** 资源将与链接相关的数据项分组到一个单一结构。
+将链接相关的数据项分组到单个结构中。
 
-如果 [**权限**](permission.md) 资源有一个非 NULL **sharingLink** facet，则该权限表示共享链接（而不是授予给用户或组的权限）。
+如果 [**权限**](permission.md) 资源具有非 null **sharingLink** 方面，则权限表示共享链接 (而不是授予) 人员或组的权限。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -49,7 +48,7 @@ ms.locfileid: "59032214"
 | application | [Identity][]  | 链接所关联的应用。
 | type        | String        | 创建的链接类型。
 | scope       | String        | 由该权限表示的链接范围。值 `anonymous` 表示该链接对任何人均可用，`organization` 表示该链接仅可由登录到同一个租户的用户使用。
-| preventsDownload | Boolean       | 如果为 true，则用户只能使用此链接来查看 Web 上的项目，并且不能使用它下载项目的内容。 仅适用于 OneDrive for Business 和 SharePoint。
+| preventsDownload | 布尔值       | 如果为 true，则用户只能使用此链接来查看 Web 上的项，并且无法使用它来下载项目的内容。 仅适用于OneDrive for Business和SharePoint。
 | webHtml     | String        | 对于 `embed` 链接，此属性包含在网页上嵌入项的 `<iframe>` 元素的 HTML 代码。
 | WebUrl      | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
 
