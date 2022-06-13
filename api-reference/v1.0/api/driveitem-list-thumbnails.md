@@ -6,16 +6,18 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 检索 DriveItem 资源的 ThumbnailSet 资源集合。
 doc_type: apiPageType
-ms.openlocfilehash: 3ac4c607ec2231767248f109a110add506ea4e0e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4e2d37391e18928d5a343e5072628834eaa93981
+ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140864"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "66041054"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
 命名空间：microsoft.graph
+
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 检索 [DriveItem](../resources/driveitem.md) 资源的 [ThumbnailSet](../resources/thumbnailset.md) 资源集合。
 
@@ -55,9 +57,9 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$select`[OData 查询参数](/graph/query-parameters)自定义响应。
+此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。
 
-此外，此方法还支持通过追加查询参数来检索包含原始方向 EXIF 值且没有应用旋转的 `originalOrientation=true` 缩略图。
+此外，此方法支持通过追加 `originalOrientation=true` 查询参数来检索具有原始方向 EXIF 值且不应用旋转的缩略图。
 目前仅 OneDrive 个人版支持此操作。
 
 ## <a name="response"></a>响应
@@ -157,7 +159,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | 引用的项目的唯一标识符。                                           |
 | **thumb-id** | number | 缩略图的索引，通常介于 0 到 4 之间。 如果没有自定义缩略图，索引为 0。 |
-| **size**     | string | 请求获取的缩略图的尺寸。 可取值为下面列出的标准大小之一或自定义大小。 |
+| **size**     | string | 请求获取的缩略图尺寸。可取值为下面列出的标准尺寸之一或自定义尺寸。 |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -215,7 +217,7 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-缩略图 URL 具有缓存安全性。 如果在项发生更改后需要生成新的缩略图，URL 将会更改。
+缩略图的 URL 是安全缓存的。如果项目发生更改而需要生成新的缩略图，则 URL 将会更改。
 
 
 ## <a name="getting-thumbnails-while-listing-driveitems"></a>获取缩略图的同时列出 DriveItem

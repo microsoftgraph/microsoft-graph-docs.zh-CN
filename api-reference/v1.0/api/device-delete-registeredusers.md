@@ -1,22 +1,22 @@
 ---
 title: 删除 registeredUsers
-description: 删除作为设备的注册用户的用户。
-localization_priority: Normal
+description: 将用户删除为设备的已注册用户。
+ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3173b57739bc3c9021c3147b74f0183a5bc667f0
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 0d675eaf7446d726da0e3af415070ebbfc2de618
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531297"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "66040900"
 ---
 # <a name="delete-registereduser"></a>删除 registeredUser
 
 命名空间：microsoft.graph
 
-删除作为设备的注册用户的用户。
+将用户删除为设备的已注册用户。
 
 ## <a name="permissions"></a>权限
 

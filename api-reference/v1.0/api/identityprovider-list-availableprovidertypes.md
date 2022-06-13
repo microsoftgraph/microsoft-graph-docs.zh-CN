@@ -1,25 +1,25 @@
 ---
 title: 列出 availableProviderTypes
-description: 检索目录中所有可用的标识提供程序类型。
+description: 检索目录中所有可用的标识提供者类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: b4a3c7205d73e0c8c880787ccfdac864ac26ed1d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c58f1bc72dff5c9c60787e1f71d7e5f1649cdfaa
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029593"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "66041005"
 ---
-# <a name="list-availableprovidertypes-deprecated"></a>列出已弃 (的 availableProviderTypes) 
+# <a name="list-availableprovidertypes-deprecated"></a>列出已弃用的 availableProviderTypes () 
 命名空间：microsoft.graph
 
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-检索目录中可用的所有标识提供程序类型。
+检索目录中可用的所有标识提供者类型。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "61029593"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识提供程序管理员
+* 外部标识提供者管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -89,8 +89,12 @@ GET https://graph.microsoft.com/v1.0/identityProviders/availableProviderTypes
 [!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
