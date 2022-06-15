@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0acd361794dd3e6fde6b28c63a51f63e780283ed
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 92c4ff66862c4cb36630a58cacea89f3a1aec5a5
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65325932"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098825"
 ---
 ```go
 
@@ -33,13 +33,16 @@ theme := "blue"
 sharedShift.SetTheme(&theme)
 sharedShift.SetActivities( []ShiftActivity {
     msgraphsdk.NewShiftActivity(),
-    SetAdditionalData(map[string]interface{}{
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:15:00Z",
-        "code": "",
-        "displayName": "Lunch",
-    }
+isPaid := true
+    SetIsPaid(&isPaid)
+startDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
+    SetStartDateTime(&startDateTime)
+endDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:15:00Z")
+    SetEndDateTime(&endDateTime)
+code := ""
+    SetCode(&code)
+displayName := "Lunch"
+    SetDisplayName(&displayName)
 }
 draftShift := msgraphsdk.NewShiftItem()
 requestBody.SetDraftShift(draftShift)
@@ -55,13 +58,16 @@ theme := "blue"
 draftShift.SetTheme(&theme)
 draftShift.SetActivities( []ShiftActivity {
     msgraphsdk.NewShiftActivity(),
-    SetAdditionalData(map[string]interface{}{
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:30:00Z",
-        "code": "",
-        "displayName": "Lunch",
-    }
+isPaid := true
+    SetIsPaid(&isPaid)
+startDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
+    SetStartDateTime(&startDateTime)
+endDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:30:00Z")
+    SetEndDateTime(&endDateTime)
+code := ""
+    SetCode(&code)
+displayName := "Lunch"
+    SetDisplayName(&displayName)
 }
 teamId := "team-id"
 result, err := graphClient.TeamsById(&teamId).Schedule().Shifts().Post(requestBody)

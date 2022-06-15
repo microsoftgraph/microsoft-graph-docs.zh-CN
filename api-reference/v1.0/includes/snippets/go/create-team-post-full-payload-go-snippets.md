@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0d7071b0746b57cfd4bbc84d8f6d438c8cd7f339
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 3895919dbe9362bdab576ad32a16dfcc5a51affb
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61086087"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098714"
 ---
 ```go
 
@@ -21,30 +21,55 @@ description := "This is a sample engineering team, used to showcase the range of
 requestBody.SetDescription(&description)
 requestBody.SetChannels( []Channel {
     msgraphsdk.NewChannel(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Announcements 📢",
-        "isFavoriteByDefault": true,
-        "description": "This is a sample announcements channel that is favorited by default. Use this channel to make important team, product, and service announcements.",
-    }
+displayName := "Announcements 📢"
+    SetDisplayName(&displayName)
+isFavoriteByDefault := true
+    SetIsFavoriteByDefault(&isFavoriteByDefault)
+description := "This is a sample announcements channel that is favorited by default. Use this channel to make important team, product, and service announcements."
+    SetDescription(&description)
     msgraphsdk.NewChannel(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Training 🏋️",
-        "isFavoriteByDefault": true,
-        "description": "This is a sample training channel, that is favorited by default, and contains an example of pinned website and YouTube tabs.",
-        "tabs":  []Object {
+displayName := "Training 🏋️"
+    SetDisplayName(&displayName)
+isFavoriteByDefault := true
+    SetIsFavoriteByDefault(&isFavoriteByDefault)
+description := "This is a sample training channel, that is favorited by default, and contains an example of pinned website and YouTube tabs."
+    SetDescription(&description)
+    SetTabs( []TeamsTab {
+        msgraphsdk.NewTeamsTab(),
+displayName := "A Pinned Website"
+        SetDisplayName(&displayName)
+configuration := msgraphsdk.NewTeamsTabConfiguration()
+        SetConfiguration(configuration)
+contentUrl := "https://docs.microsoft.com/microsoftteams/microsoft-teams"
+        configuration.SetContentUrl(&contentUrl)
+        SetAdditionalData(map[string]interface{}{
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
+        }
+        msgraphsdk.NewTeamsTab(),
+displayName := "A Pinned YouTube Video"
+        SetDisplayName(&displayName)
+configuration := msgraphsdk.NewTeamsTabConfiguration()
+        SetConfiguration(configuration)
+contentUrl := "https://tabs.teams.microsoft.com/Youtube/Home/YoutubeTab?videoId=X8krAMdGvCQ"
+        configuration.SetContentUrl(&contentUrl)
+websiteUrl := "https://www.youtube.com/watch?v=X8krAMdGvCQ"
+        configuration.SetWebsiteUrl(&websiteUrl)
+        SetAdditionalData(map[string]interface{}{
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')",
         }
     }
     msgraphsdk.NewChannel(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Planning 📅 ",
-        "description": "This is a sample of a channel that is not favorited by default, these channels will appear in the more channels overflow menu.",
-        "isFavoriteByDefault": false,
-    }
+displayName := "Planning 📅 "
+    SetDisplayName(&displayName)
+description := "This is a sample of a channel that is not favorited by default, these channels will appear in the more channels overflow menu."
+    SetDescription(&description)
+isFavoriteByDefault := false
+    SetIsFavoriteByDefault(&isFavoriteByDefault)
     msgraphsdk.NewChannel(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Issues and Feedback 🐞",
-        "description": "This is a sample of a channel that is not favorited by default, these channels will appear in the more channels overflow menu.",
-    }
+displayName := "Issues and Feedback 🐞"
+    SetDisplayName(&displayName)
+description := "This is a sample of a channel that is not favorited by default, these channels will appear in the more channels overflow menu."
+    SetDescription(&description)
 }
 memberSettings := msgraphsdk.NewTeamMemberSettings()
 requestBody.SetMemberSettings(memberSettings)
@@ -99,10 +124,7 @@ requestBody.SetInstalledApps( []TeamsAppInstallation {
 requestBody.SetAdditionalData(map[string]interface{}{
     "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
 }
-options := &msgraphsdk.TeamsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Teams().Post(options)
+result, err := graphClient.Teams().Post(requestBody)
 
 
 ```

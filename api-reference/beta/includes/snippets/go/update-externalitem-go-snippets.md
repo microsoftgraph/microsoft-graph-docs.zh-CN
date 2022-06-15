@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c13cd8fac916f518f5236a2443f8551c8ab4e5b8
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: a7b10a3e5eb98a04cbe497a55b3418d93b6f3997
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326266"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098654"
 ---
 ```go
 
@@ -15,11 +15,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewExternalItem()
 requestBody.SetAcl( []Acl {
     msgraphsdk.NewAcl(),
-    SetAdditionalData(map[string]interface{}{
-        "type": "everyone",
-        "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-        "accessType": "grant",
-    }
+type := "everyone"
+    SetType(&type)
+value := "67a141d8-cf4e-4528-ba07-bed21bfacd2d"
+    SetValue(&value)
+accessType := "grant"
+    SetAccessType(&accessType)
 }
 externalConnectionId := "externalConnection-id"
 externalItemId := "externalItem-id"

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c0f022afd58dfaf6ce5925470eb7f34537e4dd4e
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 994942650f1ba0e02c608d23629e7afc6be4eb86
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327168"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098813"
 ---
 ```go
 
@@ -19,43 +19,46 @@ applicationRestrictions := msgraphsdk.NewAppManagementConfiguration()
 requestBody.SetApplicationRestrictions(applicationRestrictions)
 applicationRestrictions.SetPasswordCredentials( []PasswordCredentialConfiguration {
     msgraphsdk.NewPasswordCredentialConfiguration(),
-    SetAdditionalData(map[string]interface{}{
-        "restrictionType": "passwordAddition",
-        "maxLifetime": nil,
-        "restrictForAppsCreatedAfterDateTime": "2021-01-01T10:37:00Z",
-    }
+restrictionType := "passwordAddition"
+    SetRestrictionType(&restrictionType)
+    SetMaxLifetime(nil)
+restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2021-01-01T10:37:00Z")
+    SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
     msgraphsdk.NewPasswordCredentialConfiguration(),
-    SetAdditionalData(map[string]interface{}{
-        "restrictionType": "passwordLifetime",
-        "maxLifetime": "P4DT12H30M5S",
-        "restrictForAppsCreatedAfterDateTime": "2017-01-01T10:37:00Z",
-    }
+restrictionType := "passwordLifetime"
+    SetRestrictionType(&restrictionType)
+maxLifetime := "P4DT12H30M5S"
+    SetMaxLifetime(&maxLifetime)
+restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2017-01-01T10:37:00Z")
+    SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
     msgraphsdk.NewPasswordCredentialConfiguration(),
-    SetAdditionalData(map[string]interface{}{
-        "restrictionType": "symmetricKeyAddition",
-        "maxLifetime": nil,
-        "restrictForAppsCreatedAfterDateTime": "2021-01-01T10:37:00Z",
-    }
+restrictionType := "symmetricKeyAddition"
+    SetRestrictionType(&restrictionType)
+    SetMaxLifetime(nil)
+restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2021-01-01T10:37:00Z")
+    SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
     msgraphsdk.NewPasswordCredentialConfiguration(),
-    SetAdditionalData(map[string]interface{}{
-        "restrictionType": "customPasswordAddition",
-        "maxLifetime": nil,
-        "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z",
-    }
+restrictionType := "customPasswordAddition"
+    SetRestrictionType(&restrictionType)
+    SetMaxLifetime(nil)
+restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
+    SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
     msgraphsdk.NewPasswordCredentialConfiguration(),
-    SetAdditionalData(map[string]interface{}{
-        "restrictionType": "symmetricKeyLifetime",
-        "maxLifetime": "P40D",
-        "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z",
-    }
+restrictionType := "symmetricKeyLifetime"
+    SetRestrictionType(&restrictionType)
+maxLifetime := "P40D"
+    SetMaxLifetime(&maxLifetime)
+restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
+    SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
 }
 applicationRestrictions.SetKeyCredentials( []KeyCredentialConfiguration {
     msgraphsdk.NewKeyCredentialConfiguration(),
-    SetAdditionalData(map[string]interface{}{
-        "restrictionType": "asymmetricKeyLifetime",
-        "maxLifetime": "P30D",
-        "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z",
-    }
+restrictionType := "asymmetricKeyLifetime"
+    SetRestrictionType(&restrictionType)
+maxLifetime := "P30D"
+    SetMaxLifetime(&maxLifetime)
+restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
+    SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
 }
 graphClient.Policies().DefaultAppManagementPolicy().Patch(requestBody)
 

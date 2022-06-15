@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a3835e83f74db1f170f00d97f2e281a898653ae8
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: f063dfeedc194b07633d0b3c8de12f102eecbeeb
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65325876"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098758"
 ---
 ```go
 
@@ -23,20 +23,22 @@ content := "The group represents Washington."
 body.SetContent(&content)
 requestBody.SetToRecipients( []Recipient {
     msgraphsdk.NewRecipient(),
-    SetAdditionalData(map[string]interface{}{
-    }
+emailAddress := msgraphsdk.NewEmailAddress()
+    SetEmailAddress(emailAddress)
+address := "AlexW@contoso.OnMicrosoft.com"
+    emailAddress.SetAddress(&address)
 }
 requestBody.SetInternetMessageHeaders( []InternetMessageHeader {
     msgraphsdk.NewInternetMessageHeader(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "x-custom-header-group-name",
-        "value": "Washington",
-    }
+name := "x-custom-header-group-name"
+    SetName(&name)
+value := "Washington"
+    SetValue(&value)
     msgraphsdk.NewInternetMessageHeader(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "x-custom-header-group-id",
-        "value": "WA001",
-    }
+name := "x-custom-header-group-id"
+    SetName(&name)
+value := "WA001"
+    SetValue(&value)
 }
 result, err := graphClient.Me().Messages().Post(requestBody)
 

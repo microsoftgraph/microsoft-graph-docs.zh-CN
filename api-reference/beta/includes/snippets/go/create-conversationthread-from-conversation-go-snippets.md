@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f1eedf8349b6e74fb9c74dbbcbeeac7773e46afb
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: d94ff07c011ac58f2ce5affd2b9680d35a320d72
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327553"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098788"
 ---
 ```go
 
@@ -17,8 +17,12 @@ topic := "Take your wellness days and rest"
 requestBody.SetTopic(&topic)
 requestBody.SetPosts( []Post {
     msgraphsdk.NewPost(),
-    SetAdditionalData(map[string]interface{}{
-    }
+body := msgraphsdk.NewItemBody()
+    SetBody(body)
+contentType := "html"
+    body.SetContentType(&contentType)
+content := "Waiting for the summer holidays."
+    body.SetContent(&content)
 }
 groupId := "group-id"
 conversationId := "conversation-id"

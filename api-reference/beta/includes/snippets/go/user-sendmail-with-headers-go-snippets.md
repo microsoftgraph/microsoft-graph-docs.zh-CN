@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8d6ce3e331bbea71f00ef088fdd03b9037261861
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: cf1af6ff2d1ed5087c99ea37ec24a5296d00cdbd
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327104"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098832"
 ---
 ```go
 
@@ -25,20 +25,22 @@ content := "The group represents Nevada."
 body.SetContent(&content)
 message.SetToRecipients( []Recipient {
     msgraphsdk.NewRecipient(),
-    SetAdditionalData(map[string]interface{}{
-    }
+emailAddress := msgraphsdk.NewEmailAddress()
+    SetEmailAddress(emailAddress)
+address := "AlexW@contoso.OnMicrosoft.com"
+    emailAddress.SetAddress(&address)
 }
 message.SetInternetMessageHeaders( []InternetMessageHeader {
     msgraphsdk.NewInternetMessageHeader(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "x-custom-header-group-name",
-        "value": "Nevada",
-    }
+name := "x-custom-header-group-name"
+    SetName(&name)
+value := "Nevada"
+    SetValue(&value)
     msgraphsdk.NewInternetMessageHeader(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "x-custom-header-group-id",
-        "value": "NV001",
-    }
+name := "x-custom-header-group-id"
+    SetName(&name)
+value := "NV001"
+    SetValue(&value)
 }
 graphClient.Me().SendMail().Post(requestBody)
 

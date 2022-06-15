@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 79c112d22ab8e04e6b0a4d322dc2322f4d789cad
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 2341a875f59a730fc3a943fa5dfc05109ca51a18
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328584"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098671"
 ---
 ```go
 
@@ -33,10 +33,10 @@ recipient.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetTemplateParameters( []KeyValuePair {
     msgraphsdk.NewKeyValuePair(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "pendingRequestCount",
-        "value": "5",
-    }
+name := "pendingRequestCount"
+    SetName(&name)
+value := "5"
+    SetValue(&value)
 }
 teamId := "team-id"
 graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(requestBody)

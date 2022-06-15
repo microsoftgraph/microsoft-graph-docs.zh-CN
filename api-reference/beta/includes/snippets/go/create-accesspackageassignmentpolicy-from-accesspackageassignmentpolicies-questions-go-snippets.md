@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d69084a7d9384b2612aa6c161df8f6120b5f943b
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 92424f90f120dd0d100ed40ebe8bcf3073368d12
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328948"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098677"
 ---
 ```go
 
@@ -42,27 +42,67 @@ approvalMode := "SingleStage"
 requestApprovalSettings.SetApprovalMode(&approvalMode)
 requestApprovalSettings.SetApprovalStages( []ApprovalStage {
     msgraphsdk.NewApprovalStage(),
-    SetAdditionalData(map[string]interface{}{
-        "approvalStageTimeOutInDays": ,
-        "isApproverJustificationRequired": true,
-        "isEscalationEnabled": false,
-        "escalationTimeInMinutes": ,
-        "primaryApprovers":  []Object {
+approvalStageTimeOutInDays := int32(14)
+    SetApprovalStageTimeOutInDays(&approvalStageTimeOutInDays)
+isApproverJustificationRequired := true
+    SetIsApproverJustificationRequired(&isApproverJustificationRequired)
+isEscalationEnabled := false
+    SetIsEscalationEnabled(&isEscalationEnabled)
+escalationTimeInMinutes := int32(11520)
+    SetEscalationTimeInMinutes(&escalationTimeInMinutes)
+    SetPrimaryApprovers( []UserSet {
+        msgraphsdk.NewUserSet(),
+isBackup := true
+        SetIsBackup(&isBackup)
+        SetAdditionalData(map[string]interface{}{
+            "@odata.type": "#microsoft.graph.groupMembers",
+            "id": "d2dcb9a1-a445-42ee-83a8-476522ed6cbf",
+            "description": "group for users from connected organizations which have no external sponsor",
+        }
+        msgraphsdk.NewUserSet(),
+isBackup := false
+        SetIsBackup(&isBackup)
+        SetAdditionalData(map[string]interface{}{
+            "@odata.type": "#microsoft.graph.externalSponsors",
         }
     }
 }
 requestBody.SetQuestions( []AccessPackageQuestion {
     msgraphsdk.NewAccessPackageQuestion(),
+isRequired := false
+    SetIsRequired(&isRequired)
+text := msgraphsdk.NewAccessPackageLocalizedContent()
+    SetText(text)
+defaultText := "what state are you from?"
+    text.SetDefaultText(&defaultText)
+    text.SetLocalizedTexts( []AccessPackageLocalizedText {
+        msgraphsdk.NewAccessPackageLocalizedText(),
+text := "¿De qué estado eres?"
+        SetText(&text)
+languageCode := "es"
+        SetLanguageCode(&languageCode)
+    }
     SetAdditionalData(map[string]interface{}{
-        "isRequired": false,
         "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
         "choices":  []Object {
         }
         "allowsMultipleSelection": false,
     }
     msgraphsdk.NewAccessPackageQuestion(),
+isRequired := false
+    SetIsRequired(&isRequired)
+text := msgraphsdk.NewAccessPackageLocalizedContent()
+    SetText(text)
+defaultText := "Who is your manager?"
+    text.SetDefaultText(&defaultText)
+    text.SetLocalizedTexts( []AccessPackageLocalizedText {
+        msgraphsdk.NewAccessPackageLocalizedText(),
+text := "por qué necesita acceso a este paquete"
+        SetText(&text)
+languageCode := "es"
+        SetLanguageCode(&languageCode)
+    }
     SetAdditionalData(map[string]interface{}{
-        "isRequired": false,
         "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
         "isSingleLineQuestion": false,
     }

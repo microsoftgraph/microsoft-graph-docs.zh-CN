@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a1ede66510233dbb758a043e7f9058750d3e74dc
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 17c1cc350c7e731f9a02314ad10f2e9ea85734ff
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65329125"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098826"
 ---
 ```go
 
@@ -15,10 +15,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewParametersRequestBody()
 requestBody.SetParameters( []SynchronizationJobApplicationParameters {
     msgraphsdk.NewSynchronizationJobApplicationParameters(),
-    SetAdditionalData(map[string]interface{}{
-        "ruleId": "6c409270-f78a-4bc6-af23-7cf3ab6482fe",
-        "subjects":  []Object {
-        }
+ruleId := "6c409270-f78a-4bc6-af23-7cf3ab6482fe"
+    SetRuleId(&ruleId)
+    SetSubjects( []SynchronizationJobSubject {
+        msgraphsdk.NewSynchronizationJobSubject(),
+objectId := "CN=AdeleV,CN=Users,DC=corp,DC=chicago,DC=com"
+        SetObjectId(&objectId)
+objectTypeName := "user"
+        SetObjectTypeName(&objectTypeName)
     }
 }
 servicePrincipalId := "servicePrincipal-id"

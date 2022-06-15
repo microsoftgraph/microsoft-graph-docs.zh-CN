@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6b18d39c160ebaefa8b8bf7556831e79af76a0f5
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: ff79a95a93d032043f6e5cc08a568946a26f3526
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327067"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098780"
 ---
 ```go
 
@@ -17,8 +17,15 @@ topic := "New Conversation Thread Topic"
 requestBody.SetTopic(&topic)
 requestBody.SetPosts( []Post {
     msgraphsdk.NewPost(),
-    SetAdditionalData(map[string]interface{}{
-        "newParticipants":  []Object {
+body := msgraphsdk.NewItemBody()
+    SetBody(body)
+contentType := "html"
+    body.SetContentType(&contentType)
+content := "this is body content"
+    body.SetContent(&content)
+    SetNewParticipants( []Recipient {
+        msgraphsdk.NewRecipient(),
+        SetAdditionalData(map[string]interface{}{
         }
     }
 }

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4c87e8a422c56b07e28cb1330e0931073eb5115b
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 3d6b0359f09eb442f28452533ded149def066280
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328991"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098810"
 ---
 ```go
 
@@ -17,13 +17,11 @@ displayName := "Finance"
 requestBody.SetDisplayName(&displayName)
 requestBody.SetMembers( []TeamworkTagMember {
     msgraphsdk.NewTeamworkTagMember(),
-    SetAdditionalData(map[string]interface{}{
-        "userId": "92f6952f-61ca-4a94-8910-508a240bc167",
-    }
+userId := "92f6952f-61ca-4a94-8910-508a240bc167"
+    SetUserId(&userId)
     msgraphsdk.NewTeamworkTagMember(),
-    SetAdditionalData(map[string]interface{}{
-        "userId": "085d800c-b86b-4bfc-a857-9371ad1caf29",
-    }
+userId := "085d800c-b86b-4bfc-a857-9371ad1caf29"
+    SetUserId(&userId)
 }
 teamId := "team-id"
 result, err := graphClient.TeamsById(&teamId).Tags().Post(requestBody)

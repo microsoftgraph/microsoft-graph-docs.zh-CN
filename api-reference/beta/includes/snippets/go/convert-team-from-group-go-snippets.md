@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b791e9908ed8d84c4eaa27252f980df7ffb6f978
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 1583293acb466fe9eea00767b626cb4a9c6bb1c9
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61092871"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098768"
 ---
 ```go
 
@@ -15,15 +15,15 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTeam()
 requestBody.SetChannels( []Channel {
     msgraphsdk.NewChannel(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Class Announcements 📢",
-        "isFavoriteByDefault": true,
-    }
+displayName := "Class Announcements 📢"
+    SetDisplayName(&displayName)
+isFavoriteByDefault := true
+    SetIsFavoriteByDefault(&isFavoriteByDefault)
     msgraphsdk.NewChannel(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Homework 🏋️",
-        "isFavoriteByDefault": true,
-    }
+displayName := "Homework 🏋️"
+    SetDisplayName(&displayName)
+isFavoriteByDefault := true
+    SetIsFavoriteByDefault(&isFavoriteByDefault)
 }
 memberSettings := msgraphsdk.NewTeamMemberSettings()
 requestBody.SetMemberSettings(memberSettings)
@@ -51,10 +51,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
     "group@odata.bind": "https://graph.microsoft.com/beta/groups('dbd8de4f-5d47-48da-87f1-594bed003375')",
 }
-options := &msgraphsdk.TeamsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Teams().Post(options)
+result, err := graphClient.Teams().Post(requestBody)
 
 
 ```

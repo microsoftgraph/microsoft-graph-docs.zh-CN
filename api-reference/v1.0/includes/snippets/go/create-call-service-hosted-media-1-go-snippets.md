@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 81b954315fe475dfb6c7c712c335f7f91030a026
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 29b149e5c8c4564240a99db08e259ec7496af672
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327599"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098738"
 ---
 ```go
 
@@ -17,6 +17,20 @@ callbackUri := "https://bot.contoso.com/callback"
 requestBody.SetCallbackUri(&callbackUri)
 requestBody.SetTargets( []InvitationParticipantInfo {
     msgraphsdk.NewInvitationParticipantInfo(),
+identity := msgraphsdk.NewIdentitySet()
+    SetIdentity(identity)
+user := msgraphsdk.NewIdentity()
+    identity.SetUser(user)
+displayName := "John"
+    user.SetDisplayName(&displayName)
+id := "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+    user.SetId(&id)
+    user.SetAdditionalData(map[string]interface{}{
+        "@odata.type": "#microsoft.graph.identity",
+    }
+    identity.SetAdditionalData(map[string]interface{}{
+        "@odata.type": "#microsoft.graph.identitySet",
+    }
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.invitationParticipantInfo",
     }

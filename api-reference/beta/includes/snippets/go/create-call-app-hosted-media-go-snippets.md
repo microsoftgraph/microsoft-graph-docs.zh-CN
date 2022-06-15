@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a254aebba479d1c7c01e01764956021691f7db1e
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: a0b9f80acd5e4513f5aa750f68b1273f2b4ff2e8
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326305"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098657"
 ---
 ```go
 
@@ -38,6 +38,20 @@ source.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetTargets( []InvitationParticipantInfo {
     msgraphsdk.NewInvitationParticipantInfo(),
+identity := msgraphsdk.NewIdentitySet()
+    SetIdentity(identity)
+user := msgraphsdk.NewIdentity()
+    identity.SetUser(user)
+displayName := "John"
+    user.SetDisplayName(&displayName)
+id := "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+    user.SetId(&id)
+    user.SetAdditionalData(map[string]interface{}{
+        "@odata.type": "#microsoft.graph.identity",
+    }
+    identity.SetAdditionalData(map[string]interface{}{
+        "@odata.type": "#microsoft.graph.identitySet",
+    }
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.invitationParticipantInfo",
     }

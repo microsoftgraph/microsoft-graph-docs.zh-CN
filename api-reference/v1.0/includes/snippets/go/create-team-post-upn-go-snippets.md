@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3662e8de12e45b1e83142080ded8de2c19007547
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 91ef95c9880bc013bebfea461d250647c1f0508b
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093831"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098711"
 ---
 ```go
 
@@ -19,21 +19,18 @@ description := "My Sample Team’s Description"
 requestBody.SetDescription(&description)
 requestBody.SetMembers( []ConversationMember {
     msgraphsdk.NewConversationMember(),
+    SetRoles( []String {
+        "owner",
+    }
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
-        "roles":  []String {
-            "owner",
-        }
         "user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')",
     }
 }
 requestBody.SetAdditionalData(map[string]interface{}{
     "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
 }
-options := &msgraphsdk.TeamsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Teams().Post(options)
+result, err := graphClient.Teams().Post(requestBody)
 
 
 ```

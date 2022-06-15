@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dc494a86393f9c8fafec4718f19da09ea1c7faff
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 27aa64b1fec2f3536bb3f8e7353848b949577993
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326791"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098796"
 ---
 ```go
 
@@ -35,10 +35,21 @@ originSystem := "AadApplication"
 accessPackageResource.SetOriginSystem(&originSystem)
 accessPackageResource.SetAttributes( []AccessPackageResourceAttribute {
     msgraphsdk.NewAccessPackageResourceAttribute(),
-    SetAdditionalData(map[string]interface{}{
-        "attributeName": "extension_2b676109c7c74ae2b41549205f1947ed_personalTitle",
-        "isEditable": true,
-        "isPersistedOnAssignmentRemoval": true,
+attributeName := "extension_2b676109c7c74ae2b41549205f1947ed_personalTitle"
+    SetAttributeName(&attributeName)
+isEditable := true
+    SetIsEditable(&isEditable)
+isPersistedOnAssignmentRemoval := true
+    SetIsPersistedOnAssignmentRemoval(&isPersistedOnAssignmentRemoval)
+attributeSource := msgraphsdk.NewAccessPackageResourceAttributeSource()
+    SetAttributeSource(attributeSource)
+    attributeSource.SetAdditionalData(map[string]interface{}{
+        "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
+    }
+attributeDestination := msgraphsdk.NewAccessPackageResourceAttributeDestination()
+    SetAttributeDestination(attributeDestination)
+    attributeDestination.SetAdditionalData(map[string]interface{}{
+        "@odata.type": "#microsoft.graph.accessPackageUserDirectoryAttributeStore",
     }
 }
 result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)

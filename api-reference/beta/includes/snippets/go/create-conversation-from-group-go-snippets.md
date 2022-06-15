@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3ddd7adf931136b1800a57084d814a2faa9dc3c6
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 186de5fdc62a3b9365c1c3ff6e3796cfddbc67bd
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327981"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098696"
 ---
 ```go
 
@@ -17,8 +17,18 @@ topic := "New head count"
 requestBody.SetTopic(&topic)
 requestBody.SetThreads( []ConversationThread {
     msgraphsdk.NewConversationThread(),
-    SetAdditionalData(map[string]interface{}{
-        "posts":  []Object {
+    SetPosts( []Post {
+        msgraphsdk.NewPost(),
+body := msgraphsdk.NewItemBody()
+        SetBody(body)
+contentType := "html"
+        body.SetContentType(&contentType)
+content := "The confirmation will come by the end of the week."
+        body.SetContent(&content)
+        SetNewParticipants( []Recipient {
+            msgraphsdk.NewRecipient(),
+            SetAdditionalData(map[string]interface{}{
+            }
         }
     }
 }

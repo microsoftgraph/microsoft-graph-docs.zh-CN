@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cf4664dcd2a2154151cce1945226dde37fbca0fe
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: fc34a72f5a931deaafaee1090ffe99fa56b034b8
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326357"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098820"
 ---
 ```go
 
@@ -17,13 +17,21 @@ subject := "Party planning"
 requestBody.SetSubject(&subject)
 requestBody.SetToRecipients( []Recipient {
     msgraphsdk.NewRecipient(),
-    SetAdditionalData(map[string]interface{}{
-    }
+emailAddress := msgraphsdk.NewEmailAddress()
+    SetEmailAddress(emailAddress)
+name := "Samantha Booth"
+    emailAddress.SetName(&name)
+address := "samanthab@contoso.onmicrosoft.com"
+    emailAddress.SetAddress(&address)
 }
 requestBody.SetMentions( []Mention {
     msgraphsdk.NewMention(),
-    SetAdditionalData(map[string]interface{}{
-    }
+mentioned := msgraphsdk.NewEmailAddress()
+    SetMentioned(mentioned)
+name := "Dana Swope"
+    mentioned.SetName(&name)
+address := "danas@contoso.onmicrosoft.com"
+    mentioned.SetAddress(&address)
 }
 result, err := graphClient.Me().Messages().Post(requestBody)
 

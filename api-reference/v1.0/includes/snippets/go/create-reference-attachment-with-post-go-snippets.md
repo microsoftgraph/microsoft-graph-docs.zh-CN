@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 68abcd3e6cc41a2e8eab16c9df027d7636dd3f1d
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: ea39704d6f77aa2f674c219b4a4d58d625100f7e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327390"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098716"
 ---
 ```go
 
@@ -23,9 +23,10 @@ content := "I attached a reference to a file on OneDrive."
 body.SetContent(&content)
 post.SetAttachments( []Attachment {
     msgraphsdk.NewAttachment(),
+name := "Personal pictures"
+    SetName(&name)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.referenceAttachment",
-        "name": "Personal pictures",
         "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
         "providerType": "oneDriveConsumer",
         "permission": "Edit",

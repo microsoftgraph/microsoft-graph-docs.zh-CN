@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ba5f5e56b804cce15984ed0aef57f9d591830527
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 061414a30208135468de5c017a03ebd3d5ea69fc
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328601"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098699"
 ---
 ```go
 
@@ -23,9 +23,10 @@ content := "Which quarter does that file cover? See my attachment."
 body.SetContent(&content)
 post.SetAttachments( []Attachment {
     msgraphsdk.NewAttachment(),
+name := "Another file as attachment"
+    SetName(&name)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.fileAttachment",
-        "name": "Another file as attachment",
         "contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu",
     }
 }

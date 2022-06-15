@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0f5a6d5f02f24124e6263372b8be9a4c01f6f651
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: a7f84c4180c5b9383fd15c769ad91f7f2f4f5066
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65314535"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098663"
 ---
 ```go
 
@@ -31,13 +31,11 @@ description := "Sample description"
 requestBody.SetDescription(&description)
 requestBody.SetReviewers( []AccessReviewReviewer {
     msgraphsdk.NewAccessReviewReviewer(),
-    SetAdditionalData(map[string]interface{}{
-        "id": "f260246a-09b1-4fd5-8d18-daed736071ec",
-    }
+id := "f260246a-09b1-4fd5-8d18-daed736071ec"
+    SetId(&id)
     msgraphsdk.NewAccessReviewReviewer(),
-    SetAdditionalData(map[string]interface{}{
-        "id": "5a4e184c-4ee5-4883-96e9-b371f8da88e3",
-    }
+id := "5a4e184c-4ee5-4883-96e9-b371f8da88e3"
+    SetId(&id)
 }
 settings := msgraphsdk.NewAccessReviewSettings()
 requestBody.SetSettings(settings)

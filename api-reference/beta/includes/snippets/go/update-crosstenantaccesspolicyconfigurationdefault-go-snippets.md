@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 000c70cec09237156fde777d9c095dd5a31a090b
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: ce07a22784e7ad01411af4b773d61645f63ac643
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327470"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098790"
 ---
 ```go
 
@@ -21,10 +21,10 @@ accessType := "blocked"
 usersAndGroups.SetAccessType(&accessType)
 usersAndGroups.SetTargets( []CrossTenantAccessPolicyTarget {
     msgraphsdk.NewCrossTenantAccessPolicyTarget(),
-    SetAdditionalData(map[string]interface{}{
-        "target": "0be493dc-cb56-4a53-936f-9cf64410b8b0",
-        "targetType": "group",
-    }
+target := "0be493dc-cb56-4a53-936f-9cf64410b8b0"
+    SetTarget(&target)
+targetType := "group"
+    SetTargetType(&targetType)
 }
 applications := msgraphsdk.NewCrossTenantAccessPolicyTargetConfiguration()
 b2bCollaborationOutbound.SetApplications(applications)
@@ -32,10 +32,10 @@ accessType := "blocked"
 applications.SetAccessType(&accessType)
 applications.SetTargets( []CrossTenantAccessPolicyTarget {
     msgraphsdk.NewCrossTenantAccessPolicyTarget(),
-    SetAdditionalData(map[string]interface{}{
-        "target": "AllApplications",
-        "targetType": "application",
-    }
+target := "AllApplications"
+    SetTarget(&target)
+targetType := "application"
+    SetTargetType(&targetType)
 }
 graphClient.Policies().CrossTenantAccessPolicy().Default().Patch(requestBody)
 

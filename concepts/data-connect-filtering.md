@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph 数据连接中的用户选择和筛选功能
-description: 介绍了如何使用 Microsoft Graph 数据连接来选择用户以提取其数据，以及筛选返回的数据。
+description: 了解如何使用 Microsoft Graph Data Connect 选择要为其提取数据的用户，并包括筛选器以限制返回的数据。
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: f87810144bd5b7edff28ea33b6a733559ecdc0f5
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: bcdbfe58b628ee0f431a529d8a3372c6c1c9266e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247278"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094024"
 ---
 # <a name="user-selection-and-filtering-capabilities-in-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接中的用户选择和筛选功能
 

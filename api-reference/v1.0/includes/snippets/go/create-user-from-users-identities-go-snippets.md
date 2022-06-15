@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c994f39605817ae8e0966bb319cf4d9dc64dac95
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: a755a1eb21a81683557f2ab170430e39848dd813
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65325874"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098705"
 ---
 ```go
 
@@ -17,23 +17,26 @@ displayName := "John Smith"
 requestBody.SetDisplayName(&displayName)
 requestBody.SetIdentities( []ObjectIdentity {
     msgraphsdk.NewObjectIdentity(),
-    SetAdditionalData(map[string]interface{}{
-        "signInType": "userName",
-        "issuer": "contoso.onmicrosoft.com",
-        "issuerAssignedId": "johnsmith",
-    }
+signInType := "userName"
+    SetSignInType(&signInType)
+issuer := "contoso.onmicrosoft.com"
+    SetIssuer(&issuer)
+issuerAssignedId := "johnsmith"
+    SetIssuerAssignedId(&issuerAssignedId)
     msgraphsdk.NewObjectIdentity(),
-    SetAdditionalData(map[string]interface{}{
-        "signInType": "emailAddress",
-        "issuer": "contoso.onmicrosoft.com",
-        "issuerAssignedId": "jsmith@yahoo.com",
-    }
+signInType := "emailAddress"
+    SetSignInType(&signInType)
+issuer := "contoso.onmicrosoft.com"
+    SetIssuer(&issuer)
+issuerAssignedId := "jsmith@yahoo.com"
+    SetIssuerAssignedId(&issuerAssignedId)
     msgraphsdk.NewObjectIdentity(),
-    SetAdditionalData(map[string]interface{}{
-        "signInType": "federated",
-        "issuer": "facebook.com",
-        "issuerAssignedId": "5eecb0cd",
-    }
+signInType := "federated"
+    SetSignInType(&signInType)
+issuer := "facebook.com"
+    SetIssuer(&issuer)
+issuerAssignedId := "5eecb0cd"
+    SetIssuerAssignedId(&issuerAssignedId)
 }
 passwordProfile := msgraphsdk.NewPasswordProfile()
 requestBody.SetPasswordProfile(passwordProfile)

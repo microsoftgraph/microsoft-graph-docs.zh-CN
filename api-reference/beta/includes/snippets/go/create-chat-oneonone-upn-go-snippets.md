@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 18423dd1c28baf7a885ffb785333623ab06eb474
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 51c2621edb537ec4d670eb65cd9aa2915376f15f
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326469"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098680"
 ---
 ```go
 
@@ -17,19 +17,19 @@ chatType := "oneOnOne"
 requestBody.SetChatType(&chatType)
 requestBody.SetMembers( []ConversationMember {
     msgraphsdk.NewConversationMember(),
+    SetRoles( []String {
+        "owner",
+    }
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
-        "roles":  []String {
-            "owner",
-        }
         "user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')",
     }
     msgraphsdk.NewConversationMember(),
+    SetRoles( []String {
+        "owner",
+    }
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
-        "roles":  []String {
-            "owner",
-        }
         "user@odata.bind": "https://graph.microsoft.com/beta/users('alex@contoso.com')",
     }
 }

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 10a0226d0c2be52e06e0e4f5012ea742564949a0
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: fec6aaee2044680cf7ca80a41130c59fee4a6526
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326761"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098823"
 ---
 ```go
 
@@ -34,10 +34,10 @@ requestBody.SetEmailAddresses( []TypedEmailAddress {
 }
 requestBody.SetPhones( []Phone {
     msgraphsdk.NewPhone(),
-    SetAdditionalData(map[string]interface{}{
-        "number": "+1 732 555 0102",
-        "type": "business",
-    }
+number := "+1 732 555 0102"
+    SetNumber(&number)
+type := "business"
+    SetType(&type)
 }
 result, err := graphClient.Me().Contacts().Post(requestBody)
 

@@ -1,20 +1,20 @@
 ---
 title: Microsoft Graph 教程
-description: Microsoft Graph 教程是分步培训练习，可指导你创建通过 Microsoft Graph 访问数据的基本应用程序。
+description: 使用分步Microsoft Graph教程创建在 30 分钟内通过Microsoft Graph访问数据的基本应用程序。
 author: jasonjoh
 ms.localizationpriority: high
-ms.openlocfilehash: c56ecd381788a450da6732201788e96d364719c9
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: b2c810e437197f5702abebe46c76648315178ed7
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629475"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095032"
 ---
 # <a name="microsoft-graph-tutorials"></a>Microsoft Graph 教程
 
 Microsoft Graph 教程是分步培训练习，可指导你创建通过 Microsoft Graph 访问数据的基本应用程序。 它们的设计意图是可在 30 分钟内完成（包括可选部分则为 45 分钟）。
 
-在这些练习中，你将创建一个具有以下功能的基本命令行应用程序。
+在这些练习中，你将创建一个具有以下功能的基本命令行应用程序：
 
 - 启用用户身份验证
 - 访问用户的配置文件
@@ -25,31 +25,33 @@ Microsoft Graph 教程是分步培训练习，可指导你创建通过 Microsoft
 
 ## <a name="build-your-first-app"></a>构建首个应用
 
+如果要生成第一个应用，请选择语言教程。
+
+如果希望下载已完成的项目，可以从以下位置之一执行此操作：
+
+- **项目的相应 GitHub 存储库**。 注册应用程序和配置示例的说明位于每个存储库中。
+- **[Microsoft Graph 快速入门](https://developer.microsoft.com/graph/quick-start)**。 快速入门可自动注册应用程序，并下载已为用户身份验证配置的已完成项目。 除了 Power Automate，所有教程均可使用快速入门。
+
 | 教程 | GitHub 存储库 |
 |----------|-------------------|
-| [.NET](/tutorials/dotnet) | [microsoftgraph/msgraph-training-dotnet](https://github.com/microsoftgraph/msgraph-training-dotnet) |
-| [转到](/tutorials/go) | [microsoftgraph/msgraph-training-go](https://github.com/microsoftgraph/msgraph-training-go) |
-| [Java](/tutorials/java) | [microsoftgraph/msgraph-training-java](https://github.com/microsoftgraph/msgraph-training-java) |
-| [JavaScript](/tutorials/javascript) | [microsoftgraph/msgraph-training-javascript](https://github.com/microsoftgraph/msgraph-training-javascript) |
-| [PHP](/tutorials/php) | [microsoftgraph/msgraph-training-php](https://github.com/microsoftgraph/msgraph-training-php) |
-| [Power Automate](/tutorials/power-automate) | [microsoftgraph/msgraph-training-powerautomate)](https://github.com/microsoftgraph/msgraph-training-powerautomate) |
-| [PowerShell](/tutorials/powershell) | [microsoftgraph/msgraph-training-powershell](https://github.com/microsoftgraph/msgraph-training-powershell) |
-| [Python](/tutorials/python) | [microsoftgraph/msgraph-training-python](https://github.com/microsoftgraph/msgraph-training-python) |
-| [TypeScript](/tutorials/typescript) | [microsoftgraph/msgraph-training-typescript](https://github.com/microsoftgraph/msgraph-training-typescript) |
+| [.NET](/graph/tutorials/dotnet) | [microsoftgraph/msgraph-training-dotnet-core](https://github.com/microsoftgraph/msgraph-training-dotnet-core) |
+| [转到](/graph/tutorials/go) | [microsoftgraph/msgraph-training-go](https://github.com/microsoftgraph/msgraph-training-go) |
+| [Java](/graph/tutorials/java) | [microsoftgraph/msgraph-training-java](https://github.com/microsoftgraph/msgraph-training-java) |
+| [JavaScript](/graph/tutorials/javascript) | [microsoftgraph/msgraph-training-javascript](https://github.com/microsoftgraph/msgraph-training-javascript) |
+| [PHP](/graph/tutorials/php) | [microsoftgraph/msgraph-training-php](https://github.com/microsoftgraph/msgraph-training-php) |
+| [Power Automate](/graph/tutorials/power-automate) | [microsoftgraph/msgraph-training-powerautomate](https://github.com/microsoftgraph/msgraph-training-powerautomate) |
+| [PowerShell](/graph/tutorials/powershell) | [microsoftgraph/msgraph-training-powershell](https://github.com/microsoftgraph/msgraph-training-powershell) |
+| [Python](/graph/tutorials/python) | [microsoftgraph/msgraph-training-python](https://github.com/microsoftgraph/msgraph-training-python) |
+| [TypeScript](/graph/tutorials/typescript) | [microsoftgraph/msgraph-training-typescript](https://github.com/microsoftgraph/msgraph-training-typescript) |
 
-> [!TIP]
-> 如果希望下载已完成的项目，则可以从以下位置之一下载。
->
-> - [Microsoft Graph 快速入门](https://developer.microsoft.com/graph/quick-start) 可自动注册应用程序，并下载已为用户身份验证配置的已完成项目。 适用于除 Power Automate 以外的所有教程。
-> - 可从其相应的 GitHub 存储库下载已完成的项目。 有关注册应用程序和配置示例的说明位于每个存储库中。
 
 ## <a name="next-steps"></a>后续步骤
 
-完成教程后，可以在 Microsoft Learn 上了解详细信息或浏览我们的示例。
+完成教程后，可以详细了解 Microsoft Learn 或浏览我们的示例。
 
 ### <a name="microsoft-learn"></a>Microsoft Learn
 
-要更深入地了解 Microsoft Graph，请在 Microsoft Learn 上浏览 Microsoft Graph 学习路径。
+要更深入地了解 Microsoft Graph，请在 Microsoft Learn 上浏览 Microsoft Graph 学习路径：
 
 - [Microsoft Graph 基础知识](/learn/paths/m365-msgraph-fundamentals)
 - [使用 Microsoft Graph 构建应用 - 关联](/learn/paths/m365-msgraph-associate)

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 41308c6d75dc63e58f86e3c4fca77302ba18145c
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 06ce35b21f1f0273dacd5a4b4bbb40974aa3729b
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328402"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098785"
 ---
 ```go
 
@@ -17,13 +17,18 @@ tenantId := "String"
 requestBody.SetTenantId(&tenantId)
 requestBody.SetContacts( []TenantContactInformation {
     msgraphsdk.NewTenantContactInformation(),
+name := "String"
+    SetName(&name)
+title := "String"
+    SetTitle(&title)
+email := "String"
+    SetEmail(&email)
+phone := "String"
+    SetPhone(&phone)
+notes := "String"
+    SetNotes(&notes)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation",
-        "name": "String",
-        "title": "String",
-        "email": "String",
-        "phone": "String",
-        "notes": "String",
     }
 }
 website := "String"

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3869b7a62ce329a90a9cc7197057e7632a27d0c3
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 2cd58eb64348c83235f6160beb4d09de1527614e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328536"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098828"
 ---
 ```go
 
@@ -31,13 +31,16 @@ theme := "white"
 sharedOpenShift.SetTheme(&theme)
 sharedOpenShift.SetActivities( []ShiftActivity {
     msgraphsdk.NewShiftActivity(),
-    SetAdditionalData(map[string]interface{}{
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T01:58:45.340Z",
-        "code": "",
-        "displayName": "Lunch",
-    }
+isPaid := true
+    SetIsPaid(&isPaid)
+startDateTime, err := time.Parse(time.RFC3339, "2018-10-04T00:58:45.340Z")
+    SetStartDateTime(&startDateTime)
+endDateTime, err := time.Parse(time.RFC3339, "2018-10-04T01:58:45.340Z")
+    SetEndDateTime(&endDateTime)
+code := ""
+    SetCode(&code)
+displayName := "Lunch"
+    SetDisplayName(&displayName)
 }
 requestBody.SetDraftOpenShift(nil)
 teamId := "team-id"

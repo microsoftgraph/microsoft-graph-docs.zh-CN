@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d33802ff860d46587bbc5642ab09d80d7e0eb2b5
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: ca533320e8c017732bbd079ecb8488cbf861128d
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328471"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098687"
 ---
 ```go
 
@@ -98,28 +98,37 @@ priceType := "fixedPrice"
 requestBody.SetPriceType(&priceType)
 requestBody.SetReminders( []BookingReminder {
     msgraphsdk.NewBookingReminder(),
+message := "This service is tomorrow"
+    SetMessage(&message)
+offset := "P1D"
+    SetOffset(&offset)
+recipients := "allAttendees"
+    SetRecipients(&recipients)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.bookingReminder",
-        "message": "This service is tomorrow",
-        "offset": "P1D",
         "recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
-        "recipients": "allAttendees",
     }
     msgraphsdk.NewBookingReminder(),
+message := "Please be available to enjoy your lunch service."
+    SetMessage(&message)
+offset := "PT1H"
+    SetOffset(&offset)
+recipients := "customer"
+    SetRecipients(&recipients)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.bookingReminder",
-        "message": "Please be available to enjoy your lunch service.",
-        "offset": "PT1H",
         "recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
-        "recipients": "customer",
     }
     msgraphsdk.NewBookingReminder(),
+message := "Please check traffic for next cater."
+    SetMessage(&message)
+offset := "PT2H"
+    SetOffset(&offset)
+recipients := "staff"
+    SetRecipients(&recipients)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.bookingReminder",
-        "message": "Please check traffic for next cater.",
-        "offset": "PT2H",
         "recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
-        "recipients": "staff",
     }
 }
 serviceId := "57da6774-a087-4d69-b0e6-6fb82c339976"

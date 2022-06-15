@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 074d2adcc3fcfd31bd3aaf68f8a39ee372692593
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 8e9214403717e602fd9f628b1495ee190e6459ed
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819840"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098667"
 ---
 ```go
 
@@ -44,10 +44,10 @@ requestBody.SetRecipients( []TeamworkNotificationRecipient {
 }
 requestBody.SetTemplateParameters( []KeyValuePair {
     msgraphsdk.NewKeyValuePair(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "pendingRequestCount",
-        "value": "5",
-    }
+name := "pendingRequestCount"
+    SetName(&name)
+value := "5"
+    SetValue(&value)
 }
 graphClient.Teamwork().SendActivityNotificationToRecipients().Post(requestBody)
 

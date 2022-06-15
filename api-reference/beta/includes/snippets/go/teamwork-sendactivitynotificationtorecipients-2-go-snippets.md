@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e1a365269b0fd14aca443e941bd82479b689b8f6
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: db2d53d3425a3f9fa586c862bd0bde064b41a387
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819844"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098666"
 ---
 ```go
 
@@ -29,10 +29,10 @@ content := "New deployment requires your approval"
 previewText.SetContent(&content)
 requestBody.SetTemplateParameters( []KeyValuePair {
     msgraphsdk.NewKeyValuePair(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "deploymentId",
-        "value": "6788662",
-    }
+name := "deploymentId"
+    SetName(&name)
+value := "6788662"
+    SetValue(&value)
 }
 requestBody.SetRecipients( []TeamworkNotificationRecipient {
     msgraphsdk.NewTeamworkNotificationRecipient(),

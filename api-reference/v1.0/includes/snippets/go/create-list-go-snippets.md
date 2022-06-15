@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 92a8e9428a55c07832bfc8571ef0feb875920653
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 5e6407d248e60a60b208f1f96e1c0d053d434714
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328197"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098692"
 ---
 ```go
 
@@ -17,13 +17,15 @@ displayName := "Books"
 requestBody.SetDisplayName(&displayName)
 requestBody.SetColumns( []ColumnDefinition {
     msgraphsdk.NewColumnDefinition(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "Author",
-    }
+name := "Author"
+    SetName(&name)
+text := msgraphsdk.NewTextColumn()
+    SetText(text)
     msgraphsdk.NewColumnDefinition(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "PageCount",
-    }
+name := "PageCount"
+    SetName(&name)
+number := msgraphsdk.NewNumberColumn()
+    SetNumber(number)
 }
 list := msgraphsdk.NewListInfo()
 requestBody.SetList(list)

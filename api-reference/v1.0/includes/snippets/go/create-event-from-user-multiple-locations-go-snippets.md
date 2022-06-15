@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 415954521650ef770a626dadbb20f80bea36bc2d
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 8e5c579370474b01ddc59570744ad625ca72b6bc
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326723"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098706"
 ---
 ```go
 
@@ -51,17 +51,32 @@ locationType := "Default"
 location.SetLocationType(&locationType)
 requestBody.SetLocations( []Location {
     msgraphsdk.NewLocation(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Conf Room 3",
-    }
+displayName := "Conf Room 3"
+    SetDisplayName(&displayName)
     msgraphsdk.NewLocation(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Fourth Coffee",
-    }
+displayName := "Fourth Coffee"
+    SetDisplayName(&displayName)
+address := msgraphsdk.NewPhysicalAddress()
+    SetAddress(address)
+street := "4567 Main St"
+    address.SetStreet(&street)
+city := "Redmond"
+    address.SetCity(&city)
+state := "WA"
+    address.SetState(&state)
+countryOrRegion := "US"
+    address.SetCountryOrRegion(&countryOrRegion)
+postalCode := "32008"
+    address.SetPostalCode(&postalCode)
+coordinates := msgraphsdk.NewOutlookGeoCoordinates()
+    SetCoordinates(coordinates)
+latitude := float64(47.672)
+    coordinates.SetLatitude(&latitude)
+longitude := float64(-102.103)
+    coordinates.SetLongitude(&longitude)
     msgraphsdk.NewLocation(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Home Office",
-    }
+displayName := "Home Office"
+    SetDisplayName(&displayName)
 }
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals)

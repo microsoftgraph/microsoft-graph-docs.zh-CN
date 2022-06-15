@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 956d2ebd3bcd61b0c165f5596df1994b9d9c4df1
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 07c07f22612cc9948cae299a9742f0e5b24a69a3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327492"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098702"
 ---
 ```go
 
@@ -25,13 +25,17 @@ content := "The new cafeteria is open."
 body.SetContent(&content)
 message.SetToRecipients( []Recipient {
     msgraphsdk.NewRecipient(),
-    SetAdditionalData(map[string]interface{}{
-    }
+emailAddress := msgraphsdk.NewEmailAddress()
+    SetEmailAddress(emailAddress)
+address := "fannyd@contoso.onmicrosoft.com"
+    emailAddress.SetAddress(&address)
 }
 message.SetCcRecipients( []Recipient {
     msgraphsdk.NewRecipient(),
-    SetAdditionalData(map[string]interface{}{
-    }
+emailAddress := msgraphsdk.NewEmailAddress()
+    SetEmailAddress(emailAddress)
+address := "danas@contoso.onmicrosoft.com"
+    emailAddress.SetAddress(&address)
 }
 saveToSentItems := "false"
 requestBody.SetSaveToSentItems(&saveToSentItems)

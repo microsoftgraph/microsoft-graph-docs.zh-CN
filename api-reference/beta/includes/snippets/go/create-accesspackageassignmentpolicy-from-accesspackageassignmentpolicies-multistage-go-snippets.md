@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5d699aa9fc58bdb92d3a7624739c4cef1f7cfbc2
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: fd31471acebcbbef344659d98157a7855c73a54e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328949"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098676"
 ---
 ```go
 
@@ -44,25 +44,73 @@ approvalMode := "Serial"
 requestApprovalSettings.SetApprovalMode(&approvalMode)
 requestApprovalSettings.SetApprovalStages( []ApprovalStage {
     msgraphsdk.NewApprovalStage(),
-    SetAdditionalData(map[string]interface{}{
-        "approvalStageTimeOutInDays": ,
-        "isApproverJustificationRequired": true,
-        "isEscalationEnabled": true,
-        "escalationTimeInMinutes": ,
-        "primaryApprovers":  []Object {
+approvalStageTimeOutInDays := int32(14)
+    SetApprovalStageTimeOutInDays(&approvalStageTimeOutInDays)
+isApproverJustificationRequired := true
+    SetIsApproverJustificationRequired(&isApproverJustificationRequired)
+isEscalationEnabled := true
+    SetIsEscalationEnabled(&isEscalationEnabled)
+escalationTimeInMinutes := int32(11520)
+    SetEscalationTimeInMinutes(&escalationTimeInMinutes)
+    SetPrimaryApprovers( []UserSet {
+        msgraphsdk.NewUserSet(),
+isBackup := true
+        SetIsBackup(&isBackup)
+        SetAdditionalData(map[string]interface{}{
+            "@odata.type": "#microsoft.graph.groupMembers",
+            "id": "string (identifier)",
+            "description": "group for users from connected organizations which have no external sponsor",
         }
-        "escalationApprovers":  []Object {
+        msgraphsdk.NewUserSet(),
+isBackup := false
+        SetIsBackup(&isBackup)
+        SetAdditionalData(map[string]interface{}{
+            "@odata.type": "#microsoft.graph.externalSponsors",
+        }
+    }
+    SetEscalationApprovers( []UserSet {
+        msgraphsdk.NewUserSet(),
+isBackup := true
+        SetIsBackup(&isBackup)
+        SetAdditionalData(map[string]interface{}{
+            "@odata.type": "#microsoft.graph.singleUser",
+            "id": "string (identifier)",
+            "description": "user if the external sponsor does not respond",
         }
     }
     msgraphsdk.NewApprovalStage(),
-    SetAdditionalData(map[string]interface{}{
-        "approvalStageTimeOutInDays": ,
-        "isApproverJustificationRequired": true,
-        "isEscalationEnabled": true,
-        "escalationTimeInMinutes": ,
-        "primaryApprovers":  []Object {
+approvalStageTimeOutInDays := int32(14)
+    SetApprovalStageTimeOutInDays(&approvalStageTimeOutInDays)
+isApproverJustificationRequired := true
+    SetIsApproverJustificationRequired(&isApproverJustificationRequired)
+isEscalationEnabled := true
+    SetIsEscalationEnabled(&isEscalationEnabled)
+escalationTimeInMinutes := int32(11520)
+    SetEscalationTimeInMinutes(&escalationTimeInMinutes)
+    SetPrimaryApprovers( []UserSet {
+        msgraphsdk.NewUserSet(),
+isBackup := true
+        SetIsBackup(&isBackup)
+        SetAdditionalData(map[string]interface{}{
+            "@odata.type": "#microsoft.graph.groupMembers",
+            "id": "string (identifier)",
+            "description": "group for users from connected organizations which have no internal sponsor",
         }
-        "escalationApprovers":  []Object {
+        msgraphsdk.NewUserSet(),
+isBackup := false
+        SetIsBackup(&isBackup)
+        SetAdditionalData(map[string]interface{}{
+            "@odata.type": "#microsoft.graph.internalSponsors",
+        }
+    }
+    SetEscalationApprovers( []UserSet {
+        msgraphsdk.NewUserSet(),
+isBackup := true
+        SetIsBackup(&isBackup)
+        SetAdditionalData(map[string]interface{}{
+            "@odata.type": "#microsoft.graph.singleUser",
+            "id": "string (identifier)",
+            "description": "user if the internal sponsor does not respond",
         }
     }
 }

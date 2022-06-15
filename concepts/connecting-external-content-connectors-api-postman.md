@@ -1,16 +1,16 @@
 ---
 title: 将 Postman 与 Microsoft Graph 连接器 API 一并使用
-description: 使用 Postman 试用 Microsoft Graph 连接器 API。
+description: 按照本指南中的步骤使用 Postman API 平台创建Microsoft Graph连接器 API。
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 977a0a2a1c361a46795556d336a2eefe41ee3917
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 872107e33f956a13b9748e1153c8286f8620d053
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461546"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095053"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>将 Postman 与 Microsoft Graph 连接器 API 一并使用
 
@@ -69,7 +69,7 @@ Postman 是用于构建和使用 API 的 API 平台。 Postman 简化了 API 生
 12. 展开 **ExternalItem** 选项，然后选择 `ExternalItem.ReadWrite.All`。
 13. 选择 **添加权限**。
 14. 在水平菜单上，选择“**授予管理员同意**”，然后选择“**是**”。
-15. 在左侧菜单中，选择“**概述**”。 在这里，可以获取 **应用程序（客户端）ID** 和 **目录（租户）ID**。 步骤 4 中将需要使用这些信息。
+15. 在左侧的菜单中，选择“**概述**”。 在这里，可以获取 **应用程序（客户端）ID** 和 **目录（租户）ID**。 步骤 4 中将需要使用这些信息。
 16. 在左侧菜单中，选择“**证书和机密**”。
 17. 选择“**新建客户端机密**”，输入说明，然后选择“**添加**”。 复制新的客户端密码值；步骤 4 中将需要使用该密码。
 
@@ -274,7 +274,7 @@ Content-type: application/json
 
 如果外部服务使用非 Azure AD 访问控制列表 (ACL)，请同步这些权限。  
 
-外部组（以及 Azure Active Directory 用户和组）用于设置已添加到 Microsoft Graph 连接的 `externalItems` 的权限。有关详细信息，请参阅 [externalGroup](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true)。
+外部组（以及 Azure Active Directory 用户和组）用于设置已添加到 Microsoft Graph 连接的 `externalItems` 的权限。有关详细信息，请参阅 [externalGroup](/graph/api/resources/externalconnectors-externalgroup)。
 
 这是一个请求示例。
 

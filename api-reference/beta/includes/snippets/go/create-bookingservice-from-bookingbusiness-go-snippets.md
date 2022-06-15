@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b710d56f6026ff8beeef30ca20fe13f9a936d8f0
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: be7c3be35b1fd16fce5f8ea367f784c299e00f08
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328271"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098745"
 ---
 ```go
 
@@ -54,12 +54,15 @@ defaultPriceType := "fixedPrice"
 requestBody.SetDefaultPriceType(&defaultPriceType)
 requestBody.SetDefaultReminders( []BookingReminder {
     msgraphsdk.NewBookingReminder(),
+message := "Please be reminded that this service is tomorrow."
+    SetMessage(&message)
+offset := "P1D"
+    SetOffset(&offset)
+recipients := "allAttendees"
+    SetRecipients(&recipients)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.bookingReminder",
-        "message": "Please be reminded that this service is tomorrow.",
-        "offset": "P1D",
         "recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
-        "recipients": "allAttendees",
     }
 }
 description := "Individual bento box lunch delivery"

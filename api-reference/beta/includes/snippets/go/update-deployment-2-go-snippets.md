@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8816cb21b14b3f852e88371a85f75a8b44c569b5
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 478e1c7b0a933d31d457f78b370a3a816172f4d9
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327939"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098683"
 ---
 ```go
 
@@ -19,11 +19,12 @@ monitoring := msgraphsdk.NewMonitoringSettings()
 settings.SetMonitoring(monitoring)
 monitoring.SetMonitoringRules( []MonitoringRule {
     msgraphsdk.NewMonitoringRule(),
-    SetAdditionalData(map[string]interface{}{
-        "signal": "rollback",
-        "threshold": ,
-        "action": "pauseDeployment",
-    }
+signal := "rollback"
+    SetSignal(&signal)
+threshold := int32(5)
+    SetThreshold(&threshold)
+action := "pauseDeployment"
+    SetAction(&action)
 }
 settings.SetAdditionalData(map[string]interface{}{
     "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",

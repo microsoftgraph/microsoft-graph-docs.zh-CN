@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 26bb783ffb11d62c021076d19e26f5b7bd4b2e29eb5f1fb20a11ecdfb8c50ce7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c61e5ec2cb6d99bec716dbe3ae77897dd4747956
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57104689"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098664"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var temporaryAccessPassMethods = await graphClient.Me.Authentication.TemporaryAccessPassMethods
+var temporaryAccessPassMethods = await graphClient.Users["{user-id}"].Authentication.TemporaryAccessPassMethods
     .Request()
     .GetAsync();
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 89d28f862f6339377e13c3ce5093476f73883886
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 9badacf2303b13bd93de05ea84f782b9c687e4b9
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326265"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098665"
 ---
 ```go
 
@@ -17,29 +17,35 @@ baseType := "microsoft.graph.externalItem"
 requestBody.SetBaseType(&baseType)
 requestBody.SetProperties( []Property {
     msgraphsdk.NewProperty(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "ticketTitle",
-        "type": "string",
-        "isSearchable": "true",
-        "isRetrievable": "true",
-        "labels":  []String {
-            "title",
-        }
+name := "ticketTitle"
+    SetName(&name)
+type := "string"
+    SetType(&type)
+isSearchable := "true"
+    SetIsSearchable(&isSearchable)
+isRetrievable := "true"
+    SetIsRetrievable(&isRetrievable)
+    SetLabels( []Label {
+        "title",
     }
     msgraphsdk.NewProperty(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "priority",
-        "type": "string",
-        "isQueryable": "true",
-        "isRetrievable": "true",
-        "isSearchable": "false",
-    }
+name := "priority"
+    SetName(&name)
+type := "string"
+    SetType(&type)
+isQueryable := "true"
+    SetIsQueryable(&isQueryable)
+isRetrievable := "true"
+    SetIsRetrievable(&isRetrievable)
+isSearchable := "false"
+    SetIsSearchable(&isSearchable)
     msgraphsdk.NewProperty(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "assignee",
-        "type": "string",
-        "isRetrievable": "true",
-    }
+name := "assignee"
+    SetName(&name)
+type := "string"
+    SetType(&type)
+isRetrievable := "true"
+    SetIsRetrievable(&isRetrievable)
 }
 externalConnectionId := "externalConnection-id"
 graphClient.External().ConnectionsById(&externalConnectionId).Schema().Patch(requestBody)

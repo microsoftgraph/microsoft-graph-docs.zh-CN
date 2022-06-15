@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 844dd08a1b958b82056f0ae75150dc453f4d2d0f
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: f55e11aa28eaea3671e411f8fe80196a83373706
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326026"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098746"
 ---
 ```go
 
@@ -25,12 +25,22 @@ versionId := "0.1"
 publishingState.SetVersionId(&versionId)
 requestBody.SetWebParts( []WebPart {
     msgraphsdk.NewWebPart(),
-    SetAdditionalData(map[string]interface{}{
-        "type": "rte",
+type := "rte"
+    SetType(&type)
+data := msgraphsdk.NewSitePageData()
+    SetData(data)
+    data.SetAdditionalData(map[string]interface{}{
+        "innerHTML": "<p>Here are the team's upcoming events:</p>",
     }
     msgraphsdk.NewWebPart(),
-    SetAdditionalData(map[string]interface{}{
-        "type": "d1d91016-032f-456d-98a4-721247c305e8",
+type := "d1d91016-032f-456d-98a4-721247c305e8"
+    SetType(&type)
+data := msgraphsdk.NewSitePageData()
+    SetData(data)
+    data.SetAdditionalData(map[string]interface{}{
+        "title": "Events",
+        "description": "Display upcoming events",
+        "dataVersion": "1.0",
     }
 }
 siteId := "site-id"

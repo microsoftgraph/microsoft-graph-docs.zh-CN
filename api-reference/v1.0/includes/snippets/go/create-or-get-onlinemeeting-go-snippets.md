@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: de02da6ba1586d019a95c4364be5a012896fdd42
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: d9237536205f01b71a02ad461e273a5b888118c3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328759"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098829"
 ---
 ```go
 
@@ -25,9 +25,14 @@ participants := msgraphsdk.NewMeetingParticipants()
 requestBody.SetParticipants(participants)
 participants.SetAttendees( []MeetingParticipantInfo {
     msgraphsdk.NewMeetingParticipantInfo(),
-    SetAdditionalData(map[string]interface{}{
-        "upn": "test1@contoso.com",
-    }
+identity := msgraphsdk.NewIdentitySet()
+    SetIdentity(identity)
+user := msgraphsdk.NewIdentity()
+    identity.SetUser(user)
+id := "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
+    user.SetId(&id)
+upn := "test1@contoso.com"
+    SetUpn(&upn)
 }
 result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(requestBody)
 

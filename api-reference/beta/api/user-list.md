@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8a14aa4ee74a3d978b0da3e8c8076098545f03e0
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: e2b6657c3b4475b47f03e33b193ea26630fe304f
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210058"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095580"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -141,8 +141,7 @@ Content-type: application/json
 
 使用登录名（也称为本地帐户）查找用户帐户。
 
->[!NOTE]
->根据 **identities** 进行筛选时，必须同时提供 **issuer** 和 **issuerAssignedId**。 **issuerAssignedId** 的值必须是用户帐户的电子邮件地址，不能是用户主体名称 (UPN)。 如果使用了 UPN，响应将为一个空列表。
+> **注意：** 筛选 **issuerAssignedId** 时，必须同时提供 **颁发者** 和 **issuerAssignedId**。 但是，在某些情况下将忽略 **颁发者** 值。 有关对标识进行筛选的详细信息，请参阅 [objectIdentity 资源类型](../resources/objectIdentity.md)。
 
 #### <a name="request"></a>请求
 
@@ -154,7 +153,7 @@ Content-type: application/json
   "name": "get_signinname_users"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
@@ -200,7 +199,8 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "John Smith"
+      "displayName": "John Smith",
+      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     }
   ]
 }

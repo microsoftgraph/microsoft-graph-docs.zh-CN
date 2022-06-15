@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8c31e2e629e1ab3a53c1c46c147d8d0a56ddaffc
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 8f37fa1edae906b53182aed0c9ece60065ddc76d
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326567"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098807"
 ---
 ```go
 
@@ -65,14 +65,20 @@ inReplyTo := msgraphsdk.NewPost()
 post.SetInReplyTo(inReplyTo)
 post.SetAttachments( []Attachment {
     msgraphsdk.NewAttachment(),
+lastModifiedDateTime, err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
+    SetLastModifiedDateTime(&lastModifiedDateTime)
+name := "name-value"
+    SetName(&name)
+contentType := "contentType-value"
+    SetContentType(&contentType)
+size := int32(99)
+    SetSize(&size)
+isInline := true
+    SetIsInline(&isInline)
+id := "id-value"
+    SetId(&id)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.fileAttachment",
-        "lastModifiedDateTime": "2016-10-19T10:37:00Z",
-        "name": "name-value",
-        "contentType": "contentType-value",
-        "size": ,
-        "isInline": true,
-        "id": "id-value",
     }
 }
 groupId := "group-id"

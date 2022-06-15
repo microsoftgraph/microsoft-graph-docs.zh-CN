@@ -1,22 +1,22 @@
 ---
 title: 注册并更新 Microsoft Graph 连接的架构
-description: 了解如何使用 Microsoft Graph 注册用于 Microsoft Graph 连接的架构。
+description: 在将项添加到连接之前，必须注册架构。 描述示例架构、属性属性、语义标签和架构更新功能。
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 7f0871b0f95425fbdd46ad6587195bcb1ef62b0b
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 961b8729bea3a835bcb1d6d49c9f1953a7267004
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202047"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092679"
 ---
 <!---<author of this doc: rsamai>--->
 
 # <a name="register-and-update-schema-for-the-microsoft-graph-connection"></a>注册并更新 Microsoft Graph 连接的架构
 
-连接 [架构](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true) 确定如何在各种 Microsoft Graph 体验中使用你的内容。 架构是计划与其特性、标签和别名一起添加到连接中的所有属性的简单列表。 向连接添加项目前，必须注册架构。
+连接 [架构](/graph/api/resources/externalconnectors-schema) 确定如何在各种 Microsoft Graph 体验中使用你的内容。 架构是计划与其特性、标签和别名一起添加到连接中的所有属性的简单列表。 向连接添加项目前，必须注册架构。
 
 ## <a name="example-schema"></a>示例架构
 
@@ -162,7 +162,7 @@ ms.locfileid: "65202047"
 
 ## <a name="schema-update-capabilities"></a>架构更新功能
 
-本节包含有关 [架构](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true) API 的更新功能的信息。
+本节包含有关 [架构](/graph/api/resources/externalconnectors-schema) API 的更新功能的信息。
 
 > [!NOTE]
 > 我们建议在更新后重新引入项，以将其引入到最新架构中。 如果不重新引入，则项的行为将不一致。
@@ -192,7 +192,7 @@ ms.locfileid: "65202047"
 ## <a name="next-steps"></a>后续步骤
 
 - [向连接添加项目](connecting-external-content-manage-items.md)
-- [查看 Microsoft Graph 连接器 API 参考](/graph/api/resources/indexing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [查看 Microsoft Graph 连接器 API 参考](/graph/api/resources/indexing-api-overview)
 - [搜索自定义类型 (externalItem)](search-concept-custom-types.md)
 - [生成你的第一个自定义 Microsoft Graph 连接器](/graph/connecting-external-content-build-quickstart)
 

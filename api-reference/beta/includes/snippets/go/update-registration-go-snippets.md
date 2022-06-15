@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 06d149d4cff4dd183643ed61b20c9378985d0920
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: f5a6af5c112f13ac52d2c9d5b38e8c4dae912370
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326910"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098653"
 ---
 ```go
 
@@ -21,15 +21,15 @@ endDateTime, err := time.Parse(time.RFC3339, "2021-11-02T15:45:00-08:00")
 requestBody.SetEndDateTime(&endDateTime)
 requestBody.SetSpeakers( []MeetingSpeaker {
     msgraphsdk.NewMeetingSpeaker(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Henry Ross",
-        "bio": "Chairman and Chief Executive Officer",
-    }
+displayName := "Henry Ross"
+    SetDisplayName(&displayName)
+bio := "Chairman and Chief Executive Officer"
+    SetBio(&bio)
     msgraphsdk.NewMeetingSpeaker(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Fred Ryan",
-        "bio": "CVP",
-    }
+displayName := "Fred Ryan"
+    SetDisplayName(&displayName)
+bio := "CVP"
+    SetBio(&bio)
 }
 onlineMeetingId := "onlineMeeting-id"
 graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Patch(requestBody)

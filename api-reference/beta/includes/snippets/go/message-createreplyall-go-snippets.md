@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c477fc2d33e4e6a9560953d82b8b9b5a1c875755
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 3fa9ad931bd700d0a57d31898fa7030217a03ffd
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326586"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098694"
 ---
 ```go
 
@@ -17,9 +17,10 @@ message := msgraphsdk.NewMessage()
 requestBody.SetMessage(message)
 message.SetAttachments( []Attachment {
     msgraphsdk.NewAttachment(),
+name := "guidelines.txt"
+    SetName(&name)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.fileAttachment",
-        "name": "guidelines.txt",
         "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk=",
     }
 }

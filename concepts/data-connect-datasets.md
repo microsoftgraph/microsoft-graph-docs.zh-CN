@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph Data Connect 支持的数据集、区域和接收器
-description: 介绍可与 Microsoft Graph 数据连接结合使用的受支持数据集和目标存储类型。
+description: 了解可用于 Microsoft Graph Data Connect 的支持的数据集、Microsoft 365 区域和接收器存储类型。
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 6d73482dbf2b8b0c85851970460836094a982ad3
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: b9138bfe4bbbb664deeea463745a264116035fb1
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247193"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094027"
 ---
 # <a name="datasets-regions-and-sinks-supported-by-microsoft-graph-data-connect"></a>Microsoft Graph Data Connect 支持的数据集、区域和接收器
 
@@ -42,7 +42,7 @@ Microsoft Graph Data Connect 当前支持以下数据集。若要查看每个数
 
 ## <a name="regions"></a>地区
 
-Microsoft Graph Data Connect 支持从各种不同的Microsoft 365区域提取数据。若要将数据从Microsoft 365数据中心成功移动到Microsoft Azure存储，Azure 数据工厂实例和 Azure 存储位置必须都映射到受支持的区域，以获取Microsoft 365数据的位置。 
+Microsoft Graph Data Connect 支持从各种Microsoft 365区域提取数据。 若要将数据从Microsoft 365数据中心成功移动到Microsoft Azure存储，Azure 数据工厂实例和 Azure 存储位置必须都映射到受支持的区域，以获取Microsoft 365数据的位置。 
 
 下表指明了支持哪些 Microsoft 365 区域，以及数据移动所需的对应 Azure 区域。
 

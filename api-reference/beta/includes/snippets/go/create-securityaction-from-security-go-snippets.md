@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 97b36b8f39594e81c36b3c47267080c180715081
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: cc532dc3d5293c495c7d6e8d85d0ee773f057123
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65325931"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098695"
 ---
 ```go
 
@@ -19,10 +19,10 @@ actionReason := "Test"
 requestBody.SetActionReason(&actionReason)
 requestBody.SetParameters( []KeyValuePair {
     msgraphsdk.NewKeyValuePair(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "IP",
-        "value": "1.2.3.4",
-    }
+name := "IP"
+    SetName(&name)
+value := "1.2.3.4"
+    SetValue(&value)
 }
 vendorInformation := msgraphsdk.NewSecurityVendorInformation()
 requestBody.SetVendorInformation(vendorInformation)

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c4a890d0c49480397eae4e03235755df9249574f
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 133d933142a89a70958aa94aa5aaa17e397eea29
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65719298"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098675"
 ---
 ```go
 
@@ -37,11 +37,12 @@ requestBody.SetPlatforms( []DevicePlatformType {
 }
 requestBody.SetTargetedVariations( []AnswerVariant {
     msgraphsdk.NewAnswerVariant(),
-    SetAdditionalData(map[string]interface{}{
-        "languageTag": "es-es",
-        "displayName": "Sitio de instalación Contoso",
-        "description": "Pruebe o compre Contoso hogar o negocios y vea la información del producto",
-    }
+languageTag := "es-es"
+    SetLanguageTag(&languageTag)
+displayName := "Sitio de instalación Contoso"
+    SetDisplayName(&displayName)
+description := "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
+    SetDescription(&description)
 }
 state := "published"
 requestBody.SetState(&state)
