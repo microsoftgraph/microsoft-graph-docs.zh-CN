@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: b80c3a0dc2d4d43b99abb7ccc4c9e41a8f9b8df5
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 9ac384360334d4f98d8b37ff766df887daae6e64
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945349"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094910"
 ---
 # <a name="create-ediscoverysearch"></a>创建 ediscoverySearch
 命名空间：microsoft.graph.security
@@ -52,9 +52,9 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|搜索的显示名称。 必需|
-|description|String|搜索的说明可选。|
+|说明|String|搜索的说明可选。|
 |contentQuery|String|用于搜索的查询字符串。 KQL (关键字查询语言) 格式的查询字符串。 可选|
-|dataSourceScopes|字符串|跨租户中的所有邮箱或网站进行搜索的选项。 可能的值包括 `none`、`allTenantMailboxes`、`allTenantSites`、`allCaseCustodians`、`allCaseNoncustodialDataSources`。 可选。|
+|dataSourceScopes|String|跨租户中的所有邮箱或网站进行搜索的选项。 可能的值包括 `none`、`allTenantMailboxes`、`allTenantSites`、`allCaseCustodians`、`allCaseNoncustodialDataSources`。 可选。|
 
 ## <a name="response"></a>响应
 
@@ -64,6 +64,8 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 
 ### <a name="request"></a>请求
 请求示例如下所示。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoverysearch_from_"
@@ -87,6 +89,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoverysearch-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoverysearch-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoverysearch-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverysearch-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

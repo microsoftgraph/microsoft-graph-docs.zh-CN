@@ -5,12 +5,12 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: a84cfd1bf2cdc0cae6a977ea7b31ed3b7b2c9929
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 4518a6b4f3b05e237e4a44c06bed12901369879b
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65397549"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094156"
 ---
 # <a name="managedtenant-resource-type"></a>managedTenant 资源类型
 
@@ -42,6 +42,7 @@ Microsoft 365 Lighthouse API 是在 OData 子名空间中定义的。 `microsoft
 |managementActionTenantDeploymentStatuses|[microsoft.graph.managedTenants.managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md) 集合|跨托管租户的管理操作的租户级别状态。|
 |managementIntents|[microsoft.graph.managedTenants.managementIntent](../resources/managedtenants-managementintent.md) 集合|跨托管租户的基线管理意向的集合。|
 |managementTemplates|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) 集合|跨托管租户的基线管理模板的集合。|
+|myRoles|[microsoft.graph.managedTenants.myRole](../resources/managedtenants-myrole.md) 集合|托管租户的已登录用户的角色分配集合。|
 |tenantGroups|[microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md) 集合|多租户管理平台使用的托管租户逻辑分组的集合。|
 |租户|[microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md) 集合|与管理实体关联的租户的集合。|
 |tenantsCustomizedInformation|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) 集合|跨托管租户的租户级别自定义信息的集合。|

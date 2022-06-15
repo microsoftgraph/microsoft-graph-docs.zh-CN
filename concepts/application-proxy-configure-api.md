@@ -1,16 +1,16 @@
 ---
-title: 使用 Microsoft Graph API 配置应用程序代理
-description: 使用 Microsoft Graph API 配置应用程序代理，以提供对本地应用程序的远程访问和单一登录。
+title: 使用 Microsoft 图形 API 配置应用程序代理
+description: 使用 Microsoft 图形 API 配置应用程序代理，为本地应用程序提供远程访问和单一登录。
 author: FaithOmbongi
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 832060f2aed60311b8315a4511a467cc57847f47
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 6c28aeee7809ff71f04beae39a151f344eb05589
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060777"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095140"
 ---
 # <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>使用 Microsoft 图形 API 配置应用程序代理
 
@@ -18,9 +18,9 @@ ms.locfileid: "65060777"
 
 ## <a name="prerequisites"></a>先决条件
 
-- 本教程假设你已安装连接器并完成了应用程序代理的[先决条件](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites)，以便连接器可以与Azure AD服务通信。
-- 本教程的前提是使用 Microsoft Graph Explorer，但是可以使用 Postman，也可以创建自己的客户端应用程序来调用 Microsoft Graph。 如果要在本教程中调用 Microsoft Graph API，需要使用具有全局管理员角色和适当权限的帐户。 完成以下步骤以在 Microsoft Graph Explorer 中设置权限：
-    1. 启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
+- 本教程假设你已安装连接器并完成了应用程序代理的[先决条件](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites)，以便连接器可以与 Azure AD 服务通信。
+- 本教程假定你使用的是Graph资源管理器，但可以使用 Postman 或创建自己的客户端应用来调用 Microsoft Graph。 若要在本教程中调用 Microsoft Graph API，需要使用具有全局管理员角色和相应权限的帐户。 完成以下步骤，在Graph资源管理器中设置权限：
+    1. "开始"菜单[Graph资源管理器](https://developer.microsoft.com/graph/graph-explorer)。
     2. 选择“**使用 Microsoft 登录**”，然后使用 Azure AD 全局管理员账户登录。 成功登录后，可在左侧窗格中看到用户帐户详细信息。
     3. 选择用户帐户详细信息右侧的设置图标，然后选择“**权限**”。
 
@@ -435,13 +435,13 @@ No Content - 204
 ## <a name="see-also"></a>另请参阅
 
 - [应用程序代理](/azure/active-directory/manage-apps/what-is-application-proxy)
-- [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [applicationTemplate：实例化](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
-- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
-- [connector](/graph/api/resources/connector?view=graph-rest-beta)
-- [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
-- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
-- [本地发布配置文件](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
-- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
-- [用户](/graph/api/resources/user?view=graph-rest-1.0)
+- [application](/graph/api/resources/application)
+- [applicationTemplate：实例化](/graph/api/applicationtemplate-instantiate)
+- [appRoleAssignment](/graph/api/resources/approleassignment)
+- [connector](/graph/api/resources/connector)
+- [connectorGroup](/graph/api/resources/connectorGroup)
+- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings)
+- [本地发布配置文件](/graph/api/resources/onpremisespublishingprofile-root)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon)
+- [用户](/graph/api/resources/user)

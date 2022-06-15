@@ -5,12 +5,12 @@ author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 01a393d03bd7095cce9cb8acf07335e92ce6a967
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: 136df8006925470d139c7c94f3d7a2c3e0ff35be
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971250"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094066"
 ---
 # <a name="temporaryaccesspassauthenticationmethod-resource-type"></a>temporaryAccessPassAuthenticationMethod 资源类型
 
@@ -18,28 +18,28 @@ ms.locfileid: "65971250"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示注册给用户的临时访问通行证。 临时访问密码是一个时间限制的密码，用作强凭据并允许载入无密码凭据。
+表示注册给用户的临时访问通行证。 临时访问密码是一个时间限制的密码，用作强凭据并允许载入无密码凭据。 可为 **temporaryAccessPassAuthenticationMethod** 配置的可用性和设置取决于 [临时访问传递方法策略](temporaryaccesspassauthenticationmethodconfiguration.md)。
 
 ## <a name="methods"></a>方法
 
 |方法|返回类型|Description|
 |:---|:---|:---|
-|[List](../api/temporaryaccesspassauthenticationmethod-list.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 集合|检索用户的 **临时AccessPassAuthenticationMethod** 对象及其属性的列表。 用户只能有一个临时访问传递身份验证方法。|
-|[创建](../api/temporaryaccesspassauthenticationmethod-post.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|创建用户的 **temporaryAccessPassAuthenticationMethod** 对象。|
+|[List](../api/authentication-list-temporaryaccesspassmethods.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 集合|检索用户的 **临时AccessPassAuthenticationMethod** 对象及其属性的列表。 用户只能有一个临时访问传递身份验证方法。|
+|[创建](../api/authentication-post-temporaryaccesspassmethods.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|创建用户的 **temporaryAccessPassAuthenticationMethod** 对象。|
 |[获取](../api/temporaryaccesspassauthenticationmethod-get.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|检索用户的 **temporaryAccessPassAuthenticationMethod** 对象的属性。|
 |[删除](../api/temporaryaccesspassauthenticationmethod-delete.md)|无|删除用户的 **temporaryAccessPassAuthenticationMethod** 对象。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|注册给此用户的临时访问通行证的标识符。|
-|temporaryAccessPass|String|用于身份验证的 temporaryAccessPass。 仅在创建新的临时AccessPass时返回;返回为 NULL 和 GET。|
-|createdDateTime|DateTimeOffset|创建 temporaryAccessPass 的日期和时间。|
-|startDateTime|DateTimeOffset|临时AccessPass可供使用的日期和时间。|
-|lifetimeInMinutes|Int32|从 startDateTime 开始，temporaryAccessPass 的生存期（以分钟为单位）。 最小 10，最大 43200 (等效于 30 天) 。|
-|isUsableOnce|布尔值|确定传递是否限制为一次性使用。 如果 `true`可以使用传递一次，则 `false`可在临时AccessPass生存期内多次使用该传递。|
+|createdDateTime|DateTimeOffset|创建临时访问通行证的日期和时间。|
+|id|String|注册给此用户的临时访问通行证的标识符。 继承自 [entity](../resources/entity.md)。|
+|isUsableOnce|Boolean|确定传递是否仅限于一次性使用。 如果 `true`可以使用传递一次，则 `false`可在临时访问传递生存期内多次使用该传递。|
 |isUsable|布尔值|身份验证方法的状态，指示用户当前是否可用。|
-|methodUsabilityReason|字符串|有关可用性状态 (的详细信息是可使用的) 。 原因可能包括： `enabledByPolicy`， `disabledByPolicy`， `expired`， `notYetValid`， 。 `oneTimeUsed`|
+|lifetimeInMinutes|Int32|从 **startDateTime 开始**，临时访问传递的生存期（以分钟为单位）。 必须介于 10 到 43200 之间，包括 (等效于 30 天) 。|
+|methodUsabilityReason|String|有关可用性状态 (的详细信息 **) 。** 原因可能包括： `EnabledByPolicy`， `DisabledByPolicy`， `Expired`， `NotYetValid`， 。 `OneTimeUsed`|
+|startDateTime|DateTimeOffset|临时访问通行证可供使用的日期和时间以及`true`何时强制使用。|
+|temporaryAccessPass|String|用于身份验证的临时访问通行证。 仅在创建新的 **temporaryAccessPassAuthenticationMethod** 对象时返回;隐藏在后续读取操作中，并随 GET 一样 `null` 返回。|
 
 
 ## <a name="relationships"></a>关系

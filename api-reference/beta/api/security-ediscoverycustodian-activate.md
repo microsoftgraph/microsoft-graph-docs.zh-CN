@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 751ae6f0b9fde6712b40bffcb818d7ada114991b
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: ae72a143f0fb8f3c40b308ded37703fdab0d373b
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945419"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095975"
 ---
 # <a name="ediscoverycustodian-activate"></a>ediscoveryCustodian：activate
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-激活已从案例中释放的保管人，使其再次成为案例的一部分。 有关详细信息，请参阅 [高级电子数据展示案例中的管理保管人](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)。
+激活已从案例中释放的保管人，使其再次成为案例的一部分。 有关详细信息，请参阅[Advanced eDiscovery案例中的管理保管人](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)。
 
 
 ## <a name="permissions"></a>权限
@@ -55,6 +55,8 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{ediscoveryCu
 
 ### <a name="request"></a>请求
 请求示例如下所示。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "ediscoverycustodianthis.activate"
@@ -63,6 +65,24 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{ediscoveryCu
 ``` http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{ediscoveryCustodianId}/activate
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverycustodianthisactivate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverycustodianthisactivate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/ediscoverycustodianthisactivate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/ediscoverycustodianthisactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### <a name="response"></a>响应
 下面是响应的示例
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 6746161f8a5562c56a51c8e301b23734fadb243c
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: d56a68731736201f5b77e0d026ca7528715549cd
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945510"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66096128"
 ---
 # <a name="create-ediscoveryholdpolicy"></a>创建 ediscoveryHoldPolicy
 命名空间：microsoft.graph.security
@@ -53,7 +53,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds
 |:---|:---|:---|
 |displayName|String|法定保留策略的显示名称。 必需。|
 |description|String|法律保留策略的说明。 可选。|
-|contentQuery|字符串|法定保留策略的内容查询。 可选。|
+|contentQuery|String|法定保留策略的内容查询。 可选。|
 
 ## <a name="response"></a>响应
 
@@ -63,6 +63,8 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds
 
 ### <a name="request"></a>请求
 请求示例如下所示。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoveryholdpolicy_from_"
@@ -92,6 +94,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryholdpolicy-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoveryholdpolicy-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryholdpolicy-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryholdpolicy-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### <a name="response"></a>响应
 下面是响应的示例
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 95610cbde2213ee8235fed848a45cf756760aa51
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 19fee55378769b9268bf3e477bc52a3f6c2f6438
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900259"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66096068"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -32,8 +32,8 @@ ms.locfileid: "65900259"
 |:-----|:-----|:-----|:-----|
 |[baseTask](../resources/basetask.md) (已弃用)  | Tasks.ReadWrite、Subscription.Read.All | Tasks.ReadWrite、Subscription.Read.All | 不支持 |
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | 不支持 | 不支持 | CallRecords.Read.All  |
-|[channel](../resources/channel.md) (/teams/getAllChannels - 组织中的所有频道)  | 不支持  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All |
-|[channel](../resources/channel.md) (/teams/{id}/channels)  | Channel.ReadBasic.All, ChannelSettings.Read.All, Subscription.Read.All  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All  |
+|[频道](../resources/channel.md)（/teams/getAllChannels – 组织中的所有频道） | 不支持  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All |
+|[频道](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All, Subscription.Read.All  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All  |
 |[聊天](../resources/chat.md)（/chats - 组织中的所有聊天） | 不支持 | 不支持 | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[聊天](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic、Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | ChatSettings.Read.Chat *、ChatSettings.ReadWrite.Chat*、Chat.Manage.Chat*、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All、Subscription.Read.All | 不支持 | ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
@@ -53,14 +53,14 @@ ms.locfileid: "65900259"
 |[组](../resources/group.md) | Group.Read.All、Subscription.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All、Subscription.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All、Subscription.Read.All | 不支持 | Sites.ReadWrite.All |
-|[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read、Subscription.Read.All | Mail.ReadBasic、Mail.Read、Subscription.Read.All | Mail.ReadBasic、Mail.Read |
+|[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read、Subscription.Read.All | Mail.ReadBasic、Mail.Read、Subscription.Read.All | Mail.Read |
 |[联机会议](../resources/onlinemeeting.md) | 不支持 | 不支持 | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All |
 |[状态](../resources/presence.md) | Presence.Read.All、Subscription.Read.All | 不支持 | 不支持 |
 |[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All、Subscription.Read.All | 不支持 | SecurityEvents.ReadWrite.All |
-|[团队](../resources/team.md) (/teams – 组织中的所有团队)  | 不支持 | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
-|[team](../resources/team.md) (/teams/{id})  | Team.ReadBasic.All、TeamSettings.Read.All、Subscription.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
+|[团队](../resources/team.md)（/teams - 组织中的所有团队） | 不支持 | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
+|[团队](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All、TeamSettings.Read.All、Subscription.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite、Subscription.Read.All | Tasks.ReadWrite、Subscription.Read.All | 不支持 |
 |[user](../resources/user.md) | User.Read.All、Subscription.Read.All | User.Read.All | User.Read.All |
 

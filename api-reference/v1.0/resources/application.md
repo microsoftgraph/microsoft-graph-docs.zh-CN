@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8b7864114f357ea031fbaae72c8ee20ad6c477c3
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 188da50ffc613d375fbd57a2035b49a07da624a8
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461189"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094408"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "65461189"
 |[删除应用程序](../api/application-delete.md) | 无 |删除 application 对象。 |
 |[Get delta](../api/application-delta.md)|[application](application.md)|获得新建、更新或删除的应用，无需完全读取整个资源集合。|
 |[列出已删除的应用程序](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索最近删除的应用程序的列表。 |
-| [列出用户拥有的已删除应用程序](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 检索租户中最近 30 天内删除的应用程序以及用户拥有的应用程序。 |
+| [列出用户拥有的已删除应用程序](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) 集合 | 检索租户中最近 30 天内删除的应用程序以及用户拥有的应用程序。 |
 |[获取已删除的应用程序](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | 检索最近删除的应用程序的属性。 |
 |[永久删除应用程序](../api/directory-deleteditems-delete.md) | 无 | 永久删除应用程序。 |
 |[还原已删除的应用程序](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | 还原最近删除的应用程序。 |
@@ -73,6 +73,7 @@ ms.locfileid: "65461189"
 | appId | String | Azure AD 分配给应用程序的唯一标识符。不可为 Null。只读。 |
 | applicationTemplateId | String | applicationTemplate 的唯一标识符。支持 `$filter` （`eq`、 `not`、 `ne`）。|
 | appRoles | [appRole](approle.md) 集合 | 分配给应用程序的角色的集合。 使用[应用角色分配](approleassignment.md)，可将这些角色分配给与其他应用程序关联的用户、组或服务主体。 不可为空。 |
+|认证|[认证](certification.md)|指定应用程序的认证状态。|
 | createdDateTime | DateTimeOffset | 注册应用程序的日期和时间。DateTimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 <br><br> 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in` 和 `null` 值上的 `eq`) 和 `$orderBy`。 |
 | deletedDateTime | DateTimeOffset | 删除应用程序的日期和时间。DateTimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。 |
 | 说明 | String | 用于向最终用户提供应用程序对象说明的空闲文本字段。 最大允许大小为 1024 个字符。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`startsWith`）和 `$search`。 |
@@ -140,6 +141,7 @@ ms.locfileid: "65461189"
   "appId": "String",
   "applicationTemplateId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "certification": {"@odata.type": "microsoft.graph.certification"},
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",

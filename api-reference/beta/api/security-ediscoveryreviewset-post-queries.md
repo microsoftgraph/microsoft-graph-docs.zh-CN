@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 6045ce804147ff660879acbeb281213f4486f355
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 21403b32e16be18bd2024127782dcb9afe2bfbe8
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945490"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094679"
 ---
 # <a name="create-ediscoveryreviewsetquery"></a>创建 ediscoveryReviewSetQuery
 命名空间：microsoft.graph.security
@@ -51,8 +51,8 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|查询的名称。 必填。|
-|contentQuery|String|审阅集的 KQL 查询。 [了解详细信息。](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
+|displayName|String|查询的名称。 必需项。|
+|contentQuery|String|审阅集的KQL查询。 [了解详细信息。](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
 
 
 
@@ -64,6 +64,8 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 
 ### <a name="request"></a>请求
 请求示例如下所示。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoveryreviewsetquery_from_"
@@ -78,6 +80,24 @@ Content-Type: application/json
     "contentQuery": "(Author=\"edison\")"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreviewsetquery-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoveryreviewsetquery-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewsetquery-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewsetquery-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

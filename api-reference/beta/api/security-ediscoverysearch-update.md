@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 981e9098695789fee2bf60ff8466d2b7c5a411c6
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: e9c27981ef7f4ca80c5c528e1498f4be36c86532
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945377"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092739"
 ---
 # <a name="update-ediscoverysearch"></a>更新 ediscoverySearch
 命名空间：microsoft.graph.security
@@ -26,7 +26,7 @@ ms.locfileid: "65945377"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,9 +50,9 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySea
 
 |属性|类型|说明|
 |:---|:---|:---|
-|contentQuery|字符串|KQL (关键字查询语言) 查询中的查询字符串。 有关详细信息，请参阅 [内容搜索和电子数据展示的关键字查询和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。  可以使用与值配对的字段来优化搜索;例如， `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016`.|
+|contentQuery|String|KQL (关键字查询语言) 查询中的查询字符串。 有关详细信息，请参阅 [内容搜索和电子数据展示的关键字查询和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。  可以使用与值配对的字段来优化搜索;例如， `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016`.|
 |dataSourceScopes|dataSourceScopes|指定后，集合将跨整个工作负荷的服务。 可能的值为：，`none``allTenantMailboxes`，`allTenantSites`，`allCaseCustodians`，`allCaseNoncustodialDataSources`。 **注意：** 创建源集合时，需要一个保管人或指定 dataSourceScope。|
-|description|String|**电子数据展示搜索** 的说明。|
+|说明|String|**电子数据展示搜索** 的说明。|
 |displayName|String|**电子数据展示搜索** 的显示名称。|
 
 
@@ -64,6 +64,8 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySea
 
 ### <a name="request"></a>请求
 请求示例如下所示。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ediscoverysearch"
@@ -77,6 +79,24 @@ Content-Type: application/json
     "displayName": "Teams search"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-ediscoverysearch-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-ediscoverysearch-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-ediscoverysearch-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-ediscoverysearch-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

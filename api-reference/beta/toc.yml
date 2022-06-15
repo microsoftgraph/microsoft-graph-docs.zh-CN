@@ -572,7 +572,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: 团队合作
             items:
               - name: 已安装应用
                 href: resources/teamsappinstallation.md
@@ -2135,7 +2135,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -10328,7 +10328,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: 设置审阅状态
                     href: api/manageddevice-setcloudpcreviewstatus.md
-                  - name: 疑难解答
+                  - name: 排除故障
                     href: api/cloudpc-troubleshoot.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
@@ -10633,6 +10633,11 @@ items:
                     href: api/managedtenants-managedtenant-list-managementtemplates.md
                   - name: 获取管理模板
                     href: api/managedtenants-managementtemplate-get.md
+              - name: 我的角色
+                href: resources/managedtenants-myrole.md
+                items:
+                  - name: 列出
+                    href: api/managedtenants-managedtenant-list-myroles.md
               - name: 租户自定义信息
                 href: resources/managedtenants-tenantcustomizedinformation.md
                 items:
@@ -12012,9 +12017,9 @@ items:
                     href: resources/temporaryaccesspassauthenticationmethod.md
                     items:
                       - name: 列出
-                        href: api/temporaryaccesspassauthenticationmethod-list.md
+                        href: api/authentication-list-temporaryaccesspassmethods.md
                       - name: 创建
-                        href: api/temporaryaccesspassauthenticationmethod-post.md
+                        href: api/authentication-post-temporaryaccesspassmethods.md
                       - name: 获取
                         href: api/temporaryaccesspassauthenticationmethod-get.md
                       - name: 删除
@@ -14623,7 +14628,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列出
                     href: api/simulationautomation-list-runs.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training

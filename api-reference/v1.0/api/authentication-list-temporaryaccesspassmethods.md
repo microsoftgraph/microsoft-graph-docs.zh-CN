@@ -1,18 +1,18 @@
 ---
-title: 列出 temporaryAccessPassAuthenticationMethods
+title: 列出 temporaryAccessPassMethods
 description: 获取用户的 temporaryAccessPassAuthenticationMethod 对象的列表。
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a0620009fbc2266f7dade86b525d696eb0f58415
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: a58fc6a85f83734c50ddd8d47a1edc8775952d29
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971656"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093404"
 ---
-# <a name="list-temporaryaccesspassauthenticationmethods"></a>列出 temporaryAccessPassAuthenticationMethods
+# <a name="list-temporaryaccesspassmethods"></a>列出 temporaryAccessPassMethods
 命名空间：microsoft.graph
 
 检索用户的 [临时AccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象及其属性的列表。 此 API 只会返回集合中的单个对象，因为用户只能有一个临时访问传递方法。
@@ -34,12 +34,12 @@ ms.locfileid: "65971656"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
 
 对于管理员对另一用户执行操作的委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
 
-* 全局管理员
+* 全球管理员
 * 全局读取者
 * 特权身份验证管理员
 * 身份验证管理员
@@ -58,7 +58,7 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法不支持自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -74,6 +74,8 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_temporaryaccesspassauthenticationmethod"
@@ -82,6 +84,24 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-temporaryaccesspassauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-temporaryaccesspassauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-temporaryaccesspassauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-temporaryaccesspassauthenticationmethod-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: 签入签出的 driveItem 资源，这使文档版本可供其他人使用。
+description: 签入签出的 driveItem 资源，使文档的版本可供其他人使用。
 title: driveItem：checkin
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6c98cf8ced988a769b12726b5d2b8a0f60f33c05
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b628a482bebcf43205241afdc396c89159813d1c
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090661"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094656"
 ---
 # <a name="driveitem-checkin"></a>driveItem：checkin
 
 命名空间：microsoft.graph
 
-签入签出的 **driveItem** 资源，这使文档版本可供其他人使用。
+签入签出的 **driveItem** 资源，使文档的版本可供其他人使用。
 
 ## <a name="permissions"></a>权限
 
@@ -47,12 +47,12 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 
 |   名称    | 值  |                                                说明                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
-| checkInAs | string | 可选。 签入操作完成后的文档状态。 可以是 `published` 或未指定。 |
+| checkInAs | string | 可选。 签入操作完成后文档的状态。 可以是 `published` 或未指定。 |
 | comment   | string | 与此版本相关联的签入注释。                                                   |
 
 ## <a name="response"></a>响应
 
-如果成功，API 调用将返回 `204 No content` 。
+如果成功，API 调用将返回 `204 No content`。
 
 ## <a name="example"></a>示例
 
@@ -85,6 +85,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/checkin-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

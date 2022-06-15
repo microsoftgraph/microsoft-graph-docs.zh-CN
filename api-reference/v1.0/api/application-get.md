@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 93cf1bb04cdc0a1244adf403e0044d4c5893502b
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: c02ff3ad8c3e64e7add955f04e7e9b51ccd500d1
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672719"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093435"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -130,6 +130,13 @@ Content-type: application/json
             "displayName": "publisher_contoso",
             "verifiedPublisherId": "9999999",
              "addedDateTime": "2021-04-24T17:49:44Z"
+    },
+    "certification": {
+           "isPublisherAttested": true,
+           "isCertifiedByMicrosoft": true,
+           "lastCertificationDateTime": "2021-05-11T23:26:20Z",
+           "certificationExpirationDateTime": "2022-05-11T23:26:20Z",
+           "certificationDetailsUrl": "https://docs.microsoft.com/microsoft-365-app-certification/forward/azure/631a96bc-a705-4eda-9f99-fdaf9f54f6a2"
     },
     "tags": [],
     "tokenEncryptionKeyId": null,

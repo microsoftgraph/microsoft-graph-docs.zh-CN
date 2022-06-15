@@ -3,14 +3,14 @@ title: 创建术语
 description: 创建新的术语对象。
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 36aefc94e89881e25792617fcc48d158d62473f2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 43feb7bc5f3b86fa5fbf7255904788f195492ebf
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60977587"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66094837"
 ---
 # <a name="create-term"></a>创建术语
 命名空间：microsoft.graph.termStore
@@ -47,19 +47,19 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供术语对象的 JSON [表示](../resources/termstore-term.md) 形式。
+在请求正文中，提供 [术语](../resources/termstore-term.md) 对象的 JSON 表示形式。
 
-下表显示创建术语时所需的 [属性](../resources/termstore-term.md)。
+下表显示了创建 [术语](../resources/termstore-term.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|要创建的术语的标签|
+|标签|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|要创建的术语的标签|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码 `201 Created` 和术语对象。 [](../resources/termstore-term.md)
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [术语](../resources/termstore-term.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-term-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-term-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,33 +5,35 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: enumTypes
-ms.openlocfilehash: 7218824959465cb7740953f837da0e3e630ec449
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 9b93794e763025b409ff00c0a2b5d13909ca705d
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321622"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095949"
 ---
 # <a name="multi-tenant-management-enumeration-values"></a>多租户管理枚举值
 
 ### <a name="delegatedprivilegestatus-values"></a>delegatedPrivilegeStatus 值
 
-|成员|
+|Member|
 |:---|
 |无|
 |delegatedAdminPrivileges|
 |unknownFutureValue|
+|granularDelegatedAdminPrivileges|
+|delegatedAndGranularDelegetedAdminPrivileges|
 
 ### <a name="managementactionstatus-values"></a>managementActionStatus 值
 
-|成员|
+|Member|
 |:---|
 |toAddress|
-|已完成|
+|完成|
 |error|
-|timeOut|
+|超时|
 |inProgress|
-|planned|
+|计划|
 |resolvedBy3rdParty|
 |resolvedThroughAlternateMitigation|
 |riskAccepted|
@@ -39,16 +41,16 @@ ms.locfileid: "61321622"
 
 ### <a name="managementcategory-values"></a>managementCategory 值
 
-|成员|
+|Member|
 |:---|
-|custom|
+|自 定义|
 |设备|
-|identity|
+|身份|
 |unknownFutureValue|
 
 ### <a name="managementparametervaluetype-values"></a>managementParameterValueType 值
 
-|成员|
+|Member|
 |:---|
 |string|
 |integer|
@@ -62,17 +64,17 @@ ms.locfileid: "61321622"
 
 ### <a name="tenantonboardingstatus-values"></a>tenantOnboardingStatus 值
 
-|成员|
+|Member|
 |:---|
-|不符合|
+|资格|
 |inProcess|
-|active|
-|inactive|
+|积极|
+|无效|
 |unknownFutureValue|
 
 ### <a name="tenantonboardingeligibilityreason-values"></a>tenantOnboardingEligibilityReason 值
 
-|成员|
+|Member|
 |:---|
 |无|
 |contractType|
@@ -83,7 +85,7 @@ ms.locfileid: "61321622"
 
 ### <a name="workloadactioncategory-values"></a>workloadActionCategory 值
 
-|成员|
+|Member|
 |:---|
 |自动化|
 |手动|
@@ -91,19 +93,19 @@ ms.locfileid: "61321622"
 
 ### <a name="workloadactionstatus-values"></a>workloadActionStatus 值
 
-|成员|
+|Member|
 |:---|
 |toAddress|
-|已完成|
+|完成|
 |error|
-|timeOut|
+|超时|
 |inProgress|
 |unknownFutureValue|
 
 ### <a name="workloadonboardingstatus-values"></a>workloadOnboardingStatus 值
 
-|成员|
+|Member|
 |:---|
 |notOnboarded|
-|已载入|
+|载入|
 |unknownFutureValue|

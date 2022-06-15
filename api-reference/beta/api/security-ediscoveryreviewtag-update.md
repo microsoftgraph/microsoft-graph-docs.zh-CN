@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 0ad8113a34bd9ecf70b7e6c0d110fad2bb3e9314
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 34ed4dedde55b3bdb545dffe70894a75339dc0be
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945486"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093691"
 ---
 # <a name="update-ediscoveryreviewtag"></a>更新 ediscoveryReviewTag
 命名空间：microsoft.graph.security
@@ -51,7 +51,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewT
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|标记的显示名称。 必需。|
-|description|字符串|标记的说明。 可选。|
+|description|String|标记的说明。 可选。|
 |childSelectability|childSelectability|此值控制 UX 是将标记显示为复选框还是单选按钮组。 可能的值为： `One`. `Many` 必需。|
 
 
@@ -63,6 +63,8 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewT
 
 ### <a name="request"></a>请求
 请求示例如下所示。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ediscoveryreviewtag"
@@ -76,6 +78,24 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-c
     "description": "Use Graph API to create tags (updated)"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-ediscoveryreviewtag-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-ediscoveryreviewtag-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-ediscoveryreviewtag-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-ediscoveryreviewtag-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

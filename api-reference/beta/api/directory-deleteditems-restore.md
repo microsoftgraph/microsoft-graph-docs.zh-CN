@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8d7944e12d093ca62c428f5d90183fbc4f8ff5e9
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: ffff5554b829c12e4aab78a40d74f85d6af3f00b
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63668609"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093955"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "63668609"
 
 从[已删除的项目](../resources/directory.md)中还原最近删除的项目。 
 
-目前，仅应用程序、组和用户资源支持还原[已删除项目](../resources/group.md)[功能](../resources/user.md)。[](../resources/application.md) 如果意外删除项目，可完全还原该项目。 这不适用于永久删除的安全组。
+目前，仅[应用程序、](../resources/application.md)[组](../resources/group.md)和[用户](../resources/user.md)资源支持还原已删除的项目功能。 如果意外删除项目，可完全还原该项目。 这不适用于永久删除的安全组。
 
 最近删除的项目将保留最多 30 天的可用时间。 30 天后，该项目将永久删除。
 
@@ -61,7 +61,7 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 需要 Bearer &lt;*token*&gt;|
+| Authorization  | *必需* 的持有者&lt;令牌&gt;|
 | Content-type | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -97,6 +97,10 @@ POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-directory-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-directory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 46348eee0f7b769deee3ec814eb0add70b5a453f
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 65162c31ef3c3bafe8c660ac981c916fbe93ab5b
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65326775"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094839"
 ---
 ```go
 
@@ -15,11 +15,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTerm()
 requestBody.SetLabels( []LocalizedLabel {
     msgraphsdk.NewLocalizedLabel(),
-    SetAdditionalData(map[string]interface{}{
-        "languageTag": "en-US",
-        "name": "Car",
-        "isDefault": true,
-    }
+languageTag := "en-US"
+    SetLanguageTag(&languageTag)
+name := "Car"
+    SetName(&name)
+isDefault := true
+    SetIsDefault(&isDefault)
 }
 setId := "set-id"
 result, err := graphClient.TermStore().SetsById(&setId).Children().Post(requestBody)

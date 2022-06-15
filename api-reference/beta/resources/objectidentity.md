@@ -1,16 +1,16 @@
 ---
 title: objectIdentity 资源类型
-description: 表示用于登录用户帐户的标识。
+description: 表示用于登录到用户帐户的标识。
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: users
 author: jpettere
-ms.openlocfilehash: efe27437cd1f01776445e3989c2db0b799ca14af
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 985de0fdbfa1c6ed9306ae434d128b64a7fe2aac
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764785"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094114"
 ---
 # <a name="objectidentity-resource-type"></a>objectIdentity 资源类型
 
@@ -18,19 +18,25 @@ ms.locfileid: "59764785"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示用于登录用户帐户的标识。 标识由 Microsoft、组织或与用户帐户绑定的社会标识提供者（如 Facebook、Google 或 Microsoft）提供。 这使用户能够使用这些关联标识中的任一标识登录用户帐户。
+表示用于登录到用户帐户的标识。 Microsoft、组织或与用户帐户相关联的社交标识提供者（如 Facebook、Google 或 Microsoft）可以提供标识。 这样，用户就可以使用这些关联标识登录到用户帐户。
 
-用户 **资源的 identities** [属性是](user.md) **objectIdentity** 对象。
+[用户](user.md)资源的标 **识** 属性是 **objectIdentity** 对象。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|signInType|String| 指定目录中的用户登录类型，如 、 `emailAddress` `userName` 、 或 `federated` `userPrincipalName` 。 `federated` 表示颁发者中用户的唯一标识符，该标识符可以是颁发者选择的任何格式。 设置或更新 `userPrincipalName` 标识将更新 user 对象上的 **userPrincipalName** 属性的值。 在用户对象上的 属性上执行的验证（例如，验证域和可接受的字符）将在设置或更新标识时 `userPrincipalName` `userPrincipalName` 执行。 当登录类型设置为 或 时， **对 issuerAssignedId** 强制执行其他 `emailAddress` 验证 `userName` 。 此属性还可以设置为任何自定义字符串。|
-|issuer|string|指定标识的颁发者，例如 `facebook.com` 。<br>对于未 (**signInType** 的本地帐户) ，此属性是本地 `federated` B2C 租户的默认域名，例如 `contoso.onmicrosoft.com` 。<br>对于来自其他 Azure AD 组织的外部用户，这将是联盟组织的域，例如 `contoso.com` 。<br><br>支持 `$filter`。 512 个字符限制。|
-|issuerAssignedId|string|指定颁发者分配给用户的唯一标识符。 颁发者 **与** **issuerAssignedId** 的组合在组织中必须是唯一的。 表示用户的登录名，当 **signInType** 设置为 或 (也称为本地帐户 `emailAddress` `userName`) 。<br>当 **signInType** 设置为： <ul><li>`emailAddress`、 (或以 （如) ）开头的自定义字符串必须是 `emailAddress` `emailAddress1` 有效的电子邮件地址</li><li>`userName`**，issuerAssignedId** 必须是电子邮件地址 [的有效本地部分](https://tools.ietf.org/html/rfc3696#section-3)</li></ul>支持 `$filter`。 100 个字符限制。|
+|signInType|String| 指定目录中的用户登录类型，例如`emailAddress`，`userName``federated``userPrincipalName`或 。 `federated` 表示颁发者中用户的唯一标识符，该标识符可以采用颁发者选择的任何格式。 设置或更新标 `userPrincipalName` 识将更新用户对象上的 **userPrincipalName** 属性的值。 在 `userPrincipalName` 设置或更新 `userPrincipalName` 标识时，将对用户对象上的属性执行验证，例如已验证的域和可接受的字符。 当登录类型设置为`emailAddress`或`userName`设置时，在 **issuerAssignedId** 上强制执行其他验证。 此属性还可以设置为任何自定义字符串。|
+|发行|string|指定标识的颁发者，例如 `facebook.com`。<br>例如，对于不`federated`) **signInType** (本地帐户，`contoso.onmicrosoft.com`此属性是本地 B2C 租户默认域名。<br>例如，对于来自其他 Azure AD 组织的外部用户， `contoso.com`这将是联合组织的域。<br><br>支持 `$filter`。 512 个字符限制。|
+|issuerAssignedId|string|指定颁发者分配给用户的唯一标识符。 **颁发者** 与 **issuerAssignedId** 的组合在组织中必须是唯一的。 表示在 **将 signInType** 设置 `emailAddress` 为或 `userName` (也称为本地帐户) 时用户的登录名称。<br>将 **signInType** 设置为： <ul><li>`emailAddress`、 (或自定义字符串（ `emailAddress` 以) `emailAddress1` **issuerAssignedId** 开头）必须是有效的电子邮件地址</li><li>`userName`， **issuerAssignedId** 必须是 [电子邮件地址的有效本地部分](https://tools.ietf.org/html/rfc3696#section-3)</li></ul>支持 `$filter`。 100 个字符限制。|
 
->**注意：** 筛选 **identities** 属性时，您必须同时提供 **issuer** 和 **issuerAssignedId**。
+### <a name="filtering"></a>筛选
+筛选 **issuerAssignedId** 的 **标识** 属性时，必须同时提供 **颁发者** 和 **issuerAssignedId**。 此外：
+- 筛选具有 **signInType** 的 `federated` 条目需要有效的 **颁发者** 和 **颁发者AssignedId**。
+- 筛选具有 **signInType** 或`emailAddress`忽略颁发者值的`userName`条目。 这是设计使然的。 
+- 不支持筛选具有 **signInType** 的 `userPrincipalName` 条目。 这可以通过筛选用户对象上的 **userPrincipalName** 属性来实现。
+
+以下值仅支持对 **颁发者** 进行筛选：`google.com`、`facebook.com`和 `mail``phone`。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

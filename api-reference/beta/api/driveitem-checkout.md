@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
-description: 签出 driveItem 资源，以防止其他人编辑该文档，并且在文档签入前，您所做的更改将一直可见。
+description: 查看 driveItem 资源以防止其他人编辑文档，并且在签入记录之前，更改将不可见。
 title: driveItem：签出
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8697f139243c59bd05d88612293645bfb42733ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 60a780e48114d322425a0f8ca8c3b7ff362cf5d3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963843"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093661"
 ---
 # <a name="driveitem-checkout"></a>driveItem：签出
 
@@ -18,7 +18,7 @@ ms.locfileid: "48963843"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-签出 **driveItem** 资源，以防止其他人编辑该文档，并在 [签](driveitem-checkin.md)入所记录的文档之前阻止您的更改可见。
+查看 **driveItem** 资源以防止其他人编辑文档，并防止更改可见，直到 [签入](driveitem-checkin.md)记录。
 
 ## <a name="permissions"></a>权限
 
@@ -73,12 +73,16 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 [!INCLUDE [sample-code](../includes/snippets/java/checkout-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/checkout-item-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ## <a name="response"></a>响应
 
-如果成功，API 调用将返回 `204 No content` 。
+如果成功，API 调用将返回 `204 No content`。
 
 <!-- { "blockType": "response" } -->
 

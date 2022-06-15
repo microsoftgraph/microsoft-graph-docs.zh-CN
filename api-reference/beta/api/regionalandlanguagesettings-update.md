@@ -5,12 +5,12 @@ author: jasonbro
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5be6239d350e8964583967f9647396f921b2a1e3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6ab22ef6f3f51ff43b7441157e85ede2a5d93a59
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102417"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66096076"
 ---
 # <a name="update-regionalandlanguagesettings"></a>更新 regionalAndLanguageSettings
 
@@ -18,20 +18,20 @@ ms.locfileid: "62102417"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [regionalAndLanguageSettings 对象的部分或所有](../resources/regionalAndLanguageSettings.md) 属性。
+更新 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象的部分或全部属性。
 
 ## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型                   |权限 (权限级别从最低到最多)      |
+|权限类型                   |权限 (从最少到大多数特权)      |
 |----------------------------------|---------------------------------------------- |
 |委派（工作或学校帐户）|User.ReadWrite、User.ReadWrite.All             |
-|委派 (个人帐户)       |User.ReadWrite、User.ReadWrite.All             |
+|委托 (个人帐户)       |User.ReadWrite、User.ReadWrite.All             |
 |应用程序                       |User.ReadWrite、User.ReadWrite.All             |
 
 ## <a name="http-request"></a>HTTP 请求
 
-更新用户的所有区域和语言设置：
+若要更新用户的所有区域和语言设置，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /settings/regionalAndLanguageSettings
@@ -52,11 +52,11 @@ PATCH /settings/regionalAndLanguageSettings
 ## <a name="request-body"></a>请求正文
  **PUT**：在请求正文中，提供 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象。
  
- **PATCH：** 仅提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了实现最佳性能，不得添加未变化的现有值。
+ **PATCH**：仅提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了实现最佳性能，不得添加未变化的现有值。
  
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 响应代码和更新的 **regionalAndLanguageSettings** 对象。
+如果成功，此方法将返回 200 响应代码和更新的 **regionalAndLanguageSettings** 对象。
 
 ## <a name="example"></a>示例
 
@@ -136,8 +136,9 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/put-regionalandlanguagesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
-
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -206,7 +207,6 @@ Content-type: application/json
 ---
 
 
----
 
 #### <a name="response"></a>响应
 

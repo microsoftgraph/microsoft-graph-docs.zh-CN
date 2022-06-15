@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: rkarim-ms
-ms.openlocfilehash: 4cefce6d174fff53527ecef0cf921839157fe355
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 8f8d004f67dd14917067c250a66155525b26f2f5
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398768"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093640"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>更新 governanceRoleAssignmentRequests
 
@@ -68,7 +68,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 |参数      |类型                   |必需 |说明|
 |:-------------|:----------------------|:--------|:----------|
 |reason        |String                 |✓        |管理员为其决策提供的原因。|
-|决定        |字符串                 |✓        |角色分配请求的管理员决策。 该值应更新为 `AdminApproved` 或 `AdminDenied`更新。|
+|决定        |String                 |✓        |角色分配请求的管理员决策。 该值应更新为 `AdminApproved` 或 `AdminDenied`更新。|
 |schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | 角色分配请求的计划。 对于状态，这是必需的 `AdminApproved`。|
 |assignmentState      |String|         | 分配的状态和值可以是 `Eligible` 或 `Active`。 若要进行决策 `AdminApproved`，需要执行此操作。 |
 ### <a name="response"></a>响应
@@ -101,6 +101,10 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updaterequest-governanceroleassignmentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updaterequest-governanceroleassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

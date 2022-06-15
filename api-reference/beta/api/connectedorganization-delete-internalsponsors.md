@@ -1,24 +1,24 @@
 ---
-title: 删除已连接的组织内部发起人
-description: 从已连接的组织的内部发起人中删除用户或组。
-localization_priority: Normal
+title: 删除连接的组织内部发起人
+description: 从连接组织的内部发起人中删除用户或组。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1b2eeb4df11235ca021b348bc1ad5f0068565dfe
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: b3a0d1a127393c693be593c51e15a350dd6cc260
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786164"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094269"
 ---
-# <a name="remove-connected-organization-internal-sponsor"></a>删除已连接的组织内部发起人
+# <a name="remove-connected-organization-internal-sponsor"></a>删除连接的组织内部发起人
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从已连接的组织的内部发起人中删除用户或组。 内部发起人是一组用户可以代表该连接的组织的其他用户批准请求。
+从连接组织的内部发起人中删除用户或组。 内部发起人是一组用户，可以代表来自该连接组织的其他用户批准请求。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-internalsponsor-from-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-internalsponsor-from-connectedorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

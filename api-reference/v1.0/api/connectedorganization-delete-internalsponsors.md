@@ -1,22 +1,22 @@
 ---
 title: 删除 internalSponsors
-description: 从已连接的组织的内部发起人中删除用户或组。
+description: 从连接组织的内部发起人中删除用户或组。
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e64a08c5c3b70bbce3842111a93df8166485c3ac
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 52e962df12889c8ecc70fe52a7df0aaf274630f6
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336001"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093371"
 ---
 # <a name="remove-internalsponsors"></a>删除 internalSponsors
 
 命名空间：microsoft.graph
 
-从已连接的组织的内部发起人中删除用户或组。 内部 [发起](../resources/internalsponsors.md) 人是一组用户可以代表该连接的组织的其他用户批准请求。
+从连接组织的内部发起人中删除用户或组。 [内部发起人](../resources/internalsponsors.md)是一组用户，可以代表来自该连接组织的其他用户批准请求。
 
 
 ## <a name="permissions"></a>权限
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-internalsponsor-from-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-internalsponsor-from-connectedorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

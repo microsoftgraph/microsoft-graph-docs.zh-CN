@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4298761d0a6f74b6757a9fbe59637579510bfbf6
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: c6c7cc3d49163aa8e466ac1fb9b3c53acc6b7a8c
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65327886"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66096077"
 ---
 ```go
 
@@ -15,13 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewRegionalAndLanguageSettings()
 requestBody.SetAuthoringLanguages( []LocaleInfo {
     msgraphsdk.NewLocaleInfo(),
-    SetAdditionalData(map[string]interface{}{
-        "locale": "en-US",
-    }
+locale := "en-US"
+    SetLocale(&locale)
     msgraphsdk.NewLocaleInfo(),
-    SetAdditionalData(map[string]interface{}{
-        "locale": "es-MX",
-    }
+locale := "es-MX"
+    SetLocale(&locale)
 }
 defaultRegionalFormat := msgraphsdk.NewLocaleInfo()
 requestBody.SetDefaultRegionalFormat(defaultRegionalFormat)

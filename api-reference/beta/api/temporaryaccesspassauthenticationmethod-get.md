@@ -1,23 +1,23 @@
 ---
 title: 获取 temporaryAccessPassAuthenticationMethod
-description: 读取 temporaryAccessPassAuthenticationMethod 对象的属性和关系。
+description: 检索用户的 temporaryAccessPassAuthenticationMethod 对象。
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2e14752159924f6bc8d293bc592b23e05c497eac
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: ae0306b18688367679d5adfbb3334b3f16f23757
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971012"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095669"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethod"></a>获取 temporaryAccessPassAuthenticationMethod
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户的单个  [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象。
+检索用户的单个 [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,10 +36,10 @@ ms.locfileid: "65971012"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员对另一用户执行操作的委派方案，管理员需要以下 [Azure AD 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
-* 全局管理员
+* 全球管理员
 * 全局读取者
 * 特权身份验证管理员
 * 身份验证管理员
@@ -67,51 +67,22 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{t
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象的集合。 此 API 只会返回集合中的单个对象，因为用户只能有一个临时访问传递方法。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_temporaryaccesspassauthenticationmethod"
+  "name": "get_temporaryAccessPassAuthenticationMethod"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/temporaryAccessPassMethods/30fd0dfc-0dfc-30fd-fc0d-fd30fc0dfd30
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods/05267842-25b2-4b21-8abd-8e4982796f7f
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-temporaryaccesspassauthenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-temporaryaccesspassauthenticationmethod-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-temporaryaccesspassauthenticationmethod-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-temporaryaccesspassauthenticationmethod-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[转到](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-temporaryaccesspassauthenticationmethod-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-temporaryaccesspassauthenticationmethod-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -123,16 +94,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
-    "id": "30fd0dfc-0dfc-30fd-fc0d-fd30fc0dfd30",
+  "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
+    "id": "6f1967b7-15e8-4935-ac26-d50770ed07a7",
     "temporaryAccessPass": null,
-    "createdDateTime": "String (timestamp)",
-    "startDateTime": "String (timestamp)",
-    "lifetimeInMinutes": "Integer",
-    "isUsableOnce": "Boolean",
-    "isUsable": "Boolean",
-    "methodUsabilityReason": "String"
-  }
+    "createdDateTime": "2022-06-02T16:21:09.5893903Z",
+    "startDateTime": "2022-06-05T00:00:00Z",
+    "lifetimeInMinutes": 60,
+    "isUsableOnce": false,
+    "isUsable": false,
+    "methodUsabilityReason": "NotYetValid"
 }
 ```

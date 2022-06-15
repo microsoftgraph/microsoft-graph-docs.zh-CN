@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 867382f3ef4f8841edf78d10a142c4f5739f2fbc
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: e246c739e55a2a94472df00dff5747b7ffba8511
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900371"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094605"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -46,7 +46,7 @@ ms.locfileid: "65900371"
 |[组](../resources/group.md) | Group.Read.All、Subscription.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All、Subscription.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All、Subscription.Read.All | 不支持 | Sites.ReadWrite.All |
-|[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read、Subscription.Read.All | Mail.ReadBasic、Mail.Read、Subscription.Read.All | Mail.ReadBasic、Mail.Read |
+|[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read、Subscription.Read.All | Mail.ReadBasic、Mail.Read、Subscription.Read.All | Mail.Read |
 |[状态](../resources/presence.md) | Presence.Read.All、Subscription.Read.All | 不支持 | 不支持 |
 |[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |

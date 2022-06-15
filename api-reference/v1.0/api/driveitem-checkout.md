@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: 签出 driveItem 资源以防止其他人编辑文档，并且您的更改在签入文档之前不可见。
+description: 查看 driveItem 资源以防止其他人编辑文档，并且在签入记录之前，更改将不可见。
 title: driveItem：签出
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fd10f488467047e4d5df3048b86fd98b21158f26
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 683e16aab6670c0ccc6beb1304176b0eb767b18c
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063459"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093262"
 ---
 # <a name="driveitem-checkout"></a>driveItem：签出
 
 命名空间：microsoft.graph
 
-签出 **driveItem** 资源以防止其他人编辑文档，并阻止所做的更改在签入文档之前 [可见](driveitem-checkin.md)。
+查看 **driveItem** 资源以防止其他人编辑文档，并防止更改可见，直到 [签入](driveitem-checkin.md)记录。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ POST /users/{userId}/drive/items/{itemId}/checkout
 
 ## <a name="response"></a>响应
 
-如果成功，API 调用将返回 `204 No content` 。
+如果成功，API 调用将返回 `204 No content`。
 
 ## <a name="example"></a>示例
 
@@ -75,6 +75,10 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/checkout-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/checkout-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
