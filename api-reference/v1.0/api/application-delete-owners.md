@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: cf67ad148ca1a31ec298b939c2d948ea0c6aabd9
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 093d153ca9224219c06586457d74fdccf54b6aad
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695404"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118331"
 ---
 # <a name="remove-owner"></a>删除所有者
 
@@ -31,9 +31,11 @@ ms.locfileid: "65695404"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}/owners/{id}/$ref
-
 ```
-## <a name="request-headers"></a>请求标头
+> [!CAUTION]
+> 如果`/$ref`未追加到请求，并且调用应用有权管理应用所有者的用户，则也会从Azure Active Directory (Azure AD) 中删除用户;否则返回`403 Forbidden`错误。 可以通过还 [原已删除的项 API 还原已删除的](directory-deleteditems-restore.md)用户。
+
+## <a name="request-headers"></a>请求头
 | 名称 | 说明|
 |:---- |:---------- |
 | Authorization | Bearer {token}。必需。  |

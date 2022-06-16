@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph 概述
-description: Microsoft Graph 是 Microsoft 365 中数据和智能的网关。Microsoft Graph 提供一种统一可编程性模型，可用于利用 Microsoft 365、Enterprise Mobility + Security 和 Windows 10 中的大量数据。
+description: 使用 Microsoft Graph 数据和其他数据集来获取见解和分析，延长 Microsoft 365 体验并构建独特的智能应用。
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 195425a45bd89e299fe623185553af07170cd489
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: fcc08f9cbb1fb002399957c58e7634621a1d7218
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549286"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093078"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph 概述
 
@@ -18,6 +18,7 @@ Microsoft Graph 是 Microsoft 365 中通往数据和智能的网关。 它提供
 ![Microsoft Graph、Microsoft Graph 数据连接和 Microsoft Graph 连接器可实现广泛的 Microsoft 365 体验，还能构建智能应用。](images/microsoft-graph-dataconnect-connectors-enhance.png)
 
 ## <a name="data-and-services-powering-the-microsoft-365-platform"></a>支持 Microsoft 365 平台的数据和服务
+
 在 Microsoft 365 平台中，这三大组件让数据访问和传输变得轻松：
 
 - **Microsoft Graph API** 提供了一个终结点 `https://graph.microsoft.com`，用于访问 Microsoft 云中丰富的以人为中心的数据和见解，包括 Microsoft 365、Windows 和企业移动性 + 安全性。 你可使用 REST API 或 SDK 来访问终结点并构建支持横跨生产力、协作、教育、人员和工作场所智能等 Microsoft 365 场景的应用。 Microsoft Graph 还包含一组功能强大的服务，可管理用户和设备标识、访问、合规性和安全性，并帮助保护组织防止数据泄露或丢失。
@@ -34,7 +35,6 @@ Microsoft Graph 公开了 REST API 和客户端库，它们可访问以下 Micro
 - **企业移动性 + 安全性服务：** 高级威胁分析、高级威胁防护、Azure Active Directory、标识管理器和 Intune
 - **Windows 服务：** 活动、设备、通知、通用打印
 - **Dynamics 365 Business Central 服务**
-
 
 要了解详细信息，请参阅 [Microsoft Graph 中的主要服务和功能](overview-major-services.md)。
 
@@ -124,7 +124,6 @@ Microsoft Graph 连接器创建与外部数据源的连接、对数据编制索�
 | **用户同意** | 自我<br>资源类型 | 无 |
 | **管理员同意** | 整个组织<br>资源类型 | 选择用户组<br>资源类型和属性<br>排除用户 |
 | **访问工具** | RESTful Web 查询 | Azure 数据工厂 |
-
 
 ## <a name="next-steps"></a>后续步骤
 

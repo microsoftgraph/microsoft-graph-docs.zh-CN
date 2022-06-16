@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 04361ff86fc4106d0792b43b2ea7638a41e04b7c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: e43b300119e8a3efb1b8deca5d82b36a26c339e3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337894"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093065"
 ---
 # <a name="change-notifications-for-outlook-resources-in-microsoft-graph"></a>Microsoft Graph 中 Outlook 资源的更改通知
 
@@ -36,13 +36,13 @@ Microsoft Graph API 允许你订阅对资源的更改（包括资源的创建、
 
 [!INCLUDE [outlook-subscription-notes](../includes/outlook-subscription-notes.md)]
 
-根据资源，下表中指定的权限是调用此 API 所需的最低权限。
+根据资源，使用下表中指定的最低权限调用此 API。
 
 | 资源| 支持的资源路径| 委派（工作或学校帐户）| 委派（个人 Microsoft 帐户）| 应用程序|
 |:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
 |[联系人](/graph/api/resources/contact) | 对用户邮箱中的所有个人联系人更改： <br>`/me/contacts`<br>`/users/{id}/contacts`<br>对用户 contactFolder 中的联系人的更改：<br>`/users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
 |[event](/graph/api/resources/event)     | 对用户邮箱中的所有事件更改： <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
-|[邮件](/graph/api/resources/message) | 对用户邮箱中的所有邮件更改： <br>`/me/messages`<br>`/users/{id}/messages`<br>对用户 mailFolder 中的邮件的更改：<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
+|[邮件](/graph/api/resources/message) | 对用户邮箱中的所有邮件更改： <br>`/me/messages`<br>`/users/{id}/messages`<br>对用户 mailFolder 中的邮件的更改：<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.Read |
 
 ### <a name="include-resource-data-in-notification-payload-preview"></a>在通知有效负载中包括资源数据（预览版）
 

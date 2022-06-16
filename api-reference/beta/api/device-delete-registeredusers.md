@@ -1,16 +1,16 @@
 ---
 title: 删除 registeredUsers
-description: 删除作为设备的注册用户的用户。
+description: 将用户删除为设备的已注册用户。
 ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1a356633196358d94e6a486ffda336af52206f84
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: a10dd74a15f531316e08d745087e578b2e0e2b0b
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256401"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118597"
 ---
 # <a name="delete-registereduser"></a>删除 registeredUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "60256401"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除作为设备的注册用户的用户。
+将用户删除为设备的已注册用户。
 
 ## <a name="permissions"></a>权限
 
@@ -37,8 +37,10 @@ ms.locfileid: "60256401"
 ```http
 DELETE /devices/{id}/registeredUsers/{id}/$ref
 ```
+> [!CAUTION]
+> 如果`/$ref`未追加到请求，并且调用应用有权管理设备注册用户，则也会从Azure Active Directory (Azure AD) 中删除该用户;否则返回`403 Forbidden`错误。 可以通过还 [原已删除的项 API 还原已删除的](directory-deleteditems-restore.md)用户。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。 |

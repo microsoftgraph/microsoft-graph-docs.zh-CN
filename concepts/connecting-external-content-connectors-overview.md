@@ -1,16 +1,16 @@
 ---
 title: Microsoft Graph 连接器概述
-description: Microsoft Graph 连接器将外部服务中的内容引入到 Microsoft Graph 中，使外部数据能够支持 Microsoft 365 智能体验。
+description: 使用 Microsoft Graph 连接器将外部服务中的内容引入到 Microsoft Graph 中，使外部数据能够支持 Microsoft 365 智能体验。
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 0ca7c660a0c2db5ad83bda3253c2d330e390320e
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 8a536bf78a2ebccb026e7a630c1985184e5d59ed
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176626"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092658"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Microsoft Graph 连接器概述
 

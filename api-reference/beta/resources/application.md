@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 5ae85fb034e508460057fb11725df349e785f1ce
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: 6798369b62aab7195ebe56c6ad225a011f244466
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034542"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118324"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "66034542"
 |[列出应用程序](../api/application-list.md) | [application](application.md) 集合 | 检索该组织中应用程序的列表。 |
 |[创建应用程序](../api/application-post-applications.md) | [application](application.md) | 创建（注册）新应用程序。|
 |[获取应用程序](../api/application-get.md) | [application](application.md) |读取 application 对象的属性和关系。|
-|[更新应用程序](../api/application-update.md) | [application](application.md) |更新 application 对象。 |
+|[更新应用程序](../api/application-update.md) | 无 |更新 application 对象。 |
 |[删除应用程序](../api/application-delete.md) | 无 |删除 application 对象。 |
 |[列出已删除的应用程序](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索最近删除的应用程序的列表。 |
 | [列出用户拥有的已删除应用程序](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) 集合 | 检索租户中最近 30 天内删除的应用程序以及用户拥有的应用程序。 |

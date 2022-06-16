@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3e4d0abfdf8666dbb2c15d31151571a0c23a3d2b
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 5a93afe3f426b428c7183e3cd971e9c83626b223
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060575"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118660"
 ---
 # <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a> (委派的权限授予) 获取 oAuth2PermissionGrant
 
@@ -21,6 +21,10 @@ ms.locfileid: "65060575"
 检索 [由 oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示的单个委派权限授予的属性。
 
 **oAuth2PermissionGrant** 表示已授予客户端应用程序代表已登录用户访问 API 的委派权限。
+
+> [!NOTE]
+> 此请求对最近创建、更新或删除的委派权限授予可能具有复制延迟。
+
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +48,7 @@ GET /oauth2PermissionGrants/{id}
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|

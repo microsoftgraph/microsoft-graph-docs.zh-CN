@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph API 配置基于 SAML 的单一登录
-description: 了解如何通过使用 Microsoft Graph API 来自动配置基于 SAML 的单一登录来节省时间。
+description: 按照以下步骤使用 Microsoft Graph API 在 Azure AD 中为应用程序创建和配置基于 SAML 的单一登录 (SSO)。
 author: kenwith
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.openlocfilehash: 06fb882695affc40898d7c9391f655e0bdccfff7
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 3f4d56fec8e09f7e530687b8f8777390da3d96a2
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65314821"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095138"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 为应用程序配置基于 SAML 的单一登录
 
@@ -20,9 +20,9 @@ ms.locfileid: "65314821"
 
 ## <a name="prerequisites"></a>先决条件
 
-本教程的前提是使用 Microsoft Graph Explorer，但是可以使用 Postman，也可以创建自己的客户端应用程序来调用 Microsoft Graph。 如果要在本教程中调用 Microsoft Graph API，需要使用具有全局管理员角色和适当权限的帐户。 对于本教程，需要`Application.ReadWrite.All`、`AppRoleAssignment.ReadWrite.All`、`Policy.Read.All`、`Policy.ReadWrite.ApplicationConfiguration` 和 `User.ReadWrite.All` 委派权限。 完成以下步骤以在 Microsoft Graph 浏览器中设置权限：
+本教程的前提是使用 Graph 浏览器，但你可使用 Postman，也可创建自己的客户端应用来调用 Microsoft Graph。 若要在本教程中调用 Microsoft Graph API，需要使用具有全局管理员角色和适当权限的帐户。 对于本教程，需要`Application.ReadWrite.All`、`AppRoleAssignment.ReadWrite.All`、`Policy.Read.All`、`Policy.ReadWrite.ApplicationConfiguration` 和 `User.ReadWrite.All` 委派权限。 完成以下步骤以在 Graph 浏览器中设置权限：
 
-1. 转到 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
+1. 转到 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
 2. 选择“**使用 Microsoft 登录**”，然后使用 Azure AD 全局管理员账户登录。 成功登录后，可在左侧窗格中看到用户帐户详细信息。
 3. 选择用户帐户详细信息右侧的设置图标，然后选择“**权限**”。
 

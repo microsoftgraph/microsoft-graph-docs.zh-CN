@@ -6,6 +6,7 @@ items:
     items:
       - name: 概述
         href: /graph/auth/index?context=graph/api/1.0
+        displayName: 'authentication, authorization, authenticate, authorize'
       - name: 基本信息
         href: /graph/auth/auth-concepts?context=graph/api/1.0
       - name: 注册应用
@@ -20,42 +21,75 @@ items:
         href: /graph/auth-cloudsolutionprovider?context=graph/api/1.0
       - name: 限制邮箱访问
         href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
+      - name: 解决授权错误
+        href: /graph/resolve-auth-errors?context=graph/api/1.0
   - name: 使用 API
     items:
       - name: 概述
         href: /graph/use-the-api?context=graph/api/1.0
+        displayName: 'Microsoft Graph API, API, Microsoft Graph REST API, REST API'
+      - name: 访问数据和方法
+        href: /graph/traverse-the-graph?context=graph/api/1.0
       - name: 分页
         href: /graph/paging?context=graph/api/1.0
-      - name: 使用查询参数
-        href: /graph/query-parameters?context=graph/api/1.0
+      - name: 查询参数
         items:
+          - name: 使用查询参数
+            href: /graph/query-parameters?context=graph/api/1.0
+            displayName: 'OData query parameters, OData'
           - name: 使用搜索查询参数
             href: /graph/search-query-parameter?context=graph/api/1.0
           - name: 高级查询功能
             href: /graph/aad-advanced-queries?context=graph/api/1.0
+          - name: 使用查询参数优化请求
+            href: /learn/modules/optimize-data-usage
       - name: 批处理
-        displayName: Batch requests
         href: /graph/json-batching?context=graph/api/1.0
+        displayName: Batch request
       - name: 限制
-        href: /graph/throttling?context=graph/api/1.0
+        items:
+          - name: 概述
+            href: /graph/throttling?context=graph/api/1.0
+            displayName: throttling
+          - name: 优化网络流量
+            href: /learn/modules/optimize-network-traffic
       - name: 更改通知
-        displayname: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
         items:
           - name: 概述
             href: /graph/api/resources/webhooks?context=graph/api/1.0
-          - name: 教程
+            displayName: 'change notifications, WebHooks, set up notifications for changes in resource data'
+          - name: 更改通知教程
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: 缺失更改通知
-            href: /graph/webhooks-lifecycle
+            href: /graph/webhooks-lifecycle?context=graph/api/1.0
           - name: 与资源数据有关的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
-          - name: 获取聊天和信道消息的更改通知
-            href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
+          - name: 获取通过不同方式传送的通知（预览版）
+            href: /graph/change-notifications-delivery?context=graph/api/1.0
+          - name: 更改云打印的通知
+            href: /graph/universal-print-webhook-notifications?context=graph/api/1.0
+          - name: Microsoft Teams 资源的更改通知
+            items:
+              - name: 通知类型和有效负载
+                href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/1.0
+                displayName: 'change notifications, Teams, Microsoft Teams'
+              - name: Teams 和频道
+                href: /graph/teams-changenotifications-team-and-channel?context=graph/api/1.0
+              - name: 团队和频道成员身份
+                href: /graph/teams-changenotifications-teamMembership?context=graph/api/1.0
+              - name: 聊天和频道消息
+                href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
+              - name: 聊天
+                href: /graph/teams-changenotifications-chat?context=graph/api/1.0
+              - name: 团队成员身份
+                href: /graph/teams-changenotifications-chatMembership?context=graph/api/1.0
+          - name: 更改 Outlook 资源的通知
+            href: /graph/outlook-change-notifications-overview?context=graph/api/1.0
       - name: 更改跟踪
-        displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
         items:
           - name: 概述
             href: /graph/delta-query-overview?context=graph/api/1.0
+            displayName: 'Delta query, track changes, change tracking'
           - name: 获取事件更改（示例）
             href: /graph/delta-query-events?context=graph/api/1.0
           - name: 获取组更改（示例）
@@ -65,10 +99,10 @@ items:
           - name: 获取用户更改（示例）
             href: /graph/delta-query-users?context=graph/api/1.0
       - name: 添加自定义数据
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
         items:
           - name: 概述
             href: /graph/extensibility-overview?context=graph/api/1.0
+            displayName: 'add custom data, extensions, resources using extensions'
           - name: 使用开放扩展（示例）
             href: /graph/extensibility-open-users?context=graph/api/1.0
           - name: 使用架构扩展（示例）
@@ -77,6 +111,7 @@ items:
         items:
           - name: 入门
             href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/1.0
+            displayName: 'Graph Explorer, try the API, try API'
           - name: 使用 Graph 管理器
             href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
       - name: 使用 Postman
@@ -84,13 +119,12 @@ items:
       - name: 系统邮件
         href: /graph/system-messages?context=graph/api/1.0
   - name: 迁移
-    expanded: false
     items:
       - name: Azure AD Graph
-        displayname: 'Migration, Azure AD Graph'
         items:
-          - name: 概述
-            href: /graph/migrate-azure-ad-graph-overview
+          - name: 迁移 Azure AD Graph 应用
+            href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
+            displayName: 'Migration, Azure AD Graph, migrate'
           - name: 应用迁移清单
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
           - name: 1：查看差异
@@ -119,16 +153,28 @@ items:
                 href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/1.0
           - name: 4：部署、测试和扩展
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
-          - name: 迁移常见问题解答
+          - name: Azure AD Graph 迁移常见问题解答
             href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
+            displayName: 'migrate, frequently asked questions'
           - name: 配置 Azure AD Graph 权限
             href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
+      - name: Exchange Web 服务
+        items:
+          - name: 迁移 EWS 应用
+            href: /graph/migrate-exchange-web-services-overview?context=graph/api/1.0
+            displayName: 'Migration, Exchange Web Services, EWS, migrate'
+          - name: 身份验证
+            href: /graph/migrate-exchange-web-services-authentication?context=graph/api/1.0
+          - name: API 映射
+            href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/1.0
   - name: 使用 SDK
     items:
       - name: 概述
         href: /graph/sdks/sdks-overview?context=graph/api/1.0
+        displayName: 'SDK, SDKs, Microsoft Graph SDK'
       - name: 安装 SDK
         href: /graph/sdks/sdk-installation?context=graph/api/1.0
+        displayName: 'install SDK, install SDKs, installation'
       - name: 创建客户端
         href: /graph/sdks/create-client?context=graph/api/1.0
       - name: 自定义客户端
@@ -147,25 +193,29 @@ items:
         href: /graph/sdks/use-beta?context=graph/api/1.0
       - name: 使用 PowerShell
         items:
-          - name: 安装
-            href: /graph/powershell/installation?context=graph/api/1.0
+          - name: PowerShell 概述
+            href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
+          - name: 安装 PowerShell SDK
+            href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
           - name: 入门
-            href: /graph/powershell/get-started?context=graph/api/1.0
-          - name: SDK 导航
-            href: /graph/powershell/navigating?context=graph/api/1.0
+            href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
+          - name: 导航 PowerShell SDK
+            href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
           - name: 仅应用身份验证
-            href: /graph/powershell/app-only?context=graph/api/1.0
+            href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
   - name: 使用工具包
     items:
-      - name: 工具包概述
+      - name: 概述
         href: /graph/toolkit/overview?context=graph/api/1.0
+        displayName: 'Microsoft Graph Toolkit, toolkit'
       - name: 入门
         items:
-          - name: 概述
+          - name: 入门
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
-          - name: 用于 React 的 /graph/toolkit
+            displayName: 'Microsoft Graph Toolkit, toolkit'
+          - name: React 工具包
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
-          - name: SPFx 的 /graph/toolkit
+          - name: SPFx 工具包
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
       - name: 构建首个应用
         items:
@@ -189,6 +239,7 @@ items:
         items:
           - name: 使用提供程序
             href: /graph/toolkit/providers/providers?context=graph/api/1.0
+            displayName: 'Microsoft Graph Toolkit providers, toolkit provider'
           - name: MSAL 提供商
             href: /graph/toolkit/providers/msal?context=graph/api/1.0
           - name: MSAL2 提供商
@@ -199,6 +250,8 @@ items:
             href: /graph/toolkit/providers/teams?context=graph/api/1.0
           - name: Teams MSAL2 提供商
             href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
+          - name: TeamsFx 提供商
+            href: /graph/toolkit/providers/teamsfx?context=graph/api/1.0
           - name: 电子提供程序
             href: /graph/toolkit/providers/electron?context=graph/api/1.0
           - name: 代理服务器提供商
@@ -209,6 +262,7 @@ items:
         items:
           - name: 登录
             href: /graph/toolkit/components/login?context=graph/api/1.0
+            displayName: 'Microsoft Graph toolkit components, toolkit component'
           - name: 获取
             href: /graph/toolkit/components/get?context=graph/api/1.0
           - name: 人员
@@ -249,17 +303,21 @@ items:
     items:
       - name: 最佳做法
         href: /graph/best-practices-concept?context=graph/api/1.0
+        displayName: 'Microsoft Graph, Best practices for working with Microsoft Graph'
       - name: 已知问题
         href: /graph/known-issues?context=graph/api/1.0
-      - name: 更改日志
+        displayName: 'Microsoft Graph, Known issues with Microsoft Graph'
+      - name: API 更改日志
         href: 'https://developer.microsoft.com/graph/changelog'
       - name: 错误
         href: /graph/errors?context=graph/api/1.0
-  - name: v1.0 参考
+        displayName: Microsoft Graph error responses and error resource types
+  - name: API v1.0 参考
     expanded: true
     items:
       - name: 概述
         href: overview.md
+        displayName: Microsoft Graph REST API v1.0 reference
       - name: 用户
         items:
           - name: 概述
@@ -386,9 +444,9 @@ items:
                 href: api/user-list-transitivememberof.md
           - name: 见解
             items:
-              - name: Office Graph 见解
+              - name: Office Graph见解
                 items:
-                  - name: Office Graph 见解
+                  - name: Office Graph见解
                     href: resources/officegraphinsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -455,10 +513,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: 更新邮箱设置
                     href: api/user-update-mailboxsettings.md
-              - name: Outlook 用户服务
+              - name: Outlook用户服务
                 expanded: true
                 items:
-                  - name: Outlook 用户
+                  - name: Outlook用户
                     href: resources/outlookuser.md
                   - name: 创建类别
                     href: api/outlookuser-post-mastercategories.md
@@ -1320,7 +1378,7 @@ items:
                     href: api/participant-mute.md
                   - name: 邀请参与者
                     href: api/participant-invite.md
-                  - name: 开始保留音乐
+                  - name: '"开始"菜单保留音乐'
                     href: api/participant-startholdmusic.md
                   - name: 停止按住音乐
                     href: api/participant-stopholdmusic.md
@@ -4196,7 +4254,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: 所有许可的用户分配目标
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Android 企业始终在 VPN 包类型上
+                  - name: Android企业始终在 VPN 包类型上
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: 符合性状态
                     href: resources/intune-shared-compliancestatus.md
@@ -4263,7 +4321,7 @@ items:
                     href: api/serviceannouncement-list-issues.md
                   - name: 获取问题
                     href: api/servicehealthissue-get.md
-                  - name: 获取事件后审阅报告
+                  - name: 获取帖子事件审查报告
                     href: api/servicehealthissue-incidentreport.md
               - name: 服务更新消息
                 href: resources/serviceupdatemessage.md
@@ -4633,7 +4691,7 @@ items:
                 href: api/permission-update.md
               - name: 删除权限
                 href: api/permission-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -5253,7 +5311,7 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/fido2authenticationmethodconfiguration-delete.md
-                      - name: Microsoft Authenticator 策略
+                      - name: Microsoft Authenticator策略
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -5455,7 +5513,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: 更新
                         href: api/identityapiconnector-update.md
-                      - name: 上传客户端证书
+                      - name: Upload客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
@@ -5984,7 +6042,7 @@ items:
                 href: api/user-list-people.md
           - name: 见解
             items:
-              - name: Office Graph 见解
+              - name: Office Graph见解
                 href: resources/officegraphinsights.md
               - name: 共享的内容
                 href: resources/insights-shared.md
@@ -6108,7 +6166,7 @@ items:
                 items:
                   - name: 列出预配
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365 使用情况报告
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md

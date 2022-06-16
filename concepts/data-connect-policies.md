@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph 数据连接策略和计费
-description: 介绍支持哪些策略以及数据连接计费模型。
+description: 了解使用 Microsoft 365 数据构建的应用支持的 Azure 策略以及与你正在使用的 Azure 数据工厂关联的账单。
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 83c285d94a060f5e66c76e27ab041a04c4da8d7a
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: cf3942063936f2b26811251290c9c4a135dfd43e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176584"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093981"
 ---
 # <a name="microsoft-graph-data-connect-policies-and-billing"></a>Microsoft Graph 数据连接策略和计费
 

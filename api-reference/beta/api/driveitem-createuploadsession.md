@@ -5,12 +5,12 @@ title: driveItem：createUploadSession
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: dfb6b231b0db8664b7c01fd81f2697f4387554b6
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: e121323bd1d564b27a253c055f29a4b0c4b10372
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62442643"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118345"
 ---
 # <a name="driveitem-createuploadsession"></a>driveItem：createUploadSession
 
@@ -20,9 +20,9 @@ ms.locfileid: "62442643"
 
 通过创建上传会话，使应用可以上传最大大小的文件。
 
-上传会话允许应用在连续的 API 请求中上传文件范围，从而允许在上传正在进行时连接中断时恢复传输。
+上传会话允许应用在顺序 API 请求中上传文件范围，这允许在上传过程中删除连接时恢复传输。
 
-若要使用上载会话上载文件：
+若要使用上传会话上传文件，请执行以下操作：
 
 1. [创建上载会话](#create-an-upload-session)
 2. [将字节上传到上传会话](#upload-bytes-to-the-upload-session)
@@ -409,6 +409,10 @@ Content-Type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 [mediaSource]: ../resources/mediaSource.md
+
+## <a name="see-also"></a>另请参阅
+
+[大文件上传](/concepts/sdks/large-file-upload.md?view=graph-rest-1.0&preserve-view=true&tabs=java)
 
 <!--
 {

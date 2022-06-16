@@ -1,16 +1,16 @@
 ---
 title: preAuthorizedApplication 资源类型
-description: 列出预授权的客户端应用程序
-localization_priority: Normal
+description: 列出预先授权的客户端应用程序
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: 94a8dad23492ca7a145c5839410edf0fd4a34877
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+author: psignoret
+ms.openlocfilehash: 40fcfc642444be507fbd8e8a85f0052732293cb3
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761161"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118534"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>preAuthorizedApplication 资源类型
 
@@ -18,14 +18,16 @@ ms.locfileid: "50761161"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出具有访问此应用程序 API 的指定权限的预授权客户端应用程序。 对于用户指定的权限，用户无需同意任何 (应用程序) 。 但是，未在预AuthorizedApplications中 (增量许可请求的其他权限（例如) ）将需要用户同意。
+列出预授权的客户端应用程序，这些应用程序具有访问此应用程序的 API 的指定委派权限。 用户不需要同意任何预先授权的应用程序 (指定) 权限。 但是，在 preAuthorizedApplications 中未列出的任何其他权限 (通过增量许可请求，例如) 将需要用户同意。
+
+在某些极少数情况下，属性中`permissionIds`列出的标识符可能引用服务主体`appRoles`属性)  (的[应用角色](approle.md)，指示该属性标识`appId`的客户端应用程序已预先授权该应用角色。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|appId|String| 应用程序的唯一标识符。 |
-|permissionIds|字符串集合| 应用程序所需的 [oauth2PermissionScopes 的唯](permissionscope.md) 一标识符。 |
+|appId|String| 客户端应用程序的唯一标识符。 |
+|permissionIds|字符串集合| 授予客户端应用程序 [的范围](permissionscope.md) 的唯一标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -59,5 +61,4 @@ ms.locfileid: "50761161"
   "suppressions": []
 }
 -->
-
 

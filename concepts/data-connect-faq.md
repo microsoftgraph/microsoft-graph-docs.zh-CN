@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph 数据连接常见问题解答
-description: 获取可帮助你利用 Microsoft Graph 数据连接的相关提示。
+description: 查找有关开发人员如何借助数据连接创建可提供对大规模 Microsoft Graph 数据集托管访问权限的应用的常见问题解答。
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 24a740efea421b18b1044401f0252102262da6b7
-ms.sourcegitcommit: 4ef29d4a2cfa1ccc4a3da649e683377b17b90108
+ms.openlocfilehash: 53e8231d4e60d498a687f5fb3c8ae6c92b4578d3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125883"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093127"
 ---
 # <a name="microsoft-graph-data-connect-frequently-asked-questions"></a>Microsoft Graph 数据连接常见问题解答
 
@@ -17,11 +17,11 @@ ms.locfileid: "65125883"
 
 ## <a name="is-microsoft-graph-data-connect-right-for-me"></a>Microsoft Graph 数据连接是否适合我？
 
-数据连接和 Microsoft Graph API 可以完全不同的方式访问相同的基础数据。 数据连接旨在批量提取大量数据，而 Microsoft Graph API 更适合于实时访问分散的数据集。 在某些情况下，将两者组合使用可能极具意义。 例如，可以使用 Microsoft Graph 数据连接来对去年的电子邮件数据进行初步提取，再使用 Microsoft Graph API 实时动态来分析不断变化的电子邮件。 数据连接和 Microsoft Graph API 是针对不同工作的不同工具。 有必要思考哪种访问方法最适合你的场景。 有关详细信息，请参阅[何时应使用 Microsoft Graph API 或数据连接](/graph/overview#when-should-i-use-microsoft-graph-api-or-data-connect)。
+数据连接和 Microsoft Graph API 提供对相同基础数据的访问权限，但方式非常不同。 数据连接旨在批量提取大量数据，而 Microsoft Graph API 更适合于实时访问离散的数据集。 在某些情况下，将两者组合使用可能极具意义。 例如，可以使用 Microsoft Graph 数据连接来对去年的电子邮件数据进行初步提取，再使用 Microsoft Graph API 对不断变化的电子邮件进行实时分析。 数据连接和 Microsoft Graph API 是用于不同作业的不同工具。 有必要思考哪种访问方法最适合你的场景。 有关详细信息，请参阅[何时应使用 Microsoft Graph API 或数据连接](/graph/overview#when-should-i-use-microsoft-graph-api-or-data-connect)。
 
 ## <a name="is-there-any-initial-overhead"></a>是否会有任何初始开销？
 
-数据连接专用于批量提取大量数据，因此在提取数据之前可能会产生一些开销。 此开销大约为 45 分钟，这意味着无论数据量如何，所有管道至少都将花费这么长时间。 数据量庞大时，这一成本可忽略不计；但是如果你的场景无法承受这么长的时间，Microsoft Graph API 可提供更好的方法。
+数据连接专用于批量提取大量数据，因此在提取数据之前可能会产生一些开销。 此开销大约为 45 分钟，这意味着无论数据量如何，所有管道至少都将花费这么长时间。 数据量庞大时，这一成本可忽略不计；但是如果你的方案无法承受这么长的时间，Microsoft Graph API 可提供更好的方法。
 
 ## <a name="how-much-do-i-have-to-pay-for-data-connect"></a>我需要为 Microsoft Graph 数据连接支付多少费用？
 

@@ -1,16 +1,16 @@
 ---
 title: 应用程序 API 概述
-description: 向 Azure AD 注册应用程序，以为其创建标识配置，允许其与 Azure AD 集成。
+description: 借助 Microsoft Graph API，可在 Azure AD 中执行以下操作：应用程序管理、本地发布、服务主体管理和同步。
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c824f8b70f273d31b37d2458e384dbb49ffcb0c7
-ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.openlocfilehash: 15bb312928eb3fe4810d3353d4e2d4c04b266be0
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63780525"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095067"
 ---
 # <a name="applications-api-overview"></a>应用程序 API 概述
 
@@ -26,7 +26,7 @@ Microsoft Graph API 使你能够管理与 Azure Active Directory 中的应用程
 
 ## <a name="application-management"></a>应用管理
 
-应用程序注册是指告知 Azure AD 有关应用程序的信息，包括其所在的 URL、身份验证后发送回复的 URL、标识应用程序的 URI 等。可以在 Microsoft Graph 中使用 [应用程序 API](/graph/api/resources/application?view=graph-rest-1.0) 以编程方式管理应用程序。
+应用程序注册是指告知 Azure AD 有关应用程序的信息，包括其所在的 URL、身份验证后发送回复的 URL、标识应用程序的 URI 等。可以在 Microsoft Graph 中使用 [应用程序 API](/graph/api/resources/application) 以编程方式管理应用程序。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
 
@@ -49,16 +49,16 @@ Microsoft Graph API 使你能够管理与 Azure Active Directory 中的应用程
 
 若要了解如何使用本地发布 API，请参阅以下教程及其相关的 API：
 - [使用 Microsoft Graph API 自动化应用程序代理的配置](./application-proxy-configure-api.md)
-    - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
-    - [application](/graph/api/resources/application?view=graph-rest-1.0)
+    - [applicationTemplate](/graph/api/resources/applicationtemplate)
+    - [application](/graph/api/resources/application)
     - [onPremisesPublishing](/graph/api/resources/onpremisespublishingprofile-root)
     - [connector](/graph/api/resources/connector)
     - [connectorGroup](/graph/api/resources/connectorgroup)
-    - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
+    - [servicePrincipal](/graph/api/resources/serviceprincipal)
 
 ## <a name="service-principal-management"></a>服务主体管理
 
-若要访问受 Azure AD 租户保护的资源，需要访问的实体必须由安全主体表示。 可使用 Microsoft Graph 中的[服务主体 API](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) 以编程方式管理服务主体。
+若要访问受 Azure AD 租户保护的资源，需要访问的实体必须由安全主体表示。 可使用 Microsoft Graph 中的[服务主体 API](/graph/api/resources/serviceprincipal) 以编程方式管理服务主体。
 
 有关服务主体的详细信息，请参阅 [Azure Active Directory 中的应用程序和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。
 
@@ -75,15 +75,16 @@ Microsoft Graph API 使你能够管理与 Azure Active Directory 中的应用程
 
 若要了解有关使用同步 API 的信息，请参阅以下教程及其相关联的 API：
 - [使用 Microsoft Graph Api 配置预配](/azure/active-directory/app-provisioning/application-provisioning-configuration-api)
-    - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
+    - [applicationTemplate](/graph/api/resources/applicationtemplate)
     - [synchronizationTemplate](/graph/api/resources/synchronization-synchronizationtemplate)
     - [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob)
 - [使用 Microsoft Graph API 自动化基于 SAML 的 SSO 应用配置](/azure/active-directory/manage-apps/application-saml-sso-configure-api)
-    - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
-    - [application](/graph/api/resources/application?view=graph-rest-1.0)
+    - [applicationTemplate](/graph/api/resources/applicationtemplate)
+    - [application](/graph/api/resources/application)
     - [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy)
-    - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
+    - [servicePrincipal](/graph/api/resources/serviceprincipal)
 
 ## <a name="next-steps"></a>后续步骤
-- 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 Microsoft Graph API。
+
+- 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer) 中试用 Microsoft Graph API。
 - 了解如何使用[这些示例](/azure/active-directory/develop/sample-v2-code)将身份验证和授权添加到 web 应用程序和 web API。

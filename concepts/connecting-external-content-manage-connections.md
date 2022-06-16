@@ -1,26 +1,26 @@
 ---
 title: 创建、更新和删除 Microsoft Graph 中的连接
-description: 了解如何使用 Microsoft Graph 创建和管理员连接
+description: 了解如何使用 Microsoft Graph 创建和管理员连接 包括连接状态表以及每个状态中可用的操作。
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 1ea29376e69365724ecea76882c801a9acd807b5
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 1dd9f4a495772d7c7300776966eaa591d03ae587
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202040"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092665"
 ---
 <!---<author of this doc: rsamai>--->
 
 # <a name="create-update-and-delete-connections-in-microsoft-graph"></a>创建、更新和删除 Microsoft Graph 中的连接
 
-外部服务与 Microsoft 搜索服务的连接由 Microsoft Graph 中的 [externalConnection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true) 资源表示。
+外部服务与 Microsoft 搜索服务的连接由 Microsoft Graph 中的 [externalConnection](/graph/api/resources/externalconnectors-externalconnection) 资源表示。
 
 Microsoft Graph 连接器平台提供了将外部数据添加到Microsoft Graph 的直观方法。 连接是外部数据的逻辑容器，管理员可将其作为一个单元进行管理。
 
-创建连接后，可以添加来自任何外部数据源(例如本地内容源或外部 SaaS 服务)的内容。 只能查看并管理 [已创建](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http) 或已显式授权管理的连接。 搜索管理员可以从现代管理中心查看和管理租户中的所有连接。
+创建连接后，可以添加来自任何外部数据源(例如本地内容源或外部 SaaS 服务)的内容。 只能查看并管理 [已创建](/graph/api/externalconnectors-external-post-connections) 或已显式授权管理的连接。 搜索管理员可以从现代管理中心查看和管理租户中的所有连接。
 
 <!-- markdownlint-disable MD036 -->
 ![示例自定义帮助台系统票证连接器结构。](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
@@ -63,7 +63,7 @@ Microsoft Graph 连接器平台提供了将外部数据添加到Microsoft Graph 
 | 更新项目       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 | 删除项目       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 
-通过连接，应用程序可以为将编制索引的项 [定义架构](/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0)，并为服务提供终结点，从而从索引添加、更新或删除项。 
+通过连接，应用程序可以为将编制索引的项 [定义架构](/graph/api/externalconnectors-externalconnection-post-schema)，并为服务提供终结点，从而从索引添加、更新或删除项。 
 
 应用程序将项添加到搜索索引的第一步是创建连接。
 
@@ -71,22 +71,22 @@ Microsoft Graph 连接器平台提供了将外部数据添加到Microsoft Graph 
 
 应用程序必须先创建并配置连接，然后才可将项添加到搜索索引:
 
-1. 使用唯一 ID、显示名称和说明[创建连接](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http)。
-2. [注册架构](/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0)，以定义索引中将包含的字段。
+1. 使用唯一 ID、显示名称和说明[创建连接](/graph/api/externalconnectors-external-post-connections)。
+2. [注册架构](/graph/api/externalconnectors-externalconnection-post-schema)，以定义索引中将包含的字段。
 
 > [!NOTE]
 > 有关更新现有连接的架构的信息，请参阅[架构更新功能](/graph/connecting-external-content-manage-schema#schema-update-capabilities)。
 
 ## <a name="update-a-connection"></a>更新连接
 
-要更改现有连接的显示名称或说明，可以 [更新连接](/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0&preserve-view=true&tabs=http)。
+要更改现有连接的显示名称或说明，可以 [更新连接](/graph/api/externalconnectors-externalconnection-update)。
 
 ## <a name="delete-a-connection"></a>删除连接
 
-要删除所有已通过连接编制索引的项，可以 [删除连接](/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-1.0&preserve-view=true&tabs=http)。
+要删除所有已通过连接编制索引的项，可以 [删除连接](/graph/api/externalconnectors-externalconnection-delete)。
 
 ## <a name="next-steps"></a>后续步骤
 
 - [注册连接架构](connecting-external-content-manage-schema.md)
-- [查看 Microsoft Graph 连接器 API 参考](/graph/api/resources/indexing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [查看 Microsoft Graph 连接器 API 参考](/graph/api/resources/indexing-api-overview)
 - [从 GitHub 下载示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)

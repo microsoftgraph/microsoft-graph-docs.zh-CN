@@ -1,22 +1,22 @@
 ---
 title: 删除 registeredOwners
-description: 删除作为设备的注册所有者的用户。
+description: 删除用户作为设备的已注册所有者。
 ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a8abb65f4ce55d4d8d30fdd571bda7f4a846f247
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: f8bf77c701349949253575d5043e2573746c6e53
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256513"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118401"
 ---
 # <a name="delete-registeredowner"></a>删除 registeredOwner
 
 命名空间：microsoft.graph
 
-删除作为设备的注册所有者的用户。
+删除用户作为设备的已注册所有者。
 
 ## <a name="permissions"></a>权限
 
@@ -35,8 +35,10 @@ ms.locfileid: "60256513"
 ```http
 DELETE /devices/{id}/registeredOwners/{id}/$ref
 ```
+> [!CAUTION]
+> 如果`/$ref`未追加到请求，并且调用应用有权管理设备注册所有者的用户，则也会从Azure Active Directory (Azure AD) 中删除用户;否则返回`403 Forbidden`错误。 可以通过还 [原已删除的项 API 还原已删除的](directory-deleteditems-restore.md)用户。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。 |
@@ -74,6 +76,10 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners/{id}/$ref
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-registeredowners-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-registeredowners-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,28 +1,28 @@
 ---
-title: 创建、更新和删除应用程序在 Microsoft Graph 连接中添加的项目
-description: 了解如何使用 Microsoft Graph 管理应用程序添加到 Microsoft 搜索服务的项目。
+title: 创建、更新和删除 Microsoft Graph 连接中的项目
+description: 了解如何使用 Microsoft Graph 管理由应用程序添加到 Microsoft 搜索服务的外部项目。
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 5ef77fd98e055d9b60b76f4aa3728f20f6cbff7e
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 68a9756966d10a60e443afbef4ed4e26b081b0b5
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211030"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092672"
 ---
 <!---<author of this doc: rsamai>--->
 
 # <a name="create-update-and-delete-items-added-by-your-application-via-microsoft-graph-connectors"></a>通过 Microsoft Graph 连接器创建、更新和删除应用程序添加的项目
 
-Microsoft Graph 连接器提供了一种直观的方法，可将外部数据添加到 Microsoft Graph 中。 应用程序添加到 Microsoft 搜索服务的项用 Microsoft Graph 中的 [externalItem](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) 资源表示。
+Microsoft Graph 连接器提供了一种直观的方法，可将外部数据添加到 Microsoft Graph 中。 应用程序添加到 Microsoft 搜索服务的项用 Microsoft Graph 中的 [externalItem](/graph/api/resources/externalconnectors-externalitem) 资源表示。
 
-[创建连接](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http) 后，可以添加内容。 数据源中的每个项目都必须用唯一的项目 id 表示为 Microsoft Graph 中的 externalItem。 此 ID 用于在 Microsoft Graph 中创建、更新或删除项目。 可以将数据源中的主键用作项目 ID，或者从一个或多个字段派生项目 ID。 
+[创建连接](/graph/api/externalconnectors-external-post-connections) 后，可以添加内容。 数据源中的每个项目都必须用唯一的项目 id 表示为 Microsoft Graph 中的 **externalItem**。 此 ID 用于在 Microsoft Graph 中创建、更新或删除项目。 可以将数据源中的主键用作项目 ID，或者从一个或多个字段派生项目 ID。 
 
 ## <a name="key-components"></a>主要组件
 
-externalItem 有三个关键组成部分：访问控制列表、属性和内容。
+**externalItem** 有三个关键组成部分：访问控制列表、属性和内容。
 
 ### <a name="access-control-list"></a>访问控制列表
 
@@ -40,7 +40,7 @@ externalItem 有三个关键组成部分：访问控制列表、属性和内容�
 
 ### <a name="properties"></a>属性
 
-属性组件用于添加在 Microsoft Graph 体验中有用的项元数据。 在向该连接添加项目并将 **数据类型** 转换为 [支持的数据类型](/graph/api/resources/externalconnectors-property?view=graph-rest-1.0&preserve-view=true)前，必须 [注册该架构](connecting-external-content-manage-schema.md)。
+属性组件用于添加在 Microsoft Graph 体验中有用的项元数据。 在向该连接添加项目并将 **数据类型** 转换为 [支持的数据类型](/graph/api/resources/externalconnectors-property)前，必须 [注册该架构](connecting-external-content-manage-schema.md)。
 
 ![属性组件示例。](./images/connectors-images/connecting-external-content-manage-items-1.png)
 
@@ -62,11 +62,11 @@ externalItem 有三个关键组成部分：访问控制列表、属性和内容�
 
 *搜索结果模板。*
 
-数据源中的内容发生更改时，必须将其与连接项同步。 可更新整个项目或更新它的一个或多个组件。 将内容添加到 Microsoft Graph 后，可以在设置 [垂直搜索](/en-us/microsoftsearch/manage-verticals) 和 [结果类型](/en-us/microsoftsearch/manage-result-types) 后通过 Microsoft 搜索体验，或通过使用 [Microsoft Graph 搜索 API](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true) 来搜索该内容。
+数据源中的内容发生更改时，必须将其与连接项同步。 可更新整个项目或更新它的一个或多个组件。 将内容添加到 Microsoft Graph 后，可以在设置 [垂直搜索](/en-us/microsoftsearch/manage-verticals) 和 [结果类型](/en-us/microsoftsearch/manage-result-types) 后通过 Microsoft 搜索体验，或通过使用 [Microsoft Graph 搜索 API](/graph/api/resources/search-api-overview) 来搜索该内容。
 
 ## <a name="add-an-item"></a>添加项
 
-要向索引添加项，请 [创建 externalItem](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0)。 创建项目时，可在 URL 中分配唯一的标识符。
+要向索引添加项，请 [创建 externalItem](/graph/api/externalconnectors-externalconnection-put-items)。 创建项目时，可在 URL 中分配唯一的标识符。
 
 例如，应用程序可能通过使用票证编号来索引技术支持票证。 如果票证具有票证编号 `SR00145`，则请求外观可能如下所示：
 
@@ -86,7 +86,7 @@ Content-Type: application/json
 
 ## <a name="update-an-item"></a>更新项
 
-当项在外部服务中更新（重新分配支持人员票证或更新产品说明）时，可以使用创建项时分配给项的唯一标识符，通过 [更新 externalItem](/graph/api/externalconnectors-externalitem-update?view=graph-rest-1.0&preserve-view=true&tabs=http) 更新它在索引中的条目。
+当项在外部服务中更新（重新分配支持人员票证或更新产品说明）时，可以使用创建项时分配给项的唯一标识符，通过 [更新 externalItem](/graph/api/externalconnectors-externalitem-update) 更新它在索引中的条目。
 
 ```http
 PATCH /external/connections/contosohelpdesk/items/SR00145
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 ## <a name="delete-an-item"></a>删除项
 
-要从索引中删除项，可以使用创建项时分配给项的唯一标识符来 [删除 externalItem](/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0&preserve-view=true&tabs=http)。
+要从索引中删除项，可以使用创建项时分配给项的唯一标识符来 [删除 externalItem](/graph/api/externalconnectors-externalitem-delete)。
 
 ```http
 DELETE /external/connections/contosohelpdesk/items/SR00145
@@ -109,6 +109,6 @@ DELETE /external/connections/contosohelpdesk/items/SR00145
 
 - [使用外部组管理权限](connecting-external-content-external-groups.md)
 - [使用 Microsoft 搜索 API 的查询](search-concept-overview.md#why-use-the-microsoft-search-api)
-- [查看 Microsoft Graph 连接器 API 参考](/graph/api/resources/indexing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [查看 Microsoft Graph 连接器 API 参考](/graph/api/resources/indexing-api-overview)
 - [搜索自定义类型 (externalItem)](search-concept-custom-types.md)
 - [从 GitHub 下载示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)

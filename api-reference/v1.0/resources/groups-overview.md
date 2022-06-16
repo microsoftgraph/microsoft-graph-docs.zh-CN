@@ -1,22 +1,22 @@
 ---
 title: 在 Microsoft Graph 中使用组
-description: 组是在 Microsoft 服务或你的应用中共享资源访问权限的主体集合。 不同的主体（如用户、其他组、设备和应用程序）构成组的各个部分。 使用组有助于避免使用单个主体，并简化资源的访问管理。
+description: 使用组 API 创建和管理不同类型的组，例如 Microsoft 365 组、安全组、启用邮件功能的安全组和通讯组。
 author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 151d8aff7d48f4ef954554a480736a391833544b
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: 0a41fce3ab121951108fd1dbcde484491d65173c
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296435"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093862"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
 组是在 Microsoft 服务或你的应用中共享资源访问权限的主体集合。 不同的主体（如用户、其他组、设备和应用程序）构成组的各个部分。 使用组有助于避免使用单个主体，并简化资源的访问管理。
 
-Microsoft Graph 公开组 API，以创建和管理不同类型的组和组功能。 
+Microsoft Graph 公开组 API，以创建和管理不同类型的组和组功能。
 
 > [!NOTE]
 > 1. 组只能通过工作或学校帐户创建。 个人 Microsoft 帐户不支持组。
@@ -32,7 +32,7 @@ Azure Active Directory (Azure AD) 支持以下类型的组。
 - 通讯组
 
 > [!NOTE]
-> Microsoft 还支持无法通过 Microsoft Graph 管理或检索的[动态通讯组](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019)。
+> Microsoft 还支持无法通过 Microsoft Graph 管理或检索的[动态通讯组](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true)。
 
 只有 Microsoft 365 和安全组才能通过 Microsoft Graph 组 API 进行管理。 Microsoft Graph 的启用邮件和通讯组为只读模式。
 

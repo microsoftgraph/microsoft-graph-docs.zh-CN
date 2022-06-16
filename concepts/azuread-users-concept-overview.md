@@ -1,16 +1,16 @@
 ---
-title: Microsoft Graph 中用户的概述
-description: 用户是 Microsoft Graph 中 Azure Active Directory (Azure AD) 工作或学校用户帐户或 Microsoft 帐户的表示形式。 Microsoft Graph 中的 **用户** 资源是一个中心，可以从这里访问与用户相关的关系和资源。
+title: Microsoft Graph 中的用户
+description: 使用 Microsoft Graph 访问与组织中的登录用户上下文相关的关系、文档、联系人和首选项。
 author: dkershaw10
 ms.localizationpriority: high
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 88f03a5fad2a6aa9ae473e8ce6d1f9f51cee018d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03a9e667a665363c4d36ca9c576c1472f66726fe
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127988"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095046"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Microsoft Graph 中用户的概述
 
@@ -59,18 +59,16 @@ ms.locfileid: "59127988"
 - 列出通过电子邮件或 OneDrive for Business 与用户共享的文档。
 
 ## <a name="api-reference"></a>API 参考
+
 在查找此服务的 API 参考？
 
-- [Microsoft Graph v1.0 中的用户 API](/graph/api/resources/users?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的用户 API](/graph/api/resources/users?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的用户 API](/graph/api/resources/users?view=graph-rest-1.0&preserve-view=true)
+- [Microsoft Graph beta 中的用户 API](/graph/api/resources/users?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解有关如何[使用用户](/graph/api/resources/users?view=graph-rest-1.0)的详细信息。
-- 从 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)的 **用户** 资源探索自己的数据。
+- 了解有关如何[使用用户](/graph/api/resources/users)的详细信息。
+- 从 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)的 **用户** 资源中探索自己的数据。
 - [代表用户](auth-v2-user.md)或[作为管理员同意的守护程序或服务](auth-v2-service.md)使用 Microsoft Graph 进行身份验证。
-- 为使用 [Azure AD API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0) 的用户设置访问控制和策略。
-- 审阅应用访问用户数据所需的[权限](permissions-reference.md)。 
-<!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with Microsoft Graph [changelog](changelog.md).
--->
+- 为使用 [Azure AD API](/graph/api/resources/azure-ad-overview) 的用户设置访问控制和策略。
+- 审阅应用访问用户数据所需的[权限](permissions-reference.md)。

@@ -5,12 +5,12 @@ author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 63da00b8f88d589d0a8d05d3635abae4a02dd0d4
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 343ff94d14506b5f4caa8147a5248ddaebe8448b
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899906"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118366"
 ---
 # <a name="set-up-notifications-for-changes-in-resource-data"></a>设置资源数据更改的通知
 
@@ -90,14 +90,6 @@ Microsoft Graph 接受订阅请求之后，它将更改通知推送到订阅中�
 - 用户和租订阅存在一个[已知问题](known-issues.md#change-notifications)。
 
 ### <a name="outlook-resource-limitations"></a>Outlook 资源限制
-
-订阅 Outlook 资源（如 **消息** 时， **事件** 或 **联系人**），如果选择在资源路径中使用 **userPrincipalName** （UPN），则如果 UPN 包含撇号，则订阅请求可能会失败。 请考虑使用用户 ID 而不是 UPN 以避免遇到此问题。 例如，请勿使用资源路径：
-
-`/users/sh.o'neal@contoso.com/messages`
-
-请使用：
-
-`/users/{guid-user-id}/messages`
 
 对于所有应用程序，每个邮箱最多允许 1000 个活动订阅。
 

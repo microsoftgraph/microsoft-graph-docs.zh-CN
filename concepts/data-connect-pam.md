@@ -1,17 +1,17 @@
 ---
-title: Microsoft Graph 数据连接与 Privileged Access Management 的集成
+title: Microsoft Graph 数据连接与 PAM 的集成
 description: Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允许 Microsoft 365 管理员批准数据移动请求。
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: c013afa8de8fa6ed8fbd38d037e536c058eb6ad1
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 7326580a1fa5516c516ff949dace93c20a5930d2
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246732"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094037"
 ---
-# <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Microsoft Graph 数据连接与 Privileged Access Management 的集成
+# <a name="microsoft-graph-data-connect-integration-with-pam"></a>Microsoft Graph 数据连接与 PAM 的集成
 
 Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允许 Microsoft 365 管理员批准数据移动请求。 数据连接管道必须由 Microsoft 365 管理员在启用期间指定的数据访问请求审批者组成员批准。 若要设置审批者组，请参阅[设置 Microsoft 365 租户并启用 Microsoft Graph 数据连接](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1)。
 

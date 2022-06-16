@@ -1,14 +1,14 @@
 ---
 title: Microsoft Graph 新增功能
-description: Microsoft Graph 新增功能
+description: 查看过去两个月 Microsoft Graph 中的新增功能、早期版本中添加的内容以及如何分享你的想法的亮点。
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: a49bab69acbb630474223a6de7095b8c34157fda
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: db42821b1e22d2845c8c4c6dff97cc7d46f8feb3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653523"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094997"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -19,6 +19,10 @@ ms.locfileid: "65653523"
 
 
 ## <a name="may-2022-new-and-generally-available"></a>2022 年 5 月：新版本和正式版
+
+### <a name="education"></a>教育
+- [跟踪分配资源的更改](/graph/api/educationassignment-delta)。
+- [跟踪分配类别资源的更改](/graph/api/educationcategory-delta)。
 
 ### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
 在 Azure Active Directory (Azure AD) 中注册的[应用程序](/graph/api/resources/application)可以指定服务或资产管理数据库中的应用程序或服务联系人信息。
@@ -31,6 +35,11 @@ ms.locfileid: "65653523"
 - 使用 [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub) 操作，将内容类型从内容类型中心添加或同步到 [网站](/graph/api/resources/site) 或 [列表](/graph/api/resources/list)。 这使得内容类型或其更新可用于需要它的特定站点或列表。 这是对传统同步基础结构的一项改进，后者将内容类型推送到整个组织中的所有站点，从而减少了发布传播的等待时间。 
 - 获取一个或多个在站点或列表上发生的[丰富的长时间运行的操作](/graph/api/resources/richlongrunningoperation)，在同步添加内容类型时可能会发生这种情况。
 
+### <a name="tasks-and-plans"></a>任务和计划
+- [获取](/graph/api/plannerplandetails-get)或[更新](/graph/api/plannerplandetails-update)作为[计划](/graph/api/resources/plannerplan)[详细信息](/graph/api/resources/plannerplandetails)的一部分的类别描述。
+- 使用 [计划容器](/graph/api/resources/plannerplancontainer)的 **类型** 属性来指定授权规则和 **计划** 的生存期，而不是 **计划** 的 **所有者** 属性。
+- 获取[任务](/graph/api/resources/plannerTask)的优先级。
+
 ### <a name="teamwork"></a>Teamwork
 [获取频道上的消息](/graph/api/channel-list-messages)，并包含对消息 [的任何答复](/graph/api/channel-list-messages#example-3-request-with-top-and-expand-query-options-on-replies)。
 
@@ -40,12 +49,31 @@ ms.locfileid: "65653523"
 ### <a name="application"></a>应用程序
 为本地应用程序配置 Azure AD 应用程序代理以实现安全的远程访问时，请使用 [onPremisesPublishing](/graph/api/resources/onPremisesPublishing?view=graph-rest-beta&preserve-view=true) 资源中的 **isStateSessionEnabled** 属性，指定如果应用程序使用 OAuth 2.0 授权代码授予流，是否验证状态参数。设置此属性有助于管理员保护应用，以避免出现跨网站请求伪造 (CSRF)。
 
+### <a name="compliance--subject-rights-requests"></a>合规性 | 主体权限请求
+- 指定或获取应在[使用者权限请求](/graph/api/resources/subjectRightsRequest?view=graph-rest-beta&preserve-view=true)中搜索的位置，例如[邮箱](/graph/api/resources/subjectRightsRequestAllMailboxLocation?view=graph-rest-beta&preserve-view=true)、[SharePoint、OneDrive 或 Teams 频道](/graph/api/resources/subjectRightsRequestAllSiteLocation?view=graph-rest-beta&preserve-view=true)。
+- 指定或获取应用于在使用者权限请求中搜索的基于 KQL 的内容查询。
+
+### <a name="device-and-app-management--cloud-pc"></a>设备和应用管理|云电脑
+- [批量重新设置云电脑设备](/graph/api/manageddevice-bulkReprovisionCloudPc?view=graph-rest-beta&preserve-view=true)时获取明确定义的[结果](/graph/api/resources/cloudpcbulkremoteactionresult?view=graph-rest-beta&preserve-view=true)。
+- [获取](/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true)或[设置](/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true)[云电脑审查状态](/graph/api/resources/cloudpcreviewstatus?view=graph-rest-beta&preserve-view=true)，或为多个设备[批量设置云电脑审查状态](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="device-and-app-management--multi-tenant-management"></a>设备和应用管理|多租户管理
+[获取](/graph/api/managedtenants-managedtenant-list-tenantusage?view=graph-rest-beta&preserve-view=true)托管租户中每个服务的每月活跃用户数。
+
+### <a name="education"></a>教育
+使用与已安装的 Microsoft Teams 应用相对应的 [Teams 应用资源](/graph/api/resources/educationteamsappresource?view=graph-rest-beta&preserve-view=true)，使教育服务用户能够使用嵌入式 Teams 应用程序（如 YouTube 或 FlipGrid）创建和共享作业。
+
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 [授权策略](/graph/api/resources/authorizationPolicy?view=graph-rest-beta&preserve-view=true)的[默认用户角色](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true)可以指定设备的注册所有者是否可以读取自己的 BitLocker 恢复密钥。
 
 ### <a name="search--index"></a>搜索 | 索引
 [获取](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true)[连接](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true)的[配额信息](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true)。此信息包括可以引入到连接中的项数，并包括连接中剩余的项目，及其所有连接的租户级剩余配额。
 
+### <a name="sites-and-lists"></a>网站和列表
+[跟踪 SharePoint 列表项资源的更改](/graph/api/listitem-delta?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="teamwork"></a>团队合作
+使用应用程序权限[获取指定用户参与的所有聊天](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true)，而无需该用户在场。
 
 
 ## <a name="april-2022-new-and-generally-available"></a>2022 年 4 月：新版本和正式版
@@ -104,7 +132,7 @@ ms.locfileid: "65653523"
 - 是否有希望 Microsoft Graph 支持的方案？ 在 [Microsoft 技术社区](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)中建议新功能并进行投票。
     某些新功能来源于开发人员社区的热门请求。 Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新功能：
 
-    1. 处于 **_预览_** 状态的初次发布。任何相关的 REST API 更新都在 Beta 终结点 (`https://graph.microsoft.com/beta`) 中。  
+    1. 处于 **_预览_** 状态的 Debut。 任何相关的 REST API 更新都在 beta 终结点 (`https://graph.microsoft.com/beta`) 中。  
 
     2. 如果有足够的反馈表明具有可行性，则提升为 **_正式发布_ (GA)** 状态。 任何相关的 REST API 更新都添加到 v1.0 终结点 (`https://graph.microsoft.com/v1.0`)。 
 - 成为 Microsoft Graph 社区中的活跃成员! [加入](https://aka.ms/m365-dev-call) 每周Microsoft 365平台社区通话。

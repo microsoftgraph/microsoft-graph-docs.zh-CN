@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7a6b3cfdbc2ca8bca29c2e07f8b137a72efbf300
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 65efa83cff2ad79f49106e17b1e0cb294ba7673b
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695114"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118632"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 
@@ -31,7 +31,7 @@ ms.locfileid: "65695114"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用 | RoleManagement.ReadWrite.Directory |
+|应用程序 | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,8 +41,10 @@ ms.locfileid: "65695114"
 DELETE /directoryRoles/{role-id}/members/{id}/$ref
 DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
+> [!CAUTION]
+> 如果`/$ref`未追加到请求，并且调用应用具有管理成员对象的权限，则也会从 Azure AD) Azure Active Directory (删除该对象;否则返回`403 Forbidden`错误。 可以通过还 [原已删除的项 API](directory-deleteditems-restore.md) 还原特定对象。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:---------------|:--------|
