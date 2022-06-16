@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: 通过创建上传会话，使应用可以上传最大大小的文件。
 doc_type: apiPageType
-ms.openlocfilehash: 9cde7d026cce22eaf10a0efb769bf451d0343523
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: e3b03cb0e48a32ba26d5f1dfa323de9fed06adf7
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115401"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118520"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -362,7 +362,7 @@ If-Match: {etag or ctag}
 }
 ```
 
-**注意：** 可以在此调用中正常使用 `@microsoft.graph.conflictBehavior` 和 `if-match` 头。
+>**注意：** 可以在此调用中正常使用 `@microsoft.graph.conflictBehavior` 和 `if-match` 头。
 
 ### <a name="response"></a>响应
 
@@ -403,12 +403,16 @@ Content-Type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
+## <a name="see-also"></a>另请参阅
+
+[大文件上传](/concepts/sdks/large-file-upload.md?view=graph-rest-1.0&preserve-view=true&tabs=java)
+
 <!-- {
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
   ],
-  "section&quot;: &quot;documentation"
+  "section": "documentation"
 } -->
 
