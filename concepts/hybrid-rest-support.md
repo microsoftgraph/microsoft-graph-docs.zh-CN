@@ -1,13 +1,13 @@
 ---
 title: 使用 REST API 访问 Exchange 混合部署中的邮箱 (已废弃)
-description: Exchange 混合部署中 REST API 的使用已弃用，自 2023 年 3 月起不再得到有效支持。
+description: 自 2023 年 3 月起，将不再支持在 Exchange 混合部署中使用 REST API。
 ms.localizationpriority: high
-ms.openlocfilehash: a7dd122b2a9e15e04613bd31a003dc4f80967f42
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5775a3019b6a4161f7f09141b2f9e128f966fc3e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335869"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66096208"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-deprecated"></a>使用 REST API 访问 Exchange 混合部署中的邮箱 (已废弃)
 

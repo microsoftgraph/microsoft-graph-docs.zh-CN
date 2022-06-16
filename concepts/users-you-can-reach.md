@@ -1,33 +1,33 @@
 ---
 title: 使用 Microsoft Graph 可覆盖的用户
-description: 'Microsoft 提供了拓展新式工作与新式生活的服务和解决方案。 '
+description: 使用 Microsoft Graph API 构建 Microsoft 365 应用程序，将用户连接到个人服务、工作服务和学校服务。
 author: dkershaw10
 ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: aea7510ff9b0b4b5986616317c74b092be011812
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9c9876d58d645bc48f87e6b2d1891728fa06c18
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134008"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095018"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>使用 Microsoft Graph 可覆盖的用户
 
 Microsoft 提供了拓展新式工作与新式生活的服务和解决方案。
 
-作为开发者，你可以使用 Microsoft Graph API 生成连接数百万用户的应用程序，这些用户在工作、学校和生产中都会使用 Microsoft 云产品。
+作为开发人员，你可以使用 Microsoft Graph API 构建应用程序，以连接到数百万使用 Microsoft 365 产品来提高工作、学校和个人工作效率的用户。
 
 ## <a name="connect-to-personal-services"></a>连接到个人服务
 
-使用 Microsoft Graph 可覆盖具有 Microsoft 个人帐户（如 @outlook.com、@hotmail.com 或 @live.com 帐户）的用户。 征得用户同意后，可使用 Microsoft Graph 访问这些用户的配置文件、他们的 Office 服务（如 OneDrive 和 Outlook 邮件、日历和联系人），以及 Windows 10 设备和活动。
+使用 Microsoft Graph 可覆盖具有 Microsoft 个人帐户（如 @outlook.com、@hotmail.com 或 @live.com 帐户）的用户。 征得用户许可后，可使用 Microsoft Graph 访问这些用户的配置文件、Office 服务（如 OneDrive 和 Outlook 邮件、日历和联系人），以及 Windows 设备和活动。
 
 ## <a name="connect-to-work-services"></a>连接到工作服务
 
-使用 Microsoft Graph 可访问拥有企业版或教育版 Microsoft 365 服务许可证的用户和组织。这些 Microsoft 365 服务包括:
+使用 Microsoft Graph 可访问拥有 Microsoft 365 商业、企业或教育服务许可证的用户和组织。 这些 Microsoft 365 服务包括：
 
 - Microsoft 365
 - 企业移动性 + 安全性
-- Windows 10
+- Windows
 
 征得用户同意后，可根据他们授权的服务和 Microsoft Graph 中提供的服务和功能来使用 Microsoft Graph 访问用户和组织数据。 要了解详细内容，请参阅 [Microsoft Graph 中的主要服务和功能](overview-major-services.md)。
 

@@ -1,15 +1,15 @@
 ---
-title: 'Microsoft Graph 的版本控制、支持和重大更改策略 '
-description: 本文介绍了 Microsoft Graph 的支持和重大更改策略，以及当前可用的 Microsoft Graph API 版本。
+title: Microsoft Graph 的版本控制、支持和重大更改策略
+description: 了解 Microsoft Graph 的支持和重大更改策略，以及当前可用的 Microsoft Graph API 版本。
 ms.localizationpriority: high
-ms.openlocfilehash: 1ecf67a8630c055baf00993e3defbae7f57376da
-ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
+ms.openlocfilehash: 3b5b385cbf738c04b976e6ca3e0749c47942eabf
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60016597"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095011"
 ---
-# <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Microsoft Graph 的版本控制、支持和中断性变更策略
+# <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Microsoft Graph 的版本控制、支持和重大更改策略
 
 本文介绍了 Microsoft Graph 的支持和重大更改策略，以及当前可用的 Microsoft Graph API 版本。
 
