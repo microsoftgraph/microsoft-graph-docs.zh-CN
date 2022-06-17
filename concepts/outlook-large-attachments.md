@@ -4,22 +4,22 @@ description: 可选择两种方法中的一种来将文件附加到邮件或事�
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: c6e23f8f30e5dc155f54015fd740df761b9a7769
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: ecb8d470e7a6946286b27f78b3a61f569bafe261
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883829"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118590"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>将大文件附加到 Outlook 邮件或事件
 
 使用 Microsoft Graph API，可将最大 150 MB 的文件附加到 Outlook [邮件](/graph/api/resources/message)或 [事件](/graph/api/resources/event)项目。 根据文件大小，选择以下两种方法之一来附加文件：
 - 如果文件大小小于 3 MB，请对 Outlook 项目的 **附件** 导航属性执行单个 POST; 了解如何 [为邮件或](/graph/api/message-post-attachments) 或 [为事件](/graph/api/event-post-attachments) 执行此操作。成功的 `POST` 响应包括文件附件的 ID。
-- 如果文件大小介于 3MB 到 150MB 之间，请创建上传会话，并迭代使用 `PUT` 上传文件的字节范围，直到上传整个文件为止。最终成功的 `PUT` 响应中的标头包括包含附件 ID 的 URL。
+- 如果文件大小介于 3 MB 和 150 MB 之间，则创建上传会话，并以迭代的方式使用 `PUT` 来上传文件的字节范围，直到完整文件上传完毕。 最后一个成功 `PUT` 响应中的标头包括带附件 ID 的 URL。
 
 若要将多个文件附加到邮件，请根据每个文件的文件大小，选择相应的方法，并单独附加文件。
 
-本文逐步介绍了第二种方法，创建并使用上传会话来添加大型文件附件（大小超过 3 MB）至 Outlook 项。 各步显示相应的邮件或事件代码。 成功上传整个文件后，文章显示获取含有文件附件 ID 的响应标头，随后显示使用附件 ID 来获取原始附件内容或附件元数据。 
+本文逐步介绍了第二种方法，创建并使用上传会话将大型文件附件（大小超过 3 MB）添加到 Outlook 项。 各步显示相应的邮件或事件代码。 成功上传整个文件后，文章显示获取含有文件附件 ID 的响应标头，随后显示使用附件 ID 来获取原始附件内容或附件元数据。 
 
 > [!IMPORTANT] 
 > 如果要将大文件附加到共享或委派邮箱中的邮件或事件，请注意一个[已知问题](known-issues.md#attaching-large-files-to-messages-with-delegated-permissions-can-fail)。
@@ -192,8 +192,8 @@ Content-type: application/json
 ### <a name="response"></a>响应
 成功的上传将返回 `HTTP 200 OK` 和 **uploadSession** 对象。 请注意响应对象中的以下项：
 
-- **ExpirationDateTime** 属性指示 **uploadUrl** 属性值中嵌入的身份验证令牌的到期日期/时间。 此到期日期/时间与步骤 1 中由初始 **uploadSession** 返回的值相同。
-- nextExpectedRanges ** 指定下一个字节位置，例如， `"nextExpectedRanges":["2097152"]`。 必须按顺序上传文件中的字节。
+- **expirationDateTime** 属性指示 **uploadUrl** 属性值中嵌入的身份验证令牌的到期日期/时间。 此到期日期/时间与步骤 1 中由初始 **uploadSession** 返回的值相同。
+- **nextExpectedRanges** 指定上传开始的下一个字节位置，例如 `"nextExpectedRanges":["2097152"]`。 必须按顺序上传文件中的字节。
 <!-- The **nextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
   - On a successful upload, this property returns the next range to start from, for example, `"nextExpectedRanges":["2097152"]`.
@@ -201,7 +201,7 @@ Content-type: application/json
 -->
 - **uploadUrl** 属性不会显式返回，因为上传会话的所有 `PUT` 操作使用创建会话时返回的同一 URL（步骤 1）。
 
-### <a name="example-first-upload-to-the-message"></a>示例：首先上传至消息
+### <a name="example-first-upload-to-the-message"></a>示例：首先上传至邮件
 #### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"
@@ -276,7 +276,7 @@ Content-type: application/json
 
 下列示例显示在此处理步骤中上传最后的文件字节范围至邮件和事件。
 
-### <a name="example-final-upload-to-the-message"></a>示例：最后上传至消息
+### <a name="example-final-upload-to-the-message"></a>示例：最后上传至邮件
 #### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 52b71c62e203bb1adba7c14f9bf72681ff4464a3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 299c98d0e751e835861fda43216c2bdabed05e24
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067477"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141227"
 ---
 # <a name="conversationmember-resource-type"></a>conversationMember 资源类型
 
 命名空间：microsoft.graph
 
-表示[团队、频道](team.md)[或](channel.md)聊天中的[用户](chat.md)。
+表示 [团队](team.md)中的用户、 [频道](channel.md)或 [聊天](chat.md)。
 另请参阅 [aadUserConversationMember](aaduserconversationmember.md)。
 
 ## <a name="methods"></a>方法
@@ -44,7 +44,7 @@ ms.locfileid: "59067477"
 |:---------------|:--------|:----------|
 |id|String| 只读。用户的唯一 ID。|
 |displayName| string | 用户的显示名称。 |
-|角色| string 集合 | 该用户的角色。 |
+|角色| string 集合 | 该用户的角色。 此属性仅在相关时包含其他限定符 -例如，如果成员具有 `owner` 权限， **则角色** 属性包含 `owner` 为值之一。 同样，如果成员是来宾， **则角色** 属性包含 `guest` 为值之一。 基本成员不应在 **角色** 属性中指定任何值。  |
 |visibleHistoryStartDateTime| DateTimeOffset | 表示对话历史久远程度的时间戳与对话成员共享。 此属性只对聊天成员可设置。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

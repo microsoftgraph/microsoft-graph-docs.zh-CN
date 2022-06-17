@@ -4,12 +4,12 @@ description: JSON 批处理使你能够通过将多个请求合并为一个单�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3ca25ff3e16437463cac719b2ea5ab6dd47c8687
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: 8b83b501f286bcfac80f50081bfaa6084e866b15
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034550"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118359"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理在一个 HTTP 调用中合并多个请求
 
@@ -20,6 +20,8 @@ ms.locfileid: "66034550"
 3. 组日历
 
 将三个单独请求合并到一个单独的批处理请求中可以使应用程序不受重大网络延迟的影响。
+
+Microsoft Graph 实现 `$batch` OData URL 路径段，以支持 JSON 批处理。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/tzWGOp8zYh8]
 

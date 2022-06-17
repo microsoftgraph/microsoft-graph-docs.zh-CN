@@ -1,16 +1,16 @@
 ---
 title: fileAttachment 资源类型
-description: 附加到 (的文本文件或 Word) 等文件。
-localization_priority: Normal
+description: 文件 (，例如附加到事件、消息、任务或帖子的文本文件或 Word 文档) 。
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: 1ef32e91897ac322b84922012df47c168094f57d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 14ae2bb7ec5e341a144fa5c00eb131853ea6b679
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135644"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141241"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "50135644"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-附加到 (、邮件、Outlook 任务或帖子) 文本文件或[Word](../resources/outlooktask.md)文档[等文件](../resources/post.md)。 [](../resources/event.md) [](../resources/message.md) 
+文件 (，例如附加到用户[事件](../resources/event.md)、[消息](../resources/message.md)、[Outlook任务](../resources/outlooktask.md)或帖子的文本文件或 Word 文[档) ](../resources/post.md)。 
 
 创建文件附件时，在请求正文中包括以下内容：
 
@@ -36,8 +36,8 @@ ms.locfileid: "50135644"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |读取 fileAttachment 对象的属性、关系或原始内容。|
-|[删除](../api/attachment-delete.md) | 无 |删除 fileAttachment 对象。 |
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |读取 **fileAttachment** 对象的属性、关系或原始内容。|
+|[删除](../api/attachment-delete.md) | 无 |删除 **fileAttachment** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -47,13 +47,13 @@ ms.locfileid: "50135644"
 |contentLocation|String|请勿使用此属性，因为它不受支持。|
 |contentType|String|附件的内容类型。|
 |id|String|附件 ID。|
-|isInline|Boolean|如果是内嵌附件则设置为 true。|
+|isInline|Boolean|设置为 `true` 如果这是内联附件。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的日期和时间。|
 |name|String|表示显示在表示嵌入的附件的图标下方的文本的名称。该名称不必是实际的文件名。|
 |size|Int32|附件大小，以字节为单位。|
 
 ## <a name="relationships"></a>关系
-无
+无。
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -80,7 +80,7 @@ ms.locfileid: "50135644"
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "size": 1024
+  "size": "Int32"
 }
 
 ```

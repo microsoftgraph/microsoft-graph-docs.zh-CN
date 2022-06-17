@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5bee308c393c11b4b1cf72a279428db80a94f3d8
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 70a9992fc2f9991d3c94156c0e48fa45dd16d435
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900142"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118625"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -38,11 +38,10 @@ ms.locfileid: "65900142"
 ```http
 DELETE /groups/{id}/members/{id}/$ref
 ```
+> [!CAUTION]
+> 如果未将 `/$ref` 追加到请求中，并且调用应用有权管理成员对象类型，则也会从 Azure Active Directory (Azure AD) 中删除成员对象；否则，将返回 `403 Forbidden` 错误。 例如，同时具有 *GroupMember.ReadWrite.All* 和 *User.ReadWrite.All* 权限的应用将删除用户。 可以通过 [还原已删除的项 API](directory-deleteditems-restore.md) 还原特定对象。
 
-> [!IMPORTANT]
-> 如果 `/$ref` 未附加到请求中，则会从 Azure Active Directory (Azure AD) 中删除用户（如果使用适当的权限）；否则将返回 `403 Forbidden` 错误。 
-
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
