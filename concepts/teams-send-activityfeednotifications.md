@@ -4,12 +4,12 @@ description: 使用 Teams 应用和 microsoft graph 向Microsoft Teams中的用�
 author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 990c7da84691c0cd15ad1362a899180c1f4b08c1
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 3136d7c50f687eb1ef5366719e36a823715bc816
+ms.sourcegitcommit: 8f54d85e8e8b0a1f72d4557d2bb7749b972dd3e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695028"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141607"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>在Microsoft Teams中向用户发送活动源通知
 
@@ -87,7 +87,7 @@ Microsoft Teams中的活动源通知由多个信息位组成，一起显示，�
 }
 ```
 
-|参数|类型|描述|
+|参数|类型|说明|
 |:---|:---|:---|
 |类型|string|活动的类型。 这需要在特定清单中是唯一的。|
 |说明|string|人为可读的简短说明。 这将在Microsoft Teams客户端上可见。|
@@ -109,7 +109,7 @@ Teams应用可以安装在团队、聊天或用户个人中，并且可以通过
 - [向团队中的用户发送通知](/graph/api/team-sendactivitynotification)
 - [向用户发送通知](/graph/api/userteamwork-sendactivitynotification)
 
-此外，一次最多可以向 100 个用户批量发送通知：
+此外，通知一次最多可以发送 100 个用户：
 
 * [批量向多个用户发送通知](/graph/api/teamwork-sendactivitynotificationtorecipients)
 

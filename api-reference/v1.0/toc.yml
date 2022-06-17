@@ -568,7 +568,7 @@ items:
                 href: api/chat-list.md
           - name: 待办任务
             items:
-              - name: 任务
+              - name: 待办事项任务
                 href: resources/todotask.md
               - name: 创建任务
                 href: api/todotasklist-post-tasks.md
@@ -7249,9 +7249,10 @@ items:
         items:
           - name: 概述
             href: resources/todo-overview.md
-          - name: 任务列表
-            href: resources/todotasklist.md
+          - name: 待办事项任务列表
             items:
+              - name: 待办事项任务列表
+                href: resources/todotasklist.md
               - name: 列出任务列表
                 href: api/todo-list-lists.md
               - name: 创建任务列表
@@ -7268,9 +7269,10 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
                 href: api/opentypeextension-get.md
-          - name: 任务
-            href: resources/todotask.md
+          - name: 待办事项任务
             items:
+              - name: 待办事项任务
+                href: resources/todotask.md
               - name: 列出任务
                 href: api/todotasklist-list-tasks.md
               - name: 创建任务
