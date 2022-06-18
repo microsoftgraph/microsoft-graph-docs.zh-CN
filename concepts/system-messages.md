@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7d7b4a83fa4f6a85a2991d8f2f91935157234460
-ms.sourcegitcommit: 54e19ec90dc5441e1b93f713889ddc831782789e
+ms.openlocfilehash: b6a953acbd906a56d87df211209c52c432b79fae
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61995940"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118317"
 ---
 # <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>使用 Microsoft Graph API 获取 Microsoft Teams 的系统消息
 
@@ -66,6 +66,8 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
 | 已删除成员 | [membersDeletedEventMessageDetail](#members-deleted) | 聊天，频道，团队 |
 | 已加入成员 | [membersJoinedEventMessageDetail](#members-joined) | 聊天 |
 | 剩余成员 | [membersLeftEventMessageDetail](#members-left) | 聊天 |
+| 消息已固定 | [messagePinnedEventMessageDetail](#message-pinned) | 聊天 |
+| 消息已取消固定 | [messageUnpinnedEventMessageDetail](#message-unpinned) | 聊天 |
 | 已更新选项卡 | [tabUpdatedEventMessageDetail](#tab-updated) | 聊天，频道 |
 | 已存档团队 | [teamArchivedEventMessageDetail](#team-archived) | 团队 |
 | 已创建团队 | [teamCreatedEventMessageDetail](#team-created) | 团队 |
@@ -943,6 +945,93 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
         "displayName": null,
         "userIdentityType": "aadUser"
       }
+    }
+  }
+}
+```
+
+### <a name="message-pinned"></a>消息已固定
+
+```json
+{
+  "id": "1613453493532",
+  "replyToId": null,
+  "etag": "1613453493532",
+  "messageType": "systemEventMessage",
+  "createdDateTime": "2021-02-16T05:31:33.532Z",
+  "lastModifiedDateTime": "2021-02-16T05:31:33.532Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:0ae61fd5f7f44791baddce0988e71bf3@thread.v2",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "channelIdentity": null,
+  "policyViolation": null,
+  "from": null,
+  "body": {
+    "contentType": "html",
+    "content": "<systemEventMessage/>"
+  },
+  "attachments": [],
+  "mentions": [],
+  "reactions": [],
+"eventDetail": {
+    "@odata.type": "#microsoft.graph.messagePinnedEventMessageDetail",
+    "eventDateTime": "2022-05-02T20:11:08.335Z",
+    "initiator": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+        }
+    }
+  }
+}
+```
+
+### <a name="message-unpinned"></a>消息已取消固定
+
+```json
+{  
+  "replyToId": null,
+  "etag": "1613453493532",
+  "messageType": "systemEventMessage",
+  "createdDateTime": "2021-02-16T05:31:33.532Z",
+  "lastModifiedDateTime": "2021-02-16T05:31:33.532Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:0ae61fd5f7f44791baddce0988e71bf3@thread.v2",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "channelIdentity": null,
+  "policyViolation": null,
+  "from": null,
+  "body": {
+    "contentType": "html",
+    "content": "<systemEventMessage/>"
+  },
+  "attachments": [],
+  "mentions": [],
+  "reactions": [],
+"eventDetail": {
+    "@odata.type": "#microsoft.graph.messageUnpinnedEventMessageDetail",
+    "eventDateTime": "2022-05-02T20:11:08.335Z",
+    "initiator": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+        }
     }
   }
 }
