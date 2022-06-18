@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: eb7291666458b827af917970c07ed063ed71b468
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 2a0197ed8dd8c61b4a16debd657da8061d85984e
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755570"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160439"
 ---
 # <a name="list-services"></a>列出服务
 
@@ -26,9 +26,9 @@ ms.locfileid: "64755570"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings。Read.All，BookingsAppointment.ReadWrite.All，Bookings。ReadWrite.All，Bookings。Manage.All   |
+|委派（工作或学校帐户） |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|Application | BookingsAppointment.ReadWrite.All，Bookings。Read.All  |
+|Application | BookingsAppointment.ReadWrite.All、Bookings.Read.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /bookingBusinesses/{id}/services
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | 持有者 {code}。必需。|
@@ -109,6 +109,7 @@ Content-type: application/json
             "defaultPrice": 0,
             "defaultPriceType": "notSet",
             "description": "Not sure how to choose? Let us introduce you to our traditional family recipes.",
+            "languageTag": "en-US",
             "isHiddenFromCustomers": false,
             "notes": "This is where you can add notes about this service that only you and your staff see.",
             "preBuffer": "PT0S",
@@ -116,6 +117,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
+            "isAnonymousJoinEnabled": false,
             "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4ABB9Qgce5",
             "schedulingPolicy": null,
             "defaultLocation": {
@@ -151,6 +153,7 @@ Content-type: application/json
             "defaultPrice": 10,
             "defaultPriceType": "fixedPrice",
             "description": "Catered individual bento box lunch",
+            "languageTag": "en-US",
             "isHiddenFromCustomers": false,
             "notes": "Home-cooked special",
             "preBuffer": "PT5M",
@@ -158,6 +161,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": false,
+            "isAnonymousJoinEnabled": false,
             "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gpcGIq92Z0u5h6ABB9Qgrt5",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
@@ -199,6 +203,7 @@ Content-type: application/json
             "defaultPrice": 30,
             "defaultPriceType": "fixedPrice",
             "description": "Individual kaiseki lunch delivery",
+            "languageTag": "en-US",
             "isHiddenFromCustomers": false,
             "notes": "Home-cooked special",
             "preBuffer": "PT5M",
@@ -206,6 +211,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
+            "isAnonymousJoinEnabled": false,
             "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/bplGIq92Z0u5h4FWB9Qgvu7",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",

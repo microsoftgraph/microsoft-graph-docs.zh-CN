@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1fffb31cf469671056797ea04aa9babcd955c401
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 82fe74b068d4013aa305cd3c0309699b6175fb3f
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109728"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160669"
 ---
 # <a name="create-bookingstaffmember"></a>创建 bookingStaffMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "62109728"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[bookingBusiness](../resources/bookingstaffmember.md)中创建新的[员工。](../resources/bookingbusiness.md)
+在指定的 [bookingBusiness](../resources/bookingbusiness.md) 中创建新[员工。](../resources/bookingstaffmember.md)
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "62109728"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -37,18 +37,18 @@ POST /bookingBusinesses/{id}/staffMembers
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}。 必需。|
+| Authorization  | 持有者 {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [bookingStaffMember](../resources/bookingstaffmember.md) 对象的 JSON 表示形式。 必须包括以下属性：
 
 - **displayName**
 - **emailAddress**
-- **role**
+- **作用**
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [bookingStaffMember](../resources/bookingstaffmember.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [bookingStaffMember](../resources/bookingstaffmember.md) 对象。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -139,7 +139,8 @@ Content-type: application/json
                 }
             ]
         }
-    ]
+    ],
+    "isEmailNotificationEnabled": false
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

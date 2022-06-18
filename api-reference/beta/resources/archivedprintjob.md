@@ -1,16 +1,16 @@
 ---
 title: archivedPrintJob 资源类型
-description: 用于报告目的 (已完成、中止或失败的) 打印作业的“最终状态”记录。 这不是活动打印作业。
+description: 用于报告目的 (已完成、中止或已取消) 打印作业的“最终状态”记录。 这不是活动打印作业。
 author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8ba8d49a01e3b10768e83b04b259d6cfd87d65b5
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: a136d56e8ce6eeb9429b66ea142142628ef187ca
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65944974"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160642"
 ---
 # <a name="archivedprintjob-resource-type"></a>archivedPrintJob 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "65944974"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于报告目的 (已完成、中止或失败的) 打印作业的“最终状态”记录。 这不是活动打印作业。
+用于报告目的 (已完成、中止或已取消) 打印作业的“最终状态”记录。 这不是活动打印作业。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
@@ -29,7 +29,7 @@ ms.locfileid: "65944974"
 |createdDateTime|DateTimeOffset|创建作业时的 dateTimeOffset。 只读。|
 |acquiredDateTime|DateTimeOffset|打印机获取作业时的 dateTimeOffset（如果有）。 只读。|
 |completionDateTime|DateTimeOffset|作业完成、取消或中止时的 dateTimeOffset。 只读。|
-|acquiredByPrinter|布尔值|如此 如果作业是由打印机获取的;否则为 false。 只读。|
+|acquiredByPrinter|布尔|如此 如果作业是由打印机获取的;否则为 false。 只读。|
 |copiesPrinted|Int32|打印的副本数。 只读。|
 |pageCount|Int32|打印的页面总数。 只读。|
 |blackAndWhitePageCount|Int32|打印的黑白页数。 只读。|

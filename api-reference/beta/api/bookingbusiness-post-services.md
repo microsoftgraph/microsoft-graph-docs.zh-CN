@@ -1,16 +1,16 @@
 ---
 title: 创建 bookingService
-description: 为指定的 bookingbusiness 创建新的 bookingService。
+description: 为指定的 bookingBusiness 创建新的 bookingService。
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 66a16e9e90f45a82b107d8e5d5b0a748b87f987d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f104af1735ff41d0f6e6d9f1e1e8a8cd8313cb16
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113999"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160690"
 ---
 # <a name="create-bookingservice"></a>创建 bookingService
 
@@ -18,7 +18,7 @@ ms.locfileid: "62113999"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为指定的[bookingBusiness](../resources/bookingservice.md)创建新的[bookingService。](../resources/bookingbusiness.md)
+为指定的 [bookingBusiness](../resources/bookingbusiness.md) 创建新的 [bookingService](../resources/bookingservice.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "62113999"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -37,14 +37,14 @@ POST /bookingBusinesses/{id}/services
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}。 必需。|
+| Authorization  | 持有者 {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [bookingService](../resources/bookingservice.md) 对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [bookingService](../resources/bookingservice.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [bookingService](../resources/bookingservice.md) 对象。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -102,6 +102,7 @@ Content-type: application/json
     "displayName":"Bento",
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
+    "languageTag": "en-US",
     "isHiddenFromCustomers":false,
     "notes":"Home-cooked special",
     "postBuffer":"PT10M",
@@ -118,7 +119,8 @@ Content-type: application/json
     "staffMemberIds":[
         "d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
         "2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
-    ]
+    ],
+    "isAnonymousJoinEnabled": false
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

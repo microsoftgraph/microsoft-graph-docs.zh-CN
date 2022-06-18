@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 34ab4476c00db82e365b4657ad38acac8ddf6ac7
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 063e695b386d1ed4730a6aa6160cd5853d04513d
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755640"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160440"
 ---
 # <a name="create-bookingappointment"></a>创建 bookingAppointment
 
@@ -26,9 +26,9 @@ ms.locfileid: "64755640"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All，Bookings。ReadWrite.All，Bookings。Manage.All   |
+|委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|Application | BookingsAppointment.ReadWrite.All，Bookings。Read.All  |
+|Application | BookingsAppointment.ReadWrite.All、Bookings.Read.All  |
 
 > [!NOTE]
 > 如果使用应用程序权限创建自定义应用，则必须遵循 [业务规则验证](/graph/bookingsbusiness-business-rules)。
@@ -123,6 +123,7 @@ Content-type: application/json
     "invoiceUrl":"theInvoiceUrl",
     "isLocationOnline": true,
     "optOutOfCustomerEmail": false,
+    "anonymousJoinWebUrl": null,
     "postBuffer": "PT10M",
     "preBuffer": "PT5M",
     "price": 10.0,
@@ -297,6 +298,7 @@ Content-type: application/json
     "price": 10,
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
+    "anonymousJoinWebUrl": null,
     "staffMemberIds": [],
     "invoiceAmount": 10,
     "invoiceId": "1001",

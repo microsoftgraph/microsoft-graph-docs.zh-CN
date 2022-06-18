@@ -3,14 +3,14 @@ title: 获取 printJob
 description: 检索打印作业的属性和关系。
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: fd7c3057644106456cfd508de8247047ef9ed5f8
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 8a1c843410e4d2f01ea3da5458d11a835d2163b8
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365707"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160410"
 ---
 # <a name="get-printjob"></a>获取 printJob
 
@@ -23,13 +23,19 @@ ms.locfileid: "65365707"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除以下权限外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [Get 打印机](printer-get.md) 或 [获取打印机共享](printershare-get.md) 访问权限的权限，具体取决于是否正在使用打印机或打印机共享。
+除以下权限外，用户或应用的租户还必须具有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrintJob.ReadBasic、PrintJob.Read、PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic、PrintJob.ReadWrite、PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All |
+|Application| PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All |
+
+对于具有检索其他用户作业的委派权限的应用，登录用户必须是以下管理员角色之一的成员：
+- 全局管理员
+- 打印机管理员
+
+对于具有应用程序权限以检索用户作业的应用，应用需要授予 [Get 打印机](printer-get.md) 访问权限的权限以及“ [权限](#permissions) ”表中所述的应用程序权限之一。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

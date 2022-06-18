@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2d7ee31bf0de9f7119d473af7a3f13358f259301
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 22c6acfc9b34d9f40d6d14a77eb43b914b89202d
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755647"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160599"
 ---
 # <a name="get-bookingbusiness"></a>获取 bookingBusiness
 
@@ -25,9 +25,9 @@ ms.locfileid: "64755647"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings。Read.All，BookingsAppointment.ReadWrite.All，Bookings。ReadWrite.All，Bookings。Manage.All   |
+|委派（工作或学校帐户） |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|Application | BookingsAppointment.ReadWrite.All，Bookings。Read.All  |
+|Application | BookingsAppointment.ReadWrite.All、Bookings.Read.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -113,6 +113,7 @@ Content-type: application/json
     "defaultCurrencyIso":"USD",
     "isPublished":false,
     "publicUrl":null,
+    "languageTag":null,
     "address":{
         "type":"home",
         "postOfficeBox":"",
@@ -181,6 +182,7 @@ Content-type: application/json
             ]
         }
     ],
+    "languageTag": "String",
     "schedulingPolicy":{
         "timeSlotInterval":"PT30M",
         "minimumLeadTime":"P1D",

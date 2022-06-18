@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 67b6a8fb4d8764665f855c815c1813ffc44092c7
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: ac51723b68846979106017b58200a87b2ca7415b
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755661"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160613"
 ---
 # <a name="list-staffmembers"></a>列出 staffMembers
 
@@ -26,9 +26,9 @@ ms.locfileid: "64755661"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings。Read.All，BookingsAppointment.ReadWrite.All，Bookings。ReadWrite.All，Bookings。Manage.All   |
+|委派（工作或学校帐户） |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|Application | BookingsAppointment.ReadWrite.All，Bookings。Read.All  |
+|Application | BookingsAppointment.ReadWrite.All、Bookings.Read.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /bookingBusinesses/{id}/staffMembers
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -165,7 +165,8 @@ Content-type: application/json
                         }
                     ]
                 }
-            ]
+            ],
+            "isEmailNotificationEnabled": false
         },
         {
             "id":"71d64d0e-7225-49b6-b0b1-070d476cda51",
@@ -234,7 +235,8 @@ Content-type: application/json
 
                     ]
                 }
-            ]
+            ],
+            "isEmailNotificationEnabled": false
         }
     ]
 }

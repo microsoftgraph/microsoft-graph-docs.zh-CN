@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3ebab5bc652f6e6b484312420fb779d849eabb20
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 052fac1ad96394862a58abff595ad68b22dcecbf
+ms.sourcegitcommit: 8f54d85e8e8b0a1f72d4557d2bb7749b972dd3e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894745"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141656"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -66,12 +66,12 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 
 - **起始数量** - 一个整数，它表示从 0 开始的起始数，在页面上列出搜索结果。 默认值为 0。
 
-- **大小** - 一个整数，它表示要为页面返回的结果数。 默认值为 25。
+- **大小** - 一个整数，它表示要为页面返回的结果数。 默认值为 25 个结果。 最大值为 1000 个结果。
 
 如果你正在搜索 **event** 或 **message** 实体，则注意以下限制：
 
 - **起始数量** 在第一个页面请求中必须从零开始，否则请求将导致出现 HTTP 400 `Bad request`。
-- 每页的 **message** 和 **event** 最大结果数（**大小**）为 25。
+- 每页的 **消息** 和 **事件** 最大结果数（**大小**）为 25。
 
 SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较大的页面大小通常会导致更高的延迟。
 

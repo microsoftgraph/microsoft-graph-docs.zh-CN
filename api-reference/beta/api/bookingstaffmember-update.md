@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a44ba8d8ca373107e37a8c77b19b604661558144
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 3aa430d1e59bf3506dc7d1bbfd3dc4083e2f9fbe
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094249"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160447"
 ---
 # <a name="update-bookingstaffmember"></a>更新 bookingstaffmember
 
@@ -26,7 +26,7 @@ ms.locfileid: "66094249"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,15 +41,16 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|True 表示如果员工是Microsoft 365用户，则 Bookings API 使用员工在 Microsoft 365 中的个人日历以及 **workingHours** 属性来确定可用性。 |
+|availabilityIsAffectedByPersonalCalendar|布尔|True 表示如果员工是Microsoft 365用户，则 Bookings API 使用员工在 Microsoft 365 中的个人日历以及 **workingHours** 属性来确定可用性。 |
 |colorIndex|Int32|标识表示工作人员的颜色。 颜色对应于 Bookings 应用中 **“员工详细信息** ”页中的调色板。|
 |displayName|String|向客户显示的工作人员的名称。|
 |emailAddress|String|工作人员的电子邮件地址。 这可以位于与企业相同的Microsoft 365租户中，也可以位于其他电子邮件域中。 如果在业务的计划策略中 **将 sendConfirmationsToOwner** 属性设置为 true，则使用此电子邮件地址。|
-|role|string| 员工在业务中的角色。 可能的值是：`guest`、`administrator`、`viewer`、`externalGuest`。|
-|timeZone|字符串|工作人员的时区。 有关可能值的列表，请参阅 [dateTimeTimeZone](../resources/datetimetimezone.md)。|
-|useBusinessHours|Boolean|True 表示员工的可用性由企业的 **businessHours** 属性决定。 False 表示可用性由员工 **的工作屋** 属性设置决定。|
+|isEmailNotificationEnabled|布尔|True 表示在创建或更改分配给他们的预订时，员工将通过电子邮件收到通知。
+|role|string| 员工在业务中的角色。 可取值为：`guest`、`administrator`、`viewer`、`scheduler`、`member`、`externalGuest`。|
+|timeZone|String|工作人员的时区。 有关可能值的列表，请参阅 [dateTimeTimeZone](../resources/datetimetimezone.md)。|
+|useBusinessHours|布尔|True 表示员工的可用性由企业的 **businessHours** 属性决定。 False 表示可用性由员工 **的工作屋** 属性设置决定。|
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md) 集合|工作人员可预订的一周中每天的小时数范围。|
 
 ## <a name="response"></a>响应

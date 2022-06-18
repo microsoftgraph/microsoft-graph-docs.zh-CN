@@ -5,17 +5,20 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 27c2e61b6e5b94731071b504d78f2d7c70e721ca
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8d249d41a71b4e9e6e49c85d4e4ae30afa521c76
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333223"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141248"
 ---
 # <a name="add-member-to-team"></a>向团队添加新成员
 命名空间：microsoft.graph
 
 向 [team](../resources/team.md) 添加新的 [conversationMember](../resources/conversationmember.md)。
+
+> [!NOTE] 
+> 对于所有成员，**角色** 属性默认为空。 此属性仅在相关时包含其他限定符 - 例如，如果成员具有 `owner` 权限，则角色属性包含 `owner` 作为值之一。 同样，如果成员为来宾，则 **角色** 属性包含 `guest` 作为值之一。 基本成员不应在 **角色** 属性中指定任何值。
 
 ## <a name="permissions"></a>权限
 

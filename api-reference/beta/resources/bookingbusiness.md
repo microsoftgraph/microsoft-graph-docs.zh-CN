@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 628a8b6aa9a36d525fd6aae2d4205891ab23a50d
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: c125433d99b5c496f88f83a0667d13168036a680
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755626"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160683"
 ---
 # <a name="bookingbusiness-resource-type"></a>bookingBusiness 资源类型
 
@@ -24,12 +24,12 @@ ms.locfileid: "64755626"
 
 ## <a name="methods"></a>方法
 
-| 方法  | 返回类型 |说明|
+| 方法  | 返回类型 |Description|
 |:---------------|:--------|:----------|
 |[列出 bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) 集合 |获取租户中的 bookingbusiness 对象的集合。 |
 |[创建 bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | 创建新的Microsoft Bookings业务。 |
 |[获取 bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |读取 bookingBusiness 对象的属性和关系。|
-|[更新](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |更新 **bookingBusiness** 对象中的属性。 |
+|[更新](../api/bookingbusiness-update.md) | 无 |更新 **bookingBusiness** 对象中的属性。 |
 |[删除](../api/bookingbusiness-delete.md) | 无 |删除 **bookingBusiness** 对象。 |
 |[创建 bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| 通过发布到约会集合来创建新的 bookingAppointment。|
 |[列出约会](../api/bookingbusiness-list-appointments.md) |[bookingAppointment](bookingappointment.md) 集合| 获取 bookingAppointment 对象集合。|
@@ -41,7 +41,7 @@ ms.locfileid: "64755626"
 |[列出 staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) 集合| 获取 bookingStaffMember 对象集合。|
 |[列出 customQuestions](../api/bookingbusiness-list-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md) 集合|从 **customQuestions** 导航属性获取 **bookingCustomQuestion** 资源。|
 |[创建 bookingCustomQuestion](../api/bookingbusiness-post-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md)|创建新的 **bookingCustomQuestion** 对象。|
-|[列出 calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md) 集合|获取在指定日期范围内发生的 **bookingAppointment** 对象的集合。|
+|[List calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md) 集合|获取在指定日期范围内发生的 **bookingAppointment** 对象的集合。|
 |[发布](../api/bookingbusiness-publish.md)|无|使此业务的计划页可供外部客户使用。 将 **isPublished** 属性设置为 true，将 **publicUrl** 属性设置为计划页的 URL。|
 |[取消发布](../api/bookingbusiness-unpublish.md)|无| 使此业务的计划页不适用于外部客户。 将 **isPublished** 属性设置为 false，将 **publicUrl** 属性设置为 null。|
 |[获取员工可用性](../api/bookingbusiness-getstaffavailability.md) |[staffAvailabilityItem](staffavailabilityitem.md) 集合| 获取Microsoft Bookings日历的工作人员的可用性信息。|
@@ -57,14 +57,15 @@ ms.locfileid: "64755626"
 |displayName|String|与客户接口的业务名称。 此名称显示在业务计划页面的顶部。|
 |email|String|业务的电子邮件地址。|
 |id|String|业务的唯一编程标识符。 只读。|
-|isPublished|Boolean|计划页已提供给外部客户。 使用 **发布** 和 **取消发布** 操作设置此属性。 只读。|
+|isPublished|布尔|计划页已提供给外部客户。 使用 **发布** 和 **取消发布** 操作设置此属性。 只读。|
+|languageTag|String|自助服务预订页的语言|
 |phone|String|企业的电话号码。 **手机** 属性以及 **地址** 和 **webSiteUrl** 显示在业务计划页面的页脚中。|
 |publicUrl|String|计划页的 URL，该 URL 是在 [发布](../api/bookingbusiness-publish.md) 或 [取消发布](../api/bookingbusiness-unpublish.md) 页面后设置的。 只读。|
 |schedulePolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|指定如何为此业务创建预订。|
 |webSiteUrl|String|业务网站的 URL。 **WebSiteUrl** 属性以及 **地址**、**电话** 显示在业务计划页面的页脚中。|
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |appointments|[bookingAppointment](bookingappointment.md) 集合| 此业务的所有约会。 只读。 可为 NULL。|
 |calendarView|[bookingAppointment](bookingappointment.md) 集合| 此业务在指定日期范围内的约会集。 只读。 可为 NULL。|
@@ -98,6 +99,7 @@ ms.locfileid: "64755626"
   "isPublished": true,
   "phone": "String",
   "publicUrl": "String",
+  "languageTag": "String",
   "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
   "webSiteUrl": "String"
 }

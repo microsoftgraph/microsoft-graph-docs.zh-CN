@@ -1,16 +1,16 @@
 ---
 title: 枚举值
-description: Microsoft Graph 枚举值
+description: Microsoft Graph枚举值
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: c61273ced5a43a0a200bbcdf433c844643130845
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 8bfa73b97a08a71028cad90562269e9cabb07ff8
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65944988"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160676"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -194,7 +194,7 @@ ms.locfileid: "65944988"
 
 ### <a name="multifactorauthconfiguration-values"></a>multiFactorAuthConfiguration 值
 
-| 成员             | 值 | 说明 |
+| 成员             | 值 | Description |
 |:-------------------|:------| :------|
 | notRequired        | 0     | 用户无需进行多重身份验证即可完成设备注册。|
 | 必需           | 1     | 用户必须进行多重身份验证才能完成设备注册。|
@@ -202,7 +202,7 @@ ms.locfileid: "65944988"
 
 ### <a name="policyscope-values"></a>policyScope 值
 
-| 成员             | 值 | 说明 |
+| 成员             | 值 | Description |
 |:-------------------|:------| :------|
 | 无               | 0     | 该策略不适用于组织中的任何用户或组。 |
 | 全部                | 1     | 该策略适用于组织中的所有用户和组。 默认值。 |
@@ -357,7 +357,7 @@ ms.locfileid: "65944988"
 |整数|
 |参考|
 |Binary|
-|布尔值|
+|布尔|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变性值
@@ -661,7 +661,7 @@ ms.locfileid: "65944988"
 |应用程序|
 |users|
 |devicePlatform|
-|location|
+|位置|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -705,7 +705,7 @@ ms.locfileid: "65944988"
 |:---|
 |全部|
 |privilegedAdmin|
-|管理|
+|管理员|
 |用户|
 |unknownFutureValue|
 
@@ -1223,7 +1223,7 @@ ms.locfileid: "65944988"
 
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
-| 成员             | 值 | 说明                              |
+| 成员             | 值 | Description                              |
 | :----------------- | :---- | :--------------------------------------- |
 | 父级             | 0     | 用户的父级。                       |
 | 相对           | 1     | 用户的相对。                     |
@@ -1761,7 +1761,7 @@ ms.locfileid: "65944988"
 | 家
 | 工时
 | 博客
-| profile
+| 个人资料
 
 
 ### <a name="categorycolor-values"></a>categoryColor 值
@@ -1799,7 +1799,7 @@ ms.locfileid: "65944988"
 
 有关分析人员提供的警报的可能反馈值。
 
-| 成员         | 值 | 说明               |
+| 成员         | 值 | Description               |
 | :------------- | :---- | :------------------------ |
 | unknown        | 0     | 未知。                  |
 | truePositive   | 1     | 警报为 true-positive。   |
@@ -1808,7 +1808,7 @@ ms.locfileid: "65944988"
 
 ### <a name="filehashtype-values"></a>fileHashType 值
 
-| 成员              | 值 | 说明                    |
+| 成员              | 值 | Description                    |
 | :------------------ | :---- | :----------------------------- |
 | unknown             | 0     | 未知类型。                  |
 | sha1                | 1     | SHA1 哈希类型。                |
@@ -1822,7 +1822,7 @@ ms.locfileid: "65944988"
 
 ### <a name="connectiondirection-values"></a>connectionDirection 值
 
-| 成员   | 值 | 说明          |
+| 成员   | 值 | Description          |
 | :------- | :---- | :------------------- |
 | unknown  | 0     | 未知连接。  |
 | 入境  | 1     | 入站连接。  |
@@ -1830,7 +1830,7 @@ ms.locfileid: "65944988"
 
 ### <a name="connectionstatus-values"></a>connectionStatus 值
 
-| 成员    | 值 | 说明                |
+| 成员    | 值 | Description                |
 | :-------- | :---- | :------------------------- |
 | unknown   | 0     | 未知的连接状态。 |
 | 企图 | 1     | 尝试连接。      |
@@ -1840,7 +1840,7 @@ ms.locfileid: "65944988"
 
 ### <a name="processintegritylevel-values"></a>processIntegrityLevel 值
 
-| 成员    | 值 | 说明                   |
+| 成员    | 值 | Description                   |
 | :-------- | :---- | :---------------------------- |
 | unknown   | 0     | 未知。                      |
 | 可信 | 10    | 完整性级别不受信任。 |
@@ -1853,7 +1853,7 @@ ms.locfileid: "65944988"
 
 注册 [表 Hives](/windows/desktop/sysinfo/registry-hives) 定义的注册表 hiv 的枚举。
 
-| 成员                  | 值 | 说明                       |
+| 成员                  | 值 | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
 | unknown                 | 0     | 未知 hive。                     |
 | currentConfig           | 1     | HKEY_CURRENT_CONFIG hive。         |
@@ -1867,7 +1867,7 @@ ms.locfileid: "65944988"
 
 更改注册表项名称和/或值的操作。
 
-| 成员  | 值 | 说明                  |
+| 成员  | 值 | Description                  |
 | :------ | :---- | :--------------------------- |
 | unknown | 0     | 未知的注册表值类型。 |
 | create  | 1     | 创建注册表。             |
@@ -1878,7 +1878,7 @@ ms.locfileid: "65944988"
 
 注册表值类型定义的注册 [表值类型的](/windows/desktop/sysinfo/registry-value-types)枚举。
 
-| 成员            | 值 | 说明                                  |
+| 成员            | 值 | Description                                  |
 | :---------------- | :---- | :------------------------------------------- |
 | unknown           | 0     | 未知的注册表值类型。                 |
 | 二 进 制            | 1     | REG_BINARY注册表值类型。              |
@@ -1897,7 +1897,7 @@ ms.locfileid: "65944988"
 
 警报严重性的枚举。
 
-| 成员        | 值 | 说明                       |
+| 成员        | 值 | Description                       |
 | :------------ | :---- | :-------------------------------- |
 | unknown       | 0     | 严重性未知。              |
 | 信息 | 1     | 严重性仅适用于信息。 |
@@ -1909,7 +1909,7 @@ ms.locfileid: "65944988"
 
 警报生命周期状态的可能值 (阶段) 。
 
-| 成员     | 值 | 说明           |
+| 成员     | 值 | Description           |
 | :--------- | :---- | :-------------------- |
 | unknown    | 0     | 未知状态。       |
 | newAlert   | 10    | 警报是新的。         |
@@ -1920,7 +1920,7 @@ ms.locfileid: "65944988"
 
 电子邮件角色的可能值。
 
-| 成员    | 值 | 说明             |
+| 成员    | 值 | Description             |
 | :-------- | :---- | :---------------------- |
 | unknown   | 0     | 未知角色。           |
 | sender    | 1     | 电子邮件的发件人。    |
@@ -1930,7 +1930,7 @@ ms.locfileid: "65944988"
 
 用户登录方法的可能值。
 
-| 成员            | 值 | 说明                  |
+| 成员            | 值 | Description                  |
 | :---------------- | :---- | :--------------------------- |
 | unknown           | -1    | 未知。                     |
 | 互动       | 0     | 登录是交互式的。        |
@@ -1941,9 +1941,9 @@ ms.locfileid: "65944988"
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
-根据 Windows 定义，用户帐户类型的可能值 (组成员身份) 。
+根据Windows定义，用户帐户类型的可能值 (组成员身份) 。
 
-| 成员        | 值 | 说明                     |
+| 成员        | 值 | Description                     |
 | :------------ | :---- | :------------------------------ |
 | unknown       | -1    | 未知。                        |
 | 标准      | 0     | 标准用户组的成员。 |
@@ -2191,22 +2191,22 @@ ms.locfileid: "65944988"
 
 ### <a name="contentformat-values"></a>contentFormat 值
 
-| 成员  | 值 | 说明                          |
+| 成员  | 值 | Description                          |
 | :------ | :---- | :----------------------------------- |
 | 默认 | 0     | 内容是文件或非电子邮件类型。 |
 | 电子邮件   | 1     | 内容是一封电子邮件。                 |
 
 ### <a name="contentstate-values"></a>contentState 值
 
-| 成员 | 值 | 说明                                                                      |
+| 成员 | 值 | Description                                                                      |
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | 休息   | 0     | 数据处于静态;例如，共享中的文件。                                 |
 | 运动 | 1     | 数据正在移动。 传输中网络设备截获的文件。         |
-| 使用    | 2     | 数据正在使用中。 文件在客户端应用程序（如 Microsoft Office）中打开。 |
+| 使用    | 2     | 数据正在使用中。 文件在客户端应用程序（如Microsoft Office）中打开。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
-| 成员     | 值 | 说明                                                                                                                      |
+| 成员     | 值 | Description                                                                                                                      |
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
 | 标准   | 0     | 标签由服务或策略条件设置。                                                                              |
 | 特权 | 1     | 该标签由用户显式设置。                                                                                          |
@@ -2214,7 +2214,7 @@ ms.locfileid: "65944988"
 
 ### <a name="actionsource-values"></a>actionSource 值
 
-| 成员        | 值 | 说明                                                  |
+| 成员        | 值 | Description                                                  |
 | :------------ | :---- | :----------------------------------------------------------- |
 | 手动        | 0     | 用户手动选择了标签。                          |
 | 自动     | 1     | 标签是由于策略条件而选择的。       |
@@ -2224,7 +2224,7 @@ ms.locfileid: "65944988"
 
 ### <a name="contentalignment-values"></a>contentAlignment 值
 
-| 成员 | 值 | 说明                         |
+| 成员 | 值 | Description                         |
 | :----- | :---- | :---------------------------------- |
 | left   | 0     | 将内容标记对齐到左侧。  |
 | 对  | 1     | 将内容标记对齐到右侧。 |
@@ -2232,7 +2232,7 @@ ms.locfileid: "65944988"
 
 ### <a name="watermarklayout-values"></a>watermarkLayout 值
 
-| 成员     | 值 | 说明                 |
+| 成员     | 值 | Description                 |
 | :--------- | :---- | :-------------------------- |
 | 水平 | 0     | 使用水平水印。 |
 | 对角   | 1     | 使用对角线水印。   |
@@ -2341,7 +2341,7 @@ ms.locfileid: "65944988"
 
 ### <a name="threatassessmentcontenttype-values"></a>threatAssessmentContentType 值
 
-| 成员 | 值 | 说明             |
+| 成员 | 值 | Description             |
 |:-------|:------|:------------------------|
 | mail   | 1     | 邮件威胁。            |
 | url    | 2     | URL 威胁。             |
@@ -2349,14 +2349,14 @@ ms.locfileid: "65944988"
 
 ### <a name="threatexpectedassessment-values"></a>threatExpectedAssessment 值
 
-| 成员  | 值 | 说明                       |
+| 成员  | 值 | Description                       |
 |:--------|:------|:----------------------------------|
 | 块   | 1     | 应阻止威胁。     |
 | 疏通 | 2     | 不应阻止威胁。 |
 
 ### <a name="threatcategory-values"></a>threatCategory 值
 
-| 成员             | 值 | 说明        |
+| 成员             | 值 | Description        |
 |:-------------------|:------|:-------------------|
 | 垃圾邮件 (spam)               | 1     | 垃圾邮件威胁。       |
 | 仿冒           | 2     | 网络钓鱼威胁。   |
@@ -2365,14 +2365,14 @@ ms.locfileid: "65944988"
 
 ### <a name="threatassessmentstatus-values"></a>threatAssessmentStatus 值
 
-| 成员    | 值 | 说明                              |
+| 成员    | 值 | Description                              |
 |:----------|:------|:-----------------------------------------|
 | 等待   | 1     | 威胁评估仍在进行中。 |
 | 完成 | 2     | 威胁评估已完成。         |
 
 ### <a name="threatassessmentrequestsource-values"></a>threatAssessmentRequestSource 值
 
-| 成员        | 值 | 说明              |
+| 成员        | 值 | Description              |
 |:--------------|:------|:-------------------------|
 | 定义     | 0     | 还不知道            |
 | 用户          | 1     | 用户提交。         |
@@ -2380,7 +2380,7 @@ ms.locfileid: "65944988"
 
 ### <a name="threatassessmentresulttype-values"></a>threatAssessmentResultType 值
 
-| 成员             | 值 | 说明                                          |
+| 成员             | 值 | Description                                          |
 |:-------------------|:------|:-----------------------------------------------------|
 | checkPolicy        | 1     | 策略检查结果，仅用于 `mail` 评估。 |
 | rescan             | 2     | 重新扫描结果。                                   |
@@ -2388,11 +2388,11 @@ ms.locfileid: "65944988"
 
 ### <a name="maildestinationroutingreason-values"></a>mailDestinationRoutingReason 值
 
-| 成员                | 值 | 说明                         |
+| 成员                | 值 | Description                         |
 |:----------------------|:------|:------------------------------------|
 | 无                  | 0     | 还不知道                       |
-| mailFlowRule          | 1     | Exchange 传输规则。            |
-| safeSender            | 2     | 安全发件人列表。                   |
+| mailFlowRule          | 1     | Exchange传输规则。            |
+| safeSender            | 2     | 保险箱发件人列表。                   |
 | blockedSender         | 3     | 阻止的发件人列表。                |
 | advancedSpamFiltering | 4     | 高级垃圾邮件飞溅选项。     |
 | domainAllowList       | 5     | 发送方域允许列表。           |
@@ -2409,7 +2409,7 @@ ms.locfileid: "65944988"
 
 ### <a name="threatassessmentrequestpivotproperty-values"></a>threatAssessmentRequestPivotProperty 值
 
-| 成员                       | 值 | 说明                                                            |
+| 成员                       | 值 | Description                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
 | threatCategory               | 1     | 按 `threatCategory` a0/a0> 聚合威胁评估请求。               |
 | mailDestinationRoutingReason | 2     | 按 `mailDestinationRoutingReason` a0/a0> 聚合威胁评估请求。 |
@@ -2469,7 +2469,7 @@ ms.locfileid: "65944988"
 |用户 | 人员或组列。 |
 |url | 超链接或图片列。 |
 |计算 | 计算列。 |
-|location | 位置列。 |
+|位置 | 位置列。 |
 |地理位置 | 地理位置列。 |
 |term | 托管元数据列。 |
 |multiterm | 接受多个值的托管元数据列。 |
@@ -2479,7 +2479,7 @@ ms.locfileid: "65944988"
 
 ### <a name="connectedorganizationstate-values"></a>connectedOrganizationState 值
 
-| 成员                | 值 | 说明                                                                                                                                                                                                        |
+| 成员                | 值 | Description                                                                                                                                                                                                        |
 |:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 配置            | 0     | 具有此状态值的已连接组织包含在具有请求者范围类型的 `AllConfiguredConnectedOrganizationSubjects`分配策略中。                                                          |
 | 提出              | 1     | 系统自动创建的已连接组织具有此状态值。 它们不包括在具有请求者范围类型的 `AllConfiguredConnectedOrganizationSubjects`分配策略中。   |
@@ -2498,7 +2498,7 @@ ms.locfileid: "65944988"
 
 ### <a name="identityuserflowattributetype-values"></a>identityUserFlowAttributeType 值
 
-| 成员                | 值 | 说明                                                        |
+| 成员                | 值 | Description                                                        |
 |:----------------------|:------|:-------------------------------------------------------------------|
 | 内置               | 1     | 此用户流属性类型表示它是由系统创建的 |
 | 自 定义                | 2     | 此用户流属性类型表示它是由用户创建的   |
@@ -2546,7 +2546,7 @@ ms.locfileid: "65944988"
 
 ### <a name="chattype-values"></a>chatType 值
 
-| 成员             | 值 | 说明               |
+| 成员             | 值 | Description               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天是 1：1 聊天。 对于这种类型的聊天，名册大小是固定的，无法删除/添加该成员。                  |
 |组               | 1     | 指示聊天是群组聊天。 可以针对此类聊天更新至少 2 人) 的名册大小 (。 可以稍后删除/添加成员。   |
@@ -2599,11 +2599,11 @@ ms.locfileid: "65944988"
 
 ### <a name="teamsappinstallationscope-values"></a>teamsAppInstallationScope 值
 
-|成员    |值    |说明 |
+|成员    |值    |Description |
 |:---------|:--------|:----------- |
-|团队      |0        |指示 Teams 应用可以在团队中安装，并有权访问该团队的数据。|
-|groupChat |1        |指示 Teams 应用可以在群聊中安装，并有权访问该组聊天的数据。|
-|personal  |2        |指示 Teams 应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
+|团队      |0        |指示可在团队中安装Teams应用，并有权访问该团队的数据。|
+|groupChat |1        |指示可以在群聊中安装Teams应用，并有权访问该组聊天的数据。|
+|personal  |2        |指示可在用户的个人范围内安装Teams应用，并有权访问该用户的数据。|
 
 ### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>roleAssignmentScheduleRequestFilterByCurrentUserOptions 值
 
@@ -2707,7 +2707,7 @@ ms.locfileid: "65944988"
 
 |Member|
 |:---|
-|微软|
+|microsoft|
 |thirdParty|
 |客户|
 |unknownFutureValue|
@@ -2755,7 +2755,7 @@ ms.locfileid: "65944988"
 
 ### <a name="teamworktagtype-values"></a>teamworkTagType 值
 
-|成员| 值 | 说明               |
+|成员| 值 | Description               |
 |:---|:---- | :------------------------ |
 |标准| 0     |标记的默认类型。 类型标准的标记可由拥有权限的成员在团队中管理。|
 
@@ -2895,7 +2895,7 @@ ms.locfileid: "65944988"
 
 ### <a name="answerinputtype-values"></a>answerInputType 值
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |text|0|文本。|
 |radioButton|1|RadioButton。|
@@ -2943,6 +2943,8 @@ ms.locfileid: "65944988"
 |观众|
 |externalGuest|
 |unknownFutureValue|
+|调度|
+|成员|
 
 ### <a name="bookingreminderrecipients-values"></a>bookingReminderRecipients 值 
 
@@ -2964,7 +2966,7 @@ ms.locfileid: "65944988"
 
 ### <a name="teamworkdeviceactivitystate-values"></a>teamworkDeviceActivityState 值
 
-| 成员 | 值| 说明 |
+| 成员 | 值| Description |
 |:---------------|:--------|:----------|
 |unknown|0|未知状态。|
 |忙|1|设备正忙。|
@@ -2987,7 +2989,7 @@ ms.locfileid: "65944988"
 
 ### <a name="teamworksoftwarefreshness-values"></a>teamworkSoftwareFreshness 值
 
-| 成员 | 值| 说明 |
+| 成员 | 值| Description |
 |:---------------|:--------|:----------|
 |unknown|0|未知值。|
 |最新|1|指示设备组件是否运行最新版本的软件。|
@@ -3008,7 +3010,7 @@ ms.locfileid: "65944988"
 
 ### <a name="teamworksupportedclient-values"></a>teamworkSupportedClient 值
 
-| 成员 | 值| 说明 |
+| 成员 | 值| Description |
 |:---------------|:--------|:----------|
 |unknown|0|未知值。|
 |skypeDefaultAndTeams|1|同时支持这两者`Skype`。`Teams` 默认值为“`Skype`”。|

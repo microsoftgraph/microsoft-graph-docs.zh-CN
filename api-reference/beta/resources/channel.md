@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c08705efe8d88387aed81b0c1f98e9d87cfba017
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: c65d9b0a4b418784af1851f87deb0ecef87cd174
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65061074"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160697"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -51,7 +51,7 @@ ms.locfileid: "65061074"
 |[从频道中删除选项卡](../api/channel-delete-tabs.md) | 无 | 从频道中删除（取消固定）选项卡。|
 |[预配频道电子邮件地址](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| 为频道预配电子邮件地址。|
 |[删除频道电子邮件地址](../api/channel-removeemail.md) | 无 | 删除频道的电子邮件地址。|
-|[删除传入频道](../api/team-delete-incomingchannel.md) | 无| 删除传入频道。|
+|[删除传入频道](../api/team-delete-incomingchannels.md) | 无| 删除传入频道。|
 |[列出共享频道的团队](../api/sharedwithchannelteaminfo-list.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) 集合|获取已共享指定频道的团队列表。|
 |[获取团队共享频道](../api/sharedwithchannelteaminfo-get.md)|[Get sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|获取已共享指定频道的团队。|
 |[与团队取消共享频道](../api/sharedwithchannelteaminfo-delete.md)|无|取消与团队共享频道。|

@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b34bdd4930eec2c58fce432314c259c4fa5d12f9
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 76ce28e022d171ccd50486527e2ac0c0cfe5df58
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898185"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160550"
 ---
 # <a name="add-a-member"></a>添加成员
 
@@ -32,17 +32,23 @@ ms.locfileid: "65898185"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
-### <a name="permissions-to-create-a-new-group"></a>创建新组的权限
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All, Directory.ReadWrite.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Create、Group.ReadWrite.All、Directory.ReadWrite.All |
-
-若要将成员添加到管理单元，必须为调用主体分配以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：
+若要将用户、组或设备添加到管理单元，必须为调用主体分配以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：
 
 * 特权角色管理员
 * 全局管理员
+
+### <a name="permissions-to-create-a-new-group"></a>创建新组的权限
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Directory.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|Application | Directory.ReadWrite.All |
+
+若要在管理单元中创建新组，必须为调用主体分配以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：
+
+* 特权角色管理员
+* 全局管理员
+* 组管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,7 +64,7 @@ POST /administrativeUnits/{id}/members/$ref
 POST /administrativeUnits/{id}/members
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -80,7 +86,7 @@ POST /administrativeUnits/{id}/members
 | securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
 | owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。可选。 |
 | members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。可选。 |
-|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
+|visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
 
 ## <a name="response"></a>响应
 
@@ -127,6 +133,10 @@ Content-type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-ref-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-ref-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

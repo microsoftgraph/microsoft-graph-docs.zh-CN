@@ -2191,7 +2191,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -14684,7 +14684,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列出
                     href: api/simulationautomation-list-runs.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -14761,7 +14761,7 @@ items:
                     href: api/security-ediscoverycasesettings-update.md
                   - name: 将设置重置为默认设置
                     href: api/security-ediscoverycasesettings-resettodefault.md
-              - name: Operation
+              - name: 操作
                 href: resources/security-caseoperation.md
                 items:
                   - name: 列出事例操作
@@ -15495,7 +15495,7 @@ items:
               - name: 删除频道
                 href: api/channel-delete.md
               - name: 删除传入频道
-                href: api/team-delete-incomingchannel.md
+                href: api/team-delete-incomingchannels.md
               - name: 添加成员
                 href: api/channel-post-members.md
               - name: 通道的完整迁移

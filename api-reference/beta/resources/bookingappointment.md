@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: c3fb44ea22819728d5d048dd0c41daed4e20cef3
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 18183d9f0694da1c2897cff92a5af7863b3df9c2
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755696"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160369"
 ---
 # <a name="bookingappointment-resource-type"></a>bookingAppointment 资源类型
 
@@ -25,20 +25,21 @@ ms.locfileid: "64755696"
 
 ## <a name="methods"></a>方法
 
-| 方法           | 返回类型    |说明|
+| 方法           | 返回类型    |Description|
 |:---------------|:--------|:----------|
 |[列出约会](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) 集合 | 获取指定 [bookingbusiness](bookingbusiness.md) 中的 **bookingAppointment** 对象列表。 |
 |[创建 bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | 为指定的 [bookingbusiness](bookingbusiness.md) 创建新的 **bookingAppointment**。 |
 |[获取 bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |读取 **bookingAppointment** 对象的属性和关系。|
-|[更新](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |更新 **bookingAppointment** 对象。 |
+|[更新](../api/bookingappointment-update.md) | 无   |更新 **bookingAppointment** 对象。 |
 |[删除](../api/bookingappointment-delete.md) | 无 |删除 **bookingAppointment** 对象。 |
 |[Cancel](../api/bookingappointment-cancel.md)|无| 取消 **bookingAppointment** 对象。|
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |additionalInformation|String|确认约会时发送给客户的其他信息。|
+|anonymousJoinWebUrl|String|要匿名加入的会议 URL。
 |customerEmailAddress|String|预订约会的 [bookingCustomer](bookingcustomer.md) 的 SMTP 地址。|
 |customerId|String|此约会的 [bookingCustomer](bookingcustomer.md) 的 ID。 如果在创建约会时未指定 ID，则会创建新的 **bookingCustomer** 对象。 设置后，应考虑 **customerId** 不可变。|
 |customerLocation|[location](location.md)|表示预订约会的 [bookingCustomer](bookingcustomer.md) 的位置信息。|
@@ -56,10 +57,10 @@ ms.locfileid: "64755696"
 |invoiceId|String|发票的 ID。|
 |invoiceStatus|string| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
 |invoiceUrl|String|Microsoft Bookings中的发票 URL。|
-|isLocationOnline|Boolean|True 表示约会将联机进行。 默认值为 false。|
+|isLocationOnline|布尔|True 表示约会将联机进行。 默认值为 false。|
 |joinWebUrl|String|约会的联机会议的 URL。|
 |maximumAttendeesCount|Int32|约会中允许的最大客户数。 如果服务 **的最大AttendeesCount** 大于 1，则在创建或更新约会时传递有效的客户 ID。 若要创建客户，请使用 [Create bookingCustomer](../api/bookingbusiness-post-customers.md) 操作。 |
-|optOutOfCustomerEmail|Boolean|True 表示此约会的 [bookingCustomer](bookingcustomer.md) 不希望收到此约会的确认。|
+|optOutOfCustomerEmail|布尔|True 表示此约会的 [bookingCustomer](bookingcustomer.md) 不希望收到此约会的确认。|
 |postBuffer|期限|例如，约会结束后要保留的时间，用于清理。 该值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。 |
 |preBuffer|期限|例如，在约会开始之前，为准备而保留的时间量。 该值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。|
 |价格|双精度|指定 [bookingService](bookingservice.md) 的约会的常规价格。|
@@ -70,8 +71,8 @@ ms.locfileid: "64755696"
 |serviceLocation|[location](location.md)|服务的传送位置。|
 |serviceName|String|与此约会关联的 **bookingService** 的名称。<br>创建新约会时，此属性是可选的。 如果未指定，则会从 **ServiceId** 属性与约会关联的服务中进行计算。|
 |serviceNotes|String|[bookingStaffMember](bookingstaffmember.md) 中的备注。 仅当按其 ID 读取此 **bookingAppointment** 时，此属性的值才可用。|
-|smsNotificationsEnabled|Boolean|True 表示将向客户发送短信通知以进行约会。 默认值为 false。|
-|staffMemberIds|String collection|此约会中计划的每位 [bookingStaffMember](bookingstaffmember.md) 的 ID。|
+|smsNotificationsEnabled|布尔|True 表示短信通知将发送给客户进行约会。 默认值为 false。|
+|staffMemberIds|字符串集合|此约会中计划的每位 [bookingStaffMember](bookingstaffmember.md) 的 ID。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|约会开始的日期、时间和时区。|
 
 ## <a name="relationships"></a>关系
@@ -114,6 +115,7 @@ ms.locfileid: "64755696"
   "isLocationOnline": "Boolean",
   "joinWebUrl": "String",
   "optOutOfCustomerEmail": true,
+  "anonymousJoinWebUrl": "String",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
   "price": 1024,

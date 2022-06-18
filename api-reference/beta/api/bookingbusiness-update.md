@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 35cfd16d36878f51d34cfc684b9f7cfa86a056f1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 32c4901237c17429d3908607dffd186fc3919199
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129994"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160655"
 ---
 # <a name="update-bookingbusiness"></a>更新 bookingbusiness
 
@@ -18,7 +18,7 @@ ms.locfileid: "62129994"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [bookingBusiness 对象](../resources/bookingbusiness.md) 的属性。
+更新 [bookingBusiness](../resources/bookingbusiness.md) 对象的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "62129994"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,21 +43,22 @@ PATCH /bookingBusinesses/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](../resources/physicaladdress.md)|企业街道地址。|
-|businessHours|[bookingWorkHours](../resources/bookingworkhours.md) 集合|企业运营的小时数。|
+|address|[physicalAddress](../resources/physicaladdress.md)|企业的街道地址。|
+|businessHours|[bookingWorkHours](../resources/bookingworkhours.md) 集合|业务运营时间。|
 |businessType|String|业务类型。|
-|defaultCurrencyIso|String|在 Microsoft Bookings 上运营业务的货币代码。|
-|displayName|String|与客户交互的企业的名称。|
-|email|String|企业的电子邮件地址。|
+|defaultCurrencyIso|String|业务在Microsoft Bookings上运营的货币的代码。|
+|displayName|String|与客户接口的业务名称。|
+|email|String|业务的电子邮件地址。|
+|languageTag|String|自助服务预订页的语言。
 |phone|String|企业的电话号码。|
-|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|指定如何为此业务创建预订。|
+|schedulePolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|指定如何为此业务创建预订。|
 |webSiteUrl|String|业务网站的 URL。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例更新了企业电子邮件地址和日程安排策略，将业务默认预订时间段更改为一小时，并提前预定最多 30 天。
+以下示例更新业务电子邮件地址和计划策略，将业务默认预订时间段更改为一小时，并将预订提前最多 30 天。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
