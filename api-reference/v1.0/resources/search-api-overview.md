@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 50e476e116ca4af3882364415c665d705f96817f
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 49fbbcef1cb43158894517ea41c90fbe2912b3c7
+ms.sourcegitcommit: 8f54d85e8e8b0a1f72d4557d2bb7749b972dd3e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695389"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141642"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -59,12 +59,12 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 
 - **起始数量** - 一个整数，它表示从 0 开始的起始数，在页面上列出搜索结果。 默认值为 0。
 
-- **大小** - 一个整数，它表示要为页面返回的结果数。 默认值为 25。
+- **大小** - 一个整数，它表示要为页面返回的结果数。 默认值为 25 个结果。 最大值为 1000 个结果。
 
 如果你正在搜索 **event** 或 **message** 实体，则注意以下限制：
 
 - **起始数量** 在第一个页面请求中必须从零开始，否则请求将导致出现 HTTP 400 `Bad request`。
-- 每页的 **message** 和 **event** 最大结果数（**大小**）为 25。 
+- 每页的 **消息** 和 **事件** 的最大结果数（**大小**）为 25。 
 
 SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较大的页面大小通常会导致更高的延迟。
 
@@ -72,7 +72,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 - 指定初始请求中的较小的首页。 例如，将 **起始数量** 指定为 0，将 **大小** 指定为 25。
 - 通过更新 **起始数量** 和 **大小** 属性来对后续页面进行分页。 可以在每个后续请求中增加页面大小。 下表显示了一个示例。
-- 页面大小上限是 1000。
+
 
     | 页面 | 起始数量 | 大小 |
     |:-----|:-----|:-----|
