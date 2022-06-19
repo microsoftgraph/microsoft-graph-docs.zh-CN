@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3225578752ab8d58f5e909fe849aa0f038701d73
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: b8749e7831a54e4d6b94add1e37e5eaa6a95e86b
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685108"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160543"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -41,14 +41,14 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[解档团队](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队还原到读写状态。 |
 |[克隆团队](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |复制团队及其关联的组。 |
 |[列出你的团队](../api/user-list-joinedteams.md) | [team](team.md) 集合 | 列出你属于的团队。 |
-|[列出关联的团队](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedteaminfo.md) 集合 | 获取[与用户](user.md)关联的Microsoft Teams中[关联的TeamInfo](associatedteaminfo.md) 对象的列表。 |
+|[列出关联的团队](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedteaminfo.md) 集合 | 获取 [user](user.md) 与之关联的 Microsoft Teams 中的 [associatedTeamInfo](associatedteaminfo.md) 对象的列表。 |
 |[列出组织中的所有团队](../api/teams-list.md) | [团队](team.md) 集合 | 列出组织中的所有团队。 |
 |[获取团队照片](../api/team-get-photo.md) | 二进制数据 | 获取团队的照片（图片）。 |
 |[完成迁移](../api/team-completemigration.md)|[团队](team.md)| 从团队中删除迁移模式并使团队可供用户发布和阅读消息。|
-|[列出所有通道](../api/team-list-allchannels.md)|[channel](../resources/channel.md) 集合|获取此 **团队** 中的 [频道](../resources/channel.md)列表或与此 **团队** 共享 (传入频道) 。|
-|[列出频道](../api/channel-list.md)|[频道](../resources/channel.md)集合|获取 **团队** 中的 [频道](../resources/channel.md)列表。|
-|[列出传入通道](../api/team-list-incomingchannels.md)|[channel](../resources/channel.md) 集合|获取与此 **团队** 共享的 [频道](../resources/channel.md)列表。|
-|[删除传入通道](../api/team-delete-incomingchannel.md) | 无| 删除传入通道。|
+|[示例 1：列出所有频道](../api/team-list-allchannels.md)|[channel](../resources/channel.md) 集合|获取此 **团队** 中的 [频道](../resources/channel.md) 列表或与此 **团队** (传入频道) 共享的频道列表。|
+|[列出频道](../api/channel-list.md)|[频道](../resources/channel.md)集合|获取 **团队** 中的 [频道列表](../resources/channel.md)。|
+|[列出传入通道](../api/team-list-incomingchannels.md)|[channel](../resources/channel.md) 集合|获取与此 **团队** 共享的 [频道](../resources/channel.md) 列表。|
+|[删除传入频道](../api/team-delete-incomingchannels.md) | 无| 删除传入频道。|
 |[列出团队中安装的应用](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出团队中安装的应用。|
 |[将应用添加到团队](../api/team-post-installedapps.md) |无 | 向团队添加（安装）应用程序。|
 |[获取团队中安装的应用](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取团队中安装的指定应用。|
@@ -77,7 +77,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |isMembershipLimitedToOwners|布尔值|如果设置为“`true`”，则团队当前处于“仅所有者”团队成员身份状态，且其他团队成员（如学生）不可访问。|
 |createdDateTime|dateTimeOffset|创建团队的时间戳。|
 |摘要|[teamSummary](teamsummary.md)| 包含有关团队的摘要信息，包括所有者、成员和来宾的数量。 |
-|tenantId |string | Azure Active Directory租户的 ID。 |
+|tenantId |string | Azure Active Directory 租户 ID。 |
 
 ### <a name="instance-attributes"></a>实例属性
 
@@ -91,10 +91,11 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型 | 说明 |
+| 关系 | 类型 | Description |
 |:---------------|:--------|:----------|
-|allChannels|[channel](channel.md) 集合|托管在团队中或与团队共享的频道列表 (传入频道) 。|
+|allChannels|[channel](channel.md) 集合|托管在团队中或与团队共享的频道列表（传入频道）。|
 |channels|[channel](channel.md) 集合|与团队相关的频道和消息的集合。|
+|incomingChannels|[channel](channel.md) 集合|与团队共享的 [频道](../resources/channel.md) 列表。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
 |members|[conversationMember](../resources/conversationmember.md) 集合|团队的成员和所有者。|
 |owners|[user](user.md)| 此团队的所有者列表。 目前，在使用应用程序权限创建团队时，必须指定一个所有者。 当使用用户委派的权限时，不能指定任何所有者（当前用户是所有者）。 必须将所有者指定为对象 ID (GUID)，而不是 UPN。 |

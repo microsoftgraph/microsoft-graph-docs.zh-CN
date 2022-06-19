@@ -4,12 +4,12 @@ description: 了解适用于 Microsoft Graph 中的 Microsoft Teams API 的许�
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: aac85b96442c7162d67f16d198a076402aa03314
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: cddf9cf46ae120be49051cadb98a538c6904a5da
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722260"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160557"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Microsoft Graph 中 Microsoft Teams API 的许可和付款要求
 
@@ -21,7 +21,7 @@ ms.locfileid: "63722260"
 将来，应用还需要为其在[种子设定容量](#seeded-capacity)之外使用的消息付费。
 
 - [`model=B`](#modelb-requirements)仅限于不执行[安全或合规性功能](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms)的应用程序。 
-[`model=B`](#modelb-requirements) 现在可以免费使用，但是，在将来，应用将根据它们使用的消息数向你收费。 `model=B` 没有许可要求。
+[`model=B`](#modelb-requirements) 从 2022 年 7 月 5 日开始，计费事件将正式发布。 `model=B` 没有许可要求。
 
 - [评估模式（默认）](#evaluation-mode-default-requirements)可以访问 API 进行评估，每个请求应用程序的使用量有限。 如果超出限制，则不会发送更改通知。
 
@@ -34,14 +34,14 @@ ms.locfileid: "63722260"
 | [chatMessage 更改通知](/graph/api/subscription-post-subscriptions) | 邮件发件人 | 每个应用每个月每个用户 800 条消息 | 每条消息 0.00075 美元 | 种子设定容量与 conversationMember 更改通知共享 |
 | [conversationMember 更改通知](/graph/api/subscription-post-subscriptions) | 租户中的任何用户 | 每个应用每个月每个用户 800 条通知  | 每条通知 0.00075 美元 | 种子设定容量与 chatMessage 更改通知共享 |
 | [为用户在所有聊天中获取消息](/graph/api/chats-getallmessages) | 已命名用户 | 每个应用每个月每个用户 1600 条消息 | 每条消息 0.00075 美元 | 命名用户是在 GET 请求 URL 中标识的用户。 每个 API 请求的最小费用为 1 条消息。 种子设定容量与通道导出共享。 |
-|  [在所有通道中获取消息](/graph/api/channel-getallmessages)| 任何团队成员 | 每个应用每个月每个用户 1600 条消息 | 每条消息 0.00075 美元 |  每个 API 请求的最小费用为 1 条消息。 种子设定容量与聊天导出共享。 |
+| [在所有通道中获取消息](/graph/api/channel-getallmessages)| 任何团队成员 | 每个应用每个月每个用户 1600 条消息 | 每条消息 0.00075 美元 |  每个 API 请求的最小费用为 1 条消息。 种子设定容量与聊天导出共享。 |
 | [正在更新 chatMessage 的 policyViolation](/graph/api/chatmessage-update) |  邮件发件人 |  每个应用每个月每个用户 800 条消息 | 每条消息 0.00075 美元 |
 
 ## <a name="modelb-requirements"></a>`model=B` 要求
 
 `model=B` 仅限于不执行安全或合规性功能的应用程序。 有关详细信息，请参阅 [Microsoft Azure Services 产品条款](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms)的安全与合规性应用程序部分的 API 条款。
 
->**注意：** [ `model=B`](#modelb-requirements) 现在可以免费使用，但将来应用将根据其使用的消息数收费。 
+>**注意：**[`model=B`](#modelb-requirements)从 2022 年 7 月 5 日开始，这些 API 的计费事件将正式发布。 
 
 |API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | [其他用途的价格](#price-for-additional-use) | 备注 |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
@@ -57,13 +57,18 @@ ms.locfileid: "63722260"
 | [chatMessage 更改通知](/graph/api/subscription-post-subscriptions) |  不适用 | 每个应用每月 500 条消息 | 不适用 |
 | [conversationMember 更改通知](/graph/api/subscription-post-subscriptions) | 不适用 | 每个应用每月 500 条消息 | 不适用 | 
 | [为用户在所有聊天中获取消息](/graph/api/chats-getallmessages) |  不适用 | 每个应用每月 500 条消息 | 不适用 |  每个 API 请求的最小费用为 1 条消息。 |
-|  [在所有通道中获取消息](/graph/api/channel-getallmessages)|  不适用 | 每个应用每月 500 条消息 | 不适用 |  每个 API 请求的最小费用为 1 条消息。 |
+| [在所有通道中获取消息](/graph/api/channel-getallmessages)|  不适用 | 每个应用每月 500 条消息 | 不适用 |  每个 API 请求的最小费用为 1 条消息。 |
 | [正在更新 chatMessage 的 policyViolation](/graph/api/chatmessage-update) |   不适用 |  每个应用每月 500 条消息 | 不适用 |
 
 在评估模式下，种子设定容量在所有 API 之间共享。超出种子设定容量后，具有许可和付款要求的 API 调用将失败，并出现 402 错误代码，另外，具有许可和付款要求的订阅将不会发送更改通知。
 
-> **注意**：成功的 API 调用并不意味着正确的许可已经就位。 
-> 并非所有许可证冲突都可检测到，在某些情况下可能会授予宽限期。
+| 错误类型 | 状态代码 | 错误消息 |
+|:-----------|:-----------|:-----------------|
+|未满足 E5 许可证要求| 402（需要付款） |`User '{userId}' needs a valid license to access this API.`, `Tenant {tenantId} needs a valid license to access this API.`|
+|修补程序 API 不支持模型 B| 402（需要付款） |`Query parameter 'model' does not support value 'B' for this API. Use billing model 'A'.`|
+|超出评估容量|402（需要付款）|`Evaluation mode capacity has been exceeded. Use a valid billing model.`|
+
+> **注意**：成功的 API 调用并不意味着正确的许可已经就位。 并非所有许可证冲突都可检测到，在某些情况下可能会授予宽限期。
 
 ## <a name="required-licenses-for-modela"></a>`model=A` 需要的许可证 
 
