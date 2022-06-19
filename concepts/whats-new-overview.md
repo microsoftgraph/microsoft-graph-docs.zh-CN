@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: 查看过去两个月 Microsoft Graph 中的新增功能、早期版本中添加的内容以及如何分享你的想法的亮点。
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 33d64635297761f0ac625c4a460e36abba34795e
-ms.sourcegitcommit: 8f54d85e8e8b0a1f72d4557d2bb7749b972dd3e2
+ms.openlocfilehash: 7fd388275a31b3b7e426e3f27dc6f5861b9a297f
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66141614"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160277"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -31,7 +31,7 @@ ms.locfileid: "66141614"
 允许 Azure Active Directory (Azure AD)租户设置 [与另一个标识提供程序(IdP)支持 SAML 或 WS-Fed 协议的组织联盟](/graph/api/resources/samlOrWsFedExternalDomainFederation)。 这使得 Azure AD 租户能够允许来宾用户访问其资源。
 
 ### <a name="search"></a>搜索
-对于[搜索请求](/graph/api/resources/searchrequest)，每页最多可指定 1000 个搜索结果。
+对于 [搜索请求](/graph/api/resources/searchrequest)，每页最多可指定 1000 个搜索结果。
 
 ### <a name="sites-and-lists"></a>网站和列表
 - 通过使用 [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes)操作，从内容类型中心获取兼容的 [内容类型](/graph/api/resources/contentType) 资源集合。 
@@ -47,8 +47,8 @@ ms.locfileid: "66141614"
 [获取频道上的消息](/graph/api/channel-list-messages)，并包含对消息 [的任何答复](/graph/api/channel-list-messages#example-3-request-with-top-and-expand-query-options-on-replies)。
 
 ### <a name="to-do-tasks"></a>待办任务
-- 将复杂的[待办事项任务](/graph/api/resources/todotask)分解为更具可操作性的小任务，每个任务都是一个[清单项](/graph/api/resources/checklistitem)。
-- 使用用户定义的[类别](/graph/api/resources/outlookcategory)标记待办事项任务，以便对 Outlook 联系人、事件、消息、组帖子、待办事项任务进行分组。
+- 将复杂的 [待办事项任务](/graph/api/resources/todotask) 分解为更具可操作性的小型任务，每个任务都是一个 [清单项](/graph/api/resources/checklistitem)。
+- 使用用户定义的 [类别](/graph/api/resources/outlookcategory) 标记待办事项任务，以便对 Outlook 联系人、事件、消息、组帖子、待办事项任务进行分组。
 
 
 ## <a name="may-2022-new-in-preview-only"></a>2022 年 5 月：仅限预览版中的新增功能
@@ -71,13 +71,13 @@ ms.locfileid: "66141614"
 使用与已安装的 Microsoft Teams 应用相对应的 [Teams 应用资源](/graph/api/resources/educationteamsappresource?view=graph-rest-beta&preserve-view=true)，使教育服务用户能够使用嵌入式 Teams 应用程序（如 YouTube 或 FlipGrid）创建和共享作业。
 
 ### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
-[为组织](/graph/api/organization-activateService?view=graph-rest-beta&preserve-view=true)和[为用户](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true)激活服务已弃用，并将在 2022 年 6 月 30 日停止返回数据。
+[为组织](/graph/api/organization-activateService?view=graph-rest-beta&preserve-view=true) 和 [为用户](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) 激活服务已弃用，并将在 2022 年 6 月 30 日停止返回数据。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 [授权策略](/graph/api/resources/authorizationPolicy?view=graph-rest-beta&preserve-view=true)的[默认用户角色](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true)可以指定设备的注册所有者是否可以读取自己的 BitLocker 恢复密钥。
 
 ### <a name="reports--identity-and-access-reports"></a>报告 | 身份和访问报告
-获取[用户注册的身份验证方法](/graph/api/resources/userregistrationdetails?view=graph-rest-beta&preserve-view=true)的使用报告，其中包括多重身份验证的默认方法。
+获取 [用户的注册身份验证方法使用报告](/graph/api/resources/userregistrationdetails?view=graph-rest-beta&preserve-view=true)，其中包括适用于多重身份验证的默认方法。
 
 ### <a name="search--index"></a>搜索 | 索引
 [获取](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true)[连接](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true)的[配额信息](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true)。此信息包括可以引入到连接中的项数，并包括连接中剩余的项目，及其所有连接的租户级剩余配额。
@@ -90,7 +90,7 @@ ms.locfileid: "66141614"
 - [向多个用户批量发送活动源通知](/graph/api/teamwork-sendActivityNotificationToRecipients?view=graph-rest-beta&preserve-view=true)，一次最多 100 个用户。
 
 ### <a name="to-do-tasks"></a>待办任务
-从 2022 年 5 月 31 日开始，[基于 baseTask 构建的待办事项 API 集](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true)已弃用。 该 API 集将于 2022 年 8 月 31 日停止返回数据。 请改用[在 todoTask 上构建的待办事项 API 集](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true)。
+从 2022 年 5 月 31 日开始，[基于 baseTask 构建的待办事项 API 集](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true) 已弃用。 该 API 集将于 2022 年 8 月 31 日停止返回数据。 请改用 [在 todoTask 上构建的待办事项 API 集](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true)。
 
 ## <a name="april-2022-new-and-generally-available"></a>2022 年 4 月：新版本和正式版
 
@@ -136,7 +136,7 @@ ms.locfileid: "66141614"
 - [仅列出与团队共享的频道](/graph/api/team-list-incomingchannels?view=graph-rest-beta&preserve-view=true)。
 - [列出团队中的所有频道](/graph/api/team-list-allchannels?view=graph-rest-beta&preserve-view=true)，包括在团队中托管或与团队共享的频道。
 - [列出可以访问指定共享通道的团队成员](/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-beta&preserve-view=true)。
-- [删除与团队共享的频道](/graph/api/team-delete-incomingchannel?view=graph-rest-beta&preserve-view=true)。
+- [删除与团队共享的频道](/graph/api/team-delete-incomingchannels?view=graph-rest-beta&preserve-view=true)。
 - [列出已共享指定频道的团队](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true)。
 - [取消与团队共享频道](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true)。
 
