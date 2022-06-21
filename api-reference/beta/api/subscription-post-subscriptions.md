@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 78e8229a2633554c4f544e50196b87a8719bbe79
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: faa5ca9d9c24cacabfeaf535ad2f6a2f915720e7
+ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092553"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66186918"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -66,7 +66,7 @@ ms.locfileid: "66092553"
 |[团队](../resources/team.md)（/teams - 组织中的所有团队） | 不支持 | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[团队](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All，TeamSettings.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-|[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 建议使用上表中记载的权限。 由于安全限制，Microsoft Graph 订阅在只需要读取访问权限时将不支持写入访问权限。
 
@@ -180,7 +180,7 @@ Content-type: application/json
 |:------ |:----- |
 |[baseTask](../resources/basetask.md) (已弃用)  | `/me/tasks/lists/{Id}/tasks`
 |[通话记录](../resources/callrecords-callrecord.md)|`communications/callRecords`|
-|[频道](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
+|[渠道](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[聊天](../resources/chat.md)|`/chats`, `/chats/{id}`|
 |[聊天消息](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[联系人](../resources/contact.md)|`me/contacts`|
@@ -191,7 +191,7 @@ Content-type: application/json
 |[组](../resources/group.md)|`groups`|
 |[列表](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[OnlineMeetings](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{WebJoinUrl}'`|
+|[OnlineMeetings](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`|
 |[状态](../resources/presence.md)| `/communications/presences/{id}`（单个用户），`/communications/presences?$filter=id in ('{id}','{id}',…)`（多个用户）|
 |[打印机](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|

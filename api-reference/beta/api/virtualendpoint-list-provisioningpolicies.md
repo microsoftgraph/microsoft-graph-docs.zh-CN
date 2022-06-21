@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 5cfd4a178eb24c7f14a3351bd76affc71ac77643
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 003050ef64c9df95c60838baf12353ac358599d6
+ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724010"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66186951"
 ---
 # <a name="list-provisioningpolicies"></a>列出 provisioningPolicies
 
@@ -18,7 +18,7 @@ ms.locfileid: "63724010"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出 [cloudPcProvisioningPolicy 对象的属性和](../resources/cloudpcprovisioningpolicy.md) 关系。
+列出 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select`、 `$filter` 和 `$expand` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select``$filter` `$expand` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,7 +57,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -133,7 +133,8 @@ Content-Type: application/json
       "imageType":"custom",
       "windowsSettings": {
         "language": "en-US"
-      }
+      },
+      "managedBy": "windows365"
     }
   ]
 }

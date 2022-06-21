@@ -1,22 +1,22 @@
 ---
 title: 获取最近的用户活动
-description: " API。 该服务将查询最新的 historyItems，然后提取这些相关活动。 活动将按照 **historyItem** 上的最新 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动不会包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还将对响应应用额外筛选，以便仅返回由应用程序创建的活动。 如果用户特别活动并且其他应用程序已创建最近的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。"
+description: " API。 该服务将查询最新的 historyItems，然后拉取这些相关活动。 活动将根据 **historyItem** 上的最新 **上次修改** 进行排序。 这意味着不会在响应中包含没有 **historyItems** 的活动。 UserActivity.ReadWrite.CreatedByApp 权限还将对响应应用额外的筛选，以便仅返回应用程序创建的活动。 如果用户特别活跃，并且其他应用程序已创建较新的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。"
 ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: bb4fbb27fb59b5f9d533d47b2d2314cbd2f0673c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: cc32f22e7617a4a8d73978d7b7d01b8182d986eb
+ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348018"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66186965"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
 命名空间：microsoft.graph
 
-获取给定用户的最近活动。 此 OData 函数包含一些默认行为，使其像"最近使用的"API 一样运行。 该服务将查询最新的 [historyItems](../resources/projectrome-historyitem.md)，然后提取这些相关活动。 活动将按照 **historyItem** 上的最新 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动不会包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还将对响应应用额外筛选，以便仅返回由应用程序创建的活动。 如果用户特别活动并且其他应用程序已创建最近的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。
+获取给定用户的最近活动。 此 OData 函数包含一些默认行为，使其像“最近使用的”API 一样运行。 该服务将查询最新的 [historyItems](../resources/projectrome-historyitem.md)，然后拉取这些相关活动。 活动将根据 **historyItem** 上的最新 **上次修改** 进行排序。 这意味着不会在响应中包含没有 **historyItems** 的活动。 UserActivity.ReadWrite.CreatedByApp 权限还将对响应应用额外的筛选，以便仅返回应用程序创建的活动。 如果用户特别活跃，并且其他应用程序已创建较新的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "62348018"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | UserActivity.ReadWrite.CreatedByApp    |
 |委派（个人 Microsoft 帐户） | UserActivity.ReadWrite.CreatedByApp    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,11 +40,11 @@ GET /me/activities/recent
 
 此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 支持以下查询参数：
 
-- $expand **historyItems 导航属性** 。
-- $top限制页面内的最大项目数。
-- $filter **活动或 historyItems 的 lastModifiedDateTime** 属性（如果展开）。
+- **historyItems** 导航属性的$expand。
+- $top限制跨页面的最大项数。
+- $filter **活动或** **historyItems** **的 lastModifiedDateTime** 属性（如果已展开）。
 
-下面是使用 URL 编码的受支持查询的一些示例。
+下面是使用 URL 编码支持的查询的一些示例。
 
 ```http
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -62,15 +62,15 @@ GET /me/activities/recent
 
 ## <a name="request-body"></a>请求正文
 
-不指定请求正文。
+请勿指定请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `200 OK` 响应代码以及用户最近针对您的应用程序的活动。
+如果成功，此方法将返回 `200 OK` 响应代码，其中包含用户最近针对应用程序的活动。
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/me/activities/recent
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。
 

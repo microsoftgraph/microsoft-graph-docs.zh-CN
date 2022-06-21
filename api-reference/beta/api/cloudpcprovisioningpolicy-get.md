@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 28dfc04b0286ffc7adcb16dfb690da1051036bda
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: ddeacbf8c8fd7b408d8907fdb3817a3ba652ec54
+ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723234"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66186917"
 ---
 # <a name="get-cloudpcprovisioningpolicy"></a>获取 cloudPcProvisioningPolicy
 
@@ -44,7 +44,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 和 `$expand` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData `$expand` 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -58,7 +58,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -66,6 +66,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 #### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -106,6 +107,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### <a name="response"></a>响应
 
+下面展示了示例响应。
+
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -133,14 +136,16 @@ Content-Type: application/json
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
     "windowsSettings": {
       "language": "en-US"
-    }
+    },
+    "managedBy": "windows365"
 }
 ```
 
-### <a name="example-2-get-the-properties-of-the-specified-provisioning-policy-and-expand-on-the-assignments"></a>示例 2：获取指定预配策略的属性并展开分配
+### <a name="example-2-get-the-properties-of-the-specified-provisioning-policy-and-expand-on-the-assignments"></a>示例 2：获取指定预配策略的属性并在分配上展开
 
 #### <a name="request"></a>请求
 
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -181,6 +186,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### <a name="response"></a>响应
 
+下面展示了示例响应。
+
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -219,6 +226,66 @@ Content-Type: application/json
           "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
           }
       }
-    ]
+    ],
+    "managedBy": "windows365"
+}
+```
+
+### <a name="example-3-get-the-selected-properties-of-the-specified-provisioning-policy"></a>示例 3：获取指定预配策略的选定属性
+
+以下示例演示检索指定预配策略的选定属性的请求。
+
+#### <a name="request"></a>请求
+
+请求示例如下所示。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpcprovisioningpolicy_3"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,displayName,domainJoinConfiguration,imageDisplayName,imageId,imageType,onPremisesConnectionId,windowsSettings,managedBy,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
+    "alternateResourceUrl": "https://ms.portal.azure.com/#contoso.com/resource/subscriptions/827f2432-9c7b-4637-b694-570b3c2f969c/resourceGroups/myResourceGroupName/providers/Microsoft.Fidalgo/projects/myProjectName/pools/myPoolName",
+    "cloudPcGroupDisplayName": "MyCloudPcGroup",
+    "description": "The ProvisioningPolicy for West US employees.",
+    "displayName": "WestUsPolicy",
+    "domainJoinConfiguration": {
+        "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+        "regionName": null,
+        "type": "hybridAzureADJoin"
+    },
+    "gracePeriodInHours": 2,
+    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+    "imageDisplayName": "myCustomImage",
+    "imageId": "d4e0541a-f7bb-4bdf-ad8f-b92b915a229f",
+    "imageType": "custom",
+    "localAdminEnabled": true,
+    "managedBy": "windows365",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+    "windowsSettings": {
+      "language": "en-US"
+    }
 }
 ```
