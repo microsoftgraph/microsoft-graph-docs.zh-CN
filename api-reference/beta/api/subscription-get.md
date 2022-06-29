@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 6fb4a018b592abad11a860752123de5f0a7c1f00
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: a25f2f9ba56563745d0460f3651fa75f70ba36a5
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094710"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436672"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -62,7 +62,7 @@ ms.locfileid: "66094710"
 |[团队](../resources/team.md)（/teams - 组织中的所有团队） | 不支持 | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[团队](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All，TeamSettings.Read.All | 不支持 | Team.ReadBasic.All，TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-|[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
@@ -76,13 +76,14 @@ ms.locfileid: "66094710"
 
 ### <a name="contact-event-and-message"></a>联系人、事件和消息
 
-可以订阅Outlook **联系人**、**事件** 或 **消息** 资源中的更改，并在 POST 请求有效负载中选择性地指定是否在通知中包含加密的资源数据。
+可以订阅 Outlook **联系人**、 **事件** 或 **消息** 资源中的更改，并在 POST 请求有效负载中选择性地指定是否在通知中包含加密的资源数据。
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="onlinemeetings-presence"></a>onlineMeetings，状态
 
 **onlineMeetings** 和 **状态** 订阅需要对包含资源数据的通知进行 [加密](/graph/webhooks-with-resource-data) 。 如果在通知中需要资源数据，则未指定 [encryptionCertificate](../resources/subscription.md) 和 [encryptionCertificateId](../resources/subscription.md) ，则订阅创建将失败。
+有关联机会议订阅的详细信息，请参阅 [获取联机会议的更改通知](/graph/changenotifications-for-onlinemeeting)。
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -1,25 +1,25 @@
 ---
-title: '使用 Microsoft 搜索 API 对搜索结果进行排序， (预览) '
-description: 使用 api 对搜索结果Microsoft 搜索排序。
+title: 使用 Microsoft 搜索 API 对搜索结果进行排序
+description: 可以使用 Microsoft Graph 中的 Microsoft 搜索 API sortProperties 属性对搜索结果进行排序。 可以执行单级或多级别排序。
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 43852737729eb2d8d36e48093302e21b3fecfe7c
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: ed5cb9f8737185be0dcad113f4e37d6afc489eba
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451387"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438267"
 ---
 # <a name="use-the-microsoft-search-api-to-sort-search-results"></a>使用 Microsoft 搜索 API 对搜索结果进行排序
 
-可以使用 Microsoft Microsoft 搜索中的 Graph API 对搜索结果进行排序。 若要对结果进行排序，请指定 [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) 对象中的 **sortProperties** 属性，并确定 **entityTypes** 中的资源属性，以便按升序或降序对匹配项进行排序。
+可以使用 Microsoft Graph 中的 Microsoft 搜索 API 对搜索结果进行排序。 若要对结果进行排序，请在 [searchRequest](/graph/api/resources/searchrequest) 对象中指定 **sortProperties** 属性，并在 **entityTypes** 中标识资源属性，以便按升序或降序对匹配项进行排序。
 
-项目和项目SharePoint OneDrive排序。 要排序SharePoint和OneDrive项的 属性在 *搜索* 架构中应可排序。
+SharePoint 和 OneDrive 项目支持排序。 要排序的 SharePoint 和 OneDrive 项的属性应可在搜索架构中 *排序* 。
 
-外部项也支持 [排序](/graph/api/resources/externalconnectors-externalitem)。 [要](/graph/api/resources/externalconnectors-property)排序的外部项的属性应在搜索 *架构* 中可精简。
+[外部项](/graph/api/resources/externalconnectors-externalitem)也支持排序。 应在搜索架构中 *重新定义* 要排序的外部项的 [属性](/graph/api/resources/externalconnectors-property)。
 
-默认排序顺序为升序。 设置 **isDescending** 属性以更改该属性。
+默认排序顺序正在升序。 设置 **isDescending** 属性以更改它。
 
 ## <a name="example-1-single-level-sort"></a>示例 1：单级排序
 
@@ -317,9 +317,9 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-- 邮件和事件不支持 **排序**。
+- **消息** 和 **事件** 不支持排序。
 - 无法在 **sortProperties** 中指定按相关性排序。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview)

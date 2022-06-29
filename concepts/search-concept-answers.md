@@ -1,28 +1,28 @@
 ---
-title: '为组织中用户设置管理搜索答案 (预览) '
-description: Microsoft 搜索使管理员能够将搜索词与特定于其组织的含义或网页关联，并将这些关联作为搜索答案。
+title: '为组织中的用户设置管理搜索答案 (预览) '
+description: Microsoft 搜索允许管理员将搜索词与特定于其组织的含义或网页相关联，并将其作为搜索答案包含在内。
 author: jakeost-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 542f1c3dc3d280ba72c3c64d032c19594c6bc29c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: ffc0e35f351a0841b8905c73454d1461f7fb7013
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337891"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446103"
 ---
-# <a name="set-up-administrative-search-answers-for-users-in-an-organization-preview"></a>为组织中用户设置管理搜索答案 (预览) 
+# <a name="set-up-administrative-search-answers-for-users-in-an-organization-preview"></a>为组织中的用户设置管理搜索答案 (预览) 
 
-Microsoft 搜索使管理员能够将搜索词与特定于其组织的含义或网页关联，并将这些关联作为搜索答案。 例如，组织的用户可能会遇到一个不熟悉的缩写词，该缩写词代表内部项目名称或与工作组网页关联的工作组名称。 管理员可以在"搜索和[](/microsoftsearch/manage-acronyms)智能["](/microsoftsearch/manage-bookmarks)下的Microsoft 365 管理中心设置首字母缩写词、书签& [](https://admin.microsoft.com/)[QnA](/microsoftsearch/manage-qas)。 这使用户能够使用搜索来导航和熟悉他们的工作。
+Microsoft 搜索允许管理员将搜索词与特定于其组织的含义或网页相关联，并将这些关联作为搜索答案包括在内。 例如，组织中的用户可能会遇到一个不熟悉的首字母缩略词，该首字母缩略词表示内部项目名称或与团队网页关联的团队名称。 管理员可以在搜索&**智能** 下，在 [Microsoft 365 管理中心](https://admin.microsoft.com/)中设置 [首字母缩写词](/microsoftsearch/manage-acronyms)、[书签](/microsoftsearch/manage-bookmarks)或 [QnA](/microsoftsearch/manage-qas)。 这使用户能够使用搜索导航并熟悉其工作。
 
-管理员还可使用 Microsoft Graph以编程方式管理组织中管理搜索答案。 当由可用搜索应答Microsoft 搜索类型（首字母缩写、书签和 [QnA](/graph/api/resources/search-qna) 资源）中定义的缩写词或关键字触发时，这些答案将显示在[](/graph/api/resources/search-acronym)结果中。 [](/graph/api/resources/search-bookmark)
+管理员还可以使用 Microsoft Graph 中的 Microsoft 搜索 API 以 [编程方式管理组织中的管理搜索答案](/graph/api/resources/search-api-answers-overview) 。 当由可用搜索答案资源类型中定义的首字母缩略词或关键字触发时，这些答案将显示在 Microsoft 搜索结果中： [首字母缩略词](/graph/api/resources/search-acronym)、 [书签](/graph/api/resources/search-bookmark)和 [QnA](/graph/api/resources/search-qna) 资源。
 
-当由定义的缩写词或关键字触发时，这些搜索答案将显示在您组织的搜索结果页面的顶部。
+当由定义的首字母缩略词或关键字触发时，这些搜索答案将显示在组织中搜索结果页面的顶部。
 
-## <a name="example-create-a-new-acronym"></a>示例：创建新的缩写词
+## <a name="example-1-create-a-new-acronym"></a>示例 1：创建新的首字母缩略词
 
-以下请求创建一个新的缩写词，当用户搜索搜索结果页面时，该缩写词会显示在搜索结果页面上。
+以下请求将创建一个新的首字母缩略词，该首字母缩略词将在用户搜索时显示在搜索结果页上。
 
 ### <a name="request"></a>请求
 <!-- {
@@ -58,9 +58,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="example-create-a-new-bookmark"></a>示例：创建新书签
+## <a name="example-2-create-a-new-bookmark"></a>示例 2：创建新的书签
 
-以下请求创建一个新书签，当用户搜索其至少一个关键字时，该书签会显示在搜索结果页面上。
+以下请求创建一个新的书签，当用户搜索其至少一个关键字时，该书签将显示在搜索结果页上。
 
 ### <a name="request"></a>请求
 <!-- {
@@ -102,6 +102,7 @@ Content-Type: application/json
 ```
 
 ## <a name="next-steps"></a>后续步骤
-- 熟悉搜索 API 方案和功能：Microsoft 搜索 [API 概述](/graph/search-concept-overview)。
+
+- 熟悉搜索 API 方案和功能： [Microsoft 搜索 API 概述](/graph/search-concept-overview)。
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 中浏览搜索 API。
-- [管理管理搜索答案](search-concept-answers.md)。
+- [使用 Microsoft 搜索 API 管理管理答案](/graph/api/resources/search-api-answers-overview)。

@@ -1,22 +1,22 @@
 ---
 title: 添加 externalSponsors
-description: 将用户或组添加到已连接的组织的外部发起人。
+description: 将用户或组添加到连接组织的外部发起人。
 author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f8e8c21346c95a2647cc58451d4778ba9df5a681
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ef4741b9ca77dd51519ad4c4c49bb846820cb631
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346250"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437807"
 ---
 # <a name="add-externalsponsors"></a>添加 externalSponsors
 
 命名空间：microsoft.graph
 
-将用户或组添加到已连接的组织的外部发起人。 外部 [发起](../resources/externalsponsors.md) 人是一组用户可以代表该已连接的组织的其他用户批准请求。
+将用户或组添加到连接组织的外部发起人。 [外部发起人](../resources/externalsponsors.md)是一组用户，他们可以代表来自该连接组织的其他用户批准请求。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,7 +40,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/exter
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供对要添加的用户或[组](../resources/group.md)对象的引用的[](../resources/user.md)JSON 表示形式，作为具有用户或组的完整 `@odata.id` URI 的属性。
+在请求正文中，提供对要添加的 [用户](../resources/user.md) 或 [组](../resources/group.md) 对象的引用的 JSON 表示形式，作为 `@odata.id` 具有用户或组的完整 URI 的属性。
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
@@ -82,8 +82,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalsponsor-from-connectedorganization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalsponsor-from-connectedorganization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalsponsor-from-connectedorganization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

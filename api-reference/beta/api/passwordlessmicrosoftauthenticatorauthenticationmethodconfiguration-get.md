@@ -1,26 +1,26 @@
 ---
 title: 获取 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: 读取无密码MicrosoftAuthenticatorAuthenticationMethodConfiguration 对象的属性和关系。
+description: 读取 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration 对象的属性和关系。
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1acc6f6a559aede82a2e0dd74260c51e833e35eb
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4df6a3dc45ac3418647025b207a1939e672322c4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395382"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446847"
 ---
-# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>获取 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (弃) 
+# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>获取已弃用的 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (已弃用) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象的属性和关系，该对象表示 Azure AD 租户的 Microsoft Authenticator 无密码 电话 登录身份验证方法策略。[](../resources/authenticationmethodspolicies-overview.md)
+检索 [PasswordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象的属性和关系，该对象代表 Azure AD 租户的 Microsoft Authenticator 无密码电话登录 [身份验证方法策略](../resources/authenticationmethodspolicies-overview.md) 。
 
 > [!CAUTION]
-> The Microsoft Authenticator Passwordless 电话 Sign-in authentication method policy API is deprecated and stopped returning results on December 31， 2020. 请使用新的身份验证[Microsoft Authenticator策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
+> Microsoft Authenticator 无密码电话登录身份验证方法策略 API 在 2020 年 12 月 31 日被弃用并停止返回结果。 请使用新的 [Microsoft Authenticator 身份验证方法策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,9 +29,9 @@ ms.locfileid: "63395382"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
-对于委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于委派方案，管理员需要以下 [Azure AD 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
 
 * 全局读取者
 * 身份验证策略管理员
@@ -58,7 +58,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/pas
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应 `200 OK` 代码和无密码 [MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

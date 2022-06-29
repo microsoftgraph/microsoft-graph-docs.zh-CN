@@ -1,23 +1,23 @@
 ---
 title: 删除 organizationalBrandingLocalization
-description: 删除 organizationalBrandingLocalization 对象。
+description: 删除组织BrandingLocalization 对象。
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 33717671720915eccdcfdb80ad8f1d7f7564e5f7
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 28913b30795f0c9cc21562abcb2a959278307914
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398056"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438987"
 ---
 # <a name="delete-organizationalbrandinglocalization"></a>删除 organizationalBrandingLocalization
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除本地化的品牌对象。 若要删除 [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象，必须先从 (类型) Stream 类型的所有图像。
+删除本地化品牌对象。 若要删除 [组织BrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象，必须首先从对象中删除所有图像 (流类型) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "63398056"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
 
 ### <a name="request"></a>请求
 
-下面是一个请求删除本地化对象 `fr-FR` 的示例。
+下面是删除本地化对象的请求示 `fr-FR` 例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-organizationalbrandinglocalization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-organizationalbrandinglocalization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

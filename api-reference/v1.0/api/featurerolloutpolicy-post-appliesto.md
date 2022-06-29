@@ -1,22 +1,22 @@
 ---
 title: Assign appliesTo
-description: 将 directoryObject 分配给功能推出。
+description: 为功能推出分配 directoryObject。
 ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9e6b7d35dfcd440fc026775836152fa396050a1b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5ef2aab8ad61b48c9a69d88ad9de7bcdb5b5557e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976761"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446223"
 ---
 # <a name="assign-appliesto"></a>Assign appliesTo
 
 命名空间：microsoft.graph
 
-在[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象上添加一个 appliesTo，以指定应应用[featureRolloutPolicy](../resources/featurerolloutpolicy.md)的[directoryObject。](../resources/directoryobject.md)
+在 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象上添加 appliesTo，以指定要应用 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 的 [directoryObject](../resources/directoryobject.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "60976761"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ POST /policies/featureRolloutPolicies/{id}/appliesTo/$ref
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}。 必需 |
+| Authorization | 持有者 {token}。 必需 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -48,7 +48,7 @@ POST /policies/featureRolloutPolicies/{id}/appliesTo/$ref
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [directoryObject](../resources/directoryobject.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [directoryObject](../resources/directoryobject.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -87,8 +87,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-featurerolloutpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-featurerolloutpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-directoryobject-from-featurerolloutpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: be7c3be35b1fd16fce5f8ea367f784c299e00f08
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: b2f6ab2343c6cd5b36e9f35321ad99c9b5ebf933
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66098745"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502311"
 ---
 ```go
 
@@ -73,6 +73,8 @@ isLocationOnline := true
 requestBody.SetIsLocationOnline(&isLocationOnline)
 smsNotificationsEnabled := true
 requestBody.SetSmsNotificationsEnabled(&smsNotificationsEnabled)
+languageTag := "en-US"
+requestBody.SetLanguageTag(&languageTag)
 isHiddenFromCustomers := false
 requestBody.SetIsHiddenFromCustomers(&isHiddenFromCustomers)
 notes := "Home-cooked special"
@@ -100,6 +102,8 @@ requestBody.SetStaffMemberIds( []String {
     "d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
     "2f5f8794-0b29-45b5-b56a-2eb5ff7aa880",
 }
+isAnonymousJoinEnabled := false
+requestBody.SetIsAnonymousJoinEnabled(&isAnonymousJoinEnabled)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.bookingService",
     "defaultPriceType@odata.type": "#microsoft.graph.bookingPriceType",

@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 96390c83301f46e80e414d85f686258f83bd2f8a
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 603397c4b15b138e4c2236cc5863b1ef84bd7f48
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210278"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446578"
 ---
 # <a name="get-documentsetversion"></a>获取 documentSetVersion
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "65210278"
 |:---|:---|
 |委派（工作或学校帐户）| Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|Application| Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All、Sites.Selected|
+|应用程序| Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All、Sites.Selected|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/sites/root/lists/Documents/items/2/document
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-documentsetversion-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-documentsetversion-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: dd1f496cb5f4d6761f14f530cff997fbc3a1792c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 91d360c4dc47a223aadf1c62e5dea3542e119d92
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098259"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446334"
 ---
 # <a name="update-accesspackage"></a>更新 accessPackage
 
 命名空间：microsoft.graph
 
 
-更新现有 [accessPackage](../resources/accesspackage.md) 对象以更改其一个或多个属性，如显示名称或说明。
+更新现有 [accessPackage](../resources/accesspackage.md) 对象以更改其一个或多个属性，例如显示名称或说明。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,8 +51,8 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|访问包名称。|
-|说明|String|访问包的说明。|
-|IsHidden|布尔值|访问包是否对请求程序隐藏。|
+|description|String|访问包的说明。|
+|IsHidden|布尔值|访问包是否隐藏在请求方中。|
 
 
 

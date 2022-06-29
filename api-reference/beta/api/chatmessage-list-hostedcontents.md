@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1cd3b25f63d48c99728016ffd644ee57a5ed55b9
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8775733e5c94bfe35f363d05e19a0c81a4d4046a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393464"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441972"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -54,7 +54,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/hostedContents
 ```
 
-**获取聊天消息中的 hostedContents**
+**在聊天消息中获取 hostedContents**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/messages/{message-id}/hostedContents
@@ -77,7 +77,7 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -127,7 +127,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 下面展示了示例响应。
 
-> **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
+> **注意：** `contentBytes` 并且 `contentType` 始终设置为 null。
 
 <!-- {
   "blockType": "response",
@@ -157,7 +157,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-hosted-content-for-reply-to-a-channel-message"></a>示例 2：列出用于回复频道消息的托管内容
+### <a name="example-2-list-hosted-content-for-reply-to-a-channel-message"></a>示例 2：列出用于答复频道消息的托管内容
 
 #### <a name="request"></a>请求
 
@@ -192,6 +192,10 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/go/get-hostedcontentschannelmessage-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-hostedcontentschannelmessage-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -199,7 +203,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 下面展示了示例响应。
 
-> **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
+> **注意：** `contentBytes` 并且 `contentType` 始终设置为 null。
 
 <!-- {
   "blockType": "response",
@@ -229,7 +233,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--list-hosted-content-for-message-in-a-chat"></a>示例 2：列出聊天中消息的托管内容
+### <a name="example-2--list-hosted-content-for-message-in-a-chat"></a>示例 2：列出聊天中邮件的托管内容
 
 #### <a name="request"></a>请求
 
@@ -275,7 +279,7 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 下面展示了示例响应。
 
-> **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
+> **注意：** `contentBytes` 并且 `contentType` 始终设置为 null。
 
 <!-- {
   "blockType": "response",

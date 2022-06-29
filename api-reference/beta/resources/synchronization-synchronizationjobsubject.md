@@ -5,12 +5,12 @@ author: ArvindHarinder1
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: d9c19bc431ce152bb3b15f97822ee86071c314d8
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 2e6a0bea0f3e035bc5b0aef81a20b4a9dc480836
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65061116"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441676"
 ---
 # <a name="synchronizationjobsubject-resource-type"></a>synchronizationJobSubject 资源类型
 
@@ -21,8 +21,9 @@ ms.locfileid: "65061116"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|objectId|String|要向其应用 **synchronizationJob** 的对象的标识符。 可以是下列类型之一： <li>一个 **onPremisesDistinguishedName**，用于从 Active Directory 同步到Azure AD。</li><li>用于从Azure AD同步到第三方的用户 ID。</li><li>从 Workday 同步到 Active Directory 或 Azure AD 的 Workday 辅助角色的工作器 ID。</li>|
-|objectTypeName|字符串|要向其应用 **synchronizationJob** 的对象的类型。 可以是下列类型之一： <li>`user`用于从 Active Directory 同步到Azure AD。</li><li>`User`用于从Azure AD同步到第三方应用程序。 </li><li>`Worker`从 Workday 同步到 Active Directory 或 Azure AD。</li>|
+|links|[synchronizationLinkedObjects](../resources/synchronizationlinkedobjects.md)|要预配的主体。|
+|objectId|String|要向其应用 **synchronizationJob** 的对象的标识符。 可以是下列类型之一： <li>用于从 Active Directory 同步到 Azure AD 的 **onPremisesDistinguishedName** 。</li><li>用于从 Azure AD 同步到第三方的用户 ID。</li><li>要从 Workday 同步到 Active Directory 或 Azure AD 的 Workday 辅助角色的辅助角色 ID。</li>|
+|objectTypeName|String|要向其应用 **synchronizationJob** 的对象的类型。 可以是下列类型之一： <li>`user` 用于在 Active Directory 和 Azure AD 之间同步。</li><li>`User` 用于在 Azure AD 和第三方应用程序之间同步用户。 </li><li>`Worker` 用于在 Workday 和 Active Directory 或 Azure AD 之间同步用户。</li><li>`Group` 用于在 Azure AD 和第三方应用程序之间同步组。 </li>|
 
 ## <a name="relationships"></a>关系
 无。
@@ -38,7 +39,10 @@ ms.locfileid: "65061116"
 {
   "@odata.type": "#microsoft.graph.synchronizationJobSubject",
   "objectId": "String",
-  "objectTypeName": "String"
+  "objectTypeName": "String",
+  "links": {
+    "@odata.type": "microsoft.graph.synchronizationLinkedObjects"
+  }
 }
 ```
 

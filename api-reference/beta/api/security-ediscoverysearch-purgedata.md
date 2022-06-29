@@ -1,36 +1,36 @@
 ---
 title: ediscoverySearch： purgeData
-description: 使用清除数据方法在电子数据展示搜索中删除Teams消息。
+description: 使用清除数据方法在电子数据展示搜索中删除 Teams 消息。
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f8ac399b59473a4c5ec1d1e1f064532228c23ea5
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 4a74360e6d714f34e23e6dc6a7ac2bbef641431d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095393"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446650"
 ---
 # <a name="ediscoverysearch-purgedata"></a>ediscoverySearch： purgeData
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-永久删除[电子数据展示搜索](../resources/security-ediscoverysearch.md)中包含的Microsoft Teams消息。
+永久删除 [电子数据展示搜索](../resources/security-ediscoverysearch.md)中包含的 Microsoft Teams 消息。
 
->**注意：** 此请求仅清除Teams数据。 它不会清除其他类型的数据，如邮箱项。
+>**注意：** 此请求仅清除 Teams 数据。 它不会清除其他类型的数据，如邮箱项。
 
-可以收集和清除以下类别的Teams内容：
-- **Teams 1：1 聊天** - 在两人Teams对话中共享的聊天消息、帖子和附件。 Teams 1：1 聊天也称为 *对话*。
-- **Teams群聊天** - 在三个或更多人之间Teams对话中共享的聊天消息、帖子和附件。 也称为 *1：N* 聊天或 *群组对话*。
-- **Teams频道** - 在标准Teams频道中共享的聊天消息、帖子、答复和附件。
-- **专用频道** - 在专用Teams频道中共享的消息帖子、答复和附件。
-- **共享频道** - 共享Teams通道中共享的消息帖子、答复和附件。
+可以收集和清除以下类别的 Teams 内容：
+- **Teams 1：1 聊天** - 两个人在 Teams 对话中共享的聊天消息、帖子和附件。 Teams 1：1 聊天也称为 *对话*。
+- **Teams 群组聊天** - 三个或三个以上人员在 Teams 对话中共享的聊天消息、帖子和附件。 也称为 *1：N* 聊天或 *群组对话*。
+- **Teams 频道** - 在标准 Teams 频道中共享的聊天消息、帖子、答复和附件。
+- **专用频道** - 在专用 Teams 频道中共享的消息帖子、答复和附件。
+- **共享频道** - 共享 Teams 频道中共享的消息帖子、答复和附件。
 
-有关清除Teams消息的详细信息，请参阅：
+有关清除 Teams 消息的详细信息，请参阅：
 - [电子数据展示解决方案系列：数据溢出方案 - 搜索和清除](/microsoft-365/compliance/data-spillage-scenariosearch-and-purge)
-- [Advanced eDiscovery Microsoft Teams中内容的工作流](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
+- [Advanced eDiscovery Microsoft Teams 中内容的工作流](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
 
 
 ## <a name="permissions"></a>权限
@@ -40,7 +40,7 @@ ms.locfileid: "66095393"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -96,6 +96,10 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverysearchthispurgedata-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverysearchthispurgedata-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

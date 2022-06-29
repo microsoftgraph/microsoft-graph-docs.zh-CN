@@ -5,12 +5,12 @@ author: sacampbe
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 66bf2b1f9b179fcef6f1b4754cf3316be0a067c1
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 7420562f5cc3e097715e20374403c44c072d4bbd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133732"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442275"
 ---
 # <a name="create-identity"></a>创建标识
 命名空间：microsoft.graph.externalConnectors
@@ -27,7 +27,7 @@ ms.locfileid: "65133732"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 | 属性       | 类型                    | 说明                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | 成员的唯 `id` 一。 如果Azure Active Directory用户或组，则为 **objectId**，对于外部组，则为 **externalGroupId**。 此为必需属性。                                    |
+| id             | String                  | 成员的唯 `id` 一。 如果是 Azure Active Directory 用户或组，则为 **objectId** ，对于外部组，则为 **externalGroupId** 。 此为必需属性。                                    |
 | type           | microsoft.graph.externalConnectors.identityType | 添加到外部组的成员的类型。 可能的值为： `user`，`group`， `externalGroup`. 必需。 |
 
 
@@ -64,7 +64,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>示例 1：将Azure Active Directory用户添加为成员
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>示例 1：将 Azure Active Directory 用户添加为成员
 
 #### <a name="request"></a>请求
 
@@ -105,6 +105,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-aad-user-identity-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-aad-user-identity-from-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -128,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>示例 2：将Azure Active Directory组添加为成员
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>示例 2：将 Azure Active Directory 组添加为成员
 
 #### <a name="request"></a>请求
 
@@ -167,6 +171,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-aad-group-identity-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-aad-group-identity-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -230,6 +238,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-external-group-identity-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-external-group-identity-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

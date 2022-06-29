@@ -1,22 +1,22 @@
 ---
 title: mobileApp 资源类型
 description: 包含 Intune 移动应用基属性的抽象类。
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 475a253f19dcff71636e9431e4fac8477f6ed42e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dbccfb27073c15e6a5fbf78842cc894aadea2c1c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023315"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441116"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -52,14 +52,14 @@ ms.locfileid: "59023315"
 |owner|String|应用的所有者。|
 |developer|String|应用的开发者。|
 |notes|String|应用的备注。|
-|uploadState|Int32|上载状态。|
+|uploadState|Int32|上传状态。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否将应用分配给至少一个组的值。|
-|roleScopeTagIds|String collection|此移动应用的范围标记 ID 列表。|
-|dependentAppCount|Int32|子应用具有的依赖项总数。|
+|roleScopeTagIds|字符串集合|此移动应用的范围标记 ID 列表。|
+|dependentAppCount|Int32|子应用的依赖项总数。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |**应用**|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。|
@@ -67,7 +67,7 @@ ms.locfileid: "59023315"
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|移动应用安装摘要。|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) 集合|此移动应用的安装状态列表。|
 |userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 集合|此移动应用的安装状态列表。|
-|relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 集合|此移动应用的关系列表。|
+|关系|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 集合|此移动应用的关系列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

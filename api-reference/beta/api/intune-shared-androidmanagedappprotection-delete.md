@@ -1,22 +1,22 @@
 ---
 title: 删除 androidManagedAppProtection
 description: 删除 androidManagedAppProtection。
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e49d4b7d0c7039aad337de83adc8dd52fc3151a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 74fcc7c68922c4e4ad15319655e2c9bede2cb986
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59087567"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441907"
 ---
 # <a name="delete-androidmanagedappprotection"></a>删除 androidManagedAppProtection
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,11 +29,11 @@ ms.locfileid: "59087567"
 |:---|:---|
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **移动应用管理(MAM)** | DeviceManagementApps.ReadWrite.All|
-| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
 | &nbsp; &nbsp; **移动应用管理(MAM)** | DeviceManagementApps.ReadWrite.All|
-| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

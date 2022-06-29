@@ -1,19 +1,19 @@
 ---
-title: 使用 Microsoft Microsoft 搜索中的 Graph API 搜索日历事件
-description: 您可以在用户自己的日历中搜索。
+title: 使用 Microsoft 搜索 API 搜索 Outlook 日历事件
+description: 使用 Microsoft Graph 中的 Microsoft 搜索 API 在已登录用户的主日历中搜索事件。 用户标识基于身份验证令牌。
 author: knightsu
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: de2e5ed0ccb015ae6566acf04664ed1885c61924
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3c5956efa60a54cd4f0cfaae6dcf5f56ddb85dc7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094001"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445858"
 ---
-# <a name="use-the-microsoft-search-api-to-search-calendar-events"></a>使用 Microsoft 搜索 API 搜索日历事件
+# <a name="use-the-microsoft-search-api-to-search-outlook-calendar-events"></a>使用 Microsoft 搜索 API 搜索 Outlook 日历事件
 
-使用 Microsoft 搜索 API 搜索登录用户的主日历中的事件。 搜索的用户标识基于身份验证令牌。
+使用 Microsoft Graph 中的 Microsoft 搜索 API 在已登录用户的主日历中搜索事件。 搜索的用户标识基于身份验证令牌。
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -21,7 +21,7 @@ ms.locfileid: "59094001"
 
 ### <a name="request"></a>请求
 
-本示例在用户的日历中搜索关键字"contoso"，最多返回 25 个结果。
+本示例在用户日历中搜索关键字“contoso”，并返回最多 25 个结果。
 
 ```HTTP
 POST https://graph.microsoft.com/v1.0/search/query
@@ -43,7 +43,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -96,9 +96,9 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-- 只能访问登录用户自己的邮箱。 不支持搜索委派邮箱。
-- 对于事件[，searchHitsContainer](/graph/api/resources/searchhitscontainer)类型的 total 属性包含页面上的结果数，而不是匹配结果的总数。 
-- 事件不支持对结果进行排序。 请求中的 sort 子句将在响应中返回错误请求错误代码。
+- 只能访问已登录用户自己的邮箱。 不支持搜索委派邮箱。
+- 对于事件，[searchHitsContainer](/graph/api/resources/searchhitscontainer) 类型的 **总** 属性包含页面上的结果数，而不是匹配结果的总数。
+- 事件不支持对结果进行排序。 请求中的 sort 子句将在响应中返回错误的请求错误代码。
 
 ## <a name="next-steps"></a>后续步骤
 

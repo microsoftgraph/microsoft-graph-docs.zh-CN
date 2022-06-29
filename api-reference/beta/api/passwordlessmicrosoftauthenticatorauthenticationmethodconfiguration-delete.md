@@ -1,26 +1,26 @@
 ---
 title: 删除 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: 删除无密码MicrosoftAuthenticatorAuthenticationMethodConfiguration 对象。
+description: 删除 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration 对象。
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0f1f2c5cc8933fb9cdc7112fba914200716a1b2f
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: f8b19b816316b116889872184c97fcbf74c2f04d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395354"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439990"
 ---
-# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>删除 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (弃) 
+# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>删除 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (已弃用) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过将策略Microsoft Authenticator 电话其[](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)默认配置，删除对登录身份验证方法策略所做的更改。
+通过将策略还原到其默认配置，删除对 [Microsoft Authenticator Phone 登录身份验证方法策略](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 所做的更改。
 
 > [!CAUTION]
-> The Microsoft Authenticator Passwordless 电话 Sign-in authentication method policy API is deprecated and stopped returning results on December 31， 2020. 请使用新的身份验证[Microsoft Authenticator策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
+> Microsoft Authenticator 无密码电话登录身份验证方法策略 API 在 2020 年 12 月 31 日被弃用并停止返回结果。 请使用新的 [Microsoft Authenticator 身份验证方法策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,9 +29,9 @@ ms.locfileid: "63395354"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
-对于委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于委派方案，管理员需要以下 [Azure AD 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
 
 * 身份验证策略管理员
 * 全局管理员
@@ -90,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

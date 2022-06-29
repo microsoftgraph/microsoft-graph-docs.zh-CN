@@ -1,26 +1,26 @@
 ---
-title: 使用 Microsoft Graph 云通信 API 时，确定名册中的大型库视图参与者
-description: 了解如何识别名册中的大型库视图参与者。
+title: 使用云通信 API 标识大型库视图参与者
+description: 在名册中标识大型库视图参与者，以便可以使用 Microsoft Graph 中的云通信 API 订阅其视频源。
 author: navali-msft
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: conceptualPageType
-ms.openlocfilehash: 0d4c0912080c7d6d24bfe8f0b450efe338c89deb
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 55e31cabff32f082ce03d2258fee0bf37fcd3ff4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65017014"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436202"
 ---
-# <a name="identify-large-gallery-view-participants-in-a-roster-when-using-the-microsoft-graph-cloud-communications-api"></a>使用 Microsoft Graph 云通信 API 时，确定名册中的大型库视图参与者
+# <a name="identify-large-gallery-view-participants-in-a-roster"></a>确定名册中的大型库视图参与者
 
-云通信 API 提供了一个终结点，用于将 [大型库视图添加](/graph/api/call-addlargegalleryview) 到调用。 将大型库视图成功添加到呼叫后，可以订阅参与者的视频源。
+Microsoft Graph 中的云通信 API 提供了一个终结点，用于将 [大型库视图添加](/graph/api/call-addlargegalleryview) 到调用。 将大型库视图成功添加到呼叫后，可以订阅参与者的视频源。
 
-本文介绍如何识别名册中的大型库视图参与者，以便可以检索相关数据以订阅视频源。
+本文介绍如何在名册中标识大型库视图参与者，以便检索相关数据以订阅视频源。
 
 ## <a name="roster-example-with-large-gallery-view-participant"></a>具有大型库视图参与者的花名册示例
 
-以下示例演示应用程序在大型库视图成功添加到调用后收到的名册。
+以下示例显示了应用程序在大型库视图成功添加到调用后接收的名册。
 
 ```json
 {
@@ -330,13 +330,13 @@ ms.locfileid: "65017014"
 }
 ```
 
-## <a name="identifying-large-gallery-view-participants"></a>标识大型库视图参与者
+## <a name="identify-large-gallery-view-participants"></a>识别大型库视图参与者
 
-使用名册示例中的以下数据标识大型库视图参与者：
+使用名册示例中的以下数据来标识大型库视图参与者：
 
 - 参与者的 **ApplicationType** 将设置为 `LargeGallery-V2`。
 - 视频媒体流 **的方向** 将设置为 `sendReceive`。
-- 将包含元 **数据** ，其中将包含更多详细信息，例如分页。
+- 将包含包含更多详细信息（如分页）的 **元数据** 。
 
 ### <a name="participant-data-example"></a>参与者数据示例
 
@@ -417,3 +417,6 @@ ms.locfileid: "65017014"
     }
 ```
 
+## <a name="see-also"></a>另请参阅
+
+- [云通信 API 概述](cloud-communications-concept-overview.md)

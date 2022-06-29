@@ -1,24 +1,24 @@
 ---
-title: 从 incompatibleGroups 中删除组
-description: 删除指示组与指定访问包不兼容的链接。
-localization_priority: Normal
+title: 从不兼容组中删除组
+description: 删除一个链接，该链接指示组与指定的访问包不兼容。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 403d583aa2b4e4592a4ec0bd9d9f29c3b93a1927
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: e387e283e06822f001313f70e525fc5dff5f39bb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439405"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436210"
 ---
-# <a name="remove-group-from-incompatiblegroups"></a>从 incompatibleGroups 中删除组
+# <a name="remove-group-from-incompatiblegroups"></a>从不兼容组中删除组
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[](../resources/group.md)[accessPackage](../resources/accesspackage.md)上标记为不兼容的组列表中删除组。  
+[从](../resources/group.md)[在 accessPackage](../resources/accesspackage.md) 上标记为不兼容的组列表中删除组。  
 
 ## <a name="permissions"></a>权限
 
@@ -82,6 +82,14 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/remove-incompatiblegroup-from-accesspackage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/remove-incompatiblegroup-from-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/remove-incompatiblegroup-from-accesspackage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

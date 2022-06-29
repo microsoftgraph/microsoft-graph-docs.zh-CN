@@ -1,62 +1,62 @@
 ---
-title: Microsoft 365 Lighthouse API 概述
-description: Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版 的中小型商业 (SMB) 客户大规模保护和管理设备、数据和用户。
+title: 使用 Microsoft 365 Lighthouse API 管理多个客户租户
+description: Microsoft Graph 中的Microsoft 365 Lighthouse可帮助 MSP 远程管理使用Microsoft 365 商业高级版的客户的设备、数据和用户。
 author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
-ms.openlocfilehash: 5b7151b719823e880c1e6d90e5dbb3e739bff143
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 8a59b310ef6ae5b5d50b423fc013b25bede133f4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477963"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440689"
 ---
-# <a name="overview-for-multi-tenant-management-using-the-microsoft-365-lighthouse-api"></a>使用应用程序 API 进行多租户Microsoft 365 Lighthouse概述
+# <a name="manage-multiple-customer-tenants-using-the-microsoft-365-lighthouse-api"></a>使用 Microsoft 365 Lighthouse API 管理多个客户租户
 
-Microsoft 365 Lighthouse是一个管理门户，它允许托管服务提供商 (MSP) 远程管理多个客户租户。 它可帮助 MSP 为使用 SMB 的中小型商业 (SMB 客户) 和管理Microsoft 365 商业高级版。
+Microsoft 365 Lighthouse是一个管理门户，允许托管服务提供商 (MSP) 远程管理多个客户租户。 它可帮助 MSP 大规模保护和管理设备、数据和用户，使中小型企业 (SMB) 使用Microsoft 365 商业高级版的客户。
 
-Microsoft 365 Lighthouse可帮助 MSP 简化客户租户Microsoft 365 商业高级版载入。 它提供 MSP，方便跨所有客户租户环境查看多租户。 它可推荐为 MSP 的 SMB 客户定制的安全配置基线。 借助 Microsoft 365 Lighthouse，MSP 可以扩展其客户租户的管理，重点关注最重要的内容，快速查找和调查风险，并采取措施帮助其客户租户进入正常、安全的状态。
+Microsoft 365 Lighthouse可帮助 MSP 简化Microsoft 365 商业高级版客户租户的载入。 它为 MSP 提供了跨其所有客户租户环境的多租户视图的便利性。 它可以建议为 MSP 的 SMB 客户定制安全配置基线。 借助Microsoft 365 Lighthouse，MSP 可以扩展其客户租户的管理，专注于最重要的内容，快速查找和调查风险，并采取措施帮助客户租户进入健康且安全的状态。
 
 > [!NOTE]  
-> 本文档与 Microsoft Microsoft 365 Lighthouse 上提供的 _Graph API 有关_。 类似产品 Azure Lighthouse 通过使用内置于 Azure 平台的全面而稳固的管理工具，帮助服务提供商为 _Azure_ 服务提供托管服务。 若要了解更多信息，请参阅 [什么是 Azure Lighthouse](/azure/lighthouse/overview)。
+> 本文档介绍 _Microsoft Graph_ 中提供的Microsoft 365 Lighthouse API。 类似的产品/服务 Azure Lighthouse 通过使用 Azure 平台中内置的全面可靠的管理工具，帮助服务提供商为 _Azure_ 服务提供托管服务。 若要了解详细信息， [请参阅什么是 Azure Lighthouse](/azure/lighthouse/overview)。
 
-## <a name="why-integrate-with-microsoft-365-lighthouse"></a>为什么与 Microsoft 365 Lighthouse？
+## <a name="why-integrate-with-microsoft-365-lighthouse"></a>为什么要与Microsoft 365 Lighthouse集成？
 
-作为 MSP，您可以使用 Microsoft Graph 中的 Microsoft 365 Lighthouse API 深入了解确定的风险，并采取措施帮助客户进入健康、安全的状态。
+作为 MSP，可以使用 Microsoft Graph 中的 Microsoft 365 Lighthouse API 深入了解已识别的风险，并采取措施帮助客户进入健康且安全的状态。
 
 ### <a name="devices"></a>设备
 
 可以使用 Lighthouse API 执行以下设备任务：
 
-- 分析 [设备合规性趋势](/graph/api/resources/managedtenants-manageddevicecompliancetrend?view=graph-rest-beta&preserve-view=true) ，以更好地了解设备合规性如何随着时间的推移而发展。
-- 了解 [已在整个客户](/graph/api/resources/managedtenants-manageddevicecompliance) 中创建哪些设备合规性策略以及策略的状态。
+- 分析 [设备符合性趋势](/graph/api/resources/managedtenants-manageddevicecompliancetrend?view=graph-rest-beta&preserve-view=true) ，以便更好地了解设备符合性如何随着时间推移而发展为客户。
+- 了解已在客户中创建了哪些 [设备符合性策略](/graph/api/resources/managedtenants-manageddevicecompliance) 以及策略的状态。
 
 ### <a name="threat-management"></a>威胁管理
 
 可以使用 Lighthouse API 执行以下威胁管理任务：
 
-- 深入了解客户注册用于管理的 Windows [](/graph/api/resources/managedtenants-windowsdevicemalwarestate) 上存在恶意软件的状态。
-- 查看[注册用于](/graph/api/resources/managedtenants-windowsprotectionstate?view=graph-rest-beta&preserve-view=true)Windows客户管理的设备的保护状态，以确保Windows Defender设备都正常运行。
+- 深入了解客户注册进行管理的 Windows 设备上存在的 [恶意软件](/graph/api/resources/managedtenants-windowsdevicemalwarestate) 状态。
+- 查看在客户之间注册进行管理的 Windows 设备的[保护状态](/graph/api/resources/managedtenants-windowsprotectionstate?view=graph-rest-beta&preserve-view=true)，以确保使用Windows Defender的设备处于正常状态。
 
 ### <a name="users"></a>用户
 
 可以使用 Lighthouse API 执行以下用户任务：
 
-- 在 [客户中发现](/graph/api/resources/riskyuser) 有风险的用户。
-- 查看 [凭据用户注册摘要](/graph/api/resources/managedtenants-credentialuserregistrationssummary?view=graph-rest-beta&preserve-view=true) ，了解你的客户中哪些用户注册了多重身份验证和自助服务密码重置。
+- 发现客户中 [存在风险的用户](/graph/api/resources/riskyuser) 。
+- 查看 [凭据用户注册摘要](/graph/api/resources/managedtenants-credentialuserregistrationssummary?view=graph-rest-beta&preserve-view=true) ，了解客户中哪些用户注册了多重身份验证和自助密码重置。
 
 ## <a name="api-reference"></a>API 参考
 
 在查找此服务的 API 参考？
 
-请参阅 [microsoft Microsoft 365 Lighthouse 预览Graph (中的) ](/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta&preserve-view=true)API。
+请参阅 [Microsoft Graph (预览) 中的Microsoft 365 Lighthouse API](/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta&preserve-view=true)。
 
 > [!NOTE]
-> 该Microsoft 365 Lighthouse API 在 OData 子名称空间中定义`microsoft.graph.managedTenants`。
+> Microsoft 365 Lighthouse API 是在 OData 子名空间中定义的。 `microsoft.graph.managedTenants`
 
 
 ## <a name="next-steps"></a>后续步骤
 
-- 详细了解 [Microsoft 365 Lighthouse 门户。](/microsoft-365/lighthouse/m365-lighthouse-overview?view=o365-worldwide&preserve-view=true)
-- 了解 Lighthouse API [](/graph/whats-new-overview) 的最新新功能和更新。
+- 详细了解[Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview?view=o365-worldwide&preserve-view=true)门户。
+- 了解 Lighthouse API [的最新新功能和更新](/graph/whats-new-overview) 。
 - 浏览[示例](https://developer.microsoft.com/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。

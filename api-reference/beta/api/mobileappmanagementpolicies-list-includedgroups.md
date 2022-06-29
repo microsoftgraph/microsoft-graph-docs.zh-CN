@@ -1,24 +1,24 @@
 ---
-title: 列出 includedGroups
-description: 获取包含在移动应用管理策略中的组列表。
+title: List includedGroups
+description: 获取移动应用管理策略中包含的组的列表。
 author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bae2769289245949d58d6785f6faae59c50e4fd4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 71b20ee287cef91bde8c91dbe205930935712f75
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394773"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443674"
 ---
-# <a name="list-includedgroups"></a>列出 includedGroups
+# <a name="list-includedgroups"></a>List includedGroups
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取包含在移动应用管理策略中的组列表。
+获取移动应用管理策略中包含的组的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "63394773"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.MobilityManagement|
 |委派（个人 Microsoft 帐户） | 不支持。|
-|应用程序 | 不支持。|
+|Application | 不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ GET /policies/mobileAppManagementPolicies/{id}/includedGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [group](../resources/group.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [组](../resources/group.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90ba
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d1c97cb00b3ef6f3ac8a6b8d2588706f421571f6
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 3f70ce9fd2f0ed4c957f2d8bd7ed83b22f6728a8
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899097"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443037"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>unifiedRoleManagementPolicy 资源类型
 
@@ -29,20 +29,21 @@ ms.locfileid: "65899097"
 |[获取 unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|检索角色管理策略的详细信息。|
 |[List rules](../api/unifiedrolemanagementpolicy-list-rules.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|获取为角色管理策略定义的规则。|
 |[获取 unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|检索为角色管理策略定义的规则。|
+|[更新 unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|更新为角色管理策略定义的规则。|
 
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---|:---|:---|
-|说明|字符串|策略的说明。|
-|displayName|字符串|策略的显示名称。|
-|id|字符串|策略的唯一标识符。|
+|说明|String|策略的说明。|
+|displayName|String|策略的显示名称。|
+|id|String|策略的唯一标识符。|
 |isOrganizationDefault|Boolean|这只能设置 `true` 为单个租户范围的策略，该策略将应用于所有范围和角色。 将 scopeId 设置为 `/` scopeId，并将 scopeType 设置为 `Directory`. 支持 `$filter`（`eq`、`ne`）。|
 |lastModifiedBy|[identity](../resources/identity.md)|上次修改角色设置的标识。|
 |lastModifiedDateTime|DateTimeOffset|上次修改角色设置的时间。|
-|scopeId|字符串|创建策略的范围的标识符。 可以 `/` 用于租户或组 ID。 必填。|
-|scopeType|字符串|创建策略的范围的类型。 其中一 `Directory`个 ， `DirectoryRole`. 必填。|
+|scopeId|String|创建策略的范围的标识符。 可以 `/` 用于租户或组 ID。 必需项。|
+|scopeType|String|创建策略的范围的类型。 其中一 `Directory`个 ， `DirectoryRole`. 必填。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

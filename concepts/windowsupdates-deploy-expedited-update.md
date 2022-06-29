@@ -1,24 +1,24 @@
 ---
-title: 使用 Windows Update for Business 部署服务部署快速安全更新
-description: 借助 Windows Update for Business 部署服务，你可以将加速 Windows 安全更新部署到 Azure AD 租户中的设备，以防出现紧急情况，并需要立即部署安全更新。
+title: 使用 Windows 更新 for Business 部署服务部署加速的安全更新
+description: 在发生紧急情况时，请按照以下步骤使用 Windows 更新 for Business 部署服务，将快速 Windows 安全更新部署到 Azure AD 租户中的设备。
 author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: d380333cbaa48f0e242e374e19b2907ba6b35e02
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: c0c8d0389c2d152ebc4323639c0b8494927f89e7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791810"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444213"
 ---
-# <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务部署快速安全更新
+# <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>使用 Windows 更新 for Business 部署服务部署加速的安全更新
 
-使用 Windows Update for Business 部署服务，可以将 Windows 更新部署到 Azure AD 租户中的设备。 如今，部署服务[支持部署](windowsupdates-deployments.md)Windows 10更新和加速安全更新。 本主题重点介绍快速安全更新的部署。 有关部署功能更新的信息，请参阅 [部署功能更新](windowsupdates-deploy-update.md)。
+使用 Windows 更新 for Business 部署服务，可以将 Windows 更新部署到 Azure AD 租户中的设备。 目前，部署服务支持[部署](windowsupdates-deployments.md)Windows 10功能更新和加速安全更新。 本主题重点介绍加速安全更新的部署。 有关部署功能更新的信息，请参阅 [“部署功能更新](windowsupdates-deploy-update.md)”。
 
-安装安全更新会覆盖Windows更新的延迟策略，以便尽快安装更新。 当出现关键安全事件并且需要比正常情况更快速地部署最新更新时，它非常有用。 但是，虽然它可以帮助实现针对特定安全更新的合规性目标，但它并非旨在每月使用一次。 相反，请考虑使用 [更新的合规性截止时间](/windows/deployment/update/wufb-compliancedeadlines)。
+加速安全更新将替代业务延迟策略的Windows 更新，以便尽快安装更新。 当出现关键安全事件并且需要比正常部署最新更新更快时，它可以非常有用。 但是，尽管它可以帮助实现针对特定安全更新的符合性目标，但并不是每个月都使用它。 请考虑使用 [符合性截止时间进行更新](/windows/deployment/update/wufb-compliancedeadlines)。
 
-将加速安全更新部署到设备时，Windows更新会向设备提供最新的适用更新（如果设备尚未收到具有指定发布日期的更新）。 例如，如果将 2021 Windows 10 2021 年 4 月 13 日发布的安全更新部署到当前没有更新的设备，该设备将收到快速更新。 如果设备已具有指定的更新或更新版本，则它不会收到加速更新。
+将加速安全更新部署到设备时，如果设备尚未收到具有指定发布日期的更新，Windows 更新会向设备提供最新的适用更新。 例如，如果将 2021 年 4 月 13 日发布的Windows 10安全更新部署到当前没有更新的设备，则设备将收到加速更新。 如果设备已具有指定的更新或更新，则不会收到加速更新。
 
 快速安全更新还具有以下特征：
 
@@ -29,15 +29,15 @@ ms.locfileid: "61791810"
 ## <a name="prerequisites"></a>先决条件
 
 * 设备满足 [部署服务的先决条件](windowsupdates-concept-overview.md#prerequisites)。
-* 设备已安装[KB4023057 - Windows 10 Update Service](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a)组件更新 (更新) 。
+* 设备已安装 [KB4023057 中所述的更新 - 更新Windows 10更新服务组件](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a) (或更新) 。
 
-## <a name="step-1-optional-get-a-list-of-expeditable-updates"></a>步骤 1： (可选) 获取可安装更新的列表
+## <a name="step-1-optional-get-a-list-of-expeditable-updates"></a>步骤 1： (可选) 获取可快速更新的列表
 
-你可以查询部署服务目录，获取更新列表，这些更新可以加速到设备作为部署中的内容。
+可以查询部署服务目录，以获取可作为部署内容加速到设备的更新列表。
 
-安全更新由 [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) 类型表示 **，qualityUpdateClassification** 为 `security` 。 所有Windows 10分类为安全更新程序的质量更新都可以加速，并且使用设置为 标识这些更新的 **isExpeditable** 属性 `true` 进行标记。
+安全更新由 [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) 类型表示，**其质量为 QualityUpdateClassification**`security`。 所有归类为安全更新的Windows 10质量更新都可以加速，并使用 **isExpeditable** 属性设置为标`true`识它们进行标记。
 
-下面是一个查询所有 Windows 10安全更新的示例，这些安全更新可通过部署服务作为快速更新进行部署。 Microsoft 建议只显示三个最新的更新，因此该示例包括 `$top=3` 。
+下面是查询部署服务可作为加速更新部署的所有Windows 10安全更新的示例。 Microsoft 建议仅显示三个最新的更新，因此该示例包括 `$top=3`。
 
 ### <a name="request"></a>请求
 
@@ -86,13 +86,13 @@ Content-Type: application/json
 
 ## <a name="step-2-create-a-deployment"></a>步骤 2：创建部署
 
-[部署](/graph/api/resources/windowsupdates-deployment)指定要部署的内容、如何以及何时部署内容以及目标设备。 对于质量更新，使用目标合规性日期指定内容。 创建部署后，将自动将部署访问群体创建为关系。
+[部署](/graph/api/resources/windowsupdates-deployment)指定要部署的内容、部署内容的方式和时间以及目标设备。 对于质量更新，内容是使用目标符合性日期指定的。 创建部署时，会自动创建部署受众作为关系。
 
-将加速安全更新部署到设备时，Windows更新会提供一个更新，将设备超过指定的最低合规性级别。 根据每个设备扫描和更新时间，某些设备可能会收到更新 (例如，如果有比所需最低合规性级别) 更新更新的更新，但所有设备都符合指定的安全更新合规性标准。 这种提供最新适用更新的行为（由属性 **equivalentContent** 设置为默认值）有助于尽可能确保设备安全，并阻止设备在几天后收到快速更新，然后收到另一个 `latestSecurity` 定期更新。
+将加速安全更新部署到设备时，Windows 更新提供更新，使设备高于指定的最低符合性级别。 根据每个设备扫描和更新的时间，某些设备可能会收到较新的更新 (例如，如果有比所需最低符合性级别) 对应的更新更新的安全更新，但所有设备都符合指定的安全更新符合性标准。 提供最新适用更新的行为（由属性 **等效的Content** 设置为默认值 `latestSecurity`所指示）有助于尽可能保护设备的安全，并防止设备在几天后收到加速更新，然后再收到另一个常规更新。
 
-可以使用部署用户体验设置中的 **属性 daysUntilForcedReboot** 配置 [设备重启](/graph/api/resources/windowsupdates-userexperiencesettings) 宽限期。 宽限期设置安装后用户可以控制设备重启时间的时间量。 如果设备在宽限期到期时尚未重新启动，则会自动重新启动。
+可以在部署的 [用户体验设置](/graph/api/resources/windowsupdates-userexperiencesettings)中使用属性 **daysUntilForcedReboot** 配置设备重启宽限期。 宽限期设置安装后用户可以控制设备重启时间的时间。 如果设备在宽限期到期时尚未重启，则会自动重启。
 
-下面是为快速质量更新创建部署的示例。 目标设备在下一步中指定。
+下面是为加速质量更新创建部署的示例。 目标设备在下一步中指定。
 
 ### <a name="request"></a>请求
 
@@ -156,13 +156,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="step-3-assign-devices-to-the-deployment-audience"></a>步骤 3：将设备分配给部署访问群体
+## <a name="step-3-assign-devices-to-the-deployment-audience"></a>步骤 3：将设备分配给部署受众
 
-创建部署后，你可以将设备分配给部署 [访问群体](/graph/api/resources/windowsupdates-deploymentaudience)。 成功更新部署访问群体后，Windows更新开始根据部署设置向相关设备提供更新。
+创建部署后，可以将设备分配给 [部署受众](/graph/api/resources/windowsupdates-deploymentaudience)。 成功更新部署受众后，Windows 更新开始根据部署设置向相关设备提供更新。
 
-将设备添加到部署访问群体 (的成员或排除集合时，会自动向服务注册设备，即 [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) 对象在) 。
+设备在添加到部署受众的成员或排除项集合时自动注册到服务， (即，如果) 尚不存在，则会自动创建 [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) 对象。
 
-以下示例演示如何将Azure AD添加为部署访问群体的成员。
+以下示例演示如何将 Azure AD 设备添加为部署受众的成员。
 
 ### <a name="request"></a>请求
 
@@ -196,8 +196,8 @@ HTTP/1.1 202 Accepted
 
 ## <a name="during-a-deployment"></a>部署期间
 
-在部署过程中，可以通过更新部署的状态来暂停部署，也可以更新其访问群体成员和排除项。
+部署正在进行时，可以通过更新部署 **的状态** 以及更新其受众成员和排除项来暂停部署。
 
 ## <a name="after-a-deployment"></a>部署后
 
-最初向部署访问群体分配的所有设备都提供更新后，由于设备连接等因素，并非所有设备都启动或完成了更新。 只要部署仍然存在，它就会继续确保Windows只要重新连接，就会向分配的设备提供更新。
+分配给部署受众的所有设备最初都已提供更新后，由于设备连接等因素，可能并非所有设备都已启动或完成更新。 只要部署仍然存在，它就会继续确保Windows 更新每次重新连接时都会向分配的设备提供更新。

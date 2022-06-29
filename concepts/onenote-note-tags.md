@@ -1,17 +1,17 @@
 ---
-title: 在 OneNote 页中使用笔记标记
-description: " Microsoft 365 中的企业笔记本"
+title: 使用 OneNote API 在 OneNote 页面上使用笔记标记
+description: 使用数据标记属性在 OneNote 页面上添加和更新内置笔记标记。 了解如何在列表中使用笔记标记以及如何检索笔记标记。
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: f3b5a79da157a84f92bb90d87b144daa4df17f45
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 462fd5eeca23118601d32c7050149b131ec48462
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035554"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437021"
 ---
-# <a name="use-note-tags-in-onenote-pages"></a>在 OneNote 页中使用笔记标记
+# <a name="use-note-tags-on-onenote-pages"></a>在 OneNote 页面上使用便笺标记
 
 **适用于** OneDrive 上的消费者笔记本 | Microsoft 365 上的企业级笔记本
 
@@ -268,7 +268,8 @@ Authorization: Bearer {token}
 
 请注意，在列表级别上定义的 `data-tag` 属性会被推送到它的列表项。 有关将笔记标记与列表结合使用的详细信息，请参阅[列表上的笔记标记](#note-tags-on-lists)。
 
-> **注意：** 在输出 HTML 中，定义和后续工作笔记标记均作为 `data-tag="remember-for-later"` 返回。 `title` 元素不返回任何笔记标记信息。
+> [!NOTE]
+> 在输出 HTML 中，定义和后记笔记标记均返回为 `data-tag="remember-for-later"`。 `title` 元素不返回任何笔记标记信息。
 
 
 

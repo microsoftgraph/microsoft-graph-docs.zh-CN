@@ -1,27 +1,27 @@
 ---
 title: 从 printerShare 中删除 allowedGroup
-description: 撤销指定组向关联的打印机共享提交打印作业的访问权限。
+description: 撤消指定组将打印作业提交到关联打印机共享的访问权限。
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 35f152af344de8ae1561c824ba06160d1ebb8809
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 51c386226c82fbec62141a190b804e43b7da971e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946431"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445006"
 ---
 # <a name="delete-allowedgroup-from-printershare"></a>从 printerShare 中删除 allowedGroup
 
 命名空间：microsoft.graph
 
-撤销指定组向关联的 [printerShare](../resources/printershare.md)提交打印作业的访问权限。
+撤销指定组将打印作业提交到关联 [的 printerShare](../resources/printershare.md) 的访问权限。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，除下表中列出的权限外，用户或应用的租户还必须具有活动的通用打印订阅。 已登录的用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -71,6 +71,14 @@ DELETE https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedGro
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-allowedgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-allowedgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-allowedgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

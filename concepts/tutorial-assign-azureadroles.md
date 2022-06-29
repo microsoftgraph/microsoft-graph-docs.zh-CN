@@ -1,15 +1,15 @@
 ---
 title: 教程：使用 Privileged Identity Management (PIM) API 分配 Azure AD 角色
-description: 了解如何在 Microsoft Graph中使用 Privileged Identity Management (PIM) API 来分配 Azure AD 特权角色。
+description: 了解如何为 IT 支持人员创建可分配角色的安全组，并使用 PIM API 将安全组资格分配给用户管理员角色。
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 0f15636c80b72ba67f56a28d4352236fa4c0e19e
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 2316e2f87c4b13ae53997dafc53ce5f4f29838c5
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461210"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446054"
 ---
 # <a name="tutorial-use-the-privileged-identity-management-pim-api-to-assign-azure-ad-roles"></a>教程：使用 Privileged Identity Management (PIM) API 分配 Azure AD 角色
 
@@ -32,15 +32,15 @@ Microsoft Graph PIM API 使组织能够管理对 Azure Active Directory (Azure A
 若要完成本教程，需要以下资源和权限：
 
 + 已启用Azure AD Premium P2或 EMS E5 许可证的工作 Azure AD 租户。
-+ 以全局管理员角色的用户身份登录[到Graph资源管理器](https://developer.microsoft.com/graph/graph-explorer)。
-  + [可选]"开始"菜单新的隐身或 InPrivate 浏览器会话，或在匿名浏览器中启动会话。 本教程稍后将登录。
++ 以全局管理员角色中的用户身份登录 [到 Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer) 。
+  + [可选]启动新的隐身或 InPrivate 浏览器会话，或在匿名浏览器中启动会话。 本教程稍后将登录。
 + 以下委派权限：`User.ReadWrite.All`、`Group.ReadWrite.All`、`Directory.Read.All`、`RoleEligibilitySchedule.ReadWrite.Directory`和 `RoleAssignmentSchedule.ReadWrite.Directory``RoleManagement.ReadWrite.Directory`。
-+ Authenticator安装在手机上的应用，以注册用户进行多重身份验证 (MFA) 。
++ 在手机上安装验证器应用，用于注册用户进行多重身份验证 (MFA) 。
 
-若要在Graph资源管理器中同意所需的权限，请执行以下操作：
+若要在 Graph 资源管理器中同意所需权限，请执行以下操作：
 1. 选择用户帐户详细信息右侧的水平省略号图标，然后选择 **“选择权限**”。
   
-      :::image type="content" source="/graph/images/GE-Permissions/selectpermissions.png" alt-text="选择 Microsoft Graph权限。" border="true":::
+      :::image type="content" source="/graph/images/GE-Permissions/selectpermissions.png" alt-text="选择 Microsoft Graph 权限。" border="true":::
 
 2. 滚动浏览这些权限的权限列表：
     + 组 (2) ，展开，然后选择 **Group.ReadWrite.All**。
@@ -52,7 +52,7 @@ Microsoft Graph PIM API 使组织能够管理对 Azure Active Directory (Azure A
    
    选择“**同意**”，然后选择“**接受**”，以接受同意权限。 对于权 `RoleEligibilitySchedule.ReadWrite.Directory` 限和 `RoleAssignmentSchedule.ReadWrite.All` 权限，请代表你的组织同意。
 
-      :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="同意 Microsoft Graph权限。" border="true":::
+      :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="同意 Microsoft Graph 权限。" border="true":::
 
 ## <a name="step-1-create-a-test-user"></a>步骤 1：创建测试用户
 
@@ -277,11 +277,11 @@ Content-type: application/json
 
 ConTOSO 事件票证：Contoso 的事件管理系统中已提高安全性-012345，公司要求所有员工的刷新令牌都失效。 作为 IT 支持人员的成员，Aline 负责完成此任务。
 
-首先，在手机上启动Authenticator应用并打开 Aline Dupuy 的帐户。
+首先，在手机上启动 Authenticator 应用，并打开 Aline Dupuy 的帐户。
 
-以 Aline 身份登录到Graph资源管理器。 可以为此步骤使用隐身会话或匿名浏览器。 这样，你就不会中断当前会话作为全局管理员角色中的用户。 或者，可以通过注销Graph资源管理器并以 Aline 身份重新登录来中断当前会话。
+以 Aline 身份登录到图形资源管理器。 可以为此步骤使用隐身会话或匿名浏览器。 这样，你就不会中断当前会话作为全局管理员角色中的用户。 或者，可以通过注销 Graph 资源管理器并以 Aline 身份重新登录来中断当前会话。
 
-以 Aline 身份登录时，将首先更改密码，因为这是在创建帐户期间指定的。 然后，由于管理员为 MFA 配置了帐户，系统会提示你在Authenticator应用中设置帐户，并针对 MFA 登录提出质询。 这是因为 PIM 需要所有活动角色分配的 MFA。
+以 Aline 身份登录时，将首先更改密码，因为这是在创建帐户期间指定的。 然后，由于管理员为 MFA 配置了帐户，因此系统会提示你在 Authenticator 应用中设置帐户，并针对 MFA 登录提出质询。 这是因为 PIM 需要所有活动角色分配的 MFA。
 
 登录后，激活用户管理员角色 5 小时。
 

@@ -1,23 +1,23 @@
 ---
 title: 列出 roleManagementPolicyAssignments
-description: 获取所有角色管理策略分配的详细信息，包括与Azure AD角色关联的策略和规则。
+description: 获取所有角色管理策略分配的详细信息，包括与 Azure AD 角色关联的策略和规则。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ec171a251928fab96bfb10a2a9f58143c0e204de
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: b3722058c05636791087295f5f3d4aab6ccc4035
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246816"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447177"
 ---
 # <a name="list-rolemanagementpolicyassignments"></a>列出 roleManagementPolicyAssignments
 命名空间：microsoft.graph
 
-获取所有角色管理策略分配的详细信息，包括与Azure AD角色关联的策略和规则。
+获取所有角色管理策略分配的详细信息，包括与 Azure AD 角色关联的策略和规则。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments?$f
 [!INCLUDE [sample-code](../includes/snippets/go/list-unifiedrolemanagementpolicyassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-unifiedrolemanagementpolicyassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -124,7 +128,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-2-retrieve-the-role-management-policy-assignments-for-an-azure-ad-role-and-expand-the-policy-and-its-associated-rules"></a>示例 2：检索Azure AD角色的角色管理策略分配，并展开策略及其关联的规则
+### <a name="example-2-retrieve-the-role-management-policy-assignments-for-an-azure-ad-role-and-expand-the-policy-and-its-associated-rules"></a>示例 2：检索 Azure AD 角色的角色管理策略分配并展开策略及其关联的规则
 
 #### <a name="request"></a>请求
 
@@ -155,6 +159,10 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments?$f
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-unifiedrolemanagementpolicyassignment-expand-all-relationships-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-unifiedrolemanagementpolicyassignment-expand-all-relationships-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

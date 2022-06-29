@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: abe18cde512671439caf6581bacf43e2675c9e4f
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 0c06632d87406b9f8a73fc54be2bdf973799f827
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60736645"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502887"
 ---
 ```csharp
 
@@ -107,6 +107,7 @@ var bookingStaffMember = new BookingStaffMember
             }
         }
     },
+    IsEmailNotificationEnabled = false,
     AdditionalData = new Dictionary<string, object>()
     {
         {"role@odata.type", "#microsoft.graph.bookingStaffRole"},

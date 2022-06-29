@@ -1,24 +1,24 @@
 ---
 title: 更新 apiConnectorConfiguration
-description: 通过更新 apiConnectorConfiguration 属性，为用户流中的特定步骤启用或禁用 API 连接器。
+description: 通过更新 apiConnectorConfiguration 属性，启用或禁用用户流中的特定步骤的 API 连接器。
 author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 20a2e5b41d21525cab27108905d976306a6a3564
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 59630072a82f923938b9e7b3834e039a108491e4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507212"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442440"
 ---
 # <a name="update-apiconnectorconfiguration"></a>更新 apiConnectorConfiguration
 
 命名空间：microsoft.graph
 
-更新[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)中的[apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)属性以在用户流中启用或禁用 API 连接器。 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)的每个关系对应于用户流中可配置为调用 API 连接器的特定步骤。 一次为特定步骤 1 配置 API 连接器，如下所示。
+更新 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 中的 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 属性，以在用户流中启用或禁用 API 连接器。 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 的每个关系对应于可配置为调用 API 连接器的用户流中的特定步骤。 一次为特定步骤一个配置 API 连接器，如下所示。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,12 +26,12 @@ ms.locfileid: "59507212"
 |:---|:---|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
-* 全局管理员
-* 外部标识用户Flow管理员
+* 全球管理员
+* 外部标识用户流管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ PUT /identity/b2xUserFlows/{b2xUserFlowId}/apiConnectorConfiguration/{step}/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供你想要使用特定步骤的 `id` [identityApiConnector](../resources/identityapiconnector.md) 的 JSON 表示形式。 若要禁用 API 连接器，值可以是 {} 。
+在请求正文中，提供要使用特定步骤的 `id` [identityApiConnector](../resources/identityapiconnector.md) 的 JSON 表示形式。 若要禁用 API 连接器，可以是 {}值。
 
 ## <a name="response"></a>响应
 
@@ -61,7 +61,7 @@ PUT /identity/b2xUserFlows/{b2xUserFlowId}/apiConnectorConfiguration/{step}/$ref
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-enable-api-connector-for-post-idp-federation-on-sign-up"></a>示例 1：在注册时为 IDP 后联合身份验证启用 API 连接器
+### <a name="example-1-enable-api-connector-for-post-idp-federation-on-sign-up"></a>示例 1：注册后 IDP 联合身份验证启用 API 连接器
 
 #### <a name="request"></a>请求
 
@@ -115,7 +115,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-enable-api-connector-for-post-attribute-collection-on-sign-up"></a>示例 2：在注册时为 Post 属性集合启用 API 连接器
+### <a name="example-2-enable-api-connector-for-post-attribute-collection-on-sign-up"></a>示例 2：注册后属性集合启用 API 连接器
 
 #### <a name="request"></a>请求 
 
@@ -169,7 +169,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-disable-an-api-connector-for-post-attribute-collection-on-sign-up"></a>示例 3：在注册时禁用 Post 属性集合的 API 连接器
+### <a name="example-3-disable-an-api-connector-for-post-attribute-collection-on-sign-up"></a>示例 3：注册后禁用 Post Attribute Collection 的 API 连接器
 
 #### <a name="request"></a>请求 
 

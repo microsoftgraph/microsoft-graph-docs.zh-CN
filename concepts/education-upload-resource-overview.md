@@ -1,30 +1,30 @@
 ---
-title: Upload Microsoft Graph API 为教育作业和提交创建Graph文件
-description: 了解如何使用 Microsoft Graph 中的教育 API 将文件上传到作业或提交Graph。
+title: 上传教育作业和提交的文件
+description: 了解如何使用 Microsoft Graph 中的教育 API 将文件上传到工作分配或提交资源。
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 055d454f0ca58dab5c51687fa7b311a30828ac15
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6c3f9a3a35e89ed935105e6320c4f7c652b288f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137383"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440871"
 ---
-# <a name="upload-files-for-education-assignments-and-submissions-using-the-microsoft-graph-api"></a>Upload Microsoft Graph API 为教育作业和提交创建Graph文件
+# <a name="upload-files-for-education-assignments-and-submissions-using-the-microsoft-graph-api"></a>使用 Microsoft 图形 API上传教育作业和提交的文件
 
-资源是教育 [作业和子](/graph/api/resources/educationassignment) 分配 [的组成部分](/graph/api/resources/educationsubmission)。 教师确定要上传到作业文件夹的资源，学生确定要上传到提交文件夹的资源。
+资源是教育 [分配](/graph/api/resources/educationassignment) 和 [提交](/graph/api/resources/educationsubmission)不可或缺的一部分。 教师确定要上传到作业文件夹的资源，学生确定要上传到提交文件夹的资源。
 
-本文介绍如何使用 Microsoft Graph中的教育 API 将文件上载到作业或提交文件夹。
+本文介绍如何使用 Microsoft Graph 中的教育 API 将文件上传到分配或提交文件夹。
 
 ## <a name="prerequisites"></a>先决条件
 
-在上载文件之前，请设置一SharePoint文件夹，用于将给定教育作业或[子](/graph/api/resources/educationsubmission)资源的文件上传到该文件夹。 [](/graph/api/resources/educationassignment) 
+在上传文件之前，请设置一个 SharePoint 文件夹，以便将给定教育分配或提交资源的文件上传到其中。
 
-## <a name="upload-a-resource"></a>Upload资源
+## <a name="upload-a-resource"></a>上传资源
 
-API `setUpResourcesFolder` 返回包含 **resourcesFolderUrl 属性** 的模型。
+API `setUpResourcesFolder` 返回包含 **resourcesFolderUrl 属性的** 模型。
 
 ```http
 {
@@ -33,23 +33,25 @@ API `setUpResourcesFolder` 返回包含 **resourcesFolderUrl 属性** 的模型�
     ...
 }
 ```
-以下步骤介绍如何将资源/文件上载到相关资源文件夹。
 
-### <a name="step-1---construct-the-upload-url"></a>步骤 1 - 构造上载 URL
-生成 URL 以按照此特定格式上载内容 `{resourcesFolderUrl}:/{Name of new file}:/content` 。 以下示例显示包含 **resourcesFolderUrl** 属性的上载 URL。
+以下步骤介绍如何将资源/文件上传到相关资源文件夹。
+
+### <a name="step-1---construct-the-upload-url"></a>步骤 1 - 构造上传 URL
+生成要按照此特定格式 `{resourcesFolderUrl}:/{Name of new file}:/content`上传内容的 URL。 以下示例演示包含 **resourcesFolderUrl** 属性的上传 URL。
 
 ```http
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2:/MyPictureFile.png:/content
 ```
 
-### <a name="step-2---upload-the-resource-to-sharepoint"></a>步骤 2 - Upload资源SharePoint
-使用上载 URL 提出 PUT 请求以上载内容。
+### <a name="step-2---upload-the-resource-to-sharepoint"></a>步骤 2 - 将资源上传到 SharePoint
+使用上传 URL 发出 PUT 请求以上传内容。
 
 请求正文的内容应该是要上载文件的二进制流。
 
-有关详细信息，请参阅Upload[上传会话处理大型文件](/graph/api/driveitem-createuploadsession)。
+有关详细信息，请参阅 [使用上传会话上传大型文件](/graph/api/driveitem-createuploadsession)。
 
-#### <a name="request-example"></a>请求示例
+#### <a name="request"></a>请求
+
 下面为请求示例。
 
 ```http
@@ -59,7 +61,8 @@ Content-Type: text/plain
 Binary data for the file
 ```
 
-#### <a name="response-example"></a>响应示例
+#### <a name="response"></a>响应
+
 以下示例显示了相应的响应。
 
 ```http
@@ -116,25 +119,26 @@ Content-type: application/json
 ```
 
 ### <a name="step-3---construct-the-value-for-the-fileurl-property"></a>步骤 3 - 构造 fileUrl 属性的值
-使用下面的格式生成 **fileUrl** 属性的值 `https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}` ：。 将 `{drive-id}` 和 `{item-id}` 占位符替换为下表中描述的值。
+使用以下格式生成 **fileUrl** 属性的值： `https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}`。 `{drive-id}`将占位符和`{item-id}`占位符替换为下表中所述的值。
 
 | 占位符 | 说明 | 示例 |
 |:--|:--|:--|
 | `{drive-id}` | 步骤 2 中使用的请求 URL 中的驱动器 ID。 | b！6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F |
-| `{item-id}` | 步骤 2 中获取的响应正文中的项目 ID。 | 01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ |
+| `{item-id}` | 步骤 2 中获取的响应正文中的项 ID。 | 01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ |
 
-下面的示例演示基于此格式的 **fileUrl。**
+以下示例演示基于此格式 **的 fileUrl** 。
 
 ```http
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
 ```
 
 ### <a name="step-4---create-educationassignmentresource"></a>步骤 4 - 创建 educationAssignmentResource
-此步骤演示如何将资源SharePoint工作分配资源文件夹。
+此步骤演示如何将 SharePoint 资源上传到工作分配资源文件夹。
 
-使用 `fileUrl` 请求正文中上一步骤中的 创建 [educationAssignmentResource](/graph/api/educationassignment-post-resources)。
+`fileUrl`使用请求正文中上一步中的步骤[创建 educationAssignmentResource](/graph/api/educationassignment-post-resources)。
 
-#### <a name="request-example"></a>请求示例
+#### <a name="request"></a>请求
+
 下面为请求示例。
 
 ```http
@@ -150,7 +154,8 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response-example"></a>响应示例
+#### <a name="response"></a>响应
+
 以下示例显示了相应的响应。
 
 ```http
@@ -187,4 +192,6 @@ Content-type: application/json
 }
 ```
 
-现在，您已成功将SharePoint资源上载到工作分配资源文件夹 (并将其附加到关联的工作分配) 。 你可以按照类似的步骤上载一个或多个学生工作资源。 有关详细信息，请参阅创建 [educationSubmissionResource](/graph/api/educationsubmission-post-resources)。
+现已成功将 SharePoint 资源上传到工作分配资源文件夹 (并将其附加到关联的分配) 。 可以按照类似的步骤上传一个或多个学生工作资源。
+
+有关详细信息，请参阅 [Create educationSubmissionResource](/graph/api/educationsubmission-post-resources)。

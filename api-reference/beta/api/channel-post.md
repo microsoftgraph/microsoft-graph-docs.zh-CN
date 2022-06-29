@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 241296e2cbddb94d582a7241c6f81c195a5cabfe
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: 59dbcb55dc4a0e8ae2d267f71dd549903301081a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034546"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443450"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -22,7 +22,7 @@ ms.locfileid: "66034546"
 > **注意：** 创建专用频道时，最多可添加 200 个成员。
 
 > [!IMPORTANT]
-> 共享通道当前处于公共预览状态。 在此期间，用于创建共享通道的 Microsoft 图形 API可供受众限制。 建议在Teams客户端中创建共享通道，并使用 Microsoft Graph API 来管理它们。 有关如何在Teams客户端中启用共享通道的详细信息，请[参阅Microsoft Teams (预览版) 中的共享频道](/microsoftteams/shared-channels)。
+> 共享通道当前处于公共预览状态。 在此期间，用于创建共享通道的 Microsoft 图形 API可供受众限制。 建议在 Teams 客户端中创建共享通道，并使用 Microsoft Graph API 来管理它们。 有关如何在 Teams 客户端中启用共享频道的详细信息，请 [参阅 Microsoft Teams (预览版) 中的共享频道 ](/microsoftteams/shared-channels)。
 
 
 ## <a name="permissions"></a>权限
@@ -60,7 +60,7 @@ POST /teams/{team-id}/channels
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 [一个](../resources/channel.md)`201 Created`响应代码和一个通道对象，用于成员 **身份类型** 值`standard`为或 `private`。 对于 **具有 membershipType** 值的 `shared`通道，此方法返回 `202 Accepted` 包含 [teamsAsyncOperation](../resources/teamsasyncoperation.md) 链接的响应。
+如果成功，此方法在响应正文中返回一个 `201 Created` 响应代码和一个 [通道](../resources/channel.md) 对象，用于成员 **身份类型** 值 `standard` 为或 `private`。 For a channel with a **membershipType** value of `shared`, this method returns a `202 Accepted` response code and a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 如果该请求成功，此方法返回 `400 Bad Request` 响应代码。 下面是出现此响应的常见原因：
 

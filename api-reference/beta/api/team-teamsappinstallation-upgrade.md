@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 41e4680a63582b439d1e96de913b5c6c22cbbeaf
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 0015dd598036901303523f3c32d0263206c702af
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335358"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442006"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation：升级
 
@@ -18,9 +18,9 @@ ms.locfileid: "63335358"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [团队中的](../resources/teamsappinstallation.md) 应用 [安装升级到](../resources/team.md) 应用的最新版本。
+将[团队](../resources/team.md)中的[应用安装](../resources/teamsappinstallation.md)升级到最新版本的应用。
 
-> **注意：** 目前，此操作不支持升级需要特定于资源的同意权限的应用。 有关详细信息，请参阅[已知问题](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported)。
+> **注意：** 目前，此操作不支持升级需要资源特定许可权限的应用。 有关详细信息，请参阅[已知问题](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported)。
 
 ## <a name="permissions"></a>权限
 
@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/teams/db5e04be-daa2-4a35-beb1-5e73cc381599
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/upgrade-teamsapp-in-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/upgrade-teamsapp-in-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

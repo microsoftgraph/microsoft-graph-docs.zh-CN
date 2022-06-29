@@ -1,16 +1,16 @@
 ---
 title: iosLobAppProvisioningConfiguration 资源类型
 description: 本主题提供 iOS Lob 应用预配配置资源公开的已声明方法、属性和关系的说明。
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3143c19f87144e718b2e5db0dbdb84c24feb2f17
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: b755ab6a94bca06b2ba73f2d896dc3a382077b1e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899342"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439940"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>iosLobAppProvisioningConfiguration 资源类型
 

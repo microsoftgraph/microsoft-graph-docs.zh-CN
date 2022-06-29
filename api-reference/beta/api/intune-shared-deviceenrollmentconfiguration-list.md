@@ -1,22 +1,22 @@
 ---
 title: 列出 deviceEnrollmentConfigurations
 description: 列出 deviceEnrollmentConfiguration 对象的属性和关系。
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ab8b630eb3ad60d01f9c077fba5e80d5445d46c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63177cc62d1bd05c95e285a933dfa94eeec149c7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59076549"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441886"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>列出 deviceEnrollmentConfigurations
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,11 +29,11 @@ ms.locfileid: "59076549"
 |:---|:---|
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
-| &nbsp;&nbsp;**策略集**| DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
+| &nbsp;&nbsp; **策略集**| DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
-| &nbsp;&nbsp;**策略集** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
+| &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

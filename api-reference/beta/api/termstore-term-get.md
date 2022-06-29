@@ -3,21 +3,21 @@ title: 获取术语
 description: 读取术语对象的属性和关系。
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6ff8039c2d79382926c7ea56363fccbb3348e79e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 0715f0197f283f2379e1513a14749ee7ea1f76ff
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395410"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441789"
 ---
 # <a name="get-term"></a>获取术语
 命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取术语对象的属性 [和](../resources/termstore-term.md) 关系。
+读取 [术语](../resources/termstore-term.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "63395410"
 |:---|:---|
 |委派（工作或学校帐户） | TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -55,11 +55,11 @@ GET /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回 响应代码[](../resources/termstore-term.md)和术语对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [术语](../resources/termstore-term.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-termstore-term"></a>示例 1：获取术语存储术语
+### <a name="example-1-get-a-termstore-term"></a>示例 1：获取 termStore 术语
 
 #### <a name="request"></a>请求
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/termStore/groups/1FFD3F87-9464-488A-A0EC-8F
 [!INCLUDE [sample-code](../includes/snippets/go/get-term-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-term-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -119,7 +123,7 @@ Content-Type: application/json
   "lastModifiedDateTime": "2019-06-21T20:01:37Z"
 }
 ```
-### <a name="example-2--get-a-site-collection-termstore-term"></a>示例 2：获取网站集术语存储术语
+### <a name="example-2--get-a-site-collection-termstore-term"></a>示例 2：获取网站集术语Store 术语
 
 #### <a name="request"></a>请求
 
@@ -151,6 +155,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-term-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-term-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

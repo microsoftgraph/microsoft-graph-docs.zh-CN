@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 79abb80e6f43d911f8a6054e1a4963d5f8f29fc6
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 50bd7256f129949f579c83497838602f1bbe51d1
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095165"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438650"
 ---
 ```go
 
@@ -18,8 +18,8 @@ requestBody.SetEmail(&email)
 includedSources := "mailbox, site"
 requestBody.SetIncludedSources(&includedSources)
 ediscoveryCaseId := "ediscoveryCase-id"
-ediscoveryCustodianId := "ediscoveryCustodian-id"
-result, err := graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).CustodiansById(&ediscoveryCustodianId).UserSources().Post(requestBody)
+ediscoveryHoldPolicyId := "ediscoveryHoldPolicy-id"
+result, err := graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).LegalHoldsById(&ediscoveryHoldPolicyId).UserSources().Post(requestBody)
 
 
 ```

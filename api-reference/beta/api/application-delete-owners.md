@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9ea294b2f237c764f89834d8d001e03f58a68d86
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 5e46dd0edec7c7504efb5790b0cb294aacf7b4df
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118464"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438227"
 ---
 # <a name="remove-owner"></a>删除所有者
 
@@ -35,9 +35,9 @@ ms.locfileid: "66118464"
 DELETE /applications/{id}/owners/{id}/$ref
 ```
 > [!CAUTION]
-> 如果`/$ref`未追加到请求，并且调用应用有权管理应用所有者的用户，则也会从Azure Active Directory (Azure AD) 中删除用户;否则返回`403 Forbidden`错误。 可以通过还 [原已删除的项 API 还原已删除的](directory-deleteditems-restore.md)用户。
+> 如果 `/$ref` 未追加到请求，并且调用应用有权管理应用所有者的用户，则还会从 Azure AD)  (从 Azure Active Directory 中删除用户;否则返回 `403 Forbidden` 错误。 可以通过还 [原已删除的项 API 还原已删除的](directory-deleteditems-restore.md)用户。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称 | 说明|
 |:---- |:---------- |
 | Authorization | Bearer {token}。必需。  |
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/owners/{id}/$ref
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-delete-owners-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-delete-owners-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,22 +1,22 @@
 ---
 title: 创建 iosLobAppProvisioningConfiguration
 description: 创建新的 iosLobAppProvisioningConfiguration 对象。
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a42abddc26cb9be23286c7a3682740fffa04111e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 52a92cbd29cc69b807a230ad32401a59f41e2451
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116267"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446495"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>创建 iosLobAppProvisioningConfiguration
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,12 +28,12 @@ ms.locfileid: "59116267"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All|
-| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All|
-| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -51,19 +51,19 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 iosLobAppProvisioningConfiguration 对象的 JSON 表示形式。
+在请求正文中，为 iosLobAppProvisioningConfiguration 对象提供 JSON 表示形式。
 
-下表显示创建 iosLobAppProvisioningConfiguration 时所需的属性。
+下表显示了创建 iosLobAppProvisioningConfiguration 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|expirationDateTime|DateTimeOffset|可选的配置文件过期日期和时间。|
+|expirationDateTime|DateTimeOffset|可选配置文件过期日期和时间。|
 |payloadFileName|String|有效负载文件名 (*.mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
-|roleScopeTagIds|字符串集合|此 iOS LOB 应用预配配置实体的范围标记列表。|
+|roleScopeTagIds|字符串集合|此 iOS LOB 应用预配配置实体的作用域标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|说明|String|管理员提供的设备配置说明。|
+|description|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|
@@ -71,7 +71,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 

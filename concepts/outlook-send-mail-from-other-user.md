@@ -1,15 +1,15 @@
 ---
-title: 从其他用户身份发送 Outlook 邮件
+title: 使用 Outlook 邮件 API 从其他用户发送 Outlook 邮件
 description: 使用“代理发送”和“代表发送”权限，从 Microsoft Graph 中的其他用户身份或共享邮箱发送 Outlook 邮件。
 author: jasonjoh
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: a6ef4de6e015ed485fe23a142c2a0c44b803d654
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: dad505ff61fe8149772406f4275ad2e981b266f9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176802"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444661"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>从其他用户身份发送 Outlook 邮件
 
@@ -17,7 +17,9 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 
 ## <a name="permissions"></a>权限
 
-两类权限适用于从其他用户身份发送邮件：[Microsoft Graph 权限](permissions-reference.md)和邮箱权限。
+两种类型的权限适用于从另一个用户发送消息：
+- [Microsoft Graph 权限](permissions-reference.md)
+- 邮箱权限
 
 ### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
@@ -70,9 +72,9 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 
 ## <a name="sending-with-microsoft-graph"></a>通过 Microsoft Graph 发送
 
-可以通过[直接发送](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true)或[创建草稿](/graph/api/user-post-messages?view=graph-rest-1.0&preserve-view=true)然后再[发送](/graph/api/message-send?view=graph-rest-1.0&preserve-view=true)这两种方式，从其他用户身份发送邮件。
+可以通过[直接发送](/graph/api/user-sendmail)或[创建草稿](/graph/api/user-post-messages)然后再[发送](/graph/api/message-send)这两种方式，从其他用户身份发送邮件。
 
-如要从其他用户身份发送，请设置要从其中向用户电子邮件地址发送的[邮件](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true)上的 `from` 属性。 无需设置 `sender` 属性 - Microsoft Graph 将会根据授予已登录用户的邮箱权限进行相应的设置。
+如要从其他用户身份发送，请设置要从其中向用户电子邮件地址发送的[邮件](/graph/api/resources/message)上的 `from` 属性。 无需设置 `sender` 属性 - Microsoft Graph 将会根据授予已登录用户的邮箱权限进行相应的设置。
 
 例如，若要从 `sales@contoso.com` 组发送邮件，请按如下所示配置邮件。
 
@@ -109,7 +111,7 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 以下其他外部因素可能会改变默认行为：
 
 - 管理员将发件人用户的邮箱更新为[始终将从代理发送的邮件副本保存](/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox)至其“已发送邮件”。
-- 通过在 [send mail](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true) 请求中将 `saveToSentItems` 属性设为 `false`，可以防止邮件被保存至“已发送邮件”文件夹。 但是，如果管理员已配置“始终保存副本”设置，则邮件将被保存至发件人用户的“已发送邮件”文件夹。
+- 通过在 [send mail](/graph/api/user-sendmail) 请求中将 `saveToSentItems` 属性设为 `false`，可以防止邮件被保存至“已发送邮件”文件夹。 但是，如果管理员已配置“始终保存副本”设置，则邮件将被保存至发件人用户的“已发送邮件”文件夹。
 
 ## <a name="examples"></a>示例
 
@@ -207,10 +209,8 @@ Content-Type: application/json
 
 ## <a name="next-steps"></a>后续步骤
 
-详细了解以下信息：
-
 - [为什么与 Outlook 邮件集成](outlook-mail-concept-overview.md)
-- Microsoft Graph v1.0 中的[使用邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true) 和邮件 API [用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true#common-use-cases)。
+- 在 v1.0 Microsoft Graph中[使用邮件 API](/graph/api/resources/mail-api-overview) 及其 [用例](/graph/api/resources/mail-api-overview#common-use-cases) 
 
 <!--
 {

@@ -1,22 +1,22 @@
 ---
 title: 获取 deviceAppManagement
 description: 读取 deviceAppManagement 对象的属性和关系。
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 070a4fd85b7720e8140a3afb95746d649978bd90
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 64da3a10fbf0f218dd38b32cb67103b894e037ea
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65857678"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437343"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
 命名空间：microsoft.graph
 
-> **重要：** Microsoft Graph中 /beta 版本下的 API 可能会发生更改。 不支持在生产应用程序中使用这些 API。
+> **重要：** Microsoft Graph 中 /beta 版本下的 API 可能会发生更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

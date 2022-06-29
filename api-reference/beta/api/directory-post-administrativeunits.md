@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c63191d9f5c71a08cc96b81277c7b9d1712df0c5
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: da1fd848cc516955ef70f30c683cda6610105d1a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900014"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437210"
 ---
 # <a name="create-administrativeunit"></a>创建 administrativeUnit
 
@@ -49,6 +49,17 @@ POST /directory/administrativeUnits
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [administrativeUnit](../resources/administrativeunit.md) 对象的 JSON 表示形式。
 
+创建 **administrativeUnit** 时，可以指定以下属性。
+
+| 属性   | 类型 |说明|
+|:---------------|:--------|:----------|
+| 说明 | String | 管理单元的说明。 可选。 |
+| displayName | String | 管理单元的显示名称。 必需项。 |
+| membershipRule | String | 管理单元的动态成员身份规则。 有关可用于动态管理单元和动态组的规则的详细信息，请 [参阅使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。 可选。 |
+| membershipRuleProcessingState | String | 用于控制是否主动处理动态成员身份规则。 设置为 `On` 希望动态成员身份规则处于活动状态，以及 `Paused` 是否要停止动态更新成员身份。 可选。 |
+| membershipType | String | 管理单元的成员身份类型。 可以是 `dynamic` 或 `assigned`. 可选。 |
+| visibility |String | 管理单元的可见性。 如果未设置，则默认值为 `public`。 可以设置为 `HiddenMembership`，这会隐藏非成员的成员身份。 可选。 |
+
 由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以在创建该扩展时使用 `POST` 该操作并将自定义属性与自己的数据一起添加到管理单元。
 
 ## <a name="response"></a>响应
@@ -59,7 +70,7 @@ POST /directory/administrativeUnits
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面是一个请求示例，该请求使用动态成员身份规则创建新的管理单元，以包括其国家/地区美国的所有用户。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -73,7 +84,9 @@ Content-type: application/json
 {
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
-    "visibility": "HiddenMembership"
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipRuleProcessingState": "On"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -102,8 +115,6 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [administrativeUnit](../resources/administrativeunit.md) 对象的 JSON 表示形式。
-
 ### <a name="response"></a>响应
 
 下面展示了示例响应。 
@@ -119,11 +130,13 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
-    "id": "7a3dc8f3-b3a0-4164-9a99-ed36f3af039f",
+    "id": "49eb93f2-a5a2-4567-ad66-76a3ebd01d84",
     "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
-    "visibility": "HiddenMembership"
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipType": "Dynamic",
+    "membershipRuleProcessingState": "On"
 }
 ```
 

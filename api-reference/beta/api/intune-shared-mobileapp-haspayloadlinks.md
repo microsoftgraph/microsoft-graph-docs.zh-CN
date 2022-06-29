@@ -1,22 +1,22 @@
 ---
 title: hasPayloadLinks 操作
 description: 尚未记录
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bdaf9c3f4afdc64a9361bd35e87d9f5b306f143b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 79f39ad935e2872c600e90a82677a40b03b3ccad
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017715"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446481"
 ---
 # <a name="haspayloadlinks-action"></a>hasPayloadLinks 操作
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,10 +28,10 @@ ms.locfileid: "59017715"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -60,7 +60,7 @@ POST /deviceAppManagement/mobileApps/hasPayloadLinks
 
 
 ## <a name="response"></a>响应
-如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) 集合。
+如果成功，此操作在响应正文中返回 `200 OK` 响应代码和 [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) 集合。
 
 ## <a name="example"></a>示例
 

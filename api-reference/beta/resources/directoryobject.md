@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 196d95935171ab7b38559024b5d1ac46b84b7ae3
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: 95d926deef7961bedd1ebcf9e2ad38f1b7513415
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103013"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441417"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -22,6 +22,7 @@ ms.locfileid: "65103013"
 
 + [application](application.md)
 + [administrativeUnit](administrativeunit.md)
++ [appRoleAssignment](approleassignment.md)
 + [directoryObject](directoryobject.md)
 + [directoryRole](directoryrole.md)
 + [设备](device.md)

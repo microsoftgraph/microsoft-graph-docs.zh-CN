@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 04e98b38ab8e30ba05d09d954aba4811cd750ae1
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 15628641ae16caa3d11af132b8110fb21f08b286
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212762"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502300"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannelShared -TeamId $teamId -ChannelId $channelId
+Get-MgTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId
 
 ```

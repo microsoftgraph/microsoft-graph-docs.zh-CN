@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ec4ee945746bea1b08ba66b0fcb010ca084f4ddf
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 99211fcb4b5e04ac3a31a305ba97a410e326dfb0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669177"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437399"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 
@@ -18,9 +18,9 @@ ms.locfileid: "63669177"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [administrativeUnit 对象的属性和](../resources/administrativeunit.md) 关系。
+检索 [administrativeUnit](../resources/administrativeunit.md) 对象的属性和关系。
 
-由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)`GET`，因此您还可以使用 操作获取 **administrativeUnit** 实例中的自定义属性和扩展数据。
+由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此还可以使用该 `GET` 操作在 **administrativeUnit** 实例中获取自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -39,7 +39,7 @@ GET /administrativeUnits/{id}
 GET /directory/administrativeUnits/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData `$select` [查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -51,7 +51,7 @@ GET /directory/administrativeUnits/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
@@ -104,15 +104,14 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
-    "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
+    "id": "49eb93f2-a5a2-4567-ad66-76a3ebd01d84",
     "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
-    "isMemberManagementRestricted": null,
-    "visibility": "HiddenMembership",
-    "membershipRule": null,
-    "membershipType": null,
-    "membershipRuleProcessingState": null
+    "visibility": null,
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipType": "Dynamic",
+    "membershipRuleProcessingState": "On"
 }
 ```
 

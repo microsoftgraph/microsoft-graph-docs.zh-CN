@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fda650fb1af4853972b1d66219b85df67d72143b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a95308becb0e5ed9e6a17615062b0a5c8bf5f27c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131725"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502992"
 ---
 ```javascript
 
@@ -63,6 +63,7 @@ const bookingAppointment = {
     invoiceUrl: 'theInvoiceUrl',
     isLocationOnline: true,
     optOutOfCustomerEmail: false,
+    anonymousJoinWebUrl: null,
     postBuffer: 'PT10M',
     preBuffer: 'PT5M',
     price: 10.0,

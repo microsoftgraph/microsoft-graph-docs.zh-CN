@@ -5,19 +5,19 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 5c274787d6f4b81dc6be8203993b94e019be178b
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: d0a42659c6577aedb3c7adb6769182e9e0d306eb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316094"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447197"
 ---
 # <a name="contenttype-getcompatiblehubcontenttypes"></a>contentType： getCompatibleHubContentTypes
 命名空间：microsoft.graph
 
 从内容类型中心获取可添加到目标 [网站](../resources/site.md) 或列表的兼容内容类型的 [列表](../resources/list.md)。
 
-此方法是内容类型发布更改的一部分，旨在优化已发布内容类型与网站和列表的同步，从而有效地从“随处推送”切换为“根据需要拉取”。 该方法允许用户直接从内容类型中心将内容类型拉取到网站或列表。 有关详细信息，请参阅 [contentType：addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) 和博客 帖子 [Syntex Product Updates – 2021 年 8 月](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438)。
+此方法是内容类型发布更改的一部分，旨在优化已发布内容类型与网站和列表的同步，从而有效地从“随处推送”切换为“根据需要拉取”。 该方法允许用户直接从内容类型中心将内容类型拉取到网站或列表。 有关详细信息，请参阅 [contentType：addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) 和博客文章 [Syntex Product 更新 – 2021 年 8 月](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/sites/root/lists/Documents/contentTypes/get
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-getcompatiblehubcontenttypes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-getcompatiblehubcontenttypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

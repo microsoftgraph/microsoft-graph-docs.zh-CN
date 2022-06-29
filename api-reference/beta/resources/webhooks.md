@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 17edbdd21aa0fbcd0869ff81be7992159ab3655d
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 106f0d0600d7020b003cd214d7ef090bc82f3f27
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820971"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443030"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -41,12 +41,12 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | Teams [频道][] | 对所有团队中频道的更改：<br>`/teams/getAllChannels` <br>对特定团队中频道的更改：<br>`/teams/{id}/channels` | 是 |
 | Teams [聊天][] | 对租户中任何聊天的更改：<br>`/chats` <br>对特定聊天的更改：<br>`/chats/{id}` | 是 |
 | Teams [chatmessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages`<br>对特定用户的所有聊天中聊天消息的更改是以下内容的一部分：<br>`/users/{id}/chats/getAllMessages` | 是 |
-| Teams [conversationMember][] | 更改特定团队中的成员身份：<br>`/teams/{id}/members` <br> 更改特定聊天中的成员身份：<br>`/chats/{id}/members` <br> 更改所有聊天中的成员身份：<br>`/chats/getAllMembers` <br> 更改特定团队下所有频道中的成员身份：<br>`teams/{id}/channels/getAllMembers` | 是 |
-| Teams [onlineMeeting][] | 对联机会议的更改： <br>`/communications/onlinemeeting/{meeting-id}` | 是 |
+| Teams [conversationMember][] | 对特定团队中成员身份的更改：<br>`/teams/{id}/members` <br> 对特定聊天中成员身份的更改：<br>`/chats/{id}/members` <br> 对所有聊天中成员身份的更改：<br>`/chats/getAllMembers` <br> 对特定团队下所有频道中的成员身份的更改：<br>`teams/{id}/channels/getAllMembers` | 是 |
+| Teams [onlineMeeting][] | 对联机会议的更改： <br>`/communications/onlineMeetings/?$filter=JoinWebUrl eq {joinWebUrl}` | 是 |
 | Teams [状态][] | 对单个用户状态的更改： `/communications/presences/{id}` <br> 对多个用户状态的更改：<br> `/communications/presences?$filter=id in ({id},{id}...)` | 是 |
 | Teams [团队][] | 对租户中任何团队的更改：<br>`/teams` <br>对特定团队的更改：<br>`/teams/{id}` | 是 |
-| 微软待办 [baseTask][] (已弃用)  | 对特定任务列表中所有任务的更改：<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>对所有任务的更改：<br>`/me/tasks/lists/alltasks` | 否 |
-| [微软待办任务][] | 对特定任务列表中所有任务的更改：<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>对所有任务的更改：<br>`/me/todo/lists/alltasks` | 否 |
+| 要执行 [baseTask][] (已弃用)  | 对特定任务列表中的所有任务进行更改:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>对所有任务的更改:<br>`/me/tasks/lists/alltasks` | 否 |
+| [待办事项任务][] | 对特定任务列表中的所有任务进行更改:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>对所有任务的更改:<br>`/me/todo/lists/alltasks` | 否 |
 | [用户][] | 对所有用户更改：<br>`/users` <br>对特定用户更改：<br>`/users/{id}`| 否 |
 
 
@@ -92,6 +92,5 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [团队]: ./team.md
 [baseTask]: ./baseTask.md
 [todoTask]: ./todotask.md
-[微软待办任务]: ./todotask.md
+[待办事项任务]: ./todotask.md
 [onlineMeeting]: ./onlinemeeting.md
-

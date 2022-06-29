@@ -1,16 +1,16 @@
 ---
 title: 从 printerShare 中删除 allowedUser
-description: 撤销指定用户向关联的打印机共享提交打印作业的访问权限。
+description: 撤消指定用户将打印作业提交到关联打印机共享的访问权限。
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: df3324236a45547a823caafcce0e012c377507ba
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b21e29ddf73db8acd7f71fd1fc0c824f6bc7fd19
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037513"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437961"
 ---
 # <a name="delete-alloweduser-from-printershare"></a>从 printerShare 中删除 allowedUser
 
@@ -18,12 +18,12 @@ ms.locfileid: "52037513"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-撤销指定用户向关联的 [printerShare](../resources/printershare.md)提交打印作业的访问权限。
+撤消指定用户将打印作业提交到关联 [打印机Share](../resources/printershare.md) 的访问权限。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，除下表中列出的权限外，用户或应用的租户还必须具有活动的通用打印订阅。 已登录的用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -74,6 +74,14 @@ DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers/{i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-alloweduser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-alloweduser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-alloweduser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

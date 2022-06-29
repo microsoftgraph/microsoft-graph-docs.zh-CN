@@ -1,22 +1,22 @@
 ---
 title: deviceCompliancePolicy 资源类型
 description: '这是符合性策略的基类。 符合性策略特定于平台，每个平台的符合性策略相互独立，且继承自此处。 '
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 507b2a6f6d1ffc3c560979709932acf61b251d5a
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 27afaa6e53cd127c7e2c394dd56bb6f4edc755bb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344832"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438589"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>deviceCompliancePolicy 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,8 +29,8 @@ ms.locfileid: "61344832"
 |[Get deviceCompliancePolicy](../api/intune-shared-devicecompliancepolicy-get.md)|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|读取 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) 对象的属性和关系。|
 |**设备配置**|
 |[assign 操作](../api/intune-shared-devicecompliancepolicy-assign.md)|[deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) 集合|尚未记录|
-|[scheduleActionsForRules 操作](../api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md)|无|尚未记录|
-|[refreshDeviceComplianceReportSummarization 操作](../api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md)|无|尚未记录|
+|scheduleActionsForRules 操作|无|尚未记录|
+|refreshDeviceComplianceReportSummarization action] (../api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md) |无|尚未记录|
 |**策略集**|
 |[hasPayloadLinks 操作](../api/intune-shared-devicecompliancepolicy-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) 集合|尚未记录|
 
@@ -38,7 +38,7 @@ ms.locfileid: "61344832"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |description|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|

@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 95f5117f4839bd40e0b3f96131c49cbf91b172d3
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 411a18b86df668b5b8e3761b69cb899649712026
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342819"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502966"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Groups
 
-Invoke-MgUnsubscribeGroup -GroupId $groupId
+Invoke-MgGraphGroup -GroupId $groupId
 
 ```

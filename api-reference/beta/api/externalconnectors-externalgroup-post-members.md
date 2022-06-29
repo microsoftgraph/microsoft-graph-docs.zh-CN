@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 975b08d9850ca7512813b222491c608e18fdd065
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 237a1d6be02d489d052078a7547a7de64622842b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133452"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436308"
 ---
 # <a name="create-externalgroupmember"></a>创建 externalGroupMember
 
@@ -56,8 +56,8 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 | 属性       | 类型                    | 说明                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | 成员的唯 `id` 一。 如果Azure Active Directory用户或组，则为 objectId，对于外部组，则为 externalGroupId。 此为必需属性。                                   |
-| type           | microsoft.graph.externalConnectors.externalGroupMemberType | 添加到外部组的成员的类型。 可能的值是： `user` 或 `group` 标识源所在的 `azureActiveDirectory` 时间，以及标 `group` 识源所在的时间 `external`。 必需。 |
+| id             | String                  | 成员的唯 `id` 一。 如果是 Azure Active Directory 用户或组，则为 objectId，对于外部组，则为 externalGroupId。 此为必需属性。                                   |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | 添加到外部组的成员的类型。 可能的值是： `user` 或 `group` 标识源所在的 `azureActiveDirectory` 时间，以及标 `group` 识源所在的时间 `external`。 必需项。 |
 | identitySource | microsoft.graph.externalConnectors.identitySourceType      | 成员所属的标识源。 可取值为：`azureActiveDirectory`、`external`。 必需。                                                                                       |
 
 ## <a name="response"></a>响应
@@ -66,7 +66,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>示例 1：将Azure Active Directory用户添加为成员
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>示例 1：将 Azure Active Directory 用户添加为成员
 
 ### <a name="request"></a>请求
 
@@ -107,6 +107,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -131,7 +135,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>示例 2：将Azure Active Directory组添加为成员
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>示例 2：将 Azure Active Directory 组添加为成员
 
 ### <a name="request"></a>请求
 
@@ -170,6 +174,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -234,6 +242,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

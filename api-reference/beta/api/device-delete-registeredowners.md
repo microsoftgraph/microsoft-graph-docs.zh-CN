@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cae18bd61afcf283853cd73fcf91540a0de00564
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 0e90bc070facca9faefaeade11490d526e673d6f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118576"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442588"
 ---
 # <a name="delete-registeredowner"></a>删除 registeredOwner
 
@@ -28,7 +28,7 @@ ms.locfileid: "66118576"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -38,9 +38,9 @@ ms.locfileid: "66118576"
 DELETE /devices/{id}/registeredOwners/{id}/$ref
 ```
 > [!CAUTION]
-> 如果`/$ref`未追加到请求，并且调用应用有权管理设备注册所有者的用户，则也会从Azure Active Directory (Azure AD) 中删除用户;否则返回`403 Forbidden`错误。 可以通过还 [原已删除的项 API 还原已删除的](directory-deleteditems-restore.md)用户。
+> 如果 `/$ref` 未追加到请求，并且调用应用有权管理设备注册所有者的用户，则也会从 Azure Active Directory (Azure AD) 中删除该用户;否则返回 `403 Forbidden` 错误。 可以通过还 [原已删除的项 API 还原已删除的](directory-deleteditems-restore.md)用户。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。 |
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/devices/{id}/registeredOwners/{id}/$ref
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-registeredowners-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-registeredowners-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

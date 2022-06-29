@@ -1,41 +1,41 @@
 ---
-title: 使用 Microsoft Microsoft 搜索 中的 Graph API 搜索自定义类型
-description: 可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 资源导入外部数据，并对此外部内容运行搜索查询。
+title: 使用 Microsoft 搜索 API 搜索使用连接器导入的自定义类型
+description: 使用 Microsoft Graph 中的 Microsoft 搜索 API 在 Microsoft Graph 连接器引入和索引的外部内容之间进行搜索。
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 01a78191440f017aaa43600d9d15170bf96662b3
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 64a1733722afee9de1e5970389c275062b574e9d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671893"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437630"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph连接器导入的自定义类型
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义类型
 
-使用 Microsoft 搜索 API 跨 Microsoft Graph 连接器的检索和[索引内容进行搜索](/microsoftsearch/connectors-overview)。 内容通过 Microsoft 提供的内置连接器或[](https://www.microsoft.com/microsoft-search/connectors)通过使用 [Microsoft](/graph/api/resources/indexing-api-overview) Graph API 实现的自定义连接器导入。
+使用 Microsoft Graph 中的 Microsoft 搜索 API 在 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview)引入和索引的外部内容之间进行搜索。 内容通过 Microsoft 提供的 [内置连接器](https://www.microsoft.com/microsoft-search/connectors) 或通过使用 [Microsoft Graph 连接器引入 API 实现的自定义连接器导入](/graph/api/resources/indexing-api-overview)。
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
 导入内容并编制索引后，可以使用搜索 API 查询内容。
 
-若要搜索自定义类型，在查询方法的请求正文中指定 [以下](/graph/api/search-query) 属性：
+若要搜索自定义类型，请在 [查询](/graph/api/search-query) 方法的请求正文中指定以下属性：
 
-- 要包括在连接器设置过程中分配的连接 ID 的 **contentSources** 属性。 你可以传递多个连接 ID 以跨多个连接进行搜索。 结果在单个列表中返回，并跨多个连接进行排名。
+- 要包含在连接器设置期间分配的连接 ID 的 **contentSources** 属性。 可以传递多个连接 ID 以跨多个连接进行搜索。 结果在单个列表中返回，在多个连接之间进行排名。
 
 <!--
 TODOSEARCHAPI - Bug 1653398 
 -->
 
-- **entityTypes** 属性为 `externalItem`。
+- **entityTypes** 属性为 `externalItem`.
 
-- 要 **包含** 要检索的外部项中的字段的 fields 属性。 请注意，如果请求中不包含任何字段，响应将包含 **contentSources** 属性中为指定连接指定的数据架构中标记为可检索的所有字段。
+- 要在要检索的外部项中包含字段的 **fields** 属性。 请注意，如果请求中不包含任何 **字段**，响应将包含在为 **contentSources** 属性中的指定连接指定的数据架构中标记为 *可检索* 的所有字段。
 
-此外，您可以基于 [externalItem](/graph/api/resources/externalitem) 中的属性聚合搜索结果，这些属性是数值或字符串类型，并且设置为可在架构中 [精简](/graph/api/resources/schema)。 有关详细信息，请参阅使用 [聚合优化搜索结果](search-concept-aggregation.md)。
+此外，可以根据 [外部Item](/graph/api/resources/externalitem) 中的属性聚合搜索结果，这些属性是数值或字符串类型，并且在 [架构](/graph/api/resources/schema)中设置为可再定义的。 有关详细信息，请参阅 [使用聚合优化搜索结果](search-concept-aggregation.md)。
 
-## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>示例 1：使用 Azure SQL内置连接器检索项目
+## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>示例 1：使用Azure SQL内置连接器检索项
 
-本示例中，[AdventureWorks](/sql/samples/adventureworks-install-configure) 数据库的内容已使用 Azure SQL内置连接器进行采用。
+在此示例中，已使用Azure SQL内置连接器引入 [AdventureWorks](/sql/samples/adventureworks-install-configure) 数据库的内容。
 
 ### <a name="request"></a>请求
 
@@ -236,7 +236,7 @@ Content-type: application/json
 }
 ```
 
-有关详细信息，请参阅分配 [属性标签](/microsoftsearch/configure-connector#step-6-assign-property-labels)。
+有关详细信息，请参阅 [分配属性标签](/microsoftsearch/configure-connector#step-6-assign-property-labels)。
 
 ## <a name="next-steps"></a>后续步骤
 

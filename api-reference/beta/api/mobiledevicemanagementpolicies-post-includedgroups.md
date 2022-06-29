@@ -5,12 +5,12 @@ author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 19b12ed86b112e308d6c5cf0f423d5c7b5000932
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 60896662f2f3a7c1d7da88a7e51a4ca507f73783
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394367"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447350"
 ---
 # <a name="add-includedgroups"></a>添加 includedGroups
 
@@ -28,7 +28,7 @@ ms.locfileid: "63394367"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.MobilityManagement|
 |委派（个人 Microsoft 帐户） | 不支持。|
-|应用程序 | 不支持。|
+|Application | 不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ POST /policies/mobileDeviceManagementPolicies/{id}/includedGroups/$ref
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[组](../resources/group.md)对象的 JSON 表示形式。
 
-下表显示添加组时所需的 [属性](../resources/group.md)。
+下表显示了添加 [组](../resources/group.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-group-from-groups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-group-from-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

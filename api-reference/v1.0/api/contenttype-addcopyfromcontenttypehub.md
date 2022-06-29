@@ -5,19 +5,19 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 975957cb1dca96e074b9012dc7f6d2d7fa948271
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: e11553f5a7008802517d6f132437d2ebe7e07aeb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65315919"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444060"
 ---
 # <a name="contenttype-addcopyfromcontenttypehub"></a>contentType：addCopyFromContentTypeHub
 命名空间：microsoft.graph
 
 将已发布内容类型的副本从内容类型中心添加或同步到目标 [网站](../resources/site.md) 或 [列表](../resources/list.md)。
 
-此方法是内容类型发布更改的一部分，旨在优化已发布内容类型与网站和列表的同步，从而有效地从“随处推送”切换为“根据需要拉取”。 该方法允许用户直接从内容类型中心将内容类型拉取到网站或列表。 有关详细信息，请参阅 [contentType：getCompatibleHubContentTypes](contenttype-getcompatiblehubcontenttypes.md) 和博客 帖子 [Syntex Product Updates – 2021 年 8 月](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438)。
+此方法是内容类型发布更改的一部分，旨在优化已发布内容类型与网站和列表的同步，从而有效地从“随处推送”切换为“根据需要拉取”。 该方法允许用户直接从内容类型中心将内容类型拉取到网站或列表。 有关详细信息，请参阅 [contentType：getCompatibleHubContentTypes](contenttype-getcompatiblehubcontenttypes.md) 和博客文章 [Syntex Product 更新 – 2021 年 8 月](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -105,6 +105,10 @@ Content-length: 33
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-addcopyfromcontenttypehub-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-addcopyfromcontenttypehub-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: bfddc3d8a995163a2904550cc6cd6dddfa095d04
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 077aa3154e987d02bc7dd6e1a9e3e3f87fe9f42f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695523"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442905"
 ---
 # <a name="delete-alloweduser-from-printershare"></a>从 printerShare 中删除 allowedUser
 
@@ -27,7 +27,7 @@ ms.locfileid: "65695523"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedUse
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-alloweduser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-alloweduser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

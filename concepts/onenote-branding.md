@@ -1,17 +1,17 @@
 ---
-title: '针对 OneNote API 开发人员的品牌准则 '
-description: " "
+title: 针对 OneNote API 开发人员的品牌准则
+description: 在产品中集成 OneNote 品牌以满足品牌要求。 包括有关徽标、大小、颜色和引用 OneNote 名称的指南。
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 9054db1303c0cbe82eb868ebc1c7de6a7f4b17a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 040029e348f6ab1f438de167e171cc2e76dfee3d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066924"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442855"
 ---
-# <a name="branding-guidelines-for-onenote-api-developers"></a>针对 OneNote API 开发人员的品牌准则 
+# <a name="branding-guidelines-for-onenote-api-developers"></a>针对 OneNote API 开发人员的品牌准则
  
 **适用于** OneDrive 上的消费者笔记本 | Microsoft 365 上的企业级笔记本
 
@@ -45,7 +45,7 @@ ms.locfileid: "59066924"
 
 尊重徽标，并给它足够的空间。徽标四周必须留出相当于符号高度的最小净空间。
 
-![显示清晰图标的徽标，即符号的高度](images/onenotelogoclearspace.png)
+![显示符号高度的清晰 psace 的徽标](images/onenotelogoclearspace.png)
 
 
 <a name="size"></a>
@@ -71,9 +71,10 @@ ms.locfileid: "59066924"
 
 **打印：**&nbsp;&nbsp;C75 M100 Y0 K0 
 
-  ![用白色和品牌颜色背景显示首选品牌颜色的徽标](images/onenotelogobgs.png)
+  ![带有白色和品牌颜色背景的首选品牌颜色的徽标](images/onenotelogobgs.png)
  
-在颜色受限的环境中或在单色设计中，徽标可以显示为黑色。但是，徽标永远不能以灰色显示。<!--or white?-->
+在颜色受限的环境中和在单色设计中，徽标可以显示为黑色。 但是，徽标永远不能以灰色显示。
+<!--or white?-->
 
 <a name="do-nots"></a>
 
@@ -169,7 +170,7 @@ ms.locfileid: "59066924"
 
 ![包装中较好的徽标示例](images/onenoteusagepackaging1.png)
 
-![打包中的徽标示例的另一个视图](images/onenoteusagepackaging2.png)
+![打包中徽标示例的另一个视图](images/onenoteusagepackaging2.png)
 
 
 如果对于此准则有任何疑问，或正在使用此处所示的品牌资产创建新的通信，请通过 [@onenotedev](https://twitter.com/onenotedev) 与我们联系。

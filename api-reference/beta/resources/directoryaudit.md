@@ -5,12 +5,12 @@ author: SarahBar
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a34e8deedfac1fa85273b37053b3019c59294cd3
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: ed1582886ed67ecc090a1866db1ecf3589c0bb11
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848739"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436559"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 
@@ -29,8 +29,8 @@ ms.locfileid: "64848739"
 
 
 ## <a name="properties"></a>属性
-| 属性            | 类型                                                | 说明                                                                                                                                                                                                                                                            |
-|:--------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 属性|类型|  说明  |
+|:--------------------|:------------------|:------------|
 | activityDateTime    | DateTimeOffset                                      | 指示执行活动的日期和时间。 时间戳类型始终为 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。                                                                              |
 | activityDisplayName | String                                              | 指示活动名称或操作名称（例如， “创建用户”、“向组中添加成员”）。 有关记录的活动列表，请参阅 [Azure Ad 活动列表](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。 |
 | additionalDetails   | [keyValue](keyvalue.md) 集合                  | 指示活动的其他详细信息。                                                                                                                                                                                                                          |
@@ -39,11 +39,11 @@ ms.locfileid: "64848739"
 | id                  | String                                              | 指示活动的唯一 ID。                                                                                                                                                                                                            |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | 指示有关启动活动的用户或应用的信息。                                                                                                                                                                                                    |
 | loggedByService     | String                                              | 指示启动活动的服务的信息（例如：自助服务密码管理、核心目录、B2C、受邀用户、Microsoft Identity Manager、Privileged Identity Management）。                                                          |
-| operationType       | 字符串                                              | 指示已执行的操作的类型。 可能的值包括但不限于以下内容：`Add`、`Assign`、`Update`和 `Unassign``Delete`。                                                                                   |
+| operationType       | String                                              | 指示已执行的操作的类型。 可能的值包括但不限于以下内容：`Add`、`Assign`、`Update`和 `Unassign``Delete`。                                                                                   |
 | result              | operationResult                                              | 指示活动的结果。 可能的值是：`success`、`failure`、`timeout`、`unknownFutureValue`。                                                                                                                                                       |
 | resultReason        | String                                              | 指示失败的原因（如果 **结果** 为 `failure` 或 `timeout`）。                                                                                                                                                                                              |
 | targetResources     | [targetResource](targetresource.md) 集合      | 有关因活动而更改的资源的信息。  | 
-| userAgent | 字符串 | 活动中用户使用的用户代理类型。 |                                                                                                      
+| userAgent | String | 活动中用户使用的用户代理类型。 |                                                                                                      
 
 ## <a name="relationships"></a>关系
 无

@@ -1,16 +1,16 @@
 ---
 title: windowsUpdateState 资源类型
 description: windowsUpdateState 资源类型
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cff1bf1becbd2e43967b05a210c7f3f5cfa864a
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 1fcebd4d516d7cc91a3c33163b3325676b824b4a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900252"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444514"
 ---
 # <a name="windowsupdatestate-resource-type"></a>windowsUpdateState 资源类型
 
@@ -34,16 +34,16 @@ ms.locfileid: "65900252"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|这是实体的 ID。|
+|id|String|这是实体的 ID。|
 |deviceId|String|设备的 ID。|
-|userId|字符串|用户的 ID。|
+|userId|String|用户的 ID。|
 |deviceDisplayName|String|设备显示名称。|
-|userPrincipalName|字符串|用户主体名称。|
-|status|[windowsUpdateStatus](/resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可能的值是：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|字符串|设备的质量更新版本。|
-|featureUpdateVersion|字符串|设备的当前功能更新版本。|
+|userPrincipalName|String|用户主体名称。|
+|状态|[windowsUpdateStatus](/resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可能的值是：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|qualityUpdateVersion|String|设备的质量更新版本。|
+|featureUpdateVersion|String|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|Windows 更新代理成功扫描的日期时间。|
-|lastSyncDateTime|DateTimeOffset|设备与 Microsoft Intune 同步的上次日期。|
+|lastSyncDateTime|DateTimeOffset|设备与Microsoft Intune同步的上次日期时间。|
 
 ## <a name="relationships"></a>关系
 无

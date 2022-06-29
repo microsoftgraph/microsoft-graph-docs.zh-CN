@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 101ff35893fe0d33f35cdcd40bf6830599cc1786
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: d9e15d469852b855f8e8330a16dc4fc1551601a4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397356"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443773"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethodconfiguration"></a>删除 microsoftAuthenticatorAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过将策略[还原](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)Microsoft Authenticator其默认配置，删除对身份验证方法策略所做的更改。
+通过将策略还原到其默认配置，删除对 [Microsoft Authenticator 身份验证方法策略](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 所做的更改。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "63397356"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|Policy.ReadWrite.AuthenticationMethod|
 
-对于委派方案，管理员需要以下角色Azure AD[之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于委派方案，管理员需要以下 [Azure AD 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
 
 * 身份验证策略管理员
 * 全局管理员
@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-microsoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-microsoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

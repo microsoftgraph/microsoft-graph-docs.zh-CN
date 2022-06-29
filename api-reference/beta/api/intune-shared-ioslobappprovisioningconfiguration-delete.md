@@ -1,22 +1,22 @@
 ---
 title: 删除 iosLobAppProvisioningConfiguration
 description: 删除 iosLobAppProvisioningConfiguration。
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 056f9da089fdc3a1f48a93e5ed947f00aab37b6a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 006e68b979a314d7ecff5140ef99573655632670
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116260"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445263"
 ---
 # <a name="delete-ioslobappprovisioningconfiguration"></a>删除 iosLobAppProvisioningConfiguration
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,12 +28,12 @@ ms.locfileid: "59116260"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All|
-| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All|
-| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

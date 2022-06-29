@@ -5,18 +5,18 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b991b24b2d8b3c09c882c3e2087641c571e32d2b
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 9e2f44c8484b65e2980a70cb6041826656b8a078
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722994"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444088"
 ---
 # <a name="list-historydefinitions"></a>列出 historyDefinitions
 
 命名空间：microsoft.graph
 
-检索最近 30 天内创建的 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象，包括所有嵌套属性。
+检索过去 30 天内创建的 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象，包括所有嵌套属性。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "63722994"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|AccessReview.ReadWrite.All|
 
-如果登录用户不是全局管理员目录角色成员或全局读者目录角色成员，则仅返回已登录用户创建的定义。
+如果已登录用户不是全局管理员目录角色成员或全局读取者目录角色成员，则只会返回已登录用户创建的定义。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -43,11 +43,11 @@ GET /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 、 `$top`、 `$filter`和 `$expand``$skip` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 Including `?$expand=instances` 将返回 [accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) 对象及其关联实例。
+此方法支持 `$top``$filter``$expand`OData 查询参数，`$skip`以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 包括 `?$expand=instances` 将返回 [accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) 对象及其关联的实例。
 
-此 API 的默认页面大小为 100 **accessReviewHistoryDefinitions** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+此 API 的默认页面大小为 100 **个 accessReviewHistoryDefinitions** 对象。 若要提高效率并避免因大型结果集而超时，请使用 `$skip` 分页和 `$top` 查询参数。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 |名称|说明|
 |:---|:---|
@@ -59,7 +59,7 @@ GET /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

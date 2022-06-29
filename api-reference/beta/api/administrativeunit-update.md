@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2f9ca520011b3bd8e6ce80266fbdaa276a44c929
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: f1c005be251f66e410d9bedcb8caaef9a12fff3c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898117"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436909"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -27,7 +27,7 @@ ms.locfileid: "65898117"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|应用程序 | AdministrativeUnit.ReadWrite.All |
 
 若要更新管理单元，必须为调用主体分配以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)之一：
 
@@ -53,8 +53,12 @@ PATCH /directory/administrativeUnits/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|说明|字符串|管理单元的说明。|
-|displayName|字符串|管理单元的显示名称。|
+| 说明 | String | 管理单元的说明。|
+| displayName | String | 管理单元的显示名称。 |
+| membershipRule | String | 管理单元的动态成员身份规则。 有关可用于动态管理单元和动态组的规则的详细信息，请 [参阅使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。|
+| membershipRuleProcessingState | String | 用于控制是否主动处理动态成员身份规则。 设置为 `On` 希望动态成员身份规则处于活动状态，以及 `Paused` 是否要停止动态更新成员身份。 |
+| membershipType | String | 管理单元的成员身份类型。 可以是 `dynamic` 或 `assigned`. |
+| visibility | String | 管理单元的可见性。 如果未设置，则默认值为 `public`。 可以设置为 `HiddenMembership`，这会隐藏非成员的成员身份。 |
 
 由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用该 `PATCH` 操作在现有 **administrativeUnit** 实例的扩展的自定义属性中添加、更新或删除自己的特定于应用的数据。
 
@@ -63,6 +67,7 @@ PATCH /directory/administrativeUnits/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
+以下示例在现有管理单元上设置动态成员身份规则，以包括其国家/地区美国的所有用户。
 
 ### <a name="request"></a>请求
 
@@ -77,7 +82,9 @@ PATCH https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c
 Content-type: application/json
 
 {
-    "displayName": "Greater Seattle District Technical Schools"
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipRuleProcessingState": "On"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

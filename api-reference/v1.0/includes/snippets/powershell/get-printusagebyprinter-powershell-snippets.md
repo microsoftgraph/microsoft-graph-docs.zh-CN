@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 204f82946aa9405e1df6b5240c6c4277c7a113a0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2dd0da567e80de1fcd1fc98235b6b19b6d9db069
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135679"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502350"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportDailyPrintUsage -PrintUsageByPrinterId $printUsageByPrinterId
+Get-MgReportDailyPrintUsageByPrinter -PrintUsageByPrinterId $printUsageByPrinterId
 
 ```

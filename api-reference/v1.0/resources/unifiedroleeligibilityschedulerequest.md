@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 87cc889af16f0f273049e22b46ee4f876db340d0
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 9b5cab64c1784f3f2f63eaf22f2479e0cc5c7f7f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134028"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441032"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-resource-type"></a>unifiedRoleEligibilityScheduleRequest 资源类型
 
@@ -56,10 +56,10 @@ ms.locfileid: "65134028"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|appScope|[appScope](../resources/appscope.md)| 当角色资格限定到应用时，具有特定于应用范围的详细信息的只读属性。 可为 NULL。 支持 `$expand`。|
+|appScope|[appScope](../resources/appscope.md)|当角色资格限定到应用时，具有特定于应用范围的详细信息的只读属性。 可为 NULL。 支持 `$expand`。|
 |directoryScope|[directoryObject](../resources/directoryobject.md)|作为角色资格范围的目录对象。 只读。 支持 `$expand`。|
 |主要|[directoryObject](../resources/directoryobject.md)|通过请求获得角色资格的主体。 支持 `$expand`。|
-|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)| 通过 **roleDefinitionId** 属性引用的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的详细信息。 支持 `$expand`。|
+|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|通过 **roleDefinitionId** 属性引用的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的详细信息。 支持 `$expand`。|
 |targetSchedule|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|通过 **targetScheduleId** 属性引用的角色资格的计划。 支持 `$expand`。|
 
 ## <a name="json-representation"></a>JSON 表示形式

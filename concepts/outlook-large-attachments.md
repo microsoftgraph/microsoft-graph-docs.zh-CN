@@ -1,15 +1,15 @@
 ---
 title: 将大文件附加到 Outlook 邮件或事件
-description: 可选择两种方法中的一种来将文件附加到邮件或事件，具体取决于文件的大小。
+description: 创建并使用上传会话向 Outlook 项目添加超过 3 MB 的大型文件附件。 每个步骤显示消息和事件的相应代码。
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: ecb8d470e7a6946286b27f78b3a61f569bafe261
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: a42847f4351f85acf122981624ee417701d5ec3a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118590"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437665"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>将大文件附加到 Outlook 邮件或事件
 

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a71b33bb98196380cb0fd036f8d20f47be6502ab
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 6d1ff8baab3b3817d5521ca34ff6c9d50c265a5f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210491"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446776"
 ---
 # <a name="update-group"></a>更新组
 
@@ -58,8 +58,8 @@ PATCH /groups/{id}
 | displayName             | String  | 组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。                                                                                                                                                                                                                                                                                                                                                                   |
 | mailNickname            | String  | 组的邮件别名，它对于组织中的 Microsoft 365 组是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。                                                                                                                                                             |
 | preferredDataLocation   | String  | Microsoft 365 组的首选数据位置。 若要更新此属性，必须为调用用户分配以下 Azure AD 角色之一： <br><ul><li> 全局管理员 <li> 用户帐户管理员 <li> 合作伙伴层级 1 或层级 2 支持 <li>目录写入程序 <li> Exchange 管理员 <li> SharePoint 管理员 </ul> <br/>有关此属性详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
-| securityEnabled         | Boolean | 指定组是否为安全组，包括Microsoft 365组。                                                                                                                                                                                                                                                                                                                                                                                                             |
-| visibility              | 字符串  | 指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。                                                                                                                                                                                                                                                                                                                                              |
+| securityEnabled         | Boolean | 指定组是否为安全组，包括 Microsoft 365 组。                                                                                                                                                                                                                                                                                                                                                                                                             |
+| visibility              | String  | 指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。                                                                                                                                                                                                                                                                                                                                              |
 
 由于 **组** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用该 `PATCH` 操作在现有 **组** 实例的扩展的自定义属性中添加、更新或删除自己的特定于应用的数据。
 
@@ -134,7 +134,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response"
@@ -144,11 +144,13 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>示例 2：将敏感度标签应用于Microsoft 365组
+### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>示例 2：将敏感度标签应用于 Microsoft 365 组
 
 #### <a name="request"></a>请求
 
-可以使用[“列表”标签](informationprotectionpolicy-list-labels.md)获取要应用于Microsoft 365组的标签的 ID。 然后，可以使用标签 ID 更新组的 [assignedLabels](../resources/assignedlabel.md) 属性。
+可以使用 [列表标签](informationprotectionpolicy-list-labels.md)获取要应用于 Microsoft 365 组的标签的 ID。 然后，可以使用标签 ID 更新组的 [assignedLabels](../resources/assignedlabel.md) 属性。 
+
+>**注意：** 仅对委派权限方案支持使用此 API 将敏感度标签应用于 Microsoft 365 组。
 
 # <a name="http"></a>[HTTP](#tab/http)
 

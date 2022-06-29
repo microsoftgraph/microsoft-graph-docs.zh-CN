@@ -1,24 +1,24 @@
 ---
-title: 在频道中发送对消息的答复
+title: 在频道中发送对邮件的答复
 description: 回复频道中的现有消息。
 author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b7ca4ca13507f4ea47e813e178d6c9d85a9ed019
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 374f62d53fd7ef3df9f130d091dea04889f4d721
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805100"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439898"
 ---
-# <a name="send-replies-to-a-message-in-a-channel"></a>在频道中发送对消息的答复
+# <a name="send-replies-to-a-message-in-a-channel"></a>在频道中发送对邮件的答复
 
 命名空间：microsoft.graph
 
-将新回复发送到指定频道中的 [chatMessage](../resources/chatmessage.md)[。](../resources/channel.md)
+在指定[的通道](../resources/channel.md)中向 [chatMessage](../resources/chatmessage.md) 发送新的回复。
 
-> **注意**：使用 Microsoft Teams 是违反使用条款日志文件 [](/legal/microsoft-apis/terms-of-use)。 仅发送用户将阅读的邮件。
+> **注意**：使用 Microsoft Teams 作为日志文件违反了 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送用户将读取的消息。
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -33,9 +33,9 @@ ms.locfileid: "62805100"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Teamwork.Migrate.All |
 
-> **注意**：标记为 ** 的权限仅支持向后兼容。 建议您更新解决方案以使用上表中列出的备用权限，并避免今后使用这些权限。
+> **Note**： 仅支持使用 ** 标记的权限以实现向后兼容。 建议更新解决方案，以使用上表中列出的替代权限，并避免今后使用这些权限。
 
-> **注意**：仅迁移 *支持* 应用程序 [权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+> **注意**： *仅* 支持 [迁移](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)应用程序权限。
 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,17 +50,17 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 message 对象的 JSON [表示](../resources/chatmessage.md) 形式。 只有 body 属性是必需的，其他属性是可选的。
+在请求正文中，提供 [消息](../resources/chatmessage.md) 对象的 JSON 表示形式。 只有正文属性是必需的，其他属性是可选的。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `201 Created` 包含已创建 [消息的响应](../resources/chatmessage.md) 代码。
+如果成功，此方法将返回 `201 Created` 包含所创建 [消息](../resources/chatmessage.md) 的响应代码。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-send-a-new-reply-to-a-chatmessage"></a>示例 1：向 chatMessage 发送新回复
+### <a name="example-1-send-a-new-reply-to-a-chatmessage"></a>示例 1：向 chatMessage 发送新答复
 
-有关示例的更全面的列表，请参阅在频道或 [聊天中创建 chatMessage](chatmessage-post.md)。
+有关更全面的示例列表，请参阅 [在频道或聊天中创建 chatMessage](chatmessage-post.md)。
 
 #### <a name="request"></a>请求
 请求示例如下所示。
@@ -162,13 +162,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-import-messages"></a>示例 2：导入邮件
+### <a name="example-2-import-messages"></a>示例 2：导入消息
 
-> **注意**：此方案 `Teamwork.Migrate.All` 需要权限范围。
+> **注意**：此方案需要权限范围 `Teamwork.Migrate.All` 。
 
 #### <a name="request"></a>请求
 
-以下示例显示如何使用 请求`createDateTime``from`正文中的 和 键导入实时邮件。
+以下示例演示如何使用 `createDateTime` 请求正文中的和 `from` 密钥导入回程消息。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 183155c31a69c0f669d4bafcaa19cb0a6fa78ee4
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: cd3d239a8b49c9a2017de005d42f9d52fc334dfa
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821132"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443004"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -58,8 +58,8 @@ PATCH /devices/{id}
 |operatingSystem|String|设备上的操作系统类型。|
 |operatingSystemVersion|String|设备上的操作系统版本|
 |displayName|String|设备显示名称。|
-|isCompliant|Boolean|`true`如果设备符合移动设备管理 (MDM) 策略，则为 ɭ;否则为 `false`。 这只能通过任何设备 OS 类型的Intune或Windows OS 设备的[已批准 MDM 应用](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
-|isManaged|Boolean|`true`如果设备由移动设备管理 (MDM) 应用管理，则为 ！;否则为 `false`。 这只能通过任何设备 OS 类型的Intune或Windows OS 设备的[已批准 MDM 应用](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
+|isCompliant|Boolean|`true`如果设备符合移动设备管理 (MDM) 策略，则为 ɭ;否则为 `false`。 这只能通过任何设备 OS 类型的Intune或 Windows OS 设备的[已批准 MDM 应用](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
+|isManaged|Boolean|`true`如果设备由移动设备管理 (MDM) 应用管理，则为 ！;否则为 `false`。 这只能通过任何设备 OS 类型的Intune或 Windows OS 设备的[已批准 MDM 应用](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
 
 ## <a name="response"></a>响应
 

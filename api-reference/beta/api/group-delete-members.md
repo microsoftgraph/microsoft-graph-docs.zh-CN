@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 875fad2dd6921d19cd1ac1834bc684f1e0eae161
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 3183fa0c2f44e00dbeab863a435271ea06014e70
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118443"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439038"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -41,7 +41,7 @@ ms.locfileid: "66118443"
 DELETE /groups/{id}/members/{id}/$ref
 ```
 > [!CAUTION]
-> 如果`/$ref`未追加到请求，并且调用应用具有管理成员对象类型的权限，则成员对象也将从Azure Active Directory (Azure AD) 中删除;否则返回`403 Forbidden`错误。 例如，具有 *GroupMember.ReadWrite.All* 和 *User.ReadWrite.All* 权限的应用将删除用户。 可以通过还 [原已删除的项 API](directory-deleteditems-restore.md) 还原特定对象。
+> 如果未将 `/$ref` 追加到请求中，并且调用应用有权管理成员对象类型，则也会从 Azure Active Directory (Azure AD) 中删除成员对象；否则，将返回 `403 Forbidden` 错误。 例如，同时具有 *GroupMember.ReadWrite.All* 和 *User.ReadWrite.All* 权限的应用将删除用户。 可以通过 [还原已删除的项 API](directory-deleteditems-restore.md) 还原特定对象。
 
 ## <a name="request-headers"></a>请求头
 
@@ -96,6 +96,10 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-member-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-member-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

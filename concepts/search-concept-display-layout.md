@@ -1,33 +1,33 @@
 ---
-ms.author: yiwenwang
-title: 使用 Microsoft Microsoft 搜索 API Graph呈现显示布局
-description: 使用 Microsoft Microsoft 搜索 API Graph以不同方式显示搜索结果。
+title: 使用 Microsoft 搜索 API 管理搜索结果的布局模板
+description: 使用 Microsoft Graph 中的 Microsoft 搜索 API 通过使用自适应卡片模板和Microsoft 365 管理中心以不同的方式显示搜索结果。
 author: yiwenwang
+ms.author: yiwenwang
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: bc125fa05c6ba466c5430c07de822d0912f3cbad
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: cc74f41695b4ae7da84efffae7de7e6935f4b8cd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337129"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444297"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-manage-layout-templates-for-search-results-preview"></a>使用 Microsoft Microsoft 搜索 中的 Graph API 管理搜索结果的布局模板 (预览) 
+# <a name="use-the-microsoft-search-api-to-manage-layout-templates-for-search-results"></a>使用 Microsoft 搜索 API 管理搜索结果的布局模板
 
-搜索显示布局或结果类型是导致不同类型的搜索结果以不同方式显示在搜索结果页面中的规则。 它包含以下几个方面： 
+可以使用 Microsoft Graph 中的 Microsoft 搜索 API 管理搜索结果的布局模板。 搜索显示布局或结果类型是一个规则，它会导致不同类型的搜索结果以不同的方式显示在搜索结果页中。 它包含以下几个方面：
 
 - 要比较每个搜索结果的一个或多个特征或条件，例如搜索结果的结果源或内容类型。
 - 用于符合条件的搜索结果的显示模板。显示模板控制满足条件的所有结果在搜索结果页面上的显示和行为方式。 
 
-Microsoft Graph 搜索 API 基于自适应卡片提供可[呈现的响应](https://adaptivecards.io/)。 通过使用自适应 [卡片模板，](https://adaptivecards.io/designer)客户端可以在不同的画布中呈现不同的搜索结果。
+Microsoft Graph 搜索 API 提供基于 [自适应卡片](https://adaptivecards.io/)的可呈现响应。 通过使用 [自适应卡片模板](https://adaptivecards.io/designer)，客户端可以在不同的画布中呈现不同的搜索结果。
 
-客户可以在网站中自定义其[Microsoft 365 管理中心。](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
+客户可以在[Microsoft 365 管理中心](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)中自定义搜索结果类型。
 
 ## <a name="request-example"></a>请求示例
 
-以下示例演示如何在请求合约中将 **enableResultTemplate** `true` 属性设置为 ，获取用于呈现搜索结果的显示布局或结果模板。
+以下示例演示如何通过将 **enableResultTemplate** 属性 `true` 设置为请求协定中来获取用于呈现搜索结果的显示布局或结果模板。
 
-重新点击显示三个搜索命中，其中两个与 **resultTemplateId** 1603900360618_5XCBK2OXG相关，另一个与 **resultTemplateId** 1603900360618_5XCBK2OXP。 这些 ID 与包含在响应协定中的 **resultTemplates** 字典中的两个显示布局的键之一匹配。 使用结果模板 ID，可以确定用于呈现每个搜索结果的显示布局。
+响应显示三个搜索命中，其中两个与 **结果TemplateId** 1603900360618_5XCBK2OXG相关，另一个与 **resultTemplateId** 1603900360618_5XCBK2OXP。 这些 ID 与响应协定中包含的 **resultTemplates** 字典中包含的两个显示布局的键之一匹配。 使用结果模板 ID，可以确定用于呈现每个搜索结果的显示布局。
 
 ### <a name="request"></a>请求
 
@@ -223,8 +223,8 @@ Content-type: application/json
 
 > [!IMPORTANT] 
 > 
-> 此示例使用早于 **2020 年 5** 月版本的自适应卡片模板版本。 有关详细信息，请参阅：
-> - [自适应卡片模板](/adaptive-cards/templating/)
+> 本示例使用的自适应卡片模板版本早于 **2020 年 5 月版本**。 有关详细信息，请参阅：
+> - [自适应卡片模板化](/adaptive-cards/templating/)
 > - [自适应卡片模板 SDK](/adaptive-cards/templating/sdk)
 
 
@@ -463,5 +463,5 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-- [创建布局以自定义搜索结果](/microsoftsearch/customize-results-layout)
-- [使用 Microsoft 搜索 API](/graph/api/resources/search-api-overview)
+- [创建用于自定义搜索结果的布局](/microsoftsearch/customize-results-layout)
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview)

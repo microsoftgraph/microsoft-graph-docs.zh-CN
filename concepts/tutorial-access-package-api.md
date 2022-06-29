@@ -1,23 +1,24 @@
 ---
-title: 教程：使用 Microsoft Graph API 管理 Active Directory 权利管理中资源的访问权限
-description: 了解如何使用 Microsoft Graph API 管理 Active Directory (Azure AD) 权利管理中对资源的访问权限。
+title: 教程：在 Active Directory 权利管理中管理对资源的访问权限
+description: 了解如何使用 Microsoft Graph API 开发代码，为内部用户可以自助请求的营销活动创建资源包。
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 4a241d09897e51b4395f867351d51f6be9ef1e2d
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: c301319422a6a19af80725520b46ca413eb589e9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366119"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438218"
 ---
 # <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph API 管理 Active Directory 权利管理中资源的访问权限
 
-管理对员工所需的所有资源（如组、应用程序和站点）的访问权限是组织的重要功能。 你希望向员工授予所需的适当级别的访问权限，并在不再需要访问权限时将其删除。 [使用 Microsoft Graph API Azure Active Directory (Azure AD) 权利管理](/azure/active-directory/governance/entitlement-management-overview)，可以管理此类访问权限。
+管理对员工所需的所有资源（如组、应用程序和站点）的访问权限是组织的重要功能。 你希望向员工授予所需的适当级别的访问权限，并在不再需要访问权限时将其删除。 [使用 Microsoft Graph API (Azure AD) 权利管理](/azure/active-directory/governance/entitlement-management-overview) ，可以管理此类访问权限。
 
-在本教程中，你被要求开发代码，为内部用户可以自助请求的营销活动创建资源包。 请求不需要审批，用户的访问权限将在 30 天后过期。 在本教程中，营销活动资源只是单个组的成员身份，但可以是组、应用程序或SharePoint Online 网站的集合。
+本教程介绍如何开发代码，为内部用户可以自助请求的营销活动创建资源包。 请求不需要审批，用户的访问权限将在 30 天后过期。 在本教程中，营销活动资源只是单个组的成员身份，但可以是组、应用程序或 SharePoint Online 网站的集合。
 
->**注意：** 本教程中显示的响应对象可能会缩短以实现可读性。 
+> [!NOTE]
+> 本教程中显示的响应对象可能会缩短以实现可读性。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -470,7 +471,7 @@ Content-type: application/json
 
 在响应中，可以看到 **“已接受** ”状态和“ **已提交**”状态。 记录返回的 **ID** 属性的值，以便稍后获取请求的状态。
 
-如果尚未执行此操作，请注销在 Microsoft Graph Explorer 中使用的管理员帐户。 登录到创建的 **Requestor1** 用户帐户。 如果是第一次登录，系统将要求你更改密码。
+如果尚未这样做，请注销在 Microsoft Graph Explorer 中使用的管理员帐户。 登录到创建的 **Requestor1** 用户帐户。 如果是第一次登录，系统将要求你更改密码。
 
 #### <a name="request"></a>请求
 
@@ -731,15 +732,14 @@ No Content - 204
 
 ## <a name="see-also"></a>另请参阅
 
-在本教程中，你使用了许多 API 来完成任务。 浏览这些 API 的 API 参考，详细了解 API 可以执行哪些操作。
+在本教程中，你使用了许多 API 来完成任务。 浏览这些 API 的 API 参考，详细了解 API 可以执行哪些操作：
 
-
-- [使用 Azure AD 权利管理 API](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)
-- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
-- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
-- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
-- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta&preserve-view=true)
-- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
-- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
-- [组](/graph/api/resources/group)
-- [用户](/graph/api/resources/user?)
+- [使用 Azure AD 权利管理 API](/graph/api/resources/entitlementmanagement-overview)
+- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog)
+- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest)
+- [accessPackage](/graph/api/resources/accesspackage)
+- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope)
+- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy)
+- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest)
+- [group](/graph/api/resources/group)
+- [用户](/graph/api/resources/user)

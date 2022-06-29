@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 01231f849a3d3789e22bda0881ccee95a99535d6
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 077bba72a906ff38a923d639c8c4629dccc2e05e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348572"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502419"
 ---
 ```powershell
 
@@ -19,6 +19,6 @@ $params = @{
     LastMessageReadDateTime = [System.DateTime]::Parse("2021-05-27T22:13:01.577Z")
 }
 
-Invoke-MgMarkChatUnread -ChatId $chatId -BodyParameter $params
+Invoke-MgMarkChatUnreadForUser -ChatId $chatId -BodyParameter $params
 
 ```

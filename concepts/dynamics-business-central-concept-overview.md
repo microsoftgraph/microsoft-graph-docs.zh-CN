@@ -1,43 +1,40 @@
 ---
-title: Business Central API 概述
-description: 概述为什么想要将解决方案与业务中心 API 集成。
+title: 'Dynamics 365 Business Central API 概述 (预览) '
+description: 使用 Dynamics 365 Business Central（一种一体式的业务管理解决方案）来管理财务、自动化供应链并使项目保持预算。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 0a4b932b2cbc25f967bd0e881c56f1acc0c9382d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 393e2e192ccb6b6d4792d567fce60e87a8832b88
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137404"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440899"
 ---
-# <a name="dynamics-365-business-central-api-overview-preview"></a>Dynamics 365 Business Central API overview (preview) 
-Dynamics 365 Business Central 是一个一切一切业务管理解决方案，易于使用和适应，有助于连接业务并做出更智能的决策。 它提供你的企业端到端视图，让你能够管理财务、自动化并保护供应链、更智能地销售和改进客户服务、使项目及时且预算不足以及优化运营。
+# <a name="dynamics-365-business-central-api-overview-preview"></a>Dynamics 365 Business Central API 概述 (预览) 
+Dynamics 365 Business Central 是一种一体式的业务管理解决方案，易于使用和适应，可帮助你连接业务并做出更明智的决策。 它提供业务端到端视图，使你能够管理财务、自动化和保护供应链、更智能地销售和改善客户服务、按时保持项目和预算，以及优化运营。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/na1kFk53cbk]
 
-## <a name="why-integrate-with-dynamics-365-business-central"></a>为什么与 Dynamics 365 Business Central 集成？
-通过将应用与 Dynamics 365 Business Central 集成，可以创建跨业务需求的体验。 您可以创建使用户能够执行关键业务任务和功能的解决方案。 可以使用 Microsoft Graph访问和管理你的财务、与业务联系人合作、创建和发送销售和采购文档，以及从财务报告中获取见解。
+## <a name="why-integrate-with-dynamics-365-business-central"></a>为什么要与 Dynamics 365 Business Central 集成？
+通过将应用与 Dynamics 365 Business Central 集成，可以创建满足业务需求的体验。 可以创建解决方案，使用户能够执行关键业务任务和功能。 可以使用 Microsoft Graph 访问和管理财务，与业务联系人协作，创建和发送销售和购买文档，并从财务报表中获取见解。
 
 ### <a name="synchronize-your-business-applications"></a>同步业务应用程序
-许多公司使用不同的断开连接的业务应用程序来管理各种业务功能。 Microsoft Graph使您可以连接数据以将这些应用程序汇集在一起。 这使得将工资单应用程序连接到员工记录、将费用应用程序连接到供应商记录以及让您的 CRM 应用程序使客户记录保持最新变得容易。 连接数据以保持应用程序同步。
+许多公司使用不同、断开连接的业务应用程序来管理业务的各种功能。 Microsoft Graph 使你能够连接数据，将这些应用程序整合在一起。 这样便可以轻松地将你的工资单应用程序连接到员工记录、将费用应用程序连接到供应商记录，以及让 CRM 应用程序使客户记录保持最新。 连接数据以使应用程序保持同步。
 
 ### <a name="create-custom-apps-to-manage-your-business-processes"></a>创建自定义应用以管理业务流程
-每个企业各不相同，可以具有专门的业务流程。 这些流程可以通过为流程定制的自定义应用来简化。 Microsoft Graph可轻松将这些应用与你的财务数据集成。 生成可现场服务销售文档的销售或采购应用程序、用于创建采购文档的费用应用或用于创建总帐明细表的工资单应用，将你的所有文档都保留到财务系统中。
+每个业务都不同，可以有专门的业务流程。 可以使用为该进程定制的自定义应用简化这些进程。 借助 Microsoft Graph，可以轻松地将这些应用与财务数据集成。 生成可创建销售文档的销售或现场服务应用、创建购买文档的费用应用，或创建一般账本日志的工资单应用，将所有文档保留在财务系统中。
 
-### <a name="gain-insights-from-your-financial-data"></a>从财务数据获取见解
-Microsoft Graph 提供对财务报表的访问权限。 连接商业智能工具和应用程序资产负债表、现金流明细表、应付款和应收帐款及试用余额报表，以创建 BI 仪表板并确保用户有权访问其需要的信息。
+### <a name="gain-insights-from-your-financial-data"></a>从财务数据中获取见解
+Microsoft Graph 提供对财务报表的访问权限。 将 BI 工具和应用连接到资产负债表、现金流报表、应收账款和应收账款老化报表，以及试用余额报告，以创建 BI 仪表板，并确保用户有权访问所需的信息。
 
 ## <a name="authorization"></a>Authorization
-使用 Azure AD v2.0 终结点对 Dynamics 365 商业中心 API 进行身份验证。 所有 API 都需要请求 `Authorization: Bearer {access-token}` 标头。 有关授权详细信息，请参阅[获取访问令牌以调用 Microsoft Graph。](./auth/index.yml)
+使用 Azure AD v2.0 终结点对 Dynamics 365 Business Central API 进行身份验证。 所有 API 都需要 `Authorization: Bearer {access-token}` 请求标头。 有关授权的详细信息，请参阅 [获取用于调用 Microsoft Graph 的访问令牌](./auth/index.yml)。
 
 ## <a name="api-reference"></a>API 参考
+
 在查找此服务的 API 参考？
 
-请参阅[Microsoft Graph beta 中的 Dynamics 365 Business Central API。](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta)
-
-
-## <a name="next-steps"></a>后续步骤
-详细了解 Microsoft 商业中心支持的业务中心[API](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta) Graph。
+- [Microsoft Graph beta 中的 Dynamics 365 Business Central API](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta&preserve-view=true)

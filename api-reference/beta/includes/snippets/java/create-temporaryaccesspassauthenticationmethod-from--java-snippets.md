@@ -1,22 +1,22 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2b0a614aecef270a2a407c997ebe3fe9f499ebe313661efe4ef80befc22d01f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e15b896d94e34accbf59506138eb154fb7251ac4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57106595"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438038"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TemporaryAccessPassAuthenticationMethod temporaryAccessPassAuthenticationMethod = new TemporaryAccessPassAuthenticationMethod();
-temporaryAccessPassAuthenticationMethod.startDateTime = OffsetDateTimeSerializer.deserialize("2021-01-26T00:00:00Z");
+temporaryAccessPassAuthenticationMethod.startDateTime = OffsetDateTimeSerializer.deserialize("2022-06-05T00:00:00Z");
 temporaryAccessPassAuthenticationMethod.lifetimeInMinutes = 60;
 temporaryAccessPassAuthenticationMethod.isUsableOnce = false;
 
-graphClient.users("kim@contoso.com").authentication().temporaryAccessPassMethods()
+graphClient.users("071cc716-8147-4397-a5ba-b2105951cc0b").authentication().temporaryAccessPassMethods()
     .buildRequest()
     .post(temporaryAccessPassAuthenticationMethod);
 

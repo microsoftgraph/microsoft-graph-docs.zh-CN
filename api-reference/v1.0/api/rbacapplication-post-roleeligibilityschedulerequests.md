@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1bf7255803de1632512ae24afb0b17007bb92fae
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 787bee8a5843f432d30c46828387983018d5b78a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461343"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439850"
 ---
 # <a name="create-roleeligibilityschedulerequest"></a>创建 roleEligibilityScheduleRequest
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "65461343"
 |:---|:---|
 |委派（工作或学校帐户）|RoleEligibilitySchedule.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|RoleAssignmentSchedule.ReadWrite.Directory|
+|Application|RoleAssignmentSchedule.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,10 +52,10 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 |action|unifiedRoleScheduleRequestActions|表示角色资格请求的操作类型。可能的值是：`adminAssign`、、`adminUpdate`、`adminRemove`、`selfActivate`、`adminExtend``selfDeactivate`、`adminRenew`、`selfExtend`。 `selfRenew``unknownFutureValue` <br/><ul><li>`adminAssign`：让管理员将符合条件的角色分配给主体。</li><li>`adminRemove`：让管理员从主体中删除符合条件的角色。</li><li> `adminUpdate`：让管理员更改现有角色可变性。</li><li>`adminExtend`：让管理员延长即将过期的角色可质性。</li><li>`adminRenew`：让管理员续订过期的可质性。</li><li>`selfActivate`：让用户激活其分配。</li><li>`selfDeactivate`：让用户停用其活动分配。</li><li>`selfExtend`：让用户请求延长其即将到期的分配。</li><li>`SelfRenew`：用户请求续订其过期的分配。</li></ul>|
 |appScopeId|String|当角色资格限定到应用时，特定于应用的范围的标识符。 角色资格的范围决定了主体有资格访问的资源集。 应用范围是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将范围限制为特定目录对象，例如管理单元。 需要 **directoryScopeId** 或 **appScopeId** 。|
 |directoryScopeId|String|表示角色资格范围的目录对象的标识符。 角色资格的范围决定了向主体授予访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。 需要 **directoryScopeId** 或 **appScopeId** 。|
-|isValidationOnly|布尔值|确定调用是验证还是实际调用。 仅当要在实际提交请求之前检查激活是否受 MFA 等其他规则约束时，才设置此属性。 可选。|
-|理由|字符串|用户和管理员在创建 **统一RoleEligibilityScheduleRequest** 对象时提供的消息。 操作 **为 {** a0 时为 `adminRemove`可选。 此属性是必需的还是可选的，也取决于 [Azure AD 角色的设置](../api/unifiedrolemanagementpolicy-list-rules.md)。|
-|principalId|String|已授予角色资格的主体的标识符。 必填。|
-|roleDefinitionId|String|分配给主体的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的标识符。 必填。|
+|isValidationOnly|Boolean|确定调用是验证还是实际调用。 仅当要在实际提交请求之前检查激活是否受 MFA 等其他规则约束时，才设置此属性。 可选。|
+|理由|String|用户和管理员在创建 **统一RoleEligibilityScheduleRequest** 对象时提供的消息。 操作 **为 {** a0 时为 `adminRemove`可选。 此属性是必需的还是可选的，也取决于 [Azure AD 角色的设置](../api/unifiedrolemanagementpolicy-list-rules.md)。|
+|principalId|String|已授予角色资格的主体的标识符。 必需项。|
+|roleDefinitionId|String|分配给主体的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的标识符。 必需项。|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|角色资格的期限。 操作 **为 {** a0 时为 `adminRemove`可选。 资格期限取决于 [Azure AD 角色的设置](../api/unifiedrolemanagementpolicy-list-rules.md)。|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|与角色资格请求链接的票证详细信息，包括票证编号和票证系统的详细信息。 可选|
 
@@ -113,6 +113,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleeligibilityschedulerequest-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleeligibilityschedulerequest-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

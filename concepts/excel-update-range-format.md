@@ -1,27 +1,29 @@
 ---
-title: 通过 Microsoft Graph 更新 Excel 区域格式
-description: 下面的几个示例展示了如何更新指定区域的 RangeFormat、RangeFill 和 RangeFont 属性。
+title: 在 Excel 中更新范围格式
+description: 查看示例，演示如何在 Microsoft Graph 中使用 Excel 更新指定范围的 RangeFormat、RangeFill 和 RangeFont 属性的属性。
 ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 27d2ca1c22aa82349738da01049346ed2479e6de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c07deba3b70b43a1cb28c69e5ad7d34e3af6bc5d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143620"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441613"
 ---
-# <a name="update-a-range-format-in-excel-with-microsoft-graph"></a>使用 Microsoft Graph 更新 Excel 中的区域格式
+# <a name="update-a-range-format-in-excel"></a>在 Excel 中更新范围格式
 
-以下示例演示如何更新指定区域的 [RangeFormat](/graph/api/resources/rangeformat?view=graph-rest-1.0)、[RangeFill](/graph/api/resources/rangefill?view=graph-rest-1.0) 和 [RangeFont](/graph/api/resources/rangefont?view=graph-rest-1.0) 属性的属性。
+以下示例演示如何使用 Microsoft Graph 中的 Excel 更新指定范围的 [RangeFormat](/graph/api/resources/rangeformat)、 [RangeFill](/graph/api/resources/rangefill) 和 [RangeFont](/graph/api/resources/rangefont) 属性的属性。
 
-这组请求的结果是一个表格，其中的三个单元格的格式如下图中的前三个单元格所示。
+这组请求的结果是具有三个单元格的表，其格式类似于下图中的前三个单元格。
 
 ![其中的三个单元格的格式、填充和字体属性已更新的 Excel 图表表格。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
-##### <a name="request"></a>请求
+## <a name="example-1-cell-1-alignment-and-height"></a>示例 1：单元格 1 对齐和高度
+
 此请求更新第一个单元格的垂直对齐方式、行高和列高。
 
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -58,8 +60,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+这是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,9 +84,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>请求
+## <a name="example-2-cell-1-font-style-size-and-color"></a>示例 2：单元格 1 字体样式、大小和颜色
+
 此请求更新第一个单元格的字形、大小和颜色。
 
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -116,8 +124,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+这是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -137,9 +149,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>请求
+## <a name="example-3-cell-1-background-color"></a>示例 3：单元格 1 背景色
+
 此请求更新第一个单元格的背景色。
 
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -173,8 +187,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+这是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -188,9 +206,12 @@ Content-type: application/json
     "color": "#FF0000"
 }
 ```
-##### <a name="request"></a>请求
+
+## <a name="example-4-cell-2-alignment-and-height"></a>示例 4：单元格 2 对齐和高度
+
 此请求更新第二个单元格的垂直对齐方式、水平对齐方式、行高和列高。
 
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -228,8 +249,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+这是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -248,9 +273,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>请求
+## <a name="example-5-cell-2-font-style-and-size"></a>示例 5：单元格 2 字体样式和大小
+
 此请求更新第二个单元格的字形和大小。
 
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -285,8 +312,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+这是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -306,9 +337,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>请求
+## <a name="example-6-cell-2-background-color"></a>示例 6：单元格 2 背景色
+
 此请求更新第二个单元格的背景色。
 
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -342,8 +375,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+这是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -358,9 +395,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>请求
+## <a name="example-7-cell-3-alignment-and-height"></a>示例 7：单元格 3 对齐和高度
+
 此请求更新第三个单元格的水平对齐方式、垂直对齐方式、行高和列高。
 
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -398,8 +437,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+这是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -418,9 +461,13 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>请求
-此请求更新第三个单元格的字形、大小和颜色。 请注意，下划线属性采用 **单** 或 **双** 作为值。
+## <a name="example-8-cell-3-font-style-size-and-color"></a>示例 8：单元格 3 字体样式、大小和颜色
 
+此请求更新第三个单元格的字形、大小和颜色。
+
+> **注意：** 下划线属性采用 **Single** 或 **Double** 作为值。
+
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -456,8 +503,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+这是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -477,9 +528,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>请求
+## <a name="example-9-cell-3-background-color"></a>示例 9：单元格 3 背景色
+
 此请求更新第三个单元格的背景色。
 
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -513,8 +566,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+这是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -529,13 +586,14 @@ Content-type: application/json
 }
 ```
 
-
 ## <a name="see-also"></a>另请参阅
+
 * [通过 Microsoft Graph 管理 Excel 会话](excel-manage-sessions.md)
 * [使用 Microsoft Graph 编写 Excel 工作簿](excel-write-to-workbook.md)
 * [通过 Microsoft Graph 使用 Excel 工作簿函数](excel-use-functions.md)
 * [通过 Microsoft Graph 显示 Excel 图表图像](excel-display-chart-image.md)
-* [使用 Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)
+* [使用 Excel REST API](/graph/api/resources/excel)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

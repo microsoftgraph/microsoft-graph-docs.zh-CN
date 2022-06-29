@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 192a2476c6e7f34d202ada3ec46dff334d63b6b6
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: c5252465444e5316d781a77cd9f90eb76a3baac6
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704301"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441452"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -56,7 +56,7 @@ GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 
 此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 `text/csv`. 但是，如果要指定输出类型，可以使用设置为或`application/json`设置的 `text/csv` OData `$format` 查询参数。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
@@ -92,14 +92,14 @@ CSV 文件包含下面的列标题。
 - 发布消息
 - 回复消息
 - 紧急消息
-- 会议组织计数
-- 参加的会议计数
-- 临时会议组织计数
-- 出席的临时会议计数
-- 计划的一次性会议有组织计数
-- 计划的一次性会议出席计数
-- 计划的定期会议有组织计数
-- 计划的定期会议出席计数
+- 组织会议数量
+- 参加会议数量
+- 临时组织会议数量
+- 临时出席会议数量
+- 安排组织的一次性会议数量
+- 安排出席的一次性会议数量
+- 安排组织的定期会议数量
+- 安排出席的定期会议数量
 - 音频持续时间
 - 视频持续时间
 - 屏幕共享持续时间
@@ -109,6 +109,9 @@ CSV 文件包含下面的列标题。
 - 包含其他操作
 - 已获得许可
 - 报表周期
+
+> [!NOTE] 
+> 会议组织计数中的值可能不是用户在指定时间段内组织的临时会议组织计数、计划一次性会议组织计数和计划定期会议组织计数的总和。 这是因为未分类的会议值未在输出 CSV 文件中受限。 有关详细信息，请参阅 [Microsoft Teams 用户活动报告](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/user-activity-report)。
 
 ### <a name="json"></a>JSON
 

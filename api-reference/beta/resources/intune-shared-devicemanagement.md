@@ -2,21 +2,21 @@
 title: deviceManagement 资源类型
 description: 'deviceManagement 资源表示一个容器，其内容因工作流而异，包括：  '
 localization_priority: Normal
-author: rolyon
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f07febfdaee04e2baf57f5403cfc07e2de13af10
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 80ea377649e54ddc6af84423884f931fd061f2c4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858308"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441760"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
 命名空间：microsoft.graph
 
-> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -39,7 +39,7 @@ deviceManagement 资源表示一个容器，其内容因工作流而异，包括
 - 远程访问
 - 远程援助合作伙伴
 - 基于角色的访问控制 (RBAC) 策略
-- 报表
+- Reporting
 - 电信扩展管理合作伙伴
 - 事件疑难解答
 - Windows 信息保护摘要
@@ -88,13 +88,13 @@ deviceManagement 资源表示一个容器，其内容因工作流而异，包括
 ## <a name="relationships"></a>关系
 |关系|类型|描述&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:---|:---|:---|
-|**工作Android**|
-|androidDeviceOwnerEnrollmentProfiles|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) 集合|Android设备所有者注册配置文件实体。|
+|**Android for Work**|
+|androidDeviceOwnerEnrollmentProfiles|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) 集合|Android 设备所有者注册配置文件实体。|
 |androidForWorkAppConfigurationSchemas|[androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md) 集合|Android for Work 应用配置架构实体。|
 |androidForWorkEnrollmentProfiles|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) 集合|Android for Work 注册配置文件实体。|
 |androidForWorkSettings|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Android for Work 设置单例实体。|
-|androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|单一实例Android托管存储帐户企业设置实体。|
-|androidManagedStoreAppConfigurationSchemas|[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) 集合|Android Enterprise应用配置架构实体。|
+|androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|单一 Android 托管存储帐户企业设置实体。|
+|androidManagedStoreAppConfigurationSchemas|[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) 集合|Android Enterprise 应用配置架构实体。|
 |**审核**|
 |auditEvents|[auditEvent](../resources/intune-auditing-auditevent.md) 集合|审核事件|
 |**公司条款**|
@@ -151,8 +151,8 @@ deviceManagement 资源表示一个容器，其内容因工作流而异，包括
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 集合|每个租户的多个 DEP 令牌的此集合。|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合|导入的设备标识。|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) 集合|导入的 Windows AutoPilot 设备的集合。|
-|windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) 集合|Windows自动试点部署配置文件|
-|windowsAutopilotDeviceIdentities|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|Windows autopilot 设备标识包含集合。|
+|windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) 集合|Windows 自动试点部署配置文件|
+|windowsAutopilotDeviceIdentities|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|包含的 Windows autopilot 设备标识集合。|
 |windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Windows autopilot 帐户设置。|
 |**嵌入式 SIM**|
 |embeddedSIMActivationCodePools|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) 集合|此帐户创建的嵌入式 SIM 激活代码池。|
@@ -172,14 +172,14 @@ deviceManagement 资源表示一个容器，其内容因工作流而异，包括
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 集合|设备注册配置列表|
 |deviceManagementPartners|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 集合|由租户配置的设备管理合作伙伴列表。|
 |exchangeConnectors|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 集合|由租户配置的 Exchange 连接器列表。|
-|exchangeOnPremisesPolicies|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) 集合|租户配置的 Exchange On Premisis 策略的列表。|
-|exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|控制移动设备访问本地Exchange的策略|
+|exchangeOnPremisesPolicies|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) 集合|租户配置的 Exchange On Premisis 策略列表。|
+|exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|控制移动设备对 Exchange 本地访问权限的策略|
 |mobileThreatDefenseConnectors|[mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 集合|由租户配置的移动威胁防护连接器列表。|
 |**策略集**|
 |deviceManagementScripts|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) 集合|与租户关联的设备管理脚本列表。|
 |deviceConfigurations|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) 集合|与租户关联的设备配置列表。|
 |deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) 集合|与租户关联的设备符合性策略列表。|
-|windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) 集合|Windows自动试点部署配置文件|
+|windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) 集合|Windows 自动试点部署配置文件|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 集合|设备注册配置列表|
 |**资源访问 Polcy**|
 |derivedCredentials|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) 集合|与帐户关联的派生凭据设置的集合。|

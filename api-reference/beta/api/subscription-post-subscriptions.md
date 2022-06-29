@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序，以便在 Microsoft Graph资源上的数据发生更改时接收更改通知。
+description: 订阅侦听器应用程序，以便在 Microsoft Graph 资源上的数据发生更改时接收更改通知。
 ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: faa5ca9d9c24cacabfeaf535ad2f6a2f915720e7
-ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
+ms.openlocfilehash: e64abb2c70c0f51a8b2942ba0b165f047a596c01
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66186918"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445207"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -84,13 +84,14 @@ OneDrive for Business 和 SharePoint 支持向应用程序发送有关在 **driv
 
 ### <a name="contact-event-and-message"></a>联系人、事件和消息
 
-可以订阅Outlook **联系人**、**事件** 或 **消息** 资源中的更改，并在 POST 请求有效负载中选择性地指定是否在通知中包含加密的资源数据。
+可以订阅 Outlook **联系人**、 **事件** 或 **消息** 资源中的更改，并在 POST 请求有效负载中选择性地指定是否在通知中包含加密的资源数据。
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="onlinemeetings-presence"></a>onlineMeetings，状态
 
 在使用加密资源数据 [创建通知订阅](/graph/webhooks-with-resource-data#creating-a-subscription)时，**OnlineMeetings** 和 **状态** 上的订阅需要 **encryptionCertificate** 和 **encryptionCertificateId** 属性。 有关详细信息，请参阅 [设置更改通知以包含资源数据](/graph/webhooks-with-resource-data)。
+有关联机会议订阅的详细信息，请参阅 [获取联机会议的更改通知](/graph/changenotifications-for-onlinemeeting)。
 
 ## <a name="http-request"></a>HTTP 请求
 

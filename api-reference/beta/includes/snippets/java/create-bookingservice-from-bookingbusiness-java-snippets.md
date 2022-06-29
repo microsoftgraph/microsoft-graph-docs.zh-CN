@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f51d3966dbdbb0d368e0adead8f6f01688291c3e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0e476d07e6b0b259278c2a34be1c35a232e62f32
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113997"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503159"
 ---
 ```java
 
@@ -50,6 +50,7 @@ bookingService.description = "Individual bento box lunch delivery";
 bookingService.displayName = "Bento";
 bookingService.isLocationOnline = true;
 bookingService.smsNotificationsEnabled = true;
+bookingService.languageTag = "en-US";
 bookingService.isHiddenFromCustomers = false;
 bookingService.notes = "Home-cooked special";
 bookingService.postBuffer = DatatypeFactory.newInstance().newDuration("PT10M");
@@ -66,6 +67,7 @@ LinkedList<String> staffMemberIdsList = new LinkedList<String>();
 staffMemberIdsList.add("d90d1e8c-5cfe-48cf-a2d5-966267375b6a");
 staffMemberIdsList.add("2f5f8794-0b29-45b5-b56a-2eb5ff7aa880");
 bookingService.staffMemberIds = staffMemberIdsList;
+bookingService.isAnonymousJoinEnabled = false;
 
 graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").services()
     .buildRequest()

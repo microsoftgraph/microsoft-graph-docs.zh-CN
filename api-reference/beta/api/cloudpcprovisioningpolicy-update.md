@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 8adae318e45899cb5a36fc9f534f2f2cdbbea349
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 25957fe267af7e33b82d5596ddfdfbb102dc0716
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722809"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447084"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>更新 cloudPcProvisioningPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "63722809"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [cloudPcProvisioningPolicy 对象](../resources/cloudpcprovisioningpolicy.md) 的属性。
+更新 [cloudPcProvisioningPolicy 对象的](../resources/cloudpcprovisioningpolicy.md) 属性。
 
 ## <a name="permissions"></a>权限
 
@@ -52,17 +52,18 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 在请求正文中，提供 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象的 JSON 表示形式。
 
-下表显示了可针对 [cloudPcProvisioningPolicy 更新的属性](../resources/cloudpcprovisioningpolicy.md)。
+下表显示了可针对 [cloudPcProvisioningPolicy 更新的](../resources/cloudpcprovisioningpolicy.md)属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|设置显示名称策略的项。 |
-|description|String|设置策略说明。|
-|onPremisesConnectionId|String|cloudPcOnPremisesConnection 的 ID。 若要确保云电脑具有网络连接并且它们已加入域，请选择与通过云电脑服务验证的虚拟网络的连接。|
-|imageId|String|你想要在云电脑中预配的操作系统映像的 ID。 库类型图像的格式为：{publisher_offer_sku}。 每个参数支持的值如下所示： <ul><li>发布者：Microsoftwindowsdesktop。</li> <li>offer：windows-ent-cpc。</li> <li>sku：21h1-ent-cpc-m365， 21h1-ent-cpc-os、20h2-ent-cpc-m365、20h2-ent-cpc-os、20h1-ent-cpc-m365、20h1-ent-cpc-os、19h2-ent-cpc-m365 和 19h2-ent-cpc-os。</li></ul>|
-|imageDisplayName|String|要显示名称的操作系统映像的映像的映像。|
-|imageType|cloudPcProvisioningPolicyImageType|你想要在云 (预配的操作系统映像类型) 自定义或库类型。 可取值为：`gallery`、`custom`。|
-|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|The Windows operation system settings for the provisioned Cloud PC with this provisioning policy， such as operation system language setting.|
+|displayName|String|预配策略的显示名称。 |
+|说明|String|预配策略说明。|
+|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|指定云电脑如何加入 Azure Active Directory。|
+|onPremisesConnectionId|String|cloudPcOnPremisesConnection 的 ID。 若要确保云电脑具有网络连接且它们已加入域，请选择与云电脑服务验证的虚拟网络的连接。|
+|imageId|String|要在云电脑上预配的 OS 映像的 ID。 库类型图像的格式为：{publisher_offer_sku}。 每个参数支持的值如下所示： <ul><li>发布者：Microsoftwindowsdesktop。</li> <li>offer： windows-ent-cpc.</li> <li>sku： 21h1-ent-cpc-m365， 21h1-ent-cpc-os、20h2-ent-cpc-m365、20h2-ent-cpc-os、20h1-ent-cpc-m365、20h1-ent-cpc-os、19h2-ent-cpc-m365 和 19h2-ent-cpc-os。</li></ul>|
+|imageDisplayName|String|要预配的 OS 映像的显示名称。|
+|imageType|cloudPcProvisioningPolicyImageType|要在云电脑上预配) 自定义或库 (OS 映像的类型。 可取值为：`gallery`、`custom`。|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|具有此预配策略的预配云电脑的 Windows 操作系统设置，例如操作系统语言设置。|
 
 ## <a name="response"></a>响应
 

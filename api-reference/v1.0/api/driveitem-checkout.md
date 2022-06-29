@@ -5,12 +5,12 @@ title: driveItem：签出
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 683e16aab6670c0ccc6beb1304176b0eb767b18c
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 3ca5548a498d5504a3686505d02f9d158a556753
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093262"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445068"
 ---
 # <a name="driveitem-checkout"></a>driveItem：签出
 
@@ -79,6 +79,10 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/checkout-item-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/checkout-item-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

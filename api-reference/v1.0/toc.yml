@@ -342,7 +342,7 @@ items:
           - name: 应用角色分配
             href: resources/approleassignment.md
             items:
-              - name: 列出
+              - name: 列表
                 href: api/user-list-approleassignments.md
               - name: 加法
                 href: api/user-post-approleassignments.md
@@ -362,7 +362,7 @@ items:
                 href: api/user-findmeetingtimes.md
               - name: 获取忙/闲日程安排
                 href: api/calendar-getschedule.md
-              - name: 列出
+              - name: 列表
                 href: api/user-list-calendars.md
               - name: 列出日历组
                 href: api/user-list-calendargroups.md
@@ -379,13 +379,13 @@ items:
                 href: api/user-post-contacts.md
               - name: 创建联系人文件夹
                 href: api/user-post-contactfolders.md
-              - name: 列出
+              - name: 列表
                 href: api/user-list-contacts.md
               - name: 列出联系人文件夹
                 href: api/user-list-contactfolders.md
           - name: 委派权限授予
             items:
-              - name: 列出
+              - name: 列表
                 href: api/user-list-oauth2permissiongrants.md
           - name: 目录对象
             href: resources/directoryobject.md
@@ -486,7 +486,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 笔记
+          - name: 注意
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -513,10 +513,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: 更新邮箱设置
                     href: api/user-update-mailboxsettings.md
-              - name: Outlook用户服务
+              - name: Outlook 用户服务
                 expanded: true
                 items:
-                  - name: Outlook用户
+                  - name: Outlook 用户
                     href: resources/outlookuser.md
                   - name: 创建类别
                     href: api/outlookuser-post-mastercategories.md
@@ -685,7 +685,7 @@ items:
           - name: 应用角色分配
             href: resources/approleassignment.md
             items:
-              - name: 列出
+              - name: 列表
                 href: api/group-list-approleassignments.md
               - name: 加法
                 href: api/group-post-approleassignments.md
@@ -887,7 +887,7 @@ items:
               - name: 应用程序模板
                 href: resources/applicationtemplate.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/applicationtemplate-list.md
                   - name: 获取
                     href: api/applicationtemplate-get.md
@@ -922,7 +922,7 @@ items:
                         href: api/directoryobject-getavailableextensionproperties.md
               - name: 所有者
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/application-list-owners.md
                   - name: 加法
                     href: api/application-post-owners.md
@@ -935,7 +935,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/application-list-tokenissuancepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenissuancepolicies.md
@@ -944,7 +944,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -976,7 +976,7 @@ items:
               - name: 应用角色分配
                 href: resources/approleassignment.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: 加法
                     href: api/serviceprincipal-post-approleassignments.md
@@ -1004,7 +1004,7 @@ items:
                     href: api/serviceprincipal-addtokensigningcertificate.md
               - name: 委派权限授予
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: 委派权限分类
                 href: resources/delegatedpermissionclassification.md
@@ -1031,7 +1031,7 @@ items:
                     href: api/directoryobject-getmemberobjects.md
               - name: 所有者
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/serviceprincipal-list-owners.md
                   - name: 加法
                     href: api/serviceprincipal-post-owners.md
@@ -1044,7 +1044,7 @@ items:
                     items:
                       - name: Assign
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: 删除
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1053,7 +1053,7 @@ items:
                     items:
                       - name: Assign
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: 删除
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1090,7 +1090,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/application-list-tokenissuancepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1099,7 +1099,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1368,7 +1368,7 @@ items:
               - name: 参与者
                 href: resources/participant.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/call-list-participants.md
                   - name: 获取
                     href: api/participant-get.md
@@ -1378,7 +1378,7 @@ items:
                     href: api/participant-mute.md
                   - name: 邀请参与者
                     href: api/participant-invite.md
-                  - name: '"开始"菜单保留音乐'
+                  - name: 开始保留音乐
                     href: api/participant-startholdmusic.md
                   - name: 停止按住音乐
                     href: api/participant-stopholdmusic.md
@@ -1438,14 +1438,14 @@ items:
               - name: 出席情况报告
                 href: resources/meetingAttendanceReport.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/meetingattendancereport-list.md
                   - name: 获取
                     href: api/meetingattendancereport-get.md
                   - name: 出席率记录
                     href: resources/attendancerecord.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/attendancerecord-list.md
           - name: 状态
             href: resources/presence.md
@@ -1621,7 +1621,7 @@ items:
               - name: 打印连接器
                 href: resources/printconnector.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/print-list-connectors.md
                   - name: 获取
                     href: api/printconnector-get.md
@@ -1739,7 +1739,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -1766,7 +1766,7 @@ items:
               - name: 打印服务
                 href: resources/printservice.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/print-list-services.md
                   - name: 获取
                     href: api/printservice-get.md
@@ -3947,7 +3947,7 @@ items:
                   - name: 合规性管理合作伙伴
                     href: resources/intune-onboarding-compliancemanagementpartner.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-onboarding-compliancemanagementpartner-list.md
                       - name: 获取
                         href: api/intune-onboarding-compliancemanagementpartner-get.md
@@ -4254,7 +4254,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: 所有许可的用户分配目标
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Android企业始终在 VPN 包类型上
+                  - name: Android 企业始终在 VPN 包类型上
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: 符合性状态
                     href: resources/intune-shared-compliancestatus.md
@@ -4321,7 +4321,7 @@ items:
                     href: api/serviceannouncement-list-issues.md
                   - name: 获取问题
                     href: api/servicehealthissue-get.md
-                  - name: 获取帖子事件审查报告
+                  - name: 获取事件后审阅报告
                     href: api/servicehealthissue-incidentreport.md
               - name: 服务更新消息
                 href: resources/serviceupdatemessage.md
@@ -4730,7 +4730,7 @@ items:
               - name: BitLocker 恢复密钥
                 href: resources/bitlockerrecoverykey.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/bitlocker-list-recoverykeys.md
                   - name: 获取
                     href: api/bitlockerrecoverykey-get.md
@@ -4869,7 +4869,7 @@ items:
               - name: 组织联系人
                 href: resources/orgcontact.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/orgcontact-list.md
                   - name: 获取
                     href: api/orgcontact-get.md
@@ -4950,7 +4950,7 @@ items:
                           - name: 计划
                             href: resources/unifiedroleassignmentschedule.md
                             items:
-                              - name: 列出
+                              - name: 列表
                                 href: api/rbacapplication-list-roleassignmentschedules.md
                               - name: 获取
                                 href: api/unifiedroleassignmentschedule-get.md
@@ -4959,7 +4959,7 @@ items:
                           - name: 计划实例
                             href: resources/unifiedroleassignmentscheduleinstance.md
                             items:
-                              - name: 列出
+                              - name: 列表
                                 href: api/rbacapplication-list-roleassignmentscheduleinstances.md
                               - name: 获取
                                 href: api/unifiedroleassignmentscheduleinstance-get.md
@@ -4983,7 +4983,7 @@ items:
                           - name: 计划
                             href: resources/unifiedroleeligibilityschedule.md
                             items:
-                              - name: 列出
+                              - name: 列表
                                 href: api/rbacapplication-list-roleeligibilityschedules.md
                               - name: 获取
                                 href: api/unifiedroleeligibilityschedule-get.md
@@ -4992,7 +4992,7 @@ items:
                           - name: 计划实例
                             href: resources/unifiedroleeligibilityscheduleinstance.md
                             items:
-                              - name: 列出
+                              - name: 列表
                                 href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
                               - name: 获取
                                 href: api/unifiedroleeligibilityscheduleinstance-get.md
@@ -5004,7 +5004,7 @@ items:
                             displayName: 'role management policies, Azure AD role settings'
                             href: resources/unifiedrolemanagementpolicy.md
                             items:
-                              - name: 列出
+                              - name: 列表
                                 href: api/policyroot-list-rolemanagementpolicies.md
                               - name: 获取
                                 href: api/unifiedrolemanagementpolicy-get.md
@@ -5018,7 +5018,7 @@ items:
                             displayName: role managemement policy assignments
                             href: resources/unifiedrolemanagementpolicyassignment.md
                             items:
-                              - name: 列出
+                              - name: 列表
                                 href: api/policyroot-list-rolemanagementpolicyassignments.md
                               - name: 获取
                                 href: api/unifiedrolemanagementpolicyassignment-get.md
@@ -5031,12 +5031,12 @@ items:
                   - name: 身份验证方法
                     href: resources/authenticationmethod.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/authentication-list-methods.md
                   - name: FIDO2 安全密钥
                     href: resources/fido2authenticationmethod.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/fido2authenticationmethod-list.md
                       - name: 获取
                         href: api/fido2authenticationmethod-get.md
@@ -5045,7 +5045,7 @@ items:
                   - name: Microsoft Authenticator
                     href: resources/microsoftauthenticatorauthenticationmethod.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/microsoftauthenticatorauthenticationmethod-list.md
                       - name: 获取
                         href: api/microsoftauthenticatorauthenticationmethod-get.md
@@ -5054,7 +5054,7 @@ items:
                   - name: Windows Hello 企业版
                     href: resources/windowshelloforbusinessauthenticationmethod.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/windowshelloforbusinessauthenticationmethod-list.md
                       - name: 获取
                         href: api/windowshelloforbusinessauthenticationmethod-get.md
@@ -5104,7 +5104,7 @@ items:
                         items:
                           - name: 命名位置
                             href: resources/namedlocation.md
-                          - name: 列出
+                          - name: 列表
                             href: api/conditionalaccessroot-list-namedlocations.md
                           - name: 获取
                             href: api/namedlocation-get.md
@@ -5164,7 +5164,7 @@ items:
                   - name: 风险检测
                     href: resources/riskdetection.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/riskdetection-list.md
                       - name: 获取
                         href: api/riskdetection-get.md
@@ -5225,6 +5225,18 @@ items:
                         href: api/samlorwsfedexternaldomainfederation-list-domains.md
                       - name: 创建 externalDomainName
                         href: api/samlorwsfedexternaldomainfederation-post-domains.md
+                  - name: 与 Azure AD 联合
+                    items:
+                      - name: 联合域配置
+                        href: resources/internaldomainfederation.md
+                      - name: 获取
+                        href: api/internaldomainfederation-get.md
+                      - name: 创建
+                        href: api/domain-post-federationconfiguration.md
+                      - name: 更新
+                        href: api/internaldomainfederation-update.md
+                      - name: 删除
+                        href: api/internaldomainfederation-delete.md
               - name: '标识提供者 (已弃用) '
                 items:
                   - name: 标识提供者类型
@@ -5311,7 +5323,7 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/fido2authenticationmethodconfiguration-delete.md
-                      - name: Microsoft Authenticator策略
+                      - name: Microsoft Authenticator 策略
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -5513,7 +5525,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: 更新
                         href: api/identityapiconnector-update.md
-                      - name: Upload客户端证书
+                      - name: 上传客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
@@ -5525,7 +5537,7 @@ items:
                   - name: 访问评审计划定义
                     href: resources/accessreviewscheduledefinition.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/accessreviewset-list-definitions.md
                       - name: 获取
                         href: api/accessreviewscheduledefinition-get.md
@@ -5540,7 +5552,7 @@ items:
                   - name: 访问评审实例
                     href: resources/accessreviewinstance.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/accessreviewscheduledefinition-list-instances.md
                       - name: 获取
                         href: api/accessreviewinstance-get.md
@@ -5586,7 +5598,7 @@ items:
                       - name: 访问评审历史记录实例
                         href: resources/accessreviewhistoryinstance.md
                         items:
-                          - name: 列出
+                          - name: 列表
                             href: api/accessreviewhistorydefinition-list-instances.md
                           - name: 生成下载 URI
                             displayName: Downloadable access review history report
@@ -5604,7 +5616,7 @@ items:
                   - name: 应用同意请求
                     href: resources/appconsentrequest.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/appconsentapprovalroute-list-appconsentrequests.md
                       - name: 获取
                         href: api/appconsentrequest-get.md
@@ -5613,7 +5625,7 @@ items:
                   - name: 用户同意请求
                     href: resources/userconsentrequest.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/appconsentrequest-list-userconsentrequests.md
                       - name: 获取
                         href: api/userconsentrequest-get.md
@@ -5642,7 +5654,7 @@ items:
                   - name: 访问包分配
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/entitlementmanagement-list-assignments.md
                       - name: 按当前用户筛选
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -5658,7 +5670,7 @@ items:
                         items:
                           - name: 审批阶段
                             href: resources/approvalstage.md
-                          - name: 列出
+                          - name: 列表
                             href: api/approval-list-stages.md
                           - name: 获取
                             href: api/approvalstage-get.md
@@ -6166,7 +6178,7 @@ items:
                 items:
                   - name: 列出预配
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365使用情况报告
+          - name: Microsoft 365 使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -6548,7 +6560,7 @@ items:
                     href: api/site-delete-permission.md
           - name: 列表
             items:
-              - name: 列出
+              - name: 列表
                 href: resources/list.md
               - name: 创建列表
                 href: api/list-create.md
@@ -6653,7 +6665,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/termstore-group-list-sets.md
                   - name: 列出子项
                     href: api/termstore-term-list-children.md
@@ -7118,7 +7130,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: 获取
                     href: api/offershiftrequest-get.md
-                  - name: 列出
+                  - name: 列表
                     href: api/offershiftrequest-list.md
                   - name: 批准
                     href: api/offershiftrequest-approve.md
@@ -7347,7 +7359,7 @@ items:
           - name: 工作簿注释
             href: resources/workbookcomment.md
             items:
-              - name: 列出
+              - name: 列表
                 href: api/workbook-list-comments.md
               - name: 获取
                 href: api/workbookcomment-get.md

@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b9e5f147c8383de5ad58f4e879e6411b32602bd7
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 62727173512802356323d9d97423a693384c7640
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672614"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444496"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -29,14 +29,14 @@ ms.locfileid: "63672614"
 
 ## <a name="http-request"></a>HTTP 请求
 
-请求 `{id}` 中的 是设备的 **id** 属性的值，而不是 **deviceId** 属性的值。
+请求 `{id}` 中是设备 **ID 属性的** 值，而不是 **deviceId** 属性的值。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData `$select` [查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -115,11 +115,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-device-and-return-only-its-id-and-extensionattributes-properties"></a>示例 2：获取设备并仅返回其 id 和 extensionAttributes 属性
+### <a name="example-2-get-a-device-and-return-only-its-id-and-extensionattributes-properties"></a>示例 2：获取设备并仅返回其 ID 和 extensionAttributes 属性
 
 #### <a name="request"></a>请求
 
-以下请求检索 **设备的 id** 和 **extensionAttributes** 属性。
+以下请求检索设备的 **ID** 和 **extensionAttributes** 属性。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -148,6 +148,10 @@ GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d182198
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-device-select-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-device-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

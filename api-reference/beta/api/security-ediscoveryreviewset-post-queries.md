@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 21403b32e16be18bd2024127782dcb9afe2bfbe8
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: f489128a7e4c666827e669a08bbcc6f3846f3c62
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094679"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440431"
 ---
 # <a name="create-ediscoveryreviewsetquery"></a>创建 ediscoveryReviewSetQuery
 命名空间：microsoft.graph.security
@@ -26,7 +26,7 @@ ms.locfileid: "66094679"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|查询的名称。 必需项。|
-|contentQuery|String|审阅集的KQL查询。 [了解详细信息。](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
+|contentQuery|String|审阅集的 KQL 查询。 [了解详细信息。](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
 
 
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewsetquery-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoveryreviewsetquery-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

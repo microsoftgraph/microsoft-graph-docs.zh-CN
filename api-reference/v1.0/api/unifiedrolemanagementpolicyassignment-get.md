@@ -1,23 +1,23 @@
 ---
 title: 获取 unifiedRoleManagementPolicyAssignment
-description: 获取角色管理策略分配的详细信息，包括与Azure AD角色关联的策略和规则。
+description: 获取角色管理策略分配的详细信息，包括与 Azure AD 角色关联的策略和规则。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 167a2682d5e59ff948a3afcf12fc5143352a62e0
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 67c68443b5db9124b81e13187c9aa990c2681e77
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246634"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441286"
 ---
 # <a name="get-unifiedrolemanagementpolicyassignment"></a>获取 unifiedRoleManagementPolicyAssignment
 命名空间：microsoft.graph
 
-获取角色管理策略分配的详细信息，包括与Azure AD角色关联的策略和规则。
+获取角色管理策略分配的详细信息，包括与 Azure AD 角色关联的策略和规则。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments/Di
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedrolemanagementpolicyassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedrolemanagementpolicyassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -144,6 +148,10 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments/Di
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedrolemanagementpolicyassignment-expand-all-relationships-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedrolemanagementpolicyassignment-expand-all-relationships-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

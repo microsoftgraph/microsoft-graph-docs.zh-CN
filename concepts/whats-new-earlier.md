@@ -3,14 +3,63 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 38bfe22b2f5b9e571d40243d0bbb9bbc83a2b238
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: a1c292cebbccecec063ea9c9902bb437645487b9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884123"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437552"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="april-2022-new-and-generally-available"></a>2022 年 4 月：新版本和正式版
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+在生产应用中使用[特权标识管理 (PIM)](/graph/api/resources/privilegedidentitymanagementv3-overview)管理、控制和监视对组织中重要资源的访问。 通过特权角色和基于角色的访问控制 (RBAC) 启用访问权限，并且可以向用户、组或服务主体授予权限。 资源可以位于 Azure AD、Azure 和其他 Microsoft 云服务中，例如 Microsoft 365 或 Microsoft Intune。
+
+### <a name="search--index"></a>搜索 | 索引
+- 使用应用程序权限 `ExternalConnection.Read.All` 和 `ExternalConnection.ReadWrite.All` 在没有登录用户的情况下读取或写入所有外部连接。
+- 使用应用程序权限 `ExternalItem.Read.All` 在没有登录用户的情况下读取所有外部项。
+- 使用委托的权限 `ExternalConnection.ReadWrite.OwnedBy` 代表已登录用户读取和写入外部连接，应用已获授权。
+- 使用委托的权限 `ExternalConnection.Read.All` 或 `ExternalConnection.ReadWrite.All` 代表已登录用户读取或写入所有外部连接。
+- 使用委托的权限 `ExternalItem.ReadWrite.OwnedBy` 代表已登录的用户读取和写入外部项，应用已获授权。
+- 使用委托的权限 `ExternalItem.Read.All` 或 `ExternalItem.ReadWrite.All` 代表已登录用户读取或写入所有外部项。
+
+
+## <a name="april-2022-new-in-preview-only"></a>2022 年 4 月：仅限预览版中的新增功能
+
+### <a name="customer-bookings"></a>客户预订
+- [获取[企业](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true)中[员工成员](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true)资源的可用信息](/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta&preserve-view=true)。
+- 使用面向`Bookings.Read.All`[企业](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true)、[员工成员](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true)、[服务](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true)、[客户](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true)和[预约](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true)资源的读取操作中的应用程序权限。
+- 对客户和预约资源使用读/写操作的应用程序权限 `BookingsAppointment.ReadWrite.All`。
+
+### <a name="device-and-app-management--cloud-pc"></a>设备和应用管理|云电脑
+- 将 [Windows 设置](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true)指定为租户的[云电脑组织设置](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true)的一部分。
+- [获取](/graph/api/user-list-cloudpcs?view=graph-rest-beta&preserve-view=true)归属于已登录用户的云电脑设备。
+- [获取信息以为已登录用户启动云电脑设备](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
+配置[联合身份验证设置](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true)，将域与 Azure Active Directory 联合。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+[获取](/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta&preserve-view=true) 相应用户具有不兼容的访问包的分配。 
+
+### <a name="reports--identity-and-access-reports"></a>报告 | 身份和访问报告
+通过在相应的 Azure Active Directory 登录日志中标记事件，确认事件存在[高风险且已泄露](/graph/api/signin-confirmCompromised?view=graph-rest-beta&preserve-view=true)或[安全](/graph/api/signin-confirmSafe?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
+- 获取指定时间段内特定 Teams 活动的计数的[总分布报告](/graph/api/reportroot-getTeamsUserActivityTotalDistributionCounts?view=graph-rest-beta&preserve-view=true)。 Teams 活动的计数包括团队聊天消息、通话、会议、音频持续时间、发布消息等。
+- 在报告中获取其获取用户详细信息，包括[获取用户详细信息](/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta&preserve-view=true)、[获取活动计数](/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta&preserve-view=true)，以及[获取活动总计数](/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="teamwork"></a>Teamwork
+与一个或多个团队共享频道：
+- [仅列出与团队共享的频道](/graph/api/team-list-incomingchannels?view=graph-rest-beta&preserve-view=true)。
+- [列出团队中的所有频道](/graph/api/team-list-allchannels?view=graph-rest-beta&preserve-view=true)，包括在团队中托管或与团队共享的频道。
+- [列出可以访问指定共享通道的团队成员](/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-beta&preserve-view=true)。
+- [删除与团队共享的频道](/graph/api/team-delete-incomingchannels?view=graph-rest-beta&preserve-view=true)。
+- [列出已共享指定频道的团队](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true)。
+- [取消与团队共享频道](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true)。
+
 
 ## <a name="march-2022-new-and-generally-available"></a>2022 年 3 月：新增和正式发布
 
@@ -1093,7 +1142,7 @@ Intune beta 版 [10 月](changelog.md#october-2020)更新。
 - 在[授权策略](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true)中指定是否以及谁可以邀请外部用户加入组织。
 
 ### <a name="people-and-workplace-intelligence--insights"></a>人脉和工作场所智能 | 见解 
-管理员可以查看[使用 PowerShell cmdlet 的示例](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-settings-via-powershell)，为组织自定义项目见解设置。
+管理员可以查看[使用 PowerShell cmdlet 的示例](insights-customize-item-insights-privacy.md#configure-item-insights-settings-via-powershell)，为组织自定义项目见解设置。
 
 ### <a name="teamwork"></a>团队合作
 - 使用实例属性 **channelCreationMode** 表明正在创建 [通道](/graph/api/resources/channel?preserve-view=true&view=graph-rest-beta#instance-attributes)以服务数据迁移。 使用 [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) 表明迁移已结束，以便成员可以发布和阅读邮件。
@@ -1296,7 +1345,7 @@ beta 版本中的 Intune [8 月](changelog.md#august-2020)更新。
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 - 使用应用程序权限 `Printer.ReadWrite.All` 和 [Internet 打印协议（IPP）编码](https://tools.ietf.org/html/rfc8010)至[更新打印机](/graph/api/printer-update?view=graph-rest-beta&preserve-view=true)。
 - 使用以下应用权限之一、`PrintJob.ReadBasic.All`、`PrintJob.Read.All`、`PrintJob.ReadWriteBasic.All` 或 `PrintJob.ReadWrite.All`，来[获取打印作业](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true)或[列出打印机打印作业](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true)。
-- [获取打印作业](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true)时，请使用 `$expand` 获取对作业正在执行或已执行的[打印作业](/graph/api/resources/printtask?view=graph-rest-beta&preserve-view=true)。 [截取打印](universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing)中使用打印任务、[任务定义](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true)、和[任务触发器](/graph/api/resources/printtasktrigger?view=graph-rest-beta&preserve-view=true)。
+- [获取打印作业](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true)时，请使用 `$expand` 获取对作业正在执行或已执行的[打印作业](/graph/api/resources/printtask?view=graph-rest-beta&preserve-view=true)。 [截取打印](universal-print-concept-overview.md#enable-pull-printing)中使用打印任务、[任务定义](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true)、和[任务触发器](/graph/api/resources/printtasktrigger?view=graph-rest-beta&preserve-view=true)。
 - [重定向打印作业](/graph/api/printjob-redirect?view=graph-rest-beta&preserve-view=true)至其他打印机，作为截取打印的组成部分。
 
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
@@ -1879,7 +1928,7 @@ Intune [10 月](changelog.md#october-2019)更新
 
 - [附件](/graph/api/resources/attachment?view=graph-rest-1.0&preserve-view=true)
 - [联系人](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)
-- [事件](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
+- [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
 - [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0&preserve-view=true)
 - [邮件](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true)
 - [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0&preserve-view=true)

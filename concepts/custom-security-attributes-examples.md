@@ -1,42 +1,42 @@
 ---
-title: '使用 Microsoft Graph API (预览版分配、更新) '
-description: 了解如何使用 Microsoft Graph API 为 () 服务主体分配、更新Graph属性。
+title: " (预览版) 分配、更新或删除自定义安全属性"
+description: 了解如何使用 Microsoft 图形 API 为用户和应用程序分配、更新或删除自定义安全属性 (服务主体) 。
 author: rolyon
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: directory-management
-ms.openlocfilehash: fa046c1e55055ed1d8c00fdda67ea8be71c5d804
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: 21db29dc53c3b005dd0fa09c5e13bd7cfa055a1f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184001"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442125"
 ---
-# <a name="assign-update-or-remove-custom-security-attributes-using-the-microsoft-graph-api-preview"></a>使用 Microsoft Graph API (预览版分配、更新) 
+# <a name="assign-update-or-remove-custom-security-attributes-using-the-microsoft-graph-api-preview"></a>使用 Microsoft 图形 API (预览) 分配、更新或删除自定义安全属性
 
 > [!IMPORTANT]
-> 自定义安全属性功能当前处于预览阶段。 有关适用于 Beta 版、预览[版或](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)尚未正式发布的 Azure 功能的法律条款，请参阅 Microsoft Azure 预览版补充使用条款。
+> 自定义安全属性功能目前为预览版。 有关适用于 Beta、预览版或尚未发布到正式版的 Azure 功能的法律条款，请参阅 [Microsoft Azure 预览版补充使用条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) 。
 
-[Azure Active Directory (Azure AD) 中的](/azure/active-directory/fundamentals/custom-security-attributes-overview)自定义安全属性是特定于业务 (属性，) 定义和分配给 Azure AD 对象。
+Azure Active Directory (Azure AD) 中的[自定义安全属性](/azure/active-directory/fundamentals/custom-security-attributes-overview)是特定于企业的属性， (键值对) 可以定义和分配给 Azure AD 对象。
 
-本文提供了如何为用户和应用程序分配、更新或删除不同类型的自定义安全属性的示例， (服务主体) 。 自定义安全属性只能通过 Update 用户或 Update `PATCH` [servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta&preserve-view=true)请求中的操作分配或更新。 [](/graph/api/user-update?view=graph-rest-beta&preserve-view=true)
+本文提供有关如何为用户和应用程序分配、更新或删除不同类型的自定义安全属性的示例， (服务主体) 。 只能通过`PATCH`[更新用户](/graph/api/user-update)或 [Update servicePrincipal](/graph/api/serviceprincipal-update) 请求中的操作来分配或更新自定义安全属性。
 
 ## <a name="permissions"></a>权限
 
-若要管理自定义安全属性，必须为调用主体分配以下Azure AD角色。 默认情况下，全局管理员和其他管理员角色没有读取、定义或分配自定义安全属性的权限。
+若要管理自定义安全属性，必须为调用主体分配以下 Azure AD 角色。 默认情况下，全局管理员和其他管理员角色无权读取、定义或分配自定义安全属性。
 
 - [属性分配管理员](/azure/active-directory/roles/permissions-reference#attribute-assignment-administrator)
 
-此外，还必须向调用主体授予以下权限。
+此外，必须向调用主体授予以下权限。
 
 - [CustomSecAttributeAssignment.ReadWrite.All](permissions-reference.md#custom-security-attributes-permissions)
 - [User.Read.All](permissions-reference.md#user-permissions)
 
-读取、分配、更新或删除应用程序的属性的权限由 *CustomSecAttributeAssignment.ReadWrite.All 授予*。 读取资源对象（如用户）的权限是使用资源对象权限（如 *User.Read.All）单独授予的*。
+*自定义SecAttributeAssignment.ReadWrite.All* 授予对应用程序的读取、分配、更新或删除属性的权限。 使用资源对象权限（例如 *User.Read.All*）单独授予读取资源对象的权限（例如用户）。
 
 ## <a name="assign-custom-security-attributes"></a>分配自定义安全属性
 
-### <a name="example-1-assign-a-custom-security-attribute-with-a-string-value-to-a-user"></a>示例 1：向用户分配具有字符串值的自定义安全属性
+### <a name="example-1-assign-a-custom-security-attribute-with-a-string-value-to-a-user"></a>示例 1：为用户分配具有字符串值的自定义安全属性
 
 以下示例演示如何向用户分配具有字符串值的自定义安全属性。
 
@@ -116,7 +116,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-assign-a-custom-security-attribute-with-a-multi-string-value-to-a-user"></a>示例 3：向用户分配具有多字符串值的自定义安全属性
+### <a name="example-3-assign-a-custom-security-attribute-with-a-multi-string-value-to-a-user"></a>示例 3：为用户分配具有多字符串值的自定义安全属性
 
 以下示例演示如何向用户分配具有多字符串值的自定义安全属性。
 
@@ -157,13 +157,13 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-4-assign-a-custom-security-attribute-with-an-integer-value-to-a-user"></a>示例 4：向用户分配具有整数值的自定义安全属性
+### <a name="example-4-assign-a-custom-security-attribute-with-an-integer-value-to-a-user"></a>示例 4：为用户分配具有整数值的自定义安全属性
 
-以下示例演示如何向用户分配具有整数值的自定义安全属性。
+以下示例演示如何为用户分配具有整数值的自定义安全属性。
 
 - 属性集：`Engineering`
 - 属性：`NumVendors`
-- 属性数据类型：Integer
+- 属性数据类型：整数
 - 属性值：`4`
 
 #### <a name="request"></a>请求
@@ -198,9 +198,9 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-5-assign-a-custom-security-attribute-with-a-multi-integer-value-to-a-user"></a>示例 5：向用户分配具有多整数值的自定义安全属性
+### <a name="example-5-assign-a-custom-security-attribute-with-a-multi-integer-value-to-a-user"></a>示例 5：为用户分配具有多整数值的自定义安全属性
 
-以下示例演示如何向用户分配具有多整数值的自定义安全属性。
+以下示例演示如何为用户分配具有多整数值的自定义安全属性。
 
 - 属性集：`Engineering`
 - 属性：`CostCenter`
@@ -239,9 +239,9 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-6-assign-a-custom-security-attribute-with-a-boolean-value-to-a-user"></a>示例 6：向用户分配具有布尔值的自定义安全属性
+### <a name="example-6-assign-a-custom-security-attribute-with-a-boolean-value-to-a-user"></a>示例 6：为用户分配具有布尔值的自定义安全属性
 
-以下示例演示如何向用户分配具有布尔值的自定义安全属性。
+以下示例演示如何为用户分配具有布尔值的自定义安全属性。
 
 - 属性集：`Engineering`
 - 属性：`Certification`
@@ -281,13 +281,13 @@ HTTP/1.1 204 No Content
 
 ## <a name="update-custom-security-attribute-assignments"></a>更新自定义安全属性分配
 
-### <a name="example-1-update-a-custom-security-attribute-assignment-with-an-integer-value-for-a-user"></a>示例 1：使用用户整数值更新自定义安全属性分配
+### <a name="example-1-update-a-custom-security-attribute-assignment-with-an-integer-value-for-a-user"></a>示例 1：使用用户的整数值更新自定义安全属性分配
 
-以下示例演示如何使用用户整数值更新自定义安全属性分配。
+以下示例演示如何使用用户的整数值更新自定义安全属性分配。
 
 - 属性集：`Engineering`
 - 属性：`NumVendors`
-- 属性数据类型：Integer
+- 属性数据类型：整数
 - 属性值：`8`
 
 #### <a name="request"></a>请求
@@ -367,7 +367,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-1-remove-a-single-valued-custom-security-attribute-assignment-from-a-user"></a>示例 1：从用户中删除单值自定义安全属性分配
 
-以下示例演示如何删除支持用户单个值的自定义安全属性分配。
+以下示例演示如何从用户中删除支持单个值的自定义安全属性分配。
 
 - 属性集：`Engineering`
 - 属性：`ProjectDate`
@@ -406,7 +406,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-remove-a-multi-valued-custom-security-attribute-assignment-from-a-user"></a>示例 2：从用户中删除多值自定义安全属性分配
 
-以下示例演示如何删除支持来自用户的多个值的自定义安全属性分配。
+以下示例演示如何从用户中删除支持多个值的自定义安全属性分配。
 
 - 属性集：`Engineering`
 - 属性：`Project`
@@ -445,7 +445,5 @@ HTTP/1.1 204 No Content
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft Graph API 的自定义安全属性概述](/graph/api/resources/custom-security-attributes-overview)
-- [什么是自定义安全Azure AD？](/azure/active-directory/fundamentals/custom-security-attributes-overview)
-- [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true)
-- [更新 servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta&preserve-view=true)
+- [使用 Microsoft 图形 API (预览版) 的自定义安全属性概述](/graph/api/resources/custom-security-attributes-overview)
+- [Azure AD 中的自定义安全属性是什么？](/azure/active-directory/fundamentals/custom-security-attributes-overview)

@@ -1,23 +1,23 @@
 ---
-title: 使用 Microsoft Microsoft 搜索中的 Graph API 搜索文件
-description: 可以使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 SharePoint。
+title: 使用 Microsoft 搜索 API 搜索 OneDrive 和 SharePoint 内容
+description: 使用 Microsoft Graph 中的 Microsoft 搜索 API 搜索 OneDrive 或 SharePoint 中存储的内容：文件、文件夹、列表、列表项或网站。
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: c1c4851e84a57a024341c8ab342e7ec7243086c0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a4730bb9c959ee5cb27514cd27b890c4bcb2c095
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103968"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445844"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>使用 Microsoft 搜索 API 搜索 OneDrive 和 SharePoint
+# <a name="use-the-microsoft-search-api-to-search-onedrive-and-sharepoint-content"></a>使用 Microsoft 搜索 API 搜索 OneDrive 和 SharePoint 内容
 
-使用 Microsoft 搜索 API 搜索存储在OneDrive或SharePoint：文件、文件夹、列表、列表项或网站中的内容。
+使用 Microsoft Graph 中的 Microsoft 搜索 API 搜索 OneDrive 或 SharePoint 中存储的内容：文件、文件夹、列表、列表项或网站。
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-搜索 API 允许你通过指定 [searchRequest](/graph/api/resources/searchRequest)的 **entityTypes** 属性OneDrive或SharePoint中检索的内容类型。 本文介绍一些示例。
+通过搜索 API，可以通过在 [searchRequest](/graph/api/resources/searchRequest) 上指定 **entityTypes** 属性来限制要在 OneDrive 或 SharePoint 中检索的内容类型。 本文介绍一些示例。
 
 ## <a name="example-1-search-files"></a>示例 1：搜索文件
 
@@ -243,9 +243,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>示例 4：搜索 OneDrive 和 SharePoint
+## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>示例 4：在 OneDrive 和 SharePoint 中搜索所有内容
 
-此示例查询登录用户OneDrive SharePoint网站中的内容。 响应中的 **resource** 属性返回作为 **driveItem** 对象的文件和文件夹的匹配项、作为 (SharePoint列出) **列表的** 匹配项，以及作为 **listItem** 的所有其他匹配项。
+本示例查询登录用户拥有读取访问权限的 OneDrive 和 SharePoint 网站中的所有内容。 响应中的 **资源** 属性返回作为 **driveItem** 对象的文件和文件夹、 (SharePoint 列表) 作为 **列表** 的容器的匹配项，以及作为 **listItem** 的所有其他匹配项。
 
 ### <a name="request"></a>请求
 
@@ -349,23 +349,23 @@ Content-type: application/json
 
 ## <a name="example-5-use-filters-in-search-queries"></a>示例 5：在搜索查询中使用筛选器
 
-您可以在查询搜索词中为 OneDrive 和 SharePoint。 例如：
+可以在 OneDrive 和 SharePoint 的查询搜索词中使用 KQL。 例如：
 
-- `"query": "contoso filetype:docx OR filetype:doc"` 将查询范围确定为 Word 文档。
-- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` 将查询的范围确定为网站中的特定文件夹。
-- `"query": "contoso AND isDocument=true"` 将查询的范围确定为仅返回文档。 不会返回 (文件夹、文档) 的任何容器。
-- `"query": "contoso contentclass:STS_List_Events"`将查询的范围确定为存储在日历SharePoint。
-- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"`将查询的范围确定为按SharePoint OneDrive和筛选项目
+- `"query": "contoso filetype:docx OR filetype:doc"` 将查询范围限定到 Word 文档。
+- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\""` 将查询范围限定到网站中的特定文件夹。
+- `"query": "contoso AND isDocument=true"` 将查询范围限定为仅返回文档。 不会返回任何容器 (文件夹、文档库) 。
+- `"query": "contoso contentclass:STS_List_Events"` 将查询范围限定到存储在 SharePoint 中的日历事件。
+- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"` 将查询范围限定为按日期筛选 SharePoint 和 OneDrive 项
 
-为了有效，属性限制应在条件中指定有效的可查询托管属性名称。
+为了有效，属性限制应在条件中指定有效且可查询的托管属性名称。
 
 ## <a name="example-6-specify-select-properties"></a>示例 6：指定选择属性
 
-可以在响应中指定希望返回的字段，作为 [响应中 searchHit](/graph/api/resources/searchhit)对象的 **fields** 子属性的一部分。 这是一种通过线路减少响应或请求一些不是开箱即用架构一部分的特定属性的方法。
+可以在响应中指定要返回的字段，作为响应中 [searchHit](/graph/api/resources/searchhit) 对象的 **字段** 子属性的一部分。 这是一种通过网络剪裁响应或请求某些不是现用架构一部分的特定属性的方法。
 
-请注意，SharePoint中自定义属性的属性选择仅适用于 **listItem，** 因为这是 Microsoft SharePoint 中唯一Graph支持自定义属性的 Graph 实体。
+请注意，SharePoint 中自定义属性的属性选择仅适用于 **listItem** ，因为这是 Microsoft Graph 中唯一支持自定义属性的 SharePoint 实体。
 
-若要检索 **driveItem** 的自定义属性，请改为查询 **listItem。**
+若要检索 **driveItem** 的自定义属性，请改为查询 **listItem** 。
 
 ### <a name="request"></a>请求
 
@@ -440,7 +440,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-在搜索 **驱动器** 时，需要在 **queryString** 中包含文档库名称中的术语。 不支持 `*` 查询，并且不会返回所有可用驱动器。
+搜索 **驱动器** 时，需要在 **queryString** 中包含文档库名称中包含的术语。 不支持查询 `*` ，也不返回所有可用驱动器。
 
 ## <a name="next-steps"></a>后续步骤
 

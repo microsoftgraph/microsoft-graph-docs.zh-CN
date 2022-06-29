@@ -1,19 +1,19 @@
 ---
-title: 使用 Microsoft Graph 中的 OneNote API 的最佳做法
-description: 本文提供了有关使用 Microsoft Graph 中的 OneNote API 的建议。 这些建议基于 Microsoft 问答和 Twitter 上常见问题&回答。
+title: 使用 OneNote API 的最佳做法
+description: 基于 Microsoft Q&A 和 Twitter 上常见问题的解答，发现有关在 Microsoft Graph 中使用 OneNote API 的建议。
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 6f725485901b3a6235df08828489b36427a7fbc4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8d67f5ca0a6f21fc9fb4fab01534634f52e15cef
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019060"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442834"
 ---
 # <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的 OneNote API 的最佳做法
 
-本文提供了有关使用 Microsoft Graph 中的 OneNote API 的建议。 这些建议基于 Microsoft 问答和 Twitter 上常见问题 [&解答](/answers/topics/microsoft-graph-notes.html)  。
+本文提供了有关使用 Microsoft Graph 中的 OneNote API 的建议。 这些建议基于 Microsoft [Q&A](/answers/topics/microsoft-graph-notes.html)  和 Twitter 上常见问题的解答。
 
 ## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a>使用 $select 选择所需的最小属性集
 

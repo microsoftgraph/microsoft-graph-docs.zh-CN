@@ -1,32 +1,32 @@
 ---
-title: 使用 Microsoft Microsoft 搜索 API Graph聚合优化查询
-description: 可以使用 Microsoft 搜索 API 检索 aggreations
+title: 使用 Microsoft 搜索 API 通过聚合优化查询
+description: 可以使用 Microsoft Graph 中的 Microsoft 搜索 API 聚合Option 来优化搜索结果并在索引中显示其分布。
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 49e3739985f2a715449ff28c1183d0427543b2c5
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: c2bdb3121720a880bf2f508e7c43af2e53226dec
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61285082"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443359"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-refine-queries-with-aggregations"></a>使用 Microsoft Microsoft 搜索 API Graph聚合优化查询
+# <a name="use-the-microsoft-search-api-to-refine-queries-with-aggregations"></a>使用 Microsoft 搜索 API 通过聚合优化查询
 
-可以使用 Microsoft Microsoft 搜索 API 来Graph搜索结果，在索引中显示搜索结果的分布。 
+可以使用 Microsoft Graph 中的 Microsoft 搜索 API 优化搜索结果并在索引中显示其分布。
 
-若要优化结果，在搜索请求 [中，](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true)指定 [aggregationOption](/graph/api/resources/aggregationOption?view=graph-rest-beta&preserve-view=true)。 每个 **aggregationOption** 指定应计算聚合的属性，以及响应中返回的 [searchBucket](/graph/api/resources/searchBucket?view=graph-rest-beta&preserve-view=true) 项目数。
+若要优化结果，请在 [搜索请求](/graph/api/resources/searchRequest)中指定 [聚合Option](/graph/api/resources/aggregationOption)。 每个 **aggregationOption** 指定应计算聚合的属性，以及要在响应中返回的 [searchBucket](/graph/api/resources/searchBucket) 项数。
 
 ## <a name="example-1-request-aggregations-by-string-fields"></a>示例 1：按字符串字段请求聚合
 
-以下示例搜索 **listItem** 资源，并按文件类型、内容类和上次修改时间聚合结果，所有这些都是字符串值。
+以下示例搜索 **listItem** 资源，并按其文件类型、内容类和上次修改时间聚合结果，所有这些都是字符串值。
 
-该响应包含两个聚合的 [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) 对象：
-- **key** 属性 实际值 (指定由、) 值聚合在同一存储桶中的 `fileType` `contentclass` `lastModifiedTime` **那些匹配的 listItem** 对象的) 、 或 值的值。
-- **count** 属性指定聚合在同一存储桶中的此类对象的数量。 请注意，此数字是匹配数的近似值，不会提供匹配项的准确数量。
-- 按文件类型聚合的结果存储桶按计数降序排序。 本示例中，有 3 个存储桶用于 3 种文件类型 `docx` ：、 `xlsx` 和 `pptx` 。
-- 内容类聚合的结果存储桶按内容类的字符串值按降序排序。 本示例中，只有一个存储桶，所有匹配对象共享同一个内容类 `STS_ListItem_DocumentLibrary` 。
-- lastModifiedTime 聚合的结果存储桶按 lastModifiedTime 的字符串值按降序排序。 此示例包括三个存储桶 `Before 2021-09-01T09:08:19.6224752Z` ：、 `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z` 和 `2021-11-09T09:08:19.6224752Z or later` 。
+响应包括两个聚合的两个 [searchBucket](/graph/api/resources/searchbucket) 对象：
+- **键** 属性指定由该值在同一`fileType``contentclass``lastModifiedTime`存储桶中聚合的匹配 **listItem** 对象的实际值 (或) 。
+- **count** 属性指定在同一存储桶中聚合的此类对象的数量。 请注意，此数字是匹配数的近似值，不会提供确切的匹配数。
+- 按文件类型聚合的结果桶按降序按计数排序。 在此示例中，有 3 个存储桶用于 3 种文件类型：`docx`和 `xlsx``pptx`.
+- 按内容类聚合的结果桶按内容类的字符串值按降序排序。 在此示例中，只有一个存储桶包含共享相同内容类的所有匹配对象。 `STS_ListItem_DocumentLibrary`
+- 由 lastModifiedTime 聚合的结果桶按 lastModifiedTime 的字符串值按降序排序。 本示例包括三个存储桶：`Before 2021-09-01T09:08:19.6224752Z`和 `2021-11-09T09:08:19.6224752Z or later``From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z`。
 
 ### <a name="request"></a>请求
 
@@ -171,13 +171,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a>示例 2：基于上一个请求应用聚合筛选器
+## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a>示例 2：基于以前的请求应用聚合筛选器
 
-此示例应用聚合筛选器，该筛选器基于作为字段和示例 1 中的字段返回的 **aggregationFilterToken。** `docx` `fileType` `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z` `lastModifiedTime`
+本示例应用一个聚合筛选器，该筛选器基于作为`fileType`字段返回的`docx`**聚合FilterToken** 作为`lastModifiedTime`示例 1 中的`From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z`字段。
 
-分配给 **aggregationFilters** 属性的字符串值采用格式 **"{field}：" \\ "{aggregationFilterToken} \\ ""**。 如果同一筛选器需要多个值，则分配给 **aggregationFilters** 属性的字符串值应遵循以下格式 **："{field}：或 (\\ "{aggregationFilterToken1} \\ "， \\ "{aggregationFilterToken2} \\ ") "。**
+分配给 **aggregationFilters 属性的** 字符串值采用 **“{field}：\\”{aggregationFilterToken}\\“** 格式。 如果需要同一筛选器的多个值，则分配给 **aggregationFilters 属性的** 字符串值应遵循以下格式 **：“{field}：或 (\\”{aggregationFilterToken1}\\“，”\\{aggregationFilterToken2}\\“) ”。**
 
-分配给 **aggregationFilters** 属性的日期时间格式字符串值遵循格式 **"{field}：{aggregationFilterToken}"。**
+分配给 **aggregationFilters** 属性的 datetime 格式字符串值遵循 **格式“{field}：{aggregationFilterToken}”。**
 
 
 ### <a name="request"></a>请求
@@ -273,16 +273,16 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3-request-aggregation-by-a-numeric-field"></a>示例 3：按数值字段请求聚合
+## <a name="example-3-request-aggregation-by-a-numeric-field"></a>示例 3：按数字字段请求聚合
 
-以下示例搜索 **driveItem** 资源，并按结果大小（数字值）聚合结果。 请求按 3 个大小范围指定聚合：
+以下示例搜索 **driveItem** 资源，并按其大小（即数字值）聚合结果。 请求按 3 个大小范围指定聚合：
 - 小于 100 的大小
-- 大小介于 100 和 1000 之间
+- 大小在 100 到 1000 之间
 - 大小 1000 及更高版本
 
-该响应包括 3 **个 searchBucket** 对象，每个大小范围聚合一个：
-- 较低大小范围的 2 个存储桶不包含任何搜索匹配项。
-- 所有 9 个搜索匹配项的大小都为 1000 或更大。
+响应包括 3 个 **searchBucket** 对象，每个大小范围聚合各有一个：
+- 大小较低的 2 个存储桶不包含任何搜索匹配项。
+- 所有 9 个搜索匹配项的大小均为 1000 或更高。
 
 ### <a name="request"></a>请求
 
@@ -378,8 +378,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-聚合仅受项目SharePoint OneDrive支持。 邮件或事件 **不支持****它们**。
+仅 SharePoint 或 OneDrive 项支持聚合。 **消息** 或 **事件** 不支持它们。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview)

@@ -1,77 +1,77 @@
 ---
-title: Windows更新 API 概述
-description: 适用于Windows更新部署服务可让你的组织控制提供给你的设备的更新。
+title: Windows 更新 API 概述
+description: 适用于企业的Windows 更新部署服务为组织提供了对设备提供的更新的控制权。
 author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 050e7c37f15065d263a6ece8131073690df0a7b2
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: e6bb301bac7a261db8284ad40a5914a11cca5171
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61859908"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437525"
 ---
-# <a name="windows-updates-api-overview"></a>Windows更新 API 概述
+# <a name="windows-updates-api-overview"></a>Windows 更新 API 概述
 
-The Windows Update for Business deployment service provides control over device updates through the ability to approve， schedule and safeguard content delivered by Windows Update. 
+Windows 更新企业版部署服务通过批准、计划和保护Windows 更新提供的内容来控制设备更新。
 
-## <a name="why-use-the-windows-update-for-business-deployment-service"></a>为什么使用 Windows Update for Business 部署服务？
+## <a name="why-use-the-windows-update-for-business-deployment-service"></a>为何使用 Windows 更新 for Business 部署服务？
 
-IT 专业人员和管理工具供应商都可以使用部署服务：
+IT 专业人员和管理工具供应商都可以使用部署服务执行以下操作：
 * 将更新部署计划为在特定日期开始。
 * 使用丰富的表达式在几天或几周内分阶段部署。
 * 绕过预配置的适用于企业的 Windows 更新策略以立即部署安全更新。
 * 通过针对独特设备群体量身定制的部署，确保覆盖组织中的硬件和软件。
 
-如今，部署服务支持Windows 10功能更新和Windows 10安全更新。 若要了解有关企业更新上下文中的部署服务Windows，请参阅[部署服务概述](/windows/deployment/update/deployment-service-overview)。
+目前，部署服务支持管理 Windows 功能更新和加快 Windows 安全更新。 若要在 Windows 更新 for Business 上下文中详细了解部署服务，请参阅[部署服务概述](/windows/deployment/update/deployment-service-overview)。
 
-## <a name="prerequisites"></a>先决条件    
+## <a name="prerequisites"></a>先决条件
 
-若要使用部署服务，组织必须拥有以下订阅之一：
-* Windows 10 企业版 E3 或 E5 (E5 Microsoft 365 F3 E3 或 E5) 
-* Windows 10 教育版 A3 或 A5 (或 A5 Microsoft 365 A3 A5) 
-* Windows虚拟桌面访问 E3 或 E5
+若要使用部署服务，组织必须具有以下订阅之一：
+* Windows 10 企业版 E3 或 E5 (包含在 Microsoft 365 F3、E3 或 E5) 
+* Windows 10 教育版 A3 或 A5 (包含在 Microsoft 365 A3 或 A5) 
+* Windows 虚拟桌面访问 E3 或 E5
 * Microsoft 365 商业高级版
 
 此外，部署服务管理的设备必须：
-* 已Azure AD或混合 AD 加入
-* 运行下列版本之Windows 10：Windows 10 专业版、Windows 10 企业版、Windows 10 教育版、Windows 10 专业教育版
+* 加入 Azure AD 或加入混合 AD
+* 运行以下Windows 10版本之一：Windows 10 专业版、Windows 10 企业版、Windows 10 教育版、Windows 10 专业教育版
 * 已安装Windows 10版本 1709 或更高版本
 
 ## <a name="enroll-devices-to-be-managed"></a>注册要管理的设备
 
-若要开始使用部署服务， [请注册更新管理中的设备](windowsupdates-enroll.md)。
+若要开始使用部署服务，请 [在更新管理中注册设备](windowsupdates-enroll.md)。
 
-## <a name="approve-and-schedule-windows-content-delivered-from-windows-update"></a>批准和安排Windows更新中Windows的内容
+## <a name="approve-and-schedule-windows-content-delivered-from-windows-update"></a>批准并计划从Windows 更新传送的 Windows 内容
 
-部署服务简化了对各种设备生态系统的内容的审阅、批准、计划和部署过程。 存在更新目录以提供专为审批定制的视图，帮助您重点关注重要的审批决策，并避免需要对相关更新的深入列表进行排序。
+部署服务简化了针对不同设备生态系统的审核、审批、计划和部署内容。 存在更新目录以提供为审批量身定制的视图，帮助你专注于重要的审批决策，并避免需要对相关更新的深度列表进行排序。
 
-选择要部署的更新后，可以计划部署以在将来开始，或部署一段时间。 如果选择在一段时间内部署更新，部署服务将自动优化设备提供更新的顺序。 如果可能，该服务对设备进行订购，以确保在部署早期表示硬件和软件资产的多样性，以最大限度地减少可能遇到意外更新问题的设备数量。 
+选择要部署的更新后，可以计划部署以在将来开始，或在一段时间内进行部署。 如果选择在一段时间内部署更新，则部署服务会自动优化设备的更新顺序。 如果可能，服务会对设备进行排序，以确保在部署的早期就表示硬件和软件资产的多样性，以最大程度地减少可能遇到意外更新问题的设备数。 
 
 详细了解部署服务：
 * [软件更新](windowsupdates-software-updates.md)
 * [部署](windowsupdates-deployments.md)
 * [安排部署](windowsupdates-schedule-deployment.md)
 
-## <a name="immediately-deploy-an-update-when-critical-needs-arise"></a>出现关键需求时立即部署更新
+## <a name="immediately-deploy-an-update-when-critical-needs-arise"></a>在出现关键需求时立即部署更新
 
-在出现关键安全问题的情况下，可以使用部署服务绕过标准更新策略并加快安全更新的部署。
+在出现严重安全问题时，可以使用部署服务绕过标准更新策略并加快安全更新的部署。
 
-若要了解更多信息，请参阅 [部署加速安全更新](windowsupdates-deploy-expedited-update.md)。
+若要了解详细信息，请参阅 [部署加速的安全更新](windowsupdates-deploy-expedited-update.md)。
 
 ## <a name="protect-devices-by-default"></a>默认情况下保护设备
 
-享受保护 [保留的好处](/windows/deployment/update/safeguard-holds) ，防止出现质量或兼容性问题的设备安装更新，否则导致失败或回滚。 对于部署Windows 11，部署服务可扩展这些安全措施，以进一步保护设备。 随着设备升级到 Windows，Microsoft 使用机器学习算法来监视 Windows 11。 对于确定存在升级后问题的高风险的设备，部署服务在调查和确认问题时应用早期安全措施来保护这些设备。
+享受 [保护措施](/windows/deployment/update/safeguard-holds) 的优势，防止存在质量或兼容性问题的设备安装更新，否则导致故障或回滚。 对于部署Windows 11，部署服务会扩展这些保护措施，以进一步保护设备。 当设备升级到Windows 11时，Microsoft 使用机器学习算法来监视 Windows 生态系统的广度。 对于被识别为出现升级后问题风险较高的设备，部署服务会在调查和确认问题时应用早期保护措施来保护这些设备。
 
-若要了解更多信息，请参阅 [管理部署的安全措施](windowsupdates-manage-safeguards.md)。
+若要了解详细信息，请参阅 [管理部署的保障措施](windowsupdates-manage-safeguards.md)。
 
-此外，还可以配置组织独有的监视规则。 这些规则可以基于设备信号（如回滚）发送警报或暂停部署。
+此外，还可以配置组织特有的监视规则。 这些规则可以根据设备信号（如回滚）发送警报或暂停部署。
 
-若要了解更多信息，请参阅 [管理部署的监视规则](windowsupdates-manage-monitoring-rules.md)。
+若要了解详细信息，请参阅 [管理部署的监视规则](windowsupdates-manage-monitoring-rules.md)。
 
 ## <a name="api-reference"></a>API 参考
 
 在查找此服务的 API 参考？
 
-请参阅[microsoft Windows beta 中的 Graph 更新 API。](/graph/api/resources/windowsupdates-updates?view=graph-rest-beta&preserve-view=true)
+请参阅 [Microsoft Graph beta 中的 Windows 更新 API](/graph/api/resources/windowsupdates-updates?view=graph-rest-beta&preserve-view=true)。

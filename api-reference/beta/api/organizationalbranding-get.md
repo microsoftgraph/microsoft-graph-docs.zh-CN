@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1e8c83cd568e77ae9ca13ee4ee538d5493eac6c4
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: 4943efe8d73bc4148b33596eb4bfb01b1b510c50
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971229"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440582"
 ---
 # <a name="get-organizationalbranding"></a>Get organizationalBranding
 命名空间：microsoft.graph
@@ -30,7 +30,7 @@ ms.locfileid: "65971229"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | User.Read、Organization.Read.All、User.ReadBasic.All、User.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -361,7 +361,7 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbranding-frlocale-bannerlogo-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 

@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: c6ea35bfef3de2d51f0c374e3b4a2f1f67cef3ea
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 1b89fd05d8abe2deb3b928afcff8967d20031962
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917757"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442433"
 ---
 # <a name="add-member-to-channel"></a>将成员添加到通道
 

@@ -1,20 +1,20 @@
 ---
-title: 打开 OneNote 客户端
-description: '可以使用页面或笔记本的 **links** 属性将 OneNote 应用程序打开到特定的页面或笔记本。 '
+title: 使用 OneNote API 打开 OneNote 客户端
+description: 使用页面或笔记本的 links 属性将 OneNote 应用程序打开到特定页面或笔记本。 包括 iOS 和 Android 示例。
 author: Jewan-microsoft
 ms.localizationpriority: medium
-ms.openlocfilehash: 527a7a390911fb441bd463b22e2220ae5b95e4df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 92f469aa8eb7e508532d34b7d4efd0feac3ca411
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103959"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444787"
 ---
 # <a name="open-the-onenote-client"></a>打开 OneNote 客户端
 
 可以使用页面或笔记本的 **links** 属性将 OneNote 应用程序打开到特定的页面或笔记本。 
 
-**links** 属性是一个 JSON 对象，它包含两个 URL。 URL 将在客户端应用程序中或OneNote打开页面或OneNote web 版。
+**links** 属性是一个 JSON 对象，它包含两个 URL。 URL 将在 OneNote 客户端应用程序或OneNote web 版中打开页面或笔记本。
 
 ```json
 { 
@@ -29,26 +29,26 @@ ms.locfileid: "59103959"
 }
 ```
 
-- **oneNoteClientUrl** 
+- **oneNoteClientUrl**
 
   - 打开 OneNote 客户端（如果设备上已安装）。 此 URL 包括 *onenote* 前缀。
   - 如果设备上安装了特定于语言的版本，则打开该版本。 否则，请使用平台语言设置。
 
-- **oneNoteWebUrl** 
+- **oneNoteWebUrl**
 
-  - 如果OneNote web 版默认浏览器支持，则打开该窗口。 
+  - 如果设备上的默认浏览器支持，则打开OneNote web 版。
   - 使用浏览器语言设置。
 
 
 OneNote API 在以下操作的 HTTP 响应中返回 **links** 属性：
 
-- 通过发送 [`POST pages`](/graph/api/section-post-pages?view=graph-rest-1.0) 请求创建页面。
+- 通过发送 [`POST pages`](/graph/api/section-post-pages) 请求创建页面。
 
-- 通过发送 [`POST notebooks`](/graph/api/onenote-post-notebooks?view=graph-rest-1.0) 请求创建笔记本。
+- 通过发送 [`POST notebooks`](/graph/api/onenote-post-notebooks) 请求创建笔记本。
 
-- 通过发送 [`GET pages`](/graph/api/page-get?view=graph-rest-1.0) 或 [`GET pages/{id}`](/graph/api/page-get?view=graph-rest-1.0) 请求获取页面元数据。
+- 通过发送 [`GET pages`](/graph/api/page-get) 或 [`GET pages/{id}`](/graph/api/page-get) 请求获取页面元数据。
 
-- 通过发送 [`GET notebooks`](/graph/api/notebook-get?view=graph-rest-1.0) 或 [`GET notebooks/{id}`](/graph/api/notebook-get?view=graph-rest-1.0) 请求获取笔记本元数据。
+- 通过发送 [`GET notebooks`](/graph/api/notebook-get) 或 [`GET notebooks/{id}`](/graph/api/notebook-get) 请求获取笔记本元数据。
 
 下面的示例显示如何检查响应的状态代码、分析 JSON 以提取 URL，然后打开 OneNote 客户端。
 
@@ -96,7 +96,7 @@ OneNote API 在以下操作的 HTTP 响应中返回 **links** 属性：
 
 <br/>
 
-分析响应中的 URL 后，可以通过使用以下代码打开 OneNote。 用于 `oneNoteClientUrl` 打开已安装的 OneNote 客户端或 `oneNoteWebURL` 打开OneNote web 版。
+分析响应中的 URL 后，可以通过使用以下代码打开 OneNote。 用于`oneNoteClientUrl`打开已安装的 OneNote 客户端或`oneNoteWebURL`打开OneNote web 版。
 
 ```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
@@ -164,7 +164,7 @@ public ApiResponse getResponse() throws Exception {
 
 <br/>
 
-通过使用响应属性，你的应用可以打开OneNote web 版，如以下示例所示。
+使用响应属性，应用可以打开OneNote web 版，如以下示例所示。
 
 ```java 
 if (response.getResponseCode() == 201) {

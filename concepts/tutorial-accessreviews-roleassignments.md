@@ -1,21 +1,21 @@
 ---
 title: 教程：使用访问评审 API 查看对特权角色的访问权限
-description: 使用访问评审 API 来评审对特权角色的访问权限
+description: 了解如何使用访问评审 API 定期查看有权访问特权角色的用户和组，包括活动角色和符合条件的角色。
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 6f9dbee5b394c20ef6fd4a3b068b9dda59838902
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 845d50d4cd3eb06cf2131f5255567cb4b7861325
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133088"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445809"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-privileged-roles"></a>教程：使用访问评审 API 查看对特权角色的访问权限
 
-Microsoft Graph中的访问评审 API 使组织能够审核和证明标识 (也称为 *主体*) 分配给组织中资源的访问权限。 组织中最敏感的资源之一是特权角色。 使用特权角色，主体可以执行管理操作。 根据特权角色，某些操作可能会对组织的安全状况产生更大的影响。 使用访问评审 API，组织可以根据组织策略定期证明有权访问特权角色的主体。
+Microsoft Graph 中的访问评审 API 使组织能够审核和证明标识 (也称为 *主体*) 分配给组织中资源的访问权限。 组织中最敏感的资源之一是特权角色。 使用特权角色，主体可以执行管理操作。 根据特权角色，某些操作可能会对组织的安全状况产生更大的影响。 使用访问评审 API，组织可以根据组织策略定期证明有权访问特权角色的主体。
 
-Contoso Limited 是一家不断增长的服务提供商，已将各种Azure AD管理员权限委派给组织中的用户、组和服务主体。 公司需要确保只有合适的被分配者才有权访问特权角色。 系统审核员还应审核访问评审历史记录，以报告 Contoso 内部控制措施的有效性。
+Contoso Limited 是一家不断增长的服务提供商，已将各种 Azure AD 管理员权限委派给组织中的用户、组和服务主体。 公司需要确保只有合适的被分配者才有权访问特权角色。 系统审核员还应审核访问评审历史记录，以报告 Contoso 内部控制措施的有效性。
 
 在本教程中，你将使用访问评审 API 定期查看有权访问 Contoso 中特权角色的用户和组。 此访问包括活动角色和符合条件的角色。
 
@@ -23,20 +23,20 @@ Contoso Limited 是一家不断增长的服务提供商，已将各种Azure AD�
 
 若要完成本教程，需要以下资源和权限：
 
-+ 已启用Azure AD Premium P2或 EMS E5 许可证的工作Azure AD租户。
-+ 以特权角色管理员角色的用户身份登录到[Graph资源管理器](https://developer.microsoft.com/graph/graph-explorer)。
-+ 具有特权角色的活动或符合条件分配的主体。 这些分配将是访问评审的范围。 若要分配特权角色，请参阅[教程：使用 Privileged Identity Management (PIM) API 分配Azure AD角色](/graph/tutorial-assign-azureadroles)。
++ 已启用Azure AD Premium P2或 EMS E5 许可证的工作 Azure AD 租户。
++ 以特权角色管理员角色中的用户身份登录到 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer) 。
++ 具有特权角色的活动或符合条件分配的主体。 这些分配将是访问评审的范围。 若要分配特权角色，请参阅[教程：使用 Privileged Identity Management (PIM) API 分配 Azure AD 角色](/graph/tutorial-assign-azureadroles)。
     + 在本教程中，用户管理员角色是正在评审的资源。 已为安全组和单个用户分配该角色。
 + 以下委派权限： `AccessReview.ReadWrite.All`.
 
-若要在Graph资源管理器中同意所需的权限，请执行以下操作：
+若要在 Graph 资源管理器中同意所需权限，请执行以下操作：
 1. 选择用户帐户详细信息右侧的水平省略号图标，然后选择 **“选择权限**”。
 
-      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="选择 Microsoft Graph权限。" border="true":::
+      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="选择 Microsoft Graph 权限。" border="true":::
 
 2. 滚动浏览 **AccessReview (3)** 的权限列表，展开然后选择 `AccessReview.ReadWrite.All`。 选择“**同意**”，然后选择“**接受**”，以接受同意权限。
 
-      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="同意 Microsoft Graph权限。" border="true":::
+      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="同意 Microsoft Graph 权限。" border="true":::
 
 >[!NOTE]
 >本教程中显示的响应对象可能会缩短以实现可读性。
@@ -57,7 +57,7 @@ Contoso Limited 是一家不断增长的服务提供商，已将各种Azure AD�
 
 ### <a name="request"></a>请求
 
-在以下请求中 `f674a1c9-4a40-439c-bfa3-4b61a9f29d85` ，替换为用户 ID 的值。 roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` 是Azure AD中用户管理员角色的全局模板标识符。
+在以下请求中 `f674a1c9-4a40-439c-bfa3-4b61a9f29d85` ，替换为用户 ID 的值。 roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` 是 Azure AD 中用户管理员角色的全局模板标识符。
 
 <!-- {
   "blockType": "request",
@@ -289,7 +289,7 @@ Content-type: application/json
 }
 ```
 
-此访问评审实例的状态为 `InProgress`。 状态 `InProgress` 意味着审阅实例是开放的，审阅者可以提交决策，并且此访问评审实例的期限尚未过期。 你还收到了来自Microsoft Azure的电子邮件通知，请求你执行访问评审。
+此访问评审实例的状态为 `InProgress`。 状态 `InProgress` 意味着审阅实例是开放的，审阅者可以提交决策，并且此访问评审实例的期限尚未过期。 你还收到了来自 Microsoft Azure 的电子邮件通知，请求执行访问评审。
 
 ## <a name="step-3-retrieve-access-review-decisions-before-recording-any-decisions"></a>步骤 3：在记录任何决策之前检索访问评审决策
 
@@ -781,9 +781,9 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 HTTP/1.1 204 No Content
 ```
 
-## <a name="conclusion"></a>总结
+## <a name="conclusion"></a>结论
 
-你已了解如何在Azure AD中查看对特权角色的访问权限。 组织可以使用访问评审 API 来持续管理对其资源的特权访问，包括Azure AD角色和 Azure 资源角色。 除了用户和组，还可以查看应用程序和服务主体对特权角色的访问权限。
+你已了解如何在 Azure AD 中查看对特权角色的访问权限。 组织可以使用访问评审 API 来持续管理对其资源的特权访问，包括 Azure AD 角色和 Azure 资源角色。 除了用户和组，还可以查看应用程序和服务主体对特权角色的访问权限。
 
 ## <a name="see-also"></a>另请参阅
 

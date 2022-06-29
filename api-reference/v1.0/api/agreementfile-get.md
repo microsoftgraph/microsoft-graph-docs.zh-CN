@@ -5,17 +5,17 @@ author: raprakasMSFT
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 19fdd2164b186fa4d35899e5c41b634d28568a1e
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 6ef8a364f0e3e9766928bec0e8d790751a19a2f1
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516099"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437162"
 ---
 # <a name="get-agreementfile"></a>获取 agreementFile
 命名空间：microsoft.graph
 
-检索协议的默认文件的详细信息，包括语言和版本信息。 文件信息通过 [agreementFile 对象](../resources/agreementfile.md) 指定。
+检索协议的默认文件的详细信息，包括语言和版本信息。 文件信息是通过 [agreementFile](../resources/agreementfile.md) 对象指定的。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ GET /agreements/{agreementsId}/file
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [agreementFile](../resources/agreementfile.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [agreementFile](../resources/agreementfile.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/94
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-agreementfile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-agreementfile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

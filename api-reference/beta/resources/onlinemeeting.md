@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 876260fe4e6eb85a212db1a04417faed7c422bc3
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: cfcfdb967348dfa1ebe12f11f97a5287fa5e94aa
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883843"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441698"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -20,15 +20,15 @@ ms.locfileid: "65883843"
 
 包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-此资源支持订阅 [更改通知](/graph/webhooks)。
+此资源支持订阅 [更改通知](/graph/webhooks)。 有关更多详细信息，请参阅 [订阅联机会议](/graph/changenotifications-for-onlinemeeting) 。
 
 ## <a name="methods"></a>方法
 
 | 方法 | 返回类型 |说明 |
 | ------ | ----------- | ---------- |
 | [创建](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | 创建联机会议。 |
-| [获取](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting** 对象的属性和关系。 |
-| [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | 更新 **onlineMeeting** 对象的属性。 |
+| [Get](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting** 对象的属性和关系。 |
+| [更新](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | 更新 **onlineMeeting** 对象的属性。 |
 | [删除](../api/onlinemeeting-delete.md) | 无 | 删除 **onlineMeeting** 对象。 |
 | [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其属性。 |
 
@@ -38,9 +38,9 @@ ms.locfileid: "65883843"
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| 指定谁可以在会议中担任演示者。 |
 | allowAttendeeToEnableCamera | Boolean | 指示与会者是否可以打开相机。 |
-| allowAttendeeToEnableMic | 布尔 | 指示与会者是否可以打开麦克风。 |
+| allowAttendeeToEnableMic | Boolean | 指示与会者是否可以打开麦克风。 |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | 指定会议聊天模式。 |
-| allowTeamworkReactions | 布尔 | 指示是否为会议启用了 Teams 反应。 |
+| allowTeamworkReactions | Boolean | 指示是否为会议启用了 Teams 反应。 |
 | alternativeRecording  | Stream | [Microsoft Teams 实时事件](/microsoftteams/teams-live-events/what-are-teams-live-events)的替代录制的内容流。 只读。 |
 | attendeeReport        | Stream | [Teams 直播活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告的内容流。 只读。   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (电话拨入) 联机会议的信息。 只读。 |
@@ -51,7 +51,7 @@ ms.locfileid: "65883843"
 | externalId            | String | 外部 ID。 自定义 ID。 可选。      |
 | id | String | 与联机会议关联的默认 ID。 只读。    |
 | isBroadcast | Boolean | 指示这是否是 [Teams 直播活动](/microsoftteams/teams-live-events/what-are-teams-live-events)。 |
-| isEntryExitAnnounced  | 布尔 | 指示在呼叫者加入或离开时是要宣布的。 |
+| isEntryExitAnnounced  | Boolean | 指示在呼叫者加入或离开时是要宣布的。 |
 | joinWebUrl | String | 联机会议的联接 URL。 只读。 |
 | joinInformation | [itemBody](itembody.md) | “Accept-Language”请求 HTTP 标头中指定的语言和区域设置变体中的联接信息。 只读。 |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议大厅。 |

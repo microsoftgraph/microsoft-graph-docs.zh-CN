@@ -1,16 +1,16 @@
 ---
 author: daspek
-description: 获取有关此资源下发生视图的 itemAnalytics。
+description: 获取有关此资源下发生的视图的 itemAnalytics。
 title: 获取分析结果
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sharepoint
-ms.openlocfilehash: ad9520c5605467fd515a1abd59402ed693845fef
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4eadf9adacb9798ce445ad3c362432b3b2887748
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393330"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446764"
 ---
 # <a name="get-analytics"></a>获取分析结果
 
@@ -18,11 +18,11 @@ ms.locfileid: "63393330"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取有关此资源下发生视图的 [itemAnalytics][] 。
-**itemAnalytics** 资源是获取 和 的活动统计信息的`allTime`便捷方式`lastSevenDays`。
-对于自定义的时间间隔，请使用 [getActivitiesByInterval][] API。
+获取有关此资源下发生的视图的 [itemAnalytics][] 。
+**itemAnalytics** 资源是获取活动统计信息的`allTime``lastSevenDays`便捷方式。
+对于自定义时间范围或间隔，请使用 [getActivitiesByInterval][] API。
 
->**注意：****itemAnalytics** 资源尚未可用于所有国家 [部署](/graph/deployments)。
+>**注意：****itemAnalytics** 资源在所有 [国家部署](/graph/deployments)中尚不可用。
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
@@ -62,7 +62,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [itemAnalytics][] 对象集合。 
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [itemAnalytics][] 对象的集合。 
 
 ## <a name="example"></a>示例
 
@@ -94,6 +94,10 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-analytics-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-analytics-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e997d6d758d86cdda50a18ff3ef63adcc66d5f2f
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 132ea7e0be28f2394d18d59eaae55281d3e2af7f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092456"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446701"
 ---
 ```go
 
@@ -18,8 +18,8 @@ requestBody.SetSite(site)
 webUrl := "https://m365x809305.sharepoint.com/sites/Retail"
 site.SetWebUrl(&webUrl)
 ediscoveryCaseId := "ediscoveryCase-id"
-ediscoveryCustodianId := "ediscoveryCustodian-id"
-result, err := graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).CustodiansById(&ediscoveryCustodianId).SiteSources().Post(requestBody)
+ediscoveryHoldPolicyId := "ediscoveryHoldPolicy-id"
+result, err := graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).LegalHoldsById(&ediscoveryHoldPolicyId).SiteSources().Post(requestBody)
 
 
 ```

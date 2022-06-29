@@ -1,19 +1,19 @@
 ---
 title: Microsoft Graph 中的设备中继 API（预览版）
-description: '当今，人们每天都会与多个设备进行交互。 用户通常会在一个设备上开始生产任务和娱乐活动，并在另一个设备上继续进行。 为了满足客户的各种需求，你的应用需要能够无缝跨多个设备和平台。 '
+description: 使用 Microsoft Graph 设备中继 API 使用户能够将体验从一台设备传输到另一台设备，或通过一次使用多个设备来增强体验。
 ms.localizationpriority: medium
 author: FaithOmbongi
 ms.prod: cross-device-experiences
-ms.openlocfilehash: 38a90e2cbdb5357190edbf3f8d3ea6f234414902
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 80d7b32d56d5a1a448f1ed16fd282c260ed6c814
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524572"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440913"
 ---
 # <a name="device-relay-api-in-microsoft-graph-preview"></a>Microsoft Graph 中的设备中继 API（预览版）
 
-当今，人们每天都会与多个设备进行交互。 用户通常会在一个设备上开始生产任务和娱乐活动，并在另一个设备上继续进行。 为了满足客户的各种需求，你的应用需要能够无缝跨多个设备和平台。 
+当今，人们每天都会与多个设备进行交互。 用户通常会在一个设备上开始生产任务和娱乐活动，并在另一个设备上继续进行。 为了满足客户的各种需求，你的应用需要能够无缝跨多个设备和平台。
 
 你可以使用设备中继 API 为用户提供无缝体验， 让他们积极地将体验从一个设备转移到另一个设备，或者一次使用多个设备提升体验。 这可以通过应用内操作（应用中的按钮或选择）来完成，通过调用设备中继 API 来发现用户设备，并使其能够在其他设备上启动和向应用发送消息。
 
@@ -23,7 +23,7 @@ ms.locfileid: "61524572"
 
 你可以将设备中继 API 用于配套设备或远程控制应用场景。 使用消息功能在两台设备之间创建应用频道以发送和接收自定义消息。 例如，可以让客户使用自己的手机控制电视的播放。 而且，当用户在 PC 上处理应用的主视图时，通过在手机上显示基于上下文的常用操作，还可以在工作效率场景中提供配套应用。
 
-通过在应用中执行操作，客户还可以主动将体验从一个设备转移到另一个设备。 例如，某位用户在公交车上用手机在观看现场直播，但当她到家后，她可能想要转到客厅中的电脑上播放。 设备中继也支持工作效率应用场景。 
+通过在应用中执行操作，客户还可以主动将体验从一个设备转移到另一个设备。 例如，某位用户在公交车上用手机在观看现场直播，但当她到家后，她可能想要转到客厅中的电脑上播放。 设备中继也支持工作效率应用场景。
 
 ### <a name="extend-the-experience"></a>扩展体验
 
@@ -40,5 +40,5 @@ ms.locfileid: "61524572"
 ## <a name="see-also"></a>另请参阅
 
 - [Microsoft Graph 中的跨设备体验](cross-device-concept-overview.md)
-- [详细了解设备中继 API](/graph/api/resources/project-rome-overview?view=graph-rest-beta)
+- [详细了解设备中继 API](/graph/api/resources/project-rome-overview)
 - [详细了解 Project Rome](/windows/project-rome/)

@@ -1,48 +1,50 @@
 ---
-title: 使用 Microsoft Graph API 指定教育作业通知的默认频道
-description: 使用 Microsoft Graph中的教育 API 指定Microsoft Teams作业通知的默认 **频道。**
+title: 指定教育分配通知的默认通道
+description: 使用 Microsoft Graph 中的教育 API 指定默认的 Microsoft Teams 通道，以便将有关作业的通知发送到。
 ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 927641417a3153eab398a31dee19255071a0937e
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 392cfaeef8f4491204dcd6a1cba992ce7f07a092
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443458"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440906"
 ---
-# <a name="specify-the-default-channel-for-education-assignment-notifications-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 指定教育作业通知的默认频道
+# <a name="specify-the-default-channel-for-education-assignment-notifications-using-the-microsoft-graph-api"></a>使用 Microsoft 图形 API 指定教育分配通知的默认通道
 
-本文介绍如何使用 Microsoft Graph中的教育 API 来指定Microsoft Teams作业通知的默认 **频道。** 指定默认通道涉及到为 [educationAssignment](/graph/api/resources/educationassignment) 生成 **notificationChannelUrl** 字符串属性。 此属性的默认值为 `null`。
+本文介绍如何使用 Microsoft Graph 中的教育 API 来指定默认的 Microsoft Teams 通道，以便将有关 **作业** 的通知发送到。 指定默认通道涉及为 [educationAssignment](/graph/api/resources/educationassignment) 生成 **notificationChannelUrl** 字符串属性。 此属性的默认值为 `null`.
 
 ## <a name="prerequisites"></a>先决条件
 
-生成属性之前，请确定工作分配对应的团队和频道名称。
+在生成属性之前，请为分配确定相应的团队和通道的名称。
 
-若要确定该工作分配的团队，请在Teams左侧菜单中Teams，然后选择相应的团队。
+若要确定分配的团队，请在 Teams 的左侧菜单中单击 **Teams** ，然后选择相应的团队。
 
-![从导航元素中Teams的屏幕截图](./images/notificationchannel-team.png)
+![从 Teams 导航元素中选择的团队的屏幕截图](./images/notificationchannel-team.png)
 
-确定所选团队中相应的频道。
+确定所选团队中的相应通道。
 
 ![在团队中选择的频道的屏幕截图](./images/notificationchannel-channel.png)
 
 ## <a name="build-the-notificationchannelurl-property-value"></a>生成 notificationChannelUrl 属性值
 
-以下步骤介绍如何构建属性值。
+以下步骤介绍如何生成属性值。
 
 ### <a name="step-1---get-the-team-id-based-on-your-team-name"></a>步骤 1 - 根据团队名称获取团队 ID
-若要查找团队 ID，请通过团队名称提出 GET 请求。 如果已有团队 ID，请跳过此步骤。
+若要查找团队 ID，请使用团队名称发出 GET 请求。 如果已有团队 ID，请跳过此步骤。
 
-#### <a name="request-example"></a>请求示例
+#### <a name="request"></a>请求
+
 下面为请求示例。
 
 ```http
 GET https://graph.microsoft.com/v1.0/teams?$filter=displayName eq 'English Fall ''21'
 ```
 
-#### <a name="response-example"></a>响应示例
+#### <a name="response"></a>响应
+
 以下示例显示了相应的响应。
 
 ```http
@@ -76,16 +78,18 @@ Content-type: application/json
 ```
 
 ### <a name="step-2---get-the-channel-id-based-on-channel-name-and-team-id"></a>步骤 2 - 根据频道名称和团队 ID 获取频道 ID
-使用上一步获取的团队 ID 和频道名称提出 GET 请求。 如果你已拥有频道 ID，请跳过此步骤。
+使用上一步获取的团队 ID 和频道名称发出 GET 请求。 如果已有通道 ID，请跳过此步骤。
 
-#### <a name="request-example"></a>请求示例
+#### <a name="request"></a>请求
+
 下面为请求示例。
 
 ```http
 GET https://graph.microsoft.com/v1.0/teams/72a7baec-c3e9-4213-a850-f62de0adad5f/channels?$filter=displayName eq 'General'
 ```
 
-#### <a name="response-example"></a>响应示例
+#### <a name="response"></a>响应
+
 以下示例显示了相应的响应。
 
 ```http
@@ -111,26 +115,26 @@ Content-type: application/json
 ```
 
 ### <a name="step-3---construct-the-value-for-the-notificationchannelurl-property"></a>步骤 3 - 构造 notificationChannelUrl 属性的值
-使用下列格式生成 **notificationChannelUrl** 属性的值： 
+使用以下格式生成 **notificationChannelUrl** 属性的值： 
 
 > `https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}` 
 
-将 和 `{team-id}` `{channel-id}` 占位符替换为下表中描述的值。
+`{team-id}`将占位符和`{channel-id}`占位符替换为下表中所述的值。
 
 | 占位符 | 说明 | 示例 |
 |:--|:--|:--|
-| `{team-id}` | 步骤 1 中响应的团队 ID。 这是当前工作分配所属的团队。 | 72a7baec-c3e9-4213-a850-f62de0adad5f |
-| `{channel-id}` | 步骤 2 中获取的响应正文中的项目 ID。 | 19：jb2-ckDy2jONyW6ElO1phAVD5cTjuswYgoumI0oxrUw1@thread.tacv2 |
+| `{team-id}` | 步骤 1 中响应中的团队 ID。 这是当前分配所属的团队。 | 72a7baec-c3e9-4213-a850-f62de0adad5f |
+| `{channel-id}` | 步骤 2 中获取的响应正文中的项 ID。 | 19：jb2-ckDy2jONyW6ElO1phAVD5cTjuswYgoumI0oxrUw1@thread.tacv2 |
 
-以下示例显示了基于 **此格式的 notificationChannelUrl** 。
+以下示例显示基于此格式 **的 notificationChannelUrl** 。
 
 ```http
 https://graph.microsoft.com/v1.0/teams/72a7baec-c3e9-4213-a850-f62de0adad5f/channels/19:jb2-ckDy2jONyW6ElO1phAVD5cTjuswYgoumI0oxrUw1@thread.tacv2
 ```
 
-### <a name="step-4---assign-the-value-to-the-notificationchannelurl-property-for-the-assignment"></a>步骤 4 - 将值分配给分配的 notificationChannelUrl 属性
+### <a name="step-4---assign-the-value-to-the-notificationchannelurl-property-for-the-assignment"></a>步骤 4 - 为分配的 notificationChannelUrl 属性分配值
 
-现在，你已成功生成 url，是时候将值分配给属性了。 可以通过更新 educationAssignment 或 **educationAssignmentDefaults** 资源来执行此操作。
+现在已成功生成 URL，是时候将值分配给属性了。 可以通过更新 **educationAssignment** 或 **educationAssignmentDefaults** 资源来执行此操作。
 
 #### <a name="example-1-update-an-educationassignment"></a>示例 1：更新 educationAssignment
 
@@ -225,6 +229,7 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>响应
+
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

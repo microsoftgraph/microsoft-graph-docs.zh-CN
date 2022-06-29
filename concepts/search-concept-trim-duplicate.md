@@ -1,22 +1,22 @@
 ---
-title: '使用 Microsoft 搜索 API 剪裁预览 (重复) '
-description: 了解如何使用 Microsoft 搜索 API 剪裁重复的搜索结果。
+title: 使用 Microsoft 搜索 API 剪裁重复的搜索结果
+description: 可以使用 Microsoft Graph 中的 Microsoft 搜索 API trimDuplicates 属性来剪裁重复的搜索结果。 仅在 SharePoint 文件上受支持。
 author: yiwenwang
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: ca561efcb331bcc0c4fcc55456e06b73e53edde6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 8101b6c2a74ec7c30d8b9ca6478bbb13e59d7293
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589510"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438253"
 ---
-# <a name="use-the-microsoft-search-api-to-trim-duplicate-search-results-preview"></a>使用 Microsoft 搜索 API 剪裁预览 (重复) 
+# <a name="use-the-microsoft-search-api-to-trim-duplicate-search-results"></a>使用 Microsoft 搜索 API 剪裁重复的搜索结果
 
-本文将了解如何使用 Microsoft 搜索 API 剪裁重复的搜索结果。 在 [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) 对象中指定 **trimDuplicates** 属性以剪裁掉重复的搜索结果。 **trimDuplicates** 属性仅在托管在 SharePoint。 默认值为 `false`。
+可以使用 Microsoft Graph 中的 Microsoft 搜索 API 来剪裁重复的搜索结果。 指定 [searchRequest](/graph/api/resources/searchrequest) 对象中的 **trimDuplicates** 属性以剪裁重复的搜索结果。 **trimDuplicates** 属性仅在 SharePoint 中托管的文件上受支持。 默认值为 `false`。
 
 ## <a name="example"></a>示例
-以下示例显示一个请求，该请求搜索托管在 SharePoint 并使用 **trimDuplicates** 属性剪裁掉重复的搜索结果。
+以下示例演示一个请求，该请求搜索 SharePoint 中托管的文件，并使用 **trimDuplicates** 属性来剪裁重复的搜索结果。
 
 ### <a name="request"></a>请求
 
@@ -141,8 +141,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-**以下资源不支持 trimDuplicates** 属性：**message**、**event** 和 **externalItem**。
+以下资源不支持 **trimDuplicates** 属性： **消息**、 **事件** 和 **externalItem**。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview)

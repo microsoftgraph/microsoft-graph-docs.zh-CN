@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c90b4fd6f75212ce5f6d0f271cb057f9b9b5ac89
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 44460cfe2e970584fee0c5efb6f30c1c5e836167
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094506"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437741"
 ---
 ```javascript
 
@@ -16,6 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const authenticationMethodConfiguration = {
+   '@odata.type':'#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration',
   isUsableOnce: true
 };
 

@@ -1,22 +1,22 @@
 ---
 title: deviceEnrollmentConfiguration 资源类型
 description: 设备注册配置的基类
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d34bfee039fa8d4a030ee5078d73974b9d05f7b3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 66ae56fd0e4d1812977bafcf87d29dca7c55cece
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039145"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436552"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -37,11 +37,11 @@ ms.locfileid: "59039145"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|帐户的唯一标识符|
-|displayName|String|显示名称注册配置|
-|说明|String|设备注册配置的说明|
-|priority|Int32|如果用户位于分配了注册配置的多个组中，则使用优先级。 用户仅受优先级值最低的配置使用。|
-|createdDateTime|DateTimeOffset|设备注册配置的创建日期时间（UTC）|
-|lastModifiedDateTime|DateTimeOffset|设备注册配置的上次修改日期时间（UTC）|
+|displayName|String|设备注册配置的显示名称|
+|description|String|设备注册配置的说明|
+|priority|Int32|当用户存在于分配了注册配置的多个组中时，将使用优先级。 用户仅受优先级最低的配置的约束。|
+|createdDateTime|DateTimeOffset|在 UTC 中创建设备注册配置的日期时间|
+|lastModifiedDateTime|DateTimeOffset|设备注册配置的 UTC 中上次修改的日期时间|
 |version|Int32|设备注册配置的版本|
 
 ## <a name="relationships"></a>关系

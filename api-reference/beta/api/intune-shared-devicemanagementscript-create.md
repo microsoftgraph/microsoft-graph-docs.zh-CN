@@ -1,22 +1,22 @@
 ---
 title: 创建 deviceManagementScript
 description: 创建新的 deviceManagementScript 对象。
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 922acbdd39dafe63b21c815f38be4ed377817cf0
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 125967a15e23d320c0d93bb368e379e4d8fc265f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367746"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439520"
 ---
 # <a name="create-devicemanagementscript"></a>创建 deviceManagementScript
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,28 +51,28 @@ POST /deviceManagement/deviceManagementScripts
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 deviceManagementScript 对象的 JSON 表示形式。
+在请求正文中，为 deviceManagementScript 对象提供 JSON 表示形式。
 
-下表显示创建 deviceManagementScript 时所需的属性。
+下表显示了创建 deviceManagementScript 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备管理脚本的唯一标识符。|
 |displayName|String|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
+|description|String|设备管理脚本的可选说明。|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记标识列表。|
-|runAs32Bit|Boolean|指示 PowerShell 脚本是否应该作为 32 位运行的值|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 ID 列表。|
+|runAs32Bit|Boolean|一个值，该值指示 PowerShell 脚本是否应以 32 位方式运行|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) 对象。
 
 ## <a name="example"></a>示例
 

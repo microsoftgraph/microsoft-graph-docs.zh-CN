@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b67b53b8218250f37b5f222e7054279c1917a84b
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 70f35b6815f9c1db8cc2afef9b30bcd9163abbe4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60736646"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502325"
 ---
 ```java
 
@@ -77,6 +77,7 @@ timeSlotsList4.add(timeSlots4);
 workingHours4.timeSlots = timeSlotsList4;
 workingHoursList.add(workingHours4);
 bookingStaffMember.workingHours = workingHoursList;
+bookingStaffMember.isEmailNotificationEnabled = false;
 
 graphClient.bookingBusinesses("{id}").staffMembers()
     .buildRequest()

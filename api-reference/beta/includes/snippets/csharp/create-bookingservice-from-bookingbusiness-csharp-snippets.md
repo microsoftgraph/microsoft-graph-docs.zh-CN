@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6ef16a382f37a7b11246c3860851e22130d21916
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 1c7de98064678ecc41f9097ff438d4a79f89b121
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60736661"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502679"
 ---
 ```csharp
 
@@ -62,6 +62,7 @@ var bookingService = new BookingService
     DisplayName = "Bento",
     IsLocationOnline = true,
     SmsNotificationsEnabled = true,
+    LanguageTag = "en-US",
     IsHiddenFromCustomers = false,
     Notes = "Home-cooked special",
     PostBuffer = new Duration("PT10M"),
@@ -79,6 +80,7 @@ var bookingService = new BookingService
         "d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
         "2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
     },
+    IsAnonymousJoinEnabled = false,
     AdditionalData = new Dictionary<string, object>()
     {
         {"defaultPriceType@odata.type", "#microsoft.graph.bookingPriceType"},

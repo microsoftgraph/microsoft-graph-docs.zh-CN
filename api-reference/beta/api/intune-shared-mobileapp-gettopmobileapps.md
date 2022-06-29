@@ -1,22 +1,22 @@
 ---
 title: getTopMobileApps 函数
 description: 尚未记录
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46136c68ed22c5754ce77e6bcddea0d7ad3a4347
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2058dbbe7d81712c1832f3c47f70542b528a67e8
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017722"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445228"
 ---
 # <a name="gettopmobileapps-function"></a>getTopMobileApps 函数
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,10 +28,10 @@ ms.locfileid: "59017722"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,13 +54,13 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 
 |属性|类型|说明|
 |:---|:---|:---|
-|status|String|尚未记录|
+|状态|String|尚未记录|
 |count|Int64|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [mobileApp](../resources/intune-shared-mobileapp.md) 集合。
+如果成功，此函数在响应正文中返回 `200 OK` 响应代码和 [mobileApp](../resources/intune-shared-mobileapp.md) 集合。
 
 ## <a name="example"></a>示例
 

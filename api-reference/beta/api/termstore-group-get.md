@@ -1,23 +1,23 @@
 ---
 title: 获取 termStore 组
-description: 读取 group 对象的属性和关系。
+description: 读取组对象的属性和关系。
 author: mohitpcad
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 913e6b38e3890bb0f6bbd9980daff8b312ab030e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5c1a55e07363234eb3da0e607981379b0fc2f724
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395991"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440117"
 ---
 # <a name="get-termstore-group"></a>获取 termStore 组
 命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取术语库组对象的属性 [和](../resources/termstore-group.md) 关系。
+读取术语存储 [组](../resources/termstore-group.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "63395991"
 |:---|:---|
 |委派（工作或学校帐户） | TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -51,7 +51,7 @@ GET /sites/{site-id}/termStore/groups/{group-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [microsoft.graph.termStore.group](../resources/termstore-group.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoft.graph.termStore.group](../resources/termstore-group.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -113,7 +113,7 @@ Content-Type: application/json
   "displayName": "myGroup"  
 }
 ```
-### <a name="example-2-get-a-termstore-group-and-its-parent-site-id"></a>示例 2：获取 termStore 组及其父网站 ID
+### <a name="example-2-get-a-termstore-group-and-its-parent-site-id"></a>示例 2：获取 termStore 组及其父站点 ID
 
 #### <a name="request"></a>请求
 
@@ -146,6 +146,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-termstore-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-termstore-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -208,6 +212,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-termstore-sites-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-termstore-sites-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

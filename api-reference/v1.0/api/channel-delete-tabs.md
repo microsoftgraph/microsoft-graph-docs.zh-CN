@@ -1,24 +1,24 @@
 ---
-title: 从频道中删除选项卡
-description: '从 (频道) 取消固定选项卡。 '
+title: 从通道中删除选项卡
+description: '从团队中的指定通道中删除 (取消固定) 选项卡。 '
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 212db13be854808cf9a91eda5992ccb1b9ad406e
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: b6312a1d017c29beb9ea25f759a7321f7224e1b4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804673"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442426"
 ---
-# <a name="delete-tab-from-channel"></a>从频道中删除选项卡
+# <a name="delete-tab-from-channel"></a>从通道中删除选项卡
 
 命名空间：microsoft.graph
 
 
 
-从 (频道) 取消固定[选项卡。](../resources/team.md)[](../resources/channel.md) 
+从[团队](../resources/team.md)中的指定[通道](../resources/channel.md)中删除 (取消固定) 选项卡。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "62804673"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab.Delete.Group *、TeamsTab.ReadWrite.Group*、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.ReadWrite.All、**Directory.ReadWrite.All** |
+|应用程序 | TeamsTab.Delete.Group *、TeamsTab.ReadWrite.Group*、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 
 [!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
@@ -52,8 +52,8 @@ DELETE /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
-下面展示了示例请求。
+### <a name="request"></a>请求
+请求示例如下所示。
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -61,8 +61,9 @@ DELETE /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ```
-#### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+
+### <a name="response"></a>响应
+下面展示了示例响应。
 ```http
 HTTP/1.1 204 No Content
 ```

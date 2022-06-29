@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 406aa0a7ca81528333cdd6a91bef4fd9f5881095
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 46dd71438b2b3a748e29f67589fde2ce4610ca94
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113998"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502915"
 ---
 ```powershell
 
@@ -54,6 +54,7 @@ $params = @{
     DisplayName = "Bento"
     IsLocationOnline = $true
     SmsNotificationsEnabled = $true
+    LanguageTag = "en-US"
     IsHiddenFromCustomers = $false
     Notes = "Home-cooked special"
     PostBuffer = "PT10M"
@@ -71,6 +72,7 @@ $params = @{
         "d90d1e8c-5cfe-48cf-a2d5-966267375b6a"
         "2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
     )
+    IsAnonymousJoinEnabled = $false
 }
 
 New-MgBookingBusinessService -BookingBusinessId $bookingBusinessId -BodyParameter $params

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ec9d6251d979579665ff9e6a8c81a897c5f8a404
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5b8e65bdf945dc136a7b87a4917e4254d14f3d53
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342193"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502340"
 ---
 ```powershell
 
@@ -18,6 +18,6 @@ $params = @{
     TenantId = "2a690434-97d9-4eed-83a6-f5f13600199a"
 }
 
-Invoke-MgUnhideChat -ChatId $chatId -BodyParameter $params
+Invoke-MgGraphChat -ChatId $chatId -BodyParameter $params
 
 ```

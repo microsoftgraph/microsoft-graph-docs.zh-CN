@@ -5,12 +5,12 @@ author: xhan2077
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 879f6f6bfd382173958eca84a556571e58ae5f0b
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: e2ebc4209c4bbc665488ccaf4f487740ddc51e0b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629268"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447071"
 ---
 # <a name="get-cloudpcsubscription"></a>获取 cloudPcSubscription
 命名空间：microsoft.graph
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcsubscription-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcsubscription-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
