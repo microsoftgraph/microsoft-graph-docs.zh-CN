@@ -1,16 +1,16 @@
 ---
 title: Outlook 个人联系人 API 概述
-description: Outlook 联系人可让你存储个人联系人的数据，并且属于Microsoft 365 中 Outlook 邮件中心的一部分。 通过 Outlook，可以管理电子邮件、安排会议、在组织中查找有关用户的信息、启动在线对话、共享文件，以及实现小组协作。
+description: 使用 Microsoft Graph 中的 Outlook 个人联系人 API 管理电子邮件、安排会议、查找用户信息、共享文件和组协作。
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 909c79069912375cb4397812350b8c6448d640b4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 95a66efaab47cdc178b81a5e5d4167d708e51d31
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066855"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447098"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Outlook 个人联系人 API 概述
 
@@ -26,9 +26,9 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于Microsoft
 
 通过联系人 API，可以保持客户的组织性，与客户通过 Outlook 自己执行此操作等效：
 
-- 与客户体验类似，可以创建 [contact](/graph/api/resources/contact?view=graph-rest-1.0) 实例并将其分配给 [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) 对象。
-- 通过联系人 API，可以采用一致的方式分配类别联系人及事件、消息、任务和组帖子，从而增强组织和发现。 此外，可以[定义用户的主类别列表](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0)，从而开发其他创造性方案。
-- 你可以对[联系人](/graph/api/resources/contact?view=graph-rest-1.0)设置一个标志以进行跟进。 （Microsoft Graph 中的标记目前为[预览状态](versioning-and-support.md#beta-version)。）
+- 与客户体验类似，可以创建 [contact](/graph/api/resources/contact) 实例并将其分配给 [contactFolder](/graph/api/resources/contactfolder) 对象。
+- 通过联系人 API，可以采用一致的方式分配类别联系人及事件、消息、任务和组帖子，从而增强组织和发现。 此外，可以[定义用户的主类别列表](/graph/api/outlookuser-post-mastercategories)，从而开发其他创造性方案。
+- 你可以对[联系人](/graph/api/resources/contact)设置一个标志以进行跟进。 （Microsoft Graph 中的标记目前为[预览状态](versioning-and-support.md#beta-version)。）
 
 ### <a name="share-contact-information"></a>共享联系人信息
 
@@ -36,12 +36,12 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于Microsoft
 
 ### <a name="leverage-people-api-in-microsoft-graph-to-make-better-use-of-all-people-data"></a>利用 Microsoft Graph 中的人员 API 更好地利用所有人员数据
 
-你可以对 Outlook [联系人](/graph/api/resources/contact?view=graph-rest-1.0)使用典型 CRUD 操作来创建和管理联系人。 作为 Microsoft Graph 的一部分，还可以使用[人员 API](people-example.md)，查看用户的 Outlook 联系人，以及社交网络、组织目录和最近通信中的人员，并返回有关所有这些来源中人员的与用户相关度最大的信息。 在人员选取器应用场景中利用这一额外智能。
+你可以对 Outlook [联系人](/graph/api/resources/contact)使用典型 CRUD 操作来创建和管理联系人。 作为 Microsoft Graph 的一部分，还可以使用[人员 API](people-example.md)，查看用户的 Outlook 联系人，以及社交网络、组织目录和最近通信中的人员，并返回有关所有这些来源中人员的与用户相关度最大的信息。 在人员选取器应用场景中利用这一额外智能。
 
 ### <a name="take-advantage-of-other-shared-features-and-conveniences-in-microsoft-graph"></a>利用 Microsoft Graph 中的其他共享功能和便利
 
-- **contact** 实体支持与存储在 Exchange Online 或 Azure Active Directory 中的用户照片相同的 [profilePhoto](/graph/api/resources/profilephoto?view=graph-rest-1.0) 实体实现的联系人照片。 这消除了在联系人与用户个人资料照片之间进行转换的开销。
-- 你可以通过订阅[更改通知](/graph/api/resources/webhooks?view=graph-rest-1.0)和[跟踪对联系人和联系人文件夹所做的更改](delta-query-overview.md)，使应用本地存储保持同步。
+- **contact** 实体支持与存储在 Exchange Online 或 Azure Active Directory 中的用户照片相同的 [profilePhoto](/graph/api/resources/profilephoto) 实体实现的联系人照片。 这消除了在联系人与用户个人资料照片之间进行转换的开销。
+- 你可以通过订阅[更改通知](/graph/api/resources/webhooks)和[跟踪对联系人和联系人文件夹所做的更改](delta-query-overview.md)，使应用本地存储保持同步。
 - 可以将联系人实例中的应用存储扩展为[开放扩展](extensibility-overview.md#open-extensions)，或者将强类型化的自定义数据添加到联系人架构中作为[架构扩展](extensibility-overview.md#schema-extensions)。
 
 ## <a name="where-is-the-data"></a>数据在什么位置？
@@ -52,8 +52,8 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于Microsoft
 
 在查找此服务的 API 参考？
 
-- [Microsoft Graph v1.0 中的 Outlook 联系人 API](/graph/api/resources/contact?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的 Outlook 联系人 API](/graph/api/resources/contact?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的 Outlook 联系人 API](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)
+- [Microsoft Graph beta 中的 Outlook 联系人 API](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -61,4 +61,3 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于Microsoft
 - 了解如何：
   - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
   - [获取共享联系人](outlook-get-shared-contacts-folders.md)
-- 查看 Outlook [联系人 API](/graph/api/resources/contact?view=graph-rest-1.0) 参考。

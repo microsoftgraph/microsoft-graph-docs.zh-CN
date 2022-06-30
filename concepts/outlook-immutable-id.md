@@ -1,19 +1,19 @@
 ---
 title: 获取 Outlook 资源的不可变标识符
-description: 借助不可变标识符，应用程序可为 Outlook 项获取在项生存期内保持不变的 ID。
+description: 使用不可变标识符 (ID) 使 Outlook 应用程序能够获取在项目生存期内不会更改的 ID。
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 51090217a7f92f4bf4803ad97770e4e6e3acbbef
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 352dfd7fe55b5d98fcf1477a4049965100572c46
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246907"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444738"
 ---
-# <a name="get-immutable-identifiers-for-outlook-resources"></a>获取 Outlook 资源的不可变标识符
+# <a name="obtain-immutable-identifiers-for-outlook-resources"></a>获取 Outlook 资源的不可变标识符
 
-Outlook 项（邮件、事件、联系人、任务）有一个有趣行为，你可能从未注意到或已给你带来了极大挫败感，即它们的 ID 会变。 虽然这一行为不是经常发生（只在项移动时才会发生），但对于脱机存储 ID 以供日后使用的应用来说，这可能会导致真正的问题出现。 借助不可变标识符，应用可以获取在项生存期内不变的 ID。
+Outlook 项（邮件、事件、联系人、任务）有一个有趣行为，你可能从未注意到或已给你带来了极大挫败感，即它们的 ID 会变。 虽然这一行为不是经常发生（只在项移动时才会发生），但对于脱机存储 ID 以供日后使用的应用来说，这可能会导致真正的问题出现。 不可变的标识符 (ID) 使应用程序能够获得在项目生命周期内不会更改的 ID。
 
 > [!NOTE]
 > 不可变标识符（如 Microsoft Graph 中的所有标识符）区分大小写。 如果要比较 ID，请记住这一点。
@@ -28,14 +28,14 @@ Prefer: IdType="ImmutableId"
 
 此头仅适用于随附它的请求。 必须在每个 API 请求中随附此头，才能始终使用不可变 ID。
 
-## <a name="lifetime-of-immutable-ids"></a>不可变 ID 生存期
+## <a name="lifetime-of-immutable-ids"></a>不可更改的 ID 生存期
 
 只要项一直在同一邮箱中，它的不可变 ID 就不变。 也就是说，即使项移到邮箱中的其他文件夹中，不可变 ID 也不变。 不过，不可变 ID 在以下情况下会变：
 
 - 用户将该项移到存档邮箱中。
 - 用户先将该项导出（到 PST 等，作为 MSG 文件），再将它重新导入邮箱。
 
-## <a name="items-that-support-immutable-id"></a>支持不可变 ID 的项
+## <a name="items-that-support-immutable-ids"></a>支持不可更改 ID 的项
 
 以下项支持不可变 ID：
 
@@ -76,7 +76,7 @@ Prefer: IdType="ImmutableId"
 
 ### <a name="example"></a>示例
 
-下面的示例将普通 Graph ID 转换为不可变 Graph ID。
+下面的示例将普通 Microsoft Graph ID 转换为不可更改的 Microsoft Graph ID。
 
 #### <a name="request"></a>请求
 
