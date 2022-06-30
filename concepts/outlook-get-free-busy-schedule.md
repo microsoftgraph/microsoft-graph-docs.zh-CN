@@ -1,21 +1,21 @@
 ---
-title: 获取用户和资源的忙/闲日程安排
-description: 在工作或学校设置中，一种常见方案是查看用户何时有空参加会议，或浏览团队、会议室或设备在一段时间内的状态。
+title: 获取 Outlook 日历用户和资源的忙/闲计划
+description: 使用 getSchedule 操作获取一个或多个用户、通讯组列表或资源在特定时间段内的状态信息。
 author: tariq-sharif
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 2a7a4fdfb61e5a769836bf8e85b06d1baabe0c63
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 263e3b5462b688f0dff98714bd646a247dde9765
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139056"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439030"
 ---
-# <a name="get-freebusy-schedule-of-users-and-resources"></a>获取用户和资源的忙/闲日程安排
+# <a name="get-freebusy-schedule-of-outlook-calendar-users-and-resources"></a>获取 Outlook 日历用户和资源的忙/闲计划
 
 在工作或学校设置中，一种常见方案是查看用户何时有空参加会议，或浏览团队、会议室或设备在一段时间内的状态。
 
-使用 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) 操作，可以获取一个或多个实体（用户、通讯组列表或资源）在特定时间段内的状态信息。 
+使用 [getSchedule](/graph/api/calendar-getschedule) 操作，可以获取一个或多个实体&mdash;用户、通讯组列表或资源&mdash;在特定时间段内的状态信息。
 
 ## <a name="example"></a>示例
 
@@ -135,7 +135,7 @@ Content-type: application/json
 
 ## <a name="how-does-getschedule-compare-with-findmeetingtimes"></a>getSchedule 如何与 findMeetingTimes 进行比较
 
-[findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 操作与 **getSchedule** 类似，两者都读取指定用户和资源的忙/闲状态和工作时间。 这两项操作的区别主要在以下几方面。
+[findMeetingTimes](/graph/api/user-findmeetingtimes) 操作与 **getSchedule** 类似，两者都读取指定用户和资源的忙/闲状态和工作时间。 这两项操作的区别主要在以下几方面。
 
 ### <a name="application"></a>用途
 

@@ -1,16 +1,19 @@
 ---
-title: 将 iOS 应用与用户通知客户端 SDK 相集成
-description: 将 iOS 应用与用户通知客户端 SDK 相集成。
+title: 将 iOS 应用与客户端 SDK 集成（已弃用）
+description: 注册应用并载入跨设备体验后，将客户端应用与适用于 iOS 应用的客户端 SDK 集成（已弃用）。
 ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: 0a73626317195320a274430f32607f13b9920505
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 97ce34d160f7f86d5f4fc206a3de9fa00612d412
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066931"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438281"
 ---
-# <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>将 iOS 应用与用户通知客户端 SDK 相集成
+# <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications-deprecated"></a>将 iOS 应用与用户通知客户端 SDK 相集成（已弃用）
+
+> [!IMPORTANT]
+> Microsoft Graph 通知 API 已弃用，并且已于 2022 年 1 月停止返回数据。 有关其他通知体验，请参阅 [Microsoft Azure 通知中心](/azure/notification-hubs)。 更多相关信息，请参阅博客文章 [停用 Microsoft Graph 通知 API (beta 版本)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)。
 
 在 Azure 门户[注册你的应用](notifications-integration-app-registration.md)并在合作伙伴开发人员中心载入你的[跨设备体验](notifications-integration-cross-device-experiences-onboarding.md)之后，下一步是将客户端应用与适用于 iOS 应用的客户端 SDK 相集成。  
 

@@ -1,20 +1,22 @@
 ---
 title: Microsoft Graph 安全性 API 概述
-description: Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和合作伙伴，以简化安全操作并改进威胁防护、检测和响应功能。 作为中介服务（或代理），Microsoft Graph 安全性 API 提供了一个编程接口，用于连接多个 Microsoft Graph 安全提供程序（亦称为“安全提供程序”或“提供程序”）。 向 Microsoft Graph 安全性 API 发出的请求被联合到所有适用的安全提供程序。 结果以通用架构的形式聚合并返回到发出请求的应用，如下图所示。 有关详细信息，请参阅“Microsoft Graph 安全性 API 数据流”。
+description: 使用 Microsoft Graph 安全性 API 连接 Microsoft 安全产品、服务和合作伙伴，以简化安全操作并改进响应功能。
 author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7a8f45505439446e9d42881dddf32b2f08cdb8e0
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 2226f5a75db859f7cbc20db1d1a9a53b1caae2d3
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945002"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437574"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
-Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和合作伙伴，以简化安全操作并改进威胁防护、检测和响应功能。 作为中介服务（或代理），Microsoft Graph 安全性 API 提供了一个编程接口，用于连接多个 [Microsoft Graph 安全提供程序](/graph/api/resources/securityvendorinformation)（亦称为“安全提供程序”或“提供程序”）。 向 Microsoft Graph 安全性 API 发出的请求被联合到所有适用的安全提供程序。 结果以通用架构的形式聚合并返回到发出请求的应用，如下图所示。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 数据流](security-dataflow.md)。
+Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和合作伙伴，以简化安全操作并改进威胁防护、检测和响应功能。
+
+作为中介服务（或代理），Microsoft Graph 安全性 API 提供了一个编程接口，用于连接多个 [Microsoft Graph 安全提供程序](/graph/api/resources/securityvendorinformation)（亦称为“安全提供程序”或“提供程序”）。 向 Microsoft Graph 安全性 API 发出的请求被联合到所有适用的安全提供程序。 结果以通用架构的形式聚合并返回到发出请求的应用，如下图所示。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 数据流](security-dataflow.md)。
 
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
@@ -71,8 +73,9 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 ### <a name="manage-your-ediscovery-workflows-preview"></a>管理电子数据展示工作流（预览版）
 
 组织依靠 [Microsoft Purview 电子数据展示](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) 功能来满足要求，根据内部或外部要求（如诉讼、调查或法规合规性）查找组织中所发生情况的真实信息。
-在许多组织中，电子数据展示工作流频繁、关键且数量大。 在存在常见重复任务或大量活动的情况下，API 将帮助提供一种可缩放的方式来一致且有效地重复进程。
-许多组织处理大量案例和电子数据展示请求，并且希望自动执行某些任务。 高级电子数据展示的 Microsoft Graph API 提供对 Microsoft Purview 电子数据展示（高级）解决方案中可用的大多数功能的 API 访问权限。
+
+在许多组织中，电子数据展示工作流频繁、关键且数量大。 在存在常见重复任务或大量活动的情况下，API 将帮助提供一种可缩放的方式来一致且有效地重复进程。 许多组织处理大量案例和电子数据展示请求，并且希望自动执行某些任务。 高级电子数据展示的 Microsoft Graph API 提供对 Microsoft Purview 电子数据展示（高级）解决方案中可用的大多数功能的 API 访问权限。
+
 根据当前的系统和流程，组织可能具有自动化和集成的各种优先级，从上游流程（如案例创建）到下游流程（如收集、审阅集查询或导出）。 在整个高级电子数据展示工作流中通过 API 支持工作流提供了灵活性和选项。
 
 #### <a name="build-custom-ediscovery-workflows-with-microsoft-graph"></a>使用 Microsoft Graph 构建自定义电子数据展示工作流
@@ -89,13 +92,14 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 下表列出了各种安全解决方案与 Microsoft Graph 安全性 API 集成后获得的优势。  
 
-|**区域**     | **优势**|
-|:---------------|:---------|
+|**区域**        | **优势**|
+|:---------------|:------------|
 |**托管安全服务提供程序 (MSSP)**|<ul><li>简化了与安全操作工具、工作流和报告功能集成的过程。</li> <li>缩减了部署和维护时间及工作量。</li> <li>通过对威胁采取措施来自动响应警报。</li> <li>能够为 MSSP 客户增值。</li></ul>|
 |**SIEM 和 IT 风险管理解决方案**|<ul><li>与 Microsoft 安全解决方案和生态系统合作伙伴顺畅集成。</li> <li>丰富的警报元数据。</li> <li>提升了警报关联性。</li></ul>|
 |**应用** <br>（威胁智能、移动、云、IOT、欺诈检测、标识和访问、风险和合规性、防火墙等）|<ul><li>跨各种安全解决方案统一了威胁管理、防护和风险管理。</li> <li>Microsoft Graph 中提供了警报、操作和客户威胁智能。</li> <li>与已启用 Microsoft Graph 的解决方案即时集成。</li> <li>获得深入的安全见解，以针对其他安全解决方案进行培训。</li> </ul>|
 
 ## <a name="api-reference"></a>API 参考
+
 在查找此服务的 API 参考？
 
 - [Microsoft Graph v1.0 中的安全性 API](/graph/api/resources/security-api-overview)
@@ -103,6 +107,5 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft Graph 安全性 API](/graph/api/resources/security-api-overview?)
 - 浏览 [Microsoft Graph 安全 API 示例](https://aka.ms/graphsecurityapicode)
 - 想要成为安全提供程序？ 请联系 [graphsecfeedback](mailto:graphsecfeedback@microsoft.com)。

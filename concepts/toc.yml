@@ -134,7 +134,7 @@ items:
             href: outlook-create-event-in-shared-delegated-calendar.md
           - name: 附加大型文件
             href: outlook-large-attachments.md
-          - name: 不可变 ID
+          - name: 获取不可变 ID
             href: outlook-immutable-id.md
           - name: 订阅变更通知
             href: outlook-change-notifications-overview.md
@@ -145,24 +145,26 @@ items:
             displayName: cloud communications
           - name: 入门
             href: cloud-communications-get-started.md
-          - name: 呼叫
+          - name: 支持的呼叫类型
             href: cloud-communications-calls.md
-          - name: 媒体
+          - name: 通话记录
+            href: cloud-communications-callrecords.md
+          - name: 联机会议项目和权限
+            href: cloud-communications-online-meeting-artifacts.md
+          - name: 选择媒体托管选项
             href: cloud-communications-media.md
-          - name: 联机会议
+          - name: 创建或加入联机会议
             href: cloud-communications-online-meetings.md
           - name: 选择联机会议 API
             href: choose-online-meeting-api.md
           - name: 配置应用程序访问权限
             href: cloud-communication-online-meeting-application-access-policy.md
-          - name: 通话记录
-            href: cloud-communications-callrecords.md
-          - name: 管理机器人的电话号码
+          - name: 管理机器人电话号码
             href: cloud-communications-phone-number.md
-          - name: 联机会议项目和权限
-            href: cloud-communications-online-meeting-artifacts.md
           - name: 识别大型库视图参与者
             href: cloud-communications-identifylargegalleryview.md
+          - name: 订阅线上会议的更改通知
+            href: changenotifications-for-onlinemeeting.md
       - name: 合规性
         href: compliance-concept-overview.md
       - name: 连接外部内容
@@ -185,7 +187,7 @@ items:
             href: connecting-external-content-manage-schema.md
           - name: 管理项目
             href: connecting-external-content-manage-items.md
-          - name: 外部组
+          - name: 使用外部组
             href: connecting-external-content-external-groups.md
           - name: API 限制
             href: connecting-external-content-api-limits.md
@@ -194,15 +196,15 @@ items:
           - name: 概述
             href: cross-device-concept-overview.md
             displayName: 'Project Rome, cross-device, cross device, cross-device experience'
-          - name: 活动源
+          - name: 使用活动源 API
             href: activity-feed-concept-overview.md
             displayName: 'cross-device, cross device'
-          - name: 设备中继（预览）
+          - name: 使用设备中继 API（预览版）
             href: device-relay-concept-overview.md
             displayName: 'cross-device, cross device'
           - name: 构建跨设备的应用
             href: cross-device-app-configuration.md
-            displayName: cross device
+            displayName: 'cross device, Project Rome'
       - name: 客户预订（预览版）
         items:
           - name: 概述
@@ -340,7 +342,7 @@ items:
             href: outlook-share-messages-folders.md
           - name: 从其他用户身份发送邮件
             href: outlook-send-mail-from-other-user.md
-          - name: 不可变 ID
+          - name: 获取不可变 ID
             href: outlook-immutable-id.md
           - name: 订阅变更通知
             href: outlook-change-notifications-overview.md
@@ -419,7 +421,7 @@ items:
             displayName: 'Outlook, Outlook contacts, Outlook contact, People, personal contacts'
           - name: 获取共享联系人
             href: outlook-get-shared-contacts-folders.md
-          - name: 不可变 ID
+          - name: 获取不可变 ID
             href: outlook-immutable-id.md
           - name: 订阅变更通知
             href: outlook-change-notifications-overview.md
@@ -443,19 +445,19 @@ items:
             href: search-concept-files.md
           - name: 搜索连接器
             href: search-concept-custom-types.md
-          - name: 搜索人员（预览版）
+          - name: 搜索人员
             href: search-concept-person.md
           - name: 管理管理员搜索答案（预览版）
             href: search-concept-answers.md
-          - name: 管理搜索结果布局（预览版）
+          - name: 管理搜索结果布局
             href: search-concept-display-layout.md
           - name: 改进搜索结果
             href: search-concept-aggregation.md
-          - name: 请求拼写更正（预览）
+          - name: 请求拼写更正
             href: search-concept-speller.md
-          - name: 剪裁重复搜索结果（预览）
+          - name: 剪裁重复搜索结果
             href: search-concept-trim-duplicate.md
-          - name: 使用查询模板（预览）
+          - name: 使用查询模板
             href: search-concept-query-template.md
           - name: 排序搜索结果
             href: search-concept-sort.md
@@ -507,8 +509,6 @@ items:
                 href: teams-activity-feed-notifications-best-practices.md
           - name: 订阅变更通知
             href: teams-change-notification-in-microsoft-teams-overview.md
-          - name: 获取联机会议的更改通知
-            href: changenotifications-for-onlinemeeting.md
           - name: 系统邮件
             href: system-messages.md
       - name: 待办任务

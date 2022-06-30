@@ -1,20 +1,22 @@
 ---
 title: Microsoft Graph 中 Outlook 资源的更改通知
-description: 了解如何使用 Microsoft Graph API 获取 Outlook 中资源的更改（创建、更新和删除）通知
+description: 订阅对 Outlook 资源的更改（创建、更新和删除），以及 Microsoft Graph API 中更改的资源数据，并通过 Webhook 接收通知。
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e43b300119e8a3efb1b8deca5d82b36a26c339e3
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: d330636c4fe5984d6c92bdbcb26cccd58c071c82
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093065"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442082"
 ---
 # <a name="change-notifications-for-outlook-resources-in-microsoft-graph"></a>Microsoft Graph 中 Outlook 资源的更改通知
 
-Microsoft Graph API 允许你订阅对资源的更改（包括资源的创建、更新或删除）以及通过 Webhook 接收通知。 [订阅](/graph/api/resources/webhooks)指定要监视的特定资源的所需更改类型，以及终结点接收这些更改通知的 URL。 设置订阅可减少开销，否则需要查询和比较资源来推断任何更改。 可以选择在订阅请求中指定要加密的资源数据，并在通知中包含已更改的资源数据，从而保存单独的后续 API 调用以获取资源有效负载。
+Microsoft Graph API 允许订阅对资源的更改，&mdash;包括资源的创建、更新或删除&mdash;并通过 Webhook 接收通知。 [订阅](/graph/api/resources/webhooks) 指定要监视特定资源的所需更改类型，并包含终结点用于接收这些更改通知的 URL。
+
+设置订阅可减少开销，否则需要查询和比较资源来推断任何更改。 可以选择在订阅请求中指定要加密的资源数据，并在通知中包含已更改的资源数据，从而保存单独的后续 API 调用以获取资源有效负载。
 
 对于所有应用程序，每个邮箱的 Outlook 资源活动订阅数上限为 1000 个。 你可以订阅邮箱中的联系人、事件或邮件中的更改。
 
@@ -53,7 +55,10 @@ Microsoft Graph API 允许你订阅对资源的更改（包括资源的创建、
 
 - **includeResourceData**：将此属性设置为 `true` 以显式请求资源数据。
 - **resource**：此属性指定资源 URL。 请确保使用 `$select` 查询参数显式指定要包含在通知有效负载中的 Outlook 资源属性。
-  > **注意：** 请勿在 URL 中包含除 **singleValueExtendedProperties** 或 **multiValueExtendedProperties** 之外的`$top`、`$skip`、`$orderby`、`$select=Body,UniqueBody`、`$expand`。
+
+  > [!NOTE]
+  > 除了 **singleValueExtendedProperties** 或 **multiValueExtendedProperties** 之外，请勿在 URL 中包含 `$top`、`$skip`、`$orderby`、`$select=Body,UniqueBody` 和 `$expand`。
+
 - **encryptionCertificate**： 此属性仅包含 Microsoft Graph 用于加密资源数据的公钥。 保留相应的私钥，以[解密内容](webhooks-with-resource-data.md#decrypting-resource-data-from-change-notifications)。
 - **encryptionCertificateId**： 此属性是你自己的证书标识符。 使用此 ID 在每个更改通知中匹配用于解密的证书。
 
@@ -120,7 +125,7 @@ Outlook **联系人**、**事件** 和 **邮件** 资源也支持订阅生命周
 
 有关如何验证令牌和解密负载的详细信息，请参阅[设置包含资源数据的更改通知](webhooks-with-resource-data.md)。
 
-下面是解密的通知有效负载的示例。 解密的有效负载符合 Outlook [邮件](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true)架构。 该有效负载类似于[GET 邮件](/graph/api/message-get?view=graph-rest-beta&preserve-view=true)操作返回的负载。 但是，通知有效负载仅包含在订阅的 **资源** 属性中使用 `$select` 参数指定的属性。 其他 Outlook 资源（如[联系人](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true)和[事件](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true)）的通知有效负载遵循其各自的架构。 
+下面是解密的通知有效负载的示例。 解密的有效负载符合 Outlook [邮件](/graph/api/resources/message)架构。 该有效负载类似于[GET 邮件](/graph/api/message-get)操作返回的负载。 但是，通知有效负载仅包含在订阅的 **资源** 属性中使用 `$select` 参数指定的属性。 其他 Outlook 资源（如[联系人](/graph/api/resources/contact)和[事件](/graph/api/resources/event)）的通知有效负载遵循其各自的架构。 
 
 ```json
 {
@@ -147,7 +152,8 @@ Outlook **联系人**、**事件** 和 **邮件** 资源也支持订阅生命周
 
 下一个示例显示与 Outlook **邮件** 资源对应的通知有效负载。 它包括 **resource** 和 **resourceData** 属性，这些属性表示触发通知的资源。 使用 **resource** 和 **@odata.id** 属性对 Microsoft Graph 进行调用以获取资源的有效负载。
 
-> **注意** GET 调用始终返回资源的当前状态。 如果在发送通知和检索资源之间更改了资源，则操作会在检索时返回资源的状态。
+> [!NOTE]
+> GET 调用始终返回资源的当前状态。 如果在发送通知和检索资源之间更改了资源，则操作会在检索时返回资源的状态。
 
 
 ```json
@@ -195,8 +201,11 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -254,8 +263,11 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -313,8 +325,11 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

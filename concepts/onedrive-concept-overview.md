@@ -1,25 +1,21 @@
 ---
 title: OneDrive 文件存储 API 概述
-description: OneDrive 是 Microsoft 365 的文件中心。
+description: '使用 Microsoft 365 中的文件中心 OneDrive 访问文件，无论文件存储在何处。 使用 Microsoft Graph 以使用单个 API 来处理这些文件。 '
 ms.localizationpriority: high
 ms.prod: onedrive
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 080d05a3fbba08108b14048968dee47fa1cd2dbc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d16d1b686b3d9265787246be2c333f6b6d495dd7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019081"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442118"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>OneDrive 文件存储 API 概述
 
-OneDrive 是 Microsoft 365 的文件中心。
-人们会在各种各样的环境中使用文件，如 Microsoft Teams、组、SharePoint 等。
-通过 OneDrive，用户可以访问这些文件而不管它们存储在什么位置，而通过 Microsoft Graph，则可以使用单个 API 来使用它们。
+OneDrive 是 Microsoft 365 的文件中心。 人们会在各种各样的环境中使用文件，如 Microsoft Teams、组、SharePoint 等。 通过 OneDrive，用户可以访问这些文件而不管它们存储在什么位置，而通过 Microsoft Graph，则可以使用单个 API 来使用它们。
 
-Microsoft 365 中的文件存储在[驱动器][Drive API]中。
-用户可以在其个人驱动器 (OneDrive) 或 [SharePoint][] 文档库支持的共享驱动器中存储文件。
-但是 OneDrive 的灵活性可使用户以最佳的方式进行协作。
+Microsoft 365 中的文件存储在[驱动器][Drive API]中。 用户可以在个人驱动器（&mdash;其 OneDrive&mdash;）或 [SharePoint][] 文档库支持的共享驱动器中存储文件。 但是 OneDrive 的灵活性可使用户以最佳的方式进行协作。
 用户可以共享文件链接、将文件复制或移动到团队驱动器，甚至可以将 OneDrive 文件附加到 Outlook 中的邮件消息。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/vG-hQxFHCAE]
@@ -69,8 +65,8 @@ OneDrive 客户可以直接在 OneDrive 中使用或启动你的应用，以打�
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
 
-- [Microsoft Graph v1.0 中的 OneDrive 文件存储 API](/graph/api/resources/onedrive?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的 OneDrive 文件存储 API](/graph/api/resources/onedrive?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的 OneDrive 文件存储 API](/graph/api/resources/onedrive?view=graph-rest-1.0&preserve-view=true)
+- [Microsoft Graph beta 中的 OneDrive 文件存储 API](/graph/api/resources/onedrive?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -79,16 +75,16 @@ OneDrive 客户可以直接在 OneDrive 中使用或启动你的应用，以打�
 [SharePoint]: sharepoint-concept-overview.md
 [文件选取器]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
 [文件处理程序]: /onedrive/developer/file-handlers
-[特殊文件夹]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
+[特殊文件夹]: /graph/api/drive-get-specialfolder
 [注释 API]: integrate-with-onenote.md
-[Excel API]: /graph/api/resources/excel?view=graph-rest-1.0
-[REST API]: /graph/api/resources/onedrive?view=graph-rest-1.0
-[增量 API]: /graph/api/driveitem-delta?view=graph-rest-1.0
-[视频]: /graph/api/resources/video?view=graph-rest-1.0
-[照片]: /graph/api/resources/photo?view=graph-rest-1.0
-[音频]: /graph/api/resources/audio?view=graph-rest-1.0
-[格式]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0
-[缩略图]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0
-[预览]: /graph/api/driveitem-preview?view=graph-rest-beta
-[webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
-[Drive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
+[Excel API]: /graph/api/resources/excel
+[REST API]: /graph/api/resources/onedrive
+[增量 API]: /graph/api/driveitem-delta
+[视频]: /graph/api/resources/video
+[照片]: /graph/api/resources/photo
+[音频]: /graph/api/resources/audio
+[格式]: /graph/api/driveitem-get-content-format
+[缩略图]: /graph/api/driveitem-list-thumbnails
+[预览]: /graph/api/driveitem-preview
+[webhooks]: /graph/api/resources/webhooks
+[Drive API]: /graph/api/resources/onedrive

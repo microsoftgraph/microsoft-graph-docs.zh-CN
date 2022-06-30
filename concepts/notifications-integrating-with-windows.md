@@ -1,16 +1,19 @@
 ---
-title: 将 Windows UWP 应用与用户通知客户端 SDK 相集成
-description: 将 Windows UWP 应用与用户通知客户端 SDK 相集成。
+title: 将 Windows UWP 应用与客户端 SDK 集成（已弃用）
+description: 注册应用并载入跨设备体验后，将客户端应用与适用于 Windows UWP 应用的客户端 SDK 集成（已弃用）。
 ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: b7cfb633d3701715e0a29ee1be8bb1acfe375ea8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a812f5637693303bf8ba41d3190b8a3226d4cb9f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035575"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439114"
 ---
-# <a name="integrate-your-windows-uwp-app-with-the-client-side-sdk-for-user-notifications"></a>将 Windows UWP 应用与用户通知客户端 SDK 相集成
+# <a name="integrate-your-windows-uwp-app-with-the-client-side-sdk-for-user-notifications-deprecated"></a>将 Windows UWP 应用与适用于用户通知的客户端 SDK 集成（已弃用）
+
+> [!IMPORTANT]
+> Microsoft Graph 通知 API 已弃用，并且已于 2022 年 1 月停止返回数据。 有关其他通知体验，请参阅 [Microsoft Azure 通知中心](/azure/notification-hubs)。 更多相关信息，请参阅博客文章 [停用 Microsoft Graph 通知 API (beta 版本)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)。
 
 在 Azure 门户[注册你的应用](notifications-integration-app-registration.md)并在合作伙伴开发人员中心载入你的[跨设备体验](notifications-integration-cross-device-experiences-onboarding.md)之后，下一步是将客户端应用与适用于 Windows UWP 应用的客户端 SDK 相集成。  
 
@@ -88,7 +91,7 @@ ms.locfileid: "59035575"
 
 有关在 UWP 应用中包含和使用 NuGet 程序包的更多详细信息，请参阅：
 
-* [使用来自 nuget.org 的程序包](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts)
+* [使用来自 nuget.org 的程序包](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts&preserve-view=true)
 * [快速入门：在 Visual Studio 中安装和使用程序包](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 

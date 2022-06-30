@@ -1,17 +1,20 @@
 ---
-title: '与 Microsoft Graph 通知集成 '
-description: '通知是与应用程序用户再次交互的最有效的方式之一。 可以通过几个简单的步骤将应用程序与 Microsoft Graph 通知集成。  '
+title: 与 Microsoft Graph 通知集成（已弃用）
+description: 通过几个简单的步骤将应用程序与 Microsoft Graph 通知集成（已弃用）。
 ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 8d3e2fe8d7c208cd2c4f0c7f55ba68a79a3d3713
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c2f1e138baf0f88e8e00af9aa19e52b3d957a48b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066903"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439079"
 ---
-# <a name="integrate-with-microsoft-graph-notifications"></a>与 Microsoft Graph 通知集成
+# <a name="integrate-with-microsoft-graph-notifications-deprecated"></a>与 Microsoft Graph 通知集成（已弃用）
+
+> [!IMPORTANT]
+> Microsoft Graph 通知 API 已弃用，并且已于 2022 年 1 月停止返回数据。 有关其他通知体验，请参阅 [Microsoft Azure 通知中心](/azure/notification-hubs)。 更多相关信息，请参阅博客文章 [停用 Microsoft Graph 通知 API (beta 版本)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)。
 
 可以通过几个简单的步骤（如下图所示）将应用程序与 Microsoft Graph 通知集成。
 

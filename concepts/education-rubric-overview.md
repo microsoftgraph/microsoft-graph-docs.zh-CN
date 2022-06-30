@@ -4,12 +4,12 @@ description: 评分标准是一种被广泛采用的有效作业评分方式，M
 author: mmast-msft
 ms.localizationpriority: high
 ms.prod: education
-ms.openlocfilehash: 6df1ad373de6e0f6f5fe59b0a4b3e48a68bcf0e8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ea10f339d6ee53b991045382bfcb5cbe1d27534
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137390"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440878"
 ---
 # <a name="education-rubric-overview"></a>教育版评分标准概述
 
@@ -40,4 +40,4 @@ ms.locfileid: "59137390"
 
 ## <a name="api-reference"></a>API 参考
 
-若要开始使用评分标准，请首先了解 [Microsoft Graph beta 中的 educationRubric 资源](/graph/api/resources/educationrubric?view=graph-rest-beta)及相关方法。
+若要开始使用评分标准，请首先了解 [Microsoft Graph 中的 educationRubric 资源](/graph/api/resources/educationrubric)及相关方法。

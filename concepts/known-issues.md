@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 925062122223563e00b3a4413b06076fc0164c41
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 99d026a9b00b0a61b29ba1a173d7b03903fb9ad4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820201"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439100"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -156,6 +156,10 @@ Beta 版本提供了一种解决方法，可以使用 [事件](/graph/api/resour
 ### <a name="view-meeting-details-menu-is-not-available-on-microsoft-teams-client"></a>Microsoft Teams 客户端上不提供“查看会议详细信息”菜单
 
 对于通过云通信 API 创建的频道会议，Microsoft Teams 客户端不会显示“**查看会议详细信息**”菜单。
+
+### <a name="presenter-role-cannot-be-assigned-to-non-azure-ad-participants"></a>无法将演示者角色分配给非 Azure AD 参与者
+
+当前不支持将 `presenter` 或 `coorganizer` 角色分配给未在 Azure Active Directory 中注册的用户。 [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) 方法将接受此类请求，但当参与者加入联机会议时，将不会应用该角色。 [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) 方法将拒绝请求并返回 `400 Bad Request` 错误。 
 
 ## <a name="contacts"></a>联系人
 

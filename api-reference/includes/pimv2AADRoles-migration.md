@@ -2,18 +2,18 @@
 author: japere
 ms.topic: include
 ms.localizationpriority: medium
-ms.openlocfilehash: f956f82fbfb6488f23f7ae155d49c1344ec890e2
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: ba8ba53c60d37d55cffba7b3f9626832bbf2f1cc
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461281"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441700"
 ---
 <!-- markdownlint-disable MD041-->
 
 ### <a name="migrate-to-pim-v3-api-for-azure-ad-roles-role-management-apis"></a>迁移到面向 Azure AD 角色的 PIM v3 API（角色管理 API）
 
-面向 Azure AD 角色的 PIM API 已于 2021 年 5 月 31 日停用并停止返回数据。 使用本指南将现有 API 迁移到新的 [角色管理](/graph/api/resources/privilegedidentitymanagementv3-overview.md?view=graph-rest-beta&preserve-view=true) API。
+面向 Azure AD 角色的 PIM API 已于 2021 年 5 月 31 日停用并停止返回数据。 使用本指南将现有 API 迁移到新的 [角色管理 API 以进行特权标识管理](/graph/api/resources/privilegedidentitymanagementv3-overview)。
 
 | Operation | PIM v2 API | 角色管理 API（PIM v3） |
 | --------- | ------------ | -------------- |
