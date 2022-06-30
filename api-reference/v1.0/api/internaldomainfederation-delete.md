@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 631984680cb7b84320681d317888e39c92ac5118
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 7bb9e51153959e2b4c1fa659dc23f0071c106610
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447419"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556358"
 ---
 # <a name="delete-internaldomainfederation"></a>删除 internalDomainFederation
 命名空间：microsoft.graph
@@ -24,7 +24,9 @@ ms.locfileid: "66447419"
 |:---|:---|
 |委派（工作或学校帐户）|Domain.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|Domain.ReadWrite.All|
+|应用程序|Domain.ReadWrite.All|
+
+必须为调用用户或应用分配全局管理员 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)。
 
 ## <a name="http-request"></a>HTTP 请求
 

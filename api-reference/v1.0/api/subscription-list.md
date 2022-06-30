@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: e246c739e55a2a94472df00dff5747b7ffba8511
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 8cfe80146aaf6f23069e83245541cfa221190a78
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094605"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555896"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -35,7 +35,8 @@ ms.locfileid: "66094605"
 |[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持 | 不支持 | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read、Chat.ReadWrite、Subscription.Read.All | 不支持 | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |
-|[contact](../resources/contact.md) | Contacts.Read、Subscription.Read.All | Contacts.Read、Subscription.Read.All | Contacts.Read |
+|[chatMessage](../resources/chatmessage.md)（/users/{id}/chats/getAllMessages - 特定用户所属所有聊天的聊天消息） | Chat.Read、Chat.ReadWrite | 不支持 | Chat.Read.All、Chat.ReadWrite.All |
+|[联系人](../resources/contact.md) | Contacts.Read、Subscription.Read.All | Contacts.Read、Subscription.Read.All | Contacts.Read |
 |[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | 不支持 | 不支持 | ChannelMember.Read.All |
 |[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | 不支持 | 不支持 | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
 |[conversationMember](../resources/conversationmember.md) (/chats/{id}/members) | ChatMember.Read、ChatMember.ReadWrite、Chat.ReadBasic, Chat.Read、Chat.ReadWrite | 不支持 | ChatMember.Read.Chat *、Chat.Manage.Chat*、ChatMember.Read.All、ChatMember.ReadWrite.All、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |

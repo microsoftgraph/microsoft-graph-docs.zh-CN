@@ -1,15 +1,15 @@
 ---
-title: '使用架构扩展向组添加自定义数据 '
-description: '本文将通过一个示例逐步介绍如何使用 *架构扩展*。 '
+title: 使用架构扩展向组添加自定义数据
+description: 按照本示例中的步骤注册架构扩展定义、创建包含扩展数据的组，以及更新现有组中的自定义数据。
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8e024e625258dca2eda46dd0b9cdde6bbefb6cbc
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 0f9e2426b94be089e4356e85b01b68d8ba68566f
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934791"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555589"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>使用架构扩展向组添加自定义数据 
 
@@ -25,7 +25,9 @@ ms.locfileid: "60934791"
 4. 根据架构扩展定义向现有组添加、更新或删除自定义数据。
 5. 读回组和扩展数据。
 
->**注意：** 本主题介绍如何在 **组** 资源上创建和读取架构扩展值（步骤 3-5）。**管理单元**、**设备**、**事件**、**邮件**、**组织**、**帖子** 和 **用户** 资源类型也支持相同方法。你可以对任意资源执行与本文中的请求示例相似的操作。请注意，**administrativeUnit** 仅适用于 beta 终结点。
+> [!NOTE]
+> 本主题介绍如何在 **组** 资源上创建和读取架构扩展值（步骤 3-5）。 架构扩展也受支持，可以针对 [其他资源类型](extensibility-overview.md)进行管理。
+
 
 ## <a name="1-view-available-schema-extensions"></a>1.查看可用的架构扩展
 首先，作为开发人员，可能希望找到应用可以重复使用的任何其他架构扩展定义。这可以通过查询 **schemaExtension** 资源来完成。  

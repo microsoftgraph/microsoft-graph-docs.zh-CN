@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 8f33af60add0ea55453a735ccb9f9e4aff958bbd
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: 6668b6c2a0bea5522ad8e0ef7f1d9c2fa9033d43
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296371"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555224"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
@@ -38,6 +38,8 @@ ms.locfileid: "65296371"
 ```http
 GET /schemaExtensions
 ```
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 `$filter` () `eq` 和 `$top` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

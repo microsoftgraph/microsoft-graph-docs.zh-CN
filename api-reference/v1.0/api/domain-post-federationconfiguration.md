@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 94a74aa85d38895a19b85eabf9a2068bdb239117
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 4adb7d96c46d92fe4f621ab94a9ace2fe09fef31
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447421"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556029"
 ---
 # <a name="create-federationconfiguration"></a>创建 federationConfiguration
 命名空间：microsoft.graph
@@ -24,7 +24,9 @@ ms.locfileid: "66447421"
 |:---|:---|
 |委派（工作或学校帐户）|Domain.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|Domain.ReadWrite.All|
+|应用程序|Domain.ReadWrite.All|
+
+必须为调用用户或应用分配全局管理员 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +58,7 @@ POST /domains/{domainsId}/federationConfiguration
 |passiveSignInUri|String|登录到 Azure AD 服务时基于 Web 的客户端定向到的 URI。|
 |preferredAuthenticationProtocol|authenticationProtocol|首选身份验证协议。 可能的值包括 `wsFed`、`saml`、`unknownFutureValue`。|
 |activeSignInUri|String|使用 Azure Active Directory (Azure AD) 中为单一登录设置的联合域进行身份验证时，活动客户端使用的终结点 URL。 对应于 [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings) 的 **ActiveLogOnUri** 属性。|
-|signOutUri|String|客户端注销 Azure AD 服务时重定向到的 URI。 对应于 [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings) 的 **LogOffUri** 属性。|
+|signOutUri|字符串|客户端注销 Azure AD 服务时重定向到的 URI。 对应于 [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings) 的 **LogOffUri** 属性。|
 |promptLoginBehavior|promptLoginBehavior|设置登录提示的首选行为。 可能的值包括 `translateToFreshPasswordAuthentication`、`nativeSupport`、`disabled`、`unknownFutureValue`。|
 |isSignedAuthenticationRequestRequired|Boolean|如果为 true，则当 SAML 身份验证请求发送到联合 SAML IDP 时，Azure AD 将使用 OrgID 签名密钥对这些请求进行签名。 如果为 false (默认) ，则发送到联合 IDP 的 SAML 身份验证请求不会签名。|
 |nextSigningCertificate|String|回退令牌签名证书，该证书用于在主签名证书过期时对令牌进行签名。 格式化为联合 IdP 令牌签名证书公共部分的 Base64 编码字符串。 需要与 X509Certificate2 类兼容。 与 **signingCertificate** 非常类似，如果需要在自动滚动更新之外进行滚动更新、正在设置新的联合身份验证服务，或者在联合身份验证服务证书更新后联合身份验证属性中不存在新的令牌签名证书，则使用 **nextSigningCertificate** 属性。|

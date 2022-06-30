@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 6798369b62aab7195ebe56c6ad225a011f244466
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 399040493f8401574a1094f8d97b528c7f3f6354
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118324"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555210"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -20,12 +20,17 @@ ms.locfileid: "66118324"
 
 表示应用程序。 任何将身份验证外包到 Azure Active Directory (Azure AD) 的应用程序都必须在目录中注册。 应用程序注册涉及告知 Azure AD 有关应用程序的信息，包括其所在的 URL、身份验证后发送回复的 URL、标识应用程序的 URI 等。 有关详细信息，请参阅[在 Azure AD 中注册应用程序的基础知识](/azure/active-directory/develop/authentication-vs-authorization#basics-of-registering-an-application-in-azure-ad)。 继承自 [directoryObject](directoryobject.md)。
 
+此资源是允许传入其他属性的开放类型。
+
 > [!Note]
 > 对应用程序资源类型的更改目前正在开发中。 有关详细信息，请参阅 [Microsoft Graph 的已知问题](/graph/known-issues#application-and-serviceprincipal-api-changes)。
 
-该资源支持通过提供 [delta](../api/application-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。 此资源是允许传入其他属性的开放类型。
+该资源支持：
 
-## <a name="methods"></a>Methods
+- 将你自己的数据作为[扩展](/graph/extensibility-overview)添加到自定义属性。
+- 通过提供 [delta](../api/user-delta.md) 函数，使用 [delta 查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
+
+## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | Description |
 |:---------------|:--------|:----------|
@@ -93,7 +98,7 @@ ms.locfileid: "66118324"
 | disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册的应用程序。可能的值为：`null`（默认值）、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement`（原因可能包括可疑、滥用或恶意活动或违反 Microsoft 服务协议）。 <br><br> 支持 `$filter`（`eq`、`ne`、`not`）。 |
 | displayName | String | 应用程序的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。 |
 | groupMembershipClaims | String | 配置应用程序预期的用户或 OAuth 2.0 访问令牌中发出的 `groups` 声明。要设置此属性，请使用以下字符串值之一：`None`、`SecurityGroup`（对于安全组和 Azure AD 角色）和 `All` （这将获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色）。 |
-| id | String | 应用程序的唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥。不可为 null。只读。支持 `$filter`（`eq`、`ne`、`not`、`in`） |
+| id | 字符串 | 应用程序对象的唯一标识符。 此属性在Azure 门户中称为 **对象 ID**。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。 |
 | identifierUris | String collection | 也称为应用 ID URI，此值在将应用程序用作资源应用时设置。 identifierUris 可充当你将在 API 代码中引用的范围的前缀，必须具有全局唯一性。 可以使用提供的默认值（采用 `api://<application-client-id>` 形式）或指定更具有可读性的 URI（如 `https://contoso.com/api`）。 有关有效 identifierUris 模式和最佳做法的信息，请参阅 [Azure AD 应用程序注册安全性最佳做法](/azure/active-directory/develop/security-best-practices-for-app-registration#appid-uri-configuration)。 不可为 null。 <br><br>支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。 |
 | info | [informationalUrl](informationalurl.md) | 应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 <br><br>支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le` 和 `null` 值上的 `eq`)。 |
 | isDeviceOnlyAuthSupported | 布尔值 | 指定此应用程序是否支持在无用户的情况下进行设备身份验证。默认值为 `false`。  |

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6d1ff8baab3b3817d5521ca34ff6c9d50c265a5f
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 17b08b04e88c6ef3b8a0b9ec8acad48535eff6f1
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446776"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555234"
 ---
 # <a name="update-group"></a>更新组
 
@@ -61,8 +61,6 @@ PATCH /groups/{id}
 | securityEnabled         | Boolean | 指定组是否为安全组，包括 Microsoft 365 组。                                                                                                                                                                                                                                                                                                                                                                                                             |
 | visibility              | String  | 指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。                                                                                                                                                                                                                                                                                                                                              |
 
-由于 **组** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用该 `PATCH` 操作在现有 **组** 实例的扩展的自定义属性中添加、更新或删除自己的特定于应用的数据。
-
 > [!IMPORTANT]
 >
 > - 若要更新以下属性，你必须在这些属性自己的 PATCH 请求中指定这些属性，而不包括上表中列出的其他属性：**allowExternalSenders**、**autoSubscribeNewMembers**、**hideFromAddressLists**、**hideFromOutlookClients**、**isSubscribedByMail**、**unseenCount**。
@@ -70,6 +68,14 @@ PATCH /groups/{id}
 > - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅 [已知问题](/graph/known-issues#groups)。
 >
 > - 在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups)。
+
+
+### <a name="manage-extensions-and-associated-data"></a>管理扩展和关联的数据
+
+使用此 API 管理 [目录、架构和打开扩展](/graph/extensibility-overview) 及其组数据，如下所示：
+
++ 在现有组的扩展中添加、更新和存储数据。
++ 对于目录和架构扩展，通过将自定义扩展属性的值设置为 `null`删除任何存储的数据。 对于打开的扩展，请使用 [“删除”打开的扩展](/graph/api/opentypeextension-delete) API。
 
 ## <a name="response"></a>响应
 

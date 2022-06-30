@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a573c65cf2cae9f088e6a18557faebb4a2641680
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: efd2183589aae2330b48ebabe8e55482883cf4d6
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119397"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555371"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -58,6 +58,10 @@ POST /users/{userId}/onlineMeetings
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [onlineMeeting](../resources/onlinemeeting.md) 对象的 JSON 表示形式。
+
+> [!CAUTION]
+>
+> 当前不支持将 `presenter` 或 `coorganizer` 角色分配给未在Azure Active Directory中注册的用户。 有关详细信息，请参阅 [已知问题](/graph/known-issues#presenter-role-cannot-be-assigned-to-non-azure-ad-participants) 以了解更多详细信息。
 
 ## <a name="response"></a>响应
 如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。

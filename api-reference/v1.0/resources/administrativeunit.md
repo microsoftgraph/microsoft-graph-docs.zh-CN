@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 40f81892de0fe1a9925a6d9d62d51e679b57748b
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 72164a748df7cb532d23f8ca7254f76000faf0ef
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899461"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556351"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -20,8 +20,10 @@ ms.locfileid: "65899461"
 
 来看一个示例。 想象一下，Contoso 公司由两个部门组成——一个西海岸司和一个东海岸司。 Contoso 中的目录角色的范围限于整个租户。 Contoso 公司管理员 Lee 希望委派管理职责，但将其范围限定在西海岸司或东海岸部门。  Lee 可以创建 *一个西海岸辅助单元* ，并将所有西海岸用户置于此管理单元中。  同样，Lee 可以创建 *东海岸管理单元*。  现在，李先生可以开始将行政职责委托给他人，但 **范围限于** 他创建的新行政单位。 李将詹妮弗置于一个 *支持管理员* 角色 **中，该角色的范围限于***西海岸行政部门*。  这允许 Jennifer 重置任何用户的密码，但前提是这些用户位于 *西海岸管理单元* 中。  同样，Lee 将 Dave 置于一个用户 *帐户管理员* 角色 **中，该角色的范围限于***东海岸管理单元*。  这允许 Dave 更新用户、分配许可证和重置任何用户的密码，但前提是这些用户位于 *东海岸管理单元* 中。 有关视频概述，请参阅 [Azure Active Directory 管理单元简介](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units)。
 
+该资源支持：
 
-本主题介绍由 administrativeUnit 实体公开的声明属性和导航属性，以及可对 administrativeUnits 资源调用的操作和函数。
+- 将你自己的数据作为[扩展](/graph/extensibility-overview)添加到自定义属性。
+- 通过提供 [delta](../api/user-delta.md) 函数，使用 [delta 查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
 
 ## <a name="methods"></a>方法
@@ -30,7 +32,7 @@ ms.locfileid: "65899461"
 |:---------------|:--------|:----------|
 |[创建](../api/directory-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | 创建新的管理单元。|
 |[列表](../api/directory-list-administrativeunits.md) | [administrativeUnit](administrativeunit.md) 集合 |列出所有 administrativeUnits 的属性。|
-|[获取](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |读取特定 administrativeUnit 对象的属性和关系。|
+|[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |读取特定 administrativeUnit 对象的属性和关系。|
 |[更新](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |更新 administrativeUnit 对象。 |
 |[删除](../api/administrativeunit-delete.md) | 无 |删除 administrativeUnit 对象。 |
 |[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 添加成员 (用户、组或设备) 。|
@@ -50,9 +52,12 @@ ms.locfileid: "65899461"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |说明|字符串|管理单元的可选说明。 支持`$filter` (`eq`、`ne`、 `in``startsWith`) 、 `$search`|
-|displayName|字符串|管理单元的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。|
+|displayName|String|管理单元的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。|
 |id|字符串|管理单元的唯一标识符。 只读。 支持 `$filter`（`eq`）。|
-|visibility|字符串|控制管理单元及其成员是隐藏的还是公开的。 可以设置为 `HiddenMembership`. 如果未设置 (值 `null`) ，则默认行为为公共行为。 设置为 `HiddenMembership`后，只有管理单位的成员才能列出管理单位的其他成员。|
+|visibility|String|控制管理单元及其成员是隐藏的还是公开的。 可以设置为 `HiddenMembership`. 如果未设置 (值 `null`) ，则默认行为为公共行为。 设置为 `HiddenMembership`后，只有管理单位的成员才能列出管理单位的其他成员。|
+
+> [!TIP]
+> 默认情况下，目录扩展和关联数据返回，而架构扩展和关联数据仅 `$select`返回。
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

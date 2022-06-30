@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 27f9237c410c14aa7ebb2b14db04436615d250eb
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 72c5a1beaa0b8362225c18481129ddd76ec289d7
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63668890"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555434"
 ---
 # <a name="delete-application"></a>删除应用程序
 
@@ -18,7 +18,7 @@ ms.locfileid: "63668890"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除应用程序。 删除后，应用将移动到临时容器，可以在 30 天内还原。 此后，它们将被永久删除。
+删除应用程序。 删除后，应用将移动到临时容器，可在 30 天内还原。 此后，它们将被永久删除。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,6 +30,7 @@ ms.locfileid: "63668890"
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+替换`{id}`为应用程序对象的 **ID**，也称为Azure 门户中的 **对象 ID**。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}

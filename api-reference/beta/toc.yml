@@ -99,14 +99,8 @@ items:
           - name: 获取用户更改（示例）
             href: /graph/delta-query-users?context=graph/api/beta
       - name: 添加自定义数据
-        items:
-          - name: 概述
-            href: /graph/extensibility-overview?context=graph/api/beta
-            displayName: 'add custom data, extensions, resources using extensions'
-          - name: 使用开放扩展（示例）
-            href: /graph/extensibility-open-users?context=graph/api/beta
-          - name: 使用架构扩展（示例）
-            href: /graph/extensibility-schema-groups?context=graph/api/beta
+        displayName: 'directory extensions, schema extensions, open extensions, extension attributes'
+        href: /graph/extensibility-overview?context=graph/api/beta
       - name: 使用 Graph 浏览器
         items:
           - name: 入门
@@ -979,19 +973,6 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: 扩展
-                items:
-                  - name: Extension 属性
-                    href: resources/extensionproperty.md
-                    items:
-                      - name: 列出
-                        href: api/application-list-extensionproperty.md
-                      - name: 创建
-                        href: api/application-post-extensionproperty.md
-                      - name: 获取
-                        href: api/extensionproperty-get.md
-                      - name: 删除
-                        href: api/extensionproperty-delete.md
               - name: '联合标识凭据 (预览) '
                 items:
                   - name: 概述
@@ -1311,7 +1292,7 @@ items:
                     items:
                       - name: 发现
                         href: api/directorydefinition-discover.md
-              - name: “Microsoft UEFI Certificate Authority”，
+              - name: 模板
                 href: resources/synchronization-synchronizationtemplate.md
                 items:
                   - name: 列表
@@ -11101,6 +11082,20 @@ items:
                 href: api/educationsynchronizationerrors-get.md
       - name: 扩展
         items:
+          - name: 概述
+            href: /graph/extensibility-overview?context=graph/api/beta&preserve-view=true
+          - name: 目录扩展
+            displayname: 'Groups, Users, Applications, Organization, Devices'
+            href: resources/extensionproperty.md
+            items:
+              - name: 列出
+                href: api/application-list-extensionproperty.md
+              - name: 创建
+                href: api/application-post-extensionproperty.md
+              - name: 获取
+                href: api/extensionproperty-get.md
+              - name: 删除
+                href: api/extensionproperty-delete.md
           - name: 开放扩展
             href: resources/opentypeextension.md
             displayName: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
@@ -14801,7 +14796,7 @@ items:
                     href: api/security-ediscoverycasesettings-update.md
                   - name: 将设置重置为默认设置
                     href: api/security-ediscoverycasesettings-resettodefault.md
-              - name: Operation
+              - name: 操作
                 href: resources/security-caseoperation.md
                 items:
                   - name: 列出事例操作

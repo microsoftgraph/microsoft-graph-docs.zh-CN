@@ -1,22 +1,22 @@
 ---
 title: 删除应用程序
-description: 删除 application 对象。
+description: 删除应用程序对象。
 author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c49b0a9414aa2109346d9ae3526521756517754b
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 70e79b583cb72a08c71ca4b78b0dd133326ae484
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671235"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556148"
 ---
 # <a name="delete-application"></a>删除应用程序
 
 命名空间：microsoft.graph
 
-删除 [application](../resources/application.md) 对象。 删除后，应用将移动到临时容器，可以在 30 天内还原。 此后，它们将被永久删除。
+删除 [应用程序对象](../resources/application.md) 。 删除后，应用将移动到临时容器，可在 30 天内还原。 此后，它们将被永久删除。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,6 +28,7 @@ ms.locfileid: "63671235"
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
+替换`{id}`为应用程序对象的 **ID**，也称为Azure 门户中的 **对象 ID**。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}

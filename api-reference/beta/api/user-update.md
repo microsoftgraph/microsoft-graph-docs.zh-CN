@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a6822acb977374fd3b47045984d7632e1797662c
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 53fa85a4a1dff9fc1ca0d89e73bfae28c02c28b0
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695454"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555248"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -99,6 +99,13 @@ PATCH /users/{id | userPrincipalName}
 > [!NOTE] 
 > - 只有应用程序权限的应用无法更新以下属性：**aboutMe**、 **birthday**、 **employeeHireDate**、 **interests**、 **mySite**、 **pastProjects**、 **preferredName**、 **responsibilities**、 **schools**、 and **skills**。
 > - 要更新以下属性，必须在其 PATCH 请求中指定它们，无需包含上表中列出的其他属性：**aboutMe**、**birthday**、**interests**、**mySite**、**pastProjects**、**preferredName**、**职责**、**schools** 和 **skills**。
+
+### <a name="manage-extensions-and-associated-data"></a>管理扩展和关联的数据
+
+使用此 API 管理用户的目录、架构和打开扩展及其数据，如下所示：
+
++ 在现有用户的扩展中添加、更新和存储数据
++ 对于目录和架构扩展，通过将自定义扩展属性的值设置为 `null`删除任何存储的数据。 对于打开的扩展，请使用 [“删除”打开的扩展](/graph/api/opentypeextension-delete) API。
 
 ## <a name="response"></a>响应
 
@@ -325,6 +332,14 @@ Content-type: application/json
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/assign-user-customsecurityattribute-string-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[转到](#tab/go)

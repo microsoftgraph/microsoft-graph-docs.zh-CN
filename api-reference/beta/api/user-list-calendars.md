@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5c5bcdacb8e03115878daf7a7356a4328ce77a2f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dd93c4af6eab8e0953e953de0939e359e3c48f99
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119691"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556302"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -59,7 +59,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Calendar](../resources/calendar.md) 对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -96,7 +96,8 @@ GET https://graph.microsoft.com/beta/me/calendars
 ---
 
 ### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

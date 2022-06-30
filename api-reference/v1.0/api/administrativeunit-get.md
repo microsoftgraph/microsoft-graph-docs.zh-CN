@@ -5,18 +5,18 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9d6a70d197ab0b2ba3f88b1d16f67173796e993d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 40b554568a524203253a0cba5a0d2a0a4ef0270c
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672089"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555478"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 
 命名空间：microsoft.graph
 
-检索 [administrativeUnit 对象的属性和](../resources/administrativeunit.md) 关系。
+检索 [administrativeUnit](../resources/administrativeunit.md) 对象的属性和关系。
 
 
 ## <a name="permissions"></a>权限
@@ -35,7 +35,14 @@ ms.locfileid: "63672089"
 GET /directory/administrativeUnits/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData `$select` [查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
+
+### <a name="retrieve-extensions-and-associated-data"></a>检索扩展和关联的数据
+
+| 扩展类型       | 备注                                                 |
+|----------------------|----------------------------------------------------------|
+| 架构扩展    | 仅返回与 `$select`. 支持 `$filter`（`eq`）。 |
+| 目录扩展 | 默认返回。 支持 `$filter`（`eq`）。          |
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -47,7 +54,7 @@ GET /directory/administrativeUnits/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。

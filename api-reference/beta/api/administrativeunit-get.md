@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 99211fcb4b5e04ac3a31a305ba97a410e326dfb0
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 50022e2cc7418058089e8ec40f5e48a21f0dba49
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437399"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555448"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 
@@ -40,6 +40,13 @@ GET /directory/administrativeUnits/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 `$select` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
+
+### <a name="retrieve-extensions-and-associated-data"></a>检索扩展和关联的数据
+
+| 扩展类型       | 备注                                                 |
+|----------------------|----------------------------------------------------------|
+| 架构扩展    | 仅返回与 `$select`. 支持 `$filter`（`eq`）。 |
+| 目录扩展 | 默认返回。 支持 `$filter`（`eq`）。          |
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

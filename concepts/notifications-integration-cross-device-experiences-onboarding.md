@@ -1,17 +1,20 @@
 ---
-title: '载入跨设备 Microsoft Graph 通知体验 '
-description: 在 Windows 开发人员中心注册应用程序，使应用客户端接收通过 Microsoft Graph 发送的跨设备通知。
+title: 载入到通知的跨设备体验（已弃用）
+description: 应用需要注册跨设备信息，以授权 Microsoft Graph 通过本机推送通知服务（已弃用）发送通知。
 ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 15cb37515a7658078b909b801f8ecc3cceafc9cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a3c229f71a43222a642c4c1113edaf4b99b27535
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066938"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444815"
 ---
-# <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications"></a>载入跨设备 Microsoft Graph 通知体验
+# <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications-deprecated"></a>载入 Microsoft Graph 通知的跨设备体验（已弃用）
+
+> [!IMPORTANT]
+> Microsoft Graph 通知 API 已弃用，并且已于 2022 年 1 月停止返回数据。 有关其他通知体验，请参阅 [Microsoft Azure 通知中心](/azure/notification-hubs)。 有关详细信息，请参阅博客文章 [停用 Microsoft Graph 通知 API（beta 版）](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)。
 
 >[!NOTE]
 >如果仅针对 Web 终结点，则可以直接转到设置[应用服务](notifications-integrating-app-server.md)以发送通知。

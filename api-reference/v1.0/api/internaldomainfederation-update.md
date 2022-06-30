@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5498cc69bde517632af1bc481240f962be03b1a3
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 5ad0459e6343a3eca0fa65d5832dd291b5027c66
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447417"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555721"
 ---
 # <a name="update-internaldomainfederation"></a>更新 internalDomainFederation
 命名空间：microsoft.graph
@@ -24,7 +24,9 @@ ms.locfileid: "66447417"
 |:---|:---|
 |委派（工作或学校帐户）|Domain.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|Domain.ReadWrite.All|
+|应用程序|Domain.ReadWrite.All|
+
+必须为调用用户或应用分配全局管理员 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +53,7 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 |activeSignInUri|String|使用 Azure Active Directory (Azure AD) 中为单一登录设置的联合域进行身份验证时，活动客户端使用的终结点 URL。 对应于 [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings) 的 **ActiveLogOnUri** 属性。|
 |displayName|String|联合标识提供者 (IdP) 的显示名称。 |
 |federatedIdpMfaBehavior|federatedIdpMfaBehavior|确定当联合用户访问受需要 MFA 的条件访问策略管理的应用程序时，Azure AD 是否接受联合 IdP 执行的 MFA。 可能的值包括 `acceptIfMfaDoneByFederatedIdp`、`enforceMfaByFederatedIdp`、`rejectMfaByFederatedIdp`、`unknownFutureValue`。 有关详细信息，请参阅 [federatedIdpMfaBehavior 值](#federatedidpmfabehavior-values)。|
-|isSignedAuthenticationRequestRequired|Boolean|如果 `true`将 SAML 身份验证请求发送到联合 SAML IdP 时，Azure AD 将使用 OrgID 签名密钥对这些请求进行签名。 如果 `false` (默认) ，则发送到联合 IdP 的 SAML 身份验证请求不会签名。|
+|isSignedAuthenticationRequestRequired|布尔|如果 `true`将 SAML 身份验证请求发送到联合 SAML IdP 时，Azure AD 将使用 OrgID 签名密钥对这些请求进行签名。 如果 `false` (默认) ，则发送到联合 IdP 的 SAML 身份验证请求不会签名。|
 |issuerUri|String|联合服务器的颁发者 URI。|
 |metadataExchangeUri|String|用于从丰富的客户端应用程序进行身份验证的元数据交换终结点的 URI。|
 |nextSigningCertificate|String|回退令牌签名证书，该证书用于在主签名证书过期时对令牌进行签名。 格式化为联合 IdP 令牌签名证书公共部分的 Base64 编码字符串。 需要与 X509Certificate2 类兼容。 与 **signingCertificate** 非常类似，如果需要在自动滚动更新之外进行滚动更新、正在设置新的联合身份验证服务，或者在联合身份验证服务证书更新后联合身份验证属性中不存在新的令牌签名证书，则使用 **nextSigningCertificate** 属性。|

@@ -1,29 +1,44 @@
 ---
-title: 使用 Microsoft Graph 更改 Microsoft Teams 资源的通知
-description: 了解如何使用 Microsoft Graph API 获取 Microsoft Teams 中资源的更改（创建、更新和删除）通知
+title: Microsoft Teams 资源的更改通知
+description: 使用 Microsoft Graph API 订阅对 Microsoft Teams 中的资源和资源数据的更改。 了解更改通知类型和有效负载。
 author: anandab-msft
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a740c6cddf0292e44196bf7b028631d4d24e1c32
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 0091ded928de826220b837a66873e736fb1e84bc
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084068"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555567"
 ---
-# <a name="change-notifications-for-microsoft-teams-resources-using-microsoft-graph"></a>使用 Microsoft Graph 更改 Microsoft Teams 资源的通知
+# <a name="change-notifications-for-microsoft-teams-resources"></a>Microsoft Teams 资源的更改通知
 
-通过更改通知，可以订阅资源的更改（创建、更新和删除）。 更改通知允许你维护[订阅](/graph/api/resources/webhooks?preserve-view=true)，从而提供低延迟模式。 你还可以在通知中获取资源数据，因此避免调用 API 来获取有效负载。
+使用 Microsoft Graph 更改 Microsoft Teams 资源的通知，可以订阅资源的更改（创建、更新和删除）。 更改通知允许你维护[订阅](/graph/api/resources/webhooks)，从而提供低延迟模式。 你还可以在通知中获取资源数据，因此避免调用 API 来获取有效负载。
 
-> **注意：** 订阅的最长持续时间为 60 分钟；但是，订阅可以续订，直至呼叫方有权访问资源。
+> [!NOTE]
+> 订阅可以持续的最长时间为 60 分钟;但是，在调用方有权访问资源之前，可以续订订阅。
 
 ## <a name="change-notification-types"></a>更改通知类型
+
 Microsoft Teams 支持两种类型的更改通知：
-- **更改通知以跟踪租户中与资源相关的所有更改** - 例如，你可以订阅租户中任何通道中的消息更改，并在租户中的任何通道中创建、更新或删除消息时收到通知。这些通知可能有 [许可和付款要求](/graph/teams-licenses)，例如 [消息](teams-changenotifications-chatmessage.md)和 [成员资格](teams-changenotifications-chatMembership.md)的更改通知。
-- **更改通知以跟踪特定资源的所有更改** - 例如，你可以订阅特定通道中的消息更改，并在该通道中创建、更新或删除消息时收到通知。
+
+- **更改通知以跟踪与租户中的资源相关的所有更改：** 例如，你可以订阅租户中任何通道中的消息更改，并在租户中的任何通道中创建、更新或删除消息时收到通知。 这些通知可能具有 [许可和付款要求](/graph/teams-licenses)，例如 [消息](teams-changenotifications-chatmessage.md) 和 [成员身份](teams-changenotifications-chatMembership.md)的更改通知。
+
+- **更改通知以跟踪特定资源的所有更改：** 例如，你可以订阅特定通道中消息的更改，并在该通道中创建、更新或删除消息时收到通知。
 
 有关哪些资源支持哪些类型的更改通知的详细信息，请参阅 [Microsoft Graph 更改通知](webhooks.md)。
+
+## <a name="supported-resources"></a>支持的资源
+下表列出了当前支持的 Microsoft Teams 资源和相应的资源路径。
+
+| **资源** | **支持的资源路径** | **可包含在通知中的资源数据** |
+|:----------------|:------------|:-----------------------------------------|
+| Teams [频道](/graph/api/resources/channel) | 对所有团队中频道的更改：<br>`/teams/getAllChannels` <br>对特定团队中频道的更改：<br>`/teams/{id}/channels` | 是 |
+| Teams [聊天](/graph/api/resources/chat) | 对租户中任何聊天的更改：<br>`/chats` <br>对特定聊天的更改：<br>`/chats/{id}` | 是 |
+| Teams [chatMessage](/graph/api/resources/chatMessage) | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages`<br>特定用户在所有聊天中对聊天消息所做的更改是以下内容的一部分：<br>`/users/{id}/chats/getAllMessages` | 是 |
+| Teams [conversationMember](/graph/api/resources/conversationMember) | 对特定团队中成员身份的更改：<br>`/teams/{id}/members` <br> 对特定聊天中成员身份的更改：<br>`/chats/{id}/members` <br> 对所有聊天中成员身份的更改：<br>`/chats/getAllMembers` <br> 对特定团队下所有频道中的成员身份的更改：<br>`teams/{id}/channels/getAllMembers` | 是 |
+| Teams [团队](/graph/api/resources/team) | 对租户中任何团队的更改：<br>`/teams` <br>对特定团队的更改：<br>`/teams/{id}` | 是 |
  
 
 ## <a name="notification-payloads"></a>通知有效负载
@@ -61,7 +76,7 @@ Microsoft Teams 支持两种类型的更改通知：
 
 有关如何验证令牌和解密负载的详细信息，请参阅[设置包含资源数据的更改通知](webhooks-with-resource-data.md)。
 
-解密的通知负载如下所示。 上一示例的已解密有效负载符合 [chatMessage](/graph/api/resources/chatMessage?preserve-view=true) 架构。 该负载类似于 GET 操作返回的负载。
+解密的通知负载如下所示。 上一示例的已解密有效负载符合 [chatMessage](/graph/api/resources/chatMessage) 架构。 该负载类似于 GET 操作返回的负载。
 
 ```json
 {
@@ -124,10 +139,13 @@ Microsoft Teams 支持两种类型的更改通知：
   }
 }
 ```
+
 上面的示例显示了对应于聊天消息资源的通知。 实际通知包括 **资源** 和表示已触发该通知的 **resourceData** 属性。 **资源** 和 **@odata.id** 属性可用于对 Microsoft Graph 进行调用以获取资源的有效负载。
 
-> **注意** GET 调用将始终返回资源的当前状态。 如果在发送通知和检索资源之间更改了资源，则该操作将返回已更新的资源。
+> [!NOTE]
+> GET 调用始终返回资源的当前状态。 如果在发送通知和检索资源之间更改了资源，则操作将返回更新的资源。
 
 ## <a name="see-also"></a>另请参阅
+
 - [Microsoft Graph 更改通知](webhooks.md)
 - [Microsoft Teams API 概述](teams-concept-overview.md)

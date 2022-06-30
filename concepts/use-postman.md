@@ -1,14 +1,14 @@
 ---
 title: 结合使用 Postman 和 Microsoft Graph API
-description: 使用 Microsoft Graph Postman 集合，只需几分钟，即可开始使用 Microsoft Graph API。
+description: Postman 是用于构建和使用 API 的 API 平台。 使用 Microsoft Graph Postman 集合开始使用Microsoft Graph API。
 author: jasonjoh
 ms.localizationpriority: high
-ms.openlocfilehash: b745e9dae1c6f1def7930e82f974dd65a8cdaa45
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: ace39134b6a30ce3b8cfe79f539f6d1887a21b02
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461266"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554902"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>结合使用 Postman 和 Microsoft Graph API
 

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 564ed33603585b333f12f72b6a8e1f8e3f9de406
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 3451159f120abf1fa06e45342923d70aad1f84cc
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899545"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555982"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
@@ -178,8 +178,6 @@ Content-Type: application/json
 
 聊天级别订阅还支持通过 `$search` 查询参数进行基于关键字的搜索。
 
-> **注意。** 订阅聊天中的消息目前在预览中。
-
 ### <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -261,13 +259,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscribe-to-changes-at-the-user-level-preview"></a>订阅用户级别的更改（预览）
+## <a name="subscribe-to-changes-at-the-user-level"></a>订阅用户级别的更改
 
-若要跟踪特定用户参与的所有聊天中的消息，可以在用户级别创建更改通知订阅。 为此，请订阅 `/users/{user-id}/chats/getAllMessages`。 不管是在 *委派* 模式还是 *仅应用程序* 模式下，此资源都支持在通知中 [包含资源数据](webhooks-with-resource-data.md)。 此订阅仅在 beta 终结点中可用。
+若要跟踪特定用户参与的所有聊天中的消息，可以在用户级别创建更改通知订阅。 为此，请订阅 `/users/{user-id}/chats/getAllMessages`。 不管是在 *委派* 模式还是 *仅应用程序* 模式下，此资源都支持在通知中 [包含资源数据](webhooks-with-resource-data.md)。
 
 用户级别聊天的消息传递订阅还支持通过 `$search` 查询参数进行基于关键字的搜索。
 
-> **注意：** 将来，Microsoft 可能会要求你或你的客户根据通过 API 访问的数据量支付额外的费用。
+[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
 ### <a name="permissions"></a>权限
 
@@ -275,7 +273,7 @@ Content-Type: application/json
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Chat.Read、Chat.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Chat.Read.All、Chat.ReadWrite.All |
+|应用程序 | Chat.Read.All、Chat.ReadWrite.All |
 
 ### <a name="example-subscribe-to-messages-across-all-chats-a-particular-user-is-part-of"></a>示例：订阅特定用户参与的所有聊天中的消息
 

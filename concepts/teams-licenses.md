@@ -1,29 +1,29 @@
 ---
-title: 许可和付款要求
-description: 了解适用于 Microsoft Graph 中的 Microsoft Teams API 的许可和付款模式。
+title: Microsoft Teams API 许可和付款要求
+description: 了解适用于 microsoft Teams API 的许可和付款模型，Microsoft Graph：model=A、model=B 和评估模式。
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: cddf9cf46ae120be49051cadb98a538c6904a5da
-ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
+ms.openlocfilehash: 8af425ddb80405197730de7e1568d68ec292b53b
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160557"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556309"
 ---
-# <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Microsoft Graph 中 Microsoft Teams API 的许可和付款要求
+# <a name="licensing-and-payment-requirements-for-the-microsoft-teams-api"></a>Microsoft Teams API 的许可和付款要求
 
-本文介绍了 Microsoft Teams API 的许可和付款要求。
+本文介绍 Microsoft Graph 中 Microsoft Teams API 的许可和付款要求。
 
-某些 API 提供通过 `model` 查询参数选择许可和付款模型的选项；其他 API 仅支持某一个模型或不支持许可和付款模型。以下许可模型可用：
+某些 API 提供通过 `model` 查询参数选择许可和付款模型的选项；其他 API 仅支持某一个模型或不支持许可和付款模型。
 
-- [`model=A`](#modela-requirements) 限于执行[安全或合规性功能](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms)或需要[受支持的许可证](#required-licenses-for-modela)的应用程序。
-将来，应用还需要为其在[种子设定容量](#seeded-capacity)之外使用的消息付费。
+以下许可模型可用：
 
-- [`model=B`](#modelb-requirements)仅限于不执行[安全或合规性功能](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms)的应用程序。 
-[`model=B`](#modelb-requirements) 从 2022 年 7 月 5 日开始，计费事件将正式发布。 `model=B` 没有许可要求。
+- [`model=A`](#modela-requirements) 限于执行[安全或合规性功能](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms)或需要[受支持的许可证](#required-licenses-for-modela)的应用程序。 将来，应用还需要为其在[种子设定容量](#seeded-capacity)之外使用的消息付费。
 
-- [评估模式（默认）](#evaluation-mode-default-requirements)可以访问 API 进行评估，每个请求应用程序的使用量有限。 如果超出限制，则不会发送更改通知。
+- [`model=B`](#modelb-requirements) 仅限于不执行安全性或符合性功能的应用程序。 从 2022 年 7 月 5 日开始， [`model=B`](#modelb-requirements) 计费事件正式发布。 `model=B` 没有许可要求。
+
+- [评估模式（默认）](#evaluation-mode-default-requirements) 允许访问每个请求应用程序的 API，但出于评估目的，其使用率有限。 如果超出限制，则不会发送更改通知。
 
 ## <a name="modela-requirements"></a>`model=A` 要求
 
@@ -41,9 +41,10 @@ ms.locfileid: "66160557"
 
 `model=B` 仅限于不执行安全或合规性功能的应用程序。 有关详细信息，请参阅 [Microsoft Azure Services 产品条款](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms)的安全与合规性应用程序部分的 API 条款。
 
->**注意：**[`model=B`](#modelb-requirements)从 2022 年 7 月 5 日开始，这些 API 的计费事件将正式发布。 
+> [!NOTE]
+> 从 2022 年 7 月 5 日开始， [这些 API`model=B`](#modelb-requirements) 计费事件正式发布。
 
-|API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | [其他用途的价格](#price-for-additional-use) | 备注 |
+|API   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | [其他用途的价格](#price-for-additional-use) | 备注 |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage 更改通知](/graph/api/subscription-post-subscriptions) | 不适用 | 无 | 每条消息 0.00075 美元 |  |
 | [conversationMember 更改通知](/graph/api/subscription-post-subscriptions) | 不适用 | 无  | 每条通知 0.00075 美元 | |
@@ -52,7 +53,7 @@ ms.locfileid: "66160557"
 
 ## <a name="evaluation-mode-default-requirements"></a>评估模式（默认）要求
 
-|API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | [其他用途的价格](#price-for-additional-use) | 备注 |
+|API   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | [其他用途的价格](#price-for-additional-use) | 备注 |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage 更改通知](/graph/api/subscription-post-subscriptions) |  不适用 | 每个应用每月 500 条消息 | 不适用 |
 | [conversationMember 更改通知](/graph/api/subscription-post-subscriptions) | 不适用 | 每个应用每月 500 条消息 | 不适用 | 
@@ -68,7 +69,8 @@ ms.locfileid: "66160557"
 |修补程序 API 不支持模型 B| 402（需要付款） |`Query parameter 'model' does not support value 'B' for this API. Use billing model 'A'.`|
 |超出评估容量|402（需要付款）|`Evaluation mode capacity has been exceeded. Use a valid billing model.`|
 
-> **注意**：成功的 API 调用并不意味着正确的许可已经就位。 并非所有许可证冲突都可检测到，在某些情况下可能会授予宽限期。
+> [!NOTE]
+> 成功的 API 调用并不意味着已实施适当的许可。 并非所有许可证冲突都可检测到，在某些情况下可能会授予宽限期。
 
 ## <a name="required-licenses-for-modela"></a>`model=A` 需要的许可证 
 
@@ -92,19 +94,20 @@ ms.locfileid: "66160557"
 如果检测到不正确的许可，API 调用将失败，并且不会返回数据。
 具体而言，对于大多数 API，尝试为未经授权的用户获取消息将导致 402 错误代码。 对于更改通知，未经授权的用户发送的消息将不会生成更改通知。 同样，在评估模式下使用的超出种子设定容量的 API 调用和更改通知将失败。
 
-> **注意**：成功的 API 调用并不意味着正确的许可已经就位。 
-> 并非所有许可证冲突都可检测到，在某些情况下可能会授予宽限期。
+> [!NOTE]
+> 成功的 API 调用并不意味着已实施适当的许可。 并非所有许可证冲突都可检测到，在某些情况下可能会授予宽限期。
 > 同样，评估模式下的 API 成功并不能保证调用在种子设定容量内，因为在某些情况下可能会授予宽限期。
 
 ## <a name="seeded-capacity"></a>种子设定容量
 
-种子设定容量是应用在对消耗量计费之前可以使用的容量。
-容量在租户级别共用 - 租户中所有用户的种子设定容量会加在一起与租户中的应用使用情况对比。
-种子设定容量按每个租户的每个应用计 - 如果一个应用消耗完了种子设定容量，其他应用的种子设定容量不会耗尽。
+种子设定容量是应用在对消耗量计费之前可以使用的容量。 容量在租户级别共用&mdash;将租户中所有用户的种子设定容量相加，并与租户中的应用使用情况进行比较。 种子设定容量是每个租户的每个应用&mdash;如果另一个应用用完，应用不会耗尽种子容量。
 
-种子设定容量因 API 而异，具体请参阅[`model=A`要求](#modela-requirements)和[`model=B`要求](#modelb-requirements)
+种子设定的容量因 API 而异;请参 [阅`model=A` 要求](#modela-requirements) 和 [`model=B` 要求](#modelb-requirements)。
 
 ## <a name="price-for-additional-use"></a>其他用途的价格
 
-将来，Microsoft 会对种子设定容量之外的使用量收取费用。 你还可以将 Azure 订阅关联到应用程序注册。
-拥有应用注册的组织负责付款，对于多租户应用，这可能与运行应用的组织不同。
+将来，Microsoft 会对种子设定容量之外的使用量收取费用。 你还可以将 Azure 订阅关联到应用程序注册。 拥有应用注册的组织负责付款，对于多租户应用，该付款可能与运行应用的组织不同。
+
+## <a name="see-also"></a>另请参阅
+
+- [Microsoft Teams API 概述](teams-concept-overview.md)

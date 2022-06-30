@@ -1,89 +1,89 @@
 ---
-title: microsoft Azure AD Graph 和 Microsoft Graph
-description: 介绍 Azure Active Directory (Azure AD) Graph API 和 Microsoft Graph API 之间的功能差异，以帮助你快速轻松地迁移应用。
+title: Azure AD Graph 和 Microsoft Graph 之间的功能差异
+description: 介绍 Azure Active Directory (Azure AD) 图形 API与 Microsoft 图形 API 之间的功能差异，以帮助你快速轻松地迁移应用。
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: d3efd315c0d91784dd6d389041bf11e75371a97b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 4ed6de06843d33c80dfcab28c885b7242ceede29
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077619"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555742"
 ---
-# <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>microsoft Azure AD Graph 和 Microsoft Graph
+# <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 和 Microsoft Graph 之间的功能差异
 
-本文是步骤 *1：查看迁移应用的* 过程的 API [差异的一部分](migrate-azure-ad-graph-planning-checklist.md)。
+本文是 *步骤 1 的一部分：查看*[迁移应用的过程](migrate-azure-ad-graph-planning-checklist.md)的 API 差异。
 
-Microsoft 中的许多Graph功能与它们的对应功能Azure Active Directory (Azure AD) Graph类似。 但是，有一些已经过更改或改进。 在这里，你将了解如何调整应用以充分利用这些差异。  更改通常很小，但值得付出努力。
+Microsoft Graph 中的许多功能的工作方式与 Azure AD (Azure AD) Graph 对应的 Azure Active Directory 类似。 但是，一些已更改或改进。 在这里，你将了解如何调整应用以利用这些差异。  通常，更改是次要的，但非常值得努力。
 
-本文探讨 Microsoft Graph如何处理：
+本文探讨 Microsoft Graph 如何处理：
 
 - 目录架构扩展
 - 差异查询
 - 批处理
 
-## <a name="directory-schema-extensions"></a>目录架构扩展
+## <a name="directory-extensions"></a>目录扩展
 
-如果你的应用使用Azure AD Graph扩展，你可以继续使用与 Microsoft (请求 URL Graph相同的基本 API) ：
+如果应用使用 Azure AD Graph 目录扩展，则可以继续使用与 Microsoft Graph 请求 URL 相同的基本 API () ：
 
-- 使用 [application][/graph/api/resources/application？view=graph-rest-v1.0 资源上的 **extensionProperties** 属性) 定义。
-- 使用 [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties) 操作获取可用的扩展属性。
-- 使用 GET 和 读取扩展值 `$select`
-- 使用 GET 和 搜索扩展值 `$filter`
+- 使用 [extensionProperty](/graph/api/resources/extensionproperty) 资源和关联的方法管理目录扩展定义。
+- 使用 [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties) 操作获取可用扩展属性。
+- 使用 GET 和用户读取扩展值，仅 `$select` 通过 `v1.0` 终结点通过查询读取扩展值
+- 使用 GET 搜索扩展值和 `$filter`
 - 使用 PATCH 更新扩展值
-- 使用 PATCH 删除扩展 (设置为 null **)**
+- 使用 PATCH (设置为 **null**) 删除扩展值
 
-Microsoft Graph 提供了增强的架构扩展开发人员体验，现在它无法向后兼容Azure AD Graph扩展。 若要了解更多信息，请参阅 [添加自定义数据 中的架构扩展](./extensibility-overview.md#schema-extensions)。
+Microsoft Graph 提供增强的架构扩展开发人员体验，目前与 Azure AD Graph 目录扩展不向后兼容。 若要了解详细信息，请参阅 [为应用程序选择扩展类型](extensibility-overview.md#choose-an-extension-type-for-your-application)。
 
 ### <a name="recommended-migration-approach"></a>建议的迁移方法
 
-如果你Azure AD Graph使用目录扩展，请采用增量方法将应用迁移到 Microsoft Graph。
+如果 Azure AD Graph 应用使用目录扩展，请采用增量方法将应用迁移到 Microsoft Graph。
 
-首先，将应用切换到使用 Microsoft Graph API 调用，但允许应用继续利用Azure AD Graph扩展。
+首先，将应用切换到使用 Microsoft 图形 API调用，但让应用继续利用 Azure AD Graph 目录扩展。
 
-然后，你可以切换到使用 Microsoft Graph架构扩展。 在某些情况下，切换将不适合。 如果：
+然后，可以切换到使用 Microsoft Graph 架构扩展。 在某些情况下，切换将不合适。 如果：
 
-- 你的应用使用通过 AD 应用程序创建的目录连接
-- 你的应用设置其他应用在令牌声明中使用的目录扩展值
-- 你的应用设置动态成员资格规则中使用的目录扩展值 
+- 应用使用通过 AD Connect 创建的目录扩展
+- 应用设置其他应用在令牌声明中使用的目录扩展值
+- 应用设置动态成员身份规则中使用的目录扩展值 
 
->**注意**：Graph使用可选声明或动态成员资格规则将 Microsoft 架构扩展属性用作令牌中的声明。
+>**注意**：尚不支持使用可选声明或动态成员身份规则将 Microsoft Graph 架构扩展属性用作令牌中的声明。
 
-若要切换到较新的 Microsoft Graph架构扩展模型，你需要：
+若要切换到较新的 Microsoft Graph 架构扩展模型，需要：
 
-- 使用 Microsoft Graph 定义新的架构扩展Graph。
+- 使用 Microsoft Graph 定义新的架构扩展定义。
 - 更新应用以支持新的架构扩展定义。
-- 将数据从新的架构Azure AD属性迁移到新的 Microsoft Graph架构扩展属性。  不支持自动迁移数据。
+- 将数据从 Azure AD 架构扩展属性迁移到新的 Microsoft Graph 架构扩展属性。  不支持自动迁移数据。
 
 ## <a name="differential-queries"></a>差异查询
 
-Azure AD Graph Microsoft Graph，您可以使用查询跟踪更改。  高级方法在两个 API 之间相似，但语法不同。
+使用 Azure AD Graph 和 Microsoft Graph 可以使用查询跟踪更改。  这两个 API 之间的高级方法类似，但语法不同。
 
-Azure AD Graph调用这些差异查询。  在 Microsoft Graph 中，它们是[delta 查询](./delta-query-overview.md)。
+Azure AD Graph 调用这些差异查询。  在 Microsoft Graph 中，它们是 [增量查询](./delta-query-overview.md)。
 
-下表重点介绍了主要相似之处和区别：
+下表突出显示了关键相似之处和差异：
 
-|Delta 请求 |Azure AD Graph | Microsoft Graph |
+|增量请求 |Azure AD Graph | Microsoft Graph |
 |----|----|----|
-| _初始数据请求_ | 使用查询参数：<br>`GET /groups?deltaLink=` | 使用 函数： <br> `GET /groups/delta` |
+| _初始数据请求_ | 使用查询参数：<br>`GET /groups?deltaLink=` | 使用函数： <br> `GET /groups/delta` |
 | _获取新更改_ | `GET /groups?deltaLink={deltaToken}` | `GET /groups/delta?$deltaToken={deltaToken}` |
-| _从现在开始同步_ |使用自定义 HTTP 标头：<br> `ocp-aad-dq-include-only-delta-token: true` | 使用查询参数： <br> `GET /groups/delta?$deltaToken=latest` |
-| _跟踪 directoryObjects 的更改_ | 在同一操作中 (多个资源组) 组更改：&nbsp;&nbsp;<br> `GET /directoryObject?$filter=isof('User') or isof('Group')&deltaLink=` | 将单独的查询与 Microsoft Graph，每个资源一个。 |
-| _获取资源和关系更改_ | 如果资源具有关系，则所有请求都返回资源和关系更改。 | `GET /groups/delta?$expand=members` |
-| _指示新项和已更改项的响应_ | <ul><li><p>表示使用其标准表示形式新建的实例。</p></li><li><p>更新的实例用其 ID 表示，其中 *至少* 具有已更新的属性。 也可以包括其他属性。</p></li><li><p>关系表示为 `directoryLinkChange` 类型。</p></li></ul>|<ul><li><p>表示使用其标准表示形式新建的实例。</p></li><li><p>更新的实例用其 ID 表示，其中 *至少* 具有已更新的属性。 也可以包括其他属性。</p></li><li><p>关系表示为对标准资源表示法的注释。 这些批注使用 格式 `propertyName@delta` ，例如 `members@delta` ，用于更改组的成员身份。</p></li></ul> |
-| _指示已删除项目的响应_| 指示已删除的项目，其中 *aad.isDeleted* 的其他属性设置为 true。 | 指示具有已删除批注的 \@ 已删除项目。 它还可能包含原因代码，该代码指示项目是否被删除，但可以还原或永久删除。 |
+| _从现在起同步_ |使用自定义 HTTP 标头：<br> `ocp-aad-dq-include-only-delta-token: true` | 使用查询参数： <br> `GET /groups/delta?$deltaToken=latest` |
+| _跟踪 directoryObjects 的更改_ | 获取同一操作中多个资源 (用户和组) 的更改：&nbsp;&nbsp;<br> `GET /directoryObject?$filter=isof('User') or isof('Group')&deltaLink=` | 对 Microsoft Graph 使用单独的查询，每个资源使用一个查询。 |
+| _获取资源和关系更改_ | 如果资源具有关系，则所有请求都将返回资源和关系更改。 | `GET /groups/delta?$expand=members` |
+| _指示新项和已更改项的响应_ | <ul><li><p>表示使用其标准表示形式新建的实例。</p></li><li><p>更新的实例的 ID *至少包含已* 更新的属性。 可能包含其他属性。</p></li><li><p>关系表示为 `directoryLinkChange` 类型。</p></li></ul>|<ul><li><p>表示使用其标准表示形式新建的实例。</p></li><li><p>更新的实例的 ID *至少包含已* 更新的属性。 可能包含其他属性。</p></li><li><p>关系表示为标准资源表示形式的注释。 这些批注使用格式 `propertyName@delta`，例如 `members@delta` 组的成员身份更改。</p></li></ul> |
+| _指示已删除项的响应_| 指示已删除的项，其中 *aad.isDeleted* 的附加属性设置为 true。 | 指示包含已删除批注的 \@已删除项。 它还可能包含一个原因代码，该代码指示项目是否已删除，但可以还原或永久删除。 |
 
-如果你的应用已经存储状态数据，请考虑使用前面显示的"立即同步"来帮助管理到增量查询的过渡。
+如果应用已存储状态数据，请考虑使用前面显示的“从现在开始同步”来帮助管理到增量查询的转换。
 
 ## <a name="batching"></a>批处理
 
-Azure AD Graph一个称为多部分 MIME 邮件的系统来管理批处理。  Microsoft Graph 使用[JSON 批处理](json-batching.md)允许单个批处理操作中最多 20 个请求。 JSON 批处理机制使用起来要简单许多，尤其是与 JSON 分析库一起使用。  它还允许排序批处理操作。  但是，它不能向后兼容Azure AD Graph批处理方法。
+Azure AD Graph 使用名为多部分 MIME 消息的系统来管理批处理。  Microsoft Graph 使用 [JSON 批处理](json-batching.md) 在单个批处理操作中最多允许 20 个请求。 JSON 批处理机制非常简单，尤其是与 JSON 分析库一起使用。  它还允许对批处理操作进行排序。  但是，它与 Azure AD Graph 批处理方法不向后兼容。
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解[microsoft Azure AD Graph](migrate-azure-ad-graph-resource-differences.md)和 Microsoft Graph 之间的资源差异。
-- 再次查看 [检查](migrate-azure-ad-graph-planning-checklist.md) 表。
+- 了解 Azure AD Graph 和 Microsoft Graph 之间的 [资源差异](migrate-azure-ad-graph-resource-differences.md) 。
+- 再次查看 [清单](migrate-azure-ad-graph-planning-checklist.md) 。
 
 <!-- {
   "type": "#page.annotation",

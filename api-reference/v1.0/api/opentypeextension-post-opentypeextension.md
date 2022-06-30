@@ -5,18 +5,18 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 77e5f4e393911b2f511107279ead62c3a89724d1
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 67f1d557a20399bd1c8b884314eb76bf86ff16a8
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821167"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556015"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
 命名空间：microsoft.graph
 
-创建开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象），并在资源的新实例或现有实例中添加自定义属性。
+创建开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象），并在资源的新实例或现有实例中添加自定义属性。 可以在同一操作中创建资源实例中的 [开放扩展，](/graph/api/opentypeextension-post-opentypeextension) 并将自定义数据存储到其中，但特定资源除外。 有关详细信息，请参阅 [开放扩展的已知限制](/graph/known-issues#extensions)。
 
 "权限" ["](#permissions) "部分中列出支持打开扩展的资源。
 
@@ -39,6 +39,8 @@ ms.locfileid: "65821167"
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+<!--
+| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
 ## <a name="http-request"></a>HTTP 请求
 

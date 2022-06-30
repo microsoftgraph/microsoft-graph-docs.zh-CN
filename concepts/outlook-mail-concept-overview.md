@@ -5,12 +5,12 @@ author: angelgolfer-ms
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: be2697d092bf08de57702bcd786c9a1b600e6cb0
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 22e733e880ba5dc1d1c39b806b362c359541addd
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66444339"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556323"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 
@@ -57,7 +57,7 @@ Outlook 是 Microsoft 365 的消息传递通信中心。有了它，你同样能
 
 大部分情况下，应用需要将数据存储在外部数据存储中，并承担数据管理和访问开销。 借助 Microsoft Graph，可以在[创建](/graph/api/user-post-messages#example-2-create-message-draft-that-includes-custom-message-headers)或[发送](/graph/api/user-sendmail#example-2-create-a-message-with-custom-internet-message-headers-and-send-the-message)新邮件或邮件回复时，直接将应用数据添加为 Internet 邮件头。
 
-如果需要添加并随后更新自定义数据，可以[在各个资源实例中存储数据](extensibility-overview.md#open-extensions)。 也可以在适当情况下扩展架构、添加自定义属性，并在 Microsoft Graph 资源中存储类型化数据。 可以让此类[架构扩展](extensibility-overview.md#schema-extensions)可供发现和共享。
+如果需要添加并随后更新自定义数据，可以[在各个资源实例中存储数据](extensibility-overview.md#4-open-extensions)。 也可以在适当情况下扩展架构、添加自定义属性，并在 Microsoft Graph 资源中存储类型化数据。 可以让此类[架构扩展](extensibility-overview.md#3-schema-extensions)可供发现和共享。
 
 ## <a name="where-is-the-data"></a>数据在什么位置？
 

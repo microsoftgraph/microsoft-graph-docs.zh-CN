@@ -1,15 +1,15 @@
 ---
 title: 使用查询参数自定义响应
-description: Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。
+description: Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。 包括通用参数。
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7f87d5c3d410a351c366d5cc66550f868aba4711
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: 5902ece88a3174cc93f30859b15bbf57e31efb78
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034717"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555966"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -28,7 +28,8 @@ Microsoft Graph 支持可选的查询参数，可用于指定和控制响应中�
 ## <a name="odata-system-query-options"></a>OData 系统查询选项
 Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询选项。 这些查询选项与 [OData V4 查询语言][odata-query]兼容。
 
->**注意：** OData 4.0 仅在 GET 操作中支持系统查询选项。
+> [!NOTE]
+> OData 4.0 仅支持 GET 操作中的系统查询选项。
 
 单击示例可以在 [Graph 浏览器][graph-explorer]中试调用它们。
 
@@ -160,8 +161,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 | 条件运算符 | <ul><li> 以及 (`and`) </li><li> 或 (`or`)</li> |
 | 函数 | <ul><li> 开头为 （`startsWith`） </li><li> 结尾为 （`endsWith`）</li><li> 包含 (`contains`)</li></ul>|
 
-
-> **注意:** 对这些运算符的支持因实体而异，某些属性仅在 [高级查询](/graph/aad-advanced-queries)中支持`$filter`。有关详细信息，请参阅特定实体文档。
+> [!NOTE]
+> 对这些运算符的支持因实体而异，某些属性仅在[高级查询](/graph/aad-advanced-queries)中支持`$filter`。 有关详细信息，请参阅特定实体文档。
 
 ### <a name="filter-using-lambda-operators"></a>使用 lambda 运算符进行筛选
 
@@ -194,7 +195,9 @@ GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuI
 ```
 
 若要对 `any` 子句内表达式的结果求反，请使用 `not` 运算符，而不是 `ne` 运算符。 例如，以下查询仅检索未分配 `admin@contoso.com` 的 **imAddress** 的用户。
->**注意:** 对于像用户这样的目录对象，`not` 和 `ne` 运算符仅在 [高级查询](/graph/aad-advanced-queries) 中受支持。
+
+> [!NOTE]
+> 对于用户等目录对象，仅[在高级查询](/graph/aad-advanced-queries)中支持`not`和`ne`运算符。
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true
@@ -209,7 +212,8 @@ ConsistencyLevel: eventual
 
 下表展示了一些使用 `$filter` 查询参数的示例。 如需了解 `$filter` 语法的更多详情，请参阅 [OData 协议][odata-filter]。
 
-> **注意：** 单击示例可以在 [Graph 浏览器][graph-explorer]中试调用。
+> [!NOTE]
+> 单击示例可以在 [Graph 浏览器][graph-explorer]中试调用它们。
 
 | 说明 | 示例
 |:------------|:--------|
@@ -239,8 +243,8 @@ ConsistencyLevel: eventual
 GET https://graph.microsoft.com/v1.0/users?$format=json
 ```
 
-
-> **注意：**`$format` 查询参数支持许多格式（例如，atom、xml 和 json），但可能无法返回所有格式的结果。
+> [!NOTE]
+> `$format` 查询参数支持许多格式（例如，atom、xml 和 json），但可能无法返回所有格式的结果。
 
 ## <a name="orderby-parameter"></a>orderby 参数
 
@@ -266,7 +270,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
 
-> **注意:** 如果指定 `$filter`，服务器会推断结果的排序顺序。 如果同时使用 `$orderby` 和 `$filter` 获取消息，因为服务器始终会推断 `$filter` 结果的排序顺序，必须[以特定的方式指定属性](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query)。
+> [!NOTE]
+> 指定 `$filter` 服务器将推断结果的排序顺序。 如果同时使用 `$orderby` 和 `$filter` 获取消息，因为服务器始终会推断 `$filter` 结果的排序顺序，必须[以特定的方式指定属性](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query)。
 
 
 下面的示例展示了如何按 **subject** 和 **importance** 属性筛选查询，再按 **subject**、**importance** 和 **receivedDateTime** 属性进行降序排序。
@@ -293,8 +298,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
-
-> **重要说明：** 一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。 这对于可能返回大型结果集的查询尤为有用。 限制每行返回的属性将减少网络负载并帮助提升应用的性能。
+> [!IMPORTANT]
+> 一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。 这对于可能返回大型结果集的查询尤为有用。 限制每行返回的属性将减少网络负载并帮助提升应用的性能。
 >
 > 在 `v1.0` 中，从 [directoryObject](/graph/api/resources/directoryobject) 派生的一些 Azure AD 资源（如 [user](/graph/api/resources/user) 和 [group](/graph/api/resources/group)）在读取时返回受限的默认属性子集。对于这些资源，必须使用 `$select` 将属性返回到默认集之外。  
 
@@ -306,8 +311,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
-
-> **注意：** 一些 Microsoft Graph API 使用 `$skip` 实现分页，如 Outlook 邮件和日历（**message**、**event** 和 **calendar**）。 当查询结果跨多个页面时，这些 API 会返回 `@odata:nextLink` 属性，具有包含 `$skip` 参数的 URL。 可以使用此 URL 返回下一页结果。 若要了解详细信息，请参阅[分页](./paging.md)。
+> [!NOTE]
+> 某些Microsoft Graph API, 如 Outlook 邮件和日历（**邮件**、 **事件** 和 **日历**）使用 `$skip` 实现分页。 当查询结果跨多个页面时，这些 API 会返回 `@odata:nextLink` 属性，具有包含 `$skip` 参数的 URL。 可以使用此 URL 返回下一页结果。 若要了解详细信息，请参阅[分页](./paging.md)。
 >
 > 默认情况下，针对目录对象的高级查询所需的 **ConsistencyLevel** 标头不包含在后续页面请求中。必须在后续页面中显式设置它。
 
@@ -315,7 +320,9 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 由于服务器端分页或由于使用 [`$top`](#top-parameter) 参数来限制响应的页面大小，致使一些请求返回多页数据。许多 Microsoft Graph API 使用 `skipToken` 查询参数来引用结果的后续页面。   
 `$skiptoken` 参数包含引用下一页结果的不透明令牌，并在响应的 `@odata.nextLink` 属性中提供的 URL 中返回。若要了解详细信息，请参阅[分页](./paging.md)。
-> **注意**:如果对目录对象的查询使用 OData 计数(在查询字符串中添加 `$count=true`)，则 `@odata.count` 属性将仅在第一页中出现。
+
+> [!NOTE]
+> 如果对目录对象的查询使用 OData Count（在查询字符串中添加 `$count=true` ），则 `@odata.count` 属性仅在第一页中显示。
 >
 > 默认情况下，针对目录对象的高级查询所需的 **ConsistencyLevel** 标头不包含在后续页面请求中。必须在后续页面中显式设置它。
 
@@ -333,7 +340,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-
+> [!NOTE]
 > 默认情况下，针对目录对象的高级查询所需的 **ConsistencyLevel** 标头不包含在后续页面请求中。必须在后续页面中显式设置它。
 
 ## <a name="error-handling-for-query-parameters"></a>查询参数的错误处理

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 91fc87fb061d2e756aac80998c895df041e56638
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: e56cf53369e7b63e04fe9cf6a882fb6361ee31e5
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694588"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555735"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -92,6 +92,13 @@ PATCH /users/{id | userPrincipalName}
 > [!NOTE] 
 > - 只有应用程序权限的应用无法更新以下属性：**aboutMe**、 **birthday**、 **employeeHireDate**、 **interests**、 **mySite**、 **pastProjects**、 **preferredName**、 **responsibilities**、 **schools**、 and **skills**。
 > - 要更新以下属性，必须在其 PATCH 请求中指定它们，无需包含上表中列出的其他属性：**aboutMe**、**birthday**、**interests**、**mySite**、**pastProjects**、**preferredName**、**职责**、**schools** 和 **skills**。
+
+### <a name="manage-extensions-and-associated-data"></a>管理扩展名和关联的数据
+
+使用此 API 管理用户的目录、架构和打开扩展及其数据，如下所示：
+
++ 在现有用户的扩展中添加、更新和存储数据
++ 对于目录和架构扩展，通过将自定义扩展属性的值设置为 `null`来删除任何存储的数据。 对于打开的扩展，请使用 [删除打开的扩展](/graph/api/opentypeextension-delete) API。
 
 ## <a name="response"></a>响应
 

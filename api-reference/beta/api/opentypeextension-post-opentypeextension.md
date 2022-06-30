@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: a50cd0f2569fb9f076a89fa9275a891b7e487ae7
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 6dffafea076698b90a5adfe1dd83114c7e2eadcc
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820981"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555259"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -20,7 +20,7 @@ ms.locfileid: "65820981"
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-创建 open extension ([openTypeExtension](../resources/opentypeextension.md) 对象) 并在受支持资源的新实例或现有实例中添加自定义属性。
+创建开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象），并在资源的新实例或现有实例中添加自定义属性。 可以在资源实例中 [创建打开的扩展，](/graph/api/opentypeextension-post-opentypeextension) 并将自定义数据存储在同一操作中，但特定资源除外。 有关详细信息，请参阅 [开放扩展的已知限制](/graph/known-issues#extensions) 。
 
 "权限" ["](#permissions) "部分中列出支持打开扩展的资源。
 
@@ -32,8 +32,6 @@ ms.locfileid: "65820981"
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [baseTask](../resources/basetask.md) (已弃用)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
-| [baseTaskList](../resources/basetasklist.md) (已弃用)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 | [设备](../resources/device.md) | Directory.AccessAsUser.All | 不支持 | Device.ReadWrite.All |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [组](../resources/group.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
@@ -45,6 +43,10 @@ ms.locfileid: "65820981"
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+| [baseTask](../resources/basetask.md) (已弃用)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
+| [baseTaskList](../resources/basetasklist.md) (已弃用)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
+<!--
+| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -112,7 +114,7 @@ POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
 
 提供 [openTypeExtension](../resources/opentypeextension.md) 的 JSON 正文，其中包含以下必需的名称值对和任何其他自定义数据。 JSON 负载中的数据可以是基元类型或基元类型数组。
 
-| Name       | 值 |
+| 名称       | 值 |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |

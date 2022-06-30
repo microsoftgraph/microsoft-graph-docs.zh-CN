@@ -1,16 +1,16 @@
 ---
 title: Microsoft Teams API 概述
-description: 'Microsoft Teams 是团队合作和智能通信的终极中心。 '
+description: 使用 Microsoft Graph 中的 Microsoft Teams API 自动执行团队生命周期、创建和管理团队和频道、部署应用以及获取有关更改的通知。
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f0bed81ec3857dcb2ef7678b4ff1b1644e0eaae2
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: dedda77e759cb80d1e0579f8aef51847d5afa435
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510502"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556330"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 
@@ -87,7 +87,8 @@ Microsoft Teams 支持订阅对[频道](/graph/api/resources/channel)和[聊天]
 
 在查找此服务的 API 参考？
 
-请参阅 [Microsoft Graph 中的 Teams API](/graph/api/resources/teams-api-overview)。
+- [Microsoft Graph v1.0 中的 Teams API](/graph/api/resources/teams-api-overview)
+- [Microsoft Graph beta 版中的 Teams API](/graph/api/resources/teams-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>后续步骤
 

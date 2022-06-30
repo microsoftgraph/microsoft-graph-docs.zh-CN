@@ -3,14 +3,14 @@ title: extensionSchemaProperty 资源类型
 description: 使用 **extensionSchemaProperty** 资源将属性的名称及其类型定义为 schemaExtension 定义的一部分。
 ms.localizationpriority: medium
 author: keylimesoda
-ms.prod: ''
+ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 76f1c32857eb2912c5db85896277f0b80b4e1e0a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e86f97f8bb56214e376ceca8db3b00356561f6a2
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123494"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556127"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty 资源类型
 
@@ -23,9 +23,10 @@ ms.locfileid: "59123494"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|String| 被定义为架构扩展组成部分的强类型属性的名称。|
-|type|String| 被定义为架构扩展组成部分的属性的类型。允许的值为 *Binary、Boolean、DateTime、Integer* 或 *String*。请参阅下表获取更多详细信息。|
+|type|字符串| 定义为架构扩展的一部分的属性的类型。  允许的值为 `Binary`、`Boolean`或 `Integer` `DateTime``String`. 有关更多详细信息，请参阅下表。|
 
-#### <a name="supported-property-data-types"></a>受支持的属性数据类型
+### <a name="supported-property-data-types"></a>受支持的属性数据类型
+
 在架构扩展中定义属性时，支持以下数据类型：
 
 | 属性类型 | 备注 |

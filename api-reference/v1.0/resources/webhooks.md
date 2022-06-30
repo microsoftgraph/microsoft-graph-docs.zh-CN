@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: 93c2b55d9515a2976716633d663dfdcb23a186b3
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 8d95f4cdb8402b0b3b7a7188cea8b30b2477fbc4
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898942"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555728"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -35,7 +35,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | 安全[警报][] | 对特定警报更改：<br>`/security/alerts/{id}` <br>对已筛选的警报更改：<br> `/security/alerts/?$filter`| 否 |
 | Teams [callRecord][] | 更改 _所有_ 呼叫记录： `/communications/callRecords` | 否 |
 | Teams [聊天][] | 对租户中任何聊天的更改：<br>`/chats` <br>对特定聊天的更改：<br>`/chats/{id}` | 是 |
-| Teams [chatMessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
+| Teams [chatMessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` <br>特定用户在所有聊天中对聊天消息所做的更改是以下内容的一部分：<br>`/users/{id}/chats/getAllMessages` | 是 |
 | Teams [频道][] | 对所有团队中频道的更改：<br>`/teams/getAllChannels` <br>对特定团队中频道的更改：<br>`/teams/{id}/channels` | 是 |
 | Teams [conversationMember][] | 对特定团队中成员身份的更改：<br>`/teams/{id}/members` <br> 对特定团队下所有频道中的成员身份的更改：<br>`teams/{id}/channels/getAllMembers` <br> 对特定聊天中成员身份的更改：<br>`/chats/{id}/members` <br> 对所有聊天中成员身份的更改：<br>`/teams/getAllMembers` | 是 |
 | Teams [团队][] | 对租户中任何团队的更改：<br>`/teams` <br>对特定团队的更改：<br>`/teams/{id}` | 是 |

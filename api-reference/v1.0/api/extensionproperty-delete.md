@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0982b53a52d60f9bfe1c63877121d868afdd40f2
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 3fdada2cb83821780a2e691d116d84d43adca5a8
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016944"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555462"
 ---
 # <a name="delete-extensionproperty"></a>删除 extensionProperty
 
 命名空间：microsoft.graph
 
-删除 [extensionProperty](../resources/extensionproperty.md)。
+删除 [extensionProperty](../resources/extensionproperty.md) 对象。 只能删除未从本地 Active Directory 同步的属性。
 
 ## <a name="permissions"></a>权限
 

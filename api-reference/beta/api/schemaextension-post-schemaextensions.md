@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: f1bce914868eeb4ccb02daaa608d6d46f00f8325
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: c9ec58c2aaa19e31bd588338e3a05d73d875ce54
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296470"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555242"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -20,7 +20,7 @@ ms.locfileid: "65296470"
 
 创建一个新的 [schemaExtension](../resources/schemaextension.md) 定义以扩展[支持资源类型](/graph/extensibility-overview#supported-resources)。
 
-架构扩展允许将强类型自定义数据添加到资源。创建架构扩展的应用是所有者应用。取决于扩展[状态](/graph/extensibility-overview#schema-extensions-lifecycle)，所有者应用可以且仅所有者应用可以更新或删除扩展。 
+架构扩展允许将强类型自定义数据添加到资源。创建架构扩展的应用是所有者应用。取决于扩展[状态](/graph/api/resources/schemaextension#schema-extensions-lifecycle)，所有者应用可以且仅所有者应用可以更新或删除扩展。 
 
 请参阅如何[定义描述培训课程的架构扩展](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course)的示例，通过架构扩展定义[使用培训课程数据创建新组](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data)，并[将培训课程数据添加到现有组](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group)。
 
@@ -32,10 +32,10 @@ ms.locfileid: "65296470"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.ReadWrite.All 和 Directory.ReadWrite.All |
+|应用程序 | Application.ReadWrite.All and Directory.ReadWrite.All |
 
 > [!NOTE]
-> 此外，对于委托的流，已登录用户必须是调用应用程序的所有者或 (应用程序的所有者，其) **appId** 用于设置 **所有者** 属性。
+> 此外，对于委派的流程，登录用户必须是调用应用程序的所有者，或用于设置 **所有者** 属性的（所带应用程序）**appId** 所有者。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

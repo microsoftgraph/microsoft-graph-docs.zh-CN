@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 123ef7129156d1eb34e213042c126564d444ff11
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 640359678a5a88a19d0f9e9d994c7860d936d97c
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399241"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556106"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -55,6 +55,14 @@ GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unifi
 `$search`查询参数仅支持对 **displayName** 和 **说明** 字段进行标记化，并且需要 **ConsistencyLevel** 标头。 **displayName** 和 **说明以外的字段** 默认为`$filter``startswith`行为。
 
 有关 OData 查询选项的详细信息，请参阅 [ OData 查询参数](/graph/query-parameters)。 有关使用 **ConsistencyLevel** 和`$count`的详细信息，请参阅 [ Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+
+### <a name="retrieve-extensions-and-associated-data"></a>检索扩展和关联数据
+
+| 扩展类型       | 备注                      |
+|----------------------|-------------------------------|
+| 架构扩展    | 仅与 `$select`一起返回。 |
+| 开放扩展      | 仅与 `$expand`一起返回。 |
+| 目录扩展 | 默认返回。          |
 
 ## <a name="request-headers"></a>请求标头
 

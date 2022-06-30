@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 21c5990ede8784afc6bc4b4be1fb0b46409cd6c9
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: dd040ab6ae09244db7f1221172f4139904a46801
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016951"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555280"
 ---
 # <a name="delete-extensionproperty"></a>删除 extensionProperty
 
@@ -18,7 +18,7 @@ ms.locfileid: "65016951"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 [extensionProperty](../resources/extensionproperty.md)。
+删除 [extensionProperty](../resources/extensionproperty.md) 对象。 只能删除未从本地 Active Directory 同步的属性。
 
 ## <a name="permissions"></a>权限
 

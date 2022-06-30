@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6e132bb36fcfb68da4c2393fae615cad4a7ca97a
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 47df12b2dc19e56890b026662b02505f42c9ae97
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211722"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556276"
 ---
 # <a name="update-internaldomainfederation"></a>更新 internalDomainFederation
 命名空间：microsoft.graph
@@ -26,7 +26,9 @@ ms.locfileid: "65211722"
 |:---|:---|
 |委派（工作或学校帐户）|Domain.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|Domain.ReadWrite.All|
+|应用程序|Domain.ReadWrite.All|
+
+必须为调用用户或应用分配全局管理员 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,33 +52,33 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|activeSignInUri|字符串|使用为Azure Active Directory (Azure AD) 中的单一登录设置的联合域进行身份验证时，活动客户端使用的终结点 URL。 对应于 [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings) 的 **ActiveLogOnUri** 属性。|
+|activeSignInUri|String|使用 Azure Active Directory (Azure AD) 中为单一登录设置的联合域进行身份验证时，活动客户端使用的终结点 URL。 对应于 [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings) 的 **ActiveLogOnUri** 属性。|
 |displayName|String|联合标识提供者 (IdP) 的显示名称。 |
-|federatedIdpMfaBehavior|federatedIdpMfaBehavior|确定当联合用户访问受需要 MFA 的条件访问策略管理的应用程序时，Azure AD是否接受联合 IdP 执行的 MFA。 可能的值包括 `acceptIfMfaDoneByFederatedIdp`、`enforceMfaByFederatedIdp`、`rejectMfaByFederatedIdp`、`unknownFutureValue`。 有关详细信息，请参阅 [federatedIdpMfaBehavior 值](#federatedidpmfabehavior-values)。|
-|isSignedAuthenticationRequestRequired|Boolean|如果 `true`SAML 身份验证请求发送到联合 SAML IdP 时，Azure AD将使用 OrgID 签名密钥对这些请求进行签名。 如果 `false` (默认) ，则发送到联合 IdP 的 SAML 身份验证请求不会签名。|
-|issuerUri|字符串|联合服务器的颁发者 URI。|
-|metadataExchangeUri|字符串|用于从丰富的客户端应用程序进行身份验证的元数据交换终结点的 URI。|
-|nextSigningCertificate|字符串|回退令牌签名证书，该证书用于在主签名证书过期时对令牌进行签名。 格式化为联合 IdP 令牌签名证书公共部分的 Base64 编码字符串。 需要与 X509Certificate2 类兼容。 与 **signingCertificate** 非常类似，如果需要在自动滚动更新之外进行滚动更新、正在设置新的联合身份验证服务，或者在联合身份验证服务证书更新后联合身份验证属性中不存在新的令牌签名证书，则使用 **nextSigningCertificate** 属性。|
-|passiveSignInUri|String|登录到Azure AD服务时，基于 Web 的客户端会定向到的 URI。 |
+|federatedIdpMfaBehavior|federatedIdpMfaBehavior|确定当联合用户访问受需要 MFA 的条件访问策略管理的应用程序时，Azure AD 是否接受联合 IdP 执行的 MFA。 可能的值包括 `acceptIfMfaDoneByFederatedIdp`、`enforceMfaByFederatedIdp`、`rejectMfaByFederatedIdp`、`unknownFutureValue`。 有关详细信息，请参阅 [federatedIdpMfaBehavior 值](#federatedidpmfabehavior-values)。|
+|isSignedAuthenticationRequestRequired|布尔|如果 `true`将 SAML 身份验证请求发送到联合 SAML IdP 时，Azure AD 将使用 OrgID 签名密钥对这些请求进行签名。 如果 `false` (默认) ，则发送到联合 IdP 的 SAML 身份验证请求不会签名。|
+|issuerUri|String|联合服务器的颁发者 URI。|
+|metadataExchangeUri|String|用于从丰富的客户端应用程序进行身份验证的元数据交换终结点的 URI。|
+|nextSigningCertificate|String|回退令牌签名证书，该证书用于在主签名证书过期时对令牌进行签名。 格式化为联合 IdP 令牌签名证书公共部分的 Base64 编码字符串。 需要与 X509Certificate2 类兼容。 与 **signingCertificate** 非常类似，如果需要在自动滚动更新之外进行滚动更新、正在设置新的联合身份验证服务，或者在联合身份验证服务证书更新后联合身份验证属性中不存在新的令牌签名证书，则使用 **nextSigningCertificate** 属性。|
+|passiveSignInUri|String|登录到 Azure AD 服务时基于 Web 的客户端定向到的 URI。 |
 |preferredAuthenticationProtocol|authenticationProtocol|首选身份验证协议。 可能的值包括 `wsFed`、`saml`、`unknownFutureValue`。 |
 |promptLoginBehavior|promptLoginBehavior|设置登录提示的首选行为。 可能的值包括 `translateToFreshPasswordAuthentication`、`nativeSupport`、`disabled`、`unknownFutureValue`。|
-|signingCertificate|字符串|用于对传递给Microsoft 标识平台的令牌进行签名的当前证书。 该证书的格式设置为联合 IdP 令牌签名证书公共部分的 Base64 编码字符串，并且必须与 X509Certificate2 类兼容。 <br>此属性在以下方案中使用： <li> 如果需要在自动滚动更新之外进行滚动更新 <li> 正在设置新的联合身份验证服务 <li> 如果更新联合身份验证服务证书后，联合身份验证属性中不存在新的令牌签名证书。<br>Azure AD通过自动滚动更新过程更新证书，在此过程中，它会尝试在当前证书过期前 30 天从联合身份验证服务元数据中检索新证书。 如果新证书不可用，Azure AD每天监视元数据，并在有新证书可用时更新域的联合身份验证设置。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
+|signingCertificate|String|用于对传递给Microsoft 标识平台的令牌进行签名的当前证书。 该证书的格式设置为联合 IdP 令牌签名证书公共部分的 Base64 编码字符串，并且必须与 X509Certificate2 类兼容。 <br>此属性在以下方案中使用： <li> 如果需要在自动滚动更新之外进行滚动更新 <li> 正在设置新的联合身份验证服务 <li> 如果更新联合身份验证服务证书后，联合身份验证属性中不存在新的令牌签名证书。<br>Azure AD 通过自动滚动更新过程更新证书，在此过程中，Azure AD 会尝试在当前证书过期前 30 天从联合身份验证服务元数据中检索新证书。 如果新证书不可用，Azure AD 将每天监视元数据，并在有新证书可用时更新域的联合身份验证设置。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|提供签名证书上次更新的状态和时间戳。|
-|signOutUri|字符串|客户端注销Azure AD服务时重定向到的 URI。 对应于 [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings) 的 **LogOffUri** 属性。|
+|signOutUri|String|客户端注销 Azure AD 服务时重定向到的 URI。 对应于 [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings) 的 **LogOffUri** 属性。|
 
 ### <a name="federatedidpmfabehavior-values"></a>federatedIdpMfaBehavior 值
 
 | 成员 | 说明 |
 | :--- | :--- |
-| acceptIfMfaDoneByFederatedIdp | Azure AD接受联合标识提供者执行的 MFA。 如果联合标识提供者未执行 MFA，Azure AD执行 MFA。 |
-| enforceMfaByFederatedIdp | Azure AD接受联合标识提供者执行的 MFA。 如果联合标识提供者未执行 MFA，它将请求重定向到联合标识提供者以执行 MFA。 |
-| rejectMfaByFederatedIdp | Azure AD始终执行 MFA 并拒绝联合标识提供者执行的 MFA。 |
+| acceptIfMfaDoneByFederatedIdp | Azure AD 接受联合标识提供者执行的 MFA。 如果联合标识提供者未执行 MFA，Azure AD 将执行 MFA。 |
+| enforceMfaByFederatedIdp | Azure AD 接受联合标识提供者执行的 MFA。 如果联合标识提供者未执行 MFA，它将请求重定向到联合标识提供者以执行 MFA。 |
+| rejectMfaByFederatedIdp | Azure AD 始终执行 MFA 并拒绝联合标识提供者执行的 MFA。 |
 
 **注意：****federatedIdpMfaBehavior** 是 [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings) 的 **SupportsMfa** 属性的进化版本。 
 + 不支持在 **federatedIdpMfaBehavior** 和 **SupportsMfa** 之间切换。
-+ 设置 **federatedIdpMfaBehavior** 属性后，Azure AD将忽略 **SupportsMfa** 设置。
-+ 如果从未设置 **federatedIdpMfaBehavior** 属性，Azure AD将继续遵循 **SupportsMfa** 设置。
-+ 如果未设置 **federatedIdpMfaBehavior** 和 **SupportsMfa**，则Azure AD将默认为`acceptIfMfaDoneByFederatedIdp`行为。
++ 设置 **federatedIdpMfaBehavior** 属性后，Azure AD 将忽略 **SupportsMfa** 设置。
++ 如果从未设置 **FederatedIdpMfaBehavior** 属性，Azure AD 将继续遵循 **SupportsMfa** 设置。
++ 如果既未设置 **federatedIdpMfaBehavior** ，也不设置 **SupportsMfa** ，则 Azure AD 将默认为 `acceptIfMfaDoneByFederatedIdp` 行为。
 
 
 

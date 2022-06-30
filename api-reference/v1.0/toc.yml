@@ -99,14 +99,8 @@ items:
           - name: 获取用户更改（示例）
             href: /graph/delta-query-users?context=graph/api/1.0
       - name: 添加自定义数据
-        items:
-          - name: 概述
-            href: /graph/extensibility-overview?context=graph/api/1.0
-            displayName: 'add custom data, extensions, resources using extensions'
-          - name: 使用开放扩展（示例）
-            href: /graph/extensibility-open-users?context=graph/api/1.0
-          - name: 使用架构扩展（示例）
-            href: /graph/extensibility-schema-groups?context=graph/api/1.0
+        displayName: 'directory extensions, schema extensions, open extensions, extension attributes'
+        href: /graph/extensibility-overview?context=graph/api/1.0
       - name: 使用 Graph 浏览器
         items:
           - name: 入门
@@ -905,21 +899,6 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: 扩展
-                items:
-                  - name: Extension 属性
-                    href: resources/extensionproperty.md
-                    items:
-                      - name: 列出
-                        href: api/application-list-extensionproperty.md
-                      - name: 创建
-                        href: api/application-post-extensionproperty.md
-                      - name: 获取
-                        href: api/extensionproperty-get.md
-                      - name: 删除
-                        href: api/extensionproperty-delete.md
-                      - name: 获取可用扩展属性
-                        href: api/directoryobject-getavailableextensionproperties.md
               - name: 所有者
                 items:
                   - name: 列表
@@ -4562,6 +4541,22 @@ items:
                 href: api/educationoutcome-update.md
       - name: 扩展
         items:
+          - name: 概述
+            href: /graph/extensibility-overview?context=graph/api/1.0&preserve-view=true
+          - name: 目录扩展
+            displayname: 'Groups, Users, Applications, Organization, Devices'
+            href: resources/extensionproperty.md
+            items:
+              - name: 列出
+                href: api/application-list-extensionproperty.md
+              - name: 创建
+                href: api/application-post-extensionproperty.md
+              - name: 获取
+                href: api/extensionproperty-get.md
+              - name: 删除
+                href: api/extensionproperty-delete.md
+              - name: 获取可用扩展属性
+                href: api/directoryobject-getavailableextensionproperties.md
           - name: 开放扩展
             href: resources/opentypeextension.md
             displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
