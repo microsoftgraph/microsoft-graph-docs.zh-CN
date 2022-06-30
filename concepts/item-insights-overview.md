@@ -1,18 +1,19 @@
 ---
-title: Microsoft Graph 中的项见解概述
-description: 用户级别的项见解功能和自定义概述
+title: Microsoft Graph 中的项见解
+description: 根据你在 Microsoft 365 中基于文件的协作体验，了解项见解、面向你和协作者的以用户为中心的建议。
 author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e605a2f756e64fb6fff45f1888c6d13d549763e0
-ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.openlocfilehash: b51f797ae626ecf60c6d2f0a4f9fb395ed97b601
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63780483"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444864"
 ---
-# <a name="overview-of-item-insights"></a>项见解概述
+# <a name="item-insights-overview"></a>项见解概述
+
 项见解是基于你在 Microsoft 365 中的协作工作，向你和与你协作的人员提供的以用户为中心的建议。
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGbr] 
@@ -70,6 +71,7 @@ Microsoft 不会使用你在专用空间中工作的活动来为其他人计算�
 * 对于已禁用项见解的用户，在 Microsoft Graph API 中查询 [趋势](/graph/api/resources/insights-trending) 和 [已使用](/graph/api/resources/insights-used) 的资源将返回 `HTTP 403 Forbidden`。
 
 ## <a name="api-reference"></a>API 参考
+
 在查找此服务的 API 参考？
 
 - [Microsoft Graph v1.0 中的见解 API](/graph/api/resources/officegraphinsights)

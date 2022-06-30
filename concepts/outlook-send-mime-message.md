@@ -1,15 +1,15 @@
 ---
-title: 发送含有 MIME 内容的电子邮件
-description: 电子邮件客户端可以通过 Exchange 以 MIME 邮件格式发送电子邮件。
+title: 使用 Outlook 邮件 API 发送包含 MIME 内容的电子邮件
+description: 电子邮件客户端可以通过 Exchange 发送采用 MIME 邮件格式的邮件，并跨多个电子邮件平台进行通信。
 author: isvargasmsft
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: c1aec55ea0d8fa405047bc9c7e3a31dbd3d06deb
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 7f86ff3ab34c8bdc640fe7874928c2d8400d0e26
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510511"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446131"
 ---
 # <a name="send-messages-with-mime-content"></a>使用 MIME 内容发送邮件
 
@@ -195,4 +195,7 @@ CgAAAA==
 |--------|------|----|-------|
 | MIME 内容格式错误、丢失 | POST, PUT | 400 | MIME 内容无效的 base64 字符串。 |
 
+## <a name="next-steps"></a>后续步骤
 
+- [为什么与 Outlook 邮件集成](outlook-mail-concept-overview.md)
+- 在 Microsoft Graph v1.0 中 [使用邮件 API](/graph/api/resources/mail-api-overview) 及其 [用例](/graph/api/resources/mail-api-overview#common-use-cases)

@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: 9bbd29d374160fdd8c86b6bd34293ce7fe241e17
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: a842740ca0722580c32af5be84fbfd8c5b9d907d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898824"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446040"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>设置包含资源数据的更改通知
 
@@ -57,7 +57,7 @@ Microsoft Teams [chatMessage](/graph/api/resources/chatmessage)、[onlineMeeting
 - 用户邮箱中的新事件或已更改事件：`/users/{id}/events`
 - 用户邮箱中的新邮件或已更改邮件：`/users/{id}/messages`
 - 用户 mailFolder 中的新邮件或已更改邮件：`/users/{id}/mailFolders/{id}/messages`
-- Teams 会议状态信息更新：`/communications/onlineMeetings/{meeting-id}`
+- Teams 会议状态信息更新：`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{joinWebUrl}`
 
 包含 **chatMessage**、 **onlineMeeting** 或 **状态** 资源数据的更改通知由已更改实例的所有属性组成。 它们不支持仅返回实例的所选属性。 
 
@@ -609,3 +609,4 @@ decryptedPayload += decipher.final('utf8');
 - [创建订阅](/graph/api/subscription-post-subscriptions)
 - [更新订阅](/graph/api/subscription-update)
 - [Microsoft Graph 中 Outlook 资源的更改通知](outlook-change-notifications-overview.md)
+- [Microsoft Graph 中联机会议的更改通知](changenotifications-for-onlinemeeting.md) 
