@@ -1,21 +1,21 @@
 ---
-title: 使用 Microsoft Graph 获取 OneNote 内容和结构
-description: " Microsoft 365 中的企业笔记本"
+title: 使用 OneNote API 获取 OneNote 内容和结构
+description: 向目标终结点发送 GET 请求，获取 OneNote 内容和结构。 然后使用查询字符串选项筛选查询并提高性能。
 author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 13a017ac30de19f978c21b1da549efefac985ae7
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 31bcfd207fca8e04f4d476f243752476c65d8a1e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586868"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446173"
 ---
-# <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>使用 Microsoft Graph 获取 OneNote 内容和结构
+# <a name="get-onenote-content-and-structure"></a>获取 OneNote 内容和结构
 
 **适用于**：OneDrive 上的消费者笔记本 | Microsoft 365 上的企业级笔记本
 
-若要获取 OneNote 内容和结构，请向目标终结点发送 GET 请求。例如:
+若要使用 Microsoft Graph OneNote API 获取 OneNote 内容和结构，请向目标终结点发送 GET 请求。 例如：
 
 `GET ../onenote/pages/{id}`
 
@@ -24,11 +24,11 @@ ms.locfileid: "64586868"
 通过使用查询字符串选项，可以筛选查询并提高性能。
 
 > [!NOTE]
-> 如果正在构建支持以下方案之一的解决方案，则会遇到 OneNote API 限制:
+> 如果正在构建支持以下方案之一的解决方案，则会达到 OneNote API 限制：
 > - 备份/还原 OneNote 部分
 > - 备份/还原 OneNote 笔记本
-> 
-> 有关备份和还原操作，请参阅 [发现文件和检测大规模更改的最佳做法](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online)。
+>
+> 有关备份和还原操作，请参阅 [发现文件和检测大规模更改的最佳做法](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true)。
 
 <a name="request-uri"></a>
 
@@ -38,8 +38,6 @@ ms.locfileid: "64586868"
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
-<br/>
-
 然后追加要检索的资源的终结点。 （[资源路径](#resource-paths-for-get-requests)会显示在下一个节中。）
 
 完整的请求 URI 类似于以下示例之一：
@@ -48,7 +46,8 @@ ms.locfileid: "64586868"
 - `https://graph.microsoft.com/v1.0/me/onenote/notes/pages`
 - `https://graph.microsoft.com/v1.0/me/onenote/pages?select=title,self`
 
-> **注意：** 了解有关 [服务根 URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url) 的详细信息。
+> [!NOTE]
+> 了解有关[服务根 URL](/graph/api/resources/onenote-api-overview#root-url) 的详细信息。
 
 <a name="resource-paths"></a>
 
@@ -76,13 +75,9 @@ ms.locfileid: "64586868"
 
 `../pages[?filter,orderby,select,expand,top,skip,search,count]`
 
-<br/>
-
 从特定节获取页面（元数据）。
 
 `../sections/{section-id}/pages[?filter,orderby,select,expand,top,skip,search,count,pagelevel]`
-
-<br/>
  
 `search` 查询字符串选项仅适用于消费者笔记本。
 
@@ -98,29 +93,23 @@ ms.locfileid: "64586868"
 
 `GET ../sections/{section-id}/pages?pagelevel=true`
 
-
-
 <a name="get-page"></a> 
 
 ### <a name="page-entity"></a>页面实体
 
 获取特定页面的元数据。 
 
-`../pages/{page-id}[?select,expand,pagelevel]` 
-
-<br/>
+`../pages/{page-id}[?select,expand,pagelevel]`
 
 页面可以展开 **parentNotebook** 和 **parentSection** 属性。
 
 默认查询将展开父节并选择节的 `id`、`name` 和 `self` 属性。
 
-使用 **pagelevel** 返回页面的缩进级别及其在父节中的顺序。 
+使用 **pagelevel** 返回页面的缩进级别及其在父节中的顺序。
 
 #### <a name="example"></a>示例
 
 `GET ../pages/{page-id}?pagelevel=true`
-
-
 
 <a name="get-page-preview"></a> 
 
@@ -129,8 +118,6 @@ ms.locfileid: "64586868"
 获取页面的文字和图像预览内容。
 
 `../pages/{page-id}/preview`
-
-<br/>
 
 
 JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
@@ -155,7 +142,6 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 `<img src="https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png" />`
 
-
 <a name="get-page-content"></a> 
 
 ### <a name="page-html-content"></a>页面 HTML 内容
@@ -166,11 +152,8 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 （*了解有关 [返回的 HTML 内容](onenote-input-output-html.md)* 的详细信息） 
 
-<br/>
 
 使用 **includeIDs=true** 查询字符串选项获取生成的 ID，用于 [更新页面](onenote-update-page.md)。
-
-
 
 <a name="get-sections"></a>
 
@@ -178,21 +161,15 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 获取用户拥有的所有笔记本的所有节，包括嵌套节组中的节。
 
-`../sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sections[?filter,orderby,select,top,skip,expand,count]`
 
 获取直接位于特定节组下的所有节。
 
-`../sectionGroups/{sectiongroup-id}/sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sectionGroups/{sectiongroup-id}/sections[?filter,orderby,select,top,skip,expand,count]`
 
 获取直接位于特定笔记本下的所有节。
 
-`../notebooks/{notebook-id}/sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks/{notebook-id}/sections[?filter,orderby,select,top,skip,expand,count]`
 
 节可以展开 **parentNotebook** 和 **parentSectionGroup** 属性。
 
@@ -200,23 +177,17 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 默认查询将展开父笔记本和父节组，并选择它们的 `id`、`name` 和 `self` 属性。
 
-
-
 <a name="get-section"></a>
 
 ### <a name="section-entity"></a>节实体
 
 获取特定节。
 
-`../sections/{section-id}[?select,expand]` 
-
-<br/>
+`../sections/{section-id}[?select,expand]`
 
 节可以展开 **parentNotebook** 和 **parentSectionGroup** 属性。
 
 默认查询将展开父笔记本和父节组，并选择它们的 `id`、`name` 和 `self` 属性。
-
-
 
 <a name="get-section-groups"></a>
 
@@ -224,15 +195,11 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 获取用户拥有的所有笔记本的所有节组，包括嵌套节组。
 
-`../sectionGroups[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sectionGroups[?filter,orderby,select,top,skip,expand,count]`
 
 获取直接位于特定笔记本下的所有节组。 
 
-`../notebooks/{notebook-id}/sectionGroups[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks/{notebook-id}/sectionGroups[?filter,orderby,select,top,skip,expand,count]`
 
 节组可以展开 **sections**、**sectionGroups**、**parentNotebook** 和 **parentSectionGroup** 属性。
 
@@ -240,23 +207,17 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 默认查询将展开父笔记本和父节组，并选择它们的 `id`、`name` 和 `self` 属性。
 
-
-
 <a name="get-section-group"></a>
 
 ### <a name="sectiongroup-entity"></a>SectionGroup 实体
 
 获取特定节组。
 
-`../sectionGroups/{sectiongroup-id}[?select,expand]` 
-
-<br/>
+`../sectionGroups/{sectiongroup-id}[?select,expand]`
 
 节组可以展开 **sections**、**sectionGroups**、**parentNotebook** 和 **parentSectionGroup** 属性。
 
 默认查询将展开父笔记本和父节组，并选择它们的 `id`、`name` 和 `self` 属性。
-
-
 
 <a name="get-notebooks"></a>
 
@@ -264,15 +225,11 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 获取用户拥有的所有笔记本。 
 
-`../notebooks[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks[?filter,orderby,select,top,skip,expand,count]`
 
 笔记本可以展开 **sections** 和 **sectionGroups** 属性。
 
 笔记本的默认排序顺序是 `name asc`。 
-
-
 
 <a name="get-notebook"></a>
 
@@ -280,13 +237,9 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 获取特定笔记本。
 
-`../notebooks/{notebook-id}[?select,expand]` 
-
-<br/>
+`../notebooks/{notebook-id}[?select,expand]`
 
 笔记本可以展开 **sections** 和 **sectionGroups** 属性。
-
-
 
 <a name="get-resource"></a>
 
@@ -294,9 +247,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 获取特定资源的二进制数据。 
 
-`../resources/{resource-id}/$value` 
-
-<br/>
+`../resources/{resource-id}/$value`
 
 可以在页面的[输出 HTML](onenote-input-output-html.md) 中找到文件的资源 URI。
 
@@ -323,16 +274,17 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
     type="application/pdf" ... />
 ```
 
-> **注意：** 不支持获取资源的集合。 
+> [!NOTE]
+> 不支持获取资源的集合。 
 
 在获取文件资源时，无需在请求中包含 **Accept** 内容类型。
 
 有关 GET 请求的详细信息，请参阅 Microsoft Graph API REST 引用中的以下资源：
 
-- [GET 页面](/graph/api/page-get?view=graph-rest-1.0)
-- [GET 节](/graph/api/section-get?view=graph-rest-1.0)
-- [GET 节组](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [GET 笔记本](/graph/api/notebook-get?view=graph-rest-1.0) 
+- [GET 页面](/graph/api/page-get)
+- [GET 节](/graph/api/section-get)
+- [GET 节组](/graph/api/sectiongroup-get)
+- [GET 笔记本](/graph/api/notebook-get)
 
 
 
@@ -345,12 +297,17 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 **请注意：**
 
-- 所有的 GET 请求都以[服务根 URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url) 开头。 <br/><br/>**示例**：`https://www.onenote.com/api/v1.0/me/notes` 和 `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
+- 所有的 GET 请求都以[服务根 URL](/graph/api/resources/onenote-api-overview#root-url) 开头。
+  
+  **示例**：`https://www.onenote.com/api/v1.0/me/notes` 和 `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
 
-- URL 查询字符串中的空格必须使用 %20 编码。<br/><br/>**示例**：`filter=title%20eq%20'biology'`
+- URL 查询字符串中的空格必须使用 %20 编码。
 
-- 属性名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。<br/><br/>**示例**：`filter=tolower(name) eq 'spring'`
- 
+  **示例**：`filter=title%20eq%20'biology'`
+
+- 属性名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。
+
+  **示例**：`filter=tolower(name) eq 'spring'`
 
 ### <a name="search--filter"></a>search & filter  
 
@@ -400,7 +357,8 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 [GET] ../notebooks?expand=sections,sectionGroups(expand=sections)
 ```
  
-> **注意：** 展开子实体的父项或展开父实体的子项来创建循环引用，这并不受支持。
+> [!NOTE]
+> 展开子实体的父项或展开父实体的子项来创建循环引用，这并不受支持。
 
  
 ### <a name="expand--select-multiple-levels"></a>expand & select（多个级别）  
@@ -507,7 +465,8 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 [GET] ../pages?search=biology&filter=createdTime ge 2015-01-01&top=5&skip=10
 ```
 
-> **注意：** 如果 **search** 和 **filter** 都应用于同一请求，则结果只包含与这两个条件都匹配的实体。
+> [!NOTE]
+> 如果 **search** 和 **filter** 都应用于同一请求，则结果只包含与这两个条件都匹配的实体。
  
 ### <a name="select"></a>select
 
@@ -549,7 +508,8 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **注意：** 检索条目默认数量（即，它们不指定 **top** 表达式）的页面的 GET 请求在响应中将返回一个 **\@odata.nextLink** 链接，你可使用此链接获取接下来的 20 个条目。
+> [!NOTE]
+> 对于检索默认条目数量（即它们不指定 **top** 表达式）的页面的 GET 请求，会在响应中返回一个 **\@odata.nextLink** 链接，可使用此链接获取接下来的 20 个条目。
  
 
 <a name="supported-odata-query-string-options"></a>
@@ -558,7 +518,8 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 在将 GET 请求发送到 Microsoft Graph 时，可以使用 OData 查询字符串选项来自定义查询并获取所需信息。它们还可以通过减少对服务的调用量和减少响应负载的大小来提高性能。
 
-> **注意：** 为了增强可读性，本文中的示例不使用 URL 查询字符串中空格所需的 %20 百分比编码：`filter=isDefault%20eq%20true`
+> [!NOTE]
+> 为了增强可读性，本文中的示例不使用 URL 查询字符串中空格所需的 %20 百分比编码：`filter=isDefault%20eq%20true`
  
 | 查询选项 | 示例和说明 |  
 |------|------|  
@@ -582,9 +543,13 @@ Microsoft Graph 还提供 `pagelevel` 查询字符串选项，可使用该选项
 
 Microsoft Graph 支持 **filter** 表达式中的以下 OData 运算符和函数。 使用 OData 表达式时，请记住：
 
-- 必须将 URL 查询字符串中的空格替换为 `%20` 编码。<br/><br/>**示例：** `filter=isDefault%20eq%20true`
+- 必须将 URL 查询字符串中的空格替换为 `%20` 编码。
 
-- 属性名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。<br/><br/>**示例：** `filter=tolower(name) eq 'spring'`
+  **示例：** `filter=isDefault%20eq%20true`
+
+- 属性名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。
+
+  **示例：** `filter=tolower(name) eq 'spring'`
 
 
 | 比较运算符 | 示例 |  
@@ -635,11 +600,10 @@ not | `not contains(tolower(title),'school')` |
 
 有关属性列表和属性类型，请参阅 Microsoft Graph API REST 引用中的以下资源：
 
-- [GET 页面](/graph/api/page-get?view=graph-rest-1.0)
-- [GET 节](/graph/api/section-get?view=graph-rest-1.0)
-- [GET 节组](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [GET 笔记本](/graph/api/notebook-get?view=graph-rest-1.0) 
-
+- [GET 页面](/graph/api/page-get)
+- [GET 节](/graph/api/section-get)
+- [GET 节组](/graph/api/sectiongroup-get)
+- [GET 笔记本](/graph/api/notebook-get)
 
 
 **expand** 查询字符串选项可与以下导航属性一起使用：

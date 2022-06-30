@@ -1,21 +1,22 @@
 ---
-title: 在 Outlook 中建议新的会议时间
-description: 在 Outlook 中，会议组织者可以允许被邀请者建议备选会议时间。
+title: 在 Outlook 日历中建议新的会议时间
+description: 了解如何使用 allowNewTimeProposals 和 proposedNewTime 属性来设置允许受邀者建议备选会议时间的会议。
 author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 75eb225da1cc1ea337b20e07a8429e9acdd32748
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: e69b78be23c0d1a35007ccd7807e9b7057c72b0c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424614"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442075"
 ---
-# <a name="propose-new-meeting-times-in-outlook"></a>在 Outlook 中建议新的会议时间
+# <a name="propose-new-meeting-times-in-outlook-calendar"></a>在 Outlook 日历中建议新的会议时间
 
 在 Outlook 中，如果被邀请者无法在原始设置的日期/时间参加会议并暂定接受或拒绝，则会议组织者可以允许被邀请者建议备选会议时间。 组织者可通过适当调整会议时间来接受建议。
 
 ## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a>示例：与会者做出暂定响应并建议不同的日期/时间
+
 下面是一个示例，其中 Alex 邀请 Adele 共进午餐，Adele 暂定接受并建议备选日期和时间，然后 Alex 通过相应地调整会议来接受建议：
 
 1. 作为组织者，Alex 向 Adele 发送了一个会议请求。 他将 [event](/graph/api/resources/event) 的 **allowNewTimeProposals** 属性设置为 `true`，以便让 Adele 在需要时建议另一个时间。

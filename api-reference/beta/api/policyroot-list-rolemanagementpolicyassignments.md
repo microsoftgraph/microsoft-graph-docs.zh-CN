@@ -1,32 +1,32 @@
 ---
 title: 列出 roleManagementPolicyAssignments
-description: 从 roleManagementPolicyAssignments 导航属性获取 unifiedRoleManagementPolicyAssignment 资源。
+description: 获取 unifiedRoleManagementPolicyAssignment 对象及其属性的列表。
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ff65921feadb2f2c77cefb0e8f5141d9bcc17eaa
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 9b22efda8fc87d9aa27e3335873a220be9588b2c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399472"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444612"
 ---
 # <a name="list-rolemanagementpolicyassignments"></a>列出 roleManagementPolicyAssignments
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 roleManagementPolicyAssignments 导航属性获取 unifiedRoleManagementPolicyAssignment 资源。
+获取所有角色管理策略分配的详细信息，包括与 Azure AD 角色关联的策略和规则。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|PrivilegedAccess.ReadWrite.AzureAD|
+|委派（工作或学校帐户）|RoleManagementPolicy.Read.Directory、RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagementPolicy.ReadWrite.Directory、RoleManagement.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|PrivilegedAccess.Read.AzureAD|
+|Application|RoleManagement.Read.All、RoleManagement.Read.Directory、RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -35,11 +35,11 @@ ms.locfileid: "65399472"
 }
 -->
 ``` http
-GET /policies/roleManagementPolicyAssignments
+GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持所有 OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法要求 `$filter` (`eq`) 查询参数将请求的范围限定到 **scopeId** 和 **scopeType**。 还可以按 **roleDefinitionId** 进行筛选，或使用 `$select` OData `$expand` 查询参数帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -64,7 +64,7 @@ GET /policies/roleManagementPolicyAssignments
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$filter=scopeId eq '/' and scopeType eq 'Directory'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyassignment-csharp-snippets.md)]
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyAssignment"
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicyAssignment)"
 }
 -->
 ``` http
@@ -107,15 +107,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "policyId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "scopeId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "scopeType": "subscription",
-      "roleDefinitionId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicyAssignments",
+    "value": [
+        {
+            "id": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9_fe930be7-5e62-47db-91af-98c3a49a38b1",
+            "policyId": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9",
+            "scopeId": "/",
+            "scopeType": "Directory",
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
+        },
+        {
+            "id": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a_0526716b-113d-4c15-b2c8-68e3c22b9f80",
+            "policyId": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a",
+            "scopeId": "/",
+            "scopeType": "Directory",
+            "roleDefinitionId": "0526716b-113d-4c15-b2c8-68e3c22b9f80"
+        }
+    ]
 }
 ```
 

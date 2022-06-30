@@ -5,18 +5,18 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 062d764297b2093059f122a6285a0610f885d531
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5fa709a2a2c27f5829427153b0a58eca40b9e815
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337661"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442995"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>获取 accessReviewHistoryDefinition
 
 命名空间：microsoft.graph
 
-按其 [标识符检索 accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。 返回访问评审历史记录定义对象的所有属性。 如果定义是 30 天或更久，则返回 `404 Not Found` 错误。
+按标识符检索 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。 将返回访问评审历史记录定义对象的所有属性。 如果定义为 30 天或更早， `404 Not Found` 则返回错误。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "63337661"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|AccessReview.ReadWrite.All|
 
-登录用户还必须是关联的审阅历史记录定义的创建者、全局管理员目录角色成员或全局读取者目录角色成员才能检索定义。
+登录用户还必须是关联的评审历史记录定义的创建者、全局管理员目录角色成员或全局读者目录角色成员来检索定义。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 和 `$select` `$expand` OData 查询参数来帮助自定义响应。 包括 `?$expand=instances` 将包括响应对象中与 [accessReviewHistoryDefinition 对象关联的](../resources/accessreviewhistorydefinition.md) 实例。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数， `$expand` 以帮助自定义响应。 在 `?$expand=instances` 响应对象中包括与 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象关联的实例。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -56,7 +56,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 

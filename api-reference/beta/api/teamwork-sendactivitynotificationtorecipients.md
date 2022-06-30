@@ -5,12 +5,12 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: abb6d745a30274eda5ec17fa0075315633830b67
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 715d5daf735b7eb79b48468db53339d860ea4feb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819834"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445168"
 ---
 # <a name="teamwork-sendactivitynotificationtorecipients"></a>teamwork： sendActivityNotificationToRecipients
 
@@ -20,7 +20,7 @@ ms.locfileid: "65819834"
 
 批量向多个用户发送活动源通知。 
 
-有关发送通知的更多详细信息和执行此操作的要求，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
+有关发送通知的更多详细信息以及执行此操作的要求，请参阅 [发送 Teams 活动通知](/graph/teams-send-activityfeednotifications)。
 
 ## <a name="permissions"></a>权限
 
@@ -59,11 +59,11 @@ POST /teamwork/sendActivityNotificationToRecipients
 | 参数          | 类型                                                         | 说明                                                  |
 | :----------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | topic              | [teamworkActivityTopic](../resources/teamworkactivitytopic.md) | 通知的主题。 指定正在讨论的资源。 |
-| activityType       | String                                                       | 活动类型。 必须在[Teams应用清单](/microsoftteams/platform/overview)中声明这一点。 |
+| activityType       | String                                                       | 活动类型。 必须在 [Teams 应用清单](/microsoftteams/platform/overview)中声明这一点。 |
 | chainId            | Int64                                                        | 可选。 用于重写以前的通知。 在后续请求中使用相同的 `chainId` 方法来重写上一个通知。 |
-| previewText        | [itemBody](../resources/itembody.md)                         | 通知的预览文本。 Microsoft Teams将只显示前 150 个字符。 |
-| templateParameters | [keyValuePair](../resources/keyvaluepair.md) 集合      | 在Teams[应用清单](/microsoftteams/platform/overview)中对应`activityType`的活动源条目中定义的模板变量的值。 |
-| teamsAppId         | String                                                       | 可选。 Teams与通知关联的Teams应用的应用 ID。 用于在为同一收件人用户安装具有相同 Azure AD 应用 ID 的多个应用时消除安装的应用的歧义。 |
+| previewText        | [itemBody](../resources/itembody.md)                         | 通知的预览文本。 Microsoft Teams 将仅显示前 150 个字符。 |
+| templateParameters | [keyValuePair](../resources/keyvaluepair.md) 集合      | 在 [Teams 应用清单](/microsoftteams/platform/overview)中对应`activityType`的活动源条目中定义的模板变量的值。 |
+| teamsAppId         | String                                                       | 可选。 与通知关联的 Teams 应用的 Teams 应用 ID。 用于在为同一收件人用户安装具有相同 Azure AD 应用 ID 的多个应用时消除安装的应用的歧义。 |
 | recipients         | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) 集合 | 通知的收件人。 仅支持 [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) 类型的收件人。 单个请求中有 100 个收件人的上限。 |
 
 将 **主题** 属性的值设置为`entityUrl``source`：
@@ -142,6 +142,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-sendactivitynotificationtorecipients-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -159,7 +163,7 @@ HTTP/1.1 202 Accepted
 
 ### <a name="example-2-notify-multiple-users-about-an-event-using-a-custom-topic"></a>示例 2：使用自定义主题通知多个用户有关事件的信息
 
-如果想要链接未由 Microsoft Graph 表示的方面，或者想要自定义名称，则可以设置该`text`名称的`topic`源并传入自定义值。 `webUrl` 使用 `topic` 源时是必需的 `text`。
+如果要链接未由 Microsoft Graph 表示的方面，或者想要自定义名称，可以设置该名称的`topic``text`源并传入自定义值。 `webUrl` 使用 `topic` 源时是必需的 `text`。
 
 #### <a name="request"></a>请求
 
@@ -221,6 +225,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-sendactivitynotificationtorecipients-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,15 +1,15 @@
 ---
 title: 使用 Microsoft Graph 通用打印 API 上载文档
-description: 了解通用打印，这是一种新式打印解决方案，组织可以通过 Microsoft 提供的云服务来管理打印基础结构。
+description: 使用 Microsoft Graph 中的通用打印 API 创建打印作业、上传文档、启动打印作业。 本页介绍如何上传文档。
 author: nilakhan
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 36dd113e02e15822f9a64b04da390d5a87cae867
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: f4b373c7da760277dff390ca1ea491aa9117d354
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133102"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447056"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>使用 Microsoft Graph 通用打印 API 上载文档
 
@@ -19,17 +19,19 @@ ms.locfileid: "65133102"
 
 可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。 上传文档的所有二进制片段时，二进制文件将链接到 **printDocument**。
 
-## <a name="http-request"></a>HTTP 请求
+## <a name="upload-a-file"></a>上传文件
+
+### <a name="request"></a>请求
 
 向 **createUploadSession** 响应中收到的 **uploadUrl** 值发出 PUT 请求。
 
-### <a name="request-headers"></a>请求标头
+#### <a name="request-headers"></a>请求标头
 | 名称          | 说明   |
 |:--------------|:--------------|
 | Content-Range | bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}。 必填。|
 | Content-Length | 需要 {contentLength}。|
 
-### <a name="request-body"></a>请求正文
+#### <a name="request-body"></a>请求正文
 请求正文是一个二进制 blob，其中包含在 `Content-Range` 标头中指定为 **非独占** 字节范围的文档的字节数。 
 
 ### <a name="example"></a>示例
@@ -44,7 +46,8 @@ Content-Length: 72797
 ```
 
 此处的 0 和 72796 是文件段的开始索引和结束索引，而 4533322 则是文档的大小。
-## <a name="http-response"></a>HTTP 响应
+
+### <a name="response"></a>响应
 
 当此请求完成时，如果还需要上传其他字节范围，服务器将会返回 `202 Accepted` 作为响应。
 
@@ -82,7 +85,7 @@ Content-Type: application/json
 * 如果因客户端发送服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。可以 [请求上载状态](#get-the-upload-session) 以获取缺少范围的详细列表。
 * 在进行 `PUT` 调用时添加 `Authorizatio`n 标头可能会导致 `HTTP 401 Unauthorized` 响应。 授权标头和持有者令牌只应在创建上传会话时发送。 将数据上传到上传会话时，不应将其包含在内。
 
-## <a name="completing-a-file"></a>完成文件
+## <a name="complete-a-file-upload"></a>完成文件上传
 
 接收文件的最后一个字节范围时，服务器将响应 `HTTP 201 Created`。 响应正文中还将包括关联 **printDocument** 的属性集。
 
@@ -139,8 +142,9 @@ Content-Type: application/json
   ]
 }
 ```
+
 ## <a name="code-examples-create-upload-session-and-upload-documents"></a>代码示例：创建上传会话和上传文档
- 
+
 # <a name="c"></a>[C#](#tab/csharp)
 
 ```csharp

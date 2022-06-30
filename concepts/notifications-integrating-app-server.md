@@ -1,17 +1,20 @@
 ---
-title: 通过应用程序服务创建和发送通知
-description: '将应用程序服务设置为通过 Microsoft Graph 向不同客户端发送以用户为中心的通知。 '
+title: 通过应用程序服务创建和发送通知（已弃用）
+description: 可以使用 Microsoft Graph API 为用户创建和发送通知（已弃用）。
 ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 24cac26e548d5f05724ee38559f6ef3bb4801277
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 302375137bb2408bcd6be5ad737cf34cc7d6ee70
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062318"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447133"
 ---
-# <a name="create-and-send-a-notification-from-your-app-service"></a>通过应用程序服务创建和发送通知
+# <a name="create-and-send-a-notification-from-your-app-service-deprecated"></a>通过应用程序服务创建和发送通知（已弃用）
+
+> [!IMPORTANT]
+> Microsoft Graph 通知 API 已弃用，并且已于 2022 年 1 月停止返回数据。 有关其他通知体验，请参阅 [Microsoft Azure 通知中心](/azure/notification-hubs)。 更多相关信息，请参阅博客文章 [停用 Microsoft Graph 通知 API (beta 版本)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)。
 
 可以使用 Microsoft Graph API 为用户创建和发送通知。 通知存储在 Microsoft Graph 通知服务中，并发送到目标用户登录的所有设备上的所有应用客户端。 
 

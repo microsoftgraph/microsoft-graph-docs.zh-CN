@@ -1,16 +1,16 @@
 ---
-title: 订阅使用 Microsoft Graph 更改云打印 API 的通知
-description: 了解如何使用 Microsoft Graph API 更改打印作业事件的通知。
+title: 订阅云打印 API 中的更改通知
+description: 了解如何使用 Microsoft Graph API 更改各个打印作业事件的通知。
 author: jahsu
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: df511878bfebba02bd68ede445a26b66233caeae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9c7319d55a8ea78fa08f5a21a8986b55a552a2f7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143458"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443786"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>订阅使用 Microsoft Graph 更改云打印 API 的通知
 
@@ -31,7 +31,7 @@ ms.locfileid: "59143458"
 通用打印当前支持两种打印作业相关方案的通知：
 
 * PrintTask 被触发（作业启动）：应用程序可以在其 printTask（hook） 触发时订阅以接收通知。
-若要详细了解如何触发任务，请参阅扩展通用 [以支持将打印内容拉取](./universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing)。 目前，仅能为作业启动事件触发 printTask。 成功创建打印作业、上传有效负载并开始作业处理后，将发生作业启动事件。  
+有关如何触发任务的详细信息，请参阅[启用拉式打印](./universal-print-concept-overview.md#enable-pull-printing)。 目前，仅能为作业启动事件触发 printTask。 成功创建打印作业、上传有效负载并开始作业处理后，将发生作业启动事件。  
 
 * 作业可保存：作业启动后，第三方打印应用程序或通用打印可能会执行某些处理（例如将 XPS 有效负载转换为 PDF，用于 PDF 打印机）。 处理完成后，如果有效负载已准备好由打印机下载，则针对相应的打印作业将发生 JobFable 事件。
 
@@ -43,13 +43,13 @@ ms.locfileid: "59143458"
 若要了解如何收听 Microsoft Graph 通知，请参阅 [通过 Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges/) 使用更改通知和修订 [设置用户数据更改通知 - 代码示例](./webhooks.md#code-samples)。
 
 
-### <a name="scopes"></a>Scopes
+### <a name="permission-scopes"></a>权限范围
 
 若要订阅打印作业通知，应用程序必须具有在客户的 Azure AD 租户中批准的下列权限范围： 
 
-* 对于 printTask 触发（作业启动）事件，"获取任务定义 [中列出的权限](/graph/api/printtaskdefinition-get?view=graph-rest-v1.0&tabs=http%22%20%5Cl%20%22permissions%22%20%5C)。 
+* 对于 printTask 触发（作业启动）事件，"获取任务定义 [中列出的权限](/graph/api/printtaskdefinition-get)。 
 
-* 对于 JobFable 事件，"创建订阅" [中列出的](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http)。
+* 对于 JobFable 事件，"创建订阅" [中列出的](/graph/api/subscription-post-subscriptions)。
 
 应用程序必须 [Microsoft Graph API 请求标头中生成](/graph/auth-v2-service?context=graph%2Fapi%2F1.0) Azure AD 安全令牌。 安全令牌包含按管理员批准的客户 Azure AD 租户范围内声明声明。  
 
@@ -58,22 +58,24 @@ ms.locfileid: "59143458"
 
 某些应用程序监视传入作业的打印队列，希望在队列中具有有效作业时收到通知。 收到通知后，他们可以收集相关的作业元数据，甚至可以在打印作业中执行修改，包括中止作业或相应地修改作业属性后将作业从当前打印队列重定向到另一个队列。 
 
-在创建打印任务 **-** 事件的通知之前，请确保应用程序创建了以下应用程序： 
+在创建打印任务 **-** 事件的通知之前，请确保应用程序创建了以下应用程序：
 
-- 一[Azure AD](/graph/api/print-post-taskdefinitions?view=graph-rest-v1.0&tabs=http) printTaskDefinition 应用程序。 单个任务定义可在同一 Azure AD 租户中的一个或多个打印机关联。 
+- 一[Azure AD](/graph/api/print-post-taskdefinitions) printTaskDefinition 应用程序。 单个任务定义可在同一 Azure AD 租户中的一个或多个打印机关联。 
 
-- 针对 [开始新打印作业时，合作伙伴希望接收其通知的每个打印机队列的](/graph/api/printer-post-tasktriggers?view=graph-rest-v1.0&tabs=http) "PrintTaskTri你邮件"标签。 **printTaskDefinition** 需要绑定到 **PrintTaskDefinition**。 
+- 针对 [开始新打印作业时，合作伙伴希望接收其通知的每个打印机队列的](/graph/api/printer-post-tasktriggers) "PrintTaskTri你邮件"标签。 **printTaskDefinition** 需要绑定到 **PrintTaskDefinition**。 
 
 >[!NOTE]
 >一个打印机只能与一个 **printTaskTriition** 和一个 **printTaskTriition** 只能与一 **printTaskDefinition**。 但是，一 **printTaskDefinition** 可以具有一 **一个或多个 printTaskTriitions** 与其关联。 
 
-使用客户的 Azure A [D 租户 **printTaskDefinition**，该应用程序可以使用 printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http)为 printTask 触发（作业启动）事件创建订阅。 创建订阅时：  
+使用客户的 Azure A [D 租户 **printTaskDefinition**，该应用程序可以使用 printTaskDefinition](/graph/api/subscription-post-subscriptions)为 printTask 触发（作业启动）事件创建订阅。 创建订阅时：  
 
 * `resource` 字段需要设置为 `print/taskDefinitions/{printTaskDefinition ID}/tasks`。 
 * `changeType` 字段需要设置为 `created`。 
-* " `expirationDateTime` "字段需要小于 [最大到期日期](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type)。 
+* " `expirationDateTime` "字段需要小于 [最大到期日期](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type)。
 
-如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/subscription?view=graph-rest-v1.0#properties)。
+如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/subscription#properties)。
+
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 <!-- {
@@ -131,9 +133,11 @@ Content-Type: application/json
 * " `resource` "字段需要设置为"print/printer/{printer id}/jobs"。 
 * `changeType` 字段需要设置为 `updated`。 
 * `notificationQueryOptions` 字段需要设置为 `$filter = isFetchable eq true`。 
-* " `expirationDateTime` "字段需要小于 [最大到期日期](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type)。 
+* " `expirationDateTime` "字段需要小于 [最大到期日期](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type)。 
 
-如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/subscription?view=graph-rest-v1.0#properties)。
+如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/subscription#properties)。
+
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 <!-- {
@@ -183,13 +187,13 @@ Content-Type: application/json
 ```
 
 
-## <a name="renewing-a-notification-subscription"></a>续订通知订阅
+## <a name="renew-a-notification-subscription"></a>续订通知订阅
 
-Microsoft Graph 对到期时间有限制。 有关详细信息，请参阅 [的到期日期](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type)。 若要继续接收通知，需使用更新订阅 API 更新 [定期续订](/graph/api/subscription-update?view=graph-rest-v1.0&tabs=http)。 
+Microsoft Graph 对到期时间有限制。 有关详细信息，请参阅 [的到期日期](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type)。 若要继续接收通知，需使用更新订阅 API 更新 [定期续订](/graph/api/subscription-update)。 
 
-## <a name="other-operations-on-notification-subscriptions"></a>通知订阅的其他操作 
+## <a name="get-or-delete-notification-subscriptions"></a>获取或删除通知订阅
 
-应用程序 [获取](/graph/api/subscription-get?view=graph-rest-v1.0&tabs=http) 的详细信息，或者 [删除](/graph/api/subscription-delete?view=graph-rest-v1.0&tabs=http) 订阅。 有关详细信息，请参阅 [Microsoft Graph API 通过更改通知](/graph/api/resources/webhooks?view=graph-rest-v1.0)。
+应用程序可[获取](/graph/api/subscription-get)订阅的详细信息，或者在需要时[删除](/graph/api/subscription-delete)订阅。 有关详细信息，请参阅 [Microsoft Graph API 通过更改通知](/graph/api/resources/webhooks)。
 
 
 ## <a name="faqs"></a>常见问题
@@ -201,10 +205,10 @@ Microsoft Graph 将验证创建订阅前订阅请求的 **notificationurl** 属�
 应用程序应处理和确认他们收到的每个更改通知。 有关详细信息，请参阅 [更改通知](./webhooks.md#processing-the-change-notification)。
 
 ### <a name="how-can-i-get-a-list-of-active-subscriptions"></a>如何获取活动订阅列表？
-若要详细了解如何检索 Web 网站订阅列表，请参阅 [订阅](/graph/api/subscription-list?view=graph-rest-v1.0&tabs=http)。
+若要详细了解如何检索 Web 网站订阅列表，请参阅 [订阅](/graph/api/subscription-list)。
 
 
 ## <a name="see-also"></a>另请参阅
 
-- 若要深入了解 Microsoft Graph 中的云打印 API，请参阅 [云打印 API 概述](/graph/universal-print-concept-overview)。 
+- 若要深入了解 Microsoft Graph 中的云打印 API，请参阅 [云打印 API 概述](/graph/universal-print-concept-overview)。
 - 有关 Microsoft Graph 中的云打印 API 的建议或反馈，请访问 [通用打印技术社区](https://aka.ms/community/UniversalPrint)。

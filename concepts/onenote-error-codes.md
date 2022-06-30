@@ -1,19 +1,19 @@
 ---
-title: Microsoft Graph 中的 OneNote API 错误代码
-description: 本文介绍当通过 API 发送的请求失败时，Microsoft Graph 中的 OneNote API 返回的错误代码。
+title: Microsoft Graph 中 OneNote API 的错误代码
+description: 每当通过 API 发送的请求失败时，在 Microsoft Graph 中查找有关 OneNote API 返回的错误代码的信息。
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 39427d86612682ea6aba37f026fd51ce396d6613
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1d89354434ca9de2946390b9a92b451b24f322ab
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113502"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442820"
 ---
-# <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Microsoft Graph 中的 OneNote API 错误代码
+# <a name="error-codes-for-the-onenote-api-in-microsoft-graph"></a>Microsoft Graph 中 OneNote API 的错误代码
 
-本文介绍当通过 API 发送的请求失败时，Microsoft Graph 中的 OneNote API 返回的错误代码。
+本文介绍每当通过 API 发送的请求失败时，OneNote API 在 Microsoft Graph 中返回的错误代码。
 
 ## <a name="error-response-example"></a>错误响应示例
 
@@ -333,7 +333,7 @@ OData 查询无效。
 ### <a name="20166"></a>20166
 应用程序在短时间内以用户身份发出的请求过多。 当 API 检测到应用程序使用的资源过多时，它会返回 429 状态代码和此错误，以帮助确保 OneNote API 保持稳定和可响应状态。 
 
-有关详细信息，请参阅[Microsoft Graph服务特定限制指南](./throttling.md#service-specific-limits)。
+有关详细信息，请参阅 [Microsoft Graph 服务特定的限制指南](./throttling.md#service-specific-limits)。
 
 ### <a name="20168"></a>20168
 请求中指定的视频源不受支持。 请参阅[支持的视频网站](onenote-images-files.md#adding-videos)获取最新列表。
@@ -365,9 +365,9 @@ OData 查询无效。
 
 | 原因 | 解决方案 |
 |:------|:------|
-| 尚未设置用户的个人网站。 | 用户应打开 OneDrive for Business，并按照任意说明设置此网站。 如果失败，他们应联系租户Microsoft 365管理员。 |
+| 尚未设置用户的个人网站。 | 用户应打开 OneDrive for Business，并按照任意说明设置此网站。 如果失败，应联系其 Microsoft 365 租户管理员。 |
 | 当前正在设置用户的个人网站。 | 稍后再尝试请求。 |
-| 用户没有有效的 OneDrive for Business 许可证。 | 用户应联系其租户Microsoft 365管理员。 |
+| 用户没有有效的 OneDrive for Business 许可证。 | 用户应联系其 Microsoft 365 租户管理员。 |
 | 网络问题使请求无法成功发送。 | 稍后再尝试请求。 |
 
 ### <a name="30109"></a>30109
@@ -418,4 +418,4 @@ OAuth 令牌没有所需的作用域来执行所请求的操作。 尤其是编�
 ## <a name="see-also"></a>另请参阅
 
 - [Microsoft Graph 错误响应和资源类型](errors.md)
-- [OneNote 参考](/graph/api/resources/onenote?view=graph-rest-1.0)
+- [OneNote API 参考](/graph/api/resources/onenote)

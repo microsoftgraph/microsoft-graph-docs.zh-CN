@@ -1,15 +1,15 @@
 ---
-title: '使用 OneNote API div 标记从捕获中提取数据 '
-description: " Microsoft 365 中的企业笔记本"
+title: 使用 OneNote API div 标记从捕获中提取数据
+description: 使用 OneNote API 提取名片、食谱和产品数据。 包括指定请求中的源内容、提取方法和回退行为的 div。
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 15a34e07e1d24e333b929a7d2140d6502f907f5d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 94bfffb80c7165d5fa04293443ecd84b46285815
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129759"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446180"
 ---
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>使用 OneNote API div 标记从捕获中提取数据 
 
@@ -241,7 +241,8 @@ API 已针对很多热门网站（如 *Amazon.com* 和 *HomeDepot.com*）上的�
 
 如果不知道要发送的内容类型（名片、食谱还是产品），可以使用未限定的 `extract` 方法，让 OneNote API 自动检测类型。 如果你的应用发送不同的捕获类型，则你可能需要这样做。
 
-> **注意：** 如果确实知道要发送的内容类型，则应使用 `extract.businesscard`、`extract.recipe` 或 `extract.product` 方法。 在某些情况下，这将有助于优化提取结果。
+> [!NOTE]
+> 如果知道要发送的内容类型，则应使用`extract.businesscard``extract.recipe`该方法或`extract.product`方法。 在某些情况下，这将有助于优化提取结果。
  
 ### <a name="common-scenarios-for-unknown-extractions"></a>未知提取的常见情况
 

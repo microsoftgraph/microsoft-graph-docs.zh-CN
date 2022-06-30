@@ -1,31 +1,32 @@
 ---
 title: 在 Outlook 中将重复约会安排为定期事件
-description: 重复发生的事件是 Outlook 日历的一个重要部分。无论是与经理每周进行的一对一会议，还是每月第二个星期二的部门评审会议，定期规则只需要创建一次事件，然后让服务器填充系列中的其他内容，从而使过程变得简单。
+description: 使用定期规则创建定期事件，该规则包括重复周期模式（事件重复的频率）和定期范围（持续时间）。
 author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 29aeef98cbc0e9d33df26a0c54bb568317ebb790
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 09a8de8d27980f39157b605832b8bb7a94926638
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071782"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444311"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>在 Outlook 中将重复约会安排为定期事件
 
-重复发生的事件是 Outlook 日历的一个重要部分。无论是与经理每周进行的一对一会议，还是每月第二个星期二的部门评审会议，定期规则只需要创建一次事件，然后让服务器填充系列中的其他内容，从而使过程变得简单。
+定期事件是 Outlook 日历的重要组成部分。 无论是与经理每周进行的一对一会议，还是每月第二个星期二的部门评审会议，定期规则只需要创建一次事件，然后让服务器填充系列中的其他内容，从而使过程变得简单。
 
-使定期事件得以“扩展”为单个事件的关键信息点在于定期规则。 此规则同时指定事件重复的频率和持续时间。 Outlook REST API 在 [事件资源](/graph/api/resources/event?view=graph-rest-1.0)的 **重复周期** 属性中模拟定期规则。 
+使定期事件得以“扩展”为单个事件的关键信息点在于定期规则。 此规则同时指定事件重复的频率和持续时间。 Outlook REST API 在 [事件资源](/graph/api/resources/event)的 **重复周期** 属性中模拟定期规则。
 
 每个重复周期由两部分组成：定期模式（频率）和定期范围（持续时间）。
 
 ## <a name="recurrence-patterns"></a>定期模式
 
-重复的第一部分是模式。 它指定事件重复的频率。 例如，一个事件可以“每 3 天”、“每周四”或“每年的 7 月 22 日”重复一次。 在 API 中，模式由 [recurrencePattern 资源](/graph/api/resources/recurrencepattern?view=graph-rest-1.0)表示。
+重复的第一部分是模式。 它指定事件重复的频率。 例如，一个事件可以“每 3 天”、“每周四”或“每年的 7 月 22 日”重复一次。 在 API 中，模式由 [recurrencePattern 资源](/graph/api/resources/recurrencepattern)表示。
 
 **recurrencePattern** 的特定字段是必需、可选还是忽略取决于模式的类型。
 
-> **注意**：即使将字段忽略，仍需验证该字段。 如果字段包含一组可能值的列表，那么使用允许集以外的值会导致错误，即使此字段已被忽略也是如此。
+> [!NOTE]
+> 即使将字段忽略，仍需验证该字段。 如果字段包含一组可能值的列表，那么使用允许集以外的值会导致错误，即使此字段已被忽略也是如此。
 
 让我们来看看每个可能的模式类型。
 
@@ -221,11 +222,12 @@ ms.locfileid: "59071782"
 
 ## <a name="recurrence-ranges"></a>定期范围
 
-重复的第二部分是范围。 它指定模式重复的持续时间。 例如，一个事件可以在发生 10 次后于特定日期结束，也可以不结束。 在 API 中，由 [recurrenceRange 资源](/graph/api/resources/recurrencepattern?view=graph-rest-1.0)表示范围。
+重复的第二部分是范围。 它指定模式重复的持续时间。 例如，一个事件可以在发生 10 次后于特定日期结束，也可以不结束。 在 API 中，由 [recurrenceRange 资源](/graph/api/resources/recurrencepattern)表示范围。
 
 **recurrenceRange** 的特定字段是必需还是忽略取决于范围的类型。
 
-> **注意**：即使将字段忽略，仍需验证该字段。 如果字段包含一组可能值的列表，那么使用允许集以外的值会导致错误，即使此字段已被忽略也是如此。
+> [!NOTE]
+> 即使将字段忽略，仍需验证该字段。 如果字段包含一组可能值的列表，那么使用允许集以外的值会导致错误，即使此字段已被忽略也是如此。
 
 让我们来看看每个可能的范围类型。
 
@@ -239,7 +241,7 @@ ms.locfileid: "59071782"
 |----------|-----------|-------------|
 | **numberOfOccurences** | 必需 | 指定事件发生的次数。 必须是正整数。 |
 | **recurrenceTimeZone** | 可选 | 指定 **startDate** 属性的时区。 如果未指定，将使用事件时区。 |
-| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与 [事件资源](/graph/api/resources/event?view=graph-rest-1.0)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
+| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与 [事件资源](/graph/api/resources/event)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
 | **type** | 必需 | 必须设置为 `numbered`。 |
 
 #### <a name="examples"></a>示例
@@ -264,7 +266,7 @@ ms.locfileid: "59071782"
 |----------|-----------|-------------|
 | **endDate** | 必需 | 指定停止应用该模式的日期。请注意，如果日期不符合模式，最后一次会议可能不会在此日期发生。 |
 | **recurrenceTimeZone** | 可选 | 指定 **startDate** 和 **endDate** 属性的时区。 如果未指定，将使用事件时区。 |
-| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与 [事件资源](/graph/api/resources/event?view=graph-rest-1.0)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
+| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与 [事件资源](/graph/api/resources/event)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
 | **type** | 必需 | 必须设置为 **endDate**。 |
 
 #### <a name="examples"></a>示例
@@ -288,7 +290,7 @@ ms.locfileid: "59071782"
 | 属性 | 相关性 | 说明 |
 |----------|-----------|-------------|
 | **recurrenceTimeZone** | 可选 | 指定 **startDate** 属性的时区。 如果未指定，将使用事件时区。 |
-| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与 [事件资源](/graph/api/resources/event?view=graph-rest-1.0)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
+| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与 [事件资源](/graph/api/resources/event)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
 | **type** | 必需 | 必须设置为 `noEnd`。 |
 
 #### <a name="examples"></a>示例
@@ -357,9 +359,9 @@ ms.locfileid: "59071782"
   由于 **startDate** 的值在 8 月的第一个星期四之后，因此，此系列的第一次事件将在 9 月发生。
 
 ## <a name="next-steps"></a>后续步骤
-    
+
 - 了解更多关于[与 Outlook 日历集成](outlook-calendar-concept-overview.md)的信息。
 - 在日历 API 参考中查看其他定期事件示例：
-  - [创建每周发生一次的定期事件](/graph/api/user-post-events?view=graph-rest-1.0#request-3)
-  - [创建每日定期事件](/graph/api/user-post-events?view=graph-rest-1.0#request-4)
+  - [创建每周发生一次的定期事件](/graph/api/user-post-events#request-3)
+  - [创建每日定期事件](/graph/api/user-post-events#request-4)
 

@@ -1,26 +1,26 @@
 ---
 title: 列出 dailyPrintUsageByUser
-description: 检索每日打印使用情况摘要的列表，按用户分组。
+description: 检索按用户分组的每日打印使用情况摘要列表。
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e810fe3ebc50cf730309287f46f2ca1590613def
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 65bd348bb5d8b704379994eeddd03637eba7808b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006059"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443857"
 ---
 # <a name="list-dailyprintusagebyuser"></a>列出 dailyPrintUsageByUser
 命名空间：microsoft.graph
 
-检索每日打印使用情况摘要的列表，按用户分组。
+检索按用户分组的每日打印使用情况摘要列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+除了以下权限外，用户的租户还必须具有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -51,7 +51,7 @@ GET /reports/dailyPrintUsageByUser
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printUsageByUser](../resources/printusagebyuser.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [printUsageByUser](../resources/printusagebyuser.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -82,8 +82,12 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser
 [!INCLUDE [sample-code](../includes/snippets/java/list-printusagebyuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-printusagebyuser-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-printusagebyuser-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

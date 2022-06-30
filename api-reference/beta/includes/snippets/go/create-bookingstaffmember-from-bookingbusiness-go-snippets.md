@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 909ff5e092f6d1968dcf0b4cbf043e3f0288bf88
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 1296f7577cf624601e58805a7997c51ba91a79e4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66098749"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503170"
 ---
 ```go
 
@@ -117,6 +117,8 @@ start := "08:00:00.0000000"
         "timeSlots@odata.type": "#Collection(microsoft.graph.bookingWorkTimeSlot)",
     }
 }
+isEmailNotificationEnabled := false
+requestBody.SetIsEmailNotificationEnabled(&isEmailNotificationEnabled)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.bookingStaffMember",
     "role@odata.type": "#microsoft.graph.bookingStaffRole",

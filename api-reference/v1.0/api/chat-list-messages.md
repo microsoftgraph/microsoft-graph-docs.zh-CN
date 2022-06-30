@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9dcd42d2a5e886f553af0ddc1cf3a9a4c430511a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ead3411b00bae8d184d715c6181f077d92db066
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107640"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445984"
 ---
 # <a name="list-messages-in-a-chat"></a>列出聊天中的消息
 

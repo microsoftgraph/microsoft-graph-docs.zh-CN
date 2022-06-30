@@ -1,22 +1,22 @@
 ---
 title: 删除组所有者
-description: 使用此 API 可通过所有者导航属性从Microsoft 365组或安全组中删除所有者。
+description: 使用此 API 可通过所有者导航属性从 Microsoft 365 组或安全组中删除所有者。
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f7b515496427b552d459a838a2f9720f6971f6c6
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 386921b0049cffa4e26a90b69afcfb202c12c3f7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694455"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442209"
 ---
 # <a name="remove-group-owner"></a>删除组所有者
 
 命名空间：microsoft.graph
 
-使用此 API 可通过所有者导航属性从Microsoft 365组或安全组中删除 **所有者**。 将所有者分配到组后，无法删除 (组) 用户对象的最后一个所有者。
+使用此 API 可通过所有者导航属性从 Microsoft 365 组或安全组中删除 **所有者** 。 将所有者分配到组后，无法删除 (组) 用户对象的最后一个所有者。
 
 > **注意：** 有关删除与 [团队](/graph/api/resources/team.md)关联的组的所有者时遇到的问题，请参阅 [已知问题](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member)。
 
@@ -91,6 +91,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-owner-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-owner-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

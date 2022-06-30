@@ -3,19 +3,19 @@ title: 获取集
 description: 读取 set 对象的属性和关系。
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a5735c704faee4f53f54ec2f0a44f2dd7c8845fc
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 161622520fdae9ff89cd38e145123545d9f9fdfe
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397125"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443113"
 ---
 # <a name="get-set"></a>获取集
 命名空间：microsoft.graph.termStore [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 set 对象的属性 [和](../resources/termstore-set.md) 关系。
+读取 [set](../resources/termstore-set.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "63397125"
 |:---|:---|
 |委派（工作或学校帐户） |TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -52,7 +52,7 @@ GET /sites/{site-id}/termStore/sets/{set-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [set](../resources/termstore-set.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [set](../resources/termstore-set.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-a-site-collection-termstore-set"></a>示例 2：获取网站集术语Store集
+### <a name="example-2-get-a-site-collection-termstore-set"></a>示例 2：获取网站集术语存储集
 
 #### <a name="request"></a>请求
 
@@ -149,6 +149,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-sitecollection-termstore-set-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-sitecollection-termstore-set-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

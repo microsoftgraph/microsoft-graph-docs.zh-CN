@@ -1,16 +1,16 @@
 ---
 title: 获取 directoryAudit
-description: 介绍 microsoft Graph API (beta 版本)  (directoryAudit 资源实体的 get) 。
+description: 介绍 Microsoft 图形 API (beta 版本) ) 的 directoryAudit 资源 (实体的 get 方法。
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: a4190d9b325b67fc2f6530502f87bb10b644c64b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bc17537c2eafaf53855c65291296c03670d4842a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133964"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445708"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
@@ -18,7 +18,7 @@ ms.locfileid: "62133964"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取特定Azure Active Directory 审核日志项。 这包括 Azure Active Directory 中的各种服务生成的 审核日志 项，如用户、应用程序、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 、自助服务组管理等。
+获取特定的 Azure Active Directory 审核日志项。 这包括 Azure Active Directory 中各种服务生成的审核日志项，例如用户、应用程序、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 、自助服务组管理等。
 
 ## <a name="permissions"></a>权限
 
@@ -28,10 +28,10 @@ ms.locfileid: "62133964"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
+|Application | AuditLog.Read.All 和 Directory.Read.All | 
 
 > [!IMPORTANT]
-> 此 API 有 [一个已知](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+> 此 API 存在 [已知问题](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 此外，应用还必须向 Azure AD [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
@@ -58,7 +58,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [directoryAudit](../resources/directoryaudit.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryAudit](../resources/directoryaudit.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -116,50 +116,63 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
-  "value": [{
-        "id": "id",
-        "category": "UserManagement",
-        "correlationId": "dax59xfb-5xfa-4x92-8x38-6e1fx7870e30",
-        "result": "success",
-        "resultReason": "Successfully added member to group",
-        "activityDisplayName": "Add member to group",
-        "activityDateTime": "2018-01-09T21:20:02.7215374Z",
-        "loggedByService": "Core Directory",
-        "initiatedBy": {
-            "user": {
-                "id": "72xx09ae-1x37-49x7-9xfe-e3xx964db09b",
-                "displayName": "Jamie Doe",
-                "userPrincipalName": "jdoe@wingtiptoysonline.com",
-                "ipAddress": "127.0.0.1"
-            },
-            "app": null
-        },
-        "targetResources": [{
-            "@odata.type": "#microsoft.graph.TargetResourceGroup",
-            "id": "ef7x527d-6xx2-4xx4-8xxd-cxxfdxx5xx95",
-            "displayName": "Example.com",
-            "modifiedProperties": [{
-                "displayName": "Action Client Name",
-                "oldValue": null,
-                "newValue": "DirectorySync"
-            }],
-            "groupType": "unifiedGroups"
-        }, {
-            "@odata.type": "#microsoft.graph.targetResourceUser",
-            "id": "1x0exxf5-3xx1-4xxb-9xx0-d4xx572xxbb7",
-            "displayName": null,
-            "modifiedProperties": [],
-            "userPrincipalName": "jdoe@contoso.com"
-        }],
-        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36",
-        "additionalDetails": [{
-            "key": "Additional Detail Name",
-            "value": "Additional Detail Value"
-        }]
-    }]
+    "id": "Directory_504a302a-8f2d-418d-b7df-bf77de6ed831_M1N6X_27777783",
+    "category": "UserManagement",
+    "correlationId": "504a302a-8f2d-418d-b7df-bf77de6ed831",
+    "result": "success",
+    "resultReason": "",
+    "activityDisplayName": "Update user",
+    "activityDateTime": "2022-06-21T23:25:00.1458248Z",
+    "loggedByService": "Core Directory",
+    "operationType": "Update",
+    "userAgent": null,
+    "initiatedBy": {
+        "app": null,
+        "user": {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test Admin",
+            "userPrincipalName": "tadmin@contoso.com",
+            "ipAddress": "",
+            "userType": "Member",
+            "homeTenantId": null,
+            "homeTenantName": null
+        }
+    },
+    "targetResources": [
+        {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test User",
+            "type": "User",
+            "userPrincipalName": "tuser@contoso.com",
+            "groupType": null,
+            "modifiedProperties": [
+                {
+                    "displayName": "StrongAuthenticationMethod",
+                    "oldValue": "[{\"MethodType\":6,\"Default\":true},{\"MethodType\":7,\"Default\":false}]",
+                    "newValue": "[{\"MethodType\":7,\"Default\":false},{\"MethodType\":6,\"Default\":true},{\"MethodType\":0,\"Default\":false},{\"MethodType\":5,\"Default\":false}]"
+                },
+                {
+                    "displayName": "Included Updated Properties",
+                    "oldValue": null,
+                    "newValue": "\"StrongAuthenticationMethod\""
+                },
+                {
+                    "displayName": "TargetId.UserType",
+                    "oldValue": null,
+                    "newValue": "\"Member\""
+                }
+            ]
+        }
+    ],
+    "additionalDetails": [
+        {
+            "key": "UserType",
+            "value": "Member"
+        }
+    ]
 }
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

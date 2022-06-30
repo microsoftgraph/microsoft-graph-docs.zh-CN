@@ -1,18 +1,18 @@
 ---
-title: TeamsFx 提供程序
-description: 使用Microsoft Teams应用程序中的 TeamsFx 提供程序为 Microsoft Graph Toolkit 组件提供对 Microsoft Graph 的访问权限。
+title: TeamsFx 提供商
+description: 使用 Microsoft Teams 应用程序中的 TeamsFx 提供程序为 Microsoft Graph 工具包组件提供对 Microsoft Graph 的访问权限。
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.openlocfilehash: 62df3d038c7a407da77e92b1d4de04fd1832aacf
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 0789bcff15b523ae8227a2dccf3b0360810fd64e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694390"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438239"
 ---
-# <a name="teamsfx-provider"></a>TeamsFx 提供程序
+# <a name="teamsfx-provider"></a>TeamsFx 提供商
 
-使用Microsoft Teams应用程序中的 TeamsFx 提供程序为 Microsoft Graph Toolkit 组件提供对 Microsoft Graph 的访问权限。
+使用 Microsoft Teams 应用程序中的 TeamsFx 提供程序为 Microsoft Graph 工具包组件提供对 Microsoft Graph 的访问权限。
 
 若要详细了解身份验证提供程序，请参阅 [提供程序](./providers.md)。
 
@@ -60,5 +60,7 @@ public render(): void {
 
 有关演示如何初始化 TeamsFx 提供程序的示例，请参阅 [联系人导出程序示例](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/graph-toolkit-contact-exporter)。
 
+
 ## <a name="see-also"></a>另请参阅
-* [开始Microsoft Teams和Teams Toolkit开发](https://aka.ms/teamsfx-docs)
+* [Microsoft Teams 和 Teams 工具包开发入门](https://aka.ms/teamsfx-docs)
+* [一个生产力中心研讨会](https://github.com/OfficeDev/OneProductivityHub-TeamsFx)

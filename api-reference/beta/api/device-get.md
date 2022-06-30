@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dec9c03571ebdaae8e0557d7dffbd369f7c2c5c8
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: c8b328a93c72c17bfff376f803ddc5a8ffc018c9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671284"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440042"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -20,7 +20,7 @@ ms.locfileid: "63671284"
 
 获取 device 对象的属性和关系。
 
-由于 **设备** 资源 [支持扩展](/graph/extensibility-overview)，因此 `GET` 也可使用 操作获取设备实例中的自定义属性和 **扩展** 数据。
+由于 **设备** 资源支持 [扩展](/graph/extensibility-overview)，因此还可以使用该 `GET` 操作获取 **设备** 实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,13 +34,13 @@ ms.locfileid: "63671284"
 
 ## <a name="http-request"></a>HTTP 请求
 
-请求 `{id}` 中的 是设备的 **id** 属性的值，而不是 **deviceId** 属性的值。
+请求 `{id}` 中是设备 **ID 属性的** 值，而不是 **deviceId** 属性的值。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData `$select` [查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:-----------|:------|
@@ -87,11 +87,15 @@ GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 [!INCLUDE [sample-code](../includes/snippets/go/get-device-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-device-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>响应
-以下示例显示无 **hostNames 的设备的响应**。 
+以下示例演示没有 **hostNames** 的设备的响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -115,7 +119,7 @@ Content-type: application/json
 }
 ```
 
-以下示例显示对具有 **hostNames 的设备的响应**。 
+下面的示例演示具有 **hostNames** 的设备的响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -137,11 +141,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-device-and-return-only-its-id-and-extensionattributes-properties"></a>示例 2：获取设备并仅返回其 id 和 extensionAttributes 属性
+### <a name="example-2-get-a-device-and-return-only-its-id-and-extensionattributes-properties"></a>示例 2：获取设备并仅返回其 ID 和 extensionAttributes 属性
 
 #### <a name="request"></a>请求
 
-以下请求检索 **设备的 id** 和 **extensionAttributes** 属性。
+以下请求检索设备的 **ID** 和 **extensionAttributes** 属性。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -170,6 +174,10 @@ GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d182198
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-device-select-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-device-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

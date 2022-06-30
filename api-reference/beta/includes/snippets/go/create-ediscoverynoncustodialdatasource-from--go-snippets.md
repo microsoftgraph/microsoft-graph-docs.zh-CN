@@ -1,25 +1,25 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7f7f24071cf572f1de97651954017d0ab3a0cf95
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 57301878c04d08bb49f15dbecd86dcd00d5e7a8c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092280"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503041"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEdiscoveryNoncustodialDataSource()
-dataSource := msgraphsdk.NewDataSource()
-requestBody.SetDataSource(dataSource)
-dataSource.SetAdditionalData(map[string]interface{}{
-    "@odata.type": "microsoft.graph.security.siteSource",
+requestBody := msgraphsdk.New()
+requestBody.SetAdditionalData(map[string]interface{}{
+    "@odata.id": "https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialDataSources/39333641443238353535383731453339",
 }
 ediscoveryCaseId := "ediscoveryCase-id"
-result, err := graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).NoncustodialDataSources().Post(requestBody)
+ediscoverySearchId := "ediscoverySearch-id"
+ediscoveryNoncustodialDataSourceId := "ediscoveryNoncustodialDataSource-id"
+graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).SearchesById(&ediscoverySearchId).NoncustodialSourcesById(&ediscoveryNoncustodialDataSourceId).Post(requestBody)
 
 
 ```

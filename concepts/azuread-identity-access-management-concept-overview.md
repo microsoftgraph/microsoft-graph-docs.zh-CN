@@ -1,16 +1,16 @@
 ---
 title: Azure AD 标识和访问管理 API 概述
-description: 'Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)，实现应用、设备、服务和基础结构之间的安全和高效访问。 组织可以使用 Azure AD 来管理标识，并控制本地、混合及云环境中的访问。  '
+description: 使用 Azure Active Directory (Azure AD) 管理标识和设备，并在本地、混合、云环境中控制访问。
 author: jackson-woods
 ms.localizationpriority: high
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ea9fd66eb24b4293a4b86af1e2fbbe2eb55a46e2
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 85f1837c7e2c4b8a7d50000b14978645a9e247cd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507954"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443793"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD 标识和访问管理 API 概述
 
@@ -72,9 +72,9 @@ Azure AD 使用自适应机器学习算法和启发，检测表明帐户可能�
 
 审查对组织中的组、应用程序甚至特权角色的访问权限。 [访问评审](/graph/api/resources/accessreviews-root) 是 Azure AD Premium P2 中的特色功能。
 
-### <a name="activate-users-into-privileged-roles-preview"></a>激活用户的特权角色（预览版）
+### <a name="activate-users-into-privileged-roles"></a>激活用户成为特权角色
 
-使用 [特权标识管理 (PIM) API](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) 以按需激活管理员特权。 强制执行角色激活的强制理由，并为特权角色中的行动者强制执行多重身份验证。
+使用 [特权标识管理 (PIM) API](/graph/api/resources/rolemanagement) 以按需激活管理员特权。 强制执行角色激活的强制理由，并为特权角色中的行动者强制执行多重身份验证。
 
 ## <a name="api-reference"></a>API 参考
 

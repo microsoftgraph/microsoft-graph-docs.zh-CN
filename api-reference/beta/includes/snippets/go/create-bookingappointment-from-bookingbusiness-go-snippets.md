@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ca533320e8c017732bbd079ecb8488cbf861128d
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: fa6f89abc7d7a1301de42b6264212febc5b7db08
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66098687"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502609"
 ---
 ```go
 
@@ -88,6 +88,7 @@ isLocationOnline := true
 requestBody.SetIsLocationOnline(&isLocationOnline)
 optOutOfCustomerEmail := false
 requestBody.SetOptOutOfCustomerEmail(&optOutOfCustomerEmail)
+requestBody.SetAnonymousJoinWebUrl(nil)
 postBuffer := "PT10M"
 requestBody.SetPostBuffer(&postBuffer)
 preBuffer := "PT5M"

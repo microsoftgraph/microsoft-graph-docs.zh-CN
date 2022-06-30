@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fd415d36b67dc9bd4a7c246ce56ea7061d3bca85
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: e9bcbfd432bbc18d284a2382e01ce3e2ff51e9f1
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671277"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438003"
 ---
 # <a name="list-administrativeunits"></a>列出 administrativeUnits
 
@@ -18,7 +18,7 @@ ms.locfileid: "63671277"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [administrativeUnit 对象](../resources/administrativeunit.md) 的列表。
+检索 [administrativeUnit](../resources/administrativeunit.md) 对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -36,7 +36,7 @@ GET /administrativeUnits
 GET /directory/administrativeUnits
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$count`使用 、 `$select`、 `$search`、 `$filter`和 `$expand` [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
+此方法支持 `$count`[OData](/graph/query-parameters) `$select``$search`查询参数，`$expand``$filter`以帮助自定义响应。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -49,7 +49,7 @@ GET /directory/administrativeUnits
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象集合。
+如果成功，此方法在响应正文中返回一个 `200 OK` 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
@@ -102,20 +102,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits",
-    "value": [
-        {
-            "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
-            "deletedDateTime": null,
-            "displayName": "Seattle District Technical Schools",
-            "description": "Seattle district technical schools administration",
-            "isMemberManagementRestricted": null,
-            "visibility": "HiddenMembership",
-            "membershipRule": null,
-            "membershipType": null,
-            "membershipRuleProcessingState": null
-        }
-    ]
+  "value": [
+    {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
+    "id": "49eb93f2-a5a2-4567-ad66-76a3ebd01d84",
+    "deletedDateTime": null,
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "visibility": null,
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipType": "Dynamic",
+    "membershipRuleProcessingState": "On"
+    }
+  ]
 }
 ```
 

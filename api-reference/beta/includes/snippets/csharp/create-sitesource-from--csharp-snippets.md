@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 50379f0e9698860946da4f308886131da975f8c1
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 25a02740efbbc32735a115c014fc0289db2e7a23
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092455"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446698"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var siteSource = new Microsoft.Graph.Security.SiteSource
     }
 };
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Custodians["{security.ediscoveryCustodian-id}"].SiteSources
+await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].LegalHolds["{security.ediscoveryHoldPolicy-id}"].SiteSources
     .Request()
     .AddAsync(siteSource);
 

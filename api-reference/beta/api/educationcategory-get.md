@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2670e029899a7dde734a8a64052bbf21c881082a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6580a52a06fed26b7f2c438723a37d6466d4b370
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003113"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442801"
 ---
 # <a name="get-educationcategory"></a>获取 educationCategory
 
@@ -41,7 +41,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头        | 值                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}。必需。 |
@@ -52,7 +52,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationCategory](../resources/educationcategory.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [educationCategory](../resources/educationcategory.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -86,8 +86,12 @@ GET https://graph.microsoft.com/beta/education/classes/dacbf757-888d-42ae-b701-5
 [!INCLUDE [sample-code](../includes/snippets/java/get-class-category-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-class-category-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-class-category-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

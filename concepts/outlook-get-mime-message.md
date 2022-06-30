@@ -1,15 +1,15 @@
 ---
-title: 获取邮件的 MIME 内容
+title: 使用 Outlook 邮件 API 获取邮件的 MIME 内容
 description: 多用途 Internet 邮件扩展 (MIME) 是一种行业电子邮件标准。 你现在可以使用 `$value` 段来获取 Outlook 邮件的 MIME 内容。
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 541c2481c8534cec7f96010a55beb6d02d825a62
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b60a44345b9a75a776492fb04706cb9f5d7ffb6
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135933"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442792"
 ---
 # <a name="get-mime-content-of-a-message"></a>获取邮件的 MIME 内容
 
@@ -44,7 +44,7 @@ MIME 是 Internet 电子邮件用于通过 SMTP 传输以下类型内容的标�
 
 ## <a name="get-mime-content-of-an-outlook-message"></a>获取 Outlook 邮件的 MIME 内容
 
-你可以通过在[获取邮件](/graph/api/message-get?view=graph-rest-1.0)时附加 `$value` 段来获取邮件的 MIME 表示： 
+你可以通过在[获取邮件](/graph/api/message-get)时附加 `$value` 段来获取邮件的 MIME 表示： 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -154,10 +154,10 @@ YW5vdGhlciBtYWlsLg0K
 
 ## <a name="get-mime-content-of-an-outlook-message-attached-to-an-outlook-item-or-group-post"></a>获取附加到 Outlook 项目或组帖子的 Outlook 邮件的 MIME 内容
 
-你还可以获取 Outlook 邮件的 MIME 表示，如果邮件附加到 Outlook [事件](/graph/api/resources/event?view=graph-rest-1.0)、[邮件](/graph/api/resources/message?view=graph-rest-1.0)、[任务](/graph/api/resources/outlooktask?view=graph-rest-beta)或组[帖子](/graph/api/resources/post?view=graph-rest-1.0)，你的应用程序可以访问。
+你还可以获取 Outlook 邮件的 MIME 表示，如果邮件附加到 Outlook [事件](/graph/api/resources/event)、[邮件](/graph/api/resources/message)、[任务](/graph/api/resources/outlooktask)或组[帖子](/graph/api/resources/post)，你的应用程序可以访问。
 
-为此，标识邮件附件，并在[获取该附件](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment
-)时附加 `$value` 段。 以下显示了访问附件的一些常用方法。 有关详细信息，请参阅[获取附件](/graph/api/attachment-get?view=graph-rest-1.0#http-request)。
+为此，标识邮件附件，并在[获取该附件](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment
+)时附加 `$value` 段。 以下显示了访问附件的一些常用方法。 有关详细信息，请参阅[获取附件](/graph/api/attachment-get#http-request)。
 
 如果邮件附加到用户默认日历中的事件：
 <!-- { "blockType": "ignored" } -->
@@ -276,8 +276,6 @@ e.</p>
 
 ## <a name="next-steps"></a>后续步骤
 
-详细了解以下信息：
-
-- 获取事件、邮件、Outlook 任务或组帖子的[项目附件的 MIME 内容](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment)
+- 获取事件、邮件、Outlook 任务或组帖子的[项目附件的 MIME 内容](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment)
 - [为什么与 Outlook 邮件集成](outlook-mail-concept-overview.md)
-- [使用功能邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)
+- 在 Microsoft Graph v1.0 中 [使用邮件 API](/graph/api/resources/mail-api-overview) 及其 [用例](/graph/api/resources/mail-api-overview#common-use-cases)

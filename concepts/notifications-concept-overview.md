@@ -1,27 +1,27 @@
 ---
-title: 利用 Microsoft Graph 通知实现以人为中心的通知体验（已弃用）
-description: Microsoft Graph 通知平台提供了一种以人为中心的方法，让你能够应对所有设备终结点中的应用。
+title: 启用以人为中心的通知体验 (已弃用)
+description: Microsoft Graph 通知 API 在 2022 年 1 月停止返回数据。 有关替代体验，请参阅 Azure 通知中心文档。
 ms.localizationpriority: high
 ms.prod: notifications
 ms.custom: scenarios:getting-started
 author: merzink
-ms.openlocfilehash: 0979e2c780d0d589ec24575385113057e6a44066
-ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
+ms.openlocfilehash: 6c1a0a27be58cafd0d8234114391513c708c21a9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61609016"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447154"
 ---
 # <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications-deprecated"></a>利用 Microsoft Graph 通知实现以人为中心的通知体验（已弃用）
 
 > [!IMPORTANT]
-> Microsoft Graph 通知 API 已弃用，将在 2022 年 1 月底停止返回数据。 有关其他通知体验，请参阅 [Microsoft Azure 通知中心](/azure/notification-hubs)，并[查看此博客文章](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)了解详细信息。
+> Microsoft Graph 通知 API 已弃用，并且已于 2022 年 1 月停止返回数据。 有关其他通知体验，请参阅 [Microsoft Azure 通知中心](/azure/notification-hubs)。 更多相关信息，请参阅博客文章 [停用 Microsoft Graph 通知 API (beta 版本)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)。
 
 通知是与应用程序用户再次交互的最有效的方式之一。 绝佳的通知体验有助于在你和你的用户之间开启一个近乎实时的沟通渠道，这转而可在适当的时间提高应用参与度、帮助用户提升工作效率，并就重要事件或必需操作提醒他们。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/cmpPFhrS8ZA]
 
-如今，用户可通过各种各样的平台，在各种外观设置下访问你的应用程序和服务。 设备如此多样，就需要你了解和支持多平台通知系统、将用户映射到终结点，并保证不同设备的通知状态一致。 
+如今，用户可通过各种各样的平台，在各种外观设置下访问你的应用程序和服务。 设备如此多样，就需要你了解和支持多平台通知系统、将用户映射到终结点，并保证不同设备的通知状态一致。
 
 其他的大部分通知系统都消除了理解和定向平台专用推送通知系统的需求，但仍然设计为针对每款设备。 Microsoft Graph 通知平台提供了一种以人为中心的方法，让你能够应对所有设备终结点中的应用。
 

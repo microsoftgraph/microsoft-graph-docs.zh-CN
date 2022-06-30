@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4dd9dfb9471d127d54bd27e644a296201f3501bf
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: ef36b47b1666010dedf59d384742544ee35ceca5
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884109"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447105"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -47,7 +47,7 @@ ms.locfileid: "65884109"
 ```http
 HTTP/1.1 429 Too Many Requests
 Content-Type: application/json
-Retry-After: 2.128
+Retry-After: 10
 
 {
   "error": {
@@ -429,7 +429,7 @@ Planner 的服务限制不可用。
 
 ### <a name="excel-service-limits"></a>Excel 服务限制
 
-有关 Excel 服务限制的说明和最佳实践，请参阅[限制](workbook-best-practice.md#throttling)。 此外，还存在以下限制。
+有关 Excel 服务限制的说明和最佳实践，请参阅 [减少限制错误](workbook-best-practice.md#reduce-throttling-errors)。 此外，还存在以下限制。
   
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c66e967a4844226af29fecbcb1d6a9be2f47a2be
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 71da05eea959b6df24b99e8533bfcab817de93b0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510244"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447063"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
@@ -65,7 +65,7 @@ ms.locfileid: "64510244"
 
 若要在应用程序中使用此功能，请使用[更新 printerShare](/graph/api/printershare-update) 来更新 printerShare 的 `printer` 引用。
 
-### <a name="extending-universal-print-to-support-pull-printing"></a>扩展通用打印以支持拉取打印
+### <a name="enable-pull-printing"></a>启用拉取打印
 
 Microsoft Graph 通用打印 API 使你的应用程序能够支持拉取打印。若要设置拉取打印，你需要注册触发器，以便在发生某些打印事件（例如正在启动打印作业）时通知应用程序（通过服务到服务通信）。
 
@@ -79,7 +79,7 @@ Microsoft Graph 通用打印 API 使你的应用程序能够支持拉取打印�
 
 3. 使用应用程序权限和 `application/ipp` 介质类型[更新虚拟打印机的属性](/graph/api/printer-update)（参阅示例）。
 
-4. 使用将任务定义与虚拟打印机相关联的管理员身份验证令牌来[为虚拟打印机创建任务触发器](/graph/api/printer-post-tasktriggers)。
+4. 使用将任务定义与虚拟打印机相关联的管理员身份验证令牌来[为虚拟打印机创建任务触发器](/graph/api/printer-post-tasktriggers)。 用于生成访问令牌的应用 ID 应与用于创建任务定义的应用 ID 相同。
 
 5. 将打印作业提交到虚拟打印机后，由于 [printTaskTrigger](/graph/api/resources/printtasktrigger)，它将暂停。 将根据关联的 [printTaskDefinition](/graph/api/resources/printtaskdefinition) 创建状态为 `processing` 的 [printTask](/graph/api/resources/printtask)。
 

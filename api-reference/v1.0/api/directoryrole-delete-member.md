@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0cb41863dbfb53ee933e488f11c51c8c453c89d9
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 3781a85088e4ee98032de934d372e5c6ac44eff8
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118639"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442961"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 
@@ -40,7 +40,7 @@ DELETE /directoryRoles/{role-id}/members/{id}/$ref
 DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
 > [!CAUTION]
-> 如果`/$ref`未追加到请求，并且调用应用具有管理成员对象的权限，则也会从 Azure AD) Azure Active Directory (删除该对象;否则返回`403 Forbidden`错误。 可以通过还 [原已删除的项 API](directory-deleteditems-restore.md) 还原特定对象。
+> 如果 `/$ref` 未追加到请求，并且调用应用具有管理成员对象的权限，则也会从 Azure Active Directory (Azure AD) 中删除该对象;否则返回 `403 Forbidden` 错误。 可以通过 [还原已删除的项 API](directory-deleteditems-restore.md) 还原特定对象。
 
 ## <a name="request-headers"></a>请求头
 
@@ -91,6 +91,10 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-directoryobject-from-directoryrole-objectid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-directoryobject-from-directoryrole-objectid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

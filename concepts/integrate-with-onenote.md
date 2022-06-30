@@ -1,16 +1,16 @@
 ---
 title: OneNote API 概述
-description: OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板电脑或桌面上键入、草绘或语音来跟踪家庭、学校或工作方面的想法和笔记。 用户可以随意整理笔记、切换设备、接续之前的工作，以及与他人展开实时笔记协作。
+description: 使用 Microsoft Graph 中的 OneNote API 访问 OneNote 笔记本、分区和页面，以创建可帮助用户规划和组织想法和信息的解决方案。
 author: Jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: eeedcd2519900bdfccdde763d2996b18990787e5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b8f8c01955d0ede7bfad843cebb783eb5f9f268f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136017"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444899"
 ---
 # <a name="onenote-api-overview"></a>OneNote API 概述
 
@@ -52,12 +52,11 @@ OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板�
 
 ## <a name="learn-more-about-onenote-apis"></a>详细了解 OneNote API
 
-深入探索 Microsoft Graph API 以了解 OneNote 内容更新功能。 以下列表中的主题说明如何创建新的 OneNote 页并用新内容更新现有页。 此外，还将了解使用 Microsoft Graph 更新 OneNote 笔记本的最佳做法。 
-
+深入探索 Microsoft Graph API 以了解 OneNote 内容更新功能。 以下列表中的主题说明如何创建新的 OneNote 页并用新内容更新现有页。 此外，还将了解使用 Microsoft Graph 更新 OneNote 笔记本的最佳做法。
 
 ### <a name="work-with-onenote"></a>使用 OneNote
 
-* [使用 OneNote REST API](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
+* [使用 OneNote REST API](/graph/api/resources/onenote-api-overview)
 * [最佳做法](onenote-best-practices.md)
 * [品牌塑造准则](onenote-branding.md)
 * [打开 OneNote 客户端](open-onenote-client.md)
@@ -77,7 +76,15 @@ OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板�
 * [将图像、视频和文件添加到 OneNote 页](onenote-images-files.md)
 * [使用 OneNote API div 标记从捕获内容中提取数据](onenote-extract-data.md)
 
+## <a name="api-reference"></a>API 参考
+
+在查找此服务的 API 参考？
+
+- [Microsoft Graph v1.0 中的 OneNote API](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Microsoft Graph beta 中的 OneNote API](/graph/api/resources/onenote-api-overview?view=graph-rest-beta&preserve-view=true)
+
 ## <a name="see-also"></a>另请参阅
+
 了解仅对 OneNote 服务专用 REST 终结点公开的其他一些 OneNote 功能。
 
 - [OneNote 开发](/previous-versions/office/office-365-api/how-to/onenote-landing)
@@ -89,16 +96,8 @@ OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板�
 - [使用网页上的 OneNote 保存对话框](/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
 - [订阅 Webhook](/previous-versions/office/office-365-api/how-to/onenote-sync)
 
-## <a name="api-reference"></a>API 参考
-在查找此服务的 API 参考？
-
-- [Microsoft Graph v1.0 中的 OneNote API](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的 OneNote API](/graph/api/resources/onenote-api-overview?view=graph-rest-beta)
-
 ## <a name="next-steps"></a>后续步骤
 
-使用 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)在你自己的 OneNote 笔记本中试用 OneNote API。
+- 使用 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)在你自己的 OneNote 笔记本中试用 OneNote API。
 
-若要在 Graph 浏览器中进行 OneNote API 调用，请选择左侧栏中的“显示更多示例”。 使用菜单将 OneNote 切换至“打开”。 还需要启用相应的权限。 在左侧菜单中的帐户名称中，选择“修改权限”。 有关 OneNote 权限的详细信息，请参阅[笔记权限](permissions-reference.md#notes-permissions)。
-
-若要开始在 Microsoft Graph 中使用 OneNote API，请参阅 [OneNote 参考内容](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)。
+- 若要在 Graph 浏览器中进行 OneNote API 调用，请选择左侧栏中的“显示更多示例”。 使用菜单将 OneNote 切换至“打开”。 还需要启用相应的权限。 在左侧菜单中的帐户名称中，选择“修改权限”。 有关 OneNote 权限的详细信息，请参阅[笔记权限](permissions-reference.md#notes-permissions)。

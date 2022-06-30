@@ -1,20 +1,20 @@
 ---
-title: Microsoft Bookings API 概述（预览版）
-description: Microsoft Bookings 提供了联机移动应用，可便于组织及他们的客户和用户轻松高效地安排约会。
+title: Microsoft Bookings API 概述
+description: Microsoft Bookings 提供了在线和移动应用，可便于组织及其客户和用户轻松高效地安排约会。
 author: arvindmicrosoft
 ms.localizationpriority: high
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4652765f9832ab36d11ff640743e4b0c2c996097
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 3b143969faf7dcc67d4fc07a0ac117d9b020d09e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560728"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442160"
 ---
-# <a name="microsoft-bookings-api-overview-preview"></a>Microsoft Bookings API 概述（预览版）
+# <a name="microsoft-bookings-api-overview"></a>Microsoft Bookings API 概述
 
-Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客户轻松高效地安排约会。 任何提供预约服务的组织（如大型企业、汽车维修店、发廊和律师事务所）都可以从管理他们的预订中受益，从而有时间来做一些有助于业务增长的更重要的任务。 Microsoft Bookings 适用于拥有 Microsoft 365 商业高级版订阅的企业组织和企业。
+Microsoft Bookings 提供了在线和移动应用，可便于组织及其客户轻松高效地安排约会。 任何提供预约服务的组织（如大型企业、汽车维修店、发廊和律师事务所）都可以从管理他们的预订中受益，从而有时间来做一些有助于业务增长的更重要的任务。 Microsoft Bookings 适用于拥有 Microsoft 365 商业高级版订阅的企业组织和企业。
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>为什么使用 Microsoft Graph 与 Microsoft Bookings 集成？
 
@@ -33,15 +33,10 @@ Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客�
 使用相同的统一 Microsoft Graph REST 端点，可以访问 Bookings API，并[与 Microsoft 365 的最佳功能进行集成](overview-major-services.md)以支持更丰富的应用场景。 例如，可以使用 [Excel](excel-concept-overview.md#generate-reports-and-analyze-results) 跟踪和分析企业财务数据并生成专业的报表，或者使用 [SharePoint](sharepoint-concept-overview.md) 或 [Microsoft Teams](teams-concept-overview.md) 来增强团队协作。
 
 ## <a name="api-reference"></a>API 参考
-在查找此服务的 API 参考？
 
-请参阅 [Microsoft Graph beta 中的 Microsoft Bookings API](/graph/api/resources/booking-api-overview)。
+在查找此服务的 API 参考？ 请参阅 [Microsoft Graph 中的 Microsoft Bookings API](/graph/api/resources/booking-api-overview)。
 
+## <a name="see-also"></a>另请参阅
 
-## <a name="next-steps"></a>后续步骤
-
-详细了解以下信息：
-
-- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) 和其他 [Microsoft 365 商业版应用](https://www.microsoft.com/microsoft-365)。
-- 在 Microsoft Graph 中[使用 Bookings API](/graph/api/resources/booking-api-overview)。
-
+- [Microsoft Bookings for Microsoft 365](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d)
+- 其他 [Microsoft 365 商业应用](https://www.microsoft.com/microsoft-365)

@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: eeea6d9e5bec9d074af572b8f742a049360570bd474d4abbf9324afcd8f538b0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 885fcaf8f238a7c78150b2b7e2934285889d1ca9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161707"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502813"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Settings
-    .ResetToDefault()
+await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Settings
+    .Resettodefault()
     .Request()
     .PostAsync();
 

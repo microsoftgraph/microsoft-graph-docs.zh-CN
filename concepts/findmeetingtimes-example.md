@@ -1,17 +1,17 @@
 ---
 title: 在 Outlook 日历上找到可能的会议时间
-description: '在工作区或学校中，查找共同的见面时间和地点通常会产生开销。Microsoft Graph 应用程序可以使用 '
+description: 使用 findMeetingTimes 标识满足时间、位置和其他约束的会议时间。 包括涉及两个用户的示例。
 ms.localizationpriority: high
-ms.openlocfilehash: b8a33e5e8f44a3af500a1424216116df5324bdc5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 97ee0a5b15a819ba7662764a684ab53ed9e2353b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021398"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440696"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>在 Outlook 日历上找到可能的会议时间
 
-在工作场所或学校，寻找开会的公共时间和场所经常会产生开销。Microsoft Graph 应用程序可使用 [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 标识满足时间、位置和其他限制条件要求的可能的会议时间。   
+在工作场所或学校，寻找开会的公共时间和场所经常会产生开销。Microsoft Graph 应用程序可使用 [findMeetingTimes](/graph/api/user-findmeetingtimes) 标识满足时间、位置和其他限制条件要求的可能的会议时间。
 
 **FindMeetingTimes** 操作使你可以指定条件，如会议日期/时间范围、持续时间、可选或必选的与会者，以及活动性质 (**activityDomain**)。该操作考虑到与会者和组织者正常的工作计划和忙/闲状态，并建议适合参与者和活动类型的时间。例如，建议列表会首先列出组织者和与会者工作时间经常发生的与工作相关的活动的建议，以及所需与会者的位置的建议。
 
@@ -24,7 +24,8 @@ Prefer: outlook.timezone="{time-zone-string}}"
 
 如果 **findMeetingTimes** 无法提出任何会议时间建议，则它指示某个特定原因 (**emptySuggestionsReason**)，如组织者或需要的与会者没有空。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes**。
 
->**注意** **findMeetingTimes** 操作当前仅对 Microsoft 365 工作或学校邮箱可用，对个人 outlook.com 邮箱不可用。
+> [!NOTE]
+> **findMeetingTimes** 操作当前可用于Microsoft 365工作或学校邮箱，但不适用于个人 outlook.com 邮箱。
 
 ## <a name="example"></a>示例
 
@@ -43,7 +44,7 @@ Prefer: outlook.timezone="{time-zone-string}}"
 1. 第一次调用在 4 月 18 到 20 日的时间范围内查找。由于与会者在 4 月 18 到 19 日期间外出，4 月 20 日一般不会有空，第一次调用不会返回建议，原因 (**emptySuggestionsReason**) 是与会者没有空。
 2. 第二次调用查找 4 月 21 日的可用性并返回下午 2-4 点的建议。
 
-两次 **findMeetingTimes** 调用包含以下参数。**findMeetingTimes** 的所有 [参数](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body)都是可选的。
+两次 **findMeetingTimes** 调用包含以下参数。**findMeetingTimes** 的所有 [参数](/graph/api/user-findmeetingtimes#request-body)都是可选的。
 
 - **与会者**：一位与会者 Samantha Booth 的 **类型** 属性设置为 `required`
 - **locationConstraint**：不需要任何位置建议
@@ -238,11 +239,11 @@ Content-Length: 714
 
 ## <a name="next-steps"></a>后续步骤
 
-有时，不是所有与会者都可以参加会议。如果与会者的 _置信度_ 达到某个百分比（可指定 **minimumAttendeePercentage** 可选参数），你可以让 **findMeetingTimes** 建议一个时间。了解有关 [会议建议置信度](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#the-confidence-of-a-meeting-suggestion)和其他 [参数](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body)的详细信息，并根据需要将其用于大型会议。
+有时，不是所有与会者都可以参加会议。如果与会者的 _置信度_ 达到某个百分比（可指定 **minimumAttendeePercentage** 可选参数），你可以让 **findMeetingTimes** 建议一个时间。了解有关 [会议建议置信度](/graph/api/user-findmeetingtimes#the-confidence-of-a-meeting-suggestion)和其他 [参数](/graph/api/user-findmeetingtimes#request-body)的详细信息，并根据需要将其用于大型会议。
 
 获取会议时间建议后，可能需要：
 
-1. [创建事件并将其作为会议请求发送](/graph/api/user-post-events?view=graph-rest-1.0)。
-2. 在事件中[添加附件](/graph/api/event-post-attachments?view=graph-rest-1.0)。
+1. [创建事件并将其作为会议请求发送](/graph/api/user-post-events)。
+2. 在事件中[添加附件](/graph/api/event-post-attachments)。
 
 了解更多关于[与 Outlook 日历集成](outlook-calendar-concept-overview.md)的信息。

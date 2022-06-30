@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3092ffba2f3172f559ac8ab9d1d8a2630d827e57
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: b32e387be770cd90d30c40be4b93e7ef9c7b5af2
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095533"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438793"
 ---
 # <a name="create-ediscoverycase"></a>创建 ediscoveryCase
 命名空间：microsoft.graph.security
@@ -20,7 +20,7 @@ ms.locfileid: "66095533"
 创建新的 [ediscoveryCase](../resources/security-ediscoverycase.md) 对象。
 
 >[!NOTE]
-> 此 API 仅使用新事例格式创建电子数据展示 (高级版) 案例。 若要详细了解电子数据展示中的新事例格式，请参阅[电子数据展示 (高级版) 中使用新事例格式](/microsoft-365/compliance/advanced-ediscovery-new-case-format)。
+> 此 API 仅使用新事例格式创建电子数据展示 (高级) 案例。 若要详细了解电子数据展示中的新事例格式，请参阅 [使用电子数据展示 (高级) 中的新事例格式 ](/microsoft-365/compliance/advanced-ediscovery-new-case-format)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "66095533"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverycase-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoverycase-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

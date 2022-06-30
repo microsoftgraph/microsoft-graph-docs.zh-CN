@@ -1,19 +1,19 @@
 ---
-title: 获取共享文件夹或委托文件夹中的 Outlook 邮件
-description: 使用 Outlook，客户可以与其他人共享邮件文件夹，并授予对各个文件夹的读取、创建、修改或删除访问权限。 通过 Outlook，客户还可以委托其他用户代表自己执行操作。
+title: 使用 Outlook 邮件 API 获取共享或委派文件夹中的 Outlook 邮件
+description: 使用 Outlook 邮件 API 与他人共享邮件文件夹并管理对文件夹的访问权限。 还可以委托其他用户代表你执行操作。
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: c2798e01d29badc1d3228692d02caca1ab89fa87
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d0199c3971823f9efe2149860b516b5d1bf89424
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071747"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444304"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>获取共享文件夹或委托文件夹中的 Outlook 邮件
 
-使用 Outlook，客户可以与其他人共享邮件文件夹，并授予对各个文件夹的“读取”、“创建”、“修改”或“删除”访问权限。 此外，使用 Outlook，客户还可以委托其他用户代表自己执行操作，并访问特定邮件文件夹或客户的整个邮箱；在 Outlook 中，这也称为“委托”。
+使用 Outlook，客户可以与其他人共享邮件文件夹，并授予对各个文件夹的读取、创建、修改或删除访问权限。 此外，使用 Outlook，客户还可以委托其他用户代表自己执行操作，并访问特定邮件文件夹或客户的整个邮箱；在 Outlook 中，这也称为“委托”。
 
 Microsoft Graph 以编程方式支持在其他用户共享的邮件文件夹中获取邮件，以及获取共享文件夹本身。该支持也适用于已委托的文件夹。
 
@@ -67,7 +67,5 @@ GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')
 
 ## <a name="next-steps"></a>后续步骤
 
-详细了解以下信息：
-
 - [为什么与 Outlook 邮件集成](outlook-mail-concept-overview.md)
-- [使用邮件 API](/graph/api/resources/mail-api-overview) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview#common-use-cases)。
+- 在 Microsoft Graph v1.0 中 [使用邮件 API](/graph/api/resources/mail-api-overview) 及其 [用例](/graph/api/resources/mail-api-overview#common-use-cases)

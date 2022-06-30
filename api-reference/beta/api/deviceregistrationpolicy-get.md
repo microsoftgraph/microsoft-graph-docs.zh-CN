@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5028cc130f08c8070b426e49085a3a4367e64e8d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 8e8d4e5bc34fb43221ebc3cd697737b03db556db
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226531"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445348"
 ---
 # <a name="get-deviceregistrationpolicy"></a>获取 deviceRegistrationPolicy
 
@@ -18,19 +18,19 @@ ms.locfileid: "61226531"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) 对象的属性和关系。 表示 deviceRegistrationPolicy 配额限制、其他身份验证和授权策略，以向组织注册设备标识。
+读取 [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) 对象的属性和关系。 表示 deviceRegistrationPolicy 配额限制、其他身份验证和授权策略，用于向组织注册设备标识。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）| Policy.ReadWrite.DeviceConfiguration|
+|委派（工作或学校帐户）| Policy.Read.All、Policy.ReadWrite.DeviceConfiguration|
 |委派（个人 Microsoft 帐户）|不支持|
 |Application|不支持|
 
-代表用户进行呼叫时，用户需要属于以下Azure AD[角色](/azure/active-directory/roles/permissions-reference)：
-+ 全局管理员
+代表用户调用时，用户需要属于以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)：
++ 全球管理员
 + 云设备管理员
 + 全局读取者
 
@@ -56,11 +56,13 @@ GET /policies/deviceRegistrationPolicy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_deviceregistrationpolicy"
@@ -69,11 +71,33 @@ GET /policies/deviceRegistrationPolicy
 ``` http
 GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-deviceregistrationpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-deviceregistrationpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-deviceregistrationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-deviceregistrationpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-deviceregistrationpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应
 
-下面是显示设备注册策略默认设置的响应示例。
+下面是显示设备注册策略的默认设置的响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

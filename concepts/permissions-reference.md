@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a0a8d7b93e7b21049998cca45068c4cf1258ff7d
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: 4726c2a71f8fd10fab3a4dd0ea86cc5b56c455cd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971341"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437014"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -856,6 +856,7 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 ---
 
+
 ## <a name="education-permissions"></a>教育版权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -1195,7 +1196,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1367,7 +1368,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1721,6 +1722,32 @@ People.Read.All 权限仅适用于工作和学校帐户。
 _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学校帐户有效。
 
 对于通过委派权限读取程序和程序控件的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或用户管理员。 对于通过委派权限写入程序和程序控件的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或用户管理员。  若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
+
+---
+## <a name="records-management-permissions"></a>记录管理权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_RecordsManagement.Read.All_ |从 Microsoft Purview 记录管理读取数据。 |允许应用程序代表已登录用户从 Microsoft Purview 记录管理解决方案读取任何数据，例如标签名称、事件名称和事件类型名称。 |是 | 
+|_RecordsManagement.ReadWrite.All_ | 从 Microsoft Purview 记录管理读取和写入任何数据。 |允许应用程序代表已登录用户从 Microsoft Purview 记录管理解决方案创建、更新和删除任何数据，例如标签、事件和事件类型。 |是 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_RecordsManagement.Read.All_ |从 Microsoft Purview 记录管理读取数据。 |允许应用程序代表已登录用户从 Microsoft Purview 记录管理解决方案读取任何数据，例如标签名称、事件名称和事件类型名称。 |是 | 
+|_RecordsManagement.ReadWrite.All_ | 从 Microsoft Purview 记录管理读取和写入任何数据。 |允许应用程序代表已登录用户从 Microsoft Purview 记录管理解决方案创建、更新和删除任何数据，例如标签、事件和事件类型。 |是 |
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>Delegated
+
+* _RecordsManagement.Read.All_：从 Microsoft Purview Records mangement 中获取可供用户使用的标签列表（`GET /security/labels/retentionLabels`）
+* _RecordsManagement.ReadWrite.All_：在 Microsoft Purview Records 管理中创建标签（`POST /security/labels/retentionLabels/`）
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
 

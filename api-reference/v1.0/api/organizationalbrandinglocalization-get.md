@@ -1,21 +1,21 @@
 ---
 title: Get organizationalBrandingLocalization
-description: 读取 organizationalBrandingLocalization 对象的属性和关系。
+description: 读取组织BrandingLocalization 对象的属性和关系。
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f8204252dc6355737d184512c9000161bd4040c3
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5d2f49c99c2e442cb14ebcfe1f69d1d192c81a25
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395249"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444459"
 ---
 # <a name="get-organizationalbrandinglocalization"></a>Get organizationalBrandingLocalization
 命名空间：microsoft.graph
 
-读取 [organizationalBrandingLocalization 对象的属性和](../resources/organizationalbrandinglocalization.md) 关系。 若要检索本地化品牌对象，请指定 **URL 中的 id** 值。
+读取 [组织BrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象的属性和关系。 若要检索本地化品牌对象，请在 URL 中指定 **ID** 的值。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "63395249"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | User.Read、Organization.Read.All、User.ReadBasic.All、User.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,11 +46,11 @@ GET /organization/{organizationId}/branding/localizations/{organizationalBrandin
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [组织BrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr-fr"></a>示例 1：为 fr-FR (特定区域设置获取本地化) 
+### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr-fr"></a>示例 1：获取特定区域设置的本地化品牌 (fr-FR) 
 
 #### <a name="request"></a>请求
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbrandinglocalization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbrandinglocalization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -123,7 +127,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-value-of-signinpagetext-for-a-specific-locale"></a>示例 2：获取特定区域设置 signInPageText 的值
+### <a name="example-2-get-the-value-of-signinpagetext-for-a-specific-locale"></a>示例 2：获取特定区域设置的 signInPageText 的值
 
 #### <a name="request"></a>请求
 
@@ -182,7 +186,7 @@ Content-Type: application/json
 
 ### <a name="example-3-get-the-bannerlogo-for-the-default-locale"></a>示例 3：获取默认区域设置的 bannerLogo
 
-下面的示例返回默认 **区域设置中的 bannerLogo** 对象。 您可以在请求 **URL 中** 指定 `default` `0` id 或 。 如果未设置对象，请求将返回空响应。
+以下示例返回默认区域设置的 **bannerLogo** 对象。 可以将 **ID** 指定为 `default` 请求 URL 或 `0` 在请求 URL 中。 如果未设置对象，则请求返回空响应。
 
 #### <a name="request"></a>请求
 
@@ -216,7 +220,7 @@ Content-Type: image/*
 
 ### <a name="example-4-get-the-bannerlogo-for-the-fr-fr-locale"></a>示例 4：获取 fr-FR 区域设置的 bannerLogo
 
-下面的示例返回 **未设置其 bannerLogo 区域设置的 bannerLogo** `fr-FR` 对象。
+以下示例返回未设置 bannerLogo 的区域设置的 **bannerLogo** 对象 `fr-FR` 。
 
 #### <a name="request"></a>请求
 
@@ -250,6 +254,10 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbranding-frlocale-bannerlogo-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

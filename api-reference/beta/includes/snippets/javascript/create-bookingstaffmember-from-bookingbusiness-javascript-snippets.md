@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1e29c0d9cecc838464615347751c92507574d8f4
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 354e1de14733ae657853f91367cba62aea200b00
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60736642"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502634"
 ---
 ```javascript
 
@@ -91,7 +91,8 @@ const bookingStaffMember = {
                 }
             ]
         }
-    ]
+    ],
+    isEmailNotificationEnabled: false
 };
 
 await client.api('/bookingBusinesses/{id}/staffMembers')

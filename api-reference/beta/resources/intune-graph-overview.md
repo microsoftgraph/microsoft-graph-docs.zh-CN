@@ -1,15 +1,15 @@
 ---
 title: 在 Microsoft Graph 中使用 Intune
 description: 适用于 Intune 的 Microsoft Graph API 允许以编程方式访问租户的 Intune 信息；API 会执行与可通过 Azure 门户执行的相同 Intune 操作。
-author: rolyon
+author: dougeby
 ms.localizationpriority: high
 ms.prod: intune
-ms.openlocfilehash: 835cdb2e15f942b1adef688e58cea6bd4e83879c
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: ade9b1d7579f94e84f8512d8ede342e6d57f2fcc
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044811"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441151"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 
@@ -53,7 +53,7 @@ Microsoft Graph 包括两组可用于管理 Windows 更新的 API：
 - [Intune API](/graph/intune-concept-overview)
 - [Windows 更新 API](/graph/windowsupdates-concept-overview)
 
-可以使用任一 API 管理 Windows 更新；但这两个 API 彼此并不兼容。 每个 API 都可以覆盖另一个所做配置，而不提供该操作的可见性。 同时使用两个 API 管理更新可能导致意外行为，包括在未确定原因情况下取消或修改的更新部署的临时配置。
+可以使用任一 API 管理 Windows 更新；但这两个 API 彼此并不兼容。 每个 API 都可以覆盖另一 API 所做的配置，而不提供该操作的可见性。 同时使用两个 API 管理更新可能导致意外行为，包括在没有确定原因的情况下取消或修改更新部署的临时配置。
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

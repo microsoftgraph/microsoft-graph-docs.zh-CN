@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 3a000fa0d7add3c225f545bde24dcf5983e8a7e9
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: a5eeee7c6bea68f82f653eb6e21de26b6e4b663a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205988"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445677"
 ---
 # <a name="documentsetversion-restore"></a>documentSetVersion：restore
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "65205988"
 |:---|:---|
 |委派（工作或学校帐户）|Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All、Sites.Selected|
+|应用程序|Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All、Sites.Selected|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/sites/root/lists/Documents/items/2/documen
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/documentsetversionthisrestore-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/documentsetversionthisrestore-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

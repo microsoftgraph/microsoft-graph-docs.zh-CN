@@ -1,24 +1,24 @@
 ---
-title: informationProtectionLabel：listLabels
+title: informationProtectionLabel： listLabels
 description: 检索信息保护标签的列表。
 ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 95e4bff83464857d5cbe100fa82e143f553e9f63
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8dd66a1416b8e9719814845cef81778f662abc53
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397202"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439600"
 ---
-# <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel：listLabels
+# <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel： listLabels
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户 [或组织](../resources/informationprotectionlabel.md) 可用的信息保护标签集合。
+获取可供用户或组织使用 [的信息保护标签](../resources/informationprotectionlabel.md) 的集合。
 
 ## <a name="permissions"></a>权限
 
@@ -33,13 +33,13 @@ ms.locfileid: "63397202"
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
-若要获取可供登录用户或指定用户使用的标签：
+若要获取已登录用户或指定用户可用的标签，请执行以下操作：
 ```http
 GET /me/informationProtection/policy/labels
 GET /users/{id | user-principal-name}/informationProtection/policy/labels
 ```
 
-若要获取对组织可用的标签，请：
+若要获取可供组织使用的标签，请执行以下操作：
 ```http
 GET /informationProtection/policy/labels
 ```
@@ -53,7 +53,7 @@ GET /informationProtection/policy/labels
 | 名称          | 说明                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}。必需。                                                                                                                                                         |
-| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将显示于 Azure 信息保护分析中。 建议的格式为 ApplicationName/Version。 可选。 |
+| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显示。 建议的格式为 ApplicationName/Version。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -61,7 +61,7 @@ GET /informationProtection/policy/labels
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [informationProtectionLabel](../resources/informationprotectionlabel.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [informationProtectionLabel](../resources/informationprotectionlabel.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 
@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-labels-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-labels-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Azure AD 访问审查
-description: 可以使用Azure AD访问评审来配置一次性或定期访问评审，以证明用户的访问权限。 本文档提供第二版本的 API。
+description: 可以使用 Azure AD 访问评审来配置一次性或定期访问评审，以证明用户的访问权限。 本文档提供第二版本的 API。
 ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 79db805376e936b8d9bfd36461a5ef421a0eb7c8
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: 141021e58e995e5939ad1dec2b915fbacfbddf21
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685101"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436608"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
@@ -20,19 +20,19 @@ ms.locfileid: "64685101"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-使用[Azure AD访问评审](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)配置一次性或定期访问评审，以证明用户访问Azure AD资源的权利。 这些Azure AD资源包括组、服务主体、访问包和特权角色。
+使用 [Azure AD 访问评审](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) 配置一次性或定期访问评审，以证明用户访问 Azure AD 资源的权限。 这些 Azure AD 资源包括组、服务主体、访问包和特权角色。
 
 访问评审的典型客户方案包括：
 
 - 客户可以通过组成员身份查看和认证来宾用户对组的访问权限。 审阅者可以使用提供的见解来有效地确定来宾是否应继续访问。
-- 客户可以查看和认证员工对Azure AD资源的访问权限。
-- 客户可以查看和审核Azure AD特权角色的分配。 这支持组织管理特权访问。
+- 客户可以查看和认证员工对 Azure AD 资源的访问权限。
+- 客户可以查看和审核 Azure AD 特权角色的分配。 这支持组织管理特权访问。
 
 请注意，访问评审功能（包括 API）包含在Azure AD Premium P2中。  创建访问评审的租户必须具有有效的购买或试用Azure AD Premium P2或 EMS E5 订阅。 有关许可证要求的详细信息，请 [参阅 Access 评审许可证要求](/azure/active-directory/governance/access-reviews-overview#license-requirements)。
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-overview-note.md)]
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 下表列出了可用于与访问评审相关的资源交互的方法。
 
@@ -75,20 +75,20 @@ ms.locfileid: "64685101"
 
 ## <a name="role-and-application-permission-authorization-checks"></a>角色和应用程序权限授权检查
 
-调用用户需要以下[Azure AD角色](/azure/active-directory/roles/permissions-reference)来管理访问评审。
+调用用户需要以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference) 来管理访问评审。
 
-| 操作 | 应用程序权限 | 调用用户所需的目录角色 |
+| Operation | 应用程序权限 | 调用用户所需的目录角色 |
 |:------------------|:------------|:--------------------------------------------|
-| 阅读 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读取者或用户管理员 |
+| 读取 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读取者或用户管理员 |
 | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或用户管理员 |
 
 此外，作为访问评审的分配审阅者用户可以管理其决策，而无需担任目录角色。
 
 ## <a name="see-also"></a>另请参阅
 
-- [教程](/graph/accessreviews-overview)，了解如何使用访问评审 API 来评审对Azure AD资源的访问权限
-- [管理员如何通过Azure AD访问评审来管理用户访问权限](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [管理员如何通过Azure AD访问评审来管理来宾访问](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [教程](/graph/accessreviews-overview) ，了解如何使用访问评审 API 来评审对 Azure AD 资源的访问权限
+- [管理员如何使用 Azure AD 访问评审管理用户访问权限](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
+- [管理员如何使用 Azure AD 访问评审管理来宾访问](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
 
 
 <!--

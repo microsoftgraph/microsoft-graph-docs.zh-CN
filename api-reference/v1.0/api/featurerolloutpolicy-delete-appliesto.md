@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a275a7ab77f630c4b6bf887515bad34b27ec0229
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6cc1d8d499a3099fa30bc7f48d50710c2e3124ad
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037899"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446244"
 ---
 # <a name="remove-appliesto"></a>Remove appliesTo
 
 命名空间：microsoft.graph
 
-删除[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象的 appliesTo 以从功能推出中删除[directoryObject。](../resources/directoryobject.md)
+删除 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象上的 appliesTo，以从功能推出中删除 [directoryObject](../resources/directoryobject.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "59037899"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ DELETE /policies/featureRolloutPolicies/{policyId}/appliesTo/{directoryObjectId}
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}。 必需 |
+| Authorization | 持有者 {token}。 必需 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -80,6 +80,14 @@ DELETE https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-from-featurerolloutpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-directoryobject-from-featurerolloutpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-directoryobject-from-featurerolloutpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a32f562a86ed72d8da728973ca6c5b5a5db7fcbb
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: e2f22800242670f80125f8e96c73a87aff79509e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204411"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439752"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>更新 unifiedRoleManagementPolicyRule
 命名空间：microsoft.graph
@@ -53,16 +53,16 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{un
 
 |属性|类型|说明|
 |:---|:---|:---|
-|claimValue|字符串|身份验证上下文声明的值。 <br/><br/>可以针对 **unifiedRoleManagementPolicyAuthenticationContextRule** 规则类型进行更新。|
-|enabledRules|字符串集合|为此策略规则启用的规则的集合。 例如，`MultiFactorAuthentication``Ticketing`和 `Justification`.<br/><br/>可以针对 **unifiedRoleManagementPolicyEnablementRule** 规则类型进行更新。|
+|claimValue|String|身份验证上下文声明的值。 <br/><br/>可以针对 **unifiedRoleManagementPolicyAuthenticationContextRule** 规则类型进行更新。|
+|enabledRules|String collection|为此策略规则启用的规则的集合。 例如，`MultiFactorAuthentication``Ticketing`和 `Justification`.<br/><br/>可以针对 **unifiedRoleManagementPolicyEnablementRule** 规则类型进行更新。|
 |isDefaultRecipientsEnabled|Boolean|指示默认收件人是否会收到通知电子邮件。<br/><br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
 |isEnabled|Boolean| 是否启用此规则。 <br/><br/>可以针对 **unifiedRoleManagementPolicyAuthenticationContextRule** 规则类型进行更新。|
 |isExpirationRequired|Boolean|指示是否需要过期，或者它是永久活动分配还是资格。 <br/><br/>可以针对 **unifiedRoleManagementPolicyExpirationRule** 规则类型进行更新。|
 |maximumDuration|期限| 资格或分配所允许的最长持续时间不是永久性的。 如果 **isExpirationRequired** 为 .，则 `true`为必需。 <br/><br/>可以针对 **unifiedRoleManagementPolicyExpirationRule** 规则类型进行更新。 |
-|notificationLevel|字符串|通知级别。 可能的值是 `None`， `Critical`. `All`<br/><br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
+|notificationLevel|String|通知级别。 可能的值是 `None`， `Critical`. `All`<br/><br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
 |notificationRecipients|字符串集合|电子邮件通知的收件人列表。<br/><br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
 |notificationType|String|通知的类型。 仅 `Email` 支持。<br/><br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
-|recipientType|字符串|通知的收件人的类型。 可能的值是 `Requestor`， `Approver`. `Admin`<br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
+|recipientType|String|通知的收件人的类型。 可能的值是 `Requestor`， `Approver`. `Admin`<br/>可以针对 **unifiedRoleManagementPolicyNotificationRule** 规则类型进行更新。|
 |setting|[approvalSettings](../resources/approvalsettings.md)|用于批准角色分配的设置。 <br/><br/>可以针对 **unifiedRoleManagementPolicyApprovalRule** 规则类型进行更新。|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|定义角色管理策略规则所针对的范围的详细信息。 详细信息可以包括主体类型、角色分配类型和影响角色的操作。 <br/><br/> 可以针对所有规则类型进行更新。|
 
@@ -123,6 +123,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicyrule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementpolicyrule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

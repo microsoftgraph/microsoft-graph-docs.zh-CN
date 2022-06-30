@@ -1,15 +1,15 @@
 ---
 title: 在共享或委托日历中创建 Outlook 事件
-description: 在 Outlook 中，客户可以与其他用户共享日历，并允许其他用户查看或修改此日历中的事件。 客户还可以授权代理代表自己执行操作、接收或答复会议请求，或在日历中创建或更改项。
+description: 了解如何在共享或委派的 Outlook 日历中创建会议事件。 可以与其他用户共享日历，或授予代理人代表你进行操作。
 author: juforan
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 77534a6b1fad8392df01c33f91e0db321767007c
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: fedea680d74f23146281cb5b9b60038304a19d15
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366077"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437042"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>在共享或委托日历中创建 Outlook 事件
 
@@ -118,7 +118,8 @@ Content-type: application/json
 }
 ```
 
-> **注意** 如果以 Adele 身份登录，也可以通过指定 Alex 的标识和 `calendar` 快捷方式直接从 Alex 的邮箱获取委派日历，如 `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar` 中所示。返回的日历 ID 仅对应于 Alex 的邮箱。 
+> [!NOTE]
+> 以 Adele 的身份登录，你也可以直接从 Alex 的邮箱获取委派的日历，方法是指定 Alex 的身份和 `calendar` 快捷方式，如 `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar` 中所示。 返回的日历 ID 仅对应于 Alex 的邮箱。 
 
 ## <a name="step-2-adele-creates-and-sends-an-invitation-on-alex-behalf"></a>步骤 2：Adele 代表 Alex 创建并发送邀请
 

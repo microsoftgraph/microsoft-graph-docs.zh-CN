@@ -1,23 +1,24 @@
 ---
 title: 在 Outlook 日历中将事件启用为联机会议
-description: 在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序的会议。
+description: 使用 Outlook 日历 API 组织事件，会议受邀者可在其中选择加入 URL，并在 Microsoft Teams 或 Skype 中参加联机会议。
 author: juforan
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 8eb53027cb85a7d5d658cf98ce4744344bfc87aa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fb3d7226f7a15969f7cf425c2d02e9803dba995c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066868"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447112"
 ---
-# <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>在 Outlook 日历中将事件启用为联机会议 
+# <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>在 Outlook 日历中将事件启用为联机会议
 
-使用 Outlook 日历 API 组织事件，会议受邀者可在其中单击加入 URL，并在 Microsoft Teams 或 Skype 中参加联机会议。
+使用 Outlook 日历 API 组织事件，会议受邀者可在其中选择加入 URL，并在 Microsoft Teams 或 Skype 中参加联机会议。
 
 在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序（其中一个作为默认提供程序）的会议。 可以在 Outlook 中[创建](#create-and-enable-a-meeting-online)或[更新](#update-a-meeting-to-enable-it-online)[事件](/graph/api/resources/event)，并允许与会者使用支持的提供程序加入联机会议。 你可以方便地[获取事件的联机会议信息](#get-information-to-join-meeting-online)，包括用于加入会议的 URL。 
 
-> **注意** 日历 API 可让你方便地在 Outlook 日历中设置一个联机会议，与会者可在该日历中单击加入会议，并在 Teams 或 Skype 中继续其体验。 若要与 Teams 或 Skype 进行更具个性化、更丰富的集成，请使用云通信 API。 有关详细信息，请参阅[在 Microsoft Graph 中选择 API 以创建和加入联机会议](choose-online-meeting-api.md)。
+> [!NOTE]
+> 日历 API 可让你方便地在 Outlook 日历中设置一个联机会议，与会者可在该日历中单击加入会议，并在 Teams 或 Skype 中继续其体验。 若要与 Teams 或 Skype 进行更具个性化、更丰富的集成，请使用云通信 API。 有关详细信息，请参阅[在 Microsoft Graph 中选择 API 以创建和加入联机会议](choose-online-meeting-api.md)。
 
 ## <a name="calendars-and-online-meeting-providers"></a>日历和联机会议提供程序
 

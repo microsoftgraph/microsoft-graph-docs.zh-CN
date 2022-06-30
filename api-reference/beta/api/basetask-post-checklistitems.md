@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 83429f43474d247e599b0c562e32e899df8e0a6a
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 5666f76ba1f55788293c4c0c1db010a9fef6e6b3
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821006"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436798"
 ---
 # <a name="create-checklistitem"></a>创建 checklistItem
 命名空间：microsoft.graph
@@ -57,7 +57,7 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 |checkedDateTime|DateTimeOffset|**checklistItem** 完成的日期和时间。|
 |createdDateTime|DateTimeOffset|创建 **checklistItem** 的日期和时间。|
 |displayName|String|指示 **checklistItem** 标题的字段。|
-|isChecked|布尔|指示是否签出项的状态。|
+|isChecked|Boolean|指示是否签出项的状态。|
 
 
 ## <a name="response"></a>响应
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-checklistitem-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-checklistitem-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

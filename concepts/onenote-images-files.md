@@ -1,15 +1,15 @@
 ---
-title: 将图像、视频和文件添加到 OneNote 页面
-description: " Microsoft 365 中的企业笔记本"
+title: 使用 OneNote API 将图像、视频、文件添加到 OneNote 页面
+description: 在创建或更新页面时，使用 img、object 和 iframe 元素将图像、视频和文件添加到 OneNote 页面。
 author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: e22b573a65ebd2baabfc39428f580737dddc716d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a9edfd96275e2ce9516fd937ad02e721aa526462
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035512"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444388"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>将图像、视频和文件添加到 OneNote 页面
 
@@ -52,8 +52,8 @@ ms.locfileid: "59035512"
 
 将 `object` 与 `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` 结合使用，并发送多部分请求的数据部件中的图像文件。 将文件附件添加到 OneNote 页面，并显示文件图标。
 
-
-> **注意：** 若要获取 OneNote 页面上的图像，首先发送 [GET 请求获取页面内容](onenote-get-content.md#page-html-content)。 这会将 URL 返回到页面上的图像资源。 然后，将 [GET 请求与图像资源分开](onenote-get-content.md#image-or-other-file-resource)。
+> [!NOTE]
+> 若要获取 OneNote 页面上的图像，首先发送 [GET 请求以获取页面内容](onenote-get-content.md#page-html-content)。 这会将 URL 返回到页面上的图像资源。 然后，将 [GET 请求与图像资源分开](onenote-get-content.md#image-or-other-file-resource)。
 
 
 #### <a name="image-attributes"></a>图像属性 
@@ -64,7 +64,8 @@ ms.locfileid: "59035512"
 
 Microsoft Graph 支持 TIFF、PNG、GIF、JPEG 和 BMP 图像类型。 若要捕获使用不想转换的其他格式的图像，请在多部分请求中[发送二进制数据](#add-an-image-using-binary-data)。 不需要使用 Base64，或其他方式对发送的二进制数据进行编码。
 
-> **注意：** API 会检测原始输入图像类型，并在 [输出 HTML](onenote-input-output-html.md#output-html) 中将其作为 **data-fullres-src-type** 属性返回。 此外，API 还会在 **data-src-type** 中返回优化图像的图像类型。
+> [!NOTE]
+> API 会检测原始输入图像类型，并在 [输出 HTML](onenote-input-output-html.md#output-html) 中将其作为 **data-fullres-src-type** 属性返回。 此外，API 还会在 **data-src-type** 中返回优化图像的图像类型。
  
 请参阅创建包含媒体的页面时应用的[限制](#size-limitations-for-post-pages-requests)。
 

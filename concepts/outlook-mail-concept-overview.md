@@ -1,16 +1,16 @@
 ---
 title: Outlook 邮件 API 概述
-description: Outlook 是 Microsoft 365 中的一个信息通信中心。它还可以让你管理联系人、安排会议、查找组织中的用户信息，
+description: 使用 Microsoft Graph 中的 Outlook 邮件 API 管理联系人、安排会议、启动联机对话、共享文件、组协作。
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 93563ae4b2e8057bead0abe5fe1a76a51db29285
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: be2697d092bf08de57702bcd786c9a1b600e6cb0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071866"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444339"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 

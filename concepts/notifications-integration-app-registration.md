@@ -1,17 +1,20 @@
 ---
-title: 管理 Microsoft Graph 通知的应用注册和 API 权限
-description: 为接收通过 Microsoft Graph 发送的通知，首先需要在 Microsoft Azure 门户上注册应用程序。
+title: 管理应用注册和 API 权限（已弃用）
+description: 若要将应用程序服务与通知集成，请将应用注册到 Microsoft 标识平台并声明所需的 API 权限（已弃用）。
 ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: a6bc396a670eb3d96c63a75f6a894be5893c43ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 109fabf81a29633017b8baaa98c3834f307492e6
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049464"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442848"
 ---
-# <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications"></a>管理 Microsoft Graph 通知的应用注册和 API 权限
+# <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications-deprecated"></a>管理 Microsoft Graph 通知的应用注册和 API 权限（已弃用）
+
+> [!IMPORTANT]
+> Microsoft Graph 通知 API 已弃用，并且已于 2022 年 1 月停止返回数据。 有关其他通知体验，请参阅 [Microsoft Azure 通知中心](/azure/notification-hubs)。 更多相关信息，请参阅博客文章 [停用 Microsoft Graph 通知 API (beta 版本)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)。
 
 若要让应用程序服务与 Microsoft Graph 通知集成，你需要通过 Microsoft 标识平台注册应用，以支持 Microsoft 帐户或工作或学校帐户，并删除所需的 API 权限。
 

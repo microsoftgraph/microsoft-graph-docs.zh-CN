@@ -1,18 +1,18 @@
 ---
-title: Microsoft Graph 中的人员和工作场所智能概述
-description: Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。
+title: Microsoft Graph 中的人员和工作场所智能
+description: 了解 Microsoft Graph API 选项，这些选项可用于生成更智能的应用来访问用户数据：人员 API、见解 API、个人资料 API、个人资料卡片 API。
 author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 63443cf872ebb978a681a4ce3f0b29eb3fa30818
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 6201bd7e70602fda3088e56de24863eb3010d66f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461238"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445816"
 ---
-# <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
+# <a name="people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能
 
 Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 
 
@@ -98,7 +98,8 @@ GET /me/people/?$search=j
 
 在查找这些服务的 API 参考？
 
-- [使用 Microsoft Graph API 在应用中集成人员和工作区智能](/graph/api/resources/social-overview)
+- [使用 Microsoft Graph API 在应用中集成人员和工作区智能 (v1.0)](/graph/api/resources/social-overview)
+- [使用 Microsoft Graph API 在应用中集成人员和工作区智能 (beta)](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true)
 - 人脉 API [人员](/graph/api/resources/person) 资源
 - [个人资料（预览版）](/graph/api/resources/profile) 资源
 - [个人资料卡片（预览版）](/graph/api/resources/profilecardproperty) 资源
@@ -111,5 +112,5 @@ GET /me/people/?$search=j
 * 查找有关[人脉 API](people-example.md) 的详细信息。
 * 请参阅如何 [自定义个人资料卡片](add-properties-profilecard.md)。
 * 详细了解[项目见解](item-insights-overview.md)、[自定义用户的项目见解隐私（预览版）](insights-customize-item-insights-privacy.md)，以及支持自定义的[项目见解设置 API（预览版）](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true)。
-* 查找有关[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true#help-users-balance-work-and-life) 的详细信息。
+* 查找有关[分析 API](/graph/api/resources/social-overview#help-users-balance-work-and-life) 的详细信息。
 * 查找有关[配置文件 API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true) 的详细信息。

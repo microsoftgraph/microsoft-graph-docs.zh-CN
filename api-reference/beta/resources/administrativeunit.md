@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b79f63e01e085278a45af675cc43ed4ec21c07b4
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 49eca2a2103830079e9e847f9bf1c1babf4d65e6
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900098"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446369"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "65900098"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-管理单元为用户、组和设备目录对象提供概念容器。 使用管理单位，公司管理员现在可以将管理职责委托给区域或部门管理员，以管理包含在管理单元内或范围内的用户、组和设备。
+管理单元为用户和组目录对象提供概念容器。 使用管理单位，公司管理员现在可以将管理职责委托给区域或部门管理员，以管理包含在管理单元内或范围内的用户和组。
 
 该资源支持通过提供 [delta](../api/administrativeunit-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。 此资源是允许传入其他属性的开放类型。
 
@@ -35,12 +35,12 @@ ms.locfileid: "65900098"
 |:---------------|:--------|:----------|
 |[创建](../api/directory-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | 创建新的管理单元。|
 |[列表](../api/directory-list-administrativeunits.md) | [administrativeUnit](administrativeunit.md) 集合 |列出所有 administrativeUnits 的属性。|
-|[获取](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |读取特定 administrativeUnit 对象的属性和关系。|
+|[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |读取特定 administrativeUnit 对象的属性和关系。|
 |[更新](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |更新 administrativeUnit 对象。 |
 |[删除](../api/administrativeunit-delete.md) | 无 |删除 administrativeUnit 对象。 |
 |[Get delta](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|获取新创建、更新或删除的 **administrativeUnits** ，而无需对整个资源集合执行完整读取。|
-|[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 添加成员 (用户、组或设备) 。|
-|[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取 (用户、组和设备) 成员的列表。|
+|[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 添加成员 (用户或组) 。|
+|[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取 (用户和组) 成员的列表。|
 |[获取成员](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 获取特定成员。|
 |[删除成员](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| 删除成员。|
 |[添加 scopedRoleMember](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 分配具有管理单元范围的 Azure AD 角色。|
@@ -66,13 +66,16 @@ ms.locfileid: "65900098"
 |说明|String|管理单元的可选说明。 支持`$filter` (`eq`、`ne`、 `in``startsWith`) 、 `$search`|
 |displayName|String|管理单元的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。|
 |id|String|管理单元的唯一标识符。 只读。 支持 `$filter`（`eq`）。|
-|visibility|String|控制管理单元及其成员是隐藏的还是公开的。 可以设置为 `HiddenMembership`. 如果未设置 (值 `null`) ，则默认行为为公共行为。 设置为 `HiddenMembership`后，只有管理单位的成员才能列出管理单位的其他成员。|
+| membershipRule | String | 管理单元的动态成员身份规则。 有关可用于动态管理单元和动态组的规则的详细信息，请 [参阅使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。 |
+| membershipRuleProcessingState | String | 用于控制是否主动处理动态成员身份规则。 设置为 `On` 希望动态成员身份规则处于活动状态，以及 `Paused` 是否要停止动态更新成员身份。 如果未设置，则默认行为为 `Paused`。 |
+| membershipType | String | 管理单元的成员身份类型。 可以是 `dynamic` 或 `assigned`. 如果未设置，则默认行为为 `assigned`。 |
+| visibility | String | 控制管理单元及其成员是隐藏的还是公开的。 可以设置为 `HiddenMembership` 或 `Public`. 如果未设置，则默认行为为 `Public`。 设置为 `HiddenMembership`后，只有管理单位的成员才能列出管理单位的其他成员。 |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为此管理单元定义的开放扩展的集合。 可为 Null。|
-|members|[directoryObject](directoryobject.md) collection|属于此管理单元成员的用户和组。 支持 `$expand`。|
+|members|[directoryObject](directoryobject.md) 集合|属于此管理单元成员的用户和组。 支持 `$expand`。|
 |scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此管理单元的作用域角色成员。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -93,7 +96,10 @@ ms.locfileid: "65900098"
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "visibility": "String"
+  "visibility": "String",
+  "membershipType": "String",
+  "membershipRule": "String",
+  "membershipRuleProcessingState": "String"
 }
 
 ```

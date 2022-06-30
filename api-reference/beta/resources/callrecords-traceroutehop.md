@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 31e64989212bc5666b2010d2319bc55bdce11fb6
-ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
+ms.openlocfilehash: ed69c942e8d459ee9101a28d2243d842512c45d2
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65924192"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436601"
 ---
 # <a name="traceroutehop-resource-type"></a>traceRouteHop 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "65924192"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|hopCount|Int32|用于计算 RTT 的此跃点的网络路径计数。|
+|hopCount|Int32|用于计算往返时间的此跃点的网络路径计数。|
 |ipAddress|String|网络跟踪中用于此跃点的 IP 地址。|
 |roundTripTime|期限|跟踪路由数据包从客户端发送到此跃点并返回到客户端的时间（以 [ISO 8601][] 格式表示）。 例如，1 秒表示为 `PT1S`P 是持续时间指定器，T 是时间指定器，S 是第二个指定器。|
 

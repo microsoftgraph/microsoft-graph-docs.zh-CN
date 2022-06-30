@@ -1,23 +1,23 @@
 ---
-title: 自定义 Microsoft Graph 中的人员见解隐私
-description: 了解如何使用 Microsoft Graph API 在组织级别自定义人员见解。
+title: 自定义 Microsoft Graph 中的人员见解隐私（预览版）
+description: 了解如何使用 Microsoft Graph insightsSettings API 在组织级别自定义人员见解。
 author: anthona
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e0495f4206023c6d7c8a46f094172e5732c08df4
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: da5306a4bc92a0e475c4785eea124f78d18f9fed
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322722"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438288"
 ---
-# <a name="customizing-people-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的项目见解隐私
+# <a name="customize-people-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的人员见解隐私（预览版）
 
-人员见解表示根据人员之间的公共关系， [与同一组织内的](people-example.md#including-a-person-as-relevant-or-working-with) 彼此相关或相互协作的人员的连接。 这些见解可以显示在Delve和个人资料卡片中，并且由[人员 API](/graph/api/user-list-people?view=graph-rest-beta&preserve-view=true) 返回。
+人员见解表示根据人员之间的公共关系， [与同一组织内的](people-example.md#including-a-person-as-relevant-or-working-with) 彼此相关或相互协作的人员的连接。 这些见解可以显示在Delve和个人资料卡片中，并且由[人员 API](/graph/api/user-list-people) 返回。
 
 
-## <a name="customizing-people-insights-for-an-organization"></a>为组织自定义人员见解
+## <a name="customize-people-insights-for-an-organization"></a>为组织自定义人员见解
 
 默认情况下，可以为组织显示或返回人员见解。 具有此全局管理员角色管理员可以使用 REST API 和相应权限为组织自定义此行为。 他们可以通过以下方式设置 [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) 资源的属性来自定义：
 
@@ -39,5 +39,4 @@ ms.locfileid: "61322722"
 为人员见解自定义隐私时，可以观察到以下方面的行为变化：
 * Microsoft 365 [个人资料卡片](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)
 * Delve 中的用户个人资料
-* [列出相关人员](/graph/api/user-list-people?view=graph-rest-beta&preserve-view=true)。
-
+* [列出相关人员](/graph/api/user-list-people)

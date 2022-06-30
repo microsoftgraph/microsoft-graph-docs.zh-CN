@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 5d83dbc84b5de7478fcacdf666332d8aecc09ade
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9b38b2829d7c40a9e04038b5835549417dea2510
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122775"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441466"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -28,7 +28,7 @@ ms.locfileid: "62122775"
 
 不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。 此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。 因此，甚至在初始响应中，`$skip` 值都会大于页面大小。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-可以筛选邮件并仅获取包含已登录用户提及的邮件。 [](../resources/mention.md) 请参阅以下[示例](#request-2)。 默认情况下， `GET /me/messages` 该操作不会返回 **mentions** 属性。 使用 `$expand` 查询参数 [查找邮件中每个提及的详细信息](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message)。
+可以筛选这些消息，并仅获取包含 [已](../resources/mention.md) 登录用户提及的消息。 请参阅以下[示例](#request-2)。 默认情况下 `GET /me/messages` ，该操作不会返回 **提及** 属性。 `$expand`使用查询参数[查找邮件中每个提及的详细信息](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message)。
 
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
@@ -64,7 +64,7 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-若要获取用户邮箱中包含用户提及的所有邮件： 
+若要获取用户邮箱中包含 **用户提及** 的所有邮件，请执行以下操作：
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -75,7 +75,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-可以使用 `$filter` **mentionsPreview** 属性上的 query 参数获取提及已登录用户的邮件。
+可以使用 `$filter` **mentionsPreview** 属性上的查询参数来获取那些提及已登录用户的消息。
 
 ### <a name="using-filter-and-orderby-in-the-same-query"></a>在同一查询中使用 filter 和 orderby
 在同一查询中使用 `$filter` 和 `$orderby` 获取消息时，请确保按以下方式指定属性：
@@ -100,12 +100,12 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/message.md) 代码和 message 对象集合。
+如果成功，此方法将返回 `200 OK` 响应正文中 [的消息](../resources/message.md) 对象的响应代码和集合。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-list-all-messages"></a>示例 1：列出所有邮件
 #### <a name="request"></a>请求
-第一个示例获取登录用户邮箱中的默认前 10 个邮件。 它使用 `$select` 在响应中返回每封邮件的属性的子集。 
+第一个示例获取已登录用户邮箱中的默认前 10 条邮件。 它使用 `$select` 在响应中返回每封邮件的属性的子集。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用于后续 GET 请求。
+下面展示了示例响应。 若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用 于后续 GET 请求。
 
 <!-- {
   "blockType": "response",
@@ -172,11 +172,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-use-filter-to-get-all-messages-satisfying-a-specific-condition"></a>示例 2：$filter获取满足特定条件的所有邮件
+### <a name="example-2-use-filter-to-get-all-messages-satisfying-a-specific-condition"></a>示例 2：使用$filter获取满足特定条件的所有消息
 #### <a name="request"></a>请求
-下一个示例将筛选已登录用户的邮箱中提及该用户的所有邮件。 它还用于 `$select` 返回响应中每封邮件的一部分属性。 
+下一个示例筛选已登录用户邮箱中提及该用户的所有邮件。 它还用于 `$select` 返回响应中每个消息的属性的子集。 
 
-此示例还合并了查询参数字符串中空格字符的 URL 编码。
+下面的示例还合并了查询参数字符串中空格字符的 URL 编码。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -213,7 +213,8 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMenti
 ---
 
 #### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -247,9 +248,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-use-prefer-header-to-get-the-message-body-and-uniquebody-is-text-format"></a>示例 3：使用 prefer 标头获取邮件正文，uniqueBody 为文本格式
+### <a name="example-3-use-prefer-header-to-get-the-message-body-and-uniquebody-is-text-format"></a>示例 3：使用首选标头获取消息正文，uniqueBody 为文本格式
 #### <a name="request"></a>请求
-第三个示例演示如何使用标头获取文本格式的每封邮件的 body 和 `Prefer: outlook.body-content-type="text"` **uniqueBody** 属性。
+第三个 `Prefer: outlook.body-content-type="text"` 示例演示如何使用标头以文本格式获取每条消息的 **正文** 和 **uniqueBody** 属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -287,7 +288,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 
+下面展示了示例响应。 
 
 <!--
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.

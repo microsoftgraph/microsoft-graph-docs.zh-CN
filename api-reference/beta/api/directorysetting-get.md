@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 519c8d06832c46fc1009ea344c5e387ce1cff1fd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 0a5bc1adf65c5a4715677ea6eb5677bbb75ef3bd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669555"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441473"
 ---
 # <a name="get-directorysetting"></a>获取 directorySetting
 
@@ -58,7 +58,7 @@ GET /groups/{groupId}/settings/{directorySettingId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData `$select` [查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -70,7 +70,7 @@ GET /groups/{groupId}/settings/{directorySettingId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -130,6 +130,10 @@ Content-type: application/json
   "displayName": "Group.Unified",
   "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
+    {
+      "name": "NewUnifiedGroupWritebackDefault",
+      "value": "false"
+    },
     {
       "name": "EnableMIPLabels",
       "value": "true"

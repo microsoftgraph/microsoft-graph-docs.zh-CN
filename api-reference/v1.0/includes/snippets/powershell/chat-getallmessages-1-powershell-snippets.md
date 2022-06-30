@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: df0e02a1f3f645032c55ded33a93b4c0592dae07
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cf82870748679978d9d5767d330e8fde38448abc
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101431"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502566"
 ---
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Users.Functions
 
-Get-MgUserChat -UserId $userId -ChatId $chatId -Top 2 
+Get-MgAllUserChatMessage -UserId $userId -Top 2 
 
 ```

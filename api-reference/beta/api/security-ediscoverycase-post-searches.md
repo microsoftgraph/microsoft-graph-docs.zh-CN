@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 9ac384360334d4f98d8b37ff766df887daae6e64
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 5184452a0481d2059863b9950885755a961b668c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094910"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439409"
 ---
 # <a name="create-ediscoverysearch"></a>创建 ediscoverySearch
 命名空间：microsoft.graph.security
@@ -26,7 +26,7 @@ ms.locfileid: "66094910"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|搜索的显示名称。 必需|
-|说明|String|搜索的说明可选。|
+|description|String|搜索的说明可选。|
 |contentQuery|String|用于搜索的查询字符串。 KQL (关键字查询语言) 格式的查询字符串。 可选|
 |dataSourceScopes|String|跨租户中的所有邮箱或网站进行搜索的选项。 可能的值包括 `none`、`allTenantMailboxes`、`allTenantSites`、`allCaseCustodians`、`allCaseNoncustodialDataSources`。 可选。|
 
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverysearch-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoverysearch-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

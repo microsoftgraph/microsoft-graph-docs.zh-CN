@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2a3add855edad204d45be5aaaa20d02afef2cd84
-ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
+ms.openlocfilehash: ca9c3edd7d4016fb0d0ced1c71f304504bf0ef69
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65924037"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439212"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -28,7 +28,7 @@ ms.locfileid: "65924037"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
+>**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -102,9 +102,12 @@ CSV 文件包含下面的列标题：
 - 已获得许可
 - 报表周期
 
+> [!NOTE] 
+> “组织会议数量”中的值可能不是用户在指定时间段内组织的“临时组织会议数量”、“安排组织的一次性会议数量”和“安排组织的定期会议数量”的总和。 这是因为输出 CSV 文件中未包含未分类的会议值。 有关详细信息，请参阅 [Microsoft Teams 用户活动报告](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/user-activity-report)。
+
 ## <a name="example"></a>示例
 
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -119,7 +122,7 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(peri
 ```
 
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。
 

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f2cb2976eceba50d93e2c5f60de3a250c73434df
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fa6f268e15c2f112cfeee039107a9287d1f15ee9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122288"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443003"
 ---
 # <a name="get-chatmessagehostedcontent"></a>获取 chatMessageHostedContent
 
 命名空间：microsoft.graph
 
-检索 [chatMessageHostedContent 对象的属性和](../resources/chatmessagehostedcontent.md) 关系。
+检索 [chatMessageHostedContent 对象的](../resources/chatmessagehostedcontent.md) 属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ ms.locfileid: "62122288"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| Chat.Read.All、Chat.ReadWrite.All|
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -75,11 +75,11 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和请求 [的 chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-hosted-content-for-message-in-a-chat"></a>示例 1：获取聊天中消息的托管内容
+### <a name="example-1-get-hosted-content-for-message-in-a-chat"></a>示例 1：获取聊天中邮件的托管内容
 
 #### <a name="request"></a>请求
 
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 下面展示了示例响应。
 
-> **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
+> **注意：** `contentBytes` 并且 `contentType` 始终设置为 null。
 
 <!-- {
   "blockType": "response",
@@ -177,7 +177,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### <a name="response"></a>响应
 
-响应包含正文中托管内容的字节。 `content-type` header 指定托管内容类型。
+响应包含正文中托管内容的字节。 `content-type` 标头指定托管内容的类型。
 
 <!-- {
   "blockType": "response",

@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph 身份验证方法 API 入门
-description: Microsoft Graph 中的身份验证方法 API 使组织能够以编程方式管理其用户身份验证方法，从而使已注册用户能够执行多重身份验证 (MFA) 和自助服务密码重置 (SSPR)。
+description: 了解如何管理用户的身份验证方法，并让用户注册以执行多重身份验证 （MFA） 和自助式密码重置 （SSPR）。
 author: mmcla
 ms.localizationpriority: high
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: bfd0167e0237a35dc6fd19a43e917d7c8899cf0d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 19b9e17d380006254b20d083afdf7adc1f985c17
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122913"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437028"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Microsoft Graph 身份验证方法 API 入门
 
@@ -255,11 +255,10 @@ GET https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/
 
 在查找身份验证方法的 API 参考？
 
-* 请参阅 [Azure AD 身份验证方法 API 概述](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)
+* 请参阅 [Azure AD 身份验证方法 API 概述](/graph/api/resources/authenticationmethods-overview)
 
 ## <a name="next-steps"></a>后续步骤
 
-* 了解如何[使用身份验证方法 REST API](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)。
 * 使用 Azure AD 对 Microsoft Graph [进行身份验证](./auth/index.yml)。
 * 将 [Azure AD 登录](https://azure.microsoft.com/develop/identity/signin/)集成到应用或网站中。
 * 有关 Azure AD API 中新增功能的信息，请参阅[更改日志](changelog.md)。
