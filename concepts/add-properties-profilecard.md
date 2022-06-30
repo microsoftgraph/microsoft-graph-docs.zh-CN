@@ -1,27 +1,27 @@
 ---
-title: 在 Microsoft Graph 中使用配置文件卡 API 从配置文件卡添加或删除自定义属性（预览版）
-description: 如何通过让其他属性可见或添加自定义属性来自定义配置文件卡。 还可以删除自定义属性。
+title: 在个人资料卡片上添加或删除自定义属性（预览版）
+description: 了解如何在 Microsoft Graph 中使用个人资料卡片 API 使其他属性可见，并在个人资料卡片上添加或删除自定义属性。
 author: PollyNincevic
 ms.localizationpriority: high
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5e1b140f5e3c9612475bcf0a6e404168cced1c92
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: 9d1685ef287cb7cea973b452a1b05d70b8d1d144
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561508"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441011"
 ---
-# <a name="add-or-delete-custom-properties-from-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>在 Microsoft Graph 中使用配置文件卡 API 从配置文件卡添加或删除自定义属性（预览版）
+# <a name="add-or-delete-custom-attributes-on-a-profile-card-using-the-profile-card-api-preview"></a>使用个人资料卡片 API（预览版）在个人资料卡片上添加或删除自定义属性
 
-在 Microsoft 365 的 [个人资料卡](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)上，可以找到由组织存储和维护的有关用户的信息，例如 **职位名称** 或 **办公室位置**。
+在 Microsoft 365 的个人资料卡上，可以找到由组织存储和维护的有关用户的信息，例如 **职位名称** 或 **办公室位置**。
 
-使用 [profileCardProperty](/graph/api/resources/profilecardproperty) 资源通过以下方式在组织的个人资料卡上显示Azure AD 的其他属性：
+使用 [profileCardProperty](/graph/api/resources/profilecardproperty) 资源通过以下方式在组织的个人资料卡片上显示 Azure AD 的其他属性：
 
 * 使其他属性可见
 * 添加自定义属性
 
-其他属性将显示在 Microsoft 365 中的个人资料卡的 **联系人** 部分中。
+其他属性会显示在 Microsoft 365 中的个人资料卡片的 **联系人** 部分中。
 
 还可以从组织的个人资料卡中 [删除](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) 自定义属性。
 
@@ -80,7 +80,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="adding-a-custom-attribute"></a>添加自定义属性
+## <a name="add-a-custom-attribute"></a>添加自定义属性
 
 可以通过配置组织设置并在 Microsoft Graph 中 [将相应值添加为 profileCardProperty](/graph/api/organizationsettings-post-profilecardproperties)，以将 15 个 Azure AD [自定义扩展属性](/graph/api/resources/onpremisesextensionattributes)中的任何一个属性添加到用户的个人资料卡片中。一次可以添加一个 **profileCardProperty** 资源。
 
@@ -159,9 +159,10 @@ Content-type: application/json
   ]
 }
 ```
-## <a name="deleting-a-custom-attribute"></a>删除自定义属性
 
-按照 Azure AD 自定义扩展属性和如前一部分 [添加自定义属性](/graph/add-properties-profilecard#adding-a-custom-attribute) 所述配置文件卡自定义属性（如 `customAttribute1`）之间的相同映射，可以使用如以下示例中所示的 [删除](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) 操作删除自定义属性：
+## <a name="delete-a-custom-attribute"></a>删除自定义属性
+
+按照 Azure AD 自定义扩展属性和如前一部分“[添加自定义属性](/graph/add-properties-profilecard#adding-a-custom-attribute)”所述的个人资料卡片自定义属性（如 `customAttribute1`）之间的相同映射，可以使用如以下示例中所示的“[删除](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true)”操作删除自定义属性。
 
 ### <a name="example"></a>示例
 

@@ -1,22 +1,23 @@
 ---
-title: 使用 Microsoft Graph 人员 API 获取有关你最相关的人员的信息
-description: 'Microsoft Graph 应用程序可以使用人员 API 检索与用户最相关的人员。 '
+title: 使用人员 API 获取与你相关的人员的信息
+description: 使用 Microsoft Graph 中的人员 API 基于用户的通信和协作模式浏览或搜索与用户最相关的人员。
 ms.date: 4/9/2019
 author: anthona
 ms.localizationpriority: high
 ms.prod: insights
-ms.openlocfilehash: c735af8d1e828f6a03d3a1ed1661212bf83738eb
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 709656b465e28f956751e3ed2af577b3ff157c5d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780469"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437651"
 ---
-# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>使用 Microsoft Graph 人员 API 获取有关你最相关的人员的信息
+# <a name="use-the-people-api-to-get-information-about-the-people-most-relevant-to-you"></a>使用 Microsoft Graph 人员 API 获取与你最相关的人员的信息
 
-Microsoft Graph 应用程序可以使用人员 API 检索与用户最相关的人员。 相关性由用户的通信和协作模式及业务关系决定。 人员可以是本地联系人，也可以来自组织目录，也可以来自最近通信的人。 
+Microsoft Graph 应用程序可以使用人员 API 检索与用户最相关的人员。 相关性由用户的通信和协作模式及业务关系决定。 人员可以是本地联系人，也可以来自组织目录，也可以来自最近通信的人。
 
 除了生成此见解外，人员 API 还提供模糊匹配搜索支持，以及检索与登录用户组织中其他用户相关的用户列表功能。
+
 人员 API 对于人员选取方案（例如撰写电子邮件或创建会议）特别有用。 例如，可以在电子邮件撰写方案中使用人员 API。
 
 ## <a name="including-a-person-as-relevant-or-working-with"></a>将某人纳入相关人员或"正在处理"人员

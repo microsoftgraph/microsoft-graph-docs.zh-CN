@@ -1,21 +1,24 @@
 ---
-title: 使用 Microsoft Graph 将数据写入 Excel 工作簿
-description: q=excelstarter)。
+title: 将数据写入 Excel 工作簿
+description: 使用 Microsoft Graph 中的 Excel REST API，在三个 Web 开发框架（ASP.NET、Angular 和 React）上将简单数据集写入 Excel 工作簿。
 ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 266427ed2853c26a2267b043b84e04f346467ab2
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8dffa614bb30ee2c095fb7a906dc67daa6b338bb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457111"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441515"
 ---
-# <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>使用 Microsoft Graph 将数据写入 Excel 工作簿
+# <a name="write-data-to-an-excel-workbook"></a>将数据写入 Excel 工作簿
 
-Excel REST API 提供了一种简单的、独立于平台的方法将信息上传到 Excel 工作簿。 本主题介绍如何在三个 Web 开发框架上将简单数据集写入 Excel 工作簿：ASP.NET、Angular 和 React。 你可以通过访问 [GitHub 上的 Microsoft Graph Excel 入门版示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter)来查看本主题所采用的代码示例。
+Microsoft Graph 中的 Excel REST API 提供了一种简单、独立于平台的将信息上传到 Excel 工作簿的方法。
 
-> **注意：** 这三个示例将数据写入名为 **demo.xlsx** 的 Excel 工作簿。 它们都提供了此工作簿，以便你可以将其上传到你自己的 OneDrive，不过，你也可以使用 Microsoft Graph 将文件上传到 OneDrive。 如果有意了解 REST 调用，你需要将任何类型的文件上传到你的 OneDrive 根文件夹，请参阅 [Microsoft Graph Excel REST API ASP.NET 待办事项列表示例](https://github.com/microsoftgraph/aspnet-todo-rest-sample)。
+本文介绍如何在三个 Web 开发框架上将简单数据集写入 Excel 工作簿：ASP.NET、Angular 和 React。 你可以通过访问 [GitHub 上的 Microsoft Graph Excel 入门版示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter)来查看本文所采用的代码示例。
+
+> [!NOTE]
+> 这三个示例将数据写入名为 **demo.xlsx** 的 Excel 工作簿。 它们都提供了此工作簿，以便你可以将其上传到你自己的 OneDrive，不过，你也可以使用 Microsoft Graph 将文件上传到 OneDrive。 如果有意了解 REST 调用，需要将任何类型的文件上传到你的 OneDrive 根文件夹，请参阅 [Microsoft Graph Excel REST API ASP.NET 待办事项列表示例](https://github.com/microsoftgraph/aspnet-todo-rest-sample)。
 
 这三个 Excel 入门版示例均执行相同的操作：检索登录用户的名称和地址，并将这两条信息添加到 demo.xlsx 工作簿中的新行。 你可以通过将信息添加到代表你想要添加的一行或多行的二维数组中来修改示例，以添加额外的行。
 
@@ -25,9 +28,10 @@ Excel REST API 要求将简单的请求正文发布到代表 Excel 工作簿行�
 
 `https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add`
 
-有关如何获取 OneDrive 文件夹中文件的详细信息，请参阅我们参考文档中的 [DriveItem 资源类型](/graph/api/resources/driveitem?view=graph-rest-1.0)。
+有关如何获取 OneDrive 文件夹中文件的详细信息，请参阅我们参考文档中的 [DriveItem 资源类型](/graph/api/resources/driveitem)。
 
-> **注意：** 可以通过将 GET 请求发送到以 `/rows` 结尾的路径部分来查看工作簿的现有行集合。
+> [!NOTE]
+> 可以通过将 GET 请求发送到以 `/rows` 结尾的路径部分来查看工作簿的现有行集合。
 
 POST 正文如下所示：
 
@@ -170,4 +174,4 @@ onWriteToExcel() {
 * [通过 Microsoft Graph 使用 Excel 工作簿函数](excel-use-functions.md)
 * [通过 Microsoft Graph 更新 Excel 区域的格式](excel-update-range-format.md)
 * [通过 Microsoft Graph 显示 Excel 图表图像](excel-display-chart-image.md)
-* [使用 Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)
+* [使用 Excel REST API](/graph/api/resources/excel)

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d7fb21bee52c15f6196c9ca07b669876cdc88e23
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 2831486d30035ba7255532b34186e5b04a8c6396
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095823"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438547"
 ---
 # <a name="create-invitation"></a>创建邀请
 
@@ -21,7 +21,7 @@ ms.locfileid: "66095823"
 创建新的邀请时，有多个选项可供使用：
 
 1. 创建邀请后，Microsoft Graph 可以自动向邀请的用户直接发送邀请电子邮件，或者你的应用可以使用创建响应中返回的 *inviteRedeemUrl* 创建自己的邀请（通过你所选择的通信机制）并发送给邀请的用户。如果决定让 Microsoft Graph 自动发送邀请电子邮件，则你可以使用 [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md) 控制电子邮件的内容和语言。
-2. 邀请用户后，会创建用户实体（userType 为“来宾”）并且现在可以使用它来控制对资源的访问。受邀请的用户必须完成兑换过程才能访问其获得邀请的任意资源。
+2. 邀请用户后，会创建用户实体（userType 为“来宾”）并且现在可以使用它来控制对资源的访问。 受邀请的用户必须完成兑换过程才能访问其获得访问邀请的任意资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
