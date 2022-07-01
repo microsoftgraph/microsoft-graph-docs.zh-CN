@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9677cecab1a74c753adf227a5d58e303567ef6f4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 31c040337f28b56c025918cd9bfa7e512c4086c4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394311"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436575"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>获取 certificateBasedAuthConfiguration
 
 命名空间：microsoft.graph
 
-获取 [certificateBasedAuthConfiguration 对象](../resources/certificateBasedAuthConfiguration.md) 的属性。
+获取 [certificateBasedAuthConfiguration 对象的](../resources/certificateBasedAuthConfiguration.md) 属性。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +48,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和请求的 [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和请求 [的 certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfi
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-certificatebasedauthconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-certificatebasedauthconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

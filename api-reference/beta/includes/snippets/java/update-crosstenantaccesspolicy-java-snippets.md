@@ -1,18 +1,21 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b4e816021f4b476799454366199b1e2634b0acdb
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 168f94d40daeee2aa674e122ef40f73ca233e614
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336632"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66604497"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 CrossTenantAccessPolicy crossTenantAccessPolicy = new CrossTenantAccessPolicy();
-crossTenantAccessPolicy.displayName = "CrossTenantAccessPolicy";
+LinkedList<String> allowedCloudEndpointsList = new LinkedList<String>();
+allowedCloudEndpointsList.add("microsoftonline.us");
+allowedCloudEndpointsList.add("partner.microsoftonline.cn");
+crossTenantAccessPolicy.allowedCloudEndpoints = allowedCloudEndpointsList;
 
 graphClient.policies().crossTenantAccessPolicy()
     .buildRequest()

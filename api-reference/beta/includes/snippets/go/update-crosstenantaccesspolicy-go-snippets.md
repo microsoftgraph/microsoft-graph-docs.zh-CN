@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ae9e1e31fa6cf43e45bda1e9edd05a731f4eb949
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 5ea4efd6bbc89a0d0d6246921c85e0d6d4b19b23
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694969"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66604498"
 ---
 ```go
 
@@ -13,11 +13,9 @@ ms.locfileid: "65694969"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewCrossTenantAccessPolicy()
-requestBody.SetAdditionalData(map[string]interface{}{
-    "allowedCloudEndpoints":  []String {
-        "microsoftonline.us",
-        "partner.microsoftonline.cn",
-    }
+requestBody.SetAllowedCloudEndpoints( []String {
+    "microsoftonline.us",
+    "partner.microsoftonline.cn",
 }
 graphClient.Policies().CrossTenantAccessPolicy().Patch(requestBody)
 

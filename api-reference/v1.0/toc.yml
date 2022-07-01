@@ -5133,6 +5133,42 @@ items:
                                 href: api/ipnamedlocation-update.md
                               - name: 删除
                                 href: api/ipnamedlocation-delete.md
+              - name: 跨租户访问
+                items:
+                  - name: 概述
+                    href: resources/crosstenantaccesspolicy-overview.md
+                  - name: Policy
+                    items:
+                      - name: 跨租户访问策略
+                        href: resources/crosstenantaccesspolicy.md
+                      - name: 获取
+                        href: api/crosstenantaccesspolicy-get.md
+                      - name: 更新
+                        href: api/crosstenantaccesspolicy-update.md
+                  - name: 默认设置
+                    items:
+                      - name: 跨租户访问默认设置
+                        href: resources/crosstenantaccesspolicyconfigurationdefault.md
+                      - name: 获取
+                        href: api/crosstenantaccesspolicyconfigurationdefault-get.md
+                      - name: 更新
+                        href: api/crosstenantaccesspolicyconfigurationdefault-update.md
+                      - name: 重置为系统默认值
+                        href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+                  - name: 合作伙伴设置
+                    items:
+                      - name: 跨租户访问合作伙伴设置
+                        href: resources/crosstenantaccesspolicyconfigurationpartner.md
+                      - name: 列出
+                        href: api/crosstenantaccesspolicy-list-partners.md
+                      - name: 创建
+                        href: api/crosstenantaccesspolicy-post-partners.md
+                      - name: 获取
+                        href: api/crosstenantaccesspolicyconfigurationpartner-get.md
+                      - name: 更新
+                        href: api/crosstenantaccesspolicyconfigurationpartner-update.md
+                      - name: 删除
+                        href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
               - name: 数据策略操作
                 href: resources/datapolicyoperation.md
                 items:

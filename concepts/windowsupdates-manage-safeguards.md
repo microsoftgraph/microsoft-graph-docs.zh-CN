@@ -1,28 +1,28 @@
 ---
-title: 使用 Windows Update for Business 部署服务管理安全措施
-description: 使用部署服务部署更新时，该服务会自动保护部署，防止更新向具有已知或可能问题的设备Windows更新。
+title: 使用 Windows 更新 for Business 部署服务管理安全措施
+description: 使用 Windows 更新 for Business 部署服务部署更新时，它会自动阻止有问题的设备提供更新。
 author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: ff3d8c594087253db85fb943bd34fe9478f45bb9
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 5373fe27415bbfd552303e7d154be131bdf76e11
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61855517"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437441"
 ---
-# <a name="manage-safeguards-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务管理安全措施
+# <a name="manage-safeguards-using-the-windows-update-for-business-deployment-service"></a>使用 Windows 更新 for Business 部署服务管理安全措施
 
-使用部署服务部署更新时，该服务会自动保护部署，防止更新向具有已知或可能问题的设备Windows更新。
+使用部署服务部署更新时，该服务会通过阻止Windows 更新提供已知或可能出现问题的设备来自动保护部署。
 
-安全措施与部署[Windows 11](windowsupdates-deployments.md)和Windows 10功能更新兼容。 针对已知问题的保留可用于部署 Windows 11 和 Windows 10 功能更新，并针对部署 Windows 11 时可能的问题进行Windows 11。
+安全措施与Windows 11和Windows 10功能更新的[部署](windowsupdates-deployments.md)兼容。 针对已知问题的保护措施可用于部署Windows 11和Windows 10功能更新，并针对部署Windows 11时可能出现的问题进行保护。
 
 ## <a name="apply-all-safeguards"></a>应用所有安全措施
 
-默认情况下，部署服务将所有适用的安全措施应用于部署中的设备。 若要从安全措施中获益，在创建部署时无需指定任何其他内容。
+默认情况下，部署服务将所有适用的保障措施应用到部署中的设备。 若要受益于安全措施，无需在创建部署时指定任何其他内容。
 
-以下示例演示了如何创建应用所有安全措施的部署。
+以下示例演示如何创建应用了所有安全措施的部署。
 
 ### <a name="request"></a>请求
 
@@ -72,9 +72,9 @@ Content-Type: application/json
 
 ## <a name="opt-out-of-safeguards-against-likely-issues"></a>选择退出针对可能出现的问题的安全措施
 
-通过配置安全措施，可以选择退出针对部署中可能的问题 [的安全措施](/graph/api/resources/windowsupdates-safeguardsettings)。 如有必要，您还可以通过使用禁用安全措施策略选择退出对已知问题的 [安全措施](/windows/deployment/update/safeguard-opt-out)保留。
+通过配置安全设置，可以选择退出针对部署中可能出现的问题 [的防护](/graph/api/resources/windowsupdates-safeguardsettings)措施。 如有必要，还可以通过 [使用禁用保障措施策略，选择退出已知问题的保护](/windows/deployment/update/safeguard-opt-out)保留。
 
-以下示例演示了如何创建部署，而不对可能的问题进行安全措施。 通过为要禁用的安全措施配置文件列表下的类别指定 **safeguardProfile，** 可将部署配置为向设备提供更新，即使设备可能出现更新 `likelyIssues` 问题。
+以下示例演示如何创建部署，而无需针对可能出现的问题提供保障。 通过为要禁用的保护配置文件列表下的`likelyIssues`**类别** 指定 **一个 safeguardProfile**，你将部署配置为向设备提供更新，即使它可能存在更新问题。
 
 ### <a name="request"></a>请求
 

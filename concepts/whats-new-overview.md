@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: 查看过去两个月 Microsoft Graph 中的新增功能、早期版本中添加的内容以及如何分享你的想法的亮点。
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 9faaf3d0db85a040bbb65b21896819dfb59e1ee4
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 371cd4ad709b5cab6d18352e386872364f1f96f2
+ms.sourcegitcommit: 2cbfa9abd0b568f9e4c15930df9a378fbe924511
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66444227"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66578590"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -25,6 +25,9 @@ ms.locfileid: "66444227"
 ### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
 - [列出管理单元](/graph/api/device-list-memberOf)（[设备](/graph/api/resources/device)所属）。
 - 将设备作为 [管理单元](/graph/api/resources/administrativeunit) 中的成员进行管理：[列出成员](/graph/api/administrativeunit-list-members)（包括设备），并 [获取](/graph/api/administrativeunit-get-members)、[添加](/graph/api/administrativeunit-post-members) 和 [删除](/graph/api/administrativeunit-delete-members) 作为成员的设备。 
+- [获取](/graph/api/application-get) 应用程序 [的安全性和符合性认证](/graph/api/resources/certification) 的状态和其他详细 [信息，以保护](/graph/api/resources/application) 客户数据。 有关详细信息，请 [参阅Microsoft 365认证](/microsoft-365-app-certification/docs/enterprise-app-certification-guide)。
+- 使用 [Azure AD配置联合设置](/graph/api/resources/internalDomainFederation)。
+
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
  配置和管理租户中 [临时访问通行证身份验证方法策略的设置](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration)。
@@ -53,16 +56,36 @@ ms.locfileid: "66444227"
 ### <a name="compliance--ediscovery"></a>合规性 | 电子数据展示
 从 [安全](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) 命名空间（而不是符合性命名空间）访问 [电子数据展示 API](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true)。
 
+### <a name="customer-booking"></a>客户预订
+- 管理 [企业或企业](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) 提供的 [服务](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) 自助预订页面的语言。
+- 在 [客户信息](/graph/api/resources/bookingCustomerInformation?view=graph-rest-beta&preserve-view=true) 中指定是否为客户的 [约会](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) 启用短信通知。
+- 指定是否为 [服务](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true)启用匿名联接，以及是否为服务的约会生成匿名联接 Web URL。
+- 区分 [员工成员](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true) 作为计划程序或成员的角色。
+- 指定在为 [该成员](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true) 分配预订或更新预订时是否通过电子邮件通知员工成员。
+
+### <a name="device-and-app-management--cloud-pc"></a>设备和应用管理|云电脑
+获取云电脑 [预配](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true)策略的以下信息：
+- 云电脑所在的组的名称。
+- 在重新预配/取消预配之前等待的小时数。
+- 是否启用本地管理员（例如云电脑的最终用户）。
+- 管理 Azure 网络连接的服务，当前为 Windows 365 或 Microsoft Dev Box。
+
+### <a name="device-and-app-management--multi-tenant-management"></a>设备和应用管理|多租户管理
+[获取](/graph/api/managedtenants-managedtenant-list-myroles?view=graph-rest-beta&preserve-view=true) [分配给已登录到](/graph/api/resources/managedtenants-myRole?view=graph-rest-beta&preserve-view=true) 托 [管租户](/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta&preserve-view=true)的用户的角色的集合。
+
 ### <a name="education"></a>教育
 - 为 [分配](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) [创建](/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-beta&preserve-view=true) SharePoint 文件夹，以上传反馈文档。
 - 在与分配关联的反馈文件夹中 [创建](/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-beta&preserve-view=true) [提交](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) 的 [反馈文档](/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
-将已验证的子域 [升级](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) 为根域。
+- 将已验证的子域 [升级](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) 为根域。
+- [获取](/graph/api/application-get?view=graph-rest-beta&preserve-view=true) [单租户应用程序](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)联合的 SAML 元数据的 URL。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 隐藏租户登录页的 [登录页文本可见性设置](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) 中的自助式密码重置 (SSPR) 链接。
 
+### <a name="teamwork"></a>团队合作
+获取在[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)或 [频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) 中 [固定](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) 或 [取消固定](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) 的详细信息。 
 
 ## <a name="may-2022-new-and-generally-available"></a>2022 年 5 月：新版本和正式版
 

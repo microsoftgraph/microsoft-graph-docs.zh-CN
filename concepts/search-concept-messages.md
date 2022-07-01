@@ -1,33 +1,33 @@
 ---
-title: 使用 Microsoft Microsoft 搜索中的 Graph API 搜索邮件
-description: 您可以使用 Microsoft 搜索 API 在电子邮件中搜索信息，返回按相关性排名的邮件，并呈现专用的搜索体验。
+title: 使用 Microsoft 搜索 API 搜索 Outlook 消息
+description: 可以使用 Microsoft Graph 中的 Microsoft 搜索 API 搜索电子邮件中的信息，并返回按相关性排名的消息。
 author: knightsu
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: a4dadd4db51acf2e99e69d4d206526100187ba27
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1769bda3a6d4f4ed2fed6fc8294b7dc049749482
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103933"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436972"
 ---
-# <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>使用 Microsoft 搜索 API 搜索Outlook消息
+# <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>使用 Microsoft 搜索 API 搜索 Outlook 消息
 
-使用 Microsoft 搜索 API 在电子邮件中搜索信息、返回按相关性排名的邮件，并呈现专用的搜索体验。 搜索适用于已登录用户自己的邮箱中邮件的正文和附件。
+使用 Microsoft Graph 中的 Microsoft 搜索 API 搜索电子邮件中的信息，返回按相关性排名的消息，并呈现专用搜索体验。 搜索适用于登录用户自己的邮箱中邮件的正文和附件。
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-搜索查询可以包含[最终用户](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da)在"搜索"文本框中输入的筛选器Outlook。
+搜索查询可以包含最终用户在 Outlook 的 **“搜索**”文本框中输入的 [筛选器](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da)。
 
-邮件搜索结果按 **receivedDateTime** 按降序排序。
+消息搜索结果按 **receivedDateTime** 按降序排序。
 
-邮件搜索适用于工作或学校帐户。 用户可以搜索自己的邮箱，但无法搜索委派邮箱。 有关详细信息，请参阅 [已知限制](#known-limitations)。
+消息搜索适用于工作或学校帐户。 用户可以搜索自己的邮箱，但无法搜索委派邮箱。 有关详细信息，请参阅 [已知的限制](#known-limitations)。
 
-邮件搜索还会查找附件。 邮件[附件搜索](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)支持的文件类型与用于联机搜索SharePoint相同。
+消息搜索还会查找附件。 消息附件搜索 [支持的文件类型](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) 与 SharePoint Online 搜索的文件类型相同。
 
 ## <a name="example-1-search-messages-in-a-users-mailbox"></a>示例 1：搜索用户邮箱中的邮件
 
-以下示例查询已登录用户的邮箱中邮件，该邮箱包含邮件任何部分包含字符串"contoso" (发件人名称、主题、邮件正文或任何) 。 查询将返回前 25 个结果。 搜索结果按 **DateTime** 降序排序。
+以下示例查询登录用户邮箱中包含邮件任意部分的字符串“contoso”的邮件 (发件人名称、主题、邮件正文或) 的任何附件。 查询返回前 25 个结果。 搜索结果按 **DateTime** 降序排序。
 
 ### <a name="request"></a>请求
 
@@ -53,7 +53,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例，其中包含一条匹配搜索条件的邮件。
+下面是响应的示例，其中包含一条与搜索条件匹配的消息。
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -114,7 +114,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-search-top-results-messages"></a>示例 2：搜索热门结果邮件
+## <a name="example-2-search-top-results-messages"></a>示例 2：搜索热门结果消息
 
 以下示例使用示例 1 中显示的搜索查询，并按相关性对结果进行排序。 
 
@@ -142,7 +142,8 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
+
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -204,10 +205,10 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-- 只能访问登录用户自己的邮箱。 不支持搜索委派邮箱。
-- 对于邮件[，searchHitsContainer](/graph/api/resources/searchhitscontainer)类型的 total 属性包含页面上的结果数，而不是匹配结果的总数。 
-- 事件不支持对结果进行排序。 请求中的 sort 子句将在响应中返回错误请求错误代码。
+- 只能访问已登录用户自己的邮箱。 不支持搜索委派邮箱。
+- 对于消息，[searchHitsContainer](/graph/api/resources/searchhitscontainer) 类型的 **总** 属性包含页面上的结果数，而不是匹配结果的总数。
+- 事件不支持对结果进行排序。 请求中的 sort 子句将在响应中返回错误的请求错误代码。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft 搜索 API](/graph/api/resources/search-api-overview)
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview)

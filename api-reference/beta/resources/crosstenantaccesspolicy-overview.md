@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 088e9da122680c8f975597a2f58e9ae352a5e4f3
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: 5fa5e24eead5f75564a97a7f3ac04fd11e833ba0
+ms.sourcegitcommit: a30eea2fa59087088f50e58706b91c0eb5b7a802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653544"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66604473"
 ---
 # <a name="cross-tenant-access-settings-api-overview"></a>跨租户访问设置 API 概述
 
@@ -54,14 +54,14 @@ ms.locfileid: "65653544"
 
 通过入站信任设置，还可以信任符合标准或混合 Azure AD 加入其主目录的设备。 借助跨租户访问设置中的入站信任设置，现在可以通过要求外部用户使用合规或已加入混合 Azure AD 的设备来保护对应用和资源的访问。
 
-## <a name="collaborate-with-organizations-using-azure-active-directory-in-different-microsoft-clouds"></a>在不同的 Microsoft 云中使用Azure Active Directory与组织协作
+## <a name="collaborate-with-organizations-using-azure-active-directory-in-different-microsoft-clouds"></a>在不同的 Microsoft 云中使用 Azure Active Directory 与组织协作
 
 跨租户访问设置用于在单独的 Microsoft 云中启用与 Azure AD 组织的协作。 该 `allowedCloudEndpoints` 属性使你能够指定要将协作扩展到哪些 Microsoft 云。 以下 Microsoft 云之间支持 B2B 协作：
 
-+ Microsoft Azure商业和Microsoft Azure政府
-+ Microsoft Azure商业和Microsoft Azure中国
++ Microsoft Azure 商业版和 Microsoft Azure 政府
++ Microsoft Azure 商业版和 Microsoft Azure 中国版
 
-<!---Learn more about [collaborating with organizations from a different Microsoft cloud](azure/active-directory/external-identities/cross-cloud-settings).--->
+详细了解如何 [与来自不同 Microsoft 云的组织协作](https://docs.microsoft.com/azure/active-directory/external-identities/cross-cloud-settings)。
 
 ## <a name="interpreting-the-api-response"></a>解释 API 响应
 
