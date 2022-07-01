@@ -1,16 +1,19 @@
 ---
-title: 将 Android 应用与用户通知客户端 SDK 相集成
-description: 将 Android 应用与用户通知客户端 SDK 相集成
+title: 将 Android 应用与客户端 SDK 集成（已弃用）
+description: 注册应用并载入跨设备体验后，将客户端应用与适用于 Android 应用的客户端 SDK 集成（已弃用）。
 ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: 8f7615b963e5d423e2195d9791ac9f1f2af0244a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6942baab54133cedd57f1fd73b63e25d74f8dc7c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062311"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447126"
 ---
-# <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>将 Android 应用与用户通知客户端 SDK 相集成
+# <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications-deprecated"></a>将 Android 应用与用户通知客户端 SDK 相集成（已弃用）
+
+> [!IMPORTANT]
+> Microsoft Graph 通知 API 已弃用，并且已于 2022 年 1 月停止返回数据。 有关其他通知体验，请参阅 [Microsoft Azure 通知中心](/azure/notification-hubs)。 更多相关信息，请参阅博客文章[停用 Microsoft Graph 通知 API（beta 版本）](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/)。
 
 在 Azure 门户[注册你的应用](notifications-integration-app-registration.md)并在合作伙伴开发人员中心载入你的[跨设备体验](notifications-integration-cross-device-experiences-onboarding.md)之后，下一步是将客户端应用与适用于 Android 应用的客户端 SDK 相集成。  
 
@@ -116,7 +119,7 @@ import com.microsoft.connecteddevices.userdata.usernotifications;
 
 客户端 SDK 构建在称为“连接设备平台”的基础结构之上。 在使用任何功能之前，必须在你的应用中初始化该平台。 应该通过主类 **OnCreate** 方法执行初始化步骤，因为在通知方案发生之前必须执行这些步骤。
 
-你必须通过实例化 [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest) 类来构建并初始化该平台。 执行此操作之前，请确保连接事件处理程序，因为启动平台之后，可能会开始触发事件。 
+你必须通过实例化 [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest&preserve-view=true) 类来构建并初始化该平台。 执行此操作之前，请确保连接事件处理程序，因为启动平台之后，可能会开始触发事件。 
 
 ```java
 ConnectedDevicesPlatform platform = new ConnectedDevicesPlatform(context);

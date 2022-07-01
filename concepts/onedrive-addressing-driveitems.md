@@ -1,18 +1,20 @@
 ---
 title: 寻址 OneDrive 上驱动器中的资源
-description: 如何使用基于 ID 和基于路径的寻址访问 OneDrive 上驱动器中的项。
+description: 了解如何使用基于 ID 和基于路径的寻址访问 OneDrive 上驱动器内的项目，以及如何正确编码 Microsoft Graph 的路径。
 ms.localizationpriority: high
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: conceptualPageType
-ms.openlocfilehash: c35db4503f4130b4404b6fd694f7cc9e8d0a4825
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 46f0304dc81245c79213f96cde30efb95766a580
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647183"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447119"
 ---
 # <a name="address-resources-in-a-drive-on-onedrive"></a>寻址 OneDrive 上驱动器中的资源
+
+了解如何使用基于 ID 和基于路径的寻址访问 OneDrive 上驱动器内的项目，以及如何正确编码 Microsoft Graph 的路径。
 
 ## <a name="id-based-addressing"></a>基于 ID 的寻址
 OneDrive 支持对项进行基于 ID 的寻址。 项在创建时即分配有唯一标识符，此 ID 保持不变，无论用户对项执行的操作如何。 重命名或移动项不会更改项 ID。
@@ -53,9 +55,11 @@ Microsoft Graph 要求 URL 符合 [RFC 3986](http://tools.ietf.org/html/rfc3986)
                      = "/" / "\" / "*" / "<" / ">" / "?" / ":" / "|" / "#" / "%"
 ```
 
-**注意：** 文件夹名称不得以句点 (`.`) 结尾。
-
-**注意：** OneDrive for Business 文件名或文件夹名称不得以波形符 (~) 开头。 有关详细信息，请参阅 [OneDrive for Business 的约束和限制](https://support.microsoft.com/en-us/kb/2933738)。
+> [!NOTE]
+> - 文件夹名称不得以句点 (`.`) 结尾。
+> - 文件或文件夹名称不能以波形符(“~”)开头。
+>
+> 有关详细信息，请参阅[通过适用于工作或学校的 OneDrive 将 SharePoint 库同步到计算机时的局限性和限制](https://support.microsoft.com/en-us/kb/2933738)。
 
 ### <a name="uri-path-characters"></a>URI 路径字符
 
@@ -168,3 +172,7 @@ OneDrive
 | `\...\estimate%.docx`    | `/root:/Adele's%20Files/estimate%25s.docx` |
 | `\Break#Out`             | `/root:/Break%23Out`                      |
 | `\...\saved_game[1].bin` | `/root:/Break%23Out/saved_game[1].bin`    |
+
+## <a name="see-also"></a>另请参阅
+
+- [OneDrive 文件存储 API 概述](onedrive-concept-overview.md)

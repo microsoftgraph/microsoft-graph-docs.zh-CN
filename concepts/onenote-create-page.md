@@ -1,15 +1,15 @@
 ---
-title: 创建 OneNote 页
-description: " Microsoft 365 中的企业笔记本"
+title: 使用 OneNote API 创建 OneNote 页面
+description: 向页面终结点发送一个 POST 请求以创建 OneNote 页面。 然后，发送在邮件正文中定义页面的 HTML。
 author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 1cf01dfdaccb403c9d5a06228441a144d737df88
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3f7b612c76750da2d4adb9dd9099247f01bc2950
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066896"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446194"
 ---
 # <a name="create-onenote-pages"></a>创建 OneNote 页
 
@@ -19,13 +19,10 @@ ms.locfileid: "59066896"
 
 `POST ../notes/sections/{id}/pages`
 
-<br/>
-
 发送在邮件正文中定义页面的 HTML。 如果请求成功，Microsoft Graph 将返回 201 HTTP 状态代码。
 
-
-> **注意：** 若要了解有关可以发送以创建节、节组和笔记本的 POST 请求，请参阅我们的 [交互式 REST 参考](https://dev.onenote.com/docs)。
-
+> [!NOTE]
+> 若要了解有关可以发送以创建节、节组和笔记本的 POST 请求，请参阅我们的[交互式 REST 参考](https://dev.onenote.com/docs)。
 
 <a name="request-uri"></a>
 
@@ -35,30 +32,32 @@ ms.locfileid: "59066896"
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
-<br/>
-
 然后追加 *页面* 终结点：
 
-- **在任何节中创建页面（由节名称指定）**<br/><br/>`.../pages?sectionName=DefaultSection`
+- **在任何节中创建页面（由节名称指定）**
 
-- **在任何节中创建页面（由 ID 指定）**<br/><br/>`.../sections/{section-id}/pages` 
+  `.../pages?sectionName=DefaultSection`
+
+- **在任何节中创建页面（由 ID 指定）**
+
+  `.../sections/{section-id}/pages`
 
 如果要在用户的个人笔记本中创建页面，Microsoft Graph 还提供了可用于在默认笔记本中创建页面的终结点：
 
-- **在默认笔记本的默认节中创建页面**<br/><br/>`../pages` 
+- **在默认笔记本的默认节中创建页面**
 
-
+  `../pages`
 
 完整的请求 URI 类似于以下示例之一：
 
 - `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
 - `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
 
-了解有关[服务根 URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url) 的详细信息。
+了解有关[服务根 URL](/graph/api/resources/onenote-api-overview#root-url) 的详细信息。
 
 <a name="post-pages-section-name"></a>
 
-### <a name="using-the-sectionname-url-parameter"></a>使用 *sectionName* URL 参数
+### <a name="use-the-sectionname-url-parameter"></a>使用 *sectionName* URL 参数
 
 使用 *sectionName* 参数在默认笔记本的命名节中创建页面时，适用以下规则：
 
@@ -74,16 +73,16 @@ ms.locfileid: "59066896"
 
 由于如果不存在节便会进行创建，因此在应用创建的每一个页面上使用此调用都是安全的。 用户可以重命名节，但 API 将创建一个使用你所提供的 sectionName 的新分区。 
 
-> **注意：** API 针对重命名节中的页面返回的链接仍然会到达那些旧页面。 
-
+> [!NOTE]
+> API 针对重命名节中的页面返回的链接仍然会到达那些旧页面。
 
 <a name="message-body"></a>
 
 ## <a name="construct-the-message-body"></a>构造邮件正文
 
-定义页面内容的 HTML 被称为 *输入 HTML*。 输入 HTML 支持[标准 HTML 和 CSS 子集](#supported-html-and-css-for-onenote-pages)，并增添了自定义属性。 （**data-id** 和 **data-render-src** 等自定义属性在 [输入和输出 HTML](onenote-input-output-html.md) 中进行了说明。） 
+定义页面内容的 HTML 被称为 *输入 HTML*。 输入 HTML 支持[标准 HTML 和 CSS 子集](#supported-html-and-css-for-onenote-pages)，并增添了自定义属性。 （**data-id** 和 **data-render-src** 等自定义属性在 [输入和输出 HTML](onenote-input-output-html.md) 中进行了说明。）
 
-在 POST 请求的邮件正文中发送输入 HTML。 你可以使用 `application/xhtml+xml` 或 `text/html` 内容类型直接在邮件正文中发送输入 HTML，也可以在多部分请求的“演示文稿”部件中发送它。 
+在 POST 请求的邮件正文中发送输入 HTML。 你可以使用 `application/xhtml+xml` 或 `text/html` 内容类型直接在邮件正文中发送输入 HTML，也可以在多部分请求的“演示文稿”部件中发送它。
 
 以下示例直接在邮件正文中发送输入 HTML。
 
@@ -109,8 +108,8 @@ Content-Type: application/xhtml+xml
 
 如果要发送二进制数据，则必须使用[多部分请求](#example-request)。 
 
-> **注意：** 为简化编程和应用的一致性，可以使用多部分请求来创建所有页面。 最好使用库来构造多部分邮件。 这样可减少创建格式不正确的有效负载的风险。
-
+> [!NOTE]
+> 为简化编程和应用的一致性，可以使用多部分请求来创建所有页面。 最好使用库来构造多部分邮件。 这样可减少创建格式不正确的有效负载的风险。
 
 <a name="input-html-rules"></a>
 
@@ -128,7 +127,6 @@ Content-Type: application/xhtml+xml
 
 - Microsoft Graph 支持常见 HTML 属性的子集和一组自定义属性，如用于更新页面的 **data-id** 属性。 有关受支持的属性，请参阅[输入和输出 HTML](onenote-input-output-html.md)。
 
-
 <a name="supported-html"></a>
 
 ### <a name="supported-html-and-css-for-onenote-pages"></a>OneNote 页面受支持的 HTML 和 CSS
@@ -139,17 +137,16 @@ Content-Type: application/xhtml+xml
 
 以下列表显示 Microsoft Graph 支持的基本元素类型：
 
-- `<head>` 和 `<body>`</p>
-- `<title>` 和 `<meta>`，用于设置页面标题和创建日期</p>
-- `<h1>` 至 `<h6>`，用于节标题</p>
-- `<p>` 用于段落</p>
-- `<ul>`、`<ol>` 和 `<li>`，用于列表和列表项</p>
-- `<table>`、`<tr>` 和 `<td>`，包括嵌套表</p>
-- `<pre>` 用于预设格式的文本（会保留空格和换行符）</p>
-- `<b>` 和 `<i>`，用于粗体和斜体字符样式</p>
+- `<head>` 和 `<body>`
+- `<title>` 和 `<meta>`，用于设置页面标题和创建日期
+- `<h1>` 至 `<h6>`，用于节标题
+- `<p>` 用于段落
+- `<ul>`、`<ol>` 和 `<li>`，用于列表和列表项
+- `<table>`、`<tr>` 和 `<td>`，包括嵌套表
+- `<pre>` 用于预设格式的文本（会保留空格和换行符）
+- `<b>` 和 `<i>`，用于粗体和斜体字符样式
 
-Microsoft Graph 在创建页面时会保留输入 HTML 的语义内容和基本结构，但会转换输入 HTML 以使用一组受支持的 HTML 和 CSS。 OneNote 中不存在的功能没有任何内容可以转换，因此，它们可能无法在源 HTML 中识别。 
-
+Microsoft Graph 在创建页面时会保留输入 HTML 的语义内容和基本结构，但会转换输入 HTML 以使用一组受支持的 HTML 和 CSS。 OneNote 中不存在的功能没有任何内容可以转换，因此，它们可能无法在源 HTML 中识别。
 
 <a name="example"></a>
 
@@ -213,7 +210,7 @@ Microsoft Graph 对某些格式非常严格，如多部分邮件正文中的 CRL
 | 请求数据 | 说明 |  
 |------|------|  
 | 协议 | 所有请求均使用 SSL/TLS HTTPS 协议。 |  
-| 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果缺少或无效，则请求失败，并显示 401 状态代码。 请参阅[身份验证和权限](permissions-reference.md)。</p> |  
+| 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果丢失或无效，则请求将失败，并显示 401 状态代码。请参阅 [身份验证和权限](permissions-reference.md)。</p> |  
 | Content-Type 标头 | <p>HTML 内容的 `text/html` 或 `application/xhtml+xml`，确定是直接在邮件正文中发送还是在多部分请求的“演示”部分中发送。</p><p>发送二进制数据时，多部分请求是必需的，并使用 `multipart/form-data; boundary=part-boundary` 内容类型，其中 `{part-boundary}` 是一个字符串，表示每个数据部件的开始和结束。</p> |  
 | 接受标头 | `application/json` | 
 
@@ -262,9 +259,6 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0
 - Notes.ReadWrite.All
 
 有关权限范围及其工作方式的详细信息，请参阅 [Microsoft Graph 权限引用](permissions-reference.md)。
-
-
-
 
 <a name="see-also"></a>
 

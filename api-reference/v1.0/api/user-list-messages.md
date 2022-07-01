@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 18b519948408cf0fa7b8e745bc046400530d5fe6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8ba794db9c8549bc9a490223cd3805681f93215b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110352"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445900"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -94,7 +94,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="examples"></a>示例
 ### <a name="example-1-list-all-messages"></a>示例 1：列出所有邮件
 #### <a name="request"></a>请求
-此示例获取已登录用户的邮箱中的默认前 10 封邮件。 它使用 `$select` 在响应中返回每封邮件的属性的子集。
+下面显示了一个示例，该示例获取已登录用户邮箱中默认的前 10 封邮件。 它使用 `$select` 在响应中返回每封邮件的属性的子集。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -131,7 +131,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用于后续 GET 请求。
+下面展示了示例响应。 若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用 于后续 GET 请求。
 
 <!-- {
   "blockType": "response",
