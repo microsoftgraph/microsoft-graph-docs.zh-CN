@@ -1,16 +1,16 @@
 ---
 title: 设置资源数据更改的通知
-description: Microsoft Graph API 使用 Webhook 机制将更改通知传递到客户端。客户端是用于配置自身的 URL 以接收更改通知的 Web 服务。客户端应用使用更改通知在更改时更新其状态。
+description: Microsoft Graph API 使用 Webhook 机制将更改通知传递到客户端。 客户端应用使用更改通知在更改时更新其状态。
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 343ff94d14506b5f4caa8147a5248ddaebe8448b
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: aecde366793f0c7132592677e5d1b7f98414ff61
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118366"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554993"
 ---
 # <a name="set-up-notifications-for-changes-in-resource-data"></a>设置资源数据更改的通知
 
@@ -73,7 +73,8 @@ Microsoft Graph 接受订阅请求之后，它将更改通知推送到订阅中�
 
 基于 Azure AD 的资源（用户、组）采用了某些限制，超出限制时将会产生错误：
 
-> **请注意**：这些限制不适用于来自 Azure AD 以外的服务的资源。 例如，应用可以创建许多更多的 `message` 或 `event` 资源订阅，这些订阅受到 Microsoft Graph 中的 Exchange Online 服务支持。
+> [!NOTE]
+> 这些限制不适用于来自 Azure AD 以外的服务的资源。 例如，应用可以创建许多更多的 `message` 或 `event` 资源订阅，这些订阅受到 Microsoft Graph 中的 Exchange Online 服务支持。
 
 - 最大订阅配额：
 
@@ -169,7 +170,8 @@ Content-Type: application/json
 
 如果成功，Microsoft Graph 将在正文中返回 `201 Created` 代码和 [subscription](/graph/api/resources/subscription) 对象。
 
-> **注意：** 传递通知时，**notificationURL** 属性中包含的任何查询字符串参数都将包含在 HTTP POST 请求中。
+> [!NOTE]
+> 传递通知时，**notificationURL** 属性中包含的任何查询字符串参数都将包含在 HTTP POST 请求中。
 
 #### <a name="notification-endpoint-validation"></a>通知终结点验证
 
@@ -196,7 +198,8 @@ Microsoft Graph 在创建订阅之前验证订阅请求的 `notificationUrl` 属
 
     在响应中提供验证令牌之后，客户端应放弃验证令牌。
 
-    > **重要提示：** 如果客户端返回已编码的验证令牌，验证将失败。
+    > [!IMPORTANT]
+    > 如果客户端返回已编码的验证令牌，则验证将失败。
 
 另外，可以使用 [Microsoft Graph Postman Collection](use-postman.md) 来确认终结点能否正确实现验证请求。 “杂项”文件夹中的“订阅验证”请求提供了单元测试，可验证终结点提供的响应。  
 
@@ -233,7 +236,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 通过客户端订阅对资源的更改，只要资源发生更改，Microsoft Graph 就会向通知 URL 发送一个 `POST` 请求。 仅对订阅中指定类型的更改（例如 `created`）发送通知。
 
-> **注意：** 如果客户端具有多个监视相同资源并使用相同通知 URL 的订阅，则Microsoft Graph可以发送对应于不同订阅的多个更改通知，每个更改通知显示相应的订阅 ID。无法保证 `POST` 请求中的所有更改通知都属于单个订阅。
+> [!NOTE]
+> 如果客户端具有监视相同资源并使用相同通知 URL 的多个订阅，则 Microsoft Graph 可以发送与不同订阅对应的多个更改通知，且每个通知都会显示相应的订阅 ID。 无法保证 `POST` 请求中的所有更改通知都属于单个订阅。
 
 ### <a name="change-notification-example"></a>更改通知示例
 
@@ -277,7 +281,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 1. 验证 `clientState` 属性。 它必须与最初使用订阅创建请求提交的值匹配。
 
-    > **注意：** 如果不符合这个条件，无需将其视为有效更改通知。 更改通知可能不是来自 Microsoft Graph，并且可能是由未授权操作者发送的。 还应调查更改通知来自何处并采取适当的措施。
+    > [!NOTE]
+    > 如果不符合此条件，则不应将其视为有效的更改通知。 更改通知可能不是来自 Microsoft Graph，并且可能是由未授权操作者发送的。 还应调查更改通知来自何处并采取适当的措施。
 
 1. 基于业务逻辑更新应用程序。
 
@@ -310,7 +315,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 可选择性地配置防火墙，以保护通知 URL，仅允许来自 Microsoft Graph 的入站连接。 这使你可以进一步降低发送到通知 URL 的无效更改通知的风险。 这些无效更改通知可能会试图触发已实施的自定义逻辑。 有关 Microsoft Graph 用于传递更改通知的 IP 地址的完整列表，请参阅 [Microsoft 365 的其他终结点](/office365/enterprise/additional-office365-ip-addresses-and-urls)。
 
-> **注意：** 用于传递更改通知的已列出 IP 地址可以随时更新，恕不另行通知。
+> [!NOTE]
+> 用于传递更改通知的已列出 IP 地址可能随时更新，恕不另行通知。
 
 ## <a name="latency"></a>延迟
 
@@ -339,15 +345,16 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 |[todoTask][] | 少于 2 分钟 | 15 分钟 |
 |[用户][] | 少于 2 分钟 | 15 分钟 |
 
->**注意**：为 **alert** 资源提供的延迟仅在创建 alert 后才适用。 它不包括规则从数据创建警报所需的时间。
+> [!NOTE]
+> 为 **警报** 资源提供的延迟仅在警报自身创建后才适用。 它不包括规则从数据创建警报所需的时间。
 
 ## <a name="see-also"></a>另请参阅
 
-- [订阅资源类型](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true)
-- [获取订阅](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true)
-- [创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true)
-- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true) 资源类型
-- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true) 资源类型
+- [订阅资源类型](/graph/api/resources/subscription)
+- [获取订阅](/graph/api/subscription-get)
+- [创建订阅](/graph/api/subscription-post-subscriptions)
+- [changeNotification](/graph/api/resources/changenotification) 资源类型
+- [changeNotificationCollection](/graph/api/resources/changenotificationcollection) 资源类型
 - [更改通知和更改跟踪教程](/learn/modules/msgraph-changenotifications-trackchanges)
 - [生命周期通知](./webhooks-lifecycle.md)
 

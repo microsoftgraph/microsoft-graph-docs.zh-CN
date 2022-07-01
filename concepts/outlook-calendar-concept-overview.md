@@ -5,12 +5,12 @@ author: angelgolfer-ms
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b566947557f9b7287a6e34dd8c2df128b184a07f
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: c9a09d9e56b48c8b757bc501d5e2256045f5d536
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446146"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555623"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook 日历 API 概述
 
@@ -90,7 +90,7 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 
 使用 Microsoft Graph 中的 [人员 API](people-example.md) 连接到 [人员数据](/graph/api/resources/person)，这基于用户的通信和协作模式以及业务关系。 你可以实现诸如人员选取器等控件，并在代表用户组织会议时建议与用户相关的人员。
 
-节省在外部数据存储中存储和管理应用数据的开销。 使用 Microsoft Graph，可以在各个资源实例中将自定义应用数据存储为[开放扩展](extensibility-overview.md#open-extensions)。 如果需要键入数据，或者希望能够共享类型化架构，可以将自定义应用数据存储在 [架构扩展](extensibility-overview.md#schema-extensions) 中。
+节省在外部数据存储中存储和管理应用数据的开销。 使用 Microsoft Graph，可以在各个资源实例中将自定义应用数据存储为[开放扩展](extensibility-overview.md#4-open-extensions)。 如果需要键入数据，或者希望能够共享类型化架构，可以将自定义应用数据存储在 [架构扩展](extensibility-overview.md#3-schema-extensions) 中。
 
 ## <a name="where-is-the-data"></a>数据在什么位置？
 

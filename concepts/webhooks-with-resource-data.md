@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: a842740ca0722580c32af5be84fbfd8c5b9d907d
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: defaa8f14769b161e73f31ae8b6a0eed76d45d71
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446040"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554986"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>设置包含资源数据的更改通知
 
@@ -39,6 +39,7 @@ Microsoft Teams [chatMessage](/graph/api/resources/chatmessage)、[onlineMeeting
 - 整个组织（租户）中所有团队频道中的新消息或已更改消息： `/teams/getAllMessages`
 - 指定团队聊天中的新增或已更改消息： `/chats/{id}/messages`
 - 整个组织（租户）中所有聊天的新消息或已更改消息： `/chats/getAllMessages`
+- 特定用户所属的所有 Teams 聊天中的新消息或更改的消息：`/users/{id}/chats/getAllMessages`
 - 所有 Teams 聊天中的新成员或已更改的成员：`/chats/getAllMembers`
 - 特定 Teams 聊天中的新成员或已更改的成员：`/chats/{id}/members`
 - 整个租户中的新聊天或已更改的聊天：`/chats`

@@ -1,28 +1,25 @@
 ---
-title: 使用 Microsoft Graph API 获取 Microsoft Teams 的系统消息
-description: 了解 Microsoft Teams 如何使用 Microsoft Graph API 为事件生成系统消息。
+title: 获取 Microsoft Teams 的系统消息
+description: Microsoft Teams 使用 Microsoft Graph API 生成系统消息事件。 了解所支持的 GET 操作、更改通知和系统消息事件。
 author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b6a953acbd906a56d87df211209c52c432b79fae
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 9ee7c96aa139437e250943cdc19146e32aab4235
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118317"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555581"
 ---
-# <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>使用 Microsoft Graph API 获取 Microsoft Teams 的系统消息
+# <a name="get-system-messages-for-microsoft-teams"></a>获取 Microsoft Teams 的系统消息
 
-Microsoft Teams 为添加到聊天中的成员、已更新团队名称和已更新频道说明等事件生成系统消息。 通过系统消息，调用方可以深入了解团队、频道或聊天中发生的事件。
+Microsoft Teams 通过使用 Microsoft Graph API 为事件生成系统消息。 事件包括向聊天添加成员、更新团队名称和更新频道说明。 通过系统消息，调用方可以深入了解团队、频道或聊天中发生的事件。
 
+Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMessage) GET 操作和 [聊天和频道消息的更改通知](teams-changenotifications-chatmessage.md)的一部分公开。
 
-Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) GET 操作和 [聊天和频道消息的更改通知](teams-changenotifications-chatmessage.md)的一部分公开。
-
-
-系统消息显示为 [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) 对象。
+系统消息显示为 [chatMessage](/graph/api/resources/chatMessage) 对象。
 在这种情况下，**messageType** 属性设置为 `systemEventMessage`，并且 **eventDetail** 属性提供事件详细信息。
-
 
 ## <a name="supported-get-operations"></a>支持的 GET 操作
 
@@ -33,7 +30,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
 - GET /chats/{chat-id}/messages
 - GET /chats/{chat-id}/messages/{message-id}
 
-有关详细信息，请参阅 [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true)。
+有关详细信息，请参阅 [chatMessage](/graph/api/resources/chatMessage)。
 
 ## <a name="supported-change-notifications"></a>支持的更改通知
 
@@ -80,8 +77,8 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
 | 已升级 Teams 应用 | [teamsAppUpgradedEventMessageDetail](#teams-app-upgraded) | 聊天，频道，团队 |
 | 未存档团队 | [teamUnarchivedEventMessageDetail](#team-unarchived) | 团队 |
 
-
-> **注意：** 适用于团队的系统消息在主频道中发布。
+> [!NOTE]
+> 适用于团队的系统消息在主频道中发布。
 
 
 ## <a name="json-response-examples"></a>JSON 响应示例
@@ -1571,3 +1568,7 @@ Microsoft Graph 将系统消息作为 [chatMessage](/graph/api/resources/chatMes
   }
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [Microsoft Teams API 概述](/graph/teams-concept-overview)

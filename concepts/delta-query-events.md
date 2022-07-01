@@ -1,31 +1,32 @@
 ---
-title: '获取日历视图中事件的增量更改 '
-description: '日历视图是默认日历中特定日期/时间范围内的事件集合 (../me/calendarview)。 '
+title: 获取日历视图中事件的增量更改
+description: 使用带有 delta 函数的 GET 请求跟踪日历视图中的事件更改。 示例演示如何在设置的时间范围内同步用户的默认日历。
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9af9c72f3228dc11ef41884ea9e178494ce0a2ad
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 9616e0c9f3d041495a68929045f68a87fbe7a24d
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247236"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555686"
 ---
-# <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>获取日历视图中事件的增量更改 
+# <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>获取日历视图中事件的增量更改
 
-通过使用增量查询，你可以在指定的日历，或者日历中的定义事件集合（作为日历视图）中获取新的、更新的或删除的事件。 本文将介绍后一种情况（在日历视图中对事件进行此类增量更改）。 
+通过使用 delta 查询，你可以在指定的日历或在日历中定义的事件集合（作为日历视图）中获取新的、更新的或删除的事件。 本文将介绍后一种情况，即在日历视图中获取此类对事件的增量更改。
 
-> **注意** 前者（对日历中的事件进行增量更改，而不受固定的开始日期和结束日期范围的约束）的功能目前仅在 beta 版中可用。有关详细信息，请参阅 [delta](/graph/api/event-delta) 函数。
+> [!NOTE]
+> 前者的功能&mdash;获取日历中事件的增量更改，而不限于固定的开始和结束日期范围&mdash;目前仅在 beta 版中可用。 有关更多信息，请参阅 [delta](/graph/api/event-delta) 函数。
 
-日历视图是一个日期/时间范围内事件的集合 (.../me/calendarview)，这些事件来自默认日历或用户的其他指定日历，或来自组日历。返回的事件可能包括单一的实例，或重复发生系列的发生次数和例外情况。Delta 数据使你能够维护和同步一个用户事件的本地存储，而不必每次都从服务器上获取用户的整个事件集。
+日历视图是某个日期/时间范围 (../me/calendarview) 内来自默认日历、用户的某个其他指定日历或者组日历的事件集合。 返回的事件可能包括单个实例或定期系列事件的发生和例外情况。 借助 delta 数据，你能够维护和同步本地存储的用户事件，而无需每次从服务器提取整组用户事件。
 
-增量查询既支持可检索指定日历视图中的所有事件的完全同步，也支持可检索自上次同步后日历视图中发生变化的事件的增量同步。通常情况下，开始时会执行一次完全同步，随后会定期获取相应日历视图的增量更改。 
+增量查询既支持可检索指定日历视图中的所有事件的完全同步，也支持可检索自上次同步后日历视图中发生变化的事件的增量同步。 通常情况下，开始时会执行一次完全同步，随后会定期获取该日历视图的增量更改。
 
 ## <a name="track-event-changes-in-a-calendar-view"></a>跟踪日历视图中的事件更改
 
-日历视图中事件的 Delta 查询是针对指定的日历和日期/时间范围的。若要跟踪多个日历的变化，则需要单独跟踪每个日历。 
+日历视图中事件的 Delta 查询是针对指定的日历和日期/时间范围的。若要跟踪多个日历的变化，则需要单独跟踪每个日历。
 
-跟踪日历视图中的事件更改通常需要使用 [delta](/graph/api/event-delta) 函数按轮发出一个或多个 GET 请求。初始 GET 请求非常类似于 [列出 calendarView](/graph/api/calendar-list-calendarview)，区别在于要添加 **delta** 函数。下面是登录用户的默认日历中，“日历”视图的初始 GET 增量请求：
+跟踪日历视图中的事件更改通常需要使用 [delta](/graph/api/event-delta) 函数按轮发出一个或多个 GET 请求。 初始 GET 请求与 [列出 calendarView](/graph/api/calendar-list-calendarview) 非常相似，区别在于要包括 **delta** 函数。 下面是登录用户的默认日历中，“日历”视图的初始 GET 增量请求：
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -40,7 +41,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 
 状态令牌对客户端完全不透明。若要继续一轮事件更改跟踪，只需将最后一个 GET 请求返回的 `@odata.nextLink` 或 `@odata.deltaLink` URL 复制并应用到同一日历视图的下一个 **delta** 函数调用即可。响应中返回的 `@odata.deltaLink` 表示当前一轮更改跟踪已完成。可以保存 `@odata.deltaLink` URL，并在开始下一轮时使用。
 
-若要了解如何使用这些 `@odata.nextLink` 和 `@odata.deltaLink` URL，请参阅下面的[示例](#example-to-synchronize-events-in-a-calendar-view)。
+要了解如何使用 `@odata.nextLink` 和 `@odata.deltaLink` URL，请参阅 [示例](#example-synchronize-events-in-a-calendar-view)。
 
 ### <a name="use-query-parameters-in-a-delta-query-for-calendar-view"></a>在日历视图的增量查询中使用查询参数
 
@@ -53,7 +54,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 每个增量查询 GET 请求在响应中返回一个或多个事件的集合。可以视需要指定请求头 `Prefer: odata.maxpagesize={x}`，设置在响应中返回的事件数上限。
 
 
-## <a name="example-to-synchronize-events-in-a-calendar-view"></a>同步日历视图中事件的示例
+## <a name="example-synchronize-events-in-a-calendar-view"></a>示例：同步日历视图中的事件
 
 以下示例展示了如何通过 3 个请求同步特定时间范围内的用户默认日历。此日历视图中有 5 个事件。
 
@@ -63,7 +64,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 
 为简洁起见，示例响应仅显示一部分事件属性。在实际调用中，大多数事件属性都会返回。 
 
-另请了解[下一轮](#the-next-round-sample-first-response)该执行哪些操作。
+请了解 [下一轮](#the-next-round-sample-first-response) 将执行的操作。
 
 
 ### <a name="step-1-sample-initial-request"></a>第 1 步：示例第一个请求

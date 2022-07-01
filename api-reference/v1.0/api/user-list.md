@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 28e9f77ecee53b668932c6453615a041bde1cab0
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: c4471da757f5430404ec0cf0f37cc89b1cdbfa7f
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095791"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555145"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -40,15 +40,25 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$count`、`$expand`、`$filter`、`$orderBy`、`$search`、`$select` 和 `$top` [ OData 查询参数 ](/graph/query-parameters) 以帮助自定义响应。 不支持 `$skip`。 默认和最大页面大小分别为 100 和 999 个用户对象。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。 `$count` 和 `$search` 参数当前在 Azure AD B2C 租户中不可用。
+此方法支持使用 `$count`、`$expand`、`$filter`、`$orderBy`、`$search`、`$select` 和 `$top` [OData 查询参数 ](/graph/query-parameters) 以帮助自定义响应。`$skip` 不支持 。 默认和最大页面大小分别为 100 和 999 个用户对象。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。 `$count` 和 `$search` 参数当前在 Azure AD B2C 租户中不可用。
 
-默认情况下，仅返回一组有限的属性（**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname** 和 **userPrincipalName**）。 若要返回其他属性，请使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。 例如，若要返回 **displayName**、**givenName** 和 **postalCode**，请将以下项添加到查询 `$select=displayName,givenName,postalCode`。
+默认情况下，仅返回一组有限的属性（**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname** 和 **userPrincipalName**）。要返回备用属性集，请使用 OData `$select` 查询参数指定所需的一组 [用户](../resources/user.md)属性。 例如，若要返回 **displayName**、**givenName** 和 **postalCode**，请将以下项添加到查询 `$select=displayName,givenName,postalCode`。
 
 某些属性无法在用户集合中返回。以下属性仅在 [检索单个用户](./user-get.md) 时受支持：**aboutMe**、**birthday**、**hireDate**、**interests**、**mySite**、**pastProjects**、**preferredName**、**responsibilities**、**schools**、**skills**、**mailboxSettings**。
 
 个人 Microsoft 帐户不支持下列属性，且将为 `null`：**aboutMe**、**birthday**、**interests**、**mySite**，**pastProjects**、**preferredName**、**responsibilities**、**schools**、**skills**、**streetAddress**。
 
-## <a name="request-headers"></a>请求头
+### <a name="retrieve-extensions-and-associated-data"></a>检索扩展和关联数据
+
+| 扩展类型                     | 备注                                                                  |
+|------------------------------------|---------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | 仅通过 `$select` 返回。 支持 `$filter`（`eq`）。                  |
+| 架构扩展                  | 仅通过 `$select` 返回。 支持 `$filter`（`eq`）。                  |
+| 开放扩展                    | 仅通过 `$expand` 返回，即 `users?$expand=extensions`。 |
+| 目录扩展               | 仅通过 `$select` 返回。 支持 `$filter`（`eq`）。                  |
+
+
+## <a name="request-headers"></a>请求标头
 
 | 标头        | 值                      |
 |:--------------|:---------------------------|

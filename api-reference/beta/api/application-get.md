@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f3aa1f16ba46391d056eb6ab7fbff465cc22b0ae
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: b39cc0d28c6c8ca0a6776e85d0dac12e9fc93d92
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034564"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555427"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -27,9 +27,10 @@ ms.locfileid: "66034564"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | Application.Read.All， Application.ReadWrite.All    |
-|应用程序 | Application.Read.All、 Directory.Read.All、 Application.ReadWrite.OwnedBy、  Application.ReadWrite.All、 Directory.ReadWrite.All |
+|应用程序 | Application.Read.All、 Directory.Read.All、 Application.ReadWrite.OwnedBy、 Application.ReadWrite.All、 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+将 `{id}` 替换为应用程序对象的 **ID**，在 Azure 门户中也称为 **对象 ID**。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}

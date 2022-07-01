@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph 限制指南
-description: 限制可调节并发调用服务的数量，以防止资源的过度使用。Microsoft Graph 旨在用于处理大量的请求。如果出现过多请求，限制将有助于保持 Microsoft Graph 的最佳性能和服务的可靠性。
+description: 查找在出现大量请求时维护 Microsoft Graph 服务最佳性能的最佳做法。 包括特定于服务的限制。
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: ef36b47b1666010dedf59d384742544ee35ceca5
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 35be5cac6a87ceb661a92f4dc25754d77939a8f3
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447105"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556176"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -113,7 +113,8 @@ Retry-After: 10
 > [!NOTE]
 > 此处所述的具体限制可能会发生更改。
 
-> **备注** 在本节中，*租户* 此术语是指指安装应用程序的 Microsoft 365 组织。 对于单个租户应用程序，这个租户可以与创建应用程序的租户相同，对于[多租户应用程序](/azure/active-directory/develop/setup-multi-tenant-app)，这个租户可以不同。
+> [!NOTE]
+> 在此部分中，术语 *租户* 是指安装应用程序的 Microsoft 365 组织。 对于单个租户应用程序，此租户可以与创建应用程序的租户相同，而对于 [多租户应用程序](/azure/active-directory/develop/setup-multi-tenant-app)，则可以不同。
 
 ### <a name="outlook-service-limits"></a>Outlook 服务限制
 
@@ -158,7 +159,8 @@ Retry-After: 10
 
 可在 [OneNote API 限制及避免方法](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/) 中找到有关最佳做法的附加信息。
 
-**注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
+> [!NOTE]
+> 此前列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
 ### <a name="project-rome-service-limits"></a>Project Rome 服务限制
 
@@ -221,7 +223,8 @@ Retry-After: 10
 | 应用程序 | 每 20 秒 150,000 个请求  | 每 5 分钟 70,000 个请求|
 | 租户 | 不适用 | 每 5 分钟 18,000 个请求 |
 
-> **注意**：应用程序 + 租户对限制因租户请求中运行的用户数而异。 租户规模定义如下：S - 小于 50 个用户，M - 50 至 500 个用户之间，L - 500 个以上用户。
+> [!NOTE]
+> 应用程序 + 租户对限制因运行请求的租户中的用户数而异。 租户规模定义如下：S - 小于 50 个用户，M - 50 至 500 个用户之间，L - 500 个以上用户。
 
 下表列出了基本请求费用。 未列出的任何请求的基础成本为 1。
 
@@ -266,7 +269,8 @@ Retry-After: 10
 - 使用值小于 20 的 `$top` 会使成本降低1
 - 在 Azure AD B2C 租户中创建用户会将成本增加 4
 
-> **注意：** 请求费用不能低于 1。 适用于从 `me/` 开始的请求路径的任何请求费用也适用于以 `users/{id | userPrincipalName}/`开头的等效请求。
+> [!NOTE]
+> 请求费用不能低于 1。 适用于从 `me/` 开始的请求路径的任何请求费用也适用于以 `users/{id | userPrincipalName}/`开头的等效请求。
 
 #### <a name="additional-headers"></a>附加标题
 
@@ -277,7 +281,8 @@ Retry-After: 10
   - 正常 - 如果未提供任何值，则为默认值。 表示请求是默认优先级。
   - 高 - 表示请求具有高优先级。 限制此请求会导致出现用户可见的故障。
 
-> **注意**：如果限制请求，则首先限制低优先级请求，其次限制正常优先级请求，最后限制高优先级请求。 使用优先级请求标头不会更改限制。
+> [!NOTE]
+> 如果限制请求，将首先限制低优先级请求，其次限制普通优先级请求，最后限制高优先级请求。 使用优先级请求标头不会更改限制。
 
 ##### <a name="regular-responses-requests"></a>正常响应请求
 
@@ -337,7 +342,8 @@ Retry-After: 10
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
 
-> **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
+> [!NOTE]
+> 此前列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
 ### <a name="insights-service-limits"></a>见解服务限制
 
@@ -397,7 +403,7 @@ Retry-After: 10
 
 ### <a name="files-and-lists-service-limits"></a>文件和列表服务限制
 
-OneDrive、OneDrive for Business 和 SharePoint Online 的服务限制不可用。 有关详细信息，请参阅[为什么不能告诉我确切的限制？](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits)。
+有关 OneDrive、OneDrive for Business 和 SharePoint Online 的服务限制，请参阅 [避免在 SharePoint Online 中受到限制或阻止](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)。
 
 上述信息适用于以下资源：
 
@@ -420,7 +426,8 @@ Planner 的服务限制不可用。
 
 - [dataPolicyOperation](/graph/api/resources/datapolicyoperation)
 
-> **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
+> [!NOTE]
+> 此前列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### <a name="education-service-limits"></a>教育版服务限制

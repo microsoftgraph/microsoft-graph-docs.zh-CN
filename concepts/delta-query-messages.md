@@ -1,19 +1,19 @@
 ---
 title: 获取文件夹中邮件的增量更改
-description: Delta 查询可通过一系列的查询文件夹中查询邮件的添加、删除或更新。
+description: 使用增量查询通过单独跟踪每个文件夹来跟踪文件夹层次结构中邮件的更改。 示例演示了如何同步文件夹中的邮件。
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1ad9bdefc50f4b3d2acd14643cb0a24ed74fca2d
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 90f72d899183b028fd66fc23c1f2f54929b7e944
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246382"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555602"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>获取文件夹中邮件的增量更改
 
-Delta 查询可通过调用一系列的 [delta](/graph/api/message-delta) 函数查询文件夹中邮件的添加、删除或更新。Delta 数据使你可以维护和同步本地存储的用户邮件，而无需每次都从服务器中获取整组邮件。
+通过 Delta 查询，可通过一系列的 [delta](/graph/api/message-delta) 函数调用来查询文件夹中邮件的添加、删除或更新。 借助 Delta 数据，能够维护和同步本地存储的用户邮件，而无需每次从服务器中提取整组用户邮件。
 
 Delta 查询支持检索文件夹（例如，用户的收件箱）中所有邮件的完全同步，以及检索自上次同步以来该文件夹中所有已更改邮件的增量同步。通常，需要对文件夹中的所有邮件进行初始完全同步，之后可定期获取该文件夹的增量更改。
 
@@ -34,7 +34,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 
 这些令牌是对客户端完全不透明的 [状态令牌](delta-query-overview.md#state-tokens)。若要继续一轮邮件更改跟踪，只需将最后一个 GET 请求返回的 URL 复制并应用到同一文件夹的下一个 **delta** 函数调用即可。响应中返回的 `@odata.deltaLink` 表示当前一轮更改跟踪已完成。可以保存 `@odata.deltaLink` URL，并在开始下一轮时使用。
 
-若要了解如何使用 `@odata.nextLink` 和 `@odata.deltaLink` URL，请参阅下面的[示例](#example-to-synchronize-messages-in-a-folder)。
+要了解如何使用 `@odata.nextLink` 和 `@odata.deltaLink` URL，请参阅下面的 [示例](#example-synchronize-messages-in-a-folder)。
 
 ### <a name="use-query-parameters-in-a-delta-query-for-messages"></a>在邮件的增量查询中使用查询参数
 
@@ -48,7 +48,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 
 ### <a name="optional-request-header"></a>可选的请求标头
 
-每个 delta 查询 GET 请求在响应中返回一个或多个邮件的集合。可以选择性地指定请求标头 `Prefer: odata.maxpagesize={x}`，以设置响应的最大邮件数。
+每个 delta 查询 GET 请求在响应中返回包含一个或多个邮件的集合。 可以视需要指定请求头 `Prefer: odata.maxpagesize={x}`，设置响应中可包含的邮件数上限。
 
 <!--
 ### Iterative process
@@ -80,9 +80,9 @@ since the completion of the very first round.
 
 -->
 
-## <a name="example-to-synchronize-messages-in-a-folder"></a>同步文件夹中邮件的示例
+## <a name="example-synchronize-messages-in-a-folder"></a>示例：同步文件夹中邮件
 
-以下示例显示对最初包含 5 个邮件的特定文件夹进行的 2 轮同步。
+以下示例显示了对最初包含 5 个邮件的特定文件夹进行的 2 轮同步。
 
 第一轮包含一系列用于同步文件夹中所有 5 个邮件的 3 个请求：
 

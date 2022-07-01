@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 006da4f4b653dad8ac3406ddb62caff8af84c6b9
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 6fccabf60e9f625a638f61d0e52053aec31ce28d
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211150"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555918"
 ---
 # <a name="get-group"></a>获取组 
 
@@ -48,7 +48,15 @@ GET /groups/{id}
 
 有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+### <a name="retrieve-extensions-and-associated-data"></a>检索扩展和关联数据
+
+| 扩展类型       | 备注                                                                       |
+|----------------------|--------------------------------------------------------------------------------|
+| 架构扩展    | 仅通过 `$select` 返回。                                                  |
+| 开放扩展      | 通过 [获取开放扩展](opentypeextension-get.md) 操作返回。 |
+| 目录扩展 | 默认情况下返回。                                                           |
+
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 类型   | 说明               |
 | :------------ | :----- | :------------------------ |

@@ -1,14 +1,14 @@
 ---
 title: 使用 Graph 浏览器尝试 Microsoft Graph API
-description: 使用 Microsoft Graph 浏览器在默认示例租户上试用 Microsoft Graph API，以浏览功能或登录到自己的租户，并将其用作原型工具来满足应用方案。
+description: 在默认示例租户上试用 Microsoft Graph API 以浏览功能，或登录到自己的租户并将其用作原型工具来实现应用方案。
 ms.localizationpriority: high
 author: RabebOthmani
-ms.openlocfilehash: 9f1d112cc47493b36fe455d817aa637e7fda783e
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 1a1e16adcc420f09c867baae616bfce47b7a8595
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176591"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555707"
 ---
 # <a name="use-graph-explorer-to-try-microsoft-graph-apis"></a>使用 Graph 浏览器尝试 Microsoft Graph API
 
@@ -79,5 +79,5 @@ Graph 浏览器包括以下元素：
 ## <a name="next-steps"></a>后续步骤
 
 - 试用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/)。
-- 详细了解 [Graph 浏览器功能](./graph-explorer-features.md)。
+- 了解如何使用 [Graph 资源管理器功能](./graph-explorer-features.md)。
 - 在 [GitHub 存储库](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose) 中贡献或提供反馈。
