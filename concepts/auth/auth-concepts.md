@@ -1,22 +1,22 @@
 ---
-title: Microsoft Graph 身份验证和授权基础知识
-description: 要调用 Microsoft Graph，应用必须从 Microsoft 标识平台获取一个访问令牌。
+title: 身份验证和授权基础知识
+description: 若要调用 Microsoft Graph，必须向 Microsoft 标识平台注册应用、请求权限并获取访问令牌。
 author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 01d1206a3083fda0820be91b8e84a4f5edc2397f
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 339091181388f5e1b4ae9c2075f32eb984ad038f
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899650"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556337"
 ---
-# <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph 身份验证和授权基础知识
+# <a name="authentication-and-authorization-basics"></a>身份验证和授权基础知识
 
 为了调用 Microsoft Graph，应用必须从 Microsoft 标识平台获取访问令牌。该访问令牌包含应用相关信息以及它对可通过 Microsoft Graph 使用的资源和 API 所具有的权限。若要获取访问令牌，应用必须向 Microsoft 标识平台注册，并且获得用户或管理员的授权，可访问其所需的 Microsoft Graph 资源。
 
-本文概述了 Microsoft 标识平台、访问令牌以及应用如何获取访问令牌。有关 Microsoft 标识平台的详细信息，请参阅 [什么是 Microsoft 标识平台？](/azure/active-directory/develop/v2-overview)。 如果你已知道如何将应用与 Microsoft 标识平台集成来获取令牌，请参阅 [后续步骤](#next-steps) 部分中的信息和特定于 Microsoft Graph 的示例。
+本文概述了 Microsoft 标识平台、访问令牌，以及应用可获取访问令牌的方式。 有关 Microsoft 标识平台的详细信息，请参阅 [什么是 Microsoft 标识平台？](/azure/active-directory/develop/v2-overview)。 如果你已知道如何将应用与 Microsoft 标识平台集成来获取令牌，请参阅 [后续步骤](#next-steps) 部分中的信息和特定于 Microsoft Graph 的示例。
 
 ## <a name="register-your-app-with-the-microsoft-identity-platform"></a>向 Microsoft 标识平台注册应用
 
@@ -53,26 +53,27 @@ Microsoft Graph公开精细的权限，这些权限控制应用对资源（如�
 
 ### <a name="delegated-and-application-permissions"></a>委派权限和应用程序权限
 
-Microsoft Graph具有两种类型的权限。
+Microsoft Graph 具有两种权限类型：
 
 - **委派权限** 由存在已登录用户的应用使用。对于这些应用，用户或管理员会同意应用请求的权限，且应用在调用 Microsoft Graph 时可以充当已登录用户。一些委派权限可以由非管理用户同意，但一些特权较高的权限需要 [管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)。  
 
 - **应用程序权限** 由无需具有登录用户即可运行的应用使用；例如，作为后台服务或守护程序运行的应用。应用程序权限只能 [由管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。
 
+### <a name="effective-permissions"></a>有效权限
+
 **有效权限** 是应用在向 Microsoft Graph 发出请求时具有的权限。 有效权限由你向应用授予的Microsoft Graph权限的组合决定，*and* 已登录用户或调用应用的权限。 在组织中，一个或多个角色中的策略或成员身份决定已登录用户或应用的权限。 调用Microsoft Graph时，请务必了解应用具有的委派权限和应用程序权限与其有效权限之间的差异。
 
-#### <a name="effective-permissions-in-delegated-vs-application-only-permission-scenarios"></a>委派权限与仅限应用程序权限方案中的有效权限
+#### <a name="effective-permissions-in-delegated-versus-application-only-permission-scenarios"></a>委派权限与仅限应用程序权限方案中的有效权限
 
-- 对于委派权限，*有效权限* 是应用已授予的委派权限（经同意）和当前登录用户的特权的最小交集。你的应用的权限永远不能超过已登录用户。
+- 对于委派权限，有效权限是应用已授予的委派权限（经同意）和当前登录用户的特权的最小交集。你的应用的权限永远不能超过已登录用户。
 
   假设已向应用授予 *User.ReadWrite.All* 委派权限，并调用 [Update 用户](/graph/api/user-update) API。 此权限名义上授予应用读取和更新组织中每位用户个人资料的权限。 但是，由于有效权限，以下限制适用于已登录用户的权限：
-  + 如果已登录的用户是全局管理员，则应用可以更新组织中每个用户的配置文件。
-  + 如果已登录用户不是管理员角色，则应用 *只能* 已登录用户的配置文件更新。 而不会更新组织中其他用户的配置文件，因为已登录用户不具有这些特权。
+  - 如果已登录的用户是全局管理员，则应用可以更新组织中每个用户的配置文件。
+  - 如果已登录用户不是管理员角色，则应用 *只能* 已登录用户的配置文件更新。 而不会更新组织中其他用户的配置文件，因为已登录用户不具有这些特权。
 
-- 对于应用程序权限，应用 *有效权限* 是权限隐含的完整级别权限。例如，具有 *User.ReadWrite.All* 应用程序权限的应用可以更新组织中每个用户的配置文件。
+- 对于应用程序权限，应用有效权限是权限隐含的完整级别权限。例如，具有 *User.ReadWrite.All* 应用程序权限的应用可以更新组织中每个用户的配置文件。
 
-##### <a name="comparison-of-delegated-and-application-permissions"></a>委派权限和应用程序权限的比较
-
+#### <a name="comparison-of-delegated-and-application-permissions"></a>委派权限和应用程序权限的比较
 
 | Item | 委派权限 | 应用程序权限 |
 |--|--|--|
@@ -86,7 +87,6 @@ Microsoft Graph具有两种类型的权限。
 :::image type="content" source="/graph/images/auth-v2/permission-types.png" alt-text="Microsoft Graph 公开了委派权限和应用程序权限，但根据应用程序的有效权限授权请求。" border="true":::
 
 有关 Microsoft Graph 委派权限和应用程序权限的完整列表，以及哪些权限需要管理员同意，请参阅 [权限参考](../permissions-reference.md)。
-
 
 ## <a name="access-tokens"></a>访问令牌
 

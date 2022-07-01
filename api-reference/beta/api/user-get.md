@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 496dc400412a5e2fce735a831539b9509a122e76
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 59df9f1d7042abb723e7148bcd14984e52ad5866
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211819"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556316"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -58,6 +58,15 @@ GET /me
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 检索特定用户属性，包括默认情况下未返回的属性。
+
+### <a name="retrieve-extensions-and-associated-data"></a>检索扩展和关联数据
+
+| 扩展类型                     | 备注                                                                                              |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | 仅与 `$select` 一起返回。                                                                         |
+| 架构扩展                  | 仅与 `$select`一起返回。                                                                         |
+| 开放扩展                    | 仅通过“[获取打开扩展](opentypeextension-get.md)”操作返回。 |
+| 目录扩展               | 仅与 `$select` 一起返回。                                                                         |
 
 ## <a name="request-headers"></a>请求标头
 
