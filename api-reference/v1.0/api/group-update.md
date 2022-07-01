@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 72007b0e2de2264a4afee4c68b103505815921f5
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5962b5601f0dfd364bf8b08a25af1d2b326e7bac
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211128"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556225"
 ---
 # <a name="update-group"></a>更新组
 
@@ -66,6 +66,13 @@ PATCH /groups/{id}
 > - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅 [已知问题](/graph/known-issues#groups)。
 >
 > - 在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups)。
+
+### <a name="manage-extensions-and-associated-data"></a>管理扩展和关联的数据
+
+使用此 API 管理组的 [目录、架构和开放扩展](/graph/extensibility-overview) 及其数据，如下所示：
+
++ 在现有组的扩展中添加、更新和存储数据。
++ 对于目录和架构扩展，可通过将自定义扩展属性的值设置为 `null` 来删除任何存储的数据。 对于开放扩展，请使用 [删除开放扩展](/graph/api/opentypeextension-delete) API。
 
 ## <a name="response"></a>响应
 

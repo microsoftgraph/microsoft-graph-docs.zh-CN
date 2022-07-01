@@ -1,21 +1,22 @@
 ---
 title: 使用 Microsoft Graph API
-description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风格的 Web API。在你注册应用并获取身份验证令牌以用于用户或服务后，可以向 Microsoft Graph API 发送请求。
+description: 了解如何在向 Microsoft Graph API 提出请求之前注册应用并获取用户或服务的身份验证令牌。
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7d146c6082aff2c6d1251dbb8b193f1e29d84d2f
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: c23e9d42656efa3fe842cf1e5703c472e83207c9
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246599"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555441"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
 Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风格的 Web API。在你[注册应用](auth-register-app-v2.md)并[获取身份验证令牌以用于用户](auth-v2-user.md)或[服务](auth-v2-service.md)后，可以向 Microsoft Graph API 发送请求。
 
-> **重要说明：** 条件访问策略应用于 Microsoft Graph 的方式在发生变化。 应用程序需要进行更新以处理配置了条件访问策略的应用场景。 有关详细信息和指南，请参阅 [Azure Active Directory 条件访问开发人员指南](/azure/active-directory/develop/active-directory-conditional-access-developer)。
+> [!IMPORTANT]
+> 条件访问策略应用于 Microsoft Graph 的方式正在发生变化。 应用程序需要进行更新以处理配置了条件访问策略的应用场景。 有关详细信息和指南，请参阅 [Azure Active Directory 条件访问开发人员指南](/azure/active-directory/develop/active-directory-conditional-access-developer)。
 
 ## <a name="odata-namespace"></a>OData 命名空间
 
