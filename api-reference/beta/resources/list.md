@@ -5,12 +5,12 @@ title: List 资源
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bdca492a6abac648cee5f48b10ef95f1fd77b8b7
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: cb6a203a3421e6d2fe4889076826c5a6ac8f00b1
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723320"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577861"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -24,8 +24,6 @@ ms.locfileid: "63723320"
 ## <a name="tasks-on-a-list"></a>list 上的任务
 
 下面列出了可执行的 list 资源任务。
-**注意：** 此测试版只允许导航列表，不允许创建或更新列表。
-但是，可以创建或更新[列表项][listItem]。
 
 下面的所有示例都与网站相关，例如：`https://graph.microsoft.com/beta/sites/{site-id}`。
 
@@ -41,7 +39,7 @@ ms.locfileid: "63723320"
 | [获取最近的活动][]                         | GET /lists/{list-id}/activities             |
 | [获取 WebSocket 频道][]                         | GET /lists/{list-id}/subscriptions/socketIo |
 | [列表内容类型][]                            | GET /lists/{list-id}/contentTypes           |
-| [从网站添加内容类型副本][]            | POST /lists/{list-id}/contentTypes/addCopy  |
+| [从站点添加内容类型的副本][]            | POST /lists/{list-id}/contentTypes/addCopy  |
 | [List columns][]                                  | GET /lists/{list-id}/columns                |
 | [创建列][]                                 | POST /lists/{list-id}/columns               |
 | [列举操作](../api/list-list-operations.md) | GET /lists/{list-id}/operations             |
@@ -56,7 +54,7 @@ ms.locfileid: "63723320"
 [获取最近的活动]: ../api/activities-list.md
 [获取 WebSocket 频道]: ../api/subscriptions-socketio.md
 [列表内容类型]: ../api/list-list-contenttypes.md
-[从网站添加内容类型副本]: ../api/contenttype-addCopy.md
+[从站点添加内容类型的副本]: ../api/contenttype-addCopy.md
 [List columns]: ../api/list-list-columns.md
 [创建列]: ../api/list-post-columns.md
 
@@ -95,7 +93,7 @@ ms.locfileid: "63723320"
 | **drive**      | [drive][]                                                                       | 仅存在于文档库中。允许使用 [driveItems][driveItem] 作为 [drive][] 资源访问列表。 |
 | **项目**      | Collection([listItem][])                                                        | 列表中包含的所有项。                                                                                    |
 | 订阅  | [订阅][]集合                                                     | 列表上的订阅集。                                                                               |
-| **operations** | [richLongRunningOperation](../resources/richlongrunningoperation.md) 集合 | 列表长时间运行的操作的集合。                                                             |
+| **operations** | [richLongRunningOperation](../resources/richlongrunningoperation.md) 集合 | 列表的长时间运行操作的集合。                                                             |
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md

@@ -1,16 +1,16 @@
 ---
 title: reportRoot： getM365AppPlatformUserCounts
-description: 获取一个报告，该报告提供组织中每个平台的所有应用（Windows、Mac、Web 和移动）的活动用户趋势。
-localization_priority: Normal
+description: 获取一个报表，该报表提供组织中每个平台（Windows、Mac、Web 和移动）的所有应用中活动用户的趋势。
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2f6377776cedc7394c2e9573c24e5209d7dda755
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f2668211d281103c73c191e11321e8d888c56e1a
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050946"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577971"
 ---
 # <a name="reportroot-getm365appplatformusercounts"></a>reportRoot： getM365AppPlatformUserCounts
 
@@ -18,9 +18,9 @@ ms.locfileid: "52050946"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取一个报告，该报告提供组织中每个平台的所有应用（Windows、Mac、Web 和移动）的活动用户趋势。
+获取一个报表，该报表提供组织中每个平台（Windows、Mac、Web 和移动）的所有应用中活动用户的趋势。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报表 -](/microsoft-365/admin/activity-reports/microsoft365-apps-usage)Microsoft 365 应用版使用情况。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - Microsoft 365 应用版使用情况](/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "52050946"
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用                            | Reports.Read.All                            |
 
-> **注意：** 对于允许应用代表用户读取服务使用情况报表的委派权限，租户管理员必须为用户分配适当的 Azure AD 受限管理员角色。 有关详细信息，请参阅[授权 API 读取Microsoft 365使用情况报告](/graph/reportroot-authorization)。
+> **注意：** 对于允许应用代表用户读取服务使用情况报告的委派权限，租户管理员必须为用户分配相应的 Azure AD 受限管理员角色。 有关详细信息，请参阅 [授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,11 +48,11 @@ GET /reports/getM365AppPlatformUserCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                                                                                                                                                                                                                                                       |
 | :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 {period_value} 支持的值是 `D7` `D30` ：、、 `D90` 和 `D180` 。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 {period_value} 支持的值为： `D7`、 和 `D90``D30``D180`. 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数将默认输出设置为 `$format` text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData `$format` 查询参数将默认输出设置为 text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -66,11 +66,11 @@ GET /reports/getM365AppPlatformUserCounts(period='{period_value}')
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应[](../resources/intune-shared-report.md)代码和 report 对象。 报表数据包含在 **报表对象的 content****属性中**。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 Edm.Stream 对象。
 
 ### <a name="csv"></a>CSV
 
-如果成功，请求 **content** 属性将返回响应，该响应会重定向到报告的预先验证的 `302 Found` 下载 URL。 可以在响应的 `Location` 头中找到此 URL。
+如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
 预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
 
@@ -88,7 +88,7 @@ CSV 文件包含下面的列标题：
 
 ### <a name="json"></a>JSON
 
-如果成功，请求 **content** 属性在响应正文中返回 响应代码和 `200 OK` JSON 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 JSON 对象。
 
 ## <a name="examples"></a>示例
 
@@ -98,7 +98,7 @@ CSV 文件包含下面的列标题：
 
 #### <a name="request"></a>请求
 
-下面是请求获取 content 属性 **的示例** 。
+下面展示了示例请求。
 
 
 
@@ -109,7 +109,7 @@ CSV 文件包含下面的列标题：
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')/content?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')?$format=text/csv
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appplatformusercounts-csv-csharp-snippets.md)]
@@ -164,7 +164,7 @@ Report Refresh Date,Report Period,Report Date,Windows,Mac,Mobile,Web
 
 #### <a name="request"></a>请求
 
-下面是请求获取 content 属性 **的示例** 。
+下面展示了示例请求。
 
 
 
@@ -175,7 +175,7 @@ Report Refresh Date,Report Period,Report Date,Windows,Mac,Mobile,Web
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')/content?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')?$format=application/json
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appplatformusercounts-json-csharp-snippets.md)]

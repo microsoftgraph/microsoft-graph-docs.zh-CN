@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cd2f39a9c507c048794ebb928abc6d9cc22b9f59
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 816220e233346d29c1e13717867bd651597d2563
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204385"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555470"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -59,7 +59,16 @@ GET /me
 
 默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。 
 
-若要返回其他属性，必须使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。 例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`
+若要返回其他属性，必须使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。 例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`。
+
+### <a name="retrieve-extensions-and-associated-data"></a>检索扩展和关联数据
+
+| 扩展类型                     | 备注                                                                                              |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | 仅与 `$select` 一起返回。                                                                         |
+| 架构扩展                  | 仅与 `$select` 一起返回。                                                                         |
+| 开放扩展                    | 仅通过 [获取开放扩展](opentypeextension-get.md) 操作返回。 |
+| 目录扩展               | 仅与 `$select` 一起返回。                                                                         |
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值|

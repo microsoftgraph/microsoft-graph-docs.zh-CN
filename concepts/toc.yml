@@ -272,6 +272,14 @@ items:
             href: assignments-submissions-states-transition.md
           - name: 指定分配通知的默认通道
             href: education-build-notificationchannelurl.md
+      - name: 扩展
+        items:
+          - name: 概述
+            href: extensibility-overview.md
+          - name: 使用开放扩展
+            href: extensibility-open-users.md
+          - name: 使用架构扩展
+            href: extensibility-schema-groups.md
       - name: 文件
         items:
           - name: 概述
@@ -495,12 +503,12 @@ items:
             href: choose-online-meeting-api.md
           - name: 配置内置选项卡
             href: teams-configuring-builtin-tabs.md
-          - name: 受保护的 API
-            href: teams-protected-apis.md
-          - name: 许可和付款要求
-            href: teams-licenses.md
           - name: 使用机器人发送主动邮件
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
+          - name: 受保护的 API
+            href: teams-protected-apis.md
+          - name: 许可和付款模型
+            href: teams-licenses.md
           - name: 活动源通知
             items:
               - name: 发送活动源通知
@@ -509,7 +517,7 @@ items:
                 href: teams-activity-feed-notifications-best-practices.md
           - name: 订阅变更通知
             href: teams-change-notification-in-microsoft-teams-overview.md
-          - name: 系统邮件
+          - name: 获取系统邮件
             href: system-messages.md
       - name: 待办任务
         href: todo-concept-overview.md
@@ -635,14 +643,8 @@ items:
               - name: 获取用户更改（示例）
                 href: delta-query-users.md
           - name: 添加自定义数据
-            items:
-              - name: 概述
-                href: extensibility-overview.md
-                displayName: 'add custom data, extensions, resources using extensions'
-              - name: 使用开放扩展（示例）
-                href: extensibility-open-users.md
-              - name: 使用架构扩展（示例）
-                href: extensibility-schema-groups.md
+            displayName: 'directory extensions, schema extensions, open extensions, extension attributes'
+            href: extensibility-overview.md
           - name: 使用 Graph 浏览器
             items:
               - name: 入门

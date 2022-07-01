@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fdba49fb6f228422a70ddf4708d59742786c57dd
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 79f55fdfb530f3c43d8fe2abf0d3beb50fa2eb55
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657970"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577919"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var stream = await graphClient.Reports
-    .GetM365AppUserCounts("D7").Content
+    .GetM365AppUserCounts("D7")
     .Request()
     .GetAsync();
 

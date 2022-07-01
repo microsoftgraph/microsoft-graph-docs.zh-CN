@@ -1,40 +1,40 @@
 ---
 title: Microsoft Graph 工具包入门
-description: 了解如何设置Microsoft 365租户和开发环境，以及如何使用 Microsoft Graph Toolkit。
+description: 了解如何设置 Microsoft 365 租户和开发环境以使用 Microsoft Graph 工具包。 为组件和提供程序安装 NPM 包。
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.openlocfilehash: dc72066d12061a5d4063c19b583876a3511aa992
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 3e4711003808dfc97536b648fbd02a1ee40b78b2
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65460657"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577712"
 ---
 # <a name="get-started-with-microsoft-graph-toolkit"></a>Microsoft Graph 工具包入门
 
-可以轻松地将 Microsoft Graph Toolkit 组件添加到 Web 应用程序、SharePoint Web 部件或Microsoft Teams选项卡。 这些组件基于 Web 标准，可用于纯 JavaScript 项目或热门 Web 框架（如 Reach、Angular 和 Vue.js）。
+可以轻松地将 Microsoft Graph 工具包组件添加到 Web 应用程序、SharePoint Web 部件或 Microsoft Teams 选项卡。 这些组件基于 Web 标准，可用于纯 JavaScript 项目或热门 Web 框架（如 Reach、Angular 和 Vue.js）。
 
 观看此简短视频以开始使用工具包。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
-有关分步教程，请参阅 [Microsoft Graph Toolkit 模块的开始](/learn/modules/msgraph-toolkit-intro/)。 
+有关分步教程，请参阅 [Microsoft Graph 工具包模块入](/learn/modules/msgraph-toolkit-intro/) 门。 
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>设置 Microsoft 365 租户
 
-若要使用 Microsoft Graph Toolkit开发应用，需要访问Microsoft 365租户。 如果没有，可以在通过 [加入 Office 365 开发人员计划](https://developer.microsoft.com/microsoft-365/dev-program) 获取免费的 Office 365 开发人员订阅。 有关如何配置订阅的详细信息，请参阅 [设置 Microsoft 365 开发人员订阅](/office/developer-program/microsoft-365-developer-program-get-started)。
+若要使用 Microsoft Graph 工具包开发应用，需要访问 Microsoft 365 租户。 如果没有，可以在通过 [加入 Office 365 开发人员计划](https://developer.microsoft.com/microsoft-365/dev-program) 获取免费的 Office 365 开发人员订阅。 有关如何配置订阅的详细信息，请参阅 [设置 Microsoft 365 开发人员订阅](/office/developer-program/microsoft-365-developer-program-get-started)。
 
 ## <a name="set-up-your-development-environment"></a>设置开发环境
 
 若要使用工具包进行开发，需要以下各项：
 
 - 文本编辑器或 IDE。 可以使用所选的编辑器或 IDE，也可以免费安装和使用[Visual Studio Code](https://code.visualstudio.com/download)。
-- 新式 Web 浏览器，例如 Microsoft Edge、Google Chrome 或 Firefox。
+- 新式 Web 浏览器，如 Microsoft Edge、Google Chrome 或 Firefox。
 - 可从 nodejs.org 安装的 LTS 版本 [的 Node.js](https://nodejs.org)。
 
-## <a name="use-microsoft-graph-toolkit"></a>使用 Microsoft Graph Toolkit
+## <a name="use-microsoft-graph-toolkit"></a>使用 Microsoft Graph 工具包
 
-可以通过) 或安装`npm`包直接引用加载程序 (`unpkg` ，在应用程序中使用 Microsoft Graph Toolkit。
+可以通过) 或安装`npm`包直接引用加载程序 (`unpkg` ，在应用程序中使用 Microsoft Graph 工具包。
 
 # <a name="unpkg"></a>[unpkg](#tab/html)
 若要通过 `mgt-loader`使用工具包，请将脚本中的引用添加到代码：
@@ -66,7 +66,7 @@ npm install @microsoft/mgt
 
 ### <a name="npm-packages"></a>NPM 包
 
-Microsoft Graph Toolkit由多个 NPM 包组成，允许你仅包含应用程序所需的代码。
+Microsoft Graph 工具包由多个 NPM 包组成，允许仅包含应用程序所需的代码。
 
 <b>@microsoft/mgt-element</b>
 
@@ -74,7 +74,7 @@ Microsoft Graph Toolkit由多个 NPM 包组成，允许你仅包含应用程序�
 
 <b>@microsoft/mgt-components</b>
 
-该`@microsoft/mgt-components`包包含所有 Microsoft Graph连接的 Web 组件，例如`Person``PeoplePicker`，等等。 
+该`@microsoft/mgt-components`包包含所有已连接的 Microsoft Graph Web 组件，例如`Person``PeoplePicker`，等等。 
 
 **提供程序**
 
@@ -90,11 +90,11 @@ Microsoft Graph Toolkit由多个 NPM 包组成，允许你仅包含应用程序�
 
 -  <b>@microsoft/mgt-teams-provider</b>
 
-    <code>[@microsoft/mgt-teams-provider](../providers/teams.md)</code> 包含 `TeamsProvider` 和 `mgt-teams-provider` 组件。 Microsoft Teams提供程序在Microsoft Teams选项卡应用程序中启用身份验证。
+    <code>[@microsoft/mgt-teams-provider](../providers/teams.md)</code> 包含 `TeamsProvider` 和 `mgt-teams-provider` 组件。 Microsoft Teams 提供程序在 Microsoft Teams 选项卡应用程序中启用身份验证。
 
 -  <b>@microsoft/mgt-teams-msal2-provider</b>
 
-    <code>[@microsoft/mgt-teams-msal2-provider](../providers/teams.md)</code> 包含 `TeamsMsal2Provider` 和 `mgt-teams-msal2-provider` 组件。 Microsoft Teams MSAL2 提供程序在Microsoft Teams选项卡应用程序中启用身份验证。
+    <code>[@microsoft/mgt-teams-msal2-provider](../providers/teams.md)</code> 包含 `TeamsMsal2Provider` 和 `mgt-teams-msal2-provider` 组件。 Microsoft Teams MSAL2 提供程序在 Microsoft Teams 选项卡应用程序中启用身份验证。
 
 - <b>@microsoft/mgt-sharepoint-provider</b>
 
@@ -102,7 +102,7 @@ Microsoft Graph Toolkit由多个 NPM 包组成，允许你仅包含应用程序�
 
 - <b>@microsoft/mgt-proxy-provider</b>
 
-    <code>[@microsoft/mgt-proxy-provider](../providers/proxy.md)</code>`ProxyProvider`包含代理通过后端服务Graph调用的应用程序。 
+    <code>[@microsoft/mgt-proxy-provider](../providers/proxy.md)</code>`ProxyProvider`包含代理 Graph 通过后端服务调用的应用程序。 
 
 <b>@microsoft/mgt</b>
 
@@ -118,11 +118,13 @@ Microsoft Graph Toolkit由多个 NPM 包组成，允许你仅包含应用程序�
 
 ## <a name="next-steps"></a>后续步骤
 
-现在可以开始使用 Microsoft Graph Toolkit进行开发了！ 以下指南可用于帮助你入门:
+现在可以开始使用 Microsoft Graph 工具包进行开发了！ 以下指南可用于帮助你入门:
 
-- [注册 Azure Active Directory 应用](./add-aad-app-registration.md)
+- [ (Azure AD) 应用注册 Azure Active Directory](./add-aad-app-registration.md)
 - [生成 Web 应用 (JavaScript)](./build-a-web-app.md) (vanilla JavaScript)
 - [构建 web 应用程序 (React)](./use-toolkit-with-react.md)
 - [构建 web 应用 (Angular)](./use-toolkit-with-angular.md)
 - [构建 SharePoint Web 部件](./build-a-sharepoint-web-part.md)
 - [构建 Microsoft Teams 选项卡](./build-a-microsoft-teams-tab.md)
+- [生成 Microsoft Teams SSO 选项卡](./build-a-microsoft-teams-sso-tab.md)
+- [构建电子应用](./build-an-electron-app.md)

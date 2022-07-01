@@ -1,16 +1,16 @@
 ---
 title: reportRoot： getM365AppUserDetail
-description: 获取一个报告，该报告提供有关用户已使用的应用和平台的详细信息。
-localization_priority: Normal
+description: 获取一个报表，其中提供有关用户已使用的应用和平台的详细信息。
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 196e8747254d2fdc1cdb0e97a53eb2fe8c6b78d1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e708041d4e08fb3e17eb59f1176f2af0e5a19bc6
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050932"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66578005"
 ---
 # <a name="reportroot-getm365appuserdetail"></a>reportRoot： getM365AppUserDetail
 
@@ -18,9 +18,9 @@ ms.locfileid: "52050932"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取一个报告，该报告提供有关用户已使用的应用和平台的详细信息。
+获取一个报表，其中提供有关用户已使用的应用和平台的详细信息。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报表 -](/microsoft-365/admin/activity-reports/microsoft365-apps-usage)Microsoft 365 应用版使用情况。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - Microsoft 365 应用版使用情况](/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "52050932"
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用                            | Reports.Read.All                            |
 
-> **注意：** 对于允许应用代表用户读取服务使用情况报表的委派权限，租户管理员必须为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+> **注意：** 对于允许应用代表用户读取服务使用情况报告的委派权限，租户管理员必须为用户分配相应的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,14 +49,14 @@ GET /reports/getM365AppUserDetail(date={date_value})
 
 | 参数 | 类型   | 说明                                                                                                                                                                                                                                             |
 | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| period    | string | 指定在多长时间内聚合报表。 {period_value} 支持的值是 `D7` `D30` ：、、 `D90` 和 `D180` 。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 |
+| period    | string | 指定在多长时间内聚合报表。 {period_value} 支持的值为： `D7`、 和 `D90``D30``D180`. 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 |
 | date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。          |
 
-> **注意：** 你需要在 URL 中 `period` 设置 `date` 或 。
+> **注意：** 需要设置或`period``date`设置在 URL 中。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数将默认输出设置为 `$format` text/csv 或 application/json。
+此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData `$format` 查询参数将默认输出设置为 text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -70,11 +70,11 @@ GET /reports/getM365AppUserDetail(date={date_value})
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应[](../resources/intune-shared-report.md)代码和 report 对象。 报表数据包含在 **报表对象的 content****属性中**。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 Edm.Stream 对象。
 
 ### <a name="csv"></a>CSV
 
-如果成功，请求 **content** 属性将返回响应，该响应会重定向到报告的预先验证的 `302 Found` 下载 URL。 可以在响应的 `Location` 头中找到此 URL。
+如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
 预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
 
@@ -87,7 +87,7 @@ CSV 文件包含下面的列标题：
 - 报表周期
 - Windows
 - Mac
-- 移动版
+- 移动设备
 - Web
 - Outlook
 - Word
@@ -107,12 +107,12 @@ CSV 文件包含下面的列标题：
 - PowerPoint (Mac) 
 - OneNote (Mac) 
 - Teams (Mac) 
-- Outlook (Mobile) 
-- Word (Mobile) 
-- Excel (Mobile) 
-- PowerPoint (Mobile) 
-- OneNote (Mobile) 
-- Teams (Mobile) 
+- Outlook (移动) 
+- Word (移动) 
+- Excel (移动) 
+- PowerPoint (移动) 
+- OneNote (移动) 
+- Teams (移动) 
 - Outlook (Web) 
 - Word (Web) 
 - Excel (Web) 
@@ -122,7 +122,7 @@ CSV 文件包含下面的列标题：
 
 ### <a name="json"></a>JSON
 
-如果成功，请求 **content** 属性在响应正文中返回 响应代码和 `200 OK` JSON 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 JSON 对象。
 
 此请求的默认页面大小为 200 个项目。
 
@@ -134,7 +134,7 @@ CSV 文件包含下面的列标题：
 
 #### <a name="request"></a>请求
 
-下面是请求获取 content 属性 **的示例** 。
+下面展示了示例请求。
 
 
 
@@ -145,7 +145,7 @@ CSV 文件包含下面的列标题：
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/content?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')?$format=text/csv
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercoundetail-csharp-snippets.md)]
@@ -200,7 +200,7 @@ Report Refresh Date,User Principal Name,Last Activation Date,Last Activity Date,
 
 #### <a name="request"></a>请求
 
-下面是请求获取 content 属性 **的示例** 。
+下面展示了示例请求。
 
 
 
@@ -211,7 +211,7 @@ Report Refresh Date,User Principal Name,Last Activation Date,Last Activity Date,
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/content?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')?$format=application/json
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercountdetail-csharp-snippets.md)]
@@ -251,7 +251,7 @@ Content-Type: application/json
 Content-Length: 951
 
 {
-  "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/content?$format=application/json&$skiptoken=AAAAA",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')?$format=application/json&$skiptoken=AAAAA",
   "value": [
     {
       "reportRefreshDate": "2020-06-30",

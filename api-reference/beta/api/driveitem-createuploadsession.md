@@ -5,12 +5,12 @@ title: driveItem：createUploadSession
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: d8f47342e11210024e8c07ea70971a68fd866a13
-ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
+ms.openlocfilehash: 19b48e78f2c568a6576a63a746d5514ff63e951f
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66141220"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577863"
 ---
 # <a name="driveitem-createuploadsession"></a>driveItem：createUploadSession
 
@@ -93,10 +93,10 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ## <a name="parameters"></a>参数
 
-| 参数            | 类型                          | 说明
-|:---------------------|:------------------------------|:---------------------------------
-| 项                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关正在上传的文件的数据
-| deferCommit          | 布尔值                       | 如果设置为 true，则需要发出显式请求才能在目标位置中进行文件的最终创建。仅在 OneDrive for Business 上。
+| 参数   | 类型                                                                           | 说明                                                                                           |
+|:------------|:-------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
+| deferCommit | 布尔值                                                                        | 如果设置为 `true`，最终在目标中创建文件将需要显式请求。 |
+| 项        | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关要上传的文件的数据。                                                                   |
 
 ### <a name="request"></a>请求
 

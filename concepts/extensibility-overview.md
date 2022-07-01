@@ -1,162 +1,507 @@
 ---
 title: 使用扩展向资源添加自定义数据
-description: Microsoft Graph 提供单一 API 终结点，以便用户能够通过大量资源（如 user 和 message）访问以人为中心的丰富数据和见解。 你还可以使用自己的应用程序数据扩展 Microsoft Graph。 无需使用外部数据存储，即可向 Microsoft Graph 资源添加自定义属性。
+description: 可以使用自己的应用程序数据扩展 Microsoft Graph。 无需使用外部数据存储，即可向 Microsoft Graph 资源添加自定义属性。
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1433de1b011f76bac8c1f0b0bda2dbbbdeebf288
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: fca4c70795f06007b7d51bfaa2ccad6968fd9d16
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821083"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554895"
 ---
-# <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
+# <a name="add-custom-properties-to-resources-using-extensions"></a>使用扩展向资源添加自定义属性
 
-Microsoft Graph 提供单一 API 终结点，以便用户能够通过大量资源（如 [user](/graph/api/resources/user) 和 [message](/graph/api/resources/message)）访问以人为中心的丰富数据和见解。 你还可以使用自己的应用程序数据扩展 Microsoft Graph。 无需使用外部数据存储，即可向 Microsoft Graph 资源添加自定义属性。
+Microsoft Graph 提供单个 API 终结点，以通过 [用户](/graph/api/resources/user) 和 [消息](/graph/api/resources/message) 等资源访问以人为本的丰富数据和见解。 还可以通过将自定义属性添加到资源实例来扩展 Microsoft Graph，而无需使用外部数据存储。
 
-例如，可能会决定扩展 **user** 资源，让应用处于轻量级水平，并将应用专属的用户配置文件数据存储在 Microsoft Graph 中。 或者，不妨保留应用的现有用户配置文件存储，并仅将应用专属的存储标识符添加到 **user** 资源。
+在本文中，我们将讨论 Microsoft Graph 如何支持扩展其资源、添加自定义属性的可用选项，以及何时使用它们。
 
-Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求的扩展类型：
+> [!IMPORTANT]
+> 请勿使用扩展存储敏感的个人身份信息，例如帐户凭据、政府标识号、持卡人数据、财务帐户数据、医疗保健信息或敏感的背景信息。
 
-- **开放扩展**：开发人员入门的良好方法。
-- **架构扩展**：对于那些关心存储类型化数据，使其架构可发现和可共享，能够进行筛选以及将来能够执行输入数据验证和授权的开发人员而言，这是一种更通用的机制。
+## <a name="why-add-custom-properties-to-microsoft-graph"></a>为什么要将自定义属性添加到 Microsoft Graph？
 
-> **重要说明：** 不能使用扩展存储敏感的个人身份信息，例如帐户凭据、政府标识号、持卡人数据、财务帐户数据、医疗保健信息或敏感的背景信息。
+> [!IMPORTANT]
+> 不应使用扩展存储敏感的个人身份信息，例如帐户凭据、政府标识号、持卡人数据、财务帐户数据、医疗保健信息或敏感的背景信息。
+* 作为 ISV 开发人员，你可能会决定通过扩展 **用户** 资源，让应用处于轻量级水平，并将特定于应用的用户配置文件数据存储在 Microsoft Graph 中。
+* 或者，你可能想要保留应用的现有用户配置文件存储，并将特定于应用的标识符添加到 **用户** 资源。
+* 作为企业开发人员，你生成的内部应用程序可能依赖于组织的 HR 特定数据。 可以通过将此数据存储在 Microsoft Graph 的自定义属性中来简化多个应用程序中的集成。
 
-## <a name="supported-resources"></a>支持的资源
+## <a name="custom-property-options-in-microsoft-graph"></a>Microsoft Graph 中的自定义属性选项
 
-下表列出了支持开放扩展和架构扩展的资源，并指明是处于正式版（GA - 在 v1.0 和 beta 终结点中均可用）阶段，还是处于预览版（仅在 beta 终结点中可用）阶段。
+Microsoft Graph 提供四种类型的扩展，用于添加自定义属性。
 
-|资源 |开放扩展 |架构扩展 |
-|:------- |:------ |:------ |
-| [管理单元](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) | 仅供预览 | 仅供预览 |
-| [日历事件](/graph/api/resources/event) | GA | GA |
-| [设备](/graph/api/resources/device) | GA | GA |
-| [组](/graph/api/resources/group) | GA | GA |
-| [组日历事件](/graph/api/resources/event) | GA | GA |
-| [组对话帖子](/graph/api/resources/post) | GA | GA |
-| [邮件](/graph/api/resources/message) | GA | GA |
-| [组织](/graph/api/resources/organization) | GA | GA |
-| [个人联系人](/graph/api/resources/contact)| GA | GA |
-| [用户](/graph/api/resources/user) | GA | GA |
-| [待办事项任务](/graph/api/resources/todotask) | GA | GA |
-| [待办事项任务列表](/graph/api/resources/todotasklist) | GA | GA |
+- 扩展属性特性
+- 目录 (Azure AD) 扩展
+- 架构扩展
+- 开放扩展
 
-使用工作或学校帐户登录时，可以对所有这些资源使用扩展。 此外，使用个人帐户登录时，可以对“**事件**”、“**帖子**”、“**组**”、“**邮件**”、“**联系人**”和“**用户**”资源使用扩展。
+### <a name="extension-attributes"></a>扩展属性
 
-## <a name="open-extensions"></a>开放扩展
+Azure AD 在 [用户](/graph/api/resources/onpremisesextensionattributes) 和 [设备](/graph/api/resources/onpremisesextensionattributes) 资源上提供一组 15 个具有预定义名称的自定义属性。 这些属性最初是在本地 Active Directory (AD) 和 Microsoft Exchange 中提供的自定义属性。 但现在其用途已不仅限于通过 Microsoft Graph 将本地 AD 和 Microsoft Exchange 数据同步到 Azure AD。
 
-[开放扩展](/graph/api/resources/opentypeextension)（以前称为 Office 365 数据扩展）是提供灵活方法将非类型化应用数据直接添加到资源实例的[开放类型](https://www.odata.org/getting-started/advanced-tutorial/#openType)。
+#### <a name="developer-experience"></a>开发者体验
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
+可以使用这 15 个属性分别通过 **onPremisesExtensionAttributes** 和 **extensionAttributes** 属性在 **用户** 或 **设备** 资源实例上存储字符串值。 在创建新资源实例或更新现有资源实例时，可以分配这些值。 还可以对它们进行筛选。
 
-开放扩展及其自定义数据可通过资源实例的 **extensions** 导航属性进行访问。
-**extensionName** 属性是开放扩展中的 _预定义_ 唯一可写属性。 创建开放扩展时，必须为 **extensionName** 属性分配在租户内唯一的名称。
+##### <a name="add-or-update-data-in-extension-attributes"></a>在扩展属性中添加或更新数据
 
-为此，一种方法是使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_。例如，`Com.Contoso.ContactInfo`。
+下面的示例演示如何使用 PATCH 方法通过更新操作将数据存储在 **extensionAttribute1** 中，以及如何从 **extensionAttribute12** 中删除现有数据。
 
-请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b
 
-可以在资源实例中[创建开放扩展](/graph/api/opentypeextension-post-opentypeextension)，并将自定义数据存储到其中，全都通过同一操作完成（请注意受支持的部分资源的[已知限制](known-issues.md#extensions)）。
+{
+    "onPremisesExtensionAttributes": {
+        "extensionAttribute1": "skypeId.adeleVance",
+        "extensionAttribute13": null
+    }
+}
+```
 
-随后可以[读取]（/graph/api/opentypeextension-get， [更新](/graph/api/opentypeextension-update)，或 [删除](/graph/api/opentypeextension-delete) 扩展及其数据。
+请求会返回 `204 No Content` 响应对象。
 
-开放扩展示例：[使用开放扩展向用户添加自定义数据](extensibility-open-users.md)
+##### <a name="retrieve-data-from-extension-attributes-1-15"></a>从扩展属性 1-15 中检索数据
 
-## <a name="schema-extensions"></a>架构扩展
+###### <a name="request"></a>请求
 
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,onPremisesExtensionAttributes
+```
 
-通过[架构扩展](/graph/api/resources/schemaextension)，可以定义一个架构，用来扩展资源类型。 首先，创建架构扩展定义。 然后，利用它通过强类型自定义数据扩展资源实例。 此外，还可以控制架构扩展的[状态](#schema-extensions-lifecycle)，让它可被其他应用发现。 相应地，这些应用可以对自己的数据使用此扩展，并在它的基础之上生成进一步的体验。
+###### <a name="response"></a>响应
 
+```http
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,onPremisesExtensionAttributes)",
+    "value": [
+        {
+            "id": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "displayName": "Adele Vance",
+            "onPremisesExtensionAttributes": {
+                "extensionAttribute1": "Contractor",
+                "extensionAttribute2": "50",
+                "extensionAttribute3": null,
+                "extensionAttribute4": "1478354",
+                "extensionAttribute5": "10239390",
+                "extensionAttribute6": null,
+                "extensionAttribute7": null,
+                "extensionAttribute8": null,
+                "extensionAttribute9": null,
+                "extensionAttribute10": "11",
+                "extensionAttribute11": null,
+                "extensionAttribute12": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF47SPDLT)/cn=Recipients/cn=5ee781fc7egc7aa0b9394bddb44e7f04-Adele Vance",
+                "extensionAttribute13": null,
+                "extensionAttribute14": null,
+                "extensionAttribute15": null
+            }
+        }
+    ]
+}
+```
+
+### <a name="directory-azure-ad-extensions"></a>目录 (Azure AD) 扩展
+
+[目录扩展](/graph/api/resources/extensionProperty) 为开发人员提供了针对目录对象的强类型、可发现和可筛选的扩展体验。
+
+目录扩展首先通过 [创建 extensionProperty](/graph/api/application-post-extensionproperty) 操作在应用程序上注册，并且必须明确针对特定目录对象。 在应用程序获得用户或管理员同意后，扩展属性将立即在租户中可以访问。 租户中的所有授权应用程序都可以读取和写入目标目录对象实例上定义的任何扩展属性上的数据。
+
+有关可指定为目录扩展目标对象的资源类型的列表，请参阅 [为应用程序选择扩展类型](#choose-an-extension-type-for-your-application)。
+
+#### <a name="developer-experience"></a>开发者体验
+
+目录扩展定义通过 [extensionProperty](/graph/api/resources/extensionproperty) 资源及其关联的方法进行管理。 数据通过用于管理资源实例的相同 REST 请求进行管理。
+
+##### <a name="create-a-directory-extension-definition"></a>创建目录扩展定义
+
+必须先创建目录扩展定义，然后才能将目录扩展添加到资源实例。
+
+###### <a name="request"></a>请求
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/applications/30a5435a-1871-485c-8c7b-65f69e287e7b/extensionProperties
+
+{
+    "name": "jobGroupTracker",
+    "dataType": "String",
+    "targetObjects": [
+        "User"
+    ]
+}
+```
+
+###### <a name="response"></a>响应
+
+使用遵循以下命名约定的扩展名创建名为 `extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker` 的目录扩展属性：*extension_{appId-without-hyphens}_{extensionProperty-name}*。
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications('30a5435a-1871-485c-8c7b-65f69e287e7b')/extensionProperties/$entity",
+    "id": "4e3dbc8f-ca32-41b4-825a-346215d7d20f",
+    "deletedDateTime": null,
+    "appDisplayName": "HR-sync-app",
+    "dataType": "String",
+    "isSyncedFromOnPremises": false,
+    "name": "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker",
+    "targetObjects": [
+        "User"
+    ]
+}
+```
+
+##### <a name="add-a-directory-extension-property-to-a-target-object"></a>将目录扩展属性添加到目标对象
+
+创建目录扩展定义后，现在可以将其添加到目标对象类型的实例。 创建目标对象的新实例或更新现有对象时，可以将数据存储在目录扩展属性中。 下面的示例演示如何在创建新的用户对象时将数据存储在目录扩展属性中。
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/users
+
+{
+    "accountEnabled": true,
+    "displayName": "Adele Vance",
+    "mailNickname": "AdeleV",
+    "userPrincipalName": "AdeleV@contoso.com",
+    "passwordProfile": {
+        "forceChangePasswordNextSignIn": false,
+        "password": "xWwvJ]6NMw+bWH-d"
+    },
+    "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker": "JobGroupN"
+}
+```
+
+请求会在响应正文中返回 `201 Created` 响应代码和 [用户](/graph/api/resources/user)对象。
+
+##### <a name="retrieve-a-directory-extension-property"></a>检索目录扩展属性
+
+下面的示例演示如何在资源实例上显示目录扩展属性和关联的数据。 默认情况下，将通过 `beta` 终结点返回扩展属性，但仅在 `$select` 时通过 `v1.0` 终结点返回。
+
+##### <a name="request"></a>请求
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$select=id,displayName,extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker,extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable
+```
+
+##### <a name="response"></a>响应
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker,extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable)",
+    "value": [
+        {
+            "id": "63384f56-42d2-4aa7-b1d6-b10c78f143a2",
+            "displayName": "Adele Vance",
+            "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker": "E4",
+            "extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable": true
+        }
+    ]
+}
+```
+
+##### <a name="update-or-delete-directory-extension-properties"></a>更新或删除目录扩展属性
+
+要更新或删除资源实例的目录扩展属性的值，请使用 PATCH 方法。 要从资源实例中删除扩展属性及其关联值，请将其值设置为 `null`。
+
+以下请求会更新一个目录扩展属性的值并删除另一个扩展属性。
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/users/63384f56-42d2-4aa7-b1d6-b10c78f143a2
+
+{
+    "extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable": null,
+    "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker": "E4"
+}
+```
+
+请求会返回 `204 No Content` 响应代码。
+
+### <a name="schema-extensions"></a>架构扩展
+
+[Microsoft Graph 架构扩展](/graph/api/resources/schemaextension) 在概念上类似于目录扩展。 首先，创建架构扩展定义。 然后，使用它来扩展具有强类型自定义属性的受支持资源实例。 此外，还可以控制架构扩展的[状态](/graph/api/resources/schemaextension#schema-extensions-lifecycle)，让它可被其他应用发现。
+
+有关支持架构扩展的资源类型的列表，请参阅 [为应用程序选择扩展类型](#choose-an-extension-type-for-your-application)。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
 
+#### <a name="developer-experience"></a>开发者体验
+
 在创建架构扩展定义时，你必须提供其 **id** 的唯一名称。提供两个命名选项：
 
-- 如果已有通过租户验证的 `.com`、`.net`、`.gov`、`.edu` 或 `.org` 域，可以使用域名和架构名称定义唯一名称，格式如下：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 例如，如果虚域是 contoso.com，可以定义 `contoso_mySchema` 的 **id**。 此为首选项。
-- 如果没有验证的虚域，则可以只设置架构名称的 **id**（不带域名称前缀），例如，`mySchema`。根据所提供的名称，Microsoft Graph 将为你分配一个字符串 ID，采用以下格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如，`extkvbmkofy_mySchema`。
+- 如果已有通过租户验证的 `.com`、`.net`、`.gov`、`.edu` 或 `.org` 虚域，则可以使用域名和架构名称来定义唯一名称，格式如下：*{domainName}* _ *{schemaName}*。 例如，如果虚域为 `contoso.com`，则可以定义 `contoso_mySchema` 的 **ID**。 强烈建议使用此选项。
+- 如果没有经过验证的虚域，则可以将 **ID** 设置为架构名称（不带域名前缀）。 例如，`mySchema`。 根据所提供的名称，Microsoft Graph 将为你分配一个字符串 ID，采用以下格式：`ext{8-random-alphanumeric-chars}_{schema-name}`。 例如，`extkvbmkofy_mySchema`。
 
-可以看到，在 **id** 中此唯一名称用作复杂类型名称，复杂类型将在扩展的资源实例上存储自定义数据。
+**ID** 将是将数据存储在扩展资源实例上的复杂类型的名称。
 
-与开放类型不同，管理架构扩展定义（[列出](/graph/api/schemaextension-list)、[创建](/graph/api/schemaextension-post-schemaextensions)、[获取](/graph/api/schemaextension-get)、[更新](/graph/api/schemaextension-update)及[删除](/graph/api/schemaextension-delete)）和管理其数据（添加、获取、更新及删除数据）是独立的 API 操作集。
+注册架构扩展后，可以由与关联的所有者应用程序位于同一租户中的所有应用程序（处于 `InDevelopment` 状态）或任何租户中的所有应用程序（处于 `Available` 状态时）使用。 与目录扩展一样，授权应用可以读取和写入目标对象上定义的任何扩展上的数据。
 
-由于架构扩展可以在目标资源实例中作为复杂类型进行访问，因此可以使用下列方法，对架构扩展中的自定义数据执行 CRUD 操作：
+与开放扩展不同，可将扩展资源实例上的 [架构扩展定义](/graph/api/resources/schemaextension) 及其数据作为单独的 API 操作集进行管理。 要管理扩展资源实例上的架构扩展数据，请使用你用于管理资源实例的同一 REST 请求。
 
-- 资源 `POST` 方法可用于在新建资源实例时指定自定义数据。 请注意，**contact**、**event**、**message** 和 **post** 资源存在一个 [已知问题](known-issues.md#unable-to-create-a-resource-instance-and-add-schema-extension-data-at-the-same-time)，即需要使用 `PATCH` 操作创建架构扩展。
-- 资源 `GET` 方法可用于读取自定义数据。
-- 使用资源 `PATCH` 方法添加或更新现有资源实例中的自定义数据。
-- 使用资源 `PATCH` 方法将复杂类型设置为 NULL，以删除资源实例中的自定义数据。
+##### <a name="create-a-schema-extension-definition"></a>创建架构扩展定义
 
-架构扩展示例：[使用架构扩展向组添加自定义数据](extensibility-schema-groups.md)
+###### <a name="request"></a>请求
 
-### <a name="schema-extensions-lifecycle"></a>架构扩展生命周期
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/schemaExtensions
 
-当应用创建架构扩展定义时，系统会将该应用标记为该架构扩展的所有者。
+{
+    "id": "graphLearnCourses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "user"
+    ],
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
 
-所有者应用可以在 **状态** 属性上使用 PATCH 操作将扩展转换为生命周期中的不同状态。基于当前状态，所有者应用可以更新或删除扩展。架构扩展的任何更新始终只能累加且不能间断。
+###### <a name="response"></a>响应
 
-|状态 |生命周期状态行为 |
-|:-------------|:------------|
-| InDevelopment | <ul><li>创建后的初始状态。所有者应用仍然在开发架构扩展。 </li><li>在此状态下，在所有者应用注册的同一目录中的任何应用程序可以使用此架构定义扩展资源实例（前提是该应用对资源拥有权限）。 </li><li>仅所有者应用可以使用增量更改来更新扩展定义或将其删除。 </li><li>所有者应用可以将扩展状态从 **开发中** 更改为 **可用**。</li></ul> |
-| 可用 | <ul><li>架构扩展可供任意租户中的所有应用使用。 </li><li>所有者应用将扩展设置为“可用”后，任何应用只需将自定义数据添加到扩展中指定的资源类型实例即可（只要应用拥有对相应资源的权限）。 新建实例或更新现有实例时，应用可以分配自定义数据。 </li><li>只有所有者应用，才能使用增量更改更新扩展定义。 任何应用都无法删除这种状态下的扩展定义。 </li><li>所有者应用可以将架构扩展状态从“可用”更改为“已弃用”。</li></ul> |
-| 不推荐使用 | <ul><li>架构扩展定义不再可供读取或修改。 </li><li>任何应用都无法查看、更新、添加新属性或删除扩展。 </li><li>但是应用仍可读取、更新或删除现有扩展 _属性值_。 </li></ul> |
+```http
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#schemaExtensions/$entity",
+    "id": "extkmpdyld2_graphLearnCourses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "user"
+    ],
+    "status": "InDevelopment",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
 
-> **注意：** 其他开发人员从其他租户创建的架构扩展定义（标记为 `Available`）对所有开发人员可见（通过列出所有架构扩展）。 这不同于仅返回租户特定数据的其他 API。 另一方面，基于架构扩展定义创建的扩展数据是特定于租户的，并且只能由被显式授予权限的应用访问。 
+##### <a name="add-a-schema-extension-to-a-resource-instance"></a>将架构扩展添加到资源实例
 
-### <a name="supported-property-data-types"></a>受支持的属性数据类型
+创建架构扩展定义后，现在可以将扩展属性添加到目标对象类型的实例。 在创建目标对象的新实例或更新现有对象时，可以将数据存储在架构扩展中。 下面的示例演示如何在创建新的用户对象时将数据存储在架构扩展属性中。
 
-在架构扩展中定义属性时，支持以下数据类型：
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/users/
 
-| 属性类型 | 备注 |
-|:-------------|:------------|
-| Binary | 最多 256 字节。 |
-| Boolean | 不支持消息、活动和帖子。 |
-| 日期时间 | 必须以 ISO 8601 格式进行指定。存储为 UTC 格式。 |
-| 整数 | 32 位值。不支持消息、活动和帖子。 |
-| 字符串 | 最多 256 个字符。 |
+{
+    "accountEnabled": true,
+    "displayName": "Adele Vance",
+    "mailNickname": "AdeleV",
+    "userPrincipalName": "AdeleV@m365x72712789.onmicrosoft.com",
+    "passwordProfile": {
+        "forceChangePasswordNextSignIn": false,
+        "password": "xWwvJ]6NMw+bWH-d"
+    },
+    "extkmpdyld2_graphLearnCourses": {
+        "courseId": 100,
+        "courseName": "Explore Microsoft Graph",
+        "courseType": "Online"
+    }
+}
+```
 
-> **注意：** 不支持多值属性。
+请求会在响应正文中返回 `201 Created` 响应代码和 [schemaExtension](/graph/api/resources/schemaextension) 对象
 
-### <a name="azure-ad-directory-schema-extensions"></a>Azure AD 目录架构扩展
+##### <a name="update-or-delete-a-schema-extension-property"></a>更新或删除架构扩展属性
 
-Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/resources/directoryobject) 资源中称其为 [目录架构扩展](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)。你可以使用 Microsoft Graph API 来管理 [扩展属性定义](/graph/api/resources/extensionproperty)以及添加、获取、更新和删除这些扩展的属性中的 _数据_。
+使用 PATCH 操作更新架构扩展属性或删除现有架构扩展对象。 要从资源实例中删除扩展属性及其关联值，请将其值设置为 `null`。
 
-## <a name="permissions"></a>Permissions
+以下示例删除 **courseId** 属性的值并更新 **courseType** 属性。 要完整删除 `extkmpdyld2_graphLearnCourses` 扩展属性，请将其值设置为 `null`。
 
-还需要对特定资源执行读取或写入操作所需的相同[权限](./permissions-reference.md)，才能对相应资源上的任意扩展数据执行读取或写入操作。 例如，必须向应用授予 *User.ReadWrite.All* 权限，应用才能使用自定义应用数据更新登录用户配置文件。
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e
 
-此外，必须向应用授予 *Directory.AccessAsUser.All* 权限，才能创建和管理架构扩展定义。
+{
+    "extkmpdyld2_graphLearnCourses": {
+        "courseType": "Instructor-led",
+        "courseId": null
+    }
+}
+```
 
-## <a name="data-limits"></a>数据限制
+请求会返回 `204 No Content` 响应对象。
 
-### <a name="open-extension-limits"></a>开放扩展限制
+##### <a name="retrieve-the-schema-extension-property"></a>检索架构扩展属性
 
-以下限制适用于目录资源（**用户**、 **组**、 **设备**、 **administrativeUnit**、 **组织**）：
+要读取资源实例上的架构扩展属性，请在 `$select` 请求中指定扩展名。
 
-- 每个开放扩展最多可以包含 2KB 数据（包括扩展定义本身）。
-- 应用最多可以为每个资源实例添加两个开放扩展。
+###### <a name="request"></a>请求
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e?$select=id,displayName,extkmpdyld2_graphLearnCourses
+```
 
-以下限制将应用于 Outlook 资源（如“**邮件**”、“**事件**”和“**联系人**”）：
+###### <a name="response"></a>响应
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 
-- 每个开放扩展存储在 [MAPI 命名的属性](/office/client-developer/outlook/mapi/mapi-named-properties)中，这是用户邮箱中的有限资源。 如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/opentypeextension)。
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,extkmpdyld2_graphLearnCourses)/$entity",
+    "id": "63384f56-42d2-4aa7-b1d6-b10c78f143a2",
+    "displayName": "Adele Vance",
+    "extkmpdyld2_graphLearnCourses": {
+        "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+        "courseType": "Instructor-led",
+        "courseName": "Explore Microsoft Graph",
+        "courseId": null
+    }
+}
+```
 
-### <a name="schema-extension-limits"></a>架构扩展限制
+有关如何使用架构扩展添加自定义属性和关联数据的详细信息，请参阅 [schemaExtension 资源类型](/graph/api/resources/schemextension) 和 [使用架构扩展将自定义属性添加到组](extensibility-schema-groups.md)。
 
-应用程序最多可以创建五个 **架构扩展** 定义。
+### <a name="open-extensions"></a>开放扩展
+
+[Microsoft Graph 开放扩展](/graph/api/resources/opentypeextension) 是 [开放类型](https://www.odata.org/getting-started/advanced-tutorial/#openType) ，可提供一种简单灵活的方式将非类型化数据直接添加到资源实例。 这些扩展不是强类型、可发现或可筛选的。
+
+有关支持 Microsoft Graph 开放扩展的资源类型的列表，请参阅 [为应用程序选择扩展类型](#choose-an-extension-type-for-your-application)。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
+
+#### <a name="developer-experience"></a>开发者体验
+
+可通过资源实例的 **扩展** 导航属性访问开放扩展及其数据。 使用这些属性，可以对相关属性进行分组，以实现更轻松的访问和管理。
+
+**extensionName** 属性是开放扩展中的 *预定义* 唯一可写属性。 创建开放扩展时，必须为 **extensionName** 属性分配在租户内唯一的名称。 为此，一种方法是使用反向域名系统 (DNS) 格式，此格式依赖 *用户自己的域*。例如，`Com.Contoso.ContactInfo`。 **不要在扩展名中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）**。
+
+##### <a name="create-an-open-extension"></a>创建开放扩展
+
+下面的示例演示了一个具有三个属性的开放扩展定义，以及如何在资源实例上显示自定义属性和关联数据。
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions
+
+{
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "extensionName": "com.contoso.socialSettings",
+    "skypeId": "skypeId.AdeleV",
+    "linkedInProfile": "www.linkedin.com/in/testlinkedinprofile",
+    "xboxGamerTag": "AwesomeAdele",
+    "id": "com.contoso.socialSettings"
+}
+```
+
+请求会在响应正文中返回 `201 Created` 响应代码和 [openTypeExtension](/graph/api/resources/opentypeextension) 对象。
+
+##### <a name="update-an-existing-open-extension"></a>更新现有开放扩展
+
+要更新开放扩展，必须在请求正文中指定其所有属性。 否则，未指定的属性将更新为 `null` 并从开放扩展中删除。
+
+以下请求仅指定 **linkedInProfile** 和 **xboxGamerTag** 属性。 **xboxGamerTag** 属性的值正在更新，而 **linkedInProfile** 属性将保持不变。 此请求还会删除未指定的 **skypeId** 属性。
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions/com.contoso.socialSettings
+
+{
+    "xboxGamerTag": "FierceAdele",
+    "linkedInProfile": "www.linkedin.com/in/testlinkedinprofile"
+}
+```
+此请求会返回 `204 No Content` 响应代码。
+
+
+##### <a name="retrieve-the-open-extensions"></a>检索开放扩展
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions/com.contoso.socialSettings
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('3fbd929d-8c56-4462-851e-0eb9a7b3a2a5')/extensions/$entity",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "xboxGamerTag": "FierceAdele",
+    "linkedInProfile": "www.linkedin.com/in/testlinkedinprofile",
+    "id": "com.contoso.socialSettings"
+}
+```
+
+有关如何使用开放扩展添加自定义属性和关联数据的详细信息，请参阅 [openTypeExtension 资源类型](/graph/api/resources/opentypeextension) 和 [使用开放扩展将自定义属性添加到用户](extensibility-open-users.md)。
+
+## <a name="choose-an-extension-type-for-your-application"></a>为应用程序选择扩展类型
+
+下表对扩展类型进行了对比和比较，这应有助于确定最适合你的方案的选项。
+
+| 功能 | 扩展属性 1-15 | 目录扩展 | 架构扩展 | 开放扩展 |
+|--|--|--|--|--|
+| 支持的资源类型 | [user][] <br/>[设备][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [application][] <br/>[设备][] <br/> [组织][] | [用户][] <br/> [group][] [administrativeUnit][] <br/> [联系人][] <br/> [设备][] <br/> [事件][]（用户和组日历） <br/> [邮件][] <br/> [组织][] <br/> [帖子][] <br/> [todoTask][] <br/> [todoTaskList][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [联系人][] <br/> [设备][] <br/> [事件][] <sup>1</sup>（用户和组日历） <br/> [邮件][] <br/> [组织][] <br/> [帖子][] |
+| 强类型 | 否 | 是 | 是 | 否 |
+| Filterable | 是 | 是 | 是 | 否 |
+| 管理方式 | Microsoft Graph <br/> Exchange 管理中心 | Microsoft Graph | Microsoft Graph | Microsoft Graph |
+| 使用 [AD Connect][] 将数据从本地同步到扩展 | 是，对于用户 | [是][ADConnect-YES] | 否 | 否 |
+| 使用自定义扩展属性和数据创建 [动态成员资格规则][]  | [是][DynamicMembership-YES] | [是][DynamicMembership-YES] | 否 | 否 |
+| 可用于自定义令牌声明 | 是 | [是][DirectoryExt-CustomClaims] | 否 | 否 |
+| 在 Azure AD B2C 中提供 | 是 | [是][B2CDirectoryExt] | 是 | 是 |
+| 限制 | <li>每个用户或设备资源实例 15 个预定义属性 | <li>每个资源实例 100 个扩展值 | <li>每个所有者应用最多五个定义 <br/><li> 每个资源实例 100 个扩展值（仅限目录对象） | <li>每个资源实例每个创建者应用两个开放扩展<sup>2</sup> <br/><li> 最大 每个开放扩展 2Kb <sup>2</sup><li> 对于 Outlook 资源，每个开放扩展都存储在 [MAPI 命名属性][MAPI-named-property]<sup>3</sup> 中 |
+
+
+> [!NOTE]
+> 
+> <sup>1</sup> 由于现有的服务限制，代理无法在共享邮箱日历中创建已追加开放扩展的事件。 尝试这样做将导致 `ErrorAccessDenied` 响应。
+>
+> <sup>2</sup> 对开放扩展的这些限制适用于以下目录资源：**用户**、**组**、**设备**， <!--**administrativeUnit**,--> 以及 **组织**。
+>
+> <sup>3</sup> 每个 [开放扩展](/graph/api/resources/opentypeextension) 都存储在 [MAPI 命名属性](/office/client-developer/outlook/mapi/mapi-named-properties) 中，该属性是用户邮箱中的有限资源。 此限制适用于以下 Outlook 资源：**邮件**、**事件** 和 **联系人**
+>
+> 使用工作或学校帐户登录时，可以管理所有扩展。 此外，使用个人 Microsoft 帐户登录时，可以管理以下资源的开放扩展：**事件**、**帖子**、**组**、**消息**、**联系人** 和 **用户**。
+
+## <a name="permissions"></a>权限
+
+还需要对特定资源执行读取或写入操作所需的相同[权限](./permissions-reference.md)，才能对相应资源上的任意扩展数据执行读取或写入操作。 例如，要让应用使用自定义应用数据更新任何用户的配置文件，必须已向应用授予 *User.ReadWrite.All* 权限。
 
 ## <a name="known-limitations"></a>已知限制
 
 有关使用扩展的已知限制，请参阅已知问题文章中的[扩展部分](known-issues.md#extensions)。
 
-## <a name="extension-examples"></a>扩展示例
-
-- [使用开放扩展向用户添加自定义数据](extensibility-open-users.md)
-
-- [使用架构扩展向组添加自定义数据](extensibility-schema-groups.md)
-
 ## <a name="see-also"></a>另请参阅
 
+- [使用开放扩展向用户添加自定义属性](extensibility-open-users.md)
+- [使用架构扩展向组添加自定义属性](extensibility-schema-groups.md)
 - [Microsoft 365 域](/office365/servicedescriptions/office-365-platform-service-description/domains)
-
 - [为 Microsoft 365 租户添加和验证域](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+
+
+<!-- Links -->
+
+[user]: /graph/api/resources/user
+[group]: /graph/api/resources/group
+[contact]: /graph/api/resources/contact
+[administrativeUnit]: /graph/api/resources/administrativeunit
+[application]: /graph/api/resources/application
+[设备]: /graph/api/resources/device
+[事件]: /graph/api/resources/event
+[邮件]: /graph/api/resources/message
+[组织]: /graph/api/resources/organization
+[帖子]: /graph/api/resources/post
+[todoTask]: /graph/api/resources/todotask
+[todoTaskList]: /graph/api/resources/todotasklist
+[servicePrincipal]: /graph/api/resources/serviceprincipal
+[AD connect]: /azure/active-directory/hybrid/whatis-hybrid-identity?context=/azure/active-directory/enterprise-users/context/ugr-context
+[ADConnect-YES]: /azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions
+[动态成员资格规则]: /azure/active-directory/enterprise-users/groups-dynamic-membership
+[DynamicMembership-YES]: /azure/active-directory/enterprise-users/groups-dynamic-membership#extension-properties-and-custom-extension-properties
+[DirectoryExt-CustomClaims]: /azure/active-directory/develop/active-directory-optional-claims#configuring-directory-extension-optional-claims
+[B2CDirectoryExt]: /azure/active-directory-b2c/user-profile-attributes#extension-attributes
+[MAPI-named-property]: /office/client-developer/outlook/mapi/mapi-named-properties

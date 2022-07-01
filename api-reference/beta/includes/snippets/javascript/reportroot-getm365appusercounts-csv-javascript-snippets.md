@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 94323bc06e9bb72df22a9e4cb0f2232071ef3467
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 456a04e988af5fea194a014b54d1fee679c08f4e
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50793997"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577943"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let stream = await client.api('/reports/getM365AppUserCounts(period='D7')/content')
+let stream = await client.api('/reports/getM365AppUserCounts(period='D7')')
     .version('beta')
     .get();
 

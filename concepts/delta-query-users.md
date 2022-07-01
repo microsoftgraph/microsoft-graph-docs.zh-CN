@@ -1,15 +1,15 @@
 ---
 title: 获取用户的增量更改
-description: Microsoft Graph中的增量查询可用于查询支持的资源的添加、删除或更新。 它通过一系列增量请求启用。 对于用户，增量查询使你可以发现更改，而无需提取用户组来比较更改。
+description: 使用增量查询可以发现更改，而无需提取整个用户组来比较更改。 示例演示了一系列跟踪用户更改的请求。
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: d03762372a789d76d3f38121da47d662e281b2f2
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 907d45aeddef86b0dbb5a30bc06b207a883e7eba
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247222"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554888"
 ---
 # <a name="get-incremental-changes-for-users"></a>获取用户的增量更改
 
@@ -24,7 +24,7 @@ Microsoft Graph中的 [增量查询](./delta-query-overview.md)，可用于查�
 - **delta** 函数。
 - 上一个 GET **delta** 函数调用的 [状态令牌](./delta-query-overview.md)（_deltaToken_ 或 _skipToken_）。
 
-## <a name="example-to-track-changes-to-users"></a>跟踪用户更改的示例
+## <a name="example-track-changes-to-users"></a>示例：跟踪用户更改
 
 下面的示例演示了一系列跟踪用户更改的请求:
 
@@ -43,7 +43,7 @@ Microsoft Graph中的 [增量查询](./delta-query-overview.md)，可用于查�
 
 若要跟踪用户资源中的更改，请发出请求，并将 **增量** 函数作为 URL 段。
 
-记下以下各项:
+记下以下各项：
 
 - 请求中包含可选的 `$select` 查询参数，以演示如何在以后的请求中自动包含查询参数。
 - 初始请求不包括状态令牌。状态令牌将用于后续请求中。
@@ -189,7 +189,8 @@ Content-type: application/json
 
 如果发生更改，则包含已更改用户对象的集合。 响应还包含 `@odata.nextLink` 或 `@odata.deltaLink`（如果要检索多个更改页面）。 实现遵循 `@odata.nextLink` 的相同模式，并为将来的调用保留最终 `@odata.deltaLink`。
 
->**注意：** 此请求可能对最近创建、更新或删除的用户具有复制延迟。 请在一段时间后重试 `@odata.nextLink` 或 `@odata.deltaLink` 以检索最新更改。
+> [!NOTE]
+> 此请求可能对最近创建、更新或删除的组具有复制延迟。 请在一段时间后重试 `@odata.nextLink` 或 `@odata.deltaLink` 以检索最新更改。
 
 ```http
 HTTP/1.1 200 OK
@@ -216,4 +217,5 @@ Content-type: application/json
 ```
 
 ## <a name="see-also"></a>另请参阅
-+ [Microsoft Graph delta 查询](delta-query-overview.md)概述。
+
+- [Microsoft Graph delta 查询](delta-query-overview.md)概述。

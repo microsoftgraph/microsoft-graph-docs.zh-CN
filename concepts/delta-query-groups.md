@@ -1,15 +1,15 @@
 ---
 title: 获取组的增量更改
-description: Microsoft Graph中的增量查询可用于查询支持的资源的添加、删除或更新。 它通过一系列增量请求启用。 对于组，增量查询使你可以发现更改，而无需提取整组来比较更改。
+description: 使用增量查询可以发现更改，而无需提取整个组集来比较更改。 示例演示了一系列跟踪组更改的请求。
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8873c45f8cbd052eeff23b3131fcdb9284a33539
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 63ac88b147b2a10d27bb93c5b61e332e33b8153a
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246725"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555714"
 ---
 # <a name="get-incremental-changes-for-groups"></a>获取组的增量更改
 
@@ -24,15 +24,7 @@ Microsoft Graph中的[增量查询](./delta-query-overview.md)，可用于查询
 - **delta** 函数。
 - 上一个 GET **delta** 函数调用的 [状态令牌](./delta-query-overview.md)（_deltaToken_ 或 _skipToken_）。
 
-## <a name="example-to-track-changes-to-groups"></a>跟踪组更改的示例
-
-以下示例显示跟踪组更改的一系列请求：
-
-1. [初始请求](#initial-request)和[响应](#initial-response)
-2. [nextLink 请求](#nextlink-request)和[响应](#nextlink-response)
-3. [最终 nextLink 请求](#final-nextlink-request)和[响应](#final-nextlink-response)
-4. [deltaLink 请求](#deltalink-request)和 [deltaLink 响应](#deltalink-response)
-
+## <a name="example-track-changes-to-groups"></a>示例：跟踪组更改
 
 下面的示例演示了一系列跟踪组更改的请求：
 
@@ -99,7 +91,8 @@ Content-type: application/json
 }
 ```
 
->**注意：** " `members@delta` "属性包含在第一个组对象（ **"所有公司"** ）中，并且包含该组的两个当前成员。 **sg-HR** 不包含该属性，因为该组没有任何成员。
+> [!NOTE]
+> `members@delta` 属性包含在第一个组对象（**所有公司**）中，并且包含该组的两个当前成员。 **sg-HR** 不包含该属性，因为该组没有任何成员。
 
 ### <a name="nextlink-request"></a>nextLink 请求
 
@@ -214,7 +207,8 @@ Content-type: application/json
 
 如果发生更改，则包含已更改组的集合。 响应还包含 `@odata.nextLink` 或 `@odata.deltaLink`（如果要检索多个更改页面）。 实现遵循 `@odata.nextLink` 的相同模式，并为将来的调用保留最终 `@odata.deltaLink`。
 
->**注意：** 此请求可能对最近创建、更新或删除的组具有复制延迟。 请在一段时间后重试 `@odata.nextLink` 或 `@odata.deltaLink`以检索最新更改。
+> [!NOTE]
+> 此请求可能对最近创建、更新或删除的组具有复制延迟。 请在一段时间后重试 `@odata.nextLink` 或 `@odata.deltaLink` 以检索最新更改。
 
 ```http
 HTTP/1.1 200 OK
@@ -246,7 +240,7 @@ Content-type: application/json
 }
 ```
 
-上面示例响应的一些注意事项如下：
+上一个示例响应的一些注意事项如下：
 
 - 这些对象连同一组相同的属性一起返回，这些属性最初通过 `$select` 查询参数指定。
 
@@ -262,7 +256,8 @@ Content-type: application/json
 
 默认情况下，当未指定`$select`查询参数或显式指定`$select=members`参数时，`members@delta` 属性包含在组对象中。 对于具有多个成员的组，可能所有成员都无法适应单个响应。 实现以下模式来处理此类情况。
 
->**注意：** 此模式既适用于组状态的初始检索，也适用于后续调用，以获取增量更改。
+> [!NOTE]
+> 此模式既适用于组状态的初始检索，也适用于获取增量更改的后续调用。
 
 假设运行以下增量查询 - 捕获组的初始完整状态，或稍后获取增量更改：
 

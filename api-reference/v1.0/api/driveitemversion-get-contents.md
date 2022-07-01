@@ -5,18 +5,21 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: c8f080ab1893ea520f4e2094e914356ce71010b6
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 06d2b8be235175cd913c10c61e86c54a9585863b
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094658"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577740"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>下载 driveItemVersion 资源的内容
 
 命名空间：microsoft.graph
 
 检索 [driveItem](../resources/driveitem.md) 的特定版本的内容。
+
+>**注意：** 不支持获取当前版本的内容。 为此，请使用 [“下载 driveItem”方法的内容](driveitem-get-content.md) 。
+
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +56,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 
 本示例检索当前用户驱动器中的文件版本。
 
-### <a name="http-request"></a>HTTP 请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)

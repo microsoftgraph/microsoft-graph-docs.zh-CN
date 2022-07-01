@@ -1,21 +1,21 @@
 ---
-title: 配置应用注册所需的 Azure AD Graph权限
-description: 配置应用注册所需的 Azure AD Graph权限。
+title: 为应用注册配置所需的 Azure AD Graph 权限
+description: 在停用 Azure AD Graph 之前，可以使用这些选项配置应用注册所需的权限。
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 4f8b41a6b667377f5e8e2129698a473c75e7ad2b
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 76b80177954f4045ad74343e0cc1df018ec71848
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461525"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577894"
 ---
-# <a name="configure-required-azure-ad-graph-permissions-for-an-app-registration"></a>配置应用注册所需的 Azure AD Graph权限
+# <a name="configure-required-azure-ad-graph-permissions-for-an-app-registration"></a>为应用注册配置所需的 Azure AD Graph 权限
 
-Azure Active Directory (Azure AD) Graph已弃用，并将于近期停用。 作为此弃用路径的一部分，现在已禁用通过Azure 门户向应用注册添加 Azure AD Graph权限。 建议按照[应用迁移计划清单](migrate-azure-ad-graph-planning-checklist.md)操作，帮助你将应用转换为 [Microsoft Graph](/graph/overview) API。
+Azure Active Directory (Azure AD) Graph 已弃用，将于近期停用。 作为此弃用路径的一部分，现在已禁用通过Azure 门户向应用注册添加 Azure AD Graph 权限。 建议按照 [应用迁移计划清单](migrate-azure-ad-graph-planning-checklist.md) 操作，帮助你将应用转换为 [Microsoft Graph](/graph/overview) API。
 
-但是，应用可能仍暂时需要 Azure AD Graph访问资源的权限。 本文介绍配置应用注册所需的 Azure AD Graph权限的以下四种方法：
+但是，应用可能仍暂时需要 Azure AD Graph 权限才能访问资源。 本文介绍配置应用注册所需的 Azure AD Graph 权限的以下四种方法：
 
 1. [使用Azure 门户查找组织使用的 API](#option-1-use-the-azure-portal-to-find-the-apis-your-organization-uses)
 1. [更新Azure 门户上的应用程序清单](#option-2-update-the-application-manifest-on-the-azure-portal)
@@ -23,38 +23,38 @@ Azure Active Directory (Azure AD) Graph已弃用，并将于近期停用。 作�
 1. [使用 Microsoft Graph PowerShell SDK](#option-4-use-the-microsoft-graph-powershell-sdk)
 
 > [!CAUTION]
-> 在 Azure AD 图形 API停用后，使用 Azure AD Graph的任何应用仍将停止运行。 有关详细信息，请参阅[将 Azure AD Graph应用迁移到 Microsoft Graph](migrate-azure-ad-graph-overview.md)。
+> 在 Azure AD 图形 API停用后，使用 Azure AD Graph 的任何应用仍将停止运行。 有关详细信息，请参阅 [将 Azure AD Graph 应用迁移到 Microsoft Graph](migrate-azure-ad-graph-overview.md)。
 
 ## <a name="option-1-use-the-azure-portal-to-find-the-apis-your-organization-uses"></a>选项 1：使用Azure 门户查找组织使用的 API
 
 1. 以全局管理员或应用程序管理员身份登录到[Azure 门户](https://portal.azure.com)。
 1. 搜索并选择 **Azure Active Directory**。
 1. 在“**管理**”之下，选择“**应用注册**”。
-1. 在 **应用注册** 窗口的“**所有应用程序**”选项卡下，选择要为其添加 Azure AD Graph权限的应用。 这将打开应用注册的 **“概述** ”窗格。
+1. 在 **应用注册** 窗口的“**所有应用程序**”选项卡下，选择要为其添加 Azure AD Graph 权限的应用。 这将打开应用注册的 **“概述** ”窗格。
 1. 在窗口的左窗格的“ **管理** ”菜单组下，选择 **API 权限**。 这会显示应用注册 **的配置权限** 。 选择“**添加权限**”。
-1. 在显示的 **“请求 API 权限** ”窗口中，切换到 **组织使用的 API** 选项卡并搜索 `Windows Azure Active Directory` 或 `00000002-0000-0000-c000-000000000000`搜索。 从筛选列表中选择以显示 **Azure Active Directory Graph** 权限窗口。
+1. 在显示的 **“请求 API 权限** ”窗口中，切换到 **组织使用的 API** 选项卡并搜索 `Windows Azure Active Directory` 或 `00000002-0000-0000-c000-000000000000`搜索。 从筛选的列表中选择以显示 **Azure Active Directory Graph** 权限窗口。
 
-    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AzureADGraphPermissionsAPI.png" alt-text="Azure AD 图形 API由 Windows Azure Active Directory 和 clientID 000000002-0000-0000-c000-00000000000000 标识。" border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AzureADGraphPermissionsAPI.png" alt-text="Azure AD 图形 API由 Windows Azure Active Directory 和 clientID 000000002-0000-0000-c000-000000000000000 标识。" border="true":::
 
 1. 选择 **“委派权限** ”或 **“应用程序权限”** 选项卡，分别从委派权限和应用程序权限中进行选择。 选择 **“添加权限** ”以将权限添加到应用注册。
-1. 添加所需的权限后，回到 **“配置的权限**”窗口中，选择 **“授予管理员许可**”以向应用注册授予 Azure AD Graph权限。
+1. 添加所需的权限后，返回到 **“配置的权限** ”窗口中，选择 **“授予管理员许可** ”以向应用注册授予 Azure AD Graph 权限。
 
 ## <a name="option-2-update-the-application-manifest-on-the-azure-portal"></a>选项 2：更新Azure 门户上的应用程序清单
 
 1. 以全局管理员或应用程序管理员身份登录到[Azure 门户](https://portal.azure.com)。
 1. 搜索并选择 **Azure Active Directory**。
 1. 在“**管理**”之下，选择“**应用注册**”。
-1. 在 **应用注册** 窗口的“**所有应用程序**”选项卡下，选择要为其添加 Azure AD Graph权限的应用。 这将打开应用注册的 **“概述** ”窗格。
+1. 在 **应用注册** 窗口的“**所有应用程序**”选项卡下，选择要为其添加 Azure AD Graph 权限的应用。 这将打开应用注册的 **“概述** ”窗格。
 1. 在窗口的左窗格的“ **管理** ”菜单组下，选择 **“清单**”。 这将打开一个编辑器，允许你直接编辑应用注册对象的属性。
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppRegistrationManifest.png" alt-text="应用注册清单文件允许编辑应用程序的属性。" border="true":::
 
 1. 仔细编辑应用清单文件中的 **requiredResourceAccess** 属性，以添加以下详细信息：
-    >**注意：** 可以在Azure 门户上编辑应用清单，或选择 **“下载**”以在本地编辑清单，然后使用 **Upload** 将其重新应用到应用程序。
-+ 添加 **resourceAppId** 属性并分配`00000002-0000-0000-c000-000000000000`表示 Azure AD Graph
+    >**注意：** 可以在Azure 门户上编辑应用清单，或选择 **“下载**”以在本地编辑清单，然后使用 **“上传**”将其重新应用到应用程序。
++ 添加 **resourceAppId** 属性并分配表示 Azure AD Graph 的值`00000002-0000-0000-c000-000000000000`
 + 添加 **resourceAccess** 属性并分配所需的权限。
 
-    以下 JSON 代码片段显示一个 **requiredResourceAccess 属性，** 其中 Azure AD Graph为资源，并分别分配了 *User.Read* 和 *Application.Read.All* oauth2PermissionScope (委派权限) 和 appRole (应用程序权限) 。    
+    以下 JSON 代码片段显示一个 **requiredResourceAccess 属性，** 其中 Azure AD Graph 作为资源，并分别分配了 *User.Read* 和 *Application.Read.All* oauth2PermissionScope (委派权限) 和 appRole (应用程序权限) 。    
 
     ```JSON
     "requiredResourceAccess": [
@@ -75,25 +75,25 @@ Azure Active Directory (Azure AD) Graph已弃用，并将于近期停用。 作�
     ```
 
 7. 保存所做的更改。
-8. 选择 **API 权限**，在应用注册 **的配置权限** 中，选择 **“授予管理员许可**”以授予 Azure AD Graph应用注册权限。
+8. 选择 **API 权限** ，在应用注册 **的配置权限** 中，选择 **“授予管理员许可** ”以授予应用注册的 Azure AD Graph 权限。
 
 ## <a name="option-3-use-the-microsoft-graph-api"></a>选项 3：使用 Microsoft 图形 API
 
-Microsoft Graph [应用程序](/graph/api/resources/application) API 包括 **一个必需的ResourceAccess** 属性，该属性是 [必需的ResourceAccess](/graph/api/resources/requiredresourceaccess) 对象的集合。 使用此属性配置所需的 Azure AD Graph权限，如以下步骤中所述。
+Microsoft Graph [应用程序](/graph/api/resources/application) API 包括 **一个 requiredResourceAccess** 属性，该属性是  [必需的ResourceAccess](/graph/api/resources/requiredresourceaccess) 对象的集合。 使用此属性配置所需的 Azure AD Graph 权限，如以下步骤中所述。
 
 ### <a name="prerequisites"></a>先决条件
 
 若要完成以下步骤，需要以下资源和权限：
 
-+ 在所选工具中运行 HTTP 请求，例如在应用中，通过[Graph资源管理器](https://aka.ms/ge)或 Postman 运行。
++ 在所选工具中运行 HTTP 请求，例如在应用中，通过 [Graph 资源管理器](https://aka.ms/ge)或 Postman 运行。
 + 以用户身份在全局管理员或应用程序管理员角色中运行 API，或作为目标应用注册的所有者运行 API。 有关这些角色支持的操作的详细信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)。
 + 必须向用于进行这些更改的应用授予权 `Application.ReadWrite.All` 限。
 
-### <a name="step-1-identify-the-permission-ids-for-the-azure-ad-graph-permissions-your-app-requires"></a>步骤 1：确定应用所需的 Azure AD Graph权限的权限 ID
+### <a name="step-1-identify-the-permission-ids-for-the-azure-ad-graph-permissions-your-app-requires"></a>步骤 1：标识应用所需的 Azure AD Graph 权限的权限 ID
 
-标识应用所需的 Azure AD Graph权限、权限 ID，以及它们是应用角色 (应用程序权限) 还是 oauth2PermissionScopes (委派权限) 。
+确定应用所需的 Azure AD Graph 权限、权限 ID，以及它们是应用角色 (应用程序权限) 还是 oauth2PermissionScopes (委派权限) 。
 
-Azure AD Graph标识为 servicePrincipal 对象`00000002-0000-0000-c000-000000000000`，其全局唯一 appId 及其 `Windows Azure Active Directory` **displayName** 和 **appDisplayName**。 运行以下请求以检索 Azure AD Graph的服务主体对象。
+Azure AD Graph 标识为 servicePrincipal 对象 `00000002-0000-0000-c000-000000000000` ，其全局唯一 appId 及其 `Windows Azure Active Directory` **displayName** 和 **appDisplayName**。 运行以下请求以检索 Azure AD Graph 的服务主体对象。
 
 #### <a name="request"></a>请求
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq '0000000
 
 #### <a name="response"></a>响应
 
-在响应对象中，Azure AD Graph应用程序权限的详细信息将列在 **appRoles** 对象中，而委派权限的详细信息则列在 **oauth2PermissionScopes** 对象中。
+在响应对象中，Azure AD Graph 应用程序权限的详细信息在 **appRoles** 对象中列出，而委派权限的详细信息则列在 **oauth2PermissionScopes** 对象中。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -177,9 +177,9 @@ Content-type: application/json
 
 从上面截断的输出中， `311a71cc-e848-46a1-bdf8-97ff7156d8e6` 是 *User.Read* 委派权限的权限 ID，而 `3afa6a7d-9b1a-42eb-948e-1650a849e176` *Application.Read.All* 应用程序权限的权限 ID。
 
-### <a name="step-2-add-required-azure-ad-graph-permissions-to-your-app"></a>步骤 2：向应用添加所需的 Azure AD Graph权限
+### <a name="step-2-add-required-azure-ad-graph-permissions-to-your-app"></a>步骤 2：向应用添加所需的 Azure AD Graph 权限
 
-以下示例调用[更新应用程序](/graph/api/application-update) API，将所需的 Azure AD Graph权限添加到由对象 ID `581088ba-83c5-4975-b8af-11d2d7a76e98`标识的应用注册。 从步骤 1 开始，这些权限分别为 *User.Read* 和 *Application.Read.All* 委派权限和应用程序权限。
+以下示例调用 [更新应用程序](/graph/api/application-update) API，将所需的 Azure AD Graph 权限添加到由对象 ID `581088ba-83c5-4975-b8af-11d2d7a76e98`标识的应用注册。 从步骤 1 开始，这些权限分别为 *User.Read* 和 *Application.Read.All* 委派权限和应用程序权限。
 
 > [!IMPORTANT]
 > 若要更新 **requiredResourceAccess** 属性，必须同时传递现有权限和新权限。 仅传入新权限会覆盖和删除现有权限。
@@ -224,7 +224,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="step-3-verify-that-the-required-azure-ad-graph-permissions-were-added-to-your-app"></a>步骤 3：验证是否已将所需的 Azure AD Graph权限添加到应用
+### <a name="step-3-verify-that-the-required-azure-ad-graph-permissions-were-added-to-your-app"></a>步骤 3：验证是否已将所需的 Azure AD Graph 权限添加到应用
 
 使用 Microsoft 图形 API或检查Azure 门户中的 **应用注册** 页，验证应用注册是否具有在步骤 2 中添加的所需 Azure AD 图形 API权限。
 
@@ -240,25 +240,25 @@ GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7
 
 ## <a name="option-4-use-the-microsoft-graph-powershell-sdk"></a>选项 4：使用 Microsoft Graph PowerShell SDK
 
-Microsoft Graph PowerShell SDK 中的 [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet 包括一个 **RequiredResourceAccess** 参数，该参数是 **IMicrosoftGraphRequiredResourceAccess 对象的** 集合。 使用此参数配置所需的 Azure AD Graph权限，如以下步骤中所述。
+Microsoft Graph PowerShell SDK 中的 [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet 包括一个 **RequiredResourceAccess** 参数，该参数是 **IMicrosoftGraphRequiredResourceAccess 对象的** 集合。 使用此参数配置所需的 Azure AD Graph 权限，如以下步骤中所述。
 
 ### <a name="prerequisites"></a>先决条件
 
 若要完成以下步骤，需要以下权限：
 
 + 例如，使用 `Connect-MgGraph`)  (经过身份验证的 PowerShell 会话。
-+ 必须向 Microsoft Graph PowerShell 授予权`Application.ReadWrite.All`限。
++ 必须向 Microsoft Graph PowerShell 授予该 `Application.ReadWrite.All` 权限。
 + 必须向登录用户授予全局管理员或应用程序管理员 Azure AD 目录角色，或成为目标应用注册的所有者。 有关这些角色支持的操作的详细信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)。
 
-### <a name="step-1-identify-the-permission-ids-for-the-azure-ad-graph-permissions-your-app-requires"></a>步骤 1：确定应用所需的 Azure AD Graph权限的权限 ID
+### <a name="step-1-identify-the-permission-ids-for-the-azure-ad-graph-permissions-your-app-requires"></a>步骤 1：标识应用所需的 Azure AD Graph 权限的权限 ID
 
-确定应用所需的 Azure AD Graph权限、权限 ID，以及它们是应用角色 (应用程序权限) 还是委派权限。
+标识应用所需的 Azure AD Graph 权限、权限 ID，以及它们是应用角色 (应用程序权限) 还是委派权限。
 
-Azure AD Graph标识为 ServicePrincipal 对象`00000002-0000-0000-c000-000000000000`，其全局唯一 AppId 及其 `Windows Azure Active Directory` **DisplayName** 和 **AppDisplayName**。 运行以下请求以检索 Azure AD Graph的 ServicePrincipal 对象。
+Azure AD Graph 标识为 ServicePrincipal 对象 `00000002-0000-0000-c000-000000000000` ，其全局唯一 AppId 及其 `Windows Azure Active Directory` **DisplayName** 和 **AppDisplayName**。 运行以下请求以检索 Azure AD Graph 的 ServicePrincipal 对象。
 
 #### <a name="request"></a>请求
 
-创建名为 **fetchPermissions.ps1** 的新 PowerShell 脚本并添加以下代码。 此代码检索 Azure AD Graph权限 ID 和类型。 输出显示 **并设置 AppRoles** 和 **Oauth2PermissionScopes** 对象的输出格式。
+创建名为 **fetchPermissions.ps1** 的新 PowerShell 脚本并添加以下代码。 此代码检索 Azure AD Graph 权限 ID 和类型。 输出显示 **并设置 AppRoles** 和 **Oauth2PermissionScopes** 对象的输出格式。
 
 ```powershell
 # Sign in with the required Application.ReadWrite.All scope
@@ -316,9 +316,9 @@ AdditionalProperties    : {}
 
 从此输出中， `311a71cc-e848-46a1-bdf8-97ff7156d8e6` 是 *User.Read* 委派权限的权限 ID，而 `3afa6a7d-9b1a-42eb-948e-1650a849e176` 该权限是 *Application.Read.All* 应用程序权限的权限 ID。
 
-### <a name="step-2-add-azure-ad-graph-permissions-to-your-app"></a>步骤 2：向应用添加 Azure AD Graph权限
+### <a name="step-2-add-azure-ad-graph-permissions-to-your-app"></a>步骤 2：向应用添加 Azure AD Graph 权限
 
-创建名为 **updatePermissions.ps1** 的新 PowerShell 脚本并添加以下代码。 此代码将所需的 Azure AD Graph权限添加到由对象 ID `581088ba-83c5-4975-b8af-11d2d7a76e98`标识的应用注册。 从步骤 1 开始，这些权限分别为 *User.Read* 和 *Application.Read.All* 委派权限和应用程序权限。
+创建名为 **updatePermissions.ps1** 的新 PowerShell 脚本并添加以下代码。 此代码将所需的 Azure AD Graph 权限添加到由对象 ID `581088ba-83c5-4975-b8af-11d2d7a76e98`标识的应用注册。 从步骤 1 开始，这些权限分别为 *User.Read* 和 *Application.Read.All* 委派权限和应用程序权限。
 
 > [!IMPORTANT]
 > 若要更新 **RequiredResourceAccess** 属性，必须同时传入现有权限和新权限。 仅传入新权限会覆盖和删除现有权限。
