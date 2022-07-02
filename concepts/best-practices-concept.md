@@ -1,18 +1,18 @@
 ---
 title: 使用 Microsoft Graph 的最佳做法
-description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
+description: 应用这些最佳做法来改进 Microsoft Graph 应用程序的性能，并使应用对于最终用户更加可靠。
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 0d80e6c0f2458ab6a7880e2276bf895d8b6ec52e
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: b2cb4b928db17817bf2543a425adde0827d75008
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336233"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577572"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 
-本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
+本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法&mdash;内容涉及了解 Microsoft Graph、改进应用性能，以及让应用程序对最终用户更加可靠等。
 
 ## <a name="use-graph-explorer-to-get-to-know-the-api"></a>使用 Graph 浏览器了解 API
 
@@ -71,7 +71,8 @@ GET https://graph.microsoft.com/v1.0/me/messages
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$skip=23"
 ```
 
->**注意：** 应用程序应 **始终** 处理在本质上对响应进行分页的可能性，并使用 `@odata.nextLink` 属性获得下一个分页结果集，直到读取结果集的所有页面。 最后一页将不包含 `@odata.nextLink` 属性。 你应在请求的 `@odata:nextLink` 属性中包括整个 URL，以获取下一页结果，将整个 URL 视为一个不透明的字符串。
+> [!NOTE]
+> 应用程序在本质上应 **始终** 处理对响应进行分页的可能性，并在读取结果集的所有页面之前使用 `@odata.nextLink` 属性获得下一个分页结果集。 最后一页将不包含 `@odata.nextLink` 属性。 你应在请求的 `@odata:nextLink` 属性中包括整个 URL，以获取下一页结果，将整个 URL 视为一个不透明的字符串。
 
 有关详细信息，请参阅[分页](paging.md)。
 
@@ -110,7 +111,8 @@ Prefer: include-unknown-enum-members
 
 只选择应用程序真正需要的属性，仅此即可，因为这样可以在应用程序（和服务中）节省不必要的网络流量和数据处理。
 
->**注意：** 使用 `$select` 查询参数将查询返回的属性限制为那些应用程序所需的属性。
+> [!NOTE]
+> 使用 `$select` 查询参数将查询返回的属性限制为那些应用程序所需的属性。
 
 例如，检索登录用户的邮件时，可以指定仅返回 **from** 和 **subject** 属性：
 
@@ -122,7 +124,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 对于某些操作，如 PUT 和 PATCH（在某些情况下还包括 POST），如果应用程序不需要使用响应有效负载，则可以要求 API 返回最小数据。 请注意，有些服务已向 PUT 和 PATCH 操作返回 204 无内容响应。
 
->**注意：** 在适当情况下，使用 HTTP 请求头请求最小表示形式的响应：*首选：返回=最小*。 请注意，对于创建操作来说，这可能不合适，因为应用程序可能期望在响应中获得新建对象的服务生成 `id`。
+> [!NOTE]
+> 在适当情况下，使用 HTTP 请求头请求最小表示形式的响应：*首选：ruturn=minimal*。 请注意，对于创建操作来说，这可能不合适，因为应用程序可能期望在响应中获得新建对象的服务生成 `id`。
 
 ### <a name="track-changes-delta-query-and-webhook-notifications"></a>跟踪更改：增量查询和 webhook 通知
 

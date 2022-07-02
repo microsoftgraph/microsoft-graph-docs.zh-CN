@@ -1,13 +1,13 @@
 ---
 title: Microsoft Graph 错误响应和资源类型
-description: 本主题介绍了 Microsoft Graph 响应中可能返回的一些错误。
+description: 了解可以在 Microsoft Graph 响应中返回的错误。 使用标准 HTTP 状态代码和 JSON 错误响应对象返回错误。
 ms.localizationpriority: high
-ms.openlocfilehash: 6894090958a53764a38b4be346fc1ab625ae9f23
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 7e4da1aaeef174130e655d003c2140e0d91e4622
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694349"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577586"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Microsoft Graph 错误响应和资源类型
 

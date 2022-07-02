@@ -1,22 +1,23 @@
 ---
 title: 创建日历
-description: 此 API 可用于新建用户日历。
+description: 为用户创建新日历。
 author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 39fa746b720b0682b951b2fa522c6a197e646d49
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 79f622d2f64070d258298e8b375b859d0c3828d8
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128140"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577614"
 ---
 # <a name="create-calendar"></a>创建日历
 
 命名空间：microsoft.graph
 
-此 API 可用于新建[用户](../resources/user.md)日历。
+为 [用户](../resources/user.md) 创建新日历。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -43,11 +44,11 @@ POST /users/{id | userPrincipalName}/calendars
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [calendar](../resources/calendar.md) 对象。
+如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [calendar](../resources/calendar.md) 对象。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -88,9 +89,9 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [calendar](../resources/calendar.md) 对象的 JSON 表示形式。
 ### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
