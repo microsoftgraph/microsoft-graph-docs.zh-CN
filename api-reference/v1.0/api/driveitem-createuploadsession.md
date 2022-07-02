@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: 可恢复的文件上传
+title: driveItem：createUploadSession
 ms.localizationpriority: high
 ms.prod: sharepoint
 description: 通过创建上传会话，使应用可以上传最大大小的文件。
 doc_type: apiPageType
-ms.openlocfilehash: b2e24a917766de1cd9e4f4853d4a88d3c963da41
-ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
+ms.openlocfilehash: 5314c4060c72337d3a82821334f2e5d2bf0fe84f
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66141213"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577887"
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
+# <a name="driveitem-createuploadsession"></a>driveItem：createUploadSession
 
 命名空间：microsoft.graph
 
@@ -88,10 +87,10 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ## <a name="parameters"></a>参数
 
-| 参数            | 类型                          | 说明
-|:---------------------|:------------------------------|:---------------------------------
-| 项                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关正在上传的文件的数据
-| deferCommit          | 布尔值                       | 如果设置为 true，则需要发出显式请求才能在目标位置中进行文件的最终创建。仅在 OneDrive for Business 上。
+| 参数   | 类型                                                                           | 说明                                                                                           |
+|:------------|:-------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
+| deferCommit | 布尔值                                                                        | 如果设置为 `true`，则需要发出显式请求才能在目标中进行文件的最终创建。 |
+| 项        | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关正在上传的文件的数据。                                                                   |
 
 ### <a name="request"></a>请求
 

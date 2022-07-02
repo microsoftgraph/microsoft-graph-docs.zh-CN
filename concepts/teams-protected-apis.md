@@ -4,12 +4,12 @@ description: Microsoft Graph 中访问敏感数据的 Microsoft Teams API 被视
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8f9387d33d440a7ac8d90fc9be9e671b790c9e17
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: a8c7de28d1ecd5784e69e2cc4774802282b8bd24
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556295"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577810"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>Microsoft Teams 中的受保护 API
 
@@ -29,6 +29,7 @@ Microsoft Graph 中用于访问敏感数据的 Microsoft Teams API 被视为受�
 * [创建新聊天消息的订阅](/graph/api/subscription-post-subscriptions)
 * [列出所有托管内容](/graph/api/chatmessage-list-hostedcontents)
 * [获取托管内容](/graph/api/chatmessagehostedcontent-get)
+* [获取已删除团队中的消息](/graph/api/deletedteam-getallmessages)
 
 > [!NOTE]
 > [发送消息](/graph/api/channel-post-messages) API 不受保护。

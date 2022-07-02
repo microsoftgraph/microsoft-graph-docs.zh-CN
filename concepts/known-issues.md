@@ -1,14 +1,14 @@
 ---
 title: Microsoft Graph 已知问题
-description: 本文介绍了 Microsoft Graph 已知问题。
+description: 本文介绍 Microsoft Graph 的已知问题和限制，并尽可能提供解决方法。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 99d026a9b00b0a61b29ba1a173d7b03903fb9ad4
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 45566a7b451dd0de3938c6a3d2cb7cb31b2393ba
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439100"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577579"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -22,7 +22,7 @@ ms.locfileid: "66439100"
 
 ### <a name="some-limitations-apply-to-the-application-and-serviceprincipal-resources"></a>应用程序和 servicePrincipal 资源存在一些限制
 
-[应用程序](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) 资源的更改当前处于开发阶段。下面总结了当前的限制和处于开发阶段的 API 功能。
+[应用程序](/graph/api/resources/application) 和 [servicePrincipal](/graph/api/resources/serviceprincipal) 资源的更改当前处于开发阶段。下面总结了当前的限制和处于开发阶段的 API 功能。
 
 当前限制：
 
@@ -57,7 +57,8 @@ ms.locfileid: "66439100"
 
 同时，若要取消阻止开发和测试，可使用以下解决方法。
 
->**注意：** 这不是永久性解决方案，仅用于取消阻止开发。一旦上述问题得到解决，便无需使用此解决方案。在问题得到解决后，无需撤消此解决方法。
+> [!NOTE]
+> 这不是永久性解决方案，且仅用于取消阻止开发。 解决问题后，将不需要使用此解决方法。 在问题得到解决后，无需撤消此解决方法。
 
 1. 打开 Azure AD v2 PowerShell 会话，然后在登录窗口中输入管理员凭据，以连接 `customer` 租户。可以单击[此处](https://www.powershellgallery.com/packages/AzureAD)，下载并安装 Azure AD PowerShell V2。
 

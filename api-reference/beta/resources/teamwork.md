@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 63199426ae498a4fa79a6f419d49b0eaa257a181
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 8a6a07a23d71c79703643dc5280bd531eb5a5843
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262097"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577862"
 ---
 # <a name="teamwork-resource-type"></a>teamwork 资源类型
 
@@ -19,6 +19,12 @@ ms.locfileid: "62262097"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 可供组织使用的 Microsoft Teams 功能范围的容器。
+
+## <a name="methods"></a>方法
+
+| 方法                                                  | 返回类型                                         |说明                                                                               |
+|:--------------------------------------------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------|
+|[列出 deletedTeams](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) 集合|获取 [deletedTeam](../resources/deletedteam.md) 对象及其属性的列表。|
 
 ## <a name="properties"></a>属性
 
@@ -30,6 +36,7 @@ ms.locfileid: "62262097"
 
 | 关系 | 类型 | 说明 |
 |:---------------|:--------|:----------|
+|deletedTeams|[deletedTeam](../resources/deletedteam.md) 集合| 已删除团队的集合。|
 |设备|[teamworkDevice](../resources/teamworkdevice.md) 集合|为租户预配的 Teams 设备。|
 |workforceIntegration|[workforceIntegration](../resources/workforceintegration.md) 集合| 工作人员与班次的集成。|
 
@@ -43,12 +50,16 @@ ms.locfileid: "62262097"
   "baseType": "microsoft.graph.entity"
 }-->
 
-```json
+``` json
 {
-  "id": "string"
+    "@odata.type": "#microsoft.graph.teamwork",
+    "id": "String (identifier)"
 }
-
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [userTeamwork 资源类型](userteamwork.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -62,7 +73,3 @@ ms.locfileid: "62262097"
   "suppressions": []
 }
 -->
-
-## <a name="see-also"></a>另请参阅
-
-- [userTeamwork 资源类型](userteamwork.md)
