@@ -1,21 +1,23 @@
 ---
-title: '使用 Microsoft 搜索 API 使用查询模板搜索内容， (预览) '
-description: 了解如何使用 Microsoft 搜索 API 中的查询模板来基于查询变量和查询KQL。
+title: 使用 Microsoft 搜索 API 使用查询模板搜索内容
+description: 了解如何使用 Microsoft Graph 中的 Microsoft 搜索 API 中的查询模板基于查询变量和 KQL 搜索内容。
 author: yiwenwang
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 717ea2e319d426403eeb3907e58769efa743856c
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 6fe067a493cf9b715ed5fee1f2405e81783b4ee7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589501"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436958"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-using-query-templates-preview"></a>使用 Microsoft 搜索 API 使用查询模板搜索内容， (预览) 
-本文将了解如何使用 Microsoft 搜索 API 中的查询模板基于查询变量和查询[KQL。](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)[](/sharepoint/technical-reference/query-variables) 这允许您限制查询范围并构建您自己的搜索体验。
+# <a name="use-the-microsoft-search-api-to-search-content-using-query-templates"></a>使用 Microsoft 搜索 API 使用查询模板搜索内容
+
+可以使用 Microsoft Graph 中 Microsoft 搜索 API 中的查询模板，基于 [查询变量](/sharepoint/technical-reference/query-variables) 和 [KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) 搜索内容。 这样便可以限制查询范围并生成自己的搜索体验。
 
 ## <a name="example"></a>示例
-以下示例显示一个请求，该请求使用查询模板基于查询变量搜索内容，[KQL。](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)[](/sharepoint/technical-reference/query-variables)
+
+以下示例演示一个请求，该请求使用查询模板基于查询变量和 KQL 搜索内容。
 
 ### <a name="request"></a>请求
 
@@ -139,4 +141,4 @@ Content-type: application/json
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview)

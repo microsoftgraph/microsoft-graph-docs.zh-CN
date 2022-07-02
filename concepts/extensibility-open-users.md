@@ -1,15 +1,15 @@
 ---
 title: 使用开放扩展向用户添加自定义数据
-description: '本文将通过一个示例逐步介绍如何使用 *开放扩展*。 '
+description: 按照本示例中的步骤添加扩展、查询用户并返回漫游配置文件、更改和删除用户的漫游配置文件信息。
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4d66a008f253fd2097b4a9e8833022c825ee3db2
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a94fd34daff722c0fd32bd271618626db1f50cec
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944233"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556190"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>使用开放扩展向用户添加自定义数据
 本文将通过一个示例逐步介绍如何使用 *开放扩展*。 
@@ -23,8 +23,8 @@ ms.locfileid: "60944233"
 3. 更改用户的漫游配置文件信息（开放扩展值）。
 4. 删除用户的漫游配置文件信息。
 
->**注意：** 本主题介绍如何在 **user** 资源上添加、读取、更新和删除开放扩展。**administrativeUnit**、**contact**、**device**、**event**、**group**、**organizaton**、**post**、**todoTask** 和 **todoTaskList** 资源类型也支持这些方法。  
-可以使用其中任一资源更新请求示例。 示例中显示的响应可能会被缩短以提高可读性。 
+> [!NOTE]
+> 本主题介绍如何在 **用户** 资源上添加、读取、更新、删除开放扩展。 开放扩展也受支持，可以针对[其他资源类型](extensibility-overview.md)进行管理。
 
 ## <a name="1-add-roaming-profile-information"></a>1.添加漫游配置文件信息
 用户登录到应用并配置应用的外观。这些应用设置应可以漫游，这样用户不管从何种设备登录应用都可以获得相同的体验。在这里，我们将了解如何将漫游配置文件信息添加到用户资源。
@@ -85,7 +85,9 @@ Content-Type: application/json
     ]
 }
 ```
->**注意：** 如果你有多个扩展，则可以按 **ID** 筛选，以获取感兴趣的扩展。
+
+> [!NOTE]
+> 如果你有多个扩展，则可以按 **ID** 筛选，以获取感兴趣的扩展。
 
 ## <a name="3-change-roaming-profile-information"></a>3.更改漫游配置文件信息
 用户可以选择更改其漫游配置文件信息。此更新可以通过开放扩展值上的 ```PATCH``` 完成。 
@@ -123,8 +125,8 @@ HTTP/1.1 204 No content
 
 - [使用扩展向资源添加自定义数据](extensibility-overview.md)
 - [使用架构扩展向组添加自定义数据](extensibility-schema-groups.md)
-- [openTypeExtension 资源类型](/graph/api/resources/opentypeextension?view=graph-rest-1.0)
-- [创建开放扩展](/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
-- [获取开放扩展](/graph/api/opentypeextension-get?view=graph-rest-1.0)
-- [更新开放扩展](/graph/api/opentypeextension-update?view=graph-rest-1.0)
-- [删除开放扩展](/graph/api/opentypeextension-delete?view=graph-rest-1.0)
+- [openTypeExtension 资源类型](/graph/api/resources/opentypeextension)
+- [创建开放扩展](/graph/api/opentypeextension-post-opentypeextension)
+- [获取开放扩展](/graph/api/opentypeextension-get)
+- [更新开放扩展](/graph/api/opentypeextension-update)
+- [删除开放扩展](/graph/api/opentypeextension-delete)

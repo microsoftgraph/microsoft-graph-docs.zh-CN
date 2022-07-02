@@ -1,23 +1,23 @@
 ---
 title: 使用 JSON 批处理将多个请求合并为一个 HTTP 调用
-description: JSON 批处理使你能够通过将多个请求合并为一个单一的 JSON 对象优化应用程序。例如，客户可能希望撰写一个无关的数据视图，例如：
+description: 通过将多个请求合并到单个 JSON 对象中，使用 JSON 批处理来优化应用程序，从而显著节省应用程序的网络延迟。
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8b83b501f286bcfac80f50081bfaa6084e866b15
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 7ba6dace8424158c7d04279de3c53e1734681e00
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118359"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555777"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理在一个 HTTP 调用中合并多个请求
 
 通过 JSON 批处理，可通过将多个请求(最多 20 个)合并为一个单一的 JSON 对象来优化应用程序。例如，客户可能希望撰写一个无关数据的视图，例如：
 
-1. 存储在 OneDrive 中的图像
-2. 计划任务列表
-3. 组日历
+- 存储在 OneDrive 中的图像
+- 计划任务列表
+- 组日历
 
 将三个单独请求合并到一个单独的批处理请求中可以使应用程序不受重大网络延迟的影响。
 
@@ -205,7 +205,7 @@ JSON 批处理的其他用例是绕过 URL 长度限制。如果筛选子句太�
 
 ## <a name="batch-size-limitations"></a>批大小限制
 
-JSON 批处理请求目前限制为 20 个单独的请求，此外还有以下限制:
+JSON 批处理请求目前限制为 20 个单独的请求，此外还有以下限制：
 
 * 根据作为批处理请求一部分的 API，基础服务会施加自己的限制，从而影响使用 Microsoft Graph 访问它们的应用程序。
 * 批处理中的请求将根据限制单独进行评估，如果任何请求超过限制，则请求会失败，状态为 `429`。

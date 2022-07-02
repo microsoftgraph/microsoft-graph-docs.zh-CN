@@ -1,18 +1,20 @@
 ---
 title: 使用 Graph 管理器
-description: 了解如何使用 Graph 浏览器中的一些重要功能。
+description: 使用 Graph 资源管理器发出 Microsoft Graph REST API 请求并查看相应的响应。 了解如何使用 Graph 浏览器中的一些重要功能。
 ms.localizationpriority: high
 author: RabebOthmani
-ms.openlocfilehash: ec040c8db2330f9b20407765199adf4a1a84c9ad
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 925bf7d42068be9141bc1b95c58edcd01ddfc8c8
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176828"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555798"
 ---
 # <a name="work-with-graph-explorer"></a>使用 Graph 管理器
 
 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/) 是一种开发人员工具，便于发起 Microsoft Graph REST API 请求并查看相应响应。 本文介绍了如何使用 Graph 浏览器中的一些重要功能。
+
+有关概述，请参阅[使用 Graph 浏览器试用 Microsoft Graph API](/graph/graph-explorer/graph-explorer-overview)。
 
 ## <a name="consent-to-permissions"></a>同意权限
 

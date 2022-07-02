@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e2b6657c3b4475b47f03e33b193ea26630fe304f
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: f69e7570c520b0ddf3d3174373af413820fa4d9d
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095580"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555243"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -49,7 +49,16 @@ GET /users
 
 个人 Microsoft 帐户不支持下列属性，且将为 `null`：**aboutMe**、**birthday**、**interests**、**mySite**，**pastProjects**、**preferredName**、**responsibilities**、**schools**、**skills**、**streetAddress**。
 
-## <a name="request-headers"></a>请求头
+### <a name="retrieve-extensions-and-associated-data"></a>检索扩展和关联数据
+
+| 扩展类型                     | 备注                                                                  |
+|------------------------------------|---------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | 默认返回。 支持 `$filter`（`eq`）。                  |
+| 架构扩展                  | 仅通过 `$select` 返回。 支持 `$filter`（`eq`）。                  |
+| 开放扩展                    | 仅通过 `$expand` 返回，即 `users?$expand=extensions`。 |
+| 目录扩展               | 默认返回。 支持 `$filter`（`eq`）。                  |
+
+## <a name="request-headers"></a>请求标头
 
 | 标头 | 值 |
 |:------ |:----- |

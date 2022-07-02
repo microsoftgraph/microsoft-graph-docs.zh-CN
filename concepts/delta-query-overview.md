@@ -1,17 +1,17 @@
 ---
 title: 使用增量查询跟踪 Microsoft Graph 数据更改
-description: Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
+description: 使用 delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: bb0acf60a44ead08fe779678bd0bcbba53e2b618
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: c3e65f9aaf8c70f323c7d3b9c99fae1a826348d0
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819627"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556246"
 ---
-# <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
+# <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用增量查询跟踪 Microsoft Graph 数据更改
 
 Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
 
@@ -32,11 +32,14 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 3. 当应用程序需要了解资源更改时，会使用步骤 2 中收到的 `@odata.deltaLink` URL 发出新请求。*可能* 在完成步骤 2 或应用程序检查更改时立即发出此请求。
 4. Microsoft Graph 返回响应（`@odata.nextLink` URL 或 `@odata.deltaLink` URL），其中描述了自上一个请求以来的资源变更。
 
->**注意：** Azure Active Directory 中存储的资源（如用户和组）支持“从现在开始同步”方案。 这样一来，便可以跳过第 1 步和第 2 步（如果不想检索资源完整状态的话），并改为请求获取最新 `@odata.deltaLink`。 将 `$deltaToken=latest` 追加到 `delta` 函数中，这样响应就会包含 `@odata.deltaLink`，而不包含资源数据。 OneDrive 和 SharePoint 中的资源也支持此功能。 有关 OneDrive 和 SharePoint 中的资源，请改为附加 `token=latest` 。
+> [!NOTE]
+> Azure Active Directory 中存储的资源（如用户和组）支持“从现在开始同步”方案。 这样一来，便可以跳过第 1 步和第 2 步（如果不想检索资源完整状态的话），并改为请求获取最新 `@odata.deltaLink`。 将 `$deltaToken=latest` 追加到 `delta` 函数中，这样响应就会包含 `@odata.deltaLink`，而不包含资源数据。 OneDrive 和 SharePoint 中的资源也支持此功能。 有关 OneDrive 和 SharePoint 中的资源，请改为附加 `token=latest` 。
 
->**注意：** 引用增量查询函数的方式通常是将 `/delta` 附加到资源名称。 但是，`/delta` 是在 Microsoft Graph SDK 生成的请求中显示的完全限定名称 `/microsoft.graph.delta` 的快捷方式。
+> [!NOTE]
+> 引用增量查询函数的方式通常是将 `/delta` 附加到资源名称。 但是，`/delta` 是在 Microsoft Graph SDK 生成的请求中显示的完全限定名称 `/microsoft.graph.delta` 的快捷方式。
 
->**注意：** 对增量查询函数的初始请求（没有 `$deltaToken` 或 `$skipToken`）将返回集合中当前存在的资源。 初始 delta 查询之前创建并已删除的资源不会返回。 初始请求前进行的更新在返回的资源上按其最新状态进行汇总。
+> [!NOTE]
+> 对增量查询函数的初始请求（没有 `$deltaToken` 或 `$skipToken`）将返回集合中当前存在的资源。 初始 delta 查询之前创建并已删除的资源不会返回。 初始请求前进行的更新在返回的资源上按其最新状态进行汇总。
 
 ### <a name="state-tokens"></a>状态令牌
 
@@ -101,37 +104,38 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 在初始的 delta 查询响应和跟踪的 (deltaLink) 响应中，可以返回 **@removed** 对象。使用 delta 查询请求的客户端应应被设计为处理响应中的这些对象。
 
->**注意：** 在响应中可能会多次包含一个实体，前提是多次在特定情况下更改了该实体。 增量查询可以使应用程序列出所有更改，但不能确保实体在单个响应中是统一的。
+> [!NOTE]
+> 在响应中可能会多次包含一个实体，前提是多次在特定情况下更改了该实体。 增量查询可以使应用程序列出所有更改，但不能确保实体在单个响应中是统一的。
 
 ## <a name="supported-resources"></a>支持的资源
 
 以下资源当前支持 Delta 查询。请注意，v1.0 中提供的某些资源相应的 **delta** 函数仍处于预览状态，如所示。
 
-| **资源集合**                                        | **API**                                                                                                                                                      |
-| :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 应用程序                                                   | [application](/graph/api/resources/application) 资源的 [delta](/graph/api/application-delta) 函数                                               |
-| 管理单元（预览版）                                 | [administrativeUnit](/graph/api/resources/administrativeunit) 资源的 [delta](/graph/api/administrativeunit-delta) 函数（预览版）                |
-| 频道中的聊天消息                                     | [chatMessage](/graph/api/resources/chatmessage) 的 [delta](/graph/api/chatmessage-delta) 函数（预览版）                                              |
+| **资源集合**                                        | **API**                                                                                                                                            |
+| :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 应用程序                                                   | [application](/graph/api/resources/application) 资源的 [delta](/graph/api/application-delta) 函数                                     |
+| 管理单元（预览版）                                 | [administrativeUnit](/graph/api/resources/administrativeunit) 资源的 [delta](/graph/api/administrativeunit-delta) 函数（预览版）      |
+| 频道中的聊天消息                                     | [chatMessage](/graph/api/resources/chatmessage) 的 [delta](/graph/api/chatmessage-delta) 函数（预览版）                                    |
 | 目录角色                                                | [directoryRole](/graph/api/resources/directoryrole) 资源的 [delta](/graph/api/directoryrole-delta) 函数 |
 | 驱动器项目\*                                                  | [driveItem](/graph/api/resources/driveitem) 资源的 [delta](/graph/api/driveitem-delta) 函数             |
-| 教育作业                                          | [educationAssignment](/graph/api/resources/educationassignment) 资源的 [delta](/graph/api/educationassignment-delta) 函数                                    |
-| 教育类别                                           | [educationCategory](/graph/api/resources/educationcategory) 资源的 [delta](/graph/api/educationcategory-delta) 函数                                    |
-| 教育课堂                                              | [educationClass](/graph/api/resources/educationclass) 资源的 [delta](/graph/api/educationclass-delta) 函数                                      |
-| 教育学校                                              | [educationSchool](/graph/api/resources/educationschool) 资源的 [delta](/graph/api/educationschool-delta) 函数                                   |
-| 教育用户                                                | [educationUser](/graph/api/resources/educationuser) 资源的 [delta](/graph/api/educationuser-delta) 函数                                         |
+| 教育作业                                          | [educationAssignment](/graph/api/resources/educationassignment) 资源的 [delta](/graph/api/educationassignment-delta) 函数             |
+| 教育类别                                           | [educationCategory](/graph/api/resources/educationcategory) 资源的 [delta](/graph/api/educationcategory-delta) 函数                   |
+| 教育课堂                                              | [educationClass](/graph/api/resources/educationclass) 资源的 [delta](/graph/api/educationclass-delta) 函数                            |
+| 教育学校                                              | [educationSchool](/graph/api/resources/educationschool) 资源的 [delta](/graph/api/educationschool-delta) 函数                         |
+| 教育用户                                                | [educationUser](/graph/api/resources/educationuser) 资源的 [delta](/graph/api/educationuser-delta) 函数                               |
 | 主日历的日历视图（日期范围）中的事件 | [事件](/graph/api/resources/event)资源的 [delta](/graph/api/event-delta) 函数                         |
 | 组                                                         | [组](/graph/api/resources/group)资源的 [delta](/graph/api/group-delta) 函数                         |
-| 列表项\*                                                   | [listItem](/graph/api/resources/listitem) 资源的 [delta](/graph/api/listitem-delta) 函数             |
+| 列表项\*                                                   | [listItem](/graph/api/resources/listitem) 资源的 [delta](/graph/api/listitem-delta) 函数                |
 | 邮件文件夹                                                   | [邮件文件夹](/graph/api/resources/mailfolder)资源的 [delta](/graph/api/mailfolder-delta) 函数          |
 | 文件夹中的邮件                                           | [邮件](/graph/api/resources/message)资源的 [delta](/graph/api/message-delta) 函数                   |
 | 组织联系人                                        | [orgContact](/graph/api/resources/orgcontact) 资源的 [delta](/graph/api/orgcontact-delta) 函数          |
-| OAuth2PermissionGrants                                         | [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) 资源的 [delta](/graph/api/oauth2permissiongrant-delta) 函数                 |
+| OAuth2PermissionGrants                                         | [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) 资源的 [delta](/graph/api/oauth2permissiongrant-delta) 函数        |
 | 私人联系人文件夹                                       | [联系人文件夹](/graph/api/resources/contactfolder)资源的 [delta](/graph/api/contactfolder-delta) 函数 |
 | 文件夹中的私人联系人                                  | [contact](/graph/api/resources/contact) 资源的 [delta](/graph/api/contact-delta) 函数                   |
-| Planner 项目\*\*（预览版）                                    | [plannerUser](/graph/api/resources/planneruser) 资源所有段的 [delta](/graph/api/planneruser-list-delta) 函数（预览版）                 |
-| 服务主体                                             | [servicePrincipal](/graph/api/resources/serviceprincipal) 资源的 [delta](/graph/api/serviceprincipal-delta) 函数                                |
-| 任务列表中的代办任务                                     | [todoTask](/graph/api/resources/todotask) 资源的 [delta](/graph/api/todotask-delta) 函数                                                        |
-| 待办事项任务列表                                               | [todoTaskList](/graph/api/resources/todotasklist) 资源的 [delta](/graph/api/todotasklist-delta) 函数                                            |
+| Planner 项目\*\*（预览版）                                    | [plannerUser](/graph/api/resources/planneruser) 资源所有段的 [delta](/graph/api/planneruser-list-delta) 函数（预览版）        |
+| 服务主体                                             | [servicePrincipal](/graph/api/resources/serviceprincipal) 资源的 [delta](/graph/api/serviceprincipal-delta) 函数                       |
+| 任务列表中的代办任务                                     | [todoTask](/graph/api/resources/todotask) 资源的 [delta](/graph/api/todotask-delta) 函数                                               |
+| 待办事项任务列表                                               | [todoTaskList](/graph/api/resources/todotasklist) 资源的 [delta](/graph/api/todotasklist-delta) 函数                                   |
 | 用户                                                          | [用户](/graph/api/resources/user)资源的 [delta](/graph/api/user-delta) 函数                            |
 
 
@@ -203,9 +207,9 @@ Delta 查询可以返回一个`410 (gone)`响应代码和一个 **Location** 标
 ### <a name="token-duration"></a>令牌持续时间
 
 增量令牌仅在客户端应用程序需要再次运行完整同步前的特定时间段内有效。
-+ [目录对象](/graph/api/resources/directoryobject)的时限为 7 天内。 
-+ 教育对象（**educationSchool**、**educationUser** 和 **educationClass**）的时限为 7 天内。
-+ Outlook 实体（**邮件**、**邮件文件夹**、**事件**、**联系人**、**联系人文件夹**、**待办事项** 和 **待办事项列表**）没有固定时间上限，取决于内部 delta 令牌缓存的大小。 因为缓存中不断添加新 delta 令牌，因此超过缓存容量后，旧 delta 令牌将被删除。
+- [目录对象](/graph/api/resources/directoryobject)的时限为 7 天内。 
+- 教育对象（**educationSchool**、**educationUser** 和 **educationClass**）的时限为 7 天内。
+- Outlook 实体（**邮件**、**邮件文件夹**、**事件**、**联系人**、**联系人文件夹**、**待办事项** 和 **待办事项列表**）没有固定时间上限，取决于内部 delta 令牌缓存的大小。 因为缓存中不断添加新 delta 令牌，因此超过缓存容量后，旧 delta 令牌将被删除。
 
 如果令牌过期，服务应响应 40X 系列错误，并显示错误代码，如 `syncStateNotFound`。 有关详细信息，请参阅 [Microsoft Graph](/graph/errors#code-property) 中的错误代码。
 

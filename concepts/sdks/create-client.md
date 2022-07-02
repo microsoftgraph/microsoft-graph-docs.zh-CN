@@ -3,12 +3,12 @@ title: 创建 Microsoft Graph 客户端
 description: 说明如何创建客户端，以使用客户端呼叫 Microsoft Graph。 包含如何设置身份验证和选择主权云。
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 3f1cc7167f0cff4266707fb1d66f6b82c8c01475
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: 556377412d9e6a75c6f3136c8c570335d9e0f28a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733169"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436993"
 ---
 # <a name="create-a-microsoft-graph-client"></a>创建 Microsoft Graph 客户端
 
@@ -36,7 +36,7 @@ var options = new TokenCredentialOptions
 };
 
 // Callback function that receives the user prompt
-// Prompt contains the generated device code that use must
+// Prompt contains the generated device code that you must
 // enter during the auth process in the browser
 Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) => {
     Console.WriteLine(code.Message);

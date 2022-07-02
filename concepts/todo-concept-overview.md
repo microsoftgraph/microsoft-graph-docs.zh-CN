@@ -1,18 +1,19 @@
 ---
 title: 微软待办 API 概述
-description: 微软待办提供一种管理任务和计划日常工作的简单方法
+description: 使用 Microsoft Graph 中的 Microsoft 待办事项 API 管理任务并计划你的一天。 任务会整理好并置于任务列表中，可跨待办事项客户端、Outlook、Teams 访问。
 author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 3b4fd77adf93b2570ffbb3570a881aaa5e0c551e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 30e4655ddcf4ff96b6cd3c82df80402c2f83d330
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062304"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556288"
 ---
 # <a name="to-do-api-overview"></a>微软待办 API 概述
-微软待办提供了一种简单的方法便于用户管理其任务和计划日常工作。 任务以任务列表形式组织，可以从任何设备跨微软待办客户端、Outlook 和 Teams 访问。
+
+Microsoft Graph 中的 Microsoft 待办事项 API 为用户提供了一种管理任务和计划一天的简单方法。 任务以任务列表形式整理，可以从任何设备跨微软待办客户端、Outlook、Teams 访问。
 
 **微软待办 Windows 应用**
 
@@ -40,6 +41,8 @@ ms.locfileid: "59062304"
 | 删除任务 | 删除 https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
 
 ## <a name="api-reference"></a>API 参考
+
 在查找此服务的 API 参考？
 
-- [Microsoft Graph 中的微软待办 API](/graph/api/resources/todo-overview)
+- [Microsoft Graph v1.0 中的微软待办 API](/graph/api/resources/todo-overview?view=graph-rest-1.0&preserve-view=true)
+- [Microsoft Graph beta 版中的微软待办 API](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true)

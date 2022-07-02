@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 07cdbffa0dec600aedceb691d935e2d7991519ab
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: a7e9b30268ba507f22449c4ebded2c05498c4f4c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899748"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439186"
 ---
 # <a name="create-roleassignmentschedulerequests"></a>创建 roleAssignmentScheduleRequests
 命名空间：microsoft.graph
@@ -56,12 +56,12 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 |:---|:---|:---|
 |action|unifiedRoleScheduleRequestActions|表示角色分配请求上的操作类型。 可取值包括：`adminAssign`、`adminUpdate`、`adminRemove`、`selfActivate`、`selfDeactivate`、`adminExtend`、`adminRenew`、`selfExtend`、`selfRenew`、`unknownFutureValue`。 <br/><ul><li>`adminAssign`：让管理员将角色分配给用户或组。</li><li>`adminRemove`：让管理员从角色中删除用户或组。</li><li> `adminUpdate`：让管理员更改现有角色分配。</li><li>`adminExtend`：让管理员延长即将过期的分配。</li><li>`adminRenew`：让管理员续订过期的分配。</li><li>`selfActivate`：让用户激活其分配。</li><li>`selfDeactivate`：让用户停用其活动分配。</li><li>`selfExtend`：让用户请求延长其即将到期的分配。</li><li>`selfRenew`：用户请求续订其过期的分配。</li></ul>|
 |customData|String|用于定义请求的任何自定义数据的免费文本字段。 可选。|
-|principalId|String|已授予分配的主体的标识符。 必填。|
-|roleDefinitionId|String|正在分配的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的标识符。 必填。|
+|principalId|String|已授予分配的主体的标识符。 必需项。|
+|roleDefinitionId|String|正在分配的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的标识符。 必需项。|
 |directoryScopeId|String|表示分配范围的目录对象的标识符。 分配的范围确定已授予主体访问权限的资源集。 目录范围是存储在多个应用程序理解的目录中的共享范围。 用于 `/` 租户范围。 使用 **appScopeId** 将范围限制为仅限应用程序。 需要 **directoryScopeId** 或 **appScopeId** 。|
 |appScopeId|String|分配作用域为应用时特定于应用的范围的标识符。 分配的范围确定已授予主体访问权限的资源集。 应用范围是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将范围限制为特定目录对象，例如管理单元。 需要 **directoryScopeId** 或 **appScopeId** 。|
 |理由|String|用户和管理员创建 **unifiedRoleAssignmentScheduleRequest** 对象时提供的消息。 可选。|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|角色分配请求的周期。 当前不支持定期计划。 必填。|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|角色分配请求的周期。 当前不支持定期计划。 必需项。|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|链接到角色分配请求的票证详细信息，包括票证编号和票证系统的详细信息。 可选。|
 
 
@@ -119,6 +119,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentschedulerequest-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignmentschedulerequest-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -233,6 +237,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

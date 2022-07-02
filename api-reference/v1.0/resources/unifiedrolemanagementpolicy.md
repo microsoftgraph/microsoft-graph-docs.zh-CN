@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3e9ce46b44b5e21d326c6c751ae7f6553a2c2199
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 95e068de21681735d2da1023452d57d11ed5ecf2
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246921"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437084"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>unifiedRoleManagementPolicy 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "65246921"
 |[获取 unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|检索角色管理策略的详细信息。|
 |[List rules](../api/unifiedrolemanagementpolicy-list-rules.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|获取为角色管理策略定义的规则。|
 |[获取 unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|检索为角色管理策略定义的规则。|
-|[更新 unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|更新为角色管理策略定义的规则。|
+|[更新 unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|更新为角色管理策略定义的规则。|
 
 
 ## <a name="properties"></a>属性
@@ -42,7 +42,7 @@ ms.locfileid: "65246921"
 |isOrganizationDefault|Boolean|这只能设置 `true` 为单个租户范围的策略，该策略将应用于所有范围和角色。 将 scopeId 设置为 `/` scopeId，并将 scopeType 设置为 `Directory`. 支持 `$filter`（`eq`、`ne`）。|
 |lastModifiedBy|[identity](../resources/identity.md)|上次修改角色设置的标识。|
 |lastModifiedDateTime|DateTimeOffset|上次修改角色设置的时间。|
-|scopeId|String|创建策略的范围的标识符。 可以 `/` 用于租户或组 ID。 必填。|
+|scopeId|String|创建策略的范围的标识符。 可以 `/` 用于租户或组 ID。 必需项。|
 |scopeType|String|创建策略的范围的类型。 其中一 `Directory`个 ， `DirectoryRole`. 必填。|
 
 ## <a name="relationships"></a>关系

@@ -1,15 +1,15 @@
 ---
-title: 使用 Outlook 邮件 API 自动创建、发送和处理邮件
+title: 使用 Outlook 邮件 API 自动创建、发送、处理邮件
 description: 电子邮件由 Microsoft Graph 中 Outlook 邮件 API 中的邮件资源表示。 你可以创建和发送邮件、检查收件人状态等。
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 8cd3fd6fb9975d0eba63c809b2a1699687d27b19
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 63470b3910837e08baee01881a070b9ee708c9bd
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446138"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556183"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>自动创建、发送和处理邮件
 
@@ -100,7 +100,7 @@ Prefer: outlook.allow-unsafe-html
 
 - 发生一种或多种类型的更改时（如创建或更新邮件），订阅邮件的[更改通知](/graph/api/resources/webhooks)。
 - [跟踪文件夹中邮件的增量更改](delta-query-messages.md)。
-- 创建[开放扩展](extensibility-overview.md#open-extensions)或[架构扩展](extensibility-overview.md#schema-extensions)，以将自定义数据添加到邮件实例。
+- 创建[开放扩展](extensibility-overview.md#4-open-extensions)或[架构扩展](extensibility-overview.md#3-schema-extensions)，以将自定义数据添加到邮件实例。
 - 当 Outlook MAPI 属性尚未通过 Microsoft Graph API 元数据公开时，在邮件实例中创建[扩展属性](/graph/api/resources/extended-properties-overview)以存储这些属性的自定义数据。
 
 ## <a name="next-steps"></a>后续步骤
