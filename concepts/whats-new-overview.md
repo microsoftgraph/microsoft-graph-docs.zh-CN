@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: 查看过去两个月 Microsoft Graph 中的新增功能、早期版本中添加的内容以及如何分享你的想法的亮点。
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 371cd4ad709b5cab6d18352e386872364f1f96f2
-ms.sourcegitcommit: 2cbfa9abd0b568f9e4c15930df9a378fbe924511
+ms.openlocfilehash: a823d702204451182a8acc2cc407c53216e4bbe2
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66578590"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609631"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -28,12 +28,12 @@ ms.locfileid: "66578590"
 - [获取](/graph/api/application-get) 应用程序 [的安全性和符合性认证](/graph/api/resources/certification) 的状态和其他详细 [信息，以保护](/graph/api/resources/application) 客户数据。 有关详细信息，请 [参阅Microsoft 365认证](/microsoft-365-app-certification/docs/enterprise-app-certification-guide)。
 - 使用 [Azure AD配置联合设置](/graph/api/resources/internalDomainFederation)。
 
-
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
- 配置和管理租户中 [临时访问通行证身份验证方法策略的设置](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration)。
+- 配置和管理租户中 [临时访问通行证身份验证方法策略的设置](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration)。
+- 获取[目录中用于跨租户访问设置的基本策略](/graph/api/resources/crosstenantaccesspolicy)，关于组织如何与外部 Azure Active Directory 组织交互的[默认配置](/graph/api/resources/crosstenantaccesspolicyconfigurationdefault)，以及外部 Azure Active Directory 组织的[特定于合作伙伴的配置](/graph/api/resources/crosstenantaccesspolicyconfigurationpartner)。
 
 ### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
-- 在由以下方法生成的 Teams 报表中查找新列：
+在由以下方法生成的 Teams 报表中查找新列：
   - [getTeamsUserActivityCounts](/graph/api/reportroot-getteamsuseractivitycounts)
   - [getTeamsUserActivityUserDetail](/graph/api/reportroot-getTeamsUserActivityUserDetail)
   - [getTeamsDeviceUsageUserDetail](/graph/api/reportroot-getTeamsDeviceUsageUserDetail)
@@ -43,15 +43,18 @@ ms.locfileid: "66578590"
   - [getTeamsDeviceUsageUserCounts](/graph/api/reportroot-getteamsdeviceusageusercounts)
   - [getTeamsDeviceUsageDistributionUserCounts](/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts)
 
-
 ### <a name="teamwork"></a>Teamwork
 在 Teams 中订阅以下内容的更改通知：
 - [团队和频道](teams-changenotifications-team-and-channel.md)
 - [团队和频道成员身份](teams-changenotifications-teammembership.md)
 - [聊天](teams-changenotifications-chat.md)
 - [聊天成员身份](teams-changenotifications-chatmembership.md)
+- [所有特定用户所属的聊天中的聊天消息](/graph/teams-changenotifications-chatmessage#subscribe-to-changes-at-the-user-level)。
 
 ## <a name="june-2022-new-in-preview-only"></a>2022 年 6 月：新增功能（仅限预览版）
+
+### <a name="applications"></a>应用程序
+指定[链接对象](/graph/api/resources/synchronizationLinkedObjects?view=graph-rest-beta&preserve-view=true)，这些对象可以[在按需预配期间预配](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta&preserve-view=true)，包括经理、成员、所有者等主体。
 
 ### <a name="compliance--ediscovery"></a>合规性 | 电子数据展示
 从 [安全](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) 命名空间（而不是符合性命名空间）访问 [电子数据展示 API](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true)。
@@ -77,12 +80,18 @@ ms.locfileid: "66578590"
 - 为 [分配](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) [创建](/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-beta&preserve-view=true) SharePoint 文件夹，以上传反馈文档。
 - 在与分配关联的反馈文件夹中 [创建](/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-beta&preserve-view=true) [提交](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) 的 [反馈文档](/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-beta&preserve-view=true)。
 
+### <a name="groups"></a>组
+指定是否将[组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)[配置为将组对象属性写回](/graph/api/resources/groupWritebackConfiguration?view=graph-rest-beta&preserve-view=true)本地 Active Directory。
+
 ### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
 - 将已验证的子域 [升级](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) 为根域。
 - [获取](/graph/api/application-get?view=graph-rest-beta&preserve-view=true) [单租户应用程序](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)联合的 SAML 元数据的 URL。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 隐藏租户登录页的 [登录页文本可见性设置](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) 中的自助式密码重置 (SSPR) 链接。
+
+### <a name="compliance--records-management"></a>合规性｜记录管理
+使用首次 [Microsoft Purview 记录管理 API](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true) 帮助组织管理数据的保留和删除，以满足法律义务和合规性法规。
 
 ### <a name="teamwork"></a>团队合作
 获取在[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)或 [频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) 中 [固定](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) 或 [取消固定](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) 的详细信息。 
