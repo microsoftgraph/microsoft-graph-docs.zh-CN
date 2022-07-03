@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 517d5f2d62e3d9025b8492433af2ec3fc0bd69a3
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: e21f40d99b2a7d56050fa6e8cf119ece7df259d3
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094233"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609638"
 ---
 # <a name="microsoft-graph-connectors-api-limits"></a>Microsoft Graph 连接器 API 限制
 
@@ -20,9 +20,9 @@ ms.locfileid: "66094233"
 
 | 限制类型 | 限制 |
 | ---------- | ----- |
-| 每个 Microsoft 365 租户的[连接](/graph/api/resources/externalconnectors-externalconnection)资源 | 10 |
-| 每个连接的[项目数](/graph/api/resources/externalconnectors-externalitem) | 700,000 项 |
-| 连接字节大小 | 70 GB |
+| 每个 Microsoft 365 租户的[连接](/graph/api/resources/externalconnectors-externalconnection)资源 | 10 个用于搜索，15 个用于合规 |
+| 每个连接的[项目数](/graph/api/resources/externalconnectors-externalitem) | 5,000,000 |
+| 连接字节大小 | 500 GB |
 
 ## <a name="schema-limits"></a>架构限制
 
@@ -41,7 +41,7 @@ ms.locfileid: "66094233"
 
 | 限制类型 | 限制 |
 | ---------- | ----- |
-| 通过连接引入项目的吞吐量限制。 | 每秒 4 个项目 <br> 每小时 250 MB |
+| 通过连接引入项目的吞吐量限制。 | 25 个项目/秒 |
 | 项目大小；此限制适用于[引入项目并为其建立索引](/graph/api/externalconnectors-externalconnection-put-items)时的请求正文。 | 4 MB |
 | 属性大小 | 不适用 |
 

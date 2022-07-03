@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sseth-msft
 ms.prod: compliance
 doc_type: conceptualPageType
-ms.openlocfilehash: ffc809ecf368b6ca13d57ee6ffcd36ecd958a39a
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 0c977e56c8c3cb70f2e6ee2fab17d80daff8a7be
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447558"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609680"
 ---
 # <a name="use-the-microsoft-graph-records-management-apis"></a>使用 Microsoft Graph 记录管理 API
 

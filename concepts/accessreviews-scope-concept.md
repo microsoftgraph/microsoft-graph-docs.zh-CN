@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: cb8b96c06704a3e66eee38d729fca9a627a12896
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 8da62d1d75119a6ec0dcbb6681be0d3cd9b58d94
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446215"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609617"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft 图形 API配置访问评审的范围
 
@@ -182,7 +182,6 @@ ms.locfileid: "66446215"
 此外，由于此评审适用于所有团队，因此请将 **instanceEnumerationScope** 属性配置为指定所有团队。 此评审中不包括动态组和可分配角色的组。
 
 此评审不包括具有共享频道的团队中的 B2B 直接连接用户。 若要在具有共享频道的团队中包括 B2B 直接连接用户，请参阅 [示例 11：查看分配给团队的所有用户，包括具有共享频道的团队中的 B2B 直接连接用户](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels)。
-
 
 ---
 

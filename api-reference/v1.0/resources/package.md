@@ -1,8 +1,17 @@
 ---
-author： JeremyKelley title： package ms.localizationpriority： medium description： “指示 driveItem 是”包“中的顶级项目，或应视为集合而不是单个项目的项集合。
-ms.prod：文件doc_type：resourcePageType
+author: JeremyKelley
+title: package
+ms.localizationpriority: medium
+description: 指示 driveItem 是包或项目集合中的顶级项，应将其视为集合而不是单个项。
+ms.prod: files
+doc_type: resourcePageType
+ms.openlocfilehash: 5188ae56a1e5527f76a581544a8968579d1a423e
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609610"
 ---
-
 # <a name="package-resource-type"></a>包资源类型
 
 命名空间：microsoft.graph

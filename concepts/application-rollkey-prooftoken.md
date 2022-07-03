@@ -4,20 +4,20 @@ description: 作为对 addKey 和 removeKey 方法的请求验证的一部分，
 ms.localizationpriority: high
 ms.prod: applications
 author: FaithOmbongi
-ms.openlocfilehash: 6e3f3b0c807af73e53fe9ea5e122e17c4f79c7a9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 495c0a86020ff463b0bb76ab89f4f6b367e3af8d
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525482"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609652"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>生成用于滚动密钥的所有权证明令牌
 
-可以使用在 [application](/graph/api/resources/application?view=graph-rest-1.0) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) 资源上定义的 **addKey** 和 **removeKey** 方法，以编程方式滚动过期密钥。
+可以使用在 [application](/graph/api/resources/application) 和 [servicePrincipal](/graph/api/resources/serviceprincipal) 资源上定义的 **addKey** 和 **removeKey** 方法，以编程方式滚动过期密钥。
 
 作为对这些方法的请求验证的一部分，在调用这些方法之前，将对现有密钥的所有权证明进行验证。 该证明由自签名的 JWT 令牌表示。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌有效期不应超过 10 分钟。
 
-> **注意：** 没有任何现有有效证书（尚未添加证书，或者所有证书均已过期）的应用程序将无法使用此服务操作。 可改用[更新应用程序](/graph/api/application-update?view=graph-rest-v1.0)操作来执行更新。
+> **注意：** 没有任何现有有效证书（尚未添加证书，或者所有证书均已过期）的应用程序将无法使用此服务操作。 可改用[更新应用程序](/graph/api/application-update)操作来执行更新。
 
 令牌应包含以下声明：
 
