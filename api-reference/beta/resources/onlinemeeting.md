@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: cfcfdb967348dfa1ebe12f11f97a5287fa5e94aa
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: e01ba9afac4e67c5442696e55246b92d1be65da7
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441698"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645443"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "66441698"
 | [创建](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | 创建联机会议。 |
 | [Get](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting** 对象的属性和关系。 |
 | [更新](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | 更新 **onlineMeeting** 对象的属性。 |
-| [删除](../api/onlinemeeting-delete.md) | 无 | 删除 **onlineMeeting** 对象。 |
+| [Delete](../api/onlinemeeting-delete.md) | 无 | 删除 **onlineMeeting** 对象。 |
 | [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其属性。 |
 
 ## <a name="properties"></a>属性
@@ -40,7 +40,7 @@ ms.locfileid: "66441698"
 | allowAttendeeToEnableCamera | Boolean | 指示与会者是否可以打开相机。 |
 | allowAttendeeToEnableMic | Boolean | 指示与会者是否可以打开麦克风。 |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | 指定会议聊天模式。 |
-| allowTeamworkReactions | Boolean | 指示是否为会议启用了 Teams 反应。 |
+| allowTeamworkReactions | 布尔值 | 指示是否为会议启用了 Teams 反应。 |
 | alternativeRecording  | Stream | [Microsoft Teams 实时事件](/microsoftteams/teams-live-events/what-are-teams-live-events)的替代录制的内容流。 只读。 |
 | attendeeReport        | Stream | [Teams 直播活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告的内容流。 只读。   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (电话拨入) 联机会议的信息。 只读。 |
@@ -50,17 +50,18 @@ ms.locfileid: "66441698"
 | endDateTime           | 日期时间 | UTC 中的会议结束时间。   |
 | externalId            | String | 外部 ID。 自定义 ID。 可选。      |
 | id | String | 与联机会议关联的默认 ID。 只读。    |
-| isBroadcast | Boolean | 指示这是否是 [Teams 直播活动](/microsoftteams/teams-live-events/what-are-teams-live-events)。 |
+| isBroadcast | 布尔值 | 指示这是否是 [Teams 直播活动](/microsoftteams/teams-live-events/what-are-teams-live-events)。 |
 | isEntryExitAnnounced  | Boolean | 指示在呼叫者加入或离开时是要宣布的。 |
 | joinWebUrl | String | 联机会议的联接 URL。 只读。 |
 | joinInformation | [itemBody](itembody.md) | “Accept-Language”请求 HTTP 标头中指定的语言和区域设置变体中的联接信息。 只读。 |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | 指定 **joinMeetingId**、会议密码和密码要求。 |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议大厅。 |
 | participants | [meetingParticipants](meetingparticipants.md) | 与联机会议关联的参与者。 这包括组织者和与会者。 |
 | recordAutomatically | Boolean | 指示是否自动录制会议。 |
 | 记录 | Stream | [Teams 实时事件](/microsoftteams/teams-live-events/what-are-teams-live-events)录制的内容流。 只读。 |
 | startDateTime | 日期时间 | 会议开始时间（UTC）。 |
 | subject | String | 联机会议的主题。 |
-| videoTeleconferenceId | String | 视频电话会议 ID。 只读。 |
+| videoTeleconferenceId | 字符串 | 视频电话会议 ID。 只读。 |
 | autoAdmittedUsers (已弃用)  | String | 指定将自动允许进入联机会议的参与者类型的设置。 可取值为：`everyone`、`everyoneInSameAndFederatedCompany`、`everyoneInCompany`、`invitedUsersInCompany`、`organizer`。 只读。 |
 | 功能 (已弃用)  | meetingCapabilities 集合 | 会议功能列表。 可能的值为： `questionAndAnswer`，`unknownFutureValue`。 |
 
@@ -116,25 +117,26 @@ ms.locfileid: "66441698"
 }-->
 ```json
 {
+  "allowAttendeeToEnableCamera": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowedPresenters": "String",
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowTeamworkReactions": "Boolean",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "joinWebUrl": "String",
-  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
-  "startDateTime": "String (timestamp)",
-  "subject": "String",
-  "videoTeleconferenceId": "String",
-  "isEntryExitAnnounced": "Boolean",
-  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "String",
+  "id": "String (identifier)",  
   "isBroadcast": "Boolean",
-  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
-  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean",
-  "allowAttendeeToEnableMic": "Boolean",
-  "allowAttendeeToEnableCamera": "Boolean"
+  "isEntryExitAnnounced": "Boolean",
+  "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
+  "joinWebUrl": "String",
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
+  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
+  "startDateTime": "String (timestamp)",  
+  "subject": "String",
+  "videoTeleconferenceId": "String"
 }
 ```
 

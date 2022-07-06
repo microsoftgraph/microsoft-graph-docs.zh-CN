@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 541e2079d7eb9a27f61acf6e0f46e7b194dd7321
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 7d1d19378d27cb65365d5a9999974aa16b511661
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820789"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645246"
 ---
 # <a name="todotask-resource-type"></a>todoTask 资源类型
 
@@ -50,6 +50,7 @@ ms.locfileid: "65820789"
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区内完成任务的日期。|
 |createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2020 年 1 月 1 日午夜 UTC 如下所示：“2020-01-01T00：00：00Z”。|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内完成任务的日期。|
+|hasAttachments|Boolean|指示任务是否具有附件。|
 |id|String|任务的唯一标识符。 默认情况下，当项从一个列表移动到另一个列表时，此值会更改。|
 |importance|importance|任务的重要性。 可取值为：`low`、`normal`、`high`。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
@@ -62,6 +63,7 @@ ms.locfileid: "65820789"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
+|attachments|[taskFileAttachment](../resources/taskfileattachment.md) 集合| 任务的文件附件集合。|
 |checklistItems|[checklistItem](../resources/checklistitem.md) 集合|链接到更复杂的父任务的较小子任务的集合。 |
 |extensions|[扩展](extension.md)集合| 为任务定义的开放扩展的集合。 可为 NULL。|
 |linkedResources|[linkedResource](../resources/linkedresource.md) 集合|链接到任务的资源集合。|

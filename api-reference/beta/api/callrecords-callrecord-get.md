@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3763bae6271b7a1586b1e1173b551d424b73163c
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 3bf549e32d8da24b6ed70738bf77e54a18e6cf7b
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366217"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645564"
 ---
 # <a name="get-callrecord"></a>获取 callRecord
 
@@ -22,7 +22,7 @@ ms.locfileid: "65366217"
 
 可通过两种方法获取 **callRecord** 的 **ID**：
 
-* 订阅到终结点的`/communications/callRecords`[更改通知](/graph/api/resources/webhooks?view=graph-rest-beta)。
+* 订阅到终结点的`/communications/callRecords`[更改通知](/graph/api/resources/webhooks)。
 * 使用 [调用](../resources/call.md)的 **callChainId** 属性。 调用记录仅在关联的调用完成后才可用。
 
 ## <a name="permissions"></a>权限
@@ -33,7 +33,7 @@ ms.locfileid: "65366217"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | CallRecords.Read.All |
+| Application                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

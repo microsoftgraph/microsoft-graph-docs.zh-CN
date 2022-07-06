@@ -1,16 +1,16 @@
 ---
 title: accessReviewRecommendationInsightSetting 资源类型
-description: 在Azure AD评审中，accessReviewRecommendationInsightSetting 表示与为访问评审提供的见解相关联的设置。
+description: 在 Azure AD 访问评审中，accessReviewRecommendationInsightSetting 表示与为访问评审提供的见解相关联的设置。
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ce3e5406163765a7acc4533399b9a0ae4f5f3545
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: beedb05c7e22ca3a3fcda781eff68a63779ca52b
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137236"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645093"
 ---
 # <a name="accessreviewrecommendationinsightsetting-resource-type"></a>accessReviewRecommendationInsightSetting 资源类型
 
@@ -20,7 +20,8 @@ ms.locfileid: "62137236"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-**accessReviewRecommendationInsightSetting** 允许你为 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md)配置见解。 这是 [accessReviewRecommendationInsightSetting](accessReviewRecommendationInsightSetting.md) 派生类型的抽象类型。
+**AccessReviewRecommendationInsightSetting** 允许你为 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 配置见解。 此复杂类型是以下派生类型的抽象类型：
++ [userLastSignInRecommendationInsightSetting](userlastsignInrecommendationinsightsetting.md)
 
 
 ## <a name="relationships"></a>关系

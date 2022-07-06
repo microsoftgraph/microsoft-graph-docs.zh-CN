@@ -5,22 +5,24 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7f580dbce3bf83bc09403bd25a60cd00a01ab5d5
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: fb3ccef7898305dbd76f891ff85019da853187dc
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791838"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645483"
 ---
 # <a name="update-profilephoto"></a>更新 profilePhoto
 
 命名空间：microsoft.graph
 
-更新登录 **用户**、指定 **组** 或 **联系人** 的照片。由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的照片小于 4 MB。
+更新已登录 **用户**、指定 **组** 或 **联系人** 的照片。
+
+由于每个 REST 请求的总大小当前限制为 4 MB，可以添加的照片大小也限制为 4 MB。 以下是Exchange Online上 HD 照片支持的维度：`48x48`、、`64x64`、`96x96`、`240x240``120x120`、`360x360`、`432x432``504x504`和 `648x648`。
 
 可以在版本 1.0 中使用 PATCH 或 PUT 执行此操作。
 
-> **注意**：1.0 版本中的操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
+> **注意：** 此操作仅支持用户的工作或学校邮箱，而不支持个人邮箱。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,9 +52,9 @@ ms.locfileid: "61791838"
 |应用程序      |    Contacts.ReadWrite           |
 
 > [!NOTE]
-> 1. 若要更新组织中任何用户的照片，你的应用必须具有 *User.ReadWrite.All* 应用程序权限，并且以其自己的身份（而不是代表用户）调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。 更新已登录用户的照片仅需要 *User.ReadWrite* 权限。
+> 1. 若要更新组织中任何用户的照片，应用必须具有 *User.ReadWrite.All* 应用程序权限，并以自己的标识（而不是代表用户）调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。 更新已登录用户的照片仅需要 *User.ReadWrite 权* 限。
 > 2. 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
-> 3. 目前，B2C 租户不支持使用 Microsoft Graph API 更新Azure AD的照片。
+> 3. Azure AD B2C 租户目前不支持使用 Microsoft 图形 API 更新用户的照片。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -87,7 +89,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 如果成功，此方法返回 `200 OK` 响应代码。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

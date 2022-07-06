@@ -5,19 +5,21 @@ author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: ea5843b3658e42d609b775761cd80104dd955756
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: bc5f717a75dc3d1d0755a2155a40793013c64134
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447330"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645528"
 ---
 # <a name="signin-confirmcompromised"></a>signIn：confirmCompromised
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-允许管理员将 Azure AD 登录日志中的事件标记为有风险。 在 Azure AD 标识保护中，被管理员标记为有风险的事件会立即标记为高风险，替代以前的风险状态。 管理员可以确认被 Azure AD 标识保护标记为有风险的事件实际上存在风险，并将其转移到高风险。 有关调查标识保护风险的详细信息，请参阅 [如何调查风险](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)。
+允许管理员将 Azure AD 登录日志中的事件标记为有风险。 在 Azure AD 标识保护中，被管理员标记为有风险的事件会立即标记为高风险，替代以前的风险状态。 管理员可以确认被 Azure AD 标识保护标记为有风险的事件实际上存在风险。
+
+有关调查标识保护风险的详细信息，请参阅 [如何调查风险](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +28,7 @@ ms.locfileid: "66447330"
 |:---|:---|
 |委派（工作或学校帐户）|IdentityRiskyUser.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|IdentityRiskEvent.ReadWrite.All|
+|Application|IdentityRiskEvent.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -1,26 +1,26 @@
 ---
-title: List user memberOf
-description: 获取用户是直接成员中的组、目录角色和管理单元。 此操作不可传递。
+title: 列出用户的直接成员身份
+description: 获取用户直接所属的组，目录角色和管理单位。 此操作不可传递。
 ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a16b1a3130b0ab7667624c4a20149cc5eab55ae5
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: c1134f23ac1d9df43ea6f3cee6787bcf94101fcb
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64630007"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645509"
 ---
-# <a name="list-user-memberof"></a>List user memberOf
+# <a name="list-a-users-direct-memberships"></a>列出用户的直接成员身份
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户直接所属的[组](../resources/group.md)，[目录角色](../resources/directoryrole.md)和[管理单位](../resources/administrativeunit.md)。 此操作不可传递。
+获取用户直接所属的[组](../resources/group.md)，[目录角色](../resources/directoryrole.md)和[管理单位](../resources/administrativeunit.md)。 此操作不可传递。 若要通过传递成员身份检索用户所属的组、目录角色和管理单元，请使用 [列表用户可传递成员Of](user-list-transitivememberof.md) API。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 1b546da83c3f53ad1b8126e2967e224e9569cbf5
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 45b14ce9fc0e687c5fbc2cd20fc7b63509d54a0f
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439684"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645392"
 ---
 # <a name="groupwritebackconfiguration-resource-type"></a>groupWritebackConfiguration 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "66439684"
 |属性|类型|说明|
 |:---|:---|:---|
 |isEnabled|Boolean|指示是否已启用将云组写回本地 Active Directory。 可为 NULL。 默认值 `true` 适用于 Microsoft 365 组和安全 `false` 组。 继承自 [writebackConfiguration](../resources/writebackconfiguration.md)。|
-|onPremisesGroupType|String|指示将写回云对象的目标本地组类型。 可为 NULL。 可能的值包括 `universalDistributionGroup`、`universalSecurityGroup`、`universalMailEnabledSecurityGroup`。 <br>+ 如果云组是统一 (Microsoft 365) 组，则此属性可以是下列属性之一： `universalDistributionGroup`， `universalSecurityGroup`。 `universalMailEnabledSecurityGroup` <br> + Azure AD 安全组可以写回为 `universalSecurityGroup`。 <br> + 如果 **isEnabled** 或`NewUnifiedGroupWritebackDefault`[组设置](directorysetting.md)为`true`，但未显式配置此属性： <br> &nbsp;&nbsp; + Microsoft 365 组将默认写回`universalDistributionGroup` <br> &nbsp;&nbsp; + 默认情况下将写回`universalSecurityGroup`安全组|
+|onPremisesGroupType|String|指示将写回云对象的目标本地组类型。 可为 NULL。 可能的值包括 `universalDistributionGroup`、`universalSecurityGroup`、`universalMailEnabledSecurityGroup`。<ol><li>如果云组是统一 (Microsoft 365) 组，则此属性可以是下列属性之一： `universalDistributionGroup``universalSecurityGroup``universalMailEnabledSecurityGroup` </li><li>Azure AD 安全组可以写回为 `universalSecurityGroup`。 </li><li>如果 **isEnabled** 或`NewUnifiedGroupWritebackDefault`[组设置](directorysetting.md)为`true`，但未显式配置此属性： <ul><li>默认情况下，Microsoft 365 组将被写回`universalDistributionGroup`</li></ul><ul><li>默认情况下，安全组将写回`universalSecurityGroup`</li></ul>|
 
 ## <a name="relationships"></a>关系
 无。

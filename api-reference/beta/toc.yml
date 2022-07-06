@@ -974,6 +974,7 @@ items:
                   - name: 删除键
                     href: api/application-removekey.md
               - name: '联合标识凭据 (预览) '
+                displayName: 'Workload identity federation, workload identities'
                 items:
                   - name: 概述
                     href: resources/federatedidentitycredentials-overview.md
@@ -2213,7 +2214,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -14719,7 +14720,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列出
                     href: api/simulationautomation-list-runs.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -15753,7 +15754,15 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: 从聊天中删除应用
                     href: api/chat-delete-installedapps.md
-          - name: Device
+          - name: 应用设置
+            items:
+              - name: 应用设置
+                href: resources/teamsappsettings.md
+              - name: 获取
+                href: api/teamsappsettings-get.md
+              - name: 更新
+                href: api/teamsappsettings-update.md
+          - name: 设备
             items:
               - name: 预配的设备
                 href: resources/teamworkdevice.md
@@ -16094,6 +16103,20 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
                 href: api/opentypeextension-get.md
+          - name: 文件附件
+            items:
+              - name: 文件附件
+                href: resources/taskfileattachment.md
+              - name: 列出
+                href: api/todotask-list-attachments.md
+              - name: 获取
+                href: api/taskfileattachment-get.md
+              - name: 删除
+                href: api/taskfileattachment-delete.md
+              - name: 附加所有文件大小
+                href: api/taskfileattachment-createuploadsession.md
+              - name: 附加小型文件
+                href: api/todotask-post-attachments.md
           - name: 清单项
             href: resources/checklistitem.md
             items:

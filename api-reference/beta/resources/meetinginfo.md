@@ -2,15 +2,15 @@
 title: meetingInfo 资源类型
 description: 指定用于创建或加入会议的会议信息。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2330fe401ed0f220792bbf0de38bfb92b2aade28
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf845e7867f8a2e69019b8807383feb5c417f1ef
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971666"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645424"
 ---
 # <a name="meetinginfo-resource-type"></a>meetingInfo 资源类型
 
@@ -18,17 +18,18 @@ ms.locfileid: "47971666"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-这是一个包含会议特定信息的抽象类。
+这是一个抽象类，包含特定于会议的信息。
  
-若要加入现有会议，必须将 [organizerMeetingInfo](organizermeetinginfo.md) 与 [chatInfo](./chatinfo.md)或仅指定 [tokenMeetingInfo](tokenmeetinginfo.md)一起指定。
+若要加入现有会议，必须将 [organizerMeetingInfo](organizermeetinginfo.md) 与 [chatInfo](./chatinfo.md)、 [tokenMeetingInfo](tokenmeetinginfo.md) 或 [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md) 结合指定。
 
 
 ## <a name="derived-types"></a>派生类型
 
-| 类型                                                 | 说明                                                         |
-|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| [organizerMeetingInfo](./organizermeetinginfo.md)    | 有关会议组织者的详细信息                          |
-| [tokenMeetingInfo](tokenmeetinginfo.md)              | 包含有关会议的信息的加密令牌  |
+| 类型                                                    | 说明                                                         |
+|:--------------------------------------------------------|:--------------------------------------------------------------------|
+| [joinMeetingIdMeetingInfo](joinmeetingidmeetingInfo.md) | 包含会议的 **joinMeetingId** 和 **密码** 。     |
+| [organizerMeetingInfo](./organizermeetinginfo.md)       | 有关会议组织者的详细信息。                         |
+| [tokenMeetingInfo](tokenmeetinginfo.md)                 | 包含有关会议信息的加密令牌。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

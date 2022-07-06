@@ -1,24 +1,24 @@
 ---
-title: List user transitive memberOf
-description: 获取用户所属的组、目录角色和管理单元。 此 API 请求是可传递的，还会返回用户是嵌套成员的所有组。
+title: 列出用户 (直接和可传递) 的成员身份
+description: 通过直接成员身份或可传递成员身份获取用户所属的组、目录角色和管理单元。
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 40bc10527f78d1b4437222782e10d0e354482c3d
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 484bcb632dcd986607ecddf9eff803e1304cc6cc
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206599"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645312"
 ---
-# <a name="list-user-transitive-memberof"></a>List user transitive memberOf
+# <a name="list-a-users-memberships-direct-and-transitive"></a>列出用户 (直接和可传递) 的成员身份
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户所属的组、目录角色和管理单元。 此 API 请求是可传递的，还会返回用户是嵌套成员的所有组。
+通过直接成员身份或可传递成员身份获取用户所属的[组](../resources/group.md)、[目录角色](../resources/directoryrole.md)[和管理单元](../resources/administrativeunit.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -198,7 +198,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 093cfa3291324c4520c77f8603e0f05d0ce48b6d
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 2a6d4639a681da83a52ebe11298477b4beccbc0a
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191490"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645554"
 ---
 <!-- markdownlint-disable MD001 MD022 MD024 -->
 
@@ -28,9 +28,9 @@ ms.locfileid: "65191490"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持                                                                           |
-| 委派（个人 Microsoft 帐户） | 不支持                                                                           |
-| Application                            | Calls.JoinGroupCalls.Chat*、Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate.All、Calls.InitiateGroupCalls.All |
+| 委派（工作或学校帐户）     | 不支持。                                                                          |
+| 委派（个人 Microsoft 帐户） | 不支持。                                                                          |
+| Application                            | Calls.JoinGroupCalls.Chat*、Calls.JoinGroupCallAsGuest.All、Calls.JoinGroupCall.All、Calls.Initiate.All、Calls.InitiateGroupCall.All |
 
 > **笔记：** 对于应用托管媒体的调用，除了列出的权限之一外，还需要 Call.AccessMedia.All 或 Calls.AccessMedia.Chat* 权限。
 >
@@ -145,6 +145,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create-call-service-hosted-media-1",
   "@odata.type": "microsoft.graph.call"
 } -->
 
@@ -466,7 +467,7 @@ Content-Type: application/json
 
 ---
 
-`<Media Session Configuration>` 是包含媒体堆栈的会话信息的序列化媒体会话配置。 有关音频、视频、VBSS ssession 信息的特定信息应在此处传递。
+`<Media Session Configuration>` 是包含媒体堆栈的会话信息的序列化媒体会话配置。 有关音频、视频、VBSS 会话信息的特定信息应在此处传递。
 
 下面是音频媒体会话 Blob 的示例。
 
@@ -483,6 +484,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 } -->
 
@@ -558,18 +560,16 @@ Content-Type: application/json
 
 #### <a name="request"></a>请求
 
+<!-- {
+  "blockType": "request",
+  "@odata.type": "microsoft.graph.call",
+  "name": "create-group-call-service-hosted-media"
+}-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call",
-  "truncated": true
-}-->
-
-```json
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
@@ -621,6 +621,82 @@ Content-Type: application/json
 }
 ```
 
+#### <a name="response"></a>响应
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "create-group-call-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "subject": "Create a group call with service hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d17646-3110-40b1-bae6-e9ac6c3f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "myParticipantId": "c9a65b85-a223-44ae-8cdb-29395458323f",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+}
+```
+
 ### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>示例 4：使用应用程序托管媒体创建组调用
 
 这最多支持 5 个 VoIP 用户。 此示例演示如何创建包含两个 VoIP 用户的组调用。
@@ -628,22 +704,20 @@ Content-Type: application/json
 
 #### <a name="request"></a>请求
 
+<!-- {
+  "blockType": "request",
+  "@odata.type": "microsoft.graph.call",
+  "name": "create-group-call-app-hosted-media"
+}-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call",
-  "truncated": true
-}-->
-
-```json
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
-  "subject": "Create a group call with service hosted media",
+  "subject": "Create a group call with app hosted media",
   "callbackUri": "https://bot.contoso.com/callback",
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
@@ -692,19 +766,96 @@ Content-Type: application/json
 }
 ```
 
+#### <a name="response"></a>响应
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "create-group-call-app-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "subject": "Create a group call with app hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+    "removeFromDefaultAudioGroup": false
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "myParticipantId": "c9a65b85-a223-44ae-8cdb-29395458323f",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+}
+```
+
 ### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>示例 5：与服务托管媒体加入计划会议
 
 若要加入计划的会议，我们需要获取安排会议的线程 ID、消息 ID、组织者 ID 和租户 ID。
-可从 [“获取联机会议”API](../api/onlinemeeting-get.md) 获取此信息。
+可从 [Get onlineMeeting](../api/onlinemeeting-get.md) API 获取此信息。
 
-必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从  [Get Online 会议 API](../api/onlinemeeting-get.md) 获取的详细信息替换为实际值，使示例正常工作。
+必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从 [Get onlineMeeting](../api/onlinemeeting-get.md) API 获取的详细信息替换为实际值，使示例正常工作。
 
 > **注意：** 此示例需要权`Calls.JoinGroupCalls.All`限或 [特定于](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)`Calls.JoinGroupCalls.Chat`资源的权限。
 
 #### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "join-meeting-service-hosted-media",
@@ -783,6 +934,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": "true",
+  "name": "join-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
 
@@ -1062,13 +1214,254 @@ Content-Type: application/json
 
 >**注意：** 对于除呼叫状态通知之外的加入会议方案，我们会收到名册通知。
 
-### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>示例 6：使用应用托管媒体加入计划会议
-若要使用应用程序托管媒体加入会议，请使用 [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 更新媒体配置，如以下示例所示。
+### <a name="example-6-join-a-scheduled-meeting-with-joinmeetingid-and-passcode"></a>示例 6：使用 joinMeetingId 和密码加入计划的会议
+下面显示了一个示例，该示例需要 **joinMeetingId** 和 **密码** 才能加入现有会议。 可以从 [Get onlineMeeting](../api/onlinemeeting-get.md) API 检索这些属性。
 
->**注意：** 此示例需要权`Calls.AccessMedia.All`限或 [特定于](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)`Calls.AccessMedia.Chat`资源的权限。
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "join-meeting-with-join-meeting-id-and-passcode",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+      {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+      },
+      {
+        "uri": "https://cdn.contoso.com/cool.wav",
+        "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+      }
+    ]
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.joinMeetingIdMeetingInfo",
+    "joinMeetingId": "1234567",
+    "passcode": "psw123"
+  },
+  "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb"
+}
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "name": "join-meeting-with-join-meeting-id-and-passcode",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "chatInfo": {
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNNkYTFm@thread.v2",
+    "messageId": "0",
+    "replyChainMessageId": null
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.joinMeetingIdMeetingInfo",
+    "joinMeetingId": "1234567",
+    "passcode": "psw123"
+  },
+  "transcription": null,
+  "routingPolicies": [],
+  "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb",
+  "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "subject": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### <a name="example-7-join-a-scheduled-meeting-with-joinmeetingid"></a>示例 7：使用 joinMeetingId 加入计划的会议
+下面显示了一个需要 **joinMeetingId** 但不需要 **密码** 才能加入现有会议的示例。 可以从 [Get onlineMeeting API 检索 joinMeetingId](../api/onlinemeeting-get.md) 属性。
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "join-meeting-with-join-meeting-id-and-without-passcode",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+      {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+      },
+      {
+        "uri": "https://cdn.contoso.com/cool.wav",
+        "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+      }
+    ]
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.joinMeetingIdMeetingInfo",
+    "joinMeetingId": "1234567",
+    "passcode": null
+  },
+  "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb"
+}
+```
+
+#### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
+  "name": "join-meeting-with-join-meeting-id-and-without-passcode",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "chatInfo": {
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNNkYTFm@thread.v2",
+    "messageId": "0",
+    "replyChainMessageId": null
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.joinMeetingIdMeetingInfo",
+    "joinMeetingId": "1234567",
+    "passcode": null
+  },
+  "transcription": null,
+  "routingPolicies": [],
+  "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb",
+  "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "subject": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### <a name="example-8-join-scheduled-meeting-with-app-hosted-media"></a>示例 8：与应用托管媒体加入计划会议
+若要使用应用程序托管媒体加入会议，请使用 [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 更新媒体配置，如以下示例所示。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
   "name": "join-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -1110,17 +1503,95 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>示例 7：使用服务托管媒体加入频道会议
-频道内的会议需要使用 [Get Online 会议 API](../api/onlinemeeting-get.md) 获取的特定详细信息，例如线程 ID、messageid 和组织者详细信息。
+#### <a name="response"></a>响应
 
-必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从  [Get Online 会议 API](../api/onlinemeeting-get.md) 获取的详细信息替换为实际值，使示例正常工作。
+<!-- {
+  "blockType": "response",
+  "name": "join-meeting-app-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+  },
+  "chatInfo": {
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
+    "messageId": "0",
+    "replyChainMessageId": null
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "organizer": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "user": {
+        "@odata.type": "#microsoft.graph.identity",
+        "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "displayName": "Bob"
+      }
+    },
+    "allowConversationWithoutHost": true
+  },
+  "transcription": null,
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "subject": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### <a name="example-9-join-channel-meeting-with-service-hosted-media"></a>示例 9：使用服务托管媒体加入频道会议
+在频道内开会需要使用 [Get onlineMeeting](../api/onlinemeeting-get.md) API 获取的特定详细信息，例如线程 ID、消息 ID 和组织者详细信息。
+
+必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从 [Get onlineMeeting](../api/onlinemeeting-get.md) API 获取的详细信息替换为实际值，使示例正常工作。
 
 > **注意：** 此示例需要权 `Calls.JoinGroupCalls.All` 限。
 
 #### <a name="request"></a>请求
 
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
   "name": "join-channel-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -1169,7 +1640,94 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>示例 8：使用服务托管媒体以来宾身份加入频道会议
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "name": "join-channel-meeting-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "chatInfo": {
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
+    "messageId": "1533758867081",
+    "replyChainMessageId": null
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "organizer": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "user": {
+        "@odata.type": "#microsoft.graph.identity",
+        "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "displayName": "Bob"
+      }
+    },
+    "allowConversationWithoutHost": true
+  },
+  "transcription": null,
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "subject": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### <a name="example-10-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>示例 10：使用服务托管媒体以来宾身份加入频道会议
 若要以来宾身份加入频道会议，需要创建来宾 [标识](../resources/identityset.md) 并将其添加为加入会议请求中的呼叫源。
 显示名称是要在会议中显示来宾标识的名称。 ID 可能是标识来宾标识的唯一 ID。
 
@@ -1178,7 +1736,7 @@ Content-Type: application/json
 #### <a name="request"></a>请求
 
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
   "name": "join-channel-meeting-as-guest-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -1240,6 +1798,93 @@ Content-Type: application/json
 
 > **注意：** 来宾加入取决于会议的租户设置。 应用程序可能会被放入大厅等待用户接受。 这是由属性定义的`isInLobby`
 
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "name": "join-channel-meeting-as-guest-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "guest": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Guest User",
+        "id": "d7a3b999-17ac-4bca-9e77-e6a730d2ec2e"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "chatInfo": {
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
+    "messageId": "1533758867081",
+    "replyChainMessageId": null
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "organizer": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "user": {
+        "@odata.type": "#microsoft.graph.identity",
+        "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "displayName": "Bob"
+      }
+    },
+    "allowConversationWithoutHost": true
+  },
+  "transcription": null,
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "subject": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
 #### <a name="notification---roster"></a>通知 - 名单
 
 ```http
@@ -1297,7 +1942,7 @@ Content-Type: application/json
 
 > **注意：** 在会议从大厅中承认之前，该应用程序将不会收到会议参与者的名单
 
-### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>示例 9：使用服务托管媒体创建对等 PSTN 调用
+### <a name="example-11-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>示例 11：使用服务托管媒体创建对等 PSTN 调用
 
 > **注意：** 此调用需要 Call.Initiate.All 权限。
 
@@ -1383,6 +2028,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
+  "name": "create-call-service-hosted-media-2",
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
@@ -1466,7 +2112,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-10-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>示例 10：使用应用程序托管媒体创建对等 PSTN 调用
+### <a name="example-12-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>示例 12：使用应用程序托管媒体创建对等 PSTN 调用
 
 > **注意**：此示例需要 Calls.Initiate.All 和 Calls.AccessMedia.All 权限。
 
@@ -1553,6 +2199,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
+  "name": "create-call-service-hosted-media-3",
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->

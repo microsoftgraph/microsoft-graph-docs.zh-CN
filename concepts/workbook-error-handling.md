@@ -4,12 +4,12 @@ description: 查找有关处理 Microsoft Graph 中 Excel API 在通过 API 发�
 author: grangeryy
 ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: dcdbb5cd741a5264b6727201057d2c2b17f515ab
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 7e115fe0a09c519ecad98f49524ca3ebd86001fd
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554965"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645411"
 ---
 # <a name="error-handling-for-excel-apis"></a>Excel API 的错误处理
 
@@ -151,7 +151,7 @@ Microsoft Graph 客户端应使用以下步骤来处理 Excel API 出现的错�
 
 ## <a name="diagnostic-information"></a>诊断信息
 
-响应中未在前面的步骤中使用的所有内容仅用于诊断目的 (包括 **消息** 字段) 中的字符串。 我们不会重新表示你依赖这些内容，因为它们可能会在不通知的情况下更改。
+响应中未在前面的步骤中使用的所有内容仅用于诊断目的 (包括 **消息** 字段) 中的字符串。 我们不建议你依赖这些内容，因为它们可能会在不通知的情况下更改。
 
 ## <a name="special-case-handling"></a>特殊案例处理
 

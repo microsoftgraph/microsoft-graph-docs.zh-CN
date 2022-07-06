@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e45050a5f6f453b9d8619dd04c3bf29fd25d3e00
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: da76fcc9cdd9dba812aab0cad322d490fb52158c
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936913"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645394"
 ---
 # <a name="chart-image"></a>图表：图像
 
@@ -19,14 +19,14 @@ ms.locfileid: "60936913"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过缩放图表以适应指定的尺寸，将图表呈现为 base64 编码的图像。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/Ima
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |height|number|可选。生成的图像的所需高度。|
 |width|number|可选。生成的图像的所需宽度。|
@@ -80,11 +80,11 @@ Content-type: application/json
 
 对于默认行为，请使用 `Image(width=0,height=0,fittingMode='fit')`。 下面的示例展示了使用默认参数返回的图表图像。
 
-![使用默认高度和宽度的 Excel 图表图像。](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-default.png)
+![显示默认高度和宽度的 Excel 图表图像的屏幕截图。](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-default.png)
 
 若要自定义图像的显示方式，请指定高度、宽度和调整模式。 下面展示了使用 `Image(width=500,height=500,fittingMode='Fill')` 参数检索的同一个图表图像。
 
-![使用默认高度和宽度的 Excel 图表图像。](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-fill.png)
+![显示具有指定高度和宽度的 Excel 图表图像的屏幕截图。](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

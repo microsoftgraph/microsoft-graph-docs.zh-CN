@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 17b08b04e88c6ef3b8a0b9ec8acad48535eff6f1
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 773505f386f075b4e012e615006602820d8b324b
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555234"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645282"
 ---
 # <a name="update-group"></a>更新组
 
@@ -59,7 +59,8 @@ PATCH /groups/{id}
 | mailNickname            | String  | 组的邮件别名，它对于组织中的 Microsoft 365 组是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。                                                                                                                                                             |
 | preferredDataLocation   | String  | Microsoft 365 组的首选数据位置。 若要更新此属性，必须为调用用户分配以下 Azure AD 角色之一： <br><ul><li> 全局管理员 <li> 用户帐户管理员 <li> 合作伙伴层级 1 或层级 2 支持 <li>目录写入程序 <li> Exchange 管理员 <li> SharePoint 管理员 </ul> <br/>有关此属性详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
 | securityEnabled         | Boolean | 指定组是否为安全组，包括 Microsoft 365 组。                                                                                                                                                                                                                                                                                                                                                                                                             |
-| visibility              | String  | 指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。                                                                                                                                                                                                                                                                                                                                              |
+| visibility              | 字符串  | 指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。                                                                                                                                                                                                                                                                                                                                              |
+| writebackConfiguration                     | [groupWritebackConfiguration](../resources/groupwritebackconfiguration.md)                                                                  | 指定是否将组配置为将组对象属性写回本地 Active Directory。 在 [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-group-writeback-v2) 同步客户端中配置组写回时，将使用这些属性。|  
 
 > [!IMPORTANT]
 >
@@ -72,10 +73,10 @@ PATCH /groups/{id}
 
 ### <a name="manage-extensions-and-associated-data"></a>管理扩展和关联的数据
 
-使用此 API 管理 [目录、架构和打开扩展](/graph/extensibility-overview) 及其组数据，如下所示：
+使用此 API 管理组的 [目录、架构和开放扩展](/graph/extensibility-overview) 及其数据，如下所示：
 
 + 在现有组的扩展中添加、更新和存储数据。
-+ 对于目录和架构扩展，通过将自定义扩展属性的值设置为 `null`删除任何存储的数据。 对于打开的扩展，请使用 [“删除”打开的扩展](/graph/api/opentypeextension-delete) API。
++ 对于目录和架构扩展，可通过将自定义扩展属性的值设置为 `null` 来删除任何存储的数据。 对于开放扩展，请使用 [删除开放扩展](/graph/api/opentypeextension-delete) API。
 
 ## <a name="response"></a>响应
 

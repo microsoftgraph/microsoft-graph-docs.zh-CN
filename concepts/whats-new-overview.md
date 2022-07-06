@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: 查看过去两个月 Microsoft Graph 中的新增功能、早期版本中添加的内容以及如何分享你的想法的亮点。
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: a823d702204451182a8acc2cc407c53216e4bbe2
-ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
+ms.openlocfilehash: 57e86b50b14c87a00341a296af38f22669c3651b
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2022
-ms.locfileid: "66609631"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645242"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -54,7 +54,7 @@ ms.locfileid: "66609631"
 ## <a name="june-2022-new-in-preview-only"></a>2022 年 6 月：新增功能（仅限预览版）
 
 ### <a name="applications"></a>应用程序
-指定[链接对象](/graph/api/resources/synchronizationLinkedObjects?view=graph-rest-beta&preserve-view=true)，这些对象可以[在按需预配期间预配](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta&preserve-view=true)，包括经理、成员、所有者等主体。
+指定[链接对象](/graph/api/resources/synchronization-synchronizationLinkedObjects?view=graph-rest-beta&preserve-view=true)，这些对象可以[在按需预配期间预配](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta&preserve-view=true)，包括经理、成员、所有者等主体。
 
 ### <a name="compliance--ediscovery"></a>合规性 | 电子数据展示
 从 [安全](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) 命名空间（而不是符合性命名空间）访问 [电子数据展示 API](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true)。

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e735e4440eec0b5ab82f0e7b3cbddc16f851114f
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 6c87a2357674f50d281bafe8a9fc3661ee0dae5a
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884251"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645501"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -22,9 +22,9 @@ ms.locfileid: "65884251"
 
 例如，你能够：
 
-- 使用 [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)、 [会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id) 或 [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl) 获取 onlineMeeting 的详细信息。
-- `/attendeeReport`使用路径以下载链接的形式获取 [Microsoft Teams 直播活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告，如[示例 4](#example-4-fetch-attendee-report-of-a-teams-live-event) 所示。
-- `/recording`使用和`/alternativeRecording`路径以下载链接的形式获取 [Teams 实时事件](/microsoftteams/teams-live-events/what-are-teams-live-events)的录制，如[示例 5](#example-5-fetch-recording-of-a-teams-live-event) 所示。
+- 使用 [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)、 [会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id)、 [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl) 或 [joinMeetingId 获取 onlineMeeting](#example-4-retrieve-an-online-meeting-by-joinmeetingid) 的详细信息。
+- `/attendeeReport`使用路径以下载链接的形式获取 [Microsoft Teams 直播活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告，如[示例 5](#example-5-fetch-the-attendee-report-of-a-teams-live-event) 所示。
+- `/recording`使用和`/alternativeRecording`路径以下载链接的形式获取 [Teams 实时事件](/microsoftteams/teams-live-events/what-are-teams-live-events)的录制，如[示例 6](#example-6-fetch-the-recording-of-a-teams-live-event) 所示。
 
 Teams 实时事件与会者报告和 Teams 实时事件录制是联机会议项目。 有关详细信息，请参阅 [联机会议项目和权限](/graph/cloud-communications-online-meeting-artifacts)。
 
@@ -36,7 +36,7 @@ Teams 实时事件与会者报告和 Teams 实时事件录制是联机会议项�
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read、OnlineMeetings.ReadWrite          |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                         |
-| 应用程序                            | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All  |
+| Application                            | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All  |
 
 若要对此 API 使用应用程序权限，租户管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy) 并将其授予用户授权策略中配置的应用，以便代表该用户 (使用请求路径) 中指定的用户 ID 提取联机会议和/或联机会议项目。
 
@@ -67,6 +67,13 @@ GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
+若要使用具有委派 ( (的 **joinMeetingId** `/me` 获取 **onlineMeeting**，) 和应用 () `/users/{userId}` 权限：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+```
+
 若要获取具有委派 () 和应用`/users/{userId}` () `/me` 权限的 [Teams 实时活动的](/microsoftteams/teams-live-events/what-are-teams-live-events)与会者报告：
 <!-- { "blockType": "ignored" }-->
 
@@ -87,10 +94,11 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 > [!NOTE]
 >- 路径 `/app` 已弃用。 今后，请使用路径 `/communications`。
->- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+>- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅 [允许应用程序代表用户访问联机会议](/graph/cloud-communication-online-meeting-application-access-policy)。
 >- `meetingId`是 [onlineMeeting](../resources/onlinemeeting.md) 对象的 **ID**。
 > - **videoTeleconferenceId** 是为 Cloud-Video-Interop 许可用户生成的，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关详细信息，请参阅 [VTC 会议 ID](/microsoftteams/cloud-video-interop-for-teams-set-up)。
 >- `joinWebUrl` 必须对 URL 进行编码。
+>- `joinMeetingId` 是用于加入会议的会议 ID。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -115,11 +123,16 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 - 如果提取联机会议的出席情况报告，此方法会在响应正文中返回 [meetingAttendanceReport](../resources/meetingAttendanceReport.md) 对象。
 - 如果提取与会者报告或 **Microsoft Teams Live 事件** 的录制，此方法将返回一个 `Location` 标头，该标头分别指示与会者报表或录制的 URI。
 
+> [!NOTE]
+>- 如果在支持此功能之前创建了会议，则可能不会为某些预计划会议生成 **joinMeetingIdSettings**。
+
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>示例 1：通过 videoTeleconferenceId 检索联机会议
 
 #### <a name="request"></a>请求
+
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -158,6 +171,8 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 
 #### <a name="response"></a>响应
 
+下面展示了示例响应。
+
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
 <!-- {
@@ -174,20 +189,20 @@ Content-Length: 1574
   "@odata.type": "#microsoft.graph.onlineMeeting",
   "autoAdmittedUsers": "everyone",
   "audioConferencing": {
-    "tollNumber": "55525634478",
-    "tollFreeNumber": "55566390588",
+    "tollNumber": "55534478",
+    "tollFreeNumber": "55390588",
     "ConferenceId": "9999999",
     "dialinUrl": "https://dialin.teams.microsoft.com/6787A136-B9B8-4D39-846C-C0F1FF937F10?id=xxxxxxx"
   },
   "chatInfo": {
     "@odata.type": "#microsoft.graph.chatInfo",
-    "threadId": "19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
-    "messageId": "1533758867081"
+    "threadId": "19:cbee7c1c868258e3cebf7bee0d@thread.skype",
+    "messageId": "153867081"
   },
   "creationDateTime": "2018-05-30T00:12:19.0726086Z",
   "endDateTime": "2018-05-30T01:00:00Z",
   "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8_19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
-  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa67bd4c-8475-432d-bd41-39f255720e0a%22%2c%22Oid%22%3a%22112f7296-5fa4-42ca-bae8-6a692b15d4b8%22%7d",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa674c-875-432d-bd41-3720e0a%22%2c%22Oid%22%3a%2f7296-5fa4-42ca-bae8-6a4b8%22%7d",
   "participants": {
     "attendees": [
       {
@@ -195,8 +210,8 @@ Content-Length: 1574
         "identity": {
           "user": {
             "@odata.type": "#microsoft.graph.identity",
-            "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8",
-            "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+            "id": "11296-5fa4-42ca-bae8-6a2b4b8",
+            "tenantId": "aa674c-8475-432d-bd41-39f2e0a",
             "displayName": "Tyler Stein"
           }
         },
@@ -209,8 +224,8 @@ Content-Length: 1574
       "identity": {
         "user": {
           "@odata.type": "#microsoft.graph.identity",
-          "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-          "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+          "id": "58ede-f3cc-42eb-b2c1-e53ec96",
+          "tenantId": "a7bdc-8475-432d-bd41-39f2e0a",
           "displayName": "Jasmine Miller"
         }
       },
@@ -224,6 +239,11 @@ Content-Length: 1574
   "lobbyBypassSettings": {
     "scope": "everyone",
     "isDialInBypassEnabled": true
+  },
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
   },
   "isEntryExitAnnounced": true,
   "allowedPresenters": "everyone",
@@ -241,9 +261,11 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：通过会议 ID 检索联机会议
-可以通过包含用户或应用程序令牌的会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md) 时，会在响应对象中提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，当应用程序首先使用图形 API 创建联机会议，然后以单独的操作方式检索会议信息时。
+可以通过包含用户或应用程序令牌的会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md) 时，会在响应对象中提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，应用程序首先使用图形 API创建联机会议，然后以单独的操作方式检索会议信息。
 
 #### <a name="request"></a>请求
+
+请求示例如下所示。
 
 > **注意：** 为了实现可读性，会议 ID 已被截断。
 
@@ -261,15 +283,17 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>响应
 
+下面展示了示例响应。
+
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
 ```json
 {
-    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
+    "id": "MSpkYzE3Njc0Yy04MWQ5L1F6WGhyZWFkLnYy",
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
     "startDateTime": "2020-09-29T22:35:31.389759Z",
     "endDateTime": "2020-09-29T23:35:31.389759Z",
-    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4YxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22c581-5130-43e9-88f3-fc82cde37%22%2c%22Oid%22%3a%22674c-81d9-4adb-bb2-8f62e4622%22%7d",
     "subject": null,
     "autoAdmittedUsers": "EveryoneInCompany",
     "isEntryExitAnnounced": true,
@@ -283,9 +307,9 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "role": "presenter",
             "identity": {
                 "user": {
-                    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                    "id": "dc174c-81d9-4adb-bfb2-8f4622",
                     "displayName": null,
-                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                    "tenantId": "9081-5130-43e9-88f3-fcde38",
                     "identityProvider": "AAD"
                 }
             }
@@ -297,6 +321,11 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     "lobbyBypassSettings": {
         "scope": "organization",
         "isDialInBypassEnabled": false
+    },
+    "joinMeetingIdSettings": {
+        "isPasscodeRequired": false,
+        "joinMeetingId": "1234567890",
+        "passcode": null
     }
 }
 ```
@@ -305,6 +334,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 可以使用用户或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 不为人知的用例，例如当用户创建会议 (（例如在 Microsoft Teams 客户端) 中）时，单独的应用程序需要检索会议详细信息作为后续操作。
 
 #### <a name="request"></a>请求
+
+请求示例如下所示。
 
 以下请求使用用户令牌。
 <!-- { "blockType": "ignored" } -->
@@ -320,17 +351,19 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>响应
 
+下面展示了示例响应。
+
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
 ```json
 {
     "value": [
         {
-            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyEtZWVkODYxODYzMmY2@thread.v2",
             "creationDateTime": "2020-09-29T22:35:33.1594516Z",
             "startDateTime": "2020-09-29T22:35:31.389759Z",
             "endDateTime": "2020-09-29T23:35:31.389759Z",
-            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2N2%40thread.v2/0?context=%7b%22Tid%22%3a%229581-5130-43e9-8f3-fcb35e37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
             "subject": null,
             "autoAdmittedUsers": "EveryoneInCompany",
             "isEntryExitAnnounced": true,
@@ -344,9 +377,9 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
                     "role": "presenter",
                     "identity": {
                         "user": {
-                            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                            "id": "dc4c-81d9-4adb-bfb2-8f4622",
                             "displayName": null,
-                            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                            "tenantId": "9091-5130-43e9-88f3-fcbe38",
                             "identityProvider": "AAD"
                         }
                     }
@@ -358,13 +391,88 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "lobbyBypassSettings": {
                 "scope": "organization",
                 "isDialInBypassEnabled": false
+            },
+            "joinMeetingIdSettings": {
+                "isPasscodeRequired": false,
+                "joinMeetingId": "1234567890",
+                "passcode": null
             }
         }
     ]
 }
 ```
 
-### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>示例 4：获取 Teams 直播活动的与会者报告
+### <a name="example-4-retrieve-an-online-meeting-by-joinmeetingid"></a>示例 4：通过 joinMeetingId 检索联机会议
+可以使用用户或应用程序令牌通过 **joinMeetingId** 检索会议信息。
+
+#### <a name="request"></a>请求
+
+以下请求使用用户令牌。
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
+```
+
+以下请求使用应用令牌。
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+
+```json
+{
+    "value": [
+        {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+            "creationDateTime": "2020-09-29T22:35:33.1594516Z",
+            "startDateTime": "2020-09-29T22:35:31.389759Z",
+            "endDateTime": "2020-09-29T23:35:31.389759Z",
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+            "subject": null,
+            "autoAdmittedUsers": "EveryoneInCompany",
+            "isEntryExitAnnounced": true,
+            "allowedPresenters": "everyone",
+            "allowMeetingChat": "enabled",
+            "allowTeamworkReactions": true,
+            "videoTeleconferenceId": "(redacted)",
+            "participants": {
+                "organizer": {
+                    "upn": "(redacted)",
+                    "role": "presenter",
+                    "identity": {
+                        "user": {
+                            "id": "dc174c-81d9-4adb-bfb2-8f6622",
+                            "displayName": null,
+                            "tenantId": "9091-5130-43e9-88f3-fce38",
+                            "identityProvider": "AAD"
+                        }
+                    }
+                },
+                "attendees": [],
+                "producers": [],
+                "contributors": []
+            },
+            "lobbyBypassSettings": {
+                "scope": "organization",
+                "isDialInBypassEnabled": false
+            },
+            "joinMeetingIdSettings": {
+                "isPasscodeRequired": false,
+                "joinMeetingId": "1234567890",
+                "passcode": null
+            }
+        }
+    ]
+}
+```
+
+### <a name="example-5-fetch-the-attendee-report-of-a-teams-live-event"></a>示例 5：获取 Teams 直播活动的与会者报告
 
 以下示例演示下载与会者报表的请求。
 
@@ -417,6 +525,8 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 
 #### <a name="response"></a>响应
 
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -428,7 +538,7 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
-### <a name="example-5-fetch-recording-of-a-teams-live-event"></a>示例 5：提取 Teams 直播活动的录制
+### <a name="example-6-fetch-the-recording-of-a-teams-live-event"></a>示例 6：提取 Teams 直播活动的录制
 
 以下示例演示下载录制的请求。
 
@@ -478,6 +588,9 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 ```
 
 #### <a name="response"></a>响应
+
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
