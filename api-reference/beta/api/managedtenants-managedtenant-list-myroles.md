@@ -5,12 +5,12 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: cc1701a57eb77cd667ecf2ec07e6c92fd13b35b7
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 1ed99b511b0dfb65c27ec287728551972c87880a
+ms.sourcegitcommit: 005e9d483d03ed048611ffd180a92930afff4e42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66096359"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66646147"
 ---
 # <a name="list-myroles"></a>列出 myRoles
 命名空间：microsoft.graph.managedTenants
@@ -18,6 +18,10 @@ ms.locfileid: "66096359"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取已登录用户通过托管租户之间的委托关系所具有的角色。
+
+有关托管服务提供商 (使用Microsoft 365 Lighthouse的 MSP) 与其业务客户与Microsoft 365 商业高级版租户之间的委托关系类型的信息，请参阅[合作伙伴中心的](/partner-center/overview)以下文章：
+-  (DAP) [委派的管理权](/partner-center/dap-faq)限
+- GDAP)  (粒[度委派的管理员权](/partner-center/gdap-introduction)限
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +31,7 @@ ms.locfileid: "66096359"
 |:---|:---|
 |委派（工作或学校帐户）|ManagedTenants.Read.All、ManagedTenants.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
