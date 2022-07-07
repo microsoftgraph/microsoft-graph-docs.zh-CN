@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8a6a07a23d71c79703643dc5280bd531eb5a5843
-ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
+ms.openlocfilehash: 721335785b1fa70ad9433d1c03b7fe4c9ae89d05
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66577862"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645293"
 ---
 # <a name="teamwork-resource-type"></a>teamwork 资源类型
 
@@ -38,6 +38,7 @@ ms.locfileid: "66577862"
 |:---------------|:--------|:----------|
 |deletedTeams|[deletedTeam](../resources/deletedteam.md) 集合| 已删除团队的集合。|
 |设备|[teamworkDevice](../resources/teamworkdevice.md) 集合|为租户预配的 Teams 设备。|
+|teamsAppSettings|[teamsAppSettings](../resources/teamsappsettings.md)|表示租户中所有 [Teams 应用](teamsapp.md) 的租户范围设置。|
 |workforceIntegration|[workforceIntegration](../resources/workforceintegration.md) 集合| 工作人员与班次的集成。|
 
 ## <a name="json-representation"></a>JSON 表示形式

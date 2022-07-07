@@ -4,12 +4,12 @@ description: 使用 Microsoft Graph 中的云通信 API 生成机器人来处理
 author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 8ab2494a86abb1298cc4a6cb4fe1172b8374643d
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 38c9ed8b4d12f4962f0e31b4ac1f730969e46c2b
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66436361"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66666863"
 ---
 # <a name="cloud-communications-api-overview"></a>云通信 API 概述
 
@@ -101,7 +101,7 @@ Microsoft Graph 中的云通信 API 为应用和服务如何通过各种与通�
 
 - 使用机器人 [入门](cloud-communications-get-started.md)。
 - 详细了解 [呼叫](cloud-communications-calls.md)、 [媒体](cloud-communications-media.md)和 [在线会议](cloud-communications-online-meetings.md)。
-- 查看 API 使用 [限制](throttling.md#cloud-communication-service-limits)。
+- 查看 API 使用 [限制](throttling-limits.md#cloud-communication-service-limits)。
 - 了解如何管理机器人的 [电话号码](cloud-communications-phone-number.md) 。
 
 ## <a name="see-also"></a>另请参阅
