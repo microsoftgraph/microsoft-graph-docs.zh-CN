@@ -520,8 +520,12 @@ items:
           - name: 获取系统邮件
             href: system-messages.md
       - name: 待办任务
-        href: todo-concept-overview.md
         displayName: Microsoft To Do
+        items:
+          - name: 概述
+            href: todo-concept-overview.md
+          - name: 将文件附加到任务
+            href: todo-attachments.md
       - name: 工作簿和图表
         items:
           - name: 概述

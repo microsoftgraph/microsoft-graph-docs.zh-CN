@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 461509ea39ccdf09910a3480cd3268b8bbe3e15b
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 9ea44eddc4f3fd4781471f0127c26da23909fc29
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344977"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669691"
 ---
 # <a name="list-windowsmanageddevices"></a>列出 windowsManagedDevices
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [windowsManagedDevice 对象的属性和](../resources/intune-devices-windowsmanageddevice.md) 关系。
+列出 [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "61344977"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9507
+Content-Length: 10025
 
 {
   "value": [
@@ -119,7 +119,16 @@ Content-Length: 9507
         "esimIdentifier": "Esim Identifier value",
         "systemManagementBIOSVersion": "System Management BIOSVersion value",
         "tpmManufacturer": "Tpm Manufacturer value",
-        "tpmVersion": "Tpm Version value"
+        "tpmVersion": "Tpm Version value",
+        "wiredIPv4Addresses": [
+          "Wired IPv4Addresses value"
+        ],
+        "batteryLevelPercentage": 7.333333333333333,
+        "residentUsersCount": 2,
+        "productName": "Product Name value",
+        "deviceLicensingStatus": "licenseRefreshPending",
+        "deviceLicensingLastErrorCode": 12,
+        "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
       },
       "ownerType": "company",
       "managedDeviceOwnerType": "company",
@@ -272,7 +281,9 @@ Content-Length: 9507
           "updatable": true
         }
       ],
-      "enrollmentProfileName": "Enrollment Profile Name value"
+      "enrollmentProfileName": "Enrollment Profile Name value",
+      "bootstrapTokenEscrowed": true,
+      "deviceFirmwareConfigurationInterfaceManaged": true
     }
   ]
 }

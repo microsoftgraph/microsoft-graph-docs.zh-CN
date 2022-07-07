@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15be6bedafb6e46344bc9cbc787b1d2e47f43020
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 1f7a11017bf93000b9762a4a4de50e2ede2f8c23
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206547"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670672"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>列出 windows10EnrollmentCompletionPageConfigurations
 
 命名空间：microsoft.graph
 
-> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1096
+Content-Length: 1144
 
 {
   "value": [
@@ -92,6 +92,7 @@ Content-Length: 1096
       "selectedMobileAppIds": [
         "Selected Mobile App Ids value"
       ],
+      "allowNonBlockingAppInstallation": true,
       "trackInstallProgressForAutopilotOnly": true,
       "disableUserStatusTrackingAfterFirstUser": true
     }

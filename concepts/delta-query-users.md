@@ -1,15 +1,15 @@
 ---
 title: 获取用户的增量更改
 description: 使用增量查询可以发现更改，而无需提取整个用户组来比较更改。 示例演示了一系列跟踪用户更改的请求。
-author: FaithOmbongi
+author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 907d45aeddef86b0dbb5a30bc06b207a883e7eba
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 9eaac638ddde5bf1b65942f9e256d8c5724c9426
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554888"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671379"
 ---
 # <a name="get-incremental-changes-for-users"></a>获取用户的增量更改
 

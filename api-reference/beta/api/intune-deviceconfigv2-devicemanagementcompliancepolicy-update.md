@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a461d7f3cba4c483b77dfc0983c6116ab265d8b
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: f09950658e6e80a72cc0d8a16bd8cc18b7d71ecf
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210239"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670777"
 ---
 # <a name="update-devicemanagementcompliancepolicy"></a>更新 deviceManagementCompliancePolicy
 
 命名空间：microsoft.graph
 
-> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,15 +54,15 @@ PATCH /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|策略文档的密钥。 自动生成。|
-|name|String|策略名称|
-|说明|字符串|策略说明|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此策略的平台。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`、`linux`、`unknownFutureValue`。|
-|技术|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此策略的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`appleRemoteManagement`、`microsoftSense`、`exchangeOnline`、`linuxMdm`、`unknownFutureValue`。|
+|name|字符串|策略名称|
+|说明|String|策略说明|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-shared-devicemanagementconfigurationplatforms.md)|此策略的平台。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`、`linux`、`unknownFutureValue`。|
+|技术|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此策略的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`appleRemoteManagement`、`microsoftSense`、`exchangeOnline`、`linuxMdm`、`enrollment`、`unknownFutureValue`。|
 |createdDateTime|DateTimeOffset|策略创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|策略上次修改日期和时间。 此属性是只读的。|
 |settingCount|Int32|设置数。 此属性是只读的。|
-|creationSource|字符串|策略创建源|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|creationSource|String|策略创建源|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 |isAssigned|Boolean|策略分配状态。 此属性是只读的。|
 
 

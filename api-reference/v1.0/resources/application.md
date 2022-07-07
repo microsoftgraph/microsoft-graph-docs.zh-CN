@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 2414f261e277c10ddff8fe1ab1aaa9228ff589c6
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 76c36db9bb078a679e729ef6e765c008d3ddcb00
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556253"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671407"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -85,7 +85,7 @@ ms.locfileid: "66556253"
 | disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册的应用程序。可能的值为：`null`（默认值）、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement`（原因可能包括可疑、滥用或恶意活动或违反 Microsoft 服务协议）。 <br><br> 支持 `$filter`（`eq`、`ne`、`not`）。 |
 | displayName | String | 应用程序的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。 |
 | groupMembershipClaims | String | 配置应用程序预期的用户或 OAuth 2.0 访问令牌中发出的 `groups` 声明。要设置此属性，请使用以下有效字符串值之一：`None`、`SecurityGroup`（对于安全组和 Azure AD 角色）和 `All`（这将获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色）。 |
-| id | 字符串 | 应用程序对象的唯一标识符。 此属性在Azure 门户中称为 **对象 ID**。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。|
+| id | 字符串 | 应用程序对象的唯一标识符。 此属性在Azure 门户中称为 **对象 ID**。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。|
 | identifierUris | String collection | 也称为应用 ID URI，此值在将应用程序用作资源应用时设置。 identifierUris 可充当你将在 API 代码中引用的范围的前缀，必须具有全局唯一性。 可以使用提供的默认值（采用 `api://<application-client-id>` 形式）或指定更具有可读性的 URI（如 `https://contoso.com/api`）。 有关有效 identifierUris 模式和最佳做法的信息，请参阅 [Azure AD 应用程序注册安全性最佳做法](/azure/active-directory/develop/security-best-practices-for-app-registration#appid-uri-configuration)。 不可为 null。 <br><br>支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。|
 | info | [informationalUrl](informationalurl.md) | 应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 <br><br>支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le` 和 `null` 值上的 `eq`)。 |
 | isDeviceOnlyAuthSupported | 布尔值 | 指定此应用程序是否支持在无用户的情况下进行设备身份验证。默认值为 `false`。  |
@@ -100,6 +100,7 @@ ms.locfileid: "66556253"
 | publicClient | [publicClientApplication](publicclientapplication.md) | 指定已安装客户端（如台式设备或移动设备）的设置。 |
 | publisherDomain | String | 应用程序的已验证发布者域。 只读。 有关更多信息，请参阅[操作指南：配置应用程序的发布者域](/azure/active-directory/develop/howto-configure-publisher-domain)。 支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合| 指定应用程序需要访问的资源。 此属性还指定每个资源所需的委派权限和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 可配置的资源服务 (API) 不能超过 50 个。 从 2021 年 10 月中旬开始，所需权限总数不得超过 400 个。 不可为 null。 <br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`）。|
+| samlMetadataUrl | String | 服务用于公开联合身份验证的 SAML 元数据的 URL。 此属性仅对单租户应用程序有效。 可为 Null。 |
 | serviceManagementReference | 字符串 | 引用服务或资产管理数据库中的应用程序或服务联系人信息。可为空。 |
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 可能的值是：`AzureADMyOrg`、`AzureADMultipleOrgs`、`AzureADandPersonalMicrosoftAccount`（默认）和 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。 <br><br>支持 `$filter`（`eq`、`ne`、`not`）。|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |

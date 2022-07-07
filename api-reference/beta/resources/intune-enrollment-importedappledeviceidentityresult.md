@@ -1,26 +1,26 @@
 ---
 title: importedAppleDeviceIdentityResult 资源类型
-description: importedAppleDeviceIdentityResult 资源表示尝试导入 Apple 设备标识的结果。
+description: importAppleDeviceIdentityResult 资源表示尝试导入 Apple 设备标识的结果。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22e21105a508d613aeaeb73fb4547d5f800d7a44
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db56ef2613610f14026b56611f6a5d1b0842dcd8
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59033509"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669026"
 ---
 # <a name="importedappledeviceidentityresult-resource-type"></a>importedAppleDeviceIdentityResult 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-importedAppleDeviceIdentityResult 资源表示尝试导入 Apple 设备标识的结果。
+importAppleDeviceIdentityResult 资源表示尝试导入 Apple 设备标识的结果。
 
 
 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)
@@ -28,28 +28,28 @@ importedAppleDeviceIdentityResult 资源表示尝试导入 Apple 设备标识的
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 importedAppleDeviceIdentityResults](../api/intune-enrollment-importedappledeviceidentityresult-list.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) 集合|列出 [importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) 对象的属性和关系。|
-|[获取 importedAppleDeviceIdentityResult](../api/intune-enrollment-importedappledeviceidentityresult-get.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)|读取 [importedAppleDeviceIdentityResult 对象的属性和](../resources/intune-enrollment-importedappledeviceidentityresult.md) 关系。|
+|[列出 importedAppleDeviceIdentityResults](../api/intune-enrollment-importedappledeviceidentityresult-list.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) 集合|列出 [导入的AppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) 对象的属性和关系。|
+|[获取 importedAppleDeviceIdentityResult](../api/intune-enrollment-importedappledeviceidentityresult-get.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)|读取 [导入的AppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) 对象的属性和关系。|
 |[创建 importedAppleDeviceIdentityResult](../api/intune-enrollment-importedappledeviceidentityresult-create.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)|创建新的 [importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) 对象。|
-|[删除 importedAppleDeviceIdentityResult](../api/intune-enrollment-importedappledeviceidentityresult-delete.md)|无|删除 [importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)。|
-|[更新 importedAppleDeviceIdentityResult](../api/intune-enrollment-importedappledeviceidentityresult-update.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)|更新 [importedAppleDeviceIdentityResult 对象](../resources/intune-enrollment-importedappledeviceidentityresult.md) 的属性。|
+|[删除 importedAppleDeviceIdentityResult](../api/intune-enrollment-importedappledeviceidentityresult-delete.md)|None|删除 [导入的AppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)。|
+|[更新 importedAppleDeviceIdentityResult](../api/intune-enrollment-importedappledeviceidentityresult-update.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)|更新 [导入的AppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|serialNumber|String|设备序列号 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|requestedEnrollmentProfileId|String|注册配置文件 ID 管理员打算在下一次注册期间应用到设备 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|向设备分配注册配置文件的时间 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|isSupervised|Boolean|指示 Apple 设备是否受监督。 详细信息位于： https://support.apple.com/en-us/HT202837 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|serialNumber|String|从[导入的AppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 继承的设备序列号|
+|requestedEnrollmentProfileId|String|注册配置文件 ID 管理员打算在下次注册期间应用到设备继承自 [导入的AppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|将注册配置文件分配给从[导入的AppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 继承的设备的时间|
+|isSupervised|Boolean|指示 Apple 设备是否受监督。 详细信息如下： https://support.apple.com/en-us/HT202837 继承自 [导入的AppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple 设备发现源。 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`adminImport`、`deviceEnrollmentProgram`。|
-|isDeleted|Boolean|指示设备是否从 Apple Business Manager 中删除 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|createdDateTime|DateTimeOffset|设备的创建日期时间 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|说明|String|设备描述 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune 中的设备状态 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|平台|[平台](../resources/intune-enrollment-platform.md)|设备平台。 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|status|Boolean|导入的设备标识的状态|
+|isDeleted|布尔|指示是否从从[导入的AppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 继承的 Apple Business Manager 中删除设备|
+|createdDateTime|DateTimeOffset|从[导入的AppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 继承的设备的创建日期时间|
+|lastContactedDateTime|DateTimeOffset|从 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 继承的设备的最后联系日期时间|
+|说明|字符串|从导入的[AppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 继承的设备的说明|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune从[导入的AppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 继承的设备状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
+|平台|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
+|status|布尔|导入设备标识的状态|
 
 ## <a name="relationships"></a>关系
 无
@@ -80,6 +80,7 @@ importedAppleDeviceIdentityResult 资源表示尝试导入 Apple 设备标识的
   "status": true
 }
 ```
+
 
 
 

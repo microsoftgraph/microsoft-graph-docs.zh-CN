@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 79f4fbd1ea4852f0a90150d45eb00be7cceb4750
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 017624069a4487f7145fbc742055ade457fc93e6
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556162"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645238"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -57,10 +57,10 @@ ms.locfileid: "66556162"
 | [List contactFolders](../api/user-list-contactfolders.md) | [ContactFolder](contactfolder.md) 集合 | 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。 |
 | **目录对象** |  |  |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。该函数可传递。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
-| [getByIds](../api/directoryobject-getbyids.md) | String collection | 返回 ID 列表中指定的目录对象。 |
+| [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | 返回用户所属的所有组、管理单元和目录角色。检查是可传递的。 |
 | [List createdObjects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | 从 createdObjects 导航属性中获取此用户创建的目录对象。 |
@@ -70,18 +70,18 @@ ms.locfileid: "66556162"
 | [List registeredDevices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) collection | 从 registeredDevices 导航属性中获取为此用户注册的设备。 |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | 重新处理用户的订阅分配。 |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | 无 | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 |
-| [列出已删除的组](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | 检索租户中过去 30 天内被删除的组。 |
+| [列出已删除的组](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索租户中过去 30 天内被删除的组。 |
 | [列出用户拥有的已删除组](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 检索租户中最近 30 天内删除的用户所有的组。 |
-| [获取已删除的组](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | 按 ID 检索已删除的组。 |
+| [获取已删除的组](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) 集合 | 按 ID 检索已删除的组。 |
 | [恢复已删除的组](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) 集合 | 还原最近 30 天内在租户中删除的组。 |
-| [永久删除组](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | 从租户中永久删除已删除的组。 |
+| [永久删除组](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) 集合 | 从租户中永久删除已删除的组。 |
 | **驱动器** |  |  |
 | [获取驱动器](../api/drive-get.md) | [drive](drive.md) | 检索 Drive 资源的属性和关系。 |
 | [列出子项](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | 在 DriveItem 的子项关系中返回 DriveItems 集合。 |
 | **组** |  |  |
 | [List joinedTeams](../api/user-list-joinedteams.md) | [团队](team.md) 集合 | 从 joinedTeams 导航属性中获取此用户直接所属的 Microsoft Teams 团队。 |
-| [List memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | 从 memberOf 导航属性中获取此用户是其直接成员的组和目录角色。 |
-| [List transitive memberOf](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | 列出用户所属的组和目录角色。 此操作是可传递的，并包括用户以嵌套方式所属的组。 |
+| [List memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) 集合 | 获取用户直接所属的组、目录角色和管理单元。 此操作不可传递。 |
+| [列出 transitiveMemberOf](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) 集合 | 获取用户直接所属或通过传递成员身份所属的组、目录角色和管理单元。 |
 | **邮件** |  |  |
 | [创建 inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | 创建由 SMTP 地址识别的发件人的重点收件箱替代。 |  |
 | [Create mailFolder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | 通过发布到 mailFolders 集合创建新 MailFolder。 |
@@ -210,7 +210,7 @@ ms.locfileid: "66556162"
 |signInSessionsValidFromDateTime|DateTimeOffset| 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。 <br><br>仅在 `$select` 上返回。|
 |state|String|用户地址中的省/市/自治区或省。 最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |streetAddress|String|用户公司地点的街道地址。 最大长度为 1024 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
-|surname|String|用户的姓氏。 最大长度为 64 个字符。 <br><br>默认返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
+|surname|String|用户的姓氏。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 由于法律要求，将被分配许可证的用户需要检查国家/地区的服务可用性。 示例包括：`US`、`JP`、`GB`。不可为 null。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](organization.md)的 **verifiedDomains** 属性访问租户的已验证域。<br>注意：此属性不能包含突出字符。 仅支持使用以下字符：`A - Z`、`a - z`、`0 - 9`、` ' . - _ ! # ^ ~`。 有关允许字符的完整列表，请参阅[用户名策略](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts)。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`） 和 `$orderBy`。
 |userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。 **注意：** 有关成员和来宾用户权限的详细信息，请参阅 [Azure Active Directory 中的默认用户权限是什么？](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)         |
@@ -304,6 +304,7 @@ ms.locfileid: "66556162"
 |planner|[plannerUser](planneruser.md)| 对于用户可能存在的 Planner 资源入口点。只读。|
 |registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为空。支持 `$expand`。|
 |todo|[todo](todo.md)|表示用户可以使用的微软待办服务。 |
+|transitiveMemberOf| [directoryObject](directoryobject.md) 集合 |  用户所属的组（包括嵌套组）和目录角色。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

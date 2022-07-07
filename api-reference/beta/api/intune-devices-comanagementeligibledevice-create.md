@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4397ab90d3896c1c564b4b8cd27d49d975367a0
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: bfa75a910dbaea9448477655ab4df5a5b7b218e0
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335752"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670700"
 ---
 # <a name="create-comanagementeligibledevice"></a>创建 comanagementEligibleDevice
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "61335752"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -47,21 +47,21 @@ POST /deviceManagement/comanagementEligibleDevices
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 comanagementEligibleDevice 对象的 JSON 表示形式。
+在请求正文中，为 comanagementEligibleDevice 对象提供 JSON 表示形式。
 
-下表显示创建 comanagementEligibleDevice 时所需的属性。
+下表显示了创建 comanagementEligibleDevice 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备的唯一 ID|
+|id|字符串|设备的唯一 ID|
 |deviceName|String|DeviceName|
-|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|DeviceType。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` `unknown` `cloudPC` 、|
+|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|DeviceType。 可能的值为：`desktop`、`windowsRT`、`winMO6`、`nokia`、`windowsPhone`、`mac`、`winEmbedded``winCE`、、`iPhone`、`iPad`、`iPod`、`iSocConsumer``android`、`unix`、`macMDM``holoLens`、`surfaceHub`、、`androidForWork`、 `unknown``cloudPC``palm``androidEnterprise``windows10x``androidnGMS``chromeOS``linux``blackberry`|
 |clientRegistrationStatus|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|ClientRegistrationStatus。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType。 可取值为：`unknown`、`company`、`personal`。|
-|managementAgents|[managementAgentType](../resources/intune-devices-managementagenttype.md)|ManagementAgents。 可能的值是 `eas` `mdm` `easMdm` ：、、、、、、、、、、。 `intuneClient` `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown` `jamf` `googleCloudDevicePolicyController` `microsoft365ManagedMdm` `msSense` `intuneAosp`|
+|managementAgents|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgents。 可能的值为：`eas`、、`mdm`、`easMdm``intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`unknown``configurationManagerClientMdmEas`、`jamf`、`googleCloudDevicePolicyController``microsoft365ManagedMdm`、、`msSense`。 `intuneAosp`|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState。 可取值为：`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered`。|
 |referenceId|String|ReferenceId|
-|mdmStatus|String|MDMStatus|
+|mdmStatus|字符串|MDMStatus|
 |osVersion|String|OSVersion|
 |serialNumber|String|序列号|
 |manufacturer|String|制造商|
@@ -69,15 +69,15 @@ POST /deviceManagement/comanagementEligibleDevices
 |osDescription|String|OSDescription|
 |entitySource|Int32|EntitySource|
 |userId|String|UserId|
-|upn|String|UPN|
+|Upn|String|UPN|
 |userEmail|String|UserEmail|
 |userName|String|UserName|
-|状态|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus。 可取值为：`comanaged`、`eligible`、`eligibleButNotAzureAdJoined`、`needsOsUpdate`、`ineligible`。|
+|status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus。 可取值为：`comanaged`、`eligible`、`eligibleButNotAzureAdJoined`、`needsOsUpdate`、`ineligible`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) 对象。
 
 ## <a name="example"></a>示例
 

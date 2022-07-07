@@ -2,21 +2,21 @@
 title: 创建 mobileAppAssignment
 description: 创建新的 mobileAppAssignment 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d0b8fd9b4ecab48fbf53fb18782f6f2a6ceeef0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bc03453f20d25bc6987bcc4b5289a98e2ca36218
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077886"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66666998"
 ---
 # <a name="create-mobileappassignment"></a>创建 mobileAppAssignment
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -57,8 +57,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 |intent|[installIntent](../resources/intune-shared-installintent.md)|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|作为工作分配的源的资源类型。 可取值为：`direct`、`policySets`。|
-|sourceId|String|工作分配的源的标识符。|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|资源类型，它是分配的源。 可取值为：`direct`、`policySets`。|
+|sourceId|String|分配源的标识符。|
 
 
 
@@ -72,7 +72,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments
 Content-type: application/json
-Content-length: 617
+Content-length: 540
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -83,10 +83,8 @@ Content-length: 617
     "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true,
-    "isRemovable": true
+    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+    "useDeviceContext": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -98,7 +96,7 @@ Content-length: 617
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 666
+Content-Length: 589
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -110,15 +108,14 @@ Content-Length: 666
     "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true,
-    "isRemovable": true
+    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+    "useDeviceContext": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
 }
 ```
+
 
 
 

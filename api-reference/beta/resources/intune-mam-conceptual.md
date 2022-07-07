@@ -4,12 +4,12 @@ description: 列出与租户组织移动应用管理 (MAM) 相关的 (REST) Intu
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: da6e0cf6c15554d7aef243c8b3d2783724d006d6
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 97180d2dc1f317fbab1cf63e8414b77693605db1
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65857748"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667388"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -28,11 +28,16 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Android 管理的应用注册](intune-mam-androidmanagedappregistration.md)
 - [Android 托管应用安全网络应用验证类型](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Android 托管应用安全网络设备证明类型](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
-- [Android托管应用安全网评估类型](intune-mam-androidmanagedappsafetynetevaluationtype.md)
+- [Android 托管应用安全网评估类型](intune-mam-androidmanagedappsafetynetevaluationtype.md)
 - [Android 移动应用标识符](intune-mam-androidmobileappidentifier.md)
 - [应用管理级别](intune-mam-appmanagementlevel.md)
 - [应用程序类型](intune-wip-applicationtype.md)
 - [默认托管的应用保护](intune-mam-defaultmanagedappprotection.md)
+- [设备管理配置交换联机设置适用性](intune-mam-devicemanagementconfigurationexchangeonlinesettingapplicability.md)
+- [设备管理配置设置适用性](intune-mam-devicemanagementconfigurationsettingapplicability.md)
+- [设备管理配置字符串设置值定义](intune-mam-devicemanagementconfigurationstringsettingvaluedefinition.md)
+- [设备管理配置技术](intune-mam-devicemanagementconfigurationtechnologies.md)
+- [设备管理配置窗口设置适用性](intune-mam-devicemanagementconfigurationwindowssettingapplicability.md)
 - [设备平台类型](intune-wip-deviceplatformtype.md)
 - [Intune 品牌打造配置文件](intune-wip-intunebrandingprofile.md)
 - [Intune 品牌打造配置文件分配](intune-wip-intunebrandingprofileassignment.md)
@@ -68,7 +73,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [目标托管应用组类型](intune-mam-targetedmanagedappgrouptype.md)
 - [目标托管应用程序策略分配](intune-mam-targetedmanagedapppolicyassignment.md)
 - [目标托管应用保护](intune-mam-targetedmanagedappprotection.md)
-- [Windows应用标识符](intune-mam-windowsappidentifier.md)
+- [Windows 应用标识符](intune-mam-windowsappidentifier.md)
 - [Windows 信息保护](intune-mam-windowsinformationprotection.md)
 - [Windows 信息保护应用](intune-mam-windowsinformationprotectionapp.md)
 - [Windows 信息保护应用学习摘要](intune-wip-windowsinformationprotectionapplearningsummary.md)
@@ -85,6 +90,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 信息保护资源集合](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows 信息保护应用商店应用](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Windows 信息保护擦除操作](intune-mam-windowsinformationprotectionwipeaction.md)
-- [Windows托管应用剪贴板共享级别](intune-mam-windowsmanagedappclipboardsharinglevel.md)
-- [Windows托管应用数据传输级别](intune-mam-windowsmanagedappdatatransferlevel.md)
-- [Windows托管应用保护](intune-mam-windowsmanagedappprotection.md)
+- [Windows 托管应用剪贴板共享级别](intune-mam-windowsmanagedappclipboardsharinglevel.md)
+- [Windows 托管应用数据传输级别](intune-mam-windowsmanagedappdatatransferlevel.md)
+- [Windows 托管应用保护](intune-mam-windowsmanagedappprotection.md)

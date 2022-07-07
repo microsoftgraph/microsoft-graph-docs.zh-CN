@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 0946e38560af2c88a68b8d4d4394949f1c3e37ae
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: a82c38e89c0af77ba928a03976c19265eda060bb
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555840"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645487"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -69,7 +69,7 @@ ms.locfileid: "66555840"
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
 | [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。 |
@@ -93,8 +93,8 @@ ms.locfileid: "66555840"
 | [列出子项](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | 在 DriveItem 的子项关系中返回 DriveItems 集合。 |
 | **组** |||
 | [List joinedTeams](../api/user-list-joinedteams.md) | [团队](team.md) 集合 | 从 joinedTeams 导航属性中获取此用户直接所属的 Microsoft Teams 团队。 |
-| [List memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) 集合 | 从 memberOf 导航属性中获取此用户直接所属的组、目录角色和管理单元。 |
-| [List transitive memberOf](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) 集合 | 列出用户所属的所有组、目录角色和管理单元。 此操作是可传递的，并包括用户以嵌套方式所属的组。 |
+| [List memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) 集合 | 获取用户直接所属的组、目录角色和管理单元。 此操作不可传递。 |
+| [列出 transitiveMemberOf](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) 集合 | 通过直接或可传递成员身份获取用户所属的组、目录角色和管理单元。 |
 | **见解** |||
 | [共享的列表](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) 集合 | 计算得出的见解，可返回与用户共享的文件列表。 |
 | [列出趋势](../api/insights-list-trending.md) | [trending](insights-trending.md) 集合 | 计算得出的见解，可返回用户常用的项目列表。 |
@@ -239,6 +239,7 @@ ms.locfileid: "66555840"
 | refreshTokensValidFromDateTime | DateTimeOffset | 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) 进行重置。|
 | responsibilities | String collection | 供用户枚举其职责的列表。 <br><br>仅在 `$select` 上返回。 |
 | schools | String collection | 供用户枚举其学习过的学校列表。 <br><br>仅在 `$select` 上返回。 |
+|securityIdentifier| 字符串 | 用户的安全标识符 (SID)，用于 Windows 应用场景。 <br><br>只读。 默认情况下返回。 <br>支持 `$select` 和 `$filter` (`eq`、`not`、`ge`、`le`、`startsWith`)。 |
 | showInAddressList | Boolean | **请勿在 Microsoft Graph 中使用。请改为通过 Microsoft 365 管理中心管理此属性。** 表示是否应将用户包含在 Outlook 全局地址列表中。 请参阅 [已知问题](/graph/known-issues#showinaddresslist-property-is-out-of-sync-with-microsoft-exchange)。|
 | signInSessionsValidFromDateTime | DateTimeOffset | 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
 | skills | String collection | 供用户枚举其技能的列表。 <br><br>仅在 `$select` 上返回。 |
@@ -350,6 +351,7 @@ ms.locfileid: "66555840"
 |settings|[userSettings](usersettings.md) | 只读。可为 Null。|
 |团队合作|[userTeamwork](userteamwork.md)| 用户可以使用的Microsoft Teams功能的容器。 只读。 可为空。|
 |todo|[todo](todo.md)|表示用户可以使用的微软待办服务。 |
+|transitiveMemberOf| [directoryObject](directoryobject.md) 集合 |  用户所属的组（包括嵌套组）和目录角色。 可为 NULL。|
 |transitiveReports|[directoryObject](directoryobject.md) 集合 | 用户的可传递报告。只读。|
 |usageRights|[usageRight](usageright.md) 集合|表示已授予用户的使用权限。 |
 
@@ -459,6 +461,7 @@ ms.locfileid: "66555840"
   "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "responsibilities": ["String"],
   "schools": ["String"],
+  "securityIdentifier": "String",
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "skills": ["String"],

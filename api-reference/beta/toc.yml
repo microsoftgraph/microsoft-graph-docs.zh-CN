@@ -51,7 +51,11 @@ items:
           - name: 概述
             href: /graph/throttling?context=graph/api/beta
             displayName: throttling
+          - name: 服务特定限制
+            href: /graph/throttling-limits?context=graph/api/beta
+            displayName: throttling
           - name: 优化网络流量
+            displayName: throttling
             href: /learn/modules/optimize-network-traffic
       - name: 更改通知
         items:
@@ -622,7 +626,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: 团队合作
             items:
               - name: 已安装应用
                 href: resources/teamsappinstallation.md
@@ -2214,7 +2218,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -6389,8 +6393,6 @@ items:
                     href: resources/intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md
                   - name: 托管设备报告的应用
                     href: resources/intune-deviceconfig-manageddevicereportedapp.md
-                  - name: 管理代理类型
-                    href: resources/intune-deviceconfig-managementagenttype.md
                   - name: 媒体内容分级（澳大利亚）
                     href: resources/intune-deviceconfig-mediacontentratingaustralia.md
                   - name: 媒体内容分级（加拿大）
@@ -7696,6 +7698,8 @@ items:
                     href: resources/intune-devices-devicehealthscriptstringparameter.md
                   - name: 设备运行状况脚本时间计划
                     href: resources/intune-devices-devicehealthscripttimeschedule.md
+                  - name: 设备许可状态
+                    href: resources/intune-devices-devicelicensingstatus.md
                   - name: 设备日志收集请求
                     href: resources/intune-devices-devicelogcollectionrequest.md
                   - name: 设备日志收集响应
@@ -8347,8 +8351,6 @@ items:
                     href: resources/intune-devices-manageddeviceremoteaction.md
                   - name: 托管安装程序状态
                     href: resources/intune-devices-managedinstallerstatus.md
-                  - name: 管理代理类型
-                    href: resources/intune-devices-managementagenttype.md
                   - name: 管理状态
                     href: resources/intune-devices-managementstate.md
                   - name: 通知邮件模板
@@ -9186,6 +9188,16 @@ items:
                         href: api/intune-mam-defaultmanagedappprotection-delete.md
                       - name: 更新
                         href: api/intune-mam-defaultmanagedappprotection-update.md
+                  - name: 设备管理配置交换联机设置适用性
+                    href: resources/intune-mam-devicemanagementconfigurationexchangeonlinesettingapplicability.md
+                  - name: 设备管理配置设置适用性
+                    href: resources/intune-mam-devicemanagementconfigurationsettingapplicability.md
+                  - name: 设备管理配置字符串设置值定义
+                    href: resources/intune-mam-devicemanagementconfigurationstringsettingvaluedefinition.md
+                  - name: 设备管理配置技术
+                    href: resources/intune-mam-devicemanagementconfigurationtechnologies.md
+                  - name: 设备管理配置窗口设置适用性
+                    href: resources/intune-mam-devicemanagementconfigurationwindowssettingapplicability.md
                   - name: 设备平台类型
                     href: resources/intune-wip-deviceplatformtype.md
                   - name: Intune 品牌打造配置文件
@@ -10029,7 +10041,7 @@ items:
                         href: api/intune-shared-devicecompliancepolicy-get.md
                       - name: 分配操作
                         href: api/intune-shared-devicecompliancepolicy-assign.md
-                      - name: refreshDeviceComplianceReportSummarization 操作
+                      - name: 刷新操作
                         href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
                       - name: hasPayloadLinks 操作
                         href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -10074,6 +10086,78 @@ items:
                         href: api/intune-shared-devicemanagement-enablelegacypcmanagement.md
                       - name: sendCustomNotificationToCompanyPortal 操作
                         href: api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md
+                  - name: 设备管理配置 Azure 广告信任类型
+                    href: resources/intune-shared-devicemanagementconfigurationazureadtrusttype.md
+                  - name: 设备管理配置选择设置集合实例
+                    href: resources/intune-shared-devicemanagementconfigurationchoicesettingcollectioninstance.md
+                  - name: 设备管理配置选择设置实例
+                    href: resources/intune-shared-devicemanagementconfigurationchoicesettinginstance.md
+                  - name: 设备管理配置选择设置值
+                    href: resources/intune-shared-devicemanagementconfigurationchoicesettingvalue.md
+                  - name: 设备管理配置控制类型
+                    href: resources/intune-shared-devicemanagementconfigurationcontroltype.md
+                  - name: 依赖于设备管理配置
+                    href: resources/intune-shared-devicemanagementconfigurationdependenton.md
+                  - name: 设备管理配置设备模式
+                    href: resources/intune-shared-devicemanagementconfigurationdevicemode.md
+                  - name: 设备管理配置组设置集合实例
+                    href: resources/intune-shared-devicemanagementconfigurationgroupsettingcollectioninstance.md
+                  - name: 设备管理配置组设置实例
+                    href: resources/intune-shared-devicemanagementconfigurationgroupsettinginstance.md
+                  - name: 设备管理配置组设置值
+                    href: resources/intune-shared-devicemanagementconfigurationgroupsettingvalue.md
+                  - name: 设备管理配置整数设置值
+                    href: resources/intune-shared-devicemanagementconfigurationintegersettingvalue.md
+                  - name: 设备管理配置整数设置值定义
+                    href: resources/intune-shared-devicemanagementconfigurationintegersettingvaluedefinition.md
+                  - name: 设备管理配置选项定义
+                    href: resources/intune-shared-devicemanagementconfigurationoptiondefinition.md
+                  - name: 设备管理配置平台
+                    href: resources/intune-shared-devicemanagementconfigurationplatforms.md
+                  - name: 设备管理配置参考设置值
+                    href: resources/intune-shared-devicemanagementconfigurationreferencesettingvalue.md
+                  - name: 设备管理配置引用设置信息
+                    href: resources/intune-shared-devicemanagementconfigurationreferredsettinginformation.md
+                  - name: 设备管理配置机密设置值
+                    href: resources/intune-shared-devicemanagementconfigurationsecretsettingvalue.md
+                  - name: 设备管理配置机密设置值状态
+                    href: resources/intune-shared-devicemanagementconfigurationsecretsettingvaluestate.md
+                  - name: 设备管理配置设置访问类型
+                    href: resources/intune-shared-devicemanagementconfigurationsettingaccesstypes.md
+                  - name: 设备管理配置设置取决于
+                    href: resources/intune-shared-devicemanagementconfigurationsettingdependedonby.md
+                  - name: 设备管理配置设置组集合实例
+                    href: resources/intune-shared-devicemanagementconfigurationsettinggroupcollectioninstance.md
+                  - name: 设备管理配置设置组实例
+                    href: resources/intune-shared-devicemanagementconfigurationsettinggroupinstance.md
+                  - name: 设备管理配置设置实例
+                    href: resources/intune-shared-devicemanagementconfigurationsettinginstance.md
+                  - name: 设备管理配置设置实例模板参考
+                    href: resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md
+                  - name: 设备管理配置设置出现
+                    href: resources/intune-shared-devicemanagementconfigurationsettingoccurrence.md
+                  - name: 设备管理配置设置使用情况
+                    href: resources/intune-shared-devicemanagementconfigurationsettingusage.md
+                  - name: 设备管理配置设置值
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvalue.md
+                  - name: 设备管理配置设置值定义
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvaluedefinition.md
+                  - name: 设备管理配置设置值模板参考
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvaluetemplatereference.md
+                  - name: 设备管理配置设置可见性
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvisibility.md
+                  - name: 设备管理配置简单设置集合实例
+                    href: resources/intune-shared-devicemanagementconfigurationsimplesettingcollectioninstance.md
+                  - name: 设备管理配置简单设置实例
+                    href: resources/intune-shared-devicemanagementconfigurationsimplesettinginstance.md
+                  - name: 设备管理配置简单设置值
+                    href: resources/intune-shared-devicemanagementconfigurationsimplesettingvalue.md
+                  - name: 设备管理配置字符串格式
+                    href: resources/intune-shared-devicemanagementconfigurationstringformat.md
+                  - name: 设备管理配置字符串设置值
+                    href: resources/intune-shared-devicemanagementconfigurationstringsettingvalue.md
+                  - name: 设备管理配置 Windows skus
+                    href: resources/intune-shared-devicemanagementconfigurationwindowsskus.md
                   - name: 设备管理派生凭据设置
                     href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
                     items:
@@ -10178,6 +10262,8 @@ items:
                     href: resources/intune-shared-macosvppappassignmentsettings.md
                   - name: 托管的设备所有者类型
                     href: resources/intune-shared-manageddeviceownertype.md
+                  - name: 管理代理类型
+                    href: resources/intune-shared-managementagenttype.md
                   - name: MDM Windows 信息保护策略
                     href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
                     items:
@@ -14720,7 +14806,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列出
                     href: api/simulationautomation-list-runs.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training

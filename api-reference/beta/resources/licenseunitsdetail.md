@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: jconley76
-ms.openlocfilehash: ed149138aac5253ffbb2af4ef6447fffce3b9522
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: 65cf81462f658fe2c11dc3b4c6c67f3a7b62900b
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549489"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668998"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "65549489"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**subscribedSku** 实体的 [prepaidUnits](subscribedsku.md) 属性为 **licenseUnitsDetail** 类型。 有关订阅的进度状态的详细信息， [请参阅我的订阅是否过期？](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide)
+**subscribedSku** 实体的 [prepaidUnits](subscribedsku.md) 属性为 **licenseUnitsDetail** 类型。 有关订阅的进度状态的详细信息， [请参阅我的订阅是否过期？](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide&preserve-view=true)
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:-------------|:-----|:----------|
 |已启用|Int32| 为服务 SKU 的活动订阅启用的单位数。 |
 |已挂起|Int32| 因服务 SKU 订阅已取消而暂停的单位数。 无法分配这些单元，但仍可在删除之前重新激活。 |

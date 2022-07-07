@@ -4,12 +4,12 @@ description: 列出用于Intune终结点的 Microsoft 图形 API (REST) ，这�
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 5ee2bb66b6c90df86cf6b9a3136578986113128e
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 4002720381bb7c98103efe80f6f08db7b11e3a4f
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858427"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668781"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -81,6 +81,7 @@ ms.locfileid: "65858427"
 - [设备运行状况脚本运行摘要](intune-devices-devicehealthscriptrunsummary.md)
 - [设备运行状况脚本字符串参数](intune-devices-devicehealthscriptstringparameter.md)
 - [设备运行状况脚本时间计划](intune-devices-devicehealthscripttimeschedule.md)
+- [设备许可状态](intune-devices-devicelicensingstatus.md)
 - [设备日志收集请求](intune-devices-devicelogcollectionrequest.md)
 - [设备日志收集响应](intune-devices-devicelogcollectionresponse.md)
 - [设备日志收集模板类型](intune-devices-devicelogcollectiontemplatetype.md)
@@ -176,7 +177,6 @@ ms.locfileid: "65858427"
 - [托管的设备合作伙伴报告的运行状况](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [托管设备远程操作](intune-devices-manageddeviceremoteaction.md)
 - [托管安装程序状态](intune-devices-managedinstallerstatus.md)
-- [管理代理类型](intune-devices-managementagenttype.md)
 - [管理状态](intune-devices-managementstate.md)
 - [通知邮件模板](intune-notification-notificationmessagetemplate.md)
 - [通知模板品牌选项](intune-notification-notificationtemplatebrandingoptions.md)
@@ -267,7 +267,7 @@ ms.locfileid: "65858427"
 - [用户体验分析可从任何位置使用模型性能](intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md)
 - [保修产品/服务](intune-devices-warrantyoffer.md)
 - [保修类型](intune-devices-warrantytype.md)
-- [Windows defender 产品状态](intune-devices-windowsdefenderproductstatus.md)
+- [Windows Defender 产品状态](intune-devices-windowsdefenderproductstatus.md)
 - [Windows Defender 扫描操作结果](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows 设备帐户](intune-devices-windowsdeviceaccount.md)
 - [Windows 设备 AD 帐户](intune-devices-windowsdeviceadaccount.md)
@@ -282,7 +282,7 @@ ms.locfileid: "65858427"
 - [Windows 恶意软件名称计数](intune-devices-windowsmalwarenamecount.md)
 - [Windows 恶意软件概述](intune-devices-windowsmalwareoverview.md)
 - [Windows 恶意软件严重性](intune-devices-windowsmalwareseverity.md)
-- [Windows恶意软件严重性计数](intune-devices-windowsmalwareseveritycount.md)
+- [Windows 恶意软件严重性计数](intune-devices-windowsmalwareseveritycount.md)
 - [Windows 恶意软件状态](intune-devices-windowsmalwarestate.md)
 - [Windows 恶意软件状态计数](intune-devices-windowsmalwarestatecount.md)
 - [Windows 恶意软件威胁状态](intune-devices-windowsmalwarethreatstate.md)

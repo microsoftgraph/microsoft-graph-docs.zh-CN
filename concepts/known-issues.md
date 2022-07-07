@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍 Microsoft Graph 的已知问题和限制，并尽可能提供解决方法。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 45566a7b451dd0de3938c6a3d2cb7cb31b2393ba
-ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
+ms.openlocfilehash: 8d64aeace070fb646145faf9f06d3a3df0bbaafe
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66577579"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645454"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -432,6 +432,13 @@ GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 }
 ```
 要解决此问题，请先从 URL 中删除 `/tenants/{tenant-id}` 部分，然后调用 API 以访问跨租户共享 [信道](/graph/api/resources/channel.md)。
+
+### <a name="teamworkappsettings-permissions-are-not-visible-in-the-azure-portal"></a>TeamworkAppSettings 权限在 Azure 门户中不可见
+权限 TeamworkAppSettings.Read.All 和 TeamworkAppSettings.ReadWrite.All 当前正在推出，可能尚未在 Azure 门户中显示。 若要同意这些权限，请使用授权请求，如下所示：
+
+```http
+GET https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize?client_id={client-app-id}&response_type=code&scope=https://graph.microsoft.com/TeamworkAppSettings.ReadWrite.All
+```
 
 ## <a name="users"></a>用户
 

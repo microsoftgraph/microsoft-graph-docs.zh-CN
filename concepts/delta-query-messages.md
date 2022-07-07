@@ -1,15 +1,15 @@
 ---
 title: 获取文件夹中邮件的增量更改
 description: 使用增量查询通过单独跟踪每个文件夹来跟踪文件夹层次结构中邮件的更改。 示例演示了如何同步文件夹中的邮件。
-author: FaithOmbongi
+author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 90f72d899183b028fd66fc23c1f2f54929b7e944
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 06e4b6787a298ef245323b84671c0716768751fb
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555602"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671393"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>获取文件夹中邮件的增量更改
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2fb437a3b6b2cb44f32cc1e12a601b3ed4673ac
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 65ca73ed17e70e9d4a86439a1daea490b84b30bc
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338139"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668648"
 ---
 # <a name="remoteassistancereporting-resource-type"></a>remoteAssistanceReporting 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,23 +28,23 @@ RemoteAssistanceReporting 资源表示给定远程协助报告有效负载的元
 |id|String|会话和每个会话的报告有效负载的唯一标识符|
 |startDateTime|DateTimeOffset|会话的开始时间|
 |endDateTime|DateTimeOffset|会话的结束时间|
-|remoteAssistanceSessionType|[remoteAssistanceSessionType](../resources/intune-remoteassistance-remoteassistancesessiontype.md)|已召开的远程协助会话的类型。 可取值为：`viewOnly`、`fullControl`、`elevation`。 可取值为：`viewOnly`、`fullControl`、`elevation`。|
-|helperEmail|String|帮助程序用来建立会话的登录电子邮件|
-|helperTenantId|String|帮助程序租户 ID|
+|remoteAssistanceSessionType|[remoteAssistanceSessionType](../resources/intune-remoteassistance-remoteassistancesessiontype.md)|所举行的远程协助会话的类型。 可取值为：`viewOnly`、`fullControl`、`elevation`。 可取值为：`viewOnly`、`fullControl`、`elevation`。|
+|helperEmail|String|帮助程序用于建立会话的登录电子邮件|
+|helperTenantId|String|帮助程序的租户 ID|
 |helperFirstName|String|帮助程序的名字|
-|helperLastName|String|帮助程序姓氏|
+|helperLastName|字符串|帮助程序的姓氏|
 |helperOs|String|帮助程序的操作系统|
-|helperDeviceAadId|String|帮助程序的设备AAD ID|
-|helperDeviceName|String|帮助程序的设备名称|
-|helperEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|帮助程序设备的 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|sharerEmail|String|共享者用于建立会话的登录电子邮件|
-|sharerTenantId|String|共享者租户 ID|
+|helperDeviceAadId|String|帮助程序的设备 AAD ID|
+|helperDeviceName|字符串|帮助程序的设备名称|
+|helperEnrollmentState|[enrollmentState](../resources/intune-remoteassistance-enrollmentstate.md)|Intune帮助程序设备的注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
+|sharerEmail|String|共享程序用于建立会话的登录电子邮件|
+|sharerTenantId|String|共享程序的租户 ID|
 |sharerFirstName|String|Sharer 的名字|
 |sharerLastName|String|Sharer 的姓氏|
-|sharerDeviceAadId|String|共享者的设备AAD ID|
+|sharerDeviceAadId|String|Sharer 的设备 AAD ID|
 |sharerDeviceName|String|Sharer 的设备名称|
 |sharerOs|String|Sharer 的操作系统|
-|sharerEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|共享者设备的 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
+|sharerEnrollmentState|[enrollmentState](../resources/intune-remoteassistance-enrollmentstate.md)|Intune sharer 设备的注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 
 ## <a name="relationships"></a>关系
 无

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 1bcf0bfe10fb1070bd33d251c7bfa76cde101982
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: b46170836dd94e7941e22b601946b259c5d0d01d
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477991"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668620"
 ---
 # <a name="create-application"></a>创建应用程序
 
@@ -19,7 +19,7 @@ ms.locfileid: "64477991"
 创建新的 [application](../resources/application.md) 对象。
 
 > [!IMPORTANT]
-> 不支持在创建应用程序时添加 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](application-addpassword.md) 方法为应用程序添加密码或密钥。
+> 不支持在创建应用程序时添加 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](application-addpassword.md) 方法为应用程序添加密码或机密。
 
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -123,6 +123,7 @@ Content-type: application/json
     "optionalClaims": null,
     "addIns": [],
     "publisherDomain": "contoso.onmicrosoft.com",
+    "samlMetadataUrl": "https://graph.microsoft.com/2h5hjaj542de/app",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "tags": [],
     "tokenEncryptionKeyId": null,

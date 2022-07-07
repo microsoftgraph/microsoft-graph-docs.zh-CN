@@ -1,26 +1,26 @@
 ---
 title: removeDeviceFirmwareConfigurationInterfaceManagement 操作
-description: 尚未记录
+description: 从设备固件配置接口管理中删除设备
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87485d7e0314a4459943c9b205b6e370da6b9c64
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: eb6c9aa00cb0b755040a7fd6f502fb1b1a3fa3a5
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858569"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670693"
 ---
 # <a name="removedevicefirmwareconfigurationinterfacemanagement-action"></a>removeDeviceFirmwareConfigurationInterfaceManagement 操作
 
 命名空间：microsoft.graph
 
-> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+从设备固件配置接口管理中删除设备
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "65858569"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

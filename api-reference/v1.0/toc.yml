@@ -51,8 +51,12 @@ items:
           - name: 概述
             href: /graph/throttling?context=graph/api/1.0
             displayName: throttling
+          - name: 服务特定限制
+            href: /graph/throttling-limits?context=graph/api/1.0
+            displayName: throttling
           - name: 优化网络流量
             href: /learn/modules/optimize-network-traffic
+            displayName: throttling
       - name: 更改通知
         items:
           - name: 概述
@@ -540,7 +544,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: 团队合作
             items:
               - name: 已安装应用
                 href: resources/teamsappinstallation.md

@@ -1,17 +1,17 @@
 ---
-title: Microsoft Intune 中的共享资源 - Microsoft Graph API
-description: 列出支持租户Graph多个工作流的适用于 Intune 终结点 (REST) 的 Microsoft 应用程序 API。
+title: Microsoft Intune中的共享资源 - Microsoft 图形 API
+description: 列出支持租户组织多个工作流的 (REST) Intune终结点的 Microsoft 图形 API。
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 66d40ecd47b8ba1ab66bd6f596aa2bf6e47ba96a
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 7e7f04b2fa77a23db0b8923f8bd02ee803690833
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348178"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66666625"
 ---
-# <a name="shared-resources-in-microsoft-intune"></a>共享资源Microsoft Intune
+# <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune中的共享资源
 
 命名空间：microsoft.graph
 
@@ -19,24 +19,24 @@ ms.locfileid: "61348178"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-这些终结点在多个 Microsoft Graph API 中用于 Intune 工作流。  使用给定资源所需的意图、目的和权限因特定工作流和基础调用的上下文而异。  此外，某些方法、属性和操作仅受特定工作流支持。
+这些终结点在多个 Microsoft 图形 API中用于Intune工作流。  使用给定资源所需的意向、用途和权限因基础调用的特定工作流和上下文而异。  此外，特定工作流仅支持某些方法、属性和操作。
 
-Intune Graph之间共享以下资源：
+以下 Graph 资源在Intune工作流之间共享：
 
 - [操作状态](intune-shared-actionstate.md)
 - [所有设备分配目标](intune-shared-alldevicesassignmenttarget.md)
 - [所有许可的用户分配目标](intune-shared-alllicensedusersassignmenttarget.md)
-- [Android 企业始终使用 VPN 程序包类型](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
+- [Android 企业始终在 VPN 包类型上](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
 - [Android 管理的应用保护](intune-shared-androidmanagedappprotection.md)
 - [Android 托管应用商店应用分配设置](intune-shared-androidmanagedstoreappassignmentsettings.md)
-- [Android 托管应用商店自动更新模式](intune-shared-androidmanagedstoreautoupdatemode.md)
+- [Android 托管存储自动更新模式](intune-shared-androidmanagedstoreautoupdatemode.md)
 - [证书目标存储](intune-shared-certificatedestinationstore.md)
 - [证书存储](intune-shared-certificatestore.md)
 - [证书有效期范围](intune-shared-certificatevalidityperiodscale.md)
 - [公司门户操作](intune-shared-companyportalaction.md)
-- [公司门户阻止的操作](intune-shared-companyportalblockedaction.md)
+- [公司门户阻止操作](intune-shared-companyportalblockedaction.md)
 - [符合性状态](intune-shared-compliancestatus.md)
-- [配置管理器集合分配目标](intune-shared-configurationmanagercollectionassignmenttarget.md)
+- [Configuration Manager 集合分配目标](intune-shared-configurationmanagercollectionassignmenttarget.md)
 - [设备和应用管理分配筛选器类型](intune-shared-deviceandappmanagementassignmentfiltertype.md)
 - [设备和应用管理分配源](intune-shared-deviceandappmanagementassignmentsource.md)
 - [设备和应用管理分配目标](intune-shared-deviceandappmanagementassignmenttarget.md)
@@ -46,7 +46,43 @@ Intune Graph之间共享以下资源：
 - [设备配置](intune-shared-deviceconfiguration.md)
 - [设备注册配置](intune-shared-deviceenrollmentconfiguration.md)
 - [设备管理](intune-shared-devicemanagement.md)
-- [设备管理派生的凭据设置](intune-shared-devicemanagementderivedcredentialsettings.md)
+- [设备管理配置 Azure 广告信任类型](intune-shared-devicemanagementconfigurationazureadtrusttype.md)
+- [设备管理配置选择设置集合实例](intune-shared-devicemanagementconfigurationchoicesettingcollectioninstance.md)
+- [设备管理配置选择设置实例](intune-shared-devicemanagementconfigurationchoicesettinginstance.md)
+- [设备管理配置选择设置值](intune-shared-devicemanagementconfigurationchoicesettingvalue.md)
+- [设备管理配置控制类型](intune-shared-devicemanagementconfigurationcontroltype.md)
+- [依赖于设备管理配置](intune-shared-devicemanagementconfigurationdependenton.md)
+- [设备管理配置设备模式](intune-shared-devicemanagementconfigurationdevicemode.md)
+- [设备管理配置组设置集合实例](intune-shared-devicemanagementconfigurationgroupsettingcollectioninstance.md)
+- [设备管理配置组设置实例](intune-shared-devicemanagementconfigurationgroupsettinginstance.md)
+- [设备管理配置组设置值](intune-shared-devicemanagementconfigurationgroupsettingvalue.md)
+- [设备管理配置整数设置值](intune-shared-devicemanagementconfigurationintegersettingvalue.md)
+- [设备管理配置整数设置值定义](intune-shared-devicemanagementconfigurationintegersettingvaluedefinition.md)
+- [设备管理配置选项定义](intune-shared-devicemanagementconfigurationoptiondefinition.md)
+- [设备管理配置平台](intune-shared-devicemanagementconfigurationplatforms.md)
+- [设备管理配置参考设置值](intune-shared-devicemanagementconfigurationreferencesettingvalue.md)
+- [设备管理配置引用设置信息](intune-shared-devicemanagementconfigurationreferredsettinginformation.md)
+- [设备管理配置机密设置值](intune-shared-devicemanagementconfigurationsecretsettingvalue.md)
+- [设备管理配置机密设置值状态](intune-shared-devicemanagementconfigurationsecretsettingvaluestate.md)
+- [设备管理配置设置访问类型](intune-shared-devicemanagementconfigurationsettingaccesstypes.md)
+- [设备管理配置设置取决于](intune-shared-devicemanagementconfigurationsettingdependedonby.md)
+- [设备管理配置设置组集合实例](intune-shared-devicemanagementconfigurationsettinggroupcollectioninstance.md)
+- [设备管理配置设置组实例](intune-shared-devicemanagementconfigurationsettinggroupinstance.md)
+- [设备管理配置设置实例](intune-shared-devicemanagementconfigurationsettinginstance.md)
+- [设备管理配置设置实例模板参考](intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)
+- [设备管理配置设置出现](intune-shared-devicemanagementconfigurationsettingoccurrence.md)
+- [设备管理配置设置使用情况](intune-shared-devicemanagementconfigurationsettingusage.md)
+- [设备管理配置设置值](intune-shared-devicemanagementconfigurationsettingvalue.md)
+- [设备管理配置设置值定义](intune-shared-devicemanagementconfigurationsettingvaluedefinition.md)
+- [设备管理配置设置值模板参考](intune-shared-devicemanagementconfigurationsettingvaluetemplatereference.md)
+- [设备管理配置设置可见性](intune-shared-devicemanagementconfigurationsettingvisibility.md)
+- [设备管理配置简单设置集合实例](intune-shared-devicemanagementconfigurationsimplesettingcollectioninstance.md)
+- [设备管理配置简单设置实例](intune-shared-devicemanagementconfigurationsimplesettinginstance.md)
+- [设备管理配置简单设置值](intune-shared-devicemanagementconfigurationsimplesettingvalue.md)
+- [设备管理配置字符串格式](intune-shared-devicemanagementconfigurationstringformat.md)
+- [设备管理配置字符串设置值](intune-shared-devicemanagementconfigurationstringsettingvalue.md)
+- [设备管理配置 Windows skus](intune-shared-devicemanagementconfigurationwindowsskus.md)
+- [设备管理派生凭据设置](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [设备管理脚本](intune-shared-devicemanagementscript.md)
 - [支持](intune-shared-enablement.md)
 - [注册可用性选项](intune-shared-enrollmentavailabilityoptions.md)
@@ -68,10 +104,10 @@ Intune Graph之间共享以下资源：
 - [密钥大小](intune-shared-keysize.md)
 - [密钥存储提供程序选项](intune-shared-keystorageprovideroption.md)
 - [密钥使用情况](intune-shared-keyusages.md)
-- [键/值对](intune-shared-keyvaluepair.md)
 - [macOS LOB 应用分配设置](intune-shared-macoslobappassignmentsettings.md)
 - [macOS VPP 应用分配设置](intune-shared-macosvppappassignmentsettings.md)
 - [托管的设备所有者类型](intune-shared-manageddeviceownertype.md)
+- [管理代理类型](intune-shared-managementagenttype.md)
 - [MDM Windows 信息保护策略](intune-shared-mdmwindowsinformationprotectionpolicy.md)
 - [适用于企业的 Microsoft 应用商店分配设置](intune-shared-microsoftstoreforbusinessappassignmentsettings.md)
 - [MIME 内容](intune-shared-mimecontent.md)
@@ -85,7 +121,6 @@ Intune Graph之间共享以下资源：
 - [报表根目录](intune-shared-reportroot.md)
 - [RGB 颜色](intune-shared-rgbcolor.md)
 - [按帐户类型运行](intune-shared-runasaccounttype.md)
-- [运行状态](intune-shared-runstate.md)
 - [保存的 UI 状态生成选项](intune-shared-saveduistategenerationoptions.md)
 - [设置源类型](intune-shared-settingsourcetype.md)
 - [使用者可选名称类型](intune-shared-subjectalternativenametype.md)
@@ -95,11 +130,11 @@ Intune Graph之间共享以下资源：
 - [VPP 令牌帐户类型](intune-shared-vpptokenaccounttype.md)
 - [VPP 令牌操作失败原因](intune-shared-vpptokenactionfailurereason.md)
 - [Win32 LOB 应用分配设置](intune-shared-win32lobappassignmentsettings.md)
-- [Win32 LOB 应用传递优化优先级](intune-shared-win32lobappdeliveryoptimizationpriority.md)
+- [Win32 LOB 应用交付优化优先级](intune-shared-win32lobappdeliveryoptimizationpriority.md)
 - [Win32 LOB 应用通知](intune-shared-win32lobappnotification.md)
 - [Win32 LOB 应用重启设置](intune-shared-win32lobapprestartsettings.md)
 - [Windows AppX 应用分配设置](intune-shared-windowsappxappassignmentsettings.md)
 - [Windows Autopilot Deployment 配置文件](intune-shared-windowsautopilotdeploymentprofile.md)
 - [Windows 域加入配置](intune-shared-windowsdomainjoinconfiguration.md)
 - [Windows Universal AppX 应用分配设置](intune-shared-windowsuniversalappxappassignmentsettings.md)
-- [Windows更新状态](intune-shared-windowsupdatestate.md)
+- [Windows 更新状态](intune-shared-windowsupdatestate.md)

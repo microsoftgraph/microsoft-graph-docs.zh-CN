@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c84c50a4da63cf92360ccbb0fee7d9db3d6764b
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d6f710798ab3cf077c2db4e853ae76b2b2c593d1
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61334149"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670272"
 ---
 # <a name="update-devicemanagementconfigurationsetting"></a>更新 deviceManagementConfigurationSetting
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementConfigurationSetting 对象](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 的属性。
+更新 [deviceManagementConfigurationSetting 对象的](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "61334149"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -48,19 +48,19 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 对象的 JSON 表示形式。
+在请求正文中，为 [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 对象提供 JSON 表示形式。
 
-下表显示创建 [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)时所需的属性。
+下表显示了创建 [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|包含此设置的策略中的此设置的键。 自动生成。|
-|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|设置实例|
+|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|设置实例|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 对象。
 
 ## <a name="example"></a>示例
 

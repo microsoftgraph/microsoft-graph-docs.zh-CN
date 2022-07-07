@@ -4,12 +4,12 @@ description: 列出用于为租户组织配置设备 (REST) Intune终结点的 M
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: c0409951587da135830bbc567b6c3684716a192f
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 509a99d0d4104566295244c83826c6fdca8c8909
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65203237"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668795"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -445,7 +445,6 @@ ms.locfileid: "65203237"
 - [托管设备加密状态](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [托管设备移动应用配置设置状态](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
 - [托管设备报告的应用](intune-deviceconfig-manageddevicereportedapp.md)
-- [管理代理类型](intune-deviceconfig-managementagenttype.md)
 - [媒体内容分级（澳大利亚）](intune-deviceconfig-mediacontentratingaustralia.md)
 - [媒体内容分级（加拿大）](intune-deviceconfig-mediacontentratingcanada.md)
 - [媒体内容分级（法国）](intune-deviceconfig-mediacontentratingfrance.md)
@@ -602,10 +601,10 @@ ms.locfileid: "65203237"
 - [Windows 应用启动布局磁贴大小](intune-deviceconfig-windowsappstartlayouttilesize.md)
 - [Windows 证书配置文件基础](intune-deviceconfig-windowscertificateprofilebase.md)
 - [Windows Defender 高级威胁防护配置](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
-- [Windows defender 篡改保护选项](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
+- [Windows Defender 篡改保护选项](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Windows 传递优化配置](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows 传递优化模式](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
-- [Windows边缘展台类型](intune-deviceconfig-windowsedgekiosktype.md)
+- [Windows Edge 展台类型](intune-deviceconfig-windowsedgekiosktype.md)
 - [Windows 防火墙网络配置文件](intune-deviceconfig-windowsfirewallnetworkprofile.md)
 - [Windows 防火墙规则](intune-deviceconfig-windowsfirewallrule.md)
 - [Windows 防火墙规则接口类型](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
@@ -623,17 +622,17 @@ ms.locfileid: "65203237"
 - [Windows Kiosk Azure AD 用户](intune-deviceconfig-windowskioskazureaduser.md)
 - [Windows Kiosk 配置](intune-deviceconfig-windowskioskconfiguration.md)
 - [Windows Kiosk 桌面应用](intune-deviceconfig-windowskioskdesktopapp.md)
-- [Windows展台强制更新计划](intune-deviceconfig-windowskioskforceupdateschedule.md)
+- [Windows 展台强制更新计划](intune-deviceconfig-windowskioskforceupdateschedule.md)
 - [Windows Kiosk 本地组](intune-deviceconfig-windowskiosklocalgroup.md)
 - [Windows Kiosk 本地用户](intune-deviceconfig-windowskiosklocaluser.md)
 - [Windows Kiosk 多个应用](intune-deviceconfig-windowskioskmultipleapps.md)
 - [Windows Kiosk 配置文件](intune-deviceconfig-windowskioskprofile.md)
 - [Windows Kiosk 单个 UWP 应用](intune-deviceconfig-windowskiosksingleuwpapp.md)
-- [Windows展台单一 win32 应用](intune-deviceconfig-windowskiosksinglewin32app.md)
+- [Windows 展台单一 win32 应用](intune-deviceconfig-windowskiosksinglewin32app.md)
 - [Windows Kiosk 用户](intune-deviceconfig-windowskioskuser.md)
 - [Windows Kiosk UWP 应用](intune-deviceconfig-windowskioskuwpapp.md)
 - [Windows Kiosk 访问者](intune-deviceconfig-windowskioskvisitor.md)
-- [Windows展台 win32 应用](intune-deviceconfig-windowskioskwin32app.md)
+- [Windows 展台 win32 应用](intune-deviceconfig-windowskioskwin32app.md)
 - [Windows 网络隔离策略](intune-deviceconfig-windowsnetworkisolationpolicy.md)
 - [Windows Phone 8.1 证书配置文件基础](intune-deviceconfig-windowsphone81certificateprofilebase.md)
 - [Windows Phone 8.1 合规性策略](intune-deviceconfig-windowsphone81compliancepolicy.md)
@@ -664,7 +663,7 @@ ms.locfileid: "65203237"
 - [Windows VPN 连接类型](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi 配置](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi 企业版 e a p 配置](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
-- [Windows有线网络配置](intune-deviceconfig-windowswirednetworkconfiguration.md)
+- [Windows 有线网络配置](intune-deviceconfig-windowswirednetworkconfiguration.md)
 - [有线网络身份验证方法](intune-deviceconfig-wirednetworkauthenticationmethod.md)
 - [有线网络身份验证类型](intune-deviceconfig-wirednetworkauthenticationtype.md)
 - [有线网络接口](intune-deviceconfig-wirednetworkinterface.md)

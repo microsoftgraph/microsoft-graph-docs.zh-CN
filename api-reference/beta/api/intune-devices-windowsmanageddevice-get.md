@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f17b3ef75488962b43654cdc95e6f297bd41ceb
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 967ba540b13dd842d09779342f95de0ba8250683
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347821"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667139"
 ---
 # <a name="get-windowsmanageddevice"></a>获取 windowsManagedDevice
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -59,7 +59,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9093
+Content-Length: 9589
 
 {
   "value": {
@@ -124,7 +124,16 @@ Content-Length: 9093
       "esimIdentifier": "Esim Identifier value",
       "systemManagementBIOSVersion": "System Management BIOSVersion value",
       "tpmManufacturer": "Tpm Manufacturer value",
-      "tpmVersion": "Tpm Version value"
+      "tpmVersion": "Tpm Version value",
+      "wiredIPv4Addresses": [
+        "Wired IPv4Addresses value"
+      ],
+      "batteryLevelPercentage": 7.333333333333333,
+      "residentUsersCount": 2,
+      "productName": "Product Name value",
+      "deviceLicensingStatus": "licenseRefreshPending",
+      "deviceLicensingLastErrorCode": 12,
+      "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -277,7 +286,9 @@ Content-Length: 9093
         "updatable": true
       }
     ],
-    "enrollmentProfileName": "Enrollment Profile Name value"
+    "enrollmentProfileName": "Enrollment Profile Name value",
+    "bootstrapTokenEscrowed": true,
+    "deviceFirmwareConfigurationInterfaceManaged": true
   }
 }
 ```

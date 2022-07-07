@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kwekua
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a2a8937f543b8d6a33b167be1438bc685ec52934
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 692342668636e26258e9b7bf4a770f91d76c9b36
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205511"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668879"
 ---
 # <a name="bookingsbusiness-getstaffavailability"></a>bookingsBusiness： getStaffAvailability
 
@@ -28,13 +28,13 @@ ms.locfileid: "65205511"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|Application | Calendar.Read、Calendar.ReadWrite、Bookings。Read.All、Calendars.ReadWrite  |
+|应用程序 | Calendar.Read、Calendar.ReadWrite、Bookings.Read.All、Calendars.ReadWrite  |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 ```http
-Get /solutions/bookingBusinesses/{id}/getStaffAvailability
+POST /bookingBusinesses/{id}/getStaffAvailability
 ```
 
 ## <a name="request-header"></a>请求标头
@@ -65,7 +65,7 @@ Get /solutions/bookingBusinesses/{id}/getStaffAvailability
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
+POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
 Content-Type: application/json 
 
 { 

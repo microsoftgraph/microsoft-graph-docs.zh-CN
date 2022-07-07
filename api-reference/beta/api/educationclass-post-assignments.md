@@ -1,16 +1,16 @@
 ---
 title: 创建 educationAssignment
-description: 创建新工作分配。
+description: 创建新分配。
 ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0ebb86c14414a4bd7d10c05b119597fd21f0ba02
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d28f8a21e1714778b0ef14835e51d19af2398d44
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109118"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671022"
 ---
 # <a name="create-educationassignment"></a>创建 educationAssignment
 
@@ -18,9 +18,9 @@ ms.locfileid: "62109118"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新工作分配。 
+创建新分配。 
 
-只有班级中的教师才能创建作业。 作业从"草稿"状态开始，这意味着学生在发布之前不会看到作业。
+只有班级中的教师才能创建作业。 作业从“草稿”状态开始，这意味着学生在发布之前不会看到作业。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "62109118"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ POST /education/classes/{class-id}/assignments
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [educationAssignment](../resources/educationassignment.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [educationAssignment](../resources/educationassignment.md) 对象。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -70,11 +70,11 @@ Content-type: application/json
         "content": "Read chapter 4"
     },
     "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "@odata.type": "#microsoft.graph.educationAssignmentGradeType",
         "maxPoints": 50
     },
     "assignTo": {
-        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+        "@odata.type": "#microsoft.graph.educationAssignmentGradeType"
     },
     "status": "draft",
     "allowStudentsToAddResourcesToSubmission": true
@@ -173,7 +173,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-* [分配和提交状态、转换和限制](/graph/assignments-submissions-states-transition)
+* [分配和提交的状态、转换和限制](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

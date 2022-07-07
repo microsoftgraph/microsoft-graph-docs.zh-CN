@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c271302b231f97e22ca6e5be8a24e70153785517
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 934fdc98bec75c6691598f3c4f319287227676f9
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64630749"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671186"
 ---
 # <a name="evaluateassignmentfilter-action"></a>evaluateAssignmentFilter 操作
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "64630749"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,7 +58,7 @@ POST /deviceManagement/evaluateAssignmentFilter
 
 
 ## <a name="response"></a>响应
-如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 Stream。
+如果成功，此操作在响应正文中返回 `200 OK` 响应代码和流。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ POST /deviceManagement/evaluateAssignmentFilter
 POST https://graph.microsoft.com/beta/deviceManagement/evaluateAssignmentFilter
 
 Content-type: application/json
-Content-length: 235
+Content-length: 266
 
 {
   "data": {
@@ -79,7 +79,8 @@ Content-length: 235
     "skip": 4,
     "orderBy": [
       "Order By value"
-    ]
+    ],
+    "search": "Search value"
   }
 }
 ```

@@ -2,21 +2,21 @@
 title: mobileAppAssignment 资源类型
 description: 包含用于移动应用的组分配的属性的类。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b0e468759d8952f256645230e3c53be525d28d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 81d5a96477e2d0ca2620d70e066408f8197215b9
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59087056"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668816"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -38,8 +38,8 @@ ms.locfileid: "59087056"
 |intent|[installIntent](../resources/intune-shared-installintent.md)|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|作为工作分配的源的资源类型。 可取值为：`direct`、`policySets`。|
-|sourceId|String|工作分配的源的标识符。|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|资源类型，它是分配的源。 可取值为：`direct`、`policySets`。|
+|sourceId|String|分配源的标识符。|
 
 ## <a name="relationships"></a>关系
 无
@@ -63,15 +63,14 @@ ms.locfileid: "59087056"
     "deviceAndAppManagementAssignmentFilterType": "String"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "String",
-    "uninstallOnDeviceRemoval": true,
-    "isRemovable": true
+    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+    "useDeviceContext": true
   },
   "source": "String",
   "sourceId": "String"
 }
 ```
+
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 27fed2656b745580ba9ffe825d7248a380b7fdb9
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: a5858c1b125c4f4d81df6a78840746bed6194aec
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206256"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670241"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>创建 windows10EnrollmentCompletionPageConfiguration
 
 命名空间：microsoft.graph
 
-> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|从 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 继承的帐户的唯一标识符|
+|id|字符串|从 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 继承的帐户的唯一标识符|
 |displayName|String|从 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 继承的设备注册配置的显示名称|
 |说明|String|从 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 继承的设备注册配置的说明|
 |priority|Int32|当用户存在于分配了注册配置的多个组中时，将使用优先级。 用户仅受优先级最低的配置的约束。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
@@ -65,13 +65,14 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |showInstallationProgress|Boolean|向用户显示或隐藏安装进度|
 |blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装程序|
 |allowDeviceResetOnInstallFailure|Boolean|在安装失败时允许或阻止设备重置|
-|allowLogCollectionOnInstallFailure|Boolean|在安装失败时允许或阻止日志收集|
-|customErrorMessage|字符串|设置安装失败时显示的自定义错误消息|
+|allowLogCollectionOnInstallFailure|布尔|在安装失败时允许或阻止日志收集|
+|customErrorMessage|String|设置安装失败时显示的自定义错误消息|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时（以分钟为单位）|
 |allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
 |selectedMobileAppIds|字符串集合|用于跟踪安装状态的选定应用程序|
-|trackInstallProgressForAutopilotOnly|Boolean|仅显示 Autopilot 注册方案的安装进度|
-|disableUserStatusTrackingAfterFirstUser|Boolean|仅显示第一个用户注册后的安装进度|
+|allowNonBlockingAppInstallation|Boolean|在白手套期间将所有必需的应用安装为非阻止应用|
+|trackInstallProgressForAutopilotOnly|布尔|仅显示 Autopilot 注册方案的安装进度|
+|disableUserStatusTrackingAfterFirstUser|布尔|仅显示第一个用户注册后的安装进度|
 
 
 
@@ -85,7 +86,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 795
+Content-length: 839
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -107,6 +108,7 @@ Content-length: 795
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
   ],
+  "allowNonBlockingAppInstallation": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }
@@ -117,7 +119,7 @@ Content-length: 795
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 967
+Content-Length: 1011
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -142,6 +144,7 @@ Content-Length: 967
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
   ],
+  "allowNonBlockingAppInstallation": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }

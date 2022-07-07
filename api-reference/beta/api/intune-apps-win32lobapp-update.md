@@ -2,25 +2,25 @@
 title: 更新 win32LobApp
 description: 更新 win32LobApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 894f64db7bad4a4ce8e11f475c28f5684e50d9d0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 70651b15e7aca078c0871c9b994081985f949795
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098284"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671267"
 ---
 # <a name="update-win32lobapp"></a>更新 win32LobApp
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [win32LobApp 对象](../resources/intune-apps-win32lobapp.md) 的属性。
+更新 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "59098284"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -49,9 +49,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象的 JSON 表示形式。
+在请求正文中，为 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象提供 JSON 表示形式。
 
-下表显示创建 [win32LobApp 时所需的属性](../resources/intune-apps-win32lobapp.md)。
+下表显示了创建 [win32LobApp](../resources/intune-apps-win32lobapp.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -65,41 +65,42 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|所有者|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、1 - `Ready` 、2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|uploadState|Int32|上传状态。 可能的值为： 0 - `Not Ready`， 1 - `Ready`， 2 - . `Processing` 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否将应用分配给至少一个组的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|字符串集合|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|dependentAppCount|Int32|子应用具有的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|dependentAppCount|Int32|子应用的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|此应用直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|supersededAppCount|Int32|此应用直接或间接被取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|此应用被直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|installCommandLine|String|安装此应用程序的命令行|
-|uninstallCommandLine|String|卸载此应用程序的命令行|
+|installCommandLine|String|要安装此应用的命令行|
+|uninstallCommandLine|字符串|要卸载此应用的命令行|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|最低适用操作系统的值。|
-|minimumFreeDiskSpaceInMB|Int32|安装此应用程序所需的最小可用磁盘空间的值。|
+|minimumFreeDiskSpaceInMB|Int32|安装此应用所需的最小可用磁盘空间的值。|
 |minimumMemoryInMB|Int32|安装此应用所需的最小物理内存的值。|
-|minimumNumberOfProcessors|Int32|安装此应用程序所需的最少处理器数的值。|
-|minimumCpuSpeedInMHz|Int32|安装此应用所需的最小 CPU 速度的值。|
-|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md) 集合|检测 Win32 业务线或 LoB (应用的) 规则。|
-|requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md) 集合|检测 Win32 业务线或 LoB (应用) 规则。|
+|minimumNumberOfProcessors|Int32|安装此应用所需的最小处理器数的值。|
+|minimumCpuSpeedInMHz|Int32|安装此应用所需的最低 CPU 速度的值。|
+|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md) 集合|检测 Win32 业务线 (LoB) 应用的检测规则。|
+|requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md) 集合|检测 Win32 业务线 (LoB) 应用的要求规则。|
 |规则|[win32LobAppRule](../resources/intune-apps-win32lobapprule.md) 集合|此应用的检测和要求规则。|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用的安装体验。|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) 集合|安装后行为的返回代码。|
-|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 MSI 应用，则 MSI 详细信息。|
-|setupFilePath|String|加密 Win32LobApp 程序包中安装文件的相对路径。|
-|minimumSupportedWindowsRelease|String|受支持的最低窗口版本的值。|
+|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|MSI 详细介绍此 Win32 应用是否为 MSI 应用。|
+|setupFilePath|String|加密的 Win32LobApp 包中安装程序文件的相对路径。|
+|minimumSupportedWindowsRelease|String|支持的最小 Windows 版本的值。|
 |displayVersion|String|此应用的 UX 中显示的版本。|
+|allowAvailableUninstall|Boolean|如果为 TRUE，则指示在具有可用分配 (Win32) 的 Windows 应用的公司门户支持卸载。 如果为 FALSE，则指示 Windows 应用不支持卸载， (具有可用分配的 Win32) 。 默认值为 FALSE。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -108,7 +109,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 3451
+Content-length: 3487
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -219,7 +220,8 @@ Content-length: 3451
   },
   "setupFilePath": "Setup File Path value",
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
-  "displayVersion": "Display Version value"
+  "displayVersion": "Display Version value",
+  "allowAvailableUninstall": true
 }
 ```
 
@@ -228,7 +230,7 @@ Content-length: 3451
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3623
+Content-Length: 3659
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -342,9 +344,11 @@ Content-Length: 3623
   },
   "setupFilePath": "Setup File Path value",
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
-  "displayVersion": "Display Version value"
+  "displayVersion": "Display Version value",
+  "allowAvailableUninstall": true
 }
 ```
+
 
 
 

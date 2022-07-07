@@ -4,12 +4,12 @@ description: 通过将多个请求合并到单个 JSON 对象中，使用 JSON �
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7ba6dace8424158c7d04279de3c53e1734681e00
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 3fc5a2bbcca92c79cd80b2f58dd20bbaaba6c44b
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555777"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671372"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理在一个 HTTP 调用中合并多个请求
 
@@ -220,7 +220,7 @@ JSON 批处理请求目前限制为 20 个单独的请求，此外还有以下�
 [batching-known-issues]: known-issues.md#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
 [throttling-and-batching]: throttling.md#throttling-and-batching
-[throttling-outlook]: throttling.md#outlook-service-limits
+[throttling-outlook]: throttling-limits.md#outlook-service-limits
 
 ## <a name="see-also"></a>另请参阅
 

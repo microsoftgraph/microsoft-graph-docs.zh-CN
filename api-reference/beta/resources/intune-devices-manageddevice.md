@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0765838967c1c6f3a1608dbbae32eca21206fab9
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 363ce2c413dac1481edc9347a79208148986e982
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858014"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668347"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
 命名空间：microsoft.graph
 
-> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -61,13 +61,13 @@ ms.locfileid: "65858014"
 |[禁用操作](../api/intune-devices-manageddevice-disable.md)|无|尚未记录|
 |[可重置操作](../api/intune-devices-manageddevice-reenable.md)|无|尚未记录|
 |[moveDevicesToOU 操作](../api/intune-devices-manageddevice-movedevicestoou.md)|无|尚未记录|
-|[removeDeviceFirmwareConfigurationInterfaceManagement 操作](../api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md)|无|尚未记录|
+|[removeDeviceFirmwareConfigurationInterfaceManagement 操作](../api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md)|None|从设备固件配置接口管理中删除设备|
 |[getOemWarranty 函数](../api/intune-devices-manageddevice-getoemwarranty.md)|[oemWarranty](../resources/intune-devices-oemwarranty.md)|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备的唯一标识符。 此属性是只读的。|
+|id|字符串|设备的唯一标识符。 此属性是只读的。|
 |userId|String|与设备关联的用户的唯一标识符。 此属性是只读的。|
 |deviceName|String|设备的名称。 此属性是只读的。|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的硬性详细信息。  包括存储空间、制造商、序列号等信息。此属性是只读的。|
@@ -78,11 +78,11 @@ ms.locfileid: "65858014"
 |enrolledDateTime|DateTimeOffset|设备的注册时间。 此属性是只读的。|
 |lastSyncDateTime|DateTimeOffset|设备上次成功完成与 Intune 同步的日期和时间。 此属性是只读的。|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|设备的底盘类型。 此属性是只读的。 可取值为：`unknown`、`desktop`、`laptop`、`worksWorkstation`、`enterpriseServer`、`phone`、`tablet`、`mobileOther`、`mobileUnknown`。|
-|operatingSystem|String|设备的操作系统。 Windows、iOS等。此属性是只读的。|
+|operatingSystem|String|设备的操作系统。 Windows、iOS 等。此属性是只读的。|
 |deviceType|[deviceType](../resources/intune-devices-devicetype.md)|设备的平台。 此属性是只读的。 可能的值为：`desktop`、`windowsRT`、`winMO6`、`nokia`、`windowsPhone`、`mac`、`winEmbedded``winCE`、、`iPhone`、`iPad`、`iPod`、`iSocConsumer``android`、`unix`、`macMDM``holoLens`、`surfaceHub`、、`androidForWork`、 `unknown``cloudPC``palm``androidEnterprise``windows10x``androidnGMS``chromeOS``linux``blackberry`|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|设备的符合性状态。 此属性是只读的。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
 |jailBroken|String|设备是否已越狱或取得 root 权限。 此属性是只读的。|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 可能的值为：`eas`、、`mdm`、`easMdm``intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`unknown``configurationManagerClientMdmEas`、`jamf`、`googleCloudDevicePolicyController``microsoft365ManagedMdm`、、`msSense`。 `intuneAosp`|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 可能的值为：`eas`、、`mdm`、`easMdm``intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`unknown``configurationManagerClientMdmEas`、`jamf`、`googleCloudDevicePolicyController``microsoft365ManagedMdm`、、`msSense`。 `intuneAosp`|
 |osVersion|String|设备的操作系统版本。 此属性是只读的。|
 |easActivated|Boolean|设备是否已激活 Exchange ActiveSync。 此属性是只读的。|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。 此属性是只读的。|
@@ -110,27 +110,27 @@ ms.locfileid: "65858014"
 |imei|String|IMEI。 此属性是只读的。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期到期时的 DateTime。 此属性是只读的。|
 |serialNumber|String|SerialNumber。 此属性是只读的。|
-|phoneNumber|String|电话设备数。 此属性是只读的。|
-|androidSecurityPatchLevel|String|Android安全修补程序级别。 此属性是只读的。|
+|phoneNumber|String|设备的电话号码。 此属性是只读的。|
+|androidSecurityPatchLevel|String|Android 安全修补程序级别。 此属性是只读的。|
 |userDisplayName|String|用户显示名称。 此属性是只读的。|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|启用了 ConfigrMgr 客户端的功能。 此属性是只读的。|
 |wiFiMacAddress|String|Wi-Fi MAC。 此属性是只读的。|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|设备运行状况证明状态。 此属性是只读的。|
 |subscriberCarrier|String|订阅服务器运营商。 此属性是只读的。|
 |meid|String|梅德 此属性是只读的。|
-|totalStorageSpaceInBytes|Int64|总存储（字节）。 此属性是只读的。|
+|totalStorageSpaceInBytes|Int64|总存储量（以字节为单位）。 此属性是只读的。|
 |freeStorageSpaceInBytes|Int64|以字节为单位的免费存储。 此属性是只读的。|
 |managedDeviceName|String|用于识别设备的自动生成的名称。 可以覆盖为用户友好名称。|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 此属性是只读的。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
 |retireAfterDateTime|DateTimeOffset|指示设备因计划操作而自动停用的时间。 此属性是只读的。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) 集合|指示设备用户上一次登录。 此属性是只读的。|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告已设置 preferMdmOverGroupPolicy 设置的 DateTime。  设置时，如果存在冲突，Intune MDM 设置将替代组策略设置。 只读。 此属性是只读的。|
-|autopilotEnrolled|布尔|报告是否通过自动试点注册托管设备。 此属性是只读的。|
-|requireUserEnrollmentApproval|布尔|报告托管iOS设备是否为用户审批注册。 此属性是只读的。|
+|autopilotEnrolled|Boolean|报告是否通过自动试点注册托管设备。 此属性是只读的。|
+|requireUserEnrollmentApproval|布尔|报告托管 iOS 设备是否为用户批准注册。 此属性是只读的。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书过期日期。 此属性是只读的。|
 |iccid|String|集成电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
-|udid|String|iOS和macOS设备的唯一设备标识符。 此属性是只读的。|
-|roleScopeTagIds|字符串集合|此设备实例的范围标记 ID 列表。|
+|udid|String|iOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
+|roleScopeTagIds|String collection|此设备实例的范围标记 ID 列表。|
 |windowsActiveMalwareCount|Int32|此 Windows 设备的活动恶意软件计数。 此属性是只读的。|
 |windowsRemediatedMalwareCount|Int32|此 Windows 设备的修正恶意软件计数。 此属性是只读的。|
 |notes|String|IT 管理员创建的设备上的说明|
@@ -139,21 +139,23 @@ ms.locfileid: "65858014"
 |ethernetMacAddress|String|以太网 MAC。 此属性是只读的。|
 |physicalMemoryInBytes|Int64|总内存（以字节为单位）。 此属性是只读的。|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|处理器体系结构。 此属性是只读的。 可取值为：`unknown`、`x86`、`x64`、`arm`、`arM64`。|
-|specificationVersion|String|规范版本。 此属性是只读的。|
-|joinType|[joinType](../resources/intune-devices-jointype.md)|设备联接类型。 可取值为：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
+|specificationVersion|字符串|规范版本。 此属性是只读的。|
+|joinType|[joinType](../resources/intune-devices-jointype.md)|设备联接类型。 可能的值是：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
 |skuFamily|String|设备 sku 系列|
 |skuNumber|Int32|设备 sku 编号，另请参阅： https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo。 要2147483647的有效值 0。 此属性是只读的。|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|设备管理功能。 可取值为：`none`、`microsoftManagedDesktop`。|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) 集合|ChromeOS 设备的属性列表。|
 |enrollmentProfileName|String|分配给设备的注册配置文件的名称。 默认值为空字符串，指示未进行过注册配置文件。 此属性是只读的。|
+|bootstrapTokenEscrowed|Boolean|报告托管设备是否具有托管的 Bootstrap 令牌。 这仅适用于 macOS 设备。 如果为 FALSE，则不托管任何启动令牌。 如果为 TRUE，则设备已使用Intune托管启动令牌。 此属性是只读的。|
+|deviceFirmwareConfigurationInterfaceManaged|布尔|指示设备是否托管 DFCI。 如果为 TRUE，则由 DFCI 管理设备。 如果为 FALSE，则设备不受 DFCI 管理。 默认值为 FALSE。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|设备上当前安装的所有应用程序|
-|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|设备类别|
+|deviceCategory|[deviceCategory](../resources/intune-devices-devicecategory.md)|设备类别|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|设备保护状态。 此属性是只读的。|
-|users|[user](../resources/intune-shared-user.md) 集合|与托管设备关联的主要用户。|
+|users|[user](../resources/intune-devices-user.md) 集合|与托管设备关联的主要用户。|
 |logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 集合|日志收集请求列表|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -212,7 +214,16 @@ ms.locfileid: "65858014"
     "esimIdentifier": "String",
     "systemManagementBIOSVersion": "String",
     "tpmManufacturer": "String",
-    "tpmVersion": "String"
+    "tpmVersion": "String",
+    "wiredIPv4Addresses": [
+      "String"
+    ],
+    "batteryLevelPercentage": "4.2",
+    "residentUsersCount": 1024,
+    "productName": "String",
+    "deviceLicensingStatus": "String",
+    "deviceLicensingLastErrorCode": 1024,
+    "deviceLicensingLastErrorDescription": "String"
   },
   "ownerType": "String",
   "managedDeviceOwnerType": "String",
@@ -365,7 +376,9 @@ ms.locfileid: "65858014"
       "updatable": true
     }
   ],
-  "enrollmentProfileName": "String"
+  "enrollmentProfileName": "String",
+  "bootstrapTokenEscrowed": true,
+  "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
 

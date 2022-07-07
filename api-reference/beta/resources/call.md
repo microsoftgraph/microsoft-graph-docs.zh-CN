@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b1b2dc2890686d61845223a517698096ef1d9a0a
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 67480d67339dbe331abaf71d4a722e8d8b698c55
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016811"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645470"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -40,7 +40,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | 方法                                                             | 返回类型                                                 | 说明                                                                     |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [Get](../api/call-get.md)                                     | [call](call.md)                                             | 读取 **call** 对象的属性。                                         |
-| [删除](../api/call-delete.md)                                    | 无                                                            | 删除或挂断活动 **呼叫**。                                           |
+| [Delete](../api/call-delete.md)                                    | 无                                                            | 删除或挂断活动 **呼叫**。                                           |
 | [KeepAlive](../api/call-keepalive.md)                             | 无                                                  | 确保通话不中断。
 | **呼叫处理**                                                  |                                                        |                                                                                 |
 | [Answer](../api/call-answer.md)                                    | 无                                                            | 应答传入呼叫。                                                        |
@@ -87,7 +87,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](servicehostedmediaconfig.md) | 媒体配置。创建对等呼叫或加入会议所需的信息。                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | 只读。通话媒体状态。 |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | 包含会议功能。只读。                                                                                                       |
-| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) 或 [tokenMeetingInfo](tokenmeetinginfo.md)             | 会议信息。 会议情境所需的信息。                                                                                                              |
+| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md)、[tokenMeetingInfo](tokenmeetinginfo.md) 或 [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md)            | 会议信息。 会议情境所需的信息。                                                                                                              |
 |transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | 通话的脚本信息。只读。                           |
 myParticipantId     | String                                                                                                   | 只读。                                                                                                                                                                        |
 | requestedModalities | modality 集合                                                                                      | 请求模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |

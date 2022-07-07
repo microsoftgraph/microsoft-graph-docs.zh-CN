@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 ms.localizationpriority: high
-ms.openlocfilehash: b8020b413b9d3368bc1b3a7bb0dfb93fe93a18be
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 2b6748d9e2d8f3a0720053083daa33c751554150
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437896"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668060"
 ---
 # <a name="working-with-the-cloud-communications-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的云通信 API
 
@@ -38,20 +38,20 @@ Microsoft Graph 云通信 API 通过在应用和服务中启用核心通信功�
 
 | 用例                         | REST 资源                                 | 另请参阅  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| 创建并键入一对一通话和群组通话   | [通话](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true)| [通话方法](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#methods)|
-|IVR 通话   |     | [IVR 方法](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta?&preserve-view=true)
-| 通话控制（参与者） | [参与者](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true)   ||
-|会议|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)| [会议方法](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#methods)|
+| 创建并键入一对一通话和群组通话   | [通话](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true&preserve-view=true)| [通话方法](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#methods&preserve-view=true)|
+|IVR 通话   |     | [IVR 方法](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta?&preserve-view=true&preserve-view=true)
+| 通话控制（参与者） | [参与者](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true&preserve-view=true)   ||
+|会议|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true&preserve-view=true)| [会议方法](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#methods&preserve-view=true)|
 |状态 | [状态](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) | [出席方式](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true#methods) |
-| 检索通话记录 | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true) | [Webhook 订阅](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true) |
+| 检索通话记录 | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true&preserve-view=true) | [Webhook 订阅](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true&preserve-view=true) |
 
 ## <a name="common-properties"></a>通用属性
 
 | 资源                | 属性                             |
 |:------------------------------------|:---------------------------------------------|
-| 通话                               | [通话属性](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#properties)  |
-| 参与者                         | [参与者属性](/graph/api/resources/participant?view=graph-rest-beta?view=graph-rest-v1.0&preserve-view=true#properties) |
-| onlineMeeting                            | [onlineMeeting 属性](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#properties)                     |
+| 通话                               | [通话属性](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#properties&preserve-view=true)  |
+| 参与者                         | [参与者属性](/graph/api/resources/participant?view=graph-rest-beta?view=graph-rest-v1.0&preserve-view=true#properties&preserve-view=true) |
+| onlineMeeting                            | [onlineMeeting 属性](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#properties&preserve-view=true)                     |
 | 状态 | [状态属性](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true#properties) |
 | callRecord | [callRecord 属性](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true#properties) |
 

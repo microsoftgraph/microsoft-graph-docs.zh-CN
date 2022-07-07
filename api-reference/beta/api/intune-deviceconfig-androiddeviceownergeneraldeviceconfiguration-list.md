@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb342337ab17db43d75bf84529c43e1ed496369c
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: c457f96c752c82f40bffa085f37e1144a314cb41
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858301"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670973"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>列出 androidDeviceOwnerGeneralDeviceConfigurations
 
 命名空间：microsoft.graph
 
-> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "65858301"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10911
+Content-Length: 11343
 
 {
   "value": [
@@ -148,6 +148,18 @@ Content-Length: 10911
         ],
         "defaultMessage": "Default Message value"
       },
+      "deviceOwnerLockScreenMessage": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+        "localizedMessages": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ],
+        "defaultMessage": "Default Message value"
+      },
+      "securityCommonCriteriaModeEnabled": true,
       "factoryResetDeviceAdministratorEmails": [
         "Factory Reset Device Administrator Emails value"
       ],

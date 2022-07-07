@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 26ccec560c14207b7a607d053ee96e7013e8881e
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 327bcd224db9eae711cfff4110b7ff9001139efc
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347940"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669404"
 ---
 # <a name="create-devicemanagementconfigurationsettingdefinition"></a>创建 deviceManagementConfigurationSettingDefinition
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "61347940"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -51,36 +51,36 @@ POST /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurati
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 deviceManagementConfigurationSettingDefinition 对象的 JSON 表示形式。
+在请求正文中，为 deviceManagementConfigurationSettingDefinition 对象提供 JSON 表示形式。
 
-下表显示创建 deviceManagementConfigurationSettingDefinition 时所需的属性。
+下表显示了创建 deviceManagementConfigurationSettingDefinition 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|适用性|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|有关适用设备设置的详细信息|
-|accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|设置的读/写访问模式。 可取值为：`none`、`add`、`copy`、`delete`、`get`、`replace` 或 `execute`。|
-|keywords|字符串集合|要搜索设置的标记|
-|infoUrls|字符串集合|可在以下链接列表中找到有关设置详细信息|
-|occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|指示是否要求设置|
-|baseUri|String|基本云解决方案提供商路径|
-|offsetUri|String|从基本位置偏移云解决方案提供商路径|
-|rootDefinitionId|String|根设置定义（如果该设置是子设置）。|
-|categoryId|String|指定在云解决方案提供商云解决方案提供商解决方案提供商的指定配置服务提供程序中配置 (区域) |
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|设置类型，例如配置和合规性。 可取值为：`none`、`configuration`、`compliance`。|
-|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|在 UX 中设置控件类型表示形式。 可取值为：`default`、`dropdown`、`smallTextBox`、`largeTextBox`、`toggle`、`multiheaderGrid` 或 `contextPane`。|
-|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|将可见性范围设置为 UX。 可取值为：`none`、`settingsCatalog`、`template`。|
-|referredSettingInformationList|[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) 集合|引用的设置信息的列表。|
+|适用性|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|详细介绍哪些设备设置适用|
+|accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-shared-devicemanagementconfigurationsettingaccesstypes.md)|设置的读/写访问模式。 可取值为：`none`、`add`、`copy`、`delete`、`get`、`replace` 或 `execute`。|
+|keywords|字符串集合|要在其中搜索设置的令牌|
+|infoUrls|String 集合|有关设置的详细信息的链接列表，请参阅|
+|发生|[deviceManagementConfigurationSettingOccurrence](../resources/intune-shared-devicemanagementconfigurationsettingoccurrence.md)|指示是否需要设置|
+|baseUri|String|基本 CSP 路径|
+|offsetUri|字符串|从 Base 偏移 CSP 路径|
+|rootDefinitionId|String|根设置定义（如果设置是子设置）。|
+|categoryId|字符串|指定在指定的配置服务提供程序中配置设置的区域组 (CSP) |
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-shared-devicemanagementconfigurationsettingusage.md)|设置类型，例如配置和符合性。 可取值为：`none`、`configuration`、`compliance`。|
+|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-shared-devicemanagementconfigurationcontroltype.md)|在 UX 中设置控件类型表示形式。 可取值为：`default`、`dropdown`、`smallTextBox`、`largeTextBox`、`toggle`、`multiheaderGrid` 或 `contextPane`。|
+|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-shared-devicemanagementconfigurationsettingvisibility.md)|将可见性范围设置为 UX。 可取值为：`none`、`settingsCatalog`、`template`。|
+|referredSettingInformationList|[deviceManagementConfigurationReferredSettingInformation](../resources/intune-shared-devicemanagementconfigurationreferredsettinginformation.md) 集合|引用的设置信息列表。|
 |id|String|项的标识符|
-|description|String|项目说明|
-|helpText|String|项目的帮助文本|
-|name|String|项目名称|
-|displayName|String|项目的显示名称|
-|version|String|项目版本|
+|说明|字符串|项的说明|
+|helpText|String|项的帮助文本|
+|name|String|项的名称|
+|displayName|字符串|项的显示名称|
+|version|String|项版本|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) 对象。
 
 ## <a name="example"></a>示例
 

@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessApplications 资源类型
-description: 表示策略作用域中包含和排除的应用程序和用户操作。
+description: 表示策略范围中包含和排除的应用程序和用户操作。
 ms.localizationpriority: medium
 author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a25b574968fcad4adcbe3e53c0b800eb0ebf4a71
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: b7c92b9eab03adb284fdde95794c45fc4f7be19d
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161919"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668074"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>conditionalAccessApplications 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "62161919"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示包含在策略中和从策略中排除的应用程序和用户操作。
+表示条件访问策略中包含和排除的应用程序和用户操作。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
-| includeApplications | String 集合 | 除非在 excludeApplications 或) 中明确 (应用策略的应用程序) 。 也可以设置为 `All` 。 |
-| excludeApplications | 字符串集合 | 从策略中显式排除的应用程序 ID 列表。 |
-| includeUserActions | 字符串集合 | 要包含的用户操作。 支持的值 `urn:user:registersecurityinfo` 包括 和 `urn:user:registerdevice` |
-| includeAuthenticationContextClassReferences | 字符串集合 | 身份验证上下文类引用包括。 支持的值 `c1` 通过 `c25` 。 |
+| includeApplications | 字符串集合 | 可以是下列类型之一： <li> 应用策略) **appId** (客户端 ID 列表，除非在 **excludeApplications** 中显式排除 ()  <li> `All` <li> `Office365`- 有关包含在其中`Office365`的应用列表，请[参阅条件访问目标应用：Office 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) |
+| excludeApplications | 字符串集合 | 可以是下列类型之一： <li>  (**appId**) 显式排除在策略中的客户端 ID 列表。<li> `Office365`- 有关包含在其中`Office365`的应用列表，请[参阅条件访问目标应用：Office 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) |
+| includeUserActions | 字符串集合 | 要包含的用户操作。 支持的值为 `urn:user:registersecurityinfo` 和 `urn:user:registerdevice` |
+| includeAuthenticationContextClassReferences | 字符串集合 | 身份验证上下文类引用包括。 支持的值是 `c1` 通过 `c25`。 |
 
 ## <a name="relationships"></a>关系
 

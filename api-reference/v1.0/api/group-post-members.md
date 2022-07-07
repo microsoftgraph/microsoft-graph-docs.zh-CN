@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2a3367ac195ee2bd252c32d83aa2dfd43c36d030
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 5c0e55b0e74694818354ddf6c98c9eb42e25bb96
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694749"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645319"
 ---
 # <a name="add-members"></a>添加成员
 
@@ -22,7 +22,7 @@ ms.locfileid: "65694749"
 
 | 对象类型             | 安全组成员     | Microsoft 365 组成员 |
 |-------------------------|-------------------------------|-------------------------------|
-| 用户                   | ![可以是组成员][Yes]   | ![可以是组成员][Yes]   |
+| User                   | ![可以是组成员][Yes]   | ![可以是组成员][Yes]   |
 | 安全组         | ![可以是组成员][Yes]   | ![不能是组成员][No] |
 | Microsoft 365 组    | ![不能是组成员][No] | ![不能是组成员][No] |
 | 设备                 | ![可以是组成员][Yes]   | ![不能是组成员][No] |

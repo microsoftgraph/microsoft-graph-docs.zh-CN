@@ -2,21 +2,21 @@
 title: 创建 advancedThreatProtectionOnboardingDeviceSettingState
 description: 创建新的 advancedThreatProtectionOnboardingDeviceSettingState 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b40656cc7b799c2579cddd099e6a78c82e1b81bf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c957e0538acfa1e3f1395ea0611047f89d83b39d
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066042"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667787"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>创建 advancedThreatProtectionOnboardingDeviceSettingState
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -47,14 +47,14 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 advancedThreatProtectionOnboardingDeviceSettingState 对象的 JSON 表示形式。
+在请求正文中，为 advancedThreatProtectionOnboardingDeviceSettingState 对象提供 JSON 表示形式。
 
-下表显示创建 advancedThreatProtectionOnboardingDeviceSettingState 时所需的属性。
+下表显示了创建 advancedThreatProtectionOnboardingDeviceSettingState 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键|
-|platformType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|设备平台类型。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` 、|
+|id|字符串|实体的键|
+|platformType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|设备平台类型。 可能的值为：`desktop`、`windowsRT`、`winMO6`、`nokia`、`windowsPhone`、`mac`、`winEmbedded``winCE`、、`iPhone`、`iPad`、`iPod`、`iSocConsumer``android`、`unix`、`macMDM``holoLens`、`surfaceHub`、、`androidForWork`、 `unknown``cloudPC``palm``androidEnterprise``windows10x``androidnGMS``chromeOS``linux``blackberry`|
 |setting|String|设置类名和属性名。|
 |settingName|String|报告的设置名称|
 |deviceId|String|报告的设备 ID|
@@ -64,13 +64,13 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 |userName|String|报告的用户名|
 |userPrincipalName|String|报告的用户主体名称|
 |deviceModel|String|报告的设备模型|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -122,6 +122,7 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
 
 
 

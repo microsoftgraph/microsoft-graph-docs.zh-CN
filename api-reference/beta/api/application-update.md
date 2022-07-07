@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9c5f3d6cb9be4d8b5456e5d348e9cc89d874c007
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 5eca1c3b8455bc2b9ba9694a7beb4b2f1132e84f
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555539"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670328"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -34,7 +34,7 @@ ms.locfileid: "66555539"
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-替换`{id}`为应用程序对象的 **ID**，也称为Azure 门户中的 **对象 ID**。
+将 `{id}` 替换为应用程序对象的 **ID**，在 Azure 门户中也称为 **对象 ID**。
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /applications/{id}
@@ -63,7 +63,8 @@ PATCH /applications/{id}
 | optionalClaims          | optionalClaims                                                              | 应用程序开发人员可以在其 Azure AD 应用中配置可选声明，以指定 Microsoft 安全令牌服务发送到他们应用程序的令牌中所需的声明。 有关详细信息，请参阅 [可选声明](/azure/active-directory/develop/active-directory-optional-claims) 。                                                                                                                                                                                                                                                               |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | 指定应用程序的家长控制设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | 指定已安装客户端（如台式设备或移动设备）的设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| requiredResourceAccess  | [requiredResourceAccess](../resources/requiredresourceaccess.md) 集合 | 指定应用程序需要访问的资源。 此属性还指定每个资源所需的委派权限和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 可配置的资源服务 (API) 不能超过 50 个。 从 2021 年 10 月中旬开始，所需权限总数不得超过 400 个。 不可为 null。                                                                                                                 |
+| requiredResourceAccess  | [requiredResourceAccess](../resources/requiredresourceaccess.md) 集合 | 指定应用程序需要访问的资源。 此属性还指定每个资源所需的委派权限和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 可配置的资源服务 (API) 不能超过 50 个。 从 2021 年 10 月中旬开始，所需权限总数不得超过 400 个。 不可为空。                                                                                                                 |
+| samlMetadataUrl | String | 服务用于公开联合身份验证的 SAML 元数据的 URL。 此属性仅对单租户应用程序有效。 |
 | signInAudience          | String                                                                      | 指定当前应用程序支持的 Microsoft 帐户。 支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（即多租户）中拥有 Microsoft 工作或学校帐户的用户</li> <li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户</li></ul>                           |
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
 | 标记                    | 字符串集合                                                           | 可用于分类和标识应用程序的自定义字符串。不可为 null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |

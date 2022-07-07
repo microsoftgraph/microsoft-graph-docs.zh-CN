@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 535ba2e4aeaf404d10b20612806452c07b8b1eff
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 18cdc086ceabc46a6919f5c46257d2a313dd9844
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858568"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669698"
 ---
 # <a name="triggerdevicescopeaction-action"></a>triggerDeviceScopeAction 操作
 
 命名空间：microsoft.graph
 
-> **重要：**/beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产使用。
+> **重要：** /beta 版本下的 Microsoft Graph API 可能会发生更改;不支持生产用途。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "65858568"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -88,7 +88,7 @@ Content-Length: 236
 {
   "value": {
     "@odata.type": "microsoft.graph.deviceScopeActionResult",
-    "deviceScopeAction": "String",
+    "deviceScopeAction": "",
     "deviceScopeId": "Device Scope Id value",
     "status": "succeeded",
     "failedMessage": "Failed Message value"
