@@ -4,12 +4,12 @@ description: 了解适用于 microsoft Teams API 的许可和付款模型，Micr
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: ac8a08b849204558d0315bdb4aa316378c0f8ee4
-ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
+ms.openlocfilehash: 3216ecfa998cf6b2a02ec588992e8622a523038c
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2022
-ms.locfileid: "66609624"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668158"
 ---
 # <a name="licensing-and-payment-requirements-for-the-microsoft-teams-api"></a>Microsoft Teams API 的许可和付款要求
 
@@ -17,9 +17,9 @@ ms.locfileid: "66609624"
 
 某些 API 提供通过 `model` 查询参数选择许可和付款模型的选项；其他 API 仅支持某一个模型或不支持许可和付款模型。 以下 API 具有消耗费用：
 
-* [导出 Teams 内容](/graph/api/export-teams-content.md)
-* [创建订阅](/graph/api/subscription-post-subscriptions.md)
-* [更新聊天消息](/graph/api/chatmessage-update.md)
+* [导出 Teams 内容](/microsoftteams/export-teams-content)
+* [创建订阅](/graph/api/subscription-post-subscriptions)
+* [更新聊天消息](/graph/api/chatmessage-update)
 * [获取频道消息](/graph/api/chatmessage-get)
 * [获取聊天中的消息](/graph/api/chatmessage-get)
 
