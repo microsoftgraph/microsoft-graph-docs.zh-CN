@@ -626,7 +626,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装应用
                 href: resources/teamsappinstallation.md
@@ -2218,7 +2218,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -14806,7 +14806,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列出
                     href: api/simulationautomation-list-runs.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -15552,6 +15552,24 @@ items:
                 href: api/team-completemigration.md
               - name: List permission grants
                 href: api/team-list-permissiongrants.md
+              - name: 团队模板
+                items:
+                  - name: 团队模板
+                    href: resources/teamtemplate.md
+                  - name: 列出
+                    href: api/teamwork-list-teamtemplates.md
+                  - name: 列表定义
+                    href: api/teamtemplate-list-definitions.md
+              - name: 团队模板定义
+                items:
+                  - name: 团队模板定义
+                    href: resources/teamtemplatedefinition.md
+                  - name: 列出
+                    href: api/teamtemplate-list-definitions.md
+                  - name: 获取
+                    href: api/teamtemplatedefinition-get.md
+                  - name: 获取团队定义
+                    href: api/teamtemplatedefinition-get-teamdefinition.md
               - name: 已删除团队
                 href: resources/deletedteam.md
                 items:

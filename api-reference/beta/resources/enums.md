@@ -5,16 +5,26 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 9560cac180097207d7bc97f0aef6a560843ca878
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: dd17d54c0d6cd991f02a5043765aab199bfc3a05
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645087"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66690068"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+
+### <a name="teamtemplateaudience-values"></a>teamTemplateAudience 值 
+
+|成员|
+|:---|
+|组织|
+|用户|
+|公开|
+|unknownFutureValue|
 
 ### <a name="decisionitemprincipalresourcemembershiptype-values"></a>decisionItemPrincipalResourceMembershipType 值 
 
@@ -247,7 +257,7 @@ ms.locfileid: "66645087"
 |ClientIdentifier|
 |ClientSecret|
 |SingleSignOnType|
-|沙 箱|
+|沙盒|
 |URL|
 |Domain|
 |ConsumerKey|
@@ -364,7 +374,7 @@ ms.locfileid: "66645087"
 |整数|
 |参考|
 |Binary|
-|Boolean|
+|布尔|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变性值
@@ -1670,7 +1680,7 @@ ms.locfileid: "66645087"
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | 参考
 
 
@@ -1732,7 +1742,7 @@ ms.locfileid: "66645087"
 ### <a name="onenotesourceservice-values"></a>onenoteSourceService 值
 | 成员
 |:---------------------
-| 未知
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -2792,7 +2802,7 @@ ms.locfileid: "66645087"
 |成员|
 |:---|
 |团队|
-|频道|
+|通道|
 |聊天|
 |unknownFutureValue|
 

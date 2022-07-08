@@ -1,16 +1,16 @@
 ---
 title: 获取 deviceRegistrationPolicy
 description: 读取 deviceRegistrationPolicy 对象的属性和关系。
-author: spunukol
+author: myra-ramdenbourg
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8e8d4e5bc34fb43221ebc3cd697737b03db556db
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 954e8d573ad03d128cae6f838010019c8f9d16b9
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66445348"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66689992"
 ---
 # <a name="get-deviceregistrationpolicy"></a>获取 deviceRegistrationPolicy
 
@@ -30,7 +30,7 @@ ms.locfileid: "66445348"
 |Application|不支持|
 
 代表用户调用时，用户需要属于以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)：
-+ 全球管理员
++ 全局管理员
 + 云设备管理员
 + 全局读取者
 

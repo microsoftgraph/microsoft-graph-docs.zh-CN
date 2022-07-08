@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 234ed38a57d66bf9b0d1cea15c38e4c37d3badb5
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: f38b797c18c315e6053d285ce0c2485cd44218aa
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653467"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66690005"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -36,9 +36,9 @@ ms.locfileid: "65653467"
 |[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取聊天中的单个用户。| 
 |[删除聊天成员](../api/chat-delete-members.md)|无|从聊天中删除用户。|
 |[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 在用户和应用之间进行一对一聊天。|
-|[将聊天标记为已读](../api/chat-markchatreadforuser.md) |None| 将聊天标记为用户读取。|
+|[将聊天标记为已读](../api/chat-markchatreadforuser.md) |无| 将聊天标记为用户读取。|
 |[将聊天标记为未读](../api/chat-markchatunreadforuser.md) |无| 将聊天标记为用户未读。|
-|[隐藏聊天](../api/chat-hideforuser.md)|None|隐藏用户的聊天。|
+|[隐藏聊天](../api/chat-hideforuser.md)|无|隐藏用户的聊天。|
 |[取消隐藏聊天](../api/chat-unhideforuser.md)|无|取消隐藏用户的聊天。|
 | **邮件** |||
 |[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 在聊天中获取消息。 | 
@@ -48,8 +48,8 @@ ms.locfileid: "65653467"
 |[列出聊天中的应用](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) 集合 | 列出聊天 (和关联会议) 中安装的应用。|
 |[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取聊天 (和关联会议) 中安装的特定应用。|
 |[在聊天中添加应用](../api/chat-post-installedapps.md) | | 在聊天 (和关联会议) 中添加 (安装) 应用。|
-|[在聊天中升级应用](../api/chat-teamsappinstallation-upgrade.md) | None | 更新到聊天 (和关联会议) 中安装的最新版本的应用。|
-|[从聊天中卸载应用](../api/chat-delete-installedapps.md) | None | 从聊天 (和关联会议) 中删除 (卸载) 应用。|
+|[在聊天中升级应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天 (和关联会议) 中安装的最新版本的应用。|
+|[从聊天中卸载应用](../api/chat-delete-installedapps.md) | 无 | 从聊天 (和关联会议) 中删除 (卸载) 应用。|
 |[List permission grants](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合 | 列出已授予此聊天中的应用的权限。|
 | **选项卡** |||
 |[聊天中的列表选项卡](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | 固定到聊天 (和关联会议) 的列表选项卡。|
@@ -63,7 +63,7 @@ ms.locfileid: "65653467"
 | **固定的消息** |||
 |[列出固定的消息](../api/chat-list-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md) 集合|获取聊天中固定消息的列表。|
 |[固定消息](../api/chat-post-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md)|在聊天中固定聊天消息。|
-|[取消固定消息](../api/chat-delete-pinnedmessages.md)|None|取消固定聊天中的消息。|
+|[取消固定消息](../api/chat-delete-pinnedmessages.md)|无|取消固定聊天中的消息。|
 
 >**注意：** 使用应用程序权限时，请确保知道如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都是可能的。 可以获取具有委派权限的聊天 ID，也可以从具有应用程序权限的 [/chats/getAllMessage 的更改通知](../api/subscription-post-subscriptions.md) 中获取聊天 ID。
 
@@ -79,7 +79,7 @@ ms.locfileid: "65653467"
 | tenantId| String | 在其中创建聊天的租户的标识符。 只读。|
 | topic| String|   (聊天的可选) 主题或主题。 仅可用于群聊。|
 | 观点|[chatViewpoint](../resources/chatviewpoint.md)|表示有关聊天的特定于调用方的信息，例如上次消息读取日期和时间。 仅当在委派上下文中发出请求时，才会填充此属性。|
-| webUrl| String | Microsoft Teams中聊天的 URL。 URL 应被视为不透明的 Blob，而不是分析的。 只读。|
+| webUrl| String | Microsoft Teams 中聊天的 URL。 URL 应被视为不透明的 Blob，而不是分析的。 只读。|
 
 
 ### <a name="chattype-values"></a>chatType 值 
@@ -99,8 +99,8 @@ ms.locfileid: "65653467"
 | lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| 聊天中发送的最后一条消息的预览。 如果聊天中未发送任何消息，则为 Null。 目前，只有 [列表聊天](../api/chat-list.md) 操作支持此属性。|
 | members | [conversationMember](conversationmember.md) 集合 | 聊天中所有成员的集合。 可为 Null。 |
 | messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有消息的集合。 可为 NULL。 |
+| operations | [teamsAsyncOperation](teamsasyncoperation.md) 集合 | 在聊天中运行或正在运行的所有 Teams 异步操作的集合。 可为 NULL。 |
 | permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合| 授予聊天应用的权限的集合。|
-| operations | [teamsAsyncOperation](teamsasyncoperation.md) 集合 | 在聊天中运行或正在运行的所有Teams异步操作的集合。 可为 NULL。 |
 | pinnedMessages | [pinnedChatMessageInfo](pinnedchatmessageinfo.md) 集合 | 聊天中所有固定消息的集合。 可为 NULL。 |
 | 选项卡 | [teamsTab](teamstab.md) 集合 | 聊天中所有选项卡的集合。 可为 Null。 |
 

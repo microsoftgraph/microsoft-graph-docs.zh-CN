@@ -2,15 +2,15 @@
 title: teamsTemplate 资源类型
 description: 描述 teamsTemplate 实体。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5fc40b9c2a5789c5bcd7ab5794e41c715223eff3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d20d759476177541ed51ff40edec6188290cbbb1
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046384"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66690019"
 ---
 # <a name="teamstemplate-resource-type"></a>teamsTemplate 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48046384"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-团队模板是在 Microsoft 团队中创建 [团队](../resources/team.md) 的蓝图。 模板指定应在使用模板创建的新团队中设置的结构、设置和偶数内容。 Microsoft 提供了一套基本模板，并且客户可以保存自己的自定义模板。
+团队模板是用于在 Microsoft Teams 中创建 [团队](../resources/team.md) 的蓝图。 模板指定应在使用模板创建的新团队中预配的结构、设置甚至内容。 Microsoft 提供了一套基本模板，客户可以保存自己的自定义模板。
 
 ## <a name="properties"></a>属性
 
@@ -42,7 +42,8 @@ ms.locfileid: "48046384"
 
 ## <a name="see-also"></a>另请参阅
 
-- [team](team.md)
+- [团队](team.md)
+- [teamTemplateDefinition](teamtemplatedefinition.md)
 
 
 

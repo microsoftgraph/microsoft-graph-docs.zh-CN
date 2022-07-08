@@ -1,16 +1,16 @@
 ---
 title: 更新 deviceRegistrationPolicy
 description: 更新 deviceRegistrationPolicy 对象的属性。
-author: spunukol
+author: myra-ramdenbourg
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e55beac9f1ada8a3a6d2fe9d2ae8a81eff6e3085
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: df37115ff775d204a68c2d95f59d644de5d62d6a
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127901"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66689993"
 ---
 # <a name="update-deviceregistrationpolicy"></a>更新 deviceRegistrationPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "60127901"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [deviceRegistrationPolicy 对象](../resources/deviceregistrationpolicy.md) 的属性。 表示 deviceRegistrationPolicy 配额限制、其他身份验证和授权策略，以向组织注册设备标识。
+更新 [deviceRegistrationPolicy 对象的](../resources/deviceregistrationpolicy.md) 属性。 表示 deviceRegistrationPolicy 配额限制、其他身份验证和授权策略，用于向组织注册设备标识。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +28,9 @@ ms.locfileid: "60127901"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.DeviceConfiguration|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|不支持|
+|Application|不支持|
 
-代表用户进行呼叫时，用户需要属于以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)：
+代表用户调用时，用户需要属于以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 云设备管理员
 
@@ -61,18 +61,20 @@ PUT /policies/deviceRegistrationPolicy
 |属性|类型|说明|
 |:---|:---|:---|
 |userDeviceQuota|Int32|指定在阻止新设备注册之前，用户可在组织中拥有的最大设备数。 |
-|multiFactorAuthConfiguration|multiFactorAuthConfiguration|指定用户使用 Azure AD 加入或组织中注册的 Azure AD 完成注册的身份验证策略。 可能的值是：`notRequired` 或 `required`。 |
-|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|指定在组织中使用 Azure AD 注册控制新设备注册的授权策略。 必需。 有关详细信息，请参阅[什么是设备标识？。](/azure/active-directory/devices/overview) 如果启用了 Intune，则不能修改此属性。|
-|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|指定用于控制在组织中使用 Azure AD 加入注册新设备的授权策略。 必需。 有关详细信息，请参阅[什么是设备标识？。](/azure/active-directory/devices/overview)|
+|multiFactorAuthConfiguration|multiFactorAuthConfiguration|指定用户使用组织内注册的 Azure AD Join 或 Azure AD 完成注册的身份验证策略。 可能的值是：`notRequired` 或 `required`。 |
+|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|指定用于在组织内使用 Azure AD 注册控制新设备注册的授权策略。 必填。 有关详细信息，请参阅[什么是设备标识？](/azure/active-directory/devices/overview) 如果启用Intune，则无法修改此属性。|
+|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|指定用于在组织内使用 Azure AD Join 控制新设备注册的授权策略。 必填。 有关详细信息，请参阅[什么是设备标识？](/azure/active-directory/devices/overview)|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_deviceregistrationpolicy"
@@ -102,6 +104,24 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-deviceregistrationpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-deviceregistrationpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-deviceregistrationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-deviceregistrationpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
