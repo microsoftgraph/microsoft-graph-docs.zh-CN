@@ -4,12 +4,12 @@ description: 了解适用于 microsoft Teams API 的许可和付款模型，Micr
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3216ecfa998cf6b2a02ec588992e8622a523038c
-ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
+ms.openlocfilehash: 4da65e881dddd3c25d60f8ccc25c49aa41ff65d4
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66668158"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66690089"
 ---
 # <a name="licensing-and-payment-requirements-for-the-microsoft-teams-api"></a>Microsoft Teams API 的许可和付款要求
 
@@ -112,4 +112,5 @@ ms.locfileid: "66668158"
 
 2021 年 10 月，我们就这些 API 的使用即将产生的费用进行了[通信](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp)。如[先前公布](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/)的那样，这些价格将于 2022 年 7 月 5 日生效。 如果你的应用程序是或将调用这些 API 中的任何一个，我们要求你完成此[请求表单](https://aka.ms/teamsgraph/protectedApis_az)，提供有效的 Azure 订阅。 当提交此[表单](https://aka.ms/teamsgraph/protectedApis_az)以注册应用程序后，你可以继续使用这些 API。 我们将按照后续步骤将应用程序加入计费。 
 
-请注意，拥有应用注册的组织负责付款，Azure 订阅也应在同一租户中处于活动状态。 对于多租户应用，组织可能不同于运行应用的组织。
+请注意，拥有 [应用注册](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) 的组织负责付款。 Azure 订阅必须在同一租户中处于活动状态。
+对于 [多租户应用](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps)，拥有应用注册的组织可能不同于运行应用的组织。
