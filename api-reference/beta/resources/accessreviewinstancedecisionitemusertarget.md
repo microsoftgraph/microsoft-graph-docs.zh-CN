@@ -1,16 +1,16 @@
 ---
 title: accessReviewInstanceDecisionItemUserTarget 资源类型
-description: 表示作为用户审阅的目标。
-author: isabelleatmsft
-localization_priority: Normal
+description: 表示以用户身份进行评审的目标。
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f10796937aa99e5808cb51bdb4069bd99d645db2
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: f64e29f3b1ef13471147be495dcd100e80742304
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "51469211"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698126"
 ---
 # <a name="accessreviewinstancedecisionitemusertarget-resource-type"></a>accessReviewInstanceDecisionItemUserTarget 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "51469211"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-表示 [accessReviewInstance 中正在审阅的用户标识](accessreviewinstance.md)。
+表示 [accessReviewInstance](accessreviewinstance.md) 中正在审查的用户标识。
 
 继承自 [accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "51469211"
 |:---|:---|:---|
 | userDisplayName | String | 用户的名称。 |
 | userId | String | 用户的标识符。 |
-| userPrincipalName | String | 用户主体名称。 |
+| userPrincipalName | 字符串 | 用户主体名称。 |
 
 ## <a name="relationships"></a>关系
 无。

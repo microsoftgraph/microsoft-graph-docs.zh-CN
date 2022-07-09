@@ -1,16 +1,16 @@
 ---
 title: accessReviewInstance：acceptRecommendations
-description: '允许接受针对调用用户是审阅者的访问评审实例未审阅的所有决策的建议。 '
+description: '允许接受有关尚未针对调用用户为审阅者的访问评审实例进行评审的所有决策的建议。 '
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 70ee2b4c248e4c79c375d1b74667dc7619f18b40
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2d3c5d38775f70b706542797695fd70629974f06
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340491"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696628"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance：acceptRecommendations
 
@@ -18,7 +18,7 @@ ms.locfileid: "62340491"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-允许接受有关所有 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象的建议，这些对象尚未针对调用用户作为审阅者的 [accessReviewInstance](../resources/accessreviewinstance.md) 对象进行审阅。 推荐在 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象上时，将生成 **recommendationsEnabled**`true`。 如果没有对 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象的建议，将不会记录任何决策。
+允许接受有关所有 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象的建议，这些对象尚未针对调用用户为审阅者的 [accessReviewInstance](../resources/accessreviewinstance.md) 对象进行评审。 如果 **recommendationsEnabled** 位于 `true` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象上，则会生成建议。 如果没有关于 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象的建议，则不会记录任何决策。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

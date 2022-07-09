@@ -3,12 +3,12 @@ title: TeamsFx 提供商
 description: 使用 Microsoft Teams 应用程序中的 TeamsFx 提供程序为 Microsoft Graph 工具包组件提供对 Microsoft Graph 的访问权限。
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.openlocfilehash: 0789bcff15b523ae8227a2dccf3b0360810fd64e
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: f5a94ab3fc133ebe38ec552ae152b182000311f7
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438239"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698399"
 ---
 # <a name="teamsfx-provider"></a>TeamsFx 提供商
 
@@ -35,7 +35,7 @@ Providers.globalProvider = provider;
 使用该 `teamsfx.login(scopes)` 方法获取所需的访问令牌。
 
 ```ts
-// Automatically when loading the component or in a call-to-action
+// Put this code in a call-to-action callback function to avoid browser blocking automatically showing up pop-ups. 
 await teamsfx.login(this.scope);
 Providers.globalProvider.setState(ProviderState.SignedIn);
 ```
@@ -58,9 +58,10 @@ public render(): void {
 }
 ```
 
-有关演示如何初始化 TeamsFx 提供程序的示例，请参阅 [联系人导出程序示例](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/graph-toolkit-contact-exporter)。
+有关演示如何初始化 TeamsFx 提供程序的示例，请参阅 [联系人导出程序示例](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/hello-world-tab-with-backend)。
 
 
 ## <a name="see-also"></a>另请参阅
 * [Microsoft Teams 和 Teams 工具包开发入门](https://aka.ms/teamsfx-docs)
+* [TeamsFx SDK](/microsoftteams/platform/toolkit/teamsfx-sdk)
 * [一个生产力中心研讨会](https://github.com/OfficeDev/OneProductivityHub-TeamsFx)

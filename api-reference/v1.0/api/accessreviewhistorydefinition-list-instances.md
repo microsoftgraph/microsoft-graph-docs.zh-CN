@@ -1,22 +1,22 @@
 ---
-title: '列出 accessReviewHistoryDefinition (实例) '
+title: '列出 accessReviewHistoryDefinition (的实例) '
 description: 检索访问评审历史记录定义的实例。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6cad91e3d5944052f691b6659750f8287b570c54
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: c6ac4049520741bade83deb749e35afa873f0f4f
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337591"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698189"
 ---
-# <a name="list-instances-of-an-accessreviewhistorydefinition"></a>列出 accessReviewHistoryDefinition (实例) 
+# <a name="list-instances-of-an-accessreviewhistorydefinition"></a>列出 accessReviewHistoryDefinition (的实例) 
 
 命名空间：microsoft.graph
 
-检索[最近](../resources/accessreviewhistoryinstance.md) 30 天内创建[](../resources/accessreviewhistorydefinition.md)的访问评审历史记录定义的实例。
+检索[](../resources/accessreviewhistoryinstance.md)过去 30 天内创建[的访问评审历史记录定义](../resources/accessreviewhistorydefinition.md)的实例。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "63337591"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.ReadWrite.All|
+|应用|AccessReview.ReadWrite.All|
 
-如果登录用户不是全局管理员或全局读者，则仅返回已登录用户创建的定义。
+如果登录用户不是全局管理员或全局读取者，则只会返回已登录用户创建的定义。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDef
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewHistoryInstance](../resources/accessreviewhistoryinstance.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewHistoryInstance](../resources/accessreviewhistoryinstance.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

@@ -1,27 +1,27 @@
 ---
-title: 列出 accessReviewInstanceDecisionItem 待审批
-description: 检索调用用户等待审批的 accessReviewInstanceDecisionItem 对象。
+title: 列出待审批的 accessReviewInstanceDecisionItem
+description: 检索待调用用户批准的 accessReviewInstanceDecisionItem 对象。
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5925711646753fdde070f34a1d0da37c075377d1
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 85e42de0bffa25377fb6a2eba9332adba6d85b20
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722006"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696602"
 ---
-# <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>列出 accessReviewInstanceDecisionItems 待审批 (已弃) 
+# <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>列出 accessReviewInstanceDecisionItems 挂起审批 (已弃用) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->此方法将弃用，并将于 2023 年 5 月 19 日停止返回数据。 它已被 [filterByCurrentUser 取代](accessreviewinstancedecisionitem-filterbycurrentuser.md)。
+>此方法将被弃用，并将于 2023 年 5 月 19 日停止返回数据。 它已被 [filterByCurrentUser](accessreviewinstancedecisionitem-filterbycurrentuser.md) 替换。
 
-检索 [调用用户等待批准的特定 accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) 对象的 [accessReviewInstance](../resources/accessreviewscheduledefinition.md) 。 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括所有嵌套属性。
+检索某个特定 [accessReviewInstance](../resources/accessreviewscheduledefinition.md) [的 accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) 对象，等待调用用户批准。 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括其所有嵌套属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,7 +31,7 @@ ms.locfileid: "63722006"
 |委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
 
-登录用户还将仅在该决策实例的 accessReviewScheduleDefinition 中查看为其分配审阅者的决策。
+登录用户也只会在该决策的实例的 accessReviewScheduleDefinition 中看到分配了审阅者的决定。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,22 +40,22 @@ GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$skip` OData `$top` 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-此 API 的默认页面大小为 100 **accessReviewInstanceDecisionItem** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+此 API 的默认页面大小为 100 **个 accessReviewInstanceDecisionItem** 对象。 若要提高效率并避免因大型结果集而超时，请使用 `$skip` 分页和 `$top` 查询参数。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 无。
 
 ## <a name="request-body"></a>请求正文
-不提供请求正文。
+请勿提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) 对象数组。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) 对象数组。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
-以下示例显示一个请求，请求检索有关访问评审实例的所有决策，等待调用用户批准。
+以下示例演示一个请求，请求检索对访问评审实例的所有决策，等待调用用户的批准。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

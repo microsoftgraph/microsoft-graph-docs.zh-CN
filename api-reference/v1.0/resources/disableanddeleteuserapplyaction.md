@@ -1,22 +1,22 @@
 ---
 title: disableAndDeleteUserApplyAction 资源类型
-description: 禁用并删除在访问评审中被拒绝的任何 B2B 来宾用户。
-author: isabelleatmsft
+description: 禁用和删除在访问评审中被拒绝的任何 B2B 来宾用户。
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 37085f849dc3bc84dfda1926ba9d140e91d3d894
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3958b27453e8ebe83513f2bbdd34403e3cb6088f
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089737"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698448"
 ---
 # <a name="disableanddeleteuserapplyaction-resource-type"></a>disableAndDeleteUserApplyAction 资源类型
 
 命名空间：microsoft.graph
 
-在访问评审中拒绝的任何 B2B 来宾用户禁用 30 天，然后删除其帐户。 此选项不包含任何配置选项。
+禁用在访问评审 30 天内被拒绝的任何 B2B 来宾用户，然后删除其帐户。 此选项不包含任何配置选项。
 
 继承自 [accessReviewApplyAction](../resources/accessreviewapplyaction.md)。
 

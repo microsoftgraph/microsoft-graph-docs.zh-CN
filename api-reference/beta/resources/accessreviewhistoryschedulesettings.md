@@ -1,16 +1,16 @@
 ---
 title: accessReviewHistoryScheduleSettings 资源类型
-description: 在Azure AD评审中，accessReviewHistoryScheduleSettings 表示与访问评审历史记录定义系列关联的设置。
-author: isabelleatmsft
+description: 在 Azure AD 访问评审中，accessReviewHistoryScheduleSettings 表示与访问评审历史记录定义系列关联的设置。
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7f1e10372fbd2db23ae70ea413e007993c6f85a0
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: f7cf5ebd089fd94999a8ad5bfd8edfe6f1a4129b
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226298"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697237"
 ---
 # <a name="accessreviewhistoryschedulesettings-resource-type"></a>accessReviewHistoryScheduleSettings 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "62226298"
 
 |属性|类型|说明|
 |:---|:---|:---|
-| recurrence|[patternedRecurrence](patternedrecurrence.md) | 使用标准定期对象定期Outlook设置。 <br/><br/>**注意：** 仅 **支持 dayOfMonth** **、interval** 和 **type** (`weekly` `absoluteMonthly` ，) 属性。 使用 **recurrenceRange 上的 属性 startDate** 确定审阅开始的哪一天。  必需。 |
-|reportRange|String|ISO 8601 持续时间格式的持续时间字符串，用于指定生成的审阅历史记录数据的回发期。 例如，如果计划将历史记录定义在每月的 1 号运行， **则 reportRange** 为 `P1M` 。 在这种情况下，在每月的第一天，将收集仅包含上个月评价数据的访问评审历史记录数据。 <br/><br/>**注意：** 仅 **支持** **years、months** 和 **days** ISO 8601 属性。 此为必需属性。|
+| recurrence|[patternedRecurrence](patternedrecurrence.md) | 使用标准 Outlook 定期对象的定期的详细设置。 <br/><br/>**注意：** 仅支持 **dayOfMonth**、 **interval** 和 **type** (`weekly`， `absoluteMonthly`) 属性。 在 **recurrenceRange** 上使用属性 **startDate** 来确定审阅开始的日期。 必填。 |
+|reportRange|String|ISO 8601 持续时间格式的持续时间字符串，指定生成的审阅历史记录数据的回查周期。 例如，如果历史记录定义计划在每月 1 日运行，则 **reportRange** 为 `P1M`。 在这种情况下，在每个月的第一个时间，将仅收集包含上一个月审阅数据的访问评审历史记录数据。 <br/><br/>**注意：** 仅支持 **年**、 **月** 和 **天** ISO 8601 属性。 此为必需属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

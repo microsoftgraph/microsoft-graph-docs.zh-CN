@@ -1,16 +1,16 @@
 ---
 title: accessReviewInstanceDecisionItemAzureRoleResource 资源类型
-description: 表示通过 accessReviewInstanceDecisionItem 对象表示其访问权限的 Azure 资源角色。
-author: isabelleatmsft
+description: 表示通过 accessReviewInstanceDecisionItem 对象表示访问权限的 Azure 资源角色。
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c8975a623deb763f5a83a22ff49bf28b122325a7
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: d607463664ee5c106e373a7bb568bfd32cd3c0a0
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62162220"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697880"
 ---
 # <a name="accessreviewinstancedecisionitemazureroleresource-resource-type"></a>accessReviewInstanceDecisionItemAzureRoleResource 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "62162220"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-表示通过 [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 对象表示其访问权限的 Azure 资源角色。 **accessReviewInstanceDecisionItemAzureRoleResource** 是允许传入其他属性的开放类型。
+表示通过 [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 对象表示访问权限的 Azure 资源角色。 **accessReviewInstanceDecisionItemAzureRoleResource** 是一种开放类型，允许传入其他属性。
 
 继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。
 
@@ -27,10 +27,10 @@ ms.locfileid: "62162220"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-| displayName | String | Azure 角色的显示名称。 继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。|
+| displayName | 字符串 | 显示 Azure 角色的名称。 继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。|
 | id | String | 决策项资源的标识符。 继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。 |
-| type | String | 资源的类型。 类型将始终为 `AzureRole` 。  继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。 |
-| 范围 | [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md) | 与此角色关联的作用域的详细信息。 |
+| type | String | 资源的类型。 类型将始终为 `AzureRole`.  继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。 |
+| 范围 | [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md) | 此角色关联的范围的详细信息。 |
 
 
 ## <a name="relationships"></a>关系

@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft 图形 API 将审阅者分配到访问评审
 description: 使用 Microsoft Graph 中的访问评审 API 分配访问评审者，例如特定用户、组的成员或所有者、人员管理器或应用所有者。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 50399c1f1f7f8f9694f802383e1fe2bde92880f1
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: ce0e806920b2bb925cc16b7d31aa57156388935a
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437070"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698343"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft 图形 API 将审阅者分配到访问评审
 

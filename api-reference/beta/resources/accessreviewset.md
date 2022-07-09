@@ -1,16 +1,16 @@
 ---
 title: accessReviewSet 资源类型
-description: 公开访问评审 API 和功能的基本资源的容器。 当前仅公开 accessReviewScheduleDefinition 资源。
-author: isabelleatmsft
+description: 公开访问评审 API 和功能的基础资源的容器。 当前仅公开 accessReviewScheduleDefinition 资源。
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bd7da749cdeb6e759dc464ddf51b67f60e790c4c
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: ca33119169ed61604b0c9deed18ecad33bd76069
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650950"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697839"
 ---
 # <a name="accessreviewset-resource-type"></a>accessReviewSet 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "61650950"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-公开访问评审 API 和功能的基本资源的容器。 当前仅公开 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 关系。
+公开访问评审 API 和功能的基础资源的容器。 当前仅公开 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 关系。
 
-继承自 [实体](entity.md)。
+继承自 [entity](entity.md)。
 
 ## <a name="methods"></a>方法
 
@@ -34,10 +34,10 @@ ms.locfileid: "61650950"
 
 |关系|类型|说明|
 |:---|:---|:---|
-|决策|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 集合| 表示Azure AD实例的访问评审决定。|
-|定义|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 集合| 表示访问评审的模板和日程安排。 |
-|historyDefinitions|[accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 集合| 表示访问评审历史记录数据和用于收集数据的范围的集合。|
-|策略|[accessReviewPolicy](../resources/accessreviewpolicy.md)| 使管理员能够管理其租户中的目录级别访问评审策略的资源。|
+|决定|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 集合| 表示对审阅实例的 Azure AD 访问评审决策。|
+|定义|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 集合| 表示访问评审的模板和计划。 |
+|historyDefinitions|[accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 集合| 表示访问评审历史记录数据的集合以及用于收集该数据的范围。|
+|策略|[accessReviewPolicy](../resources/accessreviewpolicy.md)| 使管理员能够管理其租户中的目录级访问评审策略的资源。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

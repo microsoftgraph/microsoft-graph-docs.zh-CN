@@ -2,12 +2,12 @@
 title: 在 Outlook 日历上找到可能的会议时间
 description: 使用 findMeetingTimes 标识满足时间、位置和其他约束的会议时间。 包括涉及两个用户的示例。
 ms.localizationpriority: high
-ms.openlocfilehash: 97ee0a5b15a819ba7662764a684ab53ed9e2353b
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 31116dba84845460c58b60e27bac6cf8ffa4cc0c
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440696"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697769"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>在 Outlook 日历上找到可能的会议时间
 
@@ -45,6 +45,7 @@ Prefer: outlook.timezone="{time-zone-string}}"
 2. 第二次调用查找 4 月 21 日的可用性并返回下午 2-4 点的建议。
 
 两次 **findMeetingTimes** 调用包含以下参数。**findMeetingTimes** 的所有 [参数](/graph/api/user-findmeetingtimes#request-body)都是可选的。
+
 
 - **与会者**：一位与会者 Samantha Booth 的 **类型** 属性设置为 `required`
 - **locationConstraint**：不需要任何位置建议

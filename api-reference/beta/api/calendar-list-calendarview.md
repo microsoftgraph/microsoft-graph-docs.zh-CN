@@ -1,16 +1,16 @@
 ---
 title: 列出 calendarView
-description: 获取由时间范围定义的日历视图中的事件发生次数、异常和单一实例，
+description: 获取时间范围定义的日历视图中事件的发生、异常和单个实例。
 ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af8dcbe14bb956f211c7b18dd555cca0ba36a35e
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 30617cca3ad2c691672959856b5119cb5942a4a4
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477530"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698294"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -80,11 +80,11 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象集合。
 
-如果结果集跨多个页面，**calendarView** 将在响应中返回 **@odata.nextLink** 属性，其中包含指向下一页结果的 URL。 有关详细信息，请参阅[分页](/graph/paging)。
+如果结果集跨多个页面，**calendarView** 将在响应中返回 **@odata.nextLink** 属性，其中包含指向下一页结果的 URL。如需详细信息，请参阅 [分页](/graph/paging)。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-下面是一个请求示例。
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -121,7 +121,8 @@ GET https://graph.microsoft.com/beta/me/calendar/calendarView?startDateTime=2017
 ---
 
 ### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

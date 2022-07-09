@@ -2,15 +2,15 @@
 title: Azure AD 访问审查
 description: 使用 Azure AD 访问评审配置一次性或定期访问评审，以证明用户对 Azure AD 资源的访问权限。
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 6db9753dd66347720dc788a4d1059454daf92f5e
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 831f3b643832ca0986d945559f1ab0327bc0eccf
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442876"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697790"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
@@ -67,7 +67,7 @@ ms.locfileid: "66442876"
 
 调用用户需要以下 [Azure AD 角色](/azure/active-directory/roles/permissions-reference) 来管理访问评审。
 
-| Operation | 应用程序权限 | 调用用户所需的目录角色 |
+| 操作 | 应用程序权限 | 调用用户所需的目录角色 |
 |:------------------|:------------|:--------------------------------------------|
 | 读取 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读取者或用户管理员 |
 | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或用户管理员 |

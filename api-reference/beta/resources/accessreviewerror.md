@@ -1,16 +1,16 @@
 ---
 title: accessReviewError 资源类型
-description: 表示在访问评审实例生命周期内发生的错误。
-author: isabelleatmsft
-localization_priority: Normal
+description: 表示访问评审实例生命周期内发生的错误。
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: dc0fe94daaba28bf92b20cb986760b0d3eb0901b
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 7e0b773bd8b1393b160cb666db4d5f19d9501a54
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534251"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697923"
 ---
 # <a name="accessreviewerror-resource-type"></a>accessReviewError 资源类型
 
@@ -20,14 +20,14 @@ ms.locfileid: "53534251"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-表示在访问评审实例生命周期中发生的错误。 此资源是只读的。
+表示访问评审实例生命周期中发生的错误。 此资源是只读的。
 
 继承自 [genericError](../resources/genericerror.md)。
 
 ## <a name="properties"></a>属性
 | 属性                     | 类型     | 说明                          |
 | :--------------------------- | :------  | :----------                          |
-| code  |String  | 表示错误类型。 继承自 genericError。 只读。 |
+| code  |字符串  | 表示错误类型。 继承自 genericError。 只读。 |
 | message |String | 表示错误详细信息。 继承自 genericError。 只读。|
 
 ## <a name="relationships"></a>关系

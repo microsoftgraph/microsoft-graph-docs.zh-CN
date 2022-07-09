@@ -1,16 +1,16 @@
 ---
 title: accessReviewHistoryDefinition 资源类型
 description: 表示访问评审历史记录数据的集合。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: af05ff3d357b904cce6ea99ecf1c122b63135eb2
-ms.sourcegitcommit: ca3edeed9408ee94bb12d7acf506d7317bf01d25
+ms.openlocfilehash: ce078243c0cfdd53f07854c98602c0de615e9288
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64842278"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698315"
 ---
 # <a name="accessreviewhistorydefinition-resource-type"></a>accessReviewHistoryDefinition 资源类型
 
@@ -40,8 +40,8 @@ ms.locfileid: "64842278"
 |reviewHistoryPeriodEndDateTime|DateTimeOffset| 时间戳。 在此日期或之前结束的评论将包含在提取的历史记录数据中。 仅当未定义 **scheduleSettings** 时才需要。 |
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|时间戳。 从此日期开始或之前的评审将包含在提取的历史记录数据中。 仅当未定义 **scheduleSettings** 时才需要。|
 | scheduleSettings  |[accessReviewHistoryScheduleSettings](accessReviewHistoryScheduleSettings.md)| 定期访问评审历史记录定义系列的设置。 仅当未定义 **reviewHistoryPeriodStartDateTime** 或 **reviewHistoryPeriodEndDateTime 时** 才需要。 尚不支持。|
-|scopes|[accessReviewScope](accessreviewscope.md) 集合|用于对提取的历史记录数据中包含的评论进行范围。 提取其范围与此提供的范围匹配的评审。 必需。|
-|状态| accessReviewHistoryStatus|表示审阅历史记录数据收集的状态。 可能的值包括 `done`、`inProgress`、`error`、`requested`、`unknownFutureValue`。|
+|scopes|[accessReviewScope](accessreviewscope.md) 集合|用于对提取的历史记录数据中包含的评论进行范围。 提取其范围与此提供的范围匹配的评审。 必填。|
+|status| accessReviewHistoryStatus|表示审阅历史记录数据收集的状态。 可能的值包括 `done`、`inProgress`、`error`、`requested`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系
 

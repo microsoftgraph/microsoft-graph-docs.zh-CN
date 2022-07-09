@@ -2,15 +2,15 @@
 title: 列出实例
 description: 检索 accessReviewInstance 对象。
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4a68e781a26cdb3176d102f0c7727da353921135
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 852640c90e02cd659e3b9e31c37c1625abd9121a
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721910"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696846"
 ---
 # <a name="list-instances"></a>列表实例
 
@@ -18,7 +18,7 @@ ms.locfileid: "63721910"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [特定 accessReviewScheduleDefinition 的 accessReviewInstance](../resources/accessreviewinstance.md) [对象](../resources/accessreviewscheduledefinition.md)。 返回零个或多个 **accessReviewInstance** 对象的列表，包括其所有嵌套属性。 返回的对象不包括关联的 accessReviewInstanceDecisionItems。 若要检索有关实例的决策，请使用 [List accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md)。
+检索特定 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 的 [accessReviewInstance](../resources/accessreviewinstance.md) 对象。 返回零个或多个 **accessReviewInstance** 对象的列表，包括其所有嵌套属性。 返回的对象不包括关联的 accessReviewInstanceDecisionItems。 若要检索有关实例的决策，请使用 [List accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,9 +26,9 @@ ms.locfileid: "63721910"
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
-|应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
+|应用                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
-登录用户还必须具有允许其读取访问评审的目录角色。 若要查看仅向已登录用户分配审阅者的实例，请参阅列出待处理 [的访问评审实例](accessreviewinstance-pendingaccessreviewinstances.md)
+登录用户还必须具有允许他们读取访问评审的目录角色。 若要仅查看为登录用户分配审阅者所在的实例，请参阅[“列出挂起的访问评审实例](accessreviewinstance-pendingaccessreviewinstances.md)”
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -37,22 +37,22 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select`、 `$filter`、 `$orderBy`、 和 `$skip``$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select`OData `$skip``$filter``$orderBy`查询参数，`$top`以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-此 API 的默认页面大小为 100 **accessReviewInstance** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+此 API 的默认页面大小为 100 **个 accessReviewInstance** 对象。 若要提高效率并避免因大型结果集而超时，请使用 `$skip` 分页和 `$top` 查询参数。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 无。
 
 ## <a name="request-body"></a>请求正文
-不提供请求正文。
+请勿提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstance](../resources/accessreviewinstance.md) 对象数组。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewInstance](../resources/accessreviewinstance.md) 对象数组。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
-以下示例显示检索定义的所有访问评审实例的请求。
+以下示例演示检索定义的所有访问评审实例的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

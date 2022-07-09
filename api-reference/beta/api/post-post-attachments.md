@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 03a3097aacb5775414b8a81539ca61c6a95646d0
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: be123136893fac8622c4e0edd7716c07b45893b6
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347117"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698217"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -18,9 +18,9 @@ ms.locfileid: "62347117"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建 [组帖子](../resources/attachment.md) 时添加附件。 
+创建组帖子时添加 [附件](../resources/attachment.md) 。 
 
-此操作将可添加到的附件的大小限制在 4 MB 以下。
+此操作限制可添加到 4 MB 以下的附件的大小。
 
 附件可以是下列类型之一：
 
@@ -37,10 +37,10 @@ ms.locfileid: "62347117"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
-在组的 [conversationThread](../resources/conversationthread.md) [中创建](../resources/post.md)帖子时包含附件。 指定父 [对话是可选的](../resources/conversation.md) 。
+在组[的 conversationThread](../resources/conversationthread.md) 中创建[帖子](../resources/post.md)时包含附件。 指定父 [会话](../resources/conversation.md) 是可选的。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -57,16 +57,16 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|帖子|[帖子](../resources/post.md)|要答复的新帖子，其中包括附件集合中的 [一个或多个附件](../resources/attachment.md) 。|
+|帖子|[帖子](../resources/post.md)|正在回复的新帖子，其中包括附件集合中的一个或多个 [附件](../resources/attachment.md) 。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不返回响应正文。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-include-a-file-attachment"></a>示例 1：包含文件附件
+### <a name="example-1-include-a-file-attachment"></a>示例 1：包括文件附件
 #### <a name="request"></a>请求
-下面是创建帖子时包含文件作为附件的请求示例。
+下面是一个请求示例，该请求在创建帖子时将文件作为附件包含在内。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -128,10 +128,10 @@ Content-type: application/json
 HTTP/1.1 202 Accpted
 ```
 
-### <a name="example-2-include-an-item-attachment"></a>示例 2：包括项目附件
+### <a name="example-2-include-an-item-attachment"></a>示例 2：包括项附件
 
 #### <a name="request"></a>请求
-下面是创建帖子时包含作为附件的事件的请求示例。
+下面是一个请求示例，其中包含在创建帖子时作为附件的事件。
 
 <!-- {
   "blockType": "request",
@@ -187,7 +187,7 @@ HTTP/1.1 202 Accepted
 
 #### <a name="request"></a>请求
 下面是创建帖子时包含引用附件的请求示例。
-附件指向文件夹上的OneDrive。
+附件指向 OneDrive 上的文件夹。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

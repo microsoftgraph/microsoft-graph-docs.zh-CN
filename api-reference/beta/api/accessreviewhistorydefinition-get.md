@@ -1,16 +1,16 @@
 ---
 title: 获取 accessReviewHistoryDefinition
 description: 检索 accessReviewHistoryDefinition 对象。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 28028bfe970f5a63f8d877bfebe55a68cced21ec
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 1ad4b899d2138d0778c6c48bcef7f4058c6fdac0
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804176"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696642"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>获取 accessReviewHistoryDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "62804176"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按其 [标识符检索 accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。 返回访问评审历史记录定义对象的所有属性。 如果定义是 30 天或更久，则返回 `404 Not Found` 错误。
+按标识符检索 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。 将返回访问评审历史记录定义对象的所有属性。 如果定义为 30 天或更早， `404 Not Found` 则返回错误。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +28,9 @@ ms.locfileid: "62804176"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.ReadWrite.All|
+|应用|AccessReview.ReadWrite.All|
 
-登录用户还必须是关联的审阅历史记录定义的创建者、全局管理员目录角色成员或全局读取者目录角色成员才能检索定义。
+登录用户还必须是关联的评审历史记录定义的创建者、全局管理员目录角色成员或全局读者目录角色成员来检索定义。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,7 +44,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 和 `$select` `$expand` OData 查询参数来帮助自定义响应。 包括 `?$expand=instances` 将包括响应对象中与 [accessReviewHistoryDefinition 对象关联的](../resources/accessreviewhistorydefinition.md) 实例。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数， `$expand` 以帮助自定义响应。 在 `?$expand=instances` 响应对象中包括与 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象关联的实例。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -58,7 +58,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 

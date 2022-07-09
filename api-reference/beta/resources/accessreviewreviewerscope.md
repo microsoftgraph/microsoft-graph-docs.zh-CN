@@ -1,16 +1,16 @@
 ---
 title: accessReviewReviewerScope 资源类型
-description: 表示将审阅访问评审的人。
-author: isabelleatmsft
-localization_priority: Normal
+description: 表示谁将审阅访问评审。
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 58abda6c89e484336b34d546edc68ebbfe432162
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: fbbb8288216eda745acc831c7b362454dfaec239
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579252"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698090"
 ---
 # <a name="accessreviewreviewerscope-resource-type"></a>accessReviewReviewerScope 资源类型
 
@@ -20,18 +20,18 @@ ms.locfileid: "52579252"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-accessReviewReviewerScope 定义谁将审阅 [accessReviewScheduleDefinition 的实例](accessreviewscheduledefinition.md)。 它是一个 OData 查询，它允许将审阅者指定为用户 (（即特定用户、组所有者和组成员) ）的静态列表，或者动态地将审阅者指定为其经理或组所有者审阅每个用户。 若要创建自审阅 (用户查看自己的访问权限) ，请不要在 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 创建时提供审阅者。
+accessReviewReviewerScope 定义谁将查看 [accessReviewScheduleDefinition 的实例](accessreviewscheduledefinition.md)。 它是一个 OData 查询，允许审阅者同时指定为用户 (的静态列表，即特定用户、组所有者和组成员) 或动态地由其经理或组所有者评审每个用户。 若要创建自审 (用户在其中查看自己的访问权限) ，请勿在 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 创建时提供审阅者。
 
 继承自 [accessReviewScope](../resources/accessreviewscope.md)。
 
 ## <a name="properties"></a>属性
 | 属性 | 类型 | 说明 |
 | :-------------------------| :---------- | :---------- |
-| 查询 | String | 用于指定审阅者的查询。 有关示例，请参阅表。 |
-| queryType | String | 查询的类型。 示例包括 `MicrosoftGraph` `ARM` 和 。 |
-| queryRoot | String | 在需要动态指定审阅者的情况下，此属性用于指示查询的相对源。 此属性仅在指定了相对查询（例如 ） `./manager` 时是必需的。 可能的值 `decisions` ：。 |
+| 查询 | String | 指定谁将成为审阅者的查询。 有关示例，请参阅表。 |
+| queryType | 字符串 | 查询的类型。 示例包括 `MicrosoftGraph` 和 `ARM`. |
+| queryRoot | String | 在需要动态指定审阅者的情况下，此属性用于指示查询的相对源。 仅当指定了相对查询时， `./manager`才需要此属性。 可能的值： `decisions`. |
 
-有关审阅者的 **配置选项的详细信息**，请参阅使用 Microsoft Graph API 将审阅者 [分配给你的访问Graph定义](/graph/accessreviews-reviewers-concept)。
+有关 **审阅者** 配置选项的详细信息，请参阅 [使用 Microsoft 图形 API 将审阅者分配到访问评审定义](/graph/accessreviews-reviewers-concept)。
 
 
 ## <a name="relationships"></a>关系

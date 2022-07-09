@@ -3,30 +3,30 @@ title: 处理长时间运行的操作（测试）
 description: 本文会介绍处理长时间运行的操作。
 ms.localizationpriority: medium
 author: daspek
-ms.openlocfilehash: 21d0798f195248abbb8933ca54d344d3ca9ab796
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d6b9a527c65570892a5346b610126c5c2299239b
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062416"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698441"
 ---
 # <a name="working-with-long-running-actions-beta"></a>处理长时间运行的操作 (beta)
 
 
 某些 API 响应完成所需的时间不确定。
 Microsoft Graph 可能会使用长时间运行操作模式，而不是等待操作完成之后再返回响应。
-此模式为你的应用提供了一种轮询长时间运行的操作的状态更新的方法，无需任何等待操作完成的请求。
+此模式为你的应用提供了一种在长时间运行的操作上轮询状态更新的方法，而无需任何等待操作完成的请求。
 
 常规模式包括以下步骤：
 
 1. 应用请求通过 API 执行长时间运行的操作。 API 接受操作，并返回 `202 Accepted` 响应以及 API URL 的 Location 头，以便检索操作状态报告。
-2. 应用请求获取操作状态报告 URL，然后收到包含长时间运行的操作进度的 [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) 响应。
+2. 应用请求获取操作状态报告 URL，然后收到包含长时间运行的操作进度的 [AsyncJobStatus](/graph/api/resources/asyncjobstatus) 响应。
 3. 长时间运行的操作完成。 
-4. 应用再次请求获取操作状态报告 URL ，然后收到显示操作已完成状态的 [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) 响应。
+4. 应用再次请求获取操作状态报告 URL ，然后收到显示操作已完成状态的 [AsyncJobStatus](/graph/api/resources/asyncjobstatus) 响应。
 
 ## <a name="initial-action-request"></a>初始操作请求
 
-让我们来逐步完成 [DriveItem 复制](/graph/api/driveitem-copy?view=graph-rest-beta)示例方案。
+让我们来逐步完成 [DriveItem 复制](/graph/api/driveitem-copy)示例方案。
 在此方案中，应用请求复制包含大量数据的文件夹。
 因为数据量较大，所以此请求可能需要几秒钟才能完成。
 
@@ -177,7 +177,7 @@ Content-type: application/json
 
 | **资源** | **API** |
 |:------ | :------ |
-| DriveItem | [Copy](/graph/api/driveitem-copy?view=graph-rest-beta) |
+| DriveItem | [Copy](/graph/api/driveitem-copy) |
 
 ## <a name="prerequisites"></a>先决条件
 

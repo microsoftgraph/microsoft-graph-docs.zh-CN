@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ac7f03f9fea426b643c09b56543b79cf1876d700
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 94ba73f77aceb43d6a6bef60a72b3972c7946099
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384038"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689014"
 ---
 ```csharp
 
@@ -17,12 +17,12 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
     DisplayName = "Test world UPDATED NAME!",
     DescriptionForAdmins = "Test world",
     DescriptionForReviewers = "Test world",
-    Scope = new AccessReviewScope
+    Scope = new AccessReviewQueryScope
     {
         Query = "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
         QueryType = "MicrosoftGraph"
     },
-    InstanceEnumerationScope = new AccessReviewScope
+    InstanceEnumerationScope = new AccessReviewQueryScope
     {
         Query = "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f",
         QueryType = "MicrosoftGraph"

@@ -1,16 +1,16 @@
 ---
 title: accessReviewInstanceDecisionItem 资源类型
 description: 表示用户对 accessReviewInstance 的访问权限的决策。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c1412a0354e4993de02ad5cdefc6fc732be545bc
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 633e095d0fbb2843c888e52f1d71bb0eda1c4644
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446376"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697888"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>accessReviewInstanceDecisionItem 资源类型
 
@@ -38,9 +38,9 @@ ms.locfileid: "66446376"
 |accessReviewId|String|accessReviewInstance 父级的标识符。 支持 `$select`。 只读。|
 |appliedBy|[userIdentity](../resources/useridentity.md)|应用决策的用户的标识符。 只读。|
 |appliedDateTime|DateTimeOffset|应用审批决定的时间戳。 DatetimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。  支持 `$select`。 只读。|
-|applyResult|String|应用决策的结果。 可能的值：`New`、`AppliedSuccessfully`、 `AppliedSuccessfullyButObjectNotFound` `AppliedWithUnknownFailure`和 `ApplyNotSupported`. 仅支持`$select`和 `$orderby``$filter` (`eq`) 。 只读。|
+|applyResult|字符串|应用决策的结果。 可能的值：`New`、`AppliedSuccessfully`、 `AppliedSuccessfullyButObjectNotFound` `AppliedWithUnknownFailure`和 `ApplyNotSupported`. 仅支持`$select`和 `$orderby``$filter` (`eq`) 。 只读。|
 |决定|String|评审结果。 可能的值：`Approve`、`Deny`或 `NotReviewed``DontKnow`。 仅支持`$select`和 `$orderby``$filter` (`eq`) 。 |
-|id|String| 决策的标识符。 继承自 [entity](../resources/entity.md)。 支持 `$select`。 只读。|
+|id|字符串| 决策的标识符。 继承自 [entity](../resources/entity.md)。 支持 `$select`。 只读。|
 |理由|String|审阅者做出决定时留下的理由。|
 | target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | 此特定决策的目标。 决策目标可以是不同类型 ，每个类型都有其自己的特定属性。 请参阅 [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)。 只读。 <br/> 此属性已替换为 `principal` v1.0 中的属性和 `resource` 属性。|
 |主要|[identity](../resources/identity.md)|访问评审中的每个决策项都表示主体对资源的访问权限。 此属性表示主体的详细信息。 例如，如果决策项表示用户“Bob”对组“Sales”的访问权限 - 主体为“Bob”，资源为“Sales”。 主体可以是两种类型 - userIdentity 和 servicePrincipalIdentity。 支持 `$select`。 只读。|

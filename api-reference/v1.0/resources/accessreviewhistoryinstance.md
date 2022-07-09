@@ -1,26 +1,26 @@
 ---
 title: accessReviewHistoryInstance 资源类型
 description: 表示 accessReviewHistoryDefinition 对象的重复周期。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f2e3c73dc7b5f368db20ab6b84f58b637099cb7b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 62a37efbe3c8d01a6ee12c988c5890195812bb45
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337584"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698322"
 ---
 # <a name="accessreviewhistoryinstance-resource-type"></a>accessReviewHistoryInstance 资源类型
 
 命名空间：microsoft.graph
 
- 表示 [accessReviewHistoryDefinition 对象的](accessreviewhistorydefinition.md) 重复周期。 不重复的历史记录定义将只有一个实例。
+ 表示 [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) 对象的重复周期。 不重复的历史记录定义将完全有一个实例。
 
- 每个 **accessReviewHistoryInstance** 及其关联的 **accessReviewHistoryDefinition** 都包含属性 **reviewHistoryPeriodStartDateTime**、 **reviewHistoryPeriodEndDateTime**、 **决策**、 **scheduleSettings** 和 **scopes**。 这些属性在计划定期项目以及选择审阅数据时使用，并且可进行修改。 每个 **accessReviewHistoryInstance** 对象和数据仅在 30 天内可用。 将 **accessReviewHistoryInstance** `done` 状态移动到链接后，可以通过调用 [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md) 来检索实例的数据。
+ 每个 **accessReviewHistoryInstance** 及其关联 **的 accessReviewHistoryDefinition** 都包含属性 **reviewHistoryPeriodStartDateTime**、 **reviewHistoryPeriodEndDateTime**、 **决策**、 **scheduleSettings** 和 **范围**。 这些属性在计划重复周期以及选择审阅数据时使用，并且可以修改。 每个 **accessReviewHistoryInstance** 对象和数据仅可用 30 天。 将 **accessReviewHistoryInstance** 状态移动到 `done` 链接后，可以通过调用 [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md) 来检索实例的数据。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法  | 返回类型 | 说明 |
 |:---|:---|:---|
@@ -31,14 +31,14 @@ ms.locfileid: "63337584"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|downloadUri|String|可用于检索审阅历史记录数据的 Uri。 生成后，此 URI 将处于活动状态 24 小时。 必需项。|
-|expirationDateTime|DateTimeOffset|此实例和关联数据过期并删除历史记录的时间戳。 必需项。|
-|fulfilledDateTime|DateTimeOffset|收集此实例的所有可用数据的时间戳。 This will be set after this instance's status is set to `done`. 必需。|
-|id|String|访问评审历史记录实例的分配的唯一标识符。 只读。 必需。|
-|reviewHistoryPeriodEndDateTime|DateTimeOffset|在此日期或之前结束的时间戳将包含在提取的历史记录数据中。|
-|reviewHistoryPeriodStartDateTime|DateTimeOffset|时间戳、在此日期或之后开始审阅将包含在提取的历史记录数据中。|
+|downloadUri|String|可用于检索审阅历史记录数据的 Uri。 生成后，此 URI 将处于活动状态 24 小时。 必填。|
+|expirationDateTime|DateTimeOffset|此实例和关联的数据过期并删除历史记录的时间戳。 必填。|
+|fulfilledDateTime|DateTimeOffset|收集此实例的所有可用数据的时间戳。 此实例的状态设置为 `done`后，将设置此值。 必需。|
+|id|String|访问评审历史记录实例的分配的唯一标识符。 只读。 必填。|
+|reviewHistoryPeriodEndDateTime|DateTimeOffset|此日期或之前结束的时间戳、审阅将包含在提取的历史记录数据中。|
+|reviewHistoryPeriodStartDateTime|DateTimeOffset|从此日期开始或之后的时间戳、审阅将包含在提取的历史记录数据中。|
 |runDateTime|DateTimeOffset|计划生成实例的历史记录数据的时间戳。|
-|状态|accessReviewHistoryStatus|表示审阅历史记录数据收集的状态。 可能的值包括 `done`、`inProgress`、`error`、`requested`、`unknownFutureValue`。 将 **状态** 标记为 `done`后，可以生成一个链接，通过调用 [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md) 方法来检索实例的数据。|
+|status|accessReviewHistoryStatus|表示审阅历史记录数据收集的状态。 可能的值包括 `done`、`inProgress`、`error`、`requested`、`unknownFutureValue`。 将 **状态** 标记为 `done`后，可以通过调用 [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md) 方法生成一个链接来检索实例的数据。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

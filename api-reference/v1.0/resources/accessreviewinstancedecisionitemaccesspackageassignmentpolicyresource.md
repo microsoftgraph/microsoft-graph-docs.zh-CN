@@ -1,33 +1,33 @@
 ---
 title: accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource 资源类型
-description: 表示通过其访问通过 accessReviewInstanceDecisionItem 对象表示的访问包分配策略。
-author: isabelleatmsft
+description: 表示通过 accessReviewInstanceDecisionItem 对象表示访问权限的访问包分配策略。
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3dfb5c9a42e9b807b802ff1e1ef24b2533388db4
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: 40cbb74fd9a9801b62f4a98809d28c56dbc86b2e
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62162124"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698301"
 ---
 # <a name="accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource-resource-type"></a>accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource 资源类型
 
 命名空间：microsoft.graph
 
-表示通过其访问通过 [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 对象表示的访问包分配策略。 **accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource** 是允许传入其他属性的开放类型。
+表示通过 [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 对象表示访问权限的访问包分配策略。 **accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource** 是允许传入其他属性的开放类型。
 
 继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|accessPackageDisplayName|String| 已授予访问权限的访问包的显示名称。 |
-|accessPackageId|String| 已授予访问权限的访问包的标识符。 |
+|accessPackageDisplayName|String| 向其授予访问权限的访问包的显示名称。 |
+|accessPackageId|String| 已向其授予访问权限的访问包的标识符。 |
 | displayName | String | 访问包的显示名称。 继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。|
-| id | String | 决策项资源的标识符。 继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。 |
-| type | String | 资源的类型。 类型将始终为 `AccessPackageAssignmentPolicy` 。  继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。 |
+| id | 字符串 | 决策项资源的标识符。 继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。 |
+| type | 字符串 | 资源的类型。 类型将始终为 `AccessPackageAssignmentPolicy`.  继承自 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md)。 |
 
 
 

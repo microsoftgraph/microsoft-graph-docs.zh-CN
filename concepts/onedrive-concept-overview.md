@@ -4,12 +4,12 @@ description: '使用 Microsoft 365 中的文件中心 OneDrive 访问文件，�
 ms.localizationpriority: high
 ms.prod: onedrive
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d16d1b686b3d9265787246be2c333f6b6d495dd7
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 311dc13807b63522d6800ae619d310f7395db5e6
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442118"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698205"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>OneDrive 文件存储 API 概述
 
@@ -65,8 +65,8 @@ OneDrive 客户可以直接在 OneDrive 中使用或启动你的应用，以打�
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
 
-- [Microsoft Graph v1.0 中的 OneDrive 文件存储 API](/graph/api/resources/onedrive?view=graph-rest-1.0&preserve-view=true)
-- [Microsoft Graph beta 中的 OneDrive 文件存储 API](/graph/api/resources/onedrive?view=graph-rest-beta&preserve-view=true)
+- [Microsoft Graph v1.0 中的 OneDrive 文件存储 API](/graph/api/resources/onedrive)
+- [Microsoft Graph beta 中的 OneDrive 文件存储 API](/graph/api/resources/onedrive)
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -2,15 +2,15 @@
 title: 获取 accessReviewInstance
 description: 检索 accessReviewInstance 对象。
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cf22b9a31f04c4d08f70f887c6b6beea8c1468fa
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 7ebd33e702d4c779158ae4ee852deccd7d4c366d
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650711"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696589"
 ---
 # <a name="get-accessreviewinstance"></a>获取 accessReviewInstance
 
@@ -18,7 +18,7 @@ ms.locfileid: "61650711"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 [accessReviewInstance](../resources/accessreviewinstance.md) 的标识符及其父 [accessReviewScheduleDefinition 检索 accessReviewInstance 对象](../resources/accessreviewscheduledefinition.md)。 这将返回实例的所有属性，关联的 [accessReviewInstanceDecisionItems 除外](../resources/accessreviewinstancedecisionitem.md)。
+使用 [accessReviewInstance](../resources/accessreviewinstance.md) 及其父 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 的标识符检索 accessReviewInstance 对象。 这会返回除关联 [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md) 以外的实例的所有属性。
 
 若要检索有关实例的决策，请使用 [List accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md)。
 
@@ -29,9 +29,9 @@ ms.locfileid: "61650711"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
+|应用                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
-为了调用此 API，已登录用户还必须位于允许其阅读访问评审的目录角色中，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-overview.md)。
+若要调用此 API，已登录的用户还必须具有允许他们读取访问评审的目录角色，也可以将用户分配为访问评审的审阅者。  有关详细信息，请参阅 [访问评审](../resources/accessreviewsv2-overview.md)的角色和权限要求。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 无。
@@ -49,7 +49,7 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstance](../resources/accessreviewinstance.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewInstance](../resources/accessreviewinstance.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewinstance-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,15 +1,15 @@
 ---
-title: 使用 OneNote API 更新 OneNote 页面内容
+title: 更新 OneNote 页面内容
 description: 通过向页面的内容终结点发送 PATCH 请求来更新 OneNote 页面的内容。 然后在消息正文中发送 JSON 更改对象。
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: e11cec09e5b54f6beef43f223264d004f341b11a
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 4ce761de7f1c27ea80db2bd480abf53852368b56
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442813"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698063"
 ---
 # <a name="update-onenote-page-content"></a>更新 OneNote 页面内容
 

@@ -1,27 +1,27 @@
 ---
 title: 更新 accessReviewInstance
 description: 更新 accessReviewInstance 对象的属性。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1e9c30269421ee51b5cb5d9445e9d7a8be55b511
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9f6c01e702609b802e51ab06f782c0af21ebedd0
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095442"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697993"
 ---
 # <a name="update-accessreviewinstance"></a>更新 accessReviewInstance
 命名空间：microsoft.graph
 
-更新 [accessReviewInstance 对象](../resources/accessreviewinstance.md) 的属性。 只能 **更新审阅** 者和 **fallbackReviewers** 属性，但请求正文中还需要 **scope** 属性。 只能将审阅者添加到 **fallbackReviewers** 属性，但无法删除现有的 **fallbackReviewers**。
+更新 [accessReviewInstance 对象的](../resources/accessreviewinstance.md) 属性。 只能更新 **审阅者** 和 **fallbackReviewers** 属性，但请求正文中也需要 **范围** 属性。 只能将审阅者添加到 **fallbackReviewers** 属性，但不能删除现有的 **FallbackReviewers**。
 
-若要更新 **accessReviewInstance，** 其 **状态必须为** `InProgress` 。
+若要更新 **accessReviewInstance**，其 **状态** 必须是 `InProgress`。
 
 > [!NOTE]
 > 
-> 更新 **accessReviewInstance** 将仅更新该实例。 父 **accessReviewScheduleDefinition** 和任何将来的 **accessReviewInstance** 对象不会更改。 若要进行适用于所有未来实例的更新，请更新父 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
+> 更新 **accessReviewInstance** 将仅更新该实例。 父 **accessReviewScheduleDefinition** 和任何将来 **的 accessReviewInstance** 对象不会更改。 若要进行适用于所有未来实例的更新，请更新父 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,7 +30,7 @@ ms.locfileid: "62095442"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview.ReadWrite.All |
+|应用                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,17 +54,17 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 |属性|类型|说明|
 |:---|:---|:---|
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|此审阅者范围集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 当组所有者指定为审阅者，但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。 可选。 可更新。|
-|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|此访问评审范围集合用于定义审阅者是谁。 有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者分配给你的访问[Graph定义](/graph/accessreviews-scope-concept)。 可选。 可更新。|
-|范围|[accessReviewScope](../resources/accessreviewscope.md)|基于 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)级别的 scope 和 **instanceEnumerationScope** 创建。  定义在组中查看的用户范围。 只读。 必需，但不更新。|
+|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|此审阅者范围集合用于定义回退审阅者列表。 如果未从指定的审阅者列表中找到任何用户，则会通知这些回退审阅者采取行动。 如果组所有者被指定为审阅者，但组所有者不存在，或者经理被指定为审阅者，但用户的管理器不存在，则可能会发生这种情况。 可选。 更新。|
+|评论家|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|此访问评审范围集合用于定义审阅者是谁。 有关分配审阅者的选项示例，请参阅[使用 Microsoft 图形 API 将审阅者分配到访问评审定义](/graph/accessreviews-scope-concept)。 可选。 更新。|
+|范围|[accessReviewScope](../resources/accessreviewscope.md)|**基于** [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 级别的范围和 **instanceEnumerationScope** 创建。 定义在组中审阅的用户的范围。 只读。 必需但未更新。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [accessReviewInstance](../resources/accessreviewinstance.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [accessReviewInstance](../resources/accessreviewinstance.md) 对象。
 
-尝试删除现有的 **fallbackReviewers** 将返回 `409 Conflict` 响应代码。
+尝试删除现有 **fallbackReviewers** 将返回 `409 Conflict` 响应代码。
 
 ## <a name="examples"></a>示例
 

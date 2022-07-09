@@ -4,12 +4,12 @@ description: 电子邮件由 Microsoft Graph 中 Outlook 邮件 API 中的邮件
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 63470b3910837e08baee01881a070b9ee708c9bd
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 6958c740c92de862f6233b7154fb833bd5098a16
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556183"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697664"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>自动创建、发送和处理邮件
 
@@ -87,12 +87,12 @@ Prefer: outlook.allow-unsafe-html
 
 ## <a name="integrate-with--social-gesture-preview"></a>与“@”社交手势集成（预览版）
 
-@-mention 是提醒用户邮件中是否有提到他们的通知。 [mention](/graph/api/resources/mention?view=graph-rest-beta&preserve-view=true)资源使应用能够在电子邮件中设置和获取常见的在线社交手势，即“@”前缀。
+@-mention 是提醒用户邮件中是否有提到他们的通知。 [mention](/graph/api/resources/mention)资源使应用能够在电子邮件中设置和获取常见的在线社交手势，即“@”前缀。
 可以执行下列操作：
 
-- 在[创建邮件](/graph/api/user-post-messages?view=graph-rest-beta&preserve-view=true#request-2)时创建 @-mention
-- [获取用户邮箱中包含用户 @-mention 的所有邮件](/graph/api/user-list-messages?view=graph-rest-beta&preserve-view=true#request-2)
-- [获取所有 @-mention 就形成一封邮件](/graph/api/message-get?view=graph-rest-beta&preserve-view=true#request-2)
+- 在[创建邮件](/graph/api/user-post-messages#request-2)时创建 @-mention
+- [获取用户邮箱中包含用户 @-mention 的所有邮件](/graph/api/user-list-messages#request-2)
+- [获取所有 @-mention 就形成一封邮件](/graph/api/message-get#request-2)
 
 ## <a name="other-shared-capabilities"></a>其他共享的功能
 
@@ -100,7 +100,7 @@ Prefer: outlook.allow-unsafe-html
 
 - 发生一种或多种类型的更改时（如创建或更新邮件），订阅邮件的[更改通知](/graph/api/resources/webhooks)。
 - [跟踪文件夹中邮件的增量更改](delta-query-messages.md)。
-- 创建[开放扩展](extensibility-overview.md#4-open-extensions)或[架构扩展](extensibility-overview.md#3-schema-extensions)，以将自定义数据添加到邮件实例。
+- 创建[开放扩展](extensibility-overview.md#open-extensions)或[架构扩展](extensibility-overview.md#schema-extensions)，以将自定义数据添加到邮件实例。
 - 当 Outlook MAPI 属性尚未通过 Microsoft Graph API 元数据公开时，在邮件实例中创建[扩展属性](/graph/api/resources/extended-properties-overview)以存储这些属性的自定义数据。
 
 ## <a name="next-steps"></a>后续步骤
@@ -110,4 +110,4 @@ Prefer: outlook.allow-unsafe-html
 - [获取共享邮件](outlook-share-messages-folders.md)
 - [从其他用户身份发送 Outlook 邮件](outlook-send-mail-from-other-user.md)
 - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
-- 在 Microsoft Graph v1.0 中 [使用邮件 API](/graph/api/resources/mail-api-overview) 及其 [用例](/graph/api/resources/mail-api-overview#common-use-cases)
+- [使用邮件 API](/graph/api/resources/mail-api-overview) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview#common-use-cases)。

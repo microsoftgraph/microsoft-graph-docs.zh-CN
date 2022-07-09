@@ -1,16 +1,16 @@
 ---
 title: 获取 accessReviewHistoryDefinition
 description: 检索 accessReviewHistoryDefinition 对象。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5fa709a2a2c27f5829427153b0a58eca40b9e815
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 68ab773140e26b24df0fb882680dbb7341e99327
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442995"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698196"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>获取 accessReviewHistoryDefinition
 
@@ -26,7 +26,7 @@ ms.locfileid: "66442995"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.ReadWrite.All|
+|应用|AccessReview.ReadWrite.All|
 
 登录用户还必须是关联的评审历史记录定义的创建者、全局管理员目录角色成员或全局读者目录角色成员来检索定义。
 

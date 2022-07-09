@@ -1,21 +1,21 @@
 ---
 title: 列出决策
-description: 从 decisions 导航属性获取 accessReviewInstanceDecisionItem 资源。
-author: isabelleatmsft
+description: 从决策导航属性获取 accessReviewInstanceDecisionItem 资源。
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cabfa4c55086e125b3eb078bef1b09337cd9854d
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 8a843410fa754a9636d34627eb4ebb77a68a2093
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722383"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698007"
 ---
 # <a name="list-decisions"></a>列出决策
 命名空间：microsoft.graph
 
-从 [给定 accessReviewInstance 上的决策导航属性获取 accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) [资源](../resources/accessreviewinstance.md)。 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括所有嵌套属性。
+从给定 [accessReviewInstance](../resources/accessreviewinstance.md) 上的决策导航属性获取 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 资源。 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括其所有嵌套属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "63722383"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.Read.All、AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.Read.All、AccessReview.ReadWrite.All|
+|应用|AccessReview.Read.All、AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,11 +37,11 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select`、 `$filter`、 `$orderBy`、 和 `$skip``$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select`OData `$skip``$filter``$orderBy`查询参数，`$top`以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-此 API 的默认页面大小为 100 **accessReviewInstanceDecisionItem** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+此 API 的默认页面大小为 100 **个 accessReviewInstanceDecisionItem** 对象。 若要提高效率并避免因大型结果集而超时，请使用 `$skip` 分页和 `$top` 查询参数。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -51,7 +51,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

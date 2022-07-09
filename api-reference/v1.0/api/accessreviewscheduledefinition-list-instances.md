@@ -1,16 +1,16 @@
 ---
 title: 列出实例
 description: 获取 accessReviewInstance 对象及其属性的列表。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 91d230c4cb1ed67981ee06691f1aafe856d875a9
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 9c9248932af03069fae67f584d9acf394c690c90
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723385"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698280"
 ---
 # <a name="list-instances"></a>列表实例
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "63723385"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.Read.All、AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.Read.All、AccessReview.ReadWrite.All|
+|应用|AccessReview.Read.All、AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,11 +37,11 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select`、 `$filter`、 `$orderBy`、 和 `$skip``$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select`OData `$skip``$filter``$orderBy`查询参数，`$top`以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-此 API 的默认页面大小为 100 **accessReviewScheduleDefinition** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+此 API 的默认页面大小为 100 **个 accessReviewScheduleDefinition** 对象。 若要提高效率并避免因大型结果集而超时，请使用 `$skip` 分页和 `$top` 查询参数。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -51,7 +51,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstance](../resources/accessreviewinstance.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewInstance](../resources/accessreviewinstance.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

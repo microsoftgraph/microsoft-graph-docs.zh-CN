@@ -1,21 +1,21 @@
 ---
 title: accessReviewInstance：resetDecisions
-description: 将 accessReviewInstance 上的所有 accessReviewInstanceDecisionItem 对象重置为 `notReviewed` 。
-author: isabelleatmsft
+description: 重置 accessReviewInstance 上的所有 accessReviewInstanceDecisionItem 对象。`notReviewed`
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e79cf8514f83d0e87d5995cf78003cc10cd23e78
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3ce0aef834c26b1b7194b81c5fd04f64beb48687
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001509"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698511"
 ---
 # <a name="accessreviewinstance-resetdecisions"></a>accessReviewInstance：resetDecisions
 命名空间：microsoft.graph
 
-将[accessReviewInstance 上的所有 accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)对象重置为[](../resources/accessreviewinstance.md) `notReviewed` 。
+重置 [accessReviewInstance](../resources/accessreviewinstance.md) 上的所有 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象。`notReviewed`
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "61001509"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.ReadWrite.All|
+|应用|AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -77,7 +77,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-resetdecisions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-resetdecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

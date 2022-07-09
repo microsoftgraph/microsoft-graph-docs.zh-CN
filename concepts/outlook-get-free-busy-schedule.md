@@ -4,18 +4,18 @@ description: 使用 getSchedule 操作获取一个或多个用户、通讯组列
 author: tariq-sharif
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 263e3b5462b688f0dff98714bd646a247dde9765
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: ac44432fee2b324a399a0411e92041f0eeaab0e4
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439030"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697636"
 ---
 # <a name="get-freebusy-schedule-of-outlook-calendar-users-and-resources"></a>获取 Outlook 日历用户和资源的忙/闲计划
 
 在工作或学校设置中，一种常见方案是查看用户何时有空参加会议，或浏览团队、会议室或设备在一段时间内的状态。
 
-使用 [getSchedule](/graph/api/calendar-getschedule) 操作，可以获取一个或多个实体&mdash;用户、通讯组列表或资源&mdash;在特定时间段内的状态信息。
+使用 [getSchedule](/graph/api/calendar-getschedule) 操作，可以获取一个或多个实体（用户、通讯组列表或资源）在特定时间段内的状态信息。 
 
 ## <a name="example"></a>示例
 

@@ -1,16 +1,16 @@
 ---
 title: 更新 accessReviewInstanceDecisionItem
-description: 更新调用用户作为审阅者的现有 accessReviewInstanceDecisionItem 对象。
+description: 更新调用用户为审阅者的现有 accessReviewInstanceDecisionItem 对象。
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9b3e75d9817b2e41a332d0138dc409301d58f4e1
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: e0cf1034cbf8e1a8fbfcfd5d73568431a2ca75de
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62815846"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697118"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>更新 accessReviewInstanceDecisionItem
 
@@ -18,13 +18,13 @@ ms.locfileid: "62815846"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新访问决策，称为 [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md)，用户是审阅者。
+更新访问决策（称为 [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md)），用户是其审阅者。
 
 >[!NOTE]
->对 **accessReviewInstanceDecisionItem** 进行的任何更新都只能通过调用列为父 [accessReviewInstance](../resources/accessreviewinstance.md) 的审阅者的用户进行。
+>对 **accessReviewInstanceDecisionItem** 所做的任何更新只能通过调用作为父 [accessReviewInstance](../resources/accessreviewinstance.md) 审阅者列出的用户进行。
 
 ## <a name="permissions"></a>权限
-若要调用此 API，需要以下权限之一。 不支持向个人 Microsoft 帐户委派权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+调用此 API 需要以下权限之一。 不支持向个人 Microsoft 帐户委派权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -33,13 +33,13 @@ ms.locfileid: "62815846"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要更新对 accessReviewInstance 的决定，
+若要更新 accessReviewInstance 的决策，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
 
-若要更新具有多个阶段的 accessReviewInstance 阶段的决策：
+若要更新对具有多个阶段的 accessReviewInstance 阶段的决策：
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
@@ -52,24 +52,24 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-下表显示接受更新 的属性 `accessReviewInstanceDecisionItem`。
+下表显示了接受更新的 `accessReviewInstanceDecisionItem`属性。
 
 | 属性     | 类型       | 说明 |
 |:-------------|:------------|:------------|
-| decision  | String | 被审阅实体的访问决策。 可能的值是： `Approve` `Deny` `NotReviewed` `DontKnow`。 必需项。  |
-|  justification | 字符串 | 提供给管理员评价的上下文。 如果 accessReviewScheduleDefinition 上的 justificationRequiredOnApproval 为 True，则必需。  |
+| 决定  | String | 要审查的实体的访问决策。 可能的值为： `Approve` `NotReviewed` `Deny` `DontKnow`. 必填。  |
+|  理由 | String | 提供给管理员的评审的上下文。 如果 accessReviewScheduleDefinition 上的 justificationRequiredOnApproval 为 True，则为必需。  |
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 响应代码 `204 No Content` ，无响应正文。
+如果成功，此方法将返回响应代码，而不返回 `204 No Content` 响应正文。
 
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-decision-on-an-accessreviewinstance"></a>示例 1：更新对 accessReviewInstance 的决定
+### <a name="example-1-update-a-decision-on-an-accessreviewinstance"></a>示例 1：更新 accessReviewInstance 的决策
 
 #### <a name="request"></a>请求
 
-下面是批准用户访问的示例。
+下面是决定批准用户访问权限的示例。
 
 
 
@@ -121,7 +121,7 @@ HTTP/1.1 204 Accepted
 ```
 
 
-### <a name="example-2-update-a-decision-on-an-stage-in-a-multi-stage-access-review"></a>示例 2：更新多阶段访问评审中的阶段决策
+### <a name="example-2-update-a-decision-on-an-stage-in-a-multi-stage-access-review"></a>示例 2：在多阶段访问评审中更新有关某个阶段的决策
 
 #### <a name="request"></a>请求
 <!-- {

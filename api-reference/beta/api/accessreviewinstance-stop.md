@@ -1,26 +1,26 @@
 ---
-title: 停止访问ReviewInstance
+title: 停止 accessReviewInstance
 description: 停止当前处于活动状态的 accessReviewInstance。
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d89de0c8cca29a08cded85275e737ffa00798ab4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c3f51b73cbed12050bd9855b070eb190b3e888ba
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987795"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696579"
 ---
-# <a name="stop-accessreviewinstance"></a>停止访问ReviewInstance
+# <a name="stop-accessreviewinstance"></a>停止 accessReviewInstance
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-停止当前处于活动状态 [的 accessReviewInstance](../resources/accessreviewinstance.md)。 访问评审实例停止后，实例状态将为 ，审阅者无法再提供输入，并且可以 `Completed` 应用访问评审决策。
+停止当前处于活动状态 [的 accessReviewInstance](../resources/accessreviewinstance.md)。 访问评审实例停止后，将 `Completed`显示实例状态，审阅者无法再提供输入，并且可以应用访问评审决策。
 
-停止实例将影响未来的实例。 若要防止定期访问评审启动将来的实例，请 [更新计划定义](accessreviewscheduledefinition-update.md) 以更改其计划的结束日期。
+停止实例不会影响将来的实例。 若要防止定期访问评审启动将来的实例， [请更新计划定义](accessreviewscheduledefinition-update.md) 以更改其计划的结束日期。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "60987795"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview.ReadWrite.All |
+|应用                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -74,7 +74,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/java/stop-accessreviewinstance-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/stop-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

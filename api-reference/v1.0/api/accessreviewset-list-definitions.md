@@ -1,16 +1,16 @@
 ---
 title: 列表定义
 description: 获取 accessReviewScheduleDefinition 对象及其属性的列表。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b9978d6d33ff278f300df6a8a65f93c13c09b80a
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: c982d417f7b5d51ceb84c23575a974b4b0db54ca
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365776"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697209"
 ---
 # <a name="list-definitions"></a>列表定义
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "65365776"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.Read.All、AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.Read.All、AccessReview.ReadWrite.All|
+|应用|AccessReview.Read.All、AccessReview.ReadWrite.All|
 
  登录用户还必须具有允许他们读取访问评审的目录角色。 请参阅访问评审 [角色和应用程序权限授权检查](../resources/accessreviewsv2-overview.md#role-and-application-permission-authorization-checks)。
 
@@ -52,9 +52,9 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 |值|说明|
 |:---     |:---       |
-|`/groups`  |列出单个组上的每个 accessReviewScheduleDefinition (排除范围限于所有Microsoft 365组的定义，其中) 来宾用户。|
-|`/groups/{group id}`  |列出特定组上的每个 accessReviewScheduleDefinition (排除范围限定到所有Microsoft 365组的定义，其中) 来宾用户。|
-|`./members`  |列出范围为具有来宾用户的所有Microsoft 365组的每个 accessReviewScheduleDefinition。|
+|`/groups`  |列出单个组上的每个 accessReviewScheduleDefinition (排除范围限定到所有 Microsoft 365 组的定义，其中来宾用户) 。|
+|`/groups/{group id}`  |列出特定组上的每个 accessReviewScheduleDefinition (排除范围限定到所有 Microsoft 365 组的定义，并) 来宾用户。|
+|`./members`  |列出范围为具有来宾用户的所有 Microsoft 365 组的每个 accessReviewScheduleDefinition。|
 |`accessPackageAssignments`  |列出访问包上的每个 accessReviewScheduleDefinition。|
 |`roleAssignmentScheduleInstances`  |列出分配给特权角色的服务主体的每个 accessReviewScheduleDefinition。|
 
@@ -179,10 +179,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>示例 2：检索范围为租户中所有Microsoft 365组的所有访问评审定义
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>示例 2：检索租户中所有 Microsoft 365 组范围内的所有访问评审定义
 
 #### <a name="request"></a>请求
-以下示例演示了检索租户中所有Microsoft 365组中的所有访问评审系列的请求。
+以下示例演示了检索租户中所有 Microsoft 365 组范围内的所有访问评审系列的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,16 +1,16 @@
 ---
 title: 获取 accessReviewScheduleDefinition
 description: 读取 accessReviewScheduleDefinition 对象的属性和关系。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 943368046a8c6e8efa2c018ebbb6fe957825ab67
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 1b611d85286d3cfcb4a5d1f9696341d8045475b3
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723069"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698392"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>获取 accessReviewScheduleDefinition
 命名空间：microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "63723069"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.Read.All、AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.Read.All、AccessReview.ReadWrite.All|
+|应用|AccessReview.Read.All、AccessReview.ReadWrite.All|
 
-若要调用此 API，登录用户还必须位于允许其阅读访问评审的目录角色中，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-overview.md)。
+若要调用此 API，登录用户还必须具有允许他们读取访问评审的目录角色，或者用户可以分配为访问评审的审阅者。  有关详细信息，请参阅 [访问评审](../resources/accessreviewsv2-overview.md)的角色和权限要求。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,7 +41,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -53,7 +53,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 

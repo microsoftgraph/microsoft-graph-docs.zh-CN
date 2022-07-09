@@ -1,16 +1,16 @@
 ---
 title: accessReviewScope 资源类型
-description: '在 Azure AD 访问评审功能中，表示将在访问 `accessReviewScope` 评审中审阅的实体。  '
-author: isabelleatmsft
-localization_priority: Normal
+description: '在 Azure AD 访问评审功能中 `accessReviewScope` ，表示哪些实体将在访问评审中进行评审。  '
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 21f21d3a3d7ca4d369493c6c5028185bdbdb0e20
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: aa4d8dd9db5fa16736552acbed2c9e59592980af
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367287"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698105"
 ---
 # <a name="accessreviewscope-resource-type"></a>accessReviewScope 资源类型
 
@@ -20,13 +20,13 @@ ms.locfileid: "58367287"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-**accessReviewScope** 定义在 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md)中检查的实体。 它是由 accessReviewQueryScope、principalResourceMembershipsScope 和[accessReviewReviewerScope](accessreviewreviewerscope.md)继承的抽象类型。 [](accessreviewqueryscope.md) [](principalresourcemembershipsscope.md) 
+**accessReviewScope** 定义 [在 accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 中评审的实体。 它是一种抽象类型，由 [accessReviewQueryScope](accessreviewqueryscope.md)、 [principalResourceMembershipsScope](principalresourcemembershipsscope.md) 和 [accessReviewReviewerScope](accessreviewreviewerscope.md) 继承。 
 
-有关[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)的 scope 属性，请参阅[accessReviewQueryScope](accessreviewqueryscope.md)和[principalResourceMembershipsScope](principalresourcemembershipsscope.md)。 
+有关 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 上 **的作用域** 属性，请参阅 [accessReviewQueryScope](accessreviewqueryscope.md) 和 [principalResourceMembershipsScope](principalresourcemembershipsscope.md)。
 
-有关 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md)的 **reviewers** 属性，请参阅 [accessReviewReviewerScope](accessreviewreviewerscope.md)。
+有关 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 上的 **审阅者** 属性，请参阅 [accessReviewReviewerScope](accessreviewreviewerscope.md)。
 
-强烈建议所有类型指定作用域中的 OData 类型，但对于[principalResourceMembershipsScope](principalresourcemembershipsscope.md)和[accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md)是必需的。 
+对于所有类型，强烈建议在 **范围内** 指定 OData 类型，但 [principalResourceMembershipsScope](principalresourcemembershipsscope.md) 和 [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md) 需要此类型。
 
 ## <a name="properties"></a>属性
 无。

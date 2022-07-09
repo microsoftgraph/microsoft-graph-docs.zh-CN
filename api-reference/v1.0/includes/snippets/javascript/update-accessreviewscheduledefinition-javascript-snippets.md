@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d0af8b1e4b66288ff4a9202c05c2953633f5751c093766ce471f7a0926da52fb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b63d786709f2d3e643c4ffab6e25567c14e1df85
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57107112"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689012"
 ---
 ```javascript
 
@@ -21,10 +21,12 @@ const accessReviewScheduleDefinition = {
   descriptionForAdmins: 'Test world',
   descriptionForReviewers: 'Test world',
   scope: {
+    '@odata.type': '#microsoft.graph.accessReviewQueryScope',
     query: '/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers',
     queryType: 'MicrosoftGraph'
   },
   instanceEnumerationScope: {
+    '@odata.type': '#microsoft.graph.accessReviewQueryScope',
     query: '/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f',
     queryType: 'MicrosoftGraph'
   },

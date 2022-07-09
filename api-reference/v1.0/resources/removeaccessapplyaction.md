@@ -1,22 +1,22 @@
 ---
 title: removeAccessApplyAction 资源类型
-description: 删除访问评审中拒绝访问的资源。
-author: isabelleatmsft
+description: 删除访问评审中被拒绝的用户对资源的访问权限。
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ea48071ed685bd25e4cbc71cdb946eb23a30ef53
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8dea5cf75eace57faa89b7063973e0d5652cebbc
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59055897"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697587"
 ---
 # <a name="removeaccessapplyaction-resource-type"></a>removeAccessApplyAction 资源类型
 
 命名空间：microsoft.graph
 
-删除对资源的访问评审中拒绝的用户访问资源。 如果未传入选项，则这是 [为 accessReviewApplyAction](../resources/accessreviewapplyaction.md) 选择的默认选项。
+删除对该资源的访问评审中被拒绝的资源的访问权限。 如果未传入某个选项，则这是为 [accessReviewApplyAction](../resources/accessreviewapplyaction.md) 选择的默认选项。
 
 继承自 [accessReviewApplyAction](../resources/accessreviewapplyaction.md)。
 

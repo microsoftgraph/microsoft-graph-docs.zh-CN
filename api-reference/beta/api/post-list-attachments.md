@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cd32015be1dcc33cbf05b14355f54c5f12190327
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9f593b4142d7433ae5d946af8654f9f7cab32cc0
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62120139"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698329"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -26,10 +26,10 @@ ms.locfileid: "62120139"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Group.ReadWrite.All |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
-获取对话 [中帖子](../resources/post.md) 的附件 [组](../resources/conversationthread.md) 线程。 指定父 [对话是可选的](../resources/conversation.md) 。
+获取组[的 conversationThread](../resources/conversationthread.md) 中[帖子](../resources/post.md)的附件。 指定父 [会话](../resources/conversation.md) 是可选的。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +39,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-具体而言，您可以使用 $expand 查询参数，以将所有内联帖子附件与发布属性的其余部分一起包含。 例如：
+具体而言，可以使用$expand查询参数将所有帖子附件与其余的帖子属性内联在一起。 例如：
 
 <!-- { "blockType": "ignored" } -->
 ```

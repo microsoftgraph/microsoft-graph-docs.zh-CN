@@ -484,7 +484,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -544,7 +544,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装应用
                 href: resources/teamsappinstallation.md
@@ -1722,7 +1722,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -5693,6 +5693,8 @@ items:
                         href: api/entitlementmanagement-list-assignments.md
                       - name: 按当前用户筛选
                         href: api/accesspackageassignment-filterbycurrentuser.md
+                      - name: 重新处理
+                        href: api/accesspackageassignment-reprocess.md
                   - name: 访问包分配请求审批
                     items:
                       - name: 审批
@@ -5726,6 +5728,8 @@ items:
                         href: api/accesspackageassignmentrequest-filterbycurrentuser.md
                       - name: 取消
                         href: api/accesspackageassignmentrequest-cancel.md
+                      - name: 重新处理
+                        href: api/accesspackageassignmentrequest-reprocess.md
                   - name: 访问包目录
                     href: resources/accesspackagecatalog.md
                     items:

@@ -1,16 +1,16 @@
 ---
 title: 创建 historyDefinitions
 description: 创建新的 accessReviewHistoryDefinition 对象。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ab8e755f918d35d59e06795f4c16a96de180a101
-ms.sourcegitcommit: ca3edeed9408ee94bb12d7acf506d7317bf01d25
+ms.openlocfilehash: 987b7c6ce69438aa5d4c5011dc4da078b1f1a2e6
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64842320"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698231"
 ---
 # <a name="create-historydefinitions"></a>创建 historyDefinitions
 
@@ -26,7 +26,7 @@ ms.locfileid: "64842320"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.ReadWrite.All|
+|应用|AccessReview.ReadWrite.All|
 
 登录用户还必须具有允许他们读取访问评审以检索任何数据的目录角色。  有关详细信息，请参阅 [访问评审](../resources/accessreviewsv2-overview.md)的角色和权限要求。
 
@@ -56,10 +56,10 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName | String  | 访问评审历史记录数据收集的名称。 必需。 |
+|displayName | String  | 访问评审历史记录数据收集的名称。 必填。 |
 |reviewHistoryPeriodStartDateTime  | DateTimeOffset  | 时间戳。 从此日期开始或之后的评论将包含在提取的历史记录数据中。 仅当未定义 **scheduleSettings** 时才需要。  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | 时间戳。 从此日期开始或之前的评审将包含在提取的历史记录数据中。 仅当未定义 **scheduleSettings** 时才需要。  |
-|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) 集合| 用于筛选提取的历史记录数据中包含哪些评论。 提取其范围与此提供的范围匹配的评审。 必需。 <br> 有关详细信息，请参阅 [accessReviewHistoryDefinition 支持的范围查询](#supported-scope-queries-for-accessreviewhistorydefinition)。 |
+|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) 集合| 用于筛选提取的历史记录数据中包含哪些评论。 提取其范围与此提供的范围匹配的评审。 必填。 <br> 有关详细信息，请参阅 [accessReviewHistoryDefinition 支持的范围查询](#supported-scope-queries-for-accessreviewhistorydefinition)。 |
 | scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| 定期访问评审历史记录定义系列的设置。 仅当未定义 **reviewHistoryPeriodStartDateTime** 或 **reviewHistoryPeriodEndDateTime 时** 才需要。 尚不支持。|
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>accessReviewHistoryDefinition 支持的范围查询
@@ -72,7 +72,7 @@ POST /identityGovernance/accessReviews/historyDefinitions
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
 ```
 
-其值 `{object}` 是可在 **accessReviewScheduleDefinition** 中配置的资源之一。 例如，以下内容包括单个组 (的每个 accessReviewScheduleDefinition 评审结果，并排除范围为具有来宾用户) 的所有Microsoft 365组的定义。
+其值 `{object}` 是可在 **accessReviewScheduleDefinition** 中配置的资源之一。 例如，以下内容包括各个组 (的每个 accessReviewScheduleDefinition 评审结果，并排除范围为具有来宾用户) 的所有 Microsoft 365 组的定义。
 
 ```http
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')

@@ -1,16 +1,16 @@
 ---
 title: 列出 contactedReviewers
 description: 获取访问评审实例的审阅者。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 20ec4d3f0a4422a1156d49891c182acb43054678
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 66ab5232af06485d2ae1cef688e7ed1e82ec4dff
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65857734"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697531"
 ---
 # <a name="list-contactedreviewers"></a>列出 contactedReviewers
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "65857734"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.Read.All、AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.Read.All、AccessReview.ReadWrite.All|
+|应用|AccessReview.Read.All、AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

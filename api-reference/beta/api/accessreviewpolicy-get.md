@@ -1,16 +1,16 @@
 ---
 title: 获取 accessReviewPolicy
 description: 读取 accessReviewPolicy 对象的属性和关系。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: dd0c6f992f9b3523e2d4c321a1774b1f561b79d5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 900a410be4b88ecd458cc00ef9073ccf3f143885
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110042"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697090"
 ---
 # <a name="get-accessreviewpolicy"></a>获取 accessReviewPolicy
 命名空间：microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "62110042"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.AccessReviews|
+|委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.AccessReview|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Policy.Read.All、Policy.ReadWrite.AccessReviews|
+|应用|Policy.Read.All、Policy.ReadWrite.AccessReview|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ GET /identityGovernance/accessReviews/policy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewPolicy](../resources/accessreviewpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewPolicy](../resources/accessreviewpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

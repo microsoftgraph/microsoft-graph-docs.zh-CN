@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 816220e233346d29c1e13717867bd651597d2563
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 732271da80f5aaa062424a62db0471ba3d40f169
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555470"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698266"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -66,7 +66,7 @@ GET /me
 | 扩展类型                     | 备注                                                                                              |
 |------------------------------------|-------------------------------------------------------------------------------------------------------|
 | onPremisesExtensionAttributes 1-15 | 仅与 `$select` 一起返回。                                                                         |
-| 架构扩展                  | 仅与 `$select` 一起返回。                                                                         |
+| 架构扩展                  | 仅通过 `$select` 返回。                                                                         |
 | 开放扩展                    | 仅通过 [获取开放扩展](opentypeextension-get.md) 操作返回。 |
 | 目录扩展               | 仅与 `$select` 一起返回。                                                                         |
 
@@ -98,7 +98,7 @@ GET /me
   "name": "get_user_1"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
+GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd
 ```
 
 #### <a name="response"></a>响应
@@ -211,7 +211,7 @@ Content-type: application/json
   "name": "get_user_select"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
+GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd?$select=displayName,givenName,postalCode,identities
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-select-csharp-snippets.md)]

@@ -1,23 +1,23 @@
 ---
-title: accessReviewInstanceDecisionItem：filterByCurrentUser
-description: 检索访问评审实例或多阶段访问评审实例阶段的所有决策项，调用用户是该实例的审阅者。
-author: isabelleatmsft
+title: accessReviewInstanceDecisionItem： filterByCurrentUser
+description: 检索访问评审实例或多阶段访问评审实例阶段的所有决策项，调用用户是该评审者。
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d75c344b21d04fb9d6af130e0387f374861a611d
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: eba729675c7b4983e1deb5cdd03a49d574c8df53
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722081"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696600"
 ---
-# <a name="accessreviewinstancedecisionitem-filterbycurrentuser"></a>accessReviewInstanceDecisionItem：filterByCurrentUser
+# <a name="accessreviewinstancedecisionitem-filterbycurrentuser"></a>accessReviewInstanceDecisionItem： filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索访问评审实例或多阶段访问评审实例阶段的所有决策项，调用用户是该实例的审阅者。 决策项由 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象呈现在调用用户作为审阅者的给定 [accessReviewInstance](../resources/accessreviewinstance.md) 或 [accessReviewStage](../resources/accessReviewStage.md) 上。
+检索访问评审实例或多阶段访问评审实例阶段的所有决策项，调用用户是该评审者。 决策项由给定 [accessReviewInstance](../resources/accessreviewinstance.md) 或 [accessReviewStage](../resources/accessReviewStage.md) 上的 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象提供，调用用户是该对象的审阅者。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,11 +26,11 @@ ms.locfileid: "63722081"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.Read.All、AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.Read.All、AccessReview.ReadWrite.All|
+|应用|AccessReview.Read.All、AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
-要检索调用用户作为审阅者的访问评审实例的决策，请执行以下操作：
+若要检索调用用户为审阅者的访问评审实例的决策：
 <!-- {
   "blockType": "ignored"
 }
@@ -39,7 +39,7 @@ ms.locfileid: "63722081"
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
-若要检索调用用户作为审阅者的访问评审实例中的阶段的决策：
+若要检索调用用户是其审阅者的访问评审实例中某个阶段的决策：
 <!-- {
   "blockType": "ignored"
 }
@@ -49,22 +49,22 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 >[!NOTE]
->如果在 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的设置中启用了 **decisionHistoriesForReviewersEnabled** 属性，多阶段审阅者可以检索以前阶段的决策 [](../resources/accessreviewschedulesettings.md)。
+>如果在 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 [设置](../resources/accessreviewschedulesettings.md)中启用 **decisionHistoriesForReviewersEnabled** 属性，则多阶段评审的审阅者可以检索以前阶段的决策。
 
 ## <a name="function-parameters"></a>函数参数
 下表显示了可用于此方法的查询参数。
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|筛选以查询当前用户的决策对象。 可能的值是 、`reviewer``unknownFutureValue`。 使用 `reviewer`。 必需。|
+|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|筛选以查询当前用户的决策对象。 可能的值为 `reviewer`. `unknownFutureValue` 使用 `reviewer`. 必填。|
 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select`使用 、 `$filter`、 `$orderBy`、 `$skip`和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select`OData `$orderBy``$filter`查询参数，`$top``$skip`以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-此 API 的默认页面大小为 100 **accessReviewInstanceDecisionItem** 对象。 若要提高效率并避免由于大型结果集而超时，`$skip``$top`请通过使用 和 查询参数应用分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
+此 API 的默认页面大小为 100 **个 accessReviewInstanceDecisionItem** 对象。 若要提高效率并避免因大型结果集而超时，请使用 `$skip` 分页和 `$top` 查询参数。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -74,11 +74,11 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 集合。
+如果成功，此函数在响应正文中返回 `200 OK` 响应代码和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-retrieve-all-decisions-on-an-accessreviewinstance-for-which-the-calling-user-is-the-reviewer"></a>示例 1：检索调用用户作为审阅者的 accessReviewInstance 的所有决策
+### <a name="example-1-retrieve-all-decisions-on-an-accessreviewinstance-for-which-the-calling-user-is-the-reviewer"></a>示例 1：检索调用用户是其审阅者的 accessReviewInstance 的所有决策
 
 #### <a name="request"></a>请求
 
@@ -169,7 +169,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-all-decisions-on-an-accessreviewstage-of-a-multi-stage-access-review-for-which-the-calling-user-is-the-reviewer"></a>示例 2：检索调用用户作为审阅者的多阶段访问评审的 accessReviewStage 的所有决策
+### <a name="example-2-retrieve-all-decisions-on-an-accessreviewstage-of-a-multi-stage-access-review-for-which-the-calling-user-is-the-reviewer"></a>示例 2：检索多阶段访问评审的 accessReviewStage 上的所有决策，调用用户是其审阅者
 
 #### <a name="request"></a>请求
 

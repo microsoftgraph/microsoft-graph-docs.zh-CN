@@ -1,18 +1,18 @@
 ---
-title: accessReviewStage： filterByCurrentUser
+title: accessReviewStage：filterByCurrentUser
 description: 返回给定审阅者的所有 accessReviewStage 对象。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f224acfdd86ca07a211a1389125524d90b7b8a07
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: 010b5b1f7dcd32fad8444cacd196d481aada4d5d
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62816144"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697281"
 ---
-# <a name="accessreviewstage-filterbycurrentuser"></a>accessReviewStage： filterByCurrentUser
+# <a name="accessreviewstage-filterbycurrentuser"></a>accessReviewStage：filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "62816144"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.Read.All、AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.Read.All、AccessReview.ReadWrite.All|
+|应用|AccessReview.Read.All、AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,9 +44,9 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|accessReviewStageFilterByCurrentUserOptions|根据调用用户筛选结果。 允许的值为 `reviewer`。 这将返回 accessReviewInstance 上调用用户为审阅者的所有 accessReviewStage 对象。 必需项。|
+|on|accessReviewStageFilterByCurrentUserOptions|根据调用用户筛选结果。 允许的值为 `reviewer`. 这会返回 accessReviewInstance 上的所有 accessReviewStage 对象，其中调用用户是审阅者。 必填。|
 
-此函数还支持 、 `$select`、 `$filter``$orderBy`和 `$skip` `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此函数还支持 `$select``$filter``$orderBy`OData 查询参数， `$skip` `$top`以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -58,11 +58,13 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [accessReviewStage](../resources/accessreviewstage.md) 集合。
+如果成功，此函数在响应正文中返回 `200 OK` 响应代码和 [accessReviewStage](../resources/accessreviewstage.md) 集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accessreviewstage_filterbycurrentuser"
@@ -71,6 +73,28 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/08531375-eff6-4e21-b1a8-de0eb37ec913/instances/86889534-b102-4226-bfce-0c2aeee845df/stages/filterByCurrentUser(on='reviewer')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewstage-filterbycurrentuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewstage-filterbycurrentuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accessreviewstage-filterbycurrentuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accessreviewstage-filterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewstage-filterbycurrentuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

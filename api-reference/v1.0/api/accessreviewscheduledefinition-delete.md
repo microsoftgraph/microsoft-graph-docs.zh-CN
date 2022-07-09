@@ -1,16 +1,16 @@
 ---
 title: 删除 accessReviewScheduleDefinition
 description: 删除 accessReviewScheduleDefinition 对象。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b958a7d071acf3fd5cc9ab18e8ec100300ab3ff5
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: 34f90e57dfbd00a385f665bf3bbb1d324be77234
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684772"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698476"
 ---
 # <a name="delete-accessreviewscheduledefinition"></a>删除 accessReviewScheduleDefinition
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "64684772"
 |:---|:---|
 |委派（工作或学校帐户）| AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| AccessReview.ReadWrite.All |
+|应用| AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

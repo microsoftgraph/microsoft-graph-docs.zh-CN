@@ -1,16 +1,16 @@
 ---
 title: accessReviewInstanceDecisionItemServicePrincipalTarget 资源类型
-description: 表示作为服务主体目标的审阅目标。
-author: isabelleatmsft
-localization_priority: Normal
+description: 表示作为服务主体目标的评审目标。
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7d8032282d7ddaf41779b73f707b0749e3c82dd0
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: dafb1cde55fe510edcff89bd5497997d136a12a9
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "51469221"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698140"
 ---
 # <a name="accessreviewinstancedecisionitemserviceprincipaltarget-resource-type"></a>accessReviewInstanceDecisionItemServicePrincipalTarget 资源类型
 
@@ -20,16 +20,16 @@ ms.locfileid: "51469221"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-表示 [accessReviewInstance 中正在审阅的服务主体](accessreviewinstance.md)。
+表示 [accessReviewInstance](accessreviewinstance.md) 中正在审查的服务主体。
 
 继承自 [accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md)。
 
 ## <a name="properties"></a>属性
 | 属性 | 类型 | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| servicePrincipalID | String | 正在检查其访问权限的服务主体的标识符。 |
-| servicePrincipalDisplayName | String | 要显示名称访问的服务主体的组。 |
-| appId | String | 要检查的服务主体实体的 appId。 |
+| servicePrincipalID | String | 正在审查其访问权限的服务主体的标识符。 |
+| servicePrincipalDisplayName | 字符串 | 正在审查其访问权限的服务主体的显示名称。 |
+| appId | String | 要评审的服务主体实体的 appId。 |
 
 ## <a name="relationships"></a>关系
 无。

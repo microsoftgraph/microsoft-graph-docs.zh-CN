@@ -1,33 +1,33 @@
 ---
 title: 更新 accessReviewInstanceDecisionItem
 description: 更新 accessReviewInstanceDecisionItem 对象的属性。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8db1d664d754eec0db5b02fa5b4315748568e6f7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6835f91e41032d06c3c96f79fae8be5432dd852d
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979849"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697986"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>更新 accessReviewInstanceDecisionItem
 命名空间：microsoft.graph
 
-更新 [accessReviewInstanceDecisionItem 对象](../resources/accessreviewinstancedecisionitem.md) 的属性。
+更新 [accessReviewInstanceDecisionItem 对象的](../resources/accessreviewinstancedecisionitem.md) 属性。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.ReadWrite.All|
+|应用|AccessReview.ReadWrite.All|
 
-只有列为父 [accessReviewInstance](../resources/accessreviewinstance.md) 审阅者的调用用户才能更新 **accessReviewInstanceDecisionItem**。
+只有作为父 [accessReviewInstance](../resources/accessreviewinstance.md) 的审阅者列出的调用用户才能更新 **accessReviewInstanceDecisionItem**。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,12 +48,12 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象的 JSON 表示形式。
 
-下表显示更新 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)时接受的属性。
+下表显示了更新 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 时接受的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|decision|String|审阅者对主体是否应有权访问所审阅的资源的投票。 可能的值 `Approve` ：、 `Deny` 或 `DontKnow` 。 必需。|
-|justification|String|审阅者的决策原因。 如果 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)的 settings 属性的 **justificationRequiredOnApproval** 为 ，则必需 `true` 。|
+|决定|字符串|审阅者就主体是否应有权访问正在审查的资源进行投票。 可能的值：`Approve`或 `Deny``DontKnow`. 必填。|
+|理由|String|审阅者的决定原因。 如果 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 的 settings 属性的 **justificationRequiredOnApproval** 为 `true`.|
 
 ## <a name="response"></a>响应
 
@@ -94,7 +94,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

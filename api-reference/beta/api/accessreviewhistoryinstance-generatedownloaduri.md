@@ -1,24 +1,24 @@
 ---
-title: accessReviewHistoryInstance： generateDownloadUri
+title: accessReviewHistoryInstance：generateDownloadUri
 description: 生成可用于检索审阅历史记录数据的 URI。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 44079aafaf994546530d5c9474a774a181b2b6b0
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: af77906c4c5e978e6fc6a26fdfbe966b505f2c80
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340552"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696635"
 ---
-# <a name="accessreviewhistoryinstance-generatedownloaduri"></a>accessReviewHistoryInstance： generateDownloadUri
+# <a name="accessreviewhistoryinstance-generatedownloaduri"></a>accessReviewHistoryInstance：generateDownloadUri
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为 [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) 对象生成状态 **为** `done`的 URI。 每个 URI 可用于检索实例的审阅历史记录数据。 每个 URI 的有效期为 24 小时，并且可以通过从 [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) 对象获取 **downloadUri** 属性来检索。
+为 [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) 对象生成 **状态** 为 `done`的 URI。 每个 URI 可用于检索实例的审阅历史记录数据。 每个 URI 有效期为 24 小时，可以通过从 [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) 对象提取 **downloadUri** 属性来检索。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +28,9 @@ ms.locfileid: "62340552"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.ReadWrite.All|
+|应用|AccessReview.ReadWrite.All|
 
-若要生成链接，登录用户必须是关联的审阅历史记录定义的创建者，或者分配有全局管理员或全局读者[目录角色](/azure/active-directory/roles/permissions-reference)。
+若要生成链接，登录用户必须是关联的评审历史记录定义的创建者，或分配了 *全局管理员* 或 *全局读者*[目录角色](/azure/active-directory/roles/permissions-reference)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,7 +55,7 @@ POST /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDe
 
 ## <a name="response"></a>响应
 
-如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) 。
+如果成功，此操作在响应正文中返回 `200 OK` 响应代码和 [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) 。
 
 ## <a name="examples"></a>示例
 

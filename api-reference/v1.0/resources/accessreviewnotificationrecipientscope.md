@@ -1,22 +1,22 @@
 ---
 title: accessreviewnotificationrecipientscope 资源类型
-description: 表示将接收访问评审通知的人。
-author: isabelleatmsft
+description: 表示将接收访问评审通知的人员。
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c5db194094ef3ee1ef3e7c431ca5d4b39107b6cf
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 2bd960f45e9aacc9a1e6fc133e195c9a8980e609
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60562110"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698406"
 ---
 # <a name="accessreviewnotificationrecipientscope-resource-type"></a>accessreviewnotificationrecipientscope 资源类型
 
 命名空间：microsoft.graph
 
-**accessReviewNotificationRecipientScope** 表示用于定义将接收 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md)对象实例通知的用户的基类。 它继承自 [accessReviewNotificationRecipientQueryScope](../resources/accessReviewNotificationRecipientQueryScope.md)。
+**accessReviewNotificationRecipientScope** 表示一个基类，用于定义将接收 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 对象实例通知的用户。 它由 [accessReviewNotificationRecipientQueryScope](../resources/accessReviewNotificationRecipientQueryScope.md) 继承。
 ## <a name="properties"></a>属性
 无。
 

@@ -1,16 +1,16 @@
 ---
 title: '列出多阶段访问评审 (的决策) '
 description: 在多阶段访问评审中从某个阶段获取决策。
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3a2e06ed7d927686a84e352eab52d7a8554e04c0
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: eaa7d90aeb8292bf771145d4e0b438e7eb11c689
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819634"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696838"
 ---
 # <a name="list-decisions-from-a-multi-stage-access-review"></a>列出多阶段访问评审 (的决策) 
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "65819634"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.Read.All、AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.Read.All、AccessReview.ReadWrite.All|
+|应用|AccessReview.Read.All、AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -1,23 +1,23 @@
 ---
-title: accessReviewInstanceDecisionItem：recordAllDecisions
+title: accessReviewInstanceDecisionItem： recordAllDecisions
 description: 记录 accessReviewInstanceDecisionItem 对象的决策。
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b3d8eb173a219f0d11b49d304040fc6436d97f89
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 75ed5e51631e36179b2c266ecd11ce934c3c9a1f
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225135"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697125"
 ---
-# <a name="accessreviewinstancedecisionitem-recordalldecisions"></a>accessReviewInstanceDecisionItem：recordAllDecisions
+# <a name="accessreviewinstancedecisionitem-recordalldecisions"></a>accessReviewInstanceDecisionItem： recordAllDecisions
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-作为访问评审的审阅者，记录分配给您的 [accessReviewInstanceDecisionItem](../resources/accessReviewInstanceDecisionItem.md) 与指定的主体或资源 ID 相匹配的决策。 如果未指定任何 ID，则决策将应用于您作为审阅者的每个 **accessReviewInstanceDecisionItem。**
+作为访问评审的审阅者，记录分配给你且与指定的主体或资源 ID 匹配 [的 accessReviewInstanceDecisionItem](../resources/accessReviewInstanceDecisionItem.md) 的决定。 如果未指定任何 ID，则决策将应用于作为审阅者的每 **一个 accessReviewInstanceDecisionItem** 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "62225135"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
+|应用                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,10 +51,10 @@ POST /identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewe
 
 |参数|类型|说明|
 |:---|:---|:---|
-|decision|String| 提供的决策。 可能的值为 `Approve` `Deny` `DontKnow` 、、。 |
-|justification|String|提供决策的理由。|
+|决定|字符串| 要提供的决定。 可能的值是 `Approve`， `Deny`. `DontKnow` |
+|理由|字符串|提供决策的理由。|
 |principalId|String|如果提供，与 principalId 匹配的所有决策项都将记录此决策。|
-|resourceId|String|如果提供，将记录与 resourceId 匹配的所有决策项。|
+|resourceId|String|如果提供，与 resourceId 匹配的所有决策项都将记录此决策。|
 
 
 

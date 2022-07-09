@@ -2,15 +2,15 @@
 title: 获取 accessReviewScheduleDefinition
 description: 检索 accessReviewScheduleDefinition 对象。
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b28c6c8e9cf65e9ed220734bf930e31e051e92ca
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 96ac40ba6b7785e3fa3465d1bbb0a15afb6a0ac1
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650697"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696857"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>获取 accessReviewScheduleDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "61650697"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按 ID [检索 accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 这将返回计划的访问评审系列的所有属性，关联的 accessReviewInstances 除外。 每个 accessReviewScheduleDefinition 至少具有一个实例。 实例表示在出现一次 (（例如，2021 年 3 月) 定期审阅）期间对特定资源组（如特定组的成员)  (）的审阅。
+按 ID 检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 这会返回计划访问评审系列的所有属性，但关联的 accessReviewInstances 除外。 每个 accessReviewScheduleDefinition 至少有一个实例。 实例表示对特定资源 (（例如特定组的成员) ）的审阅，在一次出现 (（例如，2021 年 3 月) 定期评审）中。
 
 若要检索访问评审系列的实例，请使用 [列表 accessReviewInstance](accessreviewscheduledefinition-list-instances.md) API。
 
@@ -29,9 +29,9 @@ ms.locfileid: "61650697"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
+|应用                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
-若要调用此 API，登录用户还必须位于允许其阅读访问评审的目录角色中，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-overview.md)。
+若要调用此 API，登录用户还必须具有允许他们读取访问评审的目录角色，或者用户可以分配为访问评审的审阅者。  有关详细信息，请参阅 [访问评审](../resources/accessreviewsv2-overview.md)的角色和权限要求。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /identityGovernance/accessReviews/definitions/{review-id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` 使用 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 无。
@@ -49,7 +49,7 @@ GET /identityGovernance/accessReviews/definitions/{review-id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

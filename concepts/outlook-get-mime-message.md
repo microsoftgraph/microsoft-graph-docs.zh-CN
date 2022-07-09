@@ -4,12 +4,12 @@ description: 多用途 Internet 邮件扩展 (MIME) 是一种行业电子邮件�
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 0b60a44345b9a75a776492fb04706cb9f5d7ffb6
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: a0dd4e60902b82ed1d069421258d191e566e1991
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442792"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697643"
 ---
 # <a name="get-mime-content-of-a-message"></a>获取邮件的 MIME 内容
 
@@ -156,8 +156,7 @@ YW5vdGhlciBtYWlsLg0K
 
 你还可以获取 Outlook 邮件的 MIME 表示，如果邮件附加到 Outlook [事件](/graph/api/resources/event)、[邮件](/graph/api/resources/message)、[任务](/graph/api/resources/outlooktask)或组[帖子](/graph/api/resources/post)，你的应用程序可以访问。
 
-为此，标识邮件附件，并在[获取该附件](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment
-)时附加 `$value` 段。 以下显示了访问附件的一些常用方法。 有关详细信息，请参阅[获取附件](/graph/api/attachment-get#http-request)。
+为此，标识邮件附件，并在[获取该附件](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment)时附加 `$value` 段。 以下显示了访问附件的一些常用方法。 有关详细信息，请参阅[获取附件](/graph/api/attachment-get#http-request)。
 
 如果邮件附加到用户默认日历中的事件：
 <!-- { "blockType": "ignored" } -->
@@ -275,6 +274,8 @@ e.</p>
 ```
 
 ## <a name="next-steps"></a>后续步骤
+
+详细了解以下信息：
 
 - 获取事件、邮件、Outlook 任务或组帖子的[项目附件的 MIME 内容](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment)
 - [为什么与 Outlook 邮件集成](outlook-mail-concept-overview.md)
