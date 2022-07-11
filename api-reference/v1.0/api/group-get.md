@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6fccabf60e9f625a638f61d0e52053aec31ce28d
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 35062c4530d58998f979527d66ed0a48ef50d090
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555918"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698238"
 ---
 # <a name="get-group"></a>获取组 
 
@@ -18,7 +18,7 @@ ms.locfileid: "66555918"
 
 获取组对象的属性和关系。
 
-此操作在默认情况下仅返回所有可用属性的一部分，如[属性](../resources/group.md#properties)部分中所示。 若要获取 _非_ 默认返回的属性，请在 `$select` OData 查询选项中指定这些属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。
+此操作在默认情况下仅返回所有可用属性的一部分，如[属性](../resources/group.md#properties)部分中所示。 若要获取 _非_ 默认返回的属性，请在 `$select` OData 查询选项中指定这些属性。 **hasMembersWithLicenseErrors** 和 **isArchived** 属性是一个例外，不会在 `$select` 查询中返回。
 
 > **注意：** 此请求可能对最近创建、更新或删除的组具有复制延迟。
 

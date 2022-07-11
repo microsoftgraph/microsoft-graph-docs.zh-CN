@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 640359678a5a88a19d0f9e9d994c7860d936d97c
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 1e5f0d25296d1aca3d15759bc405d38622f91324
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556106"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698273"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -18,7 +18,7 @@ ms.locfileid: "66556106"
 
 列出组织中可用的所有组，不包括动态通讯组。 若要检索动态通讯组，请 [使用 Exchange 管理中心](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)。
 
-此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取 _非_ 默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。
+此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取 _非_ 默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定属性。 **hasMembersWithLicenseErrors** 和 **isArchived** 属性为异常，不会在 `$select` 查询中返回。
 
 > **注意：** 此请求可能对最近创建、更新或删除的组具有复制延迟。
 
@@ -60,9 +60,9 @@ GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unifi
 
 | 扩展类型       | 备注                      |
 |----------------------|-------------------------------|
-| 架构扩展    | 仅与 `$select`一起返回。 |
+| 架构扩展    | 仅通过 `$select` 返回。 |
 | 开放扩展      | 仅与 `$expand`一起返回。 |
-| 目录扩展 | 默认返回。          |
+| 目录扩展 | 默认情况下返回。          |
 
 ## <a name="request-headers"></a>请求标头
 

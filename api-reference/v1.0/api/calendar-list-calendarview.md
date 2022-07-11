@@ -1,16 +1,16 @@
 ---
 title: 列出 calendarView
-description: 获取由时间范围定义的日历视图中的事件发生次数、异常和单一实例，
+description: 获取日历视图中由时间范围定义的事件发生次数、异常和单一实例。
 ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba9c2deaaf34e0ff343dc690ad6d06550fd3429a
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 6929040c368f312aecbfe85462871d208c95cadf
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477893"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697818"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -86,7 +86,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-下面是一个请求示例。
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -123,7 +123,8 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 ---
 
 ### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

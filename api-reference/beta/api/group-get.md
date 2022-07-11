@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 745e60831cbffe18afc9565bfcd459854ea408ef
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: bbeb4e56e0c7f8eee810f3ed0da15399925ae1de
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556043"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698385"
 ---
 # <a name="get-group"></a>获取组
 
@@ -20,7 +20,7 @@ ms.locfileid: "66556043"
 
 获取 [group](../resources/group.md) 对象的属性和关系。
 
-此操作在默认情况下仅返回所有可用属性的一部分，如[属性](../resources/group.md#properties)部分中所示。 若要获取 _非_ 默认返回的属性，请在 `$select` OData 查询选项中指定这些属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。 由于 **组** 资源支持 [扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **组** 实例中的自定义属性和扩展数据。
+此操作在默认情况下仅返回所有可用属性的一部分，如[属性](../resources/group.md#properties)部分中所示。 若要获取 _非_ 默认返回的属性，请在 `$select` OData 查询选项中指定这些属性。 **hasMembersWithLicenseErrors** 和 **isArchived** 属性是一个例外，不会在 `$select` 查询中返回。 由于 **组** 资源支持 [扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **组** 实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 
@@ -52,8 +52,8 @@ GET /groups/{id}
 
 | 扩展类型       | 备注                                                                       |
 |----------------------|--------------------------------------------------------------------------------|
-| 架构扩展    | 仅与 `$select`一起返回。                                                  |
-| 开放扩展      | 通过 [“获取打开扩展](opentypeextension-get.md) ”操作返回。 |
+| 架构扩展    | 仅通过 `$select` 返回。                                                  |
+| 开放扩展      | 通过 [获取开放扩展](opentypeextension-get.md) 操作返回。 |
 | 目录扩展 | 默认情况下返回。                                                           |
 
 ## <a name="request-headers"></a>请求标头
