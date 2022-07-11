@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8ea66e3ab5018c1ded7c97e5c20312cbcac8ca37
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 78a23b03c1918aa1badd14cdb4a57a6a00d78413
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556078"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668641"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -126,6 +126,7 @@ Content-type: application/json
     "optionalClaims": null,
     "addIns": [],
     "publisherDomain": "contoso.onmicrosoft.com",
+    "samlMetadataUrl": "https://graph.microsoft.com/2h5hjaj542de/app",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "verifiedPublisher": {
             "displayName": "publisher_contoso",

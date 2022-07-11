@@ -599,8 +599,12 @@ items:
               - name: 概述
                 displayName: throttling
                 href: throttling.md
+              - name: 服务特定限制
+                displayName: throttling
+                href: throttling-limits.md
               - name: 优化网络流量
                 href: /learn/modules/optimize-network-traffic
+                displayName: throttling
           - name: 更改通知
             items:
               - name: 概述
