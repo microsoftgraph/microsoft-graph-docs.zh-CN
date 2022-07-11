@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 87288533896622d6e9765f9572540fb8632725d5
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: e80fd010730607be4a6e36b39fa3cdc78cdf536e
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296519"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670665"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -32,7 +32,7 @@ Azure Active Directory (Azure AD) 支持以下类型的组。
 - 通讯组
 
 > [!NOTE]
-> Microsoft 还支持无法通过 Microsoft Graph 管理或检索的[动态通讯组](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019)。
+> Microsoft 还支持无法通过 Microsoft Graph 管理或检索的[动态通讯组](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true)。
 
 只有 Microsoft 365 和安全组才能通过 Microsoft Graph 组 API 进行管理。 Microsoft Graph 的启用邮件和通讯组为只读模式。
 
